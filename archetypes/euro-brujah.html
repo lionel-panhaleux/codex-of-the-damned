@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel='stylesheet' type='text/css' href='../base.css'/>
+    <script>
+        function dC(name) {
+            document.getElementById("card-image").src = '../card-images/'.concat(name, '.jpg');
+            document.getElementById("card-modal").style.display = "block";
+        }
+    </script>
+    <title>Codex of the Damned</title>
+</head>
+<body>
+<header role="banner">
+    <div class="site-logo">
+    <a href="../index.html" class="site-logo">
+        <img width="150" height="150" src="../icons/vtes.svg" alt="Codex of the Damned">
+        <h1>Codex of the Damned</h1>
+    </a>
+    </div>
+    <nav role="navigation">
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../deck-guides/index.html">Deck Guides</a></li>
+            <li><a href="../strategy/index.html">Strategy</a></li>
+            <li><a href="../archetypes/index.html">Archetypes</a></li>
+            <li><a href="../twda-analysis/index.html">TWDA analysis</a></li>
+        </ul>
+    </nav>
+</header>
+<div id="card-modal" class="modal" onclick="this.style.display='none'">
+        <img class="modal-content" id="card-image">
+</div>
+<article>
+    <h1><img src="../icons/clan-brujah.svg"> Euro Brujah</h1>
+    <div class="decklist">
+        <h2><a href=http://www.vekn.fr/decks/twd.htm#2017fwutbi>Euro Brujah</a></h2>
+        <p>
+            Deck by Marius Iscru & François Greiner<br/>
+            Friendly Warm Up Tournament<br/>
+            Bologna, Italy<br/>
+            December 9th 2017<br/>
+            36 players<br/>
+        </p>
+
+        <h3>Crypt (12 cards)</h3>
+        <ul>
+            <li>3  <span class="card" onclick="dC('theo-bell')">Theo Bell</span></li>
+            <li>2  <span class="card" onclick="dC('constanza-vinti')">Constanza Vinti</span></li>
+            <li>2  <span class="card" onclick="dC('donal-oconnor')">Dónal O'Connor</span></li>
+            <li>2  <span class="card" onclick="dC('beast-the-leatherface-of-detroit')">Beast, The Leatherface of Detroit</span></li>
+            <li>1  <span class="card" onclick="dC('anvil')">Anvil</span></li>
+            <li>1  <span class="card" onclick="dC('rake')">Rake</span></li>
+            <li>1  <span class="card" onclick="dC('volker-the-puppet-prince')">Volker, The Puppet Prince</span></li>
+        </ul>
+        <h3>Library (90 cards)</h3>
+        <ul>
+            <li><h4>— Master (14) —</h4></li>
+            <li>5  <span class="card" onclick="dC('villein')">Villein</span></li>
+            <li>1  <span class="card" onclick="dC('carver-s-meat-packing-and-storage')">Carver's Meat Packing and Storage</span></li>
+            <li>1  <span class="card" onclick="dC('depravity')">Depravity</span></li>
+            <li>1  <span class="card" onclick="dC('direct-intervention')">Direct Intervention</span></li>
+            <li>1  <span class="card" onclick="dC('fame')">Fame</span></li>
+            <li>1  <span class="card" onclick="dC('giant-s-blood')">Giant's Blood</span></li>
+            <li>1  <span class="card" onclick="dC('new-carthage')">New Carthage</span></li>
+            <li>1  <span class="card" onclick="dC('pentex-tm-subversion')">Pentex™ Subversion</span></li>
+            <li>1  <span class="card" onclick="dC('powerbase-montreal')">Powerbase: Montreal</span></li>
+            <li>1  <span class="card" onclick="dC('the-rack')">The Rack</span></li>
+            <li><h4>— Action (10) —</h4></li>
+            <li>9  <span class="card" onclick="dC('govern-the-unaligned')">Govern the Unaligned</span></li>
+            <li>1  <span class="card" onclick="dC('aranthebes-the-immortal')">Aranthebes, The Immortal</span></li>
+            <li><h4>— Political Action (4) —</h4></li>
+            <li>4  <span class="card" onclick="dC('parity-shift')">Parity Shift</span></li>
+            <li><h4>— Modifier/Combat (2) —</h4></li>
+            <li>2  <span class="card" onclick="dC('resist-earth-s-grasp')">Resist Earth's Grasp</span></li>
+            <li><h4>— Combat (44) —</h4></li>
+            <li>8  <span class="card" onclick="dC('immortal-grapple')">Immortal Grapple</span></li>
+            <li>8  <span class="card" onclick="dC('torn-signpost')">Torn Signpost</span></li>
+            <li>7  <span class="card" onclick="dC('taste-of-vitae')">Taste of Vitae</span></li>
+            <li>6  <span class="card" onclick="dC('pursuit')">Pursuit</span></li>
+            <li>5  <span class="card" onclick="dC('disarm')">Disarm</span></li>
+            <li>4  <span class="card" onclick="dC('blur')">Blur</span></li>
+            <li>4  <span class="card" onclick="dC('thrown-sewer-lid')">Thrown Sewer Lid</span></li>
+            <li>2  <span class="card" onclick="dC('sideslip')">Sideslip</span></li>
+            <li><h4>— Reaction (16) —</h4></li>
+            <li>10 <span class="card" onclick="dC('second-tradition-domain')">Second Tradition: Domain</span></li>
+            <li>6  <span class="card" onclick="dC('deflection')">Deflection</span></li>
+        </ul>
+    </div>
+    <h2>Highlights</h2>
+    <p>
+        This is a Camarilla Royalty <em>Toolbox</em> Brujah deck using the few titked Brujah with <i>d</i>
+        to be able to use <span class="card" onclick="dC('govern-the-unaligned')">Govern the Unaligned</span>
+        and some <span class="card" onclick="dC('deflection')">Deflection</span>.
+        Other than that, the deck uses the rather classical combination of
+        <span class="card" onclick="dC('second-tradition-domain')">Second Tradition: Domain</span> and
+        <span class="card" onclick="dC('parity-shift')">Parity Shift</span> Camarilla Princes and Justicar
+        have access to.
+    </p>
+    <p>
+        <i>PC</i> makes for a dreadful combat module, and
+        <span class="card" onclick="dC('theo-bell')">Theo Bell</span> and
+        <span class="card" onclick="dC('beast-the-leatherface-of-detroit')">Beast, The Leatherface of Detroit</span>
+        have the ability to rush opponents vampires to take them down with it.
+        Furthermore, <span class="card" onclick="dC('second-tradition-domain')">Second Tradition: Domain</span>
+        is an excellent reaction that often results in a combat too.
+    </p>
+    <p>
+        <span class="card" onclick="dC('govern-the-unaligned')">Govern the Unaligned</span> is used in the game
+        beginning to get vampires out cheaper and faster, but it is an excellent bleed action later on.
+    </p>
+    <h2>Tips & Tricks</h2>
+    <p>
+        The oldest vampire with <i>D</i> should be put into play first in order to be able to use
+        <span class="card" onclick="dC('govern-the-unaligned')">Govern the Unaligned</span> on the younger vampires.
+    </p>
+    <p>
+        <span class="card" onclick="dC('fame')">Fame</span> and
+        <span class="card" onclick="dC('new-carthage')">New Carthage</span> are excellent pool damage enhancers.
+    </p>
+    <p>
+        The combat module has a lot of tricks to it:
+        <span class="card" onclick="dC('immortal-grapple')">Immortal Grapple</span> prevents
+        <em>Strike: Combat Ends</em> and <em>Dodge</em>,
+        <span class="card" onclick="dC('pursuit')">Pursuit</span> can be enough to get to close range against
+        a single maneuver but, if the opponent insists on getting to long range,
+        <span class="card" onclick="dC('thrown-sewer-lid')">Thrown Sewer Lid</span> can be used to take him down.
+        Finally, <span class="card" onclick="dC('blur')">Blur</span> and
+        <span class="card" onclick="dC('pursuit')">Pursuit</span> can deliver more damages through more strikes,
+        then <span class="card" onclick="dC('disarm')">Disarm</span> can put any vampire into torpor.
+        Finally, <span class="card" onclick="dC('sideslip')">Sideslip</span> can help dodge a dreadful strike,
+        get a <span class="card" onclick="dC('disarm')">Disarm</span> through or prevent aggravated damage from
+        <span class="card" onclick="dC('wolf-claws')">Wolf Claws</span> or
+        <span class="card" onclick="dC('chiropteran-marauder')">Chiropteran Marauder</span>.
+    </p>
+    <h2>Variants</h2>
+    <p>
+        There are a few variations around the crypt and the minion cards, especially the combat module.
+        <span class="card" onclick="dC('beast-the-leatherface-of-detroit')">Beast, The Leatherface of Detroit</span>
+        is a rare inclusion and this example as a huge focus on combat.
+        Other decks from this archetype can use <i>d</i> bleed enhancers like
+        <span class="card" onclick="dC('conditioning')">Conditioning</span> and some
+        <span class="card" onclick="dC('bums-rush')">Bum's Rush</span>.
+        <a href=http://www.vekn.fr/decks/twd.htm#2k8germanchamp>Michael Heyder's deck</a> from 2008
+        is another example of the archetype.
+    </p>
+    <div class="clear"></div>
+    <div class="warning">
+        <h3 class="warning-title">Errata</h3>
+        <p>
+            <span class="card" onclick="dC('pentex-tm-subversion')">Pentex™ Subversion</span>
+            has been modified by an <em>errata</em> in September 2019.
+            It does not prevent a vampire to act anymore, so it is less powerful
+            and should maybe not be included in the deck anymore.
+        </p>
+        <p>
+            <span class="card" onclick="dC('villein')">Villein</span> has been modified by an errata in June 2018
+            to limit the blood taken to a maximum of 5.
+            Still they should always be as efficient as ever in this archetype.
+        </p>
+        <p>
+            <span class="card" onclick="dC('parity-shift')">Parity Shift</span>
+            has also been modified in the September 2019 <em>errata</em>.
+            The amount of pool is no longer equal to the number of Methusalah, but is stable at 3.
+            The card is then less powerful in the game beginning, but is still its a good fit in this deck.
+        </p>
+    </div>
+</article>
+</body>
+<footer>
+    <nav role="navigation">
+        <a class="prev" href="council-of-doom.html">Council of Doom</a>
+        <a href="index.html">Archetypes</a>
+        <a class="next" href="daughters-politics.html">Daughters Politics</a>
+    </nav>
+</footer>
+</html>

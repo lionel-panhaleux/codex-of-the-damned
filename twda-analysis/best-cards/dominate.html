@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel='stylesheet' type='text/css' href='../../base.css'/>
+    <script>
+        function dC(name) {
+            document.getElementById("card-image").src = '../../card-images/'.concat(name, '.jpg');
+            document.getElementById("card-modal").style.display = "block";
+        }
+    </script>
+    <title>Codex of the Damned</title>
+</head>
+<body>
+<header role="banner">
+    <div class="site-logo">
+    <a href="../../index.html" class="site-logo">
+        <img width="150" height="150" src="../../icons/vtes.svg" alt="Codex of the Damned">
+        <h1>Codex of the Damned</h1>
+    </a>
+    </div>
+    <nav role="navigation">
+        <ul>
+            <li><a href="../../index.html">Home</a></li>
+            <li><a href="../../deck-guides/index.html">Deck Guides</a></li>
+            <li><a href="../../strategy/index.html">Strategy</a></li>
+            <li><a href="../../archetypes/index.html">Archetypes</a></li>
+            <li><a href="../../twda-analysis/index.html">TWDA analysis</a></li>
+        </ul>
+    </nav>
+</header>
+<div id="card-modal" class="modal" onclick="this.style.display='none'">
+        <img class="modal-content modal-center" id="card-image">
+</div>
+<article class="article-columns">
+    <h1><i>d</i> Dominate</h1>
+    <div class="tip">
+        <p>
+            <i>d</i> is the most played discipline of the game. It provides an excellent bleed module,
+            good bloat and the best bounce in the game. <strong>More than a third</strong>
+            of winning decks use this discipline.
+        </p>
+    </div>
+    <div class="column">
+        <div class="column-image">
+            <img src="../../card-images/deflection.jpg">
+            <h4>Deflection (865 decks)</h4>
+        </div>
+        <p>
+            It is the best bounce of the game. At superior <i>D</i>, it can be chained multiple times by the same
+            vampire, an incredibly effective defence against even the most severe bleed constructs.
+        </p>
+    </div>
+    <div class="column">
+        <div class="column-image">
+            <img src="../../card-images/conditioning.jpg">
+            <h4>Conditioning (639 decks)</h4>
+        </div>
+        <p>
+            It is the best bleed modifier of the game, and can be associated with
+            <span class="card" onclick="dC('govern-the-unaligned')">Govern the Unaligned</span>
+            for a 6-pool bleed. The ability to use this modifier only after blocks have been declined
+            makes it superior to bleed actions. The 1 blood cost is a bargain.
+        </p>
+    </div>
+    <div class="column">
+        <div class="column-image">
+            <img src="../../card-images/govern-the-unaligned.jpg">
+            <h4>Govern the Unaligned (628 decks)</h4>
+        </div>
+        <p>
+            An incredibly versatile tool, it helps getting more vampires out for cheap in the beginning of the game,
+            and provides an excruciating bleed later on.
+        </p>
+    </div>
+    <div class="column">
+        <div class="column-image">
+            <img src="../../card-images/bonding.jpg">
+            <h4>Bonding (256 decks)</h4>
+        </div>
+        <p>
+            Clearly it dos not have the same impact as
+            <span class="card" onclick="dC('conditioning')">Conditioning</span> in terms of pool damage,
+            but the +1 stealth is invaluable for constructs with no alternative discipline for stealth.
+        </p>
+    </div>
+    <div class="column">
+        <div class="column-image">
+            <img src="../../card-images/seduction.jpg">
+            <h4>Seduction (254 decks)</h4>
+        </div>
+        <p>
+            An excellent block denial modifier. Well targeted, it can be enough to get a bleed through unopposed.
+            Combined with another block denial modifier, it allows for a pure block denial module
+            that can be used to get actions through without even bothering to use stealth.
+        </p>
+    </div>
+    <div class="column">
+        <div class="column-image">
+            <img src="../../card-images/foreshadowing-destruction.jpg">
+            <h4>Foreshadowing Destruction (225 decks)</h4>
+        </div>
+        <p>
+            An excellent lunge device, it has the same pool damage as a
+            <span class="card" onclick="dC('conditioning')">Conditioning</span> at no cost,
+            provided the prey is low enough in pool.
+            Having both modifiers in hand can be a good way to get around a
+            <span class="card" onclick="dC('direct-intervention')">Direct Intervention</span>, as the modifier
+            countered this way can not be used again during the same action, but another can.
+        </p>
+    </div>
+    <div class="column">
+        <div class="column-image">
+            <img src="../../card-images/redirection.jpg">
+            <h4>Redirection (171 decks)</h4>
+        </div>
+        <p>
+            An alternative to <span class="card" onclick="dC('deflection')">Deflection</span> with no cost,
+            it is only used when <i>D</i> is always at superior in the crypt.
+            Even then, <span class="card" onclick="dC('deflection')">Deflection</span> is still often preferred
+            because it can be chained multiple times.
+        </p>
+    </div>
+    <div class="column">
+        <div class="column-image">
+            <img src="../../card-images/far-mastery.jpg">
+            <h4>Far Mastery (137 decks)</h4>
+        </div>
+        <p>
+            An excellent action to get rid of cumbersome retainers and, more importantly, allies.
+            The 1 blood cost is a bargain.
+        </p>
+    </div>
+</article>
+</body>
+<footer>
+    <nav role="navigation">
+        <a class="prev" href="celerity.html">Celerity</a>
+        <a href="../index.html">TWDA Analysis</a>
+        <a class="next" href="fortitude.html">Fortitude</a>
+    </nav>
+</footer>
+</html>

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel='stylesheet' type='text/css' href='../base.css'/>
+    <script>
+        function dC(name) {
+            document.getElementById("card-image").src = '../card-images/'.concat(name, '.jpg');
+            document.getElementById("card-modal").style.display = "block";
+        }
+    </script>
+    <title>Codex of the Damned</title>
+</head>
+<body>
+<header role="banner">
+    <div class="site-logo">
+    <a href="../index.html" class="site-logo">
+        <img width="150" height="150" src="../icons/vtes.svg" alt="Codex of the Damned">
+        <h1>Codex of the Damned</h1>
+    </a>
+    </div>
+    <nav role="navigation">
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../deck-guides/index.html">Deck Guides</a></li>
+            <li><a href="../strategy/index.html">Strategy</a></li>
+            <li><a href="../archetypes/index.html">Archetypes</a></li>
+            <li><a href="../twda-analysis/index.html">TWDA analysis</a></li>
+        </ul>
+    </nav>
+</header>
+<div id="card-modal" class="modal" onclick="this.style.display='none'">
+        <img class="modal-content" id="card-image">
+</div>
+<article>
+    <h1>Libertine Ball</h1>
+
+    <div class="decklist">
+        <h3>Crypt (12 cards)</h3>
+        <ul>
+            <li>2 <span class="card" onclick="dC('conchita-morales')">Conchita Morales</span></li>
+            <li>2 <span class="card" onclick="dC('guggenheim')">Guggenheim</span></li>
+            <li>1 <span class="card" onclick="dC('jonathan-gursel')">Jonathan Gursel</span></li>
+            <li>1 <span class="card" onclick="dC('justine-chen-innocent')">Justine Chen, Innocent</span></li>
+            <li>3 <span class="card" onclick="dC('klaus-konrecht')">Klaus Konrecht</span></li>
+            <li>1 <span class="card" onclick="dC('l-epuisette')">L’Epuisette</span></li>
+            <li>1 <span class="card" onclick="dC('loonar')">Loonar</span></li>
+            <li>1 <span class="card" onclick="dC('monique-kim')">Monique Kim</span></li>
+        </ul>
+        <h3>Library (77 cards)</h3>
+        <ul>
+            <li><h4>— Master (16) —</h4></li>
+            <li>1 <span class="card" onclick="dC('creepshow-casino')">Creepshow Casino</span></li>
+            <li>1 <span class="card" onclick="dC('dia-de-los-muertos')">Día de los Muertos</span></li>
+            <li>3 <span class="card" onclick="dC('foundation-exhibit')">Foundation Exhibit</span></li>
+            <li>1 <span class="card" onclick="dC('the-hungry-coyote')">The Hungry Coyote</span></li>
+            <li>3 <span class="card" onclick="dC('palla-grande')">Palla Grande</span></li>
+            <li>2 <span class="card" onclick="dC('perfectionist')">Perfectionist</span></li>
+            <li>1 <span class="card" onclick="dC('wash')">Wash</span></li>
+            <li>4 <span class="card" onclick="dC('vessel')">Vessel</span></li>
+            <li><h4>— Action (22) —</h4></li>
+            <li>4 <span class="card" onclick="dC('art-scam')">Art Scam</span></li>
+            <li>9 <span class="card" onclick="dC('the-embrace')">The Embrace</span></li>
+            <li>6 <span class="card" onclick="dC('enchant-kindred')">Enchant Kindred</span></li>
+            <li>3 <span class="card" onclick="dC('entrancement')">Entrancement</span></li>
+            <li><h4>— Political (13) —</h4></li>
+            <li>7 <span class="card" onclick="dC('consanguineous-boon')">Consanguineous Boon</span></li>
+            <li>6 <span class="card" onclick="dC('kine-resources-contested')">Kine Resources Contested</span></li>
+            <li><h4>— Modifier (12) —</h4></li>
+            <li>4 <span class="card" onclick="dC('change-of-target')">Change of Target</span></li>
+            <li>3 <span class="card" onclick="dC('perfect-paragon')">Perfect Paragon</span></li>
+            <li>3 <span class="card" onclick="dC('resist-earths-grasp')">Resist Earth’s Grasp</span></li>
+            <li>2 <span class="card" onclick="dC('scalpel-tongue')">Scalpel Tongue</span></li>
+            <li><h4>— Combat (4) —</h4></li>
+            <li>4 <span class="card" onclick="dC('majesty')">Majesty</span></li>
+            <li><h4>— Reaction (10) —</h4></li>
+            <li>2 <span class="card" onclick="dC('delaying-tactics')">Delaying Tactics</span></li>
+            <li>4 <span class="card" onclick="dC('on-the-qui-vive')">On the Qui Vive</span></li>
+            <li>4 <span class="card" onclick="dC('telepathic-misdirection')">Telepathic Misdirection</span></li>
+        </ul>
+    </div>
+    <p>
+        This is a Toreador Antitribu <em>Breed & Vote</em> deck.
+        The setup is to get a the oldest vampire out first,
+        then play <span class="card" onclick="dC('the-embrace')">The Embrace</span> and
+        <span class="card" onclick="dC('enchant-kindred')">Enchant Kindred</span> at superior <i>R</i>
+        to get more Toreador Antitribu in play. The idea is to overwhelm other decks by sheer numbers.
+    </p>
+    <p>
+        Once enough vampires are in play, the plan is to play either
+        <span class="card" onclick="dC('foundation-exhibit')">Foundation Exhibit</span> or
+        <span class="card" onclick="dC('palla-grande')">Palla Grande</span> to make them useful.
+        These cards should be kept in hand. Copies to replace them are useful once they are destroyed.
+    </p>
+    <h2>Offence</h2>
+    <p>
+        <strong>Pool damage</strong> is high, using
+        <span class="card" onclick="dC('kine-resources-contested')">Kine Resources Contested</span>
+        and bleed actions — especially if <span class="card" onclick="dC('palla-grande')">Palla Grande</span>
+        is in play.
+        If <span class="card" onclick="dC('enchant-kindred')">Enchant Kindred</span> is used at superior <i>R</i>
+        in the beginning to build up more power, it becomes an excellent bleed actino at inferior <i>r</i> later on.
+    </p>
+    <p>
+        The deck has almost no stealth:
+        it uses <span class="card" onclick="dC('change-of-target')">Change of Target</span>
+        against wakes as well as the superior <i>R</i>
+        <span class="card" onclick="dC('majesty')">Majesty</span> effect to cancel blocked actions and try other ones.
+        The sheer number of actions in a single turn will ensure most of them get through.
+        Still, <span class="card" onclick="dC('resist-earths-grasp')">Resist Earth’s Grasp</span> is available to help
+        get critical actions through, like <span class="card" onclick="dC('the-embrace')">The Embrace</span>.
+    </p>
+    <h2>Defence</h2>
+    <p>
+        The <strong>combat module is defensive</strong>, using <span class="card" onclick="dC('majesty')">Majesty</span>
+        to end combats that could kill the vampires.
+    </p>
+    <p>
+        <strong>Bloat is high</strong>, with
+        <span class="card" onclick="dC('consanguineous-boon')">Consanguineous Boon</span> and
+        <span class="card" onclick="dC('art-scam')">Art Scam</span>, completed with some leeching from the vampires
+        with <span class="card" onclick="dC('vessel')">Vessel</span>.
+        <span class="card" onclick="dC('creepshow-casino')">Creepshow Casino</span> and
+        <span class="card" onclick="dC('the-hungry-coyote')">The Hungry Coyote</span> help get more blood out of
+        hunt actions, and <span class="card" onclick="dC('perfectionist')">Perfectionist</span> is used to get even more
+        blood back on vampires.
+    </p>
+    <p>
+        The deck avoids combat so it <strong>does not try to intercept</strong> actions, hence the high bloat module.
+        It uses only <span class="card" onclick="dC('delaying-tactics')">Delaying Tactics</span> against critical votes
+        and <span class="card" onclick="dC('telepathic-misdirection')">Telepathic Misdirection</span> to bounce bleeds.
+    </p>
+    <div class="clear"></div>
+    <h2>Tips</h2>
+    <p>
+        Play <strong>as many actions as possible</strong>. As a general rule, do not keep vampires unlocked and never
+        try to intercept. Even with an unlocked vampire, intercepting can only let an opponent play its stealth
+        (which could otherwise jam his hand) or enter combat (which you could not survive).
+    </p>
+    <p>
+        Keep your vampires <strong>out of torpor</strong>. Embraces seem expendable, but the power of this deck
+        relies on the number of its minions. If an Embrace goes into torpor, pay the blood and her out.
+        If too many minions stay in torpor, the deck will soon be paralized.
+    </p>
+    <p>
+        <strong>Keep your votes</strong> for when
+        <span class="card" onclick="dC('foundation-exhibit')">Foundation Exhibit</span> hit the table.
+        <span class="card" onclick="dC('consanguineous-boon')">Consanguineous Boon</span> is your best bloat device
+        and it is critical to get some through throughout the game.
+    </p>
+    <div class="tip">
+        <h3 class="tip-title">Order of actions</h3>
+        <p>
+            The deck undertakes so many actions it makes it hard for the opponents
+            to decide what to block when they can. Moreover, the deck uses
+            <span class="card" onclick="dC('majesty')">Majesty</span> and
+            <span class="card" onclick="dC('change-of-target')">Change of Target</span> whern it is blocked to
+            end the action, unlock and try another one.
+        </p>
+        <p>
+            The order of actions is therefore decisive. Try to <strong>bait</strong> your opponents into blocking
+            bleed or <span class="card" onclick="dC('kine-resources-contested')">Kine Resources Contested</span>
+            first, then when it seems safe play
+            <span class="card" onclick="dC('the-embrace')">The Embrace</span> and
+            <span class="card" onclick="dC('consanguineous-boon')">Consanguineous Boon</span>.
+        </p>
+    </div>
+</article>
+</body>
+<footer>
+    <nav role="navigation">
+        <a class="prev" href="den-of-fiends.html">Den of Fiends</a>
+        <a href="index.html">Deck guides</a>
+        <a class="next" href="pact-with-nephandi.html">Pact with Nephandi</a>
+    </nav>
+</footer>
+</html>

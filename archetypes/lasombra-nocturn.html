@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel='stylesheet' type='text/css' href='../base.css'/>
+    <script>
+        function dC(name) {
+            document.getElementById("card-image").src = '../card-images/'.concat(name, '.jpg');
+            document.getElementById("card-modal").style.display = "block";
+        }
+    </script>
+    <title>Codex of the Damned</title>
+</head>
+<body>
+<header role="banner">
+    <div class="site-logo">
+    <a href="../index.html" class="site-logo">
+        <img width="150" height="150" src="../icons/vtes.svg" alt="Codex of the Damned">
+        <h1>Codex of the Damned</h1>
+    </a>
+    </div>
+    <nav role="navigation">
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../deck-guides/index.html">Deck Guides</a></li>
+            <li><a href="../strategy/index.html">Strategy</a></li>
+            <li><a href="../archetypes/index.html">Archetypes</a></li>
+            <li><a href="../twda-analysis/index.html">TWDA analysis</a></li>
+        </ul>
+    </nav>
+</header>
+<div id="card-modal" class="modal" onclick="this.style.display='none'">
+        <img class="modal-content" id="card-image">
+</div>
+<article>
+    <h1><img src="../icons/clan-lasombra.svg"> Lasombra Nocturn</h1>
+    <div class="decklist">
+        <h2><a href=http://www.vekn.fr/decks/twd.htm#2010huntforkbi>Deck example</a></h2>
+        <p>
+            Deck by Patrizio Zippone<br/>
+            The Hunt for Kemintiri<br/>
+            Bologna, Italy<br/>
+            April 18th 2010<br/>
+            41 players<br/>
+        </p>
+        <h3>Crypt (12 cards)</h3>
+        <ul>
+            <li>2  <span class="card" onclick="dC('onaedo')">Onaedo</span></li>
+            <li>2  <span class="card" onclick="dC('andrew-emory')">Andrew Emory</span></li>
+            <li>2  <span class="card" onclick="dC('dame-hollerton')">Dame Hollerton</span></li>
+            <li>2  <span class="card" onclick="dC('ermenegildo-the-rake')">Ermenegildo, The Rake</span></li>
+            <li>2  <span class="card" onclick="dC('leila-monroe')">Leila Monroe</span></li>
+            <li>2  <span class="card" onclick="dC('lucy-markowitz')">Lucy Markowitz</span></li>
+        </ul>
+        <h3>Library (90 cards)</h3>
+        <ul>
+            <li><h4>— Master (17) —</h4></li>
+            <li>5  <span class="card" onclick="dC('the-path-of-night')">The Path of Night</span></li>
+            <li>3  <span class="card" onclick="dC('blood-doll')">Blood Doll</span></li>
+            <li>2  <span class="card" onclick="dC('dreams-of-the-sphinx')">Dreams of the Sphinx</span></li>
+            <li>2  <span class="card" onclick="dC('elysian-fields')">Elysian Fields</span></li>
+            <li>2  <span class="card" onclick="dC('perfectionist')">Perfectionist</span></li>
+            <li>1  <span class="card" onclick="dC('fortschritt-library')">Fortschritt Library</span></li>
+            <li>1  <span class="card" onclick="dC('pentex-tm-subversion')">Pentex™ Subversion</span></li>
+            <li>1  <span class="card" onclick="dC('vessel')">Vessel</span></li>
+            <li><h4>— Action (8) —</h4></li>
+            <li>8  <span class="card" onclick="dC('govern-the-unaligned')">Govern the Unaligned</span></li>
+            <li><h4>— Modifier (22) —</h4></li>
+            <li>7  <span class="card" onclick="dC('shadow-play')">Shadow Play</span></li>
+            <li>7  <span class="card" onclick="dC('shroud-of-night')">Shroud of Night</span></li>
+            <li>4  <span class="card" onclick="dC('conditioning')">Conditioning</span></li>
+            <li>4  <span class="card" onclick="dC('foreshadowing-destruction')">Foreshadowing Destruction</span></li>
+            <li><h4>— Reaction (16) —</h4></li>
+            <li>7  <span class="card" onclick="dC('deflection')">Deflection</span></li>
+            <li>6  <span class="card" onclick="dC('on-the-qui-vive')">On the Qui Vive</span></li>
+            <li>2  <span class="card" onclick="dC('delaying-tactics')">Delaying Tactics</span></li>
+            <li>1  <span class="card" onclick="dC('wake-with-evenings-freshness')">Wake with Evening's Freshness</span></li>
+            <li><h4>— Equipment (1) —</h4></li>
+            <li>1  <span class="card" onclick="dC('zaire-river-ferry')">Zaire River Ferry</span></li>
+            <li><h4>— Ally (23) —</h4></li>
+            <li>23 <span class="card" onclick="dC('nocturn')">Nocturn</span></li>
+            <li><h4>— Event (3) —</h4></li>
+            <li>2  <span class="card" onclick="dC('the-unmasking')">The Unmasking</span></li>
+            <li>1  <span class="card" onclick="dC('anthelios-the-red-star')">Anthelios, The Red Star</span></li>
+        </ul>
+    </div>
+    <h2>Highlights</h2>
+    <p>
+        This is a <em>stealth & bleed</em> deck using the Lasombra clan, with the <i>D£</i> disciplines.
+        During the beginning, it uses
+        <span class="card" onclick="dC('govern-the-unaligned')">Govern the Unaligned</span>
+        to get vampires out faster and cheaper. When enough minions are into play, it switches to delivering
+        strong bleed actions using <i>£</i> for stealth.
+    </p>
+    <p>
+        The deck uses
+        <span class="card" onclick="dC('nocturn')">Nocturn</span> to protect its vampires
+        from agression, but also to deliver more bleed in a single turn. At some point,
+        <span class="card" onclick="dC('the-unmasking')">The Unmasking</span> comes into play and make them even
+        better defenders.
+    </p>
+    <p>
+        Stealth is high, with 14 stealth modifiers and
+        <span class="card" onclick="dC('elysian-fields')">Elysian Fields</span> as a permanent enhancer.
+    </p>
+    <p>
+        <span class="card" onclick="dC('deflection')">Deflection</span> and
+        <span class="card" onclick="dC('delaying-tactics')">Delaying Tactics</span> defend against bleed and votes,
+        and the deck uses no combat card at all, relying entirely on the
+        <span class="card" onclick="dC('nocturn')">Nocturn</span> and stealth to avoid it.
+    </p>
+    <h2>Tips & Tricks</h2>
+    <p>
+        One or two <span class="card" onclick="dC('nocturn')">Nocturn</span> should be brought into play each turn.
+        Keeping one in hand just to make sure it can be brought into play the next turn makes sense.
+    </p>
+    <p>
+        <span class="card" onclick="dC('pentex-tm-subversion')">Pentex™ Subversion</span> can be used for the lunge
+        if t
+        he prey has a strong blocker.
+    </p>
+    <p>
+        <span class="card" onclick="dC('on-the-qui-vive')">On the Qui Vive</span> can also be used by a
+        <span class="card" onclick="dC('nocturn')">Nocturn</span> so she can bleed <em>and</em> block a rush action.
+    </p>
+    <p>
+        <span class="card" onclick="dC('zaire-river-ferry')">Zaire River Ferry</span> is an additional stealth
+        enhancer, plus it prevents rush actions: a nice combination.
+    </p>
+    <h2>Variants</h2>
+    <p>
+        This example decklist uses an unusually high number of
+        <span class="card" onclick="dC('nocturn')">Nocturn</span>.
+        Many decks use somewhere between 5 and 12 of them, and more
+        <span class="card" onclick="dC('govern-the-unaligned')">Govern the Unaligned</span> and stealth modifiers.
+        <a href="http://www.vekn.fr/decks/twd.htm#2k9fdsn">Sergio Gracia's deck</a> from 2009 is a good example.
+        He even uses <span class="card" onclick="dC('anarch-convert')">Anarch Convert</span> just to help rotate
+        the crypt and make sure 4 different vampires get out fast.
+    </p>
+    <p>
+        In a sense, the
+        <a href="kiasyd-stealth-bleed.html">Kiasy Stealth & Bleed</a> archetype can be seen as a variation of this one.
+    </p>
+    <p>
+        Using groups 3 and 4, the archetype can include
+        <span class="card" onclick="dC('henri-lavenant')">Henri Lavenant</span> alongside
+        <span class="card" onclick="dC('ermenegildo-the-rake')">Ermenegildo, The Rake</span> and
+        <span class="card" onclick="dC('banjoko')">Banjoko</span> to include
+        <em>Black Hand</em> cards like
+        <span class="card" onclick="dC('tattoo-signal')">Tattoo Signal</span>,
+        <span class="card" onclick="dC('watchtower-four-ride-forth')">Watchtower: Four Ride Forth</span>,
+        <span class="card" onclick="dC('remover')">Remover</span> and
+        <span class="card" onclick="dC('the-admonitions')">The Admonitions</span>.
+        <a href="http://www.vekn.fr/decks/twd.htm#2k9budapesthcq">Csaba Greguss's deck</a> from 2009 is a good example.
+    </p>
+    <div class="clear"></div>
+    <div class="warning">
+        <h3 class="warning-title">Errata</h3>
+        <p>
+            <span class="card" onclick="dC('pentex-tm-subversion')">Pentex™ Subversion</span>
+            has been modified by an <em>errata</em> in September 2019.
+            It does not prevent a vampire to act anymore, so it is less powerful
+            but still has its place in this deck as it is mainly used to disable a blocker for the lunge.
+        </p>
+        <p>
+            <span class="card" onclick="dC('anthelios-the-red-star')">Anthelios, The Red Star</span>
+            has been banned in 2016 and should be removed, but it was not essential to the deck mechanics,
+            although it makes no sense to use
+            <span class="card" onclick="dC('fortschritt-library')">Fortschritt Library</span> with only one
+            <em>Gehenna</em> card in the deck.
+        </p>
+    </div>
+</article>
+</body>
+<footer>
+    <nav role="navigation">
+        <a class="prev" href="kiasyd-stealth-bleed.html">Kiasyd Stealth & Bleed</a>
+        <a href="index.html">Archetypes</a>
+        <a class="next" href="lutz-politics.html">Lutz Politics</a>
+    </nav>
+</footer>
+</html>

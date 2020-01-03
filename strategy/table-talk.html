@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel='stylesheet' type='text/css' href='../base.css'/>
+    <script>
+        function displayCard(name) {
+            document.getElementById("card-image").src = '../card-images/'.concat(name, '.jpg');
+            document.getElementById("card-modal").style.display = "block";
+        }
+    </script>
+    <title>Codex of the Damned</title>
+</head>
+<body>
+<header role="banner">
+    <div class="site-logo">
+    <a href="../index.html" class="site-logo">
+        <img width="150" height="150" src="../icons/vtes.svg" alt="Codex of the Damned">
+        <h1>Codex of the Damned</h1>
+    </a>
+    </div>
+    <nav role="navigation">
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../deck-guides/index.html">Deck Guides</a></li>
+            <li><a href="../strategy/index.html">Strategy</a></li>
+            <li><a href="../archetypes/index.html">Archetypes</a></li>
+            <li><a href="../twda-analysis/index.html">TWDA analysis</a></li>
+        </ul>
+    </nav>
+</header>
+<div id="card-modal" class="modal" onclick="this.style.display='none'">
+        <img class="modal-content" id="card-image">
+</div>
+<article>
+    <h1 id="bloat">Table talk</h1>
+    <em>« Table talk »</em> is an important part of the game.
+    The best players are ruthless negotiators and rely on their skill to topple the game in their favour.
+    <h2 id="negociation">Negociation</h2>
+    <p>
+        Making tactical deals with other players during the game is a necessity and the heart of table talk.
+        Asking someone to block and action or let it pass through, to rush a vampire or let it live, is easy enough.
+        In fact, a lot of things can be discussed and negociated around the table. The key to successful negociation
+        is to determine what every other player <strong>can offer</strong> and what he <strong>may desire</strong>.
+        Once one gets the hang of it, almost anything can be dealt on a table.
+    </p>
+    <p>Some tactical deals are fairly common:</p>
+    <ul>
+        <li>Agreeing for a low damage combat (1 damage each) before blocking an ally bleed being bounced.</li>
+        <li>Getting another player's vampire out of torpor — as it is a directed action, it is harder to block.</li>
+        <li>Letting an action get through — often on the ground that the result does not hinder the other player.</li>
+        <li>
+            Aggreing to use <span class="card" onclick="displayCard('ashur-tablets')">Ashur Tablets</span>
+            alternatively when two players use them, thus avoiding to cripple one another.
+        </li>
+        <li>Asking for help to get a vampire down by getting into combat.</li>
+        <li>Letting an ally borrow a card like
+            <span class="card" onclick="displayCard('the-rack')">The Rack</span> or
+            <span class="card" onclick="displayCard('powerbase-montreal')">Powerbase: Montreal</span>.
+        </li>
+    </ul>
+    <p>
+        Deals can tend to something <em>not</em> being done instead of something being offered.
+        Dealing to <em>not</em> bleed, <em>not</em> block or <em>not</em> rush are valid and often offered to
+        one's prey or predator.
+    </p>
+    <div class="tip">
+        <h3 class="tip-title">The unbearable lightness of deals</h3>
+        <p>
+            They are two important things to keep in mind with deals: first, they can always be broken, and one should
+            always be prepared to break them or have them broken by the other party. Second, one can always deal
+            something he can not do anyway. For example, a wall deck can well deal to let an action pass
+            in exchange for some advantage, even if he had no way to block the action in the first place.
+        </p>
+        <p>
+            Deals are a powerful tool but they should still be considered with some lightness.
+        </p>
+    </div>
+    <p>
+        Finally, on the tournament scene, <strong>table splits</strong> deals are commonplace. For this kind of deals,
+        2 or 3 prominent players agree upon a repartition of Victory Points by deciding who gets to oust who.
+        This is often key for a good cross table alliance.
+    </p>
+    <h2>
+        Information, Deception and Standing
+    </h2>
+    <p>
+        Table talk is not only about negociation, it is also about manipulation.
+        Multiple techniques are used for deception and information gathering. One such technique is to
+        <strong>announce</strong> every action one as the intention to undertake before playing it.
+        It has multiple interesting effects:
+    </p>
+    <ul>
+        <li>
+            It is a nice way to <strong>gather information</strong> about the opponents play:
+            can they block, bounce or counter?
+        </li>
+        <li>
+            It opens a window of negociation to get an action through and <strong>avoid possible blocks</strong>.
+        </li>
+        <li>
+            It makes the player <strong>appear more affable</strong> and less threatening, as he looks like he tries
+            to get other players aproval before deciding on his action. Keeping that in mind, it is a good play
+            to accept to delay an action if it causes an issue for an ally, or to excuse oneself when undertaking
+            an aggressive action toward another player. Being likeable is an excellent asset throughout the game.
+        </li>
+        <li>
+            It gives an occasion to use a bit of deception by commenting the action and
+            <strong>mislead the opponents</strong> about its long term effect or importance to the deck strategy.
+        </li>
+    </ul>
+    <div class="tip">
+        <h3 class="tip-title">Decision timing</h3>
+        <p>
+            The time someone takes to ponder wether or not they react to a play or an action can be an indication
+            of their hand content. One should keep focused on the decision timing of the other players,
+            while trying to be as unconspicuous as possible oneself.
+        </p>
+        <ul>
+            <li>
+                The best but hardest way to be impenetrable is to be focused enough to always take a similar short
+                time pondering any reaction — even when none is possible. This is easier said than done,
+                but this is what the real <strong>Poker Face</strong> is about.
+            </li>
+            <li>
+                An easier way to go is to <strong>act as if</strong> one had a wake or a bounce in hand when it's not
+                the case and as if one has none when in fact one has, from time to time.
+                Asking for two seconds to ponder during another player turn to hint at a counter like
+                <span class="card" onclick="displayCard('sudden-reversal')">Sudden Reversal</span> without having it in
+                hand is a cheap but effective move. Even better if the card is not in the deck at all: hinting
+                at a card one does not have only to draw it the next turn is quite clumsy.
+            </li>
+            <li>
+                The easiest way to stay composed is to <strong>decide in advance</strong> what one's reaction will be.
+                For example, with a wake in hand, one can decide <em>beforehand</em> that one will wake only on a bleed
+                if it is anounced above one pool. This way, when an action is announced,
+                on can always react quite fast — the pondering time does not show as the decision is already made.
+            </li>
+        </ul>
+    </div>
+    <p>
+        The last tool of manipulation one can wield easily is about <strong>standing</strong> around the table.
+        A handful of casual comments can go a long way. One can always try to give the impression that:
+    </p>
+        <ul>
+            <li>
+                One is in a good position to handle one's prey and she will die quickly. This way one appear as a
+                valuable ally and can make the prey natural allies hesitant about helping her.
+            </li>
+            <li>
+                One's predator is an unsustainable threat. This will encourage the rest of the table to focus
+                on him, hopefully releaving a bit of the pressure he projects.
+            </li>
+        </ul>
+    <p>
+        This <strong>posture</strong> is a default — but effective — one:
+        <em>"My prey is doomed but my predator will handle me single-handedly"</em>.
+        This should be adapted, however, depending on the archetypes around the table. The key is to chose a posture
+        early about the winning chances and threat level of the other decks — and keep to it — in order to
+        try to tip the balance a little bit into one's favour.
+    </p>
+    <h2>Table strategies</h2>
+    <p>
+        Not everything around the table is about talking. Having a good sense of the table balance is essential to
+        build an efficient table strategy as well. First, one should always <strong>lay low</strong> and avoid to focus
+        the table attention to oneself. To this effect, table talk should be kept short, effective and pleasant.
+    </p>
+    <p>
+        The most obvious fact about table strategy is the two players « cross table » are
+        <strong>natural allies</strong>. The grand-prey will be leaning to help against the prey,
+        and the grand-predator against the predator. Cultivating good rapports with them is important in the beginning.
+        As the game progress though, they can become threats themselves.
+    </p>
+    <div class="tip">
+        <h3 class="tip-title">Hopping</h3>
+        <p>
+            A strategy uniquely available to vote constructs, hopping is going against the grand-prey pool
+            before ousting the prey first. It is a good idea when the grand-prey deck has good block capacity:
+            they do not get the chance to block the undirected vote actions until they are either
+            the prey or the predator.
+        </p>
+    </div>
+    <p>
+        Finally, one should of course focus on <strong>eliminating its prey</strong>. However,
+        when the predator is too threatening, some builds have the ability to <strong>go reverse</strong>,
+        taking aggressive actions against their predator to oust them before their prey.
+        A full reverse, taking predators down one after another for a 2 VP game win at the end, is hard to achieve:
+        each predator gets 6 more pool out of the oust. However, going at least partially reverse during a game,
+        ousting one predator to diminish the pressure, is a real possibility for some decks.
+    </p>
+</article>
+</body>
+<footer>
+    <nav role="navigation">
+        <a class="prev" href="archetypes.html">Archetypes</a>
+        <a href="index.html">Strategy</a>
+        <a class="next" href="fundamentals.html">Fundamentals</a>
+    </nav>
+</footer>
+</html>

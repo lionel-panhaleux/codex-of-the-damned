@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel='stylesheet' type='text/css' href='../../base.css'/>
+    <script>
+        function dC(name) {
+            document.getElementById("card-image").src = '../../card-images/'.concat(name, '.jpg');
+            document.getElementById("card-modal").style.display = "block";
+        }
+    </script>
+    <title>Codex of the Damned</title>
+</head>
+<body>
+<header role="banner">
+    <div class="site-logo">
+    <a href="../../index.html" class="site-logo">
+        <img width="150" height="150" src="../../icons/vtes.svg" alt="Codex of the Damned">
+        <h1>Codex of the Damned</h1>
+    </a>
+    </div>
+    <nav role="navigation">
+        <ul>
+            <li><a href="../../index.html">Home</a></li>
+            <li><a href="../../deck-guides/index.html">Deck Guides</a></li>
+            <li><a href="../../strategy/index.html">Strategy</a></li>
+            <li><a href="../../archetypes/index.html">Archetypes</a></li>
+            <li><a href="../../twda-analysis/index.html">TWDA analysis</a></li>
+        </ul>
+    </nav>
+</header>
+<div id="card-modal" class="modal" onclick="this.style.display='none'">
+        <img class="modal-content modal-center" id="card-image">
+</div>
+<article class="article-columns">
+    <h1><img src="../../icons/clan-akunanse.svg"> Akunanse</h1>
+    <p>
+        Akunanse and their rare discipline <i>w</i> provide a stronger defence than the usual <i>i</i> builds.
+    </p>
+    <p>
+        This clan has two main archetypes: the <a href=../../archetypes/akunanse-wall.html>Akunanse Wall</a>,
+        using <i>w</i> along <i>i</i> for a sturdy wall,
+        and <a href=../../archetypes/team-jacob.html>Team Jacob</a> using the infamous
+        <span class="card" onclick="dC('tunnel-runner')">Tunnel Runner</span>.
+    </p>
+    <h2>Highlights</h2>
+    <div class="column">
+        <div class="column-image">
+            <img src="../../card-images/uchenna.jpg">
+            <h4>Uchenna (31 decks)</h4>
+        </div>
+        <p>
+            A Magaji with superior <i>WFI</i> for just 7 pool: definitely a good deal,
+            plus her ability may be useful in tense situations although 1 blood to draw a card is a high price to pay.
+            The fact that she is Magaji let her play the excellent
+            <span class="card" onclick="dC('no-secrets-from-the-magaji')">No Secrets From the Magaji</span>.
+        </p>
+    </div>
+    <div class="column">
+        <div class="column-image">
+            <img src="../../card-images/mapatano-utando.jpg">
+            <h4>Mapatano Utando (22 decks)</h4>
+        </div>
+        <p>
+            A good master for Akunanse decks — it can speed up the build up in the beginning,
+            but also avoid pool loss regularly, at no cost.
+            Not really a game turner, but gaining one or two turns or 3 pools or more is definitely efficient.
+        </p>
+    </div>
+    <div class="column">
+        <div class="column-image">
+            <img src="../../card-images/reliquary-akunanse-remains.jpg">
+            <h4>Reliquary: Akunanse Remains (14 decks)</h4>
+        </div>
+        <p>
+            A good equipment: +1 bleed for 1 pool is good,
+            plus the discipline boost is excellent for low capacity vampires.
+        </p>
+    </div>
+    <div class="column">
+        <div class="column-image">
+            <img src="../../card-images/tunnel-runner.jpg">
+            <h4>Tunnel Runner (13 decks)</h4>
+        </div>
+        <p>
+            He can be used as the main minion of the deck for good stealthed bleed,
+            his ability can be used more than once in a turn, allowing it to get +2 stealth.
+            He is expensive, though — he becomes really efficient partnered with
+            <span class="card" onclick="dC('jacob-fermor')">Jacob Fermor</span> in the
+            <a href=../../archetypes/jacobs-team.html>Jacob's Team</a> archetype.
+        </p>
+    </div>
+    <div class="column">
+        <div class="column-image">
+            <img src="../../card-images/predators-communion.jpg">
+            <h4>Predator's Communion (32 decks)</h4>
+        </div>
+        <p>
+            Wake and intercept bundled in a single card: an excellent reaction for any intercept module.
+            This card, combined with the combat-efficient <i>f</i> discipline fo the clan,
+            explains the success of wall archetypes in the Akunanse clan.
+        </p>
+    </div>
+    <div class="column">
+        <div class="column-image">
+            <img src="../../card-images/invoking-the-beast.jpg">
+            <h4>Invoking the Beast (211 decks)</h4>
+        </div>
+        <p>
+            A good combat card at no cost: additional damage, plus a handy press that combines very well with
+            <span class="card" onclick="dC('carrion-crows')">Carrion Crows</span>
+        </p>
+    </div>
+    <div class="column">
+        <div class="column-image">
+            <img src="../../card-images/predators-transformation.jpg">
+            <h4>Predator's Transformation (20 decks)</h4>
+        </div>
+        <p>
+            Not a very good stealth card, but the only one available for Akunanse.
+            The superior effect may come in handy against weenie constructs.
+        </p>
+    </div>
+    <div class="column">
+        <div class="column-image">
+            <img src="../../card-images/devil-channel-hands.jpg">
+            <h4>Devil-Channel: Hands (15 decks)</h4>
+        </div>
+        <p>
+            An excellent combat cards, adding aggravated damage to an already efficient combat module.
+        </p>
+    </div>
+</article>
+</body>
+<footer>
+    <nav role="navigation">
+        <a class="prev" href="ahrimanes.html">Ahrimanes</a>
+        <a href="../index.html">TWDA Analysis</a>
+        <a class="next" href="assamite.html">Assamite</a>
+    </nav>
+</footer>
+</html>

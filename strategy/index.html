@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel='stylesheet' type='text/css' href='../base.css'/>
+    <script>
+        function displayCard(name) {
+            document.getElementById("card-image").src = '../card-images/'.concat(name, '.jpg');
+            document.getElementById("card-modal").style.display = "block";
+        }
+    </script>
+    <title>Codex of the Damned</title>
+</head>
+<body>
+<header role="banner">
+    <div class="site-logo">
+    <a href="../index.html" class="site-logo">
+        <img width="150" height="150" src="../icons/vtes.svg" alt="Codex of the Damned">
+        <h1>Codex of the Damned</h1>
+    </a>
+    </div>
+    <nav role="navigation">
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../deck-guides/index.html">Deck Guides</a></li>
+            <li><a href="../strategy/index.html">Strategy</a></li>
+            <li><a href="../archetypes/index.html">Archetypes</a></li>
+            <li><a href="../twda-analysis/index.html">TWDA analysis</a></li>
+        </ul>
+    </nav>
+</header>
+<div id="card-modal" class="modal" onclick="this.style.display='none'">
+        <img class="modal-content" id="card-image">
+</div>
+<article>
+    <p>
+        The strategy section explores <strong>Vampire: the Eternal Struggle</strong> strategy in some details.
+    </p>
+    <ul>
+        <li><a href="fundamentals.html">Fundamentals</a> gives general tips and advices.</li>
+        <li><a href="combat.html">Combat</a> explains combat in detail.</li>
+        <li><a href="bloat.html">Bloat</a> details the different strategies to gain pool during a game.</li>
+        <li><a href="deck-building.html">Deck building</a> gives some tools toward deck building.</li>
+        <li><a href="archetypes.html">Archetypes</a> is an introduction to the different deck archetypes.</li>
+        <li><a href="table-talk.html">Table Talk</a> presents negociation strategies and tips.</li>
+    </ul>
+</article>
+<footer>
+    <nav role="navigation">
+        <a class="prev" href="../deck-guides/index.html">Deck guides</a>
+        <a href="../index.html">Home</a>
+        <a class="next" href="../archetypes/index.html">Archetypes</a>
+    </nav>
+</footer>
+</body>
+</html>

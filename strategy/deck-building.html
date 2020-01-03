@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel='stylesheet' type='text/css' href='../base.css'/>
+    <script>
+        function displayCard(name) {
+            document.getElementById("card-image").src = '../card-images/'.concat(name, '.jpg');
+            document.getElementById("card-modal").style.display = "block";
+        }
+    </script>
+    <title>Codex of the Damned</title>
+</head>
+<body>
+<header role="banner">
+    <div class="site-logo">
+    <a href="../index.html" class="site-logo">
+        <img width="150" height="150" src="../icons/vtes.svg" alt="Codex of the Damned">
+        <h1>Codex of the Damned</h1>
+    </a>
+    </div>
+    <nav role="navigation">
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../deck-guides/index.html">Deck Guides</a></li>
+            <li><a href="../strategy/index.html">Strategy</a></li>
+            <li><a href="../archetypes/index.html">Archetypes</a></li>
+            <li><a href="../twda-analysis/index.html">TWDA analysis</a></li>
+        </ul>
+    </nav>
+</header>
+<div id="card-modal" class="modal" onclick="this.style.display='none'">
+        <img class="modal-content" id="card-image">
+</div>
+<article>
+    <h1 id="deck-building">Deck building</h1>
+    <h2 id="modules-and-density">Modules and density</h2>
+    <p>
+        Decks can be broken down in « modules »: group of cards with a similar objective.
+        The percentage of cards each module contains is its density. As the normal hand size is seven,
+        the expectation (number of cards of the module you can expect in any given hand) is the density time seven.
+    </p>
+    <p>
+        Modules with a density over 25% entail an expectation over 1.75: more often than not,
+        two cards of the module in hand. This kind of <strong>spam</strong> module is a rare distribution,
+        but is necessary to continuously play a given card multiple times every turn.
+    </p>
+    <p>
+        Almost all decks have one or more <strong>strong</strong> modules, with a density between 14% and 25%
+        (expectation between 1 and 1.5): these cards will be used once or twice at each turn.
+        A deck strategy can often be identified by checking its strong modules.
+    </p>
+    <p>
+        <strong>Standard</strong> modules with a density between 7% and 14% have an expectation between ½ and 1.
+        They are supposed to be used regularly but not necessarily every turn. Strong and standard modules cards
+        can be discarded when needed, as one can be confident to get another in hand quite soon.
+    </p>
+    <p>
+        <strong>Tactical</strong> modules have a density below 7% and typically provide specific tactical support.
+        From unique permanents and events to counters or responses to expected counters, they provide build-up power
+        and security. As these cards are drawn sporadically, they are meant to be kept in hand for special cases
+        or immediately discarded if the context is not favourable. In case they might come in handy, they should be
+        kept in hand until needed - the sparse distribution of the module makes sure the cards will not jam the hand.
+    </p>
+    <div class="tip">
+        <h3 class="tip-title">Master module</h3>
+        <p>
+            The Master module density depends on the rotation speed: one want to play one Master card per turn
+            as much as possible, but not more. So the higher the rotation speed, the slimmer the master module density.
+            Hence, the Master cards count stays stable across deck sizes: 12 to 15 Master cards plus, optionally,
+            up to 6 or 7 Trifle.
+        </p>
+    </div>
+    <h2 id="rotation">Rotation</h2>
+    <p>
+        Games usually last between 10 to 20 turns and decks are tailored with the peak card rotation speed in mind:
+        the number of cards played on average between one unlock phase and the next,
+        not counting the few first turns of build-up. The deck size should enable a peak rotation during 12 turns.
+        The efficiency of a deck depends on its capacity to maintain an optimal rotation speed throughout the game:
+        being stuck with no relevant card to play is a loosing situation.
+    </p>
+    <div class="tip">
+        <h3 class="tip-title">Deck size examples</h3>
+        <p>
+            60 cards deck have a peak rotation of 5 cards maximum (5 × 12 = 60): in the mid-game it plays one master,
+            three to four minion cards, and maybe a discard. This counts the whole turn, reactions included.
+        </p>
+        <p>
+            90 cards deck have a peak rotation of 7 to 8 cards (90 ∕ 12 = 7.5): in the mid-game it plays one master,
+            up to a full hand of minion cards and maybe a discard.
+        </p>
+    </div>
+    <p>
+        <strong>Cycling</strong> cards and purposefully increasing the rotation to get more efficient cards
+        is sometimes the only way to keep the rotation fluid.
+        Multiple cards are available to provide good cycling options:
+    </p>
+    <ul>
+        <li class="card" onclick="displayCard('dreams-of-the-sphinx')">Dreams of the Sphinx</li>
+        <li class="card" onclick="displayCard('the-barrens')">The Barrens</li>
+        <li class="card" onclick="displayCard('heart-of-nizchetus')">Heart of Nizchetus</li>
+        <li>
+            <span class="card" onclick="displayCard('fragment-of-the-book-of-nod')">Fragment of the Book of Nod</span>
+            (need to be defended)
+        </li>
+        <li>
+            <span class="card" onclick="displayCard('powerbase-los-angeles')">Powerbase: Los Angeles</span>
+            (need to be defended, best with Anarchs)
+        </li>
+        <li>
+            <span class="card" onclick="displayCard('the-admonitions')">The Admonitions</span>
+            (Sabbat only, best with Black Hand)
+        </li>
+    </ul>
+    <p>
+        A card that is hard to play can <strong>jam</strong> the hand.
+        Action modifiers, especially restricted stealth cards like
+        <span class="card" onclick="displayCard('forgotten-labyrinth')">Forgotten Labyrinth</span>,
+        can only be used when the opponent tries to block, so they can jam.
+        On the other hand, action cards like
+        <span class="card" onclick="displayCard('computer-hacking')">Computer Hacking</span>
+        do not usually jam the hand as they can be played as soon as a minion is unlocked and ready to act.
+        A tactical module for card rotation can be played in situations when jamming is expected.
+    </p>
+    <div class="tip">
+        <h3 class="tip-title">Recursion</h3>
+        <p>
+            Even stronger than a good rotation, the <strong>recursion</strong> can be a strong point in a deck:
+            it is the ability to fetch cards from the Ash Heap and get them back into Hand.
+            Only a few cards provide recursion in the game:
+        </p>
+        <ul>
+            <li>
+                <span class="card" onclick="displayCard('ashur-tablets')">Ashur Tablets</span> provide an excellent
+                recursion as well as a powerful bloat. They need more than one Master phase action to be really
+                effective, so <span class="card" onclick="displayCard('the-parthenon')">The Parthenon</span> can come in
+                handy. The <a href=../archetypes/index.html#mmpa>MMPA archetype</a> makes full use of this card.
+            </li>
+            <li>
+                <span class="card" onclick="displayCard('the-sargon-fragment')">The Sargon Fragment</span> is the only
+                other option open to all, but it is unique and uses up a lot of actions.
+            <li>
+                Giovanni have the excellent
+                <span class="card" onclick="displayCard('sudario-refraction')">Sudario Refraction</span> and the lesser
+                <span class="card" onclick="displayCard('spiritual-guidance')">Spiritual Guidance</span>
+            </li>
+            <li>
+                <i>n</i> offers
+                <span class="card" onclick="displayCard('whispers-from-the-dead')">Whispers From the Dead</span> and
+                <span class="card" onclick="displayCard('gear-up')">Gear Up</span> (Anarchs)
+            </li>
+            <li>
+                <span class="card" onclick="displayCard('garibaldi-meucci-museum')">Garibaldi-Meucci Museum</span>
+                (Unique, Anarchs)
+            </li>
+            <li>
+                <span class="card" onclick="displayCard('drop-point-network')">Drop Point Network</span>
+                (Black Hand)
+            </li>
+            <li>
+                <span class="card" onclick="displayCard('maabara')">Maabara</span> (Unique, Harbinger of Skulls)
+            </li>
+            <li>
+                <span class="card" onclick="displayCard('unity')">Unity</span>
+                (Unique, Visionnary Imbued)
+            </li>
+        </ul>
+        <p>
+            Beyond its obious advantage of fetching just the right card at the right time, a good recursion allows
+            a deck to adapt itself to the context and the table situation.
+        </p>
+    </div>
+</article>
+</body>
+<footer>
+    <nav role="navigation">
+        <a class="prev" href="bloat.html">Bloat</a>
+        <a href="index.html">Strategy</a>
+        <a class="next" href="archetypes.html">Archetypes</a>
+    </nav>
+</footer>
+</html>

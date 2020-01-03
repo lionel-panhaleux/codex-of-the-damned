@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel='stylesheet' type='text/css' href='../base.css'/>
+    <script>
+        function dC(name) {
+            document.getElementById("card-image").src = '../card-images/'.concat(name, '.jpg');
+            document.getElementById("card-modal").style.display = "block";
+        }
+    </script>
+    <title>Codex of the Damned</title>
+</head>
+<body>
+<header role="banner">
+    <div class="site-logo">
+    <a href="../index.html" class="site-logo">
+        <img width="150" height="150" src="../icons/vtes.svg" alt="Codex of the Damned">
+        <h1>Codex of the Damned</h1>
+    </a>
+    </div>
+    <nav role="navigation">
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../deck-guides/index.html">Deck Guides</a></li>
+            <li><a href="../strategy/index.html">Strategy</a></li>
+            <li><a href="../archetypes/index.html">Archetypes</a></li>
+            <li><a href="../twda-analysis/index.html">TWDA analysis</a></li>
+        </ul>
+    </nav>
+</header>
+<div id="card-modal" class="modal" onclick="this.style.display='none'">
+        <img class="modal-content" id="card-image">
+</div>
+<article>
+    <h1><img src="../icons/clan-guruhi.svg"> Guruhi Rush</h1>
+    <div class="decklist">
+        <h2><a href=http://www.vekn.fr/decks/twd.htm#2019ecday2pf>Finnish Politics</a></h2>
+        <p>
+            Deck by Otso Saariluoma<br/>
+            EC 2019 - Day 2<br/>
+            Paris, France<br/>
+            August 18th 2019<br/>
+            50 players, 132 players on Day 1<br/>
+        </p>
+        <h3>Crypt (12 cards)</h3>
+        <ul>
+            <li>4  <span class="card" onclick="dC('anarch-convert')">Anarch Convert</span></li>
+            <li>3  <span class="card" onclick="dC('nana-buruku')">Nana Buruku</span></li>
+            <li>2  <span class="card" onclick="dC('nangila-were')">Nangila Were</span></li>
+            <li>1  <span class="card" onclick="dC('enkidu-the-noah')">Enkidu, The Noah</span></li>
+            <li>1  <span class="card" onclick="dC('black-annis')">Black Annis</span></li>
+            <li>1  <span class="card" onclick="dC('andre-leroux')">Andre LeRoux</span></li>
+        </ul>
+        <h3>Library (65 cards)</h3>
+        <ul>
+            <li><h4>— Master (26) —</h4></li>
+            <li>6  <span class="card" onclick="dC('ashur-tablets')">Ashur Tablets</span></li>
+            <li>5  <span class="card" onclick="dC('villein')">Villein</span></li>
+            <li>4  <span class="card" onclick="dC('anarch-revolt')">Anarch Revolt</span></li>
+            <li>2  <span class="card" onclick="dC('pentex-tm-subversion')">Pentex™ Subversion</span></li>
+            <li>1  <span class="card" onclick="dC('archon-investigation')">Archon Investigation</span></li>
+            <li>1  <span class="card" onclick="dC('dreams-of-the-sphinx')">Dreams of the Sphinx</span></li>
+            <li>1  <span class="card" onclick="dC('fame')">Fame</span></li>
+            <li>1  <span class="card" onclick="dC('giants-blood')">Giant's Blood</span></li>
+            <li>1  <span class="card" onclick="dC('information-highway')">Information Highway</span></li>
+            <li>1  <span class="card" onclick="dC('mbare-market-harare')">Mbare Market, Harare</span></li>
+            <li>1  <span class="card" onclick="dC('powerbase-luanda')">Powerbase: Luanda</span></li>
+            <li>1  <span class="card" onclick="dC('powerbase-montreal')">Powerbase: Montreal</span></li>
+            <li>1  <span class="card" onclick="dC('wider-view')">Wider View</span></li>
+            <li><h4>— Action (5) —</h4></li>
+            <li>3  <span class="card" onclick="dC('deep-song')">Deep Song</span></li>
+            <li>1  <span class="card" onclick="dC('entrancement')">Entrancement</span></li>
+            <li>1  <span class="card" onclick="dC('well-marked')">Well-Marked</span></li>
+            <li><h4>— Combat (26) —</h4></li>
+            <li>5  <span class="card" onclick="dC('carrion-crows')">Carrion Crows</span></li>
+            <li>5  <span class="card" onclick="dC('immortal-grapple')">Immortal Grapple</span></li>
+            <li>4  <span class="card" onclick="dC('taste-of-vitae')">Taste of Vitae</span></li>
+            <li>4  <span class="card" onclick="dC('torn-signpost')">Torn Signpost</span></li>
+            <li>2  <span class="card" onclick="dC('thrown-sewer-lid')">Thrown Sewer Lid</span></li>
+            <li>1  <span class="card" onclick="dC('canine-horde')">Canine Horde</span></li>
+            <li>1  <span class="card" onclick="dC('glancing-blow')">Glancing Blow</span></li>
+            <li>1  <span class="card" onclick="dC('mighty-grapple')">Mighty Grapple</span></li>
+            <li>1  <span class="card" onclick="dC('slam')">Slam</span></li>
+            <li>1  <span class="card" onclick="dC('stunt-cycle')">Stunt Cycle</span></li>
+            <li>1  <span class="card" onclick="dC('undead-strength')">Undead Strength</span></li>
+            <li><h4>— Reaction (6) —</h4></li>
+            <li>2  <span class="card" onclick="dC('on-the-qui-vive')">On the Qui Vive</span></li>
+            <li>2  <span class="card" onclick="dC('sense-the-savage-way')">Sense the Savage Way</span></li>
+            <li>1  <span class="card" onclick="dC('cats-guidance')">Cats' Guidance</span></li>
+            <li>1  <span class="card" onclick="dC('delaying-tactics')">Delaying Tactics</span></li>
+            <li><h4>— Retainer (1) —</h4></li>
+            <li>1  <span class="card" onclick="dC('mr-winthrop')">Mr. Winthrop</span></li>
+            <li><h4>— Event (1) —</h4></li>
+            <li>1  <span class="card" onclick="dC('dragonbound')">Dragonbound</span></li>
+        </ul>
+    </div>
+    <h2>Highlights</h2>
+    <p>
+        This is a <em>rush</em> deck using the <i>IP</i> disciplines combination.
+        <span class="card" onclick="dC('nana-buruku')">Nana Buruku</span> is used for additional Master actions,
+        playing <span class="card" onclick="dC('ashur-tablets')">Ashur Tablets</span> for recursion and
+        <span class="card" onclick="dC('anarch-revolt')">Anarch Revolt</span> for additional pool damage.
+    </p>
+    <p>
+        <span class="card" onclick="dC('nangila-were')">Nangila Were</span>,
+        <span class="card" onclick="dC('enkidu-the-noah')">Enkidu, The Noah</span> and/or
+        <span class="card" onclick="dC('black-annis')">Black Annis</span> are used to rush the opponents minions
+        and take them down with the powerful <i>IP</i> combat module.
+    </p>
+    <p>
+        <span class="card" onclick="dC('fame')">Fame</span> and
+        <span class="card" onclick="dC('dragonbound')">Dragonbound</span> are used to improve pool damage a bit.
+    </p>
+    <h2>Tips & Tricks</h2>
+    <p>
+        <span class="card" onclick="dC('powerbase-luanda')">Powerbase: Luanda</span> and
+        <span class="card" onclick="dC('well-marked')">Well-Marked</span> are nice tools for a rush deck, although
+        they can be used by both <span class="card" onclick="dC('nana-buruku')">Nana Buruku</span> and
+        <span class="card" onclick="dC('nangila-were')">Nangila Were</span>.
+    </p>
+    <p>
+        Just including a bit of <em>wakes</em> and some intercept enhancers like
+        <span class="card" onclick="dC('cats-guidance')">Cats' Guidance</span> and
+        <span class="card" onclick="dC('sense-the-savage-way')">Sense the Savage Way</span>
+        keep the other players guessing on wether the deck can block or not.
+    </p>
+    <p>
+        Getting <span class="card" onclick="dC('wider-view')">Wider View</span> at some point helps
+        rotating the crypt a little bit.
+    </p>
+    <p>
+        <span class="card" onclick="dC('andre-le-roux')">Andre LeRoux</span> is included as a bleed enhancer once
+        all the prey's vampires are down.
+    </p>
+    <p>
+        The combat module include a lot of cards in single copy as specific counters.
+        They're not likeliy to jam the hand and can be brought back by
+        <span class="card" onclick="dC('ashur-tablets')">Ashur Tablets</span> if need be.
+    </p>
+    <p>
+        As the game moves along, the deck can use <span class="card" onclick="dC('ashur-tablets')">Ashur Tablets</span>
+        to concentrate the content of the deck on more bleed or more combat cards, depending on what's needed.
+    </p>
+    <h2>Variants</h2>
+    <p>
+        A variant focuses more on <em>Guruhi</em>, like
+        <a href="http://www.vekn.fr/decks/twd.htm#2k9nacday2">Michael Heyder's deck</a> from 2009.
+        It can get more toolboxy, use <i>R</i> more for
+        <span class="card" onclick="dC('enchant-kindred')">Enchant Kindred</span> and the excellent
+        <span class="card" onclick="dC('founders-of-the-ebony-kingdom')">Founders of the Ebony Kingdom</span>.
+        <span class="card" onclick="dC('grooming-the-protege')">Grooming the Protégé</span>
+        also helps getting vampires out faster.
+    </p>
+    <p>
+        Other versions do not go the Anarch way and simply focus on more
+        <span class="card" onclick="dC('ashur-tablets')">Ashur Tablets</span>, like
+        <a href="http://www.vekn.fr/decks/twd.htm#2014sncms">Jorge Delgado's deck</a> from 2014.
+        <span class="card" onclick="dC('carvers-meat-packing-and-storage')">Carver's Meat Packing and Storage</span>
+        and <span class="card" onclick="dC('tension-in-the-ranks')">Tension in the Ranks</span> can also be added
+        to help the rush side of things.
+    </p>
+    <div class="clear"></div>
+    <div class="warning">
+        <h3 class="warning-title">Errata</h3>
+        <p>
+            <span class="card" onclick="dC('pentex-tm-subversion')">Pentex™ Subversion</span>
+            has been modified by an <em>errata</em> in September 2019.
+            It does not prevent a vampire to act anymore, so it is less powerful
+            and should probably not be included in the deck anymore.
+        </p>
+    </div>
+</article>
+</body>
+<footer>
+    <nav role="navigation">
+        <a class="prev" href="nananimalism.html">Nananimalism</a>
+        <a href="index.html">Archetypes</a>
+        <a class="next" href="hunters.html">Hunters</a>
+    </nav>
+</footer>
+</html>

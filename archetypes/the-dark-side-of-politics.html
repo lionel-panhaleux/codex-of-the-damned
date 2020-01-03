@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel='stylesheet' type='text/css' href='../base.css'/>
+    <script>
+        function dC(name) {
+            document.getElementById("card-image").src = '../card-images/'.concat(name, '.jpg');
+            document.getElementById("card-modal").style.display = "block";
+        }
+    </script>
+    <title>Codex of the Damned</title>
+</head>
+<body>
+<header role="banner">
+    <div class="site-logo">
+    <a href="../index.html" class="site-logo">
+        <img width="150" height="150" src="../icons/vtes.svg" alt="Codex of the Damned">
+        <h1>Codex of the Damned</h1>
+    </a>
+    </div>
+    <nav role="navigation">
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../deck-guides/index.html">Deck Guides</a></li>
+            <li><a href="../strategy/index.html">Strategy</a></li>
+            <li><a href="../archetypes/index.html">Archetypes</a></li>
+            <li><a href="../twda-analysis/index.html">TWDA analysis</a></li>
+        </ul>
+    </nav>
+</header>
+<div id="card-modal" class="modal" onclick="this.style.display='none'">
+        <img class="modal-content" id="card-image">
+</div>
+<article>
+    <h1><img src="../icons/clan-baali.svg">The Dark Side of Politics</h1>
+    <div class="decklist">
+        <h2><a href=http://www.vekn.fr/decks/twd.htm#2017sncas>Dark Side of Politics</a></h2>
+        <p>
+            Deck by Ginés Quiñonero-Santiago, <br/>
+            Spanish NC 2017<br/>
+            Alicante, Spain<br/>
+            September 23rd 2017<br/>
+            35 players<br/>
+        </p>
+        <h3>Crypt (12 cards)</h3>
+        <ul>
+            <li>5  <span class="card" onclick="dC('giotto-verducci')">Giotto Verducci</span></li>
+            <li>1  <span class="card" onclick="dC('sheldon-lord-of-the-clog')">Sheldon, Lord of the Clog</span></li>
+            <li>1  <span class="card" onclick="dC('suhailah')">Suhailah</span></li>
+            <li>1  <span class="card" onclick="dC('selma-the-repugnant')">Selma the Repugnant</span></li>
+            <li>1  <span class="card" onclick="dC('gilbert-duane')">Gilbert Duane</span></li>
+            <li>1  <span class="card" onclick="dC('greger-anderssen')">Greger Anderssen</span></li>
+            <li>1  <span class="card" onclick="dC('nikolaus-vermeulen')">Nikolaus Vermeulen</span></li>
+            <li>1  <span class="card" onclick="dC('calebros-the-martyr')">Calebros the Martyr</span></li>
+        </ul>
+        <h3>Library (79 cards)</h3>
+        <ul>
+            <li><h4>— Master (22) —</h4></li>
+            <li>6  <span class="card" onclick="dC('ashur-tablets')">Ashur Tablets</span></li>
+            <li>5  <span class="card" onclick="dC('villein')">Villein</span></li>
+            <li>3  <span class="card" onclick="dC('vast-wealth')">Vast Wealth</span></li>
+            <li>3  <span class="card" onclick="dC('wider-view')">Wider View</span></li>
+            <li>1  <span class="card" onclick="dC('giants-blood')">Giant's Blood</span></li>
+            <li>1  <span class="card" onclick="dC('information-highway')">Information Highway</span></li>
+            <li>1  <span class="card" onclick="dC('legendary-vampire')">Legendary Vampire</span></li>
+            <li>1  <span class="card" onclick="dC('papillon')">Papillon</span></li>
+            <li>1  <span class="card" onclick="dC('perfectionist')">Perfectionist</span></li>
+            <li><h4>— Action (8) —</h4></li>
+            <li>6  <span class="card" onclick="dC('condemnation-mute')">Condemnation: Mute</span></li>
+            <li>2  <span class="card" onclick="dC('unleash-hells-fury')">Unleash Hell's Fury</span></li>
+            <li><h4>— Political (12) —</h4></li>
+            <li>6  <span class="card" onclick="dC('kine-resources-contested')">Kine Resources Contested</span></li>
+            <li>5  <span class="card" onclick="dC('parity-shift')">Parity Shift</span></li>
+            <li>1  <span class="card" onclick="dC('ancilla-empowerment')">Ancilla Empowerment</span></li>
+            <li><h4>— Modifier (24) —</h4></li>
+            <li>12 <span class="card" onclick="dC('freak-drive')">Freak Drive</span></li>
+            <li>3  <span class="card" onclick="dC('elder-impersonation')">Elder Impersonation</span></li>
+            <li>3  <span class="card" onclick="dC('faceless-night')">Faceless Night</span></li>
+            <li>3  <span class="card" onclick="dC('forgotten-labyrinth')">Forgotten Labyrinth</span></li>
+            <li>3  <span class="card" onclick="dC('lost-in-crowds')">Lost in Crowds</span></li>
+            <li><h4>— Modifier/Combat (2) —</h4></li>
+            <li>2  <span class="card" onclick="dC('swallowed-by-the-night')">Swallowed by the Night</span></li>
+            <li><h4>— Combat (3) —</h4></li>
+            <li>3  <span class="card" onclick="dC('no-trace')">No Trace</span></li>
+            <li><h4>— Reaction (3) —</h4></li>
+            <li>3  <span class="card" onclick="dC('second-tradition-domain')">Second Tradition: Domain</span></li>
+            <li><h4>— Equipment (5) —</h4></li>
+            <li>4  <span class="card" onclick="dC('kaymakli-fragment')">Kaymakli Fragment</span></li>
+            <li>1  <span class="card" onclick="dC('the-textbook-damnation')">The Textbook Damnation</span></li>
+        </ul>
+    </div>
+    <h2>Highlights</h2>
+    <p>
+        This is a <em>vote</em> deck using centered around the <i>Of</i> disciplines, with
+        <span class="card" onclick="dC('giotto-verducci')">Giotto Verducci</span> as a star.
+    </p>
+    <p>
+        The base idea is to get <span class="card" onclick="dC('kaymakli-fragment')">Kaymakli Fragment</span>
+        fast using <span class="card" onclick="dC('giotto-verducci')">Giotto Verducci</span>'s ability, then
+        use it (the infernal version) to get some titled vampires out fast and cheap.
+    </p>
+    <p>
+        Using <i>O</i> for maximum stealth, the deck then proceeds to destroy its prey with
+        <span class="card" onclick="dC('kine-resources-contested')">Kine Resources Contested</span> and
+        <span class="card" onclick="dC('parity-shift')">Parity Shift</span>.
+    </p>
+    <p>
+        The deck has no bounce against bleeds, but <span class="card" onclick="dC('villein')">Villein</span> and
+        <span class="card" onclick="dC('parity-shift')">Parity Shift</span> make for a nice bloat.
+        Furthermore, the few <span class="card" onclick="dC('second-tradition-domain')">Second Tradition: Domain</span>
+        and <span class="card" onclick="dC('unleash-hells-fury')">Unleash Hell's Fury</span> provide a sturdy defence
+        already.
+    </p>
+    <h2>Tips & Tricks</h2>
+    <p>
+        <span class="card" onclick="dC('ashur-tablets')">Ashur Tablets</span> provide a bit of recursion so that
+        cards discarded with <span class="card" onclick="dC('giotto-verducci')">Giotto Verducci</span>'s ability
+        can be fetched back.
+    </p>
+    <p>
+        <span class="card" onclick="dC('condemnation-mute')">Condemnation: Mute</span> is used to get the vote lock
+        faster by silencing opponents titled vampires.
+    </p>
+    <p>
+        <span class="card" onclick="dC('the-textbook-damnation')">The Textbook Damnation</span> is included so that
+        another vampire with <i>f</i> can get the
+        <span class="card" onclick="dC('kaymakli-fragment')">Kaymakli Fragment</span> from
+        <span class="card" onclick="dC('giotto-verducci')">Giotto Verducci</span>,
+        use <span class="card" onclick="dC('freak-drive')">Freak Drive</span> to unlock then use the <em>Fragment</em>
+        again in the same turn.
+    </p>
+    <p>
+        <span class="card" onclick="dC('wider-view')">Wider View</span> is included to help rotate the crypt
+        and get rid of the spurious <span class="card" onclick="dC('giotto-verducci')">Giotto Verducci</span> copies
+        for more titled vampires.
+    </p>
+    <h2>Variants</h2>
+    <p>
+        Variants exist using different crypts, like <em>Inner Circle</em> vampires with <i>OD</i> or centered a bit more
+        around the <i>OR</i> disciplines with more Ventrue in the crypt:
+        <span class="card" onclick="dC('arika')">Arika</span>,
+        <span class="card" onclick="dC('jaroslav-pascek')">Jaroslav Pascek</span>,
+        <span class="card" onclick="dC('lucinde-alastor')">Lucinde, Alastor</span>,
+        <span class="card" onclick="dC('marcus-vitel')">Marcus Vitel</span> and
+        <span class="card" onclick="dC('queen-anne')">Queen Anne</span>.
+        <a href=http://www.vekn.fr/decks/twd.htm#2015encle>Vincent Ripoll's Deck</a> for the 2015 English NC
+        is a good example.
+    </p>
+    <div class="clear"></div>
+    <div class="warning">
+        <h3 class="warning-title">Errata</h3>
+        <p>
+            <span class="card" onclick="dC('parity-shift')">Parity Shift</span>
+            has been modified by an <em>errata</em> in September 2019.
+            The amount of pool is no longer equal to the number of Methusalah, but is stable at 3.
+            The card is then less powerful in the game beginning, and should maybe be included in less copies.
+        </p>
+    </div>
+</article>
+</body>
+<footer>
+    <nav role="navigation">
+        <a class="prev" href="dmitris-big-band.html">Dmitri's Big Band</a>
+        <a href="index.html">Archetypes</a>
+        <a class="next" href="girls-will-find-inner-circle.html">Girls Will Find Inner Circle</a>
+    </nav>
+</footer>
+</html>

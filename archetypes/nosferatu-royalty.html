@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel='stylesheet' type='text/css' href='../base.css'/>
+    <script>
+        function dC(name) {
+            document.getElementById("card-image").src = '../card-images/'.concat(name, '.jpg');
+            document.getElementById("card-modal").style.display = "block";
+        }
+    </script>
+    <title>Codex of the Damned</title>
+</head>
+<body>
+<header role="banner">
+    <div class="site-logo">
+    <a href="../index.html" class="site-logo">
+        <img width="150" height="150" src="../icons/vtes.svg" alt="Codex of the Damned">
+        <h1>Codex of the Damned</h1>
+    </a>
+    </div>
+    <nav role="navigation">
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../deck-guides/index.html">Deck Guides</a></li>
+            <li><a href="../strategy/index.html">Strategy</a></li>
+            <li><a href="../archetypes/index.html">Archetypes</a></li>
+            <li><a href="../twda-analysis/index.html">TWDA analysis</a></li>
+        </ul>
+    </nav>
+</header>
+<div id="card-modal" class="modal" onclick="this.style.display='none'">
+        <img class="modal-content" id="card-image">
+</div>
+<article>
+    <h1><img src="../icons/clan-nosferatu.svg"> Nosferatu Royalty</h1>
+    <div class="decklist">
+        <h2><a href=http://www.vekn.fr/decks/twd.htm#2019ecwon2pf>Deck example</a></h2>
+        <p>
+            Deck by Maxime Socroun<br/>
+            EC WoN - Tuesday<br/>
+            Paris, France<br/>
+            August 13th 2019<br/>
+            33 players<br/>
+        </p>
+        <h3>Crypt (12 cards)</h3>
+        <ul>
+            <li>4  <span class="card" onclick="dC('cock-robin')">Cock Robin</span></li>
+            <li>3  <span class="card" onclick="dC('casino-reeds')">Casino Reeds</span></li>
+            <li>2  <span class="card" onclick="dC('baron-dieudonne')">Baron Dieudonne</span></li>
+            <li>1  <span class="card" onclick="dC('sundown')">Sundown</span></li>
+            <li>1  <span class="card" onclick="dC('petra')">Petra</span></li>
+            <li>1  <span class="card" onclick="dC('beetleman')">Beetleman</span></li>
+        </ul>
+        <h3>Library (90 cards)</h3>
+        <ul>
+            <li><h4>— Master (17) —</h4></li>
+            <li>4  <span class="card" onclick="dC('villein')">Villein</span></li>
+            <li>3  <span class="card" onclick="dC('warsaw-station')">Warsaw Station</span></li>
+            <li>2  <span class="card" onclick="dC('vessel')">Vessel</span></li>
+            <li>1  <span class="card" onclick="dC('archon-investigation')">Archon Investigation</span></li>
+            <li>1  <span class="card" onclick="dC('dark-influences')">Dark Influences</span></li>
+            <li>1  <span class="card" onclick="dC('fame')">Fame</span></li>
+            <li>1  <span class="card" onclick="dC('giants-blood')">Giant's Blood</span></li>
+            <li>1  <span class="card" onclick="dC('guardian-angel')">Guardian Angel</span></li>
+            <li>1  <span class="card" onclick="dC('labyrinth-the')">Labyrinth, The</span></li>
+            <li>1  <span class="card" onclick="dC('pentex-tm-subversion')">Pentex™ Subversion</span></li>
+            <li>1  <span class="card" onclick="dC('perfectionist')">Perfectionist</span></li>
+            <li><h4>— Action (15) —</h4></li>
+            <li>10 <span class="card" onclick="dC('deep-song')">Deep Song</span></li>
+            <li>3  <span class="card" onclick="dC('tier-of-souls')">Tier of Souls</span></li>
+            <li>1  <span class="card" onclick="dC('heroic-might')">Heroic Might</span></li>
+            <li>1  <span class="card" onclick="dC('preternatural-strength')">Preternatural Strength</span></li>
+            <li><h4>— Political (5) —</h4></li>
+            <li>2  <span class="card" onclick="dC('parity-shift')">Parity Shift</span></li>
+            <li>1  <span class="card" onclick="dC('anarchist-uprising')">Anarchist Uprising</span></li>
+            <li>1  <span class="card" onclick="dC('ancilla-empowerment')">Ancilla Empowerment</span></li>
+            <li>1  <span class="card" onclick="dC('reins-of-power')">Reins of Power</span></li>
+            <li><h4>— Modifier (9) —</h4></li>
+            <li>4  <span class="card" onclick="dC('lost-in-crowds')">Lost in Crowds</span></li>
+            <li>2  <span class="card" onclick="dC('elder-impersonation')">Elder Impersonation</span></li>
+            <li>2  <span class="card" onclick="dC('enkil-cog')">Enkil Cog</span></li>
+            <li>1  <span class="card" onclick="dC('faceless-night')">Faceless Night</span></li>
+            <li><h4>— Modifier/Combat (3) —</h4></li>
+            <li>3  <span class="card" onclick="dC('swallowed-by-the-night')">Swallowed by the Night</span></li>
+            <li><h4>— Combat (20) —</h4></li>
+            <li>10 <span class="card" onclick="dC('aid-from-bats')">Aid from Bats</span></li>
+            <li>6  <span class="card" onclick="dC('carrion-crows')">Carrion Crows</span></li>
+            <li>4  <span class="card" onclick="dC('taste-of-vitae')">Taste of Vitae</span></li>
+            <li><h4>— Reaction (11) —</h4></li>
+            <li>7  <span class="card" onclick="dC('second-tradition-domain')">Second Tradition: Domain</span></li>
+            <li>4  <span class="card" onclick="dC('cats-guidance')">Cats' Guidance</span></li>
+            <li><h4>— Equipment (4) —</h4></li>
+            <li>1  <span class="card" onclick="dC('dartmoor-england')">Dartmoor, England</span></li>
+            <li>1  <span class="card" onclick="dC('heart-of-nizchetus')">Heart of Nizchetus</span></li>
+            <li>1  <span class="card" onclick="dC('ivory-bow')">Ivory Bow</span></li>
+            <li>1  <span class="card" onclick="dC('kevlar-vest')">Kevlar Vest</span></li>
+            <li><h4>— Ally (3) —</h4></li>
+            <li>2  <span class="card" onclick="dC('underbridge-stray')">Underbridge Stray</span></li>
+            <li>1  <span class="card" onclick="dC('carlton-van-wyk')">Carlton Van Wyk</span></li>
+            <li><h4>— Retainer (2) —</h4></li>
+            <li>2  <span class="card" onclick="dC('raven-spy')">Raven Spy</span></li>
+            <li><h4>— Event (1) —</h4></li>
+            <li>1  <span class="card" onclick="dC('scourge-of-the-enochians')">Scourge of the Enochians</span></li>
+        </ul>
+    </div>
+    <h2>Highlights</h2>
+    <p>
+        This is a <em>toolbox</em> deck using Nosferatu Princes and Justicars, and the <i>OI</i> disciplines.
+        It has an efficient combat module using <i>I</i> classic
+        <span class="card" onclick="dC('aid-from-bats')">Aid from Bats</span> &
+        <span class="card" onclick="dC('carrion-crows')">Carrion Crows</span> combination.
+    </p>
+    <p>
+        Pool damage is done by using <span class="card" onclick="dC('deep-song')">Deep Song</span> to bleed,
+        together with damage dealing votes and <span class="card" onclick="dC('fame')">Fame</span> if it is drawn.
+        <i>O</i> provides good stealth, as usual.
+    </p>
+    <p>
+        The deck has good intercept using a lot of
+        <span class="card" onclick="dC('second-tradition-domain')">Second Tradition: Domain</span>, together with
+        <span class="card" onclick="dC('underbridge-stray')">Underbridge Stray</span> and
+        <span class="card" onclick="dC('raven-spy')">Raven Spy</span>
+    </p>
+    <p>
+        <span class="card" onclick="dC('cock-robin')">Cock Robin</span> is the star of the deck and his ability
+        is used to the maximum, with <span class="card" onclick="dC('deep-song')">Deep Song</span> and <i>i</i>
+        allies and retainers.
+    </p>
+    <h2>Tips & Tricks</h2>
+    <p>
+        <span class="card" onclick="dC('scourge-of-the-enochians')">Scourge of the Enochians</span> is a tactical
+        counter against breed constructs, as they can quickly become overwhelming.
+    </p>
+    <p>
+        As the game progresses,
+        <span class="card" onclick="dC('tier-of-souls')">Tier of Souls</span> and
+        <span class="card" onclick="dC('enkil-cog')">Enkil Cog</span> will improve bleeds.
+    </p>
+    <p>
+        <span class="card" onclick="dC('deep-song')">Deep Song</span> can be used to bleed or to rush
+        cumbersome vampires, depending on the context.
+    </p>
+    <p>
+        The combat module is strong, but not the primary focus of the deck.
+        <span class="card" onclick="dC('kevlar-vest')">Kevlar Vest</span>,
+        <span class="card" onclick="dC('heroic-might')">Heroic Might</span> and
+        <span class="card" onclick="dC('preternatural-strength')">Preternatural Strength</span> can come in handy
+        against adverse combat modules.
+    </p>
+    <p>
+        The deck does not include so many votes as it is really not sure about getting the vote lock on the table.
+        Any dedicated political deck will get more votes than the 5-7 this one can put into play.
+    </p>
+    <h2>Variants</h2>
+    <p>
+        Variants include the use of a group 2 crypt and a <i>P</i> combat module, like in
+        <a href=http://www.vekn.fr/decks/twd.htm#2k8czechnational>Gyula Erdõs's deck</a> from 2008.
+    </p>
+    <p>
+        More votes can also be used, alongside
+        <span class="card" onclick="dC('fourth-tradition-the-accounting')">Fourth Tradition: The Accounting</span> and
+        <span class="card" onclick="dC('grooming-the-protege')">Grooming the Protégé</span> for crypt acceleration
+        to get more votes on the table,
+        like in <a href=http://www.vekn.fr/decks/twd.htm#2k8spanishnatday2>Iñaki Jimenez's deck</a> from 2008.
+    </p>
+    <p>
+        Some variants even discard the combat side of things to focus on a full political deck, like in
+        <a href=http://www.vekn.fr/decks/twd.htm#2013qcfeelblpf>Pascal Bertrand's deck</a> from 2013,
+        using <span class="card" onclick="dC('mental-maze')">Mental Maze</span> instead.
+        In this case, this makes some room for a
+        <span class="card" onclick="dC('third-tradition-progeny')">Third Tradition: Progeny</span> plus
+        <span class="card" onclick="dC('consanguineous-boon')">Consanguineous Boon</span> combination
+        to bloat and get more vampires (and more votes) out.
+    </p>
+    <div class="clear"></div>
+    <div class="warning">
+        <h3 class="warning-title">Errata</h3>
+        <p>
+            <span class="card" onclick="dC('pentex-tm-subversion')">Pentex™ Subversion</span>
+            has been modified by an <em>errata</em> in September 2019.
+            It does not prevent a vampire to act anymore, so it is less powerful and should probably
+            not be included in the deck anymore.
+        </p>
+        <p>
+            <span class="card" onclick="dC('villein')">Villein</span> has been modified by an errata in June 2018
+            to limit the blood taken to a maximum of 5.
+            Still they should always be as efficient as ever in this archetype.
+        </p>
+        <p>
+            <span class="card" onclick="dC('parity-shift')">Parity Shift</span>
+            has also been modified in the September 2019 <em>errata</em>.
+            The amount of pool is no longer equal to the number of Methusalah, but is stable at 3.
+            The card is then less powerful in the game beginning, but is still its a good fit in this deck.
+        </p>
+    </div>
+</article>
+</body>
+<footer>
+    <nav role="navigation">
+        <a class="prev" href="weenie-aus.html">Weenie AUS</a>
+        <a href="index.html">Archetypes</a>
+        <a class="next" href="ravnos-clown-car.html">Ravnos Clown Car</a>
+    </nav>
+</footer>
+</html>

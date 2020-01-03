@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel='stylesheet' type='text/css' href='../base.css'/>
+    <script>
+        function dC(name) {
+            document.getElementById("card-image").src = '../card-images/'.concat(name, '.jpg');
+            document.getElementById("card-modal").style.display = "block";
+        }
+    </script>
+    <title>Codex of the Damned</title>
+</head>
+<body>
+<header role="banner">
+    <div class="site-logo">
+    <a href="../index.html" class="site-logo">
+        <img width="150" height="150" src="../icons/vtes.svg" alt="Codex of the Damned">
+        <h1>Codex of the Damned</h1>
+    </a>
+    </div>
+    <nav role="navigation">
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../deck-guides/index.html">Deck Guides</a></li>
+            <li><a href="../strategy/index.html">Strategy</a></li>
+            <li><a href="../archetypes/index.html">Archetypes</a></li>
+            <li><a href="../twda-analysis/index.html">TWDA analysis</a></li>
+        </ul>
+    </nav>
+</header>
+<div id="card-modal" class="modal" onclick="this.style.display='none'">
+        <img class="modal-content" id="card-image">
+</div>
+<article>
+    <h1><img src="../icons/clan-guruhi.svg"> Nananimalism</h1>
+    <div class="decklist">
+        <h2><a href=http://www.vekn.fr/decks/twd.htm#2011NACd2>Salmon Fishstick</a></h2>
+        <p>
+            Deck by Matt Morgan<br/>
+            NAC 2011 Day 2<br/>
+            Columbus, Ohio<br/>
+            June 25th 2011<br/>
+            25 players, 47 players on Day 1<br/>
+        </p>
+        <h3>Crypt (12 cards)</h3>
+        <ul>
+            <li>4  <span class="card" onclick="dC('nana-buruku')">Nana Buruku</span></li>
+            <li>1  <span class="card" onclick="dC('fish')">Fish</span></li>
+            <li>1  <span class="card" onclick="dC('beetleman')">Beetleman</span></li>
+            <li>1  <span class="card" onclick="dC('bobby-lemon')">Bobby Lemon</span></li>
+            <li>1  <span class="card" onclick="dC('dolie')">Dolie</span></li>
+            <li>1  <span class="card" onclick="dC('stick')">Stick</span></li>
+            <li>1  <span class="card" onclick="dC('mouse')">Mouse</span></li>
+            <li>1  <span class="card" onclick="dC('zip')">Zip</span></li>
+            <li>1  <span class="card" onclick="dC('lisa-noble')">Lisa Noble</span></li>
+        </ul>
+        <h3>Library (76 cards)</h3>
+        <ul>
+            <li><h4>— Master (24) —</h4></li>
+            <li>9  <span class="card" onclick="dC('ashur-tablets')">Ashur Tablets</span></li>
+            <li>2  <span class="card" onclick="dC('animalism')">Animalism</span></li>
+            <li>2  <span class="card" onclick="dC('blood-doll')">Blood Doll</span></li>
+            <li>2  <span class="card" onclick="dC('villein')">Villein</span></li>
+            <li>1  <span class="card" onclick="dC('archon-investigation')">Archon Investigation</span></li>
+            <li>1  <span class="card" onclick="dC('fame')">Fame</span></li>
+            <li>1  <span class="card" onclick="dC('giants-blood')">Giant's Blood</span></li>
+            <li>1  <span class="card" onclick="dC('mbare-market-harare')">Mbare Market, Harare</span></li>
+            <li>1  <span class="card" onclick="dC('pentex-tm-subversion')">Pentex™ Subversion</span></li>
+            <li>1  <span class="card" onclick="dC('powerbase-luanda')">Powerbase: Luanda</span></li>
+            <li>1  <span class="card" onclick="dC('powerbase-montreal')">Powerbase: Montreal</span></li>
+            <li>1  <span class="card" onclick="dC('the-rack')">The Rack</span></li>
+            <li>1  <span class="card" onclick="dC('wider-view')">Wider View</span></li>
+            <li><h4>— Action (12) —</h4></li>
+            <li>10 <span class="card" onclick="dC('deep-song')">Deep Song</span></li>
+            <li>1  <span class="card" onclick="dC('entrancement')">Entrancement</span></li>
+            <li>1  <span class="card" onclick="dC('well-marked')">Well-Marked</span></li>
+            <li><h4>— Combat (32) —</h4></li>
+            <li>13 <span class="card" onclick="dC('carrion-crows')">Carrion Crows</span></li>
+            <li>11 <span class="card" onclick="dC('aid-from-bats')">Aid from Bats</span></li>
+            <li>4  <span class="card" onclick="dC('taste-of-vitae')">Taste of Vitae</span></li>
+            <li>3  <span class="card" onclick="dC('target-vitals')">Target Vitals</span></li>
+            <li>1  <span class="card" onclick="dC('canine-horde')">Canine Horde</span></li>
+            <li><h4>— Reaction (6) —</h4></li>
+            <li>2  <span class="card" onclick="dC('cats-guidance')">Cats' Guidance</span></li>
+            <li>2  <span class="card" onclick="dC('sense-the-savage-way')">Sense the Savage Way</span></li>
+            <li>1  <span class="card" onclick="dC('delaying-tactics')">Delaying Tactics</span></li>
+            <li>1  <span class="card" onclick="dC('on-the-qui-vive')">On the Qui Vive</span></li>
+            <li><h4>— Equipment (1) —</h4></li>
+            <li>1  <span class="card" onclick="dC('ivory-bow')">Ivory Bow</span></li>
+            <li><h4>— Event (1) —</h4></li>
+            <li>1  <span class="card" onclick="dC('dragonbound')">Dragonbound</span></li>
+        </ul>
+    </div>
+    <h2>Highlights</h2>
+    <p>
+        This is a <em>rush</em> deck using <span class="card" onclick="dC('deep-song')">Deep Song</span> to rush
+        or bleed and a <i>i</i> combat module with
+        <span class="card" onclick="dC('carrion-crows')">Carrion Crows</span> and
+        <span class="card" onclick="dC('aid-from-bats')">Aid from Bats</span>.
+    </p>
+    <p>
+        Using <span class="card" onclick="dC('nana-buruku')">Nana Buruku</span> allow to play a lot of
+        <span class="card" onclick="dC('ashur-tablets')">Ashur Tablets</span> for a nice recursion.
+        This let the deck adapt itself to the table context all the while bloating a bit.
+    </p>
+    <p>
+        <span class="card" onclick="dC('fame')">Fame</span> and
+        <span class="card" onclick="dC('dragonbound')">Dragonbound</span> are used to improve pool damage a bit.
+    </p>
+    <p>
+        Using low ad mid capacity vampires let the deck use a decent amout of naked "bleed for 1" actions or
+        inferior <i>i</i> <span class="card" onclick="dC('deep-song')">Deep Song</span>
+        to get some pool damage to its prey.
+    </p>
+    <p>
+        It is a very solid deck, with good defece against the predator and decent pool damage towards its prey,
+        although it is not a very fast damage dealer, rush actions let it control the table nicely.
+    </p>
+    <h2>Tips & Tricks</h2>
+    <p>
+        <span class="card" onclick="dC('powerbase-luanda')">Powerbase: Luanda</span> and
+        <span class="card" onclick="dC('well-marked')">Well-Marked</span> are nice tools for a rush deck, although
+        they can be used by both <span class="card" onclick="dC('nana-buruku')">Nana Buruku</span> and
+        <span class="card" onclick="dC('fish')">Fish</span>.
+    </p>
+    <p>
+        The deck does not have a lot of intercept, but plays
+        <span class="card" onclick="dC('powerbase-montreal')">Powerbase: Montreal</span> and
+        <span class="card" onclick="dC('the-rack')">The Rack</span> nonetheless, relying on the threat of
+        a retaliation rush to protect them.
+    </p>
+    <p>
+        Just including a bit of <em>wakes</em> and some intercept enhancers like
+        <span class="card" onclick="dC('cats-guidance')">Cats' Guidance</span> and
+        <span class="card" onclick="dC('sense-the-savage-way')">Sense the Savage Way</span>
+        keep the other players guessing on wether the deck can block or not.
+    </p>
+    <p>
+        Getting <span class="card" onclick="dC('wider-view')">Wider View</span> at some point helps getting rid
+        of the spurious <span class="card" onclick="dC('nana-buruku')">Nana Buruku</span> in crypt.
+        She's also only played in 4 copies to avoid jamming the crypt too much; other minions are needed for the
+        deck to work well.
+    </p>
+    <h2>Variants</h2>
+    <p>
+        A modern variant of this deck uses
+        <span class="card" onclick="dC('anarch-convert')">Anarch Convert</span> to make the vampires anarch,
+        along
+        <span class="card" onclick="dC('anarch-revolt')">Anarch Revolt</span> to improve pool damage,
+        taking down any Anarch vampire on the prey side using rush actions.
+        <a href="http://www.vekn.fr/decks/twd.htm#2018fnclf">Orian Gissler's deck</a> from 2018 is a good example.
+    </p>
+    <p>
+        Weenie <i>i</i> is a strong build anyhow and can even be played without
+        <span class="card" onclick="dC('nana-buruku')">Nana Buruku</span> and
+        <span class="card" onclick="dC('ashur-tablets')">Ashur Tablets</span>.
+        <a href="http://www.vekn.fr/decks/twd.htm#2016sncss">Kim Nilsson's deck</a> from 2016 is a good example.
+    </p>
+    <p>
+        Some builds include more intercept, like
+        <a href="http://www.vekn.fr/decks/twd.htm#2010hungarianecq">Ádám Horváth's deck</a> from 2010,
+        using <span class="card" onclick="dC('aranthebes-the-immortal')">Aranthebes, The Immortal</span> and
+        <span class="card" onclick="dC('raven-spy')">Raven Spy</span>.
+    </p>
+    <div class="clear"></div>
+    <div class="warning">
+        <h3 class="warning-title">Errata</h3>
+        <p>
+            <span class="card" onclick="dC('pentex-tm-subversion')">Pentex™ Subversion</span>
+            has been modified by an <em>errata</em> in September 2019.
+            It does not prevent a vampire to act anymore, so it is less powerful
+            and should probably not be included in the deck anymore.
+        </p>
+    </div>
+</article>
+</body>
+<footer>
+    <nav role="navigation">
+        <a class="prev" href="shambling-hordes.html">Shambling Hordes</a>
+        <a href="index.html">Archetypes</a>
+        <a class="next" href="guruhi-rush.html">Guruhi Rush</a>
+    </nav>
+</footer>
+</html>

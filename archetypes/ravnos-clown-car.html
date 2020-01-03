@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel='stylesheet' type='text/css' href='../base.css'/>
+    <script>
+        function dC(name) {
+            document.getElementById("card-image").src = '../card-images/'.concat(name, '.jpg');
+            document.getElementById("card-modal").style.display = "block";
+        }
+    </script>
+    <title>Codex of the Damned</title>
+</head>
+<body>
+<header role="banner">
+    <div class="site-logo">
+    <a href="../index.html" class="site-logo">
+        <img width="150" height="150" src="../icons/vtes.svg" alt="Codex of the Damned">
+        <h1>Codex of the Damned</h1>
+    </a>
+    </div>
+    <nav role="navigation">
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../deck-guides/index.html">Deck Guides</a></li>
+            <li><a href="../strategy/index.html">Strategy</a></li>
+            <li><a href="../archetypes/index.html">Archetypes</a></li>
+            <li><a href="../twda-analysis/index.html">TWDA analysis</a></li>
+        </ul>
+    </nav>
+</header>
+<div id="card-modal" class="modal" onclick="this.style.display='none'">
+        <img class="modal-content" id="card-image">
+</div>
+<article>
+    <h1><img src="../icons/clan-ravnos.svg"> Ravnos Clown Car</h1>
+    <div class="decklist">
+        <h2><a href=http://www.vekn.fr/decks/twd.htm#2014fncmf>Koudeta</a></h2>
+        <p>
+            Deck by Orian Gissler<br/>
+            French NC 2014<br/>
+            Marseille, France<br/>
+            June 8th 2014<br/>
+            33 players<br/>
+        </p>
+        <h3>Crypt (12 cards)</h3>
+        <ul>
+            <li>1  <span class="card" onclick="dC('andrei-puxon')">Andrei Puxon</span></li>
+            <li>1  <span class="card" onclick="dC('ghivran-dalaal-the-dead-god')">Ghivran Dalaal, The Dead God</span></li>
+            <li>1  <span class="card" onclick="dC('khalil-ravana')">Khalil Ravana</span></li>
+            <li>1  <span class="card" onclick="dC('anka-priestess-of-thorns')">Anka, Priestess of Thorns</span></li>
+            <li>1  <span class="card" onclick="dC('salbatore-bokkengro')">Salbatore Bokkengro</span></li>
+            <li>1  <span class="card" onclick="dC('sennuwy-the-promoter')">Sennuwy, The Promoter</span></li>
+            <li>1  <span class="card" onclick="dC('lazar-dobrescu')">Lázár Dobrescu</span></li>
+            <li>1  <span class="card" onclick="dC('tsigane')">Tsigane</span></li>
+            <li>1  <span class="card" onclick="dC('vedel-esbreno')">Vedel Esbreno</span></li>
+            <li>1  <span class="card" onclick="dC('sasha-miklos')">Sasha Miklos</span></li>
+            <li>1  <span class="card" onclick="dC('spleen-georgio-gutterpunk')">Spleen, Georgio Gutterpunk</span></li>
+            <li>1  <span class="card" onclick="dC('zip')">Zip</span></li>
+        </ul>
+        <h3>Library (65 cards)</h3>
+        <ul>
+            <li><h4>— Master (13) —</h4></li>
+            <li>6  <span class="card" onclick="dC('ravnos-carnival')">Ravnos Carnival</span></li>
+            <li>2  <span class="card" onclick="dC('gird-minions')">Gird Minions</span></li>
+            <li>2  <span class="card" onclick="dC('pentex-tm-subversion')">Pentex™ Subversion</span></li>
+            <li>2  <span class="card" onclick="dC('week-of-nightmares')">Week of Nightmares</span></li>
+            <li>1  <span class="card" onclick="dC('life-boon')">Life Boon</span></li>
+            <li><h4>— Action (31) —</h4></li>
+            <li>14 <span class="card" onclick="dC('the-embrace')">The Embrace</span></li>
+            <li>10 <span class="card" onclick="dC('mozambique-allure')">Mozambique Allure</span></li>
+            <li>5  <span class="card" onclick="dC('bamba')">Bamba</span></li>
+            <li>2  <span class="card" onclick="dC('aranthebes-the-immortal')">Aranthebes, The Immortal</span></li>
+            <li><h4>— Political (9) —</h4></li>
+            <li>8  <span class="card" onclick="dC('consanguineous-boon')">Consanguineous Boon</span></li>
+            <li>1  <span class="card" onclick="dC('autarkis-persecution')">Autarkis Persecution</span></li>
+            <li><h4>— Modifier/Reaction (10) —</h4></li>
+            <li>10 <span class="card" onclick="dC('the-eldest-are-kholo')">The Eldest Are Kholo</span></li>
+            <li><h4>— Equipment (1) —</h4></li>
+            <li>1  <span class="card" onclick="dC('heart-of-nizchetus')">Heart of Nizchetus</span></li>
+            <li><h4>— Event (1) —</h4></li>
+            <li>1  <span class="card" onclick="dC('the-uncoiling')">The Uncoiling</span></li>
+        </ul>
+    </div>
+    <h2>Highlights</h2>
+    <p>
+        This is a <em>breed & boon</em> deck using the Ravnos clan.
+        Low capacity Ravnos use <span class="card" onclick="dC('mozambique-allure')">Mozambique Allure</span>
+        to become Laibon, then multiply with
+        <span class="card" onclick="dC('the-embrace')">The Embrace</span> and
+        <span class="card" onclick="dC('bamba')">Bamba</span>, paying them with
+        <span class="card" onclick="dC('ravnos-carnival')">Ravnos Carnival</span> and
+        using <span class="card" onclick="dC('the-eldest-are-kholo')">The Eldest Are Kholo</span> with
+        <span class="card" onclick="dC('consanguineous-boon')">Consanguineous Boon</span> to bloat.
+    </p>
+    <p>
+        When enough minions are out,
+        the <span class="card" onclick="dC('week-of-nightmares')">Week of Nightmares</span> gets into play
+        and all these Ravnos bleed their prey to death, one after the other.
+    </p>
+    <h2>Tips & Tricks</h2>
+    <p>
+        <span class="card" onclick="dC('the-uncoiling')">The Uncoiling</span> is a tactical counter against
+        <span class="card" onclick="dC('scourge-of-the-enochians')">Scourge of the Enochians</span>, as this event
+        is often included in slow decks as a counter against breed constructs like this one.
+    </p>
+    <p>
+        <span class="card" onclick="dC('gird-minions')">Gird Minions</span> help get the minions back in shape
+        if the bloat works well enough, in order to produce yet another wave of neonates.
+    </p>
+    <p>
+        <span class="card" onclick="dC('life-boon')">Life Boon</span> is also a way to control the table a bit if
+        the bloat goes well enough. The deck usually does not put that much pressure on its prey until
+        <span class="card" onclick="dC('week-of-nightmares')">Week of Nightmares</span> hits the table,
+        so this can compensate a bit.
+    </p>
+    <p>
+        The deck do not try to block its predator, counting on its bloat to compensate.
+        <span class="card" onclick="dC('aranthebes-the-immortal')">Aranthebes, The Immortal</span> is included
+        only as a counter to contest it if anyone gets to put it into play, as it is too damaging to this deck.
+    </p>
+    <p>
+        <span class="card" onclick="dC('autarkis-persecution')">Autarkis Persecution</span> is included as a hail mary
+        if one gets stuck with low pool and someone uses
+        <span class="card" onclick="dC('delaying-tactics')">Delaying Tactics</span> against
+        <span class="card" onclick="dC('consanguineous-boon')">Consanguineous Boon</span>.
+    </p>
+    <h2>Variants</h2>
+    <p>
+        There are not many variants for this archetype.
+        <a href=http://www.vekn.fr/decks/twd.htm#2k8powerbasecataluna>Miguel Pascual's deck</a> in 2008
+        has experimented with <span class="card" onclick="dC('rom-gypsy')">Rom Gypsy</span>
+        to provide an additional bit of stealth and defence.
+    </p>
+    <div class="clear"></div>
+    <div class="warning">
+        <h3 class="warning-title">Errata</h3>
+        <p>
+            <span class="card" onclick="dC('pentex-tm-subversion')">Pentex™ Subversion</span>
+            has been modified by an <em>errata</em> in September 2019.
+            It does not prevent a vampire to act anymore, so it is less powerful and should probably
+            not be included in the deck, at least not in two copies.
+        </p>
+    </div>
+</article>
+</body>
+<footer>
+    <nav role="navigation">
+        <a class="prev" href="nosferatu-royalty.html">Nosferatu Royalty</a>
+        <a href="index.html">Archetypes</a>
+        <a class="next" href="ravnos-clown-car.html">Ravnos Clown Car</a>
+    </nav>
+</footer>
+</html>

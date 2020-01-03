@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel='stylesheet' type='text/css' href='../../base.css'/>
+    <script>
+        function dC(name) {
+            document.getElementById("card-image").src = '../../card-images/'.concat(name, '.jpg');
+            document.getElementById("card-modal").style.display = "block";
+        }
+    </script>
+    <title>Codex of the Damned</title>
+</head>
+<body>
+<header role="banner">
+    <div class="site-logo">
+    <a href="../../index.html" class="site-logo">
+        <img width="150" height="150" src="../../icons/vtes.svg" alt="Codex of the Damned">
+        <h1>Codex of the Damned</h1>
+    </a>
+    </div>
+    <nav role="navigation">
+        <ul>
+            <li><a href="../../index.html">Home</a></li>
+            <li><a href="../../deck-guides/index.html">Deck Guides</a></li>
+            <li><a href="../../strategy/index.html">Strategy</a></li>
+            <li><a href="../../archetypes/index.html">Archetypes</a></li>
+            <li><a href="../../twda-analysis/index.html">TWDA analysis</a></li>
+        </ul>
+    </nav>
+</header>
+<div id="card-modal" class="modal" onclick="this.style.display='none'">
+        <img class="modal-content modal-center" id="card-image">
+</div>
+<article class="article-columns">
+    <h1><img src="../../icons/clan-ishtarri.svg"> Ishtarri</h1>
+    <p>
+        The Ishtarri and their unique <i>fcr</i> disciplines combination also have excellent titled vampires,
+        so they've been included in political archetypes, as well as landed an archetype of their own:
+        <a href="../../archetypes/ishtarri-politics.html">Ishtarri Politics</a>.
+        The <i>fc</i> combination let them use <span class="card" onclick="dC('forced-march')">Forced March</span>,
+        one of the best combo cards out there.
+    </p>
+    <h2>Highlights</h2>
+    <div class="column">
+        <div class="column-image">
+            <img src="../../card-images/strange-day.jpg">
+            <h4>Strange day (48 decks)</h4>
+        </div>
+        <p>
+            A powerful block denial, although only one can be played. Often seen in Ishtarri decks.
+        </p>
+    </div>
+    <div class="column">
+        <div class="column-image">
+            <img src="../../card-images/undele.jpg">
+            <h4>Undele (36 decks)</h4>
+        </div>
+        <p>
+            With its two magaji votes and very unique ability to fetch cards from the ash heap,
+            he has been included not only in Ishtarri decks, but also as a secondary vampire in <i>ro</i> vote constructs.
+        </p>
+    </div>
+    <div class="column">
+        <div class="column-image">
+            <img src="../../card-images/ancestor-spirit.jpg">
+            <h4>Ancestor Spirit (34 decks)</h4>
+        </div>
+        <p>
+            An excellent enhancer at no cost, even more useful in political decks.
+        </p>
+    </div>
+    <div class="column">
+        <div class="column-image">
+            <img src="../../card-images/ubende.jpg">
+            <h4>Ubende (29 decks)</h4>
+        </div>
+        <p>
+            A magaji for only 7 pool, with an inferior <i>f</i> sufficient for
+            <span class="card" onclick="dC('forced-march')">Forced March</span>
+            and an additional <i>o</i> that can be used in many constructs.
+            Along <span class="card" onclick="dC('undele')">Undele</span> and
+            <span class="card" onclick="dC('ayo-igoli')">Ayo Igoli</span>, he makes for a nice
+            <i>Rofc</i> crypt.
+        </p>
+    </div>
+    <div class="column">
+        <div class="column-image">
+            <img src="../../card-images/shasa-abu-badr.jpg">
+            <h4>Shasa Abu Badr (21 decks)</h4>
+        </div>
+        <p>
+            An excellent ability along <i>R</i> for a cheap 5 pool. She finds her place even in mono <i>r</i> decks.
+        </p>
+    </div>
+    <div class="column">
+        <div class="column-image">
+            <img src="../../card-images/uncontrolled-impulse.jpg">
+            <h4>Uncontrolled Impulse (20 decks)</h4>
+        </div>
+        <p>
+            A good stealth modifier, quite useful as the clan does not have any stealth discipline.
+            Even if some of them have <i>o</i>, it is at inferior.
+        </p>
+    </div>
+    <div class="column">
+        <div class="column-image">
+            <img src="../../card-images/glutton.jpg">
+            <h4>Glutton (15 decks)</h4>
+        </div>
+        <p>
+            Another source of additional actions for Ishtarri, always welcome.
+            It is a little bit fragile so it is more playable if the deck has at least some intercept capacities.
+            But even making an opponent waste an action to take it out may be good enough.
+        </p>
+    </div>
+    <div class="column">
+        <div class="column-image">
+            <img src="../../card-images/ayo-igoli.jpg">
+            <h4>Ayo Igoli (15 decks)</h4>
+        </div>
+        <p>
+            Yet another Ishtarri with <i>o</i>, Ayo is an excellent complement to a Vote oriented crypt.
+            Her capacity and ability makes her an ideal candidate for the Kholo title using
+            <span class="card" onclick="dC('ishtarri-kholo')">Ishtarri Kholo</span>
+        </p>
+    </div>
+</article>
+</body>
+<footer>
+    <nav role="navigation">
+        <a class="prev" href="imbued.html">Imbued</a>
+        <a href="../index.html">TWDA Analysis</a>
+        <a class="next" href="ishtarri.html">Ishtarri</a>
+    </nav>
+</footer>
+</html>

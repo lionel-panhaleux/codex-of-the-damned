@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel='stylesheet' type='text/css' href='../../base.css'/>
+    <script>
+        function dC(name) {
+            document.getElementById("card-image").src = '../../card-images/'.concat(name, '.jpg');
+            document.getElementById("card-modal").style.display = "block";
+        }
+    </script>
+    <title>Codex of the Damned</title>
+</head>
+<body>
+<header role="banner">
+    <div class="site-logo">
+    <a href="../../index.html" class="site-logo">
+        <img width="150" height="150" src="../../icons/vtes.svg" alt="Codex of the Damned">
+        <h1>Codex of the Damned</h1>
+    </a>
+    </div>
+    <nav role="navigation">
+        <ul>
+            <li><a href="../../index.html">Home</a></li>
+            <li><a href="../../deck-guides/index.html">Deck Guides</a></li>
+            <li><a href="../../strategy/index.html">Strategy</a></li>
+            <li><a href="../../archetypes/index.html">Archetypes</a></li>
+            <li><a href="../../twda-analysis/index.html">TWDA analysis</a></li>
+        </ul>
+    </nav>
+</header>
+<div id="card-modal" class="modal" onclick="this.style.display='none'">
+        <img class="modal-content modal-center" id="card-image">
+</div>
+<article class="article-columns">
+    <h1><i>p</i> Potence</h1>
+    <div class="tip">
+        <p>
+            <i>p</i> provides an excellent combat module.
+        </p>
+    </div>
+    <div class="column">
+        <div class="column-image">
+            <img src="../../card-images/immortal-grapple.jpg"/>
+            <h4>Immortal Grapple (152 decks)</h4>
+        </div>
+        <p>
+            One of the few combat cards that can counter <em>combat ends</em>,
+            it also prevents the use of weapons and dodges.
+            At <i>P</i>, it even gives a press, which can be useful offensively as well as defensively.
+        </p>
+    </div>
+    <div class="column">
+        <div class="column-image">
+            <img src="../../card-images/disarm.jpg"/>
+            <h4>Disarm (101 decks)</h4>
+        </div>
+        <p>
+            Given the bruise potential of <i>p</i>, it can be used after a round of combat more often than not.
+            This is a good tool to disable a cumbersome vampire.
+            When combined with <i>c</i> additional strikes or <i>f</i> prevention,
+            it is even easier to deliver consistently.
+        </p>
+    </div>
+    <div class="column">
+        <div class="column-image">
+            <img src="../../card-images/torn-signpost.jpg"/>
+            <h4>Torn Signpost (98 decks)</h4>
+        </div>
+        <p>
+            The bread and butter of a majority of <i>p</i> combat modules,
+            it provides +2 damage at no cost and works well with additional strikes
+            as well as presses.
+        </p>
+    </div>
+    <div class="column">
+        <div class="column-image">
+            <img src="../../card-images/preternatural-strength.jpg"/>
+            <h4>Preternatural Strength (63 decks)</h4>
+        </div>
+        <p>
+            A nice alternative to <span class="card" onclick="dC('torn-signpost')">Torn Signpost</span>
+            when one want to save some card slots in a deck.
+        </p>
+    </div>
+    <div class="column">
+        <div class="column-image">
+            <img src="../../card-images/heroic-might.jpg"/>
+            <h4>Heroic Might (63 decks)</h4>
+        </div>
+        <p>
+            A stronger but more expansive version of
+            <span class="card" onclick="dC('preternatural-strength')">Preternatural Strength</span>.
+            Depending on the deck, one or the other might be better.
+        </p>
+    </div>
+    <div class="column">
+        <div class="column-image">
+            <img src="../../card-images/iron-glare.jpg"/>
+            <h4>Iron Glare (45 decks)</h4>
+        </div>
+        <p>
+            A bleed modifier available to <i>PR</i> decks.
+            It is better than <span class="card" onclick="dC('aire-of-elation')">Aire of Elation</span>
+            for non-Toreador decks, as it does not cost a blood.
+            The alternate use for some votes at inferior can come in handy if the deck has some political actions.
+        </p>
+    </div>
+    <div class="column">
+        <div class="column-image">
+            <img src="../../card-images/slam.jpg"/>
+            <h4>Slam (43 decks)</h4>
+        </div>
+        <p>
+            A good strike by itself, the maneuver is useful for pure <i>p</i> modules
+            that do not have better options for maneuvers.
+        </p>
+    </div>
+    <div class="column">
+        <div class="column-image">
+            <img src="../../card-images/thrown-sewer-lid.jpg"/>
+            <h4>Thrown Sewer Lid (36 decks)</h4>
+        </div>
+        <p>
+            An alternative against long range combat modules. Instead of trying to get to close range, juste use
+            this long range strike directly. The optional press at superior <i>P</i> can even close the range
+            for a second round. Not too many copies can be included as it can very well jam the hand.
+        </p>
+    </div>
+</article>
+</body>
+<footer>
+    <nav role="navigation">
+        <a class="prev" href="obfuscate.html">Obfuscate</a>
+        <a href="../index.html">TWDA Analysis</a>
+        <a class="next" href="presence.html">Presence</a>
+    </nav>
+</footer>
+</html>

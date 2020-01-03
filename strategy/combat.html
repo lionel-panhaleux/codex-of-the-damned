@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel='stylesheet' type='text/css' href='../base.css'/>
+    <script>
+        function displayCard(name) {
+            document.getElementById("card-image").src = '../card-images/'.concat(name, '.jpg');
+            document.getElementById("card-modal").style.display = "block";
+        }
+    </script>
+    <title>Codex of the Damned</title>
+</head>
+<body>
+<header role="banner">
+    <div class="site-logo">
+    <a href="../index.html" class="site-logo">
+        <img width="150" height="150" src="../icons/vtes.svg" alt="Codex of the Damned">
+        <h1>Codex of the Damned</h1>
+    </a>
+    </div>
+    <nav role="navigation">
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../deck-guides/index.html">Deck Guides</a></li>
+            <li><a href="../strategy/index.html">Strategy</a></li>
+            <li><a href="../archetypes/index.html">Archetypes</a></li>
+            <li><a href="../twda-analysis/index.html">TWDA analysis</a></li>
+        </ul>
+    </nav>
+</header>
+<div id="card-modal" class="modal" onclick="this.style.display='none'">
+        <img class="modal-content" id="card-image">
+</div>
+<article>
+    <h1 id="combat">Combat</h1>
+    <p>
+        Combat occurs when a block succeeds, but can also be provoked directly using actions like
+        <span class="card" onclick="displayCard('bums-rush')">Bum’s Rush</span>.
+        This popular action gave its name to an entire archetype: the
+        <a href=../archetypes/index.html#rush>rush decks</a>.
+    </p>
+    <h2 id="bruise">Bruise</h2>
+    <p>
+        The heart of combat is <strong>bruise</strong>: reducing its opponents blood amount.
+        It forces the minions to hunt or stay in torpor, seriously reducing the ABC.
+        As a bonus, reducing blood amount on the table is an indirect way of damaging one's prey pool.
+    </p>
+    <p>
+        So the main focus of any combat module is to improve (for offensive combat decks)
+        or prevent (on the defensive side) bruise, <em>ie.</em> blood consumption.
+    </p>
+    <h2 id="dealing-damage">Dealing damage</h2>
+    <p>
+        On the discipline side, <i>p</i> and <i>h</i> are great at dealing high damage.
+        <i>i</i> has a strong combination with
+        <span class="card" onclick="displayCard('aid-from-bats')">Aid from Bats</span> and
+        <span class="card" onclick="displayCard('carrion-crows')">Carrion Crows</span>, giving 3 damages with a press.
+        <i>t</i> has the excellent <span class="card" onclick="displayCard('theft-of-vitae')">Theft of Vitae</span>,
+        which provides a non-preventable 4 blood differential in terms of bruise, at no cost.
+        Many disciplines give access to aggravated damage options:
+    </p>
+    <ul>
+        <li>
+            <i>j</i> with <span class="card" onclick="displayCard('wolf-claws')">Wolf Claws</span>,
+            <span class="card" onclick="displayCard('claws-of-the-dead')">Claws of the Dead</span>,
+            <span class="card" onclick="displayCard('bone-spur')">Bone Spur</span> and
+            <span class="card" onclick="displayCard('body-flare')">Body Flare</span>.
+        </li>
+        <li>
+            <i>v</i> with
+            <span class="card" onclick="displayCard('chiropteran-marauder')">Chriopteran Marauder</span> and
+            <span class="card" onclick="displayCard('breath-of-the-dragon')">Breath of the dragon</span>.
+        </li>
+        <li>
+            <i>t</i> with
+            <span class="card" onclick="displayCard('walk-of-flame')">Walk of Flame</span>,
+            <span class="card" onclick="displayCard('flames-of-the-netherworld')">Flames of the Netherworld</span>
+            and <span class="card" onclick="displayCard('burst-of-sunlight')">Burst of Sunlight</span>.
+        </li>
+        <li>
+            <i>l</i> with
+            <span class="card" onclick="displayCard('eye-of-unforgiving-heaven')">Eyes of Unforgiving Heaven</span>
+            and <span class="card" onclick="displayCard('sword-of-the-righteous')">Sword of the Righteous</span>.
+        </li>
+        <li>
+            <i>y</i> with
+            <span class="card" onclick="displayCard('flames-of-the-netherworld')">Flames of the Netherworld</span>
+            and <span class="card" onclick="displayCard('conflagration')">Conflagration</span>.
+        </li>
+        <li>
+            <i>q</i> with
+            <span class="card" onclick="displayCard('baals-bloody-talons')">Baal's Bloody Talons</span>
+            and <span class="card" onclick="displayCard('taste-of-death')">Taste of Death</span>.
+        </li>
+        <li>
+            <i>n</i> with <span class="card" onclick="displayCard('breath-of-thanatos')">Breath of Thanatos</span>.
+        </li>
+        <li><i>k</i> with <span class="card" onclick="displayCard('mayaparisatya')">Mayaparisatya</span>.</li>
+        <li>
+            <i>w</i> with <span class="card" onclick="displayCard('devil-channel-hands')">Devil Channel: Hands</span>.
+        </li>
+        <li><i>f</i> with <span class="card" onclick="displayCard('dawn-operation')">Dawn Operation</span>.</li>
+        <li>Gargoyles with <span class="card" onclick="displayCard('raking-talons')">Raking Talons</span>.</li>
+    </ul>
+    <div class="tip">
+        <h3 class="tip-title">Using aggravated damage</h3>
+        <p>
+            Using aggravated damage while acting is tricky, as the acting minion has to choose <strong>and pay</strong>
+            for his strike before the reacting minion. Cards that make the damage of a strike aggravated, like
+            <span class="card" onclick="displayCard('claws-of-the-dead')">Claws of the Dead</span>,
+            are superior in this aspect, as one can wait to see if the reacting minion will play
+            a combat ends or a dodge before using the card.
+        </p>
+        <p>
+            Using aggravated damage on the reacting side is easier. Moreover, it allows the use of
+            <span class="card" onclick="displayCard('rotschreck')">Rötschreck</span>,
+            sending the opponent into torpor whatever he does. The only prerequisite is for the
+            range to be right for the aggravated strike to be able to land in theory.
+        </p>
+    </div>
+    <p>
+        Apart from dealing more damage each strike, <strong>additional strikes</strong> are a good option to deliver
+        more damage each combat. They are, however, mostly available only for <i>c</i> users, with the notable exceptions
+        of <span class="card" onclick="displayCard('arms-of-the-abyss')">Arms of the Abyss</span> (<i>$</i>),
+        <span class="card" onclick="displayCard('devil-channel-back')">Devil Channel: Back</span> (<i>w</i>) and
+        <span class="card" onclick="displayCard('octopod')">Octopod</span> (<i>g</i>).
+    </p>
+    <p>
+        Finally, <span class="card" onclick="displayCard('target-vitals')">Target Vitals</span> is an excellent option
+        to increase damage, available for every minion at no cost.
+    </p>
+    <div class="tip">
+        <h3 class="tip-title">Weapons</h3>
+        <p>
+            Weapons are also a good way to improve damage.
+            There are a lot of weapons available, here are the most efficient and most played:
+        </p>
+        <ul>
+            <li>
+                <span class="card" onclick="displayCard('weighted-walking-stick')">Weighted Walking Stick</span>:
+                A weapon that can be wielded without losing an action to equip it.
+                It provides on average three additional damages at no cost, an excellent ratio.
+            </li>
+            <li>
+                <span class="card" onclick="displayCard('44-magnum')">.44 Magnum</span>:
+                An additional damage each strike, together with a manoeuver to keep the range long an avoid bruise.
+                This is the best weapon that
+                <span class="card" onclick="displayCard('concealed-weapon')">Concealed Weapon</span>
+                can get out, avoiding using up an action (and risking a block) to equip with the gun.
+            </li>
+            <li>
+                <span class="card" onclick="displayCard('ivory-bow')">Ivory Bow</span>:
+                Although unique, 1 pool for an aggravated ranged damage each strike is a bargain.
+            </li>
+            <li>
+                <span class="card" onclick="displayCard('sniper-rifle')">Sniper Rifle</span>:
+                only useful when blocking, its ability to set the range is an excellent option for blockers.
+            </li>
+            <li>
+                <span class="card" onclick="displayCard('assault-rifle')">Assault Rifle</span>:
+                A stronger version of the .44 magnum. The 5 pool cost is prohibitive, but if it can be reduced
+                by bringing it game using <span class="card" onclick="displayCard('alastor')">Alastor</span>,
+                for example, it is one of the strongest weapon of the game.
+            </li>
+            <li>
+                <span class="card" onclick="displayCard('blade-of-bellona')">Blade of Bellona</span>:
+                An additional damage and optionnal manoeuver at no cost, a real bargain for Salubri Antitribu.
+            </li>
+        </ul>
+    </div>
+    <h2 id="defence">Defence</h2>
+    <p>
+    The easiest defence for combats is to avoid the combat altogether using a <em>Strike: Combat Ends</em>,
+    <strong>S:CE</strong> for short. Multiple disciplines give access to this option:
+    </p>
+    <ul>
+        <li>
+            <i>r</i> with
+            <span class="card" onclick="displayCard('majesty')">Majesty</span>, the most played,
+            <span class="card" onclick="displayCard('force-of-personality')">Force of Personality</span>,
+            <span class="card" onclick="displayCard('catatonic-fear')">Catatonic Fear</span>,
+            <span class="card" onclick="displayCard('staredown')">Staredown</span> and
+            <span class="card" onclick="displayCard('unholy-penance')">Unholy Penance</span>.
+        </li>
+        <li>
+            <i>j</i> with
+            <span class="card" onclick="displayCard('earth-meld')">Earth Meld</span>,
+            <span class="card" onclick="displayCard('form-of-mist')">Form of Mist</span> and
+            <span class="card" onclick="displayCard('rapid-change')">Rapid Change</span>.
+        </li>
+        <li>
+            <i>$</i> with
+            <span class="card" onclick="displayCard('oubliette')">Oubliette</span> and
+            <span class="card" onclick="displayCard('shadow-body')">Shadow Body</span>.
+        </li>
+        <li><i>I</i> with <span class="card" onclick="displayCard('flesh-bond')">Flesh Bond</span>.</li>
+        <li><i>O</i> with <span class="card" onclick="displayCard('no-trace')">No Trace</span>.</li>
+        <li><i>v</i> with <span class="card" onclick="displayCard('meld-with-the-land')">Meld with the Land</span>.</li>
+        <li>
+            <i>C</i> with
+            <span class="card" onclick="displayCard('preternatural-evasion')">Preternatural Evasion</span>.
+        </li>
+        <li>
+            <i>N</i> with
+            <span class="card" onclick="displayCard('spiritual-intervention')">Spiritual Intervention</span>.
+        </li>
+        <li><i>Z</i> with <span class="card" onclick="displayCard('leapfrog')">Leapfrog</span>.</li>
+        <li>
+            <i>rs</i> with
+            <span class="card" onclick="displayCard('serpents-numbing-kiss')">Serpent's Numbing Kiss</span>.
+        </li>
+    </ul>
+    <p>
+    It is worth noting that <span class="card" onclick="displayCard('flash-grenade')">Flash Grenade</span>
+    is an option for any minion, and also that big capacity vampires have access to <i>d</i>
+    <span class="card" onclick="displayCard('obedience')">Obedience</span> and <i>O</i>
+    <span class="card" onclick="displayCard('mental-maze')">Mental Maze</span> to avoid combat altogether, Although
+    only whern blocking an action.
+    </p>
+    <div class="tip">
+        <h3 class="tip-title">How to deal with Strike: Combat Ends (S:CE)</h3>
+        <p>
+            S:CE are a real issue for combat-focused deck. Some solutions exist to deal with them.
+        </p>
+        <ul>
+            <li>
+                <span class="card" onclick="displayCard('nsa-trio')">NSA Trio</span> is available to everyone but
+                is not an option for rush modules, as their combat may not be the result of a block.
+            </li>
+            <li>
+                Three disciplines have a counter that let them continue the combat after a S:CE.
+                <i>C</i> with <span class="card" onclick="displayCard('psyche')">Psyche!</span>,
+                <i>A</i> with
+                <span class="card" onclick="displayCard('telepathic-tracking')">Telepathic Tracking</span>,
+                <i>H</i> with
+                <span class="card" onclick="displayCard('relentless-reaper')">Relentless Reaper</span>.
+            </li>
+            <li>
+                <i>p</i> has the best counter of all, with
+                <span class="card" onclick="displayCard('immortal-grapple')">Immortal Grapple</span> that
+                <strong>prevents</strong> the use of S:CE, together with dodges or torpor strikes.
+            </li>
+        </ul>
+        <p>
+            Other than that, the only option is to get into enough combats to exhaust the S:CE on the defence side.
+        </p>
+    </div>
+    <p>
+        Aside from S:CE, <strong>damage prevention</strong> is another important part of combat.
+        It is useful in defence, but also on the offence for combat intensive decks: reducing the loss of blood
+        improves the bruise ratio, which is the primary focus of combat oriented decks.
+        <i>f</i> is the key discipline for damage prevention, and only a few notable damage prevention cards
+        exist outside this discipline:
+        <ul>
+            <li>
+                <span class="card" onclick="displayCard('glancing-blow')">Glancing Blow</span> prevents only one damage,
+                that makes it a viable option only for saving an ally.
+            </li>
+            <li>
+                <span class="card" onclick="displayCard('rockheart')">Rockheart</span> and
+                <span class="card" onclick="displayCard('stonestrength')">Stonestrength</span> (<i>u</i>)
+            </li>
+            <li><span class="card" onclick="displayCard('rego-motus')">Rego Motus</span> (<i>t</i>)</li>
+            <li><span class="card" onclick="displayCard('apparition')">Apparition</span> (<i>k</i>)</li>
+            <li><span class="card" onclick="displayCard('flesh-of-marble')">Flesh of Marble</span> (<i>j</i>)</li>
+            <li>
+                <span class="card" onclick="displayCard('leathery-hide')">Leathery Hide</span> (Gangrel Antitribu)
+            </li>
+        </ul>
+    </p>
+    <p>
+        <strong>Dodging</strong> is still an option for defence, and the simple
+        <span class="card" onclick="displayCard('dodge')">Dodge</span> is available for everyone. It is weaker than
+        ending the combat with a S:CE, but it is still a viable defensive option when S:CE are not available.
+    </p>
+    <p>
+        Finally, three cards can <strong>send a vampire into torpor directly</strong>:
+        <span class="card" onclick="displayCard('coma')">Coma</span> (<i>e</i>),
+        <span class="card" onclick="displayCard('entombment')">Entombment</span> (<i>$</i>) and
+        <span class="card" onclick="displayCard('the-kiss-of-ra')">The Kiss of Ra</span> (<i>f</i>).
+        They're too costly to be used effectively as an offensive option, but they are good defensive
+        options as they can act as a deterrent against combat focused decks.
+    </p>
+    <h2 id="range-management">Range Management</h2>
+    <p>
+        Getting the correct range is fundamental for combat. Most combat module specialize in a given range,
+        either maintaining <strong>long range</strong> to avoid the basic one damage any vampire can do,
+        or using strong <strong>short range</strong> strikes and effects.
+        Many cards provide <strong>maneuvers</strong> and many offensive combat module use them to manage their range.
+        A few cards allow a vampire to set the range directly, without letting the opponent the opportunity to
+        maneuver:
+    </p>
+    <ul>
+        <li><span class="card" onclick="displayCard('sniper-rifle')">Sniper Rifle</span></li>
+        <li><span class="card" onclick="displayCard('high-ground')">High Ground</span> (<i>^</i>)</li>
+        <li><span class="card" onclick="displayCard('selective-silence')">Selective Silence</span> (<i>Q</i>)</li>
+        <li><span class="card" onclick="displayCard('shadow-step')">Shadow Step</span> (<i>£</i>)</li>
+        <li><span class="card" onclick="displayCard('cold-aura')">Cold Aura</span> (<i>n</i>)</li>
+        <li>
+            <span class="card" onclick="displayCard('charge-of-the-buffalo')">Charge of the Buffalo</span> (<i>z</i>)
+        </li>
+        <li><span class="card" onclick="displayCard('brick-by-brick')">Brick by Brick</span> (<i>U</i>)</li>
+        <li>
+            <span class="card" onclick="displayCard('giulia-giovanni-abruzzina')">Giulia Giovanni Abruzzina</span>
+            (Giovanni)
+        </li>
+        <li><span class="card" onclick="displayCard('omael-kuman')">Omael Kuman</span> (Assamite)</li>
+        <li><span class="card" onclick="displayCard('storm-sewers')">Storm Sewers</span> (Nosferatu)</li>
+    </ul>
+
+</article>
+<footer>
+    <nav role="navigation">
+        <a class="prev" href="fundamentals.html">Fundamentals</a>
+        <a href="index.html">Strategy</a>
+        <a class="next" href="bloat.html">Bloat</a>
+    </nav>
+</footer>
+</body>
+</html>

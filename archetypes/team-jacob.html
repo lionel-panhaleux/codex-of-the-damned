@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel='stylesheet' type='text/css' href='../base.css'/>
+    <script>
+        function dC(name) {
+            document.getElementById("card-image").src = '../card-images/'.concat(name, '.jpg');
+            document.getElementById("card-modal").style.display = "block";
+        }
+    </script>
+    <title>Codex of the Damned</title>
+</head>
+<body>
+<header role="banner">
+    <div class="site-logo">
+    <a href="../index.html" class="site-logo">
+        <img width="150" height="150" src="../icons/vtes.svg" alt="Codex of the Damned">
+        <h1>Codex of the Damned</h1>
+    </a>
+    </div>
+    <nav role="navigation">
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../deck-guides/index.html">Deck Guides</a></li>
+            <li><a href="../strategy/index.html">Strategy</a></li>
+            <li><a href="../archetypes/index.html">Archetypes</a></li>
+            <li><a href="../twda-analysis/index.html">TWDA analysis</a></li>
+        </ul>
+    </nav>
+</header>
+<div id="card-modal" class="modal" onclick="this.style.display='none'">
+        <img class="modal-content" id="card-image">
+</div>
+<article>
+    <h1><img src="../icons/clan-akunanse.svg">Team Jacob</h1>
+
+    <div class="decklist">
+        <h2><a href=http://www.vekn.fr/decks/twd.htm#2013nacd2co>Team Jacob</a></h2>
+        <p>
+            Deck by Mikkel Petersen<br/>
+            NAC 2013 Day 2<br/>
+            Columbus, Ohio<br/>
+            June 15th 2013<br/>
+            25 players, 46 players on day 1<br/>
+        </p>
+        <h3>Crypt (12 cards)</h3>
+        <ul>
+            <li>4  <span class="card" onclick="dC('jacob-fermor')">Jacob Fermor</span></li>
+            <li>1  <span class="card" onclick="dC('socrate-cidibe')">Socrate Cidibe</span></li>
+            <li>1  <span class="card" onclick="dC('nestor-kaba')">Nestor Kaba</span></li>
+            <li>1  <span class="card" onclick="dC('dolie')">Dolie</span></li>
+            <li>1  <span class="card" onclick="dC('keith-moody')">Keith Moody</span></li>
+            <li>1  <span class="card" onclick="dC('lana-butcher')">Lana Butcher</span></li>
+            <li>1  <span class="card" onclick="dC('jackson-asher')">Jackson Asher</span></li>
+            <li>1  <span class="card" onclick="dC('meno-ngari')">Meno Ngari</span></li>
+            <li>1  <span class="card" onclick="dC('anarch-convert')">Anarch Convert</span></li>
+        </ul>
+        <h3>Library (74 cards)</h3>
+        <ul>
+            <li><h4>— Master (21) —</h4></li>
+            <li>5  <span class="card" onclick="dC('villein')">Villein</span></li>
+            <li>4  <span class="card" onclick="dC('wider-view')">Wider View</span></li>
+            <li>3  <span class="card" onclick="dC('charisma')">Charisma</span></li>
+            <li>3  <span class="card" onclick="dC('pentex-tm-subversion')">Pentex™ Subversion</span></li>
+            <li>2  <span class="card" onclick="dC('dreams-of-the-sphinx')">Dreams of the Sphinx</span></li>
+            <li>2  <span class="card" onclick="dC('powerbase-tshwane')">Powerbase: Tshwane</span></li>
+            <li>1  <span class="card" onclick="dC('left-for-dead')">Left for Dead</span></li>
+            <li>1  <span class="card" onclick="dC('mapatano-utando')">Mapatano Utando</span></li>
+            <li><h4>— Action (11) —</h4></li>
+            <li>11 <span class="card" onclick="dC('computer-hacking')">Computer Hacking</span></li>
+            <li><h4>— Modifier/Combat (6) —</h4></li>
+            <li>6  <span class="card" onclick="dC('predators-transformation')">Predator's Transformation</span></li>
+            <li><h4>— Combat (6) —</h4></li>
+            <li>6  <span class="card" onclick="dC('aid-from-bats')">Aid from Bats</span></li>
+            <li><h4>— Reaction (15) —</h4></li>
+            <li>6  <span class="card" onclick="dC('deflection')">Deflection</span></li>
+            <li>4  <span class="card" onclick="dC('predators-communion')">Predator's Communion</span></li>
+            <li>3  <span class="card" onclick="dC('on-the-qui-vive')">On the Qui Vive</span></li>
+            <li>2  <span class="card" onclick="dC('delaying-tactics')">Delaying Tactics</span></li>
+            <li><h4>— Equipment (1) —</h4></li>
+            <li>1  <span class="card" onclick="dC('heart-of-nizchetus')">Heart of Nizchetus</span></li>
+            <li><h4>— Ally (11) —</h4></li>
+            <li>7  <span class="card" onclick="dC('tunnel-runner')">Tunnel Runner</span></li>
+            <li>2  <span class="card" onclick="dC('carlton-van-wyk')">Carlton Van Wyk</span></li>
+            <li>1  <span class="card" onclick="dC('ossian')">Ossian</span></li>
+            <li>1  <span class="card" onclick="dC('vagabond-mystic')">Vagabond Mystic</span></li>
+            <li><h4>— Event (3) —</h4></li>
+            <li>3  <span class="card" onclick="dC('the-unmasking')">The Unmasking</span></li>
+        </ul>
+    </div>
+    <h2>Highlights</h2>
+    <p>
+        This is a stealth & bleed deck using <span class="card" onclick="dC('tunnel-runner')">Tunnel Runner</span>.
+        along <span class="card" onclick="dC('computer-hacking')">Computer Hacking</span>.
+        An Akunanse is required to get the weremoles out, and
+        <span class="card" onclick="dC('jacob-fermor')">Jacob Fermor</span> is expected to come out and boost
+        their bleed power.
+    </p>
+    <p>
+        The deck relies on additional vampires with <i>d</i> for
+        <span class="card" onclick="dC('deflection')">Deflection</span> bounces. As the deck does not block so much,
+        this is essential for defence.
+    </p>
+    <h2>Tips & Tricks</h2>
+    <p>
+        As the deck is supposed to get an Akunanse, <span class="card" onclick="dC('jacob-fermor')">Jacob Fermor</span>
+        then a low capacity vampire with <i>d</i>, it has a bit of each in the crypt and plays a bunch of
+        <span class="card" onclick="dC('wider-view')">Wider View</span> and an
+        <span class="card" onclick="dC('anarch-convert')">Anarch Convert</span> to rotate through them if necessary.
+    </p>
+    <p>
+        <span class="card" onclick="dC('tunnel-runner')">Tunnel Runner</span> are expensive allies.
+        getting <span class="card" onclick="dC('powerbase-tshwane')">Powerbase: Tshwane</span> and/or
+        <span class="card" onclick="dC('charisma')">Charisma</span> out fast is a lot of help.
+
+    </p>
+    <p>
+        <span class="card" onclick="dC('predators-transformation')">Predator's Transformation</span>
+        provides additional stealth to get the allies into play without being blocked.
+    </p>
+    <p>
+        <span class="card" onclick="dC('aid-from-bats')">Aid from Bats</span> is used as a defensive combat card.
+        <span class="card" onclick="dC('tunnel-runner')">Tunnel Runner</span> can use it, but most Akunanse also can.
+        The allies have <span class="card" onclick="dC('the-unmasking')">The Unmasking</span> and the Akunanse their
+        <span class="card" onclick="dC('predators-communion')">Predator's Communion</span> for some tactical intercept
+        — vampires that do not fight aggressively, as they have very few combat capabilities themselves.
+    </p>
+    <h2>Variants</h2>
+    <p>
+        There is no variant to this deck. The decklist given in example won the 2013 North American Championship (NAC).
+    </p>
+    <div class="clear"></div>
+    <div class="warning">
+        <h3 class="warning-title">Errata</h3>
+        <p>
+            <span class="card" onclick="dC('pentex-tm-subversion')">Pentex™ Subversion</span>
+            has been modified by an <em>errata</em> in September 2019.
+            It does not prevent a vampire to act anymore, so it is less powerful.
+            Its ability to disable a strong blocker is the most important aspect here
+            so it can still have its place, though maybe not in such numbers.
+        </p>
+    </div>
+</article>
+</body>
+<footer>
+    <nav role="navigation">
+        <a class="prev" href="akunanse-wall.html">Akunanse Wall</a>
+        <a href="index.html">Archetypes</a>
+        <a class="next" href="amaravati-politics.html">Amaravati Politics</a>
+    </nav>
+</footer>
+</html>

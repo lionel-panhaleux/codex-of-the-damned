@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel='stylesheet' type='text/css' href='../base.css'/>
+    <script>
+        function dC(name) {
+            document.getElementById("card-image").src = '../card-images/'.concat(name, '.jpg');
+            document.getElementById("card-modal").style.display = "block";
+        }
+    </script>
+    <title>Codex of the Damned</title>
+</head>
+<body>
+<header role="banner">
+    <div class="site-logo">
+    <a href="../index.html" class="site-logo">
+        <img width="150" height="150" src="../icons/vtes.svg" alt="Codex of the Damned">
+        <h1>Codex of the Damned</h1>
+    </a>
+    </div>
+    <nav role="navigation">
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../deck-guides/index.html">Deck Guides</a></li>
+            <li><a href="../strategy/index.html">Strategy</a></li>
+            <li><a href="../archetypes/index.html">Archetypes</a></li>
+            <li><a href="../twda-analysis/index.html">TWDA analysis</a></li>
+        </ul>
+    </nav>
+</header>
+<div id="card-modal" class="modal" onclick="this.style.display='none'">
+        <img class="modal-content" id="card-image">
+</div>
+<article>
+    <h1><img src="../icons/clan-kiasyd.svg"> Kiasyd Stealth & Bleed</h1>
+    <div class="decklist">
+        <h2><a href=http://www.vekn.fr/decks/twd.htm#2013yices>Kiasyd bleed tipica</a></h2>
+        <p>
+            Deck by Tomàs López Jiménez<br/>
+            Yes, I Can<br/>
+            Egino, Spain<br/>
+            September 21st 2013<br/>
+            28 players<br/>
+        </p>
+        <h3>Crypt (12 cards)</h3>
+        <ul>
+            <li>2  <span class="card" onclick="dC('the-arcadian')">The Arcadian</span></li>
+            <li>2  <span class="card" onclick="dC('roderick-phillips-march')">Roderick Phillips March</span></li>
+            <li>2  <span class="card" onclick="dC('isanwayen')">Isanwayen</span></li>
+            <li>1  <span class="card" onclick="dC('pherydima')">Pherydima</span></li>
+            <li>1  <span class="card" onclick="dC('omme-enberbenight')">Omme Enberbenight</span></li>
+            <li>1  <span class="card" onclick="dC('dame-hollerton')">Dame Hollerton</span></li>
+            <li>1  <span class="card" onclick="dC('ermenegildo-the-rake')">Ermenegildo, The Rake</span></li>
+            <li>1  <span class="card" onclick="dC('leila-monroe')">Leila Monroe</span></li>
+            <li>1  <span class="card" onclick="dC('lucy-markowitz')">Lucy Markowitz</span></li>
+        </ul>
+        <h3>Library (81 cards)</h3>
+        <ul>
+            <li><h4>— Master (11) —</h4></li>
+            <li>2  <span class="card" onclick="dC('dreams-of-the-sphinx')">Dreams of the Sphinx</span></li>
+            <li>2  <span class="card" onclick="dC('jake-washington')">Jake Washington</span></li>
+            <li>2  <span class="card" onclick="dC('pentex-tm-subversion')">Pentex™ Subversion</span></li>
+            <li>1  <span class="card" onclick="dC('anarch-troublemaker')">Anarch Troublemaker</span></li>
+            <li>1  <span class="card" onclick="dC('the-coven')">The Coven</span></li>
+            <li>1  <span class="card" onclick="dC('giants-blood')">Giant's Blood</span></li>
+            <li>1  <span class="card" onclick="dC('great-symposium')">Great Symposium</span></li>
+            <li>1  <span class="card" onclick="dC('life-in-the-city')">Life in the City</span></li>
+            <li><h4>— Action (19) —</h4></li>
+            <li>15 <span class="card" onclick="dC('govern-the-unaligned')">Govern the Unaligned</span></li>
+            <li>4  <span class="card" onclick="dC('song-of-pan')">Song of Pan</span></li>
+            <li><h4>— Modifier (24) —</h4></li>
+            <li>5  <span class="card" onclick="dC('shadow-play')">Shadow Play</span></li>
+            <li>4  <span class="card" onclick="dC('bonding')">Bonding</span></li>
+            <li>4  <span class="card" onclick="dC('conditioning')">Conditioning</span></li>
+            <li>4  <span class="card" onclick="dC('foreshadowing-destruction')">Foreshadowing Destruction</span></li>
+            <li>3  <span class="card" onclick="dC('shroud-of-absence')">Shroud of Absence</span></li>
+            <li>2  <span class="card" onclick="dC('command-of-the-beast')">Command of the Beast</span></li>
+            <li>2  <span class="card" onclick="dC('stone-travel')">Stone Travel</span></li>
+            <li><h4>— Modifier/Combat (3) —</h4></li>
+            <li>3  <span class="card" onclick="dC('fae-contortion')">Fae Contortion</span></li>
+            <li><h4>— Combat (6) —</h4></li>
+            <li>6  <span class="card" onclick="dC('shadow-body')">Shadow Body</span></li>
+            <li><h4>— Reaction (8) —</h4></li>
+            <li>3  <span class="card" onclick="dC('deflection')">Deflection</span></li>
+            <li>3  <span class="card" onclick="dC('on-the-qui-vive')">On the Qui Vive</span></li>
+            <li>2  <span class="card" onclick="dC('redirection')">Redirection</span></li>
+            <li><h4>— Reaction/Modifier (2) —</h4></li>
+            <li>2  <span class="card" onclick="dC('aura-absorption')">Aura Absorption</span></li>
+            <li><h4>— Equipment (1) —</h4></li>
+            <li>1  <span class="card" onclick="dC('heart-of-nizchetus')">Heart of Nizchetus</span></li>
+            <li><h4>— Ally (6) —</h4></li>
+            <li>4  <span class="card" onclick="dC('nocturn')">Nocturn</span></li>
+            <li>1  <span class="card" onclick="dC('carlton-van-wyk')">Carlton Van Wyk</span></li>
+            <li>1  <span class="card" onclick="dC('mylan-horseed')">Mylan Horseed</span></li>
+            <li><h4>— Event (1) —</h4></li>
+            <li>1  <span class="card" onclick="dC('the-bitter-and-sweet-story')">The Bitter and Sweet Story</span></li>
+        </ul>
+    </div>
+    <h2>Highlights</h2>
+    <p>
+        This is a <em>stealth & bleed</em> deck using the Kiasyd clan and their unique <i>x</i> discipline.
+        During the beginning, it uses <span class="card" onclick="dC('govern-the-unaligned')">Govern the Unaligned</span>
+        to get vampires out faster and cheaper. When enough minions are into play, it switches to delivering
+        strong bleed actions using <i>£</i> and <i>X</i> for stealth.
+    </p>
+    <p>
+        The deck uses
+        <span class="card" onclick="dC('nocturn')">Nocturn</span> and
+        <span class="card" onclick="dC('carlton-van-wyk')">Carlton Van Wyk</span> to protect its vampires
+        from agression, but also has access to
+        <span class="card" onclick="dC('shadow-body')">Shadow Body</span> in case of a combat.
+    </p>
+    <p>
+        Stealth is high, with 16 stealth modifiers, but still uses
+        <span class="card" onclick="dC('pentex-tm-subversion')">Pentex™ Subversion</span> and
+        <span class="card" onclick="dC('anarch-troublemaker')">Anarch Troublemaker</span> atop of that
+        to prevent interception.
+    </p>
+    <p>
+        The vampires use their blood quite fast, so no leeching takes place and
+        <span class="card" onclick="dC('jake-washington')">Jake Washington</span>,
+        <span class="card" onclick="dC('the-coven')">The Coven</span> and
+        <span class="card" onclick="dC('life-in-the-city')">Life in the City</span> are used to get some blood back
+        on them.
+    </p>
+    <h2>Tips & Tricks</h2>
+    <p>
+        <span class="card" onclick="dC('command-of-the-beast')">Command of the Beast</span> is used to make it
+        harder for the opponents to figure out exactly how much bleed power the deck can have in hand.
+        As its bonus does not count against the limit, it can be used along a
+        <span class="card" onclick="dC('conditioning')">Conditioning</span>.
+    </p>
+    <p>
+        <span class="card" onclick="dC('nocturn')">Nocturn</span> can also be used as a bleed enhancer,
+        as it can act the turn it gets into play.
+    </p>
+    <h2>Variants</h2>
+    <p>
+        Including more <span class="card" onclick="dC('nocturn')">Nocturn</span> is an option,
+        as is using some <span class="card" onclick="dC('sudden-reversal')">Sudden Reversal</span>
+        to disable the prey's Master bloat
+        (<span class="card" onclick="dC('villein')">Villein</span>,
+        <span class="card" onclick="dC('vessel')">Vessel</span>, <em>etc.</em>).
+        Also, the
+        <span class="card" onclick="dC('gremlins')">Gremlins</span> +
+        <span class="card" onclick="dC('bonding')">Bonding</span> combination can prove very efficient.
+        <a href="http://www.vekn.fr/decks/twd.htm#2010slovakecq">Ben Peals's deck</a> from 2010 is a good example.
+    </p>
+    <p>
+        In a sense, this archetype is very close to the
+        <a href="lasombra-stealth-bleed">Lasombra Stealth & Bleed</a> archetype, as they both use
+        <i>D</i> and <i>£</i> to the same effect.
+    </p>
+    <div class="clear"></div>
+    <div class="warning">
+        <h3 class="warning-title">Errata</h3>
+        <p>
+            <span class="card" onclick="dC('pentex-tm-subversion')">Pentex™ Subversion</span>
+            has been modified by an <em>errata</em> in September 2019.
+            It does not prevent a vampire to act anymore, so it is less powerful
+            but still has its place in this deck as it is mainly used to disable a blocker for the lunge.
+        </p>
+    </div>
+</article>
+</body>
+<footer>
+    <nav role="navigation">
+        <a class="prev" href="ishtarri-politics.html">Ishtarri Politics</a>
+        <a href="index.html">Archetypes</a>
+        <a class="next" href="lasombra-nocturn.html">Lasombra Nocturn</a>
+    </nav>
+</footer>
+</html>
