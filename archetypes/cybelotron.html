@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" type="text/css" href="../base.css"/>
+    <script>
+        function dC(name) {
+            document.getElementById("card-image").src = '../card-images/'.concat(name, '.jpg');
+            document.getElementById("card-modal").style.display = "block";
+        }
+    </script>
+    <title>Codex of the Damned</title>
+</head>
+<body>
+<header role="banner">
+    <div class="site-logo">
+    <a href="../index.html" class="site-logo">
+        <img width="150" height="150" src="../icons/vtes.svg" alt="Codex of the Damned">
+        <h1>Codex of the Damned</h1>
+    </a>
+    </div>
+    <nav role="navigation">
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../strategy/index.html">Strategy</a></li>
+            <li><a href="../archetypes/index.html">Archetypes</a></li>
+            <li><a href="../twda-analysis/index.html">TWDA analysis</a></li>
+            <li><a href="../deck-guides/index.html">Deck Guides</a></li>
+        </ul>
+    </nav>
+</header>
+<div id="card-modal" class="modal" onclick="this.style.display='none'">
+        <img class="modal-content" id="card-image">
+</div>
+<article>
+    <h1>Cybelotron</h1>
+    <div class="decklist">
+        <h2><a href="http://www.vekn.fr/decks/twd.htm#2k7originssun">Cybelotron</a></h2>
+        <p>
+            Deck by Ben Peal<br/>
+            Origins Sunday<br/>
+            Columbus, Ohio<br/>
+            July 8th 2007<br/>
+            21 players<br/>
+        </p>
+        <h3>Crypt (12 cards)</h3>
+        <ul>
+            <li>12 <span class="card" onclick="dC('cybele')">Cybele</span></li>
+        </ul>
+        <h3>Library (90 cards)</h3>
+        <ul>
+            <li><h4>— Master (28) —</h4></li>
+            <li>4  <span class="card" onclick="dC('dreams-of-the-sphinx')">Dreams of the Sphinx</span></li>
+            <li>4  <span class="card" onclick="dC('golconda-inner-peace')">Golconda: Inner Peace</span></li>
+            <li>4  <span class="card" onclick="dC('minion-tap')">Minion Tap</span></li>
+            <li>2  <span class="card" onclick="dC('auspex')">Auspex</span></li>
+            <li>2  <span class="card" onclick="dC('celerity')">Celerity</span></li>
+            <li>2  <span class="card" onclick="dC('fortitude')">Fortitude</span></li>
+            <li>2  <span class="card" onclick="dC('the-parthenon')">The Parthenon</span></li>
+            <li>2  <span class="card" onclick="dC('redeem-the-lost-soul')">Redeem the Lost Soul</span></li>
+            <li>1  <span class="card" onclick="dC('antediluvian-awakening')">Antediluvian Awakening</span></li>
+            <li>1  <span class="card" onclick="dC('the-barrens')">The Barrens</span></li>
+            <li>1  <span class="card" onclick="dC('direct-intervention')">Direct Intervention</span></li>
+            <li>1  <span class="card" onclick="dC('dominate')">Dominate</span></li>
+            <li>1  <span class="card" onclick="dC('fortschritt-library')">Fortschritt Library</span></li>
+            <li>1  <span class="card" onclick="dC('giants-blood')">Giant's Blood</span></li>
+            <li><h4>— Action (19) —</h4></li>
+            <li>8  <span class="card" onclick="dC('call-the-great-beast')">Call the Great Beast</span></li>
+            <li>8  <span class="card" onclick="dC('magic-of-the-smith')">Magic of the Smith</span></li>
+            <li>3  <span class="card" onclick="dC('entrancement')">Entrancement</span></li>
+            <li><h4>— Modifier (31) —</h4></li>
+            <li>11 <span class="card" onclick="dC('truth-of-a-thousand-lies')">Truth of a Thousand Lies</span></li>
+            <li>5  <span class="card" onclick="dC('elder-impersonation')">Elder Impersonation</span></li>
+            <li>5  <span class="card" onclick="dC('lost-in-crowds')">Lost in Crowds</span></li>
+            <li>4  <span class="card" onclick="dC('cloak-the-gathering')">Cloak the Gathering</span></li>
+            <li>4  <span class="card" onclick="dC('faceless-night')">Faceless Night</span></li>
+            <li>2  <span class="card" onclick="dC('spying-mission')">Spying Mission</span></li>
+            <li><h4>— Modifier/Combat (5) —</h4></li>
+            <li>5  <span class="card" onclick="dC('swallowed-by-the-night')">Swallowed by the Night</span></li>
+            <li><h4>— Combat (3) —</h4></li>
+            <li>3  <span class="card" onclick="dC('majesty')">Majesty</span></li>
+            <li><h4>— Equipment (2) —</h4></li>
+            <li>2  <span class="card" onclick="dC('soul-gem-of-etrius')">Soul Gem of Etrius</span></li>
+            <li><h4>— Ally (1) —</h4></li>
+            <li>1  <span class="card" onclick="dC('mylan-horseed')">Mylan Horseed</span></li>
+            <li><h4>— Event (1) —</h4></li>
+            <li>1  <span class="card" onclick="dC('anthelios-the-red-star')">Anthelios, The Red Star</span></li>
+        </ul>
+    </div>
+    <h2>Highlights</h2>
+    <p>
+        This is a <em>special</em> deck using <span class="card" onclick="dC('cybele')">Cybele</span> and
+        <span class="card" onclick="dC('call-the-great-beast')">Call the Great Beast</span>.
+    </p>
+    <p>
+        The idea is to put a Master: Discipline on <span class="card" onclick="dC('cybele')">Cybele</span>
+        to get her to 11 capacity, use <span class="card" onclick="dC('magic-of-the-smith')">Magic of the Smith</span>
+        to fetch a <span class="card" onclick="dC('soul-gem-of-etrius')">Soul Gem of Etrius</span>,
+        unlock with <span class="card" onclick="dC('truth-of-a-thousand-lies')">Truth of a Thousand Lies</span>,
+        then play <span class="card" onclick="dC('call-the-great-beast')">Call the Great Beast</span> with
+        <i>ORS</i> and burn,
+        triggering the <span class="card" onclick="dC('soul-gem-of-etrius')">Soul Gem of Etrius</span>.
+        A new <span class="card" onclick="dC('cybele')">Cybele</span> comes back with the
+        <span class="card" onclick="dC('soul-gem-of-etrius')">Soul Gem of Etrius</span> and bleeds alongside the
+        Great Beast.
+    </p>
+    <p>
+        This is a complicated combination but, if done right, <span class="card" onclick="dC('cybele')">Cybele</span>
+        and her "resurrection" can both bleed in the same turn for 3 each, plus 3 from the Great Beast.
+        <span class="card" onclick="dC('golconda-inner-peace')">Golconda: Inner Peace</span> is used on the
+        Great Beast and
+        <span class="card" onclick="dC('redeem-the-lost-soul')">Redeem the Lost Soul</span> on the burnt
+        <span class="card" onclick="dC('cybele')">Cybele</span>, for a massive bloat.
+    </p>
+    <p>
+        <span class="card" onclick="dC('dreams-of-the-sphinx')">Dreams of the Sphinx</span> and
+        <span class="card" onclick="dC('the-barrens')">The Barrens</span> are used to discard the spurious
+        <span class="card" onclick="dC('magic-of-the-smith')">Magic of the Smith</span>
+        once the combo is up and running.
+    </p>
+    <p>
+        The combat module is defensive, using only <span class="card" onclick="dC('majesty')">Majesty</span>.
+    </p>
+    <h2>Tips & Tricks</h2>
+    <p>
+        <span class="card" onclick="dC('antediluvian-awakening')">Antediluvian Awakening</span>
+        can help burn an exhausted <span class="card" onclick="dC('cybele')">Cybele</span> to avoid getting stuck
+        in torpor.
+    </p>
+    <p>
+        Once <span class="card" onclick="dC('cybele')">Cybele</span> is at 11 capacity with the
+        <span class="card" onclick="dC('soul-gem-of-etrius')">Soul Gem of Etrius</span>,
+        <span class="card" onclick="dC('truth-of-a-thousand-lies')">Truth of a Thousand Lies</span> can be used
+        to get her bleed up to 5: If the prey plays
+        <span class="card" onclick="dC('archon-investigation')">Archon Investigation</span>, a new
+        <span class="card" onclick="dC('cybele')">Cybele</span> just comes into play and bleeds again.
+    </p>
+    <p>
+        <span class="card" onclick="dC('spying-mission')">Spying Mission</span> can be used if a bleed is bounced
+        to avoid dealing damage to an ally.
+    </p>
+    <p>
+        Sadly, <span class="card" onclick="dC('golconda-inner-peace')">Golconda: Inner Peace</span> can not
+        be used on <span class="card" onclick="dC('cybele')">Cybele</span>, as it does not burn her, it does not
+        trigger the <span class="card" onclick="dC('soul-gem-of-etrius')">Soul Gem of Etrius</span> effect.
+    </p>
+    <h2>Variants</h2>
+    <p>
+        There are only minor variations to this archetype.
+        <span class="card" onclick="dC('dark-influences')">Dark Influences</span> and
+        <span class="card" onclick="dC('unleash-hells-fury')">Unleash Hell's Fury</span> are often included.
+    </p>
+    <div class="clear"></div>
+    <div class="warning">
+        <h3 class="warning-title">Errata</h3>
+        <p>
+            <span class="card" onclick="dC('anthelios-the-red-star')">Anthelios, The Red Star</span>
+            has been banned in 2016. Its removal may have a bit of impact on the Master module.
+        </p>
+    </div>
+</article>
+</body>
+<footer>
+    <nav role="navigation">
+        <a class="prev" href="baltimore-purge.html">Baltimore Purge</a>
+        <a href="index.html">Archetypes</a>
+        <a class="next" href="madness-reversal.html">Madness Reversal</a>
+    </nav>
+</footer>
+</html>

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" type="text/css" href="../base.css"/>
+    <script>
+        function dC(name) {
+            document.getElementById("card-image").src = '../card-images/'.concat(name, '.jpg');
+            document.getElementById("card-modal").style.display = "block";
+        }
+    </script>
+    <title>Codex of the Damned</title>
+</head>
+<body>
+<header role="banner">
+    <div class="site-logo">
+    <a href="../index.html" class="site-logo">
+        <img width="150" height="150" src="../icons/vtes.svg" alt="Codex of the Damned">
+        <h1>Codex of the Damned</h1>
+    </a>
+    </div>
+    <nav role="navigation">
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../strategy/index.html">Strategy</a></li>
+            <li><a href="../archetypes/index.html">Archetypes</a></li>
+            <li><a href="../twda-analysis/index.html">TWDA analysis</a></li>
+            <li><a href="../deck-guides/index.html">Deck Guides</a></li>
+        </ul>
+    </nav>
+</header>
+<div id="card-modal" class="modal" onclick="this.style.display='none'">
+        <img class="modal-content" id="card-image">
+</div>
+<article>
+    <h1>Baltimore Purge</h1>
+    <div class="decklist">
+        <h2><a href="http://www.vekn.fr/decks/twd.htm#2018ocspb">Titanic</a></h2>
+        <p>
+            Deck by Desso Alastor<br/>
+            Brazilian CCQ  - O CHAMADO<br/>
+            São Paulo, Brazil<br/>
+            March 3rd 2018<br/>
+            18 players<br/>
+        </p>
+        <h3>Crypt (12 cards)</h3>
+        <ul>
+            <li>5  <span class="card" onclick="dC('montano')">Montano</span></li>
+            <li>2  <span class="card" onclick="dC('lucita')">Lucita</span></li>
+            <li>1  <span class="card" onclick="dC('guido-lucciano')">Guido Lucciano</span></li>
+            <li>1  <span class="card" onclick="dC('ignacio-the-black-priest')">Ignacio, The Black Priest</span></li>
+            <li>1  <span class="card" onclick="dC('ramiro')">Ramiro</span></li>
+            <li>1  <span class="card" onclick="dC('cameron')">Cameron</span></li>
+            <li>1  <span class="card" onclick="dC('aaron-duggan-cameron-s-toady')">Aaron Duggan, Cameron's Toady</span></li>
+        </ul>
+        <h3>Library (90 cards)</h3>
+        <ul>
+            <li><h4>— Master (24) —</h4></li>
+            <li>4  <span class="card" onclick="dC('the-parthenon')">The Parthenon</span></li>
+            <li>4  <span class="card" onclick="dC('zillahs-valley')">Zillah's Valley</span></li>
+            <li>2  <span class="card" onclick="dC('dreams-of-the-sphinx')">Dreams of the Sphinx</span></li>
+            <li>2  <span class="card" onclick="dC('golconda-inner-peace')">Golconda: Inner Peace</span></li>
+            <li>2  <span class="card" onclick="dC('heidelberg-castle-germany')">Heidelberg Castle, Germany</span></li>
+            <li>2  <span class="card" onclick="dC('information-highway')">Information Highway</span></li>
+            <li>2  <span class="card" onclick="dC('villein')">Villein</span></li>
+            <li>1  <span class="card" onclick="dC('elysian-fields')">Elysian Fields</span></li>
+            <li>1  <span class="card" onclick="dC('giants-blood')">Giant's Blood</span></li>
+            <li>1  <span class="card" onclick="dC('monastery-of-shadows')">Monastery of Shadows</span></li>
+            <li>1  <span class="card" onclick="dC('pentex-tm-subversion')">Pentex(TM) Subversion</span></li>
+            <li>1  <span class="card" onclick="dC('political-hunting-ground')">Political Hunting Ground</span></li>
+            <li>1  <span class="card" onclick="dC('vulnerability')">Vulnerability</span></li>
+            <li><h4>— Action (22) —</h4></li>
+            <li>9  <span class="card" onclick="dC('baltimore-purge')">Baltimore Purge</span></li>
+            <li>6  <span class="card" onclick="dC('mind-rape')">Mind Rape</span></li>
+            <li>5  <span class="card" onclick="dC('graverobbing')">Graverobbing</span></li>
+            <li>2  <span class="card" onclick="dC('renewed-vigor')">Renewed Vigor</span></li>
+            <li><h4>— Modifier (31) —</h4></li>
+            <li>16 <span class="card" onclick="dC('freak-drive')">Freak Drive</span></li>
+            <li>3  <span class="card" onclick="dC('conditioning')">Conditioning</span></li>
+            <li>2  <span class="card" onclick="dC('blanket-of-night')">Blanket of Night</span></li>
+            <li>2  <span class="card" onclick="dC('enkil-cog')">Enkil Cog</span></li>
+            <li>2  <span class="card" onclick="dC('seduction')">Seduction</span></li>
+            <li>2  <span class="card" onclick="dC('shadow-play')">Shadow Play</span></li>
+            <li>2  <span class="card" onclick="dC('shroud-of-absence')">Shroud of Absence</span></li>
+            <li>2  <span class="card" onclick="dC('shroud-of-night')">Shroud of Night</span></li>
+            <li><h4>— Combat (2) —</h4></li>
+            <li>2  <span class="card" onclick="dC('shadow-body')">Shadow Body</span></li>
+            <li><h4>— Reaction (8) —</h4></li>
+            <li>4  <span class="card" onclick="dC('obedience')">Obedience</span></li>
+            <li>2  <span class="card" onclick="dC('deflection')">Deflection</span></li>
+            <li>2  <span class="card" onclick="dC('eluding-the-arms-of-morpheus')">Eluding the Arms of Morpheus</span></li>
+            <li><h4>— Ally (3) —</h4></li>
+            <li>1  <span class="card" onclick="dC('carlton-van-wyk')">Carlton Van Wyk</span></li>
+            <li>1  <span class="card" onclick="dC('gregory-winter')">Gregory Winter</span></li>
+            <li>1  <span class="card" onclick="dC('mylan-horseed')">Mylan Horseed</span></li>
+        </ul>
+    </div>
+    <h2>Highlights</h2>
+    <p>
+        This is a <em>special</em> deck using <span class="card" onclick="dC('montano')">Montano</span>
+        to play <span class="card" onclick="dC('baltimore-purge')">Baltimore Purge</span>, then
+        <span class="card" onclick="dC('freak-drive')">Freak Drive</span> to get out of torpor and play
+        <span class="card" onclick="dC('graverobbing')">Graverobbing</span> to permanently steal opponents vampires.
+        <span class="card" onclick="dC('mind-rape')">Mind Rape</span> is added to the mix for additional temporary
+        vampire theft.
+        <span class="card" onclick="dC('heidelberg-castle-germany')">Heidelberg Castle, Germany</span> is used to
+        steal the blood of stolen vampires and give it to <span class="card" onclick="dC('montano')">Montano</span>,
+        fueling the costly combination.
+    </p>
+    <p>
+        It is a dreadful combination and, therefore, quickly attracts the table attention.
+        This archetype is seldom played and has not yet won any major tournament.
+    </p>
+    <p>
+        The deck packs quite a lot of <i>$</i> stealth considering
+        <span class="card" onclick="dC('montano')">Montano</span> already has an included stealth bonus.
+    </p>
+    <p>
+        The entire combat module is defensive, using
+        <span class="card" onclick="dC('shadow-body')">Shadow Body</span> and
+        <span class="card" onclick="dC('obedience')">Obedience</span>.
+    </p>
+    <h2>Tips & Tricks</h2>
+    <p>
+        <span class="card" onclick="dC('zillahs-valley')">Zillah's Valley</span>,
+        <span class="card" onclick="dC('dreams-of-the-sphinx')">Dreams of the Sphinx</span> and
+        <span class="card" onclick="dC('information-highway')">Information Highway</span> are used to get
+        <span class="card" onclick="dC('montano')">Montano</span> out faster.
+    </p>
+    <p>
+        <span class="card" onclick="dC('enkil-cog')">Enkil Cog</span> lets
+        <span class="card" onclick="dC('montano')">Montano</span> bleed for 3, and act during the other players turns.
+        A <span class="card" onclick="dC('baltimore-purge')">Baltimore Purge</span> during the predator's turn is
+        easier to accomplish.
+    </p>
+    <h2>Variants</h2>
+    <p>
+        There are only minor variations to this archetype.
+        <span class="card" onclick="dC('govern-the-unaligned')">Govern the Unaligned</span> and
+        <span class="card" onclick="dC('perfectionist')">Perfectionist</span> are often included.
+    </p>
+    <div class="clear"></div>
+    <div class="warning">
+        <h3 class="warning-title">Errata</h3>
+        <p>
+            <span class="card" onclick="dC('pentex-tm-subversion')">Pentex™ Subversion</span>
+            has been modified by an <em>errata</em> in September 2019.
+            It does not prevent a vampire to act anymore, so it is less powerful
+            and should maybe be removed from the deck.
+        </p>
+    </div>
+</article>
+</body>
+<footer>
+    <nav role="navigation">
+        <a class="prev" href="weenie-dom.html">Weenie DOM</a>
+        <a href="index.html">Archetypes</a>
+        <a class="next" href="cybelotron.html">Cybelotron</a>
+    </nav>
+</footer>
+</html>
