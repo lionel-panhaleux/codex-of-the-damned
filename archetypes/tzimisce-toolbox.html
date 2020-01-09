@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" type="text/css" href="../base.css"/>
+    <script>
+        function dC(name) {
+            document.getElementById("card-image").src = '../card-images/'.concat(name, '.jpg');
+            document.getElementById("card-modal").style.display = "block";
+        }
+    </script>
+    <title>Codex of the Damned</title>
+</head>
+<body>
+<header role="banner">
+    <div class="site-logo">
+    <a href="../index.html" class="site-logo">
+        <img width="150" height="150" src="../icons/vtes.svg" alt="Codex of the Damned">
+        <h1>Codex of the Damned</h1>
+    </a>
+    </div>
+    <nav role="navigation">
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../strategy/index.html">Strategy</a></li>
+            <li><a href="../archetypes/index.html">Archetypes</a></li>
+            <li><a href="../twda-analysis/index.html">TWDA analysis</a></li>
+            <li><a href="../deck-guides/index.html">Deck Guides</a></li>
+        </ul>
+    </nav>
+</header>
+<div id="card-modal" class="modal" onclick="this.style.display='none'">
+        <img class="modal-content" id="card-image">
+</div>
+<article>
+    <h1><img src="../icons/clan-tzimisce.svg"> Tzimisce Toolbox</h1>
+    <div class="decklist">
+        <h2><a href="http://www.vekn.fr/decks/twd.htm#2014nacday2co">Deck Example</a></h2>
+        <p>
+            Deck by Matt Hirsch<br/>
+            NAC 2014 Day 2<br/>
+            Origins Game Fair, Columbus, Ohio<br/>
+            June 14th 2014<br/>
+            25 players, 38 players on Day 1<br/>
+        </p>
+        <h3>Crypt (12 cards)</h3>
+        <ul>
+            <li>3  <span class="card" onclick="dC('lambach')">Lambach</span></li>
+            <li>2  <span class="card" onclick="dC('velya-the-flayer')">Velya, The Flayer</span></li>
+            <li>2  <span class="card" onclick="dC('sascha-vykos-the-angel-of-caine')">Sascha Vykos, The Angel of Caine</span></li>
+            <li>1  <span class="card" onclick="dC('john-paleologus')">John Paleologus</span></li>
+            <li>1  <span class="card" onclick="dC('stravinsky')">Stravinsky</span></li>
+            <li>1  <span class="card" onclick="dC('meshenka')">Meshenka</span></li>
+            <li>1  <span class="card" onclick="dC('elizabeth-westcott')">Elizabeth Westcott</span></li>
+            <li>1  <span class="card" onclick="dC('lolita-houston')">Lolita Houston</span></li>
+        </ul>
+        <h3>Library (90 cards)</h3>
+        <ul>
+            <li><h4>— Master (19) —</h4></li>
+            <li>4  <span class="card" onclick="dC('blood-doll')">Blood Doll</span></li>
+            <li>4  <span class="card" onclick="dC('villein')">Villein</span></li>
+            <li>1  <span class="card" onclick="dC('the-admonitions')">The Admonitions</span></li>
+            <li>1  <span class="card" onclick="dC('black-forest-base')">Black Forest Base</span></li>
+            <li>1  <span class="card" onclick="dC('fear-of-mekhet')">Fear of Mekhet</span></li>
+            <li>1  <span class="card" onclick="dC('giants-blood')">Giant's Blood</span></li>
+            <li>1  <span class="card" onclick="dC('golconda-inner-peace')">Golconda: Inner Peace</span></li>
+            <li>1  <span class="card" onclick="dC('information-highway')">Information Highway</span></li>
+            <li>1  <span class="card" onclick="dC('library-hunting-ground')">Library Hunting Ground</span></li>
+            <li>1  <span class="card" onclick="dC('powerbase-madrid')">Powerbase: Madrid</span></li>
+            <li>1  <span class="card" onclick="dC('storage-annex')">Storage Annex</span></li>
+            <li>1  <span class="card" onclick="dC('wash')">Wash</span></li>
+            <li>1  <span class="card" onclick="dC('wider-view')">Wider View</span></li>
+            <li><h4>— Action (5) —</h4></li>
+            <li>2  <span class="card" onclick="dC('under-siege')">Under Siege</span></li>
+            <li>1  <span class="card" onclick="dC('abbot')">Abbot</span></li>
+            <li>1  <span class="card" onclick="dC('fiendish-tongue')">Fiendish Tongue</span></li>
+            <li>1  <span class="card" onclick="dC('shepherds-innocence')">Shepherd's Innocence</span></li>
+            <li><h4>— Political (11) —</h4></li>
+            <li>5  <span class="card" onclick="dC('kine-resources-contested')">Kine Resources Contested</span></li>
+            <li>1  <span class="card" onclick="dC('anarchist-uprising')">Anarchist Uprising</span></li>
+            <li>1  <span class="card" onclick="dC('ancient-influence')">Ancient Influence</span></li>
+            <li>1  <span class="card" onclick="dC('ancilla-empowerment')">Ancilla Empowerment</span></li>
+            <li>1  <span class="card" onclick="dC('disputed-territory')">Disputed Territory</span></li>
+            <li>1  <span class="card" onclick="dC('public-vilification')">Public Vilification</span></li>
+            <li>1  <span class="card" onclick="dC('reins-of-power')">Reins of Power</span></li>
+            <li><h4>— Modifier (14) —</h4></li>
+            <li>4  <span class="card" onclick="dC('changeling')">Changeling</span></li>
+            <li>3  <span class="card" onclick="dC('mind-of-the-wilds')">Mind of the Wilds</span></li>
+            <li>3  <span class="card" onclick="dC('telepathic-vote-counting')">Telepathic Vote Counting</span></li>
+            <li>1  <span class="card" onclick="dC('bribes')">Bribes</span></li>
+            <li>1  <span class="card" onclick="dC('conditioning')">Conditioning</span></li>
+            <li>1  <span class="card" onclick="dC('crocodiles-tongue')">Crocodile's Tongue</span></li>
+            <li>1  <span class="card" onclick="dC('private-audience')">Private Audience</span></li>
+            <li><h4>— Modifier/Combat (1) —</h4></li>
+            <li>1  <span class="card" onclick="dC('plasmic-form')">Plasmic Form</span></li>
+            <li><h4>— Combat (9) —</h4></li>
+            <li>5  <span class="card" onclick="dC('chiropteran-marauder')">Chiropteran Marauder</span></li>
+            <li>1  <span class="card" onclick="dC('boxed-in')">Boxed In</span></li>
+            <li>1  <span class="card" onclick="dC('breath-of-the-dragon')">Breath of the Dragon</span></li>
+            <li>1  <span class="card" onclick="dC('canine-horde')">Canine Horde</span></li>
+            <li>1  <span class="card" onclick="dC('starvation-of-marena')">Starvation of Marena</span></li>
+            <li><h4>— Reaction (27) —</h4></li>
+            <li>7  <span class="card" onclick="dC('telepathic-misdirection')">Telepathic Misdirection</span></li>
+            <li>3  <span class="card" onclick="dC('wake-with-evenings-freshness')">Wake with Evening's Freshness</span></li>
+            <li>2  <span class="card" onclick="dC('eagles-sight')">Eagle's Sight</span></li>
+            <li>2  <span class="card" onclick="dC('eyes-of-argus')">Eyes of Argus</span></li>
+            <li>2  <span class="card" onclick="dC('forced-awakening')">Forced Awakening</span></li>
+            <li>2  <span class="card" onclick="dC('on-the-qui-vive')">On the Qui Vive</span></li>
+            <li>2  <span class="card" onclick="dC('read-the-winds')">Read the Winds</span></li>
+            <li>2  <span class="card" onclick="dC('sense-the-savage-way')">Sense the Savage Way</span></li>
+            <li>1  <span class="card" onclick="dC('cardinal-sin-insubordination')">Cardinal Sin: Insubordination</span></li>
+            <li>1  <span class="card" onclick="dC('cats-guidance')">Cats' Guidance</span></li>
+            <li>1  <span class="card" onclick="dC('precognition')">Precognition</span></li>
+            <li>1  <span class="card" onclick="dC('spirits-touch')">Spirit's Touch</span></li>
+            <li>1  <span class="card" onclick="dC('telepathic-counter')">Telepathic Counter</span></li>
+            <li><h4>— Equipment (3) —</h4></li>
+            <li>1  <span class="card" onclick="dC('heart-of-nizchetus')">Heart of Nizchetus</span></li>
+            <li>1  <span class="card" onclick="dC('palatial-estate')">Palatial Estate</span></li>
+            <li>1  <span class="card" onclick="dC('weirding-stone')">Weirding Stone</span></li>
+            <li><h4>— Ally (1) —</h4></li>
+            <li>1  <span class="card" onclick="dC('mylan-horseed')">Mylan Horseed</span></li>
+        </ul>
+    </div>
+    <h2>Highlights</h2>
+    <p>
+        This is a <em>toolbox</em> deck using the Tzimisce and their <i>VAI</i> disciplines.
+    </p>
+    <p>
+        The combat module uses
+        <span class="card" onclick="dC('chiropteran-marauder')">Chiropteran Marauder</span> for aggravated damage,
+        Intercept is high with 27 reactions combining <i>A</i> and <i>I</i>.
+        Political actions are used to deliver pool damage with
+        <span class="card" onclick="dC('kine-resources-contested')">Kine Resources Contested</span>
+        while <span class="card" onclick="dC('changeling')">Changeling</span> and
+        <span class="card" onclick="dC('mind-of-the-wilds')">Mind of the Wilds</span> are used for stealth.
+    </p>
+    <p>
+        <span class="card" onclick="dC('blood-doll')">Blood Doll</span> and
+        <span class="card" onclick="dC('villein')">Villein</span> are used to get some pool back.
+    </p>
+    <p>
+        The deck is a bit slow but very difficult to predict for opponents.
+    </p>
+    <h2>Tips & Tricks</h2>
+    <p>
+        This version of the deck includes <em>a lot</em> of card in only 1 copy. This is a bit rare,
+        but it makes the deck even harder to figure out for opponents. One should be careful to keep the opponents
+        guessing as to what the deck can really do.
+    </p>
+    <p>
+        <span class="card" onclick="dC('under-siege')">Under Siege</span> is a powerful deterrent against the predator:
+        knowing wakes are available is far more troublesome than suspecting one has it in had.
+    </p>
+    <h2>Variants</h2>
+    <p>
+        There is a lot of place for variations, including in the crypt:
+        <span class="card" onclick="dC('sascha-vykos-the-angel-of-caine')">Sascha Vykos, The Angel of Caine</span>,
+        <span class="card" onclick="dC('stravinsky')">Stravinsky</span> or
+        <span class="card" onclick="dC('meshenka')">Meshenka</span> can get a star position with 3 copies.
+    </p>
+    <p>
+        A bit more permanent intercept is a common inclusion, with
+        <span class="card" onclick="dC('bowl-of-convergence')">Bowl of Convergence</span>,
+        <span class="card" onclick="dC('revenant')">Revenant</span> and
+        <span class="card" onclick="dC('mr-winthrop')">Mr. Winthrop</span>.
+        Permanent bleed enhancement is often included too, be it with
+        <span class="card" onclick="dC('pulse-of-the-canaille')">Pulse of the Canaille</span>,
+        <span class="card" onclick="dC('j-s-simmons-esq')">J. S. Simmons, Esq.</span> and
+        <span class="card" onclick="dC('tasha-morgan')">Tasha Morgan</span>, or
+        <span class="card" onclick="dC('living-manse')">Living Manse</span>.
+    </p>
+</article>
+</body>
+<footer>
+    <nav role="navigation">
+        <a class="prev" href="tzimisce-wall.html">Tzimisce Wall</a>
+        <a href="index.html">Archetypes</a>
+        <a class="next" href="war-ghouls.html">War Ghouls</a>
+    </nav>
+</footer>
+</html>

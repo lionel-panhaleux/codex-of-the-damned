@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" type="text/css" href="../base.css"/>
+    <script>
+        function dC(name) {
+            document.getElementById("card-image").src = '../card-images/'.concat(name, '.jpg');
+            document.getElementById("card-modal").style.display = "block";
+        }
+    </script>
+    <title>Codex of the Damned</title>
+</head>
+<body>
+<header role="banner">
+    <div class="site-logo">
+    <a href="../index.html" class="site-logo">
+        <img width="150" height="150" src="../icons/vtes.svg" alt="Codex of the Damned">
+        <h1>Codex of the Damned</h1>
+    </a>
+    </div>
+    <nav role="navigation">
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../strategy/index.html">Strategy</a></li>
+            <li><a href="../archetypes/index.html">Archetypes</a></li>
+            <li><a href="../twda-analysis/index.html">TWDA analysis</a></li>
+            <li><a href="../deck-guides/index.html">Deck Guides</a></li>
+        </ul>
+    </nav>
+</header>
+<div id="card-modal" class="modal" onclick="this.style.display='none'">
+        <img class="modal-content" id="card-image">
+</div>
+<article>
+    <h1><img src="../icons/clan-tzimisce.svg"> War Ghouls</h1>
+    <div class="decklist">
+        <h2><a href="http://www.vekn.fr/decks/twd.htm#2013ecqgs">Svenska Leken</a></h2>
+        <p>
+            Deck by Daniel Wiberg<br/>
+            Swedish ECQ<br/>
+            Gothenburg, Sweden<br/>
+            March 30th 2013<br/>
+            41 players<br/>
+        </p>
+        <h3>Crypt (12 cards)</h3>
+        <ul>
+            <li>3  <span class="card" onclick="dC('piotr-andreikov')">Piotr Andreikov</span></li>
+            <li>2  <span class="card" onclick="dC('horatio')">Horatio</span></li>
+            <li>1  <span class="card" onclick="dC('corine-marcon')">Corine Marcón</span></li>
+            <li>1  <span class="card" onclick="dC('devin-bisley')">Devin Bisley</span></li>
+            <li>1  <span class="card" onclick="dC('elizabeth-westcott')">Elizabeth Westcott</span></li>
+            <li>1  <span class="card" onclick="dC('isabel-de-leon')">Isabel de Leon</span></li>
+            <li>1  <span class="card" onclick="dC('martin-franckel')">Martin Franckel</span></li>
+            <li>1  <span class="card" onclick="dC('wendy-wade')">Wendy Wade</span></li>
+            <li>1  <span class="card" onclick="dC('zoe')">Zöe</span></li>
+        </ul>
+        <h3>Library (60 cards)</h3>
+        <ul>
+            <li><h4>— Master (10) —</h4></li>
+            <li>6  <span class="card" onclick="dC('jake-washington')">Jake Washington</span></li>
+            <li>2  <span class="card" onclick="dC('direct-intervention')">Direct Intervention</span></li>
+            <li>1  <span class="card" onclick="dC('pentex-tm-subversion')">Pentex™ Subversion</span></li>
+            <li>1  <span class="card" onclick="dC('powerbase-montreal')">Powerbase: Montreal</span></li>
+            <li><h4>— Combat (11) —</h4></li>
+            <li>4  <span class="card" onclick="dC('fake-out')">Fake Out</span></li>
+            <li>4  <span class="card" onclick="dC('trap')">Trap</span></li>
+            <li>3  <span class="card" onclick="dC('target-vitals')">Target Vitals</span></li>
+            <li><h4>— Reaction (19) —</h4></li>
+            <li>5  <span class="card" onclick="dC('telepathic-misdirection')">Telepathic Misdirection</span></li>
+            <li>4  <span class="card" onclick="dC('eyes-of-argus')">Eyes of Argus</span></li>
+            <li>4  <span class="card" onclick="dC('on-the-qui-vive')">On the Qui Vive</span></li>
+            <li>3  <span class="card" onclick="dC('my-enemys-enemy')">My Enemy's Enemy</span></li>
+            <li>2  <span class="card" onclick="dC('delaying-tactics')">Delaying Tactics</span></li>
+            <li>1  <span class="card" onclick="dC('enhanced-senses')">Enhanced Senses</span></li>
+            <li><h4>— Ally (12) —</h4></li>
+            <li>8  <span class="card" onclick="dC('war-ghoul')">War Ghoul</span></li>
+            <li>2  <span class="card" onclick="dC('ossian')">Ossian</span></li>
+            <li>2  <span class="card" onclick="dC('vagabond-mystic')">Vagabond Mystic</span></li>
+            <li><h4>— Retainer (4) —</h4></li>
+            <li>2  <span class="card" onclick="dC('mr-winthrop')">Mr. Winthrop</span></li>
+            <li>1  <span class="card" onclick="dC('j-s-simmons-esq')">J. S. Simmons, Esq</span>.</li>
+            <li>1  <span class="card" onclick="dC('tasha-morgan')">Tasha Morgan</span></li>
+            <li><h4>— Event (4) —</h4></li>
+            <li>3  <span class="card" onclick="dC('the-unmasking')">The Unmasking</span></li>
+            <li>1  <span class="card" onclick="dC('dragonbound')">Dragonbound</span></li>
+        </ul>
+    </div>
+    <h2>Highlights</h2>
+    <p>
+        This is a <em>rush</em> deck using multiple <span class="card" onclick="dC('war-ghoul')">War Ghoul</span>
+        to rush the opponents vampires.
+    </p>
+    <p>
+        The idea is to get a <span class="card" onclick="dC('war-ghoul')">War Ghoul</span> into play
+        as soon as possible, using a low capacity Tzimisce and
+        <span class="card" onclick="dC('jake-washington')">Jake Washington</span>.
+    </p>
+    <p>
+        The <span class="card" onclick="dC('war-ghoul')">War Ghoul</span> then proceeds to taking down every vampire
+        on the table, using
+        <span class="card" onclick="dC('fake-out')">Fake Out</span> and
+        <span class="card" onclick="dC('trap')">Trap</span> as needed.
+    </p>
+    <p>
+        Other allies and retainers can be recruited to be sacrificed to more
+        <span class="card" onclick="dC('war-ghoul')">War Ghoul</span>.
+        <span class="card" onclick="dC('ossian')">Ossian</span>, if he is drawn, may even be better than a
+        <span class="card" onclick="dC('war-ghoul')">War Ghoul</span>.
+    </p>
+    <p>
+        The deck uses low capacity vampires with <i>A</i> for bleed bounce and intercept.
+        Pool damage is done with <span class="card" onclick="dC('dragonbound')">Dragonbound</span>
+        and naked bleed once all the prey's vampires are down.
+    </p>
+    <h2>Tips & Tricks</h2>
+    <p>
+        This a fast and aggressive deck and will likely attract the table attention.
+        It should try to keep control of the whole table if possible.
+    </p>
+    <p>
+        Letting some vampires live on the predator side can be a good way to bounce their bleed and deliver additional
+        pool damage to the prey.
+    </p>
+    <h2>Variants</h2>
+    <p>
+        There is a variation using <span class="card" onclick="dC('maris-streck')">Maris streck</span> for
+        <span class="card" onclick="dC('parity-shift')">Parity Shift</span> and
+        <span class="card" onclick="dC('anathema')">Anathema</span>.
+        Check <a href="http://www.vekn.fr/decks/twd.htm#2012bnc">Emiliano Imeroni's deck</a> from 2012
+    </p>
+    <p>
+        There is also an anarch version using
+        <span class="card" onclick="dC('anarch-convert')">Anarch Convert</span> and
+        <span class="card" onclick="dC('piper')">Piper</span> in order to bring
+        <span class="card" onclick="dC('war-ghoul')">War Ghoul</span> into play unopposed.
+        Check <a href="http://www.vekn.fr/decks/twd.htm#2k8parisncq">Antonio Cobo Cuenca's deck</a> from 2008
+    </p>
+</article>
+</body>
+<footer>
+    <nav role="navigation">
+        <a class="prev" href="tzimisce-toolbox.html">Tzimisce Toolbox</a>
+        <a href="index.html">Archetypes</a>
+        <a class="next" href="anti-ventrue-grinder.html">Anti ventrue Grinder</a>
+    </nav>
+</footer>
+</html>

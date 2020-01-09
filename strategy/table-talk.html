@@ -3,9 +3,9 @@
 <head>
 	<meta charset="UTF-8"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <link rel='stylesheet' type='text/css' href='../base.css'/>
+    <link rel="stylesheet" type="text/css" href="../base.css"/>
     <script>
-        function displayCard(name) {
+        function dC(name) {
             document.getElementById("card-image").src = '../card-images/'.concat(name, '.jpg');
             document.getElementById("card-modal").style.display = "block";
         }
@@ -23,10 +23,10 @@
     <nav role="navigation">
         <ul>
             <li><a href="../index.html">Home</a></li>
-            <li><a href="../deck-guides/index.html">Deck Guides</a></li>
             <li><a href="../strategy/index.html">Strategy</a></li>
             <li><a href="../archetypes/index.html">Archetypes</a></li>
             <li><a href="../twda-analysis/index.html">TWDA analysis</a></li>
+            <li><a href="../deck-guides/index.html">Deck Guides</a></li>
         </ul>
     </nav>
 </header>
@@ -35,8 +35,10 @@
 </div>
 <article>
     <h1 id="bloat">Table talk</h1>
-    <em>« Table talk »</em> is an important part of the game.
-    The best players are ruthless negotiators and rely on their skill to topple the game in their favour.
+    <p>
+        <em>« Table talk »</em> is an important part of the game.
+        The best players are ruthless negotiators and rely on their skill to topple the game in their favour.
+    </p>
     <h2 id="negociation">Negociation</h2>
     <p>
         Making tactical deals with other players during the game is a necessity and the heart of table talk.
@@ -51,13 +53,13 @@
         <li>Getting another player's vampire out of torpor — as it is a directed action, it is harder to block.</li>
         <li>Letting an action get through — often on the ground that the result does not hinder the other player.</li>
         <li>
-            Aggreing to use <span class="card" onclick="displayCard('ashur-tablets')">Ashur Tablets</span>
+            Aggreing to use <span class="card" onclick="dC('ashur-tablets')">Ashur Tablets</span>
             alternatively when two players use them, thus avoiding to cripple one another.
         </li>
         <li>Asking for help to get a vampire down by getting into combat.</li>
         <li>Letting an ally borrow a card like
-            <span class="card" onclick="displayCard('the-rack')">The Rack</span> or
-            <span class="card" onclick="displayCard('powerbase-montreal')">Powerbase: Montreal</span>.
+            <span class="card" onclick="dC('the-rack')">The Rack</span> or
+            <span class="card" onclick="dC('powerbase-montreal')">Powerbase: Montreal</span>.
         </li>
     </ul>
     <p>
@@ -121,26 +123,24 @@
             <li>
                 The best but hardest way to be impenetrable is to be focused enough to always take a similar short
                 time pondering any reaction — even when none is possible. This is easier said than done,
-                but this is what the real <strong>Poker Face</strong> is about.
+                but this is what the real <strong>poker face</strong> is about.
             </li>
             <li>
-                An easier way to go is to <strong>act as if</strong> one had a wake or a bounce in hand when it's not
-                the case and as if one has none when in fact one has, from time to time.
-                Asking for two seconds to ponder during another player turn to hint at a counter like
-                <span class="card" onclick="displayCard('sudden-reversal')">Sudden Reversal</span> without having it in
-                hand is a cheap but effective move. Even better if the card is not in the deck at all: hinting
-                at a card one does not have only to draw it the next turn is quite clumsy.
+                An easier way is to <strong>act as if</strong> one had a useful reaction in hand when it's not
+                the case. Asking for two seconds to ponder during another player turn to hint at a counter like
+                <span class="card" onclick="dC('sudden-reversal')">Sudden Reversal</span> without having it in
+                hand is a cheap but effective move.
             </li>
             <li>
                 The easiest way to stay composed is to <strong>decide in advance</strong> what one's reaction will be.
                 For example, with a wake in hand, one can decide <em>beforehand</em> that one will wake only on a bleed
-                if it is anounced above one pool. This way, when an action is announced,
-                on can always react quite fast — the pondering time does not show as the decision is already made.
+                if it is anounced above one pool.
+                This way the pondering time does not show as the decision is already made.
             </li>
         </ul>
     </div>
     <p>
-        The last tool of manipulation one can wield easily is about <strong>standing</strong> around the table.
+        The last tool of manipulation one can wield easily is about one's <strong>standing</strong> around the table.
         A handful of casual comments can go a long way. One can always try to give the impression that:
     </p>
         <ul>
@@ -154,10 +154,10 @@
             </li>
         </ul>
     <p>
-        This <strong>posture</strong> is a default — but effective — one:
+        This <strong>posture</strong> is a default but effective one:
         <em>"My prey is doomed but my predator will handle me single-handedly"</em>.
         This should be adapted, however, depending on the archetypes around the table. The key is to chose a posture
-        early about the winning chances and threat level of the other decks — and keep to it — in order to
+        early depending on the winning chances and threat level of the other decks — and keep to it in order to
         try to tip the balance a little bit into one's favour.
     </p>
     <h2>Table strategies</h2>

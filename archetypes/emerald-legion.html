@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" type="text/css" href="../base.css"/>
+    <script>
+        function dC(name) {
+            document.getElementById("card-image").src = '../card-images/'.concat(name, '.jpg');
+            document.getElementById("card-modal").style.display = "block";
+        }
+    </script>
+    <title>Codex of the Damned</title>
+</head>
+<body>
+<header role="banner">
+    <div class="site-logo">
+    <a href="../index.html" class="site-logo">
+        <img width="150" height="150" src="../icons/vtes.svg" alt="Codex of the Damned">
+        <h1>Codex of the Damned</h1>
+    </a>
+    </div>
+    <nav role="navigation">
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../strategy/index.html">Strategy</a></li>
+            <li><a href="../archetypes/index.html">Archetypes</a></li>
+            <li><a href="../twda-analysis/index.html">TWDA analysis</a></li>
+            <li><a href="../deck-guides/index.html">Deck Guides</a></li>
+        </ul>
+    </nav>
+</header>
+<div id="card-modal" class="modal" onclick="this.style.display='none'">
+        <img class="modal-content" id="card-image">
+</div>
+<article>
+    <h1><img src="../icons/clan-harbingers.svg"> Emerald Legion</h1>
+    <div class="decklist">
+        <h2><a href="http://www.vekn.fr/decks/twd.htm#2019gpilp">Deck example</a></h2>
+        <p>
+            Deck by Mariano Carbonero Roman<br/>
+            Grand Prix Iberia<br/>
+            Lisboa, Portugal<br/>
+            April 27th 2019<br/>
+            36 players<br/>
+        </p>
+        <h3>Crypt (12 cards)</h3>
+        <ul>
+            <li>5  <span class="card" onclick="dC('erlik')">Erlik</span></li>
+            <li>3  <span class="card" onclick="dC('erebus')">Erebus</span></li>
+            <li>2  <span class="card" onclick="dC('zygodat')">Zygodat</span></li>
+            <li>1  <span class="card" onclick="dC('babalawo-alafin')">Babalawo Alafin</span></li>
+            <li>1  <span class="card" onclick="dC('nicomedes')">Nicomedes</span></li>
+        </ul>
+        <h3>Library (88 cards)</h3>
+        <ul>
+            <li><h4>— Master (21) —</h4></li>
+            <li>4  <span class="card" onclick="dC('liquidation')">Liquidation</span></li>
+            <li>3  <span class="card" onclick="dC('villein')">Villein</span></li>
+            <li>2  <span class="card" onclick="dC('dreams-of-the-sphinx')">Dreams of the Sphinx</span></li>
+            <li>2  <span class="card" onclick="dC('vessel')">Vessel</span></li>
+            <li>1  <span class="card" onclick="dC('blood-doll')">Blood Doll</span></li>
+            <li>1  <span class="card" onclick="dC('fear-of-mekhet')">Fear of Mekhet</span></li>
+            <li>1  <span class="card" onclick="dC('giants-blood')">Giant's Blood</span></li>
+            <li>1  <span class="card" onclick="dC('heidelberg-castle-germany')">Heidelberg Castle, Germany</span></li>
+            <li>1  <span class="card" onclick="dC('pentex-tm-subversion')">Pentex™ Subversion</span></li>
+            <li>1  <span class="card" onclick="dC('perfectionist')">Perfectionist</span></li>
+            <li>1  <span class="card" onclick="dC('powerbase-montreal')">Powerbase: Montreal</span></li>
+            <li>1  <span class="card" onclick="dC('the-rack')">The Rack</span></li>
+            <li>1  <span class="card" onclick="dC('smiling-jack-the-anarch')">Smiling Jack, The Anarch</span></li>
+            <li>1  <span class="card" onclick="dC('sudden-reversal')">Sudden Reversal</span></li>
+            <li><h4>— Action (1) —</h4></li>
+            <li>1  <span class="card" onclick="dC('aranthebes-the-immortal')">Aranthebes, The Immortal</span></li>
+            <li><h4>— Modifier (12) —</h4></li>
+            <li>4  <span class="card" onclick="dC('freak-drive')">Freak Drive</span></li>
+            <li>2  <span class="card" onclick="dC('call-of-the-hungry-dead')">Call of the Hungry Dead</span></li>
+            <li>2  <span class="card" onclick="dC('forced-march')">Forced March</span></li>
+            <li>2  <span class="card" onclick="dC('inevitability-of-the-void')">Inevitability of the Void</span></li>
+            <li>2  <span class="card" onclick="dC('shroud-mastery')">Shroud Mastery</span></li>
+            <li><h4>— Modifier/Reaction (2) —</h4></li>
+            <li>2  <span class="card" onclick="dC('spectral-divination')">Spectral Divination</span></li>
+            <li><h4>— Modifier/Combat (4) —</h4></li>
+            <li>4  <span class="card" onclick="dC('breath-of-thanatos')">Breath of Thanatos</span></li>
+            <li><h4>— Combat (8) —</h4></li>
+            <li>2  <span class="card" onclick="dC('blight')">Blight</span></li>
+            <li>2  <span class="card" onclick="dC('fake-out')">Fake Out</span></li>
+            <li>2  <span class="card" onclick="dC('spiritual-intervention')">Spiritual Intervention</span></li>
+            <li>2  <span class="card" onclick="dC('target-vitals')">Target Vitals</span></li>
+            <li><h4>— Reaction (17) —</h4></li>
+            <li>5  <span class="card" onclick="dC('eyes-of-argus')">Eyes of Argus</span></li>
+            <li>5  <span class="card" onclick="dC('telepathic-misdirection')">Telepathic Misdirection</span></li>
+            <li>2  <span class="card" onclick="dC('delaying-tactics')">Delaying Tactics</span></li>
+            <li>2  <span class="card" onclick="dC('funeral-wake')">Funeral Wake</span></li>
+            <li>2  <span class="card" onclick="dC('on-the-qui-vive')">On the Qui Vive</span></li>
+            <li>1  <span class="card" onclick="dC('my-enemys-enemy')">My Enemy's Enemy</span></li>
+            <li><h4>— Equipment (5) —</h4></li>
+            <li>1  <span class="card" onclick="dC('bowl-of-convergence')">Bowl of Convergence</span></li>
+            <li>1  <span class="card" onclick="dC('erebus-mask')">Erebus Mask</span></li>
+            <li>1  <span class="card" onclick="dC('heart-of-nizchetus')">Heart of Nizchetus</span></li>
+            <li>1  <span class="card" onclick="dC('sniper-rifle')">Sniper Rifle</span></li>
+            <li>1  <span class="card" onclick="dC('unlicensed-taxicab')">Unlicensed Taxicab</span></li>
+            <li><h4>— Ally (10) —</h4></li>
+            <li>8  <span class="card" onclick="dC('emerald-legionnaire')">Emerald Legionnaire</span></li>
+            <li>1  <span class="card" onclick="dC('carlton-van-wyk')">Carlton Van Wyk</span></li>
+            <li>1  <span class="card" onclick="dC('ossian')">Ossian</span></li>
+            <li><h4>— Retainer (3) —</h4></li>
+            <li>3  <span class="card" onclick="dC('vengeful-spirit')">Vengeful Spirit</span></li>
+            <li><h4>— Event (5) —</h4></li>
+            <li>3  <span class="card" onclick="dC('the-unmasking')">The Unmasking</span></li>
+            <li>2  <span class="card" onclick="dC('fbi-special-affairs-division')">FBI Special Affairs Division</span></li>
+        </ul>
+    </div>
+    <h2>Highlights</h2>
+    <p>
+        This is a <em>allies toolbox</em> deck using
+        <span class="card" onclick="dC('emerald-legionnaire')">Emerald Legionnaire</span>.
+    </p>
+    <p>
+        This version uses <span class="card" onclick="dC('erlik')">Erlik</span> as a star: his ability
+        let the player get another Harbinger out fast and cheap. The fact that he has <i>C</i> let him use
+        the excellent <span class="card" onclick="dC('forced-march')">Forced March</span> for stealth and unlock.
+    </p>
+    <p>
+        The idea is to defend and get an
+        <span class="card" onclick="dC('emerald-legionnaire')">Emerald Legionnaire</span> out,
+        then bring the others back from the ash heap if they are there.
+        Once <span class="card" onclick="dC('the-unmasking')">The Unmasking</span> and
+        <span class="card" onclick="dC('fbi-special-affairs-division')">FBI Special Affairs Division</span>
+        hit the table, they're a solid defence.
+    </p>
+    <p>
+        <span class="card" onclick="dC('liquidation')">Liquidation</span> is used to bloat and can put some
+        <span class="card" onclick="dC('emerald-legionnaire')">Emerald Legionnaire</span> but also the cards
+        to power their ability in the ash heap.
+    </p>
+    <p>
+        As the game progresses,
+        <span class="card" onclick="dC('emerald-legionnaire')">Emerald Legionnaire</span> are used to bleed.
+        <span class="card" onclick="dC('vengeful-spirit')">Vengeful Spirit</span> helps to boost
+        the Harbinger bleeds, too.
+        <span class="card" onclick="dC('inevitability-of-the-void')">Inevitability of the Void</span> is used to lunge.
+    </p>
+    <h2>Tips & Tricks</h2>
+    <p>
+        To be able to use their ability,
+        an <span class="card" onclick="dC('emerald-legionnaire')">Emerald Legionnaire</span> must be put into play
+        by recruiting it: the ones in the ash heap can not have their effect used — their card text is ignored as long
+        as they are in the ash heap. In order to manage to get at least one into play, the decks backs quite a bit of
+        stealth, and uses recruitment specialized modifiers like
+        <span class="card" onclick="dC('shroud-mastery')">Shroud Mastery</span> and
+        <span class="card" onclick="dC('breath-of-thanatos')">Breath of Thanatos</span>.
+    </p>
+    <p>
+        One of the key feature of this deck is the versatility of its cards:
+        <span class="card" onclick="dC('spectral-divination')">Spectral Divination</span> can be used for stealth or
+        intercept,
+        <span class="card" onclick="dC('breath-of-thanatos')">Breath of Thanatos</span> for stealth or a deadly strike,
+        and so on.
+    </p>
+    <p>
+        The deck has quite a bit of intercept, but nothing close to what a real wall construct can display.
+        He will be happy enough to redirect the bleed with <i>A</i> bounces if given the chance.
+    </p>
+    <h2>Variants</h2>
+    <p>
+        A variant uses <span class="card" onclick="dC('the-capuchin')">The Capuchin</span> as star,
+        <a href="http://www.vekn.fr/decks/twd.htm#2019gbzzc">Richard Stefan Utner's deck</a> from 2019
+        is a good example of it.
+    <div class="clear"></div>
+    <div class="warning">
+        <h3 class="warning-title">Errata</h3>
+        <p>
+            <span class="card" onclick="dC('pentex-tm-subversion')">Pentex™ Subversion</span>
+            has been modified by an <em>errata</em> in September 2019.
+            It does not prevent a vampire to act anymore, so it is less powerful
+            and should probably not be included in the deck anymore.
+        </p>
+    </div>
+</article>
+</body>
+<footer>
+    <nav role="navigation">
+        <a class="prev" href="guruhi-rush.html">Guruhi Rush</a>
+        <a href="index.html">Archetypes</a>
+        <a class="next" href="hunters.html">Hunters</a>
+    </nav>
+</footer>
+</html>

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" type="text/css" href="../base.css"/>
+    <script>
+        function dC(name) {
+            document.getElementById("card-image").src = '../card-images/'.concat(name, '.jpg');
+            document.getElementById("card-modal").style.display = "block";
+        }
+    </script>
+    <title>Codex of the Damned</title>
+</head>
+<body>
+<header role="banner">
+    <div class="site-logo">
+    <a href="../index.html" class="site-logo">
+        <img width="150" height="150" src="../icons/vtes.svg" alt="Codex of the Damned">
+        <h1>Codex of the Damned</h1>
+    </a>
+    </div>
+    <nav role="navigation">
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../strategy/index.html">Strategy</a></li>
+            <li><a href="../archetypes/index.html">Archetypes</a></li>
+            <li><a href="../twda-analysis/index.html">TWDA analysis</a></li>
+            <li><a href="../deck-guides/index.html">Deck Guides</a></li>
+        </ul>
+    </nav>
+</header>
+<div id="card-modal" class="modal" onclick="this.style.display='none'">
+        <img class="modal-content" id="card-image">
+</div>
+<article>
+    <h1><img src="../icons/clan-tremere-anti.svg"> Nephandii</h1>
+    <div class="decklist">
+        <h2><a href="http://www.vekn.fr/decks/twd.htm#2013ccpdms">Nephandus Swarm</a></h2>
+        <p>
+            Deck by Alejandro Pérez Rosselló<br/>
+            Camarilla Conclave<br/>
+            Palma de Mallorca, Spain<br/>
+            September 1st 2013<br/>
+            32 players<br/>
+        </p>
+        <h3>Crypt (12 cards)</h3>
+        <ul>
+            <li>5  <span class="card" onclick="dC('antonio-d-erlette')">Antonio d'Erlette</span></li>
+            <li>4  <span class="card" onclick="dC('tupdog')">Tupdog</span></li>
+            <li>2  <span class="card" onclick="dC('keith-moody')">Keith Moody</span></li>
+            <li>1  <span class="card" onclick="dC('saiz')">Saiz</span></li>
+        </ul>
+        <h3>Library (90 cards)</h3>
+        <ul>
+            <li><h4>— Master (39) —</h4></li>
+            <li>9  <span class="card" onclick="dC('ashur-tablets')">Ashur Tablets</span></li>
+            <li>6  <span class="card" onclick="dC('liquidation')">Liquidation</span></li>
+            <li>6  <span class="card" onclick="dC('the-parthenon')">The Parthenon</span></li>
+            <li>5  <span class="card" onclick="dC('haven-uncovered')">Haven Uncovered</span></li>
+            <li>2  <span class="card" onclick="dC('direct-intervention')">Direct Intervention</span></li>
+            <li>2  <span class="card" onclick="dC('dreams-of-the-sphinx')">Dreams of the Sphinx</span></li>
+            <li>2  <span class="card" onclick="dC('frontal-assault')">Frontal Assault</span></li>
+            <li>1  <span class="card" onclick="dC('archon-investigation')">Archon Investigation</span></li>
+            <li>1  <span class="card" onclick="dC('fame')">Fame</span></li>
+            <li>1  <span class="card" onclick="dC('fortschritt-library')">Fortschritt Library</span></li>
+            <li>1  <span class="card" onclick="dC('jake-washington')">Jake Washington</span></li>
+            <li>1  <span class="card" onclick="dC('pentex-tm-subversion')">Pentex™ Subversion</span></li>
+            <li>1  <span class="card" onclick="dC('secure-haven')">Secure Haven</span></li>
+            <li>1  <span class="card" onclick="dC('tension-in-the-ranks')">Tension in the Ranks</span></li>
+            <li><h4>— Action (1) —</h4></li>
+            <li>1  <span class="card" onclick="dC('aranthebes-the-immortal')">Aranthebes, The Immortal</span></li>
+            <li><h4>— Combat (20) —</h4></li>
+            <li>6  <span class="card" onclick="dC('molotov-cocktail')">Molotov Cocktail</span></li>
+            <li>6  <span class="card" onclick="dC('target-vitals')">Target Vitals</span></li>
+            <li>4  <span class="card" onclick="dC('dead-end-alley')">Dead-End Alley</span></li>
+            <li>4  <span class="card" onclick="dC('trap')">Trap</span></li>
+            <li><h4>— Reaction (12) —</h4></li>
+            <li>7  <span class="card" onclick="dC('deflection')">Deflection</span></li>
+            <li>3  <span class="card" onclick="dC('on-the-qui-vive')">On the Qui Vive</span></li>
+            <li>2  <span class="card" onclick="dC('delaying-tactics')">Delaying Tactics</span></li>
+            <li><h4>— Ally (11) —</h4></li>
+            <li>9  <span class="card" onclick="dC('nephandus')">Nephandus</span></li>
+            <li>1  <span class="card" onclick="dC('carlton-van-wyk')">Carlton Van Wyk</span></li>
+            <li>1  <span class="card" onclick="dC('ossian')">Ossian</span></li>
+            <li><h4>— Event (7) —</h4></li>
+            <li>2  <span class="card" onclick="dC('anthelios-the-red-star')">Anthelios, The Red Star</span></li>
+            <li>2  <span class="card" onclick="dC('the-unmasking')">The Unmasking</span></li>
+            <li>1  <span class="card" onclick="dC('dragonbound')">Dragonbound</span></li>
+            <li>1  <span class="card" onclick="dC('fbi-special-affairs-division')">FBI Special Affairs Division</span></li>
+            <li>1  <span class="card" onclick="dC('the-slow-withering')">The Slow Withering</span></li>
+        </ul>
+    </div>
+    <h2>Highlights</h2>
+    <p>
+        This is an <em>allies toolbox</em> deck focused on the
+        <span class="card" onclick="dC('nephandus')">Nephandus</span> ally.
+        <span class="card" onclick="dC('antonio-d-erlette')">Antonio d'Erlette</span> is the star of the deck and
+        is used to get some <span class="card" onclick="dC('nephandus')">Nephandus</span> out without even
+        taking an action someone could block.
+    </p>
+    <p>
+        The combat module is designed to be playable by the
+        <span class="card" onclick="dC('nephandus')">Nephandus</span> themselves, using presses,
+        <span class="card" onclick="dC('molotov-cocktail')">Molotov Cocktail</span> and
+        <span class="card" onclick="dC('target-vitals')">Target Vitals</span>.
+    </p>
+    <p>
+        The Master module uses <span class="card" onclick="dC('the-parthenon')">The Parthenon</span> to play
+        two MAster cards per turn, allowing for the efficient use of
+        <span class="card" onclick="dC('ashur-tablets')">Ashur Tablets</span> and
+        <span class="card" onclick="dC('liquidation')">Liquidation</span> to bloat and adapt the deck to the table
+        context as the game progresses.
+    </p>
+    <p>
+        <span class="card" onclick="dC('haven-uncovered')">Haven Uncovered</span> and
+        <span class="card" onclick="dC('frontal-assault')">Frontal Assault</span> are used to let the
+        <span class="card" onclick="dC('nephandus')">Nephandus</span> rush the opponents minions, while
+        <span class="card" onclick="dC('the-unmasking')">The Unmasking</span> improves their interception capabilities.
+    </p>
+    <p>
+        <span class="card" onclick="dC('fame')">Fame</span>,
+        <span class="card" onclick="dC('tension-in-the-ranks')">Tension in the Ranks</span> and
+        <span class="card" onclick="dC('dragonbound')">Dragonbound</span> are used to improve pool damage.
+    </p>
+    <p>
+        Some <span class="card" onclick="dC('tupdog')">Tupdog</span> are used to rush even more, although their
+        disicplines are not used at all.
+    </p>
+    <p>
+        <span class="card" onclick="dC('antonio-d-erlette')">Antonio d'Erlette</span> or a sidekick use
+        <span class="card" onclick="dC('deflection')">Deflection</span> and
+        <span class="card" onclick="dC('delaying-tactics')">Delaying Tactics</span> for defence.
+    </p>
+    <h2>Tips & Tricks</h2>
+    <p>
+        <span class="card" onclick="dC('secure-haven')">Secure Haven</span> can be used to protect
+        <span class="card" onclick="dC('antonio-d-erlette')">Antonio d'Erlette</span>, but also to contest another one
+        if need be.
+    </p>
+    <p>
+        Disciplines are not much used in the deck,
+        so <span class="card" onclick="dC('the-slow-withering')">The Slow Withering</span> is a nice inclusion
+        to cripple opponents decks, plus it is another Gehenna event
+        <span class="card" onclick="dC('fortschritt-library')">Fortschritt Library</span> can fetch.
+    </p>
+    <p>
+        <span class="card" onclick="dC('direct-intervention')">Direct Intervention</span> should be kept in hand
+        to counter anti-ally actions like <span class="card" onclick="dC('entrancement')">Entrancement</span>.
+    </p>
+    <h2>Variants</h2>
+    <p>
+        A heavy Master module is with
+        <span class="card" onclick="dC('the-parthenon')">The Parthenon</span>,
+        <span class="card" onclick="dC('ashur-tablets')">Ashur Tablets</span> and
+        <span class="card" onclick="dC('liquidation')">Liquidation</span>
+        is common, but ditching it to use
+        <span class="card" onclick="dC('magic-of-the-smith')">Magic of the Smith</span> and
+        <span class="card" onclick="dC('empowering-the-puppet-king')">Empowering the Puppet King</span>
+        instead also makes sense, like in
+        <a href="http://www.vekn.fr/decks/twd.htm#2k8originsfridayam">Hugh Angseesing's deck</a> from 2008.
+    </p>
+    <p>
+        Other variants complete the crypt in original ways,
+        to get more bloat with Assamite vampires like in
+        <a href="http://www.vekn.fr/decks/twd.htm#2k8wonwednesday">Greg Williams's deck</a> from 2008,
+        or some bloat but also more bleed with Toreador antitribu and
+        <span class="card" onclick="dC('palla-grande')">Palla Grande</span>, like in
+        <a href="http://www.vekn.fr/decks/twd.htm#2010badiafeb">Jordi Tomás's deck</a> from 2010.
+        <a href="http://www.vekn.fr/decks/twd.htm#2011lvdsbdvs">Jonathan Sanchez Rios's deck</a> from 2011
+        even includes the Imbued
+        <span class="card" onclick="dC('beatrice-oracle171-tremblay')">Béatrice "Oracle171" Tremblay</span>
+        for cheap additional bleed.
+    </p>
+    <p>
+        Although this is a different archetype,
+        <span class="card" onclick="dC('nephandus')">Nephandus</span> can also be used alongside
+        <span class="card" onclick="dC('tupdog')">Tupdog</span> in the  <a href="tupdog.html">Tupdog</a> archetype.
+    </p>
+    <div class="clear"></div>
+    <div class="warning">
+        <h3 class="warning-title">Errata</h3>
+        <p>
+            <span class="card" onclick="dC('pentex-tm-subversion')">Pentex™ Subversion</span>
+            has been modified by an <em>errata</em> in September 2019.
+            It does not prevent a vampire to act anymore, so it is less powerful
+            and should probably be removed of the deck.
+        </p>
+        <p>
+            <span class="card" onclick="dC('anthelios-the-red-star')">Anthelios, The Red Star</span>
+            has been banned in 2016. Its removal may have a bit of impact on the Master module and the number of
+            <span class="card" onclick="dC('ashur-tablets')">Ashur Tablets</span>.
+        </p>
+    </div>
+</article>
+</body>
+<footer>
+    <nav role="navigation">
+        <a class="prev" href="mistress.html">Mistress</a>
+        <a href="index.html">Archetypes</a>
+        <a class="next" href="goratrix-high-tower.html">Goratrix High Tower</a>
+    </nav>
+</footer>
+</html>

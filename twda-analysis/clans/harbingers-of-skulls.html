@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" type="text/css" href="../../base.css"/>
+    <script>
+        function dC(name) {
+            document.getElementById("card-image").src = '../../card-images/'.concat(name, '.jpg');
+            document.getElementById("card-modal").style.display = "block";
+        }
+    </script>
+    <title>Codex of the Damned</title>
+</head>
+<body>
+<header role="banner">
+    <div class="site-logo">
+    <a href="../../index.html" class="site-logo">
+        <img width="150" height="150" src="../../icons/vtes.svg" alt="Codex of the Damned">
+        <h1>Codex of the Damned</h1>
+    </a>
+    </div>
+    <nav role="navigation">
+        <ul>
+            <li><a href="../../index.html">Home</a></li>
+            <li><a href="../../strategy/index.html">Strategy</a></li>
+            <li><a href="../../archetypes/index.html">Archetypes</a></li>
+            <li><a href="../../twda-analysis/index.html">TWDA analysis</a></li>
+            <li><a href="../../deck-guides/index.html">Deck Guides</a></li>
+        </ul>
+    </nav>
+</header>
+<div id="card-modal" class="modal" onclick="this.style.display='none'">
+        <img class="modal-content modal-center" id="card-image">
+</div>
+<article class="article-columns">
+    <h1><img src="../../icons/clan-harbingers.svg"> Harbingers of Skulls</h1>
+    <p>
+        The Harbingers of Skulls have excellent vampires with outstanding abilities.
+        They grew increasingly popular since the release of the <em>Lost Kindred</em> expansion in 2018,
+        and the apparition of the excellent
+        <span class="card" onclick="dC('emerald-legionnaire')">Emerald Legionnaire</span>,
+        giving birth to the <a href="../../archetypes/emerald-legion.html">Emerald Legion</a> archetype.
+    </p>
+    <h2>Highlights</h2>
+    <div class="column">
+        <div class="column-image">
+            <img src="../../card-images/solomon-batanea.jpg">
+            <h4>Solomon Batanea (26 decks)</h4>
+        </div>
+        <p>
+            A cheap cost for the <i>AF</i> combination - he even gets included in Ventrue antitribu decks.
+        </p>
+    </div>
+    <div class="column">
+        <div class="column-image">
+            <img src="../../card-images/emerald-legionnaire.jpg">
+            <h4>Emerald Legionnaire (23 decks)</h4>
+        </div>
+        <p>
+            A good ally with an excellent ability that let him come back into play for free.
+            The <a href="../../archetypes/emerald-legion.html">Emerald Legion</a> archetype is built around him.
+        </p>
+    </div>
+    <div class="column">
+        <div class="column-image">
+            <img src="../../card-images/babalawo-alafin.jpg">
+            <h4>Babalawo Alafin (19 decks)</h4>
+        </div>
+        <p>
+            All clan disciplines <i>NAF</i> at superior for a decent 7 pool, his ability is useful for card rotation,
+            but also as a way to get more cards in the ash heap to pay for the
+            <span class="card" onclick="dC('emerald-legionnaire')">Emerald Legionnaire</span>.
+        </p>
+    </div>
+    <div class="column">
+        <div class="column-image">
+            <img src="../../card-images/nicomedes.jpg">
+            <h4>Nicomedes (18 decks)</h4>
+        </div>
+        <p>
+            A decent disciplines combination, but a great ability for cards rotation.
+        </p>
+    </div>
+    <div class="column">
+        <div class="column-image">
+            <img src="../../card-images/zygodat.jpg">
+            <h4>Zygodat (16 decks)</h4>
+        </div>
+        <p>
+            A good disciplines combination, and his ability has a nice synergy with
+            <span class="card" onclick="dC('trochomancy')">Trochomancy</span>.
+        </p>
+    </div>
+    <div class="column">
+        <div class="column-image">
+            <img src="../../card-images/erebus-mask.jpg">
+            <h4>Erebus Mask (15 decks)</h4>
+        </div>
+        <p>
+            Only 1 pool for permanent stealth, that is a bargain.
+        </p>
+    </div>
+    <div class="column">
+        <div class="column-image">
+            <img src="../../card-images/the-capuchin.jpg">
+            <h4>The Capuchin (14 decks)</h4>
+        </div>
+        <p>
+            Often seen in company with
+            <span class="card" onclick="dC('saulot-the-wanderer')">Saulot, The Wanderer</span>
+            as they both have <i>AFT</i>
+        </p>
+    </div>
+    <div class="column">
+        <div class="column-image">
+            <img src="../../card-images/erebus.jpg">
+            <h4>Erebus (14 decks)</h4>
+        </div>
+        <p>
+            All clan disciplines at superior <i>NAF</i>, combined with a nice ability that let him recruit
+            <span class="card" onclick="dC('emerald-legionnaire')">Emerald Legionnaire</span> at a discount.
+        </p>
+    </div>
+</article>
+</body>
+<footer>
+    <nav role="navigation">
+        <a class="prev" href="guruhi.html">Guruhi</a>
+        <a href="../index.html">TWDA Analysis</a>
+        <a class="next" href="imbued.html">Imbued</a>
+    </nav>
+</footer>
+</html>

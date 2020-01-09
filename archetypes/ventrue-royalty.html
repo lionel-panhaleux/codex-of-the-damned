@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" type="text/css" href="../base.css"/>
+    <script>
+        function dC(name) {
+            document.getElementById("card-image").src = '../card-images/'.concat(name, '.jpg');
+            document.getElementById("card-modal").style.display = "block";
+        }
+    </script>
+    <title>Codex of the Damned</title>
+</head>
+<body>
+<header role="banner">
+    <div class="site-logo">
+    <a href="../index.html" class="site-logo">
+        <img width="150" height="150" src="../icons/vtes.svg" alt="Codex of the Damned">
+        <h1>Codex of the Damned</h1>
+    </a>
+    </div>
+    <nav role="navigation">
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../strategy/index.html">Strategy</a></li>
+            <li><a href="../archetypes/index.html">Archetypes</a></li>
+            <li><a href="../twda-analysis/index.html">TWDA analysis</a></li>
+            <li><a href="../deck-guides/index.html">Deck Guides</a></li>
+        </ul>
+    </nav>
+</header>
+<div id="card-modal" class="modal" onclick="this.style.display='none'">
+        <img class="modal-content" id="card-image">
+</div>
+<article>
+    <h1><img src="../icons/clan-ventrue.svg"> Ventrue Royalty</h1>
+    <div class="decklist">
+        <h2><a href="http://www.vekn.fr/decks/twd.htm#2013ecd2ss">Gents with Sticks</a></h2>
+        <p>
+            Deck by Hugh Angseesing<br/>
+            EC 2013 Day 2<br/>
+            Stockholm, Sweden<br/>
+            October 5th 2013<br/>
+            40 players, 100 players on Day 1<br/>
+        </p>
+        <h3>Crypt (12 cards)</h3>
+        <ul>
+            <li>3  <span class="card" onclick="dC('lodin-olaf-holte')">Lodin (Olaf Holte</span>)</li>
+            <li>2  <span class="card" onclick="dC('graham-gottesman')">Graham Gottesman</span></li>
+            <li>1  <span class="card" onclick="dC('mustafa-the-heir')">Mustafa, The Heir</span></li>
+            <li>1  <span class="card" onclick="dC('victor-donaldson')">Victor Donaldson</span></li>
+            <li>1  <span class="card" onclick="dC('emily-carson')">Emily Carson</span></li>
+            <li>1  <span class="card" onclick="dC('jephta-hester')">Jephta Hester</span></li>
+            <li>1  <span class="card" onclick="dC('joao-bile')">João Bilé</span></li>
+            <li>1  <span class="card" onclick="dC('victor-pelletier')">Victor Pelletier</span></li>
+            <li>1  <span class="card" onclick="dC('ulrike-rothbart')">Ulrike Rothbart</span></li>
+        </ul>
+        <h3>Library (79 cards)</h3>
+        <ul>
+            <li><h4>— Master (13) —</h4></li>
+            <li>2  <span class="card" onclick="dC('blood-doll')">Blood Doll</span></li>
+            <li>2  <span class="card" onclick="dC('vessel')">Vessel</span></li>
+            <li>1  <span class="card" onclick="dC('anarch-troublemaker')">Anarch Troublemaker</span></li>
+            <li>1  <span class="card" onclick="dC('direct-intervention')">Direct Intervention</span></li>
+            <li>1  <span class="card" onclick="dC('dreams-of-the-sphinx')">Dreams of the Sphinx</span></li>
+            <li>1  <span class="card" onclick="dC('giants-blood')">Giant's Blood</span></li>
+            <li>1  <span class="card" onclick="dC('haven-uncovered')">Haven Uncovered</span></li>
+            <li>1  <span class="card" onclick="dC('pentex-tm-subversion')">Pentex™ Subversion</span></li>
+            <li>1  <span class="card" onclick="dC('sudden-reversal')">Sudden Reversal</span></li>
+            <li>1  <span class="card" onclick="dC('uptown-hunting-ground')">Uptown Hunting Ground</span></li>
+            <li>1  <span class="card" onclick="dC('ventrue-headquarters')">Ventrue Headquarters</span></li>
+            <li><h4>—  Action (13) —</h4></li>
+            <li>13 <span class="card" onclick="dC('govern-the-unaligned')">Govern the Unaligned</span></li>
+            <li><h4>—  Political (1) —</h4></li>
+            <li>1  <span class="card" onclick="dC('anarchist-uprising')">Anarchist Uprising</span></li>
+            <li><h4>—  Modifier (11) —</h4></li>
+            <li>4  <span class="card" onclick="dC('conditioning')">Conditioning</span></li>
+            <li>3  <span class="card" onclick="dC('daring-the-dawn')">Daring the Dawn</span></li>
+            <li>2  <span class="card" onclick="dC('bonding')">Bonding</span></li>
+            <li>2  <span class="card" onclick="dC('foreshadowing-destruction')">Foreshadowing Destruction</span></li>
+            <li><h4>—  Modifier/Reaction (1) —</h4></li>
+            <li>1  <span class="card" onclick="dC('murmur-of-the-false-will')">Murmur of the False Will</span></li>
+            <li><h4>—  Combat (15) —</h4></li>
+            <li>5  <span class="card" onclick="dC('indomitability')">Indomitability</span></li>
+            <li>5  <span class="card" onclick="dC('weighted-walking-stick')">Weighted Walking Stick</span></li>
+            <li>4  <span class="card" onclick="dC('hidden-strength')">Hidden Strength</span></li>
+            <li>1  <span class="card" onclick="dC('unflinching-persistence')">Unflinching Persistence</span></li>
+            <li><h4>—  Reaction (19) —</h4></li>
+            <li>8  <span class="card" onclick="dC('second-tradition-domain')">Second Tradition: Domain</span></li>
+            <li>7  <span class="card" onclick="dC('deflection')">Deflection</span></li>
+            <li>2  <span class="card" onclick="dC('on-the-qui-vive')">On the Qui Vive</span></li>
+            <li>1  <span class="card" onclick="dC('delaying-tactics')">Delaying Tactics</span></li>
+            <li>1  <span class="card" onclick="dC('redirection')">Redirection</span></li>
+            <li><h4>—  Equipment (3) —</h4></li>
+            <li>1  <span class="card" onclick="dC('44-magnum')">.44 Magnum</span></li>
+            <li>1  <span class="card" onclick="dC('heart-of-nizchetus')">Heart of Nizchetus</span></li>
+            <li>1  <span class="card" onclick="dC('ivory-bow')">Ivory Bow</span></li>
+            <li><h4>—  Ally (1) —</h4></li>
+            <li>1  <span class="card" onclick="dC('carlton-van-wyk')">Carlton Van Wyk</span></li>
+            <li><h4>—  Event (2) —</h4></li>
+            <li>1  <span class="card" onclick="dC('scourge-of-the-enochians')">Scourge of the Enochians</span></li>
+            <li>1  <span class="card" onclick="dC('the-uncoiling')">The Uncoiling</span></li>
+        </ul>
+    </div>
+    <h2>Highlights</h2>
+    <p>
+        This is a <em>toolbox</em> deck using Ventrue <em>Princes</em>.
+    </p>
+    <p>
+        The idea is to get the highest capacity vampire out,
+        then use <span class="card" onclick="dC('govern-the-unaligned')">Govern the Unaligned</span>
+        at superior <i>D</i> to get more vampires out fast and cheap, then later to bleed with the help of
+        some <i>d</i> modifiers.
+    </p>
+    <p>
+        The intercept module is built around the fact the many vampires in the crypt are <em>Princes</em> and uses
+        <span class="card" onclick="dC('second-tradition-domain')">Second Tradition: Domain</span> heavily.
+        <span class="card" onclick="dC('deflection')">Deflection</span> is used to bounce bleed in case
+        they get thtough anyway.
+    </p>
+    <p>
+        The combat module uses <i>f</i> for damage prevention and
+        <span class="card" onclick="dC('weighted-walking-stick')">Weighted Walking Stick</span> to deal
+        more damage.
+    </p>
+    <h2>Tips & Tricks</h2>
+    <p>
+        <span class="card" onclick="dC('daring-the-dawn')">Daring the Dawn</span> and
+        <span class="card" onclick="dC('foreshadowing-destruction')">Foreshadowing Destruction</span>
+        are used for the lunge.
+        The use of <span class="card" onclick="dC('direct-intervention')">Direct Intervention</span> on a modifier
+        like <span class="card" onclick="dC('conditioning')">Conditioning</span> prevents it to be played again on the
+        same action (as a modifier can only be played once and, even if countered it has been played).
+        Using an alternative bleed enhancer is OK though, so
+        <span class="card" onclick="dC('foreshadowing-destruction')">Foreshadowing Destruction</span>
+        can even save a lunge this way.
+    </p>
+    <p>
+        <span class="card" onclick="dC('scourge-of-the-enochians')">Scourge of the Enochians</span> and
+        <span class="card" onclick="dC('anarchist-uprising')">Anarchist Uprising</span> are counters against
+        breed constructs, as they can become overwhelming for this deck.
+    </p>
+    <h2>Variants</h2>
+    <p>
+        There are many variations to this archetype.
+        <span class="card" onclick="dC('parity-shift')">Parity Shift</span> and
+        <span class="card" onclick="dC('entrancement')">Entrancement</span> are often included,
+        <span class="card" onclick="dC('seduction')">Seduction</span> can help to get the bleed through.
+        On the Master side,
+        <span class="card" onclick="dC('papillon')">Papillon</span> and
+        <span class="card" onclick="dC('island-of-yiaros')">Island of Yiaros</span> are common inclusions too.
+        Finally, some
+        <span class="card" onclick="dC('freak-drive')">Freak Drive</span> to increase
+        <a href="../strategy/fundamentals.html#ABC">ABC</a> is often seen too.
+    </p>
+    <p>
+        It is also possible to ditch the combat module and replace it with some
+        <span class="card" onclick="dC('majesty')">Majesty</span>, with a good number of
+        <span class="card" onclick="dC('freak-drive')">Freak Drive</span> for multiple actions.
+        With more damaging votes like
+        <span class="card" onclick="dC('kine-resources-contested')">Kine Resources Contested</span>,
+        it makes for many aggressive actions, and they quickly become hard to block.
+        This is the <strong>Law Firm</strong> variant.
+        <a href="http://www.vekn.fr/decks/twd.htm#2k9uknats">Anthony Coleman's deck</a> from 2009 is a good example.
+        It is also often played with a group 1-2 crypt, as
+        <span class="card" onclick="dC('emerson-bridges')">Emerson Bridges</span> and
+        <span class="card" onclick="dC('sir-walter-nash')">Sir Walter Nash</span> are good Princes
+        for the job, at a low cost.
+        <a href="http://www.vekn.fr/decks/twd.htm#2k9powerbasecataluna">Sergio Gracia's deck</a> from 2009
+        is a good example.
+    </p>
+    <div class="clear"></div>
+    <div class="warning">
+        <h3 class="warning-title">Errata</h3>
+        <p>
+            <span class="card" onclick="dC('pentex-tm-subversion')">Pentex™ Subversion</span>
+            has been modified by an <em>errata</em> in September 2019.
+            It does not prevent a vampire to act anymore, so it is less powerful
+            and should maybe not be included in the deck anymore.
+            Still its ability to disable a strong blocker is useful for the lunge, moreover in the
+            Law Firm variant.
+        </p>
+    </div>
+</article>
+</body>
+<footer>
+    <nav role="navigation">
+        <a class="prev" href="anti-ventrue-grinder.html">Anti ventrue Grinder</a>
+        <a href="index.html">Archetypes</a>
+        <a class="next" href="the-bleeding-vignes.html">The Bleeding Vignes</a>
+    </nav>
+</footer>
+</html>

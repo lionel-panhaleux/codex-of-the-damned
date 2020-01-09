@@ -3,9 +3,9 @@
 <head>
 	<meta charset="UTF-8"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <link rel='stylesheet' type='text/css' href='../base.css'/>
+    <link rel="stylesheet" type="text/css" href="../base.css"/>
     <script>
-        function displayCard(name) {
+        function dC(name) {
             document.getElementById("card-image").src = '../card-images/'.concat(name, '.jpg');
             document.getElementById("card-modal").style.display = "block";
         }
@@ -23,10 +23,10 @@
     <nav role="navigation">
         <ul>
             <li><a href="../index.html">Home</a></li>
-            <li><a href="../deck-guides/index.html">Deck Guides</a></li>
             <li><a href="../strategy/index.html">Strategy</a></li>
             <li><a href="../archetypes/index.html">Archetypes</a></li>
             <li><a href="../twda-analysis/index.html">TWDA analysis</a></li>
+            <li><a href="../deck-guides/index.html">Deck Guides</a></li>
         </ul>
     </nav>
 </header>
@@ -97,29 +97,29 @@
         Multiple cards are available to provide good cycling options:
     </p>
     <ul>
-        <li class="card" onclick="displayCard('dreams-of-the-sphinx')">Dreams of the Sphinx</li>
-        <li class="card" onclick="displayCard('the-barrens')">The Barrens</li>
-        <li class="card" onclick="displayCard('heart-of-nizchetus')">Heart of Nizchetus</li>
+        <li class="card" onclick="dC('dreams-of-the-sphinx')">Dreams of the Sphinx</li>
+        <li class="card" onclick="dC('the-barrens')">The Barrens</li>
+        <li class="card" onclick="dC('heart-of-nizchetus')">Heart of Nizchetus</li>
         <li>
-            <span class="card" onclick="displayCard('fragment-of-the-book-of-nod')">Fragment of the Book of Nod</span>
+            <span class="card" onclick="dC('fragment-of-the-book-of-nod')">Fragment of the Book of Nod</span>
             (need to be defended)
         </li>
         <li>
-            <span class="card" onclick="displayCard('powerbase-los-angeles')">Powerbase: Los Angeles</span>
+            <span class="card" onclick="dC('powerbase-los-angeles')">Powerbase: Los Angeles</span>
             (need to be defended, best with Anarchs)
         </li>
         <li>
-            <span class="card" onclick="displayCard('the-admonitions')">The Admonitions</span>
+            <span class="card" onclick="dC('the-admonitions')">The Admonitions</span>
             (Sabbat only, best with Black Hand)
         </li>
     </ul>
     <p>
         A card that is hard to play can <strong>jam</strong> the hand.
         Action modifiers, especially restricted stealth cards like
-        <span class="card" onclick="displayCard('forgotten-labyrinth')">Forgotten Labyrinth</span>,
+        <span class="card" onclick="dC('forgotten-labyrinth')">Forgotten Labyrinth</span>,
         can only be used when the opponent tries to block, so they can jam.
         On the other hand, action cards like
-        <span class="card" onclick="displayCard('computer-hacking')">Computer Hacking</span>
+        <span class="card" onclick="dC('computer-hacking')">Computer Hacking</span>
         do not usually jam the hand as they can be played as soon as a minion is unlocked and ready to act.
         A tactical module for card rotation can be played in situations when jamming is expected.
     </p>
@@ -132,37 +132,39 @@
         </p>
         <ul>
             <li>
-                <span class="card" onclick="displayCard('ashur-tablets')">Ashur Tablets</span> provide an excellent
+                <span class="card" onclick="dC('ashur-tablets')">Ashur Tablets</span> provide an excellent
                 recursion as well as a powerful bloat. They need more than one Master phase action to be really
-                effective, so <span class="card" onclick="displayCard('the-parthenon')">The Parthenon</span> can come in
-                handy. The <a href=../archetypes/index.html#mmpa>MMPA archetype</a> makes full use of this card.
+                effective, so <span class="card" onclick="dC('the-parthenon')">The Parthenon</span> can come in
+                handy. The MMPA archetypes like
+                <a href="../archetypes/girls-will-find-inner-circle.html">Girls Will Find Inner Circle</a>
+                makes full use of this card.
             </li>
             <li>
-                <span class="card" onclick="displayCard('the-sargon-fragment')">The Sargon Fragment</span> is the only
+                <span class="card" onclick="dC('the-sargon-fragment')">The Sargon Fragment</span> is the only
                 other option open to all, but it is unique and uses up a lot of actions.
             <li>
                 Giovanni have the excellent
-                <span class="card" onclick="displayCard('sudario-refraction')">Sudario Refraction</span> and the lesser
-                <span class="card" onclick="displayCard('spiritual-guidance')">Spiritual Guidance</span>
+                <span class="card" onclick="dC('sudario-refraction')">Sudario Refraction</span> and the lesser
+                <span class="card" onclick="dC('spiritual-guidance')">Spiritual Guidance</span>
             </li>
             <li>
                 <i>n</i> offers
-                <span class="card" onclick="displayCard('whispers-from-the-dead')">Whispers From the Dead</span> and
-                <span class="card" onclick="displayCard('gear-up')">Gear Up</span> (Anarchs)
+                <span class="card" onclick="dC('whispers-from-the-dead')">Whispers From the Dead</span> and
+                <span class="card" onclick="dC('gear-up')">Gear Up</span> (Anarchs)
             </li>
             <li>
-                <span class="card" onclick="displayCard('garibaldi-meucci-museum')">Garibaldi-Meucci Museum</span>
+                <span class="card" onclick="dC('garibaldi-meucci-museum')">Garibaldi-Meucci Museum</span>
                 (Unique, Anarchs)
             </li>
             <li>
-                <span class="card" onclick="displayCard('drop-point-network')">Drop Point Network</span>
+                <span class="card" onclick="dC('drop-point-network')">Drop Point Network</span>
                 (Black Hand)
             </li>
             <li>
-                <span class="card" onclick="displayCard('maabara')">Maabara</span> (Unique, Harbinger of Skulls)
+                <span class="card" onclick="dC('maabara')">Maabara</span> (Unique, Harbinger of Skulls)
             </li>
             <li>
-                <span class="card" onclick="displayCard('unity')">Unity</span>
+                <span class="card" onclick="dC('unity')">Unity</span>
                 (Unique, Visionnary Imbued)
             </li>
         </ul>

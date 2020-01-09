@@ -16,9 +16,6 @@ body {
     margin: 2em;
     -webkit-font-smoothing: antialiased;
 }
-*, *:before, *:after {
-    box-sizing: inherit;
-}
 a {
     background-color: transparent;
     color: #000000;
@@ -26,9 +23,6 @@ a {
 }
 header a, footer a {
     text-decoration: none;
-}
-article a {
-    text-decoration: underline;
 }
 a:hover,
 a:focus {
@@ -40,13 +34,6 @@ header, footer {
     padding-right: 5em;
     display: flex;
     align-items: center;
-}
-.site-logo {
-    max-width: 100%;
-    min-width: 0;
-    display: flex;
-    align-items: center;
-    margin: 0 auto 0 0;
 }
 h1 {
     font-size: 2.5rem;
@@ -88,7 +75,9 @@ nav li {
     position: relative;
 }
 footer {
+    margin-top: 4em;
     flex-flow: column;
+    clear: both;
 }
 footer > nav > .prev::before{
     font-family: "FontAwesome";
@@ -110,24 +99,26 @@ footer a{
     display: inline-block;
     padding: 1em;
 }
-.icon {
-    display: inline-block;
-    font-style: normal;
-    font-variant: normal;
-    text-rendering: auto;
-    line-height: 1;
-  }
+footer img {
+    max-width: 64px;
+    float: left;
+    margin-right: 1em;
+}
+footer p {
+    font-style: italic;
+    font-size: 0.8em;
+}
+footer p a {
+    padding: 0;
+}
 article{
     max-width: 700px;
     margin: 0 auto;
     text-align: center;
 }
-.article-columns {
-    max-width: 1200px;
-}
 i {
-font-family: "Ankha VTES";
-font-style: normal;
+    font-family: "Ankha VTES";
+    font-style: normal;
 }
 p {
     margin: 0.5em;
@@ -143,6 +134,12 @@ article li {
     margin-right: auto;
     max-width: 700px;
 }
+article div {
+    padding: 15px 20px 15px 70px;
+    border-radius: 15px;
+    margin: 25px 0;
+    position: relative;
+}
 li > img {
     height: 24px;
     max-width: 32px;
@@ -156,12 +153,26 @@ td > img {
 td {
     text-align: left;
 }
+.article-columns {
+    max-width: 1200px;
+}
+.icon {
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+  }
 .td-icon {
     text-align: center;
     vertical-align: center;
 }
-footer {
-    clear: both;
+.site-logo {
+    max-width: 100%;
+    min-width: 0;
+    display: flex;
+    align-items: center;
+    margin: 0 auto 0 0;
 }
 .modal{
     z-index:3;
@@ -194,25 +205,8 @@ footer {
     text-decoration: underline;
     cursor: pointer;
 }
-.headerlink {
-    opacity: 0;
-    font-size: 0.8em;
-    position: relative;
-    top: -0.2em;
-    padding-left: 0.1em;
-    text-decoration: none;
-    -webkit-transition: opacity 200ms ease-in-out;
-    transition: opacity 200ms ease-in-out;
-    color: #000000;
-}
-.headerlink:hover {
-    opacity: 1;
-}
-article div {
-    padding: 15px 20px 15px 70px;
-    border-radius: 15px;
-    margin: 25px 0;
-    position: relative;
+.align-left {
+    text-align: left;
 }
 .column {
     display:inline-block;
@@ -220,7 +214,6 @@ article div {
     padding:0;
     vertical-align: top;
     margin: 0.7em;
-    /* margin-bottom: 0.7em; */
 }
 .column-image {
     margin:0;

@@ -3,9 +3,9 @@
 <head>
 	<meta charset="UTF-8"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <link rel='stylesheet' type='text/css' href='../base.css'/>
+    <link rel="stylesheet" type="text/css" href="../base.css"/>
     <script>
-        function displayCard(name) {
+        function dC(name) {
             document.getElementById("card-image").src = '../card-images/'.concat(name, '.jpg');
             document.getElementById("card-modal").style.display = "block";
         }
@@ -23,10 +23,10 @@
     <nav role="navigation">
         <ul>
             <li><a href="../index.html">Home</a></li>
-            <li><a href="../deck-guides/index.html">Deck Guides</a></li>
             <li><a href="../strategy/index.html">Strategy</a></li>
             <li><a href="../archetypes/index.html">Archetypes</a></li>
             <li><a href="../twda-analysis/index.html">TWDA analysis</a></li>
+            <li><a href="../deck-guides/index.html">Deck Guides</a></li>
         </ul>
     </nav>
 </header>
@@ -51,91 +51,60 @@
     <p>
         The other way to get the bleed through is to make sure the prey has no minion available to block the action.
         Along its strong bleed capabilities, <i>d</i> offers the excellent
-        <span class="card" onclick="displayCard('seduction')">Seduction</span>.
-        <i>O</i> <span class="card" onclick="displayCard('elder-impersonation')">Elder Impersonation</span>,
-        <i>N</i> <span class="card" onclick="displayCard('call-of-the-hungry-dead')">Call of the Hungry Dead</span>,
-        <i>f</i> <span class="card" onclick="displayCard('daring-the-dawn')">Daring the Dawn</span> and
-        <i>r</i> <span class="card" onclick="displayCard('mind-numb')">Mind Numb</span> are also effective tools.
+        <span class="card" onclick="dC('seduction')">Seduction</span>.
+        <i>O</i> <span class="card" onclick="dC('elder-impersonation')">Elder Impersonation</span>,
+        <i>N</i> <span class="card" onclick="dC('call-of-the-hungry-dead')">Call of the Hungry Dead</span>,
+        <i>f</i> <span class="card" onclick="dC('daring-the-dawn')">Daring the Dawn</span> and
+        <i>r</i> <span class="card" onclick="dC('mind-numb')">Mind Numb</span> are also effective tools.
         Combining these options with the few Master cards that can prevent block or lock minions —
-        <span class="card" onclick="displayCard('pentex-tm-subversion')">Pentex™ Subversion</span>,
-        <span class="card" onclick="displayCard('misdirection')">Misdirection</span> and
-        <span class="card" onclick="displayCard('anarch-troublemaker')">Anarch Troublemaker</span> —
+        <span class="card" onclick="dC('pentex-tm-subversion')">Pentex™ Subversion</span>,
+        <span class="card" onclick="dC('misdirection')">Misdirection</span> and
+        <span class="card" onclick="dC('anarch-troublemaker')">Anarch Troublemaker</span> —
         stealth is not an issue anymore.
     </p>
     <h3>Flavours</h3>
     <ul>
     <li>
-        <strong>Lasombra and Kiasyd</strong> have a strong combination with <i>d</i> for bleed and <i>$</i> for stealth.
-        Moreover, they can use some <span class="card" onclick="displayCard('nocturn')">Nocturn</span> for defence or
-        additional attack. <i>$</i> also provides combat ends for protection with
-        <span class="card" onclick="displayCard('oubliette')">Oubliette</span> and
-        <span class="card" onclick="displayCard('shadow-body')">Shadow Body</span>.
+        Lasombra and Kiasyd have a strong combination with <i>d</i> for bleed and <i>$</i> for stealth.
+        Check the <a href="../archetypes/kiasyd-stealth-bleed.html">Kiasyd Stealth & Bleed</a> and
+        <a href="../archetypes/lasombra-nocturn.html">Lasombra Nocturn</a> archetypes.
     </li>
     <li>
-        The <strong>Malkavian ’94</strong> make use of group 1 Malkavian with the rare combination of
-        <i>d</i> for bleed and <i>o</i> for stealth.
+        The Malkavian can use <i>e</i>, alone or alongside <i>o</i>, for devstating bleeds, like in
+        the <a href="../archetypes/weenie-dem.html">Weenie DEM</a> archetype.
     </li>
     <li>
-        But the malkavian clan also gave birth to the <strong>Weenie DEM</strong> archetype, using low capacity vampires
-        with just the <i>e</i> disciplines, which offers a good bleed and stealth combation by itself.
+        Assamite also have a nice combination with <i>q</i> and <i>o</i>, as in the
+        <a href="../archetypes/black-hand.html">Black Hand</a> archetype.
     </li>
     <li>
-        The <strong>Gangrel</strong> clan also gave birth to powerful bleed deck using group 2 with <i>d</i>
-        <span class="card" onclick="displayCard('iliana')">Iliana</span>,
-        <span class="card" onclick="displayCard('ingrid-rossler')">Ingrid Rossler</span> and
-        <span class="card" onclick="displayCard('stanislava')">Stanislava</span>. <i>J</i> provides good stealth with
-        <span class="card" onclick="displayCard('earth-control')">Earth Control</span>,
-        <span class="card" onclick="displayCard('form-of-mist')">Form of Mist</span> and
-        <span class="card" onclick="displayCard('rapid-change')">Rapid Change</span>.
+        <i>d</i> also works well in weenie archetypes, like
+        <a href="../archetypes/weenie-dom.html">Weenie DOM</a> and
+        <a href="../archetypes/bima-dominate.html">Bima Dominate</a>.
     </li>
     <li>
-        <strong><span class="card" onclick="displayCard('jost-werner')">Jost Werner</span></strong> gave birth to
-        multiple build, thanks to his +1 stealth and <i>RA</i> combination. He can be associated with
-        <span class="card" onclick="displayCard('rebekka-chantry-elder-of-munich')">Rebekka</span> as she has the same
-        group, ability and disciplines combination, and/or be followed by fellow Toreador Antitribu ready to use
-        <span class="card" onclick="displayCard('palla-grande')">Palla Grande</span> and
-        <span class="card" onclick="displayCard('art-scam')">Art Scam</span>.
-        <i>R</i> delivers a solid powerbleed with
-        <span class="card" onclick="displayCard('intimidation')">Intimidation</span>,
-        <span class="card" onclick="displayCard('enchant-kindred')">Enchant Kindred</span>,
-        <span class="card" onclick="displayCard('aire-of-elation')">Aire of Elation</span> and
-        <span class="card" onclick="displayCard('mind-numb')">Mind Numb</span>
-        , and <i>A</i> gives access to a much needed bounce,
-        <span class="card" onclick="displayCard('telepathic-misdirection')">Telepathic Misdirection</span>
+        The Gangrel clan also gave birth to powerful bleed deck using <i>J</i> for stealth,
+        as in the <a href="../archetypes/stanislava.html">Stanislava</a> archetype and its variants.
     </li>
     <li>
-        <strong>Inner Circles</strong> also deliver a very strong bleed as they have a +2 bleed ability,
-        and often access to the <i>D</i> and <i>O</i> combination.
-        <span class="card" onclick="displayCard('arika')">Arika</span>,
-        <span class="card" onclick="displayCard('leandro')">Leandro</span>,
-        <span class="card" onclick="displayCard('mistress-fanchon')">Mistress Fanchon</span> and
-        <span class="card" onclick="displayCard('rafael-de-corazon')">Rafael de Corazon</span>
-        have very similar disciplines, for example. Their big capacity makes it harder to get them out, and using
-        <span class="card" onclick="displayCard('zillahs-valley')">Zillah's Valley</span> and
-        <span class="card" onclick="displayCard('information-highway')">Information Highway</span>, together with
-        <span class="card" onclick="displayCard('villein')">Villein</span> or
-        <span class="card" onclick="displayCard('minion-tap')">Minion Tap</span> is common.
-        A strong modern archetype, <strong>Girls will Find Inner Circle</strong> use them along
-        <span class="card" onclick="displayCard('cybele')">Cybele</span> and
-        <span class="card" onclick="displayCard('aksinya-daclau')">Aksinya Declau</span>
-        for a <strong>M</strong>ulti <strong>M</strong>aster <strong>P</strong>hase <strong>A</strong>ctions (MMPA)
-        variant based on the <i>OR</i> discipline combination.
-        Using <span class="card" onclick="displayCard('the-parthenon')">The Parthenon</span> and more than a dozen
-        <span class="card" onclick="displayCard('ashur-tablets')">Ashur Tablets</span> and a lot of
-        <span class="card" onclick="displayCard('liquidation')">Liquidation</span>, the decks keeps bloating
-        and getting IC out at a steady pace until it crushes the table with the IC stealth bleed for 3.
+        Toreador with <i>R</i> and Ventrue with <i>DR</i>can produce strong powerbleed decks like
+        <a href="../archetypes/the-bleeding-vignes.html">The Bleeding Vignes</a> or
+        <a href="../archetypes/jost-powerbleed.html">Jost Powerbleed</a>.
     </li>
     <li>
-        <strong><span class="card" onclick="displayCard('the-unnamed')">The unnamed</span></strong> ability has been
-        enough to give birth to an archetype by itself. Though he lacks <i>d</i> or <i>A</i> for bounces, he can
-        produce a nice bloat by himself, more so once he gets the
-        <span class="card" onclick="displayCard('enkil-cog')">Enkil Cog</span> +
-        <span class="card" onclick="displayCard('homunculus')">Homunculus</span>
-        combination out and begins to bleed twice per turn.
-        With <i>O</i> and <i>J</i>, his stealth can be almost impossible to match, and he has access to
-        <span class="card" onclick="displayCard('instantaneous-transformation')">Instantaneous Transformation</span>
-        for more actions, as well as
-        <span class="card" onclick="displayCard('unleash-hells-fury')">Unleash Hell's Fury</span> for defence.
+        Inner Circles also deliver a very strong bleed as they have a +2 bleed ability.
+        The <a href="../archetypes/mistress.html">Mistress</a> archetype is a good example.
+        They are often combined with
+        <strong>M</strong>ulti <strong>M</strong>aster <strong>P</strong>hase <strong>A</strong>ctions (MMPA),
+        like in the
+        <a href="../archetypes/girls-will-find-inner-circle.html">Girls Will Find Inner Circle</a> or
+        <a href="../archetypes/council-of-doom.html">Council of Doom</a> archetypes.
+    </li>
+    <li>
+        Using <i>J</i> to bleed multiple times during the opponents turns with
+        <span class="card" onclick="dC('homunculus')">Homunculus</span> is also powerful:
+        <a href="../archetypes/the-unnamed.html">The unnamed</a> and
+        <a href="../archetypes/rachel-madness.html">Rachel Madness</a> are built around this idea.
     </li>
     </ul>
     <h3>Highlights</h3>
@@ -168,75 +137,43 @@
     <h3>Flavours</h3>
     <ul>
         <li>
-            <strong>Inner Circle</strong> can be used in strong vote decks. As in the build variant,
-            getting the out is often done using
-            <span class="card" onclick="displayCard('zillahs-valley')">Zillah's Valley</span> and
-            <span class="card" onclick="displayCard('information-highway')">Information Highway</span>, together with
-            <span class="card" onclick="displayCard('villein')">Villein</span> or
-            <span class="card" onclick="displayCard('minion-tap')">Minion Tap</span>.
-            On the vote topic,
-            <span class="card" onclick="displayCard('lutz-von-hohenzollern')">Lutz Von Hohenzollern</span> deserves
-            a special mention, as his ability and disciplines makes him perfect for the job. Many different decks have
-            been built around him.
-            An interesting variant, <strong>Summon the Elder</strong>, uses
-            <span class="card" onclick="displayCard('al-muntathir-gods-witness')">Al-Muntathir, God's Witness</span>
-            and its unique <i>!</i> discipline to play
-            <span class="card" onclick="displayCard('summon-history')">Summon History</span> then
-            <span class="card" onclick="displayCard('the-ankara-citadel-turkey')">The Ankara Citadel, Turkey</span>
-            to get more IC into play faster, at half the price.
-            the excellent <span class="card" onclick="displayCard('voter-captivation')">Voter Captivation</span>
-            is then used to resplenish the vampires blood before going at it again, or using a
-            <span class="card" onclick="displayCard('villein')">Villein</span> to bloat.
+            Inner Circle can be used in strong vote decks, as in
+            <a href="../archetypes/the-dark-side-of-politics.html">The Dark Side of Politics</a> and
+            <a href="../archetypes/lutz-politics.html">Lutz Politics</a>
         </li>
         <li>
-            <strong>Brujah Princes</strong> also offer an excellent crypt for votes, especially with
-            <span class="card" onclick="displayCard('dmitra-ilyanova')">Dmitra Ilyanova</span>.
-            As for all Camarilla builds, their access to
-            <span class="card" onclick="displayCard('parity-shift')">Parity Shift</span> is a great asset,
-            plus <i>r</i> action modifiers let them make sure the votes get through and provide the excellent
-            <span class="card" onclick="displayCard('voter-captivation')">Voter Captivation</span> for bloating.
+            Camarilla Princes also often use votes, like in the
+            <a href="../archetypes/nosferatu-royalty.html">Nosferatu Royalty</a> archetype.
         </li>
         <li>
-            Balli offer a nice political angle: the <strong>Dark side of Politics</strong> archetype
-            makes use of <span class="card" onclick="displayCard('kaymakli-fragment')">Kaymakli Fragment</span>
-            to get multiple Inner Circle or Justicars in play.
-            <span class="card" onclick="displayCard('giotto-verducci')">Giotto Verducci</span> is used to this effect,
-            as his ability let him get the equipment easily.
+            Non Camarilla vampires can also build good titled crypts, especially the Ishtarri with the
+            <a href="../archetypes/ishtarri-politics.html">Ishtarri Politics</a>
+            and Daughters of Cacophony, with
+            <a href="../archetypes/scout.html">Scout</a> and
+            <a href="../archetypes/daughters-politics.html">Daughters Politics</a>.
         </li>
         <li>
-            The <strong><span class="card" onclick="displayCard('legacy-of-pander')">Legacy of Pander</span></strong>
-            card made for an archetype by itself: playing it with low capacity Pander vampires that breed using
-            <span class="card" onclick="displayCard('the-embrace')">The Embrace</span> can get the vote lock
-            soon and deliver a high amount of pool damage very fast. Moreover, having a swarm of vampires ensures
-            <span class="card" onclick="displayCard('consanguineous-boon')">Consanguineous Boon</span> can be used
-            for bloating very strong.
+            Balli offer a nice political angle with
+            <a href="../archetypes/the-dark-side-of-politics.html">The Dark Side of Politics</a>.
         </li>
         <li>
-            The <strong>Ravnos Clown Car</strong> is another interesting breed build. Getting low capacity Ravnos out,
-            then having them use
-            <span class="card" onclick="displayCard('mozambique-allure')">Mozambique Allure</span> to become Laibon,
-            then <span class="card" onclick="displayCard('the-embrace')">The Embrace</span> to get more Ravnos out,
-            makes for an incredible voteing power using
-            then <span class="card" onclick="displayCard('the-eldest-are-kholo')">The Eldest are Kholo</span>.
-            Moreover, the Ravnos clan also has access to the
-            <span class="card" onclick="displayCard('week-of-nightmares')">Week of Nightmares</span>.
+            Assamite also have good options, like in the
+            <a href="../archetypes/amaravati-politics.html">Amaravati Politics</a> or the
+            <a href="../archetypes/death-star.html">Death Star</a> archetypes.
         </li>
         <li>
-            Toreador antitribu also have a powerful political breed using
-            <strong><span class="card" onclick="displayCard('foundation-exhibit')">Foundation Exhibit</span></strong>.
-            Moreover, they also have access to the deadly
-            <span class="card" onclick="displayCard('palla-grande')">Palla Grande</span> and can combine the two
-            masters to deadly effect.
+            The Ravnos have a unique breed archetype:
+            the <a href="../archetypes/ravnos-clown-car.html">Ravnos Clown Car</a>.
         </li>
     </ul>
     <h3>Highlights</h3>
     <p>
         Votes decks deliver <strong>very high damage</strong> once they get the vote lock.
         They also have a <strong>good bloat</strong>, using
-        <span class="card" onclick="displayCard('consanguineous-boon')">Consanguineous Boon</span>,
-        <span class="card" onclick="displayCard('parity-shift')">Parity Shift</span>,
-        <span class="card" onclick="displayCard('ancient-influence')">Ancient Inluence</span> or
-        <span class="card" onclick="displayCard('political-stranglehold')">Political Stranglehold</span>
+        <span class="card" onclick="dC('consanguineous-boon')">Consanguineous Boon</span>,
+        <span class="card" onclick="dC('parity-shift')">Parity Shift</span>,
+        <span class="card" onclick="dC('ancient-influence')">Ancient Inluence</span> or
+        <span class="card" onclick="dC('political-stranglehold')">Political Stranglehold</span>
         depending on the build.
         Depending on the exact build, <strong>stealth vary</strong>, but they are not easily blocked.
         Builds that do not have high stealth levels rely on a swarm of minions that make it hard to block them all.
@@ -258,72 +195,42 @@
         building up bloat and pool damages. The ability to intercept and wake are tantamount in these decks,
         so <i>a</i> and <i>i</i> are the most common options here. <i>a</i> gives more options and a higher intercept
         all in all, with the excellent
-        <span class="card" onclick="displayCard('eyes-of-argus')">Eyes of Argus</span> atop.
+        <span class="card" onclick="dC('eyes-of-argus')">Eyes of Argus</span> atop.
         It’s also the only discipline apart <i>d</i> that provides bleed bounce reaction cards.
         <i>i</i> also has good intercept cards though, and better combat options than <i>a</i>:
         it can be used with no additional equipment or discipline.
         Sabbat, Camarilla and Laibon titled vampires each have access to excellent intercept cards:
-        <span class="card" onclick="displayCard('eternal-vigilance')">Eternal Vigilance</span>,
-        <span class="card" onclick="displayCard('under-siege')">Under Siege</span>,
-        <span class="card" onclick="displayCard('second-tradition-domain')">Second Tradition: Domain</span> and
-        <span class="card" onclick="displayCard('no-secrets-from-the-magaji')">No Secrets From the Magaji</span>.
+        <span class="card" onclick="dC('eternal-vigilance')">Eternal Vigilance</span>,
+        <span class="card" onclick="dC('under-siege')">Under Siege</span>,
+        <span class="card" onclick="dC('second-tradition-domain')">Second Tradition: Domain</span> and
+        <span class="card" onclick="dC('no-secrets-from-the-magaji')">No Secrets From the Magaji</span>.
     </p>
     <h3>Flavours</h3>
     <ul>
         <li>
-            <strong>Weenie</strong> walls are a standard build, playing low capacity vampires either with <i>a</i>
-            and guns like <span class="card" onclick="displayCard('under-siege')">Sniper Rifle</span> and
-            <span class="card" onclick="displayCard('44-magnum')">.44 Magnum</span>, or with <i>i</i> and
-            the versatile <span class="card" onclick="displayCard('deep-song')">Deep Song</span>.
-            The number of vampires compensate their frailty — the deck may struggle against high levels of stealth,
-            but can handle powerbleed or other weenie decks more easily.
+            <i>A</i> is the best intercept discipline, and the
+            <a href="../archetypes/weenie-aus.html">Weenie AUS</a> wall is an obvious idea.
         </li>
         <li>
-            The <strong>Tzimisce</strong> wall is a very classic build. The combination of both <i>a & i</i> allows
-            for the use of <span class="card" onclick="displayCard('read-the-winds')">Read the Winds</span>, and
-            high cap vampires can even use
-            <span class="card" onclick="displayCard('sense-the-savage-way')">Sense the Savage Way</span>.
-            On top of <span class="card" onclick="displayCard('eyes-of-argus')">Eyes of Argus</span>
-            this allows a build with a lot more wakes. Tzimisce can also use <i>v</i> for an aggravated damage
-            combat module using
-            <span class="card" onclick="displayCard('breath-of-the-dragon')">Breath of the Dragon</span> and
-            <span class="card" onclick="displayCard('chiropteran-marauder')">Chiropteran Marauder</span>, threatening
-            to use <span class="card" onclick="displayCard('rotschreck')">Rötschreck</span> if needed,
-            as they usually enter combat as blockers and can therefore play an Out-of-Turn.
+            The <a href="../archetypes/tzimisce-wall.html">Tzimisce Wall</a> is also a very classic archetype,
+            as the combination of <i>a & i</i> offers even better intercept capabilities.
         </li>
         <li>
             Tremere in general,
-            but <strong><span class="card" onclick="displayCard('goratrix')">Goratrix</span></strong> in particular
-            offer excellent wall capabilities. He has the same <i>A & I</i> disciplines as strong Tzimisce,
-            and he can use <i>T</i> for combat with, but also to go fetch useful equipments with
-            <span class="card" onclick="displayCard('magic-of-the-smith')">Magic of the Smith</span>, like
-            <span class="card" onclick="displayCard('heart-of-nizchetus')">Heart of Nizchetus</span>,
-            <span class="card" onclick="displayCard('bowl-of-convergence')">Bowl of Convergence</span> and
-            <span class="card" onclick="displayCard('ivory-bow')">Ivory Bow</span>.
+            but <span class="card" onclick="dC('goratrix')">Goratrix</span> in particular
+            offer excellent wall capabilities in the
+            <a href="../archetypes/goratrix-high-tower.html">Goratrix High Tower</a> archetype.
         </li>
         <li>
-            Ahrimanes also have good capabilities. The <strong>Cats</strong> archetype relies on
-            <i>Z</i> and its excellent reactions:
-            <span class="card" onclick="displayCard('speak-with-spirits')">Speak With Spirits</span>,
-            <span class="card" onclick="displayCard('ears-of-the-hare')">Ears of the Hare</span> and
-            <span class="card" onclick="displayCard('falcons-eye')">Falcon's Eye</span>, in combination with
-            <i>I</i> and its standard wall module.
+            The The <a href="../archetypes/cats.html">Cats</a> uses Ahrimanes and their <i>ZI</i>
+            disciplines combination.
         </li>
         <li>
-            <strong>
-                <span class="card" onclick="displayCard('saulot-the-wanderer')">Saulot</span> &
-                <span class="card" onclick="displayCard('the-capuchin')">Capuchin</span>
-            </strong> provide a nice discipline combination, as they both have <i>ATF</i> and +1 bleed.
-            Although they do not have <i>i</i>, <i>T</i> lets them fetch precious equipment early using
-            <span class="card" onclick="displayCard('magic-of-the-smith')">Magic of the Smith</span> like in the
-            Goratrix build. <i>F</i> allows them a very resilient combat module based on damage prevention and
-            <span class="card" onclick="displayCard('weighted-walking-stick')">Weighted Walking Stick</span>.
-        </li>
-        <li>
-            Using the <i>A & C</i> to block and fight with <strong>Guns</strong> like
-            <span class="card" onclick="displayCard('sniper-rifle')">Sniper Rifle</span> and
-            <span class="card" onclick="displayCard('44-magnum')">.44 Magnum</span> is a common wall archetype
-            that Toreador, Toreador Antitribu or Osebo crypts can deliver.
+            Finally,
+            <span class="card" onclick="dC('saulot-the-wanderer')">Saulot</span> &
+            <span class="card" onclick="dC('the-capuchin')">The Capuchin</span>
+            provide a nice discipline combination, as they both have <i>ATF</i> and +1 bleed.
+            The <a href="../archetypes/saulot-and-friends.html">Saulot & Friends</a> archetype is built around them.
         </li>
     </ul>
     <h3>Highlights</h3>
@@ -331,11 +238,11 @@
         Wall decks obviously have a <strong>strong defence</strong> and they're not easily taken down by their predator.
         Moreover, having high block capabilities let them play fragile master cards that need protection to be
         efficient like
-        <span class="card" onclick="displayCard('smiling-jack-the-anarch')">Smiling Jack, the Anarch</span>,
-        <span class="card" onclick="displayCard('the-rack')">The Rack</span>,
-        <span class="card" onclick="displayCard('powerbase-montreal')">Powerbase: Montreal</span>,
-        <span class="card" onclick="displayCard('powerbase-barranquilla')">Powerbase: Barranquilla</span> (Sabbat) and
-        <span class="card" onclick="displayCard('anarch-revolt')">Anarch Revolt</span> (Anarchs),
+        <span class="card" onclick="dC('smiling-jack-the-anarch')">Smiling Jack, the Anarch</span>,
+        <span class="card" onclick="dC('the-rack')">The Rack</span>,
+        <span class="card" onclick="dC('powerbase-montreal')">Powerbase: Montreal</span>,
+        <span class="card" onclick="dC('powerbase-barranquilla')">Powerbase: Barranquilla</span> (Sabbat) and
+        <span class="card" onclick="dC('anarch-revolt')">Anarch Revolt</span> (Anarchs),
         helping both with bloat and offence.
         Still, wall decks tend to have a <strong>weak offence</strong>, dealing only a moderate
         amount of damage to their prey. They're very good at exhausting other decks around the table though, and will
@@ -344,8 +251,8 @@
     <div class="tip">
         <h3 class="tip-title">Cross block</h3>
         <p>
-            <span class="card" onclick="displayCard('eagles-sight')">Eagle's Sight</span> and
-            <span class="card" onclick="displayCard('falcons-eye')">Falcon's Eye</span> are the only two cards in
+            <span class="card" onclick="dC('eagles-sight')">Eagle's Sight</span> and
+            <span class="card" onclick="dC('falcons-eye')">Falcon's Eye</span> are the only two cards in
             the game that let a vampire block <strong>any</strong> action, even if it is directed upon another
             Methusalah or undertaken cross table.
         </p>
@@ -366,146 +273,26 @@
     <h2>Flavours</h2>
     <ul>
         <li>
-            Using Toreador Princes and Justicar led to the <strong>AAA</strong> archetype and its family.
-            The name come from the vampires used in the crypt:
-            <span class="card" onclick="displayCard('Anson')">Anson</span>,
-            <span class="card" onclick="displayCard('Anneke')">Anneke</span> and
-            <span class="card" onclick="displayCard('Alexandra')">Alexandra</span>.
-            A variant uses only
-            <span class="card" onclick="displayCard('Anson')">Anson</span> and some sidekicks:
-            the <strong>Anson guns</strong> archetype.
-            Using a Prince and Justicar allows to play
-            <span class="card" onclick="displayCard('second-tradition-domain')">Second Tradition: Domain</span> and
-            <span class="card" onclick="displayCard('parity-shift')">Parity Shift</span>.
-            The combat module can use either <i>r</i> combat ends or <i>c</i> with guns.
-            <i>r</i> delivers good bleed damage, espacially since
-            <span class="card" onclick="displayCard('aire-of-elation')">Aire of Elation</span> is stronger on a
-            Toreador crypt.
-            <span class="card" onclick="displayCard('Anson')">Anson</span> can be the star of the deck for a
-            <strong>M</strong>ulti <strong>M</strong>aster <strong>P</strong>hase <strong>A</strong>ctions (MMPA) build.
-            In this case, <span class="card" onclick="displayCard('the-parthenon')">The Parthenon</span> and a dozen
-            of <span class="card" onclick="displayCard('ashur-tablets')">Ashur Tablets</span> are included.
-            On the other hand, having the Justicar and the Inner Circle in the crypt allows the play of
-            <span class="card" onclick="displayCard('alastor')">Alastor</span> along
-            <span class="card" onclick="displayCard('assault-rifle')">Assault Rifle</span> to strengthen the
-            <i>c</i> combat module.
-            Finally, <i>A</i> is used for its bounces and additional intercept.
+            Using Camarilla <em>Princes</em> and <em>Justicars</em> and their access to
+            <span class="card" onclick="dC('second-tradition-domain')">Second Tradition: Domain</span> and
+            <span class="card" onclick="dC('parity-shift')">Parity Shift</span> led to good toolboxes like the
+            <a href="../archetypes/aaa.html">AAA</a> and
+            <a href="../archetypes/euro-brujah.html">Euro Brujah</a> and
+            <a href="../archetypes/ventrue-royalty.html">Ventrue Royalty</a> archetypes.
         </li>
         <li>
-            A few group 2 Brujah have the <i>d</i> discipline, and this led to the <strong>Euro Brujah</strong>
-            archetype, using european Brujah Princes with <i>d</i>
-            <span class="card" onclick="displayCard('constanza-vinti')">Constanza Vinti</span> and
-            <span class="card" onclick="displayCard('donal-oconnor')">Dònal O'Connor</span>.
-            They make good use of <i>d</i> with
-            <span class="card" onclick="displayCard('govern-the-unaligned')">Govern the Unaligned</span> and
-            <span class="card" onclick="displayCard('deflection')">Deflection</span>, with a bit of
-            <span class="card" onclick="displayCard('conditioning')">Conditioning</span> for the lunge,
-            and do some politics with
-            <span class="card" onclick="displayCard('parity-shift')">Parity Shift</span> and sometimes
-            <span class="card" onclick="displayCard('archon')">Archon</span>.
-            They rely on
-            <span class="card" onclick="displayCard('second-tradition-domain')">Second Tradition: Domain</span>
-            for blocks and pack a nasty <i>PC</i> combat module using
-            <span class="card" onclick="displayCard('torn-signpost')">Torn Signpost</span>
-            <span class="card" onclick="displayCard('pursuit')">Pursuit</span>,
-            <span class="card" onclick="displayCard('immortal-grapple')">Immortal Grapple</span> and
-            <span class="card" onclick="displayCard('disarm')">Disarm</span>.
+            A lot of archetypes using allies also fall into this category, like
+            <a href="../archetypes/khazars-diary.html">Khazar's Diary</a>,
+            <a href="../archetypes/emerald-legion.html">Emerald Legion</a> and
+            <a href="../archetypes/nephandii.html">Nephandii</a>.
         </li>
         <li>
-            The <strong>Resistência Anarch</strong> archetype uses
-            <span class="card" onclick="displayCard('nana-buruku')">Nana Buruku</span> and her special along
-            a low capacity <i>i</i> crypt with
-            <span class="card" onclick="displayCard('anarch-convert')">Anarch Convert</span> and, of course,
-            a dozen <span class="card" onclick="displayCard('ashur-tablets')">Ashur Tablets</span> and
-            some <span class="card" onclick="displayCard('liquidation')">Liquidation</span>.
-            It has a good bloat, and uses the classic animalism combination of
-            <span class="card" onclick="displayCard('aid-from-bats')">Aid from Bats</span> and
-            <span class="card" onclick="displayCard('carrion-crows')">Carrion Crows</span> for combat.
-            The MMPA side of things allows to play a dozen
-            <span class="card" onclick="displayCard('anarch-revolt')">Anarch Revolt</span> and stack them quickly,
-            then <span class="card" onclick="displayCard('deep-song')">Deep Song</span> can be used to eliminate
-            the prey vampire who become Anarch.
+            The Ventrue antitribu also provide excellent toolboxes, this is the
+            <a href="../archetypes/anti-ventrue-grinder.html">Anti Ventrue Grinder</a> archetype and its variants.
         </li>
         <li>
-            The <strong><span class="card" onclick="displayCard('nephandus')">Nephandus</span></strong> led to a build
-            of his own, along <span class="card" onclick="displayCard('antonio-derlette')">Antonio d'Erlette</span>.
-            The idea is to use this powerful ally in swarm, playing no-discipline combat cards like
-            <span class="card" onclick="displayCard('target-vitals')">Target Vitals</span>,
-            <span class="card" onclick="displayCard('trap')">Trap</span> and
-            <span class="card" onclick="displayCard('molotov-cocktail')">Molotov Cocktail</span>.
-            <span class="card" onclick="displayCard('the-unmasking')">The Unmasking</span>
-            is included for intercept, as well as
-            <span class="card" onclick="displayCard('haven-uncovered')">Haven Uncovered</span> for rush capabilities.
-            <span class="card" onclick="displayCard('antonio-derlette')">Antonio d'Erlette</span> is kept safe
-            and can use <span class="card" onclick="displayCard('deflection')">Deflection</span> for bounces.
-            A variant uses a MMPA module with
-            <span class="card" onclick="displayCard('the-parthenon')">The Parthenon</span>, more than a dozen
-            <span class="card" onclick="displayCard('ashur-tablets')">Ashur Tablets</span>and  some
-            <span class="card" onclick="displayCard('liquidation')">Liquidation</span>.
-            A recent brazilian variant uses
-            <span class="card" onclick="displayCard('anarch-convert')">Anarch Convert</span> to be able to play
-            <span class="card" onclick="displayCard('piper')">Piper</span> and put more
-            <span class="card" onclick="displayCard('nephandus')">Nephandus</span> in play.
-        </li>
-        <li>
-            The <strong>Emerald Legion</strong> archetype uses the
-            <span class="card" onclick="displayCard('emerald-legionnaire')">Emerald Legionnaire</span> as the core
-            of the deck, along some
-            <span class="card" onclick="displayCard('liquidation')">Liquidation</span> to make the most of its ability.
-            Using Harbinger of Skulls vampires led to solid defensive toolbox decks, with <i>A</i> for block
-            and bounces, and <i>f</i> for combat resilience. Moreover, <i>n</i> has decent combat cards with
-            <span class="card" onclick="displayCard('spiritual-intervention')">Spiritual Intervention</span> and
-            <span class="card" onclick="displayCard('breath-of-thanatos')">Breath of Thanatos</span>.
-            The <span class="card" onclick="displayCard('vengeful-spirit')">Vengeful Spirit</span>
-            completes the panel to offer decent bleed capability
-            atop the grinding bleed for 1 of multiple
-            <span class="card" onclick="displayCard('emerald-legionnaire')">Emerald Legionnaire</span>.
-            <span class="card" onclick="displayCard('the-unmasking')">The Unmasking</span> is used for
-            additional intercept.
-        </li>
-        <li>
-            The <strong>Ventrue Antitribu Grinder</strong> build is a classic toolbox archetype.
-            Using mid capacity vampires
-            <span class="card" onclick="displayCard('owain-evans-the-wanderer')">Owain Evans, The Wanderer</span> and
-            <span class="card" onclick="displayCard('blackhorse-tanner')">Blackhorse Tanner</span>, plus some
-            sidekicks, the <i>DAF</i> discipline combinations is a jack of all trades.
-            Bounces, intercept, and resilient combat, using <i>f</i> prevention along
-            <span class="card" onclick="displayCard('weighted-walking-stick')">Weighted Walking Stick</span> and
-            <span class="card" onclick="displayCard('target-vitals')">Target Vitals</span>.
-            Finally, the popular
-            <span class="card" onclick="displayCard('govern-the-unaligned')">Govern the Unaligned</span> helps
-            getting the first vampires out cheap, then bring a strong bleed, often helped into that with
-            <i>D</i> <span class="card" onclick="displayCard('conditioning')">Conditioning</span>,
-            <i>D</i> <span class="card" onclick="displayCard('seduction')">Seduction</span> and
-            <i>F</i> <span class="card" onclick="displayCard('daring-the-dawn')">Daring the Dawn</span>.
-            The idea is to slowly <em>grind</em> the blood and pool around the table to get to victory.
-        </li>
-        <li>
-            The True Brujah and their unique <i>?</i> discipline brought an interesting toolbox build using
-            <strong><span class="card" onclick="displayCard('summon-history')">Summon History</span></strong>.
-            Two versions exist, one using
-            <span class="card" onclick="displayCard('shalmath')">Shalmath</span> to act twice per turn, another using
-            <span class="card" onclick="displayCard('lydia-grand-praetor')">Lydia, Grand Praetor</span> and
-            <span class="card" onclick="displayCard('al-muntathir-gods-witness')">Al-Muntathir, God's Witness</span>,
-            and their access to <i>A</i> for bounces and intercept.
-            <span class="card" onclick="displayCard('summon-history')">Summon History</span> ignores requirements and
-            allows to fetch clan-specific cards:
-            <span class="card" onclick="displayCard('the-ankara-citadel-turkey')">The Ankara Citadel, Turkey</span>
-            first to get the following ones cheap, then
-            <span class="card" onclick="displayCard('harzomatuili')">Harzomatuili</span> and
-            <span class="card" onclick="displayCard('ponticulus')">Ponticulus</span> for defence, sometimes
-            <span class="card" onclick="displayCard('remnant-of-the-endless-storm')">Remnant of the Endless Storm</span>
-            for offence.
-            <span class="card" onclick="displayCard('malajit-chandramouli')">Malajit Chandramouli</span> is also
-            included for more stealth.
-            <i>!</i> also offers the most nasty combat combination
-            <span class="card" onclick="displayCard('domain-of-evernight')">Domain of Evernight</span> +
-            <span class="card" onclick="displayCard('outside-the-hourglass')">Outside the Hourglass</span> combination,
-            inflicting two aggravated damages before strikes. This gets around most damage prevention, combat ends
-            and dodges. The Lydia-Munthatir crypt usually uses
-            <span class="card" onclick="displayCard('vaticination')">Vaticination</span> and
-            <span class="card" onclick="displayCard('quicksilver-contemplation')">Quicksilver Contemplation</span>
-            to discard bounces in the prey hand before bleeding strongly.
+            The Tremere too have a good disciplines combination for a toolbox, as proves the
+            <a href="../archetypes/war-chantry.html">War Chantry</a> archetype.
         </li>
     </ul>
     <h3>Highlights</h3>
@@ -522,7 +309,7 @@
     <div class="tip">
             <h3 class="tip-title">The Heart of Cheating</h3>
             <p>
-                The <span class="card" onclick="displayCard('heart-of-nizchetus')">Heart of Nizchetus</span>
+                The <span class="card" onclick="dC('heart-of-nizchetus')">Heart of Nizchetus</span>
                 is often included in toolbox builds,
                 as it gives more control to the Methusalah over what his play can be.
                 Its effect is makes such a difference in efficiency in such builds, it has been nicknamed
@@ -542,83 +329,25 @@
     scoring 1:2 against other archetypes, 1:4 against bleed decks.
     Getting vampires down around the table is fun, but does not help so much to get the prey's pool down.
     To this effect, a handful of cards can help, namely
-    <span class="card" onclick="displayCard('fame')">Fame</span>,
-    <span class="card" onclick="displayCard('dragonbound')">Dragonbound</span> and
-    <span class="card" onclick="displayCard('tension-in-the-ranks')">Tension in the Ranks</span>.
+    <span class="card" onclick="dC('fame')">Fame</span>,
+    <span class="card" onclick="dC('dragonbound')">Dragonbound</span> and
+    <span class="card" onclick="dC('tension-in-the-ranks')">Tension in the Ranks</span>.
     </p>
     <h3>Flavours</h3>
     <ul>
         <li>
-            <strong>Tupdogs</strong> is a classic rush build, using a dozen
-            <span class="card" onclick="displayCard('tupdog')">Tupdog</span> along a Tremere Antitribu, their low
-            cost, rush ability, and powerful <i>UP</i> discipline combination allow for a devasting combat module
-            using <span class="card" onclick="displayCard('immortal-grapple')">Immortal Grapple</span>
-            to prevent Combat Ends and Dodge,
-            <span class="card" onclick="displayCard('brick-by-brick')">Brick by Brick</span> to set the range,
-            <span class="card" onclick="displayCard('raking-talons')">Raking Talons</span> for aggravated damage and
-            <span class="card" onclick="displayCard('stonestrength')">Stonestrength</span> for prevention or press.
-            <span class="card" onclick="displayCard('as-the-crow')">As the Crow</span> can even allow them
-            to rush twice. Depending on the build, they can be accompanied by
-            <span class="card" onclick="displayCard('rock-cat')">Rock Cat</span> or
-            <span class="card" onclick="displayCard('nephandus')">Nephandus</span> for support.
+            The <a href="../archetypes/tupdog.html">Tupdog</a> archetype is a classic, using a dozen
+            <span class="card" onclick="dC('tupdog')">Tupdog</span> along a Tremere Antitribu.
         </li>
         <li>
-            <strong>Samedi</strong> recently got a strong rush build, with
-            <span class="card" onclick="displayCard('blessings-of-the-loa')">Blessings of the Loa</span> granting
-            them much needed bleed power. <i>H</i> grants a very strong combat module with the excellent
-            <span class="card" onclick="displayCard('relentless-reaper')">Relentless Reaper</span> along
-            <span class="card" onclick="displayCard('groaning-corpse')">Groaning Corpse</span> and
-            <span class="card" onclick="displayCard('necrosis')">Necrosis</span>.
+            Allies with good combat capacities also make for good rush decks, like the
+            <a href="../archetypes/war-ghouls.html">War Ghouls</a> and
+            <a href="../archetypes/shambling-hordes.html">Shambling Hordes</a> archetypes.
         </li>
         <li>
-            The <strong><span class="card" onclick="displayCard('war-ghoul')">War Ghoul</span></strong> got a build
-            of its own, using either low cap Tzimisce or the
-            <span class="card" onclick="displayCard('little-tailor-of-prague')">Little Tailor of Prague</span>,
-            together with cheap allies like
-            <span class="card" onclick="displayCard('jake-washington')">Jake Washington</span> or
-            <span class="card" onclick="displayCard('underbridge-stray')">Underbridge Stray</span>.
-            <span class="card" onclick="displayCard('trap')">Trap</span> is even included for an even stronger
-            combat.
-        </li>
-        <li>
-            The <strong>Guruhi</strong> provide a strong rush build too, with
-            <span class="card" onclick="displayCard('nangila-were')">Nangila Were</span> along
-            <span class="card" onclick="displayCard('nana-buruku')">Nana Buruku</span>, sometimes followed by
-            <span class="card" onclick="displayCard('fish')">Fish</span> or
-            <span class="card" onclick="displayCard('enkidu-the-noah')">Enkidu, The Noah</span>.
-            The <i>IP</i> combination provides a very strong combat module, with
-            <span class="card" onclick="displayCard('carrion-crows')">Carrion Crows</span> alongside
-            <span class="card" onclick="displayCard('immortal-grapple')">Immortal Grapple</span> and
-            <span class="card" onclick="displayCard('torn-signpost')">Torn Signpost</span>.
-            <span class="card" onclick="displayCard('drawing-out-the-beast')">Drawing out the Beast</span>,
-            <span class="card" onclick="displayCard('slam')">Slam</span> and even
-            <span class="card" onclick="displayCard('thrown-sewer-lid')">Thrown Sewer Lid</span>  help manage
-            long range combat modules.
-            One strong side of the build is that
-            <span class="card" onclick="displayCard('nana-buruku')">Nana Buruku</span> allows for a heavy use of
-            masters, inluding more than a dozen
-            <span class="card" onclick="displayCard('ashur-tablets')">Ashur Tablets</span> for recursion.
-        </li>
-        <li>
-            <strong><span class="card" onclick="displayCard('enkidu-the-noah')">Enkidu, The Noah</span></strong>
-            led to a rush build of his own, often alongside
-            <span class="card" onclick="displayCard('matasuntha')">Matasuntha</span>.
-            <i>C</i> let them use
-            <span class="card" onclick="displayCard('psyche')">Psyche!</span> and
-            <span class="card" onclick="displayCard('pursuit')">Pursuit</span>, while
-            Getting them anarch with
-            <span class="card" onclick="displayCard('anarch-convert')">Anarch Convert</span>
-            can let them use the very versatile
-            <span class="card" onclick="displayCard('diversion')">Diversion</span> and even
-            <span class="card" onclick="displayCard('donnybrook')">Donnybrook</span>.
-            The <i>JFC</i> discipline combinations let them use both
-            <span class="card" onclick="displayCard('forced-march')">Forced March</span> and
-            <span class="card" onclick="displayCard('instantaneous-transformation')">Instantaneous Transformation</span>
-            to improve <a href="fundamentals.html#ABC">ABC</a>.
-            The deck also use some <i>i</i> cards to improve intercept and defence, mainly
-            <span class="card" onclick="displayCard('raven-spy')">Raven Spy</span>,
-            <span class="card" onclick="displayCard('sense-the-savage-way')">Sense the Savage Way</span> and
-            <span class="card" onclick="displayCard('cats-guidance')">Cats' Guidance</span>.
+            The <strong>Guruhi</strong> provide a strong rush build too, with their <i>PI</i> disciplines combination:
+            The <a href="../archetypes/guruhi-rush.html">Guruhi Rush</a> and
+            <a href="../archetypes/nananimalism.html">Nananimalism</a> archetypes.
         </li>
     </ul>
     <h3>Highlights</h3>
@@ -652,46 +381,23 @@
     <h3>Flavours</h3>
     <ul>
         <li>
-            The <strong>Cybelotron</strong> is a build created by <em>Erik Torstensson</em> in 2007
-            and refined by <em>Ben Peal</em> in 2007.
-            It has a crypt of 12 <span class="card" onclick="displayCard('cybele')">Cybele</span>, use
-            <span class="card" onclick="displayCard('magic-of-the-smith')">Magic of the Smith</span> to get a
-            <span class="card" onclick="displayCard('soul-gem-of-etrius')">Soul Gem of Etrius</span> out, add a
-            <span class="card" onclick="displayCard('fortitude')">Master: Discipline</span> to get Cybele to
-            11 capacity, in order to be able to play
-            <span class="card" onclick="displayCard('call-the-great-beast')">Call the Great Beast</span>,
-            spawning the Great Beast immediatly and getting a fresh new Cybele out of the crypt, thanks to the
-            Soul Gem.
-            <span class="card" onclick="displayCard('golconda-inner-peace')">Golconda: Inner Peace</span> and
-            <span class="card" onclick="displayCard('redeem-the-lost-soul')">Redeem the Lost Soul</span> are used
-            for heavy bloating.
+            Some archetypes focus on stealing the vampires of their opponents, like
+            <a href="../archetypes/mind-rape.html">Mind Rape</a>,
+            <a href="../archetypes/spirit-marionette.html">Spirit Marionette</a> and
+            <a href="../archetypes/baltimore-purge.html">Baltimore Purge</a>.
         </li>
         <li>
-            The <strong>Madness Reversal</strong> is a build created by <em>Orian Gissler</em> in 2009 and refined
-            by <em>Danilo Torrisi</em> in 2015. It uses low capacity Malkavians along
-            <span class="card" onclick="displayCard('madness-network')">Madness Network</span> to let them call the
-            <span class="card" onclick="displayCard('reversal-of-fortunes')">Reversal of Fortunes</span> vote
-            during other players turn to play twice or thrice as much as the rest of the table.
-            <span class="card" onclick="displayCard('the-parthenon')">The Parthenon</span> and
-            <span class="card" onclick="displayCard('brainwash')">Brainwash</span> are used to slow the neighbours
-            game even more,
-            <span class="card" onclick="displayCard('smiling-jack-the-anarch')">Smiling Jack, the Anarch</span>
-            helps to kill the table faster.
+            The <a href="../archetypes/cybelotron.html">Cybelotron</a>
+            is a build created by <em>Erik Torstensson</em> in 2007 and refined by <em>Ben Peal</em> in 2007.
+            It uses a complicated combination to use
+            <span class="card" onclick="dC('call-the-great-beast')">Call the Great Beast</span> efficiently.
         </li>
         <li>
-            The <strong>Baltimore Purge</strong> is a classic build, made quite stronger with the edition of
-            <span class="card" onclick="displayCard('montano')">Montano</span> in 2016.
-            The idea is to have the elder Lasombra play
-            <span class="card" onclick="displayCard('baltimore-purge')">Baltimore Purge</span>, then use
-            <span class="card" onclick="displayCard('freak-drive')">Freak Drive</span> and
-            <span class="card" onclick="displayCard('graverobbing')">Graverobbing</span> to <em>steal</em> its prey
-            vampires.
-            <span class="card" onclick="displayCard('mind-rape')">Mind Rape</span> is played alongside, and
-            eventually
-            <span class="card" onclick="displayCard('heidelberg-castle-germany')">Heidelberg Castle, Germany</span>
-            helps make use of the blood on the stolen vampires.
-            The rest of the deck is a standard and powerful Stealth & Bleed module fitting the Lasombra <i>D£</i>
-            disciplines.
+            The <a href="../archetypes/madness-reversal.html">Madness Reversal</a>
+            is a build created by <em>Orian Gissler</em> in 2009 and refined
+            by <em>Danilo Torrisi</em> in 2015. It uses
+            <span class="card" onclick="dC('reversal-of-fortunes')">Reversal of Fortunes</span> to play twice or thrice
+            as more as its opponents.
         </li>
     </ul>
     <h3>Highlights</h3>

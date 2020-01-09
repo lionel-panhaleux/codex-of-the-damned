@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" type="text/css" href="../base.css"/>
+    <script>
+        function dC(name) {
+            document.getElementById("card-image").src = '../card-images/'.concat(name, '.jpg');
+            document.getElementById("card-modal").style.display = "block";
+        }
+    </script>
+    <title>Codex of the Damned</title>
+</head>
+<body>
+<header role="banner">
+    <div class="site-logo">
+    <a href="../index.html" class="site-logo">
+        <img width="150" height="150" src="../icons/vtes.svg" alt="Codex of the Damned">
+        <h1>Codex of the Damned</h1>
+    </a>
+    </div>
+    <nav role="navigation">
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../strategy/index.html">Strategy</a></li>
+            <li><a href="../archetypes/index.html">Archetypes</a></li>
+            <li><a href="../twda-analysis/index.html">TWDA analysis</a></li>
+            <li><a href="../deck-guides/index.html">Deck Guides</a></li>
+        </ul>
+    </nav>
+</header>
+<div id="card-modal" class="modal" onclick="this.style.display='none'">
+        <img class="modal-content" id="card-image">
+</div>
+<article>
+    <h1><img src="../icons/clan-tremere-anti.svg"> Tupdogs</h1>
+    <div class="decklist">
+        <h2><a href="http://www.vekn.fr/decks/twd.htm#2014sacspb">Tup Dog</a></h2>
+        <p>
+            Deck by Filipe Iório<br/>
+            SAC 2014<br/>
+            São Paulo, Brazil<br/>
+            May 3rd 2014<br/>
+            31 players<br/>
+        </p>
+        <h3>Crypt (24 cards)</h3>
+        <ul>
+            <li>20 <span class="card" onclick="dC('tupdog')">Tupdog</span></li>
+            <li>4  <span class="card" onclick="dC('antonio-d-erlette')">Antonio d'Erlette</span></li>
+        </ul>
+        <h3>Library (90 cards)</h3>
+        <ul>
+            <li><h4>— Master (16) —</h4></li>
+            <li>2  <span class="card" onclick="dC('dreams-of-the-sphinx')">Dreams of the Sphinx</span></li>
+            <li>2  <span class="card" onclick="dC('failsafe')">Failsafe</span></li>
+            <li>2  <span class="card" onclick="dC('powerbase-montreal')">Powerbase: Montreal</span></li>
+            <li>2  <span class="card" onclick="dC('vessel')">Vessel</span></li>
+            <li>2  <span class="card" onclick="dC('wider-view')">Wider View</span></li>
+            <li>1  <span class="card" onclick="dC('archon-investigation')">Archon Investigation</span></li>
+            <li>1  <span class="card" onclick="dC('channel-10')">Channel 10</span></li>
+            <li>1  <span class="card" onclick="dC('fame')">Fame</span></li>
+            <li>1  <span class="card" onclick="dC('krcg-news-radio')">KRCG News Radio</span></li>
+            <li>1  <span class="card" onclick="dC('the-rack')">The Rack</span></li>
+            <li>1  <span class="card" onclick="dC('yawp-court')">Yawp Court</span></li>
+            <li><h4>— Action (7) —</h4></li>
+            <li>6  <span class="card" onclick="dC('computer-hacking')">Computer Hacking</span></li>
+            <li>1  <span class="card" onclick="dC('aranthebes-the-immortal')">Aranthebes, The Immortal</span></li>
+            <li><h4>— Combat (43) —</h4></li>
+            <li>10 <span class="card" onclick="dC('brick-by-brick')">Brick by Brick</span></li>
+            <li>10 <span class="card" onclick="dC('immortal-grapple')">Immortal Grapple</span></li>
+            <li>10 <span class="card" onclick="dC('raking-talons')">Raking Talons</span></li>
+            <li>8  <span class="card" onclick="dC('torn-signpost')">Torn Signpost</span></li>
+            <li>5  <span class="card" onclick="dC('amaranth')">Amaranth</span></li>
+            <li><h4>— Reaction (10) —</h4></li>
+            <li>6  <span class="card" onclick="dC('deflection')">Deflection</span></li>
+            <li>4  <span class="card" onclick="dC('on-the-qui-vive')">On the Qui Vive</span></li>
+            <li><h4>— Equipment (1) —</h4></li>
+            <li>1  <span class="card" onclick="dC('heart-of-nizchetus')">Heart of Nizchetus</span></li>
+            <li><h4>— Ally (9) —</h4></li>
+            <li>8  <span class="card" onclick="dC('nephandus')">Nephandus</span></li>
+            <li>1  <span class="card" onclick="dC('carlton-van-wyk')">Carlton Van Wyk</span></li>
+            <li><h4>— Event (4) —</h4></li>
+            <li>3  <span class="card" onclick="dC('the-unmasking')">The Unmasking</span></li>
+            <li>1  <span class="card" onclick="dC('fbi-special-affairs-division')">FBI Special Affairs Division</span></li>
+        </ul>
+    </div>
+    <h2>Highlights</h2>
+    <p>
+        This is a <em>rush</em> deck using <span class="card" onclick="dC('tupdog')">Tupdog</span> and their
+        <i>PU</i> disciplines combination to dispose of opponents vampires.
+        The crypt is spammed with <span class="card" onclick="dC('tupdog')">Tupdog</span> to an unusual 24 cards count.
+        The size of the crypt alone is often enough for the opponents to recognize the archetype.
+    </p>
+    <p>
+        The combat module uses
+        <span class="card" onclick="dC('brick-by-brick')">Brick by Brick</span> to set the range,
+        <span class="card" onclick="dC('immortal-grapple')">Immortal Grapple</span> to prevent dodges and
+        SCE ("<strong>S</strong>trike: <strong>C</strong>ombat <strong>E</strong>nds") and
+        <span class="card" onclick="dC('raking-talons')">Raking Talons</span> for aggravated damage.
+        <span class="card" onclick="dC('torn-signpost')">Torn Signpost</span> or
+        <span class="card" onclick="dC('amaranth')">Amaranth</span> are used to destroy cumbersome vampires.
+    </p>
+    <p>
+        As the <span class="card" onclick="dC('tupdog')">Tupdog</span> needs a master to be able to act,
+        <span class="card" onclick="dC('antonio-d-erlette')">Antonio d'Erlette</span> is a perfect fit.
+        He also comes with his friends the <span class="card" onclick="dC('nephandus')">Nephandus</span>,
+        they're here to bleed the prey, helped by some
+        <span class="card" onclick="dC('computer-hacking')">Computer Hacking</span>.
+    </p>
+    <p>
+        The <span class="card" onclick="dC('nephandus')">Nephandus</span> can also defend a bit with
+        <span class="card" onclick="dC('the-unmasking')">The Unmasking</span>.
+        Also, <span class="card" onclick="dC('deflection')">Deflection</span> is used for bounces by
+        <span class="card" onclick="dC('antonio-d-erlette')">Antonio d'Erlette</span>.
+    </p>
+    <p>
+        This is a fast and brutal deck, which must handle its predator sooner rather than later,
+        as most opponents will gladely let her dispose of the deck if she can.
+    </p>
+    <h2>Tips & Tricks</h2>
+    <p>
+        A bit of additional intercept is provided by permanents:
+        <span class="card" onclick="dC('channel-10')">Channel 10</span>,
+        <span class="card" onclick="dC('krcg-news-radio')">KRCG News Radio</span> and
+        <span class="card" onclick="dC('aranthebes-the-immortal')">Aranthebes, The Immortal</span>.
+    </p>
+    <p>
+        Only 4 copies of <span class="card" onclick="dC('antonio-d-erlette')">Antonio d'Erlette</span> are in the crypt
+        as to not jam it.
+    </p>
+    <p>
+        <span class="card" onclick="dC('yawp-court')">Yawp Court</span> is an interesting counter against
+        political constructs: as <span class="card" onclick="dC('tupdog')">Tupdog</span> are Sabbat,
+        they can use it.
+    </p>
+    <h2>Variants</h2>
+    <p>
+        <span class="card" onclick="dC('computer-hacking')">Computer Hacking</span> are not often used and
+        <span class="card" onclick="dC('target-vitals')">Target Vitals</span> is often included as it can be used
+        by the <span class="card" onclick="dC('nephandus')">Nephandus</span>.
+        Before 2010 (release date of <em>Heirs to the Blood</em> and
+        <span class="card" onclick="dC('brick-by-brick')">Brick by Brick</span>),
+        <span class="card" onclick="dC('crawling-chamber')">Crawling Chamber</span> was used to maneuver,
+        but it was less efficient.
+    </p>
+    <p>
+        <span class="card" onclick="dC('graverobbing')">Graverobbing</span> is often included instead of
+        <span class="card" onclick="dC('amaranth')">Amaranth</span>,
+        to steal vampires to help oust the prey faster.
+        It forces <span class="card" onclick="dC('antonio-d-erlette')">Antonio d'Erlette</span>
+        to take a risky action though: if he is disabled, the
+        <span class="card" onclick="dC('tupdog')">Tupdog</span> can not act anymore.
+    </p>
+    <p>
+        As for the <a href="nephandii.html">Nephandii</a> archetype, the decks works well with
+        <span class="card" onclick="dC('the-parthenon')">The Parthenon</span> and some
+        <span class="card" onclick="dC('ashur-tablets')">Ashur Tablets</span>.
+        <a href="http://www.vekn.fr/decks/twd.htm#2019tdclf">Martin Weinmayer's deck</a> from 2019 is a good example.
+    </p>
+    <p>
+        Using the <span class="card" onclick="dC('nephandus')">Nephandus</span> as sidekick is common, but another
+        take is to use <span class="card" onclick="dC('rock-cat')">Rock Cat</span> instead for additional rushes,
+        like in <a href="http://www.vekn.fr/decks/twd.htm#2013iecqbi">Danilo Torrisi's deck</a> from 2013.
+        A bit of bloat is needed to pay for them though, Danilo's idea was to use
+        <span class="card" onclick="dC('autarkis-persecution')">Autarkis Persecution</span>.
+        This is the <strong>Cats and Dogs</strong> variant.
+    </p>
+</article>
+</body>
+<footer>
+    <nav role="navigation">
+        <a class="prev" href="goratrix-high-tower.html">Goratrix High Tower</a>
+        <a href="index.html">Archetypes</a>
+        <a class="next" href="tzimisce-wall.html">Tzimisce Wall</a>
+    </nav>
+</footer>
+</html>

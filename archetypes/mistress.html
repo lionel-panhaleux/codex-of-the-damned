@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" type="text/css" href="../base.css"/>
+    <script>
+        function dC(name) {
+            document.getElementById("card-image").src = '../card-images/'.concat(name, '.jpg');
+            document.getElementById("card-modal").style.display = "block";
+        }
+    </script>
+    <title>Codex of the Damned</title>
+</head>
+<body>
+<header role="banner">
+    <div class="site-logo">
+    <a href="../index.html" class="site-logo">
+        <img width="150" height="150" src="../icons/vtes.svg" alt="Codex of the Damned">
+        <h1>Codex of the Damned</h1>
+    </a>
+    </div>
+    <nav role="navigation">
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../strategy/index.html">Strategy</a></li>
+            <li><a href="../archetypes/index.html">Archetypes</a></li>
+            <li><a href="../twda-analysis/index.html">TWDA analysis</a></li>
+            <li><a href="../deck-guides/index.html">Deck Guides</a></li>
+        </ul>
+    </nav>
+</header>
+<div id="card-modal" class="modal" onclick="this.style.display='none'">
+        <img class="modal-content" id="card-image">
+</div>
+<article>
+    <h1><img src="../icons/clan-tremere.svg"> Mistress</h1>
+    <div class="decklist">
+        <h2><a href="http://www.vekn.fr/decks/twd.htm#2016sncrs">Deck example</a></h2>
+        <p>
+            Deck by Sandro Rodrigues<br/>
+            Spanish NC 2016<br/>
+            Reus, Spain<br/>
+            November 6th 2016<br/>
+            31 players<br/>
+        </p>
+        <h3>Crypt (12 cards)</h3>
+        <ul>
+            <li>4  <span class="card" onclick="dC('mistress-fanchon')">Mistress Fanchon</span></li>
+            <li>2  <span class="card" onclick="dC('rafael-de-corazon')">Rafael de Corazon</span></li>
+            <li>2  <span class="card" onclick="dC('alonso-petrodon')">Alonso Petrodon</span></li>
+            <li>1  <span class="card" onclick="dC('gabrielle-di-righetti')">Gabrielle di Righetti</span></li>
+            <li>1  <span class="card" onclick="dC('tryphosa')">Tryphosa</span></li>
+            <li>1  <span class="card" onclick="dC('orlando-oriundus')">Orlando Oriundus</span></li>
+            <li>1  <span class="card" onclick="dC('graham-gottesman')">Graham Gottesman</span></li>
+        </ul>
+        <h3>Library (75 cards)</h3>
+        <ul>
+            <li><h4>— Master (23) —</h4></li>
+            <li>8  <span class="card" onclick="dC('villein')">Villein</span></li>
+            <li>5  <span class="card" onclick="dC('zillahs-valley')">Zillah's Valley</span></li>
+            <li>3  <span class="card" onclick="dC('information-highway')">Information Highway</span></li>
+            <li>1  <span class="card" onclick="dC('dreams-of-the-sphinx')">Dreams of the Sphinx</span></li>
+            <li>1  <span class="card" onclick="dC('giants-blood')">Giant's Blood</span></li>
+            <li>1  <span class="card" onclick="dC('golconda-inner-peace')">Golconda: Inner Peace</span></li>
+            <li>1  <span class="card" onclick="dC('monastery-of-shadows')">Monastery of Shadows</span></li>
+            <li>1  <span class="card" onclick="dC('pentex-tm-subversion')">Pentex™ Subversion</span></li>
+            <li>1  <span class="card" onclick="dC('secure-haven')">Secure Haven</span></li>
+            <li>1  <span class="card" onclick="dC('wider-view')">Wider View</span></li>
+            <li><h4>— Action (4) —</h4></li>
+            <li>4  <span class="card" onclick="dC('govern-the-unaligned')">Govern the Unaligned</span></li>
+            <li><h4>— Political Action (8) —</h4></li>
+            <li>2  <span class="card" onclick="dC('alastor')">Alastor</span></li>
+            <li>2  <span class="card" onclick="dC('banishment')">Banishment</span></li>
+            <li>2  <span class="card" onclick="dC('parity-shift')">Parity Shift</span></li>
+            <li>1  <span class="card" onclick="dC('ancient-influence')">Ancient Influence</span></li>
+            <li>1  <span class="card" onclick="dC('reins-of-power')">Reins of Power</span></li>
+            <li><h4>— Action Modifier (18) —</h4></li>
+            <li>5  <span class="card" onclick="dC('lost-in-crowds')">Lost in Crowds</span></li>
+            <li>4  <span class="card" onclick="dC('elder-impersonation')">Elder Impersonation</span></li>
+            <li>4  <span class="card" onclick="dC('faceless-night')">Faceless Night</span></li>
+            <li>2  <span class="card" onclick="dC('forgotten-labyrinth')">Forgotten Labyrinth</span></li>
+            <li>2  <span class="card" onclick="dC('spying-mission')">Spying Mission</span></li>
+            <li>1  <span class="card" onclick="dC('enkil-cog')">Enkil Cog</span></li>
+            <li><h4>— Action Modifier/Combat (2) —</h4></li>
+            <li>2  <span class="card" onclick="dC('swallowed-by-the-night')">Swallowed by the Night</span></li>
+            <li><h4>— Reaction (17) —</h4></li>
+            <li>6  <span class="card" onclick="dC('deflection')">Deflection</span></li>
+            <li>5  <span class="card" onclick="dC('obedience')">Obedience</span></li>
+            <li>4  <span class="card" onclick="dC('eyes-of-argus')">Eyes of Argus</span></li>
+            <li>2  <span class="card" onclick="dC('mental-maze')">Mental Maze</span></li>
+            <li><h4>— Equipment (2) —</h4></li>
+            <li>2  <span class="card" onclick="dC('helicopter')">Helicopter</span></li>
+            <li><h4>— Event (1) —</h4></li>
+            <li>1  <span class="card" onclick="dC('scourge-of-the-enochians')">Scourge of the Enochians</span></li>
+        </ul>
+    </div>
+    <h2>Highlights</h2>
+    <p>
+        This is a <em>stealth politics & bleed</em> deck starring
+        <span class="card" onclick="dC('mistress-fanchon')">Mistress Fanchon</span>.
+        Her ability let her fetch an <span class="card" onclick="dC('alastor')">Alastor</span> to equip with
+        an <span class="card" onclick="dC('helicopter')">Helicopter</span> paying only 1 pool.
+    </p>
+    <p>
+        The <span class="card" onclick="dC('villein')">Villein</span>,
+        <span class="card" onclick="dC('zillahs-valley')">Zillah's Valley</span> and
+        <span class="card" onclick="dC('information-highway')">Information Highway</span> is used to get
+        multiple big capacity vampires into play.
+    </p>
+    <p>
+        This version uses only the <i>DO</i> disciplines, a dreadful combination.
+        <span class="card" onclick="dC('obedience')">Obedience</span> and
+        <span class="card" onclick="dC('mental-maze')">Mental Maze</span> are used for combat defence.
+    </p>
+    <h2>Tips & Tricks</h2>
+    <p>
+        The key idea of this archetype is to abuse
+        <span class="card" onclick="dC('mistress-fanchon')">Mistress Fanchon</span>'s ability to fetch the right card
+        at the right time. The focus of the deck is to make sure she can do that <em>and bleed</em> every turn.
+    </p>
+    <p>
+        <span class="card" onclick="dC('scourge-of-the-enochians')">Scourge of the Enochians</span> is included
+        to cripple breed constructs, as they can be overwhelming for this slower deck.
+    </p>
+    <h2>Variants</h2>
+    <p>
+        The
+        <span class="card" onclick="dC('alastor')">Alastor</span> +
+        <span class="card" onclick="dC('helicopter')">Helicopter</span> combination is not mandatory.
+        Other methods can be found to improve <a href="../strategy/fundamentals.html#ABC">ABC</a>, for example using
+        <span class="card" onclick="dC('flurry-of-action')">Flurry of Action</span> like in
+        <a href="http://www.vekn.fr/decks/twd.htm#2010eternalvigilancelf">Benoît Moyen's deck</a> from 2010.
+    </p>
+    <p>
+        Danilo Torrisi played a <a href="http://www.vekn.fr/decks/twd.htm#2018bgpmb">nice combination</a> in 2018:
+        The <span class="card" onclick="dC('might-of-the-camarilla')">Might of the Camarilla</span> alongside
+        <span class="card" onclick="dC('possession')">Possession</span> to get more Inner Circle into play
+        fast and cheap.
+    </p>
+    <p>
+        Although this is a different archetype,
+        <span class="card" onclick="dC('mistress-fanchon')">Mistress Fanchon</span> can be used for her <i>AV</i>
+        combination, alongside
+        <span class="card" onclick="dC('malgorzata')">Malgorzata</span>,
+        <span class="card" onclick="dC('sha-ennu')">Sha‑Ennu</span> or
+        <span class="card" onclick="dC('unmada')">Unmada</span> for a variation
+        of the <a href="tzimisce-wall.html">Tzimisce Wall</a> archetype.
+    </p>
+    <div class="clear"></div>
+    <div class="warning">
+        <h3 class="warning-title">Errata</h3>
+        <p>
+            <span class="card" onclick="dC('pentex-tm-subversion')">Pentex™ Subversion</span>
+            has been modified by an <em>errata</em> in September 2019.
+            It does not prevent a vampire to act anymore, so it is less powerful
+            and should maybe not be included in the deck anymore.
+            Still its ability to disable a strong blocker is useful for the lunge.
+        </p>
+    </div>
+</article>
+</body>
+<footer>
+    <nav role="navigation">
+        <a class="prev" href="war-chantry.html">War Chantry</a>
+        <a href="index.html">Archetypes</a>
+        <a class="next" href="nephandii.html">Nephandii</a>
+    </nav>
+</footer>
+</html>

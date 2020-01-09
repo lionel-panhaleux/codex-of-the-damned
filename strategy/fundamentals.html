@@ -3,9 +3,9 @@
 <head>
 	<meta charset="UTF-8"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <link rel='stylesheet' type='text/css' href='../base.css'/>
+    <link rel="stylesheet" type="text/css" href="../base.css"/>
     <script>
-        function displayCard(name) {
+        function dC(name) {
             document.getElementById("card-image").src = '../card-images/'.concat(name, '.jpg');
             document.getElementById("card-modal").style.display = "block";
         }
@@ -23,10 +23,10 @@
     <nav role="navigation">
         <ul>
             <li><a href="../index.html">Home</a></li>
-            <li><a href="../deck-guides/index.html">Deck Guides</a></li>
             <li><a href="../strategy/index.html">Strategy</a></li>
             <li><a href="../archetypes/index.html">Archetypes</a></li>
             <li><a href="../twda-analysis/index.html">TWDA analysis</a></li>
+            <li><a href="../deck-guides/index.html">Deck Guides</a></li>
         </ul>
     </nav>
 </header>
@@ -43,7 +43,7 @@
         ¾ of edible decks will kill their prey by bleeding it.
     </p>
     <p>
-        Bleed modifiers like <span class="card" onclick="displayCard('conditioning')">Conditioning</span>
+        Bleed modifiers like <span class="card" onclick="dC('conditioning')">Conditioning</span>
         should be played <strong>after the prey has declined to block</strong>.
         This way, they are more likely to get through.
     </p>
@@ -52,33 +52,33 @@
         <p>
             Bleed modifiers are almost all <em>"limited"</em>, meaning one can play only one modifier increasing
             the bleed amount during a bleed action. However, a few cards provided non-limited bleed increase:
-            <span class="card" onclick="displayCard('leverage')">Leverage</span>,
-            <span class="card" onclick="displayCard('command-of-the-beast')">Command of the Beast</span> and
-            <span class="card" onclick="displayCard('quicksilver-contemplation')">Quicksilver Contemplation</span>
+            <span class="card" onclick="dC('leverage')">Leverage</span>,
+            <span class="card" onclick="dC('command-of-the-beast')">Command of the Beast</span> and
+            <span class="card" onclick="dC('quicksilver-contemplation')">Quicksilver Contemplation</span>
             are played, more expensive ones are not.
         </p>
     </div>
     <p>
         On the defence side, <strong>bounces</strong> like
-        <span class="card" onclick="displayCard('deflection')">Deflection</span> or
-        <span class="card" onclick="displayCard('telepathic-misdirection')">Telepathic Misdirection</span>
+        <span class="card" onclick="dC('deflection')">Deflection</span> or
+        <span class="card" onclick="dC('telepathic-misdirection')">Telepathic Misdirection</span>
         should be played only <strong>after the bleed amount has been confirmed</strong>
         by the predator, after block has been declined.
         This way the modifier, if any, is likely to be redirected too.
         This is because once the predator confirms the bleed amount, he actually passes on his opportunity
         to play a modifier and do not get another opportunity if the prey does not play a modifier themselves.
         Note only <i>d</i> and <i>A</i> can provide bounce capability, and very few cards can directly counter them:
-        only <i>e</i> with <span class="card" onclick="displayCard('touch-of-clarity')">Touch of Clarity</span>
+        only <i>e</i> with <span class="card" onclick="dC('touch-of-clarity')">Touch of Clarity</span>
         can cancel <i>d</i> bounces, but <i>A</i> bounces can be cancelled by
-        <i>O</i> <span class="card" onclick="displayCard('hide-the-mind')">Hide the Mind</span>,
-        <i>oy</i> <span class="card" onclick="displayCard('i-am-legion')">I am Legion</span> and
-        <i>k</i> <span class="card" onclick="displayCard('false-resonance')">False Resonance</span>.
+        <i>O</i> <span class="card" onclick="dC('hide-the-mind')">Hide the Mind</span>,
+        <i>oy</i> <span class="card" onclick="dC('i-am-legion')">I am Legion</span> and
+        <i>k</i> <span class="card" onclick="dC('false-resonance')">False Resonance</span>.
     </p>
     <div class="tip">
         <h3 class="tip-title">Archon limit</h3>
         <p>
             A bleed for more than 3 exposes the minion to the possibility of
-            <span class="card" onclick="displayCard('archon-investigation')">Archon Investigation</span>.
+            <span class="card" onclick="dC('archon-investigation')">Archon Investigation</span>.
             Because of this card, 3 has become the <strong>archon limit</strong>:
             some decks will make sure to stay under it to avoid risking their minions,
             others will consider their minions expendable and get happily over it.
@@ -87,7 +87,7 @@
     <h2 id="votes">Votes</h2>
     <p>
     The other option to deplete one’s prey’s pool is to use votes like
-    <span class="card" onclick="displayCard('kine-resources-contested')">Kine Resources Contested</span>.
+    <span class="card" onclick="dC('kine-resources-contested')">Kine Resources Contested</span>.
     The advantage of this strategy is the +1 stealth on the action. The disadvantage is that it is not directed:
     not only the prey but the predator can block, and the whole table can vote.
     </p>
@@ -107,30 +107,30 @@
             Simply using <i>r</i>, as it offers a lot of modifiers to get more votes.
         </li>
         <li>
-            Using <span class="card" onclick="displayCard('legacy-of-pander')">Legacy of Pander</span> with
+            Using <span class="card" onclick="dC('legacy-of-pander')">Legacy of Pander</span> with
             a lot of low cap Pander vampires.
         </li>
         <li>
-            Using <span class="card" onclick="displayCard('praxis-seizure-atlanta')">Praxis Seizure</span>,
-            <span class="card" onclick="displayCard('crusade-atlanta')">Crusade</span> or
-            <span class="card" onclick="displayCard('fee-stake-boston')">Fee Stake</span> cards.
+            Using <span class="card" onclick="dC('praxis-seizure-atlanta')">Praxis Seizure</span>,
+            <span class="card" onclick="dC('crusade-atlanta')">Crusade</span> or
+            <span class="card" onclick="dC('fee-stake-boston')">Fee Stake</span> cards.
         </li>
         <li>
             Getting multiple big capacity vampires with a lot of votes out, like Inner Circles and Justicars.
             This is usually achieved using
-            <span class="card" onclick="displayCard('zillahs-valley')">Zillah's Valley</span> and
-            <span class="card" onclick="displayCard('information-highway')">Information Highway</span>, together with
-            <span class="card" onclick="displayCard('villein')">Villein</span> or
-            <span class="card" onclick="displayCard('minion-tap')">Minion Tap</span>.
+            <span class="card" onclick="dC('zillahs-valley')">Zillah's Valley</span> and
+            <span class="card" onclick="dC('information-highway')">Information Highway</span>, together with
+            <span class="card" onclick="dC('villein')">Villein</span> or
+            <span class="card" onclick="dC('minion-tap')">Minion Tap</span>.
         </li>
     </ul>
     </p>
     <h3 id="delay-and-diversity">Delay and diversity</h3>
     <p>
     Aggressive vote decks will pass multiple votes in a single turn, but this has led to the use of
-    <span class="card" onclick="displayCard('delaying-tactics')">Delaying Tactics</span> as a defence.
+    <span class="card" onclick="dC('delaying-tactics')">Delaying Tactics</span> as a defence.
     This means diversity in votes is needed to avoid loosing a whole turn of actions just because
-    <span class="card" onclick="displayCard('kine-resources-contested')">Kine Resources Contested</span>
+    <span class="card" onclick="dC('kine-resources-contested')">Kine Resources Contested</span>
     has been delayed.
     <div class="tip">
         <h3 class="tip-title">Damage dealing votes</h3>
@@ -139,40 +139,39 @@
             Some votes dealing less damage are not listed here.
         </p>
         <ul>
-            <li class="card" onclick="displayCard('kine-resources-contested')">Kine Resources Contested</li>
-            <li class="card" onclick="displayCard('conservative-agitation')">Conservative Agitation</li>
+            <li class="card" onclick="dC('kine-resources-contested')">Kine Resources Contested</li>
+            <li class="card" onclick="dC('conservative-agitation')">Conservative Agitation</li>
             <li>
-                <span class="card" onclick="displayCard('parity-shift')">Parity Shift</span>
+                <span class="card" onclick="dC('parity-shift')">Parity Shift</span>
                 (Prince or Justicar only, and only on a Methusalah with less pool)
             </li>
-            <li class="card" onclick="displayCard('neonate-breach')">Neonate Breach</li>
-            <li class="card" onclick="displayCard('domain-challenge')">Domain Challenge</li>
+            <li class="card" onclick="dC('neonate-breach')">Neonate Breach</li>
+            <li class="card" onclick="dC('domain-challenge')">Domain Challenge</li>
             <li>
-                <span class="card" onclick="displayCard('ancilla-empowerment')">Ancilla Empowerment</span> and
-                <span class="card" onclick="displayCard('anarchist-uprising')">Anarchist Uprising</span>
+                <span class="card" onclick="dC('ancilla-empowerment')">Ancilla Empowerment</span> and
+                <span class="card" onclick="dC('anarchist-uprising')">Anarchist Uprising</span>
                 (both have the same effect)
             </li>
             <li>
-                <span class="card" onclick="displayCard('reins-of-power')">Reins of Power</span>
+                <span class="card" onclick="dC('reins-of-power')">Reins of Power</span>
                 (Big capacity vampires only)
             </li>
             <li>
-                    <span class="card" onclick="displayCard('reckless-agitation')">Reckless Agitation</span>
+                    <span class="card" onclick="dC('reckless-agitation')">Reckless Agitation</span>
                     (Independant or Anarch only)
             </li>
             <li>
-                    <span class="card" onclick="displayCard('lily-prelude')">Lily Prelude</span>
+                    <span class="card" onclick="dC('lily-prelude')">Lily Prelude</span>
                     (<i>m</i> only, a discipline only 14 Daughters of Cacophony have)
             </li>
             <li>
-                    <span class="card" onclick="displayCard('revolutionary-council')">Revolutionary Council</span>
+                    <span class="card" onclick="dC('revolutionary-council')">Revolutionary Council</span>
                     (Baron only)
             </li>
         </ul>
     </div>
     </p>
-    <h2 id="actions">Actions</h2>
-    <h3 id="ABC">ABC</h3>
+    <h2 id="ABC">ABC</h2>
     <p>
     One can either choose to buff up attack or to keep minions and cards to defend oneself:
     the stronger the defence, the weaker the attack, so it’s a question of balance in every deck.
@@ -181,32 +180,90 @@
     In any case, the ABC must be as high as possible for the deck to be effective.
     </p>
     <p>
-    The most obvious way to increase ABC is to use a <strong>weenie</strong> crypt:
+    The most obvious way to increase ABC is to use <strong>wake</strong> reactions like
+    <span class="card" onclick="dC('wake-with-evenings-freshness')">Wake with Evening’s Freshness</span>.
+    Most decks use this technique, although some forward-only builds will not, for lack of decent defensive tools.
+    </p>
+    <div class="tip">
+        <h3 class="tip-title">Wake & unlock reactions</h3>
+        <p>
+            A few cards provide wake or unlock effects during the opponents turn,
+            letting locked vampire react to and intercept actions.
+        </p>
+        <ul>
+            <li class="card" onclick="dC('on-the-qui-vive')">On the Qui Vive</li>
+            <li class="card" onclick="dC('wake-with-evenings-freshness')">Wake With Evening's Freshness</li>
+            <li class="card" onclick="dC('forced-awakening')">Forced Awakening</li>
+            <li class="card" onclick="dC('fillip')">Fillip</li>
+            <li class="card" onclick="dC('eluding-the-arms-of-morpheus')">Eluding the Arms of Morpheus</li>
+            <li>
+                <span class="card" onclick="dC('second-tradition-domain')">Second Tradition: Domain</span>
+                (Prince or Justicar)
+            </li>
+            <li><span class="card" onclick="dC('eternal-vigilance')">Eternal Vigilance</span> (titled Sabbat)</li>
+            <li><span class="card" onclick="dC('under-siege')">Under Siege</span> (titled Sabbat)</li>
+            <li><span class="card" onclick="dC('rats-warning')">Rat's Warning</span> (<i>i</i>)</li>
+            <li><span class="card" onclick="dC('guard-dogs')">Guard Dogs</span> (<i>i</i>)</li>
+            <li><span class="card" onclick="dC('eyes-of-argus')">Eyes of Argus</span> (<i>A</i>)</li>
+            <li><span class="card" onclick="dC('predators-communion')">Predator's Communion</span> (<i>W</i>)</li>
+            <li><span class="card" onclick="dC('read-the-winds')">Read the Winds</span> (<i>AI</i>)</li>
+            <li><span class="card" onclick="dC('speak-with-spirits')">Speak With Spirits</span> (<i>Z</i>)</li>
+            <li>
+                <span class="card" onclick="dC('sense-the-savage-way')">Sense the Savage Way</span>
+                (Big capacity <i>I</i>)
+            </li>
+            <li><span class="card" onclick="dC('the-mole')">The Mole</span> (<i>i</i> anarch)</li>
+            <li><span class="card" onclick="dC('netwar')">Netwar</span> (<i>k</i> anarch)</li>
+            <li><span class="card" onclick="dC('angel-of-berlin')">Angel of Berlin</span> (Imbued)</li>
+        </ul>
+    </div>
+    <p>
+    Another easy way to increase ABC is to use a <strong>weenie</strong> crypt:
     many small vampires for more actions and blocks.
     Their lower capacity mean they are less powerful individually, but the higher ABC is worth it.
     </p>
     <p>
-    Another option is to get more minions into play by recruiting Allies or using cards like
-    <span class="card" onclick="displayCard('the-embrace')">The Embrace</span> to <strong>breed</strong>
-    (<em>ie.</em> create new vampires).
+    Other methods to get more minions also increase ABC, like recruiting <strong>Allies</strong>
+    or using <strong>breed</strong> cards like
+    <span class="card" onclick="dC('the-embrace')">The Embrace</span> to create new vampires.
     </p>
     <p>
-    Yet another way to increase ABC is to use modifiers to engage in multiple actions with a single minion.
+    The last way to increase ABC is to use modifiers to engage in multiple actions with a single minion.
     This strategy is called <strong>drive</strong> in honour of
-    <span class="card" onclick="displayCard('freak-drive')">Freak Drive</span>,
+    <span class="card" onclick="dC('freak-drive')">Freak Drive</span>,
     one of the most played card to achieve this.
     Because the <strong>NRA</strong> (<strong>N</strong>on <strong>R</strong>epeatable <strong>A</strong>ction) rule
     states that no action can be engaged twice in the same turn by the same minion,
     this strategy has to be combined with a matching diversity in actions.
     </p>
-    <p>
-    Finally, the use of <strong>wake</strong> reactions like
-    <span class="card" onclick="displayCard('wake-with-evenings-freshness')">Wake with Evening’s Freshness</span>
-    also increases the ABC on the defence side.
-    The card has been played so much its name has now become
-    <a href=http://www.vekn.net/rulebook/11-special-terms>an official term</a>.
-    </p>
-    <h3 id="action-sequence">Action sequence</h3>
+    <div class="tip">
+        <h3 class="tip-title">Unlock modifiers</h3>
+        <p>
+            Only a few cards allow a vampire to unlock during the turn and undertake multiple actions.
+        </p>
+        <ul>
+            <li><span class="card" onclick="dC('freak-drive')">Freak Drive</span> (<i>F</i>)</li>
+            <li><span class="card" onclick="dC('forced-march')">Forced March</span> (<i>cf</i>)</li>
+            <li>
+                <span class="card" onclick="dC('instantaneous-transformation')">Instantaneous Transformation</span>
+                (<i>CJ</i>)
+            </li>
+            <li>
+                <span class="card" onclick="dC('truth-of-a-thousand-lies')">Truth of a Thousand Lies</span>
+                (<i>S</i>)
+            </li>
+            <li><span class="card" onclick="dC('zephyr')">Zephyr</span> (<i>C</i>)</li>
+            <li><span class="card" onclick="dC('domain-of-evernight')">Domain of Evernight</span> (<i>!</i>)</li>
+            <li><span class="card" onclick="dC('as-the-crow')">As The Crow</span> (<i>^</i>)</li>
+            <li>
+                <span class="card" onclick="dC('crimethinc')">CrimethInc.</span>
+                (<i>j</i> or <i>q</i> Anarch)
+            </li>
+            <li><span class="card" onclick="dC('seraphs-second')">Seraph's Second</span> (Black Hand)</li>
+            <li><span class="card" onclick="dC('tattoo-signal')">Tattoo Signal</span> (Seraph)</li>
+        </ul>
+    </div>
+    <h2 id="action-sequence">Action sequence</h2>
     <p>
     The choice and order of minion actions is important.
     A common strategy is to <strong>bait</strong>, beginning with the most mundane actions, up to the strongest ones.
@@ -226,7 +283,7 @@
     or lack of. As a predator, one should try to asses the number of wakes, bounces, delays, etc.
     available on the prey side.
     </p>
-    <h3 id="stealth-and-intercept">Stealth and Intercept</h3>
+    <h2 id="stealth-and-intercept">Stealth and Intercept</h2>
     <p>
     The key between offence and defence is the management of stealth and intercept.
     Many disciplines give access to stealth and intercept.
@@ -234,12 +291,12 @@
     <p>
     One level of intercept is enough to block hunts, votes, equipments and recruitments.
     Therefore, some decks include a limited capacity of <strong>permanent intercept</strong> like
-    <span class="card" onclick="displayCard('wmrh-talk-radio')">WMRH Talk Radio</span>.
+    <span class="card" onclick="dC('wmrh-talk-radio')">WMRH Talk Radio</span>.
     </p>
     <p>
-        <span class="card" onclick="displayCard('carlton-van-wyk')">Carlton Van Wyk</span>,
-        <span class="card" onclick="displayCard('ponticulus')">Ponticulus</span> (Tremere) and
-        <span class="card" onclick="displayCard('harzomatuili')">Harzomatuili</span> (Cardinal or Regent)
+        <span class="card" onclick="dC('carlton-van-wyk')">Carlton Van Wyk</span>,
+        <span class="card" onclick="dC('ponticulus')">Ponticulus</span> (Tremere) and
+        <span class="card" onclick="dC('harzomatuili')">Harzomatuili</span> (Cardinal or Regent)
         deserve a special mention: they provide permanent intercept only to themeselves but their combat abilities
         is great and allow them to hinder the opponents all by themselves.
     </p>
@@ -249,38 +306,38 @@
             Only a few unique cards give permanent intercept to any vampire, most of them master cards.
         </p>
         <ul>
-            <li class="card" onclick="displayCard('krcg-news-radio')">KRCG News Radio</li>
-            <li class="card" onclick="displayCard('wmrh-talk-radio')">WMRH Talk Radio</li>
-            <li class="card" onclick="displayCard('wall-street-night-financial-newspaper')">
+            <li class="card" onclick="dC('krcg-news-radio')">KRCG News Radio</li>
+            <li class="card" onclick="dC('wmrh-talk-radio')">WMRH Talk Radio</li>
+            <li class="card" onclick="dC('wall-street-night-financial-newspaper')">
                 Wall Street Night, Financial Newspaper
             </li>
-            <li class="card" onclick="displayCard('channel-10')">Channel 10</li>
-            <li class="card" onclick="displayCard('london-evening-star-tabloid-newspaper')">
+            <li class="card" onclick="dC('channel-10')">Channel 10</li>
+            <li class="card" onclick="dC('london-evening-star-tabloid-newspaper')">
                 London Evening Star, Tabloid Newspaper
             </li>
-            <li class="card" onclick="displayCard('the-rumor-mill-tabloid-newspaper')">
+            <li class="card" onclick="dC('the-rumor-mill-tabloid-newspaper')">
                 The Rumor Mill, Tabloid Newspaper
             </li>
-            <li> <span class="card" onclick="displayCard('club-zombie')">Club Zombie</span> (expensive) </li>
-            <li class="card" onclick="displayCard('aranthebes-the-immortal')">Aranthebes, the Immortal</li>
+            <li> <span class="card" onclick="dC('club-zombie')">Club Zombie</span> (expensive) </li>
+            <li class="card" onclick="dC('aranthebes-the-immortal')">Aranthebes, the Immortal</li>
             <li>
-                <span class="card" onclick="displayCard('the-anarch-free-press')">The Anarch Free Press</span>
+                <span class="card" onclick="dC('the-anarch-free-press')">The Anarch Free Press</span>
                 (Anarch)
             </li>
             <li>
-                    <span class="card" onclick="displayCard('market-square')">Market Square</span>
+                    <span class="card" onclick="dC('market-square')">Market Square</span>
                     (Assamite)
             </li>
             <li>
-                    <span class="card" onclick="displayCard('information-network')">Information Network</span>
+                    <span class="card" onclick="dC('information-network')">Information Network</span>
                     (Nosferatu Antitribu)
             </li>
             <li>
-                    <span class="card" onclick="displayCard('saatet-ta')">Saatet-ta</span>
+                    <span class="card" onclick="dC('saatet-ta')">Saatet-ta</span>
                     (Followers of Set)
             </li>
             <li>
-                    <span class="card" onclick="displayCard('the-unmasking')">The Unmasking</span>
+                    <span class="card" onclick="dC('the-unmasking')">The Unmasking</span>
                     (Allies)
             </li>
         </ul>
@@ -288,67 +345,67 @@
             Other cards give permanent intercept to a chosen vampire.
         </p>
         <ul>
-            <li class="card" onclick="displayCard('mr-winthrop')">Mr. Winthrop</li>
-            <li class="card" onclick="displayCard('sport-bike')">Sport Bike</li>
-            <li class="card" onclick="displayCard('phased-motion-detector')">Phased Motion Detector</li>
-            <li class="card" onclick="displayCard('guardian-angel')">Guardian Angel</li>
+            <li class="card" onclick="dC('mr-winthrop')">Mr. Winthrop</li>
+            <li class="card" onclick="dC('sport-bike')">Sport Bike</li>
+            <li class="card" onclick="dC('phased-motion-detector')">Phased Motion Detector</li>
+            <li class="card" onclick="dC('guardian-angel')">Guardian Angel</li>
             <li>
-                <span class="card" onclick="displayCard('bowl-of-convergence')">Bowl of Convergence</span>
+                <span class="card" onclick="dC('bowl-of-convergence')">Bowl of Convergence</span>
                 (<i>a</i>)
             </li>
             <li>
-                <span class="card" onclick="displayCard('raven-spy')">Raven Spy</span> and
-                <span class="card" onclick="displayCard('raptor')">Raptor</span>
+                <span class="card" onclick="dC('raven-spy')">Raven Spy</span> and
+                <span class="card" onclick="dC('raptor')">Raptor</span>
                 (<i>i</i>)
             </li>
             <li>
-                <span class="card" onclick="displayCard('abbot')">Abbot</span>
+                <span class="card" onclick="dC('abbot')">Abbot</span>
                 (Sabbat)
             </li>
             <li>
-                <span class="card" onclick="displayCard('atonement')">Atonement</span>
+                <span class="card" onclick="dC('atonement')">Atonement</span>
                 (Small capacity vampires)
             </li>
             <li>
-                <span class="card" onclick="displayCard('razor-bat')">Razor Bat</span>
+                <span class="card" onclick="dC('razor-bat')">Razor Bat</span>
                 (Gargoyles)
             </li>
             <li>
-                <span class="card" onclick="displayCard('defender-of-the-haven')">Defender of the Haven</span>
+                <span class="card" onclick="dC('defender-of-the-haven')">Defender of the Haven</span>
                 (slave Gargoyles)
             </li>
             <li>
-                <span class="card" onclick="displayCard('no-secrets-from-the-magaji')">
+                <span class="card" onclick="dC('no-secrets-from-the-magaji')">
                     No Secrets From the Magaji
                 </span>
                 (Magaji)
             </li>
             <li>
-                <span class="card" onclick="displayCard('corpse-balloon')">Corpse Balloon</span>
+                <span class="card" onclick="dC('corpse-balloon')">Corpse Balloon</span>
                 (<i>v</i>)
             </li>
             <li>
-                <span class="card" onclick="displayCard('revenant')">Revenant</span>
+                <span class="card" onclick="dC('revenant')">Revenant</span>
                 (Tzimisce)
             </li>
             <li>
-                <span class="card" onclick="displayCard('sight-beyond-sight')">Sight Beyond Sight</span>
+                <span class="card" onclick="dC('sight-beyond-sight')">Sight Beyond Sight</span>
                 (Salubri)
             </li>
             <li>
-                <span class="card" onclick="displayCard('shaman')">Shaman</span>
+                <span class="card" onclick="dC('shaman')">Shaman</span>
                 (Laibon)
             </li>
             <li>
-                <span class="card" onclick="displayCard('kumpania')">Kumpania</span>
+                <span class="card" onclick="dC('kumpania')">Kumpania</span>
                 (Ravnos)
             </li>
             <li>
-                <span class="card" onclick="displayCard('ephor')">Ephor</span>
+                <span class="card" onclick="dC('ephor')">Ephor</span>
                 (Ventrue)
             </li>
             <li>
-                <span class="card" onclick="displayCard('the-ancestors-talisman')">The Ancestors Talisman</span>
+                <span class="card" onclick="dC('the-ancestors-talisman')">The Ancestors Talisman</span>
                 (Assamite)
             </li>
         </ul>
@@ -356,11 +413,11 @@
     <p>
     On the other hand, whatever level of intercept one manages to achieve, stealth specialised decks
     often include some <strong>block denial</strong> modifiers atop normal stealth.
-    <i>O</i> <span class="card" onclick="displayCard('elder-impersonation')">Elder Impersonation</span>,
-    <i>N</i> <span class="card" onclick="displayCard('call-of-the-hungry-dead')">Call of the Hungry Dead</span>
-    and <i>£</i> <span class="card" onclick="displayCard('blanket-of-night')">Blanket of Night</span>
+    <i>O</i> <span class="card" onclick="dC('elder-impersonation')">Elder Impersonation</span>,
+    <i>N</i> <span class="card" onclick="dC('call-of-the-hungry-dead')">Call of the Hungry Dead</span>
+    and <i>£</i> <span class="card" onclick="dC('blanket-of-night')">Blanket of Night</span>
     are the only full-purpose block denials of the game. However, <i>D</i> gives access to
-    <span class="card" onclick="displayCard('seduction')">Seduction</span> which is still a strong denial,
+    <span class="card" onclick="dC('seduction')">Seduction</span> which is still a strong denial,
     even if it is less efficient against wakes. Finally, many disciplines give access to lesser block denials
     that only work against allies and younger vampires, but they are less used as many walls use big capacity vampires.
     </p>

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" type="text/css" href="../base.css"/>
+    <script>
+        function dC(name) {
+            document.getElementById("card-image").src = '../card-images/'.concat(name, '.jpg');
+            document.getElementById("card-modal").style.display = "block";
+        }
+    </script>
+    <title>Codex of the Damned</title>
+</head>
+<body>
+<header role="banner">
+    <div class="site-logo">
+    <a href="../index.html" class="site-logo">
+        <img width="150" height="150" src="../icons/vtes.svg" alt="Codex of the Damned">
+        <h1>Codex of the Damned</h1>
+    </a>
+    </div>
+    <nav role="navigation">
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../strategy/index.html">Strategy</a></li>
+            <li><a href="../archetypes/index.html">Archetypes</a></li>
+            <li><a href="../twda-analysis/index.html">TWDA analysis</a></li>
+            <li><a href="../deck-guides/index.html">Deck Guides</a></li>
+        </ul>
+    </nav>
+</header>
+<div id="card-modal" class="modal" onclick="this.style.display='none'">
+        <img class="modal-content" id="card-image">
+</div>
+<article>
+    <h1><img src="../icons/clan-toreador-anti.svg"> Jost Powerbleed</h1>
+    <div class="decklist">
+        <h2><a href="http://www.vekn.fr/decks/twd.htm#2018ecday2wp">Rebekka & Jost</a></h2>
+        <p>
+            Deck by Ivan Chebunin<br/>
+            EC 2018 - Day 2<br/>
+            Warsaw, Poland<br/>
+            August 26th 2018<br/>
+            50 players, 125 players on Day 1<br/>
+        </p>
+        <h3>Crypt (13 cards)</h3>
+        <ul>
+            <li>2  <span class="card" onclick="dC('rebekka-chantry-elder-of-munich')">Rebekka, Chantry Elder of Munich</span></li>
+            <li>2  <span class="card" onclick="dC('jost-werner')">Jost Werner</span></li>
+            <li>2  <span class="card" onclick="dC('sheila-mezarin')">Sheila Mezarin</span></li>
+            <li>1  <span class="card" onclick="dC('felicia-mostrom')">Felicia Mostrom</span></li>
+            <li>1  <span class="card" onclick="dC('ramiel-dupre')">Ramiel DuPre</span></li>
+            <li>1  <span class="card" onclick="dC('mariana-gilbert')">Mariana Gilbert</span></li>
+            <li>1  <span class="card" onclick="dC('remilliard-devout-crusader')">Remilliard, Devout Crusader</span></li>
+            <li>1  <span class="card" onclick="dC('violette-prentiss')">Violette Prentiss</span></li>
+            <li>1  <span class="card" onclick="dC('gideon-fontaine')">Gideon Fontaine</span></li>
+            <li>1  <span class="card" onclick="dC('isabel-de-leon')">Isabel de Leon</span></li>
+        </ul>
+        <h3>Library (81 cards)</h3>
+        <ul>
+            <li><h4>— Master (15) —</h4></li>
+            <li>2  <span class="card" onclick="dC('anarch-troublemaker')">Anarch Troublemaker</span></li>
+            <li>2  <span class="card" onclick="dC('blood-doll')">Blood Doll</span></li>
+            <li>2  <span class="card" onclick="dC('dreams-of-the-sphinx')">Dreams of the Sphinx</span></li>
+            <li>2  <span class="card" onclick="dC('pentex-tm-subversion')">Pentex™ Subversion</span></li>
+            <li>2  <span class="card" onclick="dC('vessel')">Vessel</span></li>
+            <li>1  <span class="card" onclick="dC('the-coven')">The Coven</span></li>
+            <li>1  <span class="card" onclick="dC('direct-intervention')">Direct Intervention</span></li>
+            <li>1  <span class="card" onclick="dC('giants-blood')">Giant's Blood</span></li>
+            <li>1  <span class="card" onclick="dC('jake-washington')">Jake Washington</span></li>
+            <li>1  <span class="card" onclick="dC('wider-view')">Wider View</span></li>
+            <li><h4>— Action (23) —</h4></li>
+            <li>10 <span class="card" onclick="dC('enchant-kindred')">Enchant Kindred</span></li>
+            <li>5  <span class="card" onclick="dC('mind-numb')">Mind Numb</span></li>
+            <li>3  <span class="card" onclick="dC('entrancement')">Entrancement</span></li>
+            <li>2  <span class="card" onclick="dC('legal-manipulations')">Legal Manipulations</span></li>
+            <li>2  <span class="card" onclick="dC('public-trust')">Public Trust</span></li>
+            <li>1  <span class="card" onclick="dC('intimidation')">Intimidation</span></li>
+            <li><h4>— Modifier (6) —</h4></li>
+            <li>6  <span class="card" onclick="dC('aire-of-elation')">Aire of Elation</span></li>
+            <li><h4>— Modifier/Combat (2) —</h4></li>
+            <li>2  <span class="card" onclick="dC('force-of-personality')">Force of Personality</span></li>
+            <li><h4>— Combat (9) —</h4></li>
+            <li>9  <span class="card" onclick="dC('majesty')">Majesty</span></li>
+            <li><h4>— Reaction (23) —</h4></li>
+            <li>8  <span class="card" onclick="dC('telepathic-misdirection')">Telepathic Misdirection</span></li>
+            <li>6  <span class="card" onclick="dC('eyes-of-argus')">Eyes of Argus</span></li>
+            <li>4  <span class="card" onclick="dC('my-enemys-enemy')">My Enemy's Enemy</span></li>
+            <li>3  <span class="card" onclick="dC('delaying-tactics')">Delaying Tactics</span></li>
+            <li>2  <span class="card" onclick="dC('on-the-qui-vive')">On the Qui Vive</span></li>
+            <li><h4>— Equipment (1) —</h4></li>
+            <li>1  <span class="card" onclick="dC('heart-of-nizchetus')">Heart of Nizchetus</span></li>
+            <li><h4>— Ally (1) —</h4></li>
+            <li>1  <span class="card" onclick="dC('carlton-van-wyk')">Carlton Van Wyk</span></li>
+            <li><h4>— Event (1) —</h4></li>
+            <li>1  <span class="card" onclick="dC('scourge-of-the-enochians')">Scourge of the Enochians</span></li>
+        </ul>
+    </div>
+    <h2>Highlights</h2>
+    <p>
+        This is a <em>powerbleed</em> deck starring
+        <span class="card" onclick="dC('rebekka-chantry-elder-of-munich')">Rebekka, Chantry Elder of Munich</span> and
+        <span class="card" onclick="dC('jost-werner')">Jost Werner</span>. The deck uses the <i>RA</i> disciplines
+        and the two star vampires have this nice permanent +1 stealth bonus that helps the deck get his actions through.
+    </p>
+    <p>
+        <span class="card" onclick="dC('enchant-kindred')">Enchant Kindred</span> is used to help get more vampires out
+        in the game beginning, and bleed afterwards. <span class="card" onclick="dC('mind-numb')">Mind Numb</span>
+        can be used against the prey or the predator depending on the context, to slow them down.
+    </p>
+    <p>
+        The deck uses no stealth apart from what the star vampires already have as an ability,
+        but the combination of <span class="card" onclick="dC('mind-numb')">Mind Numb</span>
+        and <span class="card" onclick="dC('majesty')">Majesty</span> makes it hard to block:
+        <span class="card" onclick="dC('mind-numb')">Mind Numb</span> can lock any defender and, if blocked,
+        <span class="card" onclick="dC('majesty')">Majesty</span> ends combat and untap the acting vampire:
+        the defender is still locked and a new action can be undertaken.
+    </p>
+    <p>
+        The deck uses <span class="card" onclick="dC('anarch-troublemaker')">Anarch Troublemaker</span> and
+        <span class="card" onclick="dC('pentex-tm-subversion')">Pentex™ Subversion</span> to help paralyze the prey a
+        bit more. When bleeds begin to get through,
+        <span class="card" onclick="dC('aire-of-elation')">Aire of Elation</span> can be used to enhance them.
+    </p>
+    <p>
+        If a bleed is bounced, it uses no stealth so it can usually be blocker by the grand-prey.
+        The deck himself uses <i>A</i> for intercept wakes and bounces, so it can add the bleed power of its
+        predator to its own.
+    </p>
+    <h2>Tips & Tricks</h2>
+    <p>
+        <span class="card" onclick="dC('entrancement')">Entrancement</span> can help get rid of cumbersome allies,
+        <span class="card" onclick="dC('scourge-of-the-enochians')">Scourge of the Enochians</span> is there to
+        deal with breed constructs.
+    </p>
+    <p>
+        <span class="card" onclick="dC('delaying-tactics')">Delaying Tactics</span> is the only defence available
+        against stealth & vote builds: as <span class="card" onclick="dC('eyes-of-argus')">Eyes of Argus</span>
+        can not be used against undirected political actions, intercept can never go beyond 2.
+    </p>
+    <p>
+        The deck plays a lot of bounces with
+        <span class="card" onclick="dC('telepathic-misdirection')">Telepathic Misdirection</span> and
+        <span class="card" onclick="dC('my-enemys-enemy')">My Enemy's Enemy</span>. They can also be used to block
+        key actions on the opponents side.
+    </p>
+    <h2>Variants</h2>
+    <p>
+        The main variant uses a Toreador antitribu crypt, so it can use
+        <span class="card" onclick="dC('palla-grande')">Palla Grande</span> to increase the bleed power, like in
+        <a href="http://www.vekn.fr/decks/twd.htm#2018ccpms">Moisés Ferrer's deck</a> from 2018.
+        It is the <strong>Palla Grande</strong> variant.
+        <span class="card" onclick="dC('art-scam')">Art Scam</span> and
+        <span class="card" onclick="dC('the-embrace')">The Embrace</span>
+        are used to strengthen both the bloat and the pool damages.
+    </p>
+    <p>
+        Another variant uses
+        <span class="card" onclick="dC('the-parthenon')">The Parthenon</span> and
+        <span class="card" onclick="dC('ashur-tablets')">Ashur Tablets</span> to get a bit of recursion
+        and help adapt the deck content to the table context, like in
+        <a href="http://www.vekn.fr/decks/twd.htm#2018nacd1co">Martin Weinmayer's deck</a> from 2018.
+    </p>
+    <p>
+        <span class="card" onclick="dC('rebekka-chantry-elder-of-munich')">Rebekka</span> can be ditched in favor
+        of <span class="card" onclick="dC('anson')">Anson</span> to help play the
+        <span class="card" onclick="dC('ashur-tablets')">Ashur Tablets</span> with less copies of
+        <span class="card" onclick="dC('the-parthenon')">The Parthenon</span> and add
+        <span class="card" onclick="dC('liquidation')">Liquidation</span> to the mix, like in
+        <a href="http://www.vekn.fr/decks/twd.htm#2012dnccd">Rudolf Scholz's deck</a> from 2012.
+    </p>
+    <p>
+        Finally, it is possible to build a crypt with less <i>A</i> and more <i>f</i>, allowing the use of
+        <span class="card" onclick="dC('daring-the-dawn')">Daring the Dawn</span> to help with the lunge.
+        As an example, <a href="http://www.vekn.fr/decks/twd.htm#2k9ecday2">Martin Weinmayer's deck</a> won the EC 2009.
+    </p>
+    <div class="clear"></div>
+    <div class="warning">
+        <h3 class="warning-title">Errata</h3>
+        <p>
+            <span class="card" onclick="dC('pentex-tm-subversion')">Pentex™ Subversion</span>
+            has been modified by an <em>errata</em> in September 2019.
+            It does not prevent a vampire to act anymore, so it is less powerful but still has its place in the deck,
+            as it was mainly used as a way to disable a blocker anyway.
+        </p>
+    </div>
+</article>
+</body>
+<footer>
+    <nav role="navigation">
+        <a class="prev" href="aaa.html">AAA</a>
+        <a href="index.html">Archetypes</a>
+        <a class="next" href="war-chantry.html">War Chantry</a>
+    </nav>
+</footer>
+</html>
