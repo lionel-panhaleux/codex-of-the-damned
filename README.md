@@ -8,3 +8,12 @@ and are used with permission. All rights reserved.
 For more information please visit [white-wolf.com](http://www.white-wolf.com).
 
 ![Dark Pack](icons/dark-pack.png)
+
+## Contributing
+
+Contributions are welcome. Pull Requests will be merged if they respect the general style.
+Issues will be dealt with as quickly as possible.
+
+This site a fully static website using no generator and only a few lines of JS.
+This is a voluntary [KISS](https://en.wikipedia.org/wiki/KISS_principle) design,
+please refrain from using additional tools or frameworks.
