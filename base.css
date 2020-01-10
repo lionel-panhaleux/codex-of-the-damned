@@ -29,11 +29,24 @@ a:focus {
 	color: #007acc;
 }
 header, footer {
-    padding: 2em;
-    padding-left: 5em;
-    padding-right: 5em;
     display: flex;
+    flex-flow: row;
+    padding: 2%;
+    padding-left: 4%;
+    padding-right: 4%;
     align-items: center;
+    clear: both;
+}
+header a {
+    display: flex;
+    margin-right: auto;
+}
+header img {
+    display: flex;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 150px;
+    height: 150px;
 }
 h1 {
     font-size: 2.5rem;
@@ -50,129 +63,6 @@ h2 {
     margin-top: 1em;
     margin-bottom: 0.5em;
     text-align: left;
-}
-h3 {
-    font-size: 1.2rem;
-    margin-top: 0.8em;
-    margin-bottom: 0.5em;
-    text-align: left;
-}
-h4 {
-    font-size: 1rem;
-    margin-top: 0.6em;
-    margin-bottom: 0.3em;
-}
-nav {
-    display: block;
-}
-nav ul {
-    list-style: none;
-    padding: 0;
-}
-nav li {
-    float: left;
-    padding: 0.5em;
-    position: relative;
-}
-footer {
-    margin-top: 4em;
-    flex-flow: column;
-    clear: both;
-}
-footer > nav > .prev::before{
-    font-family: "FontAwesome";
-    font-weight: 900;
-    content: "\f053";
-    padding-left: 0.5em;
-    padding-right: 0.5em;
-    display: inline-block;
-}
-footer > nav > .next::after{
-    font-family: "FontAwesome";
-    font-weight: 900;
-    content: "\f054";
-    padding-left: 0.5em;
-    padding-right: 0.5em;
-    display: inline-block;
-}
-footer a{
-    display: inline-block;
-    padding: 1em;
-}
-footer img {
-    max-width: 64px;
-    float: left;
-    margin-right: 1em;
-}
-footer p {
-    font-style: italic;
-    font-size: 0.8em;
-}
-footer p a {
-    padding: 0;
-}
-article{
-    max-width: 700px;
-    margin: 0 auto;
-    text-align: center;
-}
-i {
-    font-family: "Ankha VTES";
-    font-style: normal;
-}
-p {
-    margin: 0.5em;
-    text-align: left;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 700px;
-}
-article li {
-    margin: 0.2em;
-    text-align: left;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 700px;
-}
-article div {
-    padding: 15px 20px 15px 70px;
-    border-radius: 15px;
-    margin: 25px 0;
-    position: relative;
-}
-li > img {
-    height: 24px;
-    max-width: 32px;
-    vertical-align: middle;
-}
-td > img {
-    height: 24px;
-    max-width: 32px;
-    vertical-align: middle;
-}
-td {
-    text-align: left;
-}
-.article-columns {
-    max-width: 1200px;
-}
-.icon {
-    display: inline-block;
-    font-style: normal;
-    font-variant: normal;
-    text-rendering: auto;
-    line-height: 1;
-  }
-.td-icon {
-    text-align: center;
-    vertical-align: center;
-}
-.site-logo {
-    max-width: 100%;
-    min-width: 0;
-    display: flex;
-    align-items: center;
-    margin: 0 auto 0 0;
 }
 .modal{
     z-index:3;
@@ -194,11 +84,140 @@ td {
     outline:0;
     width:300px;
 }
-.modal-center{
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+@media only screen and (max-width: 750px) {
+    header, footer {
+        padding-left: 2%;
+        padding-right: 2%;
+        flex-direction: column
+    }
+    header img {
+        max-width: 75px;
+        max-height: 75px;
+    }
+    h1 {
+        font-size: 2rem;
+        clear: both;
+    }
+    h1 > img {
+        height: 40px;
+    }
+    .modal-content{
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    h2{
+        clear: both;
+    }
+}
+h3 {
+    font-size: 1.2rem;
+    margin-top: 0.8em;
+    margin-bottom: 0.5em;
+    text-align: left;
+}
+h4 {
+    font-size: 1rem;
+    margin-top: 0.6em;
+    margin-bottom: 0.3em;
+}
+nav {
+    display: inline-flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+nav li {
+    float: left;
+    padding: 0 0.5em;
+    position: relative;
+}
+footer {
+    max-width: 700px;
+    margin: 4em auto;
+}
+footer > nav > .prev::before{
+    font-family: "FontAwesome";
+    font-weight: 900;
+    content: "\f053";
+    padding: 0 0.5em;
+}
+footer > nav > .next::after{
+    font-family: "FontAwesome";
+    font-weight: 900;
+    content: "\f054";
+    padding: 0 0.5em;
+}
+footer a{
+    display: inline-flex;
+    padding: 1em;
+}
+footer img {
+    display: inline-flex;
+    max-width: 5em;
+    margin: 0 1em;
+    vertical-align: middle;
+}
+footer p {
+    font-style: italic;
+    font-size: 0.8em;
+    max-width: 700px;
+}
+footer p a {
+    padding: 0;
+}
+article{
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+}
+i {
+    font-family: "Ankha VTES";
+    font-style: normal;
+}
+p {
+    margin: 0.5em;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+}
+article li {
+    margin: 0.2em;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+}
+article div {
+    padding: 0.5em 2em;
+    border-radius: 1em;
+    margin: 1.5em auto;
+    clear: both;
+}
+li > img, td > img {
+    height: 1.5em;
+    max-width: 2em;
+    vertical-align: middle;
+}
+td {
+    text-align: left;
+}
+.article-columns {
+    max-width: 1200px;
+}
+.icon {
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+  }
+.td-icon {
+    text-align: center;
+    vertical-align: center;
 }
 .card{
     font-style: italic;
@@ -227,8 +246,7 @@ td {
     background: #fcf4ec;
     border: 1px solid rgb(220, 140, 70);
     max-width: 700px;
-    margin-left: auto;
-    margin-right: auto;
+    clear: both;
 }
 .tip h3 {
     color: #583410
@@ -237,10 +255,8 @@ td {
     font-family: "FontAwesome";
     font-weight: 900;
     content: "\f0eb";
-    position: absolute;
-    top: 25px;
-    left: 25px;
-    font-size: 30px;
+    font-size: 1.5em;
+    margin-right: 0.5em;
     color: #583410
 }
 .warning {
@@ -255,18 +271,15 @@ td {
     font-family: "FontAwesome";
     font-weight: 900;
     content: "\f071";
-    position: absolute;
-    top: 25px;
-    left: 25px;
-    font-size: 30px;
+    font-size: 1.5em;
+    margin-right: 0.5em;
     color: #582110
 }
 .decklist {
     float: left;
     padding: 0.5em;
     padding-left: 1em;
-    margin: 0;
-    margin-right: 1.5em;
+    margin: 0 1.5em 1.5em 0;
     background-color: #e7fad7;
 }
 .decklist h2 {
