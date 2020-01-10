@@ -55,8 +55,14 @@ h1 {
     padding-top: 0.6em;
     text-align: left;
 }
+article p img {
+    height: 1em;
+    max-width: 2em;
+    vertical-align: middle;
+}
 h1 > img {
-    height: 60px;
+    height: 1.5em;
+    max-width: 2em;
     vertical-align: middle;
 }
 h2 {
@@ -204,7 +210,12 @@ article div {
     margin: 1.5em auto;
     clear: both;
 }
-li > img, td > img {
+li > img{
+    height: 1em;
+    max-width: 2em;
+    vertical-align: middle;
+}
+td > img {
     height: 1.5em;
     max-width: 2em;
     vertical-align: middle;
