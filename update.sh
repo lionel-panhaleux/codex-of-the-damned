@@ -13,6 +13,9 @@ git diff `cat commit.hash` HEAD --name-status | while read line; do
     mod=${stat_path[0]}
     if [ "${stat_path[0]}" == "D" ]; then
         echo "rm ${stat_path[1]}" >> batch_delete;
+    elif [[ "${stat_path[0]}" == "R"* ]]; then
+        echo "rm ${stat_path[1]}" >> batch_delete;
+        echo "put ${stat_path[2]} `dirname ${stat_path[2]}`" >> batch_update;
     else
         echo "put ${stat_path[1]} `dirname ${stat_path[1]}`" >> batch_update;
     fi
