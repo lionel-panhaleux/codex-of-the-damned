@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" type="text/css" href="../../base.css"/>
+    <script>
+        function dC(name) {
+            document.getElementById("card-image").src = '../../card-images/'.concat(name, '.jpg');
+            document.getElementById("card-modal").style.display = "block";
+        }
+    </script>
+    <title>Codex of the Damned</title>
+</head>
+<body>
+<header role="banner">
+    <a href="../../index.html" class="site-logo">
+        <img src="../../icons/vtes.svg" alt="Codex of the Damned">
+        <h1>Codex of the Damned</h1>
+    </a>
+    <nav role="navigation">
+        <ul>
+            <li><a href="../../index.html">Home</a></li>
+            <li><a href="../../strategy/index.html">Strategy</a></li>
+            <li><a href="../../archetypes/index.html">Archetypes</a></li>
+            <li><a href="../../best-cards/index.html">Best Cards</a></li>
+            <li><a href="../../deck-guides/index.html">Deck Guides</a></li>
+            <li><a href="../../twda/index.html">TWDA</a></li>
+        </ul>
+    </nav>
+</header>
+<div id="card-modal" class="modal" onclick="this.style.display='none'">
+        <img class="modal-content modal-center" id="card-image">
+</div>
+<article class="article-columns">
+    <h1>Master</h1>
+    <div class="column">
+        <div class="column-image">
+            <img src="../../card-images/pentextmsubversion.jpg">
+            <h4>Pentex™ Subversion (1293 decks)</h4>
+        </div>
+        <p>
+            Before its <em>errata</em> in september 2019, <em>Pentex</em> was played in over half of tournament decks
+            and it was the most played card overall. It used to prevent the target minion from acting too,
+            and that made it the most versatile card of the game.
+            In the endgame its power is still worthwhile though: disabling a specific minion of the prey
+            can be key to victory.
+        </p>
+    </div>
+    <div class="column">
+        <div class="column-image">
+            <img src="../../card-images/dreamsofthesphinx.jpg">
+            <h4>Dreams of the Sphinx (1100 decks)</h4>
+        </div>
+        <p>
+            Loved for its ubiquitousness, the <em>Dreams</em> provides either two pool
+            (and can even accelerate the setup if played early) or help the deck rotation
+            in critical moments by drawing two cards.
+        </p>
+    </div>
+    <div class="column">
+        <div class="column-image">
+            <img src="../../card-images/giantsblood.jpg">
+            <h4>Giant's Blood (955 decks)</h4>
+        </div>
+        <p>
+            Even if it is only once per game, it brings more blood on the table than any other card,
+            with the notable exception of
+            <span class="card" onclick="dC('golcondainnerpeace')">Golconda: Inner Peace</span>.
+            It is often played in a single copy: with a bit of luck it brings a definitive advantage,
+            otherwise it prevents an opponent to play it himself.
+        </p>
+    </div>
+    <div class="column">
+        <div class="column-image">
+            <img src="../../card-images/vessel.jpg">
+            <h4>Vessel (847 decks)</h4>
+        </div>
+        <p>
+            The most played <a href="../../strategy/bloat.html#leeching">leech</a> cards,
+            it is similar to <span class="card" onclick="dC('blooddoll')">Blood Doll</span>.
+            Both enable a 1 point leech per turn and allow to give some blood back to a thirsty vampire,
+            which can avoid hunt acions and keep <a href="../../strategy/fundamentals.html#ABC">ABC</a> high.
+            Compared to <span class="card" onclick="dC('blooddoll')">Blood Doll</span>, its cost is higher:
+            it takes a full turn to kick in and costs 1 pool, making it 2 pool less efficient,
+            but it cannot be destroyed and is a <em>Trifle</em>.
+        </p>
+    </div>
+    <div class="column">
+        <div class="column-image">
+            <img src="../../card-images/villein.jpg">
+            <h4>Villein (756 decks)</h4>
+        </div>
+        <p>
+            Before its <em>errata</em> in 2018, it permitted to take back as much blood as desired
+            from the target vampire with no upper limit. Its <em>Trifle</em> trait made it one of the best leech option,
+            besting the <span class="card" onclick="dC('miniontap')">Minion Tap</span>.
+            The <em>errata</em> made <span class="card" onclick="dC('miniontap')">Minion Tap</span> relevant again,
+            so no doubt the play count between the two cards will evolve accordingly.
+        </p>
+    </div>
+    <div class="column">
+        <div class="column-image">
+            <img src="../../card-images/directintervention.jpg">
+            <h4>Direct Intervention (694 decks)</h4>
+        </div>
+        <p>
+            The ability to cancel any minion card is extremely valuable.
+            The 1 pool cost ensures it cannot be abused, but keeping it in hand
+            to cripple a lunge sequence has proven to be a definitive edge for winning a game.
+        </p>
+    </div>
+    <div class="column">
+        <div class="column-image">
+            <img src="../../card-images/blooddoll.jpg">
+            <h4>Blood Doll (552 decks)</h4>
+        </div>
+        <p>
+            Similar to <span class="card" onclick="dC('vessel')">Vessel</span> in its effect,
+            it is not a <em>Trifle</em>, so it does not fit in all decks depending on the number of Master cards.
+            Even if it can be destroyed by a <span class="card" onclick="dC('vessel')">Vessel</span>,
+            it is immediately usable when played and costs zero pool.
+        </p>
+    </div>
+    <div class="column">
+        <div class="column-image">
+            <img src="../../card-images/informationhighway.jpg">
+            <h4>Information Highway (542 decks)</h4>
+        </div>
+        <p>
+            An excellent crypt accelerator at no cost, it is played both with big capacity crypts, but also with
+            weenie crypts at 1-2 capacity to make it possible to draw and get out a vampire in a single turn.
+            Even if it is <em>Unique</em>, some decks include it in multiple copies to improve their chances
+            to draw it early on.
+        </p>
+    </div>
+    <div class="column">
+        <div class="column-image">
+            <img src="../../card-images/powerbasemontreal.jpg">
+            <h4>Powerbase: Montreal (491 decks)</h4>
+        </div>
+        <p>
+            A good bloat device that generates one pool per turn at no cost. It is a no-brainer in decks able to
+            defend it. It can also be a useful piece of bargain when dealing with other Methusalahs, as it can
+            easily be borrowed as part of a deal.
+        </p>
+    </div>
+    <div class="column">
+        <div class="column-image">
+            <img src="../../card-images/widerview.jpg">
+            <h4>Wider View (451 decks)</h4>
+        </div>
+        <p>
+            A cheap <em>Trifle</em> that provides some rotation to the crypt. For a lot of crypts, this is a useful
+            asset in the mid game to help fetch a third vampire. It is even guaranteed to
+            generate one pool at some point.
+        </p>
+    </div>
+    <div class="column">
+        <div class="column-image">
+            <img src="../../card-images/fame.jpg">
+            <h4>Fame (409 decks)</h4>
+        </div>
+        <p>
+            A key card for combat heavy decks, usually used on the prey's minions, it provides excellent pool damage.
+            The fact that it is <em>Unique</em> means it can not easily be abused, though.
+        </p>
+    </div>
+    <div class="column">
+        <div class="column-image">
+            <img src="../../card-images/archoninvestigation.jpg">
+            <h4>Archon Investigation (392 decks)</h4>
+        </div>
+        <p>
+            A dreadful deterrent against too powerful bleeders. A must have for decks who do not have access to bounces,
+            it can be included in virtually any deck just to discourage the 6-7 bleed scores <i>d</i> and <i>r</i>
+            can achieve.
+        </p>
+    </div>
+    <div class="column">
+        <div class="column-image">
+            <img src="../../card-images/wash.jpg">
+            <h4>Wash (388 decks)</h4>
+        </div>
+        <p>
+            Countering Master cards is often useful: the best move is to counter a bloat card like
+            <span class="card" onclick="dC('villein')">Villein</span>, which is equivalent to a serious bleed.
+            Other powerful Master cards can be countered this way too.
+        </p>
+    </div>
+    <div class="column">
+        <div class="column-image">
+            <img src="../../card-images/jakewashington.jpg">
+            <h4>Jake Washington (350 decks)</h4>
+        </div>
+        <p>
+            A good way to bring back some blood on a vampire, it can also provide protection by blocking an action
+            and is a key combination with <span class="card" onclick="dC('warghoul')">War Ghoul</span> and
+            <span class="card" onclick="dC('khazarsdiaryendlessnight')">Khazar's Diary</span>.
+        </p>
+    </div>
+    <div class="column">
+        <div class="column-image">
+            <img src="../../card-images/parthenonthe.jpg">
+            <h4>The Parthenon (340 decks)</h4>
+        </div>
+        <p>
+            A useful tool as it enable the play of more Master cards at no cost, it can be combined with vampires
+            providing yet another Master action: <span class="card" onclick="dC('anson')">Anson</span>,
+            <span class="card" onclick="dC('nanaburuku')">Nana Buruku</span>,
+            <span class="card" onclick="dC('cybele')">Cybele</span>,
+            <span class="card" onclick="dC('huitzilopochtli')">Huitzilopochtli</span> or
+            <span class="card" onclick="dC('isanwayen')">Isanwayen</span>.
+        </p>
+    </div>
+    <div class="column">
+        <div class="column-image">
+            <img src="../../card-images/perfectionist.jpg">
+            <h4>Perfectionist (337 decks)</h4>
+        </div>
+        <p>
+            An easy way to get some pool back on a vampire at no cost.
+            Many actions go through unblocked and unreacted to,
+            so it tends to bring a pool back on the vampire at least every other turn.
+        </p>
+    </div>
+    <div class="column">
+        <div class="column-image">
+            <img src="../../card-images/rackthe.jpg">
+            <h4>The Rack (332 decks)</h4>
+        </div>
+        <p>
+            One of the best tool available to bring some blood back on a vampire, it works beautifully with
+            <span class="card" onclick="dC('blooddoll')">Blood Doll</span> or
+            <span class="card" onclick="dC('vessel')">Vessel</span>. It needs to be defended to be kept in play,
+            but such a good blood generator at no cost is a bargain.
+        </p>
+    </div>
+    <div class="column">
+        <div class="column-image">
+            <img src="../../card-images/suddenreversal.jpg">
+            <h4>Sudden Reversal (322 decks)</h4>
+        </div>
+        <p>
+            Very similar to <span class="card" onclick="dC('wash')">Wash</span>, it is not a <em>Trifle</em> but,
+            on the other hand, it does not let the target play another Master, so it is a bit more efficient
+            for stopping a bloat. So, if there is room for a full fledged Master in the deck,
+            it is a marginally better option.
+        </p>
+    </div>
+    <div class="column">
+        <div class="column-image">
+            <img src="../../card-images/monasteryofshadows.jpg">
+            <h4>Monastery of Shadows (317 decks)</h4>
+        </div>
+        <p>
+            A costly but efficient location. The stealth can make the difference between life or death
+            for the prey, and the bonus hand size is nothing to frown upon.
+            It is a little bit better in decks using
+            <span class="card" onclick="dC('parityshift')">Parity Shift</span> as it can get the pool down just enough
+            to be able to play the vote against one's prey.
+        </p>
+    </div>
+    <div class="column">
+        <div class="column-image">
+            <img src="../../card-images/coventhe.jpg">
+            <h4>The Coven (284 decks)</h4>
+        </div>
+        <p>
+            A good way to bring some blood back on the table, is it a useful tool against rush and grinder decks.
+            Even if it does not come along so often, the fact that it helps the whole table can really slow down these
+            particular archetypes.
+        </p>
+    </div>
+    <div class="column">
+        <div class="column-image">
+            <img src="../../card-images/anarchtroublemaker.jpg">
+            <h4>Anarch Troublemaker (280 decks)</h4>
+        </div>
+        <p>
+            A powerful tool for <em>powerbleed</em> constructs. Its ability to destroy an equipment can be useful,
+            but it is mostly included for its ability to lock vampires, and it is a key card for bleed decks
+            without stealth.
+        </p>
+    </div>
+    <div class="column">
+        <div class="column-image">
+            <img src="../../card-images/ashurtablets.jpg">
+            <h4>Ashur Tablets (279 decks)</h4>
+        </div>
+        <p>
+            It is a decent bloating device but its key ability is to allow some recursion in the deck.
+            Played in conjunction with some cards to add Master action,
+            it becomes tremendously efficient. Decks that use it typically include a dozen of them,
+            but getting over 20 copies is not unheard of.
+        </p>
+    </div>
+    <div class="column">
+        <div class="column-image">
+            <img src="../../card-images/securehaven.jpg">
+            <h4>Secure Haven (272 decks)</h4>
+        </div>
+        <p>
+            Although <em>Unique</em>, it is a solid counter against rush decks. Other options are required to
+            really defend against them as this can only protect one vampire, but still this is a vampire one
+            would not take down easily.
+        </p>
+    </div>
+    <div class="column">
+        <div class="column-image">
+            <img src="../../card-images/smilingjacktheanarch.jpg">
+            <h4>Smiling Jack, The Anarch (264 decks)</h4>
+        </div>
+        <p>
+            This is a good damage dealing option for <em>wall</em> decks. As they tend to be low on pool damage, this
+            helps them ousting the table in timely fashion.
+        </p>
+    </div>
+    <div class="column">
+        <div class="column-image">
+            <img src="../../card-images/golcondainnerpeace.jpg">
+            <h4>Golconda: Inner Peace (245 decks)</h4>
+        </div>
+        <p>
+            Although loosing a vampire is a steep price to pay, this is the highest bloat possible.
+            Played on a 10 or 11 capacity vampire, that's a lot of pool, moreover
+            if <span class="card" onclick="dC('miniontap')">Minion Tap</span> has been played on the vampire the turn
+            before. It can always be played for 2 pool damages on the prey.
+        </p>
+    </div>
+    <div class="column">
+        <div class="column-image">
+            <img src="../../card-images/zillahsvalley.jpg">
+            <h4>Zillah's Valley (217 decks)</h4>
+        </div>
+        <p>
+            An excellent crypt accelerator provided one has big capacity vampires and enough pool to use it.
+            It is a very good combination with <span class="card" onclick="dC('villein')">Villein</span> or
+            <span class="card" onclick="dC('miniontap')">Minion Tap</span>, but also helps get some pool out fast
+            to play a <span class="card" onclick="dC('parityshift')">Parity Shift</span> on one's prey.
+        </p>
+    </div>
+    <div class="column">
+        <div class="column-image">
+            <img src="../../card-images/barrensthe.jpg">
+            <h4>The Barrens (202 decks)</h4>
+        </div>
+        <p>
+            Although not as versatile as
+            <span class="card" onclick="dC('dreamsofthesphinx')">Dreams of the Sphinx</span>,
+            it is a good additional tool to help card rotation at no cost.
+        </p>
+    </div>
+    <div class="column">
+        <div class="column-image">
+            <img src="../../card-images/krcgnewsradio.jpg">
+            <h4>KRCG News Radio (193 decks)</h4>
+        </div>
+        <p>
+            A good permanent intercept card at a decent price, it can even be used to help another player.
+            As it is <em>Unique</em>, other locations can be included along it to improve intercept,
+            in order of frequency
+            <span class="card" onclick="dC('wmrhtalkradio')">WRMH Talk Radio</span>,
+            <span class="card" onclick="dC('channel10')">Channel 10</span>,
+            <span class="card" onclick="dC('rumormilltabloidnewspaperthe')">
+                The Rumor Mill
+            </span> and
+            <span class="card" onclick="dC('wallstreetnightfinancialnewspaper')">
+                Wall Street Night
+            </span>.
+        </p>
+    </div>
+    <div class="column">
+        <div class="column-image">
+            <img src="../../card-images/misdirection.jpg">
+            <h4>Misdirection (168 decks)</h4>
+        </div>
+        <p>
+            A nice tool for <em>powerbleed</em> constructs, it helps to get bleeds through when one has no stealth.
+            Although a bit expansive, it is often a key card for the lunge in such decks.
+        </p>
+    </div>
+    <div class="column">
+        <div class="column-image">
+            <img src="../../card-images/havenuncovered.jpg">
+            <h4>Haven Uncovered (168 decks)</h4>
+        </div>
+        <p>
+            An excellent device for combat-oriented decks. Broader than a rush action like
+            <span class="card" onclick="dC('bumsrush')">Bum's Rush</span>, it lets all the minions rush the target.
+            This is a good way to quickly overwhelm a "Strike: combat ends" defensive module, plus it will take
+            an action to remove, slowing the opponent even more.
+        </p>
+    </div>
+    <div class="column">
+        <div class="column-image">
+            <img src="../../card-images/miniontap.jpg">
+            <h4>Minion Tap (159 decks)</h4>
+        </div>
+        <p>
+            An excellent bloat device, it helps to get multiple big capacity vampires out at a reasonnable cost.
+            Even better with crypt accelerators like
+            <span class="card" onclick="dC('zillahsvalley')">Zillah's Valley</span> and
+            <span class="card" onclick="dC('informationhighway')">Information Highway</span>,
+            it has long been outclassed by <span class="card" onclick="dC('villein')">Villein</span>,
+            until the <em>errata</em> of 2018 setting an upper limit of 5 blood on it.
+        </p>
+    </div>
+    <div class="column">
+        <div class="column-image">
+            <img src="../../card-images/liquidation.jpg">
+            <h4>Liquidation (157 decks)</h4>
+        </div>
+        <p>
+            An excellent bloat device, its side-effect of card discard can be a bummer, as many
+            decks rely on the fact that even just 2 exemplaries of a given card are enough to draw it at some point
+            in the game. However, used in conjunction with
+            <span class="card" onclick="dC('ashurtablets')">Ashur Tablets</span>,
+            <span class="card" onclick="dC('emeraldlegionnaire')">Emerald Legionnaire</span> or
+            <span class="card" onclick="dC('sudariorefraction')">Sudario Refraction</span>, it becomes unvaluable.
+        </p>
+    </div>
+</article>
+</body>
+<footer>
+    <nav role="navigation">
+        <a href="../index.html">Best Cards</a>
+        <a class="next" href="political-action.html">Political Action</a>
+    </nav>
+</footer>
+</html>
