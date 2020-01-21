@@ -20,8 +20,11 @@ function cardElement(element) {
     if (reference.startsWith("the ")) {
         reference = reference.substr(4, reference.length) + "the"
     }
-    reference = reference.replace(/\s|,|\.|-|'|:|\(|\)|"/g, "")
-    reference = reference.replace("é", "e")
+    reference = reference.replace(/\s|,|\.|-|'|:|\(|\)|"|!/g, "")
+    reference = reference.replace("é", "e") // Céleste
+    reference = reference.replace("ö", "o") // Rötschreck
+    reference = reference.replace("ç", "c") // Monçada
+    reference = reference.replace("ó", "o") // Dónal
     return `<li>${element[0]} <span class="card" onclick="dC('${reference}')">${element[1]}</span></li>\n`
 }
 function wrapText(text, maxlen) {
