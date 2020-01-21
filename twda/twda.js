@@ -25,7 +25,8 @@ function cardElement(element) {
     reference = reference.replace("ö", "o") // Rötschreck
     reference = reference.replace("ç", "c") // Monçada
     reference = reference.replace("ó", "o") // Dónal
-    return `<li>${element[0]} <span class="card" onclick="dC('${reference}')">${element[1]}</span></li>\n`
+    const name = element[1].replace("(TM) ", "™ ")
+    return `<li>${element[0]} <span class="card" onclick="dC('${reference}')">${name}</span></li>\n`
 }
 function wrapText(text, maxlen) {
     if (!text) {
