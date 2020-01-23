@@ -1,6 +1,6 @@
 async function getDeck(data) {
     let response = await fetch(
-        `http://127.0.0.1:8000/deck`, {
+        `https://krcg.herokuapp.com/deck`, {
         method: "post",
         body: JSON.stringify(data),
         headers: {
