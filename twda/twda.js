@@ -1,6 +1,6 @@
 async function getDeck(data) {
     let response = await fetch(
-        `https://krcg.herokuapp.com/deck`, {
+        `http://127.0.0.1:8000/deck`, {
         method: "post",
         body: JSON.stringify(data),
         headers: {
@@ -100,7 +100,7 @@ function displayDeck(data, twda_id) {
 }
 function getAndDisplayDeck(element, twda_id) {
     getDeck({ "twda_id": twda_id })
-        .then(data => displayDeck(data[0], twda_id))
+        .then(data => displayDeck(data[0][1], data[0][0]))
         .catch(reason => displayError(reason.message))
     if (element) {
         window.history.pushState({ "twda_id": 1 }, "TWDA", `?twda_id=${twda_id}`)
