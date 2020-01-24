@@ -1,7 +1,6 @@
 function getDeckWithCards(cards) {
     fetch(
-        // `https://krcg.herokuapp.com/deck`, {
-        `http://127.0.0.1:8000/deck`, {
+        `https://krcg.herokuapp.com/deck`, {
         method: "POST",
         body: JSON.stringify({ "cards": cards }),
         headers: {
@@ -23,8 +22,7 @@ function getDeckWithCards(cards) {
 }
 function getDeckByID(element, twda_id) {
     fetch(
-        // encodeURI(`https://krcg.herokuapp.com/deck/${twda_id}`), {
-        encodeURI(`http://127.0.0.1:8000/deck/${twda_id}`), {
+        encodeURI(`https://krcg.herokuapp.com/deck/${twda_id}`), {
         method: "GET",
         headers: { 'Accept': 'application/json' }
     })
