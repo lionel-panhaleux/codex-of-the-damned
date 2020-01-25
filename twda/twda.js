@@ -51,10 +51,10 @@ function cardElement(element) {
         reference = reference.substr(4, reference.length) + "the"
     }
     reference = reference.replace(/\s|,|\.|-|'|:|\(|\)|"|!/g, "")
-    reference = reference.replace("é", "e") // Céleste
-    reference = reference.replace("ö", "o") // Rötschreck
-    reference = reference.replace("ç", "c") // Monçada
-    reference = reference.replace("ó", "o") // Dónal
+    reference = reference.replace(/é/g, "e") // Céleste
+    reference = reference.replace(/ö/g, "o") // Rötschreck
+    reference = reference.replace(/ç/g, "c") // Monçada
+    reference = reference.replace(/ó/g, "o") // Dónal
     const name = element["name"].replace("(TM) ", "™ ")
     return `<li>${element["count"]} <span class="card" onclick="dC('${reference}')">${name}</span></li>\n`
 }
