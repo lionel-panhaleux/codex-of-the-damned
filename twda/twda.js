@@ -55,6 +55,7 @@ function cardElement(element) {
     reference = reference.replace(/ö|ó/g, "o") // Rötschreck, Dónal
     reference = reference.replace(/ç/g, "c") // Monçada
     reference = reference.replace(/á/g, "a") // Vásquez
+    reference = reference.replace(/ñ/g, "n") // Montaña
     const name = element["name"].replace("(TM) ", "™ ")
     return `<li>${element["count"]} <span class="card" onclick="dC('${reference}')">${name}</span></li>\n`
 }
