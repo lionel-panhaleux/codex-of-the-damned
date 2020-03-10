@@ -28,7 +28,7 @@ function getDeckByID(element, twda_id) {
     })
         .then(function (response) {
             if (!response.ok) {
-                throw Error(response.statusText);
+                throw Error(response.text());
             }
             return response;
         })
