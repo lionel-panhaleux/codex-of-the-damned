@@ -10,14 +10,22 @@ function getDeckWithCards(cards) {
     })
         .then(function (response) {
             if (!response.ok) {
-                throw Error(response.statusText);
+                console.log(response.status)
+                if (response.status >= 500 && response.status < 600) {
+                    throw Error("TWDA bootstrapping, please wait...")
+                } else if (response.status >= 404 && response.status < 600) {
+                    throw Error("No example found in TWDA.")
+                }
+                else {
+                    throw Error(response.statusText)
+                }
             }
-            return response;
+            return response
         })
         .then(response => response.json())
         .then(data => displayDeckChoices(data))
         .catch(function (error) {
-            document.getElementById("results").textContent = error.message
+            document.getElementById("result-message").innerHTML = `<p>${error.message}</p>`
         })
 }
 function getDeckByID(element, twda_id) {
@@ -28,14 +36,22 @@ function getDeckByID(element, twda_id) {
     })
         .then(function (response) {
             if (!response.ok) {
-                throw Error(response.text());
+                console.log(response.status)
+                if (response.status >= 500 && response.status < 600) {
+                    throw Error("TWDA bootstrapping, please wait...")
+                } else if (response.status >= 404 && response.status < 600) {
+                    throw Error(`Deck #${twda_id} not found.`)
+                }
+                else {
+                    throw Error(response.statusText)
+                }
             }
-            return response;
+            return response
         })
         .then(response => response.json())
         .then(data => displayDeck(data))
         .catch(function (error) {
-            document.getElementById("results").textContent = error.message
+            document.getElementById("result-message").innerHTML = `<p>${error.message}</p>`
         })
     if (element) {
         window.history.pushState({ "twda_id": twda_id }, "TWDA", `?twda_id=${twda_id}`)
@@ -51,9 +67,9 @@ function cardElement(element) {
         reference = reference.substr(4, reference.length) + "the"
     }
     reference = reference.replace(/\s|,|\.|-|'|:|\(|\)|"|!/g, "")
-    reference = reference.replace(/é/g, "e") // Céleste
     reference = reference.replace(/ö|ó/g, "o") // Rötschreck, Dónal
     reference = reference.replace(/ç/g, "c") // Monçada
+    reference = reference.replace(/é/g, "e") // Céleste
     reference = reference.replace(/á/g, "a") // Vásquez
     reference = reference.replace(/ñ/g, "n") // Montaña
     const name = element["name"].replace("(TM) ", "™ ")
@@ -107,9 +123,15 @@ function displayDeckChoices(data) {
     console.log(data)
     removeComments()
     let list = ""
+    let message = ""
     if (!data || data.length < 1) {
-        list = "No result in TWDA."
+        message = "No result in TWDA."
+    } else if (data.length === 1) {
+        message = `1 deck found.`
+    } else {
+        message = `${data.length} decks found.`
     }
+    document.getElementById("result-message").innerHTML = `<p>${message}</p>`
     for (const deck of data) {
         list += `
         <tr class="results">

@@ -260,13 +260,17 @@ div.comments {
     border-radius: 0;
     clear: none;
 }
+div.result-message {
+    border: 0;
+    padding: 0;
+    margin: 1em 0;
+}
 .autocomplete {
     width: 50%;
     margin: 0;
     padding: 0;
 }
 .autocomplete-items {
-    /* position: absolute; */
     border: 1px solid #d4d4d4;
     z-index: 99;
     margin: 0;
