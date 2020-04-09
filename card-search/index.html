@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+	<meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta property="og:image" content="http://codex-of-the-damned.org/codex.jpg"/>
+    <meta name="description" content="Vampire: the Eternal Struggle (VTES) Tournament Winning Deck Archive (TWDA)">
+    <link rel="stylesheet" type="text/css" href="../base.css"/>
+    <script>
+        function dC(name) {
+            document.getElementById("card-image").src = '../card-images/'.concat(name, '.jpg');
+            document.getElementById("card-modal").style.display = "block";
+        }
+    </script>
+    <script src="card.js"></script>
+    <title>Card search</title>
+</head>
+<body>
+<header role="banner">
+    <a href="../index.html" class="site-logo">
+        <img src="../icons/vtes.svg" alt="Codex of the Damned">
+        <h1>Codex of the Damned</h1>
+    </a>
+    <nav role="navigation">
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../strategy/index.html">Strategy</a></li>
+            <li><a href="../archetypes/index.html">Archetypes</a></li>
+            <li><a href="../best-cards/index.html">Best Cards</a></li>
+            <li><a href="../deck-guides/index.html">Deck Guides</a></li>
+            <li><a href="../twda/index.html">TWDA</a></li>
+            <li><a href="../card-search/index.html">Card Search</a></li>
+        </ul>
+    </nav>
+</header>
+<div id="card-modal" class="modal" onclick="this.style.display='none'">
+        <img class="modal-content" id="card-image">
+</div>
+<article>
+    <h1>Card Search</h1>
+    <p>
+        Official cards text and rulings.
+    </p>
+    <form id="card-form" autocomplete="off">
+        <div class="autocomplete">
+            <input type="text" id="card_name" placeholder="Card Name"/>
+        </div>
+    </form>
+    <div class="result-message" id="result-message"></div>
+    <div class="card-results" id="results">
+        <div class="result-image" id="result-image-div">
+            <img class="modal-content" id="result-image">
+        </div>
+        <div class="result-text", id="result-text-div">
+            <h3 id="card-title">Card Title</h3>
+            <p id="card-text"></p>
+        </div>
+        <div class="result-rulings", id="result-rulings-div">
+        </div>
+    </div>
+</article>
+</body>
+<footer>
+    <nav role="navigation">
+        <a class="prev" href="../deck-guides/index.html">Deck Guides</a>
+        <a href="../index.html">Home</a>
+    </nav>
+</footer>
+</html>

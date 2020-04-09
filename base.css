@@ -407,6 +407,32 @@ div.result-message {
     text-decoration: none;
     cursor: pointer;
 }
+.card-results {
+    padding: 0;
+}
+.result-image {
+    float: left;
+    padding: 0.5em;
+    padding-left: 0em;
+    margin: 0 1.5em 1.5em 0;
+}
+.result-text {
+    clear: none;
+}
+.result-rulings {
+    margin: 0;
+    padding: 0;
+}
+.rulings-list {
+    list-style: decimal;
+    padding: 0;
+}
+.rulings-list a {
+    text-decoration: none;
+}
+.rulings-list li {
+    margin: 0.5em;
+}
 .code {
     font-family: 'Courier New', Courier, monospace;
     font-size: small;
