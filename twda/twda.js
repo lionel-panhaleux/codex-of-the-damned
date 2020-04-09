@@ -69,9 +69,10 @@ function cardElement(element) {
     reference = reference.replace(/\s|,|\.|-|'|:|\(|\)|"|!/g, "")
     reference = reference.replace(/ö|ó/g, "o") // Rötschreck, Dónal
     reference = reference.replace(/ç/g, "c") // Monçada
-    reference = reference.replace(/é/g, "e") // Céleste
+    reference = reference.replace(/é|ë/g, "e") // Céleste, Gaël
     reference = reference.replace(/á/g, "a") // Vásquez
     reference = reference.replace(/ñ/g, "n") // Montaña
+    reference = reference.replace(/ü/g, "u") // Powerbase: Zürich
     const name = element["name"].replace("(TM) ", "™ ")
     return `<li>${element["count"]} <span class="card" onclick="dC('${reference}')">${name}</span></li>\n`
 }
