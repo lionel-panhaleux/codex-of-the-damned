@@ -414,11 +414,17 @@ div.result-message {
 .card-results {
     padding: 0;
 }
-.result-image {
+.result-image-div {
     float: left;
     padding: 0.5em;
     padding-left: 0em;
     margin: 0 1.5em 1.5em 0;
+}
+.result-image {
+    margin:auto;
+    padding:0;
+    outline:0;
+    width:300px;
 }
 .result-text {
     clear: none;
