@@ -37,7 +37,7 @@ function formatText(text) {
         "[DEM]": "<i>E</i>",
         "[dom]": "<i>d</i>",
         "[DOM]": "<i>D</i>",
-        "[Flight]": "<i>^</i>",
+        "[FLIGHT]": "<i>^</i>",
         "[for]": "<i>f</i>",
         "[FOR]": "<i>F</i>",
         "[mal]": "<i>â</i>",

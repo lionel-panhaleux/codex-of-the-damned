@@ -78,7 +78,7 @@ function cardElement(element) {
 }
 function wrapText(text, maxlen) {
     if (!text) {
-        return "N/A"
+        return "(No name)"
     }
     if (text.length > maxlen) {
         return text.substr(0, maxlen - 3) + "..."
