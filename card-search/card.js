@@ -131,6 +131,12 @@ function displayCard(data, push) {
         window.history.pushState({ "card": data["Name"] }, "Card Search", `?card=${data["Name"]}`)
     }
     window.document.title = data["Name"]
+    for (let metatag of document.getElementsByTagName("meta")) {
+        if (metatags.getAttribute("property") == "og:image") {
+            metatag.setAttribute("content", card_image_url)
+            break
+        }
+    }
 }
 function getCardByName(card_name, push = false) {
     fetch(
