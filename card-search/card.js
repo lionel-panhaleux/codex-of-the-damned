@@ -95,7 +95,8 @@ function formatText(text) {
 }
 function displayCard(data, push) {
     clearResults()
-    document.getElementById("result-image").src = '../card-images/'.concat(getCardImageName(data["Name"]), '.jpg');
+    const card_image_url = '../card-images/'.concat(getCardImageName(data["Name"]), '.jpg')
+    document.getElementById("result-image").src = card_image_url
     document.getElementById("card-title").textContent = data["Name"].replace("(TM) ", "™ ")
     for (let section of data["Card Text"].replace("{", "").replace("}", "").split("\n")) {
         pelem = document.createElement("p")
@@ -129,6 +130,7 @@ function displayCard(data, push) {
     if (push) {
         window.history.pushState({ "card": data["Name"] }, "Card Search", `?card=${data["Name"]}`)
     }
+    window.document.title = data["Name"]
 }
 function getCardByName(card_name, push = false) {
     fetch(
