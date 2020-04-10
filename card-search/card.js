@@ -132,7 +132,7 @@ function displayCard(data, push) {
     }
     window.document.title = data["Name"]
     for (let metatag of document.getElementsByTagName("meta")) {
-        if (metatags.getAttribute("property") == "og:image") {
+        if (metatag.getAttribute("property") == "og:image") {
             metatag.setAttribute("content", card_image_url)
             break
         }
