@@ -21,6 +21,11 @@ function getCardImageName(name) {
 }
 function formatText(text) {
     const disc_map = {
+        "[1 CONVICTION]": "<i>¤</i>",
+        "[2 CONVICTION]": "<i>¤¤</i>",
+        "[3 CONVICTION]": "<i>¤¤¤</i>",
+        "[4 CONVICTION]": "<i>¤¤¤¤</i>",
+        "[5 CONVICTION]": "<i>¤¤¤¤¤</i>",
         "[abo]": "<i>w</i>",
         "[ABO]": "<i>W</i>",
         "[ani]": "<i>i</i>",
@@ -40,10 +45,11 @@ function formatText(text) {
         "[FLIGHT]": "<i>^</i>",
         "[for]": "<i>f</i>",
         "[FOR]": "<i>F</i>",
-        "[mal]": "<i>â</i>",
-        "[MAL]": "<i>ã</i>",
+        "[mal]": "<i>â </i>",
+        "[MAL]": "<i>ã </i>",
         "[mel]": "<i>m</i>",
         "[MEL]": "<i>M</i>",
+        "[MERGED]": "<i>µ </i>",
         "[myt]": "<i>x</i>",
         "[MYT]": "<i>X</i>",
         "[nec]": "<i>n</i>",
@@ -68,8 +74,8 @@ function formatText(text) {
         "[SER]": "<i>S</i>",
         "[spi]": "<i>z</i>",
         "[SPI]": "<i>Z</i>",
-        "[str]": "<i>à</i>",
-        "[STR]": "<i>á</i>",
+        "[str]": "<i>à </i>",
+        "[STR]": "<i>á </i>",
         "[tem]": "<i>?</i>",
         "[TEM]": "<i>?</i>",
         "[thn]": "<i>h</i>",
@@ -84,10 +90,10 @@ function formatText(text) {
         "[VIS]": "<i>U</i>"
     }
     return text
-        .replace(RegExp(Object.keys(disc_map).map(x => x.replace(/(\[|\])/g, "\\$1")).join("|")), x => disc_map[x])
+        .replace(RegExp(Object.keys(disc_map).map(x => x.replace(/(\[|\])/g, "\\$1")).join("|"), "g"), x => disc_map[x])
         .replace(/\{([^\}]*)\}/g, (_, x) => `<span class="card" onclick="dC('${getCardImageName(x)}')">${x}</span>`)
 }
-function displayCard(data) {
+function displayCard(data, push) {
     clearResults()
     document.getElementById("result-image").src = '../card-images/'.concat(getCardImageName(data["Name"]), '.jpg');
     document.getElementById("card-title").textContent = data["Name"].replace("(TM) ", "™ ")
@@ -120,8 +126,11 @@ function displayCard(data) {
             `<a target="_blank" href="https://github.com/lionel-panhaleux/codex-of-the-damned/issues">Github</a></p>.`
     }
     document.getElementById("results").style.display = "block";
+    if (push) {
+        window.history.pushState({ "card": data["Name"] }, "Card Search", `?card=${data["Name"]}`)
+    }
 }
-function getCardByName(card_name) {
+function getCardByName(card_name, push = false) {
     fetch(
         encodeURI(`https://krcg.herokuapp.com/card/${card_name}`), {
         method: "GET",
@@ -141,11 +150,10 @@ function getCardByName(card_name) {
             return response
         })
         .then(response => response.json())
-        .then(data => displayCard(data))
+        .then(data => displayCard(data, push))
         .catch(function (error) {
             document.getElementById("result-message").innerHTML = `<p>${error.message}</p>`
         })
-    window.history.pushState({ "card": card_name }, "Card Search", `?card=${card_name}`)
 }
 function closeAllLists(input, elmnt) {
     for (let x of document.getElementsByClassName("autocomplete-items")) {
@@ -159,7 +167,7 @@ function displayCompletion(input, items_list, data) {
         b.addEventListener("click", function (e) {
             input.value = this.textContent
             closeAllLists(input)
-            getCardByName([input.value])
+            getCardByName(input.value, true)
         })
         items_list.appendChild(b);
     }
@@ -211,7 +219,7 @@ function autocomplete(input) {
         } else if (e.keyCode === 13) { // ENTER
             e.preventDefault();
             if (currentFocus > -1 && x) { x[currentFocus].click() }
-            getCardByName([input.value])
+            getCardByName(input.value, true)
         } else if (e.keyCode === 8 || e.keyCode === 46) { // DELETE or BACKSPACE
             doComplete()
         }
