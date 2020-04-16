@@ -103,6 +103,7 @@ function displayCard(data, push) {
     const card_image_url = '../card-images/'.concat(getCardImageName(data["Name"]), '.jpg')
     document.getElementById("result-image").src = card_image_url
     document.getElementById("card-title").textContent = data["Name"].replace("(TM) ", "™ ")
+    document.getElementById("card_info").innerHTML = `#${data["Id"]}<br/>${data["Set"].join(" ")}`
     for (let section of data["Card Text"].replace("{", "").replace("}", "").split("\n")) {
         pelem = document.createElement("p")
         pelem.innerHTML = formatText(section)
