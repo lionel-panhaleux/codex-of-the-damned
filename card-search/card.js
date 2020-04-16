@@ -118,7 +118,7 @@ function displayCard(data, push) {
             ruling_links[rlink["Reference"]] = rlink["URL"]
         }
         for (const ruling of data["Rulings"]) {
-            const reference_re = /\[(\w{3}\s\w{8,})\]/g
+            const reference_re = /\[([a-zA-Z0-9]+\s[0-9-]+)\]/g
             let ruling_item = document.createElement("li")
             ruling_item.innerHTML = formatText(ruling.replace(reference_re, ""))
             const references = [...ruling.matchAll(reference_re)]
