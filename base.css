@@ -414,9 +414,12 @@ div.result-message {
 .card-results {
     padding: 0;
 }
-.subtitle {
+.center-subtitle, .subtitle {
     font-style: italic;
     font-size: 0.8em;
+}
+.center-subtitle {
+    text-align: center;
 }
 .result-image-div {
     float: left;
