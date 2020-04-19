@@ -86,15 +86,14 @@ h2 {
     background-color:rgba(0,0,0,0.4)
 }
 .modal-content{
-    margin:auto;
     padding:0;
     outline:0;
-    width:300px;
+    max-width:300px;
     margin: 0.5em;
 }
 .modal-nav{
     font-family: "FontAwesome";
-    width:300px;
+    max-width:300px;
     font-weight: 900;
     font-size: 2em;
     text-align: center;
@@ -121,11 +120,16 @@ h2 {
     h1 > img {
         height: 40px;
     }
+    .modal{
+        padding: 5vh 5vw;
+    }
     .modal-content{
-        position: fixed;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+        max-height: 70vh;
+        max-width:  85vw;
+    }
+    .modal-nav{
+        max-height: 15vh;
+        max-width:  85vw;
     }
     h2{
         clear: both;
