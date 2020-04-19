@@ -7,12 +7,7 @@
     <meta name="description" content="Vampire: the Eternal Struggle (VTES) archetype: Euro Brujah">
     <link rel="stylesheet" type="text/css" href="../base.css"/>
     <link rel="icon" href="http://codex-of-the-damned.org/icons/vtes.svg">
-    <script>
-        function dC(name) {
-            document.getElementById("card-image").src = '../card-images/'.concat(name, '.jpg');
-            document.getElementById("card-modal").style.display = "block";
-        }
-    </script>
+    <script src="../decklist.js"></script>
     <title>Euro Brujah</title>
 </head>
 <body>
@@ -32,63 +27,21 @@
         </ul>
     </nav>
 </header>
-<div id="card-modal" class="modal" onclick="this.style.display='none'">
-        <img class="modal-content" id="card-image">
+<div id="card-modal" class="modal" onclick="this.style.display='none'" tabindex="-1">
+    <div id=card-prev class="modal-nav">&#xf077</div>
+    <img class="modal-content" id="card-image"/>
+    <div id=card-next class="modal-nav">&#xf078</div>
 </div>
 <article>
     <h1><img src="../icons/clan-brujah.svg"> Euro Brujah</h1>
-    <div class="decklist">
-        <h2><a href="http://www.vekn.fr/decks/twd.htm#2017fwutbi">Euro Brujah</a></h2>
-        <p>
-            Deck by Marius Iscru & François Greiner<br/>
-            Friendly Warm Up Tournament<br/>
-            Bologna, Italy<br/>
-            December 9th 2017<br/>
-            36 players<br/>
-        </p>
-
-        <h3>Crypt (12 cards)</h3>
-        <ul>
-            <li>3  <span class="card" onclick="dC('theobell')">Theo Bell</span></li>
-            <li>2  <span class="card" onclick="dC('constanzavinti')">Constanza Vinti</span></li>
-            <li>2  <span class="card" onclick="dC('donaloconnor')">Dónal O'Connor</span></li>
-            <li>2  <span class="card" onclick="dC('beasttheleatherfaceofdetroit')">Beast, The Leatherface of Detroit</span></li>
-            <li>1  <span class="card" onclick="dC('anvil')">Anvil</span></li>
-            <li>1  <span class="card" onclick="dC('rake')">Rake</span></li>
-            <li>1  <span class="card" onclick="dC('volkerthepuppetprince')">Volker, The Puppet Prince</span></li>
+    <div id="decklist" class="decklist" style="display: none">
+        <h2 id="deck-name"><a id="deck-link" href="http://example.com"></a></h2>
+        <p id="deck-header"></p>
+        <h3 id="crypt-header"></h3>
+        <ul id="crypt-list">
         </ul>
-        <h3>Library (90 cards)</h3>
-        <ul>
-            <li><h4>— Master (14) —</h4></li>
-            <li>5  <span class="card" onclick="dC('villein')">Villein</span></li>
-            <li>1  <span class="card" onclick="dC('carversmeatpackingandstorage')">Carver's Meat Packing and Storage</span></li>
-            <li>1  <span class="card" onclick="dC('depravity')">Depravity</span></li>
-            <li>1  <span class="card" onclick="dC('directintervention')">Direct Intervention</span></li>
-            <li>1  <span class="card" onclick="dC('fame')">Fame</span></li>
-            <li>1  <span class="card" onclick="dC('giantsblood')">Giant's Blood</span></li>
-            <li>1  <span class="card" onclick="dC('newcarthage')">New Carthage</span></li>
-            <li>1  <span class="card" onclick="dC('pentextmsubversion')">Pentex™ Subversion</span></li>
-            <li>1  <span class="card" onclick="dC('powerbasemontreal')">Powerbase: Montreal</span></li>
-            <li>1  <span class="card" onclick="dC('rackthe')">The Rack</span></li>
-            <li><h4>— Action (10) —</h4></li>
-            <li>9  <span class="card" onclick="dC('governtheunaligned')">Govern the Unaligned</span></li>
-            <li>1  <span class="card" onclick="dC('aranthebestheimmortal')">Aranthebes, The Immortal</span></li>
-            <li><h4>— Political Action (4) —</h4></li>
-            <li>4  <span class="card" onclick="dC('parityshift')">Parity Shift</span></li>
-            <li><h4>— Modifier/Combat (2) —</h4></li>
-            <li>2  <span class="card" onclick="dC('resistearthsgrasp')">Resist Earth's Grasp</span></li>
-            <li><h4>— Combat (44) —</h4></li>
-            <li>8  <span class="card" onclick="dC('immortalgrapple')">Immortal Grapple</span></li>
-            <li>8  <span class="card" onclick="dC('tornsignpost')">Torn Signpost</span></li>
-            <li>7  <span class="card" onclick="dC('tasteofvitae')">Taste of Vitae</span></li>
-            <li>6  <span class="card" onclick="dC('pursuit')">Pursuit</span></li>
-            <li>5  <span class="card" onclick="dC('disarm')">Disarm</span></li>
-            <li>4  <span class="card" onclick="dC('blur')">Blur</span></li>
-            <li>4  <span class="card" onclick="dC('thrownsewerlid')">Thrown Sewer Lid</span></li>
-            <li>2  <span class="card" onclick="dC('sideslip')">Sideslip</span></li>
-            <li><h4>— Reaction (16) —</h4></li>
-            <li>10 <span class="card" onclick="dC('secondtraditiondomain')">Second Tradition: Domain</span></li>
-            <li>6  <span class="card" onclick="dC('deflection')">Deflection</span></li>
+        <h3 id="library-header"></h3>
+        <ul id="library-list">
         </ul>
     </div>
     <h2>Highlights</h2>
@@ -177,4 +130,12 @@
         <a class="next" href="girls-will-find-inner-circles.html">Girls Will Find Inner Circles</a>
     </nav>
 </footer>
+<script>
+    window.onload = function () {
+        document.getElementById("card-modal").addEventListener("keydown", modalKeydown)
+        document.getElementById("card-prev").addEventListener("click", prevCard)
+        document.getElementById("card-next").addEventListener("click", nextCard)
+        displayDeck({"author":"Fran\u00e7ois Greiner (with tweaks from Marius, such as +2 Sideslip)","comments":"","crypt":{"cards":[{"comments":null,"count":3,"id":"201362","name":"Theo Bell"},{"comments":null,"count":2,"id":"200289","name":"Constanza Vinti"},{"comments":null,"count":2,"id":"200364","name":"D\u00f3nal O'Connor"},{"comments":null,"count":2,"id":"200179","name":"Beast, The Leatherface of Detroit"},{"comments":null,"count":1,"id":"200120","name":"Anvil"},{"comments":null,"count":1,"id":"201155","name":"Rake"},{"comments":null,"count":1,"id":"201458","name":"Volker, The Puppet Prince"}],"count":12},"date":"2017-12-09","event":"Friendly Warm Up Tournament","library":{"cards":[{"cards":[{"comments":null,"count":5,"id":"102121","name":"Villein"},{"comments":null,"count":1,"id":"100303","name":"Carver's Meat Packing and Storage"},{"comments":null,"count":1,"id":"100526","name":"Depravity"},{"comments":null,"count":1,"id":"100545","name":"Direct Intervention"},{"comments":null,"count":1,"id":"100698","name":"Fame"},{"comments":null,"count":1,"id":"100824","name":"Giant's Blood"},{"comments":null,"count":1,"id":"101277","name":"New Carthage"},{"comments":null,"count":1,"id":"101384","name":"Pentex(TM) Subversion"},{"comments":null,"count":1,"id":"101439","name":"Powerbase: Montreal"},{"comments":null,"count":1,"id":"101536","name":"The Rack"}],"count":14,"type":"Master"},{"cards":[{"comments":null,"count":9,"id":"100845","name":"Govern the Unaligned"},{"comments":null,"count":1,"id":"100079","name":"Aranthebes, The Immortal"}],"count":10,"type":"Action"},{"cards":[{"comments":null,"count":4,"id":"101353","name":"Parity Shift"}],"count":4,"type":"Political Action"},{"cards":[{"comments":null,"count":2,"id":"101610","name":"Resist Earth's Grasp"}],"count":2,"type":"Action Modifier/Combat"},{"cards":[{"comments":null,"count":8,"id":"100959","name":"Immortal Grapple"},{"comments":null,"count":8,"id":"101993","name":"Torn Signpost"},{"comments":null,"count":7,"id":"101945","name":"Taste of Vitae"},{"comments":null,"count":6,"id":"101523","name":"Pursuit"},{"comments":null,"count":5,"id":"100549","name":"Disarm"},{"comments":null,"count":4,"id":"100227","name":"Blur"},{"comments":null,"count":4,"id":"101983","name":"Thrown Sewer Lid"},{"comments":null,"count":2,"id":"101779","name":"Sideslip"}],"count":44,"type":"Combat"},{"cards":[{"comments":null,"count":10,"id":"101706","name":"Second Tradition: Domain"},{"comments":null,"count":6,"id":"100518","name":"Deflection"}],"count":16,"type":"Reaction"}],"count":90},"name":"Euro Brujah","place":"Bologna, Italy","player":"Marius Iscru","players_count":36,"score":"3GW11+3","tournament_format":"3R+F","twda_id":"2017fwutbi"})
+    }
+</script>
 </html>

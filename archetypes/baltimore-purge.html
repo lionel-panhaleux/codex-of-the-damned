@@ -7,12 +7,7 @@
     <meta name="description" content="Vampire: the Eternal Struggle (VTES) archetype: Baltimore Purge">
     <link rel="stylesheet" type="text/css" href="../base.css"/>
     <link rel="icon" href="http://codex-of-the-damned.org/icons/vtes.svg">
-    <script>
-        function dC(name) {
-            document.getElementById("card-image").src = '../card-images/'.concat(name, '.jpg');
-            document.getElementById("card-modal").style.display = "block";
-        }
-    </script>
+    <script src="../decklist.js"></script>
     <title>Baltimore Purge</title>
 </head>
 <body>
@@ -32,70 +27,21 @@
         </ul>
     </nav>
 </header>
-<div id="card-modal" class="modal" onclick="this.style.display='none'">
-        <img class="modal-content" id="card-image">
+<div id="card-modal" class="modal" onclick="this.style.display='none'" tabindex="-1">
+    <div id=card-prev class="modal-nav">&#xf077</div>
+    <img class="modal-content" id="card-image"/>
+    <div id=card-next class="modal-nav">&#xf078</div>
 </div>
 <article>
     <h1><img src="../icons/clan-lasombra.svg"> Baltimore Purge</h1>
-    <div class="decklist">
-        <h2><a href="http://www.vekn.fr/decks/twd.htm#2018ocspb">Titanic</a></h2>
-        <p>
-            Deck by Desso Alastor<br/>
-            Brazilian CCQ  - O CHAMADO<br/>
-            São Paulo, Brazil<br/>
-            March 3rd 2018<br/>
-            18 players<br/>
-        </p>
-        <h3>Crypt (12 cards)</h3>
-        <ul>
-            <li>5  <span class="card" onclick="dC('montano')">Montano</span></li>
-            <li>2  <span class="card" onclick="dC('lucita')">Lucita</span></li>
-            <li>1  <span class="card" onclick="dC('guidolucciano')">Guido Lucciano</span></li>
-            <li>1  <span class="card" onclick="dC('ignaciotheblackpriest')">Ignacio, The Black Priest</span></li>
-            <li>1  <span class="card" onclick="dC('ramiro')">Ramiro</span></li>
-            <li>1  <span class="card" onclick="dC('cameron')">Cameron</span></li>
-            <li>1  <span class="card" onclick="dC('aaronduggancameronstoady')">Aaron Duggan, Cameron's Toady</span></li>
+    <div id="decklist" class="decklist" style="display: none">
+        <h2 id="deck-name"><a id="deck-link" href="http://example.com"></a></h2>
+        <p id="deck-header"></p>
+        <h3 id="crypt-header"></h3>
+        <ul id="crypt-list">
         </ul>
-        <h3>Library (90 cards)</h3>
-        <ul>
-            <li><h4>— Master (24) —</h4></li>
-            <li>4  <span class="card" onclick="dC('parthenonthe')">The Parthenon</span></li>
-            <li>4  <span class="card" onclick="dC('zillahsvalley')">Zillah's Valley</span></li>
-            <li>2  <span class="card" onclick="dC('dreamsofthesphinx')">Dreams of the Sphinx</span></li>
-            <li>2  <span class="card" onclick="dC('golcondainnerpeace')">Golconda: Inner Peace</span></li>
-            <li>2  <span class="card" onclick="dC('heidelbergcastlegermany')">Heidelberg Castle, Germany</span></li>
-            <li>2  <span class="card" onclick="dC('informationhighway')">Information Highway</span></li>
-            <li>2  <span class="card" onclick="dC('villein')">Villein</span></li>
-            <li>1  <span class="card" onclick="dC('elysianfields')">Elysian Fields</span></li>
-            <li>1  <span class="card" onclick="dC('giantsblood')">Giant's Blood</span></li>
-            <li>1  <span class="card" onclick="dC('monasteryofshadows')">Monastery of Shadows</span></li>
-            <li>1  <span class="card" onclick="dC('pentextmsubversion')">Pentex™ Subversion</span></li>
-            <li>1  <span class="card" onclick="dC('politicalhuntingground')">Political Hunting Ground</span></li>
-            <li>1  <span class="card" onclick="dC('vulnerability')">Vulnerability</span></li>
-            <li><h4>— Action (22) —</h4></li>
-            <li>9  <span class="card" onclick="dC('baltimorepurge')">Baltimore Purge</span></li>
-            <li>6  <span class="card" onclick="dC('mindrape')">Mind Rape</span></li>
-            <li>5  <span class="card" onclick="dC('graverobbing')">Graverobbing</span></li>
-            <li>2  <span class="card" onclick="dC('renewedvigor')">Renewed Vigor</span></li>
-            <li><h4>— Modifier (31) —</h4></li>
-            <li>16 <span class="card" onclick="dC('freakdrive')">Freak Drive</span></li>
-            <li>3  <span class="card" onclick="dC('conditioning')">Conditioning</span></li>
-            <li>2  <span class="card" onclick="dC('blanketofnight')">Blanket of Night</span></li>
-            <li>2  <span class="card" onclick="dC('enkilcog')">Enkil Cog</span></li>
-            <li>2  <span class="card" onclick="dC('seduction')">Seduction</span></li>
-            <li>2  <span class="card" onclick="dC('shadowplay')">Shadow Play</span></li>
-            <li>2  <span class="card" onclick="dC('shroudofabsence')">Shroud of Absence</span></li>
-            <li>2  <span class="card" onclick="dC('shroudofnight')">Shroud of Night</span></li>
-            <li><h4>— Combat (2) —</h4></li>
-            <li>2  <span class="card" onclick="dC('shadowbody')">Shadow Body</span></li>
-            <li><h4>— Reaction (8) —</h4></li>
-            <li>4  <span class="card" onclick="dC('obedience')">Obedience</span></li>
-            <li>2  <span class="card" onclick="dC('deflection')">Deflection</span></li>
-            <li>2  <span class="card" onclick="dC('eludingthearmsofmorpheus')">Eluding the Arms of Morpheus</span></li>
-            <li><h4>— Ally (3) —</h4></li>
-            <li>1  <span class="card" onclick="dC('carltonvanwyk')">Carlton Van Wyk</span></li>
-            <li>1  <span class="card" onclick="dC('gregorywinter')">Gregory Winter</span></li>
-            <li>1  <span class="card" onclick="dC('mylanhorseed')">Mylan Horseed</span></li>
+        <h3 id="library-header"></h3>
+        <ul id="library-list">
         </ul>
     </div>
     <h2>Highlights</h2>
@@ -173,4 +119,12 @@
         <a class="next" href="bima-dominate.html">Bima Dominate</a>
     </nav>
 </footer>
+<script>
+    window.onload = function () {
+        document.getElementById("card-modal").addEventListener("keydown", modalKeydown)
+        document.getElementById("card-prev").addEventListener("click", prevCard)
+        document.getElementById("card-next").addEventListener("click", nextCard)
+        displayDeck({"author":null,"comments":"Turbo Montano: Bleed + Baltimore + Mind Rape\n","crypt":{"cards":[{"comments":null,"count":5,"id":"201006","name":"Montano"},{"comments":null,"count":2,"id":"200874","name":"Lucita"},{"comments":null,"count":1,"id":"200544","name":"Guido Lucciano"},{"comments":null,"count":1,"id":"200622","name":"Ignacio, The Black Priest"},{"comments":null,"count":1,"id":"201157","name":"Ramiro"},{"comments":null,"count":1,"id":"200239","name":"Cameron"},{"comments":null,"count":1,"id":"200003","name":"Aaron Duggan, Cameron's Toady"}],"count":12},"date":"2018-03-03","event":"Brazilian CCQ  - O CHAMADO","library":{"cards":[{"cards":[{"comments":null,"count":4,"id":"101355","name":"The Parthenon"},{"comments":null,"count":4,"id":"102207","name":"Zillah's Valley"},{"comments":null,"count":2,"id":"100588","name":"Dreams of the Sphinx"},{"comments":null,"count":2,"id":"100842","name":"Golconda: Inner Peace"},{"comments":null,"count":2,"id":"100908","name":"Heidelberg Castle, Germany"},{"comments":null,"count":2,"id":"100984","name":"Information Highway"},{"comments":null,"count":2,"id":"102121","name":"Villein"},{"comments":null,"count":1,"id":"100629","name":"Elysian Fields"},{"comments":null,"count":1,"id":"100824","name":"Giant's Blood"},{"comments":null,"count":1,"id":"101238","name":"Monastery of Shadows"},{"comments":null,"count":1,"id":"101384","name":"Pentex(TM) Subversion"},{"comments":null,"count":1,"id":"101415","name":"Political Hunting Ground"},{"comments":null,"count":1,"id":"102134","name":"Vulnerability"}],"count":24,"type":"Master"},{"cards":[{"comments":null,"count":9,"id":"100128","name":"Baltimore Purge"},{"comments":null,"count":6,"id":"101215","name":"Mind Rape"},{"comments":null,"count":5,"id":"100852","name":"Graverobbing"},{"comments":null,"count":2,"id":"101603","name":"Renewed Vigor"}],"count":22,"type":"Action"},{"cards":[{"comments":null,"count":16,"id":"100788","name":"Freak Drive"},{"comments":null,"count":3,"id":"100401","name":"Conditioning"},{"comments":null,"count":2,"id":"100177","name":"Blanket of Night"},{"comments":null,"count":2,"id":"100645","name":"Enkil Cog"},{"comments":null,"count":2,"id":"101712","name":"Seduction"},{"comments":null,"count":2,"id":"101743","name":"Shadow Play"},{"comments":null,"count":2,"id":"101774","name":"Shroud of Absence"},{"comments":null,"count":2,"id":"101775","name":"Shroud of Night"}],"count":31,"type":"Action Modifier"},{"cards":[{"comments":null,"count":2,"id":"101735","name":"Shadow Body"}],"count":2,"type":"Combat"},{"cards":[{"comments":null,"count":4,"id":"101309","name":"Obedience"},{"comments":null,"count":2,"id":"100518","name":"Deflection"},{"comments":null,"count":2,"id":"100628","name":"Eluding the Arms of Morpheus"}],"count":8,"type":"Reaction"},{"cards":[{"comments":null,"count":1,"id":"100298","name":"Carlton Van Wyk"},{"comments":null,"count":1,"id":"100855","name":"Gregory Winter"},{"comments":null,"count":1,"id":"101261","name":"Mylan Horseed"}],"count":3,"type":"Ally"}],"count":90},"name":"Titanic","place":"S\u00e3o Paulo, Brazil","player":"Desso Alastor","players_count":18,"score":"3VP in final","tournament_format":"3R+F","twda_id":"2018ocspb"})
+    }
+</script>
 </html>

@@ -7,12 +7,7 @@
     <meta name="description" content="Vampire: the Eternal Struggle (VTES) archetype: AAA">
     <link rel="stylesheet" type="text/css" href="../base.css"/>
     <link rel="icon" href="http://codex-of-the-damned.org/icons/vtes.svg">
-    <script>
-        function dC(name) {
-            document.getElementById("card-image").src = '../card-images/'.concat(name, '.jpg');
-            document.getElementById("card-modal").style.display = "block";
-        }
-    </script>
+    <script src="../decklist.js"></script>
     <title>AAA</title>
 </head>
 <body>
@@ -32,71 +27,21 @@
         </ul>
     </nav>
 </header>
-<div id="card-modal" class="modal" onclick="this.style.display='none'">
-        <img class="modal-content" id="card-image">
+<div id="card-modal" class="modal" onclick="this.style.display='none'" tabindex="-1">
+    <div id=card-prev class="modal-nav">&#xf077</div>
+    <img class="modal-content" id="card-image"/>
+    <div id=card-next class="modal-nav">&#xf078</div>
 </div>
 <article>
     <h1><img src="../icons/clan-toreador.svg"> AAA</h1>
-    <div class="decklist">
-        <h2><a href="http://www.vekn.fr/decks/twd.htm#2014incbi">AAA</a></h2>
-        <p>
-            Enrico De Stefano<br/>
-            Italian NC 2014<br/>
-            Bologna, Italy<br/>
-            June 1st 2014<br/>
-            25 players<br/>
-        </p>
-        <h3>Crypt (12 cards)</h3>
-        <ul>
-            <li>4  <span class="card" onclick="dC('anson')">Anson</span></li>
-            <li>2  <span class="card" onclick="dC('alexandra')">Alexandra</span></li>
-            <li>2  <span class="card" onclick="dC('anneke')">Anneke</span></li>
-            <li>1  <span class="card" onclick="dC('francoisvillon')">François Villon</span></li>
-            <li>1  <span class="card" onclick="dC('marcellus')">Marcellus</span></li>
-            <li>1  <span class="card" onclick="dC('tatianaromanov')">Tatiana Romanov</span></li>
-            <li>1  <span class="card" onclick="dC('volkerthepuppetprince')">Volker, The Puppet Prince</span></li>
+    <div id="decklist" class="decklist" style="display: none">
+        <h2 id="deck-name"><a id="deck-link" href="http://example.com"></a></h2>
+        <p id="deck-header"></p>
+        <h3 id="crypt-header"></h3>
+        <ul id="crypt-list">
         </ul>
-        <h3>Library (90 cards)</h3>
-        <ul>
-            <li><h4>— Master (30) —</h4></li>
-            <li>9  <span class="card" onclick="dC('ashurtablets')">Ashur Tablets</span></li>
-            <li>7  <span class="card" onclick="dC('liquidation')">Liquidation</span></li>
-            <li>5  <span class="card" onclick="dC('villein')">Villein</span></li>
-            <li>3  <span class="card" onclick="dC('havenuncovered')">Haven Uncovered</span></li>
-            <li>1  <span class="card" onclick="dC('artmuseum')">Art Museum</span></li>
-            <li>1  <span class="card" onclick="dC('golcondainnerpeace')">Golconda: Inner Peace</span></li>
-            <li>1  <span class="card" onclick="dC('informationhighway')">Information Highway</span></li>
-            <li>1  <span class="card" onclick="dC('papillon')">Papillon</span></li>
-            <li>1  <span class="card" onclick="dC('pentextmsubversion')">Pentex™ Subversion</span></li>
-            <li>1  <span class="card" onclick="dC('widerview')">Wider View</span></li>
-            <li><h4>— Action (3) —</h4></li>
-            <li>2  <span class="card" onclick="dC('entrancement')">Entrancement</span></li>
-            <li>1  <span class="card" onclick="dC('heartofthecity')">Heart of the City</span></li>
-            <li><h4>— Political (4) —</h4></li>
-            <li>3  <span class="card" onclick="dC('parityshift')">Parity Shift</span></li>
-            <li>1  <span class="card" onclick="dC('politicalstranglehold')">Political Stranglehold</span></li>
-            <li><h4>— Modifier (2) —</h4></li>
-            <li>2  <span class="card" onclick="dC('aireofelation')">Aire of Elation</span></li>
-            <li><h4>— Modifier/Combat (4) —</h4></li>
-            <li>4  <span class="card" onclick="dC('resistearthsgrasp')">Resist Earth's Grasp</span></li>
-            <li><h4>— Combat (21) —</h4></li>
-            <li>4  <span class="card" onclick="dC('blur')">Blur</span></li>
-            <li>4  <span class="card" onclick="dC('concealedweapon')">Concealed Weapon</span></li>
-            <li>4  <span class="card" onclick="dC('psyche')">Psyche</span>!</li>
-            <li>4  <span class="card" onclick="dC('tasteofvitae')">Taste of Vitae</span></li>
-            <li>3  <span class="card" onclick="dC('charismaticaura')">Charismatic Aura</span></li>
-            <li>2  <span class="card" onclick="dC('sidestrike')">Side Strike</span></li>
-            <li><h4>— Reaction (13) —</h4></li>
-            <li>8  <span class="card" onclick="dC('secondtraditiondomain')">Second Tradition: Domain</span></li>
-            <li>5  <span class="card" onclick="dC('telepathicmisdirection')">Telepathic Misdirection</span></li>
-            <li><h4>— Equipment (11) —</h4></li>
-            <li>6  <span class="card" onclick="dC('44magnum')">.44 Magnum</span></li>
-            <li>3  <span class="card" onclick="dC('heartofnizchetus')">Heart of Nizchetus</span></li>
-            <li>1  <span class="card" onclick="dC('bowlofconvergence')">Bowl of Convergence</span></li>
-            <li>1  <span class="card" onclick="dC('codexoftheedenicgroundskeepers')">Codex of the Edenic Groundskeepers</span></li>
-            <li><h4>— Event (2) —</h4></li>
-            <li>1  <span class="card" onclick="dC('antheliostheredstar')">Anthelios, The Red Star</span></li>
-            <li>1  <span class="card" onclick="dC('scourgeoftheenochians')">Scourge of the Enochians</span></li>
+        <h3 id="library-header"></h3>
+        <ul id="library-list">
         </ul>
     </div>
     <h2>Highlights</h2>
@@ -194,4 +139,119 @@
         <a class="next" href="akunanse-wall.html">Akunanse Wall</a>
     </nav>
 </footer>
+<script>
+    window.onload = function () {
+        document.getElementById("card-modal").addEventListener("keydown", modalKeydown)
+        document.getElementById("card-prev").addEventListener("click", prevCard)
+        document.getElementById("card-next").addEventListener("click", nextCard)
+        displayDeck({
+            "twda_id": "2014incbi",
+            "name": "Alert Attention Alarm",
+            "player": "Enrico De Stefano",
+            "date": "2014-06-01",
+            "event": "Italian NC 2014",
+            "place": "Bologna, Italy",
+            "players_count": 25,
+            "tournament_format": "3R+F",
+            "comments": "-- Once again, our Enrico De Stefano defend his national title. Congratulations.\n",
+            "crypt": {
+                "count": 12,
+                "cards": [
+                    {"count": 4, "id": "200107", "name": "Anson"},
+                    {"count": 2, "id": "200049", "name": "Alexandra"},
+                    {"count": 2, "id": "200106", "name": "Anneke"},
+                    {"count": 1, "id": "200478", "name": "François Villon"},
+                    {"count": 1, "id": "200910", "name": "Marcellus"},
+                    {"count": 1, "id": "201347", "name": "Tatiana Romanov"},
+                    {"count": 1, "id": "201458", "name": "Volker, The Puppet Prince"}
+                ]
+            },
+            "library": {
+                "count": 90,
+                "cards": [
+                    {
+                        "type": "Master",
+                        "count": 30,
+                        "cards": [
+                            {"count": 9, "id": "100106", "name": "Ashur Tablets"},
+                            {"count": 7, "id": "101112", "name": "Liquidation"},
+                            {"count": 5, "id": "102121", "name": "Villein"},
+                            {"count": 3, "id": "100897", "name": "Haven Uncovered"},
+                            {"count": 1, "id": "100095", "name": "Art Museum"},
+                            {"count": 1, "id": "100842", "name": "Golconda: Inner Peace"},
+                            {"count": 1, "id": "100984", "name": "Information Highway"},
+                            {"count": 1, "id": "101350", "name": "Papillon"},
+                            {"count": 1, "id": "101384", "name": "Pentex(TM) Subversion"},
+                            {"count": 1, "id": "102180", "name": "Wider View"}
+                        ]
+                    },
+                    {
+                        "type": "Action",
+                        "count": 3,
+                        "cards": [
+                            {"count": 2, "id": "100652", "name": "Entrancement"},
+                            {"count": 1, "id": "100904", "name": "Heart of the City"}
+                        ]
+                    },
+                    {
+                        "type": "Political Action",
+                        "count": 4,
+                        "cards": [
+                            {"count": 3, "id": "101353", "name": "Parity Shift"},
+                            {"count": 1, "id": "101417", "name": "Political Stranglehold"}
+                        ]
+                    },
+                    {
+                        "type": "Action Modifier",
+                        "count": 2,
+                        "cards": [{"count": 2, "id": "100031", "name": "Aire of Elation"}]
+                    },
+                    {
+                        "type": "Action Modifier/Combat",
+                        "count": 4,
+                        "cards": [{"count": 4, "id": "101610", "name": "Resist Earth's Grasp"}]
+                    },
+                    {
+                        "type": "Combat",
+                        "count": 21,
+                        "cards": [
+                            {"count": 4, "id": "100227", "name": "Blur"},
+                            {"count": 4, "id": "100392", "name": "Concealed Weapon"},
+                            {"count": 4, "id": "101507", "name": "Psyche!"},
+                            {"count": 4, "id": "101945", "name": "Taste of Vitae"},
+                            {"count": 3, "id": "100333", "name": "Charismatic Aura"},
+                            {"count": 2, "id": "101778", "name": "Side Strike"}
+                        ]
+                    },
+                    {
+                        "type": "Reaction",
+                        "count": 13,
+                        "cards": [
+                            {"count": 8, "id": "101706", "name": "Second Tradition: Domain"},
+                            {"count": 5, "id": "101949", "name": "Telepathic Misdirection"}
+                        ]
+                    },
+                    {
+                        "type": "Equipment",
+                        "count": 11,
+                        "cards": [
+                            {"count": 6, "id": "100001", "name": ".44 Magnum"},
+                            {"count": 3, "id": "100903", "name": "Heart of Nizchetus"},
+                            {"count": 1, "id": "100243", "name": "Bowl of Convergence"},
+                            {"count": 1, "id": "100374", "name": "Codex of the Edenic Groundskeepers"}
+                        ]
+                    },
+                    {
+                        "type": "Event",
+                        "count": 2,
+                        "cards": [
+                            {"count": 1, "id": "100074", "name": "Anthelios, The Red Star"},
+                            {"count": 1, "id": "101697", "name": "Scourge of the Enochians"}
+                        ]
+                    }
+                ]
+            }
+        })
+    }
+</script>
 </html>

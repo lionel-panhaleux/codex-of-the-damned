@@ -7,12 +7,7 @@
     <meta name="description" content="Vampire: the Eternal Struggle (VTES) archetype: Akunanse Wall">
     <link rel="stylesheet" type="text/css" href="../base.css"/>
     <link rel="icon" href="http://codex-of-the-damned.org/icons/vtes.svg">
-    <script>
-        function dC(name) {
-            document.getElementById("card-image").src = '../card-images/'.concat(name, '.jpg');
-            document.getElementById("card-modal").style.display = "block";
-        }
-    </script>
+    <script src="../decklist.js"></script>
     <title>Akunanse Wall</title>
 </head>
 <body>
@@ -32,70 +27,21 @@
         </ul>
     </nav>
 </header>
-<div id="card-modal" class="modal" onclick="this.style.display='none'">
-        <img class="modal-content" id="card-image">
+<div id="card-modal" class="modal" onclick="this.style.display='none'" tabindex="-1">
+    <div id=card-prev class="modal-nav">&#xf077</div>
+    <img class="modal-content" id="card-image"/>
+    <div id=card-next class="modal-nav">&#xf078</div>
 </div>
 <article>
     <h1><img src="../icons/clan-akunanse.svg"> Akunanse Wall</h1>
-
-    <div class="decklist">
-        <h2><a href="http://www.vekn.fr/decks/twd.htm#2018hgpbh">Example Deck</a></h2>
-        <p>
-            Deck by Dávid Farkas<br/>
-            Hungarian Grand Prix<br/>
-            Budapest, Hungary<br/>
-            April 28th 2018<br/>
-            38 players<br/>
-        </p>
-        <h3>Crypt (12 cards)</h3>
-        <ul>
-            <li>2  <span class="card" onclick="dC('fakiralsidi')">Fakir al Sidi</span></li>
-            <li>2  <span class="card" onclick="dC('matata')">Matata</span></li>
-            <li>2  <span class="card" onclick="dC('amavi')">Amavi</span></li>
-            <li>2  <span class="card" onclick="dC('uchenna')">Uchenna</span></li>
-            <li>2  <span class="card" onclick="dC('jubal')">Jubal</span></li>
-            <li>2  <span class="card" onclick="dC('sanjo')">Sanjo</span></li>
+    <div id="decklist" class="decklist" style="display: none">
+        <h2 id="deck-name"><a id="deck-link" href="http://example.com"></a></h2>
+        <p id="deck-header"></p>
+        <h3 id="crypt-header"></h3>
+        <ul id="crypt-list">
         </ul>
-        <h3>Library (90 cards)</h3>
-        <ul>
-            <li><h4>— Master (19) —</h4></li>
-            <li>5  <span class="card" onclick="dC('villein')">Villein</span></li>
-            <li>3  <span class="card" onclick="dC('dreamsofthesphinx')">Dreams of the Sphinx</span></li>
-            <li>2  <span class="card" onclick="dC('vessel')">Vessel</span></li>
-            <li>1  <span class="card" onclick="dC('archoninvestigation')">Archon Investigation</span></li>
-            <li>1  <span class="card" onclick="dC('giantsblood')">Giant's Blood</span></li>
-            <li>1  <span class="card" onclick="dC('guardianangel')">Guardian Angel</span></li>
-            <li>1  <span class="card" onclick="dC('mapatanoutando')">Mapatano Utando</span></li>
-            <li>1  <span class="card" onclick="dC('pentextmsubversion')">Pentex™ Subversion</span></li>
-            <li>1  <span class="card" onclick="dC('powerbaseluanda')">Powerbase: Luanda</span></li>
-            <li>1  <span class="card" onclick="dC('powerbasemontreal')">Powerbase: Montreal</span></li>
-            <li>1  <span class="card" onclick="dC('rackthe')">The Rack</span></li>
-            <li>1  <span class="card" onclick="dC('wmrhtalkradio')">WMRH Talk Radio</span></li>
-            <li><h4>— Action (10) —</h4></li>
-            <li>8  <span class="card" onclick="dC('deepsong')">Deep Song</span></li>
-            <li>1  <span class="card" onclick="dC('armyofrats')">Army of Rats</span></li>
-            <li>1  <span class="card" onclick="dC('wellmarked')">Well-Marked</span></li>
-            <li><h4>— Modifier (7) —</h4></li>
-            <li>4  <span class="card" onclick="dC('freakdrive')">Freak Drive</span></li>
-            <li>3  <span class="card" onclick="dC('predatorsmastery')">Predator's Mastery</span></li>
-            <li><h4>— Combat (31) —</h4></li>
-            <li>7  <span class="card" onclick="dC('carrioncrows')">Carrion Crows</span></li>
-            <li>7  <span class="card" onclick="dC('invokingthebeast')">Invoking the Beast</span></li>
-            <li>7  <span class="card" onclick="dC('tasteofvitae')">Taste of Vitae</span></li>
-            <li>4  <span class="card" onclick="dC('hiddenstrength')">Hidden Strength</span></li>
-            <li>3  <span class="card" onclick="dC('rollingwiththepunches')">Rolling with the Punches</span></li>
-            <li>2  <span class="card" onclick="dC('soak')">Soak</span></li>
-            <li>1  <span class="card" onclick="dC('caninehorde')">Canine Horde</span></li>
-            <li><h4>— Reaction (17) —</h4></li>
-            <li>6  <span class="card" onclick="dC('predatorscommunion')">Predator's Communion</span></li>
-            <li>6  <span class="card" onclick="dC('sensethesavageway')">Sense the Savage Way</span></li>
-            <li>5  <span class="card" onclick="dC('catsguidance')">Cats' Guidance</span></li>
-            <li><h4>— Equipment (1) —</h4></li>
-            <li>1  <span class="card" onclick="dC('reliquaryakunanseremains')">Reliquary: Akunanse Remains</span></li>
-            <li><h4>— Retainer (5) —</h4></li>
-            <li>3  <span class="card" onclick="dC('ravenspy')">Raven Spy</span></li>
-            <li>1  <span class="card" onclick="dC('mrwinthrop')">Mr. Winthrop</span></li>
-            <li>1  <span class="card" onclick="dC('shaman')">Shaman</span></li>
+        <h3 id="library-header"></h3>
+        <ul id="library-list">
         </ul>
     </div>
     <h2>Highlights</h2>
@@ -218,4 +164,12 @@
         <a class="next" href="amaravati-politics.html">Amaravati Politics</a>
     </nav>
 </footer>
+<script>
+    window.onload = function () {
+        document.getElementById("card-modal").addEventListener("keydown", modalKeydown)
+        document.getElementById("card-prev").addEventListener("click", prevCard)
+        document.getElementById("card-next").addEventListener("click", nextCard)
+        displayDeck({"author":null,"comments":"","crypt":{"cards":[{"comments":null,"count":2,"id":"200455","name":"Fakir al Sidi"},{"comments":null,"count":2,"id":"200957","name":"Matata"},{"comments":null,"count":2,"id":"200066","name":"Amavi"},{"comments":null,"count":2,"id":"201401","name":"Uchenna"},{"comments":null,"count":2,"id":"200731","name":"Jubal"},{"comments":null,"count":2,"id":"201234","name":"Sanjo"}],"count":12},"date":"2018-04-28","event":"Hungarian Grand Prix","library":{"cards":[{"cards":[{"comments":null,"count":5,"id":"102121","name":"Villein"},{"comments":null,"count":3,"id":"100588","name":"Dreams of the Sphinx"},{"comments":null,"count":2,"id":"102113","name":"Vessel"},{"comments":null,"count":1,"id":"100085","name":"Archon Investigation"},{"comments":null,"count":1,"id":"100824","name":"Giant's Blood"},{"comments":null,"count":1,"id":"100866","name":"Guardian Angel"},{"comments":null,"count":1,"id":"101163","name":"Mapatano Utando"},{"comments":null,"count":1,"id":"101384","name":"Pentex(TM) Subversion"},{"comments":null,"count":1,"id":"101436","name":"Powerbase: Luanda"},{"comments":null,"count":1,"id":"101439","name":"Powerbase: Montreal"},{"comments":null,"count":1,"id":"101536","name":"The Rack"},{"comments":null,"count":1,"id":"102189","name":"WMRH Talk Radio"}],"count":19,"type":"Master"},{"cards":[{"comments":null,"count":8,"id":"100515","name":"Deep Song"},{"comments":null,"count":1,"id":"100093","name":"Army of Rats"},{"comments":null,"count":1,"id":"102172","name":"Well-Marked"}],"count":10,"type":"Action"},{"cards":[{"comments":null,"count":4,"id":"100788","name":"Freak Drive"},{"comments":null,"count":3,"id":"101478","name":"Predator's Mastery"}],"count":7,"type":"Action Modifier"},{"cards":[{"comments":null,"count":7,"id":"100301","name":"Carrion Crows"},{"comments":null,"count":7,"id":"101006","name":"Invoking the Beast"},{"comments":null,"count":7,"id":"101945","name":"Taste of Vitae"},{"comments":null,"count":4,"id":"100918","name":"Hidden Strength"},{"comments":null,"count":3,"id":"101649","name":"Rolling with the Punches"},{"comments":null,"count":2,"id":"101817","name":"Soak"},{"comments":null,"count":1,"id":"100290","name":"Canine Horde"}],"count":31,"type":"Combat"},{"cards":[{"comments":null,"count":6,"id":"101477","name":"Predator's Communion"},{"comments":null,"count":6,"id":"101717","name":"Sense the Savage Way"},{"comments":null,"count":5,"id":"100308","name":"Cats' Guidance"}],"count":17,"type":"Reaction"},{"cards":[{"comments":null,"count":1,"id":"101596","name":"Reliquary: Akunanse Remains"}],"count":1,"type":"Equipment"},{"cards":[{"comments":null,"count":3,"id":"101550","name":"Raven Spy"},{"comments":null,"count":1,"id":"101249","name":"Mr. Winthrop"},{"comments":null,"count":1,"id":"101750","name":"Shaman"}],"count":5,"type":"Retainer"}],"count":90},"name":"Akunanse Wall","place":"Budapest, Hungary","player":"D\u00e1vid Farkas","players_count":38,"score":"2GW7+3","tournament_format":"3R+F","twda_id":"2018hgpbh"})
+    }
+</script>
 </html>

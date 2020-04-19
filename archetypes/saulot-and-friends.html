@@ -7,12 +7,7 @@
     <meta name="description" content="Vampire: the Eternal Struggle (VTES) archetype: Saulot & Friends">
     <link rel="stylesheet" type="text/css" href="../base.css"/>
     <link rel="icon" href="http://codex-of-the-damned.org/icons/vtes.svg">
-    <script>
-        function dC(name) {
-            document.getElementById("card-image").src = '../card-images/'.concat(name, '.jpg');
-            document.getElementById("card-modal").style.display = "block";
-        }
-    </script>
+    <script src="../decklist.js"></script>
     <title>Saulot & Friends</title>
 </head>
 <body>
@@ -32,72 +27,21 @@
         </ul>
     </nav>
 </header>
-<div id="card-modal" class="modal" onclick="this.style.display='none'">
-        <img class="modal-content" id="card-image">
+<div id="card-modal" class="modal" onclick="this.style.display='none'" tabindex="-1">
+    <div id=card-prev class="modal-nav">&#xf077</div>
+    <img class="modal-content" id="card-image"/>
+    <div id=card-next class="modal-nav">&#xf078</div>
 </div>
 <article>
     <h1><img src="../icons/clan-salubri.svg"> Saulot & Friends</h1>
-    <div class="decklist">
-        <h2><a href="http://www.vekn.fr/decks/twd.htm#2017ecday2bg">Saulot & Friends</a></h2>
-        <p>
-            Deck by Danilo Torrisi<br/>
-            EC 2017 - Day 2<br/>
-            Berlin, Germany<br/>
-            May 14th 2017<br/>
-            40 players, 156 players on Day 1<br/>
-        </p>
-        <h3>Crypt (12 cards)</h3>
-        <ul>
-            <li>3  <span class="card" onclick="dC('capuchinthe')">The Capuchin</span></li>
-            <li>3  <span class="card" onclick="dC('saulotthewanderer')">Saulot, The Wanderer</span></li>
-            <li>3  <span class="card" onclick="dC('anarchconvert')">Anarch Convert</span></li>
-            <li>1  <span class="card" onclick="dC('marielstjohn')">Mariel St. John</span></li>
-            <li>1  <span class="card" onclick="dC('neighborjohn')">Neighbor John</span></li>
-            <li>1  <span class="card" onclick="dC('solomonbatanea')">Solomon Batanea</span></li>
+    <div id="decklist" class="decklist" style="display: none">
+        <h2 id="deck-name"><a id="deck-link" href="http://example.com"></a></h2>
+        <p id="deck-header"></p>
+        <h3 id="crypt-header"></h3>
+        <ul id="crypt-list">
         </ul>
-        <h3>Library (90 cards)</h3>
-        <ul>
-            <li><h4>— Master (21) —</h4></li>
-            <li>3  <span class="card" onclick="dC('vessel')">Vessel</span></li>
-            <li>3  <span class="card" onclick="dC('villein')">Villein</span></li>
-            <li>2  <span class="card" onclick="dC('anarchrevolt')">Anarch Revolt</span></li>
-            <li>2  <span class="card" onclick="dC('pentextmsubversion')">Pentex™ Subversion</span></li>
-            <li>2  <span class="card" onclick="dC('rackthe')">The Rack</span></li>
-            <li>2  <span class="card" onclick="dC('smilingjacktheanarch')">Smiling Jack, The Anarch</span></li>
-            <li>1  <span class="card" onclick="dC('anarchfreepressthe')">The Anarch Free Press</span></li>
-            <li>1  <span class="card" onclick="dC('depravity')">Depravity</span></li>
-            <li>1  <span class="card" onclick="dC('directintervention')">Direct Intervention</span></li>
-            <li>1  <span class="card" onclick="dC('giantsblood')">Giant's Blood</span></li>
-            <li>1  <span class="card" onclick="dC('krcgnewsradio')">KRCG News Radio</span></li>
-            <li>1  <span class="card" onclick="dC('lifeboon')">Life Boon</span></li>
-            <li>1  <span class="card" onclick="dC('powerbasemontreal')">Powerbase: Montreal</span></li>
-            <li><h4>— Action (6) —</h4></li>
-            <li>6  <span class="card" onclick="dC('magicofthesmith')">Magic of the Smith</span></li>
-            <li><h4>— Modifier (2) —</h4></li>
-            <li>2  <span class="card" onclick="dC('monkeywrench')">Monkey Wrench</span></li>
-            <li><h4>— Combat (16) —</h4></li>
-            <li>6  <span class="card" onclick="dC('hiddenstrength')">Hidden Strength</span></li>
-            <li>4  <span class="card" onclick="dC('indomitability')">Indomitability</span></li>
-            <li>2  <span class="card" onclick="dC('rollingwiththepunches')">Rolling with the Punches</span></li>
-            <li>2  <span class="card" onclick="dC('soak')">Soak</span></li>
-            <li>2  <span class="card" onclick="dC('unflinchingpersistence')">Unflinching Persistence</span></li>
-            <li><h4>— Reaction (38) —</h4></li>
-            <li>8  <span class="card" onclick="dC('eyesofargus')">Eyes of Argus</span></li>
-            <li>6  <span class="card" onclick="dC('eaglessight')">Eagle's Sight</span></li>
-            <li>6  <span class="card" onclick="dC('guardianvigil')">Guardian Vigil</span></li>
-            <li>6  <span class="card" onclick="dC('telepathicmisdirection')">Telepathic Misdirection</span></li>
-            <li>4  <span class="card" onclick="dC('enhancedsenses')">Enhanced Senses</span></li>
-            <li>2  <span class="card" onclick="dC('delayingtactics')">Delaying Tactics</span></li>
-            <li>2  <span class="card" onclick="dC('forcedawakening')">Forced Awakening</span></li>
-            <li>2  <span class="card" onclick="dC('myenemysenemy')">My Enemy's Enemy</span></li>
-            <li>2  <span class="card" onclick="dC('onthequivive')">On the Qui Vive</span></li>
-            <li><h4>— Equipment (7) —</h4></li>
-            <li>2  <span class="card" onclick="dC('heartofnizchetus')">Heart of Nizchetus</span></li>
-            <li>1  <span class="card" onclick="dC('44magnum')">.44 Magnum</span></li>
-            <li>1  <span class="card" onclick="dC('bowlofconvergence')">Bowl of Convergence</span></li>
-            <li>1  <span class="card" onclick="dC('ivorybow')">Ivory Bow</span></li>
-            <li>1  <span class="card" onclick="dC('siresindexfinger')">Sire's Index Finger</span></li>
-            <li>1  <span class="card" onclick="dC('sniperrifle')">Sniper Rifle</span></li>
+        <h3 id="library-header"></h3>
+        <ul id="library-list">
         </ul>
     </div>
     <h2>Highlights</h2>
@@ -170,4 +114,12 @@
         <a class="next" href="scout.html">Scout</a>
     </nav>
 </footer>
+<script>
+    window.onload = function () {
+        document.getElementById("card-modal").addEventListener("keydown", modalKeydown)
+        document.getElementById("card-prev").addEventListener("click", prevCard)
+        document.getElementById("card-next").addEventListener("click", nextCard)
+        displayDeck({"author":null,"comments":"","crypt":{"cards":[{"comments":null,"count":3,"id":"200242","name":"The Capuchin"},{"comments":null,"count":3,"id":"201248","name":"Saulot, The Wanderer"},{"comments":null,"count":3,"id":"200076","name":"Anarch Convert"},{"comments":null,"count":1,"id":"200930","name":"Mariel St. John"},{"comments":null,"count":1,"id":"201046","name":"Neighbor John"},{"comments":null,"count":1,"id":"201305","name":"Solomon Batanea"}],"count":12},"date":"2017-05-14","event":"EC 2017 - Day 2","library":{"cards":[{"cards":[{"comments":null,"count":3,"id":"102113","name":"Vessel"},{"comments":null,"count":3,"id":"102121","name":"Villein"},{"comments":null,"count":2,"id":"100055","name":"Anarch Revolt"},{"comments":null,"count":2,"id":"101384","name":"Pentex(TM) Subversion"},{"comments":null,"count":2,"id":"101811","name":"Smiling Jack, The Anarch"},{"comments":null,"count":2,"id":"101536","name":"The Rack"},{"comments":null,"count":1,"id":"100526","name":"Depravity"},{"comments":null,"count":1,"id":"100545","name":"Direct Intervention"},{"comments":null,"count":1,"id":"100824","name":"Giant's Blood"},{"comments":null,"count":1,"id":"101067","name":"KRCG News Radio"},{"comments":null,"count":1,"id":"101103","name":"Life Boon"},{"comments":null,"count":1,"id":"101439","name":"Powerbase: Montreal"},{"comments":null,"count":1,"id":"100052","name":"The Anarch Free Press"}],"count":21,"type":"Master"},{"cards":[{"comments":null,"count":6,"id":"101143","name":"Magic of the Smith"}],"count":6,"type":"Action"},{"cards":[{"comments":null,"count":2,"id":"101239","name":"Monkey Wrench"}],"count":2,"type":"Action Modifier"},{"cards":[{"comments":null,"count":6,"id":"100918","name":"Hidden Strength"},{"comments":null,"count":4,"id":"100973","name":"Indomitability"},{"comments":null,"count":2,"id":"101649","name":"Rolling with the Punches"},{"comments":null,"count":2,"id":"101817","name":"Soak"},{"comments":null,"count":2,"id":"102071","name":"Unflinching Persistence"}],"count":16,"type":"Combat"},{"cards":[{"comments":null,"count":8,"id":"100680","name":"Eyes of Argus"},{"comments":null,"count":6,"id":"100598","name":"Eagle's Sight"},{"comments":null,"count":6,"id":"100868","name":"Guardian Vigil"},{"comments":null,"count":6,"id":"101949","name":"Telepathic Misdirection"},{"comments":null,"count":4,"id":"100644","name":"Enhanced Senses"},{"comments":null,"count":2,"id":"100519","name":"Delaying Tactics"},{"comments":null,"count":2,"id":"100760","name":"Forced Awakening"},{"comments":null,"count":2,"id":"101259","name":"My Enemy's Enemy"},{"comments":null,"count":2,"id":"101321","name":"On the Qui Vive"}],"count":38,"type":"Reaction"},{"cards":[{"comments":null,"count":2,"id":"100903","name":"Heart of Nizchetus"},{"comments":null,"count":1,"id":"100001","name":".44 Magnum"},{"comments":null,"count":1,"id":"100243","name":"Bowl of Convergence"},{"comments":null,"count":1,"id":"101014","name":"Ivory Bow"},{"comments":null,"count":1,"id":"101785","name":"Sire's Index Finger"},{"comments":null,"count":1,"id":"101816","name":"Sniper Rifle"}],"count":7,"type":"Equipment"}],"count":90},"name":"Saulot & Friends","place":"Berlin, Germany","player":"Danilo Torrisi","players_count":40,"score":"2GW8+1","tournament_format":"3R+F","twda_id":"2017ecday2bg"})
+    }
+</script>
 </html>

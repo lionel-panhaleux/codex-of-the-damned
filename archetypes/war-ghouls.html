@@ -7,12 +7,7 @@
     <meta name="description" content="Vampire: the Eternal Struggle (VTES) archetype: War Ghouls">
     <link rel="stylesheet" type="text/css" href="../base.css"/>
     <link rel="icon" href="http://codex-of-the-damned.org/icons/vtes.svg">
-    <script>
-        function dC(name) {
-            document.getElementById("card-image").src = '../card-images/'.concat(name, '.jpg');
-            document.getElementById("card-modal").style.display = "block";
-        }
-    </script>
+    <script src="../decklist.js"></script>
     <title>War Ghouls</title>
 </head>
 <body>
@@ -32,61 +27,21 @@
         </ul>
     </nav>
 </header>
-<div id="card-modal" class="modal" onclick="this.style.display='none'">
-        <img class="modal-content" id="card-image">
+<div id="card-modal" class="modal" onclick="this.style.display='none'" tabindex="-1">
+    <div id=card-prev class="modal-nav">&#xf077</div>
+    <img class="modal-content" id="card-image"/>
+    <div id=card-next class="modal-nav">&#xf078</div>
 </div>
 <article>
     <h1><img src="../icons/clan-tzimisce.svg"> War Ghouls</h1>
-    <div class="decklist">
-        <h2><a href="http://www.vekn.fr/decks/twd.htm#2013ecqgs">Svenska Leken</a></h2>
-        <p>
-            Deck by Daniel Wiberg<br/>
-            Swedish ECQ<br/>
-            Gothenburg, Sweden<br/>
-            March 30th 2013<br/>
-            41 players<br/>
-        </p>
-        <h3>Crypt (12 cards)</h3>
-        <ul>
-            <li>3  <span class="card" onclick="dC('piotrandreikov')">Piotr Andreikov</span></li>
-            <li>2  <span class="card" onclick="dC('horatio')">Horatio</span></li>
-            <li>1  <span class="card" onclick="dC('corinemarcon')">Corine Marcón</span></li>
-            <li>1  <span class="card" onclick="dC('devinbisley')">Devin Bisley</span></li>
-            <li>1  <span class="card" onclick="dC('elizabethwestcott')">Elizabeth Westcott</span></li>
-            <li>1  <span class="card" onclick="dC('isabeldeleon')">Isabel de Leon</span></li>
-            <li>1  <span class="card" onclick="dC('martinfranckel')">Martin Franckel</span></li>
-            <li>1  <span class="card" onclick="dC('wendywade')">Wendy Wade</span></li>
-            <li>1  <span class="card" onclick="dC('zoe')">Zöe</span></li>
+    <div id="decklist" class="decklist" style="display: none">
+        <h2 id="deck-name"><a id="deck-link" href="http://example.com"></a></h2>
+        <p id="deck-header"></p>
+        <h3 id="crypt-header"></h3>
+        <ul id="crypt-list">
         </ul>
-        <h3>Library (60 cards)</h3>
-        <ul>
-            <li><h4>— Master (10) —</h4></li>
-            <li>6  <span class="card" onclick="dC('jakewashington')">Jake Washington</span></li>
-            <li>2  <span class="card" onclick="dC('directintervention')">Direct Intervention</span></li>
-            <li>1  <span class="card" onclick="dC('pentextmsubversion')">Pentex™ Subversion</span></li>
-            <li>1  <span class="card" onclick="dC('powerbasemontreal')">Powerbase: Montreal</span></li>
-            <li><h4>— Combat (11) —</h4></li>
-            <li>4  <span class="card" onclick="dC('fakeout')">Fake Out</span></li>
-            <li>4  <span class="card" onclick="dC('trap')">Trap</span></li>
-            <li>3  <span class="card" onclick="dC('targetvitals')">Target Vitals</span></li>
-            <li><h4>— Reaction (19) —</h4></li>
-            <li>5  <span class="card" onclick="dC('telepathicmisdirection')">Telepathic Misdirection</span></li>
-            <li>4  <span class="card" onclick="dC('eyesofargus')">Eyes of Argus</span></li>
-            <li>4  <span class="card" onclick="dC('onthequivive')">On the Qui Vive</span></li>
-            <li>3  <span class="card" onclick="dC('myenemysenemy')">My Enemy's Enemy</span></li>
-            <li>2  <span class="card" onclick="dC('delayingtactics')">Delaying Tactics</span></li>
-            <li>1  <span class="card" onclick="dC('enhancedsenses')">Enhanced Senses</span></li>
-            <li><h4>— Ally (12) —</h4></li>
-            <li>8  <span class="card" onclick="dC('warghoul')">War Ghoul</span></li>
-            <li>2  <span class="card" onclick="dC('ossian')">Ossian</span></li>
-            <li>2  <span class="card" onclick="dC('vagabondmystic')">Vagabond Mystic</span></li>
-            <li><h4>— Retainer (4) —</h4></li>
-            <li>2  <span class="card" onclick="dC('mrwinthrop')">Mr. Winthrop</span></li>
-            <li>1  <span class="card" onclick="dC('jssimmonsesq')">J. S. Simmons, Esq</span>.</li>
-            <li>1  <span class="card" onclick="dC('tashamorgan')">Tasha Morgan</span></li>
-            <li><h4>— Event (4) —</h4></li>
-            <li>3  <span class="card" onclick="dC('unmaskingthe')">The Unmasking</span></li>
-            <li>1  <span class="card" onclick="dC('dragonbound')">Dragonbound</span></li>
+        <h3 id="library-header"></h3>
+        <ul id="library-list">
         </ul>
     </div>
     <h2>Highlights</h2>
@@ -146,4 +101,12 @@
         <a class="next" href="weenie-aus.html">Weenie AUS</a>
     </nav>
 </footer>
+<script>
+    window.onload = function () {
+        document.getElementById("card-modal").addEventListener("keydown", modalKeydown)
+        document.getElementById("card-prev").addEventListener("click", prevCard)
+        document.getElementById("card-next").addEventListener("click", nextCard)
+        displayDeck({"author":null,"comments":"Based on the deck \"Drog\u00f6gon mitt i ansiktet - wall ghouls\" by Erik\nTorstensson with a few alterations. Sadly, no turn one Ossian.\nThanks to Randal Rudstam for a few last minute changes and Adam\nEsbjornson for helping me to choose the deck.\n","crypt":{"cards":[{"comments":null,"count":3,"id":"201126","name":"Piotr Andreikov"},{"comments":null,"count":2,"id":"200603","name":"Horatio"},{"comments":null,"count":1,"id":"200290","name":"Corine Marc\u00f3n"},{"comments":null,"count":1,"id":"200339","name":"Devin Bisley"},{"comments":null,"count":1,"id":"200415","name":"Elizabeth Westcott"},{"comments":null,"count":1,"id":"200642","name":"Isabel de Leon"},{"comments":null,"count":1,"id":"200943","name":"Martin Franckel"},{"comments":null,"count":1,"id":"201466","name":"Wendy Wade"},{"comments":null,"count":1,"id":"201509","name":"Z\u00f6e"}],"count":12},"date":"2013-03-30","event":"Swedish ECQ","library":{"cards":[{"cards":[{"comments":null,"count":6,"id":"101019","name":"Jake Washington"},{"comments":null,"count":2,"id":"100545","name":"Direct Intervention"},{"comments":null,"count":1,"id":"101384","name":"Pentex(TM) Subversion"},{"comments":null,"count":1,"id":"101439","name":"Powerbase: Montreal"}],"count":10,"type":"Master"},{"cards":[{"comments":null,"count":4,"id":"100693","name":"Fake Out"},{"comments":null,"count":4,"id":"102012","name":"Trap"},{"comments":null,"count":3,"id":"101942","name":"Target Vitals"}],"count":11,"type":"Combat"},{"cards":[{"comments":null,"count":5,"id":"101949","name":"Telepathic Misdirection"},{"comments":null,"count":4,"id":"100680","name":"Eyes of Argus"},{"comments":null,"count":4,"id":"101321","name":"On the Qui Vive"},{"comments":null,"count":3,"id":"101259","name":"My Enemy's Enemy"},{"comments":null,"count":2,"id":"100519","name":"Delaying Tactics"},{"comments":null,"count":1,"id":"100644","name":"Enhanced Senses"}],"count":19,"type":"Reaction"},{"cards":[{"comments":null,"count":8,"id":"102144","name":"War Ghoul"},{"comments":null,"count":2,"id":"101333","name":"Ossian"},{"comments":null,"count":2,"id":"102087","name":"Vagabond Mystic"}],"count":12,"type":"Ally"},{"cards":[{"comments":null,"count":2,"id":"101249","name":"Mr. Winthrop"},{"comments":null,"count":1,"id":"101015","name":"J. S. Simmons, Esq."},{"comments":null,"count":1,"id":"101943","name":"Tasha Morgan"}],"count":4,"type":"Retainer"},{"cards":[{"comments":null,"count":3,"id":"102079","name":"The Unmasking"},{"comments":null,"count":1,"id":"100581","name":"Dragonbound"}],"count":4,"type":"Event"}],"count":60},"name":"The best Swedish game","place":"Gothenburg, Sweden","player":"Daniel Wiberg","players_count":41,"score":null,"tournament_format":"3R+F","twda_id":"2013ecqgs"})
+    }
+</script>
 </html>

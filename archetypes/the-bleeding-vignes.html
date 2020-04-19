@@ -7,12 +7,7 @@
     <meta name="description" content="Vampire: the Eternal Struggle (VTES) archetype: The Bleeding Vignes">
     <link rel="stylesheet" type="text/css" href="../base.css"/>
     <link rel="icon" href="http://codex-of-the-damned.org/icons/vtes.svg">
-    <script>
-        function dC(name) {
-            document.getElementById("card-image").src = '../card-images/'.concat(name, '.jpg');
-            document.getElementById("card-modal").style.display = "block";
-        }
-    </script>
+    <script src="../decklist.js"></script>
     <title>The Bleeding Vignes</title>
 </head>
 <body>
@@ -32,59 +27,21 @@
         </ul>
     </nav>
 </header>
-<div id="card-modal" class="modal" onclick="this.style.display='none'">
-        <img class="modal-content" id="card-image">
+<div id="card-modal" class="modal" onclick="this.style.display='none'" tabindex="-1">
+    <div id=card-prev class="modal-nav">&#xf077</div>
+    <img class="modal-content" id="card-image"/>
+    <div id=card-next class="modal-nav">&#xf078</div>
 </div>
 <article>
     <h1><img src="../icons/clan-ventrue.svg"> The Bleeding Vignes</h1>
-    <div class="decklist">
-        <h2><a href="http://www.vekn.fr/decks/twd.htm#2010belgianecq">Vignes in the City</a></h2>
-        <p>
-            Deck by Izaak Havelaar<br/>
-            Belgian ECQ<br/>
-            Brussels, Belgium<br/>
-            May 29th 2010<br/>
-            31 players<br/>
-        </p>
-        <h3>Crypt (12 cards)</h3>
-        <ul>
-            <li>3  <span class="card" onclick="dC('edwardvignes')">Edward Vignes</span></li>
-            <li>2  <span class="card" onclick="dC('ranjanrishicamarillascholar')">Ranjan Rishi, Camarilla Scholar</span></li>
-            <li>1  <span class="card" onclick="dC('alansovereign')">Alan Sovereign</span></li>
-            <li>1  <span class="card" onclick="dC('bosscallihan')">Boss Callihan</span></li>
-            <li>1  <span class="card" onclick="dC('catherinedubois')">Catherine du Bois</span></li>
-            <li>1  <span class="card" onclick="dC('elenagutierrez')">Elena Gutierrez</span></li>
-            <li>1  <span class="card" onclick="dC('ingridrusso')">Ingrid Russo</span></li>
-            <li>1  <span class="card" onclick="dC('pietervandorn')">Pieter van Dorn</span></li>
-            <li>1  <span class="card" onclick="dC('dianavick')">Diana Vick</span></li>
+    <div id="decklist" class="decklist" style="display: none">
+        <h2 id="deck-name"><a id="deck-link" href="http://example.com"></a></h2>
+        <p id="deck-header"></p>
+        <h3 id="crypt-header"></h3>
+        <ul id="crypt-list">
         </ul>
-        <h3>Library (75 cards)</h3>
-        <ul>
-            <li><h4>— Master (18) —</h4></li>
-            <li>6  <span class="card" onclick="dC('lifeinthecity')">Life in the City</span></li>
-            <li>3  <span class="card" onclick="dC('blooddoll')">Blood Doll</span></li>
-            <li>2  <span class="card" onclick="dC('anarchtroublemaker')">Anarch Troublemaker</span></li>
-            <li>2  <span class="card" onclick="dC('misdirection')">Misdirection</span></li>
-            <li>2  <span class="card" onclick="dC('pentextmsubversion')">Pentex™ Subversion</span></li>
-            <li>1  <span class="card" onclick="dC('coventhe')">The Coven</span></li>
-            <li>1  <span class="card" onclick="dC('giantsblood')">Giant's Blood</span></li>
-            <li>1  <span class="card" onclick="dC('jakewashington')">Jake Washington</span></li>
-            <li><h4>— Action (14) —</h4></li>
-            <li>11 <span class="card" onclick="dC('governtheunaligned')">Govern the Unaligned</span></li>
-            <li>3  <span class="card" onclick="dC('mindnumb')">Mind Numb</span></li>
-            <li><h4>— Modifier (22) —</h4></li>
-            <li>6  <span class="card" onclick="dC('bonding')">Bonding</span></li>
-            <li>5  <span class="card" onclick="dC('conditioning')">Conditioning</span></li>
-            <li>5  <span class="card" onclick="dC('seduction')">Seduction</span></li>
-            <li>3  <span class="card" onclick="dC('daringthedawn')">Daring the Dawn</span></li>
-            <li>3  <span class="card" onclick="dC('foreshadowingdestruction')">Foreshadowing Destruction</span></li>
-            <li><h4>— Combat (7) —</h4></li>
-            <li>7  <span class="card" onclick="dC('majesty')">Majesty</span></li>
-            <li><h4>— Reaction (13) —</h4></li>
-            <li>10 <span class="card" onclick="dC('deflection')">Deflection</span></li>
-            <li>3  <span class="card" onclick="dC('delayingtactics')">Delaying Tactics</span></li>
-            <li><h4>— Event (1) —</h4></li>
-            <li>1  <span class="card" onclick="dC('bitterandsweetstorythe')">The Bitter and Sweet Story</span></li>
+        <h3 id="library-header"></h3>
+        <ul id="library-list">
         </ul>
     </div>
     <h2>Highlights</h2>
@@ -165,4 +122,12 @@
         <a class="next" href="the-dark-side-of-politics.html">The Dark Side of Politics</a>
     </nav>
 </footer>
+<script>
+    window.onload = function () {
+        document.getElementById("card-modal").addEventListener("keydown", modalKeydown)
+        document.getElementById("card-prev").addEventListener("click", prevCard)
+        document.getElementById("card-next").addEventListener("click", nextCard)
+        displayDeck({"author":null,"comments":"","crypt":{"cards":[{"comments":null,"count":3,"id":"200403","name":"Edward Vignes"},{"comments":null,"count":2,"id":"201162","name":"Ranjan Rishi, Camarilla Scholar"},{"comments":null,"count":1,"id":"200040","name":"Alan Sovereign"},{"comments":null,"count":1,"id":"200212","name":"Boss Callihan"},{"comments":null,"count":1,"id":"200256","name":"Catherine du Bois"},{"comments":null,"count":1,"id":"200407","name":"Elena Gutierrez"},{"comments":null,"count":1,"id":"200635","name":"Ingrid Russo"},{"comments":null,"count":1,"id":"201125","name":"Pieter van Dorn"},{"comments":null,"count":1,"id":"200342","name":"Diana Vick"}],"count":12},"date":"2010-05-29","event":"Belgian ECQ","library":{"cards":[{"cards":[{"comments":null,"count":6,"id":"101104","name":"Life in the City"},{"comments":null,"count":3,"id":"100199","name":"Blood Doll"},{"comments":null,"count":2,"id":"100058","name":"Anarch Troublemaker"},{"comments":null,"count":2,"id":"101225","name":"Misdirection"},{"comments":null,"count":2,"id":"101384","name":"Pentex(TM) Subversion"},{"comments":null,"count":1,"id":"100824","name":"Giant's Blood"},{"comments":null,"count":1,"id":"101019","name":"Jake Washington"},{"comments":null,"count":1,"id":"100435","name":"The Coven"}],"count":18,"type":"Master"},{"cards":[{"comments":null,"count":11,"id":"100845","name":"Govern the Unaligned"},{"comments":null,"count":3,"id":"101211","name":"Mind Numb"}],"count":14,"type":"Action"},{"cards":[{"comments":null,"count":6,"id":"100236","name":"Bonding"},{"comments":null,"count":5,"id":"100401","name":"Conditioning"},{"comments":null,"count":5,"id":"101712","name":"Seduction"},{"comments":null,"count":3,"id":"100492","name":"Daring the Dawn"},{"comments":null,"count":3,"id":"100765","name":"Foreshadowing Destruction"}],"count":22,"type":"Action Modifier"},{"cards":[{"comments":null,"count":7,"id":"101144","name":"Majesty"}],"count":7,"type":"Combat"},{"cards":[{"comments":null,"count":10,"id":"100518","name":"Deflection"},{"comments":null,"count":3,"id":"100519","name":"Delaying Tactics"}],"count":13,"type":"Reaction"},{"cards":[{"comments":null,"count":1,"id":"100163","name":"The Bitter and Sweet Story"}],"count":1,"type":"Event"}],"count":75},"name":"Vignes in the City","place":"Brussels, Belgium","player":"Izaak Havelaar","players_count":31,"score":"2.5VP in final","tournament_format":"3R+F","twda_id":"2010belgianecq"})
+    }
+</script>
 </html>

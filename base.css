@@ -90,6 +90,19 @@ h2 {
     padding:0;
     outline:0;
     width:300px;
+    margin: 0.5em;
+}
+.modal-nav{
+    font-family: "FontAwesome";
+    width:300px;
+    font-weight: 900;
+    font-size: 2em;
+    text-align: center;
+}
+.modal-nav:hover,
+.modal-nav:focus {
+    color: #007acc;
+    cursor: pointer;
 }
 @media only screen and (max-width: 750px) {
     header, footer {
@@ -305,7 +318,7 @@ div.result-message {
     font-variant: normal;
     text-rendering: auto;
     line-height: 1;
-  }
+}
 .td-icon {
     text-align: center;
     vertical-align: center;

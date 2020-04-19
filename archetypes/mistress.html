@@ -7,12 +7,7 @@
     <meta name="description" content="Vampire: the Eternal Struggle (VTES) archetype: Mistress">
     <link rel="stylesheet" type="text/css" href="../base.css"/>
     <link rel="icon" href="http://codex-of-the-damned.org/icons/vtes.svg">
-    <script>
-        function dC(name) {
-            document.getElementById("card-image").src = '../card-images/'.concat(name, '.jpg');
-            document.getElementById("card-modal").style.display = "block";
-        }
-    </script>
+    <script src="../decklist.js"></script>
     <title>Mistress</title>
 </head>
 <body>
@@ -32,69 +27,21 @@
         </ul>
     </nav>
 </header>
-<div id="card-modal" class="modal" onclick="this.style.display='none'">
-        <img class="modal-content" id="card-image">
+<div id="card-modal" class="modal" onclick="this.style.display='none'" tabindex="-1">
+    <div id=card-prev class="modal-nav">&#xf077</div>
+    <img class="modal-content" id="card-image"/>
+    <div id=card-next class="modal-nav">&#xf078</div>
 </div>
 <article>
     <h1><img src="../icons/clan-tremere.svg"> Mistress</h1>
-    <div class="decklist">
-        <h2><a href="http://www.vekn.fr/decks/twd.htm#2016sncrs">Deck example</a></h2>
-        <p>
-            Deck by Sandro Rodrigues<br/>
-            Spanish NC 2016<br/>
-            Reus, Spain<br/>
-            November 6th 2016<br/>
-            31 players<br/>
-        </p>
-        <h3>Crypt (12 cards)</h3>
-        <ul>
-            <li>4  <span class="card" onclick="dC('mistressfanchon')">Mistress Fanchon</span></li>
-            <li>2  <span class="card" onclick="dC('rafaeldecorazon')">Rafael de Corazon</span></li>
-            <li>2  <span class="card" onclick="dC('alonsopetrodon')">Alonso Petrodon</span></li>
-            <li>1  <span class="card" onclick="dC('gabrielledirighetti')">Gabrielle di Righetti</span></li>
-            <li>1  <span class="card" onclick="dC('tryphosa')">Tryphosa</span></li>
-            <li>1  <span class="card" onclick="dC('orlandooriundus')">Orlando Oriundus</span></li>
-            <li>1  <span class="card" onclick="dC('grahamgottesman')">Graham Gottesman</span></li>
+    <div id="decklist" class="decklist" style="display: none">
+        <h2 id="deck-name"><a id="deck-link" href="http://example.com"></a></h2>
+        <p id="deck-header"></p>
+        <h3 id="crypt-header"></h3>
+        <ul id="crypt-list">
         </ul>
-        <h3>Library (75 cards)</h3>
-        <ul>
-            <li><h4>— Master (23) —</h4></li>
-            <li>8  <span class="card" onclick="dC('villein')">Villein</span></li>
-            <li>5  <span class="card" onclick="dC('zillahsvalley')">Zillah's Valley</span></li>
-            <li>3  <span class="card" onclick="dC('informationhighway')">Information Highway</span></li>
-            <li>1  <span class="card" onclick="dC('dreamsofthesphinx')">Dreams of the Sphinx</span></li>
-            <li>1  <span class="card" onclick="dC('giantsblood')">Giant's Blood</span></li>
-            <li>1  <span class="card" onclick="dC('golcondainnerpeace')">Golconda: Inner Peace</span></li>
-            <li>1  <span class="card" onclick="dC('monasteryofshadows')">Monastery of Shadows</span></li>
-            <li>1  <span class="card" onclick="dC('pentextmsubversion')">Pentex™ Subversion</span></li>
-            <li>1  <span class="card" onclick="dC('securehaven')">Secure Haven</span></li>
-            <li>1  <span class="card" onclick="dC('widerview')">Wider View</span></li>
-            <li><h4>— Action (4) —</h4></li>
-            <li>4  <span class="card" onclick="dC('governtheunaligned')">Govern the Unaligned</span></li>
-            <li><h4>— Political Action (8) —</h4></li>
-            <li>2  <span class="card" onclick="dC('alastor')">Alastor</span></li>
-            <li>2  <span class="card" onclick="dC('banishment')">Banishment</span></li>
-            <li>2  <span class="card" onclick="dC('parityshift')">Parity Shift</span></li>
-            <li>1  <span class="card" onclick="dC('ancientinfluence')">Ancient Influence</span></li>
-            <li>1  <span class="card" onclick="dC('reinsofpower')">Reins of Power</span></li>
-            <li><h4>— Action Modifier (18) —</h4></li>
-            <li>5  <span class="card" onclick="dC('lostincrowds')">Lost in Crowds</span></li>
-            <li>4  <span class="card" onclick="dC('elderimpersonation')">Elder Impersonation</span></li>
-            <li>4  <span class="card" onclick="dC('facelessnight')">Faceless Night</span></li>
-            <li>2  <span class="card" onclick="dC('forgottenlabyrinth')">Forgotten Labyrinth</span></li>
-            <li>2  <span class="card" onclick="dC('spyingmission')">Spying Mission</span></li>
-            <li>1  <span class="card" onclick="dC('enkilcog')">Enkil Cog</span></li>
-            <li><h4>— Action Modifier/Combat (2) —</h4></li>
-            <li>2  <span class="card" onclick="dC('swallowedbythenight')">Swallowed by the Night</span></li>
-            <li><h4>— Reaction (17) —</h4></li>
-            <li>6  <span class="card" onclick="dC('deflection')">Deflection</span></li>
-            <li>5  <span class="card" onclick="dC('obedience')">Obedience</span></li>
-            <li>4  <span class="card" onclick="dC('eyesofargus')">Eyes of Argus</span></li>
-            <li>2  <span class="card" onclick="dC('mentalmaze')">Mental Maze</span></li>
-            <li><h4>— Equipment (2) —</h4></li>
-            <li>2  <span class="card" onclick="dC('helicopter')">Helicopter</span></li>
-            <li><h4>— Event (1) —</h4></li>
-            <li>1  <span class="card" onclick="dC('scourgeoftheenochians')">Scourge of the Enochians</span></li>
+        <h3 id="library-header"></h3>
+        <ul id="library-list">
         </ul>
     </div>
     <h2>Highlights</h2>
@@ -168,4 +115,12 @@
         <a class="next" href="nananimalism.html">Nananimalism</a>
     </nav>
 </footer>
+<script>
+    window.onload = function () {
+        document.getElementById("card-modal").addEventListener("keydown", modalKeydown)
+        document.getElementById("card-prev").addEventListener("click", prevCard)
+        document.getElementById("card-next").addEventListener("click", nextCard)
+        displayDeck({"author":null,"comments":"","crypt":{"cards":[{"comments":null,"count":4,"id":"200999","name":"Mistress Fanchon"},{"comments":null,"count":2,"id":"201151","name":"Rafael de Corazon"},{"comments":null,"count":2,"id":"200060","name":"Alonso Petrodon"},{"comments":null,"count":1,"id":"200489","name":"Gabrielle di Righetti"},{"comments":null,"count":1,"id":"201390","name":"Tryphosa"},{"comments":null,"count":1,"id":"201084","name":"Orlando Oriundus"},{"comments":null,"count":1,"id":"200533","name":"Graham Gottesman"}],"count":12},"date":"2016-11-06","event":"Spanish NC 2016","library":{"cards":[{"cards":[{"comments":null,"count":8,"id":"102121","name":"Villein"},{"comments":null,"count":5,"id":"102207","name":"Zillah's Valley"},{"comments":null,"count":3,"id":"100984","name":"Information Highway"},{"comments":null,"count":1,"id":"100588","name":"Dreams of the Sphinx"},{"comments":null,"count":1,"id":"100824","name":"Giant's Blood"},{"comments":null,"count":1,"id":"100842","name":"Golconda: Inner Peace"},{"comments":null,"count":1,"id":"101238","name":"Monastery of Shadows"},{"comments":null,"count":1,"id":"101384","name":"Pentex(TM) Subversion"},{"comments":null,"count":1,"id":"101711","name":"Secure Haven"},{"comments":null,"count":1,"id":"102180","name":"Wider View"}],"count":23,"type":"Master"},{"cards":[{"comments":null,"count":4,"id":"100845","name":"Govern the Unaligned"}],"count":4,"type":"Action"},{"cards":[{"comments":null,"count":2,"id":"100038","name":"Alastor"},{"comments":null,"count":2,"id":"100131","name":"Banishment"},{"comments":null,"count":2,"id":"101353","name":"Parity Shift"},{"comments":null,"count":1,"id":"100064","name":"Ancient Influence"},{"comments":null,"count":1,"id":"101591","name":"Reins of Power"}],"count":8,"type":"Political Action"},{"cards":[{"comments":null,"count":5,"id":"101125","name":"Lost in Crowds"},{"comments":null,"count":4,"id":"100617","name":"Elder Impersonation"},{"comments":null,"count":4,"id":"100687","name":"Faceless Night"},{"comments":null,"count":2,"id":"100769","name":"Forgotten Labyrinth"},{"comments":null,"count":2,"id":"101857","name":"Spying Mission"},{"comments":null,"count":1,"id":"100645","name":"Enkil Cog"}],"count":18,"type":"Action Modifier"},{"cards":[{"comments":null,"count":2,"id":"101913","name":"Swallowed by the Night"}],"count":2,"type":"Action Modifier/Combat"},{"cards":[{"comments":null,"count":6,"id":"100518","name":"Deflection"},{"comments":null,"count":5,"id":"101309","name":"Obedience"},{"comments":null,"count":4,"id":"100680","name":"Eyes of Argus"},{"comments":null,"count":2,"id":"101201","name":"Mental Maze"}],"count":17,"type":"Reaction"},{"cards":[{"comments":null,"count":2,"id":"100909","name":"Helicopter"}],"count":2,"type":"Equipment"},{"cards":[{"comments":null,"count":1,"id":"101697","name":"Scourge of the Enochians"}],"count":1,"type":"Event"}],"count":75},"name":"Mistress","place":"Reus, Spain","player":"Sandro Rodrigues","players_count":31,"score":"5VP in final","tournament_format":"3R+F","twda_id":"2016sncrs"})
+    }
+</script>
 </html>

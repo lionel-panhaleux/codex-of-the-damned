@@ -7,12 +7,7 @@
     <meta name="description" content="Vampire: the Eternal Struggle (VTES) archetype: Emerald Legion">
     <link rel="stylesheet" type="text/css" href="../base.css"/>
     <link rel="icon" href="http://codex-of-the-damned.org/icons/vtes.svg">
-    <script>
-        function dC(name) {
-            document.getElementById("card-image").src = '../card-images/'.concat(name, '.jpg');
-            document.getElementById("card-modal").style.display = "block";
-        }
-    </script>
+    <script src="../decklist.js"></script>
     <title>Emerald Legion</title>
 </head>
 <body>
@@ -32,84 +27,21 @@
         </ul>
     </nav>
 </header>
-<div id="card-modal" class="modal" onclick="this.style.display='none'">
-        <img class="modal-content" id="card-image">
+<div id="card-modal" class="modal" onclick="this.style.display='none'" tabindex="-1">
+    <div id=card-prev class="modal-nav">&#xf077</div>
+    <img class="modal-content" id="card-image"/>
+    <div id=card-next class="modal-nav">&#xf078</div>
 </div>
 <article>
     <h1><img src="../icons/clan-harbingers.svg"> Emerald Legion</h1>
-    <div class="decklist">
-        <h2><a href="http://www.vekn.fr/decks/twd.htm#2019gpilp">Deck example</a></h2>
-        <p>
-            Deck by Mariano Carbonero Roman<br/>
-            Grand Prix Iberia<br/>
-            Lisboa, Portugal<br/>
-            April 27th 2019<br/>
-            36 players<br/>
-        </p>
-        <h3>Crypt (12 cards)</h3>
-        <ul>
-            <li>5  <span class="card" onclick="dC('erlik')">Erlik</span></li>
-            <li>3  <span class="card" onclick="dC('erebus')">Erebus</span></li>
-            <li>2  <span class="card" onclick="dC('zygodat')">Zygodat</span></li>
-            <li>1  <span class="card" onclick="dC('babalawoalafin')">Babalawo Alafin</span></li>
-            <li>1  <span class="card" onclick="dC('nicomedes')">Nicomedes</span></li>
+    <div id="decklist" class="decklist" style="display: none">
+        <h2 id="deck-name"><a id="deck-link" href="http://example.com"></a></h2>
+        <p id="deck-header"></p>
+        <h3 id="crypt-header"></h3>
+        <ul id="crypt-list">
         </ul>
-        <h3>Library (88 cards)</h3>
-        <ul>
-            <li><h4>— Master (21) —</h4></li>
-            <li>4  <span class="card" onclick="dC('liquidation')">Liquidation</span></li>
-            <li>3  <span class="card" onclick="dC('villein')">Villein</span></li>
-            <li>2  <span class="card" onclick="dC('dreamsofthesphinx')">Dreams of the Sphinx</span></li>
-            <li>2  <span class="card" onclick="dC('vessel')">Vessel</span></li>
-            <li>1  <span class="card" onclick="dC('blooddoll')">Blood Doll</span></li>
-            <li>1  <span class="card" onclick="dC('fearofmekhet')">Fear of Mekhet</span></li>
-            <li>1  <span class="card" onclick="dC('giantsblood')">Giant's Blood</span></li>
-            <li>1  <span class="card" onclick="dC('heidelbergcastlegermany')">Heidelberg Castle, Germany</span></li>
-            <li>1  <span class="card" onclick="dC('pentextmsubversion')">Pentex™ Subversion</span></li>
-            <li>1  <span class="card" onclick="dC('perfectionist')">Perfectionist</span></li>
-            <li>1  <span class="card" onclick="dC('powerbasemontreal')">Powerbase: Montreal</span></li>
-            <li>1  <span class="card" onclick="dC('rackthe')">The Rack</span></li>
-            <li>1  <span class="card" onclick="dC('smilingjacktheanarch')">Smiling Jack, The Anarch</span></li>
-            <li>1  <span class="card" onclick="dC('suddenreversal')">Sudden Reversal</span></li>
-            <li><h4>— Action (1) —</h4></li>
-            <li>1  <span class="card" onclick="dC('aranthebestheimmortal')">Aranthebes, The Immortal</span></li>
-            <li><h4>— Modifier (12) —</h4></li>
-            <li>4  <span class="card" onclick="dC('freakdrive')">Freak Drive</span></li>
-            <li>2  <span class="card" onclick="dC('callofthehungrydead')">Call of the Hungry Dead</span></li>
-            <li>2  <span class="card" onclick="dC('forcedmarch')">Forced March</span></li>
-            <li>2  <span class="card" onclick="dC('inevitabilityofthevoid')">Inevitability of the Void</span></li>
-            <li>2  <span class="card" onclick="dC('shroudmastery')">Shroud Mastery</span></li>
-            <li><h4>— Modifier/Reaction (2) —</h4></li>
-            <li>2  <span class="card" onclick="dC('spectraldivination')">Spectral Divination</span></li>
-            <li><h4>— Modifier/Combat (4) —</h4></li>
-            <li>4  <span class="card" onclick="dC('breathofthanatos')">Breath of Thanatos</span></li>
-            <li><h4>— Combat (8) —</h4></li>
-            <li>2  <span class="card" onclick="dC('blight')">Blight</span></li>
-            <li>2  <span class="card" onclick="dC('fakeout')">Fake Out</span></li>
-            <li>2  <span class="card" onclick="dC('spiritualintervention')">Spiritual Intervention</span></li>
-            <li>2  <span class="card" onclick="dC('targetvitals')">Target Vitals</span></li>
-            <li><h4>— Reaction (17) —</h4></li>
-            <li>5  <span class="card" onclick="dC('eyesofargus')">Eyes of Argus</span></li>
-            <li>5  <span class="card" onclick="dC('telepathicmisdirection')">Telepathic Misdirection</span></li>
-            <li>2  <span class="card" onclick="dC('delayingtactics')">Delaying Tactics</span></li>
-            <li>2  <span class="card" onclick="dC('funeralwake')">Funeral Wake</span></li>
-            <li>2  <span class="card" onclick="dC('onthequivive')">On the Qui Vive</span></li>
-            <li>1  <span class="card" onclick="dC('myenemysenemy')">My Enemy's Enemy</span></li>
-            <li><h4>— Equipment (5) —</h4></li>
-            <li>1  <span class="card" onclick="dC('bowlofconvergence')">Bowl of Convergence</span></li>
-            <li>1  <span class="card" onclick="dC('erebusmask')">Erebus Mask</span></li>
-            <li>1  <span class="card" onclick="dC('heartofnizchetus')">Heart of Nizchetus</span></li>
-            <li>1  <span class="card" onclick="dC('sniperrifle')">Sniper Rifle</span></li>
-            <li>1  <span class="card" onclick="dC('unlicensedtaxicab')">Unlicensed Taxicab</span></li>
-            <li><h4>— Ally (10) —</h4></li>
-            <li>8  <span class="card" onclick="dC('emeraldlegionnaire')">Emerald Legionnaire</span></li>
-            <li>1  <span class="card" onclick="dC('carltonvanwyk')">Carlton Van Wyk</span></li>
-            <li>1  <span class="card" onclick="dC('ossian')">Ossian</span></li>
-            <li><h4>— Retainer (3) —</h4></li>
-            <li>3  <span class="card" onclick="dC('vengefulspirit')">Vengeful Spirit</span></li>
-            <li><h4>— Event (5) —</h4></li>
-            <li>3  <span class="card" onclick="dC('unmaskingthe')">The Unmasking</span></li>
-            <li>2  <span class="card" onclick="dC('fbispecialaffairsdivision')">FBI Special Affairs Division</span></li>
+        <h3 id="library-header"></h3>
+        <ul id="library-list">
         </ul>
     </div>
     <h2>Highlights</h2>
@@ -186,4 +118,12 @@
         <a class="next" href="euro-brujah.html">Euro Brujah</a>
     </nav>
 </footer>
+<script>
+    window.onload = function () {
+        document.getElementById("card-modal").addEventListener("keydown", modalKeydown)
+        document.getElementById("card-prev").addEventListener("click", prevCard)
+        document.getElementById("card-next").addEventListener("click", nextCard)
+        displayDeck({"author":null,"comments":"","crypt":{"cards":[{"comments":null,"count":5,"id":"200434","name":"Erlik"},{"comments":null,"count":3,"id":"200428","name":"Erebus"},{"comments":null,"count":2,"id":"201511","name":"Zygodat"},{"comments":null,"count":1,"id":"200158","name":"Babalawo Alafin"},{"comments":null,"count":1,"id":"201057","name":"Nicomedes"}],"count":12},"date":"2019-04-27","event":"Grand Prix Iberia","library":{"cards":[{"cards":[{"comments":null,"count":4,"id":"101112","name":"Liquidation"},{"comments":null,"count":3,"id":"102121","name":"Villein"},{"comments":null,"count":2,"id":"100588","name":"Dreams of the Sphinx"},{"comments":null,"count":2,"id":"102113","name":"Vessel"},{"comments":null,"count":1,"id":"100199","name":"Blood Doll"},{"comments":null,"count":1,"id":"100710","name":"Fear of Mekhet"},{"comments":null,"count":1,"id":"100824","name":"Giant's Blood"},{"comments":null,"count":1,"id":"100908","name":"Heidelberg Castle, Germany"},{"comments":null,"count":1,"id":"101384","name":"Pentex(TM) Subversion"},{"comments":null,"count":1,"id":"101388","name":"Perfectionist"},{"comments":null,"count":1,"id":"101439","name":"Powerbase: Montreal"},{"comments":null,"count":1,"id":"101811","name":"Smiling Jack, The Anarch"},{"comments":null,"count":1,"id":"101896","name":"Sudden Reversal"},{"comments":null,"count":1,"id":"101536","name":"The Rack"}],"count":21,"type":"Master"},{"cards":[{"comments":null,"count":1,"id":"100079","name":"Aranthebes, The Immortal"}],"count":1,"type":"Action"},{"cards":[{"comments":null,"count":4,"id":"100788","name":"Freak Drive"},{"comments":null,"count":2,"id":"100279","name":"Call of the Hungry Dead"},{"comments":null,"count":2,"id":"100761","name":"Forced March"},{"comments":null,"count":2,"id":"100974","name":"Inevitability of the Void"},{"comments":null,"count":2,"id":"101773","name":"Shroud Mastery"}],"count":12,"type":"Action Modifier"},{"cards":[{"comments":null,"count":2,"id":"101843","name":"Spectral Divination"}],"count":2,"type":"Action Modifier/Reaction"},{"cards":[{"comments":null,"count":4,"id":"100249","name":"Breath of Thanatos"}],"count":4,"type":"Action Modifier/Combat"},{"cards":[{"comments":null,"count":2,"id":"100187","name":"Blight"},{"comments":null,"count":2,"id":"100693","name":"Fake Out"},{"comments":null,"count":2,"id":"101852","name":"Spiritual Intervention"},{"comments":null,"count":2,"id":"101942","name":"Target Vitals"}],"count":8,"type":"Combat"},{"cards":[{"comments":null,"count":5,"id":"100680","name":"Eyes of Argus"},{"comments":null,"count":5,"id":"101949","name":"Telepathic Misdirection"},{"comments":null,"count":2,"id":"100519","name":"Delaying Tactics"},{"comments":null,"count":2,"id":"100797","name":"Funeral Wake"},{"comments":null,"count":2,"id":"101321","name":"On the Qui Vive"},{"comments":null,"count":1,"id":"101259","name":"My Enemy's Enemy"}],"count":17,"type":"Reaction"},{"cards":[{"comments":null,"count":1,"id":"100243","name":"Bowl of Convergence"},{"comments":null,"count":1,"id":"100657","name":"Erebus Mask"},{"comments":null,"count":1,"id":"100903","name":"Heart of Nizchetus"},{"comments":null,"count":1,"id":"101816","name":"Sniper Rifle"},{"comments":null,"count":1,"id":"102078","name":"Unlicensed Taxicab"}],"count":5,"type":"Equipment"},{"cards":[{"comments":null,"count":8,"id":"100634","name":"Emerald Legionnaire"},{"comments":null,"count":1,"id":"100298","name":"Carlton Van Wyk"},{"comments":null,"count":1,"id":"101333","name":"Ossian"}],"count":10,"type":"Ally"},{"cards":[{"comments":null,"count":3,"id":"102107","name":"Vengeful Spirit"}],"count":3,"type":"Retainer"},{"cards":[{"comments":null,"count":3,"id":"102079","name":"The Unmasking"},{"comments":null,"count":2,"id":"100709","name":"FBI Special Affairs Division"}],"count":5,"type":"Event"}],"count":88},"name":"Emerald Legion","place":"Lisboa, Portugal","player":"Mariano Carbonero Roman","players_count":36,"score":"3GW9+3","tournament_format":"3R+F","twda_id":"2019gpilp"})
+    }
+</script>
 </html>

@@ -7,12 +7,7 @@
     <meta name="description" content="Vampire: the Eternal Struggle (VTES) archetype: Girls Will Find Inner Circles">
     <link rel="stylesheet" type="text/css" href="../base.css"/>
     <link rel="icon" href="http://codex-of-the-damned.org/icons/vtes.svg">
-    <script>
-        function dC(name) {
-            document.getElementById("card-image").src = '../card-images/'.concat(name, '.jpg');
-            document.getElementById("card-modal").style.display = "block";
-        }
-    </script>
+    <script src="../decklist.js"></script>
     <title>Girls Will Find Inner Circles</title>
 </head>
 <body>
@@ -32,67 +27,21 @@
         </ul>
     </nav>
 </header>
-<div id="card-modal" class="modal" onclick="this.style.display='none'">
-        <img class="modal-content" id="card-image">
+<div id="card-modal" class="modal" onclick="this.style.display='none'" tabindex="-1">
+    <div id=card-prev class="modal-nav">&#xf077</div>
+    <img class="modal-content" id="card-image"/>
+    <div id=card-next class="modal-nav">&#xf078</div>
 </div>
 <article>
     <h1>Girls Will Find Inner Circles</h1>
-    <div class="decklist">
-        <h2><a href="http://www.vekn.fr/decks/twd.htm#2019ecday1pf">Girls Will Find IC</a></h2>
-        <p>
-            Deck by Jorge Delgado<br/>
-            EC 2019 - Day 1<br/>
-            Paris, France<br/>
-            August 17th 2019<br/>
-            132 players<br/>
-        </p>
-        <h3>Crypt (12 cards)</h3>
-        <ul>
-            <li>4  <span class="card" onclick="dC('cybele')">Cybele</span></li>
-            <li>4  <span class="card" onclick="dC('aksinyadaclau')">Aksinya Daclau</span></li>
-            <li>1  <span class="card" onclick="dC('adanadesforza')">Adana de Sforza</span></li>
-            <li>1  <span class="card" onclick="dC('luciantheperfect')">Lucian, the Perfect</span></li>
-            <li>1  <span class="card" onclick="dC('lutzvonhohenzollern')">Lutz von Hohenzollern</span></li>
-            <li>1  <span class="card" onclick="dC('rafaeldecorazon')">Rafael de Corazon</span></li>
+    <div id="decklist" class="decklist" style="display: none">
+        <h2 id="deck-name"><a id="deck-link" href="http://example.com"></a></h2>
+        <p id="deck-header"></p>
+        <h3 id="crypt-header"></h3>
+        <ul id="crypt-list">
         </ul>
-        <h3>Library (79 cards)</h3>
-        <ul>
-            <li><h4>— Master (50) —</h4></li>
-            <li>15 <span class="card" onclick="dC('ashurtablets')">Ashur Tablets</span></li>
-            <li>7  <span class="card" onclick="dC('liquidation')">Liquidation</span></li>
-            <li>7  <span class="card" onclick="dC('zillahsvalley')">Zillah's Valley</span></li>
-            <li>6  <span class="card" onclick="dC('villein')">Villein</span></li>
-            <li>2  <span class="card" onclick="dC('dreamsofthesphinx')">Dreams of the Sphinx</span></li>
-            <li>2  <span class="card" onclick="dC('golcondainnerpeace')">Golconda: Inner Peace</span></li>
-            <li>2  <span class="card" onclick="dC('parthenonthe')">The Parthenon</span></li>
-            <li>2  <span class="card" onclick="dC('widerview')">Wider View</span></li>
-            <li>1  <span class="card" onclick="dC('coventhe')">The Coven</span></li>
-            <li>1  <span class="card" onclick="dC('giantsblood')">Giant's Blood</span></li>
-            <li>1  <span class="card" onclick="dC('informationhighway')">Information Highway</span></li>
-            <li>1  <span class="card" onclick="dC('jakewashington')">Jake Washington</span></li>
-            <li>1  <span class="card" onclick="dC('metrounderground')">Metro Underground</span></li>
-            <li>1  <span class="card" onclick="dC('monasteryofshadows')">Monastery of Shadows</span></li>
-            <li>1  <span class="card" onclick="dC('pentextmsubversion')">Pentex™ Subversion</span></li>
-            <li><h4>— Action (4) —</h4></li>
-            <li>2  <span class="card" onclick="dC('entrancement')">Entrancement</span></li>
-            <li>2  <span class="card" onclick="dC('unleashhellsfury')">Unleash Hell's Fury</span></li>
-            <li><h4>— Modifier (14) —</h4></li>
-            <li>4  <span class="card" onclick="dC('intothinair')">Into Thin Air</span></li>
-            <li>3  <span class="card" onclick="dC('aireofelation')">Aire of Elation</span></li>
-            <li>2  <span class="card" onclick="dC('elderimpersonation')">Elder Impersonation</span></li>
-            <li>2  <span class="card" onclick="dC('facelessnight')">Faceless Night</span></li>
-            <li>2  <span class="card" onclick="dC('spyingmission')">Spying Mission</span></li>
-            <li>1  <span class="card" onclick="dC('enkilcog')">Enkil Cog</span></li>
-            <li><h4>— Modifier/Combat (2) —</h4></li>
-            <li>2  <span class="card" onclick="dC('swallowedbythenight')">Swallowed by the Night</span></li>
-            <li><h4>— Combat (3) —</h4></li>
-            <li>3  <span class="card" onclick="dC('majesty')">Majesty</span></li>
-            <li><h4>— Reaction (4) —</h4></li>
-            <li>2  <span class="card" onclick="dC('lostintranslation')">Lost in Translation</span></li>
-            <li>1  <span class="card" onclick="dC('guarddogs')">Guard Dogs</span></li>
-            <li>1  <span class="card" onclick="dC('ratswarning')">Rat's Warning</span></li>
-            <li><h4>— Event (1) —</h4></li>
-            <li>1  <span class="card" onclick="dC('scourgeoftheenochians')">Scourge of the Enochians</span></li>
+        <h3 id="library-header"></h3>
+        <ul id="library-list">
         </ul>
     </div>
     <h2>Highlights</h2>
@@ -174,4 +123,12 @@
         <a class="next" href="goratrix-high-tower.html">Goratrix High Tower</a>
     </nav>
 </footer>
+<script>
+    window.onload = function () {
+        document.getElementById("card-modal").addEventListener("keydown", modalKeydown)
+        document.getElementById("card-prev").addEventListener("click", prevCard)
+        document.getElementById("card-next").addEventListener("click", nextCard)
+        displayDeck({"author":null,"comments":"","crypt":{"cards":[{"comments":null,"count":4,"id":"200305","name":"Cybele"},{"comments":null,"count":4,"id":"200034","name":"Aksinya Daclau"},{"comments":null,"count":1,"id":"200011","name":"Adana de Sforza"},{"comments":null,"count":1,"id":"200871","name":"Lucian, the Perfect"},{"comments":null,"count":1,"id":"200890","name":"Lutz von Hohenzollern"},{"comments":null,"count":1,"id":"201151","name":"Rafael de Corazon"}],"count":12},"date":"2019-08-17","event":"EC 2019 - Day 1","library":{"cards":[{"cards":[{"comments":null,"count":15,"id":"100106","name":"Ashur Tablets"},{"comments":null,"count":7,"id":"101112","name":"Liquidation"},{"comments":null,"count":7,"id":"102207","name":"Zillah's Valley"},{"comments":null,"count":6,"id":"102121","name":"Villein"},{"comments":null,"count":2,"id":"100588","name":"Dreams of the Sphinx"},{"comments":null,"count":2,"id":"100842","name":"Golconda: Inner Peace"},{"comments":null,"count":2,"id":"101355","name":"The Parthenon"},{"comments":null,"count":2,"id":"102180","name":"Wider View"},{"comments":null,"count":1,"id":"100824","name":"Giant's Blood"},{"comments":null,"count":1,"id":"100984","name":"Information Highway"},{"comments":null,"count":1,"id":"101019","name":"Jake Washington"},{"comments":null,"count":1,"id":"101207","name":"Metro Underground"},{"comments":null,"count":1,"id":"101238","name":"Monastery of Shadows"},{"comments":null,"count":1,"id":"101384","name":"Pentex(TM) Subversion"},{"comments":null,"count":1,"id":"100435","name":"The Coven"}],"count":50,"type":"Master"},{"cards":[{"comments":null,"count":2,"id":"100652","name":"Entrancement"},{"comments":null,"count":2,"id":"102076","name":"Unleash Hell's Fury"}],"count":4,"type":"Action"},{"cards":[{"comments":null,"count":4,"id":"101001","name":"Into Thin Air"},{"comments":null,"count":3,"id":"100031","name":"Aire of Elation"},{"comments":null,"count":2,"id":"100617","name":"Elder Impersonation"},{"comments":null,"count":2,"id":"100687","name":"Faceless Night"},{"comments":null,"count":2,"id":"101857","name":"Spying Mission"},{"comments":null,"count":1,"id":"100645","name":"Enkil Cog"}],"count":14,"type":"Action Modifier"},{"cards":[{"comments":null,"count":2,"id":"101913","name":"Swallowed by the Night"}],"count":2,"type":"Action Modifier/Combat"},{"cards":[{"comments":null,"count":3,"id":"101144","name":"Majesty"}],"count":3,"type":"Combat"},{"cards":[{"comments":null,"count":2,"id":"101126","name":"Lost in Translation"},{"comments":null,"count":1,"id":"100863","name":"Guard Dogs"},{"comments":null,"count":1,"id":"101547","name":"Rat's Warning"}],"count":4,"type":"Reaction"},{"cards":[{"comments":null,"count":1,"id":"101697","name":"Scourge of the Enochians"}],"count":1,"type":"Event"}],"count":78},"name":"Girls will find... IC","place":"Paris, France","player":"Jorge Delgado","players_count":132,"score":"2GW8.0+1.5","tournament_format":"3R+F","twda_id":"2019ecday1pf"})
+    }
+</script>
 </html>

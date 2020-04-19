@@ -7,12 +7,7 @@
     <meta name="description" content="Vampire: the Eternal Struggle (VTES) archetype: Shambling Hordes">
     <link rel="stylesheet" type="text/css" href="../base.css"/>
     <link rel="icon" href="http://codex-of-the-damned.org/icons/vtes.svg">
-    <script>
-        function dC(name) {
-            document.getElementById("card-image").src = '../card-images/'.concat(name, '.jpg');
-            document.getElementById("card-modal").style.display = "block";
-        }
-    </script>
+    <script src="../decklist.js"></script>
     <title>Shambling Hordes</title>
 </head>
 <body>
@@ -32,75 +27,21 @@
         </ul>
     </nav>
 </header>
-<div id="card-modal" class="modal" onclick="this.style.display='none'">
-        <img class="modal-content" id="card-image">
+<div id="card-modal" class="modal" onclick="this.style.display='none'" tabindex="-1">
+    <div id=card-prev class="modal-nav">&#xf077</div>
+    <img class="modal-content" id="card-image"/>
+    <div id=card-next class="modal-nav">&#xf078</div>
 </div>
 <article>
     <h1><img src="../icons/clan-giovanni.svg"> Shambling Hordes</h1>
-    <div class="decklist">
-        <h2><a href="http://www.vekn.fr/decks/twd.htm#2014sieqmi">Family Never Forget</a></h2>
-        <p>
-            Deck by Nicola Lonardi<br/>
-            Survivors - Italian European Qualifier<br/>
-            Milan, Italy<br/>
-            September 14th 2014<br/>
-            25 players<br/>
-        </p>
-        <h3>Crypt (12 cards)</h3>
-        <ul>
-            <li>3  <span class="card" onclick="dC('rudolfogiovanni')">Rudolfo Giovanni</span></li>
-            <li>2  <span class="card" onclick="dC('isabelgiovanni')">Isabel Giovanni</span></li>
-            <li>2  <span class="card" onclick="dC('gloriagiovanni')">Gloria Giovanni</span></li>
-            <li>1  <span class="card" onclick="dC('ledinhtho')">Le Dinh Tho</span></li>
-            <li>1  <span class="card" onclick="dC('francescagiovanni')">Francesca Giovanni</span></li>
-            <li>1  <span class="card" onclick="dC('cristoferogiovanni')">Cristofero Giovanni</span></li>
-            <li>1  <span class="card" onclick="dC('liamilliner')">Lia Milliner</span></li>
-            <li>1  <span class="card" onclick="dC('mariogiovanni')">Mario Giovanni</span></li>
+    <div id="decklist" class="decklist" style="display: none">
+        <h2 id="deck-name"><a id="deck-link" href="http://example.com"></a></h2>
+        <p id="deck-header"></p>
+        <h3 id="crypt-header"></h3>
+        <ul id="crypt-list">
         </ul>
-        <h3>Library (79 cards)</h3>
-        <ul>
-            <li><h4>— Master (29) —</h4></li>
-            <li>6  <span class="card" onclick="dC('liquidation')">Liquidation</span></li>
-            <li>4  <span class="card" onclick="dC('parthenonthe')">The Parthenon</span></li>
-            <li>3  <span class="card" onclick="dC('acquiredventrueassets')">Acquired Ventrue Assets</span></li>
-            <li>3  <span class="card" onclick="dC('dreamsofthesphinx')">Dreams of the Sphinx</span></li>
-            <li>2  <span class="card" onclick="dC('pathofbonethe')">The Path of Bone</span></li>
-            <li>1  <span class="card" onclick="dC('charisma')">Charisma</span></li>
-            <li>1  <span class="card" onclick="dC('directintervention')">Direct Intervention</span></li>
-            <li>1  <span class="card" onclick="dC('fame')">Fame</span></li>
-            <li>1  <span class="card" onclick="dC('fortschrittlibrary')">Fortschritt Library</span></li>
-            <li>1  <span class="card" onclick="dC('giantsblood')">Giant's Blood</span></li>
-            <li>1  <span class="card" onclick="dC('jakewashington')">Jake Washington</span></li>
-            <li>1  <span class="card" onclick="dC('morguehuntingground')">Morgue Hunting Ground</span></li>
-            <li>1  <span class="card" onclick="dC('pentextmsubversion')">Pentex™ Subversion</span></li>
-            <li>1  <span class="card" onclick="dC('perfectionist')">Perfectionist</span></li>
-            <li>1  <span class="card" onclick="dC('powerbasecapeverde')">Powerbase: Cape Verde</span></li>
-            <li>1  <span class="card" onclick="dC('suddenreversal')">Sudden Reversal</span></li>
-            <li><h4>— Action (7) —</h4></li>
-            <li>5  <span class="card" onclick="dC('sudariorefraction')">Sudario Refraction</span></li>
-            <li>1  <span class="card" onclick="dC('farmastery')">Far Mastery</span></li>
-            <li>1  <span class="card" onclick="dC('governtheunaligned')">Govern the Unaligned</span></li>
-            <li><h4>— Action Modifier (6) —</h4></li>
-            <li>4  <span class="card" onclick="dC('callofthehungrydead')">Call of the Hungry Dead</span></li>
-            <li>2  <span class="card" onclick="dC('conditioning')">Conditioning</span></li>
-            <li><h4>— Action Modifier/Reaction (4) —</h4></li>
-            <li>4  <span class="card" onclick="dC('spectraldivination')">Spectral Divination</span></li>
-            <li><h4>— Combat (2) —</h4></li>
-            <li>2  <span class="card" onclick="dC('trap')">Trap</span></li>
-            <li><h4>— Reaction (6) —</h4></li>
-            <li>2  <span class="card" onclick="dC('deflection')">Deflection</span></li>
-            <li>2  <span class="card" onclick="dC('delayingtactics')">Delaying Tactics</span></li>
-            <li>2  <span class="card" onclick="dC('onthequivive')">On the Qui Vive</span></li>
-            <li><h4>— Ally (20) —</h4></li>
-            <li>17 <span class="card" onclick="dC('shamblinghordes')">Shambling Hordes</span></li>
-            <li>1  <span class="card" onclick="dC('carltonvanwyk')">Carlton Van Wyk</span></li>
-            <li>1  <span class="card" onclick="dC('ossian')">Ossian</span></li>
-            <li>1  <span class="card" onclick="dC('tyecooper')">Tye Cooper</span></li>
-            <li><h4>— Event (5) —</h4></li>
-            <li>2  <span class="card" onclick="dC('unmaskingthe')">The Unmasking</span></li>
-            <li>1  <span class="card" onclick="dC('antheliostheredstar')">Anthelios, The Red Star</span></li>
-            <li>1  <span class="card" onclick="dC('dragonbound')">Dragonbound</span></li>
-            <li>1  <span class="card" onclick="dC('fbispecialaffairsdivision')">FBI Special Affairs Division</span></li>
+        <h3 id="library-header"></h3>
+        <ul id="library-list">
         </ul>
     </div>
     <h2>Highlights</h2>
@@ -181,4 +122,12 @@
         <a class="next" href="spirit-marionette.html">Spirit Marionette</a>
     </nav>
 </footer>
+<script>
+    window.onload = function () {
+        document.getElementById("card-modal").addEventListener("keydown", modalKeydown)
+        document.getElementById("card-prev").addEventListener("click", prevCard)
+        document.getElementById("card-next").addEventListener("click", nextCard)
+        displayDeck({"author":null,"comments":"","crypt":{"cards":[{"comments":null,"count":3,"id":"201209","name":"Rudolfo Giovanni"},{"comments":null,"count":2,"id":"200643","name":"Isabel Giovanni"},{"comments":null,"count":2,"id":"200525","name":"Gloria Giovanni"},{"comments":null,"count":1,"id":"200824","name":"Le Dinh Tho"},{"comments":null,"count":1,"id":"200474","name":"Francesca Giovanni"},{"comments":null,"count":1,"id":"200301","name":"Cristofero Giovanni"},{"comments":null,"count":1,"id":"200834","name":"Lia Milliner"},{"comments":null,"count":1,"id":"200932","name":"Mario Giovanni"}],"count":12},"date":"2014-09-14","event":"Survivors - Italian European Qualifier","library":{"cards":[{"cards":[{"comments":null,"count":6,"id":"101112","name":"Liquidation"},{"comments":null,"count":4,"id":"101355","name":"The Parthenon"},{"comments":null,"count":3,"id":"100019","name":"Acquired Ventrue Assets"},{"comments":null,"count":3,"id":"100588","name":"Dreams of the Sphinx"},{"comments":null,"count":2,"id":"101359","name":"The Path of Bone"},{"comments":null,"count":1,"id":"100332","name":"Charisma"},{"comments":null,"count":1,"id":"100545","name":"Direct Intervention"},{"comments":null,"count":1,"id":"100698","name":"Fame"},{"comments":null,"count":1,"id":"100775","name":"Fortschritt Library"},{"comments":null,"count":1,"id":"100824","name":"Giant's Blood"},{"comments":null,"count":1,"id":"101019","name":"Jake Washington"},{"comments":null,"count":1,"id":"101243","name":"Morgue Hunting Ground"},{"comments":null,"count":1,"id":"101384","name":"Pentex(TM) Subversion"},{"comments":null,"count":1,"id":"101388","name":"Perfectionist"},{"comments":null,"count":1,"id":"101433","name":"Powerbase: Cape Verde"},{"comments":null,"count":1,"id":"101896","name":"Sudden Reversal"}],"count":29,"type":"Master"},{"cards":[{"comments":null,"count":5,"id":"101895","name":"Sudario Refraction"},{"comments":null,"count":1,"id":"100703","name":"Far Mastery"},{"comments":null,"count":1,"id":"100845","name":"Govern the Unaligned"}],"count":7,"type":"Action"},{"cards":[{"comments":null,"count":4,"id":"100279","name":"Call of the Hungry Dead"},{"comments":null,"count":2,"id":"100401","name":"Conditioning"}],"count":6,"type":"Action Modifier"},{"cards":[{"comments":null,"count":4,"id":"101843","name":"Spectral Divination"}],"count":4,"type":"Action Modifier/Reaction"},{"cards":[{"comments":null,"count":2,"id":"102012","name":"Trap"}],"count":2,"type":"Combat"},{"cards":[{"comments":null,"count":2,"id":"100518","name":"Deflection"},{"comments":null,"count":2,"id":"100519","name":"Delaying Tactics"},{"comments":null,"count":2,"id":"101321","name":"On the Qui Vive"}],"count":6,"type":"Reaction"},{"cards":[{"comments":null,"count":17,"id":"101751","name":"Shambling Hordes"},{"comments":null,"count":1,"id":"100298","name":"Carlton Van Wyk"},{"comments":null,"count":1,"id":"101333","name":"Ossian"},{"comments":null,"count":1,"id":"102053","name":"Tye Cooper"}],"count":20,"type":"Ally"},{"cards":[{"comments":null,"count":2,"id":"102079","name":"The Unmasking"},{"comments":null,"count":1,"id":"100074","name":"Anthelios, The Red Star"},{"comments":null,"count":1,"id":"100581","name":"Dragonbound"},{"comments":null,"count":1,"id":"100709","name":"FBI Special Affairs Division"}],"count":5,"type":"Event"}],"count":79},"name":"Family Never Forget","place":"Milan, Italy","player":"Nicola Lonardi","players_count":25,"score":null,"tournament_format":"3R+F","twda_id":"2014sieqmi"})
+    }
+</script>
 </html>

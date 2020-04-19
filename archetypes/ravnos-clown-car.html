@@ -7,12 +7,7 @@
     <meta name="description" content="Vampire: the Eternal Struggle (VTES) archetype: Ravnos Clown Car">
     <link rel="stylesheet" type="text/css" href="../base.css"/>
     <link rel="icon" href="http://codex-of-the-damned.org/icons/vtes.svg">
-    <script>
-        function dC(name) {
-            document.getElementById("card-image").src = '../card-images/'.concat(name, '.jpg');
-            document.getElementById("card-modal").style.display = "block";
-        }
-    </script>
+    <script src="../decklist.js"></script>
     <title>Ravnos Clown Car</title>
 </head>
 <body>
@@ -32,57 +27,21 @@
         </ul>
     </nav>
 </header>
-<div id="card-modal" class="modal" onclick="this.style.display='none'">
-        <img class="modal-content" id="card-image">
+<div id="card-modal" class="modal" onclick="this.style.display='none'" tabindex="-1">
+    <div id=card-prev class="modal-nav">&#xf077</div>
+    <img class="modal-content" id="card-image"/>
+    <div id=card-next class="modal-nav">&#xf078</div>
 </div>
 <article>
     <h1><img src="../icons/clan-ravnos.svg"> Ravnos Clown Car</h1>
-    <div class="decklist">
-        <h2><a href="http://www.vekn.fr/decks/twd.htm#2014fncmf">Koudeta</a></h2>
-        <p>
-            Deck by Orian Gissler<br/>
-            French NC 2014<br/>
-            Marseille, France<br/>
-            June 8th 2014<br/>
-            33 players<br/>
-        </p>
-        <h3>Crypt (12 cards)</h3>
-        <ul>
-            <li>1  <span class="card" onclick="dC('andreipuxon')">Andrei Puxon</span></li>
-            <li>1  <span class="card" onclick="dC('ghivrandalaalthedeadgod')">Ghivran Dalaal, The Dead God</span></li>
-            <li>1  <span class="card" onclick="dC('khalilravana')">Khalil Ravana</span></li>
-            <li>1  <span class="card" onclick="dC('ankapriestessofthorns')">Anka, Priestess of Thorns</span></li>
-            <li>1  <span class="card" onclick="dC('salbatorebokkengro')">Salbatore Bokkengro</span></li>
-            <li>1  <span class="card" onclick="dC('sennuwythepromoter')">Sennuwy, The Promoter</span></li>
-            <li>1  <span class="card" onclick="dC('lazardobrescu')">Lázár Dobrescu</span></li>
-            <li>1  <span class="card" onclick="dC('tsigane')">Tsigane</span></li>
-            <li>1  <span class="card" onclick="dC('vedelesbreno')">Vedel Esbreno</span></li>
-            <li>1  <span class="card" onclick="dC('sashamiklos')">Sasha Miklos</span></li>
-            <li>1  <span class="card" onclick="dC('spleengeorgiogutterpunk')">Spleen, Georgio Gutterpunk</span></li>
-            <li>1  <span class="card" onclick="dC('zip')">Zip</span></li>
+    <div id="decklist" class="decklist" style="display: none">
+        <h2 id="deck-name"><a id="deck-link" href="http://example.com"></a></h2>
+        <p id="deck-header"></p>
+        <h3 id="crypt-header"></h3>
+        <ul id="crypt-list">
         </ul>
-        <h3>Library (65 cards)</h3>
-        <ul>
-            <li><h4>— Master (13) —</h4></li>
-            <li>6  <span class="card" onclick="dC('ravnoscarnival')">Ravnos Carnival</span></li>
-            <li>2  <span class="card" onclick="dC('girdminions')">Gird Minions</span></li>
-            <li>2  <span class="card" onclick="dC('pentextmsubversion')">Pentex™ Subversion</span></li>
-            <li>2  <span class="card" onclick="dC('weekofnightmares')">Week of Nightmares</span></li>
-            <li>1  <span class="card" onclick="dC('lifeboon')">Life Boon</span></li>
-            <li><h4>— Action (31) —</h4></li>
-            <li>14 <span class="card" onclick="dC('embracethe')">The Embrace</span></li>
-            <li>10 <span class="card" onclick="dC('mozambiqueallure')">Mozambique Allure</span></li>
-            <li>5  <span class="card" onclick="dC('bamba')">Bamba</span></li>
-            <li>2  <span class="card" onclick="dC('aranthebestheimmortal')">Aranthebes, The Immortal</span></li>
-            <li><h4>— Political (9) —</h4></li>
-            <li>8  <span class="card" onclick="dC('consanguineousboon')">Consanguineous Boon</span></li>
-            <li>1  <span class="card" onclick="dC('autarkispersecution')">Autarkis Persecution</span></li>
-            <li><h4>— Modifier/Reaction (10) —</h4></li>
-            <li>10 <span class="card" onclick="dC('eldestarekholothe')">The Eldest Are Kholo</span></li>
-            <li><h4>— Equipment (1) —</h4></li>
-            <li>1  <span class="card" onclick="dC('heartofnizchetus')">Heart of Nizchetus</span></li>
-            <li><h4>— Event (1) —</h4></li>
-            <li>1  <span class="card" onclick="dC('uncoilingthe')">The Uncoiling</span></li>
+        <h3 id="library-header"></h3>
+        <ul id="library-list">
         </ul>
     </div>
     <h2>Highlights</h2>
@@ -153,4 +112,12 @@
         <a class="next" href="renegade-assault.html">Renegade Assault</a>
     </nav>
 </footer>
+<script>
+    window.onload = function () {
+        document.getElementById("card-modal").addEventListener("keydown", modalKeydown)
+        document.getElementById("card-prev").addEventListener("click", prevCard)
+        document.getElementById("card-next").addEventListener("click", nextCard)
+        displayDeck({"author":"Mousnich","comments":"-- 1GW5.5 (5th seed) + 1.5vp in final\n\nSetting before final\n1 - Florian Proser 2GW10 Malkavian BS\n2 - Pierre Tran-van 2GW8 Tzimich Wall\n3 - Pierre Denis Brouillet 2GW6 Inner Vote and bleed (g4\n4 - Mehdi Mazni 1GW6 Goratrix\n5 - Orian Gissler 1GW5,5 Ravnos laibon week\n\nFinal order: Pierre => Florian => Orian => Meidy => Pierre-Denis\n","crypt":{"cards":[{"comments":null,"count":1,"id":"200084","name":"Andrei Puxon"},{"comments":null,"count":1,"id":"200513","name":"Ghivran Dalaal, The Dead God"},{"comments":null,"count":1,"id":"200778","name":"Khalil Ravana"},{"comments":null,"count":1,"id":"200098","name":"Anka, Priestess of Thorns"},{"comments":null,"count":1,"id":"201224","name":"Salbatore Bokkengro"},{"comments":null,"count":1,"id":"201264","name":"Sennuwy, The Promoter"},{"comments":null,"count":1,"id":"200819","name":"L\u00e1z\u00e1r Dobrescu"},{"comments":null,"count":1,"id":"201391","name":"Tsigane"},{"comments":null,"count":1,"id":"201432","name":"Vedel Esbreno"},{"comments":null,"count":1,"id":"201246","name":"Sasha Miklos"},{"comments":null,"count":1,"id":"201311","name":"Spleen, Georgio Gutterpunk"},{"comments":null,"count":1,"id":"201507","name":"Zip"}],"count":12},"date":"2014-06-08","event":"French NC 2014","library":{"cards":[{"cards":[{"comments":null,"count":6,"id":"101553","name":"Ravnos Carnival"},{"comments":null,"count":2,"id":"100831","name":"Gird Minions"},{"comments":null,"count":2,"id":"101384","name":"Pentex(TM) Subversion"},{"comments":null,"count":2,"id":"102166","name":"Week of Nightmares"},{"comments":null,"count":1,"id":"101103","name":"Life Boon"}],"count":13,"type":"Master"},{"cards":[{"comments":null,"count":14,"id":"100633","name":"The Embrace"},{"comments":null,"count":10,"id":"101248","name":"Mozambique Allure"},{"comments":null,"count":5,"id":"100129","name":"Bamba"},{"comments":null,"count":2,"id":"100079","name":"Aranthebes, The Immortal"}],"count":31,"type":"Action"},{"cards":[{"comments":null,"count":8,"id":"100410","name":"Consanguineous Boon"},{"comments":null,"count":1,"id":"100115","name":"Autarkis Persecution"}],"count":9,"type":"Political Action"},{"cards":[{"comments":null,"count":10,"id":"100622","name":"The Eldest Are Kholo"}],"count":10,"type":"Action Modifier/Reaction"},{"cards":[{"comments":null,"count":1,"id":"100903","name":"Heart of Nizchetus"}],"count":1,"type":"Equipment"},{"cards":[{"comments":null,"count":1,"id":"102057","name":"The Uncoiling"}],"count":1,"type":"Event"}],"count":65},"name":"Koudeta","place":"Marseille, France","player":"Orian Gissler","players_count":33,"score":null,"tournament_format":"3R+F","twda_id":"2014fncmf"})
+    }
+</script>
 </html>

@@ -7,12 +7,7 @@
     <meta name="description" content="Vampire: the Eternal Struggle (VTES) archetype: Cats">
     <link rel="stylesheet" type="text/css" href="../base.css"/>
     <link rel="icon" href="http://codex-of-the-damned.org/icons/vtes.svg">
-    <script>
-        function dC(name) {
-            document.getElementById("card-image").src = '../card-images/'.concat(name, '.jpg');
-            document.getElementById("card-modal").style.display = "block";
-        }
-    </script>
+    <script src="../decklist.js"></script>
     <title>Cats</title>
 </head>
 <body>
@@ -32,80 +27,21 @@
         </ul>
     </nav>
 </header>
-<div id="card-modal" class="modal" onclick="this.style.display='none'">
-        <img class="modal-content" id="card-image">
+<div id="card-modal" class="modal" onclick="this.style.display='none'" tabindex="-1">
+    <div id=card-prev class="modal-nav">&#xf077</div>
+    <img class="modal-content" id="card-image"/>
+    <div id=card-next class="modal-nav">&#xf078</div>
 </div>
 <article>
     <h1><img src="../icons/clan-ahrimanes.svg">Cats</h1>
-    <div class="decklist">
-        <h2><a href="http://www.vekn.fr/decks/twd.htm#2018pncwp">Deadly kittens</a></h2>
-        <p>
-            Deck by Randal Rudstam<br/>
-            Polish NC 2018<br/>
-            Warsaw, Poland<br/>
-            August 26th 2018<br/>
-            72 players<br/>
-        </p>
-        <h3>Crypt (12 cards)</h3>
-        <ul>
-            <li>3  <span class="card" onclick="dC('muricia')">Muricia</span></li>
-            <li>3  <span class="card" onclick="dC('effielowery')">Effie Lowery</span></li>
-            <li>1  <span class="card" onclick="dC('genthashale')">Gentha Shale</span></li>
-            <li>1  <span class="card" onclick="dC('sahana')">Sahana</span></li>
-            <li>1  <span class="card" onclick="dC('beetleman')">Beetleman</span></li>
-            <li>1  <span class="card" onclick="dC('aiyanathewolfcatcher')">Aiyana, The Wolfcatcher</span></li>
-            <li>1  <span class="card" onclick="dC('stick')">Stick</span></li>
-            <li>1  <span class="card" onclick="dC('darlenekillian')">Darlene Killian</span></li>
+    <div id="decklist" class="decklist" style="display: none">
+        <h2 id="deck-name"><a id="deck-link" href="http://example.com"></a></h2>
+        <p id="deck-header"></p>
+        <h3 id="crypt-header"></h3>
+        <ul id="crypt-list">
         </ul>
-        <h3>Library (90 cards)</h3>
-        <ul>
-            <li><h4>— Master (14) —</h4></li>
-            <li>5  <span class="card" onclick="dC('villein')">Villein</span></li>
-            <li>1  <span class="card" onclick="dC('archoninvestigation')">Archon Investigation</span></li>
-            <li>1  <span class="card" onclick="dC('directintervention')">Direct Intervention</span></li>
-            <li>1  <span class="card" onclick="dC('fame')">Fame</span></li>
-            <li>1  <span class="card" onclick="dC('guardianangel')">Guardian Angel</span></li>
-            <li>1  <span class="card" onclick="dC('pentextmsubversion')">Pentex™ Subversion</span></li>
-            <li>1  <span class="card" onclick="dC('powerbasemontreal')">Powerbase: Montreal</span></li>
-            <li>1  <span class="card" onclick="dC('rackthe')">The Rack</span></li>
-            <li>1  <span class="card" onclick="dC('suddenreversal')">Sudden Reversal</span></li>
-            <li>1  <span class="card" onclick="dC('vampiricdisease')">Vampiric Disease</span></li>
-            <li><h4>— Action (16) —</h4></li>
-            <li>8  <span class="card" onclick="dC('deepsong')">Deep Song</span></li>
-            <li>4  <span class="card" onclick="dC('englingfury')">Engling Fury</span></li>
-            <li>2  <span class="card" onclick="dC('abbot')">Abbot</span></li>
-            <li>1  <span class="card" onclick="dC('aranthebestheimmortal')">Aranthebes, The Immortal</span></li>
-            <li>1  <span class="card" onclick="dC('noseofthehound')">Nose of the Hound</span></li>
-            <li><h4>— Combat (33) —</h4></li>
-            <li>8  <span class="card" onclick="dC('carrioncrows')">Carrion Crows</span></li>
-            <li>6  <span class="card" onclick="dC('aidfrombats')">Aid from Bats</span></li>
-            <li>3  <span class="card" onclick="dC('targetvitals')">Target Vitals</span></li>
-            <li>2  <span class="card" onclick="dC('drawingoutthebeast')">Drawing Out the Beast</span></li>
-            <li>2  <span class="card" onclick="dC('tasteofvitae')">Taste of Vitae</span></li>
-            <li>1  <span class="card" onclick="dC('caninehorde')">Canine Horde</span></li>
-            <li>1  <span class="card" onclick="dC('leapfrog')">Leapfrog</span></li>
-            <li>1  <span class="card" onclick="dC('terrorfrenzy')">Terror Frenzy</span></li>
-            <li>1  <span class="card" onclick="dC('weightedwalkingstick')">Weighted Walking Stick</span></li>
-            <li><h4>— Combat/Modifier (8) —</h4></li>
-            <li>8  <span class="card" onclick="dC('swiftnessofthestag')">Swiftness of the Stag</span></li>
-            <li><h4>— Reaction (22) —</h4></li>
-            <li>7  <span class="card" onclick="dC('speakwithspirits')">Speak with Spirits</span></li>
-            <li>4  <span class="card" onclick="dC('falconseye')">Falcon's Eye</span></li>
-            <li>3  <span class="card" onclick="dC('catsguidance')">Cats' Guidance</span></li>
-            <li>3  <span class="card" onclick="dC('earsofthehare')">Ears of the Hare</span></li>
-            <li>2  <span class="card" onclick="dC('delayingtactics')">Delaying Tactics</span></li>
-            <li>1  <span class="card" onclick="dC('forcedawakening')">Forced Awakening</span></li>
-            <li>1  <span class="card" onclick="dC('instinctivereaction')">Instinctive Reaction</span></li>
-            <li>1  <span class="card" onclick="dC('onthequivive')">On the Qui Vive</span></li>
-            <li><h4>— Equipment (2) —</h4></li>
-            <li>1  <span class="card" onclick="dC('44magnum')">.44 Magnum</span></li>
-            <li>1  <span class="card" onclick="dC('ivorybow')">Ivory Bow</span></li>
-            <li><h4>— Ally (1) —</h4></li>
-            <li>1  <span class="card" onclick="dC('carltonvanwyk')">Carlton Van Wyk</span></li>
-            <li><h4>— Retainer (1) —</h4></li>
-            <li>1  <span class="card" onclick="dC('mrwinthrop')">Mr. Winthrop</span></li>
-            <li><h4>— Event (1) —</h4></li>
-            <li>1  <span class="card" onclick="dC('dragonbound')">Dragonbound</span></li>
+        <h3 id="library-header"></h3>
+        <ul id="library-list">
         </ul>
     </div>
     <h2>Highlights</h2>
@@ -210,4 +146,12 @@
         <a class="next" href="council-of-doom.html">Council of Doom</a>
     </nav>
 </footer>
+<script>
+    window.onload = function () {
+        document.getElementById("card-modal").addEventListener("keydown", modalKeydown)
+        document.getElementById("card-prev").addEventListener("click", prevCard)
+        document.getElementById("card-next").addEventListener("click", nextCard)
+        displayDeck({"author":null,"comments":"Ahrimane block, in the finals no outs was made do to anything else but anarch revolts.\n\nKey was Carlton using target vitals.\n","crypt":{"cards":[{"comments":null,"count":3,"id":"201023","name":"Muricia"},{"comments":null,"count":3,"id":"200404","name":"Effie Lowery"},{"comments":null,"count":1,"id":"200505","name":"Gentha Shale"},{"comments":null,"count":1,"id":"201220","name":"Sahana"},{"comments":null,"count":1,"id":"200185","name":"Beetleman"},{"comments":null,"count":1,"id":"200032","name":"Aiyana, The Wolfcatcher"},{"comments":null,"count":1,"id":"201318","name":"Stick"},{"comments":null,"count":1,"id":"200322","name":"Darlene Killian"}],"count":12},"date":"2018-08-26","event":"Polish NC 2018","library":{"cards":[{"cards":[{"comments":null,"count":5,"id":"102121","name":"Villein"},{"comments":null,"count":1,"id":"100085","name":"Archon Investigation"},{"comments":null,"count":1,"id":"100545","name":"Direct Intervention"},{"comments":null,"count":1,"id":"100698","name":"Fame"},{"comments":null,"count":1,"id":"100866","name":"Guardian Angel"},{"comments":null,"count":1,"id":"101384","name":"Pentex(TM) Subversion"},{"comments":null,"count":1,"id":"101439","name":"Powerbase: Montreal"},{"comments":null,"count":1,"id":"101896","name":"Sudden Reversal"},{"comments":null,"count":1,"id":"101536","name":"The Rack"},{"comments":null,"count":1,"id":"102088","name":"Vampiric Disease"}],"count":14,"type":"Master"},{"cards":[{"comments":null,"count":8,"id":"100515","name":"Deep Song"},{"comments":null,"count":4,"id":"100643","name":"Engling Fury"},{"comments":null,"count":2,"id":"100006","name":"Abbot"},{"comments":null,"count":1,"id":"100079","name":"Aranthebes, The Immortal"},{"comments":null,"count":1,"id":"101296","name":"Nose of the Hound"}],"count":16,"type":"Action"},{"cards":[{"comments":null,"count":8,"id":"100301","name":"Carrion Crows"},{"comments":null,"count":6,"id":"100029","name":"Aid from Bats"},{"comments":null,"count":3,"id":"101942","name":"Target Vitals"},{"comments":null,"count":2,"id":"100585","name":"Drawing Out the Beast"},{"comments":null,"count":2,"id":"101945","name":"Taste of Vitae"},{"comments":null,"count":1,"id":"100290","name":"Canine Horde"},{"comments":null,"count":1,"id":"101079","name":"Leapfrog"},{"comments":null,"count":1,"id":"101960","name":"Terror Frenzy"},{"comments":null,"count":1,"id":"102169","name":"Weighted Walking Stick"}],"count":25,"type":"Combat"},{"cards":[{"comments":null,"count":8,"id":"101916","name":"Swiftness of the Stag"}],"count":8,"type":"Combat/Action Modifier"},{"cards":[{"comments":null,"count":7,"id":"101840","name":"Speak with Spirits"},{"comments":null,"count":4,"id":"100694","name":"Falcon's Eye"},{"comments":null,"count":3,"id":"100308","name":"Cats' Guidance"},{"comments":null,"count":3,"id":"100599","name":"Ears of the Hare"},{"comments":null,"count":2,"id":"100519","name":"Delaying Tactics"},{"comments":null,"count":1,"id":"100760","name":"Forced Awakening"},{"comments":null,"count":1,"id":"100995","name":"Instinctive Reaction"},{"comments":null,"count":1,"id":"101321","name":"On the Qui Vive"}],"count":22,"type":"Reaction"},{"cards":[{"comments":null,"count":1,"id":"100001","name":".44 Magnum"},{"comments":null,"count":1,"id":"101014","name":"Ivory Bow"}],"count":2,"type":"Equipment"},{"cards":[{"comments":null,"count":1,"id":"100298","name":"Carlton Van Wyk"}],"count":1,"type":"Ally"},{"cards":[{"comments":null,"count":1,"id":"101249","name":"Mr. Winthrop"}],"count":1,"type":"Retainer"},{"cards":[{"comments":null,"count":1,"id":"100581","name":"Dragonbound"}],"count":1,"type":"Event"}],"count":90},"name":"Deadly kittens","place":"Warsaw, Poland","player":"Randal Rudstam","players_count":72,"score":"2GW7+2","tournament_format":"3R+F","twda_id":"2018pncwp"})
+    }
+</script>
 </html>

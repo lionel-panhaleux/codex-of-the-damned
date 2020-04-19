@@ -7,12 +7,7 @@
     <meta name="description" content="Vampire: the Eternal Struggle (VTES) archetype: Rachel Madness">
     <link rel="stylesheet" type="text/css" href="../base.css"/>
     <link rel="icon" href="http://codex-of-the-damned.org/icons/vtes.svg">
-    <script>
-        function dC(name) {
-            document.getElementById("card-image").src = '../card-images/'.concat(name, '.jpg');
-            document.getElementById("card-modal").style.display = "block";
-        }
-    </script>
+    <script src="../decklist.js"></script>
     <title>Rachel Madness</title>
 </head>
 <body>
@@ -32,72 +27,21 @@
         </ul>
     </nav>
 </header>
-<div id="card-modal" class="modal" onclick="this.style.display='none'">
-        <img class="modal-content" id="card-image">
+<div id="card-modal" class="modal" onclick="this.style.display='none'" tabindex="-1">
+    <div id=card-prev class="modal-nav">&#xf077</div>
+    <img class="modal-content" id="card-image"/>
+    <div id=card-next class="modal-nav">&#xf078</div>
 </div>
 <article>
     <h1><img src="../icons/clan-malkavian.svg"> Rachel Madness</h1>
-    <div class="decklist">
-        <h2><a href="http://www.vekn.fr/decks/twd.htm#2011pncgpm">Classic Rachel</a></h2>
-        <p>
-            Deck by Tomasz Kowalewski<br/>
-            Polish NC 2011<br/>
-            Gliwice, Poland<br/>
-            May 7th 2011<br/>
-            38 players<br/>
-        </p>
-        <h3>Crypt (12 cards)</h3>
-        <ul>
-            <li>5  <span class="card" onclick="dC('rachelbrandywine')">Rachel Brandywine</span></li>
-            <li>2  <span class="card" onclick="dC('gregeranderssen')">Greger Anderssen</span></li>
-            <li>2  <span class="card" onclick="dC('victoria')">Victoria</span></li>
-            <li>1  <span class="card" onclick="dC('quentinkingiii')">Quentin King III</span></li>
-            <li>1  <span class="card" onclick="dC('watenda')">Watenda</span></li>
-            <li>1  <span class="card" onclick="dC('zoe')">Zöe</span></li>
+    <div id="decklist" class="decklist" style="display: none">
+        <h2 id="deck-name"><a id="deck-link" href="http://example.com"></a></h2>
+        <p id="deck-header"></p>
+        <h3 id="crypt-header"></h3>
+        <ul id="crypt-list">
         </ul>
-        <h3>Library (90 cards)</h3>
-        <ul>
-            <li><h4>— Master (16) —</h4></li>
-            <li>3  <span class="card" onclick="dC('madnessnetwork')">Madness Network</span></li>
-            <li>3  <span class="card" onclick="dC('villein')">Villein</span></li>
-            <li>2  <span class="card" onclick="dC('dreamsofthesphinx')">Dreams of the Sphinx</span></li>
-            <li>2  <span class="card" onclick="dC('pentextmsubversion')">Pentex™ Subversion</span></li>
-            <li>2  <span class="card" onclick="dC('perfectionist')">Perfectionist</span></li>
-            <li>1  <span class="card" onclick="dC('giantsblood')">Giant's Blood</span></li>
-            <li>1  <span class="card" onclick="dC('powerbasemontreal')">Powerbase: Montreal</span></li>
-            <li>1  <span class="card" onclick="dC('protean')">Protean</span></li>
-            <li>1  <span class="card" onclick="dC('rackthe')">The Rack</span></li>
-            <li><h4>— Action (2) —</h4></li>
-            <li>1  <span class="card" onclick="dC('blessingofchaos')">Blessing of Chaos</span></li>
-            <li>1  <span class="card" onclick="dC('judgmentcamarillasegregation')">Judgment: Camarilla Segregation</span></li>
-            <li><h4>— Political (2) —</h4></li>
-            <li>2  <span class="card" onclick="dC('parityshift')">Parity Shift</span></li>
-            <li><h4>— Modifier (15) —</h4></li>
-            <li>6  <span class="card" onclick="dC('lostincrowds')">Lost in Crowds</span></li>
-            <li>5  <span class="card" onclick="dC('facelessnight')">Faceless Night</span></li>
-            <li>2  <span class="card" onclick="dC('elderimpersonation')">Elder Impersonation</span></li>
-            <li>2  <span class="card" onclick="dC('enkilcog')">Enkil Cog</span></li>
-            <li><h4>— Modifier/Reaction (2) —</h4></li>
-            <li>2  <span class="card" onclick="dC('touchofclarity')">Touch of Clarity</span></li>
-            <li><h4>— Modifier/Combat (3) —</h4></li>
-            <li>3  <span class="card" onclick="dC('swallowedbythenight')">Swallowed by the Night</span></li>
-            <li><h4>— Combat (22) —</h4></li>
-            <li>18 <span class="card" onclick="dC('earthmeld')">Earth Meld</span></li>
-            <li>4  <span class="card" onclick="dC('formofmist')">Form of Mist</span></li>
-            <li><h4>— Reaction (20) —</h4></li>
-            <li>8  <span class="card" onclick="dC('secondtraditiondomain')">Second Tradition: Domain</span></li>
-            <li>6  <span class="card" onclick="dC('eyesofargus')">Eyes of Argus</span></li>
-            <li>4  <span class="card" onclick="dC('telepathicmisdirection')">Telepathic Misdirection</span></li>
-            <li>2  <span class="card" onclick="dC('myenemysenemy')">My Enemy's Enemy</span></li>
-            <li><h4>— Equipment (2) —</h4></li>
-            <li>1  <span class="card" onclick="dC('bowlofconvergence')">Bowl of Convergence</span></li>
-            <li>1  <span class="card" onclick="dC('ivorybow')">Ivory Bow</span></li>
-            <li><h4>— Ally (2) —</h4></li>
-            <li>1  <span class="card" onclick="dC('carltonvanwyk')">Carlton Van Wyk</span></li>
-            <li>1  <span class="card" onclick="dC('muddledvampirehunter')">Muddled Vampire Hunter</span></li>
-            <li><h4>— Retainer (4) —</h4></li>
-            <li>3  <span class="card" onclick="dC('homunculus')">Homunculus</span></li>
-            <li>1  <span class="card" onclick="dC('mrwinthrop')">Mr. Winthrop</span></li>
+        <h3 id="library-header"></h3>
+        <ul id="library-list">
         </ul>
     </div>
     <h2>Highlights</h2>
@@ -194,4 +138,12 @@
         <a class="next" href="ravnos-clown-car.html">Ravnos Clown Car</a>
     </nav>
 </footer>
+<script>
+    window.onload = function () {
+        document.getElementById("card-modal").addEventListener("keydown", modalKeydown)
+        document.getElementById("card-prev").addEventListener("click", prevCard)
+        document.getElementById("card-next").addEventListener("click", nextCard)
+        displayDeck({"author":null,"comments":"","crypt":{"cards":[{"comments":null,"count":5,"id":"201148","name":"Rachel Brandywine"},{"comments":null,"count":2,"id":"200538","name":"Greger Anderssen"},{"comments":null,"count":2,"id":"201443","name":"Victoria"},{"comments":null,"count":1,"id":"201141","name":"Quentin King III"},{"comments":null,"count":1,"id":"201464","name":"Watenda"},{"comments":null,"count":1,"id":"201509","name":"Z\u00f6e"}],"count":12},"date":"2011-05-07","event":"Polish NC 2011","library":{"cards":[{"cards":[{"comments":null,"count":3,"id":"101139","name":"Madness Network"},{"comments":null,"count":3,"id":"102121","name":"Villein"},{"comments":null,"count":2,"id":"100588","name":"Dreams of the Sphinx"},{"comments":null,"count":2,"id":"101384","name":"Pentex(TM) Subversion"},{"comments":null,"count":2,"id":"101388","name":"Perfectionist"},{"comments":null,"count":1,"id":"100824","name":"Giant's Blood"},{"comments":null,"count":1,"id":"101439","name":"Powerbase: Montreal"},{"comments":null,"count":1,"id":"101498","name":"Protean"},{"comments":null,"count":1,"id":"101536","name":"The Rack"}],"count":16,"type":"Master"},{"cards":[{"comments":null,"count":1,"id":"100182","name":"Blessing of Chaos"},{"comments":null,"count":1,"id":"101028","name":"Judgment: Camarilla Segregation"}],"count":2,"type":"Action"},{"cards":[{"comments":null,"count":2,"id":"101353","name":"Parity Shift"}],"count":2,"type":"Political Action"},{"cards":[{"comments":null,"count":6,"id":"101125","name":"Lost in Crowds"},{"comments":null,"count":5,"id":"100687","name":"Faceless Night"},{"comments":null,"count":2,"id":"100617","name":"Elder Impersonation"},{"comments":null,"count":2,"id":"100645","name":"Enkil Cog"}],"count":15,"type":"Action Modifier"},{"cards":[{"comments":null,"count":2,"id":"101998","name":"Touch of Clarity"}],"count":2,"type":"Action Modifier/Reaction"},{"cards":[{"comments":null,"count":3,"id":"101913","name":"Swallowed by the Night"}],"count":3,"type":"Action Modifier/Combat"},{"cards":[{"comments":null,"count":18,"id":"100601","name":"Earth Meld"},{"comments":null,"count":4,"id":"100771","name":"Form of Mist"}],"count":22,"type":"Combat"},{"cards":[{"comments":null,"count":8,"id":"101706","name":"Second Tradition: Domain"},{"comments":null,"count":6,"id":"100680","name":"Eyes of Argus"},{"comments":null,"count":4,"id":"101949","name":"Telepathic Misdirection"},{"comments":null,"count":2,"id":"101259","name":"My Enemy's Enemy"}],"count":20,"type":"Reaction"},{"cards":[{"comments":null,"count":1,"id":"100243","name":"Bowl of Convergence"},{"comments":null,"count":1,"id":"101014","name":"Ivory Bow"}],"count":2,"type":"Equipment"},{"cards":[{"comments":null,"count":1,"id":"100298","name":"Carlton Van Wyk"},{"comments":null,"count":1,"id":"101250","name":"Muddled Vampire Hunter"}],"count":2,"type":"Ally"},{"cards":[{"comments":null,"count":3,"id":"100932","name":"Homunculus"},{"comments":null,"count":1,"id":"101249","name":"Mr. Winthrop"}],"count":4,"type":"Retainer"}],"count":90},"name":"Classic Rachel v.1.1","place":"Gliwice, Poland","player":"Tomasz Kowalewski (Behemot)","players_count":38,"score":null,"tournament_format":"3R+F","twda_id":"2011pncgpm"})
+    }
+</script>
 </html>

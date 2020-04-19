@@ -7,12 +7,7 @@
     <meta name="description" content="Vampire: the Eternal Struggle (VTES) archetype: Goratrix High Tower">
     <link rel="stylesheet" type="text/css" href="../base.css"/>
     <link rel="icon" href="http://codex-of-the-damned.org/icons/vtes.svg">
-    <script>
-        function dC(name) {
-            document.getElementById("card-image").src = '../card-images/'.concat(name, '.jpg');
-            document.getElementById("card-modal").style.display = "block";
-        }
-    </script>
+    <script src="../decklist.js"></script>
     <title>Goratrix High Tower</title>
 </head>
 <body>
@@ -32,70 +27,21 @@
         </ul>
     </nav>
 </header>
-<div id="card-modal" class="modal" onclick="this.style.display='none'">
-        <img class="modal-content" id="card-image">
+<div id="card-modal" class="modal" onclick="this.style.display='none'" tabindex="-1">
+    <div id=card-prev class="modal-nav">&#xf077</div>
+    <img class="modal-content" id="card-image"/>
+    <div id=card-next class="modal-nav">&#xf078</div>
 </div>
 <article>
     <h1><img src="../icons/clan-tremere-anti.svg"> Goratrix High Tower</h1>
-    <div class="decklist">
-        <h2><a href="http://www.vekn.fr/decks/twd.htm#2015ecday2wp">Goratrix Anarch</a></h2>
-        <p>
-            Deck by Marcin Watras<br/>
-            EC 2015 Day 2<br/>
-            Warsaw, Poland<br/>
-            August 30th 2015<br/>
-            40 players, 95 players on Day 1<br/>
-        </p>
-        <h3>Crypt (12 cards)</h3>
-        <ul>
-            <li>4  <span class="card" onclick="dC('goratrix')">Goratrix</span></li>
-            <li>4  <span class="card" onclick="dC('anarchconvert')">Anarch Convert</span></li>
-            <li>2  <span class="card" onclick="dC('omaya')">Omaya</span></li>
-            <li>1  <span class="card" onclick="dC('anastaszdizagreb')">Anastasz di Zagreb</span></li>
-            <li>1  <span class="card" onclick="dC('devinbisley')">Devin Bisley</span></li>
+    <div id="decklist" class="decklist" style="display: none">
+        <h2 id="deck-name"><a id="deck-link" href="http://example.com"></a></h2>
+        <p id="deck-header"></p>
+        <h3 id="crypt-header"></h3>
+        <ul id="crypt-list">
         </ul>
-        <h3>Library (90 cards)</h3>
-        <ul>
-            <li><h4>— Master (21) —</h4></li>
-            <li>5  <span class="card" onclick="dC('anarchrevolt')">Anarch Revolt</span></li>
-            <li>4  <span class="card" onclick="dC('villein')">Villein</span></li>
-            <li>2  <span class="card" onclick="dC('dreamsofthesphinx')">Dreams of the Sphinx</span></li>
-            <li>2  <span class="card" onclick="dC('pentextmsubversion')">Pentex™ Subversion</span></li>
-            <li>2  <span class="card" onclick="dC('vessel')">Vessel</span></li>
-            <li>1  <span class="card" onclick="dC('erciyesfragmentsthe')">The Erciyes Fragments</span></li>
-            <li>1  <span class="card" onclick="dC('giantsblood')">Giant's Blood</span></li>
-            <li>1  <span class="card" onclick="dC('guardianangel')">Guardian Angel</span></li>
-            <li>1  <span class="card" onclick="dC('powerbasemontreal')">Powerbase: Montreal</span></li>
-            <li>1  <span class="card" onclick="dC('rackthe')">The Rack</span></li>
-            <li>1  <span class="card" onclick="dC('smilingjacktheanarch')">Smiling Jack, The Anarch</span></li>
-            <li><h4>— Action (6) —</h4></li>
-            <li>4  <span class="card" onclick="dC('magicofthesmith')">Magic of the Smith</span></li>
-            <li>1  <span class="card" onclick="dC('armyofrats')">Army of Rats</span></li>
-            <li>1  <span class="card" onclick="dC('rutorshand')">Rutor's Hand</span></li>
-            <li><h4>— Modifier (2) —</h4></li>
-            <li>2  <span class="card" onclick="dC('enkilcog')">Enkil Cog</span></li>
-            <li><h4>— Combat (9) —</h4></li>
-            <li>7  <span class="card" onclick="dC('carrioncrows')">Carrion Crows</span></li>
-            <li>2  <span class="card" onclick="dC('caninehorde')">Canine Horde</span></li>
-            <li><h4>— Reaction (45) —</h4></li>
-            <li>8  <span class="card" onclick="dC('eyesofargus')">Eyes of Argus</span></li>
-            <li>8  <span class="card" onclick="dC('sensethesavageway')">Sense the Savage Way</span></li>
-            <li>7  <span class="card" onclick="dC('catsguidance')">Cats' Guidance</span></li>
-            <li>7  <span class="card" onclick="dC('eaglessight')">Eagle's Sight</span></li>
-            <li>7  <span class="card" onclick="dC('telepathicmisdirection')">Telepathic Misdirection</span></li>
-            <li>2  <span class="card" onclick="dC('enhancedsenses')">Enhanced Senses</span></li>
-            <li>2  <span class="card" onclick="dC('forcedawakening')">Forced Awakening</span></li>
-            <li>2  <span class="card" onclick="dC('myenemysenemy')">My Enemy's Enemy</span></li>
-            <li>2  <span class="card" onclick="dC('onthequivive')">On the Qui Vive</span></li>
-            <li><h4>— Equipment (5) —</h4></li>
-            <li>1  <span class="card" onclick="dC('bowlofconvergence')">Bowl of Convergence</span></li>
-            <li>1  <span class="card" onclick="dC('heartofnizchetus')">Heart of Nizchetus</span></li>
-            <li>1  <span class="card" onclick="dC('ivorybow')">Ivory Bow</span></li>
-            <li>1  <span class="card" onclick="dC('kevlarvest')">Kevlar Vest</span></li>
-            <li>1  <span class="card" onclick="dC('ruinsofceoris')">Ruins of Ceoris</span></li>
-            <li><h4>— Ally (2) —</h4></li>
-            <li>1  <span class="card" onclick="dC('carltonvanwyk')">Carlton Van Wyk</span></li>
-            <li>1  <span class="card" onclick="dC('mylanhorseed')">Mylan Horseed</span></li>
+        <h3 id="library-header"></h3>
+        <ul id="library-list">
         </ul>
     </div>
     <h2>Highlights</h2>
@@ -194,4 +140,12 @@
         <a class="next" href="guruhi-rush.html">Guruhi Rush</a>
     </nav>
 </footer>
+<script>
+    window.onload = function () {
+        document.getElementById("card-modal").addEventListener("keydown", modalKeydown)
+        document.getElementById("card-prev").addEventListener("click", prevCard)
+        document.getElementById("card-next").addEventListener("click", nextCard)
+        displayDeck({"author":"Marcin Watras (based on Goratrix builds created by Tomasz Kowalewski and Alain Greiner)","comments":"Block and win\n","crypt":{"cards":[{"comments":null,"count":4,"id":"200528","name":"Goratrix"},{"comments":null,"count":4,"id":"200076","name":"Anarch Convert"},{"comments":null,"count":2,"id":"201079","name":"Omaya"},{"comments":null,"count":1,"id":"200078","name":"Anastasz di Zagreb"},{"comments":null,"count":1,"id":"200339","name":"Devin Bisley"}],"count":12},"date":"2015-08-30","event":"EC 2015 Day 2","library":{"cards":[{"cards":[{"comments":null,"count":5,"id":"100055","name":"Anarch Revolt"},{"comments":null,"count":4,"id":"102121","name":"Villein"},{"comments":null,"count":2,"id":"100588","name":"Dreams of the Sphinx"},{"comments":null,"count":2,"id":"101384","name":"Pentex(TM) Subversion"},{"comments":null,"count":2,"id":"102113","name":"Vessel"},{"comments":null,"count":1,"id":"100824","name":"Giant's Blood"},{"comments":null,"count":1,"id":"100866","name":"Guardian Angel"},{"comments":null,"count":1,"id":"101439","name":"Powerbase: Montreal"},{"comments":null,"count":1,"id":"101811","name":"Smiling Jack, The Anarch"},{"comments":null,"count":1,"id":"100656","name":"The Erciyes Fragments"},{"comments":null,"count":1,"id":"101536","name":"The Rack"}],"count":21,"type":"Master"},{"cards":[{"comments":null,"count":4,"id":"101143","name":"Magic of the Smith"},{"comments":null,"count":1,"id":"100093","name":"Army of Rats"},{"comments":null,"count":1,"id":"101664","name":"Rutor's Hand"}],"count":6,"type":"Action"},{"cards":[{"comments":null,"count":2,"id":"100645","name":"Enkil Cog"}],"count":2,"type":"Action Modifier"},{"cards":[{"comments":null,"count":7,"id":"100301","name":"Carrion Crows"},{"comments":null,"count":2,"id":"100290","name":"Canine Horde"}],"count":9,"type":"Combat"},{"cards":[{"comments":null,"count":8,"id":"100680","name":"Eyes of Argus"},{"comments":null,"count":8,"id":"101717","name":"Sense the Savage Way"},{"comments":null,"count":7,"id":"100308","name":"Cats' Guidance"},{"comments":null,"count":7,"id":"100598","name":"Eagle's Sight"},{"comments":null,"count":7,"id":"101949","name":"Telepathic Misdirection"},{"comments":null,"count":2,"id":"100644","name":"Enhanced Senses"},{"comments":null,"count":2,"id":"100760","name":"Forced Awakening"},{"comments":null,"count":2,"id":"101259","name":"My Enemy's Enemy"},{"comments":null,"count":2,"id":"101321","name":"On the Qui Vive"}],"count":45,"type":"Reaction"},{"cards":[{"comments":null,"count":1,"id":"100243","name":"Bowl of Convergence"},{"comments":null,"count":1,"id":"100903","name":"Heart of Nizchetus"},{"comments":null,"count":1,"id":"101014","name":"Ivory Bow"},{"comments":null,"count":1,"id":"101040","name":"Kevlar Vest"},{"comments":null,"count":1,"id":"101658","name":"Ruins of Ceoris"}],"count":5,"type":"Equipment"},{"cards":[{"comments":null,"count":1,"id":"100298","name":"Carlton Van Wyk"},{"comments":null,"count":1,"id":"101261","name":"Mylan Horseed"}],"count":2,"type":"Ally"}],"count":90},"name":"Goratrix Anarch","place":"Warsaw, Poland","player":"Marcin Watras","players_count":40,"score":null,"tournament_format":"3R+F","twda_id":"2015ecday2wp"})
+    }
+</script>
 </html>

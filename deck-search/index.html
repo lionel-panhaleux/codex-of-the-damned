@@ -13,6 +13,7 @@
             document.getElementById("card-modal").style.display = "block";
         }
     </script>
+    <script src="../decklist.js"></script>
     <script src="twda.js"></script>
     <title>Deck Search</title>
 </head>
@@ -33,8 +34,10 @@
         </ul>
     </nav>
 </header>
-<div id="card-modal" class="modal" onclick="this.style.display='none'">
-        <img class="modal-content" id="card-image">
+<div id="card-modal" class="modal" onclick="this.style.display='none'" tabindex="-1">
+    <div id=card-prev class="modal-nav">&#xf077</div>
+    <img class="modal-content" id="card-image"/>
+    <div id=card-next class="modal-nav">&#xf078</div>
 </div>
 <article>
     <h1>Deck Search</h1>

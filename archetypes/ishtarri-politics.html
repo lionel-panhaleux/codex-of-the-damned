@@ -7,12 +7,7 @@
     <meta name="description" content="Vampire: the Eternal Struggle (VTES) archetype: Ishtarri Politics">
     <link rel="stylesheet" type="text/css" href="../base.css"/>
     <link rel="icon" href="http://codex-of-the-damned.org/icons/vtes.svg">
-    <script>
-        function dC(name) {
-            document.getElementById("card-image").src = '../card-images/'.concat(name, '.jpg');
-            document.getElementById("card-modal").style.display = "block";
-        }
-    </script>
+    <script src="../decklist.js"></script>
     <title>Ishtarri Politics</title>
 </head>
 <body>
@@ -32,85 +27,21 @@
         </ul>
     </nav>
 </header>
-<div id="card-modal" class="modal" onclick="this.style.display='none'">
-        <img class="modal-content" id="card-image">
+<div id="card-modal" class="modal" onclick="this.style.display='none'" tabindex="-1">
+    <div id=card-prev class="modal-nav">&#xf077</div>
+    <img class="modal-content" id="card-image"/>
+    <div id=card-next class="modal-nav">&#xf078</div>
 </div>
 <article>
     <h1><img src="../icons/clan-ishtarri.svg"> Ishtarri Politics</h1>
-    <div class="decklist">
-        <h2><a href="http://www.vekn.fr/decks/twd.htm#2012scmbs">Porque esto es África</a></h2>
-        <p>
-            Deck by Soufiane Bouzouf & Noel Giménez<br/>
-            Spanish NC 2012<br/>
-            Mataró, Barcelona, Spain<br/>
-            October 14th 2012<br/>
-            40 players<br/>
-        </p>
-        <h3>Crypt (12 cards)</h3>
-        <ul>
-            <li>3  <span class="card" onclick="dC('ayoigoli')">Ayo Igoli</li></span>
-            <li>3  <span class="card" onclick="dC('undele')">Undele</li></span>
-            <li>3  <span class="card" onclick="dC('ubende')">Ubende</li></span>
-            <li>1  <span class="card" onclick="dC('dmitrailyanova')">Dmitra Ilyanova</li></span>
-            <li>1  <span class="card" onclick="dC('mukhtarbey')">Mukhtar Bey</li></span>
-            <li>1  <span class="card" onclick="dC('victorpelletier')">Victor Pelletier</li></span>
+    <div id="decklist" class="decklist" style="display: none">
+        <h2 id="deck-name"><a id="deck-link" href="http://example.com"></a></h2>
+        <p id="deck-header"></p>
+        <h3 id="crypt-header"></h3>
+        <ul id="crypt-list">
         </ul>
-        <h3>Library (90 cards)</h3>
-        <ul>
-            <li><h4>— Master (15) —</h4></li>
-            <li>6  <span class="card" onclick="dC('villein')">Villein</span></li>
-            <li>1  <span class="card" onclick="dC('ancestorspirit')">Ancestor Spirit</span></li>
-            <li>1  <span class="card" onclick="dC('bleedingthevine')">Bleeding the Vine</span></li>
-            <li>1  <span class="card" onclick="dC('dreamsofthesphinx')">Dreams of the Sphinx</span></li>
-            <li>1  <span class="card" onclick="dC('fearofmekhet')">Fear of Mekhet</span></li>
-            <li>1  <span class="card" onclick="dC('giantsblood')">Giant's Blood</span></li>
-            <li>1  <span class="card" onclick="dC('glutton')">Glutton</span></li>
-            <li>1  <span class="card" onclick="dC('lilithsblessing')">Lilith's Blessing</span></li>
-            <li>1  <span class="card" onclick="dC('monasteryofshadows')">Monastery of Shadows</span></li>
-            <li>1  <span class="card" onclick="dC('pentextmsubversion')">Pentex™ Subversion</span></li>
-            <li><h4>— Action (14) —</h4></li>
-            <li>5  <span class="card" onclick="dC('enchantkindred')">Enchant Kindred</span></li>
-            <li>4  <span class="card" onclick="dC('publictrust')">Public Trust</span></li>
-            <li>2  <span class="card" onclick="dC('entrancement')">Entrancement</span></li>
-            <li>2  <span class="card" onclick="dC('nosecretsfromthemagaji')">No Secrets From the Magaji</span></li>
-            <li>1  <span class="card" onclick="dC('wellmarked')">Well-Marked</span></li>
-            <li><h4>— Political Action (17) —</h4></li>
-            <li>5  <span class="card" onclick="dC('kineresourcescontested')">Kine Resources Contested</span></li>
-            <li>4  <span class="card" onclick="dC('banishment')">Banishment</span></li>
-            <li>2  <span class="card" onclick="dC('conservativeagitation')">Conservative Agitation</span></li>
-            <li>1  <span class="card" onclick="dC('anarchistuprising')">Anarchist Uprising</span></li>
-            <li>1  <span class="card" onclick="dC('ancientinfluence')">Ancient Influence</span></li>
-            <li>1  <span class="card" onclick="dC('ancillaempowerment')">Ancilla Empowerment</span></li>
-            <li>1  <span class="card" onclick="dC('meddlingofsemsiththe')">The Meddling of Semsith</span></li>
-            <li>1  <span class="card" onclick="dC('politicalstranglehold')">Political Stranglehold</span></li>
-            <li>1  <span class="card" onclick="dC('reinsofpower')">Reins of Power</span></li>
-            <li><h4>— Modifier (25) —</h4></li>
-            <li>6  <span class="card" onclick="dC('forcedmarch')">Forced March</span></li>
-            <li>5  <span class="card" onclick="dC('votercaptivation')">Voter Captivation</span></li>
-            <li>4  <span class="card" onclick="dC('freakdrive')">Freak Drive</span></li>
-            <li>3  <span class="card" onclick="dC('uncontrolledimpulse')">Uncontrolled Impulse</span></li>
-            <li>2  <span class="card" onclick="dC('forgottenlabyrinth')">Forgotten Labyrinth</span></li>
-            <li>2  <span class="card" onclick="dC('intothinair')">Into Thin Air</span></li>
-            <li>1  <span class="card" onclick="dC('kissofrathe')">The Kiss of Ra</span></li>
-            <li>1  <span class="card" onclick="dC('perfectparagon')">Perfect Paragon</span></li>
-            <li>1  <span class="card" onclick="dC('strangeday')">Strange Day</span></li>
-            <li><h4>— Modifier/Reaction (2) —</h4></li>
-            <li>2  <span class="card" onclick="dC('ishtarrikholo')">Ishtarri Kholo</span></li>
-            <li><h4>— Modifier/Combat (2) —</h4></li>
-            <li>1  <span class="card" onclick="dC('forceofpersonality')">Force of Personality</span></li>
-            <li>1  <span class="card" onclick="dC('resistearthsgrasp')">Resist Earth's Grasp</span></li>
-            <li><h4>— Combat (9) —</h4></li>
-            <li>8  <span class="card" onclick="dC('majesty')">Majesty</span></li>
-            <li>1  <span class="card" onclick="dC('rollingwiththepunches')">Rolling with the Punches</span></li>
-            <li><h4>— Equipment (3) —</h4></li>
-            <li>1  <span class="card" onclick="dC('heartofnizchetus')">Heart of Nizchetus</span></li>
-            <li>1  <span class="card" onclick="dC('kduvasmask')">Kduva's Mask</span></li>
-            <li>1  <span class="card" onclick="dC('sniperrifle')">Sniper Rifle</span></li>
-            <li><h4>— Ally (2) —</h4></li>
-            <li>1  <span class="card" onclick="dC('carltonvanwyk')">Carlton Van Wyk</span></li>
-            <li>1  <span class="card" onclick="dC('mylanhorseed')">Mylan Horseed</span></li>
-            <li><h4>— Event (1) —</h4></li>
-            <li>1  <span class="card" onclick="dC('scourgeoftheenochians')">Scourge of the Enochians</span></li>
+        <h3 id="library-header"></h3>
+        <ul id="library-list">
         </ul>
     </div>
     <h2>Highlights</h2>
@@ -197,4 +128,12 @@
         <a class="next" href="jost-powerbleed.html">Jost Powerbleed</a>
     </nav>
 </footer>
+<script>
+    window.onload = function () {
+        document.getElementById("card-modal").addEventListener("keydown", modalKeydown)
+        document.getElementById("card-prev").addEventListener("click", prevCard)
+        document.getElementById("card-next").addEventListener("click", nextCard)
+        displayDeck({"author":"Noel Gim\u00e9nez","comments":"","crypt":{"cards":[{"comments":null,"count":3,"id":"200153","name":"Ayo Igoli"},{"comments":null,"count":3,"id":"201409","name":"Undele"},{"comments":null,"count":3,"id":"201399","name":"Ubende"},{"comments":null,"count":1,"id":"200349","name":"Dmitra Ilyanova"},{"comments":null,"count":1,"id":"201021","name":"Mukhtar Bey"},{"comments":null,"count":1,"id":"201440","name":"Victor Pelletier"}],"count":12},"date":"2012-10-14","event":"Spanish NC 2012","library":{"cards":[{"cards":[{"comments":null,"count":6,"id":"102121","name":"Villein"},{"comments":null,"count":1,"id":"100061","name":"Ancestor Spirit"},{"comments":null,"count":1,"id":"100178","name":"Bleeding the Vine"},{"comments":null,"count":1,"id":"100588","name":"Dreams of the Sphinx"},{"comments":null,"count":1,"id":"100710","name":"Fear of Mekhet"},{"comments":null,"count":1,"id":"100824","name":"Giant's Blood"},{"comments":null,"count":1,"id":"100839","name":"Glutton"},{"comments":null,"count":1,"id":"101108","name":"Lilith's Blessing"},{"comments":null,"count":1,"id":"101238","name":"Monastery of Shadows"},{"comments":null,"count":1,"id":"101384","name":"Pentex(TM) Subversion"}],"count":15,"type":"Master"},{"cards":[{"comments":null,"count":5,"id":"100640","name":"Enchant Kindred"},{"comments":null,"count":4,"id":"101513","name":"Public Trust"},{"comments":null,"count":2,"id":"100652","name":"Entrancement"},{"comments":null,"count":2,"id":"101291","name":"No Secrets From the Magaji"},{"comments":null,"count":1,"id":"102172","name":"Well-Marked"}],"count":14,"type":"Action"},{"cards":[{"comments":null,"count":5,"id":"101056","name":"Kine Resources Contested"},{"comments":null,"count":4,"id":"100131","name":"Banishment"},{"comments":null,"count":2,"id":"100414","name":"Conservative Agitation"},{"comments":null,"count":1,"id":"100059","name":"Anarchist Uprising"},{"comments":null,"count":1,"id":"100064","name":"Ancient Influence"},{"comments":null,"count":1,"id":"100065","name":"Ancilla Empowerment"},{"comments":null,"count":1,"id":"101417","name":"Political Stranglehold"},{"comments":null,"count":1,"id":"101591","name":"Reins of Power"},{"comments":null,"count":1,"id":"101192","name":"The Meddling of Semsith"}],"count":17,"type":"Political Action"},{"cards":[{"comments":null,"count":6,"id":"100761","name":"Forced March"},{"comments":null,"count":5,"id":"102131","name":"Voter Captivation"},{"comments":null,"count":4,"id":"100788","name":"Freak Drive"},{"comments":null,"count":3,"id":"102059","name":"Uncontrolled Impulse"},{"comments":null,"count":2,"id":"100769","name":"Forgotten Labyrinth"},{"comments":null,"count":2,"id":"101001","name":"Into Thin Air"},{"comments":null,"count":1,"id":"101387","name":"Perfect Paragon"},{"comments":null,"count":1,"id":"101880","name":"Strange Day"},{"comments":null,"count":1,"id":"101062","name":"The Kiss of Ra"}],"count":25,"type":"Action Modifier"},{"cards":[{"comments":null,"count":2,"id":"101011","name":"Ishtarri Kholo"}],"count":2,"type":"Action Modifier/Reaction"},{"cards":[{"comments":null,"count":1,"id":"100758","name":"Force of Personality"},{"comments":null,"count":1,"id":"101610","name":"Resist Earth's Grasp"}],"count":2,"type":"Action Modifier/Combat"},{"cards":[{"comments":null,"count":8,"id":"101144","name":"Majesty"},{"comments":null,"count":1,"id":"101649","name":"Rolling with the Punches"}],"count":9,"type":"Combat"},{"cards":[{"comments":null,"count":1,"id":"100903","name":"Heart of Nizchetus"},{"comments":null,"count":1,"id":"101037","name":"Kduva's Mask"},{"comments":null,"count":1,"id":"101816","name":"Sniper Rifle"}],"count":3,"type":"Equipment"},{"cards":[{"comments":null,"count":1,"id":"100298","name":"Carlton Van Wyk"},{"comments":null,"count":1,"id":"101261","name":"Mylan Horseed"}],"count":2,"type":"Ally"},{"cards":[{"comments":null,"count":1,"id":"101697","name":"Scourge of the Enochians"}],"count":1,"type":"Event"}],"count":90},"name":"Porque esto es \u00c1frica","place":"Matar\u00f3, Barcelona, Spain","player":"Soufiane Bouzouf (Shinjin)","players_count":40,"score":null,"tournament_format":"3R+F","twda_id":"2012scmbs"})
+    }
+</script>
 </html>

@@ -7,12 +7,7 @@
     <meta name="description" content="Vampire: the Eternal Struggle (VTES) archetype: Nephandii">
     <link rel="stylesheet" type="text/css" href="../base.css"/>
     <link rel="icon" href="http://codex-of-the-damned.org/icons/vtes.svg">
-    <script>
-        function dC(name) {
-            document.getElementById("card-image").src = '../card-images/'.concat(name, '.jpg');
-            document.getElementById("card-modal").style.display = "block";
-        }
-    </script>
+    <script src="../decklist.js"></script>
     <title>Nephandii</title>
 </head>
 <body>
@@ -32,65 +27,21 @@
         </ul>
     </nav>
 </header>
-<div id="card-modal" class="modal" onclick="this.style.display='none'">
-        <img class="modal-content" id="card-image">
+<div id="card-modal" class="modal" onclick="this.style.display='none'" tabindex="-1">
+    <div id=card-prev class="modal-nav">&#xf077</div>
+    <img class="modal-content" id="card-image"/>
+    <div id=card-next class="modal-nav">&#xf078</div>
 </div>
 <article>
     <h1><img src="../icons/clan-tremere-anti.svg"> Nephandii</h1>
-    <div class="decklist">
-        <h2><a href="http://www.vekn.fr/decks/twd.htm#2013ccpdms">Nephandus Swarm</a></h2>
-        <p>
-            Deck by Alejandro Pérez Rosselló<br/>
-            Camarilla Conclave<br/>
-            Palma de Mallorca, Spain<br/>
-            September 1st 2013<br/>
-            32 players<br/>
-        </p>
-        <h3>Crypt (12 cards)</h3>
-        <ul>
-            <li>5  <span class="card" onclick="dC('antonioderlette')">Antonio d'Erlette</span></li>
-            <li>4  <span class="card" onclick="dC('tupdog')">Tupdog</span></li>
-            <li>2  <span class="card" onclick="dC('keithmoody')">Keith Moody</span></li>
-            <li>1  <span class="card" onclick="dC('saiz')">Saiz</span></li>
+    <div id="decklist" class="decklist" style="display: none">
+        <h2 id="deck-name"><a id="deck-link" href="http://example.com"></a></h2>
+        <p id="deck-header"></p>
+        <h3 id="crypt-header"></h3>
+        <ul id="crypt-list">
         </ul>
-        <h3>Library (90 cards)</h3>
-        <ul>
-            <li><h4>— Master (39) —</h4></li>
-            <li>9  <span class="card" onclick="dC('ashurtablets')">Ashur Tablets</span></li>
-            <li>6  <span class="card" onclick="dC('liquidation')">Liquidation</span></li>
-            <li>6  <span class="card" onclick="dC('parthenonthe')">The Parthenon</span></li>
-            <li>5  <span class="card" onclick="dC('havenuncovered')">Haven Uncovered</span></li>
-            <li>2  <span class="card" onclick="dC('directintervention')">Direct Intervention</span></li>
-            <li>2  <span class="card" onclick="dC('dreamsofthesphinx')">Dreams of the Sphinx</span></li>
-            <li>2  <span class="card" onclick="dC('frontalassault')">Frontal Assault</span></li>
-            <li>1  <span class="card" onclick="dC('archoninvestigation')">Archon Investigation</span></li>
-            <li>1  <span class="card" onclick="dC('fame')">Fame</span></li>
-            <li>1  <span class="card" onclick="dC('fortschrittlibrary')">Fortschritt Library</span></li>
-            <li>1  <span class="card" onclick="dC('jakewashington')">Jake Washington</span></li>
-            <li>1  <span class="card" onclick="dC('pentextmsubversion')">Pentex™ Subversion</span></li>
-            <li>1  <span class="card" onclick="dC('securehaven')">Secure Haven</span></li>
-            <li>1  <span class="card" onclick="dC('tensionintheranks')">Tension in the Ranks</span></li>
-            <li><h4>— Action (1) —</h4></li>
-            <li>1  <span class="card" onclick="dC('aranthebestheimmortal')">Aranthebes, The Immortal</span></li>
-            <li><h4>— Combat (20) —</h4></li>
-            <li>6  <span class="card" onclick="dC('molotovcocktail')">Molotov Cocktail</span></li>
-            <li>6  <span class="card" onclick="dC('targetvitals')">Target Vitals</span></li>
-            <li>4  <span class="card" onclick="dC('deadendalley')">Dead-End Alley</span></li>
-            <li>4  <span class="card" onclick="dC('trap')">Trap</span></li>
-            <li><h4>— Reaction (12) —</h4></li>
-            <li>7  <span class="card" onclick="dC('deflection')">Deflection</span></li>
-            <li>3  <span class="card" onclick="dC('onthequivive')">On the Qui Vive</span></li>
-            <li>2  <span class="card" onclick="dC('delayingtactics')">Delaying Tactics</span></li>
-            <li><h4>— Ally (11) —</h4></li>
-            <li>9  <span class="card" onclick="dC('nephandus')">Nephandus</span></li>
-            <li>1  <span class="card" onclick="dC('carltonvanwyk')">Carlton Van Wyk</span></li>
-            <li>1  <span class="card" onclick="dC('ossian')">Ossian</span></li>
-            <li><h4>— Event (7) —</h4></li>
-            <li>2  <span class="card" onclick="dC('antheliostheredstar')">Anthelios, The Red Star</span></li>
-            <li>2  <span class="card" onclick="dC('unmaskingthe')">The Unmasking</span></li>
-            <li>1  <span class="card" onclick="dC('dragonbound')">Dragonbound</span></li>
-            <li>1  <span class="card" onclick="dC('fbispecialaffairsdivision')">FBI Special Affairs Division</span></li>
-            <li>1  <span class="card" onclick="dC('slowwitheringthe')">The Slow Withering</span></li>
+        <h3 id="library-header"></h3>
+        <ul id="library-list">
         </ul>
     </div>
     <h2>Highlights</h2>
@@ -202,4 +153,12 @@
         <a class="next" href="nosferatu-royalty.html">Nosferatu Royalty</a>
     </nav>
 </footer>
+<script>
+    window.onload = function () {
+        document.getElementById("card-modal").addEventListener("keydown", modalKeydown)
+        document.getElementById("card-prev").addEventListener("click", prevCard)
+        document.getElementById("card-next").addEventListener("click", nextCard)
+        displayDeck({"author":"Lukasz Modzelewski","comments":"Played and modified by: Alejandro P\u00e9rez Rossell\u00f3\n","crypt":{"cards":[{"comments":null,"count":5,"id":"200116","name":"Antonio d'Erlette"},{"comments":null,"count":4,"id":"201393","name":"Tupdog"},{"comments":null,"count":2,"id":"200767","name":"Keith Moody"},{"comments":null,"count":1,"id":"201222","name":"Saiz"}],"count":12},"date":"2013-09-01","event":"Camarilla Conclave","library":{"cards":[{"cards":[{"comments":null,"count":9,"id":"100106","name":"Ashur Tablets"},{"comments":null,"count":6,"id":"101112","name":"Liquidation"},{"comments":null,"count":6,"id":"101355","name":"The Parthenon"},{"comments":null,"count":5,"id":"100897","name":"Haven Uncovered"},{"comments":null,"count":2,"id":"100545","name":"Direct Intervention"},{"comments":null,"count":2,"id":"100588","name":"Dreams of the Sphinx"},{"comments":null,"count":2,"id":"100794","name":"Frontal Assault"},{"comments":null,"count":1,"id":"100085","name":"Archon Investigation"},{"comments":null,"count":1,"id":"100698","name":"Fame"},{"comments":null,"count":1,"id":"100775","name":"Fortschritt Library"},{"comments":null,"count":1,"id":"101019","name":"Jake Washington"},{"comments":null,"count":1,"id":"101384","name":"Pentex(TM) Subversion"},{"comments":null,"count":1,"id":"101711","name":"Secure Haven"},{"comments":null,"count":1,"id":"101958","name":"Tension in the Ranks"}],"count":39,"type":"Master"},{"cards":[{"comments":null,"count":1,"id":"100079","name":"Aranthebes, The Immortal"}],"count":1,"type":"Action"},{"cards":[{"comments":null,"count":6,"id":"101235","name":"Molotov Cocktail"},{"comments":null,"count":6,"id":"101942","name":"Target Vitals"},{"comments":null,"count":4,"id":"100504","name":"Dead-End Alley"},{"comments":null,"count":4,"id":"102012","name":"Trap"}],"count":20,"type":"Combat"},{"cards":[{"comments":null,"count":7,"id":"100518","name":"Deflection"},{"comments":null,"count":3,"id":"101321","name":"On the Qui Vive"},{"comments":null,"count":2,"id":"100519","name":"Delaying Tactics"}],"count":12,"type":"Reaction"},{"cards":[{"comments":null,"count":9,"id":"101272","name":"Nephandus"},{"comments":null,"count":1,"id":"100298","name":"Carlton Van Wyk"},{"comments":null,"count":1,"id":"101333","name":"Ossian"}],"count":11,"type":"Ally"},{"cards":[{"comments":null,"count":2,"id":"100074","name":"Anthelios, The Red Star"},{"comments":null,"count":2,"id":"102079","name":"The Unmasking"},{"comments":null,"count":1,"id":"100581","name":"Dragonbound"},{"comments":null,"count":1,"id":"100709","name":"FBI Special Affairs Division"},{"comments":null,"count":1,"id":"101807","name":"The Slow Withering"}],"count":7,"type":"Event"}],"count":90},"name":"Nephandus Swarm","place":"Palma de Mallorca, Spain","player":"Alejandro P\u00e9rez Rossell\u00f3","players_count":32,"score":"3VP in final","tournament_format":"3R+F","twda_id":"2013ccpdms"})
+    }
+</script>
 </html>

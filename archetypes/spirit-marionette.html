@@ -7,12 +7,7 @@
     <meta name="description" content="Vampire: the Eternal Struggle (VTES) archetype: Spirit Marionette">
     <link rel="stylesheet" type="text/css" href="../base.css"/>
     <link rel="icon" href="http://codex-of-the-damned.org/icons/vtes.svg">
-    <script>
-        function dC(name) {
-            document.getElementById("card-image").src = '../card-images/'.concat(name, '.jpg');
-            document.getElementById("card-modal").style.display = "block";
-        }
-    </script>
+    <script src="../decklist.js"></script>
     <title>Spirit Marionette</title>
 </head>
 <body>
@@ -32,67 +27,21 @@
         </ul>
     </nav>
 </header>
-<div id="card-modal" class="modal" onclick="this.style.display='none'">
-        <img class="modal-content" id="card-image">
+<div id="card-modal" class="modal" onclick="this.style.display='none'" tabindex="-1">
+    <div id=card-prev class="modal-nav">&#xf077</div>
+    <img class="modal-content" id="card-image"/>
+    <div id=card-next class="modal-nav">&#xf078</div>
 </div>
 <article>
     <h1><img src="../icons/clan-salubri.svg"> Spirit Marionette</h1>
-    <div class="decklist">
-        <h2><a href="http://www.vekn.fr/decks/twd.htm#2011biwwps">Saulot with Tremere</a></h2>
-        <p>
-            Deck by Tomasz Kowalewski<br/>
-            Bleeding in Wroclaw<br/>
-            Wroclaw, Poland<br/>
-            September 24th 2011<br/>
-            29 players<br/>
-        </p>
-        <h3>Crypt (12 cards)</h3>
-        <ul>
-            <li>5  <span class="card" onclick="dC('saulotthewanderer')">Saulot, The Wanderer</span></li>
-            <li>1  <span class="card" onclick="dC('anastaszdizagreb')">Anastasz di Zagreb</span></li>
-            <li>1  <span class="card" onclick="dC('carnatheprincesswitch')">Carna, The Princess Witch</span></li>
-            <li>1  <span class="card" onclick="dC('ladislastoththetorch')">Ladislas Toth, The Torch</span></li>
-            <li>1  <span class="card" onclick="dC('elenamendozavasquez')">Elena Mendoza Vasquez</span></li>
-            <li>1  <span class="card" onclick="dC('selena')">Selena</span></li>
-            <li>1  <span class="card" onclick="dC('yasmintheblack')">Yasmin the Black</span></li>
-            <li>1  <span class="card" onclick="dC('frondator')">Frondator</span></li>
+    <div id="decklist" class="decklist" style="display: none">
+        <h2 id="deck-name"><a id="deck-link" href="http://example.com"></a></h2>
+        <p id="deck-header"></p>
+        <h3 id="crypt-header"></h3>
+        <ul id="crypt-list">
         </ul>
-        <h3>Library (90 cards)</h3>
-        <ul>
-            <li><h4>— Master (21) —</h4></li>
-            <li>6  <span class="card" onclick="dC('villein')">Villein</span></li>
-            <li>4  <span class="card" onclick="dC('heidelbergcastlegermany')">Heidelberg Castle, Germany</span></li>
-            <li>3  <span class="card" onclick="dC('informationhighway')">Information Highway</span></li>
-            <li>2  <span class="card" onclick="dC('dreamsofthesphinx')">Dreams of the Sphinx</span></li>
-            <li>2  <span class="card" onclick="dC('infernalpact')">Infernal Pact</span></li>
-            <li>2  <span class="card" onclick="dC('pentextmsubversion')">Pentex™ Subversion</span></li>
-            <li>1  <span class="card" onclick="dC('giantsblood')">Giant's Blood</span></li>
-            <li>1  <span class="card" onclick="dC('lilithsblessing')">Lilith's Blessing</span></li>
-            <li><h4>— Action (16) —</h4></li>
-            <li>9  <span class="card" onclick="dC('spiritmarionette')">Spirit Marionette</span></li>
-            <li>3  <span class="card" onclick="dC('magicofthesmith')">Magic of the Smith</span></li>
-            <li>2  <span class="card" onclick="dC('renewedvigor')">Renewed Vigor</span></li>
-            <li>2  <span class="card" onclick="dC('rutorshand')">Rutor's Hand</span></li>
-            <li><h4>— Modifier (19) —</h4></li>
-            <li>7  <span class="card" onclick="dC('mirrorwalk')">Mirror Walk</span></li>
-            <li>5  <span class="card" onclick="dC('freakdrive')">Freak Drive</span></li>
-            <li>4  <span class="card" onclick="dC('neutralguard')">Neutral Guard</span></li>
-            <li>2  <span class="card" onclick="dC('repulsion')">Repulsion</span></li>
-            <li>1  <span class="card" onclick="dC('enkilcog')">Enkil Cog</span></li>
-            <li><h4>— Combat (13) —</h4></li>
-            <li>7  <span class="card" onclick="dC('anesthetictouch')">Anesthetic Touch</span></li>
-            <li>6  <span class="card" onclick="dC('theftofvitae')">Theft of Vitae</span></li>
-            <li><h4>— Reaction (16) —</h4></li>
-            <li>8  <span class="card" onclick="dC('eyesofargus')">Eyes of Argus</span></li>
-            <li>6  <span class="card" onclick="dC('telepathicmisdirection')">Telepathic Misdirection</span></li>
-            <li>2  <span class="card" onclick="dC('myenemysenemy')">My Enemy's Enemy</span></li>
-            <li><h4>— Equipment (4) —</h4></li>
-            <li>1  <span class="card" onclick="dC('bowlofconvergence')">Bowl of Convergence</span></li>
-            <li>1  <span class="card" onclick="dC('codexoftheedenicgroundskeepers')">Codex of the Edenic Groundskeepers</span></li>
-            <li>1  <span class="card" onclick="dC('heartofnizchetus')">Heart of Nizchetus</span></li>
-            <li>1  <span class="card" onclick="dC('ivorybow')">Ivory Bow</span></li>
-            <li><h4>— Event (1) —</h4></li>
-            <li>1  <span class="card" onclick="dC('restrictedvitae')">Restricted Vitae</span></li>
+        <h3 id="library-header"></h3>
+        <ul id="library-list">
         </ul>
     </div>
     <h2>Highlights</h2>
@@ -183,4 +132,12 @@
         <a class="next" href="stanislava.html">Stanislava</a>
     </nav>
 </footer>
+<script>
+    window.onload = function () {
+        document.getElementById("card-modal").addEventListener("keydown", modalKeydown)
+        document.getElementById("card-prev").addEventListener("click", prevCard)
+        document.getElementById("card-next").addEventListener("click", nextCard)
+        displayDeck({"author":null,"comments":"","crypt":{"cards":[{"comments":null,"count":5,"id":"201248","name":"Saulot, The Wanderer"},{"comments":null,"count":1,"id":"200078","name":"Anastasz di Zagreb"},{"comments":null,"count":1,"id":"200248","name":"Carna, The Princess Witch"},{"comments":null,"count":1,"id":"200803","name":"Ladislas Toth, The Torch"},{"comments":null,"count":1,"id":"200408","name":"Elena Mendoza Vasquez"},{"comments":null,"count":1,"id":"201261","name":"Selena"},{"comments":null,"count":1,"id":"201483","name":"Yasmin the Black"},{"comments":null,"count":1,"id":"200485","name":"Frondator"}],"count":12},"date":"2011-09-24","event":"Bleeding in Wroclaw","library":{"cards":[{"cards":[{"comments":null,"count":6,"id":"102121","name":"Villein"},{"comments":null,"count":4,"id":"100908","name":"Heidelberg Castle, Germany"},{"comments":null,"count":3,"id":"100984","name":"Information Highway"},{"comments":null,"count":2,"id":"100588","name":"Dreams of the Sphinx"},{"comments":null,"count":2,"id":"100979","name":"Infernal Pact"},{"comments":null,"count":2,"id":"101384","name":"Pentex(TM) Subversion"},{"comments":null,"count":1,"id":"100824","name":"Giant's Blood"},{"comments":null,"count":1,"id":"101108","name":"Lilith's Blessing"}],"count":21,"type":"Master"},{"cards":[{"comments":null,"count":9,"id":"101848","name":"Spirit Marionette"},{"comments":null,"count":3,"id":"101143","name":"Magic of the Smith"},{"comments":null,"count":2,"id":"101603","name":"Renewed Vigor"},{"comments":null,"count":2,"id":"101664","name":"Rutor's Hand"}],"count":16,"type":"Action"},{"cards":[{"comments":null,"count":7,"id":"101223","name":"Mirror Walk"},{"comments":null,"count":5,"id":"100788","name":"Freak Drive"},{"comments":null,"count":4,"id":"101276","name":"Neutral Guard"},{"comments":null,"count":2,"id":"101606","name":"Repulsion"},{"comments":null,"count":1,"id":"100645","name":"Enkil Cog"}],"count":19,"type":"Action Modifier"},{"cards":[{"comments":null,"count":7,"id":"100066","name":"Anesthetic Touch"},{"comments":null,"count":6,"id":"101966","name":"Theft of Vitae"}],"count":13,"type":"Combat"},{"cards":[{"comments":null,"count":8,"id":"100680","name":"Eyes of Argus"},{"comments":null,"count":6,"id":"101949","name":"Telepathic Misdirection"},{"comments":null,"count":2,"id":"101259","name":"My Enemy's Enemy"}],"count":16,"type":"Reaction"},{"cards":[{"comments":null,"count":1,"id":"100243","name":"Bowl of Convergence"},{"comments":null,"count":1,"id":"100374","name":"Codex of the Edenic Groundskeepers"},{"comments":null,"count":1,"id":"100903","name":"Heart of Nizchetus"},{"comments":null,"count":1,"id":"101014","name":"Ivory Bow"}],"count":4,"type":"Equipment"},{"cards":[{"comments":null,"count":1,"id":"101614","name":"Restricted Vitae"}],"count":1,"type":"Event"}],"count":90},"name":"Saulot & Tremere buddies","place":"Wroclaw, Poland","player":"Tomasz Kowalewski (Behemot)","players_count":29,"score":null,"tournament_format":"3R+F","twda_id":"2011biwwps"})
+    }
+</script>
 </html>

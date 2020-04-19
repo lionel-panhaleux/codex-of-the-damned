@@ -7,12 +7,7 @@
     <meta name="description" content="Vampire: the Eternal Struggle (VTES) archetype: Team Jacob">
     <link rel="stylesheet" type="text/css" href="../base.css"/>
     <link rel="icon" href="http://codex-of-the-damned.org/icons/vtes.svg">
-    <script>
-        function dC(name) {
-            document.getElementById("card-image").src = '../card-images/'.concat(name, '.jpg');
-            document.getElementById("card-modal").style.display = "block";
-        }
-    </script>
+    <script src="../decklist.js"></script>
     <title>Team Jacob</title>
 </head>
 <body>
@@ -32,64 +27,21 @@
         </ul>
     </nav>
 </header>
-<div id="card-modal" class="modal" onclick="this.style.display='none'">
-        <img class="modal-content" id="card-image">
+<div id="card-modal" class="modal" onclick="this.style.display='none'" tabindex="-1">
+    <div id=card-prev class="modal-nav">&#xf077</div>
+    <img class="modal-content" id="card-image"/>
+    <div id=card-next class="modal-nav">&#xf078</div>
 </div>
 <article>
     <h1><img src="../icons/clan-akunanse.svg"> Team Jacob</h1>
-
-    <div class="decklist">
-        <h2><a href="http://www.vekn.fr/decks/twd.htm#2013nacd2co">Team Jacob</a></h2>
-        <p>
-            Deck by Mikkel Petersen<br/>
-            NAC 2013 Day 2<br/>
-            Columbus, Ohio<br/>
-            June 15th 2013<br/>
-            25 players, 46 players on day 1<br/>
-        </p>
-        <h3>Crypt (12 cards)</h3>
-        <ul>
-            <li>4  <span class="card" onclick="dC('jacobfermor')">Jacob Fermor</span></li>
-            <li>1  <span class="card" onclick="dC('socratecidibe')">Socrate Cidibe</span></li>
-            <li>1  <span class="card" onclick="dC('nestorkaba')">Nestor Kaba</span></li>
-            <li>1  <span class="card" onclick="dC('dolie')">Dolie</span></li>
-            <li>1  <span class="card" onclick="dC('keithmoody')">Keith Moody</span></li>
-            <li>1  <span class="card" onclick="dC('lanabutcher')">Lana Butcher</span></li>
-            <li>1  <span class="card" onclick="dC('jacksonasher')">Jackson Asher</span></li>
-            <li>1  <span class="card" onclick="dC('menongari')">Meno Ngari</span></li>
-            <li>1  <span class="card" onclick="dC('anarchconvert')">Anarch Convert</span></li>
+    <div id="decklist" class="decklist" style="display: none">
+        <h2 id="deck-name"><a id="deck-link" href="http://example.com"></a></h2>
+        <p id="deck-header"></p>
+        <h3 id="crypt-header"></h3>
+        <ul id="crypt-list">
         </ul>
-        <h3>Library (74 cards)</h3>
-        <ul>
-            <li><h4>— Master (21) —</h4></li>
-            <li>5  <span class="card" onclick="dC('villein')">Villein</span></li>
-            <li>4  <span class="card" onclick="dC('widerview')">Wider View</span></li>
-            <li>3  <span class="card" onclick="dC('charisma')">Charisma</span></li>
-            <li>3  <span class="card" onclick="dC('pentextmsubversion')">Pentex™ Subversion</span></li>
-            <li>2  <span class="card" onclick="dC('dreamsofthesphinx')">Dreams of the Sphinx</span></li>
-            <li>2  <span class="card" onclick="dC('powerbasetshwane')">Powerbase: Tshwane</span></li>
-            <li>1  <span class="card" onclick="dC('leftfordead')">Left for Dead</span></li>
-            <li>1  <span class="card" onclick="dC('mapatanoutando')">Mapatano Utando</span></li>
-            <li><h4>— Action (11) —</h4></li>
-            <li>11 <span class="card" onclick="dC('computerhacking')">Computer Hacking</span></li>
-            <li><h4>— Modifier/Combat (6) —</h4></li>
-            <li>6  <span class="card" onclick="dC('predatorstransformation')">Predator's Transformation</span></li>
-            <li><h4>— Combat (6) —</h4></li>
-            <li>6  <span class="card" onclick="dC('aidfrombats')">Aid from Bats</span></li>
-            <li><h4>— Reaction (15) —</h4></li>
-            <li>6  <span class="card" onclick="dC('deflection')">Deflection</span></li>
-            <li>4  <span class="card" onclick="dC('predatorscommunion')">Predator's Communion</span></li>
-            <li>3  <span class="card" onclick="dC('onthequivive')">On the Qui Vive</span></li>
-            <li>2  <span class="card" onclick="dC('delayingtactics')">Delaying Tactics</span></li>
-            <li><h4>— Equipment (1) —</h4></li>
-            <li>1  <span class="card" onclick="dC('heartofnizchetus')">Heart of Nizchetus</span></li>
-            <li><h4>— Ally (11) —</h4></li>
-            <li>7  <span class="card" onclick="dC('tunnelrunner')">Tunnel Runner</span></li>
-            <li>2  <span class="card" onclick="dC('carltonvanwyk')">Carlton Van Wyk</span></li>
-            <li>1  <span class="card" onclick="dC('ossian')">Ossian</span></li>
-            <li>1  <span class="card" onclick="dC('vagabondmystic')">Vagabond Mystic</span></li>
-            <li><h4>— Event (3) —</h4></li>
-            <li>3  <span class="card" onclick="dC('unmaskingthe')">The Unmasking</span></li>
+        <h3 id="library-header"></h3>
+        <ul id="library-list">
         </ul>
     </div>
     <h2>Highlights</h2>
@@ -152,4 +104,12 @@
         <a class="next" href="the-bleeding-vignes.html">The Bleeding Vignes</a>
     </nav>
 </footer>
+<script>
+    window.onload = function () {
+        document.getElementById("card-modal").addEventListener("keydown", modalKeydown)
+        document.getElementById("card-prev").addEventListener("click", prevCard)
+        document.getElementById("card-next").addEventListener("click", nextCard)
+        displayDeck({"author":null,"comments":"Get out Jacob and an Akunanse. Stay sober. Win.\n","crypt":{"cards":[{"comments":null,"count":4,"id":"200663","name":"Jacob Fermor"},{"comments":null,"count":1,"id":"201303","name":"Socrate Cidibe"},{"comments":null,"count":1,"id":"201050","name":"Nestor Kaba"},{"comments":null,"count":1,"id":"200353","name":"Dolie"},{"comments":null,"count":1,"id":"200767","name":"Keith Moody"},{"comments":null,"count":1,"id":"200812","name":"Lana Butcher"},{"comments":null,"count":1,"id":"200660","name":"Jackson Asher"},{"comments":null,"count":1,"id":"200977","name":"Meno Ngari"},{"comments":null,"count":1,"id":"200076","name":"Anarch Convert"}],"count":12},"date":"2013-06-15","event":"NAC 2013 Day 2","library":{"cards":[{"cards":[{"comments":null,"count":5,"id":"102121","name":"Villein"},{"comments":null,"count":4,"id":"102180","name":"Wider View"},{"comments":null,"count":3,"id":"100332","name":"Charisma"},{"comments":null,"count":3,"id":"101384","name":"Pentex(TM) Subversion"},{"comments":null,"count":2,"id":"100588","name":"Dreams of the Sphinx"},{"comments":null,"count":2,"id":"101443","name":"Powerbase: Tshwane"},{"comments":null,"count":1,"id":"101084","name":"Left for Dead"},{"comments":null,"count":1,"id":"101163","name":"Mapatano Utando"}],"count":21,"type":"Master"},{"cards":[{"comments":null,"count":11,"id":"100390","name":"Computer Hacking"}],"count":11,"type":"Action"},{"cards":[{"comments":null,"count":6,"id":"101479","name":"Predator's Transformation"}],"count":6,"type":"Action Modifier/Combat"},{"cards":[{"comments":null,"count":6,"id":"100029","name":"Aid from Bats"}],"count":6,"type":"Combat"},{"cards":[{"comments":null,"count":6,"id":"100518","name":"Deflection"},{"comments":null,"count":4,"id":"101477","name":"Predator's Communion"},{"comments":null,"count":3,"id":"101321","name":"On the Qui Vive"},{"comments":null,"count":2,"id":"100519","name":"Delaying Tactics"}],"count":15,"type":"Reaction"},{"cards":[{"comments":null,"count":1,"id":"100903","name":"Heart of Nizchetus"}],"count":1,"type":"Equipment"},{"cards":[{"comments":null,"count":7,"id":"102047","name":"Tunnel Runner"},{"comments":null,"count":2,"id":"100298","name":"Carlton Van Wyk"},{"comments":null,"count":1,"id":"101333","name":"Ossian"},{"comments":null,"count":1,"id":"102087","name":"Vagabond Mystic"}],"count":11,"type":"Ally"},{"cards":[{"comments":null,"count":3,"id":"102079","name":"The Unmasking"}],"count":3,"type":"Event"}],"count":74},"name":"Team Jacob","place":"Columbus, Ohio","player":"Mikkel Petersen","players_count":25,"score":"4VP in final","tournament_format":"3R+F","twda_id":"2013nacd2co"})
+    }
+</script>
 </html>

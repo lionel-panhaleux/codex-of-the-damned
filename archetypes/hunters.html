@@ -7,12 +7,7 @@
     <meta name="description" content="Vampire: the Eternal Struggle (VTES) archetype: Hunters">
     <link rel="stylesheet" type="text/css" href="../base.css"/>
     <link rel="icon" href="http://codex-of-the-damned.org/icons/vtes.svg">
-    <script>
-        function dC(name) {
-            document.getElementById("card-image").src = '../card-images/'.concat(name, '.jpg');
-            document.getElementById("card-modal").style.display = "block";
-        }
-    </script>
+    <script src="../decklist.js"></script>
     <title>Hunters</title>
 </head>
 <body>
@@ -32,70 +27,21 @@
         </ul>
     </nav>
 </header>
-<div id="card-modal" class="modal" onclick="this.style.display='none'">
-        <img class="modal-content" id="card-image">
+<div id="card-modal" class="modal" onclick="this.style.display='none'" tabindex="-1">
+    <div id=card-prev class="modal-nav">&#xf077</div>
+    <img class="modal-content" id="card-image"/>
+    <div id=card-next class="modal-nav">&#xf078</div>
 </div>
 <article>
     <h1><img src="../icons/creed-visionary.svg"> Hunters</h1>
-    <div class="decklist">
-        <h2><a href="http://www.vekn.fr/decks/twd.htm#2019wfgpbcz">Imbued !!!</a></h2>
-        <p>
-            Deck by Matus Kovalcik<br/>
-            Waiting for GP<br/>
-            Brno, Czech Republic<br/>
-            March 16th 2019<br/>
-            25 players<br/>
-        </p>
-        <h3>Crypt (12 cards)</h3>
-        <ul>
-            <li>3  <span class="card" onclick="dC('jenniecassie247orne')">Jennie "Cassie247" Orne</span></li>
-            <li>3  <span class="card" onclick="dC('travistraveler72miller')">Travis "Traveler72" Miller</span></li>
-            <li>2  <span class="card" onclick="dC('jackhannibal137harmon')">Jack "Hannibal137" Harmon</span></li>
-            <li>1  <span class="card" onclick="dC('erickshophet125franco')">Erick "Shophet125" Franco</span></li>
-            <li>1  <span class="card" onclick="dC('johncop90omalley')">John "Cop90" O'Malley</span></li>
-            <li>1  <span class="card" onclick="dC('francoiswardenloehr')">François "Warden" Loehr</span></li>
-            <li>1  <span class="card" onclick="dC('ineznurse216villagrande')">Inez "Nurse216" Villagrande</span></li>
+    <div id="decklist" class="decklist" style="display: none">
+        <h2 id="deck-name"><a id="deck-link" href="http://example.com"></a></h2>
+        <p id="deck-header"></p>
+        <h3 id="crypt-header"></h3>
+        <ul id="crypt-list">
         </ul>
-        <h3>Library (67 cards)</h3>
-        <ul>
-            <li><h4>— Master (13) —</h4></li>
-            <li>5  <span class="card" onclick="dC('angelofberlin')">Angel of Berlin</span></li>
-            <li>2  <span class="card" onclick="dC('churchofvindicatedfaiththe')">The Church of Vindicated Faith</span></li>
-            <li>2  <span class="card" onclick="dC('widerview')">Wider View</span></li>
-            <li>1  <span class="card" onclick="dC('directintervention')">Direct Intervention</span></li>
-            <li>1  <span class="card" onclick="dC('pentextmsubversion')">Pentex™ Subversion</span></li>
-            <li>1  <span class="card" onclick="dC('smilingjacktheanarch')">Smiling Jack, The Anarch</span></li>
-            <li>1  <span class="card" onclick="dC('tensionintheranks')">Tension in the Ranks</span></li>
-            <li><h4>— Conviction (20) —</h4></li>
-            <li>8  <span class="card" onclick="dC('strikewithconviction')">Strike with Conviction</span></li>
-            <li>7  <span class="card" onclick="dC('reactwithconviction')">React with Conviction</span></li>
-            <li>5  <span class="card" onclick="dC('secondsight')">Second Sight</span></li>
-            <li><h4>— Reaction (2) —</h4></li>
-            <li>2  <span class="card" onclick="dC('determine')">Determine</span></li>
-            <li><h4>— Power (14) —</h4></li>
-            <li>5  <span class="card" onclick="dC('vigilance')">Vigilance</span></li>
-            <li>3  <span class="card" onclick="dC('rejuvenate')">Rejuvenate</span></li>
-            <li>2  <span class="card" onclick="dC('champion')">Champion</span></li>
-            <li>2  <span class="card" onclick="dC('discern')">Discern</span></li>
-            <li>2  <span class="card" onclick="dC('inspire')">Inspire</span></li>
-            <li><h4>— Equipment (10) —</h4></li>
-            <li>2  <span class="card" onclick="dC('leatherjacket')">Leather Jacket</span></li>
-            <li>2  <span class="card" onclick="dC('talbotschainsaw')">Talbot's Chainsaw</span></li>
-            <li>1  <span class="card" onclick="dC('crusaderswordthe')">The Crusader Sword</span></li>
-            <li>1  <span class="card" onclick="dC('heartofnizchetus')">Heart of Nizchetus</span></li>
-            <li>1  <span class="card" onclick="dC('ivorybow')">Ivory Bow</span></li>
-            <li>1  <span class="card" onclick="dC('kevlarvest')">Kevlar Vest</span></li>
-            <li>1  <span class="card" onclick="dC('laptopcomputer')">Laptop Computer</span></li>
-            <li>1  <span class="card" onclick="dC('sportbike')">Sport Bike</span></li>
-            <li><h4>— Ally (3) —</h4></li>
-            <li>1  <span class="card" onclick="dC('carltonvanwyk')">Carlton Van Wyk</span></li>
-            <li>1  <span class="card" onclick="dC('ossian')">Ossian</span></li>
-            <li>1  <span class="card" onclick="dC('vagabondmystic')">Vagabond Mystic</span></li>
-            <li><h4>— Event (5) —</h4></li>
-            <li>2  <span class="card" onclick="dC('nrapac')">NRA PAC</span></li>
-            <li>1  <span class="card" onclick="dC('bloodcultawarenessnetwork')">Blood Cult Awareness Network</span></li>
-            <li>1  <span class="card" onclick="dC('dragonbound')">Dragonbound</span></li>
-            <li>1  <span class="card" onclick="dC('unmaskingthe')">The Unmasking</span></li>
+        <h3 id="library-header"></h3>
+        <ul id="library-list">
         </ul>
     </div>
     <h2>Highlights</h2>
@@ -183,4 +129,12 @@
         <a class="next" href="ishtarri-politics.html">Ishtarri Politics</a>
     </nav>
 </footer>
+<script>
+    window.onload = function () {
+        document.getElementById("card-modal").addEventListener("keydown", modalKeydown)
+        document.getElementById("card-prev").addEventListener("click", prevCard)
+        document.getElementById("card-next").addEventListener("click", nextCard)
+        displayDeck({"author":null,"comments":"Balazs Pasztor (Howler) -> Anna Welpa (Nana - Ani/Ashur) -> Oskar Hindriksson (?) -> Matus (Imbued !!!) -> Karel Kos (Legionares)\n","crypt":{"cards":[{"comments":null,"count":3,"id":"200689","name":"Jennie \"Cassie247\" Orne"},{"comments":null,"count":3,"id":"201386","name":"Travis \"Traveler72\" Miller"},{"comments":null,"count":2,"id":"200656","name":"Jack \"Hannibal137\" Harmon"},{"comments":null,"count":1,"id":"200432","name":"Erick \"Shophet125\" Franco"},{"comments":null,"count":1,"id":"200715","name":"John \"Cop90\" O'Malley"},{"comments":null,"count":1,"id":"200479","name":"Fran\u00e7ois \"Warden\" Loehr"},{"comments":null,"count":1,"id":"200632","name":"Inez \"Nurse216\" Villagrande"}],"count":12},"date":"2019-03-16","event":"Waiting for GP","library":{"cards":[{"cards":[{"comments":null,"count":5,"id":"100067","name":"Angel of Berlin"},{"comments":null,"count":2,"id":"100348","name":"The Church of Vindicated Faith"},{"comments":null,"count":2,"id":"102180","name":"Wider View"},{"comments":null,"count":1,"id":"100545","name":"Direct Intervention"},{"comments":null,"count":1,"id":"101384","name":"Pentex(TM) Subversion"},{"comments":null,"count":1,"id":"101811","name":"Smiling Jack, The Anarch"},{"comments":null,"count":1,"id":"101958","name":"Tension in the Ranks"}],"count":13,"type":"Master"},{"cards":[{"comments":null,"count":8,"id":"101886","name":"Strike with Conviction"},{"comments":null,"count":7,"id":"101557","name":"React with Conviction"},{"comments":null,"count":5,"id":"101705","name":"Second Sight"}],"count":20,"type":"Conviction"},{"cards":[{"comments":null,"count":2,"id":"100534","name":"Determine"}],"count":2,"type":"Reaction"},{"cards":[{"comments":null,"count":5,"id":"102120","name":"Vigilance"},{"comments":null,"count":3,"id":"101592","name":"Rejuvenate"},{"comments":null,"count":2,"id":"100322","name":"Champion"},{"comments":null,"count":2,"id":"100551","name":"Discern"},{"comments":null,"count":2,"id":"100991","name":"Inspire"}],"count":14,"type":"Power"},{"cards":[{"comments":null,"count":2,"id":"101081","name":"Leather Jacket"},{"comments":null,"count":2,"id":"101931","name":"Talbot's Chainsaw"},{"comments":null,"count":1,"id":"100903","name":"Heart of Nizchetus"},{"comments":null,"count":1,"id":"101014","name":"Ivory Bow"},{"comments":null,"count":1,"id":"101040","name":"Kevlar Vest"},{"comments":null,"count":1,"id":"101073","name":"Laptop Computer"},{"comments":null,"count":1,"id":"101856","name":"Sport Bike"},{"comments":null,"count":1,"id":"100474","name":"The Crusader Sword"}],"count":10,"type":"Equipment"},{"cards":[{"comments":null,"count":1,"id":"100298","name":"Carlton Van Wyk"},{"comments":null,"count":1,"id":"101333","name":"Ossian"},{"comments":null,"count":1,"id":"102087","name":"Vagabond Mystic"}],"count":3,"type":"Ally"},{"cards":[{"comments":null,"count":2,"id":"101305","name":"NRA PAC"},{"comments":null,"count":1,"id":"100198","name":"Blood Cult Awareness Network"},{"comments":null,"count":1,"id":"100581","name":"Dragonbound"},{"comments":null,"count":1,"id":"102079","name":"The Unmasking"}],"count":5,"type":"Event"}],"count":67},"name":"Hunters","place":"Brno, Czech Republic","player":"Matus Kovalcik","players_count":25,"score":"1GW4.5+1.5","tournament_format":"2R+F","twda_id":"2019wfgpbcz"})
+    }
+</script>
 </html>

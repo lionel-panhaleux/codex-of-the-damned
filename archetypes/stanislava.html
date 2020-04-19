@@ -7,12 +7,7 @@
     <meta name="description" content="Vampire: the Eternal Struggle (VTES) archetype: Stanislava">
     <link rel="stylesheet" type="text/css" href="../base.css"/>
     <link rel="icon" href="http://codex-of-the-damned.org/icons/vtes.svg">
-    <script>
-        function dC(name) {
-            document.getElementById("card-image").src = '../card-images/'.concat(name, '.jpg');
-            document.getElementById("card-modal").style.display = "block";
-        }
-    </script>
+    <script src="../decklist.js"></script>
     <title>Stanislava</title>
 </head>
 <body>
@@ -32,69 +27,21 @@
         </ul>
     </nav>
 </header>
-<div id="card-modal" class="modal" onclick="this.style.display='none'">
-        <img class="modal-content" id="card-image">
+<div id="card-modal" class="modal" onclick="this.style.display='none'" tabindex="-1">
+    <div id=card-prev class="modal-nav">&#xf077</div>
+    <img class="modal-content" id="card-image"/>
+    <div id=card-next class="modal-nav">&#xf078</div>
 </div>
 <article>
     <h1><img src="../icons/clan-gangrel.svg"> Stanislava</h1>
-    <div class="decklist">
-        <h2><a href="http://www.vekn.fr/decks/twd.htm#2017nacd2co">Stanislava</a></h2>
-        <p>
-            Deck by Martin Weinmayer<br/>
-            NAC 2017 Day 2<br/>
-            Origins, Columbus, Ohio<br/>
-            June 17th 2017<br/>
-            25 players<br/>
-        </p>
-        <h3>Crypt (12 cards)</h3>
-        <ul>
-            <li>4  <span class="card" onclick="dC('stanislava')">Stanislava</span></li>
-            <li>2  <span class="card" onclick="dC('ingridrossler')">Ingrid Rossler</span></li>
-            <li>1  <span class="card" onclick="dC('etrius')">Etrius</span></li>
-            <li>1  <span class="card" onclick="dC('genevieve')">Genevieve</span></li>
-            <li>1  <span class="card" onclick="dC('hartmutstover')">Hartmut Stover</span></li>
-            <li>1  <span class="card" onclick="dC('rachelbrandywine')">Rachel Brandywine</span></li>
-            <li>1  <span class="card" onclick="dC('xaviar')">Xaviar</span></li>
-            <li>1  <span class="card" onclick="dC('markdecker')">Mark Decker</span></li>
+    <div id="decklist" class="decklist" style="display: none">
+        <h2 id="deck-name"><a id="deck-link" href="http://example.com"></a></h2>
+        <p id="deck-header"></p>
+        <h3 id="crypt-header"></h3>
+        <ul id="crypt-list">
         </ul>
-        <h3>Library (88 cards)</h3>
-        <ul>
-            <li><h4>— Master (22) —</h4></li>
-            <li>7  <span class="card" onclick="dC('villein')">Villein</span></li>
-            <li>4  <span class="card" onclick="dC('dreamsofthesphinx')">Dreams of the Sphinx</span></li>
-            <li>2  <span class="card" onclick="dC('jakewashington')">Jake Washington</span></li>
-            <li>2  <span class="card" onclick="dC('papillon')">Papillon</span></li>
-            <li>2  <span class="card" onclick="dC('pentextmsubversion')">Pentex™ Subversion</span></li>
-            <li>1  <span class="card" onclick="dC('backways')">Backways</span></li>
-            <li>1  <span class="card" onclick="dC('ennoiastheater')">Ennoia's Theater</span></li>
-            <li>1  <span class="card" onclick="dC('giantsblood')">Giant's Blood</span></li>
-            <li>1  <span class="card" onclick="dC('informationhighway')">Information Highway</span></li>
-            <li>1  <span class="card" onclick="dC('monasteryofshadows')">Monastery of Shadows</span></li>
-            <li><h4>— Action (9) —</h4></li>
-            <li>9  <span class="card" onclick="dC('governtheunaligned')">Govern the Unaligned</span></li>
-            <li><h4>— Political (10) —</h4></li>
-            <li>7  <span class="card" onclick="dC('parityshift')">Parity Shift</span></li>
-            <li>1  <span class="card" onclick="dC('anarchistuprising')">Anarchist Uprising</span></li>
-            <li>1  <span class="card" onclick="dC('ancillaempowerment')">Ancilla Empowerment</span></li>
-            <li>1  <span class="card" onclick="dC('reinsofpower')">Reins of Power</span></li>
-            <li><h4>— Modifier (18) —</h4></li>
-            <li>6  <span class="card" onclick="dC('earthcontrol')">Earth Control</span></li>
-            <li>4  <span class="card" onclick="dC('forcedmarch')">Forced March</span></li>
-            <li>4  <span class="card" onclick="dC('instantaneoustransformation')">Instantaneous Transformation</span></li>
-            <li>3  <span class="card" onclick="dC('conditioning')">Conditioning</span></li>
-            <li>1  <span class="card" onclick="dC('enkilcog')">Enkil Cog</span></li>
-            <li><h4>— Modifier/Reaction (4) —</h4></li>
-            <li>4  <span class="card" onclick="dC('murmurofthefalsewill')">Murmur of the False Will</span></li>
-            <li><h4>— Modifier/Combat (2) —</h4></li>
-            <li>2  <span class="card" onclick="dC('rapidchange')">Rapid Change</span></li>
-            <li><h4>— Combat (12) —</h4></li>
-            <li>8  <span class="card" onclick="dC('formofmist')">Form of Mist</span></li>
-            <li>4  <span class="card" onclick="dC('earthmeld')">Earth Meld</span></li>
-            <li><h4>— Reaction (10) —</h4></li>
-            <li>6  <span class="card" onclick="dC('deflection')">Deflection</span></li>
-            <li>4  <span class="card" onclick="dC('sensethesavageway')">Sense the Savage Way</span></li>
-            <li><h4>— Equipment (1) —</h4></li>
-            <li>1  <span class="card" onclick="dC('sealofveddartha')">Seal of Veddartha</span></li>
+        <h3 id="library-header"></h3>
+        <ul id="library-list">
         </ul>
     </div>
     <h2>Highlights</h2>
@@ -199,4 +146,12 @@
         <a class="next" href="team-jacob.html">Team Jacob</a>
     </nav>
 </footer>
+<script>
+    window.onload = function () {
+        document.getElementById("card-modal").addEventListener("keydown", modalKeydown)
+        document.getElementById("card-prev").addEventListener("click", prevCard)
+        document.getElementById("card-next").addEventListener("click", nextCard)
+        displayDeck({"author":null,"comments":"I usually play this Deck with 80 Cards, but i did some metagame changes because\nI expected less combat and more bleed. Changes were\n+2 forced march +4 Sense the Savage Way +2 murmur +1 villein -1 scourge\nBig thanks to Ben Peal for his ongoing Support of our game, and all the cool\nPeople i was blessed to meet there!\n","crypt":{"cards":[{"comments":null,"count":4,"id":"201312","name":"Stanislava"},{"comments":null,"count":2,"id":"200634","name":"Ingrid Rossler"},{"comments":null,"count":1,"id":"200440","name":"Etrius"},{"comments":null,"count":1,"id":"200501","name":"Genevieve"},{"comments":null,"count":1,"id":"200575","name":"Hartmut Stover"},{"comments":null,"count":1,"id":"201148","name":"Rachel Brandywine"},{"comments":null,"count":1,"id":"201477","name":"Xaviar"},{"comments":null,"count":1,"id":"200937","name":"Mark Decker"}],"count":12},"date":"2017-06-17","event":"NAC 2017 Day 2","library":{"cards":[{"cards":[{"comments":null,"count":7,"id":"102121","name":"Villein"},{"comments":null,"count":4,"id":"100588","name":"Dreams of the Sphinx"},{"comments":null,"count":2,"id":"101019","name":"Jake Washington"},{"comments":null,"count":2,"id":"101350","name":"Papillon"},{"comments":null,"count":2,"id":"101384","name":"Pentex(TM) Subversion"},{"comments":null,"count":1,"id":"100126","name":"Backways"},{"comments":null,"count":1,"id":"100646","name":"Ennoia's Theater"},{"comments":null,"count":1,"id":"100824","name":"Giant's Blood"},{"comments":null,"count":1,"id":"100984","name":"Information Highway"},{"comments":null,"count":1,"id":"101238","name":"Monastery of Shadows"}],"count":22,"type":"Master"},{"cards":[{"comments":null,"count":9,"id":"100845","name":"Govern the Unaligned"}],"count":9,"type":"Action"},{"cards":[{"comments":null,"count":7,"id":"101353","name":"Parity Shift"},{"comments":null,"count":1,"id":"100059","name":"Anarchist Uprising"},{"comments":null,"count":1,"id":"100065","name":"Ancilla Empowerment"},{"comments":null,"count":1,"id":"101591","name":"Reins of Power"}],"count":10,"type":"Political Action"},{"cards":[{"comments":null,"count":6,"id":"100600","name":"Earth Control"},{"comments":null,"count":4,"id":"100761","name":"Forced March"},{"comments":null,"count":4,"id":"100994","name":"Instantaneous Transformation"},{"comments":null,"count":3,"id":"100401","name":"Conditioning"},{"comments":null,"count":1,"id":"100645","name":"Enkil Cog"}],"count":18,"type":"Action Modifier"},{"cards":[{"comments":null,"count":4,"id":"101256","name":"Murmur of the False Will"}],"count":4,"type":"Action Modifier/Reaction"},{"cards":[{"comments":null,"count":2,"id":"101542","name":"Rapid Change"}],"count":2,"type":"Action Modifier/Combat"},{"cards":[{"comments":null,"count":8,"id":"100771","name":"Form of Mist"},{"comments":null,"count":4,"id":"100601","name":"Earth Meld"}],"count":12,"type":"Combat"},{"cards":[{"comments":null,"count":6,"id":"100518","name":"Deflection"},{"comments":null,"count":4,"id":"101717","name":"Sense the Savage Way"}],"count":10,"type":"Reaction"},{"cards":[{"comments":null,"count":1,"id":"101703","name":"Seal of Veddartha"}],"count":1,"type":"Equipment"}],"count":88},"name":"Stansilava","place":"Origins, Columbus, Ohio","player":"Martin Weinmayer","players_count":25,"score":null,"tournament_format":"3R+F","twda_id":"2017nacd2co"})
+    }
+</script>
 </html>

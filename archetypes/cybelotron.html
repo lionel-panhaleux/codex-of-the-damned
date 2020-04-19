@@ -7,12 +7,7 @@
     <meta name="description" content="Vampire: the Eternal Struggle (VTES) archetype: Cybelotron">
     <link rel="stylesheet" type="text/css" href="../base.css"/>
     <link rel="icon" href="http://codex-of-the-damned.org/icons/vtes.svg">
-    <script>
-        function dC(name) {
-            document.getElementById("card-image").src = '../card-images/'.concat(name, '.jpg');
-            document.getElementById("card-modal").style.display = "block";
-        }
-    </script>
+    <script src="../decklist.js"></script>
     <title>Cybelotron</title>
 </head>
 <body>
@@ -32,62 +27,21 @@
         </ul>
     </nav>
 </header>
-<div id="card-modal" class="modal" onclick="this.style.display='none'">
-        <img class="modal-content" id="card-image">
+<div id="card-modal" class="modal" onclick="this.style.display='none'" tabindex="-1">
+    <div id=card-prev class="modal-nav">&#xf077</div>
+    <img class="modal-content" id="card-image"/>
+    <div id=card-next class="modal-nav">&#xf078</div>
 </div>
 <article>
     <h1><img src="../icons/clan-baali.svg"> Cybelotron</h1>
-    <div class="decklist">
-        <h2><a href="http://www.vekn.fr/decks/twd.htm#2k7originssun">Cybelotron</a></h2>
-        <p>
-            Deck by Ben Peal<br/>
-            Origins Sunday<br/>
-            Columbus, Ohio<br/>
-            July 8th 2007<br/>
-            21 players<br/>
-        </p>
-        <h3>Crypt (12 cards)</h3>
-        <ul>
-            <li>12 <span class="card" onclick="dC('cybele')">Cybele</span></li>
+    <div id="decklist" class="decklist" style="display: none">
+        <h2 id="deck-name"><a id="deck-link" href="http://example.com"></a></h2>
+        <p id="deck-header"></p>
+        <h3 id="crypt-header"></h3>
+        <ul id="crypt-list">
         </ul>
-        <h3>Library (90 cards)</h3>
-        <ul>
-            <li><h4>— Master (28) —</h4></li>
-            <li>4  <span class="card" onclick="dC('dreamsofthesphinx')">Dreams of the Sphinx</span></li>
-            <li>4  <span class="card" onclick="dC('golcondainnerpeace')">Golconda: Inner Peace</span></li>
-            <li>4  <span class="card" onclick="dC('miniontap')">Minion Tap</span></li>
-            <li>2  <span class="card" onclick="dC('auspex')">Auspex</span></li>
-            <li>2  <span class="card" onclick="dC('celerity')">Celerity</span></li>
-            <li>2  <span class="card" onclick="dC('fortitude')">Fortitude</span></li>
-            <li>2  <span class="card" onclick="dC('parthenonthe')">The Parthenon</span></li>
-            <li>2  <span class="card" onclick="dC('redeemthelostsoul')">Redeem the Lost Soul</span></li>
-            <li>1  <span class="card" onclick="dC('antediluvianawakening')">Antediluvian Awakening</span></li>
-            <li>1  <span class="card" onclick="dC('barrensthe')">The Barrens</span></li>
-            <li>1  <span class="card" onclick="dC('directintervention')">Direct Intervention</span></li>
-            <li>1  <span class="card" onclick="dC('dominate')">Dominate</span></li>
-            <li>1  <span class="card" onclick="dC('fortschrittlibrary')">Fortschritt Library</span></li>
-            <li>1  <span class="card" onclick="dC('giantsblood')">Giant's Blood</span></li>
-            <li><h4>— Action (19) —</h4></li>
-            <li>8  <span class="card" onclick="dC('callthegreatbeast')">Call the Great Beast</span></li>
-            <li>8  <span class="card" onclick="dC('magicofthesmith')">Magic of the Smith</span></li>
-            <li>3  <span class="card" onclick="dC('entrancement')">Entrancement</span></li>
-            <li><h4>— Modifier (31) —</h4></li>
-            <li>11 <span class="card" onclick="dC('truthofathousandlies')">Truth of a Thousand Lies</span></li>
-            <li>5  <span class="card" onclick="dC('elderimpersonation')">Elder Impersonation</span></li>
-            <li>5  <span class="card" onclick="dC('lostincrowds')">Lost in Crowds</span></li>
-            <li>4  <span class="card" onclick="dC('cloakthegathering')">Cloak the Gathering</span></li>
-            <li>4  <span class="card" onclick="dC('facelessnight')">Faceless Night</span></li>
-            <li>2  <span class="card" onclick="dC('spyingmission')">Spying Mission</span></li>
-            <li><h4>— Modifier/Combat (5) —</h4></li>
-            <li>5  <span class="card" onclick="dC('swallowedbythenight')">Swallowed by the Night</span></li>
-            <li><h4>— Combat (3) —</h4></li>
-            <li>3  <span class="card" onclick="dC('majesty')">Majesty</span></li>
-            <li><h4>— Equipment (2) —</h4></li>
-            <li>2  <span class="card" onclick="dC('soulgemofetrius')">Soul Gem of Etrius</span></li>
-            <li><h4>— Ally (1) —</h4></li>
-            <li>1  <span class="card" onclick="dC('mylanhorseed')">Mylan Horseed</span></li>
-            <li><h4>— Event (1) —</h4></li>
-            <li>1  <span class="card" onclick="dC('antheliostheredstar')">Anthelios, The Red Star</span></li>
+        <h3 id="library-header"></h3>
+        <ul id="library-list">
         </ul>
     </div>
     <h2>Highlights</h2>
@@ -169,4 +123,107 @@
         <a class="next" href="daughters-politics.html">Daughters Politics</a>
     </nav>
 </footer>
+<script>
+    window.onload = function () {
+        document.getElementById("card-modal").addEventListener("keydown", modalKeydown)
+        document.getElementById("card-prev").addEventListener("click", prevCard)
+        document.getElementById("card-next").addEventListener("click", nextCard)
+        displayDeck({
+            "crypt": {
+                "cards": [{"count": 12, "id": "200305", "name": "Cybele"}],
+                "count": 12
+            },
+            "date": "2007-07-08",
+            "event": "Origins Sunday",
+            "library": {
+                "cards": [
+                    {
+                        "cards": [
+                            {"count": 4, "id": "100588", "name": "Dreams of the Sphinx"},
+                            {"count": 4, "id": "100842", "name": "Golconda: Inner Peace"},
+                            {"count": 4, "id": "101217", "name": "Minion Tap"},
+                            {"count": 2, "id": "100114", "name": "Auspex"},
+                            {"count": 2, "id": "100312", "name": "Celerity"},
+                            {"count": 2, "id": "100774", "name": "Fortitude"},
+                            {"count": 2, "id": "101577", "name": "Redeem the Lost Soul"},
+                            {"count": 2, "id": "101355", "name": "The Parthenon"},
+                            {"count": 1, "id": "100073", "name": "Antediluvian Awakening"},
+                            {"count": 1, "id": "100545", "name": "Direct Intervention"},
+                            {"count": 1, "id": "100572", "name": "Dominate"},
+                            {"count": 1, "id": "100775", "name": "Fortschritt Library"},
+                            {"count": 1, "id": "100824", "name": "Giant's Blood"},
+                            {"count": 1, "id": "100135", "name": "The Barrens"}
+                        ],
+                        "count": 28,
+                        "type": "Master"
+                    },
+                    {
+                        "cards": [
+                            {"count": 8, "id": "100280", "name": "Call the Great Beast"},
+                            {"count": 8, "id": "101143", "name": "Magic of the Smith"},
+                            {"count": 3, "id": "100652", "name": "Entrancement"}
+                        ],
+                        "count": 19,
+                        "type": "Action"
+                    },
+                    {
+                        "cards": [
+                            {"count": 11, "id": "102044", "name": "Truth of a Thousand Lies"},
+                            {"count": 5, "id": "100617", "name": "Elder Impersonation"},
+                            {"count": 5, "id": "101125", "name": "Lost in Crowds"},
+                            {"count": 4, "id": "100362", "name": "Cloak the Gathering"},
+                            {"count": 4, "id": "100687", "name": "Faceless Night"},
+                            {"count": 2, "id": "101857", "name": "Spying Mission"}
+                        ],
+                        "count": 31,
+                        "type": "Action Modifier"
+                    },
+                    {
+                        "cards": [
+                            {"count": 5, "id": "101913", "name": "Swallowed by the Night"}
+                        ],
+                        "count": 5,
+                        "type": "Action Modifier/Combat"
+                    },
+                    {
+                        "cards": [
+                            {"count": 3, "id": "101144", "name": "Majesty"}
+                        ],
+                        "count": 3,
+                        "type": "Combat"
+                    },
+                    {
+                        "cards": [
+                            {"count": 2, "id": "101832", "name": "Soul Gem of Etrius"}
+                        ],
+                        "count": 2,
+                        "type": "Equipment"
+                    },
+                    {
+                        "cards": [
+                            {"count": 1, "id": "101261", "name": "Mylan Horseed"}
+                        ],
+                        "count": 1,
+                        "type": "Ally"
+                    },
+                    {
+                        "cards": [
+                            {"count": 1, "id": "100074", "name": "Anthelios, The Red Star"}
+                        ],
+                        "count": 1,
+                        "type": "Event"
+                    }
+                ],
+                "count": 90
+            },
+            "name": "Cybelotron",
+            "place": "Columbus, Ohio",
+            "player": "Ben Peal",
+            "players_count": 21,
+            "score": "4VP in final",
+            "tournament_format": "2R+F",
+            "twda_id": "2k7originssun"
+        })
+    }
+</script>
 </html>

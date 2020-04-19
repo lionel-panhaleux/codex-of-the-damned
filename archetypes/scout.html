@@ -7,12 +7,7 @@
     <meta name="description" content="Vampire: the Eternal Struggle (VTES) archetype: Scout">
     <link rel="stylesheet" type="text/css" href="../base.css"/>
     <link rel="icon" href="http://codex-of-the-damned.org/icons/vtes.svg">
-    <script>
-        function dC(name) {
-            document.getElementById("card-image").src = '../card-images/'.concat(name, '.jpg');
-            document.getElementById("card-modal").style.display = "block";
-        }
-    </script>
+    <script src="../decklist.js"></script>
     <title>Scout</title>
 </head>
 <body>
@@ -32,65 +27,21 @@
         </ul>
     </nav>
 </header>
-<div id="card-modal" class="modal" onclick="this.style.display='none'">
-        <img class="modal-content" id="card-image">
+<div id="card-modal" class="modal" onclick="this.style.display='none'" tabindex="-1">
+    <div id=card-prev class="modal-nav">&#xf077</div>
+    <img class="modal-content" id="card-image"/>
+    <div id=card-next class="modal-nav">&#xf078</div>
 </div>
 <article>
     <h1><img src="../icons/clan-daughters.svg"> Scout</h1>
-    <div class="decklist">
-        <h2><a href="http://www.vekn.fr/decks/twd.htm#2017accma">Scout</a></h2>
-        <p>
-            Deck by Simon Reed<br/>
-            Australian CC 2017<br/>
-            Melbourne, Australia<br/>
-            October 1st 2017<br/>
-            35 players<br/>
-        </p>
-        <h3>Crypt (12 cards)</h3>
-        <ul>
-            <li>4  <span class="card" onclick="dC('dmitrailyanova')">Dmitra Ilyanova</span></li>
-            <li>4  <span class="card" onclick="dC('scoutyoungwood')">Scout Youngwood</span></li>
-            <li>2  <span class="card" onclick="dC('arishat')">Arishat</span></li>
-            <li>1  <span class="card" onclick="dC('grahamgottesman')">Graham Gottesman</span></li>
-            <li>1  <span class="card" onclick="dC('karensuadela')">Karen Suadela</span></li>
+    <div id="decklist" class="decklist" style="display: none">
+        <h2 id="deck-name"><a id="deck-link" href="http://example.com"></a></h2>
+        <p id="deck-header"></p>
+        <h3 id="crypt-header"></h3>
+        <ul id="crypt-list">
         </ul>
-        <h3>Library (80 cards)</h3>
-        <ul>
-            <li><h4>— Master (24) —</h4></li>
-            <li>6  <span class="card" onclick="dC('villein')">Villein</span></li>
-            <li>6  <span class="card" onclick="dC('zillahsvalley')">Zillah's Valley</span></li>
-            <li>3  <span class="card" onclick="dC('legendaryvampire')">Legendary Vampire</span></li>
-            <li>2  <span class="card" onclick="dC('dreamsofthesphinx')">Dreams of the Sphinx</span></li>
-            <li>1  <span class="card" onclick="dC('barrensthe')">The Barrens</span></li>
-            <li>1  <span class="card" onclick="dC('creepshowcasino')">Creepshow Casino</span></li>
-            <li>1  <span class="card" onclick="dC('directintervention')">Direct Intervention</span></li>
-            <li>1  <span class="card" onclick="dC('fame')">Fame</span></li>
-            <li>1  <span class="card" onclick="dC('monasteryofshadows')">Monastery of Shadows</span></li>
-            <li>1  <span class="card" onclick="dC('securehaven')">Secure Haven</span></li>
-            <li>1  <span class="card" onclick="dC('widerview')">Wider View</span></li>
-            <li><h4>— Action (10) —</h4></li>
-            <li>6  <span class="card" onclick="dC('shatteringcrescendo')">Shattering Crescendo</span></li>
-            <li>2  <span class="card" onclick="dC('entrancement')">Entrancement</span></li>
-            <li>2  <span class="card" onclick="dC('heartofthecity')">Heart of the City</span></li>
-            <li><h4>— Political (16) —</h4></li>
-            <li>6  <span class="card" onclick="dC('parityshift')">Parity Shift</span></li>
-            <li>4  <span class="card" onclick="dC('kineresourcescontested')">Kine Resources Contested</span></li>
-            <li>2  <span class="card" onclick="dC('lilyprelude')">Lily Prelude</span></li>
-            <li>2  <span class="card" onclick="dC('recklessagitation')">Reckless Agitation</span></li>
-            <li>2  <span class="card" onclick="dC('rumorsofgehenna')">Rumors of Gehenna</span></li>
-            <li><h4>— Modifier (24) —</h4></li>
-            <li>5  <span class="card" onclick="dC('freakdrive')">Freak Drive</span></li>
-            <li>5  <span class="card" onclick="dC('votercaptivation')">Voter Captivation</span></li>
-            <li>4  <span class="card" onclick="dC('forgottenlabyrinth')">Forgotten Labyrinth</span></li>
-            <li>2  <span class="card" onclick="dC('bewitchingoration')">Bewitching Oration</span></li>
-            <li>2  <span class="card" onclick="dC('elderimpersonation')">Elder Impersonation</span></li>
-            <li>2  <span class="card" onclick="dC('facelessnight')">Faceless Night</span></li>
-            <li>2  <span class="card" onclick="dC('lostincrowds')">Lost in Crowds</span></li>
-            <li>2  <span class="card" onclick="dC('perfectparagon')">Perfect Paragon</span></li>
-            <li><h4>— Modifier/Combat (2) —</h4></li>
-            <li>2  <span class="card" onclick="dC('swallowedbythenight')">Swallowed by the Night</span></li>
-            <li><h4>— Combat (4) —</h4></li>
-            <li>4  <span class="card" onclick="dC('majesty')">Majesty</span></li>
+        <h3 id="library-header"></h3>
+        <ul id="library-list">
         </ul>
     </div>
     <h2>Highlights</h2>
@@ -162,4 +113,12 @@
         <a class="next" href="shambling-hordes.html">Shambling Hordes</a>
     </nav>
 </footer>
+<script>
+    window.onload = function () {
+        document.getElementById("card-modal").addEventListener("keydown", modalKeydown)
+        document.getElementById("card-prev").addEventListener("click", prevCard)
+        document.getElementById("card-next").addEventListener("click", nextCard)
+        displayDeck({"author":null,"comments":"Stealth vote with tricks\n\nMy take on the archetype. I ditched Undele and Ashurs relatively early on as I\nfound them too slow and switched to a more parity shift focused style adding 2\nextra princes (thanks for the tip on Karen Shan). Get lots of minions, keep the\npool lower so you can Zillah's to parity shift, and then Lily Prelude or\nReckless for the knock out.\n\nShatterings didn't really play that much of a part this weekend but they're a\ngreat add on module. The two Heart of the City - thanks Julian - were also a\nbetter bleed module than adding legal manipulations, with those and the\nLegendary Vampires I usually had someone who could bleed for 3 at stealth - a\ngreat plan since 94\n","crypt":{"cards":[{"comments":null,"count":4,"id":"200349","name":"Dmitra Ilyanova"},{"comments":null,"count":4,"id":"201253","name":"Scout Youngwood"},{"comments":null,"count":2,"id":"200136","name":"Arishat"},{"comments":null,"count":1,"id":"200533","name":"Graham Gottesman"},{"comments":null,"count":1,"id":"200753","name":"Karen Suadela"}],"count":12},"date":"2017-10-01","event":"Australian Continental Championship 2017","library":{"cards":[{"cards":[{"comments":null,"count":6,"id":"102121","name":"Villein"},{"comments":null,"count":6,"id":"102207","name":"Zillah's Valley"},{"comments":null,"count":3,"id":"101091","name":"Legendary Vampire"},{"comments":null,"count":2,"id":"100588","name":"Dreams of the Sphinx"},{"comments":null,"count":1,"id":"100444","name":"Creepshow Casino"},{"comments":null,"count":1,"id":"100545","name":"Direct Intervention"},{"comments":null,"count":1,"id":"100698","name":"Fame"},{"comments":null,"count":1,"id":"101238","name":"Monastery of Shadows"},{"comments":null,"count":1,"id":"101711","name":"Secure Haven"},{"comments":null,"count":1,"id":"100135","name":"The Barrens"},{"comments":null,"count":1,"id":"102180","name":"Wider View"}],"count":24,"type":"Master"},{"cards":[{"comments":null,"count":6,"id":"101761","name":"Shattering Crescendo"},{"comments":null,"count":2,"id":"100652","name":"Entrancement"},{"comments":null,"count":2,"id":"100904","name":"Heart of the City"}],"count":10,"type":"Action"},{"cards":[{"comments":null,"count":6,"id":"101353","name":"Parity Shift"},{"comments":null,"count":4,"id":"101056","name":"Kine Resources Contested"},{"comments":null,"count":2,"id":"101109","name":"Lily Prelude"},{"comments":null,"count":2,"id":"101567","name":"Reckless Agitation"},{"comments":null,"count":2,"id":"101663","name":"Rumors of Gehenna"}],"count":16,"type":"Political Action"},{"cards":[{"comments":null,"count":5,"id":"100788","name":"Freak Drive"},{"comments":null,"count":5,"id":"102131","name":"Voter Captivation"},{"comments":null,"count":4,"id":"100769","name":"Forgotten Labyrinth"},{"comments":null,"count":2,"id":"100157","name":"Bewitching Oration"},{"comments":null,"count":2,"id":"100617","name":"Elder Impersonation"},{"comments":null,"count":2,"id":"100687","name":"Faceless Night"},{"comments":null,"count":2,"id":"101125","name":"Lost in Crowds"},{"comments":null,"count":2,"id":"101387","name":"Perfect Paragon"}],"count":24,"type":"Action Modifier"},{"cards":[{"comments":null,"count":2,"id":"101913","name":"Swallowed by the Night"}],"count":2,"type":"Action Modifier/Combat"},{"cards":[{"comments":null,"count":4,"id":"101144","name":"Majesty"}],"count":4,"type":"Combat"}],"count":80},"name":"Scout","place":"Melbourne, Australia","player":"Simon Reed","players_count":35,"score":"2GW7+2.5","tournament_format":"3R+F","twda_id":"2017accma"})
+    }
+</script>
 </html>

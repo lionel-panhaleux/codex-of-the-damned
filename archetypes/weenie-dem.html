@@ -7,12 +7,7 @@
     <meta name="description" content="Vampire: the Eternal Struggle (VTES) archetype: Weenie DEM">
     <link rel="stylesheet" type="text/css" href="../base.css"/>
     <link rel="icon" href="http://codex-of-the-damned.org/icons/vtes.svg">
-    <script>
-        function dC(name) {
-            document.getElementById("card-image").src = '../card-images/'.concat(name, '.jpg');
-            document.getElementById("card-modal").style.display = "block";
-        }
-    </script>
+    <script src="../decklist.js"></script>
     <title>Weenie DEM</title>
 </head>
 <body>
@@ -32,76 +27,21 @@
         </ul>
     </nav>
 </header>
-<div id="card-modal" class="modal" onclick="this.style.display='none'">
-        <img class="modal-content" id="card-image">
+<div id="card-modal" class="modal" onclick="this.style.display='none'" tabindex="-1">
+    <div id=card-prev class="modal-nav">&#xf077</div>
+    <img class="modal-content" id="card-image"/>
+    <div id=card-next class="modal-nav">&#xf078</div>
 </div>
 <article>
     <h1><img src="../icons/clan-malkavian.svg"> Weenie DEM</h1>
-    <div class="decklist">
-        <h2><a href="http://www.vekn.fr/decks/twd.htm#2k8ecday2">Deck example</a></h2>
-        <p>
-            Deck by Jan Harcarufka<br/>
-            EC 2008 Day 2<br/>
-            Prague, Czech Republic<br/>
-            September 21st 2008<br/>
-            40 players, 144 players on Day 1<br/>
-        </p>
-        <h3>Crypt (12 cards)</h3>
-        <ul>
-            <li>1  <span class="card" onclick="dC('tony')">Tony</span></li>
-            <li>1  <span class="card" onclick="dC('apachejones')">Apache Jones</span></li>
-            <li>1  <span class="card" onclick="dC('colonelthe')">The Colonel</span></li>
-            <li>1  <span class="card" onclick="dC('generalperfidiodios')">General Perfidio Díos</span></li>
-            <li>1  <span class="card" onclick="dC('luc')">Luc</span></li>
-            <li>1  <span class="card" onclick="dC('persiathebeautifulstatue')">Persia, The Beautiful Statue</span></li>
-            <li>1  <span class="card" onclick="dC('unclegeorge')">Uncle George</span></li>
-            <li>1  <span class="card" onclick="dC('adelaidedavis')">Adelaide Davis</span></li>
-            <li>1  <span class="card" onclick="dC('beauregardkrueller')">Beauregard Krueller</span></li>
-            <li>1  <span class="card" onclick="dC('jackie')">Jackie</span></li>
-            <li>1  <span class="card" onclick="dC('midget')">Midget</span></li>
-            <li>1  <span class="card" onclick="dC('bloodfeud')">Bloodfeud</span></li>
+    <div id="decklist" class="decklist" style="display: none">
+        <h2 id="deck-name"><a id="deck-link" href="http://example.com"></a></h2>
+        <p id="deck-header"></p>
+        <h3 id="crypt-header"></h3>
+        <ul id="crypt-list">
         </ul>
-        <h3>Library (90 cards)</h3>
-        <ul>
-            <li><h4>— Master (10) —</h4></li>
-            <li>2  <span class="card" onclick="dC('dreamsofthesphinx')">Dreams of the Sphinx</span></li>
-            <li>2  <span class="card" onclick="dC('obfuscate')">Obfuscate</span></li>
-            <li>2  <span class="card" onclick="dC('pentextmsubversion')">Pentex™ Subversion</span></li>
-            <li>1  <span class="card" onclick="dC('dementation')">Dementation</span></li>
-            <li>1  <span class="card" onclick="dC('directintervention')">Direct Intervention</span></li>
-            <li>1  <span class="card" onclick="dC('securehaven')">Secure Haven</span></li>
-            <li>1  <span class="card" onclick="dC('wash')">Wash</span></li>
-            <li><h4>— Action (23) —</h4></li>
-            <li>11 <span class="card" onclick="dC('kindredspirits')">Kindred Spirits</span></li>
-            <li>4  <span class="card" onclick="dC('computerhacking')">Computer Hacking</span></li>
-            <li>3  <span class="card" onclick="dC('diveintomadness')">Dive into Madness</span></li>
-            <li>3  <span class="card" onclick="dC('madmansquill')">Madman's Quill</span></li>
-            <li>1  <span class="card" onclick="dC('aranthebestheimmortal')">Aranthebes, The Immortal</span></li>
-            <li>1  <span class="card" onclick="dC('sibylstongue')">Sibyl's Tongue</span></li>
-            <li><h4>— Modifier (38) —</h4></li>
-            <li>8  <span class="card" onclick="dC('confusion')">Confusion</span></li>
-            <li>6  <span class="card" onclick="dC('eyesofchaos')">Eyes of Chaos</span></li>
-            <li>4  <span class="card" onclick="dC('cloakthegathering')">Cloak the Gathering</span></li>
-            <li>4  <span class="card" onclick="dC('facelessnight')">Faceless Night</span></li>
-            <li>4  <span class="card" onclick="dC('lostincrowds')">Lost in Crowds</span></li>
-            <li>3  <span class="card" onclick="dC('elderimpersonation')">Elder Impersonation</span></li>
-            <li>3  <span class="card" onclick="dC('veilthelegions')">Veil the Legions</span></li>
-            <li>2  <span class="card" onclick="dC('leverage')">Leverage</span></li>
-            <li>2  <span class="card" onclick="dC('mindtricks')">Mind Tricks</span></li>
-            <li>2  <span class="card" onclick="dC('spyingmission')">Spying Mission</span></li>
-            <li><h4>— Modifier/Combat (5) —</h4></li>
-            <li>3  <span class="card" onclick="dC('swallowedbythenight')">Swallowed by the Night</span></li>
-            <li>2  <span class="card" onclick="dC('deny')">Deny</span></li>
-            <li><h4>— Reaction (12) —</h4></li>
-            <li>4  <span class="card" onclick="dC('telepathicmisdirection')">Telepathic Misdirection</span></li>
-            <li>2  <span class="card" onclick="dC('delayingtactics')">Delaying Tactics</span></li>
-            <li>2  <span class="card" onclick="dC('onthequivive')">On the Qui Vive</span></li>
-            <li>2  <span class="card" onclick="dC('poisonpill')">Poison Pill</span></li>
-            <li>2  <span class="card" onclick="dC('wakewitheveningsfreshness')">Wake with Evening's Freshness</span></li>
-            <li><h4>— Equipment (1) —</h4></li>
-            <li>1  <span class="card" onclick="dC('heartofnizchetus')">Heart of Nizchetus</span></li>
-            <li><h4>— Event (1) —</h4></li>
-            <li>1  <span class="card" onclick="dC('narrowminds')">Narrow Minds</span></li>
+        <h3 id="library-header"></h3>
+        <ul id="library-list">
         </ul>
     </div>
     <h2>Highlights</h2>
@@ -212,4 +152,12 @@
         <a class="next" href="weenie-dom.html">Weenie DOM</a>
     </nav>
 </footer>
+<script>
+    window.onload = function () {
+        document.getElementById("card-modal").addEventListener("keydown", modalKeydown)
+        document.getElementById("card-prev").addEventListener("click", prevCard)
+        document.getElementById("card-next").addEventListener("click", nextCard)
+        displayDeck({"author":null,"comments":"","crypt":{"cards":[{"comments":null,"count":1,"id":"201381","name":"Tony"},{"comments":null,"count":1,"id":"200122","name":"Apache Jones"},{"comments":null,"count":1,"id":"200287","name":"The Colonel"},{"comments":null,"count":1,"id":"200500","name":"General Perfidio D\u00edos"},{"comments":null,"count":1,"id":"200866","name":"Luc"},{"comments":null,"count":1,"id":"201111","name":"Persia, The Beautiful Statue"},{"comments":null,"count":1,"id":"201408","name":"Uncle George"},{"comments":null,"count":1,"id":"200012","name":"Adelaide Davis"},{"comments":null,"count":1,"id":"200182","name":"Beauregard Krueller"},{"comments":null,"count":1,"id":"200658","name":"Jackie"},{"comments":null,"count":1,"id":"200985","name":"Midget"},{"comments":null,"count":1,"id":"200208","name":"Bloodfeud"}],"count":12},"date":"2008-09-21","event":"EC 2008 Day 2","library":{"cards":[{"cards":[{"comments":null,"count":2,"id":"100588","name":"Dreams of the Sphinx"},{"comments":null,"count":2,"id":"101310","name":"Obfuscate"},{"comments":null,"count":2,"id":"101384","name":"Pentex(TM) Subversion"},{"comments":null,"count":1,"id":"100521","name":"Dementation"},{"comments":null,"count":1,"id":"100545","name":"Direct Intervention"},{"comments":null,"count":1,"id":"101711","name":"Secure Haven"},{"comments":null,"count":1,"id":"102151","name":"Wash"}],"count":10,"type":"Master"},{"cards":[{"comments":null,"count":11,"id":"101055","name":"Kindred Spirits"},{"comments":null,"count":4,"id":"100390","name":"Computer Hacking"},{"comments":null,"count":3,"id":"100562","name":"Dive into Madness"},{"comments":null,"count":3,"id":"101138","name":"Madman's Quill"},{"comments":null,"count":1,"id":"100079","name":"Aranthebes, The Immortal"},{"comments":null,"count":1,"id":"101777","name":"Sibyl's Tongue"}],"count":23,"type":"Action"},{"cards":[{"comments":null,"count":8,"id":"100405","name":"Confusion"},{"comments":null,"count":6,"id":"100682","name":"Eyes of Chaos"},{"comments":null,"count":4,"id":"100362","name":"Cloak the Gathering"},{"comments":null,"count":4,"id":"100687","name":"Faceless Night"},{"comments":null,"count":4,"id":"101125","name":"Lost in Crowds"},{"comments":null,"count":3,"id":"100617","name":"Elder Impersonation"},{"comments":null,"count":3,"id":"102097","name":"Veil the Legions"},{"comments":null,"count":2,"id":"101098","name":"Leverage"},{"comments":null,"count":2,"id":"101216","name":"Mind Tricks"},{"comments":null,"count":2,"id":"101857","name":"Spying Mission"}],"count":38,"type":"Action Modifier"},{"cards":[{"comments":null,"count":3,"id":"101913","name":"Swallowed by the Night"},{"comments":null,"count":2,"id":"100524","name":"Deny"}],"count":5,"type":"Action Modifier/Combat"},{"cards":[{"comments":null,"count":4,"id":"101949","name":"Telepathic Misdirection"},{"comments":null,"count":2,"id":"100519","name":"Delaying Tactics"},{"comments":null,"count":2,"id":"101321","name":"On the Qui Vive"},{"comments":null,"count":2,"id":"101406","name":"Poison Pill"},{"comments":null,"count":2,"id":"102137","name":"Wake with Evening's Freshness"}],"count":12,"type":"Reaction"},{"cards":[{"comments":null,"count":1,"id":"100903","name":"Heart of Nizchetus"}],"count":1,"type":"Equipment"},{"cards":[{"comments":null,"count":1,"id":"101265","name":"Narrow Minds"}],"count":1,"type":"Event"}],"count":90},"name":"EC Day 2 winner","place":"Prague, Czech Republic","player":"Jan Harcarufka","players_count":40,"score":"3VP in final","tournament_format":null,"twda_id":"2k8ecday2"})
+    }
+</script>
 </html>
