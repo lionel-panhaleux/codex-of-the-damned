@@ -96,7 +96,7 @@ function formatText(text) {
     }
     return text
         .replace(RegExp(Object.keys(disc_map).map(x => x.replace(/(\[|\])/g, "\\$1")).join("|"), "g"), x => disc_map[x])
-        .replace(/\{([^\}]*)\}/g, (_, x) => `<span class="card" onclick="dC('${getCardImageName(x)}')">${x}</span>`)
+        .replace(/\{([^\}]*)\}/g, (_, x) => `<span class="card" onclick="dC('${getCardImageName(x)}')">${x.replace(" ", " ")}</span>`)
 }
 function displayCard(data, push) {
     clearResults()
@@ -124,7 +124,7 @@ function displayCard(data, push) {
             ruling_item.innerHTML = formatText(ruling.replace(reference_re, ""))
             const references = [...ruling.matchAll(reference_re)]
             for (const reference of references) {
-                ruling_item.innerHTML += ` <a target="_blank" href="${ruling_links[reference[1]]}">${reference[0].replace(" ", " ")}</a>`
+                ruling_item.innerHTML += ` <a target="_blank" href="${ruling_links[reference[1]]}">${reference[0].replace(" ", " ")}</a >`
             }
             rulings_list.appendChild(ruling_item)
         }
