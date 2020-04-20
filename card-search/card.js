@@ -82,7 +82,7 @@ function formatText(text) {
         "[str]": "<i>à </i>",
         "[STR]": "<i>á </i>",
         "[tem]": "<i>?</i>",
-        "[TEM]": "<i>?</i>",
+        "[TEM]": "<i>!</i>",
         "[thn]": "<i>h</i>",
         "[THN]": "<i>H</i>",
         "[tha]": "<i>t</i>",
