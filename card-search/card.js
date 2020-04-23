@@ -10,13 +10,15 @@ function getCardImageName(name) {
     if (name.startsWith("the ")) {
         name = name.substr(4, name.length) + "the"
     }
-    name = name.replace(/\s|,|\.|-|'|:|\(|\)|"|!/g, "")
+    name = name.replace(/\s|,|\.|-|—|'|:|\(|\)|"|!/g, "")
     name = name.replace(/ö|ó/g, "o") // Rötschreck, Dónal
+    name = name.replace(/é|ë|è/g, "e") // Céleste, Gaël, Père
+    name = name.replace(/œ/g, "oe") // Cœur
     name = name.replace(/ç/g, "c") // Monçada
-    name = name.replace(/é|ë/g, "e") // Céleste, Gaël
-    name = name.replace(/á/g, "a") // Vásquez
+    name = name.replace(/á|ã/g, "a") // Vásquez, João
+    name = name.replace(/í|î/g, "i") // Día, Maître
     name = name.replace(/ñ/g, "n") // Montaña
-    name = name.replace(/ü/g, "u") // Powerbase: Zürich
+    name = name.replace(/ü|ú/g, "u") // Powerbase: Zürich, Jesús
     return name
 }
 function formatText(text) {
@@ -96,7 +98,7 @@ function formatText(text) {
     }
     return text
         .replace(RegExp(Object.keys(disc_map).map(x => x.replace(/(\[|\])/g, "\\$1")).join("|"), "g"), x => disc_map[x])
-        .replace(/\{([^\}]*)\}/g, (_, x) => `<span class="card" onclick="dC('${getCardImageName(x)}')">${x.replace(" ", " ")}</span>`)
+        .replace(/(?:\/|\{)([^\/\}]*)(?:\/|\})/g, (_, x) => `<span class="card" onclick="dC('${getCardImageName(x)}')">${x.replace(" ", " ")}</span>`)
 }
 function displayCard(data, push) {
     clearResults()
