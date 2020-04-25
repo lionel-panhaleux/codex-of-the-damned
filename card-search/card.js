@@ -96,9 +96,10 @@ function formatText(text) {
         "[vis]": "<i>u</i>",
         "[VIS]": "<i>U</i>"
     }
+    // replace card names first as disciplines map introduce / in the text
     return text
-        .replace(RegExp(Object.keys(disc_map).map(x => x.replace(/(\[|\])/g, "\\$1")).join("|"), "g"), x => disc_map[x])
         .replace(/(?:\/|\{)([^\/\}]*)(?:\/|\})/g, (_, x) => `<span class="card" onclick="dC('${getCardImageName(x)}')">${x.replace(" ", " ")}</span>`)
+        .replace(RegExp(Object.keys(disc_map).map(x => x.replace(/(\[|\])/g, "\\$1")).join("|"), "g"), x => disc_map[x])
 }
 function displayCard(data, push) {
     clearResults()
