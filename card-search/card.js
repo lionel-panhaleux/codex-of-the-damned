@@ -137,7 +137,7 @@ function displayCard(data, push) {
     }
     document.getElementById("results").style.display = "block";
     if (push) {
-        window.history.pushState({ "card": data["Name"] }, "Card Search", `?card=${data["Name"]}`)
+        window.history.pushState({ "card": data["Name"] }, "Card Search", encodeURI(`?card=${data["Name"]}`))
     }
     window.document.title = data["Name"]
     for (let metatag of document.getElementsByTagName("meta")) {
@@ -253,7 +253,7 @@ function autocomplete(input) {
     });
 }
 function displayCardFromURL() {
-    const urlParams = new URLSearchParams(window.location.search)
+    const urlParams = new URLSearchParams(decodeURI(window.location.search))
     if (urlParams.has("card")) {
         document.getElementById("card_name").value = urlParams.get("card")
         getCardByName(urlParams.get("card"))
