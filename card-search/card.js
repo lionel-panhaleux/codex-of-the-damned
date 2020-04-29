@@ -149,7 +149,7 @@ function displayCard(data, push) {
 }
 function getCardByName(card_name, push = false) {
     fetch(
-        encodeURI(`https://krcg.herokuapp.com/card/${card_name}`), {
+        encodeURI(`https://api.krcg.org/card/${card_name}`), {
         method: "GET",
         headers: { 'Accept': 'application/json' }
     })
@@ -191,7 +191,7 @@ function displayCompletion(input, items_list, data) {
 }
 function fetchCompletion(input, items_list, text) {
     fetch(
-        encodeURI(`https://krcg.herokuapp.com/complete/${text}`), {
+        encodeURI(`https://api.krcg.org/complete/${text}`), {
         method: "GET",
         headers: { 'Accept': 'application/json' }
     })

@@ -1,6 +1,6 @@
 function getDeckWithCards(cards) {
     fetch(
-        `https://krcg.herokuapp.com/deck`, {
+        `https://api.krcg.org/deck`, {
         method: "POST",
         body: JSON.stringify({ "cards": cards }),
         headers: {
@@ -29,7 +29,7 @@ function getDeckWithCards(cards) {
 }
 function getDeckByID(element, twda_id) {
     fetch(
-        encodeURI(`https://krcg.herokuapp.com/deck/${twda_id}`), {
+        encodeURI(`https://api.krcg.org/deck/${twda_id}`), {
         method: "GET",
         headers: { 'Accept': 'application/json' }
     })
@@ -60,101 +60,6 @@ function getDeckByID(element, twda_id) {
         element.classList.add("selected")
     }
 }
-// function dCi(i) {
-//     const card = document.getElementById(`card-${i}`)
-//     if (!card) { return }
-//     var name = card.textContent.replace("™ ", "(TM) ").toLowerCase()
-//     if (name.startsWith("the ")) {
-//         name = name.substr(4, name.length) + "the"
-//     }
-//     name = name.replace(/\s|,|\.|-|'|:|\(|\)|"|!/g, "")
-//     name = name.replace(/ö|ó/g, "o") // Rötschreck, Dónal
-//     name = name.replace(/ç/g, "c") // Monçada
-//     name = name.replace(/é|ë/g, "e") // Céleste, Gaël
-//     name = name.replace(/á/g, "a") // Vásquez
-//     name = name.replace(/ñ/g, "n") // Montaña
-//     name = name.replace(/ü/g, "u") // Powerbase: Zürich
-//     document.getElementById(`card-image`).src = '../card-images/'.concat(name, '.jpg');
-//     var modal = document.getElementById("card-modal")
-//     modal.classList.remove(`modal-card-${i - 1}`);
-//     modal.classList.remove(`modal-card-${i + 1}`);
-//     modal.classList.add(`modal-card-${i}`)
-//     modal.style.display = "block"
-//     modal.focus()
-// }
-// function cardIndex(modal) {
-//     for (const c of modal.classList) {
-//         if (c.startsWith("modal-card-")) {
-//             return parseInt(c.match(/[0-9]+/)[0])
-//         }
-//     }
-// }
-// function prevCard(event) {
-//     event.stopPropagation()
-//     dCi(cardIndex(event.target.parentElement) - 1)
-// }
-// function nextCard(event) {
-//     event.stopPropagation()
-//     dCi(cardIndex(event.target.parentElement) + 1)
-// }
-// function modalKeydown(event) {
-//     event.stopPropagation()
-//     event.preventDefault();
-//     if (event.keyCode === 40) { // arrow DOWN
-//         dCi(cardIndex(event.target) + 1)
-//     } else if (event.keyCode === 38) { // arrow UP
-//         dCi(cardIndex(event.target) - 1)
-//     }
-// }
-// function cardElement(element, i) {
-//     const name = element["name"].replace("(TM) ", "™ ")
-//     return `<li>${element["count"]} <span class="card" id="card-${i}" onclick="dCi(${i})">${name}</span></li>`
-// }
-// function wrapText(text, maxlen) {
-//     if (!text) {
-//         return "(No name)"
-//     }
-//     if (text.length > maxlen) {
-//         return text.substr(0, maxlen - 3) + "..."
-//     }
-//     return text
-// }
-// function removeComments() {
-//     comments.innerHTML = ""
-// }
-// function displayDeck(data) {
-//     removeComments()
-//     document.getElementById("deck-link").textContent = wrapText(data["name"], 25)
-//     document.getElementById("deck-link").href = `http://www.vekn.fr/decks/twd.htm#${data["twda_id"]}`
-//     document.getElementById("deck-header").innerHTML = [
-//         wrapText(data["player"], 40),
-//         wrapText(data["event"], 40),
-//         wrapText(data["place"], 40),
-//         data["date"],
-//         data["players_count"] + " players",
-//     ].join("<br/>")
-//     document.getElementById("crypt-header").textContent = `Crypt (${data["crypt"]["count"]})`
-//     var cards = []
-//     data["crypt"]["cards"].forEach((value, index) => { cards.push(cardElement(value, index)) })
-//     document.getElementById("crypt-list").innerHTML = cards.join("\n")
-//     document.getElementById("library-header").textContent = `Library (${data["library"]["count"]})`
-//     var offset = cards.length
-//     var cards = new Array()
-//     for (const section of data["library"]["cards"]) {
-//         cards.push(`<li><h4>— ${section["type"]} (${section["count"]}) —</h4></li>`)
-//         section["cards"].forEach((value, index) => { cards.push(cardElement(value, offset + index)) })
-//         offset += section["cards"].length
-//     }
-//     document.getElementById("library-list").innerHTML = cards.join("\n")
-//     comments = document.getElementById("comments")
-//     for (let section of data["comments"].split("\n\n")) {
-//         pelem = document.createElement("p")
-//         pelem.textContent = section
-//         comments.appendChild(pelem)
-//     }
-//     document.getElementById("decklist").style.display = "block"
-//     document.getElementById("comments-title").style.display = "block"
-// }
 function displayDeckChoices(data) {
     removeComments()
     let list = ""
@@ -192,7 +97,7 @@ function displayCompletion(input, items_list, data) {
 }
 function fetchCompletion(input, items_list, text) {
     fetch(
-        encodeURI(`https://krcg.herokuapp.com/complete/${text}`), {
+        encodeURI(`https://api.krcg.org/complete/${text}`), {
         method: "GET",
         headers: { 'Accept': 'application/json' }
     })
