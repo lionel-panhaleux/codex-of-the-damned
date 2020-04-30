@@ -406,6 +406,30 @@ div.result-message {
     margin-right: 0.5em;
     color: #582110
 }
+.inline-form {
+    margin: 1em 0 0 0 ;
+    text-align: left;
+}
+.inline-form legend {
+    margin: 1em 0 0.5em 0;
+    font-weight: bold;
+}
+.inline-form input {
+    display: inline-block;
+    margin: 0.5em 1em 0 0;
+    width: 2em;
+    padding: 0.3em;
+}
+.inline-form label {
+    display: inline-block;
+    text-align: left;
+    margin: 0
+}
+.inline-form output {
+    display: inline-block;
+    text-align: right;
+    font-weight: bold;
+}
 .decklist {
     float: left;
     padding: 0.5em;

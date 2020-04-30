@@ -11,6 +11,7 @@
             document.getElementById("card-modal").style.display = "block";
         }
     </script>
+    <script src="statistics.js"></script>
     <title>Codex of the Damned</title>
 </head>
 <body>
@@ -327,6 +328,50 @@
         two standard modules for bounce and combat defense, and a tactical module against politics. A <em>Wall</em>
         deck, on the other hand, can have a spam module for wake & intercept,
         a standard module for bloat and only a tactical module for the payload.
+    </p>
+    <p>
+        This little calculator may help you figure out the number of copies you want to include for each card:
+    </p>
+    <form
+        class="inline-form" id="stat-form-at-least" autocomplete="off"
+        oninput="aL0_result.value = Math.round(atLeastOne(parseInt(aL0_stack.value), parseInt(aL0_copies.value), parseInt(aL0_draws.value)) * 10000) / 100+ ' %'"
+    >
+        <fieldset>
+            <legend>Probability to get a specific card</legend>
+                <label for="aL0_stack">cards in deck:</label>
+                <input type="text" id="aL0_stack" placeholder="90"/>
+                <label for="aL0_copies">copies of the card:</label>
+                <input type="text" id="aL0_copies" placeholder="4"/>
+                <label for="aL0_draws">cards drawn:</label>
+                <input type="text" id="aL0_draws" placeholder="7"/>
+            =
+            <output name="aL0_result" for="aL0_stack aL0_copies aL0_draws">0 %</output>
+        </fieldset>
+    </form>
+    <form
+        class="inline-form" id="stat-form-how-many" autocomplete="off"
+        oninput="hMN_result.value = howManyNeeded(parseInt(hMN_stack.value), parseInt(hMN_draws.value), parseFloat(hMN_expectation.value) / 100) + ' copies'"
+    >
+        <fieldset>
+            <legend>Copies needed to get a draw</legend>
+            <label for="hMN_stack">cards in deck:</label>
+            <input type="text" id="hMN_stack" placeholder="90"/>
+            <label for="hMN_draws">draws:</label>
+            <input type="text" id="hMN_draws" placeholder="7"/>
+            <label for="hMN_expectation">desired probability (%):</label>
+            <input type="text" id="hMN_expectation" placeholder="80"/>
+            =
+            <output name="hMN_result" for="hMN_stack hMN_draws hMN_expectation">0 copies</output>
+        </fieldset>
+    </form>
+    <p class=subtitle>
+        The probability to get a specific card is computed as the cumulated probability (sum) of having 1, 2, ..., n
+        copies of the card.
+        <br/>
+        The formula is ∑[1 ≤ i ≤ min(d,c)]⎨𝐶(c,i)⋅𝐶(s-c, d-i)/𝐶(s,d)⎬ where 𝐶(n,k) is the binomial coefficient,
+        s: stack, d: draws and c: copies.
+        <br/>
+        To second computation just computes the preceding probability for consecutive values of c.
     </p>
     <div class="tip">
         <h3>Cycling</h3>
