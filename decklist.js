@@ -12,13 +12,15 @@ function dCi(i) {
     if (name.startsWith("the ")) {
         name = name.substr(4, name.length) + "the"
     }
-    name = name.replace(/\s|,|\.|-|'|:|\(|\)|"|!/g, "")
+    name = name.replace(/\s|,|\.|-|—|'|:|\(|\)|"|!/g, "")
     name = name.replace(/ö|ó/g, "o") // Rötschreck, Dónal
+    name = name.replace(/é|ë|è/g, "e") // Céleste, Gaël, Père
+    name = name.replace(/œ/g, "oe") // Cœur
     name = name.replace(/ç/g, "c") // Monçada
-    name = name.replace(/é|ë/g, "e") // Céleste, Gaël
-    name = name.replace(/á/g, "a") // Vásquez
+    name = name.replace(/á|ã/g, "a") // Vásquez, João
+    name = name.replace(/í|î/g, "i") // Día, Maître
     name = name.replace(/ñ/g, "n") // Montaña
-    name = name.replace(/ü/g, "u") // Powerbase: Zürich
+    name = name.replace(/ü|ú/g, "u") // Powerbase: Zürich, Jesús
     document.getElementById(`card-image`).src = '../card-images/'.concat(name, '.jpg');
     var modal = document.getElementById("card-modal")
     for (const c of modal.classList) {
