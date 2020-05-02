@@ -96,7 +96,8 @@ function formatText(text) {
         "[vis]": "<i>u</i>",
         "[VIS]": "<i>U</i>"
     }
-    // replace card names first as disciplines map introduce / in the text
+    // replace card names by span with card image popup (first as disciplines map introduce / in the text)
+    // replace disciplines text with icons
     return text
         .replace(/(?:\/|\{)([^\/\}]*)(?:\/|\})/g, (_, x) => `<span class="card" onclick="dC('${getCardImageName(x)}')">${x.replace(" ", " ")}</span>`)
         .replace(RegExp(Object.keys(disc_map).map(x => x.replace(/(\[|\])/g, "\\$1")).join("|"), "g"), x => disc_map[x])
@@ -127,7 +128,10 @@ function displayCard(data, push) {
             ruling_item.innerHTML = formatText(ruling.replace(reference_re, ""))
             const references = [...ruling.matchAll(reference_re)]
             for (const reference of references) {
-                ruling_item.innerHTML += ` <a target="_blank" href="${ruling_links[reference[1]]}">${reference[0].replace(" ", " ")}</a >`
+                // use non-breaking spaces and hyphens
+                const non_breaking_ref = reference[0].replace(" ", " ").replace(/\[([^\]-]*)-([^\]-]*)\]/g, "[$1‑$2]")
+                const link = ruling_links[reference[1]]
+                ruling_item.innerHTML += ` <a target="_blank" href="${link}">${non_breaking_ref}</a >`
             }
             rulings_list.appendChild(ruling_item)
         }
