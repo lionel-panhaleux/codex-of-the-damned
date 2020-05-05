@@ -326,7 +326,7 @@ function rulingFormSubmit() {
     const link = document.getElementById("rF_link").value
     document.getElementById("rF_submit").disabled = true
     document.getElementById("rf-result").innerHTML = "<p>Please wait...</p>"
-    fetch(encodeURI(`http://127.0.01:8000/submit-ruling/${card}`), {
+    fetch(encodeURI(`http://api.krcg.org/submit-ruling/${card}`), {
         method: "POST",
         body: JSON.stringify({ text: text, link: link }),
         headers: {
