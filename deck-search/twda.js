@@ -1,12 +1,11 @@
 function getDeckWithCards(cards) {
-    fetch(
-        `https://api.krcg.org/deck`, {
+    fetch(`https://api.krcg.org/deck`, {
         method: "POST",
-        body: JSON.stringify({ "cards": cards }),
+        body: JSON.stringify({ cards: cards }),
         headers: {
-            'Content-Type': 'application/json',
-            'Accept': 'application/json'
-        }
+            "Content-Type": "application/json",
+            Accept: "application/json",
+        },
     })
         .then(function (response) {
             if (!response.ok) {
@@ -14,24 +13,25 @@ function getDeckWithCards(cards) {
                     throw Error("TWDA bootstrapping, please wait...")
                 } else if (response.status >= 404 && response.status < 600) {
                     throw Error("No example found in TWDA.")
-                }
-                else {
+                } else {
                     throw Error(response.statusText)
                 }
             }
             return response
         })
-        .then(response => response.json())
-        .then(data => displayDeckChoices(data))
+        .then((response) => response.json())
         .catch(function (error) {
-            document.getElementById("result-message").innerHTML = `<p>${error.message}</p>`
+            document.getElementById(
+                "result-message"
+            ).innerHTML = `<p>${error.message}</p>`
+            throw error
         })
+        .then((data) => displayDeckChoices(data))
 }
 function getDeckByID(element, twda_id) {
-    fetch(
-        encodeURI(`https://api.krcg.org/deck/${twda_id}`), {
+    fetch(encodeURI(`https://api.krcg.org/deck/${twda_id}`), {
         method: "GET",
-        headers: { 'Accept': 'application/json' }
+        headers: { Accept: "application/json" },
     })
         .then(function (response) {
             if (!response.ok) {
@@ -39,21 +39,27 @@ function getDeckByID(element, twda_id) {
                     throw Error("TWDA bootstrapping, please wait...")
                 } else if (response.status >= 404 && response.status < 600) {
                     throw Error(`Deck #${twda_id} not found.`)
-                }
-                else {
+                } else {
                     throw Error(response.statusText)
                 }
             }
             return response
         })
-        .then(response => response.json())
+        .then((response) => response.json())
         .catch(function (error) {
-            document.getElementById("result-message").innerHTML = `<p>${error.message}</p>`
+            document.getElementById(
+                "result-message"
+            ).innerHTML = `<p>${error.message}</p>`
+            throw error
         })
-        .then(data => displayDeck(data))
+        .then((data) => displayDeck(data))
 
     if (element) {
-        window.history.pushState({ "twda_id": twda_id }, "TWDA", `?twda_id=${twda_id}`)
+        window.history.pushState(
+            { twda_id: twda_id },
+            "TWDA",
+            `?twda_id=${twda_id}`
+        )
         for (let sibling of element.parentElement.children) {
             sibling.classList.remove("selected")
         }
@@ -75,9 +81,15 @@ function displayDeckChoices(data) {
     for (const deck of data) {
         list += `
         <tr class="results">
-            <td class="results date" onclick="getDeckByID(this.parentNode, '${deck["twda_id"]}')">${deck["date"]}</td>
-            <td class="results player" onclick="getDeckByID(this.parentNode, '${deck["twda_id"]}')">${wrapText(deck["player"], 40)}</td>
-            <td class="results name" onclick="getDeckByID(this.parentNode, '${deck["twda_id"]}')">${wrapText(deck["name"], 80)}</td>
+            <td class="results date" onclick="getDeckByID(this.parentNode, '${
+                deck["twda_id"]
+            }')">${deck["date"]}</td>
+            <td class="results player" onclick="getDeckByID(this.parentNode, '${
+                deck["twda_id"]
+            }')">${wrapText(deck["player"], 40)}</td>
+            <td class="results name" onclick="getDeckByID(this.parentNode, '${
+                deck["twda_id"]
+            }')">${wrapText(deck["name"], 80)}</td>
         </tr>
         `
     }
@@ -92,26 +104,26 @@ function displayCompletion(input, items_list, data) {
             closeAllLists(input)
             getDeckWithCards([input.value])
         })
-        items_list.appendChild(b);
+        items_list.appendChild(b)
     }
 }
 function fetchCompletion(input, items_list, text) {
-    fetch(
-        encodeURI(`https://api.krcg.org/complete/${text}`), {
+    fetch(encodeURI(`https://api.krcg.org/complete/${text}`), {
         method: "GET",
-        headers: { 'Accept': 'application/json' }
+        headers: { Accept: "application/json" },
     })
         .then(function (response) {
             if (!response.ok) {
-                throw Error(response.statusText);
+                throw Error(response.statusText)
             }
-            return response;
+            return response
         })
-        .then(response => response.json())
-        .then(data => displayCompletion(input, items_list, data))
+        .then((response) => response.json())
         .catch(function (error) {
             document.getElementById("results").textContent = error.message
+            throw error
         })
+        .then((data) => displayCompletion(input, items_list, data))
 }
 function clearSearch() {
     document.getElementById("decklist").style.display = "none"
@@ -123,7 +135,7 @@ function autocomplete(input) {
     var currentFocus
     function doComplete(e) {
         const val = this.value
-        closeAllLists(input);
+        closeAllLists(input)
         if (!val || val.length < 3) {
             clearSearch()
             return false
@@ -137,49 +149,66 @@ function autocomplete(input) {
     }
     input.addEventListener("input", doComplete)
     input.addEventListener("keydown", function (e) {
-        let x = document.getElementById(this.id + "autocomplete-list");
-        if (x) x = x.getElementsByTagName("div");
-        if (e.keyCode === 40) { // arrow DOWN
-            currentFocus++;
-            addActive(x);
-        } else if (e.keyCode === 38) { // arrow UP
-            currentFocus--;
-            addActive(x);
-        } else if (e.keyCode === 13) { // ENTER
-            e.preventDefault();
-            if (currentFocus > -1 && x) { x[currentFocus].click() }
+        let x = document.getElementById(this.id + "autocomplete-list")
+        if (x) x = x.getElementsByTagName("div")
+        if (e.keyCode === 40) {
+            // arrow DOWN
+            currentFocus++
+            addActive(x)
+        } else if (e.keyCode === 38) {
+            // arrow UP
+            currentFocus--
+            addActive(x)
+        } else if (e.keyCode === 13) {
+            // ENTER
+            e.preventDefault()
+            if (currentFocus > -1 && x) {
+                x[currentFocus].click()
+            }
             getDeckWithCards([input.value])
-        } else if (e.keyCode === 8 || e.keyCode === 46) { // DELETE or BACKSPACE
+        } else if (e.keyCode === 8 || e.keyCode === 46) {
+            // DELETE or BACKSPACE
             doComplete()
         }
-    });
+    })
     function addActive(x) {
-        if (!x) { return false }
-        for (child of x) { child.classList.remove("autocomplete-active") }
-        if (currentFocus >= x.length) { currentFocus = 0 }
-        if (currentFocus < 0) { currentFocus = (x.length - 1) }
-        x[currentFocus].classList.add("autocomplete-active");
+        if (!x) {
+            return false
+        }
+        for (child of x) {
+            child.classList.remove("autocomplete-active")
+        }
+        if (currentFocus >= x.length) {
+            currentFocus = 0
+        }
+        if (currentFocus < 0) {
+            currentFocus = x.length - 1
+        }
+        x[currentFocus].classList.add("autocomplete-active")
     }
     document.addEventListener("click", function (e) {
         closeAllLists(input, e.target)
-    });
+    })
 }
 function closeAllLists(input, elmnt) {
     for (let x of document.getElementsByClassName("autocomplete-items")) {
-        if (elmnt != x && elmnt != input) { x.parentNode.removeChild(x) }
+        if (elmnt != x && elmnt != input) {
+            x.parentNode.removeChild(x)
+        }
     }
 }
 function displayDeckFromURL() {
     const urlParams = new URLSearchParams(window.location.search)
     if (urlParams.has("twda_id")) {
         getDeckByID(null, urlParams.get("twda_id"))
-    }
-    else {
+    } else {
         clearSearch()
     }
 }
 window.onload = function () {
-    document.getElementById("card-modal").addEventListener("keydown", modalKeydown)
+    document
+        .getElementById("card-modal")
+        .addEventListener("keydown", modalKeydown)
     document.getElementById("card-prev").addEventListener("click", prevCard)
     document.getElementById("card-next").addEventListener("click", nextCard)
     autocomplete(document.getElementById("card_name"))

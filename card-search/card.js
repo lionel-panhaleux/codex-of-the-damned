@@ -1,5 +1,7 @@
 function clearResults() {
-    document.getElementById("results").style.display = "none";
+    document.getElementById("results").style.display = "none"
+    document.getElementById("ruling-submit-tooltip").style.display = "none"
+    document.getElementById("rF_submit").disabled = false
     document.getElementById("result-rulings-div").innerHTML = "<h3>Rulings</h3>"
     document.getElementById("result-image").src = ""
     document.getElementById("card-title").textContent = ""
@@ -94,21 +96,46 @@ function formatText(text) {
         "[vic]": "<i>v</i>",
         "[VIC]": "<i>V</i>",
         "[vis]": "<i>u</i>",
-        "[VIS]": "<i>U</i>"
+        "[VIS]": "<i>U</i>",
     }
     // replace card names by span with card image popup (first as disciplines map introduce / in the text)
     // replace disciplines text with icons
     return text
-        .replace(/(?:\/|\{)([^\/\}]*)(?:\/|\})/g, (_, x) => `<span class="card" onclick="dC('${getCardImageName(x)}')">${x.replace(" ", " ")}</span>`)
-        .replace(RegExp(Object.keys(disc_map).map(x => x.replace(/(\[|\])/g, "\\$1")).join("|"), "g"), x => disc_map[x])
+        .replace(
+            /(?:\/|\{)([^\/\}]*)(?:\/|\})/g,
+            (_, x) =>
+                `<span class="card" onclick="dC('${getCardImageName(
+                    x
+                )}')">${x.replace(" ", " ")}</span>`
+        )
+        .replace(
+            RegExp(
+                Object.keys(disc_map)
+                    .map((x) => x.replace(/(\[|\])/g, "\\$1"))
+                    .join("|"),
+                "g"
+            ),
+            (x) => disc_map[x]
+        )
 }
 function displayCard(data, push) {
     clearResults()
-    const card_image_url = '../card-images/'.concat(getCardImageName(data["Name"]), '.jpg')
+    const card_image_url = "../card-images/".concat(
+        getCardImageName(data["Name"]),
+        ".jpg"
+    )
     document.getElementById("result-image").src = card_image_url
-    document.getElementById("card-title").textContent = data["Name"].replace("(TM) ", "™ ")
-    document.getElementById("card_info").innerHTML = `#${data["Id"]}<br/>${data["Set"].join(" ")}`
-    for (let section of data["Card Text"].replace("{", "").replace("}", "").split("\n")) {
+    document.getElementById("card-title").textContent = data["Name"].replace(
+        "(TM) ",
+        "™ "
+    )
+    document.getElementById("card_info").innerHTML = `#${data["Id"]}<br/>${data[
+        "Set"
+    ].join(" ")}`
+    for (let section of data["Card Text"]
+        .replace("{", "")
+        .replace("}", "")
+        .split("\n")) {
         pelem = document.createElement("p")
         pelem.innerHTML = formatText(section)
         document.getElementById("card-text").appendChild(pelem)
@@ -129,19 +156,25 @@ function displayCard(data, push) {
             const references = [...ruling.matchAll(reference_re)]
             for (const reference of references) {
                 // use non-breaking spaces and hyphens
-                const non_breaking_ref = reference[0].replace(" ", " ").replace(/\[([^\]-]*)-([^\]-]*)\]/g, "[$1‑$2]")
+                const non_breaking_ref = reference[0]
+                    .replace(" ", " ")
+                    .replace(/\[([^\]-]*)-([^\]-]*)\]/g, "[$1‑$2]")
                 const link = ruling_links[reference[1]]
                 ruling_item.innerHTML += ` <a target="_blank" href="${link}">${non_breaking_ref}</a >`
             }
             rulings_list.appendChild(ruling_item)
         }
     } else {
-        rulings_div.innerHTML += `<p>No ruling registered. Submit one on ` +
-            `<a target="_blank" href="https://github.com/lionel-panhaleux/codex-of-the-damned/issues">Github</a></p>.`
+        rulings_div.innerHTML += "<p>No ruling registered.</p>"
     }
-    document.getElementById("results").style.display = "block";
+    document.getElementById("results").style.display = "block"
+    document.getElementById("ruling-submit-tooltip").style.display = "block"
     if (push) {
-        window.history.pushState({ "card": data["Name"] }, "Card Search", encodeURI(`?card=${data["Name"]}`))
+        window.history.pushState(
+            { card: data["Name"] },
+            "Card Search",
+            encodeURI(`?card=${data["Name"]}`)
+        )
     }
     window.document.title = data["Name"]
     for (let metatag of document.getElementsByTagName("meta")) {
@@ -152,10 +185,9 @@ function displayCard(data, push) {
     }
 }
 function getCardByName(card_name, push = false) {
-    fetch(
-        encodeURI(`https://api.krcg.org/card/${card_name}`), {
+    fetch(encodeURI(`https://api.krcg.org/card/${card_name}`), {
         method: "GET",
-        headers: { 'Accept': 'application/json' }
+        headers: { Accept: "application/json" },
     })
         .then(function (response) {
             if (!response.ok) {
@@ -163,22 +195,26 @@ function getCardByName(card_name, push = false) {
                     throw Error("KRCG bootstrapping, please wait...")
                 } else if (response.status >= 404 && response.status < 600) {
                     throw Error(`"${card_name}" not found.`)
-                }
-                else {
+                } else {
                     throw Error(response.statusText)
                 }
             }
             return response
         })
-        .then(response => response.json())
-        .then(data => displayCard(data, push))
+        .then((response) => response.json())
         .catch(function (error) {
-            document.getElementById("result-message").innerHTML = `<p>${error.message}</p>`
+            document.getElementById(
+                "result-message"
+            ).innerHTML = `<p>${error.message}</p>`
+            throw error
         })
+        .then((data) => displayCard(data, push))
 }
 function closeAllLists(input, elmnt) {
     for (let x of document.getElementsByClassName("autocomplete-items")) {
-        if (elmnt != x && elmnt != input) { x.parentNode.removeChild(x) }
+        if (elmnt != x && elmnt != input) {
+            x.parentNode.removeChild(x)
+        }
     }
 }
 function displayCompletion(input, items_list, data) {
@@ -190,32 +226,34 @@ function displayCompletion(input, items_list, data) {
             closeAllLists(input)
             getCardByName(input.value, true)
         })
-        items_list.appendChild(b);
+        items_list.appendChild(b)
     }
 }
 function fetchCompletion(input, items_list, text) {
-    fetch(
-        encodeURI(`https://api.krcg.org/complete/${text}`), {
+    fetch(encodeURI(`https://api.krcg.org/complete/${text}`), {
         method: "GET",
-        headers: { 'Accept': 'application/json' }
+        headers: { Accept: "application/json" },
     })
         .then(function (response) {
             if (!response.ok) {
-                throw Error(response.statusText);
+                throw Error(response.statusText)
             }
-            return response;
+            return response
         })
-        .then(response => response.json())
-        .then(data => displayCompletion(input, items_list, data))
+        .then((response) => response.json())
         .catch(function (error) {
-            document.getElementById("results").textContent = error.message
+            document.getElementById(
+                "result-message"
+            ).innerHTML = `<p>${error.message}</p>`
+            throw error
         })
+        .then((data) => displayCompletion(input, items_list, data))
 }
 function autocomplete(input) {
     var currentFocus
     function doComplete(e) {
         const val = this.value
-        closeAllLists(input);
+        closeAllLists(input)
         if (!val || val.length < 3) {
             clearResults()
             return false
@@ -229,42 +267,104 @@ function autocomplete(input) {
     }
     input.addEventListener("input", doComplete)
     input.addEventListener("keydown", function (e) {
-        let x = document.getElementById(this.id + "autocomplete-list");
-        if (x) x = x.getElementsByTagName("div");
-        if (e.keyCode === 40) { // arrow DOWN
-            currentFocus++;
-            addActive(x);
-        } else if (e.keyCode === 38) { // arrow UP
-            currentFocus--;
-            addActive(x);
-        } else if (e.keyCode === 13) { // ENTER
-            e.preventDefault();
-            if (currentFocus > -1 && x) { x[currentFocus].click() }
+        let x = document.getElementById(this.id + "autocomplete-list")
+        if (x) x = x.getElementsByTagName("div")
+        if (e.keyCode === 40) {
+            // arrow DOWN
+            currentFocus++
+            addActive(x)
+        } else if (e.keyCode === 38) {
+            // arrow UP
+            currentFocus--
+            addActive(x)
+        } else if (e.keyCode === 13) {
+            // ENTER
+            e.preventDefault()
+            if (currentFocus > -1 && x) {
+                x[currentFocus].click()
+            }
             getCardByName(input.value, true)
-        } else if (e.keyCode === 8 || e.keyCode === 46) { // DELETE or BACKSPACE
+        } else if (e.keyCode === 8 || e.keyCode === 46) {
+            // DELETE or BACKSPACE
             doComplete()
         }
-    });
+    })
     function addActive(x) {
-        if (!x) { return false }
-        for (child of x) { child.classList.remove("autocomplete-active") }
-        if (currentFocus >= x.length) { currentFocus = 0 }
-        if (currentFocus < 0) { currentFocus = (x.length - 1) }
-        x[currentFocus].classList.add("autocomplete-active");
+        if (!x) {
+            return false
+        }
+        for (child of x) {
+            child.classList.remove("autocomplete-active")
+        }
+        if (currentFocus >= x.length) {
+            currentFocus = 0
+        }
+        if (currentFocus < 0) {
+            currentFocus = x.length - 1
+        }
+        x[currentFocus].classList.add("autocomplete-active")
     }
     document.addEventListener("click", function (e) {
         closeAllLists(input, e.target)
-    });
+    })
 }
 function displayCardFromURL() {
     const urlParams = new URLSearchParams(decodeURI(window.location.search))
     if (urlParams.has("card")) {
         document.getElementById("card_name").value = urlParams.get("card")
         getCardByName(urlParams.get("card"))
-    }
-    else {
+    } else {
         clearResults()
     }
+}
+function rulingFormSubmit() {
+    if (document.getElementById("rF_submit").disabled == true) {
+        return
+    }
+    const card = document.getElementById("card_name").value
+    const text = document.getElementById("rF_text").value
+    const link = document.getElementById("rF_link").value
+    document.getElementById("rF_submit").disabled = true
+    document.getElementById("rf-result").innerHTML = "<p>Please wait...</p>"
+    fetch(encodeURI(`http://127.0.01:8000/submit-ruling/${card}`), {
+        method: "POST",
+        body: JSON.stringify({ text: text, link: link }),
+        headers: {
+            "Content-Type": "application/json",
+            Accept: "application/json",
+        },
+    })
+        .then(function (response) {
+            if (!response.ok) {
+                if (response.status >= 500 && response.status < 600) {
+                    throw Error(
+                        "KRCG bootstrapping, please try again in a minute."
+                    )
+                } else if (response.status == 400) {
+                    throw Error("You must provide a valid ruling link.")
+                } else {
+                    throw Error(response.statusText)
+                }
+            }
+            return response
+        })
+        .then((response) => response.json())
+        .catch(function (error) {
+            document.getElementById(
+                "rf-result"
+            ).innerHTML = `<p>${error.message}</p>`
+            document.getElementById("rF_submit").disabled = false
+            throw error
+        })
+        .then(function (response) {
+            console.log(response)
+            document.getElementById(
+                "rf-result"
+            ).innerHTML = `<p>Ruling submitted: you can consult it <a target="_blank", href="${response["html_url"]}">on GitHub</a>.`
+            document.getElementById("rF_text").value = ""
+            document.getElementById("rF_link").value = ""
+            document.getElementById("rF_submit").disabled = false
+        })
 }
 window.onload = function () {
     autocomplete(document.getElementById("card_name"))
