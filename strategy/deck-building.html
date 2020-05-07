@@ -7,6 +7,8 @@
     <meta name="description" content="Vampire: the Eternal Struggle (VTES) strategy: Deck Building">
     <link rel="stylesheet" type="text/css" href="../base.css"/>
     <link rel="icon" href="https://codex-of-the-damned.org/icons/vtes.svg">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>
         function dC(name) {
             document.getElementById("card-image").src = '../card-images/'.concat(name, '.jpg');
@@ -370,8 +372,8 @@
         The probability to get a specific card is computed as the cumulated probability (sum) of having 1, 2, ..., n
         copies of the card.
         <br/>
-        The formula is ∑[1 ≤ i ≤ min(d,c)]⎨𝐶(c,i)⋅𝐶(s-c, d-i)/𝐶(s,d)⎬ where 𝐶(n,k) is the binomial coefficient,
-        s: stack, d: draws and c: copies.
+        The formula used is \(\sum_{i=1}^{\min\left(d,c\right)}\ \frac{\binom{c}{i}\binom{s-c}{d-i}}{\binom{s}{d}}\),
+        with s: stack, d: draws and c: copies and \(\binom{n}{k}\) the binomial coefficients.
         <br/>
         To second computation just computes the preceding probability for consecutive values of c.
     </p>
