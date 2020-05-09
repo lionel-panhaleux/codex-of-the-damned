@@ -1,7 +1,6 @@
 class MultiCardSearch {
-    constructor(document) {
+    constructor() {
         this.cardList = new Set()
-        this.document = document
     }
     add(card) {
         this.cardList.add(card)
