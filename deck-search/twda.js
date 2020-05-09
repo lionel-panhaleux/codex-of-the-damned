@@ -1,3 +1,52 @@
+class MultiCardSearch {
+    constructor(document) {
+        this.cardList = new Set()
+        this.document = document
+    }
+
+    add(card) {
+        this.cardList.add(card)
+        this.updateView()
+    }
+
+    remove(card) {
+        this.cardList.delete(card)
+        this.updateView()
+
+    }
+
+    clear() {
+        this.cardList.clear()
+        this.updateView()
+    }
+
+    list() {
+        return Array.from(this.cardList)
+    }
+
+    updateView() {
+        let cardListNode = document.getElementById('multi-card-search')
+        while (cardListNode.firstChild) {
+          cardListNode.removeChild(cardListNode.firstChild)
+        }
+        for (let card of this.cardList.values()) {
+            let cardNode = document.createElement('li')
+            cardNode.textContent = `${card}`
+            cardNode.addEventListener("click", function (e) {
+                removeMultiCardSearchCard(card)
+            })
+            cardListNode.append(cardNode)
+        }
+    }
+}
+
+var multiCardSearch = new MultiCardSearch()
+
+function removeMultiCardSearchCard(card) {
+    multiCardSearch.remove(card)
+    getDeckWithCards(multiCardSearch.list())
+}
+
 function getDeckWithCards(cards) {
     fetch(`https://api.krcg.org/deck`, {
         method: "POST",
@@ -102,7 +151,8 @@ function displayCompletion(input, items_list, data) {
         b.addEventListener("click", function (e) {
             input.value = this.textContent
             closeAllLists(input)
-            getDeckWithCards([input.value])
+            multiCardSearch.add(input.value)
+            getDeckWithCards(multiCardSearch.list())
         })
         items_list.appendChild(b)
     }
@@ -125,10 +175,20 @@ function fetchCompletion(input, items_list, text) {
         })
         .then((data) => displayCompletion(input, items_list, data))
 }
+function clearMultiCardSearch() {
+    multiCardSearch.clear()
+    document.getElementById("card_name").value = ""
+    document.getElementById("decklist").style.display = "none"
+    document.getElementById("comments-title").style.display = "none"
+    document.getElementById("results").innerHTML = ""
+    document.getElementById("result-message").innerHTML = ""
+    removeComments()
+}
 function clearSearch() {
     document.getElementById("decklist").style.display = "none"
     document.getElementById("comments-title").style.display = "none"
     document.getElementById("results").innerHTML = ""
+    document.getElementById("result-message").innerHTML = ""
     removeComments()
 }
 function autocomplete(input) {
@@ -165,7 +225,8 @@ function autocomplete(input) {
             if (currentFocus > -1 && x) {
                 x[currentFocus].click()
             }
-            getDeckWithCards([input.value])
+            multiCardSearch.add(input.value)
+            getDeckWithCards(multiCardSearch.list())
         } else if (e.keyCode === 8 || e.keyCode === 46) {
             // DELETE or BACKSPACE
             doComplete()
