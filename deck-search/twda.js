@@ -178,11 +178,7 @@ function fetchCompletion(input, items_list, text) {
 function clearMultiCardSearch() {
     multiCardSearch.clear()
     document.getElementById("card_name").value = ""
-    document.getElementById("decklist").style.display = "none"
-    document.getElementById("comments-title").style.display = "none"
-    document.getElementById("results").innerHTML = ""
-    document.getElementById("result-message").innerHTML = ""
-    removeComments()
+    clearSearch()
 }
 function clearSearch() {
     document.getElementById("decklist").style.display = "none"
