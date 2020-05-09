@@ -3,27 +3,21 @@ class MultiCardSearch {
         this.cardList = new Set()
         this.document = document
     }
-
     add(card) {
         this.cardList.add(card)
         this.updateView()
     }
-
     remove(card) {
         this.cardList.delete(card)
         this.updateView()
-
     }
-
     clear() {
         this.cardList.clear()
         this.updateView()
     }
-
     list() {
         return Array.from(this.cardList)
     }
-
     updateView() {
         let cardListNode = document.getElementById('multi-card-search')
         while (cardListNode.firstChild) {
@@ -46,7 +40,6 @@ function removeMultiCardSearchCard(card) {
     multiCardSearch.remove(card)
     getDeckWithCards(multiCardSearch.list())
 }
-
 function getDeckWithCards(cards) {
     fetch(`https://api.krcg.org/deck`, {
         method: "POST",
