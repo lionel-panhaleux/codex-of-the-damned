@@ -187,7 +187,7 @@ function displayCard(data, push) {
 }
 function getCardByName(card_name, push = false) {
     fetch(
-        encodeURI(`http://127.0.01:8000/card/${card_name.replace("/", "")}`),
+        encodeURI(`https://api.krcg.org/card/${card_name.replace("/", "")}`),
         {
             method: "GET",
             headers: { Accept: "application/json" },
