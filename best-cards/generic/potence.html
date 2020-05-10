@@ -1,150 +1,157 @@
 <!DOCTYPE html>
 <html lang="en-GB">
-<head>
-	<meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <meta property="og:image" content="https://codex-of-the-damned.org/codex.jpg"/>
-    <meta name="description" content="Vampire: the Eternal Struggle (VTES) discipline: Potence">
-    <link rel="stylesheet" type="text/css" href="../../base.css"/>
-    <link rel="icon" href="https://codex-of-the-damned.org/icons/vtes.svg">
-    <script>
-        function dC(name) {
-            document.getElementById("card-image").src = '../../card-images/'.concat(name, '.jpg');
-            document.getElementById("card-modal").style.display = "block";
-        }
-    </script>
-    <title>Codex of the Damned</title>
-</head>
-<body>
-<header role="banner">
-    <a href="../../index.html" class="site-logo">
-        <img src="../../icons/vtes.svg" alt="Codex of the Damned">
-        <h1>Codex of the Damned</h1>
-    </a>
-    <nav role="navigation">
-        <ul>
-            <li><a href="../../index.html">Home</a></li>
-            <li><a href="../../strategy/index.html">Strategy</a></li>
-            <li><a href="../../archetypes/index.html">Archetypes</a></li>
-            <li><a href="../../best-cards/index.html">Best Cards</a></li>
-            <li><a href="../../deck-search/index.html">Deck Search</a></li>
-            <li><a href="../../card-search/index.html">Card Search</a></li>
-        </ul>
-    </nav>
-</header>
-<div id="card-modal" class="modal" onclick="this.style.display='none'">
-        <img class="modal-content modal-center" id="card-image">
-</div>
-<article class="article-columns">
-    <h1><i>p</i> Potence</h1>
-    <div class="tip">
-        <p>
-            <i>p</i> provides an excellent combat module.
-        </p>
-    </div>
-    <div class="column">
-        <div class="column-image">
-            <img src="../../card-images/immortalgrapple.jpg"/>
-            <h4>Immortal Grapple</h4>
-            <p class="center-subtitle">played in 155 decks, typically 5-10 copies</p>
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta property="og:image" content="https://codex-of-the-damned.org/codex.jpg" />
+        <meta name="description" content="Vampire: the Eternal Struggle (VTES) discipline: Potence">
+        <link rel="stylesheet" type="text/css" href="../../base.css" />
+        <link rel="icon" href="https://codex-of-the-damned.org/icons/vtes.svg">
+        <script>
+            function dC(name) {
+                document.getElementById("card-image").src = '../../card-images/'.concat(name, '.jpg');
+                document.getElementById("card-modal").style.display = "block";
+            }
+        </script>
+        <title>Codex of the Damned</title>
+    </head>
+
+    <body>
+        <header role="banner">
+            <a href="../../index.html" class="site-logo">
+                <img src="../../icons/vtes.svg" alt="Codex of the Damned">
+                <h1>Codex of the Damned</h1>
+            </a>
+            <nav role="navigation">
+                <ul>
+                    <li><a href="../../index.html">Home</a></li>
+                    <li><a href="../../strategy/index.html">Strategy</a></li>
+                    <li><a href="../../archetypes/index.html">Archetypes</a></li>
+                    <li><a href="../../best-cards/index.html">Best Cards</a></li>
+                    <li><a href="../../deck-search/index.html">Deck Search</a></li>
+                    <li><a href="../../card-search/index.html">Card Search</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div id="card-modal" class="modal" onclick="this.style.display='none'">
+            <img class="modal-content modal-center" id="card-image">
         </div>
-        <p>
-            One of the few combat cards that can counter <em>combat ends</em>,
-            it also prevents the use of weapons and dodges.
-            At <i>P</i>, it even gives a press, which can be useful offensively as well as defensively.
-        </p>
-    </div>
-    <div class="column">
-        <div class="column-image">
-            <img src="../../card-images/disarm.jpg"/>
-            <h4>Disarm</h4>
-            <p class="center-subtitle">played in 102 decks, typically 2-4 copies</p>
-        </div>
-        <p>
-            Given the damage potential of <i>p</i>, it can be used after a round of combat more often than not.
-            This is a good tool to disable a cumbersome vampire.
-            When combined with <i>c</i> additional strikes or <i>f</i> prevention,
-            it is even easier to play.
-        </p>
-    </div>
-    <div class="column">
-        <div class="column-image">
-            <img src="../../card-images/tornsignpost.jpg"/>
-            <h4>Torn Signpost</h4>
-            <p class="center-subtitle">played in 99 decks, typically 4-9 copies</p>
-        </div>
-        <p>
-            The bread and butter of a majority of <i>p</i> combat modules,
-            it provides +2 damage at no cost and works well with additional strikes
-            as well as presses.
-        </p>
-    </div>
-    <div class="column">
-        <div class="column-image">
-            <img src="../../card-images/preternaturalstrength.jpg"/>
-            <h4>Preternatural Strength</h4>
-            <p class="center-subtitle">played in 64 decks, typically 1-3 copies</p>
-        </div>
-        <p>
-            A nice alternative to <span class="card" onclick="dC('tornsignpost')">Torn Signpost</span>
-            when one want to save some card slots in a deck.
-        </p>
-    </div>
-    <div class="column">
-        <div class="column-image">
-            <img src="../../card-images/heroicmight.jpg"/>
-            <h4>Heroic Might</h4>
-            <p class="center-subtitle">played in 51 decks, typically 1-3 copies</p>
-        </div>
-        <p>
-            A stronger but more expansive version of
-            <span class="card" onclick="dC('preternaturalstrength')">Preternatural Strength</span>.
-            Depending on the deck, one or the other might be better.
-        </p>
-    </div>
-    <div class="column">
-        <div class="column-image">
-            <img src="../../card-images/ironglare.jpg"/>
-            <h4>Iron Glare</h4>
-            <p class="center-subtitle">played in 45 decks, typically 2-6 copies</p>
-        </div>
-        <p>
-            A bleed modifier available to <i>PR</i> decks.
-            It is better than <span class="card" onclick="dC('aireofelation')">Aire of Elation</span>
-            for non-Toreador decks, as it does not cost a blood.
-            The alternate use for some votes at inferior can come in handy if the deck has some political actions.
-        </p>
-    </div>
-    <div class="column">
-        <div class="column-image">
-            <img src="../../card-images/slam.jpg"/>
-            <h4>Slam</h4>
-            <p class="center-subtitle">played in 44 decks, typically 1-5 copies</p>
-        </div>
-        <p>
-            A good strike by itself, the maneuver is useful for pure <i>p</i> modules
-            that do not have better options for maneuvers.
-        </p>
-    </div>
-    <div class="column">
-        <div class="column-image">
-            <img src="../../card-images/thrownsewerlid.jpg"/>
-            <h4>Thrown Sewer Lid</h4>
-            <p class="center-subtitle">played in 36 decks, typically 1-6 copies</p>
-        </div>
-        <p>
-            An excellent long range strike, it can also be used as an alternative against long range combat modules
-            In this case however, not too many copies can be included as it can jam the hand.
-            The press at superior <i>P</i> is a nice plus.
-        </p>
-    </div>
-</article>
-</body>
-<footer>
-    <nav role="navigation">
-        <a class="prev" href="obfuscate.html">Obfuscate</a>
-        <a href="../index.html">Best Cards</a>
-        <a class="next" href="presence.html">Presence</a>
-    </nav>
-</footer>
+        <article class="article-columns">
+            <h1><i>p</i> Potence</h1>
+            <div class="tip">
+                <p>
+                    <i>p</i> provides an excellent combat module.
+                </p>
+            </div>
+            <div class="column">
+                <div class="column-image">
+                    <img src="../../card-images/immortalgrapple.jpg" />
+                    <h4>Immortal Grapple</h4>
+                    <p class="center-subtitle">played in 155 decks, typically 5-10 copies</p>
+                </div>
+                <p>
+                    One of the few combat cards that can counter <em>combat ends</em>,
+                    it also prevents the use of weapons and dodges.
+                    At <i>P</i>, it even gives a press, which can be useful offensively as well as defensively.
+                </p>
+            </div>
+            <div class="column">
+                <div class="column-image">
+                    <img src="../../card-images/disarm.jpg" />
+                    <h4>Disarm</h4>
+                    <p class="center-subtitle">played in 102 decks, typically 2-4 copies</p>
+                </div>
+                <p>
+                    Given the damage potential of <i>p</i>, it can be used after a round of combat more often than not.
+                    When combined with <i>c</i> additional strikes or <i>f</i> prevention,
+                    it allows to defeat even the most powerful combattants.
+                </p>
+            </div>
+            <div class="column">
+                <div class="column-image">
+                    <img src="../../card-images/tornsignpost.jpg" />
+                    <h4>Torn Signpost</h4>
+                    <p class="center-subtitle">played in 99 decks, typically 4-9 copies</p>
+                </div>
+                <p>
+                    The bread and butter of a majority of <i>p</i> combat modules,
+                    it provides +2 damage at no cost and works well with additional strikes
+                    as well as presses.
+                </p>
+            </div>
+            <div class="column">
+                <div class="column-image">
+                    <img src="../../card-images/preternaturalstrength.jpg" />
+                    <h4>Preternatural Strength</h4>
+                    <p class="center-subtitle">played in 64 decks, typically 1-3 copies</p>
+                </div>
+                <p>
+                    A nice alternative to <span class="card" onclick="dC('tornsignpost')">Torn Signpost</span>
+                    when one want to save some card slots in a deck.
+                    As it is an action though, it can always be blocked.
+                </p>
+            </div>
+            <div class="column">
+                <div class="column-image">
+                    <img src="../../card-images/heroicmight.jpg" />
+                    <h4>Heroic Might</h4>
+                    <p class="center-subtitle">played in 51 decks, typically 1-3 copies</p>
+                </div>
+                <p>
+                    A stronger but more expensive version of
+                    <span class="card" onclick="dC('preternaturalstrength')">Preternatural Strength</span>, that
+                    can also mitigate the issue of ranged combat modules.
+                    Depending on the deck, one or the other might be better.
+                </p>
+            </div>
+            <div class="column">
+                <div class="column-image">
+                    <img src="../../card-images/ironglare.jpg" />
+                    <h4>Iron Glare</h4>
+                    <p class="center-subtitle">played in 45 decks, typically 2-6 copies</p>
+                </div>
+                <p>
+                    A bleed modifier available to <i>PR</i> decks.
+                    It is better than <span class="card" onclick="dC('aireofelation')">Aire of Elation</span>
+                    for non-Toreador decks, as it does not cost a blood.
+                    The alternate use for some votes at inferior can come in handy if the deck has some political
+                    actions.
+                </p>
+            </div>
+            <div class="column">
+                <div class="column-image">
+                    <img src="../../card-images/slam.jpg" />
+                    <h4>Slam</h4>
+                    <p class="center-subtitle">played in 44 decks, typically 1-5 copies</p>
+                </div>
+                <p>
+                    A good strike by itself, the maneuver is useful for pure <i>p</i> modules
+                    that do not have better options for maneuvers.
+                </p>
+            </div>
+            <div class="column">
+                <div class="column-image">
+                    <img src="../../card-images/thrownsewerlid.jpg" />
+                    <h4>Thrown Sewer Lid</h4>
+                    <p class="center-subtitle">played in 36 decks, typically 1-6 copies</p>
+                </div>
+                <p>
+                    An excellent long range strike, it can also be used as an alternative
+                    against long range combat modules.
+                    In this case however, not too many copies can be included as it can jam the hand.
+                    The press at superior <i>P</i> is a nice plus, especially against a crippling
+                    <span class="card" onclick="dC('sniperrifle')">Sniper Rifle</span>.
+                </p>
+            </div>
+        </article>
+    </body>
+    <footer>
+        <nav role="navigation">
+            <a class="prev" href="obfuscate.html">Obfuscate</a>
+            <a href="../index.html">Best Cards</a>
+            <a class="next" href="presence.html">Presence</a>
+        </nav>
+    </footer>
+
 </html>
