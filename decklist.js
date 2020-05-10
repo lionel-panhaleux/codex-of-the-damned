@@ -1,18 +1,23 @@
 function dC(name) {
-    document.getElementById("card-image").src = '../card-images/'.concat(name, '.jpg');
-    document.getElementById("card-prev").style.display = "none";
-    document.getElementById("card-next").style.display = "none";
-    document.getElementById("card-modal").style.display = "block";
+    document.getElementById("card-image").src = "../card-images/".concat(
+        name,
+        ".jpg"
+    )
+    document.getElementById("card-prev").style.display = "none"
+    document.getElementById("card-next").style.display = "none"
+    document.getElementById("card-modal").style.display = "block"
 }
 function dCi(i) {
     console.log(`dCi ${i}`)
     const card = document.getElementById(`card-${i}`)
-    if (!card) { return }
+    if (!card) {
+        return
+    }
     var name = card.textContent.replace("™ ", "(TM) ").toLowerCase()
     if (name.startsWith("the ")) {
         name = name.substr(4, name.length) + "the"
     }
-    name = name.replace(/\s|,|\.|-|—|'|:|\(|\)|"|!/g, "")
+    name = name.replace(/\s|,|\.|-|—|'|:|\(|\)|"|\/|!/g, "")
     name = name.replace(/ö|ó/g, "o") // Rötschreck, Dónal
     name = name.replace(/é|ë|è/g, "e") // Céleste, Gaël, Père
     name = name.replace(/œ/g, "oe") // Cœur
@@ -21,7 +26,10 @@ function dCi(i) {
     name = name.replace(/í|î/g, "i") // Día, Maître
     name = name.replace(/ñ/g, "n") // Montaña
     name = name.replace(/ü|ú/g, "u") // Powerbase: Zürich, Jesús
-    document.getElementById(`card-image`).src = '../card-images/'.concat(name, '.jpg');
+    document.getElementById(`card-image`).src = "../card-images/".concat(
+        name,
+        ".jpg"
+    )
     var modal = document.getElementById("card-modal")
     for (const c of modal.classList) {
         if (c.startsWith("modal-card-")) {
@@ -29,8 +37,8 @@ function dCi(i) {
         }
     }
     modal.classList.add(`modal-card-${i}`)
-    document.getElementById("card-prev").style.display = "block";
-    document.getElementById("card-next").style.display = "block";
+    document.getElementById("card-prev").style.display = "block"
+    document.getElementById("card-next").style.display = "block"
     modal.style.display = "block"
     modal.focus()
 }
@@ -51,10 +59,12 @@ function nextCard(event) {
 }
 function modalKeydown(event) {
     event.stopPropagation()
-    event.preventDefault();
-    if (event.keyCode === 40) { // arrow DOWN
+    event.preventDefault()
+    // arrow DOWN
+    if (event.keyCode === 40) {
         dCi(cardIndex(event.target) + 1)
-    } else if (event.keyCode === 38) { // arrow UP
+        // arrow UP
+    } else if (event.keyCode === 38) {
         dCi(cardIndex(event.target) - 1)
     }
 }
@@ -79,8 +89,13 @@ function removeComments() {
 }
 function displayDeck(data) {
     removeComments()
-    document.getElementById("deck-link").textContent = wrapText(data["name"], 25)
-    document.getElementById("deck-link").href = `http://www.vekn.fr/decks/twd.htm#${data["twda_id"]}`
+    document.getElementById("deck-link").textContent = wrapText(
+        data["name"],
+        25
+    )
+    document.getElementById(
+        "deck-link"
+    ).href = `http://www.vekn.fr/decks/twd.htm#${data["twda_id"]}`
     document.getElementById("deck-header").innerHTML = [
         wrapText(data["player"], 40),
         wrapText(data["event"], 40),
@@ -88,16 +103,26 @@ function displayDeck(data) {
         data["date"],
         data["players_count"] + " players",
     ].join("<br/>")
-    document.getElementById("crypt-header").textContent = `Crypt (${data["crypt"]["count"]})`
+    document.getElementById(
+        "crypt-header"
+    ).textContent = `Crypt (${data["crypt"]["count"]})`
     var cards = []
-    data["crypt"]["cards"].forEach((value, index) => { cards.push(cardElement(value, index)) })
+    data["crypt"]["cards"].forEach((value, index) => {
+        cards.push(cardElement(value, index))
+    })
     document.getElementById("crypt-list").innerHTML = cards.join("\n")
-    document.getElementById("library-header").textContent = `Library (${data["library"]["count"]})`
+    document.getElementById(
+        "library-header"
+    ).textContent = `Library (${data["library"]["count"]})`
     var offset = cards.length
     var cards = new Array()
     for (const section of data["library"]["cards"]) {
-        cards.push(`<li><h4>— ${section["type"]} (${section["count"]}) —</h4></li>`)
-        section["cards"].forEach((value, index) => { cards.push(cardElement(value, offset + index)) })
+        cards.push(
+            `<li><h4>— ${section["type"]} (${section["count"]}) —</h4></li>`
+        )
+        section["cards"].forEach((value, index) => {
+            cards.push(cardElement(value, offset + index))
+        })
         offset += section["cards"].length
     }
     document.getElementById("library-list").innerHTML = cards.join("\n")
@@ -112,12 +137,3 @@ function displayDeck(data) {
     }
     document.getElementById("decklist").style.display = "block"
 }
-
-// window.onload = function () {
-//     document.getElementById("card-modal").addEventListener("keydown", modalKeydown)
-//     document.getElementById("card-prev").addEventListener("click", prevCard)
-//     document.getElementById("card-next").addEventListener("click", nextCard)
-//     autocomplete(document.getElementById("card_name"))
-//     displayDeckFromURL()
-//     window.onpopstate = displayDeckFromURL
-// }

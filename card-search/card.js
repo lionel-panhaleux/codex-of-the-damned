@@ -3,6 +3,7 @@ function clearResults() {
     document.getElementById("ruling-submit-tooltip").style.display = "none"
     document.getElementById("rF_submit").disabled = false
     document.getElementById("result-rulings-div").innerHTML = "<h3>Rulings</h3>"
+    document.getElementById("result-message").innerHTML = ""
     document.getElementById("result-image").src = ""
     document.getElementById("card-title").textContent = ""
     document.getElementById("card-text").innerHTML = ""
@@ -12,7 +13,7 @@ function getCardImageName(name) {
     if (name.startsWith("the ")) {
         name = name.substr(4, name.length) + "the"
     }
-    name = name.replace(/\s|,|\.|-|—|'|:|\(|\)|"|!/g, "")
+    name = name.replace(/\s|,|\.|-|—|'|:|\(|\)|"|\/|!/g, "")
     name = name.replace(/ö|ó/g, "o") // Rötschreck, Dónal
     name = name.replace(/é|ë|è/g, "e") // Céleste, Gaël, Père
     name = name.replace(/œ/g, "oe") // Cœur
