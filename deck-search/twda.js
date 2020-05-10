@@ -23,7 +23,8 @@ class MultiCardSearch {
           cardListNode.removeChild(cardListNode.firstChild)
         }
         for (let card of this.cardList.values()) {
-            let cardNode = document.createElement('li')
+            let cardNode = document.createElement('span')
+            cardNode.setAttribute("class", "multi-card-search-card")
             cardNode.textContent = `${card}`
             cardNode.addEventListener("click", function (e) {
                 removeMultiCardSearchCard(card)
