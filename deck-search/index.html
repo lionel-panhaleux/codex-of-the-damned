@@ -1,85 +1,90 @@
 <!DOCTYPE html>
 <html lang="en-GB">
-<head>
-	<meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <meta property="og:image" content="https://codex-of-the-damned.org/codex.jpg"/>
-    <meta name="description" content="Vampire: the Eternal Struggle (VTES) Tournament Winning Deck Archive (TWDA)">
-    <link rel="stylesheet" type="text/css" href="../base.css"/>
-    <link rel="icon" href="https://codex-of-the-damned.org/icons/vtes.svg">
-    <script>
-        function dC(name) {
-            document.getElementById("card-image").src = '../card-images/'.concat(name, '.jpg');
-            document.getElementById("card-modal").style.display = "block";
-        }
-    </script>
-    <script src="../decklist.js"></script>
-    <script src="twda.js"></script>
-    <title>Deck Search</title>
-</head>
-<body>
-<header role="banner">
-    <a href="../index.html" class="site-logo">
-        <img src="../icons/vtes.svg" alt="Codex of the Damned">
-        <h1>Codex of the Damned</h1>
-    </a>
-    <nav role="navigation">
-        <ul>
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="../strategy/index.html">Strategy</a></li>
-            <li><a href="../archetypes/index.html">Archetypes</a></li>
-            <li><a href="../best-cards/index.html">Best Cards</a></li>
-            <li><a href="../deck-search/index.html">Deck Search</a></li>
-            <li><a href="../card-search/index.html">Card Search</a></li>
-        </ul>
-    </nav>
-</header>
-<div id="card-modal" class="modal" onclick="this.style.display='none'" tabindex="-1">
-    <div id=card-prev class="modal-nav">&#xf077</div>
-    <img class="modal-content" id="card-image"/>
-    <div id=card-next class="modal-nav">&#xf078</div>
-</div>
-<article>
-    <h1>Deck Search</h1>
-    <p>
-        This is an interactive interface to the
-        <a target="_blank" href="http://www.vekn.fr/decks/twd.htm">Tournament Winning Deck Archive (TWDA)</a>
-        provided by VEKN. Type a card name to search all winning deck with it since 2008.
-    </p>
-    <form id="card-form" autocomplete="off">
-        <div class="autocomplete">
-            <input type="text" id="card_name" placeholder="Card Name" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta property="og:image" content="https://codex-of-the-damned.org/codex.jpg" />
+        <meta name="description" content="Vampire: the Eternal Struggle (VTES) Tournament Winning Deck Archive (TWDA)">
+        <link rel="stylesheet" type="text/css" href="../base.css" />
+        <link rel="icon" href="https://codex-of-the-damned.org/icons/vtes.svg">
+        <script>
+            function dC(name) {
+                document.getElementById("card-image").src = '../card-images/'.concat(name, '.jpg');
+                document.getElementById("card-modal").style.display = "block";
+            }
+        </script>
+        <script src="../decklist.js"></script>
+        <script src="twda.js"></script>
+        <title>Deck Search</title>
+    </head>
+
+    <body>
+        <header role="banner">
+            <a href="../index.html" class="site-logo">
+                <img src="../icons/vtes.svg" alt="Codex of the Damned">
+                <h1>Codex of the Damned</h1>
+            </a>
+            <nav role="navigation">
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../strategy/index.html">Strategy</a></li>
+                    <li><a href="../archetypes/index.html">Archetypes</a></li>
+                    <li><a href="../best-cards/index.html">Best Cards</a></li>
+                    <li><a href="../deck-search/index.html">Deck Search</a></li>
+                    <li><a href="../card-search/index.html">Card Search</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div id="card-modal" class="modal" onclick="this.style.display='none'" tabindex="-1">
+            <div id=card-prev class="modal-nav">&#xf077</div>
+            <img class="modal-content" id="card-image" />
+            <div id=card-next class="modal-nav">&#xf078</div>
         </div>
-        <div class="multi-card-search" id="multi-card-search"></div>
-        <input type="button" class="clear-search-btn" value="Clear" onclick="clearMultiCardSearch()"/>
-    </form>
-    <div class="result-message" id="result-message"></div>
-    <div class="results">
-    <table>
-    <tbody id="results">
-    </tbody>
-    </table>
-    </div>
-    <div id="decklist" class="decklist" style="display: none">
-        <h2 id="deck-name"><a id="deck-link" href="http://example.com"></a></h2>
-        <p id="deck-header"></p>
-        <h3 id="crypt-header"></h3>
-        <ul id="crypt-list">
-        </ul>
-        <h3 id="library-header"></h3>
-        <ul id="library-list">
-        </ul>
-    </div>
-    <h2 id="comments-title" style="display: none">Comments</h2>
-    <div id="comments" class="comments">
-    </div>
-</article>
-</body>
-<footer>
-    <nav role="navigation">
-        <a class="prev" href="../best-cards/index.html">Best Cards</a>
-        <a href="../index.html">Home</a>
-        <a class="next" href="../card-search/index.html">Card Search</a>
-    </nav>
-</footer>
+        <article>
+            <h1>Deck Search</h1>
+            <p>
+                This is an interactive interface to the
+                <a target="_blank" href="http://www.vekn.fr/decks/twd.htm">Tournament Winning Deck Archive (TWDA)</a>
+                provided by VEKN. Type a card name to search all winning deck with it since 2008.
+            </p>
+            <form id="card-form" autocomplete="off">
+                <div class="autocomplete">
+                    <input type="text" id="card_name" placeholder="Card Name" autocomplete="off" autocorrect="off"
+                        autocapitalize="off" spellcheck="false" />
+                </div>
+                <div class="multi-card-search" id="multi-card-search"></div>
+                <input type="button" id="clear-search-btn" class="clear-search-btn" value="Clear"
+                    onclick="clearMultiCardSearch()" />
+            </form>
+            <div class="result-message" id="result-message"></div>
+            <div class="results">
+                <table>
+                    <tbody id="results">
+                    </tbody>
+                </table>
+            </div>
+            <div id="decklist" class="decklist" style="display: none">
+                <h2 id="deck-name"><a id="deck-link" href="http://example.com"></a></h2>
+                <p id="deck-header"></p>
+                <h3 id="crypt-header"></h3>
+                <ul id="crypt-list">
+                </ul>
+                <h3 id="library-header"></h3>
+                <ul id="library-list">
+                </ul>
+            </div>
+            <h2 id="comments-title" style="display: none">Comments</h2>
+            <div id="comments" class="comments">
+            </div>
+        </article>
+    </body>
+    <footer>
+        <nav role="navigation">
+            <a class="prev" href="../best-cards/index.html">Best Cards</a>
+            <a href="../index.html">Home</a>
+            <a class="next" href="../card-search/index.html">Card Search</a>
+        </nav>
+    </footer>
+
 </html>

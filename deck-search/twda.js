@@ -4,6 +4,7 @@ class MultiCardSearch {
     }
     add(card) {
         this.cardList.add(card)
+        document.getElementById("card_name").value = ""
         this.updateView()
     }
     remove(card) {
@@ -18,18 +19,28 @@ class MultiCardSearch {
         return Array.from(this.cardList)
     }
     updateView() {
-        let cardListNode = document.getElementById('multi-card-search')
+        let cardListNode = document.getElementById("multi-card-search")
         while (cardListNode.firstChild) {
-          cardListNode.removeChild(cardListNode.firstChild)
+            cardListNode.removeChild(cardListNode.firstChild)
         }
         for (let card of this.cardList.values()) {
-            let cardNode = document.createElement('span')
+            let cardNode = document.createElement("span")
             cardNode.setAttribute("class", "multi-card-search-card")
             cardNode.textContent = `${card}`
             cardNode.addEventListener("click", function (e) {
                 removeMultiCardSearchCard(card)
             })
             cardListNode.append(cardNode)
+        }
+        if (this.cardList.size > 1) {
+            document.getElementById("clear-search-btn").style.display = "block"
+        } else {
+            document.getElementById("clear-search-btn").style.display = "none"
+        }
+        if (this.cardList.size > 0) {
+            getDeckWithCards(this.list())
+        } else {
+            clearSearch()
         }
     }
 }
@@ -38,8 +49,8 @@ var multiCardSearch = new MultiCardSearch()
 
 function removeMultiCardSearchCard(card) {
     multiCardSearch.remove(card)
-    getDeckWithCards(multiCardSearch.list())
 }
+
 function getDeckWithCards(cards) {
     fetch(`https://api.krcg.org/deck`, {
         method: "POST",
@@ -145,7 +156,6 @@ function displayCompletion(input, items_list, data) {
             input.value = this.textContent
             closeAllLists(input)
             multiCardSearch.add(input.value)
-            getDeckWithCards(multiCardSearch.list())
         })
         items_list.appendChild(b)
     }
@@ -170,7 +180,6 @@ function fetchCompletion(input, items_list, text) {
 }
 function clearMultiCardSearch() {
     multiCardSearch.clear()
-    document.getElementById("card_name").value = ""
     clearSearch()
 }
 function clearSearch() {
@@ -215,7 +224,6 @@ function autocomplete(input) {
                 x[currentFocus].click()
             }
             multiCardSearch.add(input.value)
-            getDeckWithCards(multiCardSearch.list())
         } else if (e.keyCode === 8 || e.keyCode === 46) {
             // DELETE or BACKSPACE
             doComplete()
@@ -252,7 +260,7 @@ function displayDeckFromURL() {
     if (urlParams.has("twda_id")) {
         getDeckByID(null, urlParams.get("twda_id"))
     } else {
-        clearSearch()
+        clearMultiCardSearch()
     }
 }
 window.onload = function () {
