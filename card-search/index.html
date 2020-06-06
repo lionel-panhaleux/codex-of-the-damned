@@ -1,167 +1,156 @@
 <!DOCTYPE html>
 <html lang="en-GB">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta
-      property="og:image"
-      content="https://codex-of-the-damned.org/codex.jpg"
-    />
-    <meta name="description" content="Official card text and rulings" />
-    <link rel="stylesheet" type="text/css" href="../base.css" />
-    <link rel="icon" href="https://codex-of-the-damned.org/icons/vtes.svg" />
-    <script>
-      function dC(name) {
-        document.getElementById("card-image").src = "../card-images/".concat(
-          name,
-          ".jpg"
-        );
-        document.getElementById("card-modal").style.display = "block";
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta property="og:image" content="https://codex-of-the-damned.org/codex.jpg" />
+  <meta name="description" content="Official card text and rulings" />
+  <link rel="stylesheet" type="text/css" href="../base.css" />
+  <link rel="icon" href="https://codex-of-the-damned.org/icons/vtes.svg" />
+  <script>
+    function dC(name) {
+      document.getElementById("card-image").src = "../card-images/".concat(
+        name,
+        ".jpg"
+      );
+      document.getElementById("card-modal").style.display = "block";
+    }
+    function toggleRulingForm() {
+      let ruling = document.getElementById("ruling-form");
+      if (ruling.style.display == "none") {
+        ruling.style.display = "block";
+      } else {
+        ruling.style.display = "none";
       }
-      function toggleRulingForm() {
-        let ruling = document.getElementById("ruling-form");
-        if (ruling.style.display == "none") {
-          ruling.style.display = "block";
-        } else {
-          ruling.style.display = "none";
-        }
-      }
-    </script>
-    <script src="card.js"></script>
-    <title>VtES card search</title>
-  </head>
-  <body>
-    <header role="banner">
-      <a href="../index.html" class="site-logo">
-        <img src="../icons/vtes.svg" alt="Codex of the Damned" />
-        <h1>Codex of the Damned</h1>
-      </a>
-      <nav role="navigation">
-        <ul>
-          <li><a href="../index.html">Home</a></li>
-          <li><a href="../strategy/index.html">Strategy</a></li>
-          <li><a href="../archetypes/index.html">Archetypes</a></li>
-          <li><a href="../best-cards/index.html">Best Cards</a></li>
-          <li><a href="../deck-search/index.html">Deck Search</a></li>
-          <li><a href="../card-search/index.html">Card Search</a></li>
-        </ul>
-      </nav>
-    </header>
-    <div id="card-modal" class="modal" onclick="this.style.display='none'">
-      <img class="modal-content" id="card-image" />
-    </div>
-    <article>
-      <h1>Card Search</h1>
-      <p>
-        Official cards text provided by
-        <a target="_blank" href="http://www.vekn.net/card-lists">VEKN</a>. All
-        rulings give a link to the actual official ruling made by successive
-        Rules Director and Ruling Teams.
-      </p>
-      <form id="card-form" autocomplete="off">
-        <div class="autocomplete">
-          <input
-            type="text"
-            id="card_name"
-            placeholder="Card Name"
-            autocomplete="off"
-            autocorrect="off"
-            autocapitalize="off"
-            spellcheck="false"
-          />
-        </div>
-      </form>
-      <div class="result-message" id="result-message"></div>
-      <div class="card-results" id="results">
-        <div class="result-image-div" id="result-image-div">
-          <img class="result-image" id="result-image" />
-        </div>
-        <div class="result-text" , id="result-text-div">
-          <p class="subtitle" id="card_info"></p>
-          <h3 id="card-title"></h3>
-          <p id="card-text"></p>
-        </div>
-        <div class="result-rulings" , id="result-rulings-div"></div>
-      </div>
-      <div class="tip" id="ruling-submit-tooltip">
-        <h3>Submit a new ruling or a ruling correction</h3>
-        <form id="ruling-form" onsubmit="rulingFormSubmit(); return false">
-          <p>
-            Rulings must provide a link to a message from a Rulings Director on
-            an official board.
-          </p>
-          <p>
-              The Rulings Directors have been:
-              <ul>
-                <li>From 2016-12-04 onward,
-                  <a target="_blank" href="http://www.vekn.net/forum/news-and-announcements/75402-new-inner-circle-vekn-board-of-directors#79470">
-                    Vincent Ripoll (ANK)
-                  </a>
-                </li>
-                <li>From 2011-07-06 onward,
-                  <a target="_blank" href="https://groups.google.com/d/msg/rec.games.trading-cards.jyhad/VzRGZO_Iuto/BjJGRVvJ5Z8J">
-                    Pascal Bertrand (PIB)
-                  </a>
-                </li>
-                <li>From 1998-06-22 onward,
-                  <a target="_blank" href="https://groups.google.com/d/msg/rec.games.trading-cards.jyhad/RIX1tLgOFjg/xKikfSarfd8J">
-                    L. Scott Johnson (LSJ)
-                  </a>
-                </li>
-                <li>From 1994-12-15 onward,
-                  <a target="_blank" href="https://groups.google.com/d/msg/rec.games.trading-cards.jyhad/Dm_gIP3YvUs/qTyKyq2NWv4J">
-                    Thomas R Wylie (TOM)
-                  </a>
-                </li>
-              </ul>
-          </p>
-          <p>
-              The official boards for rulings have been:
-              <ul>
-                <li>From 2011-07-06 onward,
-                  <a target="_blank" href="http://www.vekn.net/forum/rules-questions">
-                    The VEKN Forum
-                  </a>
-                </li>
-                <li>From 2010-12-30 onward,
-                  <a target="_blank" href="https://www.boardgamegeek.com/forum/31522/vampire-eternal-struggle/rules">
-                    The Boardgame Geek Forum
-                  </a>
-                </li>
-                <li>From 1994-12-15 onward,
-                  <a target="_blank" href="https://groups.google.com/forum/#!forum/rec.games.trading-cards.jyhad">
-                    The rec.games.trading-cards.jyhad Google Group
-                  </a>
-                </li>
-              </ul>
-          </p>
-          <p>
-            <strong>Proposed rulings will not be included automatically.</strong>
-            Once submited, your ruling will be reviewed by the Codex and KRCG team,
-            and included in the next release.
-          </p>
-          <input type="text" id="rF_text" placeholder="Ruling text" />
-          <input
-            type="text"
-            id="rF_link"
-            placeholder="http://www.vekn.net/forum/rules-questions/..."
-          />
-          <input type="submit" id="rF_submit" value="Submit" />
-          <output
-            name="rF_result"
-            id="rf-result"
-            for="rF_text rF_link rF_submit"
-          >
-          </output>
-        </form>
-      </div>
-    </article>
-  </body>
-  <footer>
+    }
+  </script>
+  <script src="card.js"></script>
+  <title>VtES card search</title>
+</head>
+
+<body>
+  <header role="banner">
+    <a href="../index.html" class="site-logo">
+      <img src="../icons/vtes.svg" alt="Codex of the Damned" />
+      <h1>Codex of the Damned</h1>
+    </a>
     <nav role="navigation">
-      <a class="prev" href="../deck-search/index.html">Deck Search</a>
-      <a href="../index.html">Home</a>
-      <a class="next" href="../strategy/index.html">Strategy</a>
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../strategy/index.html">Strategy</a></li>
+        <li><a href="../archetypes/index.html">Archetypes</a></li>
+        <li><a href="../best-cards/index.html">Best Cards</a></li>
+        <li><a href="../deck-search/index.html">Deck Search</a></li>
+        <li><a href="../card-search/index.html">Card Search</a></li>
+      </ul>
     </nav>
-  </footer>
+  </header>
+  <div id="card-modal" class="modal" onclick="this.style.display='none'">
+    <img class="modal-content" id="card-image" />
+  </div>
+  <article>
+    <h1>Card Search</h1>
+    <p>
+      Official cards text provided by
+      <a target="_blank" href="http://www.vekn.net/card-lists">VEKN</a>. All
+      rulings give a link to the actual official ruling made by successive
+      Rules Director and Ruling Teams.
+    </p>
+    <form id="card-form" autocomplete="off">
+      <div class="autocomplete">
+        <input type="text" id="card_name" placeholder="Card Name" autocomplete="off" autocorrect="off"
+          autocapitalize="off" spellcheck="false" />
+      </div>
+    </form>
+    <div class="result-message" id="result-message"></div>
+    <div class="card-results" id="results">
+      <div class="result-image-div" id="result-image-div">
+        <img class="result-image" id="result-image" />
+      </div>
+      <div class="result-text" , id="result-text-div">
+        <p class="subtitle" id="card_info"></p>
+        <h3 id="card-title"></h3>
+        <p id="card-text"></p>
+      </div>
+      <div class="result-rulings" , id="result-rulings-div"></div>
+    </div>
+    <div class="tip" id="ruling-submit-tooltip">
+      <h3>Submit a new ruling or a ruling correction</h3>
+      <form id="ruling-form" onsubmit="rulingFormSubmit(); return false">
+        <p>
+          Help improve the Codex: provide an explanation and a link to a message
+          from a Rulings Director.
+        </p>
+        <input type="text" id="rF_text" placeholder="Ruling text" />
+        <input type="text" id="rF_link" placeholder="http://www.vekn.net/forum/rules-questions/..." />
+        <input type="submit" id="rF_submit" value="Submit" />
+        <output name="rF_result" id="rf-result" for="rF_text rF_link rF_submit">
+        </output>
+      </form>
+      <p>
+        <strong>Proposed rulings will not be included automatically.</strong>
+        Once submited, your ruling will be reviewed by the Codex and KRCG team,
+        and included in the next release.
+      </p>
+      <p>
+        The Rulings Directors have been:
+      <ul>
+        <li>From 2016-12-04 onward,
+          <a target="_blank"
+            href="http://www.vekn.net/forum/news-and-announcements/75402-new-inner-circle-vekn-board-of-directors#79470">
+            Vincent Ripoll (ANK)
+          </a>
+        </li>
+        <li>From 2011-07-06 onward,
+          <a target="_blank"
+            href="https://groups.google.com/d/msg/rec.games.trading-cards.jyhad/VzRGZO_Iuto/BjJGRVvJ5Z8J">
+            Pascal Bertrand (PIB)
+          </a>
+        </li>
+        <li>From 1998-06-22 onward,
+          <a target="_blank"
+            href="https://groups.google.com/d/msg/rec.games.trading-cards.jyhad/RIX1tLgOFjg/xKikfSarfd8J">
+            L. Scott Johnson (LSJ)
+          </a>
+        </li>
+        <li>From 1994-12-15 onward,
+          <a target="_blank"
+            href="https://groups.google.com/d/msg/rec.games.trading-cards.jyhad/Dm_gIP3YvUs/qTyKyq2NWv4J">
+            Thomas R Wylie (TOM)
+          </a>
+        </li>
+      </ul>
+      </p>
+      <p>
+        The official boards for rulings have been:
+      <ul>
+        <li>From 2011-07-06 onward,
+          <a target="_blank" href="http://www.vekn.net/forum/rules-questions">
+            The VEKN Forum
+          </a>
+        </li>
+        <li>From 2010-12-30 onward,
+          <a target="_blank" href="https://www.boardgamegeek.com/forum/31522/vampire-eternal-struggle/rules">
+            The Boardgame Geek Forum
+          </a>
+        </li>
+        <li>From 1994-12-15 onward,
+          <a target="_blank" href="https://groups.google.com/forum/#!forum/rec.games.trading-cards.jyhad">
+            The rec.games.trading-cards.jyhad Google Group
+          </a>
+        </li>
+      </ul>
+      </p>
+    </div>
+  </article>
+</body>
+<footer>
+  <nav role="navigation">
+    <a class="prev" href="../deck-search/index.html">Deck Search</a>
+    <a href="../index.html">Home</a>
+    <a class="next" href="../strategy/index.html">Strategy</a>
+  </nav>
+</footer>
+
 </html>
