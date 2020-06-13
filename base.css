@@ -39,6 +39,7 @@ footer a {
 a:hover,
 a:focus {
     color: #007acc;
+    border-color: #007acc;
 }
 header,
 footer {
@@ -563,6 +564,25 @@ form input[type="submit"] {
     font-family: "Courier New", Courier, monospace;
     font-size: small;
     font-weight: 500;
+}
+.sponsor {
+    text-align: left;
+    margin: 2em 0;
+    padding: 0;
+}
+.sponsor a {
+    text-decoration: none;
+    border: 1px;
+    border-radius: 0.5em;
+    border-color: #000000;
+    border-style: solid;
+    padding: 0.5em;
+    margin: 0;
+}
+.sponsor a:hover,
+.sponsor a:focus {
+    color: #007acc;
+    border-color: #007acc;
 }
 .clear {
     padding: 0;
