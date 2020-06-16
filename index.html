@@ -103,13 +103,12 @@
         <div class="warning">
             <h3>On Mac OSX</h3>
             <p>
-                To open the application right-click on the <span class="code">LackeyCCG.app</span>,
-                use <span class="code">Show Package Contents</span> to go to
-                <span class="code">Contents > MacOS</span> and double-click on the
-                <span class="code">LackeyCCG</span> binary to launch it.
-            </p>
-            <p>
-                You can create a link to this internal binary in order to launch the game more easily.
+                The system's security prevents the Application to run properly:
+                instead of launching, it takes you to a web page telling you you're missing a font.
+                To fix it, open a Terminal and type the following command:
+                <span class="code">xattr -dr com.apple.quarantine /Applications/LackeyCCG</span>.
+                Replace the last part with the path of your LackeyCCG folder
+                if you did not put it in the Applications folder.
             </p>
         </div>
         <p>
