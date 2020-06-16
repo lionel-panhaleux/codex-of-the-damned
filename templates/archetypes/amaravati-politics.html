@@ -1,0 +1,96 @@
+{% extends "archetypes/_layout.html" %}
+{% import "archetypes/_layout-erratum.html" as erratum %}
+
+{% block archetype_name %}
+<h1><img src="{{ url_for('static', filename='img/icons/clan-assamite.svg') }}">Amaravati Politics</h1>
+{% endblock %}
+
+{% block archetype %}
+<h2>Highlights</h2>
+<p>
+    This is a <em>breed & boon</em> political deck using
+    {{ card("Amaravati") }} as a star for his ability, then creating
+    a swarm of Assamite with {{ card("The Embrace") }} and
+    {{ card("Web of Knives Recruit") }}, bloating with {{ card("Consanguineous Boon") }} and
+    {{ card("Haqim's Law: Leadership") }}.
+</p>
+<p>
+    The deck has a rather slow build-up but a high bloat that makes him sturdy. Furthermore, it delivers
+    consistent pool damage with votes on one hand
+    ({{ card("Reckless Agitation") }} and
+    {{ card("Kine Resources Contested") }})
+    and bleed actions on the other hand
+    (either naked bleeds or with the {{ card("Loss") }} action).
+</p>
+<p>
+    The deck has a strong stealth as <i>O</i> is one of his core disciplines.
+</p>
+<h2>Tips & Tricks</h2>
+<p>
+    During the first half of the game, the deck should focus on breeding and bloating, surviving its predator.
+    {{ card("Heart of Nizchetus") }} must come in play as
+    early as possible, in order to cycle the aggressive actions foe the time being, and
+    {{ card("Information Highway") }} can speed up this first phase.
+</p>
+<p>
+    Once a dozen Assamite are out, aggressive votes are used to destroy the prey's pool.
+    <{{ card("The Sargon Fragment") }} can be used to fetch
+    {{ card("Reckless Agitation") }} or
+    {{ card("Loss") }} back from the ash heap.
+</p>
+<p>
+    {{ card("Amaravati") }} should be well protected, using
+    {{ card("Yoruba Shrine") }} and
+    {{ card("Direct Intervention") }} or sacrificing neonates
+    to counter rush actions.
+</p>
+<p>
+    {{ card("Alamut") }} should be resplenished as much as possible.
+    Vampires with <i>o</i> are supposed to get some bleed through (even for 1 pool) to get tokens on it fast.
+</p>
+<h2>Variants</h2>
+<p>
+    Regarding the decklist example, some other cards can been included:
+    <li>
+        {{ card("The Uncoiling") }} to defend against
+        {{ card("Scourge of the Enochians") }}, a common
+        counter against breed decks like this one.
+    </li>
+    <li>
+        {{ card("The Khabar: Community") }} to help get the
+        neonates bleed through.
+    </li>
+    <li>
+        {{ card("Perfectionist") }} and/or
+        {{ card("The Coven") }} to help get some blood back on
+        {{ card("Amaravati") }}.
+    </li>
+    <li>
+        Some {{ card("Deflection") }} and
+        {{ card("Black Sunrise") }} to bump up the defence a bit.
+    </li>
+</p>
+<p>
+    There is a <strong>Laibon</strong> variant to this deck, using more copies of
+    {{ card("Olugbenga") }} and
+    {{ card("Kamau Jafari") }}, then replacing
+    {{ card("The Embrace") }} by the cheaper
+    {{ card("Bamba") }}.
+    This also allows the use of some good Laibon cards like
+    {{ card("Kduva's Mask") }} and
+    {{ card("The Secret Must Be Kept") }}.
+	{{ link("/deck-search", _("Riccardo Fabiani's deck"), twda_id="2011italyqtgenova") }}
+    at the 2011 Italian Grand Prix is a good example.
+</p>
+{% endblock %}
+
+{% block script %}
+<script>
+window.onload = function () {
+    document.getElementById("card-modal").addEventListener("keydown", modalKeydown)
+    document.getElementById("card-prev").addEventListener("click", prevCard)
+    document.getElementById("card-next").addEventListener("click", nextCard)
+    displayDeck({"author":null,"comments":"","crypt":{"cards":[{"comments":null,"count":4,"id":"200065","name":"Amaravati"},{"comments":null,"count":1,"id":"200759","name":"Kashan"},{"comments":null,"count":1,"id":"201078","name":"Olugbenga"},{"comments":null,"count":1,"id":"200559","name":"Hafsa, The Watcher"},{"comments":null,"count":1,"id":"201426","name":"Vardar Vardarian"},{"comments":null,"count":1,"id":"200818","name":"Layla bint-Nadr"},{"comments":null,"count":1,"id":"200748","name":"Kamau Jafari"},{"comments":null,"count":1,"id":"200062","name":"Alu"},{"comments":null,"count":1,"id":"200175","name":"Basir"}],"count":12},"date":"2009-04-25","event":"Living Manse","library":{"cards":[{"cards":[{"comments":null,"count":6,"id":"102113","name":"Vessel"},{"comments":null,"count":4,"id":"100037","name":"Alamut"},{"comments":null,"count":4,"id":"100984","name":"Information Highway"},{"comments":null,"count":2,"id":"100545","name":"Direct Intervention"},{"comments":null,"count":2,"id":"100172","name":"The Black Throne"},{"comments":null,"count":2,"id":"101536","name":"The Rack"},{"comments":null,"count":2,"id":"102201","name":"Yoruba Shrine"},{"comments":null,"count":1,"id":"100444","name":"Creepshow Casino"},{"comments":null,"count":1,"id":"100824","name":"Giant's Blood"}],"count":24,"type":"Master"},{"cards":[{"comments":null,"count":8,"id":"100633","name":"The Embrace"},{"comments":null,"count":6,"id":"100885","name":"Haqim's Law: Leadership"},{"comments":null,"count":6,"id":"101124","name":"Loss"},{"comments":null,"count":4,"id":"102165","name":"Web of Knives Recruit"}],"count":24,"type":"Action"},{"cards":[{"comments":null,"count":8,"id":"100410","name":"Consanguineous Boon"},{"comments":null,"count":4,"id":"101056","name":"Kine Resources Contested"},{"comments":null,"count":4,"id":"101567","name":"Reckless Agitation"},{"comments":null,"count":1,"id":"100065","name":"Ancilla Empowerment"},{"comments":null,"count":1,"id":"100570","name":"Domain Challenge"}],"count":18,"type":"Political Action"},{"cards":[{"comments":null,"count":6,"id":"101125","name":"Lost in Crowds"},{"comments":null,"count":6,"id":"102097","name":"Veil the Legions"},{"comments":null,"count":4,"id":"100617","name":"Elder Impersonation"}],"count":16,"type":"Action Modifier"},{"cards":[{"comments":null,"count":2,"id":"100519","name":"Delaying Tactics"}],"count":2,"type":"Reaction"},{"cards":[{"comments":null,"count":4,"id":"100903","name":"Heart of Nizchetus"},{"comments":null,"count":2,"id":"101681","name":"The Sargon Fragment"}],"count":6,"type":"Equipment"}],"count":90},"name":"Amaravati","place":"Milan, Italy","player":"Gianluca Vindigni","players_count":28,"score":null,"tournament_format":null,"twda_id":"2k9livingmansemi"})
+}
+</script>
+{% endblock %}

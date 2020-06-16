@@ -1,0 +1,375 @@
+{% extends "layout.html" %}
+
+{% block head %}
+{{ super() }}
+<!-- Adding needed scripts -->
+<script src="{{ url_for('static', filename='js/dC.js') }}"></script>
+<script src="{{ url_for('static', filename='js/statistics.js') }}"></script>
+{% endblock %}
+
+{% block content %}
+<h1 id="deck-building">Deck building</h1>
+<p>
+    Over time, a handful of excellent ressources have been created on the subject by the community:
+<ul>
+    <li>
+        <a href="{{ url_for('static', filename='pdf/basic-concepts-in-deck-construction.pdf') }}">Basic Concepts in Deck
+            Construction</a>
+        by <em>Gregory Williams</em>
+    </li>
+    <li>
+        <a href="{{ url_for('static', filename='pdf/strategy-guide-for-n00bs.pdf') }}">Strategy Guide For N00bs:
+            Deckbuilding 101</a>
+        by <em>Kevin Scribner</em>
+    </li>
+    <li><a href="{{ url_for('static', filename='pdf/deckbuilding-theory.pdf') }}">Deckbuilding Theory</a> by <em>Bram
+            Vink</em></li>
+    <li>
+        <a target="_blank" href="https://sites.google.com/site/vtesnewbie/deck-building">Deck Building</a>
+        by <em>VTES Newbie</em>
+    </li>
+    <li>
+        <a target="_blank" href="http://singingvtes.blogspot.com/2010/03/lyrics-of-night-building-deck.html">
+            Lyrics of the Night: Building a Deck
+        </a> by <em>Singing VTES</em>
+    </li>
+    <li>
+        <a target="_blank" href="https://youtu.be/Iw4Md88-PfI">
+            Finnish Politics: A guide to Deck Construction in VTES
+        </a> by <em>Otso Saariluoma</em>
+    </li>
+</ul>
+</p>
+<h2 id="modules-and-density">Modules and density</h2>
+<p>
+    Decks can be broken down in « modules »: group of cards with a similar objective.
+    The percentage of cards each module contains is its density. As the normal hand size is seven,
+    the expectation (<em>ie.</em> the number of cards of the module you can expect in any given hand)
+    is the density time seven.
+</p>
+<p>
+    <strong>Spam</strong> modules have a density over 25% entail an expectation over 1.75: more often than not,
+    two cards of the module in hand. This is a rare distribution,
+    but necessary to continuously play a given card multiple times every turn.
+</p>
+<p>
+    <strong>Strong</strong> modules have a density between 14% and 25% and an expectation between 1 and 1.5:
+    these cards will be used once or twice at each turn.
+    Most decks have one or multiple strong modules, and their strategy can often be identified by checking them.
+</p>
+<p>
+    <strong>Standard</strong> modules have a density between 7% and 14% have an expectation between ½ and 1.
+    They are supposed to be used regularly but not necessarily every turn. Strong and standard modules cards
+    can be discarded when needed, as one can be confident to get another in hand quite soon.
+</p>
+<p>
+    <strong>Tactical</strong> modules have a density below 7% and typically provide specific support.
+    From unique permanents and events to counters or responses to expected counters, they provide build-up power
+    and security. As these cards are drawn sporadically, they are meant to be kept in hand for special cases
+    or immediately discarded if the context is not favourable. In case they might come in handy, they should be
+    kept in hand until needed: the sparse distribution of the module makes sure the cards will not jam the hand.
+</p>
+<div class="tip">
+    <h3>Master module</h3>
+    <p>
+        The Master module density depends on the rotation speed: one want to play one Master card per turn
+        as much as possible, but not more. So the higher the rotation speed, the slimmer the master module density.
+        Hence, the Master cards count stays stable across deck sizes: 12 to 15 Master cards plus, optionally,
+        up to 6 or 7 Trifle.
+    </p>
+    <p>
+        Some decks can use specific cards like {{ card("The Parthenon") }}
+        to get more Master actions and hence play more Master cards in the deck, though:
+        this is the
+        <strong>M</strong>ulti <strong>M</strong>aster <strong>P</strong>hase <strong>A</strong>ctions (MMPA)
+        strategy.
+    </p>
+</div>
+<h2 id="rotation">Rotation</h2>
+<p>
+    Games usually last between 10 to 20 turns and decks are tailored with the peak card rotation speed in mind:
+    the number of cards played on average between one unlock phase and the next,
+    not counting the few first turns of build-up. The deck size should enable a peak rotation during 12 turns.
+    The efficiency of a deck depends on its capacity to maintain an optimal rotation speed throughout the game:
+    being stuck with no relevant card to play is a loosing situation.
+</p>
+<div class="tip">
+    <h3>Deck size examples</h3>
+    <p>
+        60 cards deck have a peak rotation of 5 cards maximum (5 × 12 = 60): in the mid-game it plays one master,
+        three to four minion cards, and maybe a discard. This counts the whole turn, reactions included.
+    </p>
+    <p>
+        90 cards deck have a peak rotation of 7 to 8 cards (90 ∕ 12 = 7.5): in the mid-game it plays one master,
+        up to a full hand of minion cards and maybe a discard.
+    </p>
+</div>
+<p>
+    <strong>Cycling</strong> cards and purposefully increasing the rotation to get more efficient cards
+    is sometimes the only way to keep the rotation fluid.
+    Multiple cards are available to provide good cycling options:
+</p>
+<ul>
+    <li class="card" onclick="dC('dreamsofthesphinx')">Dreams of the Sphinx</li>
+    <li class="card" onclick="dC('barrensthe')">The Barrens</li>
+    <li class="card" onclick="dC('heartofnizchetus')">Heart of Nizchetus</li>
+    <li>
+        {{ card("Fragment of the Book of Nod") }}
+        (need to be defended)
+    </li>
+    <li>
+        {{ card("Powerbase: Los Angeles") }}
+        (need to be defended, best with Anarchs)
+    </li>
+    <li>
+        {{ card("The Admonitions") }}
+        (Sabbat only, best with Black Hand)
+    </li>
+</ul>
+<p>
+    A card that is hard to play can <strong>jam</strong> the hand.
+    Action modifiers, especially restricted stealth cards like
+    {{ card("Forgotten Labyrinth") }},
+    can only be used when the opponent tries to block, so they can jam.
+    On the other hand, action cards like
+    {{ card("Computer Hacking") }}
+    do not usually jam the hand as they can be played as soon as a minion is unlocked and ready to act.
+    A tactical module for card rotation can be played in situations when jamming is expected.
+</p>
+<div class="tip">
+    <h3>Recursion</h3>
+    <p>
+        Even stronger than a good rotation, the <strong>recursion</strong> can be a strong point in a deck:
+        it is the ability to fetch cards from the ash heap and get them back into hand.
+        Only a few cards provide recursion:
+    </p>
+    <ul>
+        <li>
+            {{ card("Ashur Tablets") }} provide an excellent
+            recursion as well as a powerful bloat. They need more than one Master phase action to be really
+            effective, so {{ card("The Parthenon") }} can come in
+            handy. The MMPA archetypes like {{ link("/archetypes/girls-will-find-inner-circle") }}
+            make full use of this card.
+        </li>
+        <li>
+            {{ card("The Sargon Fragment") }} is the only
+            other option open to all, but it is unique and uses up a lot of actions.
+        <li>
+            <img src="{{ url_for('static', filename='/img/icons/clan-giovanni.svg') }}"> have the excellent
+            {{ card("Sudario Refraction") }} and the lesser
+            {{ card("Spiritual Guidance") }}
+        </li>
+        <li>
+            <i>n</i> offers
+            {{ card("Whispers From the Dead") }} and
+            {{ card("Gear Up") }} (Anarchs)
+        </li>
+        <li>
+            {{ card("Garibaldi-Meucci Museum") }}
+            (Unique, Anarchs)
+        </li>
+        <li>
+            {{ card("Drop Point Network") }}
+            (Black Hand)
+        </li>
+        <li>
+            {{ card("Maabara") }} (<img
+                src="{{ url_for('static', filename='/img/icons/clan-harbingers.svg') }}">)
+        </li>
+        <li>
+            {{ card("Unity") }}
+            (<img src="{{ url_for('static', filename='/img/icons/creed-visionary.svg') }}">)
+        </li>
+    </ul>
+    <p>
+        Beyond its obious advantage of fetching just the right card at the right time, a good recursion allows
+        a deck to adapt itself to the context and the table situation.
+    </p>
+</div>
+<h2 id="building-a-deck">Building a deck in practice</h2>
+<h3>1. Theme</h3>
+<p>
+    The first step to build a deck is to choose a theme, a core principle to build upon.
+    Multiple possibilities here:
+<ul>
+    <li><strong>Clan</strong>: the most common theme, just choose a clan.</li>
+    <li><strong>Discipline(s)</strong>: choose one or more disciplines you want to play.</li>
+    <li><strong>Star</strong>: choose a star vampire with powerful disciplines or abilities.</li>
+    <li><strong>Cards combination</strong>: choose a combination of two to four cards you want to play together.</li>
+</ul>
+</p>
+<h3>2. Four strategic pillars</h3>
+<p>
+    The second step, before adding more cards to the deck, is to define the four pillars of the deck strategy:
+<ul>
+    <li><strong>Payload:</strong> how the deck delivers pool damage to its prey.
+        Does it {{ link("/strategy/fundamentals", _("bleed"), _anchor="bleed") }}?
+        Use {{ link("/strategy/fundamentals", _("politics"), _anchor="politics") }}?
+        Some other pool damage device like
+        {{ card("Anarch Revolt") }} or
+        {{ card("Dragonbound") }}?
+    </li>
+    <li>
+        <strong>Delivery system:</strong> how the deck makes sure the payload is delivered.
+        If it bleeds, does it use stealth, block denial or an overwhelming number of actions?
+        If it uses political actions, does it use stealth to get them through? How does it get enough votes?
+        If it uses specific pool damage cards, do they need protection or support to apply their effect?
+    </li>
+    <li>
+        <strong>Defense:</strong> how the deck avoids to lose.
+        {{ link("/strategy/bloat", _("Bloating"), _anchor="bloat") }} is the most generic defense:
+        gaining pool works against all offensive strategies. Most decks use a modicum of bloat,
+        some rely on a heavy bloat as their sole defense.
+        <em>Blocking</em> is the second most generic defense: most offensive strategies use actions.
+        More focused defensive tools are often used against the most widespread offensive strategies:
+        {{ link("/strategy/fundamentals", _("Bounces"), _anchor="bounce") }} or
+        <em>Reduction</em> against bleed,
+        {{ card("Delaying Tactics") }} and
+        {{ card("Poison Pill") }}
+        against politics.
+    </li>
+    <li>
+        <strong>Combat Management:</strong> how the deck deals with minion combats.
+        If it does not plan to block, <em>support allies</em> to block rush actions can be enough.
+        Some decks plan to avoid combat and use
+        {{ link("/strategy/combat", _("combat ends"), _anchor="defense") }} effects when it cannot be avoided.
+        Others plan to use combats to optimize {{ link("/strategy/combat", _("bruise"), _anchor="bruise") }}
+        in their favor.
+    </li>
+</ul>
+</p>
+<h3>3. Cards</h3>
+<p>
+    Now select the crypt and library cards to put in the deck.
+    The minions you select will define the range of disciplines you can use and,
+    symmetrically, the library cards you choose and their requirements will define what minions you want in your crypt.
+</p>
+<p>
+    During this card selection process, only add <strong>one copy of each card</strong> you want to play.
+    Check the <a href="../best-cards/index.html">best cards</a> and the
+    <a href="../deck-search/index.html">deck archive</a> for ideas.
+    If you find tournament winning examples close to your deck list, they may give you ideas about what to include.
+</p>
+<p>
+    At the end you should have <strong>4 to 12 crypt cards and 20 to 40 library cards</strong>.
+    If you have more, it is time to sit back and ponder what is really useful and what should be cut.
+    Consider your four strategic pillars to help you decide:
+    payload is more important than delivery, itself more important than defense, and combat management comes last.
+</p>
+<p class=subtitle>
+    Note at this point you are working in single copies. This means that if you are building a rush combat deck,
+    you should consider removing combat cards before removing a payload card like
+    {{ card("Fame") }}.
+    When adjusting the number of copies on the other hand, no pillar has priority and you may choose
+    to use dozens of copies of the combat cards you kept in the selection and a single
+    {{ card("Fame") }}.
+</p>
+<div class="tip">
+    <h3>Counters</h3>
+    <p>
+        If you can predict that specific archetypes will be a threat, consider including
+        specific counters against them. From {{ card("Fear of Mekhet") }}
+        against Inner Circles to
+        {{ card("Scourge of the Enochians") }} against swarms,
+        including {{ card("Archon Investigation") }}
+        against greedy bleeders, there are a lot of options available and
+        they can transform a losing position into a win.
+    </p>
+    <p>
+        If nothing specific comes in mind, consider the all-purpose counters of the game:
+        {{ card("Direct Intervention") }},
+        {{ card("Dark Influences") }},
+        {{ card("Sudden Reversal") }} or
+        {{ card("Wash") }}.
+    </p>
+</div>
+<h3>4. Card flow</h3>
+<p>
+    Once the skeleton is ready, you can adjust the card flow. First adjust the crypt:
+    use 4 (or more) copies for a star, 3 copies for an especially good minion if he is not mandatory for your play,
+    2 copies for an efficient one and 1 copy for support minions.
+</p>
+<p>
+    Then try to get an idea of the <a href="#rotation">rotation speed</a>:
+    what would a normal turn be in the mid-game (including reactions)?
+    How many minions are acting and reacting and how many cards are used?
+    This will give you the target library size as well as the number of cards you need in each of your modules.
+</p>
+<p>
+    Finally, define <a href="#modules-and-density">modules and their density</a> and adapt the number of copies
+    in each of them to match the desired density, working module by module.
+    Adjusting the master module first may be easier, as its density only depends
+    on the number of master actions you expect to get.
+    For the rest of the deck though, there is no predefined pattern:
+    no strategic pillar has the priority in terms of density.
+    A <em>Stealth & Bleed</em> can typically have two strong module for bleed and stealth,
+    two standard modules for bounce and combat defense, and a tactical module against politics. A <em>Wall</em>
+    deck, on the other hand, can have a spam module for wake & intercept,
+    a standard module for bloat and only a tactical module for the payload.
+</p>
+<p>
+    This little calculator may help you figure out the number of copies you want to include for each card:
+</p>
+<form class="inline-form" id="stat-form-at-least" autocomplete="off"
+    oninput="aL0_result.value = Math.round(atLeastOne(parseInt(aL0_stack.value), parseInt(aL0_copies.value), parseInt(aL0_draws.value)) * 10000) / 100+ ' %'">
+    <fieldset>
+        <legend>Probability to get a specific card</legend>
+        <label for="aL0_stack">cards in deck:</label>
+        <input type="text" id="aL0_stack" placeholder="90" />
+        <label for="aL0_copies">copies of the card:</label>
+        <input type="text" id="aL0_copies" placeholder="4" />
+        <label for="aL0_draws">cards drawn:</label>
+        <input type="text" id="aL0_draws" placeholder="7" />
+        =
+        <output name="aL0_result" for="aL0_stack aL0_copies aL0_draws">0 %</output>
+    </fieldset>
+</form>
+<form class="inline-form" id="stat-form-how-many" autocomplete="off"
+    oninput="hMN_result.value = howManyNeeded(parseInt(hMN_stack.value), parseInt(hMN_draws.value), parseFloat(hMN_expectation.value) / 100) + ' copies'">
+    <fieldset>
+        <legend>Copies needed to get a draw</legend>
+        <label for="hMN_stack">cards in deck:</label>
+        <input type="text" id="hMN_stack" placeholder="90" />
+        <label for="hMN_draws">draws:</label>
+        <input type="text" id="hMN_draws" placeholder="7" />
+        <label for="hMN_expectation">desired probability (%):</label>
+        <input type="text" id="hMN_expectation" placeholder="80" />
+        =
+        <output name="hMN_result" for="hMN_stack hMN_draws hMN_expectation">0 copies</output>
+    </fieldset>
+</form>
+<p class=subtitle>
+    The probability to get a specific card is computed as the cumulated probability (sum) of having 1, 2, ..., n
+    copies of the card.
+    <br />
+    The formula used is \(\sum_{i=1}^{\min\left(d,c\right)}\ \frac{\binom{c}{i}\binom{s-c}{d-i}}{\binom{s}{d}}\),
+    with s: stack, d: draws and c: copies and \(\binom{n}{k}\) the binomial coefficients.
+    <br />
+    To second computation just computes the preceding probability for consecutive values of c.
+</p>
+<div class="tip">
+    <h3>Cycling</h3>
+    <p>
+        If one of your strong module can jam your hand (for example a strong stealth or a strong intercept module),
+        consider adding cycling-oriented cards (<em>cf.</em> the <a href="#rotation">Rotation</a> section).
+    </p>
+    <p>
+        They should not be included blindly though; they can be an obstacle to a deck with no jam issue.
+    </p>
+</div>
+<h3>5. Test and refine</h3>
+<p>
+    Once the first version of the deck list is ready, it should be tested to check if it behaves as expected.
+    Just doing a dozen play simulations alone, playing out the first 3 to 5 turns with no opponents, can help
+    you adapt the card flow a bit.
+    If you have some time at hand, you can use the
+    <a target="_blank" href="{{ url_for('static', filename='pdf/play-test-system.pdf') }}">play test system</a> devised
+    by <em>Paul Johnson</em>
+    to test your deck more thoroughly.
+</p>
+<p>
+    In the end, only real games can help refine a deck. Actual play get you accustomed to a
+    deck strengths and weaknesses. It helps to note the cards cycled or discarded during a game:
+    each card you do not use is a card you should consider removing.
+</p>
+{% endblock %}

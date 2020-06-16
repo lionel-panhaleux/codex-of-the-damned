@@ -1,0 +1,296 @@
+{% extends "layout.html" %}
+
+{% block head %}
+{{ super() }}
+<!-- Adding needed scripts -->
+<script src="{{ url_for('static', filename='js/dC.js') }}"></script>
+{% endblock %}
+
+{% block content %}
+<h1 id="combat">Combat</h1>
+<p>
+    Combat occurs when a block succeeds, but can also be provoked directly using actions like
+    {{ card("Bum’s Rush") }}:
+    Because of this card, other actions with similar effects are commonly called <strong>rush actions</strong>.
+    It also gave its name to an entire archetype: the
+    {{ link("/strategy/archetypes", _("rush decks"), 'rush') }}.
+</p>
+<h2 id="bruise">Bruise</h2>
+<p>
+    Combat does not help reducing the prey's pool, at least not directly.
+    The core principle of combat is <strong>bruise</strong>: reducing its opponents blood amount.
+    It forces the minions to hunt or stay in torpor,
+    seriously reducing {{ link("/strategy/fundamentals", _("A&B"), 'AB') }}.
+    As a bonus, reducing the blood amount on the table means diminishing the effectivness of
+    {{ link("/strategy/bloat", _("leeching"), 'leeching') }} techniques.
+</p>
+<p>
+    So the main focus of any combat module is to improve or prevent bruise, <em>ie.</em> blood consumption.
+</p>
+<h2 id="dealing-damage">Dealing damage</h2>
+<p>
+    On the discipline side, <i>p</i> and <i>h</i> are great at dealing high damage.
+    <i>i</i> has a strong combination with
+    {{ card("Aid from Bats") }} and
+    {{ card("Carrion Crows") }}, giving 3 damages with a press.
+    <i>t</i> has the excellent {{ card("Theft of Vitae") }},
+    which provides a non-preventable 4 blood differential at no cost.
+    Many disciplines give access to aggravated damage options:
+</p>
+<ul>
+    <li>
+        <i>j</i> with {{ card("Wolf Claws") }},
+        {{ card("Claws of the Dead") }},
+        {{ card("Bone Spur") }} and
+        {{ card("Body Flare") }}.
+    </li>
+    <li>
+        <i>v</i> with
+        {{ card("Chriopteran Marauder") }} and
+        {{ card("Breath of the dragon") }}.
+    </li>
+    <li>
+        <i>t</i> with
+        {{ card("Walk of Flame") }},
+        {{ card("Flames of the Netherworld") }}
+        and {{ card("Burst of Sunlight") }}.
+    </li>
+    <li>
+        <i>l</i> with
+        {{ card("Eyes of Unforgiving Heaven") }}
+        and {{ card("Sword of the Righteous") }}.
+    </li>
+    <li>
+        <i>y</i> with
+        {{ card("Flames of the Netherworld") }}
+        and {{ card("Conflagration") }}.
+    </li>
+    <li>
+        <i>q</i> with
+        {{ card("Baal's Bloody Talons") }}
+        and {{ card("Taste of Death") }}.
+    </li>
+    <li>
+        <i>n</i> with {{ card("Breath of Thanatos") }}.
+    </li>
+    <li><i>k</i> with {{ card("Mayaparisatya") }}.</li>
+    <li>
+        <i>w</i> with {{ card("Devil Channel: Hands") }}.
+    </li>
+    <li><i>f</i> with {{ card("Dawn Operation") }}.</li>
+    <li>Gargoyles with {{ card("Raking Talons") }}.</li>
+</ul>
+<div class="tip">
+    <h3>Using aggravated damage</h3>
+    <p>
+        Using aggravated damage while acting is tricky, as the acting minion has to choose <strong>and pay</strong>
+        for his strike before the reacting minion. Cards that make the damage of a strike aggravated, like
+        {{ card("Claws of the Dead") }},
+        are superior in this aspect, as one can wait to see if the reacting minion will play
+        a combat ends or a dodge before using the card.
+    </p>
+    <p>
+        Using aggravated damage on the reacting side is easier. Moreover, it allows the use of
+        {{ card("Rötschreck") }},
+        sending the opponent into torpor whatever he does. The only prerequisite is for the
+        range to be right for the aggravated strike to be able to land in theory.
+    </p>
+</div>
+<p>
+    Apart from dealing more damage each strike, <strong>additional strikes</strong> are a good option to deliver
+    more damage each combat. They are, however, mostly available only for <i>c</i> users, with the notable exceptions
+    of {{ card("Arms of the Abyss") }} (<i>$</i>),
+    {{ card("Devil Channel: Back") }} (<i>w</i>) and
+    {{ card("Octopod") }} (<i>g</i>).
+</p>
+<p>
+    Finally, {{ card("Target Vitals") }} is an excellent option
+    to increase damage, available for every minion at no cost.
+</p>
+<div class="tip">
+    <h3>Weapons</h3>
+    <p>
+        Weapons are also a good way to improve damage.
+        There are a lot of weapons available, here are the most efficient and most played:
+    </p>
+    <ul>
+        <li>
+            {{ card("Weighted Walking Stick") }}:
+            A weapon that can be wielded without losing an action to equip it.
+            It provides a total of three additional damages at no cost, an excellent ratio.
+        </li>
+        <li>
+            {{ card(".44 Magnum") }}:
+            An additional damage each strike, together with a manoeuver to keep the range long an avoid bruise.
+            This is also the best weapon
+            {{ card("Concealed Weapon") }}
+            can get out, thus avoiding to loose an action (and risking interception) to equip with it.
+        </li>
+        <li>
+            {{ card("Ivory Bow") }}:
+            Although unique, 1 pool for an aggravated ranged damage each strike is a bargain.
+        </li>
+        <li>
+            {{ card("Sniper Rifle") }}:
+            Although only useful when blocking, its ability to set the range is an excellent option to avoid bruise.
+        </li>
+        <li>
+            {{ card("Assault Rifle") }}:
+            A stronger version of the {{ card(".44 Magnum") }}.
+            The 5 pool cost is prohibitive, but if it can be reduced
+            by bringing it game using {{ card("Alastor") }},
+            for example, it is one of the strongest weapon of the game.
+        </li>
+        <li>
+            {{ card("Blade of Bellona") }}:
+            An additional damage and optional manoeuver at no cost, a real bargain for
+            <img src="{{ url_for('static', filename='img/icons/clan-salubri-anti.svg') }}">.
+        </li>
+    </ul>
+</div>
+<h2 id="defense">Defense</h2>
+<p>
+    The easiest defense for combats is to avoid the combat altogether using a <em>Strike: Combat Ends</em>,
+    <strong>S:CE</strong> for short. Multiple disciplines give access to this option:
+</p>
+<ul>
+    <li>
+        <i>r</i> with
+        {{ card("Majesty") }},
+        {{ card("Force of Personality") }},
+        {{ card("Catatonic Fear") }},
+        {{ card("Staredown") }} and
+        {{ card("Unholy Penance") }}.
+    </li>
+    <li>
+        <i>j</i> with
+        {{ card("Earth Meld") }},
+        {{ card("Form of Mist") }} and
+        {{ card("Rapid Change") }}.
+    </li>
+    <li>
+        <i>$</i> with
+        {{ card("Oubliette") }} and
+        {{ card("Shadow Body") }}.
+    </li>
+    <li><i>I</i> with {{ card("Flesh Bond") }}.</li>
+    <li><i>O</i> with {{ card("No Trace") }}.</li>
+    <li><i>v</i> with {{ card("Meld with the Land") }}.</li>
+    <li>
+        <i>C</i> with
+        {{ card("Preternatural Evasion") }}.
+    </li>
+    <li>
+        <i>N</i> with
+        {{ card("Spiritual Intervention") }}.
+    </li>
+    <li><i>Z</i> with {{ card("Leapfrog") }}.</li>
+    <li>
+        <i>rs</i> with
+        {{ card("Serpent's Numbing Kiss") }}.
+    </li>
+</ul>
+<p>
+    It is worth noting that {{ card("Flash Grenade") }}
+    is an option for any minion, and also that big capacity vampires have access to <i>d</i>
+    {{ card("Obedience") }} and <i>O</i>
+    {{ card("Mental Maze") }} to avoid combat altogether, although
+    only when reacting to an action.
+</p>
+<div class="tip">
+    <h3>How to deal with Strike: Combat Ends (S:CE)</h3>
+    <p>
+        S:CE are a real issue for combat-focused deck. Some solutions exist to deal with them.
+    </p>
+    <ul>
+        <li>
+            {{ card("NSA Trio") }} is available to everyone but
+            is not an option for <em>rush</em> decks, as their combat may not be the result of a block.
+        </li>
+        <li>
+            Some disciplines have a counter that let them continue the combat after a S:CE:
+            <i>p</i> with {{ card("Immortal Grapple") }},
+            <i>C</i> with {{ card("Psyche!") }},
+            <i>A</i> with
+            {{ card("Telepathic Tracking") }},
+            <i>H</i> with
+            {{ card("Relentless Reaper") }} and
+            <i>CQ</i> with
+            {{ card("Sanguine Entrapment") }}.
+        </li>
+    </ul>
+    <p>
+        Other than that, the only option is to get into enough combats to exhaust the S:CE on the defence side.
+    </p>
+</div>
+<p>
+    Aside from S:CE, <strong>damage prevention</strong> is another important part of combat.
+    It is useful in defence, but also on the offence: reducing the loss of blood
+    improves the bruise ratio, which is the primary focus of combat‑oriented decks.
+    <i>f</i> is the key discipline for damage prevention, and only a few damage prevention cards
+    exist outside this discipline:
+<ul>
+    <li>
+        {{ card("Glancing Blow") }} prevents only one damage,
+        that makes it a viable option only for saving an ally.
+    </li>
+    <li>
+        {{ card("Rockheart") }} and
+        {{ card("Stonestrength") }} (<i>u</i>)
+    </li>
+    <li>{{ card("Rego Motus") }} (<i>t</i>)</li>
+    <li>{{ card("Apparition") }} (<i>k</i>)</li>
+    <li>{{ card("Flesh of Marble") }} (<i>j</i>)</li>
+    <li>{{ card("Horrid Form") }} (<i>V</i>)</li>
+    <li>
+        {{ card("Leathery Hide") }}
+        (<img src="{{ url_for('static', filename='img/icons/clan-gangrel-anti.svg') }}">)
+    </li>
+</ul>
+</p>
+<p>
+    <strong>Dodging</strong> is still an option for defence, and the simple
+    {{ card("Dodge") }} is available for everyone. It is weaker than
+    ending the combat with a S:CE, but it is still a viable defensive option when S:CE are not available.
+</p>
+<p>
+    Finally, two combat cards can <strong>send a vampire into torpor directly</strong>:
+    {{ card("Coma") }} (<i>e</i>) and
+    {{ card("Entombment") }} (<i>$</i>).
+    They're too costly to be used effectively as an offensive option, but they are good defensive
+    options as they can act as a deterrent against combat decks.
+</p>
+<h2 id="range-management">Range Management</h2>
+<p>
+    Getting the correct range is fundamental for combat. Most combat module specialize in a given range,
+    either maintaining <strong>long range</strong> to avoid the basic one damage any vampire can do,
+    or using strong <strong>short range</strong> strikes and effects.
+    Many cards provide <strong>maneuvers</strong> and many offensive combat module use them to manage their range.
+    A few cards allow a vampire to <strong>set the range</strong> directly, without letting the opponent the opportunity
+    to
+    maneuver:
+</p>
+<ul>
+    <li>{{ card("Sniper Rifle") }}</li>
+    <li>{{ card("High Ground") }} (<i>^</i>)</li>
+    <li>{{ card("Selective Silence") }} (<i>Q</i>)</li>
+    <li>{{ card("Shadow Step") }} (<i>£</i>)</li>
+    <li>{{ card("Cold Aura") }} (<i>n</i>)</li>
+    <li>
+        {{ card("Charge of the Buffalo") }} (<i>z</i>)
+    </li>
+    <li>{{ card("Brick by Brick") }} (<i>U</i>)</li>
+    <li>
+        {{ card("Giulia Giovanni Abruzzina") }}
+        (<img src="{{ url_for('static', filename='img/icons/clan-giovanni.svg') }}">)
+    </li>
+    <li>
+        {{ card("Omael Kuman") }}
+        (<img src="{{ url_for('static', filename='img/icons/clan-assamite.svg') }}">)
+    </li>
+    <li>
+        {{ card("Storm Sewers") }}
+        (<img src="{{ url_for('static', filename='img/icons/clan-nosferatu.svg') }}">)
+    </li>
+</ul>
+{% endblock %}

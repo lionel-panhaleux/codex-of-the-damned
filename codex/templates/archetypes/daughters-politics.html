@@ -1,0 +1,64 @@
+{% extends "archetypes/_layout.html" %}
+{% import "archetypes/_layout-erratum.html" as erratum %}
+
+{% block archetype_name %}
+<h1><img src="{{ url_for('static', filename='img/icons/clan-daughters.svg') }}"> Daughters Politics</h1>
+{% endblock %}
+
+{% block archetype %}
+<h2>Highlights</h2>
+<p>
+    This is a <em>breed & boon</em> deck using the Daughters of Cacophony and their unique <i>m</i> discipline.
+    The idea is to bring as many Daughters as possible into play with
+    {{ card("The Embrace") }}, then use
+    {{ card("Bastille Opera House") }},
+    {{ card("Conductor") }} and <i>r</i> modifiers to get enough votes.
+</p>
+<p>
+    {{ card("Benefit Performance") }} is used to bloat and
+    {{ card("Lily Prelude") }} to deliver pool damage to the prey.
+<p>
+    {{ card("Enchant Kindred") }} can be used to speed up the setup
+    in the earyl game and bleed later on, while
+    {{ card("Dream World") }} can provide an unexpected bleed lunge.
+</p>
+<h2>Tips & Tricks</h2>
+<p>
+    {{ card("Death of the Drum") }} is a nasty surprise in an
+    otherwise innocuous combat module using only {{ card("Majesty") }}
+</p>
+<p>
+    {{ card("Member of the Entourage") }} are good protectors
+    to avoid, for example, rush actions against a Daughter with
+    {{ card("Conductor") }}
+</p>
+<p>
+    The deck can have a hard time getting the vote lock.
+    {{ card("Fear of Mekhet") }} can be a devastating blow to
+    a Camarilla vote construct if timely played.
+</p>
+<p>
+    As the deck has no defence against bleed (no bounces and no intercept),
+    {{ card("Archon Investigation") }} is the only deterrent
+    available against high bleed constructs. Aside from that, the high bloat delivered by
+    {{ card("Benefit Performance") }} ought to be enough.
+</p>
+<h2>Variants</h2>
+<p>
+    The archetype is seldom played and not many variations exist.
+    {{ link("/deck-search", _("Karl Schaefer's deck"), twda_id="2019won5co") }}  from 2019
+    gives an Anarch example where the Daughters go for
+    {{ card("Fee Stake") }} actions.
+</p>
+{% endblock %}
+
+{% block script %}
+<script>
+window.onload = function () {
+    document.getElementById("card-modal").addEventListener("keydown", modalKeydown)
+    document.getElementById("card-prev").addEventListener("click", prevCard)
+    document.getElementById("card-next").addEventListener("click", nextCard)
+    displayDeck({"author":null,"comments":"","crypt":{"cards":[{"comments":null,"count":3,"id":"201492","name":"Yseult"},{"comments":null,"count":2,"id":"200091","name":"Angela Preston"},{"comments":null,"count":2,"id":"200331","name":"Delilah Monroe"},{"comments":null,"count":2,"id":"200258","name":"C\u00e9leste, The Voice of a Secret"},{"comments":null,"count":2,"id":"201025","name":"Muse"},{"comments":null,"count":1,"id":"200491","name":"Ga\u00ebl Pilet"},{"comments":null,"count":1,"id":"201505","name":"Zhara"},{"comments":null,"count":1,"id":"200849","name":"Lolita"}],"count":14},"date":"2013-06-01","event":"Brazilian NC 2013","library":{"cards":[{"cards":[{"comments":null,"count":2,"id":"100085","name":"Archon Investigation"},{"comments":null,"count":2,"id":"100140","name":"Bastille Opera House"},{"comments":null,"count":2,"id":"100383","name":"Command Performance"},{"comments":null,"count":2,"id":"100402","name":"Conductor"},{"comments":null,"count":2,"id":"100588","name":"Dreams of the Sphinx"},{"comments":null,"count":2,"id":"102113","name":"Vessel"},{"comments":null,"count":1,"id":"100444","name":"Creepshow Casino"},{"comments":null,"count":1,"id":"100710","name":"Fear of Mekhet"},{"comments":null,"count":1,"id":"101352","name":"Paris Opera House"},{"comments":null,"count":1,"id":"101711","name":"Secure Haven"},{"comments":null,"count":1,"id":"100435","name":"The Coven"},{"comments":null,"count":1,"id":"102180","name":"Wider View"}],"count":18,"type":"Master"},{"cards":[{"comments":null,"count":6,"id":"100633","name":"The Embrace"},{"comments":null,"count":4,"id":"100640","name":"Enchant Kindred"},{"comments":null,"count":3,"id":"100652","name":"Entrancement"},{"comments":null,"count":2,"id":"100587","name":"Dream World"}],"count":15,"type":"Action"},{"cards":[{"comments":null,"count":7,"id":"100151","name":"Benefit Performance"},{"comments":null,"count":7,"id":"101109","name":"Lily Prelude"}],"count":14,"type":"Political Action"},{"cards":[{"comments":null,"count":7,"id":"101786","name":"Siren's Lure"},{"comments":null,"count":7,"id":"101226","name":"The Missing Voice"},{"comments":null,"count":6,"id":"100788","name":"Freak Drive"},{"comments":null,"count":4,"id":"100119","name":"Awe"},{"comments":null,"count":4,"id":"102131","name":"Voter Captivation"}],"count":28,"type":"Action Modifier"},{"cards":[{"comments":null,"count":2,"id":"101141","name":"Madrigal"}],"count":2,"type":"Action Modifier/Reaction"},{"cards":[{"comments":null,"count":2,"id":"100758","name":"Force of Personality"}],"count":2,"type":"Action Modifier/Combat"},{"cards":[{"comments":null,"count":6,"id":"101144","name":"Majesty"},{"comments":null,"count":2,"id":"100508","name":"Death of the Drum"}],"count":8,"type":"Combat"},{"cards":[{"comments":null,"count":2,"id":"101197","name":"Member of the Entourage"},{"comments":null,"count":1,"id":"100298","name":"Carlton Van Wyk"}],"count":3,"type":"Ally"}],"count":90},"name":"Filhas da Putinha","place":"S\u00e3o Paulo, Brazil","player":"Thiago Sousa","players_count":30,"score":"3VP in final","tournament_format":"3R+F","twda_id":"2013bncspb"})
+}
+</script>
+{% endblock %}

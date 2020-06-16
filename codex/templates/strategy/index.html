@@ -1,0 +1,54 @@
+{% extends "layout.html" %}
+
+{% block head %}
+{{ super() }}
+<!-- Adding needed scripts -->
+<!-- No needed script -->
+{% endblock %}
+
+{% block content %}
+<h1>Strategy</h1>
+<p>
+    This section explores <strong>Vampire: the Eternal Struggle</strong> strategy in some details.
+</p>
+<ul>
+    <li>{{ link("/strategy/fundamentals") }} gives general tips and advices.</li>
+    <li>{{ link("/strategy/combat") }} explains combat in detail.</li>
+    <li>{{ link("/strategy/bloat") }} details the different strategies to gain pool during a game.</li>
+    <li>{{ link("/strategy/deck-building") }} gives some tools toward deck building.</li>
+    <li>{{ link("/strategy/archetypes") }} is an introduction to the different deck archetypes.</li>
+    <li>{{ link("/strategy/table-talk") }} presents negociation strategies and tips.</li>
+</ul>
+<h2>Black Chantry Sabbat pre-constructed decks guides</h2>
+<ul>
+    <li>{{ link("/strategy/deck-guides/den-of-fiends") }}</li>
+    <li>{{ link("/strategy/deck-guides/libertine-ball") }}</li>
+    <li>{{ link("/strategy/deck-guides/pact-with-nephandi") }}</li>
+    <li>{{ link("/strategy/deck-guides/parliament-of-shadows") }}</li>
+</ul>
+<h2>Black Chantry "First Blood" pre-constructed decks guides</h2>
+<p>
+    Black Chantry released official guides for the First Blood decks series:
+</p>
+<ul>
+    <li><a href="https://blackchantry.com/How%20to%20play%20the%20First%20Blood%20Ventrue%20deck.pdf">
+            First Blood: Ventrue
+        </a></li>
+    <li><a href="https://blackchantry.com/How%20to%20play%20the%20First%20Blood%20Malkavian%20deck.pdf">
+            First Blood: Malkavian
+        </a></li>
+    <li><a href="https://blackchantry.com/How%20to%20play%20the%20First%20Blood%20Nosferatu%20deck.pdf">
+            First Blood: Nosferatu
+        </a></li>
+    <li><a href="https://blackchantry.com/How%20to%20play%20the%20First%20Blood%20Toreador%20deck.pdf">
+            First Blood: Toreador
+        </a></li>
+    <li><a href="https://blackchantry.com/How%20to%20play%20the%20First%20Blood%20Tremere%20deck.pdf">
+            First Blood: Tremere
+        </a></li>
+</ul>
+<p>
+    Copyright © 2019 White Wolf Entertainment AB. <a href="http://www.white-wolf.com">white-wolf.com</a>.
+    All rights reserved.
+</p>
+{% endblock %}

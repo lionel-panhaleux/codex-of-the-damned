@@ -1,0 +1,125 @@
+{% extends "archetypes/_layout.html" %}
+{% import "archetypes/_layout-erratum.html" as erratum %}
+
+{% block archetype_name %}
+<h1><img src="{{ url_for('static', filename='img/icons/clan-tremere.svg') }}"> War Chantry</h1>
+{% endblock %}
+
+{% block archetype %}>
+<h2>Highlights</h2>
+<p>
+    This is a <em>toolbox</em> deck built around the Tremere clan and their <i>adt</i> disciplines.
+    <i>d</i> is used to bleed, bounce bleeds and accelerate the crypt with
+    {{ card("Govern the Unaligned") }} and
+    {{ card("Scouting Mission") }}.
+    <i>a</i> is used for wakes, intercept and bounces.
+    <i>t</i> is used for combat and a bit of stealth with
+    {{ card("Mirror Walk") }}.
+</p>
+<p>
+    As the deck does not have much stealth, it uses <em>powerbleed</em> tools to lock the prey vampires
+    and make sure they won't be able to block or bounce, with
+    {{ card("Misdirection") }},
+    {{ card("Anarch Troublemaker") }} and
+    {{ card("Pentex™ Subversion") }}.
+</p>
+<h2>Tips & Tricks</h2>
+<p>
+    {{ card("Theft of Vitae") }} is an excellent combat card, as it
+    usually produces a 4 blood differential for no cost. Against some modules though,
+    it can be a bit weak. The use of
+    {{ card("Apportation") }} and
+    {{ card("Blood Fury") }} helps with that.
+    It is great against weapons-oriented modules, and can be played when the opponent uses
+    {{ card("Immortal Grapple") }}: it is a nasty surprise
+    against <i>fp</i> combat modules.
+</p>
+<p>
+    Using {{ card("Threats") }} alongside
+    {{ card("Conditioning") }} provides some
+    liberty of action if an opponent plays
+    a {{ card("Direct Intervention") }} on the latter:
+    the cancelled modifier cannot be played again on the same action,
+    but another bleed enhancer can.
+    The most direct advantage though is that it is cheaper and keeps a bit more blood on the vampires.
+</p>
+<h2>Creator Insights</h2>
+<p>
+    <em>Daniel Gargulák</em> was kind enough to provide insights:
+</p>
+<p>
+    Rotation is quite important in the deck.
+    {{ card("The Barrens") }},
+    {{ card("Dreams of the Sphinx") }} and
+    {{ card("Heart of Nizchetus") }} help in this regard.
+</p>
+<p>
+    {{ card("Misdirection") }},
+    {{ card("Anarch Troublemaker") }} and
+    {{ card("Pentex™ Subversion") }} should be kept in hand until
+    it is time for the lunge.
+</p>
+<p>
+    {{ card("Theft of Vitae") }} is especially good because it handles
+    {{ card("Emerald Legionnaire") }} and
+    {{ card("Nephandus") }} easily. That's why there is only a single
+    {{ card("Far Mastery") }} to handle the more rare werewolf allies.
+</p>
+<p>
+    {{ card("Blood Fury") }} is a nice surprise:
+    it is good in many situations, be it against weapons or against a <i>f</i> wall, as both are common.
+</p>
+<p>
+    When going for a bleed, {{ card("Scouting Mission") }} and
+    {{ card("Threats") }} make sure that even a vampire with only 1 blood left
+    can still get a bleed modifier, thus keeping the prey on her toes.
+</p>
+<h2>Variants</h2>
+<p>
+    They are multiple variants on the combat module. It can use aggravated damages with
+    {{ card("Flames of the Netherworld") }} and
+    {{ card("Walk of Flame") }}, for example.
+    {{ card("Magic of the Smith") }} is also played often,
+    in order to fetch a
+    {{ card("Bowl of Convergence") }},
+    {{ card("Heart of Nizchetus") }},
+    {{ card("Ivory bow") }} or
+    {{ card("Sniper Rifle") }}.
+    Also, {{ card("Ponticulus") }} is often included for his excellent
+    defence abilities.
+</p>
+<p>
+    The <strong>Royalty</strong> variant uses <em>Princes</em> and <em>Justicars</em>,
+    adding political actions and
+    {{ card("Second Tradition: Domain") }} to the mix.
+    {{ link("/deck-search", _("Ricardo Molina Sobreira's deck"), twda_id="2018sacsbp") }}
+    from the 2018 SAC is a good example.
+</p>
+<p>
+    The <strong>Infernal</strong> variant uses
+    {{ card("Valerius Maior, Hell's Fool (ADV)") }} instead of
+    {{ card("Carna, The Princess Witch") }}.
+    His ability is fearsome and its <em>Infernal</em> trait and <i>Y</i> give him access to good options like
+    {{ card("Flames of the Netherworld") }} and
+    {{ card("Unleash Hell's Fury") }}.
+    {{ link("/deck-search", _("Pau Vilar's deck"), twda_id="2018igpbi") }} from 2018 is a good example.
+</p>
+{% endblock %}
+
+{% block errata %}
+<div class="warning">
+    <h3>Errata</h3>
+    {{ erratum.pentextmsubversion( 'undecided' ) }}
+</div>
+{% endblock %}
+
+{% block script %}
+<script>
+window.onload = function () {
+    document.getElementById("card-modal").addEventListener("keydown", modalKeydown)
+    document.getElementById("card-prev").addEventListener("click", prevCard)
+    document.getElementById("card-next").addEventListener("click", nextCard)
+    displayDeck({"author":null,"comments":"Radoslaw (5th) (The unnamed) -> Anna (4th) (The unnamed) -> Tero (2nd) (The unnamed) -> Kacper (3rd) (Nephandus) -> Daniel (1st) (Carna)\n\nFinal seating order:\n","crypt":{"cards":[{"comments":null,"count":2,"id":"200248","name":"Carna, The Princess Witch"},{"comments":null,"count":2,"id":"201261","name":"Selena"},{"comments":null,"count":1,"id":"200225","name":"Bryan Van Duesen"},{"comments":null,"count":1,"id":"200803","name":"Ladislas Toth, The Torch"},{"comments":null,"count":1,"id":"201424","name":"Valois Sang, The Watcher"},{"comments":null,"count":1,"id":"200031","name":"Aisling Sturbridge"},{"comments":null,"count":1,"id":"200567","name":"Hannigan"},{"comments":null,"count":1,"id":"200796","name":"Kurt Strauss"},{"comments":null,"count":1,"id":"200221","name":"Brooke"},{"comments":null,"count":1,"id":"200406","name":"Ehrich Weiss"}],"count":12},"date":"2019-03-17","event":"Czech Grand Prix","library":{"cards":[{"cards":[{"comments":null,"count":4,"id":"102113","name":"Vessel"},{"comments":null,"count":2,"id":"100616","name":"Effective Management"},{"comments":null,"count":2,"id":"101225","name":"Misdirection"},{"comments":null,"count":2,"id":"102121","name":"Villein"},{"comments":null,"count":2,"id":"102151","name":"Wash"},{"comments":null,"count":1,"id":"100058","name":"Anarch Troublemaker"},{"comments":null,"count":1,"id":"100588","name":"Dreams of the Sphinx"},{"comments":null,"count":1,"id":"101384","name":"Pentex(TM) Subversion"},{"comments":null,"count":1,"id":"100135","name":"The Barrens"}],"count":16,"type":"Master"},{"cards":[{"comments":null,"count":9,"id":"100845","name":"Govern the Unaligned"},{"comments":null,"count":4,"id":"101698","name":"Scouting Mission"},{"comments":null,"count":1,"id":"100703","name":"Far Mastery"}],"count":14,"type":"Action"},{"cards":[{"comments":null,"count":6,"id":"101223","name":"Mirror Walk"},{"comments":null,"count":5,"id":"100401","name":"Conditioning"},{"comments":null,"count":4,"id":"100236","name":"Bonding"},{"comments":null,"count":2,"id":"101978","name":"Threats"},{"comments":null,"count":1,"id":"100765","name":"Foreshadowing Destruction"}],"count":18,"type":"Action Modifier"},{"cards":[{"comments":null,"count":1,"id":"101256","name":"Murmur of the False Will"}],"count":1,"type":"Action Modifier/Reaction"},{"cards":[{"comments":null,"count":10,"id":"101966","name":"Theft of Vitae"},{"comments":null,"count":5,"id":"100077","name":"Apportation"},{"comments":null,"count":3,"id":"100201","name":"Blood Fury"},{"comments":null,"count":2,"id":"101588","name":"Rego Motum"}],"count":20,"type":"Combat"},{"cards":[{"comments":null,"count":6,"id":"100680","name":"Eyes of Argus"},{"comments":null,"count":5,"id":"100518","name":"Deflection"},{"comments":null,"count":4,"id":"101949","name":"Telepathic Misdirection"},{"comments":null,"count":3,"id":"101321","name":"On the Qui Vive"},{"comments":null,"count":1,"id":"100644","name":"Enhanced Senses"}],"count":19,"type":"Reaction"},{"cards":[{"comments":null,"count":1,"id":"100243","name":"Bowl of Convergence"},{"comments":null,"count":1,"id":"100903","name":"Heart of Nizchetus"}],"count":2,"type":"Equipment"}],"count":90},"name":"Tremere toolbox","place":"Brno, Czech Republic","player":"Daniel Gargul\u00e1k","players_count":42,"score":"2GW7.5+2","tournament_format":"3R+F","twda_id":"2019czgpbcz"})
+}
+</script>
+{% endblock %}

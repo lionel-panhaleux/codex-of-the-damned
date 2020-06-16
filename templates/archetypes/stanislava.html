@@ -1,0 +1,105 @@
+{% extends "archetypes/_layout.html" %}
+{% import "archetypes/_layout-erratum.html" as erratum %}
+
+{% block archetype_name %}
+<h1><img src="{{ url_for('static', filename='img/icons/clan-gangrel.svg') }}"> Stanislava</h1>
+{% endblock %}
+
+{% block archetype %}>
+<h2>Highlights</h2>
+<p>
+    This is a <em>stealth vote & bleed</em> deck with
+    {{ card("Stanislava") }} as a star. She uses
+    {{ card("Govern the Unaligned") }} to help get other
+    vampires out and {{ card("Villein") }} is used to get some pool
+    back. The second vampire should be a <em>Prince</em>,
+    preferrably {{ card("Ingrid Rossler") }},
+    to be able to play the numerous {{ card("Parity Shift") }}.
+</p>
+<p>
+    As the game progresses, more big capacity titled vampires get out and
+    {{ card("Parity Shift") }} is used both to deliver pool damage and to
+    bloat. Vampires begin to bleed, using <i>j</i> for stealth with
+    {{ card("Form of Mist") }},
+    {{ card("Earth Control") }} and
+    {{ card("Rapid Change") }}.
+<p>
+    {{ card("Deflection") }} is used for bleed defence, with some
+    {{ card("Sense the Savage Way") }} to unlock if need be.
+</p>
+<h2>Tips & Tricks</h2>
+<p>
+    {{ card("Forced March") }} and
+    {{ card("Instantaneous Transformation") }} are
+    extremely versatile as they can be used both for stealth or additional action, allowing a vampire
+    to bleed and call a vote in the same turn.
+    {{ card("Stanislava") }} can use both,
+    but some other vampires in the crypt can use one or the other.
+</p>
+<p>
+    {{ card("Murmur of the False Will") }} can be used
+    both for bounces and bleed enhancement, depending on the context. However, they're not supposed to be used
+    with {{ card("Stanislava") }} herself, as bleeding for more than 3
+    would expose her to {{ card("Archon Investigation") }},
+    a chance one would be wary to take with this deck.
+</p>
+<p>
+    A <em>Prince</em> is required, not only for the
+    {{ card("Parity Shift") }}, but also for
+    {{ card("Papillon") }}, an excellent device to bring some blood
+    back on the vampires. {{ card("Jake Washington") }} is also a very
+    efficient tool to that effect.
+</p>
+<p>
+    The {{ card("Seal of Veddartha") }} is an excellent
+    equipment with this crypt, as most vampires miss either <i>D</i> or <i>F</i>. The +1 bleed bonus is nothing
+    to cast aside either.
+</p>
+<h2>Variants</h2>
+<p>
+    The archetype is very much known for <em>Martin Weinmayer's</em> build as he as been very successful with it
+    and retained the top seat in the international classment for some years.
+    The cards proportions may vary a little bit, some like to play some
+    {{ card("Guard Dogs") }},
+    {{ card("Kine Resources Contested") }},
+    {{ card("Vele's Hunt") }} and/or
+    {{ card("Claws of the Dead") }}.
+    {{ card("Ecoterrorists") }} is also a common inclusion.
+    Some alterations have been seen in the crypt too, like ditching
+    {{ card("Rachel Brandywine") }} for an additional
+    {{ card("Ingrid Rossler") }} or including
+    {{ card("Iliana") }} or
+    {{ card("Caitlin") }},
+    as they have excellent disciplines combination for a low pool,
+    although no title to support the political side of the deck.
+    {{ link("/deck-search", _("Janne Lönnqvist's deck"), twda_id="2016rfehf") }} from 2016 is a good example.
+</p>
+<p>
+    The <strong>Old School</strong> variant uses groups 1 and 2 in the crypt instead of the group 2-3 used here.
+    It provides {{ card("Angus the Unruled") }} and
+    {{ card("Don Cruez, The Idealist") }},
+    two justicars with a nice sets of disciplines. It allows for more Royalty cards like
+    {{ card("Second Tradition: Domain") }} and
+    {{ card("Fourth Tradition: The Accounting") }}.
+    {{ link("/deck-search", _("Giulio De Cicco's deck"), twda_id="2014gtdtigi") }} from 2014 is a good example.
+</p>
+{% endblock %}
+
+{% block errata %}
+<div class="warning">
+    <h3>Errata</h3>
+    {{ erratum.pentextmsubversion( 'undecided' ) }}
+    {{ erratum.parityshift() }}
+</div>
+{% endblock %}
+
+{% block script %}
+<script>
+window.onload = function () {
+    document.getElementById("card-modal").addEventListener("keydown", modalKeydown)
+    document.getElementById("card-prev").addEventListener("click", prevCard)
+    document.getElementById("card-next").addEventListener("click", nextCard)
+    displayDeck({"author":null,"comments":"I usually play this Deck with 80 Cards, but i did some metagame changes because\nI expected less combat and more bleed. Changes were\n+2 forced march +4 Sense the Savage Way +2 murmur +1 villein -1 scourge\nBig thanks to Ben Peal for his ongoing Support of our game, and all the cool\nPeople i was blessed to meet there!\n","crypt":{"cards":[{"comments":null,"count":4,"id":"201312","name":"Stanislava"},{"comments":null,"count":2,"id":"200634","name":"Ingrid Rossler"},{"comments":null,"count":1,"id":"200440","name":"Etrius"},{"comments":null,"count":1,"id":"200501","name":"Genevieve"},{"comments":null,"count":1,"id":"200575","name":"Hartmut Stover"},{"comments":null,"count":1,"id":"201148","name":"Rachel Brandywine"},{"comments":null,"count":1,"id":"201477","name":"Xaviar"},{"comments":null,"count":1,"id":"200937","name":"Mark Decker"}],"count":12},"date":"2017-06-17","event":"NAC 2017 Day 2","library":{"cards":[{"cards":[{"comments":null,"count":7,"id":"102121","name":"Villein"},{"comments":null,"count":4,"id":"100588","name":"Dreams of the Sphinx"},{"comments":null,"count":2,"id":"101019","name":"Jake Washington"},{"comments":null,"count":2,"id":"101350","name":"Papillon"},{"comments":null,"count":2,"id":"101384","name":"Pentex(TM) Subversion"},{"comments":null,"count":1,"id":"100126","name":"Backways"},{"comments":null,"count":1,"id":"100646","name":"Ennoia's Theater"},{"comments":null,"count":1,"id":"100824","name":"Giant's Blood"},{"comments":null,"count":1,"id":"100984","name":"Information Highway"},{"comments":null,"count":1,"id":"101238","name":"Monastery of Shadows"}],"count":22,"type":"Master"},{"cards":[{"comments":null,"count":9,"id":"100845","name":"Govern the Unaligned"}],"count":9,"type":"Action"},{"cards":[{"comments":null,"count":7,"id":"101353","name":"Parity Shift"},{"comments":null,"count":1,"id":"100059","name":"Anarchist Uprising"},{"comments":null,"count":1,"id":"100065","name":"Ancilla Empowerment"},{"comments":null,"count":1,"id":"101591","name":"Reins of Power"}],"count":10,"type":"Political Action"},{"cards":[{"comments":null,"count":6,"id":"100600","name":"Earth Control"},{"comments":null,"count":4,"id":"100761","name":"Forced March"},{"comments":null,"count":4,"id":"100994","name":"Instantaneous Transformation"},{"comments":null,"count":3,"id":"100401","name":"Conditioning"},{"comments":null,"count":1,"id":"100645","name":"Enkil Cog"}],"count":18,"type":"Action Modifier"},{"cards":[{"comments":null,"count":4,"id":"101256","name":"Murmur of the False Will"}],"count":4,"type":"Action Modifier/Reaction"},{"cards":[{"comments":null,"count":2,"id":"101542","name":"Rapid Change"}],"count":2,"type":"Action Modifier/Combat"},{"cards":[{"comments":null,"count":8,"id":"100771","name":"Form of Mist"},{"comments":null,"count":4,"id":"100601","name":"Earth Meld"}],"count":12,"type":"Combat"},{"cards":[{"comments":null,"count":6,"id":"100518","name":"Deflection"},{"comments":null,"count":4,"id":"101717","name":"Sense the Savage Way"}],"count":10,"type":"Reaction"},{"cards":[{"comments":null,"count":1,"id":"101703","name":"Seal of Veddartha"}],"count":1,"type":"Equipment"}],"count":88},"name":"Stansilava","place":"Origins, Columbus, Ohio","player":"Martin Weinmayer","players_count":25,"score":null,"tournament_format":"3R+F","twda_id":"2017nacd2co"})
+}
+</script>
+{% endblock %}

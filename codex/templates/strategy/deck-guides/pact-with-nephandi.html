@@ -1,0 +1,163 @@
+{% extends "layout.html" %}
+{% block content %}
+<h1><img src="{{ url_for('static', filename='img/icons/clan-tremere-anti.svg') }}"> Pact with Naphandi</h1>
+
+<div class="decklist">
+    <h3>Crypt (12 cards)</h3>
+    <ul>
+        <li>5 <span class="card" onclick="dC('antonioderlette')">Antonio d’Erlette</span></li>
+        <li>1 <span class="card" onclick="dC('emberwright')">Ember Wright</span></li>
+        <li>1 <span class="card" onclick="dC('frondator')">Frondator</span></li>
+        <li>1 <span class="card" onclick="dC('janine')">Janine</span></li>
+        <li>1 <span class="card" onclick="dC('keithmoody')">Keith Moody</span></li>
+        <li>1 <span class="card" onclick="dC('lectora')">Lectora</span></li>
+        <li>1 <span class="card" onclick="dC('mosfair')">Mosfair</span></li>
+        <li>1 <span class="card" onclick="dC('saiz')">Saiz</span></li>
+    </ul>
+    <h3>Library (77 cards)</h3>
+    <ul>
+        <li>
+            <h4>— Master (13) —</h4>
+        </li>
+        <li>1 <span class="card" onclick="dC('dreamsofthesphinx')">Dreams of the Sphinx</span></li>
+        <li>1 <span class="card" onclick="dC('fame')">Fame</span></li>
+        <li>2 <span class="card" onclick="dC('frontalassault')">Frontal Assault</span></li>
+        <li>1 <span class="card" onclick="dC('krcgnewsradio')">KRCG News Radio</span></li>
+        <li>2 <span class="card" onclick="dC('suddenreversal')">Sudden Reversal</span></li>
+        <li>1 <span class="card" onclick="dC('universityhuntingground')">University Hunting Ground</span></li>
+        <li>3 <span class="card" onclick="dC('vessel')">Vessel</span></li>
+        <li>2 <span class="card" onclick="dC('widerview')">Wider View</span></li>
+        <li>
+            <h4>— Action (9) —</h4>
+        </li>
+        <li>6 <span class="card" onclick="dC('computerhacking')">Computer Hacking</span></li>
+        <li>3 <span class="card" onclick="dC('harass')">Harass</span></li>
+        <li>
+            <h4>— Ally (10) —</h4>
+        </li>
+        <li>1 <span class="card" onclick="dC('carltonvanwyk')">Carlton Van Wyk</span></li>
+        <li>1 <span class="card" onclick="dC('gregorywinter')">Gregory Winter</span></li>
+        <li>8 <span class="card" onclick="dC('nephandus')">Nephandus</span></li>
+        <li>
+            <h4>— Modifier (9) —</h4>
+        </li>
+        <li>3 <span class="card" onclick="dC('conditioning')">Conditioning</span></li>
+        <li>6 <span class="card" onclick="dC('mirrorwalk')">Mirror Walk</span></li>
+        <li>
+            <h4>— Combat (18) —</h4>
+        </li>
+        <li>3 <span class="card" onclick="dC('glancingblow')">Glancing Blow</span></li>
+        <li>3 <span class="card" onclick="dC('molotovcocktail')">Molotov Cocktail</span></li>
+        <li>3 <span class="card" onclick="dC('regomotus')">Rego Motus</span></li>
+        <li>3 <span class="card" onclick="dC('targetvitals')">Target: Vitals</span></li>
+        <li>3 <span class="card" onclick="dC('theftofvitae')">Theft of Vitae</span></li>
+        <li>3 <span class="card" onclick="dC('trap')">Trap</span></li>
+        <li>
+            <h4>— Reaction (17) —</h4>
+        </li>
+        <li>3 <span class="card" onclick="dC('deflection')">Deflection</span></li>
+        <li>2 <span class="card" onclick="dC('delayingtactics')">Delaying Tactics</span></li>
+        <li>2 <span class="card" onclick="dC('eaglessight')">Eagle’s Sight</span></li>
+        <li>2 <span class="card" onclick="dC('enhancedsenses')">Enhanced Senses</span></li>
+        <li>2 <span class="card" onclick="dC('eyesofargus')">Eyes of Argus</span></li>
+        <li>6 <span class="card" onclick="dC('onthequivive')">On the Qui Vive</span></li>
+        <li>
+            <h4>— Event (1) —</h4>
+        </li>
+        <li>1 <span class="card" onclick="dC('unmaskingthe')">The Unmasking</span></li>
+    </ul>
+</div>
+<h2>Summary</h2>
+<p>
+    This is a Tremere <em>Allies Toolbox</em> deck.
+    The setup is to get <span class="card" onclick="dC('antonioderlette')">Antonio d’Erlette</span> out first,
+    then put some <span class="card" onclick="dC('nephandus')">Nephandus</span> in play using his ability.
+    Some sidekicks can be brought into play if the pool allows it.
+</p>
+<p>
+    The high number of minions is a strong point of the deck.
+</p>
+<h2>Offence</h2>
+<p>
+    <strong>Pool damage</strong> is done with naked bleed
+    or <span class="card" onclick="dC('computerhacking')">Computer Hacking</span> (which can be used by
+    <span class="card" onclick="dC('nephandus')">Nephandus</span>),
+    but also with well timed <span class="card" onclick="dC('conditioning')">Conditioning</span>
+    from the vampires to finish one’s prey.
+    <span class="card" onclick="dC('fame')">Fame</span> can also help if it is drawn, as
+    <span class="card" onclick="dC('harass')">Harass</span> and
+    <span class="card" onclick="dC('frontalassault')">Frontal Assault</span> provide good options to rush
+    enemy minions.
+</p>
+<p>
+    The <strong>combat module is strong</strong> and tailored for the
+    <span class="card" onclick="dC('nephandus')">Nephandus</span>, with the deadly
+    <span class="card" onclick="dC('trap')">Trap</span>,
+    <span class="card" onclick="dC('targetvitals')">Target: Vitals</span> to improve damage,
+    <span class="card" onclick="dC('glancingblow')">Glancing Blow</span> to prevent even more and
+    <span class="card" onclick="dC('molotovcocktail')">Molotov Cocktail</span> to take advantage
+    of the <em>Press</em> <span class="card" onclick="dC('nephandus')">Nephandus</span> has.
+    Tremere with <i>t</i> have access to additional options with
+    <span class="card" onclick="dC('theftofvitae')">Theft of Vitae</span> and
+    <span class="card" onclick="dC('regomotus')">Rego Motus</span>.
+</p>
+<h2>Defence</h2>
+<p>
+    <strong>Bloat is low</strong>: <span class="card" onclick="dC('vessel')">Vessel</span>
+    is used to get some pool back from the vampires, and it is crucial to get some pool to recruit more Nephandus.
+</p>
+<p>
+    <strong>Block is good</strong>, with <i>a</i> reactions to enhance intercept and
+    <span class="card" onclick="dC('onthequivive')">On the Qui Vive</span> to wake, plus
+    <span class="card" onclick="dC('deflection')">Deflection</span> for bounces and
+    <span class="card" onclick="dC('delayingtactics')">Delaying Tactics</span> against votes.
+    On this note, getting a second vampire out to handle blocks, with <i>at</i>, is great in this deck,
+    as risking <span class="card" onclick="dC('antonioderlette')">Antonio d’Erlette</span> on a block
+    is a blod move.
+</p>
+<p>
+    Moreover, <span class="card" onclick="dC('krcgnewsradio')">KRCG News Radio</span>,
+    <span class="card" onclick="dC('unmaskingthe')">The Unmasking</span> and
+    <span class="card" onclick="dC('carltonvanwyk')">Carlton Van Wyk</span> add permanent intercept to the mix.
+</p>
+<h3>Tips</h3>
+<p>
+    <span class="card" onclick="dC('antonioderlette')">Antonio d’Erlette</span> and his ability are key.
+    <strong>Protect him</strong>, do not risk him on actions that could be blocked if you do not have the necessary
+    <i>T</i> combat tricks in hand.
+</p>
+<p>
+    You can get some <span class="card" onclick="dC('nephandus')">Nephandus</span> in play by
+    <strong>recruiting them</strong>, too. Better not be blocked, though, so you can use
+    <span class="card" onclick="dC('mirrorwalk')">Mirror Walk</span> for additional stealth.
+</p>
+<p>
+    <strong>Do not waste</strong> <span class="card" onclick="dC('targetvitals')">Target: Vitals</span> and
+    <span class="card" onclick="dC('molotovcocktail')">Molotov Cocktail</span> if you think the opponent can
+    play a "Strike: Combat Ends" using for example <i>r</i> or <i>$</i>.
+</p>
+<div class="tip">
+    <h3>Balance offence and defence</h3>
+    <p>
+        The <em>"Toolbox"</em> nature of the deck means it can adapt to the context.
+        You can bleed with all your minions and apply a maximum pressure to you prey, or
+        keep most of them unlocked for defence.
+    </p>
+    <p>
+        The balance between offensive actions and keeping minions for defence is essential.
+        Try to play a maximum of cards but at the same time keep them in hand if you have to wait
+        for the right moment or another card to complement it.
+    </p>
+    <p>
+        For example, wait until you have a good combat card before using
+        <span class="card" onclick="dC('harass')">Harass</span> on an enemy minion.
+        Or wait until you have a
+        <span class="card" onclick="dC('mirrorwalk')">Mirror Walk</span> before trying to get a
+        <span class="card" onclick="dC('conditioning')">Conditioning</span> through.
+    </p>
+</div>
+<p>
+    Check the <a href="https://vtesinformationhighway.wordpress.com/2019/01/11/nephandus-starter-and-strategy/">
+        Information Highway article</a> for a deck review and ideas on how to improve it
+</p>
+{% endblock %}

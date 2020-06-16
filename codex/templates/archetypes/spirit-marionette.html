@@ -1,0 +1,90 @@
+{% extends "archetypes/_layout.html" %}
+{% import "archetypes/_layout-erratum.html" as erratum %}
+
+{% block archetype_name %}
+<h1><img src="{{ url_for('static', filename='img/icons/clan-salubri.svg') }}"> Spirit Marionette</h1>
+{% endblock %}
+
+{% block archetype %}>
+<h2>Highlights</h2>
+<p>
+    This is a <em>toolbox</em> deck starring
+    {{ card("Saulot, The Wanderer") }}.
+    He uses {{ card("Spirit Marionette") }}
+    to steal opponents vampires and take their blood with
+    {{ card("Heidelberg Castle, Germany") }}.
+</p>
+<p>
+    The deck disciplines are <i>BAT</i>.
+    {{ card("Saulot, The Wanderer") }} is accompanied by
+    Tremere antitribu, and they can use {{ card("Infernal Pact") }}
+    to be able to play <i>B</i> too.
+</p>
+<p>
+    <i>A</i> provides good intercept, wakes and bleed bounces with
+    {{ card("Eyes of Argus") }},
+    {{ card("Telepathic Misdirection") }} and
+    {{ card("My Enemy's Enemy") }}
+</p>
+<p>
+    <i>T</i> and <i>B</i> are used for combat, with
+    {{ card("Anesthetic Touch") }} and
+    {{ card("Theft of Vitae") }}, making for a nice "flight of fight"
+    module.
+</p>
+<p>
+    The deck can slowly grind the whole table and use
+    {{ card("Enkil Cog") }} and
+    {{ card("Codex of the Edenic Groundskeepers") }}
+    to lunge and destroy its successive preys.
+</p>
+<h2>Tips & Tricks</h2>
+<p>
+    {{ card("Magic of the Smith") }} is used to fetch
+    great equipments, depending on the table context.
+    {{ card("Heart of Nizchetus") }} is the default choice.
+</p>
+<p>
+    {{ card("Renewed Vigor") }} is very strong combined with
+    {{ card("Saulot, The Wanderer") }}'s ability, if any
+    Tremere antitribu can use {{ card("Infernal Pact") }} to play it.
+</p>
+<p>
+    {{ card("Rutor's Hand") }} is a good way to improve
+    {{ link("/strategy/fundamentals", _("A&B"), _anchor="AB") }},
+    provided one can pay the blood.
+</p>
+<h2>Variants</h2>
+<p>
+    The <strong>Eurayle</strong> variant uses
+    {{ card("Eurayle Gelasia Mylonas") }}
+    as the star Salubri,
+    as in {{ link("/deck-search", _("Yannick Gibert's deck"), twda_id="2010fncqlyon") }} from 2010.
+</p>
+<p>
+    An {{ link("/deck-search", _("older version from Tomasz Kowalewski"), twda_id="2k8crusadebreslau") }},
+    in 2008, do not even use the Tremere antitribu and their
+    {{ card("Infernal Pact") }}, but low capacity <i>A</i> vampires
+    instead.
+</p>
+{% endblock %}
+
+{% block errata %}
+<div class="warning">
+    <h3>Errata</h3>
+    {{ erratum.pentextmsubversion( 'remove' ) }}
+    {{ erratum.villein() }}
+    {{ erratum.lilithsblessing() }}
+</div>
+{% endblock %}
+
+{% block script %}
+<script>
+window.onload = function () {
+    document.getElementById("card-modal").addEventListener("keydown", modalKeydown)
+    document.getElementById("card-prev").addEventListener("click", prevCard)
+    document.getElementById("card-next").addEventListener("click", nextCard)
+    displayDeck({"author":null,"comments":"","crypt":{"cards":[{"comments":null,"count":5,"id":"201248","name":"Saulot, The Wanderer"},{"comments":null,"count":1,"id":"200078","name":"Anastasz di Zagreb"},{"comments":null,"count":1,"id":"200248","name":"Carna, The Princess Witch"},{"comments":null,"count":1,"id":"200803","name":"Ladislas Toth, The Torch"},{"comments":null,"count":1,"id":"200408","name":"Elena Mendoza Vasquez"},{"comments":null,"count":1,"id":"201261","name":"Selena"},{"comments":null,"count":1,"id":"201483","name":"Yasmin the Black"},{"comments":null,"count":1,"id":"200485","name":"Frondator"}],"count":12},"date":"2011-09-24","event":"Bleeding in Wroclaw","library":{"cards":[{"cards":[{"comments":null,"count":6,"id":"102121","name":"Villein"},{"comments":null,"count":4,"id":"100908","name":"Heidelberg Castle, Germany"},{"comments":null,"count":3,"id":"100984","name":"Information Highway"},{"comments":null,"count":2,"id":"100588","name":"Dreams of the Sphinx"},{"comments":null,"count":2,"id":"100979","name":"Infernal Pact"},{"comments":null,"count":2,"id":"101384","name":"Pentex(TM) Subversion"},{"comments":null,"count":1,"id":"100824","name":"Giant's Blood"},{"comments":null,"count":1,"id":"101108","name":"Lilith's Blessing"}],"count":21,"type":"Master"},{"cards":[{"comments":null,"count":9,"id":"101848","name":"Spirit Marionette"},{"comments":null,"count":3,"id":"101143","name":"Magic of the Smith"},{"comments":null,"count":2,"id":"101603","name":"Renewed Vigor"},{"comments":null,"count":2,"id":"101664","name":"Rutor's Hand"}],"count":16,"type":"Action"},{"cards":[{"comments":null,"count":7,"id":"101223","name":"Mirror Walk"},{"comments":null,"count":5,"id":"100788","name":"Freak Drive"},{"comments":null,"count":4,"id":"101276","name":"Neutral Guard"},{"comments":null,"count":2,"id":"101606","name":"Repulsion"},{"comments":null,"count":1,"id":"100645","name":"Enkil Cog"}],"count":19,"type":"Action Modifier"},{"cards":[{"comments":null,"count":7,"id":"100066","name":"Anesthetic Touch"},{"comments":null,"count":6,"id":"101966","name":"Theft of Vitae"}],"count":13,"type":"Combat"},{"cards":[{"comments":null,"count":8,"id":"100680","name":"Eyes of Argus"},{"comments":null,"count":6,"id":"101949","name":"Telepathic Misdirection"},{"comments":null,"count":2,"id":"101259","name":"My Enemy's Enemy"}],"count":16,"type":"Reaction"},{"cards":[{"comments":null,"count":1,"id":"100243","name":"Bowl of Convergence"},{"comments":null,"count":1,"id":"100374","name":"Codex of the Edenic Groundskeepers"},{"comments":null,"count":1,"id":"100903","name":"Heart of Nizchetus"},{"comments":null,"count":1,"id":"101014","name":"Ivory Bow"}],"count":4,"type":"Equipment"},{"cards":[{"comments":null,"count":1,"id":"101614","name":"Restricted Vitae"}],"count":1,"type":"Event"}],"count":90},"name":"Saulot & Tremere buddies","place":"Wroclaw, Poland","player":"Tomasz Kowalewski (Behemot)","players_count":29,"score":null,"tournament_format":"3R+F","twda_id":"2011biwwps"})
+}
+</script>
+{% endblock %}

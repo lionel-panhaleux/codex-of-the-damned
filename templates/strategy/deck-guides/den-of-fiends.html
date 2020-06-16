@@ -1,0 +1,170 @@
+{% extends "layout.html" %}
+{% block content %}
+<h1 id="den-of-fiends"><img src="{{ url_for('static', filename='img/icons/clan-tzimisce.svg') }}"> Den of Fiends</h1>
+
+<div class="decklist">
+    <h3>Crypt (12 cards)</h3>
+    <ul>
+        <li>2 <span class="card" onclick="dC('americajohnson')">America Johnson</span></li>
+        <li>1 <span class="card" onclick="dC('drmorrowtheskindoctor')">Dr. Morrow, The Skindoctor</span></li>
+        <li>1 <span class="card" onclick="dC('duality')">Duality</span></li>
+        <li>1 <span class="card" onclick="dC('iliascelfrumos')">Ilias cel Frumos</span></li>
+        <li>2 <span class="card" onclick="dC('ladyvadislava')">Lady Vadislava</span></li>
+        <li>2 <span class="card" onclick="dC('ludmijlarakoczy')">Ludmijla Rakoczy</span></li>
+        <li>2 <span class="card" onclick="dC('rurikrakoczy')">Rurik Rakoczy</span></li>
+        <li>1 <span class="card" onclick="dC('yurikerezenski')">Yuri Kerezenski</span></li>
+    </ul>
+    <h3>Library (77 cards)</h3>
+    <ul>
+        <li>
+            <h4>— Master (11) —</h4>
+        </li>
+        <li>1 <span class="card" onclick="dC('channel10')">Channel 10</span></li>
+        <li>1 <span class="card" onclick="dC('fame')">Fame</span></li>
+        <li>1 <span class="card" onclick="dC('libraryhuntingground')">Library Hunting Ground</span></li>
+        <li>1 <span class="card" onclick="dC('rackthe')">The Rack</span></li>
+        <li>1 <span class="card" onclick="dC('smilingjacktheanarch')">Smiling Jack, The Anarch</span></li>
+        <li>1 <span class="card" onclick="dC('suddenreversal')">Sudden Reversal</span></li>
+        <li>2 <span class="card" onclick="dC('vessel')">Vessel</span></li>
+        <li>3 <span class="card" onclick="dC('villein')">Villein</span></li>
+        <li>
+            <h4>— Action (5) —</h4>
+        </li>
+        <li>4 <span class="card" onclick="dC('deepsong')">Deep Song</span></li>
+        <li>1 <span class="card" onclick="dC('undersiege')">Under Siege</span></li>
+        <li>
+            <h4>— Retainer (2) —</h4>
+        </li>
+        <li>2 <span class="card" onclick="dC('ravenspy')">Raven Spy</span></li>
+        <li>
+            <h4>— Equipment (3) —</h4>
+        </li>
+        <li>1 <span class="card" onclick="dC('bowlofconvergence')">Bowl of Convergence</span></li>
+        <li>1 <span class="card" onclick="dC('heartofnizchetus')">Heart of Nizchetus</span></li>
+        <li>1 <span class="card" onclick="dC('livingmanse')">Living Manse</span></li>
+        <li>
+            <h4>— Modifier (4) —</h4>
+        </li>
+        <li>4 <span class="card" onclick="dC('changeling')">Changeling</span></li>
+        <li>
+            <h4>— Combat (22) —</h4>
+        </li>
+        <li>3 <span class="card" onclick="dC('breathofthedragon')">Breath of the Dragon</span></li>
+        <li>5 <span class="card" onclick="dC('carrioncrows')">Carrion Crows</span></li>
+        <li>6 <span class="card" onclick="dC('chiropteranmarauder')">Chiropteran Marauder</span></li>
+        <li>4 <span class="card" onclick="dC('horridform')">Horrid Form</span></li>
+        <li>4 <span class="card" onclick="dC('inneressence')">Inner Essence</span></li>
+        <li>
+            <h4>— Reaction (29) —</h4>
+        </li>
+        <li>3 <span class="card" onclick="dC('telepathictracking')">Telepathic Tracking</span></li>
+        <li>4 <span class="card" onclick="dC('enhancedsenses')">Enhanced Senses</span></li>
+        <li>4 <span class="card" onclick="dC('eyesofargus')">Eyes of Argus</span></li>
+        <li>4 <span class="card" onclick="dC('onthequivive')">On the Qui Vive</span></li>
+        <li>4 <span class="card" onclick="dC('precognition')">Precognition</span></li>
+        <li>4 <span class="card" onclick="dC('readthewinds')">Read the Winds</span></li>
+        <li>4 <span class="card" onclick="dC('spiritstouch')">Spirit’s Touch</span></li>
+        <li>2 <span class="card" onclick="dC('telepathicmisdirection')">Telepathic Misdirection</span></li>
+        <li>
+            <h4>— Event (1) —</h4>
+        </li>
+        <li>1 <span class="card" onclick="dC('dragonbound')">Dragonbound</span></li>
+    </ul>
+</div>
+<h2>Summary</h2>
+<p>
+    This is a Tzimisce wall deck, leaning on the toolbox side of things.
+    The setup is to get a vampire with the three advanced clan disciplines <i>AVI</i> out first,
+    then one to three sidekicks, depending on the available pool.
+    The idea is to focus on defence and slowly grind at the prey’s pool.
+</p>
+<h2>Offence</h2>
+<p>
+    <strong>Pool damage</strong> is low, it uses naked bleed actions,
+    <span class="card" onclick="dC('deepsong')">Deep Song</span> at inferior <i>i</i> and
+    <span class="card" onclick="dC('changeling')">Changeling</span>.
+    It also can deliver damage by putting the prey’s vampires in torpor, combined with
+    <span class="card" onclick="dC('fame')">Fame</span> and/or
+    <span class="card" onclick="dC('dragonbound')">Dragonbound</span>.
+    If <span class="card" onclick="dC('smilingjacktheanarch')">Smiling Jack, The Anarch</span>
+    is drawn and kept in play long enough, it can deliver fatal damage to the table.
+</p>
+<p>
+    The <strong>combat module</strong> is strong, using <i>V</i> to deal aggravated damage from afar with
+    <span class="card" onclick="dC('breathofthedragon')">Breath of the Dragon</span>, or at close range with
+    <span class="card" onclick="dC('chiropteranmarauder')">Chiropteran Marauder</span>.
+    <span class="card" onclick="dC('telepathictracking')">Telepathic Tracking</span> is a counter against
+    « Strike: Combat Ends », to be kept in hand if a combat against <i>r</i> or <i>$</i> is expected.
+    <span class="card" onclick="dC('carrioncrows')">Carrion Crows</span> improves damage and
+    it comes <em>before any aggravated damage</em> from the strike,
+    so it can be use to destroy a vampire directly if it is low enough on blood to begin with.
+    <span class="card" onclick="dC('horridform')">Horrid Form</span> and
+    <span class="card" onclick="dC('inneressence')">Inner Essence</span> are just helpers,
+    they should be played as soon as possible to avoid jamming the hand.
+</p>
+<h2>Defence</h2>
+<p>
+    <strong>Bloat</strong> is low, using <span class="card" onclick="dC('vessel')">Vessel</span> and
+    <span class="card" onclick="dC('villein')">Villein</span> to get some pool back.
+</p>
+<p>
+    The deck has exceptionnal <strong>intercept</strong> capacities.
+    <span class="card" onclick="dC('readthewinds')">Read the Winds</span>,
+    <span class="card" onclick="dC('eyesofargus')">Eyes of Argus</span> and
+    <span class="card" onclick="dC('onthequivive')">On the Qui Vive</span> are all wakes to enable more blocks.
+    Most of them can also be used for intercept as a last resort.
+</p>
+<p>
+    This deck needs to get some <strong>permanent intercept</strong> on the table as soon as possible:
+    <span class="card" onclick="dC('bowlofconvergence')">Bowl of Convergence</span>,
+    <span class="card" onclick="dC('ravenspy')">Raven Spy</span>, and
+    <span class="card" onclick="dC('channel10')">Channel 10</span>.
+    As 3 of them need an action to be put into play, one should
+    <strong>keep some stealth</strong> in hand (<span class="card" onclick="dC('changeling')">Changeling</span>)
+    to avoid interception.
+</p>
+<p>
+    Finally the deck has only a two
+    <span class="card" onclick="dC('telepathicmisdirection')">Telepathic Misdirection</span>,
+    they should be kept in hand to redirect heavy bleeds to the prey.
+</p>
+<h2>Tips</h2>
+<p>
+    <strong>Play defensively</strong>, do not hesitate to keep vampires unlocked to be able to block more often.
+</p>
+<p>
+    <strong>Do not stack permanent intercept</strong> on a single vampire: if one has the
+    <span class="card" onclick="dC('bowlofconvergence')">Bowl of Convergence</span>, another should get the
+    <span class="card" onclick="dC('ravenspy')">Raven Spy</span>. The more vampires are able to intercept with
+    good score, the less efficient block denials cards like
+    <span class="card" onclick="dC('seduction')">Seduction</span> become.
+</p>
+<p>
+    You can target a strong vampire to put her into to torpor then <strong>diablerize</strong>
+    her with a low capacity disposable vampire of yours.
+</p>
+<p>
+    <strong>Keep them guessing</strong> about your hand, no one should know if you can
+    or cannot block an action, if you have or do not have what it takes to send their vampires in torpor by combat.
+</p>
+<p>
+    Do not let <strong>combat cards jam</strong> your hand. If need be, use
+    <span class="card" onclick="dC('deepsong')">Deep Song</span> to enter combat and play the cards
+    instead of using it for a bleed your prey may be too afraid to block.
+</p>
+<div class="tip">
+    <h3>What to block</h3>
+    <p>
+        The deck has tremendous block power, but it can not block everything the prey or the predator do.
+        It should focus on blocking the <strong>prey's bloat or defensive actions</strong> like
+        <span class="card" onclick="dC('consanguineousboon')">Consanguineous Boon</span> or
+        <span class="card" onclick="dC('governtheunaligned')">Govern the Unaligned</span> and the
+        <strong>predator's power building actions</strong> like allies recruitment or breeding actions like
+        <span class="card" onclick="dC('embracethe')">The Embrace</span>.
+    </p>
+</div>
+<p>
+    Check the <a href="https://vtesinformationhighway.wordpress.com/2019/01/21/tzimisce-starter-den-of-fiends/">
+        Information Highway article</a> for a deck review and ideas on how to improve it
+</p>
+{% endblock %}

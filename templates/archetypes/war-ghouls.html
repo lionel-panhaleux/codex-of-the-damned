@@ -1,0 +1,68 @@
+{% extends "archetypes/_layout.html" %}
+{% import "archetypes/_layout-erratum.html" as erratum %}
+
+{% block archetype_name %}
+<h1><img src="{{ url_for('static', filename='img/icons/clan-tzimisce.svg') }}"> War Ghouls</h1>
+{% endblock %}
+
+{% block archetype %}>
+<h2>Highlights</h2>
+<p>
+    This is a <em>rush</em> deck using multiple {{ card("War Ghoul") }}
+    to rush the opponents vampires.
+</p>
+<p>
+    The idea is to get a {{ card("War Ghoul") }} into play
+    as soon as possible, using a low capacity Tzimisce and
+    {{ card("Jake Washington") }}.
+    The {{ card("War Ghoul") }} then proceeds to taking down every vampire
+    on the table, using
+    {{ card("Fake Out") }} and
+    {{ card("Trap") }} as needed.
+</p>
+<p>
+    Other allies and retainers can be recruited to be sacrificed to more
+    {{ card("War Ghouls") }}.
+    {{ card("Ossian") }}, if he is drawn, may even be better than a
+    {{ card("War Ghoul") }}.
+</p>
+<p>
+    The deck uses low capacity vampires with <i>A</i> to bounce bleeds and intercept.
+    Pool damage is done with {{ card("Dragonbound") }}
+    and naked bleed once all the prey's vampires are down.
+</p>
+<h2>Tips & Tricks</h2>
+<p>
+    This a fast and aggressive deck and will likely attract the table attention.
+    It should try to keep control of the whole table if possible.
+</p>
+<p>
+    Letting some vampires live on the predator side can be a good way to bounce their bleed and deliver additional
+    pool damage to the prey.
+</p>
+<h2>Variants</h2>
+<p>
+    The <strong>Maris</strong> variant uses {{ card("Maris streck") }} for
+    {{ card("Parity Shift") }} and
+    {{ card("Anathema") }}.
+    Check {{ link("/deck-search", _("Emiliano Imeroni's deck"), twda_id="2012bnc") }} from the 2012 Belgian NC.
+</p>
+<p>
+    The <strong>Piper</strong> variant is an anarch version using
+    {{ card("Anarch Convert") }} and
+    {{ card("Piper") }} in order to bring
+    {{ card("War Ghoul") }} into play unopposed, as in
+    {{ link("/deck-search", _("Antonio Cobo Cuenca's deck"), twda_id="2k8parisncq") }} from 2008.
+</p>
+{% endblock %}
+
+{% block script %}
+<script>
+window.onload = function () {
+    document.getElementById("card-modal").addEventListener("keydown", modalKeydown)
+    document.getElementById("card-prev").addEventListener("click", prevCard)
+    document.getElementById("card-next").addEventListener("click", nextCard)
+    displayDeck({"author":null,"comments":"Based on the deck \"Drog\u00f6gon mitt i ansiktet - wall ghouls\" by Erik\nTorstensson with a few alterations. Sadly, no turn one Ossian.\nThanks to Randal Rudstam for a few last minute changes and Adam\nEsbjornson for helping me to choose the deck.\n","crypt":{"cards":[{"comments":null,"count":3,"id":"201126","name":"Piotr Andreikov"},{"comments":null,"count":2,"id":"200603","name":"Horatio"},{"comments":null,"count":1,"id":"200290","name":"Corine Marc\u00f3n"},{"comments":null,"count":1,"id":"200339","name":"Devin Bisley"},{"comments":null,"count":1,"id":"200415","name":"Elizabeth Westcott"},{"comments":null,"count":1,"id":"200642","name":"Isabel de Leon"},{"comments":null,"count":1,"id":"200943","name":"Martin Franckel"},{"comments":null,"count":1,"id":"201466","name":"Wendy Wade"},{"comments":null,"count":1,"id":"201509","name":"Z\u00f6e"}],"count":12},"date":"2013-03-30","event":"Swedish ECQ","library":{"cards":[{"cards":[{"comments":null,"count":6,"id":"101019","name":"Jake Washington"},{"comments":null,"count":2,"id":"100545","name":"Direct Intervention"},{"comments":null,"count":1,"id":"101384","name":"Pentex(TM) Subversion"},{"comments":null,"count":1,"id":"101439","name":"Powerbase: Montreal"}],"count":10,"type":"Master"},{"cards":[{"comments":null,"count":4,"id":"100693","name":"Fake Out"},{"comments":null,"count":4,"id":"102012","name":"Trap"},{"comments":null,"count":3,"id":"101942","name":"Target Vitals"}],"count":11,"type":"Combat"},{"cards":[{"comments":null,"count":5,"id":"101949","name":"Telepathic Misdirection"},{"comments":null,"count":4,"id":"100680","name":"Eyes of Argus"},{"comments":null,"count":4,"id":"101321","name":"On the Qui Vive"},{"comments":null,"count":3,"id":"101259","name":"My Enemy's Enemy"},{"comments":null,"count":2,"id":"100519","name":"Delaying Tactics"},{"comments":null,"count":1,"id":"100644","name":"Enhanced Senses"}],"count":19,"type":"Reaction"},{"cards":[{"comments":null,"count":8,"id":"102144","name":"War Ghoul"},{"comments":null,"count":2,"id":"101333","name":"Ossian"},{"comments":null,"count":2,"id":"102087","name":"Vagabond Mystic"}],"count":12,"type":"Ally"},{"cards":[{"comments":null,"count":2,"id":"101249","name":"Mr. Winthrop"},{"comments":null,"count":1,"id":"101015","name":"J. S. Simmons, Esq."},{"comments":null,"count":1,"id":"101943","name":"Tasha Morgan"}],"count":4,"type":"Retainer"},{"cards":[{"comments":null,"count":3,"id":"102079","name":"The Unmasking"},{"comments":null,"count":1,"id":"100581","name":"Dragonbound"}],"count":4,"type":"Event"}],"count":60},"name":"The best Swedish game","place":"Gothenburg, Sweden","player":"Daniel Wiberg","players_count":41,"score":null,"tournament_format":"3R+F","twda_id":"2013ecqgs"})
+}
+</script>
+{% endblock %}

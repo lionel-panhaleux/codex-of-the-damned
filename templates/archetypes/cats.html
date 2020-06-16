@@ -1,0 +1,113 @@
+{% extends "archetypes/_layout.html" %}
+{% import "archetypes/_layout-erratum.html" as erratum %}
+
+{% block archetype_name %}
+<h1><img src="{{ url_for('static', filename='img/icons/clan-ahrimanes.svg') }}">Cats</h1>
+{% endblock %}
+
+{% block archetype %}
+<h2>Highlights</h2>
+<p>
+    This is an Ahrimanes wall deck using group 4 Ahrimanes.
+    Depending on the build, it can be a pure wall or more of a toolbox.
+    The core concept is to use the rather classical <i>i</i> Intercept/Combat combination
+    —
+    {{ card("Raven Spy") }},
+    {{ card("Cat's Guidance") }},
+    {{ card("Aid From Bats") }} and
+    {{ card("Carrion Crows") }}
+    —
+    combined with <i>z</i> intercept and combat enhancers:
+    {{ card("Falcon's Eye") }},
+    {{ card("Speak with Spirits") }},
+    {{ card("Ears of the Hare") }} and
+    {{ card("Swiftness of the Stag") }}.
+</p>
+<p>
+    This is a slow play, slowing down the prey and predator and bloating a bit with Master cards,
+    all the while bleeding when possible with {{ card("Deep Song") }}
+    and dealing additional pool damage with {{ card("Fame") }} and
+    {{ card("Dragonbound") }}.
+</p>
+<h2>Tips & Tricks</h2>
+<p>
+    As Ahrimanes are Sabbat, they have access to {{ card("Abbot") }},
+    an excellent intercept enhancer. Having <i>z</i> for intercept allows to drop the classical
+    {{ card("Raven Spy") }} completely,
+    although most builds of this archetype still include it, sometimes along
+    {{ card("Muricia's Call") }} and some other animal retainers.
+</p>
+<p>
+    <i>z</i> also provides {{ card("Engling Fury") }}, an excellent
+    blood regeneration tool which, along {{ card("Taste of Vitae") }},
+    helps the Master {{ link("/strategy/bloat", _("leeching"), _anchor="leeching") }}
+	bloat module.
+</p>
+<p>
+    The <i>i</i> combat module always includes some cards against weapon modules to be able to handle some
+    {{ card("Ivory Bow") }},
+    {{ card(".44 Magnum") }} or
+    {{ card("Sniper Rifle") }} on the opponent side.
+    To this effect and depending on the context,
+    {{ card("Drawing Out the Beast") }},
+    {{ card("Canine Horde") }} or
+    {{ card("Terror Frenzy") }} can be used.
+</p>
+<p>
+    If allies are expected, {{ card("Vulture's Buffet") }}
+    can be preferred to {{ card("Engling Fury") }} and
+    {{ card("Entrancement") }} can be added to the mix.
+</p>
+<h2>Creator Insights</h2>
+<p>
+    <em>Randal Rudstam</em> was kind enough to provide the following insights:
+</p>
+<p>
+    Getting into the three player endgame is more of a priority than getting the first or second oust.
+</p>
+<p>
+    A third way to play them is to go Anarch, remove {{ card("Abbot") }}
+    for some {{ card("Anarch Revolt") }}s and access to
+    {{ card("Field Training") }}.
+</p>
+<h2>Variants</h2>
+<p>
+    The main variant is a <em>wall</em> construct as given in example. Some may include <i>r</i> cards to help
+    on the bleeding side, like {{ card("Legal Manipulations") }}
+    and {{ card("Aire of Elation") }}.
+    {{ card("Underbridge Stray") }} is also a common inclusion,
+    as well as {{ card("Smiling Jack, The Anarch") }}.
+    {{ link("/deck-search", _("Yoann Guyader's deck"), twda_id="2013fnpf") }}
+    from the 2013 French NC is a an exemple.
+</p>
+<p>
+    The <strong>Howler</strong> variant is less frequent, it is a group 2 build using
+    {{ card("Howler") }}
+    and {{ card("The Siamese") }}.
+    Group 2 vampires are a bit more expensive and do miss a bit of superior <i>I</i>, so it makes including
+    some {{ card("Animalism") }} quite necessary. On the other hand,
+    the slightly bigger capacity allows for the use of
+    {{ card("Sense the Savage Way") }} to
+    increase intercept capabilities, and <i>R</i> is more present and allows for a more aggressive bleed module.
+    {{ link("/deck-search", _("Stephen Sing's deck"), twda_id="2011asiancc") }}
+    from the 2011 Asian Continental Championship is an example of this approach.
+</p>
+{% endblock %}
+
+{% block errata %}
+<div class="warning">
+    <h3>Errata</h3>
+    {{ erratum.pentextmsubversion( 'remove' ) }}
+</div>
+{% endblock %}
+
+{% block script %}
+<script>
+window.onload = function () {
+    document.getElementById("card-modal").addEventListener("keydown", modalKeydown)
+    document.getElementById("card-prev").addEventListener("click", prevCard)
+    document.getElementById("card-next").addEventListener("click", nextCard)
+    displayDeck({"author":null,"comments":"Ahrimane block, in the finals no outs was made do to anything else but anarch revolts.\n\nKey was Carlton using target vitals.\n","crypt":{"cards":[{"comments":null,"count":3,"id":"201023","name":"Muricia"},{"comments":null,"count":3,"id":"200404","name":"Effie Lowery"},{"comments":null,"count":1,"id":"200505","name":"Gentha Shale"},{"comments":null,"count":1,"id":"201220","name":"Sahana"},{"comments":null,"count":1,"id":"200185","name":"Beetleman"},{"comments":null,"count":1,"id":"200032","name":"Aiyana, The Wolfcatcher"},{"comments":null,"count":1,"id":"201318","name":"Stick"},{"comments":null,"count":1,"id":"200322","name":"Darlene Killian"}],"count":12},"date":"2018-08-26","event":"Polish NC 2018","library":{"cards":[{"cards":[{"comments":null,"count":5,"id":"102121","name":"Villein"},{"comments":null,"count":1,"id":"100085","name":"Archon Investigation"},{"comments":null,"count":1,"id":"100545","name":"Direct Intervention"},{"comments":null,"count":1,"id":"100698","name":"Fame"},{"comments":null,"count":1,"id":"100866","name":"Guardian Angel"},{"comments":null,"count":1,"id":"101384","name":"Pentex(TM) Subversion"},{"comments":null,"count":1,"id":"101439","name":"Powerbase: Montreal"},{"comments":null,"count":1,"id":"101896","name":"Sudden Reversal"},{"comments":null,"count":1,"id":"101536","name":"The Rack"},{"comments":null,"count":1,"id":"102088","name":"Vampiric Disease"}],"count":14,"type":"Master"},{"cards":[{"comments":null,"count":8,"id":"100515","name":"Deep Song"},{"comments":null,"count":4,"id":"100643","name":"Engling Fury"},{"comments":null,"count":2,"id":"100006","name":"Abbot"},{"comments":null,"count":1,"id":"100079","name":"Aranthebes, The Immortal"},{"comments":null,"count":1,"id":"101296","name":"Nose of the Hound"}],"count":16,"type":"Action"},{"cards":[{"comments":null,"count":8,"id":"100301","name":"Carrion Crows"},{"comments":null,"count":6,"id":"100029","name":"Aid from Bats"},{"comments":null,"count":3,"id":"101942","name":"Target Vitals"},{"comments":null,"count":2,"id":"100585","name":"Drawing Out the Beast"},{"comments":null,"count":2,"id":"101945","name":"Taste of Vitae"},{"comments":null,"count":1,"id":"100290","name":"Canine Horde"},{"comments":null,"count":1,"id":"101079","name":"Leapfrog"},{"comments":null,"count":1,"id":"101960","name":"Terror Frenzy"},{"comments":null,"count":1,"id":"102169","name":"Weighted Walking Stick"}],"count":25,"type":"Combat"},{"cards":[{"comments":null,"count":8,"id":"101916","name":"Swiftness of the Stag"}],"count":8,"type":"Combat/Action Modifier"},{"cards":[{"comments":null,"count":7,"id":"101840","name":"Speak with Spirits"},{"comments":null,"count":4,"id":"100694","name":"Falcon's Eye"},{"comments":null,"count":3,"id":"100308","name":"Cats' Guidance"},{"comments":null,"count":3,"id":"100599","name":"Ears of the Hare"},{"comments":null,"count":2,"id":"100519","name":"Delaying Tactics"},{"comments":null,"count":1,"id":"100760","name":"Forced Awakening"},{"comments":null,"count":1,"id":"100995","name":"Instinctive Reaction"},{"comments":null,"count":1,"id":"101321","name":"On the Qui Vive"}],"count":22,"type":"Reaction"},{"cards":[{"comments":null,"count":1,"id":"100001","name":".44 Magnum"},{"comments":null,"count":1,"id":"101014","name":"Ivory Bow"}],"count":2,"type":"Equipment"},{"cards":[{"comments":null,"count":1,"id":"100298","name":"Carlton Van Wyk"}],"count":1,"type":"Ally"},{"cards":[{"comments":null,"count":1,"id":"101249","name":"Mr. Winthrop"}],"count":1,"type":"Retainer"},{"cards":[{"comments":null,"count":1,"id":"100581","name":"Dragonbound"}],"count":1,"type":"Event"}],"count":90},"name":"Deadly kittens","place":"Warsaw, Poland","player":"Randal Rudstam","players_count":72,"score":"2GW7+2","tournament_format":"3R+F","twda_id":"2018pncwp"})
+}
+</script>
+{% endblock %}

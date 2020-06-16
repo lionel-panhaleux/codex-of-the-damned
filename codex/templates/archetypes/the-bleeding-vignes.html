@@ -1,0 +1,87 @@
+{% extends "archetypes/_layout.html" %}
+{% import "archetypes/_layout-erratum.html" as erratum %}
+
+{% block archetype_name %}
+<h1><img src="{{ url_for('static', filename='img/icons/clan-ventrue.svg') }}"> The Bleeding Vignes</h1>
+{% endblock %}
+
+{% block archetype %}>
+<h2>Highlights</h2>
+<p>
+    This is a <em>powerbleed</em> deck using {{ card("Edward Vignes") }}
+    and low capacity vampires with the <i>dr</i> disciplines.
+    {{ card("Edward Vignes") }} ability
+    to counter rush actions with a discard is an excellent protection against combat-oriented decks.
+</p>
+<p>
+    {{ card("Bonding") }} and
+    {{ card("Seduction") }} are used to get the bleed through.
+    {{ card("Anarch Troublemaker") }},
+    {{ card("Misdirection") }} and
+    {{ card("Pentex™ Subversion") }} are used to lock
+    the prey vampires, together with the <i>R</i>
+    {{ card("Mind Numb") }} +
+    {{ card("Majesty") }} combination.
+</p>
+<p>
+    {{ card("Deflection") }} and
+    {{ card("Delaying Tactics") }} are used for defence.
+</p>
+<p>
+    Getting some blood back on {{ card("Edward Vignes") }} is critical,
+    as many cards he uses have a blood cost, so
+    {{ card("The Coven") }},
+    {{ card("Giant's Blood") }} and
+    {{ card("Jake Washington") }} are included.
+    Even {{ card("Blood Doll") }} can be used to move blood from the pool.
+    In this example, {{ card("Life in the City") }} is added
+    to get even more blood back on the table.
+</p>
+<h2>Tips & Tricks</h2>
+<p>
+    The name of the archetype is a wordplay referring to
+    {{ card("Bleeding the Vine") }}.
+</p>
+<p>
+    {{ card("Daring the Dawn") }} and
+    {{ card("Foreshadowing Destruction") }}
+    are used for the lunge.
+    The use of {{ card("Direct Intervention") }} on a modifier
+    like {{ card("Conditioning") }} prevents it to be played again on the
+    same action (as a modifier can only be played once and, even if countered).
+    Using an alternative bleed enhancer is permitted though
+    (the modifier did not apply, so limited bleed enhancement is still possible).
+    {{ card("Foreshadowing Destruction") }}
+    can even save a lunge this way.
+</p>
+<p>
+    The deck is expected to be very aggressive toward its prey and get a quick victory point in the game beginning,
+    so {{ card("The Bitter and Sweet Story") }} makes sense
+    as it will help keeping some momentum afterwards.
+</p>
+<h2>Variants</h2>
+<p>
+    There are not many variations to this archetype.
+    {{ card("Life in the City") }} is an original inclusion,
+    {{ card("Entrancement") }} and
+    {{ card("Force of Personality") }} are often included.
+</p>
+{% endblock %}
+
+{% block errata %}
+<div class="warning">
+    <h3>Errata</h3>
+    {{ erratum.pentextmsubversion( 'undecided' ) }}
+</div>
+{% endblock %}
+
+{% block script %}
+<script>
+window.onload = function () {
+    document.getElementById("card-modal").addEventListener("keydown", modalKeydown)
+    document.getElementById("card-prev").addEventListener("click", prevCard)
+    document.getElementById("card-next").addEventListener("click", nextCard)
+    displayDeck({"author":null,"comments":"","crypt":{"cards":[{"comments":null,"count":3,"id":"200403","name":"Edward Vignes"},{"comments":null,"count":2,"id":"201162","name":"Ranjan Rishi, Camarilla Scholar"},{"comments":null,"count":1,"id":"200040","name":"Alan Sovereign"},{"comments":null,"count":1,"id":"200212","name":"Boss Callihan"},{"comments":null,"count":1,"id":"200256","name":"Catherine du Bois"},{"comments":null,"count":1,"id":"200407","name":"Elena Gutierrez"},{"comments":null,"count":1,"id":"200635","name":"Ingrid Russo"},{"comments":null,"count":1,"id":"201125","name":"Pieter van Dorn"},{"comments":null,"count":1,"id":"200342","name":"Diana Vick"}],"count":12},"date":"2010-05-29","event":"Belgian ECQ","library":{"cards":[{"cards":[{"comments":null,"count":6,"id":"101104","name":"Life in the City"},{"comments":null,"count":3,"id":"100199","name":"Blood Doll"},{"comments":null,"count":2,"id":"100058","name":"Anarch Troublemaker"},{"comments":null,"count":2,"id":"101225","name":"Misdirection"},{"comments":null,"count":2,"id":"101384","name":"Pentex(TM) Subversion"},{"comments":null,"count":1,"id":"100824","name":"Giant's Blood"},{"comments":null,"count":1,"id":"101019","name":"Jake Washington"},{"comments":null,"count":1,"id":"100435","name":"The Coven"}],"count":18,"type":"Master"},{"cards":[{"comments":null,"count":11,"id":"100845","name":"Govern the Unaligned"},{"comments":null,"count":3,"id":"101211","name":"Mind Numb"}],"count":14,"type":"Action"},{"cards":[{"comments":null,"count":6,"id":"100236","name":"Bonding"},{"comments":null,"count":5,"id":"100401","name":"Conditioning"},{"comments":null,"count":5,"id":"101712","name":"Seduction"},{"comments":null,"count":3,"id":"100492","name":"Daring the Dawn"},{"comments":null,"count":3,"id":"100765","name":"Foreshadowing Destruction"}],"count":22,"type":"Action Modifier"},{"cards":[{"comments":null,"count":7,"id":"101144","name":"Majesty"}],"count":7,"type":"Combat"},{"cards":[{"comments":null,"count":10,"id":"100518","name":"Deflection"},{"comments":null,"count":3,"id":"100519","name":"Delaying Tactics"}],"count":13,"type":"Reaction"},{"cards":[{"comments":null,"count":1,"id":"100163","name":"The Bitter and Sweet Story"}],"count":1,"type":"Event"}],"count":75},"name":"Vignes in the City","place":"Brussels, Belgium","player":"Izaak Havelaar","players_count":31,"score":"2.5VP in final","tournament_format":"3R+F","twda_id":"2010belgianecq"})
+}
+</script>
+{% endblock %}
