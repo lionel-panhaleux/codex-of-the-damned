@@ -1,0 +1,113 @@
+{% extends "best-cards/_layout.html" %}
+
+{% block content %}
+<h1><img src="{{ url_for('static', filename='img/icons/clan-brujah.svg') }}"> Brujah</h1>
+<p>
+    Brujah and their antitribu have some vampires with excellent abilities and
+    good clan cards. Their <i>rpc</i> disciplines combination give them access to excellent
+    combat options (hindered by lack of damage prevention) and good political tricks.
+    The most played archetype for the clan is the
+    {{ link("/archetypes/euro-brujah", _("Euro Brujah")) }}, using Brujah princes with <i>d</i>.
+    The antitribu, especially with {{ card("Armin Brenner") }},
+    gave birth to interesting vote constructs, too.
+</p>
+<h2>Highlights</h2>
+<div class="column">
+    <div class="column-image">
+        <img src="{{ url_for('static', filename='img/card-images/dmitrailyanova.jpg') }}">
+        <h4>Dmitra Ilyanova</h4>
+        <p class="center-subtitle">played in 71 decks, typically 1-4 copies</p>
+    </div>
+    <p>
+        Her Justicar title combined with <i>R</i>, <i>o</i> and a good political ability
+        makes her an excellent tool in many Camarilla vote constructs.
+        Her access to <i>F</i> also gives her the ability to play
+        {{ card("Forced March") }} for additional actions.
+        She is definitely the star of the clan.
+    </p>
+</div>
+<div class="column">
+    <div class="column-image">
+        <img src="{{ url_for('static', filename='img/card-images/volkerthepuppetprince.jpg') }}">
+        <h4>Volker, The Puppet Prince</h4>
+        <p class="center-subtitle">played in 65 decks, typically 1-2 copies</p>
+    </div>
+    <p>
+        Volker is one of the cheapest Prince around, and he finds its place in many Camarilla Royalty
+        constructs.
+        Its superior <i>C</i> also makes him a good asset in other <i>C</i> constructs —
+        he founds an easy place in Toreador {{ link("/archetypes/aaa", _("AAA")) }} archetype for
+        example.
+    </p>
+</div>
+<div class="column">
+    <div class="column-image">
+        <img src="{{ url_for('static', filename='img/card-images/adanadesforza.jpg') }}">
+        <h4>Adana de Sforza</h4>
+        <p class="center-subtitle">played in 54 decks, typically 1-2 copies</p>
+    </div>
+    <p>
+        With the <i>OR</i> disciplines, she finds her place in Inner Circle constructs using these
+        disciplines.
+    </p>
+</div>
+<div class="column">
+    <div class="column-image">
+        <img src="{{ url_for('static', filename='img/card-images/newcarthage.jpg') }}">
+        <h4>New Carthage</h4>
+        <p class="center-subtitle">played in 34 decks, typically 1-2 copies</p>
+    </div>
+    <p>
+        As Brujah have a lot of good titled vampires among their ranks, this location often finds its place
+        amidst them as the cornerstone of their offensive strategy.
+        The bonus in both vote and bleed is a definitive edge.
+    </p>
+</div>
+<div class="column">
+    <div class="column-image">
+        <img src="{{ url_for('static', filename='img/card-images/karensuadela.jpg') }}">
+        <h4>Karen Suadela</h4>
+        <p class="center-subtitle">played in 31 decks, typically 1-3 copies</p>
+    </div>
+    <p>
+        A Prince with <i>oR</i> and bonus stealth on political action, she makes a perfect partner for her
+        Justicar {{ card("Dmitra Ilyanova") }}, often alongside
+        {{ card("Tara") }}.
+    </p>
+</div>
+<div class="column">
+    <div class="column-image">
+        <img src="{{ url_for('static', filename='img/card-images/sarahbrando.jpg') }}">
+        <h4>Sarah Brando</h4>
+        <p class="center-subtitle">played in 26 decks, typically 1-2 copies</p>
+    </div>
+    <p>
+        A cheap vampire with superior <i>C</i>, she gets a spot in many <i>C</i> decks.
+    </p>
+</div>
+<div class="column">
+    <div class="column-image">
+        <img src="{{ url_for('static', filename='img/card-images/wastemanagementoperation.jpg') }}">
+        <h4>Waste Management Operation</h4>
+        <p class="center-subtitle">played in 26 decks, typically 1-2 copies</p>
+    </div>
+    <p>
+        A decent recursion helper, although getting the cards on the bottom of the library is more useful if
+        you
+        get to shuffle it at some point.
+    </p>
+</div>
+<div class="column">
+    <div class="column-image">
+        <img src="{{ url_for('static', filename='img/card-images/arminbrenner.jpg') }}">
+        <h4>Armin Brenner</h4>
+        <p class="center-subtitle">played in 18 decks, typically 2-4 copies</p>
+    </div>
+    <p>
+        A good voter with an excellent ability, his access to <i>o</i> and <i>F</i> are very strong points
+        as he
+        gets to play some stealth and {{ card("Forced March") }}
+        for additional actions.
+    </p>
+</div>
+{% endblock %}

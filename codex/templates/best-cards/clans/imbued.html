@@ -1,0 +1,206 @@
+{% extends "best-cards/_layout.html" %}
+
+{% block content %}
+<h1><img src="{{ url_for('static', filename='img/icons/creed-visionary.svg') }}"> Imbued</h1>
+<p>
+    The Imbued have a special place in the game: they are not vampires, but mortal allies.
+    They are organised in creeds instead of clans, and have virtues instead of disciplines.
+    Their bizarre handling and specific ruleset makes them unique, and they have given birth to
+    their own {{ link("/archetypes/hunters", _("Hunters")) }} archetype.
+</p>
+<p>
+    They have a unique access to Powers (an easy inclusion as they are fetched at +1 stealth with unlock)
+    and Convictions cards (all three played in imbued decks as they stack and have no downside).
+</p>
+<h2>Highlights</h2>
+<div class="column">
+    <div class="column-image">
+        <img src="{{ url_for('static', filename='img/card-images/secondsight.jpg') }}">
+        <h4>Second Sight</h4>
+        <p class="center-subtitle">played in 63 decks, typically 3-8 copies</p>
+    </div>
+    <p>
+        The most played <em>Conviction</em>. Usually all three <em>Conviction</em> cards are played in
+        imbued decks,
+        but {{ card("Béatrice") }} is often added
+        to vampire crypts for additional bleed, and all she really needs is this <em>Conviction</em> for a
+        bit of stealth.
+    </p>
+</div>
+<div class="column">
+    <div class="column-image">
+        <img src="{{ url_for('static', filename='img/card-images/reactwithconviction.jpg') }}">
+        <h4>React with Conviction</h4>
+        <p class="center-subtitle">played in 61 decks, typically 3-6 copies</p>
+    </div>
+    <p>
+        This is usually the first <em>Conviction</em> any Imbued fetches when he comes into play,
+        as it protects them against anti-ally actions like
+        {{ card("Entrancement") }}.
+    </p>
+</div>
+<div class="column">
+    <div class="column-image">
+        <img src="{{ url_for('static', filename='img/card-images/strikewithconviction.jpg') }}">
+        <h4>Strike with Conviction</h4>
+        <p class="center-subtitle">played in 61 decks, typically 3-8 copies</p>
+    </div>
+    <p>
+        An excellent <em>Conviction</em> that boosts combat or bleed depending on the need.
+        As it is a <em>Conviction</em>, it can be used every turn and come back into play during the unlock
+        phase.
+    </p>
+</div>
+<div class="column">
+    <div class="column-image">
+        <img src="{{ url_for('static', filename='img/card-images/beatriceoracle171tremblay.jpg') }}">
+        <h4>Béatrice "Oracle171" Tremblay</h4>
+        <p class="center-subtitle">played in 14 decks, typically 1-3 copies</p>
+    </div>
+    <p>
+        A good bleeding minion for just 3 pool, she gets included in vampire crypts to help with the bleed,
+        as her ability makes her impractical in Imbued crypts.
+        Helped by a {{ card("Second Sight") }} for stealth,
+        she becomes an interesting minion.
+    </p>
+</div>
+<div class="column">
+    <div class="column-image">
+        <img src="{{ url_for('static', filename='img/card-images/jenniecassie247orne.jpg') }}">
+        <h4>Jennie "Cassie247" Orne</h4>
+        <p class="center-subtitle">played in 50 decks, typically 2-3 copies</p>
+    </div>
+    <p>
+        Her ability is the cornerstone of most Imbued decks.
+        Not only can the Imbued come back from Incapacity (their version of torpor) with only
+        two <em>Convictions</em> instead of three, they can also do so during any turn.
+        As Imbued are fragile, this additional protection is welcome.
+    </p>
+</div>
+<div class="column">
+    <div class="column-image">
+        <img src="{{ url_for('static', filename='img/card-images/angelofberlin.jpg') }}">
+        <h4>Angel of Berlin</h4>
+        <p class="center-subtitle">played in 50 decks, typically 3-6 copies</p>
+    </div>
+    <p>
+        A versatile out-of-turn Master. It can be used as a wake, but also as a way to bring equipment into
+        play
+        without being blocked. As Imbued do not get so much stealth, this is a real asset to gear them up.
+    </p>
+</div>
+<div class="column">
+    <div class="column-image">
+        <img src="{{ url_for('static', filename='img/card-images/churchofvindicatedfaiththe.jpg') }}">
+        <h4>The Church of Vindicated Faith</h4>
+        <p class="center-subtitle">played in 49 decks, typically 1-2 copies</p>
+    </div>
+    <p>
+        A decent bloating device for Imbued decks, it is included in most of them, sometimes in multiple
+        copies.
+    </p>
+</div>
+<div class="column">
+    <div class="column-image">
+        <img src="{{ url_for('static', filename='img/card-images/crusaderswordthe.jpg') }}">
+        <h4>The Crusader Sword</h4>
+        <p class="center-subtitle">played in 45 decks, typically 1 copy</p>
+    </div>
+    <p>
+        A powerful weapon only Imbued can wield. It gets included in most Imbued decks.
+    </p>
+</div>
+<div class="column">
+    <div class="column-image">
+        <img src="{{ url_for('static', filename='img/card-images/travistraveler72miller.jpg') }}">
+        <h4>Travis "Traveler72" Miller</h4>
+        <p class="center-subtitle">played in 44 decks, typically 2-3 copies</p>
+    </div>
+    <p>
+        His virtues are useful and his ability is an excellent bloat device,
+        so he gets included in many Imbued decks.
+    </p>
+</div>
+<div class="column">
+    <div class="column-image">
+        <img src="{{ url_for('static', filename='img/card-images/francoiswardenloehr.jpg') }}">
+        <h4>François "Warden" Loehr</h4>
+        <p class="center-subtitle">played in 44 decks, typically 1-2 copies</p>
+    </div>
+    <p>
+        Good virtues for a decent price, his ability is also quite nice as it deters rush actions against
+        him.
+    </p>
+</div>
+<div class="column">
+    <div class="column-image">
+        <img src="{{ url_for('static', filename='img/card-images/vigilance.jpg') }}">
+        <h4>Vigilance</h4>
+        <p class="center-subtitle">played in 44 decks, typically 3-5 copies</p>
+    </div>
+    <p>
+        Jewel of the <em>Justice</em> virtue, the combination of <em>drive</em> and <em>wake</em> effects
+        makes for a very nice bonus in {{ link("/strategy/fundamentals", _("A&B"), _anchor="AB") }}.
+    </p>
+</div>
+<div class="column">
+    <div class="column-image">
+        <img src="{{ url_for('static', filename='img/card-images/jackhannibal137harmon.jpg') }}">
+        <h4>Jack "Hannibal137" Harmon</h4>
+        <p class="center-subtitle">played in 43 decks, typically 1-2 copies</p>
+    </div>
+    <p>
+        Excellent virtues with a good combat ability, he gets included in most Imbued decks.
+    </p>
+</div>
+<div class="column">
+    <div class="column-image">
+        <img src="{{ url_for('static', filename='img/card-images/discern.jpg') }}">
+        <h4>Discern</h4>
+        <p class="center-subtitle">played in 40 decks, typically 2-4 copies</p>
+    </div>
+    <p>
+        Second excellent <em>Justice</em> power after <span class="card"
+            onclick="dC('vigilance')">Vigilance</span>,
+        it explains why the <em>Justice</em> virtue is the most played among Imbued.
+        Combined with {{ card("The Unmasking") }}, it transforms
+        the Imbued in excellent blockers.
+    </p>
+</div>
+<div class="column">
+    <div class="column-image">
+        <img src="{{ url_for('static', filename='img/card-images/rejuvenate.jpg') }}">
+        <h4>Rejuvenate</h4>
+        <p class="center-subtitle">played in 40 decks, typically 2-4 copies</p>
+    </div>
+    <p>
+        This regeneration ability makes any Imbued with the <em>Defense</em> virtue quite sturdy.
+        As Imbued can not hunt, this is one of the few ways they can get some life back.
+    </p>
+</div>
+<div class="column">
+    <div class="column-image">
+        <img src="{{ url_for('static', filename='img/card-images/determine.jpg') }}">
+        <h4>Determine</h4>
+        <p class="center-subtitle">played in 34 decks, typically 2-5 copies</p>
+    </div>
+    <p>
+        The only bounce Imbued can use against bleeds, it is easy to include as
+        {{ card("Jennie") }} has the <em>Visionary</em>
+        virtue.
+        It can also be used to cancel an action on the prey side, so it is very versatile.
+    </p>
+</div>
+<div class="column">
+    <div class="column-image">
+        <img src="{{ url_for('static', filename='img/card-images/champion.jpg') }}">
+        <h4>Champion</h4>
+        <p class="center-subtitle">played in 31 decks, typically 1-2 copies</p>
+    </div>
+    <p>
+        Another good <em>Defense</em> power, as it can be used to "block" bleeds
+        without even needing intercept. The <em>Conviction</em> cost is a bit high,
+        but the threat of it alone can slow down an aggressive predator.
+    </p>
+</div>
+{% endblock %}

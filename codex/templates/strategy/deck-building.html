@@ -1,9 +1,7 @@
-{% extends "layout.html" %}
+{% extends "strategy/_layout.html" %}
 
 {% block head %}
 {{ super() }}
-<!-- Adding needed scripts -->
-<script src="{{ url_for('static', filename='js/dC.js') }}"></script>
 <script src="{{ url_for('static', filename='js/statistics.js') }}"></script>
 {% endblock %}
 
@@ -110,9 +108,15 @@
     Multiple cards are available to provide good cycling options:
 </p>
 <ul>
-    <li class="card" onclick="dC('dreamsofthesphinx')">Dreams of the Sphinx</li>
-    <li class="card" onclick="dC('barrensthe')">The Barrens</li>
-    <li class="card" onclick="dC('heartofnizchetus')">Heart of Nizchetus</li>
+    <li>
+		{{ card("Dreams of the Sphinx") }}
+	</li>
+    <li>
+		{{ card("The Barrens") }}
+	</li>
+    <li>
+		{{ card("Heart of Nizchetus") }}
+	</li>
     <li>
         {{ card("Fragment of the Book of Nod") }}
         (need to be defended)
@@ -246,8 +250,8 @@
 </p>
 <p>
     During this card selection process, only add <strong>one copy of each card</strong> you want to play.
-    Check the <a href="../best-cards/index.html">best cards</a> and the
-    <a href="../deck-search/index.html">deck archive</a> for ideas.
+    Check the {{ link("/best-cards", _("best cards")) }} and the
+    {{ link("/deck-search", _("deck archive")) }} for ideas.
     If you find tournament winning examples close to your deck list, they may give you ideas about what to include.
 </p>
 <p>

@@ -1,10 +1,4 @@
-{% extends "layout.html" %}
-
-{% block head %}
-{{ super() }}
-<!-- Adding needed scripts -->
-<script src="{{ url_for('static', filename='js/dC.js') }}"></script>
-{% endblock %}
+{% extends "strategy/_layout.html" %}
 
 {% block content %}
 <h1 id="bloat">Bloat</h1>
@@ -93,8 +87,12 @@
         {{ card("Weeping Stone") }}
         (Black Hand, costly and fragile)
     </li>
-    <li class="card" onclick="dC('perfectionist')">Perfectionist</li>
-    <li class="card" onclick="dC('lifeinthecity')">Life in the City</li>
+    <li>
+		{{ card("Perfectionist") }}
+	</li>
+    <li>
+		{{ card("Life in the City") }}
+	</li>
     <li>
         {{ card("Procurer") }} (costly and fragile)
     </li>
@@ -132,11 +130,13 @@
     using Master cards. A few cards allow this:
 </p>
 <ul>
-    <li class="card" onclick="dC('liquidation')">Liquidation</li>
+    <li>
+		{{ card("Liquidation") }}
+	</li>
     <li>
         {{ card("Ashur Tablets") }}
         (uses up a lot of Master slots, best in an MMPA archetypes
-        like the <a href="../archetypes/girls-will-find-inner-circles.html">Girls Will Find Inner Circles</a>)
+        like the {{ link("/archetypes/girls-will-find-inner-circle", _("Girls Will Find Inner Circle")) }})
     </li>
     <li>
         {{ card("Powerbase: Montreal") }}
@@ -235,8 +235,8 @@
 <p>
     Actions getting blood on uncontrolled vampires with no alternative are less efficient.
     They can still come in handy when used in swarm constructs to get many vampiers out quickly, as is the case for
-    <img src="{{ url_for('static', filename='img/icons/clan-toreador-anti.svg') }}"> <span class="card"
-        onclick="dC('artscam')">Art Scam</span> and
+    <img src="{{ url_for('static', filename='img/icons/clan-toreador-anti.svg') }}">
+	{{ card("Art Scam") }} and
     Black Hand {{ card("Reunion Kamut") }}, but otherwise they
     are only used sparsingly. <img src="{{ url_for('static', filename='img/icons/clan-guruhi.svg') }}">
     {{ card("Founders of the Ebony Kingdom") }}
@@ -252,10 +252,18 @@
         They are so efficient, virtually every political oriented deck include some of them:
     </p>
     <ul>
-        <li class="card" onclick="dC('consanguineousboon')">Consanguineous Boon</li>
-        <li class="card" onclick="dC('diversity')">Diversity</li>
-        <li class="card" onclick="dC('autarkispersecution')">Autarkis Persecution</li>
-        <li class="card" onclick="dC('anathema')">Anathema</li>
+        <li>
+			{{ card("Consanguineous Boon") }}
+		</li>
+        <li>
+			{{ card("Diversity") }}
+		</li>
+        <li>
+			{{ card("Autarkis Persecution") }}
+		</li>
+        <li>
+			{{ card("Anathema") }}
+		</li>
         <li>
             {{ card("Parity Shift") }}
             (Prince or Justicar)

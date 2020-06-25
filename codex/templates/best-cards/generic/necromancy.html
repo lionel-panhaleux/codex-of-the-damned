@@ -1,0 +1,102 @@
+{% extends "best-cards/_layout.html" %}
+
+{% block content %}
+<h1><i>n</i> Necromancy</h1>
+<div class="tip">
+    <p>
+        <i>n</i> provides a wide range of possibility, including more than its share of ash heap
+        manipulations.
+    </p>
+</div>
+<div class="column">
+    <div class="column-image">
+        <img src="{{ url_for('static', filename='img/card-images/callofthehungrydead.jpg') }}">
+        <h4>Call of the Hungry Dead</h4>
+        <p class="center-subtitle">played in 137 decks, typically 3-7 copies</p>
+    </div>
+    <p>
+        Played in most <i>n</i> decks, it is an excellent block denial card. Combined with
+        {{ card("Seduction") }},
+        it can get any action through without even fighting for stealth.
+    </p>
+</div>
+<div class="column">
+    <div class="column-image">
+        <img src="{{ url_for('static', filename='img/card-images/spectraldivination.jpg') }}">
+        <h4>Spectral Divination</h4>
+        <p class="center-subtitle">played in 117 decks, typically 3-6 copies</p>
+    </div>
+    <p>
+        A very versatile card, although the 1 blood cost is a bit high.
+    </p>
+</div>
+<div class="column">
+    <div class="column-image">
+        <img src="{{ url_for('static', filename='img/card-images/spiritualintervention.jpg') }}">
+        <h4>Spiritual Intervention</h4>
+        <p class="center-subtitle">played in 65 decks, typically 3-7 copies</p>
+    </div>
+    <p>
+        An excellent defensive combat card, providing a <em>combat ends</em> effect
+        for no cost at superior <i>N</i>, and still a useful <em>dodge</em> for inferior <i>n</i>.
+    </p>
+</div>
+<div class="column">
+    <div class="column-image">
+        <img src="{{ url_for('static', filename='img/card-images/shamblinghordes.jpg') }}">
+        <h4>Shambling Hordes</h4>
+        <p class="center-subtitle">played in 55 decks, typically 5-17 copies</p>
+    </div>
+    <p>
+        An excellent ally with solid combat abilities. A bit tricky to play or include in a deck,
+        as it needs an ally or vampire in the ash heap already.
+    </p>
+</div>
+<div class="column">
+    <div class="column-image">
+        <img src="{{ url_for('static', filename='img/card-images/trochomancy.jpg') }}">
+        <h4>Trochomancy</h4>
+        <p class="center-subtitle">played in 36 decks, typically 1-4 copies</p>
+    </div>
+    <p>
+        Generally inferior to the newer
+        {{ card("Inevitability of the Void") }},
+        it's an excellent bleed enhancer, and its effect can be a good deterrent against {Ashur Tablets}.
+    </p>
+</div>
+<div class="column">
+    <div class="column-image">
+        <img src="{{ url_for('static', filename='img/card-images/breathofthanatos.jpg') }}">
+        <h4>Breath of Thanatos</h4>
+        <p class="center-subtitle">played in 33 decks, typically 2-4 copies</p>
+    </div>
+    <p>
+        Although less used than the defensive
+        {{ card("Spiritual Intervention") }},
+        the aggravated damage at superior <i>N</i> is dreadful, even more so when combined with
+        {{ card("Target Vitals") }}.
+        If the deck uses wraiths, the card becomes very versatile.
+    </p>
+</div>
+<div class="column">
+    <div class="column-image">
+        <img src="{{ url_for('static', filename='img/card-images/chairofhades.jpg') }}">
+        <h4>Chair of Hades</h4>
+        <p class="center-subtitle">played in 20 decks, typically 1-2 copies</p>
+    </div>
+    <p>
+        An excellent ally remover at no cost, it can even be used against low capacity vampires.
+    </p>
+</div>
+<div class="column">
+    <div class="column-image">
+        <img src="{{ url_for('static', filename='img/card-images/funeralwake.jpg') }}">
+        <h4>Funeral Wake</h4>
+        <p class="center-subtitle">played in 16 decks, typically 1-3 copies</p>
+    </div>
+    <p>
+        A decent wake reaction, it becomes very good in allies-oriented decks once
+        {{ card("The Unmasking") }} is in play.
+    </p>
+</div>
+{% endblock %}

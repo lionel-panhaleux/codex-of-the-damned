@@ -1,10 +1,4 @@
-{% extends "layout.html" %}
-
-{% block head %}
-{{ super() }}
-<!-- Adding needed scripts -->
-<script src="{{ url_for('static', filename='js/dC.js') }}"></script>
-{% endblock %}
+{% extends "strategy/_layout.html" %}
 
 {% block content %}
 <h1 id="bloat">Table talk</h1>

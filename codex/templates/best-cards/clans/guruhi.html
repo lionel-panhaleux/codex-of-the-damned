@@ -1,0 +1,113 @@
+{% extends "best-cards/_layout.html" %}
+
+{% block content %}
+<h1><img src="{{ url_for('static', filename='img/icons/clan-guruhi.svg') }}"> Guruhi</h1>
+<p>
+    The Guruhi and their unique <i>irp</i> disciplines combination have excellent vampires with outstanding
+    abilities. This led to the {{ link("/archetypes/nananimalism", _("Nananimalism")) }} archetype,
+    a weenie <i>i</i> build using
+    {{ card("Nana Buruku") }} as star, and the
+    {{ link("/archetypes/guruhi-rush", _("Guruhi Rush")) }}, using
+    {{ card("Nangila Were") }} and the <i>ip</i> combination for
+    combat.
+</p>
+<p>
+    The lack of damage prevention is an issue for combat-oriented builds, but the access to
+    {{ card("Immortal Grapple") }} makes up for it.
+    Multiple vote constructs have also been seen.
+</p>
+<h2>Highlights</h2>
+<div class="column">
+    <div class="column-image">
+        <img src="{{ url_for('static', filename='img/card-images/nanaburuku.jpg') }}">
+        <h4>Nana Buruku</h4>
+        <p class="center-subtitle">played in 91 decks, typically 2-4 copies</p>
+    </div>
+    <p>
+        The absolute star of the Guruhi clan, she is often played for her rare ability to grant more Master
+        actions.
+        Her disciplines are often a secondary subject and she is largely played in non-Guruhi constructs.
+    </p>
+</div>
+<div class="column">
+    <div class="column-image">
+        <img src="{{ url_for('static', filename='img/card-images/fish.jpg') }}">
+        <h4>Fish</h4>
+        <p class="center-subtitle">played in 39 decks, typically 1-2 copies</p>
+    </div>
+    <p>
+        <i>AP</i> for only 5 pool is a bargain. An easy inclusion in any Guruhi or Nosferatu
+        build.
+    </p>
+</div>
+<div class="column">
+    <div class="column-image">
+        <img src="{{ url_for('static', filename='img/card-images/nangilawere.jpg') }}">
+        <h4>Nangila Were</h4>
+        <p class="center-subtitle">played in 24 decks, typically 1-3 copies</p>
+    </div>
+    <p>
+        All clan disciplines at superior with a rush ability included.
+        A must-have in rush decks, often played along
+        {{ card("Nana Buruku") }}.
+    </p>
+</div>
+<div class="column">
+    <div class="column-image">
+        <img src="{{ url_for('static', filename='img/card-images/lumumba.jpg') }}">
+        <h4>Lumumba</h4>
+        <p class="center-subtitle">played in 16 decks, typically 1 copy</p>
+    </div>
+    <p>
+        A cheap price for superior <i>R</i>, he can even be included in mono <i>r</i> builds.
+    </p>
+</div>
+<div class="column">
+    <div class="column-image">
+        <img src="{{ url_for('static', filename='img/card-images/foundersoftheebonykingdom.jpg') }}">
+        <h4>Founders of the Ebony Kingdom</h4>
+        <p class="center-subtitle">played in 15 decks, typically 2-7 copies</p>
+    </div>
+    <p>
+        One of the best bloating device in the game, only available to Guruhi and difficult to play in
+        multi-clans decks.
+    </p>
+</div>
+<div class="column">
+    <div class="column-image">
+        <img src="{{ url_for('static', filename='img/card-images/luciantheperfect.jpg') }}">
+        <h4>Lucian, the Perfect</h4>
+        <p class="center-subtitle">played in 14 decks, typically 1-4 copies</p>
+    </div>
+    <p>
+        The only vampire of the game with a bleed power of 4.
+        Worth mentioning, even if he is often played in big capacity <i>DO</i> decks with no Guruhi
+        specifics.
+    </p>
+</div>
+<div class="column">
+    <div class="column-image">
+        <img src="{{ url_for('static', filename='img/card-images/guruhikholo.jpg') }}">
+        <h4>Guruhi Kholo</h4>
+        <p class="center-subtitle">played in 13 decks, typically 1 copy</p>
+    </div>
+    <p>
+        An additional title that is unlikely to contest, it's a worthy inclusion in a political deck
+        and a useful addition to
+        {{ card("Nana Buruku") }} or
+        {{ card("Aren") }}.
+    </p>
+</div>
+<div class="column">
+    <div class="column-image">
+        <img src="{{ url_for('static', filename='img/card-images/ugadja.jpg') }}">
+        <h4>Ugadja</h4>
+        <p class="center-subtitle">played in 11 decks, typically 1-2 copies</p>
+    </div>
+    <p>
+        A magaji with a useful ability, his cost is a bit steep, but he finds his place in a political
+        deck, and his <i>W</i> discipline can get him into Akunanse decks, although he is more often
+        associated with {{ card("Eze, The Demon Prince") }}.
+    </p>
+</div>
+{% endblock %}

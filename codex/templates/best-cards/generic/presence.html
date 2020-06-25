@@ -1,0 +1,110 @@
+{% extends "best-cards/_layout.html" %}
+
+{% block content %}
+<h1><i>p</i> Presence</h1>
+<div class="tip">
+    <p>
+        <i>r</i> is a versatile discipline. It provides a strong bleed,
+        a defensive combat module with <em>Strike: combat ends</em> and good
+        modifiers for votes.
+    </p>
+</div>
+<div class="column">
+    <div class="column-image">
+        <img src="{{ url_for('static', filename='img/card-images/majesty.jpg') }}">
+        <h4>Majesty</h4>
+        <p class="center-subtitle">played in 404 decks, typically 3-8 copies</p>
+    </div>
+    <p>
+        The most played <em>combat ends</em> of <i>r</i>, the unlock effect as superior <i>R</i>
+        is an excellent asset and augments {{ link("/strategy/fundamentals", _("A&B"), _anchor="AB") }},
+        both offensively and defensively.
+    </p>
+</div>
+<div class="column">
+    <div class="column-image">
+        <img src="{{ url_for('static', filename='img/card-images/entrancement.jpg') }}">
+        <h4>Entrancement</h4>
+        <p class="center-subtitle">played in 380 decks, typically 1-4 copies</p>
+    </div>
+    <p>
+        A versatile action. Included for its dreadful superior <i>R</i> effect that can steal a powerful
+        ally,
+        its simple bleed action at inferior <i>r</i> makes it far more flexible than <i>d</i>
+        {{ card("Far Mastery") }}.
+    </p>
+</div>
+<div class="column">
+    <div class="column-image">
+        <img src="{{ url_for('static', filename='img/card-images/votercaptivation.jpg') }}">
+        <h4>Voter Captivation</h4>
+        <p class="center-subtitle">played in 288 decks, typically 3-7 copies</p>
+    </div>
+    <p>
+        A powerful bloat for vote oriented decks. With enough votes on the table, it can resplenish a
+        vampire easily and make it ready for another
+        {{ card("Minion Tap") }} and constitue a formidable defense.
+    </p>
+</div>
+<div class="column">
+    <div class="column-image">
+        <img src="{{ url_for('static', filename='img/card-images/aireofelation.jpg') }}">
+        <h4>Aire of Elation</h4>
+        <p class="center-subtitle">played in 152 decks, typically 1-5 copies</p>
+    </div>
+    <p>
+        The best bleed modifier of <i>r</i>, it is inferior to <i>d</i>
+        {{ card("Conditioning") }},
+        except for Toreador <img src="../../icons/clan-toreador.svg" />.
+        Still, such a strong bleed modifier is worth it for decks with no access to <i>d</i>.
+    </p>
+</div>
+<div class="column">
+    <div class="column-image">
+        <img src="{{ url_for('static', filename='img/card-images/perfectparagon.jpg') }}">
+        <h4>Perfect Paragon</h4>
+        <p class="center-subtitle">played in 145 decks, typically 1-4 copies</p>
+    </div>
+    <p>
+        A versatile tool for big capacity vote decks:
+        more votes or a good modifier to help get an action through.
+    </p>
+</div>
+<div class="column">
+    <div class="column-image">
+        <img src="{{ url_for('static', filename='img/card-images/enchantkindred.jpg') }}">
+        <h4>Enchant Kindred</h4>
+        <p class="center-subtitle">played in 124 decks, typically 3-8 copies</p>
+    </div>
+    <p>
+        A weaker version of the popular <i>d</i>
+        {{ card("Govern the Unaligned") }}, it has the same
+        advantages: a good accelerator in the beginning to get more vampires out cheaply, a nice bleed
+        action
+        later on.
+    </p>
+</div>
+<div class="column">
+    <div class="column-image">
+        <img src="{{ url_for('static', filename='img/card-images/bewitchingoration.jpg') }}">
+        <h4>Bewitching Oration</h4>
+        <p class="center-subtitle">played in 121 decks, typically 2-5 copies</p>
+    </div>
+    <p>
+        One of the best vote modifier of the game with 4 votes at no cost at superior <i>R</i>.
+    </p>
+</div>
+<div class="column">
+    <div class="column-image">
+        <img src="{{ url_for('static', filename='img/card-images/awe.jpg') }}">
+        <h4>Awe</h4>
+        <p class="center-subtitle">played in 106 decks, typically 1-4 copies</p>
+    </div>
+    <p>
+        A bit more expensive than
+        {{ card("Bewitching Oration") }},
+        it gives a better guarantee to be able to get a vote through and its cost can be mitigated
+        if paired with {{ card("Voter Captivation") }}.
+    </p>
+</div>
+{% endblock %}

@@ -41,9 +41,12 @@
     </div>
     {% endblock %}
 
+	{% block article %}
     <article>
         {% block content %}{% endblock %}
     </article>
+	{% endblock %}
+	
     <footer>
         {% block footer %}
         <nav role="navigation">

@@ -1,10 +1,4 @@
-{% extends "layout.html" %}
-
-{% block head %}
-{{ super() }}
-<!-- Adding needed scripts -->
-<script src="{{ url_for('static', filename='js/dC.js') }}"></script>
-{% endblock %}
+{% extends "strategy/_layout.html" %}
 
 {% block content %}
 <h1 id="archetypes">Archetypes</h1>
@@ -40,49 +34,49 @@
         Lasombra <img src="{{ url_for('static', filename='img/icons/clan-lasombra.svg') }}"> and Kiasyd <img
             src="{{ url_for('static', filename='img/icons/clan-kiasyd.svg') }}">
         have a strong combination with <i>d</i> for bleed and <i>$</i> for stealth.
-        Check the <a href="../archetypes/kiasyd-stealth-bleed.html">Kiasyd Stealth & Bleed</a> and
-        <a href="../archetypes/lasombra-nocturn.html">Lasombra Nocturn</a> archetypes.
+        Check the {{ link("/archetypes/kiasyd-stealth-bleed", _("Kiasyd Stealth & Bleed")) }} and
+        {{ link("/archetypes/lasombra-nocturn", _("Lasombra Nocturn")) }} archetypes.
     </li>
     <li>
         The Malkavian <img src="{{ url_for('static', filename='img/icons/clan-malkavian.svg') }}"> can use <i>e</i>,
         alone or alongside <i>o</i>,
-        for devastating bleeds, like in the <a href="../archetypes/weenie-dem.html">Weenie DEM</a> archetype.
+        for devastating bleeds, like in the {{ link("/archetypes/weenie-dem", _("Weenie DEM")) }} archetype.
     </li>
     <li>
         Assamite <img src="{{ url_for('static', filename='img/icons/clan-assamite.svg') }}"> also have a nice
         combination with <i>q</i> and <i>o</i>,
-        as in the <a href="../archetypes/black-hand.html">Black Hand</a> archetype.
+        as in the {{ link("/archetypes/black-hand", _("Black Hand")) }} archetype.
     </li>
     <li>
         <i>d</i> also works well in weenie archetypes, like
-        <a href="../archetypes/weenie-dom.html">Weenie DOM</a> and
-        <a href="../archetypes/bima-dominate.html">Bima Dominate</a>.
+		{{ link("/archetypes/weenie-dom", _("Weenie DOM")) }} and
+        {{ link("/archetypes/bima-dominate", _("Bima Dominate")) }}.
     </li>
     <li>
         Unsing <i>J</i> for stealth gave birth to powerful bleed deck,
-        as in the <a href="../archetypes/stanislava.html">Stanislava</a> archetype and its variants.
+        as in the {{ link("/archetypes/stanislava", _("Stanislava")) }} archetype and its variants.
     </li>
     <li>
         Toreador <img src="{{ url_for('static', filename='img/icons/clan-toreador.svg') }}"> with <i>R</i> and Ventrue
         <img src="{{ url_for('static', filename='img/icons/clan-ventrue.svg') }}">
         with <i>DR</i> can produce strong powerbleed decks like
-        <a href="../archetypes/the-bleeding-vignes.html">The Bleeding Vignes</a> or
-        <a href="../archetypes/jost-powerbleed.html">Jost Powerbleed</a>.
+        {{ link("/archetypes/the-bleeding-vignes", _("The Bleeding Vignes")) }} or
+        {{ link("/archetypes/jost-powerbleed", _("Jost Powerbleed")) }}.
     </li>
     <li>
         Inner Circles also deliver a very strong bleed as they have a +2 bleed ability.
-        The <a href="../archetypes/mistress.html">Mistress</a> archetype is a good example.
+        The {{ link("/archetypes/mistress", _("Mistress")) }} archetype is a good example.
         They are often combined with
         <strong>M</strong>ulti <strong>M</strong>aster <strong>P</strong>hase <strong>A</strong>ctions (MMPA),
         like in the
-        <a href="../archetypes/girls-will-find-inner-circles.html">Girls Will Find Inner Circles</a> or
-        <a href="../archetypes/council-of-doom.html">Council of Doom</a> archetypes.
+        {{ link("/archetypes/girls-will-find-inner-circle", _("Girls Will Find Inner Circle")) }} or
+        {{ link("/archetypes/council-of-doom", _("Council of Doom")) }} archetypes.
     </li>
     <li>
         Using <i>J</i> to bleed multiple times during the opponents turns with
         {{ card("Homunculus") }} is also powerful:
-        <a href="../archetypes/the-unnamed.html">The unnamed</a> and
-        <a href="../archetypes/rachel-madness.html">Rachel Madness</a> are built around this idea.
+        {{ link("/archetypes/the-unnamed", _("The unnamed")) }} and
+        {{ link("/archetypes/rachel-madness", _("Rachel Madness")) }} are built around this idea.
     </li>
 </ul>
 <h3>Highlights</h3>
@@ -117,34 +111,34 @@
 <ul>
     <li>
         Inner Circle can be used in strong vote decks, as in
-        <a href="../archetypes/the-dark-side-of-politics.html">The Dark Side of Politics</a> and
-        <a href="../archetypes/lutz-politics.html">Lutz Politics</a>.
+        {{ link("/archetypes/the-dark-side-of-politics", _("The Dark Side of Politics")) }} and
+        {{ link("/archetypes/lutz-politics", _("Lutz Politics")) }}.
     </li>
     <li>
         Camarilla Princes also often use votes, like in the
-        <a href="../archetypes/nosferatu-royalty.html">Nosferatu Royalty</a> archetype.
+        {{ link("/archetypes/nosferatu-royalty", _("Nosferatu Royalty")) }} archetype.
     </li>
     <li>
         Non Camarilla vampires can also build good titled crypts,
         especially Ishtarri <img src="{{ url_for('static', filename='img/icons/clan-ishtarri.svg') }}"> with the
-        <a href="../archetypes/ishtarri-politics.html">Ishtarri Politics</a>
+        {{ link("/archetypes/ishtarri-politics", _("Ishtarri Politics")) }}
         and Daughters of Cacophony <img src="{{ url_for('static', filename='img/icons/clan-daughters.svg') }}"> with
-        <a href="../archetypes/scout.html">Scout</a> and
-        <a href="../archetypes/daughters-politics.html">Daughters Politics</a>.
+        {{ link("/archetypes/scout", _("Scout")) }} and
+        {{ link("/archetypes/daughters-politics", _("Daughters Politics")) }}.
     </li>
     <li>
         Baali <img src="{{ url_for('static', filename='img/icons/clan-baali.svg') }}"> offer a nice political angle with
-        <a href="../archetypes/the-dark-side-of-politics.html">The Dark Side of Politics</a>.
+        {{ link("/archetypes/the-dark-side-of-politics", _("The Dark Side of Politics")) }}.
     </li>
     <li>
         Assamite <img src="{{ url_for('static', filename='img/icons/clan-assamite.svg') }}"> also have good options,
         like in the
-        <a href="../archetypes/amaravati-politics.html">Amaravati Politics</a> or the
-        <a href="../archetypes/death-star.html">Death Star</a> archetypes.
+        {{ link("/archetypes/amaravati-politics", _("Amaravati Politics")) }} or the
+        {{ link("/archetypes/death-star", _("Death Star")) }} archetypes.
     </li>
     <li>
         Ravnos <img src="{{ url_for('static', filename='img/icons/clan-ravnos.svg') }}"> have a unique breed archetype:
-        the <a href="../archetypes/ravnos-clown-car.html">Ravnos Clown Car</a>.
+        the {{ link("/archetypes/ravnos-clown-car", _("Ravnos Clown Car")) }}.
     </li>
 </ul>
 <h3>Highlights</h3>
@@ -166,7 +160,7 @@
     <p>
         Votes can go either ways and can be targeted effortlessly across the table.
         This gives unique negotiation options to vote decks, that can be used to keep a low profile
-        and a lot of friends throughout the game. <a href=table-talk.html>Table talk</a>
+        and a lot of friends throughout the game. {{ link("/strategy/table-talk", _("Table talk")) }}
         is always important in the game, but even more so for vote archetypes.
     </p>
 </div>
@@ -190,20 +184,20 @@
 <ul>
     <li>
         <i>A</i> is the best intercept discipline, and the
-        <a href="../archetypes/weenie-aus.html">Weenie AUS</a> wall is an obvious idea.
+        {{ link("/archetypes/weenie-aus", _("Weenie AUS")) }} wall is an obvious idea.
     </li>
     <li>
-        The <a href="../archetypes/tzimisce-wall.html">Tzimisce Wall</a> is also a very classic archetype,
+        The {{ link("/archetypes/tzimisce-wall", _("Tzimisce Wall")) }} is also a very classic archetype,
         as the combination of <i>a & i</i> offers even better intercept capabilities.
     </li>
     <li>
         Tremere <img src="{{ url_for('static', filename='img/icons/clan-tremere.svg') }}"> in general, but
         {{ card("Goratrix") }} in particular
         offer excellent wall capabilities in the
-        <a href="../archetypes/goratrix-high-tower.html">Goratrix High Tower</a> archetype.
+        {{ link("/archetypes/goratrix-high-tower", _("Goratrix High Tower")) }} archetype.
     </li>
     <li>
-        The <a href="../archetypes/cats.html">Cats</a> archetype uses
+        The {{ link("/archetypes/cats", _("Cats")) }} archetype uses
         Ahrimanes <img src="{{ url_for('static', filename='img/icons/clan-ahrimanes.svg') }}"> and their <i>ZI</i>
         disciplines combination.
     </li>
@@ -211,7 +205,7 @@
         {{ card("Saulot") }} and
         {{ card("The Capuchin") }}
         provide a nice discipline combination, as they both have <i>ATF</i> and +1 bleed.
-        The <a href="../archetypes/saulot-and-friends.html">Saulot & Friends</a> archetype is built around them.
+        The {{ link("/archetypes/saulot-friends", _("Saulot & Friends")) }} archetype is built around them.
     </li>
 </ul>
 <h3>Highlights</h3>
@@ -257,25 +251,25 @@
         Using Camarilla <em>Princes</em> and <em>Justicars</em> with their access to
         {{ card("Second Tradition: Domain") }} and
         {{ card("Parity Shift") }} led to good toolboxes like the
-        <a href="../archetypes/aaa.html">AAA</a>,
-        <a href="../archetypes/euro-brujah.html">Euro Brujah</a> and
-        <a href="../archetypes/ventrue-royalty.html">Ventrue Royalty</a> archetypes.
+        {{ link("/archetypes/aaa", _("AAA")) }},
+        {{ link("/archetypes/euro-brujah", _("Euro Brujah")) }} and
+        {{ link("/archetypes/ventrue-royalty", _("Ventrue Royalty")) }} archetypes.
     </li>
     <li>
         A lot of archetypes using allies also fall into this category, like
-        <a href="../archetypes/khazars-diary.html">Khazar's Diary</a>,
-        <a href="../archetypes/emerald-legion.html">Emerald Legion</a> and
-        <a href="../archetypes/nephandii.html">Nephandii</a>.
+        {{ link("/archetypes/khazars-diary", _("Khazar's Diary")) }},
+        {{ link("/archetypes/emerald-legion", _("Emerald Legion")) }} and
+        {{ link("/archetypes/nephandii", _("Nephandii")) }}.
     </li>
     <li>
         Ventrue Antitribu <img src="{{ url_for('static', filename='img/icons/clan-ventrue-anti.svg') }}"> provide
         excellent toolboxes with the
-        <a href="../archetypes/anti-ventrue-grinder.html">Anti Ventrue Grinder</a> archetype and its variants.
+        {{ link("/archetypes/anti-ventrue-grinder", _("Anti Ventrue Grinder")) }} archetype and its variants.
     </li>
     <li>
         Tremere <img src="{{ url_for('static', filename='img/icons/clan-tremere.svg') }}"> have a good disciplines
         combination for a toolbox too,
-        as proves the <a href="../archetypes/war-chantry.html">War Chantry</a> archetype.
+        as proves the {{ link("/archetypes/war-chantry", _("War Chantry")) }} archetype.
     </li>
 </ul>
 <h3>Highlights</h3>
@@ -318,19 +312,19 @@
 <h3>Flavours</h3>
 <ul>
     <li>
-        The <a href="../archetypes/tupdogs.html">Tupdogs</a> archetype is a classic, using a dozen
+        The {{ link("/archetypes/tupdogs", _("Tupdogs")) }} archetype is a classic, using a dozen
         {{ card("Tupdog") }} along a Tremere Antitribu.
     </li>
     <li>
         Allies with a <em>rush</em> ability are also good, like in the
-        <a href="../archetypes/war-ghouls.html">War Ghouls</a> and
-        <a href="../archetypes/shambling-hordes.html">Shambling Hordes</a> archetypes.
+        {{ link("/archetypes/war-ghouls", _("War Ghouls")) }} and
+        {{ link("/archetypes/shambling-hordes", _("Shambling Hordes")) }} archetypes.
     </li>
     <li>
         Guruhi <img src="{{ url_for('static', filename='img/icons/clan-guruhi.svg') }}"> provide a strong rush build too
         with their <i>PI</i> disciplines combination, like in the
-        <a href="../archetypes/guruhi-rush.html">Guruhi Rush</a> and
-        <a href="../archetypes/nananimalism.html">Nananimalism</a> archetypes.
+        {{ link("/archetypes/guruhi-rush", _("Guruhi Rush")) }} and
+        {{ link("/archetypes/nananimalism", _("Nananimalism")) }} archetypes.
     </li>
 </ul>
 <h3>Highlights</h3>
@@ -365,18 +359,18 @@
 <ul>
     <li>
         Some archetypes focus on stealing the vampires of their opponents, like
-        <a href="../archetypes/mind-rape.html">Mind Rape</a>,
-        <a href="../archetypes/spirit-marionette.html">Spirit Marionette</a> and
-        <a href="../archetypes/baltimore-purge.html">Baltimore Purge</a>.
+        {{ link("/archetypes/mind-rape", _("Mind Rape")) }},
+        {{ link("/archetypes/spirit-marionette", _("Spirit Marionette")) }} and
+        {{ link("/archetypes/baltimore-purge", _("Baltimore Purge")) }}.
     </li>
     <li>
-        The <a href="../archetypes/cybelotron.html">Cybelotron</a>
+        The {{ link("/archetypes/cybelotron", _("Cybelotron")) }}
         is an archetype created by <em>Erik Torstensson</em> in 2007 and refined by <em>Ben Peal</em>.
         It uses a complicated combination to use
         {{ card("Call the Great Beast") }} efficiently.
     </li>
     <li>
-        The <a href="../archetypes/madness-reversal.html">Madness Reversal</a>
+        The {{ link("/archetypes/madness-reversal", _("Madness Reversal")) }}
         is an archetype created by <em>Orian Gissler</em> in 2009 and refined
         by <em>Danilo Torrisi</em> in 2017. It uses
         {{ card("Reversal of Fortunes") }} to play twice

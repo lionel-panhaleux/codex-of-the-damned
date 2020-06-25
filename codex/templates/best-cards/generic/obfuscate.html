@@ -1,0 +1,107 @@
+{% extends "best-cards/_layout.html" %}
+
+{% block content %}
+<h1><i>o</i> Obfuscate</h1>
+<div class="tip">
+    <p>
+        <i>o</i> provides the best stealth in the game, as its name suggests.
+    </p>
+</div>
+<div class="column">
+    <div class="column-image">
+        <img src="{{ url_for('static', filename='img/card-images/lostincrowds.jpg') }}">
+        <h4>Lost in Crowds</h4>
+        <p class="center-subtitle">played in 484 decks, typically 2-6 copies</p>
+    </div>
+    <p>
+        The best stealth money can buy, played in almost all <i>o</i> constructs.
+    </p>
+</div>
+<div class="column">
+    <div class="column-image">
+        <img src="{{ url_for('static', filename='img/card-images/elderimpersonation.jpg') }}">
+        <h4>Elder Impersonation</h4>
+        <p class="center-subtitle">played in 419 decks, typically 2-4 copies</p>
+    </div>
+    <p>
+        This block denial modifier comes in very handy against a single minion.
+        It works against all minions and vampires and can bypass even high levels of stacked intercept.
+    </p>
+</div>
+<div class="column">
+    <div class="column-image">
+        <img src="{{ url_for('static', filename='img/card-images/facelessnight.jpg') }}">
+        <h4>Faceless Night</h4>
+        <p class="center-subtitle">played in 406 decks, typically 2-4 copies</p>
+    </div>
+    <p>
+        A single unlocked minion can be hard to get around if multiple actions are in order.
+        This is an excellent tool in this case as it lets you lock the defending minion on the first block
+        failure.
+        Furthermore, it will work as a block denial against allies.
+    </p>
+</div>
+<div class="column">
+    <div class="column-image">
+        <img src="{{ url_for('static', filename='img/card-images/swallowedbythenight.jpg') }}">
+        <h4>Swallowed by the Night</h4>
+        <p class="center-subtitle">played in 382 decks, typically 1-5 copies</p>
+    </div>
+    <p>
+        A versatile stealth modifier, the maneuver option comes in handy in decks with a decent combat
+        module, or to avoid combat damage.
+        Others find the combat option handy to avoid jamming the hand with unneeded stealth.
+    </p>
+</div>
+<div class="column">
+    <div class="column-image">
+        <img src="{{ url_for('static', filename='img/card-images/cloakthegathering.jpg') }}">
+        <h4>Cloak the Gathering</h4>
+        <p class="center-subtitle">played in 329 decks, typically 1-5 copies</p>
+    </div>
+    <p>
+        An additional source of stealth that becomes an excellent tool when not all vampires have <i>o</i>.
+        It can also be stacked, by the vampire doing the action himself, then by another vampire with
+        <i>O</i>.
+    </p>
+</div>
+<div class="column">
+    <div class="column-image">
+        <img src="{{ url_for('static', filename='img/card-images/spyingmission.jpg') }}">
+        <h4>Spying Mission</h4>
+        <p class="center-subtitle">played in 255 decks, typically 1-4 copies</p>
+    </div>
+    <p>
+        An additional stealth modifier that can be stacked,
+        it is also a counter against bounces: it allows one to suppress a high damage bleed
+        that has been bounced to its grand-prey, which is actually a common situation.
+    </p>
+</div>
+<div class="column">
+    <div class="column-image">
+        <img src="{{ url_for('static', filename='img/card-images/forgottenlabyrinth.jpg') }}">
+        <h4>Forgotten Labyrinth</h4>
+        <p class="center-subtitle">played in 238 decks, typically 2-5 copies</p>
+    </div>
+    <p>
+        Especially useful in decks with a political module, it gives such a high bonus to undirected actions
+        that they become virtually unblockable.
+        Its uselessness for directed actions still makes it absent from a lot of <i>o</i> modules.
+    </p>
+</div>
+<div class="column">
+    <div class="column-image">
+        <img src="{{ url_for('static', filename='img/card-images/veilthelegions.jpg') }}">
+        <h4>Veil the Legions</h4>
+        <p class="center-subtitle">played in 200 decks, typically 1-4 copies</p>
+    </div>
+    <p>
+        Less widely used than
+        {{ card("Cloak the Gathering") }}
+        because it offers no direct stealth on an action,
+        its efficiency increases in decks with many minions:
+        a vampire with <i>O</i> can give +1 stealth to multiple consecutive bleeds,
+        a nice setup for a lunge move.
+    </p>
+</div>
+{% endblock %}

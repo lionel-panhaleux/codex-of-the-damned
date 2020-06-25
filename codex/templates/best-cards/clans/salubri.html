@@ -1,0 +1,114 @@
+{% extends "best-cards/_layout.html" %}
+
+{% block content %}
+<h1><img src="{{ url_for('static', filename='img/icons/clan-salubri.svg') }}"> Salubri</h1>
+<p>
+    The Salubri and their antitribu are a rare sight in tournaments.
+    This could change following the
+    <a href="https://www.blackchantry.com/products/current-products/lost-kindred/">Lost Kindred
+        expansion</a>
+    release in 2018.
+    They have unique disciplines, respectively <i>b</i> and <i>l</i>.
+    For now, they are seen in mainly two archetypes:
+    {{ link("/archetypes/saulot-and-friends", _("Saulot & Friends")) }}, a wall deck featuring
+    {{ card("Saulot, The Wanderer") }}, and
+    {{ link("/archetypes/spirit-marionette", _("Spirit Marionette")) }}, using <i>b</i> and the
+    eponymous
+    {{ card("Spirit Marionette") }}.
+</p>
+<h2>Highlights</h2>
+<div class="column">
+    <div class="column-image">
+        <img src="{{ url_for('static', filename='img/card-images/repulsion.jpg') }}">
+        <h4>Repulsion</h4>
+        <p class="center-subtitle">played in 33 decks, typically 1-4 copies</p>
+    </div>
+    <p>
+        A good stealth modifier that can become permanent. An excellent way for Salubri to bump up their
+        game
+        as they do not have access to many other stealth enhancer given their clan disciplines.
+    </p>
+</div>
+<div class="column">
+    <div class="column-image">
+        <img src="{{ url_for('static', filename='img/card-images/spiritmarionette.jpg') }}">
+        <h4>Spirit Marionette</h4>
+        <p class="center-subtitle">played in 29 decks, typically 4-11 copies</p>
+    </div>
+    <p>
+        An iconic card of the <i>b</i> discipline, it has brought up
+        {{ link("/archetypes/spirit-marionette", _("an archetype of its own")) }}.
+        Stealing an opponent minion is always good, the central issue is to abuse,
+        cripple or destroy it afterwards.
+    </p>
+</div>
+<div class="column">
+    <div class="column-image">
+        <img src="{{ url_for('static', filename='img/card-images/giftofsleep.jpg') }}">
+        <h4>Gift of Sleep</h4>
+        <p class="center-subtitle">played in 25 decks, typically 1-4 copies</p>
+    </div>
+    <p>
+        A second stealth enhancer, still at no cost, a good card for <i>B</i>.
+    </p>
+</div>
+<div class="column">
+    <div class="column-image">
+        <img src="{{ url_for('static', filename='img/card-images/saulotthewanderer.jpg') }}">
+        <h4>Saulot, The Wanderer</h4>
+        <p class="center-subtitle">played in 23 decks, typically 3-5 copies</p>
+    </div>
+    <p>
+        Star of the Salubri clan, Saulot has both <i>B</i> and <i>L</i> at superior,
+        along a nice set of disciplines. His abilities are also impressive.
+    </p>
+</div>
+<div class="column">
+    <div class="column-image">
+        <img src="{{ url_for('static', filename='img/card-images/renewedvigor.jpg') }}">
+        <h4>Renewed Vigor</h4>
+        <p class="center-subtitle">played in 22 decks, typically 3-7 copies</p>
+    </div>
+    <p>
+        Bringing back any big capacity vampire to full capacity is a good way to bloat, but also
+        a useful bargaining chip to barter for big favors or even a game-changer.
+        This is the only card of the game allowing this along
+        {{ card("Giant's Blood") }}.
+    </p>
+</div>
+<div class="column">
+    <div class="column-image">
+        <img src="{{ url_for('static', filename='img/card-images/anesthetictouch.jpg') }}">
+        <h4>Anesthetic Touch</h4>
+        <p class="center-subtitle">played in 20 decks, typically 3-9 copies</p>
+    </div>
+    <p>
+        An excellent <em>combat ends</em> at superior <i>B</i>, it is a bit weak at inferior <i>b</i>.
+        The fact that it's still a hand strike makes it a good counter to
+        {{ card("Immortal Grapple") }}.
+    </p>
+</div>
+<div class="column">
+    <div class="column-image">
+        <img src="{{ url_for('static', filename='img/card-images/sensedeath.jpg') }}">
+        <h4>Sense Death</h4>
+        <p class="center-subtitle">played in 18 decks, typically 1-5 copies</p>
+    </div>
+    <p>
+        An excellent rush action, with high maneuverability and a most desirable +1 stealth.
+        It is even played in some <i>i</i> decks as a stealthy alternative to
+        {{ card("Deep Song") }}.
+    </p>
+</div>
+<div class="column">
+    <div class="column-image">
+        <img src="{{ url_for('static', filename='img/card-images/neutralguard.jpg') }}">
+        <h4>Neutral Guard</h4>
+        <p class="center-subtitle">played in 13 decks, typically 2-6 copies</p>
+    </div>
+    <p>
+        A good block denial at superior <i>B</i> for a big capacity vampire like
+        {{ card("Saulot, The Wanderer") }}.
+    </p>
+</div>
+{% endblock %}

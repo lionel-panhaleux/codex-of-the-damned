@@ -1,0 +1,120 @@
+{% extends "layout.html" %}
+
+{% block head %}
+{{ super() }}
+<!-- Adding needed scripts -->
+<script src="{{ url_for('static', filename='js/dC.js') }}"></script>
+<script src="{{ url_for('static', filename='js/toggleRulingForm.js') }}"></script>
+<script src="{{ url_for('static', filename='js/card.js') }}"></script>
+{% endblock %}
+
+{% block card_display %}{% endblock %}
+
+{% block content %}
+<h1>Card Search</h1>
+<p>
+	Official cards text provided by
+	<a target="_blank" href="http://www.vekn.net/card-lists">VEKN</a>. All
+	rulings give a link to the actual official ruling made by successive
+	Rules Director and Ruling Teams.
+</p>
+<form id="card-form" autocomplete="off">
+	<div class="autocomplete">
+	<input
+		type="text"
+		id="card_name"
+		placeholder="Card Name"
+		autocomplete="off"
+		autocorrect="off"
+		autocapitalize="off"
+		spellcheck="false"
+	/>
+	</div>
+</form>
+
+<div class="result-message" id="result-message"></div>
+
+<div class="card-results" id="results">
+	<div class="result-image-div" id="result-image-div">
+			<img class="result-image" id="result-image" />
+		</div>
+	<div class="result-text" , id="result-text-div">
+		<p class="subtitle" id="card_info"></p>
+		<h3 id="card-title"></h3>
+		<p id="card-text"></p>
+	</div>
+	<div class="result-rulings" , id="result-rulings-div"></div>
+</div>
+
+<div class="tip" id="ruling-submit-tooltip">
+	<h3>Submit a new ruling or a ruling correction</h3>
+	<form id="ruling-form" onsubmit="rulingFormSubmit(); return false">
+		<p>
+			Rulings must provide a link to a message from a Rulings Director on
+			an official board.
+		</p>
+		<p>
+			The Rulings Directors have been:
+			<ul>
+				<li>From 2016-12-04 onward,
+					<a target="_blank" href="http://www.vekn.net/forum/news-and-announcements/75402-new-inner-circle-vekn-board-of-directors#79470">
+						Vincent Ripoll (ANK)
+					</a>
+				</li>
+				<li>From 2011-07-06 onward,
+					<a target="_blank" href="https://groups.google.com/d/msg/rec.games.trading-cards.jyhad/VzRGZO_Iuto/BjJGRVvJ5Z8J">
+						Pascal Bertrand (PIB)
+					</a>
+				</li>
+				<li>From 1998-06-22 onward,
+					<a target="_blank" href="https://groups.google.com/d/msg/rec.games.trading-cards.jyhad/RIX1tLgOFjg/xKikfSarfd8J">
+						L. Scott Johnson (LSJ)
+					</a>
+				</li>
+				<li>From 1994-12-15 onward,
+					<a target="_blank" href="https://groups.google.com/d/msg/rec.games.trading-cards.jyhad/Dm_gIP3YvUs/qTyKyq2NWv4J">
+						Thomas R Wylie (TOM)
+					</a>
+				</li>
+		</ul>
+		</p>
+		<p>
+			The official boards for rulings have been:
+			<ul>
+				<li>From 2011-07-06 onward,
+					<a target="_blank" href="http://www.vekn.net/forum/rules-questions">
+						The VEKN Forum
+					</a>
+				</li>
+				<li>From 2010-12-30 onward,
+					<a target="_blank" href="https://www.boardgamegeek.com/forum/31522/vampire-eternal-struggle/rules">
+						The Boardgame Geek Forum
+					</a>
+				</li>
+				<li>From 1994-12-15 onward,
+					<a target="_blank" href="https://groups.google.com/forum/#!forum/rec.games.trading-cards.jyhad">
+						The rec.games.trading-cards.jyhad Google Group
+					</a>
+				</li>
+			</ul>
+		</p>
+		<p>
+			<strong>Proposed rulings will not be included automatically.</strong>
+			Once submited, your ruling will be reviewed by the Codex and KRCG team,
+			and included in the next release.
+		</p>
+		<input type="text" id="rF_text" placeholder="Ruling text" />
+		<input
+			type="text"
+			id="rF_link"
+			placeholder="http://www.vekn.net/forum/rules-questions/..."
+		/>
+		<input type="submit" id="rF_submit" value="Submit" />
+		<output
+			name="rF_result"
+			id="rf-result"
+			for="rF_text rF_link rF_submit"
+		></output>
+	</form>
+</div>
+{% endblock %}
