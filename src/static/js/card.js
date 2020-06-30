@@ -103,7 +103,7 @@ function formatText(text) {
     // replace disciplines text with icons
     return text
         .replace(
-            /(?:\/|\{)([^\/\}]*)(?:\/|\})/g,
+            /(?:\s\/|\{)([^\/\}]*)(?:\/\s|\})/g,
             (_, x) =>
                 `<span class="card" onclick="dC('${getCardImageName(
                     x
