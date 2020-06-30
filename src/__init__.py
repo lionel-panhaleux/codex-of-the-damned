@@ -61,7 +61,22 @@ def index(lang_code=app.config["BABEL_DEFAULT_LOCALE"], page="index.html"):
         page = lang_code + "/" + page
         lang_code = app.config["BABEL_DEFAULT_LOCALE"]
     flask.g.lang_code = lang_code
-    return flask.render_template(page, language=flask.g.get("lang_code"))
+    context = {"language": flask.g.get("lang_code")}
+
+    # use card image as og_image for card-search
+    if page[:11] == "card-search":
+        card = flask.request.args.get("card")
+        if card:
+            image_name = unidecode.unidecode(card).lower()
+            image_name = (
+                image_name[4:] + "the" if image_name[:4] == "the " else image_name
+            )
+            image_name, _ = re.subn(r"""\s|,|\.|-|—|'|:|\(|\)|"|!""", "", image_name)
+            context["og_image"] = flask.url_for(
+                "static", filename=f"img/card-images/{image_name}.jpg"
+            )
+
+    return flask.render_template(page, **context)
 
 
 def _link(page, name=None, _class=None, locale=None, _anchor=None, **params):
