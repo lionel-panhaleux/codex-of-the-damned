@@ -1,4 +1,5 @@
 {% extends "layout.html" %}
+{% import "_layout_sponsor.html" as sponsor %}
 
 {% block head %}
 {{ super() }}
@@ -10,14 +11,15 @@
 
 {% block card_display %}
 <div id="card-modal" class="modal" onclick="this.style.display='none'" tabindex="-1">
-	<div id=card-prev class="modal-nav">&#xf077</div>
-	<img class="modal-content" id="card-image">
-	<div id=card-next class="modal-nav">&#xf078</div>
+    <div id=card-prev class="modal-nav">&#xf077</div>
+    <img class="modal-content" id="card-image">
+    <div id=card-next class="modal-nav">&#xf078</div>
 </div>
 {% endblock %}
 
 {% block content %}
 <h1>Deck Search</h1>
+{{ sponsor }}
 <p>
     This is an interactive interface to the
     <a target="_blank" href="http://www.vekn.fr/decks/twd.htm">Tournament Winning Deck Archive (TWDA)</a>

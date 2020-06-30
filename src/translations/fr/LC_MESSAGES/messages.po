@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version:  0\n"
 "Report-Msgid-Bugs-To: lionel.panhaleux+codex@gmail.com\n"
-"POT-Creation-Date: 2020-06-30 16:19+0200\n"
+"POT-Creation-Date: 2020-06-30 17:33+0200\n"
 "PO-Revision-Date: 2020-06-30 16:19+0200\n"
 "Last-Translator: Lionel Panhaleux <lionel.panhaleux+codex@gmail.com>\n"
 "Language: fr\n"
@@ -559,7 +559,11 @@ msgstr "La page que vous cherchez n'existe pas."
 msgid "Home page"
 msgstr "Page d'acceuil"
 
-#: src/templates/index.html:5
+#: src/templates/_layout_sponsor.html:3
+msgid "Sponsor the Codex"
+msgstr "Sponsorisez le Codex"
+
+#: src/templates/index.html:7
 #, python-format
 msgid ""
 "This site is a compilation of <strong>Vampire: the Eternal "
@@ -572,11 +576,11 @@ msgstr ""
 "joueurs connaissant déjà le jeu et ses règles. VTES est un jeu publié par"
 " %(black_chantry_productions)s, sous la license %(white_wolf)s."
 
-#: src/templates/index.html:16
+#: src/templates/index.html:18
 msgid "Brett S. guide"
 msgstr "guide de Brett S."
 
-#: src/templates/index.html:15
+#: src/templates/index.html:17
 #, python-format
 msgid ""
 "If you are a new player, consult %(brett_s_guide)s to learn the game "
@@ -589,19 +593,19 @@ msgstr ""
 " le %(vekn_website)s. Le %(players_guide)s officiel est disponible en PDF"
 " sur DriveThruRPG."
 
-#: src/templates/index.html:17
+#: src/templates/index.html:19
 msgid "VEKN website"
 msgstr "site web de VEKN"
 
-#: src/templates/index.html:18
+#: src/templates/index.html:20
 msgid "Player's Guide"
 msgstr "Guide du Joueur"
 
-#: src/templates/index.html:27
+#: src/templates/index.html:29
 msgid "Github page"
 msgstr "page Github"
 
-#: src/templates/index.html:26
+#: src/templates/index.html:28
 #, python-format
 msgid ""
 "If you want to contribute to this guide, point out mistakes or raise an "
@@ -610,51 +614,51 @@ msgstr ""
 "Si vous désirez contribuer à ce guide, signaler une erreur ou un "
 "problème, merci de le faire sur la %(github_page)s du projet."
 
-#: src/templates/index.html:33
+#: src/templates/index.html:35
 msgid "Community"
 msgstr "Communauté"
 
-#: src/templates/index.html:35
+#: src/templates/index.html:37
 msgid "VEKN Forum"
 msgstr "Forum VEKN"
 
-#: src/templates/index.html:37
+#: src/templates/index.html:39
 msgid "VTES Discord"
 msgstr "Discord VTES"
 
-#: src/templates/index.html:40
+#: src/templates/index.html:42
 msgid "VEKN Facebook goup"
 msgstr "Groupe Facebook VEKN"
 
-#: src/templates/index.html:46
+#: src/templates/index.html:48
 msgid "interviews archive"
 msgstr "archive d'interviews"
 
-#: src/templates/index.html:49
+#: src/templates/index.html:51
 msgid "Online tools and play"
 msgstr "Outils et solutions pour jouer en ligne"
 
-#: src/templates/index.html:51
+#: src/templates/index.html:53
 msgid "for deck building"
 msgstr "pour la construction de deck"
 
-#: src/templates/index.html:52
+#: src/templates/index.html:54
 msgid "for card search"
 msgstr "pour la recherche de cartes"
 
-#: src/templates/index.html:53
+#: src/templates/index.html:55
 msgid "to play online"
 msgstr "pour jouer en ligne"
 
-#: src/templates/index.html:56
+#: src/templates/index.html:58
 msgid "VTES plugins"
 msgstr "plugins VTES"
 
-#: src/templates/index.html:59
+#: src/templates/index.html:61
 msgid "Play on Lackey"
 msgstr "Jouer sur Lackey"
 
-#: src/templates/index.html:61
+#: src/templates/index.html:63
 #, python-format
 msgid ""
 "If you use %(amaranth)s to create decks online, you can use "
@@ -663,7 +667,7 @@ msgstr ""
 "Si vous utilisez %(amaranth)s pour créer des decks en ligne, vous pouvez "
 "utiliser %(export_lackey)s pour exporter un deck afin de jouer en ligne."
 
-#: src/templates/index.html:70
+#: src/templates/index.html:72
 #, python-format
 msgid ""
 "Download %(lackeyccg)s. Go to the %(plugins)s tab and paste this "
@@ -674,11 +678,11 @@ msgstr ""
 " URL de mise à jour pour activer le plugin <strong>VtES</strong>: "
 "%(autoupdate_url)s"
 
-#: src/templates/index.html:80
+#: src/templates/index.html:82
 msgid "On Mac OSX"
 msgstr "Sur Mac OSX"
 
-#: src/templates/index.html:82
+#: src/templates/index.html:84
 #, python-format
 msgid ""
 "The system's security prevents the application to run properly: instead "
@@ -694,11 +698,11 @@ msgstr ""
 "partie par le chemin de votre dossier LackeyCCG si vous ne l’avez pas "
 "placé dans le dossier Applications."
 
-#: src/templates/index.html:84
+#: src/templates/index.html:86
 msgid "error web page"
 msgstr "page web d’erreur"
 
-#: src/templates/index.html:95
+#: src/templates/index.html:97
 #, python-format
 msgid ""
 "You can get a %(discord)s invite to the <em>VtES - Lackey CCG</em> server"
@@ -709,15 +713,15 @@ msgstr ""
 " Lackey CCG</em> en demandant un lien d’invitation sur le  "
 "%(vtes_facebook)s ou le %(vekn_forum)s."
 
-#: src/templates/index.html:97
+#: src/templates/index.html:99
 msgid "VtES LackeyCCG Facebook group"
 msgstr "Groupe Facebook VtES LackeyCCG"
 
-#: src/templates/index.html:98
+#: src/templates/index.html:100
 msgid "VEKN forum"
 msgstr "forum VEKN"
 
-#: src/templates/index.html:105
+#: src/templates/index.html:107
 #, python-format
 msgid ""
 "To use your decks exported from <em>Amaranth</em>, you have to copy the "
@@ -731,11 +735,11 @@ msgstr ""
 "en cliquant sur le bouton %(browse)s. Consultez le "
 "%(vtes_lackey_tutoriel)s pour plus d’informations."
 
-#: src/templates/index.html:109
+#: src/templates/index.html:111
 msgid "VtES Lackey tutorial"
 msgstr "tutoriel Lackey VtES"
 
-#: src/templates/index.html:122
+#: src/templates/index.html:124
 msgid ""
 "Portions of the materials are the copyrights and trademarks of Paradox "
 "Interactive AB, and are used with permission. All rights reserved. For "

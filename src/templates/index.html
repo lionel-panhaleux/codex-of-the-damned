@@ -1,6 +1,8 @@
 {% extends "layout.html" %}
+{% import "_layout_sponsor.html" as sponsor %}
 
 {% block content %}
+{{ sponsor }}
 <p>
     {% trans trimmed
         black_chantry_productions=external("https://www.blackchantry.com", "Black Chantry Productions"),
