@@ -223,7 +223,6 @@ function autocomplete(input) {
             if (currentFocus > -1 && x) {
                 x[currentFocus].click()
             }
-            multiCardSearch.add(input.value)
         } else if (e.keyCode === 8 || e.keyCode === 46) {
             // DELETE or BACKSPACE
             doComplete()
