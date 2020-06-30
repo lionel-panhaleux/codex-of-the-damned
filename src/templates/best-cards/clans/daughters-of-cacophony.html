@@ -1,0 +1,110 @@
+{% extends "best-cards/_layout.html" %}
+
+{% block content %}
+<h1><img src="{{ url_for('static', filename='img/icons/clan-daughters.svg') }}"> Daughters of Cacophony</h1>
+<p>
+    The Daughters of Cacophony and their unique <i>m</i> discipline pack some nice surprises,
+    especially on the political front. Two political archetypes features the clan:
+    a pure {{ link("/archetypes/daughters-politics", _("Daughters Politics")) }} and
+    {{ link("/archetypes/scout", _("Scout")) }}, a mix using
+    {{ card("Scout Youngwood") }}.
+</p>
+<h2>Highlights</h2>
+<div class="column">
+    <div class="column-image">
+        <img src="{{ url_for('static', filename='img/card-images/missingvoicethe.jpg') }}">
+        <h4>The Missing Voice</h4>
+        <p class="center-subtitle">played in 14 decks, typically 5-8 copies</p>
+    </div>
+    <p>
+        A nice stealth modifier, it can be really helpful against multiple unlocked allies.
+        Anyway, as no other discipline can really help the Daughters with stealth, this is useful.
+    </p>
+</div>
+<div class="column">
+    <div class="column-image">
+        <img src="{{ url_for('static', filename='img/card-images/shatteringcrescendo.jpg') }}">
+        <h4>Shattering Crescendo</h4>
+        <p class="center-subtitle">played in 12 decks, typically 5-21 copies</p>
+    </div>
+    <p>
+        An unusual effect. The ability to bring damage to your opponents vampires
+        with no combat is precious. Multiple copies are needed, but it is worth the trouble.
+        Some decks even spam this card.
+    </p>
+</div>
+<div class="column">
+    <div class="column-image">
+        <img src="{{ url_for('static', filename='img/card-images/virtuosa.jpg') }}">
+        <h4>Virtuosa</h4>
+        <p class="center-subtitle">played in 10 decks, typically 2-4 copies</p>
+    </div>
+    <p>
+        An excellent bleed enhancer, with a block denial option for critical actions.
+        Depending on the deck, it can come in very handy for a lunge.
+    </p>
+</div>
+<div class="column">
+    <div class="column-image">
+        <img src="{{ url_for('static', filename='img/card-images/sirenslure.jpg') }}">
+        <h4>Siren's Lure</h4>
+        <p class="center-subtitle">played in 8 decks, typically 2-6 copies</p>
+    </div>
+    <p>
+        A good way to get critical actions through. Combined with
+        {{ card("Virtuosa") }} and
+        {{ card("The Missing Voice") }},
+        it can build a good stealth - more of a « getting through » - module.
+    </p>
+</div>
+<div class="column">
+    <div class="column-image">
+        <img src="{{ url_for('static', filename='img/card-images/lilyprelude.jpg') }}">
+        <h4>Lily Prelude</h4>
+        <p class="center-subtitle">played in 6 decks, typically 3-10 copies</p>
+    </div>
+    <p>
+        Although only played in Vote archetypes, it is emblematic of the Daughters.
+        An improved
+        {{ card("Kine Resources Contested") }}:
+        1 blood to get all 4 damages on one’s prey, plus bloat for 1 pool.
+    </p>
+</div>
+<div class="column">
+    <div class="column-image">
+        <img src="{{ url_for('static', filename='img/card-images/angelapreston.jpg') }}">
+        <h4>Angela Preston</h4>
+        <p class="center-subtitle">played in 15 decks, typically 1-3 copies</p>
+    </div>
+    <p>
+        At only 5 pool with superior <i>R</i> and <i>M</i>, she is even played in mono <i>r</i> decks.
+        Her ability to unlock another vampire is nice too.
+    </p>
+</div>
+<div class="column">
+    <div class="column-image">
+        <img src="{{ url_for('static', filename='img/card-images/commandperformance.jpg') }}">
+        <h4>Command Performance</h4>
+        <p class="center-subtitle">played in 14 decks, typically 1-2 copies</p>
+    </div>
+    <p>
+        A permanent unlock option is very nice, and 2 pool is a bargain for such a bump in
+        {{ link("/strategy/fundamentals", _("A&B"), _anchor="AB") }}.
+        The burn option even ensures it does not jam one’s hand if the Daughters are not at crypt majority.
+    </p>
+</div>
+<div class="column">
+    <div class="column-image">
+        <img src="{{ url_for('static', filename='img/card-images/parisoperahouse.jpg') }}">
+        <h4>Paris Opera House</h4>
+        <p class="center-subtitle">played in 14 decks, typically 1-3 copies</p>
+    </div>
+    <p>
+        A bit pricey with its 2 pool cost, this permanent stealth location is still worth it
+        given the archetypes played with the clan. The cheaper
+        {{ card("Labyrinth") }} and
+        {{ card("Opium Den") }} are comparatively less valuable
+        as their clan already has access to <i>o</i>.
+    </p>
+</div>
+{% endblock %}

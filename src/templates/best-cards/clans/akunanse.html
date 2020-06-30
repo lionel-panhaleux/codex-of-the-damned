@@ -1,0 +1,118 @@
+{% extends "best-cards/_layout.html" %}
+
+{% block content %}
+<h1><img src="{{ url_for('static', filename='img/icons/clan-akunanse.svg') }}"> Akunanse</h1>
+<p>
+    Akunanse and their rare <i>w</i> discipline provide a stronger defense than the usual <i>i</i> builds.
+</p>
+<p>
+    This clan has two main archetypes: the {{ link("/archetypes/akunanse-wall", _("Akunanse Wall")) }},
+    using <i>w</i> along <i>i</i> for a sturdy wall,
+    and {{ link("/archetypes/team-jacob", _("Team Jacob")) }} using the infamous
+    {{ card("Tunnel Runner") }}.
+    More combat-oriented builds are limited due to the inability to deal with
+    {{ link("/strategy/combat", _("combat ends"), _anchor="defense") }}.
+</p>
+<h2>Highlights</h2>
+<div class="column">
+    <div class="column-image">
+        <img src="{{ url_for('static', filename='img/card-images/uchenna.jpg') }}">
+        <h4>Uchenna</h4>
+        <p class="center-subtitle">played in 31 decks, typically 1-3 copies</p>
+    </div>
+    <p>
+        A Magaji with superior <i>WFI</i> for just 7 pool: definitely a good deal.
+        Her ability may be useful in tense situations, although 1 blood to draw a card is a high price to
+        pay.
+        The fact that she is Magaji let her play the excellent
+        {{ card("No Secrets From the Magaji") }}.
+    </p>
+</div>
+<div class="column">
+    <div class="column-image">
+        <img src="{{ url_for('static', filename='img/card-images/mapatanoutando.jpg') }}">
+        <h4>Mapatano Utando</h4>
+        <p class="center-subtitle">played in 22 decks, typically 1-2 copies</p>
+    </div>
+    <p>
+        A good master for Akunanse decks: it can speed up the setup in the beginning,
+        but also avoid pool loss regularly, at no cost.
+        Gaining one or two turns or 3 pools or more is definitely efficient,
+        it encourages the inclusion of low capacity vampires to get the edge sooner.
+    </p>
+</div>
+<div class="column">
+    <div class="column-image">
+        <img src="{{ url_for('static', filename='img/card-images/reliquaryakunanseremains.jpg') }}">
+        <h4>Reliquary: Akunanse Remains</h4>
+        <p class="center-subtitle">played in 14 decks, typically 1 copy</p>
+    </div>
+    <p>
+        A good equipment: a permanent +1 bleed for 1 pool is good,
+        plus the discipline boost is excellent for low capacity vampires.
+    </p>
+</div>
+<div class="column">
+    <div class="column-image">
+        <img src="{{ url_for('static', filename='img/card-images/tunnelrunner.jpg') }}">
+        <h4>Tunnel Runner</h4>
+        <p class="center-subtitle">played in 13 decks, typically 3-8 copies</p>
+    </div>
+    <p>
+        He can be used as the main minion of the deck for good stealthed bleeds,
+        his ability can be used more than once in a turn, allowing it to get +2 stealth.
+        He is expensive, though — he becomes really efficient partnered with
+        {{ card("Jacob Fermor") }} in the
+        {{ link("/archetypes/team-jacob", _("Team Jacob")) }} archetype.
+    </p>
+</div>
+<div class="column">
+    <div class="column-image">
+        <img src="{{ url_for('static', filename='img/card-images/predatorscommunion.jpg') }}">
+        <h4>Predator's Communion</h4>
+        <p class="center-subtitle">played in 32 decks, typically 3-6 copies</p>
+    </div>
+    <p>
+        Wake and intercept bundled in a single card: an excellent reaction for any intercept module.
+        This card, combined with the combat-efficient <i>f</i> discipline of the clan,
+        explains the success of wall archetypes in the Akunanse clan.
+    </p>
+</div>
+<div class="column">
+    <div class="column-image">
+        <img src="{{ url_for('static', filename='img/card-images/invokingthebeast.jpg') }}">
+        <h4>Invoking the Beast</h4>
+        <p class="center-subtitle">played in 21 decks, typically 4-8 copies</p>
+    </div>
+    <p>
+        A good combat card at no cost: additional damage, plus a handy press that combines very well with
+        {{ card("Carrion Crows") }}
+    </p>
+</div>
+<div class="column">
+    <div class="column-image">
+        <img src="{{ url_for('static', filename='img/card-images/predatorstransformation.jpg') }}">
+        <h4>Predator's Transformation</h4>
+        <p class="center-subtitle">played in 20 decks, typically 3-7 copies</p>
+    </div>
+    <p>
+        An easy to cycle stealth card, and the only one available for Akunanse.
+        The superior effect may come in handy against weenie constructs.
+    </p>
+</div>
+<div class="column">
+    <div class="column-image">
+        <img src="{{ url_for('static', filename='img/card-images/devilchannelhands.jpg') }}">
+        <h4>Devil-Channel: Hands</h4>
+        <p class="center-subtitle">played in 15 decks, typically 3-8 copies</p>
+    </div>
+    <p>
+        A good combat card, adding aggravated damage to an already efficient combat module.
+        The strength bonus of {{ card("Invoking the beast") }}
+        applies to it and the press at superior <i>W</i> can be deadly when used alongside
+        {{ card("Carrion Crows") }}.
+        Finally, it works with a hand strike, so
+        {{ card("Immortal Grapple") }} is useless against it.
+    </p>
+</div>
+{% endblock %}

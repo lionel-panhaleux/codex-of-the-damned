@@ -1,0 +1,163 @@
+{% extends "strategy/_layout.html" %}
+{% block content %}
+<h1><img src="{{ url_for('static', filename='img/icons/clan-tremere-anti.svg') }}"> Pact with Naphandi</h1>
+
+<div class="decklist">
+    <h3>Crypt (12 cards)</h3>
+    <ul>
+        <li>5 {{ card("Antonio d’Erlette") }}</li>
+        <li>1 {{ card("Ember Wright") }}</li>
+        <li>1 {{ card("Frondator") }}</li>
+        <li>1 {{ card("Janine") }}</li>
+        <li>1 {{ card("Keith Moody") }}</li>
+        <li>1 {{ card("Lectora") }}</li>
+        <li>1 {{ card("Mosfair") }}</li>
+        <li>1 {{ card("Saiz") }}</li>
+    </ul>
+    <h3>Library (77 cards)</h3>
+    <ul>
+        <li>
+            <h4>— Master (13) —</h4>
+        </li>
+        <li>1 {{ card("Dreams of the Sphinx") }}</li>
+        <li>1 {{ card("Fame") }}</li>
+        <li>2 {{ card("Frontal Assault") }}</li>
+        <li>1 {{ card("KRCG News Radio") }}</li>
+        <li>2 {{ card("Sudden Reversal") }}</li>
+        <li>1 {{ card("University Hunting Ground") }}</li>
+        <li>3 {{ card("Vessel") }}</li>
+        <li>2 {{ card("Wider View") }}</li>
+        <li>
+            <h4>— Action (9) —</h4>
+        </li>
+        <li>6 {{ card("Computer Hacking") }}</li>
+        <li>3 {{ card("Harass") }}</li>
+        <li>
+            <h4>— Ally (10) —</h4>
+        </li>
+        <li>1 {{ card("Carlton Van Wyk") }}</li>
+        <li>1 {{ card("Gregory Winter") }}</li>
+        <li>8 {{ card("Nephandus") }}</li>
+        <li>
+            <h4>— Modifier (9) —</h4>
+        </li>
+        <li>3 {{ card("Conditioning") }}</li>
+        <li>6 {{ card("Mirror Walk") }}</li>
+        <li>
+            <h4>— Combat (18) —</h4>
+        </li>
+        <li>3 {{ card("Glancing Blow") }}</li>
+        <li>3 {{ card("Molotov Cocktail") }}</li>
+        <li>3 {{ card("Rego Motus") }}</li>
+        <li>3 {{ card("Target: Vitals") }}</li>
+        <li>3 {{ card("Theft of Vitae") }}</li>
+        <li>3 {{ card("Trap") }}</li>
+        <li>
+            <h4>— Reaction (17) —</h4>
+        </li>
+        <li>3 {{ card("Deflection") }}</li>
+        <li>2 {{ card("Delaying Tactics") }}</li>
+        <li>2 {{ card("Eagle’s Sight") }}</li>
+        <li>2 {{ card("Enhanced Senses") }}</li>
+        <li>2 {{ card("Eyes of Argus") }}</li>
+        <li>6 {{ card("On the Qui Vive") }}</li>
+        <li>
+            <h4>— Event (1) —</h4>
+        </li>
+        <li>1 {{ card("The Unmasking") }}</li>
+    </ul>
+</div>
+<h2>Summary</h2>
+<p>
+    This is a Tremere <em>Allies Toolbox</em> deck.
+    The setup is to get {{ card("Antonio d’Erlette") }} out first,
+    then put some {{ card("Nephandus") }} in play using his ability.
+    Some sidekicks can be brought into play if the pool allows it.
+</p>
+<p>
+    The high number of minions is a strong point of the deck.
+</p>
+<h2>Offence</h2>
+<p>
+    <strong>Pool damage</strong> is done with naked bleed
+    or {{ card("Computer Hacking") }} (which can be used by
+    {{ card("Nephandus") }}),
+    but also with well timed {{ card("Conditioning") }}
+    from the vampires to finish one’s prey.
+    {{ card("Fame") }} can also help if it is drawn, as
+    {{ card("Harass") }} and
+    {{ card("Frontal Assault") }} provide good options to rush
+    enemy minions.
+</p>
+<p>
+    The <strong>combat module is strong</strong> and tailored for the
+    {{ card("Nephandus") }}, with the deadly
+    {{ card("Trap") }},
+    {{ card("Target: Vitals") }} to improve damage,
+    {{ card("Glancing Blow") }} to prevent even more and
+    {{ card("Molotov Cocktail") }} to take advantage
+    of the <em>Press</em> {{ card("Nephandus") }} has.
+    Tremere with <i>t</i> have access to additional options with
+    {{ card("Theft of Vitae") }} and
+    {{ card("Rego Motus") }}.
+</p>
+<h2>Defence</h2>
+<p>
+    <strong>Bloat is low</strong>: {{ card("Vessel") }}
+    is used to get some pool back from the vampires, and it is crucial to get some pool to recruit more Nephandus.
+</p>
+<p>
+    <strong>Block is good</strong>, with <i>a</i> reactions to enhance intercept and
+    {{ card("On the Qui Vive") }} to wake, plus
+    {{ card("Deflection") }} for bounces and
+    {{ card("Delaying Tactics") }} against votes.
+    On this note, getting a second vampire out to handle blocks, with <i>at</i>, is great in this deck,
+    as risking {{ card("Antonio d’Erlette") }} on a block
+    is a blod move.
+</p>
+<p>
+    Moreover, {{ card("KRCG News Radio") }},
+    {{ card("The Unmasking") }} and
+    {{ card("Carlton Van Wyk") }} add permanent intercept to the mix.
+</p>
+<h3>Tips</h3>
+<p>
+    {{ card("Antonio d’Erlette") }} and his ability are key.
+    <strong>Protect him</strong>, do not risk him on actions that could be blocked if you do not have the necessary
+    <i>T</i> combat tricks in hand.
+</p>
+<p>
+    You can get some {{ card("Nephandus") }} in play by
+    <strong>recruiting them</strong>, too. Better not be blocked, though, so you can use
+    {{ card("Mirror Walk") }} for additional stealth.
+</p>
+<p>
+    <strong>Do not waste</strong> {{ card("Target: Vitals") }} and
+    {{ card("Molotov Cocktail") }} if you think the opponent can
+    play a "Strike: Combat Ends" using for example <i>r</i> or <i>$</i>.
+</p>
+<div class="tip">
+    <h3>Balance offence and defence</h3>
+    <p>
+        The <em>"Toolbox"</em> nature of the deck means it can adapt to the context.
+        You can bleed with all your minions and apply a maximum pressure to you prey, or
+        keep most of them unlocked for defence.
+    </p>
+    <p>
+        The balance between offensive actions and keeping minions for defence is essential.
+        Try to play a maximum of cards but at the same time keep them in hand if you have to wait
+        for the right moment or another card to complement it.
+    </p>
+    <p>
+        For example, wait until you have a good combat card before using
+        {{ card("Harass") }} on an enemy minion.
+        Or wait until you have a
+        {{ card("Mirror Walk") }} before trying to get a
+        {{ card("Conditioning") }} through.
+    </p>
+</div>
+<p>
+    Check the <a href="https://vtesinformationhighway.wordpress.com/2019/01/11/nephandus-starter-and-strategy/">
+        Information Highway article</a> for a deck review and ideas on how to improve it
+</p>
+{% endblock %}

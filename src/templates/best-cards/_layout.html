@@ -1,0 +1,13 @@
+{% extends "layout.html" %}
+
+{% block head %}
+{{ super() }}
+<!-- Adding needed scripts -->
+<script src="{{ url_for('static', filename='js/dC.js') }}"></script>
+{% endblock %}
+
+{% block article %}
+<article class="article-columns">
+	{% block content %}{% endblock %}
+</article>
+{% endblock %}

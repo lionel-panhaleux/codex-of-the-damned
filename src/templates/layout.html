@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="{{ language }}">
+
+<head>
+    {% block head %}
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta property="og:image" content="{{ url_for('static', filename='img/codex.jpg') }}" />
+    <meta name="description" content="A compilation of Vampire: the Eternal Struggle (VTES) strategy resources">
+    <meta name="keywords" content="Vampire, the Eternal Struggle, VtES, CCG">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='img/favicon.ico') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/base.css') }}">
+    <link rel="icon" href="{{ url_for('static', filename='img/icons/vtes.svg') }}">
+    <title>Codex of the Damned</title>
+    {% endblock %}
+</head>
+
+<body>
+    <header role="banner">
+        <a href="{{ url_for('index') }}" class="site-logo">
+            <img src="{{ url_for('static', filename='img/icons/vtes.svg') }}" alt="Codex of the Damned">
+            <h1>Codex of the Damned</h1>
+        </a>
+        <nav role="navigation">
+            <ul>
+                <li>{{ link('') }}</li>
+                <li>{{ link('/strategy') }}</li>
+                <li>{{ link('/archetypes') }}</li>
+                <li>{{ link('/best-cards') }}</li>
+                <li>{{ link('/deck-search') }}</li>
+                <li>{{ link('/card-search') }}</li>
+            </ul>
+        </nav>
+        <!-- <nav role="translation">
+            <ul>
+                <li>{{ translation('en', "🇬🇧") }}</li>
+                <li>{{ translation('fr', "🇫🇷") }}</li>
+            </ul>
+        </nav> -->
+    </header>
+
+    {% block card_display %}
+    <div id="card-modal" class="modal" onclick="this.style.display='none'">
+        <img class="modal-content" id="card-image">
+    </div>
+    {% endblock %}
+
+    {% block article %}
+    <article>
+        {% block content %}{% endblock %}
+    </article>
+    {% endblock %}
+
+    <footer>
+        {% block footer %}
+        <nav role="navigation">
+            {{ prev() }}
+            {{ top() }}
+            {{ next() }}
+        </nav>
+        {% endblock %}
+    </footer>
+</body>
+{% block script %}{% endblock %}
+
+</html>

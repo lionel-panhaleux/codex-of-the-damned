@@ -1,0 +1,362 @@
+{% extends "best-cards/_layout.html" %}
+
+{% block content %}
+<h1><img src="{{ url_for('static', filename='img/icons/clan-malkavian.svg') }}"> Malkavian</h1>
+<p>
+    The Malkavian are a prominent clan. With their unique <i>e</i> discipline and the excellent
+    <i>oa</i> disciplines aside, plus some really good vampires, they have led to many
+    archetypes.
+    {{ link("/archetypes/lutz-politics", _("Lutz Politics")) }} and
+    {{ link("/archetypes/rachel-madness", _("Rachel Madness")) }} are two archetypes revolving around
+    the powerful vampires
+    {{ card("Lutz von Hohenzollern") }} and
+    {{ card("Rachel Brandywine") }} respectively.
+    On the other hand, the Malkavian and their antitribu are also used into two strong weenie constructs:
+    {{ link("/archetypes/weenie-dem", _("Weenie DEM")) }} and
+    {{ link("/archetypes/weenie-aus", _("Weenie AUS")) }}.
+</p>
+<p>
+    Group 1 Malkavian have the <i>doa</i> disciplines combination, making them the only vampires
+    of the game with <i>do</i> as clan disciplines.
+    That got them into other archetypes, like the
+    {{ link("/archetypes/mind-rape", _("Mind Rape")) }} archetype, using
+    {{ card("Mind Rape") }} to take control of opponents vampires.
+    Malkavian and their antitribu got <i>e</i> instead of <i>d</i> since group 2, an evolution right on
+    tracks
+    with the roleplaying game <em>Vampire: the Masquerade</em>.
+</p>
+<h2>Highlights</h2>
+<div class="column">
+    <div class="column-image">
+        <img src="{{ url_for('static', filename='img/card-images/kindredspirits.jpg') }}">
+        <h4>Kindred Spirits</h4>
+        <p class="center-subtitle">played in 99 decks, typically 7-21 copies</p>
+    </div>
+    <p>
+        This bleed action is central to the <i>e</i> discipline.
+        It can deliver a bleed of 2 in combination with a 1 pool bloat.
+        Moreover, the bleed can be directed to any Methusalah, not only the prey, offering additional table
+        control.
+    </p>
+</div>
+<div class="column">
+    <div class="column-image">
+        <img src="{{ url_for('static', filename='img/card-images/lutzvonhohenzollern.jpg') }}">
+        <h4>Lutz von Hohenzollern</h4>
+        <p class="center-subtitle">(played in 94 decks, typically 1-4 copies</p>
+    </div>
+    <p>
+        Star of the Malkavian clan, he has a really powerful ability, 4 votes and +2 bleed like many
+        Inner Circle, combined with all clan disciplines plus the useful <i>R</i> that gives acces to
+        excellent
+        vote modifiers like {{ card("Voter Captivation") }}.
+    </p>
+</div>
+<div class="column">
+    <div class="column-image">
+        <img src="{{ url_for('static', filename='img/card-images/confusion.jpg') }}">
+        <h4>Confusion</h4>
+        <p class="center-subtitle">played in 87 decks, typically 4-12 copies</p>
+    </div>
+    <p>
+        An excellent bleed modifier at no cost, it provides stealth at superior <i>E</i>.
+    </p>
+</div>
+<div class="column">
+    <div class="column-image">
+        <img src="{{ url_for('static', filename='img/card-images/eyesofchaos.jpg') }}">
+        <h4>Eyes of Chaos</h4>
+        <p class="center-subtitle">played in 83 decks, typically 4-11 copies</p>
+    </div>
+    <p>
+        A powerful bleed enhancer at no cost, although a bit less efficient than
+        {{ card("Conditioning") }}.
+    </p>
+</div>
+<div class="column">
+    <div class="column-image">
+        <img src="{{ url_for('static', filename='img/card-images/zoe.jpg') }}">
+        <h4>Zöe</h4>
+        <p class="center-subtitle">played in 74 decks, typically 1-2 copies</p>
+    </div>
+    <p>
+        Superior <i>A</i> at 3 pool is really a bargain. She has access to
+        {{ card("Telepathic Misdirection") }} for the
+        cheapest
+        price.
+    </p>
+</div>
+<div class="column">
+    <div class="column-image">
+        <img src="{{ url_for('static', filename='img/card-images/deny.jpg') }}">
+        <h4>Deny</h4>
+        <p class="center-subtitle">played in 66 decks, typically 1-6 copies</p>
+    </div>
+    <p>
+        A good stealth enhancer at superior <i>E</i>, its inferior ability is seldom used but can still
+        come in handy to get out of a {{ card("Trap") }}, for example.
+    </p>
+</div>
+<div class="column">
+    <div class="column-image">
+        <img src="{{ url_for('static', filename='img/card-images/madnessnetwork.jpg') }}">
+        <h4>Madness Network</h4>
+        <p class="center-subtitle">played in 47 decks, typically 2-5 copies</p>
+    </div>
+    <p>
+        A rare effect for this infamous clan card. It enables Malkavians to stay in defence and
+        only bleed at the end of their predator's turn, but it can also be used to act multiple
+        times during the successive turns of other players.
+        I can become a cornerstone of the deck when combined with other tricks, like
+        {{ card("Homunculus") }} or
+        {{ card("Reversal of Fortunes") }}.
+    </p>
+</div>
+<div class="column">
+    <div class="column-image">
+        <img src="{{ url_for('static', filename='img/card-images/unclegeorge.jpg') }}">
+        <h4>Uncle George</h4>
+        <p class="center-subtitle">played in 46 decks, typically 1-2 copies</p>
+    </div>
+    <p>
+        5 pool is a good price for the <i>Eo</i> combination. He is almost always paired with
+        {{ card("Persia") }}
+        in stealth & bleed constructs.
+    </p>
+</div>
+<div class="column">
+    <div class="column-image">
+        <img src="{{ url_for('static', filename='img/card-images/muddledvampirehunter.jpg') }}">
+        <h4>Muddled Vampire Hunter</h4>
+        <p class="center-subtitle">played in 45 decks, typically 1 copy</p>
+    </div>
+    <p>
+        An excellent ally with good combat abilities at a reasonable price.
+        He can help take down a cumbersome minion or deter an aggressive predator.
+    </p>
+</div>
+<div class="column">
+    <div class="column-image">
+        <img src="{{ url_for('static', filename='img/card-images/persiathebeautifulstatue.jpg') }}">
+        <h4>Persia, The Beautiful Statue</h4>
+        <p class="center-subtitle">played in 44 decks, typically 1 copy</p>
+    </div>
+    <p>
+        <i>Eo</i> for 5 pool in the group 3, combined with a nice ability.
+    </p>
+</div>
+<div class="column">
+    <div class="column-image">
+        <img src="{{ url_for('static', filename='img/card-images/apachejones.jpg') }}">
+        <h4>Apache Jones</h4>
+        <p class="center-subtitle">played in 41 decks, typically 1-2 copies</p>
+    </div>
+    <p>
+        5 pool is a good price for the <i>Eo</i> combination. He is almost always paired with
+        {{ card("Uncle George") }} and
+        {{ card("Persia") }}
+        in stealth & bleed constructs.
+    </p>
+</div>
+<div class="column">
+    <div class="column-image">
+        <img src="{{ url_for('static', filename='img/card-images/marisstreck.jpg') }}">
+        <h4>Maris Streck</h4>
+        <p class="center-subtitle">played in 40 decks, typically 2-4 copies</p>
+    </div>
+    <p>
+        A <em>Justicar</em> with a very powerful ability she can use <em>multiple times</em> during an
+        action.
+        She gets included even in other clans crypts just for her ability and title.
+    </p>
+</div>
+<div class="column">
+    <div class="column-image">
+        <img src="{{ url_for('static', filename='img/card-images/midget.jpg') }}">
+        <h4>Midget</h4>
+        <p class="center-subtitle">played in 39 decks, typically 1-2 copies</p>
+    </div>
+    <p>
+        3 pool is a low price to pay for the <i>Eo</i> combination.
+        Its <em>Infernal</em> trait is a bummer, but he is still excellent for stealth & bleed constructs,
+        where speed matters more than cost. It can also bloat with
+        {{ card("Kaymakli Fragment") }},
+        which he can fetch with
+        {{ card("Sibyl's Tongue") }}.
+    </p>
+</div>
+<div class="column">
+    <div class="column-image">
+        <img src="{{ url_for('static', filename='img/card-images/touchofclarity.jpg') }}">
+        <h4>Touch of Clarity</h4>
+        <p class="center-subtitle">played in 39 decks, typically 1-4 copies</p>
+    </div>
+    <p>
+        The only card in the game that can counter <i>d</i> bounces like
+        {{ card("Deflection") }}: depending on the environment,
+        it can be a powerful device in the <i>e</i> arsenal when used sparingly.
+    </p>
+</div>
+<div class="column">
+    <div class="column-image">
+        <img src="{{ url_for('static', filename='img/card-images/victoria.jpg') }}">
+        <h4>Victoria</h4>
+        <p class="center-subtitle">played in 37 decks, typically 1-2 copies</p>
+    </div>
+    <p>
+        Superior <i>A</i> for 5 pool gets her included in many crypts, often when <i>o</i> or <i>c</i> can
+        be used.
+    </p>
+</div>
+<div class="column">
+    <div class="column-image">
+        <img src="{{ url_for('static', filename='img/card-images/callthe.jpg') }}">
+        <h4>The Call</h4>
+        <p class="center-subtitle">played in 37 decks, typically 2-6 copies</p>
+    </div>
+    <p>
+        A strong bloat device that can help get vampires out faster, especially at superior <i>EA</i>.
+    </p>
+</div>
+<div class="column">
+    <div class="column-image">
+        <img src="{{ url_for('static', filename='img/card-images/jackie.jpg') }}">
+        <h4>Jackie</h4>
+        <p class="center-subtitle">played in 37 decks, typically 1-2 copies</p>
+    </div>
+    <p>
+        The cheapest <i>E</i> of the game at only 3 pool, she gets included in many <i>e</i> decks.
+    </p>
+</div>
+<div class="column">
+    <div class="column-image">
+        <img src="{{ url_for('static', filename='img/card-images/quentinkingiii.jpg') }}">
+        <h4>Quentin King III</h4>
+        <p class="center-subtitle">played in 34 decks, typically 1-2 copies</p>
+    </div>
+    <p>
+        A <em>Prince</em> for 7 pool with a good disciplines combination. He is group 3, the same group as
+        {{ card("Maris Streck") }} and is often included alongside
+        her.
+        The fact that he can use
+        {{ card("The Call") }} and
+        {{ card("Madman's Quill") }} is also a strong point.
+    </p>
+</div>
+<div class="column">
+    <div class="column-image">
+        <img src="{{ url_for('static', filename='img/card-images/morel.jpg') }}">
+        <h4>Morel</h4>
+        <p class="center-subtitle">played in 34 decks, typically 1-3 copies</p>
+    </div>
+    <p>
+        All clan disciplines at superior for just 6 pool, this is a bargain.
+    </p>
+</div>
+<div class="column">
+    <div class="column-image">
+        <img src="{{ url_for('static', filename='img/card-images/stavros.jpg') }}">
+        <h4>Stavros</h4>
+        <p class="center-subtitle">played in 33 decks, typically 1-3 copies</p>
+    </div>
+    <p>
+        Although he does not have superior <i>E</i>, his superior <i>R</i> and title makes him a natural
+        companion to {{ card("Lutz von Hohenzollern") }}
+        in a political deck, or any <i>OR</i> political construct, for that matter.
+    </p>
+</div>
+<div class="column">
+    <div class="column-image">
+        <img src="{{ url_for('static', filename='img/card-images/gilbertduane.jpg') }}">
+        <h4>Gilbert Duane</h4>
+        <p class="center-subtitle">played in 32 decks, typically 1-3 copies</p>
+    </div>
+    <p>
+        A prince for 7 and a very strong disciplines combination. He gets included in many <em>Royalty</em>
+        decks.
+    </p>
+</div>
+<div class="column">
+    <div class="column-image">
+        <img src="{{ url_for('static', filename='img/card-images/mindtricks.jpg') }}">
+        <h4>Mind Tricks</h4>
+        <p class="center-subtitle">played in 32 decks, typically 2-5 copies</p>
+    </div>
+    <p>
+        +1 stealth for 1 blood: this is expensive. It is included in decks where <i>o</i> is not much
+        available.
+        Alongside {{ card("Deny") }} and
+        {{ card("Confusion") }}, it can make for a very decent
+        stealth & bleed module using just the <i>E</i> discipline.
+    </p>
+</div>
+<div class="column">
+    <div class="column-image">
+        <img src="{{ url_for('static', filename='img/card-images/leandro.jpg') }}">
+        <h4>Leandro</h4>
+        <p class="center-subtitle">played in 31 decks, typically 1-3 copies</p>
+    </div>
+    <p>
+        A strong Inner Circle with a good ability and <i>Od</i>, a good disciplines combination.
+        He is seen in Malkavian Royalty builds but also in group 2 Inner Circle constructs like the
+        {{ link("/archetypes/council-of-doom", _("Council of Doom")) }} archetype.
+    </p>
+</div>
+<div class="column">
+    <div class="column-image">
+        <img src="{{ url_for('static', filename='img/card-images/tony.jpg') }}">
+        <h4>Tony</h4>
+        <p class="center-subtitle">played in 28 decks, typically 1 copy</p>
+    </div>
+    <p>
+        A good disciplines combination for 6. He can uses bounces,
+        {{ card("The Call") }} and
+        {{ card("Madman's Quill") }}, and superior <i>E</i>
+        and inferior <i>o</i> is enough to be of use in a stealth & bleed deck.
+    </p>
+</div>
+<div class="column">
+    <div class="column-image">
+        <img src="{{ url_for('static', filename='img/card-images/restructure.jpg') }}">
+        <h4>Restructure</h4>
+        <p class="center-subtitle">played in 28 decks, typically 1-2 copies</p>
+    </div>
+    <p>
+        An excellent ally remover at superior <i>E</i>. It can get rid of the widespread
+        {{ card("Carlton Van Wyk") }} and
+        {{ card("Ossian") }}, who both become quickly problematic.
+    </p>
+</div>
+<div class="column">
+    <div class="column-image">
+        <img src="{{ url_for('static', filename='img/card-images/madmansquill.jpg') }}">
+        <h4>Madman's Quill</h4>
+        <p class="center-subtitle">played in 25 decks, typically 2-4 copies</p>
+    </div>
+    <p>
+        A bit pricey but its base effect can be worth it for a lunge.
+        Its superior effect can get really efficient in some decks too.
+    </p>
+</div>
+<div class="column">
+    <div class="column-image">
+        <img src="{{ url_for('static', filename='img/card-images/unmada.jpg') }}">
+        <h4>Unmada</h4>
+        <p class="center-subtitle">played in 25 decks, typically 2-4 copies</p>
+    </div>
+    <p>
+        A strong ability for a <em>Justicar</em>, all for 9 pool. He is often seen in company with
+        {{ card("Lutz von Hohenzollern") }}.
+    </p>
+</div>
+<div class="column">
+    <div class="column-image">
+        <img src="{{ url_for('static', filename='img/card-images/ohanna.jpg') }}">
+        <h4>Ohanna</h4>
+        <p class="center-subtitle">played in 24 decks, typically 1 copy</p>
+    </div>
+    <p>
+        A really cheap 2 pool for <i>d</i>, she gets included in many crypts.
+    </p>
+</div>
+{% endblock %}

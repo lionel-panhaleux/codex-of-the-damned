@@ -1,0 +1,388 @@
+{% extends "strategy/_layout.html" %}
+
+{% block content %}
+<h1 id="archetypes">Archetypes</h1>
+<h2 id="bleed">Bleed</h2>
+<p>
+    Bleed decks are focused on prey aggression and use bleed actions to inflict heavy pool damages.
+    <i>d</i> is without question the most damage-heavy bleed discipline, plus it does come with bounce cards.
+    <i>r</i> and <i>e</i> are good second choices.
+</p>
+<h3>Stealth & Bleed and Powerbleed</h3>
+<p>
+    There are two ways to get bleeds through: using <strong>stealth</strong> is the most obvious one.
+    <i>o</i> is the best stealth discipline, but it does not often come along with <i>d</i>.
+    <i>$</i> and <i>j</i> come second.
+</p>
+<p>
+    The other way to get bleeds through is to make sure the prey has no minion available to block the action.
+    Along its strong bleed capabilities, <i>d</i> offers the excellent
+    {{ card("Seduction") }}.
+    <i>O</i> {{ card("Elder Impersonation") }},
+    <i>N</i> {{ card("Call of the Hungry Dead") }},
+    <i>f</i> {{ card("Daring the Dawn") }} and
+    <i>r</i> {{ card("Mind Numb") }} are also effective tools.
+    Combining these options with the few Master cards that can prevent block or lock minions —
+    {{ card("Pentex™ Subversion") }},
+    {{ card("Misdirection") }} and
+    {{ card("Anarch Troublemaker") }} —
+    makes stealth and intercept irrelevant.
+</p>
+<h3>Flavours</h3>
+<ul>
+    <li>
+        Lasombra <img src="{{ url_for('static', filename='img/icons/clan-lasombra.svg') }}"> and Kiasyd <img
+            src="{{ url_for('static', filename='img/icons/clan-kiasyd.svg') }}">
+        have a strong combination with <i>d</i> for bleed and <i>$</i> for stealth.
+        Check the {{ link("/archetypes/kiasyd-stealth-bleed", _("Kiasyd Stealth & Bleed")) }} and
+        {{ link("/archetypes/lasombra-nocturn", _("Lasombra Nocturn")) }} archetypes.
+    </li>
+    <li>
+        The Malkavian <img src="{{ url_for('static', filename='img/icons/clan-malkavian.svg') }}"> can use <i>e</i>,
+        alone or alongside <i>o</i>,
+        for devastating bleeds, like in the {{ link("/archetypes/weenie-dem", _("Weenie DEM")) }} archetype.
+    </li>
+    <li>
+        Assamite <img src="{{ url_for('static', filename='img/icons/clan-assamite.svg') }}"> also have a nice
+        combination with <i>q</i> and <i>o</i>,
+        as in the {{ link("/archetypes/black-hand", _("Black Hand")) }} archetype.
+    </li>
+    <li>
+        <i>d</i> also works well in weenie archetypes, like
+		{{ link("/archetypes/weenie-dom", _("Weenie DOM")) }} and
+        {{ link("/archetypes/bima-dominate", _("Bima Dominate")) }}.
+    </li>
+    <li>
+        Unsing <i>J</i> for stealth gave birth to powerful bleed deck,
+        as in the {{ link("/archetypes/stanislava", _("Stanislava")) }} archetype and its variants.
+    </li>
+    <li>
+        Toreador <img src="{{ url_for('static', filename='img/icons/clan-toreador.svg') }}"> with <i>R</i> and Ventrue
+        <img src="{{ url_for('static', filename='img/icons/clan-ventrue.svg') }}">
+        with <i>DR</i> can produce strong powerbleed decks like
+        {{ link("/archetypes/the-bleeding-vignes", _("The Bleeding Vignes")) }} or
+        {{ link("/archetypes/jost-powerbleed", _("Jost Powerbleed")) }}.
+    </li>
+    <li>
+        Inner Circles also deliver a very strong bleed as they have a +2 bleed ability.
+        The {{ link("/archetypes/mistress", _("Mistress")) }} archetype is a good example.
+        They are often combined with
+        <strong>M</strong>ulti <strong>M</strong>aster <strong>P</strong>hase <strong>A</strong>ctions (MMPA),
+        like in the
+        {{ link("/archetypes/girls-will-find-inner-circle", _("Girls Will Find Inner Circle")) }} or
+        {{ link("/archetypes/council-of-doom", _("Council of Doom")) }} archetypes.
+    </li>
+    <li>
+        Using <i>J</i> to bleed multiple times during the opponents turns with
+        {{ card("Homunculus") }} is also powerful:
+        {{ link("/archetypes/the-unnamed", _("The unnamed")) }} and
+        {{ link("/archetypes/rachel-madness", _("Rachel Madness")) }} are built around this idea.
+    </li>
+</ul>
+<h3>Highlights</h3>
+<p>
+    Bleed decks have the <strong>highest prey damage</strong>. They tend to oust their first prey quite often,
+    but it also attracts the table attention on them and one oust is not enough for a game win.
+    They are are usually <strong>weak in combat</strong>. They tend to rely on « combat ends » effects,
+    but some flavours can have aggravated damage or torpor strikes as a threat.
+</p>
+<div class="tip">
+    <h3>Stealth rotation</h3>
+    <p>
+        Stealth & Bleed archetypes have a strong stealth module, but it can jam the hand.
+        If the prey assumes she will not have the means to block, she should decide not to attempt to block at all,
+        and <strong>try to jam her predator hand on the stealth module.</strong>
+        Well constructed Stealth & Bleed decks include some rotation tools to help with that.
+    </p>
+</div>
+<p>
+    As they are focused on their prey, bleed decks have a weak defence against their predator
+    and do not try to intercept actions. They usually use <i>d</i> or <i>A</i> for bounces
+    or strong bloat modules to survive.
+</p>
+<h2 id="vote">Vote</h2>
+<p>
+    Vote decks usually have a strong pool damage module to deliver to their prey.
+    The difficulty to gather enough votes to get the referendums through is balanced
+    by the constant +1 stealth bonus of vote actions. There are basically two ways of building a vote deck:
+    either breed and find a way to give votes to all your vampires, or use older vampires with titles themselves.
+</p>
+<h3>Flavours</h3>
+<ul>
+    <li>
+        Inner Circle can be used in strong vote decks, as in
+        {{ link("/archetypes/the-dark-side-of-politics", _("The Dark Side of Politics")) }} and
+        {{ link("/archetypes/lutz-politics", _("Lutz Politics")) }}.
+    </li>
+    <li>
+        Camarilla Princes also often use votes, like in the
+        {{ link("/archetypes/nosferatu-royalty", _("Nosferatu Royalty")) }} archetype.
+    </li>
+    <li>
+        Non Camarilla vampires can also build good titled crypts,
+        especially Ishtarri <img src="{{ url_for('static', filename='img/icons/clan-ishtarri.svg') }}"> with the
+        {{ link("/archetypes/ishtarri-politics", _("Ishtarri Politics")) }}
+        and Daughters of Cacophony <img src="{{ url_for('static', filename='img/icons/clan-daughters.svg') }}"> with
+        {{ link("/archetypes/scout", _("Scout")) }} and
+        {{ link("/archetypes/daughters-politics", _("Daughters Politics")) }}.
+    </li>
+    <li>
+        Baali <img src="{{ url_for('static', filename='img/icons/clan-baali.svg') }}"> offer a nice political angle with
+        {{ link("/archetypes/the-dark-side-of-politics", _("The Dark Side of Politics")) }}.
+    </li>
+    <li>
+        Assamite <img src="{{ url_for('static', filename='img/icons/clan-assamite.svg') }}"> also have good options,
+        like in the
+        {{ link("/archetypes/amaravati-politics", _("Amaravati Politics")) }} or the
+        {{ link("/archetypes/death-star", _("Death Star")) }} archetypes.
+    </li>
+    <li>
+        Ravnos <img src="{{ url_for('static', filename='img/icons/clan-ravnos.svg') }}"> have a unique breed archetype:
+        the {{ link("/archetypes/ravnos-clown-car", _("Ravnos Clown Car")) }}.
+    </li>
+</ul>
+<h3>Highlights</h3>
+<p>
+    Votes decks deliver <strong>high damage</strong> once they get the vote lock.
+    They also have a <strong>good bloat</strong>, using
+    {{ card("Consanguineous Boon") }},
+    {{ card("Parity Shift") }},
+    {{ card("Ancient Inluence") }} or
+    {{ card("Political Stranglehold") }}
+    depending on the build.
+    Depending on the exact build, <strong>stealth vary</strong>, but they are not easily blocked.
+    Builds that do not have high stealth levels rely on a swarm of minions that make it hard to block them all.
+    Finally, vote decks have a <strong>very weak combat module</strong> and — especially the swarm builds —
+    a <strong>weak bleed defence</strong>, relying exclusively on bounces, if at all.
+</p>
+<div class="tip">
+    <h3>Table Talk</h3>
+    <p>
+        Votes can go either ways and can be targeted effortlessly across the table.
+        This gives unique negotiation options to vote decks, that can be used to keep a low profile
+        and a lot of friends throughout the game. {{ link("/strategy/table-talk", _("Table talk")) }}
+        is always important in the game, but even more so for vote archetypes.
+    </p>
+</div>
+<h2 id="wall">Wall</h2>
+<p>
+    Wall decks maximise their defence, trying to block their prey and predator actions alike while slowly
+    building up bloat and pool damages. The ability to intercept and wake are tantamount in these decks,
+    so <i>a</i> and <i>i</i> are the most common options here. <i>a</i> gives more options and a higher intercept
+    all in all, with the excellent
+    {{ card("Eyes of Argus") }} atop.
+    It’s also the only discipline apart <i>d</i> that provides bleed bounce reaction cards.
+    <i>i</i> also has good intercept cards though, and better combat options than <i>a</i>:
+    it can be used with no additional equipment or discipline.
+    Sabbat, Camarilla and Laibon titled vampires each have access to excellent intercept cards:
+    {{ card("Eternal Vigilance") }},
+    {{ card("Under Siege") }},
+    {{ card("Second Tradition: Domain") }} and
+    {{ card("No Secrets From the Magaji") }}.
+</p>
+<h3>Flavours</h3>
+<ul>
+    <li>
+        <i>A</i> is the best intercept discipline, and the
+        {{ link("/archetypes/weenie-aus", _("Weenie AUS")) }} wall is an obvious idea.
+    </li>
+    <li>
+        The {{ link("/archetypes/tzimisce-wall", _("Tzimisce Wall")) }} is also a very classic archetype,
+        as the combination of <i>a & i</i> offers even better intercept capabilities.
+    </li>
+    <li>
+        Tremere <img src="{{ url_for('static', filename='img/icons/clan-tremere.svg') }}"> in general, but
+        {{ card("Goratrix") }} in particular
+        offer excellent wall capabilities in the
+        {{ link("/archetypes/goratrix-high-tower", _("Goratrix High Tower")) }} archetype.
+    </li>
+    <li>
+        The {{ link("/archetypes/cats", _("Cats")) }} archetype uses
+        Ahrimanes <img src="{{ url_for('static', filename='img/icons/clan-ahrimanes.svg') }}"> and their <i>ZI</i>
+        disciplines combination.
+    </li>
+    <li>
+        {{ card("Saulot") }} and
+        {{ card("The Capuchin") }}
+        provide a nice discipline combination, as they both have <i>ATF</i> and +1 bleed.
+        The {{ link("/archetypes/saulot-friends", _("Saulot & Friends")) }} archetype is built around them.
+    </li>
+</ul>
+<h3>Highlights</h3>
+<p>
+    Wall decks obviously have a <strong>strong defence</strong>.
+    Moreover, having high block capabilities let them play fragile master cards that need protection to be
+    efficient like
+    {{ card("Smiling Jack, the Anarch") }},
+    {{ card("The Rack") }},
+    {{ card("Powerbase: Montreal") }},
+    {{ card("Powerbase: Barranquilla") }} (Sabbat) and
+    {{ card("Anarch Revolt") }} (Anarchs),
+    helping both with bloat and offence.
+    Still, wall decks tend to have a <strong>weak offence</strong>, dealing only a moderate
+    amount of damage to their prey. They're very good at exhausting other decks around the table though, and will
+    get eventually win a game if no other player can get enough Victory Points first.
+</p>
+<div class="tip">
+    <h3>Cross block</h3>
+    <p>
+        {{ card("Eagle's Sight") }} and
+        {{ card("Falcon's Eye") }} are the only two cards in
+        the game that let a vampire block <strong>any</strong> action, even if it is directed upon another
+        Methusalah or undertaken cross table.
+    </p>
+    <p>
+        This ability to cross block is an excellent asset in wall decks with <i>A</i> or <i>Z</i>
+        as it enhances table control and allows for example to intercept a dangerous vote from the grand-predator
+        or a bleed from the prey that could be lethal to the grand-prey.
+        Wall decks that do not use these will often include some <em>rush</em> capabilities instead.
+    </p>
+</div>
+<h2 id="toolbox">Toolbox</h2>
+<p>
+    Toolbox decks balance their offence and defence capabilities. They have good intercept,
+    a decent combat module and efficient pool damage options to use on their prey,
+    sometimes even some votes they can try to pass or a bit of stealth.
+    The key to this archetype is to use versatile cards offering multiple play options.
+</p>
+<h2>Flavours</h2>
+<ul>
+    <li>
+        Using Camarilla <em>Princes</em> and <em>Justicars</em> with their access to
+        {{ card("Second Tradition: Domain") }} and
+        {{ card("Parity Shift") }} led to good toolboxes like the
+        {{ link("/archetypes/aaa", _("AAA")) }},
+        {{ link("/archetypes/euro-brujah", _("Euro Brujah")) }} and
+        {{ link("/archetypes/ventrue-royalty", _("Ventrue Royalty")) }} archetypes.
+    </li>
+    <li>
+        A lot of archetypes using allies also fall into this category, like
+        {{ link("/archetypes/khazars-diary", _("Khazar's Diary")) }},
+        {{ link("/archetypes/emerald-legion", _("Emerald Legion")) }} and
+        {{ link("/archetypes/nephandii", _("Nephandii")) }}.
+    </li>
+    <li>
+        Ventrue Antitribu <img src="{{ url_for('static', filename='img/icons/clan-ventrue-anti.svg') }}"> provide
+        excellent toolboxes with the
+        {{ link("/archetypes/anti-ventrue-grinder", _("Anti Ventrue Grinder")) }} archetype and its variants.
+    </li>
+    <li>
+        Tremere <img src="{{ url_for('static', filename='img/icons/clan-tremere.svg') }}"> have a good disciplines
+        combination for a toolbox too,
+        as proves the {{ link("/archetypes/war-chantry", _("War Chantry")) }} archetype.
+    </li>
+</ul>
+<h3>Highlights</h3>
+<p>
+    <strong>Versatility</strong> is obviously the best asset of a toolbox deck.
+    It can handle and exploit any table configuration. To make the most out of toolbox decks,
+    one has to display excellent table awareness and negotiation abilities.
+    For the toolbox to have a proper effect around the table and display all its efficiency,
+    one needs to <strong>play their hand</strong>, whatever is in it.
+    The deck chooses the strategy as much as the Methusalah.
+    The player still chooses on which target to use its cards,
+    but the cards in hand demand to be played for the deck to shine.
+</p>
+<div class="tip">
+    <h3>The Heart of Cheating</h3>
+    <p>
+        The {{ card("Heart of Nizchetus") }}
+        is often included in toolbox builds,
+        as it gives more control to the Methusalah over what his play can be.
+        Its effect makes such a difference in efficiency it has been nicknamed
+        <em>The Heart of Cheating</em>.
+    </p>
+</div>
+<p>
+    Finally, toolbox decks have <strong>strong defence</strong>, although not as strong as <em>wall</em> decks.
+    They tend to have good intercept options and/or <em>rush</em> capabilities to handle their predator.
+    Having much less offensive options than a vote or bleed deck, they cannot rely on pure speed to best their predator:
+    they have to deter its actions actively using blocks, bounces or combats depending on the build.
+</p>
+<h2 id="rush">Rush</h2>
+<p>
+    Rush decks use combat as their main weapon. Many disciplines have good combat options and
+    they are also good combat cards with no discipline.
+    Getting vampires down around the table is fun, but does not help so much to get the prey's pool down.
+    To this effect, a handful of cards can help, namely
+    {{ card("Fame") }},
+    {{ card("Dragonbound") }} and
+    {{ card("Tension in the Ranks") }}.
+</p>
+<h3>Flavours</h3>
+<ul>
+    <li>
+        The {{ link("/archetypes/tupdogs", _("Tupdogs")) }} archetype is a classic, using a dozen
+        {{ card("Tupdog") }} along a Tremere Antitribu.
+    </li>
+    <li>
+        Allies with a <em>rush</em> ability are also good, like in the
+        {{ link("/archetypes/war-ghouls", _("War Ghouls")) }} and
+        {{ link("/archetypes/shambling-hordes", _("Shambling Hordes")) }} archetypes.
+    </li>
+    <li>
+        Guruhi <img src="{{ url_for('static', filename='img/icons/clan-guruhi.svg') }}"> provide a strong rush build too
+        with their <i>PI</i> disciplines combination, like in the
+        {{ link("/archetypes/guruhi-rush", _("Guruhi Rush")) }} and
+        {{ link("/archetypes/nananimalism", _("Nananimalism")) }} archetypes.
+    </li>
+</ul>
+<h3>Highlights</h3>
+<p>
+    The ability to take down any minion provide these decks with a <strong>strong defence</strong>
+    against their predator. Depending on the predator archetype, going against its minions first
+    is a common strategy for a <em>rush</em> deck: it may take some combats to get them down,
+    but they can disable their predator very fast. On the other hand, they have
+    a <strong>weak offence</strong> and have trouble finding a way to deliver pool damage to their prey.
+    This is the core issue of the archetype.
+</p>
+<div class="tip">
+    <h3>Finnish Politics</h3>
+    <p>
+        If they do not take down their prey very fast, rush decks have a unique control over the table balance
+        as they can take down the minions of any Methusalah. Proper table control is
+        essential to the succes of such builds, but it also opens a unique strategy for negociation:
+        using the threat of combat to get things out of your neighbours.
+    </p>
+    <p>
+        The finnish players have perfect this negociation strategy to such an extent, it is now known as
+        <em>"Finnish Politics"</em> among seasoned players.
+    </p>
+</div>
+<h2 id="special">Special</h2>
+<p>
+    Some decks do not fit into any of the aforementioned archetypes.
+    These rare constructs are unique combinations of cards that proved unexpectedly efficient.
+    The following examples are not exhaustive.
+</p>
+<h3>Flavours</h3>
+<ul>
+    <li>
+        Some archetypes focus on stealing the vampires of their opponents, like
+        {{ link("/archetypes/mind-rape", _("Mind Rape")) }},
+        {{ link("/archetypes/spirit-marionette", _("Spirit Marionette")) }} and
+        {{ link("/archetypes/baltimore-purge", _("Baltimore Purge")) }}.
+    </li>
+    <li>
+        The {{ link("/archetypes/cybelotron", _("Cybelotron")) }}
+        is an archetype created by <em>Erik Torstensson</em> in 2007 and refined by <em>Ben Peal</em>.
+        It uses a complicated combination to use
+        {{ card("Call the Great Beast") }} efficiently.
+    </li>
+    <li>
+        The {{ link("/archetypes/madness-reversal", _("Madness Reversal")) }}
+        is an archetype created by <em>Orian Gissler</em> in 2009 and refined
+        by <em>Danilo Torrisi</em> in 2017. It uses
+        {{ card("Reversal of Fortunes") }} to play twice
+        as more as its opponents.
+    </li>
+</ul>
+<h3>Highlights</h3>
+<p>
+    Special decks tend to use complicated card combinations to a devastative effect. Their strenght is in
+    the <strong>absolute advantage</strong> their combination provide if all gets well. Their weakness
+    is the frailty of such a combination. Blocking the right action or countering the right Master can often
+    stop them dead in their tracks. Moreover, known combinations tend to attract the attention of all players,
+    often leading the Methusalah to lose all its allies very early in the game.
+</p>
+{% endblock %}

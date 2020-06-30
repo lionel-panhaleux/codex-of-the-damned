@@ -1,0 +1,100 @@
+{% extends "best-cards/_layout.html" %}
+
+{% block content %}
+<h1>Laibon</h1>
+<p>
+    The Laibon offer unique tools to its members all around, be it for block, combat, politics or bleed.
+</p>
+<h2>Highlights</h2>
+<div class="column">
+    <div class="column-image">
+        <img src="{{ url_for('static', filename='img/card-images/powerbaseluanda.jpg') }}">
+        <h4>Powerbase: Luanda</h4>
+        <p class="center-subtitle">played in 53 decks, typically 1 copy</p>
+    </div>
+    <p>
+        An excellent card for combat-able Laibon constructs,
+        it provides a bit more the rush capability at no cost.
+    </p>
+</div>
+<div class="column">
+    <div class="column-image">
+        <img src="{{ url_for('static', filename='img/card-images/strangeday.jpg') }}">
+        <h4>Strange Day</h4>
+        <p class="center-subtitle">played in 49 decks, typically 1 copy</p>
+    </div>
+    <p>
+        A definitive lunge device to get a critical action through,
+        its high blood cost prevents to play more than 1 or 2 copies in a deck.
+    </p>
+</div>
+<div class="column">
+    <div class="column-image">
+        <img src="{{ url_for('static', filename='img/card-images/mbaremarketharare.jpg') }}">
+        <h4>Mbare Market, Harare</h4>
+        <p class="center-subtitle">played in 47 decks, typically 1 copy</p>
+    </div>
+    <p>
+        A decent bloat device for Laibon, although it is a little bit pricey compared to similar clan
+        cards like the Toreador <img src="../../icons/clan-toreador.svg">
+        {{ card("Art Museum") }}.
+    </p>
+</div>
+<div class="column">
+    <div class="column-image">
+        <img src="{{ url_for('static', filename='img/card-images/wellmarked.jpg') }}">
+        <h4>Well-Marked</h4>
+        <p class="center-subtitle">played in 46 decks, typically 1-2 copies</p>
+    </div>
+    <p>
+        A good bruise prevention effect at a low cost, it is an easy inclusion in combat-oriented decks.
+    </p>
+</div>
+<div class="column">
+    <div class="column-image">
+        <img src="{{ url_for('static', filename='img/card-images/nosecretsfromthemagaji.jpg') }}">
+        <h4>No Secrets From the Magaji</h4>
+        <p class="center-subtitle">played in 46 decks, typically 1-5 copies</p>
+    </div>
+    <p>
+        A powerful interception device for the Magaji, it compares to the Camarilla's
+        {{ card("Second Tradition: Domain") }}.
+        Althoug intercept is lower, the permanent wake effect is exceptionaly strong.
+        One must not fail a block to keep it, so a bit of interception enhancement
+        is appreciable.
+    </p>
+</div>
+<div class="column">
+    <div class="column-image">
+        <img src="{{ url_for('static', filename='img/card-images/kduvasmask.jpg') }}">
+        <h4>Kduva's Mask</h4>
+        <p class="center-subtitle">played in 37 decks, typically 1 copy</p>
+    </div>
+    <p>
+        A bit pricey for just the bleed bonus, it becomes a worthwile addition in political decks like
+        {{ link("/archetypes/ishtarri-politics", _("Ishtarri Politics")) }}.
+    </p>
+</div>
+<div class="column">
+    <div class="column-image">
+        <img src="{{ url_for('static', filename='img/card-images/powerbasetshwane.jpg') }}">
+        <h4>Powerbase: Tshwane</h4>
+        <p class="center-subtitle">played in 36 decks, typically 1-2 copies</p>
+    </div>
+    <p>
+        A good pool reduction that can amount to a very decent bloat if played alongside enough
+        pool-costing cards. Even just reducing the cost of other master cards can be enough
+        to include it.
+    </p>
+</div>
+<div class="column">
+    <div class="column-image">
+        <img src="{{ url_for('static', filename='img/card-images/ancestorspirit.jpg') }}">
+        <h4>Ancestor Spirit</h4>
+        <p class="center-subtitle">played in 35 decks, typically 1 copy</p>
+    </div>
+    <p>
+        A bleed and vote enhancer at no cost: an easy inclusion in many Laibon decks.
+    </p>
+</div>
+{% endblock %}

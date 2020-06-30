@@ -1,0 +1,158 @@
+{% extends "best-cards/_layout.html" %}
+
+{% block content %}
+<h1>Politial Action</h1>
+<div class="column">
+    <div class="column-image">
+        <img src="{{ url_for('static', filename='img/card-images/kineresourcescontested.jpg') }}">
+        <h4>Kine Resources Contested</h4>
+        <p class="center-subtitle">played in 425 decks, typically 2-9 copies</p>
+    </div>
+    <p>
+        The damage-dealing vote <em>par excellence</em>.
+        It does not depend on the table conditions and delivers a steady 3 pool blow to the prey.
+        Often played in multiple copies in vote decks, it is key in finishing a table as it is the most
+        certain way
+        to deal pool damage in a duel or a three-way.
+    </p>
+</div>
+<div class="column">
+    <div class="column-image">
+        <img src="{{ url_for('static', filename='img/card-images/banishment.jpg') }}">
+        <h4>Banishment</h4>
+        <p class="center-subtitle">played in 325 decks, typically 1-3 copies</p>
+    </div>
+    <p>
+        A very powerful vote when using big capacity vampires. It will cost time and pool to the target,
+        most likely the prey or predator, but it can target anyone on the table,
+        making it a nice tool for table control and deal making.
+    </p>
+</div>
+<div class="column">
+    <div class="column-image">
+        <img src="{{ url_for('static', filename='img/card-images/reinsofpower.jpg') }}">
+        <h4>Reins of Power</h4>
+        <p class="center-subtitle">played in 277 decks, typically 1 copy</p>
+    </div>
+    <p>
+        A serious damage dealer when playing 10 or 11 capacity vampire.
+        Only one copy is included but, with the right crypt,
+        it is one of the strongest damage dealing votes.
+    </p>
+</div>
+<div class="column">
+    <div class="column-image">
+        <img src="{{ url_for('static', filename='img/card-images/ancientinfluence.jpg') }}">
+        <h4>Ancient Influence</h4>
+        <p class="center-subtitle">played in 250 decks, typically 1 copy</p>
+    </div>
+    <p>
+        A customary companion to {{ card("Reins of Power") }},
+        it is a good bloat device (for 5 or 6 pool), but may have to be discarded if the prey
+        has big capacity vampires.
+    </p>
+</div>
+<div class="column">
+    <div class="column-image">
+        <img src="{{ url_for('static', filename='img/card-images/politicalstranglehold.jpg') }}">
+        <h4>Political Stranglehold</h4>
+        <p class="center-subtitle">played in 235 decks, typically 1 copy</p>
+    </div>
+    <p>
+        Completing the triptych along {{ card("Reins of Power") }}
+        and {{ card("Ancient Influence") }},
+        it is a good bloat device if one plans to get two or more big capacity vampires into play.
+    </p>
+</div>
+<div class="column">
+    <div class="column-image">
+        <img src="{{ url_for('static', filename='img/card-images/anarchistuprising.jpg') }}">
+        <h4>Anarchist Uprising</h4>
+        <p class="center-subtitle">played in 212 decks, typically 1 copy</p>
+    </div>
+    <p>
+        Almost always played along
+        {{ card("Ancilla Empowerment") }},
+        it is a decisive tool against weenie and breed decks. Depending on the situation,
+        it can take a whole table down in a single strike.
+    </p>
+</div>
+<div class="column">
+    <div class="column-image">
+        <img src="{{ url_for('static', filename='img/card-images/ancillaempowerment.jpg') }}">
+        <h4>Ancilla Empowerment</h4>
+        <p class="center-subtitle">played in 202 decks, typically 1 copy</p>
+    </div>
+    <p>
+        Almost always played along
+        {{ card("Anarchist Uprising") }},
+        it has the same effect. Having both can make a
+        {{ card("Delaying Tactics") }} fizzle, so why not.
+    </p>
+</div>
+<div class="column">
+    <div class="column-image">
+        <img src="{{ url_for('static', filename='img/card-images/neonatebreach.jpg') }}">
+        <h4>Neonate Breach</h4>
+        <p class="center-subtitle">played in 138 decks, typically 1-2 copies</p>
+    </div>
+    <p>
+        Although not as certain as
+        {{ card("Kine Resources Contested") }},
+        it will work against most decks and it adds a little bit of variety to address the
+        {{ card("Delaying Tactics") }} problem.
+    </p>
+</div>
+<div class="column">
+    <div class="column-image">
+        <img src="{{ url_for('static', filename='img/card-images/consanguineousboon.jpg') }}">
+        <h4>Consanguineous Boon</h4>
+        <p class="center-subtitle">played in 107 decks, typically 2-8 copies</p>
+    </div>
+    <p>
+        Although only worth it in breed decks, its bloat power is tremendous in this case.
+        Political breed decks can usually get away with not defence at all,
+        relying on this bloat device alone
+        to survive even the most hard pressing predators.
+    </p>
+</div>
+<div class="column">
+    <div class="column-image">
+        <img src="{{ url_for('static', filename='img/card-images/conservativeagitation.jpg') }}">
+        <h4>Conservative Agitation</h4>
+        <p class="center-subtitle">played in 98 decks, typically 1-4 copies</p>
+    </div>
+    <p>
+        A strong damage dealing vote in the beginning, it becomes frail in the end game
+        once some players have been ousted. Still a solid alternative to add variety over
+        {{ card("Kine Resources Contested") }} and
+        dilute a potential {{ card("Delaying Tactics") }}.
+    </p>
+</div>
+<div class="column">
+    <div class="column-image">
+        <img src="{{ url_for('static', filename='img/card-images/domainchallenge.jpg') }}">
+        <h4>Domain Challenge</h4>
+        <p class="center-subtitle">played in 85 decks, typically 1-2 copies</p>
+    </div>
+    <p>
+        A strong damage dealing vote against builds with many minions, it does offer a little bit more
+        control
+        than {{ card("Anarchist Uprising") }} and
+        {{ card("Ancilla Empowerment") }},
+        but will deal less damage. An option often favored by breed constructs themselves.
+    </p>
+</div>
+<div class="column">
+    <div class="column-image">
+        <img src="{{ url_for('static', filename='img/card-images/disputedterritory.jpg') }}">
+        <h4>Disputed Territory</h4>
+        <p class="center-subtitle">played in 82 decks, typically 1-2 copies</p>
+    </div>
+    <p>
+        Although less common than pool-related votes, it gets often included
+        as many locations can be worth the action to steal them. Of course, its efficency depends
+        solely on the environment.
+    </p>
+</div>
+{% endblock %}

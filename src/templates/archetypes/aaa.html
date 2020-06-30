@@ -1,0 +1,87 @@
+{% extends "archetypes/_layout.html" %}
+{% import "archetypes/_layout-erratum.html" as erratum %}
+
+{% block archetype_name %}
+<h1><img src="{{ url_for('static', filename='img/icons/clan-toreador.svg') }}"> AAA</h1>
+{% endblock %}
+
+{% block archetype %}
+<h2>Highlights</h2>
+<p>
+    This is a <em>toolbox</em> deck starring {{ card("Anson") }} alongside
+    {{ card("Alexandra") }} and {{ card("Anneke") }}, hence the "AAA" name.
+</p>
+<p>
+    The deck is well-balanced, using {{ card("Second Tradition: Domain") }}
+    for wake and intercept, {{ card("Concealed Weapon") }} + {{ card("44 Magnum") }}
+    with <i>C</i> for combat, {{ card("Parity Shift") }} and {{ card("Aire of Elation") }}
+    for pool damage and {{ card("Anson") }}'s ability to bloat and use recursion with
+    {{ card("Ashur Tablets") }} and {{ card("Liquidation") }}.
+</p>
+<p>
+    {{ card("Resist Earth's Grasp") }} can provide a bit of stealth
+    or be used in combat if required.
+</p>
+<p>
+    {{ card("Heart of the City") }} and
+    {{ card("Codex of the Edenic Groundskeepers") }}
+    are good bleed enhancers for the late game.
+</p>
+<h2>Tips & Tricks</h2>
+<p>
+    {{ card("Entrancement") }} can help get rid of cumbersome allies,
+    {{ card("Scourge of the Enochians") }} is there to
+    deal with breed constructs.
+</p>
+<p>
+    As the game progresses, {{ card("Ashur Tablets") }} are used
+    for recursion to adapt the deck content to the table context, bringing back more of what is really needed
+    in the deck.
+</p>
+<h2>Variants</h2>
+<p>
+    The <strong>Anson Guns</strong> variant focuses on {{ card("Anson") }}
+    and drops its Toreador companions to get cheaper vampires with <i>C</i>, like in
+    {{ link("/deck-search", _("Tomasz Izydorczyk's deck"), twda_id="2019pncwp") }} from 2019.
+</p>
+<p>
+    The <strong>Grand Ball</strong> variant ditches the combat module and uses
+    {{ card("Alexandra") }}'s ability with
+    {{ card("Toreador Grand Ball") }} to provide unblockable
+    votes, like in {{ link("/deck-search", _("Martin Miller's deck"), twda_id="2013cncpf2") }} from 2013.
+</p>
+<p>
+    The <strong>Aching Beauty</strong> variant also replaces the combat module with defensive
+    {{ card("Majesty") }}, but uses
+    {{ card("Aching Beauty") }} in numbers to make the vampires actions
+    hard to block, like in {{ link("/deck-search", _("László Walter's deck"), twda_id="2012ecsod") }} from 2012.
+</p>
+<p>
+    The <strong>AAAAA</strong> variant keeps {{ card("Alexandra") }} and
+    {{ card("Anneke") }} and uses the
+    {{ card("Alastor") }} +
+    {{ card("Assault Rifle") }} combination (hence the five "A"),
+    like in {{ link("/deck-search", _("Izaak Havelaar's deck"), twda_id="2010kaldecq") }} from 2010.
+</p>
+{% endblock %}
+
+{% block errata %}
+<div class="warning">
+    <h3>Errata</h3>
+    {{ erratum.pentextmsubversion( 'remove' ) }}
+    {{ erratum.villein() }}
+    {{ erratum.parityshift() }}
+    {{ erratum.antheliostheredstar() }}
+</div>
+{% endblock %}
+
+{% block script %}
+<script>
+    window.onload = function () {
+        document.getElementById("card-modal").addEventListener("keydown", modalKeydown)
+        document.getElementById("card-prev").addEventListener("click", prevCard)
+        document.getElementById("card-next").addEventListener("click", nextCard)
+        displayDeck({"twda_id":"2014incbi","name":"Alert Attention Alarm","player":"Enrico De Stefano","date":"2014-06-01","event":"Italian NC 2014","place":"Bologna, Italy","players_count": 25,"tournament_format":"3R+F","comments":"-- Once again, our Enrico De Stefano defend his national title. Congratulations.\n","crypt": {"count": 12,"cards": [{"count": 4,"id":"200107","name":"Anson"},{"count": 2,"id":"200049","name":"Alexandra"},{"count": 2,"id":"200106","name":"Anneke"},{"count": 1,"id":"200478","name":"François Villon"},{"count": 1,"id":"200910","name":"Marcellus"},{"count": 1,"id":"201347","name":"Tatiana Romanov"},{"count": 1,"id":"201458","name":"Volker, The Puppet Prince"}]},"library": {"count": 90,"cards": [{"type":"Master","count": 30,"cards": [{"count": 9,"id":"100106","name":"Ashur Tablets"},{"count": 7,"id":"101112","name":"Liquidation"},{"count": 5,"id":"102121","name":"Villein"},{"count": 3,"id":"100897","name":"Haven Uncovered"},{"count": 1,"id":"100095","name":"Art Museum"},{"count": 1,"id":"100842","name":"Golconda: Inner Peace"},{"count": 1,"id":"100984","name":"Information Highway"},{"count": 1,"id":"101350","name":"Papillon"},{"count": 1,"id":"101384","name":"Pentex(TM) Subversion"},{"count": 1,"id":"102180","name":"Wider View"}]},{"type":"Action","count": 3,"cards": [{"count": 2,"id":"100652","name":"Entrancement"},{"count": 1,"id":"100904","name":"Heart of the City"}]},{"type":"Political Action","count": 4,"cards": [{"count": 3,"id":"101353","name":"Parity Shift"},{"count": 1,"id":"101417","name":"Political Stranglehold"}]},{"type":"Action Modifier","count": 2,"cards": [{"count": 2,"id":"100031","name":"Aire of Elation"}]},{"type":"Action Modifier/Combat","count": 4,"cards": [{"count": 4,"id":"101610","name":"Resist Earth's Grasp"}]},{"type":"Combat","count": 21,"cards": [{"count": 4,"id":"100227","name":"Blur"},{"count": 4,"id":"100392","name":"Concealed Weapon"},{"count": 4,"id":"101507","name":"Psyche!"},{"count": 4,"id":"101945","name":"Taste of Vitae"},{"count": 3,"id":"100333","name":"Charismatic Aura"},{"count": 2,"id":"101778","name":"Side Strike"}]},{"type":"Reaction","count": 13,"cards": [{"count": 8,"id":"101706","name":"Second Tradition: Domain"},{"count": 5,"id":"101949","name":"Telepathic Misdirection"}]},{"type":"Equipment","count": 11,"cards": [{"count": 6,"id":"100001","name":".44 Magnum"},{"count": 3,"id":"100903","name":"Heart of Nizchetus"},{"count": 1,"id":"100243","name":"Bowl of Convergence"},{"count": 1,"id":"100374","name":"Codex of the Edenic Groundskeepers"}]},{"type":"Event","count": 2,"cards": [{"count": 1,"id":"100074","name":"Anthelios, The Red Star"},{"count": 1,"id":"101697","name":"Scourge of the Enochians"}]}]}})
+    }
+</script>
+{% endblock %}

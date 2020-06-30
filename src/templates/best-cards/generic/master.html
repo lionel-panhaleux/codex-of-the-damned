@@ -1,0 +1,445 @@
+{% extends "best-cards/_layout.html" %}
+
+{% block content %}
+<h1>Master</h1>
+<div class="column">
+    <div class="column-image">
+        <img src="{{ url_for('static', filename='img/card-images/pentextmsubversion.jpg') }}">
+        <h4>Pentex™ Subversion</h4>
+        <p class="center-subtitle">played in 1323 decks, typically 1-2 copies</p>
+    </div>
+    <p>
+        Before its <em>errata</em> in september 2019, <em>Pentex</em> was played in over half of tournament
+        decks
+        and it was the most played card overall. It used to prevent the target minion from acting too,
+        and that made it the most versatile card of the game.
+        In the endgame its power is still worthwhile though: disabling a specific minion of the prey
+        can be key to victory.
+    </p>
+</div>
+<div class="column">
+    <div class="column-image">
+        <img src="{{ url_for('static', filename='img/card-images/dreamsofthesphinx.jpg') }}">
+        <h4>Dreams of the Sphinx</h4>
+        <p class="center-subtitle">played in 1138 decks, typically 1-3 copies</p>
+    </div>
+    <p>
+        Loved for its ubiquitousness, the <em>Dreams</em> provides either two pool
+        (and can even accelerate the setup if played early) or help the deck rotation
+        in critical moments by drawing two cards.
+    </p>
+</div>
+<div class="column">
+    <div class="column-image">
+        <img src="{{ url_for('static', filename='img/card-images/giantsblood.jpg') }}">
+        <h4>Giant's Blood</h4>
+        <p class="center-subtitle">played in 984 decks, typically 1 copy</p>
+    </div>
+    <p>
+        Even if it is only once per game, it brings more blood on the table than any other card,
+        with the notable exception of
+        {{ card("Golconda: Inner Peace") }}.
+        It is often played in a single copy: with a bit of luck it brings a definitive advantage,
+        otherwise it prevents an opponent to play it himself.
+    </p>
+</div>
+<div class="column">
+    <div class="column-image">
+        <img src="{{ url_for('static', filename='img/card-images/vessel.jpg') }}">
+        <h4>Vessel</h4>
+        <p class="center-subtitle">played in 868 decks, typically 2-4 copies</p>
+    </div>
+    <p>
+        The most played {{ link("/strategy/bloat", _("leeching"), _anchor="leeching") }} card,
+        it is similar to {{ card("Blood Doll") }}.
+        Both enable a 1 point leech per turn and allow to give some blood back to a thirsty vampire,
+        which can avoid hunt actions and keep {{ link("/strategy/fundamentals", _("A&B"), _anchor="AB") }} high.
+        <em>Vessel</em> cost is higher: it takes a full turn to kick in and costs 1 pool, making it 2 pool
+        less efficient,
+        but it cannot be destroyed and it is a <em>Trifle</em>.
+    </p>
+</div>
+<div class="column">
+    <div class="column-image">
+        <img src="{{ url_for('static', filename='img/card-images/villein.jpg') }}">
+        <h4>Villein</h4>
+        <p class="center-subtitle">played in 788 decks, typically 3-7 copies</p>
+    </div>
+    <p>
+        Before its <em>errata</em> in 2018, it permitted to take back as much blood as desired
+        from the target vampire with no upper limit. Its <em>Trifle</em> trait
+        made it one of the best leech option, besting
+        {{ card("Minion Tap") }}.
+        The <em>errata</em> made {{ card("Minion Tap") }}
+        relevant again, although only when getting more than 5 blood from a vampire is relevant.
+    </p>
+</div>
+<div class="column">
+    <div class="column-image">
+        <img src="{{ url_for('static', filename='img/card-images/directintervention.jpg') }}">
+        <h4>Direct Intervention</h4>
+        <p class="center-subtitle">played in 715 decks, typically 1-2 copies</p>
+    </div>
+    <p>
+        The ability to cancel any minion card is extremely valuable.
+        It has reliable role in {{ link("/strategy/archetypes", _("wall decks"), _anchor="wall") }}
+        to deal with {{ link("/strategy/fundamentals", _("block denial"), _anchor="stealth-and-intercept") }},
+        otherwise its value varies depending on how godd a player is at assessing the importance of cards.
+    </p>
+</div>
+<div class="column">
+    <div class="column-image">
+        <img src="{{ url_for('static', filename='img/card-images/informationhighway.jpg') }}">
+        <h4>Information Highway</h4>
+        <p class="center-subtitle">played in 566 decks, typically 1-3 copies</p>
+    </div>
+    <p>
+        An excellent crypt accelerator at no cost, it is played both with big capacity crypts, but also with
+        weenie crypts at 1-2 capacity to make it possible to draw and get out a vampire in a single turn.
+        Even if it is <em>Unique</em>, some decks include it in multiple copies to improve their chances
+        to draw it early on.
+    </p>
+</div>
+<div class="column">
+    <div class="column-image">
+        <img src="{{ url_for('static', filename='img/card-images/blooddoll.jpg') }}">
+        <h4>Blood Doll</h4>
+        <p class="center-subtitle">played in 558 decks, typically 2-5 copies</p>
+    </div>
+    <p>
+        Similar to {{ card("Vessel") }} in its effect,
+        it is not a <em>Trifle</em>, so it does not fit in all decks
+        depending on the number of Master cards.
+        Even if it can be destroyed by a {{ card("Vessel") }},
+        it is immediately usable when played and costs zero pool.
+    </p>
+</div>
+<div class="column">
+    <div class="column-image">
+        <img src="{{ url_for('static', filename='img/card-images/powerbasemontreal.jpg') }}">
+        <h4>Powerbase: Montreal</h4>
+        <p class="center-subtitle">played in 504 decks, typically 1 copy</p>
+    </div>
+    <p>
+        A good bloat device that generates one pool per turn at no cost. It is a no-brainer in decks able to
+        defend it. It can also be a useful piece of bargain when dealing with other Methusalahs, as it can
+        easily be borrowed as part of a deal.
+    </p>
+</div>
+<div class="column">
+    <div class="column-image">
+        <img src="{{ url_for('static', filename='img/card-images/widerview.jpg') }}">
+        <h4>Wider View</h4>
+        <p class="center-subtitle">played in 475 decks, typically 1-2 copies</p>
+    </div>
+    <p>
+        A cheap <em>Trifle</em> that provides some rotation to the crypt. For a lot of crypts, this is a
+        useful
+        asset in the mid game to help fetch a third vampire. It is even guaranteed to
+        generate one pool at some point.
+    </p>
+</div>
+<div class="column">
+    <div class="column-image">
+        <img src="{{ url_for('static', filename='img/card-images/fame.jpg') }}">
+        <h4>Fame</h4>
+        <p class="center-subtitle">played in 423 decks, typically 1-2 copies</p>
+    </div>
+    <p>
+        A key card for combat heavy decks, usually used on the prey's minions, it provides excellent pool
+        damage.
+        The fact that it is <em>Unique</em> means it can not easily be abused, though.
+    </p>
+</div>
+<div class="column">
+    <div class="column-image">
+        <img src="{{ url_for('static', filename='img/card-images/archoninvestigation.jpg') }}">
+        <h4>Archon Investigation</h4>
+        <p class="center-subtitle">played in 411 decks, typically 1-2 copies</p>
+    </div>
+    <p>
+        A dreadful deterrent against too powerful bleeders. A must have for decks who do not have access to
+        bounces,
+        it can be included in virtually any deck just to discourage the 6-7 bleed scores <i>d</i> and
+        <i>r</i>
+        can achieve.
+    </p>
+</div>
+<div class="column">
+    <div class="column-image">
+        <img src="{{ url_for('static', filename='img/card-images/wash.jpg') }}">
+        <h4>Wash</h4>
+        <p class="center-subtitle">played in 391 decks, typically 1-3 copies</p>
+    </div>
+    <p>
+        Countering Master cards is often useful: the best move is to counter a bloat card like
+        {{ card("Villein") }}, which is equivalent to a serious bleed.
+        Other powerful Master cards can be countered this way too.
+    </p>
+</div>
+<div class="column">
+    <div class="column-image">
+        <img src="{{ url_for('static', filename='img/card-images/jakewashington.jpg') }}">
+        <h4>Jake Washington</h4>
+        <p class="center-subtitle">played in 367 decks, typically 1-3 copies</p>
+    </div>
+    <p>
+        A good way to bring back some blood on a vampire, it can also provide protection by blocking an
+        action
+        and is a key combination with {{ card("War Ghoul") }} and
+        {{ card("Khazar's Diary") }}.
+    </p>
+</div>
+<div class="column">
+    <div class="column-image">
+        <img src="{{ url_for('static', filename='img/card-images/parthenonthe.jpg') }}">
+        <h4>The Parthenon</h4>
+        <p class="center-subtitle">played in 355 decks, typically 1-4 copies</p>
+    </div>
+    <p>
+        A useful tool as it enable the play of more Master cards at no cost, it can be combined with
+        vampires
+        providing yet another Master action: {{ card("Anson") }},
+        {{ card("Nana Buruku") }},
+        {{ card("Cybele") }},
+        {{ card("Huitzilopochtli") }} or
+        {{ card("Isanwayen") }}.
+    </p>
+</div>
+<div class="column">
+    <div class="column-image">
+        <img src="{{ url_for('static', filename='img/card-images/perfectionist.jpg') }}">
+        <h4>Perfectionist</h4>
+        <p class="center-subtitle">played in 350 decks, typically 1-3 copies</p>
+    </div>
+    <p>
+        An easy way to get some pool back on a vampire at no cost.
+        Many actions go through unblocked and unreacted to,
+        so it tends to bring a pool back on the vampire at least every other turn.
+    </p>
+</div>
+<div class="column">
+    <div class="column-image">
+        <img src="{{ url_for('static', filename='img/card-images/rackthe.jpg') }}">
+        <h4>The Rack</h4>
+        <p class="center-subtitle">played in 339 decks, typically 1 copy</p>
+    </div>
+    <p>
+        One of the best tool available to bring some blood back on a vampire, it works beautifully with
+        {{ card("Blood Doll") }} or
+        {{ card("Vessel") }}. It needs to be defended to be kept in play,
+        but such a good blood generator at no cost is a bargain.
+    </p>
+</div>
+<div class="column">
+    <div class="column-image">
+        <img src="{{ url_for('static', filename='img/card-images/monasteryofshadows.jpg') }}">
+        <h4>Monastery of Shadows</h4>
+        <p class="center-subtitle">played in 333 decks, typically 1 copy</p>
+    </div>
+    <p>
+        A costly but efficient location. The stealth can make the difference between life or death
+        for the prey, and the bonus hand size is nothing to frown upon.
+        It is a little bit better in decks using
+        {{ card("Parity Shift") }} as it can get the pool down just
+        enough
+        to be able to play the vote against one's prey.
+    </p>
+</div>
+<div class="column">
+    <div class="column-image">
+        <img src="{{ url_for('static', filename='img/card-images/suddenreversal.jpg') }}">
+        <h4>Sudden Reversal</h4>
+        <p class="center-subtitle">played in 325 decks, typically 1-3 copies</p>
+    </div>
+    <p>
+        Very similar to {{ card("Wash") }}, it is not a <em>Trifle</em>
+        but,
+        on the other hand, it does not let the target play another Master, so it is a bit more efficient
+        for stopping a bloat. So, if there is room for a full fledged Master in the deck,
+        it is a marginally better option.
+    </p>
+</div>
+<div class="column">
+    <div class="column-image">
+        <img src="{{ url_for('static', filename='img/card-images/coventhe.jpg') }}">
+        <h4>The Coven</h4>
+        <p class="center-subtitle">played in 299 decks, typically 1 copy</p>
+    </div>
+    <p>
+        A good way to bring some blood back on the table, is it a useful tool against rush and grinder
+        decks.
+        Even if it does not come along so often, the fact that it helps the whole table can really slow down
+        these
+        particular archetypes.
+    </p>
+</div>
+<div class="column">
+    <div class="column-image">
+        <img src="{{ url_for('static', filename='img/card-images/ashurtablets.jpg') }}">
+        <h4>Ashur Tablets</h4>
+        <p class="center-subtitle">played in 294 decks, typically 6-12 copies</p>
+    </div>
+    <p>
+        It is a decent bloating device but its key ability is to allow some recursion in the deck.
+        Played in conjunction with some cards to add Master action,
+        it becomes tremendously efficient. Decks that use it typically include a dozen of them,
+        but getting over 20 copies is not unheard of.
+    </p>
+</div>
+<div class="column">
+    <div class="column-image">
+        <img src="{{ url_for('static', filename='img/card-images/anarchtroublemaker.jpg') }}">
+        <h4>Anarch Troublemaker</h4>
+        <p class="center-subtitle">played in 287 decks, typically 1-2 copies</p>
+    </div>
+    <p>
+        A powerful tool for <em>powerbleed</em> constructs. Its ability to destroy an equipment can be
+        useful,
+        but it is mostly included for its ability to lock vampires, and it is a key card for bleed decks
+        without stealth.
+    </p>
+</div>
+<div class="column">
+    <div class="column-image">
+        <img src="{{ url_for('static', filename='img/card-images/securehaven.jpg') }}">
+        <h4>Secure Haven</h4>
+        <p class="center-subtitle">played in 277 decks, typically 1-2 copies</p>
+    </div>
+    <p>
+        Although <em>Unique</em>, it is a solid counter against rush decks. Other options are required to
+        really defend against them as this can only protect one vampire, but still this is a vampire one
+        would not take down easily.
+    </p>
+</div>
+<div class="column">
+    <div class="column-image">
+        <img src="{{ url_for('static', filename='img/card-images/smilingjacktheanarch.jpg') }}">
+        <h4>Smiling Jack, The Anarch</h4>
+        <p class="center-subtitle">played in 269 decks, typically 1-2 copies</p>
+    </div>
+    <p>
+        This is a good damage dealing option for <em>wall</em> decks. As they tend to be low on pool damage,
+        this
+        helps them ousting the table in timely fashion.
+    </p>
+</div>
+<div class="column">
+    <div class="column-image">
+        <img src="{{ url_for('static', filename='img/card-images/golcondainnerpeace.jpg') }}">
+        <h4>Golconda: Inner Peace</h4>
+        <p class="center-subtitle">played in 252 decks, typically 1-3 copies</p>
+    </div>
+    <p>
+        Although loosing a vampire is a steep price to pay, this is the highest bloat possible.
+        Played on a 10 or 11 capacity vampire, that's a lot of pool, moreover if
+        {{ card("Minion Tap") }}
+        has been played on the vampire the turn before.
+        It can also often be played for 2 pool damages on the prey.
+    </p>
+</div>
+<div class="column">
+    <div class="column-image">
+        <img src="{{ url_for('static', filename='img/card-images/zillahsvalley.jpg') }}">
+        <h4>Zillah's Valley</h4>
+        <p class="center-subtitle">played in 230 decks, typically 3-7 copies</p>
+    </div>
+    <p>
+        An excellent crypt accelerator provided one has big capacity vampires and enough pool to use it.
+        It is a very good combination with {{ card("Villein") }} or
+        {{ card("Minion Tap") }}, but also helps get some pool out
+        fast
+        to play a {{ card("Parity Shift") }} on one's prey.
+    </p>
+</div>
+<div class="column">
+    <div class="column-image">
+        <img src="{{ url_for('static', filename='img/card-images/barrensthe.jpg') }}">
+        <h4>The Barrens</h4>
+        <p class="center-subtitle">played in 205 decks, typically 1 copy</p>
+    </div>
+    <p>
+        Although not as versatile as
+        {{ card("Dreams of the Sphinx") }},
+        it is a good additional tool to help card rotation at no cost.
+    </p>
+</div>
+<div class="column">
+    <div class="column-image">
+        <img src="{{ url_for('static', filename='img/card-images/krcgnewsradio.jpg') }}">
+        <h4>KRCG News Radio</h4>
+        <p class="center-subtitle">played in 205 decks, typically 1 copy</p>
+    </div>
+    <p>
+        A good permanent intercept card at a decent price, it can even be used to help another player.
+        As it is <em>Unique</em>, other locations can be included along it to improve intercept,
+        in order of frequency
+        {{ card("WRMH Talk Radio") }},
+        {{ card("Channel 10") }},
+        <span class="card" onclick="dC('rumormilltabloidnewspaperthe')">
+            The Rumor Mill
+        </span> and
+        <span class="card" onclick="dC('wallstreetnightfinancialnewspaper')">
+            Wall Street Night
+        </span>.
+    </p>
+</div>
+<div class="column">
+    <div class="column-image">
+        <img src="{{ url_for('static', filename='img/card-images/misdirection.jpg') }}">
+        <h4>Misdirection</h4>
+        <p class="center-subtitle">played in 172 decks, typically 1-2 copies</p>
+    </div>
+    <p>
+        A nice tool for <em>powerbleed</em> constructs,
+        it helps to get bleeds through when one has no stealth.
+        Although a bit expensive, it is often a key card for the lunge in such decks.
+    </p>
+</div>
+<div class="column">
+    <div class="column-image">
+        <img src="{{ url_for('static', filename='img/card-images/liquidation.jpg') }}">
+        <h4>Liquidation</h4>
+        <p class="center-subtitle">played in 171 decks, typically 3-7 copies</p>
+    </div>
+    <p>
+        An excellent bloat device, its side-effect of card discard can be a bummer, as many
+        decks rely on the fact that even just 2 exemplaries of a given card
+        are enough to draw it at some point in the game.
+        However, used in conjunction with
+        {{ card("Ashur Tablets") }},
+        {{ card("Emerald Legionnaire") }} or
+        {{ card("Sudario Refraction") }},
+        it becomes invaluable.
+    </p>
+</div>
+<div class="column">
+    <div class="column-image">
+        <img src="{{ url_for('static', filename='img/card-images/havenuncovered.jpg') }}">
+        <h4>Haven Uncovered</h4>
+        <p class="center-subtitle">played in 170 decks, typically 1-4 copies</p>
+    </div>
+    <p>
+        An excellent device for combat-oriented decks. Broader than a rush action like
+        {{ card("Bum's Rush") }}, it lets all the minions rush the
+        target.
+        This is a good way to quickly overwhelm a defensive module, plus it will take an action to remove,
+        slowing the opponent. A good addition to {{ card("Fame") }}.
+    </p>
+</div>
+<div class="column">
+    <div class="column-image">
+        <img src="{{ url_for('static', filename='img/card-images/miniontap.jpg') }}">
+        <h4>Minion Tap</h4>
+        <p class="center-subtitle">played in 162 decks, typically 1-6 copies</p>
+    </div>
+    <p>
+        An good bloat device, it helps to get multiple big capacity vampires out at a reasonnable cost.
+        Even better with crypt accelerators like
+        {{ card("Zillah's Valley") }} and
+        {{ card("Information Highway") }},
+        it has long been outclassed by {{ card("Villein") }},
+        until the <em>errata</em> of 2018 setting an upper limit of 5 blood.
+    </p>
+</div>
+{% endblock %}

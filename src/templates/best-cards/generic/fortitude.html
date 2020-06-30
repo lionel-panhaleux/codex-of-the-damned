@@ -1,0 +1,108 @@
+{% extends "best-cards/_layout.html" %}
+
+{% block content %}
+<h1><i>f</i> Fortitude</h1>
+<div class="tip">
+    <p>
+        <i>f</i> provides damage prevention and additional actions.
+    </p>
+</div>
+<div class="column">
+    <div class="column-image">
+        <img src="{{ url_for('static', filename='img/card-images/freakdrive.jpg') }}">
+        <h4>Freak Drive</h4>
+        <p class="center-subtitle">played in 401 decks, typically 1-13 copies</p>
+    </div>
+    <p>
+        By far the most played <i>f</i> card, this is a straight-up
+        {{ link("/strategy/fundamentals", _("A&B"), _anchor="AB") }} enhancer.
+        The 1 blood cost is a bargain, although vampires with access to <i>c</i> can use
+        the cheaper {{ card("Forced March") }}.
+    </p>
+</div>
+<div class="column">
+    <div class="column-image">
+        <img src="{{ url_for('static', filename='img/card-images/rollingwiththepunches.jpg') }}">
+        <h4>Rolling with the Punches</h4>
+        <p class="center-subtitle">played in 207 decks, typically 2-5 copies</p>
+    </div>
+    <p>
+        The best damage prevention of the game: its inferior version is easy to use and the superior version
+        is efficient against high damage, additional strikes and aggravated damage all the same.
+    </p>
+</div>
+<div class="column">
+    <div class="column-image">
+        <img src="{{ url_for('static', filename='img/card-images/daringthedawn.jpg') }}">
+        <h4>Daring the Dawn</h4>
+        <p class="center-subtitle">played in 191 decks, typically 1-4 copies</p>
+    </div>
+    <p>
+        An efficient block denial. It is a nice tool to deliver a finishing blow
+        when no good stealth discipline is available.
+    </p>
+</div>
+<div class="column">
+    <div class="column-image">
+        <img src="{{ url_for('static', filename='img/card-images/hiddenstrength.jpg') }}">
+        <h4>Hidden Strength</h4>
+        <p class="center-subtitle">played in 145 decks, typically 2-6 copies</p>
+    </div>
+    <p>
+        An excellent damage prevention at inferior <i>f</i>: it is easy to use and will not jam a hand,
+        plus it prevents aggravated and defuses
+        {{ card("Taste of Vitae") }} as well as
+        {{ card("Disarm") }}.
+        The optional press at superior <i>F</i> can also be useful.
+    </p>
+</div>
+<div class="column">
+    <div class="column-image">
+        <img src="{{ url_for('static', filename='img/card-images/indomitability.jpg') }}">
+        <h4>Indomitability</h4>
+        <p class="center-subtitle">played in 109 decks, typically 2-6 copies</p>
+    </div>
+    <p>
+        A good damage prevention at no cost, easy to use with a useful optional press.
+        Contrary to {{ card("Hidden Strength") }},
+        its press can be used even if the opponent inflicts no damage,
+        for example if he uses a maneuver to try to avoid bruise.
+    </p>
+</div>
+<div class="column">
+    <div class="column-image">
+        <img src="{{ url_for('static', filename='img/card-images/skinofsteel.jpg') }}">
+        <h4>Skin of Steel</h4>
+        <p class="center-subtitle">played in 98 decks, typically 1-5 copies</p>
+    </div>
+    <p>
+        Not as proficient as
+        {{ card("Rolling with the Punches") }},
+        it is used in constructs where <i>f</i> is more common than <i>F</i>.
+    </p>
+</div>
+<div class="column">
+    <div class="column-image">
+        <img src="{{ url_for('static', filename='img/card-images/soak.jpg') }}">
+        <h4>Soak</h4>
+        <p class="center-subtitle">played in 92 decks, typically 1-5 copies</p>
+    </div>
+    <p>
+        High damage prevention at no cost, it is efficient against light combat modules
+        using
+        {{ card("Weighted Walking Stick") }} or
+        {{ card("Carrion Crows") }}.
+        However, it is useless against additional strikes and aggravated damage.
+    </p>
+</div>
+<div class="column">
+    <div class="column-image">
+        <img src="{{ url_for('static', filename='img/card-images/kissofrathe.jpg') }}">
+        <h4>The Kiss of Ra</h4>
+        <p class="center-subtitle">played in 92 decks, typically 1-2 copies</p>
+    </div>
+    <p>
+        A costly modifier, but potentially destructive. Often seen in bleed or vote decks with low stealth.
+    </p>
+</div>
+{% endblock %}

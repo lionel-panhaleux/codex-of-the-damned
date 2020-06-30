@@ -1,0 +1,151 @@
+{% extends "strategy/_layout.html" %}
+{% block content %}
+<h1><img src="{{ url_for('static', filename='img/icons/clan-toreador-anti.svg') }}"> Libertine Ball</h1>
+
+<div class="decklist">
+    <h3>Crypt (12 cards)</h3>
+    <ul>
+        <li>2 {{ card("Conchita Morales") }}</li>
+        <li>2 {{ card("Guggenheim") }}</li>
+        <li>1 {{ card("Jonathan Gursel") }}</li>
+        <li>1 {{ card("Justine Chen, Innocent") }}</li>
+        <li>3 {{ card("Klaus Konrecht") }}</li>
+        <li>1 {{ card("L’Epuisette") }}</li>
+        <li>1 {{ card("Loonar") }}</li>
+        <li>1 {{ card("Monique Kim") }}</li>
+    </ul>
+    <h3>Library (77 cards)</h3>
+    <ul>
+        <li>
+            <h4>— Master (16) —</h4>
+        </li>
+        <li>1 {{ card("Creepshow Casino") }}</li>
+        <li>1 {{ card("Día de los Muertos") }}</li>
+        <li>3 {{ card("Foundation Exhibit") }}</li>
+        <li>1 {{ card("The Hungry Coyote") }}</li>
+        <li>3 {{ card("Palla Grande") }}</li>
+        <li>2 {{ card("Perfectionist") }}</li>
+        <li>1 {{ card("Wash") }}</li>
+        <li>4 {{ card("Vessel") }}</li>
+        <li>
+            <h4>— Action (22) —</h4>
+        </li>
+        <li>4 {{ card("Art Scam") }}</li>
+        <li>9 {{ card("The Embrace") }}</li>
+        <li>6 {{ card("Enchant Kindred") }}</li>
+        <li>3 {{ card("Entrancement") }}</li>
+        <li>
+            <h4>— Political (13) —</h4>
+        </li>
+        <li>7 {{ card("Consanguineous Boon") }}</li>
+        <li>6 {{ card("Kine Resources Contested") }}</li>
+        <li>
+            <h4>— Modifier (12) —</h4>
+        </li>
+        <li>4 {{ card("Change of Target") }}</li>
+        <li>3 {{ card("Perfect Paragon") }}</li>
+        <li>3 {{ card("Resist Earth’s Grasp") }}</li>
+        <li>2 {{ card("Scalpel Tongue") }}</li>
+        <li>
+            <h4>— Combat (4) —</h4>
+        </li>
+        <li>4 {{ card("Majesty") }}</li>
+        <li>
+            <h4>— Reaction (10) —</h4>
+        </li>
+        <li>2 {{ card("Delaying Tactics") }}</li>
+        <li>4 {{ card("On the Qui Vive") }}</li>
+        <li>4 {{ card("Telepathic Misdirection") }}</li>
+    </ul>
+</div>
+<h2>Summary</h2>
+<p>
+    This is a Toreador Antitribu <em>Breed & Vote</em> deck.
+    The setup is to get a the oldest vampire out first,
+    then play {{ card("The Embrace") }} and
+    {{ card("Enchant Kindred") }} at superior <i>R</i>
+    to get more Toreador Antitribu in play. The idea is to overwhelm other decks by sheer numbers.
+</p>
+<p>
+    Once enough vampires are in play, the plan is to play either
+    {{ card("Foundation Exhibit") }} or
+    {{ card("Palla Grande") }} to make them useful.
+    These cards should be kept in hand: even copies to replace them are useful.
+</p>
+<h2>Offence</h2>
+<p>
+    <strong>Pool damage</strong> is high, using
+    {{ card("Kine Resources Contested") }}
+    and bleed actions — especially if {{ card("Palla Grande") }}
+    is in play.
+    If {{ card("Enchant Kindred") }} is used at superior <i>R</i>
+    in the beginning to build up more power, it becomes an excellent bleed action at inferior <i>r</i> later on.
+</p>
+<p>
+    The deck has almost no stealth:
+    it uses {{ card("Change of Target") }}
+    against wakes and
+    {{ card("Majesty") }} at superior <i>R</i>
+    to cancel combats after an action is block, then unlock and try another one.
+    The sheer number of actions will ensure most of them get through.
+    Still, {{ card("Resist Earth’s Grasp") }} is available to help
+    get critical actions through, like {{ card("The Embrace") }}.
+</p>
+<h2>Defence</h2>
+<p>
+    The <strong>combat module is defensive</strong>, using {{ card("Majesty") }}
+    to end combats that could kill the vampires.
+</p>
+<p>
+    <strong>Bloat is high</strong>, with
+    {{ card("Consanguineous Boon") }} and
+    {{ card("Art Scam") }},
+    completed with some {{ link("/strategy/bloat", _("leeching"), _anchor="leeching") }} from the vampires
+    with {{ card("Vessel") }}.
+    {{ card("Creepshow Casino") }} and
+    {{ card("The Hungry Coyote") }} help get more blood out of
+    hunt actions, and {{ card("Perfectionist") }} is used to get even more
+    blood back on vampires.
+</p>
+<p>
+    The deck avoids combat so it <strong>does not try to intercept</strong> actions, hence the high bloat module.
+    It uses only {{ card("Delaying Tactics") }} against critical votes
+    and {{ card("Telepathic Misdirection") }} to bounce bleeds.
+</p>
+<h2>Tips</h2>
+<p>
+    Play <strong>as many actions as possible</strong>. As a general rule, do not keep vampires unlocked and never
+    try to intercept.
+</p>
+<p>
+    Keep your vampires <strong>out of torpor</strong>. Embraces seem expendable, but the power of this deck
+    relies on the number of minions. If an Embrace goes into torpor, pay the blood and get her out.
+</p>
+<p>
+    <strong>Keep your votes</strong> for when
+    {{ card("Foundation Exhibit") }} hit the table.
+    {{ card("Consanguineous Boon") }} is your best bloat device
+    and it is critical to get some through throughout the game.
+</p>
+<div class="tip">
+    <h3>Order of actions</h3>
+    <p>
+        The deck undertakes so many actions it makes it hard for the opponents
+        to decide what to block when they can. Moreover, the deck uses
+        {{ card("Majesty") }} and
+        {{ card("Change of Target") }} when it is blocked to
+        end the action, unlock and try another one.
+    </p>
+    <p>
+        The order of actions is therefore decisive. Try to <strong>bait</strong> your opponents into blocking
+        bleed or {{ card("Kine Resources Contested") }}
+        first, then when it seems safe play
+        {{ card("The Embrace") }} and
+        {{ card("Consanguineous Boon") }}.
+    </p>
+</div>
+<p>
+    Check the <a href="https://vtesinformationhighway.wordpress.com/2019/01/24/toreador-starter-libertine-ball/">
+        Information Highway article</a> for a deck review and ideas on how to improve it
+</p>
+{% endblock %}

@@ -1,0 +1,94 @@
+{% extends "archetypes/_layout.html" %}
+{% import "archetypes/_layout-erratum.html" as erratum %}
+
+{% block archetype_name %}
+<h1><img src="{{ url_for('static', filename='img/icons/clan-ventrue.svg') }}"> Ventrue Royalty</h1>
+{% endblock %}
+
+{% block archetype %}>
+<h2>Highlights</h2>
+<p>
+    This is a <em>toolbox</em> deck using Ventrue <em>Princes</em>.
+</p>
+<p>
+    The idea is to get the highest capacity vampire out,
+    then use {{ card("Govern the Unaligned") }}
+    at superior <i>D</i> to get more vampires out fast and cheap, then later to bleed with the help of
+    some <i>d</i> modifiers.
+</p>
+<p>
+    The intercept module is built around the fact the many vampires in the crypt are <em>Princes</em> and uses
+    {{ card("Second Tradition: Domain") }} heavily.
+    {{ card("Deflection") }} is used to bounce bleeds in case
+    they get thtough anyway.
+</p>
+<p>
+    The combat module uses <i>f</i> for damage prevention and
+    {{ card("Weighted Walking Stick") }} to deal
+    more damage.
+</p>
+<h2>Tips & Tricks</h2>
+<p>
+    {{ card("Daring the Dawn") }} and
+    {{ card("Foreshadowing Destruction") }}
+    are used for the lunge.
+    The use of {{ card("Direct Intervention") }} on a modifier
+    like {{ card("Conditioning") }} prevents it to be played again on the
+    same action (as a modifier can only be played once, even if countered).
+    Using an alternative bleed enhancer is permitted though
+    (the modifier did not apply, so limited bleed enhancement is still possible).
+    {{ card("Foreshadowing Destruction") }}
+    can even save a lunge this way.
+</p>
+<p>
+    {{ card("Scourge of the Enochians") }} and
+    {{ card("Anarchist Uprising") }} are counters against
+    breed constructs, as they can become overwhelming for this deck.
+</p>
+<h2>Variants</h2>
+<p>
+    There are many minor variations to this archetype.
+    {{ card("Parity Shift") }} and
+    {{ card("Entrancement") }} are often included,
+    {{ card("Seduction") }} can help to get the bleed through.
+    On the Master side,
+    {{ card("Papillon") }} and
+    {{ card("Island of Yiaros") }} are common inclusions.
+    Finally, some
+    {{ card("Freak Drive") }} to increase
+    {{ link("/strategy/fundamentals", _("A&B"), _anchor="AB") }}w is often seen too.
+</p>
+<p>
+    The <strong>Law Firm</strong> variant ditches the combat module and replaces it with some
+    {{ card("Majesty") }}, with a good number of
+    {{ card("Freak Drive") }} for multiple actions.
+    With more damaging votes like
+    {{ card("Kine Resources Contested") }},
+    it makes for many aggressive actions, and they quickly become hard to block.
+    {{ link("/deck-search", _("Anthony Coleman's deck"), twda_id="2k9uknats") }} from the 2009 English NC
+    is a good example. It is also often played with a group 1-2 crypt, as
+    {{ card("Emerson Bridges") }} and
+    {{ card("Sir Walter Nash") }} are good Princes
+    for the job, at a low cost.
+    {{ link("/deck-search", _("Sergio Gracia's deck"), twda_id="2k9powerbasecataluna") }} from 2009
+    is a good example.
+</p>
+{% endblock %}
+
+{% block errata %}
+<div class="warning">
+    <h3>Errata</h3>
+    {{ erratum.pentextmsubversion( 'undecided' ) }}
+</div>
+{% endblock %}
+
+{% block script %}
+<script>
+window.onload = function () {
+    document.getElementById("card-modal").addEventListener("keydown", modalKeydown)
+    document.getElementById("card-prev").addEventListener("click", prevCard)
+    document.getElementById("card-next").addEventListener("click", nextCard)
+    displayDeck({"author":null,"comments":"-- 3gw9 -- 2VP\n","crypt":{"cards":[{"comments":null,"count":3,"id":"200848","name":"Lodin (Olaf Holte)"},{"comments":null,"count":2,"id":"200533","name":"Graham Gottesman"},{"comments":null,"count":1,"id":"201026","name":"Mustafa, The Heir"},{"comments":null,"count":1,"id":"201438","name":"Victor Donaldson"},{"comments":null,"count":1,"id":"200421","name":"Emily Carson"},{"comments":null,"count":1,"id":"200691","name":"Jephta Hester"},{"comments":null,"count":1,"id":"200707","name":"Jo\u00e3o Bil\u00e9"},{"comments":null,"count":1,"id":"201440","name":"Victor Pelletier"},{"comments":null,"count":1,"id":"201403","name":"Ulrike Rothbart"}],"count":12},"date":"2013-10-05","event":"EC 2013 Day 2","library":{"cards":[{"cards":[{"comments":null,"count":2,"id":"100199","name":"Blood Doll"},{"comments":null,"count":2,"id":"102113","name":"Vessel"},{"comments":null,"count":1,"id":"100058","name":"Anarch Troublemaker"},{"comments":null,"count":1,"id":"100545","name":"Direct Intervention"},{"comments":null,"count":1,"id":"100588","name":"Dreams of the Sphinx"},{"comments":null,"count":1,"id":"100824","name":"Giant's Blood"},{"comments":null,"count":1,"id":"100897","name":"Haven Uncovered"},{"comments":null,"count":1,"id":"101384","name":"Pentex(TM) Subversion"},{"comments":null,"count":1,"id":"101896","name":"Sudden Reversal"},{"comments":null,"count":1,"id":"102084","name":"Uptown Hunting Ground"},{"comments":null,"count":1,"id":"102109","name":"Ventrue Headquarters"}],"count":13,"type":"Master"},{"cards":[{"comments":null,"count":13,"id":"100845","name":"Govern the Unaligned"}],"count":13,"type":"Action"},{"cards":[{"comments":null,"count":1,"id":"100059","name":"Anarchist Uprising"}],"count":1,"type":"Political Action"},{"cards":[{"comments":null,"count":4,"id":"100401","name":"Conditioning"},{"comments":null,"count":3,"id":"100492","name":"Daring the Dawn"},{"comments":null,"count":2,"id":"100236","name":"Bonding"},{"comments":null,"count":2,"id":"100765","name":"Foreshadowing Destruction"}],"count":11,"type":"Action Modifier"},{"cards":[{"comments":null,"count":1,"id":"101256","name":"Murmur of the False Will"}],"count":1,"type":"Action Modifier/Reaction"},{"cards":[{"comments":null,"count":5,"id":"100973","name":"Indomitability"},{"comments":null,"count":5,"id":"102169","name":"Weighted Walking Stick"},{"comments":null,"count":4,"id":"100918","name":"Hidden Strength"},{"comments":null,"count":1,"id":"102071","name":"Unflinching Persistence"}],"count":15,"type":"Combat"},{"cards":[{"comments":null,"count":8,"id":"101706","name":"Second Tradition: Domain"},{"comments":null,"count":7,"id":"100518","name":"Deflection"},{"comments":null,"count":2,"id":"101321","name":"On the Qui Vive"},{"comments":null,"count":1,"id":"100519","name":"Delaying Tactics"},{"comments":null,"count":1,"id":"101578","name":"Redirection"}],"count":19,"type":"Reaction"},{"cards":[{"comments":null,"count":1,"id":"100001","name":".44 Magnum"},{"comments":null,"count":1,"id":"100903","name":"Heart of Nizchetus"},{"comments":null,"count":1,"id":"101014","name":"Ivory Bow"}],"count":3,"type":"Equipment"},{"cards":[{"comments":null,"count":1,"id":"100298","name":"Carlton Van Wyk"}],"count":1,"type":"Ally"},{"cards":[{"comments":null,"count":1,"id":"101697","name":"Scourge of the Enochians"},{"comments":null,"count":1,"id":"102057","name":"The Uncoiling"}],"count":2,"type":"Event"}],"count":79},"name":"Better Gents with Sticks","place":"Stockholm, Sweden","player":"Hugh Angseesing","players_count":40,"score":null,"tournament_format":"3R+F","twda_id":"2013ecd2ss"})
+}
+</script>
+{% endblock %}

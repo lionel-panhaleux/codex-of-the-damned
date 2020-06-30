@@ -1,0 +1,55 @@
+{% extends "layout.html" %}
+
+{% block head %}
+{{ super() }}
+<!-- Adding needed scripts -->
+<script src="{{ url_for('static', filename='js/dC.js') }}"></script>
+<script src="{{ url_for('static', filename='js/decklist.js') }}"></script>
+<script src="{{ url_for('static', filename='js/twda.js') }}"></script>
+{% endblock %}
+
+{% block card_display %}
+<div id="card-modal" class="modal" onclick="this.style.display='none'" tabindex="-1">
+	<div id=card-prev class="modal-nav">&#xf077</div>
+	<img class="modal-content" id="card-image">
+	<div id=card-next class="modal-nav">&#xf078</div>
+</div>
+{% endblock %}
+
+{% block content %}
+<h1>Deck Search</h1>
+<p>
+    This is an interactive interface to the
+    <a target="_blank" href="http://www.vekn.fr/decks/twd.htm">Tournament Winning Deck Archive (TWDA)</a>
+    provided by VEKN. Type a card name to search all winning deck with it since 2008.
+</p>
+<form id="card-form" autocomplete="off">
+    <div class="autocomplete">
+        <input type="text" id="card_name" placeholder="Card Name" autocomplete="off" autocorrect="off"
+            autocapitalize="off" spellcheck="false" />
+    </div>
+    <div class="multi-card-search" id="multi-card-search"></div>
+    <input type="button" id="clear-search-btn" class="clear-search-btn" value="Clear"
+        onclick="clearMultiCardSearch()" />
+</form>
+<div class="result-message" id="result-message"></div>
+<div class="results">
+    <table>
+        <tbody id="results">
+        </tbody>
+    </table>
+</div>
+<div id="decklist" class="decklist" style="display: none">
+    <h2 id="deck-name"><a id="deck-link" href="http://example.com"></a></h2>
+    <p id="deck-header"></p>
+    <h3 id="crypt-header"></h3>
+    <ul id="crypt-list">
+    </ul>
+    <h3 id="library-header"></h3>
+    <ul id="library-list">
+    </ul>
+</div>
+<h2 id="comments-title" style="display: none">Comments</h2>
+<div id="comments" class="comments">
+</div>
+{% endblock %}

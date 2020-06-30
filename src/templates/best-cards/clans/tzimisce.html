@@ -1,0 +1,106 @@
+{% extends "best-cards/_layout.html" %}
+
+{% block content %}
+<h1><img src="{{ url_for('static', filename='img/icons/clan-tzimisce.svg') }}"> Tzimisce</h1>
+<p>
+    The Tzimisce and their unique <i>v</i> discipline also have the quite rare <i>AI</i> combination,
+    making them excellent blockers.
+    They have given birth to the
+    the {{ link("/archetypes/tzimisce-wall", _("Tzimisce Wall")) }} and the
+    {{ link("/archetypes/tzimisce-toolbox", _("Tzimisce Toolbox")) }} archetypes,
+    but also to the {{ link("/archetypes/war-ghouls", _("War Ghouls")) }} archetype,
+    using {{ card("War Ghoul") }} to rush opponents vampires.
+</p>
+<h2>Highlights</h2>
+<div class="column">
+    <div class="column-image">
+        <img src="{{ url_for('static', filename='img/card-images/chiropteranmarauder.jpg') }}">
+        <h4>Chiropteran Marauder</h4>
+        <p class="center-subtitle">played in 60 decks, typically 3-10 copies</p>
+    </div>
+    <p>
+        An excellent combat card offering both maneuverability and aggravated damage.
+        As a bonus, the strike stays a hand strike and can be used even if
+        {{ card("Immortal Grapple") }} has been played.
+
+    </p>
+</div>
+<div class="column">
+    <div class="column-image">
+        <img src="{{ url_for('static', filename='img/card-images/breathofthedragon.jpg') }}">
+        <h4>Breath of the Dragon</h4>
+        <p class="center-subtitle">played in 53 decks, typically 1-6 copies</p>
+    </div>
+    <p>
+        The <em>other</em> aggravated strike available through <i>v</i>,
+        it makes for a dreadful combination with
+        {{ card("Chiropteran Marauder") }},
+        as no range is safe for the opponent.
+    </p>
+</div>
+<div class="column">
+    <div class="column-image">
+        <img src="{{ url_for('static', filename='img/card-images/caliban.jpg') }}">
+        <h4>Caliban</h4>
+        <p class="center-subtitle">played in 52 decks, typically 1-2 copies</p>
+    </div>
+    <p>
+        All clan disciplines <i>AIV</i> at superior for only 6 pool: a bargain.
+        He finds his spot in many Tzimisce crypts.
+    </p>
+</div>
+<div class="column">
+    <div class="column-image">
+        <img src="{{ url_for('static', filename='img/card-images/devinbisley.jpg') }}">
+        <h4>Devin Bisley</h4>
+        <p class="center-subtitle">played in 50 decks, typically 1-2 copies</p>
+    </div>
+    <p>
+        Although she has inferior <i>v</i>, having <i>AI</i> for just 5 pool
+        makes an excellent blocker out of her.
+    </p>
+</div>
+<div class="column">
+    <div class="column-image">
+        <img src="{{ url_for('static', filename='img/card-images/changeling.jpg') }}">
+        <h4>Changeling (47 decks)</h4>
+        <p class="center-subtitle">played in 49 decks, typically 3-8 copies</p>
+    </div>
+    <p>
+        Choice between stealth and bleed enhancement, a versatile tool for <i>v</i>.
+    </p>
+</div>
+<div class="column">
+    <div class="column-image">
+        <img src="{{ url_for('static', filename='img/card-images/piotrandreikov.jpg') }}">
+        <h4>Piotr Andreikov</h4>
+        <p class="center-subtitle">played in 43 decks, typically 1-2 copies</p>
+    </div>
+    <p>
+        A cheap 2 pool for <i>a</i>, he is included in many decks using this discipline.
+    </p>
+</div>
+<div class="column">
+    <div class="column-image">
+        <img src="{{ url_for('static', filename='img/card-images/horatio.jpg') }}">
+        <h4>Horatio</h4>
+        <p class="center-subtitle">played in 43 decks, typically 1-2 copies</p>
+    </div>
+    <p>
+        Yet another cheap sidekick, <i>v</i> is less useful than <i>a</i> but, still, having cheap Tzimisce
+        to recruit some {{ card("War Ghoul") }} is great.
+    </p>
+</div>
+<div class="column">
+    <div class="column-image">
+        <img src="{{ url_for('static', filename='img/card-images/warghoul.jpg') }}">
+        <h4>War Ghoul</h4>
+        <p class="center-subtitle">played in 41 decks, typically 2-8 copies</p>
+    </div>
+    <p>
+        One of the most dreadful allies of the game, it is an excellent combatant and can grind vampires
+        down all around the table in a few turns. The trick is to work around its downside by getting
+        cheap allies and retainers to sacrifice to it.
+    </p>
+</div>
+{% endblock %}

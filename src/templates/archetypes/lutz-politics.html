@@ -1,0 +1,118 @@
+{% extends "archetypes/_layout.html" %}
+{% import "archetypes/_layout-erratum.html" as erratum %}
+
+{% block archetype_name %}
+<h1><img src="{{ url_for('static', filename='img/icons/clan-malkavian.svg') }}"> Lutz Politics</h1>
+{% endblock %}
+
+{% block archetype %}
+<h2>Highlights</h2>
+<p>
+    This is a <em>stealth bleed & vote</em> deck starring
+    {{ card("Unmada") }},
+    {{ card("Lutz von Hohenzollern") }} and
+    {{ card("Undele") }}.
+    It uses {{ card("Zillah's Valley") }}
+    to get these big capacity vampires in play quickly, then
+    {{ card("Parity Shift") }} and
+    {{ card("Villein") }} to get some pool back.
+</p>
+<p>
+    The sheer number of votes the vampire have makes sure they get the vote lock around the table.
+    Stealth is high, with 16 stealth modifiers, and allows the vampire to bleed and vote safely.
+</p>
+<p>
+    {{ card("Mental Maze") }} is used to defend against rush actions
+    and {{ card("Telepathic Misdirection") }}
+    against too powerful bleeds.
+</p>
+<p>
+    The deck is slow but sturdy and applies constant high pressure to its prey.
+</p>
+<h2>Tips & Tricks</h2>
+<p>
+    {{ card("Voter Captivation") }} is used to get pool back on the
+    vampires after {{ card("Villein") }}.
+</p>
+<p>
+    {{ card("Banishment") }} is used to get rid of cumbersome vampires.
+    It can either weaken the prey, slow down the predator, or even be used cross table to maintain
+    the table balance if necessary.
+</p>
+<p>
+    The deck is deliberately compact with only 70 cards.
+    This enhances the chances to get the many cards that are played in only one copy.
+    As the game progresses, {{ card("Undele") }}'s ability
+    can be used for recursion, getting the cards most adapted to the table context back in hand.
+</p>
+<p>
+    Many Master cards cost quite a bit of pool, but this is in fact a feature of the deck: this allows the
+    player to get its own pool down in order to be able to play a
+    {{ card("Parity Shift") }} on his prey.
+</p>
+<h2>Creator Insights</h2>
+<p>
+    <em>Maxime Socroun</em> was kind enough to provide the following insights:
+</p>
+<p>
+    Since the <em>errata</em> on {{ card("Parity Shift") }},
+    I feel like this version of the deck is not playable anymore and it drives me crazy.
+</p>
+<p>
+    There may still be a way to make the <strong>Maris Lutz</strong> variant work, though.
+</p>
+<h2>Variants</h2>
+<p>
+    Replacing {{ card("Rafael de Corazon") }}
+    by a second {{ card("Dmitra Ilyanova") }}
+    allows for the inclusion of
+    {{ card("Forced March") }} as she,
+    {{ card("Unmada") }} and
+    {{ card("Undele") }} can use it.
+</p>
+<p>
+    The <strong>Maris Lutz</strong> variant uses a group 3-4 crypt with
+    {{ card("Maris Streck") }}, like
+    {{ link("/deck-search", _("Danilo Torrisi's deck"), twda_id="2016eclvgi") }} from the 2016 EC.
+    Using more Malkavian in the crypt makes
+    {{ card("Madness Network") }} a useful inclusion.
+</p>
+<p>
+    The <strong>Helicopter</strong> variant uses the {{ card("Alastor") }} +
+    {{ card("Helicopter") }} combination to enable
+    {{ card("Lutz") }} to vote <em>and</em> bleed in the same turn,
+    like in {{ link("/deck-search", _("Fabien Garcia's deck"), twda_id="2014ecfcqmg") }} from 2014 EC FCQ.
+</p>
+<p>
+    The <strong>AD&D</strong> variant uses
+    {{ card("Derange") }} and
+    {{ card("Malkavian Dementia") }},
+    like {{ link("/deck-search", _("Otso Saariluoma's deck"), twda_id="2010finnishecq") }} from 2010.
+    This combination can steal any vampire, robbing them of their blood and equipment using
+    {{ card("Heidelberg Castle, Germany") }},
+    or even destroying them for pool with
+    {{ card("Golconda: Inner Peace") }},
+    provided one can get a second Master Action with
+    {{ card("Cybele") }} or
+    {{ card("The Parthenon") }}.
+</p>
+{% endblock %}
+
+{% block errata %}
+<div class="warning">
+    <h3>Errata</h3>
+    {{ erratum.pentextmsubversion( 'undecided' ) }}
+    {{ erratum.parityshift() }}
+</div>
+{% endblock %}
+
+{% block script %}
+<script>
+window.onload = function () {
+    document.getElementById("card-modal").addEventListener("keydown", modalKeydown)
+    document.getElementById("card-prev").addEventListener("click", prevCard)
+    document.getElementById("card-next").addEventListener("click", nextCard)
+    displayDeck({"author":null,"comments":"","crypt":{"cards":[{"comments":null,"count":4,"id":"201410","name":"Unmada"},{"comments":null,"count":3,"id":"200890","name":"Lutz von Hohenzollern"},{"comments":null,"count":3,"id":"201409","name":"Undele"},{"comments":null,"count":1,"id":"201151","name":"Rafael de Corazon"},{"comments":null,"count":1,"id":"200349","name":"Dmitra Ilyanova"}],"count":12},"date":"2016-11-13","event":"EC 2016 - First Chance Qualifier","library":{"cards":[{"cards":[{"comments":null,"count":11,"id":"102207","name":"Zillah's Valley"},{"comments":null,"count":5,"id":"102121","name":"Villein"},{"comments":null,"count":2,"id":"102180","name":"Wider View"},{"comments":null,"count":1,"id":"100444","name":"Creepshow Casino"},{"comments":null,"count":1,"id":"100588","name":"Dreams of the Sphinx"},{"comments":null,"count":1,"id":"100824","name":"Giant's Blood"},{"comments":null,"count":1,"id":"100842","name":"Golconda: Inner Peace"},{"comments":null,"count":1,"id":"100984","name":"Information Highway"},{"comments":null,"count":1,"id":"101207","name":"Metro Underground"},{"comments":null,"count":1,"id":"101238","name":"Monastery of Shadows"},{"comments":null,"count":1,"id":"101384","name":"Pentex(TM) Subversion"}],"count":26,"type":"Master"},{"cards":[{"comments":null,"count":1,"id":"100652","name":"Entrancement"}],"count":1,"type":"Action"},{"cards":[{"comments":null,"count":5,"id":"101353","name":"Parity Shift"},{"comments":null,"count":3,"id":"100131","name":"Banishment"},{"comments":null,"count":2,"id":"101056","name":"Kine Resources Contested"},{"comments":null,"count":1,"id":"100059","name":"Anarchist Uprising"},{"comments":null,"count":1,"id":"100064","name":"Ancient Influence"},{"comments":null,"count":1,"id":"100065","name":"Ancilla Empowerment"},{"comments":null,"count":1,"id":"100557","name":"Disputed Territory"},{"comments":null,"count":1,"id":"101591","name":"Reins of Power"}],"count":15,"type":"Political Action"},{"cards":[{"comments":null,"count":4,"id":"101001","name":"Into Thin Air"},{"comments":null,"count":3,"id":"100617","name":"Elder Impersonation"},{"comments":null,"count":3,"id":"100769","name":"Forgotten Labyrinth"},{"comments":null,"count":2,"id":"100687","name":"Faceless Night"},{"comments":null,"count":2,"id":"102131","name":"Voter Captivation"},{"comments":null,"count":1,"id":"100078","name":"Approximation of Loyalty"},{"comments":null,"count":1,"id":"100645","name":"Enkil Cog"},{"comments":null,"count":1,"id":"101387","name":"Perfect Paragon"}],"count":17,"type":"Action Modifier"},{"cards":[{"comments":null,"count":2,"id":"101913","name":"Swallowed by the Night"}],"count":2,"type":"Action Modifier/Combat"},{"cards":[{"comments":null,"count":4,"id":"101201","name":"Mental Maze"},{"comments":null,"count":3,"id":"101949","name":"Telepathic Misdirection"},{"comments":null,"count":1,"id":"100680","name":"Eyes of Argus"},{"comments":null,"count":1,"id":"101321","name":"On the Qui Vive"}],"count":9,"type":"Reaction"}],"count":70},"name":"Lutz Politics","place":"Genoa, Italy","player":"Maxime Socroun","players_count":59,"score":"2GW5.5+4","tournament_format":"3R+F","twda_id":"2016ecfcqgi"})
+}
+</script>
+{% endblock %}

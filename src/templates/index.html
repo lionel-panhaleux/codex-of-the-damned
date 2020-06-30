@@ -1,0 +1,125 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<p>
+    {% trans trimmed
+        black_chantry_productions=external("https://www.blackchantry.com", "Black Chantry Productions"),
+        white_wolf=external("https://www.white-wolf.com", "White Wolf")
+    %}
+    This site is a compilation of <strong>Vampire: the Eternal Struggle</strong> strategy resources.
+    It is intended for players already familiar with the game and its rules.
+    VTES is a game published by {{ black_chantry_productions }}, under the {{ white_wolf }} license.
+    {% endtrans %}
+</p>
+<p>
+    {% trans trimmed
+        brett_s_guide=external("https://gamingwithbs.wordpress.com/new-players-corner/vtes-quick-start-guide", _("Brett S. guide")),
+        vekn_website=external("http://www.vekn.net/rulebook", _("VEKN website")),
+        players_guide=external("https://www.drivethrurpg.com/product/2931/Vampire-The-Eternal-Struggle-Players-Guide", _("Player's Guide"))
+    %}
+    If you are a new player, consult {{ brett_s_guide }} to learn the game before digging deeper.
+    The official rule can be found on the {{ vekn_website }}.
+    The official {{ players_guide }} is available in PDF format at DriveThruRPG.
+    {% endtrans %}
+</p>
+<p>
+    {% trans trimmed
+        github_page=external("https://github.com/lionel-panhaleux/codex-of-the-damned/issues", _("Github page"))
+    %}
+    If you want to contribute to this guide, point out mistakes or raise an issue, you are welcome to do so on the
+    {{ github_page }} of the project.
+    {% endtrans %}
+</p>
+<h2>{{ _('Community') }}</h2>
+<ul>
+    <li><a target="_blank" href="http://www.vekn.net/forum">{{ _('VEKN Forum') }}</a></li>
+    <li><a target="_blank" href="https://discord.gg/EJ5qBaD">
+            <span class="brand-icon">&#xf392</span> {{ _('VTES Discord') }}
+        </a></li>
+    <li><a target="_blank" href="https://www.facebook.com/groups/512493665865136/">
+            <span class="brand-icon">&#xf082</span> {{ _('VEKN Facebook goup') }}
+        </a></li>
+    <li>Blog: <a target="_blank" href="https://vtesone.wordpress.com">VTESOne</a></li>
+    <li>Blog: <a target="_blank" href="https://vtesinformationhighway.wordpress.com">Information Highway</a></li>
+    <li>Blog: <a target="_blank" href="https://www.facebook.com/MikeTheNeonate/">The Neonate Diaries</a></li>
+    <li>Blog: <a target="_blank" href="https://bindusara.home.blog">
+            Bindusara's Jyhad Diary ({{ _('interviews archive') }})
+        </a></li>
+</ul>
+<h2>{{ _('Online tools and play') }}</h2>
+<ul>
+    <li><a target="_blank" href="https://amaranth.vtes.co.nz">Amaranth</a> {{ _('for deck building') }}</li>
+    <li><a target="_blank" href="https://vtes-db.smeea.casa">VTES-DB</a> {{ _('for card search') }}</li>
+    <li><a target="_blank" href="http://www.lackeyccg.com">LackeyCCG</a> {{ _('to play online') }}</li>
+    <li>Tabletop Simulator
+        <a target="_blank"
+            href="https://steamcommunity.com/sharedfiles/filedetails/?id=1961260862">{{ _('VTES plugins') }}</a>
+    </li>
+</ul>
+<h3>{{ _('Play on Lackey') }}</h3>
+<p>
+    {% trans trimmed
+        amaranth=external("https://amaranth.vtes.co.nz/", "Amaranth"),
+        export_lackey='<span class="code">Export > Lackey</span>'|safe
+    %}
+    If you use {{ amaranth }} to create decks online, you can use {{ export_lackey }} to export the deck for online
+    play.
+    {% endtrans %}
+</p>
+<p>
+    {% trans trimmed
+        lackeyccg=external("http://www.lackeyccg.com/downloads.html", "LackeyCCG"),
+        plugins='<span class="code">Plugins</span>'|safe,
+        autoupdate_url='<span class="code">http://www.lackeyccg.com/vtes/high/updatelist.txt</span>'|safe
+    %}
+    Download {{ lackeyccg }}. Go to the {{ plugins }} tab and paste this AutoUpdate URL
+    to activate the <strong>VtES</strong> plugin: {{ autoupdate_url }}
+    {% endtrans %}
+</p>
+<div class="warning">
+    <h3>{{ _('On Mac OSX') }}</h3>
+    <p>
+        {% trans trimmed
+            command_line='<span class="code">xattr -dr com.apple.quarantine /Applications/LackeyCCG</span>',
+            error_web_page=external("https://lackeyccg.com/missingfontserror.html", _('error web page'))
+        %}
+        The system's security prevents the application to run properly:
+        instead of launching, it takes you to a "Missing fonts" {{ error_web_page }}.
+        To fix it, open a Terminal and type the following command: {{ command_line }}.
+        Replace the last part with the path of your LackeyCCG folder
+        if you did not put it in the Applications folder.
+        {% endtrans %}
+    </p>
+</div>
+<p>
+    {% trans trimmed
+        discord='<a target="_blank" href="https://discordapp.com">Discord</a>',
+        vtes_facebook=external("https://www.facebook.com/groups/1543249585925041", _('VtES LackeyCCG Facebook group')),
+        vekn_forum=external("http://www.vekn.net/forum/generic-v-tes-discussion/76846-vekn-discord-server", _('VEKN forum'))
+    %}
+    You can get a {{ discord }} invite to the <em>VtES - Lackey CCG</em> server by asking for an invite link on the
+    {{ vtes_facebook }} or on the {{ vekn_forum }}.
+    {% endtrans %}
+</p>
+<p>
+    {% trans trimmed
+        lackey_deck='<span class="code">LackeyCCG/plugins/vtes/decks</span>',
+        deck_editor='<span class="code">Deck Editor</span>',
+        browse='<span class="code">Browse...</span>',
+        vtes_lackey_tutoriel=external("http://www.lackeyccg.com/vtes/", _('VtES Lackey tutorial'))
+    %}
+    To use your decks exported from <em>Amaranth</em>, you have to copy the text file into the
+    {{ lackey_deck }} folder. You can then find them in <em>LackeyCCG</em> {{ deck_editor }} tab
+    by clicking on the {{ browse }} button.
+    Visit the {{ vtes_lackey_tutoriel }} for further information.
+    {% endtrans %}
+</p>
+{% endblock %}
+
+{% block footer %}
+<img src="{{ url_for('static', filename='img/icons/dark-pack.png') }}">
+<p>
+    {{ _('Portions of the materials are the copyrights and trademarks of Paradox Interactive AB, and are used with permission. All rights reserved. For more information please visit') }}
+    <a target="_blank" href="http://white-wolf.com">white-wolf.com</a>.
+</p>
+{% endblock %}

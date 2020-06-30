@@ -1,0 +1,105 @@
+{% extends "best-cards/_layout.html" %}
+
+{% block content %}
+<h1><img src="{{ url_for('static', filename='img/icons/clan-harbingers.svg') }}"> Harbingers of Skulls</h1>
+<p>
+    The Harbingers of Skulls have excellent vampires with outstanding abilities.
+    They grew increasingly popular since the release of the
+    <a href="https://www.blackchantry.com/products/current-products/lost-kindred/">
+        Lost Kindred expansion</a>
+    in 2018, and the apparition of the excellent
+    {{ card("Emerald Legionnaire") }},
+    giving birth to the {{ link("/archetypes/emerald-legion", _("Emerald Legion")) }} archetype.
+</p>
+<h2>Highlights</h2>
+<div class="column">
+    <div class="column-image">
+        <img src="{{ url_for('static', filename='img/card-images/solomonbatanea.jpg') }}">
+        <h4>Solomon Batanea</h4>
+        <p class="center-subtitle">played in 27 decks, typically 1-2 copies</p>
+    </div>
+    <p>
+        A cheap cost for the <i>AF</i> combination - he even gets included in Ventrue antitribu
+        <img src="{{ url_for('static', filename='img/icons/clan-ventrue-anti.svg') }}"> decks.
+    </p>
+</div>
+<div class="column">
+    <div class="column-image">
+        <img src="{{ url_for('static', filename='img/card-images/emeraldlegionnaire.jpg') }}">
+        <h4>Emerald Legionnaire</h4>
+        <p class="center-subtitle">played in 26 decks, typically 7-12 copies</p>
+    </div>
+    <p>
+        A good ally with an excellent ability that let him come back into play for free.
+        The {{ link("/archetypes/emerald-legion", _("Emerald Legion")) }} archetype is built around him.
+    </p>
+</div>
+<div class="column">
+    <div class="column-image">
+        <img src="{{ url_for('static', filename='img/card-images/babalawoalafin.jpg') }}">
+        <h4>Babalawo Alafin</h4>
+        <p class="center-subtitle">played in 21 decks, typically 1-3 copies</p>
+    </div>
+    <p>
+        All clan disciplines <i>NAF</i> at superior for a decent 7 pool,
+        his ability is useful for card rotation,
+        but also as a way to get more cards in the ash heap to pay for the
+        {{ card("Emerald Legionnaire") }}.
+    </p>
+</div>
+<div class="column">
+    <div class="column-image">
+        <img src="{{ url_for('static', filename='img/card-images/nicomedes.jpg') }}">
+        <h4>Nicomedes</h4>
+        <p class="center-subtitle">played in 20 decks, typically 1-2 copies</p>
+    </div>
+    <p>
+        A decent disciplines combination and a great ability for cards rotation.
+    </p>
+</div>
+<div class="column">
+    <div class="column-image">
+        <img src="{{ url_for('static', filename='img/card-images/zygodat.jpg') }}">
+        <h4>Zygodat</h4>
+        <p class="center-subtitle">played in 17 decks, typically 1-2 copies</p>
+    </div>
+    <p>
+        A good disciplines combination, and her ability has a nice synergy with
+        {{ card("Trochomancy") }} and
+        {{ card("Inevitability of the Void") }}.
+    </p>
+</div>
+<div class="column">
+    <div class="column-image">
+        <img src="{{ url_for('static', filename='img/card-images/erebusmask.jpg') }}">
+        <h4>Erebus Mask</h4>
+        <p class="center-subtitle">played in 16 decks, typically 1 copy</p>
+    </div>
+    <p>
+        Only 1 pool for permanent stealth, this is a bargain.
+    </p>
+</div>
+<div class="column">
+    <div class="column-image">
+        <img src="{{ url_for('static', filename='img/card-images/erebus.jpg') }}">
+        <h4>Erebus</h4>
+        <p class="center-subtitle">played in 15 decks, typically 2-4 copies</p>
+    </div>
+    <p>
+        All clan disciplines at superior <i>NAF</i>, combined with a nice ability that let him recruit
+        {{ card("Emerald Legionnaire") }} at a discount.
+    </p>
+</div>
+<div class="column">
+    <div class="column-image">
+        <img src="{{ url_for('static', filename='img/card-images/capuchinthe.jpg') }}">
+        <h4>The Capuchin</h4>
+        <p class="center-subtitle">played in 14 decks, typically 3-6 copies</p>
+    </div>
+    <p>
+        Often seen in company with
+        {{ card("Saulot, The Wanderer") }}
+        as they both have <i>AFT</i>, he is also a good star vampire in Harbingers of Skulls decks.
+    </p>
+</div>
+{% endblock %}

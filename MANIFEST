@@ -1,0 +1,9 @@
+include LICENSE README.md CHANGELOG.rst
+
+graft src
+exclude Makefile
+exclude .markdownlint.json
+exclude messages.pot
+
+global-exclude */__pycache__/*
+global-exclude *.egg-info/*

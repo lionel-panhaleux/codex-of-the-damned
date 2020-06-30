@@ -1,0 +1,103 @@
+{% extends "best-cards/_layout.html" %}
+
+{% block content %}
+<h1><img src="{{ url_for('static', filename='img/icons/clan-ravnos.svg') }}"> Ravnos</h1>
+<p>
+    The Ravnos and their unique <i>k</i> discipline are a versatile clan.
+    They gave birth to a successful political archetype,
+    the {{ link("/archetypes/ravnos-clown-car", _("Ravnos Clown Car")) }}.
+    Otherwise, <i>k</i> alone makes for easy stealth bleeds
+    with extra resilience against bounces and combat.
+</p>
+<h2>Highlights</h2>
+<div class="column">
+    <div class="column-image">
+        <img src="{{ url_for('static', filename='img/card-images/zip.jpg') }}">
+        <h4>Zip</h4>
+        <p class="center-subtitle">played in 42 decks, typically 1 copy</p>
+    </div>
+    <p>
+        A cheap minion with <i>i</i>, he often gets included in <i>i</i> constructs.
+    </p>
+</div>
+<div class="column">
+    <div class="column-image">
+        <img src="{{ url_for('static', filename='img/card-images/mirrorimage.jpg') }}">
+        <h4>Mirror Image</h4>
+        <p class="center-subtitle">played in 26 decks, typically 3-7 copies</p>
+    </div>
+    <p>
+        A versatile stealth bonus or <em>combat ends</em>, its 1 blood cost is acceptable.
+    </p>
+</div>
+<div class="column">
+    <div class="column-image">
+        <img src="{{ url_for('static', filename='img/card-images/weekofnightmares.jpg') }}">
+        <h4>Week of Nightmares</h4>
+        <p class="center-subtitle">played in 25 decks, typically 1-2 copies</p>
+    </div>
+    <p>
+        The best bonus Ravnos can get, it is played in many Ravnos decks, often as the finishing move.
+        As the downside is quite ugly, it is important to make sure the game will end before
+        the ten counters are stacked on the card.
+    </p>
+</div>
+<div class="column">
+    <div class="column-image">
+        <img src="{{ url_for('static', filename='img/card-images/sensorydeprivation.jpg') }}">
+        <h4>Sensory Deprivation</h4>
+        <p class="center-subtitle">played in 22 decks, typically 1-6 copies</p>
+    </div>
+    <p>
+        An infamous effect for this expensive action. The threat of it can be an excellent deterrent.
+        With the help of cost reduction cards like
+        {{ card("The Path of Paradox") }},
+        {{ card("Gabrin") }} or
+        {{ card("The Line") }},
+        it can become cheap enough to be a recurring threat, too.
+    </p>
+</div>
+<div class="column">
+    <div class="column-image">
+        <img src="{{ url_for('static', filename='img/card-images/shilmulotarot.jpg') }}">
+        <h4>Shilmulo Tarot</h4>
+        <p class="center-subtitle">played in 24 decks, typically 1 copy</p>
+    </div>
+    <p>
+        An equipment that helps with the cards rotation. Not unlike the
+        {{ card("Heart of Nizchetus") }},
+        but this one is for Ravnos only.
+    </p>
+</div>
+<div class="column">
+    <div class="column-image">
+        <img src="{{ url_for('static', filename='img/card-images/treasuredsamadji.jpg') }}">
+        <h4>Treasured Samadji</h4>
+        <p class="center-subtitle">played in 20 decks, typically 1 copy</p>
+    </div>
+    <p>
+        An excellent equipment, it is a bleed bonus plus combat defence, all for just 1 pool.
+        A bargain.
+    </p>
+</div>
+<div class="column">
+    <div class="column-image">
+        <img src="{{ url_for('static', filename='img/card-images/salbatorebokkengro.jpg') }}">
+        <h4>Salbatore Bokkengro</h4>
+        <p class="center-subtitle">played in 20 decks, typically 1-2 copies</p>
+    </div>
+    <p>
+        Superior <i>K</i> for a decent 4 pool, he gets included in many Ravnos decks.
+    </p>
+</div>
+<div class="column">
+    <div class="column-image">
+        <img src="{{ url_for('static', filename='img/card-images/fatamorgana.jpg') }}">
+        <h4>Fata Morgana</h4>
+        <p class="center-subtitle">played in 17 decks, typically 5-9 copies</p>
+    </div>
+    <p>
+        The only bleed enhancer available with <i>k</i>, it is often included in Ravnos decks.
+    </p>
+</div>
+{% endblock %}

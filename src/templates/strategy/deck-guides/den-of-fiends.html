@@ -1,0 +1,171 @@
+{% extends "strategy/_layout.html" %}
+
+{% block content %}
+<h1 id="den-of-fiends"><img src="{{ url_for('static', filename='img/icons/clan-tzimisce.svg') }}"> Den of Fiends</h1>
+
+<div class="decklist">
+    <h3>Crypt (12 cards)</h3>
+    <ul>
+        <li>2 {{ card("America Johnson") }}</li>
+        <li>1 {{ card("Dr. Morrow, The Skindoctor") }}</li>
+        <li>1 {{ card("Duality") }}</li>
+        <li>1 {{ card("Ilias cel Frumos") }}</li>
+        <li>2 {{ card("Lady Vadislava") }}</li>
+        <li>2 {{ card("Ludmijla Rakoczy") }}</li>
+        <li>2 {{ card("Rurik Rakoczy") }}</li>
+        <li>1 {{ card("Yuri Kerezenski") }}</li>
+    </ul>
+    <h3>Library (77 cards)</h3>
+    <ul>
+        <li>
+            <h4>— Master (11) —</h4>
+        </li>
+        <li>1 {{ card("Channel 10") }}</li>
+        <li>1 {{ card("Fame") }}</li>
+        <li>1 {{ card("Library Hunting Ground") }}</li>
+        <li>1 {{ card("The Rack") }}</li>
+        <li>1 {{ card("Smiling Jack, The Anarch") }}</li>
+        <li>1 {{ card("Sudden Reversal") }}</li>
+        <li>2 {{ card("Vessel") }}</li>
+        <li>3 {{ card("Villein") }}</li>
+        <li>
+            <h4>— Action (5) —</h4>
+        </li>
+        <li>4 {{ card("Deep Song") }}</li>
+        <li>1 {{ card("Under Siege") }}</li>
+        <li>
+            <h4>— Retainer (2) —</h4>
+        </li>
+        <li>2 {{ card("Raven Spy") }}</li>
+        <li>
+            <h4>— Equipment (3) —</h4>
+        </li>
+        <li>1 {{ card("Bowl of Convergence") }}</li>
+        <li>1 {{ card("Heart of Nizchetus") }}</li>
+        <li>1 {{ card("Living Manse") }}</li>
+        <li>
+            <h4>— Modifier (4) —</h4>
+        </li>
+        <li>4 {{ card("Changeling") }}</li>
+        <li>
+            <h4>— Combat (22) —</h4>
+        </li>
+        <li>3 {{ card("Breath of the Dragon") }}</li>
+        <li>5 {{ card("Carrion Crows") }}</li>
+        <li>6 {{ card("Chiropteran Marauder") }}</li>
+        <li>4 {{ card("Horrid Form") }}</li>
+        <li>4 {{ card("Inner Essence") }}</li>
+        <li>
+            <h4>— Reaction (29) —</h4>
+        </li>
+        <li>3 {{ card("Telepathic Tracking") }}</li>
+        <li>4 {{ card("Enhanced Senses") }}</li>
+        <li>4 {{ card("Eyes of Argus") }}</li>
+        <li>4 {{ card("On the Qui Vive") }}</li>
+        <li>4 {{ card("Precognition") }}</li>
+        <li>4 {{ card("Read the Winds") }}</li>
+        <li>4 {{ card("Spirit’s Touch") }}</li>
+        <li>2 {{ card("Telepathic Misdirection") }}</li>
+        <li>
+            <h4>— Event (1) —</h4>
+        </li>
+        <li>1 {{ card("Dragonbound") }}</li>
+    </ul>
+</div>
+<h2>Summary</h2>
+<p>
+    This is a Tzimisce wall deck, leaning on the toolbox side of things.
+    The setup is to get a vampire with the three advanced clan disciplines <i>AVI</i> out first,
+    then one to three sidekicks, depending on the available pool.
+    The idea is to focus on defence and slowly grind at the prey’s pool.
+</p>
+<h2>Offence</h2>
+<p>
+    <strong>Pool damage</strong> is low, it uses naked bleed actions,
+    {{ card("Deep Song") }} at inferior <i>i</i> and
+    {{ card("Changeling") }}.
+    It also can deliver damage by putting the prey’s vampires in torpor, combined with
+    {{ card("Fame") }} and/or
+    {{ card("Dragonbound") }}.
+    If {{ card("Smiling Jack, The Anarch") }}
+    is drawn and kept in play long enough, it can deliver fatal damage to the table.
+</p>
+<p>
+    The <strong>combat module</strong> is strong, using <i>V</i> to deal aggravated damage from afar with
+    {{ card("Breath of the Dragon") }}, or at close range with
+    {{ card("Chiropteran Marauder") }}.
+    {{ card("Telepathic Tracking") }} is a counter against
+    « Strike: Combat Ends », to be kept in hand if a combat against <i>r</i> or <i>$</i> is expected.
+    {{ card("Carrion Crows") }} improves damage and
+    it comes <em>before any aggravated damage</em> from the strike,
+    so it can be use to destroy a vampire directly if it is low enough on blood to begin with.
+    {{ card("Horrid Form") }} and
+    {{ card("Inner Essence") }} are just helpers,
+    they should be played as soon as possible to avoid jamming the hand.
+</p>
+<h2>Defence</h2>
+<p>
+    <strong>Bloat</strong> is low, using {{ card("Vessel") }} and
+    {{ card("Villein") }} to get some pool back.
+</p>
+<p>
+    The deck has exceptionnal <strong>intercept</strong> capacities.
+    {{ card("Read the Winds") }},
+    {{ card("Eyes of Argus") }} and
+    {{ card("On the Qui Vive") }} are all wakes to enable more blocks.
+    Most of them can also be used for intercept as a last resort.
+</p>
+<p>
+    This deck needs to get some <strong>permanent intercept</strong> on the table as soon as possible:
+    {{ card("Bowl of Convergence") }},
+    {{ card("Raven Spy") }}, and
+    {{ card("Channel 10") }}.
+    As 3 of them need an action to be put into play, one should
+    <strong>keep some stealth</strong> in hand ({{ card("Changeling") }})
+    to avoid interception.
+</p>
+<p>
+    Finally the deck has only a two
+    {{ card("Telepathic Misdirection") }},
+    they should be kept in hand to redirect heavy bleeds to the prey.
+</p>
+<h2>Tips</h2>
+<p>
+    <strong>Play defensively</strong>, do not hesitate to keep vampires unlocked to be able to block more often.
+</p>
+<p>
+    <strong>Do not stack permanent intercept</strong> on a single vampire: if one has the
+    {{ card("Bowl of Convergence") }}, another should get the
+    {{ card("Raven Spy") }}. The more vampires are able to intercept with
+    good score, the less efficient block denials cards like
+    {{ card("Seduction") }} become.
+</p>
+<p>
+    You can target a strong vampire to put her into to torpor then <strong>diablerize</strong>
+    her with a low capacity disposable vampire of yours.
+</p>
+<p>
+    <strong>Keep them guessing</strong> about your hand, no one should know if you can
+    or cannot block an action, if you have or do not have what it takes to send their vampires in torpor by combat.
+</p>
+<p>
+    Do not let <strong>combat cards jam</strong> your hand. If need be, use
+    {{ card("Deep Song") }} to enter combat and play the cards
+    instead of using it for a bleed your prey may be too afraid to block.
+</p>
+<div class="tip">
+    <h3>What to block</h3>
+    <p>
+        The deck has tremendous block power, but it can not block everything the prey or the predator do.
+        It should focus on blocking the <strong>prey's bloat or defensive actions</strong> like
+        {{ card("Consanguineous Boon") }} or
+        {{ card("Govern the Unaligned") }} and the
+        <strong>predator's power building actions</strong> like allies recruitment or breeding actions like
+        {{ card("The Embrace") }}.
+    </p>
+</div>
+<p>
+    Check the <a href="https://vtesinformationhighway.wordpress.com/2019/01/21/tzimisce-starter-den-of-fiends/">
+        Information Highway article</a> for a deck review and ideas on how to improve it
+</p>
+{% endblock %}

@@ -1,0 +1,86 @@
+{% extends "archetypes/_layout.html" %}
+{% import "archetypes/_layout-erratum.html" as erratum %}
+
+{% block archetype_name %}
+<h1><img src="{{ url_for('static', filename='img/icons/clan-brujah.svg') }}"> Euro Brujah</h1>
+{% endblock %}
+
+{% block archetype %}
+<h2>Highlights</h2>
+<p>
+    This is a Camarilla Royalty <em>Toolbox</em> Brujah deck using the few titled Brujah with <i>d</i>
+    to be able to use {{ card("Govern the Unaligned") }}
+    and some {{ card("Deflection") }}.
+    Other than that, the deck uses the rather classical combination of
+    {{ card("Second Tradition: Domain") }} and
+    {{ card("Parity Shift") }} Camarilla
+    <em>Princes</em> and <em>Justicars</em> have access to.
+</p>
+<p>
+    <i>PC</i> makes for a dreadful combat module, and
+    {{ card("Theo Bell") }} and
+    {{ card("Beast, The Leatherface of Detroit") }}
+    have the ability to rush opponents vampires to take them down with it.
+    Furthermore, {{ card("Second Tradition: Domain") }}
+    is an excellent reaction that often results in a combat too.
+</p>
+<p>
+    {{ card("Govern the Unaligned") }} is used in the game
+    beginning to get vampires out cheaper and faster, but it is an excellent bleed action later on.
+</p>
+<h2>Tips & Tricks</h2>
+<p>
+    The oldest vampire with <i>D</i> should be put into play first in order to be able to use
+    {{ card("Govern the Unaligned") }} on the younger vampires.
+</p>
+<p>
+    {{ card("Fame") }} and
+    {{ card("New Carthage") }} are excellent pool damage enhancers.
+</p>
+<p>
+    The combat module has a lot of tricks to it:
+    {{ card("Immortal Grapple") }} prevents
+    <em>Strike: Combat Ends</em> and <em>Dodge</em>,
+    {{ card("Pursuit") }} can be enough to get to close range against
+    a single maneuver but, if the opponent insists on getting to long range,
+    {{ card("Thrown Sewer Lid") }} can be used to take him down.
+    {{ card("Blur") }} and
+    {{ card("Pursuit") }} can deliver more damages through more strikes,
+    then {{ card("Disarm") }} can put any vampire into torpor.
+    Finally, {{ card("Sideslip") }} can help dodge a dreadful strike,
+    get a {{ card("Disarm") }} through or prevent aggravated damage from
+    {{ card("Wolf Claws") }} or
+    {{ card("Chiropteran Marauder") }}.
+</p>
+<h2>Variants</h2>
+<p>
+    There are a few variations around the crypt and the minion cards, especially the combat module.
+    {{ card("Beast, The Leatherface of Detroit") }}
+    is a rare inclusion and this example has a huge focus on combat.
+    Other decks from this archetype can use <i>d</i> bleed enhancers like
+    {{ card("Conditioning") }} and some
+    {{ card("Bum's Rush") }}.
+    {{ link("/deck-search", _("Michael Heyder's deck"), twda_id="2k8germanchamp") }} from the 2008 German NC
+    is another example of the archetype.
+</p>
+{% endblock %}
+
+{% block errata %}
+<div class="warning">
+    <h3>Errata</h3>
+	{{ erratum.pentextmsubversion( 'remove' ) }}
+    {{ erratum.villein() }}
+	{{ erratum.parityshift() }}
+</div>
+{% endblock %}
+
+{% block script %}
+<script>
+window.onload = function () {
+    document.getElementById("card-modal").addEventListener("keydown", modalKeydown)
+    document.getElementById("card-prev").addEventListener("click", prevCard)
+    document.getElementById("card-next").addEventListener("click", nextCard)
+    displayDeck({"author":"Fran\u00e7ois Greiner (with tweaks from Marius, such as +2 Sideslip)","comments":"","crypt":{"cards":[{"comments":null,"count":3,"id":"201362","name":"Theo Bell"},{"comments":null,"count":2,"id":"200289","name":"Constanza Vinti"},{"comments":null,"count":2,"id":"200364","name":"D\u00f3nal O'Connor"},{"comments":null,"count":2,"id":"200179","name":"Beast, The Leatherface of Detroit"},{"comments":null,"count":1,"id":"200120","name":"Anvil"},{"comments":null,"count":1,"id":"201155","name":"Rake"},{"comments":null,"count":1,"id":"201458","name":"Volker, The Puppet Prince"}],"count":12},"date":"2017-12-09","event":"Friendly Warm Up Tournament","library":{"cards":[{"cards":[{"comments":null,"count":5,"id":"102121","name":"Villein"},{"comments":null,"count":1,"id":"100303","name":"Carver's Meat Packing and Storage"},{"comments":null,"count":1,"id":"100526","name":"Depravity"},{"comments":null,"count":1,"id":"100545","name":"Direct Intervention"},{"comments":null,"count":1,"id":"100698","name":"Fame"},{"comments":null,"count":1,"id":"100824","name":"Giant's Blood"},{"comments":null,"count":1,"id":"101277","name":"New Carthage"},{"comments":null,"count":1,"id":"101384","name":"Pentex(TM) Subversion"},{"comments":null,"count":1,"id":"101439","name":"Powerbase: Montreal"},{"comments":null,"count":1,"id":"101536","name":"The Rack"}],"count":14,"type":"Master"},{"cards":[{"comments":null,"count":9,"id":"100845","name":"Govern the Unaligned"},{"comments":null,"count":1,"id":"100079","name":"Aranthebes, The Immortal"}],"count":10,"type":"Action"},{"cards":[{"comments":null,"count":4,"id":"101353","name":"Parity Shift"}],"count":4,"type":"Political Action"},{"cards":[{"comments":null,"count":2,"id":"101610","name":"Resist Earth's Grasp"}],"count":2,"type":"Action Modifier/Combat"},{"cards":[{"comments":null,"count":8,"id":"100959","name":"Immortal Grapple"},{"comments":null,"count":8,"id":"101993","name":"Torn Signpost"},{"comments":null,"count":7,"id":"101945","name":"Taste of Vitae"},{"comments":null,"count":6,"id":"101523","name":"Pursuit"},{"comments":null,"count":5,"id":"100549","name":"Disarm"},{"comments":null,"count":4,"id":"100227","name":"Blur"},{"comments":null,"count":4,"id":"101983","name":"Thrown Sewer Lid"},{"comments":null,"count":2,"id":"101779","name":"Sideslip"}],"count":44,"type":"Combat"},{"cards":[{"comments":null,"count":10,"id":"101706","name":"Second Tradition: Domain"},{"comments":null,"count":6,"id":"100518","name":"Deflection"}],"count":16,"type":"Reaction"}],"count":90},"name":"Euro Brujah","place":"Bologna, Italy","player":"Marius Iscru","players_count":36,"score":"3GW11+3","tournament_format":"3R+F","twda_id":"2017fwutbi"})
+}
+</script>
+{% endblock %}
