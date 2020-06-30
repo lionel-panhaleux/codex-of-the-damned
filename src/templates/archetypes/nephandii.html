@@ -1,0 +1,114 @@
+{% extends "archetypes/_layout.html" %}
+{% import "archetypes/_layout-erratum.html" as erratum %}
+
+{% block archetype_name %}
+<h1><img src="{{ url_for('static', filename='img/icons/clan-tremere-anti.svg') }}"> Nephandii</h1>
+{% endblock %}
+
+{% block archetype %}>
+<h2>Highlights</h2>
+<p>
+    This is an <em>allies toolbox</em> deck focused on the
+    {{ card("Nephandus") }} ally.
+    {{ card("Antonio d'Erlette") }} is the star of the deck:
+    he gets some {{ card("Nephandus") }} out without even
+    taking an action someone could block.
+</p>
+<p>
+    The combat module is designed to be playable by the
+    {{ card("Nephandus") }} themselves, using presses,
+    {{ card("Molotov Cocktail") }} and
+    {{ card("Target Vitals") }}.
+</p>
+<p>
+    The Master module uses {{ card("The Parthenon") }} to play
+    two Master cards per turn, allowing for the efficient use of
+    {{ card("Ashur Tablets") }} and
+    {{ card("Liquidation") }} to bloat and adapt the deck to the table
+    context as the game progresses.
+</p>
+<p>
+    {{ card("Haven Uncovered") }} and
+    {{ card("Frontal Assault") }} are used to let the
+    {{ card("Nephandus") }} rush the opponents minions, while
+    {{ card("The Unmasking") }} improves their interception capabilities.
+</p>
+<p>
+    {{ card("Fame") }},
+    {{ card("Tension in the Ranks") }} and
+    {{ card("Dragonbound") }} are used to improve pool damage.
+</p>
+<p>
+    Some {{ card("Tupdog") }} are used to rush even more, although their
+    disicplines are not used at all.
+</p>
+<p>
+    {{ card("Antonio d'Erlette") }} or a sidekick can use
+    {{ card("Deflection") }} and
+    {{ card("Delaying Tactics") }} for defence.
+</p>
+<h2>Tips & Tricks</h2>
+<p>
+    {{ card("Secure Haven") }} can be used to protect
+    {{ card("Antonio d'Erlette") }}, but also to contest another one
+    if need be.
+</p>
+<p>
+    Disciplines are not much used in the deck,
+    so {{ card("The Slow Withering") }} is a nice inclusion
+    to cripple opponents decks, plus it is another Gehenna event
+    {{ card("Fortschritt Library") }} can fetch.
+</p>
+<p>
+    {{ card("Direct Intervention") }} should be kept in hand
+    to counter anti-ally actions like {{ card("Entrancement") }}.
+</p>
+<h2>Variants</h2>
+<p>
+    The <strong>Mafioso</strong> variant ditches the heavy Master module
+    {{ card("The Parthenon") }},
+    {{ card("Ashur Tablets") }} and
+    {{ card("Liquidation") }}
+    to use
+    {{ card("Magic of the Smith") }} and
+    {{ card("Empowering the Puppet King") }}
+    instead, like in
+    {{ link("/deck-search", _("Hugh Angseesing's deck"), twda_id="2k8originsfridayam") }} from 2008.
+</p>
+<p>
+    Other variants complete the crypt in original ways,
+    to get more bloat with Assamite vampires like in
+    {{ link("/deck-search", _("Greg Williams' deck"), twda_id="2k8wonwednesday") }} from 2008,
+    or some bloat but also more bleed with Toreador antitribu and
+    {{ card("Palla Grande") }}, like in
+    {{ link("/deck-search", _("Jordi Tomás' deck"), twda_id="2010badiafeb") }} from 2010.
+    {{ link("/deck-search", _("Jonathan Sanchez Rios' deck"), twda_id="2011lvdsbdvs") }} from 2011
+    even includes the Imbued
+    {{ card("Béatrice \"Oracle171\" Tremblay") }}
+    for cheap additional bleed.
+</p>
+<p>
+    Although this is a different archetype,
+    {{ card("Nephandus") }} can also be used alongside
+    {{ card("Tupdog") }} in the {{ link("/archetypes/tupdogs", _("Tupdogs")) }} archetype.
+</p>
+{% endblock %}
+
+{% block errata %}
+<div class="warning">
+    <h3>Errata</h3>
+    {{ erratum.pentextmsubversion( 'remove' ) }}
+    {{ erratum.antheliostheredstar() }}
+</div>
+{% endblock %}
+
+{% block script %}
+<script>
+    window.onload = function () {
+        document.getElementById("card-modal").addEventListener("keydown", modalKeydown)
+        document.getElementById("card-prev").addEventListener("click", prevCard)
+        document.getElementById("card-next").addEventListener("click", nextCard)
+        displayDeck({ "author": "Lukasz Modzelewski", "comments": "Played and modified by: Alejandro P\u00e9rez Rossell\u00f3\n", "crypt": { "cards": [{ "comments": null, "count": 5, "id": "200116", "name": "Antonio d'Erlette" }, { "comments": null, "count": 4, "id": "201393", "name": "Tupdog" }, { "comments": null, "count": 2, "id": "200767", "name": "Keith Moody" }, { "comments": null, "count": 1, "id": "201222", "name": "Saiz" }], "count": 12 }, "date": "2013-09-01", "event": "Camarilla Conclave", "library": { "cards": [{ "cards": [{ "comments": null, "count": 9, "id": "100106", "name": "Ashur Tablets" }, { "comments": null, "count": 6, "id": "101112", "name": "Liquidation" }, { "comments": null, "count": 6, "id": "101355", "name": "The Parthenon" }, { "comments": null, "count": 5, "id": "100897", "name": "Haven Uncovered" }, { "comments": null, "count": 2, "id": "100545", "name": "Direct Intervention" }, { "comments": null, "count": 2, "id": "100588", "name": "Dreams of the Sphinx" }, { "comments": null, "count": 2, "id": "100794", "name": "Frontal Assault" }, { "comments": null, "count": 1, "id": "100085", "name": "Archon Investigation" }, { "comments": null, "count": 1, "id": "100698", "name": "Fame" }, { "comments": null, "count": 1, "id": "100775", "name": "Fortschritt Library" }, { "comments": null, "count": 1, "id": "101019", "name": "Jake Washington" }, { "comments": null, "count": 1, "id": "101384", "name": "Pentex(TM) Subversion" }, { "comments": null, "count": 1, "id": "101711", "name": "Secure Haven" }, { "comments": null, "count": 1, "id": "101958", "name": "Tension in the Ranks" }], "count": 39, "type": "Master" }, { "cards": [{ "comments": null, "count": 1, "id": "100079", "name": "Aranthebes, The Immortal" }], "count": 1, "type": "Action" }, { "cards": [{ "comments": null, "count": 6, "id": "101235", "name": "Molotov Cocktail" }, { "comments": null, "count": 6, "id": "101942", "name": "Target Vitals" }, { "comments": null, "count": 4, "id": "100504", "name": "Dead-End Alley" }, { "comments": null, "count": 4, "id": "102012", "name": "Trap" }], "count": 20, "type": "Combat" }, { "cards": [{ "comments": null, "count": 7, "id": "100518", "name": "Deflection" }, { "comments": null, "count": 3, "id": "101321", "name": "On the Qui Vive" }, { "comments": null, "count": 2, "id": "100519", "name": "Delaying Tactics" }], "count": 12, "type": "Reaction" }, { "cards": [{ "comments": null, "count": 9, "id": "101272", "name": "Nephandus" }, { "comments": null, "count": 1, "id": "100298", "name": "Carlton Van Wyk" }, { "comments": null, "count": 1, "id": "101333", "name": "Ossian" }], "count": 11, "type": "Ally" }, { "cards": [{ "comments": null, "count": 2, "id": "100074", "name": "Anthelios, The Red Star" }, { "comments": null, "count": 2, "id": "102079", "name": "The Unmasking" }, { "comments": null, "count": 1, "id": "100581", "name": "Dragonbound" }, { "comments": null, "count": 1, "id": "100709", "name": "FBI Special Affairs Division" }, { "comments": null, "count": 1, "id": "101807", "name": "The Slow Withering" }], "count": 7, "type": "Event" }], "count": 90 }, "name": "Nephandus Swarm", "place": "Palma de Mallorca, Spain", "player": "Alejandro P\u00e9rez Rossell\u00f3", "players_count": 32, "score": "3VP in final", "tournament_format": "3R+F", "twda_id": "2013ccpdms" })
+    }
+</script>
+{% endblock %}

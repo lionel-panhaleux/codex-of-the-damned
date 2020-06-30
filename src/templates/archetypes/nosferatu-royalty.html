@@ -1,0 +1,110 @@
+{% extends "archetypes/_layout.html" %}
+{% import "archetypes/_layout-erratum.html" as erratum %}
+
+{% block archetype_name %}
+<h1><img src="{{ url_for('static', filename='img/icons/clan-nosferatu.svg') }}"> Nosferatu Royalty</h1>
+{% endblock %}
+
+{% block archetype %}>
+<h2>Highlights</h2>
+<p>
+    This is a <em>toolbox</em> deck using Nosferatu <em>Princes</em> and <em>Justicar</em>,
+    and the <i>OI</i> disciplines. It has an efficient combat module using <i>I</i> classic
+    {{ card("Aid from Bats") }} &
+    {{ card("Carrion Crows") }} combination.
+</p>
+<p>
+    Pool damage is done by using {{ card("Deep Song") }} to bleed,
+    together with damage dealing votes and {{ card("Fame") }} if it is drawn.
+    <i>O</i> provides good stealth, as usual.
+</p>
+<p>
+    The deck has good intercept using a lot of
+    {{ card("Second Tradition: Domain") }}, together with
+    {{ card("Underbridge Stray") }} and
+    {{ card("Raven Spy") }}
+</p>
+<p>
+    {{ card("Cock Robin") }} is the star of the deck and his ability
+    is used to the maximum, with {{ card("Deep Song") }} and <i>i</i>
+    allies and retainers.
+</p>
+<h2>Tips & Tricks</h2>
+<p>
+    <em>Maxime Socroun</em> indicates that {{ card("Warsaw Station") }}
+    is the most important card in the deck. Indeed its effect seconds
+    {{ card("Cock Robin") }}'s ability beautifully and provides a nice
+    increase in {{ link("/strategy/fundamentals", _("A&B"), _anchor="AB") }}.
+</p>
+<p>
+    {{ card("Scourge of the Enochians") }} is a tactical
+    counter against breed constructs, as they can quickly become overwhelming.
+</p>
+<p>
+    As the game progresses,
+    {{ card("Tier of Souls") }} and
+    {{ card("Enkil Cog") }} will improve bleeds.
+    Moreover, {{ card("Enkil Cog") }} will let
+    {{ card("Cock Robin") }} use his ability twice in successive turns
+    and as {{ card("Tier of Souls") }} is an <i>i</i> action,
+    it lets {{ card("Cock Robin") }} unlock and bleed afterwards
+    immediately.
+</p>
+<p>
+    {{ card("Deep Song") }} can be used to bleed or to rush
+    cumbersome vampires, depending on the context.
+</p>
+<p>
+    The combat module is strong, but not the primary focus of the deck.
+    {{ card("Kevlar Vest") }},
+    {{ card("Heroic Might") }} and
+    {{ card("Preternatural Strength") }} can come in handy
+    against adverse combat modules.
+</p>
+<p>
+    The deck does not include so many votes as it is really not sure about getting the vote lock on the table.
+    Any dedicated political deck will get more votes than the 5-7 this one can put into play.
+</p>
+<h2>Variants</h2>
+<p>
+    Variants include the use of a group 2 crypt and a <i>P</i> combat module, like in
+    {{ link("/deck-search", _("Gyula Erdõs' deck"), twda_id="2k8czechnational") }} from the 2008 Czech NC.
+</p>
+<p>
+    More votes can also be used, alongside
+    {{ card("Fourth Tradition: The Accounting") }} and
+    {{ card("Grooming the Protégé") }} for crypt acceleration
+    to get more votes on the table,
+    like in {{ link("/deck-search", _("Iñaki Jimenez's deck"), twda_id="2k8spanishnatday2") }} from the 2008
+    Spanish NC.
+</p>
+<p>
+    Some variants even discard the combat side of things to focus on a full political deck, like in
+    {{ link("/deck-search", _("Pascal Bertrand's deck"), twda_id="2013qcfeelblpf") }} from 2013,
+    using {{ card("Mental Maze") }} instead.
+    In this case, this makes some room for a
+    {{ card("Third Tradition: Progeny") }} plus
+    {{ card("Consanguineous Boon") }} combination
+    to bloat and get more vampires (and more votes) out.
+</p>
+{% endblock %}
+
+{% block errata %}
+<div class="warning">
+    <h3>Errata</h3>
+    {{ erratum.pentextmsubversion( 'remove' ) }}
+    {{ erratum.villein() }}
+    {{ erratum.parityshift() }}
+</div>
+{% endblock %}
+
+{% block script %}
+<script>
+    window.onload = function () {
+        document.getElementById("card-modal").addEventListener("keydown", modalKeydown)
+        document.getElementById("card-prev").addEventListener("click", prevCard)
+        document.getElementById("card-next").addEventListener("click", nextCard)
+        displayDeck({ "author": null, "comments": "", "crypt": { "cards": [{ "comments": null, "count": 4, "id": "200284", "name": "Cock Robin" }, { "comments": null, "count": 3, "id": "200252", "name": "Casino Reeds" }, { "comments": null, "count": 2, "id": "200168", "name": "Baron Dieudonne" }, { "comments": null, "count": 1, "id": "201325", "name": "Sundown" }, { "comments": null, "count": 1, "id": "201116", "name": "Petra" }, { "comments": null, "count": 1, "id": "200185", "name": "Beetleman" }], "count": 12 }, "date": "2019-08-13", "event": "EC WoN - Tuesday", "library": { "cards": [{ "cards": [{ "comments": null, "count": 4, "id": "102121", "name": "Villein" }, { "comments": null, "count": 3, "id": "102149", "name": "Warsaw Station" }, { "comments": null, "count": 2, "id": "102113", "name": "Vessel" }, { "comments": null, "count": 1, "id": "100085", "name": "Archon Investigation" }, { "comments": null, "count": 1, "id": "100493", "name": "Dark Influences" }, { "comments": null, "count": 1, "id": "100698", "name": "Fame" }, { "comments": null, "count": 1, "id": "100824", "name": "Giant's Blood" }, { "comments": null, "count": 1, "id": "100866", "name": "Guardian Angel" }, { "comments": null, "count": 1, "id": "101384", "name": "Pentex(TM) Subversion" }, { "comments": null, "count": 1, "id": "101388", "name": "Perfectionist" }, { "comments": null, "count": 1, "id": "101070", "name": "The Labyrinth" }], "count": 17, "type": "Master" }, { "cards": [{ "comments": null, "count": 10, "id": "100515", "name": "Deep Song" }, { "comments": null, "count": 3, "id": "101984", "name": "Tier of Souls" }, { "comments": null, "count": 1, "id": "100913", "name": "Heroic Might" }, { "comments": null, "count": 1, "id": "101483", "name": "Preternatural Strength" }], "count": 15, "type": "Action" }, { "cards": [{ "comments": null, "count": 2, "id": "101353", "name": "Parity Shift" }, { "comments": null, "count": 1, "id": "100059", "name": "Anarchist Uprising" }, { "comments": null, "count": 1, "id": "100065", "name": "Ancilla Empowerment" }, { "comments": null, "count": 1, "id": "101591", "name": "Reins of Power" }], "count": 5, "type": "Political Action" }, { "cards": [{ "comments": null, "count": 4, "id": "101125", "name": "Lost in Crowds" }, { "comments": null, "count": 2, "id": "100617", "name": "Elder Impersonation" }, { "comments": null, "count": 2, "id": "100645", "name": "Enkil Cog" }, { "comments": null, "count": 1, "id": "100687", "name": "Faceless Night" }], "count": 9, "type": "Action Modifier" }, { "cards": [{ "comments": null, "count": 3, "id": "101913", "name": "Swallowed by the Night" }], "count": 3, "type": "Action Modifier/Combat" }, { "cards": [{ "comments": null, "count": 10, "id": "100029", "name": "Aid from Bats" }, { "comments": null, "count": 6, "id": "100301", "name": "Carrion Crows" }, { "comments": null, "count": 4, "id": "101945", "name": "Taste of Vitae" }], "count": 20, "type": "Combat" }, { "cards": [{ "comments": null, "count": 7, "id": "101706", "name": "Second Tradition: Domain" }, { "comments": null, "count": 4, "id": "100308", "name": "Cats' Guidance" }], "count": 11, "type": "Reaction" }, { "cards": [{ "comments": null, "count": 1, "id": "100499", "name": "Dartmoor, England" }, { "comments": null, "count": 1, "id": "100903", "name": "Heart of Nizchetus" }, { "comments": null, "count": 1, "id": "101014", "name": "Ivory Bow" }, { "comments": null, "count": 1, "id": "101040", "name": "Kevlar Vest" }], "count": 4, "type": "Equipment" }, { "cards": [{ "comments": null, "count": 2, "id": "102065", "name": "Underbridge Stray" }, { "comments": null, "count": 1, "id": "100298", "name": "Carlton Van Wyk" }], "count": 3, "type": "Ally" }, { "cards": [{ "comments": null, "count": 2, "id": "101550", "name": "Raven Spy" }], "count": 2, "type": "Retainer" }, { "cards": [{ "comments": null, "count": 1, "id": "101697", "name": "Scourge of the Enochians" }], "count": 1, "type": "Event" }], "count": 90 }, "name": "Cock Robin", "place": "Paris, France", "player": "Maxime Socroun", "players_count": 33, "score": "1GW5+4", "tournament_format": "2R+F", "twda_id": "2019ecwon2pf" })
+    }
+</script>
+{% endblock %}

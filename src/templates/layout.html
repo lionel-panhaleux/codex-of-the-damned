@@ -29,10 +29,14 @@
                 <li>{{ link('/best-cards') }}</li>
                 <li>{{ link('/deck-search') }}</li>
                 <li>{{ link('/card-search') }}</li>
+            </ul>
+        </nav>
+        <!-- <nav role="translation">
+            <ul>
                 <li>{{ translation('en', "🇬🇧") }}</li>
                 <li>{{ translation('fr', "🇫🇷") }}</li>
             </ul>
-        </nav>
+        </nav> -->
     </header>
 
     {% block card_display %}
@@ -41,12 +45,12 @@
     </div>
     {% endblock %}
 
-	{% block article %}
+    {% block article %}
     <article>
         {% block content %}{% endblock %}
     </article>
-	{% endblock %}
-	
+    {% endblock %}
+
     <footer>
         {% block footer %}
         <nav role="navigation">
