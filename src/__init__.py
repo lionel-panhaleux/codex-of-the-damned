@@ -159,4 +159,14 @@ def display_card():
             )
         )
 
-    return dict(card=card)
+    def card_image(name):
+        return flask.Markup(
+            '<img src="{path}" alt="{name}" />'.format(
+                name=name,
+                path=flask.url_for(
+                    "static", filename=f"img/card-images/{file_name(name)}.jpg"
+                ),
+            )
+        )
+
+    return dict(card=card, card_image=card_image)

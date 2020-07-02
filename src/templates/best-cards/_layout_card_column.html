@@ -1,0 +1,19 @@
+{% macro card_column(name, decks=0, copies="") -%}
+<div class="column">
+    <div class="column-image">
+        {{ card_image(name) }}
+        <h4>{{ name }}</h4>
+        <p class="center-subtitle">
+            {{ gettext('played in %(num)d decks,', num=decks) }}
+            {% if copies == '1' %}
+            {{ gettext('typically 1 copy') }}
+            {% else %}
+            {{ gettext('typically %(range)s copies', range=copies) }}
+            {% endif %}
+        </p>
+    </div>
+    <p>
+        {{ caller() }}
+    </p>
+</div>
+{%- endmacro %}

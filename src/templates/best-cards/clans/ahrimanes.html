@@ -1,129 +1,133 @@
 {% extends "best-cards/_layout.html" %}
+{% import "best-cards/_layout_card_column.html" as layout with context%}
 
 {% block content %}
 <h1><img src="{{ url_for('static', filename='img/icons/clan-ahrimanes.svg') }}"> Ahrimanes</h1>
-<p>
-    Ahrimanes and their unique discipline <i>z</i> provide a stronger defence than the usual <i>i</i>
-    builds.
-    Moreover, the acces to <i>r</i> allow them more toolboxy constructs than mono <i>i</i>, for a little
-    more
-    bleed. They offer basically two possible crypts, a group 2 with
-    {{ card("Howler") }} and
-    {{ card("The Siamese") }}, and a group 4 with
-    {{ card("Muricia") }} and
-    {{ card("Effie Lowery") }}.
-</p>
-<p>
-    This clan has only one main archetype: {{ link("/archetypes/cats", _("Cats")) }}.
-    Some Ahrimaines are good picks for mono <i>i</i> archetypes as they offer <i>I</i> vampires
-    for good value like {{ card("Effie Lowery") }} and
-    {{ card("Sahana") }}.
-</p>
-<h2>Highlights</h2>
-<div class="column">
-    <div class="column-image">
-        <img src="{{ url_for('static', filename='img/card-images/effielowery.jpg') }}">
-        <h4>Effie Lowery</h4>
-        <p class="center-subtitle">played in 36 decks, typically 1-3 copies</p>
-    </div>
+<div class="tip">
+    {% trans trimmed 
+        spi='<i>z</i>'|safe,
+        ani='<i>i</i>'|safe,
+        ANI='<i>I</i>'|safe,
+        pre='<i>r</i>'|safe,
+        howler=card("Howler"),
+        the_siamese=card("The Siamese"),
+        muricia=card("Muricia"),
+        effie_lowery=card("Effie Lowery"),
+        cats=link("/archetypes/cats", _("Cats")),
+        sahana=card("Sahana")
+    %}
     <p>
-        Superior <i>I</i> and <i>Z</i> at a very decent cost of 5, she is even included in pure <i>I</i>
-        crypts.
+        Ahrimanes and their unique discipline {{ spi }} provide a stronger defence than the usual {{ ani }} builds.
+        Moreover, the acces to {{ pre }} allow them more toolboxy constructs than mono {{ ani }}, for a little more
+        bleed. They offer basically two possible crypts, a group 2 with
+        {{ howler }} and
+        {{ the_siamese }}, and a group 4 with
+        {{ muricia }} and
+        {{ effie_lowery }}.
     </p>
-</div>
-<div class="column">
-    <div class="column-image">
-        <img src="{{ url_for('static', filename='img/card-images/muricia.jpg') }}">
-        <h4>Muricia</h4>
-        <p class="center-subtitle">played in 23 decks, typically 2-4 copies</p>
-    </div>
     <p>
-        Leader of the group 4 crypt, she has all clan disciplines <i>ZIR</i> at superior
-        for a reasonnable cost of 7. The +1 strength bonus is always good to take: she can use a little less
-        {{ card("Aid From Bats") }} for a little more
-        {{ card("Carrion Crows") }}.
+        This clan has only one main archetype: {{ cats }}.
+        Some Ahrimaines are good picks for mono {{ ani }} archetypes as they offer {{ ANI }} vampires
+        for good value like {{ effie_lowery }} and {{ sahana }}.
     </p>
+    {% endtrans %}
 </div>
-<div class="column">
-    <div class="column-image">
-        <img src="{{ url_for('static', filename='img/card-images/howler.jpg') }}">
-        <h4>Howler</h4>
-        <p class="center-subtitle">played in 17 decks, typically 4-5 copies</p>
-    </div>
-    <p>
-        Leader of the group 2 crypt, she has all clan disciplines <i>ZIR</i> at superior
-        for a cost of 8. The maneuver combined with the +1 strength bonus makes her a good warrior on her
-        own.
-    </p>
-</div>
-<div class="column">
-    <div class="column-image">
-        <img src="{{ url_for('static', filename='img/card-images/noseofthehound.jpg') }}">
-        <h4>Nose of the Hound</h4>
-        <p class="center-subtitle">played in 41 decks, typically 1-4 copies</p>
-    </div>
-    <p>
-        A nice rush action, slightly better than <span class="card" onclick="dC('bumsrush')">Bum's
-            Rush</span>.
-        It is often played in <i>a</i> constructs for its base effect, as <i>i</i> provides the
-        arguably better {{ card("Deep Song") }} already.
-    </p>
-</div>
-<div class="column">
-    <div class="column-image">
-        <img src="{{ url_for('static', filename='img/card-images/speakwithspirits.jpg') }}">
-        <h4>Speak with Spirits</h4>
-        <p class="center-subtitle">played in 36 decks, typically 6-11 copies</p>
-    </div>
-    <p>
-        An excellent unlock and intercept reaction, the core of most Ahrimanes defensive modules.
-        An unlock is better than a simple wake, and the card is cheap: it costs blood only if
-        both unlock and intercept are needed.
-    </p>
-</div>
-<div class="column">
-    <div class="column-image">
-        <img src="{{ url_for('static', filename='img/card-images/swiftnessofthestag.jpg') }}">
-        <h4>Swiftness of the Stag</h4>
-        <p class="center-subtitle">played in 35 decks, typically 5-9 copies</p>
-    </div>
-    <p>
-        A versatile tool: it is decisive in combat and works well with the <i>i</i> classic combination of
-        {{ card("Aid From Bats") }} and
-        {{ card("Carrion Crows") }}. Moreover, the optional
-        +1 stealth is very useful to get critical actions through.
-        It is a straight upgrade over the similar
-        {{ card("Resist Earth's Grasp") }}.
-    </p>
-</div>
-<div class="column">
-    <div class="column-image">
-        <img src="{{ url_for('static', filename='img/card-images/falconseye.jpg') }}">
-        <h4>Falcon's Eye</h4>
-        <p class="center-subtitle">played in 34 decks, typically 2-5 copies</p>
-    </div>
-    <p>
-        The only card apart <i>a</i> {{ card("Eagle's Sight") }} and
-        {{ card("Anneke") }} to allow
-        cross-table blocks, it is a drastic improvement over the classical <i>i</i> intercept module.
-        The ability to intercept one's prey bleed or a cross-table vote is critical to
-        {{ link("/strategy/archetypes", _("wall decks"), _anchor="wall") }}.
-    </p>
-</div>
-<div class="column">
-    <div class="column-image">
-        <img src="{{ url_for('static', filename='img/card-images/earsofthehare.jpg') }}">
-        <h4>Ears of the Hare</h4>
-        <p class="center-subtitle">played in 28 decks, typically 2-4 copies</p>
-    </div>
-    <p>
-        A strong intercept boost on par with <i>a</i>
-        {{ card("Enhanced Senses") }},
-        this completes the <i>z</i> toolset for intercept. Combined with
-        {{ card("Falcon's Eye") }} and
-        {{ card("Speak with Spirits") }}, along <i>i</i>
-        {{ card("Cat's Guidance") }},
-        it delivers an intercept module as solid as <i>a</i>.
-    </p>
-</div>
+
+{% call layout.card_column('Effie Lowery', decks=36, copies="1-3") %}
+{% trans trimmed 
+    ANI='<i>I</i>'|safe,
+    SPI='<i>Z</i>'|safe
+%}
+Superior {{ ANI }} and {{ SPI }} at a very decent cost of 5, she is even included in pure {{ ANI }} crypts.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column('Muricia', decks=23, copies="2-4") %}
+{% trans trimmed 
+    SPI_ANI_PRE='<i>ZIR</i>'|safe,
+    aid_from_bats=card("Aid From Bats"),
+    carrion_crows=card("Carrion Crows")
+%}
+Leader of the group 4 crypt, she has all clan disciplines {{ SPI_ANI_PRE }} at superior
+for a reasonnable cost of 7. The +1 strength bonus is always good to take: she can use a little less
+{{ aid_from_bats }} for a little more {{ carrion_crows }}.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column('Howler', decks=17, copies="4-5") %}
+{% trans trimmed 
+    SPI_ANI_PRE='<i>ZIR</i>'|safe
+%}
+Leader of the group 2 crypt, she has all clan disciplines {{ SPI_ANI_PRE }} at superior
+for a cost of 8. The maneuver combined with the +1 strength bonus makes her a good warrior on her
+own.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column('Nose of the Hound', decks=41, copies="1-4") %}
+{% trans trimmed 
+    aus='<i>a</i>'|safe,
+    ani='<i>i</i>'|safe,
+    bums_rush=card("Bum's Rush"),
+    deep_song=card("Deep Song")
+%}
+A nice rush action, slightly better than {{ bums_rush }}.
+It is often played in {{ aus }} constructs for its base effect, as {{ ani }} provides the
+arguably better {{ deep_song }} already.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column('Speak with Spirits', decks=36, copies="6-11") %}
+{% trans trimmed %}
+An excellent unlock and intercept reaction, the core of most Ahrimanes defensive modules.
+An unlock is better than a simple wake, and the card is cheap: it costs blood only if
+both unlock and intercept are needed.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column('Swiftness of the Stag', decks=35, copies="5-9") %}
+{% trans trimmed 
+    ani='<i>i</i>'|safe,
+    aid_from_bats=card("Aid From Bats"),
+    carrion_crows=card("Carrion Crows"),
+    resist_earths_grasp=card("Resist Earth's Grasp")
+%}
+A versatile tool: it is decisive in combat and works well with the {{ ani }}
+classic combination of {{ aid_from_bats }} and {{ carrion_crows }}.
+Moreover, the optional +1 stealth is very useful to get critical actions through.
+It is a straight upgrade over the similar {{ resist_earths_grasp }}.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Falcon's Eye", decks=34, copies="2-5") %}
+{% trans trimmed 
+    aus='<i>a</i>'|safe,
+    ani='<i>i</i>'|safe,
+    eagles_sight=card("Eagle's Sight"),
+    anneke=card("Anneke"),
+    wall_decks=link("/strategy/archetypes", _("wall decks"), _anchor="wall")
+%}
+The only card apart {{ aus }} {{ eagles_sight }} and {{ anneke }}
+to allow cross-table blocks, it is a drastic improvement over the classical {{ ani }} intercept module.
+The ability to intercept one's prey bleed or a cross-table vote is critical to {{ wall_decks }}.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Ears of the Hare", decks=28, copies="2-4") %}
+{% trans trimmed 
+    aus='<i>a</i>'|safe,
+    ani='<i>i</i>'|safe,
+    spi='<i>z</i>'|safe,
+    enhanced_senses=card("Enhanced Senses"),
+    falcons_eye=card("Falcon's Eye"),
+    speak_with_spirits=card("Speak with Spirits"),
+    cats_guidance=card("Cat's Guidance")
+%}
+A strong intercept boost on par with {{ aus }} {{ enhanced_senses }},
+this completes the {{ spi }} toolset for intercept. Combined with
+{{ falcons_eye }} and {{ speak_with_spirits }}, along {{ ani }} {{ cats_guidance }},
+it delivers an intercept module as solid as {{ aus }}.
+{% endtrans %}
+{% endcall %}
+
 {% endblock %}

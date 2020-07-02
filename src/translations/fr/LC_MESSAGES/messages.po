@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version:  0\n"
 "Report-Msgid-Bugs-To: lionel.panhaleux+codex@gmail.com\n"
-"POT-Creation-Date: 2020-07-02 09:46+0200\n"
+"POT-Creation-Date: 2020-07-02 12:00+0200\n"
 "PO-Revision-Date: 2020-07-02 08:52+0200\n"
 "Last-Translator: Lionel Panhaleux <lionel.panhaleux+codex@gmail.com>\n"
 "Language: fr\n"
@@ -102,7 +102,7 @@ msgstr ""
 msgid "Black Hand"
 msgstr ""
 
-#: src/navigation.py:86 src/templates/best-cards/clans/ahrimanes.html:17
+#: src/navigation.py:86 src/templates/best-cards/clans/ahrimanes.html:16
 #: src/templates/strategy/archetypes.html:200
 msgid "Cats"
 msgstr ""
@@ -675,7 +675,7 @@ msgid ""
 "%(autoupdate_url)s"
 msgstr ""
 "Téléchargez %(lackeyccg)s. Allez sur l'onglet %(plugins)s et collez cette"
-" URL de mise à jour pour activer le plugin <strong>VtES</strong>: "
+" URL de mise à jour pour activer le plugin <strong>VtES</strong> : "
 "%(autoupdate_url)s"
 
 #: src/templates/index.html:82
@@ -691,10 +691,10 @@ msgid ""
 " Replace the last part with the path of your LackeyCCG folder if you did "
 "not put it in the Applications folder."
 msgstr ""
-"La sécurité du système empêche l’application de tourner normalement: au "
+"La sécurité du système empêche l’application de tourner normalement : au "
 "lieu de démarrer, elle vous redirige vers une %(error_web_page)s "
 "indiquant “Missing fonts”. Pour corriger cela, ouvrez le Terminal and "
-"tapez la commande suivante: %(command_line)s. Remplacez la dernière "
+"tapez la commande suivante : %(command_line)s. Remplacez la dernière "
 "partie par le chemin de votre dossier LackeyCCG si vous ne l’avez pas "
 "placé dans le dossier Applications."
 
@@ -1220,15 +1220,151 @@ msgstr "de Pawel Kosz"
 msgid "Manoel Pinheiro's deck"
 msgstr "deck de Manoel Pinheiro"
 
+#: src/templates/best-cards/_layout_card_column.html:7
+#, python-format
+msgid "played in %(num)d decks,"
+msgstr "joué dans %(num)d decks,"
+
+#: src/templates/best-cards/_layout_card_column.html:9
+msgid "typically 1 copy"
+msgstr "typiquement 1 exemplaire"
+
+#: src/templates/best-cards/_layout_card_column.html:11
+#, python-format
+msgid "typically %(range)s copies"
+msgstr "environ %(range)s exemplaires"
+
 #: src/templates/best-cards/index.html:5
 msgid "Best Cards"
 msgstr "Top Cartes"
 
-#: src/templates/best-cards/clans/ahrimanes.html:110
+#: src/templates/best-cards/clans/ahrimanes.html:7
+#, python-format
+msgid ""
+"<p> Ahrimanes and their unique discipline %(spi)s provide a stronger "
+"defence than the usual %(ani)s builds. Moreover, the acces to %(pre)s "
+"allow them more toolboxy constructs than mono %(ani)s, for a little more "
+"bleed. They offer basically two possible crypts, a group 2 with "
+"%(howler)s and %(the_siamese)s, and a group 4 with %(muricia)s and "
+"%(effie_lowery)s. </p> <p> This clan has only one main archetype: "
+"%(cats)s. Some Ahrimaines are good picks for mono %(ani)s archetypes as "
+"they offer %(ANI)s vampires for good value like %(effie_lowery)s and "
+"%(sahana)s. </p>"
+msgstr ""
+"<p> Les Ahrimanes et leur discipline unique %(spi)s donnent une meilleure"
+" défense que les constructions habituelles avec %(ani)s. De plus, leur "
+"accès à %(pre)s leur permet des constructions plus écléctiques que les "
+"mono %(ani)s, pour un peu plus de  morsure. Elles offrent principalement "
+"deux cryptes, une au groupe 2 avec %(howler)s et %(the_siamese)s et une "
+"au groupe 4 avec %(muricia)s et %(effie_lowery)s. </p> <p> Ce clan n'a "
+"qu'un archétype principal : %(cats)s. Quelques Ahrimaines sont de bons "
+"choix pour les archétypes mono %(ani)s puisqu'elles offrent des vampires "
+"avec %(ANI)s pour un coût raisonnable, comme %(effie_lowery)s et "
+"%(sahana)s. </p>"
+
+#: src/templates/best-cards/clans/ahrimanes.html:37
+#, python-format
+msgid ""
+"Superior %(ANI)s and %(SPI)s at a very decent cost of 5, she is even "
+"included in pure %(ANI)s crypts."
+msgstr ""
+"%(ANI)s et %(SPI)s en supérieur pour un coût très raisonnable à 5, elle "
+"est même inclue dans les cryptes purement %(ANI)s."
+
+#: src/templates/best-cards/clans/ahrimanes.html:46
+#, python-format
+msgid ""
+"Leader of the group 4 crypt, she has all clan disciplines %(SPI_ANI_PRE)s"
+" at superior for a reasonnable cost of 7. The +1 strength bonus is always"
+" good to take: she can use a little less %(aid_from_bats)s for a little "
+"more %(carrion_crows)s."
+msgstr ""
+"Leader de la crypt de groupe 4, elle a toutes les disciplines de clan "
+"%(SPI_ANI_PRE)s en supérieur pour un coût raisonnable de 7. Le bonus de "
+"+1 strength est toujours bon à prendre : elle peut utiliser un peu moins "
+"d'%(aid_from_bats)s pour un peu plus de %(carrion_crows)s."
+
+#: src/templates/best-cards/clans/ahrimanes.html:58
+#, python-format
+msgid ""
+"Leader of the group 2 crypt, she has all clan disciplines %(SPI_ANI_PRE)s"
+" at superior for a cost of 8. The maneuver combined with the +1 strength "
+"bonus makes her a good warrior on her own."
+msgstr ""
+"Leader de la crypt de groupe 2, elle a toutes les disciplines de clan "
+"%(SPI_ANI_PRE)s en supérieur pour un coût de 8. La manœuvre combinée au "
+"bonus de +1 strength en fait intrinsèquement une bonne guerrière."
+
+#: src/templates/best-cards/clans/ahrimanes.html:68
+#, python-format
+msgid ""
+"A nice rush action, slightly better than %(bums_rush)s. It is often "
+"played in %(aus)s constructs for its base effect, as %(ani)s provides the"
+" arguably better %(deep_song)s already."
+msgstr ""
+"Une bonne action de rush, un peu meilleure que %(bums_rush)s. Elle est "
+"souvent jouée dans les constructions %(aus)s pour son effet de base, "
+"puisque %(ani)s donne déjà accès à %(deep_song)s, sans doute meilleur."
+
+#: src/templates/best-cards/clans/ahrimanes.html:81
+msgid ""
+"An excellent unlock and intercept reaction, the core of most Ahrimanes "
+"defensive modules. An unlock is better than a simple wake, and the card "
+"is cheap: it costs blood only if both unlock and intercept are needed."
+msgstr ""
+"Une excellente réaction de redressement et d'interception, le cœur de la "
+"plupart des modules défensifs Ahrimanes. Un redressement est meilleur "
+"qu'un simple réveil et la carte est bon marché : elle ne coûte du sang "
+"que si le redressement et l'interception sont tous deux nécessaires."
+
+#: src/templates/best-cards/clans/ahrimanes.html:89
+#, python-format
+msgid ""
+"A versatile tool: it is decisive in combat and works well with the "
+"%(ani)s classic combination of %(aid_from_bats)s and %(carrion_crows)s. "
+"Moreover, the optional +1 stealth is very useful to get critical actions "
+"through. It is a straight upgrade over the similar "
+"%(resist_earths_grasp)s."
+msgstr ""
+"Un outil versatile : il est décisif en combat et fonctionne bien avec la "
+"cominaison %(ani)s classique d'%(aid_from_bats)s et %(carrion_crows)s. De"
+" plus, le +1 stealth en option est très utile pour passer des action "
+"critiques. C'est une nette amélioration par rapport à "
+"%(resist_earths_grasp)s."
+
+#: src/templates/best-cards/clans/ahrimanes.html:103
+#, python-format
+msgid ""
+"The only card apart %(aus)s %(eagles_sight)s and %(anneke)s to allow "
+"cross-table blocks, it is a drastic improvement over the classical "
+"%(ani)s intercept module. The ability to intercept one's prey bleed or a "
+"cross-table vote is critical to %(wall_decks)s."
+msgstr ""
+"La seule carte avec %(aus)s %(eagles_sight)s et %(anneke)s qui permet les"
+" blocages non standards, c'est une amélioration drastique pour le module "
+"d'interception %(ani)s classique. La possibilité d'intercepter les "
+"morsures de sa proie ou les votes en face est critique pour les "
+"%(wall_decks)s."
+
+#: src/templates/best-cards/clans/ahrimanes.html:108
 #: src/templates/best-cards/generic/auspex.html:86
 #: src/templates/best-cards/generic/master.html:85
 msgid "wall decks"
 msgstr "decks mur"
+
+#: src/templates/best-cards/clans/ahrimanes.html:117
+#, python-format
+msgid ""
+"A strong intercept boost on par with %(aus)s %(enhanced_senses)s, this "
+"completes the %(spi)s toolset for intercept. Combined with "
+"%(falcons_eye)s and %(speak_with_spirits)s, along %(ani)s "
+"%(cats_guidance)s, it delivers an intercept module as solid as %(aus)s."
+msgstr ""
+"Un bon boost d'interception comparable à %(aus)s %(enhanced_senses)s, il "
+"complète la panoplie %(spi)s pour l'interception. Cominé à "
+"%(falcons_eye)s et %(speak_with_spirits)s, ainsi que %(ani)s "
+"%(cats_guidance)s, il fournit un module d'interception comparable à "
+"%(aus)s."
 
 #: src/templates/best-cards/clans/akunanse.html:14
 #: src/templates/strategy/deck-building.html:239
@@ -1305,4 +1441,64 @@ msgstr "top cartes"
 #: src/templates/strategy/deck-building.html:254
 msgid "deck archive"
 msgstr "archive de decks"
+
+#~ msgid ""
+#~ "<p> Ahrimanes and their unique "
+#~ "discipline %(spi)s provide a stronger "
+#~ "defence than the usual %(ani)s builds."
+#~ " Moreover, the acces to %(pre)s allow"
+#~ " them more toolboxy constructs than "
+#~ "mono %(ani)s, for a little more "
+#~ "bleed. They offer basically two possible"
+#~ " crypts, a group 2 with %(howler)s"
+#~ " and %(the_siamese)s, and a group 4"
+#~ " with %(muricia)s and %(effie_lowery)s. "
+#~ "</p> <p> This clan has only one"
+#~ " main archetype: %(cats)s. Some Ahrimaines"
+#~ " are good picks for mono %(ani)s "
+#~ "archetypes as they offer %(ANI)s "
+#~ "vampires for good value like "
+#~ "%(effie_lowery)s and %(sahana)s. </p>"
+#~ msgstr ""
+#~ "<p> Les Ahrimanes et leur discipline "
+#~ "unique %(spi)s donnent une meilleure "
+#~ "défense que les constructions habituelles "
+#~ "avec %(ani)s. De plus, leur accès "
+#~ "à %(pre)s leur permet des constructions"
+#~ " plus écléctiques que les mono "
+#~ "%(ani)s, pour un peu plus de  "
+#~ "morsure. Elles offrent principalement deux "
+#~ "cryptes, une au groupe 2 avec "
+#~ "%(howler)s et %(the_siamese)s et une au"
+#~ " groupe 4 avec %(muricia)s et "
+#~ "%(effie_lowery)s. </p> <p> Ce clan n'a"
+#~ " qu'un archétype principal : %(cats)s. "
+#~ "Quelques Ahrimaines sont de bons choix"
+#~ " pour les archétypes mono %(ani)s "
+#~ "puisqu'elles offrent des vampires avec "
+#~ "%(ANI)s pour un coût raisonnable, comme"
+#~ " %(effie_lowery)s et %(sahana)s. </p>"
+
+#~ msgid "Best cards"
+#~ msgstr "Top cartes"
+
+#~ msgid ""
+#~ "<div class=\"tip\"> <p> Ahrimanes and "
+#~ "their unique discipline %(spi)s provide "
+#~ "a stronger defence than the usual "
+#~ "%(ani)s builds. Moreover, the acces to"
+#~ " %(pre)s allow them more toolboxy "
+#~ "constructs than mono %(ani)s, for a "
+#~ "little more bleed. They offer basically"
+#~ " two possible crypts, a group 2 "
+#~ "with %(howler)s and %(the_siamese)s, and "
+#~ "a group 4 with %(muricia)s and "
+#~ "%(effie_lowery)s. </p> </div> <p> This "
+#~ "clan has only one main archetype: "
+#~ "%(cats)s. Some Ahrimaines are good picks"
+#~ " for mono %(ani)s archetypes as they"
+#~ " offer %(ANI)s vampires for good "
+#~ "value like %(effie_lowery)s and %(sahana)s."
+#~ " </p>"
+#~ msgstr ""
 
