@@ -48,6 +48,7 @@ class Nav:
 
 
 STRUCTURE = Nav(
+    # TRANSLATORS: please abide by BCP translation choices for game terms when possible.
     lazy_gettext("Home"),
     index=True,
     children=[
