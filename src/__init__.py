@@ -1,3 +1,4 @@
+import copy
 import urllib.parse
 import re
 import unidecode
@@ -14,6 +15,81 @@ app = flask.Flask(__name__, template_folder="templates")
 app.jinja_env.policies["ext.i18n.trimmed"] = True
 babel = flask_babel.Babel(app)
 config.configure_app(app)
+
+BASE_CONTEXT = {
+    "CONVICTION_1": flask.Markup("<i>¤</i>"),
+    "CONVICTION_2": flask.Markup("<i>¤¤</i>"),
+    "CONVICTION_3": flask.Markup("<i>¤¤¤</i>"),
+    "CONVICTION_4": flask.Markup("<i>¤¤¤¤</i>"),
+    "CONVICTION_5": flask.Markup("<i>¤¤¤¤¤</i>"),
+    "ACTION": flask.Markup("<i>0</i>"),
+    "ACTION_MODIFIER": flask.Markup("<i>1</i>"),
+    "REACTION": flask.Markup("<i>7</i>"),
+    "COMBAT": flask.Markup("<i>4</i>"),
+    "REFLEX": flask.Markup("<i>6</i>"),
+    "FLIGHT": flask.Markup("<i>^</i>"),
+    "MERGED": flask.Markup("<i>µ </i>"),
+    "abo": flask.Markup("<i>w</i>"),
+    "ABO": flask.Markup("<i>W</i>"),
+    "ani": flask.Markup("<i>i</i>"),
+    "ANI": flask.Markup("<i>I</i>"),
+    "aus": flask.Markup("<i>a</i>"),
+    "AUS": flask.Markup("<i>A</i>"),
+    "cel": flask.Markup("<i>c</i>"),
+    "CEL": flask.Markup("<i>C</i>"),
+    "chi": flask.Markup("<i>k</i>"),
+    "CHI": flask.Markup("<i>K</i>"),
+    "dai": flask.Markup("<i>y</i>"),
+    "DAI": flask.Markup("<i>Y</i>"),
+    "dem": flask.Markup("<i>e</i>"),
+    "DEM": flask.Markup("<i>E</i>"),
+    "dom": flask.Markup("<i>d</i>"),
+    "DOM": flask.Markup("<i>D</i>"),
+    "for": flask.Markup("<i>f</i>"),
+    "FOR": flask.Markup("<i>F</i>"),
+    "mal": flask.Markup("<i>â </i>"),
+    "MAL": flask.Markup("<i>ã </i>"),
+    "mel": flask.Markup("<i>m</i>"),
+    "MEL": flask.Markup("<i>M</i>"),
+    "myt": flask.Markup("<i>x</i>"),
+    "MYT": flask.Markup("<i>X</i>"),
+    "nec": flask.Markup("<i>n</i>"),
+    "NEC": flask.Markup("<i>N</i>"),
+    "obe": flask.Markup("<i>b</i>"),
+    "OBE": flask.Markup("<i>B</i>"),
+    "obf": flask.Markup("<i>o</i>"),
+    "OBF": flask.Markup("<i>O</i>"),
+    "obt": flask.Markup("<i>$</i>"),
+    "OBT": flask.Markup("<i>£</i>"),
+    "pot": flask.Markup("<i>p</i>"),
+    "POT": flask.Markup("<i>P</i>"),
+    "pre": flask.Markup("<i>r</i>"),
+    "PRE": flask.Markup("<i>R</i>"),
+    "pro": flask.Markup("<i>j</i>"),
+    "PRO": flask.Markup("<i>J</i>"),
+    "qui": flask.Markup("<i>q</i>"),
+    "QUI": flask.Markup("<i>Q</i>"),
+    "san": flask.Markup("<i>g</i>"),
+    "SAN": flask.Markup("<i>G</i>"),
+    "ser": flask.Markup("<i>s</i>"),
+    "SER": flask.Markup("<i>S</i>"),
+    "spi": flask.Markup("<i>z</i>"),
+    "SPI": flask.Markup("<i>Z</i>"),
+    "str": flask.Markup("<i>à </i>"),
+    "STR": flask.Markup("<i>á </i>"),
+    "tem": flask.Markup("<i>?</i>"),
+    "TEM": flask.Markup("<i>!</i>"),
+    "thn": flask.Markup("<i>h</i>"),
+    "THN": flask.Markup("<i>H</i>"),
+    "tha": flask.Markup("<i>t</i>"),
+    "THA": flask.Markup("<i>T</i>"),
+    "val": flask.Markup("<i>l</i>"),
+    "VAL": flask.Markup("<i>L</i>"),
+    "vic": flask.Markup("<i>v</i>"),
+    "VIC": flask.Markup("<i>V</i>"),
+    "vis": flask.Markup("<i>u</i>"),
+    "VIS": flask.Markup("<i>U</i>"),
+}
 
 
 def main():
@@ -61,7 +137,8 @@ def index(lang_code=app.config["BABEL_DEFAULT_LOCALE"], page="index.html"):
         page = lang_code + "/" + page
         lang_code = app.config["BABEL_DEFAULT_LOCALE"]
     flask.g.lang_code = lang_code
-    context = {"language": flask.g.get("lang_code")}
+    context = copy.copy(BASE_CONTEXT)
+    context["language"] = flask.g.get("lang_code")
 
     # use card image as og_image for card-search
     if page[:11] == "card-search":

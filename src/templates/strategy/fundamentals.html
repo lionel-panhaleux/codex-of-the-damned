@@ -1,104 +1,122 @@
 {% extends "strategy/_layout.html" %}
 
 {% block content %}
-<h1>Fundamentals</h1>
-<h2 id="bleed">Bleed</h2>
+<h1> {{ _('Fundamentals') }} </h1>
+<h2 id="bleed">{{ _('Bleed') }} </h2>
+{% trans trimmed
+    conditioning=card("Conditioning")
+%}
 <p>
     The root of the game win is to destroy the prey’s pool and the obvious way to do it is to bleed.
     Numerous cards in the game can enhance bleed.
-    <i>d</i> and <i>r</i> give very strong bleed decks, but a swarm of minions also get the job done pretty fast.
+    {{ dom }} and {{ pre }} give very strong bleed decks, but a swarm of minions also get the job done pretty fast.
     ¾ of edible decks will kill their prey by bleeding it.
 </p>
 <p>
-    Bleed modifiers like {{ card("Conditioning") }}
+    Bleed modifiers like {{ conditioning }}
     should be played <strong>after the prey has declined to block</strong>.
     This way, they are more likely to get through.
 </p>
+{% endtrans %}
 <div class="tip">
+    {% trans trimmed 
+        leverage=card("Leverage"),
+        command_of_the_beast=card("Command of the Beast"),
+        quicksilver_contemplation=card("Quicksilver Contemplation")
+        %}
     <h3>Limited and unlimited modifiers</h3>
     <p>
-        Bleed modifiers are almost all <em>"limited"</em>, meaning one can play only one modifier increasing
-        the bleed amount during a bleed action. However, a few cards provided non-limited bleed increase:
-        {{ card("Leverage") }},
-        {{ card("Command of the Beast") }} and
-        {{ card("Quicksilver Contemplation") }}
+        Bleed modifiers are always <em>"limited"</em> if the card does not state otherwise,
+        meaning one can play only one modifier increasing the bleed amount during a bleed action.
+        However, a few cards provided non-limited bleed increase:
+        {{ leverage }}, {{ command_of_the_beast }} and {{ quicksilver_contemplation }}
         are played, more expensive ones are not.
     </p>
+    {% endtrans %}
 </div>
-<h3 id="bounce">Bounce</h3>
+<h3 id="bounce">{{ _('Bounce') }}</h3>
 <p>
+    {% trans trimmed %}
     On the defence side, <strong>bounces</strong> (reactions that change the target of a bleed)
     should be played only <strong>after the bleed amount has been confirmed</strong>
     by the predator, after block has been declined.
     This way the modifier, if any, is likely to be redirected too.
     This is because once the predator confirms the bleed amount, he actually passes on his opportunity
-    to play a modifier and do not get another opportunity if the prey does not play a modifier themselves.
+    to play a modifier and do not get another opportunity if the prey does not play a reaction.
     Only a few cards allow to <em>bounce</em> bleeds:
+    {% endtrans %}
 </p>
 <ul>
     <li>
         {{ card("Lost in Translation") }}
-        (younger vampires or allies),
+        ({{ _('younger vampires or allies') }}),
     </li>
-    <li><i>d</i> with {{ card("Deflection") }},</li>
+    <li><i>d</i> {{ _('with') }} {{ card("Deflection") }},</li>
     <li>
-        <i>D</i> with {{ card("Redirection") }} and
+        <i>D</i> {{ _('with') }} {{ card("Redirection") }} {{ _('and') }}
         {{ card("Murmur of the False Will") }},
     </li>
     <li>
         <i>A</i> with
-        {{ card("Telepathic Misdirection") }} and
+        {{ card("Telepathic Misdirection") }} {{ _('and') }}
         {{ card("My Enemy's Enemy") }}
     </li>
     <li>
-        Imbued with {{ card("Determine") }}
+        {{ _('Imbued with') }} {{ card("Determine") }}
     </li>
 </ul>
-<p>And only a few cards can counter these <em>bounces</em>:</p>
+<p>{{ _('And only a few cards can counter these <em>bounces</em>:') }}</p>
 <ul>
     <li>
         {{ card("Touch of Clarity") }} (<i>e</i>)
-        can counter <i>d</i> bounces,
+        {% trans %}can counter {{ dom }} bounces{% endtrans %},
     </li>
     <li>
         {{ card("Hide the Mind") }} (<i>O</i>),
-        {{ card("I am Legion") }} (<i>oy</i>) and
+        {{ card("I am Legion") }} (<i>oy</i>) {{ _('and') }}
         {{ card("False Resonance") }} (<i>k</i>)
-        can counter <i>A</i> bounces,
+        {% trans %}can counter {{ AUS }} bounces{% endtrans %},
     </li>
     <li>
         {{ card("Contingency Planning") }}
-        can counter any bounce,
+        {{ _('can counter any bounce') }},
     </li>
     <li>
-        {{ card("Two Wrongs") }} and
-        {{ card("Terra Incognita") }} (Laibon)
-        can counter bounces when being the target,
+        {{ card("Two Wrongs") }} {{ _('and') }}
+        {{ card("Terra Incognita") }} ({{ _('Laibon') }})
+        {{ _('can counter bounces when being the target') }},
     </li>
     <li>
         {{ card("Narrow Minds") }}
-        is often used to deter bounces, even if it may not be enough to prevent them altogether.
+        {{ _('is often used to deter bounces, even if it may not be enough to prevent them altogether.') }}
     </li>
 </ul>
 <div class="tip">
+    {% trans trimmed
+        archon_investigation=card("Archon Investigation")
+    %}
     <h3>Archon limit</h3>
     <p>
         A bleed for more than 3 exposes the minion to the possibility of
-        {{ card("Archon Investigation") }}.
-        Because of this card, 3 has become the <strong>archon limit</strong>:
+        {{ archon_investigation }}.
+        Because of this card, 3 has become the <strong>Archon limit</strong>:
         some decks will make sure to stay under it to avoid risking their minions,
         others will consider their minions expendable and get happily over it.
     </p>
+    {% endtrans %}
 </div>
-<h2 id="politics">Politics</h2>
+<h2 id="politics">{{ _('Politics') }}</h2>
+{% trans trimmed 
+    kine_resources_contested=card("Kine Resources Contested")
+    %}
 <p>
     The other option to deplete the prey’s pool is to use political actions like
-    {{ card("Kine Resources Contested") }}.
+    {{ kine_resources_contested }}.
     The advantage of this strategy is the +1 stealth on the action. The disadvantage is that it is not directed:
     not only the prey but the predator can block, and the whole table can vote.
 </p>
 <p>
-    The terms or the referendum are announced <strong>once the action resolves</strong>.
+    The terms of the referendum are announced <strong>once the action resolves</strong>.
     One can negotiate the vote as the action is announced, but only after blocks are declined
     and the action succeeds does one choose the official terms of the referendum —
     and eventually betray everyone. The terms must be stated clearly once the action resolves,
@@ -108,32 +126,43 @@
     In order to pass their referendum successfuly, Methusalah will try to achieve a <strong>vote lock</strong>,
     meaning they have more votes on the table than the sum of all other players votes.
     Multiple techniques can be used to this effect:
+    {% endtrans %}
 <ul>
     <li>
+        {% trans trimmed 
+            madrigal=card("Madrigal"),
+            hall_of_hades_court=card("Hall of Hades' Court"),
+            ventrue_headquarters=card("Ventrue Headquarters"),
+            ferraille=card("Ferraille"),
+            img_clan_ventrue='<img src="%(url)s">'|format(url=url_for('static', filename='img/icons/clan-ventrue.svg'))|safe,
+            img_clan_followers_of_set='<img src="%(url)s">'|format(url=url_for('static', filename='img/icons/clan-followers-of-set.svg'))|safe
+        %}
         Using modifiers or master cards to get more votes:
-        <i>r</i> has the most options, but other disciplines offer good modifiers,
-        like <i>m</i> {{ card("Madrigal") }} or
-        <i>?</i> {{ card("Hall of Hades' Court") }}, as do some clans
-        like the Ventrue <img src="{{ url_for('static', filename='img/icons/clan-ventrue.svg') }}"> with
-        {{ card("Ventrue Headquarters") }}
-        or the Followers of Set <img src="{{ url_for('static', filename='img/icons/clan-followers-of-set.svg') }}"> with
-        {{ card("Ferraille") }}.
+        {{ pre }} has the most options, but other disciplines offer good modifiers,
+        like {{ mel }} {{ madrigal }} or
+        {{ tem }} {{ hall_of_hades_court }}, as do some clans
+        like the Ventrue {{ img_clan_ventrue }} with {{ ventrue_headquarters }}
+        or the Followers of Set {{ img_clan_followers_of_set }} with {{ ferraille }}.
+        {% endtrans %}
     </li>
     <li>
-        Using {{ card("Praxis Seizure") }},
-        {{ card("Crusade") }} or
-        {{ card("Fee Stake") }} cards.
+        {% trans trimmed 
+            praxis=card("Praxis Seizure: Chicago", "Praxis Seizure"),
+            crusade=card("Crusade: Chicago", "Crusade"),
+            fee_stake=card("Fee Stake: Boston", "Fee Stake")
+        %}
+        Using {{ praxis }}, {{ crusade }} or {{ fee_stake }} cards.
+        {% endtrans %}
     </li>
     <li>
-        Getting multiple big capacity vampires with a lot of votes out, like Inner Circles and Justicars.
-        This is usually achieved using
-        {{ card("Zillah's Valley") }} and
-        {{ card("Information Highway") }}, together with
-        {{ card("Villein") }} or
+        {{ _('Getting multiple big capacity vampires with a lot of votes out, like Inner Circles and Justicars. This is usually achieved using') }}
+        {{ card("Zillah's Valley") }} {{ _('and') }}
+        {{ card("Information Highway") }}, {{ _('together with') }}
+        {{ card("Villein") }} {{ _('or') }}
         {{ card("Minion Tap") }}.
     </li>
     <li>
-        Using an effect to give votes to all members of clan, like
+        {{ _('Using an effect to give votes to all members of clan, like') }}
         {{ card("Legacy of Pander") }}
         (<img src="{{ url_for('static', filename='img/icons/clan-pander.svg') }}">),
         {{ card("The Eldest Are Kholo") }}
@@ -141,50 +170,54 @@
         {{ card("Foundation Exhibit") }}
         (<img src="{{ url_for('static', filename='img/icons/clan-toreador-anti.svg') }}">),
         {{ card("Conductor") }}
-        (<img src="{{ url_for('static', filename='img/icons/clan-daughters.svg') }}">) or
+        (<img src="{{ url_for('static', filename='img/icons/clan-daughters.svg') }}">) {{ _('or') }}
         {{ card("Amaravati") }}
         (<img src="{{ url_for('static', filename='img/icons/clan-assamite.svg') }}">).
-        This needs to be combined with ways to bring many vampires of that clan into play,
-        using actions like {{ card("The Embrace") }} or Master cards like
-        {{ card("Effective Management") }} or
+        {{ _('This needs to be combined with ways to bring many vampires of that clan into play, using actions like') }}
+        {{ card("The Embrace") }} {{ _('or Master cards like') }}
+        {{ card("Effective Management") }} {{ _('or') }}
         {{ card("Information Highway") }}.
     </li>
 </ul>
 </p>
-<h3 id="delay">Delay</h3>
+<h3 id="delay">{{ _('Delay') }}</h3>
 <p>
+    {% trans trimmed
+        delaying_tactics=card("Delaying Tactics"),
+        kine_resources_contested=card("Kine Resources Contested")
+        %}
     Aggressive vote decks will pass multiple votes in a single turn, but this has led to the use of
-    {{ card("Delaying Tactics") }} as a defence.
+    {{ delaying_tactics }} as a defence.
     This means diversity in votes is needed to avoid loosing a whole turn of actions just because
-    {{ card("Kine Resources Contested") }}
-    has been delayed.
+    {{ kine_resources_contested }} has been delayed.
+    {% endtrans %}
+</p>
 <div class="tip">
-    <h3>Damage dealing votes</h3>
+    <h3>{{ _('Damage dealing votes') }}</h3>
     <p>
-        Only a few votes deal substantive pool damage, and they often have restrictions.
-        Some votes dealing less damage are not listed here.
+        {{ _('Only a few votes deal substantive pool damage, and they often have restrictions. Some votes dealing less damage are not listed here.') }}
     </p>
     <ul>
-        <li class="card" onclick="dC('kineresourcescontested')">Kine Resources Contested</li>
-        <li class="card" onclick="dC('conservativeagitation')">Conservative Agitation</li>
+        <li>{{ card("Kine Resources Contested") }}</li>
+        <li>{{ card("Conservative Agitation") }}</li>
         <li>
             {{ card("Parity Shift") }}
-            (Prince or Justicar, only on a Methusalah with more pool)
+            ({{ _('Prince or Justicar, only on a Methusalah with more pool') }})
         </li>
-        <li class="card" onclick="dC('neonatebreach')">Neonate Breach</li>
-        <li class="card" onclick="dC('domainchallenge')">Domain Challenge</li>
+        <li>{{ card("Neonate Breach") }}</li>
+        <li>{{ card("Domain Challenge") }}</li>
         <li>
-            {{ card("Ancilla Empowerment") }} and
+            {{ card("Ancilla Empowerment") }} {{ _('and') }}
             {{ card("Anarchist Uprising") }}
-            (both have the same effect)
+            ({{ _('both have the same effect') }})
         </li>
         <li>
             {{ card("Reins of Power") }}
-            (Big capacity vampires)
+            ({{ _('Big capacity vampires') }})
         </li>
         <li>
             {{ card("Reckless Agitation") }}
-            (Independant or Anarch)
+            ({{ _('Independant or Anarch') }})
         </li>
         <li>
             {{ card("Lily Prelude") }}
@@ -192,12 +225,14 @@
         </li>
         <li>
             {{ card("Revolutionary Council") }}
-            (Baron)
+            ({{ _('Baron') }})
         </li>
     </ul>
 </div>
-</p>
-<h2 id="AB">A&B</h2>
+<h2 id="AB">{{ _('A&B') }}</h2>
+{% trans trimmed 
+    wake_with_evenings_freshness=card("Wake with Evening’s Freshness")
+    %}
 <p>
     One can either choose to buff up attack or to keep minions and cards to defend oneself:
     the stronger the defence, the weaker the attack, so it’s a question of balance in every deck.
@@ -207,27 +242,30 @@
 </p>
 <p>
     The most obvious way to increase A&B is to use <strong>wake</strong> reactions like
-    {{ card("Wake with Evening’s Freshness") }}.
+    {{ wake_with_evenings_freshness }}.
     Most decks use this technique, although some forward-only builds will not, for lack of decent defensive tools.
 </p>
+{% endtrans %}
 <div class="tip">
-    <h3>Wake & unlock reactions</h3>
+    <h3>{{ _('Wake & unlock reactions') }}</h3>
     <p>
+        {% trans trimmed %}
         A few cards provide wake or unlock effects during the opponents turn,
         letting locked vampire react to and intercept actions.
+        {% endtrans %}
     </p>
     <ul>
-        <li class="card" onclick="dC('onthequivive')">On the Qui Vive</li>
-        <li class="card" onclick="dC('wakewitheveningsfreshness')">Wake With Evening's Freshness</li>
-        <li class="card" onclick="dC('forcedawakening')">Forced Awakening</li>
-        <li class="card" onclick="dC('fillip')">Fillip</li>
-        <li class="card" onclick="dC('eludingthearmsofmorpheus')">Eluding the Arms of Morpheus</li>
+        <li>{{ card("On the Qui Vive") }}</li>
+        <li>{{ card("Wake With Evening's Freshness") }}</li>
+        <li>{{ card("Forced Awakening") }}</li>
+        <li>{{ card("Fillip") }}</li>
+        <li>{{ card("Eluding the Arms of Morpheus") }}</li>
         <li>
             {{ card("Second Tradition: Domain") }}
-            (Prince or Justicar)
+            ({{ _('Prince or Justicar') }})
         </li>
-        <li>{{ card("Eternal Vigilance") }} (titled Sabbat)</li>
-        <li>{{ card("Under Siege") }} (titled Sabbat)</li>
+        <li>{{ card("Eternal Vigilance") }} ({{ _('titled Sabbat') }})</li>
+        <li>{{ card("Under Siege") }} ({{ _('titled Sabbat') }})</li>
         <li>{{ card("Rat's Warning") }} (<i>i</i>)</li>
         <li>{{ card("Guard Dogs") }} (<i>i</i>)</li>
         <li>{{ card("Eyes of Argus") }} (<i>A</i>)</li>
@@ -236,13 +274,17 @@
         <li>{{ card("Speak With Spirits") }} (<i>Z</i>)</li>
         <li>
             {{ card("Sense the Savage Way") }}
-            (Big capacity <i>I</i>)
+            ({{ gettext('Big capacity %(ANI)s', ANI='<i>I</i>'|safe) }})
         </li>
-        <li>{{ card("The Mole") }} (<i>i</i> anarch)</li>
-        <li>{{ card("Netwar") }} (<i>k</i> anarch)</li>
-        <li>{{ card("Angel of Berlin") }} (Imbued)</li>
+        <li>{{ card("The Mole") }} (<i>i</i> {{ _('Anarch') }})</li>
+        <li>{{ card("Netwar") }} (<i>k</i> {{ _('Anarch') }})</li>
+        <li>{{ card("Angel of Berlin") }} ({{ _('Imbued') }})</li>
     </ul>
 </div>
+{% trans trimmed 
+    the_embrace=card("The Embrace"),
+    freak_drive=card("Freak Drive")
+    %}
 <p>
     Another easy way to increase A&B is to use a <strong>weenie</strong> crypt:
     many small vampires for more actions and blocks.
@@ -250,22 +292,21 @@
 </p>
 <p>
     Other methods to get more minions also increase A&B, like recruiting <strong>Allies</strong>
-    or using <strong>breed</strong> cards like
-    {{ card("The Embrace") }} to create new vampires.
+    or using <strong>breed</strong> cards like {{ the_embrace }} to create new vampires.
 </p>
 <p>
     The last way to increase A&B is to use modifiers to engage in multiple actions with a single minion.
-    This strategy is called <strong>drive</strong> in honour of
-    {{ card("Freak Drive") }},
+    This strategy is called <strong>drive</strong> in honour of {{ freak_drive }},
     one of the most played card to achieve this.
     Because the <strong>NRA</strong> (<strong>N</strong>on <strong>R</strong>epeatable <strong>A</strong>ction) rule
-    states that no action can be undertaken twice in the same turn by the same minion,
+    states that no action card can be used twice in the same turn by the same minion,
     this strategy has to be combined with a matching diversity in actions.
 </p>
+{% endtrans %}
 <div class="tip">
-    <h3>Unlock modifiers</h3>
+    <h3>{{ _('Unlock modifiers') }}</h3>
     <p>
-        Only a few cards allow a vampire to unlock during the turn and undertake multiple actions.
+        {{ _('Only a few cards allow a vampire to unlock during the turn and undertake multiple actions.') }}
     </p>
     <ul>
         <li>{{ card("Freak Drive") }} (<i>F</i>)</li>
@@ -283,13 +324,14 @@
         <li>{{ card("As The Crow") }} (<i>^</i>)</li>
         <li>
             {{ card("CrimethInc.") }}
-            (<i>j</i> or <i>q</i> Anarch)
+            (<i>j</i> or <i>q</i> {{ _('Anarch') }})
         </li>
-        <li>{{ card("Seraph's Second") }} (Black Hand)</li>
-        <li>{{ card("Tattoo Signal") }} (Seraph)</li>
+        <li>{{ card("Seraph's Second") }} ({{ _('Black Hand') }})</li>
+        <li>{{ card("Tattoo Signal") }} ({{ _('Seraph') }})</li>
     </ul>
 </div>
-<h2 id="action-sequence">Action sequence</h2>
+<h2 id="action-sequence">{{ _('Action sequence') }}</h2>
+{% trans trimmed %}
 <p>
     The choice and order of minion actions is important.
     A common strategy is to <strong>bait</strong>, beginning with the most mundane actions, up to the strongest ones.
@@ -309,7 +351,15 @@
     or lack thereof. As a predator, one should try to asses the number of wakes, bounces, delays, <em>etc.</em>
     available on the prey side.
 </p>
-<h2 id="stealth-and-intercept">Stealth and Intercept</h2>
+{% endtrans %}
+<h2 id="stealth-and-intercept">{{ _('Stealth and Intercept') }}</h2>
+{% trans trimmed 
+    wmrh_talk_radio=card("WMRH Talk Radio"),
+    carlton_van_wyk=card("Carlton Van Wyk"),
+    ponticulus=card("Ponticulus"),
+    harzomatuili=card("Harzomatuili"),
+    img_clan_tremere='<img src="%(url)s">'|format(url=url_for('static', filename='img/icons/clan-tremere.svg'))|safe
+%}
 <p>
     The key between offence and defence is the management of stealth and intercept.
     Many disciplines give access to stealth and intercept.
@@ -317,39 +367,33 @@
 <p>
     One level of intercept is enough to block hunts, votes, equipments and recruitments.
     Therefore, some decks include a limited number of <strong>permanent intercept</strong> cards like
-    {{ card("WMRH Talk Radio") }}.
+    {{ wmrh_talk_radio }}.
 </p>
 <p>
-    {{ card("Carlton Van Wyk") }},
-    {{ card("Ponticulus") }} (<img
-        src="{{ url_for('static', filename='img/icons/clan-tremere.svg') }}">) and
-    {{ card("Harzomatuili") }} (Cardinal or Regent)
+    {{ carlton_van_wyk }},
+    {{ ponticulus }} ({{ img_clan_tremere }}) and
+    {{ harzomatuili }} (Cardinal or Regent)
     deserve a special mention: they include a permanent intercept bonus plus their combat abilities
     is great and allow them to hinder the opponents all by themselves.
 </p>
+{% endtrans %}
 <div class="tip">
-    <h3>Permanent intercept cards</h3>
+    <h3>{{ _('Permanent intercept cards') }}</h3>
     <p>
-        Only a few unique cards give permanent intercept to any vampire, most of them master cards.
+        {{ _('Only a few unique cards give permanent intercept to any vampire, most of them master cards.') }}
     </p>
     <ul>
-        <li class="card" onclick="dC('krcgnewsradio')">KRCG News Radio</li>
-        <li class="card" onclick="dC('wmrhtalkradio')">WMRH Talk Radio</li>
-        <li class="card" onclick="dC('wallstreetnightfinancialnewspaper')">
-            Wall Street Night, Financial Newspaper
-        </li>
-        <li class="card" onclick="dC('channel10')">Channel 10</li>
-        <li class="card" onclick="dC('londoneveningstartabloidnewspaper')">
-            London Evening Star, Tabloid Newspaper
-        </li>
-        <li class="card" onclick="dC('rumormilltabloidnewspaperthe')">
-            The Rumor Mill, Tabloid Newspaper
-        </li>
-        <li> {{ card("Club Zombie") }} (expensive) </li>
-        <li class="card" onclick="dC('aranthebestheimmortal')">Aranthebes, the Immortal</li>
+        <li>{{ card("KRCG News Radio") }}</li>
+        <li>{{ card("WMRH Talk Radio") }}</li>
+        <li>{{ card("Wall Street Night, Financial Newspaper") }}</li>
+        <li>{{ card("Channel 10") }}</li>
+        <li>{{ card("London Evening Star, Tabloid Newspaper") }}</li>
+        <li>{{ card("The Rumor Mill, Tabloid Newspaper") }}</li>
+        <li> {{ card("Club Zombie") }} ({{ _('expensive') }}) </li>
+        <li>{{ card("Aranthebes, the Immortal") }}</li>
         <li>
             {{ card("The Anarch Free Press") }}
-            (Anarch)
+            ({{ _('Anarch') }})
         </li>
         <li>
             {{ card("Market Square") }}
@@ -360,8 +404,7 @@
             (<img src="{{ url_for('static', filename='img/icons/clan-nosferatu-anti.svg') }}">)
         </li>
         <li>
-            {{ card("Ponticulus") }} (<img
-                src="{{ url_for('static', filename='img/icons/clan-tremere.svg') }}">)
+            {{ card("Ponticulus") }} (<img src="{{ url_for('static', filename='img/icons/clan-tremere.svg') }}">)
         </li>
         <li>
             {{ card("Saatet-ta") }}
@@ -369,33 +412,33 @@
         </li>
         <li>
             {{ card("The Unmasking") }}
-            (Allies)
+            ({{ _('Allies') }})
         </li>
     </ul>
     <p>
-        Other cards give permanent intercept to a chosen vampire.
+        {{ _('Other cards give permanent intercept to a chosen vampire.') }}
     </p>
     <ul>
-        <li class="card" onclick="dC('mrwinthrop')">Mr. Winthrop</li>
-        <li class="card" onclick="dC('sportbike')">Sport Bike</li>
-        <li class="card" onclick="dC('phasedmotiondetector')">Phased Motion Detector</li>
-        <li class="card" onclick="dC('guardianangel')">Guardian Angel</li>
+        <li>{{ card("Mr. Winthrop") }}</li>
+        <li>{{ card("Sport Bike") }}</li>
+        <li>{{ card("Phased Motion Detector") }}</li>
+        <li>{{ card("Guardian Angel") }}</li>
         <li>
             {{ card("Bowl of Convergence") }}
             (<i>a</i>)
         </li>
         <li>
-            {{ card("Raven Spy") }} and
+            {{ card("Raven Spy") }} {{ _('and') }}
             {{ card("Raptor") }}
             (<i>i</i>)
         </li>
         <li>
             {{ card("Abbot") }}
-            (Sabbat)
+            ({{ _('Sabbat') }})
         </li>
         <li>
             {{ card("Atonement") }}
-            (Small capacity vampires)
+            ({{ _('Small capacity vampires') }})
         </li>
         <li>
             {{ card("Razor Bat") }}
@@ -406,10 +449,8 @@
             (<img src="{{ url_for('static', filename='img/icons/clan-gargoyle.svg') }}">)
         </li>
         <li>
-            <span class="card" onclick="dC('nosecretsfromthemagaji')">
-                No Secrets From the Magaji
-            </span>
-            (Magaji)
+            {{ card("No Secrets From the Magaji") }}
+            ({{ _('Magaji') }})
         </li>
         <li>
             {{ card("Corpse Balloon") }}
@@ -425,7 +466,7 @@
         </li>
         <li>
             {{ card("Shaman") }}
-            (Laibon)
+            ({{ _('Laibon') }})
         </li>
         <li>
             {{ card("Kumpania") }}
@@ -442,14 +483,21 @@
     </ul>
 </div>
 <p>
+    {% trans trimmed 
+        elder_impersonation=card("Elder Impersonation"),
+        call_of_the_hungry_dead=card("Call of the Hungry Dead"),
+        blanket_of_night=card("Blanket of Night"),
+        seduction=card("Seduction")
+    %}
     On the other hand, whatever level of intercept one manages to achieve, stealth specialised decks
     often include some <strong>block denial</strong> modifiers atop normal stealth.
-    <i>O</i> {{ card("Elder Impersonation") }},
-    <i>N</i> {{ card("Call of the Hungry Dead") }}
-    and <i>£</i> {{ card("Blanket of Night") }}
-    are the only full-purpose block denials of the game. However, <i>D</i> gives access to
-    {{ card("Seduction") }} which is still a strong denial,
+    {{ OBF }} {{ elder_impersonation }},
+    {{ NEC }} {{ call_of_the_hungry_dead }}
+    and {{ OBT }} {{ blanket_of_night }}
+    are the only full-purpose block denials of the game. However, {{ DOM }} gives access to
+    {{ seduction }} which is still a strong denial,
     even if it is less efficient against wakes. Many disciplines give access to lesser block denials
     that only work against allies and younger vampires, but they are less used.
+    {% endtrans %}
 </p>
 {% endblock %}

@@ -5,10 +5,6 @@
 <h1><img src="{{ url_for('static', filename='img/icons/clan-ahrimanes.svg') }}"> Ahrimanes</h1>
 <div class="tip">
     {% trans trimmed 
-        spi='<i>z</i>'|safe,
-        ani='<i>i</i>'|safe,
-        ANI='<i>I</i>'|safe,
-        pre='<i>r</i>'|safe,
         howler=card("Howler"),
         the_siamese=card("The Siamese"),
         muricia=card("Muricia"),
@@ -34,10 +30,7 @@
 </div>
 
 {% call layout.card_column('Effie Lowery', decks=36, copies="1-3") %}
-{% trans trimmed 
-    ANI='<i>I</i>'|safe,
-    SPI='<i>Z</i>'|safe
-%}
+{% trans trimmed %}
 Superior {{ ANI }} and {{ SPI }} at a very decent cost of 5, she is even included in pure {{ ANI }} crypts.
 {% endtrans %}
 {% endcall %}
@@ -66,8 +59,6 @@ own.
 
 {% call layout.card_column('Nose of the Hound', decks=41, copies="1-4") %}
 {% trans trimmed 
-    aus='<i>a</i>'|safe,
-    ani='<i>i</i>'|safe,
     bums_rush=card("Bum's Rush"),
     deep_song=card("Deep Song")
 %}
@@ -87,7 +78,6 @@ both unlock and intercept are needed.
 
 {% call layout.card_column('Swiftness of the Stag', decks=35, copies="5-9") %}
 {% trans trimmed 
-    ani='<i>i</i>'|safe,
     aid_from_bats=card("Aid From Bats"),
     carrion_crows=card("Carrion Crows"),
     resist_earths_grasp=card("Resist Earth's Grasp")
@@ -101,8 +91,6 @@ It is a straight upgrade over the similar {{ resist_earths_grasp }}.
 
 {% call layout.card_column("Falcon's Eye", decks=34, copies="2-5") %}
 {% trans trimmed 
-    aus='<i>a</i>'|safe,
-    ani='<i>i</i>'|safe,
     eagles_sight=card("Eagle's Sight"),
     anneke=card("Anneke"),
     wall_decks=link("/strategy/archetypes", _("wall decks"), _anchor="wall")
@@ -115,9 +103,6 @@ The ability to intercept one's prey bleed or a cross-table vote is critical to {
 
 {% call layout.card_column("Ears of the Hare", decks=28, copies="2-4") %}
 {% trans trimmed 
-    aus='<i>a</i>'|safe,
-    ani='<i>i</i>'|safe,
-    spi='<i>z</i>'|safe,
     enhanced_senses=card("Enhanced Senses"),
     falcons_eye=card("Falcon's Eye"),
     speak_with_spirits=card("Speak with Spirits"),

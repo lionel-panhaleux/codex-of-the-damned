@@ -69,7 +69,7 @@ function formatText(text) {
         "[obf]": "<i>o</i>",
         "[OBF]": "<i>O</i>",
         "[obt]": "<i>$</i>",
-        "[OBT]": "<i>$</i>",
+        "[OBT]": "<i>£</i>",
         "[pot]": "<i>p</i>",
         "[POT]": "<i>P</i>",
         "[pre]": "<i>r</i>",
