@@ -5,8 +5,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version:  0\n"
 "Report-Msgid-Bugs-To: lionel.panhaleux+codex@gmail.com\n"
-"POT-Creation-Date: 2020-06-30 17:33+0200\n"
-"PO-Revision-Date: 2020-06-30 16:19+0200\n"
+"POT-Creation-Date: 2020-07-02 09:46+0200\n"
+"PO-Revision-Date: 2020-07-02 08:52+0200\n"
 "Last-Translator: Lionel Panhaleux <lionel.panhaleux+codex@gmail.com>\n"
 "Language: fr\n"
 "Language-Team: codex-fr <lionel.panhaleux+codex@gmail.com>\n"
@@ -320,7 +320,7 @@ msgstr ""
 msgid "Tzimisce Toolbox"
 msgstr ""
 
-#: src/navigation.py:124 src/templates/archetypes/mistress.html:59
+#: src/navigation.py:124 src/templates/archetypes/mistress.html:60
 #: src/templates/best-cards/clans/tremere.html:38
 #: src/templates/best-cards/clans/tzimisce.html:9
 #: src/templates/strategy/archetypes.html:190
@@ -749,19 +749,151 @@ msgstr ""
 " de Paradox Interactive AB, et sont utilisées avec autorisation. Tous "
 "droits réservés. Pour plus d'informations, merci de consulter"
 
-#: src/templates/archetypes/aaa.html:45
+#: src/templates/archetypes/_layout-erratum.html:3
+#, python-format
+msgid ""
+"%(pentex)s has been modified by an <em>errata</em> in September 2019. It "
+"does not prevent a vampire to act anymore, so it is less powerful"
+msgstr ""
+"%(pentex)s a été modifiée par un <em>errata</em> en september 2019. Elle "
+"n'empêche plus un vampire d'agir, donc elle est moins puissante"
+
+#: src/templates/archetypes/_layout-erratum.html:10
+msgid "and should probably not be included in the deck anymore."
+msgstr "et devrait probablement être retiré de ce deck."
+
+#: src/templates/archetypes/_layout-erratum.html:12
+msgid ""
+". Its ability to disable a strong blocker is still an important aspect so"
+" it can have its place here."
+msgstr ""
+". Sa capacité à mettre un bloqueur puissant hors d'action est toujours un"
+" aspect important donc elle a peut-être encore sa place ici."
+
+#: src/templates/archetypes/_layout-erratum.html:14
+msgid ""
+"but still has its place in the deck, as it was mainly used as a way to "
+"disable a blocker anyway."
+msgstr ""
+"mais a toujours sa place dans ce deck, puisqu'elle était de toute façon "
+"principalement utilisée pour mettre un bloqueur hors d'action."
+
+#: src/templates/archetypes/_layout-erratum.html:21
+#, python-format
+msgid ""
+"%(villein)s has been modified by an errata in June 2018 to limit the "
+"blood taken to a maximum of 5. It should still be as efficient as ever in"
+" this archetype, though."
+msgstr ""
+"%(villein)s a été modifié par un errata en juin 2018 pour limiter la "
+"quantité de sang récupéré à un maximum de 5. Il devrait toutefois "
+"conserver son efficacité dans cet archétype."
+
+#: src/templates/archetypes/_layout-erratum.html:32
+#, python-format
+msgid ""
+"%(parity_shift)s has been modified in the September 2019 <em>errata</em>."
+" The amount of pool is no longer equal to the number of Methusalah, but "
+"is stable at 3. The card is then less powerful in the game beginning, but"
+" is still a good fit in this deck."
+msgstr ""
+"%(parity_shift)s a été modifié dans l'<em>errata</em> de septembre 2019. "
+"La quantité de points de réserve n'est plus égale au nombre de "
+"Methusalah, mais est fixée à 3. Cette carte est donc moins puissante en "
+"début de partie, mais reste une bonne inclusion dans ce deck."
+
+#: src/templates/archetypes/_layout-erratum.html:44
+#, python-format
+msgid ""
+"%(anthelios)s has been banned in 2016. Its removal may have a bit of "
+"impact on the Master module."
+msgstr ""
+"%(anthelios)s a été bannie en 2016. Son retrait peut avoir quelques "
+"conséquences sur le module de cartes Maître."
+
+#: src/templates/archetypes/_layout-erratum.html:55
+#, python-format
+msgid "%(liliths_blessing)s has been banned in 2016."
+msgstr "%(liliths_blessing)s a été bannie en 2016."
+
+#: src/templates/archetypes/_layout-erratum.html:65
+#, python-format
+msgid "%(temptation_of_greater_power)s has been banned in 2016."
+msgstr "%(temptation_of_greater_power)s a été bannie en 2016."
+
+#: src/templates/archetypes/aaa.html:9
+#, python-format
+msgid ""
+"<h2>Highlights</h2> <p> This is a <em>toolbox</em> deck starring "
+"%(anson)s alongside %(alexandra)s and %(anneke)s, hence the \"AAA\" name."
+" </p> <p> The deck is well-balanced, using %(second_tradition_domain)s "
+"for wake and intercept, %(concealed_weapon)s + %(magnum)s with %(CEL)s "
+"for combat, %(parity_shift)s and %(aire_of_elation)s for pool damage and "
+"%(anson)s's ability to bloat and use recursion with %(ashur_tablets)s and"
+" %(liquidation)s. </p> <p> %(resist_earths_grasp)s can provide a bit of "
+"stealth or be used in combat if required. </p> <p> %(heart_of_the_city)s "
+"and %(codex_of_the_edenic_groundskeepers)s are good bleed enhancers for "
+"the late game. </p> <h2>Tips & Tricks</h2> <p> %(entrancement)s can help "
+"get rid of cumbersome allies, %(scourge_of_the_enochians)s is there to "
+"deal with breed constructs. </p> <p> As the game progresses, "
+"%(ashur_tablets)s are used for recursion to adapt the deck content to the"
+" table context, bringing back more of what is really needed in the deck. "
+"</p> <h2>Variants</h2> <p> The <strong>Anson Guns</strong> variant "
+"focuses on %(anson)s and drops its Toreador companions to get cheaper "
+"vampires with %(CEL)s, like in %(tomasz_deck)s from 2019. </p> <p> The "
+"<strong>Grand Ball</strong> variant ditches the combat module and uses "
+"%(alexandra)s's ability with %(toreador_grand_ball)s to provide "
+"unblockable votes, like in %(martin_deck)s from 2013. </p> <p> The "
+"<strong>Aching Beauty</strong> variant also replaces the combat module "
+"with defensive %(majesty)s, but uses %(aching_beauty)s in numbers to make"
+" the vampires actions hard to block, like in %(laszlo_deck)s from 2012. "
+"</p> <p> The <strong>AAAAA</strong> variant keeps %(alexandra)s and "
+"%(anneke)s and uses the %(alastor)s + %(assault_rifle)s combination "
+"(hence the five \"A\"), like in %(izaak_deck)s from 2010. </p>"
+msgstr ""
+"<h2>Principe</h2> <p> C’est un deck <em>toolbox</em> avec %(anson)s en "
+"star, accompagné d’%(alexandra)s et d’%(anneke)s, d’où le nom “AAA”. </p>"
+" <p> Le deck est équilibré, il utilise %(second_tradition_domain)s pour "
+"le réveil et l’interception, %(concealed_weapon)s + %(magnum)s avec "
+"%(CEL)s pour le combat, %(parity_shift)s et %(aire_of_elation)s pour "
+"détruire la réserve de sa proie et le pouvoir d’%(anson)s pour régénérer "
+"et faire de la récursion avec %(ashur_tablets)s et %(liquidation)s. </p> "
+"<p> %(resist_earths_grasp)s peut donner un peu de discrétion ou être "
+"utilisé en combat si nécessaire. </p> <p> %(heart_of_the_city)s et "
+"%(codex_of_the_edenic_groundskeepers)s sont de bonnes améliorations de "
+"morsure pour la fin de partie. </p> <h2>Trucs & Astuces</h2> <p> "
+"%(entrancement)s peut permettre de se débarrasser d’alliés pénibles, "
+"%(scourge_of_the_enochians)s est inclus pour gérer les decks de breed. "
+"</p> <p> Alors que la partie progresse, les %(ashur_tablets)s sont "
+"utilisées pour leur récursivité afin d'adapter le deck au contexte de "
+"table en y remontant ce qui est vraiment utile. </p> <h2>Variantes</h2> "
+"<p> La variante <strong>Anson Guns</strong> se concentre sur %(anson)s et"
+" néglige ses compagnons Toréador pour leur préférer des vampires moins "
+"coûteux avec %(CEL)s, comme dans le %(tomasz_deck)s de 2019. </p> <p> La "
+"variante <strong>Grand Ball</strong> retire le module de combat et "
+"utilise le pouvoir d’%(alexandra)s avec %(toreador_grand_ball)s pour "
+"donner des votes imblocables, comme dans le %(martin_deck)s de 2013. </p>"
+" <p> La variante <strong>Aching Beauty</strong> remplace aussi le module "
+"de combat par des %(majesty)s pour la défense, mais utilise "
+"%(aching_beauty)s en grand nombre pour rendre les actions des vampires "
+"difficiles à bloquer, comme dans le %(laszlo_deck)s de 2012. </p> <p> La "
+"variante <strong>AAAAA</strong> conserve %(alexandra)s et %(anneke)s et "
+"utilise la combinaison %(alastor)s + %(assault_rifle)s (d’où les cinq "
+"“A”), comme dans le %(izaak_deck)s de 2010. </p>"
+
+#: src/templates/archetypes/aaa.html:30
 msgid "Tomasz Izydorczyk's deck"
 msgstr "deck de Tomasz Izydorczyk"
 
-#: src/templates/archetypes/aaa.html:51
+#: src/templates/archetypes/aaa.html:31
 msgid "Martin Miller's deck"
 msgstr "deck de Martin Miller"
 
-#: src/templates/archetypes/aaa.html:57
+#: src/templates/archetypes/aaa.html:32
 msgid "László Walter's deck"
 msgstr "deck de László Walter"
 
-#: src/templates/archetypes/aaa.html:64
+#: src/templates/archetypes/aaa.html:33
 msgid "Izaak Havelaar's deck"
 msgstr "deck d'Izaak Havelaar"
 
@@ -797,7 +929,7 @@ msgstr ""
 msgid "Noel Giménez Infante's deck"
 msgstr "deck de Noel Giménez Infante"
 
-#: src/templates/archetypes/amaravati-politics.html:82
+#: src/templates/archetypes/amaravati-politics.html:80
 msgid "Riccardo Fabiani's deck"
 msgstr "deck de Riccardo Fabiani"
 
@@ -924,7 +1056,7 @@ msgstr "deck d'Enrico De Stefano"
 msgid "Ben Peal's deck"
 msgstr "deck de Ben Peal"
 
-#: src/templates/archetypes/lasombra-nocturn.html:74
+#: src/templates/archetypes/lasombra-nocturn.html:75
 msgid "Csaba Greguss's deck"
 msgstr "deck de Csaba Greguss"
 
@@ -950,11 +1082,11 @@ msgstr "deck d'Orian Gissler"
 msgid "Erol Hammer's deck"
 msgstr "deck d'Erol Hammer"
 
-#: src/templates/archetypes/mistress.html:44
+#: src/templates/archetypes/mistress.html:45
 msgid "Benoît Moyen's deck"
 msgstr "deck de Benoît Moyen"
 
-#: src/templates/archetypes/mistress.html:47
+#: src/templates/archetypes/mistress.html:48
 msgid "nice combination"
 msgstr "belle combinaison"
 
@@ -1173,3 +1305,4 @@ msgstr "top cartes"
 #: src/templates/strategy/deck-building.html:254
 msgid "deck archive"
 msgstr "archive de decks"
+

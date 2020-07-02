@@ -1,5 +1,5 @@
 {% extends "archetypes/_layout.html" %}
-{% import "archetypes/_layout-erratum.html" as erratum %}
+{% import "archetypes/_layout-erratum.html" as erratum with context %}
 
 {% block archetype_name %}
 <h1><img src="{{ url_for('static', filename='img/icons/clan-lasombra.svg') }}"> Lasombra Nocturn</h1>
@@ -60,7 +60,8 @@
 </p>
 <p>
     In a sense, the
-    {{ link("/archetypes/kiasyd-stealth-bleed", _("Kiasyd Stealth & Bleed")) }} archetype can be seen as a variation of this one.
+    {{ link("/archetypes/kiasyd-stealth-bleed", _("Kiasyd Stealth & Bleed")) }} archetype can be seen as a variation of
+    this one.
 </p>
 <p>
     The <strong>Black Hand</strong> variant uses groups 3 and 4 to include
@@ -85,11 +86,11 @@
 
 {% block script %}
 <script>
-window.onload = function () {
-    document.getElementById("card-modal").addEventListener("keydown", modalKeydown)
-    document.getElementById("card-prev").addEventListener("click", prevCard)
-    document.getElementById("card-next").addEventListener("click", nextCard)
-    displayDeck({"author":null,"comments":"","crypt":{"cards":[{"comments":null,"count":2,"id":"201082","name":"Onaedo"},{"comments":null,"count":2,"id":"200085","name":"Andrew Emory"},{"comments":null,"count":2,"id":"200311","name":"Dame Hollerton"},{"comments":null,"count":2,"id":"200435","name":"Ermenegildo, The Rake"},{"comments":null,"count":2,"id":"200829","name":"Leila Monroe"},{"comments":null,"count":2,"id":"200878","name":"Lucy Markowitz"}],"count":12},"date":"2010-04-18","event":"The Hunt for Kemintiri - Miniqualifier Tour","library":{"cards":[{"cards":[{"comments":null,"count":5,"id":"101365","name":"The Path of Night"},{"comments":null,"count":3,"id":"100199","name":"Blood Doll"},{"comments":null,"count":2,"id":"100588","name":"Dreams of the Sphinx"},{"comments":null,"count":2,"id":"100629","name":"Elysian Fields"},{"comments":null,"count":2,"id":"101388","name":"Perfectionist"},{"comments":null,"count":1,"id":"100775","name":"Fortschritt Library"},{"comments":null,"count":1,"id":"101384","name":"Pentex(TM) Subversion"},{"comments":null,"count":1,"id":"102113","name":"Vessel"}],"count":17,"type":"Master"},{"cards":[{"comments":null,"count":8,"id":"100845","name":"Govern the Unaligned"}],"count":8,"type":"Action"},{"cards":[{"comments":null,"count":7,"id":"101743","name":"Shadow Play"},{"comments":null,"count":7,"id":"101775","name":"Shroud of Night"},{"comments":null,"count":4,"id":"100401","name":"Conditioning"},{"comments":null,"count":4,"id":"100765","name":"Foreshadowing Destruction"}],"count":22,"type":"Action Modifier"},{"cards":[{"comments":null,"count":7,"id":"100518","name":"Deflection"},{"comments":null,"count":6,"id":"101321","name":"On the Qui Vive"},{"comments":null,"count":2,"id":"100519","name":"Delaying Tactics"},{"comments":null,"count":1,"id":"102137","name":"Wake with Evening's Freshness"}],"count":16,"type":"Reaction"},{"cards":[{"comments":null,"count":1,"id":"102203","name":"Zaire River Ferry"}],"count":1,"type":"Equipment"},{"cards":[{"comments":null,"count":23,"id":"101293","name":"Nocturn"}],"count":23,"type":"Ally"},{"cards":[{"comments":null,"count":2,"id":"102079","name":"The Unmasking"},{"comments":null,"count":1,"id":"100074","name":"Anthelios, The Red Star"}],"count":3,"type":"Event"}],"count":90},"name":"Lasombra Nocturn","place":"Bologna, Italy","player":"Patrizio Zippone","players_count":41,"score":null,"tournament_format":null,"twda_id":"2010huntforkbi"})
-}
+    window.onload = function () {
+        document.getElementById("card-modal").addEventListener("keydown", modalKeydown)
+        document.getElementById("card-prev").addEventListener("click", prevCard)
+        document.getElementById("card-next").addEventListener("click", nextCard)
+        displayDeck({ "author": null, "comments": "", "crypt": { "cards": [{ "comments": null, "count": 2, "id": "201082", "name": "Onaedo" }, { "comments": null, "count": 2, "id": "200085", "name": "Andrew Emory" }, { "comments": null, "count": 2, "id": "200311", "name": "Dame Hollerton" }, { "comments": null, "count": 2, "id": "200435", "name": "Ermenegildo, The Rake" }, { "comments": null, "count": 2, "id": "200829", "name": "Leila Monroe" }, { "comments": null, "count": 2, "id": "200878", "name": "Lucy Markowitz" }], "count": 12 }, "date": "2010-04-18", "event": "The Hunt for Kemintiri - Miniqualifier Tour", "library": { "cards": [{ "cards": [{ "comments": null, "count": 5, "id": "101365", "name": "The Path of Night" }, { "comments": null, "count": 3, "id": "100199", "name": "Blood Doll" }, { "comments": null, "count": 2, "id": "100588", "name": "Dreams of the Sphinx" }, { "comments": null, "count": 2, "id": "100629", "name": "Elysian Fields" }, { "comments": null, "count": 2, "id": "101388", "name": "Perfectionist" }, { "comments": null, "count": 1, "id": "100775", "name": "Fortschritt Library" }, { "comments": null, "count": 1, "id": "101384", "name": "Pentex(TM) Subversion" }, { "comments": null, "count": 1, "id": "102113", "name": "Vessel" }], "count": 17, "type": "Master" }, { "cards": [{ "comments": null, "count": 8, "id": "100845", "name": "Govern the Unaligned" }], "count": 8, "type": "Action" }, { "cards": [{ "comments": null, "count": 7, "id": "101743", "name": "Shadow Play" }, { "comments": null, "count": 7, "id": "101775", "name": "Shroud of Night" }, { "comments": null, "count": 4, "id": "100401", "name": "Conditioning" }, { "comments": null, "count": 4, "id": "100765", "name": "Foreshadowing Destruction" }], "count": 22, "type": "Action Modifier" }, { "cards": [{ "comments": null, "count": 7, "id": "100518", "name": "Deflection" }, { "comments": null, "count": 6, "id": "101321", "name": "On the Qui Vive" }, { "comments": null, "count": 2, "id": "100519", "name": "Delaying Tactics" }, { "comments": null, "count": 1, "id": "102137", "name": "Wake with Evening's Freshness" }], "count": 16, "type": "Reaction" }, { "cards": [{ "comments": null, "count": 1, "id": "102203", "name": "Zaire River Ferry" }], "count": 1, "type": "Equipment" }, { "cards": [{ "comments": null, "count": 23, "id": "101293", "name": "Nocturn" }], "count": 23, "type": "Ally" }, { "cards": [{ "comments": null, "count": 2, "id": "102079", "name": "The Unmasking" }, { "comments": null, "count": 1, "id": "100074", "name": "Anthelios, The Red Star" }], "count": 3, "type": "Event" }], "count": 90 }, "name": "Lasombra Nocturn", "place": "Bologna, Italy", "player": "Patrizio Zippone", "players_count": 41, "score": null, "tournament_format": null, "twda_id": "2010huntforkbi" })
+    }
 </script>
 {% endblock %}
