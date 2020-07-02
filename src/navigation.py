@@ -138,8 +138,8 @@ STRUCTURE = Nav(
                 Nav(
                     lazy_gettext("Generic"),
                     children=[
-                        Nav(lazy_gettext("Master")),
-                        Nav(lazy_gettext("Political action")),
+                        Nav(lazy_gettext("Master cards")),
+                        Nav(lazy_gettext("Political actions")),
                         Nav(lazy_gettext("No discipline")),
                         Nav(lazy_gettext("Animalism")),
                         Nav(lazy_gettext("Auspex")),

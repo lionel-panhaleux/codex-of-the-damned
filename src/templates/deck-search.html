@@ -18,12 +18,15 @@
 {% endblock %}
 
 {% block content %}
-<h1>Deck Search</h1>
+<h1>{{ _('Deck Search') }}</h1>
 {{ sponsor }}
 <p>
-    This is an interactive interface to the
-    <a target="_blank" href="http://www.vekn.fr/decks/twd.htm">Tournament Winning Deck Archive (TWDA)</a>
-    provided by VEKN. Type a card name to search all winning deck with it since 2008.
+    {% trans trimmed 
+		twda=external("http://www.vekn.fr/decks/twd.htm", "Tournament Winning Deck Archive (TWDA)")
+	%}
+    This is an interactive interface to the {{ twda }} provided by VEKN.
+    Type a card name to search all winning deck with it since 2008.
+    {% endtrans %}
 </p>
 <form id="card-form" autocomplete="off">
     <div class="autocomplete">
@@ -51,7 +54,7 @@
     <ul id="library-list">
     </ul>
 </div>
-<h2 id="comments-title" style="display: none">Comments</h2>
+<h2 id="comments-title" style="display: none">{{ _('Comments') }}</h2>
 <div id="comments" class="comments">
 </div>
 {% endblock %}

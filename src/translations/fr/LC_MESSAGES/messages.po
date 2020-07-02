@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: codex 0.X\n"
 "Report-Msgid-Bugs-To: lionel.panhaleux+codex@gmail.com\n"
-"POT-Creation-Date: 2020-07-02 19:53+0200\n"
+"POT-Creation-Date: 2020-07-02 21:04+0200\n"
 "PO-Revision-Date: 2020-07-02 08:52+0200\n"
 "Last-Translator: Lionel Panhaleux <lionel.panhaleux+codex@gmail.com>\n"
 "Language: fr\n"
@@ -19,9 +19,9 @@ msgstr ""
 #. TRANSLATORS: please abide by BCP translation choices for game terms when possible.
 #: src/navigation.py:52
 msgid "Home"
-msgstr "Acceuil"
+msgstr "Accueil"
 
-#: src/navigation.py:56
+#: src/navigation.py:56 src/templates/strategy/index.html:4
 msgid "Strategy"
 msgstr "Stratégie"
 
@@ -41,7 +41,7 @@ msgstr "Régénération"
 msgid "Deck building"
 msgstr "Construction de deck"
 
-#: src/navigation.py:63 src/navigation.py:77
+#: src/navigation.py:63 src/navigation.py:77 src/templates/archetypes/index.html:10
 msgid "Archetypes"
 msgstr "Archétypes"
 
@@ -312,182 +312,180 @@ msgstr ""
 msgid "Best Cards"
 msgstr "Top Cartes"
 
-#: src/navigation.py:139 src/templates/best-cards/index.html:16
+#: src/navigation.py:139 src/templates/best-cards/index.html:20
 msgid "Generic"
 msgstr "Générique"
 
-#: src/navigation.py:141 src/templates/best-cards/index.html:18
-msgid "Master"
-msgstr "Maître"
+#: src/navigation.py:141
+msgid "Master cards"
+msgstr "Cartes de Maître"
 
-#: src/navigation.py:142 src/templates/best-cards/index.html:19
-msgid "Political action"
-msgstr "Action politique"
+#: src/navigation.py:142
+msgid "Political actions"
+msgstr "Actions politiques"
 
-#: src/navigation.py:143 src/templates/best-cards/index.html:20
+#: src/navigation.py:143
 msgid "No discipline"
 msgstr "Sans discipline"
 
-#: src/navigation.py:144 src/templates/best-cards/index.html:21
+#: src/navigation.py:144
 msgid "Animalism"
 msgstr "Animalisme"
 
-#: src/navigation.py:145 src/templates/best-cards/index.html:22
+#: src/navigation.py:145
 msgid "Auspex"
 msgstr "Auspex"
 
-#: src/navigation.py:146 src/templates/best-cards/index.html:23
+#: src/navigation.py:146
 msgid "Celerity"
 msgstr "Célérité"
 
-#: src/navigation.py:147 src/templates/best-cards/index.html:24
+#: src/navigation.py:147
 msgid "Dominate"
 msgstr "Domination"
 
-#: src/navigation.py:148 src/templates/best-cards/index.html:25
+#: src/navigation.py:148
 msgid "Fortitude"
 msgstr "Force d’âme"
 
-#: src/navigation.py:149 src/templates/best-cards/index.html:26
+#: src/navigation.py:149
 msgid "Necromancy"
 msgstr "Nécromancie"
 
-#: src/navigation.py:150 src/templates/best-cards/index.html:27
+#: src/navigation.py:150
 msgid "Obfuscate"
 msgstr "Occultation"
 
-#: src/navigation.py:151 src/templates/best-cards/index.html:28
+#: src/navigation.py:151
 msgid "Potence"
 msgstr "Puissance"
 
-#: src/navigation.py:152 src/templates/best-cards/index.html:29
+#: src/navigation.py:152
 msgid "Presence"
 msgstr "Présence"
 
-#: src/navigation.py:156 src/templates/best-cards/index.html:31
+#: src/navigation.py:156 src/templates/best-cards/index.html:35
 msgid "Sects"
 msgstr "Sectes"
 
-#: src/navigation.py:158 src/templates/best-cards/index.html:33 src/templates/strategy/fundamentals.html:279
-#: src/templates/strategy/fundamentals.html:280 src/templates/strategy/fundamentals.html:327
-#: src/templates/strategy/fundamentals.html:396
+#: src/navigation.py:158 src/templates/strategy/fundamentals.html:279 src/templates/strategy/fundamentals.html:280
+#: src/templates/strategy/fundamentals.html:327 src/templates/strategy/fundamentals.html:396
 msgid "Anarch"
 msgstr ""
 
-#: src/navigation.py:159 src/templates/best-cards/index.html:34
+#: src/navigation.py:159
 msgid "Camarilla"
 msgstr ""
 
-#: src/navigation.py:160 src/templates/best-cards/index.html:35 src/templates/strategy/fundamentals.html:86
-#: src/templates/strategy/fundamentals.html:469
+#: src/navigation.py:160 src/templates/strategy/fundamentals.html:86 src/templates/strategy/fundamentals.html:469
 msgid "Laibon"
 msgstr ""
 
-#: src/navigation.py:161 src/templates/best-cards/index.html:36 src/templates/strategy/fundamentals.html:437
+#: src/navigation.py:161 src/templates/strategy/fundamentals.html:437
 msgid "Sabbat"
 msgstr ""
 
-#: src/navigation.py:165 src/templates/best-cards/index.html:38
+#: src/navigation.py:165 src/templates/best-cards/index.html:42
 msgid "Clans"
 msgstr "Clans"
 
-#: src/navigation.py:167 src/templates/best-cards/index.html:52
+#: src/navigation.py:167
 msgid "Ahrimanes"
 msgstr ""
 
-#: src/navigation.py:168 src/templates/best-cards/index.html:56
+#: src/navigation.py:168
 msgid "Akunanse"
 msgstr ""
 
-#: src/navigation.py:169 src/templates/best-cards/index.html:60
+#: src/navigation.py:169
 msgid "Assamite"
 msgstr ""
 
-#: src/navigation.py:170 src/templates/best-cards/index.html:64
+#: src/navigation.py:170
 msgid "Baali"
 msgstr ""
 
-#: src/navigation.py:171 src/templates/best-cards/index.html:68
+#: src/navigation.py:171
 msgid "Brujah"
 msgstr ""
 
-#: src/navigation.py:172 src/templates/best-cards/index.html:72
+#: src/navigation.py:172
 msgid "Caitiff"
 msgstr ""
 
-#: src/navigation.py:173 src/templates/best-cards/index.html:76
+#: src/navigation.py:173
 msgid "Daughters of Cacophony"
 msgstr "Filles de la Cacophonie"
 
-#: src/navigation.py:174 src/templates/best-cards/index.html:80
+#: src/navigation.py:174
 msgid "Followers of Set"
 msgstr "Disciples de Seth"
 
-#: src/navigation.py:175 src/templates/best-cards/index.html:84
+#: src/navigation.py:175
 msgid "Gangrel"
 msgstr ""
 
-#: src/navigation.py:176 src/templates/best-cards/index.html:88
+#: src/navigation.py:176
 msgid "Giovanni"
 msgstr ""
 
-#: src/navigation.py:177 src/templates/best-cards/index.html:92
+#: src/navigation.py:177
 msgid "Guruhi"
 msgstr ""
 
-#: src/navigation.py:178 src/templates/best-cards/index.html:96
+#: src/navigation.py:178
 msgid "Harbingers of Skulls"
 msgstr "Émissaires des Crânes"
 
-#: src/navigation.py:179 src/templates/best-cards/index.html:100 src/templates/strategy/fundamentals.html:281
+#: src/navigation.py:179 src/templates/strategy/fundamentals.html:281
 msgid "Imbued"
 msgstr "Illuminés"
 
-#: src/navigation.py:180 src/templates/best-cards/index.html:108
+#: src/navigation.py:180
 msgid "Ishtarri"
 msgstr ""
 
-#: src/navigation.py:181 src/templates/best-cards/index.html:112
+#: src/navigation.py:181
 msgid "Kiasyd"
 msgstr ""
 
-#: src/navigation.py:182 src/templates/best-cards/index.html:116
+#: src/navigation.py:182
 msgid "Lasombra"
 msgstr ""
 
-#: src/navigation.py:183 src/templates/best-cards/index.html:120
+#: src/navigation.py:183
 msgid "Malkavian"
 msgstr "Malkavien"
 
-#: src/navigation.py:184 src/templates/best-cards/index.html:124
+#: src/navigation.py:184
 msgid "Nosferatu"
 msgstr ""
 
-#: src/navigation.py:185 src/templates/best-cards/index.html:128
+#: src/navigation.py:185
 msgid "Ravnos"
 msgstr ""
 
-#: src/navigation.py:186 src/templates/best-cards/index.html:132
+#: src/navigation.py:186
 msgid "Salubri"
 msgstr ""
 
-#: src/navigation.py:187 src/templates/best-cards/index.html:136
+#: src/navigation.py:187
 msgid "Toreador"
 msgstr "Toréador"
 
-#: src/navigation.py:188 src/templates/best-cards/index.html:140
+#: src/navigation.py:188
 msgid "Tremere"
 msgstr ""
 
-#: src/navigation.py:189 src/templates/best-cards/index.html:144
+#: src/navigation.py:189
 msgid "True Brujah"
 msgstr "Brujah Véritable"
 
-#: src/navigation.py:190 src/templates/best-cards/index.html:148
+#: src/navigation.py:190
 msgid "Tzimisce"
 msgstr ""
 
-#: src/navigation.py:191 src/templates/best-cards/index.html:152
+#: src/navigation.py:191
 msgid "Ventrue"
 msgstr ""
 
@@ -505,11 +503,97 @@ msgstr "La page que vous cherchez n'existe pas."
 
 #: src/templates/404.html:5
 msgid "Home page"
-msgstr "Page d'acceuil"
+msgstr "Page d'accueil"
 
 #: src/templates/_layout_sponsor.html:3
 msgid "Sponsor the Codex"
 msgstr "Sponsorisez le Codex"
+
+#: src/templates/card-search.html:13
+msgid "Card Search"
+msgstr "Recherche de Carte"
+
+#: src/templates/card-search.html:16
+#, python-format
+msgid ""
+"Official cards text provided by %(vekn)s. All rulings give a link to the actual official ruling made by successive "
+"Rules Directors."
+msgstr ""
+"Les textes officiels des cartes sont fournis par %(vekn)s. Tous les arbitrages présentent un lien vers l'arbitrage "
+"officiel correspondant effectué par les Rules Directors successifs."
+
+#: src/templates/card-search.html:45
+msgid "Submit a new ruling or a ruling correction"
+msgstr "Soumettre un nouvel arbitrage ou une correction"
+
+#: src/templates/card-search.html:48
+msgid "Help improve the Codex: provide an explanation and a link to a message from a Rules Director."
+msgstr "Participez à l'amélioration du Codex : donnez une explication et un lien vers le post d'un Rules Director."
+
+#: src/templates/card-search.html:59
+msgid ""
+"<strong>Proposed rulings will not be included automatically.</strong> Once submited, your ruling will be reviewed by "
+"the Codex and KRCG team, and included in the next release."
+msgstr ""
+"<strong>Les arbitrages proposés ne seront pas inclus automatiquement.</strong> Une fois soumis, votre arbitrage sera "
+"relu par l'équipe du Codex et de KRCG, et inclus dans la prochaine version."
+
+#: src/templates/card-search.html:66
+msgid "The Rules Directors have been:"
+msgstr "Les Rules Directors sont:"
+
+#: src/templates/card-search.html:68
+msgid "From 2016-12-04 onward,"
+msgstr "À partir de 2016-12-04,"
+
+#: src/templates/card-search.html:74 src/templates/card-search.html:97
+msgid "From 2011-07-06 onward,"
+msgstr "À partir de 2011-07-06,"
+
+#: src/templates/card-search.html:80
+msgid "From 1998-06-22 onward,"
+msgstr "À partir de 1998-06-22,"
+
+#: src/templates/card-search.html:86 src/templates/card-search.html:107
+msgid "From 1994-12-15 onward,"
+msgstr "À partir de 21994-12-15,"
+
+#: src/templates/card-search.html:95
+msgid "The official boards for rulings have been:"
+msgstr "Les forums officiels pour les arbitrages sont:"
+
+#: src/templates/card-search.html:99
+msgid "The VEKN Forum"
+msgstr "Le Forum VEKN"
+
+#: src/templates/card-search.html:102
+msgid "From 2010-12-30 onward,"
+msgstr "À partir de 2010-12-30,"
+
+#: src/templates/card-search.html:104
+msgid "The Boardgame Geek Forum"
+msgstr "Le forum de Boardgame Geek"
+
+#: src/templates/card-search.html:109
+msgid "The rec.games.trading-cards.jyhad Google Group"
+msgstr "Le groupe Google rec.games.trading-cards.jyhad"
+
+#: src/templates/deck-search.html:21
+msgid "Deck Search"
+msgstr "Recherche de Deck"
+
+#: src/templates/deck-search.html:24
+#, python-format
+msgid ""
+"This is an interactive interface to the %(twda)s provided by VEKN. Type a card name to search all winning deck with "
+"it since 2008."
+msgstr ""
+"Ceci est une interface interactive pour la %(twda)s fournie par VEKN. Entrez un nom de carte pour rechercher tous les"
+" decks gagnants qui la contiennent depuis 2008."
+
+#: src/templates/deck-search.html:57
+msgid "Comments"
+msgstr "Commentaires"
 
 #. please abide by BCP translation choices for game terms when possible.
 #: src/templates/index.html:8
@@ -899,6 +983,25 @@ msgstr "John Newquist pour le qualifier du NAC 2008"
 msgid "Sergio Gracia's deck"
 msgstr "deck de Sergio Gracia"
 
+#: src/templates/archetypes/index.html:11
+#, python-format
+msgid ""
+"<p> Here is a list of <strong>Vampire: the Eternal Struggle</strong> deck archetypes. Every archetype is presented "
+"with %(twda)s deck list examples, main variations, and a play guide. </p> <p> Only archetypes having proven "
+"themselves against at least 25 players since 2008 are taken into account, with the exception of some original designs"
+" for strategic reference. Example decklists are the most recent ones, or the ones with a Continental Championship "
+"win. </p> <p> If you're searching for additional ideas or references, the %(bibliodeque)s is a French project based "
+"on the TWDA that references over 100 archetypes with example decklists, to help people building decks for their "
+"casual play or tournaments. </p>"
+msgstr ""
+"<p> Voici une liste d'archétypes de decks de <strong>Vampire: the Eternal Struggle</strong>. Chaque archétype est "
+"présenté avec un exemple de decklist de la %(twda)s, les principales variantes et un guide de jeu. </p> <p> Seuls les"
+" archétypes ayant fait leurs preuves contre au moins 25 joueurs depuis 2008 sont pris en compte, à l'exception de "
+"quelques designs originaux pour référence stratégique. Les decklist d'exemple sont les plus récentes, ou celles ayant"
+" gagné un Championnat Continental. </p> <p> Si vous cherchez plus d'idées ou de références, la %(bibliodeque)s est un"
+" projet français basé sur la TWDA qui référence plus de 100 archétypes avec des decklist d'exemple, afin d'aider les "
+"joueurs à construire des decks pour leurs parties amicales ou leurs tournois. </p>"
+
 #: src/templates/archetypes/ishtarri-politics.html:68
 msgid "Adam Hulse's deck"
 msgstr "deck d'Adam Hulse"
@@ -1113,6 +1216,29 @@ msgstr "environ %(range)s exemplaires"
 msgid "Best Cards"
 msgstr "Top Cartes"
 
+#: src/templates/best-cards/index.html:6
+#, python-format
+msgid ""
+"<p> This category presents the best cards of the game. The list is based on a statistical analysis of the %(twda)s "
+"provided by VEKN, considering the 2000+ decks from 2008 onward. The best cards are those that have been included in "
+"the most winning decks since then. </p> <p> All clan %(hunting_grounds)s and, on occasions, some low capacity "
+"vampires, have been omitted for convenience. </p>"
+msgstr ""
+"<p> Cette catégorie présente les meilleures cartes du jeu. La liste est basée sur une analyse statistique de la "
+"%(twda)s fournie par VEKN, en prenant en compte quelques 2000 decks depuis 2008. Les meilleures cartes sont celles "
+"ayant été inclues dans le plus grand nombre de decks gagnants depuis. </p> <p> Tous les %(hunting_grounds)s et, "
+"parfois, quelques vampires de basse capacité, ont été omis par commodité. </p>"
+
+#: src/templates/best-cards/index.html:43
+msgid ""
+"<p> Blood Brothers, Panders, Osebo, Nagaraja and Samedi are too rarely played to be included in this analysis: they "
+"lack the numbers for a statistical review to be relevant. </p> <p> Gargoyles are included in the Tremere clan "
+"analysis, all Imbued are included in the same analysis regardless of their creed. </p>"
+msgstr ""
+"<p> Les Frères de Sang, Pander, Osebo, Nagaraja et Samedi ont été trop peu joués pour être inclus dans cette analyse "
+": ils n'ont pas les nombres suffisants pour qu'une analyse statistique soit pertinente. </p> <p> Les Gargouille sont "
+"inclues dans le clan Tremere, tous les Illuminés sont inclus dans la même analyse quel que soit leur credo. </p>"
+
 #: src/templates/best-cards/clans/ahrimanes.html:7
 #, python-format
 msgid ""
@@ -1122,9 +1248,9 @@ msgid ""
 "%(effie_lowery)s. </p> <p> This clan has only one main archetype: %(cats)s. Some Ahrimaines are good picks for mono "
 "%(ani)s archetypes as they offer %(ANI)s vampires for good value like %(effie_lowery)s and %(sahana)s. </p>"
 msgstr ""
-"<p> Les Ahrimanes et leur discipline unique %(spi)s donnent une meilleure défense que les constructions habituelles "
-"avec %(ani)s. De plus, leur accès à %(pre)s leur permet des constructions plus écléctiques que les mono %(ani)s, pour"
-" un peu plus de  morsure. Elles offrent principalement deux cryptes, une au groupe 2 avec %(howler)s et "
+"<p> Les Ahrimanes et leur discipline exclusive %(spi)s donnent une meilleure défense que les constructions "
+"habituelles avec %(ani)s. De plus, leur accès à %(pre)s leur permet des constructions plus écléctiques que les mono "
+"%(ani)s, pour un peu plus de  morsure. Elles offrent principalement deux cryptes, une au groupe 2 avec %(howler)s et "
 "%(the_siamese)s et une au groupe 4 avec %(muricia)s et %(effie_lowery)s. </p> <p> Ce clan n'a qu'un archétype "
 "principal : %(cats)s. Quelques Ahrimaines sont de bons choix pour les archétypes mono %(ani)s puisqu'elles offrent "
 "des vampires avec %(ANI)s pour un coût raisonnable, comme %(effie_lowery)s et %(sahana)s. </p>"
@@ -1697,3 +1823,66 @@ msgstr ""
 " même s'il est moins efficace contre les réveils. De nombreuses disciplines fournissent des dénis de blocs de moindre"
 " envergure qui ne fonctionnent que contre les alliés et les vampires plus jeunes, mais ils sont moins utilisés."
 
+#: src/templates/strategy/index.html:6
+msgid "This section explores <strong>Vampire: the Eternal Struggle</strong> strategy in some details."
+msgstr "Cette section explore la stratégie de <strong>Vampire: the Eternal Struggle</strong> en détail."
+
+#: src/templates/strategy/index.html:9
+msgid "gives general tips and advices."
+msgstr "donne des astuces et des conseils généraux"
+
+#: src/templates/strategy/index.html:10
+msgid "explains combat in detail."
+msgstr "explique le combat en détail"
+
+#: src/templates/strategy/index.html:11
+msgid "details the different strategies to gain pool during a game."
+msgstr "détaille les différentes stratégies permettant de regagner de la réserve d'influence pendant une partie."
+
+#: src/templates/strategy/index.html:12
+msgid "gives some tools toward deck building."
+msgstr "donne des techniques pour construire son propre deck."
+
+#: src/templates/strategy/index.html:13
+msgid "is an introduction to the different deck archetypes."
+msgstr "est une introduction aux différents archétypes de decks."
+
+#: src/templates/strategy/index.html:14
+msgid "presents negociation strategies and tips."
+msgstr "présente les stratégies et astuces de négociation."
+
+#: src/templates/strategy/index.html:16
+msgid "Black Chantry Sabbat pre-constructed decks guides"
+msgstr "Guides de jeu des decks préconstruits Sabbat de Black Chantry"
+
+#: src/templates/strategy/index.html:23
+msgid "Black Chantry \"First Blood\" pre-constructed decks guides"
+msgstr "Guides de jeu des decks préconstruits \"Premier Sang\" de Black Chantry"
+
+#: src/templates/strategy/index.html:25
+msgid "Black Chantry released official guides for the First Blood decks series:"
+msgstr "Black Chantry a publié des guides officiels pour la série de decks Premier Sang :"
+
+#: src/templates/strategy/index.html:29
+msgid "First Blood: Ventrue"
+msgstr "Premier Sang : Ventrue"
+
+#: src/templates/strategy/index.html:32
+msgid "First Blood: Malkavian"
+msgstr "Premier Sang : Malkavien"
+
+#: src/templates/strategy/index.html:35
+msgid "First Blood: Nosferatu"
+msgstr "Premier Sang : Nosferatu"
+
+#: src/templates/strategy/index.html:38
+msgid "First Blood: Toreador"
+msgstr "Premier Sang : Toréador"
+
+#: src/templates/strategy/index.html:41
+msgid "First Blood: Tremere"
+msgstr "Premier Sang : Tremere"
+
+#: src/templates/strategy/index.html:46
+msgid "All rights reserved."
+msgstr "Tous droits réservés."

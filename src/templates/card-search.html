@@ -10,13 +10,15 @@
 {% endblock %}
 
 {% block content %}
-<h1>Card Search</h1>
+<h1>{{ _('Card Search') }}</h1>
 {{ sponsor }}
 <p>
-	Official cards text provided by
-	<a target="_blank" href="http://www.vekn.net/card-lists">VEKN</a>. All
-	rulings give a link to the actual official ruling made by successive
-	Rules Director and Ruling Teams.
+	{% trans trimmed 
+		vekn=external("http://www.vekn.net/card-lists", "VEKN")
+	%}
+	Official cards text provided by {{ vekn }}. All rulings give a link to the actual
+	official ruling made by successive Rules Directors.
+	{% endtrans %}
 </p>
 <form id="card-form" autocomplete="off">
 	<div class="autocomplete">
@@ -40,11 +42,13 @@
 </div>
 
 <div class="tip" id="ruling-submit-tooltip">
-	<h3>Submit a new ruling or a ruling correction</h3>
+	<h3> {{ _('Submit a new ruling or a ruling correction') }}</h3>
 	<form id="ruling-form" onsubmit="rulingFormSubmit(); return false">
 		<p>
+			{% trans trimmed %}
 			Help improve the Codex: provide an explanation and a link to a message
-			from a Rulings Director.
+			from a Rules Director.
+			{% endtrans %}
 		</p>
 		<input type="text" id="rF_text" placeholder="Explanation" />
 		<input type="text" id="rF_link" placeholder="http://www.vekn.net/forum/rules-questions/..." />
@@ -52,32 +56,34 @@
 		<output name="rF_result" id="rf-result" for="rF_text rF_link rF_submit"></output>
 	</form>
 	<p>
+		{% trans trimmed %}
 		<strong>Proposed rulings will not be included automatically.</strong>
 		Once submited, your ruling will be reviewed by the Codex and KRCG team,
 		and included in the next release.
+		{% endtrans %}
 	</p>
 	<p>
-		The Rulings Directors have been:
+		{{ _('The Rules Directors have been:') }}
 	<ul>
-		<li>From 2016-12-04 onward,
+		<li>{{ _('From 2016-12-04 onward,') }}
 			<a target="_blank"
 				href="http://www.vekn.net/forum/news-and-announcements/75402-new-inner-circle-vekn-board-of-directors#79470">
 				Vincent Ripoll (ANK)
 			</a>
 		</li>
-		<li>From 2011-07-06 onward,
+		<li>{{ _('From 2011-07-06 onward,') }}
 			<a target="_blank"
 				href="https://groups.google.com/d/msg/rec.games.trading-cards.jyhad/VzRGZO_Iuto/BjJGRVvJ5Z8J">
 				Pascal Bertrand (PIB)
 			</a>
 		</li>
-		<li>From 1998-06-22 onward,
+		<li>{{ _('From 1998-06-22 onward,') }}
 			<a target="_blank"
 				href="https://groups.google.com/d/msg/rec.games.trading-cards.jyhad/RIX1tLgOFjg/xKikfSarfd8J">
 				L. Scott Johnson (LSJ)
 			</a>
 		</li>
-		<li>From 1994-12-15 onward,
+		<li>{{ _('From 1994-12-15 onward,') }}
 			<a target="_blank"
 				href="https://groups.google.com/d/msg/rec.games.trading-cards.jyhad/Dm_gIP3YvUs/qTyKyq2NWv4J">
 				Thomas R Wylie (TOM)
@@ -86,21 +92,21 @@
 	</ul>
 	</p>
 	<p>
-		The official boards for rulings have been:
+		{{ _('The official boards for rulings have been:') }}
 	<ul>
-		<li>From 2011-07-06 onward,
+		<li>{{ _('From 2011-07-06 onward,') }}
 			<a target="_blank" href="http://www.vekn.net/forum/rules-questions">
-				The VEKN Forum
+				{{ _('The VEKN Forum') }}
 			</a>
 		</li>
-		<li>From 2010-12-30 onward,
+		<li>{{ _('From 2010-12-30 onward,') }}
 			<a target="_blank" href="https://www.boardgamegeek.com/forum/31522/vampire-eternal-struggle/rules">
-				The Boardgame Geek Forum
+				{{ _('The Boardgame Geek Forum') }}
 			</a>
 		</li>
-		<li>From 1994-12-15 onward,
+		<li>{{ _('From 1994-12-15 onward,') }}
 			<a target="_blank" href="https://groups.google.com/forum/#!forum/rec.games.trading-cards.jyhad">
-				The rec.games.trading-cards.jyhad Google Group
+				{{ _('The rec.games.trading-cards.jyhad Google Group') }}
 			</a>
 		</li>
 	</ul>

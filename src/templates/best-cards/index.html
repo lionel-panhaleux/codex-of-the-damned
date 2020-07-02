@@ -3,39 +3,44 @@
 {% block article %}
 <article>
     <h1>{{ _('Best Cards') }}</h1>
+    {% trans trimmed 
+        twda=external("http://www.vekn.fr/decks/twd.htm", "Tournament Winning Deck Archvie (TWDA)"),
+        hunting_grounds=card("Academic Hunting Ground", "Hunting Grounds")
+	%}
     <p>
         This category presents the best cards of the game. The list is based on a statistical analysis of the
-        <a target="_blank" href="http://www.vekn.fr/decks/twd.htm">Tournament Winning Deck Archvie (TWDA)</a>
-        provided by VEKN, considering the 2000+ decks from 2008 onward.
+        {{ twda }} provided by VEKN, considering the 2000+ decks from 2008 onward.
         The best cards are those that have been included in the most winning decks since then.
     </p>
     <p>
-        All clan <span class="card" onclick="dC('academichuntingground')">Hunting Grounds</span> and,
-        on occasion, some low capacity vampires, have been omitted for convenience.
+        All clan {{ hunting_grounds }} and, on occasions, some low capacity vampires,
+        have been omitted for convenience.
     </p>
+    {% endtrans %}
     <h2>{{ _('Generic') }}</h2>
     <ul>
-        <li>{{ link("/best-cards/generic/master", _("Master")) }}</li>
-        <li>{{ link("/best-cards/generic/political-action", _("Political action")) }}</li>
-        <li>{{ link("/best-cards/generic/no-discipline", _("No discipline")) }}</li>
-        <li><i>i</i> {{ link("/best-cards/generic/animalism", _("Animalism")) }}</li>
-        <li><i>a</i> {{ link("/best-cards/generic/auspex", _("Auspex")) }}</li>
-        <li><i>c</i> {{ link("/best-cards/generic/celerity", _("Celerity")) }}</li>
-        <li><i>d</i> {{ link("/best-cards/generic/dominate", _("Dominate")) }}</li>
-        <li><i>f</i> {{ link("/best-cards/generic/fortitude", _("Fortitude")) }}</li>
-        <li><i>n</i> {{ link("/best-cards/generic/necromancy", _("Necromancy")) }}</li>
-        <li><i>o</i> {{ link("/best-cards/generic/obfuscate", _("Obfuscate")) }}</li>
-        <li><i>p</i> {{ link("/best-cards/generic/potence", _("Potence")) }}</li>
-        <li><i>r</i> {{ link("/best-cards/generic/presence", _("Presence")) }}</li>
+        <li>{{ link("/best-cards/generic/master") }}</li>
+        <li>{{ link("/best-cards/generic/political-action") }}</li>
+        <li>{{ link("/best-cards/generic/no-discipline") }}</li>
+        <li><i>i</i> {{ link("/best-cards/generic/animalism") }}</li>
+        <li><i>a</i> {{ link("/best-cards/generic/auspex") }}</li>
+        <li><i>c</i> {{ link("/best-cards/generic/celerity") }}</li>
+        <li><i>d</i> {{ link("/best-cards/generic/dominate") }}</li>
+        <li><i>f</i> {{ link("/best-cards/generic/fortitude") }}</li>
+        <li><i>n</i> {{ link("/best-cards/generic/necromancy") }}</li>
+        <li><i>o</i> {{ link("/best-cards/generic/obfuscate") }}</li>
+        <li><i>p</i> {{ link("/best-cards/generic/potence") }}</li>
+        <li><i>r</i> {{ link("/best-cards/generic/presence") }}</li>
     </ul>
     <h2>{{ _('Sects') }}</h2>
     <ul>
-        <li>{{ link("/best-cards/sects/anarch", _("Anarch")) }}</li>
-        <li>{{ link("/best-cards/sects/camarilla", _("Camarilla")) }}</li>
-        <li>{{ link("/best-cards/sects/laibon", _("Laibon")) }}</li>
-        <li>{{ link("/best-cards/sects/sabbat", _("Sabbat")) }}</li>
+        <li>{{ link("/best-cards/sects/anarch") }}</li>
+        <li>{{ link("/best-cards/sects/camarilla") }}</li>
+        <li>{{ link("/best-cards/sects/laibon") }}</li>
+        <li>{{ link("/best-cards/sects/sabbat") }}</li>
     </ul>
     <h2 id="clans">{{ _('Clans') }}</h2>
+    {% trans trimmed %}
     <p>
         Blood Brothers, Panders, Osebo, Nagaraja and Samedi are too rarely played
         to be included in this analysis:
@@ -45,59 +50,60 @@
         Gargoyles are included in the Tremere clan analysis,
         all Imbued are included in the same analysis regardless of their creed.
     </p>
+    {% endtrans %}
     <table class="column">
         <tbody>
             <tr>
                 <td class="td-icon"><img src="{{ url_for('static', filename='img/icons/clan-ahrimanes.svg') }}">
-                <td>{{ link("/best-cards/clans/ahrimanes", _("Ahrimanes")) }}</td>
+                <td>{{ link("/best-cards/clans/ahrimanes") }}</td>
             </tr>
             <tr>
                 <td class="td-icon"><img src="{{ url_for('static', filename='img/icons/clan-akunanse.svg') }}">
-                <td>{{ link("/best-cards/clans/akunanse", _("Akunanse")) }}</td>
+                <td>{{ link("/best-cards/clans/akunanse") }}</td>
             </tr>
             <tr>
                 <td class="td-icon"><img src="{{ url_for('static', filename='img/icons/clan-assamite.svg') }}">
-                <td>{{ link("/best-cards/clans/assamite", _("Assamite")) }}</td>
+                <td>{{ link("/best-cards/clans/assamite") }}</td>
             </tr>
             <tr>
                 <td class="td-icon"><img src="{{ url_for('static', filename='img/icons/clan-baali.svg') }}">
-                <td>{{ link("/best-cards/clans/baali", _("Baali")) }}</td>
+                <td>{{ link("/best-cards/clans/baali") }}</td>
             </tr>
             <tr>
                 <td class="td-icon"><img src="{{ url_for('static', filename='img/icons/clan-brujah.svg') }}">
-                <td>{{ link("/best-cards/clans/brujah", _("Brujah")) }}</td>
+                <td>{{ link("/best-cards/clans/brujah") }}</td>
             </tr>
             <tr>
                 <td class="td-icon"><img src="{{ url_for('static', filename='img/icons/clan-caitiff.svg') }}">
-                <td>{{ link("/best-cards/clans/caitiff", _("Caitiff")) }}</td>
+                <td>{{ link("/best-cards/clans/caitiff") }}</td>
             </tr>
             <tr>
                 <td class="td-icon"><img src="{{ url_for('static', filename='img/icons/clan-daughters.svg') }}">
-                <td>{{ link("/best-cards/clans/daughters-of-cacophony", _("Daughters of Cacophony")) }}</td>
+                <td>{{ link("/best-cards/clans/daughters-of-cacophony") }}</td>
             </tr>
             <tr>
                 <td class="td-icon"><img src="{{ url_for('static', filename='img/icons/clan-followers-of-set.svg') }}">
-                <td>{{ link("/best-cards/clans/followers-of-set", _("Followers of Set")) }}</td>
+                <td>{{ link("/best-cards/clans/followers-of-set") }}</td>
             </tr>
             <tr>
                 <td class="td-icon"><img src="{{ url_for('static', filename='img/icons/clan-gangrel.svg') }}">
-                <td>{{ link("/best-cards/clans/gangrel", _("Gangrel")) }}</td>
+                <td>{{ link("/best-cards/clans/gangrel") }}</td>
             </tr>
             <tr>
                 <td class="td-icon"><img src="{{ url_for('static', filename='img/icons/clan-giovanni.svg') }}">
-                <td>{{ link("/best-cards/clans/giovanni", _("Giovanni")) }}</td>
+                <td>{{ link("/best-cards/clans/giovanni") }}</td>
             </tr>
             <tr>
                 <td class="td-icon"><img src="{{ url_for('static', filename='img/icons/clan-guruhi.svg') }}">
-                <td>{{ link("/best-cards/clans/guruhi", _("Guruhi")) }}</td>
+                <td>{{ link("/best-cards/clans/guruhi") }}</td>
             </tr>
             <tr>
                 <td class="td-icon"><img src="{{ url_for('static', filename='img/icons/clan-harbingers.svg') }}">
-                <td>{{ link("/best-cards/clans/harbingers-of-skulls", _("Harbingers of Skulls")) }}</td>
+                <td>{{ link("/best-cards/clans/harbingers-of-skulls") }}</td>
             </tr>
             <tr>
                 <td class="td-icon"><img src="{{ url_for('static', filename='img/icons/creed-visionary.svg') }}">
-                <td>{{ link("/best-cards/clans/imbued", _("Imbued")) }}</td>
+                <td>{{ link("/best-cards/clans/imbued") }}</td>
             </tr>
         </tbody>
     </table>
@@ -105,51 +111,51 @@
         <tbody>
             <tr>
                 <td class="td-icon"><img src="{{ url_for('static', filename='img/icons/clan-ishtarri.svg') }}">
-                <td>{{ link("/best-cards/clans/ishtarri", _("Ishtarri")) }}</td>
+                <td>{{ link("/best-cards/clans/ishtarri") }}</td>
             </tr>
             <tr>
                 <td class="td-icon"><img src="{{ url_for('static', filename='img/icons/clan-kiasyd.svg') }}">
-                <td>{{ link("/best-cards/clans/kiasyd", _("Kiasyd")) }}</td>
+                <td>{{ link("/best-cards/clans/kiasyd") }}</td>
             </tr>
             <tr>
                 <td class="td-icon"><img src="{{ url_for('static', filename='img/icons/clan-lasombra.svg') }}">
-                <td>{{ link("/best-cards/clans/lasombra", _("Lasombra")) }}</td>
+                <td>{{ link("/best-cards/clans/lasombra") }}</td>
             </tr>
             <tr>
                 <td class="td-icon"><img src="{{ url_for('static', filename='img/icons/clan-malkavian.svg') }}">
-                <td>{{ link("/best-cards/clans/malkavian", _("Malkavian")) }}</td>
+                <td>{{ link("/best-cards/clans/malkavian") }}</td>
             </tr>
             <tr>
                 <td class="td-icon"><img src="{{ url_for('static', filename='img/icons/clan-nosferatu.svg') }}">
-                <td>{{ link("/best-cards/clans/nosferatu", _("Nosferatu")) }}</td>
+                <td>{{ link("/best-cards/clans/nosferatu") }}</td>
             </tr>
             <tr>
                 <td class="td-icon"><img src="{{ url_for('static', filename='img/icons/clan-ravnos.svg') }}">
-                <td>{{ link("/best-cards/clans/ravnos", _("Ravnos")) }}</td>
+                <td>{{ link("/best-cards/clans/ravnos") }}</td>
             </tr>
             <tr>
                 <td class="td-icon"><img src="{{ url_for('static', filename='img/icons/clan-salubri.svg') }}">
-                <td>{{ link("/best-cards/clans/salubri", _("Salubri")) }}</td>
+                <td>{{ link("/best-cards/clans/salubri") }}</td>
             </tr>
             <tr>
                 <td class="td-icon"><img src="{{ url_for('static', filename='img/icons/clan-toreador.svg') }}">
-                <td>{{ link("/best-cards/clans/toreador", _("Toreador")) }}</td>
+                <td>{{ link("/best-cards/clans/toreador") }}</td>
             </tr>
             <tr>
                 <td class="td-icon"><img src="{{ url_for('static', filename='img/icons/clan-tremere.svg') }}">
-                <td>{{ link("/best-cards/clans/tremere", _("Tremere")) }}</td>
+                <td>{{ link("/best-cards/clans/tremere") }}</td>
             </tr>
             <tr>
                 <td class="td-icon"><img src="{{ url_for('static', filename='img/icons/clan-true-brujah.svg') }}">
-                <td>{{ link("/best-cards/clans/true-brujah", _("True Brujah")) }}</td>
+                <td>{{ link("/best-cards/clans/true-brujah") }}</td>
             </tr>
             <tr>
                 <td class="td-icon"><img src="{{ url_for('static', filename='img/icons/clan-tzimisce.svg') }}">
-                <td>{{ link("/best-cards/clans/tzimisce", _("Tzimisce")) }}</td>
+                <td>{{ link("/best-cards/clans/tzimisce") }}</td>
             </tr>
             <tr>
                 <td class="td-icon"><img src="{{ url_for('static', filename='img/icons/clan-ventrue.svg') }}">
-                <td>{{ link("/best-cards/clans/ventrue", _("Ventrue")) }}</td>
+                <td>{{ link("/best-cards/clans/ventrue") }}</td>
             </tr>
         </tbody>
     </table>

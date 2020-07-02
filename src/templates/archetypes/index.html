@@ -7,12 +7,15 @@
 {% endblock %}
 
 {% block content %}
-<h1 id="archetypes">Archetypes</h1>
+<h1 id="archetypes">{{ _('Archetypes') }}</h1>
+{% trans trimmed
+    twda=external("http://www.vekn.fr/decks/twd.htm", "Tournament Winning Deck Archive (TWDA)"),
+    bibliodeque=external("https://drive.google.com/drive/folders/0B32R3iejqMPTaXNDd2d1b01lR1k", "Bibliodèque")
+%}
 <p>
     Here is a list of <strong>Vampire: the Eternal Struggle</strong> deck archetypes.
-    Every archetype is presented with
-    <a target="_blank" href="http://www.vekn.fr/decks/twd.htm">Tournament Winning Deck Archive (TWDA)</a>
-    deck list examples, main variations, and a play guide.
+    Every archetype is presented with {{ twda }} deck list examples, main variations,
+    and a play guide.
 </p>
 <p>
     Only archetypes having proven themselves against at least 25 players since 2008 are taken into account,
@@ -20,11 +23,11 @@
     Example decklists are the most recent ones, or the ones with a Continental Championship win.
 </p>
 <p>
-    If you're searching for other ideas or references, the
-    <a target="_blank" href="https://drive.google.com/drive/folders/0B32R3iejqMPTaXNDd2d1b01lR1k">Bibliodèque</a>
-    is a French project based on the TWDA that references 99 archetypes with example decklists,
+    If you're searching for additional ideas or references, the {{ bibliodeque }}
+    is a French project based on the TWDA that references over 100 archetypes with example decklists,
     to help people building decks for their casual play or tournaments.
 </p>
+{% endtrans %}
 <div class="align-left">
     <table class="wide-column">
         <tbody>
