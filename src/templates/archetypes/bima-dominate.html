@@ -1,5 +1,10 @@
 {% extends "archetypes/_layout.html" %}
 {% import "archetypes/_layout-erratum.html" as erratum with context %}
+{% import "archetypes/bima-dominate.json" as deck_json %}
+
+{% block meta %}
+<meta property="decklist" content='{{ deck_json | tojson }}' />
+{% endblock %}
 
 {% block archetype_name %}
 <h1><img src="{{ url_for('static', filename='img/icons/clan-followers-of-set.svg') }}"> Bima Dominate</h1>

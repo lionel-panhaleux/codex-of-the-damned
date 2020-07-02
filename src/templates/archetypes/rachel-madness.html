@@ -1,5 +1,10 @@
 {% extends "archetypes/_layout.html" %}
 {% import "archetypes/_layout-erratum.html" as erratum with context %}
+{% import "archetypes/rachel-madness.json" as deck_json %}
+
+{% block meta %}
+<meta property="decklist" content='{{ deck_json | tojson }}' />
+{% endblock %}
 
 {% block archetype_name %}
 <h1><img src="{{ url_for('static', filename='img/icons/clan-malkavian.svg') }}"> Rachel Madness</h1>
@@ -83,15 +88,4 @@
     {{ erratum.pentextmsubversion( 'undecided' ) }}
     {{ erratum.parityshift() }}
 </div>
-{% endblock %}
-
-{% block script %}
-<script>
-    window.onload = function () {
-        document.getElementById("card-modal").addEventListener("keydown", modalKeydown)
-        document.getElementById("card-prev").addEventListener("click", prevCard)
-        document.getElementById("card-next").addEventListener("click", nextCard)
-        displayDeck({ "author": null, "comments": "", "crypt": { "cards": [{ "comments": null, "count": 5, "id": "201148", "name": "Rachel Brandywine" }, { "comments": null, "count": 2, "id": "200538", "name": "Greger Anderssen" }, { "comments": null, "count": 2, "id": "201443", "name": "Victoria" }, { "comments": null, "count": 1, "id": "201141", "name": "Quentin King III" }, { "comments": null, "count": 1, "id": "201464", "name": "Watenda" }, { "comments": null, "count": 1, "id": "201509", "name": "Z\u00f6e" }], "count": 12 }, "date": "2011-05-07", "event": "Polish NC 2011", "library": { "cards": [{ "cards": [{ "comments": null, "count": 3, "id": "101139", "name": "Madness Network" }, { "comments": null, "count": 3, "id": "102121", "name": "Villein" }, { "comments": null, "count": 2, "id": "100588", "name": "Dreams of the Sphinx" }, { "comments": null, "count": 2, "id": "101384", "name": "Pentex(TM) Subversion" }, { "comments": null, "count": 2, "id": "101388", "name": "Perfectionist" }, { "comments": null, "count": 1, "id": "100824", "name": "Giant's Blood" }, { "comments": null, "count": 1, "id": "101439", "name": "Powerbase: Montreal" }, { "comments": null, "count": 1, "id": "101498", "name": "Protean" }, { "comments": null, "count": 1, "id": "101536", "name": "The Rack" }], "count": 16, "type": "Master" }, { "cards": [{ "comments": null, "count": 1, "id": "100182", "name": "Blessing of Chaos" }, { "comments": null, "count": 1, "id": "101028", "name": "Judgment: Camarilla Segregation" }], "count": 2, "type": "Action" }, { "cards": [{ "comments": null, "count": 2, "id": "101353", "name": "Parity Shift" }], "count": 2, "type": "Political Action" }, { "cards": [{ "comments": null, "count": 6, "id": "101125", "name": "Lost in Crowds" }, { "comments": null, "count": 5, "id": "100687", "name": "Faceless Night" }, { "comments": null, "count": 2, "id": "100617", "name": "Elder Impersonation" }, { "comments": null, "count": 2, "id": "100645", "name": "Enkil Cog" }], "count": 15, "type": "Action Modifier" }, { "cards": [{ "comments": null, "count": 2, "id": "101998", "name": "Touch of Clarity" }], "count": 2, "type": "Action Modifier/Reaction" }, { "cards": [{ "comments": null, "count": 3, "id": "101913", "name": "Swallowed by the Night" }], "count": 3, "type": "Action Modifier/Combat" }, { "cards": [{ "comments": null, "count": 18, "id": "100601", "name": "Earth Meld" }, { "comments": null, "count": 4, "id": "100771", "name": "Form of Mist" }], "count": 22, "type": "Combat" }, { "cards": [{ "comments": null, "count": 8, "id": "101706", "name": "Second Tradition: Domain" }, { "comments": null, "count": 6, "id": "100680", "name": "Eyes of Argus" }, { "comments": null, "count": 4, "id": "101949", "name": "Telepathic Misdirection" }, { "comments": null, "count": 2, "id": "101259", "name": "My Enemy's Enemy" }], "count": 20, "type": "Reaction" }, { "cards": [{ "comments": null, "count": 1, "id": "100243", "name": "Bowl of Convergence" }, { "comments": null, "count": 1, "id": "101014", "name": "Ivory Bow" }], "count": 2, "type": "Equipment" }, { "cards": [{ "comments": null, "count": 1, "id": "100298", "name": "Carlton Van Wyk" }, { "comments": null, "count": 1, "id": "101250", "name": "Muddled Vampire Hunter" }], "count": 2, "type": "Ally" }, { "cards": [{ "comments": null, "count": 3, "id": "100932", "name": "Homunculus" }, { "comments": null, "count": 1, "id": "101249", "name": "Mr. Winthrop" }], "count": 4, "type": "Retainer" }], "count": 90 }, "name": "Classic Rachel v.1.1", "place": "Gliwice, Poland", "player": "Tomasz Kowalewski (Behemot)", "players_count": 38, "score": null, "tournament_format": "3R+F", "twda_id": "2011pncgpm" })
-    }
-</script>
 {% endblock %}

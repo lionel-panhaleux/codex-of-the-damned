@@ -1,5 +1,10 @@
 {% extends "archetypes/_layout.html" %}
 {% import "archetypes/_layout-erratum.html" as erratum with context %}
+{% import "archetypes/hunters.json" as deck_json %}
+
+{% block meta %}
+<meta property="decklist" content='{{ deck_json | tojson }}' />
+{% endblock %}
 
 {% block archetype_name %}
 <h1><img src="{{ url_for('static', filename='img/icons/creed-visionary.svg') }}"> Hunters</h1>
@@ -80,15 +85,4 @@
     <h3>Errata</h3>
     {{ erratum.pentextmsubversion( 'remove' ) }}
 </div>
-{% endblock %}
-
-{% block script %}
-<script>
-    window.onload = function () {
-        document.getElementById("card-modal").addEventListener("keydown", modalKeydown)
-        document.getElementById("card-prev").addEventListener("click", prevCard)
-        document.getElementById("card-next").addEventListener("click", nextCard)
-        displayDeck({ "author": null, "comments": "Balazs Pasztor (Howler) -> Anna Welpa (Nana - Ani/Ashur) -> Oskar Hindriksson (?) -> Matus (Imbued !!!) -> Karel Kos (Legionares)\n", "crypt": { "cards": [{ "comments": null, "count": 3, "id": "200689", "name": "Jennie \"Cassie247\" Orne" }, { "comments": null, "count": 3, "id": "201386", "name": "Travis \"Traveler72\" Miller" }, { "comments": null, "count": 2, "id": "200656", "name": "Jack \"Hannibal137\" Harmon" }, { "comments": null, "count": 1, "id": "200432", "name": "Erick \"Shophet125\" Franco" }, { "comments": null, "count": 1, "id": "200715", "name": "John \"Cop90\" O'Malley" }, { "comments": null, "count": 1, "id": "200479", "name": "Fran\u00e7ois \"Warden\" Loehr" }, { "comments": null, "count": 1, "id": "200632", "name": "Inez \"Nurse216\" Villagrande" }], "count": 12 }, "date": "2019-03-16", "event": "Waiting for GP", "library": { "cards": [{ "cards": [{ "comments": null, "count": 5, "id": "100067", "name": "Angel of Berlin" }, { "comments": null, "count": 2, "id": "100348", "name": "The Church of Vindicated Faith" }, { "comments": null, "count": 2, "id": "102180", "name": "Wider View" }, { "comments": null, "count": 1, "id": "100545", "name": "Direct Intervention" }, { "comments": null, "count": 1, "id": "101384", "name": "Pentex(TM) Subversion" }, { "comments": null, "count": 1, "id": "101811", "name": "Smiling Jack, The Anarch" }, { "comments": null, "count": 1, "id": "101958", "name": "Tension in the Ranks" }], "count": 13, "type": "Master" }, { "cards": [{ "comments": null, "count": 8, "id": "101886", "name": "Strike with Conviction" }, { "comments": null, "count": 7, "id": "101557", "name": "React with Conviction" }, { "comments": null, "count": 5, "id": "101705", "name": "Second Sight" }], "count": 20, "type": "Conviction" }, { "cards": [{ "comments": null, "count": 2, "id": "100534", "name": "Determine" }], "count": 2, "type": "Reaction" }, { "cards": [{ "comments": null, "count": 5, "id": "102120", "name": "Vigilance" }, { "comments": null, "count": 3, "id": "101592", "name": "Rejuvenate" }, { "comments": null, "count": 2, "id": "100322", "name": "Champion" }, { "comments": null, "count": 2, "id": "100551", "name": "Discern" }, { "comments": null, "count": 2, "id": "100991", "name": "Inspire" }], "count": 14, "type": "Power" }, { "cards": [{ "comments": null, "count": 2, "id": "101081", "name": "Leather Jacket" }, { "comments": null, "count": 2, "id": "101931", "name": "Talbot's Chainsaw" }, { "comments": null, "count": 1, "id": "100903", "name": "Heart of Nizchetus" }, { "comments": null, "count": 1, "id": "101014", "name": "Ivory Bow" }, { "comments": null, "count": 1, "id": "101040", "name": "Kevlar Vest" }, { "comments": null, "count": 1, "id": "101073", "name": "Laptop Computer" }, { "comments": null, "count": 1, "id": "101856", "name": "Sport Bike" }, { "comments": null, "count": 1, "id": "100474", "name": "The Crusader Sword" }], "count": 10, "type": "Equipment" }, { "cards": [{ "comments": null, "count": 1, "id": "100298", "name": "Carlton Van Wyk" }, { "comments": null, "count": 1, "id": "101333", "name": "Ossian" }, { "comments": null, "count": 1, "id": "102087", "name": "Vagabond Mystic" }], "count": 3, "type": "Ally" }, { "cards": [{ "comments": null, "count": 2, "id": "101305", "name": "NRA PAC" }, { "comments": null, "count": 1, "id": "100198", "name": "Blood Cult Awareness Network" }, { "comments": null, "count": 1, "id": "100581", "name": "Dragonbound" }, { "comments": null, "count": 1, "id": "102079", "name": "The Unmasking" }], "count": 5, "type": "Event" }], "count": 67 }, "name": "Hunters", "place": "Brno, Czech Republic", "player": "Matus Kovalcik", "players_count": 25, "score": "1GW4.5+1.5", "tournament_format": "2R+F", "twda_id": "2019wfgpbcz" })
-    }
-</script>
 {% endblock %}

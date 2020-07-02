@@ -1,8 +1,6 @@
 {% extends "layout.html" %}
 
-{% block head %}
-{{ super() }}
-<!-- Adding needed scripts -->
+{% block scripts %}
 <script src="{{ url_for('static', filename='js/dC.js') }}"></script>
 <script src="{{ url_for('static', filename='js/decklist.js') }}"></script>
 {% endblock %}
@@ -27,8 +25,19 @@
 	<ul id="library-list">
 	</ul>
 </div>
-
 {% block archetype %}{% endblock %}
-
 {% block errata %}{% endblock %}
+{% endblock %}
+
+{% block script %}
+<script>
+	window.onload = function () {
+		const content = document.querySelector('meta[property="decklist"]').content
+		const decklist = JSON.parse(JSON.parse(content))
+		document.getElementById("card-modal").addEventListener("keydown", modalKeydown)
+		document.getElementById("card-prev").addEventListener("click", prevCard)
+		document.getElementById("card-next").addEventListener("click", nextCard)
+		displayDeck(decklist)
+	}
+</script>
 {% endblock %}

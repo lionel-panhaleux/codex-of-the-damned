@@ -1,5 +1,10 @@
 {% extends "archetypes/_layout.html" %}
 {% import "archetypes/_layout-erratum.html" as erratum with context %}
+{% import "archetypes/tzimisce-wall.json" as deck_json %}
+
+{% block meta %}
+<meta property="decklist" content='{{ deck_json | tojson }}' />
+{% endblock %}
 
 {% block archetype_name %}
 <h1><img src="{{ url_for('static', filename='img/icons/clan-tzimisce.svg') }}"> Tzimisce Wall</h1>
@@ -76,15 +81,4 @@
     Although this is a different archetype, {{ link("/archetypes/goratrix-high-tower", _("Goratrix High Tower")) }}
     is a close one, also using the <i>AI</i> combination, but with <i>T</i> instead of <i>V</i>.
 </p>
-{% endblock %}
-
-{% block script %}
-<script>
-    window.onload = function () {
-        document.getElementById("card-modal").addEventListener("keydown", modalKeydown)
-        document.getElementById("card-prev").addEventListener("click", prevCard)
-        document.getElementById("card-next").addEventListener("click", nextCard)
-        displayDeck({ "author": "Stone", "comments": "-- 2GW5.5 (2nd seed) + 1.5vp in final\n", "crypt": { "cards": [{ "comments": null, "count": 3, "id": "200810", "name": "Lambach" }, { "comments": null, "count": 2, "id": "200980", "name": "Meshenka" }, { "comments": null, "count": 1, "id": "200716", "name": "John Paleologus" }, { "comments": null, "count": 1, "id": "201319", "name": "Stravinsky" }, { "comments": null, "count": 1, "id": "201434", "name": "Velya, The Flayer" }, { "comments": null, "count": 1, "id": "200113", "name": "Anton" }, { "comments": null, "count": 1, "id": "201244", "name": "Sascha Vykos, The Angel of Caine" }, { "comments": null, "count": 1, "id": "200236", "name": "Caliban" }, { "comments": null, "count": 1, "id": "200290", "name": "Corine Marc\u00f3n" }], "count": 12 }, "date": "2014-10-05", "event": "EC 2014 Day 2", "library": { "cards": [{ "cards": [{ "comments": null, "count": 7, "id": "102121", "name": "Villein" }, { "comments": null, "count": 2, "id": "100545", "name": "Direct Intervention" }, { "comments": null, "count": 2, "id": "101439", "name": "Powerbase: Montreal" }, { "comments": null, "count": 1, "id": "100824", "name": "Giant's Blood" }, { "comments": null, "count": 1, "id": "100897", "name": "Haven Uncovered" }, { "comments": null, "count": 1, "id": "100984", "name": "Information Highway" }, { "comments": null, "count": 1, "id": "101102", "name": "Library Hunting Ground" }, { "comments": null, "count": 1, "id": "101103", "name": "Life Boon" }, { "comments": null, "count": 1, "id": "101350", "name": "Papillon" }, { "comments": null, "count": 1, "id": "101811", "name": "Smiling Jack, The Anarch" }, { "comments": null, "count": 1, "id": "101896", "name": "Sudden Reversal" }, { "comments": null, "count": 1, "id": "100656", "name": "The Erciyes Fragments" }, { "comments": null, "count": 1, "id": "101536", "name": "The Rack" }], "count": 21, "type": "Master" }, { "cards": [{ "comments": null, "count": 2, "id": "100666", "name": "Eternal Vigilance" }, { "comments": null, "count": 1, "id": "100515", "name": "Deep Song" }], "count": 3, "type": "Action" }, { "cards": [{ "comments": null, "count": 8, "id": "100344", "name": "Chiropteran Marauder" }, { "comments": null, "count": 6, "id": "100934", "name": "Horrid Form" }, { "comments": null, "count": 5, "id": "100301", "name": "Carrion Crows" }, { "comments": null, "count": 5, "id": "100986", "name": "Inner Essence" }, { "comments": null, "count": 4, "id": "100250", "name": "Breath of the Dragon" }, { "comments": null, "count": 4, "id": "101950", "name": "Telepathic Tracking" }], "count": 32, "type": "Combat" }, { "cards": [{ "comments": null, "count": 6, "id": "100680", "name": "Eyes of Argus" }, { "comments": null, "count": 5, "id": "100644", "name": "Enhanced Senses" }, { "comments": null, "count": 4, "id": "100308", "name": "Cats' Guidance" }, { "comments": null, "count": 4, "id": "100598", "name": "Eagle's Sight" }, { "comments": null, "count": 2, "id": "100760", "name": "Forced Awakening" }, { "comments": null, "count": 2, "id": "101321", "name": "On the Qui Vive" }, { "comments": null, "count": 2, "id": "101850", "name": "Spirit's Touch" }, { "comments": null, "count": 1, "id": "101259", "name": "My Enemy's Enemy" }, { "comments": null, "count": 1, "id": "101475", "name": "Precognition" }, { "comments": null, "count": 1, "id": "101559", "name": "Read the Winds" }, { "comments": null, "count": 1, "id": "101717", "name": "Sense the Savage Way" }, { "comments": null, "count": 1, "id": "101949", "name": "Telepathic Misdirection" }], "count": 30, "type": "Reaction" }, { "cards": [{ "comments": null, "count": 1, "id": "100243", "name": "Bowl of Convergence" }], "count": 1, "type": "Equipment" }, { "cards": [{ "comments": null, "count": 1, "id": "101550", "name": "Raven Spy" }], "count": 1, "type": "Retainer" }, { "cards": [{ "comments": null, "count": 1, "id": "100581", "name": "Dragonbound" }, { "comments": null, "count": 1, "id": "101697", "name": "Scourge of the Enochians" }], "count": 2, "type": "Event" }], "count": 90 }, "name": "The Fear Factor", "place": "Mannheim, Germany", "player": "Arnaud Baigts", "players_count": 40, "score": null, "tournament_format": "3R+F", "twda_id": "2014ecday2mg" })
-    }
-</script>
 {% endblock %}

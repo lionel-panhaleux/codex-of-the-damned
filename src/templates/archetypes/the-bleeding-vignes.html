@@ -1,5 +1,10 @@
 {% extends "archetypes/_layout.html" %}
 {% import "archetypes/_layout-erratum.html" as erratum with context %}
+{% import "archetypes/the-bleeding-vignes.json" as deck_json %}
+
+{% block meta %}
+<meta property="decklist" content='{{ deck_json | tojson }}' />
+{% endblock %}
 
 {% block archetype_name %}
 <h1><img src="{{ url_for('static', filename='img/icons/clan-ventrue.svg') }}"> The Bleeding Vignes</h1>
@@ -73,15 +78,4 @@
     <h3>Errata</h3>
     {{ erratum.pentextmsubversion( 'undecided' ) }}
 </div>
-{% endblock %}
-
-{% block script %}
-<script>
-    window.onload = function () {
-        document.getElementById("card-modal").addEventListener("keydown", modalKeydown)
-        document.getElementById("card-prev").addEventListener("click", prevCard)
-        document.getElementById("card-next").addEventListener("click", nextCard)
-        displayDeck({ "author": null, "comments": "", "crypt": { "cards": [{ "comments": null, "count": 3, "id": "200403", "name": "Edward Vignes" }, { "comments": null, "count": 2, "id": "201162", "name": "Ranjan Rishi, Camarilla Scholar" }, { "comments": null, "count": 1, "id": "200040", "name": "Alan Sovereign" }, { "comments": null, "count": 1, "id": "200212", "name": "Boss Callihan" }, { "comments": null, "count": 1, "id": "200256", "name": "Catherine du Bois" }, { "comments": null, "count": 1, "id": "200407", "name": "Elena Gutierrez" }, { "comments": null, "count": 1, "id": "200635", "name": "Ingrid Russo" }, { "comments": null, "count": 1, "id": "201125", "name": "Pieter van Dorn" }, { "comments": null, "count": 1, "id": "200342", "name": "Diana Vick" }], "count": 12 }, "date": "2010-05-29", "event": "Belgian ECQ", "library": { "cards": [{ "cards": [{ "comments": null, "count": 6, "id": "101104", "name": "Life in the City" }, { "comments": null, "count": 3, "id": "100199", "name": "Blood Doll" }, { "comments": null, "count": 2, "id": "100058", "name": "Anarch Troublemaker" }, { "comments": null, "count": 2, "id": "101225", "name": "Misdirection" }, { "comments": null, "count": 2, "id": "101384", "name": "Pentex(TM) Subversion" }, { "comments": null, "count": 1, "id": "100824", "name": "Giant's Blood" }, { "comments": null, "count": 1, "id": "101019", "name": "Jake Washington" }, { "comments": null, "count": 1, "id": "100435", "name": "The Coven" }], "count": 18, "type": "Master" }, { "cards": [{ "comments": null, "count": 11, "id": "100845", "name": "Govern the Unaligned" }, { "comments": null, "count": 3, "id": "101211", "name": "Mind Numb" }], "count": 14, "type": "Action" }, { "cards": [{ "comments": null, "count": 6, "id": "100236", "name": "Bonding" }, { "comments": null, "count": 5, "id": "100401", "name": "Conditioning" }, { "comments": null, "count": 5, "id": "101712", "name": "Seduction" }, { "comments": null, "count": 3, "id": "100492", "name": "Daring the Dawn" }, { "comments": null, "count": 3, "id": "100765", "name": "Foreshadowing Destruction" }], "count": 22, "type": "Action Modifier" }, { "cards": [{ "comments": null, "count": 7, "id": "101144", "name": "Majesty" }], "count": 7, "type": "Combat" }, { "cards": [{ "comments": null, "count": 10, "id": "100518", "name": "Deflection" }, { "comments": null, "count": 3, "id": "100519", "name": "Delaying Tactics" }], "count": 13, "type": "Reaction" }, { "cards": [{ "comments": null, "count": 1, "id": "100163", "name": "The Bitter and Sweet Story" }], "count": 1, "type": "Event" }], "count": 75 }, "name": "Vignes in the City", "place": "Brussels, Belgium", "player": "Izaak Havelaar", "players_count": 31, "score": "2.5VP in final", "tournament_format": "3R+F", "twda_id": "2010belgianecq" })
-    }
-</script>
 {% endblock %}

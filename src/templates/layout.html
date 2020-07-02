@@ -8,9 +8,11 @@
     <meta property="og:image" content="{{ og_image|default(url_for('static', filename='img/codex.jpg')) }}" />
     <meta name="description" content="A compilation of Vampire: the Eternal Struggle (VTES) strategy resources">
     <meta name="keywords" content="Vampire, the Eternal Struggle, VtES, CCG">
+    {% block meta %}{% endblock %}
     <link rel="shortcut icon" href="{{ url_for('static', filename='img/favicon.ico') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/base.css') }}">
     <link rel="icon" href="{{ url_for('static', filename='img/icons/vtes.svg') }}">
+    {% block scripts %}{% endblock %}
     <title>Codex of the Damned</title>
     {% endblock %}
 </head>

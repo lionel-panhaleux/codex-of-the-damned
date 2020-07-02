@@ -1,5 +1,10 @@
 {% extends "archetypes/_layout.html" %}
 {% import "archetypes/_layout-erratum.html" as erratum with context %}
+{% import "archetypes/weenie-aus.json" as deck_json %}
+
+{% block meta %}
+<meta property="decklist" content='{{ deck_json | tojson }}' />
+{% endblock %}
 
 {% block archetype_name %}
 <h1>Weenie AUS</h1>
@@ -84,15 +89,4 @@
     <h3>Errata</h3>
     {{ erratum.pentextmsubversion( 'remove' ) }}
 </div>
-{% endblock %}
-
-{% block script %}
-<script>
-    window.onload = function () {
-        document.getElementById("card-modal").addEventListener("keydown", modalKeydown)
-        document.getElementById("card-prev").addEventListener("click", prevCard)
-        document.getElementById("card-next").addEventListener("click", nextCard)
-        displayDeck({ "author": null, "comments": "", "crypt": { "cards": [{ "comments": null, "count": 5, "id": "200076", "name": "Anarch Convert" }, { "comments": null, "count": 1, "id": "200045", "name": "Aleph" }, { "comments": null, "count": 1, "id": "200368", "name": "Dorian Strack" }, { "comments": null, "count": 1, "id": "200620", "name": "Idalia, Prophet of Guadalajara" }, { "comments": null, "count": 1, "id": "201178", "name": "Remilliard, Devout Crusader" }, { "comments": null, "count": 1, "id": "200642", "name": "Isabel de Leon" }, { "comments": null, "count": 1, "id": "201509", "name": "Z\u00f6e" }, { "comments": null, "count": 1, "id": "200345", "name": "Dieter Kleist" }, { "comments": null, "count": 1, "id": "200477", "name": "Franciscus" }], "count": 13 }, "date": "2018-04-29", "event": "Brazilian NC 2018", "library": { "cards": [{ "cards": [{ "comments": null, "count": 5, "id": "100055", "name": "Anarch Revolt" }, { "comments": null, "count": 4, "id": "100106", "name": "Ashur Tablets" }, { "comments": null, "count": 2, "id": "100114", "name": "Auspex" }, { "comments": null, "count": 2, "id": "100545", "name": "Direct Intervention" }, { "comments": null, "count": 2, "id": "101811", "name": "Smiling Jack, The Anarch" }, { "comments": null, "count": 2, "id": "101355", "name": "The Parthenon" }, { "comments": null, "count": 2, "id": "102023", "name": "Tribute to the Master" }, { "comments": null, "count": 1, "id": "100327", "name": "Channel 10" }, { "comments": null, "count": 1, "id": "101384", "name": "Pentex(TM) Subversion" }, { "comments": null, "count": 1, "id": "101439", "name": "Powerbase: Montreal" }, { "comments": null, "count": 1, "id": "100052", "name": "The Anarch Free Press" }, { "comments": null, "count": 1, "id": "101662", "name": "The Rumor Mill, Tabloid Newspaper" }, { "comments": null, "count": 1, "id": "102049", "name": "Twilight Camp" }, { "comments": null, "count": 1, "id": "102189", "name": "WMRH Talk Radio" }, { "comments": null, "count": 1, "id": "102142", "name": "Wall Street Night, Financial Newspaper" }, { "comments": null, "count": 1, "id": "102151", "name": "Wash" }], "count": 28, "type": "Master" }, { "cards": [{ "comments": null, "count": 2, "id": "100416", "name": "Constant Revolution" }], "count": 2, "type": "Action" }, { "cards": [{ "comments": null, "count": 2, "id": "101239", "name": "Monkey Wrench" }], "count": 2, "type": "Action Modifier" }, { "cards": [{ "comments": null, "count": 6, "id": "100392", "name": "Concealed Weapon" }, { "comments": null, "count": 5, "id": "101942", "name": "Target Vitals" }, { "comments": null, "count": 4, "id": "101945", "name": "Taste of Vitae" }], "count": 15, "type": "Combat" }, { "cards": [{ "comments": null, "count": 6, "id": "100598", "name": "Eagle's Sight" }, { "comments": null, "count": 5, "id": "100680", "name": "Eyes of Argus" }, { "comments": null, "count": 4, "id": "100644", "name": "Enhanced Senses" }, { "comments": null, "count": 4, "id": "100760", "name": "Forced Awakening" }, { "comments": null, "count": 4, "id": "101321", "name": "On the Qui Vive" }, { "comments": null, "count": 4, "id": "101949", "name": "Telepathic Misdirection" }, { "comments": null, "count": 3, "id": "101475", "name": "Precognition" }, { "comments": null, "count": 3, "id": "101850", "name": "Spirit's Touch" }, { "comments": null, "count": 2, "id": "101259", "name": "My Enemy's Enemy" }], "count": 35, "type": "Reaction" }, { "cards": [{ "comments": null, "count": 6, "id": "101816", "name": "Sniper Rifle" }], "count": 6, "type": "Equipment" }, { "cards": [{ "comments": null, "count": 1, "id": "100298", "name": "Carlton Van Wyk" }, { "comments": null, "count": 1, "id": "101333", "name": "Ossian" }], "count": 2, "type": "Ally" }], "count": 90 }, "name": "Mono Auspex", "place": "S\u00e3o Paulo, Brazil", "player": "Fernanda Nunes", "players_count": 27, "score": "4VP in final", "tournament_format": "3R+F", "twda_id": "2018bncspb" })
-    }
-</script>
 {% endblock %}
