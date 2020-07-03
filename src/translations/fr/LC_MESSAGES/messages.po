@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: codex 0.X\n"
 "Report-Msgid-Bugs-To: lionel.panhaleux+codex@gmail.com\n"
-"POT-Creation-Date: 2020-07-03 09:32+0200\n"
+"POT-Creation-Date: 2020-07-03 14:07+0200\n"
 "PO-Revision-Date: 2020-07-02 08:52+0200\n"
 "Last-Translator: Lionel Panhaleux <lionel.panhaleux+codex@gmail.com>\n"
 "Language: fr\n"
@@ -29,7 +29,7 @@ msgstr "Stratégie"
 msgid "Fundamentals"
 msgstr "Fondamentaux"
 
-#: src/navigation.py:60
+#: src/navigation.py:60 src/templates/strategy/combat.html:4
 msgid "Combat"
 msgstr "Combat"
 
@@ -891,7 +891,7 @@ msgstr "deck d'Izaak Havelaar"
 #: src/templates/best-cards/clans/true-brujah.html:97 src/templates/best-cards/generic/celerity.html:32
 #: src/templates/best-cards/generic/fortitude.html:18 src/templates/best-cards/generic/master.html:56
 #: src/templates/best-cards/generic/no-discipline.html:165 src/templates/best-cards/generic/presence.html:20
-#: src/templates/strategy/combat.html:17 src/templates/strategy/fundamentals.html:232
+#: src/templates/strategy/combat.html:18 src/templates/strategy/fundamentals.html:232
 msgid "A&B"
 msgstr ""
 
@@ -1379,7 +1379,7 @@ msgstr "déni de blocage"
 
 #: src/templates/best-cards/generic/no-discipline.html:242 src/templates/strategy/deck-building.html:240
 msgid "bruise"
-msgstr "blessures"
+msgstr "érosion"
 
 #: src/templates/strategy/archetypes.html:163
 msgid "Table talk"
@@ -1559,10 +1559,14 @@ msgstr ""
 msgid "Prince or Justicar"
 msgstr "Prince ou Justicar"
 
-#: src/templates/strategy/bloat.html:265 src/templates/strategy/fundamentals.html:56
-#: src/templates/strategy/fundamentals.html:61 src/templates/strategy/fundamentals.html:76
-#: src/templates/strategy/fundamentals.html:85 src/templates/strategy/fundamentals.html:159
-#: src/templates/strategy/fundamentals.html:210 src/templates/strategy/fundamentals.html:431
+#: src/templates/strategy/bloat.html:265 src/templates/strategy/combat.html:53 src/templates/strategy/combat.html:58
+#: src/templates/strategy/combat.html:65 src/templates/strategy/combat.html:70 src/templates/strategy/combat.html:75
+#: src/templates/strategy/combat.html:80 src/templates/strategy/combat.html:222 src/templates/strategy/combat.html:228
+#: src/templates/strategy/combat.html:233 src/templates/strategy/combat.html:319
+#: src/templates/strategy/fundamentals.html:56 src/templates/strategy/fundamentals.html:61
+#: src/templates/strategy/fundamentals.html:76 src/templates/strategy/fundamentals.html:85
+#: src/templates/strategy/fundamentals.html:159 src/templates/strategy/fundamentals.html:210
+#: src/templates/strategy/fundamentals.html:431
 msgid "and"
 msgstr "et"
 
@@ -1590,9 +1594,269 @@ msgstr ""
 "équivaut à en lui en faire perdre 3 avec une morsure. La même logique peut être appliquée pour stopper les actions "
 "politiques de régénération avec %(delaying_tactics)s."
 
-#: src/templates/strategy/combat.html:10
+#: src/templates/strategy/combat.html:6
+#, python-format
+msgid ""
+"Combat occurs when a block succeeds, but can also be provoked directly using actions like %(bums_rush)s: because of "
+"this card, other actions with similar effects are commonly called <strong>rush actions</strong>. It also gave its "
+"name to an entire category of decks: the %(rush_decks)s."
+msgstr ""
+"Les combats surviennent lorsqu'un blocage réussit, mais peuvent aussi être provoqués directement par des actions "
+"comme %(bums_rush)s : à cause de cette carte, les autres actions avec un effet similaire sont communément appelées "
+"des <strong>actions de rush</strong>. Elle a aussi donné son nom à toute une catégorie de decks : les %(rush_decks)s."
+
+#: src/templates/strategy/combat.html:8
 msgid "rush decks"
 msgstr "decks de rush"
+
+#: src/templates/strategy/combat.html:16
+msgid "Bruise"
+msgstr "Érosion"
+
+#: src/templates/strategy/combat.html:17
+#, python-format
+msgid ""
+"<p> Combat does not help reducing the prey's pool, at least not directly. The core principle of combat is "
+"<strong>bruise</strong>: reducing its opponents blood amount. It forces the minions to hunt or stay in torpor, "
+"seriously reducing %(a_b)s. As a bonus, reducing the blood amount on the table means diminishing the effectivness of "
+"%(leeching)s techniques. </p> <p> So the main focus of any combat module is to improve or prevent bruise, "
+"<em>ie.</em> blood consumption. </p>"
+msgstr ""
+"<p> Le combat ne permet pas de réduire la réserve d'influence de sa proie, en tous cas pas directement. Le principe "
+"central du combat est l'<strong>érosion</strong> : réduire la quantité de sang de l'adversaire. Cela force les "
+"serviteurs à chasser ou à rester en torpeur, ce qui réduit sérieusement l'%(a_b)s. En prime, réduire la quantité de "
+"sang sur la table diminue l'efficacité des techniques de %(leeching)s. </p> <p> En conséquence, l'objectif de tout "
+"module de combat est d'améliorer ou réduire l'érosion, <em>càd</em> la perte de sang. </p>"
+
+#: src/templates/strategy/combat.html:34
+msgid "Dealing damage"
+msgstr "Infliger des dégâts"
+
+#: src/templates/strategy/combat.html:36
+#, python-format
+msgid ""
+"On the discipline side, %(pot)s and %(thn)s are great at dealing high damage. %(ani)s has a strong combination with "
+"%(aid_from_bats)s and %(carrion_crows)s, giving 3 damages with a press. %(tha)s has the excellent %(theft_of_vitae)s,"
+" which provides a non-preventable 4 blood differential at no cost. Many disciplines give access to aggravated damage "
+"options:"
+msgstr ""
+"Du côté des disciplines, %(pot)s et %(thn)s infligent de grands quantités de dégâts. %(ani)s a une combinaison "
+"puissante avec %(aid_from_bats)s et %(carrion_crows)s, qui donnent 3 dégâts et une poursuite. %(tha)s a l'excellent "
+"%(theft_of_vitae)s, qui fournit gratuitement un différentiel de 4 sang sans possibilité de prévention. De nombreuses "
+"disciplines donnent accès à des dégâts aggravés :"
+
+#: src/templates/strategy/combat.html:51 src/templates/strategy/combat.html:57 src/templates/strategy/combat.html:62
+#: src/templates/strategy/combat.html:68 src/templates/strategy/combat.html:73 src/templates/strategy/combat.html:78
+#: src/templates/strategy/combat.html:82 src/templates/strategy/combat.html:83 src/templates/strategy/combat.html:84
+#: src/templates/strategy/combat.html:85 src/templates/strategy/combat.html:218 src/templates/strategy/combat.html:226
+#: src/templates/strategy/combat.html:232 src/templates/strategy/combat.html:236 src/templates/strategy/combat.html:237
+#: src/templates/strategy/combat.html:238 src/templates/strategy/combat.html:240 src/templates/strategy/combat.html:244
+#: src/templates/strategy/combat.html:247 src/templates/strategy/combat.html:249
+#: src/templates/strategy/fundamentals.html:54 src/templates/strategy/fundamentals.html:56
+msgid "with"
+msgstr "avec"
+
+#: src/templates/strategy/combat.html:87
+#, python-format
+msgid "Gargoyles (%(img_clan_gargoyle)s) with %(raking_talons)s."
+msgstr "Les gargouilles (%(img_clan_gargoyle)s) avec %(raking_talons)s."
+
+#: src/templates/strategy/combat.html:96
+msgid "Using aggravated damage"
+msgstr "Utiliser des dégâts aggravés"
+
+#: src/templates/strategy/combat.html:97
+#, python-format
+msgid ""
+"<p> Using aggravated damage while acting is tricky, as the acting minion has to choose <strong>and pay</strong> for "
+"his strike before the reacting minion. Cards that make the damage of a strike aggravated, like %(claws_of_the_dead)s,"
+" are superior in this aspect, as one can wait to see if the reacting minion will play a combat ends or a dodge before"
+" using the card. </p> <p> Using aggravated damage on the reacting side is easier. Moreover, it allows the use of "
+"%(rötschreck)s, sending the opponent into torpor whatever his strike. The only prerequisite is for the range to be "
+"right for the aggravated strike to be able to land in theory. </p>"
+msgstr ""
+"<p> Utiliser des dégâts aggravés en agissant est délicat, car la serviteur qui agit doit choisir sa frappe <strong>et"
+" la payer</strong> avant le serviteur qui réagit. Les cards qui transforment les dégâts d'une frappe en dégâts "
+"aggravés, comme %(claws_of_the_dead)s, sont supérieures en ce sens, puisqu'on peut attendre de voir si le serviteur "
+"qui réagit va jouer une fin de combat ou une esquive avant d'utiliser la carte. </p> <p> Utiliser des dégâts aggravés"
+" du côté de la réaction est plus simple. De plus, cela permet d'utiliser %(rötschreck)s pour envoyer l'adversaire en "
+"torpeur quelle que soit sa frappe. Le seul prérequis est que la portée doit être adéquate pour la frappe aggravée. "
+"</p>"
+
+#: src/templates/strategy/combat.html:117
+#, python-format
+msgid ""
+"<p> Apart from dealing more damage each strike, <strong>additional strikes</strong> are a good option to deliver more"
+" damage each combat. They are, however, mostly available only for %(cel)s users, with the notable exceptions of "
+"%(arms_of_the_abyss)s (%(obt)s), %(devil_channel_back)s (%(abo)s) and %(octopod)s (%(san)s). </p> <p> Finally, "
+"%(target_vitals)s is an excellent option to increase damage, available for every minion at no cost. </p>"
+msgstr ""
+"<p> Hors la question d'infliger plus de dégâts à chaque frappe, les <strong>frappes additionnelles</strong> sont un "
+"bon moyen d'infliger plus de dégâts à chaque combat. Elles sont par contre surtout disponibles pour les utilisateurs "
+"de %(cel)s, à l'exception notable de %(arms_of_the_abyss)s (%(obt)s), %(devil_channel_back)s (%(abo)s) et %(octopod)s"
+" (%(san)s). </p> <p> Enfin, %(target_vitals)s est une excellente option pour augmenter les dégâts, disponible "
+"gratuitement pour tous les serviteurs. </p>"
+
+#: src/templates/strategy/combat.html:136
+msgid "Weapons"
+msgstr "Armes"
+
+#: src/templates/strategy/combat.html:138
+msgid ""
+"Weapons are also a good way to improve damage. There are a lot of weapons available, here are the most efficient and "
+"most played:"
+msgstr ""
+"Les armes sont aussi un bon moyen d'augmenter les dégâts. Il y a beaucoup d'armes disponibles, voici les plus "
+"efficaces et les plus jouées :"
+
+#: src/templates/strategy/combat.html:145
+#, python-format
+msgid ""
+"%(weighted_walking_stick)s: A weapon that can be wielded without losing an action to equip it. It provides a total of"
+" three additional damages at no cost, an excellent ratio."
+msgstr ""
+"%(weighted_walking_stick)s : Une arme qui peut être utilisée sans perdre une action à l'équiper. Elle fournit un "
+"total de trois dégâts supplémentaires gratuitement, un très bon ratio."
+
+#: src/templates/strategy/combat.html:154
+#, python-format
+msgid ""
+"%(magnum)s: An additional damage each strike, together with a manoeuver to keep the range long an avoid bruise. This "
+"is also the best weapon %(concealed_weapon)s can get out, thus avoiding to loose an action (and risking interception)"
+" to equip with it."
+msgstr ""
+"%(magnum)s : Un dégât de plus à chaque frappe, couplé à la manœuvre pour rester à longue portée et éviter l'érosion. "
+"C'est aussi la meilleure arme que %(concealed_weapon)s peut sortir, ce qui évite de perdre une action à l'équiper (et"
+" de risquer l'interception)."
+
+#: src/templates/strategy/combat.html:167
+#, python-format
+msgid "%(ivory_bow)s: Although unique, 1 pool for an aggravated ranged damage each strike is a bargain."
+msgstr "%(ivory_bow)s : Bien qu'unique, 1 influence pour un dégât aggravé longue portée à chaque frappe, c'est une affaire."
+
+#: src/templates/strategy/combat.html:175
+#, python-format
+msgid ""
+"%(sniper_rifle)s: Although only useful when blocking, its ability to set the range is an excellent option to avoid "
+"bruise."
+msgstr ""
+"%(sniper_rifle)s : Surtout utile pour bloquer, sa capacité à fixer la portée est une excellent option pour éviter "
+"l'érosion."
+
+#: src/templates/strategy/combat.html:184
+#, python-format
+msgid ""
+"%(assault_rifle)s: A stronger version of the %(magnum)s. The 5 pool cost is prohibitive, but if it can be reduced by "
+"bringing it game using %(alastor)s, for example, it is one of the strongest weapon of the game."
+msgstr ""
+"%(assault_rifle)s : Une version plus puissante du %(magnum)s. Le coût de 5 influence est prohibitif, mais il peut "
+"être réduit en le mettant en jeu avec %(alastor)s, par exemple. C'est l'une des armes les plus puissantes du jeu."
+
+#: src/templates/strategy/combat.html:197
+#, python-format
+msgid ""
+"%(blade_of_bellona)s: An additional damage and optional manoeuver at no cost, a real bargain for "
+"%(img_clan_salubri_anti)s."
+msgstr ""
+"%(blade_of_bellona)s : Un dégât de plus avec une manœuvre en option, le tout gratuit – une affaire pour les "
+"%(img_clan_salubri_anti)s."
+
+#: src/templates/strategy/combat.html:208
+msgid "Defense"
+msgstr "Défense"
+
+#: src/templates/strategy/combat.html:210
+msgid ""
+"The easiest defense for combats is to avoid them altogether using a <em>Strike: Combat Ends</em>, "
+"<strong>S:CE</strong> for short. Multiple disciplines give access to this option:"
+msgstr ""
+"La défense la plus simple en combat est de l'éviter complètement en utilisant une <em>Frappe : Fin de combat</em> "
+"(<em>Strike: Combat Ends</em> en anglais, <strong>S:CE</strong> pour faire court). Plusieurs disciplines donnent "
+"accès à cette option :"
+
+#: src/templates/strategy/combat.html:254
+#, python-format
+msgid ""
+"It is worth noting that %(flash_grenade)s is an option for any minion, and also that big capacity vampires have "
+"access to %(dom)s %(obedience)s and %(OBF)s %(mental_maze)s to avoid combat altogether, although only when reacting "
+"to an action."
+msgstr ""
+"Il est bon de noter que %(flash_grenade)s est une option pour tous les serviteurs, mais aussi que les vampires de "
+"haute capacité ont accès à %(dom)s %(obedience)s et %(OBF)s %(mental_maze)s pour éviter complètement le combat, bien "
+"qu'uniquement en réaction."
+
+#: src/templates/strategy/combat.html:267
+#, python-format
+msgid ""
+"<h3>How to deal with Strike: Combat Ends (S:CE)</h3> <p> S:CE are a real issue for combat-focused deck. Some "
+"solutions exist to deal with them. </p> <ul> <li> %(nsa_trio)s is available to everyone but is not an option for "
+"<em>rush</em> decks, as their combat may not be the result of a block. </li> <li> Some disciplines have a counter "
+"that let them prevent S:CE or continue the combat after a S:CE: %(pot)s with %(immortal_grapple)s, %(CEL)s with "
+"%(psyche)s, %(AUS)s with %(telepathic_tracking)s, %(THN)s with %(relentless_reaper)s and %(CEL)s%(QUI)s with "
+"%(sanguine_entrapment)s. </li> </ul> <p> Other than that, the only option is to get into enough combats to exhaust "
+"the S:CE on the defence side. </p>"
+msgstr ""
+"<h3>Comment gérer les Frappe : Fin de combat (S:CE)</h3> <p> Les S:CE sont un vrai problème pour les decks centrés "
+"sur le combat. Quelques solutions existent pour les gérer. </p> <ul> <li> %(nsa_trio)s est disponible pour tous mais "
+"n'est pas une option pour les decks de <em>rush</em>, puisque leurs combats sont rarement le résultat d'un blocage. "
+"</li> <li> Certaines disciplines disposent de contres qui leur permettent d'empêcher un S:CE ou de continuer le "
+"combat après un S:CE : %(pot)s avec %(immortal_grapple)s, %(CEL)s avec %(psyche)s, %(AUS)s avec "
+"%(telepathic_tracking)s, %(THN)s avec %(relentless_reaper)s et %(CEL)s%(QUI)s avec %(sanguine_entrapment)s. </li> "
+"</ul> <p> Sans ça, la seule option est d'entrer suffisamment souvent en combat pour épuiser les S:CE du côté de la "
+"défense. </p>"
+
+#: src/templates/strategy/combat.html:302
+#, python-format
+msgid ""
+"Aside from S:CE, <strong>damage prevention</strong> is another important part of combat. It is useful in defence, but"
+" also on the offence: reducing the loss of blood improves the bruise ratio, which is the primary focus of "
+"combat‑oriented decks. %(for)s is the key discipline for damage prevention, and only a few damage prevention cards "
+"exist outside this discipline:"
+msgstr ""
+"Après les S:CE, la <strong>prevention de dégâts</strong> est une autre partie important du combat. C'est utile "
+"défensivement, mais aussi offensivement : réduire la perte de sang augmente le ratio d'érosion, ce qui est l'objectif"
+" principal des decks orientés combat. %(for)s est la principale discipline pour la prévention de dégâts et seules "
+"quelques cartes de prévention n'en font pas partie :"
+
+#: src/templates/strategy/combat.html:311
+#, python-format
+msgid "%(glancing_blow)s prevents only one damage, that makes it a viable option only for saving an ally."
+msgstr "%(glancing_blow)s ne prévient qu'un dégât, ce qui ne le rend viable que pour sauver un allié."
+
+#: src/templates/strategy/combat.html:332
+#, python-format
+msgid ""
+"<p> <strong>Dodging</strong> is still an option for defence, and the simple %(dodge)s is available for everyone. It "
+"is weaker than ending the combat with a S:CE, but it is still a viable defensive option when S:CE are not available. "
+"</p> <p> Finally, two combat cards can <strong>send a vampire into torpor directly</strong>: %(coma)s (%(dem)s) and "
+"%(entombment)s (%(OBT)s). They're too costly to be used effectively as an offensive option, but they are good "
+"defensive options as they can act as a deterrent against combat decks. </p>"
+msgstr ""
+"<p> <strong>Esquiver</strong> est toujours une option pour la défense et le simple %(dodge)s est disponible pour "
+"tous. L'esquive est moins efficace qu'un S:CE, mais reste une option défensive viable quand aucun S:CE n'est "
+"disponible. </p> <p> Enfin, deux cartes de combat peuvent <strong>envoyer un vampire en torpeur directement</strong>:"
+" %(coma)s (%(dem)s) et %(entombment)s (%(OBT)s). Elles sont trop coûteuses pour être efficaces en tant qu'outil "
+"offensif, mais ce sont de bonnes options en défense car elles peuvent constituer une bonne dissuasion contre les "
+"decks de combat. </p>"
+
+#: src/templates/strategy/combat.html:351
+msgid "Range Management"
+msgstr "Gestion de la portée"
+
+#: src/templates/strategy/combat.html:353
+msgid ""
+"Getting the correct range is fundamental for combat. Most combat module specialize in a given range, either "
+"maintaining <strong>long range</strong> to avoid the basic one damage any vampire can do, or using strong "
+"<strong>short range</strong> strikes and effects. Many cards provide <strong>maneuvers</strong> and many offensive "
+"combat module use them to manage their range. A few cards allow a vampire to <strong>set the range</strong> directly,"
+" without letting the opponent the opportunity to maneuver:"
+msgstr ""
+"Avoir la bonne portée est essentiel au combat. La plupart des modules de combat se spécialisent pour une portée "
+"donnée, que ce soit <strong>à distance</strong> pour éviter le dégât de base que tout vampire peut infliger, ou "
+"<strong>au contact</strong> pour utiliser des frappes et des effets puissants. De nombreuses cartes fournissent des "
+"<strong>manœuvres</strong> et beaucoup de modules de combat offensifs les utilisent pour gérer leur portée. Quelques "
+"cartes permettent à un vampire de <strong>fixer la portée</strong> directement, sans laisser l'opportunité à "
+"l'adversaire de manœuvrer :"
 
 #: src/templates/strategy/deck-building.html:210
 msgid "bleed"
@@ -1674,10 +1938,6 @@ msgstr ""
 #: src/templates/strategy/fundamentals.html:52
 msgid "younger vampires or allies"
 msgstr "vampires plus jeunes et alliés"
-
-#: src/templates/strategy/fundamentals.html:54 src/templates/strategy/fundamentals.html:56
-msgid "with"
-msgstr "avec"
 
 #: src/templates/strategy/fundamentals.html:65
 msgid "Imbued with"
