@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: codex 0.X\n"
 "Report-Msgid-Bugs-To: lionel.panhaleux+codex@gmail.com\n"
-"POT-Creation-Date: 2020-07-02 21:04+0200\n"
+"POT-Creation-Date: 2020-07-03 09:32+0200\n"
 "PO-Revision-Date: 2020-07-02 08:52+0200\n"
 "Last-Translator: Lionel Panhaleux <lionel.panhaleux+codex@gmail.com>\n"
 "Language: fr\n"
@@ -33,7 +33,7 @@ msgstr "Fondamentaux"
 msgid "Combat"
 msgstr "Combat"
 
-#: src/navigation.py:61
+#: src/navigation.py:61 src/templates/strategy/bloat.html:4
 msgid "Bloat"
 msgstr "Régénération"
 
@@ -137,7 +137,6 @@ msgid "Euro Brujah"
 msgstr ""
 
 #: src/navigation.py:95 src/templates/archetypes/council-of-doom.html:60 src/templates/strategy/archetypes.html:72
-#: src/templates/strategy/bloat.html:139
 msgid "Girls Will Find Inner Circle"
 msgstr ""
 
@@ -368,8 +367,10 @@ msgstr "Présence"
 msgid "Sects"
 msgstr "Sectes"
 
-#: src/navigation.py:158 src/templates/strategy/fundamentals.html:279 src/templates/strategy/fundamentals.html:280
-#: src/templates/strategy/fundamentals.html:327 src/templates/strategy/fundamentals.html:396
+#: src/navigation.py:158 src/templates/strategy/bloat.html:77 src/templates/strategy/bloat.html:78
+#: src/templates/strategy/bloat.html:101 src/templates/strategy/bloat.html:102 src/templates/strategy/fundamentals.html:279
+#: src/templates/strategy/fundamentals.html:280 src/templates/strategy/fundamentals.html:327
+#: src/templates/strategy/fundamentals.html:396
 msgid "Anarch"
 msgstr ""
 
@@ -377,11 +378,13 @@ msgstr ""
 msgid "Camarilla"
 msgstr ""
 
-#: src/navigation.py:160 src/templates/strategy/fundamentals.html:86 src/templates/strategy/fundamentals.html:469
+#: src/navigation.py:160 src/templates/strategy/bloat.html:146 src/templates/strategy/fundamentals.html:86
+#: src/templates/strategy/fundamentals.html:469
 msgid "Laibon"
 msgstr ""
 
-#: src/navigation.py:161 src/templates/strategy/fundamentals.html:437
+#: src/navigation.py:161 src/templates/strategy/bloat.html:103 src/templates/strategy/bloat.html:104
+#: src/templates/strategy/bloat.html:268 src/templates/strategy/fundamentals.html:437
 msgid "Sabbat"
 msgstr ""
 
@@ -437,7 +440,7 @@ msgstr ""
 msgid "Harbingers of Skulls"
 msgstr "Émissaires des Crânes"
 
-#: src/navigation.py:179 src/templates/strategy/fundamentals.html:281
+#: src/navigation.py:179 src/templates/strategy/bloat.html:158 src/templates/strategy/fundamentals.html:281
 msgid "Imbued"
 msgstr "Illuminés"
 
@@ -1382,6 +1385,211 @@ msgstr "blessures"
 msgid "Table talk"
 msgstr "Discussion"
 
+#: src/templates/strategy/bloat.html:6
+msgid ""
+"Pool is the core resource of the game. The more the better: more pool means more life and more minions. All efficient"
+" decks have at least a basic <strong>bloat</strong> module: a group of cards designed to get pool back. Getting blood"
+" on uncontrolled vampires amounts to bloating, as the blood can easily be taken back using a few transfers."
+msgstr ""
+"La réserve d'influence est la ressource clé du jeu. Plus on en a, mieux on se porte : plus d'influence signifie une "
+"meilleure survie et plus de serviteurs. Tous les decks efficaces ont un module de <strong>régénération</strong> "
+"élémentaire : un ensemble de cartes destinées à regagner de l'influence. Regagner du sang sur des vampires non "
+"contrôlés revient à régénérer l'influence, puisque le sang peut facilement être récupéré grâce à quelques transferts."
+
+#: src/templates/strategy/bloat.html:14
+msgid "Leeching"
+msgstr "Transfusion"
+
+#: src/templates/strategy/bloat.html:16
+msgid ""
+"Getting pool back by taking blood from one’s minions — commonly known as <strong>leeching</strong> — is the most "
+"common way to bloat. This technique makes use of the following Master cards:"
+msgstr ""
+"Récupérer de l'influence en prenant le sang de ses serviteurs — une technique communément appelée la "
+"<strong>transfusion</strong> — est la méthode de régénération la plus répandue. Cette technique peut faire usage des "
+"cartes Maître suivantes :"
+
+#: src/templates/strategy/bloat.html:38
+#, python-format
+msgid ""
+"It does take some Master cards slots out in a deck, and it leaves your minions somewhat weakened. Still, a vampire "
+"may act and use all its disciplines even with only 1 blood left. The two trifles, %(villein)s and %(vessel)s, are "
+"appealing as they do not use up a Master card slot, but they are a bit less efficient thant their plain counterparts."
+msgstr ""
+"Cela prend quelques emplacement de cartes Maître dans un deck, et laisse les serviteurs quelque peu affaiblis. Malgré"
+" tout, un vampire peut agir et utiliser toutes ses disciplines même avec un seul point de sang. Les deux cartes "
+"triviales, %(villein)s and %(vessel)s, sont tentantes car elles ne consomment pas d'action de Maître, mais elles sont"
+" aussi un peu moins efficaces que leurs équivalents standards."
+
+#: src/templates/strategy/bloat.html:49
+msgid "Villein errata"
+msgstr "Errata de Villein"
+
+#: src/templates/strategy/bloat.html:51
+#, python-format
+msgid ""
+"%(villein)s has seen its card text change in June 2018: it now has an <strong>upper limit of 5 blood</strong>, which "
+"was not the case before. Be careful when reading an older deck list, as it may use %(villein)s where %(minion_tap)s "
+"would be a better fit nowadays."
+msgstr ""
+"Le text de %(villein)s a été changé en juin 2018 : il a maintenant une <strong>limite de 5 sang</strong>, ce qui "
+"n'était pas le cas auparavant. Soyez attentif en consultant une ancienne decklist, car elle peut utiliser %(villein)s"
+" là où %(minion_tap)s serait plus adéquat de nos jours."
+
+#: src/templates/strategy/bloat.html:63
+#, python-format
+msgid ""
+"Decks that use this technique may improve it by including some cards to regenerate their vampires blood, as it has "
+"effectively become a source of pool. %(hunting_grounds)s can be used – there is one for almost each clan, plus more "
+"generic hunting grounds or cards that have a similar effect:"
+msgstr ""
+"Les decks qui utilisent cette technique peuvent l'améliorer en incluant des cartes pour régénérer le sang de leurs "
+"vampires, puisqu'il est devenu une source d'influence. Les %(hunting_grounds)s peuvent être utilisés – il y en a un "
+"pour chaque clan, plus des hunting grounds génériques ou des cartes qui ont des effets similaires :"
+
+#: src/templates/strategy/bloat.html:75 src/templates/strategy/bloat.html:127 src/templates/strategy/bloat.html:131
+msgid "needs to be defended"
+msgstr "doit être défendu"
+
+#: src/templates/strategy/bloat.html:76
+msgid "City titled vampires"
+msgstr "Vampires avec un titre de ville"
+
+#: src/templates/strategy/bloat.html:87
+msgid "Black Hand, costly and fragile"
+msgstr "Black Hand, coûteux et fragile"
+
+#: src/templates/strategy/bloat.html:90
+msgid "costly and fragile"
+msgstr "coûteux et fragile"
+
+#: src/templates/strategy/bloat.html:91
+msgid "costly and less efficient"
+msgstr "coûteux et moins efficace"
+
+#: src/templates/strategy/bloat.html:94
+msgid ""
+"Finally, a handful of cards can augment the blood amount vampires get from hunting, which is another way to "
+"regenerate their blood:"
+msgstr ""
+"Enfin, une poignée de cartes augmentent la quantité de sang que les vampires peuvent récupérer en chassant, ce qui "
+"est une autre manière de régénérer leur sang :"
+
+#: src/templates/strategy/bloat.html:106
+msgid "Master bloating"
+msgstr "Régénération par cartes Maître"
+
+#: src/templates/strategy/bloat.html:108
+msgid ""
+"Another alternative is to let the minions use their blood as they see fit and focus on generating pool directly using"
+" Master cards. A few cards allow this:"
+msgstr ""
+"Une autre alternative est de laisser les serviteurs utiliser leur sang comme ils le souhaitent et se concentrer sur "
+"générer de l'influence directement en utilisant des cartes Maître. Quelques cartes le permettent :"
+
+#: src/templates/strategy/bloat.html:119
+#, python-format
+msgid "(uses up a lot of Master slots, best in an MMPA archetypes like %(girls)s)"
+msgstr "(consomme beaucoup d'emplacements de cartes Maître, a sa place dans les archétypes MMPA comme %(girls)s)"
+
+#: src/templates/strategy/bloat.html:161
+#, python-format
+msgid ""
+"Generic investments %(secret_horde)s and %(protracted_investment)s are rarely played, as they need many Master "
+"actions and %(ashur_tablets)s are generally preferred when one has enough master actions to play them."
+msgstr ""
+"Les investissements génériques %(secret_horde)s et %(protracted_investment)s sont rarement joués, puisqu'ils "
+"consomment une action de Maître et qu'%(ashur_tablets)s leur est généralement préféré lorsque l'on dispose d'assez "
+"d'actions de Maître pour les jouer."
+
+#: src/templates/strategy/bloat.html:173
+msgid "Clan masters"
+msgstr "Cartes maître de clan"
+
+#: src/templates/strategy/bloat.html:174
+msgid "5 clans give access to a unique location generating pool:"
+msgstr "5 clans donnent accès à un lieu unique qui génère de l'influence :"
+
+#: src/templates/strategy/bloat.html:198
+#, python-format
+msgid ""
+"<p> Fast decks can rely on the fact they should score their first Victory Point early and use %(momentums_edge)s and "
+"%(gambit_accepted)s. </p> <p> Finally, those ready to pay the price can even sacrifice some vampires to get some pool"
+" back with %(golconda_inner_peace)s, %(khobar_towers_al_khubar)s (%(img_clan_followers_of_set)s) or "
+"%(redeem_the_lost_soul)s. </p> <h2 id=\"action-bloating\">Action bloating</h2> <p> The last alternative is to use "
+"actions directly to bloat. This is excellent if the action has a powerful alternative, like the infamous %(DOM)s "
+"%(govern_the_unaligned)s or %(PRE)s %(enchant_kindred)s and %(scouting_mission)s, or if the bloat is a side-effect of"
+" a useful action, like %(PRE)s %(legal_manipulations)s and %(social_charm)s, or %(DEM)s %(kindred_spirits)s. </p> <p>"
+" Actions getting blood on uncontrolled vampires with no alternative are less efficient. They can still come in handy "
+"when used in swarm constructs to get many vampiers out quickly, as is the case for %(img_clan_toreador_anti)s "
+"%(art_scam)s and Black Hand %(reunion_kamut)s, but otherwise they are only used sparsingly. %(img_clan_guruhi)s "
+"%(founders_of_the_ebony_kingdom)s and %(img_clan_assamite)s %(khabar_glory)s deserve a special motion, as they are "
+"unusually high on blood gain. </p>"
+msgstr ""
+"<p> Les decks rapides peuvent compter sur le fait qu'ils devraient marquer leur premier Point de Victoire rapidement "
+"pour jouer %(momentums_edge)s et %(gambit_accepted)s. </p> <p> Enfin, ceux qui sont prêts à en payer le prix peuvent "
+"sacrifier quelques vampires pour récupérer de l'influence avec %(golconda_inner_peace)s, %(khobar_towers_al_khubar)s "
+"(%(img_clan_followers_of_set)s) ou %(redeem_the_lost_soul)s. </p> <h2 id=\"action-bloating\">Régénération par "
+"action</h2> <p> La dernière alternative est d'utiliser des actions directement pour régénérer l'influence. C'est "
+"excellent si l'action présente une alternative puissante, comme le fameux %(DOM)s %(govern_the_unaligned)s ou %(PRE)s"
+" %(enchant_kindred)s et %(scouting_mission)s, ou si la régénération est un effet de bord d'une action déjà utile, "
+"comme %(PRE)s %(legal_manipulations)s et %(social_charm)s, ou %(DEM)s %(kindred_spirits)s. </p> <p> Les actions "
+"permettant de mettre du sang sur des vampires non contrôlés sans alternative sont moins efficaces. Elles peuvent tout"
+" de même s'avérer utiles quand elles sont utilisées dans des decks d'essaim pour sortir beaucoup de vampires "
+"rapidement, comme c'est le cas pour %(img_clan_toreador_anti)s %(art_scam)s et %(reunion_kamut)s pour la Black Hand, "
+"mais elles ne sont autrement utilisées qu'avec parcimonie. %(img_clan_guruhi)s %(founders_of_the_ebony_kingdom)s et "
+"%(img_clan_assamite)s %(khabar_glory)s méritent une mention spéciale car elles entraînent un gain d'influence "
+"exceptionnellement haut. </p>"
+
+#: src/templates/strategy/bloat.html:249
+msgid "Vote bloating"
+msgstr "Régénération par vote"
+
+#: src/templates/strategy/bloat.html:251
+msgid ""
+"Most standard actions only generate bloats between 1 and 3 points. Some political actions, however, can produce "
+"higher bloats if they get through. They are so efficient, virtually every political oriented deck include some of "
+"them:"
+msgstr ""
+"La plupart des actions standard ne régénèrent qu'1 à 3 points. Quelques actions politiques, cependant, peuvent "
+"produire une régénération plus importante si elles passent. Elles sont si efficaces qu'à peu près tous les decks "
+"politiques en incluent :"
+
+#: src/templates/strategy/bloat.html:263 src/templates/strategy/fundamentals.html:265
+msgid "Prince or Justicar"
+msgstr "Prince ou Justicar"
+
+#: src/templates/strategy/bloat.html:265 src/templates/strategy/fundamentals.html:56
+#: src/templates/strategy/fundamentals.html:61 src/templates/strategy/fundamentals.html:76
+#: src/templates/strategy/fundamentals.html:85 src/templates/strategy/fundamentals.html:159
+#: src/templates/strategy/fundamentals.html:210 src/templates/strategy/fundamentals.html:431
+msgid "and"
+msgstr "et"
+
+#: src/templates/strategy/bloat.html:266 src/templates/strategy/fundamentals.html:216
+msgid "Big capacity vampires"
+msgstr "Vampires de haute capacité"
+
+#. not tokens, strategies against bloat
+#: src/templates/strategy/bloat.html:275
+msgid "Counters"
+msgstr "Contres"
+
+#: src/templates/strategy/bloat.html:277
+#, python-format
+msgid ""
+"Most bloat modules are focused on Master cards. This entails that countering those masters with %(sudden_reversal)s, "
+"%(wash)s or %(bleeding_the_vine)s is a valid offensive strategy. Technically, they amount to an indirect bleed: "
+"preventing one's prey to get three pools from %(minion_tap)s or %(liquidation)s is equivalent to removing three pools"
+" from her using a bleed. The same logic applies to stopping pool generating political actions with "
+"%(delaying_tactics)s."
+msgstr ""
+"La plupart des modules de régénération utilisent des cartes Maître. Cela implique que contrer ces cartes Maître avec "
+"%(sudden_reversal)s, %(wash)s ou %(bleeding_the_vine)s est une stratégie offensive valide. Techniquement, cela "
+"revient à une morsure indirecte : empêcher sa proie de gagner 3 influence grâce à %(minion_tap)s ou %(liquidation)s "
+"équivaut à en lui en faire perdre 3 avec une morsure. La même logique peut être appliquée pour stopper les actions "
+"politiques de régénération avec %(delaying_tactics)s."
+
 #: src/templates/strategy/combat.html:10
 msgid "rush decks"
 msgstr "decks de rush"
@@ -1470,13 +1678,6 @@ msgstr "vampires plus jeunes et alliés"
 #: src/templates/strategy/fundamentals.html:54 src/templates/strategy/fundamentals.html:56
 msgid "with"
 msgstr "avec"
-
-#: src/templates/strategy/fundamentals.html:56 src/templates/strategy/fundamentals.html:61
-#: src/templates/strategy/fundamentals.html:76 src/templates/strategy/fundamentals.html:85
-#: src/templates/strategy/fundamentals.html:159 src/templates/strategy/fundamentals.html:210
-#: src/templates/strategy/fundamentals.html:431
-msgid "and"
-msgstr "et"
 
 #: src/templates/strategy/fundamentals.html:65
 msgid "Imbued with"
@@ -1632,10 +1833,6 @@ msgstr "Prince ou Justicar, seulement sur un Mathusalem avec moins d'influence"
 msgid "both have the same effect"
 msgstr "les deux ont le même effet"
 
-#: src/templates/strategy/fundamentals.html:216
-msgid "Big capacity vampires"
-msgstr "Vampires de haute capacité"
-
 #: src/templates/strategy/fundamentals.html:220
 msgid "Independant or Anarch"
 msgstr "Indépendant ou Anarch"
@@ -1674,10 +1871,6 @@ msgid ""
 msgstr ""
 "Quelques cartes fournissent un effet de réveil ou de redressement durant le tour des adversaires, ce qui permet à un "
 "vampire incliné de réagir et d'intercepter des actions."
-
-#: src/templates/strategy/fundamentals.html:265
-msgid "Prince or Justicar"
-msgstr "Prince ou Justicar"
 
 #: src/templates/strategy/fundamentals.html:267 src/templates/strategy/fundamentals.html:268
 msgid "titled Sabbat"
@@ -1886,3 +2079,4 @@ msgstr "Premier Sang : Tremere"
 #: src/templates/strategy/index.html:46
 msgid "All rights reserved."
 msgstr "Tous droits réservés."
+
