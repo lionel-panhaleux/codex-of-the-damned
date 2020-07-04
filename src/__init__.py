@@ -156,15 +156,20 @@ def index(lang_code=app.config["BABEL_DEFAULT_LOCALE"], page="index.html"):
     return flask.render_template(page, **context)
 
 
-def _link(page, name=None, _class=None, locale=None, _anchor=None, **params):
-    if not page or not page.url:
-        return ""
-    name = name or page.name
+def _i18n_url(page, _anchor=None, locale=None, **params):
     url = "/" + (locale or get_locale()) + page.url
     if params:
         url += "?" + urllib.parse.urlencode(params)
     if _anchor:
         url += "#" + _anchor
+    return url
+
+
+def _link(page, name=None, _anchor=None, _class=None, locale=None, **params):
+    if not page or not page.url:
+        return ""
+    name = name or page.name
+    url = _i18n_url(page, _anchor, **params)
     if _class:
         _class = f"class={_class} "
     else:
@@ -183,6 +188,11 @@ def linker():
         path = path[:-5]
     if path[-1:] == "/":
         path = path[:-1]
+
+    def i18n_url(page, _anchor=None, **params):
+        return _i18n_url(
+            navigation.HELPER.get(page, {}).get("self"), _anchor=_anchor, **params
+        )
 
     def link(page, name=None, _anchor=None, **params):
         return _link(
@@ -210,6 +220,7 @@ def linker():
         return flask.Markup(f'<a target="_blank" href="{url}">{name}</a>')
 
     return dict(
+        i18n_url=i18n_url,
         link=link,
         translation=translation,
         top=top,
