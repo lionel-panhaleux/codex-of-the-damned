@@ -1,41 +1,75 @@
 {% extends "strategy/_layout.html" %}
 
 {% block content %}
-<h1 id="bloat">Table talk</h1>
+<h1>{{ _('Table talk') }}</h1>
 <p>
+    {% trans trimmed %}
     <em>« Table talk »</em> is an important part of the game.
     The best players are ruthless negotiators and rely on their skill to topple the game in their favour.
+    {% endtrans %}
 </p>
-<h2 id="negociation">Negociation</h2>
+<h2 id="negociation">{{ _('Negociation') }}</h2>
 <p>
+    {% trans trimmed %}
     Making tactical deals with other players during the game is the heart of table talk.
-    A lot of things can be discussed and negociated around the table. The key to successful negociation
-    is to determine what every other player <strong>can offer</strong> and what she <strong>may desire</strong>.
+    A lot of things can be discussed and negociated around the table.
+    The key to successful negociation is to determine what every other player
+    <strong>can offer</strong> and what she <strong>may desire</strong>.
     Then, almost anything can be dealt on a table.
+    {% endtrans %}
 </p>
-<p>Some tactical deals are fairly common:</p>
+<p>{{ _('Some tactical deals are fairly common:') }}</p>
 <ul>
-    <li>Agreeing for a <strong>single damage combat</strong> (only simple hand strikes) before blocking a bounced bleed.
-    </li>
-    <li><strong>Not intercepting</strong> an action, often on the ground that the result does not hinder the other
-        player.</li>
-    <li>Letting another player <strong>borrow a card</strong> unopposed, like
-        {{ card("The Rack") }} or
-        {{ card("Powerbase: Montreal") }}.
-    </li>
-    <li>Getting another player's vampire <strong>out of torpor</strong>; it is a directed action, harder to block.</li>
-    <li>Asking a combat-oriented deck to <strong>take down a vampire</strong>.</li>
     <li>
-        Aggreing to <strong>use {{ card("Ashur Tablets") }}
-            alternatively</strong> to avoid crippling one another.
+        {% trans trimmed %}
+        Agreeing for a <strong>single damage combat</strong> (only simple hand strikes)
+        before blocking a bounced bleed.
+        {% endtrans %}
+    </li>
+    <li>
+        {% trans trimmed %}
+        <strong>Not intercepting</strong> an action,
+        often on the ground that the result does not hinder the other player.
+        {% endtrans %}
+    </li>
+    <li>
+        {% trans trimmed
+            the_rack=card("The Rack"),
+            powerbase_montreal=card("Powerbase: Montreal")
+        %}
+        Letting another player <strong>borrow a card</strong> unopposed, like
+        {{ the_rack }} or {{ powerbase_montreal }}.
+        {% endtrans %}
+    </li>
+    <li>
+        {% trans trimmed %}
+        Getting another player's vampire <strong>out of torpor</strong>;
+        it is a directed action, harder to block.
+        {% endtrans %}
+    </li>
+    <li>
+        {% trans trimmed %}
+        Asking a combat-oriented deck to <strong>take down a vampire</strong>.
+        {% endtrans %}
+    </li>
+    <li>
+        {% trans trimmed
+            ashur_tablets=card("Ashur Tablets")
+        %}
+        Aggreing to <strong>use {{ ashur_tablets }} alternatively</strong>
+        to avoid crippling one another.
+        {% endtrans %}
     </li>
 </ul>
 <p>
+    {% trans trimmed %}
     Deals can relate to something <em>not</em> being done instead of something being offered.
     Dealing to <em>not</em> bleed, <em>not</em> block or <em>not</em> rush are often proposed to
     one's prey or predator.
+    {% endtrans %}
 </p>
 <div class="tip">
+    {% trans trimmed %}
     <h3>The unbearable lightness of deals</h3>
     <p>
         They are two important things to keep in mind with deals:
@@ -54,89 +88,120 @@
     <p>
         Deals are a powerful tool but they should still be considered with some lightness.
     </p>
+    {% endtrans %}
 </div>
 <p>
+    {% trans trimmed %}
     Finally, on the tournament scene, <strong>table splits</strong> deals are commonplace. For this kind of deals,
     2 or 3 prominent players agree upon a repartition of Victory Points by deciding who gets to oust who.
     This is often key in the end game.
+    {% endtrans %}
 </p>
 <h2>
-    Information, Deception and Standing
+    {{ _('Information, Deception and Standing') }}
 </h2>
 <p>
+    {% trans trimmed %}
     Table talk is not only about negociation, it is also about manipulation.
     Multiple techniques are used for deception and information gathering. A common tactic is to
     <strong>announce</strong> every action one as the intention to undertake before playing it.
     It has multiple positive effects:
+    {% endtrans %}
 </p>
 <ul>
     <li>
+        {% trans trimmed %}
         It is a way to <strong>gather information</strong> about the opponents play:
         can they block, bounce or counter?
+        {% endtrans %}
     </li>
     <li>
+        {% trans trimmed %}
         It opens a window of negociation to get an action through and <strong>avoid possible blocks</strong>.
+        {% endtrans %}
     </li>
     <li>
+        {% trans trimmed %}
         It makes the player <strong>appear more affable</strong>, as he looks like he tries
         to get other players aproval before deciding on his actions. Keeping that in mind, it is a good play
         to accept to delay an action if it causes an issue for an ally, or to excuse oneself when undertaking
         an aggressive action toward another player. Being likeable is an excellent asset throughout the game.
+        {% endtrans %}
     </li>
     <li>
+        {% trans trimmed %}
         It gives an occasion to use a bit of deception by commenting the action and
         <strong>mislead the opponents</strong> about its long term effect or importance to the deck strategy.
+        {% endtrans %}
     </li>
 </ul>
 <div class="tip">
-    <h3>Decision timing</h3>
+    <h3>{{ _('Decision timing') }}</h3>
     <p>
+        {% trans trimmed %}
         The time someone takes to ponder wether or not they react to a play or an action is an indication
         of their hand content. One should keep focused on the decision timing of the other players,
         while trying to be as unconspicuous as possible oneself.
+        {% endtrans %}
     </p>
     <ul>
         <li>
+            {% trans trimmed %}
             The best but hardest way to be impenetrable is to always take a similar time to ponder any reaction,
             even when none is possible. This is easier said than done, though.
+            {% endtrans %}
         </li>
         <li>
+            {% trans trimmed
+                sudden_reversal=card("Sudden Reversal")
+            %}
             An easier way is to <strong>act as if</strong> one had a useful reaction in hand when it's not
             the case. Asking for two seconds to ponder during another player turn to hint at a counter like
-            {{ card("Sudden Reversal") }} without having it in
-            hand is a cheap but effective move.
+            {{ sudden_reversal }} without having it in hand is a cheap but effective move.
+            {% endtrans %}
         </li>
         <li>
+            {% trans trimmed %}
             The easiest way to stay composed is to <strong>decide in advance</strong> what one's reaction will be.
             For example, with a wake in hand, one can decide <em>beforehand</em> to wake only if a bleed above
             one pool is anounced. This way the pondering time does not show so much.
+            {% endtrans %}
         </li>
     </ul>
 </div>
 <p>
+    {% trans trimmed %}
     Another tool of manipulation is about the players <strong>standing</strong> around the table.
     A handful of casual comments can go a long way.
     The basic idea is to decide on a <em>posture</em> quite early in the game:
     which deck is a threat on the table and which is the underdog.
     If the other players aggree with the posture, this can have the following effects:
+    {% endtrans %}
 </p>
 <ul>
     <li>
+        {% trans trimmed %}
         The <strong>threat</strong> will come under pressure and its allies will hesitate to deal with them.
+        {% endtrans %}
     </li>
     <li>
+        {% trans trimmed %}
         The <strong>underdog</strong> is more likely to be ignored by the other players and miss some deals
         opporunities.
+        {% endtrans %}
     </li>
 </ul>
 <p>
+    {% trans trimmed %}
     Of course, one should try to <strong>lay low</strong>, avoid to focus the table attention to oneself
     and <em>never</em> present himself as the threat.
     The posture should be expressed with a bit of subtelty and always <em>pleasantly</em>:
     an aggressive posture is very likely to drive the other players against the initiator, plus, remember,
     this is a game and should stay enjoyable even for your opponents.
+    {% endtrans %}
 </p>
-<h2>Table strategies</h2>
+<h2>{{ _('Table strategies') }}</h2>
+{% trans trimmed %}
 <p>
     Not everything around the table is about talking. Having a good sense of the table balance is essential to
     build an efficient table strategy as well.
@@ -147,7 +212,9 @@
     and the grand-predator against the predator. Cultivating good rapports with them is important in the beginning.
     As the game progress though, they can become threats themselves.
 </p>
+{% endtrans %}
 <div class="tip">
+    {% trans trimmed %}
     <h3>Hopping</h3>
     <p>
         A strategy uniquely available to vote constructs, hopping is going against the grand-prey pool
@@ -155,33 +222,42 @@
         they do not get the chance to block the undirected vote actions until they are either
         the prey or the predator.
     </p>
+    {% endtrans %}
 </div>
 <p>
+    {% trans trimmed %}
     One should of course focus on <strong>eliminating its prey</strong>. However,
     when the predator is too threatening, some builds have the ability to <strong>go reverse</strong>,
     taking aggressive actions against their predator to oust them before their prey.
     A full reverse, taking predators down one after another for a 2 VP game win at the end, is hard to achieve:
     each predator gets 6 more pool out of the oust. However, going at least partially reverse during a game,
     ousting or crippling the predator to diminish the pressure, is a real possibility for some decks.
+    {% endtrans %}
 </p>
-<h2>Predator-Prey Continuum</h2>
+<h2>{{ _('Predator-Prey Continuum') }}</h2>
 <p>
+    {% trans trimmed
+        basic_concepts_in_deck_construction='<a target="_blank" href="%(url)s">Basic Concepts in Deck Construction</a>'|format(url=url_for('static', filename='pdf/basic-concepts-in-deck-construction.pdf'))|safe
+    %}
     The Predator-Prey Continuum is a notion developped by Gregory Williams in his
-    <a href="{{ url_for('static', filename='pdf/basic-concepts-in-deck-construction.pdf') }}">Basic Concepts in Deck
-        Construction</a>.
+    {{ basic_concepts_in_deck_construction }}.
     The gist of it is that when a player applies pressure to his prey, the effect ripples around the table
     and, depending on the number of players, the consequences vary. See the following schematics,
     representing, 5, 4 and 3-players continuum, where M<sub>1</sub>, M<sub>2</sub>, M<sub>3</sub>,
     M<sub>4</sub> and M<sub>5</sub> are the five Methusalah.
+    {% endtrans %}
 </p>
 <div>
     <img src="{{ url_for('static', filename='img/pp-continuum.svg') }}" alt="Predator-Prey Continuum">
 </div>
+{% trans trimmed
+    lunge_move=link("/strategy/fundamentals", _("lunge move"), "lunge")    
+%}
 <p>
     If a strong (▲) player (M<sub>1</sub>) pressures his prey, then
-    his prey (M<sub>2</sub>) has to focus on defense ({{ card("▲") }})
-    and his grand-prey (M<sub>3</sub>) gets strong (▲) and can put pressure on <em>his</em> prey (M<sub>4</sub>),
-    and so on.
+    his prey (M<sub>2</sub>) has to focus on defense (△)
+    and his grand-prey (M<sub>3</sub>) gets strong (▲) and can put pressure
+    on <em>his</em> prey (M<sub>4</sub>), and so on.
 </p>
 <p>
     In a game with an even number of players (4 players in the example), this is a stable situation: cross-table
@@ -191,9 +267,10 @@
 <p>
     This systemic ripple effect, although not so clear-cut in practice and depending a lot on the type of decks
     on the table, is a good model of how the game flows. It emphasizes how important it is for one to nail his
-    <strong>lunge</strong> move in a five or three players setup: if the lunge works,
+    <strong>{{ lunge_move }}</strong> in a five or three players setup: if the lunge works,
     you get back to an even number and a favorable situation. If it fails, you stay on an odd number of players
     and have just put a lot of pressure on your prey.
     More often than not, this means the pressure will come back at you in your very next turn.
 </p>
+{% endtrans %}
 {% endblock %}
