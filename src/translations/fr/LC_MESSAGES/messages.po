@@ -5,8 +5,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: codex 0.X\n"
 "Report-Msgid-Bugs-To: lionel.panhaleux+codex@gmail.com\n"
-"POT-Creation-Date: 2020-07-03 14:07+0200\n"
-"PO-Revision-Date: 2020-07-02 08:52+0200\n"
+"POT-Creation-Date: 2020-07-04 08:50+0200\n"
+"PO-Revision-Date: 2020-07-04 08:50+0200\n"
 "Last-Translator: Lionel Panhaleux <lionel.panhaleux+codex@gmail.com>\n"
 "Language: fr\n"
 "Language-Team: codex-fr <lionel.panhaleux+codex@gmail.com>\n"
@@ -37,7 +37,7 @@ msgstr "Combat"
 msgid "Bloat"
 msgstr "Régénération"
 
-#: src/navigation.py:62
+#: src/navigation.py:62 src/templates/strategy/deck-building.html:10
 msgid "Deck building"
 msgstr "Construction de deck"
 
@@ -1341,7 +1341,7 @@ msgstr ""
 "l'interception. Cominé à %(falcons_eye)s et %(speak_with_spirits)s, ainsi que %(ani)s %(cats_guidance)s, il fournit "
 "un module d'interception comparable à %(aus)s."
 
-#: src/templates/best-cards/clans/akunanse.html:14 src/templates/strategy/deck-building.html:239
+#: src/templates/best-cards/clans/akunanse.html:14 src/templates/strategy/deck-building.html:234
 msgid "combat ends"
 msgstr "fin de combat"
 
@@ -1377,7 +1377,7 @@ msgstr ""
 msgid "block denial"
 msgstr "déni de blocage"
 
-#: src/templates/best-cards/generic/no-discipline.html:242 src/templates/strategy/deck-building.html:240
+#: src/templates/best-cards/generic/no-discipline.html:242 src/templates/strategy/deck-building.html:235
 msgid "bruise"
 msgstr "érosion"
 
@@ -1448,6 +1448,7 @@ msgstr ""
 "pour chaque clan, plus des hunting grounds génériques ou des cartes qui ont des effets similaires :"
 
 #: src/templates/strategy/bloat.html:75 src/templates/strategy/bloat.html:127 src/templates/strategy/bloat.html:131
+#: src/templates/strategy/deck-building.html:137
 msgid "needs to be defended"
 msgstr "doit être défendu"
 
@@ -1563,10 +1564,10 @@ msgstr "Prince ou Justicar"
 #: src/templates/strategy/combat.html:65 src/templates/strategy/combat.html:70 src/templates/strategy/combat.html:75
 #: src/templates/strategy/combat.html:80 src/templates/strategy/combat.html:222 src/templates/strategy/combat.html:228
 #: src/templates/strategy/combat.html:233 src/templates/strategy/combat.html:319
-#: src/templates/strategy/fundamentals.html:56 src/templates/strategy/fundamentals.html:61
-#: src/templates/strategy/fundamentals.html:76 src/templates/strategy/fundamentals.html:85
-#: src/templates/strategy/fundamentals.html:159 src/templates/strategy/fundamentals.html:210
-#: src/templates/strategy/fundamentals.html:431
+#: src/templates/strategy/deck-building.html:202 src/templates/strategy/fundamentals.html:56
+#: src/templates/strategy/fundamentals.html:61 src/templates/strategy/fundamentals.html:76
+#: src/templates/strategy/fundamentals.html:85 src/templates/strategy/fundamentals.html:159
+#: src/templates/strategy/fundamentals.html:210 src/templates/strategy/fundamentals.html:431
 msgid "and"
 msgstr "et"
 
@@ -1652,7 +1653,8 @@ msgstr ""
 #: src/templates/strategy/combat.html:232 src/templates/strategy/combat.html:236 src/templates/strategy/combat.html:237
 #: src/templates/strategy/combat.html:238 src/templates/strategy/combat.html:240 src/templates/strategy/combat.html:244
 #: src/templates/strategy/combat.html:247 src/templates/strategy/combat.html:249
-#: src/templates/strategy/fundamentals.html:54 src/templates/strategy/fundamentals.html:56
+#: src/templates/strategy/deck-building.html:201 src/templates/strategy/fundamentals.html:54
+#: src/templates/strategy/fundamentals.html:56
 msgid "with"
 msgstr "avec"
 
@@ -1858,29 +1860,440 @@ msgstr ""
 "cartes permettent à un vampire de <strong>fixer la portée</strong> directement, sans laisser l'opportunité à "
 "l'adversaire de manœuvrer :"
 
-#: src/templates/strategy/deck-building.html:210
-msgid "bleed"
-msgstr "Mordre"
+#: src/templates/strategy/deck-building.html:12
+msgid "Over time, a handful of excellent ressources have been created on the subject by the community:"
+msgstr "Au fil du temps, une poignée d'excellentes ressources ont été crées sur le sujet par la communauté :"
 
-#: src/templates/strategy/deck-building.html:211
+#: src/templates/strategy/deck-building.html:17 src/templates/strategy/deck-building.html:22
+#: src/templates/strategy/deck-building.html:25 src/templates/strategy/deck-building.html:28
+#: src/templates/strategy/deck-building.html:33 src/templates/strategy/deck-building.html:38
+msgid "by"
+msgstr "de"
+
+#: src/templates/strategy/deck-building.html:42
+msgid "Modules and density"
+msgstr "Modules et densité"
+
+#: src/templates/strategy/deck-building.html:43
+#, python-format
+msgid ""
+"<p> Decks can be broken down in « modules »: group of cards with a similar objective. The percentage of cards each "
+"module contains is its density. As the normal hand size is seven, the expectation (<em>ie.</em> the number of cards "
+"of the module you can expect in any given hand) is the density time seven. </p> <p> <strong>Spam</strong> modules "
+"have a density over 25%(pct)s entail an expectation over 1.75: more often than not, two cards of the module in hand. "
+"This is a rare distribution, but necessary to continuously play a given card multiple times every turn. </p> <p> "
+"<strong>Strong</strong> modules have a density between 14%(pct)s and 25%(pct)s and an expectation between 1 and 1.5: "
+"these cards will be used once or twice at each turn. Most decks have one or multiple strong modules, and their "
+"strategy can often be identified by checking them. </p> <p> <strong>Standard</strong> modules have a density between "
+"7%(pct)s and 14%(pct)s have an expectation between ½ and 1. They are supposed to be used regularly but not "
+"necessarily every turn. Strong and standard modules cards can be discarded when needed, as one can be confident to "
+"get another in hand quite soon. </p> <p> <strong>Tactical</strong> modules have a density below 7%(pct)s and "
+"typically provide specific support. From unique permanents and events to counters or responses to expected counters, "
+"they provide build-up power and security. As these cards are drawn sporadically, they are meant to be kept in hand "
+"for special cases or immediately discarded if the context is not favourable. In case they might come in handy, they "
+"should be kept in hand until needed: the sparse distribution of the module makes sure the cards will not jam the "
+"hand. </p>"
+msgstr ""
+"<p> Les decks peuvent être divisés en « modules » : des groupes de cartes partageant un même objectif. Le pourcentage"
+" de cartes contenues dans chaque module est sa densité. Comme la taille de main normale est de sept, L'espérance "
+"(<em>càd</em> le nombre de cartes du module que l'on peut espérer avoir dans une main donnée) est égale à la densité "
+"multipliée par sept. </p> <p> Les modules de <strong>spam</strong> ont une densité de plus de 25%(pct)s ce qui "
+"entraîne une espérance de plus de 1,75 : un peu moins de deux cartes du module dans la main. C'est une distribution "
+"rare, mais nécessaire pour jouer sans cesse la même carte plusieurs fois à chaque tour. </p> <p> Les modules "
+"<strong>primaires</strong> ont une densité entre 14%(pct)s et 25%(pct)s et une espérance entre 1 et 1,5 : ces cartes "
+"seront utilisées une à deux fois par tour. La plupart des decks ont plusieurs modules primaires et leur stratégie "
+"peut souvent être déduite en les analysant. </p> <p> Les modules <strong>secondaires</strong> ont une densité entre "
+"7%(pct)s et 14%(pct)s avec une espérance entre ½ et 1. Ils sont supposés être utilisés régulièrement, mais pas "
+"nécessairement à chaque tour. Les cartes des modules principaux et secondaires peuvent être défaussées au besoin, car"
+" on peut compter sur le fait de repiocher des cartes de ces modules rapidement. </p> <p> Les modules "
+"<strong>tactiques</strong> ont une densité en-dessous de 7%(pct)s et fournissent généralement un support bien "
+"spécifique. Des permanents uniques aux événements en passant par les contres ou les répliques aux contres attendus, "
+"ces cartes assurent sécurité et consolidation. Comme elles ne sont piochées que sporadiquement, le joueur est supposé"
+" les conserver en main pour un moment spécifique ou les défausser immédiatement si le contexte ne leur est pas "
+"favorable. Au cas où elles pourraient s'avérer utiles, elles devraient être gardées en main jusqu'au au moment "
+"adéquat : la distribution raréfiée du module permet de s'assurer que ces cartes n'enrayent pas la main. </p>"
+
+#: src/templates/strategy/deck-building.html:76
+#, python-format
+msgid ""
+"<h3>Master module</h3> <p> The Master module density depends on the rotation speed: one want to play one Master card "
+"per turn as much as possible, but not more. So the higher the rotation speed, the slimmer the master module density. "
+"Hence, the Master cards count stays stable across deck sizes: 12 to 15 Master cards plus, optionally, up to 6 or 7 "
+"Trifle. </p> <p> Some decks can use specific cards like %(the_parthenon)s to get more Master actions and hence play "
+"more Master cards in the deck, though: this is the <strong>M</strong>ulti <strong>M</strong>aster "
+"<strong>P</strong>hase <strong>A</strong>ctions (MMPA) strategy. </p>"
+msgstr ""
+"<h3>Module de cartes Maître</h3> <p> La densité du module de cartes Maître dépend de la vitesse de rotation : on "
+"désire jouer une carte Maître par tour autant que possible, mais pas plus. Donc plus haute est la vitesse de "
+"rotation, plus basse doit être la densité du module de cartes Maître. Par conséquent, le nombre de cartes Maître "
+"reste stable quelle que soit la taille du deck : 12 à 15 cartes Maître plus, éventuellement, jusqu'à 6 ou 7 cartes "
+"Triviales. </p> <p> Certains decks utilisent des cartes spécifiques comment %(the_parthenon)s pour obtenir plus "
+"d'actions de Maître et jouent donc plus de cartes Maître dans le deck : il s'agit de la stratégie dite de "
+"<strong>M</strong>ulti <strong>M</strong>aster <strong>P</strong>hase <strong>A</strong>ctions (MMPA). </p>"
+
+#: src/templates/strategy/deck-building.html:95
+msgid "Rotation"
+msgstr "Rotation"
+
+#: src/templates/strategy/deck-building.html:97
+msgid ""
+"Games usually last between 10 to 20 turns and decks are tailored with the peak card rotation speed in mind: the "
+"number of cards played on average between one unlock phase and the next, not counting the few first turns of build-"
+"up. The deck size should enable a peak rotation during 12 turns. The efficiency of a deck depends on its capacity to "
+"maintain an optimal rotation speed throughout the game: being stuck with no relevant card to play is a loosing "
+"situation."
+msgstr ""
+"Les parties durent en général 10 à 20 tours et les decks sont taillés en gardant en tête la vitesse de rotation de "
+"pointe : le nombre de cartes jouées en moyenne entre deux phases de redressement, sans compter les quelques premiers "
+"tours de mise en place. La taille du deck doit permettre une rotation de pointe pendant 12 tours. L'efficacité d'un "
+"deck dépend de sa capacité à maintenir une rotation optimale tout au cours de la partie : être coincé avec des cartes"
+" inutiles est une position perdante."
+
+#: src/templates/strategy/deck-building.html:106
+msgid ""
+"<h3>Deck size examples</h3> <p> 60 cards deck have a peak rotation of 5 cards maximum (5 × 12 = 60): in the mid-game "
+"it plays one master, three to four minion cards, and maybe a discard. This counts the whole turn, reactions included."
+" </p> <p> 90 cards deck have a peak rotation of 7 to 8 cards (90 ∕ 12 = 7.5): in the mid-game it plays one master, up"
+" to a full hand of minion cards and maybe a discard. </p>"
+msgstr ""
+"<h3>Exemples de tailles de decks</h3> <p> Un deck de 60 cartes a une rotation de point de 5 cartes maximum (5 × 12 = "
+"60) : en milieu de partie il joue une carte Maître, trois ou quatre cartes de serviteur, et peut-être une défausse. "
+"Cela prend en compte le tour complet, réactions comprises. </p> <p> Un deck de 90 cartes a une rotation de pointe de "
+"7 à 8 cartes (90 ∕ 12 = 7.5) : en milieu de partie il joue une carte Maître, jusqu'à une pleine main de cartes de "
+"serviteur et peut-être une défausse. </p>"
+
+#: src/templates/strategy/deck-building.html:119
+msgid ""
+"<strong>Cycling</strong> cards and purposefully increasing the rotation to get more efficient cards is sometimes the "
+"only way to keep the rotation fluid. Multiple cards are available to provide good cycling options:"
+msgstr ""
+"<strong>Recycler</strong> des cartes et augmenter volontairement la rotation pour piocher des cartes plus efficaces "
+"est parfois la seule manière de conserver une rotation fluide. Plusieurs cartes existent pour recycler :"
+
+#: src/templates/strategy/deck-building.html:141
+msgid "needs to be defended, best with Anarchs"
+msgstr "doit être défendu, plus utile avec des Anarch"
+
+#: src/templates/strategy/deck-building.html:145
+msgid "Sabbat only, best with Black Hand"
+msgstr "Sabbat seulement, plus utile avec des Black Hand"
+
+#: src/templates/strategy/deck-building.html:149
+#, python-format
+msgid ""
+"A card that is hard to play can <strong>jam</strong> the hand. Action modifiers, especially restricted stealth cards "
+"like %(forgotten_labyrinth)s, can only be used when the opponent tries to block, so they can jam. On the other hand, "
+"action cards like %(computer_hacking)s do not usually jam the hand as they can be played as soon as a minion is "
+"unlocked and ready to act. A tactical module for card rotation can be played in situations when jamming is expected."
+msgstr ""
+"Une carte difficile à jouer peut <strong>enrayer</strong> une main. Les modificateurs d'action, en particulier les "
+"cartes de discrétion comme %(forgotten_labyrinth)s, ne peuvent être utilisées que si un adversaire essaie de bloquer,"
+" donc elle peuvent enrayer. D'un autre côté, les cartes d'actions comme %(computer_hacking)s n'enrayent normalement "
+"pas la main puisqu'elles peuvent être jouées dès qu'un serviteur est redressé et prêt à agir. Un module tactique de "
+"cartes de rotation peut être joué lorsqu'un enrayement est à craindre."
+
+#: src/templates/strategy/deck-building.html:162
+msgid "Recursion"
+msgstr "Récursivité"
+
+#: src/templates/strategy/deck-building.html:164
+msgid ""
+"Even stronger than a good rotation, the <strong>recursion</strong> can be a strong point in a deck: it is the ability"
+" to fetch cards from the ash heap and get them back into hand. Only a few cards provide recursion:"
+msgstr ""
+"Encore mieux qu'une bonne rotation, la <strong>récursivité</strong> peut être le point fort d'un deck : il s'agit de "
+"la capacité à récupérer des cartes du tas de cendres pour les remettre en main. Seules quelques cartes fournissent de"
+" la récursivité :"
+
+#: src/templates/strategy/deck-building.html:172
+#, python-format
+msgid ""
+"%(ashur_tablets)s provide an excellent recursion as well as a powerful bloat. They need more than one Master phase "
+"action to be really effective, so %(the_parthenon)s can come in handy. The MMPA archetypes like %(girls)s make full "
+"use of this card."
+msgstr ""
+"%(ashur_tablets)s fournit une excellente récursivité avec une bonne régénération au passage. Il faut plus d'une "
+"action de Maître par tour pour que ce soit réellement efficace, donc %(the_parthenon)s peut s'avérer utile. Les "
+"archétypes MMPA comme %(girls)s font un plein usage de cette carte."
+
+#: src/templates/strategy/deck-building.html:184
+#, python-format
+msgid "%(the_sargon_fragment)s is the only other option open to all, but it is unique and uses up a lot of actions."
+msgstr "%(the_sargon_fragment)s est la seule autre option ouverte à tous, mais elle est unique et consomme beaucoup d'actions."
+
+#: src/templates/strategy/deck-building.html:191
+#, python-format
+msgid "Giovanni %(img_clan_giovanni)s have the excellent %(sudario_refraction)s and the lesser %(spiritual_guidance)s"
+msgstr ""
+"Les Giovanni %(img_clan_giovanni)s disposent de l'excellent %(sudario_refraction)s et de %(spiritual_guidance)s, plus"
+" spécifique"
+
+#: src/templates/strategy/deck-building.html:203
+msgid "Anarchs"
+msgstr "Anarchs"
+
+#: src/templates/strategy/deck-building.html:207
+msgid "Unique, Anarch"
+msgstr "Unique, Anarch"
+
+#: src/templates/strategy/deck-building.html:218
+msgid ""
+"Beyond its obvious advantage of fetching just the right card at the right time, a good recursion allows a deck to "
+"adapt itself to the context and the table situation."
+msgstr ""
+"Au-delà de l'avantage évident de piocher exactement la bonne carte au bon moment, une bonne récursivité permet à un "
+"deck de s'adapter au contexte et à la situation de table."
+
+#: src/templates/strategy/deck-building.html:224
+msgid "Building a deck in practice"
+msgstr "Construire un deck en pratique"
+
+#: src/templates/strategy/deck-building.html:226
+msgid "bleed"
+msgstr "morsure"
+
+#: src/templates/strategy/deck-building.html:225
+#, python-format
+msgid ""
+"<h3>1. Theme</h3> <p> The first step to build a deck is to choose a theme, a core principle to build upon. Multiple "
+"possibilities here: <ul> <li><strong>Clan</strong>: the most common theme, just choose a clan.</li> "
+"<li><strong>Discipline(s)</strong>: choose one or more disciplines you want to play.</li> <li><strong>Star</strong>: "
+"choose a star vampire with powerful disciplines or abilities.</li> <li><strong>Cards combination</strong>: choose a "
+"combination of two to four cards you want to play together.</li> </ul> </p> <h3>2. Four strategic pillars</h3> <p> "
+"The second step, before adding more cards to the deck, is to define the four pillars of the deck strategy: <ul> "
+"<li><strong>Payload:</strong> how the deck delivers pool damage to its prey. Does it %(bleed)s? Use %(politics)s? "
+"Some other pool damage device like %(anarch_revolt)s or %(dragonbound)s? </li> <li> <strong>Delivery system:</strong>"
+" how the deck makes sure the payload is delivered. If it bleeds, does it use stealth, block denial or an overwhelming"
+" number of actions? If it uses political actions, does it use stealth to get them through? How does it get enough "
+"votes? If it uses specific pool damage cards, do they need protection or support to apply their effect? </li> <li> "
+"<strong>Defense:</strong> how the deck avoids to lose. %(Bloating)s is the most generic defense: gaining pool works "
+"against all offensive strategies. Most decks use a modicum of bloat, some rely on a heavy bloat as their sole "
+"defense. <em>Blocking</em> is the second most generic defense: most offensive strategies use actions. More focused "
+"defensive tools are often used against the most widespread offensive strategies: %(bounce)s or <em>Reduction</em> "
+"against bleed, %(delaying_tactics)s and %(poison_pill)s against politics. </li> <li> <strong>Combat "
+"Management:</strong> how the deck deals with minion combats. If it does not plan to block, <em>support allies</em> to"
+" block rush actions can be enough. Some decks plan to avoid combat and use %(combat_ends)s effects when it cannot be "
+"avoided. Others plan to use combats to optimize %(bruise)s in their favor. </li> </ul> </p> <h3>3. Cards</h3> <p> Now"
+" select the crypt and library cards to put in the deck. The minions you select will define the range of disciplines "
+"you can use and, symmetrically, the library cards you choose and their requirements will define what minions you want"
+" in your crypt. </p> <p> During this card selection process, only add <strong>one copy of each card</strong> you want"
+" to play. Check the %(best_cards)s and the %(deck_archive)s for ideas. If you find tournament winning examples close "
+"to your deck list, they may give you ideas about what to include. </p> <p> At the end you should have <strong>4 to 12"
+" crypt cards and 20 to 40 library cards</strong>. If you have more, it is time to sit back and ponder what is really "
+"useful and what should be cut. Consider your four strategic pillars to help you decide: payload is more important "
+"than delivery, itself more important than defense, and combat management comes last. </p>"
+msgstr ""
+"<h3>1. Thème</h3> <p> La première étape pour construire un deck est de choisir un thème, un principe central sur "
+"lequel construire. Il y a ici plusieurs possibilités : <ul> <li><strong>Un clan</strong>: le thème le plus courant, "
+"il suffit de choisir un clan.</li> <li><strong>Discipline(s)</strong>: choisissez une ou plusieurs disciplines que "
+"vous désirez jouer.</li> <li><strong>Star</strong>: choisissez un vampire star avec une combinaison de disciplines ou"
+" un pouvoir puissants.</li> <li><strong>Combinaison de cartes</strong>: choisissez une combinaison de deux à quatre "
+"cartes que vous souhaitez jouer.</li> </ul> </p> <h3>2. Quatre piliers stratégiques</h3> <p> La seconde étape, avant "
+"d'ajouter des cartes, est de définir les quatre piliers de la stratégie du deck : <ul> <li><strong>La charge utile "
+":</strong> la manière dont le deck réduit l'influence de sa proie. Utilise-t-il la %(bleed)s ? La %(politics)s ? Un "
+"autre moyen de réduire l'influence comme %(anarch_revolt)s ou %(dragonbound)s ? </li> <li> <strong>Le système de "
+"transmission :</strong> la manière dont le deck s'assure que la charge utile est bien délivrée. S'il utilise la "
+"morsure, utilise-t-il de la discrétion, des dénis de blocage ou un nombre d'actions accablant ? S'il utilise des "
+"actions politiques, utilise-t-il de la discrétion pour les faire passer ? Comment fait-il pour s'assurer d'avoir "
+"assez de votes ? S'il utilise des cartes de réduction d'influence spécifiques, doit-il les protéger ou les soutenir "
+"pour s'assurer que leur effet est appliqué ? </li> <li> <strong>La défense :</strong> la manière dont le deck évite "
+"de perdre. La %(Bloating)s est la défense la plus générique : gagner de l'influence fonctionne quelle que soit la "
+"stratégie offensive des adversaires. La plupart des decks utilisent un minimum de régénération, certains se basent "
+"sur une importante régénération comme seule défense. <em>Bloquer</em> est la seconde stratégie de défense la plus "
+"générique : la plupart des stratégies offensives utilisent des actions. Des outils défensifs plus précis sont souvent"
+" utilisés contre les stratégies offensives les plus répandues : %(bounce)s ou <em>Réductions</em> contre la morsure, "
+"%(delaying_tactics)s ou %(poison_pill)s contre la politique. </li> <li> <strong>La gestion du combat :</strong> la "
+"manière dont le deck gère les combats de serviteurs. S'il ne prévoit pas de bloquer, des <em>alliés de support</em> "
+"pour bloquer les actions de rush peuvent suffire. Certains decks prévoient d'éviter le combat et utilisent des effets"
+" de %(combat_ends)s quand ils n'y parviennent pas. D'autres prévoient d'utiliser le combat pour optimiser "
+"l'%(bruise)s en leur faveur. </li> </ul> </p> <h3>3. Cartes</h3> <p> Il est maintenant temps de sélectionner les "
+"cartes de crypte et de bibliothèque à mettre dans le deck. Les serviteurs que vous sélectionnerez vont déterminer le "
+"spectre de disciplines que vous pourrez utiliser et, symmétriquement, les cartes de bibliothèque que vous choisirez "
+"et leurs prérequis vont définir les serviteurs que vous voudrez dans votre crypte. </p> <p> Durant cette opération de"
+" sélection de carte, n'ajoutez qu'<strong>un exemplaire de chaque carte</strong> choisie. Allez voir le "
+"%(best_cards)s et l'%(deck_archive)s pour trouver l'inspiration. Si vous trouvez un exemple de deck gagnant de "
+"tournoi proche de votre decklist, il pourrait vous donner des idées sur quoi inclure. </p> <p> À la fin vous devriez "
+"avoir <strong>4 à 12 cartes de crypte et 20 à 40 cartes de bibliothèque</strong>. Si vous en avez plus, il est temps "
+"de prendre un peu de recul et de vous demander ce qui est vraiment utile et ce qui devrait être retiré. Utilisez vos "
+"quatre piliers stratégiques pour vous aider : la charge utile est plus importante que le système de transmission, "
+"lui-même plus important que la défense, et la gestion de combat arrive en dernier. </p>"
+
+#: src/templates/strategy/deck-building.html:227
 msgid "politics"
 msgstr "politique"
 
-#: src/templates/strategy/deck-building.html:224
+#: src/templates/strategy/deck-building.html:230
 msgid "Bloating"
 msgstr "Régénération"
 
-#: src/templates/strategy/deck-building.html:229
+#: src/templates/strategy/deck-building.html:231
 msgid "Bounces"
 msgstr "Rebonds"
 
-#: src/templates/strategy/deck-building.html:253
+#: src/templates/strategy/deck-building.html:236
 msgid "best cards"
 msgstr "top cartes"
 
-#: src/templates/strategy/deck-building.html:254
+#: src/templates/strategy/deck-building.html:237
 msgid "deck archive"
 msgstr "archive de decks"
+
+#: src/templates/strategy/deck-building.html:301
+#, python-format
+msgid ""
+"Note at this point you are working in single copies. This means that if you are building a rush combat deck, you "
+"should consider removing combat cards before removing a payload card like %(fame)s. When adjusting the number of "
+"copies on the other hand, no pillar has priority and you may choose to use dozens of copies of the combat cards you "
+"kept in the selection and a single %(fame)s."
+msgstr ""
+"Notez qu'à ce stade vous travaillez en exemplaires uniques. Cela signifie que si vous construisez un deck de rush, "
+"vous devriez envisager de retirer des cartes de combat avant de retirer des cartes de charge utile comme %(fame)s. "
+"Quand vous ajusterez le nombre d'exemplaires de chaque carte, au contraire, aucun pillier n'aura priorité et vous "
+"pourrez choisir d'utiliser des dizaines d'exemplaires des cartes de combat que vous aurez gardées, et un seul "
+"%(fame)s."
+
+#: src/templates/strategy/deck-building.html:311
+#, python-format
+msgid ""
+"<h3>Counters</h3> <p> If you can predict that specific archetypes will be a threat, consider including specific "
+"counters against them. From %(fear_of_mekhet)s against Inner Circles to %(scourge_of_the_enochians)s against swarms, "
+"including %(archon_investigation)s against greedy bleeders, there are a lot of options available and they can "
+"transform a losing position into a win. </p> <p> If nothing specific comes in mind, consider the all-purpose counters"
+" of the game: %(direct_intervention)s, %(dark_influences)s, %(sudden_reversal)s or %(wash)s. </p>"
+msgstr ""
+"<h3>Contres</h3> <p> Si vous pouvez prédire qu'un archétype spécifique sera une menace, envisagez d'inclure des "
+"contres spécifiques contre lui. De %(fear_of_mekhet)s contre les membres du Cercle intérieur à "
+"%(scourge_of_the_enochians)s contre les essaims, en passant par %(archon_investigation)s contre les mordeurs avides, "
+"il y a beaucoup de possibilités et elles peuvent transformer une position perdante en victoire. </p> <p> Si rien de "
+"spécifique ne vous vient à l'esprit, envisagez d'inclure certains des contres génériques du jeu : "
+"%(direct_intervention)s, %(dark_influences)s, %(sudden_reversal)s ou %(wash)s. </p>"
+
+#: src/templates/strategy/deck-building.html:335
+msgid ""
+"<h3>4. Card flow</h3> <p> Once the skeleton is ready, you can adjust the card flow. First adjust the crypt: use 4 (or"
+" more) copies for a star, 3 copies for an especially good minion if he is not mandatory for your play, 2 copies for "
+"an efficient one and 1 copy for support minions. </p> <p> Then try to get an idea of the <a "
+"href=\"#rotation\">rotation speed</a>: what would a normal turn be in the mid-game (including reactions)? How many "
+"minions are acting and reacting and how many cards are used? This will give you the target library size as well as "
+"the number of cards you need in each of your modules. </p> <p> Finally, define <a href=\"#modules-and-"
+"density\">modules and their density</a> and adapt the number of copies in each of them to match the desired density, "
+"working module by module. Adjusting the master module first may be easier, as the number or cards only depends on the"
+" number of master actions you expect to get. For the rest of the deck though, there is no predefined pattern: no "
+"strategic pillar has the priority in terms of density. A <em>Stealth & Bleed</em> can typically have two strong "
+"module for bleed and stealth, two standard modules for bounce and combat defense, and a tactical module against "
+"politics. A <em>Wall</em> deck, on the other hand, can have a spam module for wake & intercept, a standard module for"
+" bloat and only a tactical module for the payload. </p> <p> This little calculator may help you figure out the number"
+" of copies you want to include for each card: </p>"
+msgstr ""
+"<h3>4. Flux de cartes</h3> <p> Une fois le squelette prêt, vous pouvez ajuster le flux de cartes. Ajustez la crypte "
+"en premier : utilisez 4 exemplaires (ou plus) pour une star, 3 exemplaires pour un serviteur particulièrement bon "
+"s'il n'est pas indispensable pour votre jeu, 2 exemplaires pour un serviteur efficace et 1 exemplaire pour les "
+"serviteurs de support. </p> <p> Ensuite essayez de vous faire une idée de la <a href=\"#rotation\">vitesse de "
+"rotation</a> : à quoi ressemblera un tour normal en milieu de partie (en comptant les réactions) ? Combien de "
+"serviteurs vont agir et réagir et combien de cartes seront utilisées ? Cela vous donnera votre taille de votre "
+"bibliothèque cible en même temps que le nombre de cartes nécessaires dans chaque module. </p> <p> Enfin, définissez "
+"<a href=\"#modules-and-density\">les modules et leur densité</a> et adaptez le nombre d'exemplaires de chacun d'entre"
+" eux pour atteindre la densité souhaitée, en travaillant module par module. Ajuster le module de cartes Maître est "
+"plus simple, car le nombnre de cartes ne dépend que du nombre d'actions de Maître que vous espérez avoir. Pour le "
+"reste du deck cependant, il n'y a pas de schéma préétabli : aucun pilier stratégique n'a priorité sur les autre en "
+"termes de densité. Un <em>Stealth & Bleed</em> peut typiquement avoir deux modules primaires pour la morsure et la "
+"discrétion, deux modules secondaires pour le rebond et la défense au combat, et un module tactique contre la "
+"politique. Un deck <em>Mur</em>, a contrario, peut avoir un module de spam pour le réveil et l'interception, un "
+"module secondaire pour la régénération et juste un module tactique pour la charge utile. </p> <p> Cette calculette "
+"pourra vous aider à décider du nombre d'exemplaires pour chaque carte : </p>"
+
+#: src/templates/strategy/deck-building.html:370
+msgid "Probability to get a specific card"
+msgstr "Probabilité d'avoir une carte donnée"
+
+#: src/templates/strategy/deck-building.html:371 src/templates/strategy/deck-building.html:385
+msgid "cards in deck:"
+msgstr "cartes dans le deck :"
+
+#: src/templates/strategy/deck-building.html:373
+msgid "copies of the card:"
+msgstr "exemplaires de la carte :"
+
+#: src/templates/strategy/deck-building.html:375
+msgid "cards drawn:"
+msgstr "cartes piochées :"
+
+#: src/templates/strategy/deck-building.html:384
+msgid "Copies needed to get a draw"
+msgstr "Exemplaires requis pour piocher"
+
+#: src/templates/strategy/deck-building.html:387
+msgid "draws:"
+msgstr "pioches :"
+
+#: src/templates/strategy/deck-building.html:389
+msgid "desired probability:"
+msgstr "probabilitée voulue :"
+
+#: src/templates/strategy/deck-building.html:392
+msgid "0 copies"
+msgstr "0 copies"
+
+#: src/templates/strategy/deck-building.html:396
+msgid ""
+"The probability to get a specific card is computed as the cumulated probability (sum) of having 1, 2, ..., n copies "
+"of the card."
+msgstr ""
+"La probabilité de piocher une carte donnée est calculée comme la probabilité cumulée (somme) de piocher 1, 2, ..., n "
+"exemplaires."
+
+#: src/templates/strategy/deck-building.html:401
+msgid "The formula used is"
+msgstr "La formule utilisée est"
+
+#: src/templates/strategy/deck-building.html:403
+msgid "with s: stack, d: draws and c: copies and"
+msgstr "avec s: paquet, d: pioche et c: exemplaires et"
+
+#: src/templates/strategy/deck-building.html:403
+msgid "the binomial coefficients."
+msgstr "les cœfiicients binomiaux."
+
+#: src/templates/strategy/deck-building.html:405
+msgid "To second computation just computes the preceding probability for consecutive values of c."
+msgstr "Le second calcul additionne simplement la probabilité précédente pour les valeurs successives de c."
+
+#: src/templates/strategy/deck-building.html:408
+msgid ""
+"<h3>Cycling</h3> <p> If one of your strong module can jam your hand (for example a strong stealth or a strong "
+"intercept module), consider adding cycling-oriented cards (<em>cf.</em> the <a href=\"#rotation\">Rotation</a> "
+"section). </p> <p> They should not be included blindly though; they can be an obstacle to a deck with no jam issue. "
+"</p>"
+msgstr ""
+"<h3>Recyclage</h3> <p> Si l'un de vos modules primaires peut enrayer votre main (par exemple un module primaire de "
+"discrétion ou d'interception), envisagez d'ajouter des cartes pour recycler (<em>cf.</em> la section <a "
+"href=\"#rotation\">Rotation</a>). </p> <p> Elles ne devraient cependant pas être incluses aveuglément ; elles peuvent"
+" tout à fait constituer un obstacle pour un deck sans problème d'enrayement. </p>"
+
+#: src/templates/strategy/deck-building.html:419
+#, python-format
+msgid ""
+"<h3>5. Test and refine</h3> <p> Once the first version of the deck list is ready, it should be tested to check if it "
+"behaves as expected. Just doing a dozen play simulations alone, playing out the first 3 to 5 turns with no opponents,"
+" can help you adapt the card flow a bit. If you have some time at hand, you can use the %(play_test_system)s devised "
+"by <em>Paul Johnson</em> to test your deck more thoroughly. </p> <p> In the end, only real games can help refine a "
+"deck. Actual play get you accustomed to a deck strengths and weaknesses. It helps to note the cards cycled or "
+"discarded during a game, as well as those used to oust the prey: cards that you repetitively do not use, or payload "
+"cards that do not help you oust your prey, are cards you should consider removing. </p>"
+msgstr ""
+"<h3>5. Testez and affinez</h3> <p> Une fois la première version du deck prête, il devrait être testé pour vérifier "
+"s'il est à la hauteur de ce que l'on en attendait. Ne serait-ce que faire une dizaine de simulations de jeu en "
+"solitaire, en jouant les 3 à 5 premiers tours sans adversaire, peut déjà vous aider à adapter un peu le flux de "
+"cartes. Si vous avez un peu de temps devant vous, vous pouvez utiliser le %(play_test_system)s conçu par <em>Paul "
+"Johnson</em> pour tester en profondeur. </p> <p> Au final, seules de vraies parties pourront vous aider à affiner "
+"votre deck. Une vraie partie vous permet de vous habituer aux forces et faiblesses du deck. Noter les cartes "
+"défaussées au cours de la partie peut aider, de même que noter les cartes ayant permis de sortir une proie : vous "
+"devriez envisager de retirer les cartes dont vous ne vous servez pas, ainsi que les cartes de charge utile qui ne "
+"contribuent pas à sortir votre proie. </p>"
+
+#: src/templates/strategy/deck-building.html:420
+msgid "play test system"
+msgstr "système de test"
 
 #: src/templates/strategy/fundamentals.html:5
 msgid "Bleed"
@@ -2339,4 +2752,3 @@ msgstr "Premier Sang : Tremere"
 #: src/templates/strategy/index.html:46
 msgid "All rights reserved."
 msgstr "Tous droits réservés."
-
