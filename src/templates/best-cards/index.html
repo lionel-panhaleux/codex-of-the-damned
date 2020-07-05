@@ -3,7 +3,7 @@
 {% block article %}
 <article>
     <h1>{{ _('Best Cards') }}</h1>
-    {% trans trimmed 
+    {% trans trimmed
         twda=external("http://www.vekn.fr/decks/twd.htm", "Tournament Winning Deck Archvie (TWDA)"),
         hunting_grounds=card("Academic Hunting Ground", "Hunting Grounds")
 	%}
@@ -18,27 +18,49 @@
     </p>
     {% endtrans %}
     <h2>{{ _('Generic') }}</h2>
+	{% trans trimmed
+		master=link("/best-cards/generic/master-cards"),
+		political=link("/best-cards/generic/political-actions"),
+		no_discipline=link("/best-cards/generic/no-discipline"),
+		animalism=link("/best-cards/generic/animalism"),
+		auspex=link("/best-cards/generic/auspex"),
+		celerity=link("/best-cards/generic/celerity"),
+		dominate=link("/best-cards/generic/dominate"),
+		fortitude=link("/best-cards/generic/fortitude"),
+		necromancy=link("/best-cards/generic/necromancy"),
+		obfuscate=link("/best-cards/generic/obfuscate"),
+		potence=link("/best-cards/generic/potence"),
+		presence=link("/best-cards/generic/presence")
+	%}
     <ul>
-        <li>{{ link("/best-cards/generic/master") }}</li>
-        <li>{{ link("/best-cards/generic/political-action") }}</li>
-        <li>{{ link("/best-cards/generic/no-discipline") }}</li>
-        <li><i>i</i> {{ link("/best-cards/generic/animalism") }}</li>
-        <li><i>a</i> {{ link("/best-cards/generic/auspex") }}</li>
-        <li><i>c</i> {{ link("/best-cards/generic/celerity") }}</li>
-        <li><i>d</i> {{ link("/best-cards/generic/dominate") }}</li>
-        <li><i>f</i> {{ link("/best-cards/generic/fortitude") }}</li>
-        <li><i>n</i> {{ link("/best-cards/generic/necromancy") }}</li>
-        <li><i>o</i> {{ link("/best-cards/generic/obfuscate") }}</li>
-        <li><i>p</i> {{ link("/best-cards/generic/potence") }}</li>
-        <li><i>r</i> {{ link("/best-cards/generic/presence") }}</li>
+        <li>{{ master }}</li>
+        <li>{{ political }}</li>
+        <li>{{ no_discipline }}</li>
+        <li><i>i</i> {{ animalism }}</li>
+        <li><i>a</i> {{ auspex }}</li>
+        <li><i>c</i> {{ celerity }}</li>
+        <li><i>d</i> {{ dominate }}</li>
+        <li><i>f</i> {{ fortitude }}</li>
+        <li><i>n</i> {{ necromancy }}</li>
+        <li><i>o</i> {{ obfuscate }}</li>
+        <li><i>p</i> {{ potence }}</li>
+        <li><i>r</i> {{ presence }}</li>
     </ul>
+	{% endtrans %}
     <h2>{{ _('Sects') }}</h2>
+	{% trans trimmed
+		anarch=link("/best-cards/sects/anarch"),
+		camarilla=link("/best-cards/sects/camarilla"),
+		laibon=link("/best-cards/sects/laibon"),
+		sabbat=link("/best-cards/sects/sabbat")
+	%}
     <ul>
-        <li>{{ link("/best-cards/sects/anarch") }}</li>
-        <li>{{ link("/best-cards/sects/camarilla") }}</li>
-        <li>{{ link("/best-cards/sects/laibon") }}</li>
-        <li>{{ link("/best-cards/sects/sabbat") }}</li>
+        <li>{{ anarch }}</li>
+        <li>{{ camarilla }}</li>
+        <li>{{ laibon }}</li>
+        <li>{{ sabbat }}</li>
     </ul>
+	{% endtrans %}
     <h2 id="clans">{{ _('Clans') }}</h2>
     {% trans trimmed %}
     <p>
