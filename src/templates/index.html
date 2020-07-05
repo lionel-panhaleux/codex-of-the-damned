@@ -96,7 +96,7 @@
 </div>
 <p>
     {% trans trimmed
-        discord='<a target="_blank" href="https://discordapp.com">Discord</a>',
+        discord=external("https://www.facebook.com/groups/1543249585925041", _('Discord')),
         vtes_facebook=external("https://www.facebook.com/groups/1543249585925041", _('VtES LackeyCCG Facebook group')),
         vekn_forum=external("http://www.vekn.net/forum/generic-v-tes-discussion/76846-vekn-discord-server", _('VEKN forum'))
     %}
@@ -106,9 +106,9 @@
 </p>
 <p>
     {% trans trimmed
-        lackey_deck='<span class="code">LackeyCCG/plugins/vtes/decks</span>',
-        deck_editor='<span class="code">Deck Editor</span>',
-        browse='<span class="code">Browse...</span>',
+        lackey_deck='<span class="code">LackeyCCG/plugins/vtes/decks</span>'|safe,
+        deck_editor='<span class="code">Deck Editor</span>'|safe,
+        browse='<span class="code">Browse...</span>'|safe,
         vtes_lackey_tutoriel=external("http://www.lackeyccg.com/vtes/", _('VtES Lackey tutorial'))
     %}
     To use your decks exported from <em>Amaranth</em>, you have to copy the text file into the
