@@ -5,11 +5,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: codex 0.X\n"
 "Report-Msgid-Bugs-To: lionel.panhaleux+codex@gmail.com\n"
-"POT-Creation-Date: 2020-07-04 10:27+0200\n"
+"POT-Creation-Date: 2020-07-06 01:16+0200\n"
 "PO-Revision-Date: 2020-07-04 08:50+0200\n"
 "Last-Translator: Lionel Panhaleux <lionel.panhaleux+codex@gmail.com>\n"
 "Language: fr\n"
-"Language-Team: codex-fr <lionel.panhaleux+codex@gmail.com>\n"
+"Language-Team: fr <LL@li.org>\n"
 "Plural-Forms: nplurals=2; plural=(n > 1)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
@@ -309,7 +309,7 @@ msgstr ""
 
 #: src/navigation.py:135
 msgid "Best Cards"
-msgstr "Top Cartes"
+msgstr "Meilleures cartes"
 
 #: src/navigation.py:139 src/templates/best-cards/index.html:20
 msgid "Generic"
@@ -327,7 +327,7 @@ msgstr "Actions politiques"
 msgid "No discipline"
 msgstr "Sans discipline"
 
-#: src/navigation.py:144
+#: src/navigation.py:144 src/templates/best-cards/generic/animalism.html:5
 msgid "Animalism"
 msgstr "Animalisme"
 
@@ -363,7 +363,7 @@ msgstr "Puissance"
 msgid "Presence"
 msgstr "Présence"
 
-#: src/navigation.py:156 src/templates/best-cards/index.html:35
+#: src/navigation.py:156 src/templates/best-cards/index.html:50
 msgid "Sects"
 msgstr "Sectes"
 
@@ -388,7 +388,7 @@ msgstr ""
 msgid "Sabbat"
 msgstr ""
 
-#: src/navigation.py:165 src/templates/best-cards/index.html:42
+#: src/navigation.py:165 src/templates/best-cards/index.html:64
 msgid "Clans"
 msgstr "Clans"
 
@@ -725,6 +725,10 @@ msgstr ""
 msgid "error web page"
 msgstr "page web d’erreur"
 
+#: src/templates/index.html:99
+msgid "Discord"
+msgstr ""
+
 #: src/templates/index.html:98
 #, python-format
 msgid ""
@@ -856,14 +860,13 @@ msgstr ""
 "est inclus pour gérer les decks de breed. </p> <p> Alors que la partie progresse, les %(ashur_tablets)s sont "
 "utilisées pour leur récursivité afin d'adapter le deck au contexte de table en y remontant ce qui est vraiment utile."
 " </p> <h2>Variantes</h2> <p> La variante <strong>Anson Guns</strong> se concentre sur %(anson)s et néglige ses "
-"camarades Toréador pour leur préférer des vampires moins coûteux avec %(CEL)s, comme dans le %(tomasz_deck)s de "
-"2019. </p> <p> La variante <strong>Grand Ball</strong> retire le module de combat et utilise le pouvoir "
-"d’%(alexandra)s avec %(toreador_grand_ball)s pour donner des votes imblocables, comme dans le %(martin_deck)s de "
-"2013. </p> <p> La variante <strong>Aching Beauty</strong> remplace aussi le module de combat par des %(majesty)s pour"
-" la défense, mais utilise %(aching_beauty)s en grand nombre pour rendre les actions des vampires difficiles à "
-"bloquer, comme dans le %(laszlo_deck)s de 2012. </p> <p> La variante <strong>AAAAA</strong> conserve %(alexandra)s et"
-" %(anneke)s et utilise la combinaison %(alastor)s + %(assault_rifle)s (d’où les cinq “A”), comme dans le "
-"%(izaak_deck)s de 2010. </p>"
+"camarades Toréador pour leur préférer des vampires moins coûteux avec %(CEL)s, comme dans le %(tomasz_deck)s de 2019."
+" </p> <p> La variante <strong>Grand Ball</strong> retire le module de combat et utilise le pouvoir d’%(alexandra)s "
+"avec %(toreador_grand_ball)s pour donner des votes imblocables, comme dans le %(martin_deck)s de 2013. </p> <p> La "
+"variante <strong>Aching Beauty</strong> remplace aussi le module de combat par des %(majesty)s pour la défense, mais "
+"utilise %(aching_beauty)s en grand nombre pour rendre les actions des vampires difficiles à bloquer, comme dans le "
+"%(laszlo_deck)s de 2012. </p> <p> La variante <strong>AAAAA</strong> conserve %(alexandra)s et %(anneke)s et utilise "
+"la combinaison %(alastor)s + %(assault_rifle)s (d’où les cinq “A”), comme dans le %(izaak_deck)s de 2010. </p>"
 
 #: src/templates/archetypes/aaa.html:35
 msgid "Tomasz Izydorczyk's deck"
@@ -889,7 +892,7 @@ msgstr "deck d'Izaak Havelaar"
 #: src/templates/best-cards/clans/daughters-of-cacophony.html:92 src/templates/best-cards/clans/imbued.html:143
 #: src/templates/best-cards/clans/lasombra.html:102 src/templates/best-cards/clans/tremere.html:120
 #: src/templates/best-cards/clans/true-brujah.html:97 src/templates/best-cards/generic/celerity.html:32
-#: src/templates/best-cards/generic/fortitude.html:18 src/templates/best-cards/generic/master.html:56
+#: src/templates/best-cards/generic/fortitude.html:18 src/templates/best-cards/generic/master-cards.html:56
 #: src/templates/best-cards/generic/no-discipline.html:165 src/templates/best-cards/generic/presence.html:20
 #: src/templates/strategy/combat.html:18 src/templates/strategy/fundamentals.html:232
 msgid "A&B"
@@ -932,7 +935,7 @@ msgid "Carlo Daniele's deck"
 msgstr "deck de Carlo Daniele"
 
 #: src/templates/archetypes/cats.html:48 src/templates/archetypes/ishtarri-politics.html:27
-#: src/templates/archetypes/kiasyd-stealth-bleed.html:36 src/templates/best-cards/generic/master.html:53
+#: src/templates/archetypes/kiasyd-stealth-bleed.html:36 src/templates/best-cards/generic/master-cards.html:53
 #: src/templates/strategy/combat.html:19 src/templates/strategy/deck-guides/libertine-ball.html:103
 msgid "leeching"
 msgstr "transfusion"
@@ -1217,7 +1220,7 @@ msgstr "environ %(range)s exemplaires"
 
 #: src/templates/best-cards/index.html:5
 msgid "Best Cards"
-msgstr "Top Cartes"
+msgstr "Meilleures Cartes"
 
 #: src/templates/best-cards/index.html:6
 #, python-format
@@ -1232,7 +1235,21 @@ msgstr ""
 "ayant été inclues dans le plus grand nombre de decks gagnants depuis. </p> <p> Tous les %(hunting_grounds)s et, "
 "parfois, quelques vampires de basse capacité, ont été omis par commodité. </p>"
 
-#: src/templates/best-cards/index.html:43
+#: src/templates/best-cards/index.html:21
+#, python-format
+msgid ""
+"<ul> <li>%(master)s</li> <li>%(political)s</li> <li>%(no_discipline)s</li> <li><i>i</i> %(animalism)s</li> "
+"<li><i>a</i> %(auspex)s</li> <li><i>c</i> %(celerity)s</li> <li><i>d</i> %(dominate)s</li> <li><i>f</i> "
+"%(fortitude)s</li> <li><i>n</i> %(necromancy)s</li> <li><i>o</i> %(obfuscate)s</li> <li><i>p</i> %(potence)s</li> "
+"<li><i>r</i> %(presence)s</li> </ul>"
+msgstr ""
+
+#: src/templates/best-cards/index.html:51
+#, python-format
+msgid "<ul> <li>%(anarch)s</li> <li>%(camarilla)s</li> <li>%(laibon)s</li> <li>%(sabbat)s</li> </ul>"
+msgstr ""
+
+#: src/templates/best-cards/index.html:65
 msgid ""
 "<p> Blood Brothers, Panders, Osebo, Nagaraja and Samedi are too rarely played to be included in this analysis: they "
 "lack the numbers for a statistical review to be relevant. </p> <p> Gargoyles are included in the Tremere clan "
@@ -1326,7 +1343,7 @@ msgstr ""
 "sa proie ou les votes en face est critique pour les %(wall_decks)s."
 
 #: src/templates/best-cards/clans/ahrimanes.html:96 src/templates/best-cards/generic/auspex.html:86
-#: src/templates/best-cards/generic/master.html:85
+#: src/templates/best-cards/generic/master-cards.html:85
 msgid "wall decks"
 msgstr "decks mur"
 
@@ -1373,7 +1390,95 @@ msgstr ""
 msgid "Anti Ventrue Grinder"
 msgstr ""
 
-#: src/templates/best-cards/generic/master.html:86
+#: src/templates/best-cards/generic/animalism.html:7
+#, python-format
+msgid ""
+"<p> <i>i</i> Provide a strong long-range combat module and good intercept capabilities. Combined with <i>a</i>, it "
+"offers the best intercept in the game and access to the combo card %(read_winds)s. </p>"
+msgstr ""
+"<p> <i>i</i> fournit un module de combat conséquent basé sur la portée. Combiné avec <i>a</i>, cela offre la "
+"meilleure interception du jeu et donne accès à la carte à combo %(read_winds)s. </p>"
+
+#: src/templates/best-cards/generic/animalism.html:19
+msgid ""
+"An excellent combat card. It is not a strike so it cannot be dodged, it is harder to prevent and additional damage "
+"are still inflicted by the strike itself. Moreover, it is ranged damage."
+msgstr ""
+"Une excellente carte de combat. Cela n'est pas une frappe et ne peut donc pas être esquivé, c'est compliqué à "
+"prévenir et les dégâts additionnels sont ensuite infligés par la frappe en elle-même. De plus, cela inflige des "
+"dégâts quelle que soit portée."
+
+#: src/templates/best-cards/generic/animalism.html:27
+msgid ""
+"A versatile defense tool providing either intercept or an unlock effect. Not as surprising as a wake, but being "
+"unlocked can be better."
+msgstr ""
+"Une carte de défense polyvalente fournissant soit de l'interception soit un effet de redressement. Pas aussi "
+"surprenant qu'un réveil, mais être redressé peut être meilleur selon les situations."
+
+#: src/templates/best-cards/generic/animalism.html:34
+#, python-format
+msgid ""
+"An excellent counter against weapons, it is often included in <i>i</i> combat modules. Because <i>i</i> often uses "
+"%(carrion_crows)s and %(aid_from_bats)s for a ranged combat module, a ranged weapon on the opponent side is "
+"especially cumbersome."
+msgstr ""
+"Un excellent contre aux équipements, il est souvent utilisé dans les modules de combat basés sur <i>i</i>. Comme "
+"<i>i</i> utilise souvent %(carrion_crows)s et %(aid_from_bats)s dans leur module de combat utilisant la portée, un "
+"équipement en fournissant chez l'adversaire peut souvent être problématique."
+
+#: src/templates/best-cards/generic/animalism.html:46
+msgid ""
+"The choice between bleed and rush gives it so much versatility, it can be played in most table situations at an "
+"advantage. The fact that the opponent has to choose his strike first is a nice bonus."
+msgstr ""
+"Le choix offert entre la morsure et une action de rush lui donne beaucoup de versatilité, elle peut être jouée dans "
+"la plupart des situations avec un avantage. Le fait que l'adversaire ait à choisir sa frappe en premier est un bonus "
+"intéressant."
+
+#: src/templates/best-cards/generic/animalism.html:54
+msgid "A base building block for most <i>i</i> based intercept modules. Permanent intercept is well worth the cost."
+msgstr ""
+"Un élément fondamental pour la majorité des modules d'interception basés sur <i>i</i>. L'interception permanente vaut"
+" vraiment le coup."
+
+#: src/templates/best-cards/generic/animalism.html:61
+#, python-format
+msgid ""
+"Even if it is only available to big capacity vampires, this is intercept and wake built in the same card, a no-"
+"brainer if the deck has intercept options. It is even arguably better than <i>a</i> %(eyes_argus)s, as the intercept "
+"can be used on an undirected action."
+msgstr ""
+"Même si cela n'est utilisable que par les vampires de haute capacité, il s'agit d'une carte fournissant à la fois de "
+"l'interception et un réveil, un ajout obligatoire si le deck a un module d'interception. C'est potentiellement "
+"meilleur que <i>a</i> %(eyes_argus)s sous conditions, vu que l'interception peut être utilisée sur une action non "
+"dirigée."
+
+#: src/templates/best-cards/generic/animalism.html:73
+#, python-format
+msgid ""
+"The second pillar of <i>i</i> combat modules, it provides a maneuver, one damage, plus a welcome press, either as a "
+"defensive tool to avoid a second round at close range, or as an offensive tool to continue combat. Played multiple "
+"times in a row, it can take an opponent down pretty fast. Coupled with a %(carrion_crows)s, it delivers 6 damage with"
+" only two cards."
+msgstr ""
+"Le second pilier des modules de combat <i>i</i>, cela fournit une manœuvre, un dégât et une poursuite, utilisable "
+"comme un outil défensif pour éviter un second round au contact, ou comme un outil offensif permettant de continuer le"
+" combat. Joué plusieurs fois de suite aide à abattre un vampire assez rapidement. Utilisé avec %(carrion_crows)s "
+"permet d'infliger 6 dégâts en seulement deux cartes."
+
+#: src/templates/best-cards/generic/animalism.html:85
+#, python-format
+msgid ""
+"<i>i</i> usually makes for excellent intercept and good combat, but it may lack pool damage to fence off one’s prey, "
+"with %(deep_song)s bringing only a bit of pool damage. This is an excellent option to improve pool damage if the deck"
+" has enough intercept capabilities to protect it."
+msgstr ""
+"<i>i</i> permet d'excellentes interceptions et de bons combats mais manque de dégâts dans la réserve d'influence pour"
+" sortir sa proie, %(deep_song)s apportant un peu de dégâts. C'est une excellente option pour améliorer ces dégâts si "
+"le deck a une capacité d'interception suffisante pour la protéger."
+
+#: src/templates/best-cards/generic/master-cards.html:86
 msgid "block denial"
 msgstr "déni de blocage"
 
@@ -2132,7 +2237,7 @@ msgstr "Rebonds"
 
 #: src/templates/strategy/deck-building.html:236
 msgid "best cards"
-msgstr "top cartes"
+msgstr "meilleures cartes"
 
 #: src/templates/strategy/deck-building.html:237
 msgid "deck archive"
@@ -2148,7 +2253,7 @@ msgid ""
 msgstr ""
 "Notez qu'à ce stade vous travaillez en exemplaires uniques. Cela signifie que si vous construisez un deck de rush, "
 "vous devriez envisager de retirer des cartes de combat avant de retirer des cartes de charge utile comme %(fame)s. "
-"Quand vous ajusterez le nombre d'exemplaires de chaque carte, au contraire, aucun pillier n'aura priorité et vous "
+"Quand vous ajusterez le nombre d'exemplaires de chaque carte, au contraire, aucun pilier n'aura priorité et vous "
 "pourrez choisir d'utiliser des dizaines d'exemplaires des cartes de combat que vous aurez gardées, et un seul "
 "%(fame)s."
 
@@ -3067,3 +3172,4 @@ msgstr ""
 "situation à trois ou cinq joueurs : si la fente fonctionne, vous revenez à un nombre pair et à une situation "
 "favorable. Si elle échoue, vous restez sur un nombre impair de joueurs en ayant mis une grande pression sur la proie."
 " En général, cela signifie que la pression va revenir en force contre vous au prochain tour de table. </p>"
+
