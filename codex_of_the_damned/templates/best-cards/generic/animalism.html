@@ -2,7 +2,7 @@
 {% import "best-cards/_layout_card_column.html" as layout with context %}
 
 {% block content %}
-<h1><i>i</i> Animalism</h1>
+<h1><i>i</i> {{ _("Animalism") }}</h1>
 <div class="tip">
     {% trans trimmed
         read_winds=card("Read the Winds")
@@ -25,8 +25,8 @@ Moreover, it is ranged damage.
 
 {% call layout.card_column("Cats' Guidance", decks=222, copies="2-5") %}
 {% trans trimmed %}
-A versatile defence tool providing either intercept or an unlock effect.
-Not as suprising as a wake, but being unlocked can be better.
+A versatile defense tool providing either intercept or an unlock effect.
+Not as surprising as a wake, but being unlocked can be better.
 {% endtrans %}
 {% endcall %}
 
