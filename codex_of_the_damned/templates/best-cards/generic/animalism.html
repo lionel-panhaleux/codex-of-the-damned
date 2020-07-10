@@ -4,15 +4,15 @@
 {% block content %}
 <h1>{{ ani }} {{ _("Animalism") }}</h1>
 <div class="tip">
-    {% trans trimmed
-        read_winds=card("Read the Winds")
-    %}
     <p>
-        {{ ani }} Provide a strong long-range combat module and good intercept capabilities.
+        {% trans trimmed
+	        read_winds=card("Read the Winds")
+	    %}
+        {{ ani }} provide a strong long-range combat module and good intercept capabilities.
         Combined with {{ aus }}, it offers the best intercept in the game and access to the combo card
         {{ read_winds }}.
+        {% endtrans %}
     </p>
-    {% endtrans %}
 </div>
 
 {% call layout.card_column('Carrion Crows', decks=252, copies="5-10") %}
