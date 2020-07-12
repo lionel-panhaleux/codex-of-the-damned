@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: codex 0.X\n"
 "Report-Msgid-Bugs-To: lionel.panhaleux+codex@gmail.com\n"
-"POT-Creation-Date: 2020-07-10 22:44+0200\n"
+"POT-Creation-Date: 2020-07-12 16:54+0200\n"
 "PO-Revision-Date: 2020-07-04 08:50+0200\n"
 "Last-Translator: Lionel Panhaleux <lionel.panhaleux+codex@gmail.com>\n"
 "Language: fr\n"
@@ -331,7 +331,7 @@ msgstr "Sans discipline"
 msgid "Animalism"
 msgstr "Animalisme"
 
-#: src/navigation.py:145
+#: src/navigation.py:145 src/templates/best-cards/generic/auspex.html:5
 msgid "Auspex"
 msgstr "Auspex"
 
@@ -891,9 +891,9 @@ msgstr "deck d'Izaak Havelaar"
 #: src/templates/archetypes/spirit-marionette.html:59 src/templates/archetypes/ventrue-royalty.html:64
 #: src/templates/best-cards/clans/daughters-of-cacophony.html:92 src/templates/best-cards/clans/imbued.html:143
 #: src/templates/best-cards/clans/lasombra.html:102 src/templates/best-cards/clans/tremere.html:120
-#: src/templates/best-cards/clans/true-brujah.html:97 src/templates/best-cards/generic/celerity.html:32
-#: src/templates/best-cards/generic/fortitude.html:18 src/templates/best-cards/generic/master-cards.html:56
-#: src/templates/best-cards/generic/no-discipline.html:165 src/templates/best-cards/generic/presence.html:20
+#: src/templates/best-cards/clans/true-brujah.html:97 src/templates/best-cards/generic/celerity.html:33
+#: src/templates/best-cards/generic/fortitude.html:19 src/templates/best-cards/generic/master-cards.html:57
+#: src/templates/best-cards/generic/no-discipline.html:166 src/templates/best-cards/generic/presence.html:21
 #: src/templates/strategy/combat.html:18 src/templates/strategy/fundamentals.html:232
 msgid "A&B"
 msgstr ""
@@ -935,7 +935,7 @@ msgid "Carlo Daniele's deck"
 msgstr "deck de Carlo Daniele"
 
 #: src/templates/archetypes/cats.html:48 src/templates/archetypes/ishtarri-politics.html:27
-#: src/templates/archetypes/kiasyd-stealth-bleed.html:36 src/templates/best-cards/generic/master-cards.html:53
+#: src/templates/archetypes/kiasyd-stealth-bleed.html:36 src/templates/best-cards/generic/master-cards.html:54
 #: src/templates/strategy/combat.html:19 src/templates/strategy/deck-guides/libertine-ball.html:103
 msgid "leeching"
 msgstr "transfusion"
@@ -1220,7 +1220,7 @@ msgstr "environ %(range)s exemplaires"
 
 #: src/templates/best-cards/index.html:5
 msgid "Best Cards"
-msgstr "Meilleures Cartes"
+msgstr "Cartes clé"
 
 #: src/templates/best-cards/index.html:6
 #, python-format
@@ -1342,8 +1342,8 @@ msgstr ""
 "amélioration drastique pour le module d'interception %(ani)s classique. La possibilité d'intercepter les morsures de "
 "sa proie ou les votes en face est critique pour les %(wall_decks)s."
 
-#: src/templates/best-cards/clans/ahrimanes.html:96 src/templates/best-cards/generic/auspex.html:86
-#: src/templates/best-cards/generic/master-cards.html:85
+#: src/templates/best-cards/clans/ahrimanes.html:96 src/templates/best-cards/generic/auspex.html:55
+#: src/templates/best-cards/generic/master-cards.html:86
 msgid "wall decks"
 msgstr "decks mur"
 
@@ -1410,7 +1410,7 @@ msgstr ""
 
 #: src/templates/best-cards/generic/animalism.html:27
 msgid ""
-"A versatile defense tool providing either intercept or an unlock effect. Not as surprising as a wake, but being "
+"A versatile defence tool providing either intercept or an unlock effect. Not as surprising as a wake, but being "
 "unlocked can be better."
 msgstr ""
 "Une carte de défense polyvalente fournissant soit de l'interception soit un effet de redressement. Pas aussi "
@@ -1452,8 +1452,7 @@ msgid ""
 msgstr ""
 "Même si cela n'est utilisable que par les vampires de haute capacité, il s'agit d'une carte fournissant à la fois de "
 "l'interception et un réveil, un ajout obligatoire si le deck a un module d'interception. C'est potentiellement "
-"meilleur que %(aus)s %(eyes_argus)s, vu que l'interception peut être utilisée sur une action non "
-"dirigée."
+"meilleur que %(aus)s %(eyes_argus)s, vu que l'interception peut être utilisée sur une action non dirigée."
 
 #: src/templates/best-cards/generic/animalism.html:73
 #, python-format
@@ -1479,11 +1478,100 @@ msgstr ""
 "sortir sa proie, %(deep_song)s apportant un peu de dégâts. C'est une excellente option pour améliorer ces dégâts si "
 "le deck a une capacité d'interception suffisante pour la protéger."
 
-#: src/templates/best-cards/generic/master-cards.html:86
+#: src/templates/best-cards/generic/auspex.html:8
+#, python-format
+msgid "%(aus)s provides the best intercept in the game, plus the ability to bounce bleeds. It makes for an excellent defence."
+msgstr ""
+"%(aus)s fournit la meilleure interception du jeu ainsi que la possibilité de rebond des morsures. Cela en fait une "
+"excellente défense."
+
+#: src/templates/best-cards/generic/auspex.html:16
+#, python-format
+msgid ""
+"By far the most played card in %(aus)s, it is an excellent bounce. Its blood cost is fair and its basic effect can "
+"still be useful if the table context does not mandate bounces."
+msgstr ""
+"De loin la carte la plus jouée en %(aus)s, c'est un excellent rebond. Son coût en sang est correct et son effet de "
+"base peut toujours être utile si le contexte de la table ne nécessite pas de rebonds."
+
+#: src/templates/best-cards/generic/auspex.html:25
+msgid ""
+"A +2 intercept bonus combined with a wake, basically a dream come true for all block-oriented constructs. The "
+"intercept can only apply to directed actions though, and it needs to be completed by classic intercept enhancers for "
+"a defence to be really effective. Blocking political actions, equip and recruit actions are critical to one’s "
+"defence."
+msgstr ""
+"Une interception à +2 alliée à un réveil, simplement la carte idéale pour tous les decks construits dans l'optique de"
+" bloquer des actions. Cependant, l'interception peut seulement s'appliquer aux actions dirigées et il faudra la "
+"compléter avec d'autres cartes pour que la défense soit réellement efficace : bloquer des actions politiques, "
+"d'équipement et de recrutement sont nécessaires pour sa propre défense."
+
+#: src/templates/best-cards/generic/auspex.html:36
+msgid ""
+"Another intercept source, with the interesting bounce option at no cost. Even though a bounce to one’s ally is a hard"
+" bargain, with luck it can bounce a bleed back to its original prey."
+msgstr ""
+"Une autre source d'interception avec une option de rebond sans coût. Même si faire rebondir sur un de ses alliés est "
+"difficile à négocier, avec de la chance celui-ci peut faire rebondir la morsure sur sa proie."
+
+#: src/templates/best-cards/generic/auspex.html:45
+#, python-format
+msgid "Almost systematically played in %(aus)s decks, it is a solid permanent intercept at no cost."
+msgstr "Presque systématiquement jouée dans les decks %(aus)s, c'est une carte solide pour de l'interception sans coût."
+
+#: src/templates/best-cards/generic/auspex.html:52
+#, python-format
+msgid ""
+"Only three cards in the game allow the interception of cross table actions or actions directed to other players, this"
+" one, %(falcons_eye)s and %(anneke)s. This precious ability helps %(wall)s hurt their prey more than others, leading "
+"to an oust rather than king-making. It's also a flexible defense against a grand-predator political actions, and a "
+"way to control the table balance and avoid early ousts."
+msgstr ""
+"Seulement trois cartes dans le jeu permettent d'intercepter en ignorant la restriction proie-prédateur ou les actions"
+" dirigées vers d'autres joueurs : celle-ci, %(falcons_eye)s et %(anneke)s. Cette capacité précieuse aide les %(wall)s"
+" à infliger des dégâts à leur proie, permettant une sortie plutôt qu'un faiseur de roi. C'est aussi une défense "
+"souple contre les actions politique d'un grand-prédateur, et une façon de contrôler l'équilibre de la table et "
+"d'éviter les sorties tôt dans la partie."
+
+#: src/templates/best-cards/generic/auspex.html:69
+#, python-format
+msgid ""
+"An efficient intercept enhancer. Other enhancers are welcome as the same reaction card can’t be played twice on a "
+"single action. Note that this makes an enhancer with a twist like %(my_enemy)s a valuable addition, compared to other"
+" enhancers with less useful effects like %(precognition)s or %(spirits_touch)s."
+msgstr ""
+"Un amplificateur d'interception efficace. Les autres améliorations sont les bienvenues car la même carte de réaction "
+"ne peut pas être jouée deux fois sur une même action. Notez que cela fait un amplificateur avec bonus comme "
+"%(my_enemy)s un ajout précieux, par rapport à d'autres amplificateurs avec des effets moins utiles comme "
+"%(precognition)s ou %(spirits_touch)s."
+
+#: src/templates/best-cards/generic/auspex.html:85
+#, python-format
+msgid ""
+"An additional intercept enhancer, with a decent combat bonus at superior %(AUS)s. As reaching high scores of "
+"intercept requires stacking different reactions, it is used in constructs where more diversity is needed to achieve "
+"the desired intercept level."
+msgstr ""
+"Un amplificateur d'interception supplémentaire, avec un bonus de combat décent pour %(AUS)s supérieur. Comme "
+"atteindre des scores élevés d'interception nécessite d'empiler différentes réactions, il est utilisé dans les "
+"constructions où plus de diversité est nécessaire pour atteindre le niveau d'interception souhaité."
+
+#: src/templates/best-cards/generic/auspex.html:95
+#, python-format
+msgid ""
+"Yet another intercept enhancer, its optional maneuver at superior %(AUS)s can be useful in constructs using long "
+"range combat after the block. Yet not as efficient as other %(aus)s reactions, it is used when additional intercept "
+"is needed."
+msgstr ""
+"Encore un autre amplificateur d'interception, sa manœuvre facultative pour $(AUS)s supérieur peut être utile dans les"
+" constructions utilisant un combat à longue portée après le blocage. Pourtant, pas aussi efficace que les autres "
+"réactions %(aus)s, il est alors utilisé lorsqu'une interception supplémentaire est nécessaire."
+
+#: src/templates/best-cards/generic/master-cards.html:87
 msgid "block denial"
 msgstr "déni de blocage"
 
-#: src/templates/best-cards/generic/no-discipline.html:242 src/templates/strategy/deck-building.html:235
+#: src/templates/best-cards/generic/no-discipline.html:243 src/templates/strategy/deck-building.html:235
 msgid "bruise"
 msgstr "érosion"
 
@@ -2214,15 +2302,15 @@ msgstr ""
 " de %(combat_ends)s quand ils n'y parviennent pas. D'autres prévoient d'utiliser le combat pour optimiser "
 "l'%(bruise)s en leur faveur. </li> </ul> </p> <h3>3. Cartes</h3> <p> Il est maintenant temps de sélectionner les "
 "cartes de crypte et de bibliothèque à mettre dans le deck. Les serviteurs que vous sélectionnerez vont déterminer le "
-"spectre de disciplines que vous pourrez utiliser et, symétriquement, les cartes de bibliothèque que vous choisirez "
-"et leurs pré-requis vont définir les serviteurs que vous voudrez dans votre crypte. </p> <p> Durant cette opération de"
-" sélection de carte, n'ajoutez qu'<strong>un exemplaire de chaque carte</strong> choisie. Allez voir le "
-"%(best_cards)s et l'%(deck_archive)s pour trouver l'inspiration. Si vous trouvez un exemple de deck gagnant de "
-"tournoi proche de votre decklist, il pourrait vous donner des idées sur quoi inclure. </p> <p> À la fin vous devriez "
-"avoir <strong>4 à 12 cartes de crypte et 20 à 40 cartes de bibliothèque</strong>. Si vous en avez plus, il est temps "
-"de prendre un peu de recul et de vous demander ce qui est vraiment utile et ce qui devrait être retiré. Utilisez vos "
-"quatre piliers stratégiques pour vous aider : la charge utile est plus importante que le système de transmission, "
-"lui-même plus important que la défense, et la gestion de combat arrive en dernier. </p>"
+"spectre de disciplines que vous pourrez utiliser et, symétriquement, les cartes de bibliothèque que vous choisirez et"
+" leurs pré-requis vont définir les serviteurs que vous voudrez dans votre crypte. </p> <p> Durant cette opération de "
+"sélection de carte, n'ajoutez qu'<strong>un exemplaire de chaque carte</strong> choisie. Allez voir le %(best_cards)s"
+" et l'%(deck_archive)s pour trouver l'inspiration. Si vous trouvez un exemple de deck gagnant de tournoi proche de "
+"votre decklist, il pourrait vous donner des idées sur quoi inclure. </p> <p> À la fin vous devriez avoir <strong>4 à "
+"12 cartes de crypte et 20 à 40 cartes de bibliothèque</strong>. Si vous en avez plus, il est temps de prendre un peu "
+"de recul et de vous demander ce qui est vraiment utile et ce qui devrait être retiré. Utilisez vos quatre piliers "
+"stratégiques pour vous aider : la charge utile est plus importante que le système de transmission, lui-même plus "
+"important que la défense, et la gestion de combat arrive en dernier. </p>"
 
 #: src/templates/strategy/deck-building.html:227
 msgid "politics"
@@ -3173,3 +3261,14 @@ msgstr ""
 "situation à trois ou cinq joueurs : si la fente fonctionne, vous revenez à un nombre pair et à une situation "
 "favorable. Si elle échoue, vous restez sur un nombre impair de joueurs en ayant mis une grande pression sur la proie."
 " En général, cela signifie que la pression va revenir en force contre vous au prochain tour de table. </p>"
+
+#~ msgid ""
+#~ "A versatile defense tool providing either intercept or an "
+#~ "unlock effect. Not as surprising as a wake, but being "
+#~ "unlocked can be better."
+#~ msgstr ""
+#~ "Une carte de défense polyvalente fournissant soit de "
+#~ "l'interception soit un effet de redressement. Pas aussi surprenant"
+#~ " qu'un réveil, mais être redressé peut être mieux selon "
+#~ "les situations."
+
