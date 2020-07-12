@@ -1,112 +1,93 @@
 {% extends "best-cards/_layout.html" %}
+{% import "best-cards/_layout_card_column.html" as layout with context %}
 
 {% block content %}
-<h1><i>c</i> Celerity</h1>
+<h1>{{ cel }} {{ _("Celerity") }}</h1>
 <div class="tip">
     <p>
-        <i>c</i> provides an excellent combat module.
+        {% trans trimmed %}
+        {{ cel }} provides an excellent combat module.
         Its ability to manage range and deliver additional strikes is much appreciated.
-        It also gives access to some of the best combo cards with <i>f</i>, <i>a</i>, <i>r</i> and <i>j</i>.
+        It also gives access to some of the best combo cards with {{ for }}, {{ aus }}, {{ pre }} and {{ pro }}.
+        {% endtrans %}
     </p>
 </div>
-<div class="column">
-    <div class="column-image">
-        <img src="https://images.krcg.org/pursuit.jpg">
-        <h4>Pursuit</h4>
-        <p class="center-subtitle">played in 145 decks, typically 3-8 copies</p>
-    </div>
-    <p>
-        The core of combat modules using <i>c</i>, it provides range control
-        with the option to deliver an additional strike instead.
-        The card is highly usable and does not jam the hand the way a simple maneuver would.
-    </p>
-</div>
-<div class="column">
-    <div class="column-image">
-        <img src="https://images.krcg.org/forcedmarch.jpg">
-        <h4>Forced March</h4>
-        <p class="center-subtitle">played in 130 decks, typically 2-7 copies</p>
-    </div>
-    <p>
-        An excellent modifier, even at inferior <i>cf</i>: an unlock at no cost is a very good
-        {{ link("/strategy/fundamentals", _("A&B"), _anchor="AB") }} enhancer.
-        At superior, it can even provide a little bit of stealth
-        for a combination of disciplines that do not have much of it.
-    </p>
-</div>
-<div class="column">
-    <div class="column-image">
-        <img src="https://images.krcg.org/blur.jpg">
-        <h4>Blur</h4>
-        <p class="center-subtitle">played in 115 decks, typically 2-5 copies</p>
-    </div>
-    <p>
-        A serious enhancement for any combat module,
-        the ability to deliver not one but two additional strikes is unique to <i>C</i>.
-    </p>
-</div>
-<div class="column">
-    <div class="column-image">
-        <img src="https://images.krcg.org/resistearthsgrasp.jpg">
-        <h4>Resist Earth's Grasp</h4>
-        <p class="center-subtitle">played in 104 decks, typically 2-6 copies</p>
-    </div>
-    <p>
-        Its 1 blood cost is balanced by the fact that it provides good combat options (maneuver, press)
-        along with a very rare stealth bonus at superior <i>C</i>.
-    </p>
-</div>
-<div class="column">
-    <div class="column-image">
-        <img src="https://images.krcg.org/psyche.jpg">
-        <h4>Psyche!</h4>
-        <p class="center-subtitle">played in 102 decks, typically 2-9 copies</p>
-    </div>
-    <p>
-        The ability to start a combat anew is one of the best counter
-        against « Strike: combat ends » effects.
-        Only a few cards in the game provide this effect, so it is a real asset for <i>C</i> combat modules.
-    </p>
-</div>
-<div class="column">
-    <div class="column-image">
-        <img src="https://images.krcg.org/sideslip.jpg">
-        <h4>Sideslip</h4>
-        <p class="center-subtitle">played in 83 decks, typically 2-5 copies</p>
-    </div>
-    <p>
-        A versatile defensive tool, it is unlikely to jam a hand too much,
-        and the dodge or the damage prevention can save a vampire from a lethal blow.
-        {{ card("Pursuit") }} and
-        {{ card("Sideslip") }} provide more options and versatility
-        at no cost than using {{ card("Acrobatics") }}, for example.
-    </p>
-</div>
-<div class="column">
-    <div class="column-image">
-        <img src="https://images.krcg.org/quickensight.jpg">
-        <h4>Quicken Sight (63 decks)</h4>
-        <p class="center-subtitle">played in 63 decks, typically 2-5 copies</p>
-    </div>
-    <p>
-        A good intercept reaction: +2 intercept bonus at superior <i>CA</i>, stackable with other a
-        reactions,
-        is already good enough. The additional maneuver is a nice touch, as <i>ca</i> constructs
-        often use guns in their combat module.
-    </p>
-</div>
-<div class="column">
-    <div class="column-image">
-        <img src="https://images.krcg.org/sidestrike.jpg">
-        <h4>Side Strike</h4>
-        <p class="center-subtitle">played in 55 decks, typically 1-4 copies</p>
-    </div>
-    <p>
-        A versatile combat tool, its effect can be either defensive (dodge)
-        or offensive (additional strike) depending on the situation.
-        Although not as powerful as {{ card("Pursuit") }} or
-        {{ card("Blur") }}, it is yet another source of additional strikes
-        that can let the vampire avoid problematic strikes from the opponent.
-    </p>
-</div>
+
+{% call layout.card_column("Pursuit", decks=145, copies="3-8") %}
+{% trans trimmed %}
+The core of combat modules using {{ cel }}, it provides range control
+with the option to deliver an additional strike instead.
+The card is highly usable and does not jam the hand the way a simple maneuver would.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Forced March", decks=130, copies="2-7") %}
+{% trans trimmed
+	ab=link("/strategy/fundamentals", _("A&B"), _anchor="AB")
+%}
+An excellent modifier, even at inferior {{ cell }}{{ for }}: an unlock
+at no cost is a very good {{ ab }} enhancer.
+At superior, it can even provide a little bit of stealth
+for a combination of disciplines that do not have much of it.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Blur", decks=115, copies="2-5") %}
+{% trans trimmed %}
+A serious enhancement for any combat module,
+the ability to deliver not one but two additional strikes is unique to {{ cel }}.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Resist Earth's Grasp", decks=104, copies="2-6") %}
+{% trans trimmed %}
+Its 1 blood cost is balanced by the fact that it provides good combat options (maneuver, press)
+along with a very rare stealth bonus at superior {{ CEL }}.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Psyche!", decks=102, copies="2-9") %}
+{% trans trimmed
+	sce=link("/strategy/combat", _("Strike: Combat End"), _anchor="defence")
+%}
+The ability to start a combat anew is one of the best counter
+against {{ sce }} effects.
+Only a few cards in the game provide this effect, so it is a real asset for {{ cel }} combat modules.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Sideslip", decks=83, copies="2-5") %}
+{% trans trimmed
+	pursuit=card("Pursuit"),
+	sideslip=card("Sideslip"),
+	acrobatics=card("Acrobatics")
+%}
+A versatile defensive tool, it is unlikely to jam a hand too much,
+and the dodge or the damage prevention can save a vampire from a lethal blow.
+{{ pursuit }} and {{ sideslip }} provide more options and versatility
+at no cost than using {{ acrobatics }}, for example.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Quicken Sight", decks=63, copies="2-5") %}
+{% trans trimmed %}
+A good intercept reaction: +2 intercept bonus at superior {{ CEL }}{{ AUS }},
+stackable with other {{ aus }} reactions, is already good enough.
+The additional maneuver is a nice touch, as {{ cel }}{{ aus }} constructs
+often use guns in their combat module.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Side Strike", decks=55, copies="1-4") %}
+{% trans trimmed
+	pursuit=card("Pursuit"),
+	blur=card("Blur")
+%}
+A versatile combat tool, its effect can be either defensive (dodge)
+or offensive (additional strike) depending on the situation.
+Although not as powerful as {{ pursuit }} or {{ blur }},
+it is yet another source of additional strikes
+that can let the vampire avoid problematic strikes from the opponent.
+{% endtrans %}
+{% endcall %}
 {% endblock %}
