@@ -1,9 +1,12 @@
 include LICENSE README.md CHANGELOG.rst
 
 graft src
+
 exclude Makefile
+exclude babel.cfg
 exclude .markdownlint.json
 exclude messages.pot
 
 global-exclude */__pycache__/*
 global-exclude *.egg-info/*
+global-exclude *.po
