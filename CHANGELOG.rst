@@ -1,7 +1,7 @@
 Changelog
 =========
 
-0.2 (unreleased)
+0.2 (2020-07-15)
 ----------------
 
 - Card images are now hosted separately on images.krcg.org
