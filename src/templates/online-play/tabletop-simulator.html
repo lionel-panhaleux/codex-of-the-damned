@@ -1,0 +1,56 @@
+{% extends "best-cards/_layout.html" %}
+
+{% block article %}
+<article>
+    <h1>{{ _('Tabletop Simulator') }}</h1>
+    <p>
+        {% trans trimmed 
+        tabletop_simulator=external("https://store.steampowered.com/app/286160/Tabletop_Simulator/", "Tabletop Simulator")
+	    %}
+        {{ tabletop_simulator }} is a Steam app to play tabletop games.
+        It has fan-made plugins to play V:tES online with friends.
+        It is mostly used among friends who want to play the game between themselves,
+        as there is no matching server to find fellow players inside the application itself.
+        {% endtrans %}
+    </p>
+    <h2>{{ _('Install') }}</h2>
+    <p>
+        {% trans trimmed 
+        tabletop_simulator=external("https://store.steampowered.com/app/286160/Tabletop_Simulator/", "Tabletop Simulator"),
+        this_collection=external("https://steamcommunity.com/sharedfiles/filedetails/?id=2156285190", _("this collection")),
+        save_object='<span class="code">Save object</span>'|safe
+	    %}
+        Buy and install the {{ tabletop_simulator }} application using <em>Steam</em>.
+        Then install {{ this_collection }} of plugins. Use the relevant plugin to create your deck.
+        Once the deck is ready, select the two stacks (Library and Crypt), then right-click and choose
+        {{ save_object }} to save your deck.
+        {% endtrans %}
+    </p>
+    <img src="{{ url_for('static', filename='img/tts-save-deck.png') }}" alt="TTS Save deck" />
+    <h2>{{ _('Play') }}</h2>
+    <p>
+        {% trans trimmed
+            objects='<span class="code">Objects</span>'|safe,
+            saved_objects='<span class="code">Saved Objects</span>'|safe
+        %}
+        Find a group of friends then create a game and invite them.
+        Load one of your decks by clicking on the {{ objects }} button:
+        your decks should be in the {{ saved_objects }} section.
+        {% endtrans %}
+    </p>
+    <img src="{{ url_for('static', filename='img/tts-load-deck.png') }}" alt="TTS Load deck" />
+    <p>
+        {% trans trimmed %}
+        Make sure you set the rotation on 90º (topside button on the right) for easy lock and unlock.
+        {% endtrans %}
+    </p>
+    <img src="{{ url_for('static', filename='img/tts-rotation.png') }}" alt="TTS Rotation" />
+    <h2>{{ _('Useful commands') }}</h2>
+    <ul>
+        <li><strong>E</strong>: {{ _("Lock") }}</li>
+        <li><strong>Q</strong>: {{ _("Unlock") }}</li>
+        <li><strong>F</strong>: {{ _("Flip card") }}</li>
+        <li><strong>{{ _("Hover over a deck and type a number N") }}</strong>: {{ _("Draw N cards") }}</li>
+    </ul>
+</article>
+{% endblock %}

@@ -1,0 +1,172 @@
+{% extends "best-cards/_layout.html" %}
+
+{% block article %}
+<article>
+    <h1>{{ _('LackeyCCG') }}</h1>
+    <p>
+        {% trans trimmed 
+        lackey=external("https://lackeyccg.com", "Lackey CCG")
+	    %}
+        {{ lackey }} is an old software to play Collectible Card Games online.
+        It is still the foremost online plateform when it comes to play <strong>V:tES</strong>
+        in real time, as it is free and up-to-date cardwise.
+        {% endtrans %}
+    </p>
+    <h2>{{ _('Install') }}</h2>
+    <p>
+        {% trans trimmed 
+        lackey=external("https://lackeyccg.com", "Lackey CCG")
+	    %}
+        Go to the {{ lackey }} page and install the software on your system.
+        {% endtrans %}
+    </p>
+    <div class="warning">
+        <h3>{{ _('On Mac OSX') }}</h3>
+        <p>
+            {{ _("The system's security prevents the application to run:") }}
+        </p>
+        <img src="{{ url_for('static', filename='img/osx-error.png') }}" alt="OS X Error" />
+        <p>
+            {% trans trimmed
+                command_line='<span class="code">xattr -dr com.apple.quarantine /Applications/LackeyCCG</span>'|safe,
+                error_web_page=external("https://lackeyccg.com/missingfontserror.html", _('error web page'))
+            %}
+            If you just allow it in your system preference,
+            it will take you to a "Missing fonts" {{ error_web_page }} instead of launching.
+            To fix it, open a Terminal and type the following command:<br />
+            {{ command_line }}<br />
+            Replace the last part with the path of your LackeyCCG folder
+            if you did not put it in the Applications folder.
+            {% endtrans %}
+        </p>
+    </div>
+    <div class="warning">
+        <h3>{{ _('On Windows') }}</h3>
+        <p>
+            {% trans trimmed %}
+            The system's security prevents the application to run if it is not run
+            with <strong>admin privileges</strong>.
+            {% endtrans %}
+        </p>
+    </div>
+    <p>
+        {% trans trimmed
+            plugins='<span class="code">Plugins</span>'|safe,
+            autoupdate_url='<span class="code">http://www.lackeyccg.com/vtes/high/updatelist.txt</span>'|safe,
+            install='<span class="code">Install or Update from URL</span>'|safe
+        %}
+        Go to the {{ plugins }} tab and paste this AutoUpdate URL
+        to activate the <strong>VtES</strong> plugin:<br />
+        {{ autoupdate_url }}<br />
+        then click the {{ install }} button.
+        {% endtrans %}
+    </p>
+    <img src="{{ url_for('static', filename='img/lackeyccg-plugin-download.png') }}" alt="LackeyCCG Plugin Download" />
+    <p>
+        {% trans trimmed
+            autoupdate_finished='<span class="code">AutoUpdate process completed with a few errors</span>'|safe,
+            browse_installed='<span class="code">Browse installed plugins to load one...</span>'|safe,
+            vtes='<span class="code">vtes</span>'|safe,
+            choose='<span class="code">Choose</span>'|safe
+        %}
+        This takes a few minutes. Once the download is finished and displays {{ autoupdate_finished }},
+        click the {{ browse_installed }} button, select the {{ vtes }} plugin and click the {{ choose }} button.
+        {% endtrans %}
+    </p>
+    <img src="{{ url_for('static', filename='img/lackeyccg-plugin-install.png') }}" alt="LackeyCCG Plugin Install" />
+    <p>
+        {% trans trimmed
+            plugins='<span class="code">Plugins</span>'|safe,
+            download_images='<span class="code">Download all missing card images</span>'|safe
+        %}
+        The interface has now adopted <strong>VtES</strong> colors. Go back to the {{ plugins }} tab and click the
+        {{ download_images }} button. You can let that run in the background as it takes around 30 minutes,
+        but this will avoid unneccessary delays when displaying card images during play.
+        {% endtrans %}
+    </p>
+    <img src="{{ url_for('static', filename='img/lackeyccg-download-card-images.png') }}"
+        alt="LackeyCCG Download card images" />
+    <p>
+        {% trans trimmed
+            preferences='<span class="code">Preferences</span>'|safe
+        %}
+        Now go to the {{ preferences }} tab and choose a suitable nickname. You're all set.
+        {% endtrans %}
+    </p>
+    <img src="{{ url_for('static', filename='img/lackeyccg-profile.png') }}" alt="LackeyCCG Profile" />
+    <h2>{{ _('Play') }}</h2>
+    <p>
+        {% trans trimmed
+            server='<span class="code">Server</span>'|safe,
+            connect='<span class="code">Connect to the game matching server!</span>'|safe
+        %}
+        To find an online game, go to the {{ server }} tab and click the {{ connect }} button.
+        {% endtrans %}
+    </p>
+    <img src="{{ url_for('static', filename='img/lackeyccg-server.png') }}" alt="LackeyCCG Server" />
+    <p>
+        {% trans trimmed
+            amaranth=external("https://amaranth.vtes.co.nz", "Amaranth"),
+            export='<span class="code">Export</span>'|safe,
+            lackey_deck='<span class="code">LackeyCCG/plugins/vtes/decks</span>'|safe,
+            deck_editor='<span class="code">Deck Editor</span>'|safe,
+            browse='<span class="code">Browse...</span>'|safe
+        %}
+        To use your decks exported from {{ amaranth }} (use the {{ export }} button), you have to copy the text file
+        into the
+        {{ lackey_deck }} folder. You can then find them in <em>LackeyCCG</em> {{ deck_editor }} tab
+        by clicking on the {{ browse }} button.
+        {% endtrans %}
+    </p>
+    <img src="{{ url_for('static', filename='img/lackeyccg-deck-browse.png') }}" alt="LackeyCCG Deck browse" />
+    <p>
+        {% trans trimmed
+            paste='<span class="code">Paste</span>'|safe
+        %}
+        Alternatively, you can use the {{ paste }} button to paste the decklist directly in a new deck.
+        Make sure to paste the library and crypt parts independantly in this case.
+        {% endtrans %}
+    </p>
+    <p>
+        {% trans trimmed %}
+        Finally, make sure you click the green + buttons in the interface to get access to all the menus.
+        {% endtrans %}
+    </p>
+    <img src="{{ url_for('static', filename='img/lackeyccg-interface.png') }}" alt="LackeyCCG Interface" />
+    <div class="warning">
+        <h3>{{ _('Keyboard Layout') }}</h3>
+        <p>
+            {% trans trimmed %}
+            LackeyCCG uses a non-configurable US keyboard layout.
+            This means you may not be able to use punctuation and numbers when typing if you do not have a US keyboard.
+            The only known "workaround" is to configure your system keyboard to us an US mapping.
+            {% endtrans %}
+        </p>
+    </div>
+    <h2>{{ _('Useful commands') }}</h2>
+    <p>
+        {% trans trimmed
+            preferences='<span class="code">Preferences</span>'|safe
+        %}
+        Note that you can configure keyboard shortcuts to your liking in the {{ preferences }} tab.
+        {% endtrans %}
+    </p>
+    <ul>
+        <li><strong>Double click</strong>: {{ _("Lock or Unlock") }}</li>
+        <li><strong>Ctrl +</strong>: {{ _("Add a blood") }}</li>
+        <li><strong>Ctrl -</strong>: {{ _("Remove a blood") }}</li>
+        <li><strong>Ctrl D</strong>: {{ _("Draw a card from library") }}</li>
+        <li><strong>Hover & Shift</strong>: {{ _("Peek at the face of one of your crypt card") }}</li>
+    </ul>
+    <p>
+        {% trans trimmed
+            range_of_commands=external("https://lackeyccg.com/tutoriallogcommands.html", _("range of commands")),
+            secret='<span class="code">/secret</span>'|safe,
+            reveal='<span class="code">/reveal</span>'|safe
+        %}
+        Lackey also offers a {{ range_of_commands }} to use in the chat window (beginning with "/").
+        Among them, the {{ secret }} and {{ reveal }} command can be useful for some cards.
+        {% endtrans %}
+    </p>
+</article>
+{% endblock %}

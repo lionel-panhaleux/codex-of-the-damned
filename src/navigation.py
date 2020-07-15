@@ -53,6 +53,15 @@ STRUCTURE = Nav(
     index=True,
     children=[
         Nav(
+            lazy_gettext("Online Play"),
+            index=True,
+            children=[
+                Nav(lazy_gettext("LackeyCCG")),
+                Nav(lazy_gettext("Tabletop Simulator")),
+                Nav(lazy_gettext("V:TES Online")),
+            ],
+        ),
+        Nav(
             lazy_gettext("Strategy"),
             index=True,
             children=[

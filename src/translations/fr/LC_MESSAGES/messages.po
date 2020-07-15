@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: codex 0.X\n"
 "Report-Msgid-Bugs-To: lionel.panhaleux+codex@gmail.com\n"
-"POT-Creation-Date: 2020-07-04 10:27+0200\n"
+"POT-Creation-Date: 2020-07-15 17:58+0200\n"
 "PO-Revision-Date: 2020-07-04 08:50+0200\n"
 "Last-Translator: Lionel Panhaleux <lionel.panhaleux+codex@gmail.com>\n"
 "Language: fr\n"
@@ -21,482 +21,498 @@ msgstr ""
 msgid "Home"
 msgstr "Accueil"
 
-#: src/navigation.py:56 src/templates/strategy/index.html:4
+#: src/navigation.py:56 src/templates/online-play/index.html:5
+msgid "Online Play"
+msgstr "Jeu en ligne"
+
+#: src/navigation.py:59 src/templates/online-play/lackeyccg.html:5
+msgid "LackeyCCG"
+msgstr "LackeyCCG"
+
+#: src/navigation.py:60 src/templates/online-play/tabletop-simulator.html:5
+msgid "Tabletop Simulator"
+msgstr "Tabletop Simulator"
+
+#: src/navigation.py:61 src/templates/online-play/vtes-online.html:5
+msgid "V:TES Online"
+msgstr "V:TES Online"
+
+#: src/navigation.py:65 src/templates/strategy/index.html:4
 msgid "Strategy"
 msgstr "Stratégie"
 
-#: src/navigation.py:59 src/templates/strategy/fundamentals.html:4
+#: src/navigation.py:68 src/templates/strategy/fundamentals.html:4
 msgid "Fundamentals"
 msgstr "Fondamentaux"
 
-#: src/navigation.py:60 src/templates/strategy/combat.html:4
+#: src/navigation.py:69 src/templates/strategy/combat.html:4
 msgid "Combat"
 msgstr "Combat"
 
-#: src/navigation.py:61 src/templates/strategy/bloat.html:4
+#: src/navigation.py:70 src/templates/strategy/bloat.html:4
 msgid "Bloat"
 msgstr "Régénération"
 
-#: src/navigation.py:62 src/templates/strategy/deck-building.html:10
+#: src/navigation.py:71 src/templates/strategy/deck-building.html:10
 msgid "Deck building"
 msgstr "Construction de deck"
 
-#: src/navigation.py:63 src/navigation.py:77 src/templates/archetypes/index.html:10
+#: src/navigation.py:72 src/navigation.py:86 src/templates/archetypes/index.html:10
 msgid "Archetypes"
 msgstr "Archétypes"
 
-#: src/navigation.py:64
+#: src/navigation.py:73
 msgid "Table Talk"
 msgstr "Discussion"
 
-#: src/navigation.py:66
+#: src/navigation.py:75
 msgid "Deck guides"
 msgstr "Guides de decks"
 
-#: src/navigation.py:68
+#: src/navigation.py:77
 msgid "Den of Fiends"
 msgstr "L'Antre des Démons"
 
-#: src/navigation.py:69
+#: src/navigation.py:78
 msgid "Libertine Ball"
 msgstr "Le Bal des Libertins"
 
-#: src/navigation.py:70
+#: src/navigation.py:79
 msgid "Pact with Nephandi"
 msgstr "Pacte avec les Nephandi"
 
-#: src/navigation.py:71
+#: src/navigation.py:80
 msgid "Parliament of Shadows"
 msgstr "Le Parlement des Ombres"
 
-#: src/navigation.py:80 src/templates/best-cards/clans/brujah.html:39 src/templates/best-cards/clans/toreador.html:8
+#: src/navigation.py:89 src/templates/best-cards/clans/brujah.html:39 src/templates/best-cards/clans/toreador.html:8
 #: src/templates/strategy/archetypes.html:254
 msgid "AAA"
 msgstr ""
 
-#: src/navigation.py:81 src/templates/best-cards/clans/akunanse.html:9
+#: src/navigation.py:90 src/templates/best-cards/clans/akunanse.html:9
 msgid "Akunanse Wall"
 msgstr ""
 
-#: src/navigation.py:82 src/templates/best-cards/clans/assamite.html:110 src/templates/strategy/archetypes.html:136
+#: src/navigation.py:91 src/templates/best-cards/clans/assamite.html:110 src/templates/strategy/archetypes.html:136
 msgid "Amaravati Politics"
 msgstr ""
 
-#: src/navigation.py:83
+#: src/navigation.py:92
 msgid "Anti ventrue Grinder"
 msgstr ""
 
-#: src/navigation.py:84 src/templates/strategy/archetypes.html:364
+#: src/navigation.py:93 src/templates/strategy/archetypes.html:364
 msgid "Baltimore Purge"
 msgstr ""
 
-#: src/navigation.py:85 src/templates/best-cards/clans/followers-of-set.html:8 src/templates/strategy/archetypes.html:53
+#: src/navigation.py:94 src/templates/best-cards/clans/followers-of-set.html:8 src/templates/strategy/archetypes.html:53
 msgid "Bima Dominate"
 msgstr ""
 
-#: src/navigation.py:86 src/templates/best-cards/clans/assamite.html:19 src/templates/best-cards/clans/assamite.html:128
+#: src/navigation.py:95 src/templates/best-cards/clans/assamite.html:19 src/templates/best-cards/clans/assamite.html:128
 #: src/templates/strategy/archetypes.html:48 src/templates/strategy/fundamentals.html:329
 msgid "Black Hand"
 msgstr ""
 
-#: src/navigation.py:87 src/templates/best-cards/clans/ahrimanes.html:12 src/templates/strategy/archetypes.html:200
+#: src/navigation.py:96 src/templates/best-cards/clans/ahrimanes.html:12 src/templates/strategy/archetypes.html:200
 msgid "Cats"
 msgstr ""
 
-#: src/navigation.py:88 src/templates/best-cards/clans/baali.html:30 src/templates/best-cards/clans/malkavian.html:302
+#: src/navigation.py:97 src/templates/best-cards/clans/baali.html:30 src/templates/best-cards/clans/malkavian.html:302
 #: src/templates/best-cards/clans/ventrue.html:138 src/templates/strategy/archetypes.html:73
 msgid "Council of Doom"
 msgstr ""
 
-#: src/navigation.py:89 src/templates/strategy/archetypes.html:367
+#: src/navigation.py:98 src/templates/strategy/archetypes.html:367
 msgid "Cybelotron"
 msgstr ""
 
-#: src/navigation.py:90 src/templates/best-cards/clans/daughters-of-cacophony.html:8
+#: src/navigation.py:99 src/templates/best-cards/clans/daughters-of-cacophony.html:8
 #: src/templates/strategy/archetypes.html:127
 msgid "Daughters Politics"
 msgstr ""
 
-#: src/navigation.py:91 src/templates/best-cards/clans/assamite.html:15 src/templates/best-cards/sects/anarch.html:207
+#: src/navigation.py:100 src/templates/best-cards/clans/assamite.html:15 src/templates/best-cards/sects/anarch.html:207
 #: src/templates/strategy/archetypes.html:137
 msgid "Death Star"
 msgstr ""
 
-#: src/navigation.py:92
+#: src/navigation.py:101
 msgid "Dmitri's Big Band"
 msgstr ""
 
-#: src/navigation.py:93 src/templates/best-cards/clans/harbingers-of-skulls.html:12
+#: src/navigation.py:102 src/templates/best-cards/clans/harbingers-of-skulls.html:12
 #: src/templates/best-cards/clans/harbingers-of-skulls.html:34 src/templates/strategy/archetypes.html:261
 msgid "Emerald Legion"
 msgstr ""
 
-#: src/navigation.py:94 src/templates/best-cards/clans/brujah.html:10 src/templates/best-cards/clans/nosferatu.html:154
+#: src/navigation.py:103 src/templates/best-cards/clans/brujah.html:10 src/templates/best-cards/clans/nosferatu.html:154
 #: src/templates/strategy/archetypes.html:255
 msgid "Euro Brujah"
 msgstr ""
 
-#: src/navigation.py:95 src/templates/archetypes/council-of-doom.html:60 src/templates/strategy/archetypes.html:72
+#: src/navigation.py:104 src/templates/archetypes/council-of-doom.html:60 src/templates/strategy/archetypes.html:72
 msgid "Girls Will Find Inner Circle"
 msgstr ""
 
-#: src/navigation.py:96 src/templates/archetypes/tzimisce-wall.html:81 src/templates/best-cards/clans/tremere.html:24
+#: src/navigation.py:105 src/templates/archetypes/tzimisce-wall.html:81 src/templates/best-cards/clans/tremere.html:24
 #: src/templates/best-cards/sects/anarch.html:9 src/templates/strategy/archetypes.html:197
 msgid "Goratrix High Tower"
 msgstr ""
 
-#: src/navigation.py:97 src/templates/best-cards/clans/guruhi.html:10 src/templates/best-cards/clans/nosferatu.html:93
+#: src/navigation.py:106 src/templates/best-cards/clans/guruhi.html:10 src/templates/best-cards/clans/nosferatu.html:93
 #: src/templates/strategy/archetypes.html:326
 msgid "Guruhi Rush"
 msgstr ""
 
-#: src/navigation.py:98 src/templates/best-cards/clans/imbued.html:9
+#: src/navigation.py:107 src/templates/best-cards/clans/imbued.html:9
 msgid "Hunters"
 msgstr ""
 
-#: src/navigation.py:99 src/templates/best-cards/clans/ishtarri.html:8 src/templates/best-cards/sects/laibon.html:75
+#: src/navigation.py:108 src/templates/best-cards/clans/ishtarri.html:8 src/templates/best-cards/sects/laibon.html:75
 #: src/templates/strategy/archetypes.html:124
 msgid "Ishtarri Politics"
 msgstr ""
 
-#: src/navigation.py:100 src/templates/best-cards/clans/toreador.html:9 src/templates/strategy/archetypes.html:64
+#: src/navigation.py:109 src/templates/best-cards/clans/toreador.html:9 src/templates/strategy/archetypes.html:64
 msgid "Jost Powerbleed"
 msgstr ""
 
-#: src/navigation.py:101 src/templates/best-cards/clans/giovanni.html:8 src/templates/best-cards/sects/anarch.html:121
+#: src/navigation.py:110 src/templates/best-cards/clans/giovanni.html:8 src/templates/best-cards/sects/anarch.html:121
 #: src/templates/strategy/archetypes.html:260
 msgid "Khazar's Diary"
 msgstr ""
 
-#: src/navigation.py:102 src/templates/archetypes/lasombra-nocturn.html:68 src/templates/best-cards/clans/kiasyd.html:9
+#: src/navigation.py:111 src/templates/archetypes/lasombra-nocturn.html:68 src/templates/best-cards/clans/kiasyd.html:9
 #: src/templates/strategy/archetypes.html:37
 msgid "Kiasyd Stealth & Bleed"
 msgstr ""
 
-#: src/navigation.py:103 src/templates/archetypes/kiasyd-stealth-bleed.html:90
+#: src/navigation.py:112 src/templates/archetypes/kiasyd-stealth-bleed.html:90
 #: src/templates/best-cards/clans/lasombra.html:8 src/templates/strategy/archetypes.html:38
 msgid "Lasombra Nocturn"
 msgstr ""
 
-#: src/navigation.py:104 src/templates/best-cards/clans/malkavian.html:9 src/templates/strategy/archetypes.html:115
+#: src/navigation.py:113 src/templates/best-cards/clans/malkavian.html:9 src/templates/strategy/archetypes.html:115
 msgid "Lutz Politics"
 msgstr ""
 
-#: src/navigation.py:105 src/templates/strategy/archetypes.html:373
+#: src/navigation.py:114 src/templates/strategy/archetypes.html:373
 msgid "Madness Reversal"
 msgstr ""
 
-#: src/navigation.py:106 src/templates/best-cards/clans/malkavian.html:22 src/templates/strategy/archetypes.html:362
+#: src/navigation.py:115 src/templates/best-cards/clans/malkavian.html:22 src/templates/strategy/archetypes.html:362
 msgid "Mind Rape"
 msgstr ""
 
-#: src/navigation.py:107 src/templates/best-cards/clans/nosferatu.html:129 src/templates/best-cards/clans/tremere.html:15
+#: src/navigation.py:116 src/templates/best-cards/clans/nosferatu.html:129 src/templates/best-cards/clans/tremere.html:15
 #: src/templates/strategy/archetypes.html:68
 msgid "Mistress"
 msgstr ""
 
-#: src/navigation.py:108 src/templates/best-cards/clans/guruhi.html:7 src/templates/best-cards/clans/nosferatu.html:8
+#: src/navigation.py:117 src/templates/best-cards/clans/guruhi.html:7 src/templates/best-cards/clans/nosferatu.html:8
 #: src/templates/best-cards/sects/anarch.html:10 src/templates/strategy/archetypes.html:327
 msgid "Nananimalism"
 msgstr ""
 
-#: src/navigation.py:109 src/templates/archetypes/tupdogs.html:82 src/templates/best-cards/clans/tremere.html:19
+#: src/navigation.py:118 src/templates/archetypes/tupdogs.html:82 src/templates/best-cards/clans/tremere.html:19
 #: src/templates/best-cards/clans/tremere.html:99 src/templates/best-cards/clans/tremere.html:131
 #: src/templates/best-cards/sects/anarch.html:122 src/templates/strategy/archetypes.html:262
 msgid "Nephandii"
 msgstr ""
 
-#: src/navigation.py:110 src/templates/best-cards/clans/nosferatu.html:11 src/templates/best-cards/clans/nosferatu.html:69
+#: src/navigation.py:119 src/templates/best-cards/clans/nosferatu.html:11 src/templates/best-cards/clans/nosferatu.html:69
 #: src/templates/best-cards/clans/nosferatu.html:79 src/templates/best-cards/clans/nosferatu.html:115
 #: src/templates/strategy/archetypes.html:119
 msgid "Nosferatu Royalty"
 msgstr ""
 
-#: src/navigation.py:111 src/templates/best-cards/clans/malkavian.html:10 src/templates/strategy/archetypes.html:79
+#: src/navigation.py:120 src/templates/best-cards/clans/malkavian.html:10 src/templates/strategy/archetypes.html:79
 msgid "Rachel Madness"
 msgstr ""
 
-#: src/navigation.py:112 src/templates/best-cards/clans/ravnos.html:8 src/templates/strategy/archetypes.html:141
+#: src/navigation.py:121 src/templates/best-cards/clans/ravnos.html:8 src/templates/strategy/archetypes.html:141
 msgid "Ravnos Clown Car"
 msgstr ""
 
-#: src/navigation.py:113 src/templates/best-cards/clans/gangrel.html:9
+#: src/navigation.py:122 src/templates/best-cards/clans/gangrel.html:9
 msgid "Renegade Assault"
 msgstr ""
 
-#: src/navigation.py:114 src/templates/best-cards/clans/salubri.html:13 src/templates/best-cards/sects/anarch.html:8
+#: src/navigation.py:123 src/templates/best-cards/clans/salubri.html:13 src/templates/best-cards/sects/anarch.html:8
 #: src/templates/strategy/archetypes.html:208
 msgid "Saulot & Friends"
 msgstr ""
 
-#: src/navigation.py:115 src/templates/best-cards/clans/daughters-of-cacophony.html:9
+#: src/navigation.py:124 src/templates/best-cards/clans/daughters-of-cacophony.html:9
 #: src/templates/strategy/archetypes.html:126
 msgid "Scout"
 msgstr ""
 
-#: src/navigation.py:116 src/templates/best-cards/clans/giovanni.html:10 src/templates/strategy/archetypes.html:321
+#: src/navigation.py:125 src/templates/best-cards/clans/giovanni.html:10 src/templates/strategy/archetypes.html:321
 msgid "Shambling Hordes"
 msgstr ""
 
-#: src/navigation.py:117 src/templates/best-cards/clans/salubri.html:15 src/templates/strategy/archetypes.html:363
+#: src/navigation.py:126 src/templates/best-cards/clans/salubri.html:15 src/templates/strategy/archetypes.html:363
 msgid "Spirit Marionette"
 msgstr ""
 
-#: src/navigation.py:118 src/templates/best-cards/clans/gangrel.html:7 src/templates/strategy/archetypes.html:57
+#: src/navigation.py:127 src/templates/best-cards/clans/gangrel.html:7 src/templates/strategy/archetypes.html:57
 msgid "Stanislava"
 msgstr ""
 
-#: src/navigation.py:119 src/templates/best-cards/clans/akunanse.html:11 src/templates/best-cards/clans/akunanse.html:66
+#: src/navigation.py:128 src/templates/best-cards/clans/akunanse.html:11 src/templates/best-cards/clans/akunanse.html:66
 msgid "Team Jacob"
 msgstr ""
 
-#: src/navigation.py:120 src/templates/best-cards/clans/ventrue.html:18 src/templates/strategy/archetypes.html:63
+#: src/navigation.py:129 src/templates/best-cards/clans/ventrue.html:18 src/templates/strategy/archetypes.html:63
 msgid "The Bleeding Vignes"
 msgstr ""
 
-#: src/navigation.py:121 src/templates/best-cards/clans/baali.html:12 src/templates/best-cards/clans/nosferatu.html:9
+#: src/navigation.py:130 src/templates/best-cards/clans/baali.html:12 src/templates/best-cards/clans/nosferatu.html:9
 #: src/templates/best-cards/clans/nosferatu.html:142 src/templates/best-cards/clans/ventrue.html:139
 #: src/templates/strategy/archetypes.html:114 src/templates/strategy/archetypes.html:131
 msgid "The Dark Side of Politics"
 msgstr ""
 
-#: src/navigation.py:122 src/templates/archetypes/rachel-madness.html:79 src/templates/best-cards/clans/baali.html:25
+#: src/navigation.py:131 src/templates/archetypes/rachel-madness.html:79 src/templates/best-cards/clans/baali.html:25
 #: src/templates/strategy/archetypes.html:78
 msgid "The unnamed"
 msgstr ""
 
-#: src/navigation.py:123 src/templates/archetypes/nephandii.html:98 src/templates/best-cards/clans/tremere.html:28
+#: src/navigation.py:132 src/templates/archetypes/nephandii.html:98 src/templates/best-cards/clans/tremere.html:28
 #: src/templates/best-cards/clans/tremere.html:194 src/templates/strategy/archetypes.html:315
 msgid "Tupdogs"
 msgstr ""
 
-#: src/navigation.py:124 src/templates/best-cards/clans/tzimisce.html:10
+#: src/navigation.py:133 src/templates/best-cards/clans/tzimisce.html:10
 msgid "Tzimisce Toolbox"
 msgstr ""
 
-#: src/navigation.py:125 src/templates/archetypes/mistress.html:65 src/templates/best-cards/clans/tremere.html:38
+#: src/navigation.py:134 src/templates/archetypes/mistress.html:65 src/templates/best-cards/clans/tremere.html:38
 #: src/templates/best-cards/clans/tzimisce.html:9 src/templates/strategy/archetypes.html:190
 msgid "Tzimisce Wall"
 msgstr ""
 
-#: src/navigation.py:126 src/templates/best-cards/clans/ventrue.html:14 src/templates/best-cards/clans/ventrue.html:170
+#: src/navigation.py:135 src/templates/best-cards/clans/ventrue.html:14 src/templates/best-cards/clans/ventrue.html:170
 #: src/templates/best-cards/clans/ventrue.html:204 src/templates/strategy/archetypes.html:256
 msgid "Ventrue Royalty"
 msgstr ""
 
-#: src/navigation.py:127 src/templates/best-cards/clans/tremere.html:11 src/templates/strategy/archetypes.html:272
+#: src/navigation.py:136 src/templates/best-cards/clans/tremere.html:11 src/templates/strategy/archetypes.html:272
 msgid "War Chantry"
 msgstr ""
 
-#: src/navigation.py:128 src/templates/best-cards/clans/tzimisce.html:11 src/templates/best-cards/sects/anarch.html:120
+#: src/navigation.py:137 src/templates/best-cards/clans/tzimisce.html:11 src/templates/best-cards/sects/anarch.html:120
 #: src/templates/strategy/archetypes.html:320
 msgid "War Ghouls"
 msgstr ""
 
-#: src/navigation.py:129 src/templates/best-cards/clans/caitiff.html:32 src/templates/best-cards/clans/malkavian.html:16
+#: src/navigation.py:138 src/templates/best-cards/clans/caitiff.html:32 src/templates/best-cards/clans/malkavian.html:16
 #: src/templates/best-cards/clans/toreador.html:12 src/templates/strategy/archetypes.html:187
 msgid "Weenie AUS"
 msgstr ""
 
-#: src/navigation.py:130 src/templates/best-cards/clans/caitiff.html:104 src/templates/best-cards/clans/malkavian.html:15
+#: src/navigation.py:139 src/templates/best-cards/clans/caitiff.html:104 src/templates/best-cards/clans/malkavian.html:15
 #: src/templates/strategy/archetypes.html:43
 msgid "Weenie DEM"
 msgstr ""
 
-#: src/navigation.py:131 src/templates/best-cards/clans/ventrue.html:23 src/templates/strategy/archetypes.html:52
+#: src/navigation.py:140 src/templates/best-cards/clans/ventrue.html:23 src/templates/strategy/archetypes.html:52
 msgid "Weenie DOM"
 msgstr ""
 
-#: src/navigation.py:135
+#: src/navigation.py:144
 msgid "Best Cards"
 msgstr "Top Cartes"
 
-#: src/navigation.py:139 src/templates/best-cards/index.html:20
+#: src/navigation.py:148 src/templates/best-cards/index.html:20
 msgid "Generic"
 msgstr "Générique"
 
-#: src/navigation.py:141
+#: src/navigation.py:150
 msgid "Master cards"
 msgstr "Cartes de Maître"
 
-#: src/navigation.py:142
+#: src/navigation.py:151
 msgid "Political actions"
 msgstr "Actions politiques"
 
-#: src/navigation.py:143
+#: src/navigation.py:152
 msgid "No discipline"
 msgstr "Sans discipline"
 
-#: src/navigation.py:144
+#: src/navigation.py:153
 msgid "Animalism"
 msgstr "Animalisme"
 
-#: src/navigation.py:145
+#: src/navigation.py:154
 msgid "Auspex"
 msgstr "Auspex"
 
-#: src/navigation.py:146
+#: src/navigation.py:155
 msgid "Celerity"
 msgstr "Célérité"
 
-#: src/navigation.py:147
+#: src/navigation.py:156
 msgid "Dominate"
 msgstr "Domination"
 
-#: src/navigation.py:148
+#: src/navigation.py:157
 msgid "Fortitude"
 msgstr "Force d’âme"
 
-#: src/navigation.py:149
+#: src/navigation.py:158
 msgid "Necromancy"
 msgstr "Nécromancie"
 
-#: src/navigation.py:150
+#: src/navigation.py:159
 msgid "Obfuscate"
 msgstr "Occultation"
 
-#: src/navigation.py:151
+#: src/navigation.py:160
 msgid "Potence"
 msgstr "Puissance"
 
-#: src/navigation.py:152
+#: src/navigation.py:161
 msgid "Presence"
 msgstr "Présence"
 
-#: src/navigation.py:156 src/templates/best-cards/index.html:35
+#: src/navigation.py:165 src/templates/best-cards/index.html:35
 msgid "Sects"
 msgstr "Sectes"
 
-#: src/navigation.py:158 src/templates/strategy/bloat.html:77 src/templates/strategy/bloat.html:78
+#: src/navigation.py:167 src/templates/strategy/bloat.html:77 src/templates/strategy/bloat.html:78
 #: src/templates/strategy/bloat.html:101 src/templates/strategy/bloat.html:102 src/templates/strategy/fundamentals.html:279
 #: src/templates/strategy/fundamentals.html:280 src/templates/strategy/fundamentals.html:327
 #: src/templates/strategy/fundamentals.html:399
 msgid "Anarch"
 msgstr ""
 
-#: src/navigation.py:159
+#: src/navigation.py:168
 msgid "Camarilla"
 msgstr ""
 
-#: src/navigation.py:160 src/templates/strategy/bloat.html:146 src/templates/strategy/fundamentals.html:86
+#: src/navigation.py:169 src/templates/strategy/bloat.html:146 src/templates/strategy/fundamentals.html:86
 #: src/templates/strategy/fundamentals.html:472
 msgid "Laibon"
 msgstr ""
 
-#: src/navigation.py:161 src/templates/strategy/bloat.html:103 src/templates/strategy/bloat.html:104
+#: src/navigation.py:170 src/templates/strategy/bloat.html:103 src/templates/strategy/bloat.html:104
 #: src/templates/strategy/bloat.html:268 src/templates/strategy/fundamentals.html:440
 msgid "Sabbat"
 msgstr ""
 
-#: src/navigation.py:165 src/templates/best-cards/index.html:42
+#: src/navigation.py:174 src/templates/best-cards/index.html:42
 msgid "Clans"
 msgstr "Clans"
 
-#: src/navigation.py:167
+#: src/navigation.py:176
 msgid "Ahrimanes"
 msgstr ""
 
-#: src/navigation.py:168
+#: src/navigation.py:177
 msgid "Akunanse"
 msgstr ""
 
-#: src/navigation.py:169
+#: src/navigation.py:178
 msgid "Assamite"
 msgstr ""
 
-#: src/navigation.py:170
+#: src/navigation.py:179
 msgid "Baali"
 msgstr ""
 
-#: src/navigation.py:171
+#: src/navigation.py:180
 msgid "Brujah"
 msgstr ""
 
-#: src/navigation.py:172
+#: src/navigation.py:181
 msgid "Caitiff"
 msgstr ""
 
-#: src/navigation.py:173
+#: src/navigation.py:182
 msgid "Daughters of Cacophony"
 msgstr "Filles de la Cacophonie"
 
-#: src/navigation.py:174
+#: src/navigation.py:183
 msgid "Followers of Set"
 msgstr "Disciples de Seth"
 
-#: src/navigation.py:175
+#: src/navigation.py:184
 msgid "Gangrel"
 msgstr ""
 
-#: src/navigation.py:176
+#: src/navigation.py:185
 msgid "Giovanni"
 msgstr ""
 
-#: src/navigation.py:177
+#: src/navigation.py:186
 msgid "Guruhi"
 msgstr ""
 
-#: src/navigation.py:178
+#: src/navigation.py:187
 msgid "Harbingers of Skulls"
 msgstr "Émissaires des Crânes"
 
-#: src/navigation.py:179 src/templates/strategy/bloat.html:158 src/templates/strategy/fundamentals.html:281
+#: src/navigation.py:188 src/templates/strategy/bloat.html:158 src/templates/strategy/fundamentals.html:281
 msgid "Imbued"
 msgstr "Illuminés"
 
-#: src/navigation.py:180
+#: src/navigation.py:189
 msgid "Ishtarri"
 msgstr ""
 
-#: src/navigation.py:181
+#: src/navigation.py:190
 msgid "Kiasyd"
 msgstr ""
 
-#: src/navigation.py:182
+#: src/navigation.py:191
 msgid "Lasombra"
 msgstr ""
 
-#: src/navigation.py:183
+#: src/navigation.py:192
 msgid "Malkavian"
 msgstr "Malkavien"
 
-#: src/navigation.py:184
+#: src/navigation.py:193
 msgid "Nosferatu"
 msgstr ""
 
-#: src/navigation.py:185
+#: src/navigation.py:194
 msgid "Ravnos"
 msgstr ""
 
-#: src/navigation.py:186
+#: src/navigation.py:195
 msgid "Salubri"
 msgstr ""
 
-#: src/navigation.py:187
+#: src/navigation.py:196
 msgid "Toreador"
 msgstr "Toréador"
 
-#: src/navigation.py:188
+#: src/navigation.py:197
 msgid "Tremere"
 msgstr ""
 
-#: src/navigation.py:189
+#: src/navigation.py:198
 msgid "True Brujah"
 msgstr "Brujah Véritable"
 
-#: src/navigation.py:190
+#: src/navigation.py:199
 msgid "Tzimisce"
 msgstr ""
 
-#: src/navigation.py:191
+#: src/navigation.py:200
 msgid "Ventrue"
 msgstr ""
 
-#: src/navigation.py:196
+#: src/navigation.py:205
 msgid "Deck Search"
 msgstr "Recherche de Deck"
 
-#: src/navigation.py:197
+#: src/navigation.py:206
 msgid "Card Search"
 msgstr "Recherche de Carte"
 
@@ -665,99 +681,7 @@ msgstr "Groupe Facebook VEKN"
 msgid "interviews archive"
 msgstr "archive d'interviews"
 
-#: src/templates/index.html:52
-msgid "Online tools and play"
-msgstr "Outils et solutions pour jouer en ligne"
-
-#: src/templates/index.html:54
-msgid "for deck building"
-msgstr "pour la construction de deck"
-
-#: src/templates/index.html:55
-msgid "for card search"
-msgstr "pour la recherche de cartes"
-
-#: src/templates/index.html:56
-msgid "to play online"
-msgstr "pour jouer en ligne"
-
-#: src/templates/index.html:59
-msgid "VTES plugins"
-msgstr "plugins VTES"
-
-#: src/templates/index.html:62
-msgid "Play on Lackey"
-msgstr "Jouer sur Lackey"
-
-#: src/templates/index.html:64
-#, python-format
-msgid "If you use %(amaranth)s to create decks online, you can use %(export_lackey)s to export the deck for online play."
-msgstr ""
-"Si vous utilisez %(amaranth)s pour créer des decks en ligne, vous pouvez utiliser %(export_lackey)s pour exporter un "
-"deck afin de jouer en ligne."
-
-#: src/templates/index.html:73
-#, python-format
-msgid ""
-"Download %(lackeyccg)s. Go to the %(plugins)s tab and paste this AutoUpdate URL to activate the <strong>VtES</strong>"
-" plugin: %(autoupdate_url)s"
-msgstr ""
-"Téléchargez %(lackeyccg)s. Allez sur l'onglet %(plugins)s et collez cette URL de mise à jour pour activer le plugin "
-"<strong>VtES</strong> : %(autoupdate_url)s"
-
-#: src/templates/index.html:83
-msgid "On Mac OSX"
-msgstr "Sur Mac OSX"
-
-#: src/templates/index.html:85
-#, python-format
-msgid ""
-"The system's security prevents the application to run properly: instead of launching, it takes you to a \"Missing "
-"fonts\" %(error_web_page)s. To fix it, open a Terminal and type the following command: %(command_line)s. Replace the "
-"last part with the path of your LackeyCCG folder if you did not put it in the Applications folder."
-msgstr ""
-"La sécurité du système empêche l’application de tourner normalement : au lieu de démarrer, elle vous redirige vers "
-"une %(error_web_page)s indiquant “Missing fonts”. Pour corriger cela, ouvrez le Terminal and tapez la commande "
-"suivante : %(command_line)s. Remplacez la dernière partie par le chemin de votre dossier LackeyCCG si vous ne l’avez "
-"pas placé dans le dossier Applications."
-
-#: src/templates/index.html:87
-msgid "error web page"
-msgstr "page web d’erreur"
-
-#: src/templates/index.html:98
-#, python-format
-msgid ""
-"You can get a %(discord)s invite to the <em>VtES - Lackey CCG</em> server by asking for an invite link on the "
-"%(vtes_facebook)s or on the %(vekn_forum)s."
-msgstr ""
-"Vous pouvez obtenir une invitation %(discord)s pour le serveur <em>VtES - Lackey CCG</em> en demandant un lien "
-"d’invitation sur le  %(vtes_facebook)s ou le %(vekn_forum)s."
-
-#: src/templates/index.html:100
-msgid "VtES LackeyCCG Facebook group"
-msgstr "Groupe Facebook VtES LackeyCCG"
-
-#: src/templates/index.html:101
-msgid "VEKN forum"
-msgstr "forum VEKN"
-
-#: src/templates/index.html:108
-#, python-format
-msgid ""
-"To use your decks exported from <em>Amaranth</em>, you have to copy the text file into the %(lackey_deck)s folder. "
-"You can then find them in <em>LackeyCCG</em> %(deck_editor)s tab by clicking on the %(browse)s button. Visit the "
-"%(vtes_lackey_tutoriel)s for further information."
-msgstr ""
-"Pour utiliser vos decks exportés depuis <em>Amaranth</em>, vous devez copier le fichier texte dans le dossier "
-"%(lackey_deck)s. Vous pourrez alors les retrouver dans l’onglet %(deck_editor)s de <em>LackeyCCG</em> en cliquant sur"
-" le bouton %(browse)s. Consultez le %(vtes_lackey_tutoriel)s pour plus d’informations."
-
-#: src/templates/index.html:112
-msgid "VtES Lackey tutorial"
-msgstr "tutoriel Lackey VtES"
-
-#: src/templates/index.html:125
+#: src/templates/index.html:57
 msgid ""
 "Portions of the materials are the copyrights and trademarks of Paradox Interactive AB, and are used with permission. "
 "All rights reserved. For more information please visit"
@@ -856,14 +780,13 @@ msgstr ""
 "est inclus pour gérer les decks de breed. </p> <p> Alors que la partie progresse, les %(ashur_tablets)s sont "
 "utilisées pour leur récursivité afin d'adapter le deck au contexte de table en y remontant ce qui est vraiment utile."
 " </p> <h2>Variantes</h2> <p> La variante <strong>Anson Guns</strong> se concentre sur %(anson)s et néglige ses "
-"camarades Toréador pour leur préférer des vampires moins coûteux avec %(CEL)s, comme dans le %(tomasz_deck)s de "
-"2019. </p> <p> La variante <strong>Grand Ball</strong> retire le module de combat et utilise le pouvoir "
-"d’%(alexandra)s avec %(toreador_grand_ball)s pour donner des votes imblocables, comme dans le %(martin_deck)s de "
-"2013. </p> <p> La variante <strong>Aching Beauty</strong> remplace aussi le module de combat par des %(majesty)s pour"
-" la défense, mais utilise %(aching_beauty)s en grand nombre pour rendre les actions des vampires difficiles à "
-"bloquer, comme dans le %(laszlo_deck)s de 2012. </p> <p> La variante <strong>AAAAA</strong> conserve %(alexandra)s et"
-" %(anneke)s et utilise la combinaison %(alastor)s + %(assault_rifle)s (d’où les cinq “A”), comme dans le "
-"%(izaak_deck)s de 2010. </p>"
+"camarades Toréador pour leur préférer des vampires moins coûteux avec %(CEL)s, comme dans le %(tomasz_deck)s de 2019."
+" </p> <p> La variante <strong>Grand Ball</strong> retire le module de combat et utilise le pouvoir d’%(alexandra)s "
+"avec %(toreador_grand_ball)s pour donner des votes imblocables, comme dans le %(martin_deck)s de 2013. </p> <p> La "
+"variante <strong>Aching Beauty</strong> remplace aussi le module de combat par des %(majesty)s pour la défense, mais "
+"utilise %(aching_beauty)s en grand nombre pour rendre les actions des vampires difficiles à bloquer, comme dans le "
+"%(laszlo_deck)s de 2012. </p> <p> La variante <strong>AAAAA</strong> conserve %(alexandra)s et %(anneke)s et utilise "
+"la combinaison %(alastor)s + %(assault_rifle)s (d’où les cinq “A”), comme dans le %(izaak_deck)s de 2010. </p>"
 
 #: src/templates/archetypes/aaa.html:35
 msgid "Tomasz Izydorczyk's deck"
@@ -1380,6 +1303,365 @@ msgstr "déni de blocage"
 #: src/templates/best-cards/generic/no-discipline.html:242 src/templates/strategy/deck-building.html:235
 msgid "bruise"
 msgstr "érosion"
+
+#: src/templates/online-play/index.html:6
+#, python-format
+msgid ""
+"<p> This category presents tools for online play. Each section presents a different tool, the ways to reach its "
+"community and the basic Étiquette when using it. </p> <p> Regardless of the tool, %(amaranth)s and %(vtes_db)s can be"
+" used for deck building. </p>"
+msgstr ""
+"<p> Cette catégorie présente les outils pour jouer en ligne. Chaque section présente une plateforme différente, la "
+"manière d'entrer en contact avec sa communauté et l'étiquette à respecter lors de son utilisation. </p> <p> Quel que "
+"soit l'outil utilisé, %(amaranth)s et %(vtes_db)s peuvent être utilisés pour la construction de deck. </p>"
+
+#: src/templates/online-play/lackeyccg.html:7
+#, python-format
+msgid ""
+"%(lackey)s is an old software to play Collectible Card Games online. It is still the foremost online plateform when "
+"it comes to play <strong>V:tES</strong> in real time, as it is free and up-to-date cardwise."
+msgstr ""
+"%(lackey)s est un vieux logiciel conçu pour jouer aux jeux de cartes à collectionner en ligne. Il s'agit encore "
+"aujourd'hui de la plateforme principale quand il s'agit de jouer à <strong>V:tES</strong> en temps réel, étant donné "
+"qu'il est gratuit et à jour en ce qui concerne les cartes."
+
+#: src/templates/online-play/lackeyccg.html:15 src/templates/online-play/tabletop-simulator.html:16
+#: src/templates/online-play/vtes-online.html:15
+msgid "Install"
+msgstr "Installation"
+
+#: src/templates/online-play/lackeyccg.html:17
+#, python-format
+msgid "Go to the %(lackey)s page and install the software on your system."
+msgstr "Allez sur la page de %(lackey)s et installez le logiciel sur votre système."
+
+#: src/templates/online-play/lackeyccg.html:24
+msgid "On Mac OSX"
+msgstr "Sur Mac OSX"
+
+#: src/templates/online-play/lackeyccg.html:26
+msgid "The system's security prevents the application to run:"
+msgstr "La sécurité du système empêche l'application de tourner :"
+
+#: src/templates/online-play/lackeyccg.html:30
+#, python-format
+msgid ""
+"If you just allow it in your system preference, it will take you to a \"Missing fonts\" %(error_web_page)s instead of"
+" launching. To fix it, open a Terminal and type the following command:<br /> %(command_line)s<br /> Replace the last "
+"part with the path of your LackeyCCG folder if you did not put it in the Applications folder."
+msgstr ""
+"Si vous vous contentez de permettre son lancement dans vos préférences système, elle vous enverra vers une "
+"%(error_web_page)s indiquant \"Missing fonts\" au lieu de se lancer. Pour corriger le problème, ouvrez un Terminal et"
+" tapez la commande suivante :<br /> %(command_line)s<br /> Remplacez la dernière partie avec le chemin d'accès de "
+"votre dossier LackeyCCG si vous ne l'avez pas mis dans le dossier Applications."
+
+#: src/templates/online-play/lackeyccg.html:32
+msgid "error web page"
+msgstr "page web d’erreur"
+
+#: src/templates/online-play/lackeyccg.html:44
+msgid "On Windows"
+msgstr "Sur Windows"
+
+#: src/templates/online-play/lackeyccg.html:46
+msgid "The system's security prevents the application to run if it is not run with <strong>admin privileges</strong>."
+msgstr ""
+"La sécurité du système vous empêchera de lancer l'application si elle n'est pas lancée avec les <strong>privilèges "
+"administrateur</strong>."
+
+#: src/templates/online-play/lackeyccg.html:53
+#, python-format
+msgid ""
+"Go to the %(plugins)s tab and paste this AutoUpdate URL to activate the <strong>VtES</strong> plugin:<br /> "
+"%(autoupdate_url)s<br /> then click the %(install)s button."
+msgstr ""
+"Go to the %(plugins)s tab and paste this AutoUpdate URL to activate the <strong>VtES</strong> plugin:<br /> "
+"%(autoupdate_url)s<br /> then click the %(install)s button."
+
+#: src/templates/online-play/lackeyccg.html:66
+#, python-format
+msgid ""
+"This takes a few minutes. Once the download is finished and displays %(autoupdate_finished)s, click the "
+"%(browse_installed)s button, select the %(vtes)s plugin and click the %(choose)s button."
+msgstr ""
+"Cela prend quelques minutes. Une fois le téléchargement terminé et que %(autoupdate_finished)s s'affiche, cliquez le "
+"bouton %(browse_installed)s, sélectionnez le plugin %(vtes)s et cliquez sur le bouton %(choose)s."
+
+#: src/templates/online-play/lackeyccg.html:78
+#, python-format
+msgid ""
+"The interface has now adopted <strong>VtES</strong> colors. Go back to the %(plugins)s tab and click the "
+"%(download_images)s button. You can let that run in the background as it takes around 30 minutes, but this will avoid"
+" unneccessary delays when displaying card images during play."
+msgstr ""
+"L'interface utilise désormais les couleurs de <strong>VtES</strong>. Retournez sur l'onglet %(plugins)s et cliquez "
+"sur le bouton %(download_images)s. Vous pouvez laisser tourner en arrière-plan car cela prend environ 30 minutes, "
+"mais cela évitera les délais d'affichage superflus lors de l'affichage des cartes."
+
+#: src/templates/online-play/lackeyccg.html:90
+#, python-format
+msgid "Now go to the %(preferences)s tab and choose a suitable nickname. You're all set."
+msgstr "Maintenant retournez sur l'onglet %(preferences)s et choisissez un surnom adapté. Vous êtes prêt."
+
+#: src/templates/online-play/lackeyccg.html:97 src/templates/online-play/tabletop-simulator.html:30
+#: src/templates/online-play/vtes-online.html:31
+msgid "Play"
+msgstr "Jouer"
+
+#: src/templates/online-play/lackeyccg.html:99
+#, python-format
+msgid "To find an online game, go to the %(server)s tab and click the %(connect)s button."
+msgstr "Pour trouver une partie en ligne, allez sur l'onglet %(server)s et cliquez sur le bouton %(connect)s."
+
+#: src/templates/online-play/lackeyccg.html:108
+#, python-format
+msgid ""
+"To use your decks exported from %(amaranth)s (use the %(export)s button), you have to copy the text file into the "
+"%(lackey_deck)s folder. You can then find them in <em>LackeyCCG</em> %(deck_editor)s tab by clicking on the "
+"%(browse)s button."
+msgstr ""
+"Pour utiliser vos decks exportés depuis %(amaranth)s (utilisez le bouton %(export)s), vous devez copier le fichier "
+"texte dans le dossier %(lackey_deck)s. Vous pouvez les trouver dans l'onglet %(deck_editor)s de <em>LackeyCCG</em> en"
+" cliquant sur le bouton %(browse)s."
+
+#: src/templates/online-play/lackeyccg.html:123
+#, python-format
+msgid ""
+"Alternatively, you can use the %(paste)s button to paste the decklist directly in a new deck. Make sure to paste the "
+"library and crypt parts independantly in this case."
+msgstr ""
+"Alternativement, vous pouvez utiliser le bouton %(paste)s pour coller votre decklist directement dans un nouveau "
+"deck. Make sure to paste the library and crypt parts independantly in this case."
+
+#: src/templates/online-play/lackeyccg.html:131
+msgid "Finally, make sure you click the green + buttons in the interface to get access to all the menus."
+msgstr "Enfin, assurez-vous d'avoir cliqué sur les boutons verts + de l'interface pour avoir accès à tous les menus."
+
+#: src/templates/online-play/lackeyccg.html:137
+msgid "Keyboard Layout"
+msgstr "Mapping de clavier"
+
+#: src/templates/online-play/lackeyccg.html:139
+msgid ""
+"LackeyCCG uses a non-configurable US keyboard layout. This means you may not be able to use punctuation and numbers "
+"when typing if you do not have a US keyboard. The only known \"workaround\" is to configure your system keyboard to "
+"us an US mapping."
+msgstr ""
+"LackeyCCG utilise un mapping de clavier US non configurable. Cela signifie que vous ne pourrez pas utiliser de "
+"ponctuation ou de nombres quand vous tapez si vous n'utilisez pas un clavier US. Le seul \"contournement\" connu est "
+"de configurer votre mapping de clavier comme US au niveau du système."
+
+#: src/templates/online-play/lackeyccg.html:146 src/templates/online-play/tabletop-simulator.html:48
+msgid "Useful commands"
+msgstr "Commandes utiles"
+
+#: src/templates/online-play/lackeyccg.html:148
+#, python-format
+msgid "Note that you can configure keyboard shortcuts to your liking in the %(preferences)s tab."
+msgstr "Notez que vous pouvez configurer les raccourcis clavier à votre convenance dans l'onglet %(preferences)s."
+
+#: src/templates/online-play/lackeyccg.html:155
+msgid "Lock or Unlock"
+msgstr "Incliner ou Redresser"
+
+#: src/templates/online-play/lackeyccg.html:156
+msgid "Add a blood"
+msgstr "Ajouter un point de sang"
+
+#: src/templates/online-play/lackeyccg.html:157
+msgid "Remove a blood"
+msgstr "Enlever un point de sang"
+
+#: src/templates/online-play/lackeyccg.html:158
+msgid "Draw a card from library"
+msgstr "Piocher une carte de la bibliothèque"
+
+#: src/templates/online-play/lackeyccg.html:159
+msgid "Peek at the face of one of your crypt card"
+msgstr "Voir la face d'une de vos cartes de crypte"
+
+#: src/templates/online-play/lackeyccg.html:163
+msgid "range of commands"
+msgstr "série de commandes"
+
+#: src/templates/online-play/lackeyccg.html:162
+#, python-format
+msgid ""
+"Lackey also offers a %(range_of_commands)s to use in the chat window (beginning with \"/\"). Among them, the "
+"%(secret)s and %(reveal)s command can be useful for some cards."
+msgstr ""
+"Lackey offre une %(range_of_commands)s qui peuvent être utilisées dans la fenêtre de chat (en commençant par \"/\"). "
+"Parmi elles, les commandes %(secret)s et %(reveal)s peuvent être utiles pour certaines cartes."
+
+#: src/templates/online-play/tabletop-simulator.html:7
+#, python-format
+msgid ""
+"%(tabletop_simulator)s is a Steam app to play tabletop games. It has fan-made plugins to play V:tES online with "
+"friends. It is mostly used among friends who want to play the game between themselves, as there is no matching server"
+" to find fellow players inside the application itself."
+msgstr ""
+"%(tabletop_simulator)s est une application Steam permettant de jouer à des jeux de plateau. Il existe des plugins "
+"amateurs pour jouer à V:tES en ligne. Il est principalement utilisé pour des parties entre amis, car il n'y a pas de "
+"serveur de matching pour trouver d'autres joueurs au sein de l'application."
+
+#: src/templates/online-play/tabletop-simulator.html:18
+#, python-format
+msgid ""
+"Buy and install the %(tabletop_simulator)s application using <em>Steam</em>. Then install %(this_collection)s of "
+"plugins. Use the relevant plugin to create your deck. Once the deck is ready, select the two stacks (Library and "
+"Crypt), then right-click and choose %(save_object)s to save your deck."
+msgstr ""
+"Achetez et installez l'application %(tabletop_simulator)s en utilisant <em>Steam</em>. Puis installez "
+"%(this_collection)s de plugins. Utilisez le plugin adapté pour créer votre deck. Une fois le deck prêt, sélectionnez "
+"les deux paquets (bibliothèque et crypte), puis cliquez droit et choisissez %(save_object)s pour sauver votre deck."
+
+#: src/templates/online-play/tabletop-simulator.html:20
+msgid "this collection"
+msgstr "cette collection"
+
+#: src/templates/online-play/tabletop-simulator.html:32
+#, python-format
+msgid ""
+"Find a group of friends then create a game and invite them. Load one of your decks by clicking on the %(objects)s "
+"button: your decks should be in the %(saved_objects)s section."
+msgstr ""
+"Trouvez un groupe d,amis puis créz une partie et invitez-les. Chargez l'un de vos decks en cliquant sur le bouton "
+"%(objects)s : vos decks devraient se trouver dans la section %(saved_objects)s."
+
+#: src/templates/online-play/tabletop-simulator.html:43
+msgid "Make sure you set the rotation on 90º (topside button on the right) for easy lock and unlock."
+msgstr ""
+"Assurez-vous de régler la rotation à 90º (bouton en haut à droite) pour pouvoir incliner et redresser vos cartes "
+"facilement."
+
+#: src/templates/online-play/tabletop-simulator.html:50
+msgid "Lock"
+msgstr "Incliner"
+
+#: src/templates/online-play/tabletop-simulator.html:51
+msgid "Unlock"
+msgstr "Redresser"
+
+#: src/templates/online-play/tabletop-simulator.html:52
+msgid "Flip card"
+msgstr "Retourner une carte"
+
+#: src/templates/online-play/tabletop-simulator.html:53
+msgid "Hover over a deck and type a number N"
+msgstr "Passer sur un deck et tapez un nombre N"
+
+#: src/templates/online-play/tabletop-simulator.html:53
+msgid "Draw N cards"
+msgstr "Piocher N cartes"
+
+#: src/templates/online-play/vtes-online.html:7
+#, python-format
+msgid ""
+"%(vtes_online)s, previously named \"JOL\" (as in Jyhad OnLine) is the oldest online platform for online V:TES play. "
+"It is focused on non-real-time play, meaning a single game can span over days while players interact in an "
+"asynchronous fashion."
+msgstr ""
+"%(vtes_online)s, auparavant appelé \"JOL\" (c'est-à-dire Jyhad OnLine) est la plateforme de jeu en ligne de V:TES la "
+"plus ancienne. Elle est centrée sur le jeu en temps non réel, c'est-à-dire qu'une seul partie peut dure des jours "
+"tandis que les joueurs interagissent de manière asynchrone."
+
+#: src/templates/online-play/vtes-online.html:17
+#, python-format
+msgid ""
+"No install is required as %(vtes_online)s is played in browser. However, it is strongly recommanded to join the "
+"%(jol_discord_server)s. You can use the %(decks)s menu to build you decks, or just paste a deck exported from "
+"%(amaranth)s (use the %(export)s button)."
+msgstr ""
+"Aucune installation n'est nécessaire puisque %(vtes_online)s se joue dans le navigateur. Cependant il est fortement "
+"recommandé de rejoindre le %(jol_discord_server)s. Vous pouvew utiliser le menu %(decks)s pour construire vos decks, "
+"ou juste collé un deck exporté depuis %(amaranth)s (utilisez le bouton %(export)s)."
+
+#: src/templates/online-play/vtes-online.html:19
+msgid "JOL Discord Server"
+msgstr "Serveur Discord JOL"
+
+#: src/templates/online-play/vtes-online.html:33
+#, python-format
+msgid ""
+"You need to ask around on the main chat for someone to create a game for you. If you're a regular player, you will "
+"probably get the necessary role soon enough. Once you're in a game, check the %(help)s menu topside for the necessary"
+" commands."
+msgstr ""
+"Vous devez demander dans le chat principal pour que quelqu'un vous crée une partie. Si vous jouez régulièrement, vous"
+" aurez rapidement le rôle nécessaire à cet effet. Une fois la partie commencée, allez voir le menu %(help)s en haut "
+"pour les commandes nécessaires."
+
+#: src/templates/online-play/vtes-online.html:41
+msgid "Commands"
+msgstr "Commandes"
+
+#: src/templates/online-play/vtes-online.html:43
+msgid "Add or remove pool"
+msgstr "Ajouter ou enlever de l'influence"
+
+#: src/templates/online-play/vtes-online.html:44
+msgid "Add or remove blood"
+msgstr "Ajouter ou enlever du sang"
+
+#: src/templates/online-play/vtes-online.html:46
+msgid "Increase or decrease capacity"
+msgstr "Augmenter ou baisser la capacité"
+
+#: src/templates/online-play/vtes-online.html:47
+msgid "Discard"
+msgstr "Défausser"
+
+#: src/templates/online-play/vtes-online.html:48
+msgid "Draw"
+msgstr "Piocher"
+
+#: src/templates/online-play/vtes-online.html:49
+msgid "Take or move the edge"
+msgstr "Prendre ou déplacer l'avantage"
+
+#: src/templates/online-play/vtes-online.html:50
+msgid "Put a label on a card"
+msgstr "Mettre une note sur une carte"
+
+#: src/templates/online-play/vtes-online.html:52
+msgid "Move a card"
+msgstr "Déplacer une carte"
+
+#: src/templates/online-play/vtes-online.html:53
+msgid "Reorder players seatings"
+msgstr "Réarranger l'ordre de jeu"
+
+#: src/templates/online-play/vtes-online.html:55
+msgid "Play a card"
+msgstr "Jouer une carte"
+
+#: src/templates/online-play/vtes-online.html:56
+msgid "Roll a die"
+msgstr "Lancer un dé"
+
+#: src/templates/online-play/vtes-online.html:57
+msgid "Show a card"
+msgstr "Montre une carte"
+
+#: src/templates/online-play/vtes-online.html:58
+msgid "Shuffle cards"
+msgstr "Mélanger des cartes"
+
+#: src/templates/online-play/vtes-online.html:60
+msgid "Transfer blood"
+msgstr "Transférer du sang"
+
+#: src/templates/online-play/vtes-online.html:62
+msgid "Lock a card"
+msgstr "Incliner une carte"
+
+#: src/templates/online-play/vtes-online.html:63
+msgid "Unlock a card"
+msgstr "Redresser une carte"
+
+#: src/templates/online-play/vtes-online.html:66
+msgid "Mark the number of votes on a vampire"
+msgstr "Indiquer le nombre de votes d'un vampire"
 
 #: src/templates/strategy/archetypes.html:163 src/templates/strategy/table-talk.html:4
 msgid "Table talk"
@@ -3067,3 +3349,4 @@ msgstr ""
 "situation à trois ou cinq joueurs : si la fente fonctionne, vous revenez à un nombre pair et à une situation "
 "favorable. Si elle échoue, vous restez sur un nombre impair de joueurs en ayant mis une grande pression sur la proie."
 " En général, cela signifie que la pression va revenir en force contre vous au prochain tour de table. </p>"
+

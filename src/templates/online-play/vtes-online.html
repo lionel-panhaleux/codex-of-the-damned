@@ -1,0 +1,70 @@
+{% extends "best-cards/_layout.html" %}
+
+{% block article %}
+<article>
+    <h1>{{ _('V:TES Online') }}</h1>
+    <p>
+        {% trans trimmed 
+        vtes_online=external("https://deckserver.net/jol/", "V:TES Online")
+	    %}
+        {{ vtes_online }}, previously named "JOL" (as in Jyhad OnLine) is the oldest online platform
+        for online V:TES play. It is focused on non-real-time play, meaning a single game can span over days
+        while players interact in an asynchronous fashion.
+        {% endtrans %}
+    </p>
+    <h2>{{ _('Install') }}</h2>
+    <p>
+        {% trans trimmed 
+        vtes_online=external("https://deckserver.net/jol/", "V:TES Online"),
+        jol_discord_server=external("https://discord.gg/fJjac75", _("JOL Discord Server")),
+        decks='<span class="code">Decks</span>'|safe,
+        amaranth=external("https://amaranth.vtes.co.nz", "Amaranth"),
+        export='<span class="code">Export</span>'|safe
+	    %}
+        No install is required as {{ vtes_online }} is played in browser.
+        However, it is strongly recommanded to join the {{jol_discord_server}}.
+        You can use the {{ decks }} menu to build you decks, or just paste a deck exported from {{ amaranth }}
+        (use the {{ export }} button).
+        {% endtrans %}
+    </p>
+    <img src="{{ url_for('static', filename='img/jol-interface.png') }}" alt="JOL game" />
+    <h2>{{ _('Play') }}</h2>
+    <p>
+        {% trans trimmed
+            help='<span class="code">Help</span>'|safe
+        %}
+        You need to ask around on the main chat for someone to create a game for you.
+        If you're a regular player, you will probably get the necessary role soon enough.
+        Once you're in a game, check the {{ help }} menu topside for the necessary commands.
+        {% endtrans %}
+    </p>
+    <h2>{{ _('Commands') }}</h2>
+    <ul>
+        <li><span class="code">pool [PLAYER] [+|-]AMOUNT</span>: {{ _("Add or remove pool") }}</li>
+        <li><span class="code">blood [PLAYER] [REGION CARD] [+|-]AMOUNT</span>: {{ _("Add or remove blood") }}</li>
+        <li><span class="code">capacity [PLAYER] [REGION] CARD [+|-]amount</span>:
+            {{ _("Increase or decrease capacity") }}</li>
+        <li><span class="code">discard CARD|random [draw]</span>: {{ _("Discard") }}</li>
+        <li><span class="code">draw [crypt] [NUM]</span>: {{ _("Draw") }}</li>
+        <li><span class="code">edge [PLAYER] [burn]</span>: {{ _("Take or move the edge") }}</li>
+        <li><span class="code">label [PLAYER] [REGION] CARD [text here]</span>: {{ _("Put a label on a card") }}</li>
+        <li><span class="code">move [PLAYER] [REGION] CARD [PLAYER] [REGION] [CARD]</span>:
+            {{ _("Move a card") }}</li>
+        <li><span class="code">order index1 index2 index3 index4 index5</span>: {{ _("Reorder players seatings") }}</li>
+        <li><span class="code">play [vamp] CARD [@ DISCIPLINES] [PLAYER] [REGION] [CARD] [draw]</span>:
+            {{ _("Play a card") }}</li>
+        <li><span class="code">random [NUMBER]</span>: {{ _("Roll a die") }}</li>
+        <li><span class="code">show [REGION] amount [[PLAYER]|all]</span>: {{ _("Show a card") }}</li>
+        <li><span class="code">shuffle [PLAYER] [REGION] [num]</span>: {{ _("Shuffle cards") }}</li>
+        <li><span class="code">transfer [REGION] VAMP [+|-]AMOUNT </span>:
+            {{ _("Transfer blood") }}
+        </li>
+        <li><span class="code">lock [PLAYER] [REGION] CARD </span>: {{ _("Lock a card") }}</li>
+        <li><span class="code">unlock [PLAYER] [REGION] [CARD] </span>: {{ _("Unlock a card") }}
+        </li>
+        <li><span class="code">votes [PLAYER] [REGION CARD] [+|-]AMOUNT</span>:
+            {{ _("Mark the number of votes on a vampire") }}
+        </li>
+    </ul>
+</article>
+{% endblock %}
