@@ -121,7 +121,7 @@ function formatText(text) {
 }
 function displayCard(data, push) {
     clearResults()
-    const card_image_url = "/static/img/card-images/".concat(
+    const card_image_url = "https://images.krcg.org/".concat(
         getCardImageName(data["Name"]),
         ".jpg"
     )

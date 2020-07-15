@@ -1,5 +1,5 @@
 function dC(name) {
-    document.getElementById("card-image").src = "/static/img/card-images/".concat(
+    document.getElementById("card-image").src = "https://images.krcg.org/".concat(
         name,
         ".jpg"
     )
@@ -26,7 +26,7 @@ function dCi(i) {
     name = name.replace(/í|î/g, "i") // Día, Maître
     name = name.replace(/ñ/g, "n") // Montaña
     name = name.replace(/ü|ú/g, "u") // Powerbase: Zürich, Jesús
-    document.getElementById(`card-image`).src = "/static/img/card-images/".concat(
+    document.getElementById(`card-image`).src = "https://images.krcg.org/".concat(
         name,
         ".jpg"
     )

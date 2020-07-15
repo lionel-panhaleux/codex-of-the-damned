@@ -125,7 +125,7 @@ def favicon():
 # retrocompatibility for card images
 @app.route("/card-images/<path:image>")
 def card_image(image):
-    return flask.redirect(flask.url_for("static", filename=f"img/card-images/{image}"))
+    return flask.redirect(f"https://images.krcg.org/{image}")
 
 
 # Default route
@@ -149,10 +149,7 @@ def index(lang_code=app.config["BABEL_DEFAULT_LOCALE"], page="index.html"):
                 image_name[4:] + "the" if image_name[:4] == "the " else image_name
             )
             image_name, _ = re.subn(r"""\s|,|\.|-|—|'|:|\(|\)|"|!""", "", image_name)
-            context["og_image"] = flask.url_for(
-                "static", filename=f"img/card-images/{image_name}.jpg"
-            )
-
+            context["og_image"] = f"https://images.krcg.org/{image_name}"
     return flask.render_template(page, **context)
 
 
@@ -250,10 +247,7 @@ def display_card():
     def card_image(name):
         return flask.Markup(
             '<img src="{path}" alt="{name}" />'.format(
-                name=name,
-                path=flask.url_for(
-                    "static", filename=f"img/card-images/{file_name(name)}.jpg"
-                ),
+                name=name, path=f"https://images.krcg.org/{file_name(name)}"
             )
         )
 
