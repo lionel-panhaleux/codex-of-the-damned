@@ -1,4 +1,4 @@
-.PHONY: po-update po-compile po
+.PHONY: po-update po-compile po release
 
 po-update:
 	pybabel -v extract --add-comments="TRANSLATORS:" -w 120 -F babel.cfg -k lazy_gettext -o messages.pot src
@@ -8,3 +8,6 @@ po-compile:
 	pybabel compile -d src/translations
 
 po: po-update po-compile
+
+release: po-compile
+	fullrelease
