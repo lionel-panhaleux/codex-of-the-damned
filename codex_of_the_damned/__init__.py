@@ -141,7 +141,7 @@ def index(lang_code=app.config["BABEL_DEFAULT_LOCALE"], page="index.html"):
     context["language"] = flask.g.get("lang_code")
 
     # use card image as og_image for card-search
-    if page[:11] == "card-search":
+    if "card-search" in page:
         card = flask.request.args.get("card")
         if card:
             image_name = unidecode.unidecode(card).lower()
@@ -150,6 +150,8 @@ def index(lang_code=app.config["BABEL_DEFAULT_LOCALE"], page="index.html"):
             )
             image_name, _ = re.subn(r"""\s|,|\.|-|—|'|:|\(|\)|"|!""", "", image_name)
             context["og_image"] = f"https://images.krcg.org/{image_name}"
+            context["og_description"] = "Official card text and rulings"
+            context["og_title"] = card
     return flask.render_template(page, **context)
 
 
