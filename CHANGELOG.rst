@@ -4,7 +4,7 @@ Changelog
 0.5 (unreleased)
 ----------------
 
-- Nothing changed yet.
+- Fix translations packaging
 
 
 0.4 (2020-07-16)
