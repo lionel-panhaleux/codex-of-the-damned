@@ -25,7 +25,7 @@
         <p>
             {{ _("The system's security prevents the application to run:") }}
         </p>
-        <img src="{{ url_for('static', filename='img/osx-error.png') }}" alt="OS X Error" />
+        <img src="{{ url_for('static', filename='img/osx-error.jpg') }}" alt="OS X Error" />
         <p>
             {% trans trimmed
                 command_line='<span class="code">xattr -dr com.apple.quarantine /Applications/LackeyCCG</span>'|safe,
@@ -61,7 +61,7 @@
         then click the {{ install }} button.
         {% endtrans %}
     </p>
-    <img src="{{ url_for('static', filename='img/lackeyccg-plugin-download.png') }}" alt="LackeyCCG Plugin Download" />
+    <img src="{{ url_for('static', filename='img/lackeyccg-plugin-download.jpg') }}" alt="LackeyCCG Plugin Download" />
     <p>
         {% trans trimmed
             autoupdate_finished='<span class="code">AutoUpdate process completed with a few errors</span>'|safe,
@@ -73,7 +73,7 @@
         click the {{ browse_installed }} button, select the {{ vtes }} plugin and click the {{ choose }} button.
         {% endtrans %}
     </p>
-    <img src="{{ url_for('static', filename='img/lackeyccg-plugin-install.png') }}" alt="LackeyCCG Plugin Install" />
+    <img src="{{ url_for('static', filename='img/lackeyccg-plugin-install.jpg') }}" alt="LackeyCCG Plugin Install" />
     <p>
         {% trans trimmed
             plugins='<span class="code">Plugins</span>'|safe,
@@ -84,7 +84,7 @@
         but this will avoid unneccessary delays when displaying card images during play.
         {% endtrans %}
     </p>
-    <img src="{{ url_for('static', filename='img/lackeyccg-download-card-images.png') }}"
+    <img src="{{ url_for('static', filename='img/lackeyccg-download-card-images.jpg') }}"
         alt="LackeyCCG Download card images" />
     <p>
         {% trans trimmed
@@ -93,7 +93,7 @@
         Now go to the {{ preferences }} tab and choose a suitable nickname. You're all set.
         {% endtrans %}
     </p>
-    <img src="{{ url_for('static', filename='img/lackeyccg-profile.png') }}" alt="LackeyCCG Profile" />
+    <img src="{{ url_for('static', filename='img/lackeyccg-profile.jpg') }}" alt="LackeyCCG Profile" />
     <h2>{{ _('Play') }}</h2>
     <p>
         {% trans trimmed
@@ -103,7 +103,7 @@
         To find an online game, go to the {{ server }} tab and click the {{ connect }} button.
         {% endtrans %}
     </p>
-    <img src="{{ url_for('static', filename='img/lackeyccg-server.png') }}" alt="LackeyCCG Server" />
+    <img src="{{ url_for('static', filename='img/lackeyccg-server.jpg') }}" alt="LackeyCCG Server" />
     <p>
         {% trans trimmed
             amaranth=external("https://amaranth.vtes.co.nz", "Amaranth"),
@@ -118,7 +118,7 @@
         by clicking on the {{ browse }} button.
         {% endtrans %}
     </p>
-    <img src="{{ url_for('static', filename='img/lackeyccg-deck-browse.png') }}" alt="LackeyCCG Deck browse" />
+    <img src="{{ url_for('static', filename='img/lackeyccg-deck-browse.jpg') }}" alt="LackeyCCG Deck browse" />
     <p>
         {% trans trimmed
             paste='<span class="code">Paste</span>'|safe
@@ -132,7 +132,7 @@
         Finally, make sure you click the green + buttons in the interface to get access to all the menus.
         {% endtrans %}
     </p>
-    <img src="{{ url_for('static', filename='img/lackeyccg-interface.png') }}" alt="LackeyCCG Interface" />
+    <img src="{{ url_for('static', filename='img/lackeyccg-interface.jpg') }}" alt="LackeyCCG Interface" />
     <div class="warning">
         <h3>{{ _('Keyboard Layout') }}</h3>
         <p>

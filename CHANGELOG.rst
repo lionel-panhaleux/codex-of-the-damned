@@ -4,7 +4,7 @@ Changelog
 0.14 (unreleased)
 -----------------
 
-- Nothing changed yet.
+- Online play: Reduce images size
 
 
 0.13 (2020-07-16)
