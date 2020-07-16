@@ -121,11 +121,7 @@ function formatText(text) {
 }
 function displayCard(data, push) {
     clearResults()
-    const card_image_url = "https://images.krcg.org/".concat(
-        getCardImageName(data["Name"]),
-        ".jpg"
-    )
-    document.getElementById("result-image").src = card_image_url
+    document.getElementById("result-image").src = data["Image"]
     document.getElementById("card-title").textContent = data["Name"].replace(
         "(TM) ",
         "™ "
@@ -178,12 +174,6 @@ function displayCard(data, push) {
         )
     }
     window.document.title = data["Name"]
-    for (let metatag of document.getElementsByTagName("meta")) {
-        if (metatag.getAttribute("property") == "og:image") {
-            metatag.setAttribute("content", card_image_url)
-            break
-        }
-    }
 }
 function getCardByName(card_name, push = false) {
     fetch(
