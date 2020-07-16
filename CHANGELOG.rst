@@ -1,7 +1,7 @@
 Changelog
 =========
 
-0.13 (unreleased)
+0.13 (2020-07-16)
 -----------------
 
 - Fix best cards links
