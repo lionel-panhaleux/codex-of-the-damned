@@ -5,14 +5,11 @@
     {% block head %}
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    {% if og_image_secure %}
-    <meta property="og:image:secure_url" content="{{ og_image_secure }}" />
-    {% else %}
-    <meta property="og:image" content="{{ og_image|default(url_for('static', filename='img/codex.jpg')) }}" />
-    {% endif %}
+    <meta property="og:title" content="{{ og_title|default('Codex of the Damned') }}" />
     <meta property="og:description"
         content="{{ og_description|default('Vampire: the Eternal Struggle (VTES) strategy resources') }}" />
-    <meta property="og:title" content="{{ og_title|default('Codex of the Damned') }}" />
+    <meta property="og:image" content="{{ og_image|default(url_for('static', filename='img/codex.jpg')) }}" />
+
     <meta name="description" content="Vampire: the Eternal Struggle (VTES) strategy resources">
     <meta name="keywords" content="Vampire, the Eternal Struggle, VtES, CCG">
     {% block meta %}{% endblock %}

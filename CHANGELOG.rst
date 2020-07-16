@@ -4,7 +4,7 @@ Changelog
 0.10 (unreleased)
 -----------------
 
-- Nothing changed yet.
+- Fix og image for social networks sharing 
 
 
 0.9 (2020-07-16)
