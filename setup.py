@@ -3,37 +3,28 @@ import setuptools.command.develop
 import setuptools.command.install
 
 
-class InstallWithCompile(setuptools.command.install.install):
+class WithCompile:
     def run(self):
         from babel.messages.frontend import compile_catalog
 
         compiler = compile_catalog(self.distribution)
-        compiler.domain = ["messages"]
-        compiler.directory = "codex_of_the_damned/translations"
+        option_dict = self.distribution.get_option_dict("compile_catalog")
+        compiler.domain = option_dict["domain"][1:]
+        compiler.directory = option_dict["directory"][1]
         compiler.run()
         super().run()
 
 
-class DevelopWithCompile(setuptools.command.develop.develop):
-    def run(self):
-        from babel.messages.frontend import compile_catalog
-
-        compiler = compile_catalog(self.distribution)
-        compiler.domain = ["messages"]
-        compiler.directory = "codex_of_the_damned/translations"
-        compiler.run()
-        super().run()
+class InstallWithCompile(WithCompile, setuptools.command.install.install):
+    pass
 
 
-class SDistWithCompile(setuptools.command.sdist.sdist):
-    def run(self):
-        from babel.messages.frontend import compile_catalog
+class DevelopWithCompile(WithCompile, setuptools.command.develop.develop):
+    pass
 
-        compiler = compile_catalog(self.distribution)
-        compiler.domain = ["messages"]
-        compiler.directory = "codex_of_the_damned/translations"
-        compiler.run()
-        super().run()
+
+class SDistWithCompile(WithCompile, setuptools.command.sdist.sdist):
+    pass
 
 
 setuptools.setup(

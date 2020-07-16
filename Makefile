@@ -1,13 +1,13 @@
 .PHONY: po-update po-compile po release
 
 po-update:
-	pybabel -v extract --add-comments="TRANSLATORS:" -w 120 -F babel.cfg -k lazy_gettext -o messages.pot codex_of_the_damned
-	pybabel -v update -w 120 -i messages.pot -d codex_of_the_damned/translations
+	python setup.py extract_messages
+	python setup.py update_catalog
 
 po-compile:
-	pybabel compile -d codex_of_the_damned/translations
+	python setup.py compile_catalog
 
 po: po-update po-compile
 
-release: po-compile
+release: po-update
 	fullrelease

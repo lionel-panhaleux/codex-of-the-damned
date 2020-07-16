@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: codex 0.X\n"
 "Report-Msgid-Bugs-To: lionel.panhaleux+codex@gmail.com\n"
-"POT-Creation-Date: 2020-07-15 17:58+0200\n"
+"POT-Creation-Date: 2020-07-16 09:50+0200\n"
 "PO-Revision-Date: 2020-07-04 08:50+0200\n"
 "Last-Translator: Lionel Panhaleux <lionel.panhaleux+codex@gmail.com>\n"
 "Language: fr\n"
@@ -17,522 +17,571 @@ msgstr ""
 "Generated-By: Babel 2.8.0\n"
 
 #. TRANSLATORS: please abide by BCP translation choices for game terms when possible.
-#: src/navigation.py:52
+#: codex_of_the_damned/navigation.py:52
 msgid "Home"
 msgstr "Accueil"
 
-#: src/navigation.py:56 src/templates/online-play/index.html:5
+#: codex_of_the_damned/navigation.py:56 codex_of_the_damned/templates/online-play/index.html:5
 msgid "Online Play"
 msgstr "Jeu en ligne"
 
-#: src/navigation.py:59 src/templates/online-play/lackeyccg.html:5
+#: codex_of_the_damned/navigation.py:59 codex_of_the_damned/templates/online-play/lackeyccg.html:5
 msgid "LackeyCCG"
 msgstr "LackeyCCG"
 
-#: src/navigation.py:60 src/templates/online-play/tabletop-simulator.html:5
+#: codex_of_the_damned/navigation.py:60 codex_of_the_damned/templates/online-play/tabletop-simulator.html:5
 msgid "Tabletop Simulator"
 msgstr "Tabletop Simulator"
 
-#: src/navigation.py:61 src/templates/online-play/vtes-online.html:5
+#: codex_of_the_damned/navigation.py:61 codex_of_the_damned/templates/online-play/vtes-online.html:5
 msgid "V:TES Online"
 msgstr "V:TES Online"
 
-#: src/navigation.py:65 src/templates/strategy/index.html:4
+#: codex_of_the_damned/navigation.py:65 codex_of_the_damned/templates/strategy/index.html:4
 msgid "Strategy"
 msgstr "Stratégie"
 
-#: src/navigation.py:68 src/templates/strategy/fundamentals.html:4
+#: codex_of_the_damned/navigation.py:68 codex_of_the_damned/templates/strategy/fundamentals.html:4
 msgid "Fundamentals"
 msgstr "Fondamentaux"
 
-#: src/navigation.py:69 src/templates/strategy/combat.html:4
+#: codex_of_the_damned/navigation.py:69 codex_of_the_damned/templates/strategy/combat.html:4
 msgid "Combat"
 msgstr "Combat"
 
-#: src/navigation.py:70 src/templates/strategy/bloat.html:4
+#: codex_of_the_damned/navigation.py:70 codex_of_the_damned/templates/strategy/bloat.html:4
 msgid "Bloat"
 msgstr "Régénération"
 
-#: src/navigation.py:71 src/templates/strategy/deck-building.html:10
+#: codex_of_the_damned/navigation.py:71 codex_of_the_damned/templates/strategy/deck-building.html:10
 msgid "Deck building"
 msgstr "Construction de deck"
 
-#: src/navigation.py:72 src/navigation.py:86 src/templates/archetypes/index.html:10
+#: codex_of_the_damned/navigation.py:72 codex_of_the_damned/navigation.py:86
+#: codex_of_the_damned/templates/archetypes/index.html:10
 msgid "Archetypes"
 msgstr "Archétypes"
 
-#: src/navigation.py:73
+#: codex_of_the_damned/navigation.py:73
 msgid "Table Talk"
 msgstr "Discussion"
 
-#: src/navigation.py:75
+#: codex_of_the_damned/navigation.py:75
 msgid "Deck guides"
 msgstr "Guides de decks"
 
-#: src/navigation.py:77
+#: codex_of_the_damned/navigation.py:77
 msgid "Den of Fiends"
 msgstr "L'Antre des Démons"
 
-#: src/navigation.py:78
+#: codex_of_the_damned/navigation.py:78
 msgid "Libertine Ball"
 msgstr "Le Bal des Libertins"
 
-#: src/navigation.py:79
+#: codex_of_the_damned/navigation.py:79
 msgid "Pact with Nephandi"
 msgstr "Pacte avec les Nephandi"
 
-#: src/navigation.py:80
+#: codex_of_the_damned/navigation.py:80
 msgid "Parliament of Shadows"
 msgstr "Le Parlement des Ombres"
 
-#: src/navigation.py:89 src/templates/best-cards/clans/brujah.html:39 src/templates/best-cards/clans/toreador.html:8
-#: src/templates/strategy/archetypes.html:254
+#: codex_of_the_damned/navigation.py:89 codex_of_the_damned/templates/best-cards/clans/brujah.html:39
+#: codex_of_the_damned/templates/best-cards/clans/toreador.html:8
+#: codex_of_the_damned/templates/strategy/archetypes.html:254
 msgid "AAA"
 msgstr ""
 
-#: src/navigation.py:90 src/templates/best-cards/clans/akunanse.html:9
+#: codex_of_the_damned/navigation.py:90 codex_of_the_damned/templates/best-cards/clans/akunanse.html:9
 msgid "Akunanse Wall"
 msgstr ""
 
-#: src/navigation.py:91 src/templates/best-cards/clans/assamite.html:110 src/templates/strategy/archetypes.html:136
+#: codex_of_the_damned/navigation.py:91 codex_of_the_damned/templates/best-cards/clans/assamite.html:110
+#: codex_of_the_damned/templates/strategy/archetypes.html:136
 msgid "Amaravati Politics"
 msgstr ""
 
-#: src/navigation.py:92
+#: codex_of_the_damned/navigation.py:92
 msgid "Anti ventrue Grinder"
 msgstr ""
 
-#: src/navigation.py:93 src/templates/strategy/archetypes.html:364
+#: codex_of_the_damned/navigation.py:93 codex_of_the_damned/templates/strategy/archetypes.html:364
 msgid "Baltimore Purge"
 msgstr ""
 
-#: src/navigation.py:94 src/templates/best-cards/clans/followers-of-set.html:8 src/templates/strategy/archetypes.html:53
+#: codex_of_the_damned/navigation.py:94 codex_of_the_damned/templates/best-cards/clans/followers-of-set.html:8
+#: codex_of_the_damned/templates/strategy/archetypes.html:53
 msgid "Bima Dominate"
 msgstr ""
 
-#: src/navigation.py:95 src/templates/best-cards/clans/assamite.html:19 src/templates/best-cards/clans/assamite.html:128
-#: src/templates/strategy/archetypes.html:48 src/templates/strategy/fundamentals.html:329
+#: codex_of_the_damned/navigation.py:95 codex_of_the_damned/templates/best-cards/clans/assamite.html:19
+#: codex_of_the_damned/templates/best-cards/clans/assamite.html:128
+#: codex_of_the_damned/templates/strategy/archetypes.html:48 codex_of_the_damned/templates/strategy/fundamentals.html:329
 msgid "Black Hand"
 msgstr ""
 
-#: src/navigation.py:96 src/templates/best-cards/clans/ahrimanes.html:12 src/templates/strategy/archetypes.html:200
+#: codex_of_the_damned/navigation.py:96 codex_of_the_damned/templates/best-cards/clans/ahrimanes.html:12
+#: codex_of_the_damned/templates/strategy/archetypes.html:200
 msgid "Cats"
 msgstr ""
 
-#: src/navigation.py:97 src/templates/best-cards/clans/baali.html:30 src/templates/best-cards/clans/malkavian.html:302
-#: src/templates/best-cards/clans/ventrue.html:138 src/templates/strategy/archetypes.html:73
+#: codex_of_the_damned/navigation.py:97 codex_of_the_damned/templates/best-cards/clans/baali.html:30
+#: codex_of_the_damned/templates/best-cards/clans/malkavian.html:302
+#: codex_of_the_damned/templates/best-cards/clans/ventrue.html:138
+#: codex_of_the_damned/templates/strategy/archetypes.html:73
 msgid "Council of Doom"
 msgstr ""
 
-#: src/navigation.py:98 src/templates/strategy/archetypes.html:367
+#: codex_of_the_damned/navigation.py:98 codex_of_the_damned/templates/strategy/archetypes.html:367
 msgid "Cybelotron"
 msgstr ""
 
-#: src/navigation.py:99 src/templates/best-cards/clans/daughters-of-cacophony.html:8
-#: src/templates/strategy/archetypes.html:127
+#: codex_of_the_damned/navigation.py:99 codex_of_the_damned/templates/best-cards/clans/daughters-of-cacophony.html:8
+#: codex_of_the_damned/templates/strategy/archetypes.html:127
 msgid "Daughters Politics"
 msgstr ""
 
-#: src/navigation.py:100 src/templates/best-cards/clans/assamite.html:15 src/templates/best-cards/sects/anarch.html:207
-#: src/templates/strategy/archetypes.html:137
+#: codex_of_the_damned/navigation.py:100 codex_of_the_damned/templates/best-cards/clans/assamite.html:15
+#: codex_of_the_damned/templates/best-cards/sects/anarch.html:207
+#: codex_of_the_damned/templates/strategy/archetypes.html:137
 msgid "Death Star"
 msgstr ""
 
-#: src/navigation.py:101
+#: codex_of_the_damned/navigation.py:101
 msgid "Dmitri's Big Band"
 msgstr ""
 
-#: src/navigation.py:102 src/templates/best-cards/clans/harbingers-of-skulls.html:12
-#: src/templates/best-cards/clans/harbingers-of-skulls.html:34 src/templates/strategy/archetypes.html:261
+#: codex_of_the_damned/navigation.py:102 codex_of_the_damned/templates/best-cards/clans/harbingers-of-skulls.html:12
+#: codex_of_the_damned/templates/best-cards/clans/harbingers-of-skulls.html:34
+#: codex_of_the_damned/templates/strategy/archetypes.html:261
 msgid "Emerald Legion"
 msgstr ""
 
-#: src/navigation.py:103 src/templates/best-cards/clans/brujah.html:10 src/templates/best-cards/clans/nosferatu.html:154
-#: src/templates/strategy/archetypes.html:255
+#: codex_of_the_damned/navigation.py:103 codex_of_the_damned/templates/best-cards/clans/brujah.html:10
+#: codex_of_the_damned/templates/best-cards/clans/nosferatu.html:155
+#: codex_of_the_damned/templates/strategy/archetypes.html:255
 msgid "Euro Brujah"
 msgstr ""
 
-#: src/navigation.py:104 src/templates/archetypes/council-of-doom.html:60 src/templates/strategy/archetypes.html:72
+#: codex_of_the_damned/navigation.py:104 codex_of_the_damned/templates/archetypes/council-of-doom.html:60
+#: codex_of_the_damned/templates/strategy/archetypes.html:72
 msgid "Girls Will Find Inner Circle"
 msgstr ""
 
-#: src/navigation.py:105 src/templates/archetypes/tzimisce-wall.html:81 src/templates/best-cards/clans/tremere.html:24
-#: src/templates/best-cards/sects/anarch.html:9 src/templates/strategy/archetypes.html:197
+#: codex_of_the_damned/navigation.py:105 codex_of_the_damned/templates/archetypes/tzimisce-wall.html:81
+#: codex_of_the_damned/templates/best-cards/clans/tremere.html:24
+#: codex_of_the_damned/templates/best-cards/sects/anarch.html:9 codex_of_the_damned/templates/strategy/archetypes.html:197
 msgid "Goratrix High Tower"
 msgstr ""
 
-#: src/navigation.py:106 src/templates/best-cards/clans/guruhi.html:10 src/templates/best-cards/clans/nosferatu.html:93
-#: src/templates/strategy/archetypes.html:326
+#: codex_of_the_damned/navigation.py:106 codex_of_the_damned/templates/best-cards/clans/guruhi.html:10
+#: codex_of_the_damned/templates/best-cards/clans/nosferatu.html:94
+#: codex_of_the_damned/templates/strategy/archetypes.html:326
 msgid "Guruhi Rush"
 msgstr ""
 
-#: src/navigation.py:107 src/templates/best-cards/clans/imbued.html:9
+#: codex_of_the_damned/navigation.py:107 codex_of_the_damned/templates/best-cards/clans/imbued.html:9
 msgid "Hunters"
 msgstr ""
 
-#: src/navigation.py:108 src/templates/best-cards/clans/ishtarri.html:8 src/templates/best-cards/sects/laibon.html:75
-#: src/templates/strategy/archetypes.html:124
+#: codex_of_the_damned/navigation.py:108 codex_of_the_damned/templates/best-cards/clans/ishtarri.html:8
+#: codex_of_the_damned/templates/best-cards/sects/laibon.html:75 codex_of_the_damned/templates/strategy/archetypes.html:124
 msgid "Ishtarri Politics"
 msgstr ""
 
-#: src/navigation.py:109 src/templates/best-cards/clans/toreador.html:9 src/templates/strategy/archetypes.html:64
+#: codex_of_the_damned/navigation.py:109 codex_of_the_damned/templates/best-cards/clans/toreador.html:9
+#: codex_of_the_damned/templates/strategy/archetypes.html:64
 msgid "Jost Powerbleed"
 msgstr ""
 
-#: src/navigation.py:110 src/templates/best-cards/clans/giovanni.html:8 src/templates/best-cards/sects/anarch.html:121
-#: src/templates/strategy/archetypes.html:260
+#: codex_of_the_damned/navigation.py:110 codex_of_the_damned/templates/best-cards/clans/giovanni.html:8
+#: codex_of_the_damned/templates/best-cards/sects/anarch.html:121
+#: codex_of_the_damned/templates/strategy/archetypes.html:260
 msgid "Khazar's Diary"
 msgstr ""
 
-#: src/navigation.py:111 src/templates/archetypes/lasombra-nocturn.html:68 src/templates/best-cards/clans/kiasyd.html:9
-#: src/templates/strategy/archetypes.html:37
+#: codex_of_the_damned/navigation.py:111 codex_of_the_damned/templates/archetypes/lasombra-nocturn.html:68
+#: codex_of_the_damned/templates/best-cards/clans/kiasyd.html:9 codex_of_the_damned/templates/strategy/archetypes.html:37
 msgid "Kiasyd Stealth & Bleed"
 msgstr ""
 
-#: src/navigation.py:112 src/templates/archetypes/kiasyd-stealth-bleed.html:90
-#: src/templates/best-cards/clans/lasombra.html:8 src/templates/strategy/archetypes.html:38
+#: codex_of_the_damned/navigation.py:112 codex_of_the_damned/templates/archetypes/kiasyd-stealth-bleed.html:90
+#: codex_of_the_damned/templates/best-cards/clans/lasombra.html:8 codex_of_the_damned/templates/strategy/archetypes.html:38
 msgid "Lasombra Nocturn"
 msgstr ""
 
-#: src/navigation.py:113 src/templates/best-cards/clans/malkavian.html:9 src/templates/strategy/archetypes.html:115
+#: codex_of_the_damned/navigation.py:113 codex_of_the_damned/templates/best-cards/clans/malkavian.html:9
+#: codex_of_the_damned/templates/strategy/archetypes.html:115
 msgid "Lutz Politics"
 msgstr ""
 
-#: src/navigation.py:114 src/templates/strategy/archetypes.html:373
+#: codex_of_the_damned/navigation.py:114 codex_of_the_damned/templates/strategy/archetypes.html:373
 msgid "Madness Reversal"
 msgstr ""
 
-#: src/navigation.py:115 src/templates/best-cards/clans/malkavian.html:22 src/templates/strategy/archetypes.html:362
+#: codex_of_the_damned/navigation.py:115 codex_of_the_damned/templates/best-cards/clans/malkavian.html:22
+#: codex_of_the_damned/templates/strategy/archetypes.html:362
 msgid "Mind Rape"
 msgstr ""
 
-#: src/navigation.py:116 src/templates/best-cards/clans/nosferatu.html:129 src/templates/best-cards/clans/tremere.html:15
-#: src/templates/strategy/archetypes.html:68
+#: codex_of_the_damned/navigation.py:116 codex_of_the_damned/templates/best-cards/clans/nosferatu.html:130
+#: codex_of_the_damned/templates/best-cards/clans/tremere.html:15 codex_of_the_damned/templates/strategy/archetypes.html:68
 msgid "Mistress"
 msgstr ""
 
-#: src/navigation.py:117 src/templates/best-cards/clans/guruhi.html:7 src/templates/best-cards/clans/nosferatu.html:8
-#: src/templates/best-cards/sects/anarch.html:10 src/templates/strategy/archetypes.html:327
+#: codex_of_the_damned/navigation.py:117 codex_of_the_damned/templates/best-cards/clans/guruhi.html:7
+#: codex_of_the_damned/templates/best-cards/clans/nosferatu.html:8
+#: codex_of_the_damned/templates/best-cards/sects/anarch.html:10 codex_of_the_damned/templates/strategy/archetypes.html:327
 msgid "Nananimalism"
 msgstr ""
 
-#: src/navigation.py:118 src/templates/archetypes/tupdogs.html:82 src/templates/best-cards/clans/tremere.html:19
-#: src/templates/best-cards/clans/tremere.html:99 src/templates/best-cards/clans/tremere.html:131
-#: src/templates/best-cards/sects/anarch.html:122 src/templates/strategy/archetypes.html:262
+#: codex_of_the_damned/navigation.py:118 codex_of_the_damned/templates/archetypes/tupdogs.html:82
+#: codex_of_the_damned/templates/best-cards/clans/tremere.html:19
+#: codex_of_the_damned/templates/best-cards/clans/tremere.html:99
+#: codex_of_the_damned/templates/best-cards/clans/tremere.html:131
+#: codex_of_the_damned/templates/best-cards/sects/anarch.html:122
+#: codex_of_the_damned/templates/strategy/archetypes.html:262
 msgid "Nephandii"
 msgstr ""
 
-#: src/navigation.py:119 src/templates/best-cards/clans/nosferatu.html:11 src/templates/best-cards/clans/nosferatu.html:69
-#: src/templates/best-cards/clans/nosferatu.html:79 src/templates/best-cards/clans/nosferatu.html:115
-#: src/templates/strategy/archetypes.html:119
+#: codex_of_the_damned/navigation.py:119 codex_of_the_damned/templates/best-cards/clans/nosferatu.html:11
+#: codex_of_the_damned/templates/best-cards/clans/nosferatu.html:70
+#: codex_of_the_damned/templates/best-cards/clans/nosferatu.html:80
+#: codex_of_the_damned/templates/best-cards/clans/nosferatu.html:116
+#: codex_of_the_damned/templates/strategy/archetypes.html:119
 msgid "Nosferatu Royalty"
 msgstr ""
 
-#: src/navigation.py:120 src/templates/best-cards/clans/malkavian.html:10 src/templates/strategy/archetypes.html:79
+#: codex_of_the_damned/navigation.py:120 codex_of_the_damned/templates/best-cards/clans/malkavian.html:10
+#: codex_of_the_damned/templates/strategy/archetypes.html:79
 msgid "Rachel Madness"
 msgstr ""
 
-#: src/navigation.py:121 src/templates/best-cards/clans/ravnos.html:8 src/templates/strategy/archetypes.html:141
+#: codex_of_the_damned/navigation.py:121 codex_of_the_damned/templates/best-cards/clans/ravnos.html:8
+#: codex_of_the_damned/templates/strategy/archetypes.html:141
 msgid "Ravnos Clown Car"
 msgstr ""
 
-#: src/navigation.py:122 src/templates/best-cards/clans/gangrel.html:9
+#: codex_of_the_damned/navigation.py:122 codex_of_the_damned/templates/best-cards/clans/gangrel.html:9
 msgid "Renegade Assault"
 msgstr ""
 
-#: src/navigation.py:123 src/templates/best-cards/clans/salubri.html:13 src/templates/best-cards/sects/anarch.html:8
-#: src/templates/strategy/archetypes.html:208
+#: codex_of_the_damned/navigation.py:123 codex_of_the_damned/templates/best-cards/clans/salubri.html:13
+#: codex_of_the_damned/templates/best-cards/sects/anarch.html:8 codex_of_the_damned/templates/strategy/archetypes.html:208
 msgid "Saulot & Friends"
 msgstr ""
 
-#: src/navigation.py:124 src/templates/best-cards/clans/daughters-of-cacophony.html:9
-#: src/templates/strategy/archetypes.html:126
+#: codex_of_the_damned/navigation.py:124 codex_of_the_damned/templates/best-cards/clans/daughters-of-cacophony.html:9
+#: codex_of_the_damned/templates/strategy/archetypes.html:126
 msgid "Scout"
 msgstr ""
 
-#: src/navigation.py:125 src/templates/best-cards/clans/giovanni.html:10 src/templates/strategy/archetypes.html:321
+#: codex_of_the_damned/navigation.py:125 codex_of_the_damned/templates/best-cards/clans/giovanni.html:10
+#: codex_of_the_damned/templates/strategy/archetypes.html:321
 msgid "Shambling Hordes"
 msgstr ""
 
-#: src/navigation.py:126 src/templates/best-cards/clans/salubri.html:15 src/templates/strategy/archetypes.html:363
+#: codex_of_the_damned/navigation.py:126 codex_of_the_damned/templates/best-cards/clans/salubri.html:15
+#: codex_of_the_damned/templates/strategy/archetypes.html:363
 msgid "Spirit Marionette"
 msgstr ""
 
-#: src/navigation.py:127 src/templates/best-cards/clans/gangrel.html:7 src/templates/strategy/archetypes.html:57
+#: codex_of_the_damned/navigation.py:127 codex_of_the_damned/templates/best-cards/clans/gangrel.html:7
+#: codex_of_the_damned/templates/strategy/archetypes.html:57
 msgid "Stanislava"
 msgstr ""
 
-#: src/navigation.py:128 src/templates/best-cards/clans/akunanse.html:11 src/templates/best-cards/clans/akunanse.html:66
+#: codex_of_the_damned/navigation.py:128 codex_of_the_damned/templates/best-cards/clans/akunanse.html:11
+#: codex_of_the_damned/templates/best-cards/clans/akunanse.html:66
 msgid "Team Jacob"
 msgstr ""
 
-#: src/navigation.py:129 src/templates/best-cards/clans/ventrue.html:18 src/templates/strategy/archetypes.html:63
+#: codex_of_the_damned/navigation.py:129 codex_of_the_damned/templates/best-cards/clans/ventrue.html:18
+#: codex_of_the_damned/templates/strategy/archetypes.html:63
 msgid "The Bleeding Vignes"
 msgstr ""
 
-#: src/navigation.py:130 src/templates/best-cards/clans/baali.html:12 src/templates/best-cards/clans/nosferatu.html:9
-#: src/templates/best-cards/clans/nosferatu.html:142 src/templates/best-cards/clans/ventrue.html:139
-#: src/templates/strategy/archetypes.html:114 src/templates/strategy/archetypes.html:131
+#: codex_of_the_damned/navigation.py:130 codex_of_the_damned/templates/best-cards/clans/baali.html:12
+#: codex_of_the_damned/templates/best-cards/clans/nosferatu.html:9
+#: codex_of_the_damned/templates/best-cards/clans/nosferatu.html:143
+#: codex_of_the_damned/templates/best-cards/clans/ventrue.html:139
+#: codex_of_the_damned/templates/strategy/archetypes.html:114 codex_of_the_damned/templates/strategy/archetypes.html:131
 msgid "The Dark Side of Politics"
 msgstr ""
 
-#: src/navigation.py:131 src/templates/archetypes/rachel-madness.html:79 src/templates/best-cards/clans/baali.html:25
-#: src/templates/strategy/archetypes.html:78
+#: codex_of_the_damned/navigation.py:131 codex_of_the_damned/templates/archetypes/rachel-madness.html:79
+#: codex_of_the_damned/templates/best-cards/clans/baali.html:25 codex_of_the_damned/templates/strategy/archetypes.html:78
 msgid "The unnamed"
 msgstr ""
 
-#: src/navigation.py:132 src/templates/archetypes/nephandii.html:98 src/templates/best-cards/clans/tremere.html:28
-#: src/templates/best-cards/clans/tremere.html:194 src/templates/strategy/archetypes.html:315
+#: codex_of_the_damned/navigation.py:132 codex_of_the_damned/templates/archetypes/nephandii.html:98
+#: codex_of_the_damned/templates/best-cards/clans/tremere.html:28
+#: codex_of_the_damned/templates/best-cards/clans/tremere.html:194
+#: codex_of_the_damned/templates/strategy/archetypes.html:315
 msgid "Tupdogs"
 msgstr ""
 
-#: src/navigation.py:133 src/templates/best-cards/clans/tzimisce.html:10
+#: codex_of_the_damned/navigation.py:133 codex_of_the_damned/templates/best-cards/clans/tzimisce.html:10
 msgid "Tzimisce Toolbox"
 msgstr ""
 
-#: src/navigation.py:134 src/templates/archetypes/mistress.html:65 src/templates/best-cards/clans/tremere.html:38
-#: src/templates/best-cards/clans/tzimisce.html:9 src/templates/strategy/archetypes.html:190
+#: codex_of_the_damned/navigation.py:134 codex_of_the_damned/templates/archetypes/mistress.html:65
+#: codex_of_the_damned/templates/best-cards/clans/tremere.html:38
+#: codex_of_the_damned/templates/best-cards/clans/tzimisce.html:9
+#: codex_of_the_damned/templates/strategy/archetypes.html:190
 msgid "Tzimisce Wall"
 msgstr ""
 
-#: src/navigation.py:135 src/templates/best-cards/clans/ventrue.html:14 src/templates/best-cards/clans/ventrue.html:170
-#: src/templates/best-cards/clans/ventrue.html:204 src/templates/strategy/archetypes.html:256
+#: codex_of_the_damned/navigation.py:135 codex_of_the_damned/templates/best-cards/clans/ventrue.html:14
+#: codex_of_the_damned/templates/best-cards/clans/ventrue.html:170
+#: codex_of_the_damned/templates/best-cards/clans/ventrue.html:204
+#: codex_of_the_damned/templates/strategy/archetypes.html:256
 msgid "Ventrue Royalty"
 msgstr ""
 
-#: src/navigation.py:136 src/templates/best-cards/clans/tremere.html:11 src/templates/strategy/archetypes.html:272
+#: codex_of_the_damned/navigation.py:136 codex_of_the_damned/templates/best-cards/clans/tremere.html:11
+#: codex_of_the_damned/templates/strategy/archetypes.html:272
 msgid "War Chantry"
 msgstr ""
 
-#: src/navigation.py:137 src/templates/best-cards/clans/tzimisce.html:11 src/templates/best-cards/sects/anarch.html:120
-#: src/templates/strategy/archetypes.html:320
+#: codex_of_the_damned/navigation.py:137 codex_of_the_damned/templates/best-cards/clans/tzimisce.html:11
+#: codex_of_the_damned/templates/best-cards/sects/anarch.html:120
+#: codex_of_the_damned/templates/strategy/archetypes.html:320
 msgid "War Ghouls"
 msgstr ""
 
-#: src/navigation.py:138 src/templates/best-cards/clans/caitiff.html:32 src/templates/best-cards/clans/malkavian.html:16
-#: src/templates/best-cards/clans/toreador.html:12 src/templates/strategy/archetypes.html:187
+#: codex_of_the_damned/navigation.py:138 codex_of_the_damned/templates/best-cards/clans/caitiff.html:32
+#: codex_of_the_damned/templates/best-cards/clans/malkavian.html:16
+#: codex_of_the_damned/templates/best-cards/clans/toreador.html:12
+#: codex_of_the_damned/templates/strategy/archetypes.html:187
 msgid "Weenie AUS"
 msgstr ""
 
-#: src/navigation.py:139 src/templates/best-cards/clans/caitiff.html:104 src/templates/best-cards/clans/malkavian.html:15
-#: src/templates/strategy/archetypes.html:43
+#: codex_of_the_damned/navigation.py:139 codex_of_the_damned/templates/best-cards/clans/caitiff.html:104
+#: codex_of_the_damned/templates/best-cards/clans/malkavian.html:15
+#: codex_of_the_damned/templates/strategy/archetypes.html:43
 msgid "Weenie DEM"
 msgstr ""
 
-#: src/navigation.py:140 src/templates/best-cards/clans/ventrue.html:23 src/templates/strategy/archetypes.html:52
+#: codex_of_the_damned/navigation.py:140 codex_of_the_damned/templates/best-cards/clans/ventrue.html:23
+#: codex_of_the_damned/templates/strategy/archetypes.html:52
 msgid "Weenie DOM"
 msgstr ""
 
-#: src/navigation.py:144
+#: codex_of_the_damned/navigation.py:144
 msgid "Best Cards"
 msgstr "Top Cartes"
 
-#: src/navigation.py:148 src/templates/best-cards/index.html:20
+#: codex_of_the_damned/navigation.py:148 codex_of_the_damned/templates/best-cards/index.html:20
 msgid "Generic"
 msgstr "Générique"
 
-#: src/navigation.py:150
+#: codex_of_the_damned/navigation.py:150
 msgid "Master cards"
 msgstr "Cartes de Maître"
 
-#: src/navigation.py:151
+#: codex_of_the_damned/navigation.py:151
 msgid "Political actions"
 msgstr "Actions politiques"
 
-#: src/navigation.py:152
+#: codex_of_the_damned/navigation.py:152
 msgid "No discipline"
 msgstr "Sans discipline"
 
-#: src/navigation.py:153
+#: codex_of_the_damned/navigation.py:153
 msgid "Animalism"
 msgstr "Animalisme"
 
-#: src/navigation.py:154
+#: codex_of_the_damned/navigation.py:154
 msgid "Auspex"
 msgstr "Auspex"
 
-#: src/navigation.py:155
+#: codex_of_the_damned/navigation.py:155
 msgid "Celerity"
 msgstr "Célérité"
 
-#: src/navigation.py:156
+#: codex_of_the_damned/navigation.py:156
 msgid "Dominate"
 msgstr "Domination"
 
-#: src/navigation.py:157
+#: codex_of_the_damned/navigation.py:157
 msgid "Fortitude"
 msgstr "Force d’âme"
 
-#: src/navigation.py:158
+#: codex_of_the_damned/navigation.py:158
 msgid "Necromancy"
 msgstr "Nécromancie"
 
-#: src/navigation.py:159
+#: codex_of_the_damned/navigation.py:159
 msgid "Obfuscate"
 msgstr "Occultation"
 
-#: src/navigation.py:160
+#: codex_of_the_damned/navigation.py:160
 msgid "Potence"
 msgstr "Puissance"
 
-#: src/navigation.py:161
+#: codex_of_the_damned/navigation.py:161
 msgid "Presence"
 msgstr "Présence"
 
-#: src/navigation.py:165 src/templates/best-cards/index.html:35
+#: codex_of_the_damned/navigation.py:165 codex_of_the_damned/templates/best-cards/index.html:35
 msgid "Sects"
 msgstr "Sectes"
 
-#: src/navigation.py:167 src/templates/strategy/bloat.html:77 src/templates/strategy/bloat.html:78
-#: src/templates/strategy/bloat.html:101 src/templates/strategy/bloat.html:102 src/templates/strategy/fundamentals.html:279
-#: src/templates/strategy/fundamentals.html:280 src/templates/strategy/fundamentals.html:327
-#: src/templates/strategy/fundamentals.html:399
+#: codex_of_the_damned/navigation.py:167 codex_of_the_damned/templates/strategy/bloat.html:77
+#: codex_of_the_damned/templates/strategy/bloat.html:78 codex_of_the_damned/templates/strategy/bloat.html:101
+#: codex_of_the_damned/templates/strategy/bloat.html:102 codex_of_the_damned/templates/strategy/fundamentals.html:279
+#: codex_of_the_damned/templates/strategy/fundamentals.html:280
+#: codex_of_the_damned/templates/strategy/fundamentals.html:327
+#: codex_of_the_damned/templates/strategy/fundamentals.html:399
 msgid "Anarch"
 msgstr ""
 
-#: src/navigation.py:168
+#: codex_of_the_damned/navigation.py:168
 msgid "Camarilla"
 msgstr ""
 
-#: src/navigation.py:169 src/templates/strategy/bloat.html:146 src/templates/strategy/fundamentals.html:86
-#: src/templates/strategy/fundamentals.html:472
+#: codex_of_the_damned/navigation.py:169 codex_of_the_damned/templates/strategy/bloat.html:146
+#: codex_of_the_damned/templates/strategy/fundamentals.html:86 codex_of_the_damned/templates/strategy/fundamentals.html:472
 msgid "Laibon"
 msgstr ""
 
-#: src/navigation.py:170 src/templates/strategy/bloat.html:103 src/templates/strategy/bloat.html:104
-#: src/templates/strategy/bloat.html:268 src/templates/strategy/fundamentals.html:440
+#: codex_of_the_damned/navigation.py:170 codex_of_the_damned/templates/strategy/bloat.html:103
+#: codex_of_the_damned/templates/strategy/bloat.html:104 codex_of_the_damned/templates/strategy/bloat.html:268
+#: codex_of_the_damned/templates/strategy/fundamentals.html:440
 msgid "Sabbat"
 msgstr ""
 
-#: src/navigation.py:174 src/templates/best-cards/index.html:42
+#: codex_of_the_damned/navigation.py:174 codex_of_the_damned/templates/best-cards/index.html:42
 msgid "Clans"
 msgstr "Clans"
 
-#: src/navigation.py:176
+#: codex_of_the_damned/navigation.py:176
 msgid "Ahrimanes"
 msgstr ""
 
-#: src/navigation.py:177
+#: codex_of_the_damned/navigation.py:177
 msgid "Akunanse"
 msgstr ""
 
-#: src/navigation.py:178
+#: codex_of_the_damned/navigation.py:178
 msgid "Assamite"
 msgstr ""
 
-#: src/navigation.py:179
+#: codex_of_the_damned/navigation.py:179
 msgid "Baali"
 msgstr ""
 
-#: src/navigation.py:180
+#: codex_of_the_damned/navigation.py:180
 msgid "Brujah"
 msgstr ""
 
-#: src/navigation.py:181
+#: codex_of_the_damned/navigation.py:181
 msgid "Caitiff"
 msgstr ""
 
-#: src/navigation.py:182
+#: codex_of_the_damned/navigation.py:182
 msgid "Daughters of Cacophony"
 msgstr "Filles de la Cacophonie"
 
-#: src/navigation.py:183
+#: codex_of_the_damned/navigation.py:183
 msgid "Followers of Set"
 msgstr "Disciples de Seth"
 
-#: src/navigation.py:184
+#: codex_of_the_damned/navigation.py:184
 msgid "Gangrel"
 msgstr ""
 
-#: src/navigation.py:185
+#: codex_of_the_damned/navigation.py:185
 msgid "Giovanni"
 msgstr ""
 
-#: src/navigation.py:186
+#: codex_of_the_damned/navigation.py:186
 msgid "Guruhi"
 msgstr ""
 
-#: src/navigation.py:187
+#: codex_of_the_damned/navigation.py:187
 msgid "Harbingers of Skulls"
 msgstr "Émissaires des Crânes"
 
-#: src/navigation.py:188 src/templates/strategy/bloat.html:158 src/templates/strategy/fundamentals.html:281
+#: codex_of_the_damned/navigation.py:188 codex_of_the_damned/templates/strategy/bloat.html:158
+#: codex_of_the_damned/templates/strategy/fundamentals.html:281
 msgid "Imbued"
 msgstr "Illuminés"
 
-#: src/navigation.py:189
+#: codex_of_the_damned/navigation.py:189
 msgid "Ishtarri"
 msgstr ""
 
-#: src/navigation.py:190
+#: codex_of_the_damned/navigation.py:190
 msgid "Kiasyd"
 msgstr ""
 
-#: src/navigation.py:191
+#: codex_of_the_damned/navigation.py:191
 msgid "Lasombra"
 msgstr ""
 
-#: src/navigation.py:192
+#: codex_of_the_damned/navigation.py:192
 msgid "Malkavian"
 msgstr "Malkavien"
 
-#: src/navigation.py:193
+#: codex_of_the_damned/navigation.py:193
 msgid "Nosferatu"
 msgstr ""
 
-#: src/navigation.py:194
+#: codex_of_the_damned/navigation.py:194
 msgid "Ravnos"
 msgstr ""
 
-#: src/navigation.py:195
+#: codex_of_the_damned/navigation.py:195
 msgid "Salubri"
 msgstr ""
 
-#: src/navigation.py:196
+#: codex_of_the_damned/navigation.py:196
 msgid "Toreador"
 msgstr "Toréador"
 
-#: src/navigation.py:197
+#: codex_of_the_damned/navigation.py:197
 msgid "Tremere"
 msgstr ""
 
-#: src/navigation.py:198
+#: codex_of_the_damned/navigation.py:198
 msgid "True Brujah"
 msgstr "Brujah Véritable"
 
-#: src/navigation.py:199
+#: codex_of_the_damned/navigation.py:199
 msgid "Tzimisce"
 msgstr ""
 
-#: src/navigation.py:200
+#: codex_of_the_damned/navigation.py:200
 msgid "Ventrue"
 msgstr ""
 
-#: src/navigation.py:205
+#: codex_of_the_damned/navigation.py:205
 msgid "Deck Search"
 msgstr "Recherche de Deck"
 
-#: src/navigation.py:206
+#: codex_of_the_damned/navigation.py:206
 msgid "Card Search"
 msgstr "Recherche de Carte"
 
-#: src/templates/404.html:4
+#: codex_of_the_damned/templates/404.html:4
 msgid "The page you are trying to access does not exist."
 msgstr "La page que vous cherchez n'existe pas."
 
-#: src/templates/404.html:5
+#: codex_of_the_damned/templates/404.html:5
 msgid "Home page"
 msgstr "Page d'accueil"
 
-#: src/templates/_layout_sponsor.html:3
+#: codex_of_the_damned/templates/_layout_sponsor.html:3
 msgid "Sponsor the Codex"
 msgstr "Sponsorisez le Codex"
 
-#: src/templates/card-search.html:13
+#: codex_of_the_damned/templates/card-search.html:13
 msgid "Card Search"
 msgstr "Recherche de Carte"
 
-#: src/templates/card-search.html:16
+#: codex_of_the_damned/templates/card-search.html:16
 #, python-format
 msgid ""
 "Official cards text provided by %(vekn)s. All rulings give a link to the actual official ruling made by successive "
@@ -541,15 +590,15 @@ msgstr ""
 "Les textes officiels des cartes sont fournis par %(vekn)s. Tous les arbitrages présentent un lien vers l'arbitrage "
 "officiel correspondant effectué par les Rules Directors successifs."
 
-#: src/templates/card-search.html:45
+#: codex_of_the_damned/templates/card-search.html:45
 msgid "Submit a new ruling or a ruling correction"
 msgstr "Soumettre un nouvel arbitrage ou une correction"
 
-#: src/templates/card-search.html:48
+#: codex_of_the_damned/templates/card-search.html:48
 msgid "Help improve the Codex: provide an explanation and a link to a message from a Rules Director."
 msgstr "Participez à l'amélioration du Codex : donnez une explication et un lien vers le post d'un Rules Director."
 
-#: src/templates/card-search.html:59
+#: codex_of_the_damned/templates/card-search.html:59
 msgid ""
 "<strong>Proposed rulings will not be included automatically.</strong> Once submited, your ruling will be reviewed by "
 "the Codex and KRCG team, and included in the next release."
@@ -557,51 +606,51 @@ msgstr ""
 "<strong>Les arbitrages proposés ne seront pas inclus automatiquement.</strong> Une fois soumis, votre arbitrage sera "
 "relu par l'équipe du Codex et de KRCG, et inclus dans la prochaine version."
 
-#: src/templates/card-search.html:66
+#: codex_of_the_damned/templates/card-search.html:66
 msgid "The Rules Directors have been:"
 msgstr "Les Rules Directors sont:"
 
-#: src/templates/card-search.html:68
+#: codex_of_the_damned/templates/card-search.html:68
 msgid "From 2016-12-04 onward,"
 msgstr "À partir de 2016-12-04,"
 
-#: src/templates/card-search.html:74 src/templates/card-search.html:97
+#: codex_of_the_damned/templates/card-search.html:74 codex_of_the_damned/templates/card-search.html:97
 msgid "From 2011-07-06 onward,"
 msgstr "À partir de 2011-07-06,"
 
-#: src/templates/card-search.html:80
+#: codex_of_the_damned/templates/card-search.html:80
 msgid "From 1998-06-22 onward,"
 msgstr "À partir de 1998-06-22,"
 
-#: src/templates/card-search.html:86 src/templates/card-search.html:107
+#: codex_of_the_damned/templates/card-search.html:86 codex_of_the_damned/templates/card-search.html:107
 msgid "From 1994-12-15 onward,"
 msgstr "À partir de 21994-12-15,"
 
-#: src/templates/card-search.html:95
+#: codex_of_the_damned/templates/card-search.html:95
 msgid "The official boards for rulings have been:"
 msgstr "Les forums officiels pour les arbitrages sont:"
 
-#: src/templates/card-search.html:99
+#: codex_of_the_damned/templates/card-search.html:99
 msgid "The VEKN Forum"
 msgstr "Le Forum VEKN"
 
-#: src/templates/card-search.html:102
+#: codex_of_the_damned/templates/card-search.html:102
 msgid "From 2010-12-30 onward,"
 msgstr "À partir de 2010-12-30,"
 
-#: src/templates/card-search.html:104
+#: codex_of_the_damned/templates/card-search.html:104
 msgid "The Boardgame Geek Forum"
 msgstr "Le forum de Boardgame Geek"
 
-#: src/templates/card-search.html:109
+#: codex_of_the_damned/templates/card-search.html:109
 msgid "The rec.games.trading-cards.jyhad Google Group"
 msgstr "Le groupe Google rec.games.trading-cards.jyhad"
 
-#: src/templates/deck-search.html:21
+#: codex_of_the_damned/templates/deck-search.html:21
 msgid "Deck Search"
 msgstr "Recherche de Deck"
 
-#: src/templates/deck-search.html:24
+#: codex_of_the_damned/templates/deck-search.html:24
 #, python-format
 msgid ""
 "This is an interactive interface to the %(twda)s provided by VEKN. Type a card name to search all winning deck with "
@@ -610,12 +659,12 @@ msgstr ""
 "Ceci est une interface interactive pour la %(twda)s fournie par VEKN. Entrez un nom de carte pour rechercher tous les"
 " decks gagnants qui la contiennent depuis 2008."
 
-#: src/templates/deck-search.html:57
+#: codex_of_the_damned/templates/deck-search.html:57
 msgid "Comments"
 msgstr "Commentaires"
 
 #. please abide by BCP translation choices for game terms when possible.
-#: src/templates/index.html:8
+#: codex_of_the_damned/templates/index.html:8
 #, python-format
 msgid ""
 "This site is a compilation of <strong>Vampire: the Eternal Struggle</strong> strategy resources. It is intended for "
@@ -626,11 +675,11 @@ msgstr ""
 "conçu pour les joueurs connaissant déjà le jeu et ses règles. VTES est un jeu publié par "
 "%(black_chantry_productions)s, sous la license %(white_wolf)s."
 
-#: src/templates/index.html:19
+#: codex_of_the_damned/templates/index.html:19
 msgid "Brett S. guide"
 msgstr "guide de Brett S."
 
-#: src/templates/index.html:18
+#: codex_of_the_damned/templates/index.html:18
 #, python-format
 msgid ""
 "If you are a new player, consult %(brett_s_guide)s to learn the game before digging deeper. The official rule can be "
@@ -640,19 +689,19 @@ msgstr ""
 "règles officielles sont sur le %(vekn_website)s. Le %(players_guide)s officiel est disponible en PDF sur "
 "DriveThruRPG."
 
-#: src/templates/index.html:20
+#: codex_of_the_damned/templates/index.html:20
 msgid "VEKN website"
 msgstr "site web de VEKN"
 
-#: src/templates/index.html:21
+#: codex_of_the_damned/templates/index.html:21
 msgid "Player's Guide"
 msgstr "Guide du Joueur"
 
-#: src/templates/index.html:30
+#: codex_of_the_damned/templates/index.html:30
 msgid "Github page"
 msgstr "page Github"
 
-#: src/templates/index.html:29
+#: codex_of_the_damned/templates/index.html:29
 #, python-format
 msgid ""
 "If you want to contribute to this guide, point out mistakes or raise an issue, you are welcome to do so on the "
@@ -661,27 +710,27 @@ msgstr ""
 "Si vous désirez contribuer à ce guide, signaler une erreur ou un problème, merci de le faire sur la %(github_page)s "
 "du projet."
 
-#: src/templates/index.html:36
+#: codex_of_the_damned/templates/index.html:36
 msgid "Community"
 msgstr "Communauté"
 
-#: src/templates/index.html:38
+#: codex_of_the_damned/templates/index.html:38
 msgid "VEKN Forum"
 msgstr "Forum VEKN"
 
-#: src/templates/index.html:40
+#: codex_of_the_damned/templates/index.html:40
 msgid "VTES Discord"
 msgstr "Discord VTES"
 
-#: src/templates/index.html:43
+#: codex_of_the_damned/templates/index.html:43
 msgid "VEKN Facebook goup"
 msgstr "Groupe Facebook VEKN"
 
-#: src/templates/index.html:49
+#: codex_of_the_damned/templates/index.html:49
 msgid "interviews archive"
 msgstr "archive d'interviews"
 
-#: src/templates/index.html:57
+#: codex_of_the_damned/templates/index.html:57
 msgid ""
 "Portions of the materials are the copyrights and trademarks of Paradox Interactive AB, and are used with permission. "
 "All rights reserved. For more information please visit"
@@ -689,7 +738,7 @@ msgstr ""
 "Des parties du matériel utilisé sont la propriété et les marques déposées de Paradox Interactive AB, et sont "
 "utilisées avec autorisation. Tous droits réservés. Pour plus d'informations, merci de consulter"
 
-#: src/templates/archetypes/_layout-erratum.html:3
+#: codex_of_the_damned/templates/archetypes/_layout-erratum.html:3
 #, python-format
 msgid ""
 "%(pentex)s has been modified by an <em>errata</em> in September 2019. It does not prevent a vampire to act anymore, "
@@ -698,23 +747,23 @@ msgstr ""
 "%(pentex)s a été modifiée par un <em>errata</em> en september 2019. Elle n'empêche plus un vampire d'agir, donc elle "
 "est moins puissante"
 
-#: src/templates/archetypes/_layout-erratum.html:10
+#: codex_of_the_damned/templates/archetypes/_layout-erratum.html:10
 msgid "and should probably not be included in the deck anymore."
 msgstr "et devrait probablement être retiré de ce deck."
 
-#: src/templates/archetypes/_layout-erratum.html:12
+#: codex_of_the_damned/templates/archetypes/_layout-erratum.html:12
 msgid ". Its ability to disable a strong blocker is still an important aspect so it can have its place here."
 msgstr ""
 ". Sa capacité à mettre un bloqueur puissant hors d'action est toujours un aspect important donc elle a peut-être "
 "encore sa place ici."
 
-#: src/templates/archetypes/_layout-erratum.html:14
+#: codex_of_the_damned/templates/archetypes/_layout-erratum.html:14
 msgid "but still has its place in the deck, as it was mainly used as a way to disable a blocker anyway."
 msgstr ""
 "mais a toujours sa place dans ce deck, puisqu'elle était de toute façon principalement utilisée pour mettre un "
 "bloqueur hors d'action."
 
-#: src/templates/archetypes/_layout-erratum.html:21
+#: codex_of_the_damned/templates/archetypes/_layout-erratum.html:21
 #, python-format
 msgid ""
 "%(villein)s has been modified by an errata in June 2018 to limit the blood taken to a maximum of 5. It should still "
@@ -723,7 +772,7 @@ msgstr ""
 "%(villein)s a été modifié par un errata en juin 2018 pour limiter la quantité de sang récupéré à un maximum de 5. Il "
 "devrait toutefois conserver son efficacité dans cet archétype."
 
-#: src/templates/archetypes/_layout-erratum.html:32
+#: codex_of_the_damned/templates/archetypes/_layout-erratum.html:32
 #, python-format
 msgid ""
 "%(parity_shift)s has been modified in the September 2019 <em>errata</em>. The amount of pool is no longer equal to "
@@ -734,22 +783,22 @@ msgstr ""
 "égale au nombre de Methusalah, mais est fixée à 3. Cette carte est donc moins puissante en début de partie, mais "
 "reste une bonne inclusion dans ce deck."
 
-#: src/templates/archetypes/_layout-erratum.html:44
+#: codex_of_the_damned/templates/archetypes/_layout-erratum.html:44
 #, python-format
 msgid "%(anthelios)s has been banned in 2016. Its removal may have a bit of impact on the Master module."
 msgstr "%(anthelios)s a été bannie en 2016. Son retrait peut avoir quelques conséquences sur le module de cartes Maître."
 
-#: src/templates/archetypes/_layout-erratum.html:55
+#: codex_of_the_damned/templates/archetypes/_layout-erratum.html:55
 #, python-format
 msgid "%(liliths_blessing)s has been banned in 2016."
 msgstr "%(liliths_blessing)s a été bannie en 2016."
 
-#: src/templates/archetypes/_layout-erratum.html:65
+#: codex_of_the_damned/templates/archetypes/_layout-erratum.html:65
 #, python-format
 msgid "%(temptation_of_greater_power)s has been banned in 2016."
 msgstr "%(temptation_of_greater_power)s a été bannie en 2016."
 
-#: src/templates/archetypes/aaa.html:14
+#: codex_of_the_damned/templates/archetypes/aaa.html:14
 #, python-format
 msgid ""
 "<h2>Highlights</h2> <p> This is a <em>toolbox</em> deck starring %(anson)s alongside %(alexandra)s and %(anneke)s, "
@@ -788,128 +837,142 @@ msgstr ""
 "%(laszlo_deck)s de 2012. </p> <p> La variante <strong>AAAAA</strong> conserve %(alexandra)s et %(anneke)s et utilise "
 "la combinaison %(alastor)s + %(assault_rifle)s (d’où les cinq “A”), comme dans le %(izaak_deck)s de 2010. </p>"
 
-#: src/templates/archetypes/aaa.html:35
+#: codex_of_the_damned/templates/archetypes/aaa.html:35
 msgid "Tomasz Izydorczyk's deck"
 msgstr "deck de Tomasz Izydorczyk"
 
-#: src/templates/archetypes/aaa.html:36
+#: codex_of_the_damned/templates/archetypes/aaa.html:36
 msgid "Martin Miller's deck"
 msgstr "deck de Martin Miller"
 
-#: src/templates/archetypes/aaa.html:37
+#: codex_of_the_damned/templates/archetypes/aaa.html:37
 msgid "László Walter's deck"
 msgstr "deck de László Walter"
 
-#: src/templates/archetypes/aaa.html:38
+#: codex_of_the_damned/templates/archetypes/aaa.html:38
 msgid "Izaak Havelaar's deck"
 msgstr "deck d'Izaak Havelaar"
 
-#: src/templates/archetypes/akunanse-wall.html:42 src/templates/archetypes/anti-ventrue-grinder.html:76
-#: src/templates/archetypes/black-hand.html:24 src/templates/archetypes/death-star.html:38
-#: src/templates/archetypes/hunters.html:30 src/templates/archetypes/ishtarri-politics.html:35
-#: src/templates/archetypes/mistress.html:47 src/templates/archetypes/nosferatu-royalty.html:42
-#: src/templates/archetypes/spirit-marionette.html:59 src/templates/archetypes/ventrue-royalty.html:64
-#: src/templates/best-cards/clans/daughters-of-cacophony.html:92 src/templates/best-cards/clans/imbued.html:143
-#: src/templates/best-cards/clans/lasombra.html:102 src/templates/best-cards/clans/tremere.html:120
-#: src/templates/best-cards/clans/true-brujah.html:97 src/templates/best-cards/generic/celerity.html:32
-#: src/templates/best-cards/generic/fortitude.html:18 src/templates/best-cards/generic/master.html:56
-#: src/templates/best-cards/generic/no-discipline.html:165 src/templates/best-cards/generic/presence.html:20
-#: src/templates/strategy/combat.html:18 src/templates/strategy/fundamentals.html:232
+#: codex_of_the_damned/templates/archetypes/akunanse-wall.html:42
+#: codex_of_the_damned/templates/archetypes/anti-ventrue-grinder.html:76
+#: codex_of_the_damned/templates/archetypes/black-hand.html:24 codex_of_the_damned/templates/archetypes/death-star.html:38
+#: codex_of_the_damned/templates/archetypes/hunters.html:30
+#: codex_of_the_damned/templates/archetypes/ishtarri-politics.html:35
+#: codex_of_the_damned/templates/archetypes/mistress.html:47
+#: codex_of_the_damned/templates/archetypes/nosferatu-royalty.html:42
+#: codex_of_the_damned/templates/archetypes/spirit-marionette.html:59
+#: codex_of_the_damned/templates/archetypes/ventrue-royalty.html:64
+#: codex_of_the_damned/templates/best-cards/clans/daughters-of-cacophony.html:92
+#: codex_of_the_damned/templates/best-cards/clans/imbued.html:143
+#: codex_of_the_damned/templates/best-cards/clans/lasombra.html:102
+#: codex_of_the_damned/templates/best-cards/clans/tremere.html:120
+#: codex_of_the_damned/templates/best-cards/clans/true-brujah.html:97
+#: codex_of_the_damned/templates/best-cards/generic/celerity.html:32
+#: codex_of_the_damned/templates/best-cards/generic/fortitude.html:18
+#: codex_of_the_damned/templates/best-cards/generic/master.html:56
+#: codex_of_the_damned/templates/best-cards/generic/no-discipline.html:165
+#: codex_of_the_damned/templates/best-cards/generic/presence.html:20 codex_of_the_damned/templates/strategy/combat.html:18
+#: codex_of_the_damned/templates/strategy/fundamentals.html:232
 msgid "A&B"
 msgstr ""
 
-#: src/templates/archetypes/akunanse-wall.html:79
+#: codex_of_the_damned/templates/archetypes/akunanse-wall.html:79
 msgid "Michael Bartsch"
 msgstr ""
 
-#: src/templates/archetypes/akunanse-wall.html:99
+#: codex_of_the_damned/templates/archetypes/akunanse-wall.html:99
 msgid "Noel Giménez Infante's deck"
 msgstr "deck de Noel Giménez Infante"
 
-#: src/templates/archetypes/amaravati-politics.html:85
+#: codex_of_the_damned/templates/archetypes/amaravati-politics.html:85
 msgid "Riccardo Fabiani's deck"
 msgstr "deck de Riccardo Fabiani"
 
-#: src/templates/archetypes/anti-ventrue-grinder.html:82
+#: codex_of_the_damned/templates/archetypes/anti-ventrue-grinder.html:82
 msgid "Ravel Zorzal's deck"
 msgstr "deck de Ravel Zorzal"
 
-#: src/templates/archetypes/anti-ventrue-grinder.html:91
+#: codex_of_the_damned/templates/archetypes/anti-ventrue-grinder.html:91
 msgid "Jackson Iribarren's deck"
 msgstr "deck de Jackson Iribarren"
 
-#: src/templates/archetypes/anti-ventrue-grinder.html:98
+#: codex_of_the_damned/templates/archetypes/anti-ventrue-grinder.html:98
 msgid "Bob Joseph's deck"
 msgstr "deck de Bob Joseph"
 
-#: src/templates/archetypes/bima-dominate.html:59
+#: codex_of_the_damned/templates/archetypes/bima-dominate.html:59
 msgid "Ivor Blockley's deck"
 msgstr "deck d'Ivor Blockley"
 
-#: src/templates/archetypes/black-hand.html:67
+#: codex_of_the_damned/templates/archetypes/black-hand.html:67
 msgid "Mark Loughman's deck"
 msgstr "deck de Mark Loughman"
 
-#: src/templates/archetypes/black-hand.html:74
+#: codex_of_the_damned/templates/archetypes/black-hand.html:74
 msgid "Carlo Daniele's deck"
 msgstr "deck de Carlo Daniele"
 
-#: src/templates/archetypes/cats.html:48 src/templates/archetypes/ishtarri-politics.html:27
-#: src/templates/archetypes/kiasyd-stealth-bleed.html:36 src/templates/best-cards/generic/master.html:53
-#: src/templates/strategy/combat.html:19 src/templates/strategy/deck-guides/libertine-ball.html:103
+#: codex_of_the_damned/templates/archetypes/cats.html:48 codex_of_the_damned/templates/archetypes/ishtarri-politics.html:27
+#: codex_of_the_damned/templates/archetypes/kiasyd-stealth-bleed.html:36
+#: codex_of_the_damned/templates/best-cards/generic/master.html:53 codex_of_the_damned/templates/strategy/combat.html:19
+#: codex_of_the_damned/templates/strategy/deck-guides/libertine-ball.html:103
 msgid "leeching"
 msgstr "transfusion"
 
-#: src/templates/archetypes/cats.html:85
+#: codex_of_the_damned/templates/archetypes/cats.html:85
 msgid "Yoann Guyader's deck"
 msgstr "deck de Yoann Guyader"
 
-#: src/templates/archetypes/cats.html:97
+#: codex_of_the_damned/templates/archetypes/cats.html:97
 msgid "Stephen Sing's deck"
 msgstr "deck de Stephen Sing"
 
-#: src/templates/archetypes/council-of-doom.html:70
+#: codex_of_the_damned/templates/archetypes/council-of-doom.html:70
 msgid "Ruben Feldman's deck"
 msgstr "deck de Ruben Feldman"
 
-#: src/templates/archetypes/daughters-politics.html:54 src/templates/archetypes/death-star.html:56
+#: codex_of_the_damned/templates/archetypes/daughters-politics.html:54
+#: codex_of_the_damned/templates/archetypes/death-star.html:56
 msgid "Karl Schaefer's deck"
 msgstr "deck de Karl Schaefer"
 
-#: src/templates/archetypes/emerald-legion.html:68
+#: codex_of_the_damned/templates/archetypes/emerald-legion.html:68
 msgid "Richard Stefan Utner's deck"
 msgstr "deck de Richard Stefan Utner"
 
-#: src/templates/archetypes/euro-brujah.html:68 src/templates/archetypes/guruhi-rush.html:64
+#: codex_of_the_damned/templates/archetypes/euro-brujah.html:68
+#: codex_of_the_damned/templates/archetypes/guruhi-rush.html:64
 msgid "Michael Heyder's deck"
 msgstr "deck de Michael Heyder"
 
-#: src/templates/archetypes/girls-will-find-inner-circle.html:71 src/templates/archetypes/nephandii.html:81
+#: codex_of_the_damned/templates/archetypes/girls-will-find-inner-circle.html:71
+#: codex_of_the_damned/templates/archetypes/nephandii.html:81
 msgid "Hugh Angseesing's deck"
 msgstr "deck de Hugh Angseesing"
 
-#: src/templates/archetypes/goratrix-high-tower.html:90
+#: codex_of_the_damned/templates/archetypes/goratrix-high-tower.html:90
 msgid "Jakub Baranowski's deck"
 msgstr "deck de Jakub Baranowski"
 
-#: src/templates/archetypes/guruhi-rush.html:70
+#: codex_of_the_damned/templates/archetypes/guruhi-rush.html:70
 msgid "Jorge Delgado's deck"
 msgstr "deck de Jorge Delgado"
 
-#: src/templates/archetypes/hunters.html:68
+#: codex_of_the_damned/templates/archetypes/hunters.html:68
 msgid "Cory Busch Kendall's deck"
 msgstr "deck de Cory Busch Kendall"
 
-#: src/templates/archetypes/hunters.html:74
+#: codex_of_the_damned/templates/archetypes/hunters.html:74
 msgid "John Newquist in a 2008 NAC Qualifier"
 msgstr "John Newquist pour le qualifier du NAC 2008"
 
-#: src/templates/archetypes/hunters.html:79 src/templates/archetypes/lasombra-nocturn.html:62
-#: src/templates/archetypes/ventrue-royalty.html:78
+#: codex_of_the_damned/templates/archetypes/hunters.html:79
+#: codex_of_the_damned/templates/archetypes/lasombra-nocturn.html:62
+#: codex_of_the_damned/templates/archetypes/ventrue-royalty.html:78
 msgid "Sergio Gracia's deck"
 msgstr "deck de Sergio Gracia"
 
-#: src/templates/archetypes/index.html:11
+#: codex_of_the_damned/templates/archetypes/index.html:11
 #, python-format
 msgid ""
 "<p> Here is a list of <strong>Vampire: the Eternal Struggle</strong> deck archetypes. Every archetype is presented "
@@ -928,221 +991,225 @@ msgstr ""
 " projet français basé sur la TWDA qui référence plus de 100 archétypes avec des decklist d'exemple, afin d'aider les "
 "joueurs à construire des decks pour leurs parties amicales ou leurs tournois. </p>"
 
-#: src/templates/archetypes/ishtarri-politics.html:68
+#: codex_of_the_damned/templates/archetypes/ishtarri-politics.html:68
 msgid "Adam Hulse's deck"
 msgstr "deck d'Adam Hulse"
 
-#: src/templates/archetypes/ishtarri-politics.html:72
+#: codex_of_the_damned/templates/archetypes/ishtarri-politics.html:72
 msgid "Marcin Szybkowski"
 msgstr "Marcin Szybkowski"
 
-#: src/templates/archetypes/jost-powerbleed.html:66
+#: codex_of_the_damned/templates/archetypes/jost-powerbleed.html:66
 msgid "Moisés Ferrer's deck"
 msgstr "deck de Moisés Ferrer"
 
-#: src/templates/archetypes/jost-powerbleed.html:76 src/templates/archetypes/tupdogs.html:86
+#: codex_of_the_damned/templates/archetypes/jost-powerbleed.html:76
+#: codex_of_the_damned/templates/archetypes/tupdogs.html:86
 msgid "Martin Weinmayer's deck"
 msgstr "deck de Martin Weinmayer"
 
-#: src/templates/archetypes/jost-powerbleed.html:86
+#: codex_of_the_damned/templates/archetypes/jost-powerbleed.html:86
 msgid "Rudolf Scholz's deck"
 msgstr "deck de Rudolf Scholz"
 
-#: src/templates/archetypes/khazars-diary.html:78
+#: codex_of_the_damned/templates/archetypes/khazars-diary.html:78
 msgid "Iñaki Puigdollers's deck"
 msgstr "deck d'Iñaki Puigdollers"
 
-#: src/templates/archetypes/khazars-diary.html:90
+#: codex_of_the_damned/templates/archetypes/khazars-diary.html:90
 msgid "Roberto Venturi's deck"
 msgstr "deck de Roberto Venturi"
 
-#: src/templates/archetypes/khazars-diary.html:101
+#: codex_of_the_damned/templates/archetypes/khazars-diary.html:101
 msgid "Enrico De Stefano's deck"
 msgstr "deck d'Enrico De Stefano"
 
-#: src/templates/archetypes/kiasyd-stealth-bleed.html:86
+#: codex_of_the_damned/templates/archetypes/kiasyd-stealth-bleed.html:86
 msgid "Ben Peal's deck"
 msgstr "deck de Ben Peal"
 
-#: src/templates/archetypes/lasombra-nocturn.html:80
+#: codex_of_the_damned/templates/archetypes/lasombra-nocturn.html:80
 msgid "Csaba Greguss's deck"
 msgstr "deck de Csaba Greguss"
 
-#: src/templates/archetypes/lutz-politics.html:81 src/templates/archetypes/tupdogs.html:92
+#: codex_of_the_damned/templates/archetypes/lutz-politics.html:81 codex_of_the_damned/templates/archetypes/tupdogs.html:92
 msgid "Danilo Torrisi's deck"
 msgstr "deck de Danilo Torrisi"
 
-#: src/templates/archetypes/lutz-politics.html:89
+#: codex_of_the_damned/templates/archetypes/lutz-politics.html:89
 msgid "Fabien Garcia's deck"
 msgstr "deck de Fabien Garcia"
 
-#: src/templates/archetypes/lutz-politics.html:95
+#: codex_of_the_damned/templates/archetypes/lutz-politics.html:95
 msgid "Otso Saariluoma's deck"
 msgstr "deck d'Otso Saariluoma"
 
-#: src/templates/archetypes/madness-reversal.html:54 src/templates/archetypes/nananimalism.html:71
+#: codex_of_the_damned/templates/archetypes/madness-reversal.html:54
+#: codex_of_the_damned/templates/archetypes/nananimalism.html:71
 msgid "Orian Gissler's deck"
 msgstr "deck d'Orian Gissler"
 
-#: src/templates/archetypes/mind-rape.html:50
+#: codex_of_the_damned/templates/archetypes/mind-rape.html:50
 msgid "Erol Hammer's deck"
 msgstr "deck d'Erol Hammer"
 
-#: src/templates/archetypes/mistress.html:50
+#: codex_of_the_damned/templates/archetypes/mistress.html:50
 msgid "Benoît Moyen's deck"
 msgstr "deck de Benoît Moyen"
 
-#: src/templates/archetypes/mistress.html:53
+#: codex_of_the_damned/templates/archetypes/mistress.html:53
 msgid "nice combination"
 msgstr "belle combinaison"
 
-#: src/templates/archetypes/nananimalism.html:78
+#: codex_of_the_damned/templates/archetypes/nananimalism.html:78
 msgid "Kim Nilsson's deck"
 msgstr "deck de Kim Nilsson"
 
-#: src/templates/archetypes/nananimalism.html:83
+#: codex_of_the_damned/templates/archetypes/nananimalism.html:83
 msgid "Ádám Horváth's deck"
 msgstr "deck d'Ádám Horváth"
 
-#: src/templates/archetypes/nephandii.html:86
+#: codex_of_the_damned/templates/archetypes/nephandii.html:86
 msgid "Greg Williams' deck"
 msgstr "deck de Greg Williams"
 
-#: src/templates/archetypes/nephandii.html:89
+#: codex_of_the_damned/templates/archetypes/nephandii.html:89
 msgid "Jordi Tomás' deck"
 msgstr "deck de Jordi Tomás"
 
-#: src/templates/archetypes/nephandii.html:90
+#: codex_of_the_damned/templates/archetypes/nephandii.html:90
 msgid "Jonathan Sanchez Rios' deck"
 msgstr "deck de Jonathan Sanchez Rios"
 
-#: src/templates/archetypes/nosferatu-royalty.html:76
+#: codex_of_the_damned/templates/archetypes/nosferatu-royalty.html:76
 msgid "Gyula Erdõs' deck"
 msgstr "deck de Gyula Erdõs"
 
-#: src/templates/archetypes/nosferatu-royalty.html:83
+#: codex_of_the_damned/templates/archetypes/nosferatu-royalty.html:83
 msgid "Iñaki Jimenez's deck"
 msgstr "deck d'Iñaki Jimenez"
 
-#: src/templates/archetypes/nosferatu-royalty.html:88 src/templates/archetypes/weenie-aus.html:82
+#: codex_of_the_damned/templates/archetypes/nosferatu-royalty.html:88
+#: codex_of_the_damned/templates/archetypes/weenie-aus.html:82
 msgid "Pascal Bertrand's deck"
 msgstr "deck de Pascal Bertrand"
 
-#: src/templates/archetypes/ravnos-clown-car.html:60
+#: codex_of_the_damned/templates/archetypes/ravnos-clown-car.html:60
 msgid "Miguel Pascual's deck"
 msgstr "deck de Miguel Pascual"
 
-#: src/templates/archetypes/renegade-assault.html:54
+#: codex_of_the_damned/templates/archetypes/renegade-assault.html:54
 msgid "Antti Tirilä's deck"
 msgstr "deck d'Antti Tirilä"
 
-#: src/templates/archetypes/saulot-friends.html:63
+#: codex_of_the_damned/templates/archetypes/saulot-friends.html:63
 msgid "Daniel Abreu's deck"
 msgstr "deck de Daniel Abreu"
 
-#: src/templates/archetypes/scout.html:62
+#: codex_of_the_damned/templates/archetypes/scout.html:62
 msgid "Djordje Bjelajac's deck"
 msgstr "deck de Djordje Bjelajac"
 
-#: src/templates/archetypes/shambling-hordes.html:56
+#: codex_of_the_damned/templates/archetypes/shambling-hordes.html:56
 msgid "Andrzej Jagla's deck"
 msgstr "deck d'Andrzej Jagla"
 
-#: src/templates/archetypes/shambling-hordes.html:65
+#: codex_of_the_damned/templates/archetypes/shambling-hordes.html:65
 msgid "Otto Kukkasniemi's deck"
 msgstr "deck d'Otto Kukkasniemi"
 
-#: src/templates/archetypes/spirit-marionette.html:67
+#: codex_of_the_damned/templates/archetypes/spirit-marionette.html:67
 msgid "Yannick Gibert's deck"
 msgstr "deck de Yannick Gibert"
 
-#: src/templates/archetypes/spirit-marionette.html:70
+#: codex_of_the_damned/templates/archetypes/spirit-marionette.html:70
 msgid "older version from Tomasz Kowalewski"
 msgstr "version plus ancienne de Tomasz Kowalewski"
 
-#: src/templates/archetypes/stanislava.html:80
+#: codex_of_the_damned/templates/archetypes/stanislava.html:80
 msgid "Janne Lönnqvist's deck"
 msgstr "deck de Janne Lönnqvist"
 
-#: src/templates/archetypes/stanislava.html:89
+#: codex_of_the_damned/templates/archetypes/stanislava.html:89
 msgid "Giulio De Cicco's deck"
 msgstr "deck de Giulio De Cicco"
 
-#: src/templates/archetypes/the-dark-side-of-politics.html:68 src/templates/archetypes/weenie-dom.html:64
+#: codex_of_the_damned/templates/archetypes/the-dark-side-of-politics.html:68
+#: codex_of_the_damned/templates/archetypes/weenie-dom.html:64
 msgid "Vincent Ripoll's deck"
 msgstr "deck de Vincent Ripoll"
 
-#: src/templates/archetypes/the-unnamed.html:104
+#: codex_of_the_damned/templates/archetypes/the-unnamed.html:104
 msgid "Fernando Naves Resck's deck"
 msgstr "deck de Fernando Naves Resck"
 
-#: src/templates/archetypes/tzimisce-wall.html:78
+#: codex_of_the_damned/templates/archetypes/tzimisce-wall.html:78
 msgid "Nicola Lonardi's deck"
 msgstr "deck de Nicola Lonardi"
 
-#: src/templates/archetypes/ventrue-royalty.html:73
+#: codex_of_the_damned/templates/archetypes/ventrue-royalty.html:73
 msgid "Anthony Coleman's deck"
 msgstr "deck d'Anthony Coleman"
 
-#: src/templates/archetypes/war-chantry.html:100
+#: codex_of_the_damned/templates/archetypes/war-chantry.html:100
 msgid "Ricardo Molina Sobreira's deck"
 msgstr "deck de Ricardo Molina Sobreira"
 
-#: src/templates/archetypes/war-chantry.html:110
+#: codex_of_the_damned/templates/archetypes/war-chantry.html:110
 msgid "Pau Vilar's deck"
 msgstr "deck de Pau Vilar"
 
-#: src/templates/archetypes/war-ghouls.html:53
+#: codex_of_the_damned/templates/archetypes/war-ghouls.html:53
 msgid "Emiliano Imeroni's deck"
 msgstr "deck d'Emiliano Imeroni"
 
-#: src/templates/archetypes/war-ghouls.html:60
+#: codex_of_the_damned/templates/archetypes/war-ghouls.html:60
 msgid "Antonio Cobo Cuenca's deck"
 msgstr "deck d'Antonio Cobo Cuenca"
 
-#: src/templates/archetypes/weenie-aus.html:48
+#: codex_of_the_damned/templates/archetypes/weenie-aus.html:48
 msgid "classic deal"
 msgstr "deal classique"
 
-#: src/templates/archetypes/weenie-aus.html:77
+#: codex_of_the_damned/templates/archetypes/weenie-aus.html:77
 msgid "Christian Chénard's deck"
 msgstr "deck de Christian Chénard"
 
-#: src/templates/archetypes/weenie-dem.html:86
+#: codex_of_the_damned/templates/archetypes/weenie-dem.html:86
 msgid "Norbert Bróda's deck"
 msgstr "deck de Norbert Bróda"
 
-#: src/templates/archetypes/weenie-dem.html:94
+#: codex_of_the_damned/templates/archetypes/weenie-dem.html:94
 msgid "Bram van Stappen's deck"
 msgstr "deck de Bram van Stappen"
 
-#: src/templates/archetypes/weenie-dem.html:100
+#: codex_of_the_damned/templates/archetypes/weenie-dem.html:100
 msgid "Pawel Kosz's"
 msgstr "de Pawel Kosz"
 
-#: src/templates/archetypes/weenie-dom.html:57
+#: codex_of_the_damned/templates/archetypes/weenie-dom.html:57
 msgid "Manoel Pinheiro's deck"
 msgstr "deck de Manoel Pinheiro"
 
-#: src/templates/best-cards/_layout_card_column.html:7
+#: codex_of_the_damned/templates/best-cards/_layout_card_column.html:7
 #, python-format
 msgid "played in %(num)d decks,"
 msgstr "joué dans %(num)d decks,"
 
-#: src/templates/best-cards/_layout_card_column.html:9
+#: codex_of_the_damned/templates/best-cards/_layout_card_column.html:9
 msgid "typically 1 copy"
 msgstr "typiquement 1 exemplaire"
 
-#: src/templates/best-cards/_layout_card_column.html:11
+#: codex_of_the_damned/templates/best-cards/_layout_card_column.html:11
 #, python-format
 msgid "typically %(range)s copies"
 msgstr "environ %(range)s exemplaires"
 
-#: src/templates/best-cards/index.html:5
+#: codex_of_the_damned/templates/best-cards/index.html:5
 msgid "Best Cards"
 msgstr "Top Cartes"
 
-#: src/templates/best-cards/index.html:6
+#: codex_of_the_damned/templates/best-cards/index.html:6
 #, python-format
 msgid ""
 "<p> This category presents the best cards of the game. The list is based on a statistical analysis of the %(twda)s "
@@ -1155,7 +1222,7 @@ msgstr ""
 "ayant été inclues dans le plus grand nombre de decks gagnants depuis. </p> <p> Tous les %(hunting_grounds)s et, "
 "parfois, quelques vampires de basse capacité, ont été omis par commodité. </p>"
 
-#: src/templates/best-cards/index.html:43
+#: codex_of_the_damned/templates/best-cards/index.html:43
 msgid ""
 "<p> Blood Brothers, Panders, Osebo, Nagaraja and Samedi are too rarely played to be included in this analysis: they "
 "lack the numbers for a statistical review to be relevant. </p> <p> Gargoyles are included in the Tremere clan "
@@ -1165,7 +1232,7 @@ msgstr ""
 ": ils n'ont pas les nombres suffisants pour qu'une analyse statistique soit pertinente. </p> <p> Les Gargouille sont "
 "inclues dans le clan Tremere, tous les Illuminés sont inclus dans la même analyse quel que soit leur credo. </p>"
 
-#: src/templates/best-cards/clans/ahrimanes.html:7
+#: codex_of_the_damned/templates/best-cards/clans/ahrimanes.html:7
 #, python-format
 msgid ""
 "<p> Ahrimanes and their unique discipline %(spi)s provide a stronger defence than the usual %(ani)s builds. Moreover,"
@@ -1181,14 +1248,14 @@ msgstr ""
 "principal : %(cats)s. Quelques Ahrimaines sont de bons choix pour les archétypes mono %(ani)s puisqu'elles offrent "
 "des vampires avec %(ANI)s pour un coût raisonnable, comme %(effie_lowery)s et %(sahana)s. </p>"
 
-#: src/templates/best-cards/clans/ahrimanes.html:33
+#: codex_of_the_damned/templates/best-cards/clans/ahrimanes.html:33
 #, python-format
 msgid "Superior %(ANI)s and %(SPI)s at a very decent cost of 5, she is even included in pure %(ANI)s crypts."
 msgstr ""
 "%(ANI)s et %(SPI)s en supérieur pour un coût très raisonnable à 5, elle est même inclue dans les cryptes purement "
 "%(ANI)s."
 
-#: src/templates/best-cards/clans/ahrimanes.html:39
+#: codex_of_the_damned/templates/best-cards/clans/ahrimanes.html:39
 #, python-format
 msgid ""
 "Leader of the group 4 crypt, she has all clan disciplines %(SPI_ANI_PRE)s at superior for a reasonnable cost of 7. "
@@ -1199,7 +1266,7 @@ msgstr ""
 "raisonnable de 7. Le bonus de +1 strength est toujours bon à prendre : elle peut utiliser un peu moins "
 "d'%(aid_from_bats)s pour un peu plus de %(carrion_crows)s."
 
-#: src/templates/best-cards/clans/ahrimanes.html:51
+#: codex_of_the_damned/templates/best-cards/clans/ahrimanes.html:51
 #, python-format
 msgid ""
 "Leader of the group 2 crypt, she has all clan disciplines %(SPI_ANI_PRE)s at superior for a cost of 8. The maneuver "
@@ -1208,7 +1275,7 @@ msgstr ""
 "Leader de la crypt de groupe 2, elle a toutes les disciplines de clan %(SPI_ANI_PRE)s en supérieur pour un coût de 8."
 " La manœuvre combinée au bonus de +1 strength en fait intrinsèquement une bonne guerrière."
 
-#: src/templates/best-cards/clans/ahrimanes.html:61
+#: codex_of_the_damned/templates/best-cards/clans/ahrimanes.html:61
 #, python-format
 msgid ""
 "A nice rush action, slightly better than %(bums_rush)s. It is often played in %(aus)s constructs for its base effect,"
@@ -1217,7 +1284,7 @@ msgstr ""
 "Une bonne action de rush, un peu meilleure que %(bums_rush)s. Elle est souvent jouée dans les constructions %(aus)s "
 "pour son effet de base, puisque %(ani)s donne déjà accès à %(deep_song)s, sans doute meilleur."
 
-#: src/templates/best-cards/clans/ahrimanes.html:72
+#: codex_of_the_damned/templates/best-cards/clans/ahrimanes.html:72
 msgid ""
 "An excellent unlock and intercept reaction, the core of most Ahrimanes defensive modules. An unlock is better than a "
 "simple wake, and the card is cheap: it costs blood only if both unlock and intercept are needed."
@@ -1226,7 +1293,7 @@ msgstr ""
 "redressement est meilleur qu'un simple réveil et la carte est bon marché : elle ne coûte du sang que si le "
 "redressement et l'interception sont tous deux nécessaires."
 
-#: src/templates/best-cards/clans/ahrimanes.html:80
+#: codex_of_the_damned/templates/best-cards/clans/ahrimanes.html:80
 #, python-format
 msgid ""
 "A versatile tool: it is decisive in combat and works well with the %(ani)s classic combination of %(aid_from_bats)s "
@@ -1237,7 +1304,7 @@ msgstr ""
 "d'%(aid_from_bats)s et %(carrion_crows)s. De plus, le +1 stealth en option est très utile pour passer des action "
 "critiques. C'est une nette amélioration par rapport à %(resist_earths_grasp)s."
 
-#: src/templates/best-cards/clans/ahrimanes.html:93
+#: codex_of_the_damned/templates/best-cards/clans/ahrimanes.html:93
 #, python-format
 msgid ""
 "The only card apart %(aus)s %(eagles_sight)s and %(anneke)s to allow cross-table blocks, it is a drastic improvement "
@@ -1248,12 +1315,13 @@ msgstr ""
 "amélioration drastique pour le module d'interception %(ani)s classique. La possibilité d'intercepter les morsures de "
 "sa proie ou les votes en face est critique pour les %(wall_decks)s."
 
-#: src/templates/best-cards/clans/ahrimanes.html:96 src/templates/best-cards/generic/auspex.html:86
-#: src/templates/best-cards/generic/master.html:85
+#: codex_of_the_damned/templates/best-cards/clans/ahrimanes.html:96
+#: codex_of_the_damned/templates/best-cards/generic/auspex.html:86
+#: codex_of_the_damned/templates/best-cards/generic/master.html:85
 msgid "wall decks"
 msgstr "decks mur"
 
-#: src/templates/best-cards/clans/ahrimanes.html:105
+#: codex_of_the_damned/templates/best-cards/clans/ahrimanes.html:105
 #, python-format
 msgid ""
 "A strong intercept boost on par with %(aus)s %(enhanced_senses)s, this completes the %(spi)s toolset for intercept. "
@@ -1264,47 +1332,51 @@ msgstr ""
 "l'interception. Cominé à %(falcons_eye)s et %(speak_with_spirits)s, ainsi que %(ani)s %(cats_guidance)s, il fournit "
 "un module d'interception comparable à %(aus)s."
 
-#: src/templates/best-cards/clans/akunanse.html:14 src/templates/strategy/deck-building.html:234
+#: codex_of_the_damned/templates/best-cards/clans/akunanse.html:14
+#: codex_of_the_damned/templates/strategy/deck-building.html:234
 msgid "combat ends"
 msgstr "fin de combat"
 
-#: src/templates/best-cards/clans/assamite.html:11
+#: codex_of_the_damned/templates/best-cards/clans/assamite.html:11
 msgid "Amaravati politics"
 msgstr ""
 
-#: src/templates/best-cards/clans/assamite.html:23
+#: codex_of_the_damned/templates/best-cards/clans/assamite.html:23
 msgid "Dimitri's Big Band"
 msgstr ""
 
-#: src/templates/best-cards/clans/baali.html:108
+#: codex_of_the_damned/templates/best-cards/clans/baali.html:108
 msgid "own archetype"
 msgstr "propre archétype"
 
-#: src/templates/best-cards/clans/gangrel.html:91
+#: codex_of_the_damned/templates/best-cards/clans/gangrel.html:91
 msgid "Girls Will Find Inner Circles"
 msgstr ""
 
-#: src/templates/best-cards/clans/salubri.html:40
+#: codex_of_the_damned/templates/best-cards/clans/salubri.html:40
 msgid "an archetype of its own"
 msgstr "un archétype à lui"
 
-#: src/templates/best-cards/clans/toreador.html:58 src/templates/best-cards/clans/toreador.html:104
+#: codex_of_the_damned/templates/best-cards/clans/toreador.html:58
+#: codex_of_the_damned/templates/best-cards/clans/toreador.html:104
 msgid "AAA archetype"
 msgstr ""
 
-#: src/templates/best-cards/clans/ventrue.html:10 src/templates/strategy/archetypes.html:267
+#: codex_of_the_damned/templates/best-cards/clans/ventrue.html:10
+#: codex_of_the_damned/templates/strategy/archetypes.html:267
 msgid "Anti Ventrue Grinder"
 msgstr ""
 
-#: src/templates/best-cards/generic/master.html:86
+#: codex_of_the_damned/templates/best-cards/generic/master.html:86
 msgid "block denial"
 msgstr "déni de blocage"
 
-#: src/templates/best-cards/generic/no-discipline.html:242 src/templates/strategy/deck-building.html:235
+#: codex_of_the_damned/templates/best-cards/generic/no-discipline.html:242
+#: codex_of_the_damned/templates/strategy/deck-building.html:235
 msgid "bruise"
 msgstr "érosion"
 
-#: src/templates/online-play/index.html:6
+#: codex_of_the_damned/templates/online-play/index.html:6
 #, python-format
 msgid ""
 "<p> This category presents tools for online play. Each section presents a different tool, the ways to reach its "
@@ -1315,7 +1387,7 @@ msgstr ""
 "manière d'entrer en contact avec sa communauté et l'étiquette à respecter lors de son utilisation. </p> <p> Quel que "
 "soit l'outil utilisé, %(amaranth)s et %(vtes_db)s peuvent être utilisés pour la construction de deck. </p>"
 
-#: src/templates/online-play/lackeyccg.html:7
+#: codex_of_the_damned/templates/online-play/lackeyccg.html:7
 #, python-format
 msgid ""
 "%(lackey)s is an old software to play Collectible Card Games online. It is still the foremost online plateform when "
@@ -1325,25 +1397,26 @@ msgstr ""
 "aujourd'hui de la plateforme principale quand il s'agit de jouer à <strong>V:tES</strong> en temps réel, étant donné "
 "qu'il est gratuit et à jour en ce qui concerne les cartes."
 
-#: src/templates/online-play/lackeyccg.html:15 src/templates/online-play/tabletop-simulator.html:16
-#: src/templates/online-play/vtes-online.html:15
+#: codex_of_the_damned/templates/online-play/lackeyccg.html:15
+#: codex_of_the_damned/templates/online-play/tabletop-simulator.html:16
+#: codex_of_the_damned/templates/online-play/vtes-online.html:15
 msgid "Install"
 msgstr "Installation"
 
-#: src/templates/online-play/lackeyccg.html:17
+#: codex_of_the_damned/templates/online-play/lackeyccg.html:17
 #, python-format
 msgid "Go to the %(lackey)s page and install the software on your system."
 msgstr "Allez sur la page de %(lackey)s et installez le logiciel sur votre système."
 
-#: src/templates/online-play/lackeyccg.html:24
+#: codex_of_the_damned/templates/online-play/lackeyccg.html:24
 msgid "On Mac OSX"
 msgstr "Sur Mac OSX"
 
-#: src/templates/online-play/lackeyccg.html:26
+#: codex_of_the_damned/templates/online-play/lackeyccg.html:26
 msgid "The system's security prevents the application to run:"
 msgstr "La sécurité du système empêche l'application de tourner :"
 
-#: src/templates/online-play/lackeyccg.html:30
+#: codex_of_the_damned/templates/online-play/lackeyccg.html:30
 #, python-format
 msgid ""
 "If you just allow it in your system preference, it will take you to a \"Missing fonts\" %(error_web_page)s instead of"
@@ -1355,21 +1428,21 @@ msgstr ""
 " tapez la commande suivante :<br /> %(command_line)s<br /> Remplacez la dernière partie avec le chemin d'accès de "
 "votre dossier LackeyCCG si vous ne l'avez pas mis dans le dossier Applications."
 
-#: src/templates/online-play/lackeyccg.html:32
+#: codex_of_the_damned/templates/online-play/lackeyccg.html:32
 msgid "error web page"
 msgstr "page web d’erreur"
 
-#: src/templates/online-play/lackeyccg.html:44
+#: codex_of_the_damned/templates/online-play/lackeyccg.html:44
 msgid "On Windows"
 msgstr "Sur Windows"
 
-#: src/templates/online-play/lackeyccg.html:46
+#: codex_of_the_damned/templates/online-play/lackeyccg.html:46
 msgid "The system's security prevents the application to run if it is not run with <strong>admin privileges</strong>."
 msgstr ""
 "La sécurité du système vous empêchera de lancer l'application si elle n'est pas lancée avec les <strong>privilèges "
 "administrateur</strong>."
 
-#: src/templates/online-play/lackeyccg.html:53
+#: codex_of_the_damned/templates/online-play/lackeyccg.html:53
 #, python-format
 msgid ""
 "Go to the %(plugins)s tab and paste this AutoUpdate URL to activate the <strong>VtES</strong> plugin:<br /> "
@@ -1378,7 +1451,7 @@ msgstr ""
 "Go to the %(plugins)s tab and paste this AutoUpdate URL to activate the <strong>VtES</strong> plugin:<br /> "
 "%(autoupdate_url)s<br /> then click the %(install)s button."
 
-#: src/templates/online-play/lackeyccg.html:66
+#: codex_of_the_damned/templates/online-play/lackeyccg.html:66
 #, python-format
 msgid ""
 "This takes a few minutes. Once the download is finished and displays %(autoupdate_finished)s, click the "
@@ -1387,7 +1460,7 @@ msgstr ""
 "Cela prend quelques minutes. Une fois le téléchargement terminé et que %(autoupdate_finished)s s'affiche, cliquez le "
 "bouton %(browse_installed)s, sélectionnez le plugin %(vtes)s et cliquez sur le bouton %(choose)s."
 
-#: src/templates/online-play/lackeyccg.html:78
+#: codex_of_the_damned/templates/online-play/lackeyccg.html:78
 #, python-format
 msgid ""
 "The interface has now adopted <strong>VtES</strong> colors. Go back to the %(plugins)s tab and click the "
@@ -1398,22 +1471,23 @@ msgstr ""
 "sur le bouton %(download_images)s. Vous pouvez laisser tourner en arrière-plan car cela prend environ 30 minutes, "
 "mais cela évitera les délais d'affichage superflus lors de l'affichage des cartes."
 
-#: src/templates/online-play/lackeyccg.html:90
+#: codex_of_the_damned/templates/online-play/lackeyccg.html:90
 #, python-format
 msgid "Now go to the %(preferences)s tab and choose a suitable nickname. You're all set."
 msgstr "Maintenant retournez sur l'onglet %(preferences)s et choisissez un surnom adapté. Vous êtes prêt."
 
-#: src/templates/online-play/lackeyccg.html:97 src/templates/online-play/tabletop-simulator.html:30
-#: src/templates/online-play/vtes-online.html:31
+#: codex_of_the_damned/templates/online-play/lackeyccg.html:97
+#: codex_of_the_damned/templates/online-play/tabletop-simulator.html:30
+#: codex_of_the_damned/templates/online-play/vtes-online.html:31
 msgid "Play"
 msgstr "Jouer"
 
-#: src/templates/online-play/lackeyccg.html:99
+#: codex_of_the_damned/templates/online-play/lackeyccg.html:99
 #, python-format
 msgid "To find an online game, go to the %(server)s tab and click the %(connect)s button."
 msgstr "Pour trouver une partie en ligne, allez sur l'onglet %(server)s et cliquez sur le bouton %(connect)s."
 
-#: src/templates/online-play/lackeyccg.html:108
+#: codex_of_the_damned/templates/online-play/lackeyccg.html:108
 #, python-format
 msgid ""
 "To use your decks exported from %(amaranth)s (use the %(export)s button), you have to copy the text file into the "
@@ -1424,7 +1498,7 @@ msgstr ""
 "texte dans le dossier %(lackey_deck)s. Vous pouvez les trouver dans l'onglet %(deck_editor)s de <em>LackeyCCG</em> en"
 " cliquant sur le bouton %(browse)s."
 
-#: src/templates/online-play/lackeyccg.html:123
+#: codex_of_the_damned/templates/online-play/lackeyccg.html:123
 #, python-format
 msgid ""
 "Alternatively, you can use the %(paste)s button to paste the decklist directly in a new deck. Make sure to paste the "
@@ -1433,15 +1507,15 @@ msgstr ""
 "Alternativement, vous pouvez utiliser le bouton %(paste)s pour coller votre decklist directement dans un nouveau "
 "deck. Make sure to paste the library and crypt parts independantly in this case."
 
-#: src/templates/online-play/lackeyccg.html:131
+#: codex_of_the_damned/templates/online-play/lackeyccg.html:131
 msgid "Finally, make sure you click the green + buttons in the interface to get access to all the menus."
 msgstr "Enfin, assurez-vous d'avoir cliqué sur les boutons verts + de l'interface pour avoir accès à tous les menus."
 
-#: src/templates/online-play/lackeyccg.html:137
+#: codex_of_the_damned/templates/online-play/lackeyccg.html:137
 msgid "Keyboard Layout"
 msgstr "Mapping de clavier"
 
-#: src/templates/online-play/lackeyccg.html:139
+#: codex_of_the_damned/templates/online-play/lackeyccg.html:139
 msgid ""
 "LackeyCCG uses a non-configurable US keyboard layout. This means you may not be able to use punctuation and numbers "
 "when typing if you do not have a US keyboard. The only known \"workaround\" is to configure your system keyboard to "
@@ -1451,40 +1525,41 @@ msgstr ""
 "ponctuation ou de nombres quand vous tapez si vous n'utilisez pas un clavier US. Le seul \"contournement\" connu est "
 "de configurer votre mapping de clavier comme US au niveau du système."
 
-#: src/templates/online-play/lackeyccg.html:146 src/templates/online-play/tabletop-simulator.html:48
+#: codex_of_the_damned/templates/online-play/lackeyccg.html:146
+#: codex_of_the_damned/templates/online-play/tabletop-simulator.html:48
 msgid "Useful commands"
 msgstr "Commandes utiles"
 
-#: src/templates/online-play/lackeyccg.html:148
+#: codex_of_the_damned/templates/online-play/lackeyccg.html:148
 #, python-format
 msgid "Note that you can configure keyboard shortcuts to your liking in the %(preferences)s tab."
 msgstr "Notez que vous pouvez configurer les raccourcis clavier à votre convenance dans l'onglet %(preferences)s."
 
-#: src/templates/online-play/lackeyccg.html:155
+#: codex_of_the_damned/templates/online-play/lackeyccg.html:155
 msgid "Lock or Unlock"
 msgstr "Incliner ou Redresser"
 
-#: src/templates/online-play/lackeyccg.html:156
+#: codex_of_the_damned/templates/online-play/lackeyccg.html:156
 msgid "Add a blood"
 msgstr "Ajouter un point de sang"
 
-#: src/templates/online-play/lackeyccg.html:157
+#: codex_of_the_damned/templates/online-play/lackeyccg.html:157
 msgid "Remove a blood"
 msgstr "Enlever un point de sang"
 
-#: src/templates/online-play/lackeyccg.html:158
+#: codex_of_the_damned/templates/online-play/lackeyccg.html:158
 msgid "Draw a card from library"
 msgstr "Piocher une carte de la bibliothèque"
 
-#: src/templates/online-play/lackeyccg.html:159
+#: codex_of_the_damned/templates/online-play/lackeyccg.html:159
 msgid "Peek at the face of one of your crypt card"
 msgstr "Voir la face d'une de vos cartes de crypte"
 
-#: src/templates/online-play/lackeyccg.html:163
+#: codex_of_the_damned/templates/online-play/lackeyccg.html:163
 msgid "range of commands"
 msgstr "série de commandes"
 
-#: src/templates/online-play/lackeyccg.html:162
+#: codex_of_the_damned/templates/online-play/lackeyccg.html:162
 #, python-format
 msgid ""
 "Lackey also offers a %(range_of_commands)s to use in the chat window (beginning with \"/\"). Among them, the "
@@ -1493,7 +1568,7 @@ msgstr ""
 "Lackey offre une %(range_of_commands)s qui peuvent être utilisées dans la fenêtre de chat (en commençant par \"/\"). "
 "Parmi elles, les commandes %(secret)s et %(reveal)s peuvent être utiles pour certaines cartes."
 
-#: src/templates/online-play/tabletop-simulator.html:7
+#: codex_of_the_damned/templates/online-play/tabletop-simulator.html:7
 #, python-format
 msgid ""
 "%(tabletop_simulator)s is a Steam app to play tabletop games. It has fan-made plugins to play V:tES online with "
@@ -1504,7 +1579,7 @@ msgstr ""
 "amateurs pour jouer à V:tES en ligne. Il est principalement utilisé pour des parties entre amis, car il n'y a pas de "
 "serveur de matching pour trouver d'autres joueurs au sein de l'application."
 
-#: src/templates/online-play/tabletop-simulator.html:18
+#: codex_of_the_damned/templates/online-play/tabletop-simulator.html:18
 #, python-format
 msgid ""
 "Buy and install the %(tabletop_simulator)s application using <em>Steam</em>. Then install %(this_collection)s of "
@@ -1515,11 +1590,11 @@ msgstr ""
 "%(this_collection)s de plugins. Utilisez le plugin adapté pour créer votre deck. Une fois le deck prêt, sélectionnez "
 "les deux paquets (bibliothèque et crypte), puis cliquez droit et choisissez %(save_object)s pour sauver votre deck."
 
-#: src/templates/online-play/tabletop-simulator.html:20
+#: codex_of_the_damned/templates/online-play/tabletop-simulator.html:20
 msgid "this collection"
 msgstr "cette collection"
 
-#: src/templates/online-play/tabletop-simulator.html:32
+#: codex_of_the_damned/templates/online-play/tabletop-simulator.html:32
 #, python-format
 msgid ""
 "Find a group of friends then create a game and invite them. Load one of your decks by clicking on the %(objects)s "
@@ -1528,33 +1603,33 @@ msgstr ""
 "Trouvez un groupe d,amis puis créz une partie et invitez-les. Chargez l'un de vos decks en cliquant sur le bouton "
 "%(objects)s : vos decks devraient se trouver dans la section %(saved_objects)s."
 
-#: src/templates/online-play/tabletop-simulator.html:43
+#: codex_of_the_damned/templates/online-play/tabletop-simulator.html:43
 msgid "Make sure you set the rotation on 90º (topside button on the right) for easy lock and unlock."
 msgstr ""
 "Assurez-vous de régler la rotation à 90º (bouton en haut à droite) pour pouvoir incliner et redresser vos cartes "
 "facilement."
 
-#: src/templates/online-play/tabletop-simulator.html:50
+#: codex_of_the_damned/templates/online-play/tabletop-simulator.html:50
 msgid "Lock"
 msgstr "Incliner"
 
-#: src/templates/online-play/tabletop-simulator.html:51
+#: codex_of_the_damned/templates/online-play/tabletop-simulator.html:51
 msgid "Unlock"
 msgstr "Redresser"
 
-#: src/templates/online-play/tabletop-simulator.html:52
+#: codex_of_the_damned/templates/online-play/tabletop-simulator.html:52
 msgid "Flip card"
 msgstr "Retourner une carte"
 
-#: src/templates/online-play/tabletop-simulator.html:53
+#: codex_of_the_damned/templates/online-play/tabletop-simulator.html:53
 msgid "Hover over a deck and type a number N"
 msgstr "Passer sur un deck et tapez un nombre N"
 
-#: src/templates/online-play/tabletop-simulator.html:53
+#: codex_of_the_damned/templates/online-play/tabletop-simulator.html:53
 msgid "Draw N cards"
 msgstr "Piocher N cartes"
 
-#: src/templates/online-play/vtes-online.html:7
+#: codex_of_the_damned/templates/online-play/vtes-online.html:7
 #, python-format
 msgid ""
 "%(vtes_online)s, previously named \"JOL\" (as in Jyhad OnLine) is the oldest online platform for online V:TES play. "
@@ -1565,7 +1640,7 @@ msgstr ""
 "plus ancienne. Elle est centrée sur le jeu en temps non réel, c'est-à-dire qu'une seul partie peut dure des jours "
 "tandis que les joueurs interagissent de manière asynchrone."
 
-#: src/templates/online-play/vtes-online.html:17
+#: codex_of_the_damned/templates/online-play/vtes-online.html:17
 #, python-format
 msgid ""
 "No install is required as %(vtes_online)s is played in browser. However, it is strongly recommanded to join the "
@@ -1576,11 +1651,11 @@ msgstr ""
 "recommandé de rejoindre le %(jol_discord_server)s. Vous pouvew utiliser le menu %(decks)s pour construire vos decks, "
 "ou juste collé un deck exporté depuis %(amaranth)s (utilisez le bouton %(export)s)."
 
-#: src/templates/online-play/vtes-online.html:19
+#: codex_of_the_damned/templates/online-play/vtes-online.html:19
 msgid "JOL Discord Server"
 msgstr "Serveur Discord JOL"
 
-#: src/templates/online-play/vtes-online.html:33
+#: codex_of_the_damned/templates/online-play/vtes-online.html:33
 #, python-format
 msgid ""
 "You need to ask around on the main chat for someone to create a game for you. If you're a regular player, you will "
@@ -1591,83 +1666,83 @@ msgstr ""
 " aurez rapidement le rôle nécessaire à cet effet. Une fois la partie commencée, allez voir le menu %(help)s en haut "
 "pour les commandes nécessaires."
 
-#: src/templates/online-play/vtes-online.html:41
+#: codex_of_the_damned/templates/online-play/vtes-online.html:41
 msgid "Commands"
 msgstr "Commandes"
 
-#: src/templates/online-play/vtes-online.html:43
+#: codex_of_the_damned/templates/online-play/vtes-online.html:43
 msgid "Add or remove pool"
 msgstr "Ajouter ou enlever de l'influence"
 
-#: src/templates/online-play/vtes-online.html:44
+#: codex_of_the_damned/templates/online-play/vtes-online.html:44
 msgid "Add or remove blood"
 msgstr "Ajouter ou enlever du sang"
 
-#: src/templates/online-play/vtes-online.html:46
+#: codex_of_the_damned/templates/online-play/vtes-online.html:46
 msgid "Increase or decrease capacity"
 msgstr "Augmenter ou baisser la capacité"
 
-#: src/templates/online-play/vtes-online.html:47
+#: codex_of_the_damned/templates/online-play/vtes-online.html:47
 msgid "Discard"
 msgstr "Défausser"
 
-#: src/templates/online-play/vtes-online.html:48
+#: codex_of_the_damned/templates/online-play/vtes-online.html:48
 msgid "Draw"
 msgstr "Piocher"
 
-#: src/templates/online-play/vtes-online.html:49
+#: codex_of_the_damned/templates/online-play/vtes-online.html:49
 msgid "Take or move the edge"
 msgstr "Prendre ou déplacer l'avantage"
 
-#: src/templates/online-play/vtes-online.html:50
+#: codex_of_the_damned/templates/online-play/vtes-online.html:50
 msgid "Put a label on a card"
 msgstr "Mettre une note sur une carte"
 
-#: src/templates/online-play/vtes-online.html:52
+#: codex_of_the_damned/templates/online-play/vtes-online.html:52
 msgid "Move a card"
 msgstr "Déplacer une carte"
 
-#: src/templates/online-play/vtes-online.html:53
+#: codex_of_the_damned/templates/online-play/vtes-online.html:53
 msgid "Reorder players seatings"
 msgstr "Réarranger l'ordre de jeu"
 
-#: src/templates/online-play/vtes-online.html:55
+#: codex_of_the_damned/templates/online-play/vtes-online.html:55
 msgid "Play a card"
 msgstr "Jouer une carte"
 
-#: src/templates/online-play/vtes-online.html:56
+#: codex_of_the_damned/templates/online-play/vtes-online.html:56
 msgid "Roll a die"
 msgstr "Lancer un dé"
 
-#: src/templates/online-play/vtes-online.html:57
+#: codex_of_the_damned/templates/online-play/vtes-online.html:57
 msgid "Show a card"
 msgstr "Montre une carte"
 
-#: src/templates/online-play/vtes-online.html:58
+#: codex_of_the_damned/templates/online-play/vtes-online.html:58
 msgid "Shuffle cards"
 msgstr "Mélanger des cartes"
 
-#: src/templates/online-play/vtes-online.html:60
+#: codex_of_the_damned/templates/online-play/vtes-online.html:60
 msgid "Transfer blood"
 msgstr "Transférer du sang"
 
-#: src/templates/online-play/vtes-online.html:62
+#: codex_of_the_damned/templates/online-play/vtes-online.html:62
 msgid "Lock a card"
 msgstr "Incliner une carte"
 
-#: src/templates/online-play/vtes-online.html:63
+#: codex_of_the_damned/templates/online-play/vtes-online.html:63
 msgid "Unlock a card"
 msgstr "Redresser une carte"
 
-#: src/templates/online-play/vtes-online.html:66
+#: codex_of_the_damned/templates/online-play/vtes-online.html:66
 msgid "Mark the number of votes on a vampire"
 msgstr "Indiquer le nombre de votes d'un vampire"
 
-#: src/templates/strategy/archetypes.html:163 src/templates/strategy/table-talk.html:4
+#: codex_of_the_damned/templates/strategy/archetypes.html:163 codex_of_the_damned/templates/strategy/table-talk.html:4
 msgid "Table talk"
 msgstr "Discussion"
 
-#: src/templates/strategy/bloat.html:6
+#: codex_of_the_damned/templates/strategy/bloat.html:6
 msgid ""
 "Pool is the core resource of the game. The more the better: more pool means more life and more minions. All efficient"
 " decks have at least a basic <strong>bloat</strong> module: a group of cards designed to get pool back. Getting blood"
@@ -1678,11 +1753,11 @@ msgstr ""
 "élémentaire : un ensemble de cartes destinées à regagner de l'influence. Regagner du sang sur des vampires non "
 "contrôlés revient à régénérer l'influence, puisque le sang peut facilement être récupéré grâce à quelques transferts."
 
-#: src/templates/strategy/bloat.html:14
+#: codex_of_the_damned/templates/strategy/bloat.html:14
 msgid "Leeching"
 msgstr "Transfusion"
 
-#: src/templates/strategy/bloat.html:16
+#: codex_of_the_damned/templates/strategy/bloat.html:16
 msgid ""
 "Getting pool back by taking blood from one’s minions — commonly known as <strong>leeching</strong> — is the most "
 "common way to bloat. This technique makes use of the following Master cards:"
@@ -1691,7 +1766,7 @@ msgstr ""
 "<strong>transfusion</strong> — est la méthode de régénération la plus répandue. Cette technique peut faire usage des "
 "cartes Maître suivantes :"
 
-#: src/templates/strategy/bloat.html:38
+#: codex_of_the_damned/templates/strategy/bloat.html:38
 #, python-format
 msgid ""
 "It does take some Master cards slots out in a deck, and it leaves your minions somewhat weakened. Still, a vampire "
@@ -1703,11 +1778,11 @@ msgstr ""
 "triviales, %(villein)s and %(vessel)s, sont tentantes car elles ne consomment pas d'action de Maître, mais elles sont"
 " aussi un peu moins efficaces que leurs équivalents standards."
 
-#: src/templates/strategy/bloat.html:49
+#: codex_of_the_damned/templates/strategy/bloat.html:49
 msgid "Villein errata"
 msgstr "Errata de Villein"
 
-#: src/templates/strategy/bloat.html:51
+#: codex_of_the_damned/templates/strategy/bloat.html:51
 #, python-format
 msgid ""
 "%(villein)s has seen its card text change in June 2018: it now has an <strong>upper limit of 5 blood</strong>, which "
@@ -1718,7 +1793,7 @@ msgstr ""
 "n'était pas le cas auparavant. Soyez attentif en consultant une ancienne decklist, car elle peut utiliser %(villein)s"
 " là où %(minion_tap)s serait plus adéquat de nos jours."
 
-#: src/templates/strategy/bloat.html:63
+#: codex_of_the_damned/templates/strategy/bloat.html:63
 #, python-format
 msgid ""
 "Decks that use this technique may improve it by including some cards to regenerate their vampires blood, as it has "
@@ -1729,28 +1804,28 @@ msgstr ""
 "vampires, puisqu'il est devenu une source d'influence. Les %(hunting_grounds)s peuvent être utilisés – il y en a un "
 "pour chaque clan, plus des hunting grounds génériques ou des cartes qui ont des effets similaires :"
 
-#: src/templates/strategy/bloat.html:75 src/templates/strategy/bloat.html:127 src/templates/strategy/bloat.html:131
-#: src/templates/strategy/deck-building.html:137
+#: codex_of_the_damned/templates/strategy/bloat.html:75 codex_of_the_damned/templates/strategy/bloat.html:127
+#: codex_of_the_damned/templates/strategy/bloat.html:131 codex_of_the_damned/templates/strategy/deck-building.html:137
 msgid "needs to be defended"
 msgstr "doit être défendu"
 
-#: src/templates/strategy/bloat.html:76
+#: codex_of_the_damned/templates/strategy/bloat.html:76
 msgid "City titled vampires"
 msgstr "Vampires avec un titre de ville"
 
-#: src/templates/strategy/bloat.html:87
+#: codex_of_the_damned/templates/strategy/bloat.html:87
 msgid "Black Hand, costly and fragile"
 msgstr "Black Hand, coûteux et fragile"
 
-#: src/templates/strategy/bloat.html:90
+#: codex_of_the_damned/templates/strategy/bloat.html:90
 msgid "costly and fragile"
 msgstr "coûteux et fragile"
 
-#: src/templates/strategy/bloat.html:91
+#: codex_of_the_damned/templates/strategy/bloat.html:91
 msgid "costly and less efficient"
 msgstr "coûteux et moins efficace"
 
-#: src/templates/strategy/bloat.html:94
+#: codex_of_the_damned/templates/strategy/bloat.html:94
 msgid ""
 "Finally, a handful of cards can augment the blood amount vampires get from hunting, which is another way to "
 "regenerate their blood:"
@@ -1758,11 +1833,11 @@ msgstr ""
 "Enfin, une poignée de cartes augmentent la quantité de sang que les vampires peuvent récupérer en chassant, ce qui "
 "est une autre manière de régénérer leur sang :"
 
-#: src/templates/strategy/bloat.html:106
+#: codex_of_the_damned/templates/strategy/bloat.html:106
 msgid "Master bloating"
 msgstr "Régénération par cartes Maître"
 
-#: src/templates/strategy/bloat.html:108
+#: codex_of_the_damned/templates/strategy/bloat.html:108
 msgid ""
 "Another alternative is to let the minions use their blood as they see fit and focus on generating pool directly using"
 " Master cards. A few cards allow this:"
@@ -1770,12 +1845,12 @@ msgstr ""
 "Une autre alternative est de laisser les serviteurs utiliser leur sang comme ils le souhaitent et se concentrer sur "
 "générer de l'influence directement en utilisant des cartes Maître. Quelques cartes le permettent :"
 
-#: src/templates/strategy/bloat.html:119
+#: codex_of_the_damned/templates/strategy/bloat.html:119
 #, python-format
 msgid "(uses up a lot of Master slots, best in an MMPA archetypes like %(girls)s)"
 msgstr "(consomme beaucoup d'emplacements de cartes Maître, a sa place dans les archétypes MMPA comme %(girls)s)"
 
-#: src/templates/strategy/bloat.html:161
+#: codex_of_the_damned/templates/strategy/bloat.html:161
 #, python-format
 msgid ""
 "Generic investments %(secret_horde)s and %(protracted_investment)s are rarely played, as they need many Master "
@@ -1785,15 +1860,15 @@ msgstr ""
 "consomment une action de Maître et qu'%(ashur_tablets)s leur est généralement préféré lorsque l'on dispose d'assez "
 "d'actions de Maître pour les jouer."
 
-#: src/templates/strategy/bloat.html:173
+#: codex_of_the_damned/templates/strategy/bloat.html:173
 msgid "Clan masters"
 msgstr "Cartes maître de clan"
 
-#: src/templates/strategy/bloat.html:174
+#: codex_of_the_damned/templates/strategy/bloat.html:174
 msgid "5 clans give access to a unique location generating pool:"
 msgstr "5 clans donnent accès à un lieu unique qui génère de l'influence :"
 
-#: src/templates/strategy/bloat.html:198
+#: codex_of_the_damned/templates/strategy/bloat.html:198
 #, python-format
 msgid ""
 "<p> Fast decks can rely on the fact they should score their first Victory Point early and use %(momentums_edge)s and "
@@ -1824,11 +1899,11 @@ msgstr ""
 "%(img_clan_assamite)s %(khabar_glory)s méritent une mention spéciale car elles entraînent un gain d'influence "
 "exceptionnellement haut. </p>"
 
-#: src/templates/strategy/bloat.html:249
+#: codex_of_the_damned/templates/strategy/bloat.html:249
 msgid "Vote bloating"
 msgstr "Régénération par vote"
 
-#: src/templates/strategy/bloat.html:251
+#: codex_of_the_damned/templates/strategy/bloat.html:251
 msgid ""
 "Most standard actions only generate bloats between 1 and 3 points. Some political actions, however, can produce "
 "higher bloats if they get through. They are so efficient, virtually every political oriented deck include some of "
@@ -1838,31 +1913,34 @@ msgstr ""
 "produire une régénération plus importante si elles passent. Elles sont si efficaces qu'à peu près tous les decks "
 "politiques en incluent :"
 
-#: src/templates/strategy/bloat.html:263 src/templates/strategy/fundamentals.html:265
+#: codex_of_the_damned/templates/strategy/bloat.html:263 codex_of_the_damned/templates/strategy/fundamentals.html:265
 msgid "Prince or Justicar"
 msgstr "Prince ou Justicar"
 
-#: src/templates/strategy/bloat.html:265 src/templates/strategy/combat.html:53 src/templates/strategy/combat.html:58
-#: src/templates/strategy/combat.html:65 src/templates/strategy/combat.html:70 src/templates/strategy/combat.html:75
-#: src/templates/strategy/combat.html:80 src/templates/strategy/combat.html:222 src/templates/strategy/combat.html:228
-#: src/templates/strategy/combat.html:233 src/templates/strategy/combat.html:319
-#: src/templates/strategy/deck-building.html:202 src/templates/strategy/fundamentals.html:56
-#: src/templates/strategy/fundamentals.html:61 src/templates/strategy/fundamentals.html:76
-#: src/templates/strategy/fundamentals.html:85 src/templates/strategy/fundamentals.html:159
-#: src/templates/strategy/fundamentals.html:210 src/templates/strategy/fundamentals.html:434
+#: codex_of_the_damned/templates/strategy/bloat.html:265 codex_of_the_damned/templates/strategy/combat.html:53
+#: codex_of_the_damned/templates/strategy/combat.html:58 codex_of_the_damned/templates/strategy/combat.html:65
+#: codex_of_the_damned/templates/strategy/combat.html:70 codex_of_the_damned/templates/strategy/combat.html:75
+#: codex_of_the_damned/templates/strategy/combat.html:80 codex_of_the_damned/templates/strategy/combat.html:222
+#: codex_of_the_damned/templates/strategy/combat.html:228 codex_of_the_damned/templates/strategy/combat.html:233
+#: codex_of_the_damned/templates/strategy/combat.html:319 codex_of_the_damned/templates/strategy/deck-building.html:202
+#: codex_of_the_damned/templates/strategy/fundamentals.html:56 codex_of_the_damned/templates/strategy/fundamentals.html:61
+#: codex_of_the_damned/templates/strategy/fundamentals.html:76 codex_of_the_damned/templates/strategy/fundamentals.html:85
+#: codex_of_the_damned/templates/strategy/fundamentals.html:159
+#: codex_of_the_damned/templates/strategy/fundamentals.html:210
+#: codex_of_the_damned/templates/strategy/fundamentals.html:434
 msgid "and"
 msgstr "et"
 
-#: src/templates/strategy/bloat.html:266 src/templates/strategy/fundamentals.html:216
+#: codex_of_the_damned/templates/strategy/bloat.html:266 codex_of_the_damned/templates/strategy/fundamentals.html:216
 msgid "Big capacity vampires"
 msgstr "Vampires de haute capacité"
 
 #. not tokens, strategies against bloat
-#: src/templates/strategy/bloat.html:275
+#: codex_of_the_damned/templates/strategy/bloat.html:275
 msgid "Counters"
 msgstr "Contres"
 
-#: src/templates/strategy/bloat.html:277
+#: codex_of_the_damned/templates/strategy/bloat.html:277
 #, python-format
 msgid ""
 "Most bloat modules are focused on Master cards. This entails that countering those masters with %(sudden_reversal)s, "
@@ -1877,7 +1955,7 @@ msgstr ""
 "équivaut à en lui en faire perdre 3 avec une morsure. La même logique peut être appliquée pour stopper les actions "
 "politiques de régénération avec %(delaying_tactics)s."
 
-#: src/templates/strategy/combat.html:6
+#: codex_of_the_damned/templates/strategy/combat.html:6
 #, python-format
 msgid ""
 "Combat occurs when a block succeeds, but can also be provoked directly using actions like %(bums_rush)s: because of "
@@ -1888,15 +1966,15 @@ msgstr ""
 "comme %(bums_rush)s : à cause de cette carte, les autres actions avec un effet similaire sont communément appelées "
 "des <strong>actions de rush</strong>. Elle a aussi donné son nom à toute une catégorie de decks : les %(rush_decks)s."
 
-#: src/templates/strategy/combat.html:8
+#: codex_of_the_damned/templates/strategy/combat.html:8
 msgid "rush decks"
 msgstr "decks de rush"
 
-#: src/templates/strategy/combat.html:16
+#: codex_of_the_damned/templates/strategy/combat.html:16
 msgid "Bruise"
 msgstr "Érosion"
 
-#: src/templates/strategy/combat.html:17
+#: codex_of_the_damned/templates/strategy/combat.html:17
 #, python-format
 msgid ""
 "<p> Combat does not help reducing the prey's pool, at least not directly. The core principle of combat is "
@@ -1911,11 +1989,11 @@ msgstr ""
 "sang sur la table diminue l'efficacité des techniques de %(leeching)s. </p> <p> En conséquence, l'objectif de tout "
 "module de combat est d'améliorer ou réduire l'érosion, <em>càd</em> la perte de sang. </p>"
 
-#: src/templates/strategy/combat.html:34
+#: codex_of_the_damned/templates/strategy/combat.html:34
 msgid "Dealing damage"
 msgstr "Infliger des dégâts"
 
-#: src/templates/strategy/combat.html:36
+#: codex_of_the_damned/templates/strategy/combat.html:36
 #, python-format
 msgid ""
 "On the discipline side, %(pot)s and %(thn)s are great at dealing high damage. %(ani)s has a strong combination with "
@@ -1928,28 +2006,31 @@ msgstr ""
 "%(theft_of_vitae)s, qui fournit gratuitement un différentiel de 4 sang sans possibilité de prévention. De nombreuses "
 "disciplines donnent accès à des dégâts aggravés :"
 
-#: src/templates/strategy/combat.html:51 src/templates/strategy/combat.html:57 src/templates/strategy/combat.html:62
-#: src/templates/strategy/combat.html:68 src/templates/strategy/combat.html:73 src/templates/strategy/combat.html:78
-#: src/templates/strategy/combat.html:82 src/templates/strategy/combat.html:83 src/templates/strategy/combat.html:84
-#: src/templates/strategy/combat.html:85 src/templates/strategy/combat.html:218 src/templates/strategy/combat.html:226
-#: src/templates/strategy/combat.html:232 src/templates/strategy/combat.html:236 src/templates/strategy/combat.html:237
-#: src/templates/strategy/combat.html:238 src/templates/strategy/combat.html:240 src/templates/strategy/combat.html:244
-#: src/templates/strategy/combat.html:247 src/templates/strategy/combat.html:249
-#: src/templates/strategy/deck-building.html:201 src/templates/strategy/fundamentals.html:54
-#: src/templates/strategy/fundamentals.html:56
+#: codex_of_the_damned/templates/strategy/combat.html:51 codex_of_the_damned/templates/strategy/combat.html:57
+#: codex_of_the_damned/templates/strategy/combat.html:62 codex_of_the_damned/templates/strategy/combat.html:68
+#: codex_of_the_damned/templates/strategy/combat.html:73 codex_of_the_damned/templates/strategy/combat.html:78
+#: codex_of_the_damned/templates/strategy/combat.html:82 codex_of_the_damned/templates/strategy/combat.html:83
+#: codex_of_the_damned/templates/strategy/combat.html:84 codex_of_the_damned/templates/strategy/combat.html:85
+#: codex_of_the_damned/templates/strategy/combat.html:218 codex_of_the_damned/templates/strategy/combat.html:226
+#: codex_of_the_damned/templates/strategy/combat.html:232 codex_of_the_damned/templates/strategy/combat.html:236
+#: codex_of_the_damned/templates/strategy/combat.html:237 codex_of_the_damned/templates/strategy/combat.html:238
+#: codex_of_the_damned/templates/strategy/combat.html:240 codex_of_the_damned/templates/strategy/combat.html:244
+#: codex_of_the_damned/templates/strategy/combat.html:247 codex_of_the_damned/templates/strategy/combat.html:249
+#: codex_of_the_damned/templates/strategy/deck-building.html:201
+#: codex_of_the_damned/templates/strategy/fundamentals.html:54 codex_of_the_damned/templates/strategy/fundamentals.html:56
 msgid "with"
 msgstr "avec"
 
-#: src/templates/strategy/combat.html:87
+#: codex_of_the_damned/templates/strategy/combat.html:87
 #, python-format
 msgid "Gargoyles (%(img_clan_gargoyle)s) with %(raking_talons)s."
 msgstr "Les gargouilles (%(img_clan_gargoyle)s) avec %(raking_talons)s."
 
-#: src/templates/strategy/combat.html:96
+#: codex_of_the_damned/templates/strategy/combat.html:96
 msgid "Using aggravated damage"
 msgstr "Utiliser des dégâts aggravés"
 
-#: src/templates/strategy/combat.html:97
+#: codex_of_the_damned/templates/strategy/combat.html:97
 #, python-format
 msgid ""
 "<p> Using aggravated damage while acting is tricky, as the acting minion has to choose <strong>and pay</strong> for "
@@ -1967,7 +2048,7 @@ msgstr ""
 "torpeur quelle que soit sa frappe. Le seul prérequis est que la portée doit être adéquate pour la frappe aggravée. "
 "</p>"
 
-#: src/templates/strategy/combat.html:117
+#: codex_of_the_damned/templates/strategy/combat.html:117
 #, python-format
 msgid ""
 "<p> Apart from dealing more damage each strike, <strong>additional strikes</strong> are a good option to deliver more"
@@ -1981,11 +2062,11 @@ msgstr ""
 " (%(san)s). </p> <p> Enfin, %(target_vitals)s est une excellente option pour augmenter les dégâts, disponible "
 "gratuitement pour tous les serviteurs. </p>"
 
-#: src/templates/strategy/combat.html:136
+#: codex_of_the_damned/templates/strategy/combat.html:136
 msgid "Weapons"
 msgstr "Armes"
 
-#: src/templates/strategy/combat.html:138
+#: codex_of_the_damned/templates/strategy/combat.html:138
 msgid ""
 "Weapons are also a good way to improve damage. There are a lot of weapons available, here are the most efficient and "
 "most played:"
@@ -1993,7 +2074,7 @@ msgstr ""
 "Les armes sont aussi un bon moyen d'augmenter les dégâts. Il y a beaucoup d'armes disponibles, voici les plus "
 "efficaces et les plus jouées :"
 
-#: src/templates/strategy/combat.html:145
+#: codex_of_the_damned/templates/strategy/combat.html:145
 #, python-format
 msgid ""
 "%(weighted_walking_stick)s: A weapon that can be wielded without losing an action to equip it. It provides a total of"
@@ -2002,7 +2083,7 @@ msgstr ""
 "%(weighted_walking_stick)s : Une arme qui peut être utilisée sans perdre une action à l'équiper. Elle fournit un "
 "total de trois dégâts supplémentaires gratuitement, un très bon ratio."
 
-#: src/templates/strategy/combat.html:154
+#: codex_of_the_damned/templates/strategy/combat.html:154
 #, python-format
 msgid ""
 "%(magnum)s: An additional damage each strike, together with a manoeuver to keep the range long an avoid bruise. This "
@@ -2013,12 +2094,12 @@ msgstr ""
 "C'est aussi la meilleure arme que %(concealed_weapon)s peut sortir, ce qui évite de perdre une action à l'équiper (et"
 " de risquer l'interception)."
 
-#: src/templates/strategy/combat.html:167
+#: codex_of_the_damned/templates/strategy/combat.html:167
 #, python-format
 msgid "%(ivory_bow)s: Although unique, 1 pool for an aggravated ranged damage each strike is a bargain."
 msgstr "%(ivory_bow)s : Bien qu'unique, 1 influence pour un dégât aggravé longue portée à chaque frappe, c'est une affaire."
 
-#: src/templates/strategy/combat.html:175
+#: codex_of_the_damned/templates/strategy/combat.html:175
 #, python-format
 msgid ""
 "%(sniper_rifle)s: Although only useful when blocking, its ability to set the range is an excellent option to avoid "
@@ -2027,7 +2108,7 @@ msgstr ""
 "%(sniper_rifle)s : Surtout utile pour bloquer, sa capacité à fixer la portée est une excellent option pour éviter "
 "l'érosion."
 
-#: src/templates/strategy/combat.html:184
+#: codex_of_the_damned/templates/strategy/combat.html:184
 #, python-format
 msgid ""
 "%(assault_rifle)s: A stronger version of the %(magnum)s. The 5 pool cost is prohibitive, but if it can be reduced by "
@@ -2036,7 +2117,7 @@ msgstr ""
 "%(assault_rifle)s : Une version plus puissante du %(magnum)s. Le coût de 5 influence est prohibitif, mais il peut "
 "être réduit en le mettant en jeu avec %(alastor)s, par exemple. C'est l'une des armes les plus puissantes du jeu."
 
-#: src/templates/strategy/combat.html:197
+#: codex_of_the_damned/templates/strategy/combat.html:197
 #, python-format
 msgid ""
 "%(blade_of_bellona)s: An additional damage and optional manoeuver at no cost, a real bargain for "
@@ -2045,11 +2126,11 @@ msgstr ""
 "%(blade_of_bellona)s : Un dégât de plus avec une manœuvre en option, le tout gratuit – une affaire pour les "
 "%(img_clan_salubri_anti)s."
 
-#: src/templates/strategy/combat.html:208
+#: codex_of_the_damned/templates/strategy/combat.html:208
 msgid "Defense"
 msgstr "Défense"
 
-#: src/templates/strategy/combat.html:210
+#: codex_of_the_damned/templates/strategy/combat.html:210
 msgid ""
 "The easiest defense for combats is to avoid them altogether using a <em>Strike: Combat Ends</em>, "
 "<strong>S:CE</strong> for short. Multiple disciplines give access to this option:"
@@ -2058,7 +2139,7 @@ msgstr ""
 "(<em>Strike: Combat Ends</em> en anglais, <strong>S:CE</strong> pour faire court). Plusieurs disciplines donnent "
 "accès à cette option :"
 
-#: src/templates/strategy/combat.html:254
+#: codex_of_the_damned/templates/strategy/combat.html:254
 #, python-format
 msgid ""
 "It is worth noting that %(flash_grenade)s is an option for any minion, and also that big capacity vampires have "
@@ -2069,7 +2150,7 @@ msgstr ""
 "haute capacité ont accès à %(dom)s %(obedience)s et %(OBF)s %(mental_maze)s pour éviter complètement le combat, bien "
 "qu'uniquement en réaction."
 
-#: src/templates/strategy/combat.html:267
+#: codex_of_the_damned/templates/strategy/combat.html:267
 #, python-format
 msgid ""
 "<h3>How to deal with Strike: Combat Ends (S:CE)</h3> <p> S:CE are a real issue for combat-focused deck. Some "
@@ -2089,7 +2170,7 @@ msgstr ""
 "</ul> <p> Sans ça, la seule option est d'entrer suffisamment souvent en combat pour épuiser les S:CE du côté de la "
 "défense. </p>"
 
-#: src/templates/strategy/combat.html:302
+#: codex_of_the_damned/templates/strategy/combat.html:302
 #, python-format
 msgid ""
 "Aside from S:CE, <strong>damage prevention</strong> is another important part of combat. It is useful in defence, but"
@@ -2102,12 +2183,12 @@ msgstr ""
 " principal des decks orientés combat. %(for)s est la principale discipline pour la prévention de dégâts et seules "
 "quelques cartes de prévention n'en font pas partie :"
 
-#: src/templates/strategy/combat.html:311
+#: codex_of_the_damned/templates/strategy/combat.html:311
 #, python-format
 msgid "%(glancing_blow)s prevents only one damage, that makes it a viable option only for saving an ally."
 msgstr "%(glancing_blow)s ne prévient qu'un dégât, ce qui ne le rend viable que pour sauver un allié."
 
-#: src/templates/strategy/combat.html:332
+#: codex_of_the_damned/templates/strategy/combat.html:332
 #, python-format
 msgid ""
 "<p> <strong>Dodging</strong> is still an option for defence, and the simple %(dodge)s is available for everyone. It "
@@ -2123,11 +2204,11 @@ msgstr ""
 "offensif, mais ce sont de bonnes options en défense car elles peuvent constituer une bonne dissuasion contre les "
 "decks de combat. </p>"
 
-#: src/templates/strategy/combat.html:351
+#: codex_of_the_damned/templates/strategy/combat.html:351
 msgid "Range Management"
 msgstr "Gestion de la portée"
 
-#: src/templates/strategy/combat.html:353
+#: codex_of_the_damned/templates/strategy/combat.html:353
 msgid ""
 "Getting the correct range is fundamental for combat. Most combat module specialize in a given range, either "
 "maintaining <strong>long range</strong> to avoid the basic one damage any vampire can do, or using strong "
@@ -2142,21 +2223,24 @@ msgstr ""
 "cartes permettent à un vampire de <strong>fixer la portée</strong> directement, sans laisser l'opportunité à "
 "l'adversaire de manœuvrer :"
 
-#: src/templates/strategy/deck-building.html:12
+#: codex_of_the_damned/templates/strategy/deck-building.html:12
 msgid "Over time, a handful of excellent ressources have been created on the subject by the community:"
 msgstr "Au fil du temps, une poignée d'excellentes ressources ont été crées sur le sujet par la communauté :"
 
-#: src/templates/strategy/deck-building.html:17 src/templates/strategy/deck-building.html:22
-#: src/templates/strategy/deck-building.html:25 src/templates/strategy/deck-building.html:28
-#: src/templates/strategy/deck-building.html:33 src/templates/strategy/deck-building.html:38
+#: codex_of_the_damned/templates/strategy/deck-building.html:17
+#: codex_of_the_damned/templates/strategy/deck-building.html:22
+#: codex_of_the_damned/templates/strategy/deck-building.html:25
+#: codex_of_the_damned/templates/strategy/deck-building.html:28
+#: codex_of_the_damned/templates/strategy/deck-building.html:33
+#: codex_of_the_damned/templates/strategy/deck-building.html:38
 msgid "by"
 msgstr "de"
 
-#: src/templates/strategy/deck-building.html:42
+#: codex_of_the_damned/templates/strategy/deck-building.html:42
 msgid "Modules and density"
 msgstr "Modules et densité"
 
-#: src/templates/strategy/deck-building.html:43
+#: codex_of_the_damned/templates/strategy/deck-building.html:43
 #, python-format
 msgid ""
 "<p> Decks can be broken down in « modules »: group of cards with a similar objective. The percentage of cards each "
@@ -2195,7 +2279,7 @@ msgstr ""
 "favorable. Au cas où elles pourraient s'avérer utiles, elles devraient être gardées en main jusqu'au au moment "
 "adéquat : la distribution raréfiée du module permet de s'assurer que ces cartes n'enrayent pas la main. </p>"
 
-#: src/templates/strategy/deck-building.html:76
+#: codex_of_the_damned/templates/strategy/deck-building.html:76
 #, python-format
 msgid ""
 "<h3>Master module</h3> <p> The Master module density depends on the rotation speed: one want to play one Master card "
@@ -2213,11 +2297,11 @@ msgstr ""
 "d'actions de Maître et jouent donc plus de cartes Maître dans le deck : il s'agit de la stratégie dite de "
 "<strong>M</strong>ulti <strong>M</strong>aster <strong>P</strong>hase <strong>A</strong>ctions (MMPA). </p>"
 
-#: src/templates/strategy/deck-building.html:95
+#: codex_of_the_damned/templates/strategy/deck-building.html:95
 msgid "Rotation"
 msgstr "Rotation"
 
-#: src/templates/strategy/deck-building.html:97
+#: codex_of_the_damned/templates/strategy/deck-building.html:97
 msgid ""
 "Games usually last between 10 to 20 turns and decks are tailored with the peak card rotation speed in mind: the "
 "number of cards played on average between one unlock phase and the next, not counting the few first turns of build-"
@@ -2231,7 +2315,7 @@ msgstr ""
 "deck dépend de sa capacité à maintenir une rotation optimale tout au cours de la partie : être coincé avec des cartes"
 " inutiles est une position perdante."
 
-#: src/templates/strategy/deck-building.html:106
+#: codex_of_the_damned/templates/strategy/deck-building.html:106
 msgid ""
 "<h3>Deck size examples</h3> <p> 60 cards deck have a peak rotation of 5 cards maximum (5 × 12 = 60): in the mid-game "
 "it plays one master, three to four minion cards, and maybe a discard. This counts the whole turn, reactions included."
@@ -2244,7 +2328,7 @@ msgstr ""
 "7 à 8 cartes (90 ∕ 12 = 7.5) : en milieu de partie il joue une carte Maître, jusqu'à une pleine main de cartes de "
 "serviteur et peut-être une défausse. </p>"
 
-#: src/templates/strategy/deck-building.html:119
+#: codex_of_the_damned/templates/strategy/deck-building.html:119
 msgid ""
 "<strong>Cycling</strong> cards and purposefully increasing the rotation to get more efficient cards is sometimes the "
 "only way to keep the rotation fluid. Multiple cards are available to provide good cycling options:"
@@ -2252,15 +2336,15 @@ msgstr ""
 "<strong>Recycler</strong> des cartes et augmenter volontairement la rotation pour piocher des cartes plus efficaces "
 "est parfois la seule manière de conserver une rotation fluide. Plusieurs cartes existent pour recycler :"
 
-#: src/templates/strategy/deck-building.html:141
+#: codex_of_the_damned/templates/strategy/deck-building.html:141
 msgid "needs to be defended, best with Anarchs"
 msgstr "doit être défendu, plus utile avec des Anarch"
 
-#: src/templates/strategy/deck-building.html:145
+#: codex_of_the_damned/templates/strategy/deck-building.html:145
 msgid "Sabbat only, best with Black Hand"
 msgstr "Sabbat seulement, plus utile avec des Black Hand"
 
-#: src/templates/strategy/deck-building.html:149
+#: codex_of_the_damned/templates/strategy/deck-building.html:149
 #, python-format
 msgid ""
 "A card that is hard to play can <strong>jam</strong> the hand. Action modifiers, especially restricted stealth cards "
@@ -2274,11 +2358,11 @@ msgstr ""
 "pas la main puisqu'elles peuvent être jouées dès qu'un serviteur est redressé et prêt à agir. Un module tactique de "
 "cartes de rotation peut être joué lorsqu'un enrayement est à craindre."
 
-#: src/templates/strategy/deck-building.html:162
+#: codex_of_the_damned/templates/strategy/deck-building.html:162
 msgid "Recursion"
 msgstr "Récursivité"
 
-#: src/templates/strategy/deck-building.html:164
+#: codex_of_the_damned/templates/strategy/deck-building.html:164
 msgid ""
 "Even stronger than a good rotation, the <strong>recursion</strong> can be a strong point in a deck: it is the ability"
 " to fetch cards from the ash heap and get them back into hand. Only a few cards provide recursion:"
@@ -2287,7 +2371,7 @@ msgstr ""
 "la capacité à récupérer des cartes du tas de cendres pour les remettre en main. Seules quelques cartes fournissent de"
 " la récursivité :"
 
-#: src/templates/strategy/deck-building.html:172
+#: codex_of_the_damned/templates/strategy/deck-building.html:172
 #, python-format
 msgid ""
 "%(ashur_tablets)s provide an excellent recursion as well as a powerful bloat. They need more than one Master phase "
@@ -2298,27 +2382,27 @@ msgstr ""
 "action de Maître par tour pour que ce soit réellement efficace, donc %(the_parthenon)s peut s'avérer utile. Les "
 "archétypes MMPA comme %(girls)s font un plein usage de cette carte."
 
-#: src/templates/strategy/deck-building.html:184
+#: codex_of_the_damned/templates/strategy/deck-building.html:184
 #, python-format
 msgid "%(the_sargon_fragment)s is the only other option open to all, but it is unique and uses up a lot of actions."
 msgstr "%(the_sargon_fragment)s est la seule autre option ouverte à tous, mais elle est unique et consomme beaucoup d'actions."
 
-#: src/templates/strategy/deck-building.html:191
+#: codex_of_the_damned/templates/strategy/deck-building.html:191
 #, python-format
 msgid "Giovanni %(img_clan_giovanni)s have the excellent %(sudario_refraction)s and the lesser %(spiritual_guidance)s"
 msgstr ""
 "Les Giovanni %(img_clan_giovanni)s disposent de l'excellent %(sudario_refraction)s et de %(spiritual_guidance)s, plus"
 " spécifique"
 
-#: src/templates/strategy/deck-building.html:203
+#: codex_of_the_damned/templates/strategy/deck-building.html:203
 msgid "Anarchs"
 msgstr "Anarchs"
 
-#: src/templates/strategy/deck-building.html:207
+#: codex_of_the_damned/templates/strategy/deck-building.html:207
 msgid "Unique, Anarch"
 msgstr "Unique, Anarch"
 
-#: src/templates/strategy/deck-building.html:218
+#: codex_of_the_damned/templates/strategy/deck-building.html:218
 msgid ""
 "Beyond its obvious advantage of fetching just the right card at the right time, a good recursion allows a deck to "
 "adapt itself to the context and the table situation."
@@ -2326,15 +2410,15 @@ msgstr ""
 "Au-delà de l'avantage évident de piocher exactement la bonne carte au bon moment, une bonne récursivité permet à un "
 "deck de s'adapter au contexte et à la situation de table."
 
-#: src/templates/strategy/deck-building.html:224
+#: codex_of_the_damned/templates/strategy/deck-building.html:224
 msgid "Building a deck in practice"
 msgstr "Construire un deck en pratique"
 
-#: src/templates/strategy/deck-building.html:226
+#: codex_of_the_damned/templates/strategy/deck-building.html:226
 msgid "bleed"
 msgstr "morsure"
 
-#: src/templates/strategy/deck-building.html:225
+#: codex_of_the_damned/templates/strategy/deck-building.html:225
 #, python-format
 msgid ""
 "<h3>1. Theme</h3> <p> The first step to build a deck is to choose a theme, a core principle to build upon. Multiple "
@@ -2400,27 +2484,27 @@ msgstr ""
 "quatre piliers stratégiques pour vous aider : la charge utile est plus importante que le système de transmission, "
 "lui-même plus important que la défense, et la gestion de combat arrive en dernier. </p>"
 
-#: src/templates/strategy/deck-building.html:227
+#: codex_of_the_damned/templates/strategy/deck-building.html:227
 msgid "politics"
 msgstr "politique"
 
-#: src/templates/strategy/deck-building.html:230
+#: codex_of_the_damned/templates/strategy/deck-building.html:230
 msgid "Bloating"
 msgstr "Régénération"
 
-#: src/templates/strategy/deck-building.html:231
+#: codex_of_the_damned/templates/strategy/deck-building.html:231
 msgid "Bounces"
 msgstr "Rebonds"
 
-#: src/templates/strategy/deck-building.html:236
+#: codex_of_the_damned/templates/strategy/deck-building.html:236
 msgid "best cards"
 msgstr "top cartes"
 
-#: src/templates/strategy/deck-building.html:237
+#: codex_of_the_damned/templates/strategy/deck-building.html:237
 msgid "deck archive"
 msgstr "archive de decks"
 
-#: src/templates/strategy/deck-building.html:301
+#: codex_of_the_damned/templates/strategy/deck-building.html:301
 #, python-format
 msgid ""
 "Note at this point you are working in single copies. This means that if you are building a rush combat deck, you "
@@ -2434,7 +2518,7 @@ msgstr ""
 "pourrez choisir d'utiliser des dizaines d'exemplaires des cartes de combat que vous aurez gardées, et un seul "
 "%(fame)s."
 
-#: src/templates/strategy/deck-building.html:311
+#: codex_of_the_damned/templates/strategy/deck-building.html:311
 #, python-format
 msgid ""
 "<h3>Counters</h3> <p> If you can predict that specific archetypes will be a threat, consider including specific "
@@ -2450,7 +2534,7 @@ msgstr ""
 "spécifique ne vous vient à l'esprit, envisagez d'inclure certains des contres génériques du jeu : "
 "%(direct_intervention)s, %(dark_influences)s, %(sudden_reversal)s ou %(wash)s. </p>"
 
-#: src/templates/strategy/deck-building.html:335
+#: codex_of_the_damned/templates/strategy/deck-building.html:335
 msgid ""
 "<h3>4. Card flow</h3> <p> Once the skeleton is ready, you can adjust the card flow. First adjust the crypt: use 4 (or"
 " more) copies for a star, 3 copies for an especially good minion if he is not mandatory for your play, 2 copies for "
@@ -2484,39 +2568,40 @@ msgstr ""
 "module secondaire pour la régénération et juste un module tactique pour la charge utile. </p> <p> Cette calculette "
 "pourra vous aider à décider du nombre d'exemplaires pour chaque carte : </p>"
 
-#: src/templates/strategy/deck-building.html:370
+#: codex_of_the_damned/templates/strategy/deck-building.html:370
 msgid "Probability to get a specific card"
 msgstr "Probabilité d'avoir une carte donnée"
 
-#: src/templates/strategy/deck-building.html:371 src/templates/strategy/deck-building.html:385
+#: codex_of_the_damned/templates/strategy/deck-building.html:371
+#: codex_of_the_damned/templates/strategy/deck-building.html:385
 msgid "cards in deck:"
 msgstr "cartes dans le deck :"
 
-#: src/templates/strategy/deck-building.html:373
+#: codex_of_the_damned/templates/strategy/deck-building.html:373
 msgid "copies of the card:"
 msgstr "exemplaires de la carte :"
 
-#: src/templates/strategy/deck-building.html:375
+#: codex_of_the_damned/templates/strategy/deck-building.html:375
 msgid "cards drawn:"
 msgstr "cartes piochées :"
 
-#: src/templates/strategy/deck-building.html:384
+#: codex_of_the_damned/templates/strategy/deck-building.html:384
 msgid "Copies needed to get a draw"
 msgstr "Exemplaires requis pour piocher"
 
-#: src/templates/strategy/deck-building.html:387
+#: codex_of_the_damned/templates/strategy/deck-building.html:387
 msgid "draws:"
 msgstr "pioches :"
 
-#: src/templates/strategy/deck-building.html:389
+#: codex_of_the_damned/templates/strategy/deck-building.html:389
 msgid "desired probability:"
 msgstr "probabilitée voulue :"
 
-#: src/templates/strategy/deck-building.html:392
+#: codex_of_the_damned/templates/strategy/deck-building.html:392
 msgid "0 copies"
 msgstr "0 copies"
 
-#: src/templates/strategy/deck-building.html:396
+#: codex_of_the_damned/templates/strategy/deck-building.html:396
 msgid ""
 "The probability to get a specific card is computed as the cumulated probability (sum) of having 1, 2, ..., n copies "
 "of the card."
@@ -2524,23 +2609,23 @@ msgstr ""
 "La probabilité de piocher une carte donnée est calculée comme la probabilité cumulée (somme) de piocher 1, 2, ..., n "
 "exemplaires."
 
-#: src/templates/strategy/deck-building.html:401
+#: codex_of_the_damned/templates/strategy/deck-building.html:401
 msgid "The formula used is"
 msgstr "La formule utilisée est"
 
-#: src/templates/strategy/deck-building.html:403
+#: codex_of_the_damned/templates/strategy/deck-building.html:403
 msgid "with s: stack, d: draws and c: copies and"
 msgstr "avec s: paquet, d: pioche et c: exemplaires et"
 
-#: src/templates/strategy/deck-building.html:403
+#: codex_of_the_damned/templates/strategy/deck-building.html:403
 msgid "the binomial coefficients."
 msgstr "les cœfiicients binomiaux."
 
-#: src/templates/strategy/deck-building.html:405
+#: codex_of_the_damned/templates/strategy/deck-building.html:405
 msgid "To second computation just computes the preceding probability for consecutive values of c."
 msgstr "Le second calcul additionne simplement la probabilité précédente pour les valeurs successives de c."
 
-#: src/templates/strategy/deck-building.html:408
+#: codex_of_the_damned/templates/strategy/deck-building.html:408
 msgid ""
 "<h3>Cycling</h3> <p> If one of your strong module can jam your hand (for example a strong stealth or a strong "
 "intercept module), consider adding cycling-oriented cards (<em>cf.</em> the <a href=\"#rotation\">Rotation</a> "
@@ -2552,7 +2637,7 @@ msgstr ""
 "href=\"#rotation\">Rotation</a>). </p> <p> Elles ne devraient cependant pas être incluses aveuglément ; elles peuvent"
 " tout à fait constituer un obstacle pour un deck sans problème d'enrayement. </p>"
 
-#: src/templates/strategy/deck-building.html:419
+#: codex_of_the_damned/templates/strategy/deck-building.html:419
 #, python-format
 msgid ""
 "<h3>5. Test and refine</h3> <p> Once the first version of the deck list is ready, it should be tested to check if it "
@@ -2573,15 +2658,15 @@ msgstr ""
 "devriez envisager de retirer les cartes dont vous ne vous servez pas, ainsi que les cartes de charge utile qui ne "
 "contribuent pas à sortir votre proie. </p>"
 
-#: src/templates/strategy/deck-building.html:420
+#: codex_of_the_damned/templates/strategy/deck-building.html:420
 msgid "play test system"
 msgstr "système de test"
 
-#: src/templates/strategy/fundamentals.html:5
+#: codex_of_the_damned/templates/strategy/fundamentals.html:5
 msgid "Bleed"
 msgstr "Morsure"
 
-#: src/templates/strategy/fundamentals.html:6
+#: codex_of_the_damned/templates/strategy/fundamentals.html:6
 #, python-format
 msgid ""
 "<p> The root of the game win is to destroy the prey’s pool and the obvious way to do it is to bleed. Numerous cards "
@@ -2597,7 +2682,7 @@ msgstr ""
 "censés être joués <strong>après que la proie a refusé de bloquer</strong>. De cette manière, ils ont plus de chances "
 "de passer. </p>"
 
-#: src/templates/strategy/fundamentals.html:22
+#: codex_of_the_damned/templates/strategy/fundamentals.html:22
 #, python-format
 msgid ""
 "<h3>Limited and unlimited modifiers</h3> <p> Bleed modifiers are always <em>\"limited\"</em> if the card does not "
@@ -2611,11 +2696,11 @@ msgstr ""
 "%(leverage)s, %(command_of_the_beast)s et %(quicksilver_contemplation)s sont jouées, les cartes plus coûteuses ne le "
 "sont pas. </p>"
 
-#: src/templates/strategy/fundamentals.html:37
+#: codex_of_the_damned/templates/strategy/fundamentals.html:37
 msgid "Bounce"
 msgstr "Rebond"
 
-#: src/templates/strategy/fundamentals.html:39
+#: codex_of_the_damned/templates/strategy/fundamentals.html:39
 msgid ""
 "On the defence side, <strong>bounces</strong> (reactions that change the target of a bleed) should be played only "
 "<strong>after the bleed amount has been confirmed</strong> by the predator, after block has been declined. This way "
@@ -2630,41 +2715,41 @@ msgstr ""
 "modificateur : il n'aura pas d'autre opportunité si la proie ne joue pas une réaction. Seul un petit nombre de cartes"
 " permettent le <em>rebond</em> d'une morsure:"
 
-#: src/templates/strategy/fundamentals.html:52
+#: codex_of_the_damned/templates/strategy/fundamentals.html:52
 msgid "younger vampires or allies"
 msgstr "vampires plus jeunes et alliés"
 
-#: src/templates/strategy/fundamentals.html:65
+#: codex_of_the_damned/templates/strategy/fundamentals.html:65
 msgid "Imbued with"
 msgstr "Les illuminés avec"
 
-#: src/templates/strategy/fundamentals.html:68
+#: codex_of_the_damned/templates/strategy/fundamentals.html:68
 msgid "And only a few cards can counter these <em>bounces</em>:"
 msgstr "Et seul un petit nombre de cartes peuvent contrer ces <em>rebonds</em>:"
 
-#: src/templates/strategy/fundamentals.html:72
+#: codex_of_the_damned/templates/strategy/fundamentals.html:72
 #, python-format
 msgid "can counter %(dom)s bounces"
 msgstr "peut contrer les rebonds %(dom)s"
 
-#: src/templates/strategy/fundamentals.html:78
+#: codex_of_the_damned/templates/strategy/fundamentals.html:78
 #, python-format
 msgid "can counter %(AUS)s bounces"
 msgstr "peuvent countre les rebonds %(AUS)s"
 
-#: src/templates/strategy/fundamentals.html:82
+#: codex_of_the_damned/templates/strategy/fundamentals.html:82
 msgid "can counter any bounce"
 msgstr "peut contrer tous les rebonds"
 
-#: src/templates/strategy/fundamentals.html:87
+#: codex_of_the_damned/templates/strategy/fundamentals.html:87
 msgid "can counter bounces when being the target"
 msgstr "peuvent contrer les rebonds dont on est la cible"
 
-#: src/templates/strategy/fundamentals.html:91
+#: codex_of_the_damned/templates/strategy/fundamentals.html:91
 msgid "is often used to deter bounces, even if it may not be enough to prevent them altogether."
 msgstr "est souvent utilisé pour décourager les rebonds, même si cela peut être insuffisant pour les empêcher complètement."
 
-#: src/templates/strategy/fundamentals.html:95
+#: codex_of_the_damned/templates/strategy/fundamentals.html:95
 #, python-format
 msgid ""
 "<h3>Archon limit</h3> <p> A bleed for more than 3 exposes the minion to the possibility of %(archon_investigation)s. "
@@ -2676,11 +2761,11 @@ msgstr ""
 "sous cette limite pour éviter de risquer leurs serviteurs, d'autres vont considérer que leurs serviteurs sont "
 "sacrifiables et iront joyeusement au-delà. </p>"
 
-#: src/templates/strategy/fundamentals.html:108
+#: codex_of_the_damned/templates/strategy/fundamentals.html:108
 msgid "Politics"
 msgstr "Politique"
 
-#: src/templates/strategy/fundamentals.html:109
+#: codex_of_the_damned/templates/strategy/fundamentals.html:109
 #, python-format
 msgid ""
 "<p> The other option to deplete the prey’s pool is to use political actions like %(kine_resources_contested)s. The "
@@ -2704,7 +2789,7 @@ msgstr ""
 "de parvenir à un <strong>verrou de vote</strong>, c'est-à-dire qu'ils auront plus de votes sur la table que la somme "
 "des votes de tous les autres joueurs. Plusieurs techniques peuvent être utilisées à cet effet:"
 
-#: src/templates/strategy/fundamentals.html:132
+#: codex_of_the_damned/templates/strategy/fundamentals.html:132
 #, python-format
 msgid ""
 "Using modifiers or master cards to get more votes: %(pre)s has the most options, but other disciplines offer good "
@@ -2717,12 +2802,12 @@ msgstr ""
 "%(hall_of_hades_court)s, de même que certains clans comme les Ventrue %(img_clan_ventrue)s avec "
 "%(ventrue_headquarters)s ou les Disciples de Seth %(img_clan_followers_of_set)s avec %(ferraille)s."
 
-#: src/templates/strategy/fundamentals.html:149
+#: codex_of_the_damned/templates/strategy/fundamentals.html:149
 #, python-format
 msgid "Using %(praxis)s, %(crusade)s or %(fee_stake)s cards."
 msgstr "Utiliser des cartes de %(praxis)s, %(crusade)s ou %(fee_stake)s."
 
-#: src/templates/strategy/fundamentals.html:158
+#: codex_of_the_damned/templates/strategy/fundamentals.html:158
 msgid ""
 "Getting multiple big capacity vampires with a lot of votes out, like Inner Circles and Justicars. This is usually "
 "achieved using"
@@ -2730,34 +2815,35 @@ msgstr ""
 "Sortir plusieurs vampires de haute capacité avec beaucoup de votes, comme des membres du Cercle intérieur et des "
 "Justicars. On y parvient généralement en utilisant"
 
-#: src/templates/strategy/fundamentals.html:160
+#: codex_of_the_damned/templates/strategy/fundamentals.html:160
 msgid "together with"
 msgstr "en combinaison avec"
 
-#: src/templates/strategy/fundamentals.html:161 src/templates/strategy/fundamentals.html:173
-#: src/templates/strategy/fundamentals.html:178
+#: codex_of_the_damned/templates/strategy/fundamentals.html:161
+#: codex_of_the_damned/templates/strategy/fundamentals.html:173
+#: codex_of_the_damned/templates/strategy/fundamentals.html:178
 msgid "or"
 msgstr "ou"
 
-#: src/templates/strategy/fundamentals.html:165
+#: codex_of_the_damned/templates/strategy/fundamentals.html:165
 msgid "Using an effect to give votes to all members of clan, like"
 msgstr "Utiliser un effet pour donner des votes à tous les membres d'un clan, comme"
 
-#: src/templates/strategy/fundamentals.html:176
+#: codex_of_the_damned/templates/strategy/fundamentals.html:176
 msgid "This needs to be combined with ways to bring many vampires of that clan into play, using actions like"
 msgstr ""
 "Il faut combiner ça avec des techniques permettant de mettre de nombreux membres du clan en jeu, en utilisant des "
 "actions comme"
 
-#: src/templates/strategy/fundamentals.html:177
+#: codex_of_the_damned/templates/strategy/fundamentals.html:177
 msgid "or Master cards like"
 msgstr "ou des cartes de Maître comme"
 
-#: src/templates/strategy/fundamentals.html:183
+#: codex_of_the_damned/templates/strategy/fundamentals.html:183
 msgid "Delay"
 msgstr "Délai"
 
-#: src/templates/strategy/fundamentals.html:185
+#: codex_of_the_damned/templates/strategy/fundamentals.html:185
 #, python-format
 msgid ""
 "Aggressive vote decks will pass multiple votes in a single turn, but this has led to the use of %(delaying_tactics)s "
@@ -2768,11 +2854,11 @@ msgstr ""
 "%(delaying_tactics)s comme défense. Cela signifie que la diversité dans les votes est souhaitable pour éviter de "
 "perdre un tour d'actions entier juste à cause d'un délai sur %(kine_resources_contested)s."
 
-#: src/templates/strategy/fundamentals.html:196
+#: codex_of_the_damned/templates/strategy/fundamentals.html:196
 msgid "Damage dealing votes"
 msgstr "Votes réduisant l'influence"
 
-#: src/templates/strategy/fundamentals.html:198
+#: codex_of_the_damned/templates/strategy/fundamentals.html:198
 msgid ""
 "Only a few votes deal substantive pool damage, and they often have restrictions. Some votes dealing less damage are "
 "not listed here."
@@ -2780,23 +2866,23 @@ msgstr ""
 "Seuls quelques votes permettent de réduire vraiment la réserve d'influence, et ils ont souvent des restrictions. "
 "Certains votes infligeant moins de dégâts sont ignorés ici."
 
-#: src/templates/strategy/fundamentals.html:205
+#: codex_of_the_damned/templates/strategy/fundamentals.html:205
 msgid "Prince or Justicar, only on a Methusalah with more pool"
 msgstr "Prince ou Justicar, seulement sur un Mathusalem avec moins d'influence"
 
-#: src/templates/strategy/fundamentals.html:212
+#: codex_of_the_damned/templates/strategy/fundamentals.html:212
 msgid "both have the same effect"
 msgstr "les deux ont le même effet"
 
-#: src/templates/strategy/fundamentals.html:220
+#: codex_of_the_damned/templates/strategy/fundamentals.html:220
 msgid "Independant or Anarch"
 msgstr "Indépendant ou Anarch"
 
-#: src/templates/strategy/fundamentals.html:228
+#: codex_of_the_damned/templates/strategy/fundamentals.html:228
 msgid "Baron"
 msgstr ""
 
-#: src/templates/strategy/fundamentals.html:233
+#: codex_of_the_damned/templates/strategy/fundamentals.html:233
 #, python-format
 msgid ""
 "<p> One can either choose to buff up attack or to keep minions and cards to defend oneself: the stronger the defence,"
@@ -2815,11 +2901,11 @@ msgstr ""
 "utilisent cette technique, même si quelques constructions purement offensives s'en passent étant donné leur manque "
 "d'outil défensif. </p>"
 
-#: src/templates/strategy/fundamentals.html:250
+#: codex_of_the_damned/templates/strategy/fundamentals.html:250
 msgid "Wake & unlock reactions"
 msgstr "Réactions de réveil & de redressement"
 
-#: src/templates/strategy/fundamentals.html:252
+#: codex_of_the_damned/templates/strategy/fundamentals.html:252
 msgid ""
 "A few cards provide wake or unlock effects during the opponents turn, letting locked vampire react to and intercept "
 "actions."
@@ -2827,16 +2913,17 @@ msgstr ""
 "Quelques cartes fournissent un effet de réveil ou de redressement durant le tour des adversaires, ce qui permet à un "
 "vampire incliné de réagir et d'intercepter des actions."
 
-#: src/templates/strategy/fundamentals.html:267 src/templates/strategy/fundamentals.html:268
+#: codex_of_the_damned/templates/strategy/fundamentals.html:267
+#: codex_of_the_damned/templates/strategy/fundamentals.html:268
 msgid "titled Sabbat"
 msgstr "Sabbat titré"
 
-#: src/templates/strategy/fundamentals.html:277
+#: codex_of_the_damned/templates/strategy/fundamentals.html:277
 #, python-format
 msgid "Big capacity %(ANI)s"
 msgstr "Haute capacité %(ANI)s"
 
-#: src/templates/strategy/fundamentals.html:284
+#: codex_of_the_damned/templates/strategy/fundamentals.html:284
 #, python-format
 msgid ""
 "<p> Another easy way to increase A&B is to use a <strong>weenie</strong> crypt: many small vampires for more actions "
@@ -2860,23 +2947,23 @@ msgstr ""
 "<strong>A</strong>ction) précise qu'aucune carte d'action ne peut être utilisée deux fois dans le même tour par le "
 "même serviteur, cette stratégie doit être combinée avec une diversité suffisante d'actions pour être efficace. </p>"
 
-#: src/templates/strategy/fundamentals.html:307
+#: codex_of_the_damned/templates/strategy/fundamentals.html:307
 msgid "Unlock modifiers"
 msgstr "Modificateurs de redressement"
 
-#: src/templates/strategy/fundamentals.html:309
+#: codex_of_the_damned/templates/strategy/fundamentals.html:309
 msgid "Only a few cards allow a vampire to unlock during the turn and undertake multiple actions."
 msgstr "Seuls quelques cartes permettent à un vampire de se redresser durant le tour pour pouvoir effectuer plusieurs actions."
 
-#: src/templates/strategy/fundamentals.html:330
+#: codex_of_the_damned/templates/strategy/fundamentals.html:330
 msgid "Seraph"
 msgstr ""
 
-#: src/templates/strategy/fundamentals.html:333
+#: codex_of_the_damned/templates/strategy/fundamentals.html:333
 msgid "Action sequence"
 msgstr "Séquence d'action"
 
-#: src/templates/strategy/fundamentals.html:334
+#: codex_of_the_damned/templates/strategy/fundamentals.html:334
 msgid ""
 "<p> The choice and order of minion actions is important. A common strategy is to <strong>bait</strong>, beginning "
 "with the most mundane actions, up to the strongest ones. This forces the opponent to ponder what to block: too early "
@@ -2893,11 +2980,11 @@ msgstr ""
 "l'adversaire à conserver un réveil ou un minion redressé pour une action encore pire qui, en fait, n'arrivera jamais."
 " </p>"
 
-#: src/templates/strategy/fundamentals.html:347
+#: codex_of_the_damned/templates/strategy/fundamentals.html:347
 msgid "The lunge"
 msgstr "La fente"
 
-#: src/templates/strategy/fundamentals.html:349
+#: codex_of_the_damned/templates/strategy/fundamentals.html:349
 msgid ""
 "The key to victory is to get a hand fit to oust one’s prey in the turn. Building this hand, then assessing the right "
 "moment to play it and <strong>lunge</strong> for the Victory Point is key. If the prey survives, they can rebuild "
@@ -2912,11 +2999,11 @@ msgstr ""
 "que prédateur, il est judicieux d'essayer de déterminer le nombre de réveils, rebonds, délais, <em>etc.</em> "
 "disponibles du côté de la proie. </p>"
 
-#: src/templates/strategy/fundamentals.html:358
+#: codex_of_the_damned/templates/strategy/fundamentals.html:358
 msgid "Stealth and Intercept"
 msgstr "Discrétion et interception"
 
-#: src/templates/strategy/fundamentals.html:359
+#: codex_of_the_damned/templates/strategy/fundamentals.html:359
 #, python-format
 msgid ""
 "<p> The key between offence and defence is the management of stealth and intercept. Many disciplines give access to "
@@ -2934,37 +3021,37 @@ msgstr ""
 "mention spéciale: ils disposent d'un bonus d'interception permanent et, en plus, leurs capacités de combat sont "
 "excellentes et leur permettent de gêner les adversaires sans autre ajout. </p>"
 
-#: src/templates/strategy/fundamentals.html:384
+#: codex_of_the_damned/templates/strategy/fundamentals.html:384
 msgid "Permanent intercept cards"
 msgstr "Cartes d'interception permanente"
 
-#: src/templates/strategy/fundamentals.html:386
+#: codex_of_the_damned/templates/strategy/fundamentals.html:386
 msgid "Only a few unique cards give permanent intercept to any vampire, most of them master cards."
 msgstr ""
 "Seules quelques cartes fournissent de l'interception permanente à n'importe quel vampire, la plupart sont des cartes "
 "de Maître."
 
-#: src/templates/strategy/fundamentals.html:395
+#: codex_of_the_damned/templates/strategy/fundamentals.html:395
 msgid "expensive"
 msgstr "cher"
 
-#: src/templates/strategy/fundamentals.html:418
+#: codex_of_the_damned/templates/strategy/fundamentals.html:418
 msgid "Allies"
 msgstr "Alliés"
 
-#: src/templates/strategy/fundamentals.html:422
+#: codex_of_the_damned/templates/strategy/fundamentals.html:422
 msgid "Other cards give permanent intercept to a chosen vampire."
 msgstr "D'autres cartes donnent un bonus d'interception permanente à un vampire précis."
 
-#: src/templates/strategy/fundamentals.html:444
+#: codex_of_the_damned/templates/strategy/fundamentals.html:444
 msgid "Small capacity vampires"
 msgstr "Vampires de basse capacité"
 
-#: src/templates/strategy/fundamentals.html:456
+#: codex_of_the_damned/templates/strategy/fundamentals.html:456
 msgid "Magaji"
 msgstr ""
 
-#: src/templates/strategy/fundamentals.html:489
+#: codex_of_the_damned/templates/strategy/fundamentals.html:489
 #, python-format
 msgid ""
 "On the other hand, whatever level of intercept one manages to achieve, stealth specialised decks often include some "
@@ -2981,71 +3068,71 @@ msgstr ""
 " même s'il est moins efficace contre les réveils. De nombreuses disciplines fournissent des dénis de blocs de moindre"
 " envergure qui ne fonctionnent que contre les alliés et les vampires plus jeunes, mais ils sont moins utilisés."
 
-#: src/templates/strategy/index.html:6
+#: codex_of_the_damned/templates/strategy/index.html:6
 msgid "This section explores <strong>Vampire: the Eternal Struggle</strong> strategy in some details."
 msgstr "Cette section explore la stratégie de <strong>Vampire: the Eternal Struggle</strong> en détail."
 
-#: src/templates/strategy/index.html:9
+#: codex_of_the_damned/templates/strategy/index.html:9
 msgid "gives general tips and advices."
 msgstr "donne des astuces et des conseils généraux"
 
-#: src/templates/strategy/index.html:10
+#: codex_of_the_damned/templates/strategy/index.html:10
 msgid "explains combat in detail."
 msgstr "explique le combat en détail"
 
-#: src/templates/strategy/index.html:11
+#: codex_of_the_damned/templates/strategy/index.html:11
 msgid "details the different strategies to gain pool during a game."
 msgstr "détaille les différentes stratégies permettant de regagner de la réserve d'influence pendant une partie."
 
-#: src/templates/strategy/index.html:12
+#: codex_of_the_damned/templates/strategy/index.html:12
 msgid "gives some tools toward deck building."
 msgstr "donne des techniques pour construire son propre deck."
 
-#: src/templates/strategy/index.html:13
+#: codex_of_the_damned/templates/strategy/index.html:13
 msgid "is an introduction to the different deck archetypes."
 msgstr "est une introduction aux différents archétypes de decks."
 
-#: src/templates/strategy/index.html:14
+#: codex_of_the_damned/templates/strategy/index.html:14
 msgid "presents negociation strategies and tips."
 msgstr "présente les stratégies et astuces de négociation."
 
-#: src/templates/strategy/index.html:16
+#: codex_of_the_damned/templates/strategy/index.html:16
 msgid "Black Chantry Sabbat pre-constructed decks guides"
 msgstr "Guides de jeu des decks préconstruits Sabbat de Black Chantry"
 
-#: src/templates/strategy/index.html:23
+#: codex_of_the_damned/templates/strategy/index.html:23
 msgid "Black Chantry \"First Blood\" pre-constructed decks guides"
 msgstr "Guides de jeu des decks préconstruits \"Premier Sang\" de Black Chantry"
 
-#: src/templates/strategy/index.html:25
+#: codex_of_the_damned/templates/strategy/index.html:25
 msgid "Black Chantry released official guides for the First Blood decks series:"
 msgstr "Black Chantry a publié des guides officiels pour la série de decks Premier Sang :"
 
-#: src/templates/strategy/index.html:29
+#: codex_of_the_damned/templates/strategy/index.html:29
 msgid "First Blood: Ventrue"
 msgstr "Premier Sang : Ventrue"
 
-#: src/templates/strategy/index.html:32
+#: codex_of_the_damned/templates/strategy/index.html:32
 msgid "First Blood: Malkavian"
 msgstr "Premier Sang : Malkavien"
 
-#: src/templates/strategy/index.html:35
+#: codex_of_the_damned/templates/strategy/index.html:35
 msgid "First Blood: Nosferatu"
 msgstr "Premier Sang : Nosferatu"
 
-#: src/templates/strategy/index.html:38
+#: codex_of_the_damned/templates/strategy/index.html:38
 msgid "First Blood: Toreador"
 msgstr "Premier Sang : Toréador"
 
-#: src/templates/strategy/index.html:41
+#: codex_of_the_damned/templates/strategy/index.html:41
 msgid "First Blood: Tremere"
 msgstr "Premier Sang : Tremere"
 
-#: src/templates/strategy/index.html:46
+#: codex_of_the_damned/templates/strategy/index.html:46
 msgid "All rights reserved."
 msgstr "Tous droits réservés."
 
-#: src/templates/strategy/table-talk.html:6
+#: codex_of_the_damned/templates/strategy/table-talk.html:6
 msgid ""
 "<em>« Table talk »</em> is an important part of the game. The best players are ruthless negotiators and rely on their"
 " skill to topple the game in their favour."
@@ -3053,11 +3140,11 @@ msgstr ""
 "La <em>« discussion »</em> est une part importante du jeu. Les meilleurs joueurs sont des négociateurs chevronnés et "
 "utilisent leur talent pour faire basculer la partie en leur faveur."
 
-#: src/templates/strategy/table-talk.html:11
+#: codex_of_the_damned/templates/strategy/table-talk.html:11
 msgid "Negociation"
 msgstr "Négociation"
 
-#: src/templates/strategy/table-talk.html:13
+#: codex_of_the_damned/templates/strategy/table-talk.html:13
 msgid ""
 "Making tactical deals with other players during the game is the heart of table talk. A lot of things can be discussed"
 " and negociated around the table. The key to successful negociation is to determine what every other player "
@@ -3068,41 +3155,41 @@ msgstr ""
 "<strong>peut offrir</strong> et ce qu'il <strong>pourrait désirer</strong>. Partant de là, presque tout est "
 "négociable à la table."
 
-#: src/templates/strategy/table-talk.html:21
+#: codex_of_the_damned/templates/strategy/table-talk.html:21
 msgid "Some tactical deals are fairly common:"
 msgstr "Certains pactes tactiques sont assez courants :"
 
-#: src/templates/strategy/table-talk.html:24
+#: codex_of_the_damned/templates/strategy/table-talk.html:24
 msgid "Agreeing for a <strong>single damage combat</strong> (only simple hand strikes) before blocking a bounced bleed."
 msgstr ""
 "Accepter de ne faire qu'<strong>un dégât au combat</strong> (en utilisant des frappes à mains nues) avant de bloquer "
 "une morsure redirigée."
 
-#: src/templates/strategy/table-talk.html:30
+#: codex_of_the_damned/templates/strategy/table-talk.html:30
 msgid "<strong>Not intercepting</strong> an action, often on the ground that the result does not hinder the other player."
 msgstr ""
 "<strong>Ne pas intercepter</strong> une action, en général sur la base du fait que l'action ne pénalise pas l'autre "
 "joueur."
 
-#: src/templates/strategy/table-talk.html:36
+#: codex_of_the_damned/templates/strategy/table-talk.html:36
 #, python-format
 msgid "Letting another player <strong>borrow a card</strong> unopposed, like %(the_rack)s or %(powerbase_montreal)s."
 msgstr "Laisser un autre joueur <strong>emprunter une carte</strong>, comme %(the_rack)s ou %(powerbase_montreal)s."
 
-#: src/templates/strategy/table-talk.html:45
+#: codex_of_the_damned/templates/strategy/table-talk.html:45
 msgid "Getting another player's vampire <strong>out of torpor</strong>; it is a directed action, harder to block."
 msgstr "<strong>Sortir de torpeur</strong> le vampire d'un autre joueur; c'est une action dirigée, plus difficile à bloquer."
 
-#: src/templates/strategy/table-talk.html:51
+#: codex_of_the_damned/templates/strategy/table-talk.html:51
 msgid "Asking a combat-oriented deck to <strong>take down a vampire</strong>."
 msgstr "Demander à un deck orienté combat de <strong>régler son compte à un vampire</strong>."
 
-#: src/templates/strategy/table-talk.html:56
+#: codex_of_the_damned/templates/strategy/table-talk.html:56
 #, python-format
 msgid "Aggreing to <strong>use %(ashur_tablets)s alternatively</strong> to avoid crippling one another."
 msgstr "Accepter d'<strong>utiliser %(ashur_tablets)s à tour de rôle</strong> pour éviter de s'handicaper respectivement."
 
-#: src/templates/strategy/table-talk.html:65
+#: codex_of_the_damned/templates/strategy/table-talk.html:65
 msgid ""
 "Deals can relate to something <em>not</em> being done instead of something being offered. Dealing to <em>not</em> "
 "bleed, <em>not</em> block or <em>not</em> rush are often proposed to one's prey or predator."
@@ -3111,7 +3198,7 @@ msgstr ""
 "pacte pour <em>ne pas</em> mordre, <em>ne pas</em> bloquer ou <em>ne pas</em> rusher est souvent proposé à la proie "
 "ou au prédateur."
 
-#: src/templates/strategy/table-talk.html:72
+#: codex_of_the_damned/templates/strategy/table-talk.html:72
 msgid ""
 "<h3>The unbearable lightness of deals</h3> <p> They are two important things to keep in mind with deals: <ul> <li> "
 "They can always be <strong>broken</strong>, and one should always be prepared to break them or have them broken by "
@@ -3128,7 +3215,7 @@ msgstr ""
 " </li> </ul> </p> <p> Les pactes sont importants mais il doivent tout de même être pris avec une certaine légèreté. "
 "</p>"
 
-#: src/templates/strategy/table-talk.html:94
+#: codex_of_the_damned/templates/strategy/table-talk.html:94
 msgid ""
 "Finally, on the tournament scene, <strong>table splits</strong> deals are commonplace. For this kind of deals, 2 or 3"
 " prominent players agree upon a repartition of Victory Points by deciding who gets to oust who. This is often key in "
@@ -3138,11 +3225,11 @@ msgstr ""
 "pacte, 2 ou 3 joueurs dominants s'accordent sur une certaine répartition de Points de Victoire en décidant qui "
 "sortira quelle proie. C'est souvent décisif pour la fin de partie."
 
-#: src/templates/strategy/table-talk.html:101
+#: codex_of_the_damned/templates/strategy/table-talk.html:101
 msgid "Information, Deception and Standing"
 msgstr "Information, Désinformation et Réputation"
 
-#: src/templates/strategy/table-talk.html:104
+#: codex_of_the_damned/templates/strategy/table-talk.html:104
 msgid ""
 "Table talk is not only about negociation, it is also about manipulation. Multiple techniques are used for deception "
 "and information gathering. A common tactic is to <strong>announce</strong> every action one as the intention to "
@@ -3152,17 +3239,17 @@ msgstr ""
 " pour la désinformation et la collecte d'informations. Une tactique répandue consiste à <strong>annoncer</strong> "
 "chaque action que l'on a l'intention d'entreprendre avant de la jouer. Cela a plusieurs effets positifs :"
 
-#: src/templates/strategy/table-talk.html:113
+#: codex_of_the_damned/templates/strategy/table-talk.html:113
 msgid "It is a way to <strong>gather information</strong> about the opponents play: can they block, bounce or counter?"
 msgstr ""
 "C'est une manière de <strong>collecter l'information</strong> sur le jeu des autres : peuvent-ils bloquer, rebondir "
 "ou contrer ?"
 
-#: src/templates/strategy/table-talk.html:119
+#: codex_of_the_damned/templates/strategy/table-talk.html:119
 msgid "It opens a window of negociation to get an action through and <strong>avoid possible blocks</strong>."
 msgstr "Cela ouvre une fenêtre de négociation pour pouvoir passer une action et <strong>éviter les blocages</strong>."
 
-#: src/templates/strategy/table-talk.html:124
+#: codex_of_the_damned/templates/strategy/table-talk.html:124
 msgid ""
 "It makes the player <strong>appear more affable</strong>, as he looks like he tries to get other players aproval "
 "before deciding on his actions. Keeping that in mind, it is a good play to accept to delay an action if it causes an "
@@ -3174,7 +3261,7 @@ msgstr ""
 "action si elle pose problème à un allié peut être un bon coup, ou s'excuser si l'on entreprend une action très "
 "aggressive envers un autre joueur. Être avenant est une bonne ressource lors de la partie."
 
-#: src/templates/strategy/table-talk.html:132
+#: codex_of_the_damned/templates/strategy/table-talk.html:132
 msgid ""
 "It gives an occasion to use a bit of deception by commenting the action and <strong>mislead the opponents</strong> "
 "about its long term effect or importance to the deck strategy."
@@ -3182,11 +3269,11 @@ msgstr ""
 "Cela donne l'occasion de procéder à un peu de désinformation en commentant une action pour <strong>tromper les "
 "adversaires</strong> en ce qui concerne ses effets à long terme ou son importance stratégique pour le deck."
 
-#: src/templates/strategy/table-talk.html:139
+#: codex_of_the_damned/templates/strategy/table-talk.html:139
 msgid "Decision timing"
 msgstr "Temps de décision"
 
-#: src/templates/strategy/table-talk.html:141
+#: codex_of_the_damned/templates/strategy/table-talk.html:141
 msgid ""
 "The time someone takes to ponder wether or not they react to a play or an action is an indication of their hand "
 "content. One should keep focused on the decision timing of the other players, while trying to be as unconspicuous as "
@@ -3196,7 +3283,7 @@ msgstr ""
 "main. On devrait être attentif au temps de décision des autres joueurs, tout en essayant d'être aussi discret que "
 "possible soi-même."
 
-#: src/templates/strategy/table-talk.html:149
+#: codex_of_the_damned/templates/strategy/table-talk.html:149
 msgid ""
 "The best but hardest way to be impenetrable is to always take a similar time to ponder any reaction, even when none "
 "is possible. This is easier said than done, though."
@@ -3204,7 +3291,7 @@ msgstr ""
 "Le meilleur moyen, mais le plus difficile, pour être impénétrable est de toujours prendre le même temps de réflexion "
 "pour chaque action et réaction, même lorsqu'aucune réaction n'est possible. C'est plus facile à dire qu'à faire."
 
-#: src/templates/strategy/table-talk.html:155
+#: codex_of_the_damned/templates/strategy/table-talk.html:155
 #, python-format
 msgid ""
 "An easier way is to <strong>act as if</strong> one had a useful reaction in hand when it's not the case. Asking for "
@@ -3215,7 +3302,7 @@ msgstr ""
 " le cas. Demander deus secondes pour réfléchir pendant le tour d'un autre joueur pour laisser croire à la présence "
 "d'un contre comme %(sudden_reversal)s sans l'avoir en main est un coup bas, mais efficace."
 
-#: src/templates/strategy/table-talk.html:164
+#: codex_of_the_damned/templates/strategy/table-talk.html:164
 msgid ""
 "The easiest way to stay composed is to <strong>decide in advance</strong> what one's reaction will be. For example, "
 "with a wake in hand, one can decide <em>beforehand</em> to wake only if a bleed above one pool is anounced. This way "
@@ -3225,7 +3312,7 @@ msgstr ""
 "un réveil en main, on peut décider <em>à l'avance</em> de ne se réveiller que si une morsure de plus d'un point est "
 "annoncée. De cette manière le temps de réflexion est plus difficile à déceler."
 
-#: src/templates/strategy/table-talk.html:173
+#: codex_of_the_damned/templates/strategy/table-talk.html:173
 msgid ""
 "Another tool of manipulation is about the players <strong>standing</strong> around the table. A handful of casual "
 "comments can go a long way. The basic idea is to decide on a <em>posture</em> quite early in the game: which deck is "
@@ -3237,15 +3324,15 @@ msgstr ""
 "tôt dans la partie : quel deck est une menace à la table et lequel est une victime. Si les autres joueurs sont "
 "d'accord avec cette posture, cela peut avoir les effets suivants :"
 
-#: src/templates/strategy/table-talk.html:183
+#: codex_of_the_damned/templates/strategy/table-talk.html:183
 msgid "The <strong>threat</strong> will come under pressure and its allies will hesitate to deal with them."
 msgstr "La <strong>menace</strong> sera sous pression et ses alliés hésiteront à faire des pactes avec lui."
 
-#: src/templates/strategy/table-talk.html:188
+#: codex_of_the_damned/templates/strategy/table-talk.html:188
 msgid "The <strong>underdog</strong> is more likely to be ignored by the other players and miss some deals opporunities."
 msgstr "La <strong>victime</strong> sera plus facilement ignorée par les autre et ratera des opportunités de négociation."
 
-#: src/templates/strategy/table-talk.html:195
+#: codex_of_the_damned/templates/strategy/table-talk.html:195
 msgid ""
 "Of course, one should try to <strong>lay low</strong>, avoid to focus the table attention to oneself and "
 "<em>never</em> present himself as the threat. The posture should be expressed with a bit of subtelty and always "
@@ -3257,11 +3344,11 @@ msgstr ""
 "manière <em>plaisante</em> : une posture aggressive a beaucoup de chance de pousser les autres joueurs à agir contre "
 "son instigateur et, souvenez-vous, cela reste un jeu et devrait rester agréable pour vos adversaires."
 
-#: src/templates/strategy/table-talk.html:203
+#: codex_of_the_damned/templates/strategy/table-talk.html:203
 msgid "Table strategies"
 msgstr "Stratégies de table"
 
-#: src/templates/strategy/table-talk.html:204
+#: codex_of_the_damned/templates/strategy/table-talk.html:204
 msgid ""
 "<p> Not everything around the table is about talking. Having a good sense of the table balance is essential to build "
 "an efficient table strategy as well. </p> <p> The most obvious fact about table strategy is the two players « cross "
@@ -3275,7 +3362,7 @@ msgstr ""
 "contre la proie, ainsi que le grand-prédateur contre le prédateur. Entretenir de bons rapports avec eux est important"
 " au début. Alors que le jeu progresse, cependant, ils peuvent devenir eux-mêmes une menace. </p>"
 
-#: src/templates/strategy/table-talk.html:217
+#: codex_of_the_damned/templates/strategy/table-talk.html:217
 msgid ""
 "<h3>Hopping</h3> <p> A strategy uniquely available to vote constructs, hopping is going against the grand-prey pool "
 "before ousting the prey first. It is a good idea when the grand-prey deck has good block capacity: they do not get "
@@ -3286,7 +3373,7 @@ msgstr ""
 "une grande capacité de blocage : elle n'aura pas l'opportunité de bloquer les actions de vote non dirigées tant "
 "qu'elle ne sera pas la proie ou le prédateur. </p>"
 
-#: src/templates/strategy/table-talk.html:228
+#: codex_of_the_damned/templates/strategy/table-talk.html:228
 msgid ""
 "One should of course focus on <strong>eliminating its prey</strong>. However, when the predator is too threatening, "
 "some builds have the ability to <strong>go reverse</strong>, taking aggressive actions against their predator to oust"
@@ -3301,11 +3388,11 @@ msgstr ""
 "d'influence lors de la sortie du précédent. Cependant, jouer partiellement à contresens pendant une partie, en "
 "sortant ou en handicappant son prédateur pour diminuer la pression, est une vraie possibilité pour certains decks."
 
-#: src/templates/strategy/table-talk.html:237
+#: codex_of_the_damned/templates/strategy/table-talk.html:237
 msgid "Predator-Prey Continuum"
 msgstr "Le Continuum Proie-Prédateur"
 
-#: src/templates/strategy/table-talk.html:239
+#: codex_of_the_damned/templates/strategy/table-talk.html:239
 #, python-format
 msgid ""
 "The Predator-Prey Continuum is a notion developped by Gregory Williams in his "
@@ -3320,11 +3407,11 @@ msgstr ""
 "Observez le diagramme suivant représentant des continuum à 5, 4 et 3 joueurs, où M<sub>1</sub>, M<sub>2</sub>, "
 "M<sub>3</sub>, M<sub>4</sub> et M<sub>5</sub> sont les 5 Mathusalems."
 
-#: src/templates/strategy/table-talk.html:254
+#: codex_of_the_damned/templates/strategy/table-talk.html:254
 msgid "lunge move"
 msgstr "fente"
 
-#: src/templates/strategy/table-talk.html:253
+#: codex_of_the_damned/templates/strategy/table-talk.html:253
 #, python-format
 msgid ""
 "<p> If a strong (▲) player (M<sub>1</sub>) pressures his prey, then his prey (M<sub>2</sub>) has to focus on defense "

@@ -4,7 +4,7 @@ Changelog
 0.7 (unreleased)
 ----------------
 
-- Nothing changed yet.
+- Cleaner translations packaging
 
 
 0.6 (2020-07-16)
