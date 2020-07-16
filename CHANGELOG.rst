@@ -1,7 +1,7 @@
 Changelog
 =========
 
-0.14 (unreleased)
+0.14 (2020-07-17)
 -----------------
 
 - Online play: Reduce images size
