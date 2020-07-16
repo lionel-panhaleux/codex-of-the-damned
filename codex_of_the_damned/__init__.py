@@ -251,7 +251,7 @@ def display_card():
     def card_image(name):
         return flask.Markup(
             '<img src="{path}" alt="{name}" />'.format(
-                name=name, path=f"https://images.krcg.org/{file_name(name)}"
+                name=name, path=f"https://images.krcg.org/{file_name(name)}.jpg"
             )
         )
 
