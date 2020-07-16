@@ -1,7 +1,7 @@
 Changelog
 =========
 
-0.8 (unreleased)
+0.8 (2020-07-16)
 ----------------
 
 - Fix og tags for social networks sharing
