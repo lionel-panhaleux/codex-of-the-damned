@@ -1,7 +1,7 @@
 Changelog
 =========
 
-0.5 (unreleased)
+0.5 (2020-07-16)
 ----------------
 
 - Fix translations packaging
