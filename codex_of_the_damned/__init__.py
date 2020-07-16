@@ -149,8 +149,8 @@ def index(lang_code=app.config["BABEL_DEFAULT_LOCALE"], page="index.html"):
                 image_name[4:] + "the" if image_name[:4] == "the " else image_name
             )
             image_name, _ = re.subn(r"""\s|,|\.|-|—|'|:|\(|\)|"|!""", "", image_name)
-            context["og_image"] = f"http://images.krcg.org/{image_name}"
-            context["og_image_secure"] = f"https://images.krcg.org/{image_name}"
+            context["og_image"] = f"http://images.krcg.org/{image_name}.jpg"
+            context["og_image_secure"] = f"https://images.krcg.org/{image_name}.jpg"
             context["og_description"] = "Official card text and rulings"
             context["og_title"] = card
             context["og_image_dimensions"] = ["358", "500"]
