@@ -1,11 +1,12 @@
 include LICENSE README.md CHANGELOG.rst
 
-graft src
+graft codex_of_the_damned
 
 exclude Makefile
 exclude babel.cfg
 exclude .markdownlint.json
 exclude messages.pot
+include codex_of_the_damned/translations/*.mo
 
 global-exclude */__pycache__/*
 global-exclude *.egg-info/*

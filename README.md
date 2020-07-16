@@ -7,7 +7,7 @@ Portions of the materials are the copyrights and trademarks of Paradox Interacti
 and are used with permission. All rights reserved.
 For more information please visit [white-wolf.com](http://www.white-wolf.com).
 
-![Dark Pack](src/static/img/icons/dark-pack.png)
+![Dark Pack](codex_of_the_damned/static/img/icons/dark-pack.png)
 
 ## Contributing
 
@@ -16,8 +16,6 @@ Issues will be dealt with as quickly as possible.
 
 This site uses [Flask](https://flask.palletsprojects.com) and [Babel](http://babel.pocoo.org)
 to generate pages dynamically and handle internationalisation.
-This is a voluntary [KISS](https://en.wikipedia.org/wiki/KISS_principle) design,
-please refrain from using additional tools or frameworks.
 
 ## Installation
 
@@ -38,7 +36,7 @@ You can run the development version of the site using the `codex` entrypoint:
 
 ```bash
 $ codex
- * Serving Flask app "src" (lazy loading)
+ * Serving Flask app "codex_of_the_damned" (lazy loading)
  * Environment: production
    WARNING: This is a development server. Do not use it in a production deployment.
    Use a production WSGI server instead.
@@ -56,13 +54,13 @@ To run the production server, you'll need a web server like
 [uWSGI](https://uwsgi-docs.readthedocs.io):
 
 ```bash
-uwsgi --module src:app
+uwsgi --module codex_of_the_damned:app
 ```
 
 or [Gunicorn](https://gunicorn.org):
 
 ```bash
-gunicorn src:app
+gunicorn codex_of_the_damned:app
 ```
 
 ## Useful tools
