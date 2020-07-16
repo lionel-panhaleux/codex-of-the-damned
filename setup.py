@@ -25,6 +25,21 @@ class DevelopWithCompile(setuptools.command.develop.develop):
         super().run()
 
 
+class SDistWithCompile(setuptools.command.sdist.sdist):
+    def run(self):
+        from babel.messages.frontend import compile_catalog
+
+        compiler = compile_catalog(self.distribution)
+        compiler.domain = ["messages"]
+        compiler.directory = "codex_of_the_damned/translations"
+        compiler.run()
+        super().run()
+
+
 setuptools.setup(
-    cmdclass={"install": InstallWithCompile, "develop": DevelopWithCompile}
+    cmdclass={
+        "install": InstallWithCompile,
+        "develop": DevelopWithCompile,
+        "sdist": SDistWithCompile,
+    }
 )
