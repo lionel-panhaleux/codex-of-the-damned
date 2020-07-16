@@ -9,5 +9,5 @@ po-compile:
 
 po: po-update po-compile
 
-release: po-update
+release:
 	fullrelease
