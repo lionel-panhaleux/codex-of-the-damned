@@ -4,7 +4,7 @@ Changelog
 0.3 (unreleased)
 ----------------
 
-- Nothing changed yet.
+- Package name is now "codex_of_the_damned"
 
 
 0.2 (2020-07-15)
