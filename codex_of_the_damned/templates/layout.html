@@ -9,7 +9,14 @@
     <meta property="og:description"
         content="{{ og_description|default('Vampire: the Eternal Struggle (VTES) strategy resources') }}" />
     <meta property="og:image" content="{{ og_image|default(url_for('static', filename='img/codex.jpg')) }}" />
-
+    <meta property="og:image:url" content="{{ og_image|default(url_for('static', filename='img/codex.jpg')) }}" />
+    {% if og_image_dimensions %}
+    <meta property="og:image:width" content="{{ og_image_dimensions[0] }}" />
+    <meta property="og:image:height" content="{{ og_image_dimensions[1] }}" />
+    {% endif %}
+    {% if og_image_secure %}
+    <meta property="og:image:secure_url" content="{{ og_image_secure }}" />
+    {% endif %}
     <meta name="description" content="Vampire: the Eternal Struggle (VTES) strategy resources">
     <meta name="keywords" content="Vampire, the Eternal Struggle, VtES, CCG">
     {% block meta %}{% endblock %}
