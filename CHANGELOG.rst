@@ -4,7 +4,7 @@ Changelog
 0.13 (unreleased)
 -----------------
 
-- Nothing changed yet.
+- Fix best cards links
 
 
 0.12 (2020-07-16)
