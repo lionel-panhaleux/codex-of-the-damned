@@ -5,7 +5,7 @@ Changelog
 -----------------
 
 - Fix best cards links
-
+- Fix Ahrimanes page cards display
 
 0.12 (2020-07-16)
 -----------------
