@@ -1,7 +1,7 @@
 Changelog
 =========
 
-0.10 (unreleased)
+0.10 (2020-07-16)
 -----------------
 
 - Fix og image for social networks sharing 
