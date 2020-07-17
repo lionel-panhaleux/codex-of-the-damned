@@ -1,7 +1,7 @@
 Changelog
 =========
 
-0.15 (unreleased)
+0.15 (2020-07-17)
 -----------------
 
 - Fix missing clan icons
