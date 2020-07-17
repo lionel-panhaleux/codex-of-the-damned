@@ -1,279 +1,419 @@
 {% extends "strategy/_layout.html" %}
 
 {% block content %}
-<h1 id="archetypes">{{ _(Archetypes) }}</h1>
-<h2 id="bleed">Bleed</h2>
+<h1 id="archetypes">{{ _("Archetypes") }}</h1>
+<h2 id="bleed">{{ _("Bleed") }}</h2>
 <p>
+    {% trans trimmed %}
     Bleed decks are focused on prey aggression and use bleed actions to inflict heavy pool damages.
-    <i>d</i> is without question the most damage-heavy bleed discipline, plus it does come with bounce cards.
-    <i>r</i> and <i>e</i> are good second choices.
+    {{ dom }} is without question the most damage-heavy bleed discipline, plus it does come with bounce cards.
+    {{ pre }} and {{ dem }} are good second choices.
+    {% endtrans %}
 </p>
-<h3>Stealth & Bleed and Powerbleed</h3>
+<h3>{{ _("Stealth & Bleed and Powerbleed") }}</h3>
 <p>
+    {% trans trimmed %}
     There are two ways to get bleeds through: using <strong>stealth</strong> is the most obvious one.
-    <i>o</i> is the best stealth discipline, but it does not often come along with <i>d</i>.
-    <i>$</i> and <i>j</i> come second.
+    {{ obf }} is the best stealth discipline, but it does not often come along with {{ dom }}.
+    {{ obt }} and {{ pro }} come second.
+    {% endtrans %}
 </p>
 <p>
+    {% trans trimmed 
+        seduction=card("Seduction"),
+        elder_impersonation=card("Elder Impersonation"),
+        call_of_the_hungry_dead=card("Call of the Hungry Dead"),
+        daring_the_dawn=card("Daring the Dawn"),
+        mind_numb=card("Mind Numb"),
+        pentex_subversion=card("Pentex™ Subversion"),
+        misdirection=card("Misdirection"),
+        anarch_troublemaker=card("Anarch Troublemaker")
+        %}
     The other way to get bleeds through is to make sure the prey has no minion available to block the action.
-    Along its strong bleed capabilities, <i>d</i> offers the excellent
-    {{ card("Seduction") }}.
-    <i>O</i> {{ card("Elder Impersonation") }},
-    <i>N</i> {{ card("Call of the Hungry Dead") }},
-    <i>f</i> {{ card("Daring the Dawn") }} and
-    <i>r</i> {{ card("Mind Numb") }} are also effective tools.
+    Along its strong bleed capabilities, {{ dom }} offers the excellent {{ seduction }}.
+    {{ OBF }} {{ elder_impersonation }}, {{ NEC }} {{ call_of_the_hungry_dead }},
+    {{ for }} {{ daring_the_dawn }} and {{ pre }} {{ mind_numb }} are also effective tools.
     Combining these options with the few Master cards that can prevent block or lock minions —
-    {{ card("Pentex™ Subversion") }},
-    {{ card("Misdirection") }} and
-    {{ card("Anarch Troublemaker") }} —
+    {{ pentex_subversion }}, {{ misdirection }} and {{ anarch_troublemaker }} —
     makes stealth and intercept irrelevant.
+    {% endtrans %}
 </p>
-<h3>Flavours</h3>
+<h3>{{ _("Flavours") }}</h3>
 <ul>
     <li>
-        Lasombra <img src="{{ url_for('static', filename='img/icons/clan-lasombra.svg') }}"> and Kiasyd <img
-            src="{{ url_for('static', filename='img/icons/clan-kiasyd.svg') }}">
-        have a strong combination with <i>d</i> for bleed and <i>$</i> for stealth.
-        Check the {{ link("/archetypes/kiasyd-stealth-bleed", _("Kiasyd Stealth & Bleed")) }} and
-        {{ link("/archetypes/lasombra-nocturn", _("Lasombra Nocturn")) }} archetypes.
+        {% trans trimmed
+            img_clan_lasombra='<img src="%(url)s" />'|format(url=url_for('static', filename='img/icons/clan-lasombra.svg'))|safe,
+            img_clan_kiasyd='<img src="%(url)s" />'|format(url=url_for('static', filename='img/icons/clan-kiasyd.svg'))|safe,
+            kiasyd_stealth_bleed=link("/archetypes/kiasyd-stealth-bleed"),
+            lasombra_nocturn=link("/archetypes/lasombra-nocturn")
+        %}
+        Lasombra {{ img_clan_lasombra }} and Kiasyd {{ img_clan_kiasyd }}
+        have a strong combination with {{ dom }} for bleed and {{ obt }} for stealth.
+        Check the {{ kiasyd_stealth_bleed }} and {{ lasombra_nocturn }} archetypes.
+        {% endtrans %}
     </li>
     <li>
-        The Malkavian <img src="{{ url_for('static', filename='img/icons/clan-malkavian.svg') }}"> can use <i>e</i>,
-        alone or alongside <i>o</i>,
-        for devastating bleeds, like in the {{ link("/archetypes/weenie-dem", _("Weenie DEM")) }} archetype.
+        {% trans trimmed
+            img_clan_malkavian='<img src="%(url)s" />'|format(url=url_for('static', filename='img/icons/clan-malkavian.svg'))|safe,
+            weenie_dem=link("/archetypes/weenie-dem")
+        %}
+        The Malkavian {{ img_clan_malkavian }} can use {{ dem }},
+        alone or alongside {{ obf }}, for devastating bleeds,
+        like in the {{ weenie_dem }} archetype.
+        {% endtrans %}
     </li>
     <li>
-        Assamite <img src="{{ url_for('static', filename='img/icons/clan-assamite.svg') }}"> also have a nice
-        combination with <i>q</i> and <i>o</i>,
-        as in the {{ link("/archetypes/black-hand", _("Black Hand")) }} archetype.
+        {% trans trimmed
+            img_clan_assamite='<img src="%(url)s" />'|format(url=url_for('static', filename='img/icons/clan-assamite.svg'))|safe,
+            black_hand=link("/archetypes/black-hand")
+        %}
+        Assamite {{ img_clan_assamite }} also have a nice combination with {{ qui }} and {{ obf }},
+        as in the {{ black_hand }} archetype.
+        {% endtrans %}
     </li>
     <li>
-        <i>d</i> also works well in weenie archetypes, like
-        {{ link("/archetypes/weenie-dom", _("Weenie DOM")) }} and
-        {{ link("/archetypes/bima-dominate", _("Bima Dominate")) }}.
+        {% trans trimmed
+            weenie_dom=link("/archetypes/weenie-dom"),
+            bima_dominate=link("/archetypes/bima-dominate")
+        %}
+        {{ dom }} also works well in weenie archetypes, like
+        {{ weenie_dom }} and {{ bima_dominate }}.
+        {% endtrans %}
     </li>
     <li>
-        Unsing <i>J</i> for stealth gave birth to powerful bleed deck,
-        as in the {{ link("/archetypes/stanislava", _("Stanislava")) }} archetype and its variants.
+        {% trans trimmed
+            stanislava=link("/archetypes/stanislava")
+        %}
+        Using {{ PRO }} for stealth gave birth to powerful bleed deck,
+        as in the {{ stanislava }} archetype and its variants.
+        {% endtrans %}
     </li>
     <li>
-        Toreador <img src="{{ url_for('static', filename='img/icons/clan-toreador.svg') }}"> with <i>R</i> and Ventrue
-        <img src="{{ url_for('static', filename='img/icons/clan-ventrue.svg') }}">
-        with <i>DR</i> can produce strong powerbleed decks like
-        {{ link("/archetypes/the-bleeding-vignes", _("The Bleeding Vignes")) }} or
-        {{ link("/archetypes/jost-powerbleed", _("Jost Powerbleed")) }}.
+        {% trans trimmed
+            img_clan_toreador='<img src="%(url)s" />'|format(url=url_for('static', filename='img/icons/clan-toreador.svg'))|safe,
+            img_clan_ventrue='<img src="%(url)s" />'|format(url=url_for('static', filename='img/icons/clan-ventrue.svg'))|safe,
+            the_bleeding_vignes=link("/archetypes/the-bleeding-vignes"),
+            jost_powerbleed=link("/archetypes/jost-powerbleed")
+        %}
+        Toreador {{ img_clan_toreador }} with {{ PRE }} and Ventrue {{ img_clan_ventrue }}
+        with {{ DOM }}{{ PRE }} can produce strong powerbleed decks like
+        {{ the_bleeding_vignes }} or {{ jost_powerbleed }}.
+        {% endtrans %}
     </li>
     <li>
+        {% trans trimmed
+            mistress=link("/archetypes/mistress"),
+            girls_will_find_inner_circle=link("/archetypes/girls-will-find-inner-circle"),
+            council_of_doom=link("/archetypes/council-of-doom")
+        %}
         Inner Circles also deliver a very strong bleed as they have a +2 bleed ability.
-        The {{ link("/archetypes/mistress", _("Mistress")) }} archetype is a good example.
-        They are often combined with
+        The {{ mistress }} archetype is a good example. They are often combined with
         <strong>M</strong>ulti <strong>M</strong>aster <strong>P</strong>hase <strong>A</strong>ctions (MMPA),
-        like in the
-        {{ link("/archetypes/girls-will-find-inner-circle", _("Girls Will Find Inner Circle")) }} or
-        {{ link("/archetypes/council-of-doom", _("Council of Doom")) }} archetypes.
+        like in the {{ girls_will_find_inner_circle }} or {{ council_of_doom }} archetypes.
+        {% endtrans %}
     </li>
     <li>
-        Using <i>J</i> to bleed multiple times during the opponents turns with
-        {{ card("Homunculus") }} is also powerful:
-        {{ link("/archetypes/the-unnamed", _("The unnamed")) }} and
-        {{ link("/archetypes/rachel-madness", _("Rachel Madness")) }} are built around this idea.
+        {% trans trimmed
+            homunculus=card("Homunculus"),
+            the_unnamed=link("/archetypes/the-unnamed"),
+            rachel_madness=link("/archetypes/rachel-madness")
+        %}
+        Using {{ PRO }} to bleed multiple times during the opponents turns with
+        {{ homunculus }} is also powerful:
+        {{ the_unnamed }} and {{ rachel_madness }} are built around this idea.
+        {% endtrans %}
     </li>
 </ul>
-<h3>Highlights</h3>
+<h3>{{ _("Highlights") }}</h3>
 <p>
+    {% trans trimmed %}
     Bleed decks have the <strong>highest prey damage</strong>. They tend to oust their first prey quite often,
     but it also attracts the table attention on them and one oust is not enough for a game win.
-    They are are usually <strong>weak in combat</strong>. They tend to rely on « combat ends » effects,
+    They are usually <strong>weak in combat</strong>. They tend to rely on « combat ends » effects,
     but some flavours can have aggravated damage or torpor strikes as a threat.
+    {% endtrans %}
 </p>
 <div class="tip">
-    <h3>Stealth rotation</h3>
+    <h3>{{ _("Stealth rotation") }}</h3>
     <p>
+        {% trans trimmed %}
         Stealth & Bleed archetypes have a strong stealth module, but it can jam the hand.
         If the prey assumes she will not have the means to block, she should decide not to attempt to block at all,
         and <strong>try to jam her predator hand on the stealth module.</strong>
         Well constructed Stealth & Bleed decks include some rotation tools to help with that.
+        {% endtrans %}
     </p>
 </div>
 <p>
+    {% trans trimmed %}
     As they are focused on their prey, bleed decks have a weak defence against their predator
-    and do not try to intercept actions. They usually use <i>d</i> or <i>A</i> for bounces
+    and do not try to intercept actions. They usually use {{ dom }} or {{ AUS }} for bounces
     or strong bloat modules to survive.
+    {% endtrans %}
 </p>
-<h2 id="vote">Vote</h2>
+<h2 id="vote">{{ _("Vote") }}</h2>
 <p>
+    {% trans trimmed %}
     Vote decks usually have a strong pool damage module to deliver to their prey.
     The difficulty to gather enough votes to get the referendums through is balanced
     by the constant +1 stealth bonus of vote actions. There are basically two ways of building a vote deck:
     either breed and find a way to give votes to all your vampires, or use older vampires with titles themselves.
+    {% endtrans %}
 </p>
-<h3>Flavours</h3>
+<h3>{{ _("Flavours") }}</h3>
 <ul>
     <li>
+        {% trans trimmed
+            the_dark_side_of_politics=link("/archetypes/the-dark-side-of-politics"),
+            lutz_politics=link("/archetypes/lutz-politics")
+        %}
         Inner Circle can be used in strong vote decks, as in
-        {{ link("/archetypes/the-dark-side-of-politics", _("The Dark Side of Politics")) }} and
-        {{ link("/archetypes/lutz-politics", _("Lutz Politics")) }}.
+        {{ the_dark_side_of_politics }} and {{ lutz_politics }}.
+        {% endtrans %}
     </li>
     <li>
-        Camarilla Princes also often use votes, like in the
-        {{ link("/archetypes/nosferatu-royalty", _("Nosferatu Royalty")) }} archetype.
+        {% trans trimmed
+            nosferatu_royalty=link("/archetypes/nosferatu-royalty")
+        %}
+        Camarilla Princes also often use votes, like in the {{ nosferatu_royalty }} archetype.
+        {% endtrans %}
     </li>
     <li>
+        {% trans trimmed
+            img_clan_ishtarri='<img src="%(url)s" />'|format(url=url_for('static', filename='img/icons/clan-ishtarri.svg'))|safe,
+            img_clan_daughters='<img src="%(url)s" />'|format(url=url_for('static', filename='img/icons/clan-daughters.svg'))|safe,
+            ishtarri_politics=link("/archetypes/ishtarri-politics"),
+            scout=link("/archetypes/scout"),
+            daughters_politics=link("/archetypes/daughters-politics")
+        %}
         Non Camarilla vampires can also build good titled crypts,
-        especially Ishtarri <img src="{{ url_for('static', filename='img/icons/clan-ishtarri.svg') }}"> with the
-        {{ link("/archetypes/ishtarri-politics", _("Ishtarri Politics")) }}
-        and Daughters of Cacophony <img src="{{ url_for('static', filename='img/icons/clan-daughters.svg') }}"> with
-        {{ link("/archetypes/scout", _("Scout")) }} and
-        {{ link("/archetypes/daughters-politics", _("Daughters Politics")) }}.
+        especially Ishtarri {{ img_clan_ishtarri }} with {{ ishtarri_politics }}
+        and Daughters of Cacophony {{ img_clan_daughters }} with {{ scout }} and {{ daughters_politics }}.
+        {% endtrans %}
     </li>
     <li>
-        Baali <img src="{{ url_for('static', filename='img/icons/clan-baali.svg') }}"> offer a nice political angle with
-        {{ link("/archetypes/the-dark-side-of-politics", _("The Dark Side of Politics")) }}.
+        {% trans trimmed
+            img_clan_baali='<img src="%(url)s" />'|format(url=url_for('static', filename='img/icons/clan-baali.svg'))|safe,
+            the_dark_side_of_politics=link("/archetypes/the-dark-side-of-politics")
+        %}
+        Baali {{ img_clan_baali }} offer a nice political angle with {{ the_dark_side_of_politics }}.
+        {% endtrans %}
     </li>
     <li>
-        Assamite <img src="{{ url_for('static', filename='img/icons/clan-assamite.svg') }}"> also have good options,
-        like in the
-        {{ link("/archetypes/amaravati-politics", _("Amaravati Politics")) }} or the
-        {{ link("/archetypes/death-star", _("Death Star")) }} archetypes.
+        {% trans trimmed
+            img_clan_assamite='<img src="%(url)s" />'|format(url=url_for('static', filename='img/icons/clan-assamite.svg'))|safe,
+            amaravati_politics=link("/archetypes/amaravati-politics"),
+            death_star=link("/archetypes/death-star")
+        %}
+        Assamite {{ img_clan_assamite }} also have good options,
+        like in the {{ amaravati_politics }} or the {{ death_star }} archetypes.
+        {% endtrans %}
     </li>
     <li>
-        Ravnos <img src="{{ url_for('static', filename='img/icons/clan-ravnos.svg') }}"> have a unique breed archetype:
-        the {{ link("/archetypes/ravnos-clown-car", _("Ravnos Clown Car")) }}.
+        {% trans trimmed
+            img_clan_ravnos='<img src="%(url)s" />'|format(url=url_for('static', filename='img/icons/clan-ravnos.svg'))|safe,
+            ravnos_clown_car=link("/archetypes/ravnos-clown-car")
+        %}
+        Ravnos {{ img_clan_ravnos }} have a unique breed archetype: the {{ ravnos_clown_car }}.
+        {% endtrans %}
     </li>
 </ul>
-<h3>Highlights</h3>
+<h3>{{ _("Highlights") }}</h3>
 <p>
-    Votes decks deliver <strong>high damage</strong> once they get the vote lock.
+    {% trans trimmed
+        consanguineous_boon=card("Consanguineous Boon"),
+        parity_shift=card("Parity Shift"),
+        ancient_inluence=card("Ancient Inluence"),
+        political_stranglehold=card("Political Stranglehold")
+    %}
+    Votes decks deliver <strong>high pool damage</strong> once they get the vote lock.
     They also have a <strong>good bloat</strong>, using
-    {{ card("Consanguineous Boon") }},
-    {{ card("Parity Shift") }},
-    {{ card("Ancient Inluence") }} or
-    {{ card("Political Stranglehold") }}
-    depending on the build.
+    {{ consanguineous_boon }}, {{ parity_shift }}, {{ ancient_inluence }} or
+    {{ political_stranglehold }} depending on the build.
     Depending on the exact build, <strong>stealth vary</strong>, but they are not easily blocked.
     Builds that do not have high stealth levels rely on a swarm of minions that make it hard to block them all.
     Finally, vote decks have a <strong>very weak combat module</strong> and — especially the swarm builds —
     a <strong>weak bleed defence</strong>, relying exclusively on bounces, if at all.
+    {% endtrans %}
 </p>
 <div class="tip">
-    <h3>Table Talk</h3>
+    <h3>{{ _("Table Talk") }}</h3>
     <p>
+        {% trans trimmed
+            table_talk=link("/strategy/table-talk")
+        %}
         Votes can go either ways and can be targeted effortlessly across the table.
         This gives unique negotiation options to vote decks, that can be used to keep a low profile
-        and a lot of friends throughout the game. {{ link("/strategy/table-talk", _("Table talk")) }}
+        and a lot of friends throughout the game. {{ table_talk }}
         is always important in the game, but even more so for vote archetypes.
+        {% endtrans %}
     </p>
 </div>
-<h2 id="wall">Wall</h2>
+<h2 id="wall">{{ _(Wall) }}</h2>
 <p>
+    {% trans trimmed
+        eyes_of_argus=card("Eyes of Argus"),
+        eternal_vigilance=card("Eternal Vigilance"),
+        under_siege=card("Under Siege"),
+        second_tradition_domain=card("Second Tradition: Domain"),
+        no_secrets_from_the_magaji=card("No Secrets From the Magaji")
+    %}
     Wall decks maximise their defence, trying to block their prey and predator actions alike while slowly
     building up bloat and pool damages. The ability to intercept and wake are tantamount in these decks,
-    so <i>a</i> and <i>i</i> are the most common options here. <i>a</i> gives more options and a higher intercept
-    all in all, with the excellent
-    {{ card("Eyes of Argus") }} atop.
-    It’s also the only discipline apart <i>d</i> that provides bleed bounce reaction cards.
-    <i>i</i> also has good intercept cards though, and better combat options than <i>a</i>:
+    so {{ aus }} and {{ ani }} are the most common options here. {{ aus }} gives more options and a higher intercept
+    all in all, with the excellent {{ eyes_of_argus }} atop.
+    It is also the only discipline besides {{ dom }} that provides bleed bounce reaction cards.
+    {{ ani }} also has good intercept cards though, and better combat options than {{ aus }}:
     it can be used with no additional equipment or discipline.
     Sabbat, Camarilla and Laibon titled vampires each have access to excellent intercept cards:
-    {{ card("Eternal Vigilance") }},
-    {{ card("Under Siege") }},
-    {{ card("Second Tradition: Domain") }} and
-    {{ card("No Secrets From the Magaji") }}.
+    {{ eternal_vigilance }}, {{ under_siege }}, {{ second_tradition_domain }} and
+    {{ no_secrets_from_the_magaji }}.
+    {% endtrans %}
 </p>
-<h3>Flavours</h3>
+<h3>{{ _("Flavours") }}</h3>
 <ul>
     <li>
-        <i>A</i> is the best intercept discipline, and the
-        {{ link("/archetypes/weenie-aus", _("Weenie AUS")) }} wall is an obvious idea.
+        {% trans trimmed
+            weenie_aus=link("/archetypes/weenie-aus")
+        %}
+        {{ AUS }} is the best intercept discipline, and the {{ weenie_aus }} wall is an obvious idea.
+        {% endtrans %}
     </li>
     <li>
-        The {{ link("/archetypes/tzimisce-wall", _("Tzimisce Wall")) }} is also a very classic archetype,
-        as the combination of <i>a & i</i> offers even better intercept capabilities.
+        {% trans trimmed
+            tzimisce_wall=link("/archetypes/tzimisce-wall")
+        %}
+        The {{ tzimisce_wall }} is also a very classic archetype,
+        as the combination of {{ ani }} & {{ vic }} offers even better intercept capabilities.
+        {% endtrans %}
     </li>
     <li>
-        Tremere <img src="{{ url_for('static', filename='img/icons/clan-tremere.svg') }}"> in general, but
-        {{ card("Goratrix") }} in particular
-        offer excellent wall capabilities in the
-        {{ link("/archetypes/goratrix-high-tower", _("Goratrix High Tower")) }} archetype.
+        {% trans trimmed
+            img_clan_tremere='<img src="%(url)s" />'|format(url=url_for('static', filename='img/icons/clan-tremere.svg'))|safe,
+            goratrix=card("Goratrix"),
+            goratrix_high_tower=link("/archetypes/goratrix-high-tower")
+        %}
+        Tremere {{ img_clan_tremere }} in general, but {{ goratrix }} in particular
+        offer excellent wall capabilities in the {{ goratrix_high_tower }} archetype.
+        {% endtrans %}
     </li>
     <li>
-        The {{ link("/archetypes/cats", _("Cats")) }} archetype uses
-        Ahrimanes <img src="{{ url_for('static', filename='img/icons/clan-ahrimanes.svg') }}"> and their <i>ZI</i>
-        disciplines combination.
+        {% trans trimmed
+            img_clan_ahrimanes='<img src="%(url)s" />'|format(url=url_for('static', filename='img/icons/clan-ahrimanes.svg'))|safe,
+            cats=link("/archetypes/cats")
+        %}
+        The {{ cats }} archetype uses Ahrimanes {{ img_clan_ahrimanes }} and their
+        {{SPI}}{{ANI}} disciplines combination.
+        {% endtrans %}
     </li>
     <li>
-        {{ card("Saulot") }} and
-        {{ card("The Capuchin") }}
-        provide a nice discipline combination, as they both have <i>ATF</i> and +1 bleed.
-        The {{ link("/archetypes/saulot-friends", _("Saulot & Friends")) }} archetype is built around them.
+        {% trans trimmed
+            saulot=card("Saulot, The Wanderer", "Saulot"),
+            the_capuchin=card("The Capuchin"),
+            saulot_friends=link("/archetypes/saulot-friends")
+        %}
+        {{ saulot }} and {{ the_capuchin }} provide a nice discipline combination,
+        as they both have {{AUS}}{{THA}}{{FOR}} and +1 bleed.
+        The {{ saulot_friends }} archetype is built around them.
+        {% endtrans %}
     </li>
 </ul>
-<h3>Highlights</h3>
+<h3>{{ _("Highlights") }}</h3>
 <p>
-    Wall decks obviously have a <strong>strong defence</strong>.
+    {% trans trimmed
+        smiling_jack_the_anarch=card("Smiling Jack, the Anarch"),
+        the_rack=card("The Rack"),
+        powerbase_montreal=card("Powerbase: Montreal"),
+        powerbase_barranquilla=card("Powerbase: Barranquilla"),
+        anarch_revolt=card("Anarch Revolt")
+    %}
+    Wall decks obviously have an <strong>exceptional defence</strong>.
     Moreover, having high block capabilities let them play fragile master cards that need protection to be
-    efficient like
-    {{ card("Smiling Jack, the Anarch") }},
-    {{ card("The Rack") }},
-    {{ card("Powerbase: Montreal") }},
-    {{ card("Powerbase: Barranquilla") }} (Sabbat) and
-    {{ card("Anarch Revolt") }} (Anarchs),
+    efficient like {{ smiling_jack_the_anarch }}, {{ the_rack }}, {{ powerbase_montreal }},
+    {{ powerbase_barranquilla }} (Sabbat) and {{ anarch_revolt }} (Anarchs),
     helping both with bloat and offence.
     Still, wall decks tend to have a <strong>weak offence</strong>, dealing only a moderate
     amount of damage to their prey. They're very good at exhausting other decks around the table though, and will
     get eventually win a game if no other player can get enough Victory Points first.
+    {% endtrans %}
 </p>
 <div class="tip">
-    <h3>Cross block</h3>
+    <h3>{{ _("Cross block") }}</h3>
     <p>
-        {{ card("Eagle's Sight") }} and
-        {{ card("Falcon's Eye") }} are the only two cards in
+        {% trans trimmed
+            eagles_sight=card("Eagle's Sight"),
+            falcons_eye=card("Falcon's Eye")
+        %}
+        {{ eagles_sight }} and {{ falcons_eye }} are the only minion cards in
         the game that let a vampire block <strong>any</strong> action, even if it is directed upon another
         Methusalah or undertaken cross table.
+        {% endtrans %}
     </p>
     <p>
-        This ability to cross block is an excellent asset in wall decks with <i>A</i> or <i>Z</i>
+        {% trans trimmed %}
+        This ability to cross block is an excellent asset in wall decks with {{ AUS }} or {{ SPI }}
         as it enhances table control and allows for example to intercept a dangerous vote from the grand-predator
         or a bleed from the prey that could be lethal to the grand-prey.
         Wall decks that do not use these will often include some <em>rush</em> capabilities instead.
+        {% endtrans %}
     </p>
 </div>
-<h2 id="toolbox">Toolbox</h2>
+<h2 id="toolbox">{{ _("Toolbox") }}</h2>
 <p>
+    {% trans trimmed %}
     Toolbox decks balance their offence and defence capabilities. They have good intercept,
     a decent combat module and efficient pool damage options to use on their prey,
     sometimes even some votes they can try to pass or a bit of stealth.
     The key to this archetype is to use versatile cards offering multiple play options.
+    {% endtrans %}
 </p>
-<h2>Flavours</h2>
+<h2>{{ _("Flavours") }}</h2>
 <ul>
     <li>
+        {% trans trimmed
+            second_tradition_domain=card("Second Tradition: Domain"),
+            parity_shift=card("Parity Shift"),
+            aaa=link("/archetypes/aaa"),
+            euro_brujah=link("/archetypes/euro-brujah"),
+            ventrue_royalty=link("/archetypes/ventrue-royalty")
+        %}
         Using Camarilla <em>Princes</em> and <em>Justicars</em> with their access to
-        {{ card("Second Tradition: Domain") }} and
-        {{ card("Parity Shift") }} led to good toolboxes like the
-        {{ link("/archetypes/aaa", _("AAA")) }},
-        {{ link("/archetypes/euro-brujah", _("Euro Brujah")) }} and
-        {{ link("/archetypes/ventrue-royalty", _("Ventrue Royalty")) }} archetypes.
+        {{ second_tradition_domain }} and {{ parity_shift }} led to good toolboxes like the
+        {{ aaa }}, {{ euro_brujah }} and {{ ventrue_royalty }} archetypes.
+        {% endtrans %}
     </li>
     <li>
+        {% trans trimmed
+            khazars_diary=link("/archetypes/khazars-diary"),
+            emerald_legion=link("/archetypes/emerald-legion"),
+            nephandii=link("/archetypes/nephandii")
+        %}
         A lot of archetypes using allies also fall into this category, like
-        {{ link("/archetypes/khazars-diary", _("Khazar's Diary")) }},
-        {{ link("/archetypes/emerald-legion", _("Emerald Legion")) }} and
-        {{ link("/archetypes/nephandii", _("Nephandii")) }}.
+        {{ khazars_diary }}, {{ emerald_legion }} and {{ nephandii }}.
+        {% endtrans %}
     </li>
     <li>
-        Ventrue Antitribu <img src="{{ url_for('static', filename='img/icons/clan-ventrue-anti.svg') }}"> provide
-        excellent toolboxes with the
-        {{ link("/archetypes/anti-ventrue-grinder", _("Anti Ventrue Grinder")) }} archetype and its variants.
+        {% trans trimmed
+            img_clan_ventrue_anti='<img src="%(url)s" />'|format(url=url_for('static', filename='img/icons/clan-ventrue-anti.svg'))|safe,
+            anti_ventrue_grinder=link("/archetypes/anti-ventrue-grinder")
+        %}
+        Ventrue Antitribu {{ img_clan_ventrue_anti }} provide excellent toolboxes with the
+        {{ anti_ventrue_grinder }} archetype and its variants.
+        {% endtrans %}
     </li>
     <li>
-        Tremere <img src="{{ url_for('static', filename='img/icons/clan-tremere.svg') }}"> have a good disciplines
-        combination for a toolbox too,
-        as proves the {{ link("/archetypes/war-chantry", _("War Chantry")) }} archetype.
+        {% trans trimmed
+            img_clan_tremere='<img src="%(url)s" />'|format(url=url_for('static', filename='img/icons/clan-tremere.svg'))|safe,
+            war_chantry=link("/archetypes/war-chantry")
+        %}
+        Tremere {{ img_clan_tremere }} have a good disciplines combination for a toolbox too,
+        as proves the {{ war_chantry }} archetype.
+        {% endtrans %}
     </li>
 </ul>
-<h3>Highlights</h3>
+<h3>{{ _("Highlights") }}</h3>
 <p>
+    {% trans trimmed %}
     <strong>Versatility</strong> is obviously the best asset of a toolbox deck.
     It can handle and exploit any table configuration. To make the most out of toolbox decks,
     one has to display excellent table awareness and negotiation abilities.
@@ -282,107 +422,151 @@
     The deck chooses the strategy as much as the Methusalah.
     The player still chooses on which target to use its cards,
     but the cards in hand demand to be played for the deck to shine.
+    {% endtrans %}
 </p>
 <div class="tip">
-    <h3>The Heart of Cheating</h3>
+    <h3>{{ _("The Heart of Cheating") }}</h3>
     <p>
-        The {{ card("Heart of Nizchetus") }}
-        is often included in toolbox builds,
+        {% trans trimmed
+            heart_of_nizchetus=card("Heart of Nizchetus")
+        %}
+        The {{ heart_of_nizchetus }} is often included in toolbox builds,
         as it gives more control to the Methusalah over what his play can be.
         Its effect makes such a difference in efficiency it has been nicknamed
         <em>The Heart of Cheating</em>.
+        {% endtrans %}
     </p>
 </div>
 <p>
+    {% trans trimmed %}
     Finally, toolbox decks have <strong>strong defence</strong>, although not as strong as <em>wall</em> decks.
     They tend to have good intercept options and/or <em>rush</em> capabilities to handle their predator.
     Having much less offensive options than a vote or bleed deck, they cannot rely on pure speed to best their predator:
     they have to deter its actions actively using blocks, bounces or combats depending on the build.
+    {% endtrans %}
 </p>
-<h2 id="rush">Rush</h2>
+<h2 id="rush">{{ _("Rush") }}</h2>
 <p>
+    {% trans trimmed
+        fame=card("Fame"),
+        dragonbound=card("Dragonbound"),
+        tension_in_the_ranks=card("Tension in the Ranks")
+    %}
     Rush decks use combat as their main weapon. Many disciplines have good combat options and
     they are also good combat cards with no discipline.
     Getting vampires down around the table is fun, but does not help so much to get the prey's pool down.
     To this effect, a handful of cards can help, namely
-    {{ card("Fame") }},
-    {{ card("Dragonbound") }} and
-    {{ card("Tension in the Ranks") }}.
+    {{ fame }}, {{ dragonbound }} and {{ tension_in_the_ranks }}.
+    {% endtrans %}
 </p>
-<h3>Flavours</h3>
+<h3>{{ _("Flavours") }}</h3>
 <ul>
     <li>
-        The {{ link("/archetypes/tupdogs", _("Tupdogs")) }} archetype is a classic, using a dozen
-        {{ card("Tupdog") }} along a Tremere Antitribu.
+        {% trans trimmed
+            tupdogs=link("/archetypes/tupdogs"),
+            tupdog=card("Tupdog")
+        %}
+        The {{ tupdogs }} archetype is a classic, using a dozen {{ tupdog }} along a Tremere Antitribu.
+        {% endtrans %}
     </li>
     <li>
+        {% trans trimmed
+            war_ghouls=link("/archetypes/war-ghouls"),
+            shambling_hordes=link("/archetypes/shambling-hordes")
+        %}
         Allies with a <em>rush</em> ability are also good, like in the
-        {{ link("/archetypes/war-ghouls", _("War Ghouls")) }} and
-        {{ link("/archetypes/shambling-hordes", _("Shambling Hordes")) }} archetypes.
+        {{ war_ghouls }} and {{ shambling_hordes }} archetypes.
+        {% endtrans %}
     </li>
     <li>
-        Guruhi <img src="{{ url_for('static', filename='img/icons/clan-guruhi.svg') }}"> provide a strong rush build too
-        with their <i>PI</i> disciplines combination, like in the
-        {{ link("/archetypes/guruhi-rush", _("Guruhi Rush")) }} and
-        {{ link("/archetypes/nananimalism", _("Nananimalism")) }} archetypes.
+        {% trans trimmed
+            img_clan_guruhi='<img src="%(url)s" />'|format(url=url_for('static', filename='img/icons/clan-guruhi.svg'))|safe,
+            guruhi_rush=link("/archetypes/guruhi-rush"),
+            nananimalism=link("/archetypes/nananimalism")
+        %}
+        Guruhi {{ img_clan_guruhi }} provide a strong rush build too
+        with their {{POT}}{{ANI}} disciplines combination, like in the
+        {{ guruhi_rush }} and {{ nananimalism }} archetypes.
+        {% endtrans %}
     </li>
 </ul>
-<h3>Highlights</h3>
+<h3>{{ _("Highlights") }}</h3>
 <p>
+    {% trans trimmed %}
     The ability to take down any minion provide these decks with a <strong>strong defence</strong>
     against their predator. Depending on the predator archetype, going against its minions first
     is a common strategy for a <em>rush</em> deck: it may take some combats to get them down,
     but they can disable their predator very fast. On the other hand, they have
     a <strong>weak offence</strong> and have trouble finding a way to deliver pool damage to their prey.
     This is the core issue of the archetype.
+    {% endtrans %}
 </p>
 <div class="tip">
-    <h3>Finnish Politics</h3>
+    <h3>{{ _("Finnish Politics") }}</h3>
     <p>
+        {% trans trimmed %}
         If they do not take down their prey very fast, rush decks have a unique control over the table balance
         as they can take down the minions of any Methusalah. Proper table control is
         essential to the succes of such builds, but it also opens a unique strategy for negociation:
         using the threat of combat to get things out of your neighbours.
+        {% endtrans %}
     </p>
     <p>
+        {% trans trimmed %}
         The finnish players have perfect this negociation strategy to such an extent, it is now known as
         <em>"Finnish Politics"</em> among seasoned players.
+        {% endtrans %}
     </p>
 </div>
-<h2 id="special">Special</h2>
+<h2 id="special">{{ _("Special") }}</h2>
 <p>
-    Some decks do not fit into any of the aforementioned archetypes.
+    {% trans trimmed %}
+    Some decks do not fit into any of the aforementioned categories.
     These rare constructs are unique combinations of cards that proved unexpectedly efficient.
     The following examples are not exhaustive.
+    {% endtrans %}
 </p>
-<h3>Flavours</h3>
+<h3>{{ _("Flavours") }}</h3>
 <ul>
     <li>
+        {% trans trimmed
+            mind_rape=link("/archetypes/mind-rape"),
+            spirit_marionette=link("/archetypes/spirit-marionette"),
+            baltimore_purge=link("/archetypes/baltimore-purge")
+        %}
         Some archetypes focus on stealing the vampires of their opponents, like
-        {{ link("/archetypes/mind-rape", _("Mind Rape")) }},
-        {{ link("/archetypes/spirit-marionette", _("Spirit Marionette")) }} and
-        {{ link("/archetypes/baltimore-purge", _("Baltimore Purge")) }}.
+        {{ mind_rape }}, {{ spirit_marionette }} and {{ baltimore_purge }}.
+        {% endtrans %}
     </li>
     <li>
-        The {{ link("/archetypes/cybelotron", _("Cybelotron")) }}
-        is an archetype created by <em>Erik Torstensson</em> in 2007 and refined by <em>Ben Peal</em>.
-        It uses a complicated combination to use
-        {{ card("Call the Great Beast") }} efficiently.
+        {% trans trimmed
+            cybelotron=link("/archetypes/cybelotron"),
+            call_the_great_beast=card("Call the Great Beast")
+        %}
+        The {{ cybelotron }} is an archetype created by <em>Erik Torstensson</em> in 2007
+        and refined by <em>Ben Peal</em>. It uses a complicated combination to play
+        {{ call_the_great_beast }} efficiently.
+        {% endtrans %}
     </li>
     <li>
-        The {{ link("/archetypes/madness-reversal", _("Madness Reversal")) }}
-        is an archetype created by <em>Orian Gissler</em> in 2009 and refined
-        by <em>Danilo Torrisi</em> in 2017. It uses
-        {{ card("Reversal of Fortunes") }} to play twice
-        as more as its opponents.
+        {% trans trimmed
+            madness_reversal=link("/archetypes/madness-reversal"),
+            reversal_of_fortunes=card("Reversal of Fortunes")
+        %}
+        The {{ madness_reversal }} is an archetype created by <em>Orian Gissler</em> in 2009
+        and refined by <em>Danilo Torrisi</em> in 2017.
+        It uses {{ reversal_of_fortunes }} to play twice as more as its opponents.
+        {% endtrans %}
     </li>
 </ul>
-<h3>Highlights</h3>
+<h3>{{ _("Highlights") }}</h3>
 <p>
+    {% trans trimmed %}
     Special decks tend to use complicated card combinations to a devastative effect. Their strenght is in
-    the <strong>absolute advantage</strong> their combination provide if all gets well. Their weakness
+    the <strong>absolute advantage</strong> their combination provide if all goes well. Their weakness
     is the frailty of such a combination. Blocking the right action or countering the right Master can often
     stop them dead in their tracks. Moreover, known combinations tend to attract the attention of all players,
     often leading the Methusalah to lose all its allies very early in the game.
+    {% endtrans %}
 </p>
 {% endblock %}
