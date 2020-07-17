@@ -4,7 +4,7 @@ Changelog
 0.16 (unreleased)
 -----------------
 
-- Nothing changed yet.
+- Online Play: LackeyCCG fix images
 
 
 0.15 (2020-07-17)
