@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: codex 0.X\n"
 "Report-Msgid-Bugs-To: lionel.panhaleux+codex@gmail.com\n"
-"POT-Creation-Date: 2020-07-17 11:44+0200\n"
+"POT-Creation-Date: 2020-07-17 12:25+0200\n"
 "PO-Revision-Date: 2020-07-04 08:50+0200\n"
 "Last-Translator: Lionel Panhaleux <lionel.panhaleux+codex@gmail.com>\n"
 "Language: fr\n"
@@ -62,7 +62,7 @@ msgstr "Construction de deck"
 msgid "Archetypes"
 msgstr "Archétypes"
 
-#: codex_of_the_damned/navigation.py:73 codex_of_the_damned/templates/strategy/archetypes.html:240
+#: codex_of_the_damned/navigation.py:73 codex_of_the_damned/templates/strategy/archetypes.html:261
 msgid "Table Talk"
 msgstr "Discussion"
 
@@ -871,11 +871,11 @@ msgstr "deck de Bob Joseph"
 msgid "Ivor Blockley's deck"
 msgstr "deck d'Ivor Blockley"
 
-#: codex_of_the_damned/templates/archetypes/black-hand.html:67
+#: codex_of_the_damned/templates/archetypes/black-hand.html:66
 msgid "Mark Loughman's deck"
 msgstr "deck de Mark Loughman"
 
-#: codex_of_the_damned/templates/archetypes/black-hand.html:74
+#: codex_of_the_damned/templates/archetypes/black-hand.html:73
 msgid "Carlo Daniele's deck"
 msgstr "deck de Carlo Daniele"
 
@@ -1705,11 +1705,38 @@ msgstr "Redresser une carte"
 msgid "Mark the number of votes on a vampire"
 msgstr "Indiquer le nombre de votes d'un vampire"
 
-#: codex_of_the_damned/templates/strategy/archetypes.html:5 codex_of_the_damned/templates/strategy/fundamentals.html:5
+#: codex_of_the_damned/templates/strategy/archetypes.html:6
+msgid ""
+"V:tES has been played for years, and this has given birth to a number of efficient decks archetypes. Given the "
+"multiplayer nature of the game, many archetypes are valid choices at the highest level, as the efficiency of a deck "
+"depends a lot on its table placement and on the negociations skills of the player. Even on the modern tournament "
+"scene, dozens of different archetypes are usually played in a single event."
+msgstr ""
+"V:tES est joué depuis des années et cela a donné naissances a de nombreux archétypes de decks efficaces. Étant donné "
+"la nature multijoueurs du jeu, de nombreux archétypes sont des choix valides au plus haut niveau de jeu, car "
+"l'efficacité d'un deck dépend énormément de son placement à la table et des capacités de négociation du joueur. Même "
+"sur la scène de tournoi moderne, des dizaines d'archétypes sont généralement joués lors d'un unique événement."
+
+#: codex_of_the_damned/templates/strategy/archetypes.html:14
+msgid ""
+"As such, having a basic understanding of the most common archetypes and their strong and weak points is a very "
+"important skill for a player. Knowing the inner workings of the archetypes on the table is the only way to fathom the"
+" table balance and detect the opportunities as they arise during the game."
+msgstr ""
+"C'est pourquoi avoir une bonne connaissance des archétypes les plus courants, ainsi que de leurs forces et "
+"faiblesses, est une compétence importante pour un joueur. Connaître les rouages des archétypes à la table est la "
+"seule manière de cerner l'équilibre à la table et de discerner les opportunités quand elles se présentent durant la "
+"partie."
+
+#: codex_of_the_damned/templates/strategy/archetypes.html:21
+msgid "The archetypes are usually divided into broader categories, as presented here."
+msgstr "Les archétypes sont généralement divisés en grandes catégories, comme c'est le cas ici."
+
+#: codex_of_the_damned/templates/strategy/archetypes.html:26 codex_of_the_damned/templates/strategy/fundamentals.html:5
 msgid "Bleed"
 msgstr "Morsure"
 
-#: codex_of_the_damned/templates/strategy/archetypes.html:7
+#: codex_of_the_damned/templates/strategy/archetypes.html:28
 #, python-format
 msgid ""
 "Bleed decks are focused on prey aggression and use bleed actions to inflict heavy pool damages. %(dom)s is without "
@@ -1720,11 +1747,11 @@ msgstr ""
 "d'important dégâts à son influence. %(dom)s est sans conteste la discipline donnant le plus de dégâts d'influence, et"
 " elle fournit de plus des cartes de rebond. %(pre)s et %(dem)s sont de bonnes alternatives. "
 
-#: codex_of_the_damned/templates/strategy/archetypes.html:13
+#: codex_of_the_damned/templates/strategy/archetypes.html:34
 msgid "Stealth & Bleed and Powerbleed"
 msgstr "Stealth & Bleed et Powerbleed"
 
-#: codex_of_the_damned/templates/strategy/archetypes.html:15
+#: codex_of_the_damned/templates/strategy/archetypes.html:36
 #, python-format
 msgid ""
 "There are two ways to get bleeds through: using <strong>stealth</strong> is the most obvious one. %(obf)s is the best"
@@ -1734,7 +1761,7 @@ msgstr ""
 "%(obf)s est la meilleure discipline de discrétion, mais elle est rarement présente aux côtés de %(dom)s. %(obt)s et "
 "%(pro)s sont de bonnes alternatives."
 
-#: codex_of_the_damned/templates/strategy/archetypes.html:22
+#: codex_of_the_damned/templates/strategy/archetypes.html:43
 #, python-format
 msgid ""
 "The other way to get bleeds through is to make sure the prey has no minion available to block the action. Along its "
@@ -1750,13 +1777,13 @@ msgstr ""
 "inclinent les serviteurs — %(pentex_subversion)s, %(misdirection)s et %(anarch_troublemaker)s — la question de la "
 "discrétion et de l'interception devient hors-sujet."
 
-#: codex_of_the_damned/templates/strategy/archetypes.html:41 codex_of_the_damned/templates/strategy/archetypes.html:163
-#: codex_of_the_damned/templates/strategy/archetypes.html:273 codex_of_the_damned/templates/strategy/archetypes.html:370
-#: codex_of_the_damned/templates/strategy/archetypes.html:462 codex_of_the_damned/templates/strategy/archetypes.html:529
+#: codex_of_the_damned/templates/strategy/archetypes.html:62 codex_of_the_damned/templates/strategy/archetypes.html:184
+#: codex_of_the_damned/templates/strategy/archetypes.html:294 codex_of_the_damned/templates/strategy/archetypes.html:391
+#: codex_of_the_damned/templates/strategy/archetypes.html:483 codex_of_the_damned/templates/strategy/archetypes.html:550
 msgid "Flavours"
 msgstr "Variétés"
 
-#: codex_of_the_damned/templates/strategy/archetypes.html:44
+#: codex_of_the_damned/templates/strategy/archetypes.html:65
 #, python-format
 msgid ""
 "Lasombra %(img_clan_lasombra)s and Kiasyd %(img_clan_kiasyd)s have a strong combination with %(dom)s for bleed and "
@@ -1765,7 +1792,7 @@ msgstr ""
 "Les Lasombra %(img_clan_lasombra)s et les Kiasyd %(img_clan_kiasyd)s ont une bonne combinaison avec %(dom)s pour la "
 "morsure et %(obt)s pour la discrétion. Voyez les archétypes %(kiasyd_stealth_bleed)s et %(lasombra_nocturn)s."
 
-#: codex_of_the_damned/templates/strategy/archetypes.html:56
+#: codex_of_the_damned/templates/strategy/archetypes.html:77
 #, python-format
 msgid ""
 "The Malkavian %(img_clan_malkavian)s can use %(dem)s, alone or alongside %(obf)s, for devastating bleeds, like in the"
@@ -1774,7 +1801,7 @@ msgstr ""
 "Les Malkavien %(img_clan_malkavian)s peuvent utiliser %(dem)s, seul ou avec %(obf)s, pour des morsures dévastatrices,"
 " comme dans l'archétype %(weenie_dem)s."
 
-#: codex_of_the_damned/templates/strategy/archetypes.html:66
+#: codex_of_the_damned/templates/strategy/archetypes.html:87
 #, python-format
 msgid ""
 "Assamite %(img_clan_assamite)s also have a nice combination with %(qui)s and %(obf)s, as in the %(black_hand)s "
@@ -1783,19 +1810,19 @@ msgstr ""
 "Les Assamite %(img_clan_assamite)s ont aussi une bonne combinaison avec %(qui)s et %(obf)s, comme dans l'archétype "
 "%(black_hand)s."
 
-#: codex_of_the_damned/templates/strategy/archetypes.html:75
+#: codex_of_the_damned/templates/strategy/archetypes.html:96
 #, python-format
 msgid "%(dom)s also works well in weenie archetypes, like %(weenie_dom)s and %(bima_dominate)s."
 msgstr "%(dom)s fonctionne aussi dans un deck weenie, comme dans les archétypes %(weenie_dom)s et %(bima_dominate)s."
 
-#: codex_of_the_damned/templates/strategy/archetypes.html:84
+#: codex_of_the_damned/templates/strategy/archetypes.html:105
 #, python-format
 msgid "Using %(PRO)s for stealth gave birth to powerful bleed deck, as in the %(stanislava)s archetype and its variants."
 msgstr ""
-"Utiliser %(PRO)s pour la discrétion a donné naissance a de puissants decks de morsure, comme l'archétype "
+"Utiliser %(PRO)s pour la discrétion a donné naissance à de puissants decks de morsure, comme l'archétype "
 "%(stanislava)s et ses variantes."
 
-#: codex_of_the_damned/templates/strategy/archetypes.html:92
+#: codex_of_the_damned/templates/strategy/archetypes.html:113
 #, python-format
 msgid ""
 "Toreador %(img_clan_toreador)s with %(PRE)s and Ventrue %(img_clan_ventrue)s with %(DOM)s%(PRE)s can produce strong "
@@ -1804,7 +1831,7 @@ msgstr ""
 "Les Toréador %(img_clan_toreador)s avec %(PRE)s et les Ventrue %(img_clan_ventrue)s avec %(DOM)s%(PRE)s peuvent "
 "produire de puissants decks powerbleed comme %(the_bleeding_vignes)s ou %(jost_powerbleed)s."
 
-#: codex_of_the_damned/templates/strategy/archetypes.html:104
+#: codex_of_the_damned/templates/strategy/archetypes.html:125
 #, python-format
 msgid ""
 "Inner Circles also deliver a very strong bleed as they have a +2 bleed ability. The %(mistress)s archetype is a good "
@@ -1814,9 +1841,9 @@ msgstr ""
 "Les membres du Cercle Intérieur peuvent aussi infliger de sérieuses morsures comme ils ont un bonus de +2. "
 "L'archétype %(mistress)s est un bon example. Ils sont souvent associés avec une stratégie de <strong>M</strong>ulti "
 "<strong>M</strong>aster <strong>P</strong>hase <strong>A</strong>ctions (MMPA), comme dans les archétypes "
-"%(girls_will_find_inner_circle)s ou %(council_of_doom)s archetypes."
+"%(girls_will_find_inner_circle)s ou %(council_of_doom)s."
 
-#: codex_of_the_damned/templates/strategy/archetypes.html:116
+#: codex_of_the_damned/templates/strategy/archetypes.html:137
 #, python-format
 msgid ""
 "Using %(PRO)s to bleed multiple times during the opponents turns with %(homunculus)s is also powerful: "
@@ -1825,13 +1852,13 @@ msgstr ""
 "Utiliser %(PRO)s pour bleeder plusieurs fois pendant les tours des adversaires avec %(homunculus)s est aussi "
 "efficace: %(the_unnamed)s et %(rachel_madness)s sont construits autour de cette idée."
 
-#: codex_of_the_damned/templates/strategy/archetypes.html:127 codex_of_the_damned/templates/strategy/archetypes.html:221
-#: codex_of_the_damned/templates/strategy/archetypes.html:321 codex_of_the_damned/templates/strategy/archetypes.html:414
-#: codex_of_the_damned/templates/strategy/archetypes.html:493 codex_of_the_damned/templates/strategy/archetypes.html:562
+#: codex_of_the_damned/templates/strategy/archetypes.html:148 codex_of_the_damned/templates/strategy/archetypes.html:242
+#: codex_of_the_damned/templates/strategy/archetypes.html:342 codex_of_the_damned/templates/strategy/archetypes.html:435
+#: codex_of_the_damned/templates/strategy/archetypes.html:514 codex_of_the_damned/templates/strategy/archetypes.html:583
 msgid "Highlights"
 msgstr "Principe"
 
-#: codex_of_the_damned/templates/strategy/archetypes.html:129
+#: codex_of_the_damned/templates/strategy/archetypes.html:150
 msgid ""
 "Bleed decks have the <strong>highest prey damage</strong>. They tend to oust their first prey quite often, but it "
 "also attracts the table attention on them and one oust is not enough for a game win. They are usually <strong>weak in"
@@ -1841,25 +1868,25 @@ msgstr ""
 "Les decks de morsure ont <strong>le plus haut niveau de dégâts d'influence</strong>. Ils ont tendance à sortir leur "
 "première proie assez régulièrement, mais cela attire l'attention de la table sur eux et une sortie n'est pas "
 "suffisante pour la victoire. Ils sont en général <strong>faibles en combat</strong>. Ils ont tendance à se reposer "
-"sur des effets de « fin de combat » effects, mais certaines variétés peuvent utiliser des dégâts aggravés ou des "
-"frappes envoyant en torpeur comme menace."
+"sur des effets de « fin de combat », mais certaines variétés peuvent utiliser des dégâts aggravés ou des frappes "
+"envoyant en torpeur comme menace."
 
-#: codex_of_the_damned/templates/strategy/archetypes.html:137
+#: codex_of_the_damned/templates/strategy/archetypes.html:158
 msgid "Stealth rotation"
 msgstr "Rotation de discrétion"
 
-#: codex_of_the_damned/templates/strategy/archetypes.html:139
+#: codex_of_the_damned/templates/strategy/archetypes.html:160
 msgid ""
 "Stealth & Bleed archetypes have a strong stealth module, but it can jam the hand. If the prey assumes she will not "
 "have the means to block, she should decide not to attempt to block at all, and <strong>try to jam her predator hand "
-"on the stealth module.</strong> Well constructed Stealth & Bleed decks include some rotation tools to help with that."
+"on the stealth module</strong>. Well constructed Stealth & Bleed decks include some rotation tools to help with that."
 msgstr ""
-"Les archétypes Stealth & Bleed ont un solide module de discrétion, mais il peut enrayer la main. Si la proie présume "
+"Les archétypes Stealth & Bleed ont un solide module de discrétion, mais il peut enrayer la main. Si la proie suppose "
 "qu'elle n'aura pas les moyens de bloquer, elle peut décider de ne pas tenter de blocage du tout, et <strong>essayer "
-"d'enrayer la main de son prtry to jam her predator hand on the stealth module.</strong> Well constructed Stealth & "
-"Bleed decks include some rotation tools to help with that."
+"d'enrayer la main de son prédateur sur la discrétion</strong>. Les decks Stealth & Bleed bien construits incluent des"
+" outils de rotation pour aider avec ce souci."
 
-#: codex_of_the_damned/templates/strategy/archetypes.html:148
+#: codex_of_the_damned/templates/strategy/archetypes.html:169
 #, python-format
 msgid ""
 "As they are focused on their prey, bleed decks have a weak defence against their predator and do not try to intercept"
@@ -1869,38 +1896,38 @@ msgstr ""
 "tentent pas de bloquer ses actions. Ils utilisent généralement les rebonds de %(dom)s ou %(AUS)s ou un solide module "
 "de régénération pour survivre."
 
-#: codex_of_the_damned/templates/strategy/archetypes.html:154
+#: codex_of_the_damned/templates/strategy/archetypes.html:175
 msgid "Vote"
 msgstr "Vote"
 
-#: codex_of_the_damned/templates/strategy/archetypes.html:156
+#: codex_of_the_damned/templates/strategy/archetypes.html:177
 msgid ""
 "Vote decks usually have a strong pool damage module to deliver to their prey. The difficulty to gather enough votes "
 "to get the referendums through is balanced by the constant +1 stealth bonus of vote actions. There are basically two "
 "ways of building a vote deck: either breed and find a way to give votes to all your vampires, or use older vampires "
 "with titles themselves."
 msgstr ""
-"Les decks de vote infligent généralement de solides dégâts d'influence à leur proie. Le problème d'accumuler assez de"
-" voix pour gagner les référendums est contrebalancée par le bonus de +1 discrétion systématique sur les actions "
+"Les decks de vote infligent en général de solides dégâts d'influence à leur proie. Le problème d'accumuler assez de "
+"voix pour gagner les référendums est contrebalancée par le bonus de +1 discrétion globalement sur les actions "
 "politiques. Il y a sommairement deux manières de construire un deck de vote : utiliser une technique de reproduction "
 "et trouver un moyen de donner des votes à tous les vampires, ou utiliser des vampires plus âgés ayant des titres en "
 "propre."
 
-#: codex_of_the_damned/templates/strategy/archetypes.html:166
+#: codex_of_the_damned/templates/strategy/archetypes.html:187
 #, python-format
 msgid "Inner Circle can be used in strong vote decks, as in %(the_dark_side_of_politics)s and %(lutz_politics)s."
 msgstr ""
 "Les membres du Crecle Intérieur peuvent être utilisé dans de puissants decks de vote, comme avec "
 "%(the_dark_side_of_politics)s ou %(lutz_politics)s."
 
-#: codex_of_the_damned/templates/strategy/archetypes.html:175
+#: codex_of_the_damned/templates/strategy/archetypes.html:196
 #, python-format
 msgid "Camarilla Princes also often use votes, like in the %(nosferatu_royalty)s archetype."
 msgstr ""
 "Les Princes de la Camarilla utilisent aussi souvent une stratégie de vote, comme dans l'archétype "
 "%(nosferatu_royalty)s."
 
-#: codex_of_the_damned/templates/strategy/archetypes.html:182
+#: codex_of_the_damned/templates/strategy/archetypes.html:203
 #, python-format
 msgid ""
 "Non Camarilla vampires can also build good titled crypts, especially Ishtarri %(img_clan_ishtarri)s with "
@@ -1910,12 +1937,12 @@ msgstr ""
 "%(img_clan_ishtarri)s avec %(ishtarri_politics)s et les Filles de la Cacophonie %(img_clan_daughters)s avec %(scout)s"
 " et %(daughters_politics)s."
 
-#: codex_of_the_damned/templates/strategy/archetypes.html:195
+#: codex_of_the_damned/templates/strategy/archetypes.html:216
 #, python-format
 msgid "Baali %(img_clan_baali)s offer a nice political angle with %(the_dark_side_of_politics)s."
 msgstr "Les Baali %(img_clan_baali)s fournissent un angle d'attaque politique intéressant avec %(the_dark_side_of_politics)s."
 
-#: codex_of_the_damned/templates/strategy/archetypes.html:203
+#: codex_of_the_damned/templates/strategy/archetypes.html:224
 #, python-format
 msgid ""
 "Assamite %(img_clan_assamite)s also have good options, like in the %(amaravati_politics)s or the %(death_star)s "
@@ -1924,13 +1951,13 @@ msgstr ""
 "Les Assamites %(img_clan_assamite)s ont aussi de bonnes options, comme dans les archétypes %(amaravati_politics)s ou "
 "%(death_star)s."
 
-#: codex_of_the_damned/templates/strategy/archetypes.html:213
+#: codex_of_the_damned/templates/strategy/archetypes.html:234
 #, python-format
 msgid "Ravnos %(img_clan_ravnos)s have a unique breed archetype: the %(ravnos_clown_car)s."
 msgstr "Les Ravnos %(img_clan_ravnos)s ont un archétype de reproduction assez unique : la %(ravnos_clown_car)s."
 
-#: codex_of_the_damned/templates/strategy/archetypes.html:223
-#, fuzzy, python-format
+#: codex_of_the_damned/templates/strategy/archetypes.html:244
+#, python-format
 msgid ""
 "Votes decks deliver <strong>high pool damage</strong> once they get the vote lock. They also have a <strong>good "
 "bloat</strong>, using %(consanguineous_boon)s, %(parity_shift)s, %(ancient_inluence)s or %(political_stranglehold)s "
@@ -1947,7 +1974,7 @@ msgstr ""
 "<strong>module de combat léger</strong> et — en particulier les constructions à base d'essaim — une <strong>faible "
 "défense contre la morsure</strong>, qui repose uniquement sur les rebonds, ou même rien du tout."
 
-#: codex_of_the_damned/templates/strategy/archetypes.html:242
+#: codex_of_the_damned/templates/strategy/archetypes.html:263
 #, python-format
 msgid ""
 "Votes can go either ways and can be targeted effortlessly across the table. This gives unique negotiation options to "
@@ -1959,7 +1986,11 @@ msgstr ""
 "amis pendant la partie. La %(table_talk)s est toujours importante dans ce jeu, mais plus encore pour les archétypes "
 "de vote."
 
-#: codex_of_the_damned/templates/strategy/archetypes.html:254
+#: codex_of_the_damned/templates/strategy/archetypes.html:273
+msgid "Wall"
+msgstr "Mur"
+
+#: codex_of_the_damned/templates/strategy/archetypes.html:275
 #, python-format
 msgid ""
 "Wall decks maximise their defence, trying to block their prey and predator actions alike while slowly building up "
@@ -1974,28 +2005,28 @@ msgstr ""
 "Les decks mur maximisent leur défense en essayant de bloquer les actions de leur proie comme de leur prédateur tout "
 "en travaillant lentement à la régénération et aux dégâts d'influence. La capacité à intercepter et à se réveiller est"
 " indispensable dans ces decks, donc %(aus)s et %(ani)s sont les options les plus courantes. %(aus)s fournit plus "
-"d'options et une plus haute interception au global, avec l'excellent %(eyes_of_argus)s en sus. C'est aussi la seule "
-"discipline à part %(dom)s qui fournit des réactions de réveil. %(ani)s a aussi de bonne cartes d'interception "
+"d'options et une plus haute interception au global, avec l'excellent %(eyes_of_argus)s. C'est aussi la seule "
+"discipline à part %(dom)s qui fournit des réactions de rebond. %(ani)s a aussi de bonne cartes d'interception "
 "cependant, ainsi que de meilleurs options que %(aus)s pour le combat : il peut être utilisé sans équipement ou "
-"discipline additionnel. Les vampires titrés du Sabbat, de la Camarilla et Laibon ont chacun accès à d'excellentes "
+"discipline additionnels. Les vampires titrés du Sabbat, de la Camarilla et Laibon ont chacun accès à d'excellentes "
 "cartes d'interception : %(eternal_vigilance)s, %(under_siege)s, %(second_tradition_domain)s et "
 "%(no_secrets_from_the_magaji)s."
 
-#: codex_of_the_damned/templates/strategy/archetypes.html:276
+#: codex_of_the_damned/templates/strategy/archetypes.html:297
 #, python-format
 msgid "%(AUS)s is the best intercept discipline, and the %(weenie_aus)s wall is an obvious idea."
 msgstr "%(AUS)s est la meilleure discipline d'interception et le mur %(weenie_aus)s est une idée évidente."
 
-#: codex_of_the_damned/templates/strategy/archetypes.html:283
+#: codex_of_the_damned/templates/strategy/archetypes.html:304
 #, python-format
 msgid ""
-"The %(tzimisce_wall)s is also a very classic archetype, as the combination of %(ani)s & %(vic)s offers even better "
+"The %(tzimisce_wall)s is also a very classic archetype, as the combination of %(ani)s%(vic)s offers even better "
 "intercept capabilities."
 msgstr ""
-"Le %(tzimisce_wall)s est aussi un archétype très classique, étant donné que la combinaison %(ani)s & %(vic)s donne "
-"des capacités d'interception encore meilleures."
+"Le %(tzimisce_wall)s est aussi un archétype très classique, étant donné que la combinaison %(ani)s%(vic)s donne des "
+"capacités d'interception encore meilleures."
 
-#: codex_of_the_damned/templates/strategy/archetypes.html:291
+#: codex_of_the_damned/templates/strategy/archetypes.html:312
 #, python-format
 msgid ""
 "Tremere %(img_clan_tremere)s in general, but %(goratrix)s in particular offer excellent wall capabilities in the "
@@ -2004,21 +2035,21 @@ msgstr ""
 "Les Tremere %(img_clan_tremere)s en général, mais en particulier %(goratrix)s, fournissent d'excellent capacités de "
 "mur dans l'archétype %(goratrix_high_tower)s."
 
-#: codex_of_the_damned/templates/strategy/archetypes.html:301
+#: codex_of_the_damned/templates/strategy/archetypes.html:322
 #, python-format
 msgid "The %(cats)s archetype uses Ahrimanes %(img_clan_ahrimanes)s and their %(SPI)s%(ANI)s disciplines combination."
-msgstr "L'archétype %(cats)s utilisent des Ahrimanes %(img_clan_ahrimanes)s et leur combinaison de disciplines %(SPI)s%(ANI)s."
+msgstr "L'archétype %(cats)s utilise des Ahrimanes %(img_clan_ahrimanes)s et leur combinaison de disciplines %(SPI)s%(ANI)s."
 
-#: codex_of_the_damned/templates/strategy/archetypes.html:310
+#: codex_of_the_damned/templates/strategy/archetypes.html:331
 #, python-format
 msgid ""
 "%(saulot)s and %(the_capuchin)s provide a nice discipline combination, as they both have %(AUS)s%(THA)s%(FOR)s and +1"
 " bleed. The %(saulot_friends)s archetype is built around them."
 msgstr ""
-"%(saulot)s et %(the_capuchin)s foremtn une bonne combinaison de disciplines, puisqu'ils ont tous deux "
+"%(saulot)s et %(the_capuchin)s forment une bonne combinaison de disciplines, puisqu'ils ont tous deux "
 "%(AUS)s%(THA)s%(FOR)s et +1 morsure. L'archétype %(saulot_friends)s est construit autour d'eux."
 
-#: codex_of_the_damned/templates/strategy/archetypes.html:323
+#: codex_of_the_damned/templates/strategy/archetypes.html:344
 #, python-format
 msgid ""
 "Wall decks obviously have an <strong>exceptional defence</strong>. Moreover, having high block capabilities let them "
@@ -2028,19 +2059,19 @@ msgid ""
 " to their prey. They're very good at exhausting other decks around the table though, and will get eventually win a "
 "game if no other player can get enough Victory Points first."
 msgstr ""
-"Les decks de mur ont sans surprise une <strong>défense exceptionnelle</strong>. De plus, leur grande capacité de "
-"blocage leur permet de jouer des cartes Maître fragiles qui demandent une protection pour être efficaces comme "
+"Les decks mur ont sans surprise une <strong>défense exceptionnelle</strong>. De plus, leur grande capacité de blocage"
+" leur permet de jouer des cartes Maître fragiles qui demandent une protection pour être efficaces comme "
 "%(smiling_jack_the_anarch)s, %(the_rack)s, %(powerbase_montreal)s, %(powerbase_barranquilla)s (Sabbat) et "
-"%(anarch_revolt)s (Anarchs), ce qui les aide pour la régénération et l'offensive. Toutefois, les decks de mur ont une"
-" <strong>faible offensive</strong>, n'infligeant qu'une quantité de dégâts d'influence modérée à leur proie. Ils sont"
-" cependant très capables d'épuiser les autres decks autour de la table, et pourront finalement gagner une partie si "
+"%(anarch_revolt)s (Anarchs), ce qui les aide pour la régénération et l'offensive. Toutefois, les decks mur ont une "
+"<strong>faible offensive</strong>, n'infligeant qu'une quantité de dégâts d'influence modérée à leur proie. Ils sont "
+"cependant très capables d'épuiser les autres decks autour de la table, et pourront finalement gagner une partie si "
 "aucun autre joueur n'obtient assez de Points de Victoire avant eux."
 
-#: codex_of_the_damned/templates/strategy/archetypes.html:341
+#: codex_of_the_damned/templates/strategy/archetypes.html:362
 msgid "Cross block"
 msgstr "Blocage non standard"
 
-#: codex_of_the_damned/templates/strategy/archetypes.html:343
+#: codex_of_the_damned/templates/strategy/archetypes.html:364
 #, python-format
 msgid ""
 "%(eagles_sight)s and %(falcons_eye)s are the only minion cards in the game that let a vampire block "
@@ -2049,7 +2080,7 @@ msgstr ""
 "%(eagles_sight)s et %(falcons_eye)s sont les deux seules cartes de serviteur permettant à un vampire de bloquer "
 "<strong>n'import quelle</strong> action, même si elle est dirigée contre un autre Mathusalem ou réalisée en face."
 
-#: codex_of_the_damned/templates/strategy/archetypes.html:353
+#: codex_of_the_damned/templates/strategy/archetypes.html:374
 #, python-format
 msgid ""
 "This ability to cross block is an excellent asset in wall decks with %(AUS)s or %(SPI)s as it enhances table control "
@@ -2057,16 +2088,16 @@ msgid ""
 "lethal to the grand-prey. Wall decks that do not use these will often include some <em>rush</em> capabilities "
 "instead."
 msgstr ""
-"Cette capacité à effectuer un blocage non standard est un atout essentiel dans les decks de mur utilisant %(AUS)s ou "
-"%(SPI)s, puisque cela augemente le contrôle qu'ils ont sur la table et leur per;et par exemple d'intercepter un vote "
+"Cette capacité à effectuer un blocage non standard est un atout essentiel dans les decks mur utilisant %(AUS)s ou "
+"%(SPI)s, puisque cela augemente le contrôle qu'ils ont sur la table et leur permet par exemple d'intercepter un vote "
 "dangereux venant du grand-prédateur ou une morsure entreprise par la proie qui pourrait sortir la grande-proie. Les "
-"decks de mur n'utilisant pas ces cartes incluent en général des possibilités de <em>rush</em> à la place."
+"decks mur n'utilisant pas ces cartes incluent en général des possibilités de <em>rush</em> à la place."
 
-#: codex_of_the_damned/templates/strategy/archetypes.html:361
+#: codex_of_the_damned/templates/strategy/archetypes.html:382
 msgid "Toolbox"
 msgstr "Toolbox"
 
-#: codex_of_the_damned/templates/strategy/archetypes.html:363
+#: codex_of_the_damned/templates/strategy/archetypes.html:384
 msgid ""
 "Toolbox decks balance their offence and defence capabilities. They have good intercept, a decent combat module and "
 "efficient pool damage options to use on their prey, sometimes even some votes they can try to pass or a bit of "
@@ -2077,7 +2108,7 @@ msgstr ""
 " qu'ils peuvent tenter de faire passer ou un peu de discrétion. Le clé de ces archétypes est d'utiliser des cartes "
 "versatiles fournissant de multiples options de jeu."
 
-#: codex_of_the_damned/templates/strategy/archetypes.html:373
+#: codex_of_the_damned/templates/strategy/archetypes.html:394
 #, python-format
 msgid ""
 "Using Camarilla <em>Princes</em> and <em>Justicars</em> with their access to %(second_tradition_domain)s and "
@@ -2087,7 +2118,7 @@ msgstr ""
 "%(parity_shift)s a conduit à des toolbox efficaces comme les archétypes %(aaa)s, %(euro_brujah)s et "
 "%(ventrue_royalty)s."
 
-#: codex_of_the_damned/templates/strategy/archetypes.html:386
+#: codex_of_the_damned/templates/strategy/archetypes.html:407
 #, python-format
 msgid ""
 "A lot of archetypes using allies also fall into this category, like %(khazars_diary)s, %(emerald_legion)s and "
@@ -2096,7 +2127,7 @@ msgstr ""
 "Beaucoup d'archétypes utilisant des alliés tombent dans cette catégorie, comme %(khazars_diary)s, %(emerald_legion)s "
 "et %(nephandii)s."
 
-#: codex_of_the_damned/templates/strategy/archetypes.html:396
+#: codex_of_the_damned/templates/strategy/archetypes.html:417
 #, python-format
 msgid ""
 "Ventrue Antitribu %(img_clan_ventrue_anti)s provide excellent toolboxes with the %(anti_ventrue_grinder)s archetype "
@@ -2105,7 +2136,7 @@ msgstr ""
 "Les Ventrue Antitribu %(img_clan_ventrue_anti)s forment des toolbox de premier ordre avec l'archétype "
 "%(anti_ventrue_grinder)s et ses variantes."
 
-#: codex_of_the_damned/templates/strategy/archetypes.html:405
+#: codex_of_the_damned/templates/strategy/archetypes.html:426
 #, python-format
 msgid ""
 "Tremere %(img_clan_tremere)s have a good disciplines combination for a toolbox too, as proves the %(war_chantry)s "
@@ -2114,7 +2145,7 @@ msgstr ""
 "Les Tremere %(img_clan_tremere)s ont une bonne combinaison de disciplines pour les toolbox, comme le prouve "
 "l'archétype %(war_chantry)s."
 
-#: codex_of_the_damned/templates/strategy/archetypes.html:416
+#: codex_of_the_damned/templates/strategy/archetypes.html:437
 msgid ""
 "<strong>Versatility</strong> is obviously the best asset of a toolbox deck. It can handle and exploit any table "
 "configuration. To make the most out of toolbox decks, one has to display excellent table awareness and negotiation "
@@ -2127,25 +2158,25 @@ msgstr ""
 "presque n'importe quelle configuration de table. Pour en tirer le meilleur parti, il faut faire preuve d'une grande "
 "sensibilité à l'équilibre de table et de bonnes capacités de négociation. Pour que le deck ait l'effet voulu à la "
 "table et fasse preuve de toute son efficacité, il est nécessaire de <strong>jouer sa main</strong>, quelle qu'elle "
-"soit. Le deck décide de la stratégie tout autant que le Methusalem. Le joueur choisit toujours sur qui utiliser ses "
+"soit. Le deck décide de la stratégie tout autant que le Mathusalem. Le joueur choisit toujours sur qui utiliser ses "
 "cartes, mais il doit trouver un moyen de les jouer pour que son deck excelle."
 
-#: codex_of_the_damned/templates/strategy/archetypes.html:428
+#: codex_of_the_damned/templates/strategy/archetypes.html:449
 msgid "The Heart of Cheating"
 msgstr "The Heart of Cheating"
 
-#: codex_of_the_damned/templates/strategy/archetypes.html:430
+#: codex_of_the_damned/templates/strategy/archetypes.html:451
 #, python-format
 msgid ""
 "The %(heart_of_nizchetus)s is often included in toolbox builds, as it gives more control to the Methusalah over what "
 "his play can be. Its effect makes such a difference in efficiency it has been nicknamed <em>The Heart of "
 "Cheating</em>."
 msgstr ""
-"Le %(heart_of_nizchetus)s est souvent inclus dans les decks toolbox, car il donne un meilleur contrôle au Methusalem "
+"Le %(heart_of_nizchetus)s est souvent inclus dans les decks toolbox, car il donne un meilleur contrôle au Mathusalem "
 "sur ce que peut être son jeu. Son effet entraîne une telle différence qu'il a été surnommé <em>The Heart of "
 "Cheating</em>."
 
-#: codex_of_the_damned/templates/strategy/archetypes.html:441
+#: codex_of_the_damned/templates/strategy/archetypes.html:462
 msgid ""
 "Finally, toolbox decks have <strong>strong defence</strong>, although not as strong as <em>wall</em> decks. They tend"
 " to have good intercept options and/or <em>rush</em> capabilities to handle their predator. Having much less "
@@ -2158,11 +2189,11 @@ msgstr ""
 "compter sur la vitesse seule pour faire mieux que leur prédateur : ils doivent entraver ses actions en utilisant des "
 "blocages, des rebonds ou des combats en fonction de la construction."
 
-#: codex_of_the_damned/templates/strategy/archetypes.html:448
+#: codex_of_the_damned/templates/strategy/archetypes.html:469
 msgid "Rush"
 msgstr "Rush"
 
-#: codex_of_the_damned/templates/strategy/archetypes.html:450
+#: codex_of_the_damned/templates/strategy/archetypes.html:471
 #, python-format
 msgid ""
 "Rush decks use combat as their main weapon. Many disciplines have good combat options and they are also good combat "
@@ -2175,19 +2206,19 @@ msgstr ""
 "amusant, mais n'aide pas nécessairement à faire baisser l'influence de la proie. Pour ce faire, une poignée de cartes"
 " peuvent aider, principalement %(fame)s, %(dragonbound)s et %(tension_in_the_ranks)s."
 
-#: codex_of_the_damned/templates/strategy/archetypes.html:465
+#: codex_of_the_damned/templates/strategy/archetypes.html:486
 #, python-format
 msgid "The %(tupdogs)s archetype is a classic, using a dozen %(tupdog)s along a Tremere Antitribu."
 msgstr "L'archétype %(tupdogs)s est un classique, il utilise des dizaines de %(tupdog)s aux côtés d'un Tremere Antitribu."
 
-#: codex_of_the_damned/templates/strategy/archetypes.html:473
+#: codex_of_the_damned/templates/strategy/archetypes.html:494
 #, python-format
 msgid "Allies with a <em>rush</em> ability are also good, like in the %(war_ghouls)s and %(shambling_hordes)s archetypes."
 msgstr ""
 "Les alliés avec un pouvoir de <em>rush</em> sont efficaces aussi, comme dans les archétypes %(war_ghouls)s et "
 "%(shambling_hordes)s."
 
-#: codex_of_the_damned/templates/strategy/archetypes.html:482
+#: codex_of_the_damned/templates/strategy/archetypes.html:503
 #, python-format
 msgid ""
 "Guruhi %(img_clan_guruhi)s provide a strong rush build too with their %(POT)s%(ANI)s disciplines combination, like in"
@@ -2196,7 +2227,7 @@ msgstr ""
 "Les Guruhi %(img_clan_guruhi)s fournissent un rush puissant aussi avec leur combinaison de disciplines "
 "%(POT)s%(ANI)s, comme dans les archétypes %(guruhi_rush)s et %(nananimalism)s."
 
-#: codex_of_the_damned/templates/strategy/archetypes.html:495
+#: codex_of_the_damned/templates/strategy/archetypes.html:516
 msgid ""
 "The ability to take down any minion provide these decks with a <strong>strong defence</strong> against their "
 "predator. Depending on the predator archetype, going against its minions first is a common strategy for a "
@@ -2204,29 +2235,29 @@ msgid ""
 "other hand, they have a <strong>weak offence</strong> and have trouble finding a way to deliver pool damage to their "
 "prey. This is the core issue of the archetype."
 msgstr ""
-"The ability to take down any minion provide these decks with a <strong>strong defence</strong> against their "
-"predator. Depending on the predator archetype, going against its minions first is a common strategy for a "
-"<em>rush</em> deck: it may take some combats to get them down, but they can disable their predator very fast. On the "
-"other hand, they have a <strong>weak offence</strong> and have trouble finding a way to deliver pool damage to their "
-"prey. This is the core issue of the archetype."
+"La capacité à abattre n'importe quel serviteur donne à ces decks une <strong>solide défense</strong> contre leur "
+"prédateur. En fonction de l'archétype du prédateur, il est envisageable pour un deck de <em>rush</em>  de cibler ses "
+"serviteurs en premier : cela peut nécessiter quelques combats pour les abattre, mais ils peuvent déactiver leur "
+"prédateur assez vite. D'un autre côté, ils ont une <strong>faible offensive</strong> et ont des difficultés à trouver"
+" un moyen d'infliger des dégâts d'influence suffisants à leur proie. C'est un problème clé pour ces archétypes."
 
-#: codex_of_the_damned/templates/strategy/archetypes.html:505
+#: codex_of_the_damned/templates/strategy/archetypes.html:526
 #, fuzzy
 msgid "Finnish Politics"
 msgstr "Politique Finlandaise"
 
-#: codex_of_the_damned/templates/strategy/archetypes.html:507
+#: codex_of_the_damned/templates/strategy/archetypes.html:528
 msgid ""
 "If they do not take down their prey very fast, rush decks have a unique control over the table balance as they can "
 "take down the minions of any Methusalah. Proper table control is essential to the succes of such builds, but it also "
 "opens a unique strategy for negociation: using the threat of combat to get things out of your neighbours."
 msgstr ""
-"S'ils ne peuvent sortir leur proie très rapidement, les decks de rush ont touefois un exceptionnel contrôle sur "
+"S'ils ne peuvent sortir leur proie très rapidement, les decks de rush ont toutefois un contrôle exceptionnel sur "
 "l'équilibre de la table, puisqu'ils peuvent abattre les serviteurs de n'importe quel Mathusalem. Un bon contrôle de "
 "la table est essentiel pour ces decks, mais cela ouvre aussi la voie à une stratégie de négociation unique en son "
 "genre : utiliser la menace d'un combat pour extorquer des concessions de ses voisins."
 
-#: codex_of_the_damned/templates/strategy/archetypes.html:515
+#: codex_of_the_damned/templates/strategy/archetypes.html:536
 msgid ""
 "The finnish players have perfect this negociation strategy to such an extent, it is now known as <em>\"Finnish "
 "Politics\"</em> among seasoned players."
@@ -2234,28 +2265,29 @@ msgstr ""
 "Les joueurs et joueuses finlandais ont perfectionné cette stratégie de négociation à un tel niveau qu'elle est "
 "désormais connue comme la <em>\"Politique Finlandaise\"</em> parmis les joueurs expérimentés."
 
-#: codex_of_the_damned/templates/strategy/archetypes.html:521
+#: codex_of_the_damned/templates/strategy/archetypes.html:542
 msgid "Special"
 msgstr "Spécial"
 
-#: codex_of_the_damned/templates/strategy/archetypes.html:523
+#: codex_of_the_damned/templates/strategy/archetypes.html:544
 msgid ""
 "Some decks do not fit into any of the aforementioned categories. These rare constructs are unique combinations of "
 "cards that proved unexpectedly efficient. The following examples are not exhaustive."
 msgstr ""
-"Certain decks n'entrent dans aucune des catégories susmentionnés. These rare constructs are unique combinations of "
-"cards that proved unexpectedly efficient. The following examples are not exhaustive."
+"Certain decks n'entrent dans aucune des catégories susmentionnées. Ces construictions rares reposent sur des "
+"combinaisons de cartes exceptionnelles qui ont démontré leur étonnante efficacité. Les exemples qui suivent ne sont "
+"pas exhautifs."
 
-#: codex_of_the_damned/templates/strategy/archetypes.html:532
+#: codex_of_the_damned/templates/strategy/archetypes.html:553
 #, python-format
 msgid ""
 "Some archetypes focus on stealing the vampires of their opponents, like %(mind_rape)s, %(spirit_marionette)s and "
 "%(baltimore_purge)s."
 msgstr ""
-"Certains archétypes tentent de voler les vampires de leurs adversaires, COMME %(mind_rape)s, %(spirit_marionette)s ET"
+"Certains archétypes tentent de voler les vampires de leurs adversaires, comme %(mind_rape)s, %(spirit_marionette)s et"
 " %(baltimore_purge)s."
 
-#: codex_of_the_damned/templates/strategy/archetypes.html:542
+#: codex_of_the_damned/templates/strategy/archetypes.html:563
 #, python-format
 msgid ""
 "The %(cybelotron)s is an archetype created by <em>Erik Torstensson</em> in 2007 and refined by <em>Ben Peal</em>. It "
@@ -2264,7 +2296,7 @@ msgstr ""
 "Le %(cybelotron)s est un archétype créé par <em>Erik Torstensson</em> en 2007 et amélioré par <em>Ben Peal</em>. Il "
 "utilise une combinaison complexe pour jouer %(call_the_great_beast)s efficacement."
 
-#: codex_of_the_damned/templates/strategy/archetypes.html:552
+#: codex_of_the_damned/templates/strategy/archetypes.html:573
 #, python-format
 msgid ""
 "The %(madness_reversal)s is an archetype created by <em>Orian Gissler</em> in 2009 and refined by <em>Danilo "
@@ -2273,7 +2305,7 @@ msgstr ""
 "%(madness_reversal)s est un archétype créé par <em>Orian Gissler</em> en 2009 et amélioré par <em>Danilo Torrisi</em>"
 " en 2017. Il utilise %(reversal_of_fortunes)s pour jouer deux fois plus que ses adversaires."
 
-#: codex_of_the_damned/templates/strategy/archetypes.html:564
+#: codex_of_the_damned/templates/strategy/archetypes.html:585
 msgid ""
 "Special decks tend to use complicated card combinations to a devastative effect. Their strenght is in the "
 "<strong>absolute advantage</strong> their combination provide if all goes well. Their weakness is the frailty of such"

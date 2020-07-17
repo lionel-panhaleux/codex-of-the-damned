@@ -2,6 +2,27 @@
 
 {% block content %}
 <h1 id="archetypes">{{ _("Archetypes") }}</h1>
+<p>
+    {% trans trimmed %}
+    V:tES has been played for years, and this has given birth to a number of efficient decks archetypes.
+    Given the multiplayer nature of the game, many archetypes are valid choices at the highest level,
+    as the efficiency of a deck depends a lot on its table placement and on the negociations skills of the player.
+    Even on the modern tournament scene, dozens of different archetypes are usually played in a single event.
+    {% endtrans %}
+</p>
+<p>
+    {% trans trimmed %}
+    As such, having a basic understanding of the most common archetypes and their strong and weak points is
+    a very important skill for a player. Knowing the inner workings of the archetypes on the table is the only way
+    to fathom the table balance and detect the opportunities as they arise during the game.
+    {% endtrans %}
+</p>
+<p>
+    {% trans trimmed %}
+    The archetypes are usually divided into broader categories, as presented here.
+    {% endtrans %}
+</p>
+
 <h2 id="bleed">{{ _("Bleed") }}</h2>
 <p>
     {% trans trimmed %}
@@ -139,7 +160,7 @@
         {% trans trimmed %}
         Stealth & Bleed archetypes have a strong stealth module, but it can jam the hand.
         If the prey assumes she will not have the means to block, she should decide not to attempt to block at all,
-        and <strong>try to jam her predator hand on the stealth module.</strong>
+        and <strong>try to jam her predator hand on the stealth module</strong>.
         Well constructed Stealth & Bleed decks include some rotation tools to help with that.
         {% endtrans %}
     </p>
@@ -249,7 +270,7 @@
         {% endtrans %}
     </p>
 </div>
-<h2 id="wall">{{ _(Wall) }}</h2>
+<h2 id="wall">{{ _("Wall") }}</h2>
 <p>
     {% trans trimmed
         eyes_of_argus=card("Eyes of Argus"),
@@ -284,7 +305,7 @@
             tzimisce_wall=link("/archetypes/tzimisce-wall")
         %}
         The {{ tzimisce_wall }} is also a very classic archetype,
-        as the combination of {{ ani }} & {{ vic }} offers even better intercept capabilities.
+        as the combination of {{ ani }}{{ vic }} offers even better intercept capabilities.
         {% endtrans %}
     </li>
     <li>
