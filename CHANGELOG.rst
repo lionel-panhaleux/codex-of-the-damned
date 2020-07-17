@@ -1,7 +1,7 @@
 Changelog
 =========
 
-0.17 (unreleased)
+0.17 (2020-07-17)
 -----------------
 
 - Enabled Google Analytics
