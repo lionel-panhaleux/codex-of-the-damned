@@ -4,7 +4,8 @@ Changelog
 0.17 (unreleased)
 -----------------
 
-- Nothing changed yet.
+- Enabled Google Analytics
+- Finished the FR Translation of the strategy section
 
 
 0.16 (2020-07-17)
