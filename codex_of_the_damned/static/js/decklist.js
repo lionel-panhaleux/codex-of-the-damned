@@ -13,7 +13,7 @@ function dCi(i) {
     if (!card) {
         return
     }
-    var name = card.textContent.replace("™ ", "(TM) ").toLowerCase()
+    var name = card.textContent.toLowerCase()
     if (name.startsWith("the ")) {
         name = name.substr(4, name.length) + "the"
     }
@@ -69,7 +69,7 @@ function modalKeydown(event) {
     }
 }
 function cardElement(element, i) {
-    const name = element["name"].replace("(TM) ", "™ ")
+    const name = element["name"]
     return `<li>${element["count"]} <span class="card" id="card-${i}" onclick="dCi(${i})">${name}</span></li>`
 }
 function wrapText(text, maxlen) {

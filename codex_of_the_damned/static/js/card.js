@@ -122,10 +122,7 @@ function formatText(text) {
 function displayCard(data, push) {
     clearResults()
     document.getElementById("result-image").src = data["Image"]
-    document.getElementById("card-title").textContent = data["Name"].replace(
-        "(TM) ",
-        "™ "
-    )
+    document.getElementById("card-title").textContent = data["Name"]
     document.getElementById("card_info").innerHTML = `#${data["Id"]}<br/>${data[
         "Set"
     ].join(" ")}`
