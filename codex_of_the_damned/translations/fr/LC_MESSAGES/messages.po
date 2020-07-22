@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: codex 0.X\n"
 "Report-Msgid-Bugs-To: lionel.panhaleux+codex@gmail.com\n"
-"POT-Creation-Date: 2020-07-17 19:39+0200\n"
+"POT-Creation-Date: 2020-07-22 08:41+0200\n"
 "PO-Revision-Date: 2020-07-04 08:50+0200\n"
 "Last-Translator: Lionel Panhaleux <lionel.panhaleux+codex@gmail.com>\n"
 "Language: fr\n"
@@ -885,7 +885,7 @@ msgstr ""
 "bon exemple. </p>"
 
 #: codex_of_the_damned/templates/archetypes/akunanse-wall.html:40
-#: codex_of_the_damned/templates/archetypes/anti-ventrue-grinder.html:76
+#: codex_of_the_damned/templates/archetypes/anti-ventrue-grinder.html:40
 #: codex_of_the_damned/templates/archetypes/black-hand.html:24 codex_of_the_damned/templates/archetypes/death-star.html:38
 #: codex_of_the_damned/templates/archetypes/hunters.html:30
 #: codex_of_the_damned/templates/archetypes/ishtarri-politics.html:35
@@ -968,15 +968,66 @@ msgstr ""
 msgid "Riccardo Fabiani's deck"
 msgstr "deck de Riccardo Fabiani"
 
-#: codex_of_the_damned/templates/archetypes/anti-ventrue-grinder.html:82
+#: codex_of_the_damned/templates/archetypes/anti-ventrue-grinder.html:14
+#, python-format
+msgid ""
+"<h2>Highlights</h2> <p> Often spelled <strong>!Ventrue Grinder</strong> (the \"!\" prefix has been used to denote the"
+" antitribu clans for a while), this is a <em>toolbox</em> deck using the Ventrue antitribu clan and their "
+"%(for)s%(aus)s%(dom)s disciplines combination. </p> <p> The idea is to get the highest capacity vampire out, then use"
+" %(govern_the_unaligned)s at superior %(DOM)s to get more vampires out fast and cheap, then later to bleed with the "
+"help of %(conditioning)s and %(bonding)s. </p> <p> The intercept module uses %(AUS)s for intercept, wakes and "
+"bounces, and %(dom)s for additional bounces with %(deflection)s. </p> <p> The combat module uses %(for)s for damage "
+"prevention and %(weighted_walking_stick)s to deal more damage. </p> <p> The deck is on the slow side, grinding at the"
+" opponents blood and pool reserves during the game until it can finally lunge to oust its prey. </p> <h2>Tips & "
+"Tricks</h2> <p> %(daring_the_dawn)s is kept for the lunge. </p> <p> The deck has not much stealth, so it uses some "
+"<em>powerbleed</em> techniques, like %(pentex_subversion)s and %(anarch_troublemaker)s. </p> <h2>Variants</h2> <p> "
+"There are many small variations to this archetype: <li> %(the_coven)s is a rare inclusion: the deck is supposed to "
+"grind the blood out of the table, so giving opponents the opportunity to get some of it back is a bit of a stretch. "
+"%(the_rack)s is more often seen. </li> <li> %(the_kiss_of_ra)s, %(misdirection)s and %(seduction)s can be used to "
+"help get the bleed through. </li> <li> %(abbot)s, %(bowl_of_convergence)s and permanent intercept locations like "
+"%(krcg_news_radio)s are often included to help with intercept. </li> <li> %(ivory_bow)s and %(target_vitals)s are "
+"often seen in the combat module. </li> <li> %(freak_drive)s is sometimes added to increase %(a_b)s. </li> </p> <p> "
+"The <strong>Guns Grinder</strong> variant uses %(concealed_weapon)s and guns in the combat module, like in "
+"%(ravel_zorzals_deck)s from the 2016 Brazilian NC. </p> <p> The <strong>Protean Grinder</strong> variant uses "
+"%(lazverinus_thrall_of_lambach)s and %(dylan)s in the crypt for %(pro)s, in order to include %(claws_of_the_dead)s "
+"and %(earth_meld)s. %(jackson_iribarrens_deck)s won the 2009 SAC with it. </p> <p> The <strong>Powerbleed</strong> "
+"variant focuses on bleed more, using only %(aura_reading)s with some %(for)s prevention for the combat module. "
+"%(bob_josephs_deck)s won the 2018 NAC with it. </p>"
+msgstr ""
+"<h2>Principe</h2> <p> Souvent appelé <strong>!Ventrue Grinder</strong> (le préfixe \"!\" est depuis longtemps utilisé"
+" pour désigner les clans antitribu), c'est un deck <em>toolbox</em> qui utilise le clan Ventrue antitribu et leut "
+"combinaison de disciplines %(for)s%(aus)s%(dom)s. </p> <p> L'idées est de sourtir le vampire de plus haute capacité "
+"en premier, puis d'utiliser %(govern_the_unaligned)s en supérieur %(DOM)s pour sortir plus de vampire à moindre "
+"frais, pour enfin morder à l'aide de %(conditioning)s et %(bonding)s. </p> <p> Le module d'interception utilise "
+"%(AUS)s pour l'interception, les réveils et les rebonds, et %(dom)s pour des rebonds supplémentaires avec "
+"%(deflection)s. </p> <p> Le module de combat utilise %(for)s pour la prévention de dégâts et "
+"%(weighted_walking_stick)s pour en infliger plus. </p> <p> Les deck est plutôt lent, réduisant les réserves de sang "
+"et d'influence de ses adversaires durant la partie jusqu'à pouvoir finalement se fendre pour sortir sa proie. </p> "
+"<h2>Trucs & Astuces</h2> <p> %(daring_the_dawn)s est conservé pour la fente. </p> <p> Le deck n'a pas beaucoup de "
+"discrétion, donc il utilise quelques techniques de <em>powerbleed</em>, comme %(pentex_subversion)s et "
+"%(anarch_troublemaker)s. </p> <h2>Variantes</h2> <p> Il y a beaucoup de variantes mineures pour cet archétype: <li> "
+"%(the_coven)s est rarement inclus : le deck est supposé réduire la quantité de sang à la table, donc donner à des "
+"adversaires la possibilité d'en récupérer est un peu tordu. %(the_rack)s est plus souvent présent. </li> <li> "
+"%(the_kiss_of_ra)s, %(misdirection)s et %(seduction)s peuvent être utilisés pour aider à passer les morsures. </li> "
+"<li> %(abbot)s, %(bowl_of_convergence)s et des lieux donnant de l'interception permanente comme %(krcg_news_radio)s "
+"sont souvent inclus pour aider à bloquer. </li> <li> %(ivory_bow)s et %(target_vitals)s sont souvent présents dans le"
+" module de combat. </li> <li> %(freak_drive)s est parfois ajouté pour augmenter l'%(a_b)s. </li> </p> <p> La variante"
+" <strong>Guns Grinder</strong> utilise %(concealed_weapon)s et des armes à feu pour le module de combat, comme dans "
+"le %(ravel_zorzals_deck)s du NC brésilien de 2016. </p> <p> La variante <strong>Protean Grinder</strong> utilise "
+"%(lazverinus_thrall_of_lambach)s et %(dylan)s dans la crypte pour %(pro)s, pour pouvoir jouer %(claws_of_the_dead)s "
+"et %(earth_meld)s. Le %(jackson_iribarrens_deck)s a gagné le SAC 2009 SAC avec. </p> <p> La variante "
+"<strong>Powerbleed</strong> est plus centrée sur la morsure, en n'utilisant que %(aura_reading)s avec quelques "
+"préventions %(for)s pour le module de combat. Le %(bob_josephs_deck)s a gagné le NAC 2018 NAC avec. </p>"
+
+#: codex_of_the_damned/templates/archetypes/anti-ventrue-grinder.html:41
 msgid "Ravel Zorzal's deck"
 msgstr "deck de Ravel Zorzal"
 
-#: codex_of_the_damned/templates/archetypes/anti-ventrue-grinder.html:91
+#: codex_of_the_damned/templates/archetypes/anti-ventrue-grinder.html:42
 msgid "Jackson Iribarren's deck"
 msgstr "deck de Jackson Iribarren"
 
-#: codex_of_the_damned/templates/archetypes/anti-ventrue-grinder.html:98
+#: codex_of_the_damned/templates/archetypes/anti-ventrue-grinder.html:43
 msgid "Bob Joseph's deck"
 msgstr "deck de Bob Joseph"
 
