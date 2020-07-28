@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: codex 0.X\n"
 "Report-Msgid-Bugs-To: lionel.panhaleux+codex@gmail.com\n"
-"POT-Creation-Date: 2020-07-22 09:22+0200\n"
+"POT-Creation-Date: 2020-07-28 18:28+0200\n"
 "PO-Revision-Date: 2020-07-04 08:50+0200\n"
 "Last-Translator: Lionel Panhaleux <lionel.panhaleux+codex@gmail.com>\n"
 "Language: fr\n"
@@ -886,7 +886,7 @@ msgstr ""
 
 #: codex_of_the_damned/templates/archetypes/akunanse-wall.html:40
 #: codex_of_the_damned/templates/archetypes/anti-ventrue-grinder.html:40
-#: codex_of_the_damned/templates/archetypes/black-hand.html:24 codex_of_the_damned/templates/archetypes/death-star.html:38
+#: codex_of_the_damned/templates/archetypes/black-hand.html:29 codex_of_the_damned/templates/archetypes/death-star.html:38
 #: codex_of_the_damned/templates/archetypes/hunters.html:30
 #: codex_of_the_damned/templates/archetypes/ishtarri-politics.html:35
 #: codex_of_the_damned/templates/archetypes/mistress.html:47
@@ -1105,11 +1105,54 @@ msgstr ""
 msgid "Ivor Blockley's deck"
 msgstr "deck d'Ivor Blockley"
 
-#: codex_of_the_damned/templates/archetypes/black-hand.html:66
+#: codex_of_the_damned/templates/archetypes/black-hand.html:14
+#, python-format
+msgid ""
+"<h2>Highlights</h2> <p> This is a <em>stealth & bleed</em> deck using %(reunion_kamut)s and %(recruitment_exercise)s "
+"to get more vampires out fast and cheap. Bleed is done using %(loss)s, with %(obf)s modifiers for stealth. </p> <p> "
+"Black Hand Seraphs have acces to the %(a_b)s enhancers %(tattoo_signal)s and %(seraphs_second)s, allowing the same "
+"vampire to run both bloat and bleed actions in a single turn. </p> <p> %(watchtower_the_wolves_feed)s hits the table "
+"at some point to improve bleed power, after an innocuous Gehenna card like %(break_the_code)s has been played. </p> "
+"<h2>Tips & Tricks</h2> <p> %(the_art_of_memory)s is a versatile modifier and provides a bit of recursion. It can be "
+"used to get a %(loss)s, %(seraphs_second)s or %(reunion_kamut)s back, depending on the hand. </p> <p> "
+"%(blood_awakening)s can be used to improve stealth or to intercept a key action, depending on the context. </p> <p> "
+"The deck should avoid combat until %(watchtower_the_wolves_feed)s hits the table, as it has nothing else to help "
+"combat. </p> <p> %(the_fourth_cycle)s is used as a last resort safety line to avoid dying from "
+"%(watchtower_the_wolves_feed)s if too many Gehenna cards hit the table. </p> <h2>Variants</h2> <p> The Assamite "
+"version as given in example is the most common. %(truth_in_ink)s can be added along some wakes for bleed defence and "
+"%(no_trace)s for combat ends. </p> <p> A common variation uses a mid capacity multi-clan Black Hand crypt with "
+"%(dom)s. It looses the %(obf)s stealth but can be more toolboxy and even include a decent combat module. "
+"%(mark_loughmans_deck)s from 2018 is a recent example. </p> <p> %(elimelech_the_twice_damned)s can be the star of a "
+"similar construct using %(AUS)s and even %(DEM)s atop %(obf)s. It looses the access to %(loss)s but gets bounces with"
+" %(AUS)s and can even get %(kindred_spirits)s if %(DEM)s is present enough in the crypt. %(carlo_danieles_deck)s from"
+" 2019 is a recent example. </p>"
+msgstr ""
+"<h2>Principe</h2> <p> C'est un deck <em>stealth & bleed</em> qui utilise %(reunion_kamut)s et "
+"%(recruitment_exercise)s pour sortir plus de vampires à moindre coût. Les morsures sont faites avec %(loss)s, et des "
+"modifieurs %(obf)s pour la discrétion. </p> <p> Les Seraphs Black Hand ont accès aux améliorateurs d'%(a_b)s "
+"%(tattoo_signal)s et %(seraphs_second)s, ce qui permet au même vampire d'effectuer des actions de régénération et de "
+"morsure dans un seul tour. </p> <p> %(watchtower_the_wolves_feed)s arrive en jeu à un moment donné pour améliorer les"
+" morsures, après avoir joué une carte de Géhenne innocente comme %(break_the_code)s. </p> <h2>Trucs & Astuces</h2> "
+"<p> %(the_art_of_memory)s est un modificateur versatile et apporte un peu de récursivité. Il peut être utilisé pour "
+"récupérer %(loss)s, %(seraphs_second)s ou %(reunion_kamut)s, selon la main. </p> <p> %(blood_awakening)s peut être "
+"utilisé pour l'interception ou la discrétion sur une action critique, selon le contexte. </p> <p> Le deck devrait "
+"éviter le combat jusqu'à ce que %(watchtower_the_wolves_feed)s arrive en jeu, étant donné qu'il n'a rien d'autre pour"
+" l'aider en combat. </p> <p> %(the_fourth_cycle)s est utilisé en dernier ressort pour éviter de mourir à cause de "
+"%(watchtower_the_wolves_feed)s si de trop nombreuses cartes de Géhenne arrivent en jeu. </p> <h2>Variantes</h2> <p> "
+"La variante Assamite comme ici est l'exemple le plus courant. %(truth_in_ink)s peut être ajouté avec quelques réveils"
+" pour se défendre contre les morsures et %(no_trace)s pour les fins de combat. </p> <p> Une variante courante utilise"
+" des vampires Black Hand de moyenne capacité de tous clans avec %(dom)s. Elle perd la discrétion de %(obf)s mais peut"
+" être plus toolbox et même inclure un module de combat décent. Le %(mark_loughmans_deck)s de 2018 est un exemple "
+"récent. </p> <p> %(elimelech_the_twice_damned)s peut être la star d'un deck similaire en utilisant %(AUS)s et même "
+"%(DEM)s en plus de %(obf)s. Il perd l'accès à %(loss)s mais obtient des rebonds avec %(AUS)s et peut même utiliser "
+"%(kindred_spirits)s si %(DEM)s est assez présent dans la crypte. Le %(carlo_danieles_deck)s de 2019 est un exemple "
+"récent. </p>"
+
+#: codex_of_the_damned/templates/archetypes/black-hand.html:30
 msgid "Mark Loughman's deck"
 msgstr "deck de Mark Loughman"
 
-#: codex_of_the_damned/templates/archetypes/black-hand.html:73
+#: codex_of_the_damned/templates/archetypes/black-hand.html:31
 msgid "Carlo Daniele's deck"
 msgstr "deck de Carlo Daniele"
 

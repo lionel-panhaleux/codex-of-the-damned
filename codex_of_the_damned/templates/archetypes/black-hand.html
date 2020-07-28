@@ -11,68 +11,75 @@
 {% endblock %}
 
 {% block archetype %}
+{% trans trimmed
+    blood_awakening=card("Blood Awakening"),
+    break_the_code=card("Break the Code"),
+    elimelech_the_twice_damned=card("Elimelech the Twice Damned"),
+    kindred_spirits=card("Kindred Spirits"),
+    loss=card("Loss"),
+    no_trace=card("No Trace"),
+    recruitment_exercise=card("Recruitment Exercise"),
+    reunion_kamut=card("Reunion Kamut"),
+    seraphs_second=card("Seraph's Second"),
+    tattoo_signal=card("Tattoo Signal"),
+    the_art_of_memory=card("The Art of Memory"),
+    the_fourth_cycle=card("The Fourth Cycle"),
+    truth_in_ink=card("Truth in Ink"),
+    watchtower_the_wolves_feed=card("Watchtower: The Wolves Feed"),
+    a_b=link("/strategy/fundamentals", _("A&B"), _anchor="AB"),
+    mark_loughmans_deck=link("/deck-search", _("Mark Loughman's deck"), twda_id="2018ot2co"),
+    carlo_danieles_deck=link("/deck-search", _("Carlo Daniele's deck"), twda_id="2019nbbi")
+%}
 <h2>Highlights</h2>
 <p>
     This is a <em>stealth & bleed</em> deck using
-    {{ card("Reunion Kamut") }} and
-    {{ card("Recruitment Exercise") }}
-    to get more vampires out fast and cheap.
-    Bleed is done using {{ card("Loss") }}, with <i>o</i> modifiers for stealth.
+    {{ reunion_kamut }} and {{ recruitment_exercise }} to get more vampires out fast and cheap.
+    Bleed is done using {{ loss }}, with {{ obf }} modifiers for stealth.
 </p>
 <p>
-    Black Hand Seraphs have acces to the
-    {{ link("/strategy/fundamentals", _("A&B"), _anchor="AB") }} enhancers
-    {{ card("Tattoo Signal") }} and
-    {{ card("Seraph's Second") }}, allowing the same vampire to
-    run both bloat and bleed actions in a single turn.
+    Black Hand Seraphs have acces to the {{ a_b }} enhancers {{ tattoo_signal }} and
+    {{ seraphs_second }}, allowing the same vampire to run both bloat and bleed actions in a single turn.
 </p>
 <p>
-    {{ card("Watchtower: The Wolves Feed") }}
-    hits the table at some point to improve bleed power, after an innocuous Gehenna card like
-    {{ card("Break the Code") }} has been played.
+    {{ watchtower_the_wolves_feed }} hits the table at some point to improve bleed power,
+    after an innocuous Gehenna card like {{ break_the_code }} has been played.
 </p>
 <h2>Tips & Tricks</h2>
 <p>
-    {{ card("The Art of Memory") }} is a versatile
-    modifier and provides a bit of recursion. It can be used to get a
-    {{ card("Loss") }},
-    {{ card("Seraph's Second") }} or
-    {{ card("Reunion Kamut") }} back, depending on the hand.
+    {{ the_art_of_memory }} is a versatile modifier and provides a bit of recursion.
+    It can be used to get a {{ loss }}, {{ seraphs_second }} or {{ reunion_kamut }} back,
+    depending on the hand.
 </p>
 <p>
-    {{ card("Blood Awakening") }} can be used to improve stealth
-    or to intercept a key action, depending on the context.
+    {{ blood_awakening }} can be used to improve stealth or to intercept a key action,
+    depending on the context.
 </p>
 <p>
-    The deck should avoid combat until
-    {{ card("Watchtower: The Wolves Feed") }} hits the table,
+    The deck should avoid combat until {{ watchtower_the_wolves_feed }} hits the table,
     as it has nothing else to help combat.
 </p>
 <p>
-    {{ card("The Fourth Cycle") }} is used as a last resort safety line
-    to avoid dying from
-    {{ card("Watchtower: The Wolves Feed") }}
-    if too many Gehenna cards hit the table.
+    {{ the_fourth_cycle }} is used as a last resort safety line to avoid dying from
+    {{ watchtower_the_wolves_feed }} if too many Gehenna cards hit the table.
 </p>
 <h2>Variants</h2>
 <p>
     The Assamite version as given in example is the most common.
-    {{ card("Truth in Ink") }} can be added along some wakes
-    for bleed defence and {{ card("No Trace") }} for combat ends.
+    {{ truth_in_ink }} can be added along some wakes for bleed defence
+    and {{ no_trace }} for combat ends.
 </p>
 <p>
-    A common variation uses a mid capacity multi-clan Black Hand crypt with <i>d</i>.
-    It looses the <i>o</i> stealth but can be more toolboxy and even include a decent combat module.
-    {{ link("/deck-search", _("Mark Loughman's deck"), twda_id="2018ot2co") }} from 2018 is a recent example.
+    A common variation uses a mid capacity multi-clan Black Hand crypt with {{ dom }}.
+    It looses the {{ obf }} stealth but can be more toolboxy and even include a decent combat module.
+    {{ mark_loughmans_deck }} from 2018 is a recent example.
 </p>
 <p>
-    {{ card("Elimelech the Twice Damned") }} can be
-    the star of a similar construct using <i>A</i> and even <i>E</i> atop <i>o</i>. It looses the access to
-    {{ card("Loss") }} but gets bounces with <i>A</i> and can even get
-    {{ card("Kindred Spirits") }} if <i>E</i> is present enough
-    in the crypt. {{ link("/deck-search", _("Carlo Daniele's deck"), twda_id="2019nbbi") }} from 2019
-    is a recent example.
+    {{ elimelech_the_twice_damned }} can be the star of a similar construct using
+    {{ AUS }} and even {{ DEM }} atop {{ obf }}. It looses the access to {{ loss }}
+    but gets bounces with {{ AUS }} and can even get {{ kindred_spirits }} if {{ DEM }}
+    is present enough in the crypt. {{ carlo_danieles_deck }} from 2019 is a recent example.
 </p>
+{% endtrans %}
 {% endblock %}
 
 {% block errata %}
