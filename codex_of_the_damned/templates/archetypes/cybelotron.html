@@ -11,69 +11,73 @@
 {% endblock %}
 
 {% block archetype %}
+{% trans trimmed 
+    antediluvian_awakening=card("Antediluvian Awakening"),
+    archon_investigation=card("Archon Investigation"),
+    call_the_great_beast=card("Call the Great Beast"),
+    cybele=card("Cybele"),
+    dark_influences=card("Dark Influences"),
+    dreams_of_the_sphinx=card("Dreams of the Sphinx"),
+    golconda_inner_peace=card("Golconda: Inner Peace"),
+    magic_of_the_smith=card("Magic of the Smith"),
+    majesty=card("Majesty"),
+    redeem_the_lost_soul=card("Redeem the Lost Soul"),
+    soul_gem_of_etrius=card("Soul Gem of Etrius"),
+    spying_mission=card("Spying Mission"),
+    the_barrens=card("The Barrens"),
+    truth_of_a_thousand_lies=card("Truth of a Thousand Lies"),
+    unleash_hells_fury=card("Unleash Hell's Fury")
+%}
 <h2>Highlights</h2>
 <p>
-    This is a <em>special</em> deck using {{ card("Cybele") }} and
-    {{ card("Call the Great Beast") }}.
+    This is a <em>special</em> deck using {{ cybele }} and {{ call_the_great_beast }}.
 </p>
 <p>
-    The idea is to put a Master: Discipline on {{ card("Cybele") }}
-    to get her to 11 capacity, use {{ card("Magic of the Smith") }}
-    to fetch a {{ card("Soul Gem of Etrius") }},
-    unlock with {{ card("Truth of a Thousand Lies") }},
-    then play {{ card("Call the Great Beast") }} with
-    <i>ORS</i> and burn,
-    triggering the {{ card("Soul Gem of Etrius") }}.
-    A new {{ card("Cybele") }} comes back with the
-    {{ card("Soul Gem of Etrius") }} and bleeds alongside the
-    Great Beast.
+    The idea is to put a Master: Discipline on {{ cybele }} to get her to 11 capacity,
+    use {{ magic_of_the_smith }} to fetch a {{ soul_gem_of_etrius }}, unlock with
+    {{ truth_of_a_thousand_lies }}, then play {{ call_the_great_beast }} with
+    {{ OBF }}{{ PRE }}{{ SER }} and burn, triggering the {{ soul_gem_of_etrius }}.
+    A new {{ cybele }} comes back with the {{ soul_gem_of_etrius }} and bleeds
+    alongside the Great Beast.
 </p>
 <p>
-    This is a complicated combination but, if done right, {{ card("Cybele") }}
-    and her "resurrection" can both bleed in the same turn for 3 each, plus 3 from the Great Beast.
-    {{ card("Golconda: Inner Peace") }} is used on the
-    Great Beast and
-    {{ card("Redeem the Lost Soul") }} on the burnt
-    {{ card("Cybele") }}, for a massive bloat.
+    This is a complicated combination but, if done right,
+    {{ cybele }} and her "resurrection" can both bleed in the same turn for 3 each,
+    plus 3 from the Great Beast. {{ golconda_inner_peace }} is used on the Great Beast
+    and {{ redeem_the_lost_soul }} on the burnt {{ cybele }}, for a massive bloat.
 </p>
 <p>
-    {{ card("Dreams of the Sphinx") }} and
-    {{ card("The Barrens") }} are used to discard the spurious
-    {{ card("Magic of the Smith") }}
-    once the combo is up and running.
+    {{ dreams_of_the_sphinx }} and {{ the_barrens }} are used to discard the spurious
+    {{ magic_of_the_smith }} once the combo is up and running.
 </p>
 <p>
-    The combat module is defensive, using only {{ card("Majesty") }}.
+    The combat module is defensive, using only {{ majesty }}.
 </p>
 <h2>Tips & Tricks</h2>
 <p>
-    {{ card("Antediluvian Awakening") }}
-    can help burn an exhausted {{ card("Cybele") }} to avoid getting stuck
-    in torpor.
+    {{ antediluvian_awakening }} can help burn an exhausted {{ cybele }}
+    to avoid getting stuck in torpor.
 </p>
 <p>
-    Once {{ card("Cybele") }} is at 11 capacity with the
-    {{ card("Soul Gem of Etrius") }},
-    {{ card("Truth of a Thousand Lies") }} can be used
-    to get her bleed up to 5: If the prey plays
-    {{ card("Archon Investigation") }}, a new
-    {{ card("Cybele") }} just comes into play and bleeds again.
+    Once {{ cybele }} is at 11 capacity with the {{ soul_gem_of_etrius }},
+    {{ truth_of_a_thousand_lies }} can be used to get her bleed up to 5:
+    if the prey plays {{ archon_investigation }}, a new {{ cybele }}
+    just comes into play and bleeds again.
 </p>
 <p>
-    {{ card("Spying Mission") }} can be used if a bleed is bounced
+    {{ spying_mission }} can be used if a bleed is bounced
     to avoid dealing damage to an ally.
 </p>
 <p>
-    Sadly, {{ card("Golconda: Inner Peace") }} can not
-    be used on {{ card("Cybele") }}: as it does not burn her, it does not
-    trigger the {{ card("Soul Gem of Etrius") }} effect.
+    Sadly, {{ golconda_inner_peace }} can not be used on {{ cybele }}:
+    as it does not burn her, it does not trigger the {{ soul_gem_of_etrius }} effect.
 </p>
 <h2>Variants</h2>
 <p>
     There are only minor variations to this archetype.
-    {{ card("Dark Influences") }} and
-    {{ card("Unleash Hell's Fury") }} are often included.
+    {{ dark_influences }} and {{ unleash_hells_fury }} are often included.
 </p>
+{% endtrans %}
 {% endblock %}
 
 {% block errata %}
