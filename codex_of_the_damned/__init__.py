@@ -244,7 +244,9 @@ def display_card():
     def card(name, display_name=None):
         return flask.Markup(
             """<span class="card" onclick="dC('{fname}')">{name}</span>""".format(
-                name=display_name or name, fname=file_name(name)
+                # replace spaces with non-breakable spaces in card names
+                name=(display_name or name).replace(" ", " "),
+                fname=file_name(name),
             )
         )
 
