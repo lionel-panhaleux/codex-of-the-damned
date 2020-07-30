@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: codex 0.X\n"
 "Report-Msgid-Bugs-To: lionel.panhaleux+codex@gmail.com\n"
-"POT-Creation-Date: 2020-07-30 15:38+0200\n"
+"POT-Creation-Date: 2020-07-30 15:57+0200\n"
 "PO-Revision-Date: 2020-07-04 08:50+0200\n"
 "Last-Translator: Lionel Panhaleux <lionel.panhaleux+codex@gmail.com>\n"
 "Language: fr\n"
@@ -886,7 +886,7 @@ msgstr ""
 
 #: codex_of_the_damned/templates/archetypes/akunanse-wall.html:40
 #: codex_of_the_damned/templates/archetypes/anti-ventrue-grinder.html:40
-#: codex_of_the_damned/templates/archetypes/black-hand.html:29 codex_of_the_damned/templates/archetypes/death-star.html:38
+#: codex_of_the_damned/templates/archetypes/black-hand.html:29 codex_of_the_damned/templates/archetypes/death-star.html:30
 #: codex_of_the_damned/templates/archetypes/hunters.html:30
 #: codex_of_the_damned/templates/archetypes/ishtarri-politics.html:35
 #: codex_of_the_damned/templates/archetypes/mistress.html:47
@@ -1350,9 +1350,46 @@ msgstr ""
 "%(fee_stake)s. Cela dit il s'agit plutôt d'un croisement entre cet archetype et l'archetype %(death_star)s. </p>"
 
 #: codex_of_the_damned/templates/archetypes/daughters-politics.html:28
-#: codex_of_the_damned/templates/archetypes/death-star.html:56
+#: codex_of_the_damned/templates/archetypes/death-star.html:31
 msgid "Karl Schaefer's deck"
 msgstr "deck de Karl Schaefer"
+
+#: codex_of_the_damned/templates/archetypes/death-star.html:14
+#, python-format
+msgid ""
+"<h2>Highlights</h2> <p> This is a <em>breed & boon</em> anarch political deck using %(alamut)s and %(fee_stake)s "
+"actions to get votes, plus %(the_embrace)s and %(web_of_knives_recruit)s for breeding, %(consanguineous_boon)s and "
+"%(exclusion_principle)s for bloating. </p> <p> The idea is to use %(revolutionary_council)s with a lot of anarchs at "
+"hand to deliver <strong>more than a dozen pool damage in a single blow</strong>, hence the <em>\"Death Star\"</em> "
+"name. </p> <p> The deck has a strong stealth module with %(OBF)s. </p> <h2>Tips & Tricks</h2> <p> During the "
+"beginning of the game, the deck should focus on breeding and bloating, surviving its predator. </p> <p> "
+"%(crimeth_inc)s and %(firebrand)s are used to improve %(a_b)s. </p> <p> %(alamut)s should be resplenished as much as "
+"possible. Vampires with %(obf)s are supposed to get some bleed through (even for 1 pool) to get tokens on it fast. If"
+" drawn, %(club_illusion)s make these bleed stronger. </p> <p> In late game, %(garibaldi_meucci_museum)s helps get "
+"some %(revolutionary_council)s back in hand to finish the table. </p> <h2>Variants</h2> <p> This decklist is quite "
+"famous, as Matt Morgan won the North American Championship (NAC) first day with it, only to see Ben Peal win the "
+"final on day 2 with an almost identical decklist. </p> <p> %(karl_schaefers_deck)s from 2019 is a variant using "
+"<em>Daughters of Cacophony</em> instead of <em>Assamite</em>. %(alamut)s, %(obf)s stealth modifiers and "
+"%(web_of_knives_recruit)s are lost, but the <em>Daughters of Cacophony</em> have access to %(pre)s vote modifiers and"
+" combat ends, %(conductor)s, %(the_missing_voice)s, %(lily_prelude)s and %(madrigal)s, making up for it. </p>"
+msgstr ""
+"<h2>Principe</h2> <p> C'est un deck politique Anarch <em>breed & boon</em> qui utilise %(alamut)s et des actions "
+"%(fee_stake)s pour avoir des votes, plus %(the_embrace)s et %(web_of_knives_recruit)s pour se reproduire, "
+"%(consanguineous_boon)s et %(exclusion_principle)s pour la régénération. </p> <p> L'idée est d'utiliser "
+"%(revolutionary_council)s avec beaucoup d'Anarchs sous la main pour infliger <strong>plus d'une dizaine de dégâts "
+"d'influence en un seul coup</strong>, d'où le nom <em>\"Death Star\"</em>. </p> <p> Le deck a un solide module de "
+"discrétion avec %(OBF)s. </p> <h2>Trucs & Astuces</h2> <p> En début de partie, le deck devrait se concentrer sur la "
+"reproduction et la régénération, pour survivre à son prédateur. </p> <p> %(crimeth_inc)s et %(firebrand)s sont "
+"utilisés pour améliorer l'%(a_b)s. </p> <p> %(alamut)s devrait être remplie autant que possible. Les vampires avec "
+"%(obf)s sont supposés passer quelques morsures (même pour un seul point) pour y mettre rapidement des compteurs. S'il"
+" est pioché, %(club_illusion)s renforce ces morsures. </p> <p> En fin de jeu, %(garibaldi_meucci_museum)s permet de "
+"récupérer quelques %(revolutionary_council)s en main pour finir la table. </p> <h2>Variantes</h2> <p> Cette decklist "
+"est plutôt célèbre, puisque Matt Morgan a gagné le premier jour du North American Championship (NAC) avec, et a pu "
+"voir Ben Peal gagner en finale le second jour avec une decklist quasiment identique. </p> <p> Le "
+"%(karl_schaefers_deck)s de 2019 est une variante qui utilise les <em>Filles de la Cacophonie</em> à la place des "
+"<em>Assamites</em>. %(alamut)s, les modificateurs de discrétion %(obf)s et %(web_of_knives_recruit)s sont perdus, "
+"mais les <em>Filles de la Cacophonie</em> ont accès aux modificateurs de vote de %(pre)s et à ses fins de combat, "
+"ainsi qu'à %(conductor)s, %(the_missing_voice)s, %(lily_prelude)s et %(madrigal)s, ce qui compense. </p>"
 
 #: codex_of_the_damned/templates/archetypes/emerald-legion.html:68
 msgid "Richard Stefan Utner's deck"
@@ -4463,4 +4500,3 @@ msgstr ""
 "situation à trois ou cinq joueurs : si la fente fonctionne, vous revenez à un nombre pair et à une situation "
 "favorable. Si elle échoue, vous restez sur un nombre impair de joueurs en ayant mis une grande pression sur la proie."
 " En général, cela signifie que la pression va revenir en force contre vous au prochain tour de table. </p>"
-
