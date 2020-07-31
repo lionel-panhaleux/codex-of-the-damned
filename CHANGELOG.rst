@@ -1,7 +1,7 @@
 Changelog
 =========
 
-0.18 (unreleased)
+0.18 (2020-07-31)
 -----------------
 
 - Reference Corwin's video in Online play section
