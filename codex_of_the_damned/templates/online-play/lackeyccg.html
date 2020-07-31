@@ -12,6 +12,13 @@
         in real time, as it is free and up-to-date cardwise.
         {% endtrans %}
     </p>
+    <p>
+        {% trans trimmed
+            corwin_bradleys_video=external("https://youtu.be/1kyf4yeyfXc", _("Corwin Brindley's video"))
+        %}
+        You can check {{ corwin_bradleys_video }} for a comprehensive tutorial.
+        {% endtrans %}
+    </p>
     <h2>{{ _('Install') }}</h2>
     <p>
         {% trans trimmed 

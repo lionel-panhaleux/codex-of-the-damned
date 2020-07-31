@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: codex 0.X\n"
 "Report-Msgid-Bugs-To: lionel.panhaleux+codex@gmail.com\n"
-"POT-Creation-Date: 2020-07-30 16:19+0200\n"
+"POT-Creation-Date: 2020-07-31 09:52+0200\n"
 "PO-Revision-Date: 2020-07-04 08:50+0200\n"
 "Last-Translator: Lionel Panhaleux <lionel.panhaleux+codex@gmail.com>\n"
 "Language: fr\n"
@@ -1887,26 +1887,35 @@ msgstr ""
 "aujourd'hui de la plateforme principale quand il s'agit de jouer à <strong>V:tES</strong> en temps réel, étant donné "
 "qu'il est gratuit et à jour en ce qui concerne les cartes."
 
-#: codex_of_the_damned/templates/online-play/lackeyccg.html:15
+#: codex_of_the_damned/templates/online-play/lackeyccg.html:17
+msgid "Corwin Brindley's video"
+msgstr "vidéo de Corwin Brindley"
+
+#: codex_of_the_damned/templates/online-play/lackeyccg.html:16
+#, python-format
+msgid "You can check %(corwin_bradleys_video)s for a comprehensive tutorial."
+msgstr "Vous pouvez regarder la %(corwin_bradleys_video)s pour un tutoriel complet."
+
+#: codex_of_the_damned/templates/online-play/lackeyccg.html:22
 #: codex_of_the_damned/templates/online-play/tabletop-simulator.html:16
 #: codex_of_the_damned/templates/online-play/vtes-online.html:15
 msgid "Install"
 msgstr "Installation"
 
-#: codex_of_the_damned/templates/online-play/lackeyccg.html:17
+#: codex_of_the_damned/templates/online-play/lackeyccg.html:24
 #, python-format
 msgid "Go to the %(lackey)s page and install the software on your system."
 msgstr "Allez sur la page de %(lackey)s et installez le logiciel sur votre système."
 
-#: codex_of_the_damned/templates/online-play/lackeyccg.html:24
+#: codex_of_the_damned/templates/online-play/lackeyccg.html:31
 msgid "On Mac OSX"
 msgstr "Sur Mac OSX"
 
-#: codex_of_the_damned/templates/online-play/lackeyccg.html:26
+#: codex_of_the_damned/templates/online-play/lackeyccg.html:33
 msgid "The system's security prevents the application to run:"
 msgstr "La sécurité du système empêche l'application de tourner :"
 
-#: codex_of_the_damned/templates/online-play/lackeyccg.html:30
+#: codex_of_the_damned/templates/online-play/lackeyccg.html:37
 #, python-format
 msgid ""
 "If you just allow it in your system preference, it will take you to a \"Missing fonts\" %(error_web_page)s instead of"
@@ -1918,21 +1927,21 @@ msgstr ""
 " tapez la commande suivante :<br /> %(command_line)s<br /> Remplacez la dernière partie avec le chemin d'accès de "
 "votre dossier LackeyCCG si vous ne l'avez pas mis dans le dossier Applications."
 
-#: codex_of_the_damned/templates/online-play/lackeyccg.html:32
+#: codex_of_the_damned/templates/online-play/lackeyccg.html:39
 msgid "error web page"
 msgstr "page web d’erreur"
 
-#: codex_of_the_damned/templates/online-play/lackeyccg.html:44
+#: codex_of_the_damned/templates/online-play/lackeyccg.html:51
 msgid "On Windows"
 msgstr "Sur Windows"
 
-#: codex_of_the_damned/templates/online-play/lackeyccg.html:46
+#: codex_of_the_damned/templates/online-play/lackeyccg.html:53
 msgid "The system's security prevents the application to run if it is not run with <strong>admin privileges</strong>."
 msgstr ""
 "La sécurité du système vous empêchera de lancer l'application si elle n'est pas lancée avec les <strong>privilèges "
 "administrateur</strong>."
 
-#: codex_of_the_damned/templates/online-play/lackeyccg.html:53
+#: codex_of_the_damned/templates/online-play/lackeyccg.html:60
 #, python-format
 msgid ""
 "Go to the %(plugins)s tab and paste this AutoUpdate URL to activate the <strong>VtES</strong> plugin:<br /> "
@@ -1941,7 +1950,7 @@ msgstr ""
 "Go to the %(plugins)s tab and paste this AutoUpdate URL to activate the <strong>VtES</strong> plugin:<br /> "
 "%(autoupdate_url)s<br /> then click the %(install)s button."
 
-#: codex_of_the_damned/templates/online-play/lackeyccg.html:66
+#: codex_of_the_damned/templates/online-play/lackeyccg.html:73
 #, python-format
 msgid ""
 "This takes a few minutes. Once the download is finished and displays %(autoupdate_finished)s, click the "
@@ -1950,7 +1959,7 @@ msgstr ""
 "Cela prend quelques minutes. Une fois le téléchargement terminé et que %(autoupdate_finished)s s'affiche, cliquez le "
 "bouton %(browse_installed)s, sélectionnez le plugin %(vtes)s et cliquez sur le bouton %(choose)s."
 
-#: codex_of_the_damned/templates/online-play/lackeyccg.html:78
+#: codex_of_the_damned/templates/online-play/lackeyccg.html:85
 #, python-format
 msgid ""
 "The interface has now adopted <strong>VtES</strong> colors. Go back to the %(plugins)s tab and click the "
@@ -1961,23 +1970,23 @@ msgstr ""
 "sur le bouton %(download_images)s. Vous pouvez laisser tourner en arrière-plan car cela prend environ 30 minutes, "
 "mais cela évitera les délais d'affichage superflus lors de l'affichage des cartes."
 
-#: codex_of_the_damned/templates/online-play/lackeyccg.html:90
+#: codex_of_the_damned/templates/online-play/lackeyccg.html:97
 #, python-format
 msgid "Now go to the %(preferences)s tab and choose a suitable nickname. You're all set."
 msgstr "Maintenant retournez sur l'onglet %(preferences)s et choisissez un surnom adapté. Vous êtes prêt."
 
-#: codex_of_the_damned/templates/online-play/lackeyccg.html:97
+#: codex_of_the_damned/templates/online-play/lackeyccg.html:104
 #: codex_of_the_damned/templates/online-play/tabletop-simulator.html:30
 #: codex_of_the_damned/templates/online-play/vtes-online.html:31
 msgid "Play"
 msgstr "Jouer"
 
-#: codex_of_the_damned/templates/online-play/lackeyccg.html:99
+#: codex_of_the_damned/templates/online-play/lackeyccg.html:106
 #, python-format
 msgid "To find an online game, go to the %(server)s tab and click the %(connect)s button."
 msgstr "Pour trouver une partie en ligne, allez sur l'onglet %(server)s et cliquez sur le bouton %(connect)s."
 
-#: codex_of_the_damned/templates/online-play/lackeyccg.html:108
+#: codex_of_the_damned/templates/online-play/lackeyccg.html:115
 #, python-format
 msgid ""
 "To use your decks exported from %(amaranth)s (use the %(export)s button), you have to copy the text file into the "
@@ -1988,7 +1997,7 @@ msgstr ""
 "texte dans le dossier %(lackey_deck)s. Vous pouvez les trouver dans l'onglet %(deck_editor)s de <em>LackeyCCG</em> en"
 " cliquant sur le bouton %(browse)s."
 
-#: codex_of_the_damned/templates/online-play/lackeyccg.html:123
+#: codex_of_the_damned/templates/online-play/lackeyccg.html:130
 #, python-format
 msgid ""
 "Alternatively, you can use the %(paste)s button to paste the decklist directly in a new deck. Make sure to paste the "
@@ -1997,15 +2006,15 @@ msgstr ""
 "Alternativement, vous pouvez utiliser le bouton %(paste)s pour coller votre decklist directement dans un nouveau "
 "deck. Make sure to paste the library and crypt parts independantly in this case."
 
-#: codex_of_the_damned/templates/online-play/lackeyccg.html:131
+#: codex_of_the_damned/templates/online-play/lackeyccg.html:138
 msgid "Finally, make sure you click the green + buttons in the interface to get access to all the menus."
 msgstr "Enfin, assurez-vous d'avoir cliqué sur les boutons verts + de l'interface pour avoir accès à tous les menus."
 
-#: codex_of_the_damned/templates/online-play/lackeyccg.html:137
+#: codex_of_the_damned/templates/online-play/lackeyccg.html:144
 msgid "Keyboard Layout"
 msgstr "Mapping de clavier"
 
-#: codex_of_the_damned/templates/online-play/lackeyccg.html:139
+#: codex_of_the_damned/templates/online-play/lackeyccg.html:146
 msgid ""
 "LackeyCCG uses a non-configurable US keyboard layout. This means you may not be able to use punctuation and numbers "
 "when typing if you do not have a US keyboard. The only known \"workaround\" is to configure your system keyboard to "
@@ -2015,41 +2024,41 @@ msgstr ""
 "ponctuation ou de nombres quand vous tapez si vous n'utilisez pas un clavier US. Le seul \"contournement\" connu est "
 "de configurer votre mapping de clavier comme US au niveau du système."
 
-#: codex_of_the_damned/templates/online-play/lackeyccg.html:146
+#: codex_of_the_damned/templates/online-play/lackeyccg.html:153
 #: codex_of_the_damned/templates/online-play/tabletop-simulator.html:48
 msgid "Useful commands"
 msgstr "Commandes utiles"
 
-#: codex_of_the_damned/templates/online-play/lackeyccg.html:148
+#: codex_of_the_damned/templates/online-play/lackeyccg.html:155
 #, python-format
 msgid "Note that you can configure keyboard shortcuts to your liking in the %(preferences)s tab."
 msgstr "Notez que vous pouvez configurer les raccourcis clavier à votre convenance dans l'onglet %(preferences)s."
 
-#: codex_of_the_damned/templates/online-play/lackeyccg.html:155
+#: codex_of_the_damned/templates/online-play/lackeyccg.html:162
 msgid "Lock or Unlock"
 msgstr "Incliner ou Redresser"
 
-#: codex_of_the_damned/templates/online-play/lackeyccg.html:156
+#: codex_of_the_damned/templates/online-play/lackeyccg.html:163
 msgid "Add a blood"
 msgstr "Ajouter un point de sang"
 
-#: codex_of_the_damned/templates/online-play/lackeyccg.html:157
+#: codex_of_the_damned/templates/online-play/lackeyccg.html:164
 msgid "Remove a blood"
 msgstr "Enlever un point de sang"
 
-#: codex_of_the_damned/templates/online-play/lackeyccg.html:158
+#: codex_of_the_damned/templates/online-play/lackeyccg.html:165
 msgid "Draw a card from library"
 msgstr "Piocher une carte de la bibliothèque"
 
-#: codex_of_the_damned/templates/online-play/lackeyccg.html:159
+#: codex_of_the_damned/templates/online-play/lackeyccg.html:166
 msgid "Peek at the face of one of your crypt card"
 msgstr "Voir la face d'une de vos cartes de crypte"
 
-#: codex_of_the_damned/templates/online-play/lackeyccg.html:163
+#: codex_of_the_damned/templates/online-play/lackeyccg.html:170
 msgid "range of commands"
 msgstr "série de commandes"
 
-#: codex_of_the_damned/templates/online-play/lackeyccg.html:162
+#: codex_of_the_damned/templates/online-play/lackeyccg.html:169
 #, python-format
 msgid ""
 "Lackey also offers a %(range_of_commands)s to use in the chat window (beginning with \"/\"). Among them, the "
