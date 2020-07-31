@@ -4,7 +4,8 @@ Changelog
 0.18 (unreleased)
 -----------------
 
-- Nothing changed yet.
+- Reference Corwin's video in Online play section
+- Additional translations for the archetypes section
 
 
 0.17 (2020-07-17)
