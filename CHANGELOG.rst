@@ -4,7 +4,8 @@ Changelog
 0.19 (unreleased)
 -----------------
 
-- Nothing changed yet.
+- Fix Pentex™ cards display
+- Additional translations for the archetypes section
 
 
 0.18 (2020-07-31)
