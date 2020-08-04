@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: codex 0.X\n"
 "Report-Msgid-Bugs-To: lionel.panhaleux+codex@gmail.com\n"
-"POT-Creation-Date: 2020-08-04 14:59+0200\n"
+"POT-Creation-Date: 2020-08-04 16:01+0200\n"
 "PO-Revision-Date: 2020-07-04 08:50+0200\n"
 "Last-Translator: Lionel Panhaleux <lionel.panhaleux+codex@gmail.com>\n"
 "Language: fr\n"
@@ -2149,6 +2149,68 @@ msgid ""
 msgstr ""
 "Lackey offre une %(range_of_commands)s qui peuvent être utilisées dans la fenêtre de chat (en commençant par \"/\"). "
 "Parmi elles, les commandes %(secret)s et %(reveal)s peuvent être utiles pour certaines cartes."
+
+#: codex_of_the_damned/templates/online-play/lackeyccg.html:178
+msgid "Host a game by IP"
+msgstr "Héberger une partie par IP"
+
+#: codex_of_the_damned/templates/online-play/lackeyccg.html:180
+msgid ""
+"From time to time, the LackeyCCG server goes down. In this case, it's still possible to host a game by IP. To do "
+"that, you need to make sure your local network configuration is compliant: you will need to configure <em>port "
+"forwarding</em> on your local network and make sure your firewall lets incoming requests through on this port. How to"
+" configuration that depends on your router, ie. your ISP hardware model. You will need to <strong>forward port 25710 "
+"for both TCP and UDP protocols</strong>."
+msgstr ""
+"Parfois, le serveur LackeyCCG est en panne. Dans ce cas, il est possible d'héberger une partie par IP. Pour ce faire,"
+" vous devez vous assurer que votre configuration réseau locale est compatible : vous devez configurer la "
+"<em>redirection de port</em> sur votre réseau local et vous assurer que votre pare-feu laisse les connections "
+"entrantes passer par ce port. Comment configurer cela dépend de votre routeur, c-à-d du modèle de matériel fourni par"
+" votre FAI. Vous devrez <strong>rediriger le port 25710 à la fois en TCP et en UDP</strong>."
+
+#: codex_of_the_damned/templates/online-play/lackeyccg.html:190
+#, python-format
+msgid ""
+"Once it's done, just click on LackeyCCG's %(start_hosting)s button, then click the %(refresh_ip)s button and check "
+"the %(override_proxy)s checkbox (if the server is down, the proxy cannot be used). You can now host your game by IP."
+msgstr ""
+"Une fois cela réalisé, cliquez simplement sur le bouton %(start_hosting)s de LackeyCCG, puis cliquez sur le bouton "
+"%(refresh_ip)s et cochez la case %(override_proxy)s (si le serveur est en panne, le proxy ne peut pas être utilisé). "
+"Vous pouvez maintenant héberger votre partie par IP."
+
+#: codex_of_the_damned/templates/online-play/lackeyccg.html:202
+msgid "Known issues"
+msgstr "Problèmes connus"
+
+#: codex_of_the_damned/templates/online-play/lackeyccg.html:204
+msgid ""
+"Because of LackeCCG strange packaging, it seems <strong>Mac OSX Firewall</strong> cannot be configured to allow "
+"incoming connections on the required ports and protocols. Disabling the Firewall altogether will work. If anyone "
+"comes up with a better solution, please reach out."
+msgstr ""
+"À cause du packaging étrange de LackeCCG, il semble que le <strong>Pare-Feu Mac OSX</strong> ne peut pas être "
+"configuré pour permetter les connections entrantes sur les ports et protocoles requis. Désactiver le Pare-Feu "
+"complètement fonctionne. Si quelqu'un découvre une meilleure solution, merci de nous le faire savoir."
+
+#: codex_of_the_damned/templates/online-play/lackeyccg.html:211
+msgid ""
+"If you're using a <strong>second device</strong> to provide WiFi in front of your ISP's hardware, like a Google Nest "
+"Wifi, you need to configure port forwarding on this router too. The ISP router should forward the port to your WiFi "
+"router, then the Wifi router to your computer."
+msgstr ""
+"Si vous utilisez un <strong>second matériel</strong> pour créer un réseau WiFi en plus du matériel fourni par votre "
+"FAI, comme un Google Nest Wifi, vous devez aussi configurer la redirection de port sur ce routeur. Le routeur de "
+"votre FAI doit rediriger le port vers votre routeur WiFi, puis le routeur WiFi vers votre ordinateur."
+
+#: codex_of_the_damned/templates/online-play/lackeyccg.html:218
+msgid ""
+"If your router is using <strong>DHCP</strong> to assign an IP to your computer (they usually do), you may want to "
+"configure it so that it delivers a known stable IP to your computer, so that your port forwarding configuration stays"
+" stable after you put your computer to sleep or reboot."
+msgstr ""
+"Si votre routeur utilise <strong>DHCP</strong> pour donner une adresse IP à votre ordinateur (ce qu'ils font en "
+"général), vous pouvez le configurer pour qu'il donne une adresse stable à votre ordinateur, afin que votre "
+"configuration de redirection de port reste stable après une mise en veille ou un redémarrage."
 
 #: codex_of_the_damned/templates/online-play/tabletop-simulator.html:7
 #, python-format
@@ -4628,3 +4690,4 @@ msgstr ""
 "situation à trois ou cinq joueurs : si la fente fonctionne, vous revenez à un nombre pair et à une situation "
 "favorable. Si elle échoue, vous restez sur un nombre impair de joueurs en ayant mis une grande pression sur la proie."
 " En général, cela signifie que la pression va revenir en force contre vous au prochain tour de table. </p>"
+

@@ -175,5 +175,52 @@
         Among them, the {{ secret }} and {{ reveal }} command can be useful for some cards.
         {% endtrans %}
     </p>
+    <h2>{{ _('Host a game by IP') }}</h2>
+    <p>
+        {% trans trimmed %}
+        From time to time, the LackeyCCG server goes down. In this case, it's still possible to host a game by IP.
+        To do that, you need to make sure your local network configuration is compliant: you will need to configure
+        <em>port forwarding</em> on your local network and make sure your firewall lets incoming requests through
+        on this port.
+        How to configuration that depends on your router, ie. your ISP hardware model.
+        You will need to <strong>forward port 25710 for both TCP and UDP protocols</strong>.
+        {% endtrans %}
+    </p>
+    <p>
+        {% trans trimmed
+            start_hosting='<span class="code">Main Menu > Start Hosting a Game...</span>'|safe,
+            refresh_ip='<span class="code">Refresh IP (only used if not using server)</span>'|safe,
+            override_proxy='<span class="code">Override Proxy Test Suggestion? (not recommended)</span>'|safe
+        %}
+        Once it's done, just click on LackeyCCG's {{ start_hosting }} button,
+        then click the {{ refresh_ip }} button and check the {{ override_proxy }}
+        checkbox (if the server is down, the proxy cannot be used). You can now host your game by IP.
+        {% endtrans %}
+    </p>
+    <img src="{{ url_for('static', filename='img/lackeyccg-host-game-ip.png') }}" alt="LackeyCCG Interface" />
+    <div class="warning">
+        <h3>{{ _('Known issues') }}</h3>
+        <p>
+            {% trans trimmed %}
+            Because of LackeCCG strange packaging, it seems <strong>Mac OSX Firewall</strong> cannot be configured
+            to allow incoming connections on the required ports and protocols.
+            Disabling the Firewall altogether will work. If anyone comes up with a better solution, please reach out.
+            {% endtrans %}
+        </p>
+        <p>
+            {% trans trimmed %}
+            If you're using a <strong>second device</strong> to provide WiFi in front of your ISP's hardware,
+            like a Google Nest Wifi, you need to configure port forwarding on this router too.
+            The ISP router should forward the port to your WiFi router, then the Wifi router to your computer.
+            {% endtrans %}
+        </p>
+        <p>
+            {% trans trimmed %}
+            If your router is using <strong>DHCP</strong> to assign an IP to your computer (they usually do),
+            you may want to configure it so that it delivers a known stable IP to your computer,
+            so that your port forwarding configuration stays stable after you put your computer to sleep or reboot.
+            {% endtrans %}
+        </p>
+    </div>
 </article>
 {% endblock %}
