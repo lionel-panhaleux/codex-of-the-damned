@@ -26,6 +26,7 @@ function dCi(i) {
     name = name.replace(/í|î/g, "i") // Día, Maître
     name = name.replace(/ñ/g, "n") // Montaña
     name = name.replace(/ü|ú/g, "u") // Powerbase: Zürich, Jesús
+    name = name.replace(/™/g, "tm") // Pentex™
     document.getElementById(`card-image`).src = "https://images.krcg.org/".concat(
         name,
         ".jpg"
