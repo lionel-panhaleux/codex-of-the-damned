@@ -1,7 +1,7 @@
 Changelog
 =========
 
-0.20 (unreleased)
+0.20 (2020-08-04)
 -----------------
 
 - Online Play: Lackey section to host a game by IP
