@@ -1,7 +1,7 @@
 Changelog
 =========
 
-0.19 (unreleased)
+0.19 (2020-08-04)
 -----------------
 
 - Fix Pentex™ cards display
