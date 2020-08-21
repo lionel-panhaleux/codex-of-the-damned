@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: codex 0.X\n"
 "Report-Msgid-Bugs-To: lionel.panhaleux+codex@gmail.com\n"
-"POT-Creation-Date: 2020-08-04 16:01+0200\n"
+"POT-Creation-Date: 2020-08-21 16:00+0200\n"
 "PO-Revision-Date: 2020-07-04 08:50+0200\n"
 "Last-Translator: Lionel Panhaleux <lionel.panhaleux+codex@gmail.com>\n"
 "Language: fr\n"
@@ -2059,7 +2059,7 @@ msgid "Now go to the %(preferences)s tab and choose a suitable nickname. You're 
 msgstr "Maintenant retournez sur l'onglet %(preferences)s et choisissez un surnom adapté. Vous êtes prêt."
 
 #: codex_of_the_damned/templates/online-play/lackeyccg.html:104
-#: codex_of_the_damned/templates/online-play/tabletop-simulator.html:30
+#: codex_of_the_damned/templates/online-play/tabletop-simulator.html:28
 #: codex_of_the_damned/templates/online-play/vtes-online.html:31
 msgid "Play"
 msgstr "Jouer"
@@ -2108,7 +2108,7 @@ msgstr ""
 "de configurer votre mapping de clavier comme US au niveau du système."
 
 #: codex_of_the_damned/templates/online-play/lackeyccg.html:153
-#: codex_of_the_damned/templates/online-play/tabletop-simulator.html:48
+#: codex_of_the_damned/templates/online-play/tabletop-simulator.html:47
 msgid "Useful commands"
 msgstr "Commandes utiles"
 
@@ -2225,45 +2225,46 @@ msgstr ""
 
 #: codex_of_the_damned/templates/online-play/tabletop-simulator.html:18
 #, python-format
-msgid ""
-"Buy and install the %(tabletop_simulator)s application using <em>Steam</em>. Then install %(this_collection)s of "
-"plugins. Use the relevant plugin to create your deck. Once the deck is ready, select the two stacks (Library and "
-"Crypt), then right-click and choose %(save_object)s to save your deck."
-msgstr ""
-"Achetez et installez l'application %(tabletop_simulator)s en utilisant <em>Steam</em>. Puis installez "
-"%(this_collection)s de plugins. Utilisez le plugin adapté pour créer votre deck. Une fois le deck prêt, sélectionnez "
-"les deux paquets (bibliothèque et crypte), puis cliquez droit et choisissez %(save_object)s pour sauver votre deck."
+msgid "Buy and install the %(tabletop_simulator)s application using <em>Steam</em>. Then install %(this_plugin)s."
+msgstr "Achetez et installez l'application %(tabletop_simulator)s en utilisant <em>Steam</em>. Puis installez %(this_plugin)s."
 
 #: codex_of_the_damned/templates/online-play/tabletop-simulator.html:20
-msgid "this collection"
-msgstr "cette collection"
+msgid "this plugin"
+msgstr "ce plugin"
 
-#: codex_of_the_damned/templates/online-play/tabletop-simulator.html:32
-#, python-format
+#: codex_of_the_damned/templates/online-play/tabletop-simulator.html:30
 msgid ""
-"Find a group of friends then create a game and invite them. Load one of your decks by clicking on the %(objects)s "
-"button: your decks should be in the %(saved_objects)s section."
+"Find a group of friends then create a game and invite them. Draw a colour counter from the colors bag and change your"
+" color accordingly. Click the \"load deck\" button to load your deck."
 msgstr ""
-"Trouvez un groupe d,amis puis créz une partie et invitez-les. Chargez l'un de vos decks en cliquant sur le bouton "
-"%(objects)s : vos decks devraient se trouver dans la section %(saved_objects)s."
+"Trouvez un groupe d'amis puis créez une partie et invitez-les. Piochez un jeton de couleur du sac de couleurs et "
+"changezvotre couleur en conséquence. Cliquez sur le bouton \"load deck\" pour charger votre deck."
 
-#: codex_of_the_damned/templates/online-play/tabletop-simulator.html:43
-msgid "Make sure you set the rotation on 90º (topside button on the right) for easy lock and unlock."
+#: codex_of_the_damned/templates/online-play/tabletop-simulator.html:40
+msgid ""
+"Make sure you set the rotation on 90º (topside button on the right) for easy lock and unlock, and set the gravity to "
+"the maximum value in the Options > Physics menu for faster cards and tokens displacements. Enabling the turns system "
+"in Options > Turns can also help."
 msgstr ""
 "Assurez-vous de régler la rotation à 90º (bouton en haut à droite) pour pouvoir incliner et redresser vos cartes "
-"facilement."
+"facilement, et de fixer la gravité à sa valeur maximum dans le menu Options > Physics pour des déplacements de cartes"
+" et de jetons plus rapides. Activer le systèmes de tours dans Options > Turns peut aussi être utile."
 
-#: codex_of_the_damned/templates/online-play/tabletop-simulator.html:50
+#: codex_of_the_damned/templates/online-play/tabletop-simulator.html:49
 msgid "Lock"
 msgstr "Incliner"
 
-#: codex_of_the_damned/templates/online-play/tabletop-simulator.html:51
+#: codex_of_the_damned/templates/online-play/tabletop-simulator.html:50
 msgid "Unlock"
 msgstr "Redresser"
 
-#: codex_of_the_damned/templates/online-play/tabletop-simulator.html:52
+#: codex_of_the_damned/templates/online-play/tabletop-simulator.html:51
 msgid "Flip card"
 msgstr "Retourner une carte"
+
+#: codex_of_the_damned/templates/online-play/tabletop-simulator.html:52
+msgid "Peek at a card"
+msgstr "Regarder le dessous d'une carte"
 
 #: codex_of_the_damned/templates/online-play/tabletop-simulator.html:53
 msgid "Hover over a deck and type a number N"

@@ -17,16 +17,14 @@
     <p>
         {% trans trimmed 
         tabletop_simulator=external("https://store.steampowered.com/app/286160/Tabletop_Simulator/", "Tabletop Simulator"),
-        this_collection=external("https://steamcommunity.com/sharedfiles/filedetails/?id=2156285190", _("this collection")),
+        this_plugin=external("https://steamcommunity.com/sharedfiles/filedetails/?id=2186155897", _("this plugin")),
         save_object='<span class="code">Save object</span>'|safe
 	    %}
         Buy and install the {{ tabletop_simulator }} application using <em>Steam</em>.
-        Then install {{ this_collection }} of plugins. Use the relevant plugin to create your deck.
-        Once the deck is ready, select the two stacks (Library and Crypt), then right-click and choose
-        {{ save_object }} to save your deck.
+        Then install {{ this_plugin }}.
         {% endtrans %}
     </p>
-    <img src="{{ url_for('static', filename='img/tts-save-deck.jpg') }}" alt="TTS Save deck" />
+    <img src="{{ url_for('static', filename='img/tts-table.jpg') }}" alt="TTS Save deck" />
     <h2>{{ _('Play') }}</h2>
     <p>
         {% trans trimmed
@@ -34,14 +32,15 @@
             saved_objects='<span class="code">Saved Objects</span>'|safe
         %}
         Find a group of friends then create a game and invite them.
-        Load one of your decks by clicking on the {{ objects }} button:
-        your decks should be in the {{ saved_objects }} section.
+        Draw a colour counter from the colors bag and change your color accordingly.
+        Click the "load deck" button to load your deck.
         {% endtrans %}
     </p>
-    <img src="{{ url_for('static', filename='img/tts-load-deck.jpg') }}" alt="TTS Load deck" />
     <p>
         {% trans trimmed %}
-        Make sure you set the rotation on 90º (topside button on the right) for easy lock and unlock.
+        Make sure you set the rotation on 90º (topside button on the right) for easy lock and unlock,
+        and set the gravity to the maximum value in the Options > Physics menu for faster cards and tokens
+        displacements. Enabling the turns system in Options > Turns can also help.
         {% endtrans %}
     </p>
     <img src="{{ url_for('static', filename='img/tts-rotation.jpg') }}" alt="TTS Rotation" />
@@ -50,6 +49,7 @@
         <li><strong>E</strong>: {{ _("Lock") }}</li>
         <li><strong>Q</strong>: {{ _("Unlock") }}</li>
         <li><strong>F</strong>: {{ _("Flip card") }}</li>
+        <li><strong>SHIFT+ALT</strong>: {{ _("Peek at a card") }}</li>
         <li><strong>{{ _("Hover over a deck and type a number N") }}</strong>: {{ _("Draw N cards") }}</li>
     </ul>
 </article>
