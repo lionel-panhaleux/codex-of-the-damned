@@ -10,7 +10,15 @@
         {{ tabletop_simulator }} is a Steam app to play tabletop games.
         It has fan-made plugins to play V:tES online with friends.
         It is mostly used among friends who want to play the game between themselves,
-        as there is no matching server to find fellow players inside the application itself.
+        as there is no game log and no matching server to find fellow players inside the application itself.
+        {% endtrans %}
+    </p>
+    <p>
+        {% trans trimmed 
+        discord_server=external("https://discordapp.com/channels/@me/742166529201930240/752907740476604457", _("Discord Server"))
+	    %}
+        Using this platform, the game is best played alongside a vocal channel. You can join the {{ discord_server }}
+        dedicated to the plugin to find players, setup games, and use the vocal channels to play.
         {% endtrans %}
     </p>
     <h2>{{ _('Install') }}</h2>

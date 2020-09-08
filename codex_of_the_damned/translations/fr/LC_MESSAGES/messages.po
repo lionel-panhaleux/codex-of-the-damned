@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: codex 0.X\n"
 "Report-Msgid-Bugs-To: lionel.panhaleux+codex@gmail.com\n"
-"POT-Creation-Date: 2020-08-21 16:00+0200\n"
+"POT-Creation-Date: 2020-09-08 17:07+0200\n"
 "PO-Revision-Date: 2020-07-04 08:50+0200\n"
 "Last-Translator: Lionel Panhaleux <lionel.panhaleux+codex@gmail.com>\n"
 "Language: fr\n"
@@ -1980,7 +1980,7 @@ msgid "You can check %(corwin_bradleys_video)s for a comprehensive tutorial."
 msgstr "Vous pouvez regarder la %(corwin_bradleys_video)s pour un tutoriel complet."
 
 #: codex_of_the_damned/templates/online-play/lackeyccg.html:22
-#: codex_of_the_damned/templates/online-play/tabletop-simulator.html:16
+#: codex_of_the_damned/templates/online-play/tabletop-simulator.html:24
 #: codex_of_the_damned/templates/online-play/vtes-online.html:15
 msgid "Install"
 msgstr "Installation"
@@ -2059,7 +2059,7 @@ msgid "Now go to the %(preferences)s tab and choose a suitable nickname. You're 
 msgstr "Maintenant retournez sur l'onglet %(preferences)s et choisissez un surnom adapté. Vous êtes prêt."
 
 #: codex_of_the_damned/templates/online-play/lackeyccg.html:104
-#: codex_of_the_damned/templates/online-play/tabletop-simulator.html:28
+#: codex_of_the_damned/templates/online-play/tabletop-simulator.html:36
 #: codex_of_the_damned/templates/online-play/vtes-online.html:31
 msgid "Play"
 msgstr "Jouer"
@@ -2108,7 +2108,7 @@ msgstr ""
 "de configurer votre mapping de clavier comme US au niveau du système."
 
 #: codex_of_the_damned/templates/online-play/lackeyccg.html:153
-#: codex_of_the_damned/templates/online-play/tabletop-simulator.html:47
+#: codex_of_the_damned/templates/online-play/tabletop-simulator.html:55
 msgid "Useful commands"
 msgstr "Commandes utiles"
 
@@ -2216,31 +2216,45 @@ msgstr ""
 #, python-format
 msgid ""
 "%(tabletop_simulator)s is a Steam app to play tabletop games. It has fan-made plugins to play V:tES online with "
-"friends. It is mostly used among friends who want to play the game between themselves, as there is no matching server"
-" to find fellow players inside the application itself."
+"friends. It is mostly used among friends who want to play the game between themselves, as there is no game log and no"
+" matching server to find fellow players inside the application itself."
 msgstr ""
 "%(tabletop_simulator)s est une application Steam permettant de jouer à des jeux de plateau. Il existe des plugins "
 "amateurs pour jouer à V:tES en ligne. Il est principalement utilisé pour des parties entre amis, car il n'y a pas de "
-"serveur de matching pour trouver d'autres joueurs au sein de l'application."
+"journal de jeu ni de serveur de matching pour trouver d'autres joueurs au sein de l'application."
 
 #: codex_of_the_damned/templates/online-play/tabletop-simulator.html:18
+msgid "Discord Server"
+msgstr "Serveur Discord"
+
+#: codex_of_the_damned/templates/online-play/tabletop-simulator.html:17
+#, python-format
+msgid ""
+"Using this platform, the game is best played alongside a vocal channel. You can join the %(discord_server)s dedicated"
+" to the plugin to find players, setup games, and use the vocal channels to play."
+msgstr ""
+"Quand on utilise cette plateforme, il est plus pratique de jouer avec un chan vocal. Vous pouvez rejoindre le "
+"%(discord_server)s dédié à ce plugin pour trouver des joueurs, organiser des parties, et utiliser les chans vocaux "
+"pour jouer."
+
+#: codex_of_the_damned/templates/online-play/tabletop-simulator.html:26
 #, python-format
 msgid "Buy and install the %(tabletop_simulator)s application using <em>Steam</em>. Then install %(this_plugin)s."
 msgstr "Achetez et installez l'application %(tabletop_simulator)s en utilisant <em>Steam</em>. Puis installez %(this_plugin)s."
 
-#: codex_of_the_damned/templates/online-play/tabletop-simulator.html:20
+#: codex_of_the_damned/templates/online-play/tabletop-simulator.html:28
 msgid "this plugin"
 msgstr "ce plugin"
 
-#: codex_of_the_damned/templates/online-play/tabletop-simulator.html:30
+#: codex_of_the_damned/templates/online-play/tabletop-simulator.html:38
 msgid ""
 "Find a group of friends then create a game and invite them. Draw a colour counter from the colors bag and change your"
 " color accordingly. Click the \"load deck\" button to load your deck."
 msgstr ""
 "Trouvez un groupe d'amis puis créez une partie et invitez-les. Piochez un jeton de couleur du sac de couleurs et "
-"changezvotre couleur en conséquence. Cliquez sur le bouton \"load deck\" pour charger votre deck."
+"changez votre couleur en conséquence. Cliquez sur le bouton \"load deck\" pour charger votre deck."
 
-#: codex_of_the_damned/templates/online-play/tabletop-simulator.html:40
+#: codex_of_the_damned/templates/online-play/tabletop-simulator.html:48
 msgid ""
 "Make sure you set the rotation on 90º (topside button on the right) for easy lock and unlock, and set the gravity to "
 "the maximum value in the Options > Physics menu for faster cards and tokens displacements. Enabling the turns system "
@@ -2250,27 +2264,27 @@ msgstr ""
 "facilement, et de fixer la gravité à sa valeur maximum dans le menu Options > Physics pour des déplacements de cartes"
 " et de jetons plus rapides. Activer le systèmes de tours dans Options > Turns peut aussi être utile."
 
-#: codex_of_the_damned/templates/online-play/tabletop-simulator.html:49
+#: codex_of_the_damned/templates/online-play/tabletop-simulator.html:57
 msgid "Lock"
 msgstr "Incliner"
 
-#: codex_of_the_damned/templates/online-play/tabletop-simulator.html:50
+#: codex_of_the_damned/templates/online-play/tabletop-simulator.html:58
 msgid "Unlock"
 msgstr "Redresser"
 
-#: codex_of_the_damned/templates/online-play/tabletop-simulator.html:51
+#: codex_of_the_damned/templates/online-play/tabletop-simulator.html:59
 msgid "Flip card"
 msgstr "Retourner une carte"
 
-#: codex_of_the_damned/templates/online-play/tabletop-simulator.html:52
+#: codex_of_the_damned/templates/online-play/tabletop-simulator.html:60
 msgid "Peek at a card"
 msgstr "Regarder le dessous d'une carte"
 
-#: codex_of_the_damned/templates/online-play/tabletop-simulator.html:53
+#: codex_of_the_damned/templates/online-play/tabletop-simulator.html:61
 msgid "Hover over a deck and type a number N"
 msgstr "Passer sur un deck et tapez un nombre N"
 
-#: codex_of_the_damned/templates/online-play/tabletop-simulator.html:53
+#: codex_of_the_damned/templates/online-play/tabletop-simulator.html:61
 msgid "Draw N cards"
 msgstr "Piocher N cartes"
 
