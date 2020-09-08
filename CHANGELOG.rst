@@ -1,7 +1,7 @@
 Changelog
 =========
 
-0.21 (unreleased)
+0.21 (2020-09-08)
 -----------------
 
 - Online Play: Use the new "VTES for Indoor kids" plugin
