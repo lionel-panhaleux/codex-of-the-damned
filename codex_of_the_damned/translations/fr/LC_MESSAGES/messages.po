@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: codex 0.X\n"
 "Report-Msgid-Bugs-To: lionel.panhaleux+codex@gmail.com\n"
-"POT-Creation-Date: 2020-09-09 16:33+0200\n"
+"POT-Creation-Date: 2020-09-09 17:20+0200\n"
 "PO-Revision-Date: 2020-07-04 08:50+0200\n"
 "Last-Translator: Lionel Panhaleux <lionel.panhaleux+codex@gmail.com>\n"
 "Language: fr\n"
@@ -187,7 +187,7 @@ msgstr ""
 msgid "Khazar's Diary"
 msgstr ""
 
-#: codex_of_the_damned/navigation.py:111 codex_of_the_damned/templates/archetypes/lasombra-nocturn.html:68
+#: codex_of_the_damned/navigation.py:111 codex_of_the_damned/templates/archetypes/lasombra-nocturn.html:33
 #: codex_of_the_damned/templates/best-cards/clans/kiasyd.html:9
 msgid "Kiasyd Stealth & Bleed"
 msgstr ""
@@ -1733,7 +1733,7 @@ msgid "John Newquist in a 2008 NAC Qualifier"
 msgstr "John Newquist pour le qualifier du NAC 2008"
 
 #: codex_of_the_damned/templates/archetypes/hunters.html:40
-#: codex_of_the_damned/templates/archetypes/lasombra-nocturn.html:62
+#: codex_of_the_damned/templates/archetypes/lasombra-nocturn.html:32
 #: codex_of_the_damned/templates/archetypes/ventrue-royalty.html:78
 msgid "Sergio Gracia's deck"
 msgstr "deck de Sergio Gracia"
@@ -2013,7 +2013,54 @@ msgstr ""
 msgid "Ben Peal's deck"
 msgstr "deck de Ben Peal"
 
-#: codex_of_the_damned/templates/archetypes/lasombra-nocturn.html:80
+#: codex_of_the_damned/templates/archetypes/lasombra-nocturn.html:14
+#, python-format
+msgid ""
+"<h2>Highlights</h2> <p> This is a <em>stealth & bleed</em> deck using the Lasombra clan, with the %(DOM)s%(OBT)s "
+"disciplines. During the beginning, it uses %(govern_the_unaligned)s to get vampires out faster and cheaper. When "
+"enough minions are into play, it switches to delivering strong bleed actions using %(OBT)s for stealth. </p> <p> The "
+"deck uses %(nocturn)s to protect its vampires from agression, but also to deliver more bleed in a single turn. At "
+"some point, %(the_unmasking)s comes into play and makes them even better defenders. </p> <p> Stealth is high, with 14"
+" stealth modifiers and %(elysian_fields)s as a permanent enhancer. </p> <p> %(deflection)s and %(delaying_tactics)s "
+"defend against bleed and votes, and the deck uses no combat card at all, relying entirely on the %(nocturn)s and "
+"stealth to avoid it. </p> <h2>Tips & Tricks</h2> <p> One or two %(nocturn)s should be brought into play each turn. "
+"Keeping one in hand just to make sure it can be brought into play the next turn makes sense. </p> <p> "
+"%(pentex_subversion)s can be used for the lunge if the prey has a strong blocker. </p> <p> %(on_the_qui_vive)s can "
+"also be used by a %(nocturn)s so it can bleed <em>and</em> block a rush action. </p> <p> %(zaire_river_ferry)s is an "
+"additional stealth enhancer, plus it prevents rush actions: a nice combination. </p> <h2>Variants</h2> <p> This "
+"example decklist uses an unusually high number of %(nocturn)s. The <strong>Standard</strong> variant uses somewhere "
+"between 5 and 12 of them, and more %(govern_the_unaligned)s and stealth modifiers. %(sergio_gracia_s_deck)s from 2009"
+" is a good example. He even uses %(anarch_convert)s just to help rotate the crypt and make sure 4 different vampires "
+"get out fast. </p> <p> In a sense, the %(kiasyd_stealth_bleed)s archetype can be seen as a variation of this one. "
+"</p> <p> The <strong>Black Hand</strong> variant uses groups 3 and 4 to include %(henri_lavenant)s alongside "
+"%(ermenegildo_the_rake)s and %(banjoko)s, so it can use Black Hand cards like %(tattoo_signal)s, "
+"%(watchtower_four_ride_forth)s, %(remover)s and %(the_admonitions)s. %(csaba_greguss_s_deck)s from 2009 is a good "
+"example. </p>"
+msgstr ""
+"<h2> Principe </h2> <p> C'est un deck <em>stealth & bleed</em> qui utilise le clan Lasombra, avec les disciplines "
+"%(DOM)s%(OBT)s. Au début, il utilise %(govern_the_unaligned)s pour sortir les vampires plus rapidement et à moindres "
+"frais. Quand il y a suffisamment de serviteurs en jeu, il passe à des actions de morsure puissantes en utilisant "
+"%(OBT)s pour la discrétion. </p> <p> Le deck utilise %(nocturn)s pour protéger ses vampires des agressions, mais "
+"aussi pour réaliser plus de morsures. À un moment donné, %(the_unmasking)s entre en jeu et fait d'eux de meilleurs "
+"défenseurs. </p> <p> La discrétion est élevée, avec 14 modificateurs de discrétion et %(elysian_fields)s en tant "
+"qu'améliorateur permanent. </p> <p> %(deflection)s et %(delaying_tactics)s défendent contre les morsures et les votes"
+" et le deck n'utilise aucune carte de combat, se reposant entièrement sur les %(nocturn)s et la discrétion pour "
+"l'éviter. </p> <h2> Trucs & astuces </h2> <p> Un ou deux %(nocturn)s doivent être mis en jeu à chaque tour. En garder"
+" un en main juste pour s'assurer qu'il peut être mis en jeu au prochain tour a du sens. </p> <p> "
+"%(pentex_subversion)s peut être utilisé pour la fente si la proie a un bloqueur puissant. </p> <p> "
+"%(on_the_qui_vive)s peut également être utilisé par un %(nocturn)s afin qu'il puisse mordre <em> et </em> bloquer un "
+"rush. </p> <p> %(zaire_river_ferry)s est un améliorateur de discrétion supplémentaire, en plus il empêche les rush : "
+"une belle combinaison. </p> <h2> Variantes </h2> <p> Cet exemple de liste de deck utilise un nombre inhabituellement "
+"élevé de %(nocturn)s. La variante <strong> Standard </strong> en utilise entre 5 et 12, et plus de "
+"%(govern_the_unaligned)s et modificateurs de discrétion. Le %(sergio_gracia_s_deck)s de 2009 est un bon exemple. Il "
+"utilise même %(anarch_convert)s pour aider la rotation de crypte et s'assurer que 4 vampires différents sortent vite."
+" </p> <p> En un sens, l'archétype %(kiasyd_stealth_bleed)s peut être vu comme une variante de celui-ci. </p> <p> La "
+"variante <strong> Black Hand </strong> utilise les groupes 3 et 4 pour inclure %(henri_lavenant)s aux côtés "
+"d'%(ermenegildo_the_rake)s et de %(banjoko)s, afin qu'ils puissent utiliser des cartes Black Hand comme "
+"%(tattoo_signal)s, %(watchtower_four_ride_forth)s, %(remover)s et %(the_admonitions)s. Le %(csaba_greguss_s_deck)s de"
+" 2009 est un bon exemple. </p> "
+
+#: codex_of_the_damned/templates/archetypes/lasombra-nocturn.html:34
 msgid "Csaba Greguss's deck"
 msgstr "deck de Csaba Greguss"
 
