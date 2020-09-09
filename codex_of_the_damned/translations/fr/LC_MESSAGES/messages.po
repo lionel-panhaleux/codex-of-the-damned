@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: codex 0.X\n"
 "Report-Msgid-Bugs-To: lionel.panhaleux+codex@gmail.com\n"
-"POT-Creation-Date: 2020-09-09 13:39+0200\n"
+"POT-Creation-Date: 2020-09-09 15:10+0200\n"
 "PO-Revision-Date: 2020-07-04 08:50+0200\n"
 "Last-Translator: Lionel Panhaleux <lionel.panhaleux+codex@gmail.com>\n"
 "Language: fr\n"
@@ -888,7 +888,7 @@ msgstr ""
 #: codex_of_the_damned/templates/archetypes/anti-ventrue-grinder.html:40
 #: codex_of_the_damned/templates/archetypes/black-hand.html:29 codex_of_the_damned/templates/archetypes/death-star.html:30
 #: codex_of_the_damned/templates/archetypes/hunters.html:37
-#: codex_of_the_damned/templates/archetypes/ishtarri-politics.html:35
+#: codex_of_the_damned/templates/archetypes/ishtarri-politics.html:37
 #: codex_of_the_damned/templates/archetypes/mistress.html:47
 #: codex_of_the_damned/templates/archetypes/nosferatu-royalty.html:42
 #: codex_of_the_damned/templates/archetypes/spirit-marionette.html:59
@@ -1216,7 +1216,7 @@ msgstr ""
 "permet un module de morsure un peu plus aggressif. Le %(stephen_sings_deck)s du championnat d'Asie Continentale de "
 "2011 est un exemple de cette approche. </p>"
 
-#: codex_of_the_damned/templates/archetypes/cats.html:48 codex_of_the_damned/templates/archetypes/ishtarri-politics.html:27
+#: codex_of_the_damned/templates/archetypes/cats.html:48 codex_of_the_damned/templates/archetypes/ishtarri-politics.html:36
 #: codex_of_the_damned/templates/archetypes/kiasyd-stealth-bleed.html:36
 #: codex_of_the_damned/templates/best-cards/generic/master-cards.html:53
 #: codex_of_the_damned/templates/strategy/combat.html:19
@@ -1757,11 +1757,51 @@ msgstr ""
 " projet français basé sur la TWDA qui référence plus de 100 archétypes avec des decklist d'exemple, afin d'aider les "
 "joueurs à construire des decks pour leurs parties amicales ou leurs tournois. </p>"
 
-#: codex_of_the_damned/templates/archetypes/ishtarri-politics.html:68
+#: codex_of_the_damned/templates/archetypes/ishtarri-politics.html:14
+#, python-format
+msgid ""
+"<h2>Highlights</h2> <p> This is a <em>political</em> deck using the Ishtarri clan and their %(PRE)s%(FOR)s%(CEL)s "
+"disciplines combination. </p> <p> The deck uses %(PRE)s to bleed with %(enchant_kindred)s and %(public_trust)s. "
+"Political actions are used to deliver pool damage to the prey with %(kine_resources_contested)s, "
+"%(conservative_agitation)s and %(reins_of_power)s. </p> <p> Bloat is done by %(leeching)s, using %(villein)s and "
+"getting blood back on the vampires with %(voter_captivation)s, plus a bit of political actions with "
+"%(ancient_influence)s and %(political_stranglehold)s. </p> <p> The deck has a high %(a_b)s with the %(FOR)s unlock "
+"modifiers %(forced_march)s and %(freak_drive)s, but also %(majesty)s if an action is blocked and %(mylan_horseed)s if"
+" he is drawn. </p> <h2>Tips & Tricks</h2> <p> %(enchant_kindred)s can be used in the game beginning to get vampires "
+"out faster and cheaper. </p> <p> %(the_kiss_of_ra)s and %(strange_day)s are expensive but can be kept in hand for a "
+"lunge action, be it a vote or a bleed. </p> <p> %(scourge_of_the_enochians)s is a counter against breed decks, "
+"%(fear_of_mekhet)s against Inner Circle decks. Both of a them are quite a threat to this archetype. </p> "
+"<h2>Variants</h2> <p> Other card can easily be included in the deck: %(falhu_shibaba)s in the crypt (although he does"
+" not have %(obf)s), %(perfectionist)s to get some blood back on the vampires, %(scalpel_tongue)s to help getting the "
+"votes through, and some %(cel)s and %(for)s combat cards. Some variants may be more toolboxy. "
+"%(no_secrets_from_the_magaji)s is an excellent defence card and is even included here, but it can be accompanied by a"
+" bit more equipments and combat options, like %(adam_hulse_s_deck)s from 2014. </p> <p> An <strong>Anarch</strong> "
+"variant has also been played by %(marcin_szybkowski)s in 2009. </p>"
+msgstr ""
+"<h2>Principe</h2> <p> C'est un deck <em>politique</em> qui utilise le clan Ishtarri et leurs disciplines "
+"%(PRE)s%(FOR)s%(CEL)s. </p> <p> Le deck utilise %(PRE)s pour mordre avec %(enchant_kindred)s et %(public_trust)s. Les"
+" actions politiques sont utilisées pour infliger des dégâts d'influence avec %(kine_resources_contested)s, "
+"%(conservative_agitation)s et %(reins_of_power)s. </p> <p> La régénération est faite par %(leeching)s, en utilisant "
+"%(villein)s et en remettant du sang sur les vampires avec %(voter_captivation)s, plus quelques actions politiques "
+"avec %(ancient_influence)s et %(political_stranglehold)s. </p> <p> Le deck a un %(a_b)s très haut avec les "
+"redressements %(FOR)s %(forced_march)s et %(freak_drive)s, mais aussi %(majesty)s si une action est bloquée et "
+"%(mylan_horseed)s s'il est pioché. </p> <h2>Trucs & Astuces</h2> <p> %(enchant_kindred)s peut être utilisé en début "
+"de partie pour sortir les vampires plus rapidement et à moindre frais. </p> <p> %(the_kiss_of_ra)s et %(strange_day)s"
+" sont coûteux mais peuvent être conservés en main pour une action de fente, qu'il s'agisse d'un vote ou d'une morsure. "
+"</p> <p> %(scourge_of_the_enochians)s est un contre contre les decks de reproduction, %(fear_of_mekhet)s contre les "
+"decks Inner Circle. Les deux sont plutôt dangereux pour cet archétype. </p> <h2>Variantes</h2> <p> D'autres cartes "
+"peuvent facilement être ajoutées au deck: %(falhu_shibaba)s dans la crypte (même s'il ne dispose pas de %(obf)s), "
+"%(perfectionist)s pour récupérer du sang sur les vampires, %(scalpel_tongue)s pour aider à passer les votes, et "
+"quelques cartes de combat %(cel)s et %(for)s. Certaines variantes sont plus proches de la toolbox. "
+"%(no_secrets_from_the_magaji)s est une excellente carte de défense et est même incluse ici, mais elle peut être "
+"accompagnée par un peu plus d'équipements et d'options de combat, comme dans le %(adam_hulse_s_deck)s de 2014. </p> "
+"<p> Une variante <strong>Anarch</strong> a aussi été jouée par %(marcin_szybkowski)s en 2009. </p>"
+
+#: codex_of_the_damned/templates/archetypes/ishtarri-politics.html:38
 msgid "Adam Hulse's deck"
 msgstr "deck d'Adam Hulse"
 
-#: codex_of_the_damned/templates/archetypes/ishtarri-politics.html:72
+#: codex_of_the_damned/templates/archetypes/ishtarri-politics.html:39
 msgid "Marcin Szybkowski"
 msgstr "Marcin Szybkowski"
 
@@ -4897,4 +4937,3 @@ msgstr ""
 "situation à trois ou cinq joueurs : si la fente fonctionne, vous revenez à un nombre pair et à une situation "
 "favorable. Si elle échoue, vous restez sur un nombre impair de joueurs en ayant mis une grande pression sur la proie."
 " En général, cela signifie que la pression va revenir en force contre vous au prochain tour de table. </p>"
-
