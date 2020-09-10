@@ -11,44 +11,56 @@
 {% endblock %}
 
 {% block archetype %}
+{% trans trimmed 
+    mind_rape=card("Mind Rape"),
+    lucian=card("Lucian"),
+    heidelberg_castle_germany=card("Heidelberg Castle, Germany"),
+    madness_network=card("Madness Network"),
+    second_tradition_domain=card("Second Tradition: Domain"),
+    obedience=card("Obedience"),
+    mental_maze=card("Mental Maze"),
+    scourge_of_the_enochians=card("Scourge of the Enochians"),
+    metro_underground=card("Metro Underground"),
+    arika=card("Arika"),
+    erol_hammer_s_deck=link("/deck-search", _("Erol Hammer's deck"), twda_id="2k9fcqnac")
+    %}
 <h2>Highlights</h2>
 <p>
-    This is a <em>special</em> deck using {{ card("Mind Rape") }}
-    alongside a big capacity vampire with <i>DO</i>, {{ card("Lucian") }} here.
+    This is a <em>special</em> deck using {{ mind_rape }}
+    alongside a big capacity vampire with {{ DOM }}{{ OBF }}, {{ lucian }} here.
     The idea is to steal the opponents vampires and use
-    {{ card("Heidelberg Castle, Germany") }} to deprive them
+    {{ heidelberg_castle_germany }} to deprive them
     of their blood and equipment.
 </p>
 <p>
-    Using Malkavian and {{ card("Madness Network") }} brings an
-    edge to this idea, as {{ card("Mind Rape") }} can be played on the
+    Using Malkavian and {{ madness_network }} brings an
+    edge to this idea, as {{ mind_rape }} can be played on the
     predator turn for example, to get control of the vampire in the immediately following turn.
 </p>
 <p>
-    The deck uses {{ card("Second Tradition: Domain") }}
-    for defence, together with
-    {{ card("Obedience") }} and
-    {{ card("Mental Maze") }} to avoid combat.
+    The deck uses {{ second_tradition_domain }} for defence, together with
+    {{ obedience }} and {{ mental_maze }} to avoid combat.
 </p>
 <p>
-    Bleed and votes are used to apply pool damage, in combination with a strong stealth module using <i>O</i>.
+    Bleed and votes are used to apply pool damage, in combination with a strong stealth module using {{ OBF }}.
 </p>
 <h2>Tips & Tricks</h2>
 <p>
-    {{ card("Scourge of the Enochians") }} is used as a counter
+    {{ scourge_of_the_enochians }} is used as a counter
     against breed constructs that can be overwhelming for this deck.
 </p>
 <p>
-    {{ card("Metro Underground") }} lets a vampire bleed or vote,
+    {{ metro_underground }} lets a vampire bleed or vote,
     then unlock at the end of the turn, only to use
-    {{ card("Madness Network") }} for another action during another
+    {{ madness_network }} for another action during another
     Methusalah's turn.
 </p>
 <h2>Variants</h2>
 <p>
-    There is a Ventrue variant using {{ card("Arika") }} as a star.
-    {{ link("/deck-search", _("Erol Hammer's deck"), twda_id="2k9fcqnac") }} from 2009 is a good example.
+    There is a Ventrue variant using {{ arika }} as a star.
+    {{ erol_hammer_s_deck }} from 2009 is a good example.
 </p>
+{% endtrans %}
 {% endblock %}
 
 {% block errata %}
