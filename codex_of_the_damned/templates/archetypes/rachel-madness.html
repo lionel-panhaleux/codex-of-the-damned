@@ -11,75 +11,87 @@
 {% endblock %}
 
 {% block archetype %}
+{% trans trimmed 
+    rachel_brandywine=card("Rachel Brandywine"),
+    homunculus=card("Homunculus"),
+    madness_network=card("Madness Network"),
+    form_of_mist=card("Form of Mist"),
+    second_tradition_domain=card("Second Tradition: Domain"),
+    eyes_of_argus=card("Eyes of Argus"),
+    earth_meld=card("Earth Meld"),
+    enkil_cog=card("Enkil Cog"),
+    perfectionist=card("Perfectionist"),
+    giant_s_blood=card("Giant's Blood"),
+    the_rack=card("The Rack"),
+    greger_anderssen=card("Greger Anderssen"),
+    parity_shift=card("Parity Shift"),
+    protean=card("Protean"),
+    blessing_of_chaos=card("Blessing of Chaos"),
+    mind_rape=card("Mind Rape"),
+    sensory_deprivation=card("Sensory Deprivation"),
+    heart_of_nizchetus=card("Heart of Nizchetus"),
+    sport_bike=card("Sport Bike"),
+    camera_phone=card("Camera Phone"),
+    fifth_tradition_hospitality=card("Fifth Tradition: Hospitality"),
+    shadow_of_the_beast=card("Shadow of the Beast"),
+    powerbase_zürich=card("Powerbase: Zürich"),
+    maris_streck=card("Maris Streck"),
+    the_unnamed=link("/archetypes/the-unnamed", _("The unnamed"))
+%}
 <h2>Highlights</h2>
 <p>
-    This is a <em>stealth & bleed</em> deck starring
-    {{ card("Rachel Brandywine") }}.
-    The idea is to use her <i>J</i> discipline to fetch an
-    {{ card("Homunculus") }} which, alongside
-    {{ card("Madness Network") }}, will let her bleed during
+    This is a <em>stealth & bleed</em> deck starring {{ rachel_brandywine }}.
+    The idea is to use her {{ PRO }} discipline to fetch an
+    {{ homunculus }} which, alongside {{ madness_network }}, will let her bleed during
     multiple consecutive turns.
 </p>
 <p>
-    Stealth is high, with 15 modifiers and {{ card("Form of Mist") }}.
+    Stealth is high, with 15 modifiers and {{ form_of_mist }}.
 </p>
 <p>
-    On the defence side, {{ card("Second Tradition: Domain") }}
-    and {{ card("Eyes of Argus") }} are used to intercept and
-    protect the {{ card("Madness Network") }},
-    with many copies of {{ card("Earth Meld") }} to avoid combat and
-    stay unlocked.
+    On the defence side, {{ second_tradition_domain }}
+    and {{ eyes_of_argus }} are used to intercept and protect the {{ madness_network }},
+    with many copies of {{ earth_meld }} to avoid combat and stay unlocked.
 </p>
 <p>
-    The deck is slow in the beginning but has a decent defence, and once the combination hits the table,
-    it can finish a prey very quickly.
+    The deck is slow in the beginning but has a decent defence and,
+    once the combination hits the table, it can finish a prey very quickly.
 </p>
 <h2>Tips & Tricks</h2>
 <p>
-    {{ card("Enkil Cog") }} is a cheap way to have
-    {{ card("Rachel Brandywine") }} bleed for 3 instead of 2.
-    Moreover, it can replace {{ card("Madness Network") }} a bit
-    if it is destroyed.
+    {{ enkil_cog }} is a cheap way to have {{ rachel_brandywine }} bleed for 3 instead of 2.
+    Moreover, it can replace {{ madness_network }} a bit if it is destroyed.
 </p>
 <p>
-    {{ card("Homunculus") }} costs blood, so
-    {{ card("Perfectionist") }},
-    {{ card("Giant's Blood") }} and
-    {{ card("The Rack") }} are essential to feeding the combination.
+    {{ homunculus }} costs blood, so {{ perfectionist }}, {{ giant_s_blood }} and
+    {{ the_rack }} are essential to feeding the combination.
 </p>
 <p>
-    {{ card("Greger Anderssen") }} is an excellent sidekick
-    as he also has <i>j</i> and can therefore use an {{ card("Homunculus") }}
-    too. Moreover, he is also <em>Prince</em>, meaning he gets to play
-    {{ card("Parity Shift") }} and
-    {{ card("Second Tradition: Domain") }} too.
-    If {{ card("Protean") }} is drawn, he can even use
-    {{ card("Earth Meld") }} at its full potential.
+    {{ greger_anderssen }} is an excellent sidekick as he also has {{ pro }}
+    and can therefore use an {{ homunculus }} too. Moreover, he is also <em>Prince</em>,
+    meaning he gets to play {{ parity_shift }} and {{ second_tradition_domain }} too.
+    If {{ protean }} is drawn, he can even use {{ earth_meld }} at its full potential.
 </p>
 <p>
-    {{ card("Blessing of Chaos") }} is a useful addition,
+    {{ blessing_of_chaos }} is a useful addition,
     as it can cripple bleed modules a bit, forcing them to use their
-    bleed modifiers <em>before</em> blocks are announced.
+    bleed modifiers <em>before</em> blocks are announced. It's also a counter
+    against the occasional {{ mind_rape }} or {{ sensory_deprivation }}.
 </p>
 <h2>Variants</h2>
 <p>
     There are only slight variations of the crypt and library for this archetype.
-    {{ card("Heart of Nizchetus") }},
-    {{ card("Sport Bike") }},
-    {{ card("Camera Phone") }} and
-    {{ card("Fifth Tradition: Hospitality") }}
-    are often used, as well as
-    {{ card("Shadow of the Beast") }} and
-    {{ card("Powerbase: Zürich") }}.
-    On the crypt side,
-    {{ card("Maris Streck") }} is often included too.
+    {{ heart_of_nizchetus }}, {{ sport_bike }}, {{ camera_phone }} and
+    {{ fifth_tradition_hospitality }} are often used, as well as
+    {{ shadow_of_the_beast }} and {{ powerbase_zürich }}.
+    On the crypt side, {{ maris_streck }} is often included too.
 </p>
 <p>
     Using this mechanic of bleeding during multiple turns can also be seen in the
-    {{ link("/archetypes/the-unnamed", _("The unnamed")) }} archetype, which also uses
-    {{ card("Homunculus") }} and
-    {{ card("Enkil Cog") }}.
+    {{ the_unnamed }} archetype, which also uses
+    {{ homunculus }} and {{ enkil_cog }}.
 </p>
+{% endtrans %}
 {% endblock %}
 
 {% block errata %}
