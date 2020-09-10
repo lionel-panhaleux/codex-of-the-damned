@@ -11,49 +11,62 @@
 {% endblock %}
 
 {% block archetype %}
+{% trans trimmed 
+    renegade_garou=card("Renegade Garou"),
+    tribute_to_the_master=card("Tribute to the Master"),
+    target_vitals=card("Target Vitals"),
+    weighted_walking_stick=card("Weighted Walking Stick"),
+    fame=card("Fame"),
+    jacob_fermor=card("Jacob Fermor"),
+    the_unmasking=card("The Unmasking"),
+    poison_pill=card("Poison Pill"),
+    delaying_tactics=card("Delaying Tactics"),
+    reins_of_power=card("Reins of Power"),
+    direct_intervention=card("Direct Intervention"),
+    entrancement=card("Entrancement"),
+    earth_meld=card("Earth Meld"),
+    dragonbound=card("Dragonbound"),
+    camera_phone=card("Camera Phone"),
+    antti_tirila_s_deck=link("/deck-search", _("Antti Tirilä's deck"), twda_id="2k9alastorsvilleins")
+%}
 <h2>Highlights</h2>
 <p>
-    This is a <em>rush</em> deck using {{ card("Renegade Garou") }}
-    and low capacity <i>j</i> vampires to take down other minions around the table.
-    {{ card("Tribute to the Master") }} is used to bloat and
+    This is a <em>rush</em> deck using {{ renegade_garou }}
+    and low capacity {{ pro }} vampires to take down other minions around the table.
+    {{ tribute_to_the_master }} is used to bloat and
     naked bleed actions are used to deliver pool damage to the prey.
 </p>
 <p>
-    The combat module is strong and heavy, and
-    {{ card("Target Vitals") }} and
-    {{ card("Weighted Walking Stick") }} can be used
-    indistinctively by vampires or werewolves. {{ card("Fame") }} is used
-    for additional pool damage on the prey.
+    The combat module is strong and heavy, and {{ target_vitals }} and
+    {{ weighted_walking_stick }} can be used indistinctively by vampires or werewolves.
+    {{ fame }} is used for additional pool damage on the prey.
 <p>
-    If {{ card("Jacob Fermor") }} gets into play, werewolves
+    If {{ jacob_fermor }} gets into play, werewolves
     see their bleed boosted, which can be nice for the lunge.
 </p>
 <h2>Tips & Tricks</h2>
 <p>
-    {{ card("The Unmasking") }} transform the werewolves into
+    {{ the_unmasking }} transform the werewolves into
     good blockers, which is always nice defensively.
 </p>
 <p>
-    {{ card("Poison Pill") }} is an alternative to
-    {{ card("Delaying Tactics") }}: it costs less blood and
-    can disable a damage dealing vote like {{ card("Reins of Power") }}.
+    {{ poison_pill }} is an alternative to {{ delaying_tactics }}:
+    it costs less blood and can disable a damage dealing vote like {{ reins_of_power }}.
 </p>
 <p>
-    {{ card("Direct Intervention") }} is a very effective counter
-    against anti-ally actions like {{ card("Entrancement") }}.
+    {{ direct_intervention }} is a very effective counter
+    against anti-ally actions like {{ entrancement }}.
 </p>
 <p>
-    {{ card("Earth Meld") }} is an effective combat defence to protect
+    {{ earth_meld }} is an effective combat defence to protect
     the low capacity vampires.
 </p>
 <h2>Variants</h2>
 <p>
-    The main variant includes more copies of {{ card("Jacob Fermor") }}
-    and {{ card("Renegade Garou") }} to make the most of the core
-    combination of the deck.
-    {{ link("/deck-search", _("Antti Tirilä's deck"), twda_id="2k9alastorsvilleins") }}
-    from 2009 is a good example.
-    It also includes {{ card("Dragonbound") }} and
-    {{ card("Camera Phone") }} to enhance pool damage.
+    The main variant includes more copies of {{ jacob_fermor }} and {{ renegade_garou }}
+    to make the most of the core combination of the deck.
+    {{ antti_tirila_s_deck }} from 2009 is a good example.
+    It also includes {{ dragonbound }} and {{ camera_phone }} to enhance pool damage.
 </p>
+{% endtrans %}
 {% endblock %}
