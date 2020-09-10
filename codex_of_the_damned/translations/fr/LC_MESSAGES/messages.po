@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: codex 0.X\n"
 "Report-Msgid-Bugs-To: lionel.panhaleux+codex@gmail.com\n"
-"POT-Creation-Date: 2020-09-10 16:39+0200\n"
+"POT-Creation-Date: 2020-09-10 16:50+0200\n"
 "PO-Revision-Date: 2020-07-04 08:50+0200\n"
 "Last-Translator: Lionel Panhaleux <lionel.panhaleux+codex@gmail.com>\n"
 "Language: fr\n"
@@ -891,7 +891,7 @@ msgstr ""
 #: codex_of_the_damned/templates/archetypes/ishtarri-politics.html:37
 #: codex_of_the_damned/templates/archetypes/mistress.html:30
 #: codex_of_the_damned/templates/archetypes/nosferatu-royalty.html:35
-#: codex_of_the_damned/templates/archetypes/spirit-marionette.html:59
+#: codex_of_the_damned/templates/archetypes/spirit-marionette.html:31
 #: codex_of_the_damned/templates/archetypes/ventrue-royalty.html:64
 #: codex_of_the_damned/templates/best-cards/clans/daughters-of-cacophony.html:92
 #: codex_of_the_damned/templates/best-cards/clans/imbued.html:143
@@ -2665,11 +2665,46 @@ msgstr "deck d'Andrzej Jagla"
 msgid "Otto Kukkasniemi's deck"
 msgstr "deck d'Otto Kukkasniemi"
 
-#: codex_of_the_damned/templates/archetypes/spirit-marionette.html:67
+#: codex_of_the_damned/templates/archetypes/spirit-marionette.html:14
+#, python-format
+msgid ""
+"<h2>Highlights</h2> <p> This is a <em>toolbox</em> deck starring %(saulot_the_wanderer)s. He uses "
+"%(spirit_marionette)s to steal opponents vampires and take their blood with %(heidelberg_castle_germany)s. </p> <p> "
+"The deck disciplines are %(OBE)s%(AUS)s%(THA)s. %(saulot_the_wanderer)s is accompanied by Tremere antitribu, and they"
+" can use %(infernal_pact)s to be able to play %(OBE)s too. </p> <p> %(AUS)s provides good intercept, wakes and bleed "
+"bounces with %(eyes_of_argus)s, %(telepathic_misdirection)s and %(my_enemy_s_enemy)s </p> <p> %(THA)s and %(OBE)s are"
+" used for combat, with %(anesthetic_touch)s and %(theft_of_vitae)s, making for a nice \"flight of fight\" module. "
+"</p> <p> The deck can slowly grind the whole table and use %(enkil_cog)s and %(codex_of_the_edenic_groundskeepers)s "
+"to lunge and destroy its successive preys. </p> <h2>Tips & Tricks</h2> <p> %(magic_of_the_smith)s is used to fetch "
+"great equipments, depending on the table context. %(heart_of_nizchetus)s is the default choice. </p> <p> "
+"%(renewed_vigor)s is very strong combined with %(saulot_the_wanderer)s's ability, if any Tremere antitribu can use "
+"%(infernal_pact)s to play it. </p> <p> %(rutor_s_hand)s is a good way to improve %(a_b)s, provided one can pay the "
+"blood. </p> <h2>Variants</h2> <p> The <strong>Eurayle</strong> variant uses %(eurayle_gelasia_mylonas)s as the star "
+"Salubri, as in %(yannick_gibert_s_deck)s from 2010. </p> <p> An %(older_version_from_tomasz_kowalewski)s, in 2008, do"
+" not even use the Tremere antitribu and their %(infernal_pact)s, but low capacity %(AUS)s vampires instead. </p>"
+msgstr ""
+"<h2> Principe </h2> <p> C'est un deck <em> toolbox </em> avec %(saulot_the_wanderer)s. Il utilise "
+"%(spirit_marionette)s pour voler les vampires adverses et prendre leur sang avec %(heidelberg_castle_germany)s. </p> "
+"<p> Les disciplines du deck sont %(OBE)s%(AUS)s%(THA)s. %(saulot_the_wanderer)s est accompagné de Tremere antitribu, "
+"et ils peuvent utiliser %(infernal_pact)s pour pouvoir jouer également %(OBE)s. </p> <p> %(AUS)s fournit de "
+"l'interception, des réveils et des rebonds avec %(eyes_of_argus)s, %(telepathic_misdirection)s et "
+"%(my_enemy_s_enemy)s </p> <p> %(THA)s et %(OBE)s sont utilisés pour le combat, avec %(anesthetic_touch)s et "
+"%(theft_of_vitae)s, ce qui constitue un joli module \"fight-or-flight\". </p> <p> Le deck peut broyer lentement toute"
+" la table et utiliser %(enkil_cog)s et %(codex_of_the_edenic_groundskeepers)s pour fendre et détruire ses proies "
+"successives. </p> <h2> Trucs & Astuces </h2> <p> %(magic_of_the_smith)s est utilisé pour récupérer d'excellents "
+"équipements, en fonction du contexte de la table. %(heart_of_nizchetus)s est le choix par défaut. </p> <p> "
+"%(renewed_vigor)s se combine parfaitement avec l'aptitude de %(saulot_the_wanderer)s, si un antitribu Tremere peut "
+"utiliser %(infernal_pact)s pour le jouer. </p> <p> %(rutor_s_hand)s est un bon moyen d'améliorer l'%(a_b)s, à "
+"condition de pouvoir payer le sang. </p> <h2> Variantes </h2> <p> La variante <strong> Eurayle </strong> utilise "
+"%(eurayle_gelasia_mylonas)s comme star Salubri, comme dans le %(yannick_gibert_s_deck)s de 2010. </p> <p> Une "
+"%(older_version_from_tomasz_kowalewski)s, en 2008, n'utilise même pas les Tremere antitribu et leur "
+"%(infernal_pact)s, mais des vampires %(AUS)s de faible capacité à la place. </p>"
+
+#: codex_of_the_damned/templates/archetypes/spirit-marionette.html:32
 msgid "Yannick Gibert's deck"
 msgstr "deck de Yannick Gibert"
 
-#: codex_of_the_damned/templates/archetypes/spirit-marionette.html:70
+#: codex_of_the_damned/templates/archetypes/spirit-marionette.html:33
 msgid "older version from Tomasz Kowalewski"
 msgstr "version plus ancienne de Tomasz Kowalewski"
 

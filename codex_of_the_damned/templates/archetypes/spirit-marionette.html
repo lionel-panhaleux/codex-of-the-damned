@@ -11,67 +11,74 @@
 {% endblock %}
 
 {% block archetype %}
+{% trans trimmed 
+    saulot_the_wanderer=card("Saulot, The Wanderer"),
+    spirit_marionette=card("Spirit Marionette"),
+    heidelberg_castle_germany=card("Heidelberg Castle, Germany"),
+    infernal_pact=card("Infernal Pact"),
+    eyes_of_argus=card("Eyes of Argus"),
+    telepathic_misdirection=card("Telepathic Misdirection"),
+    my_enemy_s_enemy=card("My Enemy's Enemy"),
+    anesthetic_touch=card("Anesthetic Touch"),
+    theft_of_vitae=card("Theft of Vitae"),
+    enkil_cog=card("Enkil Cog"),
+    codex_of_the_edenic_groundskeepers=card("Codex of the Edenic Groundskeepers"),
+    magic_of_the_smith=card("Magic of the Smith"),
+    heart_of_nizchetus=card("Heart of Nizchetus"),
+    renewed_vigor=card("Renewed Vigor"),
+    rutor_s_hand=card("Rutor's Hand"),
+    eurayle_gelasia_mylonas=card("Eurayle Gelasia Mylonas"),
+    a_b=link("/strategy/fundamentals", _("A&B"), _anchor="AB"),
+    yannick_gibert_s_deck=link("/deck-search", _("Yannick Gibert's deck"), twda_id="2010fncqlyon"),
+    older_version_from_tomasz_kowalewski=link("/deck-search", _("older version from Tomasz Kowalewski"), twda_id="2k8crusadebreslau")
+%}
 <h2>Highlights</h2>
 <p>
-    This is a <em>toolbox</em> deck starring
-    {{ card("Saulot, The Wanderer") }}.
-    He uses {{ card("Spirit Marionette") }}
-    to steal opponents vampires and take their blood with
-    {{ card("Heidelberg Castle, Germany") }}.
+    This is a <em>toolbox</em> deck starring {{ saulot_the_wanderer }}.
+    He uses {{ spirit_marionette }} to steal opponents vampires
+    and take their blood with {{ heidelberg_castle_germany }}.
 </p>
 <p>
-    The deck disciplines are <i>BAT</i>.
-    {{ card("Saulot, The Wanderer") }} is accompanied by
-    Tremere antitribu, and they can use {{ card("Infernal Pact") }}
-    to be able to play <i>B</i> too.
+    The deck disciplines are {{ OBE }}{{ AUS }}{{ THA }}.
+    {{ saulot_the_wanderer }} is accompanied by Tremere antitribu,
+    and they can use {{ infernal_pact }} to be able to play {{ OBE }} too.
 </p>
 <p>
-    <i>A</i> provides good intercept, wakes and bleed bounces with
-    {{ card("Eyes of Argus") }},
-    {{ card("Telepathic Misdirection") }} and
-    {{ card("My Enemy's Enemy") }}
+    {{ AUS }} provides good intercept, wakes and bleed bounces with
+    {{ eyes_of_argus }}, {{ telepathic_misdirection }} and {{ my_enemy_s_enemy }}
 </p>
 <p>
-    <i>T</i> and <i>B</i> are used for combat, with
-    {{ card("Anesthetic Touch") }} and
-    {{ card("Theft of Vitae") }}, making for a nice "flight of fight"
-    module.
+    {{ THA }} and {{ OBE }} are used for combat, with {{ anesthetic_touch }} and
+    {{ theft_of_vitae }}, making for a nice "flight of fight" module.
 </p>
 <p>
-    The deck can slowly grind the whole table and use
-    {{ card("Enkil Cog") }} and
-    {{ card("Codex of the Edenic Groundskeepers") }}
-    to lunge and destroy its successive preys.
+    The deck can slowly grind the whole table and use {{ enkil_cog }} and
+    {{ codex_of_the_edenic_groundskeepers }} to lunge and destroy its successive preys.
 </p>
 <h2>Tips & Tricks</h2>
 <p>
-    {{ card("Magic of the Smith") }} is used to fetch
-    great equipments, depending on the table context.
-    {{ card("Heart of Nizchetus") }} is the default choice.
+    {{ magic_of_the_smith }} is used to fetch great equipments, depending on the table context.
+    {{ heart_of_nizchetus }} is the default choice.
 </p>
 <p>
-    {{ card("Renewed Vigor") }} is very strong combined with
-    {{ card("Saulot, The Wanderer") }}'s ability, if any
-    Tremere antitribu can use {{ card("Infernal Pact") }} to play it.
+    {{ renewed_vigor }} is very strong combined with {{ saulot_the_wanderer }}'s ability,
+    if any Tremere antitribu can use {{ infernal_pact }} to play it.
 </p>
 <p>
-    {{ card("Rutor's Hand") }} is a good way to improve
-    {{ link("/strategy/fundamentals", _("A&B"), _anchor="AB") }},
-    provided one can pay the blood.
+    {{ rutor_s_hand }} is a good way to improve
+    {{ a_b }}, provided one can pay the blood.
 </p>
 <h2>Variants</h2>
 <p>
-    The <strong>Eurayle</strong> variant uses
-    {{ card("Eurayle Gelasia Mylonas") }}
-    as the star Salubri,
-    as in {{ link("/deck-search", _("Yannick Gibert's deck"), twda_id="2010fncqlyon") }} from 2010.
+    The <strong>Eurayle</strong> variant uses {{ eurayle_gelasia_mylonas }}
+    as the star Salubri, as in {{ yannick_gibert_s_deck }} from 2010.
 </p>
 <p>
-    An {{ link("/deck-search", _("older version from Tomasz Kowalewski"), twda_id="2k8crusadebreslau") }},
+    An {{ older_version_from_tomasz_kowalewski }},
     in 2008, do not even use the Tremere antitribu and their
-    {{ card("Infernal Pact") }}, but low capacity <i>A</i> vampires
-    instead.
+    {{ infernal_pact }}, but low capacity {{ AUS }} vampires instead.
 </p>
+{% endtrans %}
 {% endblock %}
 
 {% block errata %}
