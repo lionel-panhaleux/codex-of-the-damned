@@ -11,61 +11,71 @@
 {% endblock %}
 
 {% block archetype %}
+{% trans trimmed 
+    shambling_hordes=card("Shambling Hordes"),
+    liquidation=card("Liquidation"),
+    dragonbound=card("Dragonbound"),
+    fame=card("Fame"),
+    sudario_refraction=card("Sudario Refraction"),
+    call_of_the_hungry_dead=card("Call of the Hungry Dead"),
+    spectral_divination=card("Spectral Divination"),
+    trap=card("Trap"),
+    carlton_van_wyk=card("Carlton Van Wyk"),
+    the_unmasking=card("The Unmasking"),
+    fbi_special_affairs_division=card("FBI Special Affairs Division"),
+    the_parthenon=card("The Parthenon"),
+    tupdog=card("Tupdog"),
+    life_in_the_city=card("Life in the City"),
+    trochomancy=card("Trochomancy"),
+    ashur_tablets=card("Ashur Tablets"),
+    andrzej_jagla_s_deck=link("/deck-search", _("Andrzej Jagla's deck"), twda_id="2013wbdpp"),
+    otto_kukkasniemi_s_deck=link("/deck-search", _("Otto Kukkasniemi's deck"), twda_id="2011snc")
+%}
 <h2>Highlights</h2>
 <p>
-    This is an <em>allies rush</em> deck using
-    {{ card("Shambling Hordes") }}.
-    The idea is to use {{ card("Liquidation") }} to put some
-    {{ card("Shambling Hordes") }} in the ash heap,
+    This is an <em>allies rush</em> deck using {{ shambling_hordes }}.
+    The idea is to use {{ liquidation }} to put some {{ shambling_hordes }} in the ash heap,
     the recruit other ones, paying for it with the discarded ones.
     They then proceed to taking down opponents vampires while the vampires bleed.
 </p>
 <p>
     Most Master cards are used to get some blood back on the vampires or cheapen the cost of
-    {{ card("Shambling Hordes") }}.
+    {{ shambling_hordes }}.
 </p>
 <p>
-    As the deck has a solid rush potential, {{ card("Dragonbound") }}
-    and {{ card("Fame") }} can help deliver more pool damage.
+    As the deck has a solid rush potential, {{ dragonbound }} and {{ fame }}
+    can help deliver more pool damage.
 </p>
 <p>
-    {{ card("Sudario Refraction") }} is used to get the cards
-    discarded by {{ card("Liquidation") }} back into hand,
-    providing a nice recursion for this deck.
+    {{ sudario_refraction }} is used to get the cards discarded by {{ liquidation }}
+    back into hand, providing a nice recursion for this deck.
 </p>
 <h2>Tips & Tricks</h2>
 <p>
-    {{ card("Call of the Hungry Dead") }} and
-    {{ card("Spectral Divination") }} help to bring out
-    the {{ card("Shambling Hordes") }} without being blocked.
+    {{ call_of_the_hungry_dead }} and {{ spectral_divination }} help bring out
+    the {{ shambling_hordes }} without being blocked.
 </p>
 <p>
-    {{ card("Trap") }} can be used to take down big capacity vampires
-    or allies with a defending ability like
-    {{ card("Carlton Van Wyk") }}.
+    {{ trap }} can be used to take down big capacity vampires or allies
+    with a defending ability like {{ carlton_van_wyk }}.
 </p>
 <p>
-    {{ card("The Unmasking") }} and
-    {{ card("FBI Special Affairs Division") }}
+    {{ the_unmasking }} and {{ fbi_special_affairs_division }}
     improve the allies quite a bit.
 </p>
 <h2>Variants</h2>
 <p>
     Many variants have a little bit more combat cards and do not bother with
-    {{ card("The Parthenon") }}, like
-    {{ link("/deck-search", _("Andrzej Jagla's deck"), twda_id="2013wbdpp") }} from 2013.
+    {{ the_parthenon }}, like {{ andrzej_jagla_s_deck }} from 2013.
 </p>
 <p>
     The <strong>Swedish</strong> variant uses
-    {{ card("Tupdog") }} for additional minions in the ash heap,
-    {{ card("Life in the City") }} to add blood to the vampires, and
-    {{ card("Trochomancy") }}
-    to help disrupt the recursion of decks using
-    {{ card("Ashur Tablets") }}.
-    {{ link("/deck-search", _("Otto Kukkasniemi's deck"), twda_id="2011snc") }}
-    from the 2011 Swedish NC is a good example.
-
+    {{ tupdog }} for additional minions in the ash heap,
+    {{ life_in_the_city }} to add blood to the vampires, and {{ trochomancy }}
+    to help disrupt the recursion of decks using {{ ashur_tablets }}.
+    {{ otto_kukkasniemi_s_deck }} from the 2011 Swedish NC is a good example.
 </p>
+{% endtrans %}
 {% endblock %}
 
 {% block errata %}
