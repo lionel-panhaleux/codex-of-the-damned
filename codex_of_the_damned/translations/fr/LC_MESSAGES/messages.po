@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: codex 0.X\n"
 "Report-Msgid-Bugs-To: lionel.panhaleux+codex@gmail.com\n"
-"POT-Creation-Date: 2020-09-10 09:38+0200\n"
+"POT-Creation-Date: 2020-09-10 10:15+0200\n"
 "PO-Revision-Date: 2020-07-04 08:50+0200\n"
 "Last-Translator: Lionel Panhaleux <lionel.panhaleux+codex@gmail.com>\n"
 "Language: fr\n"
@@ -299,7 +299,7 @@ msgstr ""
 msgid "Tzimisce Toolbox"
 msgstr ""
 
-#: codex_of_the_damned/navigation.py:134 codex_of_the_damned/templates/archetypes/mistress.html:65
+#: codex_of_the_damned/navigation.py:134 codex_of_the_damned/templates/archetypes/mistress.html:33
 #: codex_of_the_damned/templates/best-cards/clans/tremere.html:38
 #: codex_of_the_damned/templates/best-cards/clans/tzimisce.html:9
 msgid "Tzimisce Wall"
@@ -889,7 +889,7 @@ msgstr ""
 #: codex_of_the_damned/templates/archetypes/black-hand.html:29 codex_of_the_damned/templates/archetypes/death-star.html:30
 #: codex_of_the_damned/templates/archetypes/hunters.html:37
 #: codex_of_the_damned/templates/archetypes/ishtarri-politics.html:37
-#: codex_of_the_damned/templates/archetypes/mistress.html:47
+#: codex_of_the_damned/templates/archetypes/mistress.html:30
 #: codex_of_the_damned/templates/archetypes/nosferatu-royalty.html:42
 #: codex_of_the_damned/templates/archetypes/spirit-marionette.html:59
 #: codex_of_the_damned/templates/archetypes/ventrue-royalty.html:64
@@ -2198,11 +2198,44 @@ msgstr ""
 msgid "Erol Hammer's deck"
 msgstr "deck d'Erol Hammer"
 
-#: codex_of_the_damned/templates/archetypes/mistress.html:50
+#: codex_of_the_damned/templates/archetypes/mistress.html:14
+#, python-format
+msgid ""
+"<h2>Highlights</h2> <p> This is a <em>stealth bleed & vote</em> deck starring %(mistress_fanchon)s. Her ability lets "
+"her fetch an %(alastor)s to equip with an %(helicopter)s, paying only 1 pool. </p> <p> %(villein)s, "
+"%(zillah_s_valley)s and %(information_highway)s are used to get multiple big capacity vampires into play. </p> <p> "
+"This version uses only the %(DOM)s%(OBF)s disciplines, a dreadful combination. %(obedience)s and %(mental_maze)s are "
+"used for combat defence. </p> <h2>Tips & Tricks</h2> <p> The key idea of this archetype is to abuse "
+"%(mistress_fanchon)s's ability to fetch the right card at the right time. The focus of the deck is to make sure she "
+"can do that <em>and bleed</em> every turn. </p> <p> %(scourge_of_the_enochians)s is included to cripple breed "
+"constructs, as they can be overwhelming for this slower deck. </p> <h2>Variants</h2> <p> The %(alastor)s + "
+"%(helicopter)s combination is not mandatory. Other methods can be found to improve %(a_b)s, for example using "
+"%(flurry_of_action)s like in %(benoît_moyen_s_deck)s from 2010. </p> <p> Danilo Torrisi played a %(nice_combination)s"
+" in 2018: The %(might_of_the_camarilla)s alongside %(possession)s to get more Inner Circle into play fast and cheap. "
+"</p> <p> Although this is a different archetype, %(mistress_fanchon)s can be used for her %(AUS)s%(VIC)s combination,"
+" alongside %(malgorzata)s, %(sha_ennu)s or %(unmada)s for a variation of the %(tzimisce_wall)s archetype. </p>"
+msgstr ""
+"<h2> Principe </h2> <p> C'est un deck <em>stealth bleed & vote</em> avec %(mistress_fanchon)s. Son aptitude lui "
+"permet d'aller chercher un %(alastor)s pour s'équiper d'un %(helicopter)s en ne payant qu'un seul point d'influence. "
+"</p> <p> %(villein)s, %(zillah_s_valley)s et %(information_highway)s sont utilisés pour mettre en jeu plusieurs "
+"vampires de grande capacité. </p> <p> Cette version n'utilise que les disciplines %(DOM)s%(OBF)s, une combinaison "
+"efficace. %(obedience)s et %(mental_maze)s sont utilisés pour la défense au combat. </p> <h2> Trucs & Astuces </h2> "
+"<p> L'idée clé de cet archétype est d'utiliser à fond l'aptitude de %(mistress_fanchon)s à aller chercher la bonne "
+"carte au bon moment. L'objectif du deck est de s'assurer qu'elle peut faire cela <em> et mordre </em> à chaque tour. "
+"</p> <p> %(scourge_of_the_enochians)s est inclus pour paralyser les decks de reproduction, car ils peuvent être "
+"écrasants pour ce deck plus lent. </p> <h2> Variantes </h2> <p> La combinaison %(alastor)s + %(helicopter)s n'est pas"
+" obligatoire. D'autres méthodes peuvent être trouvées pour améliorer l'%(a_b)s, par exemple en utilisant "
+"%(flurry_of_action)s comme dans le %(benoît_moyen_s_deck)s de 2010. </p> <p> Danilo Torrisi a joué une "
+"%(nice_combination)s en 2018 : The %(might_of_the_camarilla)s aux côtés de %(possession)s pour obtenir plus d'Inner "
+"Circle rapidement et pas cher. </p> <p> Bien qu'il s'agisse d'un archétype différent, %(mistress_fanchon)s peut être "
+"utilisé pour sa combinaison %(AUS)s%(VIC)s, aux côtés de %(malgorzata)s, %(sha_ennu)s ou %(unmada)s pour une variante"
+" de l'archétype %(tzimisce_wall)s. </p>"
+
+#: codex_of_the_damned/templates/archetypes/mistress.html:31
 msgid "Benoît Moyen's deck"
 msgstr "deck de Benoît Moyen"
 
-#: codex_of_the_damned/templates/archetypes/mistress.html:53
+#: codex_of_the_damned/templates/archetypes/mistress.html:32
 msgid "nice combination"
 msgstr "belle combinaison"
 

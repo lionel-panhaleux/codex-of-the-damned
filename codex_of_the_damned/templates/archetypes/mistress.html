@@ -11,59 +11,69 @@
 {% endblock %}
 
 {% block archetype %}
+{% trans trimmed 
+    mistress_fanchon=card("Mistress Fanchon"),
+    alastor=card("Alastor"),
+    helicopter=card("Helicopter"),
+    villein=card("Villein"),
+    zillah_s_valley=card("Zillah's Valley"),
+    information_highway=card("Information Highway"),
+    obedience=card("Obedience"),
+    mental_maze=card("Mental Maze"),
+    scourge_of_the_enochians=card("Scourge of the Enochians"),
+    flurry_of_action=card("Flurry of Action"),
+    might_of_the_camarilla=card("Might of the Camarilla"),
+    possession=card("Possession"),
+    malgorzata=card("Malgorzata"),
+    sha_ennu=card("Sha‑Ennu"),
+    unmada=card("Unmada"),
+    a_b=link("/strategy/fundamentals", _("A&B"), _anchor="AB"),
+    benoît_moyen_s_deck=link("/deck-search", _("Benoît Moyen's deck"), twda_id="2010eternalvigilancelf"),
+    nice_combination=link("/deck-search", _("nice combination"), twda_id="2018bgpmb"),
+    tzimisce_wall=link("/archetypes/tzimisce-wall", _("Tzimisce Wall"))
+    %}
 <h2>Highlights</h2>
 <p>
-    This is a <em>stealth bleed & vote</em> deck starring
-    {{ card("Mistress Fanchon") }}.
-    Her ability lets her fetch an {{ card("Alastor") }} to equip with
-    an {{ card("Helicopter") }}, paying only 1 pool.
+    This is a <em>stealth bleed & vote</em> deck starring {{ mistress_fanchon }}.
+    Her ability lets her fetch an {{ alastor }} to equip with
+    an {{ helicopter }}, paying only 1 pool.
 </p>
 <p>
-    {{ card("Villein") }},
-    {{ card("Zillah's Valley") }} and
-    {{ card("Information Highway") }} are used to get
+    {{ villein }}, {{ zillah_s_valley }} and {{ information_highway }} are used to get
     multiple big capacity vampires into play.
 </p>
 <p>
-    This version uses only the <i>DO</i> disciplines, a dreadful combination.
-    {{ card("Obedience") }} and
-    {{ card("Mental Maze") }} are used for combat defence.
+    This version uses only the {{ DOM }}{{ OBF }} disciplines, a dreadful combination.
+    {{ obedience }} and {{ mental_maze }} are used for combat defence.
 </p>
 <h2>Tips & Tricks</h2>
 <p>
-    The key idea of this archetype is to abuse
-    {{ card("Mistress Fanchon") }}'s ability to fetch the right card
-    at the right time. The focus of the deck is to make sure she can do that <em>and bleed</em> every turn.
+    The key idea of this archetype is to abuse {{ mistress_fanchon }}'s ability
+    to fetch the right card at the right time.
+    The focus of the deck is to make sure she can do that <em>and bleed</em> every turn.
 </p>
 <p>
-    {{ card("Scourge of the Enochians") }} is included
-    to cripple breed constructs, as they can be overwhelming for this slower deck.
+    {{ scourge_of_the_enochians }} is included to cripple breed constructs,
+    as they can be overwhelming for this slower deck.
 </p>
 <h2>Variants</h2>
 <p>
-    The
-    {{ card("Alastor") }} +
-    {{ card("Helicopter") }} combination is not mandatory.
-    Other methods can be found to improve {{ link("/strategy/fundamentals", _("A&B"), _anchor="AB") }}, for example
-    using
-    {{ card("Flurry of Action") }} like in
-    {{ link("/deck-search", _("Benoît Moyen's deck"), twda_id="2010eternalvigilancelf") }} from 2010.
+    The {{ alastor }} + {{ helicopter }} combination is not mandatory.
+    Other methods can be found to improve {{ a_b }}, for example using
+    {{ flurry_of_action }} like in {{ benoît_moyen_s_deck }} from 2010.
 </p>
 <p>
-    Danilo Torrisi played a {{ link("/deck-search", _("nice combination"), twda_id="2018bgpmb") }} in 2018:
-    The {{ card("Might of the Camarilla") }} alongside
-    {{ card("Possession") }} to get more Inner Circle into play
-    fast and cheap.
+    Danilo Torrisi played a {{ nice_combination }} in 2018:
+    The {{ might_of_the_camarilla }} alongside {{ possession }}
+    to get more Inner Circle into play fast and cheap.
 </p>
 <p>
     Although this is a different archetype,
-    {{ card("Mistress Fanchon") }} can be used for her <i>AV</i>
-    combination, alongside
-    {{ card("Malgorzata") }},
-    {{ card("Sha‑Ennu") }} or
-    {{ card("Unmada") }} for a variation
-    of the {{ link("/archetypes/tzimisce-wall", _("Tzimisce Wall")) }} archetype.
+    {{ mistress_fanchon }} can be used for her {{ AUS }}{{ VIC }} combination, alongside
+    {{ malgorzata }}, {{ sha_ennu }} or {{ unmada }} for a variation
+    of the {{ tzimisce_wall }} archetype.
 </p>
+{% endtrans %}
 {% endblock %}
 
 {% block errata %}
