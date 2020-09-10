@@ -11,58 +11,66 @@
 {% endblock %}
 
 {% block archetype %}
+{% trans trimmed 
+    saulot_the_wanderer=card("Saulot, The Wanderer"),
+    the_capuchin=card("The Capuchin"),
+    anarch_convert=card("Anarch Convert"),
+    anarch_revolt=card("Anarch Revolt"),
+    the_anarch_free_press=card("The Anarch Free Press"),
+    monkey_wrench=card("Monkey Wrench"),
+    guardian_vigil=card("Guardian Vigil"),
+    smiling_jack_the_anarch=card("Smiling Jack, The Anarch"),
+    sire_s_index_finger=card("Sire's Index Finger"),
+    deep_song=card("Deep Song"),
+    rötschreck=card("Rötschreck"),
+    drawing_out_the_beast=card("Drawing Out the Beast"),
+    terror_frenzy=card("Terror Frenzy"),
+    the_rack=card("The Rack"),
+    hidden_strength=card("Hidden Strength"),
+    taste_of_vitae=card("Taste of Vitae"),
+    disarm=card("Disarm"),
+    daniel_abreu_s_deck=link("/deck-search", _("Daniel Abreu's deck"), twda_id="2016tdspb")
+%}
 <h2>Highlights</h2>
 <p>
-    This is a <em>wall</em> deck starring
-    {{ card("Saulot, The Wanderer") }} and
-    {{ card("The Capuchin") }}, with some sidekicks having the
-    <i>AF</i> disciplines
+    This is a <em>wall</em> deck starring {{ saulot_the_wanderer }} and {{ the_capuchin }},
+    with some sidekicks having the {{ AUS }}{{ FOR }} disciplines.
 </p>
 <p>
-    They all get <em>Anarch</em> using {{ card("Anarch Convert") }},
-    and that allows them to use good <em>Anarch</em> cards like
-    {{ card("Anarch Revolt") }},
-    {{ card("The Anarch Free Press") }},
-    {{ card("Monkey Wrench") }} and
-    {{ card("Guardian Vigil") }}.
+    They all get <em>Anarch</em> using {{ anarch_convert }},
+    and that allows them to use good <em>Anarch</em> cards like {{ anarch_revolt }},
+    {{ the_anarch_free_press }}, {{ monkey_wrench }} and {{ guardian_vigil }}.
 </p>
 <p>
     The idea is to block problematic actions both from the prey and the predator,
-    using <i>A</i> for intercept, weapons and <i>F</i> for damage prevention in combat.
+    using {{ AUS }} for intercept, weapons and {{ FOR }} for damage prevention in combat.
     The deck slowly builds up a strong position and delivers some well-timed bleeds to the prey.
 </p>
 <p>
-    {{ card("Anarch Revolt") }} and
-    {{ card("Smiling Jack, The Anarch") }} help
-    improve pool damage, and {{ card("Monkey Wrench") }}
-    can be used for the lunge.
+    {{ anarch_revolt }} and {{ smiling_jack_the_anarch }} help
+    improve pool damage, and {{ monkey_wrench }} can be used for the lunge.
 </p>
 <h2>Tips & Tricks</h2>
 <p>
-    {{ card("Sire's Index Finger") }} is a good counter
-    against {{ card("Deep Song") }} at superior and
-    {{ card("Rötschreck") }}, but also against <i>i</i> frenzy
-    cards commonly played against weapons:
-    {{ card("Drawing Out the Beast") }} and
-    {{ card("Terror Frenzy") }}.
+    {{ sire_s_index_finger }} is a good counter against {{ deep_song }} at superior and
+    {{ rötschreck }}, but also against {{ ani }} frenzy cards commonly played against weapons:
+    {{ drawing_out_the_beast }} and {{ terror_frenzy }}.
 </p>
 <p>
-    {{ card("The Rack") }} is very strong in combination with
-    {{ card("Saulot, The Wanderer") }}'s ability: together,
-    they make for a nice bloat.
+    {{ the_rack }} is very strong in combination with {{ saulot_the_wanderer }}'s ability:
+    together, they make for a nice bloat.
 </p>
 <p>
-    {{ card("Hidden Strength") }} is a good way to prevent
-    aggravated damage, but also to prevent the opponent to use damage-based cards like
-    {{ card("Taste of Vitae") }} and
-    {{ card("Disarm") }}.
+    {{ hidden_strength }} is a good way to prevent aggravated damage,
+    but also to prevent the opponent to use damage-based cards like
+    {{ taste_of_vitae }} and {{ disarm }}.
 </p>
 <h2>Variants</h2>
 <p>
     There are not many variants for this archetype. The <em>Anarch</em> option is rarely used,
-    {{ link("/deck-search", _("Daniel Abreu's deck"), twda_id="2016tdspb") }} from 2016 is a good example
-    of doing it without the <em>Anarch</em> tech.
+    {{ daniel_abreu_s_deck }} from 2016 is a good example of doing it without the <em>Anarch</em> tech.
 </p>
+{% endtrans %}
 {% endblock %}
 
 {% block errata %}
