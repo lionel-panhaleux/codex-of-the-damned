@@ -11,26 +11,46 @@
 {% endblock %}
 
 {% block archetype %}
+{% trans trimmed 
+    deep_song=card("Deep Song"),
+    carrion_crows=card("Carrion Crows"),
+    aid_from_bats=card("Aid from Bats"),
+    nana_buruku=card("Nana Buruku"),
+    ashur_tablets=card("Ashur Tablets"),
+    fame=card("Fame"),
+    dragonbound=card("Dragonbound"),
+    powerbase_luanda=card("Powerbase: Luanda"),
+    well_marked=card("Well-Marked"),
+    fish=card("Fish"),
+    powerbase_montreal=card("Powerbase: Montreal"),
+    the_rack=card("The Rack"),
+    cats_guidance=card("Cats' Guidance"),
+    sense_the_savage_way=card("Sense the Savage Way"),
+    wider_view=card("Wider View"),
+    anarch_convert=card("Anarch Convert"),
+    anarch_revolt=card("Anarch Revolt"),
+    aranthebes_the_immortal=card("Aranthebes, The Immortal"),
+    raven_spy=card("Raven Spy"),
+    orian_gissler_s_deck=link("/deck-search", _("Orian Gissler's deck"), twda_id="2018fnclf"),
+    kim_nilsson_s_deck=link("/deck-search", _("Kim Nilsson's deck"), twda_id="2016sncss"),
+    adam_horvath_s_deck=link("/deck-search", _("Ádám Horváth's deck"), twda_id="2010hungarianecq")
+%}
 <h2>Highlights</h2>
 <p>
-    This is a <em>rush</em> deck using {{ card("Deep Song") }} to rush
-    or bleed and a <i>i</i> combat module with
-    {{ card("Carrion Crows") }} and
-    {{ card("Aid from Bats") }}.
+    This is a <em>rush</em> deck using {{ deep_song }} to rush
+    or bleed and a {{ ANI }} combat module with
+    {{ carrion_crows }} and {{ aid_from_bats }}.
 </p>
 <p>
-    Using {{ card("Nana Buruku") }} allow to play a lot of
-    {{ card("Ashur Tablets") }} for a nice recursion.
-    This lets the deck adapt to the table context while bloating a bit.
+    Using {{ nana_buruku }} allow to play a lot of {{ ashur_tablets }}
+    for a nice recursion. This lets the deck adapt to the table context while bloating.
 </p>
 <p>
-    {{ card("Fame") }} and
-    {{ card("Dragonbound") }} are used to improve pool damage.
+    {{ fame }} and {{ dragonbound }} are used to improve pool damage.
 </p>
 <p>
     Using low ad mid capacity vampires let the deck use a decent amout of naked "bleed for 1" actions or
-    inferior <i>i</i> {{ card("Deep Song") }}
-    to get some pool damage to its prey.
+    inferior {{ ani }} {{ deep_song }} to get some pool damage to its prey.
 </p>
 <p>
     It is a very solid deck, with good defence against the predator and decent pool damage towards its prey.
@@ -38,52 +58,44 @@
 </p>
 <h2>Tips & Tricks</h2>
 <p>
-    {{ card("Powerbase: Luanda") }} and
-    {{ card("Well-Marked") }} are nice tools for a rush deck.
-    They can be used by both {{ card("Nana Buruku") }} and
-    {{ card("Fish") }}.
+    {{ powerbase_luanda }} and {{ well_marked }} are nice tools for a rush deck.
+    They can be used by both {{ nana_buruku }} and {{ fish }}.
 </p>
 <p>
     The deck does not have a lot of intercept, but plays
-    {{ card("Powerbase: Montreal") }} and
-    {{ card("The Rack") }} nonetheless, relying on the threat of
+    {{ powerbase_montreal }} and {{ the_rack }} nonetheless, relying on the threat of
     a retaliation rush to protect them.
 </p>
 <p>
     Just including a bit of <em>wakes</em> and some intercept enhancers like
-    {{ card("Cats' Guidance") }} and
-    {{ card("Sense the Savage Way") }}
+    {{ cats_guidance }} and {{ sense_the_savage_way }}
     keep the other players guessing on wether the deck can block or not.
 </p>
 <p>
-    Getting {{ card("Wider View") }} at some point helps getting rid
-    of the spurious {{ card("Nana Buruku") }} in crypt.
-    She's also only played in 4 copies to avoid jamming the crypt too much; other minions are needed for the
-    deck to work well.
+    Getting {{ wider_view }} at some point helps getting rid
+    of the spurious {{ nana_buruku }} in crypt.
+    She's also only played in 4 copies to avoid jamming the crypt too much;
+    other minions are needed for the deck to work well.
 </p>
 <h2>Variants</h2>
 <p>
-    The <strong>Anarch</strong> variant uses
-    {{ card("Anarch Convert") }} to make the vampires anarch,
-    along
-    {{ card("Anarch Revolt") }} to improve pool damage,
+    The <strong>Anarch</strong> variant uses {{ anarch_convert }} to make the vampires anarch,
+    along {{ anarch_revolt }} to improve pool damage,
     taking down any Anarch vampire on the prey side using rush actions.
-    {{ link("/deck-search", _("Orian Gissler's deck"), twda_id="2018fnclf") }} from the 2018 French NC
-    is a good example.
+    {{ orian_gissler_s_deck }} from the 2018 French NC is a good example.
 </p>
 <p>
-    The <strong>Weenie ANI</strong> plays <i>i</i> without
-    {{ card("Nana Buruku") }} nor
-    {{ card("Ashur Tablets") }}.
-    {{ link("/deck-search", _("Kim Nilsson's deck"), twda_id="2016sncss") }} from the 2016 Swedish NC
-    is a good example.
+    The <strong>Weenie ANI</strong> plays {{ ani }} without
+    {{ nana_buruku }} nor
+    {{ ashur_tablets }}.
+    {{ kim_nilsson_s_deck }} from the 2016 Swedish NC is a good example.
 </p>
 <p>
     The <strong>Toolbox</strong> variant includes more intercept, like
-    {{ link("/deck-search", _("Ádám Horváth's deck"), twda_id="2010hungarianecq") }} from 2010,
-    with {{ card("Aranthebes, The Immortal") }} and
-    {{ card("Raven Spy") }}.
+    {{ adam_horvath_s_deck }} from 2010,
+    with {{ aranthebes_the_immortal }} and {{ raven_spy }}.
 </p>
+{% endtrans %}
 {% endblock %}
 
 {% block errata %}
