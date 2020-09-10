@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: codex 0.X\n"
 "Report-Msgid-Bugs-To: lionel.panhaleux+codex@gmail.com\n"
-"POT-Creation-Date: 2020-09-10 11:03+0200\n"
+"POT-Creation-Date: 2020-09-10 11:16+0200\n"
 "PO-Revision-Date: 2020-07-04 08:50+0200\n"
 "Last-Translator: Lionel Panhaleux <lionel.panhaleux+codex@gmail.com>\n"
 "Language: fr\n"
@@ -890,7 +890,7 @@ msgstr ""
 #: codex_of_the_damned/templates/archetypes/hunters.html:37
 #: codex_of_the_damned/templates/archetypes/ishtarri-politics.html:37
 #: codex_of_the_damned/templates/archetypes/mistress.html:30
-#: codex_of_the_damned/templates/archetypes/nosferatu-royalty.html:42
+#: codex_of_the_damned/templates/archetypes/nosferatu-royalty.html:35
 #: codex_of_the_damned/templates/archetypes/spirit-marionette.html:59
 #: codex_of_the_damned/templates/archetypes/ventrue-royalty.html:64
 #: codex_of_the_damned/templates/best-cards/clans/daughters-of-cacophony.html:92
@@ -2357,15 +2357,69 @@ msgstr "deck de Jordi Tomás"
 msgid "Jonathan Sanchez Rios' deck"
 msgstr "deck de Jonathan Sanchez Rios"
 
-#: codex_of_the_damned/templates/archetypes/nosferatu-royalty.html:76
+#: codex_of_the_damned/templates/archetypes/nosferatu-royalty.html:14
+#, python-format
+msgid ""
+"<h2>Highlights</h2> <p> This is a <em>toolbox</em> deck using Nosferatu <em>Princes</em> and <em>Justicar</em>, and "
+"the %(OBF)s%(ANI)s disciplines. It has an efficient combat module using the classice %(ANI)s %(aid_from_bats)s & "
+"%(carrion_crows)s combination. </p> <p> Pool damage is done by using %(deep_song)s to bleed, together with damage "
+"dealing votes and %(fame)s if it is drawn. %(OBF)s provides good stealth, as usual. </p> <p> The deck has good "
+"intercept using a lot of %(second_tradition_domain)s, together with %(underbridge_stray)s and %(raven_spy)s </p> <p> "
+"%(cock_robin)s is the star of the deck and his ability is used to the maximum, with %(deep_song)s and %(ani)s allies "
+"and retainers. </p> <h2>Tips & Tricks</h2> <p> <em>Maxime Socroun</em> indicates that %(warsaw_station)s is the most "
+"important card in the deck. Indeed its effect seconds %(cock_robin)s's ability beautifully and provides a nice "
+"increase in %(a_b)s. </p> <p> %(scourge_of_the_enochians)s is a tactical counter against breed constructs, as they "
+"can quickly become overwhelming. </p> <p> As the game progresses, %(tier_of_souls)s and %(enkil_cog)s will improve "
+"bleeds. Moreover, %(enkil_cog)s will let %(cock_robin)s use his ability twice in successive turns and as "
+"%(tier_of_souls)s is an %(ani)s action, it lets %(cock_robin)s unlock and bleed afterwards immediately. </p> <p> "
+"%(deep_song)s can be used to bleed or to rush cumbersome vampires, depending on the context. </p> <p> The combat "
+"module is strong, but not the primary focus of the deck. %(kevlar_vest)s, %(heroic_might)s and "
+"%(preternatural_strength)s can come in handy against adverse combat modules. </p> <p> The deck does not include so "
+"many votes as it is really not sure about getting the vote lock on the table. Any dedicated political deck will get "
+"more votes than the 5-7 this one can put into play. </p> <h2>Variants</h2> <p> Variants include the use of a group 2 "
+"crypt and a %(POT)s combat module, like in %(gyula_erdos_deck)s from the 2008 Czech NC. </p> <p> More votes can also "
+"be used, alongside %(fourth_tradition_the_accounting)s and %(grooming_the_protégé)s for crypt acceleration to get "
+"more votes on the table, like in %(inaki_jimenez_s_deck)s from the 2008 Spanish NC. </p> <p> Some variants even "
+"discard the combat side of things to focus on a full political deck, like in %(pascal_bertrand_s_deck)s from 2013, "
+"using %(mental_maze)s instead. In this case, this makes some room for a %(third_tradition_progeny)s plus "
+"%(consanguineous_boon)s combination to bloat and get more vampires (and more votes) out. </p>"
+msgstr ""
+"<h2> Principe </h2> <p> C'est un deck <em> toolbox </em> avec des <em> Princes </em> et <em> Justicar </em> "
+"Nosferatu, et les disciplines %(OBF)s%(ANI)s. Il dispose d'un module de combat efficace qui utilise la combinaison "
+"classique %(ANI)s %(aid_from_bats)s & %(carrion_crows)s. </p> <p> Les dégâts d'influence se font en utilisant "
+"%(deep_song)s pour mordre, ainsi qu'avec des votes infligeant des dégâts et %(fame)s s'il est pioché. %(OBF)s offre "
+"une bonne discrétion, comme d'habitude. </p> <p> Le deck a une bonne interception en utilisant beaucoup de "
+"%(second_tradition_domain)s, ainsi que %(underbridge_stray)s et %(raven_spy)s </p> <p> %(cock_robin)s est la star du "
+"deck et sa capacité est utilisée au maximum, avec %(deep_song)s et des alliés et compagnons %(ani)s. </p> <h2> Trucs "
+"& Astuces </h2> <p> <em> Maxime Socroun </em> indique que %(warsaw_station)s est la carte la plus importante du deck."
+" En effet, son effet seconde magnifiquement la capacité de %(cock_robin)s et fournit une belle augmentation "
+"d'%(a_b)s. </p> <p> %(scourge_of_the_enochians)s est un contre tactique contre les decks de reproduction, car ils "
+"peuvent rapidement devenir écrasants. </p> <p> Au fur et à mesure que la partie progresse, %(tier_of_souls)s et "
+"%(enkil_cog)s amélioreront les morsures. De plus, %(enkil_cog)s laissera %(cock_robin)s utiliser sa capacité deux "
+"fois lors de tours successifs et, comme %(tier_of_souls)s est une action %(ani)s, il laisse %(cock_robin)s se "
+"redresser et mordre ensuite immédiatement. </p> <p> %(deep_song)s peut être utilisée pour mordre ou pour rusher des "
+"vampires encombrants, selon le contexte. </p> <p> Le module de combat est puissant, mais ce n'est pas l'objectif "
+"principal du deck. %(kevlar_vest)s, %(heroic_might)s et %(preternatural_strength)s peuvent être utiles contre les "
+"modules de combat adverses. </p> <p> Le deck n'inclut pas tant de votes car il n'est vraiment pas sûr d'obtenir le "
+"verrou de vote sur la table. Tout deck politique dédié obtiendra plus de votes que les 5-7 que celui-ci peut mettre "
+"en jeu. </p> <h2> Variantes </h2> <p> Les variantes incluent l'utilisation d'une crypte de groupe 2 et d'un module de"
+" combat %(POT)s, comme dans le %(gyula_erdos_deck)s du NC de République Tchèque de 2008. </p> <p> Plus de votes "
+"peuvent également être utilisés, aux côtés de %(fourth_tradition_the_accounting)s et %(grooming_the_protégé)s pour "
+"l'accélération de la crypte, afin d'obtenir plus de votes sur la table, comme dans le %(inaki_jimenez_s_deck)s du NC "
+"d'Espagne de 2008. </p> <p> Certaines variantes rejettent même le côté combat pour se concentrer sur un deck "
+"politique complet, comme dans le %(pascal_bertrand_s_deck)s de 2013, en utilisant à la place %(mental_maze)s. Dans ce"
+" cas, cela laisse de la place pour une combinaison %(third_tradition_progeny)s plus %(consanguineous_boon)s pour "
+"régénérer et obtenir plus de vampires (et plus de votes). </p>"
+
+#: codex_of_the_damned/templates/archetypes/nosferatu-royalty.html:36
 msgid "Gyula Erdõs' deck"
 msgstr "deck de Gyula Erdõs"
 
-#: codex_of_the_damned/templates/archetypes/nosferatu-royalty.html:83
+#: codex_of_the_damned/templates/archetypes/nosferatu-royalty.html:37
 msgid "Iñaki Jimenez's deck"
 msgstr "deck d'Iñaki Jimenez"
 
-#: codex_of_the_damned/templates/archetypes/nosferatu-royalty.html:88
+#: codex_of_the_damned/templates/archetypes/nosferatu-royalty.html:38
 #: codex_of_the_damned/templates/archetypes/weenie-aus.html:82
 msgid "Pascal Bertrand's deck"
 msgstr "deck de Pascal Bertrand"
