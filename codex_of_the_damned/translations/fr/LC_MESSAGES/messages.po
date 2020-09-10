@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: codex 0.X\n"
 "Report-Msgid-Bugs-To: lionel.panhaleux+codex@gmail.com\n"
-"POT-Creation-Date: 2020-09-10 10:46+0200\n"
+"POT-Creation-Date: 2020-09-10 11:03+0200\n"
 "PO-Revision-Date: 2020-07-04 08:50+0200\n"
 "Last-Translator: Lionel Panhaleux <lionel.panhaleux+codex@gmail.com>\n"
 "Language: fr\n"
@@ -289,7 +289,7 @@ msgstr ""
 msgid "The unnamed"
 msgstr ""
 
-#: codex_of_the_damned/navigation.py:132 codex_of_the_damned/templates/archetypes/nephandii.html:98
+#: codex_of_the_damned/navigation.py:132 codex_of_the_damned/templates/archetypes/nephandii.html:44
 #: codex_of_the_damned/templates/best-cards/clans/tremere.html:28
 #: codex_of_the_damned/templates/best-cards/clans/tremere.html:194
 msgid "Tupdogs"
@@ -1539,7 +1539,7 @@ msgid ""
 "additional bounces in case of a very aggressive predator. </p> <h2>Variants</h2> <p> Many small variations exists, "
 "depending on the cards used outside the Master module. </p> <p> A common variation is the <strong>Girls Will Find "
 "AIDS</strong>, more combat-focused and using %(nana_buruku)s and an %(ANI)s combat module using %(deep_song)s, "
-"%(aid_from_bats)s, and %(carrion_crows)s. %(hugh_angseesing_s_deck)s from the 2011 NAC FCQ is a good example. </p>"
+"%(aid_from_bats)s, and %(carrion_crows)s. %(hugh_angseeing_s_deck)s from the 2011 NAC FCQ is a good example. </p>"
 msgstr ""
 "<h2>Principe</h2> <p> C'est un deck <em>stealth & bleed</em> centré sur l'utilisation de multiples actions de Maître "
 "et de nombreuses cartes Maître. C'est ce qu'on appelle communément une construction <strong>M</strong>ulti "
@@ -1560,12 +1560,12 @@ msgstr ""
 "<h2>Variantes</h2> <p> Beaucoup de petits variations existent, en fonction des cartes utilisées hors du module de "
 "Maître. </p> <p> Une variante courante est <strong>Girls Will Find AIDS</strong>, plus orientée combat avec "
 "%(nana_buruku)s et un module de combat %(ANI)s qui utilise %(deep_song)s, %(aid_from_bats)s, et %(carrion_crows)s. Le"
-" %(hugh_angseesing_s_deck)s du FCQ du NAC 2011 en est un bon exemple. </p>"
+" %(hugh_angseeing_s_deck)s du FCQ du NAC 2011 en est un bon exemple. </p>"
 
 #: codex_of_the_damned/templates/archetypes/girls-will-find-inner-circle.html:30
-#: codex_of_the_damned/templates/archetypes/nephandii.html:81
-msgid "Hugh Angseesing's deck"
-msgstr "deck de Hugh Angseesing"
+#: codex_of_the_damned/templates/archetypes/nephandii.html:40
+msgid "Hugh Angseeing's deck"
+msgstr "deck de Hugh Angseeing"
 
 #: codex_of_the_damned/templates/archetypes/goratrix-high-tower.html:14
 #, python-format
@@ -2295,15 +2295,65 @@ msgstr "deck de Kim Nilsson"
 msgid "Ádám Horváth's deck"
 msgstr "deck d'Ádám Horváth"
 
-#: codex_of_the_damned/templates/archetypes/nephandii.html:86
+#: codex_of_the_damned/templates/archetypes/nephandii.html:14
+#, python-format
+msgid ""
+"<h2>Highlights</h2> <p> This is an <em>allies toolbox</em> deck focused on the %(nephandus)s ally. "
+"%(antonio_d_erlette)s is the star of the deck: he gets some %(nephandus)s out without even taking an action someone "
+"could block. </p> <p> The combat module is designed to be playable by the %(nephandus)s themselves, using presses, "
+"%(molotov_cocktail)s and %(target_vitals)s. </p> <p> The Master module uses %(the_parthenon)s to play two Master "
+"cards per turn, allowing for the efficient use of %(ashur_tablets)s and %(liquidation)s to bloat and adapt the deck "
+"to the table context as the game progresses. </p> <p> %(haven_uncovered)s and %(frontal_assault)s are used to let the"
+" %(nephandus)s rush the opponents minions, while %(the_unmasking)s improves their interception capabilities. </p> <p>"
+" %(fame)s, %(tension_in_the_ranks)s and %(dragonbound)s are used to improve pool damage. </p> <p> Some %(tupdog)s are"
+" used to rush even more, although their disciplines are not used at all. </p> <p> %(antonio_d_erlette)s or a sidekick"
+" can use %(deflection)s and %(delaying_tactics)s for defence. </p> <h2>Tips & Tricks</h2> <p> %(secure_haven)s can be"
+" used to protect %(antonio_d_erlette)s, but also to contest another one if need be. </p> <p> Disciplines are not much"
+" used in the deck, so %(the_slow_withering)s is a nice inclusion to cripple opponents decks, plus it is another "
+"Gehenna event %(fortschritt_library)s can fetch. </p> <p> %(direct_intervention)s should be kept in hand to counter "
+"anti-ally actions like %(entrancement)s. </p> <h2>Variants</h2> <p> The <strong>Mafioso</strong> variant ditches the "
+"heavy Master module %(the_parthenon)s, %(ashur_tablets)s and %(liquidation)s to use %(magic_of_the_smith)s and "
+"%(empowering_the_puppet_king)s instead, like in %(hugh_angseeing_s_deck)s from 2008. </p> <p> Other variants complete"
+" the crypt in original ways, to get more bloat with Assamite vampires like in %(greg_williams_deck)s from 2008, or "
+"some bloat but also more bleed with Toreador antitribu and %(palla_grande)s, like in %(jordi_tomás_deck)s from 2010. "
+"%(jonathan_sanchez_rios_deck)s from 2011 even includes the Imbued %(béatrice_oracle171_tremblay)s for cheap "
+"additional bleed. </p> <p> Although this is a different archetype, %(nephandus)s can also be used alongside "
+"%(tupdog)s in the %(tupdogs)s archetype. </p>"
+msgstr ""
+"<h2> Principe </h2> <p> C'est un deck <em> toolbox alliés </em> axé sur l'allié %(nephandus)s. %(antonio_d_erlette)s "
+"est la star du deck : il sort des %(nephandus)s sans même entreprendre une action que quelqu'un pourrait bloquer. "
+"</p> <p> Le module de combat est conçu pour être jouable par les %(nephandus)s eux-mêmes, en utilisant des "
+"poursuites, %(molotov_cocktail)s et %(target_vitals)s. </p> <p> Le module Maître utilise %(the_parthenon)s pour jouer"
+" deux cartes Maître par tour, permettant l'utilisation efficace de %(ashur_tablets)s et %(liquidation)s pour "
+"régénérer et adapter le deck au contexte de la table au fur et à mesure que la partie progresse. </p> <p> "
+"%(haven_uncovered)s et %(frontal_assault)s sont utilisés pour permettre aux %(nephandus)s de rusher les serviteurs "
+"adverses, tandis que %(the_unmasking)s améliore leurs capacités d'interception. </p> <p> %(fame)s, "
+"%(tension_in_the_ranks)s et %(dragonbound)s sont utilisés pour améliorer les dégâts d'influence. </p> <p> Quelques "
+"%(tupdog)s sont utilisés pour encore plus de rush, bien que leurs disciplines ne soient pas du tout utilisées. </p> "
+"<p> %(antonio_d_erlette)s ou un acolyte peut utiliser %(deflection)s et %(delaying_tactics)s pour la défense. </p> "
+"<h2> Trucs & Astuces </h2> <p> %(secure_haven)s peut être utilisé pour protéger %(antonio_d_erlette)s, mais aussi "
+"pour en contester un autre si besoin. </p> <p> Les disciplines ne sont pas beaucoup utilisées dans le deck, donc "
+"%(the_slow_withering)s est une belle inclusion pour paralyser les decks adverses, en plus c'est un autre événement "
+"Gehenna que %(fortschritt_library)s peut récupérer. </p> <p> %(direct_intervention)s doit être conservée pour contrer"
+" les actions anti-alliées comme %(entrancement)s. </p> <h2> Variantes </h2> <p> La variante <strong> Mafioso "
+"</strong> abandonne le module Maître lourd %(the_parthenon)s, %(ashur_tablets)s et %(liquidation)s pour utiliser "
+"%(magic_of_the_smith)s et %(empowering_the_puppet_king)s à la place, comme dans le %(hugh_angseeing_s_deck)s de 2008."
+" </p> <p> D'autres variantes complètent la crypte de manière originale, pour obtenir plus de régénération avec des "
+"vampires assamites comme dans le %(greg_williams_deck)s de 2008, ou de la régénération mais aussi plus de morsures "
+"avec des Toreador antitribu et %(palla_grande)s, comme dans le %(jordi_tomás_deck)s de 2010. Le "
+"%(jonathan_sanchez_rios_deck)s de 2011 inclut même l'Illuminée %(béatrice_oracle171_tremblay)s pour une morsure "
+"supplémentaire bon marché. </p> <p> Bien qu'il s'agisse d'un archétype différent, %(nephandus)s peut également être "
+"utilisé avec %(tupdog)s dans l'archétype %(tupdogs)s. </p>"
+
+#: codex_of_the_damned/templates/archetypes/nephandii.html:41
 msgid "Greg Williams' deck"
 msgstr "deck de Greg Williams"
 
-#: codex_of_the_damned/templates/archetypes/nephandii.html:89
+#: codex_of_the_damned/templates/archetypes/nephandii.html:42
 msgid "Jordi Tomás' deck"
 msgstr "deck de Jordi Tomás"
 
-#: codex_of_the_damned/templates/archetypes/nephandii.html:90
+#: codex_of_the_damned/templates/archetypes/nephandii.html:43
 msgid "Jonathan Sanchez Rios' deck"
 msgstr "deck de Jonathan Sanchez Rios"
 
