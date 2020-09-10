@@ -11,56 +11,70 @@
 {% endblock %}
 
 {% block archetype %}
+{% trans trimmed 
+    mozambique_allure=card("Mozambique Allure"),
+    the_embrace=card("The Embrace"),
+    bamba=card("Bamba"),
+    ravnos_carnival=card("Ravnos Carnival"),
+    the_eldest_are_kholo=card("The Eldest Are Kholo"),
+    consanguineous_boon=card("Consanguineous Boon"),
+    week_of_nightmares=card("Week of Nightmares"),
+    the_uncoiling=card("The Uncoiling"),
+    scourge_of_the_enochians=card("Scourge of the Enochians"),
+    gird_minions=card("Gird Minions"),
+    life_boon=card("Life Boon"),
+    aranthebes_the_immortal=card("Aranthebes, The Immortal"),
+    autarkis_persecution=card("Autarkis Persecution"),
+    delaying_tactics=card("Delaying Tactics"),
+    rom_gypsy=card("Rom Gypsy"),
+    miguel_pascual_s_deck=link("/deck-search", _("Miguel Pascual's deck"), twda_id="2k8powerbasecataluna")
+%}
 <h2>Highlights</h2>
 <p>
     This is a <em>breed & boon</em> deck using the Ravnos clan.
-    Low capacity Ravnos use {{ card("Mozambique Allure") }}
-    to become Laibon, then multiply with
-    {{ card("The Embrace") }} and
-    {{ card("Bamba") }}, paying them with
-    {{ card("Ravnos Carnival") }} and
-    using {{ card("The Eldest Are Kholo") }} with
-    {{ card("Consanguineous Boon") }} to bloat.
+    Low capacity Ravnos use {{ mozambique_allure }} to become Laibon,
+    then multiply with {{ the_embrace }} and {{ bamba }}, paying them with
+    {{ ravnos_carnival }} and using {{ the_eldest_are_kholo }} with
+    {{ consanguineous_boon }} to bloat.
 </p>
 <p>
-    When enough minions are out,
-    the {{ card("Week of Nightmares") }} gets into play
+    When enough minions are out, the {{ week_of_nightmares }} gets into play
     and all these Ravnos bleed their prey to death, one after the other.
 </p>
 <h2>Tips & Tricks</h2>
 <p>
-    {{ card("The Uncoiling") }} is a tactical counter against
-    {{ card("Scourge of the Enochians") }}, as this event
+    {{ the_uncoiling }} is a tactical counter against
+    {{ scourge_of_the_enochians }}, as this event
     is often included in slow decks as a counter against breed constructs like this one.
 </p>
 <p>
-    {{ card("Gird Minions") }} help get the minions back in shape
+    {{ gird_minions }} help get the minions back in shape
     if the bloat works well enough, in order to produce yet another wave of neonates.
 </p>
 <p>
-    {{ card("Life Boon") }} is also a way to control the table a bit if
+    {{ life_boon }} is also a way to control the table a bit if
     the bloat goes well enough. The deck usually does not put that much pressure on its prey until
-    {{ card("Week of Nightmares") }} hits the table,
-    so this can compensate a bit.
+    {{ week_of_nightmares }} hits the table, so this can compensate a bit.
 </p>
 <p>
     The deck does not try to block its predator, counting on its bloat to compensate.
-    {{ card("Aranthebes, The Immortal") }} is included
-    only as a counter to contest it if anyone gets to put it into play, as it is too damaging to this deck.
+    {{ aranthebes_the_immortal }} is included
+    only as a counter to contest it if anyone gets to put it into play,
+    as it is too damaging to this deck.
 </p>
 <p>
-    {{ card("Autarkis Persecution") }} is included as a hail mary
+    {{ autarkis_persecution }} is included as a hail mary
     if one gets stuck with low pool and someone uses
-    {{ card("Delaying Tactics") }} against
-    {{ card("Consanguineous Boon") }}.
+    {{ delaying_tactics }} against {{ consanguineous_boon }}.
 </p>
 <h2>Variants</h2>
 <p>
     There are not many variants for this archetype.
-    {{ link("/deck-search", _("Miguel Pascual's deck"), twda_id="2k8powerbasecataluna") }} in 2008
-    has experimented with {{ card("Rom Gypsy") }}
-    to provide an additional bit of stealth and defence.
+    {{ miguel_pascual_s_deck }} in 2008 has experimented with {{ rom_gypsy }}
+    to provide an additional bit of stealth and defence,
+    but the card has been banned in 2020.
 </p>
+{% endtrans %}
 {% endblock %}
 
 {% block errata %}
