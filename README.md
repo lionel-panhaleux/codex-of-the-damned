@@ -65,10 +65,40 @@ gunicorn codex_of_the_damned:app
 
 ## Useful tools
 
-Convert icons from raster to SVG using `imagemagick` and `potrace`:
+Convert icons from raster to SVG using `imagemagick` and `potrace`,
+depending on the icon, smoothing may be better or not:
 
 ```bash
 convert -morphology Smooth Octagon:2 clan-ahrimanes.gif clan-ahrimanes.svg
 ```
 
-Depending on the icon, smoothing may be better or not.
+Use python and Google Translate to help with translation:
+
+```python
+
+def pre(s):
+    print(re.sub(r"%\(([^\)]*)\)s", r"§X\1§", s))
+
+def post(s):
+    s = pprint.pformat(re.sub(r"§X([^§]*)§", r"%(\1)s", s), width=120)
+    print(
+        re.sub(
+            r"(^')|('$)",
+            '"',
+            re.sub(r"^\s*", "", s[1:-1], flags=re.MULTILINE),
+            flags=re.MULTILINE
+        )
+    )
+
+# usage:
+# s = (
+#   > copy paragraph to translate from the PO file
+# )
+# pre(s)
+#   > Copy the result to Google Translate
+# t = """
+#   > Copy translation
+# """
+# post(t)
+#   > Copy result to the PO file and review it
+```
