@@ -11,47 +11,62 @@
 {% endblock %}
 
 {% block archetype %}
+{% trans trimmed
+    tunnel_runner=card("Tunnel Runner"),
+    jacob_fermor=card("Jacob Fermor"),
+    computer_hacking=card("Computer Hacking"),
+    deflection=card("Deflection"),
+    wider_view=card("Wider View"),
+    anarch_convert=card("Anarch Convert"),
+    powerbase_tshwane=card("Powerbase: Tshwane"),
+    charisma=card("Charisma"),
+    predator_s_transformation=card("Predator's Transformation"),
+    aid_from_bats=card("Aid from Bats"),
+    the_unmasking=card("The Unmasking"),
+    predator_s_communion=card("Predator's Communion")
+%}
 <h2>Highlights</h2>
 <p>
-    This is a stealth & bleed deck using {{ card("Tunnel Runner") }}.
+    This is a stealth & bleed deck using {{ tunnel_runner }}.
     An Akunanse is required to get the weremoles out, and
-    {{ card("Jacob Fermor") }} is expected to come out and boost
-    their bleed power. {{ card("Computer Hacking") }} is used to
+    {{ jacob_fermor }} is expected to come out and boost
+    their bleed power. {{ computer_hacking }} is used to
     help them bleed harder, too.
 </p>
 <p>
-    The deck relies on additional vampires with <i>d</i> for
-    {{ card("Deflection") }} bounces. As the deck does not block so much,
+    The deck relies on additional vampires with {{ dom }} for
+    {{ deflection }} bounces. As the deck does not block so much,
     this is essential for defence.
 </p>
 <h2>Tips & Tricks</h2>
 <p>
-    As the deck is supposed to get an Akunanse, {{ card("Jacob Fermor") }}
-    then a low capacity vampire with <i>d</i>, it has a bit of each in the crypt and plays a bunch of
-    {{ card("Wider View") }} and an
-    {{ card("Anarch Convert") }} to rotate through them if necessary.
+    As the deck is supposed to get an Akunanse, {{ jacob_fermor }}
+    then a low capacity vampire with {{ dom }}, it has a bit of each in the crypt
+    and plays a bunch of {{ wider_view }} and an
+    {{ anarch_convert }} to rotate through them if necessary.
 </p>
 <p>
-    {{ card("Tunnel Runner") }} are expensive allies.
-    getting {{ card("Powerbase: Tshwane") }} and/or
-    {{ card("Charisma") }} out fast is a lot of help.
+    {{ tunnel_runner }} are expensive allies,
+    getting {{ powerbase_tshwane }} and/or
+    {{ charisma }} out fast is a lot of help.
 
 </p>
 <p>
-    {{ card("Predator's Transformation") }}
+    {{ predator_s_transformation }}
     provides additional stealth to get the allies into play without being blocked.
 </p>
 <p>
-    {{ card("Aid from Bats") }} is used as a defensive combat card.
-    {{ card("Tunnel Runner") }} can use it, but most Akunanse also can.
-    The allies have {{ card("The Unmasking") }} and the Akunanse their
-    {{ card("Predator's Communion") }} for some tactical intercept
+    {{ aid_from_bats }} is used as a defensive combat card.
+    {{ tunnel_runner }} can use it, but most Akunanse also can.
+    The allies have {{ the_unmasking }} and the Akunanse their
+    {{ predator_s_communion }} for some tactical intercept
     — vampires that do not fight aggressively, as they have very few combat capabilities themselves.
 </p>
 <h2>Variants</h2>
 <p>
     There is no variant to this deck. The decklist given in example won the 2013 North American Championship (NAC).
 </p>
+{% endtrans %}
 {% endblock %}
 
 {% block errata %}
