@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: codex 0.X\n"
 "Report-Msgid-Bugs-To: lionel.panhaleux+codex@gmail.com\n"
-"POT-Creation-Date: 2020-09-11 16:13+0200\n"
+"POT-Creation-Date: 2020-09-11 16:23+0200\n"
 "PO-Revision-Date: 2020-07-04 08:50+0200\n"
 "Last-Translator: Lionel Panhaleux <lionel.panhaleux+codex@gmail.com>\n"
 "Language: fr\n"
@@ -2889,7 +2889,7 @@ msgstr ""
 "est un bon exemple. </p>"
 
 #: codex_of_the_damned/templates/archetypes/the-dark-side-of-politics.html:32
-#: codex_of_the_damned/templates/archetypes/weenie-dom.html:64
+#: codex_of_the_damned/templates/archetypes/weenie-dom.html:32
 msgid "Vincent Ripoll's deck"
 msgstr "deck de Vincent Ripoll"
 
@@ -3388,7 +3388,39 @@ msgstr "deck de Bram van Stappen"
 msgid "Pawel Kosz's"
 msgstr "de Pawel Kosz"
 
-#: codex_of_the_damned/templates/archetypes/weenie-dom.html:57
+#: codex_of_the_damned/templates/archetypes/weenie-dom.html:14
+#, python-format
+msgid ""
+"<h2>Highlights</h2> <p> This is a <em>weenie bleed</em> deck using the %(dom)s discipline. The idea is to get as many"
+" low capacity vampires out as fast as possible, and bleed the preys one after the other as fast as possible. </p> <p>"
+" %(govern_the_unaligned)s combined with %(conditioning)s, %(seduction)s, and %(command_of_the_beast)s make for hard "
+"to block dreadful bleeds for 7. </p> <p> As the game progresses, some %(dom)s bounces can be used to add to the "
+"damages if the predator becomes aggressive. </p> <p> The Master module uses %(dominate)s to enhance the vampires, but"
+" also %(the_parthenon)s and %(ashur_tablets)s for a bit of recursion. %(jake_washington)s, %(life_in_the_city)s and "
+"%(giant_s_blood)s are used to bring back some blood on the vampires. </p> <p> The combat modules uses only "
+"%(absorb_the_mind)s for defence. It is a bit weak, but %(dom)s has nothing better to offer. </p> <h2>Tips & "
+"Tricks</h2> <p> Well-timed %(misdirection)s and %(pentex_subversion)s can help for the lunge. </p> <h2>Variants</h2> "
+"<p> The <strong>Agent of Power</strong> variant cuts the %(ashur_tablets)s and uses %(agent_of_power)s to let more "
+"vampires use superior %(DOM)s, like in %(manoel_pinheiro_s_deck)s from 2014. </p> <p> The <strong>Aim & "
+"Chain</strong> variant uses %(target_vitals)s and %(zip_gun)s with a bit of %(for)s prevention for the combat module,"
+" as in %(vincent_ripoll_s_deck)s from the 2009 EC Day 1. </p>"
+msgstr ""
+"<h2> Principe </h2> <p> C'est un deck <em> weenie bleed </em> qui utilise la discipline %(dom)s. L'idée est de sortir"
+" autant de vampires de faible capacité que possible et d'éliminer les proies l'une après l'autre le plus rapidement "
+"possible. </p> <p> %(govern_the_unaligned)s combiné avec %(conditioning)s, %(seduction)s et %(command_of_the_beast)s "
+"produisent de terribles morsures à 7 difficiles à bloquer. </p> <p> Au fur et à mesure que le jeu progresse, quelques"
+" rebonds %(dom)s peuvent être utilisés pour ajouter aux dégâts si le prédateur devient agressif. </p> <p> Le module "
+"Maître utilise %(dominate)s pour améliorer les vampires, mais aussi %(the_parthenon)s et %(ashur_tablets)s pour un "
+"peu de récursivité. %(jake_washington)s, %(life_in_the_city)s et %(giant_s_blood)s sont utilisés pour ramener du sang"
+" sur les vampires. </p> <p> Les modules de combat n'utilisent qu'%(absorb_the_mind)s pour la défense. C'est un peu "
+"faible, mais %(dom)s n'a rien de mieux à offrir. </p> <h2> Trucs & astuces </h2> <p> %(misdirection)s et "
+"%(pentex_subversion)s peuvent aider pour la fente s'ils sont joués au bon moment. </p> <h2> Variantes </h2> <p> La "
+"variante <strong> Agent of Power </strong> retire les %(ashur_tablets)s et utilise %(agent_of_power)s pour permettre "
+"à plus de vampires d'utiliser %(DOM)s supérieur, comme dans le %(manoel_pinheiro_s_deck)s de 2014. </p> <p> La "
+"variante <strong> Aim & Chain </strong> utilise %(target_vitals)s et %(zip_gun)s avec un peu de prévention %(for)s "
+"pour le module de combat, comme dans le %(vincent_ripoll_s_deck)s du jour 1 de l'EC 2009. </p>"
+
+#: codex_of_the_damned/templates/archetypes/weenie-dom.html:31
 msgid "Manoel Pinheiro's deck"
 msgstr "deck de Manoel Pinheiro"
 
