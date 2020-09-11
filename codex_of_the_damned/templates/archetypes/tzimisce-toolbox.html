@@ -11,52 +11,64 @@
 {% endblock %}
 
 {% block archetype %}
+{% trans trimmed
+    chiropteran_marauder=card("Chiropteran Marauder"),
+    kine_resources_contested=card("Kine Resources Contested"),
+    changeling=card("Changeling"),
+    mind_of_the_wilds=card("Mind of the Wilds"),
+    blood_doll=card("Blood Doll"),
+    villein=card("Villein"),
+    under_siege=card("Under Siege"),
+    sascha_vykos_the_angel_of_caine=card("Sascha Vykos, The Angel of Caine"),
+    stravinsky=card("Stravinsky"),
+    meshenka=card("Meshenka"),
+    bowl_of_convergence=card("Bowl of Convergence"),
+    revenant=card("Revenant"),
+    mr_winthrop=card("Mr. Winthrop"),
+    pulse_of_the_canaille=card("Pulse of the Canaille"),
+    j_s_simmons_esq=card("J. S. Simmons, Esq."),
+    tasha_morgan=card("Tasha Morgan"),
+    living_manse=card("Living Manse")
+%}
 <h2>Highlights</h2>
 <p>
-    This is a <em>toolbox</em> deck using the Tzimisce and their <i>VAI</i> disciplines.
+    This is a <em>toolbox</em> deck using the Tzimisce
+    and their {{ VIC }}{{ AUS }}{{ ANI }} disciplines.
 </p>
 <p>
-    The combat module uses
-    {{ card("Chiropteran Marauder") }} for aggravated damage,
-    Intercept is high with 27 reactions combining <i>A</i> and <i>I</i>.
-    Political actions are used to deliver pool damage with
-    {{ card("Kine Resources Contested") }}
-    while {{ card("Changeling") }} and
-    {{ card("Mind of the Wilds") }} are used for stealth.
+    The combat module uses {{ chiropteran_marauder }} for aggravated damage,
+    Intercept is high with 27 reactions combining {{ AUS }} and {{ ANI }}.
+    Political actions are used to deliver pool damage with {{ kine_resources_contested }}
+    while {{ changeling }} and {{ mind_of_the_wilds }} are used for stealth.
 </p>
 <p>
-    {{ card("Blood Doll") }} and
-    {{ card("Villein") }} are used to get some pool back.
+    {{ blood_doll }} and {{ villein }} are used to get some pool back.
 </p>
 <p>
     The deck is a bit slow but very difficult to predict for opponents.
 </p>
 <h2>Tips & Tricks</h2>
 <p>
-    This version of the deck includes <em>a lot</em> of cards in only 1 copy. This is a bit rare,
-    but it makes the deck even harder to figure out for opponents. One should be careful to keep the opponents
-    guessing as to what the deck can really do.
+    This version of the deck includes <em>a lot</em> of cards in only 1 copy.
+    This is a bit rare, but it makes the deck even harder to figure out for opponents.
+    One should be careful to keep the opponents guessing as to what the deck can really do.
 </p>
 <p>
-    {{ card("Under Siege") }} is a powerful deterrent against the predator:
+    {{ under_siege }} is a powerful deterrent against the predator:
     knowing wakes are available is far more troublesome than suspecting one has it in had.
 </p>
 <h2>Variants</h2>
 <p>
     There is a lot of room for variations, including in the crypt:
-    {{ card("Sascha Vykos, The Angel of Caine") }},
-    {{ card("Stravinsky") }} or
-    {{ card("Meshenka") }} can get a star position with 3 copies.
+    {{ sascha_vykos_the_angel_of_caine }}, {{ stravinsky }} or {{ meshenka }}
+    can get a star position with 3 copies.
 </p>
 <p>
     A bit more permanent intercept is a common inclusion, with
-    {{ card("Bowl of Convergence") }},
-    {{ card("Revenant") }} and
-    {{ card("Mr. Winthrop") }}.
+    {{ bowl_of_convergence }}, {{ revenant }} and {{ mr_winthrop }}.
     Permanent bleed enhancement is often included too, be it with
-    {{ card("Pulse of the Canaille") }},
-    {{ card("J. S. Simmons, Esq.") }} and
-    {{ card("Tasha Morgan") }}, or
-    {{ card("Living Manse") }}.
+    {{ pulse_of_the_canaille }}, {{ j_s_simmons_esq }} and {{ tasha_morgan }},
+    or {{ living_manse }}.
 </p>
+{% endtrans %}
 {% endblock %}
