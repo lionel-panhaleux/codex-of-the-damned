@@ -1,118 +1,101 @@
 {% extends "best-cards/_layout.html" %}
+{% import "best-cards/_layout_card_column.html" as layout with context%}
 
 {% block content %}
 <h1><img src="{{ url_for('static', filename='img/icons/clan-akunanse.svg') }}"> Akunanse</h1>
-<p>
-    Akunanse and their rare <i>w</i> discipline provide a stronger defense than the usual <i>i</i> builds.
-</p>
-<p>
-    This clan has two main archetypes: the {{ link("/archetypes/akunanse-wall", _("Akunanse Wall")) }},
-    using <i>w</i> along <i>i</i> for a sturdy wall,
-    and {{ link("/archetypes/team-jacob", _("Team Jacob")) }} using the infamous
-    {{ card("Tunnel Runner") }}.
-    More combat-oriented builds are limited due to the inability to deal with
-    {{ link("/strategy/combat", _("combat ends"), _anchor="defense") }}.
-</p>
-<h2>Highlights</h2>
-<div class="column">
-    <div class="column-image">
-        <img src="https://images.krcg.org/uchenna.jpg">
-        <h4>Uchenna</h4>
-        <p class="center-subtitle">played in 31 decks, typically 1-3 copies</p>
-    </div>
+<div class="tip">
+    {% trans trimmed 
+        akunanse_wall=link("/archetypes/akunanse-wall", _("Akunanse Wall")),
+        team_jacob=link("/archetypes/team-jacob", _("Team Jacob")),
+        tunnel_runner=card("Tunnel Runner"),
+        combat_ends=link("/strategy/combat", _("combat ends"), _anchor="defense")
+    %}
     <p>
-        A Magaji with superior <i>WFI</i> for just 7 pool: definitely a good deal.
-        Her ability may be useful in tense situations, although 1 blood to draw a card is a high price to
-        pay.
-        The fact that she is Magaji let her play the excellent
-        {{ card("No Secrets From the Magaji") }}.
+        Akunanse and their rare {{ abo }} discipline provide a stronger defense
+        than the usual {{ ani }} builds.
     </p>
-</div>
-<div class="column">
-    <div class="column-image">
-        <img src="https://images.krcg.org/mapatanoutando.jpg">
-        <h4>Mapatano Utando</h4>
-        <p class="center-subtitle">played in 22 decks, typically 1-2 copies</p>
-    </div>
     <p>
-        A good master for Akunanse decks: it can speed up the setup in the beginning,
-        but also avoid pool loss regularly, at no cost.
-        Gaining one or two turns or 3 pools or more is definitely efficient,
-        it encourages the inclusion of low capacity vampires to get the edge sooner.
+        This clan has two main archetypes: the {{ akunanse_wall }},
+        using {{ abo }} along {{ ani }} for a sturdy wall,
+        and {{ team_jacob }} using the infamous {{ tunnel_runner }}.
+        More combat-oriented builds are limited due to the inability
+        to deal with {{ combat_ends }}.
     </p>
+    {% endtrans %}
 </div>
-<div class="column">
-    <div class="column-image">
-        <img src="https://images.krcg.org/reliquaryakunanseremains.jpg">
-        <h4>Reliquary: Akunanse Remains</h4>
-        <p class="center-subtitle">played in 14 decks, typically 1 copy</p>
-    </div>
-    <p>
-        A good equipment: a permanent +1 bleed for 1 pool is good,
-        plus the discipline boost is excellent for low capacity vampires.
-    </p>
-</div>
-<div class="column">
-    <div class="column-image">
-        <img src="https://images.krcg.org/tunnelrunner.jpg">
-        <h4>Tunnel Runner</h4>
-        <p class="center-subtitle">played in 13 decks, typically 3-8 copies</p>
-    </div>
-    <p>
-        He can be used as the main minion of the deck for good stealthed bleeds,
-        his ability can be used more than once in a turn, allowing it to get +2 stealth.
-        He is expensive, though — he becomes really efficient partnered with
-        {{ card("Jacob Fermor") }} in the
-        {{ link("/archetypes/team-jacob", _("Team Jacob")) }} archetype.
-    </p>
-</div>
-<div class="column">
-    <div class="column-image">
-        <img src="https://images.krcg.org/predatorscommunion.jpg">
-        <h4>Predator's Communion</h4>
-        <p class="center-subtitle">played in 32 decks, typically 3-6 copies</p>
-    </div>
-    <p>
-        Wake and intercept bundled in a single card: an excellent reaction for any intercept module.
-        This card, combined with the combat-efficient <i>f</i> discipline of the clan,
-        explains the success of wall archetypes in the Akunanse clan.
-    </p>
-</div>
-<div class="column">
-    <div class="column-image">
-        <img src="https://images.krcg.org/invokingthebeast.jpg">
-        <h4>Invoking the Beast</h4>
-        <p class="center-subtitle">played in 21 decks, typically 4-8 copies</p>
-    </div>
-    <p>
-        A good combat card at no cost: additional damage, plus a handy press that combines very well with
-        {{ card("Carrion Crows") }}
-    </p>
-</div>
-<div class="column">
-    <div class="column-image">
-        <img src="https://images.krcg.org/predatorstransformation.jpg">
-        <h4>Predator's Transformation</h4>
-        <p class="center-subtitle">played in 20 decks, typically 3-7 copies</p>
-    </div>
-    <p>
-        An easy to cycle stealth card, and the only one available for Akunanse.
-        The superior effect may come in handy against weenie constructs.
-    </p>
-</div>
-<div class="column">
-    <div class="column-image">
-        <img src="https://images.krcg.org/devilchannelhands.jpg">
-        <h4>Devil-Channel: Hands</h4>
-        <p class="center-subtitle">played in 15 decks, typically 3-8 copies</p>
-    </div>
-    <p>
-        A good combat card, adding aggravated damage to an already efficient combat module.
-        The strength bonus of {{ card("Invoking the beast") }}
-        applies to it and the press at superior <i>W</i> can be deadly when used alongside
-        {{ card("Carrion Crows") }}.
-        Finally, it works with a hand strike, so
-        {{ card("Immortal Grapple") }} is useless against it.
-    </p>
-</div>
+
+{% call layout.card_column('Uchenna', decks=31, copies="1-3") %}
+{% trans trimmed
+    no_secrets_from_the_magaji=card("No Secrets From the Magaji")
+%}
+A Magaji with superior {{ ABO }}{{ FOR }}{{ ANI }} for just 7 pool: definitely a good deal.
+Her ability may be useful in tense situations, although 1 blood to draw a card is a high price to pay.
+The fact that she is Magaji let her play the excellent {{ no_secrets_from_the_magaji }}.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column('Mapatano Utando', decks=22, copies="1-2") %}
+{% trans trimmed %}
+A good master for Akunanse decks: it can speed up the setup in the beginning,
+but also avoid pool loss regularly, at no cost.
+Gaining one or two turns or 3 pools or more is definitely efficient,
+it encourages the inclusion of low capacity vampires to get the edge sooner.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column('Reliquary: Akunanse Remains', decks=14, copies="1") %}
+{% trans trimmed %}
+A good equipment: a permanent +1 bleed for 1 pool is good,
+plus the discipline boost is excellent for low capacity vampires.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column('Tunnel Runner', decks=13, copies="3-8") %}
+{% trans trimmed 
+    jacob_fermor=card("Jacob Fermor"),
+    team_jacob=link("/archetypes/team-jacob", _("Team Jacob"))
+%}
+He can be used as the main minion of the deck for good stealthed bleeds,
+his ability can be used more than once in a turn, allowing it to get +2 stealth.
+He is expensive, though — he becomes really efficient partnered with
+{{ jacob_fermor }} in the {{ team_jacob }} archetype.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Predator's Communion", decks=32, copies="3-6") %}
+{% trans trimmed %}
+Wake and intercept bundled in a single card: an excellent reaction for any intercept module.
+This card, combined with the combat-efficient {{ for }} discipline of the clan,
+explains the success of wall archetypes in the Akunanse clan.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column('Invoking the Beast', decks=21, copies="4-8") %}
+{% trans trimmed
+    carrion_crows=card("Carrion Crows")
+%}
+A good combat card at no cost: additional damage,
+plus a handy press that combines very well with {{ carrion_crows }}
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Predator's Transformation", decks=20, copies="3-7") %}
+{% trans trimmed %}
+An easy to cycle stealth card, and the only one available for Akunanse.
+The superior effect may come in handy against weenie constructs.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column('Devil-Channel: Hands', decks=15, copies="3-8") %}
+{% trans trimmed
+    invoking_the_beast=card("Invoking the beast"),
+    carrion_crows=card("Carrion Crows"),
+    immortal_grapple=card("Immortal Grapple")
+%}
+A good combat card, adding aggravated damage to an already efficient combat module.
+The strength bonus of {{ invoking_the_beast }} applies to it and the press
+at superior {{ ABO }} can be deadly when used alongside {{ carrion_crows }}.
+Finally, it works with a hand strike, so {{ immortal_grapple }} is useless against it.
+{% endtrans %}
+{% endcall %}
 {% endblock %}

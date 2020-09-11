@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: codex 0.X\n"
 "Report-Msgid-Bugs-To: lionel.panhaleux+codex@gmail.com\n"
-"POT-Creation-Date: 2020-09-11 16:42+0200\n"
+"POT-Creation-Date: 2020-09-11 17:17+0200\n"
 "PO-Revision-Date: 2020-07-04 08:50+0200\n"
 "Last-Translator: Lionel Panhaleux <lionel.panhaleux+codex@gmail.com>\n"
 "Language: fr\n"
@@ -91,7 +91,7 @@ msgstr "Le Parlement des Ombres"
 msgid "AAA"
 msgstr ""
 
-#: codex_of_the_damned/navigation.py:90 codex_of_the_damned/templates/best-cards/clans/akunanse.html:9
+#: codex_of_the_damned/navigation.py:90 codex_of_the_damned/templates/best-cards/clans/akunanse.html:8
 msgid "Akunanse Wall"
 msgstr ""
 
@@ -268,8 +268,8 @@ msgstr ""
 msgid "Stanislava"
 msgstr ""
 
-#: codex_of_the_damned/navigation.py:128 codex_of_the_damned/templates/best-cards/clans/akunanse.html:11
-#: codex_of_the_damned/templates/best-cards/clans/akunanse.html:66
+#: codex_of_the_damned/navigation.py:128 codex_of_the_damned/templates/best-cards/clans/akunanse.html:9
+#: codex_of_the_damned/templates/best-cards/clans/akunanse.html:56
 msgid "Team Jacob"
 msgstr ""
 
@@ -3565,10 +3565,99 @@ msgstr ""
 "l'interception. Cominé à %(falcons_eye)s et %(speak_with_spirits)s, ainsi que %(ani)s %(cats_guidance)s, il fournit "
 "un module d'interception comparable à %(aus)s."
 
-#: codex_of_the_damned/templates/best-cards/clans/akunanse.html:14
+#: codex_of_the_damned/templates/best-cards/clans/akunanse.html:7
+#, python-format
+msgid ""
+"<p> Akunanse and their rare %(abo)s discipline provide a stronger defense than the usual %(ani)s builds. </p> <p> "
+"This clan has two main archetypes: the %(akunanse_wall)s, using %(abo)s along %(ani)s for a sturdy wall, and "
+"%(team_jacob)s using the infamous %(tunnel_runner)s. More combat-oriented builds are limited due to the inability to "
+"deal with %(combat_ends)s. </p>"
+msgstr ""
+"<p> Les Akunanse et leur discipline unique %(abo)s donnent une défense plus solide qu'%(ani)s seul. </p> <p> Ce clan "
+"a deux archétypes principaux : L'%(akunanse_wall)s, qui utilise %(abo)s aux côtés d'%(ani)s pour un mur solide, et "
+"%(team_jacob)s qui utilise les fameux %(tunnel_runner)s. Les constructions orientées combat sont limitées à cause du "
+"manque de solutions contre un coupe de %(combat_ends)s. </p>"
+
+#: codex_of_the_damned/templates/best-cards/clans/akunanse.html:11
 #: codex_of_the_damned/templates/strategy/deck-building.html:234
 msgid "combat ends"
 msgstr "fin de combat"
+
+#: codex_of_the_damned/templates/best-cards/clans/akunanse.html:28
+#, python-format
+msgid ""
+"A Magaji with superior %(ABO)s%(FOR)s%(ANI)s for just 7 pool: definitely a good deal. Her ability may be useful in "
+"tense situations, although 1 blood to draw a card is a high price to pay. The fact that she is Magaji let her play "
+"the excellent %(no_secrets_from_the_magaji)s."
+msgstr ""
+"Un Magaji avec %(ABO)s%(FOR)s%(ANI)s en supérieur pour juste 7 sang : une bon affaire. Son aptitude peut être utile "
+"dans les situations tendues, même si 1 sang pour piocher une carte est un peu cher payé. Le fait qu'elle est Magaji "
+"lui permet de jouer l'excellent %(no_secrets_from_the_magaji)s."
+
+#: codex_of_the_damned/templates/best-cards/clans/akunanse.html:38
+msgid ""
+"A good master for Akunanse decks: it can speed up the setup in the beginning, but also avoid pool loss regularly, at "
+"no cost. Gaining one or two turns or 3 pools or more is definitely efficient, it encourages the inclusion of low "
+"capacity vampires to get the edge sooner."
+msgstr ""
+"Une bonne carte Maître pour les Akunanse : Elle peut accélérer la mise en place, mais aussi éviter régulièrement la "
+"perte d'un point d'influence. Gagner un ou deux tours ou 3 influence ou plus est motivant, cela encourage "
+"l'inclusion de vampires de faible capacité pour récupérer l'avantage plus tôt."
+
+#: codex_of_the_damned/templates/best-cards/clans/akunanse.html:47
+msgid ""
+"A good equipment: a permanent +1 bleed for 1 pool is good, plus the discipline boost is excellent for low capacity "
+"vampires."
+msgstr ""
+"Un bon équipement : +1 de morsure permanent pour 1 influence est très bon, et le boost de discipline est excellent "
+"pour les vampires de faible capacité."
+
+#: codex_of_the_damned/templates/best-cards/clans/akunanse.html:54
+#, python-format
+msgid ""
+"He can be used as the main minion of the deck for good stealthed bleeds, his ability can be used more than once in a "
+"turn, allowing it to get +2 stealth. He is expensive, though — he becomes really efficient partnered with "
+"%(jacob_fermor)s in the %(team_jacob)s archetype."
+msgstr ""
+"Il peut être utilisé comme serviteur principal du deck pour des morsures discrètes : son aptitude peut être "
+"utilisée plus d'une fois par tour, ce qui lui permet d'obtenir +2 de discrétion. Mais il est cher – il devient "
+"vraiment efficace en partenariat avec %(jacob_fermor)s dans l'archétype %(team_jacob)s."
+
+#: codex_of_the_damned/templates/best-cards/clans/akunanse.html:66
+#, python-format
+msgid ""
+"Wake and intercept bundled in a single card: an excellent reaction for any intercept module. This card, combined with"
+" the combat-efficient %(for)s discipline of the clan, explains the success of wall archetypes in the Akunanse clan."
+msgstr ""
+"Réveil et interception en une seule carte : une excellente réaction pour tout module d'interception. Combinée à "
+"l'efficacité de %(for)s pour le combat, cette carte explique le succès des archétypes mur dans le clan Akunanse."
+
+#: codex_of_the_damned/templates/best-cards/clans/akunanse.html:74
+#, python-format
+msgid "A good combat card at no cost: additional damage, plus a handy press that combines very well with %(carrion_crows)s"
+msgstr ""
+"Une bonne carte de combat sans coût : des dégâts supplémentaires, plus une poursuite utile qui se combine très bien "
+"avec %(carrion_crows)s"
+
+#: codex_of_the_damned/templates/best-cards/clans/akunanse.html:83
+msgid ""
+"An easy to cycle stealth card, and the only one available for Akunanse. The superior effect may come in handy against"
+" weenie constructs."
+msgstr ""
+"Une carte de discrétion facile à cycler et la seule disponible pour les Akunanse. L'effet supérieur peut être utile "
+"contre les decks weenie."
+
+#: codex_of_the_damned/templates/best-cards/clans/akunanse.html:90
+#, python-format
+msgid ""
+"A good combat card, adding aggravated damage to an already efficient combat module. The strength bonus of "
+"%(invoking_the_beast)s applies to it and the press at superior %(ABO)s can be deadly when used alongside "
+"%(carrion_crows)s. Finally, it works with a hand strike, so %(immortal_grapple)s is useless against it."
+msgstr ""
+"Une bonne carte de combat, qui ajoute des dégâts aggravés à un module de combat déjà efficace. Le bonus de force "
+"d'%(invoking_the_beast)s s'y ajoute et la poursuite en %(ABO)s supérieur peut être mortelle lorsqu'elle est utilisée "
+"avec %(carrion_crows)s. Enfin, elle fonctionne sur une frappe à mains nues, donc %(immortal_grapple)s est inutile "
+"contre elle."
 
 #: codex_of_the_damned/templates/best-cards/clans/assamite.html:11
 msgid "Amaravati politics"
@@ -6364,4 +6453,3 @@ msgstr ""
 "situation à trois ou cinq joueurs : si la fente fonctionne, vous revenez à un nombre pair et à une situation "
 "favorable. Si elle échoue, vous restez sur un nombre impair de joueurs en ayant mis une grande pression sur la proie."
 " En général, cela signifie que la pression va revenir en force contre vous au prochain tour de table. </p>"
-
