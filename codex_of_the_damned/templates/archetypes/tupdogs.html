@@ -11,34 +11,56 @@
 {% endblock %}
 
 {% block archetype %}
+{% trans trimmed
+    tupdog=card("Tupdog"),
+    brick_by_brick=card("Brick by Brick"),
+    immortal_grapple=card("Immortal Grapple"),
+    raking_talons=card("Raking Talons"),
+    torn_signpost=card("Torn Signpost"),
+    amaranth=card("Amaranth"),
+    antonio_d_erlette=card("Antonio d'Erlette"),
+    nephandus=card("Nephandus"),
+    computer_hacking=card("Computer Hacking"),
+    the_unmasking=card("The Unmasking"),
+    deflection=card("Deflection"),
+    channel_10=card("Channel 10"),
+    krcg_news_radio=card("KRCG News Radio"),
+    aranthebes_the_immortal=card("Aranthebes, The Immortal"),
+    yawp_court=card("Yawp Court"),
+    target_vitals=card("Target Vitals"),
+    crawling_chamber=card("Crawling Chamber"),
+    graverobbing=card("Graverobbing"),
+    the_parthenon=card("The Parthenon"),
+    ashur_tablets=card("Ashur Tablets"),
+    rock_cat=card("Rock Cat"),
+    autarkis_persecution=card("Autarkis Persecution"),
+    nephandii=link("/archetypes/nephandii", _("Nephandii")),
+    martin_weinmayer_s_deck=link("/deck-search", _("Martin Weinmayer's deck"), twda_id="2019tdclf"),
+    danilo_torrisi_s_deck=link("/deck-search", _("Danilo Torrisi's deck"), twda_id="2013iecqbi")
+%}
 <h2>Highlights</h2>
 <p>
-    This is a <em>rush</em> deck using {{ card("Tupdog") }} and their
-    <i>PU</i> disciplines combination to dispose of opponents vampires.
-    The crypt is spammed with {{ card("Tupdog") }} to an unusual 24 cards count.
+    This is a <em>rush</em> deck using {{ tupdog }} and their
+    {{ POT }}{{ VIS }} disciplines combination to dispose of opponents vampires.
+    The crypt is spammed with {{ tupdog }} to an unusual 24 cards count.
     The size of the crypt alone is often enough for the opponents to recognize the archetype.
 </p>
 <p>
-    The combat module uses
-    {{ card("Brick by Brick") }} to set the range,
-    {{ card("Immortal Grapple") }} to prevent dodges and
+    The combat module uses {{ brick_by_brick }} to set the range,
+    {{ immortal_grapple }} to prevent dodges and
     S:CE ("<strong>S</strong>trike: <strong>C</strong>ombat <strong>E</strong>nds") and
-    {{ card("Raking Talons") }} for aggravated damage.
-    {{ card("Torn Signpost") }} or
-    {{ card("Amaranth") }} are used to destroy cumbersome vampires.
+    {{ raking_talons }} for aggravated damage. {{ torn_signpost }} or
+    {{ amaranth }} are used to destroy cumbersome vampires.
 </p>
 <p>
-    As the {{ card("Tupdog") }} needs a master to be able to act,
-    {{ card("Antonio d'Erlette") }} is a perfect fit.
-    He also comes with his friends the {{ card("Nephandus") }},
-    they're here to bleed the prey, helped by some
-    {{ card("Computer Hacking") }}.
+    As the {{ tupdog }} needs a master to be able to act,
+    {{ antonio_d_erlette }} is a perfect fit.
+    He also comes with his friends the {{ nephandus }},
+    they're here to bleed the prey, helped by some {{ computer_hacking }}.
 </p>
 <p>
-    The {{ card("Nephandus") }} can also defend a bit with
-    {{ card("The Unmasking") }}.
-    Also, {{ card("Deflection") }} is used for bounces by
-    {{ card("Antonio d'Erlette") }}.
+    The {{ nephandus }} can also defend a bit with {{ the_unmasking }}.
+    Also, {{ deflection }} is used for bounces by {{ antonio_d_erlette }}.
 </p>
 <p>
     This is a fast and brutal deck, which must handle its predator sooner rather than later,
@@ -47,50 +69,40 @@
 <h2>Tips & Tricks</h2>
 <p>
     A bit of additional intercept is provided by permanents:
-    {{ card("Channel 10") }},
-    {{ card("KRCG News Radio") }} and
-    {{ card("Aranthebes, The Immortal") }}.
+    {{ channel_10 }}, {{ krcg_news_radio }} and {{ aranthebes_the_immortal }}.
 </p>
 <p>
-    Only 4 copies of {{ card("Antonio d'Erlette") }} are in the crypt
-    as to not jam it.
+    Only 4 copies of {{ antonio_d_erlette }} are in the crypt as to not jam it.
 </p>
 <p>
-    {{ card("Yawp Court") }} is an interesting counter against
-    political constructs: as {{ card("Tupdog") }} are Sabbat,
-    they can use it.
+    {{ yawp_court }} is an interesting counter against
+    political constructs: as {{ tupdog }} are Sabbat, they can use it.
 </p>
 <h2>Variants</h2>
 <p>
-    {{ card("Computer Hacking") }} are not often used and
-    {{ card("Target Vitals") }} is often included as it can be used
-    by the {{ card("Nephandus") }}.
+    {{ computer_hacking }} are not often used and
+    {{ target_vitals }} is often included as it can be used by the {{ nephandus }}.
     Before 2010 (release date of <em>Heirs to the Blood</em> and
-    {{ card("Brick by Brick") }}),
-    {{ card("Crawling Chamber") }} was used to maneuver,
+    {{ brick_by_brick }}), {{ crawling_chamber }} was used to maneuver,
     but it was less efficient.
 </p>
 <p>
-    {{ card("Graverobbing") }} is often included instead of
-    {{ card("Amaranth") }},
+    {{ graverobbing }} is often included instead of {{ amaranth }},
     to steal vampires to help oust the prey faster.
-    It forces {{ card("Antonio d'Erlette") }}
-    to take a risky action though: if he is disabled, the
-    {{ card("Tupdog") }} can not act anymore.
+    It forces {{ antonio_d_erlette }} to take a risky action though: if he is disabled,
+    the {{ tupdog }} can not act anymore.
 </p>
 <p>
-    As for the {{ link("/archetypes/nephandii", _("Nephandii")) }} archetype,
-    the decks works well with
-    {{ card("The Parthenon") }} and some
-    {{ card("Ashur Tablets") }}.
-    {{ link("/deck-search", _("Martin Weinmayer's deck"), twda_id="2019tdclf") }} from 2019 is a good example.
+    As for the {{ nephandii }} archetype, the deck works well with
+    {{ the_parthenon }} and some {{ ashur_tablets }}.
+    {{ martin_weinmayer_s_deck }} from 2019 is a good example.
 </p>
 <p>
     The <strong>Cats and Dogs</strong> variant replaces the commonly used
-    {{ card("Nephandus") }} by some
-    {{ card("Rock Cat") }} for additional rushes,
-    like in {{ link("/deck-search", _("Danilo Torrisi's deck"), twda_id="2013iecqbi") }} from 2013.
+    {{ nephandus }} by some {{ rock_cat }} for additional rushes,
+    like in {{ danilo_torrisi_s_deck }} from 2013.
     A bit of bloat is needed to pay for them though, Danilo's idea was to use
-    {{ card("Autarkis Persecution") }}.
+    {{ autarkis_persecution }}.
 </p>
+{% endtrans %}
 {% endblock %}

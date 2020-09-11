@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: codex 0.X\n"
 "Report-Msgid-Bugs-To: lionel.panhaleux+codex@gmail.com\n"
-"POT-Creation-Date: 2020-09-11 10:46+0200\n"
+"POT-Creation-Date: 2020-09-11 14:35+0200\n"
 "PO-Revision-Date: 2020-07-04 08:50+0200\n"
 "Last-Translator: Lionel Panhaleux <lionel.panhaleux+codex@gmail.com>\n"
 "Language: fr\n"
@@ -220,7 +220,7 @@ msgstr ""
 msgid "Nananimalism"
 msgstr ""
 
-#: codex_of_the_damned/navigation.py:118 codex_of_the_damned/templates/archetypes/tupdogs.html:82
+#: codex_of_the_damned/navigation.py:118 codex_of_the_damned/templates/archetypes/tupdogs.html:37
 #: codex_of_the_damned/templates/best-cards/clans/tremere.html:19
 #: codex_of_the_damned/templates/best-cards/clans/tremere.html:99
 #: codex_of_the_damned/templates/best-cards/clans/tremere.html:131
@@ -1865,7 +1865,7 @@ msgid "Moisés Ferrer's deck"
 msgstr "deck de Moisés Ferrer"
 
 #: codex_of_the_damned/templates/archetypes/jost-powerbleed.html:37
-#: codex_of_the_damned/templates/archetypes/tupdogs.html:86
+#: codex_of_the_damned/templates/archetypes/tupdogs.html:38
 msgid "Martin Weinmayer's deck"
 msgstr "deck de Martin Weinmayer"
 
@@ -2121,7 +2121,7 @@ msgstr ""
 "avec %(heidelberg_castle_germany)s, ou même le détruire pour de l'influence avec %(golconda_inner_peace)s, à "
 "condition d'avoir une deuxième action de Maître grâce à %(cybele)s ou %(the_parthenon)s. </p>"
 
-#: codex_of_the_damned/templates/archetypes/lutz-politics.html:38 codex_of_the_damned/templates/archetypes/tupdogs.html:92
+#: codex_of_the_damned/templates/archetypes/lutz-politics.html:38 codex_of_the_damned/templates/archetypes/tupdogs.html:39
 msgid "Danilo Torrisi's deck"
 msgstr "deck de Danilo Torrisi"
 
@@ -2956,6 +2956,57 @@ msgstr ""
 #: codex_of_the_damned/templates/archetypes/the-unnamed.html:44
 msgid "Fernando Naves Resck's deck"
 msgstr "deck de Fernando Naves Resck"
+
+#: codex_of_the_damned/templates/archetypes/tupdogs.html:14
+#, python-format
+msgid ""
+"<h2>Highlights</h2> <p> This is a <em>rush</em> deck using %(tupdog)s and their %(POT)s%(VIS)s disciplines "
+"combination to dispose of opponents vampires. The crypt is spammed with %(tupdog)s to an unusual 24 cards count. The "
+"size of the crypt alone is often enough for the opponents to recognize the archetype. </p> <p> The combat module uses"
+" %(brick_by_brick)s to set the range, %(immortal_grapple)s to prevent dodges and S:CE (\"<strong>S</strong>trike: "
+"<strong>C</strong>ombat <strong>E</strong>nds\") and %(raking_talons)s for aggravated damage. %(torn_signpost)s or "
+"%(amaranth)s are used to destroy cumbersome vampires. </p> <p> As the %(tupdog)s needs a master to be able to act, "
+"%(antonio_d_erlette)s is a perfect fit. He also comes with his friends the %(nephandus)s, they're here to bleed the "
+"prey, helped by some %(computer_hacking)s. </p> <p> The %(nephandus)s can also defend a bit with %(the_unmasking)s. "
+"Also, %(deflection)s is used for bounces by %(antonio_d_erlette)s. </p> <p> This is a fast and brutal deck, which "
+"must handle its predator sooner rather than later, as most opponents will gladely let her dispose of the deck if she "
+"can. </p> <h2>Tips & Tricks</h2> <p> A bit of additional intercept is provided by permanents: %(channel_10)s, "
+"%(krcg_news_radio)s and %(aranthebes_the_immortal)s. </p> <p> Only 4 copies of %(antonio_d_erlette)s are in the crypt"
+" as to not jam it. </p> <p> %(yawp_court)s is an interesting counter against political constructs: as %(tupdog)s are "
+"Sabbat, they can use it. </p> <h2>Variants</h2> <p> %(computer_hacking)s are not often used and %(target_vitals)s is "
+"often included as it can be used by the %(nephandus)s. Before 2010 (release date of <em>Heirs to the Blood</em> and "
+"%(brick_by_brick)s), %(crawling_chamber)s was used to maneuver, but it was less efficient. </p> <p> %(graverobbing)s "
+"is often included instead of %(amaranth)s, to steal vampires to help oust the prey faster. It forces "
+"%(antonio_d_erlette)s to take a risky action though: if he is disabled, the %(tupdog)s can not act anymore. </p> <p> "
+"As for the %(nephandii)s archetype, the deck works well with %(the_parthenon)s and some %(ashur_tablets)s. "
+"%(martin_weinmayer_s_deck)s from 2019 is a good example. </p> <p> The <strong>Cats and Dogs</strong> variant replaces"
+" the commonly used %(nephandus)s by some %(rock_cat)s for additional rushes, like in %(danilo_torrisi_s_deck)s from "
+"2013. A bit of bloat is needed to pay for them though, Danilo's idea was to use %(autarkis_persecution)s. </p>"
+msgstr ""
+"<h2> Principe </h2> <p> C'est un deck <em> rush </em> qui utilise des %(tupdog)s et leur combinaison de disciplines "
+"%(POT)s%(VIS)s pour se débarrasser des vampires adverses. La crypte est remplie de %(tupdog)s à un nombre inhabituel "
+"de 24 cartes. La taille de la crypte à elle seule suffit souvent aux adversaires pour reconnaître l'archétype. </p> "
+"<p> Le module de combat utilise %(brick_by_brick)s pour définir la portée, %(immortal_grapple)s pour éviter les "
+"esquives et S:CE (\"<strong>S</strong>trike: <strong>C</strong>ombat <strong>E</strong>nds\") et %(raking_talons)s "
+"pour les dégâts aggravés. %(torn_signpost)s ou %(amaranth)s sont utilisés pour détruire les vampires encombrants. "
+"</p> <p> Comme les %(tupdog)s ont besoin d'un maître pour agir, %(antonio_d_erlette)s convient parfaitement. Il vient"
+" accompagné de ses amis %(nephandus)s, qui sont là pour mordre la proie, aidés par quelques %(computer_hacking)s. "
+"</p> <p> Les %(nephandus)s défendent aussi un peu avec %(the_unmasking)s. De plus, %(deflection)s est utilisé pour "
+"les rebonds par %(antonio_d_erlette)s. </p> <p> C'est un deck rapide et brutal, qui doit gérer son prédateur le plus "
+"tôt possible, car la plupart des adversaires le laisseront volontiers éliminer le deck s'il y parvient. </p> <h2> "
+"Trucs & Astuces </h2> <p> Un peu d'interception supplémentaire est fournie par les permanents : %(channel_10)s, "
+"%(krcg_news_radio)s et %(aranthebes_the_immortal)s. </p> <p> Seuls 4 exemplaires d'%(antonio_d_erlette)s sont dans la"
+" crypte pour ne pas la bloquer. </p> <p> %(yawp_court)s est prévu contre les decks politiques : comme les %(tupdog)s "
+"sont Sabbat, ils peuvent l'utiliser. </p> <h2> Variantes </h2> <p> %(computer_hacking)s n'est pas souvent utilisés et"
+" %(target_vitals)s est souvent inclus car il peut être utilisé par les %(nephandus)s. Avant 2010 (date de sortie de "
+"<em> Heirs to the Blood </em> et %(brick_by_brick)s), %(crawling_chamber)s était utilisé pour manœuvrer, mais il "
+"était moins efficace. </p> <p> %(graverobbing)s est souvent inclus au lieu d'%(amaranth)s, pour voler les vampires et"
+" éliminer la proie plus rapidement. Cela force cependant %(antonio_d_erlette)s à tenter une action risquée : s'il est"
+" abattu, les %(tupdog)s ne peuvent plus agir. </p> <p> Comme pour l'archétype %(nephandii)s, ce deck fonctionne bien "
+"avec %(the_parthenon)s et quelques %(ashur_tablets)s. Le %(martin_weinmayer_s_deck)s de 2019 est un bon exemple. </p>"
+" <p> La variante <strong> Cats & Dogs </strong> remplace les %(nephandus)s par quelques %(rock_cat)s pour des rushs "
+"supplémentaires, comme dans le %(danilo_torrisi_s_deck)s de 2013. Un peu de régénération est nécessaire pour les "
+"payer, l'idée de Danilo était d'utiliser %(autarkis_persecution)s. </p>"
 
 #: codex_of_the_damned/templates/archetypes/tzimisce-wall.html:78
 msgid "Nicola Lonardi's deck"
