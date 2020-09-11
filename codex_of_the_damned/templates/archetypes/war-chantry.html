@@ -11,41 +11,66 @@
 {% endblock %}
 
 {% block archetype %}
+{% trans trimmed
+    govern_the_unaligned=card("Govern the Unaligned"),
+    scouting_mission=card("Scouting Mission"),
+    mirror_walk=card("Mirror Walk"),
+    misdirection=card("Misdirection"),
+    anarch_troublemaker=card("Anarch Troublemaker"),
+    pentex_subversion=card("Pentex™ Subversion"),
+    theft_of_vitae=card("Theft of Vitae"),
+    apportation=card("Apportation"),
+    blood_fury=card("Blood Fury"),
+    immortal_grapple=card("Immortal Grapple"),
+    threats=card("Threats"),
+    conditioning=card("Conditioning"),
+    direct_intervention=card("Direct Intervention"),
+    the_barrens=card("The Barrens"),
+    dreams_of_the_sphinx=card("Dreams of the Sphinx"),
+    heart_of_nizchetus=card("Heart of Nizchetus"),
+    emerald_legionnaire=card("Emerald Legionnaire"),
+    nephandus=card("Nephandus"),
+    far_mastery=card("Far Mastery"),
+    flames_of_the_netherworld=card("Flames of the Netherworld"),
+    walk_of_flame=card("Walk of Flame"),
+    magic_of_the_smith=card("Magic of the Smith"),
+    bowl_of_convergence=card("Bowl of Convergence"),
+    ivory_bow=card("Ivory bow"),
+    sniper_rifle=card("Sniper Rifle"),
+    ponticulus=card("Ponticulus"),
+    second_tradition_domain=card("Second Tradition: Domain"),
+    valerius_maior_hell_s_fool_adv=card("Valerius Maior, Hell's Fool (ADV)", "Valerius"),
+    carna_the_princess_witch=card("Carna, The Princess Witch", "Carna"),
+    unleash_hell_s_fury=card("Unleash Hell's Fury"),
+    ricardo_molina_sobreira_s_deck=link("/deck-search", _("Ricardo Molina Sobreira's deck"), twda_id="2018sacsbp"),
+    pau_vilar_s_deck=link("/deck-search", _("Pau Vilar's deck"), twda_id="2018igpbi")
+%}
 <h2>Highlights</h2>
 <p>
-    This is a <em>toolbox</em> deck built around the Tremere clan and their <i>adt</i> disciplines.
-    <i>d</i> is used to bleed, bounce bleeds and accelerate the crypt with
-    {{ card("Govern the Unaligned") }} and
-    {{ card("Scouting Mission") }}.
-    <i>a</i> is used for wakes, intercept and bounces.
-    <i>t</i> is used for combat and a bit of stealth with
-    {{ card("Mirror Walk") }}.
+    This is a <em>toolbox</em> deck built around the Tremere clan
+    and their {{ aus }}{{ dom }}{{ tha }} disciplines.
+    {{ dom }} is used to bleed, bounce bleeds and accelerate the crypt with
+    {{ govern_the_unaligned }} and {{ scouting_mission }}.
+    {{ aus }} is used for wakes, intercept and bounces.
+    {{ tha }} is used for combat and a bit of stealth with {{ mirror_walk }}.
 </p>
 <p>
-    As the deck does not have much stealth, it uses <em>powerbleed</em> tools to lock the prey vampires
-    and make sure they won't be able to block or bounce, with
-    {{ card("Misdirection") }},
-    {{ card("Anarch Troublemaker") }} and
-    {{ card("Pentex™ Subversion") }}.
+    As the deck does not have much stealth, it uses <em>powerbleed</em> tools
+    to lock the prey vampires and make sure they won't be able to block or bounce,
+    with {{ misdirection }}, {{ anarch_troublemaker }} and {{ pentex_subversion }}.
 </p>
 <h2>Tips & Tricks</h2>
 <p>
-    {{ card("Theft of Vitae") }} is an excellent combat card, as it
-    usually produces a 4 blood differential for no cost. Against some modules though,
-    it can be a bit weak. The use of
-    {{ card("Apportation") }} and
-    {{ card("Blood Fury") }} helps with that.
+    {{ theft_of_vitae }} is an excellent combat card, as it usually produces
+    a 4 blood differential for no cost. Against some modules though, it can be a bit weak.
+    The use of {{ apportation }} and {{ blood_fury }} helps with that.
     It is great against weapons-oriented modules, and can be played when the opponent uses
-    {{ card("Immortal Grapple") }}: it is a nasty surprise
-    against <i>fp</i> combat modules.
+    {{ immortal_grapple }}: it is a nasty surprise against {{ for }}{{ pot }} combat modules.
 </p>
 <p>
-    Using {{ card("Threats") }} alongside
-    {{ card("Conditioning") }} provides some
-    liberty of action if an opponent plays
-    a {{ card("Direct Intervention") }} on the latter:
-    the cancelled modifier cannot be played again on the same action,
-    but another bleed enhancer can.
+    Using {{ threats }} alongside {{ conditioning }} provides some
+    liberty of action if an opponent plays a {{ direct_intervention }} on the latter:
+    the cancelled modifier cannot be played again on the same action, but another bleed enhancer can.
     The most direct advantage though is that it is cheaper and keeps a bit more blood on the vampires.
 </p>
 <h2>Creator Insights</h2>
@@ -54,61 +79,50 @@
 </p>
 <p>
     Rotation is quite important in the deck.
-    {{ card("The Barrens") }},
-    {{ card("Dreams of the Sphinx") }} and
-    {{ card("Heart of Nizchetus") }} help in this regard.
+    {{ the_barrens }}, {{ dreams_of_the_sphinx }} and {{ heart_of_nizchetus }}
+    help in this regard.
 </p>
 <p>
-    {{ card("Misdirection") }},
-    {{ card("Anarch Troublemaker") }} and
-    {{ card("Pentex™ Subversion") }} should be kept in hand until
-    it is time for the lunge.
+    {{ misdirection }}, {{ anarch_troublemaker }} and {{ pentex_subversion }}
+    should be kept in hand until it is time for the lunge.
 </p>
 <p>
-    {{ card("Theft of Vitae") }} is especially good because it handles
-    {{ card("Emerald Legionnaire") }} and
-    {{ card("Nephandus") }} easily. That's why there is only a single
-    {{ card("Far Mastery") }} to handle the more rare werewolf allies.
+    {{ theft_of_vitae }} is especially good because it handles {{ emerald_legionnaire }}
+    and {{ nephandus }} easily. That's why there is only a single
+    {{ far_mastery }} to handle the more rare werewolf allies.
 </p>
 <p>
-    {{ card("Blood Fury") }} is a nice surprise:
-    it is good in many situations, be it against weapons or against a <i>f</i> wall, as both are common.
+    {{ blood_fury }} is a nice surprise: it is good in many situations,
+    be it against weapons or against a {{ for }} wall, as both are common.
 </p>
 <p>
-    When going for a bleed, {{ card("Scouting Mission") }} and
-    {{ card("Threats") }} make sure that even a vampire with only 1 blood left
+    When going for a bleed, {{ scouting_mission }} and
+    {{ threats }} make sure that even a vampire with only 1 blood left
     can still get a bleed modifier, thus keeping the prey on her toes.
 </p>
 <h2>Variants</h2>
 <p>
     They are multiple variants on the combat module. It can use aggravated damages with
-    {{ card("Flames of the Netherworld") }} and
-    {{ card("Walk of Flame") }}, for example.
-    {{ card("Magic of the Smith") }} is also played often,
-    in order to fetch a
-    {{ card("Bowl of Convergence") }},
-    {{ card("Heart of Nizchetus") }},
-    {{ card("Ivory bow") }} or
-    {{ card("Sniper Rifle") }}.
-    Also, {{ card("Ponticulus") }} is often included for his excellent
-    defence abilities.
+    {{ flames_of_the_netherworld }} and {{ walk_of_flame }}, for example.
+    {{ magic_of_the_smith }} is also played often, in order to fetch a
+    {{ bowl_of_convergence }}, {{ heart_of_nizchetus }}, {{ ivory_bow }} or
+    {{ sniper_rifle }}.
+    Also, {{ ponticulus }} is often included for his excellent defence abilities.
 </p>
 <p>
     The <strong>Royalty</strong> variant uses <em>Princes</em> and <em>Justicars</em>,
-    adding political actions and
-    {{ card("Second Tradition: Domain") }} to the mix.
-    {{ link("/deck-search", _("Ricardo Molina Sobreira's deck"), twda_id="2018sacsbp") }}
-    from the 2018 SAC is a good example.
+    adding political actions and {{ second_tradition_domain }} to the mix.
+    {{ ricardo_molina_sobreira_s_deck }} from the 2018 SAC is a good example.
 </p>
 <p>
     The <strong>Infernal</strong> variant uses
-    {{ card("Valerius Maior, Hell's Fool (ADV)") }} instead of
-    {{ card("Carna, The Princess Witch") }}.
-    His ability is fearsome and its <em>Infernal</em> trait and <i>Y</i> give him access to good options like
-    {{ card("Flames of the Netherworld") }} and
-    {{ card("Unleash Hell's Fury") }}.
-    {{ link("/deck-search", _("Pau Vilar's deck"), twda_id="2018igpbi") }} from 2018 is a good example.
+    {{ valerius_maior_hell_s_fool_adv }} instead of {{ carna_the_princess_witch }}.
+    His ability is fearsome and its <em>Infernal</em> trait and {{ DAI }}
+    give him access to good options like
+    {{ flames_of_the_netherworld }} and {{ unleash_hell_s_fury }}.
+    {{ pau_vilar_s_deck }} from 2018 is a good example.
 </p>
+{% endtrans %}
 {% endblock %}
 
 {% block errata %}
