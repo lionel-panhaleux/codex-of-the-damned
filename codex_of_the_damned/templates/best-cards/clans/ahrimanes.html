@@ -13,35 +13,35 @@
         sahana=card("Sahana")
     %}
     <p>
-        Ahrimanes and their unique discipline {{ spi }} provide a stronger defence than the usual {{ ani }} builds.
-        Moreover, the acces to {{ pre }} allow them more toolboxy constructs than mono {{ ani }}, for a little more
-        bleed. They offer basically two possible crypts, a group 2 with
-        {{ howler }} and
-        {{ the_siamese }}, and a group 4 with
-        {{ muricia }} and
-        {{ effie_lowery }}.
+        Ahrimanes and their unique discipline {{ spi }} provide a stronger defence
+        than the usual {{ ani }} builds. Moreover, the acces to {{ pre }} allow them
+        more toolboxy constructs than mono {{ ani }}, for a little more bleed.
+        They offer basically two possible crypts,
+        a group 2 with {{ howler }} and {{ the_siamese }},
+        and a group 4 with {{ muricia }} and {{ effie_lowery }}.
     </p>
     <p>
         This clan has only one main archetype: {{ cats }}.
-        Some Ahrimaines are good picks for mono {{ ani }} archetypes as they offer {{ ANI }} vampires
-        for good value like {{ effie_lowery }} and {{ sahana }}.
+        Some Ahrimaines are good picks for mono {{ ani }} archetypes
+        as they offer {{ ANI }} vampires for good value like
+        {{ effie_lowery }} and {{ sahana }}.
     </p>
     {% endtrans %}
 </div>
 
 {% call layout.card_column('Effie Lowery', decks=36, copies="1-3") %}
 {% trans trimmed %}
-Superior {{ ANI }} and {{ SPI }} at a very decent cost of 5, she is even included in pure {{ ANI }} crypts.
+Superior {{ ANI }} and {{ SPI }} at a very decent cost of 5,
+she is even included in pure {{ ANI }} crypts.
 {% endtrans %}
 {% endcall %}
 
 {% call layout.card_column('Muricia', decks=23, copies="2-4") %}
 {% trans trimmed 
-    SPI_ANI_PRE='<i>ZIR</i>'|safe,
     aid_from_bats=card("Aid From Bats"),
     carrion_crows=card("Carrion Crows")
 %}
-Leader of the group 4 crypt, she has all clan disciplines {{ SPI_ANI_PRE }} at superior
+Leader of the group 4 crypt, she has all clan disciplines {{ SPI }}{{ ANI }}{{ PRE }} at superior
 for a reasonnable cost of 7. The +1 strength bonus is always good to take: she can use a little less
 {{ aid_from_bats }} for a little more {{ carrion_crows }}.
 {% endtrans %}
@@ -51,7 +51,7 @@ for a reasonnable cost of 7. The +1 strength bonus is always good to take: she c
 {% trans trimmed 
     SPI_ANI_PRE='<i>ZIR</i>'|safe
 %}
-Leader of the group 2 crypt, she has all clan disciplines {{ SPI_ANI_PRE }} at superior
+Leader of the group 2 crypt, she has all clan disciplines {{ SPI }}{{ ANI }}{{ PRE }} at superior
 for a cost of 8. The maneuver combined with the +1 strength bonus makes her a good warrior on her
 own.
 {% endtrans %}
