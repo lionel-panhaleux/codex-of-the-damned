@@ -11,99 +11,117 @@
 {% endblock %}
 
 {% block archetype %}
+{% trans trimmed
+    the_unnamed=card("The unnamed"),
+    tend_the_flock=card("Tend the Flock"),
+    enkil_cog=card("Enkil Cog"),
+    homunculus=card("Homunculus"),
+    instantaneous_transformation=card("Instantaneous Transformation"),
+    eluding_the_arms_of_morpheus=card("Eluding the Arms of Morpheus"),
+    mylan_horseed=card("Mylan Horseed"),
+    majesty=card("Majesty"),
+    sense_the_sin=card("Sense the Sin"),
+    flurry_of_action=card("Flurry of Action"),
+    true_love_s_face=card("True Love's Face"),
+    the_horde=card("The Horde"),
+    archon_investigation=card("Archon Investigation"),
+    rötschreck=card("Rötschreck"),
+    infernal_servitor=card("Infernal Servitor"),
+    shadow_of_the_beast=card("Shadow of the Beast"),
+    kaymakli_fragment=card("Kaymakli Fragment"),
+    mask_of_a_thousand_faces=card("Mask of a Thousand Faces"),
+    perfectionist=card("Perfectionist"),
+    giant_s_blood=card("Giant's Blood"),
+    the_coven=card("The Coven"),
+    i_am_legion=card("I am Legion"),
+    form_of_mist=card("Form of Mist"),
+    d_habi_revenant=card("D'habi Revenant"),
+    legal_manipulations=card("Legal Manipulations"),
+    maleficia=card("Maleficia"),
+    psalm_of_the_damned=card("Psalm of the Damned"),
+    greater_curse=card("Greater Curse"),
+    evil_eye=card("Evil Eye"),
+    fernando_naves_resck_s_deck=link("/deck-search", _("Fernando Naves Resck's deck"), twda_id="2017vplnebspb")
+%}
 <h2>Highlights</h2>
 <p>
-    This is a <em>stealth & bleed</em> deck starring
-    {{ card("The unnamed") }}.
+    This is a <em>stealth & bleed</em> deck starring {{ the_unnamed }}.
     The idea is to use his ability to bleed and bloat at the same time.
-    {{ card("Tend the Flock") }} is used to improve the bloat.
+    {{ tend_the_flock }} is used to improve the bloat.
 </p>
 <p>
-    At some point in the game, he gets {{ card("Enkil Cog") }} and
-    {{ card("Homunculus") }}, allowing him to bleed again
+    At some point in the game, he gets {{ enkil_cog }} and
+    {{ homunculus }}, allowing him to bleed again
     during another turn, doubling his bleed and bloat power.
 </p>
 <p>
-    The versatile
-    {{ card("Instantaneous Transformation") }}
+    The versatile {{ instantaneous_transformation }}
     is a great asset and other options are included to let him unlock as much as possible:
-    {{ card("Homunculus") }}, but also
-    {{ card("Eluding the Arms of Morpheus") }},
-    {{ card("Mylan Horseed") }} and
-    {{ card("Majesty") }}.
+    {{ homunculus }}, but also {{ eluding_the_arms_of_morpheus }},
+    {{ mylan_horseed }} and {{ majesty }}.
     The more he unlocks, the less the Methusalah has to pay for the <em>Infernal</em> penalty.
 </p>
 <p>
     His threatening combat ability makes unlocking and trying to block a real threat —
-    {{ card("Sense the Sin") }} becomes more versatile than in most
-    Baali decks.
+    {{ sense_the_sin }} becomes more versatile than in most Baali decks.
 </p>
 <p>
-    {{ card("Flurry of Action") }} is rarely played overall, but very
-    typical of this archetype. It lets {{ card("The unnamed") }}
-    bleed and unlock with a single card, at no cost. A bleed enhancement action is less useful than
-    it can be in other decks, since
-    {{ card("Sense the Sin") }},
-    {{ card("True Love's Face") }},
-    {{ card("Enkil Cog") }} and
-    {{ card("The Horde") }} already provide enough bleed enhancement,
-    and the deck never bleeds over 3 because of
-    {{ card("Archon Investigation") }} anyway.
+    {{ flurry_of_action }} is rarely played overall, but very
+    typical of this archetype. It lets {{ the_unnamed }}
+    bleed and unlock with a single card, at no cost.
+    A bleed enhancement action is less useful than
+    it can be in other decks, since {{ sense_the_sin }}, {{ true_love_s_face }},
+    {{ enkil_cog }} and {{ the_horde }} already provide enough bleed enhancement,
+    and the deck rarely bleeds over 3 because of {{ archon_investigation }} anyway.
 </p>
 <h2>Tips & Tricks</h2>
 <p>
-    {{ card("Rötschreck") }} is a nice surprise that can disable quite
-    any combat module if used with {{ card("The unnamed") }}
-    ability when blocking.
+    {{ rötschreck }} is a nice surprise that can disable quite
+    any combat module if used with {{ the_unnamed }} ability when blocking.
 </p>
 <p>
-    {{ card("Infernal Servitor") }} is a powerful bleeder
-    and can even use <i>o</i> for some stealth. Moreover, it can be played twice in a turn, back-to-back.
+    {{ infernal_servitor }} is a powerful bleeder
+    and can even use {{ obf }} for some stealth.
+    Moreover, it can be played twice in a turn, back-to-back.
 </p>
 <p>
-    {{ card("Shadow of the Beast") }} and
-    {{ card("Kaymakli Fragment") }} are rare inclusions and
+    {{ shadow_of_the_beast }} and {{ kaymakli_fragment }} are rare inclusions and
     <em>Darby Keeney</em> comments they could be cut.
 </p>
 <p>
-    {{ card("Mask of a Thousand Faces") }} is seldom played,
-    but here it lets {{ card("The unnamed") }} "takeover" when
+    {{ mask_of_a_thousand_faces }} is seldom played,
+    but here it lets {{ the_unnamed }} "takeover" when
     someone unexpectedly blocks a sidekick.
 </p>
 <p>
     The whole deck tends to cost a bit of blood, so
-    {{ card("Perfectionist") }} and
-    {{ card("Giant's Blood") }} are played to help restore
-    {{ card("The unnamed") }}'s blood.
-    {{ card("The Coven") }} is also common.
+    {{ perfectionist }} and {{ giant_s_blood }} are played to help restore
+    {{ the_unnamed }}'s blood. {{ the_coven }} is also common.
 </p>
 <p>
-    {{ card("I am Legion") }} is versatile: it
-    can be used to counter some <i>a</i> intercept or bounces
+    {{ i_am_legion }} is versatile: it can be used to counter
+    some {{ aus }} intercept or bounces
     but can also be used just for 1 pool on a successful action:
     the card text states <em>"and/<strong>or</strong> gain 1 pool"</em>.
 </p>
 <h2>Variants</h2>
 <p>
     Many small variations exist over the minion cards.
-    {{ card("Form of Mist") }} is often included for its versatility.
-    and {{ card("D'habi Revenant") }} as a bleed enhancer.
+    {{ form_of_mist }} is often included for its versatility.
+    and {{ d_habi_revenant }} as a bleed enhancer.
 </p>
 <p>
     The <strong>Legal</strong> variant disregards the
-    {{ card("Enkil Cog") }} and
-    {{ card("Homunculus") }} combination and replaces
-    {{ card("Flurry of Action") }} with
-    {{ card("Legal Manipulations") }}.
+    {{ enkil_cog }} and {{ homunculus }} combination and replaces
+    {{ flurry_of_action }} with {{ legal_manipulations }}.
 </p>
 <p>
-    The <strong>Maleficia</strong> variant plays {{ card("Maleficia") }}
-    and uses {{ card("Psalm of the Damned") }},
-    {{ card("Greater Curse") }} and/or
-    {{ card("Evil Eye") }} to improve the deck.
-    {{ link("/deck-search", _("Fernando Naves Resck's deck"), twda_id="2017vplnebspb") }} from 2017
-    Brazilian CCQ is a good example.
+    The <strong>Maleficia</strong> variant plays {{ maleficia }}
+    and uses {{ psalm_of_the_damned }}, {{ greater_curse }} and/or
+    {{ evil_eye }} to improve the deck.
+    {{ fernando_naves_resck_s_deck }} from the 2017 Brazilian CCQ is a good example.
 </p>
+{% endtrans %}
 {% endblock %}
 
 {% block errata %}
