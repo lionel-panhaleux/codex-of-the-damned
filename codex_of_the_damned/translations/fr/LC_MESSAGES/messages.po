@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: codex 0.X\n"
 "Report-Msgid-Bugs-To: lionel.panhaleux+codex@gmail.com\n"
-"POT-Creation-Date: 2020-09-11 15:08+0200\n"
+"POT-Creation-Date: 2020-09-11 15:21+0200\n"
 "PO-Revision-Date: 2020-07-04 08:50+0200\n"
 "Last-Translator: Lionel Panhaleux <lionel.panhaleux+codex@gmail.com>\n"
 "Language: fr\n"
@@ -892,7 +892,7 @@ msgstr ""
 #: codex_of_the_damned/templates/archetypes/mistress.html:30
 #: codex_of_the_damned/templates/archetypes/nosferatu-royalty.html:35
 #: codex_of_the_damned/templates/archetypes/spirit-marionette.html:31
-#: codex_of_the_damned/templates/archetypes/ventrue-royalty.html:64
+#: codex_of_the_damned/templates/archetypes/ventrue-royalty.html:35
 #: codex_of_the_damned/templates/best-cards/clans/daughters-of-cacophony.html:92
 #: codex_of_the_damned/templates/best-cards/clans/imbued.html:143
 #: codex_of_the_damned/templates/best-cards/clans/lasombra.html:102
@@ -1734,7 +1734,7 @@ msgstr "John Newquist pour le qualifier du NAC 2008"
 
 #: codex_of_the_damned/templates/archetypes/hunters.html:40
 #: codex_of_the_damned/templates/archetypes/lasombra-nocturn.html:32
-#: codex_of_the_damned/templates/archetypes/ventrue-royalty.html:78
+#: codex_of_the_damned/templates/archetypes/ventrue-royalty.html:37
 msgid "Sergio Gracia's deck"
 msgstr "deck de Sergio Gracia"
 
@@ -3093,7 +3093,55 @@ msgstr ""
 msgid "Nicola Lonardi's deck"
 msgstr "deck de Nicola Lonardi"
 
-#: codex_of_the_damned/templates/archetypes/ventrue-royalty.html:73
+#: codex_of_the_damned/templates/archetypes/ventrue-royalty.html:14
+#, python-format
+msgid ""
+"<h2>Highlights</h2> <p> This is a <em>toolbox</em> deck using Ventrue <em>Princes</em>. </p> <p> The idea is to get "
+"the highest capacity vampire out, then use %(govern_the_unaligned)s at superior %(DOM)s to get more vampires out fast"
+" and cheap, then later to bleed with the help of some %(dom)s modifiers. </p> <p> The intercept module is built "
+"around the fact the many vampires in the crypt are <em>Princes</em> and use %(second_tradition_domain)s heavily. "
+"%(deflection)s is used to bounce bleeds in case they get through anyway. </p> <p> The combat module uses %(for)s for "
+"damage prevention and %(weighted_walking_stick)s to deal more damage. </p> <h2>Tips & Tricks</h2> <p> "
+"%(daring_the_dawn)s and %(foreshadowing_destruction)s are used for the lunge. The use of %(direct_intervention)s on a"
+" modifier like %(conditioning)s prevents it to be played again on the same action (as a modifier can only be played "
+"once, even if countered). Using an alternative bleed enhancer is permitted though (the modifier did not apply, so "
+"limited bleed enhancement is still possible). %(foreshadowing_destruction)s can even save a lunge this way. </p> <p> "
+"%(scourge_of_the_enochians)s and %(anarchist_uprising)s are counters against breed constructs, as they can become "
+"overwhelming for this deck. </p> <h2>Variants</h2> <p> There are many minor variations to this archetype. "
+"%(parity_shift)s and %(entrancement)s are often included, %(seduction)s can help to get the bleed through. On the "
+"Master side, %(papillon)s and %(island_of_yiaros)s are common inclusions. Finally, some %(freak_drive)s to increase "
+"%(a_b)s is often seen too. </p> <p> The <strong>Law Firm</strong> variant ditches the combat module and replaces it "
+"with some %(majesty)s, with a good number of %(freak_drive)s for multiple actions. With more damaging votes like "
+"%(kine_resources_contested)s, it makes for many aggressive actions, and they quickly become hard to block. "
+"%(anthony_coleman_s_deck)s from the 2009 English NC is a good example. It is also often played with a group 1-2 "
+"crypt, as %(emerson_bridges)s and %(sir_walter_nash)s are good Princes for the job, at a low cost. "
+"%(sergio_gracia_s_deck)s from 2009 is a good example. </p>"
+msgstr ""
+"<h2> Principe </h2> <p> C'est une <em> toolbox </em> avec des <em> Princes </em> Ventrue. </p> <p> L'idée est de "
+"sortir le vampire de plus grande capacité, puis d'utiliser %(govern_the_unaligned)s en %(DOM)s supérieur pour sortir "
+"plus de vampires rapidement et à moindres frais, puis de mordre plus tard avec l'aide de quelques modificateurs "
+"%(dom)s. </p> <p> Le module d'interception est construit autour du fait que de nombreux vampires de la crypte sont "
+"des <em> Princes </em> et utilise beaucoup %(second_tradition_domain)s. %(deflection)s est utilisée pour rediriger "
+"les morsures au cas où elles passeraient malgré tout. </p> <p> Le module de combat utilise %(for)s pour la prévention"
+" des dégâts et %(weighted_walking_stick)s pour infliger plus de dégâts. </p> <h2> Trucs & Astuces </h2> <p> "
+"%(daring_the_dawn)s et %(foreshadowing_destruction)s sont utilisés pour la fente. L'utilisation de "
+"%(direct_intervention)s sur un modificateur comme %(conditioning)s l'empêche d'être rejoué sur la même action (car un"
+" modificateur ne peut être joué qu'une seule fois, même s'il est contré). L'utilisation d'un autre amplificateur de "
+"morsure est cependant autorisée (le modificateur ne sest pas appliqué, donc une amélioration limitée de morsure est "
+"toujours possible). %(foreshadowing_destruction)s peut même sauver une fente de cette façon. </p> <p> "
+"%(scourge_of_the_enochians)s et %(anarchist_uprising)s sont des contres contre les proliférations, car elles peuvent "
+"devenir accablantes pour ce deck. </p> <h2> Variantes </h2> <p> Il existe de nombreuses variantes mineures de cet "
+"archétype. %(parity_shift)s et %(entrancement)s sont souvent inclus, %(seduction)s peut aider à faire passer des "
+"morsures. Du côté maître, %(papillon)s et %(island_of_yiaros)s sont des inclusions courantes. Enfin, quelques "
+"%(freak_drive)s pour augmenter l'%(a_b)s sont aussi monnaie courante. </p> <p> La variante <strong> Law Firm "
+"</strong> abandonne le module de combat et le remplace par quelques %(majesty)s, avec un bon nombre de "
+"%(freak_drive)s pour plus d'actions. Avec plus de votes à dégâts comme %(kine_resources_contested)s, cela entraîne de"
+" nombreuses actions agressives, et elles deviennent rapidement difficiles à bloquer. Le %(anthony_coleman_s_deck)s du"
+" NC anglais de 2009 en est un bon exemple. Il est également souvent joué avec une crypte de groupe 1-2, car "
+"%(emerson_bridges)s et %(sir_walter_nash)s sont de bons princes pour le travail, à faible coût. Le "
+"%(sergio_gracia_s_deck)s de 2009 en est un bon exemple. </p>"
+
+#: codex_of_the_damned/templates/archetypes/ventrue-royalty.html:36
 msgid "Anthony Coleman's deck"
 msgstr "deck d'Anthony Coleman"
 

@@ -11,73 +11,82 @@
 {% endblock %}
 
 {% block archetype %}
+{% trans trimmed
+    govern_the_unaligned=card("Govern the Unaligned"),
+    second_tradition_domain=card("Second Tradition: Domain"),
+    deflection=card("Deflection"),
+    weighted_walking_stick=card("Weighted Walking Stick"),
+    daring_the_dawn=card("Daring the Dawn"),
+    foreshadowing_destruction=card("Foreshadowing Destruction"),
+    direct_intervention=card("Direct Intervention"),
+    conditioning=card("Conditioning"),
+    scourge_of_the_enochians=card("Scourge of the Enochians"),
+    anarchist_uprising=card("Anarchist Uprising"),
+    parity_shift=card("Parity Shift"),
+    entrancement=card("Entrancement"),
+    seduction=card("Seduction"),
+    papillon=card("Papillon"),
+    island_of_yiaros=card("Island of Yiaros"),
+    freak_drive=card("Freak Drive"),
+    majesty=card("Majesty"),
+    kine_resources_contested=card("Kine Resources Contested"),
+    emerson_bridges=card("Emerson Bridges"),
+    sir_walter_nash=card("Sir Walter Nash"),
+    a_b=link("/strategy/fundamentals", _("A&B"), _anchor="AB"),
+    anthony_coleman_s_deck=link("/deck-search", _("Anthony Coleman's deck"), twda_id="2k9uknats"),
+    sergio_gracia_s_deck=link("/deck-search", _("Sergio Gracia's deck"), twda_id="2k9powerbasecataluna")
+%}
 <h2>Highlights</h2>
 <p>
     This is a <em>toolbox</em> deck using Ventrue <em>Princes</em>.
 </p>
 <p>
     The idea is to get the highest capacity vampire out,
-    then use {{ card("Govern the Unaligned") }}
-    at superior <i>D</i> to get more vampires out fast and cheap, then later to bleed with the help of
-    some <i>d</i> modifiers.
+    then use {{ govern_the_unaligned }} at superior {{ DOM }} to get more vampires out
+    fast and cheap, then later to bleed with the help of some {{ dom }} modifiers.
 </p>
 <p>
-    The intercept module is built around the fact the many vampires in the crypt are <em>Princes</em> and uses
-    {{ card("Second Tradition: Domain") }} heavily.
-    {{ card("Deflection") }} is used to bounce bleeds in case
-    they get thtough anyway.
+    The intercept module is built around the fact the many vampires in the crypt
+    are <em>Princes</em> and use {{ second_tradition_domain }} heavily.
+    {{ deflection }} is used to bounce bleeds in case they get through anyway.
 </p>
 <p>
-    The combat module uses <i>f</i> for damage prevention and
-    {{ card("Weighted Walking Stick") }} to deal
-    more damage.
+    The combat module uses {{ for }} for damage prevention and
+    {{ weighted_walking_stick }} to deal more damage.
 </p>
 <h2>Tips & Tricks</h2>
 <p>
-    {{ card("Daring the Dawn") }} and
-    {{ card("Foreshadowing Destruction") }}
-    are used for the lunge.
-    The use of {{ card("Direct Intervention") }} on a modifier
-    like {{ card("Conditioning") }} prevents it to be played again on the
+    {{ daring_the_dawn }} and {{ foreshadowing_destruction }} are used for the lunge.
+    The use of {{ direct_intervention }} on a modifier
+    like {{ conditioning }} prevents it to be played again on the
     same action (as a modifier can only be played once, even if countered).
     Using an alternative bleed enhancer is permitted though
     (the modifier did not apply, so limited bleed enhancement is still possible).
-    {{ card("Foreshadowing Destruction") }}
-    can even save a lunge this way.
+    {{ foreshadowing_destruction }} can even save a lunge this way.
 </p>
 <p>
-    {{ card("Scourge of the Enochians") }} and
-    {{ card("Anarchist Uprising") }} are counters against
+    {{ scourge_of_the_enochians }} and {{ anarchist_uprising }} are counters against
     breed constructs, as they can become overwhelming for this deck.
 </p>
 <h2>Variants</h2>
 <p>
     There are many minor variations to this archetype.
-    {{ card("Parity Shift") }} and
-    {{ card("Entrancement") }} are often included,
-    {{ card("Seduction") }} can help to get the bleed through.
-    On the Master side,
-    {{ card("Papillon") }} and
-    {{ card("Island of Yiaros") }} are common inclusions.
-    Finally, some
-    {{ card("Freak Drive") }} to increase
-    {{ link("/strategy/fundamentals", _("A&B"), _anchor="AB") }}w is often seen too.
+    {{ parity_shift }} and {{ entrancement }} are often included,
+    {{ seduction }} can help to get the bleed through.
+    On the Master side, {{ papillon }} and {{ island_of_yiaros }} are common inclusions.
+    Finally, some {{ freak_drive }} to increase {{ a_b }} is often seen too.
 </p>
 <p>
-    The <strong>Law Firm</strong> variant ditches the combat module and replaces it with some
-    {{ card("Majesty") }}, with a good number of
-    {{ card("Freak Drive") }} for multiple actions.
-    With more damaging votes like
-    {{ card("Kine Resources Contested") }},
+    The <strong>Law Firm</strong> variant ditches the combat module
+    and replaces it with some {{ majesty }}, with a good number of {{ freak_drive }}
+    for multiple actions. With more damaging votes like {{ kine_resources_contested }},
     it makes for many aggressive actions, and they quickly become hard to block.
-    {{ link("/deck-search", _("Anthony Coleman's deck"), twda_id="2k9uknats") }} from the 2009 English NC
-    is a good example. It is also often played with a group 1-2 crypt, as
-    {{ card("Emerson Bridges") }} and
-    {{ card("Sir Walter Nash") }} are good Princes
-    for the job, at a low cost.
-    {{ link("/deck-search", _("Sergio Gracia's deck"), twda_id="2k9powerbasecataluna") }} from 2009
-    is a good example.
+    {{ anthony_coleman_s_deck }} from the 2009 English NC
+    is a good example. It is also often played with a group 1-2 crypt,
+    as {{ emerson_bridges }} and {{ sir_walter_nash }} are good Princes for the job,
+    at a low cost. {{ sergio_gracia_s_deck }} from 2009 is a good example.
 </p>
+{% endtrans %}
 {% endblock %}
 
 {% block errata %}
