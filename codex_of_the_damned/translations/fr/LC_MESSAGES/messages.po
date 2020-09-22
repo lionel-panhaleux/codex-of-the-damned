@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: codex 0.X\n"
 "Report-Msgid-Bugs-To: lionel.panhaleux+codex@gmail.com\n"
-"POT-Creation-Date: 2020-09-22 18:09+0200\n"
+"POT-Creation-Date: 2020-09-22 19:09+0200\n"
 "PO-Revision-Date: 2020-07-04 08:50+0200\n"
 "Last-Translator: Lionel Panhaleux <lionel.panhaleux+codex@gmail.com>\n"
 "Language: fr\n"
@@ -121,8 +121,7 @@ msgstr ""
 msgid "Cats"
 msgstr ""
 
-#: codex_of_the_damned/navigation.py:97 codex_of_the_damned/templates/best-cards/clans/baali.html:30
-#: codex_of_the_damned/templates/best-cards/clans/malkavian.html:302
+#: codex_of_the_damned/navigation.py:97 codex_of_the_damned/templates/best-cards/clans/malkavian.html:302
 #: codex_of_the_damned/templates/best-cards/clans/ventrue.html:138
 msgid "Council of Doom"
 msgstr ""
@@ -277,15 +276,13 @@ msgstr ""
 msgid "The Bleeding Vignes"
 msgstr ""
 
-#: codex_of_the_damned/navigation.py:130 codex_of_the_damned/templates/best-cards/clans/baali.html:12
-#: codex_of_the_damned/templates/best-cards/clans/nosferatu.html:9
+#: codex_of_the_damned/navigation.py:130 codex_of_the_damned/templates/best-cards/clans/nosferatu.html:9
 #: codex_of_the_damned/templates/best-cards/clans/nosferatu.html:143
 #: codex_of_the_damned/templates/best-cards/clans/ventrue.html:139
 msgid "The Dark Side of Politics"
 msgstr ""
 
 #: codex_of_the_damned/navigation.py:131 codex_of_the_damned/templates/archetypes/rachel-madness.html:39
-#: codex_of_the_damned/templates/best-cards/clans/baali.html:25
 msgid "The unnamed"
 msgstr ""
 
@@ -3792,9 +3789,170 @@ msgstr ""
 "excellente gestion de la portée est nécessaire pour la faire fonctionner. %(selective_silence)s est une bonne option,"
 " mais deux cartes et deux points de sang sont un prix élevé à payer."
 
-#: codex_of_the_damned/templates/best-cards/clans/baali.html:108
+#: codex_of_the_damned/templates/best-cards/clans/baali.html:7
+#, python-format
+msgid ""
+"<p> Baali and their unique discipline %(dai)s provide good clan cards. Their vampires are all <em>Infernal</em>, and "
+"1 pool per turn is a high cost, but some of them, combined with the clan cards, have abilities matching this cost. "
+"There are multiple archetypes used by the Baali clan: </p> <ul> <li> %(the_dark_side_of_politics)s archetype, using "
+"%(giotto_verducci)s and %(kaymakli_fragment)s to get titled vampires into play fast and cheap. </li> <li> The "
+"%(girls_will_find_inner_circles)s archetype, using %(cybele)s to get more Master actions. </li> <li> The "
+"%(the_unnamed_arch)s archetype, a stealth & bleed construct starring, obviously, %(the_unnamed)s. </li> <li> The "
+"%(council_of_doom)s archetype, starring %(huitzilopochtli)s along some <em>Inner Circle</em> vampires. </li> </ul> "
+"<p> The titled vampires of the clan, %(arishat)s, %(xeper)s and %(annazir)s, also offer good options for political "
+"builds. </p>"
+msgstr ""
+"<p> Les Baali et leur discipline exclusive %(dai)s ont de bonnes cartes de clan. Leurs vampires sont tous <em> "
+"Infernaux </em>, et 1 influence par tour est un coût élevé, mais certains d'entre eux, combinés avec les cartes de "
+"clan, ont des aptitudes qui compensent. Il existe plusieurs archétypes utilisés par le clan Baali: </p> <ul> <li> "
+"%(the_dark_side_of_politics)s, qui utilise %(giotto_verducci)s et %(kaymakli_fragment)s pour mettre en jeu des "
+"vampires titrés rapidement et pas cher. </li> <li> %(girls_will_find_inner_circles)s, qui utilise %(cybele)s pour "
+"obtenir plus d'actions de maître. </li> <li> %(the_unnamed_arch)s, un archétype stealth & bleed avec comme star, "
+"évidemment, %(the_unnamed)s. </li> <li> L'archétype %(council_of_doom)s, avec %(huitzilopochtli)s en star aux côtés "
+"de vampires du <em> Cercle Intérieur </em>. </li> </ul> <p> Les vampires titrés du clan, %(arishat)s, %(xeper)s et "
+"%(annazir)s, offrent également de bonnes options pour les decks politiques. </p>"
+
+#: codex_of_the_damned/templates/best-cards/clans/baali.html:53
+#, python-format
+msgid ""
+"The most played %(dai)s card. The pool cost is steep, but it is a dreadful defence. It can be used to deter bleeds or"
+" protect vampires against aggressive actions. The threat of torpor without even a combat is hard to get around."
+msgstr ""
+"La carte %(dai)s la plus jouée. Le coût d'influence est élevé, mais c'est une défense qui fait peur. Elle peut être "
+"utilisée pour dissuader les morsures ou protéger les vampires contre des actions agressives. La menace de torpeur "
+"sans même un combat est difficile à gérer."
+
+#: codex_of_the_damned/templates/best-cards/clans/baali.html:61
+#, python-format
+msgid "The star of the Baali clan, her ability led to Master-focused decks like %(girls_will_find_inner_circles)s."
+msgstr ""
+"La star du clan Baali, sa capacité a conduit à des decks axés sur les cartes Maître comme "
+"%(girls_will_find_inner_circles)s."
+
+#: codex_of_the_damned/templates/best-cards/clans/baali.html:70
+msgid ""
+"The best ally of the clan, Veneficti has a 2 points bleed combined with stealth, all for the cheap cost of 1 pool. "
+"Hard to resist: it is the kind of awesome cards one is paying the <em>Infernal</em> penalty for."
+msgstr ""
+"Meilleur allié du clan, Veneficti a une morsure de 2 points combinée à de la discrétion, le tout pour le coût bradé "
+"d'un point d'influence. Difficile de résister : c'est le genre de cartes formidables pour lesquelles on paie la "
+"pénalité des <em> Infernaux </em>.\n"
+
+#: codex_of_the_damned/templates/best-cards/clans/baali.html:78
+#, python-format
+msgid ""
+"An excellent card against %(AUS)s bounces %(telepathic_misdirection)s and %(my_enemy_s_enemy)s, it does not jam the "
+"hand as it can be used at superior %(OBF)s%(DAI)s to just gain a pool for a blood (the card text states "
+"<em>\"and/or\"</em>)."
+msgstr ""
+"Une excellente carte contre les rebonds %(AUS)s %(telepathic_misdirection)s et %(my_enemy_s_enemy)s, elle ne bloque "
+"pas la main car elle peut être utilisée au niveau supérieur %(OBF)s%(DAI)s pour simplement gagner un point "
+"d'influence pour un point de sang (le texte de la carte indique <em > \"et/ou\" </em>)."
+
+#: codex_of_the_damned/templates/best-cards/clans/baali.html:90
+msgid ""
+"A very versatile card, it can be used for intercept or additional bleed, depending on the situation. Always useful, "
+"at no cost, even with no corruption counter around."
+msgstr ""
+"Carte très polyvalente, elle peut être utilisée pour de l'interception ou de la morsure supplémentaire, selon la "
+"situation. Toujours utile, sans frais, même sans compteur de corruption."
+
+#: codex_of_the_damned/templates/best-cards/clans/baali.html:98
+#, python-format
+msgid ""
+"An excellent bloat device. Played in many Baali decks, it also plays well with %(cybele)s ability. This card helps to"
+" make up for the <em>Infernal</em> penalty and is straightly better than %(grooming_the_protege)s."
+msgstr ""
+"Un excellent outil de régénération. Joué dans de nombreux decks Baali, il passe également bien avec l'aptitude de "
+"%(cybele)s. Cette carte aide à compenser la pénalité des <em> Infernaux </em> et est directement meilleure que "
+"%(grooming_the_protege)s.\n"
+
+#: codex_of_the_damned/templates/best-cards/clans/baali.html:110
+msgid "An excellent sidekick - its ability can be used to boost older vampires bleed easily, even from torpor."
+msgstr ""
+"Un excellent acolyte - son aptitude peut être utilisée pour booster les vampires plus âgés qui mordent facilement, "
+"même de torpeur.\n"
+
+#: codex_of_the_damned/templates/best-cards/clans/baali.html:117
+#, python-format
+msgid ""
+"A decent block denial, although limited to younger vampires and allies, it still applies to a lot of minions when one"
+" plays %(cybele)s or %(the_unnamed)s."
+msgstr ""
+"Un déni de bloc décent, bien que limité aux jeunes vampires et alliés, il s'applique toujours à beaucoup de "
+"serviteurs quand on joue %(cybele)s ou %(the_unnamed)s."
+
+#: codex_of_the_damned/templates/best-cards/clans/baali.html:128
+msgid ""
+"A decent pool damage provider, although often played as a single copy in Baali decks. It is a way to bring the pool "
+"cost around the table closer to the one one has to pay to unlock Infernal vampires, and is more useful in slow-paced "
+"decks."
+msgstr ""
+"Un moyen décent de faire des dégâts d'influence, bien que souvent joué en un seul exemplaire dans les decks Baali. "
+"C'est un moyen de rapprocher le coût d'influence autour de la table de celui que l'on doit payer pour déverrouiller "
+"les vampires infernaux, et est plus utile dans les decks au rythme lent."
+
+#: codex_of_the_damned/templates/best-cards/clans/baali.html:136
+msgid ""
+"An excellent vampire, with an excellent ability for politics, defensively or offensively. Depending on the "
+"opposition, she can offer a swing from 1 to 4 votes reliably."
+msgstr ""
+"Un excellent vampire, avec une bonne aptitude politique, défensive ou offensive. En fonction de l'opposition, elle "
+"peut proposer un différentiel de 1 à 4 voix de manière fiable.\n"
+
+#: codex_of_the_damned/templates/best-cards/clans/baali.html:144
 msgid "own archetype"
 msgstr "propre archétype"
+
+#: codex_of_the_damned/templates/best-cards/clans/baali.html:143
+#, python-format
+msgid ""
+"Star of his %(own_archetype)s, his ability makes for a very comfortable bloat. His access to such a powerful "
+"disciplines combination allows him to use a broad range of cards."
+msgstr ""
+"Star de son %(own_archetype)s, sa capacité produit une régénération très confortable. Son accès à une telle "
+"combinaison de disciplines lui permet d'utiliser une large gamme de cartes.\n"
+
+#: codex_of_the_damned/templates/best-cards/clans/baali.html:152
+#, python-format
+msgid ""
+"An excellent vampire, with a very annoying ability against ally constructs and a decent one for vote constructs. His "
+"inferior %(dai)s is almost not an issue."
+msgstr ""
+"Un excellent vampire, avec une aptitude très pénible pour les decks alliées et une bonne aptitude pour les decks de "
+"vote. Son %(dai)s inférieur n'est presque pas un problème."
+
+#: codex_of_the_damned/templates/best-cards/clans/baali.html:159
+#, python-format
+msgid ""
+"Another excellent vampire, all clan disciplines at superior, votes and enhanced bleed, plus a nice ability that can "
+"become useful to get rid of a gun or a %(bowl_of_convergence)s."
+msgstr ""
+"Un autre excellent vampire, toutes les disciplines de clan en supérieur, votes et morsure améliorée, plus une belle "
+"aptitude qui peut devenir utile pour se débarrasser d'une arme à feu ou d'un %(bowl_of_convergence)s."
+
+#: codex_of_the_damned/templates/best-cards/clans/baali.html:169
+msgid "An excellent ally: although he does not stay in play, his bleed power is huge and can make for a very nice lunge."
+msgstr ""
+"Un excellent allié : bien qu'il ne reste pas en jeu, sa puissance de morsure est énorme et peut faire une très belle "
+"fente."
+
+#: codex_of_the_damned/templates/best-cards/clans/baali.html:176
+#, python-format
+msgid ""
+"A very good combat strike. More often seen in fact in Tremere decks using %(tha)s, as it is a good alternative to "
+"other aggravated damage source %(tha)s provides like %(walk_of_flame)s or %(burst_of_sunlight)s."
+msgstr ""
+"Une très bonne frappe de combat. Plus souvent vue en fait dans les decks Tremere qui utilisent %(tha)s, car c'est une"
+" bonne alternative à d'autres sources de dégâts aggravés en %(tha)s comme %(walk_of_flame)s ou %(burst_of_sunlight)s."
+
+#: codex_of_the_damned/templates/best-cards/clans/baali.html:187
+msgid ""
+"An excellent card for politics, both defensively and offensively. Even Baali decks with no take on the politics game "
+"can play it just to hinder a politic opponent."
+msgstr ""
+"Une excellente carte de politique, à la fois défensive et offensive. Même les decks Baali sans objectif politique "
+"peuvent la jouer juste pour gêner un adversaire politique."
 
 #: codex_of_the_damned/templates/best-cards/clans/gangrel.html:91
 msgid "Girls Will Find Inner Circles"
