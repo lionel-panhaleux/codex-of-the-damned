@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: codex 0.X\n"
 "Report-Msgid-Bugs-To: lionel.panhaleux+codex@gmail.com\n"
-"POT-Creation-Date: 2020-09-11 17:17+0200\n"
+"POT-Creation-Date: 2020-09-22 18:09+0200\n"
 "PO-Revision-Date: 2020-07-04 08:50+0200\n"
 "Last-Translator: Lionel Panhaleux <lionel.panhaleux+codex@gmail.com>\n"
 "Language: fr\n"
@@ -95,7 +95,7 @@ msgstr ""
 msgid "Akunanse Wall"
 msgstr ""
 
-#: codex_of_the_damned/navigation.py:91 codex_of_the_damned/templates/best-cards/clans/assamite.html:110
+#: codex_of_the_damned/navigation.py:91 codex_of_the_damned/templates/best-cards/clans/assamite.html:92
 msgid "Amaravati Politics"
 msgstr ""
 
@@ -111,8 +111,8 @@ msgstr ""
 msgid "Bima Dominate"
 msgstr ""
 
-#: codex_of_the_damned/navigation.py:95 codex_of_the_damned/templates/best-cards/clans/assamite.html:19
-#: codex_of_the_damned/templates/best-cards/clans/assamite.html:128
+#: codex_of_the_damned/navigation.py:95 codex_of_the_damned/templates/best-cards/clans/assamite.html:11
+#: codex_of_the_damned/templates/best-cards/clans/assamite.html:107
 #: codex_of_the_damned/templates/strategy/fundamentals.html:329
 msgid "Black Hand"
 msgstr ""
@@ -135,7 +135,7 @@ msgstr ""
 msgid "Daughters Politics"
 msgstr ""
 
-#: codex_of_the_damned/navigation.py:100 codex_of_the_damned/templates/best-cards/clans/assamite.html:15
+#: codex_of_the_damned/navigation.py:100 codex_of_the_damned/templates/best-cards/clans/assamite.html:10
 #: codex_of_the_damned/templates/best-cards/sects/anarch.html:207
 msgid "Death Star"
 msgstr ""
@@ -3601,8 +3601,8 @@ msgid ""
 "capacity vampires to get the edge sooner."
 msgstr ""
 "Une bonne carte Maître pour les Akunanse : Elle peut accélérer la mise en place, mais aussi éviter régulièrement la "
-"perte d'un point d'influence. Gagner un ou deux tours ou 3 influence ou plus est motivant, cela encourage "
-"l'inclusion de vampires de faible capacité pour récupérer l'avantage plus tôt."
+"perte d'un point d'influence. Gagner un ou deux tours ou 3 influence ou plus est motivant, cela encourage l'inclusion"
+" de vampires de faible capacité pour récupérer l'avantage plus tôt."
 
 #: codex_of_the_damned/templates/best-cards/clans/akunanse.html:47
 msgid ""
@@ -3619,9 +3619,9 @@ msgid ""
 "turn, allowing it to get +2 stealth. He is expensive, though — he becomes really efficient partnered with "
 "%(jacob_fermor)s in the %(team_jacob)s archetype."
 msgstr ""
-"Il peut être utilisé comme serviteur principal du deck pour des morsures discrètes : son aptitude peut être "
-"utilisée plus d'une fois par tour, ce qui lui permet d'obtenir +2 de discrétion. Mais il est cher – il devient "
-"vraiment efficace en partenariat avec %(jacob_fermor)s dans l'archétype %(team_jacob)s."
+"Il peut être utilisé comme serviteur principal du deck pour des morsures discrètes : son aptitude peut être utilisée "
+"plus d'une fois par tour, ce qui lui permet d'obtenir +2 de discrétion. Mais il est cher – il devient vraiment "
+"efficace en partenariat avec %(jacob_fermor)s dans l'archétype %(team_jacob)s."
 
 #: codex_of_the_damned/templates/best-cards/clans/akunanse.html:66
 #, python-format
@@ -3659,13 +3659,138 @@ msgstr ""
 "avec %(carrion_crows)s. Enfin, elle fonctionne sur une frappe à mains nues, donc %(immortal_grapple)s est inutile "
 "contre elle."
 
-#: codex_of_the_damned/templates/best-cards/clans/assamite.html:11
+#: codex_of_the_damned/templates/best-cards/clans/assamite.html:8
 msgid "Amaravati politics"
 msgstr ""
 
-#: codex_of_the_damned/templates/best-cards/clans/assamite.html:23
+#: codex_of_the_damned/templates/best-cards/clans/assamite.html:7
+#, python-format
+msgid ""
+"<p> Assamite and their unique %(qui)s discipline provide some good clan cards and multiple strategies usually "
+"revolving around %(obf)s for stealth. This clan has four main archetypes: <ul> <li> %(amaravati_politics)s, a "
+"political archetype with %(amaravati)s. </li> <li> The %(death_star)s, an anarch politics archetype. </li> <li> The "
+"%(black_hand)s swarm archetype, from which the Asssamite variation is the most common. </li> <li> "
+"%(dimitri_s_big_band)s, a toolbox archetype using %(dmitri_borodin)s and the %(AUS)s%(CEL)s%(QUI)s disciplines "
+"combination. </li> </ul> </p>"
+msgstr ""
+"<p> Les Assamite et leur discipline %(qui)s exclusive fournissent de bonnes cartes de clan et de multiples stratégies"
+" qui tournent généralement autour d'%(obf)s pour la furtivité. Ce clan a quatre archétypes principaux: <ul> <li> "
+"%(amaravati_politics)s, un archétype politique avec %(amaravati)s. </li> <li> La %(death_star)s, un archétype "
+"politique anarch. </li> <li> L'archétype d'essaim %(black_hand)s, dont la variante Asssamite est la plus courante. "
+"</li> <li> %(dimitri_s_big_band)s, un archétype toolbox qui utilise %(dmitri_borodin)s et la combinaison de "
+"disciplines %(AUS)s%(CEL)s%(QUI)s. </li> </ul> </p>"
+
+#: codex_of_the_damned/templates/best-cards/clans/assamite.html:12
 msgid "Dimitri's Big Band"
 msgstr ""
+
+#: codex_of_the_damned/templates/best-cards/clans/assamite.html:40
+msgid ""
+"A good action card for bloating. Assamite decks are rare, and most of them built around breeding. This action makes "
+"good use of the many low capacity Assamites one can have in this context. Even just a few copies already make for a "
+"good bloat."
+msgstr ""
+"Une bonne carte d'action pour régénérer. Les decks Assamite sont rares et la plupart sont construits autour de la "
+"reproduction. Cette action fait bon usage des nombreux Assamites de faible capacité que l'on peut avoir dans ce "
+"contexte. Juste quelques exemplaires produisent déjà une bonne régénération."
+
+#: codex_of_the_damned/templates/best-cards/clans/assamite.html:50
+msgid ""
+"A bleed enhancer with a 4 pool bloat bonus if timely played. Most Assamite decks include one or two of these for the "
+"lunge."
+msgstr ""
+"Une amélioration de morsure avec une régénération de 4 si elle est joué en temps voulu. La plupart des decks Assamite"
+" en incluent un ou deux pour la fente."
+
+#: codex_of_the_damned/templates/best-cards/clans/assamite.html:57
+#, python-format
+msgid ""
+"An excellent defence against rush actions, but also against %(banishment)s, an all-too-common option in big capacity "
+"vote decks. The cost of 1 pool is fairly low."
+msgstr ""
+"Une excellente défense contre les actions de rush, mais aussi contre %(banishment)s, une option trop courante dans "
+"les decks de vote de grande capacité. Le coût d'un point d'influence est plutôt bas."
+
+#: codex_of_the_damned/templates/best-cards/clans/assamite.html:67
+msgid ""
+"An excellent vote enhancer at a fair cost for any archetype. It is played for additional votes in political decks, "
+"but also as a defensive tool against political actions in other decks."
+msgstr ""
+"Un excellent boost de vote à un prix raisonnable pour n'importe quel archétype. Il est joué pour des votes "
+"supplémentaires dans les decks politiques, mais aussi comme un outil défensif contre les actions politiques dans "
+"d'autres decks."
+
+#: codex_of_the_damned/templates/best-cards/clans/assamite.html:75
+msgid "Another cheap vote enhancer, 2 votes for 1 pool is quite worth it. The contract part of the card is seldom used."
+msgstr ""
+"Un autre boost de vote bon marché, 2 votes pour 1 influence vaut la coût. La partie contrat de la carte est rarement "
+"utilisée."
+
+#: codex_of_the_damned/templates/best-cards/clans/assamite.html:82
+#, python-format
+msgid ""
+"An interesting breeding card: it is a bit slow as the new vampire only comes out after 3 turns but, on the other "
+"hand, the neonate has the three clan disciplines %(qui)s%(obf)s%(cel)s at basic level and three blood, all for the "
+"low cost of 1 pool."
+msgstr ""
+"Une carte de reproduction intéressante: elle est un peu lente car le nouveau vampire ne sort qu'après 3 tours mais, "
+"en revanche, le nouveau-né a les trois disciplines de clan %(qui)s%(obf)s%(cel)s au niveau inférieur et trois points "
+"de sang, le tout pour le faible coût d'un point d'influence."
+
+#: codex_of_the_damned/templates/best-cards/clans/assamite.html:91
+#, python-format
+msgid ""
+"The star of the %(amaravati_politics)s archetype, combined with %(web_of_knives_recruit)s, %(alamut)s and "
+"%(the_black_throne)s, he builds up a strong vote lock. Moreover, his superior %(DOM)s gets him bounce reactions like "
+"%(deflection)s."
+msgstr ""
+"La star de l'archétype %(amaravati_politics)s, combiné avec %(web_of_knives_recruit)s, %(alamut)s et "
+"%(the_black_throne)s, il construit un bon verrou de vote. De plus, %(DOM)s en supérieur lui procure des réactions de "
+"rebond comme %(deflection)s."
+
+#: codex_of_the_damned/templates/best-cards/clans/assamite.html:106
+#, python-format
+msgid ""
+"One of the best Seraph of the game, Djuhah also has good company in his clan as 5 Black Hand Assamite are available "
+"in groups 4 and 5. This led to the Assamite variation of the %(black_hand)s swarm archetype."
+msgstr ""
+"L'un des meilleurs Seraph du jeu, Djuhah est de plus bien accompagné dans son clan puisque 5 Assamite Black Hand sont"
+" disponibles dans les groupes 4 et 5. Cela a conduit à la variante Assamite de l'archétype d'essaim %(black_hand)s."
+
+#: codex_of_the_damned/templates/best-cards/clans/assamite.html:116
+msgid ""
+"An excellent permanent intercept at low cost. Used in all Assamite decks when blocking is an option. Swarm builds "
+"have no use for it though."
+msgstr ""
+"Une excellente interception permanente à faible coût. Utilisée dans tous les decks Assamite lorsque bloquer est une "
+"option. Les decks d'essaim n'en ont cependant pas l'usage."
+
+#: codex_of_the_damned/templates/best-cards/clans/assamite.html:124
+#, python-format
+msgid "A strong bleed action, played in most Assamite decks. The inferior %(qui)s option can also come in handy."
+msgstr ""
+"Une action de morsure puissante, jouée dans la plupart des decks Assamite. L'option %(qui)s inférieur peut également "
+"être utile."
+
+#: codex_of_the_damned/templates/best-cards/clans/assamite.html:131
+msgid ""
+"An excellent reaction, which actually unlocks - not just wake - the vampire. This can be better as the vampire stays "
+"unlocked if he fails to block the action, but being forced to block can be tricky if the goal is to bounce a bleed."
+msgstr ""
+"Une excellente réaction, qui redresse - pas seulement réveille - le vampire. Cela peut être mieux car le vampire "
+"reste redressé s'il ne parvient pas à bloquer l'action, mais être forcé de bloquer peut être délicat si l'objectif "
+"est de faire rebondir une morsure."
+
+#: codex_of_the_damned/templates/best-cards/clans/assamite.html:139
+#, python-format
+msgid ""
+"Worth mentioning as it is the most played %(qui)s combat card, it is still hard to include as excellent range "
+"management is necessary to make it work. %(selective_silence)s is a good option, but two cards and two blood is a "
+"high price to pay for it."
+msgstr ""
+"Mérite d'être mentionnée car c'est la carte de combat %(qui)s la plus jouée, elle est difficile à inclure car une "
+"excellente gestion de la portée est nécessaire pour la faire fonctionner. %(selective_silence)s est une bonne option,"
+" mais deux cartes et deux points de sang sont un prix élevé à payer."
 
 #: codex_of_the_damned/templates/best-cards/clans/baali.html:108
 msgid "own archetype"
@@ -6453,3 +6578,4 @@ msgstr ""
 "situation à trois ou cinq joueurs : si la fente fonctionne, vous revenez à un nombre pair et à une situation "
 "favorable. Si elle échoue, vous restez sur un nombre impair de joueurs en ayant mis une grande pression sur la proie."
 " En général, cela signifie que la pression va revenir en force contre vous au prochain tour de table. </p>"
+
