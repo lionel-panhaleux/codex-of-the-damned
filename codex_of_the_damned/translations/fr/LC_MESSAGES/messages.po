@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: codex 0.X\n"
 "Report-Msgid-Bugs-To: lionel.panhaleux+codex@gmail.com\n"
-"POT-Creation-Date: 2020-09-23 10:57+0200\n"
+"POT-Creation-Date: 2020-09-23 11:25+0200\n"
 "PO-Revision-Date: 2020-07-04 08:50+0200\n"
 "Last-Translator: Lionel Panhaleux <lionel.panhaleux+codex@gmail.com>\n"
 "Language: fr\n"
@@ -315,14 +315,12 @@ msgstr ""
 msgid "War Ghouls"
 msgstr ""
 
-#: codex_of_the_damned/navigation.py:138 codex_of_the_damned/templates/best-cards/clans/caitiff.html:32
-#: codex_of_the_damned/templates/best-cards/clans/malkavian.html:16
+#: codex_of_the_damned/navigation.py:138 codex_of_the_damned/templates/best-cards/clans/malkavian.html:16
 #: codex_of_the_damned/templates/best-cards/clans/toreador.html:12
 msgid "Weenie AUS"
 msgstr ""
 
-#: codex_of_the_damned/navigation.py:139 codex_of_the_damned/templates/best-cards/clans/caitiff.html:104
-#: codex_of_the_damned/templates/best-cards/clans/malkavian.html:15
+#: codex_of_the_damned/navigation.py:139 codex_of_the_damned/templates/best-cards/clans/malkavian.html:15
 msgid "Weenie DEM"
 msgstr ""
 
@@ -3358,7 +3356,7 @@ msgstr ""
 "dans ce deck, en plus c'est excellent contre les votes anti-weenie à hauts dégâts comme %(anarchist_uprising)s, "
 "%(ancilla_empowerment)s et %(domain_challenge)s. </p> <p> Une seule copie de chaque vampire dans la crypte garantit "
 "que chaque pioche sur la crypte obtiendra un vampire jouable. </p> <h2> Variantes </h2> <p> Il existe de nombreuses "
-"petites variantes de cet archétype. %(restructure)s (contre allié), %(enchanted_marionette)s et "
+"petites variantes de cet archétype. %(restructure)s (contre les  alliés), %(enchanted_marionette)s et "
 "%(telepathic_counter)s (car %(narrow_minds)s peut paralyser %(telepathic_misdirection)s) sont parfois inclus. Plus de"
 " %(wash)s et de %(sudden_reversal)s peuvent être inclus, parfois même %(bleeding_the_vine)s, pour contrer les cartes "
 "Maître de régénération comme %(villein)s et améliorer la pression frontale du deck. </p> <p> Des vampires de plus "
@@ -3366,10 +3364,10 @@ msgstr ""
 "%(AUS)s leur donne une meilleure discrétion et leur permet d'utiliser %(the_call)s et %(no_trace)s pour la défense au"
 " combat, bien que le deck soit un peu plus lent. </p> <p> Des vampires de plus faible capacité peuvent être utilisés,"
 " abandonnant %(obf)s entièrement pour s'appuyer exclusivement sur %(DEM)s, comme dans le %(bram_van_stappen_s_deck)s "
-"du NC d'Allemagne 2013. C'est une variante encore plus rapide, mais plus fragile à mesure que la furtivité diminue et"
-" que les vampires ont plus de chances d'être bloqués. </p> <p> Enfin, une crypte plus stable peut être utilisée, "
-"comme dans le deck de %(pawel_kosz_s)s de 2011, mais %(wider_view)s est inclus pour aider à la rotation de cryptage "
-"dans ce cas. </p>"
+"du NC d'Allemagne 2013. C'est une variante encore plus rapide, mais plus fragile puisque la discrétion diminue et que"
+" les vampires ont plus de chances d'être bloqués. </p> <p> Enfin, une crypte plus stable peut être utilisée, comme "
+"dans le deck de %(pawel_kosz_s)s de 2011, mais %(wider_view)s est inclus pour aider à la rotation de la crypte dans "
+"ce cas. </p>"
 
 #: codex_of_the_damned/templates/archetypes/weenie-dem.html:41
 msgid "Norbert Bróda's deck"
@@ -4032,6 +4030,87 @@ msgid ""
 msgstr ""
 "Un bon voteur avec une excellente aptitude, son accès à %(obf)s et %(FOR)s sont des points très forts car il peut "
 "jouer un peu de discrétion et %(forced_march)s pour des actions supplémentaires."
+
+#: codex_of_the_damned/templates/best-cards/clans/caitiff.html:8
+msgid ""
+"Caitiff are rarely played on their own, but they often offer low capacity vampires that can complete crypts for other"
+" clans and builds. Now a clan, they were before considered as vampires without a clan: it explains why they have no "
+"library clan cards at all."
+msgstr ""
+"Les Caitiff sont rarement joués seuls, mais ils offrent souvent des vampires de faible capacité qui peuvent compléter"
+" des cryptes pour d'autres clans. Désormais clan, ils étaient auparavant considérés comme des vampires sans clan : "
+"cela explique pourquoi ils n'ont pas du tout de carte de bibliothèque de clan."
+
+#: codex_of_the_damned/templates/best-cards/clans/caitiff.html:18
+msgid ""
+"The most played Caitiff by far, he is an easy and relatively cheap way to make vampires Anarch, and can even be used "
+"to smooth crypt rotation a bit."
+msgstr ""
+"Caitiff le plus joué de loin, il est un moyen facile et relativement bon marché de rendre des vampires Anarch, et "
+"peut même être utilisé pour lisser un peu la rotation de la crypte."
+
+#: codex_of_the_damned/templates/best-cards/clans/caitiff.html:25
+#, python-format
+msgid "Seen in %(aus)s builds, alongside %(zoe)s and %(isabel_de_leon)s, he is often included in %(weenie_aus)s decks."
+msgstr ""
+"Vu dans les decks %(aus)s, aux côtés de %(zoe)s et %(isabel_de_leon)s, il est souvent inclus dans les decks "
+"%(weenie_aus)s."
+
+#: codex_of_the_damned/templates/best-cards/clans/caitiff.html:36
+#, python-format
+msgid ""
+"Seen in %(ani)s builds, alongside %(zip)s and %(stick)s, her downside is not an issue when coupled with "
+"%(aid_from_bats)s."
+msgstr ""
+"Vue dans les decks %(ani)s, aux côtés de %(zip)s et %(stick)s, son inconvénient n'en est pas un lorsqu'elle est "
+"associée à %(aid_from_bats)s."
+
+#: codex_of_the_damned/templates/best-cards/clans/caitiff.html:47
+#, python-format
+msgid ""
+"Often seen in %(AUS)s builds, sometimes alongside %(neighbor_john)s, her downside is rarely a problem and 4 pool for "
+"superior %(AUS)s is relatively cheap."
+msgstr ""
+"Souvent vue dans les decks %(AUS)s, parfois aux côtés de %(neighbor_john)s, son inconvénient est rarement un problème"
+" et 4 d'influence pour %(AUS)s en supérieur est relativement bon marché."
+
+#: codex_of_the_damned/templates/best-cards/clans/caitiff.html:56
+msgid ""
+"Two disciplines for 1 pool is relatively cheap moreoever her group makes her an easy inclusion. She is most often "
+"seen algonside other Caitiff in very fast crypts."
+msgstr ""
+"Deux disciplines pour un point d'influence est relativement bon marché, de plus son groupe en fait une inclusion "
+"facile. Elle est le plus souvent vue aux côtés d'autres Caitiff dans des cryptes très rapides."
+
+#: codex_of_the_damned/templates/best-cards/clans/caitiff.html:64
+#, python-format
+msgid ""
+"Two disciplines for 1 pool is relatively cheap, he is often seen alongside %(antoinette_du_champ)s. Combined with "
+"other Caitiff, he can provide a very fast crypt for swarm builds."
+msgstr ""
+"Deux disciplines pour 1 d'influence est relativement bon marché, on le voit souvent aux côtés "
+"d'%(antoinette_du_champ)s. Combiné avec d'autres Caitiff, il peut fournir une crypte très rapide pour les decks "
+"essaim."
+
+#: codex_of_the_damned/templates/best-cards/clans/caitiff.html:74
+#, python-format
+msgid ""
+"The oldest Caitiff, he is often seen alongside other titled Camarilla vampires. His %(PRE)s%(obf)s disciplines "
+"combination is a nice fit for political decks and his 7 pool cost is relatively low. A frequent companion of "
+"%(victor_pelletier)s."
+msgstr ""
+"Le plus vieux Caitiff, il est souvent vu aux côtés d'autres vampires titrés de la Camarilla. Sa combinaison de "
+"disciplines %(PRE)s%(obf)s est un bon choix pour les decks politiques et son coût de 7 d'influence est plutôt bas. Un"
+" compagnon fréquent de %(victor_pelletier)s."
+
+#: codex_of_the_damned/templates/best-cards/clans/caitiff.html:84
+#, python-format
+msgid ""
+"Althouth his downside can be a real bummer, his low cost for %(dem)s makes him a possible inclusion in very fast "
+"versions of the %(weenie_dem)s archetype."
+msgstr ""
+"Bien que son inconvénient puisse être vraiment pénible, son faible coût pour %(dem)s en fait une inclusion possible "
+"dans les versions très rapides de l'archétype %(weenie_dem)s."
 
 #: codex_of_the_damned/templates/best-cards/clans/gangrel.html:91
 msgid "Girls Will Find Inner Circles"
