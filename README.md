@@ -75,19 +75,25 @@ convert -morphology Smooth Octagon:2 clan-ahrimanes.gif clan-ahrimanes.svg
 Use python and Google Translate to help with translation:
 
 ```python
+import pprint
+import re
 
 def pre(s):
-    print(re.sub(r"%\(([^\)]*)\)s", r"§X\1§", s))
+    print(re.sub(r"%\(([^\)]*)\)s", r"§KEEP\1§", s))
+
+def pre_list(it):
+    for s in it:
+        pre(s)
 
 def post(s):
-    s = pprint.pformat(re.sub(r"§X([^§]*)§", r"%(\1)s", s), width=120)
+    s = pprint.pformat(re.sub(r"§KEEP([^§]*)§", r"%(\1)s", s), width=120)
     print(
         re.sub(
             r"(^')|('$)",
             '"',
             re.sub(r"^\s*", "", s[1:-1], flags=re.MULTILINE),
             flags=re.MULTILINE
-        )
+        ).replace("\\n", "")
     )
 
 # usage:
@@ -101,4 +107,6 @@ def post(s):
 # """
 # post(t)
 #   > Copy result to the PO file and review it
+#
+# pre_list can be used for multiple blocks in a list
 ```
