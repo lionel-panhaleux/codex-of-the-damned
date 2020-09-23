@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: codex 0.X\n"
 "Report-Msgid-Bugs-To: lionel.panhaleux+codex@gmail.com\n"
-"POT-Creation-Date: 2020-09-22 19:09+0200\n"
+"POT-Creation-Date: 2020-09-23 10:57+0200\n"
 "PO-Revision-Date: 2020-07-04 08:50+0200\n"
 "Last-Translator: Lionel Panhaleux <lionel.panhaleux+codex@gmail.com>\n"
 "Language: fr\n"
@@ -86,8 +86,7 @@ msgstr "Pacte avec les Nephandi"
 msgid "Parliament of Shadows"
 msgstr "Le Parlement des Ombres"
 
-#: codex_of_the_damned/navigation.py:89 codex_of_the_damned/templates/best-cards/clans/brujah.html:39
-#: codex_of_the_damned/templates/best-cards/clans/toreador.html:8
+#: codex_of_the_damned/navigation.py:89 codex_of_the_damned/templates/best-cards/clans/toreador.html:8
 msgid "AAA"
 msgstr ""
 
@@ -148,8 +147,7 @@ msgstr ""
 msgid "Emerald Legion"
 msgstr ""
 
-#: codex_of_the_damned/navigation.py:103 codex_of_the_damned/templates/best-cards/clans/brujah.html:10
-#: codex_of_the_damned/templates/best-cards/clans/nosferatu.html:155
+#: codex_of_the_damned/navigation.py:103 codex_of_the_damned/templates/best-cards/clans/nosferatu.html:155
 msgid "Euro Brujah"
 msgstr ""
 
@@ -3953,6 +3951,87 @@ msgid ""
 msgstr ""
 "Une excellente carte de politique, à la fois défensive et offensive. Même les decks Baali sans objectif politique "
 "peuvent la jouer juste pour gêner un adversaire politique."
+
+#: codex_of_the_damned/templates/best-cards/clans/brujah.html:8
+#, python-format
+msgid ""
+"Brujah and their antitribu have some vampires with excellent abilities and good clan cards. Their "
+"%(pre)s%(pot)s%(cel)s disciplines combination give them access to excellent combat options (hindered by lack of "
+"damage prevention) and good political tricks. The most played archetype for the clan is the %(euro_brujah)s, using "
+"Brujah princes with %(dom)s. The antitribu, especially with %(armin_brenner)s, gave birth to interesting vote "
+"constructs, too."
+msgstr ""
+"Les Brujah et leurs antitribu ont des vampires avec d'excellentes aptitudes et de bonnes cartes de clan. Leur "
+"combinaison de disciplines %(pre)s%(pot)s%(cel)s leur donne accès à d'excellentes options de combat (entravées par le"
+" manque de prévention de dégâts) et à de bonnes astuces en politique. L'archétype le plus joué du clan est "
+"l'%(euro_brujah)s, qui utilise les princes Brujah ayant %(dom)s. Les antitribu, en particulier avec "
+"%(armin_brenner)s, a ont également donné naissance à des decks de vote intéressants."
+
+#: codex_of_the_damned/templates/best-cards/clans/brujah.html:25
+#, python-format
+msgid ""
+"Her Justicar title combined with %(PRE)s, %(obf)s and a good political ability makes her an excellent tool in many "
+"Camarilla vote constructs. Her access to %(FOR)s also gives her the ability to play %(forced_march)s for additional "
+"actions. She is definitely the star of the clan."
+msgstr ""
+"Son titre de Justicar combiné avec %(PRE)s, %(obf)s et une bonne aptitude politique en fait un excellent outil dans "
+"de nombreux decks de vote Camarilla. Son accès à %(FOR)s lui donne également la possibilité de jouer %(forced_march)s"
+" pour des actions supplémentaires. Elle est définitivement la star du clan."
+
+#: codex_of_the_damned/templates/best-cards/clans/brujah.html:37
+#, python-format
+msgid ""
+"Volker is one of the cheapest Prince around, and he finds its place in many Camarilla Royalty decks. Its superior "
+"%(CEL)s also makes him a good asset in other %(CEL)s decks — he founds an easy place in Toreador %(aaa)s archetype "
+"for example."
+msgstr ""
+"Volker est l'un des prince les moins chers du jeu et il trouve sa place dans de nombreux decks Camarilla Royalty. Sa "
+"%(CEL)s en supérieur fait également de lui un bon atout dans les autres decks %(CEL)s – il trouve une place facile "
+"dans l'archétype Toreador %(aaa)s par exemple."
+
+#: codex_of_the_damned/templates/best-cards/clans/brujah.html:48
+#, python-format
+msgid "With the %(OBF)s%(PRE)s disciplines, she finds her place in Inner Circle decks using these disciplines."
+msgstr "Avec les disciplines %(OBF)s%(PRE)s, elle trouve sa place dans les decks Inner Circle qui utilisent ces disciplines."
+
+#: codex_of_the_damned/templates/best-cards/clans/brujah.html:55
+msgid ""
+"As Brujah have a lot of good titled vampires among their ranks, this location often finds its place amidst them as "
+"the cornerstone of their offensive strategy. The bonus in both vote and bleed is a definitive edge."
+msgstr ""
+"Comme les Brujah ont beaucoup de bons vampires titrés dans leurs rangs, ce lieu trouve souvent sa place parmi eux en "
+"tant que pierre angulaire de leur stratégie offensive. Le bonus en vote et en morsure est un avantage certain."
+
+#: codex_of_the_damned/templates/best-cards/clans/brujah.html:64
+#, python-format
+msgid ""
+"A Prince with %(obf)s%(PRE)s and bonus stealth on political action, she makes a perfect partner for her Justicar "
+"%(dmitra_ilyanova)s, often alongside %(tara)s."
+msgstr ""
+"Prince avec %(obf)s%(PRE)s et un bonus de discrétion sur l'action politique, elle fait un partenaire idéal pour sa "
+"Justicar %(dmitra_ilyanova)s, souvent aux côtés de %(tara)s.\n"
+
+#: codex_of_the_damned/templates/best-cards/clans/brujah.html:75
+#, python-format
+msgid "A cheap vampire with superior %(CEL)s, she gets a spot in many %(CEL)s decks."
+msgstr "Un vampire bon marché avec %(CEL)s en supérieur, elle trouve une place dans de nombreux decks %(CEL)s.\n"
+
+#: codex_of_the_damned/templates/best-cards/clans/brujah.html:81
+msgid ""
+"A decent recursion helper, although getting the cards on the bottom of the library is more useful if you get to "
+"shuffle it at some point."
+msgstr ""
+"Un outil de récursion décent, bien que récupérer des cartes au talon de la bibliothèque soit plus utile si l'on "
+"parvient à la mélanger à un moment ou à un autre.\n"
+
+#: codex_of_the_damned/templates/best-cards/clans/brujah.html:88
+#, python-format
+msgid ""
+"A good voter with an excellent ability, his access to %(obf)s and %(FOR)s are very strong points as he gets to play "
+"some stealth and %(forced_march)s for additional actions."
+msgstr ""
+"Un bon voteur avec une excellente aptitude, son accès à %(obf)s et %(FOR)s sont des points très forts car il peut "
+"jouer un peu de discrétion et %(forced_march)s pour des actions supplémentaires."
 
 #: codex_of_the_damned/templates/best-cards/clans/gangrel.html:91
 msgid "Girls Will Find Inner Circles"
