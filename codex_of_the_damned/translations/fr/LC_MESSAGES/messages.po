@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: codex 0.X\n"
 "Report-Msgid-Bugs-To: lionel.panhaleux+codex@gmail.com\n"
-"POT-Creation-Date: 2020-09-25 10:31+0200\n"
+"POT-Creation-Date: 2020-09-25 10:49+0200\n"
 "PO-Revision-Date: 2020-07-04 08:50+0200\n"
 "Last-Translator: Lionel Panhaleux <lionel.panhaleux+codex@gmail.com>\n"
 "Language: fr\n"
@@ -106,7 +106,7 @@ msgstr ""
 msgid "Baltimore Purge"
 msgstr ""
 
-#: codex_of_the_damned/navigation.py:94 codex_of_the_damned/templates/best-cards/clans/followers-of-set.html:8
+#: codex_of_the_damned/navigation.py:94
 msgid "Bima Dominate"
 msgstr ""
 
@@ -444,7 +444,7 @@ msgstr ""
 msgid "Daughters of Cacophony"
 msgstr "Filles de la Cacophonie"
 
-#: codex_of_the_damned/navigation.py:183
+#: codex_of_the_damned/navigation.py:183 codex_of_the_damned/templates/best-cards/clans/followers-of-set.html:6
 msgid "Followers of Set"
 msgstr "Disciples de Seth"
 
@@ -1080,7 +1080,7 @@ msgid ""
 "2008 is another example. </p>"
 msgstr ""
 "<h2>Principe</h2> <p> C'est un deck <em>allies bleed</em> qui utilise %(bima)s avec %(dominate)s pour jouer pléthore "
-"de %(govern_the_unaligned)s et %(deflection)s. </p> <p> %(bima)s n'a pas de discrétion mais le cimple nombre "
+"de %(govern_the_unaligned)s et %(deflection)s. </p> <p> %(bima)s n'a pas de discrétion mais le simple nombre "
 "d'actions — et le fait qu'ils ont une force de 2 — rend rapidement le blocage de toutes les actions difficile pour la"
 " proie. <p> Le deck a une bonne discrétion, vu que la plupart des vampires ont %(obf)s et jouent même "
 "%(cloak_the_gathering)s et %(veil_the_legions)s, qui peuvent bénéficier aux %(bima)s. </p> <p> La plupart des "
@@ -4195,6 +4195,74 @@ msgstr ""
 "archétypes joués avec le clan. %(the_labyrinth)s et %(opium_den)s, moins chers, sont comparativement moins précieux "
 "car leur clan a déjà accès à %(obf)s."
 
+#: codex_of_the_damned/templates/best-cards/clans/followers-of-set.html:10
+#, python-format
+msgid ""
+"The Followers of Set and their unique %(ser)s discipline are devious experts of sin and stealth. They have given "
+"birth to ecclectic decks around politics and mummies but their most successful archetype is the %(bima_dominate)s, "
+"using the %(bima)s ally with %(dom)s."
+msgstr ""
+"Les Disciples de Set et leur discipline exclusive %(ser)s sont des experts sournois du péché et de la discrétion. Ils"
+" ont donné naissance à des jeux éclectiques autour de la politique et des momies, mais leur archétype le plus réussi "
+"est le %(bima_dominate)s, qui utilise l'allié %(bima)s avec %(dom)s."
+
+#: codex_of_the_damned/templates/best-cards/clans/followers-of-set.html:24
+msgid "A nice permanent stealth enhancer at a low cost, a must have for the Followers."
+msgstr "Un bon améliorateur de discrétion permanent à faible coût, incontournable pour les Disciples."
+
+#: codex_of_the_damned/templates/best-cards/clans/followers-of-set.html:30
+msgid ""
+"Pool damage without a bleed: this makes it impervious to bounces and other anti-bleed tools. 2 or 3 copies of the "
+"card to avoid a bounce on a lunge is common."
+msgstr ""
+"Des dégâts d'influence sans morsure : elle est immunisée aux rebonds et autres outils anti-morsure. 2 ou 3 "
+"exemplaires pour éviter un rebond sur une fente est courant."
+
+#: codex_of_the_damned/templates/best-cards/clans/followers-of-set.html:38
+msgid ""
+"A versatile, if tricky, card. It can even be put on one's own vampires to get two actions in a single turn from time "
+"to time. On an opponent's vampire, he will think twice before getting too low on blood."
+msgstr ""
+"Une carte polyvalente, bien que délicate. Elle peut même être appliqué à ses propres vampires pour obtenir deux "
+"actions en un seul tour de temps en temps. Sur le vampire d'un adversaire, il réfléchira à deux fois avant de perdre "
+"trop de sang."
+
+#: codex_of_the_damned/templates/best-cards/clans/followers-of-set.html:46
+msgid ""
+"This can be a serious blow to a prey if it put into play early enough. Only a few cards can change the control of a "
+"vampire permanently."
+msgstr ""
+"Elle peut être un coup dur pour une proie si elle est mise en jeu suffisamment tôt. Seules quelques cartes peuvent "
+"changer le contrôle d'un vampire de façon permanente."
+
+#: codex_of_the_damned/templates/best-cards/clans/followers-of-set.html:53
+#, python-format
+msgid ""
+"Although costly, this is a very versatile tool — enhancing bleed at %(ser)s or getting another action at %(SER)s are "
+"both excellent."
+msgstr ""
+"Bien que coûteux, il s'agit d'un outil très polyvalent – augmenter une morsure avec %(ser)s ou obtenir une autre "
+"action avec %(SER)s sont tous deux excellents."
+
+#: codex_of_the_damned/templates/best-cards/clans/followers-of-set.html:60
+msgid "A star among the Followers, his ability to get two actions in a single turn is a serious asset."
+msgstr "Star parmi les Disciples, son aptitude à réaliser deux actions en un seul tour est un sérieux atout."
+
+#: codex_of_the_damned/templates/best-cards/clans/followers-of-set.html:67
+msgid ""
+"An excellent action against allies and breed constructs, it can get rid of a minion in a single blow, and give a "
+"minion back."
+msgstr ""
+"Excellente action contre les alliés et les decks d'essaim, elle peut se débarrasser d'un serviteur en un seul coup, "
+"et récupérer un serviteur pour la peine."
+
+#: codex_of_the_damned/templates/best-cards/clans/followers-of-set.html:74
+#, python-format
+msgid "A powerful disciplines combination for just 5 pool. She can even find her place in a mono %(pre)s deck."
+msgstr ""
+"Une puissante combinaison de disciplines pour seulement 5 d'influence. Elle peut même trouver sa place dans un deck "
+"mono %(pre)s."
+
 #: codex_of_the_damned/templates/best-cards/clans/gangrel.html:91
 msgid "Girls Will Find Inner Circles"
 msgstr ""
@@ -6977,4 +7045,3 @@ msgstr ""
 "situation à trois ou cinq joueurs : si la fente fonctionne, vous revenez à un nombre pair et à une situation "
 "favorable. Si elle échoue, vous restez sur un nombre impair de joueurs en ayant mis une grande pression sur la proie."
 " En général, cela signifie que la pression va revenir en force contre vous au prochain tour de table. </p>"
-
