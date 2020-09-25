@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: codex 0.X\n"
 "Report-Msgid-Bugs-To: lionel.panhaleux+codex@gmail.com\n"
-"POT-Creation-Date: 2020-09-23 11:25+0200\n"
+"POT-Creation-Date: 2020-09-25 10:31+0200\n"
 "PO-Revision-Date: 2020-07-04 08:50+0200\n"
 "Last-Translator: Lionel Panhaleux <lionel.panhaleux+codex@gmail.com>\n"
 "Language: fr\n"
@@ -129,7 +129,7 @@ msgstr ""
 msgid "Cybelotron"
 msgstr ""
 
-#: codex_of_the_damned/navigation.py:99 codex_of_the_damned/templates/best-cards/clans/daughters-of-cacophony.html:8
+#: codex_of_the_damned/navigation.py:99
 msgid "Daughters Politics"
 msgstr ""
 
@@ -249,7 +249,7 @@ msgstr ""
 msgid "Saulot & Friends"
 msgstr ""
 
-#: codex_of_the_damned/navigation.py:124 codex_of_the_damned/templates/best-cards/clans/daughters-of-cacophony.html:9
+#: codex_of_the_damned/navigation.py:124
 msgid "Scout"
 msgstr ""
 
@@ -440,7 +440,7 @@ msgstr ""
 msgid "Caitiff"
 msgstr ""
 
-#: codex_of_the_damned/navigation.py:182
+#: codex_of_the_damned/navigation.py:182 codex_of_the_damned/templates/best-cards/clans/daughters-of-cacophony.html:6
 msgid "Daughters of Cacophony"
 msgstr "Filles de la Cacophonie"
 
@@ -886,7 +886,7 @@ msgstr ""
 #: codex_of_the_damned/templates/archetypes/nosferatu-royalty.html:35
 #: codex_of_the_damned/templates/archetypes/spirit-marionette.html:31
 #: codex_of_the_damned/templates/archetypes/ventrue-royalty.html:35
-#: codex_of_the_damned/templates/best-cards/clans/daughters-of-cacophony.html:92
+#: codex_of_the_damned/templates/best-cards/clans/daughters-of-cacophony.html:76
 #: codex_of_the_damned/templates/best-cards/clans/imbued.html:143
 #: codex_of_the_damned/templates/best-cards/clans/lasombra.html:102
 #: codex_of_the_damned/templates/best-cards/clans/tremere.html:120
@@ -4111,6 +4111,89 @@ msgid ""
 msgstr ""
 "Bien que son inconvénient puisse être vraiment pénible, son faible coût pour %(dem)s en fait une inclusion possible "
 "dans les versions très rapides de l'archétype %(weenie_dem)s."
+
+#: codex_of_the_damned/templates/best-cards/clans/daughters-of-cacophony.html:10
+#, python-format
+msgid ""
+"The Daughters of Cacophony and their unique %(mel)s discipline pack some nice surprises, especially on the political "
+"front. Two political archetypes features the clan: a pure %(daughters_politics)s and %(scout)s, a mix using "
+"%(scout_youngwood)s."
+msgstr ""
+"Les Filles de la Cacophonie et leur discipline exclusive %(mel)s offrent de belles surprises, notamment sur le plan "
+"politique. Deux archétypes politiques utilisent ce clan : un deck pur %(daughters_politics)s et %(scout)s, un mélange"
+" utilisant %(scout_youngwood)s."
+
+#: codex_of_the_damned/templates/best-cards/clans/daughters-of-cacophony.html:23
+msgid ""
+"A nice stealth modifier, it can be really helpful against multiple unlocked allies. Anyway, as no other discipline "
+"can really help the Daughters with stealth, this is useful."
+msgstr ""
+"Un bon modificateur de discrétion, il peut être très utile contre plusieurs alliés déverrouillés. Quoi qu'il en soit,"
+" comme aucune autre discipline ne peut vraiment aider les filles au niveau de la discrétion, c'est utile."
+
+#: codex_of_the_damned/templates/best-cards/clans/daughters-of-cacophony.html:31
+msgid ""
+"An unusual effect. The ability to bring damage to your opponents vampires with no combat is precious. Multiple copies"
+" are needed, but it is worth the trouble. Some decks even spam this card."
+msgstr ""
+"Un effet inhabituel. La capacité d'infliger des dégâts aux vampires adverses sans combat est précieuse. Plusieurs "
+"copies sont nécessaires, mais cela en vaut la peine. Certains decks spamment même cette carte."
+
+#: codex_of_the_damned/templates/best-cards/clans/daughters-of-cacophony.html:39
+msgid ""
+"An excellent bleed enhancer, with a block denial option for critical actions. Depending on the deck, it can come in "
+"very handy for a lunge."
+msgstr ""
+"Une excellente amélioration de morsure, avec une option de déni de bloc pour les actions critiques. En fonction du "
+"deck, cela peut être très pratique pour une fente."
+
+#: codex_of_the_damned/templates/best-cards/clans/daughters-of-cacophony.html:46
+#, python-format
+msgid ""
+"A good way to get critical actions through. Combined with %(virtuosa)s and %(the_missing_voice)s, it can build a good"
+" stealth - more of a « getting through » - module."
+msgstr ""
+"Un bon moyen de mener à bien les actions critiques. Combiné avec %(virtuosa)s et %(the_missing_voice)s, il peut "
+"construire un bon module de discrétion - ou plutôt un module un module de «passage»."
+
+#: codex_of_the_damned/templates/best-cards/clans/daughters-of-cacophony.html:57
+#, python-format
+msgid ""
+"Although only played in Vote archetypes, it is emblematic of the Daughters. An improved %(kine_resources_contested)s:"
+" 1 blood to get all 4 damages on one’s prey, plus bloat for 1 pool."
+msgstr ""
+"Bien que joué uniquement dans les archétypes vote, il est emblématique des Filles. Un %(kine_resources_contested)s "
+"amélioré : 1 sang pour 4 dégâts sur la proie, plus une régénération d'un point d'influence."
+
+#: codex_of_the_damned/templates/best-cards/clans/daughters-of-cacophony.html:67
+#, python-format
+msgid ""
+"At only 5 pool with superior %(PRE)s and %(MEL)s, she is even played in mono %(pre)s decks. Her ability to unlock "
+"another vampire is nice too."
+msgstr ""
+"À seulement 5 de capacity avec %(PRE)s et %(MEL)s en supérieur, elle est même jouée dans des decks mono %(pre)s. Sa "
+"capacité à redresser un autre vampire est aussi pratique."
+
+#: codex_of_the_damned/templates/best-cards/clans/daughters-of-cacophony.html:75
+#, python-format
+msgid ""
+"A permanent unlock option is very nice, and 2 pool is a bargain for such a bump in %(a_b)s. The burn option even "
+"ensures it does not jam one’s hand if the Daughters are not at crypt majority."
+msgstr ""
+"Une outil de redressement permanent est très utile, et 2 pool est une bonne affaire pour une telle amélioration "
+"d'%(a_b)s. L'option de défausse garantit même qu'elle ne grippe pas la main si les Filles ne sont pas en majorité "
+"dans la crypte."
+
+#: codex_of_the_damned/templates/best-cards/clans/daughters-of-cacophony.html:85
+#, python-format
+msgid ""
+"A bit pricey with its 2 pool cost, this permanent stealth location is still worth it given the archetypes played with"
+" the clan. The cheaper %(the_labyrinth)s and %(opium_den)s are comparatively less valuable as their clan already has "
+"access to %(obf)s."
+msgstr ""
+"Un peu cher avec son coût de 2 pool, ce lieu de discrétion permanente vaut tout de même le coût compte tenu des "
+"archétypes joués avec le clan. %(the_labyrinth)s et %(opium_den)s, moins chers, sont comparativement moins précieux "
+"car leur clan a déjà accès à %(obf)s."
 
 #: codex_of_the_damned/templates/best-cards/clans/gangrel.html:91
 msgid "Girls Will Find Inner Circles"

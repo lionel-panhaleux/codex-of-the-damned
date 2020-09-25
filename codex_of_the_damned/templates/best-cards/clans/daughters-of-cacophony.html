@@ -1,110 +1,95 @@
 {% extends "best-cards/_layout.html" %}
+{% import "best-cards/_layout_card_column.html" as layout with context%}
 
 {% block content %}
-<h1><img src="{{ url_for('static', filename='img/icons/clan-daughters.svg') }}"> Daughters of Cacophony</h1>
-<p>
-    The Daughters of Cacophony and their unique <i>m</i> discipline pack some nice surprises,
-    especially on the political front. Two political archetypes features the clan:
-    a pure {{ link("/archetypes/daughters-politics", _("Daughters Politics")) }} and
-    {{ link("/archetypes/scout", _("Scout")) }}, a mix using
-    {{ card("Scout Youngwood") }}.
-</p>
-<h2>Highlights</h2>
-<div class="column">
-    <div class="column-image">
-        <img src="https://images.krcg.org/missingvoicethe.jpg">
-        <h4>The Missing Voice</h4>
-        <p class="center-subtitle">played in 14 decks, typically 5-8 copies</p>
-    </div>
+<h1><img src="{{ url_for('static', filename='img/icons/clan-daughters.svg') }}">
+    {% trans trimmed %}Daughters of Cacophony{% endtrans %}
+</h1>
+<div class="tip">
     <p>
-        A nice stealth modifier, it can be really helpful against multiple unlocked allies.
-        Anyway, as no other discipline can really help the Daughters with stealth, this is useful.
+        {% trans trimmed
+        daughters_politics=link("/archetypes/daughters-politics", "Daughters Politics"),
+        scout=link("/archetypes/scout", "Scout"),
+        scout_youngwood=card("Scout Youngwood")
+    %}
+        The Daughters of Cacophony and their unique {{mel}} discipline pack some nice surprises,
+        especially on the political front. Two political archetypes features the clan:
+        a pure {{ daughters_politics }} and {{ scout }}, a mix using {{ scout_youngwood }}.
+        {% endtrans %}
     </p>
 </div>
-<div class="column">
-    <div class="column-image">
-        <img src="https://images.krcg.org/shatteringcrescendo.jpg">
-        <h4>Shattering Crescendo</h4>
-        <p class="center-subtitle">played in 12 decks, typically 5-21 copies</p>
-    </div>
-    <p>
-        An unusual effect. The ability to bring damage to your opponents vampires
-        with no combat is precious. Multiple copies are needed, but it is worth the trouble.
-        Some decks even spam this card.
-    </p>
-</div>
-<div class="column">
-    <div class="column-image">
-        <img src="https://images.krcg.org/virtuosa.jpg">
-        <h4>Virtuosa</h4>
-        <p class="center-subtitle">played in 10 decks, typically 2-4 copies</p>
-    </div>
-    <p>
-        An excellent bleed enhancer, with a block denial option for critical actions.
-        Depending on the deck, it can come in very handy for a lunge.
-    </p>
-</div>
-<div class="column">
-    <div class="column-image">
-        <img src="https://images.krcg.org/sirenslure.jpg">
-        <h4>Siren's Lure</h4>
-        <p class="center-subtitle">played in 8 decks, typically 2-6 copies</p>
-    </div>
-    <p>
-        A good way to get critical actions through. Combined with
-        {{ card("Virtuosa") }} and
-        {{ card("The Missing Voice") }},
-        it can build a good stealth - more of a « getting through » - module.
-    </p>
-</div>
-<div class="column">
-    <div class="column-image">
-        <img src="https://images.krcg.org/lilyprelude.jpg">
-        <h4>Lily Prelude</h4>
-        <p class="center-subtitle">played in 6 decks, typically 3-10 copies</p>
-    </div>
-    <p>
-        Although only played in Vote archetypes, it is emblematic of the Daughters.
-        An improved
-        {{ card("Kine Resources Contested") }}:
-        1 blood to get all 4 damages on one’s prey, plus bloat for 1 pool.
-    </p>
-</div>
-<div class="column">
-    <div class="column-image">
-        <img src="https://images.krcg.org/angelapreston.jpg">
-        <h4>Angela Preston</h4>
-        <p class="center-subtitle">played in 15 decks, typically 1-3 copies</p>
-    </div>
-    <p>
-        At only 5 pool with superior <i>R</i> and <i>M</i>, she is even played in mono <i>r</i> decks.
-        Her ability to unlock another vampire is nice too.
-    </p>
-</div>
-<div class="column">
-    <div class="column-image">
-        <img src="https://images.krcg.org/commandperformance.jpg">
-        <h4>Command Performance</h4>
-        <p class="center-subtitle">played in 14 decks, typically 1-2 copies</p>
-    </div>
-    <p>
-        A permanent unlock option is very nice, and 2 pool is a bargain for such a bump in
-        {{ link("/strategy/fundamentals", _("A&B"), _anchor="AB") }}.
-        The burn option even ensures it does not jam one’s hand if the Daughters are not at crypt majority.
-    </p>
-</div>
-<div class="column">
-    <div class="column-image">
-        <img src="https://images.krcg.org/parisoperahouse.jpg">
-        <h4>Paris Opera House</h4>
-        <p class="center-subtitle">played in 14 decks, typically 1-3 copies</p>
-    </div>
-    <p>
-        A bit pricey with its 2 pool cost, this permanent stealth location is still worth it
-        given the archetypes played with the clan. The cheaper
-        {{ card("Labyrinth") }} and
-        {{ card("Opium Den") }} are comparatively less valuable
-        as their clan already has access to <i>o</i>.
-    </p>
-</div>
+
+{% call layout.card_column("The Missing Voice", decks=14, copies="5-8") %}
+{% trans trimmed %}
+A nice stealth modifier, it can be really helpful against multiple unlocked allies.
+Anyway, as no other discipline can really help the Daughters with stealth,
+this is useful.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Shattering Crescendo", decks=12, copies="5-21") %}
+{% trans trimmed %}
+An unusual effect. The ability to bring damage to your opponents vampires
+with no combat is precious. Multiple copies are needed, but it is worth the trouble.
+Some decks even spam this card.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Virtuosa", decks=10, copies="2-4") %}
+{% trans trimmed %}
+An excellent bleed enhancer, with a block denial option for critical actions.
+Depending on the deck, it can come in very handy for a lunge.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Siren's Lure", decks=8, copies="2-6") %}
+{% trans trimmed
+    virtuosa=card("Virtuosa"),
+    the_missing_voice=card("The Missing Voice")
+%}
+A good way to get critical actions through. Combined with
+{{ virtuosa }} and {{ the_missing_voice }},
+it can build a good stealth - more of a « getting through » - module.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Lily Prelude", decks=6, copies="3-10") %}
+{% trans trimmed
+    kine_resources_contested=card("Kine Resources Contested")
+%}
+Although only played in Vote archetypes, it is emblematic of the Daughters.
+An improved {{ kine_resources_contested }}:
+1 blood to get all 4 damages on one’s prey, plus bloat for 1 pool.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Angela Preston", decks=15, copies="1-3") %}
+{% trans trimmed %}
+At only 5 pool with superior {{PRE}} and {{MEL}},
+she is even played in mono {{pre}} decks.
+Her ability to unlock another vampire is nice too.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Command Performance", decks=14, copies="1-2") %}
+{% trans trimmed
+    a_b=link("/strategy/fundamentals", _("A&B"), _anchor="AB")
+%}
+A permanent unlock option is very nice, and 2 pool is a bargain for such a bump in
+{{ a_b }}. The burn option even ensures it does not jam one’s hand if the Daughters
+are not at crypt majority.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Paris Opera House", decks=14, copies="1-3") %}
+{% trans trimmed
+    the_labyrinth=card("The Labyrinth"),
+    opium_den=card("Opium Den")
+%}
+A bit pricey with its 2 pool cost, this permanent stealth location is still worth it
+given the archetypes played with the clan. The cheaper
+{{ the_labyrinth }} and {{ opium_den }} are comparatively less valuable
+as their clan already has access to {{obf}}.
+{% endtrans %}
+{% endcall %}
 {% endblock %}
