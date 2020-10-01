@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: codex 0.X\n"
 "Report-Msgid-Bugs-To: lionel.panhaleux+codex@gmail.com\n"
-"POT-Creation-Date: 2020-09-25 10:49+0200\n"
+"POT-Creation-Date: 2020-10-01 10:39+0200\n"
 "PO-Revision-Date: 2020-07-04 08:50+0200\n"
 "Last-Translator: Lionel Panhaleux <lionel.panhaleux+codex@gmail.com>\n"
 "Language: fr\n"
@@ -240,7 +240,7 @@ msgstr ""
 msgid "Ravnos Clown Car"
 msgstr ""
 
-#: codex_of_the_damned/navigation.py:122 codex_of_the_damned/templates/best-cards/clans/gangrel.html:9
+#: codex_of_the_damned/navigation.py:122
 msgid "Renegade Assault"
 msgstr ""
 
@@ -261,7 +261,7 @@ msgstr ""
 msgid "Spirit Marionette"
 msgstr ""
 
-#: codex_of_the_damned/navigation.py:127 codex_of_the_damned/templates/best-cards/clans/gangrel.html:7
+#: codex_of_the_damned/navigation.py:127
 msgid "Stanislava"
 msgstr ""
 
@@ -4263,9 +4263,157 @@ msgstr ""
 "Une puissante combinaison de disciplines pour seulement 5 d'influence. Elle peut même trouver sa place dans un deck "
 "mono %(pre)s."
 
-#: codex_of_the_damned/templates/best-cards/clans/gangrel.html:91
-msgid "Girls Will Find Inner Circles"
+#: codex_of_the_damned/templates/best-cards/clans/gangrel.html:8
+#, python-format
+msgid ""
+"The Gangrel and their unique %(pro)s discipline are versatile and provided many different archetypes. Some of the "
+"most successful were the %(stanislava)s archetype and related Camarilla Royalty builds. Another one is "
+"%(renegade_assault)s, using %(renegade_garou)s as main minion."
 msgstr ""
+"Les Gangrel et leur discipline exclusive %(pro)s sont polyvalents et ont fourni de nombreux archétypes différents. "
+"Parmi les plus réussis, l'archétype %(stanislava)s et les decks Camarilla Royalty associés. Un autre est "
+"%(renegade_assault)s, qui utilise %(renegade_garou)s comme serviteur principal."
+
+#: codex_of_the_damned/templates/best-cards/clans/gangrel.html:22
+#, python-format
+msgid ""
+"It is considered the best <em>« combat ends »</em> card of the game. It comes at no cost at inferior %(pro)s, plus "
+"gives an unlock option at superior %(PRO)s, still at no cost."
+msgstr ""
+"Elle est considérée comme la meilleure carte de <em> « fin de combat » </em> du jeu. Gratuite en %(pro)s inférieur, "
+"elle offre une option de redressement en %(PRO)s supérieur, toujours sans coût."
+
+#: codex_of_the_damned/templates/best-cards/clans/gangrel.html:30
+#, python-format
+msgid "An excellent combination of <em>« combat ends »</em> and stealth, one of the most versatile tool of %(pro)s."
+msgstr ""
+"Une excellente combinaison de <em> « fin de combat » </em> et de discrétion, l'un des outils les plus polyvalents en "
+"%(pro)s."
+
+#: codex_of_the_damned/templates/best-cards/clans/gangrel.html:37
+#, python-format
+msgid ""
+"2 stealth at superior %(PRO)s is a strong stealth modifier, totally worth 1 blood. Combined with %(form_of_mist)s, "
+"this makes Gangrel and their antitribu almost as stealthy as any vampire with %(obf)s."
+msgstr ""
+"2 discrétion en %(PRO)s supérieure, c'est un modificateur de discrétion puissant, qui vaut bien 1 sang. Combiné avec "
+"%(form_of_mist)s, cela rend les Gangrel et leurs antitribus presque aussi furtifs qu'un vampire avec %(obf)s."
+
+#: codex_of_the_damned/templates/best-cards/clans/gangrel.html:47
+#, python-format
+msgid ""
+"The most dreaded combat card of the %(pro)s discipline, it is used <strong>after</strong> strikes have been chosen by"
+" both vampires and never wasted against a <em>dodge</em> or <em>combat ends</em>. The maneuver at superior %(PRO)s "
+"can come in handy. Finally, it works with a hand strike so %(immortal_grapple)s is useless against it."
+msgstr ""
+"La carte de combat la plus redoutée de la discipline %(pro)s, elle est utilisée <strong> après </strong> le choix des"
+" frappes par les deux vampires et donc jamais perdue contre une <em> esquive </em> ou une <em> fin du combat </em>. "
+"La manœuvre en %(PRO)s supérieure peut être utile. Enfin, il c'est une frappe à mains nues donc %(immortal_grapple)s "
+"est inutile contre elle."
+
+#: codex_of_the_damned/templates/best-cards/clans/gangrel.html:58
+#, python-format
+msgid "An excellent disciplines combination for just 4 pool, he gets even included in mono %(ani)s decks."
+msgstr ""
+"Excellente combinaison de disciplines pour seulement 4 points d'influence, il est même inclus dans les decks mono "
+"%(ani)s."
+
+#: codex_of_the_damned/templates/best-cards/clans/gangrel.html:64
+#, python-format
+msgid ""
+"A powerful tool, especially when combined with the cards that allow to act during other players turn: "
+"%(madness_network)s and %(enkil_cog)s."
+msgstr ""
+"Un outil puissant, surtout lorsqu'il est combiné avec des cartes qui permettent d'agir pendant le tour des autres "
+"joueurs : %(madness_network)s et %(enkil_cog)s."
+
+#: codex_of_the_damned/templates/best-cards/clans/gangrel.html:74
+#, python-format
+msgid ""
+"Star of the Gangrel antitribu, her ability is unique. She gave birth, alongside %(cybele)s, to the "
+"%(girls_will_find_inner_circles)s archetype."
+msgstr ""
+"Star des Gangrel antitribu, sa capacité est unique. Elle a donné naissance, aux côtés de %(cybele)s, à l'archétype "
+"%(girls_will_find_inner_circles)s."
+
+#: codex_of_the_damned/templates/best-cards/clans/gangrel.html:85
+#, python-format
+msgid ""
+"Another stealth and <em>« combat ends »</em> combination. The cost of 1 blood is a bit pricey, but it completes the "
+"stealth arsenal of %(pro)s along %(form_of_mist)s and %(earth_control)s."
+msgstr ""
+"Une autre combinaison de discrétion et de <em> « fin de combat » </em>. Le coût d'un sang est un peu cher, mais il "
+"complète l'arsenal de discrétion de %(pro)s avec %(form_of_mist)s et %(earth_control)s."
+
+#: codex_of_the_damned/templates/best-cards/clans/gangrel.html:96
+msgid "A good bloat device, generating 1 pool per turn, it can also help get vampires into play a bit faster early game."
+msgstr ""
+"Un bon outil pour régénérer, qui donne 1 d'influence par tour, il peut également aider les vampires à soritr un peu "
+"plus rapidement en début de partie."
+
+#: codex_of_the_damned/templates/best-cards/clans/gangrel.html:103
+#, python-format
+msgid "A nice discipline combination for just 5 pool, she gets a place even in mono %(ani)s decks."
+msgstr ""
+"Une belle combinaison de discipline pour seulement 5 d'influence, elle obtient une place même dans les decks mono "
+"%(ani)s."
+
+#: codex_of_the_damned/templates/best-cards/clans/gangrel.html:109
+#, python-format
+msgid ""
+"Even if it is a little bit costly, the permanent stealth effect is a good one, moreover if the deck relies on %(pro)s"
+" for stealth."
+msgstr ""
+"Même s'il est un peu coûteux, l'effet de discrétion permanent est bon, d'autant plus si le deck repose sur %(pro)s "
+"pour la discrétion."
+
+#: codex_of_the_damned/templates/best-cards/clans/gangrel.html:116
+#, python-format
+msgid ""
+"A powerful and versatile stealth / unlock combination, mostly available to Gangrel antitribu, but also to some rare "
+"vampires with access to the %(PRO)s%(CEL)s combination."
+msgstr ""
+"Une combinaison discrétion / redressement polyvalente, principalement disponible pour les Gangrel "
+"antitribu, mais aussi les rares vampires ayant accès à la combinaison %(PRO)s%(CEL)s."
+
+#: codex_of_the_damned/templates/best-cards/clans/gangrel.html:123
+#, python-format
+msgid ""
+"A star among Gangrel, the fact that she has %(dom)s and is a Prince is a nice combination. Moreover, her bonus in "
+"influence can be a very nice edge in the early game."
+msgstr ""
+"Une star parmi les Gangrel, le fait qu'elle ait %(dom)s et soit un prince est une belle combinaison. De plus, son "
+"bonus d'influence peut être un bel atout en début de partie."
+
+#: codex_of_the_damned/templates/best-cards/clans/gangrel.html:130
+#, python-format
+msgid ""
+"Star Inner Circle of the Gangrel Clan, Stanislava not only has %(DOM)s but also %(CEL)s, giving her access to "
+"%(instantaneous_transformation)s alongside %(govern_the_unaligned)s and %(deflection)s. Her ability against allies "
+"also is quite a nice advantage as many decks use them with %(the_unmasking)s for defence."
+msgstr ""
+"Cercle Intérieur Star du clan Gangrel, Stanislava a non seulement %(DOM)s mais aussi %(CEL)s, lui donnant accès à "
+"%(instantaneous_transformation)s aux côtés de %(govern_the_unaligned)s et %(deflection)s. Son aptitude contre les "
+"alliés est également un avantage appréciable car de nombreux decks les utilisent en défense avec %(the_unmasking)s."
+
+#: codex_of_the_damned/templates/best-cards/clans/gangrel.html:145
+msgid ""
+"The most dreaded Gangrel antitribu, he has such powerful disciplines and abilities for combat he is often used as the"
+" star of a rush deck."
+msgstr ""
+"Gangrel antitribu le plus redouté, il a des disciplines et des aptitudes de combat si puissantes qu'il est souvent "
+"utilisé comme star d'un deck rush."
+
+#: codex_of_the_damned/templates/best-cards/clans/gangrel.html:152
+#, python-format
+msgid ""
+"A good damage prevention card, it can handle heavy damage-dealing modules, even those using additonal strikes, with a"
+" single card. It is often played alongside %(earth_meld)s as a solution against %(pot)s combat modules using "
+"%(immortal_grapple)s."
+msgstr ""
+"Une bonne carte de prévention de dégâts, elle peut gérer des modules infligeant de lourds dégâts à elle seule, même "
+"ceux qui utilisent des frappes supplémentaires. Elle est souvent jouée aux côtés d'%(earth_meld)s comme solution "
+"contre les modules de combat %(pot)s qui utilisent %(immortal_grapple)s."
 
 #: codex_of_the_damned/templates/best-cards/clans/salubri.html:40
 msgid "an archetype of its own"
@@ -7045,3 +7193,6 @@ msgstr ""
 "situation à trois ou cinq joueurs : si la fente fonctionne, vous revenez à un nombre pair et à une situation "
 "favorable. Si elle échoue, vous restez sur un nombre impair de joueurs en ayant mis une grande pression sur la proie."
 " En général, cela signifie que la pression va revenir en force contre vous au prochain tour de table. </p>"
+
+#~ msgid "Girls Will Find Inner Circles"
+#~ msgstr ""
