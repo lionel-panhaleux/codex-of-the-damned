@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: codex 0.X\n"
 "Report-Msgid-Bugs-To: lionel.panhaleux+codex@gmail.com\n"
-"POT-Creation-Date: 2020-10-02 11:58+0200\n"
+"POT-Creation-Date: 2020-10-02 15:23+0200\n"
 "PO-Revision-Date: 2020-07-04 08:50+0200\n"
 "Last-Translator: Lionel Panhaleux <lionel.panhaleux+codex@gmail.com>\n"
 "Language: fr\n"
@@ -161,8 +161,7 @@ msgstr ""
 msgid "Goratrix High Tower"
 msgstr ""
 
-#: codex_of_the_damned/navigation.py:106 codex_of_the_damned/templates/best-cards/clans/guruhi.html:10
-#: codex_of_the_damned/templates/best-cards/clans/nosferatu.html:94
+#: codex_of_the_damned/navigation.py:106 codex_of_the_damned/templates/best-cards/clans/nosferatu.html:94
 msgid "Guruhi Rush"
 msgstr ""
 
@@ -210,8 +209,7 @@ msgstr ""
 msgid "Mistress"
 msgstr ""
 
-#: codex_of_the_damned/navigation.py:117 codex_of_the_damned/templates/best-cards/clans/guruhi.html:7
-#: codex_of_the_damned/templates/best-cards/clans/nosferatu.html:8
+#: codex_of_the_damned/navigation.py:117 codex_of_the_damned/templates/best-cards/clans/nosferatu.html:8
 #: codex_of_the_damned/templates/best-cards/sects/anarch.html:10
 msgid "Nananimalism"
 msgstr ""
@@ -4519,6 +4517,91 @@ msgid ""
 msgstr ""
 "Un moyen bon marché et efficace de ramener du sang sur les vampires. Meilleur dans les decks de faible ou moyenne "
 "capacité avec plus de Giovanni, encore mieux s'il peut être un peu défendu."
+
+#: codex_of_the_damned/templates/best-cards/clans/guruhi.html:8
+#, python-format
+msgid ""
+"The Guruhi and their unique %(ani)s%(pre)s%(pot)s disciplines combination have excellent vampires with outstanding "
+"abilities. This led to the %(nananimalism)s archetype, a weenie %(ani)s deck using %(nana_buruku)s as star, and the "
+"%(guruhi_rush)s, using %(nangila_were)s and the %(ani)s%(pot)s combination for combat."
+msgstr ""
+"Les Guruhi et leur combinaison unique de disciplines %(ani)s%(pre)s%(pot)s ont d'excellents vampires avec des "
+"capacités exceptionnelles. Cela a conduit à l'archétype %(nananimalism)s, un deck weenie %(ani)s qui utilise "
+"%(nana_buruku)s comme star, et au %(guruhi_rush)s, qui utilise %(nangila_were)s et la combinaison %(ani)s%(pot)s pour"
+" le combat."
+
+#: codex_of_the_damned/templates/best-cards/clans/guruhi.html:22
+#, python-format
+msgid ""
+"The lack of damage prevention is an issue for combat-oriented decks, but the access to %(immortal_grapple)s makes up "
+"for it. Multiple vote constructs have also been seen."
+msgstr ""
+"Le manque de prévention de dégâts est un problème pour les decks orientés combat, mais l'accès à %(immortal_grapple)s"
+" compense. Des decks de vote sont aussi parfois joués."
+
+#: codex_of_the_damned/templates/best-cards/clans/guruhi.html:33
+msgid ""
+"The absolute star of the Guruhi clan, she is often played for her rare ability to grant more Master actions. Her "
+"disciplines are often a secondary subject and she is largely played in non-Guruhi decks."
+msgstr ""
+"Star absolue du clan Guruhi, elle est souvent jouée pour sa rare aptitude à accorder une actions de Maître "
+"supplémentaire. Ses disciplines sont souvent un sujet secondaire et elle est largement jouée dans des decks non "
+"Guruhi."
+
+#: codex_of_the_damned/templates/best-cards/clans/guruhi.html:42
+#, python-format
+msgid "%(ANI)s%(POT)s for only 5 pool is a bargain. An easy inclusion in any Guruhi or Nosferatu build."
+msgstr ""
+"%(ANI)s%(POT)s pour seulement 5 pool est une bonne affaire. Une inclusion facile dans n'importe quel deck Guruhi ou "
+"Nosferatu."
+
+#: codex_of_the_damned/templates/best-cards/clans/guruhi.html:49
+#, python-format
+msgid ""
+"All clan disciplines at superior with a rush ability included. A must-have in rush decks, often played along "
+"%(nana_buruku)s."
+msgstr ""
+"Toutes les disciplines de clan en supérieur avec une aptitude de rush incluse. Un incontournable dans les decks rush,"
+" souvent jouée avec %(nana_buruku)s."
+
+#: codex_of_the_damned/templates/best-cards/clans/guruhi.html:56
+#, python-format
+msgid "A cheap price for superior %(PRE)s, he can even be included in mono %(pre)s builds."
+msgstr "Bon marché pour %(PRE)s en supérieur, il peut même être inclus dans les builds mono %(pre)s."
+
+#: codex_of_the_damned/templates/best-cards/clans/guruhi.html:62
+msgid "One of the best bloating device in the game, only available to Guruhi and difficult to play in multi-clans decks."
+msgstr ""
+"L'un des meilleurs outils de régénération du jeu, uniquement disponible pour Guruhi et difficile à jouer dans les "
+"decks multi-clans."
+
+#: codex_of_the_damned/templates/best-cards/clans/guruhi.html:69
+#, python-format
+msgid ""
+"The only vampire of the game with a bleed power of 4. Worth mentioning, even if he is often played in big capacity "
+"%(DOM)s%(OBF)s decks with no Guruhi specifics."
+msgstr ""
+"Le seul vampire du jeu avec une morsure à 4. Remarquable, même s'il est souvent joué dans les decks %(DOM)s%(OBF)s "
+"haute capacité sans spécificité Guruhi."
+
+#: codex_of_the_damned/templates/best-cards/clans/guruhi.html:77
+#, python-format
+msgid ""
+"An additional title that is unlikely to contest, it's a worthy inclusion in a political deck and a useful addition to"
+" %(nana_buruku)s or %(aren)s."
+msgstr ""
+"Un titre supplémentaire qu'il est peu probable de contester, c'est une inclusion raisonnable dans un deck politique "
+"et un ajout utile à %(nana_buruku)s ou %(aren)s."
+
+#: codex_of_the_damned/templates/best-cards/clans/guruhi.html:88
+#, python-format
+msgid ""
+"A magaji with a useful ability, her cost is a bit steep, but she finds her place in a political deck, and her %(ABO)s"
+" discipline can get her into Akunanse decks, although she is more often associated with %(eze_the_demon_prince)s."
+msgstr ""
+"Une magaji avec une aptitude utile, son coût est un peu élevé, mais elle trouve sa place dans un deck politique, et "
+"sa discipline %(ABO)s peut la faire entrer dans les decks Akunanse, bien qu'elle soit plus souvent associée à "
+"%(eze_the_demon_prince)s."
 
 #: codex_of_the_damned/templates/best-cards/clans/salubri.html:40
 msgid "an archetype of its own"
