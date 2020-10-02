@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: codex 0.X\n"
 "Report-Msgid-Bugs-To: lionel.panhaleux+codex@gmail.com\n"
-"POT-Creation-Date: 2020-10-02 15:45+0200\n"
+"POT-Creation-Date: 2020-10-02 16:50+0200\n"
 "PO-Revision-Date: 2020-07-04 08:50+0200\n"
 "Last-Translator: Lionel Panhaleux <lionel.panhaleux+codex@gmail.com>\n"
 "Language: fr\n"
@@ -164,12 +164,11 @@ msgstr ""
 msgid "Guruhi Rush"
 msgstr ""
 
-#: codex_of_the_damned/navigation.py:107 codex_of_the_damned/templates/best-cards/clans/imbued.html:9
+#: codex_of_the_damned/navigation.py:107
 msgid "Hunters"
 msgstr ""
 
-#: codex_of_the_damned/navigation.py:108 codex_of_the_damned/templates/best-cards/clans/ishtarri.html:8
-#: codex_of_the_damned/templates/best-cards/sects/laibon.html:75
+#: codex_of_the_damned/navigation.py:108 codex_of_the_damned/templates/best-cards/sects/laibon.html:75
 msgid "Ishtarri Politics"
 msgstr ""
 
@@ -460,8 +459,8 @@ msgstr ""
 msgid "Harbingers of Skulls"
 msgstr "Émissaires des Crânes"
 
-#: codex_of_the_damned/navigation.py:188 codex_of_the_damned/templates/strategy/bloat.html:158
-#: codex_of_the_damned/templates/strategy/fundamentals.html:281
+#: codex_of_the_damned/navigation.py:188 codex_of_the_damned/templates/best-cards/clans/imbued.html:6
+#: codex_of_the_damned/templates/strategy/bloat.html:158 codex_of_the_damned/templates/strategy/fundamentals.html:281
 msgid "Imbued"
 msgstr "Illuminés"
 
@@ -883,7 +882,7 @@ msgstr ""
 #: codex_of_the_damned/templates/archetypes/spirit-marionette.html:31
 #: codex_of_the_damned/templates/archetypes/ventrue-royalty.html:35
 #: codex_of_the_damned/templates/best-cards/clans/daughters-of-cacophony.html:76
-#: codex_of_the_damned/templates/best-cards/clans/imbued.html:143
+#: codex_of_the_damned/templates/best-cards/clans/imbued.html:106
 #: codex_of_the_damned/templates/best-cards/clans/lasombra.html:102
 #: codex_of_the_damned/templates/best-cards/clans/tremere.html:120
 #: codex_of_the_damned/templates/best-cards/clans/true-brujah.html:97
@@ -4679,6 +4678,233 @@ msgid ""
 msgstr ""
 "Souvent vu en compagnie de %(saulot_the_wanderer)s car ils ont tous les deux %(AUS)s%(FOR)s%(THA)s, c'est aussi un "
 "bon vampire star dans les decks Émissaires des Crânes."
+
+#: codex_of_the_damned/templates/best-cards/clans/imbued.html:10
+#, python-format
+msgid ""
+"The Imbued have a special place in the game: they are not vampires, but mortal allies. They are organised in creeds "
+"instead of clans, and have virtues instead of disciplines. Their bizarre handling and specific ruleset makes them "
+"unique, and they have given birth to their own %(hunters)s archetype."
+msgstr ""
+"Les Illuminés ont une place particulière dans le jeu : ce ne sont pas des vampires, mais des alliés mortels. Ils sont"
+" organisés en creed au lieu de clans, et ont des vertus au lieu de disciplines. Leur gestion bizarre et leurs règles "
+"spécifiques les rendent uniques et ils ont donné naissance à leur propre archétype %(hunters)s."
+
+#: codex_of_the_damned/templates/best-cards/clans/imbued.html:20
+msgid ""
+"They have a unique access to Powers (an easy inclusion as they are fetched at +1 stealth with unlock) and Convictions"
+" cards (all three played in imbued decks as they stack and have no downside)."
+msgstr ""
+"Ils ont un accès unique aux Pouvoirs (une inclusion facile car ils sont récupérés à +1 discrétion avec redressement) "
+"et aux cartes Conviction (toutes trois jouées dans des decks Illuminés car elles se superposent et n'ont aucun "
+"inconvénient)."
+
+#: codex_of_the_damned/templates/best-cards/clans/imbued.html:28
+#, python-format
+msgid ""
+"The most played <em>Conviction</em>. Usually all three <em>Conviction</em> cards are played in imbued decks, but "
+"%(beatrice)s is often added to vampire crypts for additional bleed, and all she really needs is this "
+"<em>Conviction</em> for a bit of stealth."
+msgstr ""
+"La <em>Conviction</em> la plus jouée. Habituellement, les trois cartes <em>Conviction</em> sont jouées dans les decks"
+" Illuminés, mais %(beatrice)s est souvent ajouté aux cryptes de vampires pour une morsure supplémentaire, et tout ce "
+"dont elle a vraiment besoin est cette <em>Conviction</em> pour un peu de discrétion."
+
+#: codex_of_the_damned/templates/best-cards/clans/imbued.html:37
+#, python-format
+msgid ""
+"This is usually the first <em>Conviction</em> any Imbued fetches when he comes into play, as it protects them against"
+" anti-ally actions like %(entrancement)s."
+msgstr ""
+"Il s'agit généralement de la première <em>Conviction</em> récupérée par un Illuminé quand il entre en jeu, car cela "
+"les protègent contre les actions anti-alliées comme %(entrancement)s."
+
+#: codex_of_the_damned/templates/best-cards/clans/imbued.html:44
+msgid ""
+"An excellent <em>Conviction</em> that boosts combat or bleed depending on the need. As it is a <em>Conviction</em>, "
+"it can be used every turn and come back into play during the unlock phase."
+msgstr ""
+"Une excellente <em> Conviction </em> qui booste le combat ou la morsure selon les besoins. Comme il s'agit d'une "
+"<em>Conviction</em>, elle peut être utilisée à chaque tour et revenir en jeu pendant la phase de redressement."
+
+#: codex_of_the_damned/templates/best-cards/clans/imbued.html:52
+#, python-format
+msgid ""
+"A good bleeding minion for just 3 pool, she gets included in vampire crypts to help with the bleed, as her ability "
+"makes her impractical in Imbued crypts. Helped by a %(second_sight)s for stealth, she becomes an interesting minion."
+msgstr ""
+"Bon serviteur de morsure pour seulement 3 d'influence, elle est incluse dans les cryptes de vampire pour aider avec "
+"la morsure, car sa capacité la rend impraticable dans les cryptes Illuminés. Aidée par un %(second_sight)s pour la "
+"furtivité, elle devient un serviteur intéressant."
+
+#: codex_of_the_damned/templates/best-cards/clans/imbued.html:60
+msgid ""
+"Her ability is the cornerstone of most Imbued decks. Not only can the Imbued come back from Incapacity (their version"
+" of torpor) with only two <em>Convictions</em> instead of three, they can also do so during any turn. As Imbued are "
+"fragile, this additional protection is welcome."
+msgstr ""
+"Son aptitude est la pierre angulaire de la plupart des decks Illuminés. Non seulement les Illuminés peuvent revenir "
+"d'incapacité (leur version de la torpeur) avec seulement deux <em>Convictions</em> au lieu de trois, mais ils peuvent"
+" aussi le faire à n'importe quel tour. Comme les Illuminés sont fragiles, cette protection supplémentaire est la "
+"bienvenue."
+
+#: codex_of_the_damned/templates/best-cards/clans/imbued.html:69
+msgid ""
+"A versatile out-of-turn Master. It can be used as a wake, but also as a way to bring equipment into play without "
+"being blocked. As Imbued do not get so much stealth, this is a real asset to gear them up."
+msgstr ""
+"Une carte Maître hors-tour polyvalente. Elle peut être utilisée comme un réveil, mais aussi comme un moyen de mettre "
+"en jeu de l'équipement sans être bloqué. Comme les Illuminés n'ont guère de furtivité, c'est un véritable atout pour "
+"les équiper."
+
+#: codex_of_the_damned/templates/best-cards/clans/imbued.html:78
+msgid "A decent bloating device for Imbued decks, it is included in most of them, sometimes in multiple copies."
+msgstr ""
+"Un outil de régénération décent pour les decks Illuminés, il est inclus dans la plupart d'entre eux, parfois en "
+"plusieurs exemplaires."
+
+#: codex_of_the_damned/templates/best-cards/clans/imbued.html:85
+msgid "A powerful weapon only Imbued can wield. It gets included in most Imbued decks."
+msgstr "Une arme puissante que seul Illuminés peuvent utiliser. Elle est incluse dans la plupart des decks Illuminés."
+
+#: codex_of_the_damned/templates/best-cards/clans/imbued.html:91
+msgid "His virtues are useful and his ability is an excellent bloat device, so he gets included in many Imbued decks."
+msgstr ""
+"Ses vertus sont utiles et son aptitude est un excellent outil de régénération, il est donc inclus dans de nombreux "
+"decks Illuminés."
+
+#: codex_of_the_damned/templates/best-cards/clans/imbued.html:98
+msgid "Good virtues for a decent price, his ability is also quite nice as it deters rush actions against him."
+msgstr ""
+"De bonnes vertus pour un prix décent, son aptitude est également assez intéressante car elle dissuade les rush à son "
+"encontre."
+
+#: codex_of_the_damned/templates/best-cards/clans/imbued.html:106
+#, python-format
+msgid ""
+"Jewel of the <em>Justice</em> virtue, the combination of <em>drive</em> and <em>wake</em> effects makes for a very "
+"nice bonus in %(a_b)s."
+msgstr ""
+"Joyau de la vertu <em>Justice</em>, la combinaison des effets <em>drive</em> et <em>wake</em> fait un très beau bonus"
+" d'%(a_b)s."
+
+#: codex_of_the_damned/templates/best-cards/clans/imbued.html:114
+msgid "Excellent virtues with a good combat ability, he gets included in most Imbued decks."
+msgstr "Excellentes vertus avec une bonne aptitude de combat, il est inclus dans la plupart des decks Illuminé."
+
+#: codex_of_the_damned/templates/best-cards/clans/imbued.html:120
+#, python-format
+msgid ""
+"Second excellent <em>Justice</em> power after %(vigilance)s, it explains why the <em>Justice</em> virtue is the most "
+"played among Imbued. Combined with %(the_unmasking)s, it transforms the Imbued in excellent blockers."
+msgstr ""
+"Deuxième excellent pouvoir de <em>Justice</em> après %(vigilance)s, il explique pourquoi la vertu de <em>Justice</em>"
+" est la plus jouée parmi les Illuminés. Combiné avec %(the_unmasking)s, il transforme les Illuminés en d'excellents "
+"bloqueurs."
+
+#: codex_of_the_damned/templates/best-cards/clans/imbued.html:131
+msgid ""
+"This regeneration ability makes any Imbued with the <em>Defense</em> virtue quite sturdy. As Imbued can not hunt, "
+"this is one of the few ways they can get some life back."
+msgstr ""
+"Cette aptitude de régénération rend tout Illuminé ayant la vertu de <em>Défense</em> assez robuste. Comme un Illuminé"
+" ne peut pas chasser, c'est l'une des rares façons de leur rendre de la vie."
+
+#: codex_of_the_damned/templates/best-cards/clans/imbued.html:138
+#, python-format
+msgid ""
+"The only bounce Imbued can use against bleeds, it is easy to include as %(jennie)s has the <em>Visionary</em> virtue."
+" It can also be used to cancel an action on the prey side, so it is very versatile."
+msgstr ""
+"Le seul rebond que les Illuminés peuvent utiliser contre les morsures, il est facile à inclure car %(jennie)s a la "
+"vertu <em>Visionnaire</em>. Il peut également être utilisé pour annuler une action du côté de la proie, il est donc "
+"très polyvalent."
+
+#: codex_of_the_damned/templates/best-cards/clans/imbued.html:146
+msgid ""
+"Another good <em>Defense</em> power, as it can be used to \"block\" bleeds without even needing intercept. The "
+"<em>Conviction</em> cost is a bit high, but the threat of it alone can slow down an aggressive predator."
+msgstr ""
+"Un autre bon pouvoir de <em>Défense</em>, car il peut être utilisé pour \"bloquer\" les morsures sans même avoir "
+"besoin d'interception. Le coût de la <em>Conviction</em> est un peu élevé, mais sa seule menace peut ralentir un "
+"prédateur agressif."
+
+#: codex_of_the_damned/templates/best-cards/clans/ishtarri.html:8
+#, python-format
+msgid ""
+"The Ishtarri and their %(for)s%(cel)s%(pre)s disciplines combination have excellent titled vampires, so they've been "
+"included in political archetypes, as well as landed an archetype of their own: %(ishtarri_politics)s. The "
+"%(for)s%(cel)s combination let them use %(forced_march)s, one of the best combo cards out there."
+msgstr ""
+"Les Ishtarri et leur combinaison de disciplines %(for)s%(cel)s%(pre)s ont d'excellents vampires titrés, ils ont donc "
+"été inclus dans des archétypes politiques, mais ont aussi leur propre archétype : %(ishtarri_politics)s. La "
+"combinaison %(for)s%(cel)s leur permet d'utiliser %(forced_march)s, l'une des meilleures cartes combo disponibles."
+
+#: codex_of_the_damned/templates/best-cards/clans/ishtarri.html:22
+#, python-format
+msgid ""
+"With its magaji title and unique ability to fetch cards from the ash heap, he has been included not only in Ishtarri "
+"decks, but also as a secondary vampire in %(pre)s%(obf)s vote constructs."
+msgstr ""
+"Avec son titre de magaji et son aptitude unique à récupérer des cartes du tas de cendres, il a été inclus non "
+"seulement dans les decks Ishtarri, mais aussi en tant que vampire secondaire dans les decks de vote %(pre)s%(obf)s."
+
+#: codex_of_the_damned/templates/best-cards/clans/ishtarri.html:30
+#, python-format
+msgid ""
+"A magaji for only 7 pool, with an inferior %(for)s sufficient for %(forced_march)s and an additional %(obf)s that can"
+" be used in many constructs. Alongside %(undele)s and %(ayo_igoli)s, she makes for a nice crypt."
+msgstr ""
+"Une magaji pour seulement 7 d'influence, avec %(for)s en inférieur qui suffit pour %(forced_march)s et %(obf)s par "
+"dessus, elle peut être utilisée dans de nombreux decks. Aux côtés d'%(undele)s et %(ayo_igoli)s, elle forme une belle"
+" crypte."
+
+#: codex_of_the_damned/templates/best-cards/clans/ishtarri.html:42
+msgid ""
+"An excellent stealth enhancer, although only usable on the first action, it is very valuable since the clan as few "
+"other stealth alternatives."
+msgstr ""
+"Un excellent améliorateur de discrétion, bien qu'utilisable uniquement sur la première action, il est très précieux "
+"étant donné que le clan a peu d'alternatives de discrétion."
+
+#: codex_of_the_damned/templates/best-cards/clans/ishtarri.html:49
+#, python-format
+msgid ""
+"A good title unlikely to be contested, it is a worthy inclusion in a political deck, and an excellent addition for "
+"%(ayo_igoli)s."
+msgstr ""
+"Un bon titre peu susceptible d'être contesté, mérite l'inclusion dans un deck politique, et un excellent ajout pour "
+"%(ayo_igoli)s."
+
+#: codex_of_the_damned/templates/best-cards/clans/ishtarri.html:56
+#, python-format
+msgid "An excellent ability alongside %(PRE)s for a cheap 5 pool. She finds her place even in mono %(pre)s decks."
+msgstr ""
+"Une excellente aptitude aux côtés de %(PRE)s pour un coût faible de 5. Elle trouve sa place même dans les decks mono "
+"%(pre)s."
+
+#: codex_of_the_damned/templates/best-cards/clans/ishtarri.html:63
+msgid ""
+"Another source of additional actions for Ishtarri, always welcome. It is a little bit fragile so it is more playable "
+"if the deck has at least some intercept capacities. But even making an opponent waste an action to take it out may be"
+" good enough."
+msgstr ""
+"Une autre source d'actions supplémentaires pour les Ishtarri, toujours la bienvenue. Il est un peu fragile donc plus "
+"jouable si le deck a les moyens d'intercepter un peu. Mais le fait de faire perdre une action à un adversaire pour la"
+" retirer peut être suffisant."
+
+#: codex_of_the_damned/templates/best-cards/clans/ishtarri.html:72
+#, python-format
+msgid ""
+"Yet another Ishtarri with %(obf)s, she is an excellent complement to a political crypt. Her capacity and ability "
+"makes her an ideal candidate for the Kholo title using %(ishtarri_kholo)s."
+msgstr ""
+"Encore une autre Ishtarri avec %(obf)s, elle est un excellent complément à une crypte politique. Son aptitude et sa "
+"capacité en font une candidate idéale pour le titre de Kholo en utilisant %(ishtarri_kholo)s."
+
+#: codex_of_the_damned/templates/best-cards/clans/ishtarri.html:80
+msgid "All clan disciplines at inferior for 4 pool, a decent side-kick."
+msgstr "Toutes les disciplines de clan en inférieur pour 4 d'influence, une acolyte décente."
 
 #: codex_of_the_damned/templates/best-cards/clans/salubri.html:40
 msgid "an archetype of its own"
