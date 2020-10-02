@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: codex 0.X\n"
 "Report-Msgid-Bugs-To: lionel.panhaleux+codex@gmail.com\n"
-"POT-Creation-Date: 2020-10-02 15:23+0200\n"
+"POT-Creation-Date: 2020-10-02 15:45+0200\n"
 "PO-Revision-Date: 2020-07-04 08:50+0200\n"
 "Last-Translator: Lionel Panhaleux <lionel.panhaleux+codex@gmail.com>\n"
 "Language: fr\n"
@@ -142,8 +142,7 @@ msgstr ""
 msgid "Dmitri's Big Band"
 msgstr ""
 
-#: codex_of_the_damned/navigation.py:102 codex_of_the_damned/templates/best-cards/clans/harbingers-of-skulls.html:12
-#: codex_of_the_damned/templates/best-cards/clans/harbingers-of-skulls.html:34
+#: codex_of_the_damned/navigation.py:102
 msgid "Emerald Legion"
 msgstr ""
 
@@ -457,7 +456,7 @@ msgstr ""
 msgid "Guruhi"
 msgstr ""
 
-#: codex_of_the_damned/navigation.py:187
+#: codex_of_the_damned/navigation.py:187 codex_of_the_damned/templates/best-cards/clans/harbingers-of-skulls.html:6
 msgid "Harbingers of Skulls"
 msgstr "Émissaires des Crânes"
 
@@ -4602,6 +4601,84 @@ msgstr ""
 "Une magaji avec une aptitude utile, son coût est un peu élevé, mais elle trouve sa place dans un deck politique, et "
 "sa discipline %(ABO)s peut la faire entrer dans les decks Akunanse, bien qu'elle soit plus souvent associée à "
 "%(eze_the_demon_prince)s."
+
+#: codex_of_the_damned/templates/best-cards/clans/harbingers-of-skulls.html:13
+msgid "Lost Kindred expansion"
+msgstr "extension Lost Kindred"
+
+#: codex_of_the_damned/templates/best-cards/clans/harbingers-of-skulls.html:10
+#, python-format
+msgid ""
+"The Harbingers of Skulls have excellent vampires with outstanding abilities. They grew increasingly popular since the"
+" release of the %(lost_kindred_expansion)s in 2018, and the apparition of the excellent %(emerald_legionnaire)s, "
+"giving birth to the %(emerald_legion)s archetype."
+msgstr ""
+"Les Émissaires des Crânes ont d'excellents vampires aux capacités extraordinaires. Ils sont devenus de plus en plus "
+"populaires depuis la sortie de l'%(lost_kindred_expansion)s en 2018, et l'apparition de l'excellent "
+"%(emerald_legionnaire)s, donnant naissance à l'archétype %(emerald_legion)s."
+
+#: codex_of_the_damned/templates/best-cards/clans/harbingers-of-skulls.html:27
+#, python-format
+msgid ""
+"A cheap cost for the %(AUS)s%(FOR)s combination – he even gets included in Ventrue antitribu %(img_clan_ventre_anti)s"
+" decks."
+msgstr ""
+"Bon marché pour la combinaison %(AUS)s%(FOR)s – il est même inclus dans les decks Ventrue antitribu "
+"%(img_clan_ventre_anti)s."
+
+#: codex_of_the_damned/templates/best-cards/clans/harbingers-of-skulls.html:36
+#, python-format
+msgid ""
+"A good ally with an excellent ability that let him come back into play for free. The %(emerald_legion)s archetype is "
+"built around him."
+msgstr ""
+"Un bon allié avec une excellente aptitude qui lui permet de revenir en jeu gratuitement. L'archétype "
+"%(emerald_legion)s est construit autour de lui."
+
+#: codex_of_the_damned/templates/best-cards/clans/harbingers-of-skulls.html:43
+#, python-format
+msgid ""
+"All clan disciplines %(NEC)s%(AUS)s%(FOR)s at superior for a decent 7 pool, his ability is useful for card rotation, "
+"but also as a way to get more cards in the ash heap to pay for the %(emerald_legionnaire)s."
+msgstr ""
+"Toutes les disciplines de clan %(NEC)s%(AUS)s%(FOR)s en supérieur pour un coût raisonnable de 7, son aptitude est "
+"utile pour la rotation des cartes, mais aussi comme moyen d'obtenir plus de cartes dans le tas de cendres pour payer "
+"les %(emerald_legionnaire)s."
+
+#: codex_of_the_damned/templates/best-cards/clans/harbingers-of-skulls.html:52
+msgid "A decent disciplines combination and a great ability for cards rotation."
+msgstr "Une combinaison de disciplines décente et une belle aptitude de rotation de cartes."
+
+#: codex_of_the_damned/templates/best-cards/clans/harbingers-of-skulls.html:58
+#, python-format
+msgid ""
+"A good disciplines combination, and her ability has a nice synergy with %(trochomancy)s and "
+"%(inevitability_of_the_void)s."
+msgstr ""
+"Une bonne combinaison de disciplines, et son aptitude a une belle synergie avec %(trochomancy)s et "
+"%(inevitability_of_the_void)s."
+
+#: codex_of_the_damned/templates/best-cards/clans/harbingers-of-skulls.html:68
+msgid "Only 1 pool for permanent stealth, this is a bargain."
+msgstr "Seulement 1 point d'influence pour de la discrétion permanente, c'est une bonne affaire."
+
+#: codex_of_the_damned/templates/best-cards/clans/harbingers-of-skulls.html:74
+#, python-format
+msgid ""
+"All clan disciplines at superior %(NEC)s%(AUS)s%(FOR)s, combined with a nice ability that let him recruit "
+"%(emerald_legionnaire)s at a discount."
+msgstr ""
+"Toutes les disciplines de clan en supérieur %(NEC)s%(AUS)s%(FOR)s, combinées à une belle aptitude qui lui permet de "
+"recruter des %(emerald_legionnaire)s au rabais."
+
+#: codex_of_the_damned/templates/best-cards/clans/harbingers-of-skulls.html:82
+#, python-format
+msgid ""
+"Often seen in company with %(saulot_the_wanderer)s as they both have %(AUS)s%(FOR)s%(THA)s, he is also a good star "
+"vampire in Harbingers of Skulls decks."
+msgstr ""
+"Souvent vu en compagnie de %(saulot_the_wanderer)s car ils ont tous les deux %(AUS)s%(FOR)s%(THA)s, c'est aussi un "
+"bon vampire star dans les decks Émissaires des Crânes."
 
 #: codex_of_the_damned/templates/best-cards/clans/salubri.html:40
 msgid "an archetype of its own"
