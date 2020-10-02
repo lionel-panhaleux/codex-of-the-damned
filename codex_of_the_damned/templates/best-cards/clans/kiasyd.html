@@ -1,150 +1,111 @@
 {% extends "best-cards/_layout.html" %}
+{% import "best-cards/_layout_card_column.html" as layout with context%}
 
 {% block content %}
 <h1><img src="{{ url_for('static', filename='img/icons/clan-kiasyd.svg') }}"> Kiasyd</h1>
-<p>
-    The Kiasyd and their unique <i>x</i> discipline are quite close to the Lasombra,
-    so they've been included in <em>Lasombra</em> deck as additional vampires, but also led to an archetype
-    of their own, the
-    {{ link("/archetypes/kiasyd-stealth-bleed", _("Kiasyd Stealth & Bleed")) }}.
-    Compared to the Lasombra, <i>x</i> provides more bleed and stealth options
-    and less combat options than <i>p</i>.
-</p>
-<h2>Highlights</h2>
-<div class="column">
-    <div class="column-image">
-        <img src="https://images.krcg.org/damehollerton.jpg">
-        <h4>Dame Hollerton</h4>
-        <p class="center-subtitle">played in 70 decks, typically 1-2 copies</p>
-    </div>
+<div class="tip">
     <p>
-        A solid <i>£D</i> combination for just 5 pool, she is even often included in
-        Lasombra <img src="{{ url_for('static', filename='img/icons/clan-lasombra.svg') }}"> decks.
+        {% trans trimmed 
+            kiasyd_stealth_bleed=link("/archetypes/kiasyd-stealth-bleed", "Kiasyd Stealth & Bleed")
+        %}
+        The Kiasyd and their unique {{ myt }} discipline are quite close to the Lasombra,
+        so they've been included in <em>Lasombra</em> deck as additional vampires,
+        but also led to an archetype of their own, the {{ kiasyd_stealth_bleed }}.
+        Compared to the Lasombra, {{ myt }} provides more bleed and stealth options
+        and less combat options than {{ pot }}.
+        {% endtrans %}
     </p>
 </div>
-<div class="column">
-    <div class="column-image">
-        <img src="https://images.krcg.org/isanwayen.jpg">
-        <h4>Isanwayen</h4>
-        <p class="center-subtitle">played in 50 decks, typically 1-3 copies</p>
-    </div>
-    <p>
-        All clan disciplines at superior <i>£DX</i> for just 6 pool, he also has a rare ability that can
-        provide
-        an additional Master action. He sometimes get included in decks for this ability alone.
-    </p>
-</div>
-<div class="column">
-    <div class="column-image">
-        <img src="https://images.krcg.org/stonetravel.jpg">
-        <h4>Stone Travel</h4>
-        <p class="center-subtitle">played in 45 decks, typically 2-6 copies</p>
-    </div>
-    <p>
-        It is included in most Kiasyd decks and even in Lasombra + Kiasyd mixes as it can also be used at
-        <i>$</i>.
-        Additional stealth from <i>x</i> is one of the main point of using Kiasyd instead of Lasombra.
-    </p>
-</div>
-<div class="column">
-    <div class="column-image">
-        <img src="https://images.krcg.org/greatsymposium.jpg">
-        <h4>Great Symposium</h4>
-        <p class="center-subtitle">played in 37 decks, typically 1 copy</p>
-    </div>
-    <p>
-        Often included when playing four or more Kiasyds in the crypt — it has no burn option and can jam
-        the hand
-        if no Kiasyd is out yet. This is a 3 pool bloat, a high value for a Master card.
-    </p>
-</div>
-<div class="column">
-    <div class="column-image">
-        <img src="https://images.krcg.org/pherydima.jpg">
-        <h4>Pherydima</h4>
-        <p class="center-subtitle">played in 31 decks, typically 1-3 copies</p>
-    </div>
-    <p>
-        A good disciplines combination at a reasonable price — she is often included in Kiasyd only crypts.
-    </p>
-</div>
-<div class="column">
-    <div class="column-image">
-        <img src="https://images.krcg.org/auraabsorption.jpg">
-        <h4>Aura Absorption</h4>
-        <p class="center-subtitle">played in 33 decks, typically 2-6 copies</p>
-    </div>
-    <p>
-        The intercept feature can come in handy in some cases,
-        but this card is mostly used for yet another source of stealth
-    </p>
-</div>
-<div class="column">
-    <div class="column-image">
-        <img src="https://images.krcg.org/faecontortion.jpg">
-        <h4>Fae Contortion</h4>
-        <p class="center-subtitle">played in 32 decks, typically 3-7 copies</p>
-    </div>
-    <p>
-        Yet another stealth source, with a combat option that can come in handy in certain constructs.
-        The ability to cancel an {{ card("Immortal Grapple") }}
-        can save a vampire, even if it is not the main point of the card.
-    </p>
-</div>
-<div class="column">
-    <div class="column-image">
-        <img src="https://images.krcg.org/ommeenberbenight.jpg">
-        <h4>Omme Enberbenight</h4>
-        <p class="center-subtitle">played in 29 decks, typically 1-3 copies</p>
-    </div>
-    <p>
-        Good disciplines combination and an excellent ability in pure Kiasyd crypts, for a very
-        reasonnable 7 pool.
-    </p>
-</div>
-<div class="column">
-    <div class="column-image">
-        <img src="https://images.krcg.org/roderickphillipsmarch.jpg">
-        <h4>Roderick Phillips March</h4>
-        <p class="center-subtitle">played in 29 decks, typically 1-2 copies</p>
-    </div>
-    <p>
-        A good disciplines combination for pure Kiasyd crypts, although his ability is rarely used.
-    </p>
-</div>
-<div class="column">
-    <div class="column-image">
-        <img src="https://images.krcg.org/arcadianthe.jpg">
-        <h4>The Arcadian</h4>
-        <p class="center-subtitle">played in 27 decks, typically 1-3 copies</p>
-    </div>
-    <p>
-        Although a bit expensive with his 8 pool cost, he has all clan disciplines at superior and
-        an excellent ability that let him deliver deadlier bleeds to the prey.
-    </p>
-</div>
-<div class="column">
-    <div class="column-image">
-        <img src="https://images.krcg.org/gremlins.jpg">
-        <h4>Gremlins</h4>
-        <p class="center-subtitle">played in 25 decks, typically 1-6 copies</p>
-    </div>
-    <p>
-        Not used in all Kiasyd constructs, as <i>d</i> gives access to better bleed actions,
-        its +1 stealth bonus can still be the cornerstone of a stealth & bleed strategy.
-        Combined with {{ card("Bonding") }}, it results in a solid
-        3 bleed and 2 stealth action.
-    </p>
-</div>
-<div class="column">
-    <div class="column-image">
-        <img src="https://images.krcg.org/songofpan.jpg">
-        <h4>Song of Pan</h4>
-        <p class="center-subtitle">played in 25 decks, typically 2-4 copies</p>
-    </div>
-    <p>
-        A nice boost for a lunge move, it is a classic inclusion for pure Kiasyd decks.
-        Again, the lack of a burn option makes it difficult to include in mixed Lasombra decks.
-    </p>
-</div>
+
+{% call layout.card_column("Dame Hollerton", decks=70, copies="1-2") %}
+{% trans trimmed 
+    img_clan_lasombra='<img src="%(url)s" />'|format(url=url_for('static', filename='img/icons/clan-lasombra.svg'))|safe
+%}
+A solid {{ OBT }}{{ DOM }} combination for just 5 pool, she is included in
+Lasombra {{ img_clan_lasombra }} as well as Kiasyd decks.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Isanwayen", decks=50, copies="1-3") %}
+{% trans trimmed %}
+All clan disciplines at superior {{ OBF }}{{ DOM }}{{ MYT }} for just 6 pool,
+he also has a rare ability that can provide an additional Master action.
+He sometimes get included in decks for this ability alone.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Stone Travel", decks=45, copies="2-6") %}
+{% trans trimmed %}
+It is included in most Kiasyd decks and even in Lasombra-Kiasyd mixes
+as it can also be used at {{ obt }}. Additional stealth from {{ myt }}
+is one of the main points of using Kiasyd instead of Lasombra.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Great Symposium", decks=37, copies="1") %}
+{% trans trimmed %}
+Often included when playing four or more Kiasyds in the crypt –
+it has no burn option and can jam the hand if no Kiasyd is out yet.
+This is a 3 pool bloat, a high value for a Master card.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Pherydima", decks=31, copies="1-3") %}
+{% trans trimmed %}
+A good disciplines combination at a reasonable price —
+she is often included in pure Kiasyd crypts.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Aura Absorption", decks=33, copies="2-6") %}
+{% trans trimmed %}
+The intercept feature can come in handy in some cases,
+but this card is mostly used for yet another source of stealth
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Fae Contortion", decks=32, copies="3-7") %}
+{% trans trimmed immortal_grapple=card("Immortal Grapple")%}
+Yet another stealth source, with a combat option that can come in handy.
+The ability to cancel an {{ immortal_grapple }} can save a vampire,
+even if it is not the main point of the card.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Omme Enberbenight", decks=29, copies="1-3") %}
+{% trans trimmed %}
+Good disciplines combination and an excellent ability in pure Kiasyd crypts,
+for a very reasonnable 7 pool.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Roderick Phillips March", decks=29, copies="1-2") %}
+{% trans trimmed %}
+A good disciplines combination for pure Kiasyd crypts,
+although his ability is rarely used.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("The Arcadian", decks=27, copies="1-3") %}
+{% trans trimmed %}
+Although a bit expensive with his 8 pool cost, he has all clan disciplines at superior
+and an excellent ability that let him deliver deadlier bleeds to the prey.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Gremlins", decks=25, copies="1-6") %}
+{% trans trimmed bonding=card("Bonding") %}
+Not used in all Kiasyd constructs, as {{ dom }} gives access to better bleed actions,
+its +1 stealth bonus can still be the cornerstone of a stealth & bleed strategy.
+Combined with {{ bonding }}, it results in a solid 3 bleed and 2 stealth action.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Song of Pan", decks=25, copies="2-4") %}
+{% trans trimmed %}
+A nice boost for a lunge move, it is a classic inclusion for pure Kiasyd decks.
+Again, the lack of a burn option makes it difficult to include in mixed Lasombra decks.
+{% endtrans %}
+{% endcall %}
+
 {% endblock %}
