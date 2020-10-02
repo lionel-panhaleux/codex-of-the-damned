@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: codex 0.X\n"
 "Report-Msgid-Bugs-To: lionel.panhaleux+codex@gmail.com\n"
-"POT-Creation-Date: 2020-10-01 10:39+0200\n"
+"POT-Creation-Date: 2020-10-02 11:58+0200\n"
 "PO-Revision-Date: 2020-07-04 08:50+0200\n"
 "Last-Translator: Lionel Panhaleux <lionel.panhaleux+codex@gmail.com>\n"
 "Language: fr\n"
@@ -179,8 +179,7 @@ msgstr ""
 msgid "Jost Powerbleed"
 msgstr ""
 
-#: codex_of_the_damned/navigation.py:110 codex_of_the_damned/templates/best-cards/clans/giovanni.html:8
-#: codex_of_the_damned/templates/best-cards/sects/anarch.html:121
+#: codex_of_the_damned/navigation.py:110 codex_of_the_damned/templates/best-cards/sects/anarch.html:121
 msgid "Khazar's Diary"
 msgstr ""
 
@@ -253,7 +252,7 @@ msgstr ""
 msgid "Scout"
 msgstr ""
 
-#: codex_of_the_damned/navigation.py:125 codex_of_the_damned/templates/best-cards/clans/giovanni.html:10
+#: codex_of_the_damned/navigation.py:125
 msgid "Shambling Hordes"
 msgstr ""
 
@@ -4373,8 +4372,8 @@ msgid ""
 "A powerful and versatile stealth / unlock combination, mostly available to Gangrel antitribu, but also to some rare "
 "vampires with access to the %(PRO)s%(CEL)s combination."
 msgstr ""
-"Une combinaison discrétion / redressement polyvalente, principalement disponible pour les Gangrel "
-"antitribu, mais aussi les rares vampires ayant accès à la combinaison %(PRO)s%(CEL)s."
+"Une combinaison discrétion / redressement polyvalente, principalement disponible pour les Gangrel antitribu, mais "
+"aussi les rares vampires ayant accès à la combinaison %(PRO)s%(CEL)s."
 
 #: codex_of_the_damned/templates/best-cards/clans/gangrel.html:123
 #, python-format
@@ -4414,6 +4413,112 @@ msgstr ""
 "Une bonne carte de prévention de dégâts, elle peut gérer des modules infligeant de lourds dégâts à elle seule, même "
 "ceux qui utilisent des frappes supplémentaires. Elle est souvent jouée aux côtés d'%(earth_meld)s comme solution "
 "contre les modules de combat %(pot)s qui utilisent %(immortal_grapple)s."
+
+#: codex_of_the_damned/templates/best-cards/clans/giovanni.html:8
+#, python-format
+msgid ""
+"The Giovanni and their rare %(nec)s discipline, combined with the fact that they have %(dom)s as a clan discipline, "
+"come up with two original allies archetypes: the %(khazar_s_diary_arch)s, centered on allies and %(khazar_s_diary)s, "
+"and %(shambling_hordes_arch)s, an allies archetype using %(shambling_hordes)s. Due to nature of these archetypes and "
+"usefulness of %(dom)s, Giovanni vampires popularity is skewed towards lower capacitiess."
+msgstr ""
+"Les Giovanni et leur rare discipline %(nec)s, combiné au fait qu'ils ont %(dom)s comme discipline de clan, proposent "
+"deux archétypes alliés : le %(khazar_s_diary_arch)s, centré sur les alliés et %(khazar_s_diary)s, et "
+"%(shambling_hordes_arch)s , un archétype allié qui utilise %(shambling_hordes)s. En raison de la nature de ces "
+"archétypes et de l'utilité de %(dom)s, la popularité des vampires Giovanni est biaisée vers des capacités basses."
+
+#: codex_of_the_damned/templates/best-cards/clans/giovanni.html:23
+#, python-format
+msgid ""
+"Some <em>powerbleed</em> constructs have been seen, too. The combination of %(call_of_the_hungry_dead)s and "
+"%(seduction)s is strong, and %(guillaume_giovanni)s gave birth to interesting deck lists, though all quite different."
+msgstr ""
+"Des decks <em>powerbleed</em> émergent aussi parfois. La combinaison de %(call_of_the_hungry_dead)s et %(seduction)s "
+"est forte, et %(guillaume_giovanni)s a donné naissance à des listes intéressantes, bien que toutes assez différentes."
+
+#: codex_of_the_damned/templates/best-cards/clans/giovanni.html:37
+msgid ""
+"The most played Giovanni card. Its rare recursion ability enables the Giovanni players to adapt their hand to the "
+"table context, which is a nice advantage."
+msgstr ""
+"La carte Giovanni la plus jouée. Son pouvoir de récursivité permet aux joueurs Giovanni d'adapter leur main au "
+"contexte de la table, ce qui est un bel avantage."
+
+#: codex_of_the_damned/templates/best-cards/clans/giovanni.html:44
+#, python-format
+msgid "%(dom)s and %(nec)s for only 3 pool: a bargain. She can even find her place in mono %(dom)s decks."
+msgstr ""
+"%(dom)s et %(nec)s pour seulement 3 d'influence : une bonne affaire. Elle peut même trouver sa place dans les decks "
+"mono %(dom)s."
+
+#: codex_of_the_damned/templates/best-cards/clans/giovanni.html:51
+#, python-format
+msgid "Superior %(DOM)s and %(nec)s for only 4 pool: another bargain. She finds an easy place in mono %(dom)s builds."
+msgstr ""
+"%(DOM)s supérieur et %(nec)s pour seulement 4 d'influence : une autre affaire. Elle trouve une place facile dans les "
+"decks mono %(dom)s."
+
+#: codex_of_the_damned/templates/best-cards/clans/giovanni.html:58
+#, python-format
+msgid ""
+"Superior %(DOM)s%(NEC)s for only 5 pool, it is often the perfect disciplines combination for Giovanni decks, so "
+"Isabel is often played in multiple copies."
+msgstr ""
+"%(DOM)s%(NEC)s en supérieur pour seulement 5 d'influence, c'est souvent la combinaison de disciplines parfaite pour "
+"les decks Giovanni, donc Isabel est souvent jouée en plusieurs exemplaires."
+
+#: codex_of_the_damned/templates/best-cards/clans/giovanni.html:66
+msgid "Played in many Giovanni decks, even when they are not centred on allies, he is very resilient and can be good defence."
+msgstr ""
+"Joué dans de nombreux decks Giovanni, même lorsqu'ils ne sont pas centrés sur les alliés, il est très résistant et "
+"peut être une bonne défense."
+
+#: codex_of_the_damned/templates/best-cards/clans/giovanni.html:73
+#, python-format
+msgid "A generalized %(blood_doll)s, it is an efficient bloat device at no cost. Most Giovanni decks play it."
+msgstr ""
+"Une %(blood_doll)s généralisée, c'est un outil de régénération efficace et gratuit. La plupart des decks Giovanni le "
+"jouent."
+
+#: codex_of_the_damned/templates/best-cards/clans/giovanni.html:80
+#, python-format
+msgid "The cheapest %(NEC)s available, he is often seen alongside allies, especially %(shambling_hordes)s."
+msgstr "Le vampire avec %(NEC)s le moins cher, il est souvent vu aux côtés d'alliés, en particulier %(shambling_hordes)s."
+
+#: codex_of_the_damned/templates/best-cards/clans/giovanni.html:87
+msgid "All clan disciplines for 4 pool, a good sidekick in many Giovanni decks."
+msgstr "Toutes les disciplines de clan pour 4 d'influence, un bon acolyte dans de nombreux decks Giovanni."
+
+#: codex_of_the_damned/templates/best-cards/clans/giovanni.html:93
+#, python-format
+msgid "A cheap ally with a nice ability. Often included to fuel %(shambling_hordes)s or %(khazar_s_diary)s."
+msgstr "Un allié bon marché avec une belle aptitude. Souvent inclus pour alimenter %(shambling_hordes)s ou %(khazar_s_diary)s."
+
+#: codex_of_the_damned/templates/best-cards/clans/giovanni.html:103
+#, python-format
+msgid "An excellent abilities for decks relying a lot on the %(NEC)s discipline, like those using %(shambling_hordes)s."
+msgstr ""
+"Une excellente aptitude pour les decks reposant beaucoup sur la discipline %(NEC)s, comme ceux utilisant "
+"%(shambling_hordes)s."
+
+#: codex_of_the_damned/templates/best-cards/clans/giovanni.html:110
+#, python-format
+msgid ""
+"A good way to reduce blood consumption in %(nec)s decks. As is the case with many <em>Path</em> cards, it is quite "
+"cheap and not so easy to destroy: investing an action and a blood just to have the vampires pay a bit more for some "
+"cards can be too much."
+msgstr ""
+"Un bon moyen de réduire la consommation de sang dans les decks %(nec)s. Comme c'est le cas avec de nombreuses cartes "
+"<em>Voie</em>, c'est assez bon marché et pas facile à détruire : investir une action et un sang juste pour que les "
+"vampires paient un peu plus certaines cartes peut être trop cher."
+
+#: codex_of_the_damned/templates/best-cards/clans/giovanni.html:120
+msgid ""
+"A cheap and efficient way to bring back some blood on the vampires. Better in low or mid capacity decks with more "
+"Giovanni, even better if it can be defended a bit."
+msgstr ""
+"Un moyen bon marché et efficace de ramener du sang sur les vampires. Meilleur dans les decks de faible ou moyenne "
+"capacité avec plus de Giovanni, encore mieux s'il peut être un peu défendu."
 
 #: codex_of_the_damned/templates/best-cards/clans/salubri.html:40
 msgid "an archetype of its own"
@@ -7196,3 +7301,4 @@ msgstr ""
 
 #~ msgid "Girls Will Find Inner Circles"
 #~ msgstr ""
+
