@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: codex 0.X\n"
 "Report-Msgid-Bugs-To: lionel.panhaleux+codex@gmail.com\n"
-"POT-Creation-Date: 2020-10-02 17:56+0200\n"
+"POT-Creation-Date: 2020-10-05 18:29+0200\n"
 "PO-Revision-Date: 2020-07-04 08:50+0200\n"
 "Last-Translator: Lionel Panhaleux <lionel.panhaleux+codex@gmail.com>\n"
 "Language: fr\n"
@@ -120,8 +120,7 @@ msgstr ""
 msgid "Cats"
 msgstr ""
 
-#: codex_of_the_damned/navigation.py:97 codex_of_the_damned/templates/best-cards/clans/malkavian.html:302
-#: codex_of_the_damned/templates/best-cards/clans/ventrue.html:138
+#: codex_of_the_damned/navigation.py:97 codex_of_the_damned/templates/best-cards/clans/ventrue.html:138
 msgid "Council of Doom"
 msgstr ""
 
@@ -188,7 +187,7 @@ msgstr ""
 msgid "Lasombra Nocturn"
 msgstr ""
 
-#: codex_of_the_damned/navigation.py:113 codex_of_the_damned/templates/best-cards/clans/malkavian.html:9
+#: codex_of_the_damned/navigation.py:113
 msgid "Lutz Politics"
 msgstr ""
 
@@ -196,7 +195,7 @@ msgstr ""
 msgid "Madness Reversal"
 msgstr ""
 
-#: codex_of_the_damned/navigation.py:115 codex_of_the_damned/templates/best-cards/clans/malkavian.html:22
+#: codex_of_the_damned/navigation.py:115
 msgid "Mind Rape"
 msgstr ""
 
@@ -225,7 +224,7 @@ msgstr ""
 msgid "Nosferatu Royalty"
 msgstr ""
 
-#: codex_of_the_damned/navigation.py:120 codex_of_the_damned/templates/best-cards/clans/malkavian.html:10
+#: codex_of_the_damned/navigation.py:120
 msgid "Rachel Madness"
 msgstr ""
 
@@ -308,12 +307,11 @@ msgstr ""
 msgid "War Ghouls"
 msgstr ""
 
-#: codex_of_the_damned/navigation.py:138 codex_of_the_damned/templates/best-cards/clans/malkavian.html:16
-#: codex_of_the_damned/templates/best-cards/clans/toreador.html:12
+#: codex_of_the_damned/navigation.py:138 codex_of_the_damned/templates/best-cards/clans/toreador.html:12
 msgid "Weenie AUS"
 msgstr ""
 
-#: codex_of_the_damned/navigation.py:139 codex_of_the_damned/templates/best-cards/clans/malkavian.html:15
+#: codex_of_the_damned/navigation.py:139
 msgid "Weenie DEM"
 msgstr ""
 
@@ -474,7 +472,7 @@ msgstr ""
 msgid "Lasombra"
 msgstr ""
 
-#: codex_of_the_damned/navigation.py:192
+#: codex_of_the_damned/navigation.py:192 codex_of_the_damned/templates/best-cards/clans/malkavian.html:6
 msgid "Malkavian"
 msgstr "Malkavien"
 
@@ -5155,6 +5153,267 @@ msgstr ""
 "fournira toujours 3 votes à moins qu'il n'y ait <em>deux</em> autres priscii à la table. Dans l'ensemble, une "
 "combinaison assez puissante pour 8 d'influence."
 
+#: codex_of_the_damned/templates/best-cards/clans/malkavian.html:10
+#, python-format
+msgid ""
+"The Malkavian are a prominent clan. With their unique %(dem)s discipline beside the excellent %(obf)s%(aus)s "
+"disciplines, plus some really good vampires, they have led to many archetypes. %(lutz_politics)s and "
+"%(rachel_madness)s are two archetypes revolving around the powerful vampires %(lutz_von_hohenzollern)s and "
+"%(rachel_brandywine)s respectively. On the other hand, Malkavian and their antitribu are also used into two strong "
+"weenie constructs: %(weenie_dem)s and %(weenie_aus)s."
+msgstr ""
+"Les Malkaviens sont un clan éminent. Avec leur discipline exclusive %(dem)s au côté des excellentes disciplines "
+"%(obf)s%(aus)s, ainsi que de très bons vampires, ils ont conduit à de nombreux archétypes. %(lutz_politics)s et "
+"%(rachel_madness)s sont deux archétypes tournant autour de puissants vampires, respectivement "
+"%(lutz_von_hohenzollern)s et %(rachel_brandywine)s. D'autre part, les Malkavien et leurs antitribus sont également "
+"utilisés dans deux puissantes constructions weenie : %(weenie_dem)s et %(weenie_aus)s."
+
+#: codex_of_the_damned/templates/best-cards/clans/malkavian.html:29
+#, python-format
+msgid ""
+"Group 1 Malkavian have the %(dom)s%(obf)s%(aus)s disciplines combination, making them the only vampires of the game "
+"with %(dom)s%(obf)s as clan disciplines. That got them into other archetypes, like the %(mind_rape_arch)s archetype, "
+"using %(mind_rape)s to take control of opponents vampires. Malkavian and their antitribu got %(dem)s instead of "
+"%(dom)s on group 2 to 5, an evolution right on tracks with the roleplaying game <em>Vampire: the Masquerade</em>. "
+"They got %(dom)s back on group 6 with the release of the %(fifth_edition)s."
+msgstr ""
+"Les Malkavien du groupe 1 ont la combinaison de disciplines %(dom)s%(obf)s%(aus)s, ce qui en fait les seuls vampires "
+"du jeu avec %(dom)s%(obf)s comme disciplines de clan. Cela leur a ouvert d'autres archétypes, comme l'archétype "
+"%(mind_rape_arch)s, qui utilise %(mind_rape)s pour prendre le contrôle des vampires adverses. Les Malkavien et leurs "
+"antitribus ont %(dem)s au lieu de %(dom)s dans les groupes 2 à 5, une évolution en cohérence avec le jeu de rôle "
+"<em>Vampire: La Masquerade</em>. Ils ont retrouvé %(dom)s dans le groupe 6 avec la sortie de la %(fifth_edition)s."
+
+#: codex_of_the_damned/templates/best-cards/clans/malkavian.html:34
+msgid "fifth edition"
+msgstr "cinquième édition"
+
+#: codex_of_the_damned/templates/best-cards/clans/malkavian.html:50
+#, python-format
+msgid ""
+"This bleed action is central to the %(dem)s discipline. It can deliver a bleed of 2 in combination with a 1 pool "
+"bloat. Moreover, the bleed can be directed to any Methusalah, not only the prey, offering additional table control."
+msgstr ""
+"Cette action de morsure est au cœur de la discipline %(dem)s. Elle peut délivrer une morsure à 2 tout en régénérant 1"
+" influence. De plus, la morsure peut être dirigée vers n'importe quel Methusalah, pas seulement la proie, ce qui "
+"offre un meilleur contrôle de la table."
+
+#: codex_of_the_damned/templates/best-cards/clans/malkavian.html:59
+#, python-format
+msgid ""
+"Star of the Malkavian clan, he has a really powerful ability, 4 votes and +2 bleed like many Inner Circle, combined "
+"with all clan disciplines plus the useful %(PRE)s that gives acces to excellent vote modifiers like "
+"%(voter_captivation)s."
+msgstr ""
+"Star du clan Malkavien, il a une capacité très puissante, 4 votes et +2 morsure comme beaucoup de membres du Cercle "
+"Intérieur, combiné avec toutes les disciplines du clan plus %(PRE)s, qui donne accès à d'excellents modificateurs de "
+"vote comme %(voter_captivation)s."
+
+#: codex_of_the_damned/templates/best-cards/clans/malkavian.html:68
+#, python-format
+msgid "An excellent bleed modifier at no cost, it provides stealth at superior %(DEM)s."
+msgstr "Excellent modificateur de morsure gratuit, il offre de la discrétion en %(DEM)s supérieur."
+
+#: codex_of_the_damned/templates/best-cards/clans/malkavian.html:74
+#, python-format
+msgid "A powerful bleed enhancer at no cost, although a bit less efficient than %(conditioning)s."
+msgstr "Un puissant améliorateur de morsure gratuit, bien qu'un peu moins efficace que %(conditioning)s."
+
+#: codex_of_the_damned/templates/best-cards/clans/malkavian.html:81
+#, python-format
+msgid "Superior %(AUS)s at 3 pool is really a bargain. She has access to %(telepathic_misdirection)s for the cheapest price."
+msgstr ""
+"%(AUS)s supérieur pour 3 d'influence est vraiment une bonne affaire. C'est l'accès à %(telepathic_misdirection)s le "
+"moins cher du jeu."
+
+#: codex_of_the_damned/templates/best-cards/clans/malkavian.html:88
+#, python-format
+msgid ""
+"A good stealth enhancer at superior %(DEM)s, its inferior ability is seldom used but can still come in handy to get "
+"out of a %(trap)s, for example."
+msgstr ""
+"Un bon améliorateur de discrétion en %(DEM)s supérieure, sa capacité inférieure est rarement utilisée mais peut "
+"toujours être utile pour sortir d'un %(trap)s, par exemple."
+
+#: codex_of_the_damned/templates/best-cards/clans/malkavian.html:95
+#, python-format
+msgid ""
+"A rare effect for this infamous clan card. It enables Malkavians to stay in defence and only bleed at the end of "
+"their predator's turn, but it can also be used to act multiple times during the successive turns of other players. I "
+"can become a cornerstone of the deck when combined with other tricks, like %(homunculus)s or "
+"%(reversal_of_fortunes)s."
+msgstr ""
+"Un effet rare pour cette fameuse carte de clan. Il permet aux Malkaviens de rester en défense et de ne mordre qu'à la"
+" fin du tour de leur prédateur, mais il peut également être utilisé pour agir plusieurs fois pendant les tours "
+"successifs des autres joueurs. Il peut devenir la clé du deck lorsqu'il est combiné avec d'autres astuces, comme "
+"%(homunculus)s ou %(reversal_of_fortunes)s."
+
+#: codex_of_the_damned/templates/best-cards/clans/malkavian.html:108
+#, python-format
+msgid ""
+"5 pool is a good price for the %(DEM)s%(obf)s combination. He is almost always paired with %(persia)s in stealth & "
+"bleed constructs."
+msgstr ""
+"5 pool est un bon prix pour la combinaison %(DEM)s%(obf)s. Il est presque toujours associé à %(persia)s dans des "
+"decks stealth & bleed."
+
+#: codex_of_the_damned/templates/best-cards/clans/malkavian.html:116
+msgid ""
+"An excellent ally with good combat abilities at a reasonable price. He can help take down a cumbersome minion or "
+"deter an aggressive predator."
+msgstr ""
+"Un excellent allié avec de bonnes aptitudes de combat à un prix raisonnable. Il peut aider à abattre un serviteur "
+"encombrant ou dissuader un prédateur agressif."
+
+#: codex_of_the_damned/templates/best-cards/clans/malkavian.html:123
+#, python-format
+msgid "%(DEM)s%(obf)s for 5 pool in the group 3, combined with a nice ability."
+msgstr "%(DEM)s%(obf)s pour 5 d'influence au groupe 3, combiné à une belle aptitude."
+
+#: codex_of_the_damned/templates/best-cards/clans/malkavian.html:129
+#, python-format
+msgid ""
+"5 pool is a good price for the %(DEM)s%(obf)s combination. He is almost always paired with %(uncle_george)s and "
+"%(persia)s in stealth & bleed decks."
+msgstr ""
+"5 pool est un bon prix pour la combinaison %(DEM)s%(obf)s. Il est presque toujours associé à %(uncle_george)s et "
+"%(persia)s dans les decks stealth & bleed."
+
+#: codex_of_the_damned/templates/best-cards/clans/malkavian.html:140
+msgid ""
+"A <em>Justicar</em> with a very powerful ability she can use <em>multiple times</em> during an action. She gets "
+"included even in other clans crypts just for her ability and title."
+msgstr ""
+"Une <em>Justicar</em> dotée d'une aptitude très puissante qu'elle peut utiliser <em>plusieurs fois</em> au cours "
+"d'une même action. Elle est même incluse dans les cryptes d'autres clans juste pour son aptitude et son titre."
+
+#: codex_of_the_damned/templates/best-cards/clans/malkavian.html:148
+#, python-format
+msgid ""
+"3 pool is a low price to pay for the %(DEM)s%(obf)s combination. Its <em>Infernal</em> trait is a bummer, but he is "
+"still excellent for stealth & bleed decks, where speed matters more than cost. It can also bloat with "
+"%(kaymakli_fragment)s, which he can fetch with %(sibyl_s_tongue)s."
+msgstr ""
+"3 d'influence est un prix modique à payer pour la combinaison %(DEM)s%(obf)s. Son trait <em>Infernal</em> est génant,"
+" mais il est toujours excellent pour les decks stealth & bleed , où la vitesse compte plus que le coût. Il peut "
+"également aider à la régénération avec %(kaymakli_fragment)s, qu'il peut récupérer avec %(sibyl_s_tongue)s."
+
+#: codex_of_the_damned/templates/best-cards/clans/malkavian.html:160
+#, python-format
+msgid ""
+"The only card in the game that can counter %(dom)s bounces like %(deflection)s: depending on the environment, it can "
+"be a powerful device in the %(dem)s arsenal when used sparingly."
+msgstr ""
+"La seule carte du jeu capable de contrer les rebonds de %(dom)s comme %(deflection)s : selon l'environnement, elle "
+"peut être un outil puissant dans l'arsenal de %(dem)s si elle est utilisée avec parcimonie."
+
+#: codex_of_the_damned/templates/best-cards/clans/malkavian.html:168
+#, python-format
+msgid ""
+"Superior %(AUS)s for 5 pool gets her included in many crypts, often when %(obf)s or %(cel)s can be used. Moreover, "
+"her ability makes for a nice bloat when she's combined with %(madness_network)s."
+msgstr ""
+"%(AUS)s en supérieur pour 5 d'influence lui assure une place dans de nombreuses cryptes, souvent lorsqu'%(obf)s ou "
+"%(cel)s peuvent être utilisés. Par ailleurs, son aptitude permet une bonne régénération lorsqu'elle est combinée avec"
+" %(madness_network)s."
+
+#: codex_of_the_damned/templates/best-cards/clans/malkavian.html:176
+#, python-format
+msgid "A strong bloat device that can help get vampires out faster, especially at superior %(DEM)s%(AUS)s."
+msgstr ""
+"Un puissant dispositif de régénération qui peut aider à faire sortir les vampires plus rapidement, en particulier au "
+"niveau supérieur %(DEM)s%(AUS)s."
+
+#: codex_of_the_damned/templates/best-cards/clans/malkavian.html:183
+#, python-format
+msgid "The cheapest %(DEM)s of the game at only 3 pool, she gets included in many %(dem)s decks."
+msgstr "La %(DEM)s la moins chère du jeu à seulement 3 pools, elle est incluse dans de nombreux decks %(dem)s."
+
+#: codex_of_the_damned/templates/best-cards/clans/malkavian.html:190
+#, python-format
+msgid ""
+"A <em>Prince</em> for 7 pool with a good disciplines combination. He is group 3, the same group as %(maris_streck)s "
+"and is often included alongside her. The fact that he can use %(the_call)s and %(madman_s_quill)s is also a strong "
+"point."
+msgstr ""
+"Un <em> Prince </em> pour 7 d'influence avec une bonne combinaison de disciplines. Il est du groupe 3, le même groupe"
+" que %(maris_streck)s et est souvent inclus à ses côtés. Le fait qu'il puisse utiliser %(the_call)s et "
+"%(madman_s_quill)s est également un point fort."
+
+#: codex_of_the_damned/templates/best-cards/clans/malkavian.html:203
+msgid "All clan disciplines at superior for just 6 pool, this is a bargain."
+msgstr "Toutes les disciplines de clan en supérieur pour seulement 6 d'influence, c'est une bonne affaire."
+
+#: codex_of_the_damned/templates/best-cards/clans/malkavian.html:209
+#, python-format
+msgid ""
+"Although he does not have superior %(DEM)s, his superior %(PRE)s and title makes him a natural companion to "
+"%(lutz_von_hohenzollern)s in a political deck, or any %(OBF)s%(PRE)s political construct, for that matter."
+msgstr ""
+"Bien qu'il n'ait pas %(DEM)s en supérieur, %(PRE)s en supérieur et son titre en font un compagnon naturel pour "
+"%(lutz_von_hohenzollern)s dans un deck politique, ou dans tous les decks politiques %(OBF)s%(PRE)s, d'ailleurs."
+
+#: codex_of_the_damned/templates/best-cards/clans/malkavian.html:217
+msgid "A prince for 7 and a very strong disciplines combination. He gets included in many <em>Royalty</em> decks."
+msgstr "Un prince pour 7 et une combinaison de disciplines très forte. Il est inclus dans de nombreux decks <em>Royauté</em>."
+
+#: codex_of_the_damned/templates/best-cards/clans/malkavian.html:224
+#, python-format
+msgid ""
+"+1 stealth for 1 blood: this is expensive. It is included in decks where %(obf)s is not much available. Alongside "
+"%(deny)s and %(confusion)s, it can make for a very decent stealth & bleed module using just the %(DEM)s discipline."
+msgstr ""
+"+1 discrétion pour 1 sang : c'est cher. Il est inclus dans les decks où %(obf)s est peu disponible. Eu supplément de "
+"%(deny)s et %(confusion)s, il peut constituer un module stealth & bleed très respectable en utilisant uniquement la "
+"discipline %(DEM)s."
+
+#: codex_of_the_damned/templates/best-cards/clans/malkavian.html:236
+#, python-format
+msgid ""
+"A strong Inner Circle with a good ability and %(OBF)s%(dom)s, a good disciplines combination. He is seen in Malkavian"
+" Royalty builds but also in group 2 Inner Circle constructs like the %(council_of_doom)s archetype."
+msgstr ""
+"Un membre du Cercle Intérieur puissant avec une bonne aptitude et %(OBF)s%(dom)s, une bonne combinaison de "
+"disciplines. On le voit dans les decks Malkavian Royalty mais aussi dans les decks Inner Circle du groupe 2 comme "
+"l'archétype %(council_of_doom)s."
+
+#: codex_of_the_damned/templates/best-cards/clans/malkavian.html:246
+#, python-format
+msgid ""
+"A good disciplines combination for 6. He can uses bounces, %(the_call)s and %(madman_s_quill)s, and superior %(DEM)s "
+"and inferior %(obf)s is enough to be of use in a stealth & bleed deck."
+msgstr ""
+"Une bonne combinaison de disciplines pour 6. Il peut utiliser des rebonds, %(the_call)s et %(madman_s_quill)s, et "
+"%(DEM)s en supérieur combiné à %(obf)s en inférieur est suffisant pour être utile dans un deck stealth & bleed."
+
+#: codex_of_the_damned/templates/best-cards/clans/malkavian.html:257
+#, python-format
+msgid ""
+"An excellent ally remover at superior %(DEM)s. It can get rid of the widespread %(carlton_van_wyk)s and %(ossian)s, "
+"who both become quickly problematic."
+msgstr ""
+"Un excellent anti-allié en %(DEM)s supérieur. Il permet de se débarrasser des %(carlton_van_wyk)s et autres "
+"%(ossian)s, qui deviennent rapidement problématiques."
+
+#: codex_of_the_damned/templates/best-cards/clans/malkavian.html:267
+msgid ""
+"A bit pricey but its base effect can be worth it for a lunge. Its superior effect can get really efficient in some "
+"decks too."
+msgstr ""
+"Un peu cher mais son effet de base peut en valoir la peine pour une fente. Son effet supérieur peut également être "
+"très efficace dans certains decks."
+
+#: codex_of_the_damned/templates/best-cards/clans/malkavian.html:274
+#, python-format
+msgid "A strong ability for a <em>Justicar</em>, all for 9 pool. He is often seen in company with %(lutz_von_hohenzollern)s."
+msgstr ""
+"Une aptitude puissante pour un <em>Justicar</em>, le tout pour 9 d'influence. Il est souvent vu en compagnie de "
+"%(lutz_von_hohenzollern)s."
+
+#: codex_of_the_damned/templates/best-cards/clans/malkavian.html:281
+#, python-format
+msgid "A really cheap 2 pool for %(dom)s, she gets included in many crypts."
+msgstr "2 d'influence est vraiment bon marché pour %(dom)s, elle est incluse dans de nombreuses cryptes."
+
 #: codex_of_the_damned/templates/best-cards/clans/salubri.html:40
 msgid "an archetype of its own"
 msgstr "un archétype à lui"
@@ -7933,3 +8192,4 @@ msgstr ""
 "situation à trois ou cinq joueurs : si la fente fonctionne, vous revenez à un nombre pair et à une situation "
 "favorable. Si elle échoue, vous restez sur un nombre impair de joueurs en ayant mis une grande pression sur la proie."
 " En général, cela signifie que la pression va revenir en force contre vous au prochain tour de table. </p>"
+
