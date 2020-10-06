@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: codex 0.X\n"
 "Report-Msgid-Bugs-To: lionel.panhaleux+codex@gmail.com\n"
-"POT-Creation-Date: 2020-10-06 12:13+0200\n"
+"POT-Creation-Date: 2020-10-06 15:23+0200\n"
 "PO-Revision-Date: 2020-07-04 08:50+0200\n"
 "Last-Translator: Lionel Panhaleux <lionel.panhaleux+codex@gmail.com>\n"
 "Language: fr\n"
@@ -231,8 +231,7 @@ msgstr ""
 msgid "Renegade Assault"
 msgstr ""
 
-#: codex_of_the_damned/navigation.py:123 codex_of_the_damned/templates/best-cards/clans/salubri.html:13
-#: codex_of_the_damned/templates/best-cards/sects/anarch.html:8
+#: codex_of_the_damned/navigation.py:123 codex_of_the_damned/templates/best-cards/sects/anarch.html:8
 msgid "Saulot & Friends"
 msgstr ""
 
@@ -244,7 +243,7 @@ msgstr ""
 msgid "Shambling Hordes"
 msgstr ""
 
-#: codex_of_the_damned/navigation.py:126 codex_of_the_damned/templates/best-cards/clans/salubri.html:15
+#: codex_of_the_damned/navigation.py:126
 msgid "Spirit Marionette"
 msgstr ""
 
@@ -4591,6 +4590,7 @@ msgstr ""
 "%(eze_the_demon_prince)s."
 
 #: codex_of_the_damned/templates/best-cards/clans/harbingers-of-skulls.html:13
+#: codex_of_the_damned/templates/best-cards/clans/salubri.html:11
 msgid "Lost Kindred expansion"
 msgstr "extension Lost Kindred"
 
@@ -5526,8 +5526,8 @@ msgid ""
 "against bounces and combat."
 msgstr ""
 "Les Ravnos et leur discipline exclusive %(chi)s forment un clan polyvalent. Ils ont donné naissance à un archétype "
-"politique réussi, la %(ravnos_clown_car)s. Par ailleurs, %(chi)s à elle seule permet des morsures discrètes efficaces avec "
-"une résistance supplémentaire contre les rebonds et les combats."
+"politique réussi, la %(ravnos_clown_car)s. Par ailleurs, %(chi)s à elle seule permet des morsures discrètes efficaces"
+" avec une résistance supplémentaire contre les rebonds et les combats."
 
 #: codex_of_the_damned/templates/best-cards/clans/ravnos.html:21
 #, python-format
@@ -5555,17 +5555,15 @@ msgid ""
 "recurring threat, too."
 msgstr ""
 "Un effet redoutable pour cette action coûteuse. La simple menace de son existence est déjà un bon moyen de "
-"dissuasion. Avec l'aide de réductions de coût comme %(the_path_of_paradox)s, %(gabrin)s ou %(the_line)s, "
-"elle devient suffisamment bon marché pour être une menace récurrente."
+"dissuasion. Avec l'aide de réductions de coût comme %(the_path_of_paradox)s, %(gabrin)s ou %(the_line)s, elle devient"
+" suffisamment bon marché pour être une menace récurrente."
 
 #: codex_of_the_damned/templates/best-cards/clans/ravnos.html:53
 #, python-format
 msgid ""
 "An equipment that helps with the cards rotation. Not unlike the %(heart_of_nizchetus)s, but this one is for Ravnos "
 "only."
-msgstr ""
-"Un équipement d'aide à la rotation. Similaire au %(heart_of_nizchetus)s, mais celui-ci est réservé "
-"aux Ravnos."
+msgstr "Un équipement d'aide à la rotation. Similaire au %(heart_of_nizchetus)s, mais celui-ci est réservé aux Ravnos."
 
 #: codex_of_the_damned/templates/best-cards/clans/ravnos.html:62
 msgid "An excellent equipment, it is a bleed bonus plus combat defence, all for just 1 pool. A bargain."
@@ -5583,9 +5581,87 @@ msgstr "%(CHI)s en supérieur pour un coût raisonnable de 4, il est inclus dans
 msgid "The only bleed enhancer available with %(chi)s, it is often included in Ravnos decks."
 msgstr "Le seul améliorateur de morsure disponible en %(CHI)s, il est souvent inclus dans les decks Ravnos."
 
-#: codex_of_the_damned/templates/best-cards/clans/salubri.html:40
+#: codex_of_the_damned/templates/best-cards/clans/salubri.html:8
+#, python-format
+msgid ""
+"The Salubri and their antitribu are a rare sight in tournaments. This could change following the "
+"%(lost_kindred_expansion)s release in 2018. They have unique disciplines, respectively %(obe)s and %(val)s. For now, "
+"they are seen in mainly two archetypes: %(saulot_friends)s, a wall deck featuring %(saulot_the_wanderer)s, and "
+"%(spirit_marionette_arch)s, using %(obe)s and the eponymous %(spirit_marionette)s."
+msgstr ""
+"Les Salubri et leur antitribu sont rares dans les tournois. Cela pourrait changer suite à la sortie de "
+"l'%(lost_kindred_expansion)s en 2018. Ils ont des disciplines exclusives, respectivement %(obe)s et %(val)s. Pour "
+"l'instant, ils sont principalement vus dans deux archétypes: %(saulot_friends)s, un deck mur avec "
+"%(saulot_the_wanderer)s, et %(spirit_marionette_arch)s, qui utilise %(obe)s et l'éponyme %(spirit_marionette)s."
+
+#: codex_of_the_damned/templates/best-cards/clans/salubri.html:29
+msgid ""
+"A good stealth modifier that can become permanent. An excellent way for Salubri to bump up their game as they do not "
+"have access to many other stealth enhancer given their clan disciplines."
+msgstr ""
+"Un bon modificateur de discrétion qui peut devenir permanent. Un excellent outil pour les Salubri qui n'ont par "
+"ailleurs pas accès à beaucoup d'autres améliorateurs de discrétion compte tenu de leurs disciplines de clan."
+
+#: codex_of_the_damned/templates/best-cards/clans/salubri.html:38
 msgid "an archetype of its own"
-msgstr "un archétype à lui"
+msgstr "son propre archétype"
+
+#: codex_of_the_damned/templates/best-cards/clans/salubri.html:37
+#, python-format
+msgid ""
+"An iconic card of the %(obe)s discipline, it has brought up %(an_archetype_of_its_own)s. Stealing an opponent minion "
+"is always good, the central issue is to abuse, cripple or destroy it afterwards."
+msgstr ""
+"Carte iconique de la discipline %(obe)s, elle a %(an_archetype_of_its_own)s. Voler un serviteur adverse est toujours "
+"une bonne chose, le problème est d'en faire quelque chose : le paralyser ou le détruire par la suite."
+
+#: codex_of_the_damned/templates/best-cards/clans/salubri.html:48
+#, python-format
+msgid "A second stealth enhancer, still at no cost, a good card for %(OBE)s."
+msgstr "Un deuxième améliorateur de discrétion, toujours gratuit, une bonne carte pour %(OBE)s."
+
+#: codex_of_the_damned/templates/best-cards/clans/salubri.html:54
+#, python-format
+msgid ""
+"Star of the Salubri clan, Saulot has both %(OBE)s and %(VAL)s at superior, along a nice set of disciplines. His "
+"abilities are also impressive."
+msgstr ""
+"Star du clan Salubri, Saulot a à la fois %(OBE)s et %(VAL)s en supérieur, en plus d'un bel ensemble de disciplines. "
+"Ses aptitudes sont également impressionnantes."
+
+#: codex_of_the_damned/templates/best-cards/clans/salubri.html:61
+#, python-format
+msgid ""
+"Bringing back any big capacity vampire to full capacity is a good way to bloat, but also a useful bargaining chip to "
+"barter for big favors or even a game-changer. This is the only card of the game allowing this along "
+"%(giant_s_blood)s."
+msgstr ""
+"Ramener un vampire de grande capacité à sa pleine capacité est un bon moyen de régénérer, mais aussi une monnaie "
+"d'échange utile pour troquer des faveurs importantes. C'est la seule carte du jeu qui le permet avec "
+"%(giant_s_blood)s."
+
+#: codex_of_the_damned/templates/best-cards/clans/salubri.html:69
+#, python-format
+msgid ""
+"An excellent <em>combat ends</em> at superior %(OBE)s, it is a bit weak at inferior %(obe)s. The fact that it's still"
+" a hand strike makes it a good counter to %(immortal_grapple)s."
+msgstr ""
+"Une excellente <em>fin de combat</em> en %(OBE)s supérieur, elle est un peu faible en %(obe)s inférieur. Le fait "
+"qu'il s'agisse malgré tout d'une frappe à mains nues en fait un bon contre à %(immortal_grapple)s."
+
+#: codex_of_the_damned/templates/best-cards/clans/salubri.html:77
+#, python-format
+msgid ""
+"An excellent rush action, with high maneuverability and a most desirable +1 stealth. It is even played in some "
+"%(ani)s decks as a stealthy alternative to %(deep_song)s."
+msgstr ""
+"Une excellente action de rush, avec discrétion à +1, poursuite et manœuvre en supérieur. Elle est même jouée dans "
+"certains decks %(ani)s comme une alternative à %(deep_song)s pour son bonus de discrétion."
+
+#: codex_of_the_damned/templates/best-cards/clans/salubri.html:84
+#, python-format
+msgid "A good block denial at superior %(OBE)s for a big capacity vampire like %(saulot_the_wanderer)s."
+msgstr "Un bon déni de bloc en %(OBE)s supérieur pour un vampire de grande capacité comme %(saulot_the_wanderer)s."
 
 #: codex_of_the_damned/templates/best-cards/clans/toreador.html:58
 #: codex_of_the_damned/templates/best-cards/clans/toreador.html:104
@@ -8361,3 +8437,4 @@ msgstr ""
 "situation à trois ou cinq joueurs : si la fente fonctionne, vous revenez à un nombre pair et à une situation "
 "favorable. Si elle échoue, vous restez sur un nombre impair de joueurs en ayant mis une grande pression sur la proie."
 " En général, cela signifie que la pression va revenir en force contre vous au prochain tour de table. </p>"
+
