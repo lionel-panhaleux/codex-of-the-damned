@@ -1,103 +1,79 @@
 {% extends "best-cards/_layout.html" %}
+{% import "best-cards/_layout_card_column.html" as layout with context%}
 
 {% block content %}
 <h1><img src="{{ url_for('static', filename='img/icons/clan-ravnos.svg') }}"> Ravnos</h1>
-<p>
-    The Ravnos and their unique <i>k</i> discipline are a versatile clan.
-    They gave birth to a successful political archetype,
-    the {{ link("/archetypes/ravnos-clown-car", _("Ravnos Clown Car")) }}.
-    Otherwise, <i>k</i> alone makes for easy stealth bleeds
-    with extra resilience against bounces and combat.
-</p>
-<h2>Highlights</h2>
-<div class="column">
-    <div class="column-image">
-        <img src="https://images.krcg.org/zip.jpg">
-        <h4>Zip</h4>
-        <p class="center-subtitle">played in 42 decks, typically 1 copy</p>
-    </div>
+<div class="tip">
     <p>
-        A cheap minion with <i>i</i>, he often gets included in <i>i</i> constructs.
+        {% trans trimmed 
+            ravnos_clown_car=link("/archetypes/ravnos-clown-car", "Ravnos Clown Car")
+        %}
+        The Ravnos and their unique {{ chi }} discipline are a versatile clan.
+        They gave birth to a successful political archetype,
+        the {{ ravnos_clown_car }}.
+        Otherwise, {{ chi }} alone makes for easy stealth bleeds
+        with extra resilience against bounces and combat.
+        {% endtrans %}
     </p>
 </div>
-<div class="column">
-    <div class="column-image">
-        <img src="https://images.krcg.org/mirrorimage.jpg">
-        <h4>Mirror Image</h4>
-        <p class="center-subtitle">played in 26 decks, typically 3-7 copies</p>
-    </div>
-    <p>
-        A versatile stealth bonus or <em>combat ends</em>, its 1 blood cost is acceptable.
-    </p>
-</div>
-<div class="column">
-    <div class="column-image">
-        <img src="https://images.krcg.org/weekofnightmares.jpg">
-        <h4>Week of Nightmares</h4>
-        <p class="center-subtitle">played in 25 decks, typically 1-2 copies</p>
-    </div>
-    <p>
-        The best bonus Ravnos can get, it is played in many Ravnos decks, often as the finishing move.
-        As the downside is quite ugly, it is important to make sure the game will end before
-        the ten counters are stacked on the card.
-    </p>
-</div>
-<div class="column">
-    <div class="column-image">
-        <img src="https://images.krcg.org/sensorydeprivation.jpg">
-        <h4>Sensory Deprivation</h4>
-        <p class="center-subtitle">played in 22 decks, typically 1-6 copies</p>
-    </div>
-    <p>
-        An infamous effect for this expensive action. The threat of it can be an excellent deterrent.
-        With the help of cost reduction cards like
-        {{ card("The Path of Paradox") }},
-        {{ card("Gabrin") }} or
-        {{ card("The Line") }},
-        it can become cheap enough to be a recurring threat, too.
-    </p>
-</div>
-<div class="column">
-    <div class="column-image">
-        <img src="https://images.krcg.org/shilmulotarot.jpg">
-        <h4>Shilmulo Tarot</h4>
-        <p class="center-subtitle">played in 24 decks, typically 1 copy</p>
-    </div>
-    <p>
-        An equipment that helps with the cards rotation. Not unlike the
-        {{ card("Heart of Nizchetus") }},
-        but this one is for Ravnos only.
-    </p>
-</div>
-<div class="column">
-    <div class="column-image">
-        <img src="https://images.krcg.org/treasuredsamadji.jpg">
-        <h4>Treasured Samadji</h4>
-        <p class="center-subtitle">played in 20 decks, typically 1 copy</p>
-    </div>
-    <p>
-        An excellent equipment, it is a bleed bonus plus combat defence, all for just 1 pool.
-        A bargain.
-    </p>
-</div>
-<div class="column">
-    <div class="column-image">
-        <img src="https://images.krcg.org/salbatorebokkengro.jpg">
-        <h4>Salbatore Bokkengro</h4>
-        <p class="center-subtitle">played in 20 decks, typically 1-2 copies</p>
-    </div>
-    <p>
-        Superior <i>K</i> for a decent 4 pool, he gets included in many Ravnos decks.
-    </p>
-</div>
-<div class="column">
-    <div class="column-image">
-        <img src="https://images.krcg.org/fatamorgana.jpg">
-        <h4>Fata Morgana</h4>
-        <p class="center-subtitle">played in 17 decks, typically 5-9 copies</p>
-    </div>
-    <p>
-        The only bleed enhancer available with <i>k</i>, it is often included in Ravnos decks.
-    </p>
-</div>
+
+{% call layout.card_column("Zip", decks=42, copies="typically 1") %}
+{% trans trimmed %}
+A cheap minion with {{ ani }}, he often gets included in {{ ani }} constructs.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Mirror Image", decks=26, copies="3-7") %}
+{% trans trimmed %}
+A versatile stealth bonus or <em>combat ends</em>, its 1 blood cost is acceptable.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Week of Nightmares", decks=25, copies="1-2") %}
+{% trans trimmed %}
+The best bonus Ravnos can get, it is played in many Ravnos decks, often as the finishing move.
+As the downside is quite ugly, it is important to make sure the game will end before
+the ten counters are stacked on the card.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Sensory Deprivation", decks=22, copies="1-6") %}
+{% trans trimmed 
+    the_path_of_paradox=card("The Path of Paradox"),
+    gabrin=card("Gabrin"),
+    the_line=card("The Line")
+%}
+An infamous effect for this expensive action. The threat of it can be an excellent deterrent.
+With the help of cost reduction cards like {{ the_path_of_paradox }}, {{ gabrin }} or
+{{ the_line }}, it can become cheap enough to be a recurring threat, too.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Shilmulo Tarot", decks=24, copies="typically 1") %}
+{% trans trimmed 
+    heart_of_nizchetus=card("Heart of Nizchetus")
+%}
+An equipment that helps with the cards rotation. Not unlike the
+{{ heart_of_nizchetus }}, but this one is for Ravnos only.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Treasured Samadji", decks=20, copies="typically 1") %}
+{% trans trimmed %}
+An excellent equipment, it is a bleed bonus plus combat defence, all for just 1 pool.
+A bargain.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Salbatore Bokkengro", decks=20, copies="1-2") %}
+{% trans trimmed %}
+Superior {{ CHI }} for a decent 4 pool, he gets included in many Ravnos decks.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Fata Morgana", decks=17, copies="5-9") %}
+{% trans trimmed %}
+The only bleed enhancer available with {{ chi }}, it is often included in Ravnos decks.
+{% endtrans %}
+{% endcall %}
 {% endblock %}
