@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: codex 0.X\n"
 "Report-Msgid-Bugs-To: lionel.panhaleux+codex@gmail.com\n"
-"POT-Creation-Date: 2020-10-06 15:23+0200\n"
+"POT-Creation-Date: 2020-10-06 15:53+0200\n"
 "PO-Revision-Date: 2020-07-04 08:50+0200\n"
 "Last-Translator: Lionel Panhaleux <lionel.panhaleux+codex@gmail.com>\n"
 "Language: fr\n"
@@ -86,7 +86,7 @@ msgstr "Pacte avec les Nephandi"
 msgid "Parliament of Shadows"
 msgstr "Le Parlement des Ombres"
 
-#: codex_of_the_damned/navigation.py:89 codex_of_the_damned/templates/best-cards/clans/toreador.html:8
+#: codex_of_the_damned/navigation.py:89
 msgid "AAA"
 msgstr ""
 
@@ -171,7 +171,7 @@ msgstr ""
 msgid "Ishtarri Politics"
 msgstr ""
 
-#: codex_of_the_damned/navigation.py:109 codex_of_the_damned/templates/best-cards/clans/toreador.html:9
+#: codex_of_the_damned/navigation.py:109
 msgid "Jost Powerbleed"
 msgstr ""
 
@@ -299,7 +299,7 @@ msgstr ""
 msgid "War Ghouls"
 msgstr ""
 
-#: codex_of_the_damned/navigation.py:138 codex_of_the_damned/templates/best-cards/clans/toreador.html:12
+#: codex_of_the_damned/navigation.py:138
 msgid "Weenie AUS"
 msgstr ""
 
@@ -480,7 +480,7 @@ msgstr ""
 msgid "Salubri"
 msgstr ""
 
-#: codex_of_the_damned/navigation.py:196
+#: codex_of_the_damned/navigation.py:196 codex_of_the_damned/templates/best-cards/clans/toreador.html:6
 msgid "Toreador"
 msgstr "Toréador"
 
@@ -5579,7 +5579,7 @@ msgstr "%(CHI)s en supérieur pour un coût raisonnable de 4, il est inclus dans
 #: codex_of_the_damned/templates/best-cards/clans/ravnos.html:75
 #, python-format
 msgid "The only bleed enhancer available with %(chi)s, it is often included in Ravnos decks."
-msgstr "Le seul améliorateur de morsure disponible en %(CHI)s, il est souvent inclus dans les decks Ravnos."
+msgstr "Le seul améliorateur de morsure disponible en %(chi)s, il est souvent inclus dans les decks Ravnos."
 
 #: codex_of_the_damned/templates/best-cards/clans/salubri.html:8
 #, python-format
@@ -5663,10 +5663,137 @@ msgstr ""
 msgid "A good block denial at superior %(OBE)s for a big capacity vampire like %(saulot_the_wanderer)s."
 msgstr "Un bon déni de bloc en %(OBE)s supérieur pour un vampire de grande capacité comme %(saulot_the_wanderer)s."
 
-#: codex_of_the_damned/templates/best-cards/clans/toreador.html:58
-#: codex_of_the_damned/templates/best-cards/clans/toreador.html:104
-msgid "AAA archetype"
+#: codex_of_the_damned/templates/best-cards/clans/toreador.html:12
+#, python-format
+msgid ""
+"The Toreador and their antitribu are a prominent clan in tournaments. They gave birth to two archetypes: %(aaa)s "
+"using Toreador Camarilla Royalty and %(jost_powerbleed)s using antitribu and their clan cards. Moreover, they are "
+"used in numbers in the %(weenie_aus)s archetype."
 msgstr ""
+"Les Toréador et leurs antitribus sont un clan de premier plan dans les tournois. Ils ont donné naissance à deux "
+"archétypes: %(aaa)s qui utilise des Toréador de la royauté de la Camarilla et %(jost_powerbleed)s qui utilise les "
+"antitribus et leurs cartes de clan. De plus, ils sont utilisés en nombre dans l'archétype %(weenie_aus)s."
+
+#: codex_of_the_damned/templates/best-cards/clans/toreador.html:26
+#, python-format
+msgid ""
+"The definite star of the clan, his rare ability can completely reshape the way Master cards are handled in a deck. "
+"Using some %(ashur_tablets)s with him becomes very efficient."
+msgstr ""
+"La star absolue du clan, son aptitude rare peut complètement remodeler la façon dont les cartes Maître sont traitées "
+"dans un deck. Utiliser quelques %(ashur_tablets)s avec lui devient très efficace."
+
+#: codex_of_the_damned/templates/best-cards/clans/toreador.html:34
+#, python-format
+msgid ""
+"With its superior %(OBF)s and %(DOM)s over its already powerful clan disciplines, he is the most played Inner Circle "
+"after %(lutz_von_hohenzollern)s, a vampire he often accompanies anyway."
+msgstr ""
+"Avec %(OBF)s et %(DOM)s en supérieur en plus de ses disciplines de clan déjà puissantes, il est le membre du Cercle "
+"Intérieur le plus joué après %(lutz_von_hohenzollern)s, un vampire qu'il accompagne souvent de toute façon."
+
+#: codex_of_the_damned/templates/best-cards/clans/toreador.html:42
+#, python-format
+msgid "The cheapest %(AUS)s pool can buy. An easy inclusion in many constructs."
+msgstr "L'%(AUS)s le moins cher que l'on puisse acheter. Une inclusion facile dans de nombreux decks."
+
+#: codex_of_the_damned/templates/best-cards/clans/toreador.html:49
+#: codex_of_the_damned/templates/best-cards/clans/toreador.html:84
+msgid "AAA archetype"
+msgstr "archétype AAA"
+
+#: codex_of_the_damned/templates/best-cards/clans/toreador.html:48
+#, python-format
+msgid ""
+"Second \"A\" of the %(aaa_archetype)s after %(anson)s, her +1 bleed and unique ability to block cross table makes for"
+" a nice package in any construct with intercept capabilities."
+msgstr ""
+"Deuxième «A» de l'%(aaa_archetype)s après %(anson)s, sa morsure à +1 et son aptitude unique à bloquer en face de "
+"table en font une bonne affaire dans n'importe quel deck ayant des capacités d'interception."
+
+#: codex_of_the_damned/templates/best-cards/clans/toreador.html:59
+msgid "A nice bloat card providing 1 pool per turn, it can help get vampires out faster if it is drawn early on."
+msgstr ""
+"Une belle carte de régénération qui fournit 1 influence par tour, elle peut aider à sortir les vampires plus "
+"rapidement si elle est piochée tôt."
+
+#: codex_of_the_damned/templates/best-cards/clans/toreador.html:66
+#, python-format
+msgid "Often found algonside %(anson)s and %(anneke)s, his title combined with his nice ability makes for a good option."
+msgstr ""
+"On le trouve souvent aux côtés d'%(anson)s et %(anneke)s, son titre combiné à sa belle aptitude en font une bonne "
+"option."
+
+#: codex_of_the_damned/templates/best-cards/clans/toreador.html:76
+#, python-format
+msgid "A cheap %(AUS)s vampire with access to a useful inferior %(pre)s, he gets included in many decks."
+msgstr "Un vampire %(AUS)s bon marché avec accès à un %(pre)s inférieur utile, il est inclus dans de nombreux decks."
+
+#: codex_of_the_damned/templates/best-cards/clans/toreador.html:83
+#, python-format
+msgid ""
+"Last \"A\" of the %(aaa_archetype)s alongisde %(anson)s and %(anneke)s, her bleed bonus and title are good and her "
+"special unlock ability is very strong."
+msgstr ""
+"Dernier «A» de l'%(aaa_archetype)s avec %(anson)s et %(anneke)s, son bonus de morsure et son titre sont parfaits et "
+"son aptitude de redressement est très forte."
+
+#: codex_of_the_damned/templates/best-cards/clans/toreador.html:94
+msgid ""
+"His unique ability makes him a good addition in many construct hoping to get an open road for bleed actions at some "
+"point."
+msgstr ""
+"Son aptitude unique en fait un bon ajout dans de nombreux decks dans l'espoir d'ouvrir une voie pour les actions de "
+"morsure à un moment donné."
+
+#: codex_of_the_damned/templates/best-cards/clans/toreador.html:101
+#, python-format
+msgid ""
+"A decent price for a <em>Prince</em> with this %(AUS)s%(CEL)s disciplines. More often than not, he is seen using "
+"range weapons like the %(magnum)s."
+msgstr ""
+"Un prix décent pour un <em> Prince </em> avec ces disciplines %(AUS)s%(CEL)s. Le plus souvent, on le voit utiliser "
+"des armes à feu comme le %(magnum)s."
+
+#: codex_of_the_damned/templates/best-cards/clans/toreador.html:108
+#, python-format
+msgid "A cheap %(pre)s vampire who finds her place in many decks."
+msgstr "Un vampire pas cher avec %(pre)s qui trouve sa place dans de nombreux decks."
+
+#: codex_of_the_damned/templates/best-cards/clans/toreador.html:114
+#, python-format
+msgid "Only 6 pool for a +1 bleed with %(AUS)s%(PRE)s, this is a bargain."
+msgstr "Seulement 6 d'influence pour une morsure à +1 avec %(AUS)s%(PRE)s, c'est une bonne affaire."
+
+#: codex_of_the_damned/templates/best-cards/clans/toreador.html:120
+#, python-format
+msgid "The bonus stealth is quite strong combined with %(PRE)s, and the pool cost not so high."
+msgstr "Le bonus de discrétion est assez fort combiné avec %(PRE)s, et le coût en influence pas si élevé."
+
+#: codex_of_the_damned/templates/best-cards/clans/toreador.html:127
+msgid ""
+"The most played clan card for Toreador antitribu, it is an easy way to improve bleed for all vampires. The card is "
+"generally played in multiple copies in the deck, so as to make sure its destruction is not a stopping point for the "
+"construct."
+msgstr ""
+"La carte de clan la plus jouée pour les Toréador antitribu, c'est un moyen facile d'améliorer la morsure pour tous "
+"les vampires. La carte est généralement jouée en plusieurs exemplaires dans le deck, afin de s'assurer que sa "
+"destruction n'est pas un point d'arrêt."
+
+#: codex_of_the_damned/templates/best-cards/clans/toreador.html:136
+#, python-format
+msgid ""
+"An iconic card of the Toreador clan, the cost of having a vampire locked is high, unless used in cunjonction with "
+"%(alexandra)s. Anyway, even at this cost, making sure actions get through without even using stealth is very strong."
+msgstr ""
+"Carte emblématique du clan Toréador, le nécessité d'incliener un vampire est coûteuse, à moins d'être utilisé en "
+"conjonction avec %(alexandra)s. Quoi qu'il en soit, même à ce prix, s'assurer que les actions se déroulent sans même "
+"utiliser de discrétion est très fort."
+
+#: codex_of_the_damned/templates/best-cards/clans/toreador.html:145
+#, python-format
+msgid "A cheap price for superior %(PRE)s, she gets included in many decks."
+msgstr "Un prix plutôt bas pour %(PRE)s en supérieur, elle est incluse dans de nombreux decks."
 
 #: codex_of_the_damned/templates/best-cards/clans/ventrue.html:10
 msgid "Anti Ventrue Grinder"
@@ -8437,4 +8564,10 @@ msgstr ""
 "situation à trois ou cinq joueurs : si la fente fonctionne, vous revenez à un nombre pair et à une situation "
 "favorable. Si elle échoue, vous restez sur un nombre impair de joueurs en ayant mis une grande pression sur la proie."
 " En général, cela signifie que la pression va revenir en force contre vous au prochain tour de table. </p>"
+
+#~ msgid "AAA archetype"
+#~ msgstr ""
+
+#~ msgid "AAA_archetype"
+#~ msgstr "archétype AAA"
 

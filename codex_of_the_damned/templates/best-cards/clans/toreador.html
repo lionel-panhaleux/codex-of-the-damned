@@ -1,199 +1,150 @@
 {% extends "best-cards/_layout.html" %}
+{% import "best-cards/_layout_card_column.html" as layout with context%}
 
 {% block content %}
-<h1><img src="{{ url_for('static', filename='img/icons/clan-toreador.svg') }}"> Toreador</h1>
-<p>
-    The Toreador and their antitribu are a prominent clan in tournaments.
-    They gave birth to two archetypes:
-    {{ link("/archetypes/aaa", _("AAA")) }} using Toreador Camarilla Royalty and
-    {{ link("/archetypes/jost-powerbleed", _("Jost Powerbleed")) }} using antitribu
-    and their clan cards to deadly effects.
-    Moreover, they are used in numbers in the
-    {{ link("/archetypes/weenie-aus", _("Weenie AUS")) }} archetype.
-</p>
-<h2>Highlights</h2>
-<div class="column">
-    <div class="column-image">
-        <img src="https://images.krcg.org/anson.jpg">
-        <h4>Anson</h4>
-        <p class="center-subtitle">played in 82 decks, typically 2-5 copies</p>
-    </div>
+<h1><img src="{{ url_for('static', filename='img/icons/clan-toreador.svg') }}">
+    {% trans trimmed %}
+    Toreador
+    {% endtrans %}
+</h1>
+<div class="tip">
     <p>
-        The definite star of the clan, his rare ability can completely reshape
-        the way Master cards are handled in a deck. Using some
-        {{ card("Ashur Tablets") }} with him becomes very
-        efficient.
+        {% trans trimmed 
+            aaa_archetype=link("/archetypes/aaa", "AAA "),
+            jost_powerbleed=link("/archetypes/jost-powerbleed", "Jost Powerbleed"),
+            weenie_aus=link("/archetypes/weenie-aus", "Weenie AUS")
+        %}
+        The Toreador and their antitribu are a prominent clan in tournaments.
+        They gave birth to two archetypes: {{ aaa }} using Toreador Camarilla Royalty
+        and {{ jost_powerbleed }} using antitribu and their clan cards.
+        Moreover, they are used in numbers in the {{ weenie_aus }} archetype.
+        {% endtrans %}
     </p>
 </div>
-<div class="column">
-    <div class="column-image">
-        <img src="https://images.krcg.org/rafaeldecorazon.jpg">
-        <h4>Rafael de Corazon</h4>
-        <p class="center-subtitle">played in 69 decks, typically 1-3 copies</p>
-    </div>
-    <p>
-        With its superior <i>O</i> and <i>D</i> over its already powerful clan disciplines,
-        he is the most played Inner Circle after
-        {{ card("Lutz von Hohenzollern") }},
-        a vampire he often accompanies anyway.
-    </p>
-</div>
-<div class="column">
-    <div class="column-image">
-        <img src="https://images.krcg.org/isabeldeleon.jpg">
-        <h4>Isabel de Leon</h4>
-        <p class="center-subtitle">played in 67 decks, typically 1 copy</p>
-    </div>
-    <p>
-        The cheapest <i>A</i> pool can buy. An easy inclusion in many constructs.
-    </p>
-</div>
-<div class="column">
-    <div class="column-image">
-        <img src="https://images.krcg.org/anneke.jpg">
-        <h4>Anneke</h4>
-        <p class="center-subtitle">played in 56 decks, typically 1-3 copies</p>
-    </div>
-    <p>
-        Second "A" of the {{ link("/archetypes/aaa", _("AAA archetype")) }} after
-        {{ card("Anson") }},
-        her +1 bleed and unique ability to block cross table makes for a nice package
-        in any construct with intercept capabilities.
-    </p>
-</div>
-<div class="column">
-    <div class="column-image">
-        <img src="https://images.krcg.org/artmuseum.jpg">
-        <h4>Art Museum</h4>
-        <p class="center-subtitle">played in 51 decks, typically 1-2 copies</p>
-    </div>
-    <p>
-        A nice bloat card providing 1 pool per turn, it can help get vampires out faster if it is drawn
-        early on.
-    </p>
-</div>
-<div class="column">
-    <div class="column-image">
-        <img src="https://images.krcg.org/francoisvillon.jpg">
-        <h4>François Villon</h4>
-        <p class="center-subtitle">played in 47 decks, typically 1-3 copies</p>
-    </div>
-    <p>
-        Often side algonside {{ card("Anson") }} and
-        {{ card("Anneke") }},
-        his title combined with his nice ability makes for a good option.
-    </p>
-</div>
-<div class="column">
-    <div class="column-image">
-        <img src="https://images.krcg.org/remilliarddevoutcrusader.jpg">
-        <h4>Remilliard</h4>
-        <p class="center-subtitle">played in 43 decks, typically 1 copy</p>
-    </div>
-    <p>
-        A cheap <i>A</i> vampire with access to a useful inferior <i>r</i>, he gets included in many decks.
-    </p>
-</div>
-<div class="column">
-    <div class="column-image">
-        <img src="https://images.krcg.org/alexandra.jpg">
-        <h4>Alexandra</h4>
-        <p class="center-subtitle">played in 40 decks, typically 2-3 copies</p>
-    </div>
-    <p>
-        Last "A" of the {{ link("/archetypes/aaa", _("AAA archetype")) }} alongisde
-        {{ card("Anson") }} and
-        {{ card("Anneke") }}, her bleed bonus and title are good and her
-        special unlock ability is very strong.
-    </p>
-</div>
-<div class="column">
-    <div class="column-image">
-        <img src="https://images.krcg.org/andreleroux.jpg">
-        <h4>Andre LeRoux</h4>
-        <p class="center-subtitle">played in 39 decks, typically 1-2 copies</p>
-    </div>
-    <p>
-        His unique ability makes him a good addition in many construct hoping
-        to get an open road for bleed actions at some point.
-    </p>
-</div>
-<div class="column">
-    <div class="column-image">
-        <img src="https://images.krcg.org/marcellus.jpg">
-        <h4>Marcellus</h4>
-        <p class="center-subtitle">played in 36 decks, typically 1-2 copies</p>
-    </div>
-    <p>
-        A decent price for a <em>Prince</em> with this <i>AC</i> disciplines.
-        More often than not, he is seen using range weapons like the
-        {{ card(".44 Magnum") }}.
-    </p>
-</div>
-<div class="column">
-    <div class="column-image">
-        <img src="https://images.krcg.org/delilaheaston.jpg">
-        <h4>Delilah Easton</h4>
-        <p class="center-subtitle">played in 29 decks, typically 1 copy</p>
-    </div>
-    <p>
-        A cheap <i>r</i> vampire who finds her place in many decks.
-    </p>
-</div>
-<div class="column">
-    <div class="column-image">
-        <img src="https://images.krcg.org/sheilamezarin.jpg">
-        <h4>Sheila Mezarin</h4>
-        <p class="center-subtitle">played in 33 decks, typically 1-2 copies</p>
-    </div>
-    <p>
-        Only 6 pool for a +1 bleed with <i>AR</i>, this is a bargain.
-    </p>
-</div>
-<div class="column">
-    <div class="column-image">
-        <img src="https://images.krcg.org/jostwerner.jpg">
-        <h4>Jost Werner</h4>
-        <p class="center-subtitle">played in 29 decks, typically 1-3 copies</p>
-    </div>
-    <p>
-        The bonus stealth is quite strong combined with <i>R</i>, and the pool cost not so high.
-    </p>
-</div>
-<div class="column">
-    <div class="column-image">
-        <img src="https://images.krcg.org/pallagrande.jpg">
-        <h4>Palla Grande</h4>
-        <p class="center-subtitle">played in 29 decks, typically 2-4 copies</p>
-    </div>
-    <p>
-        The most played clan card for Toreador antitribu,
-        it is an easy way to improve bleed for all vampires.
-        The card is generally played in multiple copies in the deck,
-        so as to make sure its destruction is not a stopping point for the construct.
-    </p>
-</div>
-<div class="column">
-    <div class="column-image">
-        <img src="https://images.krcg.org/toreadorgrandball.jpg">
-        <h4>Toreador Grand Ball</h4>
-        <p class="center-subtitle">played in 28 decks, typically 3-7 copies</p>
-    </div>
-    <p>
-        An iconic card of the Toreador clan, the cost of having a vampire locked is high,
-        unless used in cunjonction with {{ card("Alexandra") }}.
-        Anyway, even at this cost, making sure actions get through without even using stealth is very
-        strong.
-    </p>
-</div>
-<div class="column">
-    <div class="column-image">
-        <img src="https://images.krcg.org/marianagilbert.jpg">
-        <h4>Mariana Gilbert</h4>
-        <p class="center-subtitle">played in 27 decks, typically 1 copy</p>
-    </div>
-    <p>
-        A cheap price for superior <i>R</i>, she gets included in many decks.
-    </p>
-</div>
+
+{% call layout.card_column("Anson", decks=82, copies="2-5") %}
+{% trans trimmed ashur_tablets=card("Ashur Tablets") %}
+The definite star of the clan, his rare ability can completely reshape
+the way Master cards are handled in a deck. Using some {{ ashur_tablets }}
+with him becomes very efficient.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Rafael de Corazon", decks=69, copies="1-3") %}
+{% trans trimmed lutz_von_hohenzollern=card("Lutz von Hohenzollern") %}
+With its superior {{ OBF }} and {{ DOM }} over its already powerful clan disciplines,
+he is the most played Inner Circle after {{ lutz_von_hohenzollern }},
+a vampire he often accompanies anyway.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Isabel de Leon", decks=67, copies="1") %}
+{% trans trimmed %}
+The cheapest {{ AUS }} pool can buy. An easy inclusion in many constructs.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Anneke", decks=56, copies="1-3") %}
+{% trans trimmed 
+    aaa_archetype=link("/archetypes/aaa", _("AAA archetype")),
+    anson=card("Anson")
+%}
+Second "A" of the {{ aaa_archetype }} after {{ anson }},
+her +1 bleed and unique ability to block cross table makes for a nice package
+in any construct with intercept capabilities.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Art Museum", decks=51, copies="1-2") %}
+{% trans trimmed %}
+A nice bloat card providing 1 pool per turn,
+it can help get vampires out faster if it is drawn early on.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("François Villon", decks=47, copies="1-3") %}
+{% trans trimmed 
+    anson=card("Anson"), 
+    anneke=card("Anneke") 
+%}
+Often found algonside {{ anson }} and {{ anneke }},
+his title combined with his nice ability makes for a good option.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Remilliard, Devout Crusader", decks=43, copies="1") %}
+{% trans trimmed %}
+A cheap {{ AUS }} vampire with access to a useful inferior {{ pre }},
+he gets included in many decks.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Alexandra", decks=40, copies="2-3") %}
+{% trans trimmed 
+    aaa_archetype=link("/archetypes/aaa", _("AAA archetype")),
+    anson=card("Anson"),
+    anneke=card("Anneke") 
+%}
+Last "A" of the {{ aaa_archetype }} alongisde {{ anson }} and {{ anneke }},
+her bleed bonus and title are good and her special unlock ability is very strong.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Andre LeRoux", decks=39, copies="1-2") %}
+{% trans trimmed %}
+His unique ability makes him a good addition in many construct hoping
+to get an open road for bleed actions at some point.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Marcellus", decks=36, copies="1-2") %}
+{% trans trimmed magnum=card(".44 Magnum") %}
+A decent price for a <em>Prince</em> with this {{ AUS }}{{ CEL }} disciplines.
+More often than not, he is seen using range weapons like the {{ magnum }}.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Delilah Easton", decks=29, copies="1") %}
+{% trans trimmed %}
+A cheap {{ pre }} vampire who finds her place in many decks.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Sheila Mezarin", decks=33, copies="1-2") %}
+{% trans trimmed %}
+Only 6 pool for a +1 bleed with {{ AUS }}{{ PRE }}, this is a bargain.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Jost Werner", decks=29, copies="1-3") %}
+{% trans trimmed %}
+The bonus stealth is quite strong combined with {{ PRE }},
+and the pool cost not so high.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Palla Grande", decks=29, copies="2-4") %}
+{% trans trimmed %}
+The most played clan card for Toreador antitribu,
+it is an easy way to improve bleed for all vampires.
+The card is generally played in multiple copies in the deck,
+so as to make sure its destruction is not a stopping point for the construct.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Toreador Grand Ball", decks=28, copies="3-7") %}
+{% trans trimmed alexandra=card("Alexandra") %}
+An iconic card of the Toreador clan, the cost of having a vampire locked is high,
+unless used in cunjonction with {{ alexandra }}.
+Anyway, even at this cost, making sure actions get through without even using stealth
+is very strong.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Mariana Gilbert", decks=27, copies="1") %}
+{% trans trimmed %}
+A cheap price for superior {{ PRE }}, she gets included in many decks.
+{% endtrans %}
+{% endcall %}
+
 {% endblock %}
