@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: codex 0.X\n"
 "Report-Msgid-Bugs-To: lionel.panhaleux+codex@gmail.com\n"
-"POT-Creation-Date: 2020-10-06 15:53+0200\n"
+"POT-Creation-Date: 2020-10-06 17:20+0200\n"
 "PO-Revision-Date: 2020-07-04 08:50+0200\n"
 "Last-Translator: Lionel Panhaleux <lionel.panhaleux+codex@gmail.com>\n"
 "Language: fr\n"
@@ -154,7 +154,6 @@ msgid "Girls Will Find Inner Circle"
 msgstr ""
 
 #: codex_of_the_damned/navigation.py:105 codex_of_the_damned/templates/archetypes/tzimisce-wall.html:38
-#: codex_of_the_damned/templates/best-cards/clans/tremere.html:24
 #: codex_of_the_damned/templates/best-cards/sects/anarch.html:9
 msgid "Goratrix High Tower"
 msgstr ""
@@ -199,7 +198,7 @@ msgstr ""
 msgid "Mind Rape"
 msgstr ""
 
-#: codex_of_the_damned/navigation.py:116 codex_of_the_damned/templates/best-cards/clans/tremere.html:15
+#: codex_of_the_damned/navigation.py:116
 msgid "Mistress"
 msgstr ""
 
@@ -208,9 +207,6 @@ msgid "Nananimalism"
 msgstr ""
 
 #: codex_of_the_damned/navigation.py:118 codex_of_the_damned/templates/archetypes/tupdogs.html:37
-#: codex_of_the_damned/templates/best-cards/clans/tremere.html:19
-#: codex_of_the_damned/templates/best-cards/clans/tremere.html:99
-#: codex_of_the_damned/templates/best-cards/clans/tremere.html:131
 #: codex_of_the_damned/templates/best-cards/sects/anarch.html:122
 msgid "Nephandii"
 msgstr ""
@@ -269,8 +265,6 @@ msgid "The unnamed"
 msgstr ""
 
 #: codex_of_the_damned/navigation.py:132 codex_of_the_damned/templates/archetypes/nephandii.html:44
-#: codex_of_the_damned/templates/best-cards/clans/tremere.html:28
-#: codex_of_the_damned/templates/best-cards/clans/tremere.html:194
 msgid "Tupdogs"
 msgstr ""
 
@@ -279,7 +273,6 @@ msgid "Tzimisce Toolbox"
 msgstr ""
 
 #: codex_of_the_damned/navigation.py:134 codex_of_the_damned/templates/archetypes/mistress.html:33
-#: codex_of_the_damned/templates/best-cards/clans/tremere.html:38
 #: codex_of_the_damned/templates/best-cards/clans/tzimisce.html:9
 msgid "Tzimisce Wall"
 msgstr ""
@@ -290,7 +283,7 @@ msgstr ""
 msgid "Ventrue Royalty"
 msgstr ""
 
-#: codex_of_the_damned/navigation.py:136 codex_of_the_damned/templates/best-cards/clans/tremere.html:11
+#: codex_of_the_damned/navigation.py:136
 msgid "War Chantry"
 msgstr ""
 
@@ -872,7 +865,7 @@ msgstr ""
 #: codex_of_the_damned/templates/best-cards/clans/daughters-of-cacophony.html:76
 #: codex_of_the_damned/templates/best-cards/clans/imbued.html:106
 #: codex_of_the_damned/templates/best-cards/clans/lasombra.html:78
-#: codex_of_the_damned/templates/best-cards/clans/tremere.html:120
+#: codex_of_the_damned/templates/best-cards/clans/tremere.html:104
 #: codex_of_the_damned/templates/best-cards/clans/true-brujah.html:97
 #: codex_of_the_damned/templates/best-cards/generic/celerity.html:32
 #: codex_of_the_damned/templates/best-cards/generic/fortitude.html:18
@@ -5794,6 +5787,161 @@ msgstr ""
 #, python-format
 msgid "A cheap price for superior %(PRE)s, she gets included in many decks."
 msgstr "Un prix plutôt bas pour %(PRE)s en supérieur, elle est incluse dans de nombreux decks."
+
+#: codex_of_the_damned/templates/best-cards/clans/tremere.html:7
+#, python-format
+msgid ""
+"<p> The Tremere and their antitribu have access to the unique and versatile %(tha)s discipline. Alongside %(dom)s and"
+" %(aus)s, it makes for a powerful combination, used in many successful archetypes: <ul> <li> The %(war_chantry)s, a "
+"toolbox using all three clan disciplines %(aus)s%(dom)s %(tha)s. </li> <li> %(mistress)s, an <em>Inner Circle</em> "
+"build using %(mistress_fanchon)s. </li> <li> The %(nephandii)s, using %(antonio_d_erlette)s to put multiple "
+"%(nephandus)s into play. </li> <li> The %(goratrix_high_tower)s, a wall using %(goratrix)s and its superior %(ANI)s "
+"as star. </li> <li> %(tupdogs)s, a rush archetype which uses Tremere antitribu to get some %(tupdog)s into play and "
+"use them to dispose of the opponents minions. </li> </ul> </p> <p> Finally, Tremere also appear in the "
+"%(tzimisce_wall)s archetype as %(lord_tremere)s, %(mistress_fanchon)s and %(malgorzata)s all have %(VIC)s alongside "
+"powerful abilities. </p>"
+msgstr ""
+"<p> Les Tremere et leurs antitribus ont accès à la discipline %(tha)s, rare et polyvalente. Associée à %(dom)s et "
+"%(aus)s, elles constitue une combinaison puissante, utilisée dans de nombreux archétypes à succès : <ul> <li> La "
+"%(war_chantry)s, une toolbox qui utilise les trois disciplines de clan %(aus)s%(dom)s %(tha)s. </li> <li> "
+"%(mistress)s, un deck de membres du <em>Cercle Intérieur</em> qui utilise %(mistress_fanchon)s. </li> <li> Le "
+"%(nephandii)s, qui utilise %(antonio_d_erlette)s pour mettre en jeu des %(nephandus)s. </li> <li> Le "
+"%(goratrix_high_tower)s, un mur qui utilise %(goratrix)s et son %(ANI)s en supérieur comme star. </li> <li> "
+"%(tupdogs)s, un archétype de rush qui utilise les Tremere antitribu pour mettre en jeu des %(tupdog)s et les utiliser"
+" pour se débarrasser des serviteurs adverses. </li> </ul> </p> <p> Enfin, les Tremere apparaissent également dans "
+"l'archétype %(tzimisce_wall)s car %(lord_tremere)s, %(mistress_fanchon)s et %(malgorzata)s ont tous %(VIC)s associée "
+"à de puissantes aptitudes. </p>"
+
+#: codex_of_the_damned/templates/best-cards/clans/tremere.html:58
+#, python-format
+msgid ""
+"A good stealth enhancer, the only one available with the clan disciplines. Its combat avoidance effect at superior "
+"%(THA)s can come in handy."
+msgstr ""
+"Un bon améliorateur de discrétion, le seul disponible avec les disciplines du clan. Son effet qui permet d'éviter le "
+"combat en %(THA)s supérieure peut être utile."
+
+#: codex_of_the_damned/templates/best-cards/clans/tremere.html:65
+#, python-format
+msgid ""
+"A rare effect in the game, the ability to fetch any equipment in the library is very strong. The +3 stealth bonus at "
+"superior %(THA)s makes it very hard to block. Some decks use %(THA)s for this card only."
+msgstr ""
+"Un effet rare dans le jeu, la possibilité de récupérer n'importe quel équipement de la bibliothèque est très forte. "
+"Le bonus de discrétion de +3 en %(THA)s supérieure rend le blocage très difficile. Certains decks utilisent %(THA)s "
+"pour cette carte uniquement."
+
+#: codex_of_the_damned/templates/best-cards/clans/tremere.html:73
+#, python-format
+msgid "The cheapest %(DOM)s pool can buy, he is played in many decks."
+msgstr "Le vampire avec %(DOM)s le moins cher du jeu, il est joué dans de nombreux jeux."
+
+#: codex_of_the_damned/templates/best-cards/clans/tremere.html:79
+msgid ""
+"An excellent combat card: as it <em>steals</em> blood there is no damage to prevent, and at the end of the round it "
+"is a 4 blood difference between the two vampires, at no cost."
+msgstr ""
+"Une excellente carte de combat : comme elle <em>vole</em> du sang, il n'y a pas de dégâts à prévenir, et à la fin du "
+"round c'est une différence de 4 sang entre les deux vampires, gratuitement."
+
+#: codex_of_the_damned/templates/best-cards/clans/tremere.html:87
+#, python-format
+msgid ""
+"An excellent ally: not so expensive, not unique so many of them can be into play, they strike 1R with a press and "
+"prevent one damage per strike, so this means they do not lose any life against a vampire that does not play any "
+"combat card. They gave birth to the %(nephandii)s archetype."
+msgstr ""
+"Un excellent allié : pas si cher, pas unique donc ils peuvent être mis en jeu en nombre, ils frappent 1R avec une "
+"poursuite et évitent un dégât par coup, donc ils ne perdent aucune vie contre un vampire qui ne joue pas de carte de "
+"combat. Ils ont donné naissance à l'archétype %(nephandii)s."
+
+#: codex_of_the_damned/templates/best-cards/clans/tremere.html:97
+msgid ""
+"A good ally at a cheap price: he is quite the defender and very resilient as aggravated damage is required to kill "
+"him."
+msgstr ""
+"Un bon allié à petit prix : c'est un bon défenseur, il est très résistant car il faut des dégâts aggravés pour le "
+"tuer."
+
+#: codex_of_the_damned/templates/best-cards/clans/tremere.html:104
+#, python-format
+msgid ""
+"An expensive but powerful device to augment %(a_b)s. Its cost did not prevent it to be played in many %(tha)s decks, "
+"if only as an option."
+msgstr ""
+"Un outil coûteux mais puissant pour augmenter l'%(a_b)s. Son coût ne l'a pas empêché d'être joué dans de nombreux "
+"decks %(tha)s, ne serait-ce qu'en option."
+
+#: codex_of_the_damned/templates/best-cards/clans/tremere.html:111
+#, python-format
+msgid ""
+"Second pillar of the %(nephandii)s archetype, his capacity is exceptionnal. Being able to put some allies into play "
+"without even taking an action that could be blocked is a definitive edge."
+msgstr ""
+"Deuxième pilier de l'archétype %(nephandii)s, son aptitude est exceptionnelle. Pouvoir mettre des alliés en jeu sans "
+"même entreprendre une action qui pourrait être bloquée est un avantage incontestable."
+
+#: codex_of_the_damned/templates/best-cards/clans/tremere.html:119
+msgid ""
+"A good bloat device at a decent price. Few clans have access to this kind of location, but it generates a pool per "
+"turn so it is quickly profitable."
+msgstr ""
+"Un bon outil de régénération à un prix décent. Peu de clans ont accès à ce genre de lieu, il génère un point "
+"d'influence par tour donc c'est rapidement rentable."
+
+#: codex_of_the_damned/templates/best-cards/clans/tremere.html:126
+#, python-format
+msgid ""
+"An <em>Inner Circle</em> with the classical 4 votes and +2 bleed bonus, she also has a unique ability to fetch the "
+"card she wants. Moreover, her %(AUD)s%(DOM)s%(OBF)s disciplines combination, alongside %(THA)s%(VIC)s, is powerful in"
+" many decks."
+msgstr ""
+"Une membre du <em>Cercle Intérieur</em> avec le classique 4 votes et morsure à +2, elle a également une aptitude "
+"unique pour aller chercher la carte qu'elle veut. De plus, sa combinaison de disciplines %(AUD)s%(DOM)s%(OBF)s, aux "
+"côtés de %(THA)s%(VIC)s, est puissante dans de nombreux decks."
+
+#: codex_of_the_damned/templates/best-cards/clans/tremere.html:135
+msgid "A very versatile combat device: maneuver or press at no cost is a great tool."
+msgstr "Un outil de combat très polyvalent : manœuvrer ou poursuivre gratuitement est un excellent choix."
+
+#: codex_of_the_damned/templates/best-cards/clans/tremere.html:141
+msgid "A star among the Tremere, her +1 intercept an good disciplines for a decent cost makes her a favorite in many decks."
+msgstr ""
+"Une star parmi les Tremere, son interception à +1 et de bonnes disciplines pour un coût décent en fait une favorite "
+"dans de nombreux decks."
+
+#: codex_of_the_damned/templates/best-cards/clans/tremere.html:148
+#, python-format
+msgid ""
+"An infamous rush device, only available as an offensive tool for Tremere antitribu. They gave birth to the "
+"%(tupdogs)s archetype."
+msgstr ""
+"Un outil de rush fameux, uniquement disponible comme pour les Tremere antitribu. Ils ont donné naissance à "
+"l'archétype %(tupdogs)s."
+
+#: codex_of_the_damned/templates/best-cards/clans/tremere.html:155
+msgid "A good disciplines combination for only 3 pool, plus he is in the group 3 so he can be included in many crypts."
+msgstr ""
+"Une bonne combinaison de disciplines pour seulement 3 d'influence, il appartient de plus au groupe 3 et peut donc "
+"être inclus dans de nombreuses cryptes."
+
+#: codex_of_the_damned/templates/best-cards/clans/tremere.html:162
+#, python-format
+msgid ""
+"Yet another %(dom)s%(aus)s for 3, included in many crypts for the same reason as %(saiz)s: she's cheap and has good "
+"disciplines."
+msgstr ""
+"Encore une autre %(dom)s%(aus)s pour 3, inclus dans de nombreuses cryptes pour la même raison que %(saiz)s : elle est"
+" bon marché et a de bonnes disciplines."
+
+#: codex_of_the_damned/templates/best-cards/clans/tremere.html:169
+#, python-format
+msgid ""
+"A very decent damage prevention card, even if not as powerful as %(for)s %(rolling_with_the_punches)s, it is the only"
+" damage prevention available to the Tremere."
+msgstr ""
+"Une carte de prévention de dégâts très décente, même si elle n'est pas aussi puissante que %(for)s "
+"%(rolling_with_the_punches)s, c'est la seule prévention de dégâts disponible pour les Tremere."
 
 #: codex_of_the_damned/templates/best-cards/clans/ventrue.html:10
 msgid "Anti Ventrue Grinder"
