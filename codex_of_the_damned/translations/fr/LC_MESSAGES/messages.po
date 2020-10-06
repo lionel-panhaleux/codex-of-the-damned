@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: codex 0.X\n"
 "Report-Msgid-Bugs-To: lionel.panhaleux+codex@gmail.com\n"
-"POT-Creation-Date: 2020-10-06 17:20+0200\n"
+"POT-Creation-Date: 2020-10-06 18:01+0200\n"
 "PO-Revision-Date: 2020-07-04 08:50+0200\n"
 "Last-Translator: Lionel Panhaleux <lionel.panhaleux+codex@gmail.com>\n"
 "Language: fr\n"
@@ -481,9 +481,9 @@ msgstr "Toréador"
 msgid "Tremere"
 msgstr ""
 
-#: codex_of_the_damned/navigation.py:198
+#: codex_of_the_damned/navigation.py:198 codex_of_the_damned/templates/best-cards/clans/true-brujah.html:6
 msgid "True Brujah"
-msgstr "Brujah Véritable"
+msgstr "Brujah Véritables"
 
 #: codex_of_the_damned/navigation.py:199
 msgid "Tzimisce"
@@ -866,7 +866,7 @@ msgstr ""
 #: codex_of_the_damned/templates/best-cards/clans/imbued.html:106
 #: codex_of_the_damned/templates/best-cards/clans/lasombra.html:78
 #: codex_of_the_damned/templates/best-cards/clans/tremere.html:104
-#: codex_of_the_damned/templates/best-cards/clans/true-brujah.html:97
+#: codex_of_the_damned/templates/best-cards/clans/true-brujah.html:82
 #: codex_of_the_damned/templates/best-cards/generic/celerity.html:32
 #: codex_of_the_damned/templates/best-cards/generic/fortitude.html:18
 #: codex_of_the_damned/templates/best-cards/generic/master-cards.html:56
@@ -5942,6 +5942,97 @@ msgid ""
 msgstr ""
 "Une carte de prévention de dégâts très décente, même si elle n'est pas aussi puissante que %(for)s "
 "%(rolling_with_the_punches)s, c'est la seule prévention de dégâts disponible pour les Tremere."
+
+#: codex_of_the_damned/templates/best-cards/clans/true-brujah.html:12
+#, python-format
+msgid ""
+"The True Brujah and their unique %(tem)s discipline have some powerful vampires among their ranks. The use of "
+"%(summon_history)s to put vampires or allies into play fast and cheap has given birth to interesting decklists, like "
+"%(fernando_grossi_s_deck)s from 2011."
+msgstr ""
+"Les Brujah Véritables et leur discipline exclusive %(tem)s comptent de puissants vampires dans leurs rangs. "
+"L'utilisation de %(summon_history)s pour mettre en jeu des vampires ou des alliés rapidement et à bas prix a donné "
+"naissance à des decklists intéressantes, comme le %(fernando_grossi_s_deck)s de 2011."
+
+#: codex_of_the_damned/templates/best-cards/clans/true-brujah.html:14
+msgid "Fernando Grossi's deck"
+msgstr "deck de Fernando Grossi"
+
+#: codex_of_the_damned/templates/best-cards/clans/true-brujah.html:26
+#, python-format
+msgid ""
+"Often played for its additional stealth at inferior %(obf)s outside of the clan, its %(tem)s and %(TEM)s effects "
+"makes it a useful tool in virtually all True Brujah decks. Combined with %(outside_the_hourglass)s, it forms the most"
+" dreadful combat combination of the game."
+msgstr ""
+"Souvent joué pour sa discrétion supplémentaire en %(obf)s inférieur en dehors du clan, ses effets %(tem)s et %(TEM)s "
+"en font un outil utile dans pratiquement tous les decks Brujah Véritables. Combiné avec %(outside_the_hourglass)s, il"
+" forme la combinaison de combat la plus efficace du jeu."
+
+#: codex_of_the_damned/templates/best-cards/clans/true-brujah.html:35
+msgid "A Hunting Ground giving +1 hand size at no cost is awesome, the fact that it is removable is not really an issue."
+msgstr ""
+"Un terrain de chasse gratuit qui en plus ajoute un à la taille de main est formidable, le fait qu'il soit amovible "
+"n'est pas vraiment un problème."
+
+#: codex_of_the_damned/templates/best-cards/clans/true-brujah.html:42
+#, python-format
+msgid ""
+"An excellent stealth device at superior %(TEM)s, as it not only adds stealth but also tends to consume wakes on the "
+"opponents side. The %(pot)s is useful when a bleed is bounced: a block attempt, even non succesful, allows it to "
+"cancel the action."
+msgstr ""
+"Un excellent outil de discrétion en %(TEM)s supérieur, car il ajoute non seulement de la discrétion, mais a également"
+" tendance à consommer des réveils du côté de l'adversaire. La version %(pot)s est utile lorsqu'une morsure est "
+"rebondie : une tentative de blocage, même infructueuse, lui permet d'annuler l'action."
+
+#: codex_of_the_damned/templates/best-cards/clans/true-brujah.html:51
+#, python-format
+msgid ""
+"A unique effect: combined with %(domain_of_evernight)s it can deliver aggravated damage <em>before</em> the strikes. "
+"Hard to prevent as it is not a strike, and oblivious to \"combat ends\", it can be combined with %(disarm)s as it is "
+"not environmental."
+msgstr ""
+"Un effet unique : combiné avec %(domain_of_evernight)s, il peut infliger des dégâts aggravés <em>avant</em> les "
+"frappes. Difficile à éviter car il ne s'agit pas d'une frappe, et insensible aux «fins de combat», il peut être "
+"combiné avec %(disarm)s car il n'est pas environnemental."
+
+#: codex_of_the_damned/templates/best-cards/clans/true-brujah.html:63
+#, python-format
+msgid ""
+"A unique effect both at inferior %(tem)s and superior %(TEM)s. Combined with %(the_ankara_citadel)s, it can put "
+"allies and vampires into play for half the price."
+msgstr ""
+"Un effet unique à la fois en %(tem)s inférieur et en %(TEM)s supérieur. Combiné avec %(the_ankara_citadel)s, il peut "
+"mettre en jeu des alliés et des vampires pour la moitié du prix."
+
+#: codex_of_the_damned/templates/best-cards/clans/true-brujah.html:73
+#, python-format
+msgid ""
+"The most played vampire of the clan, its superior %(FOR)s is often the reason of its presence in a crypt. As True "
+"Brujah are scarce, the ability to play %(freak_drive)s is a good asset."
+msgstr ""
+"Vampire le plus joué du clan, sa %(FOR)s en supérieur est souvent la raison de sa présence dans une crypte. Comme les"
+" Brujah Véritables sont rarissimes, la possibilité de jouer %(freak_drive)s est un bon atout."
+
+#: codex_of_the_damned/templates/best-cards/clans/true-brujah.html:81
+#, python-format
+msgid ""
+"Also used in %(obf)s constructs to help get more vampires out of the crypt, its superior %(TEM)s effect is an obvious"
+" %(a_b)s increase at a very cheap cost."
+msgstr ""
+"Également utilisé dans les constructions %(obf)s pour aider à sortir plus de vampires de la crypte, son effet %(TEM)s"
+" supérieur est une augmentation évidente de l'%(a_b)s à un coût très réduit."
+
+#: codex_of_the_damned/templates/best-cards/clans/true-brujah.html:90
+msgid ""
+"An excellent clan card: the +3 stealth bonus makes it virtually unblockable, and its effect is excellent at "
+"controlling the table. Both neighbours can quickly loose their bleed bounces or lunge cards, plus it can be used to "
+"deal across the table."
+msgstr ""
+"Une excellente carte de clan : le bonus de discrétion à +3 la rend pratiquement imblocable, et son effet est "
+"excellent pour contrôler la table. Les deux voisins peuvent rapidement perdre leurs rebonds de morsure ou leurs "
+"cartes de fente, et cela peut également être utilisé pour négocier en face de table."
 
 #: codex_of_the_damned/templates/best-cards/clans/ventrue.html:10
 msgid "Anti Ventrue Grinder"
