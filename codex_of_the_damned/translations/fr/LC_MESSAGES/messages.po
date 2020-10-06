@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: codex 0.X\n"
 "Report-Msgid-Bugs-To: lionel.panhaleux+codex@gmail.com\n"
-"POT-Creation-Date: 2020-10-05 18:29+0200\n"
+"POT-Creation-Date: 2020-10-05 18:48+0200\n"
 "PO-Revision-Date: 2020-07-04 08:50+0200\n"
 "Last-Translator: Lionel Panhaleux <lionel.panhaleux+codex@gmail.com>\n"
 "Language: fr\n"
@@ -145,7 +145,7 @@ msgstr ""
 msgid "Emerald Legion"
 msgstr ""
 
-#: codex_of_the_damned/navigation.py:103 codex_of_the_damned/templates/best-cards/clans/nosferatu.html:155
+#: codex_of_the_damned/navigation.py:103
 msgid "Euro Brujah"
 msgstr ""
 
@@ -159,7 +159,7 @@ msgstr ""
 msgid "Goratrix High Tower"
 msgstr ""
 
-#: codex_of_the_damned/navigation.py:106 codex_of_the_damned/templates/best-cards/clans/nosferatu.html:94
+#: codex_of_the_damned/navigation.py:106
 msgid "Guruhi Rush"
 msgstr ""
 
@@ -199,13 +199,11 @@ msgstr ""
 msgid "Mind Rape"
 msgstr ""
 
-#: codex_of_the_damned/navigation.py:116 codex_of_the_damned/templates/best-cards/clans/nosferatu.html:130
-#: codex_of_the_damned/templates/best-cards/clans/tremere.html:15
+#: codex_of_the_damned/navigation.py:116 codex_of_the_damned/templates/best-cards/clans/tremere.html:15
 msgid "Mistress"
 msgstr ""
 
-#: codex_of_the_damned/navigation.py:117 codex_of_the_damned/templates/best-cards/clans/nosferatu.html:8
-#: codex_of_the_damned/templates/best-cards/sects/anarch.html:10
+#: codex_of_the_damned/navigation.py:117 codex_of_the_damned/templates/best-cards/sects/anarch.html:10
 msgid "Nananimalism"
 msgstr ""
 
@@ -217,10 +215,7 @@ msgstr ""
 msgid "Nephandii"
 msgstr ""
 
-#: codex_of_the_damned/navigation.py:119 codex_of_the_damned/templates/best-cards/clans/nosferatu.html:11
-#: codex_of_the_damned/templates/best-cards/clans/nosferatu.html:70
-#: codex_of_the_damned/templates/best-cards/clans/nosferatu.html:80
-#: codex_of_the_damned/templates/best-cards/clans/nosferatu.html:116
+#: codex_of_the_damned/navigation.py:119
 msgid "Nosferatu Royalty"
 msgstr ""
 
@@ -266,9 +261,7 @@ msgstr ""
 msgid "The Bleeding Vignes"
 msgstr ""
 
-#: codex_of_the_damned/navigation.py:130 codex_of_the_damned/templates/best-cards/clans/nosferatu.html:9
-#: codex_of_the_damned/templates/best-cards/clans/nosferatu.html:143
-#: codex_of_the_damned/templates/best-cards/clans/ventrue.html:139
+#: codex_of_the_damned/navigation.py:130 codex_of_the_damned/templates/best-cards/clans/ventrue.html:139
 msgid "The Dark Side of Politics"
 msgstr ""
 
@@ -5414,6 +5407,118 @@ msgstr ""
 msgid "A really cheap 2 pool for %(dom)s, she gets included in many crypts."
 msgstr "2 d'influence est vraiment bon marché pour %(dom)s, elle est incluse dans de nombreuses cryptes."
 
+#: codex_of_the_damned/templates/best-cards/clans/nosferatu.html:8
+#, python-format
+msgid ""
+"The Nosferatu and their antitribu use the %(obf)s%(ani)s%(pot)s disciplines. Some good vampires of theirs are used in"
+" multi-clan crypts, like %(nananimalism)s or %(the_dark_side_of_politics)s. They are seen on their own in only one "
+"prominent archetype: the %(nosferatu_royalty)s, a toolbox using Camarilla <em>Princes</em> and <em>Justicars</em>."
+msgstr ""
+"Les Nosferatu et leurs antitribus utilisent les disciplines %(obf)s%(ani)s%(pot)s. Certains de leurs bons vampires "
+"sont utilisés dans les cryptes multi-clans, comme %(nananimalism)s ou %(the_dark_side_of_politics)s. Ils sont vus "
+"seuls dans un seul archétype majeur : le %(nosferatu_royalty)s, une toolbox qui utilise des <em>Princes</em> et "
+"<em>Justicars</em> de la Camarilla."
+
+#: codex_of_the_damned/templates/best-cards/clans/nosferatu.html:24
+#, python-format
+msgid "The cheapest %(ANI)s pool can buy, he gets included in many %(ani)s decks."
+msgstr "L'%(ANI)s le moins cher que l'influence peut acheter, il est inclus dans de nombreux decks %(ani)s."
+
+#: codex_of_the_damned/templates/best-cards/clans/nosferatu.html:30
+#, python-format
+msgid "A cheap %(ANI)s minion, he also gets included in many %(ani)s decks."
+msgstr "Un serviteur %(ANI)s bon marché, il est également inclus dans de nombreux decks %(ani)s."
+
+#: codex_of_the_damned/templates/best-cards/clans/nosferatu.html:36
+#, python-format
+msgid ""
+"5 pool is a bit pricey for %(ANI)s so she is less seen in mono %(ANI)s or multi-clan decks. Her ability can be useful"
+" against %(the_unnamed)s or %(cybele)s though."
+msgstr ""
+"5 d'influence est un peu cher pour %(ANI)s donc elle est moins vue dans les decks mono %(ANI)s ou multi-clans. Sa "
+"capacité peut cependant être utile contre %(the_unnamed)s ou %(cybele)s."
+
+#: codex_of_the_damned/templates/best-cards/clans/nosferatu.html:47
+#, python-format
+msgid ""
+"One pool for permanent stealth is really a bargain: other clans have to pay 2 pool for this kind of device. Only the "
+"Followers of Set %(img_clan_followers)s have a similar tool with %(opium_den)s."
+msgstr ""
+"1 influence pour de la discrétion permanente est vraiment une bonne affaire : les autres clans doivent payer 2 "
+"d'influence pour ce type d'outil. Seuls les Disciples de Set %(img_clan_followers)s ont un outil similaire avec "
+"%(opium_den)s."
+
+#: codex_of_the_damned/templates/best-cards/clans/nosferatu.html:58
+#, python-format
+msgid "A rare effect, quite useful in Nosferatu decks using political actions, like the %(nosferatu_royalty)s archetype."
+msgstr ""
+"Un effet rare, très utile dans les decks Nosferatu qui utilisent des actions politiques, comme l'archétype "
+"%(nosferatu_royalty)s."
+
+#: codex_of_the_damned/templates/best-cards/clans/nosferatu.html:67
+#, python-format
+msgid ""
+"The iconic vampire for %(nosferatu_royalty)s decks, he has an excellent ability that helps get other <em>Princes</em>"
+" out faster and cheaper, or bloat a bit."
+msgstr ""
+"Vampire emblématique des decks %(nosferatu_royalty)s, il a une excellente aptitude qui aide à sortir les autres "
+"<em>Princes</em> plus rapidement et pour moins cher, ou à régénérer un peu."
+
+#: codex_of_the_damned/templates/best-cards/clans/nosferatu.html:76
+#, python-format
+msgid ""
+"Appreciated for his rush ability, he is often included in combat-oriented %(POT)s%(ANI)s decks like the "
+"%(guruhi_rush)s archetype."
+msgstr ""
+"Apprécié pour son aptitude de rush, il est souvent inclus dans les decks orientés combat %(POT)s%(ANI)s comme "
+"l'archétype %(guruhi_rush)s."
+
+#: codex_of_the_damned/templates/best-cards/clans/nosferatu.html:83
+msgid ""
+"A <em>Prince</em> available for a really cheap price, even though his ability can be a problem depending on the "
+"context."
+msgstr "Un <em> Prince </em> pour un prix vraiment bas, même si son aptitude peut poser problème selon le contexte."
+
+#: codex_of_the_damned/templates/best-cards/clans/nosferatu.html:90
+#, python-format
+msgid ""
+"A <em>Prince</em> for the very reasonable price of 7 pool, he is often seen in %(nosferatu_royalty)s decks alongside "
+"%(nikolaus_vermeulen)s and %(calebros_the_martyr)s."
+msgstr ""
+"Un <em> Prince </em> au prix très raisonnable de 7 d'influence, il est souvent vu dans les decks "
+"%(nosferatu_royalty)s aux côtés de %(nikolaus_vermeulen)s et %(calebros_the_martyr)s."
+
+#: codex_of_the_damned/templates/best-cards/clans/nosferatu.html:102
+#, python-format
+msgid ""
+"His title and bleed bonus, combined with the rare %(DOM)s%(OBF)s discipline combination, makes him a good pick in "
+"some political decks, like in the %(mistress)s archetype. His ability can destroy low capacity Anarch decks single-"
+"handedly."
+msgstr ""
+"Son titre et son bonus de morsure, combinés à la rare combinaison de disciplines %(DOM)s%(OBF)s, en font un bon choix"
+" dans certains decks politiques, comme dans l'archétype %(mistress)s. Sa capacité lui permet de détruire à lui seul les decks "
+"Anarch de faible capacité."
+
+#: codex_of_the_damned/templates/best-cards/clans/nosferatu.html:111
+#, python-format
+msgid ""
+"Yet another <em>Prince</em>, she is a bit expensive and does not even have superior %(ANI)s. Still, she can find her "
+"place in <em>Royalty</em> constructs using %(OBF)s, like in %(the_dark_side_of_politics)s archetype."
+msgstr ""
+"Encore un <em>Prince</em>, elle est un peu chère et n'a pas %(ANI)s en supérieur. Pourtant, elle peut trouver "
+"sa place dans les decks <em>Royalty</em> qui utilisent %(OBF)s, comme dans l'archétype "
+"%(the_dark_side_of_politics)s."
+
+#: codex_of_the_damned/templates/best-cards/clans/nosferatu.html:119
+#, python-format
+msgid ""
+"Always included for his ability and strength combined with %(POT)s%(cel)s, he gets included in %(POT)s decks like for"
+" example in the %(euro_brujah)s archetype. He is often seen alongside %(theo_bell)s, as they share similar abilities."
+msgstr ""
+"Toujours inclus pour son aptitude et sa force combinées avec %(POT)s%(cel)s, il peut être inclus dans les decks "
+"%(POT)s comme par exemple l'archétype %(euro_brujah)s. Il est souvent vu aux côtés de %(theo_bell)s, car ils ont des "
+"aptitudes similaires."
+
 #: codex_of_the_damned/templates/best-cards/clans/salubri.html:40
 msgid "an archetype of its own"
 msgstr "un archétype à lui"
@@ -8192,4 +8297,3 @@ msgstr ""
 "situation à trois ou cinq joueurs : si la fente fonctionne, vous revenez à un nombre pair et à une situation "
 "favorable. Si elle échoue, vous restez sur un nombre impair de joueurs en ayant mis une grande pression sur la proie."
 " En général, cela signifie que la pression va revenir en force contre vous au prochain tour de table. </p>"
-

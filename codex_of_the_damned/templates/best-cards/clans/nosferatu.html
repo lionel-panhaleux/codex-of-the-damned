@@ -1,160 +1,130 @@
 {% extends "best-cards/_layout.html" %}
+{% import "best-cards/_layout_card_column.html" as layout with context%}
 
 {% block content %}
 <h1><img src="{{ url_for('static', filename='img/icons/clan-nosferatu.svg') }}"> Nosferatu</h1>
-<p>
-    The Nosferatu and their antitribu use the <i>oip</i> disciplines.
-    Some good vampires of theirs are used in multi-clan crypts,
-    like {{ link("/archetypes/nananimalism", _("Nananimalism")) }} or
-    {{ link("/archetypes/the-dark-side-of-politics", _("The Dark Side of Politics")) }}.
-    They are seen on their own in only one prominent archetype: the
-    {{ link("/archetypes/nosferatu-royalty", _("Nosferatu Royalty")) }}, a toolbox using Camarilla
-    <em>Princes</em> and <em>Justicars</em>.
-</p>
-<h2>Highlights</h2>
-<div class="column">
-    <div class="column-image">
-        <img src="https://images.krcg.org/stick.jpg">
-        <h4>Stick</h4>
-        <p class="center-subtitle">played in 84 decks, typically 1-2 copies</p>
-    </div>
+<div class="tip">
     <p>
-        The cheapest <i>I</i> pool can buy, he gets included in many <i>i</i> decks.
+        {% trans trimmed 
+        nananimalism=link("/archetypes/nananimalism", "Nananimalism"),
+        the_dark_side_of_politics=link("/archetypes/the-dark-side-of-politics", "The Dark Side of Politics"),
+        nosferatu_royalty=link("/archetypes/nosferatu-royalty", "Nosferatu Royalty")
+    %}
+        The Nosferatu and their antitribu use the {{ obf }}{{ ani }}{{ pot }} disciplines.
+        Some good vampires of theirs are used in multi-clan crypts,
+        like {{ nananimalism }} or {{ the_dark_side_of_politics }}.
+        They are seen on their own in only one prominent archetype: the
+        {{ nosferatu_royalty }}, a toolbox using Camarilla
+        <em>Princes</em> and <em>Justicars</em>.
+        {% endtrans%}
     </p>
 </div>
-<div class="column">
-    <div class="column-image">
-        <img src="https://images.krcg.org/beetleman.jpg">
-        <h4>Beetleman</h4>
-        <p class="center-subtitle">played in 75 decks, typically 1 copy</p>
-    </div>
-    <p>
-        A cheap <i>I</i> minion, he also gets included in many <i>i</i> decks.
-    </p>
-</div>
-<div class="column">
-    <div class="column-image">
-        <img src="https://images.krcg.org/petra.jpg">
-        <h4>Petra</h4>
-        <p class="center-subtitle">played in 41 decks, typically 1 copy</p>
-    </div>
-    <p>
-        5 pool is a bit pricey for <i>I</i> so she is less seen in mono <i>I</i> or multi-clan decks.
-        Her ability can be useful against {{ card("The unnamed") }}
-        or
-        {{ card("Cybele") }} though.
-    </p>
-</div>
-<div class="column">
-    <div class="column-image">
-        <img src="https://images.krcg.org/labyrinththe.jpg">
-        <h4>The Labyrinth</h4>
-        <p class="center-subtitle">played in 38 decks, typically 1 copy</p>
-    </div>
-    <p>
-        One pool for permanent stealth is really a bargain: other clans have to pay 2 pool for this kind of
-        device.
-        Only the Followers of Set <img src="{{ url_for('static', filename='img/icons/clan-followers-of-set.svg') }}">
-        have a similar tool with
-        {{ card("Opium Den") }}.
-    </p>
-</div>
-<div class="column">
-    <div class="column-image">
-        <img src="https://images.krcg.org/warsawstation.jpg">
-        <h4>Warsaw Station</h4>
-        <p class="center-subtitle">played in 31 decks, typically 1-2 copies</p>
-    </div>
-    <p>
-        A rare effect, quite useful in Nosferatu decks using political actions, like the
-        {{ link("/archetypes/nosferatu-royalty", _("Nosferatu Royalty")) }} archetype.
-    </p>
-</div>
-<div class="column">
-    <div class="column-image">
-        <img src="https://images.krcg.org/nikolausvermeulen.jpg">
-        <h4>Nikolaus Vermeulen</h4>
-        <p class="center-subtitle">played in 27 decks, typically 1-2 copies</p>
-    </div>
-    <p>
-        The iconic vampire for {{ link("/archetypes/nosferatu-royalty", _("Nosferatu Royalty")) }}
-        decks,
-        he has an excellent ability that helps get other <em>Princes</em> out faster and cheaper,
-        or bloat a bit.
-    </p>
-</div>
-<div class="column">
-    <div class="column-image">
-        <img src="https://images.krcg.org/gustaphebrunnelle.jpg">
-        <h4>Gustaphe Brunnelle</h4>
-        <p class="center-subtitle">played in 25 decks, typically 1-2 copies</p>
-    </div>
-    <p>
-        Appreciated for his rush ability, he is often included in combat-oriented <i>PI</i> decks like
-        the {{ link("/archetypes/guruhi-rush", _("Guruhi Rush")) }} archetype.
-    </p>
-</div>
-<div class="column">
-    <div class="column-image">
-        <img src="https://images.krcg.org/calebrosthemartyr.jpg">
-        <h4>Calebros, The Martyr</h4>
-        <p class="center-subtitle">played in 25 decks, typically 1-2 copies</p>
-    </div>
-    <p>
-        A <em>Prince</em> available for a really cheap price,
-        even though his ability can be a problem depending on the context.
-    </p>
-</div>
-<div class="column">
-    <div class="column-image">
-        <img src="https://images.krcg.org/murat.jpg">
-        <h4>Murat</h4>
-        <p class="center-subtitle">played in 23 decks, typically 1-2 copies</p>
-    </div>
-    <p>
-        A <em>Prince</em> for the very reasonable price of 7 pool, he is often seen in
-        {{ link("/archetypes/nosferatu-royalty", _("Nosferatu Royalty")) }} decks alongside
-        {{ card("Nikolaus Vermeulen") }} and
-        {{ card("Calebros, The Martyr") }}.
-    </p>
-</div>
-<div class="column">
-    <div class="column-image">
-        <img src="https://images.krcg.org/alonsopetrodon.jpg">
-        <h4>Alonso Petrodon</h4>
-        <p class="center-subtitle">played in 22 decks, typically 2-4 copies</p>
-    </div>
-    <p>
-        His title and bleed bonus, combined with the rare <i>DO</i> discipline combination,
-        makes him a good pick in some political decks, like in the
-        {{ link("/archetypes/mistress", _("Mistress")) }} archetype.
-        His ability can destroy low capacity Anarch decks single-handedly.
-    </p>
-</div>
-<div class="column">
-    <div class="column-image">
-        <img src="https://images.krcg.org/selmatherepugnant.jpg">
-        <h4>Selma the Repugnant</h4>
-        <p class="center-subtitle">played in 17 decks, typically 1-3 copies</p>
-    </div>
-    <p>
-        Yet another <em>Prince</em>, she is a bit expensive and does not even have superior <i>I</i>.
-        Still, she can find her place in <em>Royalty</em> constructs using <i>O</i>, like in
-        {{ link("/archetypes/the-dark-side-of-politics", _("The Dark Side of Politics")) }} archetype.
-    </p>
-</div>
-<div class="column">
-    <div class="column-image">
-        <img src="https://images.krcg.org/beasttheleatherfaceofdetroit.jpg">
-        <h4>Beast, The Leatherface of Detroit</h4>
-        <p class="center-subtitle">played in 15 decks, typically 1-3 copies</p>
-    </div>
-    <p>
-        Always included for his ability and strength combined with <i>Pc</i>,
-        he gets included in <i>P</i> decks like for example in the
-        {{ link("/archetypes/euro-brujah", _("Euro Brujah")) }} archetype.
-        He is often seen alongside {{ card("Theo Bell") }},
-        as they share similar abilities.
-    </p>
-</div>
+
+{% call layout.card_column("Stick", decks=84, copies="1-2") %}
+{% trans trimmed %}
+The cheapest {{ ANI }} pool can buy, he gets included in many {{ ani }} decks.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Beetleman", decks=75, copies="typically 1") %}
+{% trans trimmed %}
+A cheap {{ ANI }} minion, he also gets included in many {{ ani }} decks.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Petra", decks=41, copies="typically 1") %}
+{% trans trimmed 
+    the_unnamed=card("The unnamed"), 
+    cybele=card("Cybele") 
+%}
+5 pool is a bit pricey for {{ ANI }} so she is less seen in mono {{ ANI }}
+or multi-clan decks. Her ability can be useful against {{ the_unnamed }}
+or {{ cybele }} though.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("The Labyrinth", decks=38, copies="typically 1") %}
+{% trans trimmed 
+    img_clan_followers='<img src="%(url)s" />'|format(url=url_for('static', filename='img/icons/clan-followers-of-set.svg'))|safe,
+    opium_den=card("Opium Den")
+%}
+One pool for permanent stealth is really a bargain: other clans have to pay 2 pool
+for this kind of device. Only the Followers of Set {{ img_clan_followers }}
+have a similar tool with {{ opium_den }}.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Warsaw Station", decks=31, copies="1-2") %}
+{% trans trimmed 
+    nosferatu_royalty=link("/archetypes/nosferatu-royalty", "Nosferatu Royalty")
+%}
+A rare effect, quite useful in Nosferatu decks using political actions, like the
+{{ nosferatu_royalty }} archetype.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Nikolaus Vermeulen", decks=27, copies="1-2") %}
+{% trans trimmed 
+    nosferatu_royalty=link("/archetypes/nosferatu-royalty", "Nosferatu Royalty")
+%}
+The iconic vampire for {{ nosferatu_royalty }} decks, he has an excellent ability
+that helps get other <em>Princes</em> out faster and cheaper, or bloat a bit.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Gustaphe Brunnelle", decks=25, copies="1-2") %}
+{% trans trimmed guruhi_rush=link("/archetypes/guruhi-rush", "Guruhi Rush") %}
+Appreciated for his rush ability, he is often included in combat-oriented
+{{ POT }}{{ ANI }} decks like the {{ guruhi_rush }} archetype.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Calebros, The Martyr", decks=25, copies="1-2") %}
+{% trans trimmed %}
+A <em>Prince</em> available for a really cheap price,
+even though his ability can be a problem depending on the context.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Murat", decks=23, copies="1-2") %}
+{% trans trimmed 
+    nosferatu_royalty=link("/archetypes/nosferatu-royalty", "Nosferatu Royalty"),
+    nikolaus_vermeulen=card("Nikolaus Vermeulen"),
+    calebros_the_martyr=card("Calebros, The Martyr")
+%}
+A <em>Prince</em> for the very reasonable price of 7 pool, he is often seen in
+{{ nosferatu_royalty }} decks alongside {{ nikolaus_vermeulen }}
+and {{ calebros_the_martyr }}.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Alonso Petrodon", decks=22, copies="2-4") %}
+{% trans trimmed mistress=link("/archetypes/mistress", "Mistress") %}
+His title and bleed bonus, combined with the rare {{ DOM }}{{ OBF }} discipline
+combination, makes him a good pick in some political decks, like in the
+{{ mistress }} archetype.
+His ability can destroy low capacity Anarch decks single-handedly.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Selma the Repugnant", decks=17, copies="1-3") %}
+{% trans trimmed the_dark_side_of_politics=link("/archetypes/the-dark-side-of-politics", "The Dark Side of Politics") %}
+Yet another <em>Prince</em>, she is a bit expensive and does not even have
+superior {{ ANI }}. Still, she can find her place in <em>Royalty</em> constructs using
+{{ OBF }}, like in {{ the_dark_side_of_politics }} archetype.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Beast, The Leatherface of Detroit", decks=15, copies="1-3") %}
+{% trans trimmed 
+    euro_brujah=link("/archetypes/euro-brujah", "Euro Brujah"),
+    theo_bell=card("Theo Bell")
+%}
+Always included for his ability and strength combined with {{ POT }}{{ cel }},
+he gets included in {{ POT }} decks like for example in the
+{{ euro_brujah }} archetype. He is often seen alongside {{ theo_bell }},
+as they share similar abilities.
+{% endtrans %}
+{% endcall %}
+
 {% endblock %}
