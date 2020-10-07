@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: codex 0.X\n"
 "Report-Msgid-Bugs-To: lionel.panhaleux+codex@gmail.com\n"
-"POT-Creation-Date: 2020-10-07 11:47+0200\n"
+"POT-Creation-Date: 2020-10-07 16:59+0200\n"
 "PO-Revision-Date: 2020-07-04 08:50+0200\n"
 "Last-Translator: Lionel Panhaleux <lionel.panhaleux+codex@gmail.com>\n"
 "Language: fr\n"
@@ -120,7 +120,7 @@ msgstr ""
 msgid "Cats"
 msgstr ""
 
-#: codex_of_the_damned/navigation.py:97 codex_of_the_damned/templates/best-cards/clans/ventrue.html:138
+#: codex_of_the_damned/navigation.py:97
 msgid "Council of Doom"
 msgstr ""
 
@@ -252,11 +252,11 @@ msgstr ""
 msgid "Team Jacob"
 msgstr ""
 
-#: codex_of_the_damned/navigation.py:129 codex_of_the_damned/templates/best-cards/clans/ventrue.html:18
+#: codex_of_the_damned/navigation.py:129
 msgid "The Bleeding Vignes"
 msgstr ""
 
-#: codex_of_the_damned/navigation.py:130 codex_of_the_damned/templates/best-cards/clans/ventrue.html:139
+#: codex_of_the_damned/navigation.py:130
 msgid "The Dark Side of Politics"
 msgstr ""
 
@@ -276,9 +276,7 @@ msgstr ""
 msgid "Tzimisce Wall"
 msgstr ""
 
-#: codex_of_the_damned/navigation.py:135 codex_of_the_damned/templates/best-cards/clans/ventrue.html:14
-#: codex_of_the_damned/templates/best-cards/clans/ventrue.html:170
-#: codex_of_the_damned/templates/best-cards/clans/ventrue.html:204
+#: codex_of_the_damned/navigation.py:135
 msgid "Ventrue Royalty"
 msgstr ""
 
@@ -298,7 +296,7 @@ msgstr ""
 msgid "Weenie DEM"
 msgstr ""
 
-#: codex_of_the_damned/navigation.py:140 codex_of_the_damned/templates/best-cards/clans/ventrue.html:23
+#: codex_of_the_damned/navigation.py:140
 msgid "Weenie DOM"
 msgstr ""
 
@@ -6074,8 +6072,8 @@ msgstr ""
 #, python-format
 msgid "Although she has inferior %(vic)s, having %(AUS)s%(ANI)s for just 5 pool makes an excellent blocker out of her."
 msgstr ""
-"Bien qu'elle n'ait %(vic)s qu'en inférieur, avoir %(AUS)s%(ANI)s pour seulement 5 d'influence fait d'elle un excellent "
-"bloqueur."
+"Bien qu'elle n'ait %(vic)s qu'en inférieur, avoir %(AUS)s%(ANI)s pour seulement 5 d'influence fait d'elle un "
+"excellent bloqueur."
 
 #: codex_of_the_damned/templates/best-cards/clans/tzimisce.html:54
 #, python-format
@@ -6106,10 +6104,137 @@ msgstr ""
 " table en quelques tours. L'astuce consiste à gérer son inconvénient en trouvant des alliés et des serviteurs bon "
 "marché à lui sacrifier."
 
-
-#: codex_of_the_damned/templates/best-cards/clans/ventrue.html:10
-msgid "Anti Ventrue Grinder"
+#: codex_of_the_damned/templates/best-cards/clans/ventrue.html:7
+#, python-format
+msgid ""
+"<p> The Ventrue with %(pre)s%(dom)s%(for)s and their antitribu with %(aus)s%(dom)s%(for)s have powerful disciplines "
+"and abilities. They are a prominent clan in tournaments and are seen in a number of Archetypes: <ul> <li> The "
+"%(anti_ventrue_grinder)s, a toolbox using Ventrue antitribu. </li> <li> The %(ventrue_royalty)s, a toolbox using "
+"titled Camarilla Ventrue. </li> <li> %(the_bleeding_vignes)s, a powerbleed deck starring %(edward_vignes)s. </li> "
+"<li> %(weenie_dom)s, a Weenie bleed deck using %(dom)s. </li> </ul> </p>"
 msgstr ""
+"<p> Les Ventrue avec %(pre)s%(dom)s%(for)s et leurs antitribus avec %(aus)s%(dom)s%(for)s ont des disciplines et des "
+"aptitudes puissantes. C'est un clan de premier ordre dans les tournois, utilisé dans plusieurs archétypes : <ul> <li>"
+" L'%(anti_ventrue_grinder)s, une toolbox qui utilise les Ventrue antitribu. </li> <li> Le %(ventrue_royalty)s, une "
+"toolbox qui utilise des Ventrue de la Camarilla. </li> <li> %(the_bleeding_vignes)s, un deck powerbleed mettant avec "
+"%(edward_vignes)s comme star. </li> <li> %(weenie_dom)s, un deck de morsure Weenie qui utilise %(dom)s. </li> </ul> "
+"</p>"
+
+#: codex_of_the_damned/templates/best-cards/clans/ventrue.html:37
+#, python-format
+msgid ""
+"%(AUS)s with a permanent intercept bonus for just 5 pool, he finds his place in many %(AUS)s crypts, including in "
+"non-Ventrue toolbox and wall decks."
+msgstr ""
+"%(AUS)s accompagné d'un bonus d'interception permanent pour seulement 5 pool, il trouve sa place dans de nombreuses "
+"cryptes %(AUS)s, y compris dans des toolbox et decks mur d'autres clans."
+
+#: codex_of_the_damned/templates/best-cards/clans/ventrue.html:45
+#, python-format
+msgid "A cheap cost for the %(FOR)s%(DOM)s combination, she often gets included alongside %(neighbor_john)s."
+msgstr "Un coût bon marché pour la combinaison %(FOR)s%(DOM)s, elle est souvent incluse aux côtés de %(neighbor_john)s."
+
+#: codex_of_the_damned/templates/best-cards/clans/ventrue.html:52
+msgid ""
+"A powerful edge for Ventrue political decks, it often gets included if there is the slightest chance some additional "
+"votes can come in handy, even defensively."
+msgstr ""
+"Un avantage puissant pour les decks politiques de Ventrue, il est souvent inclus s'il y a la moindre chance que des "
+"votes supplémentaires puissent être utiles, même défensivement."
+
+#: codex_of_the_damned/templates/best-cards/clans/ventrue.html:60
+#, python-format
+msgid ""
+"All clan disciplines %(AUS)s%(DOM)s%(FOR)s at superior for a decent cost, he also has a convenient ability. It is "
+"used to get some blood on the owner vampires, but can also be a bargaining chip with the other players."
+msgstr ""
+"Toutes les disciplines du clan %(AUS)s%(DOM)s%(FOR)s en supérieur pour un coût décent, il a également une aptitude "
+"pratique : utilisée pour mettre du sang sur les vampires de son propriétaire, elle peut aussi être une monnaie "
+"d'échange avec les autres joueurs."
+
+#: codex_of_the_damned/templates/best-cards/clans/ventrue.html:68
+#, python-format
+msgid "A cheap cost for %(for)s%(dom)s, she often gets included alongside %(jephta_hester)s and %(neighbor_john)s."
+msgstr "Un coût plutôt bas pour %(for)s%(dom)s, elle est souvent incluse aux côtés de %(jephta_hester)s et %(neighbor_john)s."
+
+#: codex_of_the_damned/templates/best-cards/clans/ventrue.html:78
+#, python-format
+msgid ""
+"All clan disciplines %(AUS)s%(DOM)s%(FOR)s at superior for a reasonable 7 pool, he also has a good ability for card "
+"rotation. He often gets included algonside %(owain_evans)s."
+msgstr ""
+"Toutes les disciplines du clan %(AUS)s%(DOM)s%(FOR)s en supérieur pour un coût raisonnable de 7, il a également une "
+"bonne aptitude pour aider la rotation. Il est souvent inclus aux côtés d'%(owain_evans)s."
+
+#: codex_of_the_damned/templates/best-cards/clans/ventrue.html:86
+msgid "A cheap <em>Prince</em> in group 5, he finds his place in many political decks."
+msgstr "<em> Prince </em> bon marché du groupe 5, il trouve sa place dans de nombreux decks politiques."
+
+#: codex_of_the_damned/templates/best-cards/clans/ventrue.html:92
+msgid "A good disciplines combination for 6 pool, he finds his place in many Ventre antitribu crypts."
+msgstr ""
+"Une bonne combinaison de disciplines pour 6 d'influence, il trouve sa place dans de nombreuses cryptes Ventrue "
+"antitribu ."
+
+#: codex_of_the_damned/templates/best-cards/clans/ventrue.html:99
+#, python-format
+msgid ""
+"Superior %(PRE)s with an ability that easily let him get some votes, he is an easy inclusion in any %(PRE)s based "
+"deck."
+msgstr ""
+"%(PRE)s en supérieur avec une aptitude qui lui permet d'obtenir facilement des votes, il est une inclusion facile "
+"dans n'importe quel deck basé sur %(PRE)s."
+
+#: codex_of_the_damned/templates/best-cards/clans/ventrue.html:106
+#, python-format
+msgid ""
+"The infamous Ventrue Inner Circle, her ability and access to %(DOM)s%(OBF)s gets her included in many Inner Circle "
+"constructs, like in the %(council_of_doom)s or %(the_dark_side_of_politics)s archetypes."
+msgstr ""
+"La tristement célèbre membre du Cercle Intérieur Ventrue, son aptitude et son accès à %(DOM)s%(OBF)s l'incluent dans "
+"de nombreuses constructions Inner Circle, comme dans les archétypes %(council_of_doom)s ou "
+"%(the_dark_side_of_politics)s."
+
+#: codex_of_the_damned/templates/best-cards/clans/ventrue.html:117
+msgid "A cheap <em>Prince</em> in group 4 with good disciplines, he gets included in many political decks."
+msgstr "<em> Prince </em> bon marché du groupe 4 avec de bonnes disciplines, il est inclus dans de nombreux decks politiques."
+
+#: codex_of_the_damned/templates/best-cards/clans/ventrue.html:124
+#, python-format
+msgid "A cheap cost for %(dom)s%(for)s, she gets included in many Ventrue and Ventrue antitribu decks."
+msgstr "Un coût plutôt bas pour  pour %(dom)s%(for)s, elle est incluse dans de nombreux decks Ventrue et Ventrue antitribu."
+
+#: codex_of_the_damned/templates/best-cards/clans/ventrue.html:131
+#, python-format
+msgid ""
+"Star of the modern variant of the %(ventrue_royalty)s archetype, he has all clan disciplines at superior "
+"%(DOM)s%(PRE)s%(FOR)s and his ability to prevent damage makes him quite sturdy."
+msgstr ""
+"Star de la variante moderne de l'archétype %(ventrue_royalty)s, il a toutes les disciplines de clan au niveau "
+"supérieur %(DOM)s%(PRE)s%(FOR)s et sa capacité à prévenir les dégâts le rend assez robuste."
+
+#: codex_of_the_damned/templates/best-cards/clans/ventrue.html:141
+#, python-format
+msgid ""
+"Although he is a bit pricey, his title and access to %(DOM)s%(OBF)s, and in some cases %(OBT)s, gets him included in "
+"many crypts."
+msgstr ""
+"Bien qu'il soit un peu cher, son titre et son accès à %(DOM)s%(OBF)s, et dans certains cas à %(OBT)s, lui valent une "
+"place dans de nombreuses cryptes."
+
+#: codex_of_the_damned/templates/best-cards/clans/ventrue.html:148
+#, python-format
+msgid "A decent 5 pool for superior %(DOM)s, she still has %(for)s and her unlock ability can be useful."
+msgstr ""
+"Un coût raisonnable de 5 pour %(DOM)s en supérieur, elle a aussi %(for)s et son aptitude de redressement peut être "
+"utile."
+
+#: codex_of_the_damned/templates/best-cards/clans/ventrue.html:155
+#, python-format
+msgid "A cheap <em>Prince</em> in group 5, with superior %(DOM)s, he easily gets included in %(ventrue_royalty)s decks."
+msgstr ""
+"Un <em> Prince </em> bon marché dans le groupe 5, avec %(DOM)s en supérieur, il est facilement inclus dans les decks "
+"%(ventrue_royalty)s."
 
 #: codex_of_the_damned/templates/best-cards/generic/master-cards.html:86
 msgid "block denial"
@@ -8876,9 +9001,3 @@ msgstr ""
 "situation à trois ou cinq joueurs : si la fente fonctionne, vous revenez à un nombre pair et à une situation "
 "favorable. Si elle échoue, vous restez sur un nombre impair de joueurs en ayant mis une grande pression sur la proie."
 " En général, cela signifie que la pression va revenir en force contre vous au prochain tour de table. </p>"
-
-#~ msgid "AAA archetype"
-#~ msgstr ""
-
-#~ msgid "AAA_archetype"
-#~ msgstr "archétype AAA"

@@ -1,207 +1,163 @@
 {% extends "best-cards/_layout.html" %}
+{% import "best-cards/_layout_card_column.html" as layout with context%}
 
 {% block content %}
 <h1><img src="{{ url_for('static', filename='img/icons/clan-ventrue.svg') }}"> Ventrue</h1>
-<p>
-    The Ventrue with <i>rdf</i> and their antitribu with <i>adf</i> have powerful disciplines and abilities.
-    They are a prominent clan in tournaments and are seen in a number of Archetypes:
-<ul>
-    <li>
-        The {{ link("/archetypes/anti-ventrue-grinder", _("Anti Ventrue Grinder")) }},
-        a toolbox using Ventrue antitribu.
-    </li>
-    <li>
-        The {{ link("/archetypes/ventrue-royalty", _("Ventrue Royalty")) }},
-        a toolbox using titled Camarilla Ventrue.
-    </li>
-    <li>
-        {{ link("/archetypes/the-bleeding-vignes", _("The Bleeding Vignes")) }},
-        a powerbleed deck starring
-        {{ card("Edward Vignes") }}
-    </li>
-    <li>
-        {{ link("/archetypes/weenie-dom", _("Weenie DOM")) }}, a Weenie bleed deck using <i>d</i>.
-    </li>
-</ul>
-</p>
-<h2>Highlights</h2>
-<div class="column">
-    <div class="column-image">
-        <img src="https://images.krcg.org/neighborjohn.jpg">
-        <h4>Neighbor John</h4>
-        <p class="center-subtitle">played in 94 decks, typically 1-2 copies</p>
-    </div>
+<div class="tip">
+    {% trans trimmed 
+        anti_ventrue_grinder=link("/archetypes/anti-ventrue-grinder", "Anti Ventrue Grinder"),
+        ventrue_royalty=link("/archetypes/ventrue-royalty", "Ventrue Royalty"),
+        the_bleeding_vignes=link("/archetypes/the-bleeding-vignes", "The Bleeding Vignes"),
+        edward_vignes=card("Edward Vignes"),
+        weenie_dom=link("/archetypes/weenie-dom", "Weenie DOM")
+    %}
     <p>
-        <i>A</i> with a permanent intercept bonus for just 5 pool,
-        he finds his place in many <i>A</i> crypts,
-        including in non-Ventrue toolbox and wall decks.
+        The Ventrue with {{ pre }}{{ dom }}{{ for }} and their antitribu with
+        {{ aus }}{{ dom }}{{ for }} have powerful disciplines and abilities.
+        They are a prominent clan in tournaments and are seen in a number of Archetypes:
+    <ul>
+        <li>
+            The {{ anti_ventrue_grinder }}, a toolbox using Ventrue antitribu.
+        </li>
+        <li>
+            The {{ ventrue_royalty }}, a toolbox using titled Camarilla Ventrue.
+        </li>
+        <li>
+            {{ the_bleeding_vignes }}, a powerbleed deck starring {{ edward_vignes }}.
+        </li>
+        <li>
+            {{ weenie_dom }}, a Weenie bleed deck using {{ dom }}.
+        </li>
+    </ul>
     </p>
+    {% endtrans %}
 </div>
-<div class="column">
-    <div class="column-image">
-        <img src="https://images.krcg.org/jephtahester.jpg">
-        <h4>Jephta Hester</h4>
-        <p class="center-subtitle">played in 88 decks, typically 1 copy</p>
-    </div>
-    <p>
-        A cheap cost for the <i>FD</i> combination, she often gets included alongside
-        {{ card("Neighbor John") }}.
-    </p>
-</div>
-<div class="column">
-    <div class="column-image">
-        <img src="https://images.krcg.org/ventrueheadquarters.jpg">
-        <h4>Ventrue Headquarters</h4>
-        <p class="center-subtitle">played in 85 decks, typically 1-2 copies</p>
-    </div>
-    <p>
-        A powerful edge for Ventrue political decks, it often gets included if there is the slightest chance
-        some additional votes can come in handy, even defensively.
-    </p>
-</div>
-<div class="column">
-    <div class="column-image">
-        <img src="https://images.krcg.org/owainevansthewanderer.jpg">
-        <h4>Owain Evans</h4>
-        <p class="center-subtitle">played in 77 decks, typically 2-3 copies</p>
-    </div>
-    <p>
-        All clan disciplines <i>AFD</i> at superior for a decent cost, he also has a convenient ability.
-        It is used to get some blood on the owner vampires, but can also be a bargaining chip with the other
-        players.
-    </p>
-</div>
-<div class="column">
-    <div class="column-image">
-        <img src="https://images.krcg.org/ulrikerothbart.jpg">
-        <h4>Ulrike Rothbart</h4>
-        <p class="center-subtitle">played in 76 decks, typically 1 copy</p>
-    </div>
-    <p>
-        A cheap cost for <i>fd</i>, she often gets included alongside
-        {{ card("Jephta Hester") }} and
-        {{ card("Neighbor John") }}.
-    </p>
-</div>
-<div class="column">
-    <div class="column-image">
-        <img src="https://images.krcg.org/blackhorsetanner.jpg">
-        <h4>Blackhorse Tanner</h4>
-        <p class="center-subtitle">played in 76 decks, typically 1-2 copies</p>
-    </div>
-    <p>
-        All clan disciplines <i>AFD</i> at superior for a reasonable 7 pool, he also has a good ability
-        for card rotation. He often gets included algonside
-        {{ card("Owain Evans") }}.
-    </p>
-</div>
-<div class="column">
-    <div class="column-image">
-        <img src="https://images.krcg.org/grahamgottesman.jpg">
-        <h4>Graham Gottesman</h4>
-        <p class="center-subtitle">played in 65 decks, typically 1-2 copies</p>
-    </div>
-    <p>
-        A cheap <em>Prince</em> in group 5, he finds his place in many political decks.
-    </p>
-</div>
-<div class="column">
-    <div class="column-image">
-        <img src="https://images.krcg.org/jeffersonfoster.jpg">
-        <h4>Jefferson Foster</h4>
-        <p class="center-subtitle">played in 66 decks, typically 1 copy</p>
-    </div>
-    <p>
-        A good disciplines combination for 6 pool, he finds his place in many Ventre antitribu crypts.
-    </p>
-</div>
-<div class="column">
-    <div class="column-image">
-        <img src="https://images.krcg.org/victorpelletier.jpg">
-        <h4>Victor Pelletier</h4>
-        <p class="center-subtitle">played in 63 decks, typically 1-2 copies</p>
-    </div>
-    <p>
-        Superior <i>R</i> with an ability that easily let him get some votes, he is an easy inclusion in any
-        <i>R</i> based deck.
-    </p>
-</div>
-<div class="column">
-    <div class="column-image">
-        <img src="https://images.krcg.org/arika.jpg">
-        <h4>Arika</h4>
-        <p class="center-subtitle">played in 57 decks, typically 1-5 copies</p>
-    </div>
-    <p>
-        The infamous Ventrue Inner Circle, her ability and access to <i>DO</i> gets her included in many
-        Inner Circle constructs, like in the
-        {{ link("/archetypes/council-of-doom", _("Council of Doom")) }} or
-        {{ link("/archetypes/the-dark-side-of-politics", _("The Dark Side of Politics")) }} archetypes.
-    </p>
-</div>
-<div class="column">
-    <div class="column-image">
-        <img src="https://images.krcg.org/mustafatheheir.jpg">
-        <h4>Mustafa, The Heir</h4>
-        <p class="center-subtitle">played in 56 decks, typically 1-2 copies</p>
-    </div>
-    <p>
-        A cheap <em>Prince</em> in group 4 with good disciplines, he gets included in many political decks.
-    </p>
-</div>
-<div class="column">
-    <div class="column-image">
-        <img src="https://images.krcg.org/lanabutcher.jpg">
-        <h4>Lana Butcher</h4>
-        <p class="center-subtitle">played in 54 decks, typically 1 copy</p>
-    </div>
-    <p>
-        A cheap cost for <i>df</i>, she gets included in many Ventrue and Ventrue antitribu decks.
-    </p>
-</div>
-<div class="column">
-    <div class="column-image">
-        <img src="https://images.krcg.org/lodinolafholte.jpg">
-        <h4>Lodin (Olaf Holte)</h4>
-        <p class="center-subtitle">played in 51 decks, typically 1-3 copies</p>
-    </div>
-    <p>
-        Star of the modern variant of the
-        {{ link("/archetypes/ventrue-royalty", _("Ventrue Royalty")) }} archetype,
-        he has all clan disciplines at superior <i>DRF</i> and
-        his ability to prevent damage makes him quite sturdy.
-    </p>
-</div>
-<div class="column">
-    <div class="column-image">
-        <img src="https://images.krcg.org/marcusvitel.jpg">
-        <h4>Marcus Vitel</h4>
-        <p class="center-subtitle">played in 49 decks, typically 1-3 copies</p>
-    </div>
-    <p>
-        Although he is a bit pricey, his title and access to <i>DO</i>, and in some cases <i>£</i>,
-        gets him included in many crypts.
-    </p>
-</div>
-<div class="column">
-    <div class="column-image">
-        <img src="https://images.krcg.org/emilycarson.jpg">
-        <h4>Emily Carson</h4>
-        <p class="center-subtitle">played in 46 decks, typically 1 copy</p>
-    </div>
-    <p>
-        A decent 5 pool for superior <i>D</i>, she still has <i>f</i> and her unlock ability can be useful.
-    </p>
-</div>
-<div class="column">
-    <div class="column-image">
-        <img src="https://images.krcg.org/victordonaldson.jpg">
-        <h4>Victor Donaldson</h4>
-        <p class="center-subtitle">played in 45 decks, typically 1-2 copies</p>
-    </div>
-    <p>
-        A cheap <em>Prince</em> in group 5, with superior <i>D</i>, he easily gets included in
-        {{ link("/archetypes/ventrue-royalty", _("Ventrue Royalty")) }} decks.
-    </p>
-</div>
+
+{% call layout.card_column("Neighbor John", decks=94, copies="1-2") %}
+{% trans trimmed %}
+{{ AUS }} with a permanent intercept bonus for just 5 pool,
+he finds his place in many {{ AUS }} crypts,
+including in non-Ventrue toolbox and wall decks.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Jephta Hester", decks=88, copies="1") %}
+{% trans trimmed neighbor_john=card("Neighbor John") %}
+A cheap cost for the {{ FOR }}{{ DOM }} combination, she often gets included alongside
+{{ neighbor_john }}.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Ventrue Headquarters", decks=85, copies="1-2") %}
+{% trans trimmed %}
+A powerful edge for Ventrue political decks, it often gets included
+if there is the slightest chance some additional votes can come in handy,
+even defensively.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Owain Evans, The Wanderer", decks=77, copies="2-3") %}
+{% trans trimmed %}
+All clan disciplines {{ AUS }}{{ DOM }}{{ FOR }} at superior for a decent cost,
+he also has a convenient ability. It is used to get some blood on the owner vampires,
+but can also be a bargaining chip with the other players.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Ulrike Rothbart", decks=76, copies="1") %}
+{% trans trimmed 
+    jephta_hester=card("Jephta Hester"),
+    neighbor_john=card("Neighbor John")
+    %}
+A cheap cost for {{ for }}{{ dom }}, she often gets included alongside
+{{ jephta_hester }} and {{ neighbor_john }}.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Blackhorse Tanner", decks=76, copies="1-2") %}
+{% trans trimmed owain_evans=card("Owain Evans, The Wanderer", "Owain Evans")%}
+All clan disciplines {{ AUS }}{{ DOM }}{{ FOR }} at superior for a reasonable 7 pool,
+he also has a good ability for card rotation. He often gets included algonside
+{{ owain_evans }}.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Graham Gottesman", decks=65, copies="1-2") %}
+{% trans trimmed %}
+A cheap <em>Prince</em> in group 5, he finds his place in many political decks.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Jefferson Foster", decks=66, copies="1") %}
+{% trans trimmed %}
+A good disciplines combination for 6 pool,
+he finds his place in many Ventre antitribu crypts.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Victor Pelletier", decks=63, copies="1-2") %}
+{% trans trimmed %}
+Superior {{ PRE }} with an ability that easily let him get some votes,
+he is an easy inclusion in any {{ PRE }} based deck.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Arika", decks=57, copies="1-5") %}
+{% trans trimmed 
+    council_of_doom=link("/archetypes/council-of-doom", "Council of Doom"),
+    the_dark_side_of_politics=link("/archetypes/the-dark-side-of-politics", "The Dark Side of Politics")
+%}
+The infamous Ventrue Inner Circle, her ability and access to {{ DOM }}{{ OBF }}
+gets her included in many Inner Circle constructs, like in the
+{{ council_of_doom }} or {{ the_dark_side_of_politics }} archetypes.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Mustafa, The Heir", decks=56, copies="1-2") %}
+{% trans trimmed %}
+A cheap <em>Prince</em> in group 4 with good disciplines,
+he gets included in many political decks.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Lana Butcher", decks=54, copies="1") %}
+{% trans trimmed %}
+A cheap cost for {{ dom }}{{ for }}, she gets included in many Ventrue
+and Ventrue antitribu decks.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Lodin (Olaf Holte)", decks=51, copies="1-3") %}
+{% trans trimmed 
+    ventrue_royalty=link("/archetypes/ventrue-royalty", "Ventrue Royalty")
+%}
+Star of the modern variant of the {{ ventrue_royalty }} archetype,
+he has all clan disciplines at superior {{ DOM }}{{ PRE }}{{ FOR }} and
+his ability to prevent damage makes him quite sturdy.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Marcus Vitel", decks=49, copies="1-3") %}
+{% trans trimmed %}
+Although he is a bit pricey, his title and access to {{ DOM }}{{ OBF }},
+and in some cases {{ OBT }}, gets him included in many crypts.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Emily Carson", decks=46, copies="1") %}
+{% trans trimmed %}
+A decent 5 pool for superior {{ DOM }}, she still has {{ for }}
+and her unlock ability can be useful.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Victor Donaldson", decks=45, copies="1-2") %}
+{% trans trimmed 
+    ventrue_royalty=link("/archetypes/ventrue-royalty", "Ventrue Royalty")
+%}
+A cheap <em>Prince</em> in group 5, with superior {{ DOM }}, he easily gets included in
+{{ ventrue_royalty }} decks.
+{% endtrans %}
+{% endcall %}
+
 {% endblock %}
