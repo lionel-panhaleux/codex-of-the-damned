@@ -26,13 +26,13 @@ The cheapest {{ ANI }} pool can buy, he gets included in many {{ ani }} decks.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Beetleman", decks=75, copies="typically 1") %}
+{% call layout.card_column("Beetleman", decks=75, copies="1") %}
 {% trans trimmed %}
 A cheap {{ ANI }} minion, he also gets included in many {{ ani }} decks.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Petra", decks=41, copies="typically 1") %}
+{% call layout.card_column("Petra", decks=41, copies="1") %}
 {% trans trimmed 
     the_unnamed=card("The unnamed"), 
     cybele=card("Cybele") 
@@ -43,7 +43,7 @@ or {{ cybele }} though.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("The Labyrinth", decks=38, copies="typically 1") %}
+{% call layout.card_column("The Labyrinth", decks=38, copies="1") %}
 {% trans trimmed 
     img_clan_followers='<img src="%(url)s" />'|format(url=url_for('static', filename='img/icons/clan-followers-of-set.svg'))|safe,
     opium_den=card("Opium Den")
