@@ -6,11 +6,12 @@
 <div class="tip">
     <p>
         {% trans trimmed 
+            img_clan_kiasyd='<img src="%(url)s" />'|format(url=url_for('static', filename='img/icons/clan-kiasyd.svg'))|safe,
             lasombra_nocturn=link("/archetypes/lasombra-nocturn", "Lasombra Nocturn")
         %}
-        The Lasombra and their rare {{ obt }} discipline are quite close to the Kiasyd,
-        but a little more played. They have given birth to the infamous
-        {{ lasombra_nocturn }} archetype,
+        The Lasombra and their rare {{ obt }} discipline are quite close to the
+        Kiasyd {{ img_clan_kiasyd }}, but a little more played. They have given birth
+        to the infamous {{ lasombra_nocturn }} archetype,
         one of the strongest stealth & bleed archetypes of the game
         using the {{ DOM }}{{ OBT }} disciplines combination.
         They also can be used for political or even toolbox builds,
@@ -42,9 +43,11 @@ Yet another stealth enhancer, this one only really useful at superior {{ OBT }}.
 {% endcall %}
 
 {% call layout.card_column("Ermenegildo, The Rake", decks=69, copies="1-2") %}
-{% trans trimmed %}
-Only 5 pool for {{ DOM }}{{ OBT }}, plus he is Black Hand.
-He gets included in a lot of decks, Lasombra, Kiasyd or Black Hand alike.
+{% trans trimmed 
+    img_clan_kiasyd='<img src="%(url)s" />'|format(url=url_for('static', filename='img/icons/clan-kiasyd.svg'))|safe
+%}
+Only 5 pool for {{ DOM }}{{ OBT }}, plus he is Black Hand. He gets included in a lot of
+decks, Lasombra, Kiasyd {{ img_clan_kiasyd }} or Black Hand alike.
 {% endtrans %}
 {% endcall %}
 

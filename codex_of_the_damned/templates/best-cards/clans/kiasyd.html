@@ -6,13 +6,15 @@
 <div class="tip">
     <p>
         {% trans trimmed 
+            img_clan_lasombra='<img src="%(url)s" />'|format(url=url_for('static', filename='img/icons/clan-lasombra.svg'))|safe,
             kiasyd_stealth_bleed=link("/archetypes/kiasyd-stealth-bleed", "Kiasyd Stealth & Bleed")
         %}
-        The Kiasyd and their unique {{ myt }} discipline are quite close to the Lasombra,
-        so they've been included in <em>Lasombra</em> deck as additional vampires,
+        The Kiasyd and their unique {{ myt }} discipline are quite close to the
+        Lasombra {{ img_clan_lasombra }}, so they've been included in
+        Lasombra {{ img_clan_lasombra }} deck as additional vampires,
         but also led to an archetype of their own, the {{ kiasyd_stealth_bleed }}.
-        Compared to the Lasombra, {{ myt }} provides more bleed and stealth options
-        and less combat options than {{ pot }}.
+        Compared to the Lasombra {{ img_clan_lasombra }}, {{ myt }} provides more bleed
+        and stealth options and less combat options than {{ pot }}.
         {% endtrans %}
     </p>
 </div>
@@ -35,10 +37,12 @@ He sometimes get included in decks for this ability alone.
 {% endcall %}
 
 {% call layout.card_column("Stone Travel", decks=45, copies="2-6") %}
-{% trans trimmed %}
+{% trans trimmed 
+    img_clan_lasombra='<img src="%(url)s" />'|format(url=url_for('static', filename='img/icons/clan-lasombra.svg'))|safe
+%}
 It is included in most Kiasyd decks and even in Lasombra-Kiasyd mixes
 as it can also be used at {{ obt }}. Additional stealth from {{ myt }}
-is one of the main points of using Kiasyd instead of Lasombra.
+is one of the main points of using Kiasyd instead of Lasombra {{ img_clan_lasombra }}.
 {% endtrans %}
 {% endcall %}
 
@@ -102,9 +106,11 @@ Combined with {{ bonding }}, it results in a solid 3 bleed and 2 stealth action.
 {% endcall %}
 
 {% call layout.card_column("Song of Pan", decks=25, copies="2-4") %}
-{% trans trimmed %}
+{% trans trimmed 
+    img_clan_lasombra='<img src="%(url)s" />'|format(url=url_for('static', filename='img/icons/clan-lasombra.svg'))|safe
+%}
 A nice boost for a lunge move, it is a classic inclusion for pure Kiasyd decks.
-Again, the lack of a burn option makes it difficult to include in mixed Lasombra decks.
+Again, the lack of a burn option makes it difficult to include in mixed Lasombra {{ img_clan_lasombra }} decks.
 {% endtrans %}
 {% endcall %}
 
