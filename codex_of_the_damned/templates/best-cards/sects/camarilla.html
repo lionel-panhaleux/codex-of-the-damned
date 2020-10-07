@@ -1,109 +1,95 @@
 {% extends "best-cards/_layout.html" %}
+{% import "best-cards/_layout_card_column.html" as layout with context%}
 
 {% block content %}
 <h1>Camarilla</h1>
-<p>
-    The Camarilla is the first sect (publication-wise), and it offers
-    unique and powerful tools to its members, especially when it comes to politics.
-</p>
-<h2>Highlights</h2>
-<div class="column">
-    <div class="column-image">
-        <img src="https://images.krcg.org/parityshift.jpg">
-        <h4>Parity Shift</h4>
-        <p class="center-subtitle">played in 340 decks, typically 2-6 copies</p>
-    </div>
+<div class="tip">
     <p>
-        One of the best vote available with its -3/+3 pool effect.
-        It was even more powerful before the september 2019 <em>errata</em>, when the score would equal
-        the number of Methusalah in play, for a devastating -5/+5 effect early game.
+        {% trans trimmed %}
+        The Camarilla is the first sect (publication-wise), and it offers
+        unique and powerful tools to its members, especially when it comes to politics.
+        {% endtrans %}
     </p>
 </div>
-<div class="column">
-    <div class="column-image">
-        <img src="https://images.krcg.org/secondtraditiondomain.jpg">
-        <h4>Second Tradition: Domain</h4>
-        <p class="center-subtitle">played in 276 decks, typically 3-9 copies</p>
-    </div>
-    <p>
-        Only available for Princes and Justicars, it is one of the most effective reaction of the game.
-        Not only does it unlock — not just wake — the vampire, it also provides a solid +2 intercept bonus.
-        Furthermore, the reasonable blood cost of one is only paid when the unlock effect is needed.
-    </p>
-</div>
-<div class="column">
-    <div class="column-image">
-        <img src="https://images.krcg.org/alastor.jpg">
-        <h4>Alastor</h4>
-        <p class="center-subtitle">played in 47 decks, typically 1-5 copies</p>
-    </div>
-    <p>
-        Although only available for Justicars and Inner Circles, this vote let them fetch costly equipment
-        at a bargain, like an {{ card("Helicopter") }} or an
-        {{ card("Assault Rifle") }}.
-        Combined with a strong weapon, the option to enter combat becomes dreadful.
-    </p>
-</div>
-<div class="column">
-    <div class="column-image">
-        <img src="https://images.krcg.org/judgmentcamarillasegregation.jpg">
-        <h4>Judgment: Camarilla Segregation</h4>
-        <p class="center-subtitle">played in 32 decks, typically 1-3 copies</p>
-    </div>
-    <p>
-        A decent pool damaging action, although more efficient votes like
-        {{ card("Kine Resources Contested") }}
-        are often preferred, it can also find its place in non-political decks.
-        It can account to a serious overall amount if played early enough.
-    </p>
-</div>
-<div class="column">
-    <div class="column-image">
-        <img src="https://images.krcg.org/fourthtraditiontheaccounting.jpg">
-        <h4>Fourth Tradition: The Accounting</h4>
-        <p class="center-subtitle">played in 29 decks, typically 1-5 copies</p>
-    </div>
-    <p>
-        Reserved to Princes and Justicars as all traditions, this one helps getting more vampires out
-        faster and cheaper, a useful asset for those who do not have access to the more versatile
-        {{ card("Govern the Unaligned") }}.
-    </p>
-</div>
-<div class="column">
-    <div class="column-image">
-        <img src="https://images.krcg.org/firsttraditionthemasquerade.jpg">
-        <h4>First Tradition: The Masquerade</h4>
-        <p class="center-subtitle">played in 27 decks, typically 1-4 copies</p>
-    </div>
-    <p>
-        Reserved to Princes and Justicars as all traditions, it can stack and lock down a table pretty
-        quickly provided one has enough blood to pay for it. The obvious drawback is that it can quickly
-        focus a lot of table hatred on the MEthusalah who played it.
-    </p>
-</div>
-<div class="column">
-    <div class="column-image">
-        <img src="https://images.krcg.org/praxisseizurerome.jpg">
-        <h4>Praxis Seizure: Rome</h4>
-        <p class="center-subtitle">played in 26 decks, typically 1 copy</p>
-    </div>
-    <p>
-        Some Praxis give a capacity bonus to a specific clan. The Brujah one is slightly more played
-        because they have powerful cards for their Princes like
-        {{ card("New Carthage") }} and
-        {{ card("Carthage Remembered") }}.
-    </p>
-</div>
-<div class="column">
-    <div class="column-image">
-        <img src="https://images.krcg.org/anathema.jpg">
-        <h4>Anathema</h4>
-        <p class="center-subtitle">played in 22 decks, typically 1-4 copies</p>
-    </div>
-    <p>
-        A powerful bloat device, although a bit tricky to land: one needs both the stealth and votes
-        to get it through, and a combat module strong enough to trigger it. A vote most often seen played
-        by the Brujah.
-    </p>
-</div>
+
+{% call layout.card_column("Parity Shift", decks=340, copies="2-6") %}
+{% trans trimmed %}
+One of the best vote available with its -3/+3 pool effect.
+It was even more powerful before the september 2019 <em>errata</em>,
+when the score would equal the number of Methusalah in play,
+for a devastating -5/+5 effect early game.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Second Tradition: Domain", decks=276, copies="3-9") %}
+{% trans trimmed %}
+Only available for <em>Princes</em> and <em>Justicars</em>, it is one of the most
+effective reaction of the game. Not only does it unlock — not just wake — the vampire,
+it also provides a solid +2 intercept bonus. Furthermore, the reasonable blood cost
+of one is only paid when the unlock effect is needed.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Alastor", decks=47, copies="1-5") %}
+{% trans trimmed 
+    helicopter=card("Helicopter"),
+    assault_rifle=card("Assault Rifle")
+%}
+Although only available for <em>Justicars</em> and <em>Inner Circles</em>, this vote let
+them fetch costly equipment at a bargain, like an {{ helicopter }} or an
+{{ assault_rifle }}. Combined with a strong weapon, the option to enter combat becomes
+dreadful.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Judgment: Camarilla Segregation", decks=32, copies="1-3") %}
+{% trans trimmed 
+    kine_resources_contested=card("Kine Resources Contested")
+%}
+A decent pool damaging action, although more efficient votes like
+{{ kine_resources_contested }} are often preferred, it can also find its place
+in non-political decks. It can account to a serious overall amount
+if played early enough.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Fourth Tradition: The Accounting", decks=29, copies="1-5") %}
+{% trans trimmed govern_the_unaligned=card("Govern the Unaligned") %}
+Reserved to <em>Princes</em> and <em>Justicars</em> as all traditions,
+this one helps getting more vampires out faster and cheaper,
+a useful asset for those who do not have access to the more versatile
+{{ govern_the_unaligned }}.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("First Tradition: The Masquerade", decks=27, copies="1-4") %}
+{% trans trimmed %}
+Reserved to <em>Princes</em> and <em>Justicars</em> as all traditions,
+it can stack and lock down a table pretty quickly provided one has enough blood
+to pay for it. The obvious drawback is that it can quickly focus a lot of table hatred
+on the Methusalah who played it.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Praxis Seizure: Rome", decks=26, copies="1") %}
+{% trans trimmed 
+    img_clan_brujah='<img src="%(url)s" />'|format(url=url_for('static', filename='img/icons/clan-brujah.svg'))|safe,
+    new_carthage=card("New Carthage"),
+    carthage_remembered=card("Carthage Remembered")
+    %}
+Some Praxis give a capacity bonus to a specific clan. The Brujah {{ img_clan_brujah }}
+one is slightly more played because they have powerful cards for their
+<em>Princes</em> like {{ new_carthage }} and {{ carthage_remembered }}.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Anathema", decks=22, copies="1-4") %}
+{% trans trimmed 
+    img_clan_brujah='<img src="%(url)s" />'|format(url=url_for('static', filename='img/icons/clan-brujah.svg'))|safe
+%}
+A powerful bloat device, although a bit tricky to land: one needs both the stealth
+and votes to get it through, and a combat module strong enough to trigger it.
+A vote most often seen played by the Brujah {{ img_clan_brujah }}.
+{% endtrans %}
+{% endcall %}
 {% endblock %}
