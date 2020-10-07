@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: codex 0.X\n"
 "Report-Msgid-Bugs-To: lionel.panhaleux+codex@gmail.com\n"
-"POT-Creation-Date: 2020-10-07 16:59+0200\n"
+"POT-Creation-Date: 2020-10-07 18:15+0200\n"
 "PO-Revision-Date: 2020-07-04 08:50+0200\n"
 "Last-Translator: Lionel Panhaleux <lionel.panhaleux+codex@gmail.com>\n"
 "Language: fr\n"
@@ -133,7 +133,6 @@ msgid "Daughters Politics"
 msgstr ""
 
 #: codex_of_the_damned/navigation.py:100 codex_of_the_damned/templates/best-cards/clans/assamite.html:10
-#: codex_of_the_damned/templates/best-cards/sects/anarch.html:207
 msgid "Death Star"
 msgstr ""
 
@@ -154,7 +153,6 @@ msgid "Girls Will Find Inner Circle"
 msgstr ""
 
 #: codex_of_the_damned/navigation.py:105 codex_of_the_damned/templates/archetypes/tzimisce-wall.html:38
-#: codex_of_the_damned/templates/best-cards/sects/anarch.html:9
 msgid "Goratrix High Tower"
 msgstr ""
 
@@ -174,7 +172,7 @@ msgstr ""
 msgid "Jost Powerbleed"
 msgstr ""
 
-#: codex_of_the_damned/navigation.py:110 codex_of_the_damned/templates/best-cards/sects/anarch.html:121
+#: codex_of_the_damned/navigation.py:110
 msgid "Khazar's Diary"
 msgstr ""
 
@@ -202,12 +200,11 @@ msgstr ""
 msgid "Mistress"
 msgstr ""
 
-#: codex_of_the_damned/navigation.py:117 codex_of_the_damned/templates/best-cards/sects/anarch.html:10
+#: codex_of_the_damned/navigation.py:117
 msgid "Nananimalism"
 msgstr ""
 
 #: codex_of_the_damned/navigation.py:118 codex_of_the_damned/templates/archetypes/tupdogs.html:37
-#: codex_of_the_damned/templates/best-cards/sects/anarch.html:122
 msgid "Nephandii"
 msgstr ""
 
@@ -227,7 +224,7 @@ msgstr ""
 msgid "Renegade Assault"
 msgstr ""
 
-#: codex_of_the_damned/navigation.py:123 codex_of_the_damned/templates/best-cards/sects/anarch.html:8
+#: codex_of_the_damned/navigation.py:123
 msgid "Saulot & Friends"
 msgstr ""
 
@@ -284,7 +281,7 @@ msgstr ""
 msgid "War Chantry"
 msgstr ""
 
-#: codex_of_the_damned/navigation.py:137 codex_of_the_damned/templates/best-cards/sects/anarch.html:120
+#: codex_of_the_damned/navigation.py:137
 msgid "War Ghouls"
 msgstr ""
 
@@ -6245,6 +6242,155 @@ msgstr "déni de blocage"
 msgid "bruise"
 msgstr "érosion"
 
+#: codex_of_the_damned/templates/best-cards/sects/anarch.html:8
+#, python-format
+msgid ""
+"Anarch have been on the rise the last few years, and they ramped up some classical archetypes to bring them to a new "
+"power level, like %(saulot_friends)s, %(goratrix_high_tower)s or %(nananimalism)s, for example."
+msgstr ""
+"Les Anarch ont connu une monté en puissance ces dernières années, et ont amélioré certains archétypes classiques pour"
+" les amener à un nouveau niveau de puissance, comme %(saulot_friends)s, %(goratrix_high_tower)s ou %(nananimalism)s, "
+"par exemple."
+
+#: codex_of_the_damned/templates/best-cards/sects/anarch.html:20
+msgid "The anarch variation is a possibility for many archetypes, and it gives access to some unique cards."
+msgstr "La variante Anarch est possibile pour de nombreux archétypes, et elle donne accès à des cartes exclusives."
+
+#: codex_of_the_damned/templates/best-cards/sects/anarch.html:28
+msgid "A good pool-damage dealer if it can be defended, either with intercept capacities or votes."
+msgstr "Une bonne source de dégâts d'influence si elle peut être défendue avec des capacités d'interception ou des votes."
+
+#: codex_of_the_damned/templates/best-cards/sects/anarch.html:35
+#, python-format
+msgid ""
+"An excellent vote to deliver pool damage, its effect is strong than %(kine_resources_contested)s, for a higher blood "
+"cost. It is a bit tricky to gather enough independant or anarch votes to get it through, but worth the effort."
+msgstr ""
+"Un excellent vote pour infliger des dégâts d'influence, son effet est plus fort que %(kine_resources_contested)s, "
+"pour un coût en sang plus élevé. Il est un peu difficile de rassembler suffisamment de votes Indépendants ou Anarch "
+"pour le faire passer, mais cela en vaut la peine."
+
+#: codex_of_the_damned/templates/best-cards/sects/anarch.html:43
+msgid ""
+"An excellent Master card, combining permanent intercept and the occasional blood bonus for the low cost of 1 pool. A "
+"no-brainer for most Anarch decks."
+msgstr ""
+"Une excellente carte Maître, combinant interception permanente et bonus de sang occasionnel pour le faible coût d'un "
+"point d'influence. Une inclusion évidente pour la plupart des decks Anarch."
+
+#: codex_of_the_damned/templates/best-cards/sects/anarch.html:50
+#, python-format
+msgid ""
+"A versatile tool when playing a non-anarch crypt. It is the cheapest way to make a vampire anarch, although "
+"%(anarch_convert)s and %(the_red_question)s are excellent alternatives, but it can also bring some welcome blood back"
+" on the table on occasions."
+msgstr ""
+"Un outil polyvalent lorsque l'on joue une crypte non Anarch. C'est le moyen le moins cher de rendre un vampire "
+"anarch, bien qu'%(anarch_convert)s et %(the_red_question)s soient d'excellentes alternatives, mais il peut aussi "
+"occasionallement ramener du sang sur la table."
+
+#: codex_of_the_damned/templates/best-cards/sects/anarch.html:62
+#, python-format
+msgid ""
+"With an effect similar to %(smiling_jack)s, they are most often played together for pool damage in decks that have "
+"enough block potential to defend it."
+msgstr ""
+"Avec un effet similaire à %(smiling_jack)s, ils sont le plus souvent joués ensemble pour infliger des dégâts "
+"d'influence dans les decks qui ont un potentiel de bloc suffisant pour les défendre."
+
+#: codex_of_the_damned/templates/best-cards/sects/anarch.html:69
+msgid "A decent source of stealth for a reasonable cost."
+msgstr "Une source de discrétion décente pour un coût raisonnable."
+
+#: codex_of_the_damned/templates/best-cards/sects/anarch.html:75
+#, python-format
+msgid ""
+"A very versatile combat utility, it finds it place in many Anarch decks with a combat module. The option to cancel an"
+" %(immortal_grapple)s can be a life saver."
+msgstr ""
+"Outil de combat très polyvalent, il trouve sa place dans de nombreux decks Anarch ayant un module de combat. La "
+"possibilité d'annuler un %(immortal_grapple)s peut sauver un serviteur."
+
+#: codex_of_the_damned/templates/best-cards/sects/anarch.html:82
+msgid ""
+"Although costly, it is a good bleed enhancer that requires no discipline. Invaluable in decks that have no access to "
+"other bleed enhancers, it can be a decisive tool for a lunge."
+msgstr ""
+"Bien que coûteux, c'est un bon améliorateur de morsure qui ne nécessite aucune discipline. Inestimable dans les decks"
+" qui n'ont pas accès à d'autres améliorateurs de morsure, il peut être un outil décisif pour une fente."
+
+#: codex_of_the_damned/templates/best-cards/sects/anarch.html:90
+#, python-format
+msgid ""
+"A unique effect that allows Anarch to recruit allies without the risk of being blocked, it can be used in ally-"
+"oriented archetypes like %(war_ghouls)s, %(khazar_s_diary)s or %(nephandii)s."
+msgstr ""
+"Un effet unique qui permet aux Anarch de recruter des alliés sans risque d'être bloqué, il peut être utilisé dans des"
+" archétypes orientés alliés comme %(war_ghouls)s, %(khazar_s_diary)s ou %(nephandii)s."
+
+#: codex_of_the_damned/templates/best-cards/sects/anarch.html:102
+#, python-format
+msgid ""
+"An excellent bleed enhancer, although the blood cost can be a bummer. Combined with cards that help bring some pool "
+"back on the vampires, like %(the_anarch_free_press)s and %(twilight_camp)s, it becomes a frightening pool damage "
+"device."
+msgstr ""
+"Un excellent améliorateur de morsure, même si le coût en sang peut être génant. Combiné avec des cartes qui aident à "
+"ramener un peu de sang sur les vampires, comme %(the_anarch_free_press)s et %(twilight_camp)s, il devient une "
+"excellente source de dégâts d'influence."
+
+#: codex_of_the_damned/templates/best-cards/sects/anarch.html:114
+#, python-format
+msgid "A nice way to make a vampire anarch at no cost, it is often played alongside %(twilight_camp)s"
+msgstr "Utile pour rendre un vampire Anarch gratuitement, il est souvent joué aux côtés de %(twilight_camp)s"
+
+#: codex_of_the_damned/templates/best-cards/sects/anarch.html:121
+#, python-format
+msgid ""
+"A versatile combat tool for vampires having both %(cel)s and %(for)s, the choice between prevention and additional "
+"strike is a unique combination: it is unlikely to jam the hand and can help offensively or defensively depending on "
+"the situation."
+msgstr ""
+"Outil de combat polyvalent pour les vampires ayant à la fois %(cel)s et %(for)s, le choix entre prévention et frappe "
+"supplémentaire est une combinaison unique : il est peu probable qu'il enraye la main et peut aider offensivement ou "
+"défensivement selon la situation."
+
+#: codex_of_the_damned/templates/best-cards/sects/anarch.html:130
+msgid ""
+"A decent rotation enhancer even without anarch cards, it becomes very useful if the unlock effect can be put to good "
+"use."
+msgstr ""
+"Un améliorateur de rotation décent même sans cartes Anarch, il devient très utile si l'effet de redressement peut "
+"être utilisé à bon escient."
+
+#: codex_of_the_damned/templates/best-cards/sects/anarch.html:137
+#, python-format
+msgid ""
+"Although it provides no bleed bonus, having a stealthed bleed for %(pre)s is a powerful tool, moreover when combined "
+"with %(power_of_one)s to deliver a 2 stealth 2 pool bleed. The bloat effect is a nice bonus too."
+msgstr ""
+"Bien qu'il n'offre aucun bonus de morsure, avoir une morsure avec discrétion pour %(pre)s est un outil puissant, "
+"d'autant plus s'il est combiné à %(power_of_one)s pour produire une morsure de 2 avec 2 de discrétion. L'effet de "
+"régénération est également un bon bonus."
+
+#: codex_of_the_damned/templates/best-cards/sects/anarch.html:145
+#, python-format
+msgid ""
+"Although pricier than %(bonding)s, it provides stealth and bleed power at inferior %(pre)s, which makes it usable by "
+"lower capacity vampires."
+msgstr ""
+"Bien que plus coûteux que %(bonding)s, il fournit discrétion et bonus de morsure en %(pre)s inférieur, ce qui le rend"
+" utilisable par des vampires de moindre capacité."
+
+#: codex_of_the_damned/templates/best-cards/sects/anarch.html:153
+#, python-format
+msgid ""
+"A decent recursion device, it is often seen in political decks, like %(death_star)s, where it can be used to get back"
+" some critical pool damaging vote in hand."
+msgstr ""
+"Un outil de récursion décent, il est souvent présent dans les decks politiques, comme %(death_star)s, où il peut être"
+" utilisé pour récupérer un vote critique pour des dégâts d'influence."
+
 #: codex_of_the_damned/templates/online-play/index.html:6
 #, python-format
 msgid ""
@@ -9001,3 +9147,4 @@ msgstr ""
 "situation à trois ou cinq joueurs : si la fente fonctionne, vous revenez à un nombre pair et à une situation "
 "favorable. Si elle échoue, vous restez sur un nombre impair de joueurs en ayant mis une grande pression sur la proie."
 " En général, cela signifie que la pression va revenir en force contre vous au prochain tour de table. </p>"
+
