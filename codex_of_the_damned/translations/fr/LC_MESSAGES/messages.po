@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: codex 0.X\n"
 "Report-Msgid-Bugs-To: lionel.panhaleux+codex@gmail.com\n"
-"POT-Creation-Date: 2020-10-06 18:01+0200\n"
+"POT-Creation-Date: 2020-10-07 11:47+0200\n"
 "PO-Revision-Date: 2020-07-04 08:50+0200\n"
 "Last-Translator: Lionel Panhaleux <lionel.panhaleux+codex@gmail.com>\n"
 "Language: fr\n"
@@ -268,12 +268,11 @@ msgstr ""
 msgid "Tupdogs"
 msgstr ""
 
-#: codex_of_the_damned/navigation.py:133 codex_of_the_damned/templates/best-cards/clans/tzimisce.html:10
+#: codex_of_the_damned/navigation.py:133
 msgid "Tzimisce Toolbox"
 msgstr ""
 
 #: codex_of_the_damned/navigation.py:134 codex_of_the_damned/templates/archetypes/mistress.html:33
-#: codex_of_the_damned/templates/best-cards/clans/tzimisce.html:9
 msgid "Tzimisce Wall"
 msgstr ""
 
@@ -287,8 +286,7 @@ msgstr ""
 msgid "War Chantry"
 msgstr ""
 
-#: codex_of_the_damned/navigation.py:137 codex_of_the_damned/templates/best-cards/clans/tzimisce.html:11
-#: codex_of_the_damned/templates/best-cards/sects/anarch.html:120
+#: codex_of_the_damned/navigation.py:137 codex_of_the_damned/templates/best-cards/sects/anarch.html:120
 msgid "War Ghouls"
 msgstr ""
 
@@ -6034,6 +6032,82 @@ msgstr ""
 "excellent pour contrôler la table. Les deux voisins peuvent rapidement perdre leurs rebonds de morsure ou leurs "
 "cartes de fente, et cela peut également être utilisé pour négocier en face de table."
 
+#: codex_of_the_damned/templates/best-cards/clans/tzimisce.html:8
+#, python-format
+msgid ""
+"The Tzimisce and their unique %(vic)s discipline also have the quite rare %(AUS)s%(ANI)s combination, making them "
+"excellent blockers. They have given birth to the %(tzimisce_wall)s and the %(tzimisce_toolbox)s archetypes, but also "
+"to the %(war_ghouls)s archetype, using %(war_ghoul)s to rush opponents vampires."
+msgstr ""
+"Les Tzimisce et leur discipline exclusive %(vic)s ont également la combinaison assez rare %(AUS)s%(ANI)s, ce qui en fait "
+"d'excellents bloqueurs. Ils ont donné naissance aux archétypes %(tzimisce_wall)s et %(tzimisce_toolbox)s, mais aussi "
+"à l'archétype %(war_ghouls)s, utilisant %(war_ghoul)s pour abattre les vampires adverses."
+
+#: codex_of_the_damned/templates/best-cards/clans/tzimisce.html:24
+#, python-format
+msgid ""
+"An excellent combat card offering both maneuverability and aggravated damage. As a bonus, the strike stays a hand "
+"strike and can be used even if %(immortal_grapple)s has been played."
+msgstr ""
+"Une excellente carte de combat offrant à la fois manœuvre et dégâts aggravés. En prime, la frappe reste à mains nues "
+"et peut être utilisé même si %(immortal_grapple)s a été joué."
+
+#: codex_of_the_damned/templates/best-cards/clans/tzimisce.html:32
+#, python-format
+msgid ""
+"The <em>other</em> aggravated strike available through %(vic)s, it makes for a dreadful combination with "
+"%(chiropteran_marauder)s, as no range is safe for the opponent."
+msgstr ""
+"L '<em>autre</em> frappe aggravée disponible via %(vic)s, elle constitue une combinaison terrible avec "
+"%(chiropteran_marauder)s, car aucune portée n'est sûre pour l'adversaire."
+
+#: codex_of_the_damned/templates/best-cards/clans/tzimisce.html:40
+#, python-format
+msgid ""
+"All clan disciplines %(AUS)s%(ANI)s%(VIC)s at superior for only 6 pool: a bargain. He finds his spot in many Tzimisce"
+" crypts."
+msgstr ""
+"Toutes les disciplines du clan %(AUS)s%(ANI)s%(VIC)s en supérieur pour seulement 6 d'influence : une bonne affaire. Il "
+"trouve sa place dans de nombreuses cryptes Tzimisce."
+
+#: codex_of_the_damned/templates/best-cards/clans/tzimisce.html:47
+#, python-format
+msgid "Although she has inferior %(vic)s, having %(AUS)s%(ANI)s for just 5 pool makes an excellent blocker out of her."
+msgstr ""
+"Bien qu'elle n'ait un %(vic)s qu'en inférieur, avoir %(AUS)s%(ANI)s pour seulement 5 pool fait d'elle un excellent "
+"bloqueur."
+
+#: codex_of_the_damned/templates/best-cards/clans/tzimisce.html:54
+#, python-format
+msgid "Choice between stealth and bleed enhancement, a versatile tool for %(vic)s."
+msgstr ""
+"Au choix de l'amélioration de morsure ou de la discrétion, un outil polyvalent pour %(vic)s."
+
+#: codex_of_the_damned/templates/best-cards/clans/tzimisce.html:60
+#, python-format
+msgid "A cheap 2 pool for %(aus)s, he is included in many decks using this discipline."
+msgstr ""
+"2 d'influence, un prix plutôt bas pour %(aus)s, il est inclus dans de nombreux decks utilisant cette discipline."
+
+#: codex_of_the_damned/templates/best-cards/clans/tzimisce.html:66
+#, python-format
+msgid ""
+"Yet another cheap sidekick, %(vic)s is less useful than %(aus)s but, still, having cheap Tzimisce to recruit some "
+"%(war_ghoul)s is great."
+msgstr ""
+"Encore un autre acolyte bon marché, %(vic)s est moins utile que %(aus)s mais, quand même, avoir un Tzimisce bon marché "
+"pour recruter des %(war_ghoul)s est bien pratique."
+
+#: codex_of_the_damned/templates/best-cards/clans/tzimisce.html:73
+msgid ""
+"One of the most dreadful allies of the game, it is an excellent combatant and can grind vampires down all around the "
+"table in a few turns. The trick is to work around its downside by getting cheap allies and retainers to sacrifice to "
+"it."
+msgstr ""
+"L'un des alliés les plus redoutables du jeu, c'est un excellent combattant et il peut abattre tous les vampires "
+"de la table en quelques tours. L'astuce consiste à gérer son inconvénient en trouvant des alliés "
+"et des serviteurs bon marché à lui sacrifier."
+
 #: codex_of_the_damned/templates/best-cards/clans/ventrue.html:10
 msgid "Anti Ventrue Grinder"
 msgstr ""
@@ -8809,4 +8883,3 @@ msgstr ""
 
 #~ msgid "AAA_archetype"
 #~ msgstr "archétype AAA"
-

@@ -1,106 +1,80 @@
 {% extends "best-cards/_layout.html" %}
+{% import "best-cards/_layout_card_column.html" as layout with context%}
 
 {% block content %}
 <h1><img src="{{ url_for('static', filename='img/icons/clan-tzimisce.svg') }}"> Tzimisce</h1>
-<p>
-    The Tzimisce and their unique <i>v</i> discipline also have the quite rare <i>AI</i> combination,
-    making them excellent blockers.
-    They have given birth to the
-    the {{ link("/archetypes/tzimisce-wall", _("Tzimisce Wall")) }} and the
-    {{ link("/archetypes/tzimisce-toolbox", _("Tzimisce Toolbox")) }} archetypes,
-    but also to the {{ link("/archetypes/war-ghouls", _("War Ghouls")) }} archetype,
-    using {{ card("War Ghoul") }} to rush opponents vampires.
-</p>
-<h2>Highlights</h2>
-<div class="column">
-    <div class="column-image">
-        <img src="https://images.krcg.org/chiropteranmarauder.jpg">
-        <h4>Chiropteran Marauder</h4>
-        <p class="center-subtitle">played in 60 decks, typically 3-10 copies</p>
-    </div>
+<div class="tip">
     <p>
-        An excellent combat card offering both maneuverability and aggravated damage.
-        As a bonus, the strike stays a hand strike and can be used even if
-        {{ card("Immortal Grapple") }} has been played.
+        {% trans trimmed 
+            tzimisce_wall=link("/archetypes/tzimisce-wall", "Tzimisce Wall"),
+            tzimisce_toolbox=link("/archetypes/tzimisce-toolbox", "Tzimisce Toolbox"),
+            war_ghouls=link("/archetypes/war-ghouls", "War Ghouls"),
+            war_ghoul=card("War Ghoul")
+        %}
+        The Tzimisce and their unique {{ vic }} discipline also have the quite rare
+        {{ AUS }}{{ ANI }} combination, making them excellent blockers.
+        They have given birth to the {{ tzimisce_wall }} and the
+        {{ tzimisce_toolbox }} archetypes, but also to the {{ war_ghouls }} archetype,
+        using {{ war_ghoul }} to rush opponents vampires.
+        {% endtrans %}
+    </p>
+</div>
 
-    </p>
-</div>
-<div class="column">
-    <div class="column-image">
-        <img src="https://images.krcg.org/breathofthedragon.jpg">
-        <h4>Breath of the Dragon</h4>
-        <p class="center-subtitle">played in 53 decks, typically 1-6 copies</p>
-    </div>
-    <p>
-        The <em>other</em> aggravated strike available through <i>v</i>,
-        it makes for a dreadful combination with
-        {{ card("Chiropteran Marauder") }},
-        as no range is safe for the opponent.
-    </p>
-</div>
-<div class="column">
-    <div class="column-image">
-        <img src="https://images.krcg.org/caliban.jpg">
-        <h4>Caliban</h4>
-        <p class="center-subtitle">played in 52 decks, typically 1-2 copies</p>
-    </div>
-    <p>
-        All clan disciplines <i>AIV</i> at superior for only 6 pool: a bargain.
-        He finds his spot in many Tzimisce crypts.
-    </p>
-</div>
-<div class="column">
-    <div class="column-image">
-        <img src="https://images.krcg.org/devinbisley.jpg">
-        <h4>Devin Bisley</h4>
-        <p class="center-subtitle">played in 50 decks, typically 1-2 copies</p>
-    </div>
-    <p>
-        Although she has inferior <i>v</i>, having <i>AI</i> for just 5 pool
-        makes an excellent blocker out of her.
-    </p>
-</div>
-<div class="column">
-    <div class="column-image">
-        <img src="https://images.krcg.org/changeling.jpg">
-        <h4>Changeling (47 decks)</h4>
-        <p class="center-subtitle">played in 49 decks, typically 3-8 copies</p>
-    </div>
-    <p>
-        Choice between stealth and bleed enhancement, a versatile tool for <i>v</i>.
-    </p>
-</div>
-<div class="column">
-    <div class="column-image">
-        <img src="https://images.krcg.org/piotrandreikov.jpg">
-        <h4>Piotr Andreikov</h4>
-        <p class="center-subtitle">played in 43 decks, typically 1-2 copies</p>
-    </div>
-    <p>
-        A cheap 2 pool for <i>a</i>, he is included in many decks using this discipline.
-    </p>
-</div>
-<div class="column">
-    <div class="column-image">
-        <img src="https://images.krcg.org/horatio.jpg">
-        <h4>Horatio</h4>
-        <p class="center-subtitle">played in 43 decks, typically 1-2 copies</p>
-    </div>
-    <p>
-        Yet another cheap sidekick, <i>v</i> is less useful than <i>a</i> but, still, having cheap Tzimisce
-        to recruit some {{ card("War Ghoul") }} is great.
-    </p>
-</div>
-<div class="column">
-    <div class="column-image">
-        <img src="https://images.krcg.org/warghoul.jpg">
-        <h4>War Ghoul</h4>
-        <p class="center-subtitle">played in 41 decks, typically 2-8 copies</p>
-    </div>
-    <p>
-        One of the most dreadful allies of the game, it is an excellent combatant and can grind vampires
-        down all around the table in a few turns. The trick is to work around its downside by getting
-        cheap allies and retainers to sacrifice to it.
-    </p>
-</div>
+{% call layout.card_column("Chiropteran Marauder", decks=60, copies="3-10") %}
+{% trans trimmed immortal_grapple=card("Immortal Grapple")%}
+An excellent combat card offering both maneuverability and aggravated damage.
+As a bonus, the strike stays a hand strike and can be used even if
+{{ immortal_grapple }} has been played.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Breath of the Dragon", decks=53, copies="1-6") %}
+{% trans trimmed chiropteran_marauder=card("Chiropteran Marauder") %}
+The <em>other</em> aggravated strike available through {{ vic }},
+it makes for a dreadful combination with {{ chiropteran_marauder }},
+as no range is safe for the opponent.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Caliban", decks=52, copies="1-2") %}
+{% trans trimmed %}
+All clan disciplines {{ AUS }}{{ ANI }}{{ VIC }} at superior for only 6 pool: a bargain.
+He finds his spot in many Tzimisce crypts.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Devin Bisley", decks=50, copies="1-2") %}
+{% trans trimmed %}
+Although she has inferior {{ vic }}, having {{ AUS }}{{ ANI }} for just 5 pool
+makes an excellent blocker out of her.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Changeling (47 decks", decks=49, copies="3-8") %}
+{% trans trimmed %}
+Choice between stealth and bleed enhancement, a versatile tool for {{ vic }}.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Piotr Andreikov", decks=43, copies="1-2") %}
+{% trans trimmed %}
+A cheap 2 pool for {{ aus }}, he is included in many decks using this discipline.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Horatio", decks=43, copies="1-2") %}
+{% trans trimmed war_ghoul=card("War Ghoul") %}
+Yet another cheap sidekick, {{ vic }} is less useful than {{ aus }} but, still,
+having cheap Tzimisce to recruit some {{ war_ghoul }} is great.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("War Ghoul", decks=41, copies="2-8") %}
+{% trans trimmed %}
+One of the most dreadful allies of the game, it is an excellent combatant
+and can grind vampires down all around the table in a few turns.
+The trick is to work around its downside by getting cheap allies and retainers
+to sacrifice to it.
+{% endtrans %}
+{% endcall %}
 {% endblock %}
