@@ -1,100 +1,79 @@
 {% extends "best-cards/_layout.html" %}
+{% import "best-cards/_layout_card_column.html" as layout with context%}
 
 {% block content %}
 <h1>Laibon</h1>
-<p>
-    The Laibon offer unique tools to its members all around, be it for block, combat, politics or bleed.
-</p>
-<h2>Highlights</h2>
-<div class="column">
-    <div class="column-image">
-        <img src="https://images.krcg.org/powerbaseluanda.jpg">
-        <h4>Powerbase: Luanda</h4>
-        <p class="center-subtitle">played in 53 decks, typically 1 copy</p>
-    </div>
+<div class="tip">
     <p>
-        An excellent card for combat-able Laibon constructs,
-        it provides a bit more the rush capability at no cost.
+        {% trans trimmed %}
+        The Laibon offer unique tools to its members all around, be it for block,
+        combat, politics or bleed.
+        {% endtrans %}
     </p>
 </div>
-<div class="column">
-    <div class="column-image">
-        <img src="https://images.krcg.org/strangeday.jpg">
-        <h4>Strange Day</h4>
-        <p class="center-subtitle">played in 49 decks, typically 1 copy</p>
-    </div>
-    <p>
-        A definitive lunge device to get a critical action through,
-        its high blood cost prevents to play more than 1 or 2 copies in a deck.
-    </p>
-</div>
-<div class="column">
-    <div class="column-image">
-        <img src="https://images.krcg.org/mbaremarketharare.jpg">
-        <h4>Mbare Market, Harare</h4>
-        <p class="center-subtitle">played in 47 decks, typically 1 copy</p>
-    </div>
-    <p>
-        A decent bloat device for Laibon, although it is a little bit pricey compared to similar clan
-        cards like the Toreador <img src="{{ url_for('static', filename='img/icons/clan-toreador.svg') }}">
-        {{ card("Art Museum") }}.
-    </p>
-</div>
-<div class="column">
-    <div class="column-image">
-        <img src="https://images.krcg.org/wellmarked.jpg">
-        <h4>Well-Marked</h4>
-        <p class="center-subtitle">played in 46 decks, typically 1-2 copies</p>
-    </div>
-    <p>
-        A good bruise prevention effect at a low cost, it is an easy inclusion in combat-oriented decks.
-    </p>
-</div>
-<div class="column">
-    <div class="column-image">
-        <img src="https://images.krcg.org/nosecretsfromthemagaji.jpg">
-        <h4>No Secrets From the Magaji</h4>
-        <p class="center-subtitle">played in 46 decks, typically 1-5 copies</p>
-    </div>
-    <p>
-        A powerful interception device for the Magaji, it compares to the Camarilla's
-        {{ card("Second Tradition: Domain") }}.
-        Althoug intercept is lower, the permanent wake effect is exceptionaly strong.
-        One must not fail a block to keep it, so a bit of interception enhancement
-        is appreciable.
-    </p>
-</div>
-<div class="column">
-    <div class="column-image">
-        <img src="https://images.krcg.org/kduvasmask.jpg">
-        <h4>Kduva's Mask</h4>
-        <p class="center-subtitle">played in 37 decks, typically 1 copy</p>
-    </div>
-    <p>
-        A bit pricey for just the bleed bonus, it becomes a worthwile addition in political decks like
-        {{ link("/archetypes/ishtarri-politics", _("Ishtarri Politics")) }}.
-    </p>
-</div>
-<div class="column">
-    <div class="column-image">
-        <img src="https://images.krcg.org/powerbasetshwane.jpg">
-        <h4>Powerbase: Tshwane</h4>
-        <p class="center-subtitle">played in 36 decks, typically 1-2 copies</p>
-    </div>
-    <p>
-        A good pool reduction that can amount to a very decent bloat if played alongside enough
-        pool-costing cards. Even just reducing the cost of other master cards can be enough
-        to include it.
-    </p>
-</div>
-<div class="column">
-    <div class="column-image">
-        <img src="https://images.krcg.org/ancestorspirit.jpg">
-        <h4>Ancestor Spirit</h4>
-        <p class="center-subtitle">played in 35 decks, typically 1 copy</p>
-    </div>
-    <p>
-        A bleed and vote enhancer at no cost: an easy inclusion in many Laibon decks.
-    </p>
-</div>
+
+{% call layout.card_column("Powerbase: Luanda", decks=53, copies="1") %}
+{% trans trimmed %}
+An excellent card for combat-able Laibon decks,
+it provides a bit more the rush capability at no cost.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Strange Day", decks=49, copies="1") %}
+{% trans trimmed %}
+A definitive lunge device to get a critical action through,
+its high blood cost prevents to play more than 1 or 2 copies in a deck.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Mbare Market, Harare", decks=47, copies="1") %}
+{% trans trimmed 
+    img_clan_toreador='<img src="%(url)s" />'|format(url=url_for('static', filename='img/icons/clan-toreador.svg'))|safe,
+    art_museum=card("Art Museum")
+    %}
+A decent bloat device for Laibon, although it is a little bit pricey compared to similar
+clan cards like the Toreador {{ img_clan_toreador }} {{ art_museum }}.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Well-Marked", decks=46, copies="1-2") %}
+{% trans trimmed %}
+A good bruise prevention effect at a low cost, it is an easy inclusion in
+combat-oriented decks.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("No Secrets From the Magaji", decks=46, copies="1-5") %}
+{% trans trimmed second_tradition_domain=card("Second Tradition: Domain") %}
+A powerful interception device for the <em>Magaji</em>, it compares to the Camarilla's
+{{ second_tradition_domain }}.
+Althoug intercept is lower, the permanent wake effect is exceptionaly strong.
+One must not fail a block to keep it, so a bit of interception enhancement
+is appreciable.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Kduva's Mask", decks=37, copies="1") %}
+{% trans trimmed 
+    ishtarri_politics=link("/archetypes/ishtarri-politics", "Ishtarri Politics")
+%}
+A bit pricey for just the bleed bonus, it becomes a worthwile addition in political
+decks like {{ ishtarri_politics }}.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Powerbase: Tshwane", decks=36, copies="1-2") %}
+{% trans trimmed %}
+A good pool reduction that can amount to a very decent bloat if played alongside enough
+pool-costing cards. Even just reducing the cost of other master cards can be enough
+to include it.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Ancestor Spirit", decks=35, copies="1") %}
+{% trans trimmed %}
+A bleed and vote enhancer at no cost: an easy inclusion in many Laibon decks.
+{% endtrans %}
+{% endcall %}
+
 {% endblock %}

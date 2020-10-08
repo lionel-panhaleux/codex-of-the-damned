@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: codex 0.X\n"
 "Report-Msgid-Bugs-To: lionel.panhaleux+codex@gmail.com\n"
-"POT-Creation-Date: 2020-10-07 18:57+0200\n"
+"POT-Creation-Date: 2020-10-08 09:49+0200\n"
 "PO-Revision-Date: 2020-07-04 08:50+0200\n"
 "Last-Translator: Lionel Panhaleux <lionel.panhaleux+codex@gmail.com>\n"
 "Language: fr\n"
@@ -164,7 +164,7 @@ msgstr ""
 msgid "Hunters"
 msgstr ""
 
-#: codex_of_the_damned/navigation.py:108 codex_of_the_damned/templates/best-cards/sects/laibon.html:75
+#: codex_of_the_damned/navigation.py:108
 msgid "Ishtarri Politics"
 msgstr ""
 
@@ -6484,6 +6484,68 @@ msgstr ""
 "votes pour ça, et un module de combat suffisamment puissant pour le déclencher. Un vote le plus souvent vu dans les "
 "decks Brujah %(img_clan_brujah)s."
 
+#: codex_of_the_damned/templates/best-cards/sects/laibon.html:8
+msgid "The Laibon offer unique tools to its members all around, be it for block, combat, politics or bleed."
+msgstr ""
+"La secte Laibon offre des outils exclusifs à ses membres, que ce soit pour le blocage, le combat, la politique ou la "
+"morsure."
+
+#: codex_of_the_damned/templates/best-cards/sects/laibon.html:16
+msgid "An excellent card for combat-able Laibon decks, it provides a bit more the rush capability at no cost."
+msgstr "Une excellente carte pour les decks Laibon aptes au combat, elle offre un peu plus de rush gratuitement."
+
+#: codex_of_the_damned/templates/best-cards/sects/laibon.html:23
+msgid ""
+"A definitive lunge device to get a critical action through, its high blood cost prevents to play more than 1 or 2 "
+"copies in a deck."
+msgstr ""
+"Un appareil de fente incontestable pour mener à bien une action critique, son coût élevé en sang empêche de jouer "
+"plus de 1 ou 2 exemplaires dans un deck."
+
+#: codex_of_the_damned/templates/best-cards/sects/laibon.html:30
+#, python-format
+msgid ""
+"A decent bloat device for Laibon, although it is a little bit pricey compared to similar clan cards like the Toreador"
+" %(img_clan_toreador)s %(art_museum)s."
+msgstr ""
+"Un appareil de régénération décent pour les Laibon, bien qu'il soit un peu cher comparé à des cartes de clan "
+"similaires comme l'%(art_museum)s Toreador %(img_clan_toreador)s."
+
+#: codex_of_the_damned/templates/best-cards/sects/laibon.html:40
+msgid "A good bruise prevention effect at a low cost, it is an easy inclusion in combat-oriented decks."
+msgstr "Un bon effet de prévention des dégâts à faible coût, c'est une intégration facile dans les decks orientés combat."
+
+#: codex_of_the_damned/templates/best-cards/sects/laibon.html:47
+#, python-format
+msgid ""
+"A powerful interception device for the <em>Magaji</em>, it compares to the Camarilla's %(second_tradition_domain)s. "
+"Althoug intercept is lower, the permanent wake effect is exceptionaly strong. One must not fail a block to keep it, "
+"so a bit of interception enhancement is appreciable."
+msgstr ""
+"Puissant outil d'interception pour les <em>Magaji</em>, il se compare à la %(second_tradition_domain)s de la "
+"Camarilla. Bien que l'interception soit plus faible, l'effet de réveil permanent est exceptionnellement fort. Il ne "
+"faut pas manquer un bloc pour le conserver, donc un peu d'amélioration d'interception est appréciable."
+
+#: codex_of_the_damned/templates/best-cards/sects/laibon.html:57
+#, python-format
+msgid "A bit pricey for just the bleed bonus, it becomes a worthwile addition in political decks like %(ishtarri_politics)s."
+msgstr ""
+"Un peu cher pour le bonus de morsure seul, il devient un ajout valable dans les decks politiques comme "
+"%(ishtarri_politics)s."
+
+#: codex_of_the_damned/templates/best-cards/sects/laibon.html:66
+msgid ""
+"A good pool reduction that can amount to a very decent bloat if played alongside enough pool-costing cards. Even just"
+" reducing the cost of other master cards can be enough to include it."
+msgstr ""
+"Une bonne réduction d'influence qui peut équivaloir à une régénération respectable si elle est jouée avec "
+"suffisamment de cartes coûtant de l'influence. La simple réduction du coût des autres cartes Maître peut suffire à "
+"l'inclure."
+
+#: codex_of_the_damned/templates/best-cards/sects/laibon.html:74
+msgid "A bleed and vote enhancer at no cost: an easy inclusion in many Laibon decks."
+msgstr "Un améliorateur de morsure et de vote gratuit : une inclusion facile dans de nombreux decks Laibon."
+
 #: codex_of_the_damned/templates/online-play/index.html:6
 #, python-format
 msgid ""
@@ -9240,27 +9302,3 @@ msgstr ""
 "situation à trois ou cinq joueurs : si la fente fonctionne, vous revenez à un nombre pair et à une situation "
 "favorable. Si elle échoue, vous restez sur un nombre impair de joueurs en ayant mis une grande pression sur la proie."
 " En général, cela signifie que la pression va revenir en force contre vous au prochain tour de table. </p>"
-
-#~ msgid ""
-#~ "Only available for Princes and Justicars, it is one of "
-#~ "the most effective reaction of the game. Not only does "
-#~ "it unlock — not just wake — the vampire, it also "
-#~ "provides a solid +2 intercept bonus. Furthermore, the reasonable"
-#~ " blood cost of one is only paid when the unlock "
-#~ "effect is needed."
-#~ msgstr ""
-
-#~ msgid ""
-#~ "Although only available for Justicars and Inner Circles, this "
-#~ "vote let them fetch costly equipment at a bargain, like "
-#~ "an %(helicopter)s or an %(assault_rifle)s. Combined with a strong"
-#~ " weapon, the option to enter combat becomes dreadful."
-#~ msgstr ""
-
-#~ msgid ""
-#~ "Reserved to Princes and Justicars as all traditions, it can"
-#~ " stack and lock down a table pretty quickly provided one"
-#~ " has enough blood to pay for it. The obvious drawback "
-#~ "is that it can quickly focus a lot of table hatred "
-#~ "on the Methusalah who played it."
-#~ msgstr ""
