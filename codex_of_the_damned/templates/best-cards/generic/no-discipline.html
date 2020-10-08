@@ -1,307 +1,210 @@
 {% extends "best-cards/_layout.html" %}
+{% import "best-cards/_layout_card_column.html" as layout with context %}
 
 {% block content %}
-<h1>No discipline</h1>
-<div class="column">
-    <div class="column-image">
-        <img src="https://images.krcg.org/onthequivive.jpg">
-        <h4>On the Qui Vive</h4>
-        <p class="center-subtitle">played in 1318 decks, typically 2-5 copies</p>
-    </div>
-    <p>
-        Wake reaction cards are played in most decks.
-        This one has no requirement, no cost and is immediately replaced, plus it can be used by allies.
-        However, it may need to be complemented by other wakes because of its once per turn limit.
-    </p>
-</div>
-<div class="column">
-    <div class="column-image">
-        <img src="https://images.krcg.org/delayingtactics.jpg">
-        <h4>Delaying Tactics</h4>
-        <p class="center-subtitle">played in 625 decks, typically 1-3 copies</p>
-    </div>
-    <p>
-        A very widespread defence against political actions.
-        The action can still be performed again a turn later, but breaking a predator's lunge
-        or preventing a prey's <span class="card" onclick="dC('consanguineousboon')">Consanguineous
-            Boon</span>
-        can make a win. It is best used <em>after</em> the vote has taken place.
-    </p>
-</div>
-<div class="column">
-    <div class="column-image">
-        <img src="https://images.krcg.org/heartofnizchetus.jpg">
-        <h4>Heart of Nizchetus</h4>
-        <p class="center-subtitle">played in 538 decks, typically 1-2 copies</p>
-    </div>
-    <p>
-        A cheap way to ensure an optimal card rotation throughout the game.
-        It has no direct effect on the table so it is often overlooked,
-        even though the fluidity it confers is often key to victory.
-    </p>
-</div>
-<div class="column">
-    <div class="column-image">
-        <img src="https://images.krcg.org/carltonvanwyk.jpg">
-        <h4>Carlton Van Wyk</h4>
-        <p class="center-subtitle">played in 533 decks, typically 1 copy</p>
-    </div>
-    <p>
-        By far the most played ally of the game, he is an excellent blocker for a cheap price.
-        An excellent addition in virtually any deck. Its combat ability makes him quite hard to take down
-        and his existence alone is a deterrent to diablery, as he can be put into play to destroy the
-        diabolist
-        the next turn.
-    </p>
-</div>
-<div class="column">
-    <div class="column-image">
-        <img src="https://images.krcg.org/tasteofvitae.jpg">
-        <h4>Taste of Vitae (455 decks)</h4>
-        <p class="center-subtitle">played in 466 decks, typically 2-6 copies</p>
-    </div>
-    <p>
-        An excellent tool for bloating, it is often seen in rush decks.
-        Played efficiently, it helps leech with cards like
-        {{ card("Minion Tap") }} or
-        {{ card("Blood Doll") }}.
-    </p>
-</div>
-<div class="column">
-    <div class="column-image">
-        <img src="https://images.krcg.org/ivorybow.jpg">
-        <h4>Ivory Bow</h4>
-        <p class="center-subtitle">played in 421 decks, typically 1 copy</p>
-    </div>
-    <p>
-        It provides a deadly aggravated strike at any range for just one pool
-        and is therefore the most cost-effective weapon of the game.
-        Any deck expecting actual combat can play it.
-    </p>
-</div>
-<div class="column">
-    <div class="column-image">
-        <img src="https://images.krcg.org/wakewitheveningsfreshness.jpg">
-        <h4>Wake with Evening's Freshness</h4>
-        <p class="center-subtitle">played in 383 decks, typically 1-5 copies</p>
-    </div>
-    <p>
-        Although only usable by a vampire and not replaced until the next turn, it has the advantage
-        to be playable multiple times, so it is a good complement to the more common
-        {{ card("On the Qui Vive") }}.
-    </p>
-</div>
-<div class="column">
-    <div class="column-image">
-        <img src="https://images.krcg.org/forcedawakening.jpg">
-        <h4>Forced Awakening</h4>
-        <p class="center-subtitle">played in 342 decks, typically 1-6 copies</p>
-    </div>
-    <p>
-        Yet another wake, this one is replaced but can cost a bit of blood.
-        It can be a good complement or alternative to
-        {{ card("On the Qui Vive") }} and
-        {{ card("Wake with Evening's Freshness") }}.
-    </p>
-</div>
-<div class="column">
-    <div class="column-image">
-        <img src="https://images.krcg.org/aranthebestheimmortal.jpg">
-        <h4>Aranthebes, The Immortal</h4>
-        <p class="center-subtitle">played in 326 decks, typically 1 copy</p>
-    </div>
-    <p>
-        A cheap permanent intercept device, although affecting only the predator.
-        As a bonus, it can have a devastative effect against weenie constructs.
-    </p>
-</div>
-<div class="column">
-    <div class="column-image">
-        <img src="https://images.krcg.org/unmaskingthe.jpg">
-        <h4>The Unmasking</h4>
-        <p class="center-subtitle">played in 310 decks, typically 1-2 copies</p>
-    </div>
-    <p>
-        A key card to ally-oriented decks, it transforms any ally setup into a very cumbersome wall.
-        An overall intercept bonus at no cost is already good,
-        plus being an event makes it hard to remove from the table.
-    </p>
-</div>
-<div class="column">
-    <div class="column-image">
-        <img src="https://images.krcg.org/enkilcog.jpg">
-        <h4>Enkil Cog</h4>
-        <p class="center-subtitle">played in 294 decks, typically 1-2 copies</p>
-    </div>
-    <p>
-        A permanent bleed boost at no cost only available for big capacity vampires,
-        it also allows acting during other players turns:
-        add the end of the predator turn to stay unlocked, or during the prey turn to bleed strong while
-        {{ card("Archon Investigation") }} can not be played
-        (as it is an out-of-turn).
-        With a way to unlock the vampire, it can let a minion bleed in consecutive turns.
-    </p>
-</div>
-<div class="column">
-    <div class="column-image">
-        <img src="https://images.krcg.org/targetvitals.jpg">
-        <h4>Target Vitals</h4>
-        <p class="center-subtitle">played in 280 decks, typically 2-6 copies</p>
-    </div>
-    <p>
-        An excellent combat option, it usually gets through against deck with no heavy combat module.
-        A single aggravated damage can even become three and burn a vampire.
-        Because any minion can use it, it is also included in ally oriented decks.
-    </p>
-</div>
-<div class="column">
-    <div class="column-image">
-        <img src="https://images.krcg.org/mylanhorseed.jpg">
-        <h4>Mylan Horseed</h4>
-        <p class="center-subtitle">played in 259 decks, typically 1 copy</p>
-    </div>
-    <p>
-        Played in decks with non-Camarilla big capacity vampires,
-        it is a straight-up boost in {{ link("/strategy/fundamentals", _("A&B"), _anchor="AB") }} for just one
-        pool.
-        Hard to block and hard to destroy in combat, he is safe in many situations.
-    </p>
-</div>
-<div class="column">
-    <div class="column-image">
-        <img src="https://images.krcg.org/mrwinthrop.jpg">
-        <h4>Mr. Winthrop</h4>
-        <p class="center-subtitle">played in 224 decks, typically 1 copy</p>
-    </div>
-    <p>
-        Permanent intercept bonus at no cost,
-        it is a good addition in any deck packing a defensive module with some intercept.
-    </p>
-</div>
-<div class="column">
-    <div class="column-image">
-        <img src="https://images.krcg.org/dragonbound.jpg">
-        <h4>Dragonbound</h4>
-        <p class="center-subtitle">played in 215 decks, typically 1 copy</p>
-    </div>
-    <p>
-        A good tool for pool damage for combat-oriented decks.
-        The hand size diminution is totally acceptable if it means dealing 2 or 3 damages per turn to the
-        prey.
-    </p>
-</div>
-<div class="column">
-    <div class="column-image">
-        <img src="https://images.krcg.org/44magnum.jpg">
-        <h4>.44 Magnum</h4>
-        <p class="center-subtitle">played in 213 decks, typically 1-6 copies</p>
-    </div>
-    <p>
-        The optional maneuver make it a cost-efficient option when it comes to ranged weapons.
-        It is often combined with <i>c</i> for maximum efficiency as it is not limited
-        to a single strike per round or combat: additional strikes transform
-        this nice weapon into a real tool of destruction.
-    </p>
-</div>
-<div class="column">
-    <div class="column-image">
-        <img src="https://images.krcg.org/ossian.jpg">
-        <h4>Ossian</h4>
-        <p class="center-subtitle">played in 207 decks, typically 1 copy</p>
-    </div>
-    <p>
-        He is a good rusher open to all decks. Hard to block, he can pick his targets for maximum effects.
-        Starting with 4 life, he often goes up to more.
-        His ability lets him dispose of young vampire without good defensive options:
-        a little pricey to be just a buffer in front of a rush deck,
-        he becomes invaluable against weenie decks.
-    </p>
-</div>
-<div class="column">
-    <div class="column-image">
-        <img src="https://images.krcg.org/scourgeoftheenochians.jpg">
-        <h4>Scourge of the Enochians</h4>
-        <p class="center-subtitle">played in 198 decks, typically 1 copy</p>
-    </div>
-    <p>
-        A death sentence for breed decks at no cost,
-        it is often included in slow decks that have difficulties to cope
-        with the overwhelming numbers of decks creating newborn vampires with cards like
-        {{ card("The Embrace") }}.
-    </p>
-</div>
-<div class="column">
-    <div class="column-image">
-        <img src="https://images.krcg.org/sniperrifle.jpg">
-        <h4>Sniper Rifle</h4>
-        <p class="center-subtitle">played in 161 decks, typically 1-3 copies</p>
-    </div>
-    <p>
-        An excellent option for decks with good intercept capabilities, it makes blocks more threatening
-        and keep closed combat constructs at range,
-        improving the {{ link("/strategy/combat", _("bruise"), _anchor="bruise") }} ratio of the deck
-        substantially.
-    </p>
-</div>
-<div class="column">
-    <div class="column-image">
-        <img src="https://images.krcg.org/bumsrush.jpg">
-        <h4>Bum's Rush</h4>
-        <p class="center-subtitle">played in 148 decks, typically 1-7 copies</p>
-    </div>
-    <p>
-        The eponymous card of <em>rush</em> decks, it allows for direct combat against any minion,
-        with the nice bonus of a maneuver to control the range a bit.
-        Some disciplines have better alternatives, like <i>i</i> with
-        {{ card("Deep Song") }}, but otherwise it is a go-to card
-        for combat greedy minions.
-    </p>
-</div>
-<div class="column">
-    <div class="column-image">
-        <img src="https://images.krcg.org/weightedwalkingstick.jpg">
-        <h4>Weighted Walking Stick</h4>
-        <p class="center-subtitle">played in 145 decks, typically 3-6 copies</p>
-    </div>
-    <p>
-        An efficient weapon at no cost, requiring no action to equip, it is a good alternative for
-        toolbox decks not so much specialized in combat. Often played in association with <i>f</i>
-        for damage prevention.
-    </p>
-</div>
-<div class="column">
-    <div class="column-image">
-        <img src="https://images.krcg.org/concealedweapon.jpg">
-        <h4>Concealed Weapon</h4>
-        <p class="center-subtitle">played in 136 decks, typically 3-8 copies</p>
-    </div>
-    <p>
-        An excellent way to get a weapon without risking an action that could be blocked,
-        it is most often associated with {{ card(".44 Magnums") }}.
-    </p>
-</div>
-<div class="column">
-    <div class="column-image">
-        <img src="https://images.krcg.org/vagabondmystic.jpg">
-        <h4>Vagabond Mystic</h4>
-        <p class="center-subtitle">played in 135 decks, typically 1-2 copies</p>
-    </div>
-    <p>
-        A good addition to allies and imbued decks,
-        his ability does not warrant an action and can be used anytime.
-    </p>
-</div>
-<div class="column">
-    <div class="column-image">
-        <img src="https://images.krcg.org/fbispecialaffairsdivision.jpg">
-        <h4>FBI Special Affairs Division</h4>
-        <p class="center-subtitle">played in 132 decks, typically 1 copy</p>
-    </div>
-    <p>
-        It can be a good deterrent and help keep one's allies alive, but can also be a damage source.
-        It is worth playing only if the allies have a good chance to block vampires
-        and is always accompanied by
-        {{ card("The Unmasking") }}.
-    </p>
-</div>
+<h1>{{ _("No discipline") }}</h1>
+
+{% call layout.card_column("On the Qui Vive", decks=1318, copies="2-5") %}
+{% trans trimmed %}
+Wake reaction cards are played in most decks.
+This one has no requirement, no cost and is immediately replaced, plus it can be used by
+allies. However, it may need to be complemented by other wakes because of its once per
+turn limit.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Delaying Tactics", decks=625, copies="1-3") %}
+{% trans trimmed consanguineous_boon=card("Consanguineous Boon") %}
+A very widespread defence against political actions. The action can still be performed
+again a turn later, but breaking a predator's lunge or preventing a prey's
+{{ consanguineous_boon }} can make a win. It is best used <em>after</em> the vote has
+taken place.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Heart of Nizchetus", decks=538, copies="1-2") %}
+{% trans trimmed %}
+A cheap way to ensure an optimal card rotation throughout the game. It has no direct
+effect on the table so it is often overlooked, even though the fluidity it confers is
+a sure path to victory.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Carlton Van Wyk", decks=533, copies="1") %}
+{% trans trimmed %}
+By far the most played ally of the game, he is an excellent blocker for a cheap price.
+An excellent addition in virtually any deck. Its combat ability makes him quite hard to
+take down and his existence alone is a deterrent to diablery, as he can be put into play
+to destroy the diabolist the next turn.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Taste of Vitae (455 decks", decks=466, copies="2-6") %}
+{% trans trimmed 
+    minion_tap=card("Minion Tap"),
+    blood_doll=card("Blood Doll")
+%}
+An excellent tool for bloating, it is often seen in rush decks. Played efficiently, it
+helps leech with cards like {{ minion_tap }} or {{ blood_doll }}.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Ivory Bow", decks=421, copies="1") %}
+{% trans trimmed %}
+It provides a deadly aggravated strike at any range for just one pool and is therefore
+the most cost-effective weapon of the game. Any deck expecting actual combat can play
+it.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Wake with Evening's Freshness", decks=383, copies="1-5") %}
+{% trans trimmed on_the_qui_vive=card("On the Qui Vive") %}
+Although only usable by a vampire and not replaced until the next turn, it has the
+advantage to be playable multiple times, so it is a good complement to the more common
+{{ on_the_qui_vive }}.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Forced Awakening", decks=342, copies="1-6") %}
+{% trans trimmed 
+    on_the_qui_vive=card("On the Qui Vive"),
+    wake_with_evening_s_freshness=card("Wake with Evening's Freshness")
+%}
+Yet another wake, this one is replaced but can cost a bit of blood. It can be a good
+complement or alternative to {{ on_the_qui_vive }} and
+{{ wake_with_evening_s_freshness }}.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Aranthebes, The Immortal", decks=326, copies="1") %}
+{% trans trimmed %}
+A cheap permanent intercept device, although affecting only the predator. As a bonus,
+it can have a devastative effect against weenie constructs.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("The Unmasking", decks=310, copies="1-2") %}
+{% trans trimmed %}
+A key card to ally-oriented decks, it transforms any ally setup into a very cumbersome
+wall. An overall intercept bonus at no cost is already good, plus being an event makes
+it hard to remove from the table.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Enkil Cog", decks=294, copies="1-2") %}
+{% trans trimmed archon_investigation=card("Archon Investigation") %}
+A permanent bleed boost at no cost only available for big capacity vampires, it also
+allows acting during other players turns: add the end of the predator turn to stay
+unlocked, or during the prey turn to bleed strong while {{ archon_investigation }} can
+not be played (as it is an out-of-turn). With a way to unlock the vampire, it can let a
+minion bleed in consecutive turns.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Target Vitals", decks=280, copies="2-6") %}
+{% trans trimmed %}
+An excellent combat option, it usually gets through against deck with no heavy combat
+module. A single aggravated damage can even become three and burn a vampire. Because any
+minion can use it, it is also included in ally oriented decks.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Mylan Horseed", decks=259, copies="1") %}
+{% trans trimmed 
+    a_b=link("/strategy/fundamentals", _("A&B"), _anchor="AB")
+%}
+Played in decks with non-Camarilla big capacity vampires, it is a straight-up boost in
+{{ a_b }} for just one pool. Hard to block and hard to destroy in combat, he is safe in
+many situations.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Mr. Winthrop", decks=224, copies="1") %}
+{% trans trimmed %}
+Permanent intercept bonus at no cost, it is a good addition in any deck packing a
+defensive module with some intercept.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Dragonbound", decks=215, copies="1") %}
+{% trans trimmed %}
+A good tool for pool damage for combat-oriented decks. The hand size diminution is
+acceptable if it means dealing 2 or 3 damages per turn to the prey. However, it can have
+detrimental effects on cross-table allies if played carelessly.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column(".44 Magnum", decks=213, copies="1-6") %}
+{% trans trimmed %}
+The optional maneuver make it a cost-efficient option when it comes to weapons. It is
+often combined with {{ cel }} for maximum efficiency as it is not limited to a
+single strike per round or combat: additional strikes transform this weapon into a real
+tool of destruction.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Ossian", decks=207, copies="1") %}
+{% trans trimmed %}
+He is a good rusher open to all decks. Hard to block, he can pick his targets for
+maximum effects. Starting with 4 life, he often goes up to more. His ability lets him
+dispose of young vampire without good defensive options: a little pricey to be just a
+buffer in front of a rush deck, he becomes invaluable against weenie decks.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Scourge of the Enochians", decks=198, copies="1") %}
+{% trans trimmed the_embrace=card("The Embrace") %}
+A death sentence for breed decks at no cost, it is often included in slow decks that
+have difficulties to cope with the overwhelming numbers of minions produced by decks
+creating newborn vampires with cards like {{ the_embrace }}.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Sniper Rifle", decks=161, copies="1-3") %}
+{% trans trimmed bruise=link("/strategy/combat", _("bruise"), _anchor="bruise") %}
+An excellent option for decks with good intercept capabilities, it makes blocks more
+threatening and keep closed combat modules at range, improving the {{ bruise }} ratio
+of the deck substantially.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Bum's Rush", decks=148, copies="1-7") %}
+{% trans trimmed deep_song=card("Deep Song") %}
+The eponymous card of <em>rush</em> decks, it allows for direct combat against any
+minion, with the nice bonus of a maneuver to control the range a bit. Some disciplines
+have better alternatives, like {{ ani }} with {{ deep_song }}, but otherwise it is a
+go-to card for combat-oriented decks.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Weighted Walking Stick", decks=145, copies="3-6") %}
+{% trans trimmed %}
+An efficient weapon at no cost, requiring no action to equip, it is a good alternative
+for toolbox decks not much specialized in combat. Often played in association with
+{{ for }} for damage prevention.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Concealed Weapon", decks=136, copies="3-8") %}
+{% trans trimmed magnum=card(".44 Magnums") %}
+An excellent way to get a weapon without risking an action that could be blocked, it is
+most often associated with {{ magnum }}.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Vagabond Mystic", decks=135, copies="1-2") %}
+{% trans trimmed %}
+A good addition to allies and imbued decks, his ability does not require an action and
+can be used anytime.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("FBI Special Affairs Division", decks=132, copies="1") %}
+{% trans trimmed the_unmasking=card("The Unmasking") %}
+It is a good deterrent and help keep allies alive, but is only worth playing if the
+allies have a good chance to block vampires and is therefore always accompanied by
+{{ the_unmasking }}.
+{% endtrans %}
+{% endcall %}
+
 {% endblock %}

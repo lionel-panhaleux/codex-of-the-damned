@@ -1,107 +1,75 @@
 {% extends "best-cards/_layout.html" %}
+{% import "best-cards/_layout_card_column.html" as layout with context %}
 
 {% block content %}
-<h1><i>o</i> Obfuscate</h1>
+<h1>{{ obf }} {{ _("Obfuscate") }}</h1>
 <div class="tip">
     <p>
-        <i>o</i> provides the best stealth in the game, as its name suggests.
+        {% trans trimmed %}
+        {{ obf }} provides the best stealth in the game, as its name suggests.
+        {% endtrans %}
     </p>
 </div>
-<div class="column">
-    <div class="column-image">
-        <img src="https://images.krcg.org/lostincrowds.jpg">
-        <h4>Lost in Crowds</h4>
-        <p class="center-subtitle">played in 484 decks, typically 2-6 copies</p>
-    </div>
-    <p>
-        The best stealth money can buy, played in almost all <i>o</i> constructs.
-    </p>
-</div>
-<div class="column">
-    <div class="column-image">
-        <img src="https://images.krcg.org/elderimpersonation.jpg">
-        <h4>Elder Impersonation</h4>
-        <p class="center-subtitle">played in 419 decks, typically 2-4 copies</p>
-    </div>
-    <p>
-        This block denial modifier comes in very handy against a single minion.
-        It works against all minions and vampires and can bypass even high levels of stacked intercept.
-    </p>
-</div>
-<div class="column">
-    <div class="column-image">
-        <img src="https://images.krcg.org/facelessnight.jpg">
-        <h4>Faceless Night</h4>
-        <p class="center-subtitle">played in 406 decks, typically 2-4 copies</p>
-    </div>
-    <p>
-        A single unlocked minion can be hard to get around if multiple actions are in order.
-        This is an excellent tool in this case as it lets you lock the defending minion on the first block
-        failure.
-        Furthermore, it will work as a block denial against allies.
-    </p>
-</div>
-<div class="column">
-    <div class="column-image">
-        <img src="https://images.krcg.org/swallowedbythenight.jpg">
-        <h4>Swallowed by the Night</h4>
-        <p class="center-subtitle">played in 382 decks, typically 1-5 copies</p>
-    </div>
-    <p>
-        A versatile stealth modifier, the maneuver option comes in handy in decks with a decent combat
-        module, or to avoid combat damage.
-        Others find the combat option handy to avoid jamming the hand with unneeded stealth.
-    </p>
-</div>
-<div class="column">
-    <div class="column-image">
-        <img src="https://images.krcg.org/cloakthegathering.jpg">
-        <h4>Cloak the Gathering</h4>
-        <p class="center-subtitle">played in 329 decks, typically 1-5 copies</p>
-    </div>
-    <p>
-        An additional source of stealth that becomes an excellent tool when not all vampires have <i>o</i>.
-        It can also be stacked, by the vampire doing the action himself, then by another vampire with
-        <i>O</i>.
-    </p>
-</div>
-<div class="column">
-    <div class="column-image">
-        <img src="https://images.krcg.org/spyingmission.jpg">
-        <h4>Spying Mission</h4>
-        <p class="center-subtitle">played in 255 decks, typically 1-4 copies</p>
-    </div>
-    <p>
-        An additional stealth modifier that can be stacked,
-        it is also a counter against bounces: it allows one to suppress a high damage bleed
-        that has been bounced to its grand-prey, which is actually a common situation.
-    </p>
-</div>
-<div class="column">
-    <div class="column-image">
-        <img src="https://images.krcg.org/forgottenlabyrinth.jpg">
-        <h4>Forgotten Labyrinth</h4>
-        <p class="center-subtitle">played in 238 decks, typically 2-5 copies</p>
-    </div>
-    <p>
-        Especially useful in decks with a political module, it gives such a high bonus to undirected actions
-        that they become virtually unblockable.
-        Its uselessness for directed actions still makes it absent from a lot of <i>o</i> modules.
-    </p>
-</div>
-<div class="column">
-    <div class="column-image">
-        <img src="https://images.krcg.org/veilthelegions.jpg">
-        <h4>Veil the Legions</h4>
-        <p class="center-subtitle">played in 200 decks, typically 1-4 copies</p>
-    </div>
-    <p>
-        Less widely used than
-        {{ card("Cloak the Gathering") }}
-        because it offers no direct stealth on an action,
-        its efficiency increases in decks with many minions:
-        a vampire with <i>O</i> can give +1 stealth to multiple consecutive bleeds,
-        a nice setup for a lunge move.
-    </p>
-</div>
+
+{% call layout.card_column("Lost in Crowds", decks=484, copies="2-6") %}
+{% trans trimmed %}
+The best stealth money can buy, played in almost all {{ obf }} constructs.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Elder Impersonation", decks=419, copies="2-4") %}
+{% trans trimmed %}
+This block denial modifier comes in very handy against a single minion. It works against
+all minions and vampires and can bypass even high levels of stacked intercept.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Faceless Night", decks=406, copies="2-4") %}
+{% trans trimmed %}
+A single unlocked minion can be hard to get around if multiple actions are in order.
+This is an excellent tool in this case as it locks the defending minion on the first
+block failure.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Swallowed by the Night", decks=382, copies="1-5") %}
+{% trans trimmed %}
+A versatile stealth modifier, the maneuver option comes in handy, either to assist a
+combat module, avoid combat damage, or just avoid jamming the hand with unrequired
+stealth.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Cloak the Gathering", decks=329, copies="1-5") %}
+{% trans trimmed %}
+An additional source of stealth that becomes an excellent tool when some minions do not
+have {{ obf }}. It can also be stacked, by the vampire doing the action himself, then by
+another vampire with {{ OBF }}.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Spying Mission", decks=255, copies="1-4") %}
+{% trans trimmed %}
+An additional stealth modifier to stack over the most widespread ones, it is also a
+counter against bounces: it allows one to aoivd dealing pool damage to an ally when a
+bleed is bounced.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Forgotten Labyrinth", decks=238, copies="2-5") %}
+{% trans trimmed %}
+Especially useful in decks with a political module, it gives such a very high bonus to
+undirected actions. Its uselessness for directed actions still makes it absent from a
+lot of {{ obf }} modules.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Veil the Legions", decks=200, copies="1-4") %}
+{% trans trimmed cloak_the_gathering=card("Cloak the Gathering") %}
+Less widely used than {{ cloak_the_gathering }} because it requires a sidekick , its
+efficiency increases in decks with many minions: a vampire with {{ OBF }} can give
++1 stealth to multiple consecutive actions, a nice setup for a lunge move.
+{% endtrans %}
+{% endcall %}
+
 {% endblock %}

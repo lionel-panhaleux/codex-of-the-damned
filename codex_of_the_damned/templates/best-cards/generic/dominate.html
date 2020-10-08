@@ -2,7 +2,7 @@
 {% import "best-cards/_layout_card_column.html" as layout with context %}
 
 {% block content %}
-<h1>{{ dom }} {{ _(Dominate) }}</h1>
+<h1>{{ dom }} {{ _("Dominate") }}</h1>
 <div class="tip">
     <p>
         {% trans trimmed %}
@@ -15,9 +15,9 @@
 
 {% call layout.card_column("Deflection", decks=880, copies="3-8") %}
 {% trans trimmed %}
-It is the best bounce of the game. At superior {{ DOM }},
-it can be chained multiple times by the same vampire,
-an incredibly effective defence against even the most severe bleed constructs.
+It is the best bounce of the game. At superior {{ DOM }}, it can be chained multiple
+times by the same vampire, an incredibly effective defence against even the most severe
+bleed constructs.
 {% endtrans %}
 {% endcall %}
 
@@ -25,8 +25,8 @@ an incredibly effective defence against even the most severe bleed constructs.
 {% trans trimmed govern_the_unaligned=card("Govern the Unaligned") %}
 It is the best bleed modifier of the game, and can be associated with
 {{ govern_the_unaligned }} for a 6-pool bleed. The ability to use this modifier only
-after blocks have been declined makes it superior to bleed actions.
-The 1 blood cost is a bargain.
+after blocks have been declined makes it superior to bleed actions. The 1 blood cost is
+a bargain.
 {% endtrans %}
 {% endcall %}
 
@@ -40,8 +40,7 @@ beginning of the game, and provides an excruciating bleed later on.
 {% call layout.card_column("Bonding", decks=259, copies="1-5") %}
 {% trans trimmed conditioning=card("Conditioning") %}
 Clearly it dos not have the same impact as {{ conditioning }} in terms of pool damage,
-but the +1 stealth is invaluable for constructs with no alternative discipline for
-stealth.
+but the +1 stealth is invaluable for decks with no alternative discipline for stealth.
 {% endtrans %}
 {% endcall %}
 
@@ -58,19 +57,19 @@ use stealth.
 {% trans trimmed 
     conditioning=card("Conditioning"),
     direct_intervention=card("Direct Intervention")
-    %}
+%}
 An excellent lunge device, it has the same pool damage as a {{ conditioning }} at no
-cost, provided the prey is low enough in pool. Having both modifiers in hand can be a
-good way to get around a {{ direct_intervention }}, as the modifier countered this way
-cannot be used again during the same action, but another can.
+cost, provided the prey is low enough in pool. Having both modifiers in hand can also
+be a good way to get around a {{ direct_intervention }}, as the modifier countered this
+way cannot be played again during the same action, but the other can.
 {% endtrans %}
 {% endcall %}
 
 {% call layout.card_column("Redirection", decks=173, copies="1-4") %}
 {% trans trimmed deflection=card("Deflection") %}
-An alternative to {{ deflection }} with no cost, it is only used when {{ DOM }} is
-always at superior in the crypt. Even then, {{ deflection }} is still often preferred
-because it can be chained multiple times.
+An alternative to {{ deflection }} at no cost, it is only used when {{ DOM }} is
+vastly prevalent in the crypt. Even then, {{ deflection }} is still often preferred
+because it can be chained multiple times as the minion does not lock.
 {% endtrans %}
 {% endcall %}
 
