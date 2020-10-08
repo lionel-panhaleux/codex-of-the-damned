@@ -1,10 +1,10 @@
 {% extends "best-cards/_layout.html" %}
-{% import "best-cards/_layout_card_column.html" as layout with context%}
+{% import "best-cards/_layout_card_column.html" as layout with context %}
 
 {% block content %}
 <h1><img src="{{ url_for('static', filename='img/icons/clan-ahrimanes.svg') }}"> Ahrimanes</h1>
 <div class="tip">
-    {% trans trimmed 
+    {% trans trimmed
         howler=card("Howler"),
         the_siamese=card("The Siamese"),
         muricia=card("Muricia"),
@@ -48,7 +48,7 @@ for a reasonnable cost of 7. The +1 strength bonus is always good to take: she c
 {% endcall %}
 
 {% call layout.card_column('Howler', decks=17, copies="4-5") %}
-{% trans trimmed 
+{% trans trimmed
     SPI_ANI_PRE='<i>ZIR</i>'|safe
 %}
 Leader of the group 2 crypt, she has all clan disciplines {{ SPI }}{{ ANI }}{{ PRE }} at superior
@@ -58,7 +58,7 @@ own.
 {% endcall %}
 
 {% call layout.card_column('Nose of the Hound', decks=41, copies="1-4") %}
-{% trans trimmed 
+{% trans trimmed
     bums_rush=card("Bum's Rush"),
     deep_song=card("Deep Song")
 %}
@@ -77,7 +77,7 @@ both unlock and intercept are needed.
 {% endcall %}
 
 {% call layout.card_column('Swiftness of the Stag', decks=35, copies="5-9") %}
-{% trans trimmed 
+{% trans trimmed
     aid_from_bats=card("Aid From Bats"),
     carrion_crows=card("Carrion Crows"),
     resist_earths_grasp=card("Resist Earth's Grasp")
@@ -90,7 +90,7 @@ It is a straight upgrade over the similar {{ resist_earths_grasp }}.
 {% endcall %}
 
 {% call layout.card_column("Falcon's Eye", decks=34, copies="2-5") %}
-{% trans trimmed 
+{% trans trimmed
     eagles_sight=card("Eagle's Sight"),
     anneke=card("Anneke"),
     wall_decks=link("/strategy/archetypes", _("wall decks"), _anchor="wall")
@@ -102,7 +102,7 @@ The ability to intercept one's prey bleed or a cross-table vote is critical to {
 {% endcall %}
 
 {% call layout.card_column("Ears of the Hare", decks=28, copies="2-4") %}
-{% trans trimmed 
+{% trans trimmed
     enhanced_senses=card("Enhanced Senses"),
     falcons_eye=card("Falcon's Eye"),
     speak_with_spirits=card("Speak with Spirits"),

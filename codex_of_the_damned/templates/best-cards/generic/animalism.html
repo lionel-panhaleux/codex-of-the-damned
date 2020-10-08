@@ -1,115 +1,97 @@
 {% extends "best-cards/_layout.html" %}
+{% import "best-cards/_layout_card_column.html" as layout with context %}
 
 {% block content %}
-<h1><i>i</i> Animalism</h1>
+<h1>{{ ani }} {{ _("Animalism") }}</h1>
 <div class="tip">
     <p>
-        <i>i</i> Provide a strong long-range combat module and good intercept capabilities.
-        Combined with <i>a</i>, it offers the best intercept in the game and access to the combo card
-        {{ card("Read the Winds") }}.
+        {% trans trimmed
+	        read_winds=card("Read the Winds")
+	    %}
+        {{ ani }} provide a strong long-range combat module and good intercept capabilities.
+        Combined with {{ aus }}, it offers the best intercept in the game and access to the combo card
+        {{ read_winds }}.
+        {% endtrans %}
     </p>
 </div>
-<div class="column">
-    <div class="column-image">
-        <img src="https://images.krcg.org/carrioncrows.jpg">
-        <h4>Carrion Crows</h4>
-        <p class="center-subtitle">played in 252 decks, typically 5-10 copies</p>
-    </div>
-    <p>
-        An excellent combat card. It is not a strike so it cannot be dodged,
-        it is harder to prevent and additional damage are still inflicted by the strike itself.
-        Moreover, it is ranged damage.
-    </p>
-</div>
-<div class="column">
-    <div class="column-image">
-        <img src="https://images.krcg.org/catsguidance.jpg">
-        <h4>Cats' Guidance</h4>
-        <p class="center-subtitle">played in 222 decks, typically 2-5 copies</p>
-    </div>
-    <p>
-        A versatile defence tool providing either intercept or an unlock effect.
-        Not as suprising as a wake, but being unlocked can be better.
-    </p>
-</div>
-<div class="column">
-    <div class="column-image">
-        <img src="https://images.krcg.org/caninehorde.jpg">
-        <h4>Canine Horde</h4>
-        <p class="center-subtitle">played in 195 decks, typically 1-3 copies</p>
-    </div>
-    <p>
-        An excellent counter against weapons, it is often included in <i>i</i> combat modules.
-        Because <i>i</i> often uses {{ card("Carrion Crows") }}
-        and {{ card("Aid from Bats") }} for a ranged combat module,
-        a ranged weapon on the opponent side is especially cumbersome.
-    </p>
-</div>
-<div class="column">
-    <div class="column-image">
-        <img src="https://images.krcg.org/deepsong.jpg">
-        <h4>Deep Song</h4>
-        <p class="center-subtitle">played in 194 decks, typically 3-10 copies</p>
-    </div>
-    <p>
-        The choice between bleed and rush gives it so much versatility,
-        it can be played in most table situations at an advantage.
-        The fact that the opponent has to choose his strike first is a nice bonus.
-    </p>
-</div>
-<div class="column">
-    <div class="column-image">
-        <img src="https://images.krcg.org/ravenspy.jpg">
-        <h4>Raven Spy</h4>
-        <p class="center-subtitle">played in 182 decks, typically 2-6 copies</p>
-    </div>
-    <p>
-        A base building block for most <i>i</i> based intercept modules.
-        Permanent intercept is well worth the cost.
-    </p>
-</div>
-<div class="column">
-    <div class="column-image">
-        <img src="https://images.krcg.org/sensethesavageway.jpg">
-        <h4>Sense the Savage Way</h4>
-        <p class="center-subtitle">played in 167 decks, typically 2-6 copies</p>
-    </div>
-    <p>
-        Even if it is only available to big capacity vampires,
-        this is intercept and wake built in the same card,
-        a no-brainer if the deck has intercept options. It is even arguably better than <i>a</i>
-        {{ card("Eyes of Argus") }},
-        as the intercept can be used on an undirected action.
-    </p>
-</div>
-<div class="column">
-    <div class="column-image">
-        <img src="https://images.krcg.org/aidfrombats.jpg">
-        <h4>Aid from Bats</h4>
-        <p class="center-subtitle">played in 152 decks, typically 6-14 copies</p>
-    </div>
-    <p>
-        The second pillar of <i>i</i> combat modules, it provides a maneuver, one damage, plus a welcome
-        press,
-        either as a defensive tool to avoid a second round at close range, or as an offensive tool to
-        continue combat. Played multiple times in a row, it can take an opponent down
-        pretty fast. Coupled with a {{ card("Carrion Crows") }},
-        it delivers 6 damage with only two cards.
-    </p>
-</div>
-<div class="column">
-    <div class="column-image">
-        <img src="https://images.krcg.org/armyofrats.jpg">
-        <h4>Army of Rats</h4>
-        <p class="center-subtitle">played in 137 decks, typically 1-2 copies</p>
-    </div>
-    <p>
-        <i>i</i> usually makes for excellent intercept and good combat,
-        but it may lack pool damage to fence off one’s prey,
-        with {{ card("Deep Song") }}
-        bringing only a bit of pool damage.
-        This is an excellent option to improve pool damage
-        if the deck has enough intercept capabilities to protect it.
-    </p>
-</div>
+
+{% call layout.card_column('Carrion Crows', decks=252, copies="5-10") %}
+{% trans trimmed %}
+An excellent combat card. It is not a strike so it cannot be dodged,
+it is harder to prevent and additional damage are still inflicted by the strike itself.
+Moreover, it is ranged damage.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Cats' Guidance", decks=222, copies="2-5") %}
+{% trans trimmed %}
+A versatile defence tool providing either intercept or an unlock effect.
+Not as surprising as a wake, but being unlocked can be better.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Canine Horde", decks=195, copies="1-3") %}
+{% trans trimmed
+	carrion_crows=card("Carrion Crows"),
+	aid_from_bats=card("Aid from Bats")
+%}
+An excellent counter against weapons, it is often included in {{ ani }} combat modules.
+Because {{ ani }} often uses {{ carrion_crows }}
+and {{ aid_from_bats }} for a ranged combat module,
+a ranged weapon on the opponent side is especially cumbersome.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Deep Song", decks=194, copies="3-10") %}
+{% trans trimmed %}
+The choice between bleed and rush gives it so much versatility,
+it can be played in most table situations at an advantage.
+The fact that the opponent has to choose his strike first is a nice bonus.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Raven Spy", decks=182, copies="2-6") %}
+{% trans trimmed %}
+A base building block for most {{ ani }} based intercept modules.
+Permanent intercept is well worth the cost.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Sense the Savage Way", decks=167, copies="2-6") %}
+{% trans trimmed
+	eyes_argus=card("Eyes of Argus")
+%}
+Even if it is only available to big capacity vampires,
+this is intercept and wake built in the same card,
+a no-brainer if the deck has intercept options. It is even arguably better than {{ aus }}
+{{ eyes_argus }},
+as the intercept can be used on an undirected action.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Aid from Bats", decks=152, copies="6-14") %}
+{% trans trimmed
+	carrion_crows=card("Carrion Crows")
+%}
+The second pillar of {{ ani }} combat modules, it provides a maneuver, one damage, plus a welcome press,
+either as a defensive tool to avoid a second round at close range, or as an offensive tool to
+continue combat. Played multiple times in a row, it can take an opponent down
+pretty fast. Coupled with a {{ carrion_crows }},
+it delivers 6 damage with only two cards.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Army of Rats", decks=137, copies="1-2") %}
+{% trans trimmed
+	deep_song=card("Deep Song")
+%}
+{{ ani }} usually makes for excellent intercept and good combat,
+but it may lack pool damage to fence off one’s prey,
+with {{ deep_song }}
+bringing only a bit of pool damage.
+This is an excellent option to improve pool damage
+if the deck has enough intercept capabilities to protect it.
+{% endtrans %}
+{% endcall %}
+
 {% endblock %}
