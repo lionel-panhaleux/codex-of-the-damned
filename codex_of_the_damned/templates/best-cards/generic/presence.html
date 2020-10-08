@@ -1,110 +1,85 @@
 {% extends "best-cards/_layout.html" %}
+{% import "best-cards/_layout_card_column.html" as layout with context%}
 
 {% block content %}
-<h1><i>p</i> Presence</h1>
+<h1>{{ pre }} Presence</h1>
 <div class="tip">
     <p>
-        <i>r</i> is a versatile discipline. It provides a strong bleed,
+        {% trans trimmed %}
+        {{ pre }} is a versatile discipline. It provides a strong bleed,
         a defensive combat module with <em>Strike: combat ends</em> and good
         modifiers for votes.
+        {% endtrans %}
     </p>
 </div>
-<div class="column">
-    <div class="column-image">
-        <img src="https://images.krcg.org/majesty.jpg">
-        <h4>Majesty</h4>
-        <p class="center-subtitle">played in 404 decks, typically 3-8 copies</p>
-    </div>
-    <p>
-        The most played <em>combat ends</em> of <i>r</i>, the unlock effect as superior <i>R</i>
-        is an excellent asset and augments {{ link("/strategy/fundamentals", _("A&B"), _anchor="AB") }},
-        both offensively and defensively.
-    </p>
-</div>
-<div class="column">
-    <div class="column-image">
-        <img src="https://images.krcg.org/entrancement.jpg">
-        <h4>Entrancement</h4>
-        <p class="center-subtitle">played in 380 decks, typically 1-4 copies</p>
-    </div>
-    <p>
-        A versatile action. Included for its dreadful superior <i>R</i> effect that can steal a powerful
-        ally,
-        its simple bleed action at inferior <i>r</i> makes it far more flexible than <i>d</i>
-        {{ card("Far Mastery") }}.
-    </p>
-</div>
-<div class="column">
-    <div class="column-image">
-        <img src="https://images.krcg.org/votercaptivation.jpg">
-        <h4>Voter Captivation</h4>
-        <p class="center-subtitle">played in 288 decks, typically 3-7 copies</p>
-    </div>
-    <p>
-        A powerful bloat for vote oriented decks. With enough votes on the table, it can resplenish a
-        vampire easily and make it ready for another
-        {{ card("Minion Tap") }} and constitue a formidable defense.
-    </p>
-</div>
-<div class="column">
-    <div class="column-image">
-        <img src="https://images.krcg.org/aireofelation.jpg">
-        <h4>Aire of Elation</h4>
-        <p class="center-subtitle">played in 152 decks, typically 1-5 copies</p>
-    </div>
-    <p>
-        The best bleed modifier of <i>r</i>, it is inferior to <i>d</i>
-        {{ card("Conditioning") }},
-        except for Toreador <img src="{{ url_for('static', filename='img/icons/clan-toreador.svg') }}" />.
-        Still, such a strong bleed modifier is worth it for decks with no access to <i>d</i>.
-    </p>
-</div>
-<div class="column">
-    <div class="column-image">
-        <img src="https://images.krcg.org/perfectparagon.jpg">
-        <h4>Perfect Paragon</h4>
-        <p class="center-subtitle">played in 145 decks, typically 1-4 copies</p>
-    </div>
-    <p>
-        A versatile tool for big capacity vote decks:
-        more votes or a good modifier to help get an action through.
-    </p>
-</div>
-<div class="column">
-    <div class="column-image">
-        <img src="https://images.krcg.org/enchantkindred.jpg">
-        <h4>Enchant Kindred</h4>
-        <p class="center-subtitle">played in 124 decks, typically 3-8 copies</p>
-    </div>
-    <p>
-        A weaker version of the popular <i>d</i>
-        {{ card("Govern the Unaligned") }}, it has the same
-        advantages: a good accelerator in the beginning to get more vampires out cheaply, a nice bleed
-        action
-        later on.
-    </p>
-</div>
-<div class="column">
-    <div class="column-image">
-        <img src="https://images.krcg.org/bewitchingoration.jpg">
-        <h4>Bewitching Oration</h4>
-        <p class="center-subtitle">played in 121 decks, typically 2-5 copies</p>
-    </div>
-    <p>
-        One of the best vote modifier of the game with 4 votes at no cost at superior <i>R</i>.
-    </p>
-</div>
-<div class="column">
-    <div class="column-image">
-        <img src="https://images.krcg.org/awe.jpg">
-        <h4>Awe</h4>
-        <p class="center-subtitle">played in 106 decks, typically 1-4 copies</p>
-    </div>
-    <p>
-        A bit more expensive than
-        {{ card("Bewitching Oration") }},
-        it gives a better guarantee to be able to get a vote through and its cost can be mitigated
-        if paired with {{ card("Voter Captivation") }}.
-    </p>
-</div>
+
+{% call layout.card_column("Majesty", decks=404, copies="3-8") %}
+{% trans trimmed 
+    a_b=link("/strategy/fundamentals", _("A&B"), _anchor="AB")
+%}
+The most played <em>combat ends</em> of {{ pre }}, the unlock effect as superior
+{{ PRE }} is an excellent asset and augments {{ a_b }}, both offensively and
+defensively.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Entrancement", decks=380, copies="1-4") %}
+{% trans trimmed far_mastery=card("Far Mastery") %}
+A versatile action. Included for its dreadful superior {{ PRE }} effect that can steal a
+powerful ally, its simple bleed action at inferior {{ pre }} makes it far more flexible
+than {{ dom }} {{ far_mastery }}.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Voter Captivation", decks=288, copies="3-7") %}
+{% trans trimmed minion_tap=card("Minion Tap") %}
+A powerful bloat for vote oriented decks. With enough votes on the table, it can
+resplenish a vampire easily and make it ready for another {{ minion_tap }} and
+constitues a formidable defense.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Aire of Elation", decks=152, copies="1-5") %}
+{% trans trimmed 
+    conditioning=card("Conditioning"),
+    img_clan_toreador='<img src="%(url)s" />'|format(url=url_for('static', filename='img/icons/clan-toreador.svg'))|safe
+%}
+The best bleed modifier of {{ pre }}, it is inferior to {{ dom }} {{ conditioning }},
+except for Toreador {{ img_clan_toreador }}. Still, such a strong bleed modifier is
+worth it for decks with no access to {{ dom }}.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Perfect Paragon", decks=145, copies="1-4") %}
+{% trans trimmed %}
+A versatile tool for big capacity vote decks:
+more votes or a good modifier to help get an action through.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Enchant Kindred", decks=124, copies="3-8") %}
+{% trans trimmed govern_the_unaligned=card("Govern the Unaligned") %}
+A weaker version of the popular {{ dom }} {{ govern_the_unaligned }}, it has the same
+advantages: a good accelerator in the beginning to get more vampires out cheaply, a nice
+bleed action later on.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Bewitching Oration", decks=121, copies="2-5") %}
+{% trans trimmed %}
+One of the best vote modifier of the game with 4 votes at no cost at superior {{ PRE }}.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Awe", decks=106, copies="1-4") %}
+{% trans trimmed 
+    bewitching_oration=card("Bewitching Oration"),
+    voter_captivation=card("Voter Captivation")
+%}
+A bit more expensive than {{ bewitching_oration }}, it gives a better guarantee to be
+able to get a vote through and its cost can be mitigated if paired with
+{{ voter_captivation }}.
+{% endtrans %}
+{% endcall %}
+
 {% endblock %}

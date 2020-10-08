@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: codex 0.X\n"
 "Report-Msgid-Bugs-To: lionel.panhaleux+codex@gmail.com\n"
-"POT-Creation-Date: 2020-10-08 10:09+0200\n"
+"POT-Creation-Date: 2020-10-08 10:30+0200\n"
 "PO-Revision-Date: 2020-07-04 08:50+0200\n"
 "Last-Translator: Lionel Panhaleux <lionel.panhaleux+codex@gmail.com>\n"
 "Language: fr\n"
@@ -864,7 +864,7 @@ msgstr ""
 #: codex_of_the_damned/templates/best-cards/generic/fortitude.html:18
 #: codex_of_the_damned/templates/best-cards/generic/master-cards.html:56
 #: codex_of_the_damned/templates/best-cards/generic/no-discipline.html:165
-#: codex_of_the_damned/templates/best-cards/generic/presence.html:20 codex_of_the_damned/templates/strategy/combat.html:18
+#: codex_of_the_damned/templates/best-cards/generic/presence.html:18 codex_of_the_damned/templates/strategy/combat.html:18
 #: codex_of_the_damned/templates/strategy/fundamentals.html:232
 msgid "A&B"
 msgstr ""
@@ -4915,7 +4915,7 @@ msgstr ""
 "aptitude à elle seule."
 
 #: codex_of_the_damned/templates/best-cards/clans/kiasyd.html:40
-#, fuzzy, python-format
+#, python-format
 msgid ""
 "It is included in most Kiasyd decks and even in Lasombra-Kiasyd mixes as it can also be used at %(obt)s. Additional "
 "stealth from %(myt)s is one of the main points of using Kiasyd instead of Lasombra %(img_clan_lasombra)s."
@@ -6244,6 +6244,81 @@ msgstr "déni de blocage"
 #: codex_of_the_damned/templates/strategy/deck-building.html:235
 msgid "bruise"
 msgstr "érosion"
+
+#: codex_of_the_damned/templates/best-cards/generic/presence.html:8
+#, python-format
+msgid ""
+"%(pre)s is a versatile discipline. It provides a strong bleed, a defensive combat module with <em>Strike: combat "
+"ends</em> and good modifiers for votes."
+msgstr ""
+"%(pre)s est une discipline polyvalente. Elle offre des morsures puissantes, un module de combat défensif avec des "
+"<em>Frappe : fin de combat</em> et de bons modificateurs de votes."
+
+#: codex_of_the_damned/templates/best-cards/generic/presence.html:17
+#, python-format
+msgid ""
+"The most played <em>combat ends</em> of %(pre)s, the unlock effect as superior %(PRE)s is an excellent asset and "
+"augments %(a_b)s, both offensively and defensively."
+msgstr ""
+"La <em>fin de combat</em> la plus jouée de %(pre)s, l'effet de redressement en %(PRE)s supérieure est un excellent "
+"atout et augmente l'%(a_b)s, à la fois offensivement et défensivement."
+
+#: codex_of_the_damned/templates/best-cards/generic/presence.html:27
+#, python-format
+msgid ""
+"A versatile action. Included for its dreadful superior %(PRE)s effect that can steal a powerful ally, its simple "
+"bleed action at inferior %(pre)s makes it far more flexible than %(dom)s %(far_mastery)s."
+msgstr ""
+"Une action polyvalente. Incluse pour son redoutable effet en %(PRE)s supérieure qui permet de voler un allié "
+"puissant, sa simple action de morsure en %(pre)s inférieure la rend beaucoup plus flexible que %(dom)s "
+"%(far_mastery)s."
+
+#: codex_of_the_damned/templates/best-cards/generic/presence.html:35
+#, python-format
+msgid ""
+"A powerful bloat for vote oriented decks. With enough votes on the table, it can resplenish a vampire easily and make"
+" it ready for another %(minion_tap)s and constitues a formidable defense."
+msgstr ""
+"Une régénération puissante pour les decks orientés vote. Avec suffisamment de votes sur la table, elle peut "
+"facilement régénérer un vampire et le préparer pour un autre %(minion_tap)s et constitue une défense redoutable."
+
+#: codex_of_the_damned/templates/best-cards/generic/presence.html:43
+#, python-format
+msgid ""
+"The best bleed modifier of %(pre)s, it is inferior to %(dom)s %(conditioning)s, except for Toreador "
+"%(img_clan_toreador)s. Still, such a strong bleed modifier is worth it for decks with no access to %(dom)s."
+msgstr ""
+"Le meilleur modificateur de morsure de %(pre)s, il est inférieur à %(dom)s %(conditioning)s, sauf pour les Toreador "
+"%(img_clan_toreador)s. Un modificateur de morsure si puissant reste intéressant pour les decks sans accès à %(dom)s."
+
+#: codex_of_the_damned/templates/best-cards/generic/presence.html:54
+msgid "A versatile tool for big capacity vote decks: more votes or a good modifier to help get an action through."
+msgstr ""
+"Un outil polyvalent pour les decks de vote à hautes capacités : plus de votes ou un bon modificateur pour aider à "
+"faire passer une action."
+
+#: codex_of_the_damned/templates/best-cards/generic/presence.html:61
+#, python-format
+msgid ""
+"A weaker version of the popular %(dom)s %(govern_the_unaligned)s, it has the same advantages: a good accelerator in "
+"the beginning to get more vampires out cheaply, a nice bleed action later on."
+msgstr ""
+"Une version plus faible du populaire %(dom)s %(govern_the_unaligned)s, il a les mêmes avantages : un bon accélérateur"
+" au début pour sortir plus de vampires à moindre frais, une belle action de morsure plus tard."
+
+#: codex_of_the_damned/templates/best-cards/generic/presence.html:69
+#, python-format
+msgid "One of the best vote modifier of the game with 4 votes at no cost at superior %(PRE)s."
+msgstr "Un des meilleurs modificateurs de voix du jeu avec 4 votes gratuits en %(PRE)s supérieure."
+
+#: codex_of_the_damned/templates/best-cards/generic/presence.html:75
+#, python-format
+msgid ""
+"A bit more expensive than %(bewitching_oration)s, it gives a better guarantee to be able to get a vote through and "
+"its cost can be mitigated if paired with %(voter_captivation)s."
+msgstr ""
+"Un peu plus cher que %(bewitching_oration)s, il donne une meilleure garantie de passer un voter et son coût peut être"
+" remboursé s'il est associé à %(voter_captivation)s."
 
 #: codex_of_the_damned/templates/best-cards/sects/anarch.html:8
 #, python-format
