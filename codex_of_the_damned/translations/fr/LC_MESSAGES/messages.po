@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: codex 0.X\n"
 "Report-Msgid-Bugs-To: lionel.panhaleux+codex@gmail.com\n"
-"POT-Creation-Date: 2020-10-08 11:52+0200\n"
+"POT-Creation-Date: 2020-10-08 14:23+0200\n"
 "PO-Revision-Date: 2020-07-04 08:50+0200\n"
 "Last-Translator: Lionel Panhaleux <lionel.panhaleux+codex@gmail.com>\n"
 "Language: fr\n"
@@ -6483,6 +6483,67 @@ msgid ""
 "can let the vampire avoid problematic strikes from the opponent."
 msgstr ""
 
+#: codex_of_the_damned/templates/best-cards/generic/dominate.html:8
+#, python-format
+msgid ""
+"%(dom)s is the most played discipline of the game. It provides an excellent bleed module, good bloat and the best "
+"bounce in the game. <strong>More than a third</strong> of winning decks use this discipline."
+msgstr ""
+
+#: codex_of_the_damned/templates/best-cards/generic/dominate.html:17
+#, python-format
+msgid ""
+"It is the best bounce of the game. At superior %(DOM)s, it can be chained multiple times by the same vampire, an "
+"incredibly effective defence against even the most severe bleed constructs."
+msgstr ""
+
+#: codex_of_the_damned/templates/best-cards/generic/dominate.html:25
+#, python-format
+msgid ""
+"It is the best bleed modifier of the game, and can be associated with %(govern_the_unaligned)s for a 6-pool bleed. "
+"The ability to use this modifier only after blocks have been declined makes it superior to bleed actions. The 1 blood"
+" cost is a bargain."
+msgstr ""
+
+#: codex_of_the_damned/templates/best-cards/generic/dominate.html:34
+msgid ""
+"An incredibly versatile tool, it helps getting more vampires out for cheap in the beginning of the game, and provides"
+" an excruciating bleed later on."
+msgstr ""
+
+#: codex_of_the_damned/templates/best-cards/generic/dominate.html:41
+#, python-format
+msgid ""
+"Clearly it dos not have the same impact as %(conditioning)s in terms of pool damage, but the +1 stealth is invaluable"
+" for constructs with no alternative discipline for stealth."
+msgstr ""
+
+#: codex_of_the_damned/templates/best-cards/generic/dominate.html:49
+msgid ""
+"An excellent block denial modifier. Well targeted, it can be enough to get a bleed through unopposed. Combined with "
+"another block denial modifier, it allows for a pure block denial module that can be used to get actions through "
+"without even bothering to use stealth."
+msgstr ""
+
+#: codex_of_the_damned/templates/best-cards/generic/dominate.html:58
+#, python-format
+msgid ""
+"An excellent lunge device, it has the same pool damage as a %(conditioning)s at no cost, provided the prey is low "
+"enough in pool. Having both modifiers in hand can be a good way to get around a %(direct_intervention)s, as the "
+"modifier countered this way cannot be used again during the same action, but another can."
+msgstr ""
+
+#: codex_of_the_damned/templates/best-cards/generic/dominate.html:70
+#, python-format
+msgid ""
+"An alternative to %(deflection)s with no cost, it is only used when %(DOM)s is always at superior in the crypt. Even "
+"then, %(deflection)s is still often preferred because it can be chained multiple times."
+msgstr ""
+
+#: codex_of_the_damned/templates/best-cards/generic/dominate.html:78
+msgid "An excellent action to get rid of cumbersome retainers and, more importantly, allies. The 1 blood cost is a bargain."
+msgstr ""
+
 #: codex_of_the_damned/templates/best-cards/generic/master-cards.html:86
 msgid "block denial"
 msgstr "déni de bloc"
@@ -9699,6 +9760,3 @@ msgstr ""
 "situation à trois ou cinq joueurs : si la fente fonctionne, vous revenez à un nombre pair et à une situation "
 "favorable. Si elle échoue, vous restez sur un nombre impair de joueurs en ayant mis une grande pression sur la proie."
 " En général, cela signifie que la pression va revenir en force contre vous au prochain tour de table. </p>"
-
-#~ msgid "Strike: Combat End"
-#~ msgstr "Fin de combat"

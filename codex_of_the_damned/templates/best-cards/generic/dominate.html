@@ -1,113 +1,84 @@
 {% extends "best-cards/_layout.html" %}
+{% import "best-cards/_layout_card_column.html" as layout with context %}
 
 {% block content %}
-<h1><i>d</i> Dominate</h1>
+<h1>{{ dom }} {{ _(Dominate) }}</h1>
 <div class="tip">
     <p>
-        <i>d</i> is the most played discipline of the game. It provides an excellent bleed module,
-        good bloat and the best bounce in the game. <strong>More than a third</strong>
-        of winning decks use this discipline.
+        {% trans trimmed %}
+        {{ dom }} is the most played discipline of the game. It provides an excellent
+        bleed module, good bloat and the best bounce in the game.
+        <strong>More than a third</strong> of winning decks use this discipline.
+        {% endtrans %}
     </p>
 </div>
-<div class="column">
-    <div class="column-image">
-        <img src="https://images.krcg.org/deflection.jpg">
-        <h4>Deflection</h4>
-        <p class="center-subtitle">played in 880 decks, typically 3-8 copies</p>
-    </div>
-    <p>
-        It is the best bounce of the game. At superior <i>D</i>,
-        it can be chained multiple times by the same vampire,
-        an incredibly effective defence against even the most severe bleed constructs.
-    </p>
-</div>
-<div class="column">
-    <div class="column-image">
-        <img src="https://images.krcg.org/conditioning.jpg">
-        <h4>Conditioning</h4>
-        <p class="center-subtitle">played in 649 decks, typically 2-6 copies</p>
-    </div>
-    <p>
-        It is the best bleed modifier of the game, and can be associated with
-        {{ card("Govern the Unaligned") }}
-        for a 6-pool bleed. The ability to use this modifier only after blocks have been declined
-        makes it superior to bleed actions. The 1 blood cost is a bargain.
-    </p>
-</div>
-<div class="column">
-    <div class="column-image">
-        <img src="https://images.krcg.org/governtheunaligned.jpg">
-        <h4>Govern the Unaligned</h4>
-        <p class="center-subtitle">played in 641 decks, typically 4-11 copies</p>
-    </div>
-    <p>
-        An incredibly versatile tool, it helps getting more vampires out for cheap
-        in the beginning of the game,
-        and provides an excruciating bleed later on.
-    </p>
-</div>
-<div class="column">
-    <div class="column-image">
-        <img src="https://images.krcg.org/bonding.jpg">
-        <h4>Bonding</h4>
-        <p class="center-subtitle">played in 259 decks, typically 1-5 copies</p>
-    </div>
-    <p>
-        Clearly it dos not have the same impact as
-        {{ card("Conditioning") }} in terms of pool damage,
-        but the +1 stealth is invaluable for constructs with no alternative discipline for stealth.
-    </p>
-</div>
-<div class="column">
-    <div class="column-image">
-        <img src="https://images.krcg.org/seduction.jpg">
-        <h4>Seduction</h4>
-        <p class="center-subtitle">played in 258 decks, typically 2-6 copies</p>
-    </div>
-    <p>
-        An excellent block denial modifier. Well targeted,
-        it can be enough to get a bleed through unopposed.
-        Combined with another block denial modifier, it allows for a pure block denial module
-        that can be used to get actions through without even bothering to use stealth.
-    </p>
-</div>
-<div class="column">
-    <div class="column-image">
-        <img src="https://images.krcg.org/foreshadowingdestruction.jpg">
-        <h4>Foreshadowing Destruction</h4>
-        <p class="center-subtitle">played in 229 decks, typically 1-3 copies</p>
-    </div>
-    <p>
-        An excellent lunge device, it has the same pool damage as a
-        {{ card("Conditioning") }} at no cost,
-        provided the prey is low enough in pool.
-        Having both modifiers in hand can be a good way to get around a
-        {{ card("Direct Intervention") }}, as the modifier
-        countered this way can not be used again during the same action, but another can.
-    </p>
-</div>
-<div class="column">
-    <div class="column-image">
-        <img src="https://images.krcg.org/redirection.jpg">
-        <h4>Redirection</h4>
-        <p class="center-subtitle">played in 173 decks, typically 1-4 copies</p>
-    </div>
-    <p>
-        An alternative to {{ card("Deflection") }} with no cost,
-        it is only used when <i>D</i> is always at superior in the crypt.
-        Even then, {{ card("Deflection") }} is still often preferred
-        because it can be chained multiple times.
-    </p>
-</div>
-<div class="column">
-    <div class="column-image">
-        <img src="https://images.krcg.org/farmastery.jpg">
-        <h4>Far Mastery</h4>
-        <p class="center-subtitle">played in 138 decks, typically 1-2 copies</p>
-    </div>
-    <p>
-        An excellent action to get rid of cumbersome retainers and, more importantly, allies.
-        The 1 blood cost is a bargain.
-    </p>
-</div>
+
+{% call layout.card_column("Deflection", decks=880, copies="3-8") %}
+{% trans trimmed %}
+It is the best bounce of the game. At superior {{ DOM }},
+it can be chained multiple times by the same vampire,
+an incredibly effective defence against even the most severe bleed constructs.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Conditioning", decks=649, copies="2-6") %}
+{% trans trimmed govern_the_unaligned=card("Govern the Unaligned") %}
+It is the best bleed modifier of the game, and can be associated with
+{{ govern_the_unaligned }} for a 6-pool bleed. The ability to use this modifier only
+after blocks have been declined makes it superior to bleed actions.
+The 1 blood cost is a bargain.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Govern the Unaligned", decks=641, copies="4-11") %}
+{% trans trimmed %}
+An incredibly versatile tool, it helps getting more vampires out for cheap in the
+beginning of the game, and provides an excruciating bleed later on.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Bonding", decks=259, copies="1-5") %}
+{% trans trimmed conditioning=card("Conditioning") %}
+Clearly it dos not have the same impact as {{ conditioning }} in terms of pool damage,
+but the +1 stealth is invaluable for constructs with no alternative discipline for
+stealth.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Seduction", decks=258, copies="2-6") %}
+{% trans trimmed %}
+An excellent block denial modifier. Well targeted, it can be enough to get a bleed
+through unopposed. Combined with another block denial modifier, it allows for a pure
+block denial module that can be used to get actions through without even bothering to
+use stealth.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Foreshadowing Destruction", decks=229, copies="1-3") %}
+{% trans trimmed 
+    conditioning=card("Conditioning"),
+    direct_intervention=card("Direct Intervention")
+    %}
+An excellent lunge device, it has the same pool damage as a {{ conditioning }} at no
+cost, provided the prey is low enough in pool. Having both modifiers in hand can be a
+good way to get around a {{ direct_intervention }}, as the modifier countered this way
+cannot be used again during the same action, but another can.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Redirection", decks=173, copies="1-4") %}
+{% trans trimmed deflection=card("Deflection") %}
+An alternative to {{ deflection }} with no cost, it is only used when {{ DOM }} is
+always at superior in the crypt. Even then, {{ deflection }} is still often preferred
+because it can be chained multiple times.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Far Mastery", decks=138, copies="1-2") %}
+{% trans trimmed %}
+An excellent action to get rid of cumbersome retainers and, more importantly, allies.
+The 1 blood cost is a bargain.
+{% endtrans %}
+{% endcall %}
+
 {% endblock %}
