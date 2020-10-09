@@ -1,4 +1,5 @@
 {% extends "layout.html" %}
+{% import "_layout_sponsor.html" as sponsor %}
 
 {% block head %}
 {{ super() }}
@@ -8,6 +9,7 @@
 
 {% block content %}
 <h1 id="archetypes">{{ _('Archetypes') }}</h1>
+{{ sponsor }}
 {% trans trimmed
     twda=external("http://www.vekn.fr/decks/twd.htm", "Tournament Winning Deck Archive (TWDA)"),
     bibliodeque=external("https://drive.google.com/drive/folders/0B32R3iejqMPTaXNDd2d1b01lR1k", "Bibliodèque")
