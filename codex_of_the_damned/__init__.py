@@ -170,7 +170,7 @@ def _link(page, name=None, _anchor=None, _class=None, locale=None, **params):
     if not page or not page.url:
         return ""
     name = name or page.name
-    url = _i18n_url(page, _anchor, **params)
+    url = _i18n_url(page, _anchor, locale, **params)
     if _class:
         _class = f"class={_class} "
     else:
