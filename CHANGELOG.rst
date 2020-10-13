@@ -4,7 +4,7 @@ Changelog
 0.23 (unreleased)
 -----------------
 
-- Nothing changed yet.
+- Internationalisation is now active. First translation: French
 
 
 0.22 (2020-09-08)
