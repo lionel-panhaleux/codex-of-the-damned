@@ -1,8 +1,8 @@
 Changelog
 =========
 
-0.23 (unreleased)
------------------
+1.0 (2020-10-13)
+----------------
 
 - Internationalisation is now active. First translation: French
 
