@@ -132,13 +132,24 @@ def card_image(image):
 @app.route("/")
 @app.route("/<path:page>")
 @app.route("/<lang_code>/<path:page>")
-def index(lang_code=app.config["BABEL_DEFAULT_LOCALE"], page="index.html"):
-    if lang_code not in app.config["SUPPORTED_LANGUAGES"].keys():
-        page = lang_code + "/" + page
-        lang_code = app.config["BABEL_DEFAULT_LOCALE"]
+def index(lang_code=None, page=None):
+    redirect = False
+    if not page:
+        page = "index.html"
+        redirect = True
+    if not lang_code or lang_code not in app.config["SUPPORTED_LANGUAGES"].keys():
+        if lang_code:
+            page = lang_code + "/" + page
+        lang_code = flask.request.accept_languages.best_match(
+            app.config["SUPPORTED_LANGUAGES"].keys()
+        )
+        page = "/" + lang_code + "/" + page
+        redirect = True
+    if redirect:
+        return flask.redirect(page, 301)
+
     flask.g.lang_code = lang_code
     context = copy.copy(BASE_CONTEXT)
-    context["language"] = flask.g.get("lang_code")
 
     # use card image as og_image for card-search
     if "card-search" in page:
