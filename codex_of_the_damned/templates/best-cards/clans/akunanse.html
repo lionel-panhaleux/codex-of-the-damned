@@ -5,8 +5,8 @@
 <h1><img src="{{ url_for('static', filename='img/icons/clan-akunanse.svg') }}"> Akunanse</h1>
 <div class="tip">
     {% trans trimmed 
-        akunanse_wall=link("/archetypes/akunanse-wall", _("Akunanse Wall")),
-        team_jacob=link("/archetypes/team-jacob", _("Team Jacob")),
+        akunanse_wall=link("/archetypes/akunanse-wall"),
+        team_jacob=link("/archetypes/team-jacob"),
         tunnel_runner=card("Tunnel Runner"),
         combat_ends=link("/strategy/combat", _("combat ends"), _anchor="defense")
     %}
@@ -53,7 +53,7 @@ plus the discipline boost is excellent for low capacity vampires.
 {% call layout.card_column('Tunnel Runner', decks=13, copies="3-8") %}
 {% trans trimmed 
     jacob_fermor=card("Jacob Fermor"),
-    team_jacob=link("/archetypes/team-jacob", _("Team Jacob"))
+    team_jacob=link("/archetypes/team-jacob")
 %}
 He can be used as the main minion of the deck for good stealthed bleeds,
 his ability can be used more than once in a turn, allowing it to get +2 stealth.

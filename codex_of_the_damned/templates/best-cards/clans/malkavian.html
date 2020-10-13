@@ -8,12 +8,12 @@
 <div class="tip">
     <p>
         {% trans trimmed 
-            lutz_politics=link("/archetypes/lutz-politics", "Lutz Politics"),
-            rachel_madness=link("/archetypes/rachel-madness", "Rachel Madness"),
+            lutz_politics=link("/archetypes/lutz-politics"),
+            rachel_madness=link("/archetypes/rachel-madness"),
             lutz_von_hohenzollern=card("Lutz von Hohenzollern"),
             rachel_brandywine=card("Rachel Brandywine"),
-            weenie_dem=link("/archetypes/weenie-dem", "Weenie DEM"),
-            weenie_aus=link("/archetypes/weenie-aus", "Weenie AUS")
+            weenie_dem=link("/archetypes/weenie-dem"),
+            weenie_aus=link("/archetypes/weenie-aus")
         %}
         The Malkavian are a prominent clan. With their unique {{ dem }} discipline
         beside the excellent {{ obf }}{{ aus }} disciplines,
@@ -27,7 +27,7 @@
     </p>
     <p>
         {% trans trimmed 
-            mind_rape_arch=link("/archetypes/mind-rape", "Mind Rape"),
+            mind_rape_arch=link("/archetypes/mind-rape"),
             mind_rape=card("Mind Rape"),
             fifth_edition=external(
             "https://www.blackchantry.com/products/current-products/vampire-the-eternal-struggle-fifth-edition/", 
@@ -234,7 +234,7 @@ stealth & bleed module using just the {{ DEM }} discipline.
 
 {% call layout.card_column("Leandro", decks=31, copies="1-3") %}
 {% trans trimmed 
-    council_of_doom=link("/archetypes/council-of-doom", "Council of Doom")
+    council_of_doom=link("/archetypes/council-of-doom")
 %}
 A strong <em>Inner Circle</em> with a good ability and {{ OBF }}{{ dom }},
 a good disciplines combination. He is seen in Malkavian Royalty builds

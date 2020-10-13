@@ -5,11 +5,11 @@
 <h1><img src="{{ url_for('static', filename='img/icons/clan-ventrue.svg') }}"> Ventrue</h1>
 <div class="tip">
     {% trans trimmed 
-        anti_ventrue_grinder=link("/archetypes/anti-ventrue-grinder", "Anti Ventrue Grinder"),
-        ventrue_royalty=link("/archetypes/ventrue-royalty", "Ventrue Royalty"),
-        the_bleeding_vignes=link("/archetypes/the-bleeding-vignes", "The Bleeding Vignes"),
+        anti_ventrue_grinder=link("/archetypes/anti-ventrue-grinder"),
+        ventrue_royalty=link("/archetypes/ventrue-royalty"),
+        the_bleeding_vignes=link("/archetypes/the-bleeding-vignes"),
         edward_vignes=card("Edward Vignes"),
-        weenie_dom=link("/archetypes/weenie-dom", "Weenie DOM")
+        weenie_dom=link("/archetypes/weenie-dom")
     %}
     <p>
         The Ventrue with {{ pre }}{{ dom }}{{ for }} and their antitribu with
@@ -104,8 +104,8 @@ he is an easy inclusion in any {{ PRE }} based deck.
 
 {% call layout.card_column("Arika", decks=57, copies="1-5") %}
 {% trans trimmed 
-    council_of_doom=link("/archetypes/council-of-doom", "Council of Doom"),
-    the_dark_side_of_politics=link("/archetypes/the-dark-side-of-politics", "The Dark Side of Politics")
+    council_of_doom=link("/archetypes/council-of-doom"),
+    the_dark_side_of_politics=link("/archetypes/the-dark-side-of-politics")
 %}
 The infamous Ventrue <em>Inner Circle</em>, her ability and access to {{ DOM }}{{ OBF }}
 gets her included in many <em>Inner Circle</em> constructs, like in the
@@ -129,7 +129,7 @@ and Ventrue antitribu decks.
 
 {% call layout.card_column("Lodin (Olaf Holte)", decks=51, copies="1-3") %}
 {% trans trimmed 
-    ventrue_royalty=link("/archetypes/ventrue-royalty", "Ventrue Royalty")
+    ventrue_royalty=link("/archetypes/ventrue-royalty")
 %}
 Star of the modern variant of the {{ ventrue_royalty }} archetype,
 he has all clan disciplines at superior {{ DOM }}{{ PRE }}{{ FOR }} and
@@ -153,7 +153,7 @@ and her unlock ability can be useful.
 
 {% call layout.card_column("Victor Donaldson", decks=45, copies="1-2") %}
 {% trans trimmed 
-    ventrue_royalty=link("/archetypes/ventrue-royalty", "Ventrue Royalty")
+    ventrue_royalty=link("/archetypes/ventrue-royalty")
 %}
 A cheap <em>Prince</em> in group 5, with superior {{ DOM }}, he easily gets included in
 {{ ventrue_royalty }} decks.

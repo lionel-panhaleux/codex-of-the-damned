@@ -5,14 +5,14 @@
 <h1><img src="{{ url_for('static', filename='img/icons/clan-baali.svg') }}"> Baali</h1>
 <div class="tip">
     {% trans trimmed
-    the_dark_side_of_politics=link("/archetypes/the-dark-side-of-politics", "The Dark Side of Politics"),
+    the_dark_side_of_politics=link("/archetypes/the-dark-side-of-politics"),
     giotto_verducci=card("Giotto Verducci"),
     kaymakli_fragment=card("Kaymakli Fragment"),
-    girls_will_find_inner_circles=link("/archetypes/girls-will-find-inner-circle", "Girls Will Find Inner Circle"),
+    girls_will_find_inner_circles=link("/archetypes/girls-will-find-inner-circle"),
     cybele=card("Cybele"),
-    the_unnamed_arch=link("/archetypes/the-unnamed", "The unnamed"),
+    the_unnamed_arch=link("/archetypes/the-unnamed"),
     the_unnamed=card("The unnamed"),
-    council_of_doom=link("/archetypes/council-of-doom", "Council of Doom"),
+    council_of_doom=link("/archetypes/council-of-doom"),
     huitzilopochtli=card("Huitzilopochtli"),
     arishat=card("Arishat"),
     xeper=card("Xeper"),
@@ -59,7 +59,7 @@ The threat of torpor without even a combat is hard to get around.
 
 {% call layout.card_column("Cybele", decks=65, copies="1-7") %}
 {% trans trimmed
-    girls_will_find_inner_circles=link("/archetypes/girls-will-find-inner-circle", "Girls Will Find Inner Circle")
+    girls_will_find_inner_circles=link("/archetypes/girls-will-find-inner-circle")
 %}
 The star of the Baali clan, her ability led to Master-focused decks
 like {{ girls_will_find_inner_circles }}.

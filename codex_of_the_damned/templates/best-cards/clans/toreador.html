@@ -10,9 +10,9 @@
 <div class="tip">
     <p>
         {% trans trimmed 
-            aaa_archetype=link("/archetypes/aaa", "AAA "),
-            jost_powerbleed=link("/archetypes/jost-powerbleed", "Jost Powerbleed"),
-            weenie_aus=link("/archetypes/weenie-aus", "Weenie AUS")
+            aaa_archetype=link("/archetypes/aaa"),
+            jost_powerbleed=link("/archetypes/jost-powerbleed"),
+            weenie_aus=link("/archetypes/weenie-aus")
         %}
         The Toreador and their antitribu are a prominent clan in tournaments.
         They gave birth to two archetypes: {{ aaa }} using Toreador Camarilla Royalty
@@ -46,7 +46,7 @@ The cheapest {{ AUS }} pool can buy. An easy inclusion in many constructs.
 
 {% call layout.card_column("Anneke", decks=56, copies="1-3") %}
 {% trans trimmed 
-    aaa_archetype=link("/archetypes/aaa", _("AAA archetype")),
+    aaa_archetype=link("/archetypes/aaa"),
     anson=card("Anson")
 %}
 Second "A" of the {{ aaa_archetype }} after {{ anson }},
@@ -81,7 +81,7 @@ he gets included in many decks.
 
 {% call layout.card_column("Alexandra", decks=40, copies="2-3") %}
 {% trans trimmed 
-    aaa_archetype=link("/archetypes/aaa", _("AAA archetype")),
+    aaa_archetype=link("/archetypes/aaa"),
     anson=card("Anson"),
     anneke=card("Anneke") 
 %}

@@ -5,13 +5,13 @@
 <h1><img src="{{ url_for('static', filename='img/icons/clan-tremere.svg') }}"> Tremere</h1>
 <div class="tip">
     {% trans trimmed 
-        war_chantry=link("/archetypes/war-chantry", "War Chantry"),
-        mistress=link("/archetypes/mistress", "Mistress"),
-        nephandii=link("/archetypes/nephandii", "Nephandii"),
-        goratrix_high_tower=link("/archetypes/goratrix-high-tower", "Goratrix High Tower"),
-        tupdogs=link("/archetypes/tupdogs", "Tupdogs"),
+        war_chantry=link("/archetypes/war-chantry"),
+        mistress=link("/archetypes/mistress"),
+        nephandii=link("/archetypes/nephandii"),
+        goratrix_high_tower=link("/archetypes/goratrix-high-tower"),
+        tupdogs=link("/archetypes/tupdogs"),
         antonio_d_erlette=card("Antonio d'Erlette"),
-        tzimisce_wall=link("/archetypes/tzimisce-wall", "Tzimisce Wall"),
+        tzimisce_wall=link("/archetypes/tzimisce-wall"),
         nephandus=card("Nephandus"),
         goratrix=card("Goratrix"),
         tupdog=card("Tupdog"),
@@ -84,7 +84,7 @@ at no cost.
 {% endcall %}
 
 {% call layout.card_column("Nephandus", decks=77, copies="2-12") %}
-{% trans trimmed nephandii=link("/archetypes/nephandii", "Nephandii") %}
+{% trans trimmed nephandii=link("/archetypes/nephandii") %}
 An excellent ally: not so expensive, not unique so many of them can be into play,
 they strike 1R with a press and prevent one damage per strike,
 so this means they do not lose any life against a vampire
@@ -108,7 +108,7 @@ Its cost did not prevent it to be played in many {{ tha }} decks, if only as an 
 {% endcall %}
 
 {% call layout.card_column("Antonio d'Erlette", decks=69, copies="2-5") %}
-{% trans trimmed nephandii=link("/archetypes/nephandii", "Nephandii") %}
+{% trans trimmed nephandii=link("/archetypes/nephandii") %}
 Second pillar of the {{ nephandii }} archetype, his capacity is exceptionnal.
 Being able to put some allies into play without even taking an action that could be
 blocked is a definitive edge.
@@ -145,7 +145,7 @@ makes her a favorite in many decks.
 {% endcall %}
 
 {% call layout.card_column("Tupdog", decks=57, copies="2-16") %}
-{% trans trimmed tupdogs=link("/archetypes/tupdogs", "Tupdogs") %}
+{% trans trimmed tupdogs=link("/archetypes/tupdogs") %}
 An infamous rush device, only available as an offensive tool for Tremere antitribu.
 They gave birth to the {{ tupdogs }} archetype.
 {% endtrans %}
