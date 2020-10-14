@@ -1,7 +1,7 @@
 Changelog
 =========
 
-1.1 (unreleased)
+1.1 (2020-10-14)
 ----------------
 
 - Fix decklist display for TWDA decks with no comment
