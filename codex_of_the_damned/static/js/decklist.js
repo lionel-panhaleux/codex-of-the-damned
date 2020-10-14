@@ -8,7 +8,6 @@ function dC(name) {
     document.getElementById("card-modal").style.display = "block"
 }
 function dCi(i) {
-    console.log(`dCi ${i}`)
     const card = document.getElementById(`card-${i}`)
     if (!card) {
         return
@@ -128,7 +127,7 @@ function displayDeck(data) {
     }
     document.getElementById("library-list").innerHTML = cards.join("\n")
     comments = document.getElementById("comments")
-    if (comments) {
+    if (comments && data["comments"]) {
         for (let section of data["comments"].split("\n\n")) {
             pelem = document.createElement("p")
             pelem.textContent = section
