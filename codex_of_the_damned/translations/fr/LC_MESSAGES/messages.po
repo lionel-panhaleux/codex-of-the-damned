@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: codex 0.X\n"
 "Report-Msgid-Bugs-To: lionel.panhaleux+codex@gmail.com\n"
-"POT-Creation-Date: 2020-10-16 14:41+0200\n"
+"POT-Creation-Date: 2020-10-16 14:46+0200\n"
 "PO-Revision-Date: 2020-07-04 08:50+0200\n"
 "Last-Translator: Lionel Panhaleux <lionel.panhaleux+codex@gmail.com>\n"
 "Language: fr\n"
@@ -3333,7 +3333,7 @@ msgstr ""
 "manque de solutions contre un coupe de %(combat_ends)s. </p>"
 
 #: codex_of_the_damned/templates/best-cards/clans/akunanse.html:11
-#: codex_of_the_damned/templates/strategy/deck-building.html:234
+#: codex_of_the_damned/templates/strategy/deck-building.html:230
 msgid "combat ends"
 msgstr "fin de combat"
 
@@ -7005,7 +7005,7 @@ msgstr ""
 " des cartes comme %(the_embrace)s."
 
 #: codex_of_the_damned/templates/best-cards/generic/no-discipline.html:164
-#: codex_of_the_damned/templates/strategy/deck-building.html:235
+#: codex_of_the_damned/templates/strategy/deck-building.html:231
 msgid "bruise"
 msgstr "érosion"
 
@@ -8907,7 +8907,7 @@ msgstr ""
 "pour chaque clan, plus des hunting grounds génériques ou des cartes qui ont des effets similaires :"
 
 #: codex_of_the_damned/templates/strategy/bloat.html:75 codex_of_the_damned/templates/strategy/bloat.html:127
-#: codex_of_the_damned/templates/strategy/bloat.html:131 codex_of_the_damned/templates/strategy/deck-building.html:137
+#: codex_of_the_damned/templates/strategy/bloat.html:131 codex_of_the_damned/templates/strategy/deck-building.html:133
 msgid "needs to be defended"
 msgstr "doit être défendu"
 
@@ -9024,7 +9024,7 @@ msgstr "Prince ou Justicar"
 #: codex_of_the_damned/templates/strategy/combat.html:70 codex_of_the_damned/templates/strategy/combat.html:75
 #: codex_of_the_damned/templates/strategy/combat.html:80 codex_of_the_damned/templates/strategy/combat.html:222
 #: codex_of_the_damned/templates/strategy/combat.html:228 codex_of_the_damned/templates/strategy/combat.html:233
-#: codex_of_the_damned/templates/strategy/combat.html:319 codex_of_the_damned/templates/strategy/deck-building.html:202
+#: codex_of_the_damned/templates/strategy/combat.html:319 codex_of_the_damned/templates/strategy/deck-building.html:198
 #: codex_of_the_damned/templates/strategy/fundamentals.html:56 codex_of_the_damned/templates/strategy/fundamentals.html:61
 #: codex_of_the_damned/templates/strategy/fundamentals.html:76 codex_of_the_damned/templates/strategy/fundamentals.html:85
 #: codex_of_the_damned/templates/strategy/fundamentals.html:159
@@ -9118,7 +9118,7 @@ msgstr ""
 #: codex_of_the_damned/templates/strategy/combat.html:237 codex_of_the_damned/templates/strategy/combat.html:238
 #: codex_of_the_damned/templates/strategy/combat.html:240 codex_of_the_damned/templates/strategy/combat.html:244
 #: codex_of_the_damned/templates/strategy/combat.html:247 codex_of_the_damned/templates/strategy/combat.html:249
-#: codex_of_the_damned/templates/strategy/deck-building.html:201
+#: codex_of_the_damned/templates/strategy/deck-building.html:197
 #: codex_of_the_damned/templates/strategy/fundamentals.html:54 codex_of_the_damned/templates/strategy/fundamentals.html:56
 msgid "with"
 msgstr "avec"
@@ -9332,17 +9332,16 @@ msgstr "Au fil du temps, une poignée d'excellentes ressources ont été crées 
 #: codex_of_the_damned/templates/strategy/deck-building.html:17
 #: codex_of_the_damned/templates/strategy/deck-building.html:22
 #: codex_of_the_damned/templates/strategy/deck-building.html:25
-#: codex_of_the_damned/templates/strategy/deck-building.html:28
-#: codex_of_the_damned/templates/strategy/deck-building.html:33
-#: codex_of_the_damned/templates/strategy/deck-building.html:38
+#: codex_of_the_damned/templates/strategy/deck-building.html:29
+#: codex_of_the_damned/templates/strategy/deck-building.html:34
 msgid "by"
 msgstr "de"
 
-#: codex_of_the_damned/templates/strategy/deck-building.html:42
+#: codex_of_the_damned/templates/strategy/deck-building.html:38
 msgid "Modules and density"
 msgstr "Modules et densité"
 
-#: codex_of_the_damned/templates/strategy/deck-building.html:43
+#: codex_of_the_damned/templates/strategy/deck-building.html:39
 #, python-format
 msgid ""
 "<p> Decks can be broken down in « modules »: group of cards with a similar objective. The percentage of cards each "
@@ -9381,7 +9380,7 @@ msgstr ""
 "favorable. Au cas où elles pourraient s'avérer utiles, elles devraient être gardées en main jusqu'au au moment "
 "adéquat : la distribution raréfiée du module permet de s'assurer que ces cartes n'enrayent pas la main. </p>"
 
-#: codex_of_the_damned/templates/strategy/deck-building.html:76
+#: codex_of_the_damned/templates/strategy/deck-building.html:72
 #, python-format
 msgid ""
 "<h3>Master module</h3> <p> The Master module density depends on the rotation speed: one want to play one Master card "
@@ -9399,11 +9398,11 @@ msgstr ""
 "d'actions de Maître et jouent donc plus de cartes Maître dans le deck : il s'agit de la stratégie dite de "
 "<strong>M</strong>ulti <strong>M</strong>aster <strong>P</strong>hase <strong>A</strong>ctions (MMPA). </p>"
 
-#: codex_of_the_damned/templates/strategy/deck-building.html:95
+#: codex_of_the_damned/templates/strategy/deck-building.html:91
 msgid "Rotation"
 msgstr "Rotation"
 
-#: codex_of_the_damned/templates/strategy/deck-building.html:97
+#: codex_of_the_damned/templates/strategy/deck-building.html:93
 msgid ""
 "Games usually last between 10 to 20 turns and decks are tailored with the peak card rotation speed in mind: the "
 "number of cards played on average between one unlock phase and the next, not counting the few first turns of build-"
@@ -9417,7 +9416,7 @@ msgstr ""
 "deck dépend de sa capacité à maintenir une rotation optimale tout au cours de la partie : être coincé avec des cartes"
 " inutiles est une position perdante."
 
-#: codex_of_the_damned/templates/strategy/deck-building.html:106
+#: codex_of_the_damned/templates/strategy/deck-building.html:102
 msgid ""
 "<h3>Deck size examples</h3> <p> 60 cards deck have a peak rotation of 5 cards maximum (5 × 12 = 60): in the mid-game "
 "it plays one master, three to four minion cards, and maybe a discard. This counts the whole turn, reactions included."
@@ -9430,7 +9429,7 @@ msgstr ""
 "7 à 8 cartes (90 ∕ 12 = 7.5) : en milieu de partie il joue une carte Maître, jusqu'à une pleine main de cartes de "
 "serviteur et peut-être une défausse. </p>"
 
-#: codex_of_the_damned/templates/strategy/deck-building.html:119
+#: codex_of_the_damned/templates/strategy/deck-building.html:115
 msgid ""
 "<strong>Cycling</strong> cards and purposefully increasing the rotation to get more efficient cards is sometimes the "
 "only way to keep the rotation fluid. Multiple cards are available to provide good cycling options:"
@@ -9438,15 +9437,15 @@ msgstr ""
 "<strong>Recycler</strong> des cartes et augmenter volontairement la rotation pour piocher des cartes plus efficaces "
 "est parfois la seule manière de conserver une rotation fluide. Plusieurs cartes existent pour recycler :"
 
-#: codex_of_the_damned/templates/strategy/deck-building.html:141
+#: codex_of_the_damned/templates/strategy/deck-building.html:137
 msgid "needs to be defended, best with Anarchs"
 msgstr "doit être défendu, plus utile avec des Anarch"
 
-#: codex_of_the_damned/templates/strategy/deck-building.html:145
+#: codex_of_the_damned/templates/strategy/deck-building.html:141
 msgid "Sabbat only, best with Black Hand"
 msgstr "Sabbat seulement, plus utile avec des Black Hand"
 
-#: codex_of_the_damned/templates/strategy/deck-building.html:149
+#: codex_of_the_damned/templates/strategy/deck-building.html:145
 #, python-format
 msgid ""
 "A card that is hard to play can <strong>jam</strong> the hand. Action modifiers, especially restricted stealth cards "
@@ -9460,11 +9459,11 @@ msgstr ""
 "pas la main puisqu'elles peuvent être jouées dès qu'un serviteur est redressé et prêt à agir. Un module tactique de "
 "cartes de rotation peut être joué lorsqu'un enrayement est à craindre."
 
-#: codex_of_the_damned/templates/strategy/deck-building.html:162
+#: codex_of_the_damned/templates/strategy/deck-building.html:158
 msgid "Recursion"
 msgstr "Récursivité"
 
-#: codex_of_the_damned/templates/strategy/deck-building.html:164
+#: codex_of_the_damned/templates/strategy/deck-building.html:160
 msgid ""
 "Even stronger than a good rotation, the <strong>recursion</strong> can be a strong point in a deck: it is the ability"
 " to fetch cards from the ash heap and get them back into hand. Only a few cards provide recursion:"
@@ -9473,7 +9472,7 @@ msgstr ""
 "la capacité à récupérer des cartes du tas de cendres pour les remettre en main. Seules quelques cartes fournissent de"
 " la récursivité :"
 
-#: codex_of_the_damned/templates/strategy/deck-building.html:172
+#: codex_of_the_damned/templates/strategy/deck-building.html:168
 #, python-format
 msgid ""
 "%(ashur_tablets)s provide an excellent recursion as well as a powerful bloat. They need more than one Master phase "
@@ -9484,27 +9483,27 @@ msgstr ""
 "action de Maître par tour pour que ce soit réellement efficace, donc %(the_parthenon)s peut s'avérer utile. Les "
 "archétypes MMPA comme %(girls)s font un plein usage de cette carte."
 
-#: codex_of_the_damned/templates/strategy/deck-building.html:184
+#: codex_of_the_damned/templates/strategy/deck-building.html:180
 #, python-format
 msgid "%(the_sargon_fragment)s is the only other option open to all, but it is unique and uses up a lot of actions."
 msgstr "%(the_sargon_fragment)s est la seule autre option ouverte à tous, mais elle est unique et consomme beaucoup d'actions."
 
-#: codex_of_the_damned/templates/strategy/deck-building.html:191
+#: codex_of_the_damned/templates/strategy/deck-building.html:187
 #, python-format
 msgid "Giovanni %(img_clan_giovanni)s have the excellent %(sudario_refraction)s and the lesser %(spiritual_guidance)s"
 msgstr ""
 "Les Giovanni %(img_clan_giovanni)s disposent de l'excellent %(sudario_refraction)s et de %(spiritual_guidance)s, plus"
 " spécifique"
 
-#: codex_of_the_damned/templates/strategy/deck-building.html:203
+#: codex_of_the_damned/templates/strategy/deck-building.html:199
 msgid "Anarchs"
 msgstr "Anarchs"
 
-#: codex_of_the_damned/templates/strategy/deck-building.html:207
+#: codex_of_the_damned/templates/strategy/deck-building.html:203
 msgid "Unique, Anarch"
 msgstr "Unique, Anarch"
 
-#: codex_of_the_damned/templates/strategy/deck-building.html:218
+#: codex_of_the_damned/templates/strategy/deck-building.html:214
 msgid ""
 "Beyond its obvious advantage of fetching just the right card at the right time, a good recursion allows a deck to "
 "adapt itself to the context and the table situation."
@@ -9512,15 +9511,15 @@ msgstr ""
 "Au-delà de l'avantage évident de piocher exactement la bonne carte au bon moment, une bonne récursivité permet à un "
 "deck de s'adapter au contexte et à la situation de table."
 
-#: codex_of_the_damned/templates/strategy/deck-building.html:224
+#: codex_of_the_damned/templates/strategy/deck-building.html:220
 msgid "Building a deck in practice"
 msgstr "Construire un deck en pratique"
 
-#: codex_of_the_damned/templates/strategy/deck-building.html:226
+#: codex_of_the_damned/templates/strategy/deck-building.html:222
 msgid "bleed"
 msgstr "morsure"
 
-#: codex_of_the_damned/templates/strategy/deck-building.html:225
+#: codex_of_the_damned/templates/strategy/deck-building.html:221
 #, python-format
 msgid ""
 "<h3>1. Theme</h3> <p> The first step to build a deck is to choose a theme, a core principle to build upon. Multiple "
@@ -9586,27 +9585,27 @@ msgstr ""
 "quatre piliers stratégiques pour vous aider : la charge utile est plus importante que le système de transmission, "
 "lui-même plus important que la défense, et la gestion de combat arrive en dernier. </p>"
 
-#: codex_of_the_damned/templates/strategy/deck-building.html:227
+#: codex_of_the_damned/templates/strategy/deck-building.html:223
 msgid "politics"
 msgstr "politique"
 
-#: codex_of_the_damned/templates/strategy/deck-building.html:230
+#: codex_of_the_damned/templates/strategy/deck-building.html:226
 msgid "Bloating"
 msgstr "Régénération"
 
-#: codex_of_the_damned/templates/strategy/deck-building.html:231
+#: codex_of_the_damned/templates/strategy/deck-building.html:227
 msgid "Bounces"
 msgstr "Rebonds"
 
-#: codex_of_the_damned/templates/strategy/deck-building.html:236
+#: codex_of_the_damned/templates/strategy/deck-building.html:232
 msgid "best cards"
 msgstr "top cartes"
 
-#: codex_of_the_damned/templates/strategy/deck-building.html:237
+#: codex_of_the_damned/templates/strategy/deck-building.html:233
 msgid "deck archive"
 msgstr "archive de decks"
 
-#: codex_of_the_damned/templates/strategy/deck-building.html:301
+#: codex_of_the_damned/templates/strategy/deck-building.html:297
 #, python-format
 msgid ""
 "Note at this point you are working in single copies. This means that if you are building a rush combat deck, you "
@@ -9620,7 +9619,7 @@ msgstr ""
 "pourrez choisir d'utiliser des dizaines d'exemplaires des cartes de combat que vous aurez gardées, et un seul "
 "%(fame)s."
 
-#: codex_of_the_damned/templates/strategy/deck-building.html:311
+#: codex_of_the_damned/templates/strategy/deck-building.html:307
 #, python-format
 msgid ""
 "<h3>Counters</h3> <p> If you can predict that specific archetypes will be a threat, consider including specific "
@@ -9636,7 +9635,7 @@ msgstr ""
 "spécifique ne vous vient à l'esprit, envisagez d'inclure certains des contres génériques du jeu : "
 "%(direct_intervention)s, %(dark_influences)s, %(sudden_reversal)s ou %(wash)s. </p>"
 
-#: codex_of_the_damned/templates/strategy/deck-building.html:335
+#: codex_of_the_damned/templates/strategy/deck-building.html:331
 msgid ""
 "<h3>4. Card flow</h3> <p> Once the skeleton is ready, you can adjust the card flow. First adjust the crypt: use 4 (or"
 " more) copies for a star, 3 copies for an especially good minion if he is not mandatory for your play, 2 copies for "
@@ -9670,40 +9669,40 @@ msgstr ""
 "module secondaire pour la régénération et juste un module tactique pour la charge utile. </p> <p> Cette calculette "
 "pourra vous aider à décider du nombre d'exemplaires pour chaque carte : </p>"
 
-#: codex_of_the_damned/templates/strategy/deck-building.html:370
+#: codex_of_the_damned/templates/strategy/deck-building.html:366
 msgid "Probability to get a specific card"
 msgstr "Probabilité d'avoir une carte donnée"
 
-#: codex_of_the_damned/templates/strategy/deck-building.html:371
-#: codex_of_the_damned/templates/strategy/deck-building.html:385
+#: codex_of_the_damned/templates/strategy/deck-building.html:367
+#: codex_of_the_damned/templates/strategy/deck-building.html:381
 msgid "cards in deck:"
 msgstr "cartes dans le deck :"
 
-#: codex_of_the_damned/templates/strategy/deck-building.html:373
+#: codex_of_the_damned/templates/strategy/deck-building.html:369
 msgid "copies of the card:"
 msgstr "exemplaires de la carte :"
 
-#: codex_of_the_damned/templates/strategy/deck-building.html:375
+#: codex_of_the_damned/templates/strategy/deck-building.html:371
 msgid "cards drawn:"
 msgstr "cartes piochées :"
 
-#: codex_of_the_damned/templates/strategy/deck-building.html:384
+#: codex_of_the_damned/templates/strategy/deck-building.html:380
 msgid "Copies needed to get a draw"
 msgstr "Exemplaires requis pour piocher"
 
-#: codex_of_the_damned/templates/strategy/deck-building.html:387
+#: codex_of_the_damned/templates/strategy/deck-building.html:383
 msgid "draws:"
 msgstr "pioches :"
 
-#: codex_of_the_damned/templates/strategy/deck-building.html:389
+#: codex_of_the_damned/templates/strategy/deck-building.html:385
 msgid "desired probability:"
 msgstr "probabilitée voulue :"
 
-#: codex_of_the_damned/templates/strategy/deck-building.html:392
+#: codex_of_the_damned/templates/strategy/deck-building.html:388
 msgid "0 copies"
 msgstr "0 copies"
 
-#: codex_of_the_damned/templates/strategy/deck-building.html:396
+#: codex_of_the_damned/templates/strategy/deck-building.html:392
 msgid ""
 "The probability to get a specific card is computed as the cumulated probability (sum) of having 1, 2, ..., n copies "
 "of the card."
@@ -9711,23 +9710,23 @@ msgstr ""
 "La probabilité de piocher une carte donnée est calculée comme la probabilité cumulée (somme) de piocher 1, 2, ..., n "
 "exemplaires."
 
-#: codex_of_the_damned/templates/strategy/deck-building.html:401
+#: codex_of_the_damned/templates/strategy/deck-building.html:397
 msgid "The formula used is"
 msgstr "La formule utilisée est"
 
-#: codex_of_the_damned/templates/strategy/deck-building.html:403
+#: codex_of_the_damned/templates/strategy/deck-building.html:399
 msgid "with s: stack, d: draws and c: copies and"
 msgstr "avec s : paquet, d : pioche et c : exemplaires et"
 
-#: codex_of_the_damned/templates/strategy/deck-building.html:403
+#: codex_of_the_damned/templates/strategy/deck-building.html:399
 msgid "the binomial coefficients."
 msgstr "les cœfiicients binomiaux."
 
-#: codex_of_the_damned/templates/strategy/deck-building.html:405
+#: codex_of_the_damned/templates/strategy/deck-building.html:401
 msgid "To second computation just computes the preceding probability for consecutive values of c."
 msgstr "Le second calcul additionne simplement la probabilité précédente pour les valeurs successives de c."
 
-#: codex_of_the_damned/templates/strategy/deck-building.html:408
+#: codex_of_the_damned/templates/strategy/deck-building.html:404
 msgid ""
 "<h3>Cycling</h3> <p> If one of your strong module can jam your hand (for example a strong stealth or a strong "
 "intercept module), consider adding cycling-oriented cards (<em>cf.</em> the <a href=\"#rotation\">Rotation</a> "
@@ -9739,7 +9738,7 @@ msgstr ""
 "href=\"#rotation\">Rotation</a>). </p> <p> Elles ne devraient cependant pas être incluses aveuglément ; elles peuvent"
 " tout à fait constituer un obstacle pour un deck sans problème d'enrayement. </p>"
 
-#: codex_of_the_damned/templates/strategy/deck-building.html:419
+#: codex_of_the_damned/templates/strategy/deck-building.html:415
 #, python-format
 msgid ""
 "<h3>5. Test and refine</h3> <p> Once the first version of the deck list is ready, it should be tested to check if it "
@@ -9760,7 +9759,7 @@ msgstr ""
 "devriez envisager de retirer les cartes dont vous ne vous servez pas, ainsi que les cartes de charge utile qui ne "
 "contribuent pas à éliminer votre proie. </p>"
 
-#: codex_of_the_damned/templates/strategy/deck-building.html:420
+#: codex_of_the_damned/templates/strategy/deck-building.html:416
 msgid "play test system"
 msgstr "système de test"
 
