@@ -1,0 +1,43 @@
+{% extends "layout.html" %}
+
+{% block scripts %}
+<script src="{{ url_for('static', filename='js/dC.js') }}"></script>
+<script src="{{ url_for('static', filename='js/decklist.js') }}"></script>
+{% endblock %}
+
+{% block card_display %}
+<div id="card-modal" class="modal" onclick="this.style.display='none'" tabindex="-1">
+    <div id=card-prev class="modal-nav">&#xf077</div>
+    <img class="modal-content" id="card-image">
+    <div id=card-next class="modal-nav">&#xf078</div>
+</div>
+{% endblock %}
+
+{% block content %}
+{% block deck_name %}{% endblock %}
+<div id="decklist" class="decklist" style="display: none">
+    <h2 id="deck-name"><a id="deck-link" target="_blank" href="http://example.com"></a></h2>
+    <p id="deck-header"></p>
+    <h3 id="crypt-header"></h3>
+    <ul id="crypt-list">
+    </ul>
+    <h3 id="library-header"></h3>
+    <ul id="library-list">
+    </ul>
+</div>
+{% block deck_guide %}{% endblock %}
+{% endblock %}
+
+{% block script %}
+<script>
+    window.onload = function () {
+        const content = document.querySelector('meta[property="decklist"]').content
+        const decklist = JSON.parse(JSON.parse(content))
+        const deckname = document.querySelector('meta[property="deckname"]').content
+        document.getElementById("card-modal").addEventListener("keydown", modalKeydown)
+        document.getElementById("card-prev").addEventListener("click", prevCard)
+        document.getElementById("card-next").addEventListener("click", nextCard)
+        displayDeck(decklist, deckname)
+    }
+</script>
+{% endblock %}

@@ -69,12 +69,11 @@ function modalKeydown(event) {
     }
 }
 function cardElement(element, i) {
-    const name = element["name"]
-    return `<li>${element["count"]} <span class="card" id="card-${i}" onclick="dCi(${i})">${name}</span></li>`
+    return `<li>${element.count} <span class="card" id="card-${i}" onclick="dCi(${i})">${element.name}</span></li>`
 }
 function wrapText(text, maxlen) {
     if (!text) {
-        return "(No name)"
+        return "(N/A)"
     }
     if (text.length > maxlen) {
         return text.substr(0, maxlen - 3) + "..."
@@ -87,48 +86,60 @@ function removeComments() {
         comments.innerHTML = ""
     }
 }
-function displayDeck(data) {
+function displayDeck(data, deckname=undefined) {
     removeComments()
     document.getElementById("deck-link").textContent = wrapText(
-        data["name"],
+        deckname || data.name || "(No Name)",
         25
     )
-    document.getElementById(
-        "deck-link"
-    ).href = `http://www.vekn.fr/decks/twd.htm#${data["twda_id"]}`
-    document.getElementById("deck-header").innerHTML = [
-        wrapText(data["player"], 40),
-        wrapText(data["event"], 40),
-        wrapText(data["place"], 40),
-        data["date"],
-        data["players_count"] + " players",
-    ].join("<br/>")
-    document.getElementById(
-        "crypt-header"
-    ).textContent = `Crypt (${data["crypt"]["count"]})`
+    if (data.twda_id) {
+        document.getElementById(
+            "deck-link"
+        ).href = `http://www.vekn.fr/decks/twd.htm#${data["twda_id"]}`
+    }
+    else if (data.link) {
+        document.getElementById("deck-link").href = data.link
+    }
+    header_lines = []
+    if (data.player || data.author) {
+        header_lines.push(wrapText(data.player || data.author, 40))
+    }
+    if (data.event) {
+        header_lines.push(wrapText(data.event, 40))
+    }
+    if (data.place) {
+        header_lines.push(wrapText(data.place, 40))
+    }
+    if (data.date) {
+        header_lines.push(wrapText(data.date, 40))
+    }
+    if (data.players_count) {
+        header_lines.push(wrapText(data.players_count, 32) + " players")
+    }
+    document.getElementById("deck-header").innerHTML = header_lines.join("<br/>")
+    document.getElementById("crypt-header").textContent = `Crypt (${data.crypt.count})`
     var cards = []
-    data["crypt"]["cards"].forEach((value, index) => {
+    data.crypt.cards.forEach((value, index) => {
         cards.push(cardElement(value, index))
     })
     document.getElementById("crypt-list").innerHTML = cards.join("\n")
     document.getElementById(
-        "library-header"
-    ).textContent = `Library (${data["library"]["count"]})`
+        "library-header").textContent = `Library (${data.library.count})`
     var offset = cards.length
     var cards = new Array()
-    for (const section of data["library"]["cards"]) {
+    for (const section of data.library.cards) {
         cards.push(
-            `<li><h4>— ${section["type"]} (${section["count"]}) —</h4></li>`
+            `<li><h4>— ${section.type} (${section.count}) —</h4></li>`
         )
-        section["cards"].forEach((value, index) => {
+        section.cards.forEach((value, index) => {
             cards.push(cardElement(value, offset + index))
         })
-        offset += section["cards"].length
+        offset += section.cards.length
     }
     document.getElementById("library-list").innerHTML = cards.join("\n")
     comments = document.getElementById("comments")
-    if (comments && data["comments"]) {
-        for (let section of data["comments"].split("\n\n")) {
+    if (comments && data.comments) {
+        for (let section of data.comments.split("\n\n")) {
             pelem = document.createElement("p")
             pelem.textContent = section
             comments.appendChild(pelem)
