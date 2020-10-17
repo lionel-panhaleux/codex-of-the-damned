@@ -138,6 +138,22 @@ STRUCTURE = Nav(
                 Nav(lazy_gettext("Weenie AUS")),
                 Nav(lazy_gettext("Weenie DEM")),
                 Nav(lazy_gettext("Weenie DOM")),
+                Nav(
+                    lazy_gettext("Bibliodèque"),
+                    index=True,
+                    children=[
+                        Nav(lazy_gettext("Lorrie Superstar")),
+                        Nav(lazy_gettext("Howler & Friends")),
+                        Nav(lazy_gettext("Muricia & Friends")),
+                        Nav(lazy_gettext("Akunanse Classic")),
+                        Nav(lazy_gettext("Tunnel Runners")),
+                        Nav(lazy_gettext("Army of Allah")),
+                        Nav(lazy_gettext("Tariq Eats the World")),
+                        Nav(lazy_gettext("Cybele Maleficia")),
+                        Nav(lazy_gettext("The Unnamed")),
+                        Nav(lazy_gettext("Cybele Great Beast")),
+                    ],
+                ),
             ],
         ),
         Nav(
