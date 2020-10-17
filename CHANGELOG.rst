@@ -4,7 +4,7 @@ Changelog
 1.2 (unreleased)
 ----------------
 
-- Nothing changed yet.
+- Translate preconstructed deck guides
 
 
 1.1 (2020-10-14)
