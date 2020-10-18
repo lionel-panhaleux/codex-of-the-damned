@@ -140,7 +140,7 @@ STRUCTURE = Nav(
                 Nav(lazy_gettext("Weenie DOM")),
                 Nav(
                     lazy_gettext("Bibliodèque"),
-                    index=True,
+                    index=False,
                     children=[
                         Nav(lazy_gettext("Lorrie Superstar")),
                         Nav(lazy_gettext("Howler & Friends")),
