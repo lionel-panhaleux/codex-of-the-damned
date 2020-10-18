@@ -1,34 +1,9 @@
-{% extends "archetypes/_layout.html" %}
-{% import "archetypes/_layout-erratum.html" as erratum with context %}
-{% import "archetypes/bibliodeque/akunanse-classic.json" as deck_json %}
-
-{% block meta %}
-<meta property="decklist" content='{{ deck_json | tojson }}' />
-{% endblock %}
+{% extends "archetypes/akunanse-wall.html" %}
 
 {% block archetype_name %}
-<h1><img src="{{ url_for('static', filename='img/icons/clan-akunanse.svg') }}"> Akunanse Classic</h1>
-{% endblock %}
-
-{% block archetype %}
-{% trans trimmed
-
-%}
-<h2>Highlights</h2>
-<p>
-
-</p>
-<h2>Tips & Tricks</h2>
-<p>
-
-</p>
-<h2>Variants</h2>
-<p>
-
-</p>
+<h1><img src="{{ url_for('static', filename='img/icons/clan-akunanse.svg') }}"> Akunanse Classic</h1>{% trans %}
+<div class="warning">
+	There is a tournament-tier version of this deck. This is what is shown below.
+</div>
 {% endtrans %}
-{% endblock %}
-
-{% block errata %}
-
 {% endblock %}
