@@ -75,7 +75,8 @@ function cardElement(element, i) {
 }
 function wrapText(text, maxlen) {
     if (!text) {
-        return "(No name)"
+        //return "(No name)"
+		return ""
     }
     if (text.length > maxlen) {
         return text.substr(0, maxlen - 3) + "..."
@@ -102,7 +103,7 @@ function displayDeck(data) {
         wrapText(data["event"], 40),
         wrapText(data["place"], 40),
         data["date"],
-        data["players_count"] + " players",
+        (typeof data["players_count"] == "number") ? data["players_count"] + " players" : "",
     ].join("<br/>")
     document.getElementById(
         "crypt-header"
