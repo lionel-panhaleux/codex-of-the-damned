@@ -35,7 +35,8 @@
     mistress_fanchon=card("Mistress Fanchon"),
     sha_ennu=card("Sha-Ennu"),
     nicola_lonardi_s_deck=link("/deck-search", _("Nicola Lonardi's deck"), twda_id="2017igpbi"),
-    goratrix_high_tower=link("/archetypes/goratrix-high-tower")
+    goratrix_high_tower=link("/archetypes/goratrix-high-tower"),
+    img_clan_tremere='<img src="%(url)s" />'|format(url=url_for('static', filename='img/icons/clan-tremere.svg'))|safe
 %}
 <h2>Highlights</h2>
 <p>
@@ -86,9 +87,10 @@
     {{ abbot }} and {{ revenant }} can be added to the intercept module,
     which often contains more {{ telepathic_misdirection }} to bounce bleeds.
 <p>
-    The <strong>Malgorzata</strong> variant is a Tremere variation to this build,
-    dropping {{ ani }} to use {{ malgorzata }} alongside {{ mistress_fanchon }} and
-    {{ sha_ennu }}. {{ nicola_lonardi_s_deck }} from 2017 is a good example.
+    The <strong>Malgorzata</strong> variant is a Tremere {{ img_clan_tremere }}
+    variation to this build, dropping {{ ani }} to use {{ malgorzata }} alongside
+    {{ mistress_fanchon }} and {{ sha_ennu }}. {{ nicola_lonardi_s_deck }} from 2017
+    is a good example.
 </p>
 <p>
     Although this is a different archetype, {{ goratrix_high_tower }}

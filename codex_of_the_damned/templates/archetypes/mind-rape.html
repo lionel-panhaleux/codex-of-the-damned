@@ -22,7 +22,8 @@
     scourge_of_the_enochians=card("Scourge of the Enochians"),
     metro_underground=card("Metro Underground"),
     arika=card("Arika"),
-    erol_hammer_s_deck=link("/deck-search", _("Erol Hammer's deck"), twda_id="2k9fcqnac")
+    erol_hammer_s_deck=link("/deck-search", _("Erol Hammer's deck"), twda_id="2k9fcqnac"),
+    img_clan_malkavian='<img src="%(url)s" />'|format(url=url_for('static', filename='img/icons/clan-malkavian.svg'))|safe
     %}
 <h2>Highlights</h2>
 <p>
@@ -33,7 +34,7 @@
     of their blood and equipment.
 </p>
 <p>
-    Using Malkavian and {{ madness_network }} brings an
+    Using Malkavian {{ img_clan_malkavian }} and {{ madness_network }} brings an
     edge to this idea, as {{ mind_rape }} can be played on the
     predator turn for example, to get control of the vampire in the immediately following turn.
 </p>

@@ -23,12 +23,13 @@
     predator_s_transformation=card("Predator's Transformation"),
     aid_from_bats=card("Aid from Bats"),
     the_unmasking=card("The Unmasking"),
-    predator_s_communion=card("Predator's Communion")
+    predator_s_communion=card("Predator's Communion"),
+    img_clan_akunanse='<img src="%(url)s" />'|format(url=url_for('static', filename='img/icons/clan-akunanse.svg'))|safe
 %}
 <h2>Highlights</h2>
 <p>
     This is a stealth & bleed deck using {{ tunnel_runner }}.
-    An Akunanse is required to get the weremoles out, and
+    An Akunanse {{ img_clan_akunanse }} is required to get the weremoles out, and
     {{ jacob_fermor }} is expected to come out and boost
     their bleed power. {{ computer_hacking }} is used to
     help them bleed harder, too.
@@ -60,11 +61,13 @@
     {{ tunnel_runner }} can use it, but most Akunanse also can.
     The allies have {{ the_unmasking }} and the Akunanse their
     {{ predator_s_communion }} for some tactical intercept
-    — vampires that do not fight aggressively, as they have very few combat capabilities themselves.
+    — vampires that do not fight aggressively, as they have very few combat capabilities
+    themselves.
 </p>
 <h2>Variants</h2>
 <p>
-    There is no variant to this deck. The decklist given in example won the 2013 North American Championship (NAC).
+    There is no variant to this deck. The decklist given in example won the 2013 North
+    American Championship (NAC).
 </p>
 {% endtrans %}
 {% endblock %}

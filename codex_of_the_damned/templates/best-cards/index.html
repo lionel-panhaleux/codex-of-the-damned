@@ -40,14 +40,26 @@
         <li>{{ link("/best-cards/sects/sabbat") }}</li>
     </ul>
     <h2 id="clans">{{ _('Clans') }}</h2>
-    {% trans trimmed %}
+    {% trans trimmed 
+        img_clan_abominations='<img src="%(url)s" />'|format(url=url_for('static', filename='img/icons/clan-abominations.svg'))|safe,
+        img_clan_blood_brothers='<img src="%(url)s" />'|format(url=url_for('static', filename='img/icons/clan-blood-brothers.svg'))|safe,
+        img_clan_panders='<img src="%(url)s" />'|format(url=url_for('static', filename='img/icons/clan-pander.svg'))|safe,
+        img_clan_osebo='<img src="%(url)s" />'|format(url=url_for('static', filename='img/icons/clan-osebo.svg'))|safe,
+        img_clan_nagaraja='<img src="%(url)s" />'|format(url=url_for('static', filename='img/icons/clan-nagaraja.svg'))|safe,
+        img_clan_samedi='<img src="%(url)s" />'|format(url=url_for('static', filename='img/icons/clan-samedi.svg'))|safe,
+        img_clan_gargoyles='<img src="%(url)s" />'|format(url=url_for('static', filename='img/icons/clan-gargoyles.svg'))|safe,
+        img_clan_tremere='<img src="%(url)s" />'|format(url=url_for('static', filename='img/icons/clan-tremere.svg'))|safe
+    %}
     <p>
-        Blood Brothers, Panders, Osebo, Nagaraja and Samedi are too rarely played
-        to be included in this analysis:
-        they lack the numbers for a statistical review to be relevant.
+        Abominations {{ img_clan_abominations }},
+        Blood Brothers {{ img_clan_blood_brothers }}, Panders {{ img_clan_panders }},
+        Osebo {{ img_clan_osebo }}, Nagaraja {{ img_clan_nagaraja }}
+        and Samedi {{ img_clan_samedi }} are too rarely played to be included in this
+        analysis: they lack the numbers for a statistical review to be relevant.
     </p>
     <p>
-        Gargoyles are included in the Tremere clan analysis,
+        Gargoyles {{ img_clan_gargoyles }} are included in the
+        Tremere {{ img_clan_tremere }} clan analysis,
         all Imbued are included in the same analysis regardless of their creed.
     </p>
     {% endtrans %}

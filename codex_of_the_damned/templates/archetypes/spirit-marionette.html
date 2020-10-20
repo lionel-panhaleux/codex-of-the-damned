@@ -30,7 +30,8 @@
     eurayle_gelasia_mylonas=card("Eurayle Gelasia Mylonas"),
     a_b=link("/strategy/fundamentals", _("A&B"), _anchor="AB"),
     yannick_gibert_s_deck=link("/deck-search", _("Yannick Gibert's deck"), twda_id="2010fncqlyon"),
-    older_version_from_tomasz_kowalewski=link("/deck-search", _("older version from Tomasz Kowalewski"), twda_id="2k8crusadebreslau")
+    older_version_from_tomasz_kowalewski=link("/deck-search", _("older version from Tomasz Kowalewski"), twda_id="2k8crusadebreslau"),
+    img_clan_tremere_anti='<img src="%(url)s" />'|format(url=url_for('static', filename='img/icons/clan-tremere-anti.svg'))|safe
 %}
 <h2>Highlights</h2>
 <p>
@@ -62,7 +63,8 @@
 </p>
 <p>
     {{ renewed_vigor }} is very strong combined with {{ saulot_the_wanderer }}'s ability,
-    if any Tremere antitribu can use {{ infernal_pact }} to play it.
+    if any Tremere antitribu {{ img_clan_tremere_anti }} can use {{ infernal_pact }} to
+    play it.
 </p>
 <p>
     {{ rutor_s_hand }} is a good way to improve
@@ -75,7 +77,7 @@
 </p>
 <p>
     An {{ older_version_from_tomasz_kowalewski }},
-    in 2008, do not even use the Tremere antitribu and their
+    in 2008, do not even use the Tremere antitribu {{ img_clan_tremere_anti }} and their
     {{ infernal_pact }}, but low capacity {{ AUS }} vampires instead.
 </p>
 {% endtrans %}

@@ -41,7 +41,9 @@
     greg_williams_deck=link("/deck-search", _("Greg Williams' deck"), twda_id="2k8wonwednesday"),
     jordi_tomás_deck=link("/deck-search", _("Jordi Tomás' deck"), twda_id="2010badiafeb"),
     jonathan_sanchez_rios_deck=link("/deck-search", _("Jonathan Sanchez Rios' deck"), twda_id="2011lvdsbdvs"),
-    tupdogs=link("/archetypes/tupdogs")
+    tupdogs=link("/archetypes/tupdogs"),
+    img_clan_assamite='<img src="%(url)s" />'|format(url=url_for('static', filename='img/icons/clan-assamite.svg'))|safe,
+    img_clan_toreador_anti='<img src="%(url)s" />'|format(url=url_for('static', filename='img/icons/clan-toreador-anti.svg'))|safe
     %}
 <h2>Highlights</h2>
 <p>
@@ -102,12 +104,11 @@
 </p>
 <p>
     Other variants complete the crypt in original ways,
-    to get more bloat with Assamite vampires like in
-    {{ greg_williams_deck }} from 2008,
-    or some bloat but also more bleed with Toreador antitribu and
-    {{ palla_grande }}, like in {{ jordi_tomás_deck }} from 2010.
-    {{ jonathan_sanchez_rios_deck }} from 2011 even includes the Imbued
-    {{ béatrice_oracle171_tremblay }} for cheap additional bleed.
+    to get more bloat with Assamite {{ img_clan_assamite }} vampires like in
+    {{ greg_williams_deck }} from 2008, or some bloat but also more bleed with
+    Toreador antitribu {{ img_clan_toreador_anti }} and {{ palla_grande }}, like in
+    {{ jordi_tomás_deck }} from 2010. {{ jonathan_sanchez_rios_deck }} from 2011 even
+    includes the Imbued {{ béatrice_oracle171_tremblay }} for cheap additional bleed.
 </p>
 <p>
     Although this is a different archetype, {{ nephandus }} can also be used alongside

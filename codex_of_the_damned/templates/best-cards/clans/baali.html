@@ -19,7 +19,7 @@
     annazir=card("Annazir")
     %}
     <p>
-        Baali and their unique discipline {{dai}} provide good clan cards.
+        Baali and their unique discipline {{ dai }} provide good clan cards.
         Their vampires are all <em>Infernal</em>, and 1 pool per turn is a high cost,
         but some of them, combined with the clan cards, have abilities matching this cost.
         There are multiple archetypes used by the Baali clan:
@@ -51,7 +51,7 @@
 
 {% call layout.card_column("Unleash Hell's Fury", decks=106, copies="1-3") %}
 {% trans trimmed %}
-The most played {{dai}} card. The pool cost is steep, but it is a dreadful defence.
+The most played {{ dai }} card. The pool cost is steep, but it is a dreadful defence.
 It can be used to deter bleeds or protect vampires against aggressive actions.
 The threat of torpor without even a combat is hard to get around.
 {% endtrans %}
@@ -79,9 +79,9 @@ it is the kind of awesome cards one is paying the <em>Infernal</em> penalty for.
     telepathic_misdirection=card("Telepathic Misdirection"),
     my_enemy_s_enemy=card("My Enemy's Enemy")
 %}
-An excellent card against {{AUS}} bounces
+An excellent card against {{ AUS }} bounces
 {{ telepathic_misdirection }} and {{ my_enemy_s_enemy }}, it does not jam the hand
-as it can be used at superior {{OBF}}{{DAI}} to just gain a pool for a blood
+as it can be used at superior {{ OBF }}{{ DAI }} to just gain a pool for a blood
 (the card text states <em>"and/or"</em>).
 {% endtrans %}
 {% endcall %}
@@ -151,7 +151,7 @@ His access to such a powerful disciplines combination allows him to use a broad 
 {% call layout.card_column("Xeper, Sultan of Lepers", decks=34, copies="1-3") %}
 {% trans trimmed %}
 An excellent vampire, with a very annoying ability against ally constructs and a decent one
-for vote constructs. His inferior {{dai}} is almost not an issue.
+for vote constructs. His inferior {{ dai }} is almost not an issue.
 {% endtrans %}
 {% endcall %}
 
@@ -175,11 +175,12 @@ his bleed power is huge and can make for a very nice lunge.
 {% call layout.card_column("Flames of the Netherworld", decks=16, copies="1-4") %}
 {% trans trimmed 
     walk_of_flame=card("Walk of Flame"),
-    burst_of_sunlight=card("Burst of Sunlight")
+    burst_of_sunlight=card("Burst of Sunlight"),
+    img_clan_tremere='<img src="%(url)s" />'|format(url=url_for('static', filename='img/icons/clan-tremere.svg'))|safe
 %}
-A very good combat strike. More often seen in fact in Tremere decks using {{tha}},
-as it is a good alternative to other aggravated damage source {{tha}} provides like
-{{ walk_of_flame }} or {{ burst_of_sunlight }}.
+A very good combat strike. More often seen in fact in Tremere {{ img_clan_tremere }}
+decks using {{ tha }}, as it is a good alternative to other aggravated damage source
+{{ tha }} provides like {{ walk_of_flame }} or {{ burst_of_sunlight }}.
 {% endtrans %}
 {% endcall %}
 

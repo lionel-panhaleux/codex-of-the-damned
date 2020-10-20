@@ -39,9 +39,11 @@ in non-Guruhi decks.
 {% endcall %}
 
 {% call layout.card_column("Fish", decks=39, copies="1-2") %}
-{% trans trimmed %}
+{% trans trimmed 
+    img_clan_nosferatu='<img src="%(url)s" />'|format(url=url_for('static', filename='img/icons/clan-nosferatu.svg'))|safe
+%}
 {{ ANI }}{{ POT }} for only 5 pool is a bargain.
-An easy inclusion in any Guruhi or Nosferatu build.
+An easy inclusion in any Guruhi or Nosferatu {{ img_clan_nosferatu }} build.
 {% endtrans %}
 {% endcall %}
 
@@ -85,10 +87,13 @@ it's a worthy inclusion in a political deck and a useful addition to
 {% endcall %}
 
 {% call layout.card_column("Ugadja", decks=11, copies="1-2") %}
-{% trans trimmed eze_the_demon_prince=card("Eze, The Demon Prince") %}
+{% trans trimmed 
+    eze_the_demon_prince=card("Eze, The Demon Prince") ,
+    img_clan_akunanse='<img src="%(url)s" />'|format(url=url_for('static', filename='img/icons/clan-akunanse.svg'))|safe
+%}
 A magaji with a useful ability, her cost is a bit steep,
 but she finds her place in a political deck,
-and her {{ ABO }} discipline can get her into Akunanse decks,
+and her {{ ABO }} discipline can get her into Akunanse {{ img_clan_akunanse }} decks,
 although she is more often associated with {{ eze_the_demon_prince }}.
 {% endtrans %}
 {% endcall %}
