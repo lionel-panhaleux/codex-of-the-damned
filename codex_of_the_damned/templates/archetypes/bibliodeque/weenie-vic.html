@@ -1,7 +1,7 @@
 {% extends "archetypes/_layout.html" %}
 {% import "archetypes/_layout-erratum.html" as erratum with context %}
 {% import "archetypes/bibliodeque/weenie-vic.json" as deck_json %}
-{% import "archetypes/bibliodeque/_layout-wip.html" as wip with context %}
+{% import "archetypes/bibliodeque/_layout.html" as layout with context %}
 
 {% block meta %}
 <meta property="decklist" content='{{ deck_json | tojson }}' />
@@ -10,7 +10,7 @@
 {% block archetype_name %}
 <h1>Weenie VIC</h1>
 
-{{ wip }}
+{{ layout.wip() }}
 {% endblock %}
 
 {% block archetype %}
@@ -37,6 +37,6 @@
 {% block errata %}
 <div class="warning">
     <h3>Errata</h3>
-	{{ erratum.pentextmsubversion( 'remove' ) }}
+    {{ erratum.pentextmsubversion( 'remove' ) }}
 </div>
 {% endblock %}

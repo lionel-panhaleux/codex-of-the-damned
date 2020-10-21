@@ -1,7 +1,7 @@
 {% extends "archetypes/_layout.html" %}
 {% import "archetypes/_layout-erratum.html" as erratum with context %}
 {% import "archetypes/bibliodeque/first-tradition.json" as deck_json %}
-{% import "archetypes/bibliodeque/_layout-wip.html" as wip with context %}
+{% import "archetypes/bibliodeque/_layout.html" as layout with context %}
 
 {% block meta %}
 <meta property="decklist" content='{{ deck_json | tojson }}' />
@@ -10,7 +10,7 @@
 {% block archetype_name %}
 <h1>First Tradition</h1>
 
-{{ wip }}
+{{ layout.wip() }}
 {% endblock %}
 
 {% block archetype %}
