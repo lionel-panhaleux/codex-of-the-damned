@@ -4,7 +4,8 @@ Changelog
 1.3 (unreleased)
 ----------------
 
-- Nothing changed yet.
+- Add the Bibliodèque
+- Use clan icon consistently
 
 
 1.2 (2020-10-17)
