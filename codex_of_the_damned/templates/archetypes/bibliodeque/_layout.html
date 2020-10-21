@@ -1,0 +1,29 @@
+{% macro tournament( kind = "main" ) -%}
+<div class="warning">
+    <p>
+        {{ _("This is an entry in the <strong>Bibliodèque</strong> project.") }}
+    </p>
+    <p>
+        {% if kind == "reference" %}
+        {{ _("The archetype is used as a strategic reference in the Codex:") }}
+        {% elif kind == "variant" %}
+        {{ _("This is a variant of a major tournament archetype:") }}
+        {% else %}
+        {{ _("The archetype has consistently won tournaments:") }}
+        {% endif %}
+        {{ _("here is the analysis of a tournament-winning decklist of the archetype instead.") }}
+    </p>
+</div>
+{%- endmacro %}
+
+{% macro wip() -%}
+<div class="warning">
+    {% trans trimmed
+        github=external("https://github.com/lionel-panhaleux/codex-of-the-damned", "Github")
+    %}
+    We are currently working on the analysis of this deck. If you want to lend a
+    hand, we would be more than happy if you could suggest parts of the
+    analysis. Feel free to contact us on our {{ github }}.
+    {% endtrans %}
+</div>
+{%- endmacro %}

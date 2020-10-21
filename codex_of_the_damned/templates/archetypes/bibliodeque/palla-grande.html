@@ -1,0 +1,7 @@
+{% extends "archetypes/jost-powerbleed.html" %}
+{% import "archetypes/bibliodeque/_layout.html" as layout with context %}
+
+{% block archetype_name %}
+<h1><img src="{{ url_for('static', filename='img/icons/clan-toreador-anti.svg') }}"> Palla Grande</h1>
+{{ layout.tournament() }}
+{% endblock %}

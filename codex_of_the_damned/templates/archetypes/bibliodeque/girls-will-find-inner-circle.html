@@ -1,0 +1,7 @@
+{% extends "archetypes/girls-will-find-inner-circle.html" %}
+{% import "archetypes/bibliodeque/_layout.html" as layout with context %}
+
+{% block archetype_name %}
+{{ super() }}
+{{ layout.tournament() }}
+{% endblock %}

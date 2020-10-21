@@ -1,0 +1,7 @@
+{% extends "archetypes/lutz-politics.html" %}
+{% import "archetypes/bibliodeque/_layout.html" as layout with context %}
+
+{% block archetype_name %}
+<h1><img src="{{ url_for('static', filename='img/icons/clan-malkavian.svg') }}"> Malkavian Royalty</h1>
+{{ layout.tournament("variant") }}
+{% endblock %}

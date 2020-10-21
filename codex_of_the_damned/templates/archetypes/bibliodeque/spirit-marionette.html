@@ -1,0 +1,7 @@
+{% extends "archetypes/spirit-marionette.html" %}
+{% import "archetypes/bibliodeque/_layout.html" as layout with context %}
+
+{% block archetype_name %}
+{{ super() }}
+{{ layout.tournament("reference") }}
+{% endblock %}

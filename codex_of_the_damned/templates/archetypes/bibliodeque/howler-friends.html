@@ -1,0 +1,7 @@
+{% extends "archetypes/cats.html" %}
+{% import "archetypes/bibliodeque/_layout.html" as layout with context %}
+
+{% block archetype_name %}
+<h1><img src="{{ url_for('static', filename='img/icons/clan-gangrel-anti.svg') }}"> Howler & Friends</h1>
+{{ layout.tournament("variant") }}
+{% endblock %}
