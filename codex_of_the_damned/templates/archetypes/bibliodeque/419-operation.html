@@ -1,0 +1,51 @@
+{% extends "archetypes/_layout.html" %}
+{% import "archetypes/_layout-erratum.html" as erratum with context %}
+{% import "archetypes/bibliodeque/419-operation.json" as deck_json %}
+{% import "archetypes/bibliodeque/_layout-wip.html" as wip with context %}
+
+{% block meta %}
+<meta property="decklist" content='{{ deck_json | tojson }}' />
+{% endblock %}
+
+{% block archetype_name %}
+<h1><img src="{{ url_for('static', filename='img/icons/clan-osebo.svg') }}"> 419 Operation</h1>
+
+{{ wip }}
+{% endblock %}
+
+{% block archetype %}
+{% trans trimmed
+	operation=card("419 Operation"),
+    hidetheheart=card("Hide the Heart"),
+    kovalcik_deck=link("/deck-search", _("Matus Kovalcik's deck"), twda_id="2014sncqks")
+%}
+<h2>Highlights</h2>
+<p>
+    This is a leeching deck using {{ VAL }} to disrupt the bleeds of one's prey.
+	The objective is to reduce the pool of one's prey to 0 using {{ operation }}
+	and preventing it to gain the edge using {{ hidetheheart }}.
+</p>
+<p>
+    The deck uses low to mid capacity vampires get the two cards above running as quickly
+	as possible. The rest of the deck is protection against situations that may arise
+	when trying to deal with the prey.
+</p>
+
+<h2>Tips & Tricks</h2>
+<p>
+    Try to get an <em>Osebo</em> vampire first to start putting some {{ operation }}
+	into play and then aim to get a {{ VAL }} vampire and starting to disrupt your
+	prey's bleeds.
+</p>
+<p>
+    As the game progresses, you might have more than five {{ operation }} in play
+	and you'll be nearing killing your prey but be sure that your great-prey does
+	not have the Edge the moment you'll be doing your point because they will be
+	able to get some of your prey's pool by burning the Edge.
+</p>
+<h2>Tournament Version</h2>
+<p>
+    This deck is a variant from {{ kovalcik_deck }} from 2014.
+</p>
+{% endtrans %}
+{% endblock %}
