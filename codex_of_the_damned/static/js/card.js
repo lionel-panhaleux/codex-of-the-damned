@@ -32,6 +32,7 @@ function formatText(text) {
         "[4 CONVICTION]": "<i>¤¤¤¤</i>",
         "[5 CONVICTION]": "<i>¤¤¤¤¤</i>",
         "[ACTION]": "<i>0</i>",
+        "[POLITICAL ACTION]": "<i>2</i>",
         "[REACTION]": "<i>7</i>",
         "[ACTION MODIFIER]": "<i>1</i>",
         "[COMBAT]": "<i>4</i>",
