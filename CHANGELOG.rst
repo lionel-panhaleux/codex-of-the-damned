@@ -1,7 +1,7 @@
 Changelog
 =========
 
-1.4 (unreleased)
+1.4 (2020-10-30)
 ----------------
 
 - Card Search: Fix [POLITICAL ACTION] icon in card text (eg. Luna Giovanni)
