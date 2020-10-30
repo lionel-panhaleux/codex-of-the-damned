@@ -1,7 +1,7 @@
 Changelog
 =========
 
-1.5 (unreleased)
+1.5 (2020-10-30)
 ----------------
 
 - Fix online-play/LackeyCCG FR version
