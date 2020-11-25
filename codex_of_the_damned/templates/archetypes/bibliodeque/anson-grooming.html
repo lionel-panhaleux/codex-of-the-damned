@@ -15,21 +15,77 @@
 
 {% block archetype %}
 {% trans trimmed
-
+    anson=card("Anson"),
+    tatiana=card("Tatiana Romanov"),
+    voter_cap=card("Voter Captivation"),
+    krc=card("Kine Resources Contested"),
+    tgb=card("Toreador Grand Ball"),
+    anthelios=card("Anthelios, The Red Star"),
+    temptation=card("Temptation of Greater Power"),
+    pentex_subversion=card("Pentex™ Subversion"),
+    parity_shift=card("Parity Shift"),
+	toreador_justicar=card("Toreador Justicar"),
+    elder_library=card("Elder Library"),
+    bloat=link("/strategy/bloat", _("bloat")),
+    vote=link("/strategy/archetypes", _("Vote"), _anchor="vote"),
+    politics=link("/strategy/fundamentals", _("Political Actions"), _anchor="politics"),
+    inaki_jimenez_deck=link("/deck-search", _("Iñaki Jimenez's deck"), twda_id="2k9fsbarakaldolate")
 %}
 <h2>Highlights</h2>
 <p>
-
+    This is a breed and boon deck starring {{ anson }} and uses  {{ pre }} as the
+	discipline to push votes. The purpose is to have him out as fast as possible
+	to use {{ politics }} to kill your prey.
 </p>
 
 <h2>Tips & Tricks</h2>
 <p>
+    Using {{ grooming }} cost quite an amount of blood and it is necessary to
+	replenish your vampire from time to time. Use {{ voter_cap }} to do this
+	instead of hunting as much as you can. This way you won't lose any action
+	and it will be easier to maximise the damages you can deal to your prey.
+</p>
+<p>
+    {{ krc }} is the best action to deal massive damages. It is possible to
+	negiciate with your great predator how to assign the damages. Do not forget
+	that you still have to kill your prey and dealing too much damages to your
+	predator will only help your great predator do their point and come after
+	you more quickly.
+</p>
+<p>
+    {{ parity_shift }} can only be called by Princes in this deck :  {{ anson }}
+	and {{ tatiana }}. Be sure to always have one of them available to call for
+	 {{ parity_shift }} as it is the only way to {{ bloat }} without
+	 {{ grooming }}. {{ toreador_justicar }} is the only way to have more
+	 vampires able to call for a {{ parity_shift }}.
+</p>
+<p>
+    It is a good idea when the grand-prey deck has good block capacity: they do
+	not get the chance to block the undirected vote actions until they are
+	either the prey or the predator. {{ tgb }} is of great help against this
+	kind of deck as a low capacity vampire can be chosen to make all votes from
+	{{ anson }} unblockable.
+</p>
 
+<h2>Suggested changes</h2>
+<p>
+    This deck contains cards that are banned
+	({{ anthelios }} and {{ temptation }})
+	and cards that have been errata'ed ({{ pentex_subversion }}
+	and {{ parity_shift }}).
+	As detailed hereunder, {{ parity_shift }} is still good but the other cards
+	need to be replaced.
+</p>
+<p>
+    My suggestions are one {{ elder_library }} and one extra {{krc}}.
+	The {{elder_library }} will help you have more cards in hand. The purpose is
+	to have a bigger and less jam-able hand. This Master card is not used often
+	and it will help you not to contest it to keep your pool to swarm.
 </p>
 
 <h2>Tournament Version</h2>
 <p>
-
+    {{ inaki_jimenez_deck }} is the only tournament version of this deck.
 </p>
 {% endtrans %}
 {% endblock %}
