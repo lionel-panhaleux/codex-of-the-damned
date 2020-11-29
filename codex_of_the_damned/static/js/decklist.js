@@ -7,7 +7,14 @@ function dC(name) {
     document.getElementById("card-next").style.display = "none"
     document.getElementById("card-modal").style.display = "block"
 }
-function dCi(i) {
+function hC(name) {
+    document.getElementById("card-hover-image").src = 'https://images.krcg.org/'.concat(name, '.jpg');
+    document.getElementById("card-hover").style.display = "block";
+}
+function oC() {
+    document.getElementById("card-hover").style.display = "none";
+}
+function fname(i) {
     const card = document.getElementById(`card-${i}`)
     if (!card) {
         return
@@ -26,10 +33,10 @@ function dCi(i) {
     name = name.replace(/ñ/g, "n") // Montaña
     name = name.replace(/ü|ú/g, "u") // Powerbase: Zürich, Jesús
     name = name.replace(/™/g, "tm") // Pentex™
-    document.getElementById(`card-image`).src = "https://images.krcg.org/".concat(
-        name,
-        ".jpg"
-    )
+    return name
+}
+function dCi(i) {
+    document.getElementById(`card-image`).src = "https://images.krcg.org/".concat(fname(i), '.jpg') 
     var modal = document.getElementById("card-modal")
     for (const c of modal.classList) {
         if (c.startsWith("modal-card-")) {
@@ -69,7 +76,7 @@ function modalKeydown(event) {
     }
 }
 function cardElement(element, i) {
-    return `<li>${element.count} <span class="card" id="card-${i}" onclick="dCi(${i})">${element.name}</span></li>`
+    return `<li>${element.count} <span class="card" id="card-${i}" onclick="dCi(${i})" onmouseover="hC(fname(${i}))" onmouseout="oC()">${element.name}</span></li>`
 }
 function wrapText(text, maxlen) {
     if (!text) {

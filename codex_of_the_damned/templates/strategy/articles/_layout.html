@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+
+{% block scripts %}
+<script src="{{ url_for('static', filename='js/decklist.js') }}"></script>
+{% block script %}{% endblock %}
+{% endblock %}
+
+{% block card_display %}
+<div id="card-modal" class="modal" onclick="this.style.display='none'" tabindex="-1">
+    <div id=card-prev class="modal-nav">&#xf077</div>
+    <img class="modal-content" id="card-image">
+    <div id=card-next class="modal-nav">&#xf078</div>
+</div>
+<div id="card-hover" class="hover-modal" tabindex="-1">
+    <img class="modal-content" id="card-hover-image">
+</div>
+{% endblock %}

@@ -1,0 +1,844 @@
+{% extends "strategy/articles/_layout.html" %}
+{% import "strategy/articles/the-shadow.json" as deck_json %}
+
+{% block meta %}
+<meta property="decklist" content='{{ deck_json | tojson }}' />
+{% endblock %}
+
+{% block content %}
+<h1>{{ _('Playing Montano Baltimore Purge') }}<br />
+    <span>{{ _('By Rudolf Scholz') }}</span>
+</h1>
+<div class="column">
+    <div class="column-image">{{ card_image("Montano") }}</div>
+</div>
+<div class="column">
+    <div class="column-image">{{ card_image("Baltimore Purge") }}</div>
+</div>
+<p>
+    {% trans trimmed 
+        ambrosio_luis_monçada=card("Ambrosio Luis Monçada, Plenipotentiary", "Ambrosio Luis Monçada"),
+        arika=card("Arika"),
+        baltimore_purge=card("Baltimore Purge"),
+        enkil_cog=card("Enkil Cog"),
+        freak_drive=card("Freak Drive"),
+        govern_the_unaligned=card("Govern the Unaligned"),
+        graverobbing=card("Graverobbing"),
+        heidelberg_castle=card("Heidelberg Castle, Germany", "Heidelberg Castle"),
+        mind_rape=card("Mind Rape"),
+        montano=card("Montano"),
+        stanislava=card("Stanislava"),
+        img_clan_lasombra='<img src="%(url)s" />'|format(url=url_for('static', filename='img/icons/clan-lasombra.svg'))|safe
+    %}
+    Of course, there have been Baltimore Purge decks before the appearance of {{ montano }}, e.g. with {{ arika }},
+    {{ stanislava }} or {{ ambrosio_luis_monçada }} as star vampires, but in comparison {{ montano }} offers
+    better options: he is a Lasombra {{ img_clan_lasombra }}, an 11 cap vampire, he pays one less for
+    Obtenebration {{ obt }} cards and, probably most importantly, can burn 1 blood to give any of his controller’s
+    minions +1 stealth; plus he has superior Dominate {{ DOM }} and Fortitude {{ FOR }}.
+    This makes {{ montano }} the perfect engine for abusing {{ baltimore_purge }}, {{ graverobbing }}
+    and {{ mind_rape }}. Since he has access to {{ freak_drive }}, he is able to pull off each of these cards himself
+    in just one turn, and maybe even more effects, e.g. a superior {{ govern_the_unaligned }},
+    a bleed for {{ enkil_cog }} or a vote. It is a blood-thirsty engine, which I personally prefer to feed
+    with the help of {{ heidelberg_castle }} and diablerie.
+    {% endtrans %}
+</p>
+
+<div class="tip">
+    <h3>{{ _('Crypt Acceleration') }}</h3>
+    <p>
+        {% trans trimmed
+            montano=card("Montano"),
+            zillah_s_valley=card("Zillah’s Valley"),
+            learjet=card("Learjet"),
+            aura_reading=card('Aura Reading'),
+            lupine_assault=card('Lupine Assault')
+    %}
+        In my opinion, it is quite important to make {{ montano }} enter the ready region in round 2 of a game:
+        The fewer the number of enemies’ minions, the less they can act or react.
+        You hope to get some kind of setup done before actually starting the “show”.
+        To achieve this you have to rely on a high number of crypt acceleration cards, especially on
+        {{ zillah_s_valley }}.
+        Yet a deck with a high number of Master cards that wants/has to play a lot of action cards and action modifiers
+        tends to encounter problems regarding the card flow. This is why I try to get {{ montano }} equipped
+        with a {{ learjet }} as soon as possible.
+        {% endtrans %}
+    </p>
+</div>
+<p>
+    {% trans trimmed 
+        nocturns=card("Nocturn", "Nocturns"),
+        montano=card("Montano"),
+        deflections=card("Deflection", "Deflections")
+        %}
+    Okay, this tremendous “(try to) rule the world” deck is regularly the focus of all players at the table.
+    {{ nocturns }} help to guard {{ montano }}, and a few {{ deflections }} might keep at least the heaviest bleeds
+    away from you. Usually, you have to be very fast with doing what you want to do, or an evil fate awaits you
+    instead of your opponents.
+    {% endtrans %}
+</p>
+<div id="decklist" class="decklist">
+    <h2 id="deck-name"><a id="deck-link" target="_blank"
+            href="http://www.vekn.net/forum/event-reports-and-twd/77809-twd-don-t-cry-for-pentex-lackey-league#95936">The
+            Shadow</a>
+    </h2>
+    <p id="deck-header"></p>
+    <h3 id="crypt-header"></h3>
+    <ul id="crypt-list">
+    </ul>
+    <h3 id="library-header"></h3>
+    <ul id="library-list">
+    </ul>
+</div>
+<p>
+    {% trans trimmed baltimore_purge=card("Baltimore Purge")%}
+    Here is the list of the deck that won me the <em>Don’t Cry for Pentex</em> Lackey League Finals in 2019.
+    I won’t discuss here whether specific cards miss or the numbers of specific cards are optimized.
+    A lot of that depends on taste and the metagame. This deck is both fragile and very powerful,
+    and it is definitely <strong>not a deck for beginners</strong>. It is especially weak against (stealth) rush decks,
+    because you run a non-combat star vampire deck, or any kind of weenie deck,
+    since you cannot control large numbers of vampires via {{ baltimore_purge }}.
+    It helps a lot if there are slow decks with big and “tasty” vampires around, but the deck can be resilient enough
+    to stop a Predator’s Dementation {{ dem }} bleed deck dead in its tracks.
+    {% endtrans %}
+</p>
+<h2>{{ _('Table Talk') }}</h2>
+<p>
+    {% trans trimmed %}
+    Obviously, it makes a difference if someone knows about your deck’s archetype and thus about its evil intentions.
+    You should always try to talk if necessary, since there will be other decks as evil as yours at the table,
+    and the mark of being the table threat is a matter of perception. Don’t boss around.
+    {% endtrans %}
+</p>
+<p>
+    {% trans trimmed baltimore_purge=card("Baltimore Purge") %}
+    In case someone tries to interact with you, do so, if it makes at least some sense.
+    If you play your first {{ baltimore_purge }}, cross-table buddies will ask if you are going to harm their vampires
+    even more or they might even ask for a torpor rescue. Usually you have to decline both,
+    since you do not have spare action, but you could generously leave them the choice of which vampire will be
+    torporised by the {{ baltimore_purge }} if they controlled more than one vampire.
+    Having a friend at the table or non-hostile cross-table buddies will make a huge difference.
+    Depending on the vampires your buddies play, you might have to go for them anyway.
+    {% endtrans %}
+</p>
+<p>
+    {% trans trimmed %}
+    Later in the game, when your deck has already done some damage to the table, try to make sure the literal card house
+    falls apart in your favour. Encourage players to resist their predators even though their situation looks helpless.
+    Offer them half or full VP, and stick to that deal if you can. I know that some players oppose withdrawal deals,
+    but bear in mind that many of them are tournament legal, for example if you will have 3 VP,
+    you can do whatever you want with the rest. Some players might try to threaten you by announcing to self-oust
+    if you do or do not do this or that. You should ignore this posture in general.
+    {% endtrans %}
+</p>
+<div class="clear"></div>
+<h2>{{ _('How to Win') }}</h2>
+<p>
+    {% trans trimmed 
+        mind_rape=card("Mind Rape"),
+        baltimore_purge=card("Baltimore Purge"),
+        montano=card("Montano"),
+        img_clan_baali='<img src="%(url)s" />'|format(url=url_for('static', filename='img/icons/clan-baali.svg'))|safe
+        %}
+    Maybe Montano Baltimore Purge (MBP) can be compared to a rush deck,
+    combined with the high risk, high reward component of a Baali {{ img_clan_baali }} bleed or vote deck.
+    You have to decide where and when to play {{ mind_rape }} and {{ baltimore_purge }}.
+    You are going to offset the table balance, and you want to make sure you don’t
+    get ousted and that any threat to {{ montano }} is eliminated.
+    {% endtrans %}
+</p>
+<p>
+    {% trans trimmed 
+        montano=card("Montano"),
+        learjet=card("Learjet"),
+        aurora_van_brande=card("Aurora Van Brande, Paladin", "Aurora Van Brande"),
+        baltimore_purge=card("Baltimore Purge"),
+        mind_rape=card("Mind Rape")
+        %}
+    A nice setup to start the “show” is {{ montano }} with a {{ learjet }} and a midcap assistant
+    ({{ aurora_van_brande }} is very nice, since she has superior Obtenebration {{ OBT }} and both Dominate {{ dom }}
+    and Fortitude {{ for }}). Try to get through both a {{ baltimore_purge }} and a {{ mind_rape }} on a player
+    who already controls 2 (!) vampires, preferably your Prey or your Predator, thus the mind raped vampire
+    can diablerise someone and burn by the mandatory bloodhunt, which eliminates two vampires.
+    {% endtrans %}
+</p>
+<p>
+    {% trans trimmed learjet=card("Learjet")%}
+    Always remember to use the {{ learjet }} if you have any cards in hand that do not help you in achieving your goals.
+    But do not use it just because you can, because then you will run out of cards before you make the GW.
+    Usually, you don’t get all of the table's VPs, but you don’t have to in order to win.
+    {% endtrans %}
+</p>
+<p>
+    {% trans trimmed
+        montano=card("Montano"),
+        baltimore_purge=card("Baltimore Purge"),
+        enkil_cog=card("Enkil Cog"),
+        freak_drive=card("Freak Drive"),
+        graverobbing=card("Graverobbing"),
+        heidelberg_castle=card("Heidelberg Castle, Germany", "Heidelberg Castle")
+    %}
+    This is a typical scenario: In your unlock phase {{ montano }} goes to torpor,
+    and so will every other vampire in the game of your choosing (well, one per player).
+    If you were able to put a second {{ baltimore_purge }} on {{ montano }} with the help of an
+    out-of-turn action provided by {{ enkil_cog }}, the table might already be at your disposal.
+    Now everything depends a bit on whether you have a {{ heidelberg_castle }} in play and if you have
+    {{ freak_drive }} and {{ graverobbing }} in hand.
+    {% endtrans %}
+</p>
+<div class="tip">
+    <h3>{{ _('Tips & Tricks') }}</h3>
+    {% trans trimmed
+        deflection=card("Deflection"),
+        direct_intervention=card("Direct Intervention"),
+        enkil_cog=card("Enkil Cog"),
+        graverobbing=card("Graverobbing"),
+        montano=card("Montano"),
+        nocturn=card("Nocturn"),
+        shadow_body=card("Shadow Body"),
+        sudden_reversal=card("Sudden Reversal")
+    %}
+    <ul>
+        <li>Don’t forget to take control of the mind-raped vampire.</li>
+        <li>
+            The assistant vampire should rescue {{ montano }}
+            to make sure that he can take the maximum number of actions.
+        </li>
+        <li>{{ montano }}'s stealth providing special works even while he is in torpor.</li>
+        <li>
+            Diablerize as many vampires as you can, or steal them with {{ graverobbing }}.
+            The mind-raped vampire should preferably die during a bloodhunt referendum, and if it is a
+            vampire with Fortitude {{ for }}, he might even bring more destruction to your opponents before doing so.
+        </li>
+        <li>
+            Cards you should <strong>never discard</strong> unless you are sure about the other decks at the table:
+            {{ shadow_body }} (Combat Ends), {{ deflection }} (against bleeds) and {{ nocturn }}
+            (against rushes and bounced bleeds).
+
+        </li>
+        <li>
+            The timing of the additional action with {{ enkil_cog }} can be tricky:
+            if being unlocked makes {{ montano }} a target, let him act in your Prey’s turn.
+            The same is true if another vampire at the table might play and contest {{ enkil_cog }} himself,
+            which might spoil the whole game for you. If you can afford it and want to keep people guessing
+            what your additional action might be, wait until the end of your Predator’s turn –
+            but remember that he/she might take actions afterwards. And bear in mind that you could play
+            {{ sudden_reversal }} on a {{ direct_intervention }} while acting out of turn.
+        </li>
+    </ul>
+    {% endtrans %}
+</div>
+<p>
+    {% trans trimmed 
+        golconda=card("Golconda: Inner Peace", "Golconda"),
+        villein=card("Villein"),
+        montano=card("Montano"),
+        govern=card("Govern the Unaligned", "Govern"),
+        ancient_influence=card("Ancient Influence"),
+        reins_of_power=card("Reins of Power"),
+        political_stranglehold=card("Political Stranglehold "),
+        mind_numb=card("Mind Numb")
+    %}
+    Gaining pool is one of the bigger issues of MBP, which is why some players add {{ golconda }} and/or {{ villein }}
+    to their {{ montano }} deck. {{ govern }} down is highly recommended, and an {{ ancient_influence }}
+    might make your day, especially when your prey has no more ready vampire. {{ reins_of_power }}
+    is seen here and there, but {{ political_stranglehold }} looks more reliable. Ousting your first prey
+    is highly recommended. Always be on guard: a bleed bounced to you or a {{ mind_numb }} on {{ montano }} could
+    already be fatal.
+    {% endtrans %}
+</p>
+<h2>{{ _('Game Example') }}</h2>
+<p>
+    {% trans trimmed %}
+    Now please take a look at my report of the finals where the above-mentioned decklist together with my decisions
+    (and the decisions of the fellow players) allowed me to be victorious.
+    {% endtrans %}
+</p>
+<div class="game">
+    <h3>{{ _('Don’t Cry for Pentex Lackey League Finals – 2019.') }}</h3>
+    <p>
+        {% trans trimmed 
+            zillah_s_valley=card("Zillah's Valley"),
+            montano=card("Montano"),
+            heidelberg_castle=card("Heidelberg Castle, Germany", "Heidelberg Castle")
+        %}
+        Seating and starting player position were random, so I had only the double-edged advantage of being top seat.
+        My starting hand shows useful cards and two {{ zillah_s_valley }}, both of which "ignite".
+        At the end of the second round (!) {{ montano }} can enter the scene at the beginning of the third round,
+        which also gives me a {{ heidelberg_castle }}, meeting the following resistance:
+        {% endtrans %}
+    </p>
+    <div class="game-diagram">
+        <h4>Turn 3</h4>
+        <div class="game-diagram-row">
+            <div class="game-diagram-opponent-left">
+                <div class="game-cards">
+                    <div class="game-image">{{ card_image("Elizabeth Westcott") }}
+                        <div class="blood">5</div>
+                    </div>
+                </div>
+                <h4>Martin Schumacher 🇩🇪
+                    <img class="svg-icon" src="{{ url_for('static', filename='img/icons/pool.svg') }}">
+                    23
+                </h4>
+            </div>
+            <div class="game-diagram-opponent-right">
+                <div class="game-cards">
+                    <div class="game-image">{{ card_image("Gracis Nostinus") }}
+                        <div class="blood">7</div>
+                    </div>
+
+                </div>
+                <h4>Diogo Pratas 🇵🇹
+                    <img class="svg-icon" src="{{ url_for('static', filename='img/icons/pool.svg') }}">
+                    22
+                </h4>
+            </div>
+        </div>
+        <div class="game-diagram-row">
+            <div class="game-diagram-opponent-left">
+                <div class="game-cards">
+                    <div class="game-image">
+                        {{ card_image("La Viuda Blanca") }}
+                        <div class="blood">6</div>
+                    </div>
+                </div>
+                <h4>Slaven Nikolic 🇭🇷
+                    <img class="svg-icon" src="{{ url_for('static', filename='img/icons/pool.svg') }}">
+                    24
+                </h4>
+            </div>
+            <div class="game-diagram-opponent-right">
+                <div class="game-cards">
+                    <div class="game-image">{{ card_image("Anarch Troublemaker") }}</div>
+                    <div class="game-image">{{ card_image("The Coven") }}</div>
+                </div>
+                <h4>Hellgie Tod 🇫🇷
+                    <img class="svg-icon" src="{{ url_for('static', filename='img/icons/pool.svg') }}">
+                    22
+                </h4>
+            </div>
+        </div>
+        <div class="game-diagram-player">
+            <div class="game-image">
+                {{ card_image("Montano") }}
+                <div class="blood">11</div>
+            </div>
+            <div class="game-image">{{ card_image("Heidelberg Castle, Germany") }}</div>
+            <h4>Me 🇩🇪
+                <img class="svg-icon" src="{{ url_for('static', filename='img/icons/pool.svg') }}">
+                13
+            </h4>
+        </div>
+    </div>
+    <p>
+        {% trans trimmed 
+            freak_drives=card("Freak Drive", "Freak Drives"),
+            mind_rape=card("Mind Rape"),
+            la_viuda_blanca=card("La Viuda Blanca"),
+            freak_drive=card("Freak Drive"),
+            enkil_cog=card("Enkil Cog"),
+            kassiym_malikhair=card("Kassiym Malikhair"),
+            montano=card("Montano")
+        %}
+        Without {{ freak_drives }} and stealth worth mentioning, I play a {{ mind_rape }} on {{ la_viuda_blanca }}.
+        Successfully. I pull out a {{ freak_drive }} and decide to make a bleed because I have {{ enkil_cog }} on hand.
+        Get blocked. Get {{ kassiym_malikhair }} out to assist {{ montano }}. This brings me to 9 pool.
+        {% endtrans %}
+    </p>
+    <div class="game-diagram">
+        <h4>Turn 4</h4>
+        <div class="game-diagram-row">
+            <div class="game-diagram-opponent-left">
+                <div class="game-cards">
+                    <div class="game-image">{{ card_image("Elizabeth Westcott") }}
+                        <div class="blood">5</div>
+                    </div>
+                    <div class="game-image">{{ card_image("Devin Bisley") }}
+                        <div class="blood">5</div>
+                    </div>
+                </div>
+                <h4>Martin Schumacher 🇩🇪
+                    <img class="svg-icon" src="{{ url_for('static', filename='img/icons/pool.svg') }}">
+                    19
+                </h4>
+            </div>
+            <div class="game-diagram-opponent-right">
+                <div class="game-cards">
+                    <div class="game-image locked">{{ card_image("Gracis Nostinus") }}
+                        <div class="blood">6</div>
+                    </div>
+                    <div class="game-image">{{ card_image("Ranjan Rishi, Camarilla Scholar") }}
+                        <div class="blood">5</div>
+                    </div>
+                    <div class="game-image locked">{{ card_image("The Coven") }}</div>
+                </div>
+                <h4>Diogo Pratas 🇵🇹
+                    <img class="svg-icon" src="{{ url_for('static', filename='img/icons/pool.svg') }}">
+                    18
+                </h4>
+            </div>
+        </div>
+        <div class="game-diagram-row">
+            <div class="game-diagram-opponent-left">
+                <div class="game-cards">
+                    <div class="game-image unlocked">
+                        <div class="attached-1">{{ card_image("Mind Rape") }}</div>
+                        {{ card_image("La Viuda Blanca") }}
+                        <div class="blood">6</div>
+                    </div>
+                </div>
+                <h4>Slaven Nikolic 🇭🇷
+                    <img class="svg-icon" src="{{ url_for('static', filename='img/icons/pool.svg') }}">
+                    20
+                </h4>
+            </div>
+            <div class="game-diagram-opponent-right">
+                <div class="game-cards">
+                    <div class="game-image">{{ card_image("Johannes Castelein") }}
+                        <div class="blood">9</div>
+                    </div>
+                    <div class="game-image">{{ card_image("Anarch Troublemaker") }}</div>
+                </div>
+                <h4>Hellgie Tod 🇫🇷
+                    <img class="svg-icon" src="{{ url_for('static', filename='img/icons/pool.svg') }}">
+                    18
+                </h4>
+            </div>
+        </div>
+        <div class="game-diagram-player">
+            <div class="game-image">
+                {{ card_image("Montano") }}
+                <div class="blood">7</div>
+            </div>
+            <div class="game-image">
+                {{ card_image("Kassiym Malikhair") }}
+                <div class="blood">6</div>
+            </div>
+            <div class="game-image">{{ card_image("Heidelberg Castle, Germany") }}</div>
+            <h4>Me 🇩🇪
+                <img class="svg-icon" src="{{ url_for('static', filename='img/icons/pool.svg') }}">
+                9
+            </h4>
+        </div>
+    </div>
+    <p>
+        {% trans trimmed
+            channel_10=card("Channel 10"),
+            enkil_cog=card("Enkil Cog"),
+            heart_of_nizchetus=card("Heart of Nizchetus"),
+            johannes_castelein=card("Johannes Castelein"),
+            kassiym=card("Kassiym Malikhair", "Kassiym"),
+            la_viuda=card("La Viuda Blanca", "La Viuda"),
+            learjet=card("Learjet"),
+            mind_numb=card("Mind Numb"),
+            montano=card("Montano"),
+            mustafa_the_heir=card("Mustafa, The Heir"),
+            mustafa=card("Mustafa, The Heir", "Mustafa"),
+            nocturn=card("Nocturn"),
+            the_capuchin=card("The Capuchin"),
+            the_signet_of_king_saul=card("The Signet of King Saul")
+        %}
+        I need pool, but no pool gain is in sight yet, and I am accordingly worried about being bled
+        by direct bleeds or bounces. I can play {{ enkil_cog }}, {{ the_signet_of_king_saul }} and {{ learjet }},
+        then the machinery stops again. {{ la_viuda }} has to leave her blood to {{ montano }}.
+        A {{ nocturn }} and {{ kassiym }} make up the defense. I am at 7 pool.
+        {{ heart_of_nizchetus }} for Martin. Diogo plays {{ mind_numb }} on {{ johannes_castelein }} (lucky me),
+        bleeds and continues to build up. Hellgie brings {{ mustafa_the_heir }} into play.
+        I hardly remember the details of the 5th round. {{ the_capuchin }} appears, with Martin a third {{ AUS }} Weenie
+        and {{ channel_10 }} (that can become something ...), Diogo comes on 4 vampires
+        and plays {{ mind_numb }} on {{ mustafa }}. Hellgie cannot do much.
+        {% endtrans %}
+    </p>
+    <div class="game-diagram">
+        <h4>Turn 6</h4>
+        <div class="game-diagram-row">
+            <div class="game-diagram-opponent-left">
+                <div class="game-cards">
+                    <div class="game-image unlocked">
+                        <div class="attached-1">{{ card_image("Heart of Nizchetus") }}</div>
+                        {{ card_image("Elizabeth Westcott") }}
+                        <div class="blood">5</div>
+                    </div>
+                    <div class="game-image">{{ card_image("Devin Bisley") }}
+                        <div class="blood">5</div>
+                    </div>
+                    <div class="game-image">{{ card_image("Isabel de Leon") }}
+                        <div class="blood">3</div>
+                    </div>
+                    <div class="game-image locked">{{ card_image("Channel 10") }}</div>
+                </div>
+                <h4>Martin Schumacher 🇩🇪
+                    <img class="svg-icon" src="{{ url_for('static', filename='img/icons/pool.svg') }}">
+                    14
+                </h4>
+            </div>
+            <div class="game-diagram-opponent-right">
+                <div class="game-cards">
+                    <div class="game-image locked">{{ card_image("Gracis Nostinus") }}
+                        <div class="blood">5</div>
+                    </div>
+                    <div class="game-image locked">{{ card_image("Ranjan Rishi, Camarilla Scholar") }}
+                        <div class="blood">5</div>
+                    </div>
+                    <div class="game-image">{{ card_image("Diana Vick") }}
+                        <div class="blood">3</div>
+                    </div>
+                    <div class="game-image">{{ card_image("Catherine Dubois") }}
+                        <div class="blood">5</div>
+                    </div>
+                </div>
+                <h4>Diogo Pratas 🇵🇹
+                    <img class="svg-icon" src="{{ url_for('static', filename='img/icons/pool.svg') }}">
+                    12
+                </h4>
+            </div>
+        </div>
+        <div class="game-diagram-row">
+            <div class="game-diagram-opponent-left">
+                <div class="game-cards">
+                    <div class="game-image locked">
+                        {{ card_image("La Viuda Blanca") }}
+                        <div class="blood">1</div>
+                    </div>
+                    <div class="game-image">
+                        {{ card_image("The Capuchin") }}
+                        <div class="blood">6</div>
+                    </div>
+                    <div class="game-image locked">{{ card_image("The Coven") }}</div>
+                </div>
+                <h4>Slaven Nikolic 🇭🇷
+                    <img class="svg-icon" src="{{ url_for('static', filename='img/icons/pool.svg') }}">
+                    12
+                </h4>
+            </div>
+            <div class="game-diagram-opponent-right">
+                <div class="game-cards">
+                    <div class="game-image">
+                        {{ card_image("Johannes Castelein") }}
+                        <div class="blood">9</div>
+                    </div>
+                    <div class="game-image locked">
+                        <div class="attached-1">{{ card_image("Mind Numb") }}</div>
+                        {{ card_image("Mustafa, The Heir") }}
+                        <div class="blood">6</div>
+                    </div>
+                    <div class="game-image">{{ card_image("Anarch Troublemaker") }}</div>
+                </div>
+                <h4>Hellgie Tod 🇫🇷
+                    <img class="svg-icon" src="{{ url_for('static', filename='img/icons/pool.svg') }}">
+                    9
+                </h4>
+            </div>
+        </div>
+        <div class="game-diagram-player">
+            <div class="game-image unlocked">
+                <div class="attached-1">{{ card_image("Enkil Cog") }}</div>
+                <div class="attached-2">{{ card_image("Learjet") }}</div>
+                <div class="attached-3">{{ card_image("The Signet of King Saul") }}</div>
+                {{ card_image("Montano") }}
+                <div class="blood">11</div>
+            </div>
+            <div class="game-image">
+                {{ card_image("Kassiym Malikhair") }}
+                <div class="blood">6</div>
+            </div>
+            <div class="game-image">
+                {{ card_image("Nocturn") }}
+                <div class="blood">1</div>
+            </div>
+            <div class="game-image">{{ card_image("Heidelberg Castle, Germany") }}</div>
+            <h4>Me 🇩🇪
+                <img class="svg-icon" src="{{ url_for('static', filename='img/icons/pool.svg') }}">
+                7
+            </h4>
+        </div>
+    </div>
+    <p>
+        {% trans trimmed 
+            anarch_troublemaker=card("Anarch Troublemaker"),
+            baltimore_purge=card("Baltimore Purge"),
+            bonding=card("Bonding"),
+            capuchin=card("The Capuchin", "Capuchin"),
+            deflection=card("Deflection"),
+            emerald_legionnaire=card("Emerald Legionnaire"),
+            freak_drive=card("Freak Drive"),
+            gracis=card("Gracis Nostinus", "Gracis"),
+            graverobbing=card("Graverobbing"),
+            johannes_castelein=card("Johannes Castelein"),
+            mind_rape=card("Mind Rape"),
+            my_enemy_s_enemy=card("My Enemy's Enemy")
+        %}
+        Time for {{ baltimore_purge }}. {{ freak_drive }}. {{ mind_rape }} on {{ johannes_castelein }}.
+        (Hellgie: You're ousting me. – Sorry, it is a complicated situation with tough decisions.)
+        Another {{ freak_drive }}, so I can act in Slavon's turn as well:
+        it's going to be a {{ mind_rape }} on {{ gracis }}. Slaven's {{ capuchin }} plays an {{ emerald_legionnaire }}.
+        {{ freak_drive }}. Afterwards, {{ capuchin }} bleeds (on Martin's suggestion that he should not hand
+        {{ capuchin }} over to me unlocked in the case of {{ graverobbing }}), the bleed
+        gets bounced to me by {{ my_enemy_s_enemy }} (well, great ...). Fortunately, I have a {{ deflection }} at hand.
+        No block, bleed for 3 thanks to {{ bonding }}. Bounce to Diogo, and now the big question:
+        to whom will he bounce? To Hellgie, who is then on 3 pool. Diogo ousts Hellgie in his turn
+        witch takes {{ anarch_troublemaker }} out of the game.
+        {% endtrans %}
+    </p>
+    <div class="game-diagram">
+        <h4>Turn 7</h4>
+        <div class="game-diagram-row">
+            <div class="game-diagram-opponent-left">
+                <div class="game-cards">
+                    <div class="game-image unlocked">
+                        <div class="attached-1">{{ card_image("Heart of Nizchetus") }}</div>
+                        {{ card_image("Elizabeth Westcott") }}
+                        <div class="blood">5</div>
+                    </div>
+                    <div class="game-image">{{ card_image("Devin Bisley") }}
+                        <div class="blood">5</div>
+                    </div>
+                    <div class="game-image">{{ card_image("Isabel de Leon") }}
+                        <div class="blood">3</div>
+                    </div>
+                    <div class="game-image locked">{{ card_image("Channel 10") }}</div>
+                </div>
+                <h4>Martin Schumacher 🇩🇪
+                    <img class="svg-icon" src="{{ url_for('static', filename='img/icons/pool.svg') }}">
+                    14
+                </h4>
+            </div>
+            <div class="game-diagram-opponent-right">
+                <div class="game-cards">
+                    <div class="game-image locked">
+                        <div class="attached-1">{{ card_image("Mind Rape") }}</div>
+                        {{ card_image("Gracis Nostinus") }}
+                        <div class="blood">5</div>
+                    </div>
+                    <div class="game-image locked">{{ card_image("Ranjan Rishi, Camarilla Scholar") }}
+                        <div class="blood">5</div>
+                    </div>
+                    <div class="game-image">{{ card_image("Diana Vick") }}
+                        <div class="blood">3</div>
+                    </div>
+                    <div class="game-image">{{ card_image("Catherine Dubois") }}
+                        <div class="blood">5</div>
+                    </div>
+                </div>
+                <h4>Diogo Pratas 🇵🇹
+                    <img class="svg-icon" src="{{ url_for('static', filename='img/icons/pool.svg') }}">
+                    14
+                </h4>
+            </div>
+        </div>
+        <div class="game-diagram-row">
+            <div class="game-diagram-opponent-left">
+                <div class="game-cards">
+                    <div class="game-image">
+                        {{ card_image("La Viuda Blanca") }}
+                        <div class="blood">1</div>
+                    </div>
+                    <div class="game-image locked">
+                        {{ card_image("The Capuchin") }}
+                        <div class="blood">6</div>
+                    </div>
+                    <div class="game-image">
+                        {{ card_image("Emerald Legionnaire") }}
+                        <div class="blood">2</div>
+                    </div>
+                </div>
+                <h4>Slaven Nikolic 🇭🇷
+                    <img class="svg-icon" src="{{ url_for('static', filename='img/icons/pool.svg') }}">
+                    12
+                </h4>
+            </div>
+            <div class="game-diagram-opponent-right">
+                <div class="game-cards">
+                </div>
+                <h4>Hellgie Tod 🇫🇷
+                    <img class="svg-icon" src="{{ url_for('static', filename='img/icons/pool.svg') }}">
+                    0
+                </h4>
+            </div>
+        </div>
+        <div class="game-diagram-player">
+            <div class="game-image unlocked">
+                <div class="attached-1">{{ card_image("Enkil Cog") }}</div>
+                <div class="attached-2">{{ card_image("Learjet") }}</div>
+                <div class="attached-3">{{ card_image("The Signet of King Saul") }}</div>
+                <div class="attached-4">{{ card_image("Baltimore Purge") }}</div>
+                {{ card_image("Montano") }}
+                <div class="blood">5</div>
+            </div>
+            <div class="game-image">
+                {{ card_image("Kassiym Malikhair") }}
+                <div class="blood">6</div>
+            </div>
+            <div class="game-image">{{ card_image("The Coven") }}</div>
+            <div class="game-image">{{ card_image("Heidelberg Castle, Germany") }}</div>
+            <h4>Me 🇩🇪
+                <img class="svg-icon" src="{{ url_for('static', filename='img/icons/pool.svg') }}">
+                7
+            </h4>
+        </div>
+    </div>
+    <p>
+        {% trans trimmed
+            ancient_influence=card("Ancient Influence"),
+            banishment=card("Banishment"),
+            capuchin=card("The Capuchin", "Capuchin"),
+            dreams_of_the_sphinx=card("Dreams of the Sphinx"),
+            elizabeth=card("Elizabeth Westcott", "Elizabeth"),
+            freak_drive=card("Freak Drive"),
+            gracis=card("Gracis Nostinus", "Gracis"),
+            graverobbing=card("Graverobbing"),
+            heart_of_nizchetus=card("Heart of Nizchetus"),
+            kassiym=card("Kassiym Malikhair", "Kassiym"),
+            montano=card("Montano"),
+            ranjan=card("Ranjan Rishi, Camarilla Scholar", "Ranjan"),
+            seduction=card("Seduction")
+        %}
+        The show begins. {{ montano }} takes {{ capuchin }}, {{ elizabeth }} and {{ ranjan }} with him.
+        {{ dreams_of_the_sphinx }}, two additional cards.
+        {{ kassiym }} rescues {{ montano }} from torpor. {{ freak_drive }}.
+        {{ montano }} plays {{ graverobbing }} superior on {{ capuchin }}. +2 hand size, so 11 cards in hand.
+        {{ freak_drive }}. {{ kassiym }} plays {{ ancient_influence }}, passes, finally some pool buffer.
+        {{ gracis }} plays {{ banishment }} on one of Martin's two ready {{ AUS }} weenies, passes,
+        then blood to {{ montano }}. Thanks to {{ seduction }}, {{ montano }}
+        diablerises Martin's {{ elizabeth }} and grabs the {{ heart_of_nizchetus }}.
+        {% endtrans %}
+    </p>
+    <p>
+        {% trans trimmed 
+            baltimore_purge=card("Baltimore Purge"),
+            montano=card("Montano")
+        %}
+        What follows now, is a brutal wearing down of the table by {{ baltimore_purge }} and diablerie actions.
+        {{ montano }}'s special of paying one blood to give one of my own minions +1 stealth proves to be
+        an additional breaker thanks to the "infinite supply" of blood.
+        {% endtrans %}
+    </p>
+    <p>
+        {% trans trimmed 
+            gracis=card("Gracis Nostinus", "Gracis"),
+            graverobbing=card("Graverobbing")
+        %}
+        Without hurry I oust Slaven two or three rounds later. Diogo shows spirit and continues to play full forward,
+        which grants me a new and shiny {{ gracis }} via {{ graverobbing }}.
+        Of course I try to oust Martin, but he bounces twice and eliminates Diogo.
+        German-German heads up. I have no library left, and there are still 30 minutes left on the clock.
+        {% endtrans %}
+    </p>
+    <p>
+        {% trans trimmed 
+            capuchin=card("The Capuchin", "Capuchin"),
+            gracis=card("Gracis Nostinus", "Gracis"),
+            kassiym=card("Kassiym Malikhair", "Kassiym"),
+            montano=card("Montano"),
+            ignacio=card("Ignacio, The Black Priest", "Ignacio"),
+            channel_10=card("Channel 10"),
+            krcg_news_radio=card("KRCG News Radio"),
+            the_rack=card("The Rack"),
+            the_coven=card("The Coven"),
+            blanket_of_night=card("Blanket of Night")
+         %}
+        I have 5 vampires, {{ montano }}, {{ kassiym }} and {{ ignacio }} as well as {{ capuchin }} and {{ gracis }},
+        the big ones also with a lot of blood. And yet I'm afraid I'll run into the wall now:
+        3 Auspex-Weenies supported by {{ channel_10 }} and also {{ krcg_news_radio }}, and be "shot down"
+        by guns or aggravated damage and lose the game.
+        But it turns out differently, the fights are only "Hand Strike, one". So it's a constant race,
+        a struggle for Edge and {{ the_rack }}, also changes {{ the_coven }} happy back and forth.
+        Finally, a bleed for 3 by {{ montano }} ends the game,
+        as the last blocker is overcome thanks to a {{ blanket_of_night }} by {{ kassiym }}.
+        {% endtrans %}
+    </p>
+</div>
+<p>
+    {% trans trimmed 
+        montano=card("Montano"),
+        mind_rape=card("Mind Rape")
+    %}
+    As you can see, I was lucky enough to be able to act with {{ montano }} from turn 3,
+    despite the fact I was the starting player, but could not take much advantage of it.
+    I could have been ousted by turn 5 or 6 when my Predator would have been able to take actions
+    or to bounce the bleeds of his Predator to me. This is why I decided to play {{ mind_rape }}
+    on my Predator’s unlocked vampire.
+    {% endtrans %}
+</p>
+
+<p>
+    {% trans trimmed 
+        learjet=card("Learjet"),
+        baltimore_purge=card("Baltimore Purge"),
+        graverobbing=card("Graverobbing"),
+        enkil_cog=card("Enkil Cog")
+    %}
+    Turn 7 is a description of a typical turn when all the moving parts happen in the right order.
+    Such a turn might take up to 20 or even 30 minutes, because of all the choices to make,
+    especially using {{ learjet }} or not, and the actions to take.
+    Afterwards the table balance should have taken a massive shift to your favour, but usually you will need another
+    turn with {{ baltimore_purge }} and {{ graverobbing }} and diableries to assure your victory.
+    If you can pull off a double Purge with the help of {{ enkil_cog }}, it is usually game over.
+    {% endtrans %}
+</p>
+<h2>{{ _('Tweaks and metagame choices') }}</h2>
+<p>
+    {% trans trimmed
+        montano=card("Montano"),
+        villein=card("Villein"),
+        golconda=card("Golconda: Inner Peace", "Golconda"),
+        direct_intervention=card("Direct Intervention"),
+        dark_influence=card("Dark Influences"),
+        monastery_of_shadows=card("Monastery of Shadows"),
+        elysian_fields=card("Elysian Fields"),
+        the_coven=card("The Coven")
+    %}
+    If you do not feel the need for speed to let {{ montano }} enter the game by the end of round 2,
+    you get space in the Master cards section. {{ villein }} or {{ golconda }}, {{ direct_intervention }}
+    or {{ dark_influence }}, and {{ monastery_of_shadows }} or {{ elysian_fields }} are tempting options.
+    Even {{ the_coven }} might be beneficial, since you want to have blood on the vampires {{ montano }} diablerises.
+    {% endtrans %}
+</p>
+<p>
+    {% trans trimmed
+        baltimore_purge=card("Baltimore Purge"),
+        banishment=card("Banishment"),
+        reins_of_power=card("Reins of Power"),
+        political_stranglehold=card("Political Stranglehold"),
+        mind_rape=card("Mind Rape")
+    %}
+    You might want to play more than 5 copies of {{ baltimore_purge }}. Regarding Political Actions, adding another
+    {{ banishment }} looks good. {{ reins_of_power }} is double-edged if you do not manage to have your predators
+    big vamps in torpor. {{ political_stranglehold }} would interact nicely with {{ mind_rape }}.
+    {% endtrans %}
+</p>
+<p>
+    {% trans trimmed
+        zaire_river_ferry=card("Zaire River Ferry"),
+        obedience=card("Obedience"),
+        on_the_qui_vive=card("On the Qui Vive"),
+        deflections=card("Deflection", "Deflections")
+    %}
+    {{ zaire_river_ferry }} is a suggestion by famous <em>Martin Schuhmacher</em> I have not given a try so far.
+    Reaction cards like {{ obedience }}, {{ on_the_qui_vive }} and more {{ deflections }} can come in handy
+    depending on the situation.
+    {% endtrans %}
+</p>
+<p>
+    {% trans trimmed the_capuchin=card("The Capuchin") %}
+    I consider Montano Baltimore Purge (MBP) to be a viable deck choice for larger tournaments, since you usually
+    encounter a wider spread of decks and more decks which build up a few rounds.
+    Big vampires are the “fish” you catch best, even wall stars since they are helpless once in torpor.
+    I made especially good experiences with {{ the_capuchin }} played by my Prey.
+    The more combat you expect, the less MBP becomes appealing if you are looking for a somehow safe road to success.
+    {% endtrans %}
+</p>
+{% endblock %}
+
+{% block script %}
+<script>
+    window.onload = function () {
+        const content = document.querySelector('meta[property="decklist"]').content
+        const decklist = JSON.parse(JSON.parse(content))
+        document.getElementById("card-modal").addEventListener("keydown", modalKeydown)
+        document.getElementById("card-prev").addEventListener("click", prevCard)
+        document.getElementById("card-next").addEventListener("click", nextCard)
+        displayDeck(decklist)
+    }
+</script>
+{% endblock %}

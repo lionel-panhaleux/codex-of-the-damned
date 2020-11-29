@@ -254,7 +254,7 @@ def file_name(name):
 def display_card():
     def card(name, display_name=None):
         return flask.Markup(
-            """<span class="card" onclick="dC('{fname}')">{name}</span>""".format(
+            """<span class="card" onclick="dC('{fname}')" onmouseover="hC('{fname}')" onmouseout="oC()">{name}</span>""".format(
                 # replace spaces with non-breakable spaces in card names
                 name=(display_name or name).replace(" ", " "),
                 fname=file_name(name),
@@ -263,8 +263,8 @@ def display_card():
 
     def card_image(name):
         return flask.Markup(
-            '<img src="{path}" alt="{name}" />'.format(
-                name=name, path=f"https://images.krcg.org/{file_name(name)}.jpg"
+            """<img src="https://images.krcg.org/{fname}.jpg" alt="{name}" onclick="dC('{fname}')" onmouseover="hC('{fname}')" onmouseout="oC()"/>""".format(
+                name=name, fname=file_name(name),
             )
         )
 
