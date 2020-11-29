@@ -4,7 +4,8 @@ Changelog
 1.6 (unreleased)
 ----------------
 
-- Nothing changed yet.
+- Include V5 guides and rulebook
+- New Advanced Strategy section, 2 articles for proofreading
 
 
 1.5 (2020-10-30)
