@@ -1,7 +1,7 @@
 {% macro card_column(name, decks=0, copies="") -%}
 <div class="column">
     <div class="column-image">
-        {{ card_image(name) }}
+        {{ card_image(name, false) }}
         <h4>{{ name }}</h4>
         <p class="center-subtitle">
             {{ gettext('played in %(num)d decks,', num=decks) }}

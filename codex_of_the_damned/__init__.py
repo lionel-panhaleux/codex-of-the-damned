@@ -261,11 +261,11 @@ def display_card():
             )
         )
 
-    def card_image(name):
-        return flask.Markup(
-            """<img src="https://images.krcg.org/{fname}.jpg" alt="{name}" onclick="dC('{fname}')" onmouseover="hC('{fname}')" onmouseout="oC()"/>""".format(
-                name=name, fname=file_name(name),
-            )
-        )
+    def card_image(name, hover=True):
+        img = '<img src="https://images.krcg.org/{fname}.jpg" alt="{name}" onclick="dC(\'{fname}\')"'
+        if hover:
+            img += ' onmouseover="hC(\'{fname}\')" onmouseout="oC()"'
+        img += "/>"
+        return flask.Markup(img.format(name=name, fname=file_name(name)))
 
     return dict(card=card, card_image=card_image)
