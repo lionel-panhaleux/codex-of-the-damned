@@ -1,7 +1,7 @@
 Changelog
 =========
 
-1.6 (unreleased)
+1.6 (2020-11-29)
 ----------------
 
 - Include V5 guides and rulebook
