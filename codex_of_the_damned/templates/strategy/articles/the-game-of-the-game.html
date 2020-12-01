@@ -5,6 +5,21 @@
     {{ _('The Game of the Game') }}<br />
     <span>{{ _('By Mark Lougman') }}</span>
 </h1>
+<div class="author">
+    <img src="{{ url_for('static', filename='img/mark_loughman.png') }}" alt="Mark Loughman">
+    <p>
+        {% trans trimmed
+            img_clan_tremere='<img src="%(url)s" />'|format(url=url_for('static', filename='img/icons/clan-tremere-v5.svg'))|safe,
+            img_clan_nosferatu='<img src="%(url)s" />'|format(url=url_for('static', filename='img/icons/clan-nosferatu-v5.svg'))|safe
+        %}
+        Mark Loughman has been playing V:tES since day one, is highly seated in the VEKN Hall of Fame
+        with 25 tournament victories, and became US National Coordinator in 2019.
+        He organises 4 tournaments per year and playtests new extensions.
+        His favorite decks are Tremere {{ img_clan_tremere }} and Nosferatu {{ img_clan_nosferatu }} Toolboxes.
+        {% endtrans %}
+    </p>
+    <div class="clear"></div>
+</div>
 <p>
     {% trans trimmed 
     sce=link("/strategy/combat", _("S:CE"), "defence"),

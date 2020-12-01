@@ -9,6 +9,20 @@
 <h1>{{ _('Playing Montano Baltimore Purge') }}<br />
     <span>{{ _('By Rudolf Scholz') }}</span>
 </h1>
+<div class="author">
+    <img src="{{ url_for('static', filename='img/rudolf_scholz.png') }}" alt="Rudolf Scholz">
+    <p>
+        {% trans trimmed
+            anson=card("Anson")
+        %}
+        Rudolf Scholz has been playing V:tES since 2006 and became Germany's National Coordinator in 2015.
+        He sits in the VEKN Hall of Fame with 11 tournament victories, and has been three time Danish Champion,
+        in 2012, 2013 and 2018.
+        His favorite decks are Montano Baltimore Purge and {{ anson }} Tap-n-Bleed.
+        {% endtrans %}
+    </p>
+    <div class="clear"></div>
+</div>
 <div class="column">
     <div class="column-image">{{ card_image("Montano", false) }}</div>
 </div>

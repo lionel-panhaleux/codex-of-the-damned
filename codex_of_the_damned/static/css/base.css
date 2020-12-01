@@ -24,7 +24,7 @@ body {
     font-family: "Times New Roman", Times, serif;
     color: #000000;
     background-color: #fffdf5;
-    margin: 2em;
+    margin: 1em;
     -webkit-font-smoothing: antialiased;
 }
 a {
@@ -136,39 +136,6 @@ h2 > img {
     color: #007acc;
     cursor: pointer;
 }
-@media only screen and (max-width: 750px) {
-    header,
-    footer {
-        padding-left: 2%;
-        padding-right: 2%;
-        flex-direction: column;
-    }
-    header img {
-        max-width: 75px;
-        max-height: 75px;
-    }
-    h1 {
-        font-size: 2rem;
-        clear: both;
-    }
-    h1 > img {
-        height: 40px;
-    }
-    .modal {
-        padding: 5vh 5vw;
-    }
-    .modal-content {
-        max-height: 70vh;
-        max-width: 85vw;
-    }
-    .modal-nav {
-        max-height: 15vh;
-        max-width: 85vw;
-    }
-    h2 {
-        clear: both;
-    }
-}
 h3 {
     font-size: 1.2rem;
     margin-top: 0.8em;
@@ -272,7 +239,7 @@ article li {
 article div {
     padding: 0.5em 2em;
     border-radius: 1em;
-    margin: 1.5em auto;
+    margin: 1.5em;
     clear: both;
 }
 article > div > img {
@@ -477,11 +444,35 @@ div.result-message {
     margin-right: 0.5em;
     color: #582110;
 }
+.author {
+    background: #ecf7fc;
+    border: 1px solid rgb(70, 185, 220);
+    max-width: 700px;
+    clear: both;
+    vertical-align: middle;
+}
+.author > img {
+    margin: auto 1em auto 0;
+    max-width: 100px;
+    max-height: 100px;
+    float: left
+}
+.author > p {
+    font-style: italic;
+}
 .game {
     background: #e7fad7;
     border: 1px solid rgb(118, 220, 70);
     max-width: 700px;
     clear: both;
+}
+.game h3::before {
+    font-family: "FontAwesome";
+    font-weight: 900;
+    content: "\f1ea";
+    font-size: 1.5em;
+    margin-right: 0.5em;
+    color: #335810;
 }
 .game-diagram {
     /* background:  #bbd6a4; */
@@ -739,6 +730,70 @@ form input[type="submit"] {
 .sponsor a:focus {
     color: #007acc;
     border-color: #007acc;
+}
+@media only screen and (max-width: 750px) {
+    header,
+    footer {
+        padding-left: 2%;
+        padding-right: 2%;
+        flex-direction: column;
+    }
+    header img {
+        max-width: 60px;
+        max-height: 60px;
+    }
+    h1 {
+        font-size: 1.5rem;
+        clear: both;
+    }
+    h1 > img {
+        height: 40px;
+    }
+    .modal {
+        padding: 5vh 5vw;
+    }
+    .modal-content {
+        max-height: 70vh;
+        max-width: 85vw;
+    }
+    .modal-nav {
+        max-height: 15vh;
+        max-width: 85vw;
+    }
+    h2 {
+        clear: both;
+    }
+    .decklist {
+        float: none;
+    }
+    .game-diagram-row {
+        margin: 0.5em;
+        margin-bottom: 2em;
+    }
+    .game-image {
+        margin:0 0.2em;
+        max-width: 50px;
+    }
+    .attached-1 {
+        top: -0.5em;
+        left: 0.5em;
+    }
+    .attached-2 {
+        top: -1em;
+        left: 1em;
+    }
+    .attached-3{
+        top: -1.5em;
+        left: 1.5em;
+    }
+    .attached-4{
+        top: -2em;
+        left: 2em;
+    }
+    article div {
+        margin: 1.5em 0;
+        padding: 0.5em 1em;
+    }
 }
 .clear {
     padding: 0;
