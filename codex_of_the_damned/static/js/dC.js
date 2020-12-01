@@ -4,6 +4,9 @@ function dC(name) {
 }
 
 function hC(name) {
+    if (window.matchMedia("(hover: none)").matches) {
+        return
+    }
     document.getElementById("card-hover-image").src = 'https://images.krcg.org/'.concat(name, '.jpg');
     document.getElementById("card-hover").style.display = "block";
 }
