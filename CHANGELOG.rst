@@ -4,7 +4,7 @@ Changelog
 1.7 (unreleased)
 ----------------
 
-- Nothing changed yet.
+- Removed decklist converter (now a KRCG command)
 
 
 1.6 (2020-11-29)

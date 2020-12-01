@@ -65,11 +65,6 @@ gunicorn codex_of_the_damned:app
 
 ## Useful tools
 
-### Decklist convert
-
-A tool to convert plain text decklists to the JSON format used by the Codex.
-Check the [Decklist convert](utils/README.md) documentation.
-
 ### Icons
 
 Convert icons from raster to SVG using `imagemagick` and `potrace`,
