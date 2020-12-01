@@ -15,53 +15,49 @@
 
 {% block archetype %}
 {% trans trimmed
-    anson=card("Anson"),
-    tatiana=card("Tatiana Romanov"),
-    voter_cap=card("Voter Captivation"),
-    krc=card("Kine Resources Contested"),
-    tgb=card("Toreador Grand Ball"),
-    anthelios=card("Anthelios, The Red Star"),
-    temptation=card("Temptation of Greater Power"),
-    pentex_subversion=card("Pentex™ Subversion"),
-    parity_shift=card("Parity Shift"),
+	anson=card("Anson"),
+	tatiana=card("Tatiana Romanov"),
+	voter_cap=card("Voter Captivation"),
+	krc=card("Kine Resources Contested"),
+	tgb=card("Toreador Grand Ball"),
+	parity_shift=card("Parity Shift"),
 	toreador_justicar=card("Toreador Justicar"),
-    elder_library=card("Elder Library"),
-    bloat=link("/strategy/bloat", _("bloat")),
-    vote=link("/strategy/archetypes", _("Vote"), _anchor="vote"),
-    politics=link("/strategy/fundamentals", _("Political Actions"), _anchor="politics"),
-    inaki_jimenez_deck=link("/deck-search", _("Iñaki Jimenez's deck"), twda_id="2k9fsbarakaldolate")
+	elder_library=card("Elder Library"),
+	bloat=link("/strategy/bloat", _("bloat")),
+	vote=link("/strategy/archetypes", _("Vote"), _anchor="vote"),
+	politics=link("/strategy/fundamentals", _("Political Actions"), _anchor="politics"),
+	inaki_jimenez_deck=link("/deck-search", _("Iñaki Jimenez's deck"), twda_id="2k9fsbarakaldolate")
 %}
 <h2>Highlights</h2>
 <p>
-    This is a breed and boon deck starring {{ anson }} and using {{ pre }} as the
+	This is a breed and boon deck starring {{ anson }} and using {{ PRE }} as the
 	discipline to push votes. The purpose is to have him out as fast as possible
 	to use {{ politics }} to oust the prey.
 </p>
 
 <h2>Tips & Tricks</h2>
 <p>
-    Using {{ grooming }} cost quite an amount of blood and it is necessary to
+	Using {{ grooming }} cost quite an amount of blood and it is necessary to
 	replenish vampires from time to time. {{ voter_cap }} can be used to do this
 	instead of hunting as much as possible. This solution does not cost more actions
 	and it will be easier to maximise damage done to the prey.
 </p>
 <p>
-    {{ krc }} is the best action to deal massive damage. It is possible to
+	{{ krc }} is the best action to deal massive damage. It is possible to
 	negociate with the great predator how to assign damage if their votes are necessary.
 	It is important to still deal more damage to the prey than to the predator because it
 	will only help the great predator do their point and become the predator more quickly
-	
 </p>
 <p>
-    {{ parity_shift }} can only be called by Princes, namely  {{ anson }}
+	{{ parity_shift }} can only be called by Princes, namely  {{ anson }}
 	and {{ tatiana }}. Always having at least one of them ready to call for
-	 {{ parity_shift }} is the only way to {{ bloat }} without
-	 {{ grooming }} and {{ toreador_justicar }} is the only way to have more 
-	 vampires  able to call for this vote.
+	{{ parity_shift }} is the only way to {{ bloat }} without
+	{{ grooming }} and {{ toreador_justicar }} is the only way to have more
+	vampires  able to call for this vote.
 </p>
 <p>
-    It is a good idea when the grand-prey deck has good block capacity to 
-    deal some damage to them because they do 
+	It is a good idea when the grand-prey deck has good block capacity to
+	deal some damage to them because they do
 	not get the chance to block the undirected vote actions until they are
 	either the prey or the predator.
 </p>
@@ -70,22 +66,6 @@
 	as a low capacity vampire can be chosen to make all votes from
 	{{ anson }} unblockable. This same low cap vampire can be chosen to
 	make all votes from another vampire unblockable with anoter {{ tgb }}.
-</p>
-
-<h2>Suggested changes</h2>
-<p>
-    This deck contains cards that are banned
-	({{ anthelios }} and {{ temptation }})
-	and cards that have been errata'ed ({{ pentex_subversion }}
-	and {{ parity_shift }}).
-	As detailed hereunder, {{ parity_shift }} is still good but the other cards
-	need to be replaced.
-</p>
-<p>
-    My suggestions are one {{ elder_library }} and one extra {{krc}}.
-	The {{elder_library }} will help you have more cards in hand. The purpose is
-	to have a bigger and less jam-able hand. This Master card is not used often
-	and it will help you not to contest it to keep your pool to swarm.
 </p>
 
 <h2>Tournament Version</h2>
@@ -98,7 +78,6 @@
 {% block errata %}
 <div class="warning">
     <h3>Errata</h3>
-    {{ erratum.pentextmsubversion( 'remove' ) }}
     {{ erratum.parityshift() }}
 </div>
 {% endblock %}
