@@ -4,7 +4,7 @@ Changelog
 1.8 (unreleased)
 ----------------
 
-- Nothing changed yet.
+- Translation of Advanced Strategy Section
 
 
 1.7 (2020-12-01)

@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: codex 0.X\n"
 "Report-Msgid-Bugs-To: lionel.panhaleux+codex@gmail.com\n"
-"POT-Creation-Date: 2020-10-30 18:03+0100\n"
+"POT-Creation-Date: 2020-12-02 14:36+0100\n"
 "PO-Revision-Date: 2020-07-04 08:50+0200\n"
 "Last-Translator: Lionel Panhaleux <lionel.panhaleux+codex@gmail.com>\n"
 "Language: fr\n"
@@ -57,12 +57,13 @@ msgstr "Régénération"
 msgid "Deck building"
 msgstr "Construction de deck"
 
-#: codex_of_the_damned/navigation.py:72 codex_of_the_damned/navigation.py:86
+#: codex_of_the_damned/navigation.py:72 codex_of_the_damned/navigation.py:93
 #: codex_of_the_damned/templates/archetypes/index.html:11 codex_of_the_damned/templates/strategy/archetypes.html:4
 msgid "Archetypes"
 msgstr "Archétypes"
 
 #: codex_of_the_damned/navigation.py:73 codex_of_the_damned/templates/strategy/archetypes.html:261
+#: codex_of_the_damned/templates/strategy/articles/playing-montano-baltimore-purge.html:118
 msgid "Table Talk"
 msgstr "Discussion"
 
@@ -89,71 +90,84 @@ msgstr "Pacte avec les Nephandi"
 msgid "Parliament of Shadows"
 msgstr "Le Parlement des Ombres"
 
-#: codex_of_the_damned/navigation.py:142
+#: codex_of_the_damned/navigation.py:84
+msgid "Articles"
+msgstr "Articles"
+
+#: codex_of_the_damned/navigation.py:86 codex_of_the_damned/templates/strategy/articles/the-game-of-the-game.html:5
+msgid "The Game of the Game"
+msgstr "Le jeu dans le jeu"
+
+#: codex_of_the_damned/navigation.py:87
+#: codex_of_the_damned/templates/strategy/articles/playing-montano-baltimore-purge.html:9
+msgid "Playing Montano Baltimore Purge"
+msgstr "Jouer Montano Baltimore Purge"
+
+#: codex_of_the_damned/navigation.py:149
 msgid "Bibliodèque"
 msgstr ""
 
-#: codex_of_the_damned/navigation.py:251
+#: codex_of_the_damned/navigation.py:258
 msgid "Best Cards"
 msgstr "Top Cartes"
 
-#: codex_of_the_damned/navigation.py:255 codex_of_the_damned/templates/best-cards/index.html:20
+#: codex_of_the_damned/navigation.py:262 codex_of_the_damned/templates/best-cards/index.html:20
 msgid "Generic"
 msgstr "Générique"
 
-#: codex_of_the_damned/navigation.py:257 codex_of_the_damned/templates/best-cards/generic/master-cards.html:5
+#: codex_of_the_damned/navigation.py:264 codex_of_the_damned/templates/best-cards/generic/master-cards.html:5
 msgid "Master cards"
 msgstr "Cartes de Maître"
 
-#: codex_of_the_damned/navigation.py:258
+#: codex_of_the_damned/navigation.py:265
 msgid "Political actions"
 msgstr "Actions politiques"
 
-#: codex_of_the_damned/navigation.py:259 codex_of_the_damned/templates/best-cards/generic/no-discipline.html:5
+#: codex_of_the_damned/navigation.py:266 codex_of_the_damned/templates/best-cards/generic/no-discipline.html:5
 msgid "No discipline"
 msgstr "Sans discipline"
 
-#: codex_of_the_damned/navigation.py:260 codex_of_the_damned/templates/best-cards/generic/animalism.html:5
+#: codex_of_the_damned/navigation.py:267 codex_of_the_damned/templates/best-cards/generic/animalism.html:5
 msgid "Animalism"
 msgstr "Animalisme"
 
-#: codex_of_the_damned/navigation.py:261 codex_of_the_damned/templates/best-cards/generic/auspex.html:5
+#: codex_of_the_damned/navigation.py:268 codex_of_the_damned/templates/best-cards/generic/auspex.html:5
 msgid "Auspex"
 msgstr "Auspex"
 
-#: codex_of_the_damned/navigation.py:262 codex_of_the_damned/templates/best-cards/generic/celerity.html:5
+#: codex_of_the_damned/navigation.py:269 codex_of_the_damned/templates/best-cards/generic/celerity.html:5
 msgid "Celerity"
 msgstr "Célérité"
 
-#: codex_of_the_damned/navigation.py:263 codex_of_the_damned/templates/best-cards/generic/dominate.html:5
+#: codex_of_the_damned/navigation.py:270 codex_of_the_damned/templates/best-cards/generic/dominate.html:5
 msgid "Dominate"
 msgstr "Domination"
 
-#: codex_of_the_damned/navigation.py:264 codex_of_the_damned/templates/best-cards/generic/fortitude.html:5
+#: codex_of_the_damned/navigation.py:271 codex_of_the_damned/templates/best-cards/generic/fortitude.html:5
 msgid "Fortitude"
 msgstr "Force d’âme"
 
-#: codex_of_the_damned/navigation.py:265 codex_of_the_damned/templates/best-cards/generic/necromancy.html:5
+#: codex_of_the_damned/navigation.py:272 codex_of_the_damned/templates/best-cards/generic/necromancy.html:5
 msgid "Necromancy"
 msgstr "Nécromancie"
 
-#: codex_of_the_damned/navigation.py:266 codex_of_the_damned/templates/best-cards/generic/obfuscate.html:5
+#: codex_of_the_damned/navigation.py:273 codex_of_the_damned/templates/best-cards/generic/obfuscate.html:5
 msgid "Obfuscate"
 msgstr "Occultation"
 
-#: codex_of_the_damned/navigation.py:267 codex_of_the_damned/templates/best-cards/generic/potence.html:5
+#: codex_of_the_damned/navigation.py:274 codex_of_the_damned/templates/best-cards/generic/potence.html:5
 msgid "Potence"
 msgstr "Puissance"
 
-#: codex_of_the_damned/navigation.py:268
+#: codex_of_the_damned/navigation.py:275
 msgid "Presence"
 msgstr "Présence"
 
-#: codex_of_the_damned/navigation.py:272 codex_of_the_damned/templates/best-cards/index.html:35
+#: codex_of_the_damned/navigation.py:279 codex_of_the_damned/templates/best-cards/index.html:35
 msgid "Sects"
 msgstr "Sectes"
 
-#: codex_of_the_damned/navigation.py:274 codex_of_the_damned/templates/strategy/bloat.html:77
+#: codex_of_the_damned/navigation.py:281 codex_of_the_damned/templates/strategy/bloat.html:77
 #: codex_of_the_damned/templates/strategy/bloat.html:78 codex_of_the_damned/templates/strategy/bloat.html:101
 #: codex_of_the_damned/templates/strategy/bloat.html:102 codex_of_the_damned/templates/strategy/fundamentals.html:279
 #: codex_of_the_damned/templates/strategy/fundamentals.html:280
@@ -162,131 +176,131 @@ msgstr "Sectes"
 msgid "Anarch"
 msgstr ""
 
-#: codex_of_the_damned/navigation.py:275
+#: codex_of_the_damned/navigation.py:282
 msgid "Camarilla"
 msgstr ""
 
-#: codex_of_the_damned/navigation.py:276 codex_of_the_damned/templates/strategy/bloat.html:146
+#: codex_of_the_damned/navigation.py:283 codex_of_the_damned/templates/strategy/bloat.html:146
 #: codex_of_the_damned/templates/strategy/fundamentals.html:86 codex_of_the_damned/templates/strategy/fundamentals.html:472
 msgid "Laibon"
 msgstr ""
 
-#: codex_of_the_damned/navigation.py:277 codex_of_the_damned/templates/strategy/bloat.html:103
+#: codex_of_the_damned/navigation.py:284 codex_of_the_damned/templates/strategy/bloat.html:103
 #: codex_of_the_damned/templates/strategy/bloat.html:104 codex_of_the_damned/templates/strategy/bloat.html:268
 #: codex_of_the_damned/templates/strategy/fundamentals.html:440
 msgid "Sabbat"
 msgstr ""
 
-#: codex_of_the_damned/navigation.py:281 codex_of_the_damned/templates/best-cards/index.html:42
+#: codex_of_the_damned/navigation.py:288 codex_of_the_damned/templates/best-cards/index.html:42
 msgid "Clans"
 msgstr "Clans"
 
-#: codex_of_the_damned/navigation.py:283
+#: codex_of_the_damned/navigation.py:290
 msgid "Ahrimanes"
 msgstr ""
 
-#: codex_of_the_damned/navigation.py:284
+#: codex_of_the_damned/navigation.py:291
 msgid "Akunanse"
 msgstr ""
 
-#: codex_of_the_damned/navigation.py:285
+#: codex_of_the_damned/navigation.py:292
 msgid "Assamite"
 msgstr ""
 
-#: codex_of_the_damned/navigation.py:286
+#: codex_of_the_damned/navigation.py:293
 msgid "Baali"
 msgstr ""
 
-#: codex_of_the_damned/navigation.py:287
+#: codex_of_the_damned/navigation.py:294
 msgid "Brujah"
 msgstr ""
 
-#: codex_of_the_damned/navigation.py:288
+#: codex_of_the_damned/navigation.py:295
 msgid "Caitiff"
 msgstr ""
 
-#: codex_of_the_damned/navigation.py:289 codex_of_the_damned/templates/best-cards/clans/daughters-of-cacophony.html:6
+#: codex_of_the_damned/navigation.py:296 codex_of_the_damned/templates/best-cards/clans/daughters-of-cacophony.html:6
 msgid "Daughters of Cacophony"
 msgstr "Filles de la Cacophonie"
 
-#: codex_of_the_damned/navigation.py:290 codex_of_the_damned/templates/best-cards/clans/followers-of-set.html:6
+#: codex_of_the_damned/navigation.py:297 codex_of_the_damned/templates/best-cards/clans/followers-of-set.html:6
 msgid "Followers of Set"
 msgstr "Disciples de Seth"
 
-#: codex_of_the_damned/navigation.py:291
+#: codex_of_the_damned/navigation.py:298
 msgid "Gangrel"
 msgstr ""
 
-#: codex_of_the_damned/navigation.py:292
+#: codex_of_the_damned/navigation.py:299
 msgid "Giovanni"
 msgstr ""
 
-#: codex_of_the_damned/navigation.py:293
+#: codex_of_the_damned/navigation.py:300
 msgid "Guruhi"
 msgstr ""
 
-#: codex_of_the_damned/navigation.py:294 codex_of_the_damned/templates/best-cards/clans/harbingers-of-skulls.html:6
+#: codex_of_the_damned/navigation.py:301 codex_of_the_damned/templates/best-cards/clans/harbingers-of-skulls.html:6
 msgid "Harbingers of Skulls"
 msgstr "Émissaires des Crânes"
 
-#: codex_of_the_damned/navigation.py:295 codex_of_the_damned/templates/best-cards/clans/imbued.html:6
+#: codex_of_the_damned/navigation.py:302 codex_of_the_damned/templates/best-cards/clans/imbued.html:6
 #: codex_of_the_damned/templates/strategy/bloat.html:158 codex_of_the_damned/templates/strategy/fundamentals.html:281
 msgid "Imbued"
 msgstr "Illuminés"
 
-#: codex_of_the_damned/navigation.py:296
+#: codex_of_the_damned/navigation.py:303
 msgid "Ishtarri"
 msgstr ""
 
-#: codex_of_the_damned/navigation.py:297
+#: codex_of_the_damned/navigation.py:304
 msgid "Kiasyd"
 msgstr ""
 
-#: codex_of_the_damned/navigation.py:298
+#: codex_of_the_damned/navigation.py:305
 msgid "Lasombra"
 msgstr ""
 
-#: codex_of_the_damned/navigation.py:299 codex_of_the_damned/templates/best-cards/clans/malkavian.html:6
+#: codex_of_the_damned/navigation.py:306 codex_of_the_damned/templates/best-cards/clans/malkavian.html:6
 msgid "Malkavian"
 msgstr "Malkavien"
 
-#: codex_of_the_damned/navigation.py:300
+#: codex_of_the_damned/navigation.py:307
 msgid "Nosferatu"
 msgstr ""
 
-#: codex_of_the_damned/navigation.py:301
+#: codex_of_the_damned/navigation.py:308
 msgid "Ravnos"
 msgstr ""
 
-#: codex_of_the_damned/navigation.py:302
+#: codex_of_the_damned/navigation.py:309
 msgid "Salubri"
 msgstr ""
 
-#: codex_of_the_damned/navigation.py:303 codex_of_the_damned/templates/best-cards/clans/toreador.html:6
+#: codex_of_the_damned/navigation.py:310 codex_of_the_damned/templates/best-cards/clans/toreador.html:6
 msgid "Toreador"
 msgstr "Toréador"
 
-#: codex_of_the_damned/navigation.py:304
+#: codex_of_the_damned/navigation.py:311
 msgid "Tremere"
 msgstr ""
 
-#: codex_of_the_damned/navigation.py:305 codex_of_the_damned/templates/best-cards/clans/true-brujah.html:6
+#: codex_of_the_damned/navigation.py:312 codex_of_the_damned/templates/best-cards/clans/true-brujah.html:6
 msgid "True Brujah"
 msgstr "Brujah Véritables"
 
-#: codex_of_the_damned/navigation.py:306
+#: codex_of_the_damned/navigation.py:313
 msgid "Tzimisce"
 msgstr ""
 
-#: codex_of_the_damned/navigation.py:307
+#: codex_of_the_damned/navigation.py:314
 msgid "Ventrue"
 msgstr ""
 
-#: codex_of_the_damned/navigation.py:312
+#: codex_of_the_damned/navigation.py:319
 msgid "Deck Search"
 msgstr "Recherche de Deck"
 
-#: codex_of_the_damned/navigation.py:313
+#: codex_of_the_damned/navigation.py:320
 msgid "Card Search"
 msgstr "Recherche de Carte"
 
@@ -371,11 +385,11 @@ msgstr "Le forum de Boardgame Geek"
 msgid "The rec.games.trading-cards.jyhad Google Group"
 msgstr "Le groupe Google rec.games.trading-cards.jyhad"
 
-#: codex_of_the_damned/templates/deck-search.html:21
+#: codex_of_the_damned/templates/deck-search.html:24
 msgid "Deck Search"
 msgstr "Recherche de Deck"
 
-#: codex_of_the_damned/templates/deck-search.html:24
+#: codex_of_the_damned/templates/deck-search.html:27
 #, python-format
 msgid ""
 "This is an interactive interface to the %(twda)s provided by VEKN. Type a card name to search all winning deck with "
@@ -384,7 +398,7 @@ msgstr ""
 "Ceci est une interface interactive pour la %(twda)s fournie par VEKN. Entrez un nom de carte pour rechercher tous les"
 " decks gagnants qui la contiennent depuis 2008."
 
-#: codex_of_the_damned/templates/deck-search.html:57
+#: codex_of_the_damned/templates/deck-search.html:60
 msgid "Comments"
 msgstr "Commentaires"
 
@@ -408,15 +422,15 @@ msgstr "guide de Brett S."
 #, python-format
 msgid ""
 "If you are a new player, consult %(brett_s_guide)s to learn the game before digging deeper. The official rule can be "
-"found on the %(vekn_website)s. The official %(players_guide)s is available in PDF format at DriveThruRPG."
+"found on the %(bcp_s_website)s. The official %(players_guide)s is available in PDF format at DriveThruRPG."
 msgstr ""
 "Si vous êtes un nouveau joueur, consultez le %(brett_s_guide)s pour apprendre le jeu avant d'aller plus loin. Les "
-"règles officielles sont sur le %(vekn_website)s. Le %(players_guide)s officiel est disponible en PDF sur "
+"règles officielles sont sur le %(bcp_s_website)s. Le %(players_guide)s officiel est disponible en PDF sur "
 "DriveThruRPG."
 
 #: codex_of_the_damned/templates/index.html:20
-msgid "VEKN website"
-msgstr "site web de VEKN"
+msgid "BCP's website"
+msgstr "site web de BCP"
 
 #: codex_of_the_damned/templates/index.html:21
 msgid "Player's Guide"
@@ -10313,62 +10327,100 @@ msgid "This section explores <strong>Vampire: the Eternal Struggle</strong> stra
 msgstr "Cette section explore la stratégie de <strong>Vampire: the Eternal Struggle</strong> en détail."
 
 #: codex_of_the_damned/templates/strategy/index.html:9
+msgid ""
+"The <strong>Basic Strategy</strong> section explains everything one needs to know to reach tournament-level play. The"
+" <strong>Advanced Strategy</strong> section is destined to seasoned players: the articles are contributions written "
+"by prominent players all over the world."
+msgstr ""
+"La section <strong>Stratégie élémentaire</strong> explique tout ce qu'il faut savoir pour atteindre un niveau de jeu "
+"de tournoi. La section <strong>Stratégie avancée</strong> est destinée aux joueurs accomplis : les articles sont des "
+"contributions écrites par des joueurs de premier rang du monde entier."
+
+#: codex_of_the_damned/templates/strategy/index.html:15
+msgid "Basic Strategy"
+msgstr "Stratégie élémentaire"
+
+#: codex_of_the_damned/templates/strategy/index.html:17
 msgid "gives general tips and advices."
 msgstr "donne des astuces et des conseils généraux"
 
-#: codex_of_the_damned/templates/strategy/index.html:10
+#: codex_of_the_damned/templates/strategy/index.html:18
 msgid "explains combat in detail."
 msgstr "explique le combat en détail"
 
-#: codex_of_the_damned/templates/strategy/index.html:11
+#: codex_of_the_damned/templates/strategy/index.html:19
 msgid "details the different strategies to gain pool during a game."
 msgstr "détaille les différentes stratégies permettant de regagner de la réserve d'influence pendant une partie."
 
-#: codex_of_the_damned/templates/strategy/index.html:12
+#: codex_of_the_damned/templates/strategy/index.html:20
 msgid "gives some tools toward deck building."
 msgstr "donne des techniques pour construire son propre deck."
 
-#: codex_of_the_damned/templates/strategy/index.html:13
+#: codex_of_the_damned/templates/strategy/index.html:21
 msgid "is an introduction to the different deck archetypes."
 msgstr "est une introduction aux différents archétypes de decks."
 
-#: codex_of_the_damned/templates/strategy/index.html:14
+#: codex_of_the_damned/templates/strategy/index.html:22
 msgid "presents negociation strategies and tips."
 msgstr "présente les stratégies et astuces de négociation."
 
-#: codex_of_the_damned/templates/strategy/index.html:16
-msgid "Black Chantry Sabbat pre-constructed decks guides"
-msgstr "Guides de jeu des decks préconstruits Sabbat de Black Chantry"
+#: codex_of_the_damned/templates/strategy/index.html:24
+msgid "Advanced Strategy"
+msgstr "Stratégies avancée"
 
-#: codex_of_the_damned/templates/strategy/index.html:23
-msgid "Black Chantry \"First Blood\" pre-constructed decks guides"
-msgstr "Guides de jeu des decks préconstruits \"Premier Sang\" de Black Chantry"
+#: codex_of_the_damned/templates/strategy/index.html:26
+msgid "by Mark Loughman"
+msgstr "de Mark Loughman"
 
-#: codex_of_the_damned/templates/strategy/index.html:25
-msgid "Black Chantry released official guides for the First Blood decks series:"
-msgstr "Black Chantry a publié des guides officiels pour la série de decks Premier Sang :"
+#: codex_of_the_damned/templates/strategy/index.html:27
+msgid "by Rudolf Scholz"
+msgstr "de Rudolf Scholz"
 
 #: codex_of_the_damned/templates/strategy/index.html:29
+msgid "Black Chantry pre-constructed decks guides"
+msgstr "Guides de jeu des decks préconstruits Black Chantry"
+
+#: codex_of_the_damned/templates/strategy/index.html:36
 msgid "First Blood: Ventrue"
 msgstr "Premier Sang : Ventrue"
 
-#: codex_of_the_damned/templates/strategy/index.html:32
+#: codex_of_the_damned/templates/strategy/index.html:39
 msgid "First Blood: Malkavian"
 msgstr "Premier Sang : Malkavien"
 
-#: codex_of_the_damned/templates/strategy/index.html:35
+#: codex_of_the_damned/templates/strategy/index.html:42
 msgid "First Blood: Nosferatu"
 msgstr "Premier Sang : Nosferatu"
 
-#: codex_of_the_damned/templates/strategy/index.html:38
+#: codex_of_the_damned/templates/strategy/index.html:45
 msgid "First Blood: Toreador"
 msgstr "Premier Sang : Toréador"
 
-#: codex_of_the_damned/templates/strategy/index.html:41
+#: codex_of_the_damned/templates/strategy/index.html:48
 msgid "First Blood: Tremere"
 msgstr "Premier Sang : Tremere"
 
-#: codex_of_the_damned/templates/strategy/index.html:46
+#: codex_of_the_damned/templates/strategy/index.html:51
+msgid "V5: Ventrue"
+msgstr ""
+
+#: codex_of_the_damned/templates/strategy/index.html:54
+msgid "V5: Malkavian"
+msgstr "V5: Malkavien"
+
+#: codex_of_the_damned/templates/strategy/index.html:57
+msgid "V5: Nosferatu"
+msgstr ""
+
+#: codex_of_the_damned/templates/strategy/index.html:60
+msgid "V5: Toreador"
+msgstr "V5: Toréador"
+
+#: codex_of_the_damned/templates/strategy/index.html:63
+msgid "V5: Tremere"
+msgstr ""
+
+#: codex_of_the_damned/templates/strategy/index.html:68
 msgid "All rights reserved."
 msgstr "Tous droits réservés."
 
@@ -10681,6 +10733,757 @@ msgstr ""
 "situation à trois ou cinq joueurs : si le coup de grâce fonctionne, vous revenez à un nombre pair et à une situation "
 "favorable. S'il échoue, vous restez sur un nombre impair de joueurs en ayant mis une grande pression sur la proie. En"
 " général, cela signifie que la pression va revenir en force contre vous au prochain tour de table. </p>"
+
+#: codex_of_the_damned/templates/strategy/articles/playing-montano-baltimore-purge.html:10
+msgid "By Rudolf Scholz"
+msgstr "de Rudolf Scholz"
+
+#: codex_of_the_damned/templates/strategy/articles/playing-montano-baltimore-purge.html:15
+#, python-format
+msgid ""
+"Rudolf Scholz has been playing V:tES since 2006 and became Germany's National Coordinator in 2015. He sits in the "
+"VEKN Hall of Fame with 11 tournament victories, and has been three time Danish Champion, in 2012, 2013 and 2018. His "
+"favorite decks are Montano Baltimore Purge and %(anson)s Tap-n-Bleed."
+msgstr ""
+"Rudolf Scholz joue à V: tES depuis 2006 et est devenu le coordinateur national d'Allemagne en 2015. Il siège au VEKN "
+"Hall of Fame avec 11 victoires en tournoi, et a été trois fois champion du Danemark, en 2012, 2013 et 2018. Ses decks"
+" préférés sont Montano Baltimore Purge et %(anson)s Tap-n-Bleed."
+
+#: codex_of_the_damned/templates/strategy/articles/playing-montano-baltimore-purge.html:33
+#, python-format
+msgid ""
+"Of course, there have been Baltimore Purge decks before the appearance of %(montano)s, e.g. with %(arika)s, "
+"%(stanislava)s or %(ambrosio_luis_monçada)s as star vampires, but in comparison %(montano)s offers better options: he"
+" is a Lasombra %(img_clan_lasombra)s, an 11 cap vampire, he pays one less for Obtenebration %(obt)s cards and, "
+"probably most importantly, can burn 1 blood to give any of his controller’s minions +1 stealth; plus he has superior "
+"Dominate %(DOM)s and Fortitude %(FOR)s. This makes %(montano)s the perfect engine for abusing %(baltimore_purge)s, "
+"%(graverobbing)s and %(mind_rape)s. Since he has access to %(freak_drive)s, he is able to pull off each of these "
+"cards himself in just one turn, and maybe even more effects, e.g. a superior %(govern_the_unaligned)s, a bleed for "
+"%(enkil_cog)s or a vote. It is a blood-thirsty engine, which I personally prefer to feed with the help of "
+"%(heidelberg_castle)s and diablerie."
+msgstr ""
+"Bien sûr, il y a eu des decks Baltimore Purge avant l'apparition de %(montano)s, par ex. avec %(arika)s, "
+"%(stanislava)s ou %(ambrosio_luis_monçada)s comme star, mais en comparaison %(montano)s offre de meilleures options :"
+" il est un Lasombra %(img_clan_lasombra)s, a une capacité de 11, paie un de moins pour les cartes Obtenebration "
+"%(obt)s et, probablement le plus important, peut brûler 1 sang pour donner à l'un des serviteurs de son contrôleur +1"
+" discrétion ; en plus, il a Domination %(DOM)s et Force d'Âme %(FOR)s en supérieur. Cela fait de %(montano)s le "
+"moteur idéal pour abuser de %(baltimore_purge)s, %(graverobbing)s et %(mind_rape)s. Puisqu'il a accès à "
+"%(freak_drive)s, il est capable de jouer chacune de ces cartes lui-même en un seul tour, et peut-être même plus "
+"d'effets, par ex. un %(govern_the_unaligned)s en supérieur, une morsure pour %(enkil_cog)s ou un vote. C'est un "
+"moteur coûteux en sang, que je préfère personnellement alimenter à l'aide d'%(heidelberg_castle)s et de diableries."
+
+#: codex_of_the_damned/templates/strategy/articles/playing-montano-baltimore-purge.html:61
+msgid "Crypt Acceleration"
+msgstr "Accélération de la Crypte"
+
+#: codex_of_the_damned/templates/strategy/articles/playing-montano-baltimore-purge.html:63
+#, python-format
+msgid ""
+"In my opinion, it is quite important to make %(montano)s enter the ready region in round 2 of a game: The fewer the "
+"number of enemies’ minions, the less they can act or react. You hope to get some kind of setup done before actually "
+"starting the « show ». To achieve this you have to rely on a high number of crypt acceleration cards, especially on "
+"%(zillah_s_valley)s. Yet a deck with a high number of Master cards that wants to play a lot of action cards and "
+"modifiers tends to encounter problems regarding the card flow. This is why I try to get %(montano)s equipped with a "
+"%(learjet)s as soon as possible."
+msgstr ""
+"À mon avis, il est assez important de faire entrer %(montano)s dans la région disponible lors du deuxième tour d’une "
+"partie : moins il y a de serviteurs ennemis, moins ils peuvent agir ou réagir. Vous espérez faire un peu de mise en "
+"place avant de commencer vraiment le « spectacle ». Pour y parvenir, vous devez compter sur un nombre élevé de cartes"
+" d'accélération de crypte, en particulier %(zillah_s_valley)s. Cependant, un deck avec un nombre élevé de cartes "
+"Maître et qui veut jouer beaucoup de cartes action et de modificateurs a tendance à rencontrer des problèmes quant au"
+" flux de cartes. C'est pourquoi j'essaye d'équiper %(montano)s d'un %(learjet)s dès que possible."
+
+#: codex_of_the_damned/templates/strategy/articles/playing-montano-baltimore-purge.html:82
+#, python-format
+msgid ""
+"Okay, this tremendous « (try to) rule the world » deck is regularly the focus of all players at the table. "
+"%(nocturns)s help to guard %(montano)s, and a few %(deflections)s might keep at least the heaviest bleeds away from "
+"you. Usually, you have to be very fast with doing what you want to do, or an evil fate awaits you instead of your "
+"opponents."
+msgstr ""
+"D'accord, ce type de deck formidable pour « (essayer de) gouverner le monde » attire souvent l'attention de tous les "
+"joueurs à la table. Les %(nocturns)s aident à protéger %(montano)s, et quelques %(deflections)s peuvent éloigner au "
+"moins les morsures les plus hautes. En général, vous devez être très rapide dans ce que vous voulez faire, sinon vous"
+" subirez un sort funeste avant vos adversaires."
+
+#: codex_of_the_damned/templates/strategy/articles/playing-montano-baltimore-purge.html:107
+#, python-format
+msgid ""
+"Here is the list of the deck that won me the <em>Don’t Cry for Pentex</em> Lackey League Finals in 2019. I won’t "
+"discuss here whether specific cards miss or the numbers of specific cards are optimized. A lot of that depends on "
+"taste and the metagame. This deck is both fragile and very powerful, and it is definitely <strong>not a deck for "
+"beginners</strong>. It is especially weak against (stealth) rush decks, because you run a non-combat star vampire "
+"deck, or any kind of weenie deck, since you cannot control large numbers of vampires via %(baltimore_purge)s. It "
+"helps a lot if there are slow decks with big and « tasty » vampires around, but the deck can be resilient enough to "
+"stop a Predator’s Dementation %(dem)s bleed deck dead in its tracks."
+msgstr ""
+"Voici la liste du deck qui m'a valu la finale de la ligue <em>Don’t Cry for Pentex</em> en 2019. Je ne discuterai pas"
+" ici de savoir si des cartes spécifiques manquent ou si le nombre d'exemplaires de chaque carte est optimisé. Cela "
+"dépend en grande partie du goût et du meta-game. Ce deck est à la fois fragile et très puissant, et ce n'est "
+"certainement <strong>pas un deck pour débutant</strong>. Il est particulièrement faible contre les decks rush (avec "
+"discrétion), car vous jouez un deck de vampire star non combattant, ou tout autre type de deck weenie, puisque vous "
+"ne pouvez pas contrôler un grand nombre de vampires via %(baltimore_purge)s. Cela aide beaucoup s'il y a des decks "
+"lents avec de gros vampires « juteux », mais le deck peut être assez résistant pour arrêter net un deck de morsure "
+"Dementation %(dem)s d'un Predator."
+
+#: codex_of_the_damned/templates/strategy/articles/playing-montano-baltimore-purge.html:120
+msgid ""
+"Obviously, it makes a difference if someone knows about your deck’s archetype and thus about its evil intentions. You"
+" should always try to talk if necessary, since there will be other decks as evil as yours at the table, and the mark "
+"of being the table threat is a matter of perception. Don’t boss around."
+msgstr ""
+"Évidemment, cela fait une différence si quelqu'un connaît l'archétype de votre deck et donc ses funestes intentions. "
+"Vous devriez toujours essayer de parler si nécessaire, car il y aura d'autres decks aussi pénibles que le vôtre à la "
+"table, et le fait d'être la menace à la table n'est qu'une question de perception. Ne jouez pas les petits chefs."
+
+#: codex_of_the_damned/templates/strategy/articles/playing-montano-baltimore-purge.html:127
+#, python-format
+msgid ""
+"In case someone tries to interact with you, do so, if it makes at least some sense. If you play your first "
+"%(baltimore_purge)s, cross-table buddies will ask if you are going to harm their vampires even more or they might "
+"even ask for a torpor rescue. Usually you have to decline both, since you do not have spare action, but you could "
+"generously leave them the choice of which vampire will be torporised by the %(baltimore_purge)s if they controlled "
+"more than one vampire. Having a friend at the table or non-hostile cross-table buddies will make a huge difference. "
+"Depending on the vampires your buddies play, you might have to go for them anyway."
+msgstr ""
+"Si quelqu'un essaie d'interagir avec vous, faites-le, si cela a le moindre sens. Si vous jouez votre première "
+"%(baltimore_purge)s, vos alliés en face vous demanderont de cesser de blesser leurs vampires ou pourraient même "
+"demander une sortie de torpeur. Habituellement, vous devez refuser les deux, car vous n'avez pas d'action disponible,"
+" mais vous pouvez généreusement leur laisser le choix du vampire qui sera envoyé en torpeur par %(baltimore_purge)s "
+"s'il contrôle plus d'un vampire. Avoir un allié à table ou des joueurs en face non hostiles fera une énorme "
+"différence. Selon les vampires que jouent vos alliés, vous devrez peut-être tout de même vous en occuper."
+
+#: codex_of_the_damned/templates/strategy/articles/playing-montano-baltimore-purge.html:138
+msgid ""
+"Later in the game, when your deck has already done some damage to the table, try to make sure the literal card house "
+"falls apart in your favour. Encourage players to resist their predators even though their situation looks helpless. "
+"Offer them half or full VP, and stick to that deal if you can. I know that some players oppose withdrawal deals, but "
+"bear in mind that many of them are tournament legal, for example if you will have 3 VP, you can do whatever you want "
+"with the rest. Some players might try to threaten you by announcing to self-oust if you do or do not do this or that."
+" You should ignore this posture in general."
+msgstr ""
+"Plus tard dans le jeu, lorsque votre deck a déjà fait des dégâts à la table, essayez de vous assurer que le château "
+"de cartes s'écroule en votre faveur. Encouragez les joueurs à résister à leur prédateur même si leur situation semble"
+" perdue. Offrez-leur un demi ou un PV, et respectez cet accord si vous le pouvez. Je sais que certains joueurs "
+"s'opposent aux accords de retrait, mais gardez à l'esprit que beaucoup d'entre eux sont légaux en tournoi, par "
+"exemple si vous avez 3 PV, vous pouvez faire ce que vous voulez avec le reste. Certains joueurs pourraient essayer de"
+" vous menacer en annonçant une auto-élimination si vous faites ou ne faites pas ceci ou cela. Vous devez ignorer "
+"cette posture en général."
+
+#: codex_of_the_damned/templates/strategy/articles/playing-montano-baltimore-purge.html:148
+msgid "How to Win"
+msgstr "Comment gagner"
+
+#: codex_of_the_damned/templates/strategy/articles/playing-montano-baltimore-purge.html:150
+#, python-format
+msgid ""
+"Maybe Montano Baltimore Purge (MBP) can be compared to a rush deck, combined with the high risk, high reward "
+"component of a Baali %(img_clan_baali)s bleed or vote deck. You have to decide where and when to play %(mind_rape)s "
+"and %(baltimore_purge)s. You are going to offset the table balance, and you want to make sure you don’t get ousted "
+"and that any threat to %(montano)s is eliminated."
+msgstr ""
+"Peut-être que Montano Baltimore Purge (MBP) peut être comparé à un deck de rush, combiné au haut rapport "
+"risque/récompense d'un deck morsure ou vote Baali %(img_clan_baali)s. Vous devez décider où et quand jouer "
+"%(mind_rape)s et %(baltimore_purge)s. Vous allez briser l'équilibre de la table et vous voulez vous assurer de ne pas"
+" être éliminé et que toute menace pour %(montano)s est détruite."
+
+#: codex_of_the_damned/templates/strategy/articles/playing-montano-baltimore-purge.html:164
+#, python-format
+msgid ""
+"A nice setup to start the « show » is %(montano)s with a %(learjet)s and a midcap assistant (%(aurora_van_brande)s is"
+" very nice, since she has superior Obtenebration %(OBT)s and both Dominate %(dom)s and Fortitude %(for)s). Try to get"
+" through both a %(baltimore_purge)s and a %(mind_rape)s on a player who already controls 2 (!) vampires, preferably "
+"your Prey or your Predator, thus the mind raped vampire can diablerise someone and burn by the mandatory bloodhunt, "
+"which eliminates two vampires."
+msgstr ""
+"Une bonne configuration pour démarrer le « spectacle » est %(montano)s avec un %(learjet)s et un assistant de moyenne"
+" capacité (%(aurora_van_brande)s est très bien, car elle a Obtenebration en supérieur %(OBT)s et à la fois Domination"
+" %(dom)s et Force d'Âme %(for)s). Essayez de passer à la fois une %(baltimore_purge)s et un %(mind_rape)s sur un "
+"joueur qui contrôle déjà 2 (!) vampires, de préférence votre proie ou votre prédateur, ainsi le vampire volé peut "
+"diabler l'autre et brûler suite à la chasse au sang obligatoire, ce qui élimine deux vampires."
+
+#: codex_of_the_damned/templates/strategy/articles/playing-montano-baltimore-purge.html:179
+#, python-format
+msgid ""
+"Always remember to use the %(learjet)s if you have any cards in hand that do not help you in achieving your goals. "
+"But do not use it just because you can, because then you will run out of cards before you make the GW. Usually, you "
+"don’t get all of the table's VPs, but you don’t have to in order to win."
+msgstr ""
+"N'oubliez pas d'utiliser le %(learjet)s si vous avez des cartes en main qui ne vous aident pas à atteindre vos "
+"objectifs. Mais ne l'utilisez pas simplement parce que vous le pouvez, car vous serez alors à court de cartes avant "
+"la victoire. En général, vous n’obtenez pas tous les PV de la table, mais vous n’êtes pas obligé de le faire pour "
+"gagner."
+
+#: codex_of_the_damned/templates/strategy/articles/playing-montano-baltimore-purge.html:186
+#, python-format
+msgid ""
+"This is a typical scenario: In your unlock phase %(montano)s goes to torpor, and so will every other vampire in the "
+"game of your choosing (well, one per player). If you were able to put a second %(baltimore_purge)s on %(montano)s "
+"with the help of an out-of-turn action provided by %(enkil_cog)s, the table might already be at your disposal. Now "
+"everything depends a bit on whether you have a %(heidelberg_castle)s in play and if you have %(freak_drive)s and "
+"%(graverobbing)s in hand."
+msgstr ""
+"C'est un scénario typique : dans votre phase de redressement %(montano)s va en torpeur, de même que tous les autres "
+"vampires dans le jeu de votre choix (enfin, un par joueur). Si vous avez pu mettre une deuxième %(baltimore_purge)s "
+"sur %(montano)s à l'aide d'une action hors tour fournie par %(enkil_cog)s, la table est peut-être déjà à vous. "
+"Maintenant, tout dépend un peu si vous avez un %(heidelberg_castle)s en jeu et si vous avez %(freak_drive)s et "
+"%(graverobbing)s en main."
+
+#: codex_of_the_damned/templates/strategy/articles/playing-montano-baltimore-purge.html:203
+msgid "Tips & Tricks"
+msgstr "Trucs & Astuces"
+
+#: codex_of_the_damned/templates/strategy/articles/playing-montano-baltimore-purge.html:204
+#, python-format
+msgid ""
+"<ul> <li>Don’t forget to take control of the vampire with %(mind_rape)s.</li> <li> The assistant vampire should "
+"rescue %(montano)s to make sure that he can take the maximum number of actions. </li> <li>%(montano)s's stealth "
+"providing special works even while he is in torpor.</li> <li> Diablerize as many vampires as you can, or steal them "
+"with %(graverobbing)s. The vampire with %(mind_rape)s should preferably die during a bloodhunt referendum, and if it "
+"is a vampire with Fortitude %(for)s, he might even bring more destruction to your opponents before doing so. </li> "
+"<li> Cards you should <strong>never discard</strong> unless you are sure about the other decks at the table: "
+"%(shadow_body)s (Combat Ends), %(deflection)s (against bleeds) and %(nocturn)s (against rushes and bounced bleeds). "
+"</li> <li> The timing of the additional action with %(enkil_cog)s can be tricky: if being unlocked makes %(montano)s "
+"a target, let him act in your Prey’s turn. The same is true if another vampire at the table might play and contest "
+"%(enkil_cog)s himself, which might spoil the whole game for you. If you can afford it and want to keep people "
+"guessing what your additional action might be, wait until the end of your Predator’s turn – but remember that he or "
+"she might take actions afterwards. And bear in mind that you could play %(sudden_reversal)s on a "
+"%(direct_intervention)s while acting out of turn. </li> </ul>"
+msgstr ""
+"<ul> <li>N'oubliez pas de prendre le contrôle du vampire avec %(mind_rape)s. </li> <li>Le vampire assistant doit "
+"sauver %(montano)s pour lui permettre d'effectuer le maximum d'actions. </li> <li>L'aptitude de %(montano)s à fournir"
+" de la discrétion fonctionne même lorsqu'il est en torpeur. </li> <li>Diablez autant de vampires que vous le pouvez "
+"ou volez-les avec %(graverobbing)s. Le vampire avec %(mind_rape)s devrait de préférence mourir lors d'un référendum "
+"de chasse au sang et, s'il s'agit d'un vampire avec Fortitude %(for)s, il pourrait même infliger plus de dégâts à vos"
+" adversaires avant de le faire. </li> <li>Cartes à <strong>ne jamais défausser</strong> à moins d'être sûr des autres"
+" decks à la table : %(shadow_body)s (Combat Ends), %(deflection)s (contre les morsures) et %(nocturn)s (contre les "
+"rushs et les rebonds de morsure). </li> <li>Le timing de l'action supplémentaire avec %(enkil_cog)s peut être délicat"
+" : si le redressement fait de %(montano)s une cible, faites-le agir au tour de votre proie. La même chose est vraie "
+"si un autre vampire à la table peut jouer et contester %(enkil_cog)s lui-même, ce qui pourrait gâcher votre jeu. Si "
+"vous pouvez vous le permettre et que vous voulez laisser les gens dans le noir en ce qui concerne votre action "
+"supplémentaire, attendez la fin du tour de votre prédateur - mais rappelez-vous qu'il ou elle peut toujours agir "
+"après. Et gardez à l'esprit que vous pouvez jouer %(sudden_reversal)s sur une %(direct_intervention)s lorsque vous "
+"agissez hors de votre tour. </li> </ul>"
+
+#: codex_of_the_damned/templates/strategy/articles/playing-montano-baltimore-purge.html:246
+#, python-format
+msgid ""
+"Gaining pool is one of the bigger issues of MBP, which is why some players add %(golconda)s or %(villein)s to their "
+"%(montano)s deck. %(govern)s down is highly recommended, and an %(ancient_influence)s might make your day, especially"
+" when your prey has no more ready vampire. %(reins_of_power)s is seen here and there, but %(political_stranglehold)s "
+"looks more reliable. Ousting your first prey is highly recommended. Always be on guard: a bleed bounced to you or a "
+"%(mind_numb)s on %(montano)s could already be fatal."
+msgstr ""
+"Gagner du pool est l'un des plus gros problèmes de MBP, c'est pourquoi certains joueurs ajoutent %(golconda)s ou "
+"%(villein)s à leur deck %(montano)s. %(govern)s en supérieur est fortement recommandé, et une %(ancient_influence)s "
+"peut être radicale, surtout lorsque votre proie n'a plus de vampire disponible. %(reins_of_power)s est vu ici et là, "
+"mais %(political_stranglehold)s semble plus fiable. Il est fortement recommandé d'éliminer votre première proie. "
+"Soyez toujours sur vos gardes : une morsure qui vous a été renvoyée ou un %(mind_numb)s sur %(montano)s pourrait être"
+" fatal."
+
+#: codex_of_the_damned/templates/strategy/articles/playing-montano-baltimore-purge.html:264
+msgid "Game Example"
+msgstr "Exemple de jeu"
+
+#: codex_of_the_damned/templates/strategy/articles/playing-montano-baltimore-purge.html:266
+msgid ""
+"Now please take a look at my report of the finals where the above-mentioned decklist together with my decisions (and "
+"the decisions of the fellow players) allowed me to be victorious."
+msgstr ""
+"Jetez maintenant un œil à mon rapport de la finale où la liste de deck mentionnée ci-dessus, ainsi que mes décisions "
+"(et les décisions des autres joueurs), m'ont permis de remporter la victoire."
+
+#: codex_of_the_damned/templates/strategy/articles/playing-montano-baltimore-purge.html:272
+msgid "Don’t Cry for Pentex Finals – 2019."
+msgstr "Finale Don’t Cry for Pentex - 2019."
+
+#: codex_of_the_damned/templates/strategy/articles/playing-montano-baltimore-purge.html:274
+#, python-format
+msgid ""
+"Seating and starting player position were random, so I had only the double-edged advantage of being top seat. My "
+"starting hand shows useful cards and two %(zillah_s_valley)s, both of which \"ignite\". At the end of the second "
+"round (!) %(montano)s arrives and can enter the scene at the beginning of the third round, which also gives me a "
+"%(heidelberg_castle)s, meeting the following resistance:"
+msgstr ""
+"Les places et la position de premier joueur étaient aléatoires, donc je n'avais que l'avantage à double tranchant "
+"d'être premier au classement. Ma main de départ a des cartes utiles et deux %(zillah_s_valley)s, qui passent. A la "
+"fin du deuxième tour (!) %(montano)s arrive et peut entrer en scène au début du troisième tour, qui me donne "
+"également un %(heidelberg_castle)s, rencontrant la résistance suivante :"
+
+#: codex_of_the_damned/templates/strategy/articles/playing-montano-baltimore-purge.html:349
+#, python-format
+msgid ""
+"Without %(freak_drives)s and stealth worth mentioning, I play a %(mind_rape)s on %(la_viuda_blanca)s. Successfully. I"
+" pull out a %(freak_drive)s and decide to make a bleed because I have %(enkil_cog)s on hand. Get blocked. Get "
+"%(kassiym_malikhair)s out to assist %(montano)s. This brings me to 9 pool."
+msgstr ""
+"Sans %(freak_drives)s et discrétion notable, je joue un %(mind_rape)s sur %(la_viuda_blanca)s. Avec succès. Je pioche"
+" un %(freak_drive)s et décide de faire une morsure car j'ai %(enkil_cog)s en main. Je suis bloqué. Je sortir "
+"%(kassiym_malikhair)s pour aider %(montano)s. Cela m'amène à 9 d'influence."
+
+#: codex_of_the_damned/templates/strategy/articles/playing-montano-baltimore-purge.html:440
+#, python-format
+msgid ""
+"I need pool, but no pool gain is in sight yet, and I am accordingly worried about being bled by direct bleeds or "
+"bounces. I can play %(enkil_cog)s, %(the_signet_of_king_saul)s and %(learjet)s, then the machinery stops again. "
+"%(la_viuda)s has to leave her blood to %(montano)s. A %(nocturn)s and %(kassiym)s make up the defense. I am at 7 "
+"pool. %(heart_of_nizchetus)s for Martin. Diogo plays %(mind_numb)s on %(johannes_castelein)s (lucky me), bleeds and "
+"continues to build up. Hellgie brings %(mustafa_the_heir)s into play. I hardly remember the details of the 5th round."
+" %(the_capuchin)s appears, with Martin a third %(AUS)s Weenie and %(channel_10)s (that can become something ...), "
+"Diogo comes on 4 vampires and plays %(mind_numb)s on %(mustafa)s. Hellgie cannot do much."
+msgstr ""
+"J'ai besoin d'influence, mais aucun gain d'influence n'est encore en vue, et je m'inquiète des morsures directes ou "
+"des rebonds. J'arrive à jouer %(enkil_cog)s, %(the_signet_of_king_saul)s et %(learjet)s, puis la machine s'arrête à "
+"nouveau. %(la_viuda)s doit laisser son sang à %(montano)s. Un %(nocturn)s et %(kassiym)s constituent la défense. Je "
+"suis à 7 d'influence. %(heart_of_nizchetus)s pour Martin. Diogo joue %(mind_numb)s sur %(johannes_castelein)s (tant "
+"mieux pour moi), mord et continue de construire. Hellgie met en jeu %(mustafa_the_heir)s. Je me souviens à peine des "
+"détails du 5e tour. %(the_capuchin)s apparaît, un troisième %(AUS)s Weenie pour Martin ainsi que %(channel_10)s (qui "
+"peut devenir un souci...), Diogo arrive à 4 vampires et joue %(mind_numb)s sur %(mustafa)s. Hellgie ne peut pas faire"
+" grand-chose."
+
+#: codex_of_the_damned/templates/strategy/articles/playing-montano-baltimore-purge.html:572
+#, python-format
+msgid ""
+"Time for %(baltimore_purge)s. %(freak_drive)s. %(mind_rape)s on %(johannes_castelein)s. (Hellgie: You're ousting me. "
+"– Sorry, it is a complicated situation with tough decisions.) Another %(freak_drive)s, so I can act in Slavon's turn "
+"as well: it's going to be a %(mind_rape)s on %(gracis)s. Slaven's %(capuchin)s plays an %(emerald_legionnaire)s. "
+"%(freak_drive)s. Afterwards, %(capuchin)s bleeds (on Martin's suggestion that he should not hand %(capuchin)s over to"
+" me unlocked in the case of %(graverobbing)s), the bleed gets bounced to me by %(my_enemy_s_enemy)s (well, great "
+"...). Fortunately, I have a %(deflection)s at hand. No block, bleed for 3 thanks to %(bonding)s. Bounce to Diogo, and"
+" now the big question: to whom will he bounce? To Hellgie, who is then on 3 pool. Diogo ousts Hellgie in his turn "
+"which takes %(anarch_troublemaker)s out of the game."
+msgstr ""
+"C'est l'heure de %(baltimore_purge)s. %(freak_drive)s. %(mind_rape)s sur %(johannes_castelein)s. (Hellgie: Tu "
+"m'élimines. - Désolé, c'est une situation compliquée avec des décisions difficiles.) Un autre %(freak_drive)s, donc "
+"je peux aussi agir au tour de Slavon : ce sera un %(mind_rape)s sur %(gracis)s. Le %(capuchin)s de Slaven joue un "
+"%(emerald_legionnaire)s. %(freak_drive)s. Ensuite, %(capuchin)s mord (sur la suggestion de Martin de ne pas me "
+"laisser un %(capuchin)s redressé en cas de %(graverobbing)s), la morsure m'est renvoyée par %(my_enemy_s_enemy)s "
+"(bon, super...). Heureusement, j'ai une %(deflection)s en main. Aucun blocage, morsure à 3 grâce à %(bonding)s. Je "
+"renvoie sur Diogo, et maintenant la grande question : vers qui va-t-il rebondir ? Sur Hellgie, qui descend alors à 3 "
+"d'influence. Diogo élimine Hellgie à son tour, ce qui retire %(anarch_troublemaker)s de la partie."
+
+#: codex_of_the_damned/templates/strategy/articles/playing-montano-baltimore-purge.html:696
+#, python-format
+msgid ""
+"The show begins. %(montano)s takes %(capuchin)s, %(elizabeth)s and %(ranjan)s with him. %(dreams_of_the_sphinx)s, two"
+" additional cards. %(kassiym)s rescues %(montano)s from torpor. %(freak_drive)s. %(montano)s plays %(graverobbing)s "
+"superior on %(capuchin)s. +2 hand size, so 11 cards in hand. %(freak_drive)s. %(kassiym)s plays "
+"%(ancient_influence)s, passes, finally some pool buffer. %(gracis)s plays %(banishment)s on one of Martin's two ready"
+" %(AUS)s weenies, passes, then blood to %(montano)s. Thanks to %(seduction)s, %(montano)s diablerises Martin's "
+"%(elizabeth)s and grabs the %(heart_of_nizchetus)s."
+msgstr ""
+"Le spectacle commence. %(montano)s emmène %(capuchin)s, %(elizabeth)s et %(ranjan)s avec lui. "
+"%(dreams_of_the_sphinx)s, deux cartes supplémentaires. %(kassiym)s sort %(montano)s de torpeur. %(freak_drive)s. "
+"%(montano)s joue %(graverobbing)s supérieur sur %(capuchin)s. +2 de taille de main, donc 11 cartes en main. "
+"%(freak_drive)s. %(kassiym)s joue %(ancient_influence)s, passe, enfin un peu d'influence. %(gracis)s joue "
+"%(banishment)s sur l'un des deux weenies %(AUS)s redressés de Martin, passe, puis donne son sang à %(montano)s. Grâce"
+" à %(seduction)s, %(montano)s diable l'%(elizabeth)s de Martin et s'empare du %(heart_of_nizchetus)s."
+
+#: codex_of_the_damned/templates/strategy/articles/playing-montano-baltimore-purge.html:722
+#, python-format
+msgid ""
+"What follows now, is a brutal wearing down of the table by %(baltimore_purge)s and diablerie actions. %(montano)s's "
+"special of paying one blood to give one of my own minions +1 stealth proves to be an additional breaker thanks to the"
+" \"infinite supply\" of blood."
+msgstr ""
+"Ce qui suit maintenant, est une destruction brutale de la table par %(baltimore_purge)s et des actions de diablerie. "
+"L'aptitude de %(montano)s de payer un sang pour donner à l'un de mes propres serviteurs +1 discrétion s'avère être un"
+" atout supplémentaire grâce à « l'approvisionnement infini » en sang."
+
+#: codex_of_the_damned/templates/strategy/articles/playing-montano-baltimore-purge.html:732
+#, python-format
+msgid ""
+"Without hurry I oust Slaven two or three rounds later. Diogo shows spirit and continues to play full forward, which "
+"grants me a new and shiny %(gracis)s via %(graverobbing)s. Of course I try to oust Martin, but he bounces twice and "
+"eliminates Diogo. German-German heads up. I have no library left, and there are still 30 minutes left on the clock."
+msgstr ""
+"Sans me presser, j'élimine Slaven deux ou trois tours plus tard. Diogo fait preuve de vaillance et continue de jouer "
+"en avant, ce qui me donne un %(gracis)s tout neuf via %(graverobbing)s. Bien sûr, j'essaye d'éliminer Martin, mais il"
+" rebondit deux fois et élimine Diogo. Duel Allemand-Allemand. Je n'ai plus de bibliothèque et il reste encore 30 "
+"minutes à l'horloge."
+
+#: codex_of_the_damned/templates/strategy/articles/playing-montano-baltimore-purge.html:743
+#, python-format
+msgid ""
+"I have 5 vampires, %(montano)s, %(kassiym)s and %(ignacio)s as well as %(capuchin)s and %(gracis)s, the big ones also"
+" with a lot of blood. And yet I'm afraid I'll run into the wall now: 3 Auspex-Weenies supported by %(channel_10)s and"
+" also %(krcg_news_radio)s, and be \"shot down\" by guns or aggravated damage and lose the game. But it turns out "
+"differently, the fights are only \"Hand Strike, one\". So it's a constant race, a struggle for Edge and %(the_rack)s,"
+" also changes %(the_coven)s happy back and forth. Finally, a bleed for 3 by %(montano)s ends the game, as the last "
+"blocker is overcome thanks to a %(blanket_of_night)s by %(kassiym)s."
+msgstr ""
+"J'ai 5 vampires, %(montano)s, %(kassiym)s et %(ignacio)s ainsi que %(capuchin)s et %(gracis)s, les gros ont aussi "
+"beaucoup de sang. Et pourtant j'ai peur de me heurter au mur maintenant : 3 Auspex-Weenies soutenus par "
+"%(channel_10)s et aussi %(krcg_news_radio)s, et être \"abattu\" par des armes ou des dégâts aggravés et perdre la "
+"partie. Mais cela tourne autrement, les combats ne sont que \"Frappes à mains nues pour un\". C'est donc une course "
+"constante, une lutte pour l'avantage et %(the_rack)s, ainsi que l'échange constant de %(the_coven)s. Enfin, une "
+"morsure à 3 par %(montano)s met fin à la partie, le dernier bloqueur est passé grâce à un %(blanket_of_night)s par "
+"%(kassiym)s."
+
+#: codex_of_the_damned/templates/strategy/articles/playing-montano-baltimore-purge.html:767
+#, python-format
+msgid ""
+"As you can see, I was lucky enough to be able to act with %(montano)s from turn 3, despite the fact I was the "
+"starting player, but could not take much advantage of it. I could have been ousted by turn 5 or 6 when my Predator "
+"would have been able to take actions or to bounce the bleeds of his Predator to me. This is why I decided to play "
+"%(mind_rape)s on my Predator’s unlocked vampire."
+msgstr ""
+"Comme vous pouvez le constater, j'ai eu la chance de pouvoir jouer avec %(montano)s dès le tour 3, malgré le fait que"
+" j'étais le premier joueur, mais je n'ai pas pu en profiter. J'aurais pu être éliminé au tour 5 ou 6 quand mon "
+"prédateur aurait pu agir ou me renvoyer les morsures de son prédateur. C'est pourquoi j'ai décidé de jouer "
+"%(mind_rape)s sur le vampire redressé de mon prédateur."
+
+#: codex_of_the_damned/templates/strategy/articles/playing-montano-baltimore-purge.html:780
+#, python-format
+msgid ""
+"Turn 7 is a description of a typical turn when all the moving parts happen in the right order. Such a turn might take"
+" up to 20 or even 30 minutes, because of all the choices to make, especially using %(learjet)s or not, and the "
+"actions to take. Afterwards the table balance should have taken a massive shift to your favour, but usually you will "
+"need another turn with %(baltimore_purge)s and %(graverobbing)s and diableries to assure your victory. If you can "
+"pull off a double Purge with the help of %(enkil_cog)s, it is usually game over."
+msgstr ""
+"Le tour 7 est la description d'un tour typique lorsque toutes les pièces se mettent en place comme il faut. Un tel "
+"tour peut prendre jusqu'à 20 ou 30 minutes, en raison de tous les choix à faire, notamment utiliser %(learjet)s ou "
+"non, et des actions à entreprendre. Ensuite, l'équilibre de la table penche normalement énormément en votre faveur, "
+"mais généralement vous aurez besoin d'un autre tour avec %(baltimore_purge)s, %(graverobbing)s et des diableries pour"
+" assurer votre victoire. Si vous pouvez effectuer une double Purge à l'aide d'%(enkil_cog)s, c'est généralement la "
+"fin de la partie."
+
+#: codex_of_the_damned/templates/strategy/articles/playing-montano-baltimore-purge.html:794
+msgid "Tweaks and metagame choices"
+msgstr "Tweaks et choix de méta-jeux"
+
+#: codex_of_the_damned/templates/strategy/articles/playing-montano-baltimore-purge.html:796
+#, python-format
+msgid ""
+"If you do not feel the need for speed to let %(montano)s enter the game by the end of round 2, you get space in the "
+"Master cards section. %(villein)s or %(golconda)s, %(direct_intervention)s or %(dark_influence)s, and "
+"%(monastery_of_shadows)s or %(elysian_fields)s are tempting options. Even %(the_coven)s might be beneficial, since "
+"you want to have blood on the vampires %(montano)s diablerises."
+msgstr ""
+"Si vous ne ressentez pas le besoin de vitesse pour faire sortir %(montano)s au tour 2, vous obtenez de l'espace dans "
+"la section des cartes Maître. %(villein)s ou %(golconda)s, %(direct_intervention)s ou %(dark_influence)s et "
+"%(monastery_of_shadows)s ou %(elysian_fields)s sont des options alléchantes. Même %(the_coven)s pourrait être "
+"bénéfique, puisque vous voulez avoir du sang sur les vampires que %(montano)s diable."
+
+#: codex_of_the_damned/templates/strategy/articles/playing-montano-baltimore-purge.html:813
+#, python-format
+msgid ""
+"You might want to play more than 5 copies of %(baltimore_purge)s. Regarding Political Actions, adding another "
+"%(banishment)s looks good. %(reins_of_power)s is double-edged if you do not manage to have your predators big vamps "
+"in torpor. %(political_stranglehold)s would interact nicely with %(mind_rape)s."
+msgstr ""
+"Vous voudrez peut-être jouer plus de 5 copies de %(baltimore_purge)s. En ce qui concerne les actions politiques, "
+"l'ajout d'un autre %(banishment)s semble bon. %(reins_of_power)s est à double tranchant si vous n'arrivez pas à "
+"mettre les gros vampires de votre prédateur en torpeur. %(political_stranglehold)s se combine bien avec "
+"%(mind_rape)s."
+
+#: codex_of_the_damned/templates/strategy/articles/playing-montano-baltimore-purge.html:826
+#, python-format
+msgid ""
+"%(zaire_river_ferry)s is a suggestion by famous <em>Martin Schuhmacher</em> I have not given a try so far. Reaction "
+"cards like %(obedience)s, %(on_the_qui_vive)s and more %(deflections)s can come in handy depending on the situation."
+msgstr ""
+"%(zaire_river_ferry)s est une suggestion du célèbre <em>Martin Schuhmacher</em> que je n'ai pas encore essayé. Les "
+"cartes de réaction comme %(obedience)s, %(on_the_qui_vive)s et plus de %(deflections)s, peuvent être utiles selon la "
+"situation."
+
+#: codex_of_the_damned/templates/strategy/articles/playing-montano-baltimore-purge.html:838
+#, python-format
+msgid ""
+"I consider Montano Baltimore Purge (MBP) to be a viable deck choice for larger tournaments, since you usually "
+"encounter a wider spread of decks and more decks which build up a few rounds. Big vampires are the “fish” you catch "
+"best, even wall stars since they are helpless once in torpor. I made especially good experiences with "
+"%(the_capuchin)s played by my Prey. The more combat you expect, the less MBP becomes appealing if you are looking for"
+" a somehow safe road to success."
+msgstr ""
+"Je considère que Montano Baltimore Purge (MBP) est un choix de deck viable pour les gros tournois, car vous "
+"rencontrez généralement un plus grand nombre de decks et plus de decks qui s'installent sur quelques tours. Les gros "
+"vampires sont les « poissons » que vous ferrez le mieux, même les stars mur puisqu'ils sont impuissants une fois en "
+"torpeur. J'ai eu de très bonnes expériences avec %(the_capuchin)s joué par ma proie. Plus vous vous attendez à du "
+"combat, moins MBP devient attrayant si vous cherchez un chemin sûr vers la victoire."
+
+#: codex_of_the_damned/templates/strategy/articles/the-game-of-the-game.html:6
+msgid "By Mark Loughman"
+msgstr "Par Mark Loughman"
+
+#: codex_of_the_damned/templates/strategy/articles/the-game-of-the-game.html:11
+#, python-format
+msgid ""
+"Mark Loughman has been playing V:tES since day one, is highly seated in the VEKN Hall of Fame with 25 tournament "
+"victories, and became US National Coordinator in 2019. He organises 4 tournaments per year and playtests new "
+"extensions. His favorite decks are Tremere %(img_clan_tremere)s and Nosferatu %(img_clan_nosferatu)s Toolboxes."
+msgstr ""
+"Mark Loughman joue à V: tES depuis le premier jour, occupe une place de choix dans le VEKN Hall of Fame avec 25 "
+"victoires en tournoi, et est devenu coordinateur national des États-Unis en 2019. Il organise 4 tournois par an et "
+"teste les nouvelles extensions. Ses decks préférés sont les toolbox Tremere %(img_clan_tremere)s et Nosferatu "
+"%(img_clan_nosferatu)s."
+
+#: codex_of_the_damned/templates/strategy/articles/the-game-of-the-game.html:25
+#: codex_of_the_damned/templates/strategy/articles/the-game-of-the-game.html:166
+msgid "S:CE"
+msgstr "Fin de Combat"
+
+#: codex_of_the_damned/templates/strategy/articles/the-game-of-the-game.html:24
+#, python-format
+msgid ""
+"At a certain level, V:tES is an elaborate game of Paper-Rock-Scissors. Do I have enough stealth to deliver my "
+"payload? Is %(sce)s enough to keep my minions above ground? The rich complexity of the game is what keeps my "
+"interest, but it can also be quite frustrating. I often suggest to new players that once they have the mechanics of "
+"the game down, they should look over the %(twda)s and find a deck that has had success and try building and playing a"
+" version of it. Perhaps start card-for-card, and then modifying it as they start to find their own style of play. "
+"While this can be a useful exercise, sometimes the new player will come back to me frustrated. <em>« How did they win"
+" with this deck? It sucks! »</em> Demonstrably it does not suck, it is in the TWDA. What this does demonstrate is the"
+" effect of the meta-game."
+msgstr ""
+"À un certain niveau, V: tES est un jeu élaboré de Pierre-Papier-Ciseaux. Ai-je assez de discrétion pour envoyer ma "
+"charge utile ? Est-ce qu'une %(sce)s suffit à garder mes serviteurs en vie ? La riche complexité du jeu est ce qui "
+"retient mon intérêt, mais cela peut aussi être assez frustrant. Je suggère souvent aux nouveaux joueurs qu'une fois "
+"qu'ils ont saisi la mécanique du jeu, ils devraient regarder la %(twda)s et trouver un deck qui a marché pour essayer"
+" de construire et de jouer une version de celui-ci. Peut-être commencer avec la liste exacte, puis le modifier au fur"
+" et à mesure qu'ils commencent à trouver leur propre style de jeu. Bien que cela puisse être un exercice utile, le "
+"nouveau joueur revient parfois frustré. <em> «Comment a-t-il gagné avec ce deck ? Ça craint ! »</em> Manifestement ça"
+" ne craint pas, c'est dans la TWDA. Ce que cela démontre, c'est l'effet du meta-game."
+
+#: codex_of_the_damned/templates/strategy/articles/the-game-of-the-game.html:41
+#, python-format
+msgid ""
+"In some regions, 2 stealth is king, in others you cannot hunt without a %(forgotten_labyrinth)s. If you can hone in "
+"on the meta-game, you can make better choices and expect to be more competitive."
+msgstr ""
+"Dans certaines régions, 2 de discrétion est roi, dans d'autres, vous ne pouvez pas chasser sans un "
+"%(forgotten_labyrinth)s. Si vous pouvez saisir le meta-game, vous pouvez faire de meilleurs choix et devenir plus "
+"compétitif."
+
+#: codex_of_the_damned/templates/strategy/articles/the-game-of-the-game.html:49
+msgid "What is the meta-game?"
+msgstr "Qu'est-ce que le meta-game ?"
+
+#: codex_of_the_damned/templates/strategy/articles/the-game-of-the-game.html:51
+msgid ""
+"Most players have a regular play-group. Members of that group will have decks that they play more often than others. "
+"Over time, the Darwinian pressure to compete among one’s peers will lead to modifications to one’s decks or perhaps "
+"entirely new deck designs. This is the first step in the meta-game."
+msgstr ""
+"La plupart des joueurs ont un groupe de jeu régulier. Les membres de ce groupe auront des decks qu'ils joueront plus "
+"souvent que les autres. Au fil du temps, la pression darwinienne pour rivaliser avec ses pairs entraînera des "
+"modifications de ces decks ou peut-être des conceps de decks entièrement nouveaux. C'est la première étape du meta-"
+"game."
+
+#: codex_of_the_damned/templates/strategy/articles/the-game-of-the-game.html:58
+msgid ""
+"It begins with a vision of how to inflict your will on your opponent. <em>« I shall bleed for 3 »</em>, you decide. "
+"Your prey attempts to block. Do you play stealth? Do you begin playing combat cards? The meta-game you are playing in"
+" will often shape this. If your first thought is stealth, then before long your opponents will begin playing more "
+"reaction cards, either intercept or bounce. If they intend to block, they may begin to add more combat cards to "
+"punish your transgressions. As Newton teaches us, for every action, there is a reaction. Your meta-game evolves."
+msgstr ""
+"Cela commence par une vision de la façon d'imposer votre volonté à votre adversaire. <em>« Je vais mordre pour 3 "
+"»</em>, décidez-vous. Votre proie tente de bloquer. Jouez-vous de la discrétion ? Commencez-vous à jouer des cartes "
+"de combat ? Le meta-game avec lequel vous jouez façonnera souvent cela. Si votre premier instinct est la discrétion, "
+"alors vos adversaires commenceront bientôt à jouer plus de cartes de réaction, pour intercepter ou rebondir. S'ils "
+"ont l'intention de bloquer, ils peuvent commencer à ajouter plus de cartes de combat pour punir vos transgressions. "
+"Comme Newton nous l'enseigne, pour chaque action, il y a une réaction. Votre meta-game évolue."
+
+#: codex_of_the_damned/templates/strategy/articles/the-game-of-the-game.html:68
+#, python-format
+msgid ""
+"In general terms, as it seems that successful stealth-bleed decks lead to a response of more intercept. As the meta "
+"becomes more blocky, players will respond with %(the_kiss_of_ra)s and more combat, or huge voting minions who play "
+"several modifiers on each action. Block denial cards like %(daring_the_dawn)s or %(elder_impersonation)s have a place"
+" here. This leads to a much smaller action space, which often allows weenie decks to spawn a swarm of minions. Is "
+"there anything more will-sapping than an !Toreador %(img_clan_toreador_anti)s breed/boon deck with 10 minions and 30 "
+"pool? Heavy combat is also a logical response to big voters. This is by no means a linear development, as hybrid "
+"decks will combine aspects of any of the above. The Toolbox comes out of this evolution. These benefit the most from "
+"a good read of the meta-game, allowing you to cycle from offense to defense as you play your cards. When it works, it"
+" is glorious! When it does not, it can be embarrassing."
+msgstr ""
+"En termes généraux, il semble que les decks furtifs conduisent à une réponse de plus d'interception. Au fur et à "
+"mesure que le meta-game devient plus bloquant, les joueurs répondront avec %(the_kiss_of_ra)s et plus de combats, ou "
+"d'énormes serviteurs qui votent et jouent plusieurs modificateurs à chaque action. Les cartes de déni de bloc comme "
+"%(daring_the_dawn)s ou %(elder_impersonation)s ont leur place ici. Cela conduit à un espace d'action beaucoup plus "
+"restreint, ce qui permet souvent aux decks weenie de générer un essaim de serviteurs. Y a-t-il quelque chose qui sape"
+" plus la volonté qu'un deck !Toreador %(img_clan_toreador_anti)s breed/boon avec 10 serviteurs et 30 d'influence ? Le"
+" combat acharné est également une réponse logique aux gros voteurs. Il ne s'agit en aucun cas d'un développement "
+"linéaire, car les decks hybrides combineront les aspects de plusieurs des éléments précités. Les toolbox sont le "
+"produit de cette évolution. Celles-ci bénéficient le plus d'une bonne lecture du meta-game, vous permettant de passer"
+" de l'attaque à la défense lorsque vous jouez vos cartes. Quand ça marche, c'est glorieux ! Quand ce n'est pas le "
+"cas, cela peut être embarrassant."
+
+#: codex_of_the_damned/templates/strategy/articles/the-game-of-the-game.html:88
+msgid ""
+"The wheel turns. My local playgroup slowly rotated through these permutations from Jyhad through White Wolf assuming "
+"control of the game and establishing a tournament presence. The effects were profound."
+msgstr ""
+"La roue tourne. Mon groupe de jeu local est lentement passé par ces permutations de Jyhad à White Wolf qui a pris le "
+"contrôle du jeu et établi un principe de tournoi. Les effets ont été profonds."
+
+#: codex_of_the_damned/templates/strategy/articles/the-game-of-the-game.html:94
+msgid "The Legionnaire example"
+msgstr "L'exemple du Légionnaire"
+
+#: codex_of_the_damned/templates/strategy/articles/the-game-of-the-game.html:95
+#, python-format
+msgid ""
+"<p> Let’s take a look at a recent addition to the TWDA, the %(emerald_legionnaire)s. The addition of this one card "
+"allowed a previously weak clan to compete at the highest level. During playtest, I had success with a grindy "
+"%(FOR)s%(AUS)s concept that slowly added bleed pressure as %(legionnaires)s accumulated. Once they hit wide release, "
+"other players sought to flood the board with a horde of them to swarm their prey. If we are expecting to face "
+"something like this in an upcoming tournament, how might we prepare for it? </p> <ul> <li><strong>Blocking</strong>. "
+"If they never reach the Ready region, they are no threat.</li> <li><strong>Combat</strong>. Two life, 2 Strength. "
+"%(concealed)s %(magnum)s solves that problem.</li> <li> <strong>Borrowing</strong>. %(entrancement)s can be cycled "
+"for bleed pressure if there are no good targets to steal. Also, %(xeper_sultan_of_lepers)s exists. </li> <li> "
+"<strong>Politics</strong>. %(ancilla_empowerment)s and %(anarchist_uprising)s punish players who swarm the board. "
+"</li> </ul> <p> One needn’t make a new deck just to deal with the possibility of facing this archetype, but one could"
+" make certain to add one of these elements to an existing deck to allow for the ability to counter it. Personally, I "
+"have changed the mix in all of my political decks to include 2 %(ancilla_empowerment)s and 2 %(anarchist_uprising)s, "
+"usually replacing %(kine_resources_contested)s. </p>"
+msgstr ""
+"<p> Jetons un œil à un ajout récent à la TWDA, l'%(emerald_legionnaire)s. L'ajout de cette seule carte a permis à un "
+"clan auparavant faible de concourir au plus haut niveau. Pendant le playtest, j'ai eu des succès avec un concept "
+"d'usure %(FOR)s%(AUS)s qui augmentait lentement la pression de morsure au fur et à mesure que les %(legionnaires)s "
+"s'accumulaient. Une fois disponibles au grand public, d'autres joueurs ont cherché à inonder le plateau d'une horde "
+"d'entre eux pour déborder leur proie. Si nous envisageons de faire face à quelque chose comme ça dans un prochain "
+"tournoi, comment pouvons-nous nous y préparer? </p> <ul> <li><strong>Blocage</strong>. S'ils n'atteignent jamais la "
+"région disponible, ils ne constituent pas une menace. </li> <li><strong>Combat</strong>. Deux de vie, 2 de force. "
+"%(concealed)s %(magnum)s résout ce problème. </li> <li><strong>Vol</strong>. %(entrancement)s peut être cyclé pour "
+"une morsure s'il n'y a pas de bonnes cibles à voler. De plus, %(xeper_sultan_of_lepers)s existe. </li> "
+"<li><strong>Politique</strong>. %(ancilla_empowerment)s et %(anarchist_uprising)s punissent les joueurs qui "
+"coustruisent des essaims. </li> </ul> <p>Il n'est pas nécessaire de créer un nouveau deck juste pour gérer la "
+"possibilité de faire face à cet archétype, mais on peut ajouter l'un de ces éléments à un deck existant pour lui "
+"permettre de le contrer. Personnellement, j'ai changé la liste de tous mes decks politiques pour inclure 2 "
+"%(ancilla_empowerment)s et 2 %(anarchist_uprising)s, remplaçant généralement %(kine_resources_contested)s. </p>"
+
+#: codex_of_the_damned/templates/strategy/articles/the-game-of-the-game.html:98
+msgid "Concealed"
+msgstr ""
+
+#: codex_of_the_damned/templates/strategy/articles/the-game-of-the-game.html:136
+msgid ""
+"With a wider field to play against, local and regional playgroups began to compete with each other. New releases "
+"meant new cards and new combinations that shook things up. The internet allowed for these new ideas to travel "
+"quickly. The pace of change accelerated significantly. What is a Methuselah to do to stay ahead of this curve? That "
+"depends on where you are planning on competing."
+msgstr ""
+"Avec un champ de bataille plus large, les groupes de jeu locaux et régionaux ont commencé à se concurrencer. Les "
+"nouvelles parutions signifiaient de nouvelles cartes et de nouvelles combinaisons qui bouleversaient les choses. "
+"Internet a permis à ces nouvelles idées de voyager rapidement. Le rythme du changement s'est considérablement "
+"accéléré. Comment un Mathusalem peut-il garder une longueur d'avance ? Cela dépend de l'endroit où vous prévoyez de "
+"concourir."
+
+#: codex_of_the_damned/templates/strategy/articles/the-game-of-the-game.html:144
+msgid "Tournaments"
+msgstr "Tournois"
+
+#: codex_of_the_damned/templates/strategy/articles/the-game-of-the-game.html:146
+#, python-format
+msgid ""
+"When preparing for a tournament, it is important to have some idea of who you will be playing against. If it is your "
+"local playgroup, you should have a pretty good idea of the players and their go-to decks. While I always recommend "
+"playing a deck you are comfortable with, your expectations of the other players should give you insight as to whether"
+" to play Deck A or Deck B. If your read on the field does not cause you to switch decks, then it might convince you "
+"to swap a few cards around to help cope with anticipated problems. Adding a %(secure_haven)s to %(arika)s can thwart "
+"a %(tupdog)s."
+msgstr ""
+"Lors de la préparation d'un tournoi, il est important d'avoir une idée de contre qui vous allez jouer. S'il s'agit de"
+" votre groupe de jeu local, vous devriez avoir une assez bonne idée des joueurs et de leurs decks préférés. Bien que "
+"je recommande toujours de jouer un deck avec lequel vous êtes à l'aise, ce que vous attendez des autres joueurs "
+"devrait vous donner un aperçu de l'intérêt de jouer le Deck A ou le Deck B. Si votre lecture du meta-game ne vous "
+"amène pas à changer de deck, alors elle pourrait vous convaincre d'échanger quelques cartes pour vous aider à faire "
+"face aux problèmes anticipés. L'ajout d'un %(secure_haven)s à %(arika)s peut contrecarrer un %(tupdog)s."
+
+#: codex_of_the_damned/templates/strategy/articles/the-game-of-the-game.html:162
+msgid "Choosing his deck"
+msgstr "Choisir son deck"
+
+#: codex_of_the_damned/templates/strategy/articles/the-game-of-the-game.html:164
+#, python-format
+msgid ""
+"When discussing deck selection, the esteemed <em>Jay Kristoff</em> once told me to pick a deck I don’t mind staring "
+"at for 4-8 hours. We play for enjoyment. If you play a deck simply because it is the ‘best’ deck it will not be as "
+"satisfying when it wins and will be demoralizing when it loses. Instead, play something you will enjoy, but be open "
+"to modifying to fit the anticipated environment. <em>« Do I have enough stealth? »</em> <em>« Will the have "
+"%(grapple)s against my %(sce)s? »</em> If you are unsure, perhaps increase your ability to cycle cards, whether with "
+"%(dreams_of_the_sphinx)s, %(aura_reading)s, or %(lupine_assault)s."
+msgstr ""
+"Lorsqu'on en vient à la sélection de deck, le remarquable <em> Jay Kristoff </em> m'a dit un jour de choisir un deck "
+"qui je pourrai manipuler sans m'en lasser pendant 4 à 8 heures. Nous jouons pour le plaisir. Si vous jouez un deck "
+"simplement parce que c'est le « meilleur »  deck, il ne sera pas aussi satisfaisant quand il gagne et démoralisant "
+"quand il perd. Au lieu de ça, jouez quelque chose que vous apprécierez, mais soyez ouvert à quelques modifications "
+"pour vous adapter à l'environnement. <em>« Ai-je assez de furtivité? »</em> <em>« Est-ce qu'ils auront des "
+"%(grapple)s contre mes %(sce)s ? »</em> Si vous n'êtes pas sûr, améliorez peut-être votre capacité à cycler, que ce "
+"soit avec %(dreams_of_the_sphinx)s, %(aura_reading)s ou %(lupine_assault)s."
+
+#: codex_of_the_damned/templates/strategy/articles/the-game-of-the-game.html:183
+#, python-format
+msgid ""
+"If you are traveling, or are expecting a significant presence of out-of-towners, it might be a good idea to see if "
+"any notable players involved have decks published. While they may not be playing them, this may give you an idea of "
+"their style of play. If they are known for political decks, adding a few more %(delaying_tactics)s might go a long "
+"way. Also, as you play more events you will meet more players. Keeping in contact may allow you some insight as to "
+"what they are seeing."
+msgstr ""
+"Si vous voyagez ou si vous vous attendez à une présence significative de joueurs de l'extérieur, il peut être "
+"judicieux de voir si des joueurs notables impliqués ont publié des decks. Même s'ils ne les jouent pas, cela peut "
+"vous donner une idée de leur style de jeu. S'ils sont connus pour leurs decks politiques, l'ajout de quelques "
+"%(delaying_tactics)s supplémentaires pourrait être très utile. De plus, à mesure que vous prenez part à plus "
+"d'événements, vous rencontrerez plus de joueurs. Rester en contact peut vous donner un aperçu de ce qu'ils prévoient."
+
+#: codex_of_the_damned/templates/strategy/articles/the-game-of-the-game.html:193
+msgid "Style of Play"
+msgstr "Style de jeu"
+
+#: codex_of_the_damned/templates/strategy/articles/the-game-of-the-game.html:195
+#, python-format
+msgid ""
+"Style of play can often drive the meta-game. We play for enjoyment, and while winning feels good, we also want to "
+"enjoy the process. In a tournament environment you will be playing the same deck for several hours, and as such, if "
+"you do not find some aspect of it aesthetically pleasing, you will be less likely to play it, or even stick with "
+"competitive play. Most casual players, in my experience, are driven by some element of the game other than the latest"
+" trends in the %(twda)s, whether it is due to a particular artist or an association with some part of the RPG. My "
+"first deck back in 1994 was a Gangrel/Garou deck that used the vampires to generate Garou and little else. Newark, "
+"Ohio players have a reputation for playing combat decks, perhaps this is where it comes from."
+msgstr ""
+"Le style de jeu influence souvent le meta-game. Nous jouons pour le plaisir, et même si gagner fait du bien, nous "
+"voulons aussi profiter du processus. Dans un environnement de tournoi, vous jouerez le même deck pendant plusieurs "
+"heures et, en tant que tel, si vous ne trouvez pas certains de ses aspects esthétiques, vous serez moins susceptible "
+"de le jouer, ou même de continuer le jeu compétitif. La plupart des joueurs occasionnels, d'après mon expérience, "
+"sont motivés par un élément du jeu autre que les dernières tendances de la %(twda)s, que cela soit dû à un artiste en"
+" particulier ou en rapport avec un élément du JDR. Mon premier deck en 1994 était un deck Gangrel/Garou qui utilisait"
+" les vampires pour poser des Garou et rien d'autre. Les joueurs de Newark en Ohio ont la réputation de jouer des "
+"decks de combat, c'est peut-être de là que ça vient."
+
+#: codex_of_the_damned/templates/strategy/articles/the-game-of-the-game.html:211
+msgid ""
+"For me, the meta-game becomes most relevant each Spring. I try to cut off new deck construction in March and begin "
+"refining decks in preparation for the NAC. I scan the TWDA for new additions,particularly looking for any new entries"
+" from <em>Hugh Angseesing</em> and <em>Martin Weinmayer</em>. Ignore them at your peril! I also try to pick the brain"
+" of <em>Darby Keeney</em>, a good friend and Evil Genius, to see what is on his radar. My plan every June is to have "
+"12 decks ready to take to the Week of Nightmares (WoN) and North American Championship (NAC)."
+msgstr ""
+"Pour moi, le meta-game devient plus important chaque printemps. J'essaie de finir la construction de nouveaux decks "
+"en mars et de commencer à les affiner en vue du NAC. Je scanne la TWDA pour de nouveaux ajouts, en particulier à la "
+"recherche de nouvelles entrées de <em>Hugh Angseesing</em> et <em>Martin Weinmayer</em>. Ignorez-les à vos risques et"
+" périls ! J'essaie aussi de sonder <em>Darby Keeney</em>, un bon ami et Génie du Mal, pour voir ce qu'il a sur son "
+"radar. Mon plan chaque mois de juin est d'avoir 12 decks prêts à participer à la Semaine des Cauchemars (WoN) et au "
+"championnat nord-américain (NAC)."
+
+#: codex_of_the_damned/templates/strategy/articles/the-game-of-the-game.html:222
+msgid ""
+"The meta-game plays out in real time during the WoN. Do I hold off on my best deck until the actual NAC? Is it worth "
+"risking showing my tech to get a feel for how it will do by playing it early in the WoN? I try to see as many decks "
+"from as many players as I can as the week goes on, hoping to get a feel for the field. Stealth vs Intercept. Combat "
+"vs avoidance. If I make Day 2, do I switch decks?"
+msgstr ""
+"Le meta-game évolue en temps réel pendant la WoN. Dois-je conserver mon meilleur deck pour le NAC? Vaut-il la peine "
+"de risquer de montrer mes decks pour avoir une idée de ce qu'ils valent en les jouant tôt dans la WoN? J'essaie de "
+"voir autant de decks du plus grand nombre de joueurs que possible au fil de la semaine, dans l'espoir d'avoir une "
+"idée du terrain. Stealth vs Intercept. Combat contre évitement. Si je parviens au jour 2, est-ce que je change de "
+"deck?"
+
+#: codex_of_the_damned/templates/strategy/articles/the-game-of-the-game.html:231
+msgid "The correct answer is often a moving target."
+msgstr "La bonne réponse est souvent fugace."
 
 #: codex_of_the_damned/templates/strategy/deck-guides/den-of-fiends.html:17
 #, python-format

@@ -3,7 +3,7 @@
 {% block content %}
 <h1>
     {{ _('The Game of the Game') }}<br />
-    <span>{{ _('By Mark Lougman') }}</span>
+    <span>{{ _('By Mark Loughman') }}</span>
 </h1>
 <div class="author">
     <img src="{{ url_for('static', filename='img/mark_loughman.png') }}" alt="Mark Loughman">
@@ -23,7 +23,7 @@
 <p>
     {% trans trimmed 
     sce=link("/strategy/combat", _("S:CE"), "defence"),
-    twda=link("/card-search", "TWDA")
+    twda=link("/deck-search", "TWDA")
     %}
     At a certain level, V:tES is an elaborate game of Paper-Rock-Scissors.
     Do I have enough stealth to deliver my payload?
@@ -162,6 +162,8 @@
     <h3>{{ _('Choosing his deck') }}</h3>
     <p>
         {% trans trimmed
+        grapple=card("Immortal Grapple", "Grapple"),
+        sce=link("/strategy/combat", _("S:CE"), "defence"),
         dreams_of_the_sphinx=card('Dreams of the Sphinx')  ,
         aura_reading=card('Aura Reading'),
         lupine_assault=card('Lupine Assault')
@@ -171,7 +173,7 @@
         If you play a deck simply because it is the ‘best’ deck it will not be as satisfying
         when it wins and will be demoralizing when it loses. Instead, play something you will enjoy,
         but be open to modifying to fit the anticipated environment. <em>« Do I have enough stealth? »</em>
-        <em>« Will the have Grapple vs my S:CE? »</em> If you are unsure, perhaps
+        <em>« Will the have {{ grapple }} against my {{ sce }}? »</em> If you are unsure, perhaps
         increase your ability to cycle cards, whether with {{ dreams_of_the_sphinx }},
         {{ aura_reading }}, or {{ lupine_assault }}.
         {% endtrans %}
@@ -191,7 +193,7 @@
     <h3>{{ _('Style of Play') }}</h3>
     <p>
         {% trans trimmed
-        twda=link("/card-search", "TWDA")
+        twda=link("/deck-search", "TWDA")
     %}
         Style of play can often drive the meta-game. We play for enjoyment, and while winning feels good,
         we also want to enjoy the process. In a tournament environment you will be playing the same deck for several
