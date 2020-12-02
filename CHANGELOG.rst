@@ -1,7 +1,7 @@
 Changelog
 =========
 
-1.8 (unreleased)
+1.8 (2020-12-02)
 ----------------
 
 - Translation of Advanced Strategy Section
