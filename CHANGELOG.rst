@@ -1,7 +1,7 @@
 Changelog
 =========
 
-1.9 (unreleased)
+1.9 (2020-12-02)
 ----------------
 
 - Minor card display fixes
