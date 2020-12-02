@@ -19,7 +19,7 @@ function oC() {
 }
 function fname(i) {
     const card = document.getElementById(`card-${i}`)
-    if (!card) {
+    if (card === undefined) {
         return
     }
     var name = card.textContent.toLowerCase()
