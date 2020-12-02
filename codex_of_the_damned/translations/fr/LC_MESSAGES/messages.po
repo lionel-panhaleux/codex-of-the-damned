@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: codex 0.X\n"
 "Report-Msgid-Bugs-To: lionel.panhaleux+codex@gmail.com\n"
-"POT-Creation-Date: 2020-12-02 14:36+0100\n"
+"POT-Creation-Date: 2020-12-02 17:55+0100\n"
 "PO-Revision-Date: 2020-07-04 08:50+0200\n"
 "Last-Translator: Lionel Panhaleux <lionel.panhaleux+codex@gmail.com>\n"
 "Language: fr\n"
@@ -14,7 +14,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.8.0\n"
+"Generated-By: Babel 2.9.0\n"
 
 #. TRANSLATORS: please abide by BCP translation choices for game terms when possible.
 #: codex_of_the_damned/navigation.py:52
@@ -2210,6 +2210,7 @@ msgstr ""
 msgid "Gyula Erdõs' deck"
 msgstr "deck de Gyula Erdõs"
 
+#: codex_of_the_damned/templates/archetypes/bibliodeque/anson-grooming.html:25
 #: codex_of_the_damned/templates/archetypes/nosferatu-royalty.html:37
 msgid "Iñaki Jimenez's deck"
 msgstr "deck d'Iñaki Jimenez"
@@ -3279,7 +3280,51 @@ msgstr ""
 "Nous travaillons actuellement à l'analyse de ce deck. Si vous voulez aider, nous serions enchantés si vous pouviez "
 "suggérer une partie de l'analyse. Merci de nous contacter sur notre %(github)s."
 
-#: codex_of_the_damned/templates/archetypes/bibliodeque/anson-grooming.html:17
+#: codex_of_the_damned/templates/archetypes/bibliodeque/anson-grooming.html:15
+#, python-format
+msgid ""
+"<h2>Highlights</h2> <p> This is a <em>breed & boon</em> deck starring %(anson)s and using %(PRE)s as the discipline "
+"to push votes. The purpose is to have him out as fast as possible to use %(political_actions)s to kill the prey. </p>"
+" <h2>Tips & Tricks</h2> <p> %(grooming_the_protege)s costs quite an amount of blood and it is necessary to replenish "
+"the vampires from time to time. Using %(voter_cap)s to replenish the vampires helps playing as many offensive actions"
+" as possible opposed to hunt actions. Another way to %(bloat)s is %(parity_shift)s. </p> <p> %(parity_shift)s can "
+"only be called by Princes and Justicars. In this deck, only %(anson)s and %(tatiana_romanov)s can call for it without"
+" any prior action. %(toreador_justicar)s will help have more vampires able to. </p> <p> %(toreador_grand_ball)s is of"
+" great help against a prey and/or a predator with a good block capacity as a low capacity vampire can be chosen to "
+"make all votes from %(anson)s unblockable. This same low cap vampire can be chosen again to help another vampire with"
+" another %(toreador_grand_ball)s. </p> <p> It is possible to negociate with the great predator how to assign damage "
+"if their votes are necessary. It is important to still deal more damage to the prey than to the predator. Otherwise, "
+"it will only help the great predator oust their prey and become the predator more quickly. </p> <p> It is a good idea"
+" when the grand-prey deck has good block capacity to also deal some damage to them. Indeed, they do not get the "
+"chance to block the undirected vote actions until they are either the prey or the predator. </p> <h2>Tournament "
+"Version</h2> <p> %(inaki_jimenez_deck)s is the only tournament version of this deck. </p>"
+msgstr ""
+"<h2>Principe</h2><p>C'est un deck <em>breed & boon</em> qui utilise %(anson)s et la discipline %(PRE)s pour faire "
+"passer des votes. L'objectif est de l'influencer le plus rapidement possible %(anson)s pour utiliser des "
+"%(political_actions)s pour ouster la proie.</p><h2>Trucs & Astuces</h2><p>%(grooming_the_protege)s coûte une quantité"
+" importante de points de sang et il est nécessaire de remplir les vampires de temps en temps. Utiliser %(voter_cap)s "
+"pour remplir les vampires permet de jouer plus d'actions offensives contrairement aux actions de chasse. Un autre "
+"moyen de %(bloat)s est d'appeler le vote %(parity_shift)s.</p><p>%(parity_shift)s peut seulement être appelé par des "
+"Princes et des Justicars. Dans ce deck, seuls %(anson)s et %(tatiana_romanov)s peuvent appeler ce vote sans action "
+"préalable. %(toreador_justicar)s permet d'avoir plus de vampires en mesure de le faire.</p><p>%(toreador_grand_ball)s"
+" est d'une grande aide contre une proie et/ou un prédateur qui a une grande capacité de blocage car un vampire de "
+"faible capacité peut être choisi pour rendre tous les votes d'%(anson)s imblocables. Ce même vampire peut être de "
+"nouveau choisi pour rendre les votes d'un autre vampire imblocables avec un autre "
+"%(toreador_grand_ball)s.</p><p>C'est une bonne idée quand la grande-proie a une grande capacité de blocage de lui "
+"infliger quelques dégâts. En effet, elle n'aura pas l'opportunité de bloquer les actions de vote non dirigées tant "
+"qu'elle ne sera pas la proie ou le prédateur.</p><h2>Versions de tournoi</h2><p>Le %(inaki_jimenez_deck)s est "
+"actuellement la seule version de tournoi de ce deck.</p>"
+
+#: codex_of_the_damned/templates/archetypes/bibliodeque/anson-grooming.html:23
+#, 
+msgid "bloat"
+msgstr "Régénération"
+
+#: codex_of_the_damned/templates/archetypes/bibliodeque/anson-grooming.html:24
+#, 
+msgid "Political Actions"
+msgstr "Actions politiques"
+
 #: codex_of_the_damned/templates/archetypes/bibliodeque/anu-diptinatpa.html:17
 #: codex_of_the_damned/templates/archetypes/bibliodeque/armin-the-hammer.html:17
 #: codex_of_the_damned/templates/archetypes/bibliodeque/ayo-igoli.html:17
