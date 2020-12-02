@@ -9,27 +9,61 @@
 
 {% block archetype_name %}
 <h1><img src="{{ url_for('static', filename='img/icons/clan-toreador.svg') }}"> Anson Grooming</h1>
-
-{{ layout.wip() }}
 {% endblock %}
 
 {% block archetype %}
 {% trans trimmed
-
+	anson=card("Anson"),
+	tatiana_romanov=card("Tatiana Romanov"),
+	grooming_the_protege=card("Grooming the Protégé"),
+	parity_shift=card("Parity Shift"),
+	toreador_grand_ball=card("Toreador Grand Ball"),
+	toreador_justicar=card("Toreador Justicar"),
+	voter_cap=card("Voter Captivation"),
+	bloat=link("/strategy/bloat", _("bloat")),
+	political_actions=link("/strategy/fundamentals", _("Political Actions"), _anchor="politics"),
+	inaki_jimenez_deck=link("/deck-search", _("Iñaki Jimenez's deck"), twda_id="2k9fsbarakaldolate")
 %}
 <h2>Highlights</h2>
 <p>
-
+	This is a <em>breed & boon</em> deck starring {{ anson }} and using {{ PRE }}
+	as the discipline to push votes. The purpose is to have him out as fast as
+	possible to use {{ political_actions }} to kill the prey.
 </p>
 
 <h2>Tips & Tricks</h2>
 <p>
-
+	{{ grooming_the_protege }} costs quite an amount of blood and it is
+	necessary to replenish the vampires from time to time. Using {{ voter_cap }}
+	to replenish the vampires helps playing as many offensive actions as possible
+	opposed to hunt actions. Another way to {{ bloat }} is {{ parity_shift }}.
+</p>
+<p>
+	{{ parity_shift }} can only be called by Princes and Justicars. In this deck,
+	only {{ anson }} and {{ tatiana_romanov }} can call for it without any prior
+	action. {{ toreador_justicar }} will help have more vampires able to.
+</p>
+<p>
+	{{ toreador_grand_ball }} is of great help against a prey and/or a predator
+	with a good block capacity as a low capacity vampire can be chosen to make
+	all votes from {{ anson }} unblockable. This same low cap vampire can be
+	chosen again to help another vampire with another {{ toreador_grand_ball }}.
+</p>
+<p>
+	It is possible to negociate with the great predator how to assign damage if
+	their votes are necessary. It is important to still deal more damage to the
+	prey than to the predator. Otherwise, it will only help the great predator
+	oust their prey and become the predator more quickly.
+</p>
+<p>
+	It is a good idea when the grand-prey deck has good block capacity to also
+	deal some damage to them. Indeed, they do not get the chance to block the
+	undirected vote actions until they are either the prey or the predator.
 </p>
 
 <h2>Tournament Version</h2>
 <p>
-
+	{{ inaki_jimenez_deck }} is the only tournament version of this deck.
 </p>
 {% endtrans %}
 {% endblock %}
@@ -37,7 +71,6 @@
 {% block errata %}
 <div class="warning">
     <h3>Errata</h3>
-    {{ erratum.pentextmsubversion( 'remove' ) }}
     {{ erratum.parityshift() }}
 </div>
 {% endblock %}
