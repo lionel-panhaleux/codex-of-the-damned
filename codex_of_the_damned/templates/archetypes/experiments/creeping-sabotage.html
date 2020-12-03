@@ -1,0 +1,78 @@
+{% extends "archetypes/_layout.html" %}
+{% import "archetypes/experiments/creeping-sabotage.json" as deck_json %}
+
+{% block meta %}
+<meta property="decklist" content='{{ deck_json | tojson }}' />
+{% endblock %}
+
+{% block archetype_name %}
+<h1><img src="{{ url_for('static', filename='img/icons/clan-nosferatu.svg') }}"> Creeping Sabotage</h1>
+
+<div class="warning">
+    {% trans trimmed
+        creeping_sabotage=card("Creeping Sabotage"),
+		github=external("https://github.com/lionel-panhaleux/codex-of-the-damned", "Github")
+    %}
+    This is an experimental build around a card release on novembre 2020: {{ creeping_sabotage }}.
+	The decklist proposed here is subject to change before reaching its highest level of
+	performance. Feel free to contact us on our {{ github }} to help us better the concept.
+    {% endtrans %}
+</div>
+{% endblock %}
+
+{% block archetype %}
+{% trans trimmed
+	deep_song=card("Deep Song"),
+	creeping_sabotage=card("Creeping Sabotage"),
+	bums_rush=card("Bum's Rush"),
+	the_warrens=card("The Warrens"),
+
+	combat=link("/strategy/combat", _("Combat")),
+	actions=link("/strategy/fundamentals", _("Actions"), _anchor="AB"),
+	stealth=link("/strategy/fundamentals", _("Stealth"), _anchor="stealth-and-intercept"),
+	range_management=link("/strategy/combat", _("Range management"), _anchor="range-management"),
+
+	nananimalism=link("/archetypes/nananimalism", "Nananimalism"),
+	euro_brujah=link("/archetypes/euro-brujah", "Euro Brujah"),
+	modules=link("/strategy/deck-building", _("Modules"), _anchor="modules-and-density")
+%}
+<h2>Highlights</h2>
+<p>
+	This is a <em>rush</em> deck based on mid-cap {{ POT }} vampires.
+</p>
+<p>
+	Ordinary rush deck uses {{ ANI }} as the key discipline because {{ deep_song }}
+	is both the means to rush and the means to oust the prey. There is no alternative to
+	{{ deep_song }} for {{ POT }} decks. This means that the deck needs a means to rush
+	and a means to oust the prey.
+</p>
+<p>
+	As the name indicates, the choice here is to use {{ creeping_sabotage }} as a means
+	to oust the prey. Its downside is that it has to be defended to be effective.
+	Here comes {{ bums_rush }} to enter {{ combat }} with the prey's minions.
+</p>
+
+<h2>Tips & Tricks</h2>
+<p>
+	As {{ creeping_sabotage }} only deals damage to the prey, it is less likely that other
+	players will try to use actions to destroy it. {{ bums_rush }} can then be used to
+	reduce the number of {{ actions }} that the prey can use to attempt to destroy the
+	{{ creeping_sabotage }}.
+</p>
+<p>
+	If a prey or a predator has a good {{ range_management }} capability, {{ stealth }} can
+	be used to secure the optional maneuver from {{ bums_rush }}.
+</p>
+<p>
+	Using {{ the_warrens }} early in the game can dissuade some Methuselah to use actions
+	to attempt to destroy {{ creeping_sabotage }}.
+</p>
+
+<h2>Tournament Version</h2>
+<p>
+	This deck has been inspired by two tournament archetypes: {{ nananimalism }} and
+	{{ euro_brujah }}. Despite their different core discipline {{ ANI }} and {{ DOM }}
+	respectively, the density of the {{ modules }} were of great help to design this deck.
+</p>
+{% endtrans %}
+{% endblock %}
