@@ -4,7 +4,7 @@ Changelog
 1.10 (unreleased)
 -----------------
 
-- Nothing changed yet.
+- Add Anson Groomming review
 
 
 1.9 (2020-12-02)
