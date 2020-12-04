@@ -13,7 +13,7 @@
         creeping_sabotage=card("Creeping Sabotage"),
 		github=external("https://github.com/lionel-panhaleux/codex-of-the-damned", "Github")
     %}
-	This is an experimental build around a card released on novembre 2020: {{ creeping_sabotage }}.
+	This is an experimental build starring {{ creeping_sabotage }}.
 	The decklist proposed here is subject to change before reaching its highest level of
 	performance. Feel free to contact us on our {{ github }} to help us better the concept.
     {% endtrans %}
@@ -22,19 +22,25 @@
 
 {% block archetype %}
 {% trans trimmed
-	deep_song=card("Deep Song"),
-	creeping_sabotage=card("Creeping Sabotage"),
+	beast_leatherface=card("Beast, The Leatherface of Detroit"),
+	ebanezer_roush=card("Ebanezer Roush"),
+	gustave_brunnelle=card("Gustaphe Brunnelle"),
+
 	bums_rush=card("Bum's Rush"),
+	creeping_sabotage=card("Creeping Sabotage"),
+	deep_song=card("Deep Song"),
 	the_warrens=card("The Warrens"),
 
-	combat=link("/strategy/combat", _("Combat")),
 	actions=link("/strategy/fundamentals", _("Actions"), _anchor="AB"),
-	stealth=link("/strategy/fundamentals", _("Stealth"), _anchor="stealth-and-intercept"),
+	combat=link("/strategy/combat", _("Combat")),
+	modules=link("/strategy/deck-building", _("Modules"), _anchor="modules-and-density"),
 	range_management=link("/strategy/combat", _("Range management"), _anchor="range-management"),
+	stealth=link("/strategy/fundamentals", _("Stealth"), _anchor="stealth-and-intercept"),
 
 	nananimalism=link("/archetypes/nananimalism", "Nananimalism"),
 	euro_brujah=link("/archetypes/euro-brujah", "Euro Brujah"),
-	modules=link("/strategy/deck-building", _("Modules"), _anchor="modules-and-density")
+
+	img_clan_nosferatu='<img src="%(url)s" />'|format(url=url_for('static', filename='img/icons/clan-nosferatu.svg'))|safe
 %}
 <h2>Highlights</h2>
 <p>
@@ -42,17 +48,25 @@
 </p>
 <p>
 	Ordinary rush deck uses {{ ANI }} as the key discipline because {{ deep_song }}
-	is both the means to rush and the means to oust the prey. There is no alternative to
-	{{ deep_song }} for {{ POT }} decks. This means that the deck needs a means to rush, 
-	{{ bums_rush }}, and a means to oust the prey: {{ creeping_sabotage }}. 
+	is both the means to rush and the means to oust the prey. Other {{ combat }} decks
+	can enter combat using vampires' special action, like {{ beast_leatherface }} for
+	example.
+</p>
+<p>
+	There is no alternative to {{ deep_song }} for {{ POT }} decks and there are only
+	two Nosferatu {{ img_clan_nosferatu }} able to enter combat as a special action:
+	{{ ebanezer_roush }} and {{ gustave_brunnelle }}.
+</p>
+<p>
+	This means that the deck uses {{ bums_rush }} as a means to rush and
+	{{ creeping_sabotage }} as a means to oust the prey.
 </p>
 
 <h2>Tips & Tricks</h2>
 <p>
 	As {{ creeping_sabotage }} only deals damage to the prey, it is less likely that other
 	players will try to use actions to destroy it. {{ bums_rush }} can then be used to
-	reduce the number of {{ actions }} that the prey can use to attempt to destroy the
-	{{ creeping_sabotage }}.
+	reduce the number of {{ actions }} that the prey can use to attempt to destroy it.
 </p>
 <p>
 	If a prey or a predator has a good {{ range_management }} capability, {{ stealth }} can
@@ -66,7 +80,7 @@
 <h2>Tournament Version</h2>
 <p>
 	This deck has been inspired by two tournament archetypes: {{ nananimalism }} and
-	{{ euro_brujah }}. Despite their different core discipline {{ ANI }} and {{ DOM }}, 
+	{{ euro_brujah }}. Despite their different core discipline {{ ANI }} and {{ DOM }},
 	the density of the {{ modules }} were of great help to design this deck.
 </p>
 {% endtrans %}
