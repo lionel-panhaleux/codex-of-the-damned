@@ -252,6 +252,13 @@ STRUCTURE = Nav(
                         Nav("Weenie VIC"),
                     ],
                 ),
+				Nav(
+                    lazy_gettext("Experimental"),
+                    index=False,
+                    children=[
+                        Nav("Creeping Sabotage"),
+					],
+				),
             ],
         ),
         Nav(
