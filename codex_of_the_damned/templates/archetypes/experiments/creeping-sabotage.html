@@ -26,13 +26,20 @@
 	ebanezer_roush=card("Ebanezer Roush"),
 	gustave_brunnelle=card("Gustaphe Brunnelle"),
 
+	aid_from_bats=card("Aid from Bats"),
 	bums_rush=card("Bum's Rush"),
+	carrion_crows=card("Carrion Crows"),
 	creeping_sabotage=card("Creeping Sabotage"),
 	deep_song=card("Deep Song"),
+	earthshock=card("Earthshock"),
+	improvised_tactics=card("Improvised Tactics"),
+	slam=card("Slam"),
 	the_warrens=card("The Warrens"),
+	thrown_sewer_lid=card("Thrown Sewer Lid"),
 
 	actions=link("/strategy/fundamentals", _("Actions"), _anchor="AB"),
 	combat=link("/strategy/combat", _("Combat")),
+	intercept=link("/strategy/fundamentals", _("Intercept"), _anchor="stealth-and-intercept"),
 	modules=link("/strategy/deck-building", _("Modules"), _anchor="modules-and-density"),
 	range_management=link("/strategy/combat", _("Range management"), _anchor="range-management"),
 	stealth=link("/strategy/fundamentals", _("Stealth"), _anchor="stealth-and-intercept"),
@@ -76,12 +83,25 @@
 	Using {{ the_warrens }} early in the game can dissuade some Methuselah to use actions
 	to attempt to destroy {{ creeping_sabotage }}.
 </p>
+<p>
+	There are some flex slots in the combat module that deals with ranged combat:
+	{{ thrown_sewer_lid }}, {{ slam }}, {{ earthshock }}, {{ improvised_tactics }}. Choosing
+	one over the others depends on what type of ranged fights you are expecting.
+</p>
 
 <h2>Tournament Version</h2>
 <p>
 	This deck has been inspired by two tournament archetypes: {{ nananimalism }} and
 	{{ euro_brujah }}. Despite their different core discipline {{ ANI }} and {{ DOM }},
 	the density of the {{ modules }} were of great help to design this deck.
+</p>
+<p>
+	It can be possible to choose {{ ANI }} as the combat discipline using {{ aid_from_bats }}
+	and {{ carrion_crows }} to deal damage. The integration of {{ creeping_sabotage }} in
+	{{ nananimalism }}'s game plan may be a development axis.
+<p>
+	It can also be possible to play a wall version of this deck using {{ AUS }} and/or
+	{{ ANI }} to {{ intercept }} the directed actions against the {{ creeping_sabotage }}.
 </p>
 {% endtrans %}
 {% endblock %}
