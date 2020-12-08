@@ -25,8 +25,12 @@
 	beast_leatherface=card("Beast, The Leatherface of Detroit"),
 	ebanezer_roush=card("Ebanezer Roush"),
 	gustave_brunnelle=card("Gustaphe Brunnelle"),
+	slag=card("Slag"),
+	ryan=card("Ryan"),
 
 	aid_from_bats=card("Aid from Bats"),
+	anarch_revolt=card("Anarch Revolt"),
+	army_of_rats=card("Army of Rats"),
 	bums_rush=card("Bum's Rush"),
 	carrion_crows=card("Carrion Crows"),
 	creeping_sabotage=card("Creeping Sabotage"),
@@ -37,11 +41,15 @@
 	the_warrens=card("The Warrens"),
 	thrown_sewer_lid=card("Thrown Sewer Lid"),
 
+	a_b=link("/strategy/fundamentals", _("A&B"), _anchor="AB"),
 	actions=link("/strategy/fundamentals", _("Actions"), _anchor="AB"),
+	bounce=link("/strategy/fundamentals", _("Bounce"), _anchor="bounce"),
 	combat=link("/strategy/combat", _("Combat")),
+	delay=link("/strategy/fundamentals", _("Delay"), _anchor="delay"),
 	intercept=link("/strategy/fundamentals", _("Intercept"), _anchor="stealth-and-intercept"),
 	modules=link("/strategy/deck-building", _("Modules"), _anchor="modules-and-density"),
 	range_management=link("/strategy/combat", _("Range management"), _anchor="range-management"),
+	rush=link("/strategy/archetypes", _("Rush"), _anchor="rush"),
 	stealth=link("/strategy/fundamentals", _("Stealth"), _anchor="stealth-and-intercept"),
 
 	nananimalism=link("/archetypes/nananimalism", "Nananimalism"),
@@ -51,22 +59,27 @@
 %}
 <h2>Highlights</h2>
 <p>
-	This is a <em>rush</em> deck based on mid-cap {{ POT }} vampires.
+	This deck uses neither bleed nor vote to deliver pool damage but uses {{ anarch_revolt }},
+	{{ army_of_rats }} and {{ creeping_sabotage }}. This way of ousting one's prey disables
+	a lot of usual defensive modules such as {{ bounce }} or {{ delay }}.
 </p>
 <p>
-	Ordinary rush deck uses {{ ANI }} as the key discipline because {{ deep_song }}
-	is both the means to rush and the means to oust the prey. Other {{ combat }} decks
-	can enter combat using vampires' special action, like {{ beast_leatherface }} for
-	example.
+	This strategy costs a bit of blood and those cards need to be defended. We go mid-cap
+	for speed and {{ a_b }}. The key here is having the upper hand in {{ combat }} hence the
+	use {{ POT }} as a core discipline of the deck as it is great at dealing high damage.
 </p>
 <p>
-	There is no alternative to {{ deep_song }} for {{ POT }} decks and there are only
-	two Nosferatu {{ img_clan_nosferatu }} able to enter combat as a special action:
-	{{ ebanezer_roush }} and {{ gustave_brunnelle }}.
+	Nosferatus {{ img_clan_nosferatu }} are good at {{ ani }}, {{ obf }} and {{ pot }} disciplines,
+	{{ slag }} and {{ ryan }} for example. Some even have a built-in {{ rush }} action
+	({{ ebanezer_roush }} and {{ gustave_brunnelle }}) but they are not used because of their
+	higher capacity and the low presence of mid-cap {{ POT }} vampires in their grouping.
 </p>
 <p>
-	This means that the deck uses {{ bums_rush }} as a means to rush and
-	{{ creeping_sabotage }} as a means to oust the prey.
+	Finally, we are using {{ rush }} actions both in offense and in defense. They are the only
+	defense against an aggressive predator. Although {{ ANI }} gives access to {{ deep_song }},
+	it is not a discipline used in this build. Indeed, the point is to disable bounces, and
+	{{ deep_song }} would go against that objective because bleeds for 2 are nice to deflect.
+	We go with {{ bums_rush }} as a way to proactively enter combat with other vampires.
 </p>
 
 <h2>Tips & Tricks</h2>
