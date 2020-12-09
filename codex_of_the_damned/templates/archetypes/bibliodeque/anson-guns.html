@@ -1,7 +1,36 @@
-{% extends "archetypes/aaa.html" %}
+{% extends "archetypes/_layout.html" %}
+{% import "archetypes/_layout-erratum.html" as erratum with context %}
 {% import "archetypes/bibliodeque/_layout.html" as layout with context %}
+{% import "archetypes/bibliodeque/anson-guns.json" as deck_json %}
+
+{% block meta %}
+<meta property="decklist" content='{{ deck_json | tojson }}' />
+{% endblock %}
 
 {% block archetype_name %}
 <h1><img src="{{ url_for('static', filename='img/icons/clan-toreador.svg') }}"> Anson Guns</h1>
-{{ layout.tournament("variant") }}
+
+{{ layout.wip() }}
+{{ layout.variant("aaa") }}
+{% endblock %}
+
+{% block archetype %}
+{% trans trimmed
+
+%}
+<h2>Highlights</h2>
+<p>
+
+</p>
+
+<h2>Tips & Tricks</h2>
+<p>
+
+</p>
+
+<h2>Tournament Version</h2>
+<p>
+
+</p>
+{% endtrans %}
 {% endblock %}
