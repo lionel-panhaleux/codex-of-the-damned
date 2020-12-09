@@ -122,31 +122,35 @@ function formatText(text) {
 function displayCard(data, push) {
     clearResults()
     const lang = document.documentElement.lang
-    console.log(`lang ${lang}`)
-    var title = data["Name"]
-    var text = data["Card Text"]
+    let title = data["Name"]
+    let text = data["Card Text"]
+    let translation = undefined
     if(data["Translations"] && lang in data["Translations"]){
         title = (
             data["Translations"][lang]["Name"] + 
             `<br><span class="translation">${title}</span>`
         )
-        text = (
-            data["Translations"][lang]["Card Text"] + 
-            `<hr>${text}`
-        )
+        translation = text
+        text = data["Translations"][lang]["Card Text"]
     }
     document.getElementById("result-image").src = data["Image"]
     document.getElementById("card-title").innerHTML = title
     document.getElementById("card_info").innerHTML = `#${data["Id"]}<br/>${data[
         "Set"
     ].join(" ")}`
-    for (let section of text
-        .replace("{", "")
-        .replace("}", "")
-        .split("\n")) {
+    for (let section of text.split("\n")) {
         pelem = document.createElement("p")
         pelem.innerHTML = formatText(section)
         document.getElementById("card-text").appendChild(pelem)
+    }
+    if(translation){
+        document.getElementById("card-text").appendChild(document.createElement("hr"))
+        for (let section of translation.split("\n")){
+            pelem = document.createElement("p")
+            pelem.setAttribute("class", "translation")
+            pelem.innerHTML = formatText(section)
+            document.getElementById("card-text").appendChild(pelem)
+        }
     }
     let rulings_div = document.getElementById("result-rulings-div")
     if (data["Rulings"]) {
@@ -365,7 +369,6 @@ function rulingFormSubmit() {
             throw error
         })
         .then(function (response) {
-            console.log(response)
             document.getElementById(
                 "rf-result"
             ).innerHTML = `<p>Ruling submitted: you can consult it <a target="_blank", href="${response["html_url"]}">on GitHub</a>.`
