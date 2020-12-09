@@ -23,6 +23,8 @@
 {% block archetype %}
 {% trans trimmed
 	beast_leatherface=card("Beast, The Leatherface of Detroit"),
+	img_clan_nosferatu='<img src="%(url)s" />'|format(url=url_for('static', filename='img/icons/clan-nosferatu.svg'))|safe,
+
 	ebanezer_roush=card("Ebanezer Roush"),
 	gustave_brunnelle=card("Gustaphe Brunnelle"),
 	slag=card("Slag"),
@@ -33,11 +35,16 @@
 	army_of_rats=card("Army of Rats"),
 	bums_rush=card("Bum's Rush"),
 	carrion_crows=card("Carrion Crows"),
+	carlton_van_wyk=card("Carlton van Wyk"),
 	creeping_sabotage=card("Creeping Sabotage"),
 	deep_song=card("Deep Song"),
 	earthshock=card("Earthshock"),
+	haven_uncovered=card("Haven Uncovered"),
+	immortal_grapple=card("Immortal Grapple"),
 	improvised_tactics=card("Improvised Tactics"),
+	shadow_boxing=card("Shadow Boxing"),
 	slam=card("Slam"),
+	swallowed_by_the_night=card("Swallowed by the Night"),
 	the_warrens=card("The Warrens"),
 	thrown_sewer_lid=card("Thrown Sewer Lid"),
 
@@ -47,18 +54,19 @@
 	bounce=link("/strategy/fundamentals", _("Bounce"), _anchor="bounce"),
 	combat=link("/strategy/combat", _("Combat")),
 	delay=link("/strategy/fundamentals", _("Delay"), _anchor="delay"),
+	finnish_politics=link("/strategy/archetypes", _("Finnish Politics"), _anchor="finnish_politics"),
 	intercept=link("/strategy/fundamentals", _("Intercept"), _anchor="stealth-and-intercept"),
 	modules=link("/strategy/deck-building", _("Modules"), _anchor="modules-and-density"),
 	range_management=link("/strategy/combat", _("Range management"), _anchor="range-management"),
 	rush=link("/strategy/archetypes", _("Rush"), _anchor="rush"),
+	s_ce=link("/strategy/combat", _("S:CE"), _anchor="defence"),
 	stealth=link("/strategy/fundamentals", _("Stealth"), _anchor="stealth-and-intercept"),
+	wake_and_unlock=link("/strategy/fundamentals", _("Wake and Unlock"), _anchor="wake_and_unlock"),
 
-	nananimalism=link("/archetypes/nananimalism", "Nananimalism"),
-	euro_brujah=link("/archetypes/euro-brujah", "Euro Brujah"),
-
-	img_clan_nosferatu='<img src="%(url)s" />'|format(url=url_for('static', filename='img/icons/clan-nosferatu.svg'))|safe
+	anson_guns=link("/archetypes/bibliodeque/anson-guns"),
+	nananimalism=link("/archetypes/nananimalism")
 %}
-<h2>Highlights</h2>
+<h2>Overview</h2>
 <p>
 	This deck uses neither bleed nor vote to deliver pool damage but uses {{ anarch_revolt }},
 	{{ army_of_rats }} and {{ creeping_sabotage }}. This way of ousting one's prey disables
@@ -76,11 +84,15 @@
 	higher capacity and the low presence of mid-cap {{ POT }} vampires in their grouping.
 </p>
 <p>
-	Finally, we are using {{ rush }} actions both in offense and in defense. They are the only
-	defense against an aggressive predator. Although {{ ANI }} gives access to {{ deep_song }},
-	it is not a discipline used in this build. Indeed, the point is to disable bounces, and
-	{{ deep_song }} would go against that objective because {{ bleed }} for 2 are nice to bounce.
-	We go with {{ bums_rush }} as a way to proactively enter combat with other vampires.
+	This {{ rush }} strategy leads to {{ finnish_politics }}. Its point is to use {{ rush }}
+	as a means of negociation with the other players. Played with {{ immortal_grapple }}, it
+	becomes a huge threat to {{ s_ce }} defensive modules. It is also the only defense against an
+	aggressive predator.
+</p>
+<p>
+	We go with {{ bums_rush}} and {{ haven_uncovered }} despite {{ ANI }} giving access to
+	{{ deep_song }}. As the point is to disable {{ bounce }}, it would go against that
+	objective because {{ bleed }} for 2 are nice to bounce.
 </p>
 
 <h2>Tips & Tricks</h2>
