@@ -1,7 +1,7 @@
 Changelog
 =========
 
-1.11 (unreleased)
+1.11 (2020-12-09)
 -----------------
 
 - Use and display cards translations when on the non-english version of the site
