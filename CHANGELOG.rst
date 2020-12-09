@@ -5,7 +5,8 @@ Changelog
 -----------------
 
 - Use and display cards translations when on the non-english version of the site
-
+- VTES-DB is now VDB (update link)
+- Update links on home page, add FR-specific links
 
 1.10 (2020-12-03)
 -----------------
