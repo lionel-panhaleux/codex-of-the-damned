@@ -4,8 +4,9 @@ Changelog
 1.12 (unreleased)
 -----------------
 
-- Nothing changed yet.
-
+- More visible sponsor link
+- Minor fix to translations
+- Colored brand icons
 
 1.11 (2020-12-09)
 -----------------
