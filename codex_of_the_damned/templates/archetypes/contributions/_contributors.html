@@ -1,0 +1,31 @@
+{% macro present( author = "" ) -%}
+<div class="author">
+    <p>
+		{% if author == '' %}
+		{{ _("This decklist is an anonymous contribution.") }}
+		{% else %}
+		{% trans trimmed
+			name=author
+		%}
+        This decklist has been contributed by <strong>{{ name }}</strong>.
+		{% endtrans %}
+		{% endif %}
+		{{ _("It is subject to some modifications before winning a tournament.") }}
+    </p>
+    <div class="clear"></div>
+</div>
+{%- endmacro %}
+
+{% macro invite() -%}
+<div class="author">
+    <p>
+		{% trans trimmed
+			github=external("https://github.com/lionel-panhaleux/codex-of-the-damned", "Github")
+		%}
+		You are  welcome to contribute to this section by submitting a personnal decklist
+		and its analysis on {{ github }}.
+		{% endtrans %}
+	</p>
+	<div class="clear"></div>
+</div>
+{%- endmacro %}
