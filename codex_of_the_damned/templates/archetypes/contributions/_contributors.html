@@ -1,15 +1,26 @@
-{% macro present( author = "" ) -%}
+{% macro present( author = "" , date = "" ) -%}
 <div class="author">
     <p>
 		{% if author == '' %}
-		{{ _("This decklist is an anonymous contribution.") }}
+		{{ _("This decklist is an anonymous contribution") }}
 		{% else %}
 		{% trans trimmed
-			name=author
+			author=author
 		%}
-        This decklist has been contributed by <strong>{{ name }}</strong>.
+        This decklist has been contributed by <strong>{{ author }}</strong>
 		{% endtrans %}
 		{% endif %}
+
+		{% if on == '' %}
+		.
+		{% else %}
+		{% trans trimmed
+			date=date
+		%}
+		on {{ date }}.
+		{% endtrans %}
+		{% endif %}
+
 		{{ _("It is subject to some modifications before winning a tournament.") }}
     </p>
     <div class="clear"></div>
@@ -18,7 +29,7 @@
 
 {% macro invite() -%}
 <div class="author">
-    <p>
+	<p>
 		{% trans trimmed
 			github=external("https://github.com/lionel-panhaleux/codex-of-the-damned", "Github")
 		%}
@@ -26,6 +37,5 @@
 		and its analysis on {{ github }}.
 		{% endtrans %}
 	</p>
-	<div class="clear"></div>
 </div>
 {%- endmacro %}
