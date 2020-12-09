@@ -20,7 +20,8 @@
         bcp_s_website=external("https://www.blackchantry.com/rulebook/", _("BCP's website")),
         players_guide=external("https://www.drivethrurpg.com/product/2931/Vampire-The-Eternal-Struggle-Players-Guide", _("Player's Guide"))
     %}
-    If you are a new player, consult {{ brett_s_guide }} to learn the game before digging deeper.
+    If you are a new player, consult {{ brett_s_guide }} or one of the video tutorials below to learn the game
+    before digging deeper.
     The official rule can be found on the {{ bcp_s_website }}.
     The official {{ players_guide }} is available in PDF format at DriveThruRPG.
     {% endtrans %}
@@ -36,12 +37,31 @@
 <h2>{{ _('Community') }}</h2>
 <ul>
     <li><a target="_blank" href="http://www.vekn.net/forum">{{ _('VEKN Forum') }}</a></li>
+    {%if lang == "fr"%}
+    <li><a target="_blank" href="http://www.vekn.fr/forum/index.php">
+            Forum VEKN France
+        </a></li>
+    {% endif %}
     <li><a target="_blank" href="https://discord.gg/EJ5qBaD">
             <span class="brand-icon">&#xf392</span> {{ _('VTES Discord') }}
         </a></li>
     <li><a target="_blank" href="https://www.facebook.com/groups/512493665865136/">
             <span class="brand-icon">&#xf082</span> {{ _('VEKN Facebook goup') }}
         </a></li>
+    <li><a target="_blank" href="https://youtu.be/jP3sMoy9OW0">
+            <span class="brand-icon">&#xf167</span> {{ _("The Gentleman Gamer's Tutorial") }}
+        </a></li>
+    <li><a target="_blank" href="https://youtu.be/ejysifYS1ZE">
+            <span class="brand-icon">&#xf167</span> {{ _("Team Covenant's Tutorial") }}
+        </a></li>
+    {%if lang == "fr"%}
+    <li><a target="_blank" href="https://www.youtube.com/channel/UCWN2_3daZlt1e5rRSrFEpxw">
+            <span class="brand-icon">&#xf167</span> VTES FR
+        </a></li>
+    <li>Blog: <a target="_blank" href="http://diableriste.com/">
+            Carnet d'un diableriste
+        </a></li>
+    {% endif %}
     <li>Blog: <a target="_blank" href="https://vtesone.wordpress.com">VTESOne</a></li>
     <li>Blog: <a target="_blank" href="https://vtesinformationhighway.wordpress.com">Information Highway</a></li>
     <li>Blog: <a target="_blank" href="https://www.facebook.com/MikeTheNeonate/">The Neonate Diaries</a></li>

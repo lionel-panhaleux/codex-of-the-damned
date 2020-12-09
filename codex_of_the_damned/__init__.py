@@ -150,6 +150,7 @@ def index(lang_code=None, page=None):
 
     flask.g.lang_code = lang_code
     context = copy.copy(BASE_CONTEXT)
+    context["lang"] = lang_code
 
     # use card image as og_image for card-search
     if "card-search" in page:

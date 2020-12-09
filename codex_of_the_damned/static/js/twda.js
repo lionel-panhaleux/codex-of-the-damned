@@ -163,7 +163,10 @@ function displayCompletion(input, items_list, data) {
 function fetchCompletion(input, items_list, text) {
     fetch(encodeURI(`https://api.krcg.org/complete/${text}`), {
         method: "GET",
-        headers: { Accept: "application/json" },
+        headers: {
+            "Accept": "application/json", 
+            "Accept-Language": document.documentElement.lang
+        },
     })
         .then(function (response) {
             if (!response.ok) {

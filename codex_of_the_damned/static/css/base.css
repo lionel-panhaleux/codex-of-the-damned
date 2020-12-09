@@ -142,6 +142,10 @@ h3 {
     margin-bottom: 0.5em;
     text-align: left;
 }
+.translation {
+    font-size: 1rem;
+    color: #555;
+}
 h3 > img {
     height: 1.2rem;
     max-width: 2em;
@@ -156,6 +160,13 @@ h4 > img {
     height: 2rem;
     max-width: 2em;
     vertical-align: middle;
+}
+hr {
+    border: 0;
+    height: 0;
+    margin: 1em 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 nav {
     display: inline-flex;
@@ -666,8 +677,17 @@ form input[type="submit"] {
 .decklist .card:focus {
     color: #306d44;
 }
-.card-results {
+.card-results-top {
+    display: block;
+    border: 0;
     padding: 0;
+    margin: 2em 0;
+}
+.card-results {
+    display: flex;
+    border: 0;
+    padding: 0;
+    margin: 0;
 }
 .center-subtitle,
 .subtitle {
@@ -678,10 +698,10 @@ form input[type="submit"] {
     text-align: center;
 }
 .result-image-div {
-    float: left;
+    display: inline-block;
     padding: 0.5em;
     padding-left: 0em;
-    margin: 0 1.5em 1.5em 0;
+    margin: 0;
 }
 .result-image {
     margin: auto;
@@ -691,6 +711,9 @@ form input[type="submit"] {
 }
 .result-text {
     clear: none;
+    display: inline-block;
+    border: 0;
+    margin: 0 1em 0 0;
 }
 .result-rulings {
     margin: 0;
@@ -762,6 +785,9 @@ form input[type="submit"] {
     }
     h2 {
         clear: both;
+    }
+    .card-results {
+        display: block;
     }
     .decklist {
         float: none;

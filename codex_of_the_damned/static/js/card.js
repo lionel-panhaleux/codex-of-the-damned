@@ -1,6 +1,5 @@
 function clearResults() {
-    document.getElementById("results").style.display = "none"
-    document.getElementById("ruling-submit-tooltip").style.display = "none"
+    document.getElementById("results-top").style.display = "none"
     document.getElementById("rF_submit").disabled = false
     document.getElementById("result-rulings-div").innerHTML = "<h3>Rulings</h3>"
     document.getElementById("result-message").innerHTML = ""
@@ -122,12 +121,26 @@ function formatText(text) {
 }
 function displayCard(data, push) {
     clearResults()
+    const lang = document.documentElement.lang
+    console.log(`lang ${lang}`)
+    var title = data["Name"]
+    var text = data["Card Text"]
+    if(data["Translations"] && lang in data["Translations"]){
+        title = (
+            data["Translations"][lang]["Name"] + 
+            `<br><span class="translation">${title}</span>`
+        )
+        text = (
+            data["Translations"][lang]["Card Text"] + 
+            `<hr>${text}`
+        )
+    }
     document.getElementById("result-image").src = data["Image"]
-    document.getElementById("card-title").textContent = data["Name"]
+    document.getElementById("card-title").innerHTML = title
     document.getElementById("card_info").innerHTML = `#${data["Id"]}<br/>${data[
         "Set"
     ].join(" ")}`
-    for (let section of data["Card Text"]
+    for (let section of text
         .replace("{", "")
         .replace("}", "")
         .split("\n")) {
@@ -162,7 +175,7 @@ function displayCard(data, push) {
     } else {
         rulings_div.innerHTML += "<p>No ruling registered.</p>"
     }
-    document.getElementById("results").style.display = "block"
+    document.getElementById("results-top").style.display = "block"
     document.getElementById("ruling-submit-tooltip").style.display = "block"
     if (push) {
         window.history.pushState(
@@ -224,7 +237,10 @@ function displayCompletion(input, items_list, data) {
 function fetchCompletion(input, items_list, text) {
     fetch(encodeURI(`https://api.krcg.org/complete/${text}`), {
         method: "GET",
-        headers: { Accept: "application/json" },
+        headers: {
+            "Accept": "application/json",
+            "Accept-Language": document.documentElement.lang
+        },
     })
         .then(function (response) {
             if (!response.ok) {
