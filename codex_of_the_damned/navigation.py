@@ -264,7 +264,7 @@ STRUCTURE = Nav(
                     ],
                 ),
 				Nav(
-					lazy_gettext("Experimental"),
+					lazy_gettext("Contributions"),
 					index=False,
 					children=[
 						Nav("Creeping Sabotage"),

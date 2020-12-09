@@ -1,0 +1,96 @@
+{% extends "archetypes/_layout.html" %}
+{% import "archetypes/contributions/_contributors.html" as contributor with context %}
+{% import "archetypes/contributions/creeping-sabotage.json" as deck_json %}
+
+{% block meta %}
+<meta property="decklist" content='{{ deck_json | tojson }}' />
+{% endblock %}
+
+{% block archetype_name %}
+<h1><img src="{{ url_for('static', filename='img/icons/clan-nosferatu.svg') }}"> Creeping Sabotage</h1>
+{{ contributor.present( "spigushe" ) }}
+{% endblock %}
+
+{% block archetype %}
+{% trans trimmed
+	img_clan_nosferatu='<img src="%(url)s" />'|format(url=url_for('static', filename='img/icons/clan-nosferatu.svg'))|safe,
+
+	ebanezer_roush=card("Ebanezer Roush"),
+	gustave_brunnelle=card("Gustaphe Brunnelle"),
+	slag=card("Slag"),
+	ryan=card("Ryan"),
+
+	anarch_revolt=card("Anarch Revolt"),
+	army_of_rats=card("Army of Rats"),
+	bums_rush=card("Bum's Rush"),
+	creeping_sabotage=card("Creeping Sabotage"),
+	deep_song=card("Deep Song"),
+
+	a_b=link("/strategy/fundamentals", _("A&B"), _anchor="AB"),
+	bounce=link("/strategy/fundamentals", _("Bounce"), _anchor="bounce"),
+	combat=link("/strategy/combat", _("Combat")),
+	delay=link("/strategy/fundamentals", _("Delay"), _anchor="delay"),
+	rush=link("/strategy/archetypes", _("Rush"), _anchor="rush")
+%}
+<h2>Highlights</h2>
+<p>
+	This deck uses neither bleed nor vote to deliver pool damage but uses {{ anarch_revolt }},
+	{{ army_of_rats }} and {{ creeping_sabotage }}. This way of ousting one's prey disables
+	a lot of usual defensive modules such as {{ bounce }} or {{ delay }}.
+</p>
+<p>
+	This strategy costs a bit of blood and those cards need to be defended. We go mid-cap
+	for speed and {{ a_b }}. The key here is having the upper hand in {{ combat }} hence the
+	use {{ POT }} as a core discipline of the deck as it is great at dealing high damage.
+</p>
+<p>
+	Nosferatus {{ img_clan_nosferatu }} are good at {{ ani }}, {{ obf }} and {{ pot }} disciplines,
+	{{ slag }} and {{ ryan }} for example. Some even have a built-in {{ rush }} action
+	({{ ebanezer_roush }} and {{ gustave_brunnelle }}) but they are not used because of their
+	higher capacity and the low presence of mid-cap {{ POT }} vampires in their grouping.
+</p>
+<p>
+	Finally, we are using {{ rush }} actions both in offense and in defense. They are the only
+	defense against an aggressive predator. Although {{ ANI }} gives access to {{ deep_song }},
+	it is not a discipline used in this build. Indeed, the point is to disable bounces, and
+	{{ deep_song }} would go against that objective because bleeds for 2 are nice to deflect.
+	We go with {{ bums_rush }} as a way to proactively enter combat with other vampires.
+</p>
+
+<h2>Tips & Tricks</h2>
+<p>
+	As {{ creeping_sabotage }} only deals damage to the prey, it is less likely that other
+	players will try to use actions to destroy it. {{ bums_rush }} can then be used to
+	reduce the number of {{ actions }} that the prey can use to attempt to destroy it.
+</p>
+<p>
+	If a prey or a predator has a good {{ range_management }} capability, {{ stealth }} can
+	be used to secure the optional maneuver from {{ bums_rush }}.
+</p>
+<p>
+	Using {{ the_warrens }} early in the game can dissuade some Methuselah to use actions
+	to attempt to destroy {{ creeping_sabotage }}.
+</p>
+<p>
+	There are some flex slots in the combat module that deals with ranged combat:
+	{{ thrown_sewer_lid }}, {{ slam }}, {{ earthshock }}, {{ improvised_tactics }}. Choosing
+	one over the others depends on what type of ranged fights you are expecting.
+</p>
+
+<h2>Tournament Version</h2>
+<p>
+	This deck has been inspired by two tournament archetypes: {{ nananimalism }} and
+	{{ euro_brujah }}. Despite their different core discipline {{ ANI }} and {{ DOM }},
+	the density of the {{ modules }} were of great help to design this deck.
+</p>
+<p>
+	It can be possible to choose {{ ANI }} as the combat discipline using {{ aid_from_bats }}
+	and {{ carrion_crows }} to deal damage. The integration of {{ creeping_sabotage }} in
+	{{ nananimalism }}'s game plan may be a development axis.
+<p>
+	It can also be possible to play a wall version of this deck using {{ AUS }} and/or
+	{{ ANI }} to {{ intercept }} the directed actions against the {{ creeping_sabotage }}.
+</p>
+{% endtrans %}
+{{ contributor.invite() }}
+{% endblock %}
