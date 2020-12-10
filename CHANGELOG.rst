@@ -1,7 +1,7 @@
 Changelog
 =========
 
-1.14 (unreleased)
+1.14 (2020-12-10)
 -----------------
 
 - Fixes on Paul Jones article
