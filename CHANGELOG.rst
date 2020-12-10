@@ -4,7 +4,7 @@ Changelog
 1.14 (unreleased)
 -----------------
 
-- Nothing changed yet.
+- Fixes on Paul Jones article
 
 
 1.13 (2020-12-10)
