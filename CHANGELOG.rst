@@ -4,7 +4,7 @@ Changelog
 1.13 (unreleased)
 -----------------
 
-- Nothing changed yet.
+- Review: Paul Jones article
 
 
 1.12 (2020-12-09)
