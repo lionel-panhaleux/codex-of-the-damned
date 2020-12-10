@@ -83,8 +83,19 @@ STRUCTURE = Nav(
                 Nav(
                     lazy_gettext("Articles"),
                     children=[
-                        Nav(lazy_gettext("The Game of the Game")),
-                        Nav(lazy_gettext("Playing Montano Baltimore Purge")),
+                        Nav(
+                            lazy_gettext("Basic"),
+                            children=[
+                                Nav(lazy_gettext("Blood, Pool and Grinding Beads")),
+                            ],
+                        ),
+                        Nav(
+                            lazy_gettext("Advanced"),
+                            children=[
+                                Nav(lazy_gettext("The Game of the Game")),
+                                Nav(lazy_gettext("Playing Montano Baltimore Purge")),
+                            ],
+                        ),
                     ],
                 ),
             ],

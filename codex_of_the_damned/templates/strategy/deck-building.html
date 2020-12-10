@@ -230,7 +230,7 @@
     delaying_tactics=card("Delaying Tactics"),
     poison_pill=card("Poison Pill"),
     combat_ends=link("/strategy/combat", _("combat ends"), _anchor="defense"),
-    bruise=link("/strategy/combat", _("bruise"), _anchor="bruise"),
+    combat_posture=link("/strategy/combat", _("combat posture"), _anchor="posture"),
     best_cards=link("/best-cards", _("best cards")),
     deck_archive=link("/deck-search", _("deck archive"))
     %}
@@ -271,9 +271,10 @@
     </li>
     <li>
         <strong>Combat Management:</strong> how the deck deals with minion combats.
-        If it does not plan to block, <em>support allies</em> to block rush actions can be enough.
-        Some decks plan to avoid combat and use {{ combat_ends }} effects when it cannot be avoided.
-        Others plan to use combats to optimize {{ bruise }} in their favor.
+        It is essential to choose a clear {{ combat_posture }}, and the correct one
+        depends on the previous pillars. If it delivers with stealth and defends without
+        blocking, resisting will be easier. If it plans to block, it can either
+        resist or grind. Disabling is usually both a defense and a delivery system.
     </li>
 </ul>
 </p>

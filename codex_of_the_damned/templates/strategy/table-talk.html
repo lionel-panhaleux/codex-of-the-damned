@@ -200,17 +200,31 @@
     this is a game and should stay enjoyable even for your opponents.
     {% endtrans %}
 </p>
-<h2>{{ _('Table strategies') }}</h2>
-{% trans trimmed %}
+<h2 id="table-balance">{{ _('Table balance') }}</h2>
+{% trans trimmed 
+    archetypes=link("/strategy/archetypes", _("archetypes"))
+%}
 <p>
-    Not everything around the table is about talking. Having a good sense of the table balance is essential to
-    build an efficient table strategy as well.
+    Not everything around the table is about talking. Having a good sense of the <strong>table balance</strong> is
+    essential to build an efficient strategy as well. Depending on the seating, some players will be at an advantage
+    because the deck played by their neighbours is easy for them to handle or, on the contrary, be in a dire position
+    because they have a kind of deck they're not prepared for.
 </p>
 <p>
-    The most obvious fact about table strategy is the two players « cross table » are
-    <strong>natural allies</strong>. The grand-prey will be leaning to help against the prey,
-    and the grand-predator against the predator. Cultivating good rapports with them is important in the beginning.
-    As the game progress though, they can become threats themselves.
+    A good read of the natural table balance is an essential quality. As a good part of table talk is about figuring out
+    that balance, being able to read the table balanced without being influenced by the other players is crucial,
+    and depends on experience and a good knowledge of the {{ archetypes }}.
+</p>
+<p>
+    The most obvious fact about table balance is that the two players « cross table » are
+    <strong>natural allies</strong>. The grand-prey will be leaning to help against the prey, and the grand-predator
+    against the predator. Helping them will naturally prejudice the prey or predator, up to a point.
+</p>
+<p>
+    As the game progresses, the table balance shifts: a strong grand-predator may have been an excellent ally
+    and help disabling a predator but, if the predator is too weak, it may be better to help him survive and
+    use him as a buffer than to face a new strong predator in its stead. Quite symmetrically, a grand-prey can
+    be trusted less and less as the prey gets close to be ousted.
 </p>
 {% endtrans %}
 <div class="tip">
@@ -266,7 +280,7 @@
 </p>
 <p>
     This systemic ripple effect, although not so clear-cut in practice and depending a lot on the type of decks
-    on the table, is a good model of how the game flows. It emphasizes how important it is for one to nail his
+    on the table, is a good model of the effects of table balance. It emphasizes how important it is for one to nail his
     <strong>{{ lunge_move }}</strong> in a five or three players setup: if the lunge works,
     you get back to an even number and a favorable situation. If it fails, you stay on an odd number of players
     and have just put a lot of pressure on your prey.

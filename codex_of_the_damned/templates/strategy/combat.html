@@ -13,22 +13,38 @@
     It also gave its name to an entire category of decks: the {{ rush_decks }}.
     {% endtrans %}
 </p>
-<h2 id="bruise">{{ _('Bruise') }}</h2>
+<h2 id="posture">{{ _('Posture') }}</h2>
 {% trans trimmed
     a_b=link("/strategy/fundamentals", _("A&B"), 'AB'),
-    leeching=link("/strategy/bloat", _("leeching"), 'leeching')
+    bloat=link("/strategy/bloat", _("bloat")),
+    table_balance=link("/strategy/table-talk", _("table balance"), "table-balance"),
+    rush_decks=link("/strategy/archetypes", _("Rush decks"), "rush"),
+    blood_pool_and_grinding_beads=link(
+        "/strategy/articles/basic/blood-pool-and-grinding-beads", 
+        _("Blood, Pool and Grinding Beads")
+    )
 %}
 <p>
     Combat does not help reducing the prey's pool, at least not directly.
-    The core principle of combat is <strong>bruise</strong>:
-    reducing its opponents blood amount.
-    It forces the minions to hunt or stay in torpor, seriously reducing {{ a_b }}.
-    As a bonus, reducing the blood amount on the table means diminishing
-    the effectivness of {{ leeching }} techniques.
-</p>
-<p>
-    So the main focus of any combat module is to improve or prevent bruise,
-    <em>ie.</em> blood consumption.
+    There are basically three strategic postures a deck can adopt when it comes
+    to combat:
+<ul>
+    <li><strong>Disabling</strong> the opponents minions is the most aggressive one.
+        This slows down the opponents, but does not help to achieve
+        victory by itself. On the other hand, it gives incredible control over the
+        {{ table_balance }}. {{ rush_decks }} specialize in that aspect.
+    </li>
+    <li><strong>Grinding</strong> is a more balanced posture. The idea is to target
+        the prey's blood and not only its pool, focusing on making sure the
+        opponents systematically lose more blood. Paul Jones' article
+        {{ blood_pool_and_grinding_beads }} explains the grinding posture
+        in details.
+    </li>
+    <li><strong>Resisting</strong> is the last posture: the idea is to just
+        be able to resist the two other postures well enough, either with defensive
+        combat options, or just relying on speed or number of minions.
+    </li>
+</ul>
 </p>
 {% endtrans %}
 <h2 id="dealing-damage">{{ _('Dealing damage') }}</h2>
@@ -157,7 +173,7 @@
             %}
             {{ magnum }}:
             An additional damage each strike, together with a manoeuver
-            to keep the range long an avoid bruise.
+            to keep the range long an avoid damage.
             This is also the best weapon {{ concealed_weapon }}
             can get out, thus avoiding to loose an action (and risking interception)
             to equip with it.
@@ -177,7 +193,7 @@
             %}
             {{ sniper_rifle }}:
             Although only useful when blocking, its ability to set the range
-            is an excellent option to avoid bruise.
+            is an excellent option to avoid damage.
             {% endtrans %}
         </li>
         <li>
@@ -300,10 +316,9 @@
 </div>
 <p>
     {% trans trimmed %}
-    Aside from S:CE, <strong>damage prevention</strong> is another important part of combat.
+    <strong>Damage prevention</strong> is another important aspect of combat.
     It is useful in defence, but also on the offence: reducing the loss of blood
-    improves the bruise ratio, which is the primary focus of combat‑oriented decks.
-    {{ for }} is the key discipline for damage prevention,
+    is always important. {{ for }} is the key discipline for damage prevention,
     and only a few damage prevention cards exist outside this discipline:
     {% endtrans %}
 <ul>
@@ -335,10 +350,9 @@
     entombment=card("Entombment")
 %}
 <p>
-    <strong>Dodging</strong> is still an option for defence, and the simple
-    {{ dodge }} is available for everyone. It is weaker than
-    ending the combat with a S:CE,
-    but it is still a viable defensive option when S:CE are not available.
+    <strong>Dodging</strong> is also a good defensive option, and the simple
+    {{ dodge }} is available for everyone. It is weaker than ending the combat with a
+    S:CE, but it is still a viable defensive option when S:CE are not available.
 </p>
 <p>
     Finally, two combat cards can <strong>send a vampire into torpor directly</strong>:
