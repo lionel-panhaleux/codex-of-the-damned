@@ -5,7 +5,10 @@
     <h1>{{ _('Tabletop Simulator') }}</h1>
     <p>
         {% trans trimmed 
-        tabletop_simulator=external("https://store.steampowered.com/app/286160/Tabletop_Simulator/", "Tabletop Simulator")
+            tabletop_simulator=external(
+                "https://store.steampowered.com/app/286160/Tabletop_Simulator/", 
+                "Tabletop Simulator"
+            )
 	    %}
         {{ tabletop_simulator }} is a Steam app to play tabletop games.
         It has fan-made plugins to play V:tES online with friends.
@@ -15,7 +18,7 @@
     </p>
     <p>
         {% trans trimmed 
-        discord_server=external("https://discord.gg/QJtDzp5", _("Discord Server"))
+            discord_server=external("https://discord.gg/QJtDzp5", _("Discord Server"), icon="&#xf392", color="#758AD4")
 	    %}
         Using this platform, the game is best played alongside a vocal channel. You can join the {{ discord_server }}
         dedicated to the plugin to find players, setup games, and use the vocal channels to play.
@@ -24,9 +27,12 @@
     <h2>{{ _('Install') }}</h2>
     <p>
         {% trans trimmed 
-        tabletop_simulator=external("https://store.steampowered.com/app/286160/Tabletop_Simulator/", "Tabletop Simulator"),
-        this_plugin=external("https://steamcommunity.com/sharedfiles/filedetails/?id=2186155897", _("this plugin")),
-        save_object='<span class="code">Save object</span>'|safe
+            tabletop_simulator=external(
+                "https://store.steampowered.com/app/286160/Tabletop_Simulator/", 
+                "Tabletop Simulator"
+            ),
+            this_plugin=external("https://steamcommunity.com/sharedfiles/filedetails/?id=2186155897", _("this plugin")),
+            save_object='<span class="code">Save object</span>'|safe
 	    %}
         Buy and install the {{ tabletop_simulator }} application using <em>Steam</em>.
         Then install {{ this_plugin }}.

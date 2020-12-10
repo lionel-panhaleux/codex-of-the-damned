@@ -229,8 +229,16 @@ def linker():
     def prev():
         return _link(navigation.HELPER.get(path, {}).get("prev"), _class="prev")
 
-    def external(url, name):
-        return flask.Markup(f'<a target="_blank" href="{url}">{name}</a>')
+    def external(url, name, icon=None, color=None):
+        if color:
+            style = f' style="color: {color};"'
+        else:
+            style = ""
+        if icon:
+            span = f'<span class="brand-icon"{style}>{icon}</span> '
+        else:
+            span = ""
+        return flask.Markup(f'<a target="_blank" href="{url}">{span}{name}</a>')
 
     return dict(
         i18n_url=i18n_url,
