@@ -54,7 +54,7 @@
         plays no cards for the combat.
         {% endtrans %}
     </p>
-    <h4>{{ _('Malkavian') }}</h4>
+    <h4><img src="{{ url_for('static', filename='img/icons/clan-malkavian-v5.svg') }}"> {{ _('Malkavian') }}</h4>
     <p>
         {% trans trimmed 
             alexander_silverson=card("Alexander Silverson"),
@@ -69,7 +69,7 @@
         lose any.
         {% endtrans %}
     </p>
-    <h4>{{ _('Tremere') }}</h4>
+    <h4><img src="{{ url_for('static', filename='img/icons/clan-tremere-v5.svg') }}"> {{ _('Tremere') }}</h4>
     <p>
         {% trans trimmed 
             trevon_parker=card("Trevon Parker"),
@@ -185,7 +185,7 @@
             coven=card("The Coven", "Coven")
         %}
         These two cards show the distinct differences in the styles. {{ the_coven }} gives you 2 beads every 5 turns,
-        but gives out 8 beads to the table before you get it back. {{ smiling_jack }} takes 5 beads for every 1 you
+        but gives out 8 beads to the table before you get it back. {{ smiling_jack }} takes 4 beads for every 1 you
         spend, but the other players choose where the beads come from. If you’re playing a Stealth & Bleed deck and
         there is a {{ smiling_jack }} on the table, your prey is going to take beads off their vampires and you’re not
         going to see any benefit, but if there’s a {{ coven }} on the table, you’re going to see no downside. This is in
