@@ -11,3 +11,4 @@ po: po-update po-compile
 
 release:
 	fullrelease
+	pip install -e ".[dev]"
