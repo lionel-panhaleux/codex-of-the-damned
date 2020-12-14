@@ -79,26 +79,25 @@ convert -morphology Smooth Octagon:2 clan-ahrimanes.gif clan-ahrimanes.svg
 Use python and Google Translate to help with translation:
 
 ```python
+import clipboard
 import pprint
 import re
 
-def pre(s):
-    print(re.sub(r"%\(([^\)]*)\)s", r"§KEEP\1§", s))
+def pre():
+    s = "".join(s[1:-1] for s in clipboard.paste().split("\n"))
+    s = re.sub(r"%\(([^\)]*)\)s", r"§KEEP\1§", s)
+    clipboard.copy(s)
 
-def pre_list(it):
-    for s in it:
-        pre(s)
-
-def post(s):
+def post():
+    s = clipboard.paste()
     s = pprint.pformat(re.sub(r"§KEEP([^§]*)§", r"%(\1)s", s), width=120)
-    print(
-        re.sub(
+    s = re.sub(
             r"(^')|('$)",
             '"',
             re.sub(r"^\s*", "", s[1:-1], flags=re.MULTILINE),
             flags=re.MULTILINE
         ).replace("\\n", "")
-    )
+    clipboard.copy(s)
 
 # usage:
 # s = (
