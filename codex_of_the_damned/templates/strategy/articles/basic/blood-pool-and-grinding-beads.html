@@ -26,17 +26,17 @@
 </p>
 <h2>{{ _('When do all beads matter?') }}</h2>
 <p>
-    {% trans trimmed 
-        v5_malkavian=external(
-            "https://www.blackchantry.com/products/current-products/vampire-the-eternal-struggle-fifth-edition/fifth-edition-malkavian/",
-            _("Fifth Edition Malkavian deck")
-        ),
-        v5_tremere=external(
-            "https://www.blackchantry.com/products/current-products/vampire-the-eternal-struggle-fifth-edition/fifth-edition-tremere/",
-            _("Tremere deck")
-        ),
-        stealth_bleed=link("/strategy/archetypes", _("Stealth & Bleed"), _anchor="bleed"),
-        govern_the_unaligned=card("Govern the Unaligned")
+    {% trans trimmed
+    v5_malkavian=external(
+    "https://www.blackchantry.com/products/current-products/vampire-the-eternal-struggle-fifth-edition/fifth-edition-malkavian/",
+    _("Fifth Edition Malkavian deck")
+    ),
+    v5_tremere=external(
+    "https://www.blackchantry.com/products/current-products/vampire-the-eternal-struggle-fifth-edition/fifth-edition-tremere/",
+    _("Tremere deck")
+    ),
+    stealth_bleed=link("/strategy/archetypes", _("Stealth & Bleed"), _anchor="bleed"),
+    govern_the_unaligned=card("Govern the Unaligned")
     %}
     The way I see it, there are two ways to play this, either beads matter or pool matters. If you’re playing the new
     {{ v5_malkavian }} (or any other kind of {{ stealth_bleed }}), you won’t care about the
@@ -56,11 +56,11 @@
     </p>
     <h4><img src="{{ url_for('static', filename='img/icons/clan-malkavian-v5.svg') }}"> {{ _('Malkavian') }}</h4>
     <p>
-        {% trans trimmed 
-            alexander_silverson=card("Alexander Silverson"),
-            govern_the_unaligned=card("Govern the Unaligned"),
-            bonding=card("Bonding")
-            %}
+        {% trans trimmed
+        alexander_silverson=card("Alexander Silverson"),
+        govern_the_unaligned=card("Govern the Unaligned"),
+        bonding=card("Bonding")
+        %}
         You bleed with {{ alexander_silverson }} using {{ govern_the_unaligned }} and your prey blocks. You play
         {{ bonding }}, making it a bleed for 4 and increasing the stealth. If your prey has intercept,
         you need more stealth or you’re in trouble. Your best case scenario in a combat is that you maneuver to long
@@ -71,13 +71,13 @@
     </p>
     <h4><img src="{{ url_for('static', filename='img/icons/clan-tremere-v5.svg') }}"> {{ _('Tremere') }}</h4>
     <p>
-        {% trans trimmed 
-            trevon_parker=card("Trevon Parker"),
-            govern_the_unaligned=card("Govern the Unaligned"),
-            bonding=card("Bonding"),
-            magnum=card(".44 Magnum"),
-            govern=card("Govern the Unaligned", "Govern"),
-            theft_of_vitae=card("Theft of Vitae")
+        {% trans trimmed
+        trevon_parker=card("Trevon Parker"),
+        govern_the_unaligned=card("Govern the Unaligned"),
+        bonding=card("Bonding"),
+        magnum=card(".44 Magnum"),
+        govern=card("Govern the Unaligned", "Govern"),
+        theft_of_vitae=card("Theft of Vitae")
         %}
         Let’s look at the same scenario. You bleed with {{ trevon_parker }} using {{ govern_the_unaligned }}
         and your prey blocks. You play {{ bonding }}, making it a bleed for 4 and increasing the stealth.
@@ -90,9 +90,9 @@
     </p>
 </div>
 <p>
-    {% trans trimmed 
-        stealth_bleed=link("/strategy/archetypes", _("Stealth & Bleed"), _anchor="bleed"),
-        grinding=link("/strategy/combat", _("grinding"), _anchor="posture")
+    {% trans trimmed
+    stealth_bleed=link("/strategy/archetypes", _("Stealth & Bleed"), _anchor="bleed"),
+    grinding=link("/strategy/combat", _("grinding"), _anchor="posture")
     %}
     The examples above show the key difference in the strategies. The {{ stealth_bleed }} deck has the advantage
     of being able to circumvent all the beads piled up on their prey’s vampires, but relies completely on being able to
@@ -111,32 +111,32 @@
     {% endtrans %}
 </p>
 <p>
-    {% trans trimmed 
-        deflection=card("Deflection"),
-        bum_s_rush=card("Bum’s Rush"),
-        leeching=link("/strategy/bloat", _("leeching"), 'leeching'),
-        villein=card("Villein"),
-        blood_doll=card("Blood Doll")
-        %}
+    {% trans trimmed
+    deflection=card("Deflection"),
+    bum_s_rush=card("Bum’s Rush"),
+    leeching=link("/strategy/bloat", _("leeching"), 'leeching'),
+    villein=card("Villein"),
+    blood_doll=card("Blood Doll")
+    %}
     Stealth & Bleed decks mostly avoid the complexities of combat, and have the huge advantage of being able to ignore
     the beads on vampires. However, this in itself becomes a huge flaw. Refusing to interact with your prey’s vampires
     means they have all the blood they need, and you’ll find yourself bleeding the hell out of your grandprey as you
     hear the word {{ deflection }} said over and over. Grinder decks aren’t as bothered by {{ deflection }} since it
     still costs their prey a bead and they use very little stealth, meaning their grandprey can block. I could talk for
     a while about how not planning for combat leaves you vulnerable to {{ bum_s_rush }} decks or how you’re in trouble
-    when The Wall finally catches you, but I'm about to tell you the biggest downside...Villein! The brutal truth is
-    that you can’t completely ignore the beads on vampires because beads can be moved. {{ leeching }} cards like
+    when The Wall finally catches you, but I'm about to tell you the biggest downside... %(villein)s! The brutal truth
+    is that you can’t completely ignore the beads on vampires because beads can be moved. {{ leeching }} cards like
     {{ villein }}, {{ blood_doll }}, and so on allow Methuselahs to take that blood back to their pool. Which brings me
     to my next question...
     {% endtrans %}
 </p>
 <h2>{{ _('What does a Vampire cost?') }}</h2>
 <p>
-    {% trans trimmed 
-        zillah_s_valley=card("Zillah’s Valley"),
-        bloat_actions=link("/strategy/bloat", _("bloat actions"), 'action-bloating'),
-        govern_the_unaligned=card("Govern The Unaligned"),
-        parity_shift=card("Parity Shift")
+    {% trans trimmed
+    zillah_s_valley=card("Zillah’s Valley"),
+    bloat_actions=link("/strategy/bloat", _("bloat actions"), 'action-bloating'),
+    govern_the_unaligned=card("Govern The Unaligned"),
+    parity_shift=card("Parity Shift")
     %}
     I often hear players talk about vampires capacities as a cost, especially amongst players with a history in other
     card games. It’s not quite so clear cut in V:tES, pool isn’t spent to get your crypt out, it’s invested! Sure, there
@@ -151,12 +151,12 @@
 <div class="tip">
     <h3>{{ _('Bloat example') }}</h3>
     <p>
-        {% trans trimmed 
-            mary_anne_blaire=card("Mary Anne Blaire"),
-            villein=card("Villein"),
-            freak_drive=card("Freak Drive"),
-            govern_the_unaligned=card("Govern the Unaligned"),
-            mary=card("Mary Anne Blaire", "Mary")
+        {% trans trimmed
+        mary_anne_blaire=card("Mary Anne Blaire"),
+        villein=card("Villein"),
+        freak_drive=card("Freak Drive"),
+        govern_the_unaligned=card("Govern the Unaligned"),
+        mary=card("Mary Anne Blaire", "Mary")
         %}
         Let’s look at an example of how a vampire can pay for itself and net you beads. You transfer out
         {{ mary_anne_blaire }}, on your next turn you play {{ villein }} taking back 5. Minion phase, you use her
@@ -179,10 +179,10 @@
 <div class="tip">
     <h3>{{ _('The Coven vs Smiling Jack') }}</h3>
     <p>
-        {% trans trimmed 
-            the_coven=card("The Coven"),
-            smiling_jack=card("Smiling Jack, the Anarch", "Smiling Jack"),
-            coven=card("The Coven", "Coven")
+        {% trans trimmed
+        the_coven=card("The Coven"),
+        smiling_jack=card("Smiling Jack, the Anarch", "Smiling Jack"),
+        coven=card("The Coven", "Coven")
         %}
         These two cards show the distinct differences in the styles. {{ the_coven }} gives you 2 beads every 5 turns,
         but gives out 8 beads to the table before you get it back. {{ smiling_jack }} takes 4 beads for every 1 you
@@ -195,12 +195,12 @@
     </p>
 </div>
 
-<h3>{{ _('Stealth Bleed') }}</h3>
+<h3>{{ _('Stealth & Bleed') }}</h3>
 <p>
     {% trans trimmed
-        sudden_reversal=card("Sudden Reversal"),
-        wash=card("Wash"),
-        parity_shift=card("Parity Shift")
+    sudden_reversal=card("Sudden Reversal"),
+    wash=card("Wash"),
+    parity_shift=card("Parity Shift")
     %}
     If you’re planning on building a deck that ignores beads and looks just at pool, you’ll need to plan for it. Make
     sure you hold your {{ sudden_reversal }} or {{ wash }} until your prey tries to leech beads off their vampires,
@@ -213,11 +213,11 @@
 <h3>{{ _('Toolbox') }}</h3>
 <p>
     {% trans trimmed
-        magnum=card(".44 Magnum"),
-        the_rack=card("The Rack"),
-        hunting_ground=card("Academic Hunting Ground", "Hunting Grounds"),
-        wash=card("Wash"),
-        army_of_rats=card("Army of Rats")
+    magnum=card(".44 Magnum"),
+    the_rack=card("The Rack"),
+    hunting_ground=card("Academic Hunting Ground", "Hunting Grounds"),
+    wash=card("Wash"),
+    army_of_rats=card("Army of Rats")
     %}
     Make sure your prey always loses more beads than you do. Avoid fights you think you’ll lose. The biggest thing I can
     advise here is block your predator only when you need to. It doesn’t matter as much about your predator losing beads
@@ -230,7 +230,7 @@
 </p>
 <p>
     {% trans trimmed
-        archetypes_section=link("/archetypes", _("archetypes section"))
+    archetypes_section=link("/archetypes", _("archetypes section"))
     %}
     There’s much more we could say about how to play each deck, but for that, check the {{ archetypes_section }}.
     {% endtrans %}
