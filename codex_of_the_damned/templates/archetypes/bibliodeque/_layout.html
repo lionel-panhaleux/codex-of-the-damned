@@ -27,3 +27,17 @@
     {% endtrans %}
 </div>
 {%- endmacro %}
+
+{% macro variant( archetype ) -%}
+<div class="tip">
+    <h3>{{ _("Tournament Archetype Variant") }}</h3>
+	<p>
+		{% trans trimmed
+	        link_to_deck=link("/archetypes/"+archetype)
+	    %}
+		This deck is a variant of {{ link_to_deck }}, an archetype having proven itself
+		against at least 25 players since 2008.
+	    {% endtrans %}
+	</p>
+</div>
+{%- endmacro %}
