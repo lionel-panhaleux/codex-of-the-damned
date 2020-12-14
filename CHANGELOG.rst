@@ -1,7 +1,7 @@
 Changelog
 =========
 
-1.15 (unreleased)
+1.15 (2020-12-14)
 -----------------
 
 - Translate Paul Jones' article
