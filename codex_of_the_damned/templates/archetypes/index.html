@@ -681,4 +681,27 @@
 		</tbody>
 	</table>
 </div>
+
+{% trans trimmed
+github=external("https://github.com/lionel-panhaleux/codex-of-the-damned", "Github")
+%}
+<h2>Players Contributions</h2>
+<p>
+	As the game develops, new archetypes are built by players. This section is a way for
+	everyone to share decklists they are comfortable with. Anyone that wants to share a
+	decklist is welcome to do so using {{ github }}. The Codex team will then review it
+	before publishing the decklist.
+</p>
+{% endtrans %}
+<div class="align-left">
+	<table class="wide-column">
+		<tbody>
+			<tr>
+				<td>{{ link('/archetypes/contributions/creeping-sabotage') }}</td>
+				<td>(Weenie POT)</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
 {% endblock %}
