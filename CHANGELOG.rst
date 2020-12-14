@@ -4,7 +4,7 @@ Changelog
 1.15 (unreleased)
 -----------------
 
-- Nothing changed yet.
+- Translate Paul Jones' article
 
 
 1.14 (2020-12-10)
