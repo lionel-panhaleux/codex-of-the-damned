@@ -1,0 +1,141 @@
+{% extends "archetypes/_layout.html" %}
+{% import "archetypes/contributions/_contributors.html" as contributor with context %}
+{% import "archetypes/contributions/creeping-sabotage.json" as deck_json %}
+
+{% block meta %}
+<meta property="decklist" content='{{ deck_json | tojson }}' />
+{% endblock %}
+
+{% block archetype_name %}
+<h1><img src="{{ url_for('static', filename='img/icons/clan-nosferatu-v5.svg') }}"> Creeping Sabotage</h1>
+
+{{ contributor.present( "Martin Cuchet", "2020-12-09" ) }}
+{% endblock %}
+
+{% block archetype %}
+{% trans trimmed
+	img_clan_nosferatu='<img src="%(url)s" />'|format(url=url_for('static', filename='img/icons/clan-nosferatu-v5.svg'))|safe,
+
+	ebanezer_roush=card("Ebanezer Roush"),
+	gustave_brunnelle=card("Gustaphe Brunnelle"),
+	slag=card("Slag"),
+	ryan=card("Ryan"),
+
+	aid_from_bats=card("Aid from Bats"),
+	anarch_revolt=card("Anarch Revolt"),
+	army_of_rats=card("Army of Rats"),
+	bums_rush=card("Bum's Rush"),
+	carlton_van_wyk=card("Carlton van Wyk"),
+	creeping_sabotage=card("Creeping Sabotage"),
+	deep_song=card("Deep Song"),
+	haven_uncovered=card("Haven Uncovered"),
+	immortal_grapple=card("Immortal Grapple"),
+	improvised_tactics=card("Improvised Tactics"),
+	shadow_boxing=card("Shadow Boxing"),
+	slam=card("Slam"),
+	swallowed_by_the_night=card("Swallowed by the Night"),
+	the_warrens=card("The Warrens"),
+	thrown_sewer_lid=card("Thrown Sewer Lid"),
+
+	a_b=link("/strategy/fundamentals", _("A&B"), _anchor="AB"),
+	bleed=link("/strategy/fundamentals", _("Bleed"), _anchor="bleed"),
+	bounce=link("/strategy/fundamentals", _("Bounce"), _anchor="bounce"),
+	combat=link("/strategy/combat", _("Combat")),
+	delay=link("/strategy/fundamentals", _("Delay"), _anchor="delay"),
+	finnish_politics=link("/strategy/archetypes", _("Finnish Politics"), _anchor="finnish_politics"),
+	intercept=link("/strategy/fundamentals", _("Intercept"), _anchor="stealth-and-intercept"),
+	range_management=link("/strategy/combat", _("Range management"), _anchor="range-management"),
+	rush=link("/strategy/archetypes", _("Rush"), _anchor="rush"),
+	s_ce=link("/strategy/combat", _("S:CE"), _anchor="defence"),
+	stealth=link("/strategy/fundamentals", _("Stealth"), _anchor="stealth-and-intercept"),
+	wake_and_unlock=link("/strategy/fundamentals", _("Wake and Unlock"), _anchor="wake_and_unlock"),
+
+	anson_guns=link("/archetypes/bibliodeque/anson-guns"),
+	nananimalism=link("/archetypes/nananimalism")
+%}
+<h2>Overview</h2>
+<p>
+	This deck uses neither bleed nor vote to deliver pool damage but uses {{ anarch_revolt }},
+	{{ army_of_rats }} and {{ creeping_sabotage }}. This way of ousting one's prey disables
+	a lot of usual defensive modules such as {{ bounce }} or {{ delay }}.
+</p>
+<p>
+	This strategy costs a bit of blood and those cards need to be defended. We go mid-cap
+	for speed and {{ a_b }}. The key here is having the upper hand in {{ combat }} hence the
+	use {{ POT }} as a core discipline of the deck as it is great at dealing high damage.
+</p>
+<p>
+	Nosferatu {{ img_clan_nosferatu }} are good at {{ ani }}, {{ obf }} and {{ pot }} disciplines,
+	{{ slag }} and {{ ryan }} for example. Some even have a built-in {{ rush }} action
+	({{ ebanezer_roush }} and {{ gustave_brunnelle }}) but they are not used because of their
+	higher capacity and the low presence of mid-cap {{ POT }} vampires in their grouping.
+</p>
+<p>
+	This {{ rush }} strategy leads to {{ finnish_politics }}. Its point is to use {{ rush }}
+	as a means of negociation with the other players. Played with {{ immortal_grapple }}, it
+	becomes a huge threat to {{ s_ce }} defensive modules. It is also the only defense against an
+	aggressive predator.
+</p>
+<p>
+	We go with {{ bums_rush}} and {{ haven_uncovered }} despite {{ ANI }} giving access to
+	{{ deep_song }}. As the point is to disable {{ bounce }}, it would go against that
+	objective because {{ bleed }} for 2 are nice to bounce.
+</p>
+
+<h2>Range Management</h2>
+<p>
+	{{ range_management }} is sometimes hard to deal with. Here are some {{ POT }} cards
+	that can be used. Each one of them depends on the decks you are expecting
+	to play against:
+</p>
+<p>
+	{{ thrown_sewer_lid }} is great against {{ CEL }} guns decks because of the relatively
+	high density of maneuvers in the deck. {{ anson_guns }} is a common build for this kind
+	of deck.
+</p>
+<p>
+	{{ slam }} works fine against decks with few maneuver cards but yet depend on it.
+	For example, {{ ANI }} decks like {{ nananimalism }} relies heavily on {{ aid_from_bats }}
+	but it does not play other cards to maneuver.
+</p>
+<p>
+	{{ improvised_tactics }} is a more neutral card. It is possible to cycle it away at no cost
+	and even get an extra card from time to time with a vampire with {{ aus }}. This card may
+	be played when few long range decks are expected.
+</p>
+<p>
+	This deck has some other ways to deal with {{ range_management }} as it may be a weakness
+	of {{ POT }} oriented combat modules:
+</p>
+<p>
+	It is possible to use {{ stealth }} to avoid blocks on {{ bums_rush }} to profit from its
+	built-in optional maneuver.
+</p>
+<p>
+	{{ shadow_boxing }} and {{ swallowed_by_the_night }} provide maneuver options. The other
+	parts of those cards are also playable and provide versatility to the deck.
+</p>
+
+<h2>Protecting the payload</h2>
+<p>
+	Running {{ intercept }} and {{ wake_and_unlock }} cards can prevent other players from destroying
+	the deck key cards.
+</p>
+<p>
+	{{ intercept }} with {{ the_warrens }} or {{ carlton_van_wyk }} help blocking those
+	actions. Once one of them has been played, players will have to consider whether or not you
+	still have those cards in hand before attempting to play against you.
+</p>
+<p>
+	{{ wake_and_unlock }} cards are played to maximise our {{ a_b }}. It is possible to lock
+	all of our vampires to do {{ rush }} actions or play {{ creeping_sabotage }} and have
+	them stop our opponents in their tracks.
+</p>
+<p>
+	It is possible to use retaliation {{ rush }} as a threat to a player attempting to destroy
+	one of the ousting card. This kind of dissuasion is best against decks that fear either
+	{{ combat }} as a whole or decks that only use {{ s_ce }}.
+</p>
+{% endtrans %}
+{{ contributor.invite() }}
+{% endblock %}
