@@ -4,7 +4,8 @@ Changelog
 1.16 (unreleased)
 -----------------
 
-- Nothing changed yet.
+- Use KRCG API v2
+- Display translated card images when available
 
 
 1.15 (2020-12-14)
