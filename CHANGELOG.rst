@@ -1,7 +1,7 @@
 Changelog
 =========
 
-1.16 (unreleased)
+1.16 (2020-12-21)
 -----------------
 
 - Use KRCG API v2
