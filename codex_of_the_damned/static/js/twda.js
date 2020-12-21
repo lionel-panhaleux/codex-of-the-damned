@@ -52,7 +52,7 @@ function removeMultiCardSearchCard(card) {
 }
 
 function getDeckWithCards(cards) {
-    fetch(`https://api.krcg.org/deck`, {
+    fetch(`https://v2.api.krcg.org/twda`, {
         method: "POST",
         body: JSON.stringify({ cards: cards }),
         headers: {
@@ -74,15 +74,13 @@ function getDeckWithCards(cards) {
         })
         .then((response) => response.json())
         .catch(function (error) {
-            document.getElementById(
-                "result-message"
-            ).innerHTML = `<p>${error.message}</p>`
+            document.getElementById("result-message").innerHTML = `<p>${error.message}</p>`
             throw error
         })
         .then((data) => displayDeckChoices(data))
 }
 function getDeckByID(element, twda_id) {
-    fetch(encodeURI(`https://api.krcg.org/deck/${twda_id}`), {
+    fetch(encodeURI(`https://v2.api.krcg.org/twda/${twda_id}`), {
         method: "GET",
         headers: { Accept: "application/json" },
     })
@@ -100,23 +98,20 @@ function getDeckByID(element, twda_id) {
         })
         .then((response) => response.json())
         .catch(function (error) {
-            document.getElementById(
-                "result-message"
-            ).innerHTML = `<p>${error.message}</p>`
+            document.getElementById("result-message").innerHTML = `<p>${error.message}</p>`
             throw error
         })
         .then((data) => displayDeck(data))
 
     if (element) {
-        window.history.pushState(
-            { twda_id: twda_id },
-            "TWDA",
-            `?twda_id=${twda_id}`
-        )
+        window.history.pushState({ twda_id: twda_id }, "TWDA", encodeURI(`?twda_id=${twda_id}`))
         for (let sibling of element.parentElement.children) {
             sibling.classList.remove("selected")
         }
         element.classList.add("selected")
+    }
+    for (elem of document.getElementsByClassName("translation-link")) {
+        elem.href = elem.href.split("?")[0] + encodeURI(`?twda_id=${twda_id}`)
     }
 }
 function displayDeckChoices(data) {
@@ -134,15 +129,15 @@ function displayDeckChoices(data) {
     for (const deck of data) {
         list += `
         <tr class="results">
-            <td class="results date" onclick="getDeckByID(this.parentNode, '${
-                deck["twda_id"]
-            }')">${deck["date"]}</td>
-            <td class="results player" onclick="getDeckByID(this.parentNode, '${
-                deck["twda_id"]
-            }')">${wrapText(deck["player"], 40)}</td>
-            <td class="results name" onclick="getDeckByID(this.parentNode, '${
-                deck["twda_id"]
-            }')">${wrapText(deck["name"], 80)}</td>
+            <td class="results date" onclick="getDeckByID(this.parentNode, '${deck.id}')">${deck.date}</td>
+            <td class="results player" onclick="getDeckByID(this.parentNode, '${deck.id}')">${wrapText(
+            deck.player,
+            40
+        )}</td>
+            <td class="results name" onclick="getDeckByID(this.parentNode, '${deck.id}')">${wrapText(
+            deck.name,
+            80
+        )}</td>
         </tr>
         `
     }
@@ -161,11 +156,11 @@ function displayCompletion(input, items_list, data) {
     }
 }
 function fetchCompletion(input, items_list, text) {
-    fetch(encodeURI(`https://api.krcg.org/complete/${text}`), {
+    fetch(encodeURI(`https://v2.api.krcg.org/complete/${text}`), {
         method: "GET",
         headers: {
-            "Accept": "application/json", 
-            "Accept-Language": document.documentElement.lang
+            Accept: "application/json",
+            "Accept-Language": document.documentElement.lang,
         },
     })
         .then(function (response) {
@@ -191,6 +186,9 @@ function clearSearch() {
     document.getElementById("results").innerHTML = ""
     document.getElementById("result-message").innerHTML = ""
     removeComments()
+    for (elem of document.getElementsByClassName("translation-link")) {
+        elem.href = elem.href.split("?")[0]
+    }
 }
 function autocomplete(input) {
     var currentFocus
@@ -266,9 +264,7 @@ function displayDeckFromURL() {
     }
 }
 window.onload = function () {
-    document
-        .getElementById("card-modal")
-        .addEventListener("keydown", modalKeydown)
+    document.getElementById("card-modal").addEventListener("keydown", modalKeydown)
     document.getElementById("card-prev").addEventListener("click", prevCard)
     document.getElementById("card-next").addEventListener("click", nextCard)
     autocomplete(document.getElementById("card_name"))

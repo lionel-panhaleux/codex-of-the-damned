@@ -1,8 +1,5 @@
 function dC(name) {
-    document.getElementById("card-image").src = "https://images.krcg.org/".concat(
-        name,
-        ".jpg"
-    )
+    document.getElementById("card-image").src = "https://static.krcg.org/card/".concat(name, ".jpg")
     document.getElementById("card-prev").style.display = "none"
     document.getElementById("card-next").style.display = "none"
     document.getElementById("card-modal").style.display = "block"
@@ -11,11 +8,11 @@ function hC(name) {
     if (window.matchMedia("(hover: none)").matches) {
         return
     }
-    document.getElementById("card-hover-image").src = 'https://images.krcg.org/'.concat(name, '.jpg');
-    document.getElementById("card-hover").style.display = "block";
+    document.getElementById("card-hover-image").src = "https://static.krcg.org/card/".concat(name, ".jpg")
+    document.getElementById("card-hover").style.display = "block"
 }
 function oC() {
-    document.getElementById("card-hover").style.display = "none";
+    document.getElementById("card-hover").style.display = "none"
 }
 function fname(i) {
     const card = document.getElementById(`card-${i}`)
@@ -39,7 +36,7 @@ function fname(i) {
     return name
 }
 function dCi(i) {
-    document.getElementById(`card-image`).src = "https://images.krcg.org/".concat(fname(i), '.jpg') 
+    document.getElementById(`card-image`).src = "https://static.krcg.org/card/".concat(fname(i), ".jpg")
     var modal = document.getElementById("card-modal")
     for (const c of modal.classList) {
         if (c.startsWith("modal-card-")) {
@@ -96,18 +93,12 @@ function removeComments() {
         comments.innerHTML = ""
     }
 }
-function displayDeck(data, deckname=undefined) {
+function displayDeck(data, deckname = undefined) {
     removeComments()
-    document.getElementById("deck-link").textContent = wrapText(
-        deckname || data.name || "(No Name)",
-        25
-    )
-    if (data.twda_id) {
-        document.getElementById(
-            "deck-link"
-        ).href = `http://www.vekn.fr/decks/twd.htm#${data["twda_id"]}`
-    }
-    else if (data.link) {
+    document.getElementById("deck-link").textContent = wrapText(deckname || data.name || "(No Name)", 25)
+    if (data.id) {
+        document.getElementById("deck-link").href = `http://www.vekn.fr/decks/twd.htm#${data.id}`
+    } else if (data.link) {
         document.getElementById("deck-link").href = data.link
     }
     header_lines = []
@@ -133,14 +124,11 @@ function displayDeck(data, deckname=undefined) {
         cards.push(cardElement(value, index))
     })
     document.getElementById("crypt-list").innerHTML = cards.join("\n")
-    document.getElementById(
-        "library-header").textContent = `Library (${data.library.count})`
+    document.getElementById("library-header").textContent = `Library (${data.library.count})`
     var offset = cards.length
     var cards = new Array()
     for (const section of data.library.cards) {
-        cards.push(
-            `<li><h4>— ${section.type} (${section.count}) —</h4></li>`
-        )
+        cards.push(`<li><h4>— ${section.type} (${section.count}) —</h4></li>`)
         section.cards.forEach((value, index) => {
             cards.push(cardElement(value, offset + index))
         })

@@ -125,7 +125,7 @@ def favicon():
 # retrocompatibility for card images
 @app.route("/card-images/<path:image>")
 def card_image(image):
-    return flask.redirect(f"https://images.krcg.org/{image}")
+    return flask.redirect(f"https://static.krcg.org/card/{image}")
 
 
 # Default route
@@ -161,8 +161,10 @@ def index(lang_code=None, page=None):
                 image_name[4:] + "the" if image_name[:4] == "the " else image_name
             )
             image_name, _ = re.subn(r"""\s|,|\.|-|—|'|:|\(|\)|"|!""", "", image_name)
-            context["og_image"] = f"http://images.krcg.org/{image_name}.jpg"
-            context["og_image_secure"] = f"https://images.krcg.org/{image_name}.jpg"
+            context["og_image"] = f"http://static.krcg.org/card/{image_name}.jpg"
+            context[
+                "og_image_secure"
+            ] = f"https://static.krcg.org/card/{image_name}.jpg"
             context["og_description"] = "Official card text and rulings"
             context["og_title"] = card
             context["og_image_dimensions"] = ["358", "500"]
@@ -217,7 +219,10 @@ def linker():
 
     def translation(locale, name):
         return _link(
-            navigation.HELPER.get(path, {}).get("self"), name=name, locale=locale
+            navigation.HELPER.get(path, {}).get("self"),
+            name=name,
+            locale=locale,
+            _class="translation-link",
         )
 
     def top():
@@ -276,7 +281,7 @@ def display_card():
 
     def card_image(name, hover=True):
         img = (
-            '<img src="https://images.krcg.org/{fname}.jpg"'
+            '<img src="https://static.krcg.org/card/{fname}.jpg"'
             ' alt="{name}" onclick="dC(\'{fname}\')"'
         )
         if hover:

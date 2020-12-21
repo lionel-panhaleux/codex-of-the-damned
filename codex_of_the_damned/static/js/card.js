@@ -6,6 +6,9 @@ function clearResults() {
     document.getElementById("result-image").src = ""
     document.getElementById("card-title").textContent = ""
     document.getElementById("card-text").innerHTML = ""
+    for (elem of document.getElementsByClassName("translation-link")) {
+        elem.href = elem.href.split("?")[0]
+    }
 }
 function getCardImageName(name) {
     name = name.toLowerCase()
@@ -104,10 +107,7 @@ function formatText(text) {
     return text
         .replace(
             /(?:\s\/|\{)([^\/\}]*)(?:\/\s|\})/g,
-            (_, x) =>
-                `<span class="card" onclick="dC('${getCardImageName(
-                    x
-                )}')">${x.replace(" ", " ")}</span>`
+            (_, x) => `<span class="card" onclick="dC('${getCardImageName(x)}')">${x.replace(" ", " ")}</span>`
         )
         .replace(
             RegExp(
@@ -122,30 +122,36 @@ function formatText(text) {
 function displayCard(data, push) {
     clearResults()
     const lang = document.documentElement.lang
-    let title = data["Name"]
-    let text = data["Card Text"]
+    let title = data.name
+    let text = data.card_text
     let translation = undefined
-    if(data["Translations"] && lang in data["Translations"]){
-        title = (
-            data["Translations"][lang]["Name"] + 
-            `<br><span class="translation">${title}</span>`
-        )
+    document.getElementById("result-image").src = data.url
+    if (data._i18n && lang in data._i18n) {
+        title = data._i18n[lang].name + `<br><span class="translation">${title}</span>`
         translation = text
-        text = data["Translations"][lang]["Card Text"]
+        text = data._i18n[lang].card_text
+        fetch(data._i18n[lang].url)
+            .then(function (response) {
+                if (!response.ok) {
+                    throw Error(response.statusText)
+                }
+                return response
+            })
+            .then(function (response) {
+                document.getElementById("result-image").src = data._i18n[lang].url
+            })
+            .catch(function (error) {})
     }
-    document.getElementById("result-image").src = data["Image"]
     document.getElementById("card-title").innerHTML = title
-    document.getElementById("card_info").innerHTML = `#${data["Id"]}<br/>${data[
-        "Set"
-    ].join(" ")}`
+    document.getElementById("card_info").innerHTML = `#${data.id}`
     for (let section of text.split("\n")) {
         pelem = document.createElement("p")
         pelem.innerHTML = formatText(section)
         document.getElementById("card-text").appendChild(pelem)
     }
-    if(translation){
+    if (translation) {
         document.getElementById("card-text").appendChild(document.createElement("hr"))
-        for (let section of translation.split("\n")){
+        for (let section of translation.split("\n")) {
             pelem = document.createElement("p")
             pelem.setAttribute("class", "translation")
             pelem.innerHTML = formatText(section)
@@ -153,25 +159,19 @@ function displayCard(data, push) {
         }
     }
     let rulings_div = document.getElementById("result-rulings-div")
-    if (data["Rulings"]) {
+    if (data.rulings && data.rulings.text) {
         let rulings_list = document.createElement("ul")
         rulings_list.setAttribute("class", "rulings-list")
         rulings_div.appendChild(rulings_list)
-        let ruling_links = {}
-        for (const rlink of data["Rulings Links"]) {
-            ruling_links[rlink["Reference"]] = rlink["URL"]
-        }
-        for (const ruling of data["Rulings"]) {
-            const reference_re = /\[([a-zA-Z0-9]+\s[0-9-]+)\]/g
+        for (const ruling of data.rulings.text) {
+            const reference_re = /\[[a-zA-Z0-9]+\s[0-9-]+\]/g
             let ruling_item = document.createElement("li")
             ruling_item.innerHTML = formatText(ruling.replace(reference_re, ""))
             const references = [...ruling.matchAll(reference_re)]
             for (const reference of references) {
                 // use non-breaking spaces and hyphens
-                const non_breaking_ref = reference[0]
-                    .replace(" ", " ")
-                    .replace(/\[([^\]-]*)-([^\]-]*)\]/g, "[$1‑$2]")
-                const link = ruling_links[reference[1]]
+                const non_breaking_ref = reference[0].replace(" ", " ").replace(/([^-]*)-/g, "$1‑")
+                const link = data.rulings.links[reference[0]]
                 ruling_item.innerHTML += ` <a target="_blank" href="${link}">${non_breaking_ref}</a >`
             }
             rulings_list.appendChild(ruling_item)
@@ -182,22 +182,18 @@ function displayCard(data, push) {
     document.getElementById("results-top").style.display = "block"
     document.getElementById("ruling-submit-tooltip").style.display = "block"
     if (push) {
-        window.history.pushState(
-            { card: data["Name"] },
-            "Card Search",
-            encodeURI(`?card=${data["Name"]}`)
-        )
+        window.history.pushState({ card: data.name }, "Card Search", encodeURI(`?card=${data.name}`))
     }
-    window.document.title = data["Name"]
+    window.document.title = data.name
+    for (elem of document.getElementsByClassName("translation-link")) {
+        elem.href = elem.href.split("?")[0] + encodeURI(`?card=${data.name}`)
+    }
 }
 function getCardByName(card_name, push = false) {
-    fetch(
-        encodeURI(`https://api.krcg.org/card/${card_name.replace("/", "")}`),
-        {
-            method: "GET",
-            headers: { Accept: "application/json" },
-        }
-    )
+    fetch(encodeURI(`https://v2.api.krcg.org/card/${card_name.replace("/", "")}`), {
+        method: "GET",
+        headers: { Accept: "application/json" },
+    })
         .then(function (response) {
             if (!response.ok) {
                 if (response.status >= 500 && response.status < 600) {
@@ -212,9 +208,7 @@ function getCardByName(card_name, push = false) {
         })
         .then((response) => response.json())
         .catch(function (error) {
-            document.getElementById(
-                "result-message"
-            ).innerHTML = `<p>${error.message}</p>`
+            document.getElementById("result-message").innerHTML = `<p>${error.message}</p>`
             throw error
         })
         .then((data) => displayCard(data, push))
@@ -239,11 +233,11 @@ function displayCompletion(input, items_list, data) {
     }
 }
 function fetchCompletion(input, items_list, text) {
-    fetch(encodeURI(`https://api.krcg.org/complete/${text}`), {
+    fetch(encodeURI(`https://v2.api.krcg.org/complete/${text}`), {
         method: "GET",
         headers: {
-            "Accept": "application/json",
-            "Accept-Language": document.documentElement.lang
+            Accept: "application/json",
+            "Accept-Language": document.documentElement.lang,
         },
     })
         .then(function (response) {
@@ -254,9 +248,7 @@ function fetchCompletion(input, items_list, text) {
         })
         .then((response) => response.json())
         .catch(function (error) {
-            document.getElementById(
-                "result-message"
-            ).innerHTML = `<p>${error.message}</p>`
+            document.getElementById("result-message").innerHTML = `<p>${error.message}</p>`
             throw error
         })
         .then((data) => displayCompletion(input, items_list, data))
@@ -338,7 +330,7 @@ function rulingFormSubmit() {
     const link = document.getElementById("rF_link").value
     document.getElementById("rF_submit").disabled = true
     document.getElementById("rf-result").innerHTML = "<p>Please wait...</p>"
-    fetch(encodeURI(`https://api.krcg.org/submit-ruling/${card}`), {
+    fetch(encodeURI(`https://v2.api.krcg.org/submit-ruling/${card}`), {
         method: "POST",
         body: JSON.stringify({ text: text, link: link }),
         headers: {
@@ -349,9 +341,7 @@ function rulingFormSubmit() {
         .then(function (response) {
             if (!response.ok) {
                 if (response.status >= 500 && response.status < 600) {
-                    throw Error(
-                        "KRCG bootstrapping, please try again in a minute."
-                    )
+                    throw Error("KRCG bootstrapping, please try again in a minute.")
                 } else if (response.status == 400) {
                     throw Error("You must provide a valid ruling link.")
                 } else {
@@ -362,9 +352,7 @@ function rulingFormSubmit() {
         })
         .then((response) => response.json())
         .catch(function (error) {
-            document.getElementById(
-                "rf-result"
-            ).innerHTML = `<p>${error.message}</p>`
+            document.getElementById("rf-result").innerHTML = `<p>${error.message}</p>`
             document.getElementById("rF_submit").disabled = false
             throw error
         })

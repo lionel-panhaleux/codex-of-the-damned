@@ -5,19 +5,15 @@
 @font-face {
     font-family: "FontAwesome";
     font-weight: 900;
-    src: url("/static/fonts/fa-solid-900.ttf") format("truetype"),
-        url("/static/fonts/fa-solid-900.svg") format("svg"),
-        url("/static/fonts/fa-solid-900.woff") format("woff"),
-        url("/static/fonts/fa-solid-900.woff2") format("woff2"),
+    src: url("/static/fonts/fa-solid-900.ttf") format("truetype"), url("/static/fonts/fa-solid-900.svg") format("svg"),
+        url("/static/fonts/fa-solid-900.woff") format("woff"), url("/static/fonts/fa-solid-900.woff2") format("woff2"),
         url("/static/fonts/fa-solid-900.eot") format("embedded-opentype");
 }
 @font-face {
     font-family: "FontAwesome Brand";
     font-weight: 400;
-    src: url("/static/fonts/fa-brands-400.ttf") format("truetype"),
-        url("/static/fonts/fa-brands-400.svg") format("svg"),
-        url("/static/fonts/fa-brands-400.woff") format("woff"),
-        url("/static/fonts/fa-brands-400.woff2") format("woff2"),
+    src: url("/static/fonts/fa-brands-400.ttf") format("truetype"), url("/static/fonts/fa-brands-400.svg") format("svg"),
+        url("/static/fonts/fa-brands-400.woff") format("woff"), url("/static/fonts/fa-brands-400.woff2") format("woff2"),
         url("/static/fonts/fa-brands-400.eot") format("embedded-opentype");
 }
 body {
@@ -466,7 +462,7 @@ div.result-message {
     margin: 0.5em 1em 0.5em 0;
     max-width: 100px;
     max-height: 100px;
-    float: left
+    float: left;
 }
 .author > p {
     font-style: italic;
@@ -495,7 +491,7 @@ div.result-message {
     color: white;
 }
 .game-diagram .svg-icon {
-    filter: invert(100%)
+    filter: invert(100%);
 }
 .game-diagram-row {
     border: 0.5em;
@@ -513,7 +509,7 @@ div.result-message {
     margin: 0;
     display: inline-block;
 }
-.game-diagram-opponent-left{
+.game-diagram-opponent-left {
     text-align: left;
     margin-right: auto;
 }
@@ -528,16 +524,16 @@ div.result-message {
     display: block;
 }
 .game-image {
-    margin:0 0.5em;
-    padding:0;
+    margin: 0 0.5em;
+    padding: 0;
     max-width: 70px;
     height: auto;
     display: inline-block;
     position: relative;
 }
 .attached-1 {
-    margin:0;
-    padding:0;
+    margin: 0;
+    padding: 0;
     position: absolute;
     width: 100%;
     height: auto;
@@ -545,26 +541,26 @@ div.result-message {
     left: 1em;
 }
 .attached-2 {
-    margin:0;
-    padding:0;
+    margin: 0;
+    padding: 0;
     position: absolute;
     width: 100%;
     height: auto;
     top: -1.5em;
     left: 1.5em;
 }
-.attached-3{
-    margin:0;
-    padding:0;
+.attached-3 {
+    margin: 0;
+    padding: 0;
     position: absolute;
     width: 100%;
     height: auto;
     top: -2em;
     left: 2em;
 }
-.attached-4{
-    margin:0;
-    padding:0;
+.attached-4 {
+    margin: 0;
+    padding: 0;
     position: absolute;
     width: 100%;
     height: auto;
@@ -678,7 +674,7 @@ form input[type="submit"] {
     color: #306d44;
 }
 .card-results-top {
-    display: block;
+    display: none;
     border: 0;
     padding: 0;
     margin: 2em 0;
@@ -744,11 +740,11 @@ form input[type="submit"] {
     text-decoration: none;
     border: 1px;
     border-radius: 0.5em;
-    border-color: #EC5354;
+    border-color: #ec5354;
     border-style: solid;
     padding: 0.5em;
     margin: 0;
-    color: #EC5354;
+    color: #ec5354;
 }
 .sponsor a:hover,
 .sponsor a:focus {
@@ -798,7 +794,7 @@ form input[type="submit"] {
         margin-bottom: 2em;
     }
     .game-image {
-        margin:0 0.2em;
+        margin: 0 0.2em;
         max-width: 50px;
     }
     .attached-1 {
@@ -809,11 +805,11 @@ form input[type="submit"] {
         top: -1em;
         left: 1em;
     }
-    .attached-3{
+    .attached-3 {
         top: -1.5em;
         left: 1.5em;
     }
-    .attached-4{
+    .attached-4 {
         top: -2em;
         left: 2em;
     }
