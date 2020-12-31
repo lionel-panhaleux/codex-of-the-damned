@@ -1,7 +1,7 @@
 Changelog
 =========
 
-1.18 (unreleased)
+1.18 (2020-12-31)
 -----------------
 
 - Card search: translate sets name
