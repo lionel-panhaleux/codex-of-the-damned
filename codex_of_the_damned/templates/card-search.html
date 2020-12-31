@@ -12,8 +12,8 @@
 <h1>{{ _('Card Search') }}</h1>
 {{ sponsor }}
 <p>
-	{% trans trimmed 
-		vekn=external("http://www.vekn.net/card-lists", "VEKN")
+	{% trans trimmed
+	vekn=external("http://www.vekn.net/card-lists", "VEKN")
 	%}
 	Official cards text provided by {{ vekn }}. All rulings give a link to the actual
 	official ruling made by successive Rules Directors.
@@ -32,9 +32,10 @@
 	<div class="card-results" id="results">
 		<div class="result-image-div" id="result-image-div">
 			<img class="result-image" id="result-image" />
+			<div class="image-footer" id="image-footer"></div>
+			<div class="card-sets" id="sets-info"></div>
 		</div>
 		<div class="result-text" , id="result-text-div">
-			<p class="subtitle" id="card_info"></p>
 			<h3 id="card-title"></h3>
 			<p id="card-text"></p>
 		</div>

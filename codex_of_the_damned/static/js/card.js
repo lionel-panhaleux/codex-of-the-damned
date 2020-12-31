@@ -119,6 +119,27 @@ function formatText(text) {
             (x) => disc_map[x]
         )
 }
+function isInPrint(set) {
+    for (detail of set[1]) {
+        if ("release_date" in detail && detail.release_date >= "2017-05-01" && !set[0].match(/(P|p)romo/g)) {
+            if ("precon" in detail && detail.precon == "EC Berlin Edition") {
+                return false
+            }
+            return true
+        }
+    }
+    return false
+}
+function toggleFold() {
+    let text = this.textContent
+    if (text.match(/▶︎/gu)) {
+        this.textContent = text.replace(/▶︎/gu, "▼")
+        document.getElementById("sets-info").style.display = "block"
+    } else {
+        this.textContent = text.replace(/▼/gu, "▶︎")
+        document.getElementById("sets-info").style.display = "none"
+    }
+}
 function displayCard(data, push) {
     clearResults()
     const lang = document.documentElement.lang
@@ -143,7 +164,27 @@ function displayCard(data, push) {
             .catch(function (error) {})
     }
     document.getElementById("card-title").innerHTML = title
-    document.getElementById("card_info").innerHTML = `#${data.id}`
+    let image_footer = document.getElementById("image-footer")
+    image_footer.innerHTML = ""
+    pelem = document.createElement("p")
+    pelem.classList.add("card-id")
+    pelem.textContent = `#${data.id}`
+    image_footer.appendChild(pelem)
+    pelem = document.createElement("p")
+    pelem.classList.add("card-print")
+    if (Object.entries(data.sets).some(isInPrint)) {
+        pelem.textContent = "Currently in print"
+    } else {
+        pelem.textContent = "Not in print"
+    }
+    let sets_div = document.getElementById("sets-info")
+    if (window.getComputedStyle(sets_div).display === "none") {
+        pelem.textContent += " ▶︎"
+    } else {
+        pelem.textContent += " ▼"
+    }
+    pelem.addEventListener("click", toggleFold)
+    image_footer.appendChild(pelem)
     for (let section of text.split("\n")) {
         pelem = document.createElement("p")
         pelem.innerHTML = formatText(section)
@@ -157,6 +198,51 @@ function displayCard(data, push) {
             pelem.innerHTML = formatText(section)
             document.getElementById("card-text").appendChild(pelem)
         }
+    }
+    sets_div.innerHTML = ""
+    let sets = Object.entries(data.sets)
+    sets.sort(function (a, b) {
+        a_date = Math.max(...a[1].map((o) => ("release_date" in o ? new Date(o.release_date) : new Date("1990-01-01"))))
+        b_date = Math.max(...b[1].map((o) => ("release_date" in o ? new Date(o.release_date) : new Date("1990-01-01"))))
+        const ret = b_date - a_date
+        if (ret === 0) {
+            return a[0].localeCompare(b[0])
+        }
+        return ret
+    })
+    for (let [name, info] of sets) {
+        let set_info = document.createElement("div")
+        set_info.classList.add("set-info")
+        let set_name = document.createElement("p")
+        set_name.classList.add("set-name")
+        if (isInPrint([name, info])) {
+            set_name.innerHTML = `<strong>${name}</strong>`
+        } else {
+            set_name.textContent = name
+        }
+        set_info.appendChild(set_name)
+        let set_detail = document.createElement("div")
+        set_detail.classList.add("set-detail")
+        set_info.appendChild(set_detail)
+        for (card_print of info) {
+            let set_print = document.createElement("p")
+            set_print.classList.add("set-print")
+            set_print.textContent = ""
+            if ("rarity" in card_print) {
+                set_print.textContent += card_print.rarity
+            }
+            if ("precon" in card_print) {
+                set_print.textContent += card_print.precon
+            }
+            if ("copies" in card_print) {
+                set_print.textContent += ` (${card_print.copies})`
+            }
+            if ("release_date" in card_print) {
+                set_print.textContent += ` ${card_print.release_date.replace(/([^-]*)-/g, "$1‑")}`
+            }
+            set_detail.appendChild(set_print)
+        }
+        sets_div.appendChild(set_info)
     }
     let rulings_div = document.getElementById("result-rulings-div")
     if (data.rulings && data.rulings.text) {

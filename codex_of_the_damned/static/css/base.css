@@ -274,6 +274,63 @@ div.results {
     border-radius: 0;
     margin: 1em 0;
 }
+div.card-sets {
+    padding: 0;
+    border-radius: 0;
+    margin: 0;
+    display: none;
+    border-top: solid 1px #000000;
+}
+div.image-footer {
+    padding: 0;
+    border-radius: 0;
+    margin: 1em 0;
+    display: flex;
+}
+div.image-footer p.card-id {
+    display: inline;
+    align-self: flex-start;
+    margin: 0;
+}
+div.image-footer p.card-print {
+    display: inline;
+    align-self: flex-end;
+    text-align: right;
+    margin: 0;
+    margin-left: auto;
+    cursor: pointer;
+}
+div.set-info {
+    padding: 0;
+    border-radius: 0;
+    margin: 0.8em 0;
+    display: flex;
+    justify-content: space-between;
+}
+div.set-info p.set-name {
+    margin-right: auto;
+    align-self: flex-start;
+    text-align: left;
+    font-size: 0.9em;
+    margin: 0.2em 0;
+    display: inline;
+}
+div.set-detail {
+    padding: 0;
+    border-radius: 0;
+    margin: auto 0;
+    font-size: 0.7em;
+    display: inline-flex;
+    flex-direction: column;
+    align-self: flex-end;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+div.set-detail p.set-print {
+    text-align: right;
+    display: inline;
+    margin: 0.2em 0;
+}
 td {
     text-align: left;
     text-overflow: ellipsis;
@@ -710,6 +767,9 @@ form input[type="submit"] {
     display: inline-block;
     border: 0;
     margin: 0 1em 0 0;
+}
+.result-text h3 {
+    margin: 0 0 0.5em 0;
 }
 .result-rulings {
     margin: 0;

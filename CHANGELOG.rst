@@ -4,7 +4,7 @@ Changelog
 1.17 (unreleased)
 -----------------
 
-- Nothing changed yet.
+- Card search: display card set information
 
 
 1.16 (2020-12-21)
