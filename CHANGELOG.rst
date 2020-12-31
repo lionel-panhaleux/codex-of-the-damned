@@ -1,7 +1,7 @@
 Changelog
 =========
 
-1.17 (unreleased)
+1.17 (2020-12-31)
 -----------------
 
 - Card search: display card set information
