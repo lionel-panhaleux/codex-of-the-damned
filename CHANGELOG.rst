@@ -4,7 +4,7 @@ Changelog
 1.18 (unreleased)
 -----------------
 
-- Nothing changed yet.
+- Card search: translate sets name
 
 
 1.17 (2020-12-31)

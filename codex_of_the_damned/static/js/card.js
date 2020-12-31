@@ -215,6 +215,11 @@ function displayCard(data, push) {
         set_info.classList.add("set-info")
         let set_name = document.createElement("p")
         set_name.classList.add("set-name")
+        if (data._i18n && lang in data._i18n) {
+            if (name in data._i18n[lang].sets) {
+                name = data._i18n[lang].sets[name]
+            }
+        }
         if (isInPrint([name, info])) {
             set_name.innerHTML = `<strong>${name}</strong>`
         } else {
