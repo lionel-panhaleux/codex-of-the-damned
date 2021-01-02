@@ -148,7 +148,9 @@ function displayCard(data, push) {
     let translation = undefined
     document.getElementById("result-image").src = data.url
     if (data._i18n && lang in data._i18n) {
-        title = data._i18n[lang].name + `<br><span class="translation">${title}</span>`
+        if ("name" in data._i18n[lang]) {
+            title = data._i18n[lang].name + `<br><span class="translation">${title}</span>`
+        }
         translation = text
         text = data._i18n[lang].card_text
         fetch(data._i18n[lang].url)
