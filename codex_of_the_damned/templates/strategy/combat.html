@@ -1,11 +1,11 @@
-{% extends "strategy/_layout.html" %}
+{% extends "layout.html" %}
 
 {% block content %}
 <h1 id="combat">{{ _('Combat') }}</h1>
 <p>
     {% trans trimmed
-        bums_rush=card("Bum’s Rush"),
-        rush_decks=link("/strategy/archetypes", _("rush decks"), 'rush')
+    bums_rush=card("Bum’s Rush"),
+    rush_decks=link("/strategy/archetypes", _("rush decks"), 'rush')
     %}
     Combat occurs when a block succeeds, but can also be provoked directly using actions
     like {{ bums_rush }}: because of this card, other actions with similar effects
@@ -15,14 +15,14 @@
 </p>
 <h2 id="posture">{{ _('Posture') }}</h2>
 {% trans trimmed
-    a_b=link("/strategy/fundamentals", _("A&B"), 'AB'),
-    bloat=link("/strategy/bloat", _("bloat")),
-    table_balance=link("/strategy/table-talk", _("table balance"), "table-balance"),
-    rush_decks=link("/strategy/archetypes", _("Rush decks"), "rush"),
-    blood_pool_and_grinding_beads=link(
-        "/strategy/articles/basic/blood-pool-and-grinding-beads", 
-        _("Blood, Pool and Grinding Beads")
-    )
+a_b=link("/strategy/fundamentals", _("A&B"), 'AB'),
+bloat=link("/strategy/bloat", _("bloat")),
+table_balance=link("/strategy/table-talk", _("table balance"), "table-balance"),
+rush_decks=link("/strategy/archetypes", _("Rush decks"), "rush"),
+blood_pool_and_grinding_beads=link(
+"/strategy/articles/basic/blood-pool-and-grinding-beads",
+_("Blood, Pool and Grinding Beads")
+)
 %}
 <p>
     Combat does not help reducing the prey's pool, at least not directly.
@@ -50,9 +50,9 @@
 <h2 id="dealing-damage">{{ _('Dealing damage') }}</h2>
 <p>
     {% trans trimmed
-        aid_from_bats=card("Aid from Bats"),
-        carrion_crows=card("Carrion Crows"),
-        theft_of_vitae=card("Theft of Vitae")
+    aid_from_bats=card("Aid from Bats"),
+    carrion_crows=card("Carrion Crows"),
+    theft_of_vitae=card("Theft of Vitae")
     %}
     On the discipline side, {{ pot }} and {{ thn }} are great at dealing high damage.
     {{ ani }} has a strong combination with {{ aid_from_bats }} and
@@ -101,18 +101,19 @@
     <li>{{ for }} {{ _('with') }} {{ card("Dawn Operation") }}.</li>
     <li>
         {% trans trimmed
-            img_clan_gargoyle='<img src="%(url)s">'|format(url=url_for('static', filename='img/icons/clan-gargoyle.svg'))|safe,
-            raking_talons=card("Raking Talons")
+        img_clan_gargoyle='<img src="%(url)s">'|format(url=url_for('static',
+        filename='img/icons/clan-gargoyle.svg'))|safe,
+        raking_talons=card("Raking Talons")
         %}
         Gargoyles ({{img_clan_gargoyle}}) with {{ raking_talons }}.
         {% endtrans %}
     </li>
 </ul>
-<div class="tip">
+<div class="insert tip">
     <h3>{{ _('Using aggravated damage') }}</h3>
     {% trans trimmed
-        claws_of_the_dead=card("Claws of the Dead"),
-        rötschreck=card("Rötschreck")
+    claws_of_the_dead=card("Claws of the Dead"),
+    rötschreck=card("Rötschreck")
     %}
     <p>
         Using aggravated damage while acting is tricky,
@@ -131,10 +132,10 @@
     {% endtrans %}
 </div>
 {% trans trimmed
-    arms_of_the_abyss=card("Arms of the Abyss"),
-    devil_channel_back=card("Devil Channel: Back"),
-    octopod=card("Octopod"),
-    target_vitals=card("Target Vitals")
+arms_of_the_abyss=card("Arms of the Abyss"),
+devil_channel_back=card("Devil Channel: Back"),
+octopod=card("Octopod"),
+target_vitals=card("Target Vitals")
 %}
 <p>
     Apart from dealing more damage each strike, <strong>additional strikes</strong>
@@ -148,7 +149,7 @@
     to increase damage, available for every minion at no cost.
 </p>
 {% endtrans %}
-<div class="tip">
+<div class="insert tip">
     <h3>{{ _('Weapons') }}</h3>
     <p>
         {% trans trimmed %}
@@ -159,7 +160,7 @@
     <ul>
         <li>
             {% trans trimmed
-                weighted_walking_stick=card("Weighted Walking Stick")
+            weighted_walking_stick=card("Weighted Walking Stick")
             %}
             {{ weighted_walking_stick }}:
             A weapon that can be wielded without losing an action to equip it.
@@ -168,8 +169,8 @@
         </li>
         <li>
             {% trans trimmed
-                magnum=card(".44 Magnum"),
-                concealed_weapon=card("Concealed Weapon")
+            magnum=card(".44 Magnum"),
+            concealed_weapon=card("Concealed Weapon")
             %}
             {{ magnum }}:
             An additional damage each strike, together with a manoeuver
@@ -181,7 +182,7 @@
         </li>
         <li>
             {% trans trimmed
-                ivory_bow=card("Ivory Bow")
+            ivory_bow=card("Ivory Bow")
             %}
             {{ ivory_bow }}: Although unique, 1 pool for an aggravated ranged damage
             each strike is a bargain.
@@ -189,7 +190,7 @@
         </li>
         <li>
             {% trans trimmed
-                sniper_rifle=card("Sniper Rifle")
+            sniper_rifle=card("Sniper Rifle")
             %}
             {{ sniper_rifle }}:
             Although only useful when blocking, its ability to set the range
@@ -198,9 +199,9 @@
         </li>
         <li>
             {% trans trimmed
-                assault_rifle=card("Assault Rifle"),
-                magnum=card(".44 Magnum"),
-                alastor=card("Alastor")
+            assault_rifle=card("Assault Rifle"),
+            magnum=card(".44 Magnum"),
+            alastor=card("Alastor")
             %}
             {{ assault_rifle }}:
             A stronger version of the {{ magnum }}.
@@ -211,8 +212,9 @@
         </li>
         <li>
             {% trans trimmed
-                blade_of_bellona=card("Blade of Bellona"),
-                img_clan_salubri_anti='<img src="%(url)s">'|format(url=url_for('static', filename='img/icons/clan-salubri-anti.svg'))|safe
+            blade_of_bellona=card("Blade of Bellona"),
+            img_clan_salubri_anti='<img src="%(url)s">'|format(url=url_for('static',
+            filename='img/icons/clan-salubri-anti.svg'))|safe
             %}
             {{ blade_of_bellona }}:
             An additional damage and optional manoeuver at no cost, a real bargain for
@@ -268,9 +270,9 @@
 </ul>
 <p>
     {% trans trimmed
-        flash_grenade=card("Flash Grenade"),
-        obedience=card("Obedience"),
-        mental_maze=card("Mental Maze")
+    flash_grenade=card("Flash Grenade"),
+    obedience=card("Obedience"),
+    mental_maze=card("Mental Maze")
     %}
     It is worth noting that {{ flash_grenade }}
     is an option for any minion, and also that big capacity vampires have access to
@@ -279,14 +281,15 @@
     although only when reacting to an action.
     {% endtrans %}
 </p>
-<div class="tip">
+<div class="insert tip">
     {% trans trimmed
-        nsa_trio=card("NSA Trio"),
-        immortal_grapple=card("Immortal Grapple"),
-        psyche=card("Psyche!"),
-        telepathic_tracking=card("Telepathic Tracking"),
-        relentless_reaper=card("Relentless Reaper"),
-        sanguine_entrapment=card("Sanguine Entrapment")
+    nsa_trio=card("NSA Trio"),
+    immortal_grapple=card("Immortal Grapple"),
+    psyche=card("Psyche!"),
+    telepathic_tracking=card("Telepathic Tracking"),
+    relentless_reaper=card("Relentless Reaper"),
+    sanguine_entrapment=card("Sanguine Entrapment"),
+    rush_decks=link("/strategy/archetypes", _("Rush decks"), "rush")
     %}
     <h3>How to deal with Strike: Combat Ends (S:CE)</h3>
     <p>
@@ -295,7 +298,7 @@
     <ul>
         <li>
             {{ nsa_trio }} is available to everyone but
-            is not an option for <em>rush</em> decks,
+            is not an option for {{ rush_decks }},
             as their combat may not be the result of a block.
         </li>
         <li>
@@ -324,7 +327,7 @@
 <ul>
     <li>
         {% trans trimmed
-            glancing_blow=card("Glancing Blow")
+        glancing_blow=card("Glancing Blow")
         %}
         {{ glancing_blow }} prevents only one damage,
         that makes it a viable option only for saving an ally.
@@ -345,9 +348,9 @@
 </ul>
 </p>
 {% trans trimmed
-    dodge=card("Dodge"),
-    coma=card("Coma"),
-    entombment=card("Entombment")
+dodge=card("Dodge"),
+coma=card("Coma"),
+entombment=card("Entombment")
 %}
 <p>
     <strong>Dodging</strong> is also a good defensive option, and the simple

@@ -12,31 +12,31 @@
 
 {% block archetype %}
 {% trans trimmed
-    anarch_convert=card("Anarch Convert"),
-    anarch_revolt=card("Anarch Revolt"),
-    smiling_jack_the_anarch=card("Smiling Jack, The Anarch"),
-    constant_revolution=card("Constant Revolution"),
-    monkey_wrench=card("Monkey Wrench"),
-    concealed_weapon=card("Concealed Weapon"),
-    sniper_rifle=card("Sniper Rifle"),
-    forced_awakening=card("Forced Awakening"),
-    my_enemy_s_enemy=card("My Enemy's Enemy"),
-    tribute_to_the_master=card("Tribute to the Master"),
-    powerbase_montreal=card("Powerbase: Montreal"),
-    ashur_tablets=card("Ashur Tablets"),
-    eagle_s_sight=card("Eagle's Sight"),
-    the_parthenon=card("The Parthenon"),
-    magnum=card(".44 Magnum"),
-    ivory_bow=card("Ivory Bow"),
-    aranthebes_the_immortal=card("Aranthebes, the Immortal"),
-    mr_winthrop=card("Mr. Winthrop"),
-    muddled_vampire_hunter=card("Muddled Vampire Hunter"),
-    bowl_of_convergence=card("Bowl of Convergence"),
-    madness_network=card("Madness Network"),
-    classic_deal=link("/strategy/table-talk", _("classic deal"), _anchor="negociation"),
-    christian_chenard_s_deck=link("/deck-search", _("Christian Chénard's deck"), twda_id="2k8naqtroisrivieres"),
-    pascal_bertrand_s_deck=link("/deck-search", _("Pascal Bertrand's deck"), twda_id="2k9eclcq"),
-    img_clan_malkavian='<img src="%(url)s" />'|format(url=url_for('static', filename='img/icons/clan-malkavian.svg'))|safe
+anarch_convert=card("Anarch Convert"),
+anarch_revolt=card("Anarch Revolt"),
+smiling_jack_the_anarch=card("Smiling Jack, The Anarch"),
+constant_revolution=card("Constant Revolution"),
+monkey_wrench=card("Monkey Wrench"),
+concealed_weapon=card("Concealed Weapon"),
+sniper_rifle=card("Sniper Rifle"),
+forced_awakening=card("Forced Awakening"),
+my_enemy_s_enemy=card("My Enemy's Enemy"),
+tribute_to_the_master=card("Tribute to the Master"),
+powerbase_montreal=card("Powerbase: Montreal"),
+ashur_tablets=card("Ashur Tablets"),
+eagle_s_sight=card("Eagle's Sight"),
+the_parthenon=card("The Parthenon"),
+magnum=card(".44 Magnum"),
+ivory_bow=card("Ivory Bow"),
+aranthebes_the_immortal=card("Aranthebes, the Immortal"),
+mr_winthrop=card("Mr. Winthrop"),
+muddled_vampire_hunter=card("Muddled Vampire Hunter"),
+bowl_of_convergence=card("Bowl of Convergence"),
+madness_network=card("Madness Network"),
+classic_deal=link("/strategy/table-talk", _("classic deal"), _anchor="negociation"),
+christian_chenard_s_deck=link("/deck-search", _("Christian Chénard's deck"), id="2k8naqtroisrivieres"),
+pascal_bertrand_s_deck=link("/deck-search", _("Pascal Bertrand's deck"), id="2k9eclcq"),
+img_clan_malkavian='<img src="%(url)s" />'|format(url=url_for('static', filename='img/icons/clan-malkavian.svg'))|safe
 %}
 <h2>Highlights</h2>
 <p>
@@ -103,7 +103,7 @@
 {% endblock %}
 
 {% block errata %}
-<div class="warning">
+<div class="insert warn">
     <h3>Errata</h3>
     {{ erratum.pentextmsubversion( 'remove' ) }}
 </div>

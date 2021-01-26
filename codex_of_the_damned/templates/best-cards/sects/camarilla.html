@@ -3,7 +3,7 @@
 
 {% block content %}
 <h1>Camarilla</h1>
-<div class="tip">
+<div class="insert tip">
     <p>
         {% trans trimmed %}
         The Camarilla is the first sect (publication-wise), and it offers
@@ -31,9 +31,9 @@ of one is only paid when the unlock effect is needed.
 {% endcall %}
 
 {% call layout.card_column("Alastor", decks=47, copies="1-5") %}
-{% trans trimmed 
-    helicopter=card("Helicopter"),
-    assault_rifle=card("Assault Rifle")
+{% trans trimmed
+helicopter=card("Helicopter"),
+assault_rifle=card("Assault Rifle")
 %}
 Although only available for <em>Justicars</em> and <em>Inner Circles</em>, this vote let
 them fetch costly equipment at a bargain, like an {{ helicopter }} or an
@@ -43,8 +43,8 @@ dreadful.
 {% endcall %}
 
 {% call layout.card_column("Judgment: Camarilla Segregation", decks=32, copies="1-3") %}
-{% trans trimmed 
-    kine_resources_contested=card("Kine Resources Contested")
+{% trans trimmed
+kine_resources_contested=card("Kine Resources Contested")
 %}
 A decent pool damaging action, although more efficient votes like
 {{ kine_resources_contested }} are often preferred, it can also find its place
@@ -72,11 +72,11 @@ on the Methusalah who played it.
 {% endcall %}
 
 {% call layout.card_column("Praxis Seizure: Rome", decks=26, copies="1") %}
-{% trans trimmed 
-    img_clan_brujah='<img src="%(url)s" />'|format(url=url_for('static', filename='img/icons/clan-brujah.svg'))|safe,
-    new_carthage=card("New Carthage"),
-    carthage_remembered=card("Carthage Remembered")
-    %}
+{% trans trimmed
+img_clan_brujah='<img src="%(url)s" />'|format(url=url_for('static', filename='img/icons/clan-brujah.svg'))|safe,
+new_carthage=card("New Carthage"),
+carthage_remembered=card("Carthage Remembered")
+%}
 Some Praxis give a capacity bonus to a specific clan. The Brujah {{ img_clan_brujah }}
 one is slightly more played because they have powerful cards for their
 <em>Princes</em> like {{ new_carthage }} and {{ carthage_remembered }}.
@@ -84,8 +84,8 @@ one is slightly more played because they have powerful cards for their
 {% endcall %}
 
 {% call layout.card_column("Anathema", decks=22, copies="1-4") %}
-{% trans trimmed 
-    img_clan_brujah='<img src="%(url)s" />'|format(url=url_for('static', filename='img/icons/clan-brujah.svg'))|safe
+{% trans trimmed
+img_clan_brujah='<img src="%(url)s" />'|format(url=url_for('static', filename='img/icons/clan-brujah.svg'))|safe
 %}
 A powerful bloat device, although a bit tricky to land: one needs both the stealth
 and votes to get it through, and a combat module strong enough to trigger it.

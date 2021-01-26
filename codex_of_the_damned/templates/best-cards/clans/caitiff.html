@@ -3,7 +3,7 @@
 
 {% block content %}
 <h1><img src="{{ url_for('static', filename='img/icons/clan-caitiff.svg') }}"> Caitiff</h1>
-<div class="tip">
+<div class="insert tip">
     <p>
         {% trans trimmed %}
         Caitiff are rarely played on their own, but they often offer low capacity vampires
@@ -23,9 +23,9 @@ to make vampires Anarch, and can even be used to smooth crypt rotation a bit.
 
 {% call layout.card_column("Franciscus", decks=30, copies="1") %}
 {% trans trimmed
-    zoe=card("Zöe"),
-    isabel_de_leon=card("Isabel de Leon"),
-    weenie_aus=link("/archetypes/weenie-aus")
+zoe=card("Zöe"),
+isabel_de_leon=card("Isabel de Leon"),
+weenie_aus=link("/archetypes/weenie-aus")
 %}
 Seen in {{aus}} builds, alongside {{ zoe }} and {{ isabel_de_leon }},
 he is often included in {{ weenie_aus }} decks.
@@ -34,9 +34,9 @@ he is often included in {{ weenie_aus }} decks.
 
 {% call layout.card_column("Lisa Noble", decks=29, copies="1") %}
 {% trans trimmed
-    zip=card("Zip"),
-    stick=card("Stick"),
-    aid_from_bats=card("Aid from Bats")
+zip=card("Zip"),
+stick=card("Stick"),
+aid_from_bats=card("Aid from Bats")
 %}
 Seen in {{ani}} builds, alongside {{ zip }} and {{ stick }},
 her downside is not an issue when coupled with {{ aid_from_bats }}.
@@ -45,7 +45,7 @@ her downside is not an issue when coupled with {{ aid_from_bats }}.
 
 {% call layout.card_column("Maldavis", decks=26, copies="1") %}
 {% trans trimmed
-    neighbor_john=card("Neighbor John")
+neighbor_john=card("Neighbor John")
 %}
 Often seen in {{AUS}} builds, sometimes alongside {{ neighbor_john }},
 her downside is rarely a problem and 4 pool for superior {{AUS}} is relatively cheap.
@@ -62,7 +62,7 @@ She is most often seen algonside other Caitiff in very fast crypts.
 
 {% call layout.card_column("Igo the Hungry", decks=23, copies="1") %}
 {% trans trimmed
-    antoinette_du_champ=card("Antoinette DuChamp")
+antoinette_du_champ=card("Antoinette DuChamp")
 %}
 Two disciplines for 1 pool is relatively cheap, he is often seen alongside
 {{ antoinette_du_champ }}.
@@ -71,8 +71,8 @@ Combined with other Caitiff, he can provide a very fast crypt for swarm builds.
 {% endcall %}
 
 {% call layout.card_column("Mukhtar Bey", decks=22, copies="1-2") %}
-{% trans trimmed 
-    victor_pelletier=card("Victor Pelletier")
+{% trans trimmed
+victor_pelletier=card("Victor Pelletier")
 %}
 The oldest Caitiff, he is often seen alongside other titled Camarilla vampires.
 His {{PRE}}{{obf}} disciplines combination is a nice fit for political decks
@@ -82,7 +82,7 @@ and his 7 pool cost is relatively low. A frequent companion of {{ victor_pelleti
 
 {% call layout.card_column("Eddie Gaines", decks=19, copies="1-2") %}
 {% trans trimmed
-    weenie_dem=link("/archetypes/weenie-dem")
+weenie_dem=link("/archetypes/weenie-dem")
 %}
 Althouth his downside can be a real bummer, his low cost for {{dem}} makes him a possible
 inclusion in very fast versions of the {{ weenie_dem }} archetype.

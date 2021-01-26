@@ -3,7 +3,7 @@
 
 {% block content %}
 <h1>{{ aus }} {{ _("Auspex") }}</h1>
-<div class="tip">
+<div class="insert tip">
     <p>
         {% trans trimmed %}
         {{ aus }} provides the best intercept in the game, plus the
@@ -50,9 +50,9 @@ solid permanent intercept at no cost.
 
 {% call layout.card_column("Eagle's Sight", decks=315, copies="2-6") %}
 {% trans trimmed
-	falcons_eye=card("Falcon's Eye"),
-	anneke=card("Anneke"),
-	wall=link("/strategy/archetypes", _("wall decks"), _anchor="wall")
+falcons_eye=card("Falcon's Eye"),
+anneke=card("Anneke"),
+wall=link("/strategy/archetypes", _("wall decks"), _anchor="wall")
 %}
 Only three cards in the game allow the interception of cross
 table actions or actions directed to other players, this
@@ -67,9 +67,9 @@ table balance and avoid early ousts.
 
 {% call layout.card_column("Enhanced Senses", decks=287, copies="2-4") %}
 {% trans trimmed
-	my_enemy=card("My Enemy's Enemy"),
-	precognition=card("Precognition"),
-	spirits_touch=card("Spirit's Touch")
+my_enemy=card("My Enemy's Enemy"),
+precognition=card("Precognition"),
+spirits_touch=card("Spirit's Touch")
 %}
 An efficient intercept enhancer. Other enhancers are welcome
 as the same reaction card can’t be played twice on a single

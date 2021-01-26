@@ -3,12 +3,12 @@
 
 {% block content %}
 <h1><img src="{{ url_for('static', filename='img/icons/clan-gangrel.svg') }}"> Gangrel</h1>
-<div class="tip">
+<div class="insert tip">
     <p>
-        {% trans trimmed 
-            stanislava=link("/archetypes/stanislava"),
-            renegade_assault=link("/archetypes/renegade-assault"),
-            renegade_garou=card("Renegade Garou")
+        {% trans trimmed
+        stanislava=link("/archetypes/stanislava"),
+        renegade_assault=link("/archetypes/renegade-assault"),
+        renegade_garou=card("Renegade Garou")
         %}
         The Gangrel and their unique {{ pro }} discipline are versatile and provided
         many different archetypes. Some of the most successful were the {{ stanislava }}
@@ -35,7 +35,7 @@ one of the most versatile tool of {{ pro }}.
 
 {% call layout.card_column("Earth Control", decks=93, copies="3-6") %}
 {% trans trimmed
-    form_of_mist=card("Form of Mist")
+form_of_mist=card("Form of Mist")
 %}
 2 stealth at superior {{ PRO }} is a strong stealth modifier, totally worth 1 blood.
 Combined with {{ form_of_mist }}, this makes Gangrel and their antitribu
@@ -45,7 +45,7 @@ almost as stealthy as any vampire with {{ obf }}.
 
 {% call layout.card_column("Claws of the Dead", decks=70, copies="1-6") %}
 {% trans trimmed
-    immortal_grapple=card("Immortal Grapple")
+immortal_grapple=card("Immortal Grapple")
 %}
 The most dreaded combat card of the {{ pro }} discipline, it is used
 <strong>after</strong> strikes have been chosen by both vampires and never wasted
@@ -64,8 +64,8 @@ An excellent disciplines combination for just 4 pool, he gets even included in m
 
 {% call layout.card_column("Homunculus", decks=66, copies="1-3") %}
 {% trans trimmed
-    madness_network=card("Madness Network"),
-    enkil_cog=card("Enkil Cog")
+madness_network=card("Madness Network"),
+enkil_cog=card("Enkil Cog")
 %}
 A powerful tool, especially when combined with the cards that allow to act
 during other players turn: {{ madness_network }} and {{ enkil_cog }}.
@@ -74,9 +74,9 @@ during other players turn: {{ madness_network }} and {{ enkil_cog }}.
 
 {% call layout.card_column("Aksinya Daclau", decks=62, copies="2-4") %}
 {% trans trimmed
-    cybele=card("Cybele"),
-    girls_will_find_inner_circles=link("/archetypes/girls-will-find-inner-circle")
-    %}
+cybele=card("Cybele"),
+girls_will_find_inner_circles=link("/archetypes/girls-will-find-inner-circle")
+%}
 Star of the Gangrel antitribu, her ability is unique.
 She gave birth, alongside {{ cybele }}, to the
 {{ girls_will_find_inner_circles }} archetype.
@@ -85,8 +85,8 @@ She gave birth, alongside {{ cybele }}, to the
 
 {% call layout.card_column("Rapid Change", decks=59, copies="2-4") %}
 {% trans trimmed
-    form_of_mist=card("Form of Mist"),
-    earth_control=card("Earth Control")
+form_of_mist=card("Form of Mist"),
+earth_control=card("Earth Control")
 %}
 Another stealth and <em>« combat ends »</em> combination. The cost of 1 blood is a bit
 pricey, but it completes the stealth arsenal of {{ pro }} along {{ form_of_mist }} and
@@ -131,11 +131,11 @@ combination. Moreover, her bonus in influence can be a very nice edge in the ear
 {% endcall %}
 
 {% call layout.card_column("Stanislava", decks=37, copies="4-5") %}
-{% trans trimmed 
-    instantaneous_transformation=card("Instantaneous Transformation"),
-    govern_the_unaligned=card("Govern the Unaligned"),
-    deflection=card("Deflection"),
-    the_unmasking=card("The Unmasking")
+{% trans trimmed
+instantaneous_transformation=card("Instantaneous Transformation"),
+govern_the_unaligned=card("Govern the Unaligned"),
+deflection=card("Deflection"),
+the_unmasking=card("The Unmasking")
 %}
 Star <em>Inner Circle</em> of the Gangrel Clan, Stanislava not only has {{ DOM }}
 but also {{ CEL }}, giving her access to {{ instantaneous_transformation }}
@@ -153,9 +153,9 @@ for combat he is often used as the star of a rush deck.
 {% endcall %}
 
 {% call layout.card_column("Flesh of Marble", decks=41, copies="2-7") %}
-{% trans trimmed 
-    earth_meld=card("Earth Meld"),
-    immortal_grapple=card("Immortal Grapple")
+{% trans trimmed
+earth_meld=card("Earth Meld"),
+immortal_grapple=card("Immortal Grapple")
 %}
 A good damage prevention card, it can handle heavy damage-dealing modules,
 even those using additonal strikes, with a single card.

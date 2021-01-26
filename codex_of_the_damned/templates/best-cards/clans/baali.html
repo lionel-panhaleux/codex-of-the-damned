@@ -3,7 +3,7 @@
 
 {% block content %}
 <h1><img src="{{ url_for('static', filename='img/icons/clan-baali.svg') }}"> Baali</h1>
-<div class="tip">
+<div class="insert tip">
     {% trans trimmed
     the_dark_side_of_politics=link("/archetypes/the-dark-side-of-politics"),
     giotto_verducci=card("Giotto Verducci"),
@@ -59,7 +59,7 @@ The threat of torpor without even a combat is hard to get around.
 
 {% call layout.card_column("Cybele", decks=65, copies="1-7") %}
 {% trans trimmed
-    girls_will_find_inner_circles=link("/archetypes/girls-will-find-inner-circle")
+girls_will_find_inner_circles=link("/archetypes/girls-will-find-inner-circle")
 %}
 The star of the Baali clan, her ability led to Master-focused decks
 like {{ girls_will_find_inner_circles }}.
@@ -76,8 +76,8 @@ it is the kind of awesome cards one is paying the <em>Infernal</em> penalty for.
 
 {% call layout.card_column("I am Legion", decks=54, copies="1-4") %}
 {% trans trimmed
-    telepathic_misdirection=card("Telepathic Misdirection"),
-    my_enemy_s_enemy=card("My Enemy's Enemy")
+telepathic_misdirection=card("Telepathic Misdirection"),
+my_enemy_s_enemy=card("My Enemy's Enemy")
 %}
 An excellent card against {{ AUS }} bounces
 {{ telepathic_misdirection }} and {{ my_enemy_s_enemy }}, it does not jam the hand
@@ -96,8 +96,8 @@ Always useful, at no cost, even with no corruption counter around.
 
 {% call layout.card_column("Tend the Flock", decks=45, copies="3-8") %}
 {% trans trimmed
-    cybele=card("Cybele"),
-    grooming_the_protege=card("Grooming the Protege")
+cybele=card("Cybele"),
+grooming_the_protege=card("Grooming the Protege")
 %}
 An excellent bloat device. Played in many Baali decks,
 it also plays well with {{ cybele }} ability.
@@ -115,8 +115,8 @@ even from torpor.
 
 {% call layout.card_column("Psychomachia", decks=37, copies="1-3") %}
 {% trans trimmed
-    cybele=card("Cybele"),
-    the_unnamed=card("The unnamed")
+cybele=card("Cybele"),
+the_unnamed=card("The unnamed")
 %}
 A decent block denial, although limited to younger vampires and allies,
 it still applies to a lot of minions when
@@ -141,7 +141,7 @@ Depending on the opposition, she can offer a swing from 1 to 4 votes reliably.
 
 {% call layout.card_column("The Unnamed", decks=34, copies="4-5") %}
 {% trans trimmed
-    own_archetype=link("/archetypes/the-unnamed", _("own archetype"))
+own_archetype=link("/archetypes/the-unnamed", _("own archetype"))
 %}
 Star of his {{ own_archetype }}, his ability makes for a very comfortable bloat.
 His access to such a powerful disciplines combination allows him to use a broad range of cards.
@@ -157,7 +157,7 @@ for vote constructs. His inferior {{ dai }} is almost not an issue.
 
 {% call layout.card_column("Annazir", decks=32, copies="1-3") %}
 {% trans trimmed
-    bowl_of_convergence=card("Bowl of Convergence")
+bowl_of_convergence=card("Bowl of Convergence")
 %}
 Another excellent vampire, all clan disciplines at superior, votes and enhanced bleed,
 plus a nice ability that can become useful to get rid of a gun or a
@@ -173,10 +173,10 @@ his bleed power is huge and can make for a very nice lunge.
 {% endcall %}
 
 {% call layout.card_column("Flames of the Netherworld", decks=16, copies="1-4") %}
-{% trans trimmed 
-    walk_of_flame=card("Walk of Flame"),
-    burst_of_sunlight=card("Burst of Sunlight"),
-    img_clan_tremere='<img src="%(url)s" />'|format(url=url_for('static', filename='img/icons/clan-tremere.svg'))|safe
+{% trans trimmed
+walk_of_flame=card("Walk of Flame"),
+burst_of_sunlight=card("Burst of Sunlight"),
+img_clan_tremere='<img src="%(url)s" />'|format(url=url_for('static', filename='img/icons/clan-tremere.svg'))|safe
 %}
 A very good combat strike. More often seen in fact in Tremere {{ img_clan_tremere }}
 decks using {{ tha }}, as it is a good alternative to other aggravated damage source

@@ -13,28 +13,28 @@
 {% endblock %}
 
 {% block deck_guide %}
-{% trans trimmed 
-    ancient_influence=card("Ancient Influence"),
-    archon_investigation=card("Archon Investigation"),
-    banishment=card("Banishment"),
-    blanket_of_night=card("Blanket of Night"),
-    conditioning=card("Conditioning"),
-    deflection=card("Deflection"),
-    govern_the_unaligned=card("Govern the Unaligned"),
-    kine_resources_contested=card("Kine Resources Contested"),
-    obedience=card("Obedience"),
-    on_the_qui_vive=card("On the Qui Vive"),
-    oubliette=card("Oubliette"),
-    political_stranglehold=card("Political Stranglehold"),
-    seduction=card("Seduction"),
-    shadow_body=card("Shadow Body"),
-    shadow_play=card("Shadow Play"),
-    shroud_of_absence=card("Shroud of Absence"),
-    shroud_of_night=card("Shroud of Night"),
-    tenebrous_form=card("Tenebrous Form"),
-    under_siege=card("Under Siege"),
-    villein=card("Villein"),
-    wake_with_evening_s_freshness=card("Wake with Evening’s Freshness")
+{% trans trimmed
+ancient_influence=card("Ancient Influence"),
+archon_investigation=card("Archon Investigation"),
+banishment=card("Banishment"),
+blanket_of_night=card("Blanket of Night"),
+conditioning=card("Conditioning"),
+deflection=card("Deflection"),
+govern_the_unaligned=card("Govern the Unaligned"),
+kine_resources_contested=card("Kine Resources Contested"),
+obedience=card("Obedience"),
+on_the_qui_vive=card("On the Qui Vive"),
+oubliette=card("Oubliette"),
+political_stranglehold=card("Political Stranglehold"),
+seduction=card("Seduction"),
+shadow_body=card("Shadow Body"),
+shadow_play=card("Shadow Play"),
+shroud_of_absence=card("Shroud of Absence"),
+shroud_of_night=card("Shroud of Night"),
+tenebrous_form=card("Tenebrous Form"),
+under_siege=card("Under Siege"),
+villein=card("Villein"),
+wake_with_evening_s_freshness=card("Wake with Evening’s Freshness")
 %}
 <h2>Summary</h2>
 <p>
@@ -104,11 +104,11 @@
     another one.
 </p>
 {% endtrans %}
-<div class="tip">
-    {% trans trimmed 
-        conditioning=card("Conditioning"),
-        govern_the_unaligned=card("Govern the Unaligned"),
-        kine_resources_contested=card("Kine Resources Contested")
+<div class="insert tip">
+    {% trans trimmed
+    conditioning=card("Conditioning"),
+    govern_the_unaligned=card("Govern the Unaligned"),
+    kine_resources_contested=card("Kine Resources Contested")
     %}
     <h3>Lunge</h3>
     <p>
@@ -133,11 +133,11 @@
     {% endtrans %}
 </div>
 <p>
-    {% trans trimmed 
-        information_highway_article=external(
-            "https://vtesinformationhighway.wordpress.com/2019/01/14/lasombra-starter-parliament-of-shadows/", 
-            _("Information Highway article")
-        )
+    {% trans trimmed
+    information_highway_article=external(
+    "https://vtesinformationhighway.wordpress.com/2019/01/14/lasombra-starter-parliament-of-shadows/",
+    _("Information Highway article")
+    )
     %}
     Check the {{ information_highway_article }} for a deck review and ideas on how to
     improve it.

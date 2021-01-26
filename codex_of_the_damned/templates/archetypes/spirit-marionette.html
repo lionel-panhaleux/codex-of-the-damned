@@ -11,27 +11,29 @@
 {% endblock %}
 
 {% block archetype %}
-{% trans trimmed 
-    saulot_the_wanderer=card("Saulot, The Wanderer"),
-    spirit_marionette=card("Spirit Marionette"),
-    heidelberg_castle_germany=card("Heidelberg Castle, Germany"),
-    infernal_pact=card("Infernal Pact"),
-    eyes_of_argus=card("Eyes of Argus"),
-    telepathic_misdirection=card("Telepathic Misdirection"),
-    my_enemy_s_enemy=card("My Enemy's Enemy"),
-    anesthetic_touch=card("Anesthetic Touch"),
-    theft_of_vitae=card("Theft of Vitae"),
-    enkil_cog=card("Enkil Cog"),
-    codex_of_the_edenic_groundskeepers=card("Codex of the Edenic Groundskeepers"),
-    magic_of_the_smith=card("Magic of the Smith"),
-    heart_of_nizchetus=card("Heart of Nizchetus"),
-    renewed_vigor=card("Renewed Vigor"),
-    rutor_s_hand=card("Rutor's Hand"),
-    eurayle_gelasia_mylonas=card("Eurayle Gelasia Mylonas"),
-    a_b=link("/strategy/fundamentals", _("A&B"), _anchor="AB"),
-    yannick_gibert_s_deck=link("/deck-search", _("Yannick Gibert's deck"), twda_id="2010fncqlyon"),
-    older_version_from_tomasz_kowalewski=link("/deck-search", _("older version from Tomasz Kowalewski"), twda_id="2k8crusadebreslau"),
-    img_clan_tremere_anti='<img src="%(url)s" />'|format(url=url_for('static', filename='img/icons/clan-tremere-anti.svg'))|safe
+{% trans trimmed
+saulot_the_wanderer=card("Saulot, The Wanderer"),
+spirit_marionette=card("Spirit Marionette"),
+heidelberg_castle_germany=card("Heidelberg Castle, Germany"),
+infernal_pact=card("Infernal Pact"),
+eyes_of_argus=card("Eyes of Argus"),
+telepathic_misdirection=card("Telepathic Misdirection"),
+my_enemy_s_enemy=card("My Enemy's Enemy"),
+anesthetic_touch=card("Anesthetic Touch"),
+theft_of_vitae=card("Theft of Vitae"),
+enkil_cog=card("Enkil Cog"),
+codex_of_the_edenic_groundskeepers=card("Codex of the Edenic Groundskeepers"),
+magic_of_the_smith=card("Magic of the Smith"),
+heart_of_nizchetus=card("Heart of Nizchetus"),
+renewed_vigor=card("Renewed Vigor"),
+rutor_s_hand=card("Rutor's Hand"),
+eurayle_gelasia_mylonas=card("Eurayle Gelasia Mylonas"),
+a_b=link("/strategy/fundamentals", _("A&B"), _anchor="AB"),
+yannick_gibert_s_deck=link("/deck-search", _("Yannick Gibert's deck"), id="2010fncqlyon"),
+older_version_from_tomasz_kowalewski=link("/deck-search", _("older version from Tomasz Kowalewski"),
+twda_id="2k8crusadebreslau"),
+img_clan_tremere_anti='<img src="%(url)s" />'|format(url=url_for('static',
+filename='img/icons/clan-tremere-anti.svg'))|safe
 %}
 <h2>Highlights</h2>
 <p>
@@ -84,7 +86,7 @@
 {% endblock %}
 
 {% block errata %}
-<div class="warning">
+<div class="insert warn">
     <h3>Errata</h3>
     {{ erratum.pentextmsubversion( 'remove' ) }}
     {{ erratum.villein() }}

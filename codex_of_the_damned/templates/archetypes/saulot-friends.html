@@ -11,25 +11,25 @@
 {% endblock %}
 
 {% block archetype %}
-{% trans trimmed 
-    saulot_the_wanderer=card("Saulot, The Wanderer"),
-    the_capuchin=card("The Capuchin"),
-    anarch_convert=card("Anarch Convert"),
-    anarch_revolt=card("Anarch Revolt"),
-    the_anarch_free_press=card("The Anarch Free Press"),
-    monkey_wrench=card("Monkey Wrench"),
-    guardian_vigil=card("Guardian Vigil"),
-    smiling_jack_the_anarch=card("Smiling Jack, The Anarch"),
-    sire_s_index_finger=card("Sire's Index Finger"),
-    deep_song=card("Deep Song"),
-    rötschreck=card("Rötschreck"),
-    drawing_out_the_beast=card("Drawing Out the Beast"),
-    terror_frenzy=card("Terror Frenzy"),
-    the_rack=card("The Rack"),
-    hidden_strength=card("Hidden Strength"),
-    taste_of_vitae=card("Taste of Vitae"),
-    disarm=card("Disarm"),
-    daniel_abreu_s_deck=link("/deck-search", _("Daniel Abreu's deck"), twda_id="2016tdspb")
+{% trans trimmed
+saulot_the_wanderer=card("Saulot, The Wanderer"),
+the_capuchin=card("The Capuchin"),
+anarch_convert=card("Anarch Convert"),
+anarch_revolt=card("Anarch Revolt"),
+the_anarch_free_press=card("The Anarch Free Press"),
+monkey_wrench=card("Monkey Wrench"),
+guardian_vigil=card("Guardian Vigil"),
+smiling_jack_the_anarch=card("Smiling Jack, The Anarch"),
+sire_s_index_finger=card("Sire's Index Finger"),
+deep_song=card("Deep Song"),
+rötschreck=card("Rötschreck"),
+drawing_out_the_beast=card("Drawing Out the Beast"),
+terror_frenzy=card("Terror Frenzy"),
+the_rack=card("The Rack"),
+hidden_strength=card("Hidden Strength"),
+taste_of_vitae=card("Taste of Vitae"),
+disarm=card("Disarm"),
+daniel_abreu_s_deck=link("/deck-search", _("Daniel Abreu's deck"), id="2016tdspb")
 %}
 <h2>Highlights</h2>
 <p>
@@ -74,7 +74,7 @@
 {% endblock %}
 
 {% block errata %}
-<div class="warning">
+<div class="insert warn">
     <h3>Errata</h3>
     {{ erratum.pentextmsubversion( 'remove' ) }}
 </div>

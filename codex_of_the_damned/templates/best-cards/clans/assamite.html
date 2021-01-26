@@ -3,15 +3,15 @@
 
 {% block content %}
 <h1><img src="{{ url_for('static', filename='img/icons/clan-assamite.svg') }}"> Assamite</h1>
-<div class="tip">
+<div class="insert tip">
     {% trans trimmed
-        amaravati_politics=link("/archetypes/amaravati-politics"),
-        amaravati=card("Amaravati"),
-        death_star=link("/archetypes/death-star"),
-        black_hand=link("/archetypes/black-hand"),
-        dimitri_s_big_band=link("/archetypes/dmitris-big-band"),
-        dmitri_borodin=card("Dmitri Borodin")
-        %}
+    amaravati_politics=link("/archetypes/amaravati-politics"),
+    amaravati=card("Amaravati"),
+    death_star=link("/archetypes/death-star"),
+    black_hand=link("/archetypes/black-hand"),
+    dimitri_s_big_band=link("/archetypes/dmitris-big-band"),
+    dmitri_borodin=card("Dmitri Borodin")
+    %}
     <p>
         Assamite and their unique {{qui}} discipline provide some good clan cards
         and multiple strategies usually revolving around {{obf}} for stealth.
@@ -55,7 +55,7 @@ Most Assamite decks include one or two of these for the lunge.
 
 {% call layout.card_column("Yoruba Shrine", decks=26, copies="1") %}
 {% trans trimmed
-    banishment = card("Banishment")
+banishment = card("Banishment")
 %}
 An excellent defence against rush actions, but also against {{ banishment }},
 an all-too-common option in big capacity vote decks.
@@ -89,11 +89,11 @@ and three blood, all for the low cost of 1 pool.
 
 {% call layout.card_column("Amaravati", decks=17, copies="2-4") %}
 {% trans trimmed
-    amaravati_politics=link("/archetypes/amaravati-politics"),
-    web_of_knives_recruit=card("Web of Knives Recruit"),
-    alamut=card("Alamut"),
-    the_black_throne=card("The Black Throne"),
-    deflection=card("Deflection")
+amaravati_politics=link("/archetypes/amaravati-politics"),
+web_of_knives_recruit=card("Web of Knives Recruit"),
+alamut=card("Alamut"),
+the_black_throne=card("The Black Throne"),
+deflection=card("Deflection")
 %}
 The star of the {{ amaravati_politics }} archetype,
 combined with {{ web_of_knives_recruit }}, {{ alamut }} and {{ the_black_throne }},
@@ -104,7 +104,7 @@ Moreover, his superior {{DOM}} gets him bounce reactions like {{ deflection }}.
 
 {% call layout.card_column("Djuhah, The Bronze Bow", decks=11, copies="2-3") %}
 {% trans trimmed
-    black_hand=link("/archetypes/black-hand")
+black_hand=link("/archetypes/black-hand")
 %}
 One of the best Seraph of the game, Djuhah also has good company in his clan
 as 5 Black Hand Assamite are available in groups 4 and 5.
@@ -137,7 +137,7 @@ but being forced to block can be tricky if the goal is to bounce a bleed.
 
 {% call layout.card_column("Taste of Death", decks=13, copies="1-4") %}
 {% trans trimmed
-    selective_silence=card("Selective Silence")
+selective_silence=card("Selective Silence")
 %}
 Worth mentioning as it is the most played {{qui}} combat card,
 it is still hard to include as excellent range management is necessary to make it work.

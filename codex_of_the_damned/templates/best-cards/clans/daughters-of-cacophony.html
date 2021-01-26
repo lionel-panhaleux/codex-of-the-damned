@@ -5,13 +5,13 @@
 <h1><img src="{{ url_for('static', filename='img/icons/clan-daughters.svg') }}">
     {% trans trimmed %}Daughters of Cacophony{% endtrans %}
 </h1>
-<div class="tip">
+<div class="insert tip">
     <p>
         {% trans trimmed
         daughters_politics=link("/archetypes/daughters-politics"),
         scout=link("/archetypes/scout"),
         scout_youngwood=card("Scout Youngwood")
-    %}
+        %}
         The Daughters of Cacophony and their unique {{mel}} discipline pack some nice surprises,
         especially on the political front. Two political archetypes features the clan:
         a pure {{ daughters_politics }} and {{ scout }}, a mix using {{ scout_youngwood }}.
@@ -44,8 +44,8 @@ Depending on the deck, it can come in very handy for a lunge.
 
 {% call layout.card_column("Siren's Lure", decks=8, copies="2-6") %}
 {% trans trimmed
-    virtuosa=card("Virtuosa"),
-    the_missing_voice=card("The Missing Voice")
+virtuosa=card("Virtuosa"),
+the_missing_voice=card("The Missing Voice")
 %}
 A good way to get critical actions through. Combined with
 {{ virtuosa }} and {{ the_missing_voice }},
@@ -55,7 +55,7 @@ it can build a good stealth - more of a « getting through » - module.
 
 {% call layout.card_column("Lily Prelude", decks=6, copies="3-10") %}
 {% trans trimmed
-    kine_resources_contested=card("Kine Resources Contested")
+kine_resources_contested=card("Kine Resources Contested")
 %}
 Although only played in Vote archetypes, it is emblematic of the Daughters.
 An improved {{ kine_resources_contested }}:
@@ -73,7 +73,7 @@ Her ability to unlock another vampire is nice too.
 
 {% call layout.card_column("Command Performance", decks=14, copies="1-2") %}
 {% trans trimmed
-    a_b=link("/strategy/fundamentals", _("A&B"), _anchor="AB")
+a_b=link("/strategy/fundamentals", _("A&B"), _anchor="AB")
 %}
 A permanent unlock option is very nice, and 2 pool is a bargain for such a bump in
 {{ a_b }}. The burn option even ensures it does not jam one’s hand if the Daughters
@@ -83,8 +83,8 @@ are not at crypt majority.
 
 {% call layout.card_column("Paris Opera House", decks=14, copies="1-3") %}
 {% trans trimmed
-    the_labyrinth=card("The Labyrinth"),
-    opium_den=card("Opium Den")
+the_labyrinth=card("The Labyrinth"),
+opium_den=card("Opium Den")
 %}
 A bit pricey with its 2 pool cost, this permanent stealth location is still worth it
 given the archetypes played with the clan. The cheaper

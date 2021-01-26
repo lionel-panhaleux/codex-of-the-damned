@@ -11,29 +11,29 @@
 {% endblock %}
 
 {% block archetype %}
-{% trans trimmed 
-    deep_song=card("Deep Song"),
-    carrion_crows=card("Carrion Crows"),
-    aid_from_bats=card("Aid from Bats"),
-    nana_buruku=card("Nana Buruku"),
-    ashur_tablets=card("Ashur Tablets"),
-    fame=card("Fame"),
-    dragonbound=card("Dragonbound"),
-    powerbase_luanda=card("Powerbase: Luanda"),
-    well_marked=card("Well-Marked"),
-    fish=card("Fish"),
-    powerbase_montreal=card("Powerbase: Montreal"),
-    the_rack=card("The Rack"),
-    cats_guidance=card("Cats' Guidance"),
-    sense_the_savage_way=card("Sense the Savage Way"),
-    wider_view=card("Wider View"),
-    anarch_convert=card("Anarch Convert"),
-    anarch_revolt=card("Anarch Revolt"),
-    aranthebes_the_immortal=card("Aranthebes, The Immortal"),
-    raven_spy=card("Raven Spy"),
-    orian_gissler_s_deck=link("/deck-search", _("Orian Gissler's deck"), twda_id="2018fnclf"),
-    kim_nilsson_s_deck=link("/deck-search", _("Kim Nilsson's deck"), twda_id="2016sncss"),
-    adam_horvath_s_deck=link("/deck-search", _("Ádám Horváth's deck"), twda_id="2010hungarianecq")
+{% trans trimmed
+deep_song=card("Deep Song"),
+carrion_crows=card("Carrion Crows"),
+aid_from_bats=card("Aid from Bats"),
+nana_buruku=card("Nana Buruku"),
+ashur_tablets=card("Ashur Tablets"),
+fame=card("Fame"),
+dragonbound=card("Dragonbound"),
+powerbase_luanda=card("Powerbase: Luanda"),
+well_marked=card("Well-Marked"),
+fish=card("Fish"),
+powerbase_montreal=card("Powerbase: Montreal"),
+the_rack=card("The Rack"),
+cats_guidance=card("Cats' Guidance"),
+sense_the_savage_way=card("Sense the Savage Way"),
+wider_view=card("Wider View"),
+anarch_convert=card("Anarch Convert"),
+anarch_revolt=card("Anarch Revolt"),
+aranthebes_the_immortal=card("Aranthebes, The Immortal"),
+raven_spy=card("Raven Spy"),
+orian_gissler_s_deck=link("/deck-search", _("Orian Gissler's deck"), id="2018fnclf"),
+kim_nilsson_s_deck=link("/deck-search", _("Kim Nilsson's deck"), id="2016sncss"),
+adam_horvath_s_deck=link("/deck-search", _("Ádám Horváth's deck"), id="2010hungarianecq")
 %}
 <h2>Highlights</h2>
 <p>
@@ -99,7 +99,7 @@
 {% endblock %}
 
 {% block errata %}
-<div class="warning">
+<div class="insert warn">
     <h3>Errata</h3>
     {{ erratum.pentextmsubversion( 'remove' ) }}
 </div>

@@ -13,28 +13,28 @@
 {% endblock %}
 
 {% block deck_guide %}
-{% trans trimmed 
-    antonio_d_erlette=card("Antonio d’Erlette"),
-    carlton_van_wyk=card("Carlton Van Wyk"),
-    computer_hacking=card("Computer Hacking"),
-    conditioning=card("Conditioning"),
-    deflection=card("Deflection"),
-    delaying_tactics=card("Delaying Tactics"),
-    fame=card("Fame"),
-    frontal_assault=card("Frontal Assault"),
-    glancing_blow=card("Glancing Blow"),
-    harass=card("Harass"),
-    krcg_news_radio=card("KRCG News Radio"),
-    mirror_walk=card("Mirror Walk"),
-    molotov_cocktail=card("Molotov Cocktail"),
-    nephandus=card("Nephandus"),
-    on_the_qui_vive=card("On the Qui Vive"),
-    rego_motus=card("Rego Motus"),
-    target_vitals=card("Target: Vitals"),
-    the_unmasking=card("The Unmasking"),
-    theft_of_vitae=card("Theft of Vitae"),
-    trap=card("Trap"),
-    vessel=card("Vessel")
+{% trans trimmed
+antonio_d_erlette=card("Antonio d’Erlette"),
+carlton_van_wyk=card("Carlton Van Wyk"),
+computer_hacking=card("Computer Hacking"),
+conditioning=card("Conditioning"),
+deflection=card("Deflection"),
+delaying_tactics=card("Delaying Tactics"),
+fame=card("Fame"),
+frontal_assault=card("Frontal Assault"),
+glancing_blow=card("Glancing Blow"),
+harass=card("Harass"),
+krcg_news_radio=card("KRCG News Radio"),
+mirror_walk=card("Mirror Walk"),
+molotov_cocktail=card("Molotov Cocktail"),
+nephandus=card("Nephandus"),
+on_the_qui_vive=card("On the Qui Vive"),
+rego_motus=card("Rego Motus"),
+target_vitals=card("Target: Vitals"),
+the_unmasking=card("The Unmasking"),
+theft_of_vitae=card("Theft of Vitae"),
+trap=card("Trap"),
+vessel=card("Vessel")
 %}
 <h2>Summary</h2>
 <p>
@@ -92,11 +92,11 @@
     {{ pre }} or {{ obt }}.
 </p>
 {% endtrans %}
-<div class="tip">
-    {% trans trimmed 
-        conditioning=card("Conditioning"),
-        harass=card("Harass"),
-        mirror_walk=card("Mirror Walk")
+<div class="insert tip">
+    {% trans trimmed
+    conditioning=card("Conditioning"),
+    harass=card("Harass"),
+    mirror_walk=card("Mirror Walk")
     %}
     <h3>Balance offence and defence</h3>
     <p>
@@ -117,11 +117,11 @@
     {% endtrans %}
 </div>
 <p>
-    {% trans trimmed 
-        information_highway_article=external(
-            "https://vtesinformationhighway.wordpress.com/2019/01/11/nephandus-starter-and-strategy/", 
-            _("Information Highway article")
-        )
+    {% trans trimmed
+    information_highway_article=external(
+    "https://vtesinformationhighway.wordpress.com/2019/01/11/nephandus-starter-and-strategy/",
+    _("Information Highway article")
+    )
     %}
     Check the {{ information_highway_article }} for a deck review and ideas on how to
     improve it.

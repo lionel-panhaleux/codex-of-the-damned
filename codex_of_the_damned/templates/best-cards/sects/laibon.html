@@ -3,7 +3,7 @@
 
 {% block content %}
 <h1>Laibon</h1>
-<div class="tip">
+<div class="insert tip">
     <p>
         {% trans trimmed %}
         The Laibon offer unique tools to its members all around, be it for block,
@@ -27,10 +27,10 @@ its high blood cost prevents to play more than 1 or 2 copies in a deck.
 {% endcall %}
 
 {% call layout.card_column("Mbare Market, Harare", decks=47, copies="1") %}
-{% trans trimmed 
-    img_clan_toreador='<img src="%(url)s" />'|format(url=url_for('static', filename='img/icons/clan-toreador.svg'))|safe,
-    art_museum=card("Art Museum")
-    %}
+{% trans trimmed
+img_clan_toreador='<img src="%(url)s" />'|format(url=url_for('static', filename='img/icons/clan-toreador.svg'))|safe,
+art_museum=card("Art Museum")
+%}
 A decent bloat device for Laibon, although it is a little bit pricey compared to similar
 clan cards like the Toreador {{ img_clan_toreador }} {{ art_museum }}.
 {% endtrans %}
@@ -53,8 +53,8 @@ is appreciable.
 {% endcall %}
 
 {% call layout.card_column("Kduva's Mask", decks=37, copies="1") %}
-{% trans trimmed 
-    ishtarri_politics=link("/archetypes/ishtarri-politics")
+{% trans trimmed
+ishtarri_politics=link("/archetypes/ishtarri-politics")
 %}
 A bit pricey for just the bleed bonus, it becomes a worthwile addition in political
 decks like {{ ishtarri_politics }}.

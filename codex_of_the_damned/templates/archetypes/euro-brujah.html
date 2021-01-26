@@ -11,26 +11,26 @@
 {% endblock %}
 
 {% block archetype %}
-{% trans trimmed 
-    beast_the_leatherface_of_detroit=card("Beast, The Leatherface of Detroit"),
-    blur=card("Blur"),
-    bums_rush=card("Bum's Rush"),
-    chiropteran_marauder=card("Chiropteran Marauder"),
-    conditioning=card("Conditioning"),
-    deflection=card("Deflection"),
-    disarm=card("Disarm"),
-    fame=card("Fame"),
-    govern_the_unaligned=card("Govern the Unaligned"),
-    immortal_grapple=card("Immortal Grapple"),
-    new_carthage=card("New Carthage"),
-    parity_shift=card("Parity Shift"),
-    pursuit=card("Pursuit"),
-    second_tradition_domain=card("Second Tradition: Domain"),
-    sideslip=card("Sideslip"),
-    theo_bell=card("Theo Bell"),
-    thrown_sewer_lid=card("Thrown Sewer Lid"),
-    wolf_claws=card("Wolf Claws"),
-    michael_heyders_deck=link("/deck-search", _("Michael Heyder's deck"), twda_id="2k8germanchamp")
+{% trans trimmed
+beast_the_leatherface_of_detroit=card("Beast, The Leatherface of Detroit"),
+blur=card("Blur"),
+bums_rush=card("Bum's Rush"),
+chiropteran_marauder=card("Chiropteran Marauder"),
+conditioning=card("Conditioning"),
+deflection=card("Deflection"),
+disarm=card("Disarm"),
+fame=card("Fame"),
+govern_the_unaligned=card("Govern the Unaligned"),
+immortal_grapple=card("Immortal Grapple"),
+new_carthage=card("New Carthage"),
+parity_shift=card("Parity Shift"),
+pursuit=card("Pursuit"),
+second_tradition_domain=card("Second Tradition: Domain"),
+sideslip=card("Sideslip"),
+theo_bell=card("Theo Bell"),
+thrown_sewer_lid=card("Thrown Sewer Lid"),
+wolf_claws=card("Wolf Claws"),
+michael_heyders_deck=link("/deck-search", _("Michael Heyder's deck"), id="2k8germanchamp")
 %}
 <h2>Highlights</h2>
 <p>
@@ -83,7 +83,7 @@
 {% endblock %}
 
 {% block errata %}
-<div class="warning">
+<div class="insert warn">
     <h3>Errata</h3>
     {{ erratum.pentextmsubversion( 'remove' ) }}
     {{ erratum.villein() }}

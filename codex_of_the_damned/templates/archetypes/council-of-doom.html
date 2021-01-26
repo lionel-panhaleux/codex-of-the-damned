@@ -11,30 +11,30 @@
 {% endblock %}
 
 {% block archetype %}
-{% trans trimmed 
-    anthelios_the_red_star=card("Anthelios, The Red Star"),
-    arika=card("Arika"),
-    ashur_tablets=card("Ashur Tablets"),
-    carlton_van_wyk=card("Carlton Van Wyk"),
-    conditioning=card("Conditioning"),
-    deflection=card("Deflection"),
-    elder_impersonation=card("Elder Impersonation"),
-    etrius=card("Etrius"),
-    huitzilopochtli=card("Huitzilopochtli"),
-    information_highway=card("Information Highway"),
-    into_thin_air=card("Into Thin Air"),
-    leandro=card("Leandro"),
-    liliths_blessing=card("Lilith's Blessing"),
-    liquidation=card("Liquidation"),
-    majesty=card("Majesty"),
-    obedience=card("Obedience"),
-    rumors_of_gehenna=card("Rumors of Gehenna"),
-    temptation_of_greater_power=card("Temptation of Greater Power"),
-    the_parthenon=card("The Parthenon"),
-    villein=card("Villein"),
-    zillahs_valley=card("Zillah's Valley"),
-    girls_will_find_inner_circle=link("/archetypes/girls-will-find-inner-circle"),
-    ruben_feldmans_deck=link("/deck-search", _("Ruben Feldman's deck"), twda_id="2k9lvmq")
+{% trans trimmed
+anthelios_the_red_star=card("Anthelios, The Red Star"),
+arika=card("Arika"),
+ashur_tablets=card("Ashur Tablets"),
+carlton_van_wyk=card("Carlton Van Wyk"),
+conditioning=card("Conditioning"),
+deflection=card("Deflection"),
+elder_impersonation=card("Elder Impersonation"),
+etrius=card("Etrius"),
+huitzilopochtli=card("Huitzilopochtli"),
+information_highway=card("Information Highway"),
+into_thin_air=card("Into Thin Air"),
+leandro=card("Leandro"),
+liliths_blessing=card("Lilith's Blessing"),
+liquidation=card("Liquidation"),
+majesty=card("Majesty"),
+obedience=card("Obedience"),
+rumors_of_gehenna=card("Rumors of Gehenna"),
+temptation_of_greater_power=card("Temptation of Greater Power"),
+the_parthenon=card("The Parthenon"),
+villein=card("Villein"),
+zillahs_valley=card("Zillah's Valley"),
+girls_will_find_inner_circle=link("/archetypes/girls-will-find-inner-circle"),
+ruben_feldmans_deck=link("/deck-search", _("Ruben Feldman's deck"), id="2k9lvmq")
 %}
 <h2>Highlights</h2>
 <p>
@@ -83,7 +83,7 @@
 {% endblock %}
 
 {% block errata %}
-<div class="warning">
+<div class="insert warn">
     <h3>Errata</h3>
     {{ erratum.pentextmsubversion( 'remove' ) }}
     {{ erratum.villein() }}

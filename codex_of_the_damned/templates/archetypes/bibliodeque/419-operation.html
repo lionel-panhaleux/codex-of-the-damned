@@ -14,10 +14,10 @@
 
 {% block archetype %}
 {% trans trimmed
-	operation=card("419 Operation"),
-    hidetheheart=card("Hide the Heart"),
-	kovalcik_deck=link("/deck-search", _("Matus Kovalcik's deck"), twda_id="2014sncqks"),
-	img_clan_osebo='<img src="%(url)s" />'|format(url=url_for('static', filename='img/icons/clan-osebo.svg'))|safe
+operation=card("419 Operation"),
+hidetheheart=card("Hide the Heart"),
+kovalcik_deck=link("/deck-search", _("Matus Kovalcik's deck"), id="2014sncqks"),
+img_clan_osebo='<img src="%(url)s" />'|format(url=url_for('static', filename='img/icons/clan-osebo.svg'))|safe
 %}
 <h2>Highlights</h2>
 <p>

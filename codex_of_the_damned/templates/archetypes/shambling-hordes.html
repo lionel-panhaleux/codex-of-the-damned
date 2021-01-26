@@ -11,25 +11,25 @@
 {% endblock %}
 
 {% block archetype %}
-{% trans trimmed 
-    shambling_hordes=card("Shambling Hordes"),
-    liquidation=card("Liquidation"),
-    dragonbound=card("Dragonbound"),
-    fame=card("Fame"),
-    sudario_refraction=card("Sudario Refraction"),
-    call_of_the_hungry_dead=card("Call of the Hungry Dead"),
-    spectral_divination=card("Spectral Divination"),
-    trap=card("Trap"),
-    carlton_van_wyk=card("Carlton Van Wyk"),
-    the_unmasking=card("The Unmasking"),
-    fbi_special_affairs_division=card("FBI Special Affairs Division"),
-    the_parthenon=card("The Parthenon"),
-    tupdog=card("Tupdog"),
-    life_in_the_city=card("Life in the City"),
-    trochomancy=card("Trochomancy"),
-    ashur_tablets=card("Ashur Tablets"),
-    andrzej_jagla_s_deck=link("/deck-search", _("Andrzej Jagla's deck"), twda_id="2013wbdpp"),
-    otto_kukkasniemi_s_deck=link("/deck-search", _("Otto Kukkasniemi's deck"), twda_id="2011snc")
+{% trans trimmed
+shambling_hordes=card("Shambling Hordes"),
+liquidation=card("Liquidation"),
+dragonbound=card("Dragonbound"),
+fame=card("Fame"),
+sudario_refraction=card("Sudario Refraction"),
+call_of_the_hungry_dead=card("Call of the Hungry Dead"),
+spectral_divination=card("Spectral Divination"),
+trap=card("Trap"),
+carlton_van_wyk=card("Carlton Van Wyk"),
+the_unmasking=card("The Unmasking"),
+fbi_special_affairs_division=card("FBI Special Affairs Division"),
+the_parthenon=card("The Parthenon"),
+tupdog=card("Tupdog"),
+life_in_the_city=card("Life in the City"),
+trochomancy=card("Trochomancy"),
+ashur_tablets=card("Ashur Tablets"),
+andrzej_jagla_s_deck=link("/deck-search", _("Andrzej Jagla's deck"), id="2013wbdpp"),
+otto_kukkasniemi_s_deck=link("/deck-search", _("Otto Kukkasniemi's deck"), id="2011snc")
 %}
 <h2>Highlights</h2>
 <p>
@@ -79,7 +79,7 @@
 {% endblock %}
 
 {% block errata %}
-<div class="warning">
+<div class="insert warn">
     <h3>Errata</h3>
     {{ erratum.pentextmsubversion( 'remove' ) }}
     {{ erratum.antheliostheredstar() }}

@@ -11,25 +11,25 @@
 {% endblock %}
 
 {% block archetype %}
-{% trans trimmed 
-    scout_youngwood=card("Scout Youngwood"),
-    shattering_crescendo=card("Shattering Crescendo"),
-    lily_prelude=card("Lily Prelude"),
-    reckless_agitation=card("Reckless Agitation"),
-    villein=card("Villein"),
-    zillah_s_valley=card("Zillah's Valley"),
-    heart_of_the_city=card("Heart of the City"),
-    parity_shift=card("Parity Shift"),
-    dmitra_ilyanova=card("Dmitra Ilyanova"),
-    legendary_vampire=card("Legendary Vampire"),
-    bewitching_oration=card("Bewitching Oration"),
-    perfect_paragon=card("Perfect Paragon"),
-    arishat=card("Arishat"),
-    majesty=card("Majesty"),
-    unmada=card("Unmada"),
-    benjamin_rose=card("Benjamin Rose"),
-    telepathic_misdirection=card("Telepathic Misdirection"),
-    djordje_bjelajac_s_deck=link("/deck-search", _("Djordje Bjelajac's deck"), twda_id="2011ecfcq")
+{% trans trimmed
+scout_youngwood=card("Scout Youngwood"),
+shattering_crescendo=card("Shattering Crescendo"),
+lily_prelude=card("Lily Prelude"),
+reckless_agitation=card("Reckless Agitation"),
+villein=card("Villein"),
+zillah_s_valley=card("Zillah's Valley"),
+heart_of_the_city=card("Heart of the City"),
+parity_shift=card("Parity Shift"),
+dmitra_ilyanova=card("Dmitra Ilyanova"),
+legendary_vampire=card("Legendary Vampire"),
+bewitching_oration=card("Bewitching Oration"),
+perfect_paragon=card("Perfect Paragon"),
+arishat=card("Arishat"),
+majesty=card("Majesty"),
+unmada=card("Unmada"),
+benjamin_rose=card("Benjamin Rose"),
+telepathic_misdirection=card("Telepathic Misdirection"),
+djordje_bjelajac_s_deck=link("/deck-search", _("Djordje Bjelajac's deck"), id="2011ecfcq")
 %}
 <h2>Highlights</h2>
 <p>
@@ -75,7 +75,7 @@
 {% endblock %}
 
 {% block errata %}
-<div class="warning">
+<div class="insert warn">
     <h3>Errata</h3>
     {{ erratum.parityshift() }}
 </div>

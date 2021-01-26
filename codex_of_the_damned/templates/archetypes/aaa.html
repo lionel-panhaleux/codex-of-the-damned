@@ -11,31 +11,31 @@
 {% endblock %}
 
 {% block archetype %}
-{% trans trimmed 
-    anson=card("Anson"),
-    alexandra=card("Alexandra"),
-    anneke=card("Anneke"),
-    second_tradition_domain=card("Second Tradition: Domain"),
-    concealed_weapon=card("Concealed Weapon"),
-    magnum=card("44 Magnum"), 
-    parity_shift=card("Parity Shift"),
-    aire_of_elation=card("Aire of Elation"),
-    ashur_tablets=card("Ashur Tablets"),
-    liquidation=card("Liquidation"),
-    resist_earths_grasp=card("Resist Earth's Grasp"),
-    heart_of_the_city=card("Heart of the City"),
-    codex_of_the_edenic_groundskeepers=card("Codex of the Edenic Groundskeepers"),
-    entrancement=card("Entrancement"),
-    scourge_of_the_enochians=card("Scourge of the Enochians"),
-    toreador_grand_ball=card("Toreador Grand Ball"),
-    majesty=card("Majesty"),
-    aching_beauty=card("Aching Beauty"),
-    alastor=card("Alastor"),
-    assault_rifle=card("Assault Rifle"),
-    tomasz_deck=link("/deck-search", _("Tomasz Izydorczyk's deck"), twda_id="2019pncwp"),
-    martin_deck=link("/deck-search", _("Martin Miller's deck"), twda_id="2013cncpf2"),
-    laszlo_deck=link("/deck-search", _("László Walter's deck"), twda_id="2012ecsod"),
-    izaak_deck=link("/deck-search", _("Izaak Havelaar's deck"), twda_id="2010kaldecq")
+{% trans trimmed
+anson=card("Anson"),
+alexandra=card("Alexandra"),
+anneke=card("Anneke"),
+second_tradition_domain=card("Second Tradition: Domain"),
+concealed_weapon=card("Concealed Weapon"),
+magnum=card("44 Magnum"),
+parity_shift=card("Parity Shift"),
+aire_of_elation=card("Aire of Elation"),
+ashur_tablets=card("Ashur Tablets"),
+liquidation=card("Liquidation"),
+resist_earths_grasp=card("Resist Earth's Grasp"),
+heart_of_the_city=card("Heart of the City"),
+codex_of_the_edenic_groundskeepers=card("Codex of the Edenic Groundskeepers"),
+entrancement=card("Entrancement"),
+scourge_of_the_enochians=card("Scourge of the Enochians"),
+toreador_grand_ball=card("Toreador Grand Ball"),
+majesty=card("Majesty"),
+aching_beauty=card("Aching Beauty"),
+alastor=card("Alastor"),
+assault_rifle=card("Assault Rifle"),
+tomasz_deck=link("/deck-search", _("Tomasz Izydorczyk's deck"), id="2019pncwp"),
+martin_deck=link("/deck-search", _("Martin Miller's deck"), id="2013cncpf2"),
+laszlo_deck=link("/deck-search", _("László Walter's deck"), id="2012ecsod"),
+izaak_deck=link("/deck-search", _("Izaak Havelaar's deck"), id="2010kaldecq")
 %}
 <h2>Highlights</h2>
 <p>
@@ -92,7 +92,7 @@
 {% endblock %}
 
 {% block errata %}
-<div class="warning">
+<div class="insert warn">
     <h3>Errata</h3>
     {{ erratum.pentextmsubversion( 'remove' ) }}
     {{ erratum.villein() }}

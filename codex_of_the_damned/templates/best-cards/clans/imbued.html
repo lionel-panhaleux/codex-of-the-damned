@@ -5,10 +5,10 @@
 <h1><img src="{{ url_for('static', filename='img/icons/creed-visionary.svg') }}">
     {% trans trimmed %} Imbued {% endtrans%}
 </h1>
-<div class="tip">
+<div class="insert tip">
     <p>
-        {% trans trimmed 
-            hunters=link("/archetypes/hunters")
+        {% trans trimmed
+        hunters=link("/archetypes/hunters")
         %}
         The Imbued have a special place in the game: they are not vampires, but mortal allies.
         They are organised in creeds instead of clans, and have virtues instead of disciplines.
@@ -117,9 +117,9 @@ Excellent virtues with a good combat ability, he gets included in most Imbued de
 {% endcall %}
 
 {% call layout.card_column("Discern", decks=40, copies="2-4") %}
-{% trans trimmed 
-    vigilance=card("Vigilance"),
-    the_unmasking=card("The Unmasking")
+{% trans trimmed
+vigilance=card("Vigilance"),
+the_unmasking=card("The Unmasking")
 %}
 Second excellent <em>Justice</em> power after {{ vigilance }},
 it explains why the <em>Justice</em> virtue is the most played among Imbued.

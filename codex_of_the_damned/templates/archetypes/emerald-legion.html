@@ -12,19 +12,19 @@
 
 {% block archetype %}
 {% trans trimmed
-    breath_of_thanatos=card("Breath of Thanatos"),
-    emerald_legionnaire=card("Emerald Legionnaire"),
-    erlik=card("Erlik"),
-    fbi_special_affairs_division=card("FBI Special Affairs Division"),
-    forced_march=card("Forced March"),
-    inevitability_of_the_void=card("Inevitability of the Void"),
-    liquidation=card("Liquidation"),
-    shroud_mastery=card("Shroud Mastery"),
-    spectral_divination=card("Spectral Divination"),
-    the_capuchin=card("The Capuchin"),
-    the_unmasking=card("The Unmasking"),
-    vengeful_spirit=card("Vengeful Spirit"),
-    richard_stefan_utners_deck=link("/deck-search", _("Richard Stefan Utner's deck"), twda_id="2019gbzzc")
+breath_of_thanatos=card("Breath of Thanatos"),
+emerald_legionnaire=card("Emerald Legionnaire"),
+erlik=card("Erlik"),
+fbi_special_affairs_division=card("FBI Special Affairs Division"),
+forced_march=card("Forced March"),
+inevitability_of_the_void=card("Inevitability of the Void"),
+liquidation=card("Liquidation"),
+shroud_mastery=card("Shroud Mastery"),
+spectral_divination=card("Spectral Divination"),
+the_capuchin=card("The Capuchin"),
+the_unmasking=card("The Unmasking"),
+vengeful_spirit=card("Vengeful Spirit"),
+richard_stefan_utners_deck=link("/deck-search", _("Richard Stefan Utner's deck"), id="2019gbzzc")
 %}
 <h2>Highlights</h2>
 <p>
@@ -78,7 +78,7 @@
 {% endblock %}
 
 {% block errata %}
-<div class="warning">
+<div class="insert warn">
     <h3>Errata</h3>
     {{ erratum.pentextmsubversion( 'remove' ) }}
 </div>

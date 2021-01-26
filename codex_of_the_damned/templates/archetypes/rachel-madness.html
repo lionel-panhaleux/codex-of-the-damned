@@ -11,32 +11,32 @@
 {% endblock %}
 
 {% block archetype %}
-{% trans trimmed 
-    rachel_brandywine=card("Rachel Brandywine"),
-    homunculus=card("Homunculus"),
-    madness_network=card("Madness Network"),
-    form_of_mist=card("Form of Mist"),
-    second_tradition_domain=card("Second Tradition: Domain"),
-    eyes_of_argus=card("Eyes of Argus"),
-    earth_meld=card("Earth Meld"),
-    enkil_cog=card("Enkil Cog"),
-    perfectionist=card("Perfectionist"),
-    giant_s_blood=card("Giant's Blood"),
-    the_rack=card("The Rack"),
-    greger_anderssen=card("Greger Anderssen"),
-    parity_shift=card("Parity Shift"),
-    protean=card("Protean"),
-    blessing_of_chaos=card("Blessing of Chaos"),
-    mind_rape=card("Mind Rape"),
-    sensory_deprivation=card("Sensory Deprivation"),
-    heart_of_nizchetus=card("Heart of Nizchetus"),
-    sport_bike=card("Sport Bike"),
-    camera_phone=card("Camera Phone"),
-    fifth_tradition_hospitality=card("Fifth Tradition: Hospitality"),
-    shadow_of_the_beast=card("Shadow of the Beast"),
-    powerbase_zürich=card("Powerbase: Zürich"),
-    maris_streck=card("Maris Streck"),
-    the_unnamed=link("/archetypes/the-unnamed")
+{% trans trimmed
+rachel_brandywine=card("Rachel Brandywine"),
+homunculus=card("Homunculus"),
+madness_network=card("Madness Network"),
+form_of_mist=card("Form of Mist"),
+second_tradition_domain=card("Second Tradition: Domain"),
+eyes_of_argus=card("Eyes of Argus"),
+earth_meld=card("Earth Meld"),
+enkil_cog=card("Enkil Cog"),
+perfectionist=card("Perfectionist"),
+giant_s_blood=card("Giant's Blood"),
+the_rack=card("The Rack"),
+greger_anderssen=card("Greger Anderssen"),
+parity_shift=card("Parity Shift"),
+protean=card("Protean"),
+blessing_of_chaos=card("Blessing of Chaos"),
+mind_rape=card("Mind Rape"),
+sensory_deprivation=card("Sensory Deprivation"),
+heart_of_nizchetus=card("Heart of Nizchetus"),
+sport_bike=card("Sport Bike"),
+camera_phone=card("Camera Phone"),
+fifth_tradition_hospitality=card("Fifth Tradition: Hospitality"),
+shadow_of_the_beast=card("Shadow of the Beast"),
+powerbase_zürich=card("Powerbase: Zürich"),
+maris_streck=card("Maris Streck"),
+the_unnamed=link("/archetypes/the-unnamed")
 %}
 <h2>Highlights</h2>
 <p>
@@ -95,7 +95,7 @@
 {% endblock %}
 
 {% block errata %}
-<div class="warning">
+<div class="insert warn">
     <h3>Errata</h3>
     {{ erratum.pentextmsubversion( 'undecided' ) }}
     {{ erratum.parityshift() }}

@@ -12,35 +12,35 @@
 
 {% block archetype %}
 {% trans trimmed
-    confusion=card("Confusion"),
-    telepathic_misdirection=card("Telepathic Misdirection"),
-    delaying_tactics=card("Delaying Tactics"),
-    poison_pill=card("Poison Pill"),
-    kindred_spirits=card("Kindred Spirits"),
-    madman_s_quill=card("Madman's Quill"),
-    leverage=card("Leverage"),
-    obfuscate=card("Obfuscate"),
-    dementation=card("Dementation"),
-    dive_into_madness=card("Dive into Madness"),
-    dreams_of_the_sphinx=card("Dreams of the Sphinx"),
-    heart_of_nizchetus=card("Heart of Nizchetus"),
-    anarchist_uprising=card("Anarchist Uprising"),
-    ancilla_empowerment=card("Ancilla Empowerment"),
-    domain_challenge=card("Domain Challenge"),
-    restructure=card("Restructure"),
-    enchanted_marionette=card("Enchanted Marionette"),
-    telepathic_counter=card("Telepathic Counter"),
-    narrow_minds=card("Narrow Minds"),
-    wash=card("Wash"),
-    sudden_reversal=card("Sudden Reversal"),
-    bleeding_the_vine=card("Bleeding The Vine"),
-    villein=card("Villein"),
-    the_call=card("The Call"),
-    no_trace=card("No Trace"),
-    wider_view=card("Wider View"),
-    norbert_broda_s_deck=link("/deck-search", _("Norbert Bróda's deck"), twda_id="2015nliiibh"),
-    bram_van_stappen_s_deck=link("/deck-search", _("Bram van Stappen's deck"), twda_id="2013gncbc"),
-    pawel_kosz_s=link("/deck-search", _("Pawel Kosz's"), twda_id="2011rtthbp")
+confusion=card("Confusion"),
+telepathic_misdirection=card("Telepathic Misdirection"),
+delaying_tactics=card("Delaying Tactics"),
+poison_pill=card("Poison Pill"),
+kindred_spirits=card("Kindred Spirits"),
+madman_s_quill=card("Madman's Quill"),
+leverage=card("Leverage"),
+obfuscate=card("Obfuscate"),
+dementation=card("Dementation"),
+dive_into_madness=card("Dive into Madness"),
+dreams_of_the_sphinx=card("Dreams of the Sphinx"),
+heart_of_nizchetus=card("Heart of Nizchetus"),
+anarchist_uprising=card("Anarchist Uprising"),
+ancilla_empowerment=card("Ancilla Empowerment"),
+domain_challenge=card("Domain Challenge"),
+restructure=card("Restructure"),
+enchanted_marionette=card("Enchanted Marionette"),
+telepathic_counter=card("Telepathic Counter"),
+narrow_minds=card("Narrow Minds"),
+wash=card("Wash"),
+sudden_reversal=card("Sudden Reversal"),
+bleeding_the_vine=card("Bleeding The Vine"),
+villein=card("Villein"),
+the_call=card("The Call"),
+no_trace=card("No Trace"),
+wider_view=card("Wider View"),
+norbert_broda_s_deck=link("/deck-search", _("Norbert Bróda's deck"), id="2015nliiibh"),
+bram_van_stappen_s_deck=link("/deck-search", _("Bram van Stappen's deck"), id="2013gncbc"),
+pawel_kosz_s=link("/deck-search", _("Pawel Kosz's"), id="2011rtthbp")
 %}
 <h2>Highlights</h2>
 <p>
@@ -121,7 +121,7 @@
 {% endblock %}
 
 {% block errata %}
-<div class="warning">
+<div class="insert warn">
     <h3>Errata</h3>
     {{ erratum.pentextmsubversion( 'undecided' ) }}
 </div>

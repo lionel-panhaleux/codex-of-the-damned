@@ -13,24 +13,24 @@
 {% endblock %}
 
 {% block deck_guide %}
-{% trans trimmed 
-    art_scam=card("Art Scam"),
-    change_of_target=card("Change of Target"),
-    consanguineous_boon=card("Consanguineous Boon"),
-    creepshow_casino=card("Creepshow Casino"),
-    delaying_tactics=card("Delaying Tactics"),
-    enchant_kindred=card("Enchant Kindred"),
-    foundation_exhibit=card("Foundation Exhibit"),
-    kine_resources_contested=card("Kine Resources Contested"),
-    majesty=card("Majesty"),
-    palla_grande=card("Palla Grande"),
-    perfectionist=card("Perfectionist"),
-    resist_earth_s_grasp=card("Resist Earth’s Grasp"),
-    telepathic_misdirection=card("Telepathic Misdirection"),
-    the_embrace=card("The Embrace"),
-    the_hungry_coyote=card("The Hungry Coyote"),
-    vessel=card("Vessel"),
-    leeching=link("/strategy/bloat", _("leeching"), _anchor="leeching")
+{% trans trimmed
+art_scam=card("Art Scam"),
+change_of_target=card("Change of Target"),
+consanguineous_boon=card("Consanguineous Boon"),
+creepshow_casino=card("Creepshow Casino"),
+delaying_tactics=card("Delaying Tactics"),
+enchant_kindred=card("Enchant Kindred"),
+foundation_exhibit=card("Foundation Exhibit"),
+kine_resources_contested=card("Kine Resources Contested"),
+majesty=card("Majesty"),
+palla_grande=card("Palla Grande"),
+perfectionist=card("Perfectionist"),
+resist_earth_s_grasp=card("Resist Earth’s Grasp"),
+telepathic_misdirection=card("Telepathic Misdirection"),
+the_embrace=card("The Embrace"),
+the_hungry_coyote=card("The Hungry Coyote"),
+vessel=card("Vessel"),
+leeching=link("/strategy/bloat", _("leeching"), _anchor="leeching")
 
 %}
 <h2>Summary</h2>
@@ -91,13 +91,13 @@
     through throughout the game.
 </p>
 {% endtrans %}
-<div class="tip">
-    {% trans trimmed 
-        change_of_target=card("Change of Target"),
-        consanguineous_boon=card("Consanguineous Boon"),
-        kine_resources_contested=card("Kine Resources Contested"),
-        majesty=card("Majesty"),
-        the_embrace=card("The Embrace")
+<div class="insert tip">
+    {% trans trimmed
+    change_of_target=card("Change of Target"),
+    consanguineous_boon=card("Consanguineous Boon"),
+    kine_resources_contested=card("Kine Resources Contested"),
+    majesty=card("Majesty"),
+    the_embrace=card("The Embrace")
     %}
     <h3>Order of actions</h3>
     <p>
@@ -114,11 +114,11 @@
     {% endtrans %}
 </div>
 <p>
-    {% trans trimmed 
-        information_highway_article=external(
-            "https://vtesinformationhighway.wordpress.com/2019/01/24/toreador-starter-libertine-ball/", 
-            _("Information Highway article")
-        )
+    {% trans trimmed
+    information_highway_article=external(
+    "https://vtesinformationhighway.wordpress.com/2019/01/24/toreador-starter-libertine-ball/",
+    _("Information Highway article")
+    )
     %}
     Check the {{ information_highway_article }} for a deck review and ideas on how to
     improve it.

@@ -4,8 +4,11 @@ Changelog
 1.19 (unreleased)
 -----------------
 
-- Nothing changed yet.
-
+- Improve display on all devices
+- Card search: card text is now bold when it should be
+- Deck Search: improved the URL, sharing or reloading now displays the exact same page
+- Best cards: now uses two columns on mid-size devices like landscape-oriented phones
+- Better display of card names: color on hover, remover underline.
 
 1.18 (2020-12-31)
 -----------------

@@ -3,7 +3,7 @@
 
 {% block content %}
 <h1>{{ nec }} {{ _("Necromancy") }} </h1>
-<div class="tip">
+<div class="insert tip">
     <p>
         {% trans trimmed %}
         {{ nec }} provides a wide range of possibilities, including more than its share
@@ -13,7 +13,7 @@
 </div>
 
 {% call layout.card_column("Call of the Hungry Dead", decks=137, copies="3-7") %}
-{% trans trimmed seduction=card("Seduction")  %}
+{% trans trimmed seduction=card("Seduction") %}
 Played in most {{ nec }} decks, it is an excellent block denial card. Combined with
 {{ seduction }}, it can get any action through without even fighting for stealth.
 {% endtrans %}
@@ -41,9 +41,9 @@ deck, as it needs an ally or vampire in the ash heap already.
 {% endcall %}
 
 {% call layout.card_column("Trochomancy", decks=36, copies="1-4") %}
-{% trans trimmed 
-    inevitability_of_the_void=card("Inevitability of the Void"),
-    ashur_tablets=card("Ashur Tablets")
+{% trans trimmed
+inevitability_of_the_void=card("Inevitability of the Void"),
+ashur_tablets=card("Ashur Tablets")
 %}
 Generally inferior to the newer {{ inevitability_of_the_void }}, it's an excellent bleed
 enhancer, and its effect can be a good deterrent against {{ ashur_tablets }}.
@@ -51,9 +51,9 @@ enhancer, and its effect can be a good deterrent against {{ ashur_tablets }}.
 {% endcall %}
 
 {% call layout.card_column("Breath of Thanatos", decks=33, copies="2-4") %}
-{% trans trimmed 
-    spiritual_intervention=card("Spiritual Intervention"),
-    target_vitals=card("Target Vitals")
+{% trans trimmed
+spiritual_intervention=card("Spiritual Intervention"),
+target_vitals=card("Target Vitals")
 %}
 Although less used than the defensive {{ spiritual_intervention }}, the aggravated
 damage at superior {{ NEC }} is dreadful, even more so when combined with

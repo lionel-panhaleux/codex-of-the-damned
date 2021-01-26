@@ -11,27 +11,27 @@
 {% endblock %}
 
 {% block archetype %}
-{% trans trimmed 
-    mistress_fanchon=card("Mistress Fanchon"),
-    alastor=card("Alastor"),
-    helicopter=card("Helicopter"),
-    villein=card("Villein"),
-    zillah_s_valley=card("Zillah's Valley"),
-    information_highway=card("Information Highway"),
-    obedience=card("Obedience"),
-    mental_maze=card("Mental Maze"),
-    scourge_of_the_enochians=card("Scourge of the Enochians"),
-    flurry_of_action=card("Flurry of Action"),
-    might_of_the_camarilla=card("Might of the Camarilla"),
-    possession=card("Possession"),
-    malgorzata=card("Malgorzata"),
-    sha_ennu=card("Sha‑Ennu"),
-    unmada=card("Unmada"),
-    a_b=link("/strategy/fundamentals", _("A&B"), _anchor="AB"),
-    benoît_moyen_s_deck=link("/deck-search", _("Benoît Moyen's deck"), twda_id="2010eternalvigilancelf"),
-    nice_combination=link("/deck-search", _("nice combination"), twda_id="2018bgpmb"),
-    tzimisce_wall=link("/archetypes/tzimisce-wall")
-    %}
+{% trans trimmed
+mistress_fanchon=card("Mistress Fanchon"),
+alastor=card("Alastor"),
+helicopter=card("Helicopter"),
+villein=card("Villein"),
+zillah_s_valley=card("Zillah's Valley"),
+information_highway=card("Information Highway"),
+obedience=card("Obedience"),
+mental_maze=card("Mental Maze"),
+scourge_of_the_enochians=card("Scourge of the Enochians"),
+flurry_of_action=card("Flurry of Action"),
+might_of_the_camarilla=card("Might of the Camarilla"),
+possession=card("Possession"),
+malgorzata=card("Malgorzata"),
+sha_ennu=card("Sha‑Ennu"),
+unmada=card("Unmada"),
+a_b=link("/strategy/fundamentals", _("A&B"), _anchor="AB"),
+benoît_moyen_s_deck=link("/deck-search", _("Benoît Moyen's deck"), id="2010eternalvigilancelf"),
+nice_combination=link("/deck-search", _("nice combination"), id="2018bgpmb"),
+tzimisce_wall=link("/archetypes/tzimisce-wall")
+%}
 <h2>Highlights</h2>
 <p>
     This is a <em>stealth bleed & vote</em> deck starring {{ mistress_fanchon }}.
@@ -77,7 +77,7 @@
 {% endblock %}
 
 {% block errata %}
-<div class="warning">
+<div class="insert warn">
     <h3>Errata</h3>
     {{ erratum.pentextmsubversion( 'undecided' ) }}
 </div>

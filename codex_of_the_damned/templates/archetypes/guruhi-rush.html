@@ -11,29 +11,29 @@
 {% endblock %}
 
 {% block archetype %}
-{% trans trimmed 
-    nana_buruku=card("Nana Buruku"),
-    ashur_tablets=card("Ashur Tablets"),
-    anarch_revolt=card("Anarch Revolt"),
-    nangila_were=card("Nangila Were"),
-    enkidu_the_noah=card("Enkidu, The Noah"),
-    black_annis=card("Black Annis"),
-    fame=card("Fame"),
-    dragonbound=card("Dragonbound"),
-    powerbase_luanda=card("Powerbase: Luanda"),
-    well_marked=card("Well-Marked"),
-    cats_guidance=card("Cats' Guidance"),
-    sense_the_savage_way=card("Sense the Savage Way"),
-    wider_view=card("Wider View"),
-    andre_le_roux=card("Andre LeRoux"),
-    enchant_kindred=card("Enchant Kindred"),
-    founders_of_the_ebony_kingdom=card("Founders of the Ebony Kingdom"),
-    grooming_the_protégé=card("Grooming the Protégé"),
-    carver_s_meat_packing_and_storage=card("Carver's Meat Packing and Storage"),
-    tension_in_the_ranks=card("Tension in the Ranks"),
-    michael_heyder_s_deck=link("/deck-search", _("Michael Heyder's deck"), twda_id="2k9nacday2"),
-    jorge_delgado_s_deck=link("/deck-search", _("Jorge Delgado's deck"), twda_id="2014sncms")
-    %}
+{% trans trimmed
+nana_buruku=card("Nana Buruku"),
+ashur_tablets=card("Ashur Tablets"),
+anarch_revolt=card("Anarch Revolt"),
+nangila_were=card("Nangila Were"),
+enkidu_the_noah=card("Enkidu, The Noah"),
+black_annis=card("Black Annis"),
+fame=card("Fame"),
+dragonbound=card("Dragonbound"),
+powerbase_luanda=card("Powerbase: Luanda"),
+well_marked=card("Well-Marked"),
+cats_guidance=card("Cats' Guidance"),
+sense_the_savage_way=card("Sense the Savage Way"),
+wider_view=card("Wider View"),
+andre_le_roux=card("Andre LeRoux"),
+enchant_kindred=card("Enchant Kindred"),
+founders_of_the_ebony_kingdom=card("Founders of the Ebony Kingdom"),
+grooming_the_protégé=card("Grooming the Protégé"),
+carver_s_meat_packing_and_storage=card("Carver's Meat Packing and Storage"),
+tension_in_the_ranks=card("Tension in the Ranks"),
+michael_heyder_s_deck=link("/deck-search", _("Michael Heyder's deck"), id="2k9nacday2"),
+jorge_delgado_s_deck=link("/deck-search", _("Jorge Delgado's deck"), id="2014sncms")
+%}
 <h2>Highlights</h2>
 <p>
     This is a <em>rush</em> deck using the {{ ANI }}{{ POT }} disciplines combination.
@@ -92,7 +92,7 @@
 {% endblock %}
 
 {% block errata %}
-<div class="warning">
+<div class="insert warn">
     <h3>Errata</h3>
     {{ erratum.pentextmsubversion( 'remove' ) }}
 </div>

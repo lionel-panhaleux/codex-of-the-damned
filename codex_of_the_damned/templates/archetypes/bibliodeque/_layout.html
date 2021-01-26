@@ -1,5 +1,5 @@
 {% macro tournament( kind = "main" ) -%}
-<div class="warning">
+<div class="insert warn">
     <p>
         {{ _("This is an entry in the <strong>Bibliodèque</strong> project.") }}
     </p>
@@ -17,9 +17,9 @@
 {%- endmacro %}
 
 {% macro wip() -%}
-<div class="warning">
+<div class="insert warn">
     {% trans trimmed
-        github=external("https://github.com/lionel-panhaleux/codex-of-the-damned", "Github")
+    github=external("https://github.com/lionel-panhaleux/codex-of-the-damned", "Github")
     %}
     We are currently working on the analysis of this deck. If you want to lend a
     hand, we would be more than happy if you could suggest parts of the

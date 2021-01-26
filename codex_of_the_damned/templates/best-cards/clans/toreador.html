@@ -7,12 +7,12 @@
     Toreador
     {% endtrans %}
 </h1>
-<div class="tip">
+<div class="insert tip">
     <p>
-        {% trans trimmed 
-            aaa_archetype=link("/archetypes/aaa"),
-            jost_powerbleed=link("/archetypes/jost-powerbleed"),
-            weenie_aus=link("/archetypes/weenie-aus")
+        {% trans trimmed
+        aaa_archetype=link("/archetypes/aaa"),
+        jost_powerbleed=link("/archetypes/jost-powerbleed"),
+        weenie_aus=link("/archetypes/weenie-aus")
         %}
         The Toreador and their antitribu are a prominent clan in tournaments.
         They gave birth to two archetypes: {{ aaa }} using Toreador Camarilla Royalty
@@ -45,9 +45,9 @@ The cheapest {{ AUS }} pool can buy. An easy inclusion in many constructs.
 {% endcall %}
 
 {% call layout.card_column("Anneke", decks=56, copies="1-3") %}
-{% trans trimmed 
-    aaa_archetype=link("/archetypes/aaa"),
-    anson=card("Anson")
+{% trans trimmed
+aaa_archetype=link("/archetypes/aaa"),
+anson=card("Anson")
 %}
 Second "A" of the {{ aaa_archetype }} after {{ anson }},
 her +1 bleed and unique ability to block cross table makes for a nice package
@@ -63,9 +63,9 @@ it can help get vampires out faster if it is drawn early on.
 {% endcall %}
 
 {% call layout.card_column("François Villon", decks=47, copies="1-3") %}
-{% trans trimmed 
-    anson=card("Anson"), 
-    anneke=card("Anneke") 
+{% trans trimmed
+anson=card("Anson"),
+anneke=card("Anneke")
 %}
 Often found algonside {{ anson }} and {{ anneke }},
 his title combined with his nice ability makes for a good option.
@@ -80,10 +80,10 @@ he gets included in many decks.
 {% endcall %}
 
 {% call layout.card_column("Alexandra", decks=40, copies="2-3") %}
-{% trans trimmed 
-    aaa_archetype=link("/archetypes/aaa"),
-    anson=card("Anson"),
-    anneke=card("Anneke") 
+{% trans trimmed
+aaa_archetype=link("/archetypes/aaa"),
+anson=card("Anson"),
+anneke=card("Anneke")
 %}
 Last "A" of the {{ aaa_archetype }} alongisde {{ anson }} and {{ anneke }},
 her bleed bonus and title are good and her special unlock ability is very strong.

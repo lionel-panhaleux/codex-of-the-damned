@@ -11,23 +11,23 @@
 {% endblock %}
 
 {% block archetype %}
-{% trans trimmed 
-    cybele=card("Cybele"),
-    aksinya_daclau=card("Aksinya Daclau"),
-    zillah_s_valley=card("Zillah's Valley"),
-    villein=card("Villein"),
-    liquidation=card("Liquidation"),
-    ashur_tablets=card("Ashur Tablets"),
-    guard_dogs=card("Guard Dogs"),
-    rat_s_warning=card("Rat's Warning"),
-    entrancement=card("Entrancement"),
-    majesty=card("Majesty"),
-    lost_in_translation=card("Lost in Translation"),
-    nana_buruku=card("Nana Buruku"),
-    deep_song=card("Deep Song"),
-    aid_from_bats=card("Aid From Bats"),
-    carrion_crows=card("Carrion Crows"),
-    hugh_angseeing_s_deck=link("/deck-search", _("Hugh Angseeing's deck"), twda_id="2011fcqco")
+{% trans trimmed
+cybele=card("Cybele"),
+aksinya_daclau=card("Aksinya Daclau"),
+zillah_s_valley=card("Zillah's Valley"),
+villein=card("Villein"),
+liquidation=card("Liquidation"),
+ashur_tablets=card("Ashur Tablets"),
+guard_dogs=card("Guard Dogs"),
+rat_s_warning=card("Rat's Warning"),
+entrancement=card("Entrancement"),
+majesty=card("Majesty"),
+lost_in_translation=card("Lost in Translation"),
+nana_buruku=card("Nana Buruku"),
+deep_song=card("Deep Song"),
+aid_from_bats=card("Aid From Bats"),
+carrion_crows=card("Carrion Crows"),
+hugh_angseeing_s_deck=link("/deck-search", _("Hugh Angseeing's deck"), id="2011fcqco")
 %}
 <h2>Highlights</h2>
 <p>
@@ -85,7 +85,7 @@
 {% endblock %}
 
 {% block errata %}
-<div class="warning">
+<div class="insert warn">
     <h3>Errata</h3>
     {{ erratum.pentextmsubversion( 'undecided' ) }}
 </div>

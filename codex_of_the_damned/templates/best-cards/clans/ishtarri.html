@@ -3,11 +3,11 @@
 
 {% block content %}
 <h1><img src="{{ url_for('static', filename='img/icons/clan-ishtarri.svg') }}"> Ishtarri</h1>
-<div class="tip">
+<div class="insert tip">
     <p>
-        {% trans trimmed 
-            ishtarri_politics=link("/archetypes/ishtarri-politics"),
-            forced_march=card("Forced March")
+        {% trans trimmed
+        ishtarri_politics=link("/archetypes/ishtarri-politics"),
+        forced_march=card("Forced March")
         %}
         The Ishtarri and their {{ for }}{{ cel }}{{ pre }} disciplines combination
         have excellent titled vampires, so they've been included in political archetypes,
@@ -27,10 +27,10 @@ in {{ pre }}{{ obf }} vote constructs.
 {% endcall %}
 
 {% call layout.card_column("Ubende", decks=30, copies="1-3") %}
-{% trans trimmed 
-    forced_march=card("Forced March"),
-    undele=card("Undele"),
-    ayo_igoli=card("Ayo Igoli")
+{% trans trimmed
+forced_march=card("Forced March"),
+undele=card("Undele"),
+ayo_igoli=card("Ayo Igoli")
 %}
 A magaji for only 7 pool, with an inferior {{ for }} sufficient for {{ forced_march }}
 and an additional {{ obf }} that can be used in many constructs.

@@ -12,18 +12,18 @@
 
 {% block archetype %}
 {% trans trimmed
-    bima=card("Bima"),
-    cloak_the_gathering=card("Cloak the Gathering"),
-    conditioning=card("Conditioning"),
-    deflection=card("Deflection"),
-    delaying_tactics=card("Delaying Tactics"),
-    dominate=card("Dominate"),
-    govern_the_unaligned=card("Govern the Unaligned"),
-    halim_bey=card("Halim Bey"),
-    perfectionist=card("Perfectionist"),
-    veil_the_legions=card("Veil the Legions"),
-    waters_of_duat=card("Waters of Duat"),
-    ivor_blockleys_deck=link("/deck-search", _("Ivor Blockley's deck"), twda_id="2k8sydneyqual")
+bima=card("Bima"),
+cloak_the_gathering=card("Cloak the Gathering"),
+conditioning=card("Conditioning"),
+deflection=card("Deflection"),
+delaying_tactics=card("Delaying Tactics"),
+dominate=card("Dominate"),
+govern_the_unaligned=card("Govern the Unaligned"),
+halim_bey=card("Halim Bey"),
+perfectionist=card("Perfectionist"),
+veil_the_legions=card("Veil the Legions"),
+waters_of_duat=card("Waters of Duat"),
+ivor_blockleys_deck=link("/deck-search", _("Ivor Blockley's deck"), id="2k8sydneyqual")
 %}
 <h2>Highlights</h2>
 <p>
@@ -67,7 +67,7 @@
 {% endblock %}
 
 {% block errata %}
-<div class="warning">
+<div class="insert warn">
     <h3>Errata</h3>
     {{ erratum.pentextmsubversion( 'undecided' ) }}
 </div>

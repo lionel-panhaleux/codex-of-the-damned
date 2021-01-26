@@ -22,6 +22,7 @@
     {% block meta %}{% endblock %}
     <link rel="shortcut icon" href="{{ url_for('static', filename='img/favicon.ico') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/base.css') }}">
+    <link rel="stylesheet" href="https://static.krcg.org/web/krcg.css">
     <link rel="icon" href="{{ url_for('static', filename='img/icons/vtes.svg') }}">
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-157267369-1"></script>
@@ -31,6 +32,7 @@
         gtag('js', new Date());
         gtag('config', 'UA-157267369-1');
     </script>
+    <script src="https://static.krcg.org/web/krcg.js"></script>
     {% block scripts %}{% endblock %}
     <title>Codex of the Damned</title>
     {% endblock %}
@@ -43,31 +45,18 @@
             <h1>Codex of the Damned</h1>
         </a>
         <nav role="navigation">
-            <ul>
-                <li>{{ link('/online-play') }}</li>
-                <li>{{ link('/strategy') }}</li>
-                <li>{{ link('/archetypes') }}</li>
-                <li>{{ link('/best-cards') }}</li>
-                <li>{{ link('/deck-search') }}</li>
-                <li>{{ link('/card-search') }}</li>
-            </ul>
+            {{ link('/online-play') }}
+            {{ link('/strategy') }}
+            {{ link('/archetypes') }}
+            {{ link('/best-cards') }}
+            {{ link('/deck-search') }}
+            {{ link('/card-search') }}
         </nav>
         <nav role="translation">
-            <ul>
-                <li>{{ translation('en', "🇬🇧") }}</li>
-                <li>{{ translation('fr', "🇫🇷") }}</li>
-            </ul>
+            {{ translation('en', "🇬🇧") }}
+            {{ translation('fr', "🇫🇷") }}
         </nav>
     </header>
-
-    {% block card_display %}
-    <div id="card-modal" class="modal" onclick="this.style.display='none'">
-        <img class="modal-content" id="card-image">
-    </div>
-    <div id="card-hover" class="hover-modal" tabindex="-1">
-        <img class="modal-content" id="card-hover-image">
-    </div>
-    {% endblock %}
 
     {% block article %}
     <article>
@@ -85,6 +74,5 @@
         {% endblock %}
     </footer>
 </body>
-{% block script %}{% endblock %}
 
 </html>

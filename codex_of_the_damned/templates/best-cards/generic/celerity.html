@@ -3,7 +3,7 @@
 
 {% block content %}
 <h1>{{ cel }} {{ _("Celerity") }}</h1>
-<div class="tip">
+<div class="insert tip">
     <p>
         {% trans trimmed %}
         {{ cel }} provides an excellent combat module.
@@ -24,7 +24,7 @@ The card is highly usable and does not jam the hand the way a simple maneuver wo
 
 {% call layout.card_column("Forced March", decks=130, copies="2-7") %}
 {% trans trimmed
-	ab=link("/strategy/fundamentals", _("A&B"), _anchor="AB")
+ab=link("/strategy/fundamentals", _("A&B"), _anchor="AB")
 %}
 An excellent modifier, even at inferior {{ cel }}{{ for }}: an unlock
 at no cost is a very good {{ ab }} enhancer.
@@ -49,7 +49,7 @@ Its 1 blood cost is balanced by the fact that it provides good combat options
 
 {% call layout.card_column("Psyche!", decks=102, copies="2-9") %}
 {% trans trimmed
-	sce=link("/strategy/combat", _("Combat Ends"), _anchor="defence")
+sce=link("/strategy/combat", _("Combat Ends"), _anchor="defence")
 %}
 The ability to start a combat anew is one of the best counter against {{ sce }} effects.
 Only a few cards in the game provide this effect, so it is a real asset for {{ cel }}
@@ -59,9 +59,9 @@ combat modules.
 
 {% call layout.card_column("Sideslip", decks=83, copies="2-5") %}
 {% trans trimmed
-	pursuit=card("Pursuit"),
-	sideslip=card("Sideslip"),
-	acrobatics=card("Acrobatics")
+pursuit=card("Pursuit"),
+sideslip=card("Sideslip"),
+acrobatics=card("Acrobatics")
 %}
 A versatile defensive tool, it is unlikely to jam a hand too much, and the dodge or the
 damage prevention can save a vampire from a lethal blow. {{ pursuit }} and
@@ -81,8 +81,8 @@ often use guns in their combat module.
 
 {% call layout.card_column("Side Strike", decks=55, copies="1-4") %}
 {% trans trimmed
-	pursuit=card("Pursuit"),
-	blur=card("Blur")
+pursuit=card("Pursuit"),
+blur=card("Blur")
 %}
 A versatile combat tool, its effect can be either defensive (dodge)
 or offensive (additional strike) depending on the situation.

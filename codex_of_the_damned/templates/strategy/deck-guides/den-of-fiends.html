@@ -14,28 +14,28 @@
 
 {% block deck_guide %}
 
-{% trans trimmed 
-    deep_song=card("Deep Song"),
-    changeling=card("Changeling"),
-    fame=card("Fame"),
-    dragonbound=card("Dragonbound"),
-    smiling_jack_the_anarch=card("Smiling Jack, The Anarch"),
-    breath_of_the_dragon=card("Breath of the Dragon"),
-    chiropteran_marauder=card("Chiropteran Marauder"),
-    telepathic_tracking=card("Telepathic Tracking"),
-    carrion_crows=card("Carrion Crows"),
-    horrid_form=card("Horrid Form"),
-    inner_essence=card("Inner Essence"),
-    vessel=card("Vessel"),
-    villein=card("Villein"),
-    read_the_winds=card("Read the Winds"),
-    eyes_of_argus=card("Eyes of Argus"),
-    on_the_qui_vive=card("On the Qui Vive"),
-    bowl_of_convergence=card("Bowl of Convergence"),
-    raven_spy=card("Raven Spy"),
-    channel_10=card("Channel 10"),
-    telepathic_misdirection=card("Telepathic Misdirection"),
-    seduction=card("Seduction")
+{% trans trimmed
+deep_song=card("Deep Song"),
+changeling=card("Changeling"),
+fame=card("Fame"),
+dragonbound=card("Dragonbound"),
+smiling_jack_the_anarch=card("Smiling Jack, The Anarch"),
+breath_of_the_dragon=card("Breath of the Dragon"),
+chiropteran_marauder=card("Chiropteran Marauder"),
+telepathic_tracking=card("Telepathic Tracking"),
+carrion_crows=card("Carrion Crows"),
+horrid_form=card("Horrid Form"),
+inner_essence=card("Inner Essence"),
+vessel=card("Vessel"),
+villein=card("Villein"),
+read_the_winds=card("Read the Winds"),
+eyes_of_argus=card("Eyes of Argus"),
+on_the_qui_vive=card("On the Qui Vive"),
+bowl_of_convergence=card("Bowl of Convergence"),
+raven_spy=card("Raven Spy"),
+channel_10=card("Channel 10"),
+telepathic_misdirection=card("Telepathic Misdirection"),
+seduction=card("Seduction")
 %}
 <h2>Summary</h2>
 <p>
@@ -111,13 +111,13 @@
 </p>
 {% endtrans %}
 
-<div class="tip">
+<div class="insert tip">
     <h3>{{ _("What to block") }}</h3>
     <p>
-        {% trans trimmed 
-            consanguineous_boon=card("Consanguineous Boon"),
-            govern_the_unaligned=card("Govern the Unaligned"),
-            the_embrace=card("The Embrace")
+        {% trans trimmed
+        consanguineous_boon=card("Consanguineous Boon"),
+        govern_the_unaligned=card("Govern the Unaligned"),
+        the_embrace=card("The Embrace")
         %}
         The deck has tremendous block power, but it can not block everything the prey or
         the predator do. It should focus on blocking the
@@ -129,11 +129,11 @@
     </p>
 </div>
 <p>
-    {% trans trimmed 
-        information_highway_article=external(
-            "https://vtesinformationhighway.wordpress.com/2019/01/21/tzimisce-starter-den-of-fiends/", 
-            _("Information Highway article")
-        )
+    {% trans trimmed
+    information_highway_article=external(
+    "https://vtesinformationhighway.wordpress.com/2019/01/21/tzimisce-starter-den-of-fiends/",
+    _("Information Highway article")
+    )
     %}
     Check the {{ information_highway_article }} for a deck review and ideas on how to
     improve it.

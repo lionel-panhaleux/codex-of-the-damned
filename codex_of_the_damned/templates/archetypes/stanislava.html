@@ -12,37 +12,37 @@
 
 {% block archetype %}
 {% trans trimmed
-    stanislava=card("Stanislava"),
-    govern_the_unaligned=card("Govern the Unaligned"),
-    villein=card("Villein"),
-    ingrid_rossler=card("Ingrid Rossler"),
-    parity_shift=card("Parity Shift"),
-    form_of_mist=card("Form of Mist"),
-    earth_control=card("Earth Control"),
-    rapid_change=card("Rapid Change"),
-    deflection=card("Deflection"),
-    sense_the_savage_way=card("Sense the Savage Way"),
-    forced_march=card("Forced March"),
-    instantaneous_transformation=card("Instantaneous Transformation"),
-    murmur_of_the_false_will=card("Murmur of the False Will"),
-    archon_investigation=card("Archon Investigation"),
-    papillon=card("Papillon"),
-    jake_washington=card("Jake Washington"),
-    seal_of_veddartha=card("Seal of Veddartha"),
-    guard_dogs=card("Guard Dogs"),
-    kine_resources_contested=card("Kine Resources Contested"),
-    vele_s_hunt=card("Vele's Hunt"),
-    claws_of_the_dead=card("Claws of the Dead"),
-    ecoterrorists=card("Ecoterrorists"),
-    rachel_brandywine=card("Rachel Brandywine"),
-    iliana=card("Iliana"),
-    caitlin=card("Caitlin"),
-    angus_the_unruled=card("Angus the Unruled"),
-    don_cruez_the_idealist=card("Don Cruez, The Idealist"),
-    second_tradition_domain=card("Second Tradition: Domain"),
-    fourth_tradition_the_accounting=card("Fourth Tradition: The Accounting"),
-    janne_lonnqvist_s_deck=link("/deck-search", _("Janne Lönnqvist's deck"), twda_id="2016rfehf"),
-    giulio_de_cicco_s_deck=link("/deck-search", _("Giulio De Cicco's deck"), twda_id="2014gtdtigi")
+stanislava=card("Stanislava"),
+govern_the_unaligned=card("Govern the Unaligned"),
+villein=card("Villein"),
+ingrid_rossler=card("Ingrid Rossler"),
+parity_shift=card("Parity Shift"),
+form_of_mist=card("Form of Mist"),
+earth_control=card("Earth Control"),
+rapid_change=card("Rapid Change"),
+deflection=card("Deflection"),
+sense_the_savage_way=card("Sense the Savage Way"),
+forced_march=card("Forced March"),
+instantaneous_transformation=card("Instantaneous Transformation"),
+murmur_of_the_false_will=card("Murmur of the False Will"),
+archon_investigation=card("Archon Investigation"),
+papillon=card("Papillon"),
+jake_washington=card("Jake Washington"),
+seal_of_veddartha=card("Seal of Veddartha"),
+guard_dogs=card("Guard Dogs"),
+kine_resources_contested=card("Kine Resources Contested"),
+vele_s_hunt=card("Vele's Hunt"),
+claws_of_the_dead=card("Claws of the Dead"),
+ecoterrorists=card("Ecoterrorists"),
+rachel_brandywine=card("Rachel Brandywine"),
+iliana=card("Iliana"),
+caitlin=card("Caitlin"),
+angus_the_unruled=card("Angus the Unruled"),
+don_cruez_the_idealist=card("Don Cruez, The Idealist"),
+second_tradition_domain=card("Second Tradition: Domain"),
+fourth_tradition_the_accounting=card("Fourth Tradition: The Accounting"),
+janne_lonnqvist_s_deck=link("/deck-search", _("Janne Lönnqvist's deck"), id="2016rfehf"),
+giulio_de_cicco_s_deck=link("/deck-search", _("Giulio De Cicco's deck"), id="2014gtdtigi")
 %}
 <h2>Highlights</h2>
 <p>
@@ -113,7 +113,7 @@
 {% endblock %}
 
 {% block errata %}
-<div class="warning">
+<div class="insert warn">
     <h3>Errata</h3>
     {{ erratum.pentextmsubversion( 'undecided' ) }}
     {{ erratum.parityshift() }}

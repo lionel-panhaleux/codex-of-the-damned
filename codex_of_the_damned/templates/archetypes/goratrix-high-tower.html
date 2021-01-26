@@ -11,37 +11,37 @@
 {% endblock %}
 
 {% block archetype %}
-{% trans trimmed 
-    goratrix=card("Goratrix"),
-    sense_the_savage_way=card("Sense the Savage Way"),
-    theft_of_vitae=card("Theft of Vitae"),
-    carrion_crows=card("Carrion Crows"),
-    canine_horde=card("Canine Horde"),
-    magic_of_the_smith=card("Magic of the Smith"),
-    heart_of_nizchetus=card("Heart of Nizchetus"),
-    bowl_of_convergence=card("Bowl of Convergence"),
-    ivory_bow=card("Ivory Bow"),
-    kevlar_vest=card("Kevlar Vest"),
-    ruins_of_ceoris=card("Ruins of Ceoris"),
-    cats_guidance=card("Cats' Guidance"),
-    anarch_revolt=card("Anarch Revolt"),
-    army_of_rats=card("Army of Rats"),
-    smiling_jack_the_anarch=card("Smiling Jack, The Anarch"),
-    enkil_cog=card("Enkil Cog"),
-    eagle_s_sight=card("Eagle's Sight"),
-    pentex_subversion=card("Pentex™ Subversion"),
-    rutor_s_hand=card("Rutor's Hand"),
-    mylan_horseed=card("Mylan Horseed"),
-    villein=card("Villein"),
-    vessel=card("Vessel"),
-    the_erciyes_fragments=card("The Erciyes Fragments"),
-    read_the_winds=card("Read the Winds"),
-    breath_of_the_dragon=card("Breath of the Dragon"),
-    chiropteran_marauder=card("Chiropteran Marauder"),
-    abbot=card("Abbot"),
-    powerbase_barranquilla=card("Powerbase: Barranquilla"),
-    jakub_baranowski_s_deck=link("/deck-search", _("Jakub Baranowski's deck"), twda_id="2013pncnsp")
-    %}
+{% trans trimmed
+goratrix=card("Goratrix"),
+sense_the_savage_way=card("Sense the Savage Way"),
+theft_of_vitae=card("Theft of Vitae"),
+carrion_crows=card("Carrion Crows"),
+canine_horde=card("Canine Horde"),
+magic_of_the_smith=card("Magic of the Smith"),
+heart_of_nizchetus=card("Heart of Nizchetus"),
+bowl_of_convergence=card("Bowl of Convergence"),
+ivory_bow=card("Ivory Bow"),
+kevlar_vest=card("Kevlar Vest"),
+ruins_of_ceoris=card("Ruins of Ceoris"),
+cats_guidance=card("Cats' Guidance"),
+anarch_revolt=card("Anarch Revolt"),
+army_of_rats=card("Army of Rats"),
+smiling_jack_the_anarch=card("Smiling Jack, The Anarch"),
+enkil_cog=card("Enkil Cog"),
+eagle_s_sight=card("Eagle's Sight"),
+pentex_subversion=card("Pentex™ Subversion"),
+rutor_s_hand=card("Rutor's Hand"),
+mylan_horseed=card("Mylan Horseed"),
+villein=card("Villein"),
+vessel=card("Vessel"),
+the_erciyes_fragments=card("The Erciyes Fragments"),
+read_the_winds=card("Read the Winds"),
+breath_of_the_dragon=card("Breath of the Dragon"),
+chiropteran_marauder=card("Chiropteran Marauder"),
+abbot=card("Abbot"),
+powerbase_barranquilla=card("Powerbase: Barranquilla"),
+jakub_baranowski_s_deck=link("/deck-search", _("Jakub Baranowski's deck"), id="2013pncnsp")
+%}
 <h2>Highlights</h2>
 <p>
     This is a <em>wall</em> deck starring {{ goratrix }}.
@@ -118,7 +118,7 @@
 {% endblock %}
 
 {% block errata %}
-<div class="warning">
+<div class="insert warn">
     <h3>Errata</h3>
     {{ erratum.pentextmsubversion( 'remove' ) }}
 </div>

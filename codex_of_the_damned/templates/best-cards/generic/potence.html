@@ -3,7 +3,7 @@
 
 {% block content %}
 <h1>{{ pot }} {{ _("Potence") }}</h1>
-<div class="tip">
+<div class="insert tip">
     <p>
         {% trans trimmed %}
         {{ pot }} provides an excellent combat module.
@@ -50,9 +50,9 @@ might be better.
 {% endcall %}
 
 {% call layout.card_column("Iron Glare", decks=45, copies="2-6") %}
-{% trans trimmed 
-    aire_of_elation=card("Aire of Elation"),
-    img_clan_toreador='<img src="%(url)s" />'|format(url=url_for('static', filename='img/icons/clan-toreador.svg'))|safe
+{% trans trimmed
+aire_of_elation=card("Aire of Elation"),
+img_clan_toreador='<img src="%(url)s" />'|format(url=url_for('static', filename='img/icons/clan-toreador.svg'))|safe
 %}
 A bleed modifier available to {{ POT }}{{ PRE }} decks. It is better than
 {{ aire_of_elation }} for non-Toreador {{ img_clan_toreador }} decks, as it does not

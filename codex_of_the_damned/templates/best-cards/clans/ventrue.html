@@ -3,13 +3,13 @@
 
 {% block content %}
 <h1><img src="{{ url_for('static', filename='img/icons/clan-ventrue.svg') }}"> Ventrue</h1>
-<div class="tip">
-    {% trans trimmed 
-        anti_ventrue_grinder=link("/archetypes/anti-ventrue-grinder"),
-        ventrue_royalty=link("/archetypes/ventrue-royalty"),
-        the_bleeding_vignes=link("/archetypes/the-bleeding-vignes"),
-        edward_vignes=card("Edward Vignes"),
-        weenie_dom=link("/archetypes/weenie-dom")
+<div class="insert tip">
+    {% trans trimmed
+    anti_ventrue_grinder=link("/archetypes/anti-ventrue-grinder"),
+    ventrue_royalty=link("/archetypes/ventrue-royalty"),
+    the_bleeding_vignes=link("/archetypes/the-bleeding-vignes"),
+    edward_vignes=card("Edward Vignes"),
+    weenie_dom=link("/archetypes/weenie-dom")
     %}
     <p>
         The Ventrue with {{ pre }}{{ dom }}{{ for }} and their antitribu with
@@ -65,10 +65,10 @@ but can also be a bargaining chip with the other players.
 {% endcall %}
 
 {% call layout.card_column("Ulrike Rothbart", decks=76, copies="1") %}
-{% trans trimmed 
-    jephta_hester=card("Jephta Hester"),
-    neighbor_john=card("Neighbor John")
-    %}
+{% trans trimmed
+jephta_hester=card("Jephta Hester"),
+neighbor_john=card("Neighbor John")
+%}
 A cheap cost for {{ for }}{{ dom }}, she often gets included alongside
 {{ jephta_hester }} and {{ neighbor_john }}.
 {% endtrans %}
@@ -103,9 +103,9 @@ he is an easy inclusion in any {{ PRE }} based deck.
 {% endcall %}
 
 {% call layout.card_column("Arika", decks=57, copies="1-5") %}
-{% trans trimmed 
-    council_of_doom=link("/archetypes/council-of-doom"),
-    the_dark_side_of_politics=link("/archetypes/the-dark-side-of-politics")
+{% trans trimmed
+council_of_doom=link("/archetypes/council-of-doom"),
+the_dark_side_of_politics=link("/archetypes/the-dark-side-of-politics")
 %}
 The infamous Ventrue <em>Inner Circle</em>, her ability and access to {{ DOM }}{{ OBF }}
 gets her included in many <em>Inner Circle</em> constructs, like in the
@@ -128,8 +128,8 @@ and Ventrue antitribu decks.
 {% endcall %}
 
 {% call layout.card_column("Lodin (Olaf Holte)", decks=51, copies="1-3") %}
-{% trans trimmed 
-    ventrue_royalty=link("/archetypes/ventrue-royalty")
+{% trans trimmed
+ventrue_royalty=link("/archetypes/ventrue-royalty")
 %}
 Star of the modern variant of the {{ ventrue_royalty }} archetype,
 he has all clan disciplines at superior {{ DOM }}{{ PRE }}{{ FOR }} and
@@ -152,8 +152,8 @@ and her unlock ability can be useful.
 {% endcall %}
 
 {% call layout.card_column("Victor Donaldson", decks=45, copies="1-2") %}
-{% trans trimmed 
-    ventrue_royalty=link("/archetypes/ventrue-royalty")
+{% trans trimmed
+ventrue_royalty=link("/archetypes/ventrue-royalty")
 %}
 A cheap <em>Prince</em> in group 5, with superior {{ DOM }}, he easily gets included in
 {{ ventrue_royalty }} decks.

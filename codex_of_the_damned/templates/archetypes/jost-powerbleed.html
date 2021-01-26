@@ -11,32 +11,32 @@
 {% endblock %}
 
 {% block archetype %}
-{% trans trimmed 
-    rebekka_chantry_elder_of_munich=card("Rebekka, Chantry Elder of Munich", "Rebekka"),
-    jost_werner=card("Jost Werner"),
-    enchant_kindred=card("Enchant Kindred"),
-    mind_numb=card("Mind Numb"),
-    majesty=card("Majesty"),
-    anarch_troublemaker=card("Anarch Troublemaker"),
-    pentex_subversion=card("Pentex™ Subversion"),
-    aire_of_elation=card("Aire of Elation"),
-    entrancement=card("Entrancement"),
-    scourge_of_the_enochians=card("Scourge of the Enochians"),
-    delaying_tactics=card("Delaying Tactics"),
-    eyes_of_argus=card("Eyes of Argus"),
-    telepathic_misdirection=card("Telepathic Misdirection"),
-    my_enemy_s_enemy=card("My Enemy's Enemy"),
-    palla_grande=card("Palla Grande"),
-    art_scam=card("Art Scam"),
-    the_embrace=card("The Embrace"),
-    the_parthenon=card("The Parthenon"),
-    ashur_tablets=card("Ashur Tablets"),
-    anson=card("Anson"),
-    liquidation=card("Liquidation"),
-    moises_ferrer_s_deck=link("/deck-search", _("Moisés Ferrer's deck"), twda_id="2018ccpms"),
-    martin_weinmayer_s_deck=link("/deck-search", _("Martin Weinmayer's deck"), twda_id="2018nacd1co"),
-    rudolf_scholz_s_deck=link("/deck-search", _("Rudolf Scholz's deck"), twda_id="2012dnccd")
-    %}
+{% trans trimmed
+rebekka_chantry_elder_of_munich=card("Rebekka, Chantry Elder of Munich", "Rebekka"),
+jost_werner=card("Jost Werner"),
+enchant_kindred=card("Enchant Kindred"),
+mind_numb=card("Mind Numb"),
+majesty=card("Majesty"),
+anarch_troublemaker=card("Anarch Troublemaker"),
+pentex_subversion=card("Pentex™ Subversion"),
+aire_of_elation=card("Aire of Elation"),
+entrancement=card("Entrancement"),
+scourge_of_the_enochians=card("Scourge of the Enochians"),
+delaying_tactics=card("Delaying Tactics"),
+eyes_of_argus=card("Eyes of Argus"),
+telepathic_misdirection=card("Telepathic Misdirection"),
+my_enemy_s_enemy=card("My Enemy's Enemy"),
+palla_grande=card("Palla Grande"),
+art_scam=card("Art Scam"),
+the_embrace=card("The Embrace"),
+the_parthenon=card("The Parthenon"),
+ashur_tablets=card("Ashur Tablets"),
+anson=card("Anson"),
+liquidation=card("Liquidation"),
+moises_ferrer_s_deck=link("/deck-search", _("Moisés Ferrer's deck"), id="2018ccpms"),
+martin_weinmayer_s_deck=link("/deck-search", _("Martin Weinmayer's deck"), id="2018nacd1co"),
+rudolf_scholz_s_deck=link("/deck-search", _("Rudolf Scholz's deck"), id="2012dnccd")
+%}
 <h2>Highlights</h2>
 <p>
     This is a <em>powerbleed</em> deck starring {{ rebekka_chantry_elder_of_munich }}
@@ -103,7 +103,7 @@
 {% endblock %}
 
 {% block errata %}
-<div class="warning">
+<div class="insert warn">
     <h3>Errata</h3>
     {{ erratum.pentextmsubversion() }}
 </div>

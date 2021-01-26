@@ -12,23 +12,23 @@
 
 {% block archetype %}
 {% trans trimmed
-    blood_awakening=card("Blood Awakening"),
-    break_the_code=card("Break the Code"),
-    elimelech_the_twice_damned=card("Elimelech the Twice Damned"),
-    kindred_spirits=card("Kindred Spirits"),
-    loss=card("Loss"),
-    no_trace=card("No Trace"),
-    recruitment_exercise=card("Recruitment Exercise"),
-    reunion_kamut=card("Reunion Kamut"),
-    seraphs_second=card("Seraph's Second"),
-    tattoo_signal=card("Tattoo Signal"),
-    the_art_of_memory=card("The Art of Memory"),
-    the_fourth_cycle=card("The Fourth Cycle"),
-    truth_in_ink=card("Truth in Ink"),
-    watchtower_the_wolves_feed=card("Watchtower: The Wolves Feed"),
-    a_b=link("/strategy/fundamentals", _("A&B"), _anchor="AB"),
-    mark_loughmans_deck=link("/deck-search", _("Mark Loughman's deck"), twda_id="2018ot2co"),
-    carlo_danieles_deck=link("/deck-search", _("Carlo Daniele's deck"), twda_id="2019nbbi")
+blood_awakening=card("Blood Awakening"),
+break_the_code=card("Break the Code"),
+elimelech_the_twice_damned=card("Elimelech the Twice Damned"),
+kindred_spirits=card("Kindred Spirits"),
+loss=card("Loss"),
+no_trace=card("No Trace"),
+recruitment_exercise=card("Recruitment Exercise"),
+reunion_kamut=card("Reunion Kamut"),
+seraphs_second=card("Seraph's Second"),
+tattoo_signal=card("Tattoo Signal"),
+the_art_of_memory=card("The Art of Memory"),
+the_fourth_cycle=card("The Fourth Cycle"),
+truth_in_ink=card("Truth in Ink"),
+watchtower_the_wolves_feed=card("Watchtower: The Wolves Feed"),
+a_b=link("/strategy/fundamentals", _("A&B"), _anchor="AB"),
+mark_loughmans_deck=link("/deck-search", _("Mark Loughman's deck"), id="2018ot2co"),
+carlo_danieles_deck=link("/deck-search", _("Carlo Daniele's deck"), id="2019nbbi")
 %}
 <h2>Highlights</h2>
 <p>
@@ -83,7 +83,7 @@
 {% endblock %}
 
 {% block errata %}
-<div class="warning">
+<div class="insert warn">
     <h3>Errata</h3>
     {{ erratum.pentextmsubversion( 'undecided' ) }}
 </div>

@@ -1,4 +1,4 @@
-{% extends "strategy/_layout.html" %}
+{% extends "layout.html" %}
 
 {% block content %}
 <h1>{{ _('Table talk') }}</h1>
@@ -34,8 +34,8 @@
     </li>
     <li>
         {% trans trimmed
-            the_rack=card("The Rack"),
-            powerbase_montreal=card("Powerbase: Montreal")
+        the_rack=card("The Rack"),
+        powerbase_montreal=card("Powerbase: Montreal")
         %}
         Letting another player <strong>borrow a card</strong> unopposed, like
         {{ the_rack }} or {{ powerbase_montreal }}.
@@ -54,7 +54,7 @@
     </li>
     <li>
         {% trans trimmed
-            ashur_tablets=card("Ashur Tablets")
+        ashur_tablets=card("Ashur Tablets")
         %}
         Aggreing to <strong>use {{ ashur_tablets }} alternatively</strong>
         to avoid crippling one another.
@@ -68,7 +68,7 @@
     one's prey or predator.
     {% endtrans %}
 </p>
-<div class="tip">
+<div class="insert tip">
     {% trans trimmed %}
     <h3>The unbearable lightness of deals</h3>
     <p>
@@ -135,7 +135,7 @@
         {% endtrans %}
     </li>
 </ul>
-<div class="tip">
+<div class="insert tip">
     <h3>{{ _('Decision timing') }}</h3>
     <p>
         {% trans trimmed %}
@@ -153,7 +153,7 @@
         </li>
         <li>
             {% trans trimmed
-                sudden_reversal=card("Sudden Reversal")
+            sudden_reversal=card("Sudden Reversal")
             %}
             An easier way is to <strong>act as if</strong> one had a useful reaction in hand when it's not
             the case. Asking for two seconds to ponder during another player turn to hint at a counter like
@@ -163,7 +163,7 @@
         <li>
             {% trans trimmed %}
             The easiest way to stay composed is to <strong>decide in advance</strong> what one's reaction will be.
-            For example, with a wake in hand, one can decide <em>beforehand</em> to wake only if a bleed above
+            For example, with a wake in hand, one can decide beforehand to wake only if a bleed above
             one pool is anounced. This way the pondering time does not show so much.
             {% endtrans %}
         </li>
@@ -173,7 +173,7 @@
     {% trans trimmed %}
     Another tool of manipulation is about the players <strong>standing</strong> around the table.
     A handful of casual comments can go a long way.
-    The basic idea is to decide on a <em>posture</em> quite early in the game:
+    The basic idea is to decide on a posture quite early in the game:
     which deck is a threat on the table and which is the underdog.
     If the other players aggree with the posture, this can have the following effects:
     {% endtrans %}
@@ -194,15 +194,15 @@
 <p>
     {% trans trimmed %}
     Of course, one should try to <strong>lay low</strong>, avoid to focus the table attention to oneself
-    and <em>never</em> present himself as the threat.
-    The posture should be expressed with a bit of subtelty and always <em>pleasantly</em>:
+    and never pose as the threat.
+    The posture should be expressed with a bit of subtelty and always pleasantly:
     an aggressive posture is very likely to drive the other players against the initiator, plus, remember,
     this is a game and should stay enjoyable even for your opponents.
     {% endtrans %}
 </p>
 <h2 id="table-balance">{{ _('Table balance') }}</h2>
-{% trans trimmed 
-    archetypes=link("/strategy/archetypes", _("archetypes"))
+{% trans trimmed
+archetypes=link("/strategy/archetypes", _("archetypes"))
 %}
 <p>
     Not everything around the table is about talking. Having a good sense of the <strong>table balance</strong> is
@@ -227,7 +227,7 @@
     be trusted less and less as the prey gets close to be ousted.
 </p>
 {% endtrans %}
-<div class="tip">
+<div class="insert tip">
     {% trans trimmed %}
     <h3>Hopping</h3>
     <p>
@@ -251,7 +251,8 @@
 <h2>{{ _('Predator-Prey Continuum') }}</h2>
 <p>
     {% trans trimmed
-        basic_concepts_in_deck_construction='<a target="_blank" href="%(url)s">Basic Concepts in Deck Construction</a>'|format(url=url_for('static', filename='pdf/basic-concepts-in-deck-construction.pdf'))|safe
+    basic_concepts_in_deck_construction='<a target="_blank" href="%(url)s">Basic Concepts in Deck
+        Construction</a>'|format(url=url_for('static', filename='pdf/basic-concepts-in-deck-construction.pdf'))|safe
     %}
     The Predator-Prey Continuum is a notion developped by Gregory Williams in his
     {{ basic_concepts_in_deck_construction }}.
@@ -265,7 +266,7 @@
     <img src="{{ url_for('static', filename='img/pp-continuum.svg') }}" alt="Predator-Prey Continuum">
 </div>
 {% trans trimmed
-    lunge_move=link("/strategy/fundamentals", _("lunge move"), "lunge")    
+lunge_move=link("/strategy/fundamentals", _("lunge move"), "lunge")
 %}
 <p>
     If a strong (▲) player (M<sub>1</sub>) pressures his prey, then
@@ -281,7 +282,7 @@
 <p>
     This systemic ripple effect, although not so clear-cut in practice and depending a lot on the type of decks
     on the table, is a good model of the effects of table balance. It emphasizes how important it is for one to nail his
-    <strong>{{ lunge_move }}</strong> in a five or three players setup: if the lunge works,
+    {{ lunge_move }} in a five or three players setup: if the lunge works,
     you get back to an even number and a favorable situation. If it fails, you stay on an odd number of players
     and have just put a lot of pressure on your prey.
     More often than not, this means the pressure will come back at you in your very next turn.

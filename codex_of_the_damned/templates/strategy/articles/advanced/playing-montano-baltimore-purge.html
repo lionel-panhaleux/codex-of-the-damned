@@ -5,15 +5,19 @@
 <meta property="decklist" content='{{ deck_json | tojson }}' />
 {% endblock %}
 
+{% block scripts %}
+<script src="{{ url_for('static', filename='js/decklist.js') }}"></script>
+{% endblock %}
+
 {% block content %}
 <h1>{{ _('Playing Montano Baltimore Purge') }}<br />
-    <span>{{ _('By Rudolf Scholz') }}</span>
+    <span class="subtitle">{{ _('By Rudolf Scholz') }}</span>
 </h1>
-<div class="author">
+<div class="insert author">
     <img src="{{ url_for('static', filename='img/rudolf_scholz.png') }}" alt="Rudolf Scholz">
     <p>
         {% trans trimmed
-            anson=card("Anson")
+        anson=card("Anson")
         %}
         Rudolf Scholz has been playing V:tES since 2006 and became Germany's National Coordinator in 2015.
         He sits in the VEKN Hall of Fame with 11 tournament victories, and has been three time Danish Champion,
@@ -23,26 +27,26 @@
     </p>
     <div class="clear"></div>
 </div>
-<div class="column">
-    <div class="column-image">{{ card_image("Montano", false) }}</div>
+<div class="column-2-always">
+    {{ card_image("Montano", false) }}
 </div>
-<div class="column">
-    <div class="column-image">{{ card_image("Baltimore Purge", false) }}</div>
+<div class="column-2-always">
+    {{ card_image("Baltimore Purge", false) }}
 </div>
 <p>
-    {% trans trimmed 
-        ambrosio_luis_monçada=card("Ambrosio Luis Monçada, Plenipotentiary", "Ambrosio Luis Monçada"),
-        arika=card("Arika"),
-        baltimore_purge=card("Baltimore Purge"),
-        enkil_cog=card("Enkil Cog"),
-        freak_drive=card("Freak Drive"),
-        govern_the_unaligned=card("Govern the Unaligned"),
-        graverobbing=card("Graverobbing"),
-        heidelberg_castle=card("Heidelberg Castle, Germany", "Heidelberg Castle"),
-        mind_rape=card("Mind Rape"),
-        montano=card("Montano"),
-        stanislava=card("Stanislava"),
-        img_clan_lasombra='<img src="%(url)s" />'|format(url=url_for('static', filename='img/icons/clan-lasombra.svg'))|safe
+    {% trans trimmed
+    ambrosio_luis_monçada=card("Ambrosio Luis Monçada, Plenipotentiary", "Ambrosio Luis Monçada"),
+    arika=card("Arika"),
+    baltimore_purge=card("Baltimore Purge"),
+    enkil_cog=card("Enkil Cog"),
+    freak_drive=card("Freak Drive"),
+    govern_the_unaligned=card("Govern the Unaligned"),
+    graverobbing=card("Graverobbing"),
+    heidelberg_castle=card("Heidelberg Castle, Germany", "Heidelberg Castle"),
+    mind_rape=card("Mind Rape"),
+    montano=card("Montano"),
+    stanislava=card("Stanislava"),
+    img_clan_lasombra='<img src="%(url)s" />'|format(url=url_for('static', filename='img/icons/clan-lasombra.svg'))|safe
     %}
     Of course, there have been Baltimore Purge decks before the appearance of {{ montano }}, e.g. with {{ arika }},
     {{ stanislava }} or {{ ambrosio_luis_monçada }} as star vampires, but in comparison {{ montano }} offers
@@ -57,16 +61,16 @@
     {% endtrans %}
 </p>
 
-<div class="tip">
+<div class="insert tip">
     <h3>{{ _('Crypt Acceleration') }}</h3>
     <p>
         {% trans trimmed
-            montano=card("Montano"),
-            zillah_s_valley=card("Zillah’s Valley"),
-            learjet=card("Learjet"),
-            aura_reading=card('Aura Reading'),
-            lupine_assault=card('Lupine Assault')
-    %}
+        montano=card("Montano"),
+        zillah_s_valley=card("Zillah’s Valley"),
+        learjet=card("Learjet"),
+        aura_reading=card('Aura Reading'),
+        lupine_assault=card('Lupine Assault')
+        %}
         In my opinion, it is quite important to make {{ montano }} enter the ready region in round 2 of a game:
         The fewer the number of enemies’ minions, the less they can act or react.
         You hope to get some kind of setup done before actually starting the « show ».
@@ -79,11 +83,11 @@
     </p>
 </div>
 <p>
-    {% trans trimmed 
-        nocturns=card("Nocturn", "Nocturns"),
-        montano=card("Montano"),
-        deflections=card("Deflection", "Deflections")
-        %}
+    {% trans trimmed
+    nocturns=card("Nocturn", "Nocturns"),
+    montano=card("Montano"),
+    deflections=card("Deflection", "Deflections")
+    %}
     Okay, this tremendous « (try to) rule the world » deck is regularly the focus of all players at the table.
     {{ nocturns }} help to guard {{ montano }}, and a few {{ deflections }} might keep at least the heaviest bleeds
     away from you. Usually, you have to be very fast with doing what you want to do, or an evil fate awaits you
@@ -95,7 +99,7 @@
             href="http://www.vekn.net/forum/event-reports-and-twd/77809-twd-don-t-cry-for-pentex-lackey-league#95936">The
             Shadow</a>
     </h2>
-    <p id="deck-header"></p>
+    <p class="subtitle" id="deck-header"></p>
     <h3 id="crypt-header"></h3>
     <ul id="crypt-list">
     </ul>
@@ -147,12 +151,12 @@
 <div class="clear"></div>
 <h2>{{ _('How to Win') }}</h2>
 <p>
-    {% trans trimmed 
-        mind_rape=card("Mind Rape"),
-        baltimore_purge=card("Baltimore Purge"),
-        montano=card("Montano"),
-        img_clan_baali='<img src="%(url)s" />'|format(url=url_for('static', filename='img/icons/clan-baali.svg'))|safe
-        %}
+    {% trans trimmed
+    mind_rape=card("Mind Rape"),
+    baltimore_purge=card("Baltimore Purge"),
+    montano=card("Montano"),
+    img_clan_baali='<img src="%(url)s" />'|format(url=url_for('static', filename='img/icons/clan-baali.svg'))|safe
+    %}
     Maybe Montano Baltimore Purge (MBP) can be compared to a rush deck,
     combined with the high risk, high reward component of a Baali {{ img_clan_baali }} bleed or vote deck.
     You have to decide where and when to play {{ mind_rape }} and {{ baltimore_purge }}.
@@ -161,13 +165,13 @@
     {% endtrans %}
 </p>
 <p>
-    {% trans trimmed 
-        montano=card("Montano"),
-        learjet=card("Learjet"),
-        aurora_van_brande=card("Aurora Van Brande, Paladin", "Aurora Van Brande"),
-        baltimore_purge=card("Baltimore Purge"),
-        mind_rape=card("Mind Rape")
-        %}
+    {% trans trimmed
+    montano=card("Montano"),
+    learjet=card("Learjet"),
+    aurora_van_brande=card("Aurora Van Brande, Paladin", "Aurora Van Brande"),
+    baltimore_purge=card("Baltimore Purge"),
+    mind_rape=card("Mind Rape")
+    %}
     A nice setup to start the « show » is {{ montano }} with a {{ learjet }} and a midcap assistant
     ({{ aurora_van_brande }} is very nice, since she has superior Obtenebration {{ OBT }} and both Dominate {{ dom }}
     and Fortitude {{ for }}). Try to get through both a {{ baltimore_purge }} and a {{ mind_rape }} on a player
@@ -184,12 +188,12 @@
 </p>
 <p>
     {% trans trimmed
-        montano=card("Montano"),
-        baltimore_purge=card("Baltimore Purge"),
-        enkil_cog=card("Enkil Cog"),
-        freak_drive=card("Freak Drive"),
-        graverobbing=card("Graverobbing"),
-        heidelberg_castle=card("Heidelberg Castle, Germany", "Heidelberg Castle")
+    montano=card("Montano"),
+    baltimore_purge=card("Baltimore Purge"),
+    enkil_cog=card("Enkil Cog"),
+    freak_drive=card("Freak Drive"),
+    graverobbing=card("Graverobbing"),
+    heidelberg_castle=card("Heidelberg Castle, Germany", "Heidelberg Castle")
     %}
     This is a typical scenario: In your unlock phase {{ montano }} goes to torpor,
     and so will every other vampire in the game of your choosing (well, one per player).
@@ -199,18 +203,18 @@
     {{ freak_drive }} and {{ graverobbing }} in hand.
     {% endtrans %}
 </p>
-<div class="tip">
+<div class="insert tip">
     <h3>{{ _('Tips & Tricks') }}</h3>
     {% trans trimmed
-        deflection=card("Deflection"),
-        direct_intervention=card("Direct Intervention"),
-        enkil_cog=card("Enkil Cog"),
-        graverobbing=card("Graverobbing"),
-        mind_rape=card("Mind Rape"),
-        montano=card("Montano"),
-        nocturn=card("Nocturn"),
-        shadow_body=card("Shadow Body"),
-        sudden_reversal=card("Sudden Reversal")
+    deflection=card("Deflection"),
+    direct_intervention=card("Direct Intervention"),
+    enkil_cog=card("Enkil Cog"),
+    graverobbing=card("Graverobbing"),
+    mind_rape=card("Mind Rape"),
+    montano=card("Montano"),
+    nocturn=card("Nocturn"),
+    shadow_body=card("Shadow Body"),
+    sudden_reversal=card("Sudden Reversal")
     %}
     <ul>
         <li>Don’t forget to take control of the vampire with {{ mind_rape }}.</li>
@@ -243,15 +247,15 @@
     {% endtrans %}
 </div>
 <p>
-    {% trans trimmed 
-        golconda=card("Golconda: Inner Peace", "Golconda"),
-        villein=card("Villein"),
-        montano=card("Montano"),
-        govern=card("Govern the Unaligned", "Govern"),
-        ancient_influence=card("Ancient Influence"),
-        reins_of_power=card("Reins of Power"),
-        political_stranglehold=card("Political Stranglehold "),
-        mind_numb=card("Mind Numb")
+    {% trans trimmed
+    golconda=card("Golconda: Inner Peace", "Golconda"),
+    villein=card("Villein"),
+    montano=card("Montano"),
+    govern=card("Govern the Unaligned", "Govern"),
+    ancient_influence=card("Ancient Influence"),
+    reins_of_power=card("Reins of Power"),
+    political_stranglehold=card("Political Stranglehold "),
+    mind_numb=card("Mind Numb")
     %}
     Gaining pool is one of the bigger issues of MBP, which is why some players add {{ golconda }} or {{ villein }}
     to their {{ montano }} deck. {{ govern }} down is highly recommended, and an {{ ancient_influence }}
@@ -268,13 +272,13 @@
     (and the decisions of the fellow players) allowed me to be victorious.
     {% endtrans %}
 </p>
-<div class="game">
+<div class="insert game">
     <h3>{{ _('Don’t Cry for Pentex Finals – 2019.') }}</h3>
     <p>
-        {% trans trimmed 
-            zillah_s_valley=card("Zillah's Valley"),
-            montano=card("Montano"),
-            heidelberg_castle=card("Heidelberg Castle, Germany", "Heidelberg Castle")
+        {% trans trimmed
+        zillah_s_valley=card("Zillah's Valley"),
+        montano=card("Montano"),
+        heidelberg_castle=card("Heidelberg Castle, Germany", "Heidelberg Castle")
         %}
         Seating and starting player position were random, so I had only the double-edged advantage of being top seat.
         My starting hand shows useful cards and two {{ zillah_s_valley }}, both of which "ignite".
@@ -286,8 +290,8 @@
         <h4>Turn 3</h4>
         <div class="game-diagram-row">
             <div class="game-diagram-opponent-left">
-                <div class="game-cards">
-                    <div class="game-image">{{ card_image("Elizabeth Westcott") }}
+                <div>
+                    <div class="game-card">{{ card_image("Elizabeth Westcott") }}
                         <div class="blood">5</div>
                     </div>
                 </div>
@@ -297,11 +301,10 @@
                 </h4>
             </div>
             <div class="game-diagram-opponent-right">
-                <div class="game-cards">
-                    <div class="game-image">{{ card_image("Gracis Nostinus") }}
+                <div>
+                    <div class="game-card">{{ card_image("Gracis Nostinus") }}
                         <div class="blood">7</div>
                     </div>
-
                 </div>
                 <h4>Diogo Pratas 🇵🇹
                     <img class="svg-icon" src="{{ url_for('static', filename='img/icons/pool.svg') }}">
@@ -311,8 +314,8 @@
         </div>
         <div class="game-diagram-row">
             <div class="game-diagram-opponent-left">
-                <div class="game-cards">
-                    <div class="game-image">
+                <div>
+                    <div class="game-card">
                         {{ card_image("La Viuda Blanca") }}
                         <div class="blood">6</div>
                     </div>
@@ -323,9 +326,9 @@
                 </h4>
             </div>
             <div class="game-diagram-opponent-right">
-                <div class="game-cards">
-                    <div class="game-image">{{ card_image("Anarch Troublemaker") }}</div>
-                    <div class="game-image">{{ card_image("The Coven") }}</div>
+                <div>
+                    <div class="game-card">{{ card_image("Anarch Troublemaker") }}</div>
+                    <div class="game-card">{{ card_image("The Coven") }}</div>
                 </div>
                 <h4>Hellgie Tod 🇫🇷
                     <img class="svg-icon" src="{{ url_for('static', filename='img/icons/pool.svg') }}">
@@ -334,11 +337,11 @@
             </div>
         </div>
         <div class="game-diagram-player">
-            <div class="game-image">
+            <div class="game-card">
                 {{ card_image("Montano") }}
                 <div class="blood">11</div>
             </div>
-            <div class="game-image">{{ card_image("Heidelberg Castle, Germany") }}</div>
+            <div class="game-card">{{ card_image("Heidelberg Castle, Germany") }}</div>
             <h4>Me 🇩🇪
                 <img class="svg-icon" src="{{ url_for('static', filename='img/icons/pool.svg') }}">
                 13
@@ -346,14 +349,14 @@
         </div>
     </div>
     <p>
-        {% trans trimmed 
-            freak_drives=card("Freak Drive", "Freak Drives"),
-            mind_rape=card("Mind Rape"),
-            la_viuda_blanca=card("La Viuda Blanca"),
-            freak_drive=card("Freak Drive"),
-            enkil_cog=card("Enkil Cog"),
-            kassiym_malikhair=card("Kassiym Malikhair"),
-            montano=card("Montano")
+        {% trans trimmed
+        freak_drives=card("Freak Drive", "Freak Drives"),
+        mind_rape=card("Mind Rape"),
+        la_viuda_blanca=card("La Viuda Blanca"),
+        freak_drive=card("Freak Drive"),
+        enkil_cog=card("Enkil Cog"),
+        kassiym_malikhair=card("Kassiym Malikhair"),
+        montano=card("Montano")
         %}
         Without {{ freak_drives }} and stealth worth mentioning, I play a {{ mind_rape }} on {{ la_viuda_blanca }}.
         Successfully. I pull out a {{ freak_drive }} and decide to make a bleed because I have {{ enkil_cog }} on hand.
@@ -364,11 +367,11 @@
         <h4>Turn 4</h4>
         <div class="game-diagram-row">
             <div class="game-diagram-opponent-left">
-                <div class="game-cards">
-                    <div class="game-image">{{ card_image("Elizabeth Westcott") }}
+                <div>
+                    <div class="game-card">{{ card_image("Elizabeth Westcott") }}
                         <div class="blood">5</div>
                     </div>
-                    <div class="game-image">{{ card_image("Devin Bisley") }}
+                    <div class="game-card">{{ card_image("Devin Bisley") }}
                         <div class="blood">5</div>
                     </div>
                 </div>
@@ -378,14 +381,14 @@
                 </h4>
             </div>
             <div class="game-diagram-opponent-right">
-                <div class="game-cards">
-                    <div class="game-image locked">{{ card_image("Gracis Nostinus") }}
+                <div>
+                    <div class="game-card locked">{{ card_image("Gracis Nostinus") }}
                         <div class="blood">6</div>
                     </div>
-                    <div class="game-image">{{ card_image("Ranjan Rishi, Camarilla Scholar") }}
+                    <div class="game-card">{{ card_image("Ranjan Rishi, Camarilla Scholar") }}
                         <div class="blood">5</div>
                     </div>
-                    <div class="game-image locked">{{ card_image("The Coven") }}</div>
+                    <div class="game-card locked">{{ card_image("The Coven") }}</div>
                 </div>
                 <h4>Diogo Pratas 🇵🇹
                     <img class="svg-icon" src="{{ url_for('static', filename='img/icons/pool.svg') }}">
@@ -395,8 +398,8 @@
         </div>
         <div class="game-diagram-row">
             <div class="game-diagram-opponent-left">
-                <div class="game-cards">
-                    <div class="game-image unlocked">
+                <div>
+                    <div class="game-card unlocked">
                         <div class="attached-1">{{ card_image("Mind Rape") }}</div>
                         {{ card_image("La Viuda Blanca") }}
                         <div class="blood">6</div>
@@ -408,11 +411,11 @@
                 </h4>
             </div>
             <div class="game-diagram-opponent-right">
-                <div class="game-cards">
-                    <div class="game-image">{{ card_image("Johannes Castelein") }}
+                <div>
+                    <div class="game-card">{{ card_image("Johannes Castelein") }}
                         <div class="blood">9</div>
                     </div>
-                    <div class="game-image">{{ card_image("Anarch Troublemaker") }}</div>
+                    <div class="game-card">{{ card_image("Anarch Troublemaker") }}</div>
                 </div>
                 <h4>Hellgie Tod 🇫🇷
                     <img class="svg-icon" src="{{ url_for('static', filename='img/icons/pool.svg') }}">
@@ -421,15 +424,15 @@
             </div>
         </div>
         <div class="game-diagram-player">
-            <div class="game-image">
+            <div class="game-card">
                 {{ card_image("Montano") }}
                 <div class="blood">7</div>
             </div>
-            <div class="game-image">
+            <div class="game-card">
                 {{ card_image("Kassiym Malikhair") }}
                 <div class="blood">6</div>
             </div>
-            <div class="game-image">{{ card_image("Heidelberg Castle, Germany") }}</div>
+            <div class="game-card">{{ card_image("Heidelberg Castle, Germany") }}</div>
             <h4>Me 🇩🇪
                 <img class="svg-icon" src="{{ url_for('static', filename='img/icons/pool.svg') }}">
                 9
@@ -438,20 +441,20 @@
     </div>
     <p>
         {% trans trimmed
-            channel_10=card("Channel 10"),
-            enkil_cog=card("Enkil Cog"),
-            heart_of_nizchetus=card("Heart of Nizchetus"),
-            johannes_castelein=card("Johannes Castelein"),
-            kassiym=card("Kassiym Malikhair", "Kassiym"),
-            la_viuda=card("La Viuda Blanca", "La Viuda"),
-            learjet=card("Learjet"),
-            mind_numb=card("Mind Numb"),
-            montano=card("Montano"),
-            mustafa_the_heir=card("Mustafa, The Heir"),
-            mustafa=card("Mustafa, The Heir", "Mustafa"),
-            nocturn=card("Nocturn"),
-            the_capuchin=card("The Capuchin"),
-            the_signet_of_king_saul=card("The Signet of King Saul")
+        channel_10=card("Channel 10"),
+        enkil_cog=card("Enkil Cog"),
+        heart_of_nizchetus=card("Heart of Nizchetus"),
+        johannes_castelein=card("Johannes Castelein"),
+        kassiym=card("Kassiym Malikhair", "Kassiym"),
+        la_viuda=card("La Viuda Blanca", "La Viuda"),
+        learjet=card("Learjet"),
+        mind_numb=card("Mind Numb"),
+        montano=card("Montano"),
+        mustafa_the_heir=card("Mustafa, The Heir"),
+        mustafa=card("Mustafa, The Heir", "Mustafa"),
+        nocturn=card("Nocturn"),
+        the_capuchin=card("The Capuchin"),
+        the_signet_of_king_saul=card("The Signet of King Saul")
         %}
         I need pool, but no pool gain is in sight yet, and I am accordingly worried about being bled
         by direct bleeds or bounces. I can play {{ enkil_cog }}, {{ the_signet_of_king_saul }} and {{ learjet }},
@@ -468,19 +471,19 @@
         <h4>Turn 6</h4>
         <div class="game-diagram-row">
             <div class="game-diagram-opponent-left">
-                <div class="game-cards">
-                    <div class="game-image unlocked">
+                <div>
+                    <div class="game-card unlocked">
                         <div class="attached-1">{{ card_image("Heart of Nizchetus") }}</div>
                         {{ card_image("Elizabeth Westcott") }}
                         <div class="blood">5</div>
                     </div>
-                    <div class="game-image">{{ card_image("Devin Bisley") }}
+                    <div class="game-card">{{ card_image("Devin Bisley") }}
                         <div class="blood">5</div>
                     </div>
-                    <div class="game-image">{{ card_image("Isabel de Leon") }}
+                    <div class="game-card">{{ card_image("Isabel de Leon") }}
                         <div class="blood">3</div>
                     </div>
-                    <div class="game-image locked">{{ card_image("Channel 10") }}</div>
+                    <div class="game-card locked">{{ card_image("Channel 10") }}</div>
                 </div>
                 <h4>Martin Schumacher 🇩🇪
                     <img class="svg-icon" src="{{ url_for('static', filename='img/icons/pool.svg') }}">
@@ -488,17 +491,17 @@
                 </h4>
             </div>
             <div class="game-diagram-opponent-right">
-                <div class="game-cards">
-                    <div class="game-image locked">{{ card_image("Gracis Nostinus") }}
+                <div>
+                    <div class="game-card locked">{{ card_image("Gracis Nostinus") }}
                         <div class="blood">5</div>
                     </div>
-                    <div class="game-image locked">{{ card_image("Ranjan Rishi, Camarilla Scholar") }}
+                    <div class="game-card locked">{{ card_image("Ranjan Rishi, Camarilla Scholar") }}
                         <div class="blood">5</div>
                     </div>
-                    <div class="game-image">{{ card_image("Diana Vick") }}
+                    <div class="game-card">{{ card_image("Diana Vick") }}
                         <div class="blood">3</div>
                     </div>
-                    <div class="game-image">{{ card_image("Catherine Dubois") }}
+                    <div class="game-card">{{ card_image("Catherine Dubois") }}
                         <div class="blood">5</div>
                     </div>
                 </div>
@@ -510,16 +513,16 @@
         </div>
         <div class="game-diagram-row">
             <div class="game-diagram-opponent-left">
-                <div class="game-cards">
-                    <div class="game-image locked">
+                <div>
+                    <div class="game-card locked">
                         {{ card_image("La Viuda Blanca") }}
                         <div class="blood">1</div>
                     </div>
-                    <div class="game-image">
+                    <div class="game-card">
                         {{ card_image("The Capuchin") }}
                         <div class="blood">6</div>
                     </div>
-                    <div class="game-image locked">{{ card_image("The Coven") }}</div>
+                    <div class="game-card locked">{{ card_image("The Coven") }}</div>
                 </div>
                 <h4>Slaven Nikolic 🇭🇷
                     <img class="svg-icon" src="{{ url_for('static', filename='img/icons/pool.svg') }}">
@@ -527,17 +530,17 @@
                 </h4>
             </div>
             <div class="game-diagram-opponent-right">
-                <div class="game-cards">
-                    <div class="game-image">
+                <div>
+                    <div class="game-card">
                         {{ card_image("Johannes Castelein") }}
                         <div class="blood">9</div>
                     </div>
-                    <div class="game-image locked">
+                    <div class="game-card locked">
                         <div class="attached-1">{{ card_image("Mind Numb") }}</div>
                         {{ card_image("Mustafa, The Heir") }}
                         <div class="blood">6</div>
                     </div>
-                    <div class="game-image">{{ card_image("Anarch Troublemaker") }}</div>
+                    <div class="game-card">{{ card_image("Anarch Troublemaker") }}</div>
                 </div>
                 <h4>Hellgie Tod 🇫🇷
                     <img class="svg-icon" src="{{ url_for('static', filename='img/icons/pool.svg') }}">
@@ -546,22 +549,22 @@
             </div>
         </div>
         <div class="game-diagram-player">
-            <div class="game-image unlocked">
-                <div class="attached-1">{{ card_image("Enkil Cog") }}</div>
-                <div class="attached-2">{{ card_image("Learjet") }}</div>
+            <div class="game-card unlocked">
                 <div class="attached-3">{{ card_image("The Signet of King Saul") }}</div>
+                <div class="attached-2">{{ card_image("Learjet") }}</div>
+                <div class="attached-1">{{ card_image("Enkil Cog") }}</div>
                 {{ card_image("Montano") }}
                 <div class="blood">11</div>
             </div>
-            <div class="game-image">
+            <div class="game-card">
                 {{ card_image("Kassiym Malikhair") }}
                 <div class="blood">6</div>
             </div>
-            <div class="game-image">
+            <div class="game-card">
                 {{ card_image("Nocturn") }}
                 <div class="blood">1</div>
             </div>
-            <div class="game-image">{{ card_image("Heidelberg Castle, Germany") }}</div>
+            <div class="game-card">{{ card_image("Heidelberg Castle, Germany") }}</div>
             <h4>Me 🇩🇪
                 <img class="svg-icon" src="{{ url_for('static', filename='img/icons/pool.svg') }}">
                 7
@@ -569,19 +572,19 @@
         </div>
     </div>
     <p>
-        {% trans trimmed 
-            anarch_troublemaker=card("Anarch Troublemaker"),
-            baltimore_purge=card("Baltimore Purge"),
-            bonding=card("Bonding"),
-            capuchin=card("The Capuchin", "Capuchin"),
-            deflection=card("Deflection"),
-            emerald_legionnaire=card("Emerald Legionnaire"),
-            freak_drive=card("Freak Drive"),
-            gracis=card("Gracis Nostinus", "Gracis"),
-            graverobbing=card("Graverobbing"),
-            johannes_castelein=card("Johannes Castelein"),
-            mind_rape=card("Mind Rape"),
-            my_enemy_s_enemy=card("My Enemy's Enemy")
+        {% trans trimmed
+        anarch_troublemaker=card("Anarch Troublemaker"),
+        baltimore_purge=card("Baltimore Purge"),
+        bonding=card("Bonding"),
+        capuchin=card("The Capuchin", "Capuchin"),
+        deflection=card("Deflection"),
+        emerald_legionnaire=card("Emerald Legionnaire"),
+        freak_drive=card("Freak Drive"),
+        gracis=card("Gracis Nostinus", "Gracis"),
+        graverobbing=card("Graverobbing"),
+        johannes_castelein=card("Johannes Castelein"),
+        mind_rape=card("Mind Rape"),
+        my_enemy_s_enemy=card("My Enemy's Enemy")
         %}
         Time for {{ baltimore_purge }}. {{ freak_drive }}. {{ mind_rape }} on {{ johannes_castelein }}.
         (Hellgie: You're ousting me. – Sorry, it is a complicated situation with tough decisions.)
@@ -599,19 +602,19 @@
         <h4>Turn 7</h4>
         <div class="game-diagram-row">
             <div class="game-diagram-opponent-left">
-                <div class="game-cards">
-                    <div class="game-image unlocked">
+                <div>
+                    <div class="game-card unlocked">
                         <div class="attached-1">{{ card_image("Heart of Nizchetus") }}</div>
                         {{ card_image("Elizabeth Westcott") }}
                         <div class="blood">5</div>
                     </div>
-                    <div class="game-image">{{ card_image("Devin Bisley") }}
+                    <div class="game-card">{{ card_image("Devin Bisley") }}
                         <div class="blood">5</div>
                     </div>
-                    <div class="game-image">{{ card_image("Isabel de Leon") }}
+                    <div class="game-card">{{ card_image("Isabel de Leon") }}
                         <div class="blood">3</div>
                     </div>
-                    <div class="game-image locked">{{ card_image("Channel 10") }}</div>
+                    <div class="game-card locked">{{ card_image("Channel 10") }}</div>
                 </div>
                 <h4>Martin Schumacher 🇩🇪
                     <img class="svg-icon" src="{{ url_for('static', filename='img/icons/pool.svg') }}">
@@ -619,19 +622,19 @@
                 </h4>
             </div>
             <div class="game-diagram-opponent-right">
-                <div class="game-cards">
-                    <div class="game-image locked">
+                <div>
+                    <div class="game-card locked">
                         <div class="attached-1">{{ card_image("Mind Rape") }}</div>
                         {{ card_image("Gracis Nostinus") }}
                         <div class="blood">5</div>
                     </div>
-                    <div class="game-image locked">{{ card_image("Ranjan Rishi, Camarilla Scholar") }}
+                    <div class="game-card locked">{{ card_image("Ranjan Rishi, Camarilla Scholar") }}
                         <div class="blood">5</div>
                     </div>
-                    <div class="game-image">{{ card_image("Diana Vick") }}
+                    <div class="game-card">{{ card_image("Diana Vick") }}
                         <div class="blood">3</div>
                     </div>
-                    <div class="game-image">{{ card_image("Catherine Dubois") }}
+                    <div class="game-card">{{ card_image("Catherine Dubois") }}
                         <div class="blood">5</div>
                     </div>
                 </div>
@@ -643,16 +646,16 @@
         </div>
         <div class="game-diagram-row">
             <div class="game-diagram-opponent-left">
-                <div class="game-cards">
-                    <div class="game-image">
+                <div>
+                    <div class="game-card">
                         {{ card_image("La Viuda Blanca") }}
                         <div class="blood">1</div>
                     </div>
-                    <div class="game-image locked">
+                    <div class="game-card locked">
                         {{ card_image("The Capuchin") }}
                         <div class="blood">6</div>
                     </div>
-                    <div class="game-image">
+                    <div class="game-card">
                         {{ card_image("Emerald Legionnaire") }}
                         <div class="blood">2</div>
                     </div>
@@ -663,7 +666,7 @@
                 </h4>
             </div>
             <div class="game-diagram-opponent-right">
-                <div class="game-cards">
+                <div>
                 </div>
                 <h4>Hellgie Tod 🇫🇷
                     <img class="svg-icon" src="{{ url_for('static', filename='img/icons/pool.svg') }}">
@@ -672,20 +675,20 @@
             </div>
         </div>
         <div class="game-diagram-player">
-            <div class="game-image unlocked">
-                <div class="attached-1">{{ card_image("Enkil Cog") }}</div>
-                <div class="attached-2">{{ card_image("Learjet") }}</div>
-                <div class="attached-3">{{ card_image("The Signet of King Saul") }}</div>
+            <div class="game-card unlocked">
                 <div class="attached-4">{{ card_image("Baltimore Purge") }}</div>
+                <div class="attached-3">{{ card_image("The Signet of King Saul") }}</div>
+                <div class="attached-2">{{ card_image("Learjet") }}</div>
+                <div class="attached-1">{{ card_image("Enkil Cog") }}</div>
                 {{ card_image("Montano") }}
                 <div class="blood">5</div>
             </div>
-            <div class="game-image">
+            <div class="game-card">
                 {{ card_image("Kassiym Malikhair") }}
                 <div class="blood">6</div>
             </div>
-            <div class="game-image">{{ card_image("The Coven") }}</div>
-            <div class="game-image">{{ card_image("Heidelberg Castle, Germany") }}</div>
+            <div class="game-card">{{ card_image("The Coven") }}</div>
+            <div class="game-card">{{ card_image("Heidelberg Castle, Germany") }}</div>
             <h4>Me 🇩🇪
                 <img class="svg-icon" src="{{ url_for('static', filename='img/icons/pool.svg') }}">
                 7
@@ -694,19 +697,19 @@
     </div>
     <p>
         {% trans trimmed
-            ancient_influence=card("Ancient Influence"),
-            banishment=card("Banishment"),
-            capuchin=card("The Capuchin", "Capuchin"),
-            dreams_of_the_sphinx=card("Dreams of the Sphinx"),
-            elizabeth=card("Elizabeth Westcott", "Elizabeth"),
-            freak_drive=card("Freak Drive"),
-            gracis=card("Gracis Nostinus", "Gracis"),
-            graverobbing=card("Graverobbing"),
-            heart_of_nizchetus=card("Heart of Nizchetus"),
-            kassiym=card("Kassiym Malikhair", "Kassiym"),
-            montano=card("Montano"),
-            ranjan=card("Ranjan Rishi, Camarilla Scholar", "Ranjan"),
-            seduction=card("Seduction")
+        ancient_influence=card("Ancient Influence"),
+        banishment=card("Banishment"),
+        capuchin=card("The Capuchin", "Capuchin"),
+        dreams_of_the_sphinx=card("Dreams of the Sphinx"),
+        elizabeth=card("Elizabeth Westcott", "Elizabeth"),
+        freak_drive=card("Freak Drive"),
+        gracis=card("Gracis Nostinus", "Gracis"),
+        graverobbing=card("Graverobbing"),
+        heart_of_nizchetus=card("Heart of Nizchetus"),
+        kassiym=card("Kassiym Malikhair", "Kassiym"),
+        montano=card("Montano"),
+        ranjan=card("Ranjan Rishi, Camarilla Scholar", "Ranjan"),
+        seduction=card("Seduction")
         %}
         The show begins. {{ montano }} takes {{ capuchin }}, {{ elizabeth }} and {{ ranjan }} with him.
         {{ dreams_of_the_sphinx }}, two additional cards.
@@ -719,9 +722,9 @@
         {% endtrans %}
     </p>
     <p>
-        {% trans trimmed 
-            baltimore_purge=card("Baltimore Purge"),
-            montano=card("Montano")
+        {% trans trimmed
+        baltimore_purge=card("Baltimore Purge"),
+        montano=card("Montano")
         %}
         What follows now, is a brutal wearing down of the table by {{ baltimore_purge }} and diablerie actions.
         {{ montano }}'s special of paying one blood to give one of my own minions +1 stealth proves to be
@@ -729,9 +732,9 @@
         {% endtrans %}
     </p>
     <p>
-        {% trans trimmed 
-            gracis=card("Gracis Nostinus", "Gracis"),
-            graverobbing=card("Graverobbing")
+        {% trans trimmed
+        gracis=card("Gracis Nostinus", "Gracis"),
+        graverobbing=card("Graverobbing")
         %}
         Without hurry I oust Slaven two or three rounds later. Diogo shows spirit and continues to play full forward,
         which grants me a new and shiny {{ gracis }} via {{ graverobbing }}.
@@ -740,18 +743,18 @@
         {% endtrans %}
     </p>
     <p>
-        {% trans trimmed 
-            capuchin=card("The Capuchin", "Capuchin"),
-            gracis=card("Gracis Nostinus", "Gracis"),
-            kassiym=card("Kassiym Malikhair", "Kassiym"),
-            montano=card("Montano"),
-            ignacio=card("Ignacio, The Black Priest", "Ignacio"),
-            channel_10=card("Channel 10"),
-            krcg_news_radio=card("KRCG News Radio"),
-            the_rack=card("The Rack"),
-            the_coven=card("The Coven"),
-            blanket_of_night=card("Blanket of Night")
-         %}
+        {% trans trimmed
+        capuchin=card("The Capuchin", "Capuchin"),
+        gracis=card("Gracis Nostinus", "Gracis"),
+        kassiym=card("Kassiym Malikhair", "Kassiym"),
+        montano=card("Montano"),
+        ignacio=card("Ignacio, The Black Priest", "Ignacio"),
+        channel_10=card("Channel 10"),
+        krcg_news_radio=card("KRCG News Radio"),
+        the_rack=card("The Rack"),
+        the_coven=card("The Coven"),
+        blanket_of_night=card("Blanket of Night")
+        %}
         I have 5 vampires, {{ montano }}, {{ kassiym }} and {{ ignacio }} as well as {{ capuchin }} and {{ gracis }},
         the big ones also with a lot of blood. And yet I'm afraid I'll run into the wall now:
         3 Auspex-Weenies supported by {{ channel_10 }} and also {{ krcg_news_radio }}, and be "shot down"
@@ -764,9 +767,9 @@
     </p>
 </div>
 <p>
-    {% trans trimmed 
-        montano=card("Montano"),
-        mind_rape=card("Mind Rape")
+    {% trans trimmed
+    montano=card("Montano"),
+    mind_rape=card("Mind Rape")
     %}
     As you can see, I was lucky enough to be able to act with {{ montano }} from turn 3,
     despite the fact I was the starting player, but could not take much advantage of it.
@@ -777,11 +780,11 @@
 </p>
 
 <p>
-    {% trans trimmed 
-        learjet=card("Learjet"),
-        baltimore_purge=card("Baltimore Purge"),
-        graverobbing=card("Graverobbing"),
-        enkil_cog=card("Enkil Cog")
+    {% trans trimmed
+    learjet=card("Learjet"),
+    baltimore_purge=card("Baltimore Purge"),
+    graverobbing=card("Graverobbing"),
+    enkil_cog=card("Enkil Cog")
     %}
     Turn 7 is a description of a typical turn when all the moving parts happen in the right order.
     Such a turn might take up to 20 or even 30 minutes, because of all the choices to make,
@@ -794,14 +797,14 @@
 <h2>{{ _('Tweaks and metagame choices') }}</h2>
 <p>
     {% trans trimmed
-        montano=card("Montano"),
-        villein=card("Villein"),
-        golconda=card("Golconda: Inner Peace", "Golconda"),
-        direct_intervention=card("Direct Intervention"),
-        dark_influence=card("Dark Influences"),
-        monastery_of_shadows=card("Monastery of Shadows"),
-        elysian_fields=card("Elysian Fields"),
-        the_coven=card("The Coven")
+    montano=card("Montano"),
+    villein=card("Villein"),
+    golconda=card("Golconda: Inner Peace", "Golconda"),
+    direct_intervention=card("Direct Intervention"),
+    dark_influence=card("Dark Influences"),
+    monastery_of_shadows=card("Monastery of Shadows"),
+    elysian_fields=card("Elysian Fields"),
+    the_coven=card("The Coven")
     %}
     If you do not feel the need for speed to let {{ montano }} enter the game by the end of round 2,
     you get space in the Master cards section. {{ villein }} or {{ golconda }}, {{ direct_intervention }}
@@ -811,11 +814,11 @@
 </p>
 <p>
     {% trans trimmed
-        baltimore_purge=card("Baltimore Purge"),
-        banishment=card("Banishment"),
-        reins_of_power=card("Reins of Power"),
-        political_stranglehold=card("Political Stranglehold"),
-        mind_rape=card("Mind Rape")
+    baltimore_purge=card("Baltimore Purge"),
+    banishment=card("Banishment"),
+    reins_of_power=card("Reins of Power"),
+    political_stranglehold=card("Political Stranglehold"),
+    mind_rape=card("Mind Rape")
     %}
     You might want to play more than 5 copies of {{ baltimore_purge }}. Regarding Political Actions, adding another
     {{ banishment }} looks good. {{ reins_of_power }} is double-edged if you do not manage to have your predators
@@ -824,10 +827,10 @@
 </p>
 <p>
     {% trans trimmed
-        zaire_river_ferry=card("Zaire River Ferry"),
-        obedience=card("Obedience"),
-        on_the_qui_vive=card("On the Qui Vive"),
-        deflections=card("Deflection", "Deflections")
+    zaire_river_ferry=card("Zaire River Ferry"),
+    obedience=card("Obedience"),
+    on_the_qui_vive=card("On the Qui Vive"),
+    deflections=card("Deflection", "Deflections")
     %}
     {{ zaire_river_ferry }} is a suggestion by famous <em>Martin Schuhmacher</em> I have not given a try so far.
     Reaction cards like {{ obedience }}, {{ on_the_qui_vive }} and more {{ deflections }} can come in handy
@@ -843,17 +846,4 @@
     The more combat you expect, the less MBP becomes appealing if you are looking for a somehow safe road to success.
     {% endtrans %}
 </p>
-{% endblock %}
-
-{% block script %}
-<script>
-    window.onload = function () {
-        const content = document.querySelector('meta[property="decklist"]').content
-        const decklist = JSON.parse(JSON.parse(content))
-        document.getElementById("card-modal").addEventListener("keydown", modalKeydown)
-        document.getElementById("card-prev").addEventListener("click", prevCard)
-        document.getElementById("card-next").addEventListener("click", nextCard)
-        displayDeck(decklist)
-    }
-</script>
 {% endblock %}

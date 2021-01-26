@@ -13,16 +13,16 @@
 
 {% block archetype %}
 {% trans trimmed
-	anson=card("Anson"),
-	tatiana_romanov=card("Tatiana Romanov"),
-	grooming_the_protege=card("Grooming the Protégé"),
-	parity_shift=card("Parity Shift"),
-	toreador_grand_ball=card("Toreador Grand Ball"),
-	toreador_justicar=card("Toreador Justicar"),
-	voter_cap=card("Voter Captivation"),
-	bloat=link("/strategy/bloat", _("bloat")),
-	political_actions=link("/strategy/fundamentals", _("Political Actions"), _anchor="politics"),
-	inaki_jimenez_deck=link("/deck-search", _("Iñaki Jimenez's deck"), twda_id="2k9fsbarakaldolate")
+anson=card("Anson"),
+tatiana_romanov=card("Tatiana Romanov"),
+grooming_the_protege=card("Grooming the Protégé"),
+parity_shift=card("Parity Shift"),
+toreador_grand_ball=card("Toreador Grand Ball"),
+toreador_justicar=card("Toreador Justicar"),
+voter_cap=card("Voter Captivation"),
+bloat=link("/strategy/bloat", _("bloat")),
+political_actions=link("/strategy/fundamentals", _("Political Actions"), _anchor="politics"),
+inaki_jimenez_deck=link("/deck-search", _("Iñaki Jimenez's deck"), id="2k9fsbarakaldolate")
 %}
 <h2>Highlights</h2>
 <p>
@@ -69,8 +69,8 @@
 {% endblock %}
 
 {% block errata %}
-<div class="warning">
-    <h3>Errata</h3>
-    {{ erratum.parityshift() }}
+<div class="insert warn">
+	<h3>Errata</h3>
+	{{ erratum.parityshift() }}
 </div>
 {% endblock %}

@@ -32,10 +32,10 @@ opponent to play it himself.
 {% endcall %}
 
 {% call layout.card_column("Vessel", decks=868, copies="2-4") %}
-{% trans trimmed 
-    leeching=link("/strategy/bloat", _("leeching"), _anchor="leeching"),
-    blood_doll=card("Blood Doll"),
-    a_b=link("/strategy/fundamentals", _("A&B"), _anchor="AB")
+{% trans trimmed
+leeching=link("/strategy/bloat", _("leeching"), _anchor="leeching"),
+blood_doll=card("Blood Doll"),
+a_b=link("/strategy/fundamentals", _("A&B"), _anchor="AB")
 %}
 The most played {{ leeching }} card, it is similar to {{ blood_doll }}. Both enable a
 1 point leech per turn and allow to give some blood back to a thirsty vampire, which can
@@ -56,9 +56,9 @@ vampire is relevant.
 {% endcall %}
 
 {% call layout.card_column("Direct Intervention", decks=715, copies="1-2") %}
-{% trans trimmed 
-    wall_decks=link("/strategy/archetypes", _("wall decks"), _anchor="wall"),
-    block_denial=link("/strategy/fundamentals", _("block denial"), _anchor="stealth-and-intercept")
+{% trans trimmed
+wall_decks=link("/strategy/archetypes", _("wall decks"), _anchor="wall"),
+block_denial=link("/strategy/fundamentals", _("block denial"), _anchor="stealth-and-intercept")
 %}
 The ability to cancel any minion card is extremely valuable. It has reliable role in
 {{ wall_decks }} to deal with {{ block_denial }}, otherwise its value varies depending
@@ -124,9 +124,9 @@ be countered this way too.
 {% endcall %}
 
 {% call layout.card_column("Jake Washington", decks=367, copies="1-3") %}
-{% trans trimmed 
-    war_ghoul=card("War Ghoul"),
-    khazar_s_diary=card("Khazar's Diary (Endless Night)", "Khazar's Diary")
+{% trans trimmed
+war_ghoul=card("War Ghoul"),
+khazar_s_diary=card("Khazar's Diary (Endless Night)", "Khazar's Diary")
 %}
 A good way to bring back some blood on a vampire, it can also provide protection by
 blocking an action and is a key combination with {{ war_ghoul }} and
@@ -135,12 +135,12 @@ blocking an action and is a key combination with {{ war_ghoul }} and
 {% endcall %}
 
 {% call layout.card_column("The Parthenon", decks=355, copies="1-4") %}
-{% trans trimmed 
-    anson=card("Anson"),
-    nana_buruku=card("Nana Buruku"),
-    cybele=card("Cybele"),
-    huitzilopochtli=card("Huitzilopochtli"),
-    isanwayen=card("Isanwayen")
+{% trans trimmed
+anson=card("Anson"),
+nana_buruku=card("Nana Buruku"),
+cybele=card("Cybele"),
+huitzilopochtli=card("Huitzilopochtli"),
+isanwayen=card("Isanwayen")
 %}
 A useful tool as it enables the play of more Master cards at no cost, it can be combined
 with vampires providing yet another Master action: {{ anson }}, {{ nana_buruku }},
@@ -157,10 +157,10 @@ every other turn.
 {% endcall %}
 
 {% call layout.card_column("The Rack", decks=339, copies="1") %}
-{% trans trimmed 
-    blood_doll=card("Blood Doll"),
-    vessel=card("Vessel")
-    %}
+{% trans trimmed
+blood_doll=card("Blood Doll"),
+vessel=card("Vessel")
+%}
 One of the best tool available to bring some blood back on a vampire, it works
 beautifully with {{ blood_doll }} or {{ vessel }}. It needs to be defended to be kept in
 play, but such a good blood generator at no cost is a bargain.
@@ -235,10 +235,10 @@ played for 2 pool damages on the prey.
 {% endcall %}
 
 {% call layout.card_column("Zillah's Valley", decks=230, copies="3-7") %}
-{% trans trimmed 
-    villein=card("Villein"),
-    minion_tap=card("Minion Tap"),
-    parity_shift=card("Parity Shift")
+{% trans trimmed
+villein=card("Villein"),
+minion_tap=card("Minion Tap"),
+parity_shift=card("Parity Shift")
 %}
 An excellent crypt accelerator provided one has big capacity vampires and enough pool to
 use it. It is a very good combination with {{ villein }} or {{ minion_tap }}, but also
@@ -254,11 +254,11 @@ help card rotation at no cost.
 {% endcall %}
 
 {% call layout.card_column("KRCG News Radio", decks=205, copies="1") %}
-{% trans trimmed 
-    wrmh_talk_radio=card("WRMH Talk Radio"),
-    channel_10=card("Channel 10"),
-    the_rumor_mill=card("The Rumor Mill"),
-    wall_street_night=card("Wall Street Night")
+{% trans trimmed
+wrmh_talk_radio=card("WMRH Talk Radio"),
+channel_10=card("Channel 10"),
+the_rumor_mill=card("The Rumor Mill, Tabloid Newspaper", "The Rumor Mill"),
+wall_street_night=card("Wall Street Night, Financial Newspaper", "Wall Street Night")
 %}
 A good permanent intercept card at a decent price, it can even be used to help another
 player. As it is <em>Unique</em>, other locations can be included along it to improve
@@ -276,10 +276,10 @@ decks.
 {% endcall %}
 
 {% call layout.card_column("Liquidation", decks=171, copies="3-7") %}
-{% trans trimmed 
-    ashur_tablets=card("Ashur Tablets"),
-    emerald_legionnaire=card("Emerald Legionnaire"),
-    sudario_refraction=card("Sudario Refraction")
+{% trans trimmed
+ashur_tablets=card("Ashur Tablets"),
+emerald_legionnaire=card("Emerald Legionnaire"),
+sudario_refraction=card("Sudario Refraction")
 %}
 An excellent bloat device, its discarding side-effect can be a bummer, as many
 decks rely on the fact that even just 2 exemplaries of a given card are enough to draw
@@ -289,9 +289,9 @@ it at some point in the game. However, used in conjunction with {{ ashur_tablets
 {% endcall %}
 
 {% call layout.card_column("Haven Uncovered", decks=170, copies="1-4") %}
-{% trans trimmed 
-    bum_s_rush=card("Bum's Rush"),
-    fame=card("Fame")
+{% trans trimmed
+bum_s_rush=card("Bum's Rush"),
+fame=card("Fame")
 %}
 An excellent device for combat-oriented decks. Broader than a rush action like
 {{ bum_s_rush }}, it lets all the minions rush the target. This is a good way to quickly
@@ -301,11 +301,11 @@ opponent. A good addition to {{ fame }}.
 {% endcall %}
 
 {% call layout.card_column("Minion Tap", decks=162, copies="1-6") %}
-{% trans trimmed 
-    zillah_s_valley=card("Zillah's Valley"),
-    information_highway=card("Information Highway"),
-    villein=card("Villein")
-    %}
+{% trans trimmed
+zillah_s_valley=card("Zillah's Valley"),
+information_highway=card("Information Highway"),
+villein=card("Villein")
+%}
 An good bloat device, it helps to get multiple big capacity vampires out at a
 reasonnable cost. Even better with crypt accelerators like {{ zillah_s_valley }} and
 {{ information_highway }}, it has long been outclassed by {{ villein }}, until the

@@ -3,7 +3,7 @@
 
 {% block content %}
 <h1>{{ dom }} {{ _("Dominate") }}</h1>
-<div class="tip">
+<div class="insert tip">
     <p>
         {% trans trimmed %}
         {{ dom }} is the most played discipline of the game. It provides an excellent
@@ -54,9 +54,9 @@ use stealth.
 {% endcall %}
 
 {% call layout.card_column("Foreshadowing Destruction", decks=229, copies="1-3") %}
-{% trans trimmed 
-    conditioning=card("Conditioning"),
-    direct_intervention=card("Direct Intervention")
+{% trans trimmed
+conditioning=card("Conditioning"),
+direct_intervention=card("Direct Intervention")
 %}
 An excellent lunge device, it has the same pool damage as a {{ conditioning }} at no
 cost, provided the prey is low enough in pool. Having both modifiers in hand can also

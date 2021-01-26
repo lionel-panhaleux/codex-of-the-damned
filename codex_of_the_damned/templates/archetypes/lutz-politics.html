@@ -11,34 +11,34 @@
 {% endblock %}
 
 {% block archetype %}
-{% trans trimmed 
-    unmada=card("Unmada"),
-    lutz_von_hohenzollern=card("Lutz von Hohenzollern"),
-    undele=card("Undele"),
-    zillah_s_valley=card("Zillah's Valley"),
-    parity_shift=card("Parity Shift"),
-    villein=card("Villein"),
-    mental_maze=card("Mental Maze"),
-    telepathic_misdirection=card("Telepathic Misdirection"),
-    voter_captivation=card("Voter Captivation"),
-    banishment=card("Banishment"),
-    rafael_de_corazon=card("Rafael de Corazon"),
-    dmitra_ilyanova=card("Dmitra Ilyanova"),
-    forced_march=card("Forced March"),
-    maris_streck=card("Maris Streck"),
-    madness_network=card("Madness Network"),
-    alastor=card("Alastor"),
-    helicopter=card("Helicopter"),
-    derange=card("Derange"),
-    malkavian_dementia=card("Malkavian Dementia"),
-    heidelberg_castle_germany=card("Heidelberg Castle, Germany"),
-    golconda_inner_peace=card("Golconda: Inner Peace"),
-    cybele=card("Cybele"),
-    the_parthenon=card("The Parthenon"),
-    danilo_torrisi_s_deck=link("/deck-search", _("Danilo Torrisi's deck"), twda_id="2016eclvgi"),
-    fabien_garcia_s_deck=link("/deck-search", _("Fabien Garcia's deck"), twda_id="2014ecfcqmg"),
-    otso_saariluoma_s_deck=link("/deck-search", _("Otso Saariluoma's deck"), twda_id="2010finnishecq")
-    %}
+{% trans trimmed
+unmada=card("Unmada"),
+lutz_von_hohenzollern=card("Lutz von Hohenzollern"),
+undele=card("Undele"),
+zillah_s_valley=card("Zillah's Valley"),
+parity_shift=card("Parity Shift"),
+villein=card("Villein"),
+mental_maze=card("Mental Maze"),
+telepathic_misdirection=card("Telepathic Misdirection"),
+voter_captivation=card("Voter Captivation"),
+banishment=card("Banishment"),
+rafael_de_corazon=card("Rafael de Corazon"),
+dmitra_ilyanova=card("Dmitra Ilyanova"),
+forced_march=card("Forced March"),
+maris_streck=card("Maris Streck"),
+madness_network=card("Madness Network"),
+alastor=card("Alastor"),
+helicopter=card("Helicopter"),
+derange=card("Derange"),
+malkavian_dementia=card("Malkavian Dementia"),
+heidelberg_castle_germany=card("Heidelberg Castle, Germany"),
+golconda_inner_peace=card("Golconda: Inner Peace"),
+cybele=card("Cybele"),
+the_parthenon=card("The Parthenon"),
+danilo_torrisi_s_deck=link("/deck-search", _("Danilo Torrisi's deck"), id="2016eclvgi"),
+fabien_garcia_s_deck=link("/deck-search", _("Fabien Garcia's deck"), id="2014ecfcqmg"),
+otso_saariluoma_s_deck=link("/deck-search", _("Otso Saariluoma's deck"), id="2010finnishecq")
+%}
 <h2>Highlights</h2>
 <p>
     This is a <em>stealth bleed & vote</em> deck starring
@@ -122,7 +122,7 @@
 {% endblock %}
 
 {% block errata %}
-<div class="warning">
+<div class="insert warn">
     <h3>Errata</h3>
     {{ erratum.pentextmsubversion( 'undecided' ) }}
     {{ erratum.parityshift() }}

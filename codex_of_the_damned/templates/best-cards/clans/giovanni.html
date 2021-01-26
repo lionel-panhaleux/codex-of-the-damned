@@ -3,14 +3,14 @@
 
 {% block content %}
 <h1><img src="{{ url_for('static', filename='img/icons/clan-giovanni.svg') }}"> Giovanni</h1>
-<div class="tip">
+<div class="insert tip">
     <p>
-        {% trans trimmed 
-            khazar_s_diary_arch=link("/archetypes/khazars-diary"),
-            khazar_s_diary=card("Khazar's Diary (Endless Night)"),
-            shambling_hordes_arch=link("/archetypes/shambling-hordes"),
-            shambling_hordes=card("Shambling Hordes")
-            %}
+        {% trans trimmed
+        khazar_s_diary_arch=link("/archetypes/khazars-diary"),
+        khazar_s_diary=card("Khazar's Diary (Endless Night)"),
+        shambling_hordes_arch=link("/archetypes/shambling-hordes"),
+        shambling_hordes=card("Shambling Hordes")
+        %}
         The Giovanni and their rare {{ nec }} discipline, combined with the fact that
         they have {{ dom }} as a clan discipline, come up with two original allies
         archetypes: the {{ khazar_s_diary_arch }}, centered on allies and
@@ -20,10 +20,10 @@
         {% endtrans %}
     </p>
     <p>
-        {% trans trimmed 
-            call_of_the_hungry_dead=card("Call of the Hungry Dead"),
-            seduction=card("Seduction"),
-            guillaume_giovanni=card("Guillaume Giovanni")
+        {% trans trimmed
+        call_of_the_hungry_dead=card("Call of the Hungry Dead"),
+        seduction=card("Seduction"),
+        guillaume_giovanni=card("Guillaume Giovanni")
         %}
         Some <em>powerbleed</em> constructs have been seen, too. The combination of
         {{ call_of_the_hungry_dead }} and {{ seduction }} is strong, and
@@ -90,9 +90,9 @@ All clan disciplines for 4 pool, a good sidekick in many Giovanni decks.
 {% endcall %}
 
 {% call layout.card_column("Leonardo, Mortician", decks=43, copies="1") %}
-{% trans trimmed 
-    shambling_hordes=card("Shambling Hordes"),
-    khazar_s_diary=card("Khazar's Diary (Endless Night)", "Khazar's Diary")
+{% trans trimmed
+shambling_hordes=card("Shambling Hordes"),
+khazar_s_diary=card("Khazar's Diary (Endless Night)", "Khazar's Diary")
 %}
 A cheap ally with a nice ability. Often included to fuel
 {{ shambling_hordes }} or {{ khazar_s_diary }}.

@@ -3,14 +3,16 @@
 {% block content %}
 <h1>
     {{ _('The Game of the Game') }}<br />
-    <span>{{ _('By Mark Loughman') }}</span>
+    <span class="subtitle">{{ _('By Mark Loughman') }}</span>
 </h1>
-<div class="author">
+<div class="insert author">
     <img src="{{ url_for('static', filename='img/mark_loughman.png') }}" alt="Mark Loughman">
     <p>
         {% trans trimmed
-            img_clan_tremere='<img src="%(url)s" />'|format(url=url_for('static', filename='img/icons/clan-tremere-v5.svg'))|safe,
-            img_clan_nosferatu='<img src="%(url)s" />'|format(url=url_for('static', filename='img/icons/clan-nosferatu-v5.svg'))|safe
+        img_clan_tremere='<img src="%(url)s" />'|format(url=url_for('static',
+        filename='img/icons/clan-tremere-v5.svg'))|safe,
+        img_clan_nosferatu='<img src="%(url)s" />'|format(url=url_for('static',
+        filename='img/icons/clan-nosferatu-v5.svg'))|safe
         %}
         Mark Loughman has been playing V:tES since day one, is highly seated in the VEKN Hall of Fame
         with 25 tournament victories, and became US National Coordinator in 2019.
@@ -21,7 +23,7 @@
     <div class="clear"></div>
 </div>
 <p>
-    {% trans trimmed 
+    {% trans trimmed
     sce=link("/strategy/combat", _("S:CE"), "defence"),
     twda=link("/deck-search", "TWDA")
     %}
@@ -39,7 +41,7 @@
 </p>
 <p>
     {% trans trimmed
-        forgotten_labyrinth=card('Forgotten Labyrinth')
+    forgotten_labyrinth=card('Forgotten Labyrinth')
     %}
     In some regions, 2 stealth is king, in others you cannot hunt without a {{ forgotten_labyrinth }}.
     If you can hone in on the meta-game, you can make better choices and expect to be more competitive.
@@ -66,10 +68,11 @@
 </p>
 <p>
     {% trans trimmed
-        the_kiss_of_ra=card('The Kiss of Ra'),
-        daring_the_dawn=card('Daring the Dawn'),
-        elder_impersonation=card('Elder Impersonation'),
-        img_clan_toreador_anti='<img src="%(url)s" />'|format(url=url_for('static', filename='img/icons/clan-toreador-anti.svg'))|safe
+    the_kiss_of_ra=card('The Kiss of Ra'),
+    daring_the_dawn=card('Daring the Dawn'),
+    elder_impersonation=card('Elder Impersonation'),
+    img_clan_toreador_anti='<img src="%(url)s" />'|format(url=url_for('static',
+    filename='img/icons/clan-toreador-anti.svg'))|safe
     %}
     In general terms, as it seems that successful stealth-bleed decks lead to a response of more intercept.
     As the meta becomes more blocky, players will respond with {{ the_kiss_of_ra }} and more combat,
@@ -90,18 +93,18 @@
     control of the game and establishing a tournament presence. The effects were profound.
     {% endtrans %}
 </p>
-<div class="tip">
+<div class="insert tip">
     <h3>{{ _('The Legionnaire example') }}</h3>
     {% trans trimmed
-        emerald_legionnaire=card('Emerald Legionnaire'),
-        legionnaires=card('Emerald Legionnaire', "Legionnaires"),
-        concealed=card('Concealed Weapon', _("Concealed")),
-        magnum=card('.44 Magnum'),
-        entrancement=card('Entrancement'),
-        xeper_sultan_of_lepers=card('Xeper, Sultan of Lepers'),
-        ancilla_empowerment=card('Ancilla Empowerment'),
-        anarchist_uprising=card('Anarchist Uprising'),
-        kine_resources_contested=card('Kine Resources Contested')
+    emerald_legionnaire=card('Emerald Legionnaire'),
+    legionnaires=card('Emerald Legionnaire', "Legionnaires"),
+    concealed=card('Concealed Weapon', _("Concealed")),
+    magnum=card('.44 Magnum'),
+    entrancement=card('Entrancement'),
+    xeper_sultan_of_lepers=card('Xeper, Sultan of Lepers'),
+    ancilla_empowerment=card('Ancilla Empowerment'),
+    anarchist_uprising=card('Anarchist Uprising'),
+    kine_resources_contested=card('Kine Resources Contested')
     %}
     <p>
         Let’s take a look at a recent addition to the TWDA, the {{ emerald_legionnaire }}.
@@ -144,9 +147,9 @@
 <h2>{{ _('Tournaments') }}</h2>
 <p>
     {% trans trimmed
-        secure_haven=card('Secure Haven'),
-        arika=card('Arika'),
-        tupdog=card('Tupdog')
+    secure_haven=card('Secure Haven'),
+    arika=card('Arika'),
+    tupdog=card('Tupdog')
 
     %}
     When preparing for a tournament, it is important to have some idea of who you will be playing against.
@@ -158,22 +161,22 @@
     {% endtrans %}
 </p>
 
-<div class="tip">
+<div class="insert tip">
     <h3>{{ _('Choosing his deck') }}</h3>
     <p>
         {% trans trimmed
         grapple=card("Immortal Grapple", "Grapple"),
         sce=link("/strategy/combat", _("S:CE"), "defence"),
-        dreams_of_the_sphinx=card('Dreams of the Sphinx')  ,
+        dreams_of_the_sphinx=card('Dreams of the Sphinx') ,
         aura_reading=card('Aura Reading'),
         lupine_assault=card('Lupine Assault')
-    %}
+        %}
         When discussing deck selection, the esteemed <em>Jay Kristoff</em> once told me to pick a deck
         I don’t mind staring at for 4-8 hours. We play for enjoyment.
         If you play a deck simply because it is the ‘best’ deck it will not be as satisfying
         when it wins and will be demoralizing when it loses. Instead, play something you will enjoy,
         but be open to modifying to fit the anticipated environment. <em>« Do I have enough stealth? »</em>
-        <em>« Will the have {{ grapple }} against my {{ sce }}? »</em> If you are unsure, perhaps
+        <em>« Will they have {{ grapple }} against my {{ sce }}? »</em> If you are unsure, perhaps
         increase your ability to cycle cards, whether with {{ dreams_of_the_sphinx }},
         {{ aura_reading }}, or {{ lupine_assault }}.
         {% endtrans %}
@@ -189,12 +192,12 @@
     Keeping in contact may allow you some insight as to what they are seeing.
     {% endtrans %}
 </p>
-<div class="tip">
+<div class="insert tip">
     <h3>{{ _('Style of Play') }}</h3>
     <p>
         {% trans trimmed
         twda=link("/deck-search", "TWDA")
-    %}
+        %}
         Style of play can often drive the meta-game. We play for enjoyment, and while winning feels good,
         we also want to enjoy the process. In a tournament environment you will be playing the same deck for several
         hours,

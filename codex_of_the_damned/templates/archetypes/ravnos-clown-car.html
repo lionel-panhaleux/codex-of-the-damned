@@ -11,23 +11,23 @@
 {% endblock %}
 
 {% block archetype %}
-{% trans trimmed 
-    mozambique_allure=card("Mozambique Allure"),
-    the_embrace=card("The Embrace"),
-    bamba=card("Bamba"),
-    ravnos_carnival=card("Ravnos Carnival"),
-    the_eldest_are_kholo=card("The Eldest Are Kholo"),
-    consanguineous_boon=card("Consanguineous Boon"),
-    week_of_nightmares=card("Week of Nightmares"),
-    the_uncoiling=card("The Uncoiling"),
-    scourge_of_the_enochians=card("Scourge of the Enochians"),
-    gird_minions=card("Gird Minions"),
-    life_boon=card("Life Boon"),
-    aranthebes_the_immortal=card("Aranthebes, The Immortal"),
-    autarkis_persecution=card("Autarkis Persecution"),
-    delaying_tactics=card("Delaying Tactics"),
-    rom_gypsy=card("Rom Gypsy"),
-    miguel_pascual_s_deck=link("/deck-search", _("Miguel Pascual's deck"), twda_id="2k8powerbasecataluna")
+{% trans trimmed
+mozambique_allure=card("Mozambique Allure"),
+the_embrace=card("The Embrace"),
+bamba=card("Bamba"),
+ravnos_carnival=card("Ravnos Carnival"),
+the_eldest_are_kholo=card("The Eldest Are Kholo"),
+consanguineous_boon=card("Consanguineous Boon"),
+week_of_nightmares=card("Week of Nightmares"),
+the_uncoiling=card("The Uncoiling"),
+scourge_of_the_enochians=card("Scourge of the Enochians"),
+gird_minions=card("Gird Minions"),
+life_boon=card("Life Boon"),
+aranthebes_the_immortal=card("Aranthebes, The Immortal"),
+autarkis_persecution=card("Autarkis Persecution"),
+delaying_tactics=card("Delaying Tactics"),
+rom_gypsy=card("Rom Gypsy"),
+miguel_pascual_s_deck=link("/deck-search", _("Miguel Pascual's deck"), id="2k8powerbasecataluna")
 %}
 <h2>Highlights</h2>
 <p>
@@ -78,7 +78,7 @@
 {% endblock %}
 
 {% block errata %}
-<div class="warning">
+<div class="insert warn">
     <h3>Errata</h3>
     {{ erratum.pentextmsubversion( 'remove' ) }}
 </div>

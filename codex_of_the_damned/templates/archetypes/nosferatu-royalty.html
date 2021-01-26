@@ -11,31 +11,31 @@
 {% endblock %}
 
 {% block archetype %}
-{% trans trimmed 
-    aid_from_bats=card("Aid from Bats"),
-    carrion_crows=card("Carrion Crows"),
-    deep_song=card("Deep Song"),
-    fame=card("Fame"),
-    second_tradition_domain=card("Second Tradition: Domain"),
-    underbridge_stray=card("Underbridge Stray"),
-    raven_spy=card("Raven Spy"),
-    cock_robin=card("Cock Robin"),
-    warsaw_station=card("Warsaw Station"),
-    scourge_of_the_enochians=card("Scourge of the Enochians"),
-    tier_of_souls=card("Tier of Souls"),
-    enkil_cog=card("Enkil Cog"),
-    kevlar_vest=card("Kevlar Vest"),
-    heroic_might=card("Heroic Might"),
-    preternatural_strength=card("Preternatural Strength"),
-    fourth_tradition_the_accounting=card("Fourth Tradition: The Accounting"),
-    grooming_the_protégé=card("Grooming the Protégé"),
-    mental_maze=card("Mental Maze"),
-    third_tradition_progeny=card("Third Tradition: Progeny"),
-    consanguineous_boon=card("Consanguineous Boon"),
-    a_b=link("/strategy/fundamentals", _("A&B"), _anchor="AB"),
-    gyula_erdos_deck=link("/deck-search", _("Gyula Erdõs' deck"), twda_id="2k8czechnational"),
-    inaki_jimenez_s_deck=link("/deck-search", _("Iñaki Jimenez's deck"), twda_id="2k8spanishnatday2"),
-    pascal_bertrand_s_deck=link("/deck-search", _("Pascal Bertrand's deck"), twda_id="2013qcfeelblpf")
+{% trans trimmed
+aid_from_bats=card("Aid from Bats"),
+carrion_crows=card("Carrion Crows"),
+deep_song=card("Deep Song"),
+fame=card("Fame"),
+second_tradition_domain=card("Second Tradition: Domain"),
+underbridge_stray=card("Underbridge Stray"),
+raven_spy=card("Raven Spy"),
+cock_robin=card("Cock Robin"),
+warsaw_station=card("Warsaw Station"),
+scourge_of_the_enochians=card("Scourge of the Enochians"),
+tier_of_souls=card("Tier of Souls"),
+enkil_cog=card("Enkil Cog"),
+kevlar_vest=card("Kevlar Vest"),
+heroic_might=card("Heroic Might"),
+preternatural_strength=card("Preternatural Strength"),
+fourth_tradition_the_accounting=card("Fourth Tradition: The Accounting"),
+grooming_the_protégé=card("Grooming the Protégé"),
+mental_maze=card("Mental Maze"),
+third_tradition_progeny=card("Third Tradition: Progeny"),
+consanguineous_boon=card("Consanguineous Boon"),
+a_b=link("/strategy/fundamentals", _("A&B"), _anchor="AB"),
+gyula_erdos_deck=link("/deck-search", _("Gyula Erdõs' deck"), id="2k8czechnational"),
+inaki_jimenez_s_deck=link("/deck-search", _("Iñaki Jimenez's deck"), id="2k8spanishnatday2"),
+pascal_bertrand_s_deck=link("/deck-search", _("Pascal Bertrand's deck"), id="2013qcfeelblpf")
 %}
 <h2>Highlights</h2>
 <p>
@@ -112,7 +112,7 @@
 {% endblock %}
 
 {% block errata %}
-<div class="warning">
+<div class="insert warn">
     <h3>Errata</h3>
     {{ erratum.pentextmsubversion( 'remove' ) }}
     {{ erratum.villein() }}

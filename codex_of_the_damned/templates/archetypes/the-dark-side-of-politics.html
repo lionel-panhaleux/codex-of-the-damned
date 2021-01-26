@@ -12,24 +12,24 @@
 
 {% block archetype %}
 {% trans trimmed
-    giotto_verducci=card("Giotto Verducci"),
-    kaymakli_fragment=card("Kaymakli Fragment"),
-    kine_resources_contested=card("Kine Resources Contested"),
-    parity_shift=card("Parity Shift"),
-    villein=card("Villein"),
-    second_tradition_domain=card("Second Tradition: Domain"),
-    unleash_hell_s_fury=card("Unleash Hell's Fury"),
-    ashur_tablets=card("Ashur Tablets"),
-    condemnation_mute=card("Condemnation: Mute"),
-    the_textbook_damnation=card("The Textbook Damnation"),
-    freak_drive=card("Freak Drive"),
-    wider_view=card("Wider View"),
-    arika=card("Arika"),
-    jaroslav_pascek=card("Jaroslav Pascek"),
-    lucinde_alastor=card("Lucinde, Alastor"),
-    marcus_vitel=card("Marcus Vitel"),
-    queen_anne=card("Queen Anne"),
-    vincent_ripoll_s_deck=link("/deck-search", _("Vincent Ripoll's deck"), twda_id="2015encle")
+giotto_verducci=card("Giotto Verducci"),
+kaymakli_fragment=card("Kaymakli Fragment"),
+kine_resources_contested=card("Kine Resources Contested"),
+parity_shift=card("Parity Shift"),
+villein=card("Villein"),
+second_tradition_domain=card("Second Tradition: Domain"),
+unleash_hell_s_fury=card("Unleash Hell's Fury"),
+ashur_tablets=card("Ashur Tablets"),
+condemnation_mute=card("Condemnation: Mute"),
+the_textbook_damnation=card("The Textbook Damnation"),
+freak_drive=card("Freak Drive"),
+wider_view=card("Wider View"),
+arika=card("Arika"),
+jaroslav_pascek=card("Jaroslav Pascek"),
+lucinde_alastor=card("Lucinde, Alastor"),
+marcus_vitel=card("Marcus Vitel"),
+queen_anne=card("Queen Anne"),
+vincent_ripoll_s_deck=link("/deck-search", _("Vincent Ripoll's deck"), id="2015encle")
 %}
 <h2>Highlights</h2>
 <p>
@@ -83,7 +83,7 @@
 {% endblock %}
 
 {% block errata %}
-<div class="warning">
+<div class="insert warn">
     <h3>Errata</h3>
     {{ erratum.parityshift() }}
 </div>

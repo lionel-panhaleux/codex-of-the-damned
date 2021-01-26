@@ -3,9 +3,9 @@
 {% block content %}
 <h1>
     {{ _('Blood, Pool and Grinding Beads') }}<br />
-    <span>{{ _('by Paul Jones') }}</span>
+    <span class="subtitle">{{ _('by Paul Jones') }}</span>
 </h1>
-<div class="author">
+<div class="insert author">
     <img src="{{ url_for('static', filename='img/paul_jones.png') }}" alt="Paul Jones">
     <p>
         {% trans trimmed %}
@@ -46,7 +46,7 @@
     but they work very differently.
     {% endtrans %}
 </p>
-<div class="tip">
+<div class="insert tip">
     <h3>{{ _('Action Comparison') }}</h3>
     <p>
         {% trans trimmed %}
@@ -148,7 +148,7 @@
     that.
     {% endtrans %}
 </p>
-<div class="tip">
+<div class="insert tip">
     <h3>{{ _('Bloat example') }}</h3>
     <p>
         {% trans trimmed
@@ -176,7 +176,7 @@
     make sure you’re looking at the right numbers.
     {% endtrans %}
 </p>
-<div class="tip">
+<div class="insert tip">
     <h3>{{ _('The Coven vs Smiling Jack') }}</h3>
     <p>
         {% trans trimmed

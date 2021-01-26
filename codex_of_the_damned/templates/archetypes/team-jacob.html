@@ -12,19 +12,19 @@
 
 {% block archetype %}
 {% trans trimmed
-    tunnel_runner=card("Tunnel Runner"),
-    jacob_fermor=card("Jacob Fermor"),
-    computer_hacking=card("Computer Hacking"),
-    deflection=card("Deflection"),
-    wider_view=card("Wider View"),
-    anarch_convert=card("Anarch Convert"),
-    powerbase_tshwane=card("Powerbase: Tshwane"),
-    charisma=card("Charisma"),
-    predator_s_transformation=card("Predator's Transformation"),
-    aid_from_bats=card("Aid from Bats"),
-    the_unmasking=card("The Unmasking"),
-    predator_s_communion=card("Predator's Communion"),
-    img_clan_akunanse='<img src="%(url)s" />'|format(url=url_for('static', filename='img/icons/clan-akunanse.svg'))|safe
+tunnel_runner=card("Tunnel Runner"),
+jacob_fermor=card("Jacob Fermor"),
+computer_hacking=card("Computer Hacking"),
+deflection=card("Deflection"),
+wider_view=card("Wider View"),
+anarch_convert=card("Anarch Convert"),
+powerbase_tshwane=card("Powerbase: Tshwane"),
+charisma=card("Charisma"),
+predator_s_transformation=card("Predator's Transformation"),
+aid_from_bats=card("Aid from Bats"),
+the_unmasking=card("The Unmasking"),
+predator_s_communion=card("Predator's Communion"),
+img_clan_akunanse='<img src="%(url)s" />'|format(url=url_for('static', filename='img/icons/clan-akunanse.svg'))|safe
 %}
 <h2>Highlights</h2>
 <p>
@@ -73,7 +73,7 @@
 {% endblock %}
 
 {% block errata %}
-<div class="warning">
+<div class="insert warn">
     <h3>Errata</h3>
     {{ erratum.pentextmsubversion( 'undecided' ) }}
 </div>

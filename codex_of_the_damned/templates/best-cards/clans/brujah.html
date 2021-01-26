@@ -3,12 +3,12 @@
 
 {% block content %}
 <h1><img src="{{ url_for('static', filename='img/icons/clan-brujah.svg') }}"> Brujah</h1>
-<div class="tip">
+<div class="insert tip">
     <p>
         {% trans trimmed
         euro_brujah=link("/archetypes/euro-brujah"),
         armin_brenner=card("Armin Brenner")
-    %}
+        %}
         Brujah and their antitribu have some vampires with excellent abilities and
         good clan cards. Their {{pre}}{{pot}}{{cel}} disciplines combination
         give them access to excellent combat options (hindered by lack of damage prevention)
@@ -23,7 +23,7 @@
 
 {% call layout.card_column("Dmitra Ilyanova", decks=71, copies="1-4") %}
 {% trans trimmed
-    forced_march=card("Forced March")
+forced_march=card("Forced March")
 %}
 Her Justicar title combined with {{PRE}}, {{obf}} and a good political ability
 makes her an excellent tool in many Camarilla vote constructs.
@@ -35,8 +35,8 @@ She is definitely the star of the clan.
 
 {% call layout.card_column("Volker, The Puppet Prince", decks=65, copies="1-2") %}
 {% trans trimmed
-    aaa=link("/archetypes/aaa"),
-    img_clan_toreador='<img src="%(url)s" />'|format(url=url_for('static', filename='img/icons/clan-toreador.svg'))|safe
+aaa=link("/archetypes/aaa"),
+img_clan_toreador='<img src="%(url)s" />'|format(url=url_for('static', filename='img/icons/clan-toreador.svg'))|safe
 %}
 Volker is one of the cheapest Prince around, and he finds its place in many
 Camarilla Royalty decks.
@@ -64,8 +64,8 @@ The bonus in both vote and bleed is a definitive edge.
 
 {% call layout.card_column("Karen Suadela", decks=31, copies="1-3") %}
 {% trans trimmed
-    dmitra_ilyanova=card("Dmitra Ilyanova"),
-    tara=card("Tara")
+dmitra_ilyanova=card("Dmitra Ilyanova"),
+tara=card("Tara")
 %}
 A Prince with {{obf}}{{pre}} and bonus stealth on political action,
 she makes a perfect partner for her Justicar {{ dmitra_ilyanova }},
@@ -88,7 +88,7 @@ is more useful if you get to shuffle it at some point.
 
 {% call layout.card_column("Armin Brenner", decks=18, copies="2-4") %}
 {% trans trimmed
-    forced_march=card("Forced March")
+forced_march=card("Forced March")
 %}
 A good voter with an excellent ability, his access to {{obf}} and {{FOR}}
 are very strong points as he gets to play some stealth and {{ forced_march }}

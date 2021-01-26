@@ -3,13 +3,13 @@
 
 {% block content %}
 <h1><img src="{{ url_for('static', filename='img/icons/clan-guruhi.svg') }}"> Guruhi</h1>
-<div class="tip">
+<div class="insert tip">
     <p>
-        {% trans trimmed 
-            nananimalism=link("/archetypes/nananimalism"),
-            nana_buruku=card("Nana Buruku"),
-            guruhi_rush=link("/archetypes/guruhi-rush"),
-            nangila_were=card("Nangila Were")
+        {% trans trimmed
+        nananimalism=link("/archetypes/nananimalism"),
+        nana_buruku=card("Nana Buruku"),
+        guruhi_rush=link("/archetypes/guruhi-rush"),
+        nangila_were=card("Nangila Were")
         %}
         The Guruhi and their unique {{ ani }}{{ pre }}{{ pot }} disciplines combination
         have excellent vampires with outstanding abilities.
@@ -19,8 +19,8 @@
         {% endtrans %}
     </p>
     <p>
-        {% trans trimmed 
-            immortal_grapple=card("Immortal Grapple")
+        {% trans trimmed
+        immortal_grapple=card("Immortal Grapple")
         %}
         The lack of damage prevention is an issue for combat-oriented decks,
         but the access to {{ immortal_grapple }} makes up for it.
@@ -39,8 +39,8 @@ in non-Guruhi decks.
 {% endcall %}
 
 {% call layout.card_column("Fish", decks=39, copies="1-2") %}
-{% trans trimmed 
-    img_clan_nosferatu='<img src="%(url)s" />'|format(url=url_for('static', filename='img/icons/clan-nosferatu.svg'))|safe
+{% trans trimmed
+img_clan_nosferatu='<img src="%(url)s" />'|format(url=url_for('static', filename='img/icons/clan-nosferatu.svg'))|safe
 %}
 {{ ANI }}{{ POT }} for only 5 pool is a bargain.
 An easy inclusion in any Guruhi or Nosferatu {{ img_clan_nosferatu }} build.
@@ -77,8 +77,8 @@ with no Guruhi specifics.
 
 {% call layout.card_column("Guruhi Kholo", decks=13, copies="1") %}
 {% trans trimmed
-    nana_buruku=card("Nana Buruku"),
-    aren=card("Aren, Priest of Eshu", "Aren")
+nana_buruku=card("Nana Buruku"),
+aren=card("Aren, Priest of Eshu", "Aren")
 %}
 An additional title that is unlikely to contest,
 it's a worthy inclusion in a political deck and a useful addition to
@@ -87,9 +87,9 @@ it's a worthy inclusion in a political deck and a useful addition to
 {% endcall %}
 
 {% call layout.card_column("Ugadja", decks=11, copies="1-2") %}
-{% trans trimmed 
-    eze_the_demon_prince=card("Eze, The Demon Prince") ,
-    img_clan_akunanse='<img src="%(url)s" />'|format(url=url_for('static', filename='img/icons/clan-akunanse.svg'))|safe
+{% trans trimmed
+eze_the_demon_prince=card("Eze, The Demon Prince") ,
+img_clan_akunanse='<img src="%(url)s" />'|format(url=url_for('static', filename='img/icons/clan-akunanse.svg'))|safe
 %}
 A magaji with a useful ability, her cost is a bit steep,
 but she finds her place in a political deck,

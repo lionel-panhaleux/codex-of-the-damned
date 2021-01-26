@@ -12,42 +12,42 @@
 
 {% block archetype %}
 {% trans trimmed
-    magnum=card(".44 Magnum"),
-    abbot=card("Abbot"),
-    aid_from_bats=card("Aid From Bats"),
-    aire_of_elation=card("Aire of Elation"),
-    anarch_revolt=card("Anarch Revolt", "Anarch Revolts"),
-    animalism=card("Animalism"),
-    canine_horde=card("Canine Horde"),
-    carrion_crows=card("Carrion Crows"),
-    cats_guidance=card("Cat's Guidance"),
-    deep_song=card("Deep Song"),
-    dragonbound=card("Dragonbound"),
-    drawing_out_the_beast=card("Drawing Out the Beast"),
-    ears_of_the_hare=card("Ears of the Hare"),
-    engling_fury=card("Engling Fury"),
-    entrancement=card("Entrancement"),
-    falcons_eye=card("Falcon's Eye"),
-    fame=card("Fame"),
-    field_training=card("Field Training"),
-    howler=card("Howler"),
-    ivory_bow=card("Ivory Bow"),
-    legal_manipulations=card("Legal Manipulations"),
-    muricias_call=card("Muricia's Call"),
-    raven_spy=card("Raven Spy"),
-    sense_the_savage_way=card("Sense the Savage Way"),
-    smiling_jack_the_anarch=card("Smiling Jack, The Anarch"),
-    sniper_rifle=card("Sniper Rifle"),
-    speak_with_spirits=card("Speak with Spirits"),
-    swiftness_of_the_stag=card("Swiftness of the Stag"),
-    taste_of_vitae=card("Taste of Vitae"),
-    terror_frenzy=card("Terror Frenzy"),
-    the_siamese=card("The Siamese"),
-    underbridge_stray=card("Underbridge Stray"),
-    vultures_buffet=card("Vulture's Buffet"),
-    leeching=link("/strategy/bloat", _("leeching"), _anchor="leeching"),
-    yoann_guyaders_deck=link("/deck-search", _("Yoann Guyader's deck"), twda_id="2013fnpf"),
-    stephen_sings_deck=link("/deck-search", _("Stephen Sing's deck"), twda_id="2011asiancc")
+magnum=card(".44 Magnum"),
+abbot=card("Abbot"),
+aid_from_bats=card("Aid From Bats"),
+aire_of_elation=card("Aire of Elation"),
+anarch_revolt=card("Anarch Revolt", "Anarch Revolts"),
+animalism=card("Animalism"),
+canine_horde=card("Canine Horde"),
+carrion_crows=card("Carrion Crows"),
+cats_guidance=card("Cat's Guidance"),
+deep_song=card("Deep Song"),
+dragonbound=card("Dragonbound"),
+drawing_out_the_beast=card("Drawing Out the Beast"),
+ears_of_the_hare=card("Ears of the Hare"),
+engling_fury=card("Engling Fury"),
+entrancement=card("Entrancement"),
+falcons_eye=card("Falcon's Eye"),
+fame=card("Fame"),
+field_training=card("Field Training"),
+howler=card("Howler"),
+ivory_bow=card("Ivory Bow"),
+legal_manipulations=card("Legal Manipulations"),
+muricias_call=card("Muricia's Call"),
+raven_spy=card("Raven Spy"),
+sense_the_savage_way=card("Sense the Savage Way"),
+smiling_jack_the_anarch=card("Smiling Jack, The Anarch"),
+sniper_rifle=card("Sniper Rifle"),
+speak_with_spirits=card("Speak with Spirits"),
+swiftness_of_the_stag=card("Swiftness of the Stag"),
+taste_of_vitae=card("Taste of Vitae"),
+terror_frenzy=card("Terror Frenzy"),
+the_siamese=card("The Siamese"),
+underbridge_stray=card("Underbridge Stray"),
+vultures_buffet=card("Vulture's Buffet"),
+leeching=link("/strategy/bloat", _("leeching"), _anchor="leeching"),
+yoann_guyaders_deck=link("/deck-search", _("Yoann Guyader's deck"), id="2013fnpf"),
+stephen_sings_deck=link("/deck-search", _("Stephen Sing's deck"), id="2011asiancc")
 %}
 <h2>Highlights</h2>
 <p>
@@ -126,7 +126,7 @@
 {% endblock %}
 
 {% block errata %}
-<div class="warning">
+<div class="insert warn">
     <h3>Errata</h3>
     {{ erratum.pentextmsubversion( 'remove' ) }}
 </div>

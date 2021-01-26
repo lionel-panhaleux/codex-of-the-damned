@@ -3,13 +3,13 @@
 
 {% block content %}
 <h1><img src="{{ url_for('static', filename='img/icons/clan-tzimisce.svg') }}"> Tzimisce</h1>
-<div class="tip">
+<div class="insert tip">
     <p>
-        {% trans trimmed 
-            tzimisce_wall=link("/archetypes/tzimisce-wall"),
-            tzimisce_toolbox=link("/archetypes/tzimisce-toolbox"),
-            war_ghouls=link("/archetypes/war-ghouls"),
-            war_ghoul=card("War Ghoul")
+        {% trans trimmed
+        tzimisce_wall=link("/archetypes/tzimisce-wall"),
+        tzimisce_toolbox=link("/archetypes/tzimisce-toolbox"),
+        war_ghouls=link("/archetypes/war-ghouls"),
+        war_ghoul=card("War Ghoul")
         %}
         The Tzimisce and their unique {{ vic }} discipline also have the quite rare
         {{ AUS }}{{ ANI }} combination, making them excellent blockers.

@@ -1,4 +1,4 @@
-{% extends "strategy/_layout.html" %}
+{% extends "layout.html" %}
 
 {% block head %}
 {{ super() }}
@@ -23,7 +23,8 @@
     </li>
     <li><a href="{{ url_for('static', filename='pdf/deckbuilding-theory.pdf') }}">
             Deckbuilding Theory</a>
-        <em> {{ _('by') }} Bram Vink</em></li>
+        <em> {{ _('by') }} Bram Vink</em>
+    </li>
     <li>
         <a target="_blank" href="http://singingvtes.blogspot.com/2010/03/lyrics-of-night-building-deck.html">
             Lyrics of the Night: Building a Deck</a>
@@ -39,7 +40,7 @@
 </p>
 <h2 id="modules-and-density">{{ _('Modules and density') }}</h2>
 {% trans trimmed
-    pct="%"
+pct="%"
 %}
 <p>
     Decks can be broken down in « modules »: group of cards with a similar objective.
@@ -70,9 +71,9 @@
     kept in hand until needed: the sparse distribution of the module makes sure the cards will not jam the hand.
 </p>
 {% endtrans %}
-<div class="tip">
-    {% trans trimmed 
-        the_parthenon=card("The Parthenon")
+<div class="insert tip">
+    {% trans trimmed
+    the_parthenon=card("The Parthenon")
     %}
     <h3>Master module</h3>
     <p>
@@ -100,7 +101,7 @@
     being stuck with no relevant card to play is a loosing situation.
     {% endtrans %}
 </p>
-<div class="tip">
+<div class="insert tip">
     {% trans trimmed %}
     <h3>Deck size examples</h3>
     <p>
@@ -145,8 +146,8 @@
 </ul>
 <p>
     {% trans trimmed
-        forgotten_labyrinth=card("Forgotten Labyrinth"),
-        computer_hacking=card("Computer Hacking")
+    forgotten_labyrinth=card("Forgotten Labyrinth"),
+    computer_hacking=card("Computer Hacking")
     %}
     A card that is hard to play can <strong>jam</strong> the hand.
     Action modifiers, especially restricted stealth cards like {{ forgotten_labyrinth }},
@@ -156,7 +157,7 @@
     A tactical module for card rotation can be played in situations when jamming is expected.
     {% endtrans %}
 </p>
-<div class="tip">
+<div class="insert tip">
     <h3>{{ _('Recursion') }}</h3>
     <p>
         {% trans trimmed %}
@@ -168,9 +169,9 @@
     <ul>
         <li>
             {% trans trimmed
-                ashur_tablets=card("Ashur Tablets"),
-                the_parthenon=card("The Parthenon"),
-                girls=link("/archetypes/girls-will-find-inner-circle")
+            ashur_tablets=card("Ashur Tablets"),
+            the_parthenon=card("The Parthenon"),
+            girls=link("/archetypes/girls-will-find-inner-circle")
             %}
             {{ ashur_tablets }} provide an excellent
             recursion as well as a powerful bloat. They need more than one Master phase action
@@ -180,16 +181,17 @@
         </li>
         <li>
             {% trans trimmed
-                the_sargon_fragment=card("The Sargon Fragment")
+            the_sargon_fragment=card("The Sargon Fragment")
             %}
             {{ the_sargon_fragment }} is the only
             other option open to all, but it is unique and uses up a lot of actions.
             {% endtrans %}
         <li>
             {% trans trimmed
-                img_clan_giovanni='<img src="%(url)s">'|format(url=url_for('static', filename='img/icons/clan-giovanni.svg'))|safe,
-                sudario_refraction=card("Sudario Refraction"),
-                spiritual_guidance=card("Spiritual Guidance")
+            img_clan_giovanni='<img src="%(url)s">'|format(url=url_for('static',
+            filename='img/icons/clan-giovanni.svg'))|safe,
+            sudario_refraction=card("Sudario Refraction"),
+            spiritual_guidance=card("Spiritual Guidance")
             %}
             Giovanni {{ img_clan_giovanni }} have the excellent
             {{ sudario_refraction }} and the lesser {{ spiritual_guidance }}
@@ -205,11 +207,11 @@
             ({{ _('Unique, Anarch') }})
         </li>
         <li>
-            {{ card("Maabara") }} (<img src="{{ url_for('static', filename='/img/icons/clan-harbingers.svg') }}">)
+            {{ card("Maabara") }} </img src="{{ url_for('static', filename='/img/icons/clan-harbingers.svg') }}">
         </li>
         <li>
             {{ card("Unity") }}
-            (<img src="{{ url_for('static', filename='/img/icons/creed-visionary.svg') }}">)
+            <img src="{{ url_for('static', filename='/img/icons/creed-visionary.svg') }}">
         </li>
     </ul>
     <p>
@@ -221,19 +223,19 @@
 </div>
 <h2 id="building-a-deck">{{ _('Building a deck in practice') }}</h2>
 {% trans trimmed
-    bleed=link("/strategy/fundamentals", _("bleed"), _anchor="bleed"),
-    politics=link("/strategy/fundamentals", _("politics"), _anchor="politics"),
-    anarch_revolt=card("Anarch Revolt"),
-    dragonbound=card("Dragonbound"),
-    Bloating=link("/strategy/bloat", _("Bloating"), _anchor="bloat"),
-    bounce=link("/strategy/fundamentals", _("Bounces"), _anchor="bounce"),
-    delaying_tactics=card("Delaying Tactics"),
-    poison_pill=card("Poison Pill"),
-    combat_ends=link("/strategy/combat", _("combat ends"), _anchor="defense"),
-    combat_posture=link("/strategy/combat", _("combat posture"), _anchor="posture"),
-    best_cards=link("/best-cards", _("best cards")),
-    deck_archive=link("/deck-search", _("deck archive"))
-    %}
+bleed=link("/strategy/fundamentals", _("bleed"), _anchor="bleed"),
+politics=link("/strategy/fundamentals", _("politics"), _anchor="politics"),
+anarch_revolt=card("Anarch Revolt"),
+dragonbound=card("Dragonbound"),
+Bloating=link("/strategy/bloat", _("Bloating"), _anchor="bloat"),
+bounce=link("/strategy/fundamentals", _("Bounces"), _anchor="bounce"),
+delaying_tactics=card("Delaying Tactics"),
+poison_pill=card("Poison Pill"),
+combat_ends=link("/strategy/combat", _("combat ends"), _anchor="defense"),
+combat_posture=link("/strategy/combat", _("combat posture"), _anchor="posture"),
+best_cards=link("/best-cards", _("best cards")),
+deck_archive=link("/deck-search", _("deck archive"))
+%}
 <h3>1. Theme</h3>
 <p>
     The first step to build a deck is to choose a theme, a core principle to build upon.
@@ -264,9 +266,9 @@
         {{ Bloating }} is the most generic defense:
         gaining pool works against all offensive strategies. Most decks use a modicum of bloat,
         some rely on a heavy bloat as their sole defense.
-        <em>Blocking</em> is the second most generic defense: most offensive strategies use actions.
+        Blocking is the second most generic defense: most offensive strategies use actions.
         More focused defensive tools are often used against the most widespread offensive strategies:
-        {{ bounce }} or <em>Reduction</em> against bleed,
+        {{ bounce }} or reduction against bleed,
         {{ delaying_tactics }} and {{ poison_pill }} against politics.
     </li>
     <li>
@@ -298,7 +300,7 @@
 {% endtrans %}
 <p class=subtitle>
     {% trans trimmed
-        fame=card("Fame")
+    fame=card("Fame")
     %}
     Note at this point you are working in single copies. This means that if you are building a rush combat deck,
     you should consider removing combat cards before removing a payload card like {{ fame }}.
@@ -306,15 +308,15 @@
     to use dozens of copies of the combat cards you kept in the selection and a single {{ fame }}.
     {% endtrans %}
 </p>
-<div class="tip">
+<div class="insert tip">
     {% trans trimmed
-        fear_of_mekhet=card("Fear of Mekhet"),
-        scourge_of_the_enochians=card("Scourge of the Enochians"),
-        archon_investigation=card("Archon Investigation"),
-        direct_intervention=card("Direct Intervention"),
-        dark_influences=card("Dark Influences"),
-        sudden_reversal=card("Sudden Reversal"),
-        wash=card("Wash")
+    fear_of_mekhet=card("Fear of Mekhet"),
+    scourge_of_the_enochians=card("Scourge of the Enochians"),
+    archon_investigation=card("Archon Investigation"),
+    direct_intervention=card("Direct Intervention"),
+    dark_influences=card("Dark Influences"),
+    sudden_reversal=card("Sudden Reversal"),
+    wash=card("Wash")
     %}
     <h3>Counters</h3>
     <p>
@@ -331,7 +333,10 @@
     </p>
     {% endtrans %}
 </div>
-{% trans trimmed %}
+{% trans trimmed
+stealth_bleed=link("/strategy/archetypes", _("Stealth & Bleed"), _anchor="bleed"),
+wall=link("/strategy/archetypes", _("Wall"), _anchor="wall")
+%}
 <h3>4. Card flow</h3>
 <p>
     Once the skeleton is ready, you can adjust the card flow. First adjust the crypt:
@@ -354,9 +359,9 @@
     on the number of master actions you expect to get.
     For the rest of the deck though, there is no predefined pattern:
     no strategic pillar has the priority in terms of density.
-    A <em>Stealth & Bleed</em> can typically have two strong module for bleed and stealth,
+    A {{ stealth_bleed }} can typically have two strong module for bleed and stealth,
     two standard modules for bounce and combat defense, and a tactical module against politics.
-    A <em>Wall</em> deck, on the other hand, can have a spam module for wake & intercept,
+    A {{ wall }} deck, on the other hand, can have a spam module for wake & intercept,
     a standard module for bloat and only a tactical module for the payload.
 </p>
 <p>
@@ -403,7 +408,7 @@
     <br />
     {{ _('To second computation just computes the preceding probability for consecutive values of c.') }}
 </p>
-<div class="tip">
+<div class="insert tip">
     {% trans trimmed %}
     <h3>Cycling</h3>
     <p>
@@ -416,7 +421,8 @@
     {% endtrans %}
 </div>
 {% trans trimmed
-    play_test_system='<a target="_blank" href="%(url)s">%(label)s</a>'|format(url=url_for('static', filename='pdf/play-test-system.pdf'), label=_('play test system'))|safe
+play_test_system='<a target="_blank" href="%(url)s">%(label)s</a>'|format(url=url_for('static',
+filename='pdf/play-test-system.pdf'), label=_('play test system'))|safe
 %}
 <h3>5. Test and refine</h3>
 <p>

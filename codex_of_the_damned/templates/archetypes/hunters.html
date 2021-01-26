@@ -11,34 +11,36 @@
 {% endblock %}
 
 {% block archetype %}
-{% trans trimmed 
-    jennie=card('Jennie "Cassie247" Orne', "Jennie"),
-    angel_of_berlin=card("Angel of Berlin"),
-    nra_pac=card("NRA PAC"),
-    vigilance=card("Vigilance"),
-    champion=card("Champion"),
-    discern=card("Discern"),
-    talbot_s_chainsaw=card("Talbot's Chainsaw"),
-    rejuvenate=card("Rejuvenate"),
-    travis=card('Travis "Traveler72" Miller', "Travis"),
-    the_church_of_vindicated_faith=card("The Church of Vindicated Faith"),
-    inspire=card("Inspire"),
-    react_with_conviction=card("React with Conviction"),
-    entrancement=card("Entrancement"),
-    smiling_jack_the_anarch=card("Smiling Jack, The Anarch"),
-    tension_in_the_ranks=card("Tension in the Ranks"),
-    dragonbound=card("Dragonbound"),
-    strike_with_conviction=card("Strike with Conviction"),
-    target_vitals=card("Target Vitals"),
-    sniper_rifle=card("Sniper Rifle"),
-    concealed_weapon=card("Concealed Weapon"),
-    flash_grenade=card("Flash Grenade"),
-    specific_rules=external("https://blackchantry.com/Vampire%20The%20Eternal%20Struggle%20Imbued%20rules.pdf", _("specific rules")),
-    a_b=link("/strategy/fundamentals", _("A&B"), _anchor="AB"),
-    cory_busch_kendall_s_deck=link("/deck-search", _("Cory Busch Kendall's deck"), twda_id="2010reunionkamutco"),
-    john_newquist_in_a_2008_nac_qualifier=link("/deck-search", _("John Newquist in a 2008 NAC Qualifier"), twda_id="2k8originsnaq"),
-    sergio_gracia_s_deck=link("/deck-search", _("Sergio Gracia's deck"), twda_id="2010famousims")
-    %}
+{% trans trimmed
+jennie=card('Jennie "Cassie247" Orne', "Jennie"),
+angel_of_berlin=card("Angel of Berlin"),
+nra_pac=card("NRA PAC"),
+vigilance=card("Vigilance"),
+champion=card("Champion"),
+discern=card("Discern"),
+talbot_s_chainsaw=card("Talbot's Chainsaw"),
+rejuvenate=card("Rejuvenate"),
+travis=card('Travis "Traveler72" Miller', "Travis"),
+the_church_of_vindicated_faith=card("The Church of Vindicated Faith"),
+inspire=card("Inspire"),
+react_with_conviction=card("React with Conviction"),
+entrancement=card("Entrancement"),
+smiling_jack_the_anarch=card("Smiling Jack, The Anarch"),
+tension_in_the_ranks=card("Tension in the Ranks"),
+dragonbound=card("Dragonbound"),
+strike_with_conviction=card("Strike with Conviction"),
+target_vitals=card("Target Vitals"),
+sniper_rifle=card("Sniper Rifle"),
+concealed_weapon=card("Concealed Weapon"),
+flash_grenade=card("Flash Grenade"),
+specific_rules=external("https://blackchantry.com/Vampire%20The%20Eternal%20Struggle%20Imbued%20rules.pdf", _("specific
+rules")),
+a_b=link("/strategy/fundamentals", _("A&B"), _anchor="AB"),
+cory_busch_kendall_s_deck=link("/deck-search", _("Cory Busch Kendall's deck"), id="2010reunionkamutco"),
+john_newquist_in_a_2008_nac_qualifier=link("/deck-search", _("John Newquist in a 2008 NAC Qualifier"),
+twda_id="2k8originsnaq"),
+sergio_gracia_s_deck=link("/deck-search", _("Sergio Gracia's deck"), id="2010famousims")
+%}
 <h2>Highlights</h2>
 <p>
     This is a <em>toolbox</em> Imbued deck. They are mortal allies and follow {{ specific_rules }}.
@@ -96,7 +98,7 @@
 {% endblock %}
 
 {% block errata %}
-<div class="warning">
+<div class="insert warn">
     <h3>Errata</h3>
     {{ erratum.pentextmsubversion( 'remove' ) }}
 </div>

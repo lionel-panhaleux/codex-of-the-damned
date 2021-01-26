@@ -5,15 +5,15 @@
 <h1><img src="{{ url_for('static', filename='img/icons/clan-malkavian.svg') }}">
     {% trans trimmed %} Malkavian {% endtrans%}
 </h1>
-<div class="tip">
+<div class="insert tip">
     <p>
-        {% trans trimmed 
-            lutz_politics=link("/archetypes/lutz-politics"),
-            rachel_madness=link("/archetypes/rachel-madness"),
-            lutz_von_hohenzollern=card("Lutz von Hohenzollern"),
-            rachel_brandywine=card("Rachel Brandywine"),
-            weenie_dem=link("/archetypes/weenie-dem"),
-            weenie_aus=link("/archetypes/weenie-aus")
+        {% trans trimmed
+        lutz_politics=link("/archetypes/lutz-politics"),
+        rachel_madness=link("/archetypes/rachel-madness"),
+        lutz_von_hohenzollern=card("Lutz von Hohenzollern"),
+        rachel_brandywine=card("Rachel Brandywine"),
+        weenie_dem=link("/archetypes/weenie-dem"),
+        weenie_aus=link("/archetypes/weenie-aus")
         %}
         The Malkavian are a prominent clan. With their unique {{ dem }} discipline
         beside the excellent {{ obf }}{{ aus }} disciplines,
@@ -26,13 +26,13 @@
         {% endtrans%}
     </p>
     <p>
-        {% trans trimmed 
-            mind_rape_arch=link("/archetypes/mind-rape"),
-            mind_rape=card("Mind Rape"),
-            fifth_edition=external(
-            "https://www.blackchantry.com/products/current-products/vampire-the-eternal-struggle-fifth-edition/", 
-            _("fifth edition")
-            )
+        {% trans trimmed
+        mind_rape_arch=link("/archetypes/mind-rape"),
+        mind_rape=card("Mind Rape"),
+        fifth_edition=external(
+        "https://www.blackchantry.com/products/current-products/vampire-the-eternal-struggle-fifth-edition/",
+        _("fifth edition")
+        )
         %}
         Group 1 Malkavian have the {{ dom }}{{ obf }}{{ aus }} disciplines combination,
         making them the only vampires of the game with {{ dom }}{{ obf }}
@@ -92,9 +92,9 @@ but can still come in handy to get out of a {{ trap }}, for example.
 {% endcall %}
 
 {% call layout.card_column("Madness Network", decks=47, copies="2-5") %}
-{% trans trimmed 
-    homunculus=card("Homunculus"),
-    reversal_of_fortunes=card("Reversal of Fortunes")
+{% trans trimmed
+homunculus=card("Homunculus"),
+reversal_of_fortunes=card("Reversal of Fortunes")
 %}
 A rare effect for this infamous clan card. It enables Malkavians to stay in defence and
 only bleed at the end of their predator's turn, but it can also be used to act multiple
@@ -126,9 +126,9 @@ He can help take down a cumbersome minion or deter an aggressive predator.
 {% endcall %}
 
 {% call layout.card_column("Apache Jones", decks=41, copies="1-2") %}
-{% trans trimmed 
-    uncle_george=card("Uncle George"),
-    persia=card("Persia, The Beautiful Statue", "Persia") 
+{% trans trimmed
+uncle_george=card("Uncle George"),
+persia=card("Persia, The Beautiful Statue", "Persia")
 %}
 5 pool is a good price for the {{ DEM }}{{ obf }} combination.
 He is almost always paired with {{ uncle_george }} and {{ persia }}
@@ -145,9 +145,9 @@ She gets included even in other clans crypts just for her ability and title.
 {% endcall %}
 
 {% call layout.card_column("Midget", decks=39, copies="1-2") %}
-{% trans trimmed 
-    kaymakli_fragment=card("Kaymakli Fragment"),
-    sibyl_s_tongue=card("Sibyl's Tongue")
+{% trans trimmed
+kaymakli_fragment=card("Kaymakli Fragment"),
+sibyl_s_tongue=card("Sibyl's Tongue")
 %}
 3 pool is a low price to pay for the {{ DEM }}{{ obf }} combination.
 Its <em>Infernal</em> trait is a bummer, but he is still excellent
@@ -187,10 +187,10 @@ she gets included in many {{ dem }} decks.
 {% endcall %}
 
 {% call layout.card_column("Quentin King III", decks=34, copies="1-2") %}
-{% trans trimmed 
-    maris_streck=card("Maris Streck"), 
-    the_call=card("The Call"),
-    madman_s_quill=card("Madman's Quill")
+{% trans trimmed
+maris_streck=card("Maris Streck"),
+the_call=card("The Call"),
+madman_s_quill=card("Madman's Quill")
 %}
 A <em>Prince</em> for 7 pool with a good disciplines combination.
 He is group 3, the same group as
@@ -221,9 +221,9 @@ He gets included in many <em>Royalty</em> decks.
 {% endcall %}
 
 {% call layout.card_column("Mind Tricks", decks=32, copies="2-5") %}
-{% trans trimmed 
-    deny=card("Deny"),
-    confusion=card("Confusion")
+{% trans trimmed
+deny=card("Deny"),
+confusion=card("Confusion")
 %}
 +1 stealth for 1 blood: this is expensive.
 It is included in decks where {{ obf }} is not much available.
@@ -233,8 +233,8 @@ stealth & bleed module using just the {{ DEM }} discipline.
 {% endcall %}
 
 {% call layout.card_column("Leandro", decks=31, copies="1-3") %}
-{% trans trimmed 
-    council_of_doom=link("/archetypes/council-of-doom")
+{% trans trimmed
+council_of_doom=link("/archetypes/council-of-doom")
 %}
 A strong <em>Inner Circle</em> with a good ability and {{ OBF }}{{ dom }},
 a good disciplines combination. He is seen in Malkavian Royalty builds
@@ -243,9 +243,9 @@ but also in group 2 Inner Circle constructs like the {{ council_of_doom }} arche
 {% endcall %}
 
 {% call layout.card_column("Tony", decks=28, copies="1") %}
-{% trans trimmed 
-    the_call=card("The Call"),
-    madman_s_quill=card("Madman's Quill")
+{% trans trimmed
+the_call=card("The Call"),
+madman_s_quill=card("Madman's Quill")
 %}
 A good disciplines combination for 6. He can uses bounces,
 {{ the_call }} and {{ madman_s_quill }}, and superior {{ DEM }}
@@ -254,9 +254,9 @@ and inferior {{ obf }} is enough to be of use in a stealth & bleed deck.
 {% endcall %}
 
 {% call layout.card_column("Restructure", decks=28, copies="1-2") %}
-{% trans trimmed 
-    carlton_van_wyk=card("Carlton Van Wyk"),
-    ossian=card("Ossian")
+{% trans trimmed
+carlton_van_wyk=card("Carlton Van Wyk"),
+ossian=card("Ossian")
 %}
 An excellent ally remover at superior {{ DEM }}. It can get rid of the widespread
 {{ carlton_van_wyk }} and {{ ossian }}, who both become quickly problematic.

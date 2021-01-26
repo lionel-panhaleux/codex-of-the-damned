@@ -11,18 +11,18 @@
 {% endblock %}
 
 {% block archetype %}
-{% trans trimmed 
-    madness_network=card("Madness Network"),
-    reversal_of_fortunes=card("Reversal of Fortunes"),
-    brainwash=card("Brainwash"),
-    kaymakli_nightmares=card("Kaymakli Nightmares"),
-    smiling_jack_the_anarch=card("Smiling Jack, The Anarch"),
-    dreams_of_the_sphinx=card("Dreams of the Sphinx"),
-    specialization=card("Specialization"),
-    heart_of_nizchetus=card("Heart of Nizchetus"),
-    victor_pelletier=card("Victor Pelletier"),
-    orian_gissler_s_deck=link("/deck-search", _("Orian Gissler's deck"), twda_id="2k9battlefrenzypf")
-    %}
+{% trans trimmed
+madness_network=card("Madness Network"),
+reversal_of_fortunes=card("Reversal of Fortunes"),
+brainwash=card("Brainwash"),
+kaymakli_nightmares=card("Kaymakli Nightmares"),
+smiling_jack_the_anarch=card("Smiling Jack, The Anarch"),
+dreams_of_the_sphinx=card("Dreams of the Sphinx"),
+specialization=card("Specialization"),
+heart_of_nizchetus=card("Heart of Nizchetus"),
+victor_pelletier=card("Victor Pelletier"),
+orian_gissler_s_deck=link("/deck-search", _("Orian Gissler's deck"), id="2k9battlefrenzypf")
+%}
 <h2>Highlights</h2>
 <p>
     This is a <em>special</em> deck using {{ madness_network }}
@@ -62,7 +62,7 @@
 {% endblock %}
 
 {% block errata %}
-<div class="warning">
+<div class="insert warn">
     <h3>Errata</h3>
     {{ erratum.pentextmsubversion( 'remove' ) }}
 </div>

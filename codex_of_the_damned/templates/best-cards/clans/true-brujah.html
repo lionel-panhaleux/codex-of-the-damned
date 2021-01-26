@@ -7,11 +7,11 @@
     True Brujah
     {% endtrans %}
 </h1>
-<div class="tip">
+<div class="insert tip">
     <p>
-        {% trans trimmed 
-            summon_history=card("Summon History"),
-            fernando_grossi_s_deck=link("/deck-search", _("Fernando Grossi's deck"), twda_id="2011sac")
+        {% trans trimmed
+        summon_history=card("Summon History"),
+        fernando_grossi_s_deck=link("/deck-search", _("Fernando Grossi's deck"), id="2011sac")
         %}
         The True Brujah and their unique {{ tem }} discipline
         have some powerful vampires among their ranks.
@@ -48,9 +48,9 @@ allows it to cancel the action.
 {% endcall %}
 
 {% call layout.card_column("Outside the Hourglass", decks=17, copies="6-11") %}
-{% trans trimmed 
-    domain_of_evernight=card("Domain of Evernight"),
-    disarm=card("Disarm")
+{% trans trimmed
+domain_of_evernight=card("Domain of Evernight"),
+disarm=card("Disarm")
 %}
 A unique effect: combined with {{ domain_of_evernight }} it can deliver
 aggravated damage <em>before</em> the strikes.
@@ -60,8 +60,8 @@ it can be combined with {{ disarm }} as it is not environmental.
 {% endcall %}
 
 {% call layout.card_column("Summon History", decks=16, copies="3-9") %}
-{% trans trimmed 
-    the_ankara_citadel=card("The Ankara Citadel, Turkey", "The Ankara Citadel")
+{% trans trimmed
+the_ankara_citadel=card("The Ankara Citadel, Turkey", "The Ankara Citadel")
 %}
 A unique effect both at inferior {{ tem }} and superior {{ TEM }}.
 Combined with {{ the_ankara_citadel }}, it can put allies and vampires into play
@@ -78,8 +78,8 @@ of its presence in a crypt. As True Brujah are scarce, the ability to play
 {% endcall %}
 
 {% call layout.card_column("Clotho's Gift", decks=14, copies="1-5") %}
-{% trans trimmed 
-    a_b=link("/strategy/fundamentals", _("A&B"), _anchor="AB")
+{% trans trimmed
+a_b=link("/strategy/fundamentals", _("A&B"), _anchor="AB")
 %}
 Also used in {{ obf }} constructs to help get more vampires out of the crypt,
 its superior {{ TEM }} effect is an obvious {{ a_b }} increase at a very cheap cost.

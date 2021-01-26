@@ -3,13 +3,13 @@
 
 {% block content %}
 <h1><img src="{{ url_for('static', filename='img/icons/clan-nosferatu.svg') }}"> Nosferatu</h1>
-<div class="tip">
+<div class="insert tip">
     <p>
-        {% trans trimmed 
+        {% trans trimmed
         nananimalism=link("/archetypes/nananimalism"),
         the_dark_side_of_politics=link("/archetypes/the-dark-side-of-politics"),
         nosferatu_royalty=link("/archetypes/nosferatu-royalty")
-    %}
+        %}
         The Nosferatu and their antitribu use the {{ obf }}{{ ani }}{{ pot }} disciplines.
         Some good vampires of theirs are used in multi-clan crypts,
         like {{ nananimalism }} or {{ the_dark_side_of_politics }}.
@@ -33,9 +33,9 @@ A cheap {{ ANI }} minion, he also gets included in many {{ ani }} decks.
 {% endcall %}
 
 {% call layout.card_column("Petra", decks=41, copies="1") %}
-{% trans trimmed 
-    the_unnamed=card("The unnamed"), 
-    cybele=card("Cybele") 
+{% trans trimmed
+the_unnamed=card("The unnamed"),
+cybele=card("Cybele")
 %}
 5 pool is a bit pricey for {{ ANI }} so she is less seen in mono {{ ANI }}
 or multi-clan decks. Her ability can be useful against {{ the_unnamed }}
@@ -44,9 +44,10 @@ or {{ cybele }} though.
 {% endcall %}
 
 {% call layout.card_column("The Labyrinth", decks=38, copies="1") %}
-{% trans trimmed 
-    img_clan_followers='<img src="%(url)s" />'|format(url=url_for('static', filename='img/icons/clan-followers-of-set.svg'))|safe,
-    opium_den=card("Opium Den")
+{% trans trimmed
+img_clan_followers='<img src="%(url)s" />'|format(url=url_for('static',
+filename='img/icons/clan-followers-of-set.svg'))|safe,
+opium_den=card("Opium Den")
 %}
 One pool for permanent stealth is really a bargain: other clans have to pay 2 pool
 for this kind of device. Only the Followers of Set {{ img_clan_followers }}
@@ -55,8 +56,8 @@ have a similar tool with {{ opium_den }}.
 {% endcall %}
 
 {% call layout.card_column("Warsaw Station", decks=31, copies="1-2") %}
-{% trans trimmed 
-    nosferatu_royalty=link("/archetypes/nosferatu-royalty")
+{% trans trimmed
+nosferatu_royalty=link("/archetypes/nosferatu-royalty")
 %}
 A rare effect, quite useful in Nosferatu decks using political actions, like the
 {{ nosferatu_royalty }} archetype.
@@ -64,8 +65,8 @@ A rare effect, quite useful in Nosferatu decks using political actions, like the
 {% endcall %}
 
 {% call layout.card_column("Nikolaus Vermeulen", decks=27, copies="1-2") %}
-{% trans trimmed 
-    nosferatu_royalty=link("/archetypes/nosferatu-royalty")
+{% trans trimmed
+nosferatu_royalty=link("/archetypes/nosferatu-royalty")
 %}
 The iconic vampire for {{ nosferatu_royalty }} decks, he has an excellent ability
 that helps get other <em>Princes</em> out faster and cheaper, or bloat a bit.
@@ -87,10 +88,10 @@ even though his ability can be a problem depending on the context.
 {% endcall %}
 
 {% call layout.card_column("Murat", decks=23, copies="1-2") %}
-{% trans trimmed 
-    nosferatu_royalty=link("/archetypes/nosferatu-royalty"),
-    nikolaus_vermeulen=card("Nikolaus Vermeulen"),
-    calebros_the_martyr=card("Calebros, The Martyr")
+{% trans trimmed
+nosferatu_royalty=link("/archetypes/nosferatu-royalty"),
+nikolaus_vermeulen=card("Nikolaus Vermeulen"),
+calebros_the_martyr=card("Calebros, The Martyr")
 %}
 A <em>Prince</em> for the very reasonable price of 7 pool, he is often seen in
 {{ nosferatu_royalty }} decks alongside {{ nikolaus_vermeulen }}
@@ -116,9 +117,9 @@ superior {{ ANI }}. Still, she can find her place in <em>Royalty</em> constructs
 {% endcall %}
 
 {% call layout.card_column("Beast, The Leatherface of Detroit", decks=15, copies="1-3") %}
-{% trans trimmed 
-    euro_brujah=link("/archetypes/euro-brujah"),
-    theo_bell=card("Theo Bell")
+{% trans trimmed
+euro_brujah=link("/archetypes/euro-brujah"),
+theo_bell=card("Theo Bell")
 %}
 Always included for his ability and strength combined with {{ POT }}{{ cel }},
 he gets included in {{ POT }} decks like for example in the

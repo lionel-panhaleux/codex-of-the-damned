@@ -11,20 +11,20 @@
 {% endblock %}
 
 {% block archetype %}
-{% trans trimmed 
-    mind_rape=card("Mind Rape"),
-    lucian=card("Lucian"),
-    heidelberg_castle_germany=card("Heidelberg Castle, Germany"),
-    madness_network=card("Madness Network"),
-    second_tradition_domain=card("Second Tradition: Domain"),
-    obedience=card("Obedience"),
-    mental_maze=card("Mental Maze"),
-    scourge_of_the_enochians=card("Scourge of the Enochians"),
-    metro_underground=card("Metro Underground"),
-    arika=card("Arika"),
-    erol_hammer_s_deck=link("/deck-search", _("Erol Hammer's deck"), twda_id="2k9fcqnac"),
-    img_clan_malkavian='<img src="%(url)s" />'|format(url=url_for('static', filename='img/icons/clan-malkavian.svg'))|safe
-    %}
+{% trans trimmed
+mind_rape=card("Mind Rape"),
+lucian=card("Lucian"),
+heidelberg_castle_germany=card("Heidelberg Castle, Germany"),
+madness_network=card("Madness Network"),
+second_tradition_domain=card("Second Tradition: Domain"),
+obedience=card("Obedience"),
+mental_maze=card("Mental Maze"),
+scourge_of_the_enochians=card("Scourge of the Enochians"),
+metro_underground=card("Metro Underground"),
+arika=card("Arika"),
+erol_hammer_s_deck=link("/deck-search", _("Erol Hammer's deck"), id="2k9fcqnac"),
+img_clan_malkavian='<img src="%(url)s" />'|format(url=url_for('static', filename='img/icons/clan-malkavian.svg'))|safe
+%}
 <h2>Highlights</h2>
 <p>
     This is a <em>special</em> deck using {{ mind_rape }}
@@ -65,7 +65,7 @@
 {% endblock %}
 
 {% block errata %}
-<div class="warning">
+<div class="insert warn">
     <h3>Errata</h3>
     {{ erratum.pentextmsubversion( 'remove' ) }}
     {{ erratum.parityshift() }}

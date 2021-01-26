@@ -3,7 +3,7 @@
 
 {% block content %}
 <h1>{{ for }} {{ _("Fortitude") }}</h1>
-<div class="tip">
+<div class="insert tip">
     <p>
         {% trans trimmed %}
         {{ for }} provides damage prevention and additional actions.
@@ -12,9 +12,9 @@
 </div>
 
 {% call layout.card_column("Freak Drive", decks=401, copies="1-13") %}
-{% trans trimmed 
-    a_b=link("/strategy/fundamentals", _("A&B"), _anchor="AB"),
-    forced_march=card("Forced March")
+{% trans trimmed
+a_b=link("/strategy/fundamentals", _("A&B"), _anchor="AB"),
+forced_march=card("Forced March")
 %}
 By far the most played {{ for }} card, this is a straight-up {{ a_b }} enhancer.
 The 1 blood cost is a bargain, although vampires with access to {{ cel }} can use
@@ -38,9 +38,9 @@ when no good stealth discipline is available, even with such a drawback.
 {% endcall %}
 
 {% call layout.card_column("Hidden Strength", decks=145, copies="2-6") %}
-{% trans trimmed 
-    taste_of_vitae=card("Taste of Vitae"),
-    disarm=card("Disarm")
+{% trans trimmed
+taste_of_vitae=card("Taste of Vitae"),
+disarm=card("Disarm")
 %}
 An excellent damage prevention at inferior {{ for }}: it is easy to use and will not jam
 a hand, plus it prevents aggravated and defuses {{ taste_of_vitae }} as well as
@@ -64,9 +64,9 @@ is more common than {{ FOR }}.
 {% endcall %}
 
 {% call layout.card_column("Soak", decks=92, copies="1-5") %}
-{% trans trimmed 
-    weighted_walking_stick=card("Weighted Walking Stick"),
-    carrion_crows=card("Carrion Crows")
+{% trans trimmed
+weighted_walking_stick=card("Weighted Walking Stick"),
+carrion_crows=card("Carrion Crows")
 %}
 High damage prevention at no cost, it is efficient against light combat modules using
 {{ weighted_walking_stick }} or {{ carrion_crows }}. However, it is useless against

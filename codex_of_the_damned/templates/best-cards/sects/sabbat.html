@@ -3,7 +3,7 @@
 
 {% block content %}
 <h1>Sabbat</h1>
-<div class="tip">
+<div class="insert tip">
     <p>
         {% trans trimmed %}
         The Sabbat is the second sect to have been published in the game, after the
@@ -36,10 +36,10 @@ provides less intercept, but three unlocks for just one pool is a bargain.
 {% endcall %}
 
 {% call layout.card_column("Eternal Vigilance", decks=42, copies="1-3") %}
-{% trans trimmed 
-    abbot=card("Abbot"),
-    under_siege=card("Under Siege")
-    %}
+{% trans trimmed
+abbot=card("Abbot"),
+under_siege=card("Under Siege")
+%}
 Another good defensive device that provides an unlock on every action, it can be
 combined with {{ abbot }} and {{ under_siege }} for an exceptional defensive arsenal.
 {% endtrans %}

@@ -1,11 +1,10 @@
 {% extends "layout.html" %}
 {% import "_layout_sponsor.html" as sponsor with context %}
 
-{% block head %}
-{{ super() }}
-<!-- Adding needed scripts -->
-<script src="{{ url_for('static', filename='js/dC.js') }}"></script>
-<script src="{{ url_for('static', filename='js/card.js') }}"></script>
+{% block scripts %}
+<script src="{{ url_for('static', filename='js/url-state.js') }}"></script>
+<script src="{{ url_for('static', filename='js/complete.js') }}"></script>
+<script src="{{ url_for('static', filename='js/card-search.js') }}"></script>
 {% endblock %}
 
 {% block content %}
@@ -19,41 +18,43 @@
 	official ruling made by successive Rules Directors.
 	{% endtrans %}
 </p>
-<form id="card-form" autocomplete="off">
+<form id="card-search-form" autocomplete="off">
 	<div class="autocomplete">
-		<input type="text" id="card_name" placeholder="Card Name" autocomplete="off" autocorrect="off"
+		<input type="text" id="card-name" placeholder="Card Name" autocomplete="off" autocorrect="off"
 			autocapitalize="off" spellcheck="false" />
 	</div>
 </form>
-
 <div class="result-message" id="result-message"></div>
-
-<div class="card-results-top" id="results-top">
-	<div class="card-results" id="results">
-		<div class="result-image-div" id="result-image-div">
-			<img class="result-image" id="result-image" />
+<div class="results" id="results" style="display: none">
+	<div class="card-info">
+		<div class="column-image">
+			<img class="card-image" id="card-image" />
 			<div class="image-footer" id="image-footer"></div>
-			<div class="card-sets" id="sets-info"></div>
+			<div class="card-sets" id="card-sets" style="display: none"></div>
 		</div>
-		<div class="result-text" , id="result-text-div">
-			<h3 id="card-title"></h3>
+		<div class="column-image-counterpart">
+			<h3 id="card-title" class="card-title"></h3>
 			<p id="card-text"></p>
 		</div>
 	</div>
-	<div class="result-rulings" , id="result-rulings-div"></div>
-	<div class="tip" id="ruling-submit-tooltip">
+	<div class="rulings" id="rulings">
+		<h3>{{ _('Rulings') }}</h3>
+	</div>
+	<div class="insert tip" id="submit-ruling">
 		<h3> {{ _('Submit a new ruling or a ruling correction') }}</h3>
-		<form id="ruling-form" onsubmit="rulingFormSubmit(); return false">
+		<form id="ruling-form">
 			<p>
 				{% trans trimmed %}
 				Help improve the Codex: provide an explanation and a link to a message
 				from a Rules Director.
 				{% endtrans %}
 			</p>
-			<input type="text" id="rF_text" placeholder="Explanation" />
-			<input type="text" id="rF_link" placeholder="http://www.vekn.net/forum/rules-questions/..." />
-			<input type="submit" id="rF_submit" value="Submit" />
-			<output name="rF_result" id="rf-result" for="rF_text rF_link rF_submit"></output>
+			<input type="text" class="long-input" name="explanation" id="ruling-form-explanation"
+				placeholder="Explanation">
+			<input type="text" class="long-input" name="url" id="ruling-form-url"
+				placeholder="http://www.vekn.net/forum/rules-questions/...">
+			<input type="submit" name="submit" value="Submit">
+			<output name="result" for="ruling-form-explanation ruling-form-url"></output>
 		</form>
 		<p>
 			{% trans trimmed %}

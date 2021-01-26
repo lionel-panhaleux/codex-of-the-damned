@@ -12,34 +12,34 @@
 
 {% block archetype %}
 {% trans trimmed
-    raven_spy=card("Raven Spy"),
-    cats_guidance=card("Cat's Guidance"),
-    sense_the_savage_way=card("Sense the Savage Way"),
-    predators_communion=card("Predator's Communion"),
-    invoking_the_beast=card("Invoking the Beast"),
-    carrion_crows=card("Carrion Crows"),
-    deep_song=card("Deep Song"),
-    predators_mastery=card("Predator's Mastery"),
-    powerbase_luanda=card("Powerbase: Luanda"),
-    well_marked=card("Well-Marked"),
-    shaman=card("Shaman"),
-    freak_drive=card("Freak Drive"),
-    fakir_al_sidi=card("Fakir al Sidi"),
-    matata=card("Matata"),
-    devil_channel_back=card("Devil-Channel: Back"),
-    devil_channel_hands=card("Devil-Channel: Hands"),
-    pack_alpha=card("Pack Alpha"),
-    duma_rafiki=card("Duma Rafiki"),
-    elephant_guardian=card("Elephant Guardian"),
-    abombwe=card("Abombwe"),
-    sanjo=card("Sanjo"),
-    umdava=card("Umdava"),
-    nkule_galadima=card("Nkule Galadima"),
-    uchenna=card("Uchenna"),
-    no_secrets_from_the_magaji=card("No Secrets From the Magaji"),
-    a_b=link("/strategy/fundamentals", _("A&B"), _anchor="AB"),
-    michael_bartsch=link("/deck-search", _("Michael Bartsch"), twda_id="2012ghn"),
-    noel_gimenez_infantes_deck=link("/deck-search", _("Noel Giménez Infante's deck"), twda_id="2012secqbdvs")
+raven_spy=card("Raven Spy"),
+cats_guidance=card("Cat's Guidance"),
+sense_the_savage_way=card("Sense the Savage Way"),
+predators_communion=card("Predator's Communion"),
+invoking_the_beast=card("Invoking the Beast"),
+carrion_crows=card("Carrion Crows"),
+deep_song=card("Deep Song"),
+predators_mastery=card("Predator's Mastery"),
+powerbase_luanda=card("Powerbase: Luanda"),
+well_marked=card("Well-Marked"),
+shaman=card("Shaman"),
+freak_drive=card("Freak Drive"),
+fakir_al_sidi=card("Fakir al Sidi"),
+matata=card("Matata"),
+devil_channel_back=card("Devil-Channel: Back"),
+devil_channel_hands=card("Devil-Channel: Hands"),
+pack_alpha=card("Pack Alpha"),
+duma_rafiki=card("Duma Rafiki"),
+elephant_guardian=card("Elephant Guardian"),
+abombwe=card("Abombwe"),
+sanjo=card("Sanjo"),
+umdava=card("Umdava"),
+nkule_galadima=card("Nkule Galadima"),
+uchenna=card("Uchenna"),
+no_secrets_from_the_magaji=card("No Secrets From the Magaji"),
+a_b=link("/strategy/fundamentals", _("A&B"), _anchor="AB"),
+michael_bartsch=link("/deck-search", _("Michael Bartsch"), id="2012ghn"),
+noel_gimenez_infantes_deck=link("/deck-search", _("Noel Giménez Infante's deck"), id="2012secqbdvs")
 %}
 <h2>Highlights</h2>
 <p>
@@ -122,7 +122,7 @@
 {% endblock %}
 
 {% block errata %}
-<div class="warning">
+<div class="insert warn">
     <h3>Errata</h3>
     {{ erratum.pentextmsubversion('remove') }}
     {{ erratum.villein() }}

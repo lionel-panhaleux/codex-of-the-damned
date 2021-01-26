@@ -3,11 +3,12 @@
 
 {% block content %}
 <h1><img src="{{ url_for('static', filename='img/icons/clan-kiasyd.svg') }}"> Kiasyd</h1>
-<div class="tip">
+<div class="insert tip">
     <p>
-        {% trans trimmed 
-            img_clan_lasombra='<img src="%(url)s" />'|format(url=url_for('static', filename='img/icons/clan-lasombra.svg'))|safe,
-            kiasyd_stealth_bleed=link("/archetypes/kiasyd-stealth-bleed")
+        {% trans trimmed
+        img_clan_lasombra='<img src="%(url)s" />'|format(url=url_for('static',
+        filename='img/icons/clan-lasombra.svg'))|safe,
+        kiasyd_stealth_bleed=link("/archetypes/kiasyd-stealth-bleed")
         %}
         The Kiasyd and their unique {{ myt }} discipline are quite close to the
         Lasombra {{ img_clan_lasombra }}, so they've been included in
@@ -20,8 +21,8 @@
 </div>
 
 {% call layout.card_column("Dame Hollerton", decks=70, copies="1-2") %}
-{% trans trimmed 
-    img_clan_lasombra='<img src="%(url)s" />'|format(url=url_for('static', filename='img/icons/clan-lasombra.svg'))|safe
+{% trans trimmed
+img_clan_lasombra='<img src="%(url)s" />'|format(url=url_for('static', filename='img/icons/clan-lasombra.svg'))|safe
 %}
 A solid {{ OBT }}{{ DOM }} combination for just 5 pool, she is included in
 Lasombra {{ img_clan_lasombra }} as well as Kiasyd decks.
@@ -37,8 +38,8 @@ He sometimes get included in decks for this ability alone.
 {% endcall %}
 
 {% call layout.card_column("Stone Travel", decks=45, copies="2-6") %}
-{% trans trimmed 
-    img_clan_lasombra='<img src="%(url)s" />'|format(url=url_for('static', filename='img/icons/clan-lasombra.svg'))|safe
+{% trans trimmed
+img_clan_lasombra='<img src="%(url)s" />'|format(url=url_for('static', filename='img/icons/clan-lasombra.svg'))|safe
 %}
 It is included in most Kiasyd decks and even in Lasombra-Kiasyd mixes
 as it can also be used at {{ obt }}. Additional stealth from {{ myt }}
@@ -106,8 +107,8 @@ Combined with {{ bonding }}, it results in a solid 3 bleed and 2 stealth action.
 {% endcall %}
 
 {% call layout.card_column("Song of Pan", decks=25, copies="2-4") %}
-{% trans trimmed 
-    img_clan_lasombra='<img src="%(url)s" />'|format(url=url_for('static', filename='img/icons/clan-lasombra.svg'))|safe
+{% trans trimmed
+img_clan_lasombra='<img src="%(url)s" />'|format(url=url_for('static', filename='img/icons/clan-lasombra.svg'))|safe
 %}
 A nice boost for a lunge move, it is a classic inclusion for pure Kiasyd decks.
 Again, the lack of a burn option makes it difficult to include in mixed Lasombra {{ img_clan_lasombra }} decks.

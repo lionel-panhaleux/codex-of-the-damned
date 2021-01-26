@@ -5,13 +5,13 @@
 <h1><img src="{{ url_for('static', filename='img/icons/clan-harbingers.svg') }}">
     {% trans trimmed %} Harbingers of Skulls {% endtrans%}
 </h1>
-<div class="tip">
+<div class="insert tip">
     <p>
-        {% trans trimmed 
+        {% trans trimmed
         lost_kindred_expansion=external(
-            "https://www.blackchantry.com/products/current-products/lost-kindred/", 
-            _("Lost Kindred expansion")
-            ),
+        "https://www.blackchantry.com/products/current-products/lost-kindred/",
+        _("Lost Kindred expansion")
+        ),
         emerald_legionnaire=card("Emerald Legionnaire"),
         emerald_legion=link("/archetypes/emerald-legion")
         %}
@@ -24,8 +24,9 @@
 </div>
 
 {% call layout.card_column("Solomon Batanea", decks=27, copies="1-2") %}
-{% trans trimmed 
-    img_clan_ventre_anti='<img src="%(url)s" />'|format(url=url_for('static', filename='img/icons/clan-ventrue-anti.svg'))|safe
+{% trans trimmed
+img_clan_ventre_anti='<img src="%(url)s" />'|format(url=url_for('static',
+filename='img/icons/clan-ventrue-anti.svg'))|safe
 %}
 A cheap cost for the {{ AUS }}{{ FOR }} combination –
 he even gets included in Ventrue antitribu {{ img_clan_ventre_anti }} decks.
@@ -55,9 +56,9 @@ A decent disciplines combination and a great ability for cards rotation.
 {% endcall %}
 
 {% call layout.card_column("Zygodat", decks=17, copies="1-2") %}
-{% trans trimmed 
-    trochomancy=card("Trochomancy"),
-    inevitability_of_the_void=card("Inevitability of the Void")
+{% trans trimmed
+trochomancy=card("Trochomancy"),
+inevitability_of_the_void=card("Inevitability of the Void")
 %}
 A good disciplines combination, and her ability has a nice synergy with
 {{ trochomancy }} and {{ inevitability_of_the_void }}.

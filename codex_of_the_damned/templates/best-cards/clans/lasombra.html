@@ -3,11 +3,12 @@
 
 {% block content %}
 <h1><img src="{{ url_for('static', filename='img/icons/clan-lasombra.svg') }}"> Lasombra</h1>
-<div class="tip">
+<div class="insert tip">
     <p>
-        {% trans trimmed 
-            img_clan_kiasyd='<img src="%(url)s" />'|format(url=url_for('static', filename='img/icons/clan-kiasyd.svg'))|safe,
-            lasombra_nocturn=link("/archetypes/lasombra-nocturn")
+        {% trans trimmed
+        img_clan_kiasyd='<img src="%(url)s" />'|format(url=url_for('static',
+        filename='img/icons/clan-kiasyd.svg'))|safe,
+        lasombra_nocturn=link("/archetypes/lasombra-nocturn")
         %}
         The Lasombra and their rare {{ obt }} discipline are quite close to the
         Kiasyd {{ img_clan_kiasyd }}, but a little more played. They have given birth
@@ -21,9 +22,9 @@
 </div>
 
 {% call layout.card_column("Shadow Play", decks=122, copies="2-6") %}
-{% trans trimmed 
-    lost_in_crowds=card("Lost in Crowds"),
-    into_thin_air=card("Into Thin Air")
+{% trans trimmed
+lost_in_crowds=card("Lost in Crowds"),
+into_thin_air=card("Into Thin Air")
 %}
 The strongest stealth for {{ obt }}, pricier than the {{ obf }} equivalents
 {{ lost_in_crowds }} and {{ into_thin_air }} of course.
@@ -43,8 +44,8 @@ Yet another stealth enhancer, this one only really useful at superior {{ OBT }}.
 {% endcall %}
 
 {% call layout.card_column("Ermenegildo, The Rake", decks=69, copies="1-2") %}
-{% trans trimmed 
-    img_clan_kiasyd='<img src="%(url)s" />'|format(url=url_for('static', filename='img/icons/clan-kiasyd.svg'))|safe
+{% trans trimmed
+img_clan_kiasyd='<img src="%(url)s" />'|format(url=url_for('static', filename='img/icons/clan-kiasyd.svg'))|safe
 %}
 Only 5 pool for {{ DOM }}{{ OBT }}, plus he is Black Hand. He gets included in a lot of
 decks, Lasombra, Kiasyd {{ img_clan_kiasyd }} or Black Hand alike.
@@ -58,10 +59,10 @@ An excellent permanent stealth enhancer for a reasonable 2 pool cost.
 {% endcall %}
 
 {% call layout.card_column("Nocturn", decks=58, copies="4-14") %}
-{% trans trimmed 
-    the_path_of_night=card("The Path of Night"),
-    the_unmasking=card("The Unmasking"),
-    fbi_special_affairs_division=card("FBI Special Affairs Division")
+{% trans trimmed
+the_path_of_night=card("The Path of Night"),
+the_unmasking=card("The Unmasking"),
+fbi_special_affairs_division=card("FBI Special Affairs Division")
 %}
 Although he lasts only one turn, he can either bleed for 1 or be kept for defence.
 Also, {{ the_path_of_night }} can be used to get him cheap and

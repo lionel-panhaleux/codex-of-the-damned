@@ -3,10 +3,10 @@
 
 {% block content %}
 <h1><img src="{{ url_for('static', filename='img/icons/clan-ravnos.svg') }}"> Ravnos</h1>
-<div class="tip">
+<div class="insert tip">
     <p>
-        {% trans trimmed 
-            ravnos_clown_car=link("/archetypes/ravnos-clown-car")
+        {% trans trimmed
+        ravnos_clown_car=link("/archetypes/ravnos-clown-car")
         %}
         The Ravnos and their unique {{ chi }} discipline are a versatile clan.
         They gave birth to a successful political archetype,
@@ -38,10 +38,10 @@ the ten counters are stacked on the card.
 {% endcall %}
 
 {% call layout.card_column("Sensory Deprivation", decks=22, copies="1-6") %}
-{% trans trimmed 
-    the_path_of_paradox=card("The Path of Paradox"),
-    gabrin=card("Gabrin"),
-    the_line=card("The Line")
+{% trans trimmed
+the_path_of_paradox=card("The Path of Paradox"),
+gabrin=card("Gabrin"),
+the_line=card("The Line")
 %}
 An infamous effect for this expensive action. The threat of it can be an excellent
 deterrent. With the help of cost reduction cards like {{ the_path_of_paradox }},
@@ -51,8 +51,8 @@ too.
 {% endcall %}
 
 {% call layout.card_column("Shilmulo Tarot", decks=24, copies="1") %}
-{% trans trimmed 
-    heart_of_nizchetus=card("Heart of Nizchetus")
+{% trans trimmed
+heart_of_nizchetus=card("Heart of Nizchetus")
 %}
 An equipment that helps with the cards rotation. Not unlike the
 {{ heart_of_nizchetus }}, but this one is for Ravnos only.

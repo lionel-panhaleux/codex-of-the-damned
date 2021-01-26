@@ -89,6 +89,51 @@ BASE_CONTEXT = {
     "VIC": flask.Markup("<i>V</i>"),
     "vis": flask.Markup("<i>u</i>"),
     "VIS": flask.Markup("<i>U</i>"),
+    # clans
+    "abomination": flask.Markup('<span class="clan">A</span>'),
+    "ahrimane": flask.Markup('<span class="clan">B</span>'),
+    "akunanse": flask.Markup('<span class="clan">C</span>'),
+    "assamite": flask.Markup('<span class="clan">D</span>'),
+    "baali": flask.Markup('<span class="clan">E</span>'),
+    "blood_brother": flask.Markup('<span class="clan">F</span>'),
+    "brujah": flask.Markup('<span class="clan">G</span>'),
+    "brujah_antitribu": flask.Markup('<span class="clan">H</span>'),
+    "caitiff": flask.Markup('<span class="clan">I</span>'),
+    "daughter_of_cacophony": flask.Markup('<span class="clan">J</span>'),
+    "follower_of_set": flask.Markup('<span class="clan">K</span>'),
+    "gangrel": flask.Markup('<span class="clan">L</span>'),
+    "gangrel_antitribu": flask.Markup('<span class="clan">M</span>'),
+    "gargoyle": flask.Markup('<span class="clan">N</span>'),
+    "giovanni": flask.Markup('<span class="clan">O</span>'),
+    "guruhi": flask.Markup('<span class="clan">P</span>'),
+    "harbinger_of_skulls": flask.Markup('<span class="clan">Q</span>'),
+    "ishtarri": flask.Markup('<span class="clan">R</span>'),
+    "kiasyd": flask.Markup('<span class="clan">S</span>'),
+    "lasombra": flask.Markup('<span class="clan">T</span>'),
+    "malkavian": flask.Markup('<span class="clan">u</span>'),
+    "malkavian_legacy": flask.Markup('<span class="clan">U</span>'),
+    "malkavian_antitribu": flask.Markup('<span class="clan">V</span>'),
+    "nagaraja": flask.Markup('<span class="clan">W</span>'),
+    "nosferatu": flask.Markup('<span class="clan">x</span>'),
+    "nosferatu_legacy": flask.Markup('<span class="clan">X</span>'),
+    "nosferatu_antitribu": flask.Markup('<span class="clan">Y</span>'),
+    "osebo": flask.Markup('<span class="clan">Z</span>'),
+    "pander": flask.Markup('<span class="clan">1</span>'),
+    "ravnos": flask.Markup('<span class="clan">2</span>'),
+    "salubri": flask.Markup('<span class="clan">3</span>'),
+    "salubri_antitribu": flask.Markup('<span class="clan">4</span>'),
+    "samedi": flask.Markup('<span class="clan">5</span>'),
+    "toreador": flask.Markup('<span class="clan">y</span>'),
+    "toreador_legacy": flask.Markup('<span class="clan">6</span>'),
+    "toreador_antitribu": flask.Markup('<span class="clan">7</span>'),
+    "tremere_legacy": flask.Markup('<span class="clan">8</span>'),
+    "tremere": flask.Markup('<span class="clan">v</span>'),
+    "tremere_antitribu": flask.Markup('<span class="clan">9</span>'),
+    "true_brujah": flask.Markup('<span class="clan">0</span>'),
+    "tzimisce": flask.Markup('<span class="clan">a</span>'),
+    "ventrue": flask.Markup('<span class="clan">z</span>'),
+    "ventrue_legacy": flask.Markup('<span class="clan">b</span>'),
+    "ventrue_antitribu": flask.Markup('<span class="clan">c</span>'),
 }
 
 
@@ -268,24 +313,22 @@ def file_name(name):
 def display_card():
     def card(name, display_name=None):
         return flask.Markup(
-            (
-                '<span class="card" onclick="dC(\'{fname}\')"'
-                ' onmouseover="hC(\'{fname}\')" onmouseout="oC()">'
-                "{name}</span>"
-            ).format(
-                # replace spaces with non-breakable spaces in card names
-                name=(display_name or name).replace(" ", " "),
-                fname=file_name(name),
+            '<span class="krcg-card"{data_name}>{name}</span>'.format(
+                data_name=f' data-name="{name}"'
+                if display_name or re.search(r" |-", name)
+                else "",
+                # replace spaces and hyphens with non-breakable versions in card names
+                name=(display_name or name).replace(" ", " ").replace("-", "‑"),
             )
         )
 
     def card_image(name, hover=True):
         img = (
             '<img src="https://static.krcg.org/card/{fname}.jpg"'
-            ' alt="{name}" onclick="dC(\'{fname}\')"'
+            ' alt="{name}" class="krcg-card" data-name="{name}"'
         )
-        if hover:
-            img += ' onmouseover="hC(\'{fname}\')" onmouseout="oC()"'
+        if not hover:
+            img += " data-nohover=true"
         img += "/>"
         return flask.Markup(img.format(name=name, fname=file_name(name)))
 

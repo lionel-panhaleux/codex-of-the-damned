@@ -1,47 +1,34 @@
 {% extends "layout.html" %}
 {% import "_layout_sponsor.html" as sponsor with context %}
 
-{% block head %}
-{{ super() }}
-<!-- Adding needed scripts -->
-<script src="{{ url_for('static', filename='js/dC.js') }}"></script>
+{% block scripts %}
 <script src="{{ url_for('static', filename='js/decklist.js') }}"></script>
-<script src="{{ url_for('static', filename='js/twda.js') }}"></script>
-{% endblock %}
-
-{% block card_display %}
-<div id="card-modal" class="modal" onclick="this.style.display='none'" tabindex="-1">
-    <div id=card-prev class="modal-nav">&#xf077</div>
-    <img class="modal-content" id="card-image">
-    <div id=card-next class="modal-nav">&#xf078</div>
-</div>
-<div id="card-hover" class="hover-modal" tabindex="-1">
-    <img class="modal-content" id="card-hover-image">
-</div>
+<script src="{{ url_for('static', filename='js/url-state.js') }}"></script>
+<script src="{{ url_for('static', filename='js/complete.js') }}"></script>
+<script src="{{ url_for('static', filename='js/deck-search.js') }}"></script>
 {% endblock %}
 
 {% block content %}
 <h1>{{ _('Deck Search') }}</h1>
 {{ sponsor }}
 <p>
-    {% trans trimmed 
-		twda=external("http://www.vekn.fr/decks/twd.htm", "Tournament Winning Deck Archive (TWDA)")
-	%}
+    {% trans trimmed
+    twda=external("http://www.vekn.fr/decks/twd.htm", "Tournament Winning Deck Archive (TWDA)")
+    %}
     This is an interactive interface to the {{ twda }} provided by VEKN.
     Type a card name to search all winning deck with it since 2008.
     {% endtrans %}
 </p>
-<form id="card-form" autocomplete="off">
+<form id="deck-search-form" autocomplete="off">
     <div class="autocomplete">
-        <input type="text" id="card_name" placeholder="Card Name" autocomplete="off" autocorrect="off"
+        <input type="text" id="card-name" placeholder="Card Name" autocomplete="off" autocorrect="off"
             autocapitalize="off" spellcheck="false" />
     </div>
-    <div class="multi-card-search" id="multi-card-search"></div>
-    <input type="button" id="clear-search-btn" class="clear-search-btn" value="Clear"
-        onclick="clearMultiCardSearch()" />
+    <div id="deck-search-cards"></div>
+    <input type="button" id="clear-search" class="clear-search" style="display: none" value="Clear" />
 </form>
 <div class="result-message" id="result-message"></div>
-<div class="results">
+<div class="scrollable results">
     <table>
         <tbody id="results">
         </tbody>
@@ -49,7 +36,7 @@
 </div>
 <div id="decklist" class="decklist" style="display: none">
     <h2 id="deck-name"><a id="deck-link" target="_blank" href="http://example.com"></a></h2>
-    <p id="deck-header"></p>
+    <p class="subtitle" id="deck-header"></p>
     <h3 id="crypt-header"></h3>
     <ul id="crypt-list">
     </ul>
