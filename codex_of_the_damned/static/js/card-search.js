@@ -11,15 +11,27 @@ class CardSearch {
         this.rulings = document.getElementById("rulings")
         this.ruling_form = document.getElementById("ruling-form")
         this.completion = new Completion(document.getElementById("card-name"), completeCardName, this.result_message)
-        this.state = new UrlState(async (data) => this.displayCard(data.card))
+        this.state = new UrlState(async (data) => this.displayCard(data))
         this.form.addEventListener("submit", async (ev) => await this.submit(ev))
         this.ruling_form.addEventListener("submit", async (ev) => await this.submitRuling(ev))
     }
     async submit(ev) {
         ev.preventDefault()
         const card = ev.target.elements["card-name"].value
-        this.state.update({ card: card })
-        await this.displayCard(card)
+        this.state.reset({ card: card })
+        await this.displayCard(this.state.state)
+    }
+    selectSet(set_name, set_image) {
+        if (this.state.set != set_name) {
+            this.state.update({ set: set_name })
+        }
+        this.card_image.src = set_image
+        this.card_image.classList.add("selectable")
+    }
+    resetSet(image_url) {
+        this.state.remove("set")
+        this.card_image.src = image_url
+        this.card_image.classList.remove("selectable")
     }
     clear() {
         this.results.style.display = "none"
@@ -36,14 +48,14 @@ class CardSearch {
             }
         }
     }
-    async displayCard(name) {
+    async displayCard(state) {
         this.clear()
-        if (!name) {
+        if (!state.card) {
             return
         }
         let data
         try {
-            data = await this.fetchCard(name)
+            data = await this.fetchCard(state.card)
         } catch (error) {
             this.result_message.innerHTML = `<p>${error.message}</p>`
         }
@@ -55,6 +67,7 @@ class CardSearch {
         let text = data.card_text
         let translation
         this.card_image.src = data.url
+        this.card_image.addEventListener("click", (ev) => this.resetSet(data.url))
         if (data._i18n && lang in data._i18n) {
             if ("name" in data._i18n[lang]) {
                 title = data._i18n[lang].name + `<br><span class="translation">${title}</span>`
@@ -101,6 +114,13 @@ class CardSearch {
             set_info.classList.add("set-info")
             let set_name = document.createElement("p")
             set_name.classList.add("set-name")
+            if (name in data.scans) {
+                set_name.classList.add("selectable")
+                set_name.addEventListener("click", (ev) => this.selectSet(name, data.scans[name]))
+                if (name === state.set) {
+                    this.selectSet(name, data.scans[name])
+                }
+            }
             if (data._i18n && lang in data._i18n) {
                 if (name in data._i18n[lang].sets) {
                     name = data._i18n[lang].sets[name]

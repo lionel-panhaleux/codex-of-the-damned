@@ -29,8 +29,14 @@ class UrlState {
         this.state = { ...this.state, ...obj }
         this.refresh()
     }
-    reset() {
-        this.state = {}
+    remove(key) {
+        if (key in this.state) {
+            delete this.state[key]
+            this.refresh()
+        }
+    }
+    reset(obj = undefined) {
+        this.state = obj || {}
         this.refresh()
     }
     refresh(push = true) {

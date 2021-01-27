@@ -9,6 +9,8 @@ Changelog
 - Deck Search: improved the URL, sharing or reloading now displays the exact same page
 - Best cards: now uses two columns on mid-size devices like landscape-oriented phones
 - Better display of card names: color on hover, remover underline.
+- Card search: Copying a ruling now copies the RD post URL
+- Card search: Display card set images on click when available
 
 1.18 (2020-12-31)
 -----------------
