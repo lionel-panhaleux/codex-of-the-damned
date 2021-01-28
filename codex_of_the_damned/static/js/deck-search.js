@@ -8,9 +8,11 @@ class DeckSearch {
         this.deckList = document.getElementById("decklist")
         this.comments = document.getElementById("comments")
         this.form.addEventListener("submit", async (ev) => await this.addCard(ev))
+        this.threshold25 = document.getElementById("threshold25")
         this.completion = new Completion(document.getElementById("card-name"), completeCardName, this.result_message)
         this.state = new UrlState(async (data) => this.display(data), ["cards"])
         this.clearButton.addEventListener("click", () => this.reset())
+        this.threshold25.addEventListener("change", (ev) => this.toggleCompetitors(ev))
     }
     async addCard(ev) {
         ev.preventDefault()
@@ -22,6 +24,16 @@ class DeckSearch {
         ev.target.elements["card-name"].value = ""
         this.displayCard(card)
         this.displayClearButton()
+        this.clearDeck()
+        await this.displayDeckChoices(this.state.state)
+    }
+    async toggleCompetitors(ev) {
+        console.log(ev)
+        if (this.threshold25.checked) {
+            this.state.update({ threshold25: true })
+        } else {
+            this.state.remove("threshold25")
+        }
         this.clearDeck()
         await this.displayDeckChoices(this.state.state)
     }
@@ -39,6 +51,7 @@ class DeckSearch {
         await this.displayDeckChoices(this.state.state)
     }
     reset() {
+        this.threshold25.checked = false
         this.clearDeck()
         this.clearDeckChoices()
         this.clearCards()
@@ -46,6 +59,11 @@ class DeckSearch {
         this.state.reset()
     }
     async display(data) {
+        if (data.threshold25) {
+            this.threshold25.checked = true
+        } else {
+            this.threshold25.checked = false
+        }
         this.displayCards(data || [])
         this.displayClearButton()
         await Promise.all([this.displayDeckChoices(data || []), this.displayDeck(data)])
@@ -87,7 +105,11 @@ class DeckSearch {
         }
         let decks
         try {
-            decks = await this.fetchDecks(data.cards)
+            if (data.threshold25) {
+                decks = await this.fetchDecks(data.cards, 25)
+            } else {
+                decks = await this.fetchDecks(data.cards)
+            }
         } catch (error) {}
         let message = ""
         if (!decks || decks.length < 1) {
@@ -147,10 +169,10 @@ class DeckSearch {
             }
         }
     }
-    async fetchDecks(cards) {
+    async fetchDecks(cards, players_count) {
         const response = await fetch(`https://v2.api.krcg.org/twda`, {
             method: "POST",
-            body: JSON.stringify({ cards: cards }),
+            body: JSON.stringify({ cards: cards, players_count: players_count || 0 }),
             headers: {
                 "Content-Type": "application/json",
                 Accept: "application/json",

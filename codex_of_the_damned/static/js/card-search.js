@@ -21,7 +21,10 @@ class CardSearch {
         this.state.reset({ card: card })
         await this.displayCard(this.state.state)
     }
-    selectSet(set_name, set_image) {
+    async selectSet(set_name, set_image) {
+        if (!(await urlExists(set_image))) {
+            return
+        }
         if (this.state.set != set_name) {
             this.state.update({ set: set_name })
         }
@@ -66,22 +69,19 @@ class CardSearch {
         let title = data.name
         let text = data.card_text
         let translation
-        this.card_image.src = data.url
-        this.card_image.addEventListener("click", (ev) => this.resetSet(data.url))
+        let base_image = data.url
         if (data._i18n && lang in data._i18n) {
             if ("name" in data._i18n[lang]) {
                 title = data._i18n[lang].name + `<br><span class="translation">${title}</span>`
             }
             translation = text
             text = data._i18n[lang].card_text
-            try {
-                const response = await fetch(data._i18n[lang].url)
-                if (!response.ok) {
-                    throw Error(response.statusText)
-                }
-                this.card_image.src = data._i18n[lang].url
-            } catch (error) {}
+            if (await urlExists(data._i18n[lang].url)) {
+                base_image = data._i18n[lang].url
+            }
         }
+        this.card_image.src = base_image
+        this.card_image.addEventListener("click", (ev) => this.resetSet(base_image))
         this.card_title.innerHTML = title
         let pelem = document.createElement("p")
         pelem.classList.add("card-id")
@@ -116,20 +116,21 @@ class CardSearch {
             set_name.classList.add("set-name")
             if (name in data.scans) {
                 set_name.classList.add("selectable")
-                set_name.addEventListener("click", (ev) => this.selectSet(name, data.scans[name]))
+                set_name.addEventListener("click", async (ev) => this.selectSet(name, data.scans[name]))
                 if (name === state.set) {
-                    this.selectSet(name, data.scans[name])
+                    await this.selectSet(name, data.scans[name])
                 }
             }
+            let i18n_name = name
             if (data._i18n && lang in data._i18n) {
                 if (name in data._i18n[lang].sets) {
-                    name = data._i18n[lang].sets[name]
+                    i18n_name = data._i18n[lang].sets[name]
                 }
             }
             if (isInPrint([name, info])) {
-                set_name.innerHTML = `<strong>${name}</strong>`
+                set_name.innerHTML = `<strong>${i18n_name}</strong>`
             } else {
-                set_name.textContent = name
+                set_name.textContent = i18n_name
             }
             set_info.appendChild(set_name)
             let set_detail = document.createElement("div")
@@ -293,6 +294,15 @@ function isInPrint(setInfo) {
             return true
         }
     }
+    return false
+}
+async function urlExists(url) {
+    try {
+        response = await fetch(url, { method: "HEAD" })
+        if (response.ok) {
+            return true
+        }
+    } catch {}
     return false
 }
 const disc_map = {

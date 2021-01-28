@@ -11,6 +11,7 @@ Changelog
 - Better display of card names: color on hover, remover underline.
 - Card search: Copying a ruling now copies the RD post URL
 - Card search: Display card set images on click when available
+- Deck Search: Add a filter for 25+ competitors
 
 1.18 (2020-12-31)
 -----------------

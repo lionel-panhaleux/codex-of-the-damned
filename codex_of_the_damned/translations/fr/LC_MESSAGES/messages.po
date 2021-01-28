@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: codex 0.X\n"
 "Report-Msgid-Bugs-To: lionel.panhaleux+codex@gmail.com\n"
-"POT-Creation-Date: 2021-01-26 10:41+0100\n"
+"POT-Creation-Date: 2021-01-28 13:22+0100\n"
 "PO-Revision-Date: 2020-07-04 08:50+0200\n"
 "Last-Translator: Lionel Panhaleux <lionel.panhaleux+codex@gmail.com>\n"
 "Language: fr\n"
@@ -184,10 +184,10 @@ msgstr "Sectes"
 
 #: codex_of_the_damned/navigation.py:292 codex_of_the_damned/templates/strategy/bloat.html:77
 #: codex_of_the_damned/templates/strategy/bloat.html:78 codex_of_the_damned/templates/strategy/bloat.html:101
-#: codex_of_the_damned/templates/strategy/bloat.html:102 codex_of_the_damned/templates/strategy/fundamentals.html:281
-#: codex_of_the_damned/templates/strategy/fundamentals.html:282
-#: codex_of_the_damned/templates/strategy/fundamentals.html:329
-#: codex_of_the_damned/templates/strategy/fundamentals.html:402
+#: codex_of_the_damned/templates/strategy/bloat.html:102 codex_of_the_damned/templates/strategy/fundamentals.html:285
+#: codex_of_the_damned/templates/strategy/fundamentals.html:286
+#: codex_of_the_damned/templates/strategy/fundamentals.html:333
+#: codex_of_the_damned/templates/strategy/fundamentals.html:406
 msgid "Anarch"
 msgstr ""
 
@@ -196,13 +196,13 @@ msgid "Camarilla"
 msgstr ""
 
 #: codex_of_the_damned/navigation.py:294 codex_of_the_damned/templates/strategy/bloat.html:146
-#: codex_of_the_damned/templates/strategy/fundamentals.html:86 codex_of_the_damned/templates/strategy/fundamentals.html:472
+#: codex_of_the_damned/templates/strategy/fundamentals.html:90 codex_of_the_damned/templates/strategy/fundamentals.html:476
 msgid "Laibon"
 msgstr ""
 
 #: codex_of_the_damned/navigation.py:295 codex_of_the_damned/templates/strategy/bloat.html:103
 #: codex_of_the_damned/templates/strategy/bloat.html:104 codex_of_the_damned/templates/strategy/bloat.html:270
-#: codex_of_the_damned/templates/strategy/fundamentals.html:444
+#: codex_of_the_damned/templates/strategy/fundamentals.html:448
 msgid "Sabbat"
 msgstr ""
 
@@ -259,7 +259,7 @@ msgid "Harbingers of Skulls"
 msgstr "Émissaires des Crânes"
 
 #: codex_of_the_damned/navigation.py:313 codex_of_the_damned/templates/best-cards/clans/imbued.html:6
-#: codex_of_the_damned/templates/strategy/bloat.html:158 codex_of_the_damned/templates/strategy/fundamentals.html:283
+#: codex_of_the_damned/templates/strategy/bloat.html:158 codex_of_the_damned/templates/strategy/fundamentals.html:287
 msgid "Imbued"
 msgstr "Illuminés"
 
@@ -419,7 +419,11 @@ msgstr ""
 "Ceci est une interface interactive pour la %(twda)s fournie par VEKN. Entrez un nom de carte pour rechercher tous les"
 " decks gagnants qui la contiennent depuis 2008."
 
-#: codex_of_the_damned/templates/deck-search.html:47
+#: codex_of_the_damned/templates/deck-search.html:27
+msgid "At least 25 competitors"
+msgstr "Au moins 25 participants"
+
+#: codex_of_the_damned/templates/deck-search.html:49
 msgid "Comments"
 msgstr "Commentaires"
 
@@ -429,13 +433,13 @@ msgstr "Commentaires"
 msgid ""
 "This site is a compilation of <strong>Vampire: the Eternal Struggle</strong> strategy resources. It is intended for "
 "players already familiar with the game and its rules. VTES is a game published by %(black_chantry_productions)s, "
-"under the %(white_wolf)s license."
+"under %(world_of_darkness)s license."
 msgstr ""
 "Ce site est une compilation de ressources de stratégie pour <strong>Vampire: the Eternal Struggle</strong>. Il est "
 "conçu pour les joueurs connaissant déjà le jeu et ses règles. VTES est un jeu publié par "
-"%(black_chantry_productions)s, sous la license %(white_wolf)s."
+"%(black_chantry_productions)s, sous la license %(world_of_darkness)s."
 
-#: codex_of_the_damned/templates/index.html:19
+#: codex_of_the_damned/templates/index.html:20
 msgid "Brett S. guide"
 msgstr "guide de Brett S."
 
@@ -450,19 +454,19 @@ msgstr ""
 "le jeu avant d'aller plus loin. Les règles officielles sont sur le %(bcp_s_website)s. Le %(players_guide)s officiel "
 "est disponible en PDF sur DriveThruRPG."
 
-#: codex_of_the_damned/templates/index.html:20
+#: codex_of_the_damned/templates/index.html:21
 msgid "BCP's website"
 msgstr "site web de BCP"
 
-#: codex_of_the_damned/templates/index.html:21
+#: codex_of_the_damned/templates/index.html:23
 msgid "Player's Guide"
 msgstr "Guide du Joueur"
 
-#: codex_of_the_damned/templates/index.html:31
+#: codex_of_the_damned/templates/index.html:33
 msgid "Github page"
 msgstr "page Github"
 
-#: codex_of_the_damned/templates/index.html:30
+#: codex_of_the_damned/templates/index.html:32
 #, python-format
 msgid ""
 "If you want to contribute to this guide, point out mistakes or raise an issue, you are welcome to do so on the "
@@ -471,35 +475,35 @@ msgstr ""
 "Si vous désirez contribuer à ce guide, signaler une erreur ou un problème, merci de le faire sur la %(github_page)s "
 "du projet."
 
-#: codex_of_the_damned/templates/index.html:37
+#: codex_of_the_damned/templates/index.html:39
 msgid "Community"
 msgstr "Communauté"
 
-#: codex_of_the_damned/templates/index.html:39
+#: codex_of_the_damned/templates/index.html:41
 msgid "VEKN Forum"
 msgstr "Forum VEKN"
 
-#: codex_of_the_damned/templates/index.html:46
+#: codex_of_the_damned/templates/index.html:48
 msgid "VTES Discord"
 msgstr "Discord VTES"
 
-#: codex_of_the_damned/templates/index.html:49
+#: codex_of_the_damned/templates/index.html:51
 msgid "VEKN Facebook goup"
 msgstr "Groupe Facebook VEKN"
 
-#: codex_of_the_damned/templates/index.html:52
+#: codex_of_the_damned/templates/index.html:54
 msgid "The Gentleman Gamer's Tutorial"
 msgstr "Tutoriel du Gentleman Gamer"
 
-#: codex_of_the_damned/templates/index.html:55
+#: codex_of_the_damned/templates/index.html:57
 msgid "Team Covenant's Tutorial"
 msgstr "Tutoriel de la Team Covenant"
 
-#: codex_of_the_damned/templates/index.html:69
+#: codex_of_the_damned/templates/index.html:71
 msgid "interviews archive"
 msgstr "archive d'interviews"
 
-#: codex_of_the_damned/templates/index.html:77
+#: codex_of_the_damned/templates/index.html:79
 msgid ""
 "Portions of the materials are the copyrights and trademarks of Paradox Interactive AB, and are used with permission. "
 "All rights reserved. For more information please visit"
@@ -705,7 +709,7 @@ msgstr ""
 #: codex_of_the_damned/templates/best-cards/generic/master-cards.html:38
 #: codex_of_the_damned/templates/best-cards/generic/no-discipline.html:114
 #: codex_of_the_damned/templates/best-cards/generic/presence.html:18 codex_of_the_damned/templates/strategy/combat.html:18
-#: codex_of_the_damned/templates/strategy/fundamentals.html:234
+#: codex_of_the_damned/templates/strategy/fundamentals.html:238
 msgid "A&B"
 msgstr "A&B"
 
@@ -1531,10 +1535,8 @@ msgstr ""
 "table, puisque les Illuminés sont immunisés à leurs effets. Le %(sergio_gracia_s_deck)s de 2010 est un bon exemple. "
 "</p>"
 
-#: codex_of_the_damned/templates/archetypes/hunters.html:36
-msgid ""
-"specific\n"
-"rules"
+#: codex_of_the_damned/templates/archetypes/hunters.html:37
+msgid "specific rules"
 msgstr "règles spécifiques"
 
 #: codex_of_the_damned/templates/archetypes/hunters.html:39
@@ -9254,7 +9256,7 @@ msgstr ""
 "produire une régénération plus importante si elles passent. Elles sont si efficaces qu'à peu près tous les decks "
 "politiques en incluent :"
 
-#: codex_of_the_damned/templates/strategy/bloat.html:265 codex_of_the_damned/templates/strategy/fundamentals.html:267
+#: codex_of_the_damned/templates/strategy/bloat.html:265 codex_of_the_damned/templates/strategy/fundamentals.html:271
 msgid "Prince or Justicar"
 msgstr "Prince ou Justicar"
 
@@ -9265,14 +9267,14 @@ msgstr "Prince ou Justicar"
 #: codex_of_the_damned/templates/strategy/combat.html:246 codex_of_the_damned/templates/strategy/combat.html:251
 #: codex_of_the_damned/templates/strategy/combat.html:337 codex_of_the_damned/templates/strategy/deck-building.html:202
 #: codex_of_the_damned/templates/strategy/fundamentals.html:56 codex_of_the_damned/templates/strategy/fundamentals.html:61
-#: codex_of_the_damned/templates/strategy/fundamentals.html:76 codex_of_the_damned/templates/strategy/fundamentals.html:85
-#: codex_of_the_damned/templates/strategy/fundamentals.html:161
-#: codex_of_the_damned/templates/strategy/fundamentals.html:212
-#: codex_of_the_damned/templates/strategy/fundamentals.html:438
+#: codex_of_the_damned/templates/strategy/fundamentals.html:76 codex_of_the_damned/templates/strategy/fundamentals.html:89
+#: codex_of_the_damned/templates/strategy/fundamentals.html:165
+#: codex_of_the_damned/templates/strategy/fundamentals.html:216
+#: codex_of_the_damned/templates/strategy/fundamentals.html:442
 msgid "and"
 msgstr "et"
 
-#: codex_of_the_damned/templates/strategy/bloat.html:268 codex_of_the_damned/templates/strategy/fundamentals.html:218
+#: codex_of_the_damned/templates/strategy/bloat.html:268 codex_of_the_damned/templates/strategy/fundamentals.html:222
 msgid "Big capacity vampires"
 msgstr "Vampires de haute capacité"
 
@@ -9376,6 +9378,7 @@ msgstr ""
 #: codex_of_the_damned/templates/strategy/combat.html:265 codex_of_the_damned/templates/strategy/combat.html:267
 #: codex_of_the_damned/templates/strategy/deck-building.html:201
 #: codex_of_the_damned/templates/strategy/fundamentals.html:54 codex_of_the_damned/templates/strategy/fundamentals.html:56
+#: codex_of_the_damned/templates/strategy/fundamentals.html:60
 msgid "with"
 msgstr "avec"
 
@@ -10101,21 +10104,25 @@ msgstr "peut contrer les rebonds %(dom)s"
 #: codex_of_the_damned/templates/strategy/fundamentals.html:78
 #, python-format
 msgid "can counter %(AUS)s bounces"
-msgstr "peuvent countre les rebonds %(AUS)s"
+msgstr "peuvent contrer les rebonds %(AUS)s"
 
 #: codex_of_the_damned/templates/strategy/fundamentals.html:82
 msgid "can counter any bounce"
 msgstr "peut contrer tous les rebonds"
 
-#: codex_of_the_damned/templates/strategy/fundamentals.html:87
-msgid "can counter bounces when being the target"
-msgstr "peuvent contrer les rebonds dont on est la cible"
+#: codex_of_the_damned/templates/strategy/fundamentals.html:86
+msgid "can counter bounces from young vampires"
+msgstr "peut contrer les rebonds de jeunes vampires"
 
 #: codex_of_the_damned/templates/strategy/fundamentals.html:91
+msgid "can counter bounces from the predator"
+msgstr "peuvent contrer les rebonds du prédateur"
+
+#: codex_of_the_damned/templates/strategy/fundamentals.html:95
 msgid "is often used to deter bounces, even if it may not be enough to prevent them altogether."
 msgstr "est souvent utilisé pour décourager les rebonds, même si cela peut être insuffisant pour les empêcher complètement."
 
-#: codex_of_the_damned/templates/strategy/fundamentals.html:95
+#: codex_of_the_damned/templates/strategy/fundamentals.html:99
 #, python-format
 msgid ""
 "<h3>Archon limit</h3> <p> A bleed for more than 3 exposes the minion to the possibility of %(archon_investigation)s. "
@@ -10127,11 +10134,11 @@ msgstr ""
 "sous cette limite pour éviter de risquer leurs serviteurs, d'autres vont considérer que leurs serviteurs sont "
 "sacrifiables et iront joyeusement au-delà. </p>"
 
-#: codex_of_the_damned/templates/strategy/fundamentals.html:108
+#: codex_of_the_damned/templates/strategy/fundamentals.html:112
 msgid "Politics"
 msgstr "Politique"
 
-#: codex_of_the_damned/templates/strategy/fundamentals.html:109
+#: codex_of_the_damned/templates/strategy/fundamentals.html:113
 #, python-format
 msgid ""
 "<p> The other option to deplete the prey’s pool is to use political actions like %(kine_resources_contested)s. The "
@@ -10155,7 +10162,7 @@ msgstr ""
 "de parvenir à un <strong>verrou de vote</strong>, c'est-à-dire qu'ils auront plus de votes sur la table que la somme "
 "des votes de tous les autres joueurs. Plusieurs techniques peuvent être utilisées à cet effet:"
 
-#: codex_of_the_damned/templates/strategy/fundamentals.html:133
+#: codex_of_the_damned/templates/strategy/fundamentals.html:137
 #, python-format
 msgid ""
 "Using modifiers or master cards to get more votes: %(pre)s has the most options, but other disciplines offer good "
@@ -10168,12 +10175,12 @@ msgstr ""
 "%(hall_of_hades_court)s, de même que certains clans comme les Ventrue %(img_clan_ventrue)s avec "
 "%(ventrue_headquarters)s ou les Disciples de Seth %(img_clan_followers_of_set)s avec %(ferraille)s."
 
-#: codex_of_the_damned/templates/strategy/fundamentals.html:150
+#: codex_of_the_damned/templates/strategy/fundamentals.html:154
 #, python-format
 msgid "Using %(praxis)s, %(crusade)s or %(fee_stake)s cards."
 msgstr "Utiliser des cartes de %(praxis)s, %(crusade)s ou %(fee_stake)s."
 
-#: codex_of_the_damned/templates/strategy/fundamentals.html:159
+#: codex_of_the_damned/templates/strategy/fundamentals.html:163
 msgid ""
 "Getting multiple big capacity vampires with a lot of votes out, like Inner Circles and Justicars. This is\n"
 "        usually achieved using"
@@ -10181,35 +10188,35 @@ msgstr ""
 "Sortir plusieurs vampires de haute capacité avec beaucoup de votes, comme des membres du Cercle intérieur et des "
 "Justicars. On y parvient généralement en utilisant"
 
-#: codex_of_the_damned/templates/strategy/fundamentals.html:162
+#: codex_of_the_damned/templates/strategy/fundamentals.html:166
 msgid "together with"
 msgstr "en combinaison avec"
 
-#: codex_of_the_damned/templates/strategy/fundamentals.html:163
-#: codex_of_the_damned/templates/strategy/fundamentals.html:175
-#: codex_of_the_damned/templates/strategy/fundamentals.html:180
+#: codex_of_the_damned/templates/strategy/fundamentals.html:167
+#: codex_of_the_damned/templates/strategy/fundamentals.html:179
+#: codex_of_the_damned/templates/strategy/fundamentals.html:184
 msgid "or"
 msgstr "ou"
 
-#: codex_of_the_damned/templates/strategy/fundamentals.html:167
+#: codex_of_the_damned/templates/strategy/fundamentals.html:171
 msgid "Using an effect to give votes to all members of clan, like"
 msgstr "Utiliser un effet pour donner des votes à tous les membres d'un clan, comme"
 
-#: codex_of_the_damned/templates/strategy/fundamentals.html:178
+#: codex_of_the_damned/templates/strategy/fundamentals.html:182
 msgid "This needs to be combined with ways to bring many vampires of that clan into play, using actions like"
 msgstr ""
 "Il faut combiner ça avec des techniques permettant de mettre de nombreux membres du clan en jeu, en utilisant des "
 "actions comme"
 
-#: codex_of_the_damned/templates/strategy/fundamentals.html:179
+#: codex_of_the_damned/templates/strategy/fundamentals.html:183
 msgid "or Master cards like"
 msgstr "ou des cartes de Maître comme"
 
-#: codex_of_the_damned/templates/strategy/fundamentals.html:184
+#: codex_of_the_damned/templates/strategy/fundamentals.html:188
 msgid "Delay"
 msgstr "Délai"
 
-#: codex_of_the_damned/templates/strategy/fundamentals.html:186
+#: codex_of_the_damned/templates/strategy/fundamentals.html:190
 #, python-format
 msgid ""
 "Aggressive vote decks will pass multiple votes in a single turn, but this has led to the use of %(delaying_tactics)s "
@@ -10220,11 +10227,11 @@ msgstr ""
 "%(delaying_tactics)s comme défense. Cela signifie que la diversité dans les votes est souhaitable pour éviter de "
 "perdre un tour d'actions entier juste à cause d'un délai sur %(kine_resources_contested)s."
 
-#: codex_of_the_damned/templates/strategy/fundamentals.html:197
+#: codex_of_the_damned/templates/strategy/fundamentals.html:201
 msgid "Damage dealing votes"
 msgstr "Votes réduisant l'influence"
 
-#: codex_of_the_damned/templates/strategy/fundamentals.html:199
+#: codex_of_the_damned/templates/strategy/fundamentals.html:203
 msgid ""
 "Only a few votes deal substantive pool damage, and they often have restrictions. Some votes dealing less\n"
 "        damage are not listed here."
@@ -10232,23 +10239,23 @@ msgstr ""
 "Seuls quelques votes permettent de réduire vraiment la réserve d'influence, et ils ont souvent des restrictions. "
 "Certains votes infligeant moins de dégâts sont ignorés ici."
 
-#: codex_of_the_damned/templates/strategy/fundamentals.html:207
+#: codex_of_the_damned/templates/strategy/fundamentals.html:211
 msgid "Prince or Justicar, only on a Methusalah with more pool"
 msgstr "Prince ou Justicar, seulement sur un Mathusalem avec moins d'influence"
 
-#: codex_of_the_damned/templates/strategy/fundamentals.html:214
+#: codex_of_the_damned/templates/strategy/fundamentals.html:218
 msgid "both have the same effect"
 msgstr "les deux ont le même effet"
 
-#: codex_of_the_damned/templates/strategy/fundamentals.html:222
+#: codex_of_the_damned/templates/strategy/fundamentals.html:226
 msgid "Independant or Anarch"
 msgstr "Indépendant ou Anarch"
 
-#: codex_of_the_damned/templates/strategy/fundamentals.html:230
+#: codex_of_the_damned/templates/strategy/fundamentals.html:234
 msgid "Baron"
 msgstr ""
 
-#: codex_of_the_damned/templates/strategy/fundamentals.html:235
+#: codex_of_the_damned/templates/strategy/fundamentals.html:239
 #, python-format
 msgid ""
 "<p> One can either choose to buff up attack or to keep minions and cards to defend oneself: the stronger the defence,"
@@ -10267,11 +10274,11 @@ msgstr ""
 "utilisent cette technique, même si quelques constructions purement offensives s'en passent étant donné leur manque "
 "d'outil défensif. </p>"
 
-#: codex_of_the_damned/templates/strategy/fundamentals.html:252
+#: codex_of_the_damned/templates/strategy/fundamentals.html:256
 msgid "Wake & unlock reactions"
 msgstr "Réactions de réveil & de redressement"
 
-#: codex_of_the_damned/templates/strategy/fundamentals.html:254
+#: codex_of_the_damned/templates/strategy/fundamentals.html:258
 msgid ""
 "A few cards provide wake or unlock effects during the opponents turn, letting locked vampire react to and intercept "
 "actions."
@@ -10279,16 +10286,16 @@ msgstr ""
 "Quelques cartes fournissent un effet de réveil ou de redressement durant le tour des adversaires, ce qui permet à un "
 "vampire incliné de réagir et d'intercepter des actions."
 
-#: codex_of_the_damned/templates/strategy/fundamentals.html:269
-#: codex_of_the_damned/templates/strategy/fundamentals.html:270
+#: codex_of_the_damned/templates/strategy/fundamentals.html:273
+#: codex_of_the_damned/templates/strategy/fundamentals.html:274
 msgid "titled Sabbat"
 msgstr "Sabbat titré"
 
-#: codex_of_the_damned/templates/strategy/fundamentals.html:279
+#: codex_of_the_damned/templates/strategy/fundamentals.html:283
 msgid "Big capacity"
 msgstr "Haute capacité"
 
-#: codex_of_the_damned/templates/strategy/fundamentals.html:286
+#: codex_of_the_damned/templates/strategy/fundamentals.html:290
 #, python-format
 msgid ""
 "<p> Another easy way to increase A&B is to use a <strong>weenie</strong> crypt: many small vampires for more actions "
@@ -10312,19 +10319,19 @@ msgstr ""
 "<strong>A</strong>ction) précise qu'aucune carte d'action ne peut être utilisée deux fois dans le même tour par le "
 "même serviteur, cette stratégie doit être combinée avec une diversité suffisante d'actions pour être efficace. </p>"
 
-#: codex_of_the_damned/templates/strategy/fundamentals.html:309
+#: codex_of_the_damned/templates/strategy/fundamentals.html:313
 msgid "Unlock modifiers"
 msgstr "Modificateurs de redressement"
 
-#: codex_of_the_damned/templates/strategy/fundamentals.html:311
+#: codex_of_the_damned/templates/strategy/fundamentals.html:315
 msgid "Only a few cards allow a vampire to unlock during the turn and undertake multiple actions."
 msgstr "Seuls quelques cartes permettent à un vampire de se redresser durant le tour pour pouvoir effectuer plusieurs actions."
 
-#: codex_of_the_damned/templates/strategy/fundamentals.html:335
+#: codex_of_the_damned/templates/strategy/fundamentals.html:339
 msgid "Action sequence"
 msgstr "Séquence d'action"
 
-#: codex_of_the_damned/templates/strategy/fundamentals.html:336
+#: codex_of_the_damned/templates/strategy/fundamentals.html:340
 msgid ""
 "<p> The choice and order of minion actions is important. A common strategy is to <strong>bait</strong>, beginning "
 "with the most mundane actions, up to the strongest ones. This forces the opponent to ponder what to block: too early "
@@ -10341,11 +10348,11 @@ msgstr ""
 "l'adversaire à conserver un réveil ou un minion redressé pour une action encore pire qui, en fait, n'arrivera jamais."
 " </p>"
 
-#: codex_of_the_damned/templates/strategy/fundamentals.html:349
+#: codex_of_the_damned/templates/strategy/fundamentals.html:353
 msgid "The lunge"
 msgstr "Le coup de grâce"
 
-#: codex_of_the_damned/templates/strategy/fundamentals.html:351
+#: codex_of_the_damned/templates/strategy/fundamentals.html:355
 msgid ""
 "The key to victory is to get a hand fit to oust one’s prey in the turn. Building this hand, then assessing the right "
 "moment to play it and <strong>lunge</strong> for the Victory Point is key. If the prey survives, they can rebuild "
@@ -10360,11 +10367,11 @@ msgstr ""
 "absence. En tant que prédateur, il est judicieux d'essayer de déterminer le nombre de réveils, rebonds, délais, "
 "<em>etc.</em> disponibles du côté de la proie. </p>"
 
-#: codex_of_the_damned/templates/strategy/fundamentals.html:360
+#: codex_of_the_damned/templates/strategy/fundamentals.html:364
 msgid "Stealth and Intercept"
 msgstr "Discrétion et interception"
 
-#: codex_of_the_damned/templates/strategy/fundamentals.html:361
+#: codex_of_the_damned/templates/strategy/fundamentals.html:365
 #, python-format
 msgid ""
 "<p> The key between offence and defence is the management of stealth and intercept. Many disciplines give access to "
@@ -10382,33 +10389,33 @@ msgstr ""
 "mention spéciale : ils disposent d'un bonus d'interception permanent et, en plus, leurs capacités de combat sont "
 "excellentes et leur permettent de gêner les adversaires sans autre ajout. </p>"
 
-#: codex_of_the_damned/templates/strategy/fundamentals.html:386
+#: codex_of_the_damned/templates/strategy/fundamentals.html:390
 msgid "Permanent intercept cards"
 msgstr "Cartes d'interception permanente"
 
-#: codex_of_the_damned/templates/strategy/fundamentals.html:388
+#: codex_of_the_damned/templates/strategy/fundamentals.html:392
 msgid "Only a few unique cards give permanent intercept to any vampire, most of them master cards."
 msgstr ""
 "Seules quelques cartes fournissent de l'interception permanente à n'importe quel vampire, la plupart sont des cartes "
 "de Maître."
 
-#: codex_of_the_damned/templates/strategy/fundamentals.html:398
+#: codex_of_the_damned/templates/strategy/fundamentals.html:402
 msgid "expensive"
 msgstr "cher"
 
-#: codex_of_the_damned/templates/strategy/fundamentals.html:421
+#: codex_of_the_damned/templates/strategy/fundamentals.html:425
 msgid "Allies"
 msgstr "Alliés"
 
-#: codex_of_the_damned/templates/strategy/fundamentals.html:426
+#: codex_of_the_damned/templates/strategy/fundamentals.html:430
 msgid "Other cards give permanent intercept to a chosen vampire."
 msgstr "D'autres cartes donnent un bonus d'interception permanente à un vampire précis."
 
-#: codex_of_the_damned/templates/strategy/fundamentals.html:448
+#: codex_of_the_damned/templates/strategy/fundamentals.html:452
 msgid "Small capacity vampires"
 msgstr "Vampires de basse capacité"
 
-#: codex_of_the_damned/templates/strategy/fundamentals.html:486
+#: codex_of_the_damned/templates/strategy/fundamentals.html:490
 #, python-format
 msgid ""
 "On the other hand, whatever level of intercept one manages to achieve, stealth specialised decks often include some "
@@ -12179,4 +12186,3 @@ msgstr ""
 " de dégâts maximum de 12 points d'influence. Jusqu'à ce que vous y arriviez, continuez à faire 3 à 5 dégâts par tour "
 "et à rebondir les morsures de votre prédateur, en broyant lentement l'influence de votre proie et en lui laissant "
 "croire que 12 points est un coussin confortable. </p>"
-

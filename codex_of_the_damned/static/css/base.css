@@ -359,20 +359,29 @@ div.game h3::before {
     color: var(--color-deck-front);
 }
 /* ***************************************************************************** form */
-input {
+input[type="text"] {
     font-size: 1em;
     margin: 0.5em 1em 0 0;
     padding: 0.3em;
 }
-form input {
-    max-width: var(--input-width);
-    display: block;
+form input[type="text"] {
     box-sizing: border-box;
-    width: 100%;
+    max-width: var(--input-width);
+}
+.autocomplete input[type="text"] {
+    width: var(--input-width);
 }
 form input.long-input {
+    display: block;
     max-width: 100%;
+    width: 100%;
 }
+input[type="checkbox"] {
+    margin: 1em 1em 1em 0;
+}
+/* form input.long-input {
+    max-width: 100%;
+} */
 button,
 form input[type="button"],
 form input[type="submit"] {
@@ -380,6 +389,7 @@ form input[type="submit"] {
     border: 1px solid var(--color-grey-border);
     background-color: var(--color-surface);
     width: fit-content;
+    margin: 1em 1em 1em 0;
     padding: 0.5em;
 }
 button:hover,

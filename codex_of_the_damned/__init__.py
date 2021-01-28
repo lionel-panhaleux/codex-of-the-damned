@@ -185,8 +185,11 @@ def index(lang_code=None, page=None):
     if not lang_code or lang_code not in app.config["SUPPORTED_LANGUAGES"].keys():
         if lang_code:
             page = lang_code + "/" + page
-        lang_code = flask.request.accept_languages.best_match(
-            app.config["SUPPORTED_LANGUAGES"].keys()
+        lang_code = (
+            flask.request.accept_languages.best_match(
+                app.config["SUPPORTED_LANGUAGES"].keys()
+            )
+            or "en"
         )
         page = "/" + lang_code + "/" + page
         redirect = True

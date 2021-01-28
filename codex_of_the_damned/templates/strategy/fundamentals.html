@@ -57,7 +57,7 @@ conditioning=card("Conditioning")
         {{ card("Murmur of the False Will") }},
     </li>
     <li>
-        <i>A</i> with
+        <i>A</i> {{ _('with') }}
         {{ card("Telepathic Misdirection") }} {{ _('and') }}
         {{ card("My Enemy's Enemy") }}
     </li>
@@ -68,13 +68,13 @@ conditioning=card("Conditioning")
 <p>{{ _('And only a few cards can counter these <em>bounces</em>:') }}</p>
 <ul>
     <li>
-        {{ card("Touch of Clarity") }} (<i>e</i>)
+        {{ card("Touch of Clarity") }} {{ dem }}
         {% trans %}can counter {{ dom }} bounces{% endtrans %},
     </li>
     <li>
-        {{ card("Hide the Mind") }} (<i>O</i>),
-        {{ card("I am Legion") }} (<i>oy</i>) {{ _('and') }}
-        {{ card("False Resonance") }} (<i>k</i>)
+        {{ card("Hide the Mind") }} {{ obf }},
+        {{ card("I am Legion") }} {{ obf }}{{ dai }} {{ _('and') }}
+        {{ card("False Resonance") }} {{ chi }}
         {% trans %}can counter {{ AUS }} bounces{% endtrans %},
     </li>
     <li>
@@ -82,9 +82,13 @@ conditioning=card("Conditioning")
         {{ _('can counter any bounce') }},
     </li>
     <li>
+        {{ card("Approximation of Loyalty") }} {{ PRE }}
+        {{ _('can counter bounces from young vampires') }},
+    </li>
+    <li>
         {{ card("Two Wrongs") }} {{ _('and') }}
         {{ card("Terra Incognita") }} ({{ _('Laibon') }})
-        {{ _('can counter bounces when being the target') }},
+        {{ _('can counter bounces from the predator') }},
     </li>
     <li>
         {{ card("Narrow Minds") }}
