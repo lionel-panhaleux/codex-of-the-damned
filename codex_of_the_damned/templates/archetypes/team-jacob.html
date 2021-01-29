@@ -7,7 +7,7 @@
 {% endblock %}
 
 {% block archetype_name %}
-<h1><img src="{{ url_for('static', filename='img/icons/clan-akunanse.svg') }}"> Team Jacob</h1>
+<h1><img src="https://static.krcg.org/clan/akunanse.svg"> Team Jacob</h1>
 {% endblock %}
 
 {% block archetype %}
@@ -23,13 +23,12 @@ charisma=card("Charisma"),
 predator_s_transformation=card("Predator's Transformation"),
 aid_from_bats=card("Aid from Bats"),
 the_unmasking=card("The Unmasking"),
-predator_s_communion=card("Predator's Communion"),
-img_clan_akunanse='<img src="%(url)s" />'|format(url=url_for('static', filename='img/icons/clan-akunanse.svg'))|safe
+predator_s_communion=card("Predator's Communion")
 %}
 <h2>Highlights</h2>
 <p>
     This is a stealth & bleed deck using {{ tunnel_runner }}.
-    An Akunanse {{ img_clan_akunanse }} is required to get the weremoles out, and
+    An Akunanse {{ akunanse }} is required to get the weremoles out, and
     {{ jacob_fermor }} is expected to come out and boost
     their bleed power. {{ computer_hacking }} is used to
     help them bleed harder, too.

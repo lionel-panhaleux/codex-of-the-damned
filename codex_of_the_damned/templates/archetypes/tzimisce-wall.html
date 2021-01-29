@@ -7,7 +7,7 @@
 {% endblock %}
 
 {% block archetype_name %}
-<h1><img src="{{ url_for('static', filename='img/icons/clan-tzimisce.svg') }}"> Tzimisce Wall</h1>
+<h1><img src="https://static.krcg.org/clan/tzimisce.svg"> Tzimisce Wall</h1>
 {% endblock %}
 
 {% block archetype %}
@@ -35,8 +35,7 @@ malgorzata=card("Malgorzata"),
 mistress_fanchon=card("Mistress Fanchon"),
 sha_ennu=card("Sha-Ennu"),
 nicola_lonardi_s_deck=link("/deck-search", _("Nicola Lonardi's deck"), id="2017igpbi"),
-goratrix_high_tower=link("/archetypes/goratrix-high-tower"),
-img_clan_tremere='<img src="%(url)s" />'|format(url=url_for('static', filename='img/icons/clan-tremere.svg'))|safe
+goratrix_high_tower=link("/archetypes/goratrix-high-tower")
 %}
 <h2>Highlights</h2>
 <p>
@@ -87,7 +86,7 @@ img_clan_tremere='<img src="%(url)s" />'|format(url=url_for('static', filename='
     {{ abbot }} and {{ revenant }} can be added to the intercept module,
     which often contains more {{ telepathic_misdirection }} to bounce bleeds.
 <p>
-    The <strong>Malgorzata</strong> variant is a Tremere {{ img_clan_tremere }}
+    The <strong>Malgorzata</strong> variant is a Tremere {{ tremere }}
     variation to this build, dropping {{ ani }} to use {{ malgorzata }} alongside
     {{ mistress_fanchon }} and {{ sha_ennu }}. {{ nicola_lonardi_s_deck }} from 2017
     is a good example.

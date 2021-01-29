@@ -2,7 +2,7 @@
 {% import "best-cards/_layout_card_column.html" as layout with context%}
 
 {% block content %}
-<h1><img src="{{ url_for('static', filename='img/icons/clan-harbingers.svg') }}">
+<h1>{{ harbinger_of_skulls }}
     {% trans trimmed %} Harbingers of Skulls {% endtrans%}
 </h1>
 <div class="insert tip">
@@ -24,12 +24,9 @@
 </div>
 
 {% call layout.card_column("Solomon Batanea", decks=27, copies="1-2") %}
-{% trans trimmed
-img_clan_ventre_anti='<img src="%(url)s" />'|format(url=url_for('static',
-filename='img/icons/clan-ventrue-anti.svg'))|safe
-%}
+{% trans trimmed %}
 A cheap cost for the {{ AUS }}{{ FOR }} combination –
-he even gets included in Ventrue antitribu {{ img_clan_ventre_anti }} decks.
+he even gets included in Ventrue antitribu {{ ventre_antitribu }} decks.
 {% endtrans %}
 {% endcall %}
 

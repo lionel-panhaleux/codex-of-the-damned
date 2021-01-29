@@ -20,6 +20,7 @@ class CardSearch {
         const card = ev.target.elements["card-name"].value
         this.state.reset({ card: card })
         await this.displayCard(this.state.state)
+        ev.target.elements["card-name"].value = ""
     }
     async selectSet(set_name, set_image) {
         if (!(await urlExists(set_image))) {
@@ -82,6 +83,7 @@ class CardSearch {
         }
         this.card_image.src = base_image
         this.card_image.addEventListener("click", (ev) => this.resetSet(base_image))
+        title = title.replace("(ADV)", "<i>|</i>")
         this.card_title.innerHTML = title
         let pelem = document.createElement("p")
         pelem.classList.add("card-id")
@@ -101,10 +103,10 @@ class CardSearch {
         }
         pelem.addEventListener("click", (ev) => this.toggleFold(ev))
         this.image_footer.appendChild(pelem)
-        this.addCardText(text)
+        this.addCardText(text, data.types)
         if (translation) {
             this.card_text.appendChild(document.createElement("hr"))
-            this.addCardText(translation, "translation")
+            this.addCardText(translation, data.types, "translation")
         }
         let sets = Object.entries(data.sets)
         sets.sort(compareSet)
@@ -224,14 +226,29 @@ class CardSearch {
             this.card_sets.style.display = "none"
         }
     }
-    addCardText(text, cla) {
+    addCardText(text, types, cla = undefined) {
         const sections = text.split("\n")
         for (let [index, section] of sections.entries()) {
             let pelem = document.createElement("p")
             if (cla) {
                 pelem.classList.add(cla)
             }
-            if (
+            if (types.includes("Vampire") || types.includes("Imbued")) {
+                section = formatText(section)
+                section = section.replace(/(?:\.\s\+)([^\.]*)/g, (_, x) => `. <strong>+${x.replace(" ", " ")}</strong>`)
+                section = section.replace(
+                    /(?:\.\s)(Scarce|Black Hand|Red List|Seraph|Infernal|Slave|Sterile)/g,
+                    (_, x) => `. <strong>${x.replace(" ", " ")}</strong>`
+                )
+                if (section.includes(":")) {
+                    let [sect, ability] = section.split(":")
+                    pelem.innerHTML = `<strong>${formatText(sect)}:</strong> ${formatText(ability)}`
+                } else if (types.includes("Vampire") && index === 0) {
+                    pelem.innerHTML = `<strong>${formatText(section)}</strong>`
+                } else {
+                    pelem.innerHTML = section
+                }
+            } else if (
                 sections.length > 1 &&
                 ((index == 0 && section[0] != "[") ||
                     (section[0] == "[" && section[1].toUpperCase() == section[1] && section[4] == "]"))
@@ -386,7 +403,7 @@ function formatText(text) {
     return text
         .replace(
             /(?:\s\/|\{)([^\/\}]*)(?:\/\s|\})/g,
-            (_, x) => `<span class="krcg-card" data-name='${x}'">${x.replace(" ", " ")}</span>`
+            (_, x) => ` <span class="krcg-card" data-name='${x}'">${x.replace(" ", " ")}</span> `
         )
         .replace(
             RegExp(

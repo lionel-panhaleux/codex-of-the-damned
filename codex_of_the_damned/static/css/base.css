@@ -19,17 +19,10 @@
     --color-deck-border: #76dc46;
     --color-author-border: #46b9dc;
     --color-blood: #c02121;
+    --brand-vdb: #d0d0e8;
     --article-width: min(50em, 100vw - 1em);
     --columns-width: min(75em, 100vw - 1em);
     --input-width: min(100%, 25em);
-}
-@font-face {
-    font-family: "Ankha VTES";
-    src: url("/static/fonts/ankha.ttf") format("truetype");
-}
-@font-face {
-    font-family: "Clans VTES";
-    src: url("/static/fonts/clans.otf") format("opentype");
 }
 @font-face {
     font-family: "FontAwesome";
@@ -51,14 +44,6 @@ body {
     background-color: var(--color-back);
     -webkit-font-smoothing: antialiased;
 }
-i {
-    font-family: "Ankha VTES";
-    font-style: normal;
-}
-span.clan {
-    font-family: "Clans VTES";
-    font-style: normal;
-}
 span.brand-icon {
     font-family: "FontAwesome Brand";
 }
@@ -73,6 +58,9 @@ span.krcg-card {
 }
 span.krcg-card:hover {
     color: var(--color-tip-border);
+}
+span.krcg-clan {
+    font-weight: normal;
 }
 a {
     color: #000000;
@@ -228,6 +216,7 @@ hr {
     border-top: 1px solid rgba(0, 0, 0, 0.1);
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
+article a img,
 article p img,
 article ul img,
 article li img,
@@ -359,8 +348,10 @@ div.game h3::before {
     color: var(--color-deck-front);
 }
 /* ***************************************************************************** form */
-input[type="text"] {
+input {
     font-size: 1em;
+}
+input[type="text"] {
     margin: 0.5em 1em 0 0;
     padding: 0.3em;
 }
@@ -383,19 +374,25 @@ input[type="checkbox"] {
     max-width: 100%;
 } */
 button,
+.hyperlink-button,
 form input[type="button"],
 form input[type="submit"] {
     border-radius: 0.3em;
     border: 1px solid var(--color-grey-border);
     background-color: var(--color-surface);
     width: fit-content;
+    text-decoration: none;
     margin: 1em 1em 1em 0;
     padding: 0.5em;
 }
 button:hover,
+.hyperlink-button:hover,
 input[type="button"]:hover,
 input[type="submit"]:hover {
     box-shadow: 0 2px 2px rgba(35, 73, 0, 0.2);
+}
+.vdb-color {
+    background-color: var(--brand-vdb);
 }
 .inline-form legend {
     margin: 1em 0 0 0;

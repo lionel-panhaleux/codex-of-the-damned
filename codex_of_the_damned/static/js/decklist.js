@@ -28,10 +28,25 @@ function addCard(section, card_info) {
 function displayDeck(data, deckname = undefined) {
     removeComments()
     document.getElementById("deck-link").textContent = wrapText(deckname || data.name || "(No Name)", 25)
+    let vdb_button = document.getElementById("vdb-button")
     if (data.id) {
-        document.getElementById("deck-link").href = `https://static.krcg.org/data/twd.htm#${data.id}`
+        document.getElementById("deck-link").setAttribute("href", `https://static.krcg.org/data/twd.htm#${data.id}`)
+        if (vdb_button) {
+            vdb_button.setAttribute("href", `https://vdb.smeea.casa/decks?id=${data.id}`)
+            vdb_button.style.display = "block"
+        }
     } else if (data.link) {
-        document.getElementById("deck-link").href = data.link
+        document.getElementById("deck-link").setAttribute("href", data.link)
+        if (vdb_button) {
+            vdb_button.removeAttribute("href")
+            vdb_button.style.display = "none"
+        }
+    } else {
+        document.getElementById("deck-link").removeAttribute("href")
+        if (vdb_button) {
+            vdb_button.removeAttribute("href")
+            vdb_button.style.display = "none"
+        }
     }
     header_lines = []
     if (data.player || data.author) {

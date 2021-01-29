@@ -7,7 +7,7 @@
 {% endblock %}
 
 {% block archetype_name %}
-<h1><img src="{{ url_for('static', filename='img/icons/clan-assamite.svg') }}">Death Star</h1>
+<h1><img src="https://static.krcg.org/clan/assamite.svg">Death Star</h1>
 {% endblock %}
 
 {% block archetype %}
@@ -28,8 +28,7 @@ the_embrace=card("The Embrace"),
 the_missing_voice=card("The Missing Voice"),
 web_of_knives_recruit=card("Web of Knives Recruit"),
 a_b=link("/strategy/fundamentals", _("A&B"), _anchor="AB"),
-karl_schaefers_deck=link("/deck-search", _("Karl Schaefer's deck"), id="2019won5co"),
-img_clan_daughters='<img src="%(url)s" />'|format(url=url_for('static', filename='img/icons/clan-daughters.svg'))|safe
+karl_schaefers_deck=link("/deck-search", _("Karl Schaefer's deck"), id="2019won5co")
 %}
 <h2>Highlights</h2>
 <p>
@@ -70,10 +69,10 @@ img_clan_daughters='<img src="%(url)s" />'|format(url=url_for('static', filename
 </p>
 <p>
     {{ karl_schaefers_deck }} from 2019 is a variant using
-    <em>Daughters of Cacophony</em> {{ img_clan_daughters }} instead of
+    <em>Daughters of Cacophony</em> {{ daughter_of_cacophony }} instead of
     <em>Assamite</em>. {{ alamut }}, {{ obf }} stealth modifiers and
     {{ web_of_knives_recruit }} are lost, but the
-    <em>Daughters</em>  {{ img_clan_daughters }} have access to {{ pre }} vote modifiers
+    <em>Daughters</em>  {{ daughter_of_cacophony }} have access to {{ pre }} vote modifiers
     and combat ends, {{ conductor }}, {{ the_missing_voice }}, {{ lily_prelude }} and
     {{ madrigal }}, making up for it.
 </p>

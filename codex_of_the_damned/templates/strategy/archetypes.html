@@ -63,36 +63,28 @@
 <ul>
     <li>
         {% trans trimmed
-        img_clan_lasombra='<img src="%(url)s" />'|format(url=url_for('static',
-        filename='img/icons/clan-lasombra.svg'))|safe,
-        img_clan_kiasyd='<img src="%(url)s" />'|format(url=url_for('static',
-        filename='img/icons/clan-kiasyd.svg'))|safe,
         kiasyd_stealth_bleed=link("/archetypes/kiasyd-stealth-bleed"),
         lasombra_nocturn=link("/archetypes/lasombra-nocturn")
         %}
-        Lasombra {{ img_clan_lasombra }} and Kiasyd {{ img_clan_kiasyd }}
+        Lasombra {{ lasombra }} and Kiasyd {{ kiasyd }}
         have a strong combination with {{ dom }} for bleed and {{ obt }} for stealth.
         Check the {{ kiasyd_stealth_bleed }} and {{ lasombra_nocturn }} archetypes.
         {% endtrans %}
     </li>
     <li>
         {% trans trimmed
-        img_clan_malkavian='<img src="%(url)s" />'|format(url=url_for('static',
-        filename='img/icons/clan-malkavian.svg'))|safe,
         weenie_dem=link("/archetypes/weenie-dem")
         %}
-        The Malkavian {{ img_clan_malkavian }} can use {{ dem }},
+        The Malkavian {{ malkavian }} can use {{ dem }},
         alone or alongside {{ obf }}, for devastating bleeds,
         like in the {{ weenie_dem }} archetype.
         {% endtrans %}
     </li>
     <li>
         {% trans trimmed
-        img_clan_assamite='<img src="%(url)s" />'|format(url=url_for('static',
-        filename='img/icons/clan-assamite.svg'))|safe,
         black_hand=link("/archetypes/black-hand")
         %}
-        Assamite {{ img_clan_assamite }} also have a nice combination with {{ qui }} and {{ obf }},
+        Assamite {{ assamite }} also have a nice combination with {{ qui }} and {{ obf }},
         as in the {{ black_hand }} archetype.
         {% endtrans %}
     </li>
@@ -115,14 +107,10 @@
     </li>
     <li>
         {% trans trimmed
-        img_clan_toreador='<img src="%(url)s" />'|format(url=url_for('static',
-        filename='img/icons/clan-toreador.svg'))|safe,
-        img_clan_ventrue='<img src="%(url)s" />'|format(url=url_for('static',
-        filename='img/icons/clan-ventrue.svg'))|safe,
         the_bleeding_vignes=link("/archetypes/the-bleeding-vignes"),
         jost_powerbleed=link("/archetypes/jost-powerbleed")
         %}
-        Toreador {{ img_clan_toreador }} with {{ PRE }} and Ventrue {{ img_clan_ventrue }}
+        Toreador {{ toreador }} with {{ PRE }} and Ventrue {{ ventrue }}
         with {{ DOM }}{{ PRE }} can produce strong powerbleed decks like
         {{ the_bleeding_vignes }} or {{ jost_powerbleed }}.
         {% endtrans %}
@@ -207,45 +195,36 @@
     </li>
     <li>
         {% trans trimmed
-        img_clan_ishtarri='<img src="%(url)s" />'|format(url=url_for('static',
-        filename='img/icons/clan-ishtarri.svg'))|safe,
-        img_clan_daughters='<img src="%(url)s" />'|format(url=url_for('static',
-        filename='img/icons/clan-daughters.svg'))|safe,
         ishtarri_politics=link("/archetypes/ishtarri-politics"),
         scout=link("/archetypes/scout"),
         daughters_politics=link("/archetypes/daughters-politics")
         %}
         Non Camarilla vampires can also build good titled crypts,
-        especially Ishtarri {{ img_clan_ishtarri }} with {{ ishtarri_politics }}
-        and Daughters of Cacophony {{ img_clan_daughters }} with {{ scout }} and {{ daughters_politics }}.
+        especially Ishtarri {{ ishtarri }} with {{ ishtarri_politics }}
+        and Daughters of Cacophony {{ daughter_of_cacophony }} with {{ scout }} and {{ daughters_politics }}.
         {% endtrans %}
     </li>
     <li>
         {% trans trimmed
-        img_clan_baali='<img src="%(url)s" />'|format(url=url_for('static', filename='img/icons/clan-baali.svg'))|safe,
         the_dark_side_of_politics=link("/archetypes/the-dark-side-of-politics")
         %}
-        Baali {{ img_clan_baali }} offer a nice political angle with {{ the_dark_side_of_politics }}.
+        Baali {{ baali }} offer a nice political angle with {{ the_dark_side_of_politics }}.
         {% endtrans %}
     </li>
     <li>
         {% trans trimmed
-        img_clan_assamite='<img src="%(url)s" />'|format(url=url_for('static',
-        filename='img/icons/clan-assamite.svg'))|safe,
         amaravati_politics=link("/archetypes/amaravati-politics"),
         death_star=link("/archetypes/death-star")
         %}
-        Assamite {{ img_clan_assamite }} also have good options,
+        Assamite {{ assamite }} also have good options,
         like in the {{ amaravati_politics }} or the {{ death_star }} archetypes.
         {% endtrans %}
     </li>
     <li>
         {% trans trimmed
-        img_clan_ravnos='<img src="%(url)s" />'|format(url=url_for('static',
-        filename='img/icons/clan-ravnos.svg'))|safe,
         ravnos_clown_car=link("/archetypes/ravnos-clown-car")
         %}
-        Ravnos {{ img_clan_ravnos }} have a unique breed archetype: the {{ ravnos_clown_car }}.
+        Ravnos {{ ravnos }} have a unique breed archetype: the {{ ravnos_clown_car }}.
         {% endtrans %}
     </li>
 </ul>
@@ -320,22 +299,18 @@
     </li>
     <li>
         {% trans trimmed
-        img_clan_tremere='<img src="%(url)s" />'|format(url=url_for('static',
-        filename='img/icons/clan-tremere.svg'))|safe,
         goratrix=card("Goratrix"),
         goratrix_high_tower=link("/archetypes/goratrix-high-tower")
         %}
-        Tremere {{ img_clan_tremere }} in general, but {{ goratrix }} in particular
+        Tremere {{ tremere }} in general, but {{ goratrix }} in particular
         offer excellent wall capabilities in the {{ goratrix_high_tower }} archetype.
         {% endtrans %}
     </li>
     <li>
         {% trans trimmed
-        img_clan_ahrimanes='<img src="%(url)s" />'|format(url=url_for('static',
-        filename='img/icons/clan-ahrimanes.svg'))|safe,
         cats=link("/archetypes/cats")
         %}
-        The {{ cats }} archetype uses Ahrimanes {{ img_clan_ahrimanes }} and their
+        The {{ cats }} archetype uses Ahrimanes {{ ahrimane }} and their
         {{SPI}}{{ANI}} disciplines combination.
         {% endtrans %}
     </li>
@@ -427,21 +402,17 @@
     </li>
     <li>
         {% trans trimmed
-        img_clan_ventrue_anti='<img src="%(url)s" />'|format(url=url_for('static',
-        filename='img/icons/clan-ventrue-anti.svg'))|safe,
         anti_ventrue_grinder=link("/archetypes/anti-ventrue-grinder")
         %}
-        Ventrue Antitribu {{ img_clan_ventrue_anti }} provide excellent toolboxes with the
+        Ventrue Antitribu {{ ventrue_antitribu }} provide excellent toolboxes with the
         {{ anti_ventrue_grinder }} archetype and its variants.
         {% endtrans %}
     </li>
     <li>
         {% trans trimmed
-        img_clan_tremere='<img src="%(url)s" />'|format(url=url_for('static',
-        filename='img/icons/clan-tremere.svg'))|safe,
         war_chantry=link("/archetypes/war-chantry")
         %}
-        Tremere {{ img_clan_tremere }} have a good disciplines combination for a toolbox too,
+        Tremere {{ tremere }} have a good disciplines combination for a toolbox too,
         as proves the {{ war_chantry }} archetype.
         {% endtrans %}
     </li>
@@ -515,12 +486,10 @@
     </li>
     <li>
         {% trans trimmed
-        img_clan_guruhi='<img src="%(url)s" />'|format(url=url_for('static',
-        filename='img/icons/clan-guruhi.svg'))|safe,
         guruhi_rush=link("/archetypes/guruhi-rush"),
         nananimalism=link("/archetypes/nananimalism")
         %}
-        Guruhi {{ img_clan_guruhi }} provide a strong rush build too
+        Guruhi {{ guruhi }} provide a strong rush build too
         with their {{POT}}{{ANI}} disciplines combination, like in the
         {{ guruhi_rush }} and {{ nananimalism }} archetypes.
         {% endtrans %}

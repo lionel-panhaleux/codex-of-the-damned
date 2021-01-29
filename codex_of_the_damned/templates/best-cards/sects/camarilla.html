@@ -73,23 +73,20 @@ on the Methusalah who played it.
 
 {% call layout.card_column("Praxis Seizure: Rome", decks=26, copies="1") %}
 {% trans trimmed
-img_clan_brujah='<img src="%(url)s" />'|format(url=url_for('static', filename='img/icons/clan-brujah.svg'))|safe,
 new_carthage=card("New Carthage"),
 carthage_remembered=card("Carthage Remembered")
 %}
-Some Praxis give a capacity bonus to a specific clan. The Brujah {{ img_clan_brujah }}
+Some Praxis give a capacity bonus to a specific clan. The Brujah {{ brujah }}
 one is slightly more played because they have powerful cards for their
 <em>Princes</em> like {{ new_carthage }} and {{ carthage_remembered }}.
 {% endtrans %}
 {% endcall %}
 
 {% call layout.card_column("Anathema", decks=22, copies="1-4") %}
-{% trans trimmed
-img_clan_brujah='<img src="%(url)s" />'|format(url=url_for('static', filename='img/icons/clan-brujah.svg'))|safe
-%}
+{% trans trimmed %}
 A powerful bloat device, although a bit tricky to land: one needs both the stealth
 and votes to get it through, and a combat module strong enough to trigger it.
-A vote most often seen played by the Brujah {{ img_clan_brujah }}.
+A vote most often seen played by the Brujah {{ brujah }}.
 {% endtrans %}
 {% endcall %}
 {% endblock %}

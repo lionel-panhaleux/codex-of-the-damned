@@ -7,11 +7,13 @@ Changelog
 - Improve display on all devices
 - Card search: card text is now bold when it should be
 - Deck Search: improved the URL, sharing or reloading now displays the exact same page
+- Deck Search: Add a filter for 25+ competitors
+- Deck Search: Add a button to open the decklist in VDB
 - Best cards: now uses two columns on mid-size devices like landscape-oriented phones
 - Better display of card names: color on hover, remover underline.
 - Card search: Copying a ruling now copies the RD post URL
 - Card search: Display card set images on click when available
-- Deck Search: Add a filter for 25+ competitors
+- Home: Update Discord invites
 
 1.18 (2020-12-31)
 -----------------

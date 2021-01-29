@@ -8,7 +8,7 @@
 {% endblock %}
 
 {% block archetype_name %}
-<h1><img src="{{ url_for('static', filename='img/icons/clan-osebo.svg') }}"> 419 Operation</h1>
+<h1><img src="https://static.krcg.org/clan/osebo.svg"> 419 Operation</h1>
 {{ layout.wip() }}
 {% endblock %}
 
@@ -16,8 +16,7 @@
 {% trans trimmed
 operation=card("419 Operation"),
 hidetheheart=card("Hide the Heart"),
-kovalcik_deck=link("/deck-search", _("Matus Kovalcik's deck"), id="2014sncqks"),
-img_clan_osebo='<img src="%(url)s" />'|format(url=url_for('static', filename='img/icons/clan-osebo.svg'))|safe
+kovalcik_deck=link("/deck-search", _("Matus Kovalcik's deck"), id="2014sncqks")
 %}
 <h2>Highlights</h2>
 <p>
@@ -33,7 +32,7 @@ img_clan_osebo='<img src="%(url)s" />'|format(url=url_for('static', filename='im
 
 <h2>Tips & Tricks</h2>
 <p>
-	An Osebo {{ img_clan_osebo }} vampire should get out first to start putting some
+	An Osebo {{ osebo }} vampire should get out first to start putting some
 	{{ operation }} into play and then a vampire with {{ VAL }} is in order to start
 	disrupting the prey's bleeds.
 </p>

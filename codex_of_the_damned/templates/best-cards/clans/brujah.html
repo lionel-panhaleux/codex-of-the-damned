@@ -2,7 +2,7 @@
 {% import "best-cards/_layout_card_column.html" as layout with context%}
 
 {% block content %}
-<h1><img src="{{ url_for('static', filename='img/icons/clan-brujah.svg') }}"> Brujah</h1>
+<h1>{{ brujah }} Brujah</h1>
 <div class="insert tip">
     <p>
         {% trans trimmed
@@ -35,13 +35,12 @@ She is definitely the star of the clan.
 
 {% call layout.card_column("Volker, The Puppet Prince", decks=65, copies="1-2") %}
 {% trans trimmed
-aaa=link("/archetypes/aaa"),
-img_clan_toreador='<img src="%(url)s" />'|format(url=url_for('static', filename='img/icons/clan-toreador.svg'))|safe
+aaa=link("/archetypes/aaa")
 %}
 Volker is one of the cheapest Prince around, and he finds its place in many
 Camarilla Royalty decks.
 Its superior {{CEL}} also makes him a good asset in other {{CEL}} decks —
-he founds an easy place in Toreador {{ img_clan_toreador }} {{ aaa }} archetype for
+he founds an easy place in Toreador {{ toreador }} {{ aaa }} archetype for
 example.
 {% endtrans %}
 {% endcall %}

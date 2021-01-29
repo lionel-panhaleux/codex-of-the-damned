@@ -41,11 +41,10 @@ constitues a formidable defense.
 
 {% call layout.card_column("Aire of Elation", decks=152, copies="1-5") %}
 {% trans trimmed
-conditioning=card("Conditioning"),
-img_clan_toreador='<img src="%(url)s" />'|format(url=url_for('static', filename='img/icons/clan-toreador.svg'))|safe
+conditioning=card("Conditioning")
 %}
 The best bleed modifier of {{ pre }}, it is inferior to {{ dom }} {{ conditioning }},
-except for Toreador {{ img_clan_toreador }}. Still, such a strong bleed modifier is
+except for Toreador {{ toreador }}. Still, such a strong bleed modifier is
 worth it for decks with no access to {{ dom }}.
 {% endtrans %}
 {% endcall %}

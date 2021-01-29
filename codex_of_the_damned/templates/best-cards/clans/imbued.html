@@ -2,7 +2,7 @@
 {% import "best-cards/_layout_card_column.html" as layout with context%}
 
 {% block content %}
-<h1><img src="{{ url_for('static', filename='img/icons/creed-visionary.svg') }}">
+<h1>
     {% trans trimmed %} Imbued {% endtrans%}
 </h1>
 <div class="insert tip">
@@ -19,7 +19,7 @@
     <p>
         {% trans trimmed %}
         They have a unique access to Powers (an easy inclusion as they are fetched at +1 stealth with unlock)
-        and Convictions cards (all three played in imbued decks as they stack and have no downside).
+        and Convictions {{ CONVICTION }} cards (all three played in imbued decks as they stack and have no downside).
         {% endtrans%}
     </p>
 </div>
@@ -27,23 +27,23 @@
 {% call layout.card_column("Second Sight", decks=63, copies="3-8") %}
 {% trans trimmed beatrice=card('Béatrice "Oracle171" Tremblay', "Béatrice") %}
 The most played <em>Conviction</em>.
-Usually all three <em>Conviction</em> cards are played in imbued decks,
+Usually all three <em>Conviction</em> {{ CONVICTION }} cards are played in imbued decks,
 but {{ beatrice }} is often added to vampire crypts for additional bleed,
-and all she really needs is this <em>Conviction</em> for a bit of stealth.
+and all she really needs is this <em>Conviction</em> {{ CONVICTION }} for a bit of stealth.
 {% endtrans %}
 {% endcall %}
 
 {% call layout.card_column("React with Conviction", decks=61, copies="3-6") %}
 {% trans trimmed entrancement=card("Entrancement") %}
-This is usually the first <em>Conviction</em> any Imbued fetches when he comes into play,
+This is usually the first <em>Conviction</em> {{ CONVICTION }} any Imbued fetches when he comes into play,
 as it protects them against anti-ally actions like {{ entrancement }}.
 {% endtrans %}
 {% endcall %}
 
 {% call layout.card_column("Strike with Conviction", decks=61, copies="3-8") %}
 {% trans trimmed %}
-An excellent <em>Conviction</em> that boosts combat or bleed depending on the need.
-As it is a <em>Conviction</em>, it can be used every turn and come back into play
+An excellent <em>Conviction</em> {{ CONVICTION }} that boosts combat or bleed depending on the need.
+As it is a <em>Conviction</em> {{ CONVICTION }}, it can be used every turn and come back into play
 during the unlock phase.
 {% endtrans %}
 {% endcall %}
@@ -60,7 +60,7 @@ Helped by a {{ second_sight }} for stealth, she becomes an interesting minion.
 {% trans trimmed %}
 Her ability is the cornerstone of most Imbued decks.
 Not only can the Imbued come back from Incapacity (their version of torpor) with only
-two <em>Convictions</em> instead of three, they can also do so during any turn.
+two <em>Convictions</em> {{ CONVICTION_2 }} instead of three, they can also do so during any turn.
 As Imbued are fragile, this additional protection is welcome.
 {% endtrans %}
 {% endcall %}
@@ -97,14 +97,13 @@ so he gets included in many Imbued decks.
 {% call layout.card_column('François "Warden" Loehr', decks=44, copies="1-2") %}
 {% trans trimmed %}
 Good virtues for a decent price, his ability is also quite nice
-as it deters rush actions against
-him.
+as it deters rush actions against him.
 {% endtrans %}
 {% endcall %}
 
 {% call layout.card_column("Vigilance", decks=44, copies="3-5") %}
 {% trans trimmed a_b=link("/strategy/fundamentals", _("A&B"), _anchor="AB") %}
-Jewel of the <em>Justice</em> virtue,
+Jewel of the Justice {{ jus }} virtue,
 the combination of <em>drive</em> and <em>wake</em> effects
 makes for a very nice bonus in {{ a_b }}.
 {% endtrans %}
@@ -121,15 +120,15 @@ Excellent virtues with a good combat ability, he gets included in most Imbued de
 vigilance=card("Vigilance"),
 the_unmasking=card("The Unmasking")
 %}
-Second excellent <em>Justice</em> power after {{ vigilance }},
-it explains why the <em>Justice</em> virtue is the most played among Imbued.
+Second excellent Justice {{ jus }} power after {{ vigilance }},
+it explains why the Justice {{ jus }} virtue is the most played among Imbued.
 Combined with {{ the_unmasking }}, it transforms the Imbued in excellent blockers.
 {% endtrans %}
 {% endcall %}
 
 {% call layout.card_column("Rejuvenate", decks=40, copies="2-4") %}
 {% trans trimmed %}
-This regeneration ability makes any Imbued with the <em>Defense</em> virtue quite sturdy.
+This regeneration ability makes any Imbued with the Defense {{ def }} virtue quite sturdy.
 As Imbued can not hunt, this is one of the few ways they can get some life back.
 {% endtrans %}
 {% endcall %}
@@ -137,15 +136,15 @@ As Imbued can not hunt, this is one of the few ways they can get some life back.
 {% call layout.card_column("Determine", decks=34, copies="2-5") %}
 {% trans trimmed jennie=card('Jennie "Cassie247" Orne', "Jennie") %}
 The only bounce Imbued can use against bleeds, it is easy to include as
-{{ jennie }} has the <em>Visionary</em> virtue.
+{{ jennie }} has the Vision {{ vin }} virtue.
 It can also be used to cancel an action on the prey side, so it is very versatile.
 {% endtrans %}
 {% endcall %}
 
 {% call layout.card_column("Champion", decks=31, copies="1-2") %}
 {% trans trimmed %}
-Another good <em>Defense</em> power, as it can be used to "block" bleeds
-without even needing intercept. The <em>Conviction</em> cost is a bit high,
+Another good Defense {{ def }} power, as it can be used to "block" bleeds
+without even needing intercept. The <em>Conviction</em> {{ CONVICTION }} cost is a bit high,
 but the threat of it alone can slow down an aggressive predator.
 {% endtrans %}
 {% endcall %}

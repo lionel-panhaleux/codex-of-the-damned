@@ -40,85 +40,72 @@
         <li>{{ link("/best-cards/sects/sabbat") }}</li>
     </ul>
     <h2 id="clans">{{ _('Clans') }}</h2>
-    {% trans trimmed
-    img_clan_abominations='<img src="%(url)s" />'|format(url=url_for('static',
-    filename='img/icons/clan-abominations.svg'))|safe,
-    img_clan_blood_brothers='<img src="%(url)s" />'|format(url=url_for('static',
-    filename='img/icons/clan-blood-brothers.svg'))|safe,
-    img_clan_panders='<img src="%(url)s" />'|format(url=url_for('static', filename='img/icons/clan-pander.svg'))|safe,
-    img_clan_osebo='<img src="%(url)s" />'|format(url=url_for('static', filename='img/icons/clan-osebo.svg'))|safe,
-    img_clan_nagaraja='<img src="%(url)s" />'|format(url=url_for('static',
-    filename='img/icons/clan-nagaraja.svg'))|safe,
-    img_clan_samedi='<img src="%(url)s" />'|format(url=url_for('static', filename='img/icons/clan-samedi.svg'))|safe,
-    img_clan_gargoyles='<img src="%(url)s" />'|format(url=url_for('static',
-    filename='img/icons/clan-gargoyles.svg'))|safe,
-    img_clan_tremere='<img src="%(url)s" />'|format(url=url_for('static', filename='img/icons/clan-tremere.svg'))|safe
-    %}
+    {% trans trimmed %}
     <p>
-        Abominations {{ img_clan_abominations }},
-        Blood Brothers {{ img_clan_blood_brothers }}, Panders {{ img_clan_panders }},
-        Osebo {{ img_clan_osebo }}, Nagaraja {{ img_clan_nagaraja }}
-        and Samedi {{ img_clan_samedi }} are too rarely played to be included in this
+        Abominations {{ abomination }},
+        Blood Brothers {{ blood_brother }}, Panders {{ pander }},
+        Osebo {{ osebo }}, Nagaraja {{ nagaraja }}
+        and Samedi {{ samedi }} are too rarely played to be included in this
         analysis: they lack the numbers for a statistical review to be relevant.
     </p>
     <p>
-        Gargoyles {{ img_clan_gargoyles }} are included in the
-        Tremere {{ img_clan_tremere }} clan analysis,
+        Gargoyles {{ gargoyle }} are included in the
+        Tremere {{ tremere }} clan analysis,
         all Imbued are included in the same analysis regardless of their creed.
     </p>
     {% endtrans %}
     <table class="column-2">
         <tbody>
             <tr>
-                <td><img src="{{ url_for('static', filename='img/icons/clan-ahrimanes.svg') }}">
+                <td><img src="https://static.krcg.org/clan/ahrimanes.svg">
                 <td>{{ link("/best-cards/clans/ahrimanes") }}</td>
             </tr>
             <tr>
-                <td><img src="{{ url_for('static', filename='img/icons/clan-akunanse.svg') }}">
+                <td><img src="https://static.krcg.org/clan/akunanse.svg">
                 <td>{{ link("/best-cards/clans/akunanse") }}</td>
             </tr>
             <tr>
-                <td><img src="{{ url_for('static', filename='img/icons/clan-assamite.svg') }}">
+                <td><img src="https://static.krcg.org/clan/assamite.svg">
                 <td>{{ link("/best-cards/clans/assamite") }}</td>
             </tr>
             <tr>
-                <td><img src="{{ url_for('static', filename='img/icons/clan-baali.svg') }}">
+                <td><img src="https://static.krcg.org/clan/baali.svg">
                 <td>{{ link("/best-cards/clans/baali") }}</td>
             </tr>
             <tr>
-                <td><img src="{{ url_for('static', filename='img/icons/clan-brujah.svg') }}">
+                <td><img src="https://static.krcg.org/clan/brujah.svg">
                 <td>{{ link("/best-cards/clans/brujah") }}</td>
             </tr>
             <tr>
-                <td><img src="{{ url_for('static', filename='img/icons/clan-caitiff.svg') }}">
+                <td><img src="https://static.krcg.org/clan/caitiff.svg">
                 <td>{{ link("/best-cards/clans/caitiff") }}</td>
             </tr>
             <tr>
-                <td><img src="{{ url_for('static', filename='img/icons/clan-daughters.svg') }}">
+                <td><img src="https://static.krcg.org/clan/daughtersofcacophony.svg">
                 <td>{{ link("/best-cards/clans/daughters-of-cacophony") }}</td>
             </tr>
             <tr>
-                <td><img src="{{ url_for('static', filename='img/icons/clan-followers-of-set.svg') }}">
+                <td><img src="https://static.krcg.org/clan/followersofset.svg">
                 <td>{{ link("/best-cards/clans/followers-of-set") }}</td>
             </tr>
             <tr>
-                <td><img src="{{ url_for('static', filename='img/icons/clan-gangrel.svg') }}">
+                <td><img src="https://static.krcg.org/clan/gangrel.svg">
                 <td>{{ link("/best-cards/clans/gangrel") }}</td>
             </tr>
             <tr>
-                <td><img src="{{ url_for('static', filename='img/icons/clan-giovanni.svg') }}">
+                <td><img src="https://static.krcg.org/clan/giovanni.svg">
                 <td>{{ link("/best-cards/clans/giovanni") }}</td>
             </tr>
             <tr>
-                <td><img src="{{ url_for('static', filename='img/icons/clan-guruhi.svg') }}">
+                <td><img src="https://static.krcg.org/clan/guruhi.svg">
                 <td>{{ link("/best-cards/clans/guruhi") }}</td>
             </tr>
             <tr>
-                <td><img src="{{ url_for('static', filename='img/icons/clan-harbingers.svg') }}">
+                <td><img src="https://static.krcg.org/clan/harbingersofskulls.svg">
                 <td>{{ link("/best-cards/clans/harbingers-of-skulls") }}</td>
             </tr>
             <tr>
-                <td><img src="{{ url_for('static', filename='img/icons/creed-visionary.svg') }}">
+                <td><img src="https://static.krcg.org/clan/visionary.svg">
                 <td>{{ link("/best-cards/clans/imbued") }}</td>
             </tr>
         </tbody>
@@ -126,51 +113,51 @@
     <table class="column-2">
         <tbody>
             <tr>
-                <td><img src="{{ url_for('static', filename='img/icons/clan-ishtarri.svg') }}">
+                <td><img src="https://static.krcg.org/clan/ishtarri.svg">
                 <td>{{ link("/best-cards/clans/ishtarri") }}</td>
             </tr>
             <tr>
-                <td><img src="{{ url_for('static', filename='img/icons/clan-kiasyd.svg') }}">
+                <td><img src="https://static.krcg.org/clan/kiasyd.svg">
                 <td>{{ link("/best-cards/clans/kiasyd") }}</td>
             </tr>
             <tr>
-                <td><img src="{{ url_for('static', filename='img/icons/clan-lasombra.svg') }}">
+                <td><img src="https://static.krcg.org/clan/lasombra.svg">
                 <td>{{ link("/best-cards/clans/lasombra") }}</td>
             </tr>
             <tr>
-                <td><img src="{{ url_for('static', filename='img/icons/clan-malkavian.svg') }}">
+                <td><img src="https://static.krcg.org/clan/malkavian.svg">
                 <td>{{ link("/best-cards/clans/malkavian") }}</td>
             </tr>
             <tr>
-                <td><img src="{{ url_for('static', filename='img/icons/clan-nosferatu.svg') }}">
+                <td><img src="https://static.krcg.org/clan/nosferatu.svg">
                 <td>{{ link("/best-cards/clans/nosferatu") }}</td>
             </tr>
             <tr>
-                <td><img src="{{ url_for('static', filename='img/icons/clan-ravnos.svg') }}">
+                <td><img src="https://static.krcg.org/clan/ravnos.svg">
                 <td>{{ link("/best-cards/clans/ravnos") }}</td>
             </tr>
             <tr>
-                <td><img src="{{ url_for('static', filename='img/icons/clan-salubri.svg') }}">
+                <td><img src="https://static.krcg.org/clan/salubri.svg">
                 <td>{{ link("/best-cards/clans/salubri") }}</td>
             </tr>
             <tr>
-                <td><img src="{{ url_for('static', filename='img/icons/clan-toreador.svg') }}">
+                <td><img src="https://static.krcg.org/clan/toreador.svg">
                 <td>{{ link("/best-cards/clans/toreador") }}</td>
             </tr>
             <tr>
-                <td><img src="{{ url_for('static', filename='img/icons/clan-tremere.svg') }}">
+                <td><img src="https://static.krcg.org/clan/tremere.svg">
                 <td>{{ link("/best-cards/clans/tremere") }}</td>
             </tr>
             <tr>
-                <td><img src="{{ url_for('static', filename='img/icons/clan-true-brujah.svg') }}">
+                <td><img src="https://static.krcg.org/clan/truebrujah.svg">
                 <td>{{ link("/best-cards/clans/true-brujah") }}</td>
             </tr>
             <tr>
-                <td><img src="{{ url_for('static', filename='img/icons/clan-tzimisce.svg') }}">
+                <td><img src="https://static.krcg.org/clan/tzimisce.svg">
                 <td>{{ link("/best-cards/clans/tzimisce") }}</td>
             </tr>
             <tr>
-                <td><img src="{{ url_for('static', filename='img/icons/clan-ventrue.svg') }}">
+                <td><img src="https://static.krcg.org/clan/ventrue.svg">
                 <td>{{ link("/best-cards/clans/ventrue") }}</td>
             </tr>
         </tbody>

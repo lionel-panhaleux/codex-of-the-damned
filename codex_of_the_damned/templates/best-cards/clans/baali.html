@@ -2,7 +2,7 @@
 {% import "best-cards/_layout_card_column.html" as layout with context%}
 
 {% block content %}
-<h1><img src="{{ url_for('static', filename='img/icons/clan-baali.svg') }}"> Baali</h1>
+<h1>{{ baali }} Baali</h1>
 <div class="insert tip">
     {% trans trimmed
     the_dark_side_of_politics=link("/archetypes/the-dark-side-of-politics"),
@@ -175,10 +175,9 @@ his bleed power is huge and can make for a very nice lunge.
 {% call layout.card_column("Flames of the Netherworld", decks=16, copies="1-4") %}
 {% trans trimmed
 walk_of_flame=card("Walk of Flame"),
-burst_of_sunlight=card("Burst of Sunlight"),
-img_clan_tremere='<img src="%(url)s" />'|format(url=url_for('static', filename='img/icons/clan-tremere.svg'))|safe
+burst_of_sunlight=card("Burst of Sunlight")
 %}
-A very good combat strike. More often seen in fact in Tremere {{ img_clan_tremere }}
+A very good combat strike. More often seen in fact in Tremere {{ tremere }}
 decks using {{ tha }}, as it is a good alternative to other aggravated damage source
 {{ tha }} provides like {{ walk_of_flame }} or {{ burst_of_sunlight }}.
 {% endtrans %}

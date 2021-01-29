@@ -101,11 +101,9 @@ _("Blood, Pool and Grinding Beads")
     <li>{{ for }} {{ _('with') }} {{ card("Dawn Operation") }}.</li>
     <li>
         {% trans trimmed
-        img_clan_gargoyle='<img src="%(url)s">'|format(url=url_for('static',
-        filename='img/icons/clan-gargoyle.svg'))|safe,
         raking_talons=card("Raking Talons")
         %}
-        Gargoyles ({{img_clan_gargoyle}}) with {{ raking_talons }}.
+        Gargoyles {{ gargoyle }} with {{ raking_talons }}.
         {% endtrans %}
     </li>
 </ul>
@@ -206,19 +204,17 @@ target_vitals=card("Target Vitals")
             {{ assault_rifle }}:
             A stronger version of the {{ magnum }}.
             The 5 pool cost is prohibitive, but if it can be reduced
-            by bringing it game using {{ alastor }},
-            for example, it is one of the strongest weapon of the game.
+            by bringing it in game using {{ alastor }},
+            for example.
             {% endtrans %}
         </li>
         <li>
             {% trans trimmed
-            blade_of_bellona=card("Blade of Bellona"),
-            img_clan_salubri_anti='<img src="%(url)s">'|format(url=url_for('static',
-            filename='img/icons/clan-salubri-anti.svg'))|safe
+            blade_of_bellona=card("Blade of Bellona")
             %}
             {{ blade_of_bellona }}:
-            An additional damage and optional manoeuver at no cost, a real bargain for
-            {{ img_clan_salubri_anti }}.
+            An additional damage and optional manoeuver at no cost, a bargain for
+            Salubri antitribu {{ salubri_antitribu }}.
             {% endtrans %}
         </li>
     </ul>
@@ -343,7 +339,7 @@ target_vitals=card("Target Vitals")
     <li>{{ card("Horrid Form") }} ({{ VIC }})</li>
     <li>
         {{ card("Leathery Hide") }}
-        (<img src="{{ url_for('static', filename='img/icons/clan-gangrel-anti.svg') }}">)
+        {{ gangrel_antitribu }}
     </li>
 </ul>
 </p>
@@ -391,15 +387,15 @@ entombment=card("Entombment")
     <li>{{ card("Brick by Brick") }} ({{ VIS }})</li>
     <li>
         {{ card("Giulia Giovanni Abruzzina") }}
-        (<img src="{{ url_for('static', filename='img/icons/clan-giovanni.svg') }}">)
+        {{ giovanni }}
     </li>
     <li>
         {{ card("Omael Kuman") }}
-        (<img src="{{ url_for('static', filename='img/icons/clan-assamite.svg') }}">)
+        {{ assamite }}
     </li>
     <li>
         {{ card("Storm Sewers") }}
-        (<img src="{{ url_for('static', filename='img/icons/clan-nosferatu.svg') }}">)
+        {{ nosferatu }}
     </li>
 </ul>
 {% endblock %}

@@ -188,12 +188,10 @@ pct="%"
             {% endtrans %}
         <li>
             {% trans trimmed
-            img_clan_giovanni='<img src="%(url)s">'|format(url=url_for('static',
-            filename='img/icons/clan-giovanni.svg'))|safe,
             sudario_refraction=card("Sudario Refraction"),
             spiritual_guidance=card("Spiritual Guidance")
             %}
-            Giovanni {{ img_clan_giovanni }} have the excellent
+            Giovanni {{ giovanni }} have the excellent
             {{ sudario_refraction }} and the lesser {{ spiritual_guidance }}
             {% endtrans %}
         </li>
@@ -207,7 +205,7 @@ pct="%"
             ({{ _('Unique, Anarch') }})
         </li>
         <li>
-            {{ card("Maabara") }} </img src="{{ url_for('static', filename='/img/icons/clan-harbingers.svg') }}">
+            {{ card("Maabara") }} {{ harbinger_of_skulls }}
         </li>
         <li>
             {{ card("Unity") }}

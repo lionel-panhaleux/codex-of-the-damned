@@ -7,7 +7,7 @@
 {% endblock %}
 
 {% block archetype_name %}
-<h1><img src="{{ url_for('static', filename='img/icons/clan-salubri.svg') }}"> Spirit Marionette</h1>
+<h1><img src="https://static.krcg.org/clan/salubri.svg"> Spirit Marionette</h1>
 {% endblock %}
 
 {% block archetype %}
@@ -31,9 +31,7 @@ eurayle_gelasia_mylonas=card("Eurayle Gelasia Mylonas"),
 a_b=link("/strategy/fundamentals", _("A&B"), _anchor="AB"),
 yannick_gibert_s_deck=link("/deck-search", _("Yannick Gibert's deck"), id="2010fncqlyon"),
 older_version_from_tomasz_kowalewski=link("/deck-search", _("older version from Tomasz Kowalewski"),
-id="2k8crusadebreslau"),
-img_clan_tremere_anti='<img src="%(url)s" />'|format(url=url_for('static',
-filename='img/icons/clan-tremere-anti.svg'))|safe
+id="2k8crusadebreslau")
 %}
 <h2>Highlights</h2>
 <p>
@@ -65,7 +63,7 @@ filename='img/icons/clan-tremere-anti.svg'))|safe
 </p>
 <p>
     {{ renewed_vigor }} is very strong combined with {{ saulot_the_wanderer }}'s ability,
-    if any Tremere antitribu {{ img_clan_tremere_anti }} can use {{ infernal_pact }} to
+    if any Tremere antitribu {{ tremere_antitribu }} can use {{ infernal_pact }} to
     play it.
 </p>
 <p>
@@ -79,7 +77,7 @@ filename='img/icons/clan-tremere-anti.svg'))|safe
 </p>
 <p>
     An {{ older_version_from_tomasz_kowalewski }},
-    in 2008, do not even use the Tremere antitribu {{ img_clan_tremere_anti }} and their
+    in 2008, do not even use the Tremere antitribu {{ tremere_antitribu }} and their
     {{ infernal_pact }}, but low capacity {{ AUS }} vampires instead.
 </p>
 {% endtrans %}

@@ -27,11 +27,11 @@
     <li> {{ card("Grooming the Protégé") }} </li>
     <li>
         {{ card("Powerbase: Cape Verde") }}
-        (<img src="{{ url_for('static', filename='img/icons/clan-giovanni.svg') }}">)
+        {{ giovanni }}
     </li>
     <li>
         {{ card("Wasserschloss Anif, Austria") }}
-        (<img src="{{ url_for('static', filename='img/icons/clan-tremere.svg') }}">)
+        {{ tremere }}
     </li>
 </ul>
 <p>
@@ -77,12 +77,10 @@
     <li> {{ card("Carfax Abbey") }} ({{ _('Anarch') }}) </li>
     <li> {{ card("Twilight Camp") }} ({{ _('Anarch') }}) </li>
     <li>
-        {{ card("Swiss Cut") }}
-        (<img src="{{ url_for('static', filename='img/icons/clan-giovanni.svg') }}">)
+        {{ card("Swiss Cut") }} {{ giovanni }}
     </li>
     <li>
-        {{ card("Acquired Ventrue Assets") }}
-        (<img src="{{ url_for('static', filename='img/icons/clan-giovanni.svg') }}">)
+        {{ card("Acquired Ventrue Assets") }} {{ giovanni }}
     </li>
     <li> {{ card("Weeping Stone") }} ({{ _('Black Hand, costly and fragile') }}) </li>
     <li> {{ card("Perfectionist") }} </li>
@@ -134,24 +132,20 @@
         {{ card("Specialization") }}
     </li>
     <li>
-        {{ card("Tend the Flock") }}
-        (<img src="{{ url_for('static', filename='img/icons/clan-baali.svg') }}">)
+        {{ card("Tend the Flock") }} {{ baali }}
     </li>
     <li>
-        {{ card("Ventrue Investment") }}
-        (<img src="{{ url_for('static', filename='img/icons/clan-ventrue-anti.svg') }}">)
+        {{ card("Ventrue Investment") }} {{ ventrue_antitribu }}
     </li>
     <li>
         {{ card("Mbare Market, Harare") }}
         ({{ _('Laibon') }})
     </li>
     <li>
-        {{ card("Tower of London") }}
-        (<img src="{{ url_for('static', filename='img/icons/clan-giovanni.svg') }}">)
+        {{ card("Tower of London") }} {{ giovanni }}
     </li>
     <li>
-        {{ card("Great Symposium") }}
-        (<img src="{{ url_for('static', filename='img/icons/clan-kiasyd.svg') }}">)
+        {{ card("Great Symposium") }} {{ kiasyd }}
     </li>
     <li>
         {{ card("The Church of Vindicated Faith") }}
@@ -174,23 +168,23 @@
     <p>{{ _('5 clans give access to a unique location generating pool:') }}</p>
     <ul>
         <li>
-            <img src="{{ url_for('static', filename='img/icons/clan-gangrel.svg') }}">
+            {{ gangrel }}
             {{ card("Ecoterrorists") }}
         </li>
         <li>
-            <img src="{{ url_for('static', filename='img/icons/clan-tremere.svg') }}">
+            {{ tremere }}
             {{ card("Arcane Library") }}
         </li>
         <li>
-            <img src="{{ url_for('static', filename='img/icons/clan-toreador.svg') }}">
+            {{ toreador }}
             {{ card("Art Museum") }}
         </li>
         <li>
-            <img src="{{ url_for('static', filename='img/icons/clan-brujah-anti.svg') }}">
+            {{ brujah_antitribu }}
             {{ card("Gang Territory") }}
         </li>
         <li>
-            <img src="{{ url_for('static', filename='img/icons/clan-nosferatu-anti.svg') }}">
+            {{ nosferatu_antitribu }}
             {{ card("Nosferatu Kingdom") }}
         </li>
     </ul>
@@ -210,13 +204,7 @@ kindred_spirits=card("Kindred Spirits"),
 art_scam=card("Art Scam"),
 reunion_kamut=card("Reunion Kamut"),
 founders_of_the_ebony_kingdom=card("Founders of the Ebony Kingdom"),
-khabar_glory=card("Khabar: Glory"),
-img_clan_followers_of_set='<img src="%(url)s">'|format(url=url_for('static',
-filename='img/icons/clan-followers-of-set.svg'))|safe,
-img_clan_toreador_anti='<img src="%(url)s">'|format(url=url_for('static',
-filename='img/icons/clan-toreador-anti.svg'))|safe,
-img_clan_guruhi='<img src="%(url)s">'|format(url=url_for('static', filename='img/icons/clan-guruhi.svg'))|safe,
-img_clan_assamite='<img src="%(url)s">'|format(url=url_for('static', filename='img/icons/clan-assamite.svg'))|safe
+khabar_glory=card("Khabar: Glory")
 %}
 <p>
     Fast decks can rely on the fact they should score their first Victory Point early
@@ -225,7 +213,7 @@ img_clan_assamite='<img src="%(url)s">'|format(url=url_for('static', filename='i
 <p>
     Finally, those ready to pay the price can even sacrifice some vampires to get
     some pool back with {{ golconda_inner_peace }},
-    {{ khobar_towers_al_khubar }} ({{ img_clan_followers_of_set }})
+    {{ khobar_towers_al_khubar }} {{ follower_of_set }}
     or {{ redeem_the_lost_soul }}.
 </p>
 <h2 id="action-bloating">Action bloating</h2>
@@ -240,10 +228,10 @@ img_clan_assamite='<img src="%(url)s">'|format(url=url_for('static', filename='i
     Actions getting blood on uncontrolled vampires with no alternative are less efficient.
     They can still come in handy when used in swarm constructs to get
     many vampiers out quickly, as is the case for
-    {{ img_clan_toreador_anti }} {{ art_scam }} and Black Hand {{ reunion_kamut }},
+    Toreador antitribu {{ toreador_antitribu }} {{ art_scam }} and Black Hand {{ reunion_kamut }},
     but otherwise they are only used sparsingly.
-    {{ img_clan_guruhi }} {{ founders_of_the_ebony_kingdom }} and
-    {{ img_clan_assamite }} {{ khabar_glory }} deserve a special motion,
+    Guruhi {{ guruhi }} {{ founders_of_the_ebony_kingdom }} and
+    Assamite {{ assamite }} {{ khabar_glory }} deserve a special motion,
     as they are unusually high on blood gain.
 </p>
 {% endtrans %}
@@ -270,7 +258,7 @@ img_clan_assamite='<img src="%(url)s">'|format(url=url_for('static', filename='i
         <li> {{ card("Black Forest Base") }} ({{ _('Sabbat') }}) </li>
         <li>
             {{ card("Benefit Performance") }}
-            (<img src="{{ url_for('static', filename='img/icons/clan-daughters.svg') }}">)
+            {{ daughter_of_cacophony }}
         </li>
     </ul>
 </div>

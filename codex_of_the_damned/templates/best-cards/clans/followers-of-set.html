@@ -2,7 +2,7 @@
 {% import "best-cards/_layout_card_column.html" as layout with context%}
 
 {% block content %}
-<h1><img src="{{ url_for('static', filename='img/icons/clan-followers-of-set.svg') }}">
+<h1> {{ follower_of_set }}
     {% trans trimmed %}Followers of Set{% endtrans %}
 </h1>
 <div class="insert tip">

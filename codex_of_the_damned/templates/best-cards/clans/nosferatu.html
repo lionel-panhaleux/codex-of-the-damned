@@ -2,7 +2,7 @@
 {% import "best-cards/_layout_card_column.html" as layout with context%}
 
 {% block content %}
-<h1><img src="{{ url_for('static', filename='img/icons/clan-nosferatu.svg') }}"> Nosferatu</h1>
+<h1>{{ nosferatu }} Nosferatu</h1>
 <div class="insert tip">
     <p>
         {% trans trimmed
@@ -45,12 +45,10 @@ or {{ cybele }} though.
 
 {% call layout.card_column("The Labyrinth", decks=38, copies="1") %}
 {% trans trimmed
-img_clan_followers='<img src="%(url)s" />'|format(url=url_for('static',
-filename='img/icons/clan-followers-of-set.svg'))|safe,
 opium_den=card("Opium Den")
 %}
 One pool for permanent stealth is really a bargain: other clans have to pay 2 pool
-for this kind of device. Only the Followers of Set {{ img_clan_followers }}
+for this kind of device. Only the Followers of Set {{ follower_of_set }}
 have a similar tool with {{ opium_den }}.
 {% endtrans %}
 {% endcall %}

@@ -8,16 +8,11 @@
 <div class="insert author">
     <img src="{{ url_for('static', filename='img/mark_loughman.png') }}" alt="Mark Loughman">
     <p>
-        {% trans trimmed
-        img_clan_tremere='<img src="%(url)s" />'|format(url=url_for('static',
-        filename='img/icons/clan-tremere-v5.svg'))|safe,
-        img_clan_nosferatu='<img src="%(url)s" />'|format(url=url_for('static',
-        filename='img/icons/clan-nosferatu-v5.svg'))|safe
-        %}
+        {% trans trimmed %}
         Mark Loughman has been playing V:tES since day one, is highly seated in the VEKN Hall of Fame
         with 25 tournament victories, and became US National Coordinator in 2019.
         He organises 4 tournaments per year and playtests new extensions.
-        His favorite decks are Tremere {{ img_clan_tremere }} and Nosferatu {{ img_clan_nosferatu }} Toolboxes.
+        His favorite decks are Tremere {{ tremere }} and Nosferatu {{ nosferatu }} Toolboxes.
         {% endtrans %}
     </p>
     <div class="clear"></div>
@@ -70,16 +65,14 @@
     {% trans trimmed
     the_kiss_of_ra=card('The Kiss of Ra'),
     daring_the_dawn=card('Daring the Dawn'),
-    elder_impersonation=card('Elder Impersonation'),
-    img_clan_toreador_anti='<img src="%(url)s" />'|format(url=url_for('static',
-    filename='img/icons/clan-toreador-anti.svg'))|safe
+    elder_impersonation=card('Elder Impersonation')
     %}
     In general terms, as it seems that successful stealth-bleed decks lead to a response of more intercept.
     As the meta becomes more blocky, players will respond with {{ the_kiss_of_ra }} and more combat,
     or huge voting minions who play several modifiers on each action.
     Block denial cards like {{ daring_the_dawn }} or {{ elder_impersonation }} have a place here.
     This leads to a much smaller action space, which often allows weenie decks to spawn a swarm of minions.
-    Is there anything more will-sapping than an !Toreador {{ img_clan_toreador_anti }} breed/boon deck with 10 minions
+    Is there anything more will-sapping than an !Toreador {{ toreador_antitribu }} breed/boon deck with 10 minions
     and 30 pool? Heavy combat is also a logical response to big voters. This is by no means a linear development,
     as hybrid decks will combine aspects of any of the above. The Toolbox comes out of this evolution.
     These benefit the most from a good read of the meta-game,

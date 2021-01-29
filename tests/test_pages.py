@@ -13,7 +13,7 @@ class PageParser(html.parser.HTMLParser):
     def handle_starttag(self, tag, attrs):
         if tag != "a":
             return
-        url = dict(attrs)["href"]
+        url = dict(attrs).get("href", "")
         if url[:4] != "http":
             return
         self.urls.add(url)
