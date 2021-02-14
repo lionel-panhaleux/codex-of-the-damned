@@ -7,7 +7,7 @@ Portions of the materials are the copyrights and trademarks of Paradox Interacti
 and are used with permission. All rights reserved.
 For more information please visit [white-wolf.com](http://www.white-wolf.com).
 
-![Dark Pack](codex_of_the_damned/static/img/icons/dark-pack.png)
+![Dark Pack](codex_of_the_damned/static/img/dark-pack.png)
 
 ## Contributing
 
