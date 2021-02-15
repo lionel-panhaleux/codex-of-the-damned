@@ -1,7 +1,7 @@
 Changelog
 =========
 
-1.20 (unreleased)
+1.20 (2021-02-15)
 -----------------
 
 - Fix site title size to fit on mobile devices
