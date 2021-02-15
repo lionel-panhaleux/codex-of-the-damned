@@ -38,6 +38,9 @@
         url("/static/fonts/fa-brands-400.woff") format("woff"), url("/static/fonts/fa-brands-400.woff2") format("woff2"),
         url("/static/fonts/fa-brands-400.eot") format("embedded-opentype");
 }
+html {
+    -webkit-text-size-adjust: 100%; /* Prevent Safari font scaling in landscape mode */
+}
 body {
     font-family: "Times New Roman", Times, serif;
     color: var(--color-text);
@@ -61,9 +64,6 @@ span.krcg-card:hover {
 }
 span.krcg-clan {
     font-weight: normal;
-}
-p {
-    font-size: 1em;
 }
 a {
     color: #000000;
