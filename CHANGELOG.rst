@@ -1,7 +1,7 @@
 Changelog
 =========
 
-1.23 (unreleased)
+1.23 (2021-02-15)
 -----------------
 
 - Prevent Safari font scaling in landscape mode
