@@ -1,7 +1,7 @@
 Changelog
 =========
 
-1.19 (unreleased)
+1.19 (2021-02-15)
 -----------------
 
 - Improve display on all devices
