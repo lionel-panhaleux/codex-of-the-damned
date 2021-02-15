@@ -1,7 +1,7 @@
 Changelog
 =========
 
-1.22 (unreleased)
+1.22 (2021-02-15)
 -----------------
 
 - Use 1em font size for text body on mobile devices in landscape mode
