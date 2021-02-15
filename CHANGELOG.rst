@@ -4,7 +4,7 @@ Changelog
 1.20 (unreleased)
 -----------------
 
-- Nothing changed yet.
+- Fix site title size to fit on mobile devices
 
 
 1.19 (2021-02-15)
