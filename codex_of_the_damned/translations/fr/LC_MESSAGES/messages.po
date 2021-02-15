@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: codex 0.X\n"
 "Report-Msgid-Bugs-To: lionel.panhaleux+codex@gmail.com\n"
-"POT-Creation-Date: 2021-01-28 13:22+0100\n"
+"POT-Creation-Date: 2021-02-15 10:44+0100\n"
 "PO-Revision-Date: 2020-07-04 08:50+0200\n"
 "Last-Translator: Lionel Panhaleux <lionel.panhaleux+codex@gmail.com>\n"
 "Language: fr\n"
@@ -62,8 +62,8 @@ msgstr "Construction de deck"
 msgid "Archetypes"
 msgstr "Archétypes"
 
-#: codex_of_the_damned/navigation.py:73 codex_of_the_damned/templates/strategy/archetypes.html:271
-#: codex_of_the_damned/templates/strategy/articles/advanced/playing-montano-baltimore-purge.html:122
+#: codex_of_the_damned/navigation.py:73 codex_of_the_damned/templates/strategy/archetypes.html:250
+#: codex_of_the_damned/templates/strategy/articles/advanced/playing-montano-baltimore-purge.html:121
 msgid "Table Talk"
 msgstr "Discussion"
 
@@ -183,8 +183,8 @@ msgid "Sects"
 msgstr "Sectes"
 
 #: codex_of_the_damned/navigation.py:292 codex_of_the_damned/templates/strategy/bloat.html:77
-#: codex_of_the_damned/templates/strategy/bloat.html:78 codex_of_the_damned/templates/strategy/bloat.html:101
-#: codex_of_the_damned/templates/strategy/bloat.html:102 codex_of_the_damned/templates/strategy/fundamentals.html:285
+#: codex_of_the_damned/templates/strategy/bloat.html:78 codex_of_the_damned/templates/strategy/bloat.html:99
+#: codex_of_the_damned/templates/strategy/bloat.html:100 codex_of_the_damned/templates/strategy/fundamentals.html:285
 #: codex_of_the_damned/templates/strategy/fundamentals.html:286
 #: codex_of_the_damned/templates/strategy/fundamentals.html:333
 #: codex_of_the_damned/templates/strategy/fundamentals.html:406
@@ -195,13 +195,13 @@ msgstr ""
 msgid "Camarilla"
 msgstr ""
 
-#: codex_of_the_damned/navigation.py:294 codex_of_the_damned/templates/strategy/bloat.html:146
+#: codex_of_the_damned/navigation.py:294 codex_of_the_damned/templates/strategy/bloat.html:142
 #: codex_of_the_damned/templates/strategy/fundamentals.html:90 codex_of_the_damned/templates/strategy/fundamentals.html:476
 msgid "Laibon"
 msgstr ""
 
-#: codex_of_the_damned/navigation.py:295 codex_of_the_damned/templates/strategy/bloat.html:103
-#: codex_of_the_damned/templates/strategy/bloat.html:104 codex_of_the_damned/templates/strategy/bloat.html:270
+#: codex_of_the_damned/navigation.py:295 codex_of_the_damned/templates/strategy/bloat.html:101
+#: codex_of_the_damned/templates/strategy/bloat.html:102 codex_of_the_damned/templates/strategy/bloat.html:258
 #: codex_of_the_damned/templates/strategy/fundamentals.html:448
 msgid "Sabbat"
 msgstr ""
@@ -259,7 +259,7 @@ msgid "Harbingers of Skulls"
 msgstr "Émissaires des Crânes"
 
 #: codex_of_the_damned/navigation.py:313 codex_of_the_damned/templates/best-cards/clans/imbued.html:6
-#: codex_of_the_damned/templates/strategy/bloat.html:158 codex_of_the_damned/templates/strategy/fundamentals.html:287
+#: codex_of_the_damned/templates/strategy/bloat.html:152 codex_of_the_damned/templates/strategy/fundamentals.html:287
 msgid "Imbued"
 msgstr "Illuminés"
 
@@ -423,7 +423,11 @@ msgstr ""
 msgid "At least 25 competitors"
 msgstr "Au moins 25 participants"
 
-#: codex_of_the_damned/templates/deck-search.html:49
+#: codex_of_the_damned/templates/archetypes/_layout.html:13 codex_of_the_damned/templates/deck-search.html:43
+msgid "VDB"
+msgstr ""
+
+#: codex_of_the_damned/templates/deck-search.html:53
 msgid "Comments"
 msgstr "Commentaires"
 
@@ -488,22 +492,26 @@ msgid "VTES Discord"
 msgstr "Discord VTES"
 
 #: codex_of_the_damned/templates/index.html:51
+msgid "VTES-LackeyCCG Discord"
+msgstr "Discord VTES-LackeyCCG"
+
+#: codex_of_the_damned/templates/index.html:54
 msgid "VEKN Facebook goup"
 msgstr "Groupe Facebook VEKN"
 
-#: codex_of_the_damned/templates/index.html:54
+#: codex_of_the_damned/templates/index.html:57
 msgid "The Gentleman Gamer's Tutorial"
 msgstr "Tutoriel du Gentleman Gamer"
 
-#: codex_of_the_damned/templates/index.html:57
+#: codex_of_the_damned/templates/index.html:60
 msgid "Team Covenant's Tutorial"
 msgstr "Tutoriel de la Team Covenant"
 
-#: codex_of_the_damned/templates/index.html:71
+#: codex_of_the_damned/templates/index.html:74
 msgid "interviews archive"
 msgstr "archive d'interviews"
 
-#: codex_of_the_damned/templates/index.html:79
+#: codex_of_the_damned/templates/index.html:82
 msgid ""
 "Portions of the materials are the copyrights and trademarks of Paradox Interactive AB, and are used with permission. "
 "All rights reserved. For more information please visit"
@@ -700,8 +708,8 @@ msgstr ""
 #: codex_of_the_damned/templates/archetypes/spirit-marionette.html:31
 #: codex_of_the_damned/templates/archetypes/ventrue-royalty.html:35
 #: codex_of_the_damned/templates/best-cards/clans/daughters-of-cacophony.html:76
-#: codex_of_the_damned/templates/best-cards/clans/imbued.html:106
-#: codex_of_the_damned/templates/best-cards/clans/lasombra.html:82
+#: codex_of_the_damned/templates/best-cards/clans/imbued.html:105
+#: codex_of_the_damned/templates/best-cards/clans/lasombra.html:78
 #: codex_of_the_damned/templates/best-cards/clans/tremere.html:104
 #: codex_of_the_damned/templates/best-cards/clans/true-brujah.html:82
 #: codex_of_the_damned/templates/best-cards/generic/celerity.html:27
@@ -1182,9 +1190,9 @@ msgid ""
 "some %(revolutionary_council)s back in hand to finish the table. </p> <h2>Variants</h2> <p> This decklist is quite "
 "famous, as Matt Morgan won the North American Championship (NAC) first day with it, only to see Ben Peal win the "
 "final on day 2 with an almost identical decklist. </p> <p> %(karl_schaefers_deck)s from 2019 is a variant using "
-"<em>Daughters of Cacophony</em> %(img_clan_daughters)s instead of <em>Assamite</em>. %(alamut)s, %(obf)s stealth "
-"modifiers and %(web_of_knives_recruit)s are lost, but the <em>Daughters</em>  %(img_clan_daughters)s have access to "
-"%(pre)s vote modifiers and combat ends, %(conductor)s, %(the_missing_voice)s, %(lily_prelude)s and %(madrigal)s, "
+"<em>Daughters of Cacophony</em> %(daughter_of_cacophony)s instead of <em>Assamite</em>. %(alamut)s, %(obf)s stealth "
+"modifiers and %(web_of_knives_recruit)s are lost, but the <em>Daughters</em>  %(daughter_of_cacophony)s have access "
+"to %(pre)s vote modifiers and combat ends, %(conductor)s, %(the_missing_voice)s, %(lily_prelude)s and %(madrigal)s, "
 "making up for it. </p>"
 msgstr ""
 "<h2>Principe</h2> <p> C'est un deck politique Anarch <em>breed & boon</em> qui utilise %(alamut)s et des actions "
@@ -1201,9 +1209,9 @@ msgstr ""
 "est plutôt célèbre, puisque Matt Morgan a gagné le premier jour du North American Championship (NAC) avec, et a pu "
 "voir Ben Peal gagner en finale le second jour avec une decklist quasiment identique. </p> <p> Le "
 "%(karl_schaefers_deck)s de 2019 est une variante qui utilise les <em>Filles de la Cacophonie</em> "
-"%(img_clan_daughters)s à la place des <em>Assamites</em>. %(alamut)s, les modificateurs de discrétion %(obf)s et "
-"%(web_of_knives_recruit)s sont perdus, mais les <em>Filles</em> %(img_clan_daughters)s ont accès aux modificateurs de"
-" vote de %(pre)s et à ses fins de combat, ainsi qu'à %(conductor)s, %(the_missing_voice)s, %(lily_prelude)s et "
+"%(daughter_of_cacophony)s à la place des <em>Assamites</em>. %(alamut)s, les modificateurs de discrétion %(obf)s et "
+"%(web_of_knives_recruit)s sont perdus, mais les <em>Filles</em> %(daughter_of_cacophony)s ont accès aux modificateurs"
+" de vote de %(pre)s et à ses fins de combat, ainsi qu'à %(conductor)s, %(the_missing_voice)s, %(lily_prelude)s et "
 "%(madrigal)s, ce qui compense. </p>"
 
 #: codex_of_the_damned/templates/archetypes/dmitris-big-band.html:14
@@ -2005,10 +2013,10 @@ msgstr "deck d'Orian Gissler"
 msgid ""
 "<h2>Highlights</h2> <p> This is a <em>special</em> deck using %(mind_rape)s alongside a big capacity vampire with "
 "%(DOM)s%(OBF)s, %(lucian)s here. The idea is to steal the opponents vampires and use %(heidelberg_castle_germany)s to"
-" deprive them of their blood and equipment. </p> <p> Using Malkavian %(img_clan_malkavian)s and %(madness_network)s "
-"brings an edge to this idea, as %(mind_rape)s can be played on the predator turn for example, to get control of the "
-"vampire in the immediately following turn. </p> <p> The deck uses %(second_tradition_domain)s for defence, together "
-"with %(obedience)s and %(mental_maze)s to avoid combat. </p> <p> Bleed and votes are used to apply pool damage, in "
+" deprive them of their blood and equipment. </p> <p> Using Malkavian %(malkavian)s and %(madness_network)s brings an "
+"edge to this idea, as %(mind_rape)s can be played on the predator turn for example, to get control of the vampire in "
+"the immediately following turn. </p> <p> The deck uses %(second_tradition_domain)s for defence, together with "
+"%(obedience)s and %(mental_maze)s to avoid combat. </p> <p> Bleed and votes are used to apply pool damage, in "
 "combination with a strong stealth module using %(OBF)s. </p> <h2>Tips & Tricks</h2> <p> %(scourge_of_the_enochians)s "
 "is used as a counter against breed constructs that can be overwhelming for this deck. </p> <p> %(metro_underground)s "
 "lets a vampire bleed or vote, then unlock at the end of the turn, only to use %(madness_network)s for another action "
@@ -2018,12 +2026,12 @@ msgstr ""
 "<h2> Principe </h2> <p> C'est un deck <em>spécial</em> qui utilise %(mind_rape)s aux côtés d'un vampire de grande "
 "capacité avec %(DOM)s%(OBF)s, %(lucian)s ici. L'idée est de voler les vampires adverses et d'utiliser "
 "%(heidelberg_castle_germany)s pour les priver de leur sang et de leur équipement. </p> <p> Utiliser des Malkavian "
-"%(img_clan_malkavian)s et %(madness_network)s apporte un avantage, puisque %(mind_rape)s peut être joué au tour du "
-"prédateur par exemple, pour prendre le contrôle du vampire dans le tour suivant immédiatement. </p> <p> Le deck "
-"utilise %(second_tradition_domain)s pour la défense, ainsi que %(obedience)s et %(mental_maze)s pour éviter le "
-"combat. </p> <p> Les morsures et les votes sont utilisés pour appliquer des dégâts d'influence, en combinaison avec "
-"un module de discrétion puissant utilisant %(OBF)s. </p> <h2> Trucs & astuces </h2> <p> %(scourge_of_the_enochians)s "
-"est utilisé comme un contre contre les deck de prolifération qui peuvent être accablants pour ce deck. </p> <p> "
+"%(malkavian)s et %(madness_network)s apporte un avantage, puisque %(mind_rape)s peut être joué au tour du prédateur "
+"par exemple, pour prendre le contrôle du vampire dans le tour suivant immédiatement. </p> <p> Le deck utilise "
+"%(second_tradition_domain)s pour la défense, ainsi que %(obedience)s et %(mental_maze)s pour éviter le combat. </p> "
+"<p> Les morsures et les votes sont utilisés pour appliquer des dégâts d'influence, en combinaison avec un module de "
+"discrétion puissant utilisant %(OBF)s. </p> <h2> Trucs & astuces </h2> <p> %(scourge_of_the_enochians)s est utilisé "
+"comme un contre contre les deck de prolifération qui peuvent être accablants pour ce deck. </p> <p> "
 "%(metro_underground)s laisse un vampire mordre ou voter, puis se redresser à la fin du tour, uniquement pour utiliser"
 " %(madness_network)s pour une autre action pendant le tour d'un autre Methusalah. </p> <h2> Variantes </h2> <p> Il "
 "existe une variante Ventrue utilisant %(arika)s comme star. Le %(erol_hammer_s_deck)s de 2009 en est un bon exemple. "
@@ -2149,12 +2157,11 @@ msgid ""
 "anti-ally actions like %(entrancement)s. </p> <h2>Variants</h2> <p> The <strong>Mafioso</strong> variant ditches the "
 "heavy Master module %(the_parthenon)s, %(ashur_tablets)s and %(liquidation)s to use %(magic_of_the_smith)s and "
 "%(empowering_the_puppet_king)s instead, like in %(hugh_angseeing_s_deck)s from 2008. </p> <p> Other variants complete"
-" the crypt in original ways, to get more bloat with Assamite %(img_clan_assamite)s vampires like in "
-"%(greg_williams_deck)s from 2008, or some bloat but also more bleed with Toreador antitribu "
-"%(img_clan_toreador_anti)s and %(palla_grande)s, like in %(jordi_tomás_deck)s from 2010. "
-"%(jonathan_sanchez_rios_deck)s from 2011 even includes the Imbued %(béatrice_oracle171_tremblay)s for cheap "
-"additional bleed. </p> <p> Although this is a different archetype, %(nephandus)s can also be used alongside "
-"%(tupdog)s in the %(tupdogs)s archetype. </p>"
+" the crypt in original ways, to get more bloat with Assamite %(assamite)s vampires like in %(greg_williams_deck)s "
+"from 2008, or some bloat but also more bleed with Toreador antitribu %(toreador_antitribu)s and %(palla_grande)s, "
+"like in %(jordi_tomás_deck)s from 2010. %(jonathan_sanchez_rios_deck)s from 2011 even includes the Imbued "
+"%(béatrice_oracle171_tremblay)s for cheap additional bleed. </p> <p> Although this is a different archetype, "
+"%(nephandus)s can also be used alongside %(tupdog)s in the %(tupdogs)s archetype. </p>"
 msgstr ""
 "<h2> Principe </h2> <p> C'est un deck <em>toolbox alliés</em> axé sur l'allié %(nephandus)s. %(antonio_d_erlette)s "
 "est la star du deck : il sort des %(nephandus)s sans même entreprendre une action que quelqu'un pourrait bloquer. "
@@ -2175,11 +2182,11 @@ msgstr ""
 "</strong> abandonne le module Maître lourd %(the_parthenon)s, %(ashur_tablets)s et %(liquidation)s pour utiliser "
 "%(magic_of_the_smith)s et %(empowering_the_puppet_king)s à la place, comme dans le %(hugh_angseeing_s_deck)s de 2008."
 " </p> <p> D'autres variantes complètent la crypte de manière originale, pour obtenir plus de régénération avec des "
-"vampires Assamite %(img_clan_assamite)s comme dans le %(greg_williams_deck)s de 2008, ou de la régénération mais "
-"aussi plus de morsures avec des Toreador antitribu %(img_clan_toreador_anti)s et %(palla_grande)s, comme dans le "
-"%(jordi_tomás_deck)s de 2010. Le %(jonathan_sanchez_rios_deck)s de 2011 inclut même l'Illuminée "
-"%(béatrice_oracle171_tremblay)s pour une morsure supplémentaire bon marché. </p> <p> Bien qu'il s'agisse d'un "
-"archétype différent, %(nephandus)s peut également être utilisé avec %(tupdog)s dans l'archétype %(tupdogs)s. </p>"
+"vampires Assamite %(assamite)s comme dans le %(greg_williams_deck)s de 2008, ou de la régénération mais aussi plus de"
+" morsures avec des Toreador antitribu %(toreador_antitribu)s et %(palla_grande)s, comme dans le %(jordi_tomás_deck)s "
+"de 2010. Le %(jonathan_sanchez_rios_deck)s de 2011 inclut même l'Illuminée %(béatrice_oracle171_tremblay)s pour une "
+"morsure supplémentaire bon marché. </p> <p> Bien qu'il s'agisse d'un archétype différent, %(nephandus)s peut "
+"également être utilisé avec %(tupdog)s dans l'archétype %(tupdogs)s. </p>"
 
 #: codex_of_the_damned/templates/archetypes/nephandii.html:41
 msgid "Greg Williams' deck"
@@ -2515,11 +2522,11 @@ msgid ""
 "to lunge and destroy its successive preys. </p> <h2>Tips & Tricks</h2> <p> %(magic_of_the_smith)s is used to fetch "
 "great equipments, depending on the table context. %(heart_of_nizchetus)s is the default choice. </p> <p> "
 "%(renewed_vigor)s is very strong combined with %(saulot_the_wanderer)s's ability, if any Tremere antitribu "
-"%(img_clan_tremere_anti)s can use %(infernal_pact)s to play it. </p> <p> %(rutor_s_hand)s is a good way to improve "
+"%(tremere_antitribu)s can use %(infernal_pact)s to play it. </p> <p> %(rutor_s_hand)s is a good way to improve "
 "%(a_b)s, provided one can pay the blood. </p> <h2>Variants</h2> <p> The <strong>Eurayle</strong> variant uses "
 "%(eurayle_gelasia_mylonas)s as the star Salubri, as in %(yannick_gibert_s_deck)s from 2010. </p> <p> An "
-"%(older_version_from_tomasz_kowalewski)s, in 2008, do not even use the Tremere antitribu %(img_clan_tremere_anti)s "
-"and their %(infernal_pact)s, but low capacity %(AUS)s vampires instead. </p>"
+"%(older_version_from_tomasz_kowalewski)s, in 2008, do not even use the Tremere antitribu %(tremere_antitribu)s and "
+"their %(infernal_pact)s, but low capacity %(AUS)s vampires instead. </p>"
 msgstr ""
 "<h2> Principe </h2> <p> C'est un deck <em>toolbox</em> avec %(saulot_the_wanderer)s. Il utilise %(spirit_marionette)s"
 " pour voler les vampires adverses et prendre leur sang avec %(heidelberg_castle_germany)s. </p> <p> Les disciplines "
@@ -2531,12 +2538,12 @@ msgstr ""
 "%(codex_of_the_edenic_groundskeepers)s pour fendre et détruire ses proies successives. </p> <h2> Trucs & Astuces "
 "</h2> <p> %(magic_of_the_smith)s est utilisé pour récupérer d'excellents équipements, en fonction du contexte de la "
 "table. %(heart_of_nizchetus)s est le choix par défaut. </p> <p> %(renewed_vigor)s se combine parfaitement avec "
-"l'aptitude de %(saulot_the_wanderer)s, si un antitribu Tremere %(img_clan_tremere_anti)s peut utiliser "
-"%(infernal_pact)s pour le jouer. </p> <p> %(rutor_s_hand)s est un bon moyen d'améliorer l'%(a_b)s, à condition de "
-"pouvoir payer le sang. </p> <h2> Variantes </h2> <p> La variante <strong> Eurayle </strong> utilise "
-"%(eurayle_gelasia_mylonas)s comme star Salubri, comme dans le %(yannick_gibert_s_deck)s de 2010. </p> <p> Une "
-"%(older_version_from_tomasz_kowalewski)s, en 2008, n'utilise même pas les Tremere antitribu %(img_clan_tremere_anti)s"
-" et leur %(infernal_pact)s, mais des vampires %(AUS)s de faible capacité à la place. </p>"
+"l'aptitude de %(saulot_the_wanderer)s, si un antitribu Tremere %(tremere_antitribu)s peut utiliser %(infernal_pact)s "
+"pour le jouer. </p> <p> %(rutor_s_hand)s est un bon moyen d'améliorer l'%(a_b)s, à condition de pouvoir payer le "
+"sang. </p> <h2> Variantes </h2> <p> La variante <strong> Eurayle </strong> utilise %(eurayle_gelasia_mylonas)s comme "
+"star Salubri, comme dans le %(yannick_gibert_s_deck)s de 2010. </p> <p> Une %(older_version_from_tomasz_kowalewski)s,"
+" en 2008, n'utilise même pas les Tremere antitribu %(tremere_antitribu)s et leur %(infernal_pact)s, mais des vampires"
+" %(AUS)s de faible capacité à la place. </p>"
 
 #: codex_of_the_damned/templates/archetypes/spirit-marionette.html:32
 msgid "Yannick Gibert's deck"
@@ -2617,8 +2624,8 @@ msgstr "deck de Giulio De Cicco"
 #: codex_of_the_damned/templates/archetypes/team-jacob.html:14
 #, python-format
 msgid ""
-"<h2>Highlights</h2> <p> This is a stealth & bleed deck using %(tunnel_runner)s. An Akunanse %(img_clan_akunanse)s is "
-"required to get the weremoles out, and %(jacob_fermor)s is expected to come out and boost their bleed power. "
+"<h2>Highlights</h2> <p> This is a stealth & bleed deck using %(tunnel_runner)s. An Akunanse %(akunanse)s is required "
+"to get the weremoles out, and %(jacob_fermor)s is expected to come out and boost their bleed power. "
 "%(computer_hacking)s is used to help them bleed harder, too. </p> <p> The deck relies on additional vampires with "
 "%(dom)s for %(deflection)s bounces. As the deck does not block so much, this is essential for defence. </p> <h2>Tips "
 "& Tricks</h2> <p> As the deck is supposed to get an Akunanse, %(jacob_fermor)s then a low capacity vampire with "
@@ -2631,18 +2638,18 @@ msgid ""
 " combat capabilities themselves. </p> <h2>Variants</h2> <p> There is no variant to this deck. The decklist given in "
 "example won the 2013 North American Championship (NAC). </p>"
 msgstr ""
-"<h2> Principe </h2> <p> C'est un deck stealth & bleed qui utilise %(tunnel_runner)s. Un Akunanse "
-"%(img_clan_akunanse)s est nécessaire pour faire sortir les taupes-garous, et %(jacob_fermor)s devrait sortir et "
-"augmenter leur puissance de morsure. %(computer_hacking)s est également utilisé pour les aider à mordre plus fort. "
-"</p> <p> Le deck repose sur des vampires supplémentaires avec %(dom)s pour les rebonds avec %(deflection)s. Comme le "
-"deck ne bloque pas beaucoup, c'est essentiel pour la défense. </p> <h2> Trucs & Astuces </h2> <p> Comme le deck est "
-"censé sortir un Akunanse, %(jacob_fermor)s puis un vampire de faible capacité avec %(dom)s, il y a un peu de chaque "
-"dans la crypte et joue plusieurs %(wider_view)s et un %(anarch_convert)s pour la rotation si nécessaire. </p> <p> Les"
-" %(tunnel_runner)s sont des alliés coûteux, poser %(powerbase_tshwane)s et/ou %(charisma)s rapidement est d'une "
-"grande aide. </p> <p> %(predator_s_transformation)s fournit de la discrétion supplémentaire pour mettre les alliés en"
-" jeu sans être bloqués. </p> <p> %(aid_from_bats)s est utilisé comme carte de combat défensif. %(tunnel_runner)s peut"
-" l'utiliser, mais la plupart des Akunanse le peuvent également. Les alliés ont %(the_unmasking)s et les Akunanse leur"
-" %(predator_s_communion)s pour certaines interceptions tactiques - des vampires ne combattent pas agressivement, car "
+"<h2> Principe </h2> <p> C'est un deck stealth & bleed qui utilise %(tunnel_runner)s. Un Akunanse %(akunanse)s est "
+"nécessaire pour faire sortir les taupes-garous, et %(jacob_fermor)s devrait sortir et augmenter leur puissance de "
+"morsure. %(computer_hacking)s est également utilisé pour les aider à mordre plus fort. </p> <p> Le deck repose sur "
+"des vampires supplémentaires avec %(dom)s pour les rebonds avec %(deflection)s. Comme le deck ne bloque pas beaucoup,"
+" c'est essentiel pour la défense. </p> <h2> Trucs & Astuces </h2> <p> Comme le deck est censé sortir un Akunanse, "
+"%(jacob_fermor)s puis un vampire de faible capacité avec %(dom)s, il y a un peu de chaque dans la crypte et joue "
+"plusieurs %(wider_view)s et un %(anarch_convert)s pour la rotation si nécessaire. </p> <p> Les %(tunnel_runner)s sont"
+" des alliés coûteux, poser %(powerbase_tshwane)s et/ou %(charisma)s rapidement est d'une grande aide. </p> <p> "
+"%(predator_s_transformation)s fournit de la discrétion supplémentaire pour mettre les alliés en jeu sans être "
+"bloqués. </p> <p> %(aid_from_bats)s est utilisé comme carte de combat défensif. %(tunnel_runner)s peut l'utiliser, "
+"mais la plupart des Akunanse le peuvent également. Les alliés ont %(the_unmasking)s et les Akunanse leur "
+"%(predator_s_communion)s pour certaines interceptions tactiques - des vampires ne combattent pas agressivement, car "
 "ils ont très peu de capacités de combat. </p> <h2> Variantes </h2> <p> Il n'y a pas de variante à ce deck. La liste "
 "de deck donnée en exemple a remporté le championnat nord-américain (NAC) 2013. </p>"
 
@@ -2898,11 +2905,11 @@ msgid ""
 "</p> <h2>Variants</h2> <p> %(fame)s and %(army_of_rats)s are often included to improve pool damage. The combat module"
 " can vary quite a bit, using %(ANI)s more with %(carrion_crows)s or focusing on aggravated damage and using "
 "%(rötschreck)s. %(abbot)s and %(revenant)s can be added to the intercept module, which often contains more "
-"%(telepathic_misdirection)s to bounce bleeds. <p> The <strong>Malgorzata</strong> variant is a Tremere "
-"%(img_clan_tremere)s variation to this build, dropping %(ani)s to use %(malgorzata)s alongside %(mistress_fanchon)s "
-"and %(sha_ennu)s. %(nicola_lonardi_s_deck)s from 2017 is a good example. </p> <p> Although this is a different "
-"archetype, %(goratrix_high_tower)s is a close one, also using the %(AUS)s%(ANI)s combination, but with %(THA)s "
-"instead of %(VIC)s. </p>"
+"%(telepathic_misdirection)s to bounce bleeds. <p> The <strong>Malgorzata</strong> variant is a Tremere %(tremere)s "
+"variation to this build, dropping %(ani)s to use %(malgorzata)s alongside %(mistress_fanchon)s and %(sha_ennu)s. "
+"%(nicola_lonardi_s_deck)s from 2017 is a good example. </p> <p> Although this is a different archetype, "
+"%(goratrix_high_tower)s is a close one, also using the %(AUS)s%(ANI)s combination, but with %(THA)s instead of "
+"%(VIC)s. </p>"
 msgstr ""
 "<h2> Principe </h2> <p> Il s'agit d'un deck <em>mur</em> utilisant les Tzimisce et leurs disciplines "
 "%(VIC)s%(AUS)s%(ANI)s. </p> <p> Le module de combat utilise %(chiropteran_marauder)s et %(breath_of_the_dragon)s pour"
@@ -2922,9 +2929,9 @@ msgstr ""
 "d'influence. Le module de combat peut varier un peu, en utilisant plus %(ANI)s avec %(carrion_crows)s ou en se "
 "concentrant sur les dégâts aggravés avec %(rötschreck)s. %(abbot)s et %(revenant)s peuvent être ajoutés au module "
 "d'interception, qui contient souvent plus de %(telepathic_misdirection)s pour rediriger les morsures. <p> La variante"
-" <strong> Malgorzata </strong> est une variante Tremere %(img_clan_tremere)s de cette version, abandonnant %(ani)s "
-"pour utiliser %(malgorzata)s aux côtés de %(mistress_fanchon)s et %(sha_ennu)s. Le %(nicola_lonardi_s_deck)s de 2017 "
-"en est un bon exemple. </p> <p> Bien qu'il s'agisse d'un archétype différent, %(goratrix_high_tower)s est proche, "
+" <strong> Malgorzata </strong> est une variante Tremere %(tremere)s de cette version, abandonnant %(ani)s pour "
+"utiliser %(malgorzata)s aux côtés de %(mistress_fanchon)s et %(sha_ennu)s. Le %(nicola_lonardi_s_deck)s de 2017 en "
+"est un bon exemple. </p> <p> Bien qu'il s'agisse d'un archétype différent, %(goratrix_high_tower)s est proche, "
 "utilisant également la combinaison %(AUS)s%(ANI)s, mais avec %(THA)s au lieu de %(VIC)s. </p>"
 
 #: codex_of_the_damned/templates/archetypes/tzimisce-wall.html:37
@@ -3118,8 +3125,8 @@ msgid ""
 "%(aranthebes_the_immortal)s, %(mr_winthrop)s, %(muddled_vampire_hunter)s and %(bowl_of_convergence)s are often used "
 "in other decklists following this archetype. </p> <p> Non-anarch variants have been played, like "
 "%(christian_chenard_s_deck)s from 2008. </p> <p> The <strong>Madness</strong> variant focuses on Malkavian "
-"%(img_clan_malkavian)s in the crypt and uses %(madness_network)s. %(pascal_bertrand_s_deck)s from 2009 is a good "
-"example. This let the vampires equip, recruit and bleed at the end of the predator minion phase. </p>"
+"%(malkavian)s in the crypt and uses %(madness_network)s. %(pascal_bertrand_s_deck)s from 2009 is a good example. This"
+" let the vampires equip, recruit and bleed at the end of the predator minion phase. </p>"
 msgstr ""
 "<h2> Principe </h2> <p> Il s'agit d'un deck <em>mur</em> utilisant des vampires de faible capacité avec la discipline"
 " %(AUS)s. %(anarch_convert)s est utilisé pour rendre les vampires <em>Anarch</em> dès leur entrée en jeu. </p> <p> "
@@ -3142,9 +3149,9 @@ msgstr ""
 "Cependant, %(aranthebes_the_immortal)s, %(mr_winthrop)s, %(muddled_vampire_hunter)s et %(bowl_of_convergence)s sont "
 "souvent utilisés dans d'autres decks de cet archétype. </p> <p> Des variantes non Anarch ont été jouées, comme le "
 "%(christian_chenard_s_deck)s de 2008. </p> <p> La variante <strong> Madness </strong> utilise uniquement des "
-"Malkavians %(img_clan_malkavian)s dans la crypte et utilise %(madness_network)s . Le %(pascal_bertrand_s_deck)s de "
-"2009 en est un bon exemple. Cela permet aux vampires de s'équiper, de recruter et de mordre à la fin de la phase de "
-"serviteurs du prédateur. </p>"
+"Malkavians %(malkavian)s dans la crypte et utilise %(madness_network)s . Le %(pascal_bertrand_s_deck)s de 2009 en est"
+" un bon exemple. Cela permet aux vampires de s'équiper, de recruter et de mordre à la fin de la phase de serviteurs "
+"du prédateur. </p>"
 
 #: codex_of_the_damned/templates/archetypes/weenie-aus.html:36
 msgid "classic deal"
@@ -3269,24 +3276,22 @@ msgid ""
 "to reduce the pool of one's prey to 0 using %(operation)s and preventing it to gain the edge using %(hidetheheart)s. "
 "</p> <p> The deck uses low to mid capacity vampires to get the two cards above running as quickly as possible. The "
 "rest of the deck is protection against situations that may arise when trying to deal with the prey. </p> <h2>Tips & "
-"Tricks</h2> <p> An Osebo %(img_clan_osebo)s vampire should get out first to start putting some %(operation)s into "
-"play and then a vampire with %(VAL)s is in order to start disrupting the prey's bleeds. </p> <p> As the game "
-"progresses and the number of %(operation)s in play grows, the lunge is at reach but the timing is critical: killing "
-"the prey means they will be some blood on the %(operation)s cards and, if the grand-prey can get edge, they can get "
-"some of this blood back. </p> <h2>Tournament Version</h2> <p> This deck is a variant from %(kovalcik_deck)s from "
-"2014. </p>"
+"Tricks</h2> <p> An Osebo %(osebo)s vampire should get out first to start putting some %(operation)s into play and "
+"then a vampire with %(VAL)s is in order to start disrupting the prey's bleeds. </p> <p> As the game progresses and "
+"the number of %(operation)s in play grows, the lunge is at reach but the timing is critical: killing the prey means "
+"they will be some blood on the %(operation)s cards and, if the grand-prey can get edge, they can get some of this "
+"blood back. </p> <h2>Tournament Version</h2> <p> This deck is a variant from %(kovalcik_deck)s from 2014. </p>"
 msgstr ""
 "<h2>Principe</h2> <p> C'est un deck de transfusion qui utilise %(VAL)s pour interférer avec les morsures de la proie."
 " L'objectif est de réduire l'influence de la proie en utilisant %(operation)s et de l'empêcher de prendre l'avantage "
 "en utilisant %(hidetheheart)s. </p> <p> Le deck utilise des vampires de basse et moyenne capacité pour pouvoir "
 "utiliser les deux cartes ci-dessus le plus rapidement possible. Le reste du deck protège contre les éventuels "
-"problèmes qui pourraient survenir vis-à-vis de la proie. </p> <h2>Trucs & Astuces</h2> <p> Un vampire Osebo "
-"%(img_clan_osebo)s doit être sorti en premier pour commencer à jouer les %(operation)s, suivi par un vampire ayant "
-"%(VAL)s pour pouvoir interférer avec les morsures de la proie. </p> <p> Alors que la partie progresse et que le "
-"nombre d'%(operation)s en jeu grandit, le coup de grâce devient possible mais son timing est critique : éliminer la "
-"proie signifie qu'il y aura du sang sur les %(operation)s et, si la grande-proie peut prendre l'avantage, elle "
-"récupèrera une partie de ce sang. </p> <h2>Version de Tournoi</h2> <p> Ce deck est une variante du %(kovalcik_deck)s "
-"de 2014. </p>"
+"problèmes qui pourraient survenir vis-à-vis de la proie. </p> <h2>Trucs & Astuces</h2> <p> Un vampire Osebo %(osebo)s"
+" doit être sorti en premier pour commencer à jouer les %(operation)s, suivi par un vampire ayant %(VAL)s pour pouvoir"
+" interférer avec les morsures de la proie. </p> <p> Alors que la partie progresse et que le nombre d'%(operation)s en"
+" jeu grandit, le coup de grâce devient possible mais son timing est critique : éliminer la proie signifie qu'il y "
+"aura du sang sur les %(operation)s et, si la grande-proie peut prendre l'avantage, elle récupèrera une partie de ce "
+"sang. </p> <h2>Version de Tournoi</h2> <p> Ce deck est une variante du %(kovalcik_deck)s de 2014. </p>"
 
 #: codex_of_the_damned/templates/archetypes/bibliodeque/419-operation.html:19
 msgid "Matus Kovalcik's deck"
@@ -3451,17 +3456,16 @@ msgstr ""
 #: codex_of_the_damned/templates/best-cards/index.html:43
 #, python-format
 msgid ""
-"<p> Abominations %(img_clan_abominations)s, Blood Brothers %(img_clan_blood_brothers)s, Panders %(img_clan_panders)s,"
-" Osebo %(img_clan_osebo)s, Nagaraja %(img_clan_nagaraja)s and Samedi %(img_clan_samedi)s are too rarely played to be "
-"included in this analysis: they lack the numbers for a statistical review to be relevant. </p> <p> Gargoyles "
-"%(img_clan_gargoyles)s are included in the Tremere %(img_clan_tremere)s clan analysis, all Imbued are included in the"
-" same analysis regardless of their creed. </p>"
+"<p> Abominations %(abomination)s, Blood Brothers %(blood_brother)s, Panders %(pander)s, Osebo %(osebo)s, Nagaraja "
+"%(nagaraja)s and Samedi %(samedi)s are too rarely played to be included in this analysis: they lack the numbers for a"
+" statistical review to be relevant. </p> <p> Gargoyles %(gargoyle)s are included in the Tremere %(tremere)s clan "
+"analysis, all Imbued are included in the same analysis regardless of their creed. </p>"
 msgstr ""
-"<p> Les Abominations %(img_clan_abominations)s, les Frères de Sang %(img_clan_blood_brothers)s, Pander "
-"%(img_clan_panders)s, Osebo %(img_clan_osebo)s, Nagaraja %(img_clan_nagaraja)s et Samedi %(img_clan_samedi)s ont été "
-"trop peu joués pour être inclus dans cette analyse : ils n'ont pas les nombres suffisants pour qu'une analyse "
-"statistique soit pertinente. </p> <p> Les Gargouilles %(img_clan_gargoyles)s sont inclues dans le clan Tremere "
-"%(img_clan_tremere)s, tous les Illuminés sont inclus dans la même analyse quel que soit leur credo. </p>"
+"<p> Les Abominations %(abomination)s, les Frères de Sang %(blood_brother)s, Pander %(pander)s, Osebo %(osebo)s, "
+"Nagaraja %(nagaraja)s et Samedi %(samedi)s ont été trop peu joués pour être inclus dans cette analyse : ils n'ont pas"
+" les nombres suffisants pour qu'une analyse statistique soit pertinente. </p> <p> Les Gargouilles %(gargoyle)s sont "
+"inclues dans le clan Tremere %(tremere)s, tous les Illuminés sont inclus dans la même analyse quel que soit leur "
+"credo. </p>"
 
 #: codex_of_the_damned/templates/best-cards/clans/ahrimanes.html:7
 #, python-format
@@ -3577,7 +3581,7 @@ msgstr ""
 "manque de solutions contre un coupe de %(combat_ends)s. </p>"
 
 #: codex_of_the_damned/templates/best-cards/clans/akunanse.html:11
-#: codex_of_the_damned/templates/strategy/deck-building.html:234
+#: codex_of_the_damned/templates/strategy/deck-building.html:232
 msgid "combat ends"
 msgstr "fin de combat"
 
@@ -3933,14 +3937,14 @@ msgstr ""
 #: codex_of_the_damned/templates/best-cards/clans/baali.html:176
 #, python-format
 msgid ""
-"A very good combat strike. More often seen in fact in Tremere %(img_clan_tremere)s decks using %(tha)s, as it is a "
-"good alternative to other aggravated damage source %(tha)s provides like %(walk_of_flame)s or %(burst_of_sunlight)s."
+"A very good combat strike. More often seen in fact in Tremere %(tremere)s decks using %(tha)s, as it is a good "
+"alternative to other aggravated damage source %(tha)s provides like %(walk_of_flame)s or %(burst_of_sunlight)s."
 msgstr ""
-"Une très bonne frappe de combat. Plus souvent vue en fait dans les decks Tremere %(img_clan_tremere)s qui utilisent "
-"%(tha)s, car c'est une bonne alternative à d'autres sources de dégâts aggravés en %(tha)s comme %(walk_of_flame)s ou "
+"Une très bonne frappe de combat. Plus souvent vue en fait dans les decks Tremere %(tremere)s qui utilisent %(tha)s, "
+"car c'est une bonne alternative à d'autres sources de dégâts aggravés en %(tha)s comme %(walk_of_flame)s ou "
 "%(burst_of_sunlight)s."
 
-#: codex_of_the_damned/templates/best-cards/clans/baali.html:188
+#: codex_of_the_damned/templates/best-cards/clans/baali.html:187
 msgid ""
 "An excellent card for politics, both defensively and offensively. Even Baali decks with no take on the politics game "
 "can play it just to hinder a politic opponent."
@@ -3978,19 +3982,19 @@ msgstr ""
 #, python-format
 msgid ""
 "Volker is one of the cheapest Prince around, and he finds its place in many Camarilla Royalty decks. Its superior "
-"%(CEL)s also makes him a good asset in other %(CEL)s decks — he founds an easy place in Toreador "
-"%(img_clan_toreador)s %(aaa)s archetype for example."
+"%(CEL)s also makes him a good asset in other %(CEL)s decks — he founds an easy place in Toreador %(toreador)s %(aaa)s"
+" archetype for example."
 msgstr ""
 "Volker est l'un des prince les moins chers du jeu et il trouve sa place dans de nombreux decks Camarilla Royalty. Sa "
 "%(CEL)s en supérieur fait également de lui un bon atout dans les autres decks %(CEL)s – il trouve une place facile "
-"dans l'archétype Toreador %(img_clan_toreador)s %(aaa)s par exemple."
+"dans l'archétype Toreador %(toreador)s %(aaa)s par exemple."
 
-#: codex_of_the_damned/templates/best-cards/clans/brujah.html:50
+#: codex_of_the_damned/templates/best-cards/clans/brujah.html:49
 #, python-format
 msgid "With the %(OBF)s%(PRE)s disciplines, she finds her place in Inner Circle decks using these disciplines."
 msgstr "Avec les disciplines %(OBF)s%(PRE)s, elle trouve sa place dans les decks Inner Circle qui utilisent ces disciplines."
 
-#: codex_of_the_damned/templates/best-cards/clans/brujah.html:57
+#: codex_of_the_damned/templates/best-cards/clans/brujah.html:56
 msgid ""
 "As Brujah have a lot of good titled vampires among their ranks, this location often finds its place amidst them as "
 "the cornerstone of their offensive strategy. The bonus in both vote and bleed is a definitive edge."
@@ -3998,7 +4002,7 @@ msgstr ""
 "Comme les Brujah ont beaucoup de bons vampires titrés dans leurs rangs, ce lieu trouve souvent sa place parmi eux en "
 "tant que pierre angulaire de leur stratégie offensive. Le bonus en vote et en morsure est un avantage certain."
 
-#: codex_of_the_damned/templates/best-cards/clans/brujah.html:66
+#: codex_of_the_damned/templates/best-cards/clans/brujah.html:65
 #, python-format
 msgid ""
 "A Prince with %(obf)s%(pre)s and bonus stealth on political action, she makes a perfect partner for her Justicar "
@@ -4007,12 +4011,12 @@ msgstr ""
 "Prince avec %(obf)s%(pre)s et un bonus de discrétion sur l'action politique, elle fait un partenaire idéal pour sa "
 "Justicar %(dmitra_ilyanova)s, souvent aux côtés de %(tara)s.\n"
 
-#: codex_of_the_damned/templates/best-cards/clans/brujah.html:77
+#: codex_of_the_damned/templates/best-cards/clans/brujah.html:76
 #, python-format
 msgid "A cheap vampire with superior %(CEL)s, she gets a spot in many %(CEL)s decks."
 msgstr "Un vampire bon marché avec %(CEL)s en supérieur, elle trouve une place dans de nombreux decks %(CEL)s.\n"
 
-#: codex_of_the_damned/templates/best-cards/clans/brujah.html:83
+#: codex_of_the_damned/templates/best-cards/clans/brujah.html:82
 msgid ""
 "A decent recursion helper, although getting the cards on the bottom of the library is more useful if you get to "
 "shuffle it at some point."
@@ -4020,7 +4024,7 @@ msgstr ""
 "Un outil de récursion décent, bien que récupérer des cartes au talon de la bibliothèque soit plus utile si l'on "
 "parvient à la mélanger à un moment ou à un autre.\n"
 
-#: codex_of_the_damned/templates/best-cards/clans/brujah.html:90
+#: codex_of_the_damned/templates/best-cards/clans/brujah.html:89
 #, python-format
 msgid ""
 "A good voter with an excellent ability, his access to %(obf)s and %(FOR)s are very strong points as he gets to play "
@@ -4552,14 +4556,12 @@ msgstr ""
 
 #: codex_of_the_damned/templates/best-cards/clans/guruhi.html:42
 #, python-format
-msgid ""
-"%(ANI)s%(POT)s for only 5 pool is a bargain. An easy inclusion in any Guruhi or Nosferatu %(img_clan_nosferatu)s "
-"build."
+msgid "%(ANI)s%(POT)s for only 5 pool is a bargain. An easy inclusion in any Guruhi or Nosferatu %(nosferatu)s build."
 msgstr ""
 "%(ANI)s%(POT)s pour seulement 5 d'influence est une bonne affaire. Une inclusion facile dans n'importe quel deck "
-"Guruhi ou Nosferatu %(img_clan_nosferatu)s."
+"Guruhi ou Nosferatu %(nosferatu)s."
 
-#: codex_of_the_damned/templates/best-cards/clans/guruhi.html:51
+#: codex_of_the_damned/templates/best-cards/clans/guruhi.html:49
 #, python-format
 msgid ""
 "All clan disciplines at superior with a rush ability included. A must-have in rush decks, often played along "
@@ -4568,18 +4570,18 @@ msgstr ""
 "Toutes les disciplines de clan en supérieur avec une aptitude de rush incluse. Un incontournable dans les decks rush,"
 " souvent jouée avec %(nana_buruku)s."
 
-#: codex_of_the_damned/templates/best-cards/clans/guruhi.html:58
+#: codex_of_the_damned/templates/best-cards/clans/guruhi.html:56
 #, python-format
 msgid "A cheap price for superior %(PRE)s, he can even be included in mono %(pre)s builds."
 msgstr "Bon marché pour %(PRE)s en supérieur, il peut même être inclus dans les builds mono %(pre)s."
 
-#: codex_of_the_damned/templates/best-cards/clans/guruhi.html:64
+#: codex_of_the_damned/templates/best-cards/clans/guruhi.html:62
 msgid "One of the best bloating device in the game, only available to Guruhi and difficult to play in multi-clans decks."
 msgstr ""
 "L'un des meilleurs outils de régénération du jeu, uniquement disponible pour Guruhi et difficile à jouer dans les "
 "decks multi-clans."
 
-#: codex_of_the_damned/templates/best-cards/clans/guruhi.html:71
+#: codex_of_the_damned/templates/best-cards/clans/guruhi.html:69
 #, python-format
 msgid ""
 "The only vampire of the game with a bleed power of 4. Worth mentioning, even if he is often played in big capacity "
@@ -4588,7 +4590,7 @@ msgstr ""
 "Le seul vampire du jeu avec une morsure à 4. Remarquable, même s'il est souvent joué dans les decks %(DOM)s%(OBF)s "
 "haute capacité sans spécificité Guruhi."
 
-#: codex_of_the_damned/templates/best-cards/clans/guruhi.html:79
+#: codex_of_the_damned/templates/best-cards/clans/guruhi.html:77
 #, python-format
 msgid ""
 "An additional title that is unlikely to contest, it's a worthy inclusion in a political deck and a useful addition to"
@@ -4597,16 +4599,16 @@ msgstr ""
 "Un titre supplémentaire qu'il est peu probable de contester, c'est une inclusion raisonnable dans un deck politique "
 "et un ajout utile à %(nana_buruku)s ou %(aren)s."
 
-#: codex_of_the_damned/templates/best-cards/clans/guruhi.html:90
+#: codex_of_the_damned/templates/best-cards/clans/guruhi.html:88
 #, python-format
 msgid ""
 "A magaji with a useful ability, her cost is a bit steep, but she finds her place in a political deck, and her %(ABO)s"
-" discipline can get her into Akunanse %(img_clan_akunanse)s decks, although she is more often associated with "
+" discipline can get her into Akunanse %(akunanse)s decks, although she is more often associated with "
 "%(eze_the_demon_prince)s."
 msgstr ""
 "Une magaji avec une aptitude utile, son coût est un peu élevé, mais elle trouve sa place dans un deck politique, et "
-"sa discipline %(ABO)s peut la faire entrer dans les decks Akunanse %(img_clan_akunanse)s, bien qu'elle soit plus "
-"souvent associée à %(eze_the_demon_prince)s."
+"sa discipline %(ABO)s peut la faire entrer dans les decks Akunanse %(akunanse)s, bien qu'elle soit plus souvent "
+"associée à %(eze_the_demon_prince)s."
 
 #: codex_of_the_damned/templates/best-cards/clans/harbingers-of-skulls.html:13
 #: codex_of_the_damned/templates/best-cards/clans/salubri.html:11
@@ -4627,13 +4629,13 @@ msgstr ""
 #: codex_of_the_damned/templates/best-cards/clans/harbingers-of-skulls.html:27
 #, python-format
 msgid ""
-"A cheap cost for the %(AUS)s%(FOR)s combination – he even gets included in Ventrue antitribu %(img_clan_ventre_anti)s"
-" decks."
+"A cheap cost for the %(AUS)s%(FOR)s combination – he even gets included in Ventrue antitribu %(ventre_antitribu)s "
+"decks."
 msgstr ""
 "Bon marché pour la combinaison %(AUS)s%(FOR)s – il est même inclus dans les decks Ventrue antitribu "
-"%(img_clan_ventre_anti)s."
+"%(ventre_antitribu)s."
 
-#: codex_of_the_damned/templates/best-cards/clans/harbingers-of-skulls.html:37
+#: codex_of_the_damned/templates/best-cards/clans/harbingers-of-skulls.html:34
 #, python-format
 msgid ""
 "A good ally with an excellent ability that let him come back into play for free. The %(emerald_legion)s archetype is "
@@ -4642,7 +4644,7 @@ msgstr ""
 "Un bon allié avec une excellente aptitude qui lui permet de revenir en jeu gratuitement. L'archétype "
 "%(emerald_legion)s est construit autour de lui."
 
-#: codex_of_the_damned/templates/best-cards/clans/harbingers-of-skulls.html:44
+#: codex_of_the_damned/templates/best-cards/clans/harbingers-of-skulls.html:41
 #, python-format
 msgid ""
 "All clan disciplines %(NEC)s%(AUS)s%(FOR)s at superior for a decent 7 pool, his ability is useful for card rotation, "
@@ -4652,11 +4654,11 @@ msgstr ""
 "utile pour la rotation des cartes, mais aussi comme moyen d'obtenir plus de cartes dans le tas de cendres pour payer "
 "les %(emerald_legionnaire)s."
 
-#: codex_of_the_damned/templates/best-cards/clans/harbingers-of-skulls.html:53
+#: codex_of_the_damned/templates/best-cards/clans/harbingers-of-skulls.html:50
 msgid "A decent disciplines combination and a great ability for cards rotation."
 msgstr "Une combinaison de disciplines décente et une belle aptitude de rotation de cartes."
 
-#: codex_of_the_damned/templates/best-cards/clans/harbingers-of-skulls.html:59
+#: codex_of_the_damned/templates/best-cards/clans/harbingers-of-skulls.html:56
 #, python-format
 msgid ""
 "A good disciplines combination, and her ability has a nice synergy with %(trochomancy)s and "
@@ -4665,11 +4667,11 @@ msgstr ""
 "Une bonne combinaison de disciplines, et son aptitude a une belle synergie avec %(trochomancy)s et "
 "%(inevitability_of_the_void)s."
 
-#: codex_of_the_damned/templates/best-cards/clans/harbingers-of-skulls.html:69
+#: codex_of_the_damned/templates/best-cards/clans/harbingers-of-skulls.html:66
 msgid "Only 1 pool for permanent stealth, this is a bargain."
 msgstr "Seulement 1 point d'influence pour de la discrétion permanente, c'est une bonne affaire."
 
-#: codex_of_the_damned/templates/best-cards/clans/harbingers-of-skulls.html:75
+#: codex_of_the_damned/templates/best-cards/clans/harbingers-of-skulls.html:72
 #, python-format
 msgid ""
 "All clan disciplines at superior %(NEC)s%(AUS)s%(FOR)s, combined with a nice ability that let him recruit "
@@ -4678,7 +4680,7 @@ msgstr ""
 "Toutes les disciplines de clan en supérieur %(NEC)s%(AUS)s%(FOR)s, combinées à une belle aptitude qui lui permet de "
 "recruter des %(emerald_legionnaire)s au rabais."
 
-#: codex_of_the_damned/templates/best-cards/clans/harbingers-of-skulls.html:83
+#: codex_of_the_damned/templates/best-cards/clans/harbingers-of-skulls.html:80
 #, python-format
 msgid ""
 "Often seen in company with %(saulot_the_wanderer)s as they both have %(AUS)s%(FOR)s%(THA)s, he is also a good star "
@@ -4699,41 +4701,44 @@ msgstr ""
 "spécifiques les rendent uniques et ils ont donné naissance à leur propre archétype %(hunters)s."
 
 #: codex_of_the_damned/templates/best-cards/clans/imbued.html:20
+#, python-format
 msgid ""
 "They have a unique access to Powers (an easy inclusion as they are fetched at +1 stealth with unlock) and Convictions"
-" cards (all three played in imbued decks as they stack and have no downside)."
+" %(CONVICTION)s cards (all three played in imbued decks as they stack and have no downside)."
 msgstr ""
 "Ils ont un accès unique aux Pouvoirs (une inclusion facile car ils sont récupérés à +1 discrétion avec redressement) "
-"et aux cartes Conviction (toutes trois jouées dans des decks Illuminés car elles se superposent et n'ont aucun "
-"inconvénient)."
+"et aux cartes Conviction %(CONVICTION)s (toutes trois jouées dans des decks Illuminés car elles se superposent et "
+"n'ont aucun inconvénient)."
 
 #: codex_of_the_damned/templates/best-cards/clans/imbued.html:28
 #, python-format
 msgid ""
-"The most played <em>Conviction</em>. Usually all three <em>Conviction</em> cards are played in imbued decks, but "
-"%(beatrice)s is often added to vampire crypts for additional bleed, and all she really needs is this "
-"<em>Conviction</em> for a bit of stealth."
+"The most played <em>Conviction</em>. Usually all three <em>Conviction</em> %(CONVICTION)s cards are played in imbued "
+"decks, but %(beatrice)s is often added to vampire crypts for additional bleed, and all she really needs is this "
+"<em>Conviction</em> %(CONVICTION)s for a bit of stealth."
 msgstr ""
-"La <em>Conviction</em> la plus jouée. Habituellement, les trois cartes <em>Conviction</em> sont jouées dans les decks"
-" Illuminés, mais %(beatrice)s est souvent ajouté aux cryptes de vampires pour une morsure supplémentaire, et tout ce "
-"dont elle a vraiment besoin est cette <em>Conviction</em> pour un peu de discrétion."
+"La <em>Conviction</em> la plus jouée. Normalement les trois <em>Conviction</em> %(CONVICTION)s sont jouées dans les "
+"decks Illuminés, mais %(beatrice)s est souvent jouée dans des cryptes de vampires pour son bonus de morsure, et elle "
+"n'a besoin que de cette <em>Conviction</em> %(CONVICTION)s pour un peu de discrétion."
 
 #: codex_of_the_damned/templates/best-cards/clans/imbued.html:37
 #, python-format
 msgid ""
-"This is usually the first <em>Conviction</em> any Imbued fetches when he comes into play, as it protects them against"
-" anti-ally actions like %(entrancement)s."
+"This is usually the first <em>Conviction</em> %(CONVICTION)s any Imbued fetches when he comes into play, as it "
+"protects them against anti-ally actions like %(entrancement)s."
 msgstr ""
-"Il s'agit généralement de la première <em>Conviction</em> récupérée par un Illuminé quand il entre en jeu, car cela "
-"les protègent contre les actions anti-alliées comme %(entrancement)s."
+"Il s'agit généralement de la première <em>Conviction</em> %(CONVICTION)s récupérée par un Illuminé quand il entre en "
+"jeu, car cela les protègent contre les actions anti-alliées comme %(entrancement)s."
 
 #: codex_of_the_damned/templates/best-cards/clans/imbued.html:44
+#, python-format
 msgid ""
-"An excellent <em>Conviction</em> that boosts combat or bleed depending on the need. As it is a <em>Conviction</em>, "
-"it can be used every turn and come back into play during the unlock phase."
+"An excellent <em>Conviction</em> %(CONVICTION)s that boosts combat or bleed depending on the need. As it is a "
+"<em>Conviction</em> %(CONVICTION)s, it can be used every turn and come back into play during the unlock phase."
 msgstr ""
-"Une excellente <em>Conviction</em> qui booste le combat ou la morsure selon les besoins. Comme il s'agit d'une "
-"<em>Conviction</em>, elle peut être utilisée à chaque tour et revenir en jeu pendant la phase de redressement."
+"Une excellente <em>Conviction</em> %(CONVICTION)s qui booste le combat ou la morsure selon les besoins. Comme il "
+"s'agit d'une <em>Conviction</em> %(CONVICTION)s, elle peut être utilisée à chaque tour et revenir en jeu pendant la "
+"phase de redressement."
 
 #: codex_of_the_damned/templates/best-cards/clans/imbued.html:52
 #, python-format
@@ -4746,15 +4751,16 @@ msgstr ""
 "discrétion, elle devient un serviteur intéressant."
 
 #: codex_of_the_damned/templates/best-cards/clans/imbued.html:60
+#, python-format
 msgid ""
 "Her ability is the cornerstone of most Imbued decks. Not only can the Imbued come back from Incapacity (their version"
-" of torpor) with only two <em>Convictions</em> instead of three, they can also do so during any turn. As Imbued are "
-"fragile, this additional protection is welcome."
+" of torpor) with only two <em>Convictions</em> %(CONVICTION_2)s instead of three, they can also do so during any "
+"turn. As Imbued are fragile, this additional protection is welcome."
 msgstr ""
 "Son aptitude est la pierre angulaire de la plupart des decks Illuminés. Non seulement les Illuminés peuvent revenir "
-"d'incapacité (leur version de la torpeur) avec seulement deux <em>Convictions</em> au lieu de trois, mais ils peuvent"
-" aussi le faire à n'importe quel tour. Comme les Illuminés sont fragiles, cette protection supplémentaire est la "
-"bienvenue."
+"d'incapacité (leur version de la torpeur) avec seulement deux <em>Convictions</em> %(CONVICTION_2)s au lieu de trois,"
+" mais ils peuvent aussi le faire à n'importe quel tour. Comme les Illuminés sont fragiles, cette protection "
+"supplémentaire est la bienvenue."
 
 #: codex_of_the_damned/templates/best-cards/clans/imbued.html:69
 msgid ""
@@ -4787,55 +4793,58 @@ msgstr ""
 "De bonnes vertus pour un prix décent, son aptitude est également assez intéressante car elle dissuade les rush à son "
 "encontre."
 
-#: codex_of_the_damned/templates/best-cards/clans/imbued.html:106
+#: codex_of_the_damned/templates/best-cards/clans/imbued.html:105
 #, python-format
 msgid ""
-"Jewel of the <em>Justice</em> virtue, the combination of <em>drive</em> and <em>wake</em> effects makes for a very "
+"Jewel of the Justice %(jus)s virtue, the combination of <em>drive</em> and <em>wake</em> effects makes for a very "
 "nice bonus in %(a_b)s."
 msgstr ""
-"Joyau de la vertu <em>Justice</em>, la combinaison des effets <em>drive</em> et <em>wake</em> fait un très beau bonus"
-" d'%(a_b)s."
+"Joyau de la vertu de Justice %(jus)s, la combinaison des effets <em>drive</em> et <em>wake</em> fait un très beau "
+"bonus d'%(a_b)s."
 
-#: codex_of_the_damned/templates/best-cards/clans/imbued.html:114
+#: codex_of_the_damned/templates/best-cards/clans/imbued.html:113
 msgid "Excellent virtues with a good combat ability, he gets included in most Imbued decks."
 msgstr "Excellentes vertus avec une bonne aptitude de combat, il est inclus dans la plupart des decks Illuminé."
 
-#: codex_of_the_damned/templates/best-cards/clans/imbued.html:120
+#: codex_of_the_damned/templates/best-cards/clans/imbued.html:119
 #, python-format
 msgid ""
-"Second excellent <em>Justice</em> power after %(vigilance)s, it explains why the <em>Justice</em> virtue is the most "
+"Second excellent Justice %(jus)s power after %(vigilance)s, it explains why the Justice %(jus)s virtue is the most "
 "played among Imbued. Combined with %(the_unmasking)s, it transforms the Imbued in excellent blockers."
 msgstr ""
-"Deuxième excellent pouvoir de <em>Justice</em> après %(vigilance)s, il explique pourquoi la vertu de <em>Justice</em>"
-" est la plus jouée parmi les Illuminés. Combiné avec %(the_unmasking)s, il transforme les Illuminés en d'excellents "
+"Deuxième excellent pouvoir de Justice %(jus)s  après %(vigilance)s, il explique pourquoi la vertu de Justice %(jus)s"
+"  est la plus jouée parmi les Illuminés. Combiné avec %(the_unmasking)s, il transforme les Illuminés en d'excellents "
 "bloqueurs."
 
-#: codex_of_the_damned/templates/best-cards/clans/imbued.html:131
-msgid ""
-"This regeneration ability makes any Imbued with the <em>Defense</em> virtue quite sturdy. As Imbued can not hunt, "
-"this is one of the few ways they can get some life back."
-msgstr ""
-"Cette aptitude de régénération rend tout Illuminé ayant la vertu de <em>Défense</em> assez robuste. Comme un Illuminé"
-" ne peut pas chasser, c'est l'une des rares façons de leur rendre de la vie."
-
-#: codex_of_the_damned/templates/best-cards/clans/imbued.html:138
+#: codex_of_the_damned/templates/best-cards/clans/imbued.html:130
 #, python-format
 msgid ""
-"The only bounce Imbued can use against bleeds, it is easy to include as %(jennie)s has the <em>Visionary</em> virtue."
-" It can also be used to cancel an action on the prey side, so it is very versatile."
+"This regeneration ability makes any Imbued with the Defense %(def)s virtue quite sturdy. As Imbued can not hunt, this"
+" is one of the few ways they can get some life back."
+msgstr ""
+"Cette aptitude de régénération rend tout Illuminé ayant la vertu de Défense %(def)s assez robuste. Comme un Illuminé "
+"ne peut pas chasser, c'est l'une des rares façons de leur rendre de la vie."
+
+#: codex_of_the_damned/templates/best-cards/clans/imbued.html:137
+#, python-format
+msgid ""
+"The only bounce Imbued can use against bleeds, it is easy to include as %(jennie)s has the Vision %(vin)s virtue. It "
+"can also be used to cancel an action on the prey side, so it is very versatile."
 msgstr ""
 "Le seul rebond que les Illuminés peuvent utiliser contre les morsures, il est facile à inclure car %(jennie)s a la "
-"vertu <em>Visionnaire</em>. Il peut également être utilisé pour annuler une action du côté de la proie, il est donc "
-"très polyvalent."
+"vertu de Vision %(vin)s. Il peut également être utilisé pour annuler une action du côté de la proie, il est donc très"
+" polyvalent."
 
-#: codex_of_the_damned/templates/best-cards/clans/imbued.html:146
+#: codex_of_the_damned/templates/best-cards/clans/imbued.html:145
+#, python-format
 msgid ""
-"Another good <em>Defense</em> power, as it can be used to \"block\" bleeds without even needing intercept. The "
-"<em>Conviction</em> cost is a bit high, but the threat of it alone can slow down an aggressive predator."
+"Another good Defense %(def)s power, as it can be used to \"block\" bleeds without even needing intercept. The "
+"<em>Conviction</em> %(CONVICTION)s cost is a bit high, but the threat of it alone can slow down an aggressive "
+"predator."
 msgstr ""
-"Un autre bon pouvoir de <em>Défense</em>, car il peut être utilisé pour \"bloquer\" les morsures sans même avoir "
-"besoin d'interception. Le coût de la <em>Conviction</em> est un peu élevé, mais sa seule menace peut ralentir un "
-"prédateur agressif."
+"Un autre bon pouvoir de Défense %(def)s, puisqu'il permet de  \"bloquer\" les morsures sans interception. Le coût de "
+"Conviction %(CONVICTION)s est un peu élevé, mais la menace de son effet seule peut déjà ralentir un prédateur "
+"aggressif."
 
 #: codex_of_the_damned/templates/best-cards/clans/ishtarri.html:8
 #, python-format
@@ -4917,26 +4926,24 @@ msgstr "Toutes les disciplines de clan en inférieur pour 4 d'influence, une aco
 #: codex_of_the_damned/templates/best-cards/clans/kiasyd.html:8
 #, python-format
 msgid ""
-"The Kiasyd and their unique %(myt)s discipline are quite close to the Lasombra %(img_clan_lasombra)s, so they've been"
-" included in Lasombra %(img_clan_lasombra)s deck as additional vampires, but also led to an archetype of their own, "
-"the %(kiasyd_stealth_bleed)s. Compared to the Lasombra %(img_clan_lasombra)s, %(myt)s provides more bleed and stealth"
-" options and less combat options than %(pot)s."
+"The Kiasyd and their unique %(myt)s discipline are quite close to the Lasombra %(lasombra)s, so they've been included"
+" in Lasombra %(lasombra)s deck as additional vampires, but also led to an archetype of their own, the "
+"%(kiasyd_stealth_bleed)s. Compared to the Lasombra %(lasombra)s, %(myt)s provides more bleed and stealth options and "
+"less combat options than %(pot)s."
 msgstr ""
-"Les Kiasyd et leur discipline exclusive %(myt)s sont assez proches des Lasombra %(img_clan_lasombra)s, ils sont donc "
-"inclus dans les decks Lasombra %(img_clan_lasombra)s en tant que vampires supplémentaires, mais ont également conduit"
-" à leur propre archétype, le %(kiasyd_stealth_bleed)s. Par rapport aux Lasombra %(img_clan_lasombra)s, %(myt)s offre "
-"plus d'options de morsure et de discrétion et moins d'options de combat que %(pot)s."
+"Les Kiasyd et leur discipline réservée %(myt)s sont assez proches des Lasombra %(lasombra)s, et son du coup souvent "
+"inclus comme vampires supplémentaires dans les decks Lasombra %(lasombra)s, mais ont aussi donné naissance à leur "
+"propre archétype, le %(kiasyd_stealth_bleed)s. Comparés aux Lasombra %(lasombra)s, %(myt)s leur donne plus de "
+"discrétion et de morsure, mais moins d'options de combat que %(pot)s."
 
-#: codex_of_the_damned/templates/best-cards/clans/kiasyd.html:24
+#: codex_of_the_damned/templates/best-cards/clans/kiasyd.html:22
 #, python-format
-msgid ""
-"A solid %(OBT)s%(DOM)s combination for just 5 pool, she is included in Lasombra %(img_clan_lasombra)s as well as "
-"Kiasyd decks."
+msgid "A solid %(OBT)s%(DOM)s combination for just 5 pool, she is included in Lasombra %(lasombra)s as well as Kiasyd decks."
 msgstr ""
 "Une solide combinaison %(OBT)s%(DOM)s pour seulement 5 d'influence, elle est incluse dans les decks Lasombra "
-"%(img_clan_lasombra)s aussi bien que Kiasyd."
+"%(lasombra)s aussi bien que Kiasyd."
 
-#: codex_of_the_damned/templates/best-cards/clans/kiasyd.html:33
+#: codex_of_the_damned/templates/best-cards/clans/kiasyd.html:29
 #, python-format
 msgid ""
 "All clan disciplines at superior %(OBF)s%(DOM)s%(MYT)s for just 6 pool, he also has a rare ability that can provide "
@@ -4946,17 +4953,17 @@ msgstr ""
 "aptitude rare qui peut fournir une action de Maître supplémentaire. Il est parfois inclus dans les decks pour cette "
 "aptitude à elle seule."
 
-#: codex_of_the_damned/templates/best-cards/clans/kiasyd.html:41
+#: codex_of_the_damned/templates/best-cards/clans/kiasyd.html:37
 #, python-format
 msgid ""
 "It is included in most Kiasyd decks and even in Lasombra-Kiasyd mixes as it can also be used at %(obt)s. Additional "
-"stealth from %(myt)s is one of the main points of using Kiasyd instead of Lasombra %(img_clan_lasombra)s."
+"stealth from %(myt)s is one of the main points of using Kiasyd instead of Lasombra %(lasombra)s."
 msgstr ""
 "Inclus dans la plupart des decks Kiasyd et même dans les mélanges Lasombra-Kiasyd car il peut également être utilisé "
 "avec %(obt)s. La discrétion supplémentaire de %(myt)s est l'un des principaux avantages à utiliser des Kiasyd au lieu"
-" des Lasombra %(img_clan_lasombra)s."
+" des Lasombra %(lasombra)s."
 
-#: codex_of_the_damned/templates/best-cards/clans/kiasyd.html:51
+#: codex_of_the_damned/templates/best-cards/clans/kiasyd.html:45
 msgid ""
 "Often included when playing four or more Kiasyds in the crypt – it has no burn option and can jam the hand if no "
 "Kiasyd is out yet. This is a 3 pool bloat, a high value for a Master card."
@@ -4965,19 +4972,19 @@ msgstr ""
 "bloquer la main si aucun Kiasyd n'est encore sorti. Il s'agit d'une régénération de 3 points d'influence, ce qui est "
 "élevé pour une carte Maître."
 
-#: codex_of_the_damned/templates/best-cards/clans/kiasyd.html:59
+#: codex_of_the_damned/templates/best-cards/clans/kiasyd.html:53
 msgid "A good disciplines combination at a reasonable price — she is often included in pure Kiasyd crypts."
 msgstr ""
 "Une bonne combinaison de disciplines à un prix raisonnable – elle est souvent incluse dans les cryptes purement "
 "Kiasyd."
 
-#: codex_of_the_damned/templates/best-cards/clans/kiasyd.html:66
+#: codex_of_the_damned/templates/best-cards/clans/kiasyd.html:60
 msgid "The intercept feature can come in handy in some cases, but this card is mostly used for yet another source of stealth"
 msgstr ""
 "L'interception peut être utile dans certains cas, mais cette carte est principalement utilisée pour une source de "
 "discrétion supplémentaire."
 
-#: codex_of_the_damned/templates/best-cards/clans/kiasyd.html:73
+#: codex_of_the_damned/templates/best-cards/clans/kiasyd.html:67
 #, python-format
 msgid ""
 "Yet another stealth source, with a combat option that can come in handy. The ability to cancel an "
@@ -4986,17 +4993,17 @@ msgstr ""
 "Encore une autre source de discrétion, avec une option de combat qui peut être utile. La possibilité d'annuler un "
 "%(immortal_grapple)s peut sauver un vampire, même si ce n'est pas l'intérêt principal de la carte."
 
-#: codex_of_the_damned/templates/best-cards/clans/kiasyd.html:81
+#: codex_of_the_damned/templates/best-cards/clans/kiasyd.html:75
 msgid "Good disciplines combination and an excellent ability in pure Kiasyd crypts, for a very reasonnable 7 pool."
 msgstr ""
 "Bonne combinaison de disciplines et une excellente aptitude dans les cryptes purement Kiasyd, pour un coût de 7 très "
 "raisonnable."
 
-#: codex_of_the_damned/templates/best-cards/clans/kiasyd.html:88
+#: codex_of_the_damned/templates/best-cards/clans/kiasyd.html:82
 msgid "A good disciplines combination for pure Kiasyd crypts, although his ability is rarely used."
 msgstr "Une bonne combinaison de disciplines pour les cryptes purement Kiasyd, bien que son aptitude soit rarement utilisée."
 
-#: codex_of_the_damned/templates/best-cards/clans/kiasyd.html:95
+#: codex_of_the_damned/templates/best-cards/clans/kiasyd.html:89
 msgid ""
 "Although a bit expensive with his 8 pool cost, he has all clan disciplines at superior and an excellent ability that "
 "let him deliver deadlier bleeds to the prey."
@@ -5004,7 +5011,7 @@ msgstr ""
 "Bien qu'un peu cher avec son coût de 8 d'influence, il a toutes les disciplines de clan en supérieur et une "
 "excellente aptitude qui lui permet de mordre la proie plus violemment."
 
-#: codex_of_the_damned/templates/best-cards/clans/kiasyd.html:102
+#: codex_of_the_damned/templates/best-cards/clans/kiasyd.html:96
 #, python-format
 msgid ""
 "Not used in all Kiasyd constructs, as %(dom)s gives access to better bleed actions, its +1 stealth bonus can still be"
@@ -5015,29 +5022,29 @@ msgstr ""
 "mais son bonus de discrétion de +1 peut constituer la pierre angulaire d'une stratégie de discrétion et de morsure. "
 "Combinée avec %(bonding)s, il en résulte une action solide de morsure à 3 avec 2 de discrétion."
 
-#: codex_of_the_damned/templates/best-cards/clans/kiasyd.html:110
+#: codex_of_the_damned/templates/best-cards/clans/kiasyd.html:104
 #, python-format
 msgid ""
 "A nice boost for a lunge move, it is a classic inclusion for pure Kiasyd decks. Again, the lack of a burn option "
-"makes it difficult to include in mixed Lasombra %(img_clan_lasombra)s decks."
+"makes it difficult to include in mixed Lasombra %(lasombra)s decks."
 msgstr ""
 "Un bon coup de pouce pour un coup de grâce, c'est une inclusion classique pour les decks purement Kiasyd. Encore une "
-"fois, l'absence d'option de défausse rend difficile l'inclusion dans les decks Lasombra %(img_clan_lasombra)s mixtes."
+"fois, l'absence d'option de défausse rend difficile l'inclusion dans les decks Lasombra %(lasombra)s mixtes."
 
 #: codex_of_the_damned/templates/best-cards/clans/lasombra.html:8
 #, python-format
 msgid ""
-"The Lasombra and their rare %(obt)s discipline are quite close to the Kiasyd %(img_clan_kiasyd)s, but a little more "
-"played. They have given birth to the infamous %(lasombra_nocturn)s archetype, one of the strongest stealth & bleed "
-"archetypes of the game using the %(DOM)s%(OBT)s disciplines combination. They also can be used for political or even "
-"toolbox builds, but this is a rarer occurence."
+"The Lasombra and their rare %(obt)s discipline are quite close to the Kiasyd %(kiasyd)s, but a little more played. "
+"They have given birth to the infamous %(lasombra_nocturn)s archetype, one of the strongest stealth & bleed archetypes"
+" of the game using the %(DOM)s%(OBT)s disciplines combination. They also can be used for political or even toolbox "
+"builds, but this is a rarer occurence."
 msgstr ""
-"Les Lasombra et leur rare discipline %(obt)s sont assez proches des Kiasyd %(img_clan_kiasyd)s, mais un peu plus "
-"joués. Ils ont donné naissance au tristement célèbre archétype %(lasombra_nocturn)s, l'un des archétypes stealth & "
-"bleed les plus puissants du jeu qui utilise la combinaison de disciplines %(DOM)s%(OBT)s. Ils peuvent également être "
-"utilisés pour des constructions politiques ou même pour des toolbox, mais c'est plus rare."
+"Les Lasombra et leur discipline %(obt)s sont assez proches des Kiasyd %(kiasyd)s, mais un peu plus joués. Ils ont "
+"donné naissance au fameux archétype %(lasombra_nocturn)s, un des archétypes stealth & bleed les plus puissants du jeu"
+" qui utilise la combinaison de disciplines %(DOM)s%(OBT)s. Ils peuvent aussi être utilisés en politique ou même en "
+"toolbox, mais ce sont des constructions plus rares."
 
-#: codex_of_the_damned/templates/best-cards/clans/lasombra.html:25
+#: codex_of_the_damned/templates/best-cards/clans/lasombra.html:23
 #, python-format
 msgid ""
 "The strongest stealth for %(obt)s, pricier than the %(obf)s equivalents %(lost_in_crowds)s and %(into_thin_air)s of "
@@ -5046,29 +5053,29 @@ msgstr ""
 "La discrétion la plus puissante en %(obt)s, plus chère que les équivalents %(obf)s %(lost_in_crowds)s et "
 "%(into_thin_air)s bien sûr."
 
-#: codex_of_the_damned/templates/best-cards/clans/lasombra.html:35
+#: codex_of_the_damned/templates/best-cards/clans/lasombra.html:33
 msgid "Another stealth modifier, this one at no cost."
 msgstr "Un autre modificateur de discrétion, celui-ci sans frais."
 
-#: codex_of_the_damned/templates/best-cards/clans/lasombra.html:41
+#: codex_of_the_damned/templates/best-cards/clans/lasombra.html:39
 #, python-format
 msgid "Yet another stealth enhancer, this one only really useful at superior %(OBT)s."
 msgstr "Encore un autre améliorateur de discrétion, celui-ci n'est vraiment utile qu'en %(OBT)s supérieur."
 
-#: codex_of_the_damned/templates/best-cards/clans/lasombra.html:47
+#: codex_of_the_damned/templates/best-cards/clans/lasombra.html:45
 #, python-format
 msgid ""
 "Only 5 pool for %(DOM)s%(OBT)s, plus he is Black Hand. He gets included in a lot of decks, Lasombra, Kiasyd "
-"%(img_clan_kiasyd)s or Black Hand alike."
+"%(kiasyd)s or Black Hand alike."
 msgstr ""
 "Seulement 5 d'influence pour %(DOM)s%(OBT)s, il est par ailleurs Black Hand. Il est inclus dans de nombreux decks, "
-"Lasombra, Kiasyd %(img_clan_kiasyd)s ou Black Hand."
+"Lasombra, Kiasyd %(kiasyd)s ou Black Hand."
 
-#: codex_of_the_damned/templates/best-cards/clans/lasombra.html:56
+#: codex_of_the_damned/templates/best-cards/clans/lasombra.html:52
 msgid "An excellent permanent stealth enhancer for a reasonable 2 pool cost."
 msgstr "Un excellent améliorateur de discrétion permanent pour un coût raisonnable de 2 d'influence."
 
-#: codex_of_the_damned/templates/best-cards/clans/lasombra.html:62
+#: codex_of_the_damned/templates/best-cards/clans/lasombra.html:58
 #, python-format
 msgid ""
 "Although he lasts only one turn, he can either bleed for 1 or be kept for defence. Also, %(the_path_of_night)s can be"
@@ -5078,7 +5085,7 @@ msgstr ""
 " être utilisé pour baisser son soût et %(the_unmasking)s et %(fbi_special_affairs_division)s peuvent être utilisés "
 "pour l'améliorer."
 
-#: codex_of_the_damned/templates/best-cards/clans/lasombra.html:74
+#: codex_of_the_damned/templates/best-cards/clans/lasombra.html:70
 #, python-format
 msgid ""
 "An excellent combat defence with the \"combat ends\" effect, it can also come in handy at superior %(OBT)s. This "
@@ -5087,7 +5094,7 @@ msgstr ""
 "Excellente défense de combat avec l'effet « fin de combat », elle peut également être utile en %(OBT)s supérieur. Cet"
 " effet explique pourquoi il est souvent préféré à son alternative l'%(oubliette)s."
 
-#: codex_of_the_damned/templates/best-cards/clans/lasombra.html:82
+#: codex_of_the_damned/templates/best-cards/clans/lasombra.html:78
 #, python-format
 msgid ""
 "Yet another stealth enhancer, the superior %(OBT)s effect can be a useful block denial, although locking two vampires"
@@ -5096,7 +5103,7 @@ msgstr ""
 "Encore un autre améliorateur de discrétion, l'effet en %(OBT)s supérieur peut être un déni de bloc utile, bien que "
 "verrouiller deux vampires pour obtenir une seule action soit vraiment coûteux en termes d'%(a_b)s."
 
-#: codex_of_the_damned/templates/best-cards/clans/lasombra.html:90
+#: codex_of_the_damned/templates/best-cards/clans/lasombra.html:86
 #, python-format
 msgid ""
 "Completing the stealth arsenal of %(obt)s, this one as a nice side-effect at superior %(OBT)s: it prevents allies to "
@@ -5107,12 +5114,12 @@ msgstr ""
 "alliés de bloquer l'action, car ils n'ont pas de sang pour payer (et comme ce n'est pas une carte qu'<em>ils</em> "
 "jouent, ils ne peuvent pas utiliser leur vie à la place)."
 
-#: codex_of_the_damned/templates/best-cards/clans/lasombra.html:99
+#: codex_of_the_damned/templates/best-cards/clans/lasombra.html:95
 #, python-format
 msgid "The precious %(OBT)s%(DOM)s combination for 6 pool, a common inclusion in Lasombra crypts."
 msgstr "La précieuse combinaison %(OBT)s%(DOM)s pour 6 d'influence, une inclusion commune dans les cryptes Lasombra."
 
-#: codex_of_the_damned/templates/best-cards/clans/lasombra.html:106
+#: codex_of_the_damned/templates/best-cards/clans/lasombra.html:102
 #, python-format
 msgid ""
 "Superior %(DOM)s for 5 pool is already good, even with only inderior %(obt)s. The <em>Black Hand</em> and "
@@ -5123,7 +5130,7 @@ msgstr ""
 "Hand</em> et <em>Seraph</em> peuvent être utiles, soit en tant qu'améliorateur  pour jouer %(the_admonitions)s, soit "
 "dans des constructions Black Hand à part entière, où un Seraph aussi bon marché brille vraiment."
 
-#: codex_of_the_damned/templates/best-cards/clans/lasombra.html:115
+#: codex_of_the_damned/templates/best-cards/clans/lasombra.html:111
 #, python-format
 msgid ""
 "Often used in %(obt)s heavy builds, as some %(obt)s stealth modifiers cost a blood. It becomes even more powerful "
@@ -5132,20 +5139,20 @@ msgstr ""
 "Souvent utilisé dans les decks lourds en %(obt)s, car certains modificateurs de discrétion %(obt)s coûtent un sang. "
 "Il devient encore plus puissant lorsqu'il est utilisé en conjonction avec quelques %(nocturn)s."
 
-#: codex_of_the_damned/templates/best-cards/clans/lasombra.html:122
+#: codex_of_the_damned/templates/best-cards/clans/lasombra.html:118
 #, python-format
 msgid "A nice %(OBT)s%(dom)s combination for just 5 pool, he is often included in stealth & bleed decks."
 msgstr ""
 "Une belle combinaison %(OBT)s%(dom)s pour seulement 5 d'influence, il est souvent inclus dans les decks stealth & "
 "bleed."
 
-#: codex_of_the_damned/templates/best-cards/clans/lasombra.html:129
+#: codex_of_the_damned/templates/best-cards/clans/lasombra.html:125
 msgid "He may be considered a bit pricey, but all clan disciplines at superior for 7 pool is really reasonable."
 msgstr ""
 "Il peut être considéré comme un peu cher, mais toutes les disciplines de clan au niveau supérieur pour 7 d'influence,"
 " c'est plutôt raisonnable."
 
-#: codex_of_the_damned/templates/best-cards/clans/lasombra.html:136
+#: codex_of_the_damned/templates/best-cards/clans/lasombra.html:132
 #, python-format
 msgid ""
 "Although combat is rarely used in Lasombra builds, they still have the combat-oriented %(pot)s discipline, and this "
@@ -5156,7 +5163,7 @@ msgstr ""
 "combat, et cette frappe <em>esquive + frappe supplémentaire</em> peut être très efficace. Combinée avec "
 "%(entombment)s, cela devient effrayant."
 
-#: codex_of_the_damned/templates/best-cards/clans/lasombra.html:144
+#: codex_of_the_damned/templates/best-cards/clans/lasombra.html:140
 #, python-format
 msgid ""
 "The bleed bonus along %(DOM)s%(OBT)s is strong, and its unique <em>Priscus</em> ability means he will always provide "
@@ -5462,20 +5469,20 @@ msgstr ""
 #, python-format
 msgid ""
 "One pool for permanent stealth is really a bargain: other clans have to pay 2 pool for this kind of device. Only the "
-"Followers of Set %(img_clan_followers)s have a similar tool with %(opium_den)s."
+"Followers of Set %(follower_of_set)s have a similar tool with %(opium_den)s."
 msgstr ""
 "1 influence pour de la discrétion permanente est vraiment une bonne affaire : les autres clans doivent payer 2 "
-"d'influence pour ce type d'outil. Seuls les Disciples de Set %(img_clan_followers)s ont un outil similaire avec "
+"d'influence pour ce type d'outil. Seuls les Disciples de Set %(follower_of_set)s ont un outil similaire avec "
 "%(opium_den)s."
 
-#: codex_of_the_damned/templates/best-cards/clans/nosferatu.html:59
+#: codex_of_the_damned/templates/best-cards/clans/nosferatu.html:57
 #, python-format
 msgid "A rare effect, quite useful in Nosferatu decks using political actions, like the %(nosferatu_royalty)s archetype."
 msgstr ""
 "Un effet rare, très utile dans les decks Nosferatu qui utilisent des actions politiques, comme l'archétype "
 "%(nosferatu_royalty)s."
 
-#: codex_of_the_damned/templates/best-cards/clans/nosferatu.html:68
+#: codex_of_the_damned/templates/best-cards/clans/nosferatu.html:66
 #, python-format
 msgid ""
 "The iconic vampire for %(nosferatu_royalty)s decks, he has an excellent ability that helps get other <em>Princes</em>"
@@ -5484,7 +5491,7 @@ msgstr ""
 "Vampire emblématique des decks %(nosferatu_royalty)s, il a une excellente aptitude qui aide à sortir les autres "
 "<em>Princes</em> plus rapidement et pour moins cher, ou à régénérer un peu."
 
-#: codex_of_the_damned/templates/best-cards/clans/nosferatu.html:77
+#: codex_of_the_damned/templates/best-cards/clans/nosferatu.html:75
 #, python-format
 msgid ""
 "Appreciated for his rush ability, he is often included in combat-oriented %(POT)s%(ANI)s decks like the "
@@ -5493,13 +5500,13 @@ msgstr ""
 "Apprécié pour son aptitude de rush, il est souvent inclus dans les decks orientés combat %(POT)s%(ANI)s comme "
 "l'archétype %(guruhi_rush)s."
 
-#: codex_of_the_damned/templates/best-cards/clans/nosferatu.html:84
+#: codex_of_the_damned/templates/best-cards/clans/nosferatu.html:82
 msgid ""
 "A <em>Prince</em> available for a really cheap price, even though his ability can be a problem depending on the "
 "context."
 msgstr "Un <em>Prince</em> pour un prix vraiment bas, même si son aptitude peut poser problème selon le contexte."
 
-#: codex_of_the_damned/templates/best-cards/clans/nosferatu.html:91
+#: codex_of_the_damned/templates/best-cards/clans/nosferatu.html:89
 #, python-format
 msgid ""
 "A <em>Prince</em> for the very reasonable price of 7 pool, he is often seen in %(nosferatu_royalty)s decks alongside "
@@ -5508,7 +5515,7 @@ msgstr ""
 "Un <em>Prince</em> au prix très raisonnable de 7 d'influence, il est souvent vu dans les decks %(nosferatu_royalty)s "
 "aux côtés de %(nikolaus_vermeulen)s et %(calebros_the_martyr)s."
 
-#: codex_of_the_damned/templates/best-cards/clans/nosferatu.html:103
+#: codex_of_the_damned/templates/best-cards/clans/nosferatu.html:101
 #, python-format
 msgid ""
 "His title and bleed bonus, combined with the rare %(DOM)s%(OBF)s discipline combination, makes him a good pick in "
@@ -5519,7 +5526,7 @@ msgstr ""
 " dans certains decks politiques, comme dans l'archétype %(mistress)s. Sa capacité lui permet de détruire à lui seul "
 "les decks Anarch de faible capacité."
 
-#: codex_of_the_damned/templates/best-cards/clans/nosferatu.html:112
+#: codex_of_the_damned/templates/best-cards/clans/nosferatu.html:110
 #, python-format
 msgid ""
 "Yet another <em>Prince</em>, she is a bit expensive and does not even have superior %(ANI)s. Still, she can find her "
@@ -5528,7 +5535,7 @@ msgstr ""
 "Encore un <em>Prince</em>, elle est un peu chère et n'a pas %(ANI)s en supérieur. Pourtant, elle peut trouver sa "
 "place dans les decks <em>Royalty</em> qui utilisent %(OBF)s, comme dans l'archétype %(the_dark_side_of_politics)s."
 
-#: codex_of_the_damned/templates/best-cards/clans/nosferatu.html:120
+#: codex_of_the_damned/templates/best-cards/clans/nosferatu.html:118
 #, python-format
 msgid ""
 "Always included for his ability and strength combined with %(POT)s%(cel)s, he gets included in %(POT)s decks like for"
@@ -7548,14 +7555,14 @@ msgstr ""
 #, python-format
 msgid ""
 "A bleed modifier available to %(POT)s%(PRE)s decks. It is better than %(aire_of_elation)s for non-Toreador "
-"%(img_clan_toreador)s decks, as it does not cost a blood. The alternate use for some votes at inferior can come in "
-"handy if the deck has some political actions."
+"%(toreador)s decks, as it does not cost a blood. The alternate use for some votes at inferior can come in handy if "
+"the deck has some political actions."
 msgstr ""
 "Un modificateur de morsure disponible pour les decks %(POT)s%(PRE)s. C'est mieux qu'%(aire_of_elation)s pour les "
-"decks non-Toréador %(img_clan_toreador)s, car cela ne coûte pas de sang. L'utilisation alternative pour des votes en "
-"inférieur peut être utile si le jeu comporte des actions politiques."
+"decks non-Toréador %(toreador)s, car cela ne coûte pas de sang. L'utilisation alternative pour des votes en inférieur"
+" peut être utile si le jeu comporte des actions politiques."
 
-#: codex_of_the_damned/templates/best-cards/generic/potence.html:65
+#: codex_of_the_damned/templates/best-cards/generic/potence.html:64
 #, python-format
 msgid ""
 "A good strike by itself, the maneuver is useful for pure %(pot)s modules that do not have better options for "
@@ -7564,7 +7571,7 @@ msgstr ""
 "Une bonne frappe en soi, la manœuvre est utile pour les modules %(pot)s purs qui n'ont pas de meilleures options de "
 "manœuvre."
 
-#: codex_of_the_damned/templates/best-cards/generic/potence.html:72
+#: codex_of_the_damned/templates/best-cards/generic/potence.html:71
 #, python-format
 msgid ""
 "An excellent long range strike, it can also be used as an alternative against long range combat modules. In this case"
@@ -7615,19 +7622,19 @@ msgstr ""
 #: codex_of_the_damned/templates/best-cards/generic/presence.html:43
 #, python-format
 msgid ""
-"The best bleed modifier of %(pre)s, it is inferior to %(dom)s %(conditioning)s, except for Toreador "
-"%(img_clan_toreador)s. Still, such a strong bleed modifier is worth it for decks with no access to %(dom)s."
+"The best bleed modifier of %(pre)s, it is inferior to %(dom)s %(conditioning)s, except for Toreador %(toreador)s. "
+"Still, such a strong bleed modifier is worth it for decks with no access to %(dom)s."
 msgstr ""
 "Le meilleur modificateur de morsure de %(pre)s, il est inférieur à %(dom)s %(conditioning)s, sauf pour les Toreador "
-"%(img_clan_toreador)s. Un modificateur de morsure si puissant reste intéressant pour les decks sans accès à %(dom)s."
+"%(toreador)s. Un modificateur de morsure si puissant reste intéressant pour les decks sans accès à %(dom)s."
 
-#: codex_of_the_damned/templates/best-cards/generic/presence.html:54
+#: codex_of_the_damned/templates/best-cards/generic/presence.html:53
 msgid "A versatile tool for big capacity vote decks: more votes or a good modifier to help get an action through."
 msgstr ""
 "Un outil polyvalent pour les decks de vote à hautes capacités : plus de votes ou un bon modificateur pour aider à "
 "faire passer une action."
 
-#: codex_of_the_damned/templates/best-cards/generic/presence.html:61
+#: codex_of_the_damned/templates/best-cards/generic/presence.html:60
 #, python-format
 msgid ""
 "A weaker version of the popular %(dom)s %(govern_the_unaligned)s, it has the same advantages: a good accelerator in "
@@ -7636,12 +7643,12 @@ msgstr ""
 "Une version plus faible du populaire %(dom)s %(govern_the_unaligned)s, il a les mêmes avantages : un bon accélérateur"
 " au début pour sortir plus de vampires à moindre frais, une belle action de morsure plus tard."
 
-#: codex_of_the_damned/templates/best-cards/generic/presence.html:69
+#: codex_of_the_damned/templates/best-cards/generic/presence.html:68
 #, python-format
 msgid "One of the best vote modifier of the game with 4 votes at no cost at superior %(PRE)s."
 msgstr "Un des meilleurs modificateurs de voix du jeu avec 4 votes gratuits en %(PRE)s supérieure."
 
-#: codex_of_the_damned/templates/best-cards/generic/presence.html:75
+#: codex_of_the_damned/templates/best-cards/generic/presence.html:74
 #, python-format
 msgid ""
 "A bit more expensive than %(bewitching_oration)s, it gives a better guarantee to be able to get a vote through and "
@@ -7872,22 +7879,21 @@ msgstr ""
 #: codex_of_the_damned/templates/best-cards/sects/camarilla.html:75
 #, python-format
 msgid ""
-"Some Praxis give a capacity bonus to a specific clan. The Brujah %(img_clan_brujah)s one is slightly more played "
-"because they have powerful cards for their <em>Princes</em> like %(new_carthage)s and %(carthage_remembered)s."
+"Some Praxis give a capacity bonus to a specific clan. The Brujah %(brujah)s one is slightly more played because they "
+"have powerful cards for their <em>Princes</em> like %(new_carthage)s and %(carthage_remembered)s."
 msgstr ""
-"Certains Praxis donnent un bonus de capacité à un clan spécifique. La Brujah %(img_clan_brujah)s est un peu plus "
-"jouée car ils ont des cartes puissantes pour leurs <em>Princes</em> comme %(new_carthage)s et "
-"%(carthage_remembered)s."
+"Certains Praxis donnent un bonus de capacité à un clan spécifique. La Brujah %(brujah)s est un peu plus jouée car ils"
+" ont des cartes puissantes pour leurs <em>Princes</em> comme %(new_carthage)s et %(carthage_remembered)s."
 
-#: codex_of_the_damned/templates/best-cards/sects/camarilla.html:87
+#: codex_of_the_damned/templates/best-cards/sects/camarilla.html:86
 #, python-format
 msgid ""
 "A powerful bloat device, although a bit tricky to land: one needs both the stealth and votes to get it through, and a"
-" combat module strong enough to trigger it. A vote most often seen played by the Brujah %(img_clan_brujah)s."
+" combat module strong enough to trigger it. A vote most often seen played by the Brujah %(brujah)s."
 msgstr ""
 "Un outil de régénération puissant, bien qu'un peu délicat à faire passer : il faut à la fois la discrétion et les "
 "votes pour ça, et un module de combat suffisamment puissant pour le déclencher. Un vote le plus souvent vu dans les "
-"decks Brujah %(img_clan_brujah)s."
+"decks Brujah %(brujah)s."
 
 #: codex_of_the_damned/templates/best-cards/sects/laibon.html:8
 msgid "The Laibon offer unique tools to its members all around, be it for block, combat, politics or bleed."
@@ -7911,16 +7917,16 @@ msgstr ""
 #, python-format
 msgid ""
 "A decent bloat device for Laibon, although it is a little bit pricey compared to similar clan cards like the Toreador"
-" %(img_clan_toreador)s %(art_museum)s."
+" %(toreador)s %(art_museum)s."
 msgstr ""
 "Un appareil de régénération décent pour les Laibon, bien qu'il soit un peu cher comparé à des cartes de clan "
-"similaires comme l'%(art_museum)s Toreador %(img_clan_toreador)s."
+"similaires comme l'%(art_museum)s Toreador %(toreador)s."
 
-#: codex_of_the_damned/templates/best-cards/sects/laibon.html:40
+#: codex_of_the_damned/templates/best-cards/sects/laibon.html:39
 msgid "A good prevention effect at a low cost, it is an easy inclusion in combat-oriented decks."
 msgstr "Un bon effet de prévention à faible coût, c'est une intégration facile dans les decks orientés combat."
 
-#: codex_of_the_damned/templates/best-cards/sects/laibon.html:46
+#: codex_of_the_damned/templates/best-cards/sects/laibon.html:45
 #, python-format
 msgid ""
 "A powerful interception device for the <em>Magaji</em>, it compares to the Camarilla's %(second_tradition_domain)s. "
@@ -7931,14 +7937,14 @@ msgstr ""
 "Camarilla. Bien que l'interception soit plus faible, l'effet de réveil permanent est exceptionnellement fort. Il ne "
 "faut pas manquer un bloc pour le conserver, donc un peu d'amélioration d'interception est appréciable."
 
-#: codex_of_the_damned/templates/best-cards/sects/laibon.html:56
+#: codex_of_the_damned/templates/best-cards/sects/laibon.html:55
 #, python-format
 msgid "A bit pricey for just the bleed bonus, it becomes a worthwile addition in political decks like %(ishtarri_politics)s."
 msgstr ""
 "Un peu cher pour le bonus de morsure seul, il devient un ajout valable dans les decks politiques comme "
 "%(ishtarri_politics)s."
 
-#: codex_of_the_damned/templates/best-cards/sects/laibon.html:65
+#: codex_of_the_damned/templates/best-cards/sects/laibon.html:64
 msgid ""
 "A good pool reduction that can amount to a very decent bloat if played alongside enough pool-costing cards. Even just"
 " reducing the cost of other master cards can be enough to include it."
@@ -7947,7 +7953,7 @@ msgstr ""
 "suffisamment de cartes coûtant de l'influence. La simple réduction du coût des autres cartes Maître peut suffire à "
 "l'inclure."
 
-#: codex_of_the_damned/templates/best-cards/sects/laibon.html:73
+#: codex_of_the_damned/templates/best-cards/sects/laibon.html:72
 msgid "A bleed and vote enhancer at no cost: an easy inclusion in many Laibon decks."
 msgstr "Un améliorateur de morsure et de vote gratuit : une inclusion facile dans de nombreux decks Laibon."
 
@@ -8546,61 +8552,59 @@ msgstr ""
 "inclinent les serviteurs — %(pentex_subversion)s, %(misdirection)s et %(anarch_troublemaker)s — la question de la "
 "discrétion et de l'interception devient hors-sujet."
 
-#: codex_of_the_damned/templates/strategy/archetypes.html:62 codex_of_the_damned/templates/strategy/archetypes.html:190
-#: codex_of_the_damned/templates/strategy/archetypes.html:304 codex_of_the_damned/templates/strategy/archetypes.html:403
-#: codex_of_the_damned/templates/strategy/archetypes.html:497 codex_of_the_damned/templates/strategy/archetypes.html:565
+#: codex_of_the_damned/templates/strategy/archetypes.html:62 codex_of_the_damned/templates/strategy/archetypes.html:178
+#: codex_of_the_damned/templates/strategy/archetypes.html:283 codex_of_the_damned/templates/strategy/archetypes.html:378
+#: codex_of_the_damned/templates/strategy/archetypes.html:468 codex_of_the_damned/templates/strategy/archetypes.html:534
 msgid "Flavours"
 msgstr "Variétés"
 
 #: codex_of_the_damned/templates/strategy/archetypes.html:65
 #, python-format
 msgid ""
-"Lasombra %(img_clan_lasombra)s and Kiasyd %(img_clan_kiasyd)s have a strong combination with %(dom)s for bleed and "
-"%(obt)s for stealth. Check the %(kiasyd_stealth_bleed)s and %(lasombra_nocturn)s archetypes."
+"Lasombra %(lasombra)s and Kiasyd %(kiasyd)s have a strong combination with %(dom)s for bleed and %(obt)s for stealth."
+" Check the %(kiasyd_stealth_bleed)s and %(lasombra_nocturn)s archetypes."
 msgstr ""
-"Les Lasombra %(img_clan_lasombra)s et les Kiasyd %(img_clan_kiasyd)s ont une bonne combinaison avec %(dom)s pour la "
-"morsure et %(obt)s pour la discrétion. Voyez les archétypes %(kiasyd_stealth_bleed)s et %(lasombra_nocturn)s."
+"Les Lasombra %(lasombra)s et les Kiasyd %(kiasyd)s ont une bonne combinaison avec %(dom)s pour la morsure et %(obt)s "
+"pour la discrétion. Voyez les archétypes %(kiasyd_stealth_bleed)s et %(lasombra_nocturn)s."
 
-#: codex_of_the_damned/templates/strategy/archetypes.html:79
+#: codex_of_the_damned/templates/strategy/archetypes.html:75
 #, python-format
 msgid ""
-"The Malkavian %(img_clan_malkavian)s can use %(dem)s, alone or alongside %(obf)s, for devastating bleeds, like in the"
-" %(weenie_dem)s archetype."
+"The Malkavian %(malkavian)s can use %(dem)s, alone or alongside %(obf)s, for devastating bleeds, like in the "
+"%(weenie_dem)s archetype."
 msgstr ""
-"Les Malkavien %(img_clan_malkavian)s peuvent utiliser %(dem)s, seul ou avec %(obf)s, pour des morsures dévastatrices,"
-" comme dans l'archétype %(weenie_dem)s."
+"Les Malkavien %(malkavian)s peuvent utiliser %(dem)s, seul ou avec %(obf)s, pour des morsures dévastatrices, comme "
+"dans l'archétype %(weenie_dem)s."
 
-#: codex_of_the_damned/templates/strategy/archetypes.html:90
+#: codex_of_the_damned/templates/strategy/archetypes.html:84
 #, python-format
-msgid ""
-"Assamite %(img_clan_assamite)s also have a nice combination with %(qui)s and %(obf)s, as in the %(black_hand)s "
-"archetype."
+msgid "Assamite %(assamite)s also have a nice combination with %(qui)s and %(obf)s, as in the %(black_hand)s archetype."
 msgstr ""
-"Les Assamite %(img_clan_assamite)s ont aussi une bonne combinaison avec %(qui)s et %(obf)s, comme dans l'archétype "
+"Les Assamite %(assamite)s ont aussi une bonne combinaison avec %(qui)s et %(obf)s, comme dans l'archétype "
 "%(black_hand)s."
 
-#: codex_of_the_damned/templates/strategy/archetypes.html:100
+#: codex_of_the_damned/templates/strategy/archetypes.html:92
 #, python-format
 msgid "%(dom)s also works well in weenie archetypes, like %(weenie_dom)s and %(bima_dominate)s."
 msgstr "%(dom)s fonctionne aussi dans un deck weenie, comme dans les archétypes %(weenie_dom)s et %(bima_dominate)s."
 
-#: codex_of_the_damned/templates/strategy/archetypes.html:109
+#: codex_of_the_damned/templates/strategy/archetypes.html:101
 #, python-format
 msgid "Using %(PRO)s for stealth gave birth to powerful bleed deck, as in the %(stanislava)s archetype and its variants."
 msgstr ""
 "Utiliser %(PRO)s pour la discrétion a donné naissance à de puissants decks de morsure, comme l'archétype "
 "%(stanislava)s et ses variantes."
 
-#: codex_of_the_damned/templates/strategy/archetypes.html:117
+#: codex_of_the_damned/templates/strategy/archetypes.html:109
 #, python-format
 msgid ""
-"Toreador %(img_clan_toreador)s with %(PRE)s and Ventrue %(img_clan_ventrue)s with %(DOM)s%(PRE)s can produce strong "
-"powerbleed decks like %(the_bleeding_vignes)s or %(jost_powerbleed)s."
+"Toreador %(toreador)s with %(PRE)s and Ventrue %(ventrue)s with %(DOM)s%(PRE)s can produce strong powerbleed decks "
+"like %(the_bleeding_vignes)s or %(jost_powerbleed)s."
 msgstr ""
-"Les Toréador %(img_clan_toreador)s avec %(PRE)s et les Ventrue %(img_clan_ventrue)s avec %(DOM)s%(PRE)s peuvent "
-"produire de puissants decks powerbleed comme %(the_bleeding_vignes)s ou %(jost_powerbleed)s."
+"Les Toréador %(toreador)s avec %(PRE)s et les Ventrue %(ventrue)s avec %(DOM)s%(PRE)s peuvent produire de puissants "
+"decks powerbleed comme %(the_bleeding_vignes)s ou %(jost_powerbleed)s."
 
-#: codex_of_the_damned/templates/strategy/archetypes.html:131
+#: codex_of_the_damned/templates/strategy/archetypes.html:119
 #, python-format
 msgid ""
 "Inner Circles also deliver a very strong bleed as they have a +2 bleed ability. The %(mistress)s archetype is a good "
@@ -8612,7 +8616,7 @@ msgstr ""
 "<strong>M</strong>aster <strong>P</strong>hase <strong>A</strong>ctions (MMPA), comme dans les archétypes "
 "%(girls_will_find_inner_circle)s ou %(council_of_doom)s."
 
-#: codex_of_the_damned/templates/strategy/archetypes.html:143
+#: codex_of_the_damned/templates/strategy/archetypes.html:131
 #, python-format
 msgid ""
 "Using %(PRO)s to bleed multiple times during the opponents turns with %(homunculus)s is also powerful: "
@@ -8621,13 +8625,13 @@ msgstr ""
 "Utiliser %(PRO)s pour bleeder plusieurs fois pendant les tours des adversaires avec %(homunculus)s est aussi efficace"
 " : %(the_unnamed)s et %(rachel_madness)s sont construits autour de cette idée."
 
-#: codex_of_the_damned/templates/strategy/archetypes.html:154 codex_of_the_damned/templates/strategy/archetypes.html:252
-#: codex_of_the_damned/templates/strategy/archetypes.html:354 codex_of_the_damned/templates/strategy/archetypes.html:449
-#: codex_of_the_damned/templates/strategy/archetypes.html:529 codex_of_the_damned/templates/strategy/archetypes.html:598
+#: codex_of_the_damned/templates/strategy/archetypes.html:142 codex_of_the_damned/templates/strategy/archetypes.html:231
+#: codex_of_the_damned/templates/strategy/archetypes.html:329 codex_of_the_damned/templates/strategy/archetypes.html:420
+#: codex_of_the_damned/templates/strategy/archetypes.html:498 codex_of_the_damned/templates/strategy/archetypes.html:567
 msgid "Highlights"
 msgstr "Principe"
 
-#: codex_of_the_damned/templates/strategy/archetypes.html:156
+#: codex_of_the_damned/templates/strategy/archetypes.html:144
 msgid ""
 "Bleed decks have the <strong>highest prey damage</strong>. They tend to oust their first prey quite often, but it "
 "also attracts the table attention on them and one oust is not enough for a game win. They are usually <strong>weak in"
@@ -8640,11 +8644,11 @@ msgstr ""
 "sur des effets de « fin de combat », mais certaines variétés peuvent utiliser des dégâts aggravés ou des frappes "
 "envoyant en torpeur comme menace."
 
-#: codex_of_the_damned/templates/strategy/archetypes.html:164
+#: codex_of_the_damned/templates/strategy/archetypes.html:152
 msgid "Stealth rotation"
 msgstr "Rotation de discrétion"
 
-#: codex_of_the_damned/templates/strategy/archetypes.html:166
+#: codex_of_the_damned/templates/strategy/archetypes.html:154
 msgid ""
 "Stealth & Bleed archetypes have a strong stealth module, but it can jam the hand. If the prey assumes she will not "
 "have the means to block, she should decide not to attempt to block at all, and <strong>try to jam her predator hand "
@@ -8655,7 +8659,7 @@ msgstr ""
 "d'enrayer la main de son prédateur sur la discrétion</strong>. Les decks Stealth & Bleed bien construits incluent des"
 " outils de rotation pour aider avec ce souci."
 
-#: codex_of_the_damned/templates/strategy/archetypes.html:175
+#: codex_of_the_damned/templates/strategy/archetypes.html:163
 #, python-format
 msgid ""
 "As they are focused on their prey, bleed decks have a weak defence against their predator and do not try to intercept"
@@ -8665,11 +8669,11 @@ msgstr ""
 "tentent pas de bloquer ses actions. Ils utilisent généralement les rebonds de %(dom)s ou %(AUS)s ou un solide module "
 "de régénération pour survivre."
 
-#: codex_of_the_damned/templates/strategy/archetypes.html:181
+#: codex_of_the_damned/templates/strategy/archetypes.html:169
 msgid "Vote"
 msgstr "Vote"
 
-#: codex_of_the_damned/templates/strategy/archetypes.html:183
+#: codex_of_the_damned/templates/strategy/archetypes.html:171
 msgid ""
 "Vote decks usually have a strong pool damage module to deliver to their prey. The difficulty to gather enough votes "
 "to get the referendums through is balanced by the constant +1 stealth bonus of vote actions. There are basically two "
@@ -8682,50 +8686,48 @@ msgstr ""
 " et trouver un moyen de donner des votes à tous les vampires, ou utiliser des vampires plus âgés ayant des titres en "
 "propre."
 
-#: codex_of_the_damned/templates/strategy/archetypes.html:193
+#: codex_of_the_damned/templates/strategy/archetypes.html:181
 #, python-format
 msgid "Inner Circle can be used in strong vote decks, as in %(the_dark_side_of_politics)s and %(lutz_politics)s."
 msgstr ""
 "Les membres du Crecle Intérieur peuvent être utilisé dans de puissants decks de vote, comme avec "
 "%(the_dark_side_of_politics)s ou %(lutz_politics)s."
 
-#: codex_of_the_damned/templates/strategy/archetypes.html:202
+#: codex_of_the_damned/templates/strategy/archetypes.html:190
 #, python-format
 msgid "Camarilla Princes also often use votes, like in the %(nosferatu_royalty)s archetype."
 msgstr ""
 "Les Princes de la Camarilla utilisent aussi souvent une stratégie de vote, comme dans l'archétype "
 "%(nosferatu_royalty)s."
 
-#: codex_of_the_damned/templates/strategy/archetypes.html:209
+#: codex_of_the_damned/templates/strategy/archetypes.html:197
 #, python-format
 msgid ""
-"Non Camarilla vampires can also build good titled crypts, especially Ishtarri %(img_clan_ishtarri)s with "
-"%(ishtarri_politics)s and Daughters of Cacophony %(img_clan_daughters)s with %(scout)s and %(daughters_politics)s."
+"Non Camarilla vampires can also build good titled crypts, especially Ishtarri %(ishtarri)s with %(ishtarri_politics)s"
+" and Daughters of Cacophony %(daughter_of_cacophony)s with %(scout)s and %(daughters_politics)s."
 msgstr ""
-"Les vampires hors Camarilla peuvent aussi fournir de bonne cryptes titrées, en particulier les Ishtarri "
-"%(img_clan_ishtarri)s avec %(ishtarri_politics)s et les Filles de la Cacophonie %(img_clan_daughters)s avec %(scout)s"
-" et %(daughters_politics)s."
+"Les vampires hors Camarilla peuvent aussi fournir de bonne cryptes titrées, en particulier les Ishtarri %(ishtarri)s "
+"avec %(ishtarri_politics)s et les Filles de la Cacophonie %(daughter_of_cacophony)s avec %(scout)s et "
+"%(daughters_politics)s."
+
+#: codex_of_the_damned/templates/strategy/archetypes.html:208
+#, python-format
+msgid "Baali %(baali)s offer a nice political angle with %(the_dark_side_of_politics)s."
+msgstr "Les Baali %(baali)s fournissent un angle d'attaque politique intéressant avec %(the_dark_side_of_politics)s."
+
+#: codex_of_the_damned/templates/strategy/archetypes.html:215
+#, python-format
+msgid "Assamite %(assamite)s also have good options, like in the %(amaravati_politics)s or the %(death_star)s archetypes."
+msgstr ""
+"Les Assamites %(assamite)s ont aussi de bonnes options, comme dans les archétypes %(amaravati_politics)s ou "
+"%(death_star)s."
 
 #: codex_of_the_damned/templates/strategy/archetypes.html:224
 #, python-format
-msgid "Baali %(img_clan_baali)s offer a nice political angle with %(the_dark_side_of_politics)s."
-msgstr "Les Baali %(img_clan_baali)s fournissent un angle d'attaque politique intéressant avec %(the_dark_side_of_politics)s."
+msgid "Ravnos %(ravnos)s have a unique breed archetype: the %(ravnos_clown_car)s."
+msgstr "Les Ravnos %(ravnos)s ont un archétype de prolifération assez unique : la %(ravnos_clown_car)s."
 
-#: codex_of_the_damned/templates/strategy/archetypes.html:232
-#, python-format
-msgid ""
-"Assamite %(img_clan_assamite)s also have good options, like in the %(amaravati_politics)s or the %(death_star)s "
-"archetypes."
-msgstr ""
-"Les Assamites %(img_clan_assamite)s ont aussi de bonnes options, comme dans les archétypes %(amaravati_politics)s ou "
-"%(death_star)s."
-
-#: codex_of_the_damned/templates/strategy/archetypes.html:243
-#, python-format
-msgid "Ravnos %(img_clan_ravnos)s have a unique breed archetype: the %(ravnos_clown_car)s."
-msgstr "Les Ravnos %(img_clan_ravnos)s ont un archétype de prolifération assez unique : la %(ravnos_clown_car)s."
-
-#: codex_of_the_damned/templates/strategy/archetypes.html:254
+#: codex_of_the_damned/templates/strategy/archetypes.html:233
 #, python-format
 msgid ""
 "Votes decks deliver <strong>high pool damage</strong> once they get the vote lock. They also have a <strong>good "
@@ -8743,7 +8745,7 @@ msgstr ""
 "<strong>module de combat léger</strong> et — en particulier les constructions à base d'essaim — une <strong>faible "
 "défense contre la morsure</strong>, qui repose uniquement sur les rebonds, ou même rien du tout."
 
-#: codex_of_the_damned/templates/strategy/archetypes.html:273
+#: codex_of_the_damned/templates/strategy/archetypes.html:252
 #, python-format
 msgid ""
 "Votes can go either ways and can be targeted effortlessly across the table. This gives unique negotiation options to "
@@ -8755,11 +8757,11 @@ msgstr ""
 "amis pendant la partie. La %(table_talk)s est toujours importante dans ce jeu, mais plus encore pour les archétypes "
 "de vote."
 
-#: codex_of_the_damned/templates/strategy/archetypes.html:283 codex_of_the_damned/templates/strategy/deck-building.html:338
+#: codex_of_the_damned/templates/strategy/archetypes.html:262 codex_of_the_damned/templates/strategy/deck-building.html:336
 msgid "Wall"
 msgstr "Mur"
 
-#: codex_of_the_damned/templates/strategy/archetypes.html:285
+#: codex_of_the_damned/templates/strategy/archetypes.html:264
 #, python-format
 msgid ""
 "Wall decks maximise their defence, trying to block their prey and predator actions alike while slowly building up "
@@ -8781,12 +8783,12 @@ msgstr ""
 "cartes d'interception : %(eternal_vigilance)s, %(under_siege)s, %(second_tradition_domain)s et "
 "%(no_secrets_from_the_magaji)s."
 
-#: codex_of_the_damned/templates/strategy/archetypes.html:307
+#: codex_of_the_damned/templates/strategy/archetypes.html:286
 #, python-format
 msgid "%(AUS)s is the best intercept discipline, and the %(weenie_aus)s wall is an obvious idea."
 msgstr "%(AUS)s est la meilleure discipline d'interception et le mur %(weenie_aus)s est une idée évidente."
 
-#: codex_of_the_damned/templates/strategy/archetypes.html:314
+#: codex_of_the_damned/templates/strategy/archetypes.html:293
 #, python-format
 msgid ""
 "The %(tzimisce_wall)s is also a very classic archetype, as the combination of %(ani)s%(vic)s offers even better "
@@ -8795,21 +8797,21 @@ msgstr ""
 "Le %(tzimisce_wall)s est aussi un archétype très classique, étant donné que la combinaison %(ani)s%(vic)s donne des "
 "capacités d'interception encore meilleures."
 
-#: codex_of_the_damned/templates/strategy/archetypes.html:322
+#: codex_of_the_damned/templates/strategy/archetypes.html:301
 #, python-format
 msgid ""
-"Tremere %(img_clan_tremere)s in general, but %(goratrix)s in particular offer excellent wall capabilities in the "
+"Tremere %(tremere)s in general, but %(goratrix)s in particular offer excellent wall capabilities in the "
 "%(goratrix_high_tower)s archetype."
 msgstr ""
-"Les Tremere %(img_clan_tremere)s en général, mais en particulier %(goratrix)s, fournissent d'excellent capacités de "
-"mur dans l'archétype %(goratrix_high_tower)s."
+"Les Tremere %(tremere)s en général, mais en particulier %(goratrix)s, fournissent d'excellent capacités de mur dans "
+"l'archétype %(goratrix_high_tower)s."
 
-#: codex_of_the_damned/templates/strategy/archetypes.html:333
+#: codex_of_the_damned/templates/strategy/archetypes.html:310
 #, python-format
-msgid "The %(cats)s archetype uses Ahrimanes %(img_clan_ahrimanes)s and their %(SPI)s%(ANI)s disciplines combination."
-msgstr "L'archétype %(cats)s utilise des Ahrimanes %(img_clan_ahrimanes)s et leur combinaison de disciplines %(SPI)s%(ANI)s."
+msgid "The %(cats)s archetype uses Ahrimanes %(ahrimane)s and their %(SPI)s%(ANI)s disciplines combination."
+msgstr "L'archétype %(cats)s utilise des Ahrimanes %(ahrimane)s et leur combinaison de disciplines %(SPI)s%(ANI)s."
 
-#: codex_of_the_damned/templates/strategy/archetypes.html:343
+#: codex_of_the_damned/templates/strategy/archetypes.html:318
 #, python-format
 msgid ""
 "%(saulot)s and %(the_capuchin)s provide a nice discipline combination, as they both have %(AUS)s%(THA)s%(FOR)s and +1"
@@ -8818,7 +8820,7 @@ msgstr ""
 "%(saulot)s et %(the_capuchin)s forment une bonne combinaison de disciplines, puisqu'ils ont tous deux "
 "%(AUS)s%(THA)s%(FOR)s et +1 morsure. L'archétype %(saulot_friends)s est construit autour d'eux."
 
-#: codex_of_the_damned/templates/strategy/archetypes.html:356
+#: codex_of_the_damned/templates/strategy/archetypes.html:331
 #, python-format
 msgid ""
 "Wall decks obviously have an <strong>exceptional defence</strong>. Moreover, having high block capabilities let them "
@@ -8836,11 +8838,11 @@ msgstr ""
 "cependant très capables d'épuiser les autres decks autour de la table, et pourront finalement gagner une partie si "
 "aucun autre joueur n'obtient assez de Points de Victoire avant eux."
 
-#: codex_of_the_damned/templates/strategy/archetypes.html:374
+#: codex_of_the_damned/templates/strategy/archetypes.html:349
 msgid "Cross block"
 msgstr "Blocage non standard"
 
-#: codex_of_the_damned/templates/strategy/archetypes.html:376
+#: codex_of_the_damned/templates/strategy/archetypes.html:351
 #, python-format
 msgid ""
 "%(eagles_sight)s and %(falcons_eye)s are the only minion cards in the game that let a vampire block "
@@ -8849,7 +8851,7 @@ msgstr ""
 "%(eagles_sight)s et %(falcons_eye)s sont les deux seules cartes de serviteur permettant à un vampire de bloquer "
 "<strong>n'import quelle</strong> action, même si elle est dirigée contre un autre Mathusalem ou réalisée en face."
 
-#: codex_of_the_damned/templates/strategy/archetypes.html:386
+#: codex_of_the_damned/templates/strategy/archetypes.html:361
 #, python-format
 msgid ""
 "This ability to cross block is an excellent asset in wall decks with %(AUS)s or %(SPI)s as it enhances table control "
@@ -8862,12 +8864,12 @@ msgstr ""
 "dangereux venant du grand-prédateur ou une morsure entreprise par la proie qui pourrait éliminer la grande-proie. Les"
 " decks mur n'utilisant pas ces cartes incluent en général des possibilités de <em>rush</em> à la place."
 
-#: codex_of_the_damned/templates/strategy/archetypes.html:394
+#: codex_of_the_damned/templates/strategy/archetypes.html:369
 #: codex_of_the_damned/templates/strategy/articles/basic/blood-pool-and-grinding-beads.html:213
 msgid "Toolbox"
 msgstr "Toolbox"
 
-#: codex_of_the_damned/templates/strategy/archetypes.html:396
+#: codex_of_the_damned/templates/strategy/archetypes.html:371
 msgid ""
 "Toolbox decks balance their offence and defence capabilities. They have good intercept, a decent combat module and "
 "efficient pool damage options to use on their prey, sometimes even some votes they can try to pass or a bit of "
@@ -8878,7 +8880,7 @@ msgstr ""
 " qu'ils peuvent tenter de faire passer ou un peu de discrétion. Le clé de ces archétypes est d'utiliser des cartes "
 "versatiles fournissant de multiples options de jeu."
 
-#: codex_of_the_damned/templates/strategy/archetypes.html:406
+#: codex_of_the_damned/templates/strategy/archetypes.html:381
 #, python-format
 msgid ""
 "Using Camarilla Princes and Justicars with their access to %(second_tradition_domain)s and %(parity_shift)s led to "
@@ -8887,7 +8889,7 @@ msgstr ""
 "Utiliser les Princes et Justicars de la Camarilla avec leur accès à %(second_tradition_domain)s et %(parity_shift)s a"
 " conduit à des toolbox efficaces comme les archétypes %(aaa)s, %(euro_brujah)s et %(ventrue_royalty)s."
 
-#: codex_of_the_damned/templates/strategy/archetypes.html:419
+#: codex_of_the_damned/templates/strategy/archetypes.html:394
 #, python-format
 msgid ""
 "A lot of archetypes using allies also fall into this category, like %(khazars_diary)s, %(emerald_legion)s and "
@@ -8896,25 +8898,23 @@ msgstr ""
 "Beaucoup d'archétypes utilisant des alliés tombent dans cette catégorie, comme %(khazars_diary)s, %(emerald_legion)s "
 "et %(nephandii)s."
 
-#: codex_of_the_damned/templates/strategy/archetypes.html:429
+#: codex_of_the_damned/templates/strategy/archetypes.html:404
 #, python-format
 msgid ""
-"Ventrue Antitribu %(img_clan_ventrue_anti)s provide excellent toolboxes with the %(anti_ventrue_grinder)s archetype "
-"and its variants."
+"Ventrue Antitribu %(ventrue_antitribu)s provide excellent toolboxes with the %(anti_ventrue_grinder)s archetype and "
+"its variants."
 msgstr ""
-"Les Ventrue Antitribu %(img_clan_ventrue_anti)s forment des toolbox de premier ordre avec l'archétype "
+"Les Ventrue Antitribu %(ventrue_antitribu)s forment des toolbox de premier ordre avec l'archétype "
 "%(anti_ventrue_grinder)s et ses variantes."
 
-#: codex_of_the_damned/templates/strategy/archetypes.html:439
+#: codex_of_the_damned/templates/strategy/archetypes.html:412
 #, python-format
-msgid ""
-"Tremere %(img_clan_tremere)s have a good disciplines combination for a toolbox too, as proves the %(war_chantry)s "
-"archetype."
+msgid "Tremere %(tremere)s have a good disciplines combination for a toolbox too, as proves the %(war_chantry)s archetype."
 msgstr ""
-"Les Tremere %(img_clan_tremere)s ont une bonne combinaison de disciplines pour les toolbox, comme le prouve "
-"l'archétype %(war_chantry)s."
+"Les Tremere %(tremere)s ont une bonne combinaison de disciplines pour les toolbox, comme le prouve l'archétype "
+"%(war_chantry)s."
 
-#: codex_of_the_damned/templates/strategy/archetypes.html:451
+#: codex_of_the_damned/templates/strategy/archetypes.html:422
 msgid ""
 "<strong>Versatility</strong> is obviously the best asset of a toolbox deck. It can handle and exploit any table "
 "configuration. To make the most out of toolbox decks, one has to display excellent table awareness and negotiation "
@@ -8930,11 +8930,11 @@ msgstr ""
 "soit. Le deck décide de la stratégie tout autant que le Mathusalem. Le joueur choisit toujours sur qui utiliser ses "
 "cartes, mais il doit trouver un moyen de les jouer pour que son deck excelle."
 
-#: codex_of_the_damned/templates/strategy/archetypes.html:463
+#: codex_of_the_damned/templates/strategy/archetypes.html:434
 msgid "The Heart of Cheating"
 msgstr "The Heart of Cheating"
 
-#: codex_of_the_damned/templates/strategy/archetypes.html:465
+#: codex_of_the_damned/templates/strategy/archetypes.html:436
 #, python-format
 msgid ""
 "The %(heart_of_nizchetus)s is often included in toolbox builds, as it gives more control to the Methusalah over what "
@@ -8943,7 +8943,7 @@ msgstr ""
 "Le %(heart_of_nizchetus)s est souvent inclus dans les decks toolbox, car il donne un meilleur contrôle au Mathusalem "
 "sur ce que peut être son jeu. Son effet entraîne une telle différence qu'il a été surnommé « The Heart of Cheating »."
 
-#: codex_of_the_damned/templates/strategy/archetypes.html:476
+#: codex_of_the_damned/templates/strategy/archetypes.html:447
 msgid ""
 "Finally, toolbox decks have <strong>strong defence</strong>, although not as strong as <em>wall</em> decks. They tend"
 " to have good intercept options and/or rush capabilities to handle their predator. Having much less offensive options"
@@ -8956,11 +8956,11 @@ msgstr ""
 "compter sur la vitesse seule pour faire mieux que leur prédateur : ils doivent entraver ses actions en utilisant des "
 "blocages, des rebonds ou des combats en fonction de la construction."
 
-#: codex_of_the_damned/templates/strategy/archetypes.html:483
+#: codex_of_the_damned/templates/strategy/archetypes.html:454
 msgid "Rush"
 msgstr "Rush"
 
-#: codex_of_the_damned/templates/strategy/archetypes.html:485
+#: codex_of_the_damned/templates/strategy/archetypes.html:456
 #, python-format
 msgid ""
 "Rush decks use combat as their main weapon. Many disciplines have good combat options and they are also good combat "
@@ -8973,28 +8973,28 @@ msgstr ""
 "amusant, mais n'aide pas nécessairement à faire baisser l'influence de la proie. Pour ce faire, une poignée de cartes"
 " peuvent aider, principalement %(fame)s, %(dragonbound)s et %(tension_in_the_ranks)s."
 
-#: codex_of_the_damned/templates/strategy/archetypes.html:500
+#: codex_of_the_damned/templates/strategy/archetypes.html:471
 #, python-format
 msgid "The %(tupdogs)s archetype is a classic, using a dozen %(tupdog)s along a Tremere Antitribu."
 msgstr "L'archétype %(tupdogs)s est un classique, il utilise des dizaines de %(tupdog)s aux côtés d'un Tremere Antitribu."
 
-#: codex_of_the_damned/templates/strategy/archetypes.html:508
+#: codex_of_the_damned/templates/strategy/archetypes.html:479
 #, python-format
 msgid "Allies with a rush ability are also good, like in the %(war_ghouls)s and %(shambling_hordes)s archetypes."
 msgstr ""
 "Les alliés avec une aptitude de rush sont efficaces aussi, comme dans les archétypes %(war_ghouls)s et "
 "%(shambling_hordes)s."
 
-#: codex_of_the_damned/templates/strategy/archetypes.html:517
+#: codex_of_the_damned/templates/strategy/archetypes.html:488
 #, python-format
 msgid ""
-"Guruhi %(img_clan_guruhi)s provide a strong rush build too with their %(POT)s%(ANI)s disciplines combination, like in"
-" the %(guruhi_rush)s and %(nananimalism)s archetypes."
+"Guruhi %(guruhi)s provide a strong rush build too with their %(POT)s%(ANI)s disciplines combination, like in the "
+"%(guruhi_rush)s and %(nananimalism)s archetypes."
 msgstr ""
-"Les Guruhi %(img_clan_guruhi)s fournissent un rush puissant aussi avec leur combinaison de disciplines "
-"%(POT)s%(ANI)s, comme dans les archétypes %(guruhi_rush)s et %(nananimalism)s."
+"Les Guruhi %(guruhi)s fournissent un rush puissant aussi avec leur combinaison de disciplines %(POT)s%(ANI)s, comme "
+"dans les archétypes %(guruhi_rush)s et %(nananimalism)s."
 
-#: codex_of_the_damned/templates/strategy/archetypes.html:531
+#: codex_of_the_damned/templates/strategy/archetypes.html:500
 msgid ""
 "The ability to take down any minion provide these decks with a <strong>strong defence</strong> against their "
 "predator. Depending on the predator archetype, going against its minions first is a common strategy for a rush deck: "
@@ -9008,11 +9008,11 @@ msgstr ""
 " vite. D'un autre côté, ils ont une <strong>faible offensive</strong> et ont des difficultés à trouver un moyen "
 "d'infliger des dégâts d'influence suffisants à leur proie. C'est un problème clé pour ces archétypes."
 
-#: codex_of_the_damned/templates/strategy/archetypes.html:541
+#: codex_of_the_damned/templates/strategy/archetypes.html:510
 msgid "Finnish Politics"
 msgstr "Politique Finlandaise"
 
-#: codex_of_the_damned/templates/strategy/archetypes.html:543
+#: codex_of_the_damned/templates/strategy/archetypes.html:512
 msgid ""
 "If they do not take down their prey very fast, rush decks have a unique control over the table balance as they can "
 "take down the minions of any Methusalah. Proper table control is essential to the succes of such builds, but it also "
@@ -9023,7 +9023,7 @@ msgstr ""
 "la table est essentiel pour ces decks, mais cela ouvre aussi la voie à une stratégie de négociation unique en son "
 "genre : utiliser la menace d'un combat pour extorquer des concessions de ses voisins."
 
-#: codex_of_the_damned/templates/strategy/archetypes.html:551
+#: codex_of_the_damned/templates/strategy/archetypes.html:520
 msgid ""
 "The finnish players have perfect this negociation strategy to such an extent, it is now known as <em>\"Finnish "
 "Politics\"</em> among seasoned players."
@@ -9031,11 +9031,11 @@ msgstr ""
 "Les joueurs et joueuses finlandais ont perfectionné cette stratégie de négociation à un tel niveau qu'elle est "
 "désormais connue comme la <em>\"Politique Finlandaise\"</em> parmis les joueurs expérimentés."
 
-#: codex_of_the_damned/templates/strategy/archetypes.html:557
+#: codex_of_the_damned/templates/strategy/archetypes.html:526
 msgid "Special"
 msgstr "Spécial"
 
-#: codex_of_the_damned/templates/strategy/archetypes.html:559
+#: codex_of_the_damned/templates/strategy/archetypes.html:528
 msgid ""
 "Some decks do not fit into any of the aforementioned categories. These rare constructs are unique combinations of "
 "cards that proved unexpectedly efficient. The following examples are not exhaustive."
@@ -9044,7 +9044,7 @@ msgstr ""
 "combinaisons de cartes exceptionnelles qui ont démontré leur étonnante efficacité. Les exemples qui suivent ne sont "
 "pas exhautifs."
 
-#: codex_of_the_damned/templates/strategy/archetypes.html:568
+#: codex_of_the_damned/templates/strategy/archetypes.html:537
 #, python-format
 msgid ""
 "Some archetypes focus on stealing the vampires of their opponents, like %(mind_rape)s, %(spirit_marionette)s and "
@@ -9053,7 +9053,7 @@ msgstr ""
 "Certains archétypes tentent de voler les vampires de leurs adversaires, comme %(mind_rape)s, %(spirit_marionette)s et"
 " %(baltimore_purge)s."
 
-#: codex_of_the_damned/templates/strategy/archetypes.html:578
+#: codex_of_the_damned/templates/strategy/archetypes.html:547
 #, python-format
 msgid ""
 "The %(cybelotron)s is an archetype created by <em>Erik Torstensson</em> in 2007 and refined by <em>Ben Peal</em>. It "
@@ -9062,7 +9062,7 @@ msgstr ""
 "Le %(cybelotron)s est un archétype créé par <em>Erik Torstensson</em> en 2007 et amélioré par <em>Ben Peal</em>. Il "
 "utilise une combinaison complexe pour jouer %(call_the_great_beast)s efficacement."
 
-#: codex_of_the_damned/templates/strategy/archetypes.html:588
+#: codex_of_the_damned/templates/strategy/archetypes.html:557
 #, python-format
 msgid ""
 "The %(madness_reversal)s is an archetype created by <em>Orian Gissler</em> in 2009 and refined by <em>Danilo "
@@ -9071,7 +9071,7 @@ msgstr ""
 "%(madness_reversal)s est un archétype créé par <em>Orian Gissler</em> en 2009 et amélioré par <em>Danilo Torrisi</em>"
 " en 2017. Il utilise %(reversal_of_fortunes)s pour jouer deux fois plus que ses adversaires."
 
-#: codex_of_the_damned/templates/strategy/archetypes.html:600
+#: codex_of_the_damned/templates/strategy/archetypes.html:569
 msgid ""
 "Special decks tend to use complicated card combinations to a devastative effect. Their strength is in the "
 "<strong>absolute advantage</strong> their combination provides if all goes well. Their weakness is the frailty of "
@@ -9147,8 +9147,8 @@ msgstr ""
 "vampires, puisqu'il est devenu une source d'influence. Les %(hunting_grounds)s peuvent être utilisés – il y en a un "
 "pour chaque clan, plus des hunting grounds génériques ou des cartes qui ont des effets similaires :"
 
-#: codex_of_the_damned/templates/strategy/bloat.html:75 codex_of_the_damned/templates/strategy/bloat.html:127
-#: codex_of_the_damned/templates/strategy/bloat.html:131 codex_of_the_damned/templates/strategy/deck-building.html:136
+#: codex_of_the_damned/templates/strategy/bloat.html:75 codex_of_the_damned/templates/strategy/bloat.html:125
+#: codex_of_the_damned/templates/strategy/bloat.html:129 codex_of_the_damned/templates/strategy/deck-building.html:136
 msgid "needs to be defended"
 msgstr "doit être défendu"
 
@@ -9156,19 +9156,19 @@ msgstr "doit être défendu"
 msgid "City titled vampires"
 msgstr "Vampires avec un titre de ville"
 
-#: codex_of_the_damned/templates/strategy/bloat.html:87
+#: codex_of_the_damned/templates/strategy/bloat.html:85
 msgid "Black Hand, costly and fragile"
 msgstr "Black Hand, coûteux et fragile"
 
-#: codex_of_the_damned/templates/strategy/bloat.html:90
+#: codex_of_the_damned/templates/strategy/bloat.html:88
 msgid "costly and fragile"
 msgstr "coûteux et fragile"
 
-#: codex_of_the_damned/templates/strategy/bloat.html:91
+#: codex_of_the_damned/templates/strategy/bloat.html:89
 msgid "costly and less efficient"
 msgstr "coûteux et moins efficace"
 
-#: codex_of_the_damned/templates/strategy/bloat.html:94
+#: codex_of_the_damned/templates/strategy/bloat.html:92
 msgid ""
 "Finally, a handful of cards can augment the blood amount vampires get from hunting, which is another way to "
 "regenerate their blood:"
@@ -9176,11 +9176,11 @@ msgstr ""
 "Enfin, une poignée de cartes augmentent la quantité de sang que les vampires peuvent récupérer en chassant, ce qui "
 "est une autre manière de régénérer leur sang :"
 
-#: codex_of_the_damned/templates/strategy/bloat.html:106
+#: codex_of_the_damned/templates/strategy/bloat.html:104
 msgid "Master bloating"
 msgstr "Régénération par cartes Maître"
 
-#: codex_of_the_damned/templates/strategy/bloat.html:108
+#: codex_of_the_damned/templates/strategy/bloat.html:106
 msgid ""
 "Another alternative is to let the minions use their blood as they see fit and focus on generating pool directly using"
 " Master cards. A few cards allow this:"
@@ -9188,12 +9188,12 @@ msgstr ""
 "Une autre alternative est de laisser les serviteurs utiliser leur sang comme ils le souhaitent et se concentrer sur "
 "générer de l'influence directement en utilisant des cartes Maître. Quelques cartes le permettent :"
 
-#: codex_of_the_damned/templates/strategy/bloat.html:119
+#: codex_of_the_damned/templates/strategy/bloat.html:117
 #, python-format
 msgid "(uses up a lot of Master slots, best in an MMPA archetypes like %(girls)s)"
 msgstr "(consomme beaucoup d'emplacements de cartes Maître, a sa place dans les archétypes MMPA comme %(girls)s)"
 
-#: codex_of_the_damned/templates/strategy/bloat.html:161
+#: codex_of_the_damned/templates/strategy/bloat.html:155
 #, python-format
 msgid ""
 "Generic investments %(secret_horde)s and %(protracted_investment)s are rarely played, as they need many Master "
@@ -9203,50 +9203,49 @@ msgstr ""
 "consomment une action de Maître et qu'%(ashur_tablets)s leur est généralement préféré lorsque l'on dispose d'assez "
 "d'actions de Maître pour les jouer."
 
-#: codex_of_the_damned/templates/strategy/bloat.html:173
+#: codex_of_the_damned/templates/strategy/bloat.html:167
 msgid "Clan masters"
 msgstr "Cartes maître de clan"
 
-#: codex_of_the_damned/templates/strategy/bloat.html:174
+#: codex_of_the_damned/templates/strategy/bloat.html:168
 msgid "5 clans give access to a unique location generating pool:"
 msgstr "5 clans donnent accès à un lieu unique qui génère de l'influence :"
 
-#: codex_of_the_damned/templates/strategy/bloat.html:198
+#: codex_of_the_damned/templates/strategy/bloat.html:192
 #, python-format
 msgid ""
 "<p> Fast decks can rely on the fact they should score their first Victory Point early and use %(momentums_edge)s and "
 "%(gambit_accepted)s. </p> <p> Finally, those ready to pay the price can even sacrifice some vampires to get some pool"
-" back with %(golconda_inner_peace)s, %(khobar_towers_al_khubar)s (%(img_clan_followers_of_set)s) or "
-"%(redeem_the_lost_soul)s. </p> <h2 id=\"action-bloating\">Action bloating</h2> <p> The last alternative is to use "
-"actions directly to bloat. This is excellent if the action has a powerful alternative, like the infamous %(DOM)s "
-"%(govern_the_unaligned)s or %(PRE)s %(enchant_kindred)s and %(scouting_mission)s, or if the bloat is a side-effect of"
-" a useful action, like %(PRE)s %(legal_manipulations)s and %(social_charm)s, or %(DEM)s %(kindred_spirits)s. </p> <p>"
-" Actions getting blood on uncontrolled vampires with no alternative are less efficient. They can still come in handy "
-"when used in swarm constructs to get many vampiers out quickly, as is the case for %(img_clan_toreador_anti)s "
-"%(art_scam)s and Black Hand %(reunion_kamut)s, but otherwise they are only used sparsingly. %(img_clan_guruhi)s "
-"%(founders_of_the_ebony_kingdom)s and %(img_clan_assamite)s %(khabar_glory)s deserve a special motion, as they are "
+" back with %(golconda_inner_peace)s, %(khobar_towers_al_khubar)s %(follower_of_set)s or %(redeem_the_lost_soul)s. "
+"</p> <h2 id=\"action-bloating\">Action bloating</h2> <p> The last alternative is to use actions directly to bloat. "
+"This is excellent if the action has a powerful alternative, like the infamous %(DOM)s %(govern_the_unaligned)s or "
+"%(PRE)s %(enchant_kindred)s and %(scouting_mission)s, or if the bloat is a side-effect of a useful action, like "
+"%(PRE)s %(legal_manipulations)s and %(social_charm)s, or %(DEM)s %(kindred_spirits)s. </p> <p> Actions getting blood "
+"on uncontrolled vampires with no alternative are less efficient. They can still come in handy when used in swarm "
+"constructs to get many vampiers out quickly, as is the case for Toreador antitribu %(toreador_antitribu)s "
+"%(art_scam)s and Black Hand %(reunion_kamut)s, but otherwise they are only used sparsingly. Guruhi %(guruhi)s "
+"%(founders_of_the_ebony_kingdom)s and Assamite %(assamite)s %(khabar_glory)s deserve a special motion, as they are "
 "unusually high on blood gain. </p>"
 msgstr ""
 "<p> Les decks rapides peuvent compter sur le fait qu'ils devraient marquer leur premier Point de Victoire rapidement "
 "pour jouer %(momentums_edge)s et %(gambit_accepted)s. </p> <p> Enfin, ceux qui sont prêts à en payer le prix peuvent "
 "sacrifier quelques vampires pour récupérer de l'influence avec %(golconda_inner_peace)s, %(khobar_towers_al_khubar)s "
-"(%(img_clan_followers_of_set)s) ou %(redeem_the_lost_soul)s. </p> <h2 id=\"action-bloating\">Régénération par "
-"action</h2> <p> La dernière alternative est d'utiliser des actions directement pour régénérer l'influence. C'est "
-"excellent si l'action présente une alternative puissante, comme le fameux %(DOM)s %(govern_the_unaligned)s ou %(PRE)s"
-" %(enchant_kindred)s et %(scouting_mission)s, ou si la régénération est un effet de bord d'une action déjà utile, "
+"(%(follower_of_set)s) ou %(redeem_the_lost_soul)s. </p> <h2 id=\"action-bloating\">Régénération par action</h2> <p> "
+"La dernière alternative est d'utiliser des actions directement pour régénérer l'influence. C'est excellent si "
+"l'action présente une alternative puissante, comme le fameux %(DOM)s %(govern_the_unaligned)s ou %(PRE)s "
+"%(enchant_kindred)s et %(scouting_mission)s, ou si la régénération est un effet de bord d'une action déjà utile, "
 "comme %(PRE)s %(legal_manipulations)s et %(social_charm)s, ou %(DEM)s %(kindred_spirits)s. </p> <p> Les actions "
 "permettant de mettre du sang sur des vampires non contrôlés sans alternative sont moins efficaces. Elles peuvent tout"
 " de même s'avérer utiles quand elles sont utilisées dans des decks d'essaim pour sortir beaucoup de vampires "
-"rapidement, comme c'est le cas pour %(img_clan_toreador_anti)s %(art_scam)s et %(reunion_kamut)s pour la Black Hand, "
-"mais elles ne sont autrement utilisées qu'avec parcimonie. %(img_clan_guruhi)s %(founders_of_the_ebony_kingdom)s et "
-"%(img_clan_assamite)s %(khabar_glory)s méritent une mention spéciale car elles entraînent un gain d'influence "
-"exceptionnellement haut. </p>"
+"rapidement, comme c'est le cas pour %(toreador_antitribu)s %(art_scam)s et %(reunion_kamut)s pour la Black Hand, mais"
+" elles ne sont autrement utilisées qu'avec parcimonie. %(guruhi)s %(founders_of_the_ebony_kingdom)s et %(assamite)s "
+"%(khabar_glory)s méritent une mention spéciale car elles entraînent un gain d'influence exceptionnellement haut. </p>"
 
-#: codex_of_the_damned/templates/strategy/bloat.html:251
+#: codex_of_the_damned/templates/strategy/bloat.html:239
 msgid "Vote bloating"
 msgstr "Régénération par vote"
 
-#: codex_of_the_damned/templates/strategy/bloat.html:253
+#: codex_of_the_damned/templates/strategy/bloat.html:241
 msgid ""
 "Most standard actions only generate bloats between 1 and 3 points. Some political actions, however, can produce "
 "higher bloats if they get through. They are so efficient, virtually every political oriented deck include some of "
@@ -9256,16 +9255,16 @@ msgstr ""
 "produire une régénération plus importante si elles passent. Elles sont si efficaces qu'à peu près tous les decks "
 "politiques en incluent :"
 
-#: codex_of_the_damned/templates/strategy/bloat.html:265 codex_of_the_damned/templates/strategy/fundamentals.html:271
+#: codex_of_the_damned/templates/strategy/bloat.html:253 codex_of_the_damned/templates/strategy/fundamentals.html:271
 msgid "Prince or Justicar"
 msgstr "Prince ou Justicar"
 
-#: codex_of_the_damned/templates/strategy/bloat.html:267 codex_of_the_damned/templates/strategy/combat.html:69
+#: codex_of_the_damned/templates/strategy/bloat.html:255 codex_of_the_damned/templates/strategy/combat.html:69
 #: codex_of_the_damned/templates/strategy/combat.html:74 codex_of_the_damned/templates/strategy/combat.html:81
 #: codex_of_the_damned/templates/strategy/combat.html:86 codex_of_the_damned/templates/strategy/combat.html:91
-#: codex_of_the_damned/templates/strategy/combat.html:96 codex_of_the_damned/templates/strategy/combat.html:240
-#: codex_of_the_damned/templates/strategy/combat.html:246 codex_of_the_damned/templates/strategy/combat.html:251
-#: codex_of_the_damned/templates/strategy/combat.html:337 codex_of_the_damned/templates/strategy/deck-building.html:202
+#: codex_of_the_damned/templates/strategy/combat.html:96 codex_of_the_damned/templates/strategy/combat.html:236
+#: codex_of_the_damned/templates/strategy/combat.html:242 codex_of_the_damned/templates/strategy/combat.html:247
+#: codex_of_the_damned/templates/strategy/combat.html:333 codex_of_the_damned/templates/strategy/deck-building.html:200
 #: codex_of_the_damned/templates/strategy/fundamentals.html:56 codex_of_the_damned/templates/strategy/fundamentals.html:61
 #: codex_of_the_damned/templates/strategy/fundamentals.html:76 codex_of_the_damned/templates/strategy/fundamentals.html:89
 #: codex_of_the_damned/templates/strategy/fundamentals.html:165
@@ -9274,16 +9273,16 @@ msgstr "Prince ou Justicar"
 msgid "and"
 msgstr "et"
 
-#: codex_of_the_damned/templates/strategy/bloat.html:268 codex_of_the_damned/templates/strategy/fundamentals.html:222
+#: codex_of_the_damned/templates/strategy/bloat.html:256 codex_of_the_damned/templates/strategy/fundamentals.html:222
 msgid "Big capacity vampires"
 msgstr "Vampires de haute capacité"
 
 #. not tokens, strategies against bloat
-#: codex_of_the_damned/templates/strategy/bloat.html:277
+#: codex_of_the_damned/templates/strategy/bloat.html:265
 msgid "Counters"
 msgstr "Contres"
 
-#: codex_of_the_damned/templates/strategy/bloat.html:279
+#: codex_of_the_damned/templates/strategy/bloat.html:267
 #, python-format
 msgid ""
 "Most bloat modules are focused on Master cards. This entails that countering those masters with %(sudden_reversal)s, "
@@ -9345,7 +9344,7 @@ msgstr ""
 msgid "table balance"
 msgstr "équilibre de la table"
 
-#: codex_of_the_damned/templates/strategy/combat.html:21 codex_of_the_damned/templates/strategy/combat.html:292
+#: codex_of_the_damned/templates/strategy/combat.html:21 codex_of_the_damned/templates/strategy/combat.html:288
 msgid "Rush decks"
 msgstr "decks de rush"
 
@@ -9371,12 +9370,12 @@ msgstr ""
 #: codex_of_the_damned/templates/strategy/combat.html:89 codex_of_the_damned/templates/strategy/combat.html:94
 #: codex_of_the_damned/templates/strategy/combat.html:98 codex_of_the_damned/templates/strategy/combat.html:99
 #: codex_of_the_damned/templates/strategy/combat.html:100 codex_of_the_damned/templates/strategy/combat.html:101
-#: codex_of_the_damned/templates/strategy/combat.html:236 codex_of_the_damned/templates/strategy/combat.html:244
-#: codex_of_the_damned/templates/strategy/combat.html:250 codex_of_the_damned/templates/strategy/combat.html:254
-#: codex_of_the_damned/templates/strategy/combat.html:255 codex_of_the_damned/templates/strategy/combat.html:256
-#: codex_of_the_damned/templates/strategy/combat.html:258 codex_of_the_damned/templates/strategy/combat.html:262
-#: codex_of_the_damned/templates/strategy/combat.html:265 codex_of_the_damned/templates/strategy/combat.html:267
-#: codex_of_the_damned/templates/strategy/deck-building.html:201
+#: codex_of_the_damned/templates/strategy/combat.html:232 codex_of_the_damned/templates/strategy/combat.html:240
+#: codex_of_the_damned/templates/strategy/combat.html:246 codex_of_the_damned/templates/strategy/combat.html:250
+#: codex_of_the_damned/templates/strategy/combat.html:251 codex_of_the_damned/templates/strategy/combat.html:252
+#: codex_of_the_damned/templates/strategy/combat.html:254 codex_of_the_damned/templates/strategy/combat.html:258
+#: codex_of_the_damned/templates/strategy/combat.html:261 codex_of_the_damned/templates/strategy/combat.html:263
+#: codex_of_the_damned/templates/strategy/deck-building.html:199
 #: codex_of_the_damned/templates/strategy/fundamentals.html:54 codex_of_the_damned/templates/strategy/fundamentals.html:56
 #: codex_of_the_damned/templates/strategy/fundamentals.html:60
 msgid "with"
@@ -9384,14 +9383,14 @@ msgstr "avec"
 
 #: codex_of_the_damned/templates/strategy/combat.html:103
 #, python-format
-msgid "Gargoyles (%(img_clan_gargoyle)s) with %(raking_talons)s."
-msgstr "Les gargouilles (%(img_clan_gargoyle)s) avec %(raking_talons)s."
+msgid "Gargoyles %(gargoyle)s with %(raking_talons)s."
+msgstr "Les gargouilles %(gargoyle)s avec %(raking_talons)s."
 
-#: codex_of_the_damned/templates/strategy/combat.html:113
+#: codex_of_the_damned/templates/strategy/combat.html:111
 msgid "Using aggravated damage"
 msgstr "Utiliser des dégâts aggravés"
 
-#: codex_of_the_damned/templates/strategy/combat.html:114
+#: codex_of_the_damned/templates/strategy/combat.html:112
 #, python-format
 msgid ""
 "<p> Using aggravated damage while acting is tricky, as the acting minion has to choose <strong>and pay</strong> for "
@@ -9409,7 +9408,7 @@ msgstr ""
 "torpeur quelle que soit sa frappe. Le seul prérequis est que la portée doit être adéquate pour la frappe aggravée. "
 "</p>"
 
-#: codex_of_the_damned/templates/strategy/combat.html:134
+#: codex_of_the_damned/templates/strategy/combat.html:132
 #, python-format
 msgid ""
 "<p> Apart from dealing more damage each strike, <strong>additional strikes</strong> are a good option to deliver more"
@@ -9423,11 +9422,11 @@ msgstr ""
 " (%(san)s). </p> <p> Enfin, %(target_vitals)s est une excellente option pour augmenter les dégâts, disponible "
 "gratuitement pour tous les serviteurs. </p>"
 
-#: codex_of_the_damned/templates/strategy/combat.html:153
+#: codex_of_the_damned/templates/strategy/combat.html:151
 msgid "Weapons"
 msgstr "Armes"
 
-#: codex_of_the_damned/templates/strategy/combat.html:155
+#: codex_of_the_damned/templates/strategy/combat.html:153
 msgid ""
 "Weapons are also a good way to improve damage. There are a lot of weapons available, here are the most efficient and "
 "most played:"
@@ -9435,7 +9434,7 @@ msgstr ""
 "Les armes sont aussi un bon moyen d'augmenter les dégâts. Il y a beaucoup d'armes disponibles, voici les plus "
 "efficaces et les plus jouées :"
 
-#: codex_of_the_damned/templates/strategy/combat.html:162
+#: codex_of_the_damned/templates/strategy/combat.html:160
 #, python-format
 msgid ""
 "%(weighted_walking_stick)s: A weapon that can be wielded without losing an action to equip it. It provides a total of"
@@ -9445,7 +9444,7 @@ msgstr ""
 "total de trois dégâts supplémentaires gratuitement, un très bon ratio."
 
 # python-format
-#: codex_of_the_damned/templates/strategy/combat.html:171
+#: codex_of_the_damned/templates/strategy/combat.html:169
 #, python-format
 msgid ""
 "%(magnum)s: An additional damage each strike, together with a manoeuver to keep the range long an avoid damage. This "
@@ -9456,12 +9455,12 @@ msgstr ""
 "dégiåts. C'est aussi la meilleure arme que %(concealed_weapon)s peut sortir, ce qui évite de perdre une action à "
 "l'équiper (et de risquer l'interception)."
 
-#: codex_of_the_damned/templates/strategy/combat.html:184
+#: codex_of_the_damned/templates/strategy/combat.html:182
 #, python-format
 msgid "%(ivory_bow)s: Although unique, 1 pool for an aggravated ranged damage each strike is a bargain."
 msgstr "%(ivory_bow)s : Bien qu'unique, 1 influence pour un dégât aggravé longue portée à chaque frappe, c'est une affaire."
 
-#: codex_of_the_damned/templates/strategy/combat.html:192
+#: codex_of_the_damned/templates/strategy/combat.html:190
 #, python-format
 msgid ""
 "%(sniper_rifle)s: Although only useful when blocking, its ability to set the range is an excellent option to avoid "
@@ -9470,29 +9469,29 @@ msgstr ""
 "%(sniper_rifle)s : Surtout utile pour bloquer, sa capacité à fixer la portée est une excellent option pour éviter les"
 " dégâts."
 
-#: codex_of_the_damned/templates/strategy/combat.html:201
+#: codex_of_the_damned/templates/strategy/combat.html:199
 #, python-format
 msgid ""
 "%(assault_rifle)s: A stronger version of the %(magnum)s. The 5 pool cost is prohibitive, but if it can be reduced by "
-"bringing it game using %(alastor)s, for example, it is one of the strongest weapon of the game."
+"bringing it in game using %(alastor)s, for example."
 msgstr ""
 "%(assault_rifle)s : Une version plus puissante du %(magnum)s. Le coût de 5 influence est prohibitif, mais il peut "
 "être réduit en le mettant en jeu avec %(alastor)s, par exemple. C'est l'une des armes les plus puissantes du jeu."
 
-#: codex_of_the_damned/templates/strategy/combat.html:214
+#: codex_of_the_damned/templates/strategy/combat.html:212
 #, python-format
 msgid ""
-"%(blade_of_bellona)s: An additional damage and optional manoeuver at no cost, a real bargain for "
-"%(img_clan_salubri_anti)s."
+"%(blade_of_bellona)s: An additional damage and optional manoeuver at no cost, a bargain for Salubri antitribu "
+"%(salubri_antitribu)s."
 msgstr ""
 "%(blade_of_bellona)s : Un dégât de plus avec une manœuvre en option, le tout gratuit – une affaire pour les "
-"%(img_clan_salubri_anti)s."
+"%(salubri_antitribu)s."
 
-#: codex_of_the_damned/templates/strategy/combat.html:226
+#: codex_of_the_damned/templates/strategy/combat.html:222
 msgid "Defence"
 msgstr "Défense"
 
-#: codex_of_the_damned/templates/strategy/combat.html:228
+#: codex_of_the_damned/templates/strategy/combat.html:224
 msgid ""
 "The easiest defense for combats is to avoid them altogether using a <em>Strike: Combat Ends</em>, "
 "<strong>S:CE</strong> for short. Multiple disciplines give access to this option:"
@@ -9501,7 +9500,7 @@ msgstr ""
 "(<em>Strike: Combat Ends</em> en anglais, <strong>S:CE</strong> pour faire court). Plusieurs disciplines donnent "
 "accès à cette option :"
 
-#: codex_of_the_damned/templates/strategy/combat.html:272
+#: codex_of_the_damned/templates/strategy/combat.html:268
 #, python-format
 msgid ""
 "It is worth noting that %(flash_grenade)s is an option for any minion, and also that big capacity vampires have "
@@ -9512,7 +9511,7 @@ msgstr ""
 "haute capacité ont accès à %(dom)s %(obedience)s et %(OBF)s %(mental_maze)s pour éviter complètement le combat, bien "
 "qu'uniquement en réaction."
 
-#: codex_of_the_damned/templates/strategy/combat.html:285
+#: codex_of_the_damned/templates/strategy/combat.html:281
 #, python-format
 msgid ""
 "<h3>How to deal with Strike: Combat Ends (S:CE)</h3> <p> S:CE are a real issue for combat-focused deck. Some "
@@ -9531,7 +9530,7 @@ msgstr ""
 "%(THN)s avec %(relentless_reaper)s et %(CEL)s%(QUI)s avec %(sanguine_entrapment)s. </li> </ul> <p> Sans ça, la seule "
 "option est d'entrer suffisamment souvent en combat pour épuiser les S:CE du côté de la défense. </p>"
 
-#: codex_of_the_damned/templates/strategy/combat.html:321
+#: codex_of_the_damned/templates/strategy/combat.html:317
 #, python-format
 msgid ""
 "<strong>Damage prevention</strong> is another important aspect of combat. It is useful in defence, but also on the "
@@ -9542,12 +9541,12 @@ msgstr ""
 "défensivement, mais aussi offensivement : réduire la perte de sang est toujours bon. %(for)s est la principale "
 "discipline pour la prévention de dégâts et seules quelques cartes de prévention n'en font pas partie :"
 
-#: codex_of_the_damned/templates/strategy/combat.html:329
+#: codex_of_the_damned/templates/strategy/combat.html:325
 #, python-format
 msgid "%(glancing_blow)s prevents only one damage, that makes it a viable option only for saving an ally."
 msgstr "%(glancing_blow)s ne prévient qu'un dégât, ce qui ne le rend viable que pour sauver un allié."
 
-#: codex_of_the_damned/templates/strategy/combat.html:350
+#: codex_of_the_damned/templates/strategy/combat.html:346
 #, python-format
 msgid ""
 "<p> <strong>Dodging</strong> is also a good defensive option, and the simple %(dodge)s is available for everyone. It "
@@ -9563,11 +9562,11 @@ msgstr ""
 "ce sont de bonnes options en défense car elles peuvent constituer une bonne dissuasion contre les decks de combat. "
 "</p>"
 
-#: codex_of_the_damned/templates/strategy/combat.html:368
+#: codex_of_the_damned/templates/strategy/combat.html:364
 msgid "Range Management"
 msgstr "Gestion de la portée"
 
-#: codex_of_the_damned/templates/strategy/combat.html:370
+#: codex_of_the_damned/templates/strategy/combat.html:366
 msgid ""
 "Getting the correct range is fundamental for combat. Most combat module specialize in a given range, either "
 "maintaining <strong>long range</strong> to avoid the basic one damage any vampire can do, or using strong "
@@ -9748,20 +9747,20 @@ msgstr "%(the_sargon_fragment)s est la seule autre option ouverte à tous, mais 
 
 #: codex_of_the_damned/templates/strategy/deck-building.html:190
 #, python-format
-msgid "Giovanni %(img_clan_giovanni)s have the excellent %(sudario_refraction)s and the lesser %(spiritual_guidance)s"
+msgid "Giovanni %(giovanni)s have the excellent %(sudario_refraction)s and the lesser %(spiritual_guidance)s"
 msgstr ""
-"Les Giovanni %(img_clan_giovanni)s disposent de l'excellent %(sudario_refraction)s et de %(spiritual_guidance)s, plus"
-" spécifique"
+"Les Giovanni %(giovanni)s disposent de l'excellent %(sudario_refraction)s et de %(spiritual_guidance)s, plus "
+"spécifique"
 
-#: codex_of_the_damned/templates/strategy/deck-building.html:203
+#: codex_of_the_damned/templates/strategy/deck-building.html:201
 msgid "Anarchs"
 msgstr "Anarchs"
 
-#: codex_of_the_damned/templates/strategy/deck-building.html:207
+#: codex_of_the_damned/templates/strategy/deck-building.html:205
 msgid "Unique, Anarch"
 msgstr "Unique, Anarch"
 
-#: codex_of_the_damned/templates/strategy/deck-building.html:218
+#: codex_of_the_damned/templates/strategy/deck-building.html:216
 msgid ""
 "Beyond its obvious advantage of fetching just the right card at the right time, a good recursion allows a deck to "
 "adapt itself to the context and the table situation."
@@ -9769,15 +9768,15 @@ msgstr ""
 "Au-delà de l'avantage évident de piocher exactement la bonne carte au bon moment, une bonne récursivité permet à un "
 "deck de s'adapter au contexte et à la situation de table."
 
-#: codex_of_the_damned/templates/strategy/deck-building.html:224
+#: codex_of_the_damned/templates/strategy/deck-building.html:222
 msgid "Building a deck in practice"
 msgstr "Construire un deck en pratique"
 
-#: codex_of_the_damned/templates/strategy/deck-building.html:226
+#: codex_of_the_damned/templates/strategy/deck-building.html:224
 msgid "bleed"
 msgstr "morsure"
 
-#: codex_of_the_damned/templates/strategy/deck-building.html:225
+#: codex_of_the_damned/templates/strategy/deck-building.html:223
 #, python-format
 msgid ""
 "<h3>1. Theme</h3> <p> The first step to build a deck is to choose a theme, a core principle to build upon. Multiple "
@@ -9845,31 +9844,31 @@ msgstr ""
 "charge utile est plus importante que le système de transmission, lui-même plus important que la défense, et la "
 "gestion de combat arrive en dernier. </p>"
 
-#: codex_of_the_damned/templates/strategy/deck-building.html:227
+#: codex_of_the_damned/templates/strategy/deck-building.html:225
 msgid "politics"
 msgstr "politique"
 
-#: codex_of_the_damned/templates/strategy/deck-building.html:230
+#: codex_of_the_damned/templates/strategy/deck-building.html:228
 msgid "Bloating"
 msgstr "Régénération"
 
-#: codex_of_the_damned/templates/strategy/deck-building.html:231
+#: codex_of_the_damned/templates/strategy/deck-building.html:229
 msgid "Bounces"
 msgstr "Rebonds"
 
-#: codex_of_the_damned/templates/strategy/deck-building.html:235
+#: codex_of_the_damned/templates/strategy/deck-building.html:233
 msgid "combat posture"
 msgstr "posture de combat"
 
-#: codex_of_the_damned/templates/strategy/deck-building.html:236
+#: codex_of_the_damned/templates/strategy/deck-building.html:234
 msgid "best cards"
 msgstr "top cartes"
 
-#: codex_of_the_damned/templates/strategy/deck-building.html:237
+#: codex_of_the_damned/templates/strategy/deck-building.html:235
 msgid "deck archive"
 msgstr "archive de decks"
 
-#: codex_of_the_damned/templates/strategy/deck-building.html:302
+#: codex_of_the_damned/templates/strategy/deck-building.html:300
 #, python-format
 msgid ""
 "Note at this point you are working in single copies. This means that if you are building a rush combat deck, you "
@@ -9883,7 +9882,7 @@ msgstr ""
 "pourrez choisir d'utiliser des dizaines d'exemplaires des cartes de combat que vous aurez gardées, et un seul "
 "%(fame)s."
 
-#: codex_of_the_damned/templates/strategy/deck-building.html:312
+#: codex_of_the_damned/templates/strategy/deck-building.html:310
 #, python-format
 msgid ""
 "<h3>Counters</h3> <p> If you can predict that specific archetypes will be a threat, consider including specific "
@@ -9902,11 +9901,11 @@ msgstr ""
 #: codex_of_the_damned/templates/strategy/articles/basic/blood-pool-and-grinding-beads.html:38
 #: codex_of_the_damned/templates/strategy/articles/basic/blood-pool-and-grinding-beads.html:94
 #: codex_of_the_damned/templates/strategy/articles/basic/blood-pool-and-grinding-beads.html:198
-#: codex_of_the_damned/templates/strategy/deck-building.html:337
+#: codex_of_the_damned/templates/strategy/deck-building.html:335
 msgid "Stealth & Bleed"
 msgstr "Stealth & Bleed"
 
-#: codex_of_the_damned/templates/strategy/deck-building.html:336
+#: codex_of_the_damned/templates/strategy/deck-building.html:334
 #, python-format
 msgid ""
 "<h3>4. Card flow</h3> <p> Once the skeleton is ready, you can adjust the card flow. First adjust the crypt: use 4 (or"
@@ -9941,40 +9940,40 @@ msgstr ""
 "secondaire pour la régénération et juste un module tactique pour la charge utile. </p> <p> Cette calculette pourra "
 "vous aider à décider du nombre d'exemplaires pour chaque carte : </p>"
 
-#: codex_of_the_damned/templates/strategy/deck-building.html:374
+#: codex_of_the_damned/templates/strategy/deck-building.html:372
 msgid "Probability to get a specific card"
 msgstr "Probabilité d'avoir une carte donnée"
 
-#: codex_of_the_damned/templates/strategy/deck-building.html:375
-#: codex_of_the_damned/templates/strategy/deck-building.html:389
+#: codex_of_the_damned/templates/strategy/deck-building.html:373
+#: codex_of_the_damned/templates/strategy/deck-building.html:387
 msgid "cards in deck:"
 msgstr "cartes dans le deck :"
 
-#: codex_of_the_damned/templates/strategy/deck-building.html:377
+#: codex_of_the_damned/templates/strategy/deck-building.html:375
 msgid "copies of the card:"
 msgstr "exemplaires de la carte :"
 
-#: codex_of_the_damned/templates/strategy/deck-building.html:379
+#: codex_of_the_damned/templates/strategy/deck-building.html:377
 msgid "cards drawn:"
 msgstr "cartes piochées :"
 
-#: codex_of_the_damned/templates/strategy/deck-building.html:388
+#: codex_of_the_damned/templates/strategy/deck-building.html:386
 msgid "Copies needed to get a draw"
 msgstr "Exemplaires requis pour piocher"
 
-#: codex_of_the_damned/templates/strategy/deck-building.html:391
+#: codex_of_the_damned/templates/strategy/deck-building.html:389
 msgid "draws:"
 msgstr "pioches :"
 
-#: codex_of_the_damned/templates/strategy/deck-building.html:393
+#: codex_of_the_damned/templates/strategy/deck-building.html:391
 msgid "desired probability:"
 msgstr "probabilitée voulue :"
 
-#: codex_of_the_damned/templates/strategy/deck-building.html:396
+#: codex_of_the_damned/templates/strategy/deck-building.html:394
 msgid "0 copies"
 msgstr "0 copies"
 
-#: codex_of_the_damned/templates/strategy/deck-building.html:400
+#: codex_of_the_damned/templates/strategy/deck-building.html:398
 msgid ""
 "The probability to get a specific card is computed as the cumulated probability (sum) of having 1, 2, ..., n copies "
 "of the card."
@@ -9982,23 +9981,23 @@ msgstr ""
 "La probabilité de piocher une carte donnée est calculée comme la probabilité cumulée (somme) de piocher 1, 2, ..., n "
 "exemplaires."
 
-#: codex_of_the_damned/templates/strategy/deck-building.html:405
+#: codex_of_the_damned/templates/strategy/deck-building.html:403
 msgid "The formula used is"
 msgstr "La formule utilisée est"
 
-#: codex_of_the_damned/templates/strategy/deck-building.html:407
+#: codex_of_the_damned/templates/strategy/deck-building.html:405
 msgid "with s: stack, d: draws and c: copies and"
 msgstr "avec s : paquet, d : pioche et c : exemplaires et"
 
-#: codex_of_the_damned/templates/strategy/deck-building.html:407
+#: codex_of_the_damned/templates/strategy/deck-building.html:405
 msgid "the binomial coefficients."
 msgstr "les cœfiicients binomiaux."
 
-#: codex_of_the_damned/templates/strategy/deck-building.html:409
+#: codex_of_the_damned/templates/strategy/deck-building.html:407
 msgid "To second computation just computes the preceding probability for consecutive values of c."
 msgstr "Le second calcul additionne simplement la probabilité précédente pour les valeurs successives de c."
 
-#: codex_of_the_damned/templates/strategy/deck-building.html:412
+#: codex_of_the_damned/templates/strategy/deck-building.html:410
 msgid ""
 "<h3>Cycling</h3> <p> If one of your strong module can jam your hand (for example a strong stealth or a strong "
 "intercept module), consider adding cycling-oriented cards (<em>cf.</em> the <a href=\"#rotation\">Rotation</a> "
@@ -10010,7 +10009,7 @@ msgstr ""
 "href=\"#rotation\">Rotation</a>). </p> <p> Elles ne devraient cependant pas être incluses aveuglément ; elles peuvent"
 " tout à fait constituer un obstacle pour un deck sans problème d'enrayement. </p>"
 
-#: codex_of_the_damned/templates/strategy/deck-building.html:423
+#: codex_of_the_damned/templates/strategy/deck-building.html:421
 #, python-format
 msgid ""
 "<h3>5. Test and refine</h3> <p> Once the first version of the deck list is ready, it should be tested to check if it "
@@ -10031,7 +10030,7 @@ msgstr ""
 "devriez envisager de retirer les cartes dont vous ne vous servez pas, ainsi que les cartes de charge utile qui ne "
 "contribuent pas à éliminer votre proie. </p>"
 
-#: codex_of_the_damned/templates/strategy/deck-building.html:425
+#: codex_of_the_damned/templates/strategy/deck-building.html:423
 msgid "play test system"
 msgstr "système de test"
 
@@ -10855,9 +10854,9 @@ msgstr ""
 msgid ""
 "Of course, there have been Baltimore Purge decks before the appearance of %(montano)s, e.g. with %(arika)s, "
 "%(stanislava)s or %(ambrosio_luis_monçada)s as star vampires, but in comparison %(montano)s offers better options: he"
-" is a Lasombra %(img_clan_lasombra)s, an 11 cap vampire, he pays one less for Obtenebration %(obt)s cards and, "
-"probably most importantly, can burn 1 blood to give any of his controller’s minions +1 stealth; plus he has superior "
-"Dominate %(DOM)s and Fortitude %(FOR)s. This makes %(montano)s the perfect engine for abusing %(baltimore_purge)s, "
+" is a Lasombra %(lasombra)s, an 11 cap vampire, he pays one less for Obtenebration %(obt)s cards and, probably most "
+"importantly, can burn 1 blood to give any of his controller’s minions +1 stealth; plus he has superior Dominate "
+"%(DOM)s and Fortitude %(FOR)s. This makes %(montano)s the perfect engine for abusing %(baltimore_purge)s, "
 "%(graverobbing)s and %(mind_rape)s. Since he has access to %(freak_drive)s, he is able to pull off each of these "
 "cards himself in just one turn, and maybe even more effects, e.g. a superior %(govern_the_unaligned)s, a bleed for "
 "%(enkil_cog)s or a vote. It is a blood-thirsty engine, which I personally prefer to feed with the help of "
@@ -10865,19 +10864,19 @@ msgid ""
 msgstr ""
 "Bien sûr, il y a eu des decks Baltimore Purge avant l'apparition de %(montano)s, par ex. avec %(arika)s, "
 "%(stanislava)s ou %(ambrosio_luis_monçada)s comme star, mais en comparaison %(montano)s offre de meilleures options :"
-" il est un Lasombra %(img_clan_lasombra)s, a une capacité de 11, paie un de moins pour les cartes Obtenebration "
-"%(obt)s et, probablement le plus important, peut brûler 1 sang pour donner à l'un des serviteurs de son contrôleur +1"
-" discrétion ; en plus, il a Domination %(DOM)s et Force d'Âme %(FOR)s en supérieur. Cela fait de %(montano)s le "
-"moteur idéal pour abuser de %(baltimore_purge)s, %(graverobbing)s et %(mind_rape)s. Puisqu'il a accès à "
-"%(freak_drive)s, il est capable de jouer chacune de ces cartes lui-même en un seul tour, et peut-être même plus "
-"d'effets, par ex. un %(govern_the_unaligned)s en supérieur, une morsure pour %(enkil_cog)s ou un vote. C'est un "
-"moteur coûteux en sang, que je préfère personnellement alimenter à l'aide d'%(heidelberg_castle)s et de diableries."
+" il est un Lasombra %(lasombra)s, a une capacité de 11, paie un de moins pour les cartes Obtenebration %(obt)s et, "
+"probablement le plus important, peut brûler 1 sang pour donner à l'un des serviteurs de son contrôleur +1 discrétion "
+"; en plus, il a Domination %(DOM)s et Force d'Âme %(FOR)s en supérieur. Cela fait de %(montano)s le moteur idéal pour"
+" abuser de %(baltimore_purge)s, %(graverobbing)s et %(mind_rape)s. Puisqu'il a accès à %(freak_drive)s, il est "
+"capable de jouer chacune de ces cartes lui-même en un seul tour, et peut-être même plus d'effets, par ex. un "
+"%(govern_the_unaligned)s en supérieur, une morsure pour %(enkil_cog)s ou un vote. C'est un moteur coûteux en sang, "
+"que je préfère personnellement alimenter à l'aide d'%(heidelberg_castle)s et de diableries."
 
-#: codex_of_the_damned/templates/strategy/articles/advanced/playing-montano-baltimore-purge.html:65
+#: codex_of_the_damned/templates/strategy/articles/advanced/playing-montano-baltimore-purge.html:64
 msgid "Crypt Acceleration"
 msgstr "Accélération de la Crypte"
 
-#: codex_of_the_damned/templates/strategy/articles/advanced/playing-montano-baltimore-purge.html:67
+#: codex_of_the_damned/templates/strategy/articles/advanced/playing-montano-baltimore-purge.html:66
 #, python-format
 msgid ""
 "In my opinion, it is quite important to make %(montano)s enter the ready region in round 2 of a game: The fewer the "
@@ -10894,7 +10893,7 @@ msgstr ""
 "Maître et qui veut jouer beaucoup de cartes action et de modificateurs a tendance à rencontrer des problèmes quant au"
 " flux de cartes. C'est pourquoi j'essaye d'équiper %(montano)s d'un %(learjet)s dès que possible."
 
-#: codex_of_the_damned/templates/strategy/articles/advanced/playing-montano-baltimore-purge.html:86
+#: codex_of_the_damned/templates/strategy/articles/advanced/playing-montano-baltimore-purge.html:85
 #, python-format
 msgid ""
 "Okay, this tremendous « (try to) rule the world » deck is regularly the focus of all players at the table. "
@@ -10907,7 +10906,7 @@ msgstr ""
 "moins les morsures les plus hautes. En général, vous devez être très rapide dans ce que vous voulez faire, sinon vous"
 " subirez un sort funeste avant vos adversaires."
 
-#: codex_of_the_damned/templates/strategy/articles/advanced/playing-montano-baltimore-purge.html:111
+#: codex_of_the_damned/templates/strategy/articles/advanced/playing-montano-baltimore-purge.html:110
 #, python-format
 msgid ""
 "Here is the list of the deck that won me the <em>Don’t Cry for Pentex</em> Lackey League Finals in 2019. I won’t "
@@ -10927,7 +10926,7 @@ msgstr ""
 "lents avec de gros vampires « juteux », mais le deck peut être assez résistant pour arrêter net un deck de morsure "
 "Dementation %(dem)s d'un Predator."
 
-#: codex_of_the_damned/templates/strategy/articles/advanced/playing-montano-baltimore-purge.html:124
+#: codex_of_the_damned/templates/strategy/articles/advanced/playing-montano-baltimore-purge.html:123
 msgid ""
 "Obviously, it makes a difference if someone knows about your deck’s archetype and thus about its evil intentions. You"
 " should always try to talk if necessary, since there will be other decks as evil as yours at the table, and the mark "
@@ -10937,7 +10936,7 @@ msgstr ""
 "Vous devriez toujours essayer de parler si nécessaire, car il y aura d'autres decks aussi pénibles que le vôtre à la "
 "table, et le fait d'être la menace à la table n'est qu'une question de perception. Ne jouez pas les petits chefs."
 
-#: codex_of_the_damned/templates/strategy/articles/advanced/playing-montano-baltimore-purge.html:131
+#: codex_of_the_damned/templates/strategy/articles/advanced/playing-montano-baltimore-purge.html:130
 #, python-format
 msgid ""
 "In case someone tries to interact with you, do so, if it makes at least some sense. If you play your first "
@@ -10954,7 +10953,7 @@ msgstr ""
 "s'il contrôle plus d'un vampire. Avoir un allié à table ou des joueurs en face non hostiles fera une énorme "
 "différence. Selon les vampires que jouent vos alliés, vous devrez peut-être tout de même vous en occuper."
 
-#: codex_of_the_damned/templates/strategy/articles/advanced/playing-montano-baltimore-purge.html:142
+#: codex_of_the_damned/templates/strategy/articles/advanced/playing-montano-baltimore-purge.html:141
 msgid ""
 "Later in the game, when your deck has already done some damage to the table, try to make sure the literal card house "
 "falls apart in your favour. Encourage players to resist their predators even though their situation looks helpless. "
@@ -10971,24 +10970,24 @@ msgstr ""
 " vous menacer en annonçant une auto-élimination si vous faites ou ne faites pas ceci ou cela. Vous devez ignorer "
 "cette posture en général."
 
-#: codex_of_the_damned/templates/strategy/articles/advanced/playing-montano-baltimore-purge.html:152
+#: codex_of_the_damned/templates/strategy/articles/advanced/playing-montano-baltimore-purge.html:151
 msgid "How to Win"
 msgstr "Comment gagner"
 
-#: codex_of_the_damned/templates/strategy/articles/advanced/playing-montano-baltimore-purge.html:154
+#: codex_of_the_damned/templates/strategy/articles/advanced/playing-montano-baltimore-purge.html:153
 #, python-format
 msgid ""
 "Maybe Montano Baltimore Purge (MBP) can be compared to a rush deck, combined with the high risk, high reward "
-"component of a Baali %(img_clan_baali)s bleed or vote deck. You have to decide where and when to play %(mind_rape)s "
-"and %(baltimore_purge)s. You are going to offset the table balance, and you want to make sure you don’t get ousted "
-"and that any threat to %(montano)s is eliminated."
+"component of a Baali %(baali)s bleed or vote deck. You have to decide where and when to play %(mind_rape)s and "
+"%(baltimore_purge)s. You are going to offset the table balance, and you want to make sure you don’t get ousted and "
+"that any threat to %(montano)s is eliminated."
 msgstr ""
 "Peut-être que Montano Baltimore Purge (MBP) peut être comparé à un deck de rush, combiné au haut rapport "
-"risque/récompense d'un deck morsure ou vote Baali %(img_clan_baali)s. Vous devez décider où et quand jouer "
-"%(mind_rape)s et %(baltimore_purge)s. Vous allez briser l'équilibre de la table et vous voulez vous assurer de ne pas"
-" être éliminé et que toute menace pour %(montano)s est détruite."
+"risque/récompense d'un deck morsure ou vote Baali %(baali)s. Vous devez décider où et quand jouer %(mind_rape)s et "
+"%(baltimore_purge)s. Vous allez briser l'équilibre de la table et vous voulez vous assurer de ne pas être éliminé et "
+"que toute menace pour %(montano)s est détruite."
 
-#: codex_of_the_damned/templates/strategy/articles/advanced/playing-montano-baltimore-purge.html:168
+#: codex_of_the_damned/templates/strategy/articles/advanced/playing-montano-baltimore-purge.html:166
 #, python-format
 msgid ""
 "A nice setup to start the « show » is %(montano)s with a %(learjet)s and a midcap assistant (%(aurora_van_brande)s is"
@@ -11003,7 +11002,7 @@ msgstr ""
 "joueur qui contrôle déjà 2 (!) vampires, de préférence votre proie ou votre prédateur, ainsi le vampire volé peut "
 "diabler l'autre et brûler suite à la chasse au sang obligatoire, ce qui élimine deux vampires."
 
-#: codex_of_the_damned/templates/strategy/articles/advanced/playing-montano-baltimore-purge.html:183
+#: codex_of_the_damned/templates/strategy/articles/advanced/playing-montano-baltimore-purge.html:181
 #, python-format
 msgid ""
 "Always remember to use the %(learjet)s if you have any cards in hand that do not help you in achieving your goals. "
@@ -11015,7 +11014,7 @@ msgstr ""
 "la victoire. En général, vous n’obtenez pas tous les PV de la table, mais vous n’êtes pas obligé de le faire pour "
 "gagner."
 
-#: codex_of_the_damned/templates/strategy/articles/advanced/playing-montano-baltimore-purge.html:190
+#: codex_of_the_damned/templates/strategy/articles/advanced/playing-montano-baltimore-purge.html:188
 #, python-format
 msgid ""
 "This is a typical scenario: In your unlock phase %(montano)s goes to torpor, and so will every other vampire in the "
@@ -11030,11 +11029,11 @@ msgstr ""
 "Maintenant, tout dépend un peu si vous avez un %(heidelberg_castle)s en jeu et si vous avez %(freak_drive)s et "
 "%(graverobbing)s en main."
 
-#: codex_of_the_damned/templates/strategy/articles/advanced/playing-montano-baltimore-purge.html:207
+#: codex_of_the_damned/templates/strategy/articles/advanced/playing-montano-baltimore-purge.html:205
 msgid "Tips & Tricks"
 msgstr "Trucs & Astuces"
 
-#: codex_of_the_damned/templates/strategy/articles/advanced/playing-montano-baltimore-purge.html:208
+#: codex_of_the_damned/templates/strategy/articles/advanced/playing-montano-baltimore-purge.html:206
 #, python-format
 msgid ""
 "<ul> <li>Don’t forget to take control of the vampire with %(mind_rape)s.</li> <li> The assistant vampire should "
@@ -11066,7 +11065,7 @@ msgstr ""
 "après. Et gardez à l'esprit que vous pouvez jouer %(sudden_reversal)s sur une %(direct_intervention)s lorsque vous "
 "agissez hors de votre tour. </li> </ul>"
 
-#: codex_of_the_damned/templates/strategy/articles/advanced/playing-montano-baltimore-purge.html:250
+#: codex_of_the_damned/templates/strategy/articles/advanced/playing-montano-baltimore-purge.html:248
 #, python-format
 msgid ""
 "Gaining pool is one of the bigger issues of MBP, which is why some players add %(golconda)s or %(villein)s to their "
@@ -11082,11 +11081,11 @@ msgstr ""
 "Soyez toujours sur vos gardes : une morsure qui vous a été renvoyée ou un %(mind_numb)s sur %(montano)s pourrait être"
 " fatal."
 
-#: codex_of_the_damned/templates/strategy/articles/advanced/playing-montano-baltimore-purge.html:268
+#: codex_of_the_damned/templates/strategy/articles/advanced/playing-montano-baltimore-purge.html:266
 msgid "Game Example"
 msgstr "Exemple de jeu"
 
-#: codex_of_the_damned/templates/strategy/articles/advanced/playing-montano-baltimore-purge.html:270
+#: codex_of_the_damned/templates/strategy/articles/advanced/playing-montano-baltimore-purge.html:268
 msgid ""
 "Now please take a look at my report of the finals where the above-mentioned decklist together with my decisions (and "
 "the decisions of the fellow players) allowed me to be victorious."
@@ -11094,11 +11093,11 @@ msgstr ""
 "Jetez maintenant un œil à mon rapport de la finale où la liste de deck mentionnée ci-dessus, ainsi que mes décisions "
 "(et les décisions des autres joueurs), m'ont permis de remporter la victoire."
 
-#: codex_of_the_damned/templates/strategy/articles/advanced/playing-montano-baltimore-purge.html:276
+#: codex_of_the_damned/templates/strategy/articles/advanced/playing-montano-baltimore-purge.html:274
 msgid "Don’t Cry for Pentex Finals – 2019."
 msgstr "Finale Don’t Cry for Pentex - 2019."
 
-#: codex_of_the_damned/templates/strategy/articles/advanced/playing-montano-baltimore-purge.html:278
+#: codex_of_the_damned/templates/strategy/articles/advanced/playing-montano-baltimore-purge.html:276
 #, python-format
 msgid ""
 "Seating and starting player position were random, so I had only the double-edged advantage of being top seat. My "
@@ -11111,7 +11110,7 @@ msgstr ""
 "fin du deuxième tour (!) %(montano)s arrive et peut entrer en scène au début du troisième tour, qui me donne "
 "également un %(heidelberg_castle)s, rencontrant la résistance suivante :"
 
-#: codex_of_the_damned/templates/strategy/articles/advanced/playing-montano-baltimore-purge.html:352
+#: codex_of_the_damned/templates/strategy/articles/advanced/playing-montano-baltimore-purge.html:350
 #, python-format
 msgid ""
 "Without %(freak_drives)s and stealth worth mentioning, I play a %(mind_rape)s on %(la_viuda_blanca)s. Successfully. I"
@@ -11122,7 +11121,7 @@ msgstr ""
 " un %(freak_drive)s et décide de faire une morsure car j'ai %(enkil_cog)s en main. Je suis bloqué. Je sortir "
 "%(kassiym_malikhair)s pour aider %(montano)s. Cela m'amène à 9 d'influence."
 
-#: codex_of_the_damned/templates/strategy/articles/advanced/playing-montano-baltimore-purge.html:443
+#: codex_of_the_damned/templates/strategy/articles/advanced/playing-montano-baltimore-purge.html:441
 #, python-format
 msgid ""
 "I need pool, but no pool gain is in sight yet, and I am accordingly worried about being bled by direct bleeds or "
@@ -11142,7 +11141,7 @@ msgstr ""
 "peut devenir un souci...), Diogo arrive à 4 vampires et joue %(mind_numb)s sur %(mustafa)s. Hellgie ne peut pas faire"
 " grand-chose."
 
-#: codex_of_the_damned/templates/strategy/articles/advanced/playing-montano-baltimore-purge.html:575
+#: codex_of_the_damned/templates/strategy/articles/advanced/playing-montano-baltimore-purge.html:573
 #, python-format
 msgid ""
 "Time for %(baltimore_purge)s. %(freak_drive)s. %(mind_rape)s on %(johannes_castelein)s. (Hellgie: You're ousting me. "
@@ -11163,7 +11162,7 @@ msgstr ""
 "renvoie sur Diogo, et maintenant la grande question : vers qui va-t-il rebondir ? Sur Hellgie, qui descend alors à 3 "
 "d'influence. Diogo élimine Hellgie à son tour, ce qui retire %(anarch_troublemaker)s de la partie."
 
-#: codex_of_the_damned/templates/strategy/articles/advanced/playing-montano-baltimore-purge.html:699
+#: codex_of_the_damned/templates/strategy/articles/advanced/playing-montano-baltimore-purge.html:697
 #, python-format
 msgid ""
 "The show begins. %(montano)s takes %(capuchin)s, %(elizabeth)s and %(ranjan)s with him. %(dreams_of_the_sphinx)s, two"
@@ -11180,7 +11179,7 @@ msgstr ""
 "%(banishment)s sur l'un des deux weenies %(AUS)s redressés de Martin, passe, puis donne son sang à %(montano)s. Grâce"
 " à %(seduction)s, %(montano)s diable l'%(elizabeth)s de Martin et s'empare du %(heart_of_nizchetus)s."
 
-#: codex_of_the_damned/templates/strategy/articles/advanced/playing-montano-baltimore-purge.html:725
+#: codex_of_the_damned/templates/strategy/articles/advanced/playing-montano-baltimore-purge.html:723
 #, python-format
 msgid ""
 "What follows now, is a brutal wearing down of the table by %(baltimore_purge)s and diablerie actions. %(montano)s's "
@@ -11191,7 +11190,7 @@ msgstr ""
 "L'aptitude de %(montano)s de payer un sang pour donner à l'un de mes propres serviteurs +1 discrétion s'avère être un"
 " atout supplémentaire grâce à « l'approvisionnement infini » en sang."
 
-#: codex_of_the_damned/templates/strategy/articles/advanced/playing-montano-baltimore-purge.html:735
+#: codex_of_the_damned/templates/strategy/articles/advanced/playing-montano-baltimore-purge.html:733
 #, python-format
 msgid ""
 "Without hurry I oust Slaven two or three rounds later. Diogo shows spirit and continues to play full forward, which "
@@ -11203,7 +11202,7 @@ msgstr ""
 " rebondit deux fois et élimine Diogo. Duel Allemand-Allemand. Je n'ai plus de bibliothèque et il reste encore 30 "
 "minutes à l'horloge."
 
-#: codex_of_the_damned/templates/strategy/articles/advanced/playing-montano-baltimore-purge.html:746
+#: codex_of_the_damned/templates/strategy/articles/advanced/playing-montano-baltimore-purge.html:744
 #, python-format
 msgid ""
 "I have 5 vampires, %(montano)s, %(kassiym)s and %(ignacio)s as well as %(capuchin)s and %(gracis)s, the big ones also"
@@ -11221,7 +11220,7 @@ msgstr ""
 "morsure à 3 par %(montano)s met fin à la partie, le dernier bloqueur est passé grâce à un %(blanket_of_night)s par "
 "%(kassiym)s."
 
-#: codex_of_the_damned/templates/strategy/articles/advanced/playing-montano-baltimore-purge.html:770
+#: codex_of_the_damned/templates/strategy/articles/advanced/playing-montano-baltimore-purge.html:768
 #, python-format
 msgid ""
 "As you can see, I was lucky enough to be able to act with %(montano)s from turn 3, despite the fact I was the "
@@ -11234,7 +11233,7 @@ msgstr ""
 "prédateur aurait pu agir ou me renvoyer les morsures de son prédateur. C'est pourquoi j'ai décidé de jouer "
 "%(mind_rape)s sur le vampire redressé de mon prédateur."
 
-#: codex_of_the_damned/templates/strategy/articles/advanced/playing-montano-baltimore-purge.html:783
+#: codex_of_the_damned/templates/strategy/articles/advanced/playing-montano-baltimore-purge.html:781
 #, python-format
 msgid ""
 "Turn 7 is a description of a typical turn when all the moving parts happen in the right order. Such a turn might take"
@@ -11250,11 +11249,11 @@ msgstr ""
 " assurer votre victoire. Si vous pouvez effectuer une double Purge à l'aide d'%(enkil_cog)s, c'est généralement la "
 "fin de la partie."
 
-#: codex_of_the_damned/templates/strategy/articles/advanced/playing-montano-baltimore-purge.html:797
+#: codex_of_the_damned/templates/strategy/articles/advanced/playing-montano-baltimore-purge.html:795
 msgid "Tweaks and metagame choices"
 msgstr "Tweaks et choix de méta-jeux"
 
-#: codex_of_the_damned/templates/strategy/articles/advanced/playing-montano-baltimore-purge.html:799
+#: codex_of_the_damned/templates/strategy/articles/advanced/playing-montano-baltimore-purge.html:797
 #, python-format
 msgid ""
 "If you do not feel the need for speed to let %(montano)s enter the game by the end of round 2, you get space in the "
@@ -11267,7 +11266,7 @@ msgstr ""
 "%(monastery_of_shadows)s ou %(elysian_fields)s sont des options alléchantes. Même %(the_coven)s pourrait être "
 "bénéfique, puisque vous voulez avoir du sang sur les vampires que %(montano)s diable."
 
-#: codex_of_the_damned/templates/strategy/articles/advanced/playing-montano-baltimore-purge.html:816
+#: codex_of_the_damned/templates/strategy/articles/advanced/playing-montano-baltimore-purge.html:814
 #, python-format
 msgid ""
 "You might want to play more than 5 copies of %(baltimore_purge)s. Regarding Political Actions, adding another "
@@ -11279,7 +11278,7 @@ msgstr ""
 "mettre les gros vampires de votre prédateur en torpeur. %(political_stranglehold)s se combine bien avec "
 "%(mind_rape)s."
 
-#: codex_of_the_damned/templates/strategy/articles/advanced/playing-montano-baltimore-purge.html:829
+#: codex_of_the_damned/templates/strategy/articles/advanced/playing-montano-baltimore-purge.html:827
 #, python-format
 msgid ""
 "%(zaire_river_ferry)s is a suggestion by famous <em>Martin Schuhmacher</em> I have not given a try so far. Reaction "
@@ -11289,7 +11288,7 @@ msgstr ""
 "cartes de réaction comme %(obedience)s, %(on_the_qui_vive)s et plus de %(deflections)s, peuvent être utiles selon la "
 "situation."
 
-#: codex_of_the_damned/templates/strategy/articles/advanced/playing-montano-baltimore-purge.html:841
+#: codex_of_the_damned/templates/strategy/articles/advanced/playing-montano-baltimore-purge.html:839
 #, python-format
 msgid ""
 "I consider Montano Baltimore Purge (MBP) to be a viable deck choice for larger tournaments, since you usually "
@@ -11313,19 +11312,18 @@ msgstr "Par Mark Loughman"
 msgid ""
 "Mark Loughman has been playing V:tES since day one, is highly seated in the VEKN Hall of Fame with 25 tournament "
 "victories, and became US National Coordinator in 2019. He organises 4 tournaments per year and playtests new "
-"extensions. His favorite decks are Tremere %(img_clan_tremere)s and Nosferatu %(img_clan_nosferatu)s Toolboxes."
+"extensions. His favorite decks are Tremere %(tremere)s and Nosferatu %(nosferatu)s Toolboxes."
 msgstr ""
 "Mark Loughman joue à V: tES depuis le premier jour, occupe une place de choix dans le VEKN Hall of Fame avec 25 "
 "victoires en tournoi, et est devenu coordinateur national des États-Unis en 2019. Il organise 4 tournois par an et "
-"teste les nouvelles extensions. Ses decks préférés sont les toolbox Tremere %(img_clan_tremere)s et Nosferatu "
-"%(img_clan_nosferatu)s."
+"teste les nouvelles extensions. Ses decks préférés sont les toolbox Tremere %(tremere)s et Nosferatu %(nosferatu)s."
 
-#: codex_of_the_damned/templates/strategy/articles/advanced/the-game-of-the-game.html:27
-#: codex_of_the_damned/templates/strategy/articles/advanced/the-game-of-the-game.html:169
+#: codex_of_the_damned/templates/strategy/articles/advanced/the-game-of-the-game.html:22
+#: codex_of_the_damned/templates/strategy/articles/advanced/the-game-of-the-game.html:162
 msgid "S:CE"
 msgstr "Fin de Combat"
 
-#: codex_of_the_damned/templates/strategy/articles/advanced/the-game-of-the-game.html:26
+#: codex_of_the_damned/templates/strategy/articles/advanced/the-game-of-the-game.html:21
 #, python-format
 msgid ""
 "At a certain level, V:tES is an elaborate game of Paper-Rock-Scissors. Do I have enough stealth to deliver my "
@@ -11346,7 +11344,7 @@ msgstr ""
 "nouveau joueur revient parfois frustré. <em> «Comment a-t-il gagné avec ce deck ? Ça craint ! »</em> Manifestement ça"
 " ne craint pas, c'est dans la TWDA. Ce que cela démontre, c'est l'effet du meta-game."
 
-#: codex_of_the_damned/templates/strategy/articles/advanced/the-game-of-the-game.html:43
+#: codex_of_the_damned/templates/strategy/articles/advanced/the-game-of-the-game.html:38
 #, python-format
 msgid ""
 "In some regions, 2 stealth is king, in others you cannot hunt without a %(forgotten_labyrinth)s. If you can hone in "
@@ -11356,11 +11354,11 @@ msgstr ""
 "%(forgotten_labyrinth)s. Si vous pouvez saisir le meta-game, vous pouvez faire de meilleurs choix et devenir plus "
 "compétitif."
 
-#: codex_of_the_damned/templates/strategy/articles/advanced/the-game-of-the-game.html:51
+#: codex_of_the_damned/templates/strategy/articles/advanced/the-game-of-the-game.html:46
 msgid "What is the meta-game?"
 msgstr "Qu'est-ce que le meta-game ?"
 
-#: codex_of_the_damned/templates/strategy/articles/advanced/the-game-of-the-game.html:53
+#: codex_of_the_damned/templates/strategy/articles/advanced/the-game-of-the-game.html:48
 msgid ""
 "Most players have a regular play-group. Members of that group will have decks that they play more often than others. "
 "Over time, the Darwinian pressure to compete among one’s peers will lead to modifications to one’s decks or perhaps "
@@ -11371,7 +11369,7 @@ msgstr ""
 "modifications de ces decks ou peut-être des conceps de decks entièrement nouveaux. C'est la première étape du meta-"
 "game."
 
-#: codex_of_the_damned/templates/strategy/articles/advanced/the-game-of-the-game.html:60
+#: codex_of_the_damned/templates/strategy/articles/advanced/the-game-of-the-game.html:55
 msgid ""
 "It begins with a vision of how to inflict your will on your opponent. <em>« I shall bleed for 3 »</em>, you decide. "
 "Your prey attempts to block. Do you play stealth? Do you begin playing combat cards? The meta-game you are playing in"
@@ -11386,14 +11384,14 @@ msgstr ""
 "ont l'intention de bloquer, ils peuvent commencer à ajouter plus de cartes de combat pour punir vos transgressions. "
 "Comme Newton nous l'enseigne, pour chaque action, il y a une réaction. Votre meta-game évolue."
 
-#: codex_of_the_damned/templates/strategy/articles/advanced/the-game-of-the-game.html:70
+#: codex_of_the_damned/templates/strategy/articles/advanced/the-game-of-the-game.html:65
 #, python-format
 msgid ""
 "In general terms, as it seems that successful stealth-bleed decks lead to a response of more intercept. As the meta "
 "becomes more blocky, players will respond with %(the_kiss_of_ra)s and more combat, or huge voting minions who play "
 "several modifiers on each action. Block denial cards like %(daring_the_dawn)s or %(elder_impersonation)s have a place"
 " here. This leads to a much smaller action space, which often allows weenie decks to spawn a swarm of minions. Is "
-"there anything more will-sapping than an !Toreador %(img_clan_toreador_anti)s breed/boon deck with 10 minions and 30 "
+"there anything more will-sapping than an !Toreador %(toreador_antitribu)s breed/boon deck with 10 minions and 30 "
 "pool? Heavy combat is also a logical response to big voters. This is by no means a linear development, as hybrid "
 "decks will combine aspects of any of the above. The Toolbox comes out of this evolution. These benefit the most from "
 "a good read of the meta-game, allowing you to cycle from offense to defense as you play your cards. When it works, it"
@@ -11404,14 +11402,14 @@ msgstr ""
 "d'énormes serviteurs qui votent et jouent plusieurs modificateurs à chaque action. Les cartes de déni de bloc comme "
 "%(daring_the_dawn)s ou %(elder_impersonation)s ont leur place ici. Cela conduit à un espace d'action beaucoup plus "
 "restreint, ce qui permet souvent aux decks weenie de générer un essaim de serviteurs. Y a-t-il quelque chose qui sape"
-" plus la volonté qu'un deck !Toreador %(img_clan_toreador_anti)s breed/boon avec 10 serviteurs et 30 d'influence ? Le"
-" combat acharné est également une réponse logique aux gros voteurs. Il ne s'agit en aucun cas d'un développement "
+" plus la volonté qu'un deck !Toreador %(toreador_antitribu)s breed/boon avec 10 serviteurs et 30 d'influence ? Le "
+"combat acharné est également une réponse logique aux gros voteurs. Il ne s'agit en aucun cas d'un développement "
 "linéaire, car les decks hybrides combineront les aspects de plusieurs des éléments précités. Les toolbox sont le "
 "produit de cette évolution. Celles-ci bénéficient le plus d'une bonne lecture du meta-game, vous permettant de passer"
 " de l'attaque à la défense lorsque vous jouez vos cartes. Quand ça marche, c'est glorieux ! Quand ce n'est pas le "
 "cas, cela peut être embarrassant."
 
-#: codex_of_the_damned/templates/strategy/articles/advanced/the-game-of-the-game.html:91
+#: codex_of_the_damned/templates/strategy/articles/advanced/the-game-of-the-game.html:84
 msgid ""
 "The wheel turns. My local playgroup slowly rotated through these permutations from Jyhad through White Wolf assuming "
 "control of the game and establishing a tournament presence. The effects were profound."
@@ -11419,11 +11417,11 @@ msgstr ""
 "La roue tourne. Mon groupe de jeu local est lentement passé par ces permutations de Jyhad à White Wolf qui a pris le "
 "contrôle du jeu et établi un principe de tournoi. Les effets ont été profonds."
 
-#: codex_of_the_damned/templates/strategy/articles/advanced/the-game-of-the-game.html:97
+#: codex_of_the_damned/templates/strategy/articles/advanced/the-game-of-the-game.html:90
 msgid "The Legionnaire example"
 msgstr "L'exemple du Légionnaire"
 
-#: codex_of_the_damned/templates/strategy/articles/advanced/the-game-of-the-game.html:98
+#: codex_of_the_damned/templates/strategy/articles/advanced/the-game-of-the-game.html:91
 #, python-format
 msgid ""
 "<p> Let’s take a look at a recent addition to the TWDA, the %(emerald_legionnaire)s. The addition of this one card "
@@ -11455,11 +11453,11 @@ msgstr ""
 "permettre de le contrer. Personnellement, j'ai changé la liste de tous mes decks politiques pour inclure 2 "
 "%(ancilla_empowerment)s et 2 %(anarchist_uprising)s, remplaçant généralement %(kine_resources_contested)s. </p>"
 
-#: codex_of_the_damned/templates/strategy/articles/advanced/the-game-of-the-game.html:101
+#: codex_of_the_damned/templates/strategy/articles/advanced/the-game-of-the-game.html:94
 msgid "Concealed"
 msgstr "Concealed"
 
-#: codex_of_the_damned/templates/strategy/articles/advanced/the-game-of-the-game.html:139
+#: codex_of_the_damned/templates/strategy/articles/advanced/the-game-of-the-game.html:132
 msgid ""
 "With a wider field to play against, local and regional playgroups began to compete with each other. New releases "
 "meant new cards and new combinations that shook things up. The internet allowed for these new ideas to travel "
@@ -11472,11 +11470,11 @@ msgstr ""
 "accéléré. Comment un Mathusalem peut-il garder une longueur d'avance ? Cela dépend de l'endroit où vous prévoyez de "
 "concourir."
 
-#: codex_of_the_damned/templates/strategy/articles/advanced/the-game-of-the-game.html:147
+#: codex_of_the_damned/templates/strategy/articles/advanced/the-game-of-the-game.html:140
 msgid "Tournaments"
 msgstr "Tournois"
 
-#: codex_of_the_damned/templates/strategy/articles/advanced/the-game-of-the-game.html:149
+#: codex_of_the_damned/templates/strategy/articles/advanced/the-game-of-the-game.html:142
 #, python-format
 msgid ""
 "When preparing for a tournament, it is important to have some idea of who you will be playing against. If it is your "
@@ -11493,11 +11491,11 @@ msgstr ""
 "amène pas à changer de deck, alors elle pourrait vous convaincre d'échanger quelques cartes pour vous aider à faire "
 "face aux problèmes anticipés. L'ajout d'un %(secure_haven)s à %(arika)s peut contrecarrer un %(tupdog)s."
 
-#: codex_of_the_damned/templates/strategy/articles/advanced/the-game-of-the-game.html:165
+#: codex_of_the_damned/templates/strategy/articles/advanced/the-game-of-the-game.html:158
 msgid "Choosing his deck"
 msgstr "Choisir son deck"
 
-#: codex_of_the_damned/templates/strategy/articles/advanced/the-game-of-the-game.html:167
+#: codex_of_the_damned/templates/strategy/articles/advanced/the-game-of-the-game.html:160
 #, python-format
 msgid ""
 "When discussing deck selection, the esteemed <em>Jay Kristoff</em> once told me to pick a deck I don’t mind staring "
@@ -11515,7 +11513,7 @@ msgstr ""
 "%(grapple)s contre mes %(sce)s ? »</em> Si vous n'êtes pas sûr, améliorez peut-être votre capacité à cycler, que ce "
 "soit avec %(dreams_of_the_sphinx)s, %(aura_reading)s ou %(lupine_assault)s."
 
-#: codex_of_the_damned/templates/strategy/articles/advanced/the-game-of-the-game.html:186
+#: codex_of_the_damned/templates/strategy/articles/advanced/the-game-of-the-game.html:179
 #, python-format
 msgid ""
 "If you are traveling, or are expecting a significant presence of out-of-towners, it might be a good idea to see if "
@@ -11530,11 +11528,11 @@ msgstr ""
 "%(delaying_tactics)s supplémentaires pourrait être très utile. De plus, à mesure que vous prenez part à plus "
 "d'événements, vous rencontrerez plus de joueurs. Rester en contact peut vous donner un aperçu de ce qu'ils prévoient."
 
-#: codex_of_the_damned/templates/strategy/articles/advanced/the-game-of-the-game.html:196
+#: codex_of_the_damned/templates/strategy/articles/advanced/the-game-of-the-game.html:189
 msgid "Style of Play"
 msgstr "Style de jeu"
 
-#: codex_of_the_damned/templates/strategy/articles/advanced/the-game-of-the-game.html:198
+#: codex_of_the_damned/templates/strategy/articles/advanced/the-game-of-the-game.html:191
 #, python-format
 msgid ""
 "Style of play can often drive the meta-game. We play for enjoyment, and while winning feels good, we also want to "
@@ -11554,7 +11552,7 @@ msgstr ""
 " les vampires pour poser des Garou et rien d'autre. Les joueurs de Newark en Ohio ont la réputation de jouer des "
 "decks de combat, c'est peut-être de là que ça vient."
 
-#: codex_of_the_damned/templates/strategy/articles/advanced/the-game-of-the-game.html:214
+#: codex_of_the_damned/templates/strategy/articles/advanced/the-game-of-the-game.html:207
 msgid ""
 "For me, the meta-game becomes most relevant each Spring. I try to cut off new deck construction in March and begin "
 "refining decks in preparation for the NAC. I scan the TWDA for new additions,particularly looking for any new entries"
@@ -11569,7 +11567,7 @@ msgstr ""
 "radar. Mon plan chaque mois de juin est d'avoir 12 decks prêts à participer à la Semaine des Cauchemars (WoN) et au "
 "championnat nord-américain (NAC)."
 
-#: codex_of_the_damned/templates/strategy/articles/advanced/the-game-of-the-game.html:225
+#: codex_of_the_damned/templates/strategy/articles/advanced/the-game-of-the-game.html:218
 msgid ""
 "The meta-game plays out in real time during the WoN. Do I hold off on my best deck until the actual NAC? Is it worth "
 "risking showing my tech to get a feel for how it will do by playing it early in the WoN? I try to see as many decks "
@@ -11582,7 +11580,7 @@ msgstr ""
 "idée du terrain. Stealth vs Intercept. Combat contre évitement. Si je parviens au jour 2, est-ce que je change de "
 "deck?"
 
-#: codex_of_the_damned/templates/strategy/articles/advanced/the-game-of-the-game.html:234
+#: codex_of_the_damned/templates/strategy/articles/advanced/the-game-of-the-game.html:227
 msgid "The correct answer is often a moving target."
 msgstr "La bonne réponse est souvent fugace."
 
@@ -12186,3 +12184,4 @@ msgstr ""
 " de dégâts maximum de 12 points d'influence. Jusqu'à ce que vous y arriviez, continuez à faire 3 à 5 dégâts par tour "
 "et à rebondir les morsures de votre prédateur, en broyant lentement l'influence de votre proie et en lui laissant "
 "croire que 12 points est un coussin confortable. </p>"
+
