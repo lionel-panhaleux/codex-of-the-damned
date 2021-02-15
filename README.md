@@ -1,5 +1,11 @@
 # Codex of the Damned
 
+[![PyPI version](https://badge.fury.io/py/codex-of-the-damned.svg)](https://badge.fury.io/py/codex-of-the-damned)
+[![Validation](https://github.com/lionel-panhaleux/codex-of-the-damned/workflows/Validation/badge.svg)](https://github.com/lionel-panhaleux/codex-of-the-damned/actions)
+[![Python version](https://img.shields.io/badge/python-3.8-blue)](https://www.python.org/downloads/)
+[![License](https://img.shields.io/badge/License-MIT-blue)](https://opensource.org/licenses/MIT)
+[![Code Style](https://img.shields.io/badge/code%20style-black-black)](https://github.com/psf/black)
+
 This site is a compilation of Vampire: the Eternal Struggle strategy resources.
 The site is publicly available at [codex-of-the-damned.org](http://www.codex-of-the-damned.org).
 
