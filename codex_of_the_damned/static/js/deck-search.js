@@ -28,7 +28,6 @@ class DeckSearch {
         await this.displayDeckChoices(this.state.state)
     }
     async toggleCompetitors(ev) {
-        console.log(ev)
         if (this.threshold25.checked) {
             this.state.update({ threshold25: true })
         } else {
