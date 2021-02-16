@@ -1,7 +1,7 @@
 Changelog
 =========
 
-1.24 (unreleased)
+1.24 (2021-02-16)
 -----------------
 
 - Add a button to copy card rulings
