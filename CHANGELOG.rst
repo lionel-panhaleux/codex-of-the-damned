@@ -1,7 +1,7 @@
 Changelog
 =========
 
-1.25 (unreleased)
+1.25 (2021-02-16)
 -----------------
 
 - Card search: improve performances
