@@ -166,17 +166,28 @@ class CardSearch {
             for (const ruling of data.rulings.text) {
                 const reference_re = /\[[a-zA-Z0-9]+\s[0-9-]+\]/g
                 let ruling_item = document.createElement("li")
+                ruling_item.dataset.markdown = ruling.replace(reference_re, (x) => `${x}(${data.rulings.links[x]})`)
                 ruling_item.innerHTML = formatText(ruling.replace(reference_re, ""))
                 const references = [...ruling.matchAll(reference_re)]
                 for (const reference of references) {
                     // use non-breaking spaces and hyphens
                     const non_breaking_ref = reference[0].replace(" ", " ").replace(/([^-]*)-/g, "$1‑")
                     const link = data.rulings.links[reference[0]]
-                    ruling_item.innerHTML += ` <a target="_blank" href="${link}">${non_breaking_ref}</a >`
+                    ruling_item.innerHTML += `<a target="_blank" href="${link}">${non_breaking_ref}</a >`
                     rulings_map[non_breaking_ref] = link
                 }
                 addCardEvents(ruling_item)
+                let copy_button = document.createElement("span")
+                copy_button.classList.add("icon")
+                copy_button.classList.add("selectable")
+                copy_button.innerHTML = " &#xf328" // FontAwesome clipboard icon
+                ruling_item.appendChild(copy_button)
                 rulings_list.appendChild(ruling_item)
+                copy_button.addEventListener("click", async (e) => {
+                    try {
+                        await navigator.clipboard.writeText(e.target.parentNode.dataset.markdown)
+                    } catch {}
+                })
             }
             // custom copy event to include ruling link
             rulings_list.addEventListener("copy", (event) => {
