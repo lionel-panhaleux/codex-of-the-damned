@@ -22,20 +22,24 @@ class CardSearch {
         await this.displayCard(this.state.state)
         ev.target.elements["card-name"].value = ""
     }
-    async selectSet(set_name, set_image) {
-        if (!(await urlExists(set_image))) {
-            return
-        }
+    async selectSet(node, set_name, set_image) {
         if (this.state.set != set_name) {
             this.state.update({ set: set_name })
         }
         this.card_image.src = set_image
         this.card_image.classList.add("selectable")
+        for (let item of this.card_sets.children) {
+            item.classList.remove("selected")
+        }
+        node.classList.add("selected")
     }
     resetSet(image_url) {
         this.state.remove("set")
         this.card_image.src = image_url
         this.card_image.classList.remove("selectable")
+        for (let item of this.card_sets.children) {
+            item.classList.remove("selected")
+        }
     }
     clear() {
         this.results.style.display = "none"
@@ -111,6 +115,14 @@ class CardSearch {
         let sets = Object.entries(data.sets)
         sets.sort(compareSet)
         this.card_sets.appendChild(document.createElement("hr"))
+        const existing_scans = await Promise.all(Object.values(data.scans).map((x) => urlExists(x)))
+        let index = 0
+        for (let key in data.scans) {
+            if (!existing_scans[index]) {
+                delete data.scans[key]
+            }
+            index += 1
+        }
         for (let [name, info] of sets) {
             let set_info = document.createElement("div")
             set_info.classList.add("set-info")
@@ -118,10 +130,11 @@ class CardSearch {
             set_name.classList.add("set-name")
             if (name in data.scans) {
                 set_name.classList.add("selectable")
-                set_name.addEventListener("click", async (ev) => this.selectSet(name, data.scans[name]))
+                set_name.addEventListener("click", async (ev) => this.selectSet(set_info, name, data.scans[name]))
                 if (name === state.set) {
-                    await this.selectSet(name, data.scans[name])
+                    await this.selectSet(set_info, name, data.scans[name])
                 }
+                set_name.innerHTML = '<span class="icon">&#xf03e</span> '
             }
             let i18n_name = name
             if (data._i18n && lang in data._i18n) {
@@ -130,9 +143,9 @@ class CardSearch {
                 }
             }
             if (isInPrint([name, info])) {
-                set_name.innerHTML = `<strong>${i18n_name}</strong>`
+                set_name.innerHTML += `<strong>${i18n_name}</strong>`
             } else {
-                set_name.textContent = i18n_name
+                set_name.innerHTML += i18n_name
             }
             set_info.appendChild(set_name)
             let set_detail = document.createElement("div")

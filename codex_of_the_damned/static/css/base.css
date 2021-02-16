@@ -49,6 +49,7 @@ body {
 }
 span.icon {
     font-family: "FontAwesome";
+    color: var(--color-gray-text);
     transition: opacity 0.2s ease-in-out;
 }
 span.brand-icon {
@@ -212,6 +213,9 @@ h6 > a {
 }
 .selectable {
     cursor: pointer;
+}
+.selected {
+    background-color: var(--color-back-selected) !important;
 }
 .subtitle span.krcg-card {
     font-style: normal;
@@ -596,9 +600,6 @@ div.deck-search-card::after {
     background-color: var(--color-back-alternate);
 }
 .results tr:hover,
-.results tr.selected {
-    background-color: var(--color-back-selected) !important;
-}
 .results td {
     padding: 0.5em;
 }
