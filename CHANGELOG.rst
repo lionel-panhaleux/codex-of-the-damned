@@ -4,7 +4,7 @@ Changelog
 1.25 (unreleased)
 -----------------
 
-- Nothing changed yet.
+- Card search: improve performances
 
 
 1.24 (2021-02-16)
