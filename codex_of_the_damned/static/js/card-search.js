@@ -183,7 +183,13 @@ class CardSearch {
                 copy_button.innerHTML = " &#xf328" // FontAwesome clipboard icon
                 ruling_item.appendChild(copy_button)
                 rulings_list.appendChild(ruling_item)
+                copy_button.addEventListener("transitionend", (e) => {
+                    if (e.propertyName == "opacity") {
+                        e.target.style.opacity = 1
+                    }
+                })
                 copy_button.addEventListener("click", async (e) => {
+                    e.target.style.opacity = 0.3
                     try {
                         await navigator.clipboard.writeText(e.target.parentNode.dataset.markdown)
                     } catch {}
