@@ -29,7 +29,7 @@ BASE_CONTEXT = {
     "COMBAT": flask.Markup("<i>4</i>"),
     "REFLEX": flask.Markup("<i>6</i>"),
     "FLIGHT": flask.Markup("<i>^</i>"),
-    "MERGED": flask.Markup("<i>µ </i>"),
+    "MERGED": flask.Markup("<i>µ</i>"),
     "abo": flask.Markup("<i>w</i>"),
     "ABO": flask.Markup("<i>W</i>"),
     "ani": flask.Markup("<i>i</i>"),
