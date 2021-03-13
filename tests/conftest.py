@@ -11,7 +11,7 @@ def pytest_sessionstart(session):
     except requests.exceptions.RequestException:
         pytest.fail("No internet connection")
     try:
-        requests.get("https://v2.api.krcg.org", timeout=1)
+        requests.get("https://api.krcg.org", timeout=1)
     except requests.exceptions.RequestException:
         pytest.fail("KRCG API not available")
 

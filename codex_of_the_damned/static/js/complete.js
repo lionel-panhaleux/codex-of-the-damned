@@ -91,7 +91,7 @@ class Completion {
 }
 
 async function completeCardName(text) {
-    const response = await fetch(encodeURI(`https://v2.api.krcg.org/complete/${encodeUrlParam(text)}`), {
+    const response = await fetch(encodeURI(`https://api.krcg.org/complete/${encodeUrlParam(text)}`), {
         method: "GET",
         headers: {
             Accept: "application/json",

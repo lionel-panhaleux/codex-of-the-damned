@@ -4,7 +4,7 @@ Changelog
 1.26 (unreleased)
 -----------------
 
-- Nothing changed yet.
+- Use KRCG stable API (now v2)
 
 
 1.25 (2021-02-16)

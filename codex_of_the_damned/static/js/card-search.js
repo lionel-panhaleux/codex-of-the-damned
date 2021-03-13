@@ -231,7 +231,7 @@ class CardSearch {
         this.results.style.display = "block"
     }
     async fetchCard(name) {
-        const response = await fetch(encodeURI(`https://v2.api.krcg.org/card/${encodeUrlParam(name)}`), {
+        const response = await fetch(encodeURI(`https://api.krcg.org/card/${encodeUrlParam(name)}`), {
             method: "GET",
             headers: { Accept: "application/json" },
         })
@@ -271,7 +271,9 @@ class CardSearch {
                     (_, x) => `. <strong>${x.replace(" ", " ")}</strong>`
                 )
                 if (section.includes(":")) {
-                    let [sect, ability] = section.split(":")
+                    const parts = section.split(":")
+                    const sect = parts[0]
+                    const ability = parts.slice(1).join(":")
                     pelem.innerHTML = `<strong>${formatText(sect)}:</strong> ${formatText(ability)}`
                 } else if (types.includes("Vampire") && index === 0) {
                     pelem.innerHTML = `<strong>${formatText(section)}</strong>`
@@ -301,7 +303,7 @@ class CardSearch {
         elements["result"].innerHTML = "<p>Please wait...</p>"
         try {
             const response = await fetch(
-                encodeURI(`https://v2.api.krcg.org/submit-ruling/${encodeUrlParam(this.state.state.card)}`),
+                encodeURI(`https://api.krcg.org/submit-ruling/${encodeUrlParam(this.state.state.card)}`),
                 {
                     method: "POST",
                     body: JSON.stringify({ text: elements["explanation"].value, link: elements["url"].value }),

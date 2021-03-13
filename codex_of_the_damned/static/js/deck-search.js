@@ -169,7 +169,7 @@ class DeckSearch {
         }
     }
     async fetchDecks(cards, players_count) {
-        const response = await fetch(`https://v2.api.krcg.org/twda`, {
+        const response = await fetch(`https://api.krcg.org/twda`, {
             method: "POST",
             body: JSON.stringify({ cards: cards, players_count: players_count || 0 }),
             headers: {
@@ -193,7 +193,7 @@ class DeckSearch {
         await this.displayDeck(this.state.state)
     }
     async fetchDeck(id) {
-        const response = await fetch(encodeURI(`https://v2.api.krcg.org/twda/${id}`), {
+        const response = await fetch(encodeURI(`https://api.krcg.org/twda/${id}`), {
             method: "GET",
             headers: { Accept: "application/json" },
         })
