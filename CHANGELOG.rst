@@ -5,7 +5,7 @@ Changelog
 -----------------
 
 - Fix display of some cards referenced in rulings
-
+- Fix print status for Print on Demand (consider it "in print")
 
 1.26 (2021-03-13)
 -----------------

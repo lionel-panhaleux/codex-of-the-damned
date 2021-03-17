@@ -335,6 +335,7 @@ class CardSearch {
     }
 }
 function isInPrint(setInfo) {
+    console.log(setInfo)
     for (detail of setInfo[1]) {
         if ("release_date" in detail && detail.release_date >= "2017-05-01" && !setInfo[0].match(/(P|p)romo/g)) {
             if ("precon" in detail && detail.precon == "EC Berlin Edition") {
@@ -342,6 +343,9 @@ function isInPrint(setInfo) {
             }
             return true
         }
+    }
+    if (setInfo[0] == "Print on Demand") {
+        return true
     }
     return false
 }
