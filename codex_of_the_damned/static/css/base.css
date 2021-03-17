@@ -22,6 +22,7 @@
     --brand-vdb: #d0d0e8;
     --article-width: min(50em, 100vw - 1em);
     --columns-width: min(75em, 100vw - 1em);
+    --side-width: (99vw - 52em)/2;
     --input-width: min(100%, 25em);
 }
 @font-face {
@@ -156,6 +157,9 @@ article img {
     box-sizing: border-box;
     object-fit: contain;
     max-width: 300px;
+}
+img.krcg-modal-image {
+    max-width: min(89vw, 358px, var(--side-width));
 }
 article > img {
     max-width: 100%;
@@ -707,6 +711,9 @@ h3 span.translation {
     }
     .game-card {
         max-width: 50px;
+    }
+    img.krcg-modal-image {
+        max-width: min(89vw, 358px);
     }
     div.column-image {
         display: block;

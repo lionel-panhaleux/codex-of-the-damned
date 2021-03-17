@@ -6,6 +6,7 @@ Changelog
 
 - Fix display of some cards referenced in rulings
 - Fix print status for Print on Demand (consider it "in print")
+- Fix hover/click card image display on the side for Desktop
 
 1.26 (2021-03-13)
 -----------------
