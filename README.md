@@ -11,7 +11,7 @@ The site is publicly available at [codex-of-the-damned.org](http://www.codex-of-
 
 Portions of the materials are the copyrights and trademarks of Paradox Interactive AB,
 and are used with permission. All rights reserved.
-For more information please visit [white-wolf.com](http://www.white-wolf.com).
+For more information please visit [www.worldofdarkness.com](http://www.worldofdarkness.com.).
 
 ![Dark Pack](codex_of_the_damned/static/img/dark-pack.png)
 
