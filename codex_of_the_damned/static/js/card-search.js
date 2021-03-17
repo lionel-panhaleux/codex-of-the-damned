@@ -435,7 +435,9 @@ function formatText(text) {
     return text
         .replace(
             /(?:\s\/|\{)([^\/\}]*)(?:\/\s|\})/g,
-            (_, x) => ` <span class="krcg-card" data-name='${x}'">${x.replace(" ", " ")}</span> `
+            (_, x) =>
+                ` <span class="krcg-card" data-name="${x.replace("'", "").replace('"', "")}">` +
+                `${x.replace(" ", " ")}</span> `
         )
         .replace(
             RegExp(
