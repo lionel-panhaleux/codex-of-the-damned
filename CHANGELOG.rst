@@ -1,7 +1,7 @@
 Changelog
 =========
 
-1.27 (unreleased)
+1.27 (2021-03-18)
 -----------------
 
 - Fix display of some cards referenced in rulings
