@@ -13,9 +13,9 @@ class PageParser(html.parser.HTMLParser):
         self.urls = set()
 
     def handle_starttag(self, tag, attrs):
-        if tag != "a":
+        if tag not in ["a", "img"]:
             return
-        url = dict(attrs).get("href", "")
+        url = dict(attrs).get("href", "") or dict(attrs).get("src", "")
         # ignore internal hyperlinks
         if url[:4] != "http" or url in VISITED:
             return
