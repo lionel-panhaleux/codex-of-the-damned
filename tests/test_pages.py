@@ -29,7 +29,7 @@ def test(client, page):
     parser = PageParser()
     parser.feed(response.data.decode(response.charset))
     for url in parser.urls:
-        requests.request("HEAD", url, timeout=5).raise_for_status()
+        requests.request("HEAD", url, timeout=10).raise_for_status()
         VISITED.add(url)
 
 
