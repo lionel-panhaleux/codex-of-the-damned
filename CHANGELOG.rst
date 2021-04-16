@@ -1,7 +1,7 @@
 Changelog
 =========
 
-1.28 (unreleased)
+1.28 (2021-04-16)
 -----------------
 
 - Add promo banner for the Atlantic Cup
