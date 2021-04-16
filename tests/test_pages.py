@@ -4,6 +4,8 @@ import requests
 
 from codex_of_the_damned import navigation
 
+VISITED = set()
+
 
 class PageParser(html.parser.HTMLParser):
     def __init__(self, *args, **kwargs):
@@ -14,7 +16,8 @@ class PageParser(html.parser.HTMLParser):
         if tag != "a":
             return
         url = dict(attrs).get("href", "")
-        if url[:4] != "http":
+        # ignore internal hyperlinks
+        if url[:4] != "http" or url in VISITED:
             return
         self.urls.add(url)
 
@@ -26,7 +29,8 @@ def test(client, page):
     parser = PageParser()
     parser.feed(response.data.decode(response.charset))
     for url in parser.urls:
-        requests.request("HEAD", url).raise_for_status()
+        requests.request("HEAD", url, timeout=5).raise_for_status()
+        VISITED.add(url)
 
 
 @pytest.mark.parametrize("page", [p["self"].url for p in navigation.HELPER.values()])
