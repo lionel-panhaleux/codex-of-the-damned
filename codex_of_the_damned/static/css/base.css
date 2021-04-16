@@ -351,6 +351,30 @@ div.author > p {
     display: inline;
     vertical-align: middle;
 }
+div.promo {
+    background: var(--color-author-back);
+    border: 1px solid var(--color-author-border);
+    clear: both;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+div.promo svg {
+    fill: var(--color-text);
+    padding: 0 1em 0 0;
+    margin: 0.5em 0;
+    height: 1.9em;
+    display: inline;
+}
+div.promo svg:hover {
+    fill: var(--color-active);
+}
+div.promo p {
+    font-style: italic;
+    display: inline;
+    vertical-align: middle;
+    margin: 0.5em 0;
+}
 div.game {
     background: var(--color-deck-back);
     border-color: var(--color-deck-border);
@@ -726,5 +750,8 @@ h3 span.translation {
         width: 100%;
         margin-left: 0;
         margin-right: 0;
+    }
+    div.promo {
+        flex-flow: column;
     }
 }

@@ -1,7 +1,9 @@
 {% extends "best-cards/_layout.html" %}
+{% import "_layout_promo.html" as promo with context %}
 
 {% block article %}
 <article>
+    {{ promo }}
     <h1>{{ _('Online Play') }}</h1>
     {% trans trimmed
     amaranth=external("https://amaranth.vtes.co.nz", "Amaranth"),

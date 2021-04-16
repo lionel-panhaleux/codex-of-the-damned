@@ -1,7 +1,9 @@
 {% extends "best-cards/_layout.html" %}
+{% import "_layout_promo.html" as promo with context %}
 
 {% block article %}
 <article>
+    {{ promo }}
     <h1>{{ _('Best Cards') }}</h1>
     {% trans trimmed
     twda=external("http://www.vekn.fr/decks/twd.htm", "Tournament Winning Deck Archive (TWDA)"),

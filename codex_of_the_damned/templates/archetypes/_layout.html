@@ -1,10 +1,12 @@
 {% extends "layout.html" %}
+{% import "_layout_promo.html" as promo with context %}
 
 {% block scripts %}
 <script src="{{ url_for('static', filename='js/decklist.js') }}"></script>
 {% endblock %}
 
 {% block content %}
+{{ promo }}
 {% block archetype_name %}{% endblock %}
 <div id="decklist" class="decklist" style="display: none">
 	<h2 id="deck-name"><a id="deck-link" target="_blank"></a></h2>

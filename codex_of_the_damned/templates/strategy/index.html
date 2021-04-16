@@ -1,6 +1,8 @@
 {% extends "layout.html" %}
+{% import "_layout_promo.html" as promo with context %}
 
 {% block content %}
+{{ promo }}
 <h1>{{ _('Strategy') }}</h1>
 <p>
     {{ _('This section explores <strong>Vampire: the Eternal Struggle</strong> strategy in some details.') }}
