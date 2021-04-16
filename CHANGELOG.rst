@@ -4,7 +4,7 @@ Changelog
 1.28 (unreleased)
 -----------------
 
-- Nothing changed yet.
+- Add promo banner for the Atlantic Cup
 
 
 1.27 (2021-03-18)
