@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: codex 0.X\n"
 "Report-Msgid-Bugs-To: lionel.panhaleux+codex@gmail.com\n"
-"POT-Creation-Date: 2021-02-15 10:44+0100\n"
+"POT-Creation-Date: 2021-04-16 18:47+0200\n"
 "PO-Revision-Date: 2020-07-04 08:50+0200\n"
 "Last-Translator: Lionel Panhaleux <lionel.panhaleux+codex@gmail.com>\n"
 "Language: fr\n"
@@ -21,7 +21,7 @@ msgstr ""
 msgid "Home"
 msgstr "Accueil"
 
-#: codex_of_the_damned/navigation.py:56 codex_of_the_damned/templates/online-play/index.html:5
+#: codex_of_the_damned/navigation.py:56 codex_of_the_damned/templates/online-play/index.html:7
 msgid "Online Play"
 msgstr "Jeu en ligne"
 
@@ -37,7 +37,7 @@ msgstr "Tabletop Simulator"
 msgid "V:TES Online"
 msgstr "V:TES Online"
 
-#: codex_of_the_damned/navigation.py:65 codex_of_the_damned/templates/strategy/index.html:4
+#: codex_of_the_damned/navigation.py:65 codex_of_the_damned/templates/strategy/index.html:6
 msgid "Strategy"
 msgstr "Stratégie"
 
@@ -58,7 +58,7 @@ msgid "Deck building"
 msgstr "Construction de deck"
 
 #: codex_of_the_damned/navigation.py:72 codex_of_the_damned/navigation.py:104
-#: codex_of_the_damned/templates/archetypes/index.html:11 codex_of_the_damned/templates/strategy/archetypes.html:4
+#: codex_of_the_damned/templates/archetypes/index.html:12 codex_of_the_damned/templates/strategy/archetypes.html:4
 msgid "Archetypes"
 msgstr "Archétypes"
 
@@ -122,11 +122,11 @@ msgstr "Jouer Montano Baltimore Purge"
 msgid "Bibliodèque"
 msgstr "Bibliodèque"
 
-#: codex_of_the_damned/navigation.py:269 codex_of_the_damned/templates/best-cards/index.html:5
+#: codex_of_the_damned/navigation.py:269 codex_of_the_damned/templates/best-cards/index.html:7
 msgid "Best Cards"
 msgstr "Top Cartes"
 
-#: codex_of_the_damned/navigation.py:273 codex_of_the_damned/templates/best-cards/index.html:20
+#: codex_of_the_damned/navigation.py:273 codex_of_the_damned/templates/best-cards/index.html:22
 msgid "Generic"
 msgstr "Générique"
 
@@ -178,7 +178,7 @@ msgstr "Puissance"
 msgid "Presence"
 msgstr "Présence"
 
-#: codex_of_the_damned/navigation.py:290 codex_of_the_damned/templates/best-cards/index.html:35
+#: codex_of_the_damned/navigation.py:290 codex_of_the_damned/templates/best-cards/index.html:37
 msgid "Sects"
 msgstr "Sectes"
 
@@ -206,7 +206,7 @@ msgstr ""
 msgid "Sabbat"
 msgstr ""
 
-#: codex_of_the_damned/navigation.py:299 codex_of_the_damned/templates/best-cards/index.html:42
+#: codex_of_the_damned/navigation.py:299 codex_of_the_damned/templates/best-cards/index.html:44
 msgid "Clans"
 msgstr "Clans"
 
@@ -329,15 +329,23 @@ msgstr "La page que vous cherchez n'existe pas."
 msgid "Home page"
 msgstr "Page d'accueil"
 
+#: codex_of_the_damned/templates/_layout_promo.html:199
+msgid "Free online tournament – "
+msgstr "Tournoi en ligne gratuit – "
+
+#: codex_of_the_damned/templates/_layout_promo.html:200
+msgid "June 5th & 6th 2021"
+msgstr "5 & 6 juin 2021"
+
 #: codex_of_the_damned/templates/_layout_sponsor.html:3
 msgid "Sponsor the Codex"
 msgstr "Sponsorisez le Codex"
 
-#: codex_of_the_damned/templates/card-search.html:11
+#: codex_of_the_damned/templates/card-search.html:12
 msgid "Card Search"
 msgstr "Recherche de Carte"
 
-#: codex_of_the_damned/templates/card-search.html:14
+#: codex_of_the_damned/templates/card-search.html:15
 #, python-format
 msgid ""
 "Official cards text provided by %(vekn)s. All rulings give a link to the actual official ruling made by successive "
@@ -346,19 +354,19 @@ msgstr ""
 "Les textes officiels des cartes sont fournis par %(vekn)s. Tous les arbitrages présentent un lien vers l'arbitrage "
 "officiel correspondant effectué par les Rules Directors successifs."
 
-#: codex_of_the_damned/templates/card-search.html:41
+#: codex_of_the_damned/templates/card-search.html:42
 msgid "Rulings"
 msgstr "Arbitrages"
 
-#: codex_of_the_damned/templates/card-search.html:44
+#: codex_of_the_damned/templates/card-search.html:45
 msgid "Submit a new ruling or a ruling correction"
 msgstr "Soumettre un nouvel arbitrage ou une correction"
 
-#: codex_of_the_damned/templates/card-search.html:47
+#: codex_of_the_damned/templates/card-search.html:48
 msgid "Help improve the Codex: provide an explanation and a link to a message from a Rules Director."
 msgstr "Participez à l'amélioration du Codex : donnez une explication et un lien vers le post d'un Rules Director."
 
-#: codex_of_the_damned/templates/card-search.html:60
+#: codex_of_the_damned/templates/card-search.html:61
 msgid ""
 "<strong>Proposed rulings will not be included automatically.</strong> Once submited, your ruling will be reviewed by "
 "the Codex and KRCG team, and included in the next release."
@@ -366,51 +374,51 @@ msgstr ""
 "<strong>Les arbitrages proposés ne seront pas inclus automatiquement.</strong> Une fois soumis, votre arbitrage sera "
 "relu par l'équipe du Codex et de KRCG, et inclus dans la prochaine version."
 
-#: codex_of_the_damned/templates/card-search.html:67
+#: codex_of_the_damned/templates/card-search.html:68
 msgid "The Rules Directors have been:"
 msgstr "Les Rules Directors sont:"
 
-#: codex_of_the_damned/templates/card-search.html:69
+#: codex_of_the_damned/templates/card-search.html:70
 msgid "From 2016-12-04 onward,"
 msgstr "À partir de 2016-12-04,"
 
-#: codex_of_the_damned/templates/card-search.html:75 codex_of_the_damned/templates/card-search.html:98
+#: codex_of_the_damned/templates/card-search.html:76 codex_of_the_damned/templates/card-search.html:99
 msgid "From 2011-07-06 onward,"
 msgstr "À partir de 2011-07-06,"
 
-#: codex_of_the_damned/templates/card-search.html:81
+#: codex_of_the_damned/templates/card-search.html:82
 msgid "From 1998-06-22 onward,"
 msgstr "À partir de 1998-06-22,"
 
-#: codex_of_the_damned/templates/card-search.html:87 codex_of_the_damned/templates/card-search.html:108
+#: codex_of_the_damned/templates/card-search.html:88 codex_of_the_damned/templates/card-search.html:109
 msgid "From 1994-12-15 onward,"
 msgstr "À partir de 21994-12-15,"
 
-#: codex_of_the_damned/templates/card-search.html:96
+#: codex_of_the_damned/templates/card-search.html:97
 msgid "The official boards for rulings have been:"
 msgstr "Les forums officiels pour les arbitrages sont:"
 
-#: codex_of_the_damned/templates/card-search.html:100
+#: codex_of_the_damned/templates/card-search.html:101
 msgid "The VEKN Forum"
 msgstr "Le Forum VEKN"
 
-#: codex_of_the_damned/templates/card-search.html:103
+#: codex_of_the_damned/templates/card-search.html:104
 msgid "From 2010-12-30 onward,"
 msgstr "À partir de 2010-12-30,"
 
-#: codex_of_the_damned/templates/card-search.html:105
+#: codex_of_the_damned/templates/card-search.html:106
 msgid "The Boardgame Geek Forum"
 msgstr "Le forum de Boardgame Geek"
 
-#: codex_of_the_damned/templates/card-search.html:110
+#: codex_of_the_damned/templates/card-search.html:111
 msgid "The rec.games.trading-cards.jyhad Google Group"
 msgstr "Le groupe Google rec.games.trading-cards.jyhad"
 
-#: codex_of_the_damned/templates/deck-search.html:12
+#: codex_of_the_damned/templates/deck-search.html:13
 msgid "Deck Search"
 msgstr "Recherche de Deck"
 
-#: codex_of_the_damned/templates/deck-search.html:15
+#: codex_of_the_damned/templates/deck-search.html:16
 #, python-format
 msgid ""
 "This is an interactive interface to the %(twda)s provided by VEKN. Type a card name to search all winning deck with "
@@ -419,20 +427,20 @@ msgstr ""
 "Ceci est une interface interactive pour la %(twda)s fournie par VEKN. Entrez un nom de carte pour rechercher tous les"
 " decks gagnants qui la contiennent depuis 2008."
 
-#: codex_of_the_damned/templates/deck-search.html:27
+#: codex_of_the_damned/templates/deck-search.html:28
 msgid "At least 25 competitors"
 msgstr "Au moins 25 participants"
 
-#: codex_of_the_damned/templates/archetypes/_layout.html:13 codex_of_the_damned/templates/deck-search.html:43
+#: codex_of_the_damned/templates/archetypes/_layout.html:15 codex_of_the_damned/templates/deck-search.html:44
 msgid "VDB"
 msgstr ""
 
-#: codex_of_the_damned/templates/deck-search.html:53
+#: codex_of_the_damned/templates/deck-search.html:54
 msgid "Comments"
 msgstr "Commentaires"
 
 #. please abide by BCP translation choices for game terms when possible.
-#: codex_of_the_damned/templates/index.html:8
+#: codex_of_the_damned/templates/index.html:10
 #, python-format
 msgid ""
 "This site is a compilation of <strong>Vampire: the Eternal Struggle</strong> strategy resources. It is intended for "
@@ -443,11 +451,11 @@ msgstr ""
 "conçu pour les joueurs connaissant déjà le jeu et ses règles. VTES est un jeu publié par "
 "%(black_chantry_productions)s, sous la license %(world_of_darkness)s."
 
-#: codex_of_the_damned/templates/index.html:20
+#: codex_of_the_damned/templates/index.html:22
 msgid "Brett S. guide"
 msgstr "guide de Brett S."
 
-#: codex_of_the_damned/templates/index.html:18
+#: codex_of_the_damned/templates/index.html:20
 #, python-format
 msgid ""
 "If you are a new player, consult %(brett_s_guide)s or one of the video tutorials below to learn the game before "
@@ -458,19 +466,19 @@ msgstr ""
 "le jeu avant d'aller plus loin. Les règles officielles sont sur le %(bcp_s_website)s. Le %(players_guide)s officiel "
 "est disponible en PDF sur DriveThruRPG."
 
-#: codex_of_the_damned/templates/index.html:21
+#: codex_of_the_damned/templates/index.html:23
 msgid "BCP's website"
 msgstr "site web de BCP"
 
-#: codex_of_the_damned/templates/index.html:23
+#: codex_of_the_damned/templates/index.html:25
 msgid "Player's Guide"
 msgstr "Guide du Joueur"
 
-#: codex_of_the_damned/templates/index.html:33
+#: codex_of_the_damned/templates/index.html:35
 msgid "Github page"
 msgstr "page Github"
 
-#: codex_of_the_damned/templates/index.html:32
+#: codex_of_the_damned/templates/index.html:34
 #, python-format
 msgid ""
 "If you want to contribute to this guide, point out mistakes or raise an issue, you are welcome to do so on the "
@@ -479,42 +487,43 @@ msgstr ""
 "Si vous désirez contribuer à ce guide, signaler une erreur ou un problème, merci de le faire sur la %(github_page)s "
 "du projet."
 
-#: codex_of_the_damned/templates/index.html:39
+#: codex_of_the_damned/templates/index.html:41
 msgid "Community"
 msgstr "Communauté"
 
-#: codex_of_the_damned/templates/index.html:41
+#: codex_of_the_damned/templates/index.html:43
 msgid "VEKN Forum"
 msgstr "Forum VEKN"
 
-#: codex_of_the_damned/templates/index.html:48
+#: codex_of_the_damned/templates/index.html:50
 msgid "VTES Discord"
 msgstr "Discord VTES"
 
-#: codex_of_the_damned/templates/index.html:51
+#: codex_of_the_damned/templates/index.html:53
 msgid "VTES-LackeyCCG Discord"
 msgstr "Discord VTES-LackeyCCG"
 
-#: codex_of_the_damned/templates/index.html:54
+#: codex_of_the_damned/templates/index.html:56
 msgid "VEKN Facebook goup"
 msgstr "Groupe Facebook VEKN"
 
-#: codex_of_the_damned/templates/index.html:57
+#: codex_of_the_damned/templates/index.html:59
 msgid "The Gentleman Gamer's Tutorial"
 msgstr "Tutoriel du Gentleman Gamer"
 
-#: codex_of_the_damned/templates/index.html:60
+#: codex_of_the_damned/templates/index.html:62
 msgid "Team Covenant's Tutorial"
 msgstr "Tutoriel de la Team Covenant"
 
-#: codex_of_the_damned/templates/index.html:74
+#: codex_of_the_damned/templates/index.html:76
 msgid "interviews archive"
 msgstr "archive d'interviews"
 
-#: codex_of_the_damned/templates/index.html:82
+#: codex_of_the_damned/templates/index.html:84
+#, fuzzy
 msgid ""
-"Portions of the materials are the copyrights and trademarks of Paradox Interactive AB, and are used with permission. "
-"All rights reserved. For more information please visit"
+"Portions of the materials are the copyrights and trademarks of Paradox Interactive AB, and are used with "
+"permission.<br>All rights reserved. For more information please visit"
 msgstr ""
 "Des parties du matériel utilisé sont la propriété et les marques déposées de Paradox Interactive AB, et sont "
 "utilisées avec autorisation. Tous droits réservés. Pour plus d'informations, merci de consulter"
@@ -1561,7 +1570,7 @@ msgstr "John Newquist pour le qualifier du NAC 2008"
 msgid "Sergio Gracia's deck"
 msgstr "deck de Sergio Gracia"
 
-#: codex_of_the_damned/templates/archetypes/index.html:13
+#: codex_of_the_damned/templates/archetypes/index.html:14
 #, python-format
 msgid ""
 "<h2>Tournament Archetypes</h2> <p> Here is a list of <strong>Vampire: the Eternal Struggle</strong> deck archetypes. "
@@ -1576,11 +1585,11 @@ msgstr ""
 "depuis 2008 sont pris en compte, à l'exception de quelques designs originaux pour référence stratégique. Les decklist"
 " d'exemple sont les plus récentes, ou celles ayant gagné un Championnat Continental. </p>"
 
-#: codex_of_the_damned/templates/archetypes/index.html:246
+#: codex_of_the_damned/templates/archetypes/index.html:247
 msgid "French VEKN Forum"
 msgstr "Forum VEKN France"
 
-#: codex_of_the_damned/templates/archetypes/index.html:245
+#: codex_of_the_damned/templates/archetypes/index.html:246
 #, python-format
 msgid ""
 "<h2>Bibliodèque</h2> <p> The « Bibliodèque » is a French project made of more than a hundred decklists based on "
@@ -3378,7 +3387,7 @@ msgstr "Actions politiques"
 #: codex_of_the_damned/templates/archetypes/bibliodeque/brujah-debate.html:17
 #: codex_of_the_damned/templates/archetypes/bibliodeque/carnivalesque.html:17
 #: codex_of_the_damned/templates/archetypes/bibliodeque/cybele-maleficia.html:17
-#: codex_of_the_damned/templates/archetypes/bibliodeque/daughters.html:17
+#: codex_of_the_damned/templates/archetypes/bibliodeque/daughters.html:16
 #: codex_of_the_damned/templates/archetypes/bibliodeque/death-seekers.html:17
 #: codex_of_the_damned/templates/archetypes/bibliodeque/dekox-ultimus.html:17
 #: codex_of_the_damned/templates/archetypes/bibliodeque/dragons-breath-rounds.html:17
@@ -3440,7 +3449,7 @@ msgstr "typiquement 1 exemplaire"
 msgid "typically %(range)s copies"
 msgstr "environ %(range)s exemplaires"
 
-#: codex_of_the_damned/templates/best-cards/index.html:6
+#: codex_of_the_damned/templates/best-cards/index.html:8
 #, python-format
 msgid ""
 "<p> This category presents the best cards of the game. The list is based on a statistical analysis of the %(twda)s "
@@ -3453,7 +3462,7 @@ msgstr ""
 "ayant été inclues dans le plus grand nombre de decks gagnants depuis. </p> <p> Tous les %(hunting_grounds)s et, "
 "parfois, quelques vampires de basse capacité, ont été omis par commodité. </p>"
 
-#: codex_of_the_damned/templates/best-cards/index.html:43
+#: codex_of_the_damned/templates/best-cards/index.html:45
 #, python-format
 msgid ""
 "<p> Abominations %(abomination)s, Blood Brothers %(blood_brother)s, Panders %(pander)s, Osebo %(osebo)s, Nagaraja "
@@ -8032,7 +8041,7 @@ msgstr ""
 "Un bon modificateur pour les actions politiques, car il peut neutraliser à lui seul de nombreux votes adverses autour"
 " de la table."
 
-#: codex_of_the_damned/templates/online-play/index.html:6
+#: codex_of_the_damned/templates/online-play/index.html:8
 #, python-format
 msgid ""
 "<p> This category presents tools for online play. Each section presents a different tool, the ways to reach its "
@@ -9589,8 +9598,8 @@ msgstr "Au fil du temps, une poignée d'excellentes ressources ont été crées 
 #: codex_of_the_damned/templates/strategy/deck-building.html:22
 #: codex_of_the_damned/templates/strategy/deck-building.html:26
 #: codex_of_the_damned/templates/strategy/deck-building.html:31
-#: codex_of_the_damned/templates/strategy/deck-building.html:37 codex_of_the_damned/templates/strategy/index.html:25
-#: codex_of_the_damned/templates/strategy/index.html:29 codex_of_the_damned/templates/strategy/index.html:30
+#: codex_of_the_damned/templates/strategy/deck-building.html:37 codex_of_the_damned/templates/strategy/index.html:27
+#: codex_of_the_damned/templates/strategy/index.html:31 codex_of_the_damned/templates/strategy/index.html:32
 msgid "by"
 msgstr "de"
 
@@ -10431,11 +10440,11 @@ msgstr ""
 " même s'il est moins efficace contre les réveils. De nombreuses disciplines fournissent des dénis de blocs de moindre"
 " envergure qui ne fonctionnent que contre les alliés et les vampires plus jeunes, mais ils sont moins utilisés."
 
-#: codex_of_the_damned/templates/strategy/index.html:6
+#: codex_of_the_damned/templates/strategy/index.html:8
 msgid "This section explores <strong>Vampire: the Eternal Struggle</strong> strategy in some details."
 msgstr "Cette section explore la stratégie de <strong>Vampire: the Eternal Struggle</strong> en détail."
 
-#: codex_of_the_damned/templates/strategy/index.html:9
+#: codex_of_the_damned/templates/strategy/index.html:11
 msgid ""
 "The <strong>Basic Strategy</strong> section explains everything one needs to know to reach tournament-level play. The"
 " <strong>Advanced Strategy</strong> section is destined to seasoned players: the articles are contributions written "
@@ -10445,61 +10454,57 @@ msgstr ""
 "de tournoi. La section <strong>Stratégie avancée</strong> est destinée aux joueurs accomplis : les articles sont des "
 "contributions écrites par des joueurs de premier rang du monde entier."
 
-#: codex_of_the_damned/templates/strategy/index.html:15
+#: codex_of_the_damned/templates/strategy/index.html:17
 msgid "Basic Strategy"
 msgstr "Stratégie élémentaire"
 
-#: codex_of_the_damned/templates/strategy/index.html:27
+#: codex_of_the_damned/templates/strategy/index.html:29
 msgid "Advanced Strategy"
 msgstr "Stratégies avancée"
 
-#: codex_of_the_damned/templates/strategy/index.html:33
+#: codex_of_the_damned/templates/strategy/index.html:35
 msgid "Black Chantry pre-constructed decks guides"
 msgstr "Guides de jeu des decks préconstruits Black Chantry"
 
-#: codex_of_the_damned/templates/strategy/index.html:40
+#: codex_of_the_damned/templates/strategy/index.html:42
 msgid "First Blood: Ventrue"
 msgstr "Premier Sang : Ventrue"
 
-#: codex_of_the_damned/templates/strategy/index.html:43
+#: codex_of_the_damned/templates/strategy/index.html:45
 msgid "First Blood: Malkavian"
 msgstr "Premier Sang : Malkavien"
 
-#: codex_of_the_damned/templates/strategy/index.html:46
+#: codex_of_the_damned/templates/strategy/index.html:48
 msgid "First Blood: Nosferatu"
 msgstr "Premier Sang : Nosferatu"
 
-#: codex_of_the_damned/templates/strategy/index.html:49
+#: codex_of_the_damned/templates/strategy/index.html:51
 msgid "First Blood: Toreador"
 msgstr "Premier Sang : Toréador"
 
-#: codex_of_the_damned/templates/strategy/index.html:52
+#: codex_of_the_damned/templates/strategy/index.html:54
 msgid "First Blood: Tremere"
 msgstr "Premier Sang : Tremere"
 
-#: codex_of_the_damned/templates/strategy/index.html:55
+#: codex_of_the_damned/templates/strategy/index.html:57
 msgid "V5: Ventrue"
 msgstr ""
 
-#: codex_of_the_damned/templates/strategy/index.html:58
+#: codex_of_the_damned/templates/strategy/index.html:60
 msgid "V5: Malkavian"
 msgstr "V5: Malkavien"
 
-#: codex_of_the_damned/templates/strategy/index.html:61
+#: codex_of_the_damned/templates/strategy/index.html:63
 msgid "V5: Nosferatu"
 msgstr ""
 
-#: codex_of_the_damned/templates/strategy/index.html:64
+#: codex_of_the_damned/templates/strategy/index.html:66
 msgid "V5: Toreador"
 msgstr "V5: Toréador"
 
-#: codex_of_the_damned/templates/strategy/index.html:67
+#: codex_of_the_damned/templates/strategy/index.html:69
 msgid "V5: Tremere"
 msgstr ""
-
-#: codex_of_the_damned/templates/strategy/index.html:72
-msgid "All rights reserved."
-msgstr "Tous droits réservés."
 
 #: codex_of_the_damned/templates/strategy/table-talk.html:4
 msgid "Table talk"
@@ -12184,4 +12189,3 @@ msgstr ""
 " de dégâts maximum de 12 points d'influence. Jusqu'à ce que vous y arriviez, continuez à faire 3 à 5 dégâts par tour "
 "et à rebondir les morsures de votre prédateur, en broyant lentement l'influence de votre proie et en lui laissant "
 "croire que 12 points est un coussin confortable. </p>"
-
