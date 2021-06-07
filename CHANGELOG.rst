@@ -4,7 +4,7 @@ Changelog
 1.29 (unreleased)
 -----------------
 
-- Nothing changed yet.
+- Remove promo banner for the Atlantic Cup
 
 
 1.28 (2021-04-16)
