@@ -161,8 +161,9 @@
     </p>
     <ul>
         <li><strong>Double click</strong>: {{ _("Lock or Unlock") }}</li>
-        <li><strong>Ctrl +</strong>: {{ _("Add a blood") }}</li>
-        <li><strong>Ctrl -</strong>: {{ _("Remove a blood") }}</li>
+        <li><strong>Ctrl click</strong>: {{ _("Flip card") }}</li>
+        <li><strong>Ctrl +</strong>: {{ _("Add a blood to selected card(s)") }}</li>
+        <li><strong>Ctrl -</strong>: {{ _("Remove a blood to selected card(s)") }}</li>
         <li><strong>Ctrl D</strong>: {{ _("Draw a card from library") }}</li>
         <li><strong>Hover & Shift</strong>: {{ _("Peek at the face of one of your crypt card") }}</li>
     </ul>
@@ -176,6 +177,20 @@
         Among them, the {{ secret }} and {{ reveal }} command can be useful for some cards.
         {% endtrans %}
     </p>
+    <p>
+        {% trans trimmed
+        range_of_commands=external("https://lackeyccg.com/tutoriallogcommands.html", _("range of commands")),
+        chat_macros='<span class="code">Preferences > Chat & Macros</span>'|safe,
+        plus_n='<span class="code">/+N</span>'|safe,
+        minus_n='<span class="code">/-N</span>'|safe
+        %}
+        Finally, do not hesitate to reconfigure Lackey "Canned messages" in the {{ chat_macros }} tab.
+        These configure your shortcut buttons on top of the log window in the game.
+        You can also use commands there so, for example, you can setup the buttons
+        to get shortcuts for quick Pool changes using the {{ plus_n }} and {{ minus_n }} commands.
+        {% endtrans %}
+    </p>
+    <img src="{{ url_for('static', filename='img/lackeyccg-chat-macros.png') }}" alt="LackeyCCG Interface" />
     <h2>{{ _('Host a game by IP') }}</h2>
     <p>
         {% trans trimmed %}

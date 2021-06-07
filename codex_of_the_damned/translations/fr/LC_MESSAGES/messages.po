@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: codex 0.X\n"
 "Report-Msgid-Bugs-To: lionel.panhaleux+codex@gmail.com\n"
-"POT-Creation-Date: 2021-04-16 18:50+0200\n"
+"POT-Creation-Date: 2021-06-07 09:21+0200\n"
 "PO-Revision-Date: 2020-07-04 08:50+0200\n"
 "Last-Translator: Lionel Panhaleux <lionel.panhaleux+codex@gmail.com>\n"
 "Language: fr\n"
@@ -328,14 +328,6 @@ msgstr "La page que vous cherchez n'existe pas."
 #: codex_of_the_damned/templates/404.html:5
 msgid "Home page"
 msgstr "Page d'accueil"
-
-#: codex_of_the_damned/templates/_layout_promo.html:199
-msgid "Free online tournament – "
-msgstr "Tournoi en ligne gratuit – "
-
-#: codex_of_the_damned/templates/_layout_promo.html:200
-msgid "June 5th & 6th 2021"
-msgstr "5 & 6 juin 2021"
 
 #: codex_of_the_damned/templates/_layout_sponsor.html:3
 msgid "Sponsor the Codex"
@@ -8214,26 +8206,32 @@ msgid "Lock or Unlock"
 msgstr "Incliner ou Redresser"
 
 #: codex_of_the_damned/templates/online-play/lackeyccg.html:164
-msgid "Add a blood"
-msgstr "Ajouter un point de sang"
+#: codex_of_the_damned/templates/online-play/tabletop-simulator.html:65
+msgid "Flip card"
+msgstr "Retourner une carte"
 
 #: codex_of_the_damned/templates/online-play/lackeyccg.html:165
-msgid "Remove a blood"
-msgstr "Enlever un point de sang"
+msgid "Add a blood to selected card(s)"
+msgstr "Ajouter un point de sang à la carte sélectionnée"
 
 #: codex_of_the_damned/templates/online-play/lackeyccg.html:166
+msgid "Remove a blood to selected card(s)"
+msgstr "Enlever un point de sang de la carte sélectionnée"
+
+#: codex_of_the_damned/templates/online-play/lackeyccg.html:167
 msgid "Draw a card from library"
 msgstr "Piocher une carte de la bibliothèque"
 
-#: codex_of_the_damned/templates/online-play/lackeyccg.html:167
+#: codex_of_the_damned/templates/online-play/lackeyccg.html:168
 msgid "Peek at the face of one of your crypt card"
 msgstr "Voir la face d'une de vos cartes de crypte"
 
-#: codex_of_the_damned/templates/online-play/lackeyccg.html:171
+#: codex_of_the_damned/templates/online-play/lackeyccg.html:172
+#: codex_of_the_damned/templates/online-play/lackeyccg.html:182
 msgid "range of commands"
 msgstr "série de commandes"
 
-#: codex_of_the_damned/templates/online-play/lackeyccg.html:170
+#: codex_of_the_damned/templates/online-play/lackeyccg.html:171
 #, python-format
 msgid ""
 "Lackey also offers a %(range_of_commands)s to use in the chat window (beginning with \"/\"). Among them, the "
@@ -8242,11 +8240,23 @@ msgstr ""
 "Lackey offre une %(range_of_commands)s qui peuvent être utilisées dans la fenêtre de chat (en commençant par \"/\"). "
 "Parmi elles, les commandes %(secret)s et %(reveal)s peuvent être utiles pour certaines cartes."
 
-#: codex_of_the_damned/templates/online-play/lackeyccg.html:179
+#: codex_of_the_damned/templates/online-play/lackeyccg.html:181
+#, python-format
+msgid ""
+"Finally, do not hesitate to reconfigure Lackey \"Canned messages\" in the %(chat_macros)s tab. These configure your "
+"shortcut buttons on top of the log window in the game. You can also use commands there so, for example, you can setup"
+" the buttons to get shortcuts for quick Pool changes using the %(plus_n)s and %(minus_n)s commands."
+msgstr ""
+"Enfin, n'hésitez pas à reconfigurer les \"Canned messages\" de Lackey dans l'onglet %(chat_macros)s. Ceux-ci "
+"configurent les boutons de raccourci au dessus de la fenêtre de log. Vous pouvew aussi utilisez des commandes à cet "
+"endroit donc, par exemple, vous pouvez configurerles boutons pour avoir des raccourcis pour des changements de "
+"réserve d'influence rapides en utilisant les commandes %(plus_n)s et %(minus_n)s"
+
+#: codex_of_the_damned/templates/online-play/lackeyccg.html:194
 msgid "Host a game by IP"
 msgstr "Héberger une partie par IP"
 
-#: codex_of_the_damned/templates/online-play/lackeyccg.html:181
+#: codex_of_the_damned/templates/online-play/lackeyccg.html:196
 msgid ""
 "From time to time, the LackeyCCG server goes down. In this case, it's still possible to host a game by IP. To do "
 "that, you need to make sure your local network configuration is compliant: you will need to configure <em>port "
@@ -8260,7 +8270,7 @@ msgstr ""
 "entrantes passer par ce port. Comment configurer cela dépend de votre routeur, c-à-d du modèle de matériel fourni par"
 " votre FAI. Vous devrez <strong>rediriger le port 25710 à la fois en TCP et en UDP</strong>."
 
-#: codex_of_the_damned/templates/online-play/lackeyccg.html:191
+#: codex_of_the_damned/templates/online-play/lackeyccg.html:206
 #, python-format
 msgid ""
 "Once it's done, just click on LackeyCCG's %(start_hosting)s button, then click the %(refresh_ip)s button and check "
@@ -8270,11 +8280,11 @@ msgstr ""
 "%(refresh_ip)s et cochez la case %(override_proxy)s (si le serveur est en panne, le proxy ne peut pas être utilisé). "
 "Vous pouvez maintenant héberger votre partie par IP."
 
-#: codex_of_the_damned/templates/online-play/lackeyccg.html:203
+#: codex_of_the_damned/templates/online-play/lackeyccg.html:218
 msgid "Known issues"
 msgstr "Problèmes connus"
 
-#: codex_of_the_damned/templates/online-play/lackeyccg.html:205
+#: codex_of_the_damned/templates/online-play/lackeyccg.html:220
 msgid ""
 "Because of LackeCCG strange packaging, it seems <strong>Mac OSX Firewall</strong> cannot be configured to allow "
 "incoming connections on the required ports and protocols. Disabling the Firewall altogether will work. If anyone "
@@ -8284,7 +8294,7 @@ msgstr ""
 "configuré pour permetter les connections entrantes sur les ports et protocoles requis. Désactiver le Pare-Feu "
 "complètement fonctionne. Si quelqu'un découvre une meilleure solution, merci de nous le faire savoir."
 
-#: codex_of_the_damned/templates/online-play/lackeyccg.html:212
+#: codex_of_the_damned/templates/online-play/lackeyccg.html:227
 msgid ""
 "If you're using a <strong>second device</strong> to provide WiFi in front of your ISP's hardware, like a Google Nest "
 "Wifi, you need to configure port forwarding on this router too. The ISP router should forward the port to your WiFi "
@@ -8294,7 +8304,7 @@ msgstr ""
 "FAI, comme un Google Nest Wifi, vous devez aussi configurer la redirection de port sur ce routeur. Le routeur de "
 "votre FAI doit rediriger le port vers votre routeur WiFi, puis le routeur WiFi vers votre ordinateur."
 
-#: codex_of_the_damned/templates/online-play/lackeyccg.html:219
+#: codex_of_the_damned/templates/online-play/lackeyccg.html:234
 msgid ""
 "If your router is using <strong>DHCP</strong> to assign an IP to your computer (they usually do), you may want to "
 "configure it so that it delivers a known stable IP to your computer, so that your port forwarding configuration stays"
@@ -8363,10 +8373,6 @@ msgstr "Incliner"
 #: codex_of_the_damned/templates/online-play/tabletop-simulator.html:64
 msgid "Unlock"
 msgstr "Redresser"
-
-#: codex_of_the_damned/templates/online-play/tabletop-simulator.html:65
-msgid "Flip card"
-msgstr "Retourner une carte"
 
 #: codex_of_the_damned/templates/online-play/tabletop-simulator.html:66
 msgid "Peek at a card"
