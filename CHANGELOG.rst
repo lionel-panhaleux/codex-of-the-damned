@@ -1,7 +1,7 @@
 Changelog
 =========
 
-1.30 (unreleased)
+1.30 (2021-06-08)
 -----------------
 
 - Hide promo banner div completely
