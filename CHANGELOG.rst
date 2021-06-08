@@ -5,7 +5,7 @@ Changelog
 -----------------
 
 - Hide promo banner div completely
-
+- Lackey Tutorial: link Codex video
 
 1.29 (2021-06-08)
 -----------------
