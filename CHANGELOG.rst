@@ -1,7 +1,7 @@
 Changelog
 =========
 
-1.29 (unreleased)
+1.29 (2021-06-08)
 -----------------
 
 - Remove promo banner for the Atlantic Cup
