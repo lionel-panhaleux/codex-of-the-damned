@@ -4,7 +4,7 @@ Changelog
 1.30 (unreleased)
 -----------------
 
-- Nothing changed yet.
+- Hide promo banner div completely
 
 
 1.29 (2021-06-08)
