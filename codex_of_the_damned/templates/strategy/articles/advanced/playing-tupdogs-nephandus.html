@@ -1,0 +1,383 @@
+{% extends "strategy/articles/_layout.html" %}
+{% import "strategy/articles/tupdog-nephandus.json" as deck_json %}
+
+{% block meta %}
+<meta property="decklist" content='{{ deck_json | tojson }}' />
+{% endblock %}
+
+{% block scripts %}
+<script src="{{ url_for('static', filename='js/decklist.js') }}"></script>
+{% endblock %}
+
+{% block content %}
+<h1>
+    {{ _('Playing Tupdogs & Nephandus') }}<br />
+    <span class="subtitle">{{ _('By Tommi Hakomaa, translation by Tero Aalto.') }}</span>
+</h1>
+<div class="insert author">
+    <img src="{{ url_for('static', filename='img/tommi_hakomaa.png') }}" alt="Tommi Hakomaa">
+    <p>
+        {% trans trimmed
+        anti_ventrue_grinder=link("/archetypes/anti-ventrue-grinder", "!Ventrue Grinder")
+        %}
+        Tommi Hakomaa has been playing V:TES since 2004. He sits in the VEKN Hall of Fame with 6 tournament victories,
+        and has won Finnish National Championship in 2019. He has organized several tournaments, including three Finnish
+        NC with Tero Aalto. His favorite decks are Tupdogs + Nephandi and {{ anti_ventrue_grinder }}.
+        {% endtrans %}
+    </p>
+    <div class="clear"></div>
+</div>
+<p>
+    {% trans trimmed %}
+    I have never been much of a deck builder but I've always greatly enjoyed playing. When I was younger, I used
+    considerably more time on this hobby by tinkering with decks of my own. However, I didn't do particularly well with
+    my own designs. That's why these days, I practically always play decks created by way more talented deck builders
+    than myself, only fine-tuning them to better fit my hand.
+    {% endtrans %}
+</p>
+<p>
+    {% trans trimmed %}
+    This particular deck won the Tour de Chauffe tournament for <em>Martin Weinmayer</em> in 2019. I have used it in
+    multiple tournaments and occasionally made slight adjustments based on the metagame. My best results with this deck
+    are the final of EC 2019 and winning the Garou Rim: Antediluvian Awakening tournament.
+    {% endtrans %}
+</p>
+<div class="columns-flex">
+    <div id="decklist" class="decklist">
+        <h2 id="deck-name"><a id="deck-link" target="_blank" href="http://www.vekn.fr/decks/twd.htm#2019tdclf">Tupdog &
+                Nephandus</a>
+        </h2>
+        <p class="subtitle" id="deck-header"></p>
+        <h3 id="crypt-header"></h3>
+        <ul id="crypt-list">
+        </ul>
+        <h3 id="library-header"></h3>
+        <ul id="library-list">
+        </ul>
+    </div>
+    <div>
+        <h2 class="no-margin-top">GW > VP</h2>
+        <p>
+            {% trans trimmed %}
+            I consider one of the most important lessons of V:TES I've learnt along the years to be:
+            <strong>always play for the GW, not for the VP</strong>. This is especially true for combat decks such as
+            this one that aim at controlling the table instead of quickly reducing pool. This principle will
+            occasionally lead you to miss out on a VP that you would have gotten had you gone for it. This is a small
+            price to pay for winning tables more often than if you were simply trying to get one VP after another.
+            {% endtrans %}
+        </p>
+        <p>
+            {% trans trimmed %}
+            With this deck, your goal is to get 1 GW and from 2.5 to 4 VP. 1GW5 is certainly fine as well, but there's
+            no point in forcing it. As long as 1 or 2 players are out of the game fast enough, you can typically be
+            happy with the situation, even if it wasn't you who eliminated them. What does this mean in practice when
+            playing this deck?
+            {% endtrans %}
+        <ul>
+            <li>
+                {{ _("Categorize the opponents' decks as quickly as possible.") }}
+                <ul>
+                    <li>{{ _("How are they planning to oust their prey? Bleed, vote, something else?") }}</li>
+                    <li>{{ _("How are they trying to reach their goal? Stealth, swarm, multi action, etc.?") }}</li>
+                    <li>
+                        {% trans trimmed
+                        clown_car = link("/archetypes/ravnos-clown-car")
+                        %}
+                        Is the survival of one of these decks particularly detrimental to your game plan? Do you have to
+                        react to this deck already at an early stage, even when the player in question is not sitting
+                        next to you? A good example is a {{ clown_car }} sitting cross table and not receiving proper
+                        pressure.
+                        {% endtrans %}
+                    </li>
+                </ul>
+            </li>
+            <li>
+                {% trans trimmed %}
+                At the early stages, plan how to eliminate two "extra" players. If needed, help your crosstable buddy to
+                eliminate their prey, especially if you get something in return. Be open to all kinds of deals in
+                general. This deck's power increases dramatically the fewer players are left at the table. But always be
+                ready to reassess the situation.
+                {% endtrans %}
+            </li>
+            <li>
+                {% trans trimmed
+                nephandi=card("Nephandus", "Nephandi")
+                %}
+                Weakening your own predator is a good early game strategy with this deck. Even though your vampires are
+                cheap, you're going to invest some pool in them and {{ nephandi }} practically every turn.
+                {% endtrans %}
+            </li>
+        </ul>
+        {% trans trimmed %}
+        In the final, the deck's winning strategy remains the same as in the early rounds: getting rid of the "extra"
+        players
+        and thereafter taking control of the rest of the table. If the situation allows it, you'll want to contribute to
+        eliminating seeds higher than yourself. This improves your chances to win even if you fail to take the remaining
+        three VPs. Even a 2/2/1 VP split is enough as long as your seed is high enough.
+        {% endtrans %}
+        </p>
+    </div>
+</div>
+<h2>{{ _("Influence phase") }}</h2>
+<p>
+    {% trans trimmed
+    antonio=card("Antonio d'Erlette", "Antonio"),
+    tupdog=card("Tupdog"),
+    tupdogs=card("Tupdog", "Tupdogs")
+    %}
+    First bring out {{ antonio }}, preferably accompanied by at least one {{ tupdog }}, depending on the situation. The
+    probability to find an {{ antonio }} in your starting crypt is 61,7%. If there's no {{ antonio }} but some other
+    Tremere antitribu {{ tremere_antitribu }}, bring them first instead.
+    There's a 14,4% probability to start your game with four {{ tupdogs }} in your starting crypt. In this case, you'll
+    have to dig for the missing Tremere antitribu {{ tremere_antitribu }} by influencing {{ tupdogs }} just to recycle
+    them because they can't do anything without a Tremere antitribu {{ tremere_antitribu }} in this deck.
+    {% endtrans %}
+</p>
+<table>
+    <thead>
+        <tr>
+            <td>{{_("Tupdogs recycled")}}</td>
+            <td>{{_("Chance of a Tremere")}}</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>42.9%</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>68.6%</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>83.4%</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>91.7%</td>
+        </tr>
+    </tbody>
+</table>
+<p>
+    {% trans trimmed
+    tupdog=card("Tupdog"),
+    tupdogs=card("Tupdog", "Tupdogs")
+    %}
+    Under these circumstances, I recommend to bring out 2 or 3 {{ tupdogs }}. I usually bring two. Just one makes no
+    sense for recycling purposes if you have four or more transfers. Paying one to see one costs the same as a
+    {{ tupdog }}, and you don't lose the recycled vampire.
+    {% endtrans %}
+</p>
+<div class="insert tip">
+    <h3>{{ _('Tips for the influence phase') }}</h3>
+    <ul>
+        <li>
+            {% trans trimmed
+            dreams_of_the_sphinx=card("Dreams of the Sphinx"),
+            powerbase_montreal=card("Powerbase: Montreal"),
+            information_highway=card("Information Highway"),
+            antonio=card("Antonio d'Erlette", "Antonio"),
+            tupdog=card("Tupdog")
+            %}
+            {{ dreams_of_the_sphinx }}, {{ powerbase_montreal }} and {{ information_highway }} allow you to both use {{
+            antonio }}'s special and influence a {{ tupdog }} in the same turn.
+            {% endtrans %}
+        </li>
+        <li>
+            {% trans trimmed
+            nephandus=card("Nephandus"),
+            tupdog=card("Tupdog"),
+            tupdogs=card("Tupdog", "Tupdogs")
+            %}
+            In a steady game situation it is usually good to influence out one {{ nephandus }} and one {{ tupdog }} (if
+            you have the means). If you need more defence or attack power it is wise to influence out multiple
+            {{ tupdogs }}. Just keep in mind that it is important to have those {{ nephandus }} to destroy torpored
+            vampires.
+            {% endtrans %}
+        </li>
+    </ul>
+</div>
+<h2>{{ _("Card flow") }}</h2>
+<p>
+    {% trans trimmed
+    parthenon=card("The Parthenon", "Parthenon"),
+    dreams_of_the_sphinx=card("Dreams of the Sphinx"),
+    ashur_tablets=card("Ashur Tablets")
+    %}
+    In V:TES, one of the most important qualities of a deck is good card flow. Without it, your hand stagnates easily
+    and both the deck's power and your play options drop dramatically. In this deck, the large master module (~35% of
+    the deck) poses the greatest single hand jam risk. That's why it's vital to always play a {{ parthenon }} as quickly
+    as possible. Always use your discard phase action. Any cards you discard can be brought back several times over with
+    {{ ashur_tablets }}. {{ dreams_of_the_sphinx }} also helps in looking for a {{ parthenon }}.
+    {% endtrans %}
+</p>
+<table>
+    <thead>
+        <tr>
+            <td>{{_("Cards drawn")}}</td>
+            <td>{{_("Chance of a Parthenon")}}</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>7</td>
+            <td>35%</td>
+        </tr>
+        <tr>
+            <td>11</td>
+            <td>50%</td>
+        </tr>
+        <tr>
+            <td>15</td>
+            <td>62%</td>
+        </tr>
+        <tr>
+            <td>20</td>
+            <td>74%</td>
+        </tr>
+        <tr>
+            <td>25</td>
+            <td>82%</td>
+        </tr>
+    </tbody>
+</table>
+<div class="insert tip">
+    <h3>{{ _("Tips for better card flow") }}</h3>
+    <ul>
+        <li>
+            {% trans trimmed
+            the_parthenon=card("The Parthenon")
+            %}
+            Play {{ the_parthenon }} ASAP.
+            {% endtrans %}
+        </li>
+        <li>{{ _("Always discard.") }}</li>
+        <li>
+            {% trans trimmed
+            dreams=card("Dreams of the Sphinx", "Dreams")
+            %}
+            Use {{ dreams }} for cards.
+            {% endtrans %}
+        </li>
+        <li>
+            {% trans trimmed
+            antonio=card("Antonio d'Erlette", "Antonio"),
+            nephandus=card("Nephandus")
+            %}
+            {{ antonio }}'s special can also find a {{ nephandus }} in your hand.
+            {% endtrans %}
+        </li>
+    </ul>
+</div>
+<h2>{{ _("Table Talk") }}</h2>
+<p>
+    {% trans trimmed
+    tupdogs=card("Tupdog", "Tupdogs")
+    %}
+    Your deck is very aggressive but it doesn't mean <em>you</em> need to be. Try to avoid situations where you spew
+    threats all over the table without being able to follow up on them. This will only make unnecessarily many players
+    gang up against you. On the other hand, never accept any superfluous damage from the crosstable. Try to offer your
+    crosstable other options instead, and if they do not like your options, you can threaten them with your torpedoes
+    ({{ tupdogs }}). If you make a threat, don't go back on it, or you'll soon run out of credibility.
+    {% endtrans %}
+</p>
+<p>
+    {% trans trimmed %}
+    Listen to what the other players have to say to you. If they offer you a deal that will even just partially advance
+    your goal, accept it. Generally, the faster the number of players drops from five to three, the better you're doing.
+    {% endtrans %}
+</p>
+<h2>{{ _("Cards that counter this deck and how to prepare for them") }}</h2>
+<div class="columns-flex">
+    <div class="inline-card">
+        {{ card_image("Ancilla Empowerment", false) }}
+    </div>
+    <div>
+        <h3 class="no-margin-top">Anarchist Uprising<br>Ancilla Empowerment</h3>
+        <p>
+            {% trans trimmed
+            delaying_tactics=card("Delaying Tactics"),
+            yawp_court=card("Yawp Court")
+            %}
+            This deck quickly accumulates 5+ minions, making these votes nasty. You have 2x {{ delaying_tactics }} and
+            1x {{ yawp_court }} to use against them. Add or subtract according to your local meta. In my experience,
+            {{ yawp_court }} is very good anti-vote tech. I have increased their number to two for future games.
+            {% endtrans %}
+        </p>
+    </div>
+</div>
+<div class="columns-flex">
+    <div class="inline-card">
+        {{ card_image("Scourge of the Enochians", false) }}
+    </div>
+    <div>
+        <h3 class="no-margin-top">Scourge of the Enochians</h3>
+        <p class="half-width">
+            {% trans trimmed
+            unmaskings=card("The Unmasking", "Unmaskings"),
+            uncoilings=card("The Uncoiling", "Uncoilings"),
+            scourge=card("Scourge of the Enochians", "Scourge")
+            %}
+            Switching the {{ unmaskings }} out for {{ uncoilings }} is one option to consider. I wouldn't personally
+            recommend it, though, because the lack of {{ unmaskings }} considerably weakens the deck's defense. When a
+            {{ scourge }} is played, I typically start thinking how I could contribute to ousting the player controlling
+            it to get rid of it.
+            {% endtrans %}
+        </p>
+    </div>
+</div>
+<div class="columns-flex">
+    <div class="inline-card">
+        {{ card_image("Gran Madre di Dio, Italy", false) }}
+    </div>
+    <div>
+        <h3 class="no-margin-top">Gran Madre di Dio, Italy</h3>
+        <p class="half-width">
+            {% trans trimmed
+            di=card("Direct Intervention", "DI"),
+            tupdogs=card("Tupdog", "Tupdogs"),
+            nephandi=card("Nephandus", "Nephandi"),
+            haven_uncovered=card("Haven Uncovered")
+            %}
+            Rarely played but very problematic if played by your neighbor. Absolutely {{ di }} this one if you can. If
+            you cannot, immediately use your {{ tupdogs }} to rush the minion it's on and {{ nephandi }} to burn it from
+            torpor. Should you fail, a {{ haven_uncovered }} and a herd of {{ nephandi }} will do the trick later on. As
+            long as this card remains in your neighborhood (on a 2+ cap vampire), there's no point in bringing out new
+            {{ tupdogs }}, and a big part of your deck is equally useless.
+            {% endtrans %}
+        </p>
+    </div>
+</div>
+<div class="columns-flex">
+    <div class="inline-card">
+        {{ card_image("Trochomancy", false) }}
+    </div>
+    <div>
+        <h3 class="no-margin-top">Trochomancy</h3>
+        <p class="half-width">
+            {% trans trimmed
+            trochomancy=card("Trochomancy")
+            %}
+            A real poison for this deck. There's no good way around this card as any vampire with inferior Necromancy
+            {{ nec }} can use it. If you get to play one against this deck, you can do the most damage by removing
+            combat cards. Just one {{ trochomancy }} hurts a lot, and surviving two is basically impossible.
+            {% endtrans %}
+        </p>
+    </div>
+</div>
+<h2>{{ _("Final words") }}</h2>
+<p>
+    {% trans trimmed
+    deck_search=link("/deck-search"),
+    tournament_winning_decks=link("/deck-search", _("tournament winning decks"), cards="Tupdog|Nephandus|Yawp Court"),
+    tupdog=card("Tupdog"),
+    nephandus=card("Nephandus"),
+    yawp_court=card("Yawp Court")
+    %}
+    If you're like me in that you find deckbuilding a challenge, and it's holding you back in the game, I recommend
+    studying other people's designs using the TWDA or Codex of the Damned. Try the Codex's {{ deck_search }}. It will
+    show you for example all {{ tournament_winning_decks }} with {{ tupdog }}, {{ nephandus }} and {{ yawp_court }}.
+    {% endtrans %}
+</p>
+{% endblock %}

@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: codex 0.X\n"
 "Report-Msgid-Bugs-To: lionel.panhaleux+codex@gmail.com\n"
-"POT-Creation-Date: 2021-06-08 09:31+0200\n"
+"POT-Creation-Date: 2021-07-08 12:07+0200\n"
 "PO-Revision-Date: 2020-07-04 08:50+0200\n"
 "Last-Translator: Lionel Panhaleux <lionel.panhaleux+codex@gmail.com>\n"
 "Language: fr\n"
@@ -57,13 +57,14 @@ msgstr "Régénération"
 msgid "Deck building"
 msgstr "Construction de deck"
 
-#: codex_of_the_damned/navigation.py:72 codex_of_the_damned/navigation.py:104
+#: codex_of_the_damned/navigation.py:72 codex_of_the_damned/navigation.py:105
 #: codex_of_the_damned/templates/archetypes/index.html:12 codex_of_the_damned/templates/strategy/archetypes.html:4
 msgid "Archetypes"
 msgstr "Archétypes"
 
 #: codex_of_the_damned/navigation.py:73 codex_of_the_damned/templates/strategy/archetypes.html:250
 #: codex_of_the_damned/templates/strategy/articles/advanced/playing-montano-baltimore-purge.html:121
+#: codex_of_the_damned/templates/strategy/articles/advanced/playing-tupdogs-nephandus.html:273
 msgid "Table Talk"
 msgstr "Discussion"
 
@@ -118,71 +119,76 @@ msgstr "Le jeu dans le jeu"
 msgid "Playing Montano Baltimore Purge"
 msgstr "Jouer Montano Baltimore Purge"
 
-#: codex_of_the_damned/navigation.py:160
+#: codex_of_the_damned/navigation.py:97
+#: codex_of_the_damned/templates/strategy/articles/advanced/playing-tupdogs-nephandus.html:14
+msgid "Playing Tupdogs & Nephandus"
+msgstr "Jouer Tupdogs & Nephandus"
+
+#: codex_of_the_damned/navigation.py:161
 msgid "Bibliodèque"
 msgstr "Bibliodèque"
 
-#: codex_of_the_damned/navigation.py:269 codex_of_the_damned/templates/best-cards/index.html:7
+#: codex_of_the_damned/navigation.py:270 codex_of_the_damned/templates/best-cards/index.html:7
 msgid "Best Cards"
 msgstr "Top Cartes"
 
-#: codex_of_the_damned/navigation.py:273 codex_of_the_damned/templates/best-cards/index.html:22
+#: codex_of_the_damned/navigation.py:274 codex_of_the_damned/templates/best-cards/index.html:22
 msgid "Generic"
 msgstr "Générique"
 
-#: codex_of_the_damned/navigation.py:275 codex_of_the_damned/templates/best-cards/generic/master-cards.html:5
+#: codex_of_the_damned/navigation.py:276 codex_of_the_damned/templates/best-cards/generic/master-cards.html:5
 msgid "Master cards"
 msgstr "Cartes de Maître"
 
-#: codex_of_the_damned/navigation.py:276
+#: codex_of_the_damned/navigation.py:277
 msgid "Political actions"
 msgstr "Actions politiques"
 
-#: codex_of_the_damned/navigation.py:277 codex_of_the_damned/templates/best-cards/generic/no-discipline.html:5
+#: codex_of_the_damned/navigation.py:278 codex_of_the_damned/templates/best-cards/generic/no-discipline.html:5
 msgid "No discipline"
 msgstr "Sans discipline"
 
-#: codex_of_the_damned/navigation.py:278 codex_of_the_damned/templates/best-cards/generic/animalism.html:5
+#: codex_of_the_damned/navigation.py:279 codex_of_the_damned/templates/best-cards/generic/animalism.html:5
 msgid "Animalism"
 msgstr "Animalisme"
 
-#: codex_of_the_damned/navigation.py:279 codex_of_the_damned/templates/best-cards/generic/auspex.html:5
+#: codex_of_the_damned/navigation.py:280 codex_of_the_damned/templates/best-cards/generic/auspex.html:5
 msgid "Auspex"
 msgstr "Auspex"
 
-#: codex_of_the_damned/navigation.py:280 codex_of_the_damned/templates/best-cards/generic/celerity.html:5
+#: codex_of_the_damned/navigation.py:281 codex_of_the_damned/templates/best-cards/generic/celerity.html:5
 msgid "Celerity"
 msgstr "Célérité"
 
-#: codex_of_the_damned/navigation.py:281 codex_of_the_damned/templates/best-cards/generic/dominate.html:5
+#: codex_of_the_damned/navigation.py:282 codex_of_the_damned/templates/best-cards/generic/dominate.html:5
 msgid "Dominate"
 msgstr "Domination"
 
-#: codex_of_the_damned/navigation.py:282 codex_of_the_damned/templates/best-cards/generic/fortitude.html:5
+#: codex_of_the_damned/navigation.py:283 codex_of_the_damned/templates/best-cards/generic/fortitude.html:5
 msgid "Fortitude"
 msgstr "Force d’âme"
 
-#: codex_of_the_damned/navigation.py:283 codex_of_the_damned/templates/best-cards/generic/necromancy.html:5
+#: codex_of_the_damned/navigation.py:284 codex_of_the_damned/templates/best-cards/generic/necromancy.html:5
 msgid "Necromancy"
 msgstr "Nécromancie"
 
-#: codex_of_the_damned/navigation.py:284 codex_of_the_damned/templates/best-cards/generic/obfuscate.html:5
+#: codex_of_the_damned/navigation.py:285 codex_of_the_damned/templates/best-cards/generic/obfuscate.html:5
 msgid "Obfuscate"
 msgstr "Occultation"
 
-#: codex_of_the_damned/navigation.py:285 codex_of_the_damned/templates/best-cards/generic/potence.html:5
+#: codex_of_the_damned/navigation.py:286 codex_of_the_damned/templates/best-cards/generic/potence.html:5
 msgid "Potence"
 msgstr "Puissance"
 
-#: codex_of_the_damned/navigation.py:286
+#: codex_of_the_damned/navigation.py:287
 msgid "Presence"
 msgstr "Présence"
 
-#: codex_of_the_damned/navigation.py:290 codex_of_the_damned/templates/best-cards/index.html:37
+#: codex_of_the_damned/navigation.py:291 codex_of_the_damned/templates/best-cards/index.html:37
 msgid "Sects"
 msgstr "Sectes"
 
-#: codex_of_the_damned/navigation.py:292 codex_of_the_damned/templates/strategy/bloat.html:77
+#: codex_of_the_damned/navigation.py:293 codex_of_the_damned/templates/strategy/bloat.html:77
 #: codex_of_the_damned/templates/strategy/bloat.html:78 codex_of_the_damned/templates/strategy/bloat.html:99
 #: codex_of_the_damned/templates/strategy/bloat.html:100 codex_of_the_damned/templates/strategy/fundamentals.html:285
 #: codex_of_the_damned/templates/strategy/fundamentals.html:286
@@ -191,133 +197,133 @@ msgstr "Sectes"
 msgid "Anarch"
 msgstr ""
 
-#: codex_of_the_damned/navigation.py:293
+#: codex_of_the_damned/navigation.py:294
 msgid "Camarilla"
 msgstr ""
 
-#: codex_of_the_damned/navigation.py:294 codex_of_the_damned/templates/strategy/bloat.html:142
+#: codex_of_the_damned/navigation.py:295 codex_of_the_damned/templates/strategy/bloat.html:142
 #: codex_of_the_damned/templates/strategy/fundamentals.html:90 codex_of_the_damned/templates/strategy/fundamentals.html:476
 msgid "Laibon"
 msgstr ""
 
-#: codex_of_the_damned/navigation.py:295 codex_of_the_damned/templates/strategy/bloat.html:101
+#: codex_of_the_damned/navigation.py:296 codex_of_the_damned/templates/strategy/bloat.html:101
 #: codex_of_the_damned/templates/strategy/bloat.html:102 codex_of_the_damned/templates/strategy/bloat.html:258
 #: codex_of_the_damned/templates/strategy/fundamentals.html:448
 msgid "Sabbat"
 msgstr ""
 
-#: codex_of_the_damned/navigation.py:299 codex_of_the_damned/templates/best-cards/index.html:44
+#: codex_of_the_damned/navigation.py:300 codex_of_the_damned/templates/best-cards/index.html:44
 msgid "Clans"
 msgstr "Clans"
 
-#: codex_of_the_damned/navigation.py:301
+#: codex_of_the_damned/navigation.py:302
 msgid "Ahrimanes"
 msgstr ""
 
-#: codex_of_the_damned/navigation.py:302
+#: codex_of_the_damned/navigation.py:303
 msgid "Akunanse"
 msgstr ""
 
-#: codex_of_the_damned/navigation.py:303
+#: codex_of_the_damned/navigation.py:304
 msgid "Assamite"
 msgstr ""
 
-#: codex_of_the_damned/navigation.py:304
+#: codex_of_the_damned/navigation.py:305
 msgid "Baali"
 msgstr ""
 
-#: codex_of_the_damned/navigation.py:305
+#: codex_of_the_damned/navigation.py:306
 msgid "Brujah"
 msgstr ""
 
-#: codex_of_the_damned/navigation.py:306
+#: codex_of_the_damned/navigation.py:307
 msgid "Caitiff"
 msgstr ""
 
-#: codex_of_the_damned/navigation.py:307 codex_of_the_damned/templates/best-cards/clans/daughters-of-cacophony.html:6
+#: codex_of_the_damned/navigation.py:308 codex_of_the_damned/templates/best-cards/clans/daughters-of-cacophony.html:6
 msgid "Daughters of Cacophony"
 msgstr "Filles de la Cacophonie"
 
-#: codex_of_the_damned/navigation.py:308 codex_of_the_damned/templates/best-cards/clans/followers-of-set.html:6
+#: codex_of_the_damned/navigation.py:309 codex_of_the_damned/templates/best-cards/clans/followers-of-set.html:6
 msgid "Followers of Set"
 msgstr "Disciples de Seth"
 
-#: codex_of_the_damned/navigation.py:309
+#: codex_of_the_damned/navigation.py:310
 msgid "Gangrel"
 msgstr ""
 
-#: codex_of_the_damned/navigation.py:310
+#: codex_of_the_damned/navigation.py:311
 msgid "Giovanni"
 msgstr ""
 
-#: codex_of_the_damned/navigation.py:311
+#: codex_of_the_damned/navigation.py:312
 msgid "Guruhi"
 msgstr ""
 
-#: codex_of_the_damned/navigation.py:312 codex_of_the_damned/templates/best-cards/clans/harbingers-of-skulls.html:6
+#: codex_of_the_damned/navigation.py:313 codex_of_the_damned/templates/best-cards/clans/harbingers-of-skulls.html:6
 msgid "Harbingers of Skulls"
 msgstr "Émissaires des Crânes"
 
-#: codex_of_the_damned/navigation.py:313 codex_of_the_damned/templates/best-cards/clans/imbued.html:6
+#: codex_of_the_damned/navigation.py:314 codex_of_the_damned/templates/best-cards/clans/imbued.html:6
 #: codex_of_the_damned/templates/strategy/bloat.html:152 codex_of_the_damned/templates/strategy/fundamentals.html:287
 msgid "Imbued"
 msgstr "Illuminés"
 
-#: codex_of_the_damned/navigation.py:314
+#: codex_of_the_damned/navigation.py:315
 msgid "Ishtarri"
 msgstr ""
 
-#: codex_of_the_damned/navigation.py:315
+#: codex_of_the_damned/navigation.py:316
 msgid "Kiasyd"
 msgstr ""
 
-#: codex_of_the_damned/navigation.py:316
+#: codex_of_the_damned/navigation.py:317
 msgid "Lasombra"
 msgstr ""
 
-#: codex_of_the_damned/navigation.py:317 codex_of_the_damned/templates/best-cards/clans/malkavian.html:6
+#: codex_of_the_damned/navigation.py:318 codex_of_the_damned/templates/best-cards/clans/malkavian.html:6
 #: codex_of_the_damned/templates/strategy/articles/basic/blood-pool-and-grinding-beads.html:57
 msgid "Malkavian"
 msgstr "Malkavien"
 
-#: codex_of_the_damned/navigation.py:318
+#: codex_of_the_damned/navigation.py:319
 msgid "Nosferatu"
 msgstr ""
 
-#: codex_of_the_damned/navigation.py:319
+#: codex_of_the_damned/navigation.py:320
 msgid "Ravnos"
 msgstr ""
 
-#: codex_of_the_damned/navigation.py:320
+#: codex_of_the_damned/navigation.py:321
 msgid "Salubri"
 msgstr ""
 
-#: codex_of_the_damned/navigation.py:321 codex_of_the_damned/templates/best-cards/clans/toreador.html:6
+#: codex_of_the_damned/navigation.py:322 codex_of_the_damned/templates/best-cards/clans/toreador.html:6
 msgid "Toreador"
 msgstr "Toréador"
 
-#: codex_of_the_damned/navigation.py:322
+#: codex_of_the_damned/navigation.py:323
 #: codex_of_the_damned/templates/strategy/articles/basic/blood-pool-and-grinding-beads.html:72
 msgid "Tremere"
 msgstr ""
 
-#: codex_of_the_damned/navigation.py:323 codex_of_the_damned/templates/best-cards/clans/true-brujah.html:6
+#: codex_of_the_damned/navigation.py:324 codex_of_the_damned/templates/best-cards/clans/true-brujah.html:6
 msgid "True Brujah"
 msgstr "Brujah Véritables"
 
-#: codex_of_the_damned/navigation.py:324
+#: codex_of_the_damned/navigation.py:325
 msgid "Tzimisce"
 msgstr ""
 
-#: codex_of_the_damned/navigation.py:325
+#: codex_of_the_damned/navigation.py:326
 msgid "Ventrue"
 msgstr ""
 
-#: codex_of_the_damned/navigation.py:330
+#: codex_of_the_damned/navigation.py:331
 msgid "Deck Search"
 msgstr "Recherche Deck"
 
-#: codex_of_the_damned/navigation.py:331
+#: codex_of_the_damned/navigation.py:332
 msgid "Card Search"
 msgstr "Recherche Carte"
 
@@ -9606,6 +9612,7 @@ msgstr "Au fil du temps, une poignée d'excellentes ressources ont été crées 
 #: codex_of_the_damned/templates/strategy/deck-building.html:31
 #: codex_of_the_damned/templates/strategy/deck-building.html:37 codex_of_the_damned/templates/strategy/index.html:27
 #: codex_of_the_damned/templates/strategy/index.html:31 codex_of_the_damned/templates/strategy/index.html:32
+#: codex_of_the_damned/templates/strategy/index.html:34
 msgid "by"
 msgstr "de"
 
@@ -10468,47 +10475,47 @@ msgstr "Stratégie élémentaire"
 msgid "Advanced Strategy"
 msgstr "Stratégies avancée"
 
-#: codex_of_the_damned/templates/strategy/index.html:35
+#: codex_of_the_damned/templates/strategy/index.html:36
 msgid "Black Chantry pre-constructed decks guides"
 msgstr "Guides de jeu des decks préconstruits Black Chantry"
 
-#: codex_of_the_damned/templates/strategy/index.html:42
+#: codex_of_the_damned/templates/strategy/index.html:43
 msgid "First Blood: Ventrue"
 msgstr "Premier Sang : Ventrue"
 
-#: codex_of_the_damned/templates/strategy/index.html:45
+#: codex_of_the_damned/templates/strategy/index.html:46
 msgid "First Blood: Malkavian"
 msgstr "Premier Sang : Malkavien"
 
-#: codex_of_the_damned/templates/strategy/index.html:48
+#: codex_of_the_damned/templates/strategy/index.html:49
 msgid "First Blood: Nosferatu"
 msgstr "Premier Sang : Nosferatu"
 
-#: codex_of_the_damned/templates/strategy/index.html:51
+#: codex_of_the_damned/templates/strategy/index.html:52
 msgid "First Blood: Toreador"
 msgstr "Premier Sang : Toréador"
 
-#: codex_of_the_damned/templates/strategy/index.html:54
+#: codex_of_the_damned/templates/strategy/index.html:55
 msgid "First Blood: Tremere"
 msgstr "Premier Sang : Tremere"
 
-#: codex_of_the_damned/templates/strategy/index.html:57
+#: codex_of_the_damned/templates/strategy/index.html:58
 msgid "V5: Ventrue"
 msgstr ""
 
-#: codex_of_the_damned/templates/strategy/index.html:60
+#: codex_of_the_damned/templates/strategy/index.html:61
 msgid "V5: Malkavian"
 msgstr "V5: Malkavien"
 
-#: codex_of_the_damned/templates/strategy/index.html:63
+#: codex_of_the_damned/templates/strategy/index.html:64
 msgid "V5: Nosferatu"
 msgstr ""
 
-#: codex_of_the_damned/templates/strategy/index.html:66
+#: codex_of_the_damned/templates/strategy/index.html:67
 msgid "V5: Toreador"
 msgstr "V5: Toréador"
 
-#: codex_of_the_damned/templates/strategy/index.html:69
+#: codex_of_the_damned/templates/strategy/index.html:70
 msgid "V5: Tremere"
 msgstr ""
 
@@ -11314,6 +11321,341 @@ msgstr ""
 "torpeur. J'ai eu de très bonnes expériences avec %(the_capuchin)s joué par ma proie. Plus vous vous attendez à du "
 "combat, moins MBP devient attrayant si vous cherchez un chemin sûr vers la victoire."
 
+#: codex_of_the_damned/templates/strategy/articles/advanced/playing-tupdogs-nephandus.html:15
+msgid "By Tommi Hakomaa, translation by Tero Aalto."
+msgstr "Par Tommi Hakomaa, traduction par Tero Aalto."
+
+#: codex_of_the_damned/templates/strategy/articles/advanced/playing-tupdogs-nephandus.html:20
+#, python-format
+msgid ""
+"Tommi Hakomaa has been playing V:TES since 2004. He sits in the VEKN Hall of Fame with 6 tournament victories, and "
+"has won Finnish National Championship in 2019. He has organized several tournaments, including three Finnish NC with "
+"Tero Aalto. His favorite decks are Tupdogs + Nephandi and %(anti_ventrue_grinder)s."
+msgstr ""
+"Tommi Hakomaa joue à V:TES depuis 2004. Il fait partie du VEKN Hall of Fame avec 6 victoires en tournoi et a remporté"
+" le championnat national finlandais en 2019. Il a organisé plusieurs tournois, dont trois NC finlandais avec Tero "
+"Aalto. Ses decks préférés sont Tupdogs + Nephandi et %(anti_ventrue_grinder)s."
+
+#: codex_of_the_damned/templates/strategy/articles/advanced/playing-tupdogs-nephandus.html:31
+msgid ""
+"I have never been much of a deck builder but I've always greatly enjoyed playing. When I was younger, I used "
+"considerably more time on this hobby by tinkering with decks of my own. However, I didn't do particularly well with "
+"my own designs. That's why these days, I practically always play decks created by way more talented deck builders "
+"than myself, only fine-tuning them to better fit my hand."
+msgstr ""
+"Je n'ai jamais vraiment été un constructeur de deck mais j'ai toujours beaucoup aimé jouer. Quand j'étais plus jeune,"
+" j'ai consacré beaucoup plus de temps à ce passe-temps en bricolant mes propres decks. Cependant, je n'ai pas "
+"particulièrement bien réussi avec mes propres créations. C'est pourquoi ces jours-ci, je joue pratiquement toujours "
+"des decks créés par des constructeurs bien plus talentueux que moi, en les ajustant seulement pour qu'ils "
+"correspondent mieux à mon style."
+
+#: codex_of_the_damned/templates/strategy/articles/advanced/playing-tupdogs-nephandus.html:39
+msgid ""
+"This particular deck won the Tour de Chauffe tournament for <em>Martin Weinmayer</em> in 2019. I have used it in "
+"multiple tournaments and occasionally made slight adjustments based on the metagame. My best results with this deck "
+"are the final of EC 2019 and winning the Garou Rim: Antediluvian Awakening tournament."
+msgstr ""
+"Ce deck en particulier a remporté le tournoi Tour de Chauffe pour <em>Martin Weinmayer</em> en 2019. Je l'ai utilisé "
+"dans plusieurs tournois et j'ai parfois fait de légers ajustements en fonction du métagame. Mes meilleurs résultats "
+"avec ce deck sont la finale de l'EC 2019 et la victoire au tournoi Garou Rim: Antediluvian Awakening."
+
+#: codex_of_the_damned/templates/strategy/articles/advanced/playing-tupdogs-nephandus.html:61
+msgid ""
+"I consider one of the most important lessons of V:TES I've learnt along the years to be: <strong>always play for the "
+"GW, not for the VP</strong>. This is especially true for combat decks such as this one that aim at controlling the "
+"table instead of quickly reducing pool. This principle will occasionally lead you to miss out on a VP that you would "
+"have gotten had you gone for it. This is a small price to pay for winning tables more often than if you were simply "
+"trying to get one VP after another."
+msgstr ""
+"Je considère que l'une des leçons les plus importantes de V:TES que j'ai apprises au fil des ans est : <strong>jouez "
+"toujours pour le GW, pas pour le VP</strong>. C'est particulièrement vrai pour les decks de combat comme celui-ci qui"
+" visent à contrôler la table au lieu de réduire rapidement la réserve d'influence. Ce principe vous amènera parfois à"
+" rater un VP que vous auriez obtenu si vous l'aviez tenté. C'est un petit prix à payer pour gagner des tables plus "
+"souvent que si vous essayiez simplement d'obtenir un VP après l'autre."
+
+#: codex_of_the_damned/templates/strategy/articles/advanced/playing-tupdogs-nephandus.html:70
+msgid ""
+"With this deck, your goal is to get 1 GW and from 2.5 to 4 VP. 1GW5 is certainly fine as well, but there's no point "
+"in forcing it. As long as 1 or 2 players are out of the game fast enough, you can typically be happy with the "
+"situation, even if it wasn't you who eliminated them. What does this mean in practice when playing this deck?"
+msgstr ""
+"Avec ce deck, votre objectif est d'obtenir 1 GW et de 2,5 à 4 VP. 1GW5 est certainement bien aussi, mais il n'est pas"
+" utile de forcer. Tant qu'un ou deux joueurs sortent du jeu assez rapidement, vous pouvez généralement être satisfait"
+" de la situation, même si ce n'est pas vous qui les avez éliminés. Qu'est-ce que cela signifie en pratique lorsque "
+"vous jouez ce deck ?"
+
+#: codex_of_the_damned/templates/strategy/articles/advanced/playing-tupdogs-nephandus.html:78
+msgid "Categorize the opponents' decks as quickly as possible."
+msgstr "Catégorisez les decks des adversaires aussi rapidement que possible."
+
+#: codex_of_the_damned/templates/strategy/articles/advanced/playing-tupdogs-nephandus.html:80
+msgid "How are they planning to oust their prey? Bleed, vote, something else?"
+msgstr "Comment prévoient-ils d'éliminer leur proie? Morsure, vote, quelque chose d'autre ?"
+
+#: codex_of_the_damned/templates/strategy/articles/advanced/playing-tupdogs-nephandus.html:81
+msgid "How are they trying to reach their goal? Stealth, swarm, multi action, etc.?"
+msgstr "Comment essaient-ils d'atteindre leur but ? Discrétion, essaim, actions multiples, etc. ?"
+
+#: codex_of_the_damned/templates/strategy/articles/advanced/playing-tupdogs-nephandus.html:83
+#, python-format
+msgid ""
+"Is the survival of one of these decks particularly detrimental to your game plan? Do you have to react to this deck "
+"already at an early stage, even when the player in question is not sitting next to you? A good example is a "
+"%(clown_car)s sitting cross table and not receiving proper pressure."
+msgstr ""
+"La survie de l'un de ces decks est-elle particulièrement préjudiciable à votre plan de jeu ? Devez-vous réagir à ce "
+"deck à un stade précoce, même lorsque le joueur en question n'est pas assis à côté de vous ? Un bon exemple est un "
+"%(clown_car)s assis en face qui ne subit pas assez de pression."
+
+#: codex_of_the_damned/templates/strategy/articles/advanced/playing-tupdogs-nephandus.html:95
+msgid ""
+"At the early stages, plan how to eliminate two \"extra\" players. If needed, help your crosstable buddy to eliminate "
+"their prey, especially if you get something in return. Be open to all kinds of deals in general. This deck's power "
+"increases dramatically the fewer players are left at the table. But always be ready to reassess the situation."
+msgstr ""
+"Au début, planifiez comment éliminer deux joueurs \"superflus\". Si nécessaire, aidez votre allié en face de table à "
+"éliminer sa proie, surtout si vous obtenez quelque chose en retour. Soyez ouvert à toutes sortes d'offres en général."
+" La puissance de ce deck augmente considérablement s'il y a moins de joueurs à la table. Mais soyez toujours prêt à "
+"réévaluer la situation."
+
+#: codex_of_the_damned/templates/strategy/articles/advanced/playing-tupdogs-nephandus.html:103
+#, python-format
+msgid ""
+"Weakening your own predator is a good early game strategy with this deck. Even though your vampires are cheap, you're"
+" going to invest some pool in them and %(nephandi)s practically every turn."
+msgstr ""
+"Affaiblir votre propre prédateur est une bonne stratégie de début de partie avec ce deck. Même si vos vampires ne "
+"coûtent pas cher, vous allez investir un peu d'influence pour eux et des %(nephandi)s pratiquement à chaque tour."
+
+#: codex_of_the_damned/templates/strategy/articles/advanced/playing-tupdogs-nephandus.html:111
+msgid ""
+"In the final, the deck's winning strategy remains the same as in the early rounds: getting rid of the \"extra\" "
+"players and thereafter taking control of the rest of the table. If the situation allows it, you'll want to contribute"
+" to eliminating seeds higher than yourself. This improves your chances to win even if you fail to take the remaining "
+"three VPs. Even a 2/2/1 VP split is enough as long as your seed is high enough."
+msgstr ""
+"En finale, la stratégie gagnante du deck reste la même que lors des premiers tours : se débarrasser des joueurs "
+"\"superflus\" et ensuite prendre le contrôle du reste de la table. Si la situation le permet, vous voudrez contribuer"
+" à éliminer les candidats mieux classés que vous. Cela améliore vos chances de gagner même si vous ne parvenez pas à "
+"remporter les trois PV restants. Même une division 2/2/1 VP est suffisante tant que votre classement est suffisamment"
+" élevé."
+
+#: codex_of_the_damned/templates/strategy/articles/advanced/playing-tupdogs-nephandus.html:121
+msgid "Influence phase"
+msgstr "Phase d'influence"
+
+#: codex_of_the_damned/templates/strategy/articles/advanced/playing-tupdogs-nephandus.html:123
+#, python-format
+msgid ""
+"First bring out %(antonio)s, preferably accompanied by at least one %(tupdog)s, depending on the situation. The "
+"probability to find an %(antonio)s in your starting crypt is 61,7%%. If there's no %(antonio)s but some other Tremere"
+" antitribu %(tremere_antitribu)s, bring them first instead. There's a 14,4%% probability to start your game with four"
+" %(tupdogs)s in your starting crypt. In this case, you'll have to dig for the missing Tremere antitribu "
+"%(tremere_antitribu)s by influencing %(tupdogs)s just to recycle them because they can't do anything without a "
+"Tremere antitribu %(tremere_antitribu)s in this deck."
+msgstr ""
+"Sortez d'abord %(antonio)s, de préférence accompagné d'au moins un %(tupdog)s, selon la situation. La probabilité de "
+"trouver un %(antonio)s dans votre crypte de départ est de 61,7%%. S'il n'y a pas d'%(antonio)s mais un autre Tremere "
+"antitribu %(tremere_antitribu)s, sortez-le d'abord à la place. Il y a une probabilité de 14,4%% de commencer votre "
+"partie avec quatre %(tupdogs)s dans votre crypte de départ. Dans ce cas, vous devrez chercher le Tremere antitribu "
+"manquant %(tremere_antitribu)s en influençant des %(tupdogs)s juste pour les cycler, car ils ne peuvent rien faire "
+"sans un Tremere antitribu %(tremere_antitribu)s dans ce deck."
+
+#: codex_of_the_damned/templates/strategy/articles/advanced/playing-tupdogs-nephandus.html:139
+msgid "Tupdogs recycled"
+msgstr "Tupdogs cyclés"
+
+#: codex_of_the_damned/templates/strategy/articles/advanced/playing-tupdogs-nephandus.html:140
+msgid "Chance of a Tremere"
+msgstr "Chance de Tremere"
+
+#: codex_of_the_damned/templates/strategy/articles/advanced/playing-tupdogs-nephandus.html:163
+#, python-format
+msgid ""
+"Under these circumstances, I recommend to bring out 2 or 3 %(tupdogs)s. I usually bring two. Just one makes no sense "
+"for recycling purposes if you have four or more transfers. Paying one to see one costs the same as a %(tupdog)s, and "
+"you don't lose the recycled vampire."
+msgstr ""
+"Dans ces circonstances, je recommande de sortir 2 ou 3 %(tupdogs)s. J'en sors généralement deux. Un seul n'a aucun "
+"sens à des fins de cyclage si vous avez quatre transferts ou plus. Payer un pour voir une carte de crypte coûte le "
+"même prix qu'un %(tupdog)s, et vous ne perdez pas le vampire recyclé."
+
+#: codex_of_the_damned/templates/strategy/articles/advanced/playing-tupdogs-nephandus.html:173
+msgid "Tips for the influence phase"
+msgstr "Astuces pour la phase d'influence"
+
+#: codex_of_the_damned/templates/strategy/articles/advanced/playing-tupdogs-nephandus.html:176
+#, python-format
+msgid ""
+"%(dreams_of_the_sphinx)s, %(powerbase_montreal)s and %(information_highway)s allow you to both use %(antonio)s's "
+"special and influence a %(tupdog)s in the same turn."
+msgstr ""
+"%(dreams_of_the_sphinx)s, %(powerbase_montreal)s et %(information_highway)s vous permettent à la fois d'utiliser "
+"l'aptitude spéciale d'%(antonio)s et d'influencer un %(tupdog)s dans le même tour."
+
+#: codex_of_the_damned/templates/strategy/articles/advanced/playing-tupdogs-nephandus.html:188
+#, python-format
+msgid ""
+"In a steady game situation it is usually good to influence out one %(nephandus)s and one %(tupdog)s (if you have the "
+"means). If you need more defence or attack power it is wise to influence out multiple %(tupdogs)s. Just keep in mind "
+"that it is important to have those %(nephandus)s to destroy torpored vampires."
+msgstr ""
+"Dans une situation de jeu stable, il est généralement bon d'influencer un %(nephandus)s et un %(tupdog)s (si vous en "
+"avez les moyens). Si vous avez besoin de plus de puissance de défense ou d'attaque, il est sage d'influencer "
+"plusieurs %(tupdogs)s. Gardez juste à l'esprit qu'il est important d'avoir ces %(nephandus)s pour détruire les "
+"vampires en torpeur."
+
+#: codex_of_the_damned/templates/strategy/articles/advanced/playing-tupdogs-nephandus.html:201
+msgid "Card flow"
+msgstr "Flux de cartes"
+
+#: codex_of_the_damned/templates/strategy/articles/advanced/playing-tupdogs-nephandus.html:203
+#, python-format
+msgid ""
+"In V:TES, one of the most important qualities of a deck is good card flow. Without it, your hand stagnates easily and"
+" both the deck's power and your play options drop dramatically. In this deck, the large master module (~35%% of the "
+"deck) poses the greatest single hand jam risk. That's why it's vital to always play a %(parthenon)s as quickly as "
+"possible. Always use your discard phase action. Any cards you discard can be brought back several times over with "
+"%(ashur_tablets)s. %(dreams_of_the_sphinx)s also helps in looking for a %(parthenon)s."
+msgstr ""
+"À V:TES, l'une des qualités les plus importantes d'un deck est un bon flux de cartes. Sans cela, votre main stagne "
+"facilement et la puissance du deck ainsi que vos options de jeu chutent considérablement. Dans ce deck, le module "
+"maître important (~35%% du deck) pose le plus grand risque de gripper votre main. C'est pourquoi il est essentiel de "
+"toujours jouer un %(parthenon)s le plus rapidement possible. Utilisez toujours votre action de défausse. Toutes les "
+"cartes que vous défaussez peuvent être récupérées plusieurs fois avec %(ashur_tablets)s. %(dreams_of_the_sphinx)s "
+"aide également à rechercher un %(parthenon)s."
+
+#: codex_of_the_damned/templates/strategy/articles/advanced/playing-tupdogs-nephandus.html:218
+msgid "Cards drawn"
+msgstr "Cartes piochées"
+
+#: codex_of_the_damned/templates/strategy/articles/advanced/playing-tupdogs-nephandus.html:219
+msgid "Chance of a Parthenon"
+msgstr "Chance de Parthenon"
+
+#: codex_of_the_damned/templates/strategy/articles/advanced/playing-tupdogs-nephandus.html:246
+msgid "Tips for better card flow"
+msgstr "Astuces pour un meilleur flux de cartes"
+
+#: codex_of_the_damned/templates/strategy/articles/advanced/playing-tupdogs-nephandus.html:249
+#, python-format
+msgid "Play %(the_parthenon)s ASAP."
+msgstr "Jouer %(the_parthenon)s ASAP."
+
+#: codex_of_the_damned/templates/strategy/articles/advanced/playing-tupdogs-nephandus.html:255
+msgid "Always discard."
+msgstr "Toujours défausser."
+
+#: codex_of_the_damned/templates/strategy/articles/advanced/playing-tupdogs-nephandus.html:257
+#, python-format
+msgid "Use %(dreams)s for cards."
+msgstr "Utiliser %(dreams)s pour piocher."
+
+#: codex_of_the_damned/templates/strategy/articles/advanced/playing-tupdogs-nephandus.html:264
+#, python-format
+msgid "%(antonio)s's special can also find a %(nephandus)s in your hand."
+msgstr "L'aptitude d'%(antonio)s peut aussi trouver un %(nephandus)s dans votre main."
+
+#: codex_of_the_damned/templates/strategy/articles/advanced/playing-tupdogs-nephandus.html:275
+#, python-format
+msgid ""
+"Your deck is very aggressive but it doesn't mean <em>you</em> need to be. Try to avoid situations where you spew "
+"threats all over the table without being able to follow up on them. This will only make unnecessarily many players "
+"gang up against you. On the other hand, never accept any superfluous damage from the crosstable. Try to offer your "
+"crosstable other options instead, and if they do not like your options, you can threaten them with your torpedoes "
+"(%(tupdogs)s). If you make a threat, don't go back on it, or you'll soon run out of credibility."
+msgstr ""
+"Votre deck est très agressif, mais cela ne signifie pas que <em>vous</em> devez l'être. Essayez d'éviter les "
+"situations où vous lancez des menaces à tout va sans pouvoir y donner suite. Cela ne fera qu'inciter inutilement de "
+"nombreux joueurs à se liguer contre vous. D'autre part, n'acceptez jamais de dégâts venant de vos alliés en face de "
+"table. Essayez d'offrir à vos alliés d'en face d'autres options à la place, et s'ils n'aiment pas vos options, vous "
+"pouvez les menacer avec vos torpilles (%(tupdogs)s). Si vous proférez une menace, ne revenez pas dessus, ou vous "
+"allez bientôt manquer de crédibilité."
+
+#: codex_of_the_damned/templates/strategy/articles/advanced/playing-tupdogs-nephandus.html:286
+msgid ""
+"Listen to what the other players have to say to you. If they offer you a deal that will even just partially advance "
+"your goal, accept it. Generally, the faster the number of players drops from five to three, the better you're doing."
+msgstr ""
+"Écoutez ce que les autres joueurs ont à vous dire. S'ils vous proposent un accord qui ne fera même que partiellement "
+"avancer votre objectif, acceptez-le. En règle générale, plus le nombre de joueurs passe rapidement de cinq à trois, "
+"mieux vous vous en sortez."
+
+#: codex_of_the_damned/templates/strategy/articles/advanced/playing-tupdogs-nephandus.html:291
+msgid "Cards that counter this deck and how to prepare for them"
+msgstr "Cartes contrant ce deck et comment s'y préparer"
+
+#: codex_of_the_damned/templates/strategy/articles/advanced/playing-tupdogs-nephandus.html:299
+#, python-format
+msgid ""
+"This deck quickly accumulates 5+ minions, making these votes nasty. You have 2x %(delaying_tactics)s and 1x "
+"%(yawp_court)s to use against them. Add or subtract according to your local meta. In my experience, %(yawp_court)s is"
+" very good anti-vote tech. I have increased their number to two for future games."
+msgstr ""
+"Ce deck accumule rapidement plus de 5 serviteurs, ce qui rend ces votes désagréables. Vous avez 2x "
+"%(delaying_tactics)s et 1x %(yawp_court)s à utiliser contre eux. Ajoutez ou soustrayez en fonction de votre méta "
+"local. D'après mon expérience, %(yawp_court)s est une très bonne solution anti-vote. J'ai augmenté leur nombre à deux"
+" pour les prochains matchs."
+
+#: codex_of_the_damned/templates/strategy/articles/advanced/playing-tupdogs-nephandus.html:317
+#, python-format
+msgid ""
+"Switching the %(unmaskings)s out for %(uncoilings)s is one option to consider. I wouldn't personally recommend it, "
+"though, because the lack of %(unmaskings)s considerably weakens the deck's defense. When a %(scourge)s is played, I "
+"typically start thinking how I could contribute to ousting the player controlling it to get rid of it."
+msgstr ""
+"L'une des options à considérer est de remplacer les %(unmaskings)s par des %(uncoilings)s. Je ne le recommanderais "
+"pas personnellement, cependant, car l'absence d'%(unmaskings)s affaiblit considérablement la défense du deck. "
+"Lorsqu'une %(scourge)s est joué, je commence généralement à réfléchir à comment je pourrais contribuer à éliminer le "
+"joueur qui la contrôle pour m'en débarrasser."
+
+#: codex_of_the_damned/templates/strategy/articles/advanced/playing-tupdogs-nephandus.html:337
+#, python-format
+msgid ""
+"Rarely played but very problematic if played by your neighbor. Absolutely %(di)s this one if you can. If you cannot, "
+"immediately use your %(tupdogs)s to rush the minion it's on and %(nephandi)s to burn it from torpor. Should you fail,"
+" a %(haven_uncovered)s and a herd of %(nephandi)s will do the trick later on. As long as this card remains in your "
+"neighborhood (on a 2+ cap vampire), there's no point in bringing out new %(tupdogs)s, and a big part of your deck is "
+"equally useless."
+msgstr ""
+"Rarement joué mais très problématique si joué par votre voisin. Il faut le %(di)s sans hésiter si vous le pouvez. Si "
+"vous ne pouvez pas, utilisez immédiatement vos %(tupdogs)s pour rusher le serviteur sur lequel il se trouve et vos "
+"%(nephandi)s pour le brûler en torpeur. En cas d'échec, un %(haven_uncovered)s et une horde de %(nephandi)s feront "
+"l'affaire plus tard. Tant que cette carte reste chez votre voisin (sur un vampire de capacité 2+), il ne sert à rien "
+"de sortir de nouveaux %(tupdogs)s, et une grande partie de votre deck est également inutile."
+
+#: codex_of_the_damned/templates/strategy/articles/advanced/playing-tupdogs-nephandus.html:359
+#, python-format
+msgid ""
+"A real poison for this deck. There's no good way around this card as any vampire with inferior Necromancy %(nec)s can"
+" use it. If you get to play one against this deck, you can do the most damage by removing combat cards. Just one "
+"%(trochomancy)s hurts a lot, and surviving two is basically impossible."
+msgstr ""
+"Un vrai poison pour ce deck. Il n'y a pas de bon moyen de gérer cette carte car tout vampire avec Nécromancie en "
+"inférieur %(nec)s peut l'utiliser. Si vous en jouez une contre ce deck, vous pouvez faire le plus de dégâts en "
+"supprimant les cartes de combat. Une seule %(trochomancy)s fait très mal, et survivre à deux est fondamentalement "
+"impossible."
+
+#: codex_of_the_damned/templates/strategy/articles/advanced/playing-tupdogs-nephandus.html:369
+msgid "Final words"
+msgstr "Pour finir"
+
+#: codex_of_the_damned/templates/strategy/articles/advanced/playing-tupdogs-nephandus.html:371
+#, python-format
+msgid ""
+"If you're like me in that you find deckbuilding a challenge, and it's holding you back in the game, I recommend "
+"studying other people's designs using the TWDA or Codex of the Damned. Try the Codex's %(deck_search)s. It will show "
+"you for example all %(tournament_winning_decks)s with %(tupdog)s, %(nephandus)s and %(yawp_court)s."
+msgstr ""
+"Si vous êtes comme moi dans le sens où vous trouvez que la construction de deck est un défi et que cela vous limite "
+"dans le jeu, je vous recommande d'étudier les decks d'autres personnes en utilisant la TWDA ou le Codex of the "
+"Damned. Essayez la page %(deck_search)s du Codex. Elle vous montrera par exemple tous les "
+"%(tournament_winning_decks)s avec %(tupdog)s, %(nephandus)s et %(yawp_court)s."
+
+#: codex_of_the_damned/templates/strategy/articles/advanced/playing-tupdogs-nephandus.html:373
+msgid "tournament winning decks"
+msgstr "decks vainqueurs de tournoi"
+
 #: codex_of_the_damned/templates/strategy/articles/advanced/the-game-of-the-game.html:6
 msgid "By Mark Loughman"
 msgstr "Par Mark Loughman"
@@ -11798,8 +12140,8 @@ msgid ""
 msgstr ""
 "Prenons un exemple de comment un vampire peut payer pour lui-même et vous rapporter des jetons. Vous sortez "
 "%(mary_anne_blaire)s, lors de votre tour suivant, vous jouez %(villein)s pour reprendre 5. Phase de serviteur, vous "
-"utilisez sa capacité spéciale pour mettre deux sang sur un vampire incontrôlé plus jeune, puis %(freak_drive)s, puis "
-"%(govern_the_unaligned)s en %(DOM)s supérieure. Dans cet exemple, 5 des jetons investis sont déjà de retour dans "
+"utilisez son aptitude spéciale pour mettre deux sang sur un vampire incontrôlé plus jeune, puis %(freak_drive)s, puis"
+" %(govern_the_unaligned)s en %(DOM)s supérieure. Dans cet exemple, 5 des jetons investis sont déjà de retour dans "
 "votre réserve et, au prix de 2 sang, vous en avez créé 5 autres sang sur un vampire incontrôlé. Comme elle est à 10, "
 "cela signifie que vos 4 transferts vous permettront de sortir le vampire sur lequel vous avez posé le sang. %(mary)s "
 "ne vous a pas coûté 10 d'influence, elle vous a fait gagné 3 jetons et un nouveau vampire."

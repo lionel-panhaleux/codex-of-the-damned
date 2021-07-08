@@ -106,16 +106,9 @@ def post():
     clipboard.copy(s)
 
 # usage:
-# s = (
-#   > copy paragraph to translate from the PO file
-# )
-# pre(s)
-#   > Copy the result to Google Translate
-# t = """
-#   > Copy translation
-# """
-# post(t)
-#   > Copy result to the PO file and review it
-#
-# pre_list can be used for multiple blocks in a list
+#  > copy paragraph to translate from the PO file
+# pre()
+# > copy translation
+# post()
+# > copy result to the PO file
 ```

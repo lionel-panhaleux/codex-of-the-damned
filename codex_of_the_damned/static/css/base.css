@@ -247,12 +247,24 @@ article.columns h5,
 article.columns h6 {
     text-align: center;
 }
+.no-margin-top {
+    margin-top: 0;
+}
+.columns-flex {
+    margin: 2em 0 0.5em 0;
+    display: flex;
+}
+.columns-flex > p {
+    width: 50%;
+    text-align: justify;
+    margin: 0 1em;
+}
 .column-4 {
     display: inline-block;
     width: calc(var(--columns-width) / 4 - 1em - 4px);
     box-sizing: border-box;
     vertical-align: top;
-    margin: 3em 0.5em;
+    margin: 2em 0.5em;
 }
 .column-2 > img,
 .column-2-always > img,
@@ -266,12 +278,37 @@ article.columns h6 {
     width: calc(var(--article-width) / 2 - 1em - 2px);
     box-sizing: border-box;
     vertical-align: top;
-    margin: 3em 0.5em;
+    margin: 2em 0.5em;
 }
 table {
-    border-collapse: collapse;
-    width: 100%;
+    border: 1px solid;
+    border-spacing: 0;
+    border-color: var(--color-tip-border);
+    /* border-radius: 1em; */
+}
+thead {
+    background-color: var(--color-surface);
+    font-weight: bold;
+}
+tr:nth-child(even) {
+    background-color: var(--color-back-alternate);
+}
+td {
+    padding: 0.5em;
+}
+.column-2 tr:nth-child(even),
+.column-4 tr:nth-child(even) {
+    background-color: transparent;
+}
+.column-2 td,
+.column-4 td {
+    padding: 0 0.5em;
+}
+table.column-2,
+table.column-4 {
     box-sizing: border-box;
+    border: none;
+    width: 100%;
 }
 .sponsor {
     margin: 0 0 2em 0;
@@ -350,6 +387,16 @@ div.author > p {
     font-style: italic;
     display: inline;
     vertical-align: middle;
+}
+.inline-card {
+    margin: 0 0.5em 0 0;
+    min-width: min(250px, 100vw - 1em);
+    max-width: min(250px, 100vw - 1em);
+    display: inline-block;
+    position: relative;
+}
+.inline-card img {
+    width: 100%;
 }
 div.promo {
     background: var(--color-author-back);
@@ -451,12 +498,16 @@ input[type="submit"]:hover {
     font-weight: bold;
 }
 /* ************************************************************************* decklist */
+.decklist-flex,
 .decklist {
-    float: left;
     padding: 1em;
     margin: 0 1em 1em 0;
     background-color: var(--color-deck-back);
     border-radius: 1em;
+    white-space: nowrap;
+}
+.decklist {
+    float: left;
 }
 .decklist h1,
 .decklist h2 {
@@ -624,12 +675,13 @@ div.deck-search-card::after {
     max-height: 15em;
     overflow: auto;
 }
-.results tr:nth-child(even) {
-    background-color: var(--color-back-alternate);
+.results tr:hover {
+    background-color: var(--color-back-selected) !important;
 }
-.results tr:hover,
-.results td {
-    padding: 0.5em;
+.results table {
+    box-sizing: border-box;
+    border: none;
+    width: 100%;
 }
 /* ********************************************************************** card search */
 div.column-image {

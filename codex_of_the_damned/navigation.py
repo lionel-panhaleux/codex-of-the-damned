@@ -94,6 +94,7 @@ STRUCTURE = Nav(
                             children=[
                                 Nav(lazy_gettext("The Game of the Game")),
                                 Nav(lazy_gettext("Playing Montano Baltimore Purge")),
+                                Nav(lazy_gettext("Playing Tupdogs & Nephandus")),
                             ],
                         ),
                     ],
