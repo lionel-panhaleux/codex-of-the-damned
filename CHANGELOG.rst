@@ -1,7 +1,7 @@
 Changelog
 =========
 
-1.31 (unreleased)
+1.31 (2021-07-08)
 -----------------
 
 - Add Tommi's Tupdogs & Nephandus article
