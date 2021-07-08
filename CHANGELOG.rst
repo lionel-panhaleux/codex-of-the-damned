@@ -4,7 +4,7 @@ Changelog
 1.31 (unreleased)
 -----------------
 
-- Nothing changed yet.
+- Add Tommi's Tupdogs & Nephandus article
 
 
 1.30 (2021-06-08)
