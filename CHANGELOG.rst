@@ -1,7 +1,7 @@
 Changelog
 =========
 
-1.32 (unreleased)
+1.32 (2021-07-11)
 -----------------
 
 - Fix index columns display 
