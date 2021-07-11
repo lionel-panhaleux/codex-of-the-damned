@@ -4,7 +4,7 @@ Changelog
 1.32 (unreleased)
 -----------------
 
-- Nothing changed yet.
+- Fix index columns display 
 
 
 1.31 (2021-07-08)

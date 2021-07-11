@@ -254,11 +254,6 @@ article.columns h6 {
     margin: 2em 0 0.5em 0;
     display: flex;
 }
-.columns-flex > p {
-    width: 50%;
-    text-align: justify;
-    margin: 0 1em;
-}
 .column-4 {
     display: inline-block;
     width: calc(var(--columns-width) / 4 - 1em - 4px);
@@ -275,7 +270,7 @@ article.columns h6 {
 .column-2,
 .column-2-always {
     display: inline-block;
-    width: calc(var(--article-width) / 2 - 1em - 2px);
+    width: calc(var(--article-width) / 2 - 1.5em - 2px);
     box-sizing: border-box;
     vertical-align: top;
     margin: 2em 0.5em;
@@ -308,7 +303,6 @@ table.column-2,
 table.column-4 {
     box-sizing: border-box;
     border: none;
-    width: 100%;
 }
 .sponsor {
     margin: 0 0 2em 0;
