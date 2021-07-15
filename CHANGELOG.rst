@@ -5,6 +5,7 @@ Changelog
 -----------------
 
 - Base CSS cache busting: now when CSS gets updated, clients will benefit immediately
+- Removed dead YouTube link on index (Gentleman Gamer's video has been removed)
 
 
 1.32 (2021-07-11)
