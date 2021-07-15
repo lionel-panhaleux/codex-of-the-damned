@@ -1,4 +1,5 @@
 import copy
+import pkg_resources
 import urllib.parse
 import re
 import unidecode
@@ -10,13 +11,14 @@ import jinja2.exceptions
 from . import config
 from . import navigation
 
-
+version = pkg_resources.Environment()["codex-of-the-damned"][0].version
 app = flask.Flask(__name__, template_folder="templates")
 app.jinja_env.policies["ext.i18n.trimmed"] = True
 babel = flask_babel.Babel(app)
 config.configure_app(app)
 
 BASE_CONTEXT = {
+    "version": version,
     "CONVICTION": flask.Markup("<i>¤</i>"),
     "CONVICTION_1": flask.Markup("<i>¤</i>"),
     "CONVICTION_2": flask.Markup("<i>¤¤</i>"),
