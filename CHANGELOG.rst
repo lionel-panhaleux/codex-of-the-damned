@@ -1,7 +1,7 @@
 Changelog
 =========
 
-1.33 (unreleased)
+1.33 (2021-07-24)
 -----------------
 
 - Base CSS cache busting: now when CSS gets updated, clients will benefit immediately
