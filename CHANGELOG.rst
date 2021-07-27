@@ -1,7 +1,7 @@
 Changelog
 =========
 
-1.34 (unreleased)
+1.34 (2021-07-27)
 -----------------
 
 - Improve homepage
