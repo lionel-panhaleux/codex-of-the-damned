@@ -4,7 +4,7 @@ Changelog
 1.34 (unreleased)
 -----------------
 
-- Nothing changed yet.
+- Improve homepage
 
 
 1.33 (2021-07-24)
