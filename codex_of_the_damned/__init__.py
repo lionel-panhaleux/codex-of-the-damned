@@ -311,16 +311,15 @@ def linker():
         return flask.Markup(f'<a target="_blank" href="{url}">{span}{name}</a>')
 
     def title():
-        print(navigation.HELPER.get(path, {}).get("self"))
         try:
-            if navigation.HELPER.get(path, {}).get("self").path != '':
+            if navigation.HELPER.get(path, {}).get("self").path != "":
                 name = navigation.HELPER.get(path, {}).get("self").name
-                if navigation.HELPER.get(path, {}).get("top").path != '':
+                if navigation.HELPER.get(path, {}).get("top").path != "":
                     top = navigation.HELPER.get(path, {}).get("top").name
                     return f"Codex of the Damned - {top} {name}"
                 return f"Codex of the Damned - {name}"
         except:
-            return f"Codex of the Damned"
+            pass
         return f"Codex of the Damned"
 
     return dict(
