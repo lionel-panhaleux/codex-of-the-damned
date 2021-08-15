@@ -318,9 +318,9 @@ def linker():
                     top = navigation.HELPER.get(path, {}).get("top").name
                     return f"Codex of the Damned - {top} {name}"
                 return f"Codex of the Damned - {name}"
-        except:
+        except AttributeError:
             pass
-        return f"Codex of the Damned"
+        return "Codex of the Damned"
 
     return dict(
         i18n_url=i18n_url,
