@@ -4,7 +4,7 @@ Changelog
 1.35 (unreleased)
 -----------------
 
-- Nothing changed yet.
+- Upgrade page denomination
 
 
 1.34 (2021-07-27)
@@ -23,7 +23,7 @@ Changelog
 1.32 (2021-07-11)
 -----------------
 
-- Fix index columns display 
+- Fix index columns display
 
 
 1.31 (2021-07-08)
@@ -298,25 +298,25 @@ Changelog
 0.12 (2020-07-16)
 -----------------
 
-- Fix og image for social networks sharing 
+- Fix og image for social networks sharing
 
 
 0.11 (2020-07-16)
 -----------------
 
-- Fix og image for social networks sharing 
+- Fix og image for social networks sharing
 
 
 0.10 (2020-07-16)
 -----------------
 
-- Fix og image for social networks sharing 
+- Fix og image for social networks sharing
 
 
 0.9 (2020-07-16)
 ----------------
 
-- Fix og image for social networks sharing 
+- Fix og image for social networks sharing
 
 
 0.8 (2020-07-16)
