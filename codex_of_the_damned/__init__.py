@@ -316,7 +316,7 @@ def linker():
                 name = navigation.HELPER.get(path, {}).get("self").name
                 if navigation.HELPER.get(path, {}).get("top").path != "":
                     top = navigation.HELPER.get(path, {}).get("top").name
-                    return f"Codex of the Damned - {top} {name}"
+                    return f"Codex of the Damned - {top}: {name}"
                 return f"Codex of the Damned - {name}"
         except AttributeError:
             pass
