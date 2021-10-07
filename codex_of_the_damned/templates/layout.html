@@ -5,7 +5,7 @@
     {% block head %}
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta property="og:title" content="{{ title() }}" />
+    <meta property="og:title" content="{{ og_title|default(title()) }}" />
     <meta property="og:description"
         content="{{ og_description|default('Vampire: the Eternal Struggle (VTES) strategy resources') }}" />
     <meta property="og:image" content="{{ og_image|default(url_for('static', filename='img/codex.jpg')) }}" />
@@ -34,7 +34,7 @@
     </script>
     <script async src="https://static.krcg.org/web/krcg.js"></script>
     {% block scripts %}{% endblock %}
-    <title>{{ title() }}</title>
+    <title>{{ og_title|default(title()) }}</title>
     {% endblock %}
 </head>
 
