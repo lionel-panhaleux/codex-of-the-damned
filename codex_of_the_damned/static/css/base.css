@@ -158,8 +158,15 @@ article img {
     object-fit: contain;
     max-width: 300px;
 }
+div#krcg-click-modal {
+    width: min(89vw, 358px, var(--side-width));
+    padding-right: 99vw;
+}
 img.krcg-modal-image {
     max-width: min(89vw, 358px, var(--side-width));
+}
+p.krcg-modal-link {
+    text-align: center;
 }
 article > img {
     max-width: 100%;
