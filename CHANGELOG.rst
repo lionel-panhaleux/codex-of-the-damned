@@ -5,6 +5,7 @@ Changelog
 -----------------
 
 - Fix LackeyCCG VTES plugin URL
+- New official Discord link
 
 
 1.34 (2021-07-27)
