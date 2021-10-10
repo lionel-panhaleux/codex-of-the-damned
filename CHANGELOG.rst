@@ -1,7 +1,7 @@
 Changelog
 =========
 
-1.35 (unreleased)
+1.35 (2021-10-10)
 -----------------
 
 - Fix LackeyCCG VTES plugin URL
