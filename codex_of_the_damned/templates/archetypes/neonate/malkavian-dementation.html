@@ -1,0 +1,82 @@
+{% extends "archetypes/_layout.html" %}
+{% import "archetypes/_layout-erratum.html" as erratum with context %}
+{% import "archetypes/neonate/malkavian-dementation.json" as deck_json %}
+
+{% block meta %}
+<meta property="decklist" content='{{ deck_json | tojson }}' />
+{% endblock %}
+
+{% block archetype_name %}
+<h1><img src="https://static.krcg.org/svg/clan/malkavian.svg"> Malkavian Dementation</h1>
+{% endblock %}
+
+{% block archetype %}
+{% trans trimmed
+blood_doll=card("Blood Doll"),
+confusion=card("Confusion"),
+deny=card("Deny"),
+dreams_of_the_sphinx=card("Dreams of the Sphinx"),
+eyes_of_chaos=card("Eyes of Chaos"),
+kindred_spirits=card("Kindred Spirits"),
+no_trace=card("No Trace"),
+restructure=card("Restructure"),
+sudden_reversal=card("Sudden Reversal"),
+telepathic_misdirection=card("Telepathic Misdirection"),
+the_barrens=card("The Barrens"),
+the_call=card("The Call"),
+villein=card("Villein"),
+wash=card("Wash"),
+bloat=link("/strategy/bloat", _("bloat")),
+main_article=link("/archetypes/weenie-dem", _("main article")),
+v5_malkavian=external("https://www.blackchantry.com/products/legacy/vampire-the-eternal-struggle-fifth-edition/fifth-edition-malkavian/", _("V5 Malkavian")),
+fb_malkavian=external("https://www.blackchantry.com/products/legacy/first-blood/first-blood-malkavian/", _("First Blood: Malkavian")),
+keepers_of_tradition_1=external("https://www.blackchantry.com/product-keepers-of-tradition-reprint-bundle-1/", "Keepers of Tradition 1"),
+sabbat_precons=external("https://www.blackchantry.com/products/legacy/preconstructed-decks/", "Sabbat Precons"),
+anniversary=external("https://www.blackchantry.com/products/legacy/preconstructed-decks/product-25th-anniversary/", _("25th Anniversary"))
+%}
+<h2>Highlights</h2>
+<p>
+    This is a brutal <em>stealth & bleed</em> deck using Malkavian {{ malkavian }} and
+    their legacy {{ dem }}.
+</p>
+<p>
+    The plan is to bleed hard, with stealth. {{ kindred_spirits }} provides a bit of {{ bloat }} and {{ dem }} has great
+    modifiers like {{ confusion }} and {{ eyes_of_chaos }}. The Master module provides
+    a bit of bloat with {{ blood_doll }} and {{ villein }}, as well as card cycling tools like
+    {{ dreams_of_the_sphinx }} and {{ the_barrens }}. But, most importantly, it includes counters against
+    mastger cards with {{ sudden_reversal }} and {{ wash }}: they're used to prevent bloat on the prey's side.
+</p>
+<p>
+    {{ OBF }} is used for stealth, with a wide range of different modifiers so as to be able to stack them.
+    It also provides {{ no_trace }}, the only combat defence of the deck. {{ AUS }} provides a bit of defence,
+    with {{ telepathic_misdirection }} for bounces. Hand management is key: if a prey has only low
+    intercept they might decide to never try to block to jam the hand with stealth.
+</p>
+<p>
+    An interesting point about the deck is that {{ kindred_spirits }} allows to bleed <strong>any</strong> Methuselah,
+    so one can even use it strategically against someone else, like their predator. Obviously though, it's best used
+    on the prey as a rule of thumb.
+</p>
+<h2>Tweaks and variants</h2>
+<p>
+    A few {{ dem }} legacy cards are excellent additions to this deck, like 
+    {{ deny }}, {{ restructure }} and {{ the_call }}. On the other hand, a few additional counters against Master cards
+    can help too if you can trade for more {{ sudden_reversal }} and {{ wash }}. Some variations play a dozen
+    of those to completely bar the prey from their Master module.
+    Depending on the cases, you might find the library a bit short. If this is the case, adding a few 
+    {{ kindred_spirits }} and half that amount of {{ confusion }} is an easy way to increase it.
+</p>
+<p>
+    This is not the fastest crypt one can use for this build. The {{ main_article }} about the archetype presents
+    alternatives if you have access to a few legacy cards. With a fast enough crypt, one can focuse completely on
+    bleeding and forego bounces and bloat Masters altogether.
+</p>
+<h2>What to buy</h2>
+<p>
+    The bulk of the cards come from two {{ fb_malkavian }} and {{ v5_malkavian }}, with a few additions from
+    {{ keepers_of_tradition_1 }}. The Master counters {{ sudden_reversal }} and {{ wash }} are the trickiest to come
+    by: they can be found in the {{ sabbat_precons }} or should be traded for. {{ dreams_of_the_sphinx }} can be
+    found in the {{ anniversary }}.
+</p>
+{% endtrans %}
+{% endblock %}
