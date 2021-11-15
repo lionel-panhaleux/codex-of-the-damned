@@ -158,6 +158,30 @@ STRUCTURE = Nav(
                 Nav("Weenie DEM"),
                 Nav("Weenie DOM"),
                 Nav(
+                    lazy_gettext("Neonate"),
+                    index=False,
+                    children=[
+                        Nav("Harbinger Legionnaires"),
+                        Nav("Hidden Royalty"),
+                        Nav("Lasombra Nocturn"),
+                        Nav("Lutz Vote"),
+                        Nav("Malkavian Dementation"),
+                        Nav("Malkavian Dominate"),
+                        Nav("Nephandus"),
+                        Nav("Nosferatu Primogens"),
+                        Nav("Samedi Rush"),
+                        Nav("Stanislava"),
+                        Nav("The Capuchin"),
+                        Nav("The unnamed"),
+                        Nav("Tremere Grinder"),
+                        Nav("Tremere Toolbox"),
+                        Nav("Tremere Wall"),
+                        Nav("Tzimisce Toolbox"),
+                        Nav("Ventrue Grinder"),
+                        Nav("Ventrue Lawfirm"),
+                    ]
+                ),
+                Nav(
                     lazy_gettext("Bibliodèque"),
                     index=False,
                     children=[

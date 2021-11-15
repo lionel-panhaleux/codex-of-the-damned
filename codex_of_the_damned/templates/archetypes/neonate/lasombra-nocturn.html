@@ -1,0 +1,122 @@
+{% extends "archetypes/_layout.html" %}
+{% import "archetypes/_layout-erratum.html" as erratum with context %}
+{% import "archetypes/neonate/lasombra-nocturn.json" as deck_json %}
+
+{% block meta %}
+<meta property="decklist" content='{{ deck_json | tojson }}' />
+{% endblock %}
+
+
+{% block archetype_name %}
+<h1><img src="https://static.krcg.org/svg/clan/lasombra.svg"> Lasombra Nocturn</h1>
+{% endblock %}
+
+{% block archetype %}
+{% trans trimmed
+    govern_the_unaligned=card("Govern the Unaligned"),
+    nocturn=card("Nocturn"),
+    dreams_of_the_sphinx=card("Dreams of the Sphinx"),
+    the_barrens=card("The Barrens"),
+    seduction=card("Seduction"),
+    shadow_play=card("Shadow Play"),
+    shroud_of_absence=card("Shroud of Absence"),
+    shroud_of_night=card("Shroud of Night"),
+    tenebrous_form=card("Tenebrous Form"),
+    blanket_of_night=card("Blanket of Night"),
+    conditioning=card("Conditioning"),
+    badr_shadow_of_granada=card("Badr, Shadow of Granada"),
+    the_path_of_night=card("The Path of Night"),
+    jake_washington=card("Jake Washington"),
+    the_coven=card("The Coven"),
+    giants_blood=card("Giant's Blood"),
+    deflection=card("Deflection"),
+    delaying_tactics=card("Delaying Tactics"),
+    shadow_body=card("Shadow Body"),
+    sudden_reversal=card("Sudden Reversal"),
+    villein=card("Villein"),
+    liquidation=card("Liquidation"),
+    krcg_news_radio=card("KRCG News Radio"),
+    heart_of_nizchetus=card("Heart of Nizchetus"),
+    the_signet_of_king_saul=card("The Signet of King Saul"),
+    the_unmasking=card("The Unmasking"),
+    on_the_qui_vive=card("On the Qui Vive"),
+    zaire_river_ferry=card("Zaire River Ferry"),
+    the_admonitions=card("The Admonitions"),
+    anarch_convert=card("Anarch Convert"),
+    dame_hollerton=card("Dame Hollerton"),
+    leila_monroe=card("Leila Monroe"),
+    political_hunting_ground=card("Political Hunting Ground"),
+    bloat=link("/strategy/bloat", "bloat"),
+    main_article=link("/archetypes/lasombra-nocturn", "main article"),
+    meta=link("/strategy/articles/advanced/the-game-of-the-game", "meta"),
+    print_on_demand=external("https://www.drivethrucards.com/browse/pub/12056/Black-Chantry-Productions/subcategory/30619_34256/VTES-Legacy-Card-Singles", "Print on Demand"),
+    anniversary=external("https://www.blackchantry.com/products/legacy/preconstructed-decks/product-25th-anniversary/", "25th Anniversary"),
+    parliament_of_shadows=external("https://www.blackchantry.com/products/legacy/preconstructed-decks/product-parliament-of-shadows/", "Parliament of Shadows"),
+    anthology=external("https://www.blackchantry.com/products/legacy/bundles/product-anthology-1/", "Anthology 1"),
+    kickstarter=external("https://www.kickstarter.com/projects/vtes/vampire-the-eternal-struggle-unleashed", "Kickstarter")
+%}
+<h2>Highlights</h2>
+<p>
+    This is a <em>stealth & bleed</em> deck of the Lasombra {{ lasombra }} clan,
+    using the {{ DOM }}{{ OBT }} disciplines. It uses {{ govern_the_unaligned }}
+    to get vampires out faster and cheaper in the beginning. When enough minions are into play,
+    it switches to strong bleed actions using {{ OBT }} for stealth.
+    {{ nocturn }} are used to protect its vampires from agression, but also to deliver more bleed in a single turn.
+</p>
+<p>
+    The key is the balance between stealth and bleed amount: not enough stealth and the actions do not get through,
+    too much and the hand will jam on it. Cunning opponents will be able to position themselves depending on their deck:
+    if they have enough intercept, they will try to block every action to exhaust the stealth, while if they
+    have no intercept they will avoid blocking to jam the hand on stealth. The deck includes some cycling devices
+    like {{ dreams_of_the_sphinx }} and {{ the_barrens }} to avoid this.
+</p>
+<p>
+    {{ seduction }} is great block denial, since it can either disable a high-intercept star blocker,
+    or be cycled on just any action if not needed. {{ shadow_play }} is the core modifier here, with
+    {{ shroud_of_absence }} and {{ shroud_of_night }} as useful additional stealth that costs no blood.
+    {{ tenebrous_form }} is great against allies, preventing them to block since they have no blood to pay.
+    Depending on the {{ meta }}, proportions can be adjusted and {{ blanket_of_night }} can be added for more denial.
+</p>
+<p>
+    With {{ OBT }} on top of {{ govern_the_unaligned }} and {{ conditioning }}, the vampires consume blood fast.
+    This means {{ badr_shadow_of_granada }} and {{ the_path_of_night }} are very useful since they spare a bit of blood.
+    On top of that, the deck includes various ways of regenerating blood, like {{ jake_washington }} – who can also
+    block a dangerous rush action – {{ the_coven }}, which will also hinder rush and grinder decks overall,
+    and of course {{ giants_blood }}. Hunting is not always possible: in case the predator has intercept,
+    they will jump on this undirected action to disable a vampire if they can.
+</p>
+<p>
+    {{ deflection }} and {{ delaying_tactics }} defend against bleed and votes,
+    and the deck uses only a few {{ shadow_body }} for additional combat defense, but also as a deterrent
+    against a predator blocking {{ nocturn }} recruitements: this is the only undirected action they can block if they
+    have the means so you might want to avoid losing stealth on that.
+    As a conclusion, {{ sudden_reversal }} is there to disable {{ bloat }} Master cards like {{ villein }} or
+    {{ liquidation }} on your prey, or permanent intercept like {{ krcg_news_radio }}.
+</p>
+<h2>Tweaks and variants</h2>
+<p>
+    {{ the_unmasking }} is a common inclusion in this build, but it is not mandatory. The number of
+    {{ nocturn }} can vary widely: in case of a combat-heavy meta, playing 12 or more is not unheard of.
+    {{ zaire_river_ferry }} is another interesting option, since it provides both stealth and rush protection.
+    Other equipments like {{ heart_of_nizchetus }} and {{ the_signet_of_king_saul }} can find their place here,
+    as well as a {{ political_hunting_ground }}.
+    Finally, if you have access to legacy cards, {{ the_admonitions }} is a good addition
+    or replacement for {{ the_barrens }}.
+</p>
+<p>
+    The {{ main_article }} about the archetype presents additional variants.
+</p>
+<h2>What to buy</h2>
+<p>
+    The bulk of the cards come from {{ print_on_demand }}, the {{ anniversary }} and the {{ parliament_of_shadows }}.
+    {{ badr_shadow_of_granada }} is tricky to find in enough copies, but there's one in {{ anthology }} and they were 2
+    in the <em>Danse Macabre</em> {{ kickstarter }} bundle, and you can replace him with other vampires from the
+    {{ parliament_of_shadows }} or include some {{ anarch_convert }} for crypt management.
+    {{ delaying_tactics }} and {{ sudden_reversal }} need to be sourced from other bundles or traded for.
+</p>
+<p>
+    If you have access to legacy cards, {{ dame_hollerton }} is a great vampire here and
+    would be a great replacement for {{ leila_monroe }}.
+</p>
+{% endtrans %}
+{% endblock %}
