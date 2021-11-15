@@ -1,0 +1,95 @@
+{% extends "archetypes/_layout.html" %}
+{% import "archetypes/_layout-erratum.html" as erratum with context %}
+{% import "archetypes/neonate/malkavian-dominate.json" as deck_json %}
+
+{% block meta %}
+<meta property="decklist" content='{{ deck_json | tojson }}' />
+{% endblock %}
+
+{% block archetype_name %}
+<h1><img src="https://static.krcg.org/svg/clan/malkavian.svg"> Malkavian Dominate</h1>
+{% endblock %}
+
+
+{% block archetype %}
+{% trans trimmed
+asylum_hunting_ground=card("Asylum Hunting Ground"),
+bonding=card("Bonding"),
+carlton_van_wyk=card("Carlton Van Wyk"),
+cloak_the_gathering=card("Cloak the Gathering"),
+dreams_of_the_sphinx=card("Dreams of the Sphinx"),
+giants_blood=card("Giant's Blood"),
+gilbert_duane_g6=card("Gilbert Duane G6", "Gilbert Duane"),
+govern_the_unaligned=card("Govern the Unaligned"),
+jake_washington=card("Jake Washington"),
+misdirection=card("Misdirection"),
+no_trace=card("No Trace"),
+papillon=card("Papillon"),
+pentex_subversion=card("Pentex™ Subversion"),
+perfectionist=card("Perfectionist"),
+seduction=card("Seduction"),
+sudden_reversal=card("Sudden Reversal"),
+the_barrens=card("The Barrens"),
+vessel=card("Vessel"),
+villein=card("Villein"),
+wash=card("Wash"),
+meta=link("/strategy/articles/advanced/the-game-of-the-game", _("meta")),
+v5_malkavian=external("https://www.blackchantry.com/products/legacy/vampire-the-eternal-struggle-fifth-edition/fifth-edition-malkavian/", _("V5 Malkavian")),
+fb_malkavian=external("https://www.blackchantry.com/products/legacy/first-blood/first-blood-malkavian/", _("First Blood: Malkavian")),
+keepers_of_tradition_1=external("https://www.blackchantry.com/product-keepers-of-tradition-reprint-bundle-1/", "Keepers of Tradition 1"),
+sabbat_precons=external("https://www.blackchantry.com/products/legacy/preconstructed-decks/", "Sabbat Precons"),
+anniversary=external("https://www.blackchantry.com/products/legacy/preconstructed-decks/product-25th-anniversary/", _("25th Anniversary")),
+v5_tremere=external("https://www.blackchantry.com/products/legacy/vampire-the-eternal-struggle-fifth-edition/fifth-edition-tremere/", _("V5 Tremere")),
+fb_ventrue=external("https://www.blackchantry.com/products/legacy/first-blood/first-blood-ventrue/", _("First Blood: Ventrue")),
+anthology=external("https://www.blackchantry.com/products/legacy/bundles/product-anthology-1/", "Anthology 1"),
+parliament_of_shadows=external("https://www.blackchantry.com/products/legacy/preconstructed-decks/product-parliament-of-shadows/", "Parliament of Shadows")
+%}
+<h2>Highlights</h2>
+<p>
+    This is a brutal <em>stealth & bleed</em> deck using V5 Malkavian {{ malkavian }} and
+    their newly regained {{ DOM }}.
+</p>
+<p>
+    The plan is to bleed hard, with stealth. {{ govern_the_unaligned }} is probably the best available action card
+    in the game. Used at superior after getting the oldest vampire out first, it provides fast and cheap vampires
+    in the early game. Once three vampires are out and ready, it can then be used to bleed the prey, hard.
+    {{ obf }} modifiers provide stealth, but the crypt does not have that much superior {{ OBF }} available,
+    so a few Master cards are included to provide even a bit more denial, like {{ pentex_subversion }}
+    and {{ misdirection }}.
+</p>
+<p>
+    The Master module provides a bit of bloat with {{ vessel }} and {{ villein }}, as well as card cycling tools like
+    {{ dreams_of_the_sphinx }} and {{ the_barrens }}. Blood regeneration for the vampires is also important here, since
+    {{ DOM }} tends to cost a bit of blood, so {{ perfectionist }} and {{ asylum_hunting_ground }} can help, as well
+    as {{ jake_washington }} and {{ giants_blood }}.
+</p>
+<p>
+    The lack of superior {{ OBF }} also makes the inclusion of {{ DOM }} cards like {{ bonding }} and {{ seduction }}
+    relevant: additional stealth and a block denial that won't risk to jam the hand. On the same line, 
+    {{ cloak_the_gathering }} is comparatively better, since a vampire with {{ OBF }} can use it at superior
+    to help a sidekick. The deck is fragile when it comes down to combat defece: only {{ no_trace }} can help there,
+    and only a few vampires can play it at superior. To try and compensate for that, {{ carlton_van_wyk }} and
+    {{ jake_washington }} are included as dispensable blockers against rushes.
+
+</p>
+<h2>Tweaks and variants</h2>
+<p>
+    There are a lot of ways to tweak this deck. Including a good quantity of Master counters like {{ sudden_reversal }}
+    and {{ wash }} is a good way to cripple the bloat possibilities for the prey. Another idea is to rely on {{ DOM }}
+    more and increase the number of {{ bonding }} and {{ seduction }}, keeping {{ OBF }} only for the occasional
+    boost or denial. Finally, the balance between stealth, bleed and reactions is a delicate thing you might
+    want to tinker with to adapt to your local {{ meta }}.
+</p>
+<p>
+    If you have access to him, {{ gilbert_duane_g6 }} is definitely a great addition to the crypt: he has superior
+    {{ OBF }} and, with a capcity of 7 and a Baron title, sits comfortably in the "Govern chain" for the deck,
+    even opening the possible inclusion of {{ papillon }} for blood regeneration.
+</p>
+<h2>What to buy</h2>
+<p>
+    The bulk of the cards come from {{ v5_malkavian }}, {{ v5_tremere }} and {{ anniversary }}, with a few additions
+    from {{ fb_malkavian }} and {{ fb_ventrue }}. A few cards are not in those, like {{ carlton_van_wyk }}
+    ({{ anthology }}) and {{ jake_washington }} ({{parliament_of_shadows }}), but they can be traded or ignored.
+</p>
+{% endtrans %}
+{% endblock %}

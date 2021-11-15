@@ -1,0 +1,90 @@
+{% extends "archetypes/_layout.html" %}
+{% import "archetypes/_layout-erratum.html" as erratum with context %}
+{% import "archetypes/neonate/harbinger-legionnaires.json" as deck_json %}
+
+{% block meta %}
+<meta property="decklist" content='{{ deck_json | tojson }}' />
+{% endblock %}
+
+
+{% block archetype_name %}
+<h1>{{ harbinger_of_skulls }} Harbinger Legionnaires</h1>
+{% endblock %}
+
+{% block archetype %}
+{% trans trimmed
+khurshid=card("Khurshid"),
+anu_diptinatpa=card("Anu Diptinatpa"),
+liquidation=card("Liquidation"),
+emerald_legionnaire=card("Emerald Legionnaire"),
+vengeful_spirit=card("Vengeful Spirit"),
+the_unmasking=card("The Unmasking"),
+gear_up=card("Gear Up"),
+trochomancy=card("Trochomancy"),
+ashur_tablets=card("Ashur Tablets"),
+direct_intervention=card("Direct Intervention"),
+entrancement=card("Entrancement"),
+anarchist_uprising=card("Anarchist Uprising"),
+erebus_mask=card("Erebus Mask"),
+kevlar_vest=card("Kevlar Vest"),
+dreams_of_the_sphinx=card("Dreams of the Sphinx"),
+heart_of_nizchetus=card("Heart of Nizchetus"),
+angelique=card("Angelique"),
+funeral_wake=card("Funeral Wake"),
+khurshid_dream_team=link("/deck-search", _("Khurshid Dream Team"), id="2019zt3bofvf"),
+print_on_demand=external("https://www.drivethrucards.com/browse/pub/12056/Black-Chantry-Productions/subcategory/30619_34256/VTES-Legacy-Card-Singles", "Print on Demand"),
+lost_kindred=external("https://www.blackchantry.com/products/legacy/bundles/lost-kindred/", "Lost Kindred"),
+httb_a=external("https://www.blackchantry.com/products/legacy/bundles/product-heirs-to-the-blood-reprint-bundle-1/", "Heirs to the Blood 1"),
+anthology=external("https://www.blackchantry.com/products/legacy/bundles/product-anthology-1/", "Anthology 1"),
+the_unaligned=external("https://www.kickstarter.com/projects/vtes/vampire-the-eternal-struggle-unleashed", "The Unaligned")
+%}
+<h2>Highlights</h2>
+<p>
+    This is an <em>allies toolbox</em> deck relying on {{ emerald_legionnaire }}.
+</p>
+<p>
+    Hoping to get {{ khurshid }} out fast as a first vampire, the deck relies on
+    its strong combat ability coupled with {{ AUS }} for blocks. The plan is to get
+    another Harbinger {{ harbinger_of_skulls }} out, then {{ anu_diptinatpa }}
+    later in the game. All the while, using {{ liquidation }} for bloat and aiming to
+    recruit an {{ emerald_legionnaire }} to bring back the others from the ash heap.
+</p>
+<p>
+    The deck builds up slowly and steadily. Once an {{ emerald_legionnaire }} is out,
+    he should be protected so he can bring back his mates from the ash heap on the next
+    unlock phase. A few {{ vengeful_spirit }} can be stacked on the Harbinger vampires
+    to augment the bleed power, {{ the_unmasking }} and {{ anu_diptinatpa }} both improve
+    the {{ emerald_legionnaire }} capacities.
+</p>
+<p>
+    The deck originality is in the inclusion of {{ gear_up }}, an excellent card when you got
+    your ash heap full of cards and possibilities early thans to {{ liquidation }}.
+    It also includes very specific counters and meta-related cards, like {{ soul_feasting }} against
+    other {{ emerald_legionnaire }} builds or to remove one that was stolen, {{ trochomancy }}
+    against decks that use their ash heap with {{ emerald_legionnaire }} or {{ ashur_tablets }},
+    and {{ direct_intervention }} against {{ entrancement }} or {{ anarchist_uprising }} and similar votes.
+</p>
+<h2>Tweaks and variants</h2>
+<p>
+    The deck originates from the {{ emerald_legion }} archetype, but is mostly a tweak of
+    Antti Penttilä's {{ khurshid_dream_team }}. As can be seen in the original list, a few
+    non-BCP cards could be useful inclusions, like {{ erebus_mask }} and {{ kevlar_vest }}.
+</p>
+<p>
+    Other small tweaks can be considered: adding more {{ dreams_of_the_sphinx }},
+    if you're not concerned about too many contests, is a great way to cycle cards and fill
+    your ash heap faster. The {{ heart_of_nizchetus }} is also worth consideration. Finally,
+    the crypt can also be changed a bit: doubling either {{ anu_diptinatpa }} for bleed improvement
+    or {{ angelique }} for blood economy makes sense.
+</p>
+<h2>What to buy</h2>
+<p>
+    Necromancy {{ nec }} cards are available on {{ print_on_demand }}, and the
+    Harbinger {{ harbinger_of_skulls }} cards come from the {{ lost_kindred }} set.
+    Most of the other cards come from {{ httb_a }} and {{ anthology }}.
+    The last few cards can be found from diverse sets, like V5 or Sabbat preconstructed decks, or
+    replaced if you don't have them. {{ funeral_wake }} was included in the Kickstarter bundle
+    {{ the_unaligned }}.
+</p>
+{% endtrans %}
+{% endblock %}
