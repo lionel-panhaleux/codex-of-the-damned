@@ -6,29 +6,91 @@
 <meta property="decklist" content='{{ deck_json | tojson }}' />
 {% endblock %}
 
-Description: You can change 2x Murder of Crows, 1x Aid from the Bats into 1x Preternatural Strength, 2x Immortal Grapple
-if you wish. Both options are viable, mostly a question of the preference of the player. With Preternatural Strength I
-might also consider adding second copy of Guardian Angel, but it is not necessary.\n
+{% block archetype_name %}
+<h1>{{ nosferatu }} Nosferatu Primogens</h1>
+{% endblock %}
 
-20:21] Khormag, Prince of Joensuu: https://vdb.smeea.casa/decks?id=1c195d19062c45ea8d874832c4c6317f
-VDB - Card Search & Deck Building
-VTES Deck Building & Card Search
-[10:20] Phoenix: Interesting! I would have cut the Murder of Crows on that one... But are they finally worth an
-inclusion because of Warsaw?
-[10:21] Phoenix: I could see a pair of IG in this... just to keep the SCE players on their toes.
-[10:25] Khormag, Prince of Joensuu: Yeah, Murder of Crows is amazing, when you are planning on playing longer game, it
-gets extra value all the time, and makes it easier to save the real combat cards to where it really matters. I
-personally don't like to play potence or any close ranged combat with reactive decks, that don't have easy access to
-prevent, as it is just too dangerous. You just straight up lose to any real combat, and are too vulnerable to aggro poke
-or even target vitals. Pure Animalism combat is safer and more efficient than potence, and you don't usually want to
-torporize vampires early, just punish a bit. Leaving craters from combat tips the table balance way too much.
-[10:27] Phoenix: Totally agree, interesting take on Murder of Crows.
-[10:28] Phoenix: Was just considering one or two IG to instill doubt/fear in opponents, not really as a key piece.
-[10:29] Khormag, Prince of Joensuu: Yeah. That could work, and you could pair that with one Preternatural Strength. It
-was something that I did consider, but it would probably replace the Murder of Crows. Kind of just a question of which
-one you prefer.
-[10:29] Phoenix: Could be a comment on the deck. Always good to have variations ideas to propose.
-[19:56] Spigushe: Maybe a stupid question: did you consider Benjamin Rose ? I kind of like this vampire so much 😻
-[19:57] Spigushe: Yay, the lack of :AUS: may be a default in this deck for such a cost ...
-[21:19] Khormag, Prince of Joensuu: He lacks superior Animalism, which was the discipline I mainly focused on here, so I
-didn't really think of him as an option.
+
+{% block archetype %}
+{% trans trimmed
+magnum=card(".44 Magnum"),
+aid_from_bats=card("Aid From Bats"),
+anarchist_uprising=card("Anarchist Uprising"),
+army_of_rats=card("Army of Rats"),
+canine_horde=card("Canine Horde"),
+carrion_crows=card("Carrion Crows"),
+cats_guidance=card("Cats' Guidance"),
+creeping_sabotage=card("Creeping Sabotage"),
+deep_song=card("Deep Song"),
+direct_intervention=card("Direct Intervention"),
+heart_of_nizchetus=card("Heart of Nizchetus"),
+immortal_grapple=card("Immortal Grapple"),
+larissa_moreira=card("Larissa Moreira"),
+lenny_burkhead=card("Lenny Burkhead"),
+protected_district=card("Protected District"),
+scourge_of_the_enochians=card("Scourge of the Enochians"),
+swallowed_by_the_night=card("Swallowed by the Night"),
+target_vitals=card("Target Vitals"),
+terror_frenzy=card("Terror Frenzy"),
+the_dowager=card("The Dowager"),
+the_warrens=card("The Warrens"),
+v5_malkavian=external("https://www.blackchantry.com/products/legacy/vampire-the-eternal-struggle-fifth-edition/fifth-edition-malkavian/", _("V5 Malkavian")),
+meta=link("/strategy/articles/advanced/the-game-of-the-game", _("meta")),
+bounces=link("/strategy/fundamentals", _("Bounces"), _anchor="bounce"),
+keepers_of_tradition_1=external("https://www.blackchantry.com/product-keepers-of-tradition-reprint-bundle-1/", _("Keepers of Tradition 1")),
+information_highway_article=external("https://vtesinformationhighway.wordpress.com/2019/01/11/nephandus-starter-and-strategy/", _("Information Highway Article")),
+pact_with_nephandi=external("https://www.blackchantry.com/products/legacy/preconstructed-decks/product-pact-with-nephandi/", _("Pact with Nephandi")),
+v5_nosferatu=external("https://www.blackchantry.com/products/legacy/vampire-the-eternal-struggle-fifth-edition/fifth-edition-nosferatu/", _("V5 Nosferatu")),
+anthology=external("https://www.blackchantry.com/products/legacy/bundles/product-anthology-1/", _("Anthology 1")),
+fb_nosferatu=external("https://www.blackchantry.com/products/current-products/first-blood-nosferatu/", _("First Blood: Nosferatu")),
+print_on_demand=external("https://www.drivethrucards.com/browse/pub/12056/Black-Chantry-Productions/subcategory/30619_34256/VTES-Legacy-Card-Singles", _("Print on Demand")),
+cicero_jannyson_s_deck=link("/deck-search", _("Cicero Jannyson's deck"), id="2021afo")
+%}
+<h2>Highlights</h2>
+<p>
+    This is an <em>rush</em> deck using Nosferatu {{ nosferatu }} primogens and {{ ANI }} bleed & combat.
+</p>
+<p>
+    {{ deep_song }} is the cornerstone of the deck's strategy. It servers as a bleed or rush device depending
+    on the situation. The {{ ANI }} combat module, using {{ aid_from_bats }} and {{ carrion_crows }}, is furtherwise
+    supported by additional maneuvers from {{ swallowed_by_the_night }}. The plan is to use the rush abilities of the
+    deck to keep control of the table, disable potential {{ bounces }} on the prey side by taking down vampires,
+    then bleed for the oust.
+</p>
+<p>
+    Playing Nosferatu {{ nosferatu }} allows a few {{ creeping_sabotage }} in addition to
+    {{ army_of_rats }} for more pool damage. Both {{ larissa_moreira }} and {{ lenny_burkhead }} have a good
+    bleed bonus, and {{ the_dowager }} has a very neat intercept bonus. Playing Primogen allows for the inclusion
+    of the new {{ protected_district }}, a very nice defensive tool, both on the bleed and the political side.
+</p>
+<p>
+    The only stealth used is {{ swallowed_by_the_night }} because of its versatility: it can easily be cycled
+    during a combat or provide and additional maneuver to stay at long range on top of {{ aid_from_bats }}.
+    Adding more stealth to the deck will most likely disrupt the balance and fluidity of the combat and
+    reaction modules.
+</p>
+<h2>Tweaks and variants</h2>
+<p>
+    There are a lot of possible strategies with these Nosferatu {{ nosferatu }} primogens. Leaning on a more defensive
+    side, with more {{ creeping_sabotage }} and reactions like {{ cats_guidance }} and {{ the_warrens }} is also a
+    possibility - in that case obviously, far less {{ deep_song }} and a reduced combat module are in order.
+</p>
+<p>
+    A few good potential inclusions have not yet been reprinted, especially when it comes down to the combat
+    module. A few {{ target_vitals }} could be replaced by some {{ terror_frenzy }} or {{ canine_horde }}, to counter
+    opposing combat modules revolving around close range strikes or weapons like {{ magnum }}.
+</p>
+<p>
+    The balance of the deck when it comes down to proportions heavily depends on your local {{ meta }}. More
+    {{ deep_song }} might be required against <em>Combat Ends</em>, or even a few {{ immortal_grapple }}.
+    {{ scourge_of_the_enochians }} and even {{ anarchist_uprising }} might be included against swarm decks.
+    {{ heart_of_nizchetus }} can also be a useful inclusion, although it does not feel required.
+</p>
+<h2>What to buy</h2>
+<p>
+    The bulk of the cards come from two {{ v5_nosferatu }} decks, with additions from {{ keepers_of_tradition_1 }},
+    {{ anthology }}, {{ v5_malavian }} and {{ fb_nosferatu }}. {{ direct_intervention }} is available as
+    {{ print_on_demand }}.
+</p>
+{% endtrans %}
+{% endblock %}
