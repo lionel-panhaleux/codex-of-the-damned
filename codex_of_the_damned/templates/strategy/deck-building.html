@@ -249,17 +249,17 @@ deck_archive=link("/deck-search", _("deck archive"))
 <p>
     The second step, before adding more cards to the deck, is to define the four pillars of the deck strategy:
 <ul>
-    <li><strong>Payload:</strong> how the deck delivers pool damage to its prey.
+    <li id="payload"><strong>Payload:</strong> how the deck delivers pool damage to its prey.
         Does it {{ bleed }}? Use {{ politics }}?
         Some other pool damage device like {{ anarch_revolt }} or {{ dragonbound }}?
     </li>
-    <li>
+    <li id="delivery">
         <strong>Delivery system:</strong> how the deck makes sure the payload is delivered.
         If it bleeds, does it use stealth, block denial or an overwhelming number of actions?
         If it uses political actions, does it use stealth to get them through? How does it get enough votes?
         If it uses specific pool damage cards, do they need protection or support to apply their effect?
     </li>
-    <li>
+    <li id="defense">
         <strong>Defense:</strong> how the deck avoids to lose.
         {{ Bloating }} is the most generic defense:
         gaining pool works against all offensive strategies. Most decks use a modicum of bloat,
@@ -269,7 +269,7 @@ deck_archive=link("/deck-search", _("deck archive"))
         {{ bounce }} or reduction against bleed,
         {{ delaying_tactics }} and {{ poison_pill }} against politics.
     </li>
-    <li>
+    <li id="combat-management">
         <strong>Combat Management:</strong> how the deck deals with minion combats.
         It is essential to choose a clear {{ combat_posture }}, and the correct one
         depends on the previous pillars. If it delivers with stealth and defends without

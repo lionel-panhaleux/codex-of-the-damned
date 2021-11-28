@@ -6,72 +6,126 @@
 <meta property="decklist" content='{{ deck_json | tojson }}' />
 {% endblock %}
 
-Khormag, Prince of Joensuu: General thread for BCP friendly Capuchin decks.
 
-THA/FOR/DOM "Grinder": https://vdb.smeea.casa/decks?id=e8f7e70ec50b4ad58b60229129b7db94
+{% block archetype_name %}
+<h1>{{ harbinger_of_skulls }} The Capuchin</h1>
+{% endblock %}
 
-Multirush variant: https://vdb.smeea.casa/decks?id=a4c8921839284ca990e19924c72cb730
 
-Wall with Legionnaires:
-https://vdb.smeea.casa/decks?id=7d444e6b168847ffb35c0b9b110237f4
-[10:30] Martin-Baron of Lindesberg: I get you wanna play The Capuchin
-
-But it seems extremely risky to have so few vampires in a crypt
-
-Can you explain your reasoning?
-[10:37] Khormag, Prince of Joensuu: Which deck are you referring to?
-[10:38] Khormag, Prince of Joensuu: The first one lacks some of the vampires you might want to play, as you don't have
-access to any with the restrictions.
-[10:41] Khormag, Prince of Joensuu: and the wall version hasn't really needed anyone else. It has access to allies, as
-you play Legionnaires, so in reality you usually have quite many minions and there are really not that many options with
-the disciplines used in the deck for the vampire selection. It is a bit risky, and I used to play a version which
-included Khursid and Hecate, but I didn't like it.
-[10:43] Khormag, Prince of Joensuu: Here is the original list for the Wall deck, without the restrictions:
-https://amaranth.vtes.co.nz/#deck/e7fb3597-6c4f-474b-a3f2-848e2ff1e752
-Amaranth: Deck Builder for Vampire the Eternal Struggle
-Deck building / proxy tool for VTES / Vampire the Eternal Struggle / V:TES
-[10:44] Khormag, Prince of Joensuu: Guardian Vigil makes it a bit safer, as you have have a lot greater blocking
-capability with it. But I didn't want to include it, as its not officially in print.
-[10:48] Khormag, Prince of Joensuu: The fact is also that the Capuchin is super strong vampire, and can actually do just
-fine only by himself. The decks are obviously a bit weak against super fast weenie decks, but that's not something you
-can really fix by playing a bit more diverse crypt. It is a problem with the high capacity star vampire archetypes
-always.
-[08:26] Phoenix: Hm. Must say I believe in the Emerald Wall more than in the two others
-[09:07] Khormag, Prince of Joensuu: I have had more success with the two others. Having played couple of tournament
-finals with the "grinder" deck, and one tournament final with the multirush.
-[09:08] Khormag, Prince of Joensuu: I have played the Emerald deck in a final too, but it was a 2 round tournament. And
-I don't personally count those as "real" tournaments.
-[09:11] Khormag, Prince of Joensuu: Although both of the decks are missing couple of cards from the lists I played, as
-you don't have access to those with BCP products. Mainly Erebus Mask and Blood Fury. But some masters too, like Metro
-Underground.
-[09:41] Khormag, Prince of Joensuu: All of the decks suffer from the same problem, which is the very slow start and
-usually not that impressive early game. But I don't think that is something you can fix easily.
-
-The Capuchin is definitely a great vampire, but I find it hard to justify playing him in decks, unless I take full
-advantage of the disciplines he has. I wouldn't play him in a "normal" HoS crypt with the low to mid cap vampires, as
-you are going to miss out on the THA and DOM angle, he just isn't that good of a fit there. If you want to play mid cap
-HoS or Legionnaires, you can do a lot better with a crypt based around Khursid or Erlik.
-
-He is in a bit strange place, as he is lacking a friend or two in all group choices he has. He could have been okay
-choice for HoS Legionnaire wall deck, but the Erlik got printed with Legionnaires, which pretty much negates that
-option, as he is in every way better than the Capuchin, when playing HoS.
-[09:48] Khormag, Prince of Joensuu: Of the three decks above, the first one is likely my favourite. As it has the
-strongest late game. You have 2 vampires with extremely strong abilities, that you will boost even greater through out
-the game. My game plan has been to get Bowl to Gerald and Erebus Mask (Missing here sadly) for Capuchin. You then have 2
-vampires with +1 intercept and +1 stealth. And you have very solid combat defence with the naturally super efficient
-tha/for combat, and good offense and bleed defence with DOM. The Wall version kind of does the same, but not as well.
-But it obviously gains the Legionnaires. But it can be a bit rough too, as it makes you weaker against voters (Anarchist
-Uprising and Ancilla Empowerment).
-[09:56] Phoenix: Okay, the let's maybe just present the first one as the most interesting possibility and mention the
-two others (no decklist) as possibilities in text?
-[09:57] Khormag, Prince of Joensuu: The Multirush deck is something I specifically built for a tournament, having not
-played it before that, as I was expecting a meta of higher capacity decks with slower start and little to no combat. I
-was also on a mission to play Capuchin deck in every possible archetype, and he has access to Thanatosis which is pretty
-hot for combat. I did get into finals with 2GW 7VP there, but miscounted my blood in the finals and locked myself out of
-the game with Talbots Chainsaw... 😦
-
-I included it here because it is something a bit different, it is super fun to play and very effective in combat. But it
-is definitely not the strongest when considering a tournament with unknown metagame.
-[10:01] Khormag, Prince of Joensuu: Sure! But I don't mind you presenting the Emerald Wall either. Both decks are fine,
-and I can't really tell which one is better. I am a bit opinionated myself, as I've had better experiences with the
-first one, and I consider it more of my "own" creation. But the wall version is definitely a strong deck too.
+{% block archetype %}
+{% trans trimmed
+anarch_convert=card("Anarch Convert"),
+anarch_revolt=card("Anarch Revolt"),
+angelique=card("Angelique"),
+apportation=card("Apportation"),
+archon_investigation=card("Archon Investigation"),
+bonding=card("Bonding"),
+carlton_van_wyk=card("Carlton Van Wyk"),
+conditioning=card("Conditioning"),
+depravity=card("Depravity"),
+direct_intervention=card("Direct Intervention"),
+dreams_of_the_sphinx=card("Dreams of the Sphinx"),
+eagles_sight=card("Eagle's Sight"),
+emerald_legionnaire=card("Emerald Legionnaire"),
+enkil_cog=card("Enkil Cog"),
+erebus_mask=card("Erebus Mask"),
+gerald_windham=card("Gerald Windham"),
+guardian_vigil=card("Guardian Vigil"),
+heart_of_nizchetus=card("Heart of Nizchetus"),
+karl_schrekt=card("Karl Schrekt"),
+magic_of_the_smith=card("Magic of the Smith"),
+metro_underground=card("Metro Underground"),
+mirror_walk=card("Mirror Walk"),
+murmur_of_the_false_will=card("Murmur of the False Will"),
+my_enemys_enemy=card("My Enemy's Enemy"),
+mylan_horseed=card("Mylan Horseed"),
+ponticulus=card("Ponticulus"),
+saulot=card("Saulot, The Wanderer", "Saulot"),
+saulot_the_wanderer=card("Saulot, The Wanderer"),
+seduction=card("Seduction"),
+sniper_rifle=card("Sniper Rifle"),
+soul_burn=card("Soul Burn"),
+the_anarch_free_press=card("The Anarch Free Press"),
+the_capuchin=card("The Capuchin"),
+the_rack=card("The Rack"),
+theft_of_vitae=card("Theft of Vitae"),
+vengeful_spirit=card("Vengeful Spirit"),
+anthology=external("https://www.blackchantry.com/products/legacy/bundles/product-anthology-1/", _("Anthology 1")),
+anti_ventrue_grinder=link("/archetypes/anti-ventrue-grinder", _("!Ventrue Grinder")),
+danilo_torrisi_s_deck=link("/deck-search", _("Danilo Torrisi's deck"), id="2017ecday2bg"),
+den_of_fiends=external("https://www.blackchantry.com/products/product-den-of-fiends/", _("Den of Fiends")),
+fb_nosferatu=external("https://www.blackchantry.com/products/current-products/first-blood-nosferatu/", _("First Blood: Nosferatu")),
+fb_ventrue=external("https://www.blackchantry.com/products/current-products/first-blood-ventrue/", _("First Blood: Ventrue")),
+keepers_of_tradition_2=external("https://www.blackchantry.com/product-keepers-of-tradition-reprint-bundle-2/", _("Keepers of Tradition 2")),
+lunge=link("/strategy/fundamentals", _("lunge"), _anchor="lunge"),
+promo_pack_1=external("https://www.drivethrucards.com/product/303420/Promo-Pack-1", _("Promo Pack 1")),
+v5_banu_haqim=external("https://www.blackchantry.com/products/legacy/vampire-the-eternal-struggle-fifth-edition/fifth-edition-banu-haqim/", _("V5 Banu Haqim")),
+v5_tremere=external("https://www.blackchantry.com/products/legacy/vampire-the-eternal-struggle-fifth-edition/fifth-edition-tremere/", _("V5 Tremere")),
+v5_ventrue=external("https://www.blackchantry.com/products/legacy/vampire-the-eternal-struggle-fifth-edition/fifth-edition-ventrue/", _("V5 Ventrue")),
+meta=link("/strategy/articles/advanced/the-game-of-the-game", _("meta")),
+anniversary=external("https://www.blackchantry.com/products/legacy/preconstructed-decks/product-25th-anniversary/", _("25th Anniversary"))
+%}
+<h2>Highlights</h2>
+<p>
+    This is a <em>toolbox</em> deck using {{ the_capuchin }} as star vampire and {{ gerald_windham }} as a sidekick.
+</p>
+<p>
+    The idea is similar to a {{ anti_ventrue_grinder }}: use {{ AUS }}{{ FOR }} for a solid grinder defence, with
+    {{ DOM }} for bleed and additional bounces. In this deck, vampires are more expensive but they got {{ THA }} for
+    additional useful tricks: {{ magic_of_the_smith }} to fetch useful equipments quickly, a bit of additional stealth
+    with {{ mirror_walk }} and one of the best strikes of the game with {{ theft_of_vitae }}.
+</p>
+<p>
+    The deck has a slow start but grinds the rest of the table strong enough to secure a win in the late game.
+    Key actions should be blocked and bleed actions from the predator bounced once they get enough stealth on them.
+    Thanks to {{ theft_of_vitae }} that can not be prevented and brings back a bit of blood on the vampires,
+    the blood balance on the table should tip in favor of the deck as the game advances.
+</p>
+<p>
+    The strategy is all about using the pressure of the slow grind and the good defence to survive and build up to
+    a great {{ lunge }}. Taking the time to craft the perfect hand to oust the prey in a single swift move is
+    particularily important in this deck. Luckily, {{ the_capuchin }}'s ability gives you a good hand size so you can
+    seat on good cards you want to keep.
+</p>
+<h2>Tweaks and variants</h2>
+<p>
+    A number of tweaks can be done depending on the {{ meta }}: {{ seduction }} and {{ bonding }}
+    can provide more stealth, {{ soul_burn }} or {{ blood_rage }} are great against weapons and {{ for }}
+    prevention, and {{ apportation }} can help with maneuverability. Allies like {{ mylan_horseed }}, 
+    {{ carlton_van_wyk }} and {{ ponticulus }} are also worth considering. {{ enkil_cog }} might be worth doubling and
+    one or two {{ direct_intervention }} can't hurt. More permanent
+    intercept is not desirable: you still want bleeds to get through so you can bounce them.
+    {{ the_rack }} and {{ heart_of_nizchetus }} are worthy additions, but not really necessary.
+    Finally, you might want to dial down on the {{ conditioning }} in favor of more {{ murmur_of_the_false_will }}
+    if you are in bleed intensive environment rich in {{ archon_investigation }}.
+</p>
+<p>
+    {{ saulot_the_wanderer }} is another possible partner for {{ the_capuchin }},
+    as in {{ danilo_torrisi_s_deck }} from the 2017 EC. {{ DOM }} gets less relevant, but is not aboslutely required,
+    since {{ saulot }} cannot be brought out by {{ govern_the_unaligned }} anyway.
+    {{ saulot }}'s ability might well be worth the loss, especially when combined with {{ the_rack }}.
+</p>
+<p>
+    A few legacy cards are great additions:
+    {{ erebus_mask }} and {{ eagles_sight }} should all be added if available.
+    {{ depravity }}, {{ metro_underground }}, {{ sniper_rifle }} and  {{ my_enemys_enemy }} are worth considering.
+    {{ karl_schrekt }} might also fit here.
+</p>
+<p>
+    Making more use of Anarch tech is possible: bumping up the number of {{ anarch_convert }} might open the possibility
+    of {{ anarch_revolt }} for offense, combined with a number of {{ guardian_vigil }} for defence.
+    Anarchs also have access to {{ the_anarch_free_press }}. All in all, this leads up to a whole different
+    deck, closer to a wall. In this case using {{ angelique }} instead of {{ gerald_windham }},
+    coupled with some {{ vengeful_spirit }} and {{ emerald_legionnaire }}, might be a better bet than using {{ DOM }}.
+    {{ NEC }} can also provide additional stealth and combat options.
+</p>
+<h2>What to buy</h2>
+<p>
+    A {{ promo_pack_1 }} for {{ the_capuchin }}, {{ keepers_of_tradition_2 }} and {{ anthology }} to complete the crypt,
+    two {{ anniversary}} plus {{ v5_tremere }}, {{ v5_ventrue }} and {{ fb_ventrue }} for the library.
+    An optional {{ v5_banu_haqim }} if you want to use {{ blood_rage }} or {{ soul_burn }}, and a few cards
+    from {{ fb_nosferatu }} and {{ den_of_fiends }} that can be traded instead.
+    A tricky point will be to get enough {{ dreams_of_the_sphinx }}, but you can adjust the decklist with less of them.
+</p>
+{% endtrans %}
+{% endblock %}

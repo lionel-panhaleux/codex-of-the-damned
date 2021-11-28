@@ -6,4 +6,132 @@
 <meta property="decklist" content='{{ deck_json | tojson }}' />
 {% endblock %}
 
-\nDescription: Direct Intervention instead of Dark Influences.\n
+
+{% block archetype_name %}
+<h1>{{ baali }} The unnamed</h1>
+{% endblock %}
+
+
+{% block archetype %}
+{% trans trimmed
+aire_of_elation=card("Aire of Elation"),
+archon_investigation=card("Archon Investigation"),
+arishat=card("Arishat"),
+condemnation_mute=card("Condemnation: Mute"),
+contagion=card("Contagion"),
+dark_influences=card("Dark Influences"),
+dhabi_revenant=card("D'habi Revenant"),
+direct_intervention=card("Direct Intervention"),
+eluding_the_arms_of_morpheus=card("Eluding the Arms of Morpheus"),
+enkil_cog=card("Enkil Cog"),
+entrancement=card("Entrancement"),
+flurry_of_action=card("Flurry of Action"),
+form_of_mist=card("Form of Mist"),
+harbinger_of_skulls=card("Harbinger of Skulls"),
+homunculus=card("Homunculus"),
+i_am_legion=card("I Am Legion"),
+instantaneous_transformation=card("Instantaneous Transformation"),
+js_simmons_esq=card("J.S. Simmons, Esq."),
+legal_manipulations=card("Legal Manipulations"),
+mental_maze=card("Mental Maze"),
+perfectionist=card("Perfectionist"),
+rotschreck=card("Rötschreck"),
+ruins_of_charizel=card("Ruins of Charizel"),
+sense_the_sin=card("Sense The Sin"),
+shatter_the_gate=card("Shatter The Gate"),
+telepathic_misdirection=card("Telepathic Misdirection"),
+tend_the_flock=card("Tend the Flock"),
+the_coven=card("The Coven"),
+the_unnamed=card("The unnamed"),
+unleash_hells_fury=card("Unleash Hell's Fury"),
+vessel=card("Vessel"),
+xeper=card("Xeper, Sultan of Lepers", "Xeper"),
+anniversary=external("https://www.blackchantry.com/products/legacy/preconstructed-decks/product-25th-anniversary/", _("25th Anniversary")),
+anthology=external("https://www.blackchantry.com/products/legacy/bundles/product-anthology-1/", _("Anthology 1")),
+bloat=link("/strategy/bloat", _("bloat")),
+v5_malkavian=external("https://www.blackchantry.com/products/legacy/vampire-the-eternal-struggle-fifth-edition/fifth-edition-malkavian/", _("V5 Malkavian")),
+v5_ministry=external("https://www.blackchantry.com/products/vampire-the-eternal-struggle-fifth-edition/fifth-edition-the-ministry/", _("V5 Ministry")),
+fb_malkavian=external("https://www.blackchantry.com/products/legacy/first-blood/first-blood-malkavian/", _("First Blood: Malkavian")),
+fb_nosferatu=external("https://www.blackchantry.com/products/current-products/first-blood-nosferatu/", _("First Blood: Nosferatu")),
+fb_toreador=external("https://www.blackchantry.com/products/current-products/first-blood-toreador/", _("First Blood: Toreador")),
+heirs_to_the_blood_1=external("https://www.blackchantry.com/product-heirs-to-the-blood-reprint-bundle-1/", _("Heirs to the Blood 1")),
+information_highway_article=external("https://vtesinformationhighway.wordpress.com/2019/01/11/nephandus-starter-and-strategy/", _("Information Highway article")),
+libertine_ball=external("https://www.blackchantry.com/products/product-libertine-ball/", _("Libertine Ball")),
+main_article=link("/archetypes/the-unnamed", _("main article")),
+print_on_demand=external("https://www.drivethrucards.com/browse/pub/12056/Black-Chantry-Productions/subcategory/30619_34256/VTES-Legacy-Card-Singles", _("Print on Demand"))
+%}
+<h2>Highlights</h2>
+<p>
+    This is a <em>stealth & bleed</em> deck using {{ the_unnamed }} as star vampire.
+</p>
+<p>
+    The idea is to bleed each and every turn with {{ the_unnamed }}. Ideally, the deck aims to put
+    {{ enkil_cog }} on {{ the_unnamed }} and use {{ instantaneous_transformation }} or {{ homunculus }}
+    to unlock and bleed twice (once in your turn, once during your prey or predator turn).
+</p>
+<p>
+    {{ PRE }} bleed enhancers like {{ legal_manipulations }} and {{ aire_of_elation }}, coupled with
+    {{ OBF }} for stealth provide a strong steady bleed. {{ PRO }} provides additional stealth with {{ form_of_mist }}
+    and {{ instantaneous_transformation }}, two very versatile cards.
+    Finally, {{ i_am_legion }} provides a counter against {{ AUS }} bounces like {{ telepathic_misdirection }} but can
+    also cancel some {{ aus }} intercept or just get discarded on a successful action if the prey does not use
+    {{ aus }}.
+</p>
+<p>
+    On the defence side, the deck provides a number of options. {{ unleash_hells_fury }} can deter bleeds, but
+    also rushes. {{ condemnation_mute }} and {{ arishat }} are great against political decks, while 
+    {{ xeper }} and {{ entrancement }} help counter allies decks. But the biggest defence of the deck is its ability
+    to {{ bloat }}: between {{ the_unnamed }}'s ability and {{ tend_the_flock }}, the deck already regenerates pool
+    fast, but multiple other cards help with that like {{ legal_manipulations }} and {{ i_am_legion }}.
+</p>
+<p>
+    There are two important points to keep in mind for this deck. First, {{ the_unnamed }} needs blood for
+    many key cards, so blood management is key:
+    a number of cards are here to help like {{ the_coven }}, {{ perfectionist }} and {{ vessel }}.
+    Second, {{ tend_the_flock }} requires a younger vampire in crypt to be played.
+    You're supposed to get the blood back in your pool at the end of your turn: influencing
+    one or two sidekicks might be useful but should only be considered if there is an option left in the crypt for
+    future {{ tend_the_flock }}.
+</p>
+<p>
+    One last trick to consider is the timing of the additional bleed action once {{ enkil_cog }} is in play.
+    Bleeding at the end of your predator turn is standard, since it gets you the edge and an additional pool.
+    But bleeding during your prey's turn can be interesting: first you don't have to worry about
+    {{ archon_investigation }} (the prey cannot play it during their turn), but also this can give you just the
+    pool you need to survive before your predator takes their turn.
+</p>
+<h2>Tweaks and variants</h2>
+<p>
+    Check the {{ main_article }} for more information about this deck. You might also be interested in the
+    {{ information_highway_article }}, presenting a cheaper version of this deck.
+</p>
+<p>
+    A couple of legacy cards can help improve this deck. {{ flurry_of_action }} is great here and can replace a few
+    bleed actions. {{ sense_the_sin }} is cheaper than {{ aire_of_elation }} and {{ eluding_the_arms_of_morpheus }}
+    can be added for additional unlock and in this case {{ rotschreck }} is a great security belt.
+    {{ dhabi_revenant }} is also slightly better than {{ js_simmons_esq }}.
+    {{ contagion }} and {{ ruins_of_charizel }} are interesting options, but not necessary ones.
+    {{ mental_maze }} can also be added for combat defence, but this is only worth the slot if you expect heavy
+    combat modules that {{ the_unnamed }}'s ability can't deter.
+</p>
+<p>
+    There are a few variations to this deck. One can focus on using more {{ legal_manipulations }} and forego the
+    whole {{ enkil_cog }} / {{ homunculus }} combo. Alternatively, a handful of {{ shatter_the_gate }} can be added
+    to the deck for additional damage, but it's hardly necessary. Finally, minor tweaks can be considered, like
+    adding a {{ pentex_subversion }} or {{ mylan_horseed }}.
+</p>
+<h2>What to buy</h2>
+<p>
+    A couple {{ heirs_to_the_blood_1 }} plus {{ anniversary }} and {{ anthology }}, coupled with {{ fb_malkavian }} and
+    {{ v5_malkavian }} for the {{ obf }} cards. {{ pre }} cards come from {{ libertine_ball }} and {{ fb_toreador }}.
+    You might want to do a few trades or adapt the decklist for a few cards like {{ dark_influences }}, the eighth
+    {{ instantaneous_transformation }} and third {{ enkil_cog }}, or a few cards coming from a
+    third {{ heirs_to_the_blood_1 }} and {{ fb_nosferatu }}. {{ print_on_demand }} can provide you with
+    {{ condemnation_mute }} and optionnaly with {{ direct_intervention }} if you want to replace {{ dark_influences }}.
+</p>
+<p>
+    As a closing comment, you might want to procure a {{ v5_ministry }} on top of it all, since it will provide
+    a number of fun and interesting options to consider for this deck.
+</p>
+{% endtrans %}
+{% endblock %}
