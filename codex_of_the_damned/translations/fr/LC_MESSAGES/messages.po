@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: codex 0.X\n"
 "Report-Msgid-Bugs-To: lionel.panhaleux+codex@gmail.com\n"
-"POT-Creation-Date: 2021-07-26 18:41+0200\n"
+"POT-Creation-Date: 2021-11-30 18:16+0100\n"
 "PO-Revision-Date: 2020-07-04 08:50+0200\n"
 "Last-Translator: Lionel Panhaleux <lionel.panhaleux+codex@gmail.com>\n"
 "Language: fr\n"
@@ -72,24 +72,44 @@ msgstr "Discussion"
 msgid "Deck guides"
 msgstr "Guides de decks"
 
-#: codex_of_the_damned/navigation.py:77 codex_of_the_damned/templates/strategy/deck-guides/den-of-fiends.html:6
+#: codex_of_the_damned/navigation.py:77 codex_of_the_damned/templates/archetypes/neonate/the-capuchin.html:58
+#: codex_of_the_damned/templates/archetypes/neonate/tremere-grinder.html:60
+#: codex_of_the_damned/templates/archetypes/neonate/tremere-wall.html:39
+#: codex_of_the_damned/templates/archetypes/neonate/tzimisce-toolbox.html:45
+#: codex_of_the_damned/templates/archetypes/neonate/ventrue-grinder.html:41
+#: codex_of_the_damned/templates/strategy/deck-guides/den-of-fiends.html:6
 #: codex_of_the_damned/templates/strategy/deck-guides/den-of-fiends.html:11
 msgid "Den of Fiends"
-msgstr "L'Antre des Démons"
+msgstr "Antre des Démons"
 
-#: codex_of_the_damned/navigation.py:78 codex_of_the_damned/templates/strategy/deck-guides/libertine-ball.html:6
+#: codex_of_the_damned/navigation.py:78 codex_of_the_damned/templates/archetypes/neonate/lutz-vote.html:45
+#: codex_of_the_damned/templates/archetypes/neonate/ravnos-clown-car.html:46
+#: codex_of_the_damned/templates/archetypes/neonate/the-unnamed.html:61
+#: codex_of_the_damned/templates/archetypes/neonate/ventrue-grinder.html:46
+#: codex_of_the_damned/templates/archetypes/neonate/ventrue-lawfirm.html:56
+#: codex_of_the_damned/templates/strategy/deck-guides/libertine-ball.html:6
 #: codex_of_the_damned/templates/strategy/deck-guides/libertine-ball.html:11
 msgid "Libertine Ball"
-msgstr "Le Bal des Libertins"
+msgstr "Bal des Libertins"
 
-#: codex_of_the_damned/navigation.py:79
+#: codex_of_the_damned/navigation.py:79 codex_of_the_damned/templates/archetypes/neonate/nephandus.html:42
+#: codex_of_the_damned/templates/archetypes/neonate/nosferatu-primogens.html:42
+#: codex_of_the_damned/templates/archetypes/neonate/samedi-rush.html:33
+#: codex_of_the_damned/templates/archetypes/neonate/tremere-grinder.html:64
+#: codex_of_the_damned/templates/archetypes/neonate/tzimisce-toolbox.html:52
+#: codex_of_the_damned/templates/archetypes/neonate/ventrue-grinder.html:49
 msgid "Pact with Nephandi"
 msgstr "Pacte avec les Nephandi"
 
-#: codex_of_the_damned/navigation.py:80 codex_of_the_damned/templates/strategy/deck-guides/parliament-of-shadows.html:6
+#: codex_of_the_damned/navigation.py:80 codex_of_the_damned/templates/archetypes/neonate/lasombra-nocturn.html:54
+#: codex_of_the_damned/templates/archetypes/neonate/malkavian-dominate.html:45
+#: codex_of_the_damned/templates/archetypes/neonate/tremere-wall.html:43
+#: codex_of_the_damned/templates/archetypes/neonate/tzimisce-toolbox.html:53
+#: codex_of_the_damned/templates/archetypes/neonate/ventrue-grinder.html:50
+#: codex_of_the_damned/templates/strategy/deck-guides/parliament-of-shadows.html:6
 #: codex_of_the_damned/templates/strategy/deck-guides/parliament-of-shadows.html:11
 msgid "Parliament of Shadows"
-msgstr "Le Parlement des Ombres"
+msgstr "Parlement des Ombres"
 
 #: codex_of_the_damned/navigation.py:84
 msgid "Articles"
@@ -125,70 +145,74 @@ msgid "Playing Tupdogs & Nephandus"
 msgstr "Jouer Tupdogs & Nephandus"
 
 #: codex_of_the_damned/navigation.py:161
+msgid "Neonate"
+msgstr "Neonate"
+
+#: codex_of_the_damned/navigation.py:185
 msgid "Bibliodèque"
 msgstr "Bibliodèque"
 
-#: codex_of_the_damned/navigation.py:270 codex_of_the_damned/templates/best-cards/index.html:7
+#: codex_of_the_damned/navigation.py:294 codex_of_the_damned/templates/best-cards/index.html:7
 msgid "Best Cards"
 msgstr "Top Cartes"
 
-#: codex_of_the_damned/navigation.py:274 codex_of_the_damned/templates/best-cards/index.html:22
+#: codex_of_the_damned/navigation.py:298 codex_of_the_damned/templates/best-cards/index.html:22
 msgid "Generic"
 msgstr "Générique"
 
-#: codex_of_the_damned/navigation.py:276 codex_of_the_damned/templates/best-cards/generic/master-cards.html:5
+#: codex_of_the_damned/navigation.py:300 codex_of_the_damned/templates/best-cards/generic/master-cards.html:5
 msgid "Master cards"
 msgstr "Cartes de Maître"
 
-#: codex_of_the_damned/navigation.py:277
+#: codex_of_the_damned/navigation.py:301
 msgid "Political actions"
 msgstr "Actions politiques"
 
-#: codex_of_the_damned/navigation.py:278 codex_of_the_damned/templates/best-cards/generic/no-discipline.html:5
+#: codex_of_the_damned/navigation.py:302 codex_of_the_damned/templates/best-cards/generic/no-discipline.html:5
 msgid "No discipline"
 msgstr "Sans discipline"
 
-#: codex_of_the_damned/navigation.py:279 codex_of_the_damned/templates/best-cards/generic/animalism.html:5
+#: codex_of_the_damned/navigation.py:303 codex_of_the_damned/templates/best-cards/generic/animalism.html:5
 msgid "Animalism"
 msgstr "Animalisme"
 
-#: codex_of_the_damned/navigation.py:280 codex_of_the_damned/templates/best-cards/generic/auspex.html:5
+#: codex_of_the_damned/navigation.py:304 codex_of_the_damned/templates/best-cards/generic/auspex.html:5
 msgid "Auspex"
 msgstr "Auspex"
 
-#: codex_of_the_damned/navigation.py:281 codex_of_the_damned/templates/best-cards/generic/celerity.html:5
+#: codex_of_the_damned/navigation.py:305 codex_of_the_damned/templates/best-cards/generic/celerity.html:5
 msgid "Celerity"
 msgstr "Célérité"
 
-#: codex_of_the_damned/navigation.py:282 codex_of_the_damned/templates/best-cards/generic/dominate.html:5
+#: codex_of_the_damned/navigation.py:306 codex_of_the_damned/templates/best-cards/generic/dominate.html:5
 msgid "Dominate"
 msgstr "Domination"
 
-#: codex_of_the_damned/navigation.py:283 codex_of_the_damned/templates/best-cards/generic/fortitude.html:5
+#: codex_of_the_damned/navigation.py:307 codex_of_the_damned/templates/best-cards/generic/fortitude.html:5
 msgid "Fortitude"
 msgstr "Force d’âme"
 
-#: codex_of_the_damned/navigation.py:284 codex_of_the_damned/templates/best-cards/generic/necromancy.html:5
+#: codex_of_the_damned/navigation.py:308 codex_of_the_damned/templates/best-cards/generic/necromancy.html:5
 msgid "Necromancy"
 msgstr "Nécromancie"
 
-#: codex_of_the_damned/navigation.py:285 codex_of_the_damned/templates/best-cards/generic/obfuscate.html:5
+#: codex_of_the_damned/navigation.py:309 codex_of_the_damned/templates/best-cards/generic/obfuscate.html:5
 msgid "Obfuscate"
 msgstr "Occultation"
 
-#: codex_of_the_damned/navigation.py:286 codex_of_the_damned/templates/best-cards/generic/potence.html:5
+#: codex_of_the_damned/navigation.py:310 codex_of_the_damned/templates/best-cards/generic/potence.html:5
 msgid "Potence"
 msgstr "Puissance"
 
-#: codex_of_the_damned/navigation.py:287
+#: codex_of_the_damned/navigation.py:311
 msgid "Presence"
 msgstr "Présence"
 
-#: codex_of_the_damned/navigation.py:291 codex_of_the_damned/templates/best-cards/index.html:37
+#: codex_of_the_damned/navigation.py:315 codex_of_the_damned/templates/best-cards/index.html:37
 msgid "Sects"
 msgstr "Sectes"
 
-#: codex_of_the_damned/navigation.py:293 codex_of_the_damned/templates/strategy/bloat.html:77
+#: codex_of_the_damned/navigation.py:317 codex_of_the_damned/templates/strategy/bloat.html:77
 #: codex_of_the_damned/templates/strategy/bloat.html:78 codex_of_the_damned/templates/strategy/bloat.html:99
 #: codex_of_the_damned/templates/strategy/bloat.html:100 codex_of_the_damned/templates/strategy/fundamentals.html:285
 #: codex_of_the_damned/templates/strategy/fundamentals.html:286
@@ -197,133 +221,133 @@ msgstr "Sectes"
 msgid "Anarch"
 msgstr ""
 
-#: codex_of_the_damned/navigation.py:294
+#: codex_of_the_damned/navigation.py:318
 msgid "Camarilla"
 msgstr ""
 
-#: codex_of_the_damned/navigation.py:295 codex_of_the_damned/templates/strategy/bloat.html:142
+#: codex_of_the_damned/navigation.py:319 codex_of_the_damned/templates/strategy/bloat.html:142
 #: codex_of_the_damned/templates/strategy/fundamentals.html:90 codex_of_the_damned/templates/strategy/fundamentals.html:476
 msgid "Laibon"
 msgstr ""
 
-#: codex_of_the_damned/navigation.py:296 codex_of_the_damned/templates/strategy/bloat.html:101
+#: codex_of_the_damned/navigation.py:320 codex_of_the_damned/templates/strategy/bloat.html:101
 #: codex_of_the_damned/templates/strategy/bloat.html:102 codex_of_the_damned/templates/strategy/bloat.html:258
 #: codex_of_the_damned/templates/strategy/fundamentals.html:448
 msgid "Sabbat"
 msgstr ""
 
-#: codex_of_the_damned/navigation.py:300 codex_of_the_damned/templates/best-cards/index.html:44
+#: codex_of_the_damned/navigation.py:324 codex_of_the_damned/templates/best-cards/index.html:44
 msgid "Clans"
 msgstr "Clans"
 
-#: codex_of_the_damned/navigation.py:302
+#: codex_of_the_damned/navigation.py:326
 msgid "Ahrimanes"
 msgstr ""
 
-#: codex_of_the_damned/navigation.py:303
+#: codex_of_the_damned/navigation.py:327
 msgid "Akunanse"
 msgstr ""
 
-#: codex_of_the_damned/navigation.py:304
+#: codex_of_the_damned/navigation.py:328
 msgid "Assamite"
 msgstr ""
 
-#: codex_of_the_damned/navigation.py:305
+#: codex_of_the_damned/navigation.py:329
 msgid "Baali"
 msgstr ""
 
-#: codex_of_the_damned/navigation.py:306
+#: codex_of_the_damned/navigation.py:330
 msgid "Brujah"
 msgstr ""
 
-#: codex_of_the_damned/navigation.py:307
+#: codex_of_the_damned/navigation.py:331
 msgid "Caitiff"
 msgstr ""
 
-#: codex_of_the_damned/navigation.py:308 codex_of_the_damned/templates/best-cards/clans/daughters-of-cacophony.html:6
+#: codex_of_the_damned/navigation.py:332 codex_of_the_damned/templates/best-cards/clans/daughters-of-cacophony.html:6
 msgid "Daughters of Cacophony"
 msgstr "Filles de la Cacophonie"
 
-#: codex_of_the_damned/navigation.py:309 codex_of_the_damned/templates/best-cards/clans/followers-of-set.html:6
+#: codex_of_the_damned/navigation.py:333 codex_of_the_damned/templates/best-cards/clans/followers-of-set.html:6
 msgid "Followers of Set"
 msgstr "Disciples de Seth"
 
-#: codex_of_the_damned/navigation.py:310
+#: codex_of_the_damned/navigation.py:334
 msgid "Gangrel"
 msgstr ""
 
-#: codex_of_the_damned/navigation.py:311
+#: codex_of_the_damned/navigation.py:335
 msgid "Giovanni"
 msgstr ""
 
-#: codex_of_the_damned/navigation.py:312
+#: codex_of_the_damned/navigation.py:336
 msgid "Guruhi"
 msgstr ""
 
-#: codex_of_the_damned/navigation.py:313 codex_of_the_damned/templates/best-cards/clans/harbingers-of-skulls.html:6
+#: codex_of_the_damned/navigation.py:337 codex_of_the_damned/templates/best-cards/clans/harbingers-of-skulls.html:6
 msgid "Harbingers of Skulls"
 msgstr "Émissaires des Crânes"
 
-#: codex_of_the_damned/navigation.py:314 codex_of_the_damned/templates/best-cards/clans/imbued.html:6
+#: codex_of_the_damned/navigation.py:338 codex_of_the_damned/templates/best-cards/clans/imbued.html:6
 #: codex_of_the_damned/templates/strategy/bloat.html:152 codex_of_the_damned/templates/strategy/fundamentals.html:287
 msgid "Imbued"
 msgstr "Illuminés"
 
-#: codex_of_the_damned/navigation.py:315
+#: codex_of_the_damned/navigation.py:339
 msgid "Ishtarri"
 msgstr ""
 
-#: codex_of_the_damned/navigation.py:316
+#: codex_of_the_damned/navigation.py:340
 msgid "Kiasyd"
 msgstr ""
 
-#: codex_of_the_damned/navigation.py:317
+#: codex_of_the_damned/navigation.py:341
 msgid "Lasombra"
 msgstr ""
 
-#: codex_of_the_damned/navigation.py:318 codex_of_the_damned/templates/best-cards/clans/malkavian.html:6
+#: codex_of_the_damned/navigation.py:342 codex_of_the_damned/templates/best-cards/clans/malkavian.html:6
 #: codex_of_the_damned/templates/strategy/articles/basic/blood-pool-and-grinding-beads.html:57
 msgid "Malkavian"
 msgstr "Malkavien"
 
-#: codex_of_the_damned/navigation.py:319
+#: codex_of_the_damned/navigation.py:343
 msgid "Nosferatu"
 msgstr ""
 
-#: codex_of_the_damned/navigation.py:320
+#: codex_of_the_damned/navigation.py:344
 msgid "Ravnos"
 msgstr ""
 
-#: codex_of_the_damned/navigation.py:321
+#: codex_of_the_damned/navigation.py:345
 msgid "Salubri"
 msgstr ""
 
-#: codex_of_the_damned/navigation.py:322 codex_of_the_damned/templates/best-cards/clans/toreador.html:6
+#: codex_of_the_damned/navigation.py:346 codex_of_the_damned/templates/best-cards/clans/toreador.html:6
 msgid "Toreador"
 msgstr "Toréador"
 
-#: codex_of_the_damned/navigation.py:323
+#: codex_of_the_damned/navigation.py:347
 #: codex_of_the_damned/templates/strategy/articles/basic/blood-pool-and-grinding-beads.html:72
 msgid "Tremere"
 msgstr ""
 
-#: codex_of_the_damned/navigation.py:324 codex_of_the_damned/templates/best-cards/clans/true-brujah.html:6
+#: codex_of_the_damned/navigation.py:348 codex_of_the_damned/templates/best-cards/clans/true-brujah.html:6
 msgid "True Brujah"
 msgstr "Brujah Véritables"
 
-#: codex_of_the_damned/navigation.py:325
+#: codex_of_the_damned/navigation.py:349
 msgid "Tzimisce"
 msgstr ""
 
-#: codex_of_the_damned/navigation.py:326
+#: codex_of_the_damned/navigation.py:350
 msgid "Ventrue"
 msgstr ""
 
-#: codex_of_the_damned/navigation.py:331
+#: codex_of_the_damned/navigation.py:355
 msgid "Deck Search"
 msgstr "Recherche Deck"
 
-#: codex_of_the_damned/navigation.py:332
+#: codex_of_the_damned/navigation.py:356
 msgid "Card Search"
 msgstr "Recherche Carte"
 
@@ -521,55 +545,55 @@ msgstr "Outils en ligne"
 msgid "Tournament organiser"
 msgstr "Gestionnaire de tournois"
 
-#: codex_of_the_damned/templates/index.html:89 codex_of_the_damned/templates/index.html:90
+#: codex_of_the_damned/templates/index.html:93 codex_of_the_damned/templates/index.html:94
 msgid "Online play"
 msgstr "Jeu en ligne"
 
-#: codex_of_the_damned/templates/index.html:91
+#: codex_of_the_damned/templates/index.html:95
 msgid "Tabletop Simulator plugin"
 msgstr "Plugin Tabletop Simulator"
 
-#: codex_of_the_damned/templates/index.html:94
+#: codex_of_the_damned/templates/index.html:98
 msgid "Blogs & videos"
 msgstr "Blogs & vidéos"
 
-#: codex_of_the_damned/templates/index.html:111
+#: codex_of_the_damned/templates/index.html:115
 msgid "Team Covenant's Tutorial"
 msgstr "Tutoriel de la Team Covenant"
 
-#: codex_of_the_damned/templates/index.html:117
+#: codex_of_the_damned/templates/index.html:121
 msgid "VTES on LackeyCCG Tutorial"
 msgstr "Tutoriel VTES sur LackeyCCG"
 
-#: codex_of_the_damned/templates/index.html:135
+#: codex_of_the_damned/templates/index.html:139
 msgid "interviews archive"
 msgstr "archive d'interviews"
 
-#: codex_of_the_damned/templates/index.html:139
+#: codex_of_the_damned/templates/index.html:143
 msgid "Live streams"
 msgstr "Streams en direct"
 
-#: codex_of_the_damned/templates/index.html:172
+#: codex_of_the_damned/templates/index.html:176
 msgid "Developer tools"
 msgstr "Outils pour développeurs"
 
-#: codex_of_the_damned/templates/index.html:175
+#: codex_of_the_damned/templates/index.html:179
 msgid "Static resources"
 msgstr "Ressources statiques"
 
-#: codex_of_the_damned/templates/index.html:177
+#: codex_of_the_damned/templates/index.html:181
 msgid "Discord bots"
 msgstr "Bots Discord"
 
-#: codex_of_the_damned/templates/index.html:180
+#: codex_of_the_damned/templates/index.html:184
 msgid "Cards lookup"
 msgstr "Recherche de carte"
 
-#: codex_of_the_damned/templates/index.html:181
+#: codex_of_the_damned/templates/index.html:185
 msgid "Tournament management"
 msgstr "Gestion de tournoi"
 
-#: codex_of_the_damned/templates/index.html:188
+#: codex_of_the_damned/templates/index.html:192
 msgid ""
 "Portions of the materials are the copyrights and trademarks of Paradox Interactive AB, and are used with "
 "permission.<br>All rights reserved. For more information please visit"
@@ -875,9 +899,9 @@ msgstr ""
 "%(deflection)s. </p> <p> Le module de combat utilise %(for)s pour la prévention de dégâts et "
 "%(weighted_walking_stick)s pour en infliger plus. </p> <p> Les deck est plutôt lent, utilisant une stratégie "
 "d'%(grinding)s pour réduire les réserves de sang et d'influence de ses adversaires durant la partie jusqu'à pouvoir "
-"finalement se fendre pour éliminer sa proie. </p> <h2>Trucs & Astuces</h2> <p> %(daring_the_dawn)s est conservé pour "
-"le coup de grâce. </p> <p> Le deck n'a pas beaucoup de discrétion, donc il utilise quelques techniques de "
-"<em>powerbleed</em>, comme %(pentex_subversion)s et %(anarch_troublemaker)s. </p> <h2>Variantes</h2> <p> Il y a "
+"finalement donner le coup de grâce éliminer sa proie. </p> <h2>Trucs & Astuces</h2> <p> %(daring_the_dawn)s est "
+"conservé pour le coup de grâce. </p> <p> Le deck n'a pas beaucoup de discrétion, donc il utilise quelques techniques "
+"de <em>powerbleed</em>, comme %(pentex_subversion)s et %(anarch_troublemaker)s. </p> <h2>Variantes</h2> <p> Il y a "
 "beaucoup de variantes mineures pour cet archétype : <li> %(the_coven)s est rarement inclus : le deck est supposé "
 "réduire la quantité de sang à la table, donc donner à des adversaires la possibilité d'en récupérer est un peu tordu."
 " %(the_rack)s est plus souvent présent. </li> <li> %(the_kiss_of_ra)s, %(misdirection)s et %(seduction)s peuvent être"
@@ -1634,11 +1658,30 @@ msgstr ""
 "depuis 2008 sont pris en compte, à l'exception de quelques designs originaux pour référence stratégique. Les decklist"
 " d'exemple sont les plus récentes, ou celles ayant gagné un Championnat Continental. </p>"
 
-#: codex_of_the_damned/templates/archetypes/index.html:247
+#: codex_of_the_damned/templates/archetypes/index.html:246
+msgid "V:TES Discord"
+msgstr "Discord V:TES"
+
+#: codex_of_the_damned/templates/archetypes/index.html:246
+#, python-format
+msgid ""
+"<h2>Neonate Archetypes (BCP print only)</h2> <p> These archetypes are built using only cards that are currently in "
+"print by BCP. It is a growing project contributed to by seasoned players - reach out on the %(vtes_discord)s for "
+"feedback or additional ideas. </p> <p> All decks included are built to be tournament worthy. They include variations "
+"and options ideas. Approaching these builds is often easily done with only a few bundle packs for cheaper versions. "
+"</p>"
+msgstr ""
+"<h2>Archetypes Neonates (cartes BCP uniquement)</h2> <p> Ces archétypes sont construits en n'utilisant que des cartes"
+" imprimées par BCP. Il s'agit d'un projet en évolution auquel des joueurs vétérans contribuent - contactez-nous sur "
+"le %(vtes_discord)s pour tout retour ou idée supplémentaire. </p> <p> Tous les decks présentés ici ont leur place en "
+"tournoi. Ils incluent des variantes et des options. Il est souvent facile de s'approcher de ces listes avec juste "
+"quelques paquets, pour des versions plus abordables. </p>"
+
+#: codex_of_the_damned/templates/archetypes/index.html:339
 msgid "French VEKN Forum"
 msgstr "Forum VEKN France"
 
-#: codex_of_the_damned/templates/archetypes/index.html:246
+#: codex_of_the_damned/templates/archetypes/index.html:338
 #, python-format
 msgid ""
 "<h2>Bibliodèque</h2> <p> The « Bibliodèque » is a French project made of more than a hundred decklists based on "
@@ -2022,7 +2065,9 @@ msgstr ""
 "avec %(heidelberg_castle_germany)s, ou même le détruire pour de l'influence avec %(golconda_inner_peace)s, à "
 "condition d'avoir une deuxième action de Maître grâce à %(cybele)s ou %(the_parthenon)s. </p>"
 
-#: codex_of_the_damned/templates/archetypes/lutz-politics.html:38 codex_of_the_damned/templates/archetypes/tupdogs.html:39
+#: codex_of_the_damned/templates/archetypes/lutz-politics.html:38
+#: codex_of_the_damned/templates/archetypes/neonate/the-capuchin.html:57
+#: codex_of_the_damned/templates/archetypes/tupdogs.html:39
 msgid "Danilo Torrisi's deck"
 msgstr "deck de Danilo Torrisi"
 
@@ -2593,15 +2638,15 @@ msgstr ""
 "réveils et des rebonds avec %(eyes_of_argus)s, %(telepathic_misdirection)s et %(my_enemy_s_enemy)s </p> <p> %(THA)s "
 "et %(OBE)s sont utilisés pour le combat, avec %(anesthetic_touch)s et %(theft_of_vitae)s, ce qui constitue un joli "
 "module \"fight-or-flight\". </p> <p> Le deck peut broyer lentement toute la table et utiliser %(enkil_cog)s et "
-"%(codex_of_the_edenic_groundskeepers)s pour fendre et détruire ses proies successives. </p> <h2> Trucs & Astuces "
-"</h2> <p> %(magic_of_the_smith)s est utilisé pour récupérer d'excellents équipements, en fonction du contexte de la "
-"table. %(heart_of_nizchetus)s est le choix par défaut. </p> <p> %(renewed_vigor)s se combine parfaitement avec "
-"l'aptitude de %(saulot_the_wanderer)s, si un antitribu Tremere %(tremere_antitribu)s peut utiliser %(infernal_pact)s "
-"pour le jouer. </p> <p> %(rutor_s_hand)s est un bon moyen d'améliorer l'%(a_b)s, à condition de pouvoir payer le "
-"sang. </p> <h2> Variantes </h2> <p> La variante <strong> Eurayle </strong> utilise %(eurayle_gelasia_mylonas)s comme "
-"star Salubri, comme dans le %(yannick_gibert_s_deck)s de 2010. </p> <p> Une %(older_version_from_tomasz_kowalewski)s,"
-" en 2008, n'utilise même pas les Tremere antitribu %(tremere_antitribu)s et leur %(infernal_pact)s, mais des vampires"
-" %(AUS)s de faible capacité à la place. </p>"
+"%(codex_of_the_edenic_groundskeepers)s pour donner le coup de grâce et détruire ses proies successives. </p> <h2> "
+"Trucs & Astuces </h2> <p> %(magic_of_the_smith)s est utilisé pour récupérer d'excellents équipements, en fonction du "
+"contexte de la table. %(heart_of_nizchetus)s est le choix par défaut. </p> <p> %(renewed_vigor)s se combine "
+"parfaitement avec l'aptitude de %(saulot_the_wanderer)s, si un antitribu Tremere %(tremere_antitribu)s peut utiliser "
+"%(infernal_pact)s pour le jouer. </p> <p> %(rutor_s_hand)s est un bon moyen d'améliorer l'%(a_b)s, à condition de "
+"pouvoir payer le sang. </p> <h2> Variantes </h2> <p> La variante <strong> Eurayle </strong> utilise "
+"%(eurayle_gelasia_mylonas)s comme star Salubri, comme dans le %(yannick_gibert_s_deck)s de 2010. </p> <p> Une "
+"%(older_version_from_tomasz_kowalewski)s, en 2008, n'utilise même pas les Tremere antitribu %(tremere_antitribu)s et "
+"leur %(infernal_pact)s, mais des vampires %(AUS)s de faible capacité à la place. </p>"
 
 #: codex_of_the_damned/templates/archetypes/spirit-marionette.html:32
 msgid "Yannick Gibert's deck"
@@ -3420,6 +3465,10 @@ msgstr ""
 "actuellement la seule version de tournoi de ce deck.</p>"
 
 #: codex_of_the_damned/templates/archetypes/bibliodeque/anson-grooming.html:23
+#: codex_of_the_damned/templates/archetypes/neonate/lasombra-nocturn.html:49
+#: codex_of_the_damned/templates/archetypes/neonate/lutz-vote.html:47
+#: codex_of_the_damned/templates/archetypes/neonate/malkavian-dementation.html:29
+#: codex_of_the_damned/templates/archetypes/neonate/the-unnamed.html:53
 #: codex_of_the_damned/templates/strategy/combat.html:19
 #, 
 msgid "bloat"
@@ -3483,6 +3532,1467 @@ msgstr "Actions politiques"
 #: codex_of_the_damned/templates/archetypes/bibliodeque/weenie-vic.html:17
 msgid "<h2>Highlights</h2> <p> </p> <h2>Tips & Tricks</h2> <p> </p> <h2>Tournament Version</h2> <p> </p>"
 msgstr "<h2>Principe</h2> <p> </p> <h2>Trucs & Astuces</h2> <p> </p> <h2>Version de tournoi</h2> <p> </p>"
+
+#: codex_of_the_damned/templates/archetypes/neonate/harbinger-legionnaires.html:15
+#, python-format
+msgid ""
+"<h2>Highlights</h2> <p> This is an <em>allies toolbox</em> deck relying on %(emerald_legionnaire)s. </p> <p> Hoping "
+"to get %(khurshid)s out fast as a first vampire, the deck relies on its strong combat ability coupled with %(AUS)s "
+"for blocks. The plan is to get another Harbinger %(harbinger_of_skulls)s out, then %(anu_diptinatpa)s later in the "
+"game. All the while, using %(liquidation)s for bloat and aiming to recruit an %(emerald_legionnaire)s to bring back "
+"the others from the ash heap. </p> <p> The deck builds up slowly and steadily. Once an %(emerald_legionnaire)s is "
+"out, he should be protected so he can bring back his mates from the ash heap on the next unlock phase. A few "
+"%(vengeful_spirit)s can be stacked on the Harbinger vampires to augment the bleed power, %(the_unmasking)s and "
+"%(anu_diptinatpa)s both improve the %(emerald_legionnaire)s capacities. </p> <p> The deck originality is in the "
+"inclusion of %(gear_up)s, an excellent card when you got your ash heap full of cards and possibilities early thans to"
+" %(liquidation)s. It also includes very specific counters and meta-related cards, like %(soul_feasting)s against "
+"other %(emerald_legionnaire)s builds or to remove one that was stolen, %(trochomancy)s against decks that use their "
+"ash heap with %(emerald_legionnaire)s or %(ashur_tablets)s, and %(direct_intervention)s against %(entrancement)s or "
+"%(anarchist_uprising)s and similar votes. </p> <h2>Tweaks and variants</h2> <p> The deck originates from the "
+"%(emerald_legion)s archetype, but is mostly a tweak of Antti Penttilä's %(khurshid_dream_team)s. As can be seen in "
+"the original list, a few non-BCP cards could be useful inclusions, like %(erebus_mask)s and %(my_enemys_enemy)s. </p>"
+" <p> Other small tweaks can be considered: adding more %(dreams_of_the_sphinx)s, if you're not concerned about too "
+"many contests, is a great way to cycle cards and fill your ash heap faster. The %(heart_of_nizchetus)s is also worth "
+"consideration. Finally, the crypt can also be changed a bit: doubling either %(anu_diptinatpa)s for bleed improvement"
+" or %(angelique)s for blood economy makes sense. </p> <h2>What to buy</h2> <p> Necromancy %(nec)s cards are available"
+" on %(print_on_demand)s, and the Harbinger %(harbinger_of_skulls)s cards come from the %(lost_kindred)s set. Most of "
+"the other cards come from %(httb_a)s and %(anthology)s. The last few cards can be found from diverse sets, like "
+"%(V5)s or %(sabbat_precons)s decks, or replaced if you don't have them. %(funeral_wake)s was included in the "
+"Kickstarter bundle %(the_unaligned)s. </p>"
+msgstr ""
+"<h2>Principe</h2> <p> C'est une <em>toolbox alliés</em> qui s'appuie sur %(emerald_legionnaire)s. </p> <p> En sortant"
+" idéalement %(khurshid)s rapidement comme premier vampire, le deck s'appuie sur sa forte capacité de combat couplée à"
+" %(AUS)s pour les blocs. Le plan est de sortir un autre Harbinger %(harbinger_of_skulls)s, puis %(anu_diptinatpa)s "
+"plus tard dans la partie. Pendant ce temps, il utilise %(liquidation)s pour la régénération et vise à recruter un "
+"%(emerald_legionnaire)s pour ramener les autres du tas de cendres. </p> <p> Le deck se met en place lentement et "
+"régulièrement. Une fois qu'un %(emerald_legionnaire)s est sorti, il doit être protégé afin qu'il puisse ramener ses "
+"compagnons du tas de cendres lors de la prochaine phase de redressement. Quelques %(vengeful_spirit)s peuvent être "
+"posés sur les vampires Harbinger pour augmenter la puissance de morsure, %(the_unmasking)s et %(anu_diptinatpa)s "
+"améliorent tous les deux les capacités de %(emerald_legionnaire)s. </p> <p> L'originalité du deck réside dans "
+"l'inclusion de %(gear_up)s, une excellente carte lorsque vous avez rempli votre tas de cendres de cartes et de "
+"possibilités plus tôt grâce à %(liquidation)s. Il comprend également des contres spécifiques liés aux méta, comme "
+"%(soul_feasting)s contre d'autres versions %(emerald_legionnaire)s ou pour en supprimer une qui a été volée, "
+"%(trochomancy)s contre les decks qui utilisent leur tas de cendres avec %(emerald_legionnaire)s ou %(ashur_tablets)s,"
+" et %(direct_intervention)s contre %(entrancement)s ou %(anarchist_uprising)s et les votes similaires. </p> "
+"<h2>Ajustements et variantes</h2> <p> Le deck provient de l'archétype %(emerald_legion)s, mais est principalement une"
+" variante du %(khurshid_dream_team)s d'Antti Penttilä. Comme on peut le voir dans la liste originale, quelques cartes"
+" non BCP pourraient être des inclusions utiles, comme %(erebus_mask)s et %(my_enemys_enemy)s. </p> <p> D'autres "
+"petits ajustements peuvent être envisagés : ajouter plus de %(dreams_of_the_sphinx)s, si vous ne craignez pas de trop"
+" de disputer la carte, est un excellent moyen de cycler les cartes et de remplir votre tas de cendres plus "
+"rapidement. Le %(heart_of_nizchetus)s mérite également d'être pris en considération. Enfin, la crypte peut aussi être"
+" légèrement modifiée : doubler soit %(anu_diptinatpa)s pour l'amélioration des morsures, soit %(angelique)s pour "
+"économiser du sang a du sens. </p> <h2>Quoi acheter</h2> <p> Les cartes Nécromancie %(nec)s sont disponibles à "
+"%(print_on_demand)s, et les cartes Harbinger %(harbinger_of_skulls)s proviennent de l'extension %(lost_kindred)s. La "
+"plupart des autres cartes proviennent de %(httb_a)s et %(anthology)s. Les dernières cartes peuvent être trouvées dans"
+" divers paquets, comme les decks %(V5)s ou les %(sabbat_precons)s, ou remplacées si vous ne les avez pas. "
+"%(funeral_wake)s a été distribué dans le bundle Kickstarter %(the_unaligned)s. </p>"
+
+#: codex_of_the_damned/templates/archetypes/neonate/harbinger-legionnaires.html:38
+#: codex_of_the_damned/templates/archetypes/neonate/lasombra-nocturn.html:52
+#: codex_of_the_damned/templates/archetypes/neonate/lutz-vote.html:51
+#: codex_of_the_damned/templates/archetypes/neonate/nephandus.html:46
+#: codex_of_the_damned/templates/archetypes/neonate/nosferatu-primogens.html:46
+#: codex_of_the_damned/templates/archetypes/neonate/ravnos-clown-car.html:48
+#: codex_of_the_damned/templates/archetypes/neonate/the-unnamed.html:63
+#: codex_of_the_damned/templates/archetypes/neonate/tremere-wall.html:45
+#: codex_of_the_damned/templates/archetypes/neonate/tzimisce-toolbox.html:54
+msgid "Print on Demand"
+msgstr "l'impression sur demande"
+
+#: codex_of_the_damned/templates/archetypes/neonate/harbinger-legionnaires.html:39
+#: codex_of_the_damned/templates/archetypes/neonate/samedi-rush.html:32
+msgid "Lost Kindred"
+msgstr "Lost Kindred"
+
+#: codex_of_the_damned/templates/archetypes/neonate/harbinger-legionnaires.html:40
+#: codex_of_the_damned/templates/archetypes/neonate/samedi-rush.html:31
+#: codex_of_the_damned/templates/archetypes/neonate/the-unnamed.html:59
+msgid "Heirs to the Blood 1"
+msgstr "Heirs to the Blood 1"
+
+#: codex_of_the_damned/templates/archetypes/neonate/harbinger-legionnaires.html:41
+#: codex_of_the_damned/templates/archetypes/neonate/lasombra-nocturn.html:55
+#: codex_of_the_damned/templates/archetypes/neonate/malkavian-dominate.html:44
+#: codex_of_the_damned/templates/archetypes/neonate/nephandus.html:44
+#: codex_of_the_damned/templates/archetypes/neonate/nosferatu-primogens.html:44
+#: codex_of_the_damned/templates/archetypes/neonate/ravnos-clown-car.html:44
+#: codex_of_the_damned/templates/archetypes/neonate/the-capuchin.html:55
+#: codex_of_the_damned/templates/archetypes/neonate/the-unnamed.html:52
+#: codex_of_the_damned/templates/archetypes/neonate/ventrue-lawfirm.html:47
+msgid "Anthology 1"
+msgstr "Anthology 1"
+
+#: codex_of_the_damned/templates/archetypes/neonate/harbinger-legionnaires.html:42
+msgid "The Unaligned"
+msgstr "The Unaligned"
+
+#: codex_of_the_damned/templates/archetypes/neonate/harbinger-legionnaires.html:43
+msgid "V5"
+msgstr "V5"
+
+#: codex_of_the_damned/templates/archetypes/neonate/harbinger-legionnaires.html:44
+#: codex_of_the_damned/templates/archetypes/neonate/malkavian-dementation.html:34
+#: codex_of_the_damned/templates/archetypes/neonate/malkavian-dominate.html:40
+msgid "Sabbat Precons"
+msgstr "Préconstruits Sabbat"
+
+#: codex_of_the_damned/templates/archetypes/neonate/hidden-royalty.html:14
+#, python-format
+msgid ""
+"<h2>Highlights</h2> <p> This is an <em>vote</em> deck relying on <em>Princes</em> with %(obf)s. </p> <p> There are "
+"multiple ways to approach this build given the variety of good <em>Princes</em> in the %(v5_precons)s. This example "
+"focuses on getting a bit of %(dom)s in the mix alongside %(pre)s, to give access to great cards like "
+"%(govern_the_unaligned)s for faster setup and %(deflection)s for defence. </p> <p> The plan is to get "
+"<em>Princes</em> in play fast with %(information_highway)s and %(govern_the_unaligned)s for the vote lock, then use "
+"%(parity_shift)s to bloat and %(kine_resources_contested)s for additional damage. %(obf)s provides a welcome support "
+"with stealth modifiers to ensure the votes do not get blocked easily. </p> <p> %(pre)s provides useful vote-oriented "
+"support like %(perfect_paragon)s and %(voter_captivation)s, while %(dom)s gives access to a bit of bleed to "
+"complement the votes if necessary, with %(conditioning)s and %(foreshadowing_destruction)s. </p> <p> A few Master "
+"cards help with the vote lock: %(elysium_the_palace_of_versailles)s and %(ventrue_headquarters)s, but also "
+"%(fear_of_mekhet)s, an excellent card to get rid of a cumbersome <em>Inner Circle</em> or <em>Justicar</em>. </p> "
+"<h2>Tweaks and variants</h2> <p> This specific build includes neither combat defense not intercept, like %(majesty)s "
+"or %(second_tradition_domain)s. Depending on the %(meta)s you expect, both are options to consider. Although not yet "
+"reprinted, %(forgotten_labyrinth)s is an excellent fit. </p> <p> An interesting variant, if you have access to legacy"
+" cards, is to use some %(reckless_agitation)s for more damage. %(arishat)s can play it and, since her ability is "
+"already great, you will want to triple her. At her side, a pair of <em>Barons</em> to help, like %(jacques_rouge)s "
+"and either another Nosferatu %(nosferatu)s, or a Ministry %(ministry)s. Going this way means the vampires will need "
+"their blood, so less %(villein)s. More importantly, the crypt loses %(dom)s so the bleed defence with %(deflection)s "
+"goes out, and needs to be compensated with more %(parity_shift)s. Bram Van Stappen's deck "
+"%(infernal_princes_of_anarchy)s, played by Emiliano Imeroni, won the 2021 Belgian National Tournament using this kind"
+" of variation, with the adjunction of %(ashur_tablets)s. </p> <h2>What to buy</h2> <p> Most of the cards are from "
+"%(v5_precons)s, Malkavian %(malkavian)s, Ventrue %(ventrue)s and Toreador %(toreador)s, plus %(fb_malkavian)s for "
+"stealth cards %(elder_impersonation)s and %(veil_the_legions)s, and the %(anniversary)s for a few cards. The rest of "
+"the deck might be adapted to fit what you have available. The crypt is especially tricky to compose, with vampires "
+"from many different bundles, so don't hesitate to trade for them. Finally, the trickiest part might be to come up "
+"with enough %(information_highway)s for the deck: alternatively, you can try only 4 and reduce the cards count under "
+"70. </p>"
+msgstr ""
+"<h2>Principe</h2> <p> C'est un deck de <em>vote</em> reposant sur des <em>Princes</em> avec %(obf)s. </p> <p> Il y a "
+"plusieurs façons d'aborder cette construction étant donné la variété de bons <em>Princes</em> dans les "
+"%(v5_precons)s. Cet exemple se concentre sur l'obtention d'un peu de %(dom)s dans le mix avec %(pre)s, pour donner "
+"accès à d'excellentes cartes comme %(govern_the_unaligned)s pour une installation plus rapide et %(deflection)s pour "
+"la défense. </p> <p> Le plan est de sortir des <em>Princes</em> rapidement avec %(information_highway)s et "
+"%(govern_the_unaligned)s pour verrouiller les votes, puis utiliser %(parity_shift)s pour régénérer et "
+"%(kine_resources_contested)s pour des dégâts supplémentaires . %(obf)s fournit un support bienvenu avec des "
+"modificateurs de discrétion pour s'assurer que les votes ne sont pas bloqués facilement. </p> <p> %(pre)s fournit un "
+"support orienté vote comme %(perfect_paragon)s et %(voter_captivation)s, tandis que %(dom)s donne accès à un peu de "
+"morsure pour compléter les votes si nécessaire, avec %(conditioning)s et %(foreshadowing_destruction)s. </p> <p> "
+"Quelques cartes Maître aident au verrouillage du vote : %(elysium_the_palace_of_versailles)s et "
+"%(ventrue_headquarters)s, mais aussi %(fear_of_mekhet)s, une excellente carte pour se débarrasser d'un <em>Cercle "
+"Intérieur</em> ou <em>Justicar</em> encombrant. </p> <h2>Ajustements et variantes</h2> <p> Cette version spécifique "
+"n'inclut ni défense de combat ni interception, comme %(majesty)s ou %(second_tradition_domain)s. Selon le %(meta)s "
+"que vous attendez, les deux sont des options à considérer. Bien qu'il n'ait pas encore été réimprimé, "
+"%(forgotten_labyrinth)s convient parfaitement. </p> <p> Une variante intéressante, si vous avez accès aux anciennes "
+"cartes, consiste à utiliser %(reckless_agitation)s pour plus de dégâts. %(arishat)s peut le jouer et, comme son "
+"aptitude est déjà excellente, vous voudrez la tripler. À ses côtés, une paire de <em>Barons</em> pour l'aider, comme "
+"%(jacques_rouge)s et soit un autre Nosferatu %(nosferatu)s, soit un Ministry %(ministry)s. Dans cette variante les "
+"vampires auront besoin de leur sang, donc moins de %(villein)s. Plus important encore, la crypte perd %(dom)s donc la"
+" défense de morsure avec %(deflection)s disparaît, et doit être compensée avec plus de %(parity_shift)s. Le deck "
+"%(infernal_princes_of_anarchy)s de Bram Van Stappen, joué par Emiliano Imeroni, a remporté le Tournoi National de "
+"Belgique 2021 en utilisant ce genre de variante, avec l'ajout de %(ashur_tablets)s. </p> <h2>Quoi acheter</h2> <p> La"
+" plupart des cartes proviennent des %(v5_precons)s, Malkavian %(malkavian)s, Ventrue %(ventrue)s et Toreador "
+"%(toreador)s, plus %(fb_malkavian)s pour les cartes de discrétion %(elder_impersonation)s et %(veil_the_legions)s, et"
+" le %(anniversary)s pour quelques cartes. Le reste du deck peut être adapté pour s'adapter à ce dont vous disposez. "
+"La crypte est particulièrement délicate à composer, avec des vampires de nombreux paquets différents, alors n'hésitez"
+" pas à les échanger. Enfin, la partie la plus délicate pourrait être de trouver suffisamment de "
+"%(information_highway)s pour le deck : alternativement, vous pouvez n'en essayer que 4 et réduire le nombre de cartes"
+" à moins de 70. </p>"
+
+#: codex_of_the_damned/templates/archetypes/neonate/hidden-royalty.html:37
+#: codex_of_the_damned/templates/archetypes/neonate/lasombra-nocturn.html:51
+#: codex_of_the_damned/templates/archetypes/neonate/lutz-vote.html:50
+#: codex_of_the_damned/templates/archetypes/neonate/malkavian-dominate.html:36
+#: codex_of_the_damned/templates/archetypes/neonate/nosferatu-primogens.html:38
+#: codex_of_the_damned/templates/archetypes/neonate/stanislava.html:38
+#: codex_of_the_damned/templates/archetypes/neonate/the-capuchin.html:67
+#: codex_of_the_damned/templates/archetypes/neonate/tremere-grinder.html:63
+#: codex_of_the_damned/templates/archetypes/neonate/tremere-wall.html:42
+#: codex_of_the_damned/templates/archetypes/neonate/tzimisce-toolbox.html:51
+#: codex_of_the_damned/templates/archetypes/neonate/ventrue-grinder.html:48
+#: codex_of_the_damned/templates/archetypes/neonate/ventrue-lawfirm.html:50
+msgid "meta"
+msgstr "meta"
+
+#: codex_of_the_damned/templates/archetypes/neonate/hidden-royalty.html:39
+msgid "V5 Precons"
+msgstr "Préconstruits V5"
+
+#: codex_of_the_damned/templates/archetypes/neonate/hidden-royalty.html:40
+#: codex_of_the_damned/templates/archetypes/neonate/lutz-vote.html:43
+#: codex_of_the_damned/templates/archetypes/neonate/malkavian-dementation.html:32
+#: codex_of_the_damned/templates/archetypes/neonate/malkavian-dominate.html:38
+#: codex_of_the_damned/templates/archetypes/neonate/the-unnamed.html:56
+#: codex_of_the_damned/templates/strategy/index.html:46
+msgid "First Blood: Malkavian"
+msgstr "Premier Sang : Malkavien"
+
+#: codex_of_the_damned/templates/archetypes/neonate/hidden-royalty.html:41
+#: codex_of_the_damned/templates/archetypes/neonate/lasombra-nocturn.html:53
+#: codex_of_the_damned/templates/archetypes/neonate/lutz-vote.html:52
+#: codex_of_the_damned/templates/archetypes/neonate/malkavian-dementation.html:35
+#: codex_of_the_damned/templates/archetypes/neonate/malkavian-dominate.html:41
+#: codex_of_the_damned/templates/archetypes/neonate/ravnos-clown-car.html:43
+#: codex_of_the_damned/templates/archetypes/neonate/stanislava.html:39
+#: codex_of_the_damned/templates/archetypes/neonate/the-capuchin.html:68
+#: codex_of_the_damned/templates/archetypes/neonate/the-unnamed.html:51
+#: codex_of_the_damned/templates/archetypes/neonate/tremere-wall.html:38
+#: codex_of_the_damned/templates/archetypes/neonate/tzimisce-toolbox.html:44
+#: codex_of_the_damned/templates/archetypes/neonate/ventrue-grinder.html:39
+#: codex_of_the_damned/templates/archetypes/neonate/ventrue-lawfirm.html:55
+msgid "25th Anniversary"
+msgstr "25ème Anniversaire"
+
+#: codex_of_the_damned/templates/archetypes/neonate/lasombra-nocturn.html:15
+#, python-format
+msgid ""
+"<h2>Highlights</h2> <p> This is a <em>stealth & bleed</em> deck of the Lasombra %(lasombra)s clan, using the "
+"%(DOM)s%(OBT)s disciplines. It uses %(govern_the_unaligned)s to get vampires out faster and cheaper in the beginning."
+" When enough minions are into play, it switches to strong bleed actions using %(OBT)s for stealth. %(nocturn)s are "
+"used to protect its vampires from agression, but also to deliver more bleed in a single turn. </p> <p> The key is the"
+" balance between stealth and bleed amount: not enough stealth and the actions do not get through, too much and the "
+"hand will jam on it. Cunning opponents will be able to position themselves depending on their deck: if they have "
+"enough intercept, they will try to block every action to exhaust the stealth, while if they have no intercept they "
+"will avoid blocking to jam the hand on stealth. The deck includes some cycling devices like %(dreams_of_the_sphinx)s "
+"and %(the_barrens)s to avoid this. </p> <p> %(seduction)s is great block denial, since it can either disable a high-"
+"intercept star blocker, or be cycled on just any action if not needed. %(shadow_play)s is the core modifier here, "
+"with %(shroud_of_absence)s and %(shroud_of_night)s as useful additional stealth that costs no blood. "
+"%(tenebrous_form)s is great against allies, preventing them to block since they have no blood to pay. Depending on "
+"the %(meta)s, proportions can be adjusted and %(blanket_of_night)s can be added for more denial. </p> <p> With "
+"%(OBT)s on top of %(govern_the_unaligned)s and %(conditioning)s, the vampires consume blood fast. This means "
+"%(badr_shadow_of_granada)s and %(the_path_of_night)s are very useful since they spare a bit of blood. On top of that,"
+" the deck includes various ways of regenerating blood, like %(jake_washington)s – who can also block a dangerous rush"
+" action – %(the_coven)s, which also hinders rush and grinder decks overall, and of course %(giants_blood)s. Hunting "
+"is not always possible: in case the predator has intercept, they will jump on this undirected action to disable a "
+"vampire if they can. </p> <p> %(deflection)s and %(delaying_tactics)s defend against bleed and votes, and the deck "
+"uses only a few %(shadow_body)s for additional combat defense, but also as a deterrent against a predator blocking "
+"%(nocturn)s recruitements: this is the only undirected action they can block if they have the means so you might want"
+" to avoid losing stealth on that. As a conclusion, %(sudden_reversal)s is there to disable %(bloat)s Master cards "
+"like %(villein)s or %(liquidation)s on your prey, or permanent intercept like %(krcg_news_radio)s. </p> <h2>Tweaks "
+"and variants</h2> <p> %(the_unmasking)s is a common inclusion in this build, but it is not mandatory. The number of "
+"%(nocturn)s can vary widely: in case of a combat-heavy meta, playing 12 or more is not unheard of. "
+"%(zaire_river_ferry)s is another interesting option, since it provides both stealth and rush protection. Other "
+"equipments like %(heart_of_nizchetus)s and %(the_signet_of_king_saul)s can find their place here, as well as a "
+"%(political_hunting_ground)s. Finally, if you have access to legacy cards, %(the_admonitions)s is a good addition or "
+"replacement for %(the_barrens)s. </p> <p> The %(main_article)s about the archetype presents additional variants. </p>"
+" <h2>What to buy</h2> <p> The bulk of the cards come from %(print_on_demand)s, the %(anniversary)s and the "
+"%(parliament_of_shadows)s. %(badr_shadow_of_granada)s is tricky to find in enough copies, but there's one in "
+"%(anthology)s and they were 2 in the <em>Danse Macabre</em> %(kickstarter)s bundle, and you can replace him with "
+"other vampires from the %(parliament_of_shadows)s or include some %(anarch_convert)s for crypt management. "
+"%(delaying_tactics)s and %(sudden_reversal)s need to be sourced from other bundles or traded for. </p> <p> If you "
+"have access to legacy cards, %(dame_hollerton)s is a great vampire here and would be a great replacement for "
+"%(leila_monroe)s. </p>"
+msgstr ""
+"<h2>Principe</h2> <p> Il s'agit d'un deck <em>stealth & bleed</em> du clan Lasombra %(lasombra)s, utilisant les "
+"disciplines %(DOM)s%(OBT)s. Il utilise %(govern_the_unaligned)s pour sortir les vampires plus rapidement et "
+"économiquement au début. Lorsque suffisamment de serviteurs sont en jeu, il passe à des actions de morsure puissantes"
+" en utilisant %(OBT)s pour la discrétion. %(nocturn)s sont utilisés pour protéger ses vampires de l'agression, mais "
+"aussi pour délivrer plus de morsures en un seul tour. </p> <p> La clé est l'équilibre entre la discrétion et la "
+"quantité de morsure : pas assez de discrétion et les actions ne passent pas, trop et la main se coincera dessus. Les "
+"adversaires rusés pourront se positionner en fonction de leur deck : s'ils ont suffisamment d'interception, ils "
+"essaieront de bloquer chaque action pour épuiser la discrétion, tandis que s'ils n'ont pas d'interception, ils "
+"éviteront de bloquer pour coincer la main sur la discrétion. Le deck comprend des dispositifs de recyclage comme "
+"%(dreams_of_the_sphinx)s et %(the_barrens)s pour éviter cela. </p> <p> %(seduction)s est un excellent déni de bloc, "
+"car il peut soit désactiver un bloqueur star à interception élevée, soit être activé sur n'importe quelle action si "
+"elle n'est pas nécessaire. %(shadow_play)s est le modificateur de base ici, avec %(shroud_of_absence)s et "
+"%(shroud_of_night)s comme discrétion supplémentaire utile qui ne coûte pas de sang. %(tenebrous_form)s est excellent "
+"contre les alliés, les empêchant de bloquer car ils n'ont pas de sang pour payer. Selon le %(meta)s, les proportions "
+"peuvent être ajustées et %(blanket_of_night)s peut être ajouté pour plus de déni. </p> <p> Avec %(OBT)s en plus de "
+"%(govern_the_unaligned)s et %(conditioning)s, les vampires consomment du sang rapidement. Cela signifie que "
+"%(badr_shadow_of_granada)s et %(the_path_of_night)s sont très utiles car ils économisent un peu de sang. En plus de "
+"cela, le deck comprend différentes manières de régénérer le sang, comme %(jake_washington)s – qui peut également "
+"bloquer une action de rush dangereuse – %(the_coven)s, qui entrave également les decks rush et grinder en général, et"
+" bien sûr %(giants_blood)s. La chasse n'est pas toujours possible : si le prédateur a de l'interception, il sautera "
+"sur cette action non dirigée pour neutraliser un vampire s'il le peut. </p> <p> %(deflection)s et "
+"%(delaying_tactics)s défendent contre les morsures et les votes, et le deck n'utilise que quelques %(shadow_body)s "
+"comme défense de combat supplémentaire, mais aussi comme moyen de dissuasion contre un prédateur qui tenterait de "
+"bloquer les recrutements de %(nocturn)s : c'est la seule action non dirigée qu'il peut bloquer s'il en a les moyens, "
+"vous voudrez peut-être éviter de perdre la discrétion là-dessus. En conclusion, %(sudden_reversal)s est là pour "
+"désactiver les %(bloat)s par cartes Maître comme %(villein)s ou %(liquidation)s sur votre proie, ou une interception "
+"permanente comme %(krcg_news_radio)s. </p> <h2>Ajustements et variantes</h2> <p> %(the_unmasking)s est une inclusion "
+"courante dans cette version, mais ce n'est pas obligatoire. Le nombre de %(nocturn)s peut varier considérablement : "
+"dans le cas d'un méta lourd en combat, en jouer 12 ou plus n'est pas rare. %(zaire_river_ferry)s est une autre option"
+" intéressante, car il offre à la fois de la discrétion et une protection anti-rush. D'autres équipements comme "
+"%(heart_of_nizchetus)s et %(the_signet_of_king_saul)s peuvent trouver leur place ici, ainsi qu'un "
+"%(political_hunting_ground)s. Enfin, si vous avez accès aux anciennes cartes, %(the_admonitions)s est un bon ajout ou"
+" remplacement pour %(the_barrens)s. </p> <p> L'%(main_article)s sur l'archétype présente des variantes "
+"supplémentaires. </p> <h2>Quoi acheter</h2> <p> La majeure partie des cartes provient de %(print_on_demand)s, du "
+"%(anniversary)s et du %(parliament_of_shadows)s. %(badr_shadow_of_granada)s est difficile à trouver en suffisamment "
+"d'exemplaires, mais il y en a un dans %(anthology)s, deux dans le paquet <em>Danse Macabre</em> du %(kickstarter)s, "
+"et vous pouvez le remplacer par d'autres vampires du %(parliament_of_shadows)s ou inclure des %(anarch_convert)s pour"
+" la gestion de la crypte. %(delaying_tactics)s et %(sudden_reversal)s doivent provenir d'autres paquets ou être "
+"échangés. </p> <p> Si vous avez accès aux anciennes cartes, %(dame_hollerton)s est un excellent remplacement pour "
+"%(leila_monroe)s. </p>"
+
+#: codex_of_the_damned/templates/archetypes/neonate/lasombra-nocturn.html:50
+#: codex_of_the_damned/templates/archetypes/neonate/lutz-vote.html:49
+#: codex_of_the_damned/templates/archetypes/neonate/malkavian-dementation.html:30
+#: codex_of_the_damned/templates/archetypes/neonate/ravnos-clown-car.html:47
+#: codex_of_the_damned/templates/archetypes/neonate/the-unnamed.html:62
+#: codex_of_the_damned/templates/archetypes/neonate/tremere-grinder.html:62
+#: codex_of_the_damned/templates/archetypes/neonate/ventrue-grinder.html:47
+#: codex_of_the_damned/templates/archetypes/neonate/ventrue-lawfirm.html:49
+msgid "main article"
+msgstr "article principal"
+
+#: codex_of_the_damned/templates/archetypes/neonate/lasombra-nocturn.html:56
+#: codex_of_the_damned/templates/archetypes/neonate/ravnos-clown-car.html:45
+#: codex_of_the_damned/templates/archetypes/neonate/tzimisce-toolbox.html:50
+msgid "Kickstarter"
+msgstr "Kickstarter"
+
+#: codex_of_the_damned/templates/archetypes/neonate/lutz-vote.html:15
+#, python-format
+msgid ""
+"<h2>Highlights</h2> <p> This is a <em>bleed & vote</em> deck using Malkavian %(malkavian)s <em>Inner Circle</em> "
+"%(lutz_von_hohenzollern)s and <em>Justicar</em> %(unmada)s. </p> <p> The plan is to get %(lutz)s and one or two "
+"sidekick <em>Prince</em> or <em>Justicar</em> out, using the %(zillahs_valley)s + %(villein)s combination to get them"
+" out fast and cheap. Once there, the vote lock should be easy, with a few %(perfect_paragon)s to help just in case. "
+"The sidekicks can use %(parity_shift)s to bloat a bit, but the bulk of the damage will come from "
+"%(kine_resources_contested)s and %(banishment)s provides additional control. In all cases, %(lutz)s' ability kicks in"
+" for additional damage. </p> <p> %(OBF)s is used for stealth, and %(PRE)s to get some blood back with "
+"%(voter_captivation)s and combat defence in the form of %(combat_ends)s like %(majesty)s and "
+"%(force_of_personality)s. Incidentally, it also provides a couple of %(entrancement)s to allow stealing critical "
+"allies like %(carlton_van_wyk)s. </p> <p> %(lutz)s can be used to either call a vote or bleed for 3, depending on the"
+" situation. A bit of bleed defence is included with %(telepathic_misdirection)s, but the deck relies a lot more on "
+"%(bloat)s to stay alive, with %(villein)s for 5 and %(parity_shift)s. </p> <h2>Tweaks and variants</h2> <p> "
+"%(enkil_cog)s is a common inclusion, as well as %(scourge_of_the_enochians)s against swarms. %(dark_influences)s "
+"could be considered, since it's a good counter against %(direct_intervention)s, a pretty annoying defence against "
+"%(entrancement)s and \"once per game\" votes. A bit of additional %(telepathic_misdirection)s might be in order in a "
+"bleed-heavy meta, in which case some wakes in the form of %(eyes_of_argus)s and %(on_the_qui_vive)s might help. If "
+"you have access to legacy cards, %(undele)s is a very common crypt inclusion. </p> <p> Another worthy alternative is "
+"to use not-yet-reprinted %(maris_streck)s as the main sidekick to %(lutz)s. Her ability, coupled with a few "
+"%(second_tradition_domain)s and %(eyes_of_argus)s, improves the deck blocking ability, providing better defence "
+"overall but also opening the possibility of %(mental_maze)s (available as %(print_on_demand)s) for rush defence: a "
+"sturdy counter against combat-oriented decks. </p> <p> The %(main_article)s about the archetype presents additional "
+"variants. </p> <h2>What to buy</h2> <p> The bulk of the cards come from two %(keepers_of_tradition_1)s, a "
+"%(v5_malkavian)s, %(anniversary)s and %(first_blood_malkavian)s. The %(v5_toreador)s, %(libertine_ball)s and "
+"%(keepers_of_tradition_2)s provide useful additions to that base, but might be spared provided you adjust the "
+"decklist or trade a few cards. </p>"
+msgstr ""
+"<h2>Principe</h2> <p> C'est un deck <em>bleed & vote</em> avec les Malkavian %(malkavian)s <em>Inner Circle</em> "
+"%(lutz_von_hohenzollern)s et <em>Justicar</em > %(unmada)s. </p> <p> Le plan est de sortir %(lutz)s et un ou deux "
+"acolytes <em>Prince</em> ou <em>Justicar</em>, en utilisant la combinaison %(zillahs_valley)s + %(villein)s pour les "
+"sortir rapidement et pas cher. Une fois rendu, le verrou de vote devrait être aisé, avec quelques %(perfect_paragon)s"
+" pour aider au cas où. Les serviteurs peuvent utiliser %(parity_shift)s pour régénérer un peu, mais le gros des "
+"dégâts provient de %(kine_resources_contested)s et %(banishment)s fournit un contrôle supplémentaire. Dans tous les "
+"cas, l'aptitude de %(lutz)s inflige des dégâts supplémentaires. </p> <p> %(OBF)s est utilisé pour la discrétion, et "
+"%(PRE)s pour récupérer du sang avec %(voter_captivation)s et donner de la défense au combat sous la forme de "
+"%(combat_ends)s comme %(majesty)s et %(force_of_personality)s. Incidemment, il fournit également quelques "
+"%(entrancement)s pour permettre de voler des alliés critiques comme %(carlton_van_wyk)s. </p> <p> %(lutz)s peut être "
+"utilisé soit pour appeler un vote, soit pour mordre à 3, selon la situation. Un peu de défense contre les morsures "
+"est prévue avec %(telepathic_misdirection)s, mais le deck s'appuie beaucoup plus sur la %(bloat)s pour rester en vie,"
+" avec %(villein)s pour 5 et %(parity_shift)s. </p> <h2>Ajustements et variantes</h2> <p> %(enkil_cog)s est une "
+"inclusion courante, ainsi que %(scourge_of_the_enochians)s contre les essaims. %(dark_influences)s pourrait être "
+"envisagé, puisque c'est un bon contre contre %(direct_intervention)s, une défense assez agaçante contre "
+"%(entrancement)s et les votes \"une fois par partie\" . Un peu de %(telepathic_misdirection)s supplémentaire peut "
+"être dans un méta très morsures, auquel cas certains réveils sous la forme de %(eyes_of_argus)s et "
+"%(on_the_qui_vive)s peuvent aider. Si vous avez accès aux anciennes cartes, %(undele)s est une inclusion de crypte "
+"très courante. </p> <p> Une autre alternative valable est d'utiliser %(maris_streck)s, pas encore réimprimée, comme "
+"acolyte principal de %(lutz)s. Son aptitude, associée à quelques %(second_tradition_domain)s et %(eyes_of_argus)s, "
+"améliore la capacité de blocage du deck, offrant une meilleure défense globale mais ouvrant également la possibilité "
+"de %(mental_maze)s (disponible à %(print_on_demand)s) pour la défense : un contre solide contre le decks orientés "
+"combat. </p> <p> L'%(main_article)s sur l'archétype présente des variantes supplémentaires. </p> <h2>Quoi "
+"acheter</h2> <p> La majeure partie des cartes proviennent de deux %(keepers_of_tradition_1)s, un %(v5_malkavian)s, un"
+" %(anniversary)s et un %(first_blood_malkavian)s. Les %(v5_toreador)s, %(libertine_ball)s et "
+"%(keepers_of_tradition_2)s fournissent des ajouts utiles à cette base, mais pourraient être évités à condition "
+"d'ajuster la liste de deck ou d'échanger quelques cartes. </p>"
+
+#: codex_of_the_damned/templates/archetypes/neonate/lutz-vote.html:41
+#: codex_of_the_damned/templates/archetypes/neonate/malkavian-dementation.html:33
+#: codex_of_the_damned/templates/archetypes/neonate/malkavian-dominate.html:39
+#: codex_of_the_damned/templates/archetypes/neonate/nosferatu-primogens.html:40
+msgid "Keepers of Tradition 1"
+msgstr "Keepers of Tradition 1"
+
+#: codex_of_the_damned/templates/archetypes/neonate/lutz-vote.html:42
+#: codex_of_the_damned/templates/archetypes/neonate/malkavian-dementation.html:31
+#: codex_of_the_damned/templates/archetypes/neonate/malkavian-dominate.html:37
+#: codex_of_the_damned/templates/archetypes/neonate/nosferatu-primogens.html:37
+#: codex_of_the_damned/templates/archetypes/neonate/ravnos-clown-car.html:49
+#: codex_of_the_damned/templates/archetypes/neonate/the-unnamed.html:54
+msgid "V5 Malkavian"
+msgstr "V5 Malkavien"
+
+#: codex_of_the_damned/templates/archetypes/neonate/lutz-vote.html:44
+#: codex_of_the_damned/templates/archetypes/neonate/ventrue-lawfirm.html:52
+msgid "V5 Toreador"
+msgstr "V5 Toréador"
+
+#: codex_of_the_damned/templates/archetypes/neonate/lutz-vote.html:46
+#: codex_of_the_damned/templates/archetypes/neonate/the-capuchin.html:61
+#: codex_of_the_damned/templates/archetypes/neonate/tremere-grinder.html:61
+#: codex_of_the_damned/templates/archetypes/neonate/tremere-wall.html:41
+#: codex_of_the_damned/templates/archetypes/neonate/ventrue-grinder.html:45
+#: codex_of_the_damned/templates/archetypes/neonate/ventrue-lawfirm.html:51
+msgid "Keepers of Tradition 2"
+msgstr "Keepers of Tradition 2"
+
+#: codex_of_the_damned/templates/archetypes/neonate/lutz-vote.html:48
+#: codex_of_the_damned/templates/best-cards/clans/akunanse.html:11
+#: codex_of_the_damned/templates/strategy/deck-building.html:232
+msgid "combat ends"
+msgstr "fin de combat"
+
+#: codex_of_the_damned/templates/archetypes/neonate/malkavian-dementation.html:14
+#, python-format
+msgid ""
+"<h2>Highlights</h2> <p> This is a brutal <em>stealth & bleed</em> deck using Malkavian %(malkavian)s and their legacy"
+" %(dem)s. </p> <p> The plan is to bleed hard, with stealth. %(kindred_spirits)s provides a bit of %(bloat)s and "
+"%(dem)s has great modifiers like %(confusion)s and %(eyes_of_chaos)s. The Master module provides a bit of bloat with "
+"%(blood_doll)s and %(villein)s, as well as card cycling tools like %(dreams_of_the_sphinx)s and %(the_barrens)s. But,"
+" most importantly, it includes counters against Master cards with %(sudden_reversal)s and %(wash)s: they're used to "
+"prevent bloat on the prey's side. </p> <p> %(OBF)s is used for stealth, with a wide range of different modifiers so "
+"as to be able to stack them. It also provides %(no_trace)s, the only combat defence of the deck. %(AUS)s provides a "
+"bit of defence, with %(telepathic_misdirection)s for bounces. Hand management is key: if a prey has only low "
+"intercept they might decide to never try to block to jam the hand with stealth. </p> <p> An interesting point about "
+"the deck is that %(kindred_spirits)s allows to bleed <strong>any</strong> Methuselah, so one can even use it "
+"strategically against someone else, like their predator. Obviously though, it's best used on the prey as a rule of "
+"thumb. </p> <h2>Tweaks and variants</h2> <p> A few %(dem)s legacy cards are excellent additions to this deck, like "
+"%(deny)s, %(restructure)s and %(the_call)s. On the other hand, a few additional counters against Master cards can "
+"help too if you can trade for more %(sudden_reversal)s and %(wash)s. Some variations play a dozen of those to "
+"completely bar the prey from their Master module. Depending on the cases, you might find the library a bit short. If "
+"this is the case, adding a few %(kindred_spirits)s and half that amount of %(confusion)s is an easy way to increase "
+"it. </p> <p> This is not the fastest crypt one can use for this build. The %(main_article)s about the archetype "
+"presents alternatives if you have access to a few legacy cards. With a fast enough crypt, one can focuse completely "
+"on bleeding and forego bounces and bloat Masters altogether. </p> <h2>What to buy</h2> <p> The bulk of the cards come"
+" from two %(fb_malkavian)s and %(v5_malkavian)s, with a few additions from %(keepers_of_tradition_1)s. The Master "
+"counters %(sudden_reversal)s and %(wash)s are the trickiest to come by: they can be found in the %(sabbat_precons)s "
+"or should be traded for. %(dreams_of_the_sphinx)s can be found in the %(anniversary)s. </p>"
+msgstr ""
+"<h2>Principe</h2> <p> Il s'agit d'un deck <em>stealth & bleed</em> brutal qui utilise les Malkavien %(malkavian)s et "
+"leur antique %(dem)s. </p> <p> Le plan est de mordre fort, avec discrétion. %(kindred_spirits)s fournit un peu de "
+"%(bloat)s et %(dem)s a d'excellents modificateurs comme %(confusion)s et %(eyes_of_chaos)s. Le module Maître fournit "
+"un peu de régénération avec %(blood_doll)s et %(villein)s, ainsi que des outils pour cycler les cartes comme "
+"%(dreams_of_the_sphinx)s et %(the_barrens)s. Mais, plus important encore, il inclut des contres contre les cartes "
+"Maître avec %(sudden_reversal)s et %(wash)s : ils sont utilisés pour empêcher la régénération du côté proie. </p> <p>"
+" %(OBF)s est utilisé pour la discrétion, avec une large gamme de modificateurs différents afin de pouvoir les "
+"combiner. Il fournit également %(no_trace)s, la seule défense de combat du deck. %(AUS)s fournit un peu de défense, "
+"avec %(telepathic_misdirection)s pour les rebonds. La gestion de la main est la clé : si la proie n'a qu'une faible "
+"interception, elle peut décider de ne jamais essayer de bloquer pour coincer la main sur la discrétion. </p> <p> Un "
+"point intéressant à propos du deck est que %(kindred_spirits)s permet de mordre <strong>n'importe quel</strong> "
+"Méthusalem, donc on peut même l'utiliser stratégiquement contre quelqu'un d'autre, comme son prédateur. De toute "
+"évidence, cependant, il est préférable de l'utiliser sur la proie en règle générale. </p> <h2>Ajustements et "
+"variantes</h2> <p> Quelques cartes non rééditées de %(dem)s sont d'excellents ajouts à ce deck, comme %(deny)s, "
+"%(restructure)s et %(the_call)s. D'un autre côté, quelques contres supplémentaires contre les cartes Maître peuvent "
+"également aider si vous pouvez échanger plus de %(sudden_reversal)s et %(wash)s. Certaines variantes en jouent une "
+"douzaine pour bloquer complètement le module Maître de leur proie. Selon les cas, vous pourriez trouver la "
+"bibliothèque un peu courte. Si tel est le cas, ajouter quelques %(kindred_spirits)s et la moitié de cette quantité de"
+" %(confusion)s est un moyen facile de l'augmenter. </p> <p> Ce n'est pas la crypte la plus rapide que l'on puisse "
+"utiliser pour cette version. L'%(main_article)s sur l'archétype présente des alternatives si vous avez accès à "
+"quelques anciennes cartes. Avec une crypte assez rapide, on peut se concentrer sur les morsures et renoncer "
+"complètement aux rebonds et à la régénération. </p> <h2>Quoi acheter</h2> <p> L'essentiel des cartes provient de deux"
+" %(fb_malkavian)s et un %(v5_malkavian)s, avec quelques ajouts de %(keepers_of_tradition_1)s. Les contres de cartes "
+"Maître %(sudden_reversal)s et %(wash)s sont les plus difficiles à trouver : ils peuvent être trouvés dans le "
+"%(sabbat_precons)s ou doivent être échangés. %(dreams_of_the_sphinx)s se trouve dans le %(anniversary)s. </p>"
+
+#: codex_of_the_damned/templates/archetypes/neonate/malkavian-dominate.html:15
+#, python-format
+msgid ""
+"<h2>Highlights</h2> <p> This is a brutal <em>stealth & bleed</em> deck using V5 Malkavian %(malkavian)s and their "
+"newly regained %(DOM)s. </p> <p> The plan is to bleed hard, with stealth. %(govern_the_unaligned)s is probably the "
+"best available action card in the game. Used at superior after getting the oldest vampire out first, it provides fast"
+" and cheap vampires in the early game. Once three vampires are out and ready, it can then be used to bleed. %(obf)s "
+"modifiers provide stealth, but the crypt does not have that much superior %(OBF)s available, so a few Master cards "
+"are included to provide even a bit more denial, like %(pentex_subversion)s and %(misdirection)s. </p> <p> The Master "
+"module provides a bit of bloat with %(vessel)s and %(villein)s, as well as card cycling tools like "
+"%(dreams_of_the_sphinx)s and %(the_barrens)s. Blood regeneration for the vampires is also important here, since "
+"%(DOM)s tends to cost a bit of blood, so %(perfectionist)s and %(asylum_hunting_ground)s can help, as well as "
+"%(jake_washington)s and %(giants_blood)s. </p> <p> The lack of superior %(OBF)s also makes the inclusion of %(DOM)s "
+"cards like %(bonding)s and %(seduction)s relevant: additional stealth and a block denial that won't risk to jam the "
+"hand. On the same line, %(cloak_the_gathering)s is comparatively better, since a vampire with %(OBF)s can use it at "
+"superior to help a sidekick. The deck is fragile when it comes down to combat defence: only %(no_trace)s can help "
+"there, and only a few vampires can play it at superior. To try and compensate for that, %(carlton_van_wyk)s and "
+"%(jake_washington)s are included as dispensable blockers against rushes. </p> <h2>Tweaks and variants</h2> <p> There "
+"are a lot of ways to tweak this deck. Including a good quantity of Master counters like %(sudden_reversal)s and "
+"%(wash)s is a good way to cripple the bloat possibilities for the prey. Another idea is to rely on %(DOM)s more and "
+"increase the number of %(bonding)s and %(seduction)s, keeping %(OBF)s only for the occasional boost or denial. "
+"Finally, the balance between stealth, bleed and reactions is a delicate thing you might want to tinker with to adapt "
+"to your local %(meta)s. </p> <p> If you have access to him, %(gilbert_duane_g6)s is definitely a great addition to "
+"the crypt: he has superior %(OBF)s and, with a capcity of 7 and a Baron title, sits comfortably in the \"Govern "
+"chain\" for the deck, even opening the possible inclusion of %(papillon)s for blood regeneration. He is included in "
+"the %(promo_pack_3)s. </p> <h2>What to buy</h2> <p> The bulk of the cards come from %(v5_malkavian)s, %(v5_tremere)s "
+"and %(anniversary)s, with a few additions from %(fb_malkavian)s and %(fb_ventrue)s. A few cards are not in those, "
+"like %(carlton_van_wyk)s (%(anthology)s) and %(jake_washington)s (%(parliament_of_shadows)s), but they can be traded "
+"or ignored. </p>"
+msgstr ""
+"<h2>Principe</h2> <p> Il s'agit d'un deck <em>stealth & bleed</em> brutal qui utilise les Malkavien V5 %(malkavian)s "
+"et leur nouvelle %(DOM)s. </p> <p> Le plan est de mordre fort, avec discrétion. %(govern_the_unaligned)s est "
+"probablement la meilleure carte d'action disponible dans le jeu. Utilisée au niveau supérieur après avoir sorti le "
+"plus vieux vampire en premier, elle fournit des vampires rapidement et économiquement en début de partie. Une fois "
+"que trois vampires sont sortis et prêts, elle peut alors être utilisée pour mordre. Les modificateurs %(obf)s offrent"
+" de la discrétion, mais la crypte n'a pas souvent %(OBF)s supérieur, donc quelques cartes de Maître sont incluses "
+"pour fournir plus de déni, comme %(pentex_subversion)s et %(misdirection)s. </p> <p> Le module Maître fournit un peu "
+"de régénération avec %(vessel)s et %(villein)s, ainsi que des outils pour cycler les cartes comme "
+"%(dreams_of_the_sphinx)s et %(the_barrens)s. La régénération du sang pour les vampires est également importante ici, "
+"puisque %(DOM)s a tendance à coûter un peu de sang, donc %(perfectionist)s et %(asylum_hunting_ground)s peuvent "
+"aider, ainsi que %(jake_washington)s et %(giants_blood)s. </p> <p> L'absence de %(OBF)s supérieur rend également "
+"pertinente l'inclusion de cartes %(DOM)s comme %(bonding)s et %(seduction)s : discrétion supplémentaire et un déni de"
+" bloc qui ne risquera pas de bloquer la main. Dans le même ordre d'idées, %(cloak_the_gathering)s est comparativement"
+" meilleur, puisqu'un vampire avec %(OBF)s peut l'utiliser au niveau supérieur pour aider un serviteur. Le deck est "
+"fragile quand il s'agit de se défendre en combat : seul %(no_trace)s peut y aider, et seuls quelques vampires peuvent"
+" le jouer en supérieur. Pour essayer de compenser, %(carlton_van_wyk)s et %(jake_washington)s sont inclus en tant que"
+" bloqueurs dispensables contre les rushs. </p> <h2>Ajustements et variantes</h2> <p> Il existe de nombreuses façons "
+"d'ajuster ce deck. Inclure une bonne quantité de contres Maître comme %(sudden_reversal)s et %(wash)s est un bon "
+"moyen de paralyser les possibilités de régénération de la proie. Une autre idée est de s'appuyer davantage sur "
+"%(DOM)s et d'augmenter le nombre de %(bonding)s et %(seduction)s, en gardant %(OBF)s uniquement pour la discrétion ou"
+" le déni occasionnel. Enfin, l'équilibre entre la discrétion, la morsure et les réactions est une chose délicate que "
+"vous voudrez peut-être ajuster à votre %(meta)s local. </p> <p> Si vous avez accès à lui, %(gilbert_duane_g6)s est "
+"définitivement un excellent ajout à la crypte : il a un %(OBF)s supérieur et, avec une capacité de 7 et un titre de "
+"Baron, s\\'installe confortablement dans la \"chaîne de Govern\" du deck, ouvrant même l'éventuelle inclusion de "
+"%(papillon)s pour la régénération du sang. Il est inclus dans le %(promo_pack_3)s. </p> <h2>Quoi acheter</h2> <p> La "
+"majeure partie des cartes provient de %(v5_malkavian)s, %(v5_tremere)s et %(anniversary)s, avec quelques ajouts de "
+"%(fb_malkavian)s et %(fb_ventrue)s. Quelques cartes ne s'y trouvent pas, comme %(carlton_van_wyk)s (%(anthology)s) et"
+" %(jake_washington)s (%(parliament_of_shadows)s), mais elles peuvent être échangées ou ignorées. </p>"
+
+#: codex_of_the_damned/templates/archetypes/neonate/malkavian-dominate.html:42
+#: codex_of_the_damned/templates/archetypes/neonate/the-capuchin.html:65
+#: codex_of_the_damned/templates/archetypes/neonate/tremere-grinder.html:65
+#: codex_of_the_damned/templates/archetypes/neonate/tremere-wall.html:47
+msgid "V5 Tremere"
+msgstr "V5 Tremere"
+
+#: codex_of_the_damned/templates/archetypes/neonate/malkavian-dominate.html:43
+#: codex_of_the_damned/templates/archetypes/neonate/samedi-rush.html:30
+#: codex_of_the_damned/templates/archetypes/neonate/the-capuchin.html:60
+#: codex_of_the_damned/templates/archetypes/neonate/ventrue-grinder.html:43
+#: codex_of_the_damned/templates/strategy/index.html:43
+msgid "First Blood: Ventrue"
+msgstr "Premier Sang : Ventrue"
+
+#: codex_of_the_damned/templates/archetypes/neonate/malkavian-dominate.html:46
+#: codex_of_the_damned/templates/archetypes/neonate/ventrue-grinder.html:51
+msgid "Promo Pack 3"
+msgstr "Promo Pack 3"
+
+#: codex_of_the_damned/templates/archetypes/neonate/nephandus.html:15
+#, python-format
+msgid ""
+"<h2>Highlights</h2> <p> This is an <em>allies toolbox</em> deck using Tremere antitribu %(tremere_antitribu)s and "
+"their excellent %(nephandus)s ally. </p> <p> The plan is to use %(antonio_derlette)s's ability to recruit a swarm of "
+"%(nephandus)s without even performing an action someone could block. Once there, they can defend with a bit of "
+"intercept from %(the_unmasking)s and Locations like %(krcg_news_radio)s or %(channel_10)s, and simply bleed for 1 "
+"consistently to kill the prey. </p> <p> The combat nodule is threatening: %(trap)s and %(target_vitals)s, combined "
+"with the %(nephandus)s ability, is pretty strong. Obviously, stronger combat modules exist and they can definitely "
+"take a few %(nephandus)s down but, if you can stack enough of them, they will be able to take down any ennemy. The "
+"deck also provides a bit of control in the form of combat rush with %(harass)s and %(haven_uncovered)s. Finally, the "
+"Tremere antitribu in the deck can help with the defence thanks to %(deflection)s. </p> <p> The biggest threat comes "
+"from anti-swarm votes like %(anarchist_uprising)s and %(ancilla_empowerment)s. The deck includes %(delaying_tactics)s"
+" to prevent them to hurt too much or too soon. It can also come in handy against a prey using %(consanguineous_boon)s"
+" for heavy bloat. %(direct_intervention)s should be kepy to counter ally-stealing actions like %(entrancement)s. </p>"
+" <h2>Tweaks and variants</h2> <p> There are a lot of ways to tweak this deck. Check the "
+"%(information_highway_article)s for another example. If you have access to them, more rushes with %(bums_rush)s can "
+"be added. Legacy intercept Locations like %(wmrh_talk_radio)s and %(wall_street_night_financial_newspaper)s could be "
+"good. %(carlton_van_wyk)s and %(ossian)s too. </p> <p> Another possibility is to revamp the master module to include "
+"%(the_parthenon)s and %(ashur_tablets)s. It's tempting since it will help pay for the %(nephandus)s, but it's also a "
+"risk: since there is no other source of additional master phase actions in the deck, running into another "
+"%(ashur_tablets)s deck or contesting %(the_parthenon)s will disable the whole combination pretty fast. </p> <p> Yet "
+"another idea is to use %(piper)s (not yet reprinted), while making %(antonio_derlette)s anarch thanks to "
+"%(anarch_convert)s, can be a nice way to get more %(nephandus)s into play faster, like in %(cicero_jannyson_s_deck)s."
+" </p> <h2>What to buy</h2> <p> The bulk of the cards come from two %(pact_with_nephandi)s decks, with a few additions"
+" from %(v5_nosferatu)s, %(anthology)s and %(fb_nosferatu)s. %(direct_intervention)s is available as "
+"%(print_on_demand)s. </p>"
+msgstr ""
+"<h2>Principe</h2> <p> Il s'agit d'un deck <em>toolbox alliés</em> avec les Tremere antitribu %(tremere_antitribu)s et"
+" leur excellent allié %(nephandus)s. </p> <p> Le plan est d'utiliser l'aptitude d'%(antonio_derlette)s pour recruter "
+"un essaim de %(nephandus)s sans même effectuer une action que quelqu'un pourrait bloquer. Une fois là, ils peuvent "
+"défendre avec un peu d'interception de %(the_unmasking)s et de lieux comme %(krcg_news_radio)s ou %(channel_10)s, et "
+"simplement mordre pour 1 constamment pour tuer la proie. </p> <p> Le module de combat est menaçant : %(trap)s et "
+"%(target_vitals)s, combinés à l'aptitude des %(nephandus)s, sont assez puissants. De toute évidence, des modules de "
+"combat plus puissants existent et ils peuvent certainement abattre quelques %(nephandus)s mais, si vous pouvez en "
+"recruter suffisamment, ils pourront abattre n'importe quel ennemi. Le deck fournit également un peu de contrôle sous "
+"la forme de rush de combat avec %(harass)s et %(haven_uncovered)s. Enfin, les Tremere antitribu dans le deck peuvent "
+"aider à la défense grâce à %(deflection)s. </p> <p> La plus grande menace vient des votes anti-swarm comme "
+"%(anarchist_uprising)s et %(ancilla_empowerment)s. Le deck comprend %(delaying_tactics)s pour les empêcher de faire "
+"trop de dégâts trop tôt. Il peut également être utile contre une proie en utilisant %(consanguineous_boon)s pour une "
+"grosse régénération. %(direct_intervention)s doit être conservé pour contrer les actions de vol d'alliés comme "
+"%(entrancement)s. </p> <h2>Ajustements et variantes</h2> <p> Il existe de nombreuses façons d'ajuster ce deck. "
+"Consultez l'%(information_highway_article)s pour un autre exemple. Si vous y avez accès, d'autres rushs comme "
+"%(bums_rush)s peuvent être ajoutés. Les lieux d'interception non réédités comme %(wmrh_talk_radio)s et "
+"%(wall_street_night_financial_newspaper)s pourraient être bons. %(carlton_van_wyk)s et %(ossian)s aussi. </p> <p> Une"
+" autre possibilité est de réorganiser le module Maître pour inclure %(the_parthenon)s et %(ashur_tablets)s. C'est "
+"tentant car cela aide à payer les %(nephandus)s, mais c'est aussi un risque : puisqu'il n'y a pas d'autre source "
+"d'action de Maître supplémentaire dans le deck, se heurter à un autre deck %(ashur_tablets)s ou contester "
+"%(the_parthenon)s handicapera rapidement la combinaison. </p> <p> Une autre idée est d'utiliser %(piper)s (pas encore"
+" réimprimé), tout en rendant %(antonio_derlette)s anarch grâce à %(anarch_convert)s : c'est un bon moyen de jouer "
+"plus de %(nephandus)s plus rapidement, comme dans %(cicero_jannyson_s_deck)s. </p> <h2>Quoi acheter</h2> <p> La "
+"majeure partie des cartes proviennent de deux decks %(pact_with_nephandi)s, avec quelques ajouts de %(v5_nosferatu)s,"
+" %(anthology)s et %(fb_nosferatu)s. %(direct_intervention)s est disponible à %(print_on_demand)s. </p>"
+
+#: codex_of_the_damned/templates/archetypes/neonate/nephandus.html:41
+#: codex_of_the_damned/templates/archetypes/neonate/nosferatu-primogens.html:41
+msgid "Information Highway Article"
+msgstr "article d'Information Highway"
+
+#: codex_of_the_damned/templates/archetypes/neonate/nephandus.html:43
+#: codex_of_the_damned/templates/archetypes/neonate/nosferatu-primogens.html:43
+#: codex_of_the_damned/templates/archetypes/neonate/tremere-wall.html:46
+#: codex_of_the_damned/templates/archetypes/neonate/tzimisce-toolbox.html:55
+#: codex_of_the_damned/templates/archetypes/neonate/ventrue-grinder.html:52
+msgid "V5 Nosferatu"
+msgstr "V5 Nosferatu"
+
+#: codex_of_the_damned/templates/archetypes/neonate/nephandus.html:45
+#: codex_of_the_damned/templates/archetypes/neonate/nosferatu-primogens.html:45
+#: codex_of_the_damned/templates/archetypes/neonate/the-capuchin.html:59
+#: codex_of_the_damned/templates/archetypes/neonate/the-unnamed.html:57
+#: codex_of_the_damned/templates/archetypes/neonate/tremere-wall.html:40
+#: codex_of_the_damned/templates/archetypes/neonate/tzimisce-toolbox.html:46
+#: codex_of_the_damned/templates/archetypes/neonate/ventrue-grinder.html:42
+#: codex_of_the_damned/templates/strategy/index.html:49
+msgid "First Blood: Nosferatu"
+msgstr "Premier Sang : Nosferatu"
+
+#: codex_of_the_damned/templates/archetypes/neonate/nephandus.html:47
+#: codex_of_the_damned/templates/archetypes/neonate/nosferatu-primogens.html:47
+msgid "Cicero Jannyson's deck"
+msgstr "le deck de Cicero Jannyson"
+
+#: codex_of_the_damned/templates/archetypes/neonate/nosferatu-primogens.html:15
+#, python-format
+msgid ""
+"<h2>Highlights</h2> <p> This is an <em>rush</em> deck using Nosferatu %(nosferatu)s primogens and %(ANI)s bleed & "
+"combat. </p> <p> %(deep_song)s is the cornerstone of the deck's strategy. It serves as a bleed or rush device "
+"depending on the situation. The %(ANI)s combat module, using %(aid_from_bats)s and %(carrion_crows)s, is supported by"
+" additional maneuvers from %(swallowed_by_the_night)s. The plan is to use the rush abilities of the deck to keep "
+"control of the table, disable potential %(bounces)s on the prey side by taking down vampires, then bleed for the "
+"oust. </p> <p> Playing Nosferatu %(nosferatu)s allows a few %(creeping_sabotage)s in addition to %(army_of_rats)s for"
+" more pool damage. Both %(larissa_moreira)s and %(lenny_burkhead)s have a good bleed bonus, and %(the_dowager)s has a"
+" very neat intercept bonus. Playing Primogen allows for the inclusion of the new %(protected_district)s, a very nice "
+"defensive tool, both on the bleed and the political side. </p> <p> The only stealth used is "
+"%(swallowed_by_the_night)s because of its versatility: it can easily be cycled during a combat or provide and "
+"additional maneuver to stay at long range on top of %(aid_from_bats)s. Adding more stealth to the deck will most "
+"likely disrupt the balance and fluidity of the combat and reaction modules. </p> <h2>Tweaks and variants</h2> <p> "
+"There are a lot of possible strategies with these Nosferatu %(nosferatu)s primogens. Leaning on a more defensive "
+"side, with more %(creeping_sabotage)s and reactions like %(cats_guidance)s and %(the_warrens)s is also a possibility "
+"- in that case obviously, far less %(deep_song)s and a reduced combat module are in order. </p> <p> A few good "
+"potential inclusions have not yet been reprinted, especially when it comes down to the combat module. A few "
+"%(target_vitals)s could be replaced by some %(terror_frenzy)s or %(canine_horde)s, to counter opposing combat modules"
+" revolving around close range strikes or weapons like %(magnum)s. </p> <p> The balance of the deck when it comes down"
+" to proportions heavily depends on your local %(meta)s. More %(deep_song)s might be required against <em>Combat "
+"Ends</em>, or even a few %(immortal_grapple)s. %(scourge_of_the_enochians)s and even %(anarchist_uprising)s might be "
+"included against swarm decks. %(heart_of_nizchetus)s can also be a useful inclusion, although it does not feel "
+"required. </p> <h2>What to buy</h2> <p> The bulk of the cards come from two %(v5_nosferatu)s decks, with additions "
+"from %(keepers_of_tradition_1)s, %(anthology)s, %(v5_malavian)s and %(fb_nosferatu)s. %(direct_intervention)s is "
+"available as %(print_on_demand)s. </p>"
+msgstr ""
+"<h2>Principe</h2> <p> Il s'agit d'un deck <em>rush</em> utilisant les primogènes Nosferatu %(nosferatu)s et %(ANI)s "
+"pour les morsures et le combat. </p> <p> %(deep_song)s est la pierre angulaire de la stratégie du deck. Il sert de "
+"dispositif de morsure ou de rush selon la situation. Le module de combat %(ANI)s, qui utilise %(aid_from_bats)s et "
+"%(carrion_crows)s, est soutenu par les manœuvres supplémentaires de %(swallowed_by_the_night)s. Le plan est "
+"d'utiliser les capacités de rush du deck pour garder le contrôle de la table, désactiver les %(bounces)s potentiels "
+"côté proie en éliminant les vampires, puis mordre pour l'éliminer. </p> <p> Jouer Nosferatu %(nosferatu)s permet "
+"quelques %(creeping_sabotage)s en plus d'%(army_of_rats)s pour plus de dégâts d'influence. %(larissa_moreira)s et "
+"%(lenny_burkhead)s ont tous deux un bon bonus de morsure, et %(the_dowager)s a un bonus d'interception très utile. "
+"Jouer Primogène permet d'inclure le nouveau %(protected_district)s, un très bel outil défensif, à la fois du côté des"
+" morsures et du côté politique. </p> <p> La seule discrétion utilisée est %(swallowed_by_the_night)s en raison de sa "
+"polyvalence : il peut facilement être cyclé pendant un combat ou fournir une manœuvre supplémentaire pour rester à "
+"longue distance en plus d'%(aid_from_bats)s. Ajouter plus de discrétion au deck perturbera très probablement "
+"l'équilibre et la fluidité des modules de combat et de réaction. </p> <h2>Ajustements et variantes</h2> <p> Il y a "
+"beaucoup de stratégies possibles avec ces primogènes Nosferatu %(nosferatu)s. Viser plus défensif, avec plus de "
+"%(creeping_sabotage)s et des réactions comme %(cats_guidance)s et %(the_warrens)s est également une possibilité — "
+"dans ce cas évidemment, beaucoup moins de %(deep_song)s et un module de combat réduit sont de mise. </p> <p> Quelques"
+" bonnes inclusions potentielles n'ont pas encore été réimprimées, notamment en ce qui concerne le module de combat. "
+"Quelques %(target_vitals)s pourraient être remplacés par %(terror_frenzy)s ou %(canine_horde)s, pour contrer les "
+"modules de combat adverses tournant autour de frappes au corps-à-corps ou d'armes comme %(magnum)s. </p> <p> "
+"L'équilibre du jeu en termes de proportions dépend fortement de votre %(meta)s local. Plus de %(deep_song)s peuvent "
+"être nécessaires contre les <em>fin de combat</em>, ou même quelques %(immortal_grapple)s. "
+"%(scourge_of_the_enochians)s et même %(anarchist_uprising)s peuvent être inclus contre les decks essaim. "
+"%(heart_of_nizchetus)s peut également être un ajout utile, quoique pas nécessaire. </p> <h2>Quoi acheter</h2> <p> La "
+"majeure partie des cartes provient de deux decks %(v5_nosferatu)s, avec des ajouts de %(keepers_of_tradition_1)s, "
+"%(anthology)s, %(v5_malavian)s et %(fb_nosferatu)s. %(direct_intervention)s est disponible à %(print_on_demand)s. "
+"</p>"
+
+#: codex_of_the_damned/templates/archetypes/neonate/nosferatu-primogens.html:39
+#: codex_of_the_damned/templates/strategy/deck-building.html:229
+msgid "Bounces"
+msgstr "Rebonds"
+
+#: codex_of_the_damned/templates/archetypes/neonate/ravnos-clown-car.html:15
+#, python-format
+msgid ""
+"<h2>Highlights</h2> <p> This is a <em>swarm</em> deck where Ravnos %(ravnos)s use %(embraces)s to proliferate, "
+"%(consanguineous_boon)s to bloat and bleed with their swarm for the kill. </p> <p> The plan is to have a horde of "
+"<em>Laibon</em> Ravnos %(ravnos)s vampires. Get a vampire out as fast as possible, use %(mozambique_allure)s to "
+"become Laibon and unlock, then %(embrace)s. When you get the chance, play a %(ravnos_carnival)s to help you pay for "
+"%(the_embrace)s. Continue to grow your horde, then call %(consanguineous_boon)s with %(the_eldest_are_kholo)s to "
+"bloat and recruit even more Ravnos. Once you have enough vampires to kill your prey, start bleeding. "
+"%(week_of_nightmares)s can help you lunge with style. </p> <p> The deck is hard to stop because of the high number of"
+" +1 stealth actions. Once it is settled with enough vampires, it is virtually unstoppable. A few subtleties deserve a"
+" note: rescuing your vampires from torpor might not be necessary - they still count as controlled for the "
+"%(consanguineous_boon)s so, if you do not need their votes or actions you can just leave them be. Also note that "
+"%(mozambique_allure)s can be used to draw a crypt card if all your vampires are already Laibon. Finally, "
+"%(the_eldest_are_kholo)s can also be used as a reaction to stop an opponent's vote, but this should be done "
+"sparingly: you need it to get your %(consanguineous_boon)s through. </p> <p> If you get too much attention on a "
+"table, especially if your neighbours keep minions unlocked with intercept ready, you can consider taking a static "
+"stance and just do nothing for a turn or two. Holding back to block actions that do not come can be very frustrating "
+"for them: just waiting it out can give you the opening you need to get the deck rolling. </p> <h2>Tweaks and "
+"variants</h2> <p> You might want to check the %(main_article)s on this archetype for other variants. </p> <p> The "
+"idea leaves room for interpretation and alternatives. You can, for example, include a few "
+"%(kine_resources_contested)s for additional damage so you don't have to rely on the %(week_of_nightmares)s so much. "
+"You can also have more modifiers to help you get the actions through: more %(change_of_target)s can be used and most "
+"vampires in the crypt can use %(chi)s for stealth with %(fata_morgana)s or %(mirror_image)s. %(city_star_taxi)s and "
+"%(strange_day)s are other possibilities, although they're not in print yet. </p> <p> If you have access to some "
+"legacy cards, consider replacing %(life_in_the_city)s with a pair of %(gird_minions)s. You might also want to include"
+" one or two %(the_uncoiling)s to deal with problematic events like %(the_unmasking)s or %(scourge_of_the_enochians)s."
+" An %(aranthebes)s or two can also be nice, just to contest it if it gets out. Finally a few %(bamba)s might help "
+"reduce the cost of these %(embraces)s and %(autarkis_persecution)s might bring a bit of vote diversity to fight back "
+"against %(delaying_tactics)s. </p> <h2>What to buy</h2> <p> Two %(libertine_ball)s and a %(anniversary)s, the rest of"
+" the cards can be found on %(print_on_demand)s. %(ashlesha)s is, for now, only available as a promo card from the "
+"%(kickstarter)s in 2021. But you can replace her by %(joaquina_amaya)s or just an %(anarch_convert)s. "
+"%(life_in_the_city)s (%(v5_malkavian)s) and %(heart_of_nizchetus)s (%(anthology)s) can be traded or just cut out. "
+"</p>"
+msgstr ""
+"<h2>Principe</h2> <p> Il s'agit d'un deck <em>essaim</em> où les Ravnos %(ravnos)s utilisent des %(embraces)s pour "
+"proliférer, %(consanguineous_boon)s pour régénérer et mordent avec leur essaim pour éliminer. </p> <p> Le plan est "
+"d'avoir une horde de vampires <em>Laibon</em> Ravnos %(ravnos)s. Sortez un vampire le plus vite possible, utilisez "
+"%(mozambique_allure)s pour devenir Laibon et redresser, puis %(embrace)s. Lorsque vous en avez l'occasion, jouez un "
+"%(ravnos_carnival)s pour vous aider à payer %(the_embrace)s. Continuez à développer votre horde, puis appelez "
+"%(consanguineous_boon)s avec %(the_eldest_are_kholo)s pour régénérer et recruter encore plus de Ravnos. Une fois que "
+"vous avez suffisamment de vampires pour tuer votre proie, commencez à mordre. %(week_of_nightmares)s peut vous aider "
+"à donner le coup de grâce avec panache. </p> <p> Le deck est difficile à arrêter en raison du nombre élevé d'actions "
+"à +1 discrétion. Une fois qu'il est installé avec suffisamment de vampires, il est pratiquement instoppable. Quelques"
+" subtilités méritent mention : sauver vos vampires de la torpeur n'est pas forcément nécessaire — ils comptent "
+"toujours comme contrôlés pour le %(consanguineous_boon)s donc, si vous n'avez pas besoin de leurs votes ou actions, "
+"vous pouvez simplement les laisser tels quels. Notez également que %(mozambique_allure)s peut être utilisé pour "
+"piocher une carte de crypte si tous vos vampires sont déjà Laibon. Enfin, %(the_eldest_are_kholo)s peut également "
+"être utilisé comme réaction pour arrêter le vote d'un adversaire, mais cela doit être fait avec parcimonie : vous en "
+"avez besoin pour faire passer vos %(consanguineous_boon)s. </p> <p> Si vous attirez trop l'attention à la table, "
+"surtout si vos voisins gardent des serviteurs redressés avec de l'interception prête, vous pouvez envisager de "
+"prendre une position statique et de ne rien faire pendant un tour ou deux. Se retenir pour bloquer des actions qui ne"
+" viennent pas peut être très frustrant pour eux : le simple fait d'attendre peut vous donner l'ouverture dont vous "
+"avez besoin pour lancer votre jeu. </p> <h2>Ajustements et variantes</h2> <p> Vous voudrez peut-être vérifier "
+"l'%(main_article)s sur cet archétype pour d'autres variantes. </p> <p> L'idée laisse place à l'interprétation et aux "
+"alternatives. Vous pouvez, par exemple, inclure quelques %(kine_resources_contested)s pour des dégâts supplémentaires"
+" afin de ne pas avoir à autant vous fier à %(week_of_nightmares)s. Vous pouvez également avoir plus de modificateurs "
+"pour vous aider à faire passer les actions : plus de %(change_of_target)s peuvent être utilisés et la plupart des "
+"vampires de la crypte peuvent utiliser %(chi)s pour de la discrétion avec %(fata_morgana)s ou %(mirror_image)s. "
+"%(city_star_taxi)s et %(strange_day)s sont d'autres possibilités, bien qu'elles ne soient pas encore réimprimées. "
+"</p> <p> Si vous avez accès à certaines anciennes cartes, envisagez de remplacer %(life_in_the_city)s par une paire "
+"de %(gird_minions)s. Vous pouvez également inclure un ou deux %(the_uncoiling)s pour gérer des événements "
+"problématiques comme %(the_unmasking)s ou %(scourge_of_the_enochians)s. Un %(aranthebes)s ou deux peuvent aussi être "
+"bien, juste pour le disputer s'il sort. Enfin, quelques %(bamba)s peuvent aider à réduire le coût de ces %(embraces)s"
+" et %(autarkis_persecution)s peut apporter un peu de diversité de vote pour lutter contre %(delaying_tactics)s. </p> "
+"<h2>Quoi acheter</h2> <p> Deux %(libertine_ball)s et un %(anniversary)s, le reste des cartes se trouve à "
+"%(print_on_demand)s. %(ashlesha)s n'est, pour l'instant, disponible que sous forme de carte promo du %(kickstarter)s "
+"en 2021. Mais vous pouvez la remplacer par %(joaquina_amaya)s ou simplement un %(anarch_convert)s. "
+"%(life_in_the_city)s (%(v5_malkavian)s) et %(heart_of_nizchetus)s (%(anthology)s) peuvent être échangés ou simplement"
+" retirés. </p>"
+
+#: codex_of_the_damned/templates/archetypes/neonate/samedi-rush.html:15
+#, python-format
+msgid ""
+"<h2>Highlights</h2> <p> This is a <em>rush</em> deck using Samedi %(samedi)s and the ominous %(THN)s discipline. </p>"
+" <p> The plan is to take down the prey's vampire and use %(blessings_of_the_loa)s to bleed hard. The combat module "
+"relies mainly on %(THN)s, especially on %(groaning_corpse)s and %(relentless_reaper)s, with a few %(FOR)s cards for "
+"prevention and mobility. </p> <p> %(relentless_reaper)s is an excellent card to keep a combat going and counter "
+"<em>Combat Ends</em> and <em>Dodge</em>. On top of that, playing multiple rounds combined with %(mambo_jeanne)s or "
+"%(groaning_corpse)s is deadly, and the option to prevent a damage is always good. </p> <p> Having %(for)s also allows"
+" for the use of %(freak_drive)s for multiple rush actions in a single turn. This also means that a bleed getting "
+"through does not prevent a minion to just unlock and rush afterwards. </p> <p> Because the decks's defence is close "
+"to none, special attention to the predator is required, although disabling all vampires around the table going "
+"backwards is not a winning strategy. The deck should be able to keep any predator at bay while also putting decent "
+"pressure on their prey. As a rush deck, table control is the main focus here - getting the number of players down to "
+"3 while surviving is the most important part: once only a few players remain, disabling all the vampires around the "
+"table should be possible. </p> <h2>Tweaks and variants</h2> <p> There are a not a lot of variants here, althoug a few"
+" legacy cards are very good inclusions, like %(pulled_fangs)s, %(bums_rush)s and %(rigor_mortis)s. There are other "
+"possible inclusions, like a few %(reanimated_corpse)s for the oust, %(ossian)s for additional rushes or "
+"%(scourge_of_the_enochians)s against swarms. </p> <p> There is some wiggling room in the combat module, especially "
+"when it comes down to damage prevention and mobility: %(soak)s can be used against environmental damage like "
+"%(carrion_crows)s, %(rolling_with_the_punches)s can be used in more copies if one expects a high combat threat. </p> "
+"<h2>What to buy</h2> <p> The bulk of the cards come from two %(lost_kindred)s bundles, with additions from "
+"%(heirs_to_the_blood_1)s, %(pact_with_nephandi)s and %(fb_ventrue)s, plus a few cards that can be found in various "
+"bundles or traded. </p>"
+msgstr ""
+"<h2>Principe</h2> <p> Il s'agit d'un deck <em>rush</em> avec les Samedi %(samedi)s et leur terrible discipline "
+"%(THN)s. </p> <p> Le plan est d'abattre les vampires de la proie et d'utiliser %(blessings_of_the_loa)s pour mordre "
+"abondamment. Le module de combat s'appuie principalement sur %(THN)s, notamment sur %(groaning_corpse)s et "
+"%(relentless_reaper)s, avec quelques cartes %(FOR)s pour la prévention et la mobilité. </p> <p> %(relentless_reaper)s"
+" est une excellente carte pour maintenir un combat et contrer les <em>Fins de combat</em> et <em>Esquive</em>. En "
+"plus de cela, jouer plusieurs rounds avec %(mambo_jeanne)s ou %(groaning_corpse)s est mortel, et la possibilité de "
+"prévenir un dégât est toujours pratique. </p> <p> Avoir %(for)s permet également l'utilisation de %(freak_drive)s "
+"pour plusieurs actions en un seul tour. Cela signifie également qu'une morsure n'empêche pas un serviteur de se "
+"déverrouiller et de réaliser un rush par la suite. </p> <p> Parce que la défense du deck est quasi nulle, une "
+"attention particulière au prédateur est requise, bien qu'abattre tous les vampires autour de la table en \"marche "
+"arrière\" ne soit pas une stratégie gagnante. Le deck devrait être capable de tenir à distance tout prédateur tout en"
+" exerçant une pression décente sur sa proie. En tant que deck rush, le contrôle de la table est l'objectif principal "
+"ici — réduire le nombre de joueurs à 3 tout en survivant est la partie la plus importante : une fois qu'il ne reste "
+"que quelques joueurs, il devrait être possible d'abattre tous les vampires de la table. </p> <h2>Ajustements et "
+"variantes</h2> <p> Il n'y a pas beaucoup de variantes ici, bien que quelques anciennes cartes soient de très bonnes "
+"inclusions, comme %(pulled_fangs)s, %(bums_rush)s et %(rigor_mortis)s. Il existe d'autres inclusions possibles, comme"
+" quelques %(reanimated_corpse)s pour l'élimination, %(ossian)s pour des rushs supplémentaires ou "
+"%(scourge_of_the_enochians)s contre les essaims. </p> <p> Il y a une certaine marge de manœuvre dans le module de "
+"combat, en particulier en ce qui concerne la prévention des dégâts et la mobilité : %(soak)s peut être utilisé contre"
+" les dégâts environnementaux comme %(carrion_crows)s, %(rolling_with_the_punches)s peut être utilisé en plus "
+"d'exemplaires si l'on s'attend à une menace de combat élevée. </p> <h2>Quoi acheter</h2> <p> La majeure partie des "
+"cartes provient de deux paquets %(lost_kindred)s, avec des ajouts de %(heirs_to_the_blood_1)s, %(pact_with_nephandi)s"
+" et %(fb_ventrue)s, plus quelques cartes qui peuvent être trouvés dans divers paquets ou échangés. </p>"
+
+#: codex_of_the_damned/templates/archetypes/neonate/stanislava.html:16
+#, python-format
+msgid ""
+"<h2>Highlights</h2> <p> This is a <em>vote & bleed</em> deck using %(stanislava)s and fellow Gangrel %(gangrel)s "
+"royalty. </p> <p> The preconstructed decklist is already a top tier tournament archetype, only you might want to "
+"remove %(fear_of_mekhet)s, a good counter to this deck that has nothing to do in it: it was a decklist printing "
+"error. </p> <h2>Tweaks and variants</h2> <p> Although the decklist is already powerful, it still leaves a lot of room"
+" for tweaking it to your own style and local %(meta)s. Minor tweaks are common, like removing the nerfed "
+"%(pentex_subversion)s and a few %(parity_shift)s, adding one or two %(zillahs_valley)s and a "
+"%(scourge_of_the_enochians)s, using a fifth %(stanislava)s for a higher draw chance, doubling %(ennoias_theater)s and"
+" %(dreams_of_the_sphinx)s, reducing the number of %(earth_meld)s, adding a %(banishment)s or two and removing "
+"%(permanent_vacation)s. All these changes are judgment calls and depend on your %(meta)s. </p> <p> One of the "
+"possible variants includes a number of changes: remove the %(zillahs_valley)s to avoid jamming the hand and change "
+"the crypt a bit. %(hartmut_stover)s can be removed to include more Gangrel. %(ingrid_rossler)s in particular can be "
+"included in 4 copies with the idea of getting her out first. %(ennoias_theater)s and %(dreams_of_the_sphinx)s can "
+"both be doubled for a better chance to get her out in two turns. This gives access to her ability sooner, alleviates "
+"the absence of %(zillahs_valley)s and can even let you remove a few %(govern_the_unaligned)s. On the other hand if "
+"you remove %(hartmut_stover)s and don't put enough %(xaviar_adv)s, you're left with no decent sidekick for "
+"%(enkil_cog)s: better remove it, it's a dangerous modifier to put on %(stanislava)s because it leaves her open to an "
+"%(archon_investigation)s. </p> <p> Another completely different idea, if you have access to legacy cards, is to "
+"include %(alastor)s and %(assault_rifle)s and double the number of %(xaviar_adv)s. Both %(stanislava)s and "
+"%(xaviar_adv)s should be able to rush and vote in the same turn, a powerful combination. %(anathema)s can even be "
+"added to the mix, as in %(desso_alastors_deck)s from 2021. </p> <h2>What to buy</h2> <p> This is a %(anniversary)s "
+"deck straight out of the box. A second one is useful for a few tweaks. </p>"
+msgstr ""
+"<h2>Principe</h2> <p> Il s'agit d'un deck <em>vote et morsure</em> qui utilise %(stanislava)s et la royauté Gangrel "
+"%(gangrel)s. </p> <p> La liste du deck préconstruit est déjà un archétype de tournoi de haut niveau, vous voudrez "
+"peut-être juste supprimer %(fear_of_mekhet)s, un bon contre à ce deck qui n'a rien à faire dedans : il s'agit d'une "
+"erreur d'impression dans la liste du deck. </p> <h2>Ajustements et variantes</h2> <p> Bien que la liste de deck soit "
+"déjà puissante, elle laisse encore beaucoup de place pour l'adapter à votre propre style et %(meta)s local. Des "
+"ajustements mineurs sont courants, comme la suppression de %(pentex_subversion)s et quelques %(parity_shift)s, "
+"l'ajout d'une ou deux %(zillahs_valley)s et d'un %(scourge_of_the_enochians)s, utiliser une cinquième %(stanislava)s "
+"pour une meilleure chance de pioche, doubler %(ennoias_theater)s et %(dreams_of_the_sphinx)s, réduire le nombre de "
+"%(earth_meld)s, ajouter un %(banishment)s ou deux et supprimer %(permanent_vacation)s. Tous ces changements sont "
+"subjectifs et dépendent de votre %(meta)s. </p> <p> L'une des variantes possibles comporte un certain nombre de "
+"modifications : supprimer les %(zillahs_valley)s pour éviter de coincer la main et modifier un peu la crypte. "
+"%(hartmut_stover)s peut être supprimé pour inclure plus de Gangrel. %(ingrid_rossler)s notamment peut être incluse en"
+" 4 exemplaires avec l'idée de la sortir en premier. %(ennoias_theater)s et %(dreams_of_the_sphinx)s peuvent tous deux"
+" être doublés pour une meilleure chance de la sortir en deux tours. Cela donne accès à sa capacité plus tôt, atténue "
+"l'absence de %(zillahs_valley)s et peut même vous permettre de supprimer quelques %(govern_the_unaligned)s. Par "
+"contre si vous supprimez %(hartmut_stover)s et ne mettez pas assez de %(xaviar_adv)s, vous n'avez plus de vampire "
+"décent pour %(enkil_cog)s : mieux vaut le supprimer, c'est un modificateur dangereux à mettre sur %(stanislava)s car "
+"elle s'ouvre à une %(archon_investigation)s. </p> <p> Une autre idée complètement différente, si vous avez accès aux "
+"anciennes cartes, est d'inclure %(alastor)s et %(assault_rifle)s et de doubler le nombre de %(xaviar_adv)s. Tant "
+"%(stanislava)s que %(xaviar_adv)s devraient pouvoir rush et voter dans le même tour, une combinaison puissante. "
+"%(anathema)s peut même être ajouté au tout, comme dans le %(desso_alastors_deck)s de 2021. </p> <h2>Quoi acheter</h2>"
+" <p> C'est un deck %(anniversary)s tout droit sorti de la boîte. Un deuxième est utile pour quelques ajustements. "
+"</p>"
+
+#: codex_of_the_damned/templates/archetypes/neonate/stanislava.html:22
+msgid "Desso Alastor's deck"
+msgstr "deck de Desso Alastor"
+
+#: codex_of_the_damned/templates/archetypes/neonate/the-capuchin.html:16
+#, python-format
+msgid ""
+"<h2>Highlights</h2> <p> This is a <em>toolbox</em> deck using %(the_capuchin)s as star vampire and %(gerald_windham)s"
+" as a sidekick. </p> <p> The idea is similar to a %(anti_ventrue_grinder)s: use %(AUS)s%(FOR)s for a solid grinder "
+"defence, with %(DOM)s for bleed and additional bounces. In this deck, vampires are more expensive but they got "
+"%(THA)s for additional useful tricks: %(magic_of_the_smith)s to fetch useful equipments quickly, a bit of additional "
+"stealth with %(mirror_walk)s and one of the best strikes of the game with %(theft_of_vitae)s. </p> <p> The deck has a"
+" slow start but grinds the rest of the table strong enough to secure a win in the late game. Key actions should be "
+"blocked and bleed actions from the predator bounced once they get enough stealth on them. Thanks to "
+"%(theft_of_vitae)s that can not be prevented and brings back a bit of blood on the vampires, the blood balance on the"
+" table should tip in favor of the deck as the game advances. </p> <p> The strategy is all about using the pressure of"
+" the slow grind and the good defence to survive and build up to a great %(lunge)s. Taking the time to craft the "
+"perfect hand to oust the prey in a single swift move is particularily important here. Luckily, %(the_capuchin)s's "
+"ability gives you a good hand size so you can seat on good cards you want to keep. </p> <h2>Tweaks and variants</h2> "
+"<p> A number of tweaks can be done depending on the %(meta)s: %(seduction)s and %(bonding)s can provide more stealth,"
+" %(soul_burn)s or %(blood_rage)s are great against weapons and %(for)s prevention, and %(apportation)s can help with "
+"mobility. Allies like %(mylan_horseed)s, %(carlton_van_wyk)s and %(ponticulus)s are also worth considering. "
+"%(enkil_cog)s might be worth doubling and one or two %(direct_intervention)s can't hurt. More permanent intercept is "
+"not desirable: you still want bleeds to get through so you can bounce them. %(the_rack)s and %(heart_of_nizchetus)s "
+"are worthy additions, but not really necessary. Finally, you might want to dial down on the %(conditioning)s in favor"
+" of more %(murmur_of_the_false_will)s if you are in a bleed intensive environment rich in %(archon_investigation)s. "
+"</p> <p> %(saulot_the_wanderer)s is another possible partner for %(the_capuchin)s, as in %(danilo_torrisi_s_deck)s "
+"from the 2017 EC. %(DOM)s becomes less relevant, but is not required, since %(saulot)s cannot be brought out by "
+"%(govern_the_unaligned)s anyway. %(saulot)s's ability might well be worth the loss, especially when combined with "
+"%(the_rack)s. </p> <p> A few legacy cards are great additions: %(erebus_mask)s and %(eagles_sight)s should be added "
+"if available. %(depravity)s, %(metro_underground)s, %(sniper_rifle)s and  %(my_enemys_enemy)s are worth considering. "
+"%(karl_schrekt)s might also fit here. </p> <p> Making more use of Anarch tech is possible: bumping up the number of "
+"%(anarch_convert)s might open the possibility of %(anarch_revolt)s for offense, combined with a number of "
+"%(guardian_vigil)s for defence. Anarchs also have access to %(the_anarch_free_press)s. All in all, this leads up to a"
+" whole different deck, closer to a wall. In this case, using %(angelique)s instead of %(gerald_windham)s, coupled "
+"with some %(vengeful_spirit)s and %(emerald_legionnaire)s, might be a better bet than using %(DOM)s. %(NEC)s can also"
+" provide additional stealth and combat options. </p> <h2>What to buy</h2> <p> A %(promo_pack_1)s for "
+"%(the_capuchin)s, %(keepers_of_tradition_2)s and %(anthology)s to complete the crypt, two %(anniversary)s plus "
+"%(v5_tremere)s, %(v5_ventrue)s and %(fb_ventrue)s for the library. An optional %(v5_banu_haqim)s if you want to use "
+"%(blood_rage)s or %(soul_burn)s, and a few cards from %(fb_nosferatu)s and %(den_of_fiends)s that can be traded "
+"instead. A tricky point will be to get enough %(dreams_of_the_sphinx)s, but you can adjust the decklist with less of "
+"them. </p>"
+msgstr ""
+"<h2>Principe</h2> <p> Il s'agit d'une <em>toolbox</em> qui utilise %(the_capuchin)s comme vampire star et "
+"%(gerald_windham)s comme acolyte. </p> <p> L'idée est similaire à un %(anti_ventrue_grinder)s : utiliser "
+"%(AUS)s%(FOR)s pour une défense solide, avec %(DOM)s pour les morsures et les rebonds supplémentaires. Dans ce deck, "
+"les vampires sont plus chers mais ils ont %(THA)s pour des astuces supplémentaires : %(magic_of_the_smith)s pour "
+"récupérer des équipements utiles rapidement, un peu de discrétion supplémentaire avec %(mirror_walk)s et l'une des "
+"meilleurs frappes du jeu avec %(theft_of_vitae)s . </p> <p> Le deck a un démarrage lent mais broie le reste de la "
+"table suffisamment fort pour assurer une victoire en fin de partie. Les actions clés doivent être bloquées et les "
+"actions de morsure du prédateur doivent rebondir une fois qu'elles sont suffisamment discrètes. Grâce à "
+"%(theft_of_vitae)s qui ne peut être prévenu et ramène un peu de sang sur les vampires, l'équilibre de sang à la table"
+" devrait pencher en faveur du deck au fur et à mesure que le jeu avance. </p> <p> La stratégie consiste à utiliser la"
+" pression de broyage lente et la bonne défense pour survivre et se construire un parfait %(lunge)s. Prendre le temps "
+"de créer la main parfaite pour évincer la proie en un seul mouvement rapide est particulièrement important ici. "
+"Heureusement, la capacité de %(the_capuchin)s vous donne une bonne taille de main afin que vous puissiez garder les "
+"cartes que vous souhaitez conserver. </p> <h2>Ajustements et variantes</h2> <p> Un certain nombre d'ajustements "
+"peuvent être effectués en fonction du %(meta)s : %(seduction)s et %(bonding)s peuvent fournir plus de discrétion, "
+"%(soul_burn)s ou %(blood_rage)s sont excellents contre les armes et la prévention %(for)s, et %(apportation)s peut "
+"aider à la mobilité. Des alliés comme %(mylan_horseed)s, %(carlton_van_wyk)s et %(ponticulus)s méritent également "
+"d'être pris en considération. %(enkil_cog)s peut valoir la peine d'être doublé et une ou deux %(direct_intervention)s"
+" ne peuvent pas faire de mal. Plus d'interception permanente n'est pas souhaitable : vous voulez quand même que les "
+"morsures passent pour pouvoir les faire rebondir. %(the_rack)s et %(heart_of_nizchetus)s sont des ajouts posssibles, "
+"mais pas vraiment nécessaires. Enfin, vous voudrez peut-être réduire les %(conditioning)s en faveur de plus de "
+"%(murmur_of_the_false_will)s si vous êtes dans un environnement riche en morsures et en %(archon_investigation)s. "
+"</p> <p> %(saulot_the_wanderer)s est un autre partenaire possible pour %(the_capuchin)s, comme dans le "
+"%(danilo_torrisi_s_deck)s du CE 2017. %(DOM)s devient moins pertinent, mais n'est pas obligatoire, puisque %(saulot)s"
+" ne peut de toute façon pas être sorti par %(govern_the_unaligned)s. L'aptitude de %(saulot)s peut bien en valoir la "
+"peine, surtout lorsqu'elle est combinée avec %(the_rack)s. </p> <p> Quelques anciennes cartes sont d'excellents "
+"ajouts : %(erebus_mask)s et %(eagles_sight)s devraient être ajoutés si disponibles. %(depravity)s, "
+"%(metro_underground)s, %(sniper_rifle)s et %(my_enemys_enemy)s méritent d'être pris en considération. "
+"%(karl_schrekt)s peut également trouver sa place ici. </p> <p> Il est possible d'utiliser davantage la technologie "
+"Anarch : augmenter le nombre d'%(anarch_convert)s pourrait ouvrir la possibilité d'%(anarch_revolt)s pour l'attaque, "
+"combiné à un certain nombre de %(guardian_vigil)s pour la défense. Les anarchs ont également accès à "
+"%(the_anarch_free_press)s. Dans l'ensemble, cela mène à un tout autre deck, plus proche d'un mur. Dans ce cas, "
+"utiliser %(angelique)s au lieu de %(gerald_windham)s, couplé avec quelques %(vengeful_spirit)s et "
+"%(emerald_legionnaire)s, pourrait être un meilleur plan que d'utiliser %(DOM)s. %(NEC)s peut également fournir des "
+"options de discrétion et de combat supplémentaires. </p> <h2>Quoi acheter</h2> <p> Un %(promo_pack_1)s pour "
+"%(the_capuchin)s, %(keepers_of_tradition_2)s et %(anthology)s pour compléter la crypte, deux %(anniversary)s plus "
+"%(v5_tremere)s_, %(v5_ventrue)s et %(fb_ventrue)s pour la bibliothèque. Un %(v5_banu_haqim)s optionnel si vous "
+"souhaitez utiliser %(blood_rage)s ou %(soul_burn)s, et quelques cartes de %(fb_nosferatu)s et %(den_of_fiends)s qui "
+"peuvent être échangées à la place. Un point délicat sera d'avoir assez de %(dreams_of_the_sphinx)s, mais vous pouvez "
+"ajuster la liste en en mettant moins. </p>"
+
+#: codex_of_the_damned/templates/archetypes/neonate/the-capuchin.html:56
+#: codex_of_the_damned/templates/archetypes/neonate/ventrue-grinder.html:40
+msgid "!Ventrue Grinder"
+msgstr "!Ventrue Grinder"
+
+#: codex_of_the_damned/templates/archetypes/neonate/the-capuchin.html:62
+#: codex_of_the_damned/templates/archetypes/neonate/ventrue-lawfirm.html:48
+msgid "lunge"
+msgstr "coup de grâce"
+
+#: codex_of_the_damned/templates/archetypes/neonate/the-capuchin.html:63
+msgid "Promo Pack 1"
+msgstr "Promo Pack 1"
+
+#: codex_of_the_damned/templates/archetypes/neonate/the-capuchin.html:64
+msgid "V5 Banu Haqim"
+msgstr "V5 Banu Haqim"
+
+#: codex_of_the_damned/templates/archetypes/neonate/the-capuchin.html:66
+#: codex_of_the_damned/templates/archetypes/neonate/ventrue-grinder.html:53
+#: codex_of_the_damned/templates/archetypes/neonate/ventrue-lawfirm.html:53
+msgid "V5 Ventrue"
+msgstr "V5 Ventrue"
+
+#: codex_of_the_damned/templates/archetypes/neonate/the-unnamed.html:16
+#, python-format
+msgid ""
+"<h2>Highlights</h2> <p> This is a <em>stealth & bleed</em> deck using %(the_unnamed)s as star vampire. The idea is to"
+" bleed each turn with %(the_unnamed)s. The deck aims to put %(enkil_cog)s and use %(instantaneous_transformation)s or"
+" %(homunculus)s to unlock and bleed twice (once in your turn, once during an opponent's turn). </p> <p> %(PRE)s bleed"
+" enhancers like %(legal_manipulations)s and %(aire_of_elation)s, coupled with %(OBF)s for stealth provide a strong "
+"steady bleed. %(PRO)s provides additional stealth with %(form_of_mist)s and %(instantaneous_transformation)s, two "
+"very versatile cards. Finally, %(i_am_legion)s provides a counter against %(AUS)s bounces like "
+"%(telepathic_misdirection)s but can also cancel some %(aus)s intercept or just get discarded on a successful action "
+"if the prey does not use %(aus)s. </p> <p> On the defence side, the deck provides a number of options. "
+"%(unleash_hells_fury)s can deter bleeds, but also rushes. %(condemnation_mute)s and %(arishat)s are great against "
+"political decks, while %(xeper)s and %(entrancement)s help counter allies decks. But the biggest defence of the deck "
+"is its ability to %(bloat)s: between %(the_unnamed)s's ability and %(tend_the_flock)s, the deck already regenerates "
+"pool fast, but multiple other cards help with that like %(legal_manipulations)s and %(i_am_legion)s. </p> <p> There "
+"are two important points to keep in mind. First, %(the_unnamed)s needs blood for key cards, so blood management is "
+"key: a number of cards help like %(the_coven)s, %(perfectionist)s and %(vessel)s. Second, %(tend_the_flock)s requires"
+" a younger vampire in crypt. You are supposed to get the blood back in your pool at the end of your turn: influencing"
+" some sidekicks might be useful but should only be done if there is an option left in the crypt for future "
+"%(tend_the_flock)s. </p> <p> One last trick to consider is the timing of the additional bleed action once "
+"%(enkil_cog)s is in play. Bleeding at the end of your predator turn is standard, since it gets you the edge and an "
+"additional pool. But bleeding during your prey's turn can be interesting: first you don't have to worry about "
+"%(archon_investigation)s (the prey cannot play it during their turn), but also this can give you just the pool you "
+"need to survive before your predator takes their turn. </p> <h2>Tweaks and variants</h2> <p> Check the "
+"%(main_article)s for more information about this deck. You might also be interested in the "
+"%(information_highway_article)s, for a cheaper version. </p> <p> A couple of legacy cards can help improve this deck."
+" %(flurry_of_action)s is great here and can replace a few bleed actions. %(sense_the_sin)s is cheaper than "
+"%(aire_of_elation)s, %(eluding_the_arms_of_morpheus)s useful for additional unlock and %(rotschreck)s is a great "
+"security belt. %(dhabi_revenant)s is slightly better than %(js_simmons_esq)s. %(contagion)s and %(ruins_of_charizel)s"
+" are interesting options, but not necessary ones. %(mental_maze)s can be added for combat defence, but is only worth "
+"the slot if you expect heavy combat modules that %(the_unnamed)s's ability can't deter. </p> <p> There are a few "
+"variations to this deck. One can focus on more %(legal_manipulations)s and forego the %(enkil_cog)s / %(homunculus)s "
+"combo. Alternatively, a handful of %(shatter_the_gate)s can be added for additional damage, but it's hardly "
+"necessary. Finally, minor tweaks can be considered, like adding %(pentex_subversion)s or %(mylan_horseed)s. </p> "
+"<h2>What to buy</h2> <p> A couple %(heirs_to_the_blood_1)s plus %(anniversary)s and %(anthology)s, coupled with "
+"%(fb_malkavian)s and %(v5_malkavian)s for the %(obf)s cards. %(pre)s cards come from %(libertine_ball)s and "
+"%(fb_toreador)s. You might want to do a few trades or adapt the decklist for a few cards like %(dark_influences)s, "
+"the eighth %(instantaneous_transformation)s and third %(enkil_cog)s, or a few cards coming from a third "
+"%(heirs_to_the_blood_1)s and %(fb_nosferatu)s. %(print_on_demand)s can provide you with %(condemnation_mute)s and "
+"optionnaly with %(direct_intervention)s if you want to replace %(dark_influences)s. </p> <p> As a closing comment, "
+"you might want to procure a %(v5_ministry)s on top of it all, since it will provide a number of fun and interesting "
+"options to consider for this deck. </p>"
+msgstr ""
+"<h2>Principe</h2> <p> C'est un deck <em>stealth & bleed</em> qui utilise %(the_unnamed)s comme vampire star. L'idée "
+"est de mordre à chaque tour avec %(the_unnamed)s. Le deck a pour but de mettre %(enkil_cog)s et d'utiliser "
+"%(instantaneous_transformation)s ou %(homunculus)s pour se redresser et mordre deux fois (une fois à votre tour, une "
+"fois pendant le tour d'un adversaire). </p> <p> Les amplificateurs de morsure %(PRE)s comme %(legal_manipulations)s "
+"et %(aire_of_elation)s, associés à %(OBF)s pour la discrétion, fournissent une morsure stable et puissante. %(PRO)s "
+"offre une discrétion supplémentaire avec %(form_of_mist)s et %(instantaneous_transformation)s, deux cartes très "
+"polyvalentes. Enfin, %(i_am_legion)s fournit un contre contre les rebonds %(AUS)s comme %(telepathic_misdirection)s "
+"mais peut également annuler certaines interceptions %(aus)s ou simplement être cyclé sur une action réussie si la "
+"proie n'utilise pas %(aus)s. </p> <p> Côté défense, le deck propose un certain nombre d'options. "
+"%(unleash_hells_fury)s peut dissuader les morsures, mais aussi les rushs. %(condemnation_mute)s et %(arishat)s sont "
+"parfaits contre les decks politiques, tandis que %(xeper)s et %(entrancement)s aident à contrer les decks alliés. "
+"Mais la plus grande défense du deck est sa capacité à %(bloat)s : entre la capacité de %(the_unnamed)s et "
+"%(tend_the_flock)s, le deck se régénère déjà rapidement, mais plusieurs autres cartes aident comme "
+"%(legal_manipulations)s et %(i_am_legion)s. </p> <p> Il y a deux points importants à garder à l'esprit. Premièrement,"
+" %(the_unnamed)s a besoin de sang pour les cartes clés, donc la gestion du sang est centrale : un certain nombre de "
+"cartes aident comme %(the_coven)s, %(perfectionist)s et %(vessel)s. Deuxièmement, %(tend_the_flock)s nécessite un "
+"vampire plus jeune dans la crypte. Vous êtes censé remettre le sang dans votre réserve à la fin de votre tour : "
+"influencer quelques seconds couteaux peut être utile mais ne devrait être fait que s'il reste une option dans la "
+"crypte pour de futurs %(tend_the_flock)s. </p> <p> Une dernière astuce à considérer est le timing de l'action de "
+"morsure supplémentaire une fois qu'%(enkil_cog)s est en jeu. La morsure à la fin du tour du prédateur est standard, "
+"car cela donne l'avantage et un point d'influence supplémentaire. Mais mordre pendant le tour de la proie peut être "
+"intéressant : d'abord vous n'avez pas à vous soucier d'%(archon_investigation)s (la proie ne peut pas le jouer "
+"pendant son tour), mais aussi cela peut vous donner juste l'influence dont vous avez besoin pour survivre au tour de "
+"votre prédateur. </p> <h2>Ajustements et variantes</h2> <p> Consultez l'%(main_article)s pour plus d'informations sur"
+" ce deck. Vous pourriez également être intéressé par l'%(information_highway_article)s, pour une version moins chère."
+" </p> <p> Quelques cartes historiques peuvent aider à améliorer ce deck. %(flurry_of_action)s est parfait ici et peut"
+" remplacer quelques actions de morsure. %(sense_the_sin)s est moins cher qu'%(aire_of_elation)s, "
+"%(eluding_the_arms_of_morpheus)s utile pour un redressement de plus et %(rotschreck)s est une excellente assurance. "
+"%(dhabi_revenant)s est légèrement mieux que %(js_simmons_esq)s. %(contagion)s et %(ruins_of_charizel)s sont des "
+"options intéressantes, mais pas indispensables. %(mental_maze)s peut être ajouté pour la défense au combat, mais ne "
+"vaut l'emplacement que si vous vous attendez à des modules de combat lourds que l'aptitude de %(the_unnamed)s ne peut"
+" pas dissuader. </p> <p> Il existe quelques variantes à ce deck. On peut se concentrer sur plus de "
+"%(legal_manipulations)s et renoncer au combo %(enkil_cog)s / %(homunculus)s. Alternativement, une poignée de "
+"%(shatter_the_gate)s peut être ajoutée pour des dégâts supplémentaires, mais ce n'est guère nécessaire. Enfin, des "
+"ajustements mineurs peuvent être envisagés, comme l'ajout de %(pentex_subversion)s ou %(mylan_horseed)s. </p><h2>Quoi"
+" acheter</h2> <p> Deux %(heirs_to_the_blood_1)s plus %(anniversary)s et %(anthology)s, couplés avec %(fb_malkavian)s "
+"et %(v5_malkavian)s pour les cartes %(obf)s. Les cartes %(pre)s proviennent de %(libertine_ball)s et %(fb_toreador)s."
+" Vous voudrez peut-être faire quelques échanges ou adapter la liste de deck pour quelques cartes comme "
+"%(dark_influences)s, la huitième %(instantaneous_transformation)s et la troisième %(enkil_cog)s, ou quelques cartes "
+"provenant d'un troisième %(heirs_to_the_blood_1)s et %(fb_nosferatu)s. %(print_on_demand)s peut vous fournir "
+"%(condemnation_mute)s et en option %(direct_intervention)s si vous souhaitez remplacer %(dark_influences)s. </p> <p> "
+"En guise de dernier commentaire, vous voudrez peut-être vous procurer un %(v5_ministry)s en sus, car il fournira un "
+"certain nombre d'options amusantes et intéressantes à considérer pour ce deck. </p>"
+
+#: codex_of_the_damned/templates/archetypes/neonate/the-unnamed.html:55
+msgid "V5 Ministry"
+msgstr "V5 Ministry"
+
+#: codex_of_the_damned/templates/archetypes/neonate/the-unnamed.html:58
+#: codex_of_the_damned/templates/strategy/index.html:52
+msgid "First Blood: Toreador"
+msgstr "Premier Sang : Toréador"
+
+#: codex_of_the_damned/templates/archetypes/neonate/the-unnamed.html:60
+#: codex_of_the_damned/templates/strategy/deck-guides/den-of-fiends.html:135
+#: codex_of_the_damned/templates/strategy/deck-guides/libertine-ball.html:120
+#: codex_of_the_damned/templates/strategy/deck-guides/pact-with-nephandi.html:123
+#: codex_of_the_damned/templates/strategy/deck-guides/parliament-of-shadows.html:139
+msgid "Information Highway article"
+msgstr "article d'Information Highway"
+
+#: codex_of_the_damned/templates/archetypes/neonate/tremere-grinder.html:16
+#, python-format
+msgid ""
+"<h2>Highlights</h2> <p> This is a <em>toolbox</em> deck using Tremere %(tremere)s vampires. </p> <p> The idea is to "
+"use all the great Tremere disciplines: %(AUS)s for defence, %(DOM)s for bleeds and bounces and %(THA)s for combat and"
+" utility. Tremere %(tremere)s also have access to great clan cards. </p> <p> As usual with %(DOM)s decks, the plan is"
+" to get the oldest vampire out first, to be able to use %(govern_the_unaligned)s at superior %(DOM)s to get more "
+"vampires out fast and cheap. Ideally, you want to play 2 or 3 of those at superior. </p> <p> As the game advances, "
+"the deck should defend steadily, using the good amount of wakes provided by %(eyes_of_argus)s and %(on_the_qui_vive)s"
+" to block or bounce dangerous actions. The deck continues its build up by getting some equipments, with usually a "
+"priority for %(heart_of_nizchetus)s or %(bowl_of_convergence)s if you have to choose for a %(magic_of_the_smith)s. "
+"Allies can help with the defence, since both %(carlton_van_wyk)s and %(ponticulus)s are great blockers. Finally, the "
+"master cards are used to slowly set up a good bloating apparatus, with a few %(vessel)s seconded by "
+"%(powerbase_montreal)s, %(wasserschloss_anif)s and %(arcane_library)s. </p> <p> When the opportunity arises, the deck"
+" should bleed strongly with %(govern_the_unaligned)s and %(conditioning)s, using %(mirror_walk)s and %(seduction)s to"
+" get the bleeds through. A block might be welcome if you have good combat options in hand, but beware of the possible"
+" %(bounces)s on your prey's side: you wouldn't want to help them too much. The art of playing this deck consist in "
+"building and defending steadily while preparing strong bleed bursts in your hand. </p> <p> Finally the combat module "
+"is focused and simple: a number of %(taste_of_vitae)s, %(apportation)s for utility, and a roaming %(walk_of_flame)s "
+"just to keep your opponents on their toes. Clearly having a %(magnum)s or %(ivory_bow)s out at some point helps with "
+"combats, but %(taste_of_vitae)s is already awesome by itself: with a 4 blood differential, it cannot be prevented so "
+"it's one of the strongest combat cards of the game. </p> <h2>Tweaks and variants</h2> <p> Check the %(main_article)s "
+"for additional variants and examples. </p> <p> If you got access to legacy cards, %(sniper_rifle)s is a great "
+"addition to this deck. It is a great counter against close combat modules and, if you happen to get one as a "
+"neighbour, you can use %(magic_of_the_smith)s to fetch it at the first opportunity. %(aranthebes)s is also a great "
+"inclusion if you can get your hands on one. </p> <p> There are a number of minute adjustments one can make to this "
+"deck depending on the %(meta)s. If combat is heavy in your circle, with %(pot)s %(immortal_grapple)s preventing you "
+"to use your %(theft_of_vitae)s, consider using more maneuvers and guns, maybe adding a few %(rego_motum)s. If longer "
+"combats with maneuvers are a thing (like modules using %(aid_from_bats)s for example), consider adding a few "
+"%(walk_of_flame)s. If intercept tends to run high, a few %(bonding)s and a %(pentex_subversion)s might be in order. "
+"This deck is mostly about balance: you need to try it and adapt to your playstyle and playgroup. It should perform "
+"pretty well as it is, but the balance between offense, defence and combat can be adjusted to fit your needs. </p> <p>"
+" It is possible to build a variant with higher capacity vampires like %(karl_schrekt)s, %(gerald_windham)s, "
+"%(gabrielle_di_righetti)s, %(lord_tremere)s or %(mistress_fanchon)s. In this case, you'd want to use the "
+"%(zillahs_valley)s / %(villein)s combination to start a bit faster, with a couple of %(information_highway)s on top. "
+"This opens a up a few possibilities like using %(obedience)s, %(murmur_of_the_false_will)s and %(enkil_cog)s. "
+"%(monastery_of_shadows)s and %(giants_blood)s become great inclusions, and you can always try a couple of "
+"%(rutors_hand)s for more actions. </p> <h2>What to buy</h2> <p> A couple %(v5_tremere)s plus "
+"%(keepers_of_tradition_2)s, %(pact_with_nephandi)s and %(den_of_fiends)s. A few cards found in other bundles can also"
+" be traded for. </p>"
+msgstr ""
+"<h2>Principe</h2> <p> C'est une <em>toolbox</em> qui utilise des vampires Tremere %(tremere)s. </p> <p> L'idée est de"
+" utiliser toutes les grandes disciplines Tremere : %(AUS)s pour la défense, %(DOM)s pour les morsures et les rebonds "
+"et %(THA)s pour le combat et quelques coups de pouce. Les Tremere %(tremere)s ont également accès à de superbes "
+"cartes de clan. </p> <p> Comme d'habitude avec les decks %(DOM)s, le plan est pour sortir le plus vieux vampire en "
+"premier, pour pouvoir utiliser %(govern_the_unaligned)s en %(DOM)s supérieure pour sortir rapidement les autres "
+"vampires à moindre frais. Idéalement, vous voulez en jouer 2 ou 3 en supérieur. </p> <p> Au fur et à mesure que le "
+"jeu avance, le deck devrait se défendre solidement, en utilisant les nombreux réveils fournis par %(eyes_of_argus)s "
+"et %(on_the_qui_vive)s pour bloquer ou faire rebondir les actions dangereuses. Le deck continue son installation en "
+"se dotant de certains équipements, avec généralement un priorité pour %(heart_of_nizchetus)s ou "
+"%(bowl_of_convergence)s si vous devez choisir pour un %(magic_of_the_smith)s. Les alliés peuvent aider à la défense, "
+"car %(carlton_van_wyk)s et %(ponticulus)s sont tous deux d'excellents bloqueurs. Enfin, les cartes Maître sont "
+"utilisées pour mettre en place progressivement un bon outil de régénération, avec quelques %(vessel)s aidées de "
+"%(powerbase_montreal)s, %(wasserschloss_anif)s et %(arcane_library)s. </p> <p> Quand l'opportunité se présente, le "
+"deck doit mordre fort avec %(govern_the_unaligned)s et %(conditioning)s, en utilisant %(mirror_walk)s et "
+"%(seduction)s pour faire passer les morsures. Un blocage peut être le bienvenu si vous avez de bonnes options de "
+"combat en main, mais attention aux possibles  %(bounces)s du côté de votre proie : vous ne voudriez pas trop l'aider."
+" L'art de jouer ce deck consiste à construire et défendre constamment tout en préparant de puissants pics de morsure "
+"dans votre main. </p> <p> Enfin, le module de combat est concentré et simple : un bon nombre de %(taste_of_vitae)s, "
+"%(apportation)s pour la mobilité, et un %(walk_of_flame)s vagabond juste pour faire hésiter vos adversaires. Il est "
+"clair qu'avoir un %(magnum)s ou un %(ivory_bow)s à un moment donné aide au combat, mais %(taste_of_vitae)s est déjà "
+"excellent en soi : avec un différentiel de 4 sang, on ne peut pas le prévenir donc c'est l'une des frappes de combat "
+"les plus puissantes du jeu. </p> <h2>Ajustements et variantes</h2> <p> Vérifiez l'%(main_article)s pour des variantes"
+" et des exemples supplémentaires. </p> <p> Si vous avez accès aux anciennes cartes, %(sniper_rifle)s est un excellent"
+" plus pour ce deck. C'est un bon contre contre les modules de combat au corps-à-corps et, si vous en avez un en tant "
+"que voisin, vous pouvez utiliser %(magic_of_the_smith)s pour le récupérer à la première occasion. %(aranthebes)s est "
+"également une excellente inclusion si vous pouvez en trouver un. </p> <p> Il y a un certain nombre de petits "
+"ajustements possibles en fonction du %(meta)s. Si le combat est intense dans votre cercle, avec %(pot)s "
+"%(immortal_grapple)s qui vous empêche d' utiliser vos %(theft_of_vitae)s, envisagez d'utiliser plus de manœuvres et "
+"d'armes, peut-être en ajoutant quelques %(rego_motum)s. Si les combats plus longs avec des manœuvres sont communs "
+"(comme les modules utilisant %(aid_from_bats)s par exemple), pensez à ajouter quelques %(walk_of_flame)s. Si "
+"l'interception a tendance à être élevée, quelques %(bonding)s et une %(pentex_subversion)s peuvent être de mise. Ce "
+"deck est avant tout une question d'équilibre : vous devez l'essayer et l'adapter à votre style de jeu et à votre "
+"groupe. Il doit être assez performant en l'état, mais l'équilibre entre l'attaque, la défense et le combat peut être "
+"ajusté pour répondre à vos besoins. </p> <p> Il est possible de construire une variante avec des vampires de plus "
+"grande capacité comme %(karl_schrekt)s, %(gerald_windham)s, %(gabrielle_di_righetti)s, %(lord_tremere)s ou "
+"%(mistress_fanchon)s. Dans ce cas, vous voudrez utiliser la combinaison %(zillahs_valley)s / %(villein)s pour "
+"démarrer un peu plus vite, avec quelques %(information_highway)s en plus. Cela ouvre quelques possibilités comme "
+"l'utilisation d'%(obedience)s, %(murmur_of_the_false_will)s et %(enkil_cog)s. %(monastery_of_shadows)s et "
+"%(giants_blood)s deviennent d'excellentes inclusions, et vous pouvez toujours essayer quelques %(rutors_hand)s pour "
+"plus d'actions. </p> <h2>Quoi acheter</h2> <p> Quelques %(v5_tremere)s plus %(keepers_of_tradition_2)s, "
+"%(pact_with_nephandi)s et l'%(den_of_fiends)s. Quelques cartes trouvées dans d'autres paquets peuvent également être "
+"échangées. </p>"
+
+#: codex_of_the_damned/templates/archetypes/neonate/tremere-grinder.html:59
+msgid "bounces"
+msgstr "rebonds"
+
+#: codex_of_the_damned/templates/archetypes/neonate/tremere-wall.html:14
+#, python-format
+msgid ""
+"<h2>Highlights</h2> <p> This is a <em>wall</em> deck using Tremere %(tremere)s Princes and Justicars that have a rare"
+" access to Animalism %(ANI)s. </p> <p> The idea is to rely on all the great Tremere disciplines "
+"(%(AUS)s%(DOM)s%(THA)s), complemented by %(ANI)s and their royalty status for even better intercept capabilities. "
+"</p> <p> As usual with %(DOM)s decks, the plan is to get the oldest vampire out first, to be able to use "
+"%(govern_the_unaligned)s at superior %(DOM)s to get more vampires out fast and cheap if possible. </p> <p> The deck "
+"has a tremendous blocking power: the classical %(AUS)s package with %(eyes_of_argus)s and the usual intercept "
+"reactions is supported by %(cats_guidance)s and %(second_tradition)s for even more unlock and intercept. This 30 "
+"cards module (not counting the %(obedience)s used for combat) provide a tightly packed range of options for wake, "
+"unlock, intercept and bounce: there's no tighter defence. </p> <p> The %(payload)s is another story: the deck has to "
+"find opportunities and be ready when they arise. It uses a number of different sources of pool damage, from "
+"%(smiling_jack_the_anarch)s that needs to be defended, to votes like %(parity_shift)s and %(anarchist_uprising)s, "
+"complemented by a bit of bleed with %(enkil_cog)s and %(conditioning)s. </p> <p> When it comes down to combat, the "
+"deck uses only a few %(theft_of_vitae)s, but its strength relies in the availability of %(obedience)s, a reaction the"
+" deck can use to chose when to fight and when to just stop the action. Handled properly, it allows the deck to choose"
+" the fights it can win and stop those it cannot. </p> <h2>Tweaks and variants</h2> <p> If you got access to legacy "
+"cards, %(sniper_rifle)s is a great addition to this deck. It is a great counter against close combat modules and, if "
+"you happen to get one as a neighbour, you can use %(magic_of_the_smith)s to fetch it at the first opportunity. "
+"%(aranthebes)s is also a great inclusion if you can get your hands on one. Finally, %(sense_the_savage_way)s should "
+"replace a few unlock or intercept cards. </p> <p> There are a number of minute adjustments one can make to this deck "
+"depending on the %(meta)s. The combat module should be sufficient, but using a few %(carrion_crows)s, %(blood_rage)s "
+"or %(soul_burn)s can help counter specific combat modules. On the same note, %(pentex_subversion)s and "
+"%(anarch_troublemaker)s can be added to fight against defensive decks. %(scourge_of_the_enochians)s and "
+"%(gran_madre_di_dio_italy)s, on the other hand, can counter swarm builds. Finally, a couple of "
+"%(direct_intervention)s could be a great inclusion here, provided you manage to make a bit of room in the Master "
+"module, since they can help handle nasty surprises on block attempts. </p> <h2>What to buy</h2> <p> A couple "
+"%(keepers_of_tradition_2)s plus %(v5_tremere)s, %(anniversary)s, %(den_of_fiends)s and %(fb_nosferatu)s. A few cards "
+"are found in other bundles can also be traded for: %(obedience)s is in %(parliament_of_shadows)s but it might be "
+"tricky to get enough of those - you can trade some or replace with %(carrion_crows)s. %(v5_nosferatu)s can give you a"
+" second %(smiling_jack_the_anarch)s if you do not want to get two %(den_of_fiends)s starters, and multiple bundles "
+"can provide %(conditioning)s. %(direct_intervention)s can be found on %(print_on_demand)s </p>"
+msgstr ""
+"<h2>Principe</h2> <p> C'est un deck <em>mur</em> qui utilise les Princes et Justicars Tremere %(tremere)s qui ont un "
+"rare accès à l'Animalisme %(ANI)s. </p> <p> L'idée est de s'appuyer sur toutes les grandes disciplines Tremere "
+"(%(AUS)s%(DOM)s%(THA)s), complétés par %(ANI)s et leurs titres pour une meilleure interception. </p> <p> Comme "
+"d'habitude avec les decks %(DOM)s, le plan est de sortir le plus vieux vampire en premier, pour pouvoir utiliser "
+"%(govern_the_unaligned)s en %(DOM)s supérieure pour sortir plus de vampires rapidement et à moindre coût. </p> <p> Le"
+" deck a un énorme pouvoir de blocage : le package classique %(AUS)s avec %(eyes_of_argus)s et autres réactions "
+"d'interception est complété par %(cats_guidance)s et %(second_tradition)s pour encore plus de redressements et "
+"d'interception. Ce module de 30 cartes (sans compter les %(obedience)s utilisées pour le combat) fournit une gamme "
+"serrée d'options pour le réveil, le redressmeent, l'interception et le rebond : il n'y a pas de défense plus serrée. "
+"</p> <p> La %(payload)s est une autre histoire : le deck doit trouver des opportunités et être prêt lorsqu'elles se "
+"présentent. Il utilise un certain nombre de sources différentes de dégâts d'influence, de %(smiling_jack_the_anarch)s"
+" qui doit être défendu, aux votes comme %(parity_shift)s et %(anarchist_uprising)s, complétés par un peu de morsure "
+"avec %(enkil_cog)s et %(conditioning)s. </p> <p> En matière de combat, le deck n'utilise que quelques "
+"%(theft_of_vitae)s, mais sa force repose sur la présence d'%(obedience)s, une réaction que le deck peut utiliser pour"
+" choisir quand se battre et quand juste arrêter l'action. Manipulée correctement, elle permet au deck de choisir les "
+"combats qu'il peut gagner et empêcher ceux qui sont risqués. </p> <h2>Ajustements et variantes</h2> <p> Si vous avez "
+"accès à des cartes historiques, %(sniper_rifle)s est un excellent ajout à ce deck. C'est un excellent contre contre "
+"les modules de combat au corps-à-corps. %(aranthebes)s est également une excellente inclusion si vous pouvez en "
+"trouver un. Enfin, %(sense_the_savage_way)s devrait remplacez quelques cartes de redressement ou d'interception. </p>"
+" <p> Il y a un certain nombre d'ajustements mineurs que l'on peut apporter à ce deck selon les %(meta)s. Le module de"
+" combat devrait être suffisant, mais en utilisant quelques %(carrion_crows)s, %(blood_rage)s ou %(soul_burn)s peuvent"
+" aider à contrer des modules de combat spécifiques. Sur la même note, %(pentex_subversion)s et "
+"%(anarch_troublemaker)s peuvent être ajoutés pour lutter contre les decks défensifs. %(scourge_of_the_enochians)s et "
+"%(gran_madre_di_dio_italy)s, d'autre part, peuvent contrer les essaims. Enfin, quelques %(direct_intervention)s "
+"peuvent aider à gérer les mauvaises surprises lors des tentatives de bloc. </p> <h2>Quoi acheter</h2> <p> Une paire "
+"de %(keepers_of_tradition_2)s plus %(v5_tremere)s, %(anniversary)s, %(den_of_fiends)s et %(fb_nosferatu)s. Quelques "
+"cartes se trouvent dans d'autres paquets et peuvent également être échangées : %(obedience)s est dans "
+"%(parliament_of_shadows)s mais cela pourrait être difficile d'en avoir assez - vous pouvez en échanger ou remplacer "
+"par %(carrion_crows)s. %(v5_nosferatu)s peut vous donner un deuxième %(smiling_jack_the_anarch)s si vous ne voulez "
+"pas avoir deux %(den_of_fiends)s, et plusieurs paquets peuvent fournir %(conditioning)s. %(direct_intervention)s peut"
+" être trouvé eà %(print_on_demand)s </p>"
+
+#: codex_of_the_damned/templates/archetypes/neonate/tremere-wall.html:44
+msgid "payload"
+msgstr "charge utile"
+
+#: codex_of_the_damned/templates/archetypes/neonate/tzimisce-toolbox.html:14
+#, python-format
+msgid ""
+"<h2>Highlights</h2> <p> This is a <em>toolbox</em> deck using Tzimisce %(tzimisce)s vampires. </p> <p> The idea is to"
+" bank on the very versatile %(ANI)s discipline: completed by %(VIC)s for bleed and combat, and %(AUS)s for intercept,"
+" it makes for a very balanced toolbox. </p> <p> As usual toolboxes, cards rotation is key: card draw will determine "
+"play and you should aim to maximise the effect of the cards you get, but also adapt your strategy to what you get in "
+"hand. The deck is very balanced: it can bleed solidly with %(deep_song)s and %(changeling)s, but also rush with "
+"%(deep_song)s to disable a problematic blocker or bouncer with the %(ANI)s and %(VIC)s combat cards. </p> <p> "
+"Although not really a wall, the deck has good block capabilities with a number of wakes and, more importantly, a good"
+" number of %(telepathic_misdirection)s to bounce your predator's bleeds. Those will add to your own bleeds to put a "
+"better pressure on your prey. As you don't want to jam your hand with intercept and wakes though, you'll have to "
+"choose carefully what to block on your prey and predator side. Additional defence is provided by %(under_siege)s and "
+"the two Master cards %(channel_10)s and %(guardian_angel)s. </p> <p> The combat module focuses on maintaining long "
+"range with %(aid_from_bats)s, potentially adding a bit more damage when necessary with %(carrion_crows)s, or use "
+"aggravated damage with %(breath_of_the_dragon)s and %(chiropteran_marauder)s if the opportunity arises. </p> "
+"<h2>Tweaks and variants</h2> <p> You might want to check %(information_highways_article)s for a cheaper build for the"
+" Tzimisce %(tzimisce)s clan, using more of a wall approach. </p> <p> If you got access to legacy cards, a handful of "
+"Master cards are worth considering: %(rotschreck)s is a deadly tool to handle combats when you block, "
+"%(powerbase_barranquilla)s and %(black_forest_base)s could be added for a bit more bloat. %(the_admonitions)s could "
+"replace a %(dreams_of_the_sphinx)s. On the crypt side, %(lady_zara_slatikov)s and %(laika)s could provide a bit of "
+"diversity although, if you have access to legacy vampire you might prefer to have a look to the excellent group 2/3 "
+"possibilities for the Tzimisce %(tzimisce)s. Finally, %(fiendish_tongue)s deserves a look: if you expect a few Anarch"
+" decks, it might be a better fit here than %(deep_song)s. </p> <p> There are a number of minute adjustments one can "
+"make to this deck depending on the %(meta)s. %(carlton_van_wyk)s could be good, %(heart_of_nizchetus)s is also a very"
+" good fit in toolbox builds. %(krcg_news_radio)s could be added to second %(channel_10)s. %(living_manse)s and "
+"%(plasmic_form)s could be added to the mix for stronger bleeds. </p> <p> There are a few examples revolving around "
+"the core idea of this deck that won recent tournaments: %(high_angseesings_deck)s from the 2020 UK Nationals is a "
+"similar build, more focused on offence with a lot of %(plasmic_form)s and %(fiendish_tongue)s instead of "
+"%(deep_song)s. %(juan_rodriguez_deck)s from the 2021 SAC is an interesting variation, with %(asanbonsam_ghoul)s and a"
+" couple of %(war_ghoul)s to increase defence (both available on %(print_on_demand)s). </p> <h2>What to buy</h2> <p> A"
+" couple of %(den_of_fiends)s, plus a %(anniversary)s and a %(fb_nosferatu)s. A few additional cards can be traded or "
+"found in other bundles like %(pact_with_nephandi)s, %(parliament_of_shadows)s and %(v5_nosferatu)s. "
+"%(direct_intervention)s can be found on %(print_on_demand)s. %(righteous_endeavor)s was part of the %(kickstarter)s "
+"reprint and can be traded or replaced by %(lady_vadislava)s. </p>"
+msgstr ""
+"<h2>Principe</h2> <p> C'est un deck <em>toolbox</em> qui utilise des vampires Tzimisce %(tzimisce)s. </p> <p> L'idée "
+"est de miser sur la discipline très polyvalente %(ANI)s : complétée par %(VIC)s pour la morsure et le combat, et "
+"%(AUS)s pour l'interception, cela en fait une toolbox très équilibrée. </p> <p> Comme toujours pour les toolbox, la "
+"rotation des cartes est clé : le tirage des cartes déterminera le jeu et vous devez viser à maximiser l'effet des "
+"cartes que vous tirez, mais aussi adapter votre stratégie à ce que vous gardez en main. Le deck est très équilibré : "
+"il peut mordre solidement avec %(deep_song)s et %(changeling)s, mais aussi entrer en combat avec %(deep_song)s pour "
+"abattre un bloqueur ou un rebond problématique avec les cartes de combat %(ANI)s et %(VIC)s. </p> <p> Bien qu'il ne "
+"s'agisse pas vraiment d'un mur, le deck a de bonnes capacités de bloc avec un bon nombre de réveils et, plus "
+"important encore, un bon nombre de %(telepathic_misdirection)s pour faire rebondir les morsures de votre prédateur. "
+"Celles-ci s'ajouteront à vos propres morsures pour mettre plus de pression sur votre proie. Comme vous ne voulez pas "
+"vous coincer la main avec l'interception et les réveils, vous devrez choisir avec soin ce qu'il faut bloquer du côté "
+"proie et prédateur. Une défense supplémentaire est fournie par %(under_siege)s et les deux cartes Maître "
+"%(channel_10)s et %(guardian_angel)s. </p> <p> Le module de combat se concentre sur le maintien à longue portée avec "
+"%(aid_from_bats)s, ajoutant potentiellement un peu plus de dégâts si nécessaire avec %(carrion_crows)s, ou utilise "
+"des dégâts aggravés avec %(breath_of_the_dragon)s et %(chiropteran_marauder)s si l'occasion se présente. </p> "
+"<h2>Ajustements et variantes</h2> <p> Vous voudrez peut-être consulter l'%(information_highways_article)s pour une "
+"version moins chère pour le clan Tzimisce %(tzimisce)s, utilisant davantage une approche de mur. </p> <p> Si vous "
+"avez accès aux anciennes cartes, une poignée de cartes Maître valent la peine d'être envisagées : %(rotschreck)s est "
+"un outil mortel pour gérer les combats lorsque vous bloquez, %(powerbase_barranquilla)s et %(black_forest_base)s "
+"pourraient être ajoutés pour un un peu plus de régénération. %(the_admonitions)s pourrait remplacer un "
+"%(dreams_of_the_sphinx)s. Côté crypte, %(lady_zara_slatikov)s et %(laika)s pourraient offrir un peu de diversité bien"
+" que, si vous avez accès à des cartes historiques, vous préférerez peut-être jeter un œil aux excellentes "
+"possibilités de groupe 2/3 pour les Tzimisce %(tzimisce)s. Enfin, %(fiendish_tongue)s mérite un coup d'œil : si vous "
+"vous attendez à quelques decks Anarch, cela pourrait être mieux adapté ici que %(deep_song)s. </p> <p> Il y a un "
+"certain nombre d'ajustements mineurs que l'on peut apporter à cette base en fonction du %(meta)s. %(carlton_van_wyk)s"
+" pourrait être bon, %(heart_of_nizchetus)s convient également très bien aux toolboxes. %(krcg_news_radio)s pourrait "
+"être ajouté en plus de %(channel_10)s. %(living_manse)s et %(plasmic_form)s pourraient être ajoutés au mélange pour "
+"des morsures plus efficaces. </p> <p> Il y a quelques exemples tournant autour de l'idée de base de ce deck qui ont "
+"remporté des tournois récents : le %(high_angseesings_deck)s du championnat du Royaume-Uni 2020 est similaire, plus "
+"axé sur l'offensive avec beaucoup de %(plasmic_form)s et %(fiendish_tongue)s au lieu de %(deep_song)s. Le "
+"%(juan_rodriguez_deck)s du SAC 2021 est une variante intéressante, avec %(asanbonsam_ghoul)s et quelques "
+"%(war_ghoul)s pour augmenter la défense (tous deux disponibles à %(print_on_demand)s). </p> <h2>Quoi acheter</h2> <p>"
+" Quelques %(den_of_fiends)s, plus un %(anniversary)s et un %(fb_nosferatu)s. Quelques cartes supplémentaires peuvent "
+"être échangées ou trouvées dans d'autres paquets comme %(pact_with_nephandi)s, %(parliament_of_shadows)s et "
+"%(v5_nosferatu)s. %(direct_intervention)s se trouve à %(print_on_demand)s. %(righteous_endeavor)s faisait partie de "
+"la réimpression %(kickstarter)s et peut être échangé ou remplacé par %(lady_vadislava)s. </p>"
+
+#: codex_of_the_damned/templates/archetypes/neonate/tzimisce-toolbox.html:47
+msgid "Hugh Angseesing's deck"
+msgstr "deck de Hugh Angseeing"
+
+#: codex_of_the_damned/templates/archetypes/neonate/tzimisce-toolbox.html:48
+msgid "Information Highway's article"
+msgstr "article d'Information Highway"
+
+#: codex_of_the_damned/templates/archetypes/neonate/tzimisce-toolbox.html:49
+msgid "Juan Rodriguez' deck"
+msgstr "deck de Juan Rodriguez"
+
+#: codex_of_the_damned/templates/archetypes/neonate/ventrue-grinder.html:14
+#, python-format
+msgid ""
+"<h2>Highlights</h2> <p> This is a <em>toolbox</em> deck using Ventrue %(ventrue)s Princes. </p> <p> The idea is to "
+"use the Camarilla royalty access to %(second_tradition_domain)s for decent block capability, while using %(DOM)s for "
+"its usual bleed & bounce package. The combat module relies on %(FOR)s for prevention, with %(weighted_walking_stick)s"
+" for additional damages. </p> <p> The plan is, as usual, to get the highest capacity vampire out first to be able to "
+"play %(govern_the_unaligned)s at superior %(DOM)s to get more vampires out cheap and fast. Once enough of them are "
+"out, the plan is to use %(govern_the_unaligned)s at inferior %(dom)s to bleed, combined with a few cards to lock "
+"minions (%(anarch_troublemaker)s) and prevent or deny block attempts (%(pentex_subervsion)s, "
+"%(force_of_personality)s, %(seduction)s, %(daring_the_dawn)s). </p> <p> On the defence side, the deck has a few votes"
+" to slow down or mitigate other vote decks, coupled with %(deflection)s against bleeds and, of course, a good number "
+"of %(second_tradition_domain)s to block problematic actions. When combat happens, the deck is expected to hold steady"
+" with prevention like %(hidden_strength)s, %(lodin)s's ability and other %(FOR)s cards, while taking a bit of blood "
+"out of the opposing minions with %(weighted_walking_stick)s. </p> <p> As suggested by the deck name, the point is to "
+"%(grind)s the opponents blood and pool through bleed, vote and combat, trying to secure a definitive edge in blood "
+"and pool while the game unfolds. Ideally, the deck should survive until it finds itself down to a three players game "
+"with exhausted opponents struggling for blood. </p> <h2>Tweaks and variants</h2> <p> You might want to check the "
+"%(main_article)s for additional ideas and tips. </p> <p> If you got access to legacy cards, replacing a couple of "
+"%(deflection)s with %(redirection)s to be able to handle the cancellation of the first (%(direct_intervention)s or "
+"%(touch_of_clarity)s, for example) is a great idea. %(island_of_yiaros)s is also a great inclusion in this deck, if "
+"you can find one or get one in a tournament (it's part of the %(promo_pack_3)s bundle). Finally, %(retribution)s "
+"would also be a great inclusion. </p> <p> There are a number of minute adjustments one can make to this deck "
+"depending on the %(meta)s. %(heart_of_nizchetus)s is a very good fit in such a toolbox, %(papillon)s and %(the_rack)s"
+" can be considered depending on how much you think they could help (contest and theft might be an issue with those). "
+"One or two %(direct_intervention)s can prove useful, %(scourge_of_the_enochians)s is a very common anti-swarm counter"
+" in this deck, and %(dominate_kine)s is often seen, as a way to destroy a problematic hunting ground in the late "
+"game. %(giants_blood)s is a very common inclusion, but it is so much played these days that it might be a dead card "
+"more often than not. %(ventrue_headquarters)s is a good defensive card if you expect vote decks. All in all, you "
+"should definitely adjust the decklist to your expectations: the version presented here includes is fit for an "
+"environment with a good number of allies, with %(entrancement)s and %(force_of_personality)s. In all cases, take care"
+" to keep the deck balanced when you do these substitutions and try to stay around the 80 cards count. </p> <p> "
+"Although the deck relies on %(second_tradition_domain)s instead of %(AUS)s it is, in a sense, very close to the "
+"%(anti_ventrue_grinder)s archetype. </p> <h2>What to buy</h2> <p> %(v5_ventrue)s, %(v5_toreador)s and "
+"%(keepers_of_tradition_2)s, plus %(den_of_fiends)s, %(libertine_ball)s, %(pact_with_nephandi)s and %(fb_nosferatu)s. "
+"A few additional cards can be traded or found in other bundles like %(anniversary)s, %(parliament_of_shadows)s and "
+"%(v5_nosferatu)s. </p>"
+msgstr ""
+"<h2>Principe</h2> <p> C'est un deck <em>toolbox</em> qui utilise les Princes Ventrue %(ventrue)s. </p> <p> L'idée est"
+" d'utiliser l'accès de la royauté Camarilla à %(second_tradition_domain)s pour une bonne aptitude au bloc, tout en "
+"utilisant %(DOM)s pour sa combinaison de morsure et de rebond habituelle. Le module de combat s'appuie sur %(FOR)s pour"
+" la prévention, avec %(weighted_walking_stick)s pour des dégâts supplémentaires. </p> <p> Le plan est, comme "
+"d'habitude, de sortir le vampire de la plus haute capacité en premier pour pouvoir jouer %(govern_the_unaligned)s en "
+"%(DOM)s supérieure et sortir plus de vampires à bas prix rapidement. Une fois que suffisamment d'entre eux sont "
+"sortis, le plan est d'utiliser %(govern_the_unaligned)s en %(dom)s inférieure pour mordre, combiné avec quelques "
+"cartes pour incliner les serviteurs (%(anarch_troublemaker)s) et empêcher les tentatives de bloc "
+"(%(pentex_subervsion)s, %(force_of_personality)s, %(seduction)s, %(daring_the_dawn)s). </p> <p> Côté défense, le "
+"deck dispose de quelques votes pour ralentir les autres decks de votes, couplés à %(deflection)s contre les morsures "
+"et, bien sûr, un bon nombre de %(second_tradition_domain)s pour bloquer les actions problématiques. Lorsque le "
+"combat a lieu, le deck devrait être stable grâce à la prévention comme %(hidden_strength)s, la capacité de %(lodin)s "
+"et d'autres cartes %(FOR)s, tout en retirant un peu de sang sur les serviteurs adverses avec "
+"%(weighted_walking_stick)s. </p> <p> Comme suggéré par le nom du deck, le but est l'%(grind)s du sang et de "
+"l'influence des adversaires par la morsure, le vote et le combat, en essayant d'obtenir un avantage de sang et "
+"d'influence au fur et à mesure que le jeu avance. Idéalement, le deck devrait survivre jusqu'à ce qu'il se retrouve "
+"sur un jeu à trois joueurs avec des adversaires épuisés luttant pour le sang. </p> <h2>Ajustements et variantes</h2> "
+"<p> Vous pouvez consulter l'%(main_article)s pour des idées et des conseils supplémentaires. </p> <p> Si vous avez "
+"accès aux anciennes cartes, remplacer quelques %(deflection)s par %(redirection)s pour pouvoir gérer l'annulation de "
+"la première (%(direct_intervention)s ou %(touch_of_clarity)s, par exemple) est un bonne idée. %(island_of_yiaros)s "
+"est également une excellente inclusion dans ce deck, si vous pouvez en trouver une ou en obtenir une dans un tournoi "
+"(elle fait partie du %(promo_pack_3)s). Enfin, %(retribution)s serait également une excellente inclusion. </p> <p> Il"
+" y a un certain nombre de détails que l'on peut changer dans ce deck en fonction du %(meta)s. %(heart_of_nizchetus)s "
+"convient très bien à une toolbox, %(papillon)s et %(the_rack)s peuvent être envisagés en fonction de l'utilité qu'ils"
+" pourraient avoir (les disputes et le vol peuvent être un problème avec ceux-ci). Une ou deux %(direct_intervention)s"
+" peuvent s'avérer utiles, %(scourge_of_the_enochians)s est un contre anti-essaim très courant dans ce deck, et "
+"%(dominate_kine)s est souvent ajouté, pour pouvoir détruire un terrain de chasse problématique en fin de partie. "
+"%(giants_blood)s est une inclusion très courante, mais tellement jouée ces jours-ci qu'elle peut être une carte morte"
+" plus souvent qu'utile. %(ventrue_headquarters)s est une bonne carte défensive si vous vous attendez à des decks de "
+"vote. Dans l'ensemble, vous devez absolument adapter la liste à vos attentes : la version présentée ici est adaptée à"
+" un environnement avec un bon nombre d'alliés, avec %(entrancement)s et %(force_of_personality)s. Dans tous les cas, "
+"veillez à garder le jeu équilibré lorsque vous effectuez ces substitutions et essayez de rester autour de "
+"80 cartes. </p> <p> Bien que le deck repose sur %(second_tradition_domain)s au lieu de %(AUS)s, il est, dans un sens,"
+" très proche de l'archétype %(anti_ventrue_grinder)s. </p> <h2>Quoi acheter</h2> <p> %(v5_ventrue)s, %(v5_toreador)s "
+"et %(keepers_of_tradition_2)s, plus %(den_of_fiends)s, %(libertine_ball)s, %(pact_with_nephandi)s et "
+"%(fb_nosferatu)s. Quelques cartes restantes peuvent être échangées ou trouvées dans d'autres paquets comme "
+"%(anniversary)s, %(parliament_of_shadows)s et %(v5_nosferatu)s. </p>"
+
+#: codex_of_the_damned/templates/archetypes/neonate/ventrue-grinder.html:44
+msgid "grind"
+msgstr "usure"
+
+#: codex_of_the_damned/templates/archetypes/neonate/ventrue-lawfirm.html:14
+#, python-format
+msgid ""
+"<h2>Highlights</h2> <p> This is a <em>vote & bleed</em> deck using Ventrue %(ventrue)s Princes. </p> <p> This deck "
+"pushes the Ventrue %(ventrue)s advantages to their best: use titles and %(PRE)s to vote then %(FOR)s to unlock thanks"
+" to %(freak_drive)s, and bleed hard with %(DOM)s. </p> <p> The plan is to get the highest capacity vampire out first "
+"to be able to play %(govern_the_unaligned)s and %(enchant_kindred)s at superior. You can even do both if you manage "
+"to unlock with %(freak_drive)s. Once enough vampires are out, bleed and vote, using %(majesty)s (when blocked) and "
+"%(freak_drive)s to unlock and act in between. </p> <p> On the defence side, the deck uses just a few %(deflection)s. "
+"It also includes a couple of %(second_tradition_domain)s for tactical use and a %(carlton_van_wyk)s just in case. It "
+"also has a pair of %(entrancement)s against allies. %(parity_shift)s, %(voter_captivation)s and %(vessel)s can "
+"provide a bit of bloat. Against combat, %(majesty)s and %(force_of_personality)s provide ample combat ends to keep "
+"the vampires safe. </p> <p> On the offense side, the whole point of the deck is to use the multiple actions offered "
+"by %(freak_drive)s, %(majesty)s and %(change_of_target)s to overrun the prey's defenses. The idea is to build a "
+"strong %(lunge)s hand, combining votes and bleed for a tremendous ousting power. Then, when the prey is at its most "
+"vulnerable, helped by block denial cards, deliver a maximum of damage in a single turn. </p> <h2>Tweaks and "
+"variants</h2> <p> You might want to check the %(main_article)s for additional ideas and tips. Overall, this deck is "
+"pretty close to the %(ventrue_grinder)s, but it forgoes block and combat to focus on forward damage. Anything in the "
+"middle is possible, although a clear plan with a strong focus tends to yield better results. </p> <p> If you got "
+"access to legacy cards, replacing a couple of %(deflection)s with %(redirection)s can help you handle cancellation. A"
+" couple of %(awe)s could be a nice addition since it combines so well with %(voter_captivation)s. "
+"%(justicar_retribution)s is also worth considering if you expect some <em>Inner Circle</em>. </p> <p> There are a lot"
+" of possibilities to adjust this deck depending on the %(meta)s and your preferences. %(blood_doll)s could replace "
+"the %(vessel)s for a bit more pool gain. %(giants_blood)s is also common. %(papillon)s could easily be included if "
+"you're not too concerned about contesting it. Doubling the %(ventrue_headquarters)s or adding "
+"%(the_palace_of_versailles)s can help against other vote decks. %(dark_influences)s could help, since it can prevent "
+"a rogue %(direct_intervention)s to stop your lunge. </p> <p> The whole modifier module can be adjusted depending on "
+"your style and expectations. %(bonding)s is a very common inclusion. More %(seduction)s could fit in, but you might "
+"just end up cycling them most of the time. %(change_of_target)s is interesting, but could also be cut in favor of "
+"something else. %(dominate_kine)s is an option if you expect permanent intercept locations like %(krcg_news_radio)s, "
+"and combines well with %(bonding)s. All in all, it is a question of synergy: if you go for more pool gain with "
+"%(blood_doll)s, you might want to add %(papillon)s too. If you go for a bit of stealth with %(bonding)s, maybe "
+"%(dominate_kine)s becomes more interesting and %(creepshow_casino)s could be considered. </p> <p> The crypt, finally,"
+" is a matter of debate. %(mary_anne_blaire)s can be a great inclusion here, and also work as a star for the deck. On "
+"the other hand, her high capacity makes the whole deck slower and, since it is built for a strong forward offensive, "
+"this can be a huge downside. </p> <h2>What to buy</h2> <p> %(v5_ventrue)s, %(keepers_of_tradition_2)s, "
+"%(anniversary)s and %(v5_toreador)s. A few additional cards can be traded or found in other bundles like "
+"%(libertine_ball)s and %(anthology)s. </p>"
+msgstr ""
+"<h2>Principe</h2> <p> C'est un deck de <em>vote et morsure</em> qui utilise des Princes Ventrue %(ventrue)s. </p> <p>"
+" Ce deck tire le meilleur parti des avantages des Ventrue %(ventrue)s : les titres et %(PRE)s pour voter puis %(FOR)s"
+" pour se redresser grâce à %(freak_drive)s, et mordre fort avec %(DOM)s. </p> <p> Le plan est de sortir le vampire de"
+" plus haute capacité en premier pour pouvoir jouer %(govern_the_unaligned)s et %(enchant_kindred)s en supérieur. "
+"Vous pouvez même faire les deux si vous parvenez à vous redresser avec %(freak_drive)s. Une fois que suffisamment de "
+"vampires sont sortis, mordez et votez, en utilisant %(majesty)s (sur un bloc) et %(freak_drive)s pour redresser et "
+"agir à nouveau. </p> <p> Côté défense, le deck n'utilise que quelques %(deflection)s. Il comprend également quelques "
+"%(second_tradition_domain)s pour un usage tactique et un %(carlton_van_wyk)s au cas où. Il dispose également d'une "
+"paire d'%(entrancement)s contre les alliés. %(parity_shift)s, %(voter_captivation)s et %(vessel)s peuvent fournir un "
+"peu de régénération. Contre le combat, %(majesty)s et %(force_of_personality)s offrent de nombreuses fins de combat "
+"pour assurer la sécurité des vampires. </p> <p> Côté attaque, tout l'intérêt du deck est d'utiliser les multiples "
+"actions accordées par %(freak_drive)s, %(majesty)s et %(change_of_target)s pour déborder les défenses de la proie. "
+"L'idée est de construire une main avec un %(lunge)s fort, combinant les votes et les morsures pour un énorme pouvoir "
+"d'élimination. Ensuite, lorsque la proie est la plus vulnérable, aidé par les cartes de refus de blocage, infligez un"
+" maximum de dégâts en un seul tour. </p> <h2>Ajustements et variantes</h2> <p> Vous pouvez consulter "
+"l'%(main_article)s pour des idées et des conseils supplémentaires. Dans l'ensemble, ce deck est assez proche du "
+"%(ventrue_grinder)s, mais il renonce au bloc et au combat pour se concentrer sur les dégâts sur la proie. Tout ce qui"
+" se situe entre les deux est possible, bien qu'un plan clair et centré ait tendance à donner de meilleurs résultats. "
+"</p> <p> Si vous avez accès aux anciennes cartes, remplacer quelques %(deflection)s par %(redirection)s peut vous "
+"aider à gérer l'annulation. Quelques %(awe)s pourrait être un bon ajout car il se combine très bien avec "
+"%(voter_captivation)s. %(justicar_retribution)s vaut également la peine d'être considéré si vous vous attendez à des "
+"<em>Inner Circle</em>. </p> <p> Il y a beaucoup de possibilités pour ajuster ce deck en fonction du %(meta)s et de vos"
+" préférences. %(blood_doll)s pourrait remplacer les %(vessel)s pour un peu plus de gain d'influence. %(giants_blood)s"
+" est également courant. %(papillon)s pourrait facilement être inclus si vous n'êtes pas trop soucieux de le disputer."
+" Le doubler ou ajouter %(the_palace_of_versailles)s peut aider contre d'autres decks vote. "
+"%(dark_influences)s peut aider, car il peut empêcher un %(direct_intervention)s qui traîne d'arrêter net votre coup de "
+"grâce. </p> <p> L'ensemble du module de modificateurs peut être ajusté en fonction de votre style et de vos attentes."
+" %(bonding)s est une inclusion très courante. Plus de %(seduction)s pourraient être ajoutées, mais vous pourriez finir "
+"par les cycler trop souvent. %(change_of_target)s est intéressant, mais pourrait aussi être enlevé en faveur d'autre "
+"chose. %(dominate_kine)s est une option si vous vous attendez à des lieux d'interception permanente comme "
+"%(krcg_news_radio)s, et se combine bien avec %(bonding)s. En somme, c'est une question de synergie : si vous optez "
+"pour plus de gain d'influence avec %(blood_doll)s, vous voudrez peut-être aussi ajouter %(papillon)s. Si vous optez "
+"pour un peu de discrétion avec %(bonding)s, peut-être que %(dominate_kine)s devient plus intéressant et que "
+"%(creepshow_casino)s peut être envisagé. </p> <p> La crypte, enfin, fait débat. %(mary_anne_blaire)s peut être "
+"une excellente inclusion ici, et aussi fonctionner comme star pour le deck. D'un autre côté, sa grande capacité rend "
+"tout le deck plus lent et, puisqu'il est conçu pour une forte offensive vers l'avant, cela peut être un énorme "
+"inconvénient. </p> <h2>Quoi acheter</h2> <p> %(v5_ventrue)s, %(keepers_of_tradition_2)s, %(anniversary)s et "
+"%(v5_toreador)s. Quelques cartes supplémentaires peuvent être échangées ou trouvées dans d'autres paquets comme "
+"%(libertine_ball)s et %(anthology)s. </p>"
+
+#: codex_of_the_damned/templates/archetypes/neonate/ventrue-lawfirm.html:54
+msgid "Ventrue Grinder"
+msgstr "Ventrue Grinder"
 
 #: codex_of_the_damned/templates/best-cards/_layout_card_column.html:7
 #, python-format
@@ -3637,11 +5147,6 @@ msgstr ""
 "a deux archétypes principaux : L'%(akunanse_wall)s, qui utilise %(abo)s aux côtés d'%(ani)s pour un mur solide, et "
 "%(team_jacob)s qui utilise les fameux %(tunnel_runner)s. Les constructions orientées combat sont limitées à cause du "
 "manque de solutions contre un coupe de %(combat_ends)s. </p>"
-
-#: codex_of_the_damned/templates/best-cards/clans/akunanse.html:11
-#: codex_of_the_damned/templates/strategy/deck-building.html:232
-msgid "combat ends"
-msgstr "fin de combat"
 
 #: codex_of_the_damned/templates/best-cards/clans/akunanse.html:28
 #, python-format
@@ -7190,8 +8695,8 @@ msgid ""
 "An excellent tool for bloating, it is often seen in rush decks. Played efficiently, it helps leech with cards like "
 "%(minion_tap)s or %(blood_doll)s."
 msgstr ""
-"Excellent outil pour les ballonnements, on le voit souvent dans les decks rush. Joué efficacement, il aide la sangsue"
-" avec des cartes comme %(minion_tap)s ou %(blood_doll)s."
+"Excellent outil pour la régénération, on le voit souvent dans les decks rush. Joué efficacement, il aide la sangsue "
+"avec des cartes comme %(minion_tap)s ou %(blood_doll)s."
 
 #: codex_of_the_damned/templates/best-cards/generic/no-discipline.html:53
 msgid ""
@@ -9850,36 +11355,36 @@ msgid "bleed"
 msgstr "morsure"
 
 #: codex_of_the_damned/templates/strategy/deck-building.html:223
-#, python-format
+#, fuzzy, python-format
 msgid ""
 "<h3>1. Theme</h3> <p> The first step to build a deck is to choose a theme, a core principle to build upon. Multiple "
 "possibilities here: <ul> <li><strong>Clan</strong>: the most common theme, just choose a clan.</li> "
 "<li><strong>Discipline(s)</strong>: choose one or more disciplines you want to play.</li> <li><strong>Star</strong>: "
 "choose a star vampire with powerful disciplines or abilities.</li> <li><strong>Cards combination</strong>: choose a "
 "combination of two to four cards you want to play together.</li> </ul> </p> <h3>2. Four strategic pillars</h3> <p> "
-"The second step, before adding more cards to the deck, is to define the four pillars of the deck strategy: <ul> "
-"<li><strong>Payload:</strong> how the deck delivers pool damage to its prey. Does it %(bleed)s? Use %(politics)s? "
-"Some other pool damage device like %(anarch_revolt)s or %(dragonbound)s? </li> <li> <strong>Delivery system:</strong>"
-" how the deck makes sure the payload is delivered. If it bleeds, does it use stealth, block denial or an overwhelming"
-" number of actions? If it uses political actions, does it use stealth to get them through? How does it get enough "
-"votes? If it uses specific pool damage cards, do they need protection or support to apply their effect? </li> <li> "
-"<strong>Defense:</strong> how the deck avoids to lose. %(Bloating)s is the most generic defense: gaining pool works "
-"against all offensive strategies. Most decks use a modicum of bloat, some rely on a heavy bloat as their sole "
-"defense. Blocking is the second most generic defense: most offensive strategies use actions. More focused defensive "
-"tools are often used against the most widespread offensive strategies: %(bounce)s or reduction against bleed, "
-"%(delaying_tactics)s and %(poison_pill)s against politics. </li> <li> <strong>Combat Management:</strong> how the "
-"deck deals with minion combats. It is essential to choose a clear %(combat_posture)s, and the correct one depends on "
-"the previous pillars. If it delivers with stealth and defends without blocking, resisting will be easier. If it plans"
-" to block, it can either resist or grind. Disabling is usually both a defense and a delivery system. </li> </ul> </p>"
-" <h3>3. Cards</h3> <p> Now select the crypt and library cards to put in the deck. The minions you select will define "
-"the range of disciplines you can use and, symmetrically, the library cards you choose and their requirements will "
-"define what minions you want in your crypt. </p> <p> During this card selection process, only add <strong>one copy of"
-" each card</strong> you want to play. Check the %(best_cards)s and the %(deck_archive)s for ideas. If you find "
-"tournament winning examples close to your deck list, they may give you ideas about what to include. </p> <p> At the "
-"end you should have <strong>4 to 12 crypt cards and 20 to 40 library cards</strong>. If you have more, it is time to "
-"sit back and ponder what is really useful and what should be cut. Consider your four strategic pillars to help you "
-"decide: payload is more important than delivery, itself more important than defense, and combat management comes "
-"last. </p>"
+"The second step, before adding more cards to the deck, is to define the four pillars of the deck strategy: <ul> <li "
+"id=\"payload\"><strong>Payload:</strong> how the deck delivers pool damage to its prey. Does it %(bleed)s? Use "
+"%(politics)s? Some other pool damage device like %(anarch_revolt)s or %(dragonbound)s? </li> <li id=\"delivery\"> "
+"<strong>Delivery system:</strong> how the deck makes sure the payload is delivered. If it bleeds, does it use "
+"stealth, block denial or an overwhelming number of actions? If it uses political actions, does it use stealth to get "
+"them through? How does it get enough votes? If it uses specific pool damage cards, do they need protection or support"
+" to apply their effect? </li> <li id=\"defense\"> <strong>Defense:</strong> how the deck avoids to lose. %(Bloating)s"
+" is the most generic defense: gaining pool works against all offensive strategies. Most decks use a modicum of bloat,"
+" some rely on a heavy bloat as their sole defense. Blocking is the second most generic defense: most offensive "
+"strategies use actions. More focused defensive tools are often used against the most widespread offensive strategies:"
+" %(bounce)s or reduction against bleed, %(delaying_tactics)s and %(poison_pill)s against politics. </li> <li id"
+"=\"combat-management\"> <strong>Combat Management:</strong> how the deck deals with minion combats. It is essential "
+"to choose a clear %(combat_posture)s, and the correct one depends on the previous pillars. If it delivers with "
+"stealth and defends without blocking, resisting will be easier. If it plans to block, it can either resist or grind. "
+"Disabling is usually both a defense and a delivery system. </li> </ul> </p> <h3>3. Cards</h3> <p> Now select the "
+"crypt and library cards to put in the deck. The minions you select will define the range of disciplines you can use "
+"and, symmetrically, the library cards you choose and their requirements will define what minions you want in your "
+"crypt. </p> <p> During this card selection process, only add <strong>one copy of each card</strong> you want to play."
+" Check the %(best_cards)s and the %(deck_archive)s for ideas. If you find tournament winning examples close to your "
+"deck list, they may give you ideas about what to include. </p> <p> At the end you should have <strong>4 to 12 crypt "
+"cards and 20 to 40 library cards</strong>. If you have more, it is time to sit back and ponder what is really useful "
+"and what should be cut. Consider your four strategic pillars to help you decide: payload is more important than "
+"delivery, itself more important than defense, and combat management comes last. </p>"
 msgstr ""
 "<h3>1. Thème</h3> <p> La première étape pour construire un deck est de choisir un thème, un principe central sur "
 "lequel construire. Il y a ici plusieurs possibilités : <ul> <li><strong>Un clan</strong>: le thème le plus courant, "
@@ -9887,35 +11392,35 @@ msgstr ""
 "vous désirez jouer.</li> <li><strong>Star</strong>: choisissez un vampire star avec une combinaison de disciplines ou"
 " une aptitude puissants.</li> <li><strong>Combinaison de cartes</strong>: choisissez une combinaison de deux à quatre"
 " cartes que vous souhaitez jouer.</li> </ul> </p> <h3>2. Quatre piliers stratégiques</h3> <p> La seconde étape, avant"
-" d'ajouter des cartes, est de définir les quatre piliers de la stratégie du deck : <ul> <li><strong>La charge utile "
-":</strong> la manière dont le deck réduit l'influence de sa proie. Utilise-t-il la %(bleed)s ? La %(politics)s ? Un "
-"autre moyen de réduire l'influence comme %(anarch_revolt)s ou %(dragonbound)s ? </li> <li> <strong>Le système de "
-"transmission :</strong> la manière dont le deck s'assure que la charge utile est bien délivrée. S'il utilise la "
-"morsure, utilise-t-il de la discrétion, des dénis de blocage ou un nombre d'actions accablant ? S'il utilise des "
-"actions politiques, utilise-t-il de la discrétion pour les faire passer ? Comment fait-il pour s'assurer d'avoir "
-"assez de votes ? S'il utilise des cartes de réduction d'influence spécifiques, doit-il les protéger ou les soutenir "
-"pour s'assurer que leur effet est appliqué ? </li> <li> <strong>La défense :</strong> la manière dont le deck évite "
-"de perdre. La %(Bloating)s est la défense la plus générique : gagner de l'influence fonctionne quelle que soit la "
-"stratégie offensive des adversaires. La plupart des decks utilisent un minimum de régénération, certains se basent "
-"sur une importante régénération comme seule défense. Bloquer est la seconde stratégie de défense la plus générique : "
-"la plupart des stratégies offensives utilisent des actions. Des outils défensifs plus précis sont souvent utilisés "
-"contre les stratégies offensives les plus répandues : %(bounce)s ou réductions contre la morsure, "
-"%(delaying_tactics)s ou %(poison_pill)s contre la politique. </li> <li> <strong>La gestion du combat :</strong> la "
-"manière dont le deck gère les combats de serviteurs. Il est essentiel de choisir une %(combat_posture)s claire, et la"
-" bonne dépend de vos piliers précédents. Si l'on utilise de la discrétion comme système de transmission et que l'on "
-"défend sans bloquer, résister sera plus simple. Si l'on prévoit de bloquer, on peut résister ou user. Neutraliser est"
-" en général utilisé à la fois comme défense et comme système de transmission. </li> </ul> </p> <h3>3. Cartes</h3> <p>"
-" Il est maintenant temps de sélectionner les cartes de crypte et de bibliothèque à mettre dans le deck. Les "
-"serviteurs que vous sélectionnerez vont déterminer le spectre de disciplines que vous pourrez utiliser et, "
-"symmétriquement, les cartes de bibliothèque que vous choisirez et leurs prérequis vont définir les serviteurs que "
-"vous voudrez dans votre crypte. </p> <p> Durant cette opération de sélection de carte, n'ajoutez qu'<strong>un "
-"exemplaire de chaque carte</strong> choisie. Allez voir le %(best_cards)s et l'%(deck_archive)s pour trouver "
-"l'inspiration. Si vous trouvez un exemple de deck gagnant de tournoi proche de votre decklist, il pourrait vous "
-"donner des idées sur quoi inclure. </p> <p> À la fin vous devriez avoir <strong>4 à 12 cartes de crypte et 20 à 40 "
-"cartes de bibliothèque</strong>. Si vous en avez plus, il est temps de prendre un peu de recul et de vous demander ce"
-" qui est vraiment utile et ce qui devrait être retiré. Utilisez vos quatre piliers stratégiques pour vous aider : la "
-"charge utile est plus importante que le système de transmission, lui-même plus important que la défense, et la "
-"gestion de combat arrive en dernier. </p>"
+" d'ajouter des cartes, est de définir les quatre piliers de la stratégie du deck : <ul> <li id=\"payload\"><strong>La"
+" charge utile :</strong> la manière dont le deck réduit l'influence de sa proie. Utilise-t-il la %(bleed)s ? La "
+"%(politics)s ? Un autre moyen de réduire l'influence comme %(anarch_revolt)s ou %(dragonbound)s ? </li> <li "
+"id=\"delivery\"> <strong>Le système de transmission :</strong> la manière dont le deck s'assure que la charge utile "
+"est bien délivrée. S'il utilise la morsure, utilise-t-il de la discrétion, des dénis de blocage ou un nombre "
+"d'actions accablant ? S'il utilise des actions politiques, utilise-t-il de la discrétion pour les faire passer ? "
+"Comment fait-il pour s'assurer d'avoir assez de votes ? S'il utilise des cartes de réduction d'influence spécifiques,"
+" doit-il les protéger ou les soutenir pour s'assurer que leur effet est appliqué ? </li> <li id=\"defense\"> "
+"<strong>La défense :</strong> la manière dont le deck évite de perdre. La %(Bloating)s est la défense la plus "
+"générique : gagner de l'influence fonctionne quelle que soit la stratégie offensive des adversaires. La plupart des "
+"decks utilisent un minimum de régénération, certains se basent sur une importante régénération comme seule défense. "
+"Bloquer est la seconde stratégie de défense la plus générique : la plupart des stratégies offensives utilisent des "
+"actions. Des outils défensifs plus précis sont souvent utilisés contre les stratégies offensives les plus répandues :"
+" %(bounce)s ou réductions contre la morsure, %(delaying_tactics)s ou %(poison_pill)s contre la politique. </li> <li> "
+"<strong>La gestion du combat :</strong> la manière dont le deck gère les combats de serviteurs. Il est essentiel de "
+"choisir une %(combat_posture)s claire, et la bonne dépend de vos piliers précédents. Si l'on utilise de la discrétion"
+" comme système de transmission et que l'on défend sans bloquer, résister sera plus simple. Si l'on prévoit de "
+"bloquer, on peut résister ou user. Neutraliser est en général utilisé à la fois comme défense et comme système de "
+"transmission. </li> </ul> </p> <h3>3. Cartes</h3> <p> Il est maintenant temps de sélectionner les cartes de crypte et"
+" de bibliothèque à mettre dans le deck. Les serviteurs que vous sélectionnerez vont déterminer le spectre de "
+"disciplines que vous pourrez utiliser et, symmétriquement, les cartes de bibliothèque que vous choisirez et leurs "
+"prérequis vont définir les serviteurs que vous voudrez dans votre crypte. </p> <p> Durant cette opération de "
+"sélection de carte, n'ajoutez qu'<strong>un exemplaire de chaque carte</strong> choisie. Allez voir le %(best_cards)s"
+" et l'%(deck_archive)s pour trouver l'inspiration. Si vous trouvez un exemple de deck gagnant de tournoi proche de "
+"votre decklist, il pourrait vous donner des idées sur quoi inclure. </p> <p> À la fin vous devriez avoir <strong>4 à "
+"12 cartes de crypte et 20 à 40 cartes de bibliothèque</strong>. Si vous en avez plus, il est temps de prendre un peu "
+"de recul et de vous demander ce qui est vraiment utile et ce qui devrait être retiré. Utilisez vos quatre piliers "
+"stratégiques pour vous aider : la charge utile est plus importante que le système de transmission, lui-même plus "
+"important que la défense, et la gestion de combat arrive en dernier. </p>"
 
 #: codex_of_the_damned/templates/strategy/deck-building.html:225
 msgid "politics"
@@ -9924,10 +11429,6 @@ msgstr "politique"
 #: codex_of_the_damned/templates/strategy/deck-building.html:228
 msgid "Bloating"
 msgstr "Régénération"
-
-#: codex_of_the_damned/templates/strategy/deck-building.html:229
-msgid "Bounces"
-msgstr "Rebonds"
 
 #: codex_of_the_damned/templates/strategy/deck-building.html:233
 msgid "combat posture"
@@ -10529,22 +12030,6 @@ msgstr "Stratégies avancée"
 #: codex_of_the_damned/templates/strategy/index.html:36
 msgid "Black Chantry pre-constructed decks guides"
 msgstr "Guides de jeu des decks préconstruits Black Chantry"
-
-#: codex_of_the_damned/templates/strategy/index.html:43
-msgid "First Blood: Ventrue"
-msgstr "Premier Sang : Ventrue"
-
-#: codex_of_the_damned/templates/strategy/index.html:46
-msgid "First Blood: Malkavian"
-msgstr "Premier Sang : Malkavien"
-
-#: codex_of_the_damned/templates/strategy/index.html:49
-msgid "First Blood: Nosferatu"
-msgstr "Premier Sang : Nosferatu"
-
-#: codex_of_the_damned/templates/strategy/index.html:52
-msgid "First Blood: Toreador"
-msgstr "Premier Sang : Toréador"
 
 #: codex_of_the_damned/templates/strategy/index.html:55
 msgid "First Blood: Tremere"
@@ -11913,7 +13398,7 @@ msgstr ""
 "qui je pourrai manipuler sans m'en lasser pendant 4 à 8 heures. Nous jouons pour le plaisir. Si vous jouez un deck "
 "simplement parce que c'est le « meilleur »  deck, il ne sera pas aussi satisfaisant quand il gagne et démoralisant "
 "quand il perd. Au lieu de ça, jouez quelque chose que vous apprécierez, mais soyez ouvert à quelques modifications "
-"pour vous adapter à l'environnement. <em>« Ai-je assez de furtivité? »</em> <em>« Est-ce qu'ils auront des "
+"pour vous adapter à l'environnement. <em>« Ai-je assez de discrétion? »</em> <em>« Est-ce qu'ils auront des "
 "%(grapple)s contre mes %(sce)s ? »</em> Si vous n'êtes pas sûr, améliorez peut-être votre capacité à cycler, que ce "
 "soit avec %(dreams_of_the_sphinx)s, %(aura_reading)s ou %(lupine_assault)s."
 
@@ -12064,9 +13549,9 @@ msgid ""
 msgstr ""
 "Vous mordez avec %(alexander_silverson)s en utilisant %(govern_the_unaligned)s et votre proie bloque. Vous jouez "
 "%(bonding)s, ce qui en fait une morsure à 4 en augmentant la discrétion. Si votre proie a de l'interception, vous "
-"avez besoin de plus de furtivité ou vous êtes en difficulté. Votre meilleur scénario dans un combat est de manœuvrer "
-"à distance et de mettre un coup dans le vide, ou d'échanger des frappes à mains nues pour un. Cela signifie que vous "
-"perdez exactement la même quantité de jetons que votre proie, mais vous ne vous souciez pas des jetons, vous vous "
+"avez besoin de plus de discrétion ou vous êtes en difficulté. Votre meilleur scénario dans un combat est de manœuvrer"
+" à distance et de mettre un coup dans le vide, ou d'échanger des frappes à mains nues pour un. Cela signifie que vous"
+" perdez exactement la même quantité de jetons que votre proie, mais vous ne vous souciez pas des jetons, vous vous "
 "souciez exclusivement de l'influence et votre proie n'en a pas perdu."
 
 #: codex_of_the_damned/templates/strategy/articles/basic/blood-pool-and-grinding-beads.html:74
@@ -12358,13 +13843,6 @@ msgstr ""
 "prédateur. Il devrait se concentrer sur le blocage des <strong>régénérations ou actions défensives de la "
 "proie</strong> comme %(consanguineous_boon)s ou %(govern_the_unaligned)s et les <strong>actions de renforcement du "
 "prédateur</strong> comme le recrutement d'alliés ou les actions de prolifération comme %(the_embrace)s."
-
-#: codex_of_the_damned/templates/strategy/deck-guides/den-of-fiends.html:135
-#: codex_of_the_damned/templates/strategy/deck-guides/libertine-ball.html:120
-#: codex_of_the_damned/templates/strategy/deck-guides/pact-with-nephandi.html:123
-#: codex_of_the_damned/templates/strategy/deck-guides/parliament-of-shadows.html:139
-msgid "Information Highway article"
-msgstr "article d'Information Highway"
 
 #: codex_of_the_damned/templates/strategy/deck-guides/den-of-fiends.html:132
 #: codex_of_the_damned/templates/strategy/deck-guides/libertine-ball.html:117
