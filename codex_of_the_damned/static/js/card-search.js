@@ -1,3 +1,13 @@
+const group_map = {
+    "1": " ❶",
+    "2": " ❷",
+    "3": " ❸",
+    "4": " ❹",
+    "5": " ❺",
+    "6": " ❻",
+    "7": " ❼",
+    "ANY": "",
+}
 class CardSearch {
     constructor() {
         this.form = document.getElementById("card-search-form")
@@ -71,7 +81,7 @@ class CardSearch {
             return
         }
         const lang = document.documentElement.lang
-        let title = data.name
+        let title = data.printed_name
         let text = data.card_text
         let translation
         let base_image = data.url
@@ -87,6 +97,12 @@ class CardSearch {
         }
         this.card_image.src = base_image
         this.card_image.addEventListener("click", (ev) => this.resetSet(base_image))
+        if (data.group) {
+            title += group_map[data.group]
+        }
+        if (data.adv) {
+            title += " <i>|</i>"
+        }
         title = title.replace("(ADV)", "<i>|</i>")
         this.card_title.innerHTML = title
         let pelem = document.createElement("p")
@@ -205,7 +221,7 @@ class CardSearch {
                     e.target.style.opacity = 0.3
                     try {
                         await navigator.clipboard.writeText(e.target.parentNode.dataset.markdown)
-                    } catch {}
+                    } catch { }
                 })
             }
             // custom copy event to include ruling link
@@ -355,7 +371,7 @@ async function urlExists(url) {
         if (response.ok) {
             return true
         }
-    } catch {}
+    } catch { }
     return false
 }
 const disc_map = {
