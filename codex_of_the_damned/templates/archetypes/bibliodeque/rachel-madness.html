@@ -1,0 +1,103 @@
+{% extends "archetypes/_layout.html" %}
+{% import "archetypes/_layout-erratum.html" as erratum with context %}
+{% import "archetypes/bibliodeque/rachel-madness.json" as deck_json %}
+
+{% block meta %}
+<meta property="decklist" content='{{ deck_json | tojson }}' />
+{% endblock %}
+
+{% block archetype_name %}
+<h1>{{ malkavian }} Rachel Madness</h1>
+{% endblock %}
+
+{% block archetype %}
+{% trans trimmed
+rachel_brandywine=card("Rachel Brandywine"),
+homunculus=card("Homunculus"),
+madness_network=card("Madness Network"),
+form_of_mist=card("Form of Mist"),
+second_tradition_domain=card("Second Tradition: Domain"),
+eyes_of_argus=card("Eyes of Argus"),
+earth_meld=card("Earth Meld"),
+enkil_cog=card("Enkil Cog"),
+perfectionist=card("Perfectionist"),
+giant_s_blood=card("Giant's Blood"),
+the_rack=card("The Rack"),
+greger_anderssen=card("Greger Anderssen"),
+parity_shift=card("Parity Shift"),
+protean=card("Protean"),
+blessing_of_chaos=card("Blessing of Chaos"),
+mind_rape=card("Mind Rape"),
+sensory_deprivation=card("Sensory Deprivation"),
+heart_of_nizchetus=card("Heart of Nizchetus"),
+sport_bike=card("Sport Bike"),
+camera_phone=card("Camera Phone"),
+fifth_tradition_hospitality=card("Fifth Tradition: Hospitality"),
+shadow_of_the_beast=card("Shadow of the Beast"),
+powerbase_zürich=card("Powerbase: Zürich"),
+maris_streck=card("Maris Streck"),
+the_unnamed=link("/archetypes/the-unnamed")
+%}
+<h2>Highlights</h2>
+<p>
+    This is a <em>stealth & bleed</em> deck starring {{ rachel_brandywine }}.
+    The idea is to use her {{ PRO }} discipline to fetch an
+    {{ homunculus }} which, alongside {{ madness_network }}, will let her bleed during
+    multiple consecutive turns.
+</p>
+<p>
+    Stealth is high, with 15 modifiers and {{ form_of_mist }}.
+</p>
+<p>
+    On the defence side, {{ second_tradition_domain }}
+    and {{ eyes_of_argus }} are used to intercept and protect the {{ madness_network }},
+    with many copies of {{ earth_meld }} to avoid combat and stay unlocked.
+</p>
+<p>
+    The deck is slow in the beginning but has a decent defence and,
+    once the combination hits the table, it can finish a prey very quickly.
+</p>
+<h2>Tips & Tricks</h2>
+<p>
+    {{ enkil_cog }} is a cheap way to have {{ rachel_brandywine }} bleed for 3 instead of 2.
+    Moreover, it can replace {{ madness_network }} a bit if it is destroyed.
+</p>
+<p>
+    {{ homunculus }} costs blood, so {{ perfectionist }}, {{ giant_s_blood }} and
+    {{ the_rack }} are essential to feeding the combination.
+</p>
+<p>
+    {{ greger_anderssen }} is an excellent sidekick as he also has {{ pro }}
+    and can therefore use an {{ homunculus }} too. Moreover, he is also <em>Prince</em>,
+    meaning he gets to play {{ parity_shift }} and {{ second_tradition_domain }} too.
+    If {{ protean }} is drawn, he can even use {{ earth_meld }} at its full potential.
+</p>
+<p>
+    {{ blessing_of_chaos }} is a useful addition,
+    as it can cripple bleed modules a bit, forcing them to use their
+    bleed modifiers <em>before</em> blocks are announced. It's also a counter
+    against the occasional {{ mind_rape }} or {{ sensory_deprivation }}.
+</p>
+<h2>Variants</h2>
+<p>
+    There are only slight variations of the crypt and library for this archetype.
+    {{ heart_of_nizchetus }}, {{ sport_bike }}, {{ camera_phone }} and
+    {{ fifth_tradition_hospitality }} are often used, as well as
+    {{ shadow_of_the_beast }} and {{ powerbase_zürich }}.
+    On the crypt side, {{ maris_streck }} is often included too.
+</p>
+<p>
+    Using this mechanic of bleeding during multiple turns can also be seen in the
+    {{ the_unnamed }} archetype, which also uses
+    {{ homunculus }} and {{ enkil_cog }}.
+</p>
+{% endtrans %}
+{% endblock %}
+
+{% block errata %}
+<div class="insert warn">
+    <h3>Errata</h3>
+    {{ erratum.pentextmsubversion( 'undecided' ) }}
+    {{ erratum.parityshift() }}
+</div>
+{% endblock %}

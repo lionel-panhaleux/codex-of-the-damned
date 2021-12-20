@@ -1,0 +1,106 @@
+{% extends "archetypes/_layout.html" %}
+{% import "archetypes/_layout-erratum.html" as erratum with context %}
+{% import "archetypes/runner-ups/palla-grande.json" as deck_json %}
+
+{% block meta %}
+<meta property="decklist" content='{{ deck_json | tojson }}' />
+{% endblock %}
+
+{% block archetype_name %}
+<h1>{{ toreador_antitribu }} Palla Grande</h1>
+{% endblock %}
+
+{% block archetype %}
+{% trans trimmed
+anarch_troublemaker=card("Anarch Troublemaker"),
+art_scam=card("Art Scam"),
+carlton_van_wyk=card("Carlton Van Wyk"),
+change_of_target=card("Change of Target"),
+charsimatic_aura=card("Charismatic Aura"),
+consanguineous_boon=card("Consanguineous Boon"),
+embraces=card("The Embrace", "Embraces"),
+emerald_legionnaire=card("Emerald Legionnaire"),
+enchant_kindred=card("Enchant Kindred"),
+entrancement=card("Entrancement"),
+foundation_exhibit=card("Foundation Exhibit"),
+immortal_grapple=card("Immortal Grapple"),
+jost_werner=card("Jost Werner"),
+majesty=card("Majesty"),
+mind_numb=card("Mind Numb"),
+ossian=card("Ossian"),
+palla_grande=card("Palla Grande"),
+rebekka=card("Rebekka, Chantry Elder of Munich ", "Rebekka"),
+telepathic_misdirection=card("Telepathic Misdirection"),
+the_embrace=card("The Embrace"),
+rebekka_jost=link("/archetypes/rebekka-jost"),
+jannes_deck=link("/deck-search", _("Janne Lönnqvist's deck"), id="2016eclcqgi"),
+gines_deck=link("/deck-search", _("Ginés Quiñonero's deck"), id="2018stgadvpdms")
+%}
+<h2>Highlights</h2>
+<p>
+    This is a <em>breed & boon</em> deck from the Toreador antitribu
+    {{ toreador_antitribu }} clan. Low capacity vampires
+    multiply with superior {{ enchant_kindred }} and {{ the_embrace }},
+    then use {{ palla_grande }} to bleed hard.
+</p>
+<p>
+    {{ AUS }} is used for defence with bounces like {{ telepathic_misdirection }},
+    {{ art_scam }} is heavily used for additional bloat. {{ PRE }} provides combat
+    defence in the form of {{ majesty }}.
+</p>
+<p>
+    The deck does not have a lot of stealth, it uses the sheer number of actions to 
+    overrun the opponents defences. That said, most actions the deck is performing have
+    a natural +1 stealth embedded. The bleed actions, on the other hand, will only
+    get through because of their sheer number
+</p>
+<h2>Tips & Tricks</h2>
+<p>
+    The lack of stealth is compensated by a few tricks: actions can be used as bait
+    just to invite a block and use {{ majesty }} or {{ change_of_target }} for another
+    action. If he's in the crypt, {{ jost_werner }} stealth bonus can come in handy.
+    For the lunge, {{ anarch_troublemaker }} can help lock key minions so more bleed
+    get through.
+</p>
+<p>
+    {{ entrancement }} is a good motivator for this deck, as one of the best defence
+    against allies, especially one that can rush minions like {{ ossian }} or have
+    intercept like {{ carlton_van_wyk }}. But it can also delay an
+    {{ emerald_legionnaire }} deck substantially.
+</p>
+<p>
+    Timing is key in this deck and building a proper lunge important. One does not
+    want to lose minions to tentative bleeds that get blocked. At the same time, the
+    deck should not shy away from opportunities and, if the prey's defences are low, it
+    might be best to land a few bleeds outright than just buildup with {{ the_embrace }}
+    and {{ art_scam }}.
+</p>
+<h2>Variants</h2>
+<p>
+    There are a lot of variants based on this {{ palla_grande }} card.
+</p>
+    The <strong>Grande Exhibit</strong> variant uses votes and {{ foundation_exhibit }}
+    to include a dozen {{ consanguineous_boon }}. This means more bloat, more minions
+    and more {{ embraces }}, like in {{ jannes_deck }} from 2016.
+</p>
+<p>
+    The archetype is in fact pretty close to the {{ rebekka_jost }} archetype,
+    so variations with {{ rebekka }} in the crypt are common, like {{ gines_deck }}
+    from 2018.
+</p>
+<p>
+    The included cards can vary a lot. Far more
+    {{ entrancement }} can be played to disable allies deck more systematically.
+    {{ charsimatic_aura }} can be included in numbers to counter combat decks,
+    especially those relying on {{ immortal_grapple }}. {{ mind_numb }} is also a
+    common inclusion.
+</p>
+{% endtrans %}
+{% endblock %}
+
+{% block errata %}
+<div class="insert warn">
+    <h3>Errata</h3>
+    {{ erratum.pentextmsubversion("keep") }}
+</div>
+{% endblock %}

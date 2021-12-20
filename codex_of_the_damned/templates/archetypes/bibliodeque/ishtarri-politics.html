@@ -1,0 +1,100 @@
+{% extends "archetypes/_layout.html" %}
+{% import "archetypes/_layout-erratum.html" as erratum with context %}
+{% import "archetypes/bibliodeque/ishtarri-politics.json" as deck_json %}
+
+{% block meta %}
+<meta property="decklist" content='{{ deck_json | tojson }}' />
+{% endblock %}
+
+{% block archetype_name %}
+<h1>{{ ishtarri }} Ishtarri Politics</h1>
+{% endblock %}
+
+{% block archetype %}
+{% trans trimmed
+enchant_kindred=card("Enchant Kindred"),
+public_trust=card("Public Trust"),
+kine_resources_contested=card("Kine Resources Contested"),
+conservative_agitation=card("Conservative Agitation"),
+reins_of_power=card("Reins of Power"),
+villein=card("Villein"),
+voter_captivation=card("Voter Captivation"),
+ancient_influence=card("Ancient Influence"),
+political_stranglehold=card("Political Stranglehold"),
+forced_march=card("Forced March"),
+freak_drive=card("Freak Drive"),
+majesty=card("Majesty"),
+mylan_horseed=card("Mylan Horseed"),
+the_kiss_of_ra=card("The Kiss of Ra"),
+strange_day=card("Strange Day"),
+scourge_of_the_enochians=card("Scourge of the Enochians"),
+fear_of_mekhet=card("Fear of Mekhet"),
+falhu_shibaba=card("Falhu Shibaba"),
+perfectionist=card("Perfectionist"),
+scalpel_tongue=card("Scalpel Tongue"),
+no_secrets_from_the_magaji=card("No Secrets From the Magaji"),
+leeching=link("/strategy/bloat", _("leeching"), _anchor="leeching"),
+a_b=link("/strategy/fundamentals", _("A&B"), _anchor="AB"),
+adam_hulse_s_deck=link("/deck-search", _("Adam Hulse's deck"), id="2014won5co"),
+marcin_szybkowski=link("/deck-search", _("Marcin Szybkowski"), id="2k9bjpp")
+%}
+<h2>Highlights</h2>
+<p>
+    This is a <em>political</em> deck using the Ishtarri clan and their
+    {{ PRE }}{{ FOR }}{{ CEL }} disciplines combination.
+</p>
+<p>
+    The deck uses {{ PRE }} to bleed with {{ enchant_kindred }} and {{ public_trust }}.
+    Political actions are used to deliver pool damage to the prey with
+    {{ kine_resources_contested }}, {{ conservative_agitation }} and {{ reins_of_power }}.
+</p>
+<p>
+    Bloat is done by {{ leeching }}, using {{ villein }} and getting blood
+    back on the vampires with {{ voter_captivation }}, plus a bit of political actions
+    with {{ ancient_influence }} and {{ political_stranglehold }}.
+</p>
+<p>
+    The deck has a high {{ a_b }} with the {{ FOR }} unlock modifiers
+    {{ forced_march }} and {{ freak_drive }}, but also
+    {{ majesty }} if an action is blocked and {{ mylan_horseed }} if he is drawn.
+</p>
+<h2>Tips & Tricks</h2>
+<p>
+    {{ enchant_kindred }} can be used in the game beginning
+    to get vampires out faster and cheaper.
+</p>
+<p>
+    {{ the_kiss_of_ra }} and {{ strange_day }} are expensive but can be kept in hand
+    for a lunge action, be it a vote or a bleed.
+</p>
+<p>
+    {{ scourge_of_the_enochians }} is a counter against breed decks,
+    {{ fear_of_mekhet }} against Inner Circle decks.
+    Both of a them are quite a threat to this archetype.
+</p>
+<h2>Variants</h2>
+<p>
+    Other card can easily be included in the deck: {{ falhu_shibaba }} in the crypt
+    (although he does not have {{ obf }}), {{ perfectionist }}
+    to get some blood back on the vampires, {{ scalpel_tongue }}
+    to help getting the votes through, and some {{ cel }} and {{ for }} combat cards.
+    Some variants may be more toolboxy.
+    {{ no_secrets_from_the_magaji }} is an excellent defence card and is even included here,
+    but it can be accompanied by a bit more equipments and combat options,
+    like {{ adam_hulse_s_deck }} from 2014.
+</p>
+<p>
+    An <strong>Anarch</strong> variant has also been played
+    by {{ marcin_szybkowski }} in 2009.
+</p>
+{% endtrans %}
+{% endblock %}
+
+{% block errata %}
+<div class="insert warn">
+    <h3>Errata</h3>
+    {{ erratum.pentextmsubversion( 'remove' ) }}
+    {{ erratum.villein() }}
+    {{ erratum.lilithsblessing() }}
+</div>
+{% endblock %}

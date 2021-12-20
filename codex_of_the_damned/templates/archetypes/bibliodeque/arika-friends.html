@@ -1,0 +1,35 @@
+{% extends "archetypes/_layout.html" %}
+{% import "archetypes/_layout-erratum.html" as erratum with context %}
+{% import "archetypes/bibliodeque/arika-friends.json" as deck_json %}
+{% import "archetypes/bibliodeque/_layout.html" as layout with context %}
+
+{% block meta %}
+<meta property="decklist" content='{{ deck_json | tojson }}' />
+{% endblock %}
+
+{% block archetype_name %}
+<h1>{{ ventrue }} Arika & Friends</h1>
+
+{{ layout.wip() }}
+{% endblock %}
+
+{% block archetype %}
+{% trans trimmed
+
+%}
+<h2>Highlights</h2>
+<p>
+
+</p>
+
+<h2>Tips & Tricks</h2>
+<p>
+
+</p>
+
+<h2>Tournament Version</h2>
+<p>
+
+</p>
+{% endtrans %}
+{% endblock %}

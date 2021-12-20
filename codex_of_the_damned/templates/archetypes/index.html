@@ -14,43 +14,30 @@
 {% trans trimmed
 twda=external("http://www.vekn.fr/decks/twd.htm", "Tournament Winning Deck Archive (TWDA)")
 %}
-<h2>Tournament Archetypes</h2>
+<h2>Top Tier</h2>
 <p>
-	Here is a list of <strong>Vampire: the Eternal Struggle</strong> deck archetypes.
-	Every archetype is presented with {{ twda }} deck list examples, main variations,
-	and a play guide.
+	Here is a list of the best <strong>Vampire: the Eternal Struggle</strong> deck archetypes.
+	Every archetype is presented with {{ twda }} deck list examples, main variations, and a play guide.
 </p>
 <p>
-	Only archetypes having proven themselves against at least 25 players since 2008 are taken into account,
-	with the exception of some original designs for strategic reference.
+	Only archetypes having proven themselves against at least 20 players twice since 2013 are taken into account,
+	and only if one of these wins is a Continental Championship or if they have at least a third win.
 	Example decklists are the most recent ones, or the ones with a Continental Championship win.
+</p>
+<p>
+	Please note that this list is built purely on TWDA statistics: more than a third of tournaments wins are achieved
+	with unrelated decks.
 </p>
 {% endtrans %}
 <table class="column-2">
 	<tbody>
 		<tr>
-			<td>{{ link("/archetypes/aaa") }}</td>
+			<td>{{ link("/archetypes/anson-guns") }}</td>
 			<td>(Toolbox)</td>
-		</tr>
-		<tr>
-			<td>{{ link('/archetypes/akunanse-wall') }}</td>
-			<td>(Wall)</td>
-		</tr>
-		<tr>
-			<td>{{ link('/archetypes/amaravati-politics') }}</td>
-			<td>(Politics)</td>
 		</tr>
 		<tr>
 			<td>{{ link('/archetypes/anti-ventrue-grinder') }}</td>
 			<td>(Toolbox)</td>
-		</tr>
-		<tr>
-			<td>{{ link('/archetypes/baltimore-purge') }}</td>
-			<td>(Special)</td>
-		</tr>
-		<tr>
-			<td>{{ link('/archetypes/bima-dominate') }}</td>
-			<td>(Swarm Bleed)</td>
 		</tr>
 		<tr>
 			<td>{{ link('/archetypes/black-hand') }}</td>
@@ -61,31 +48,15 @@ twda=external("http://www.vekn.fr/decks/twd.htm", "Tournament Winning Deck Archi
 			<td>(Wall / Toolbox)</td>
 		</tr>
 		<tr>
-			<td>{{ link('/archetypes/council-of-doom') }}</td>
-			<td>(Bleed & Politics)</td>
-		</tr>
-		<tr>
-			<td>{{ link('/archetypes/cybelotron') }}</td>
-			<td>(Special)</td>
-		</tr>
-		<tr>
-			<td>{{ link('/archetypes/daughters-politics') }}</td>
-			<td>(Politics)</td>
-		</tr>
-		<tr>
-			<td>{{ link('/archetypes/death-star') }}</td>
-			<td>(Politics)</td>
-		</tr>
-		<tr>
-			<td>{{ link('/archetypes/dmitris-big-band') }}</td>
-			<td>(Toolbox)</td>
+			<td>{{ link('/archetypes/dementation-bleed') }}</td>
+			<td>(Stealth & Bleed)</td>
 		</tr>
 		<tr>
 			<td>{{ link('/archetypes/emerald-legion') }}</td>
 			<td>(Toolbox)</td>
 		</tr>
 		<tr>
-			<td>{{ link('/archetypes/euro-brujah') }}</td>
+			<td>{{ link('/archetypes/gentlemen-with-sticks') }}</td>
 			<td>(Toolbox)</td>
 		</tr>
 		<tr>
@@ -101,111 +72,47 @@ twda=external("http://www.vekn.fr/decks/twd.htm", "Tournament Winning Deck Archi
 			<td>(Rush / Toolbox)</td>
 		</tr>
 		<tr>
-			<td>{{ link('/archetypes/hunters') }}</td>
-			<td>(Toolbox)</td>
-		</tr>
-		<tr>
-			<td>{{ link('/archetypes/ishtarri-politics') }}</td>
-			<td>(Politics)</td>
-		</tr>
-		<tr>
-			<td>{{ link('/archetypes/jost-powerbleed') }}</td>
-			<td>(Powerbleed)</td>
-		</tr>
-		<tr>
-			<td>{{ link('/archetypes/khazars-diary') }}</td>
-			<td>(Toolbox)</td>
-		</tr>
-		<tr>
-			<td>{{ link('/archetypes/kiasyd-stealth-bleed') }}</td>
-			<td>(Stealth & Bleed)</td>
-		</tr>
-		<tr>
-			<td>{{ link('/archetypes/lasombra-nocturn') }}</td>
-			<td>(Stealth & Bleed)</td>
-		</tr>
-		<tr>
 			<td>{{ link('/archetypes/lutz-politics') }}</td>
-			<td>(Bleed & Politics)</td>
-		</tr>
-		<tr>
-			<td>{{ link('/archetypes/madness-reversal') }}</td>
-			<td>(Special)</td>
-		</tr>
-		<tr>
-			<td>{{ link('/archetypes/mind-rape') }}</td>
-			<td>(Special)</td>
-		</tr>
-		<tr>
-			<td>{{ link('/archetypes/mistress') }}</td>
-			<td>(Bleed & Politics)</td>
-		</tr>
-		<tr>
-			<td>{{ link('/archetypes/nananimalism') }}</td>
-			<td>(Rush)</td>
-		</tr>
-		<tr>
-			<td>{{ link('/archetypes/nephandii') }}</td>
-			<td>(Toolbox)</td>
+			<td>(Bleed & Vote)</td>
 		</tr>
 	</tbody>
 </table>
 <table class="column-2">
 	<tbody>
 		<tr>
-			<td>{{ link('/archetypes/nosferatu-royalty') }}</td>
+			<td>{{ link('/archetypes/malgorzata') }}</td>
 			<td>(Toolbox)</td>
 		</tr>
 		<tr>
-			<td>{{ link('/archetypes/rachel-madness') }}</td>
-			<td>(Stealth & Bleed)</td>
+			<td>{{ link('/archetypes/mistress') }}</td>
+			<td>(Bleed & Vote)</td>
 		</tr>
 		<tr>
-			<td>{{ link('/archetypes/ravnos-clown-car') }}</td>
-			<td>(Swarm Politics)</td>
+			<td>{{ link('/archetypes/nananimalism') }}</td>
+			<td>(Rush / Toolbox)</td>
 		</tr>
 		<tr>
-			<td>{{ link('/archetypes/renegade-assault') }}</td>
-			<td>(Rush)</td>
+			<td>{{ link('/archetypes/parliament-of-shadows') }}</td>
+			<td>(Bleed & Vote)</td>
 		</tr>
 		<tr>
-			<td>{{ link('/archetypes/saulot-friends') }}</td>
-			<td>(Wall)</td>
-		</tr>
-		<tr>
-			<td>{{ link('/archetypes/scout') }}</td>
-			<td>(Politics)</td>
-		</tr>
-		<tr>
-			<td>{{ link('/archetypes/shambling-hordes') }}</td>
-			<td>(Rush)</td>
-		</tr>
-		<tr>
-			<td>{{ link('/archetypes/spirit-marionette') }}</td>
-			<td>(Special)</td>
-		</tr>
-		<tr>
-			<td>{{ link('/archetypes/stanislava') }}</td>
-			<td>(Bleed & Politics)</td>
-		</tr>
-		<tr>
-			<td>{{ link('/archetypes/team-jacob') }}</td>
-			<td>(Stealth & Bleed)</td>
-		</tr>
-		<tr>
-			<td>{{ link('/archetypes/the-bleeding-vignes') }}</td>
+			<td>{{ link('/archetypes/rebekka-jost') }}</td>
 			<td>(Powerbleed)</td>
 		</tr>
 		<tr>
-			<td>{{ link('/archetypes/the-dark-side-of-politics') }}</td>
-			<td>(Politics)</td>
+			<td>{{ link('/archetypes/saulot-wall') }}</td>
+			<td>(Wall)</td>
+		</tr>
+		<tr>
+			<td>{{ link('/archetypes/stanislava') }}</td>
+			<td>(Bleed & Vote)</td>
 		</tr>
 		<tr>
 			<td>{{ link('/archetypes/the-unnamed') }}</td>
 			<td>(Stealth & Bleed)</td>
 		</tr>
 		<tr>
-			<td>{{ link('/archetypes/tupdogs') }}</td>
+			<td>{{ link('/archetypes/tupdogs-nephandus') }}</td>
 			<td>(Rush)</td>
 		</tr>
 		<tr>
@@ -213,32 +120,69 @@ twda=external("http://www.vekn.fr/decks/twd.htm", "Tournament Winning Deck Archi
 			<td>(Toolbox)</td>
 		</tr>
 		<tr>
-			<td>{{ link('/archetypes/tzimisce-wall') }}</td>
-			<td>(Wall)</td>
-		</tr>
-		<tr>
-			<td>{{ link('/archetypes/ventrue-royalty') }}</td>
-			<td>(Toolbox)</td>
-		</tr>
-		<tr>
 			<td>{{ link('/archetypes/war-chantry') }}</td>
 			<td>(Toolbox)</td>
 		</tr>
+	</tbody>
+</table>
+
+{% trans trimmed vtes_discord=external("https://discord.gg/cafUcrDP8k", _("V:TES Discord")) %}
+<h2>Runner-ups</h2>
+<p>
+	These archetypes are not currently top tier, but they have potential. They have either
+	been successful in the past, or have recently gotten some victories in tournaments. Keep an eye out
+	for them, tinker and experiment to reveal their full potential.
+</p>
+{% endtrans %}
+<table class="column-2">
+	<tbody>
 		<tr>
-			<td>{{ link('/archetypes/war-ghouls') }}</td>
-			<td>(Rush)</td>
+			<td>{{ link('/archetypes/runner-ups/akunanse-toolbox') }}</td>
+			<td>(Toolbox)</td>
 		</tr>
 		<tr>
-			<td>{{ link('/archetypes/weenie-aus') }}</td>
-			<td>(Wall)</td>
+			<td>{{ link('/archetypes/runner-ups/giovanni-powerbleed') }}</td>
+			<td>(Powerbleed)</td>
 		</tr>
 		<tr>
-			<td>{{ link('/archetypes/weenie-dem') }}</td>
+			<td>{{ link('/archetypes/runner-ups/hunters') }}</td>
+			<td>(Toolbox)</td>
+		</tr>
+		<tr>
+			<td>{{ link('/archetypes/runner-ups/khazars-diary') }}</td>
+			<td>(Toolbox)</td>
+		</tr>
+		<tr>
+			<td>{{ link('/archetypes/runner-ups/lasombra-nocturn') }}</td>
 			<td>(Stealth & Bleed)</td>
 		</tr>
 		<tr>
-			<td>{{ link('/archetypes/weenie-dom') }}</td>
-			<td>(Swarm Bleed)</td>
+			<td>{{ link('/archetypes/runner-ups/palla-grande') }}</td>
+			<td>(Swarm)</td>
+		</tr>
+	</tbody>
+</table>
+<table class="column-2">
+	<tbody>
+		<tr>
+			<td>{{ link('/archetypes/runner-ups/ravnos-clown-car') }}</td>
+			<td>(Swarm)</td>
+		</tr>
+		<tr>
+			<td>{{ link('/archetypes/runner-ups/samedi-bleed') }}</td>
+			<td>(Stealth & Bleed)</td>
+		</tr>
+		<tr>
+			<td>{{ link('/archetypes/runner-ups/shambling-hordes') }}</td>
+			<td>(Rush)</td>
+		</tr>
+		<tr>
+			<td>{{ link('/archetypes/runner-ups/the-dark-side-of-politics') }}</td>
+			<td>(Vote)</td>
+		</tr>
+		<tr>
+			<td>{{ link('/archetypes/runner-ups/weenie-aus') }}</td>
+			<td>(Wall)</td>
 		</tr>
 	</tbody>
 </table>
@@ -342,19 +286,22 @@ google_drive=external("https://drive.google.com/drive/folders/0B32R3iejqMPTaXNDd
 <h2>Bibliodèque</h2>
 <p>
 	The « Bibliodèque » is a French project made of more than a hundred decklists
-	based on Tournament winning decklists or archetypes to help people building
+	based on Tournament winning decklists or archetypes to help people build
 	decks for their casual play or tournaments, and ultimately print those decks
 	in proxy to have a library of decks available for their playgroup.
 </p>
 <p>
-	Much thanks for the French people helping in various ways:
+	Many thanks to the French people helping in various ways:
 	<strong>TTC_master</strong> acting as lead designer, Ezra, Tim, Cordovader,
-	Darkal, Stone and so on... and to the players which decks have served as basis
-	for the decks presented (or were shamelessly copied directly).
+	Darkal, Stone and so on... and to the players whose decks have served as a basis
+	for the decks presented here (or were shamelessly copied directly).
 </p>
 <p>
 	You may find the complete historic of the project in the {{ french_vekn_forum}}
-	and check the final Bibliodèque with proxies on {{ google_drive }}.
+	and the final Bibliodèque with proxies on {{ google_drive }}.
+</p>
+<p>
+	A few names have been change, and some decks have been added to the list for reference.
 </p>
 {% endtrans %}
 
@@ -362,11 +309,15 @@ google_drive=external("https://drive.google.com/drive/folders/0B32R3iejqMPTaXNDd
 	<tbody>
 		<tr>
 			<td>{{ link('/archetypes/bibliodeque/419-operation') }}</td>
-			<td>(Other)</td>
+			<td>(Special)</td>
 		</tr>
 		<tr>
 			<td>{{ link('/archetypes/bibliodeque/akunanse-classic') }}</td>
 			<td>(Wall)</td>
+		</tr>
+		<tr>
+			<td>{{ link('/archetypes/bibliodeque/amaravati-politics') }}</td>
+			<td>(Swarm Vote)</td>
 		</tr>
 		<tr>
 			<td>{{ link('/archetypes/bibliodeque/anson-grooming') }}</td>
@@ -381,12 +332,12 @@ google_drive=external("https://drive.google.com/drive/folders/0B32R3iejqMPTaXNDd
 			<td>(Allies)</td>
 		</tr>
 		<tr>
-			<td>{{ link('/archetypes/bibliodeque/armin-the-hammer') }}</td>
-			<td>(Vote)</td>
+			<td>{{ link('/archetypes/bibliodeque/arika-friends') }}</td>
+			<td>(Bleed & Vote)</td>
 		</tr>
 		<tr>
-			<td>{{ link('/archetypes/bibliodeque/army-of-allah') }}</td>
-			<td>(Swarm Vote)</td>
+			<td>{{ link('/archetypes/bibliodeque/armin-the-hammer') }}</td>
+			<td>(Vote)</td>
 		</tr>
 		<tr>
 			<td>{{ link('/archetypes/bibliodeque/aviary') }}</td>
@@ -405,10 +356,6 @@ google_drive=external("https://drive.google.com/drive/folders/0B32R3iejqMPTaXNDd
 			<td>(Toolbox)</td>
 		</tr>
 		<tr>
-			<td>{{ link('/archetypes/bibliodeque/big-cock') }}</td>
-			<td>(Bruise & Bleed)</td>
-		</tr>
-		<tr>
 			<td>{{ link('/archetypes/bibliodeque/bima-dominate') }}</td>
 			<td>(Allies)</td>
 		</tr>
@@ -425,19 +372,19 @@ google_drive=external("https://drive.google.com/drive/folders/0B32R3iejqMPTaXNDd
 			<td>(Swarm Bleed)</td>
 		</tr>
 		<tr>
-			<td>{{ link('/archetypes/bibliodeque/collier-of-love') }}</td>
-			<td>(Lock & Bleed)</td>
-		</tr>
-		<tr>
-			<td>{{ link('/archetypes/bibliodeque/cybele-great-beast') }}</td>
-			<td>(Star)</td>
+			<td>{{ link('/archetypes/bibliodeque/council-of-doom') }}</td>
+			<td>(Vote & Bleed)</td>
 		</tr>
 		<tr>
 			<td>{{ link('/archetypes/bibliodeque/cybele-maleficia') }}</td>
 			<td>(Lock & Bleed)</td>
 		</tr>
 		<tr>
-			<td>{{ link('/archetypes/bibliodeque/daughters') }}</td>
+			<td>{{ link('/archetypes/bibliodeque/cybelotron') }}</td>
+			<td>(Special)</td>
+		</tr>
+		<tr>
+			<td>{{ link('/archetypes/bibliodeque/daughters-politics') }}</td>
 			<td>(Swarm Vote)</td>
 		</tr>
 		<tr>
@@ -445,11 +392,15 @@ google_drive=external("https://drive.google.com/drive/folders/0B32R3iejqMPTaXNDd
 			<td>(Wall)</td>
 		</tr>
 		<tr>
+			<td>{{ link('/archetypes/bibliodeque/death-star') }}</td>
+			<td>(Vote)</td>
+		</tr>
+		<tr>
 			<td>{{ link('/archetypes/bibliodeque/dekox-ultimus') }}</td>
 			<td>(Wall)</td>
 		</tr>
 		<tr>
-			<td>{{ link('/archetypes/bibliodeque/dominarium') }}</td>
+			<td>{{ link('/archetypes/bibliodeque/dmitris-big-band') }}</td>
 			<td>(Swarm Bleed)</td>
 		</tr>
 		<tr>
@@ -537,6 +488,14 @@ google_drive=external("https://drive.google.com/drive/folders/0B32R3iejqMPTaXNDd
 			<td>(Lock & Bleed)</td>
 		</tr>
 		<tr>
+			<td>{{ link('/archetypes/bibliodeque/ishtarri-politics') }}</td>
+			<td>(Vote)</td>
+		</tr>
+		<tr>
+			<td>{{ link('/archetypes/bibliodeque/kiasyd-stealth-bleed') }}</td>
+			<td>(Stealth & Bleed)</td>
+		</tr>
+		<tr>
 			<td>{{ link('/archetypes/bibliodeque/kiev-circle') }}</td>
 			<td>(Swarm Bleed)</td>
 		</tr>
@@ -560,18 +519,26 @@ google_drive=external("https://drive.google.com/drive/folders/0B32R3iejqMPTaXNDd
 			<td>{{ link('/archetypes/bibliodeque/lutzs-coopt') }}</td>
 			<td>(Vote)</td>
 		</tr>
+	</tbody>
+</table>
+<table class="column-2">
+	<tbody>
+		<tr>
+			<td>{{ link('/archetypes/bibliodeque/madness-reversal') }}</td>
+			<td>(Special)</td>
+		</tr>
 		<tr>
 			<td>{{ link('/archetypes/bibliodeque/malgorzata-friends') }}</td>
 			<td>(Wall)</td>
 		</tr>
 		<tr>
+			<td>{{ link('/archetypes/bibliodeque/malkav-94') }}</td>
+			<td>(Stealth & Bleed)</td>
+		</tr>
+		<tr>
 			<td>{{ link('/archetypes/bibliodeque/malkavian-royalty') }}</td>
 			<td>(Vote)</td>
 		</tr>
-	</tbody>
-</table>
-<table class="column-2">
-	<tbody>
 		<tr>
 			<td>{{ link('/archetypes/bibliodeque/matasuntha') }}</td>
 			<td>(Wall)</td>
@@ -589,6 +556,10 @@ google_drive=external("https://drive.google.com/drive/folders/0B32R3iejqMPTaXNDd
 			<td>(Wall)</td>
 		</tr>
 		<tr>
+			<td>{{ link('/archetypes/bibliodeque/mind-rape') }}</td>
+			<td>(Wall)</td>
+		</tr>
+		<tr>
 			<td>{{ link('/archetypes/bibliodeque/mono-valeren') }}</td>
 			<td>(Wall)</td>
 		</tr>
@@ -601,16 +572,12 @@ google_drive=external("https://drive.google.com/drive/folders/0B32R3iejqMPTaXNDd
 			<td>(Toolbox)</td>
 		</tr>
 		<tr>
-			<td>{{ link('/archetypes/bibliodeque/nakhtoreb') }}</td>
+			<td>{{ link('/archetypes/bibliodeque/nakhthorheb') }}</td>
 			<td>(Other)</td>
 		</tr>
 		<tr>
 			<td>{{ link('/archetypes/bibliodeque/nephandii') }}</td>
 			<td>(Allies)</td>
-		</tr>
-		<tr>
-			<td>{{ link('/archetypes/bibliodeque/no-secret-box-of-tools') }}</td>
-			<td>(Toolbox)</td>
 		</tr>
 		<tr>
 			<td>{{ link('/archetypes/bibliodeque/nosferatu-royalty') }}</td>
@@ -625,24 +592,20 @@ google_drive=external("https://drive.google.com/drive/folders/0B32R3iejqMPTaXNDd
 			<td>(Vote)</td>
 		</tr>
 		<tr>
-			<td>{{ link('/archetypes/bibliodeque/ozmo-94') }}</td>
-			<td>(Stealth & Bleed)</td>
-		</tr>
-		<tr>
 			<td>{{ link('/archetypes/bibliodeque/palla-grande') }}</td>
 			<td>(Swarm Bleed)</td>
 		</tr>
 		<tr>
-			<td>{{ link('/archetypes/bibliodeque/piper-war-ghoul') }}</td>
-			<td>(Allies)</td>
+			<td>{{ link('/archetypes/bibliodeque/rachel-madness') }}</td>
+			<td>(Stealth & Bleed)</td>
 		</tr>
 		<tr>
 			<td>{{ link('/archetypes/bibliodeque/red-army') }}</td>
 			<td>(Rush)</td>
 		</tr>
 		<tr>
-			<td>{{ link('/archetypes/bibliodeque/reversal') }}</td>
-			<td>(Other)</td>
+			<td>{{ link('/archetypes/bibliodeque/renegade-assault') }}</td>
+			<td>(Allies Rush)</td>
 		</tr>
 		<tr>
 			<td>{{ link('/archetypes/bibliodeque/richter-friends') }}</td>
@@ -650,27 +613,35 @@ google_drive=external("https://drive.google.com/drive/folders/0B32R3iejqMPTaXNDd
 		</tr>
 		<tr>
 			<td>{{ link('/archetypes/bibliodeque/rock-cats') }}</td>
-			<td>(Allies)</td>
+			<td>(Allies Rush)</td>
 		</tr>
 		<tr>
 			<td>{{ link('/archetypes/bibliodeque/sarrasine-velvet-tongue') }}</td>
 			<td>(Vote)</td>
 		</tr>
 		<tr>
+			<td>{{ link('/archetypes/bibliodeque/scout') }}</td>
+			<td>(Vote)</td>
+		</tr>
+		<tr>
 			<td>{{ link('/archetypes/bibliodeque/seraphs-ambitions') }}</td>
-			<td>(Other)</td>
+			<td>(Swarm)</td>
+		</tr>
+		<tr>
+			<td>{{ link('/archetypes/bibliodeque/shadow-court-satyrs') }}</td>
+			<td>(Allies Toolbox)</td>
+		</tr>
+		<tr>
+			<td>{{ link('/archetypes/bibliodeque/shalmath-history') }}</td>
+			<td>(Toolbox)</td>
 		</tr>
 		<tr>
 			<td>{{ link('/archetypes/bibliodeque/shas-trio') }}</td>
 			<td>(Vote)</td>
 		</tr>
 		<tr>
-			<td>{{ link('/archetypes/bibliodeque/shadow-court-satyrs') }}</td>
-			<td>(Allies)</td>
-		</tr>
-		<tr>
 			<td>{{ link('/archetypes/bibliodeque/slaughtermanship') }}</td>
-			<td>(Other)</td>
+			<td>(Special)</td>
 		</tr>
 		<tr>
 			<td>{{ link('/archetypes/bibliodeque/spell-of-life') }}</td>
@@ -682,19 +653,19 @@ google_drive=external("https://drive.google.com/drive/folders/0B32R3iejqMPTaXNDd
 		</tr>
 		<tr>
 			<td>{{ link('/archetypes/bibliodeque/stanislava') }}</td>
-			<td>(Bleed & Politics)</td>
+			<td>(Bleed & Vote)</td>
 		</tr>
 		<tr>
 			<td>{{ link('/archetypes/bibliodeque/storia-di-buratino') }}</td>
 			<td>(Lock & Bleed)</td>
 		</tr>
 		<tr>
-			<td>{{ link('/archetypes/bibliodeque/summon-a-shal') }}</td>
-			<td>(Star)</td>
-		</tr>
-		<tr>
 			<td>{{ link('/archetypes/bibliodeque/tariq-eats-the-world') }}</td>
 			<td>(Wall)</td>
+		</tr>
+		<tr>
+			<td>{{ link('/archetypes/bibliodeque/the-bleeding-vignes') }}</td>
+			<td>(Powerbleed)</td>
 		</tr>
 		<tr>
 			<td>{{ link('/archetypes/bibliodeque/tongue-of-the-serpent') }}</td>
@@ -713,10 +684,6 @@ google_drive=external("https://drive.google.com/drive/folders/0B32R3iejqMPTaXNDd
 			<td>(Wall)</td>
 		</tr>
 		<tr>
-			<td>{{ link('/archetypes/bibliodeque/tuna-tunnel') }}</td>
-			<td>(Vote)</td>
-		</tr>
-		<tr>
 			<td>{{ link('/archetypes/bibliodeque/tunnel-runners') }}</td>
 			<td>(Allies)</td>
 		</tr>
@@ -733,20 +700,12 @@ google_drive=external("https://drive.google.com/drive/folders/0B32R3iejqMPTaXNDd
 			<td>(Wall)</td>
 		</tr>
 		<tr>
-			<td>{{ link('/archetypes/bibliodeque/una-circus') }}</td>
-			<td>(Star)</td>
-		</tr>
-		<tr>
-			<td>{{ link('/archetypes/bibliodeque/unmada-crescendo') }}</td>
-			<td>(Star)</td>
-		</tr>
-		<tr>
 			<td>{{ link('/archetypes/bibliodeque/unacceptable-boon') }}</td>
 			<td>(Swarm Vote)</td>
 		</tr>
 		<tr>
-			<td>{{ link('/archetypes/bibliodeque/warding-pan') }}</td>
-			<td>(Stealth & Bleed)</td>
+			<td>{{ link('/archetypes/bibliodeque/war-ghouls') }}</td>
+			<td>(Allies Rush)</td>
 		</tr>
 		<tr>
 			<td>{{ link('/archetypes/bibliodeque/weenie-ani') }}</td>
@@ -758,6 +717,10 @@ google_drive=external("https://drive.google.com/drive/folders/0B32R3iejqMPTaXNDd
 		</tr>
 		<tr>
 			<td>{{ link('/archetypes/bibliodeque/weenie-dem') }}</td>
+			<td>(Swarm Bleed)</td>
+		</tr>
+		<tr>
+			<td>{{ link('/archetypes/bibliodeque/weenie-dom') }}</td>
 			<td>(Swarm Bleed)</td>
 		</tr>
 		<tr>

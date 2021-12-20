@@ -1,0 +1,80 @@
+{% extends "archetypes/_layout.html" %}
+{% import "archetypes/_layout-erratum.html" as erratum with context %}
+{% import "archetypes/bibliodeque/dmitris-big-band.json" as deck_json %}
+
+{% block meta %}
+<meta property="decklist" content='{{ deck_json | tojson }}' />
+{% endblock %}
+
+{% block archetype_name %}
+<h1>{{ banu_haqim }} Dmitri's Big Band</h1>
+{% endblock %}
+
+{% block archetype %}
+{% trans trimmed
+anthelios_the_red_star=card("Anthelios, The Red Star"),
+archon_investigation=card("Archon Investigation"),
+black_sunrise=card("Black Sunrise"),
+disguised_weapon=card("Disguised Weapon"),
+dmitri_borodin=card("Dmitri Borodin"),
+dragonbound=card("Dragonbound"),
+enkil_cog=card("Enkil Cog"),
+infernal_pursuit=card("Infernal Pursuit"),
+js_simmons_esq=card("J. S. Simmons, Esq."),
+magnum=card(".44 Magnum"),
+pursuit=card("Pursuit"),
+smiling_jack_the_anarch=card("Smiling Jack, The Anarch"),
+sniper_rifle=card("Sniper Rifle"),
+target_vitals=card("Target Vitals"),
+tasha_morgan=card("Tasha Morgan"),
+the_fourth_cycle=card("The Fourth Cycle"),
+the_unmasking=card("The Unmasking"),
+trochomancy=card("Trochomancy"),
+truth_of_blood=card("Truth of Blood"),
+veil_of_darkness=card("Veil of Darkness")
+%}
+<h2>Highlights</h2>
+<p>
+    This is a <em>toolbox</em> deck centered around the {{ CEL }}{{ AUS }}{{ QUI }}
+    disciplines, with {{ dmitri_borodin }} as a star.
+</p>
+<p>
+    {{ truth_of_blood }} and {{ trochomancy }} are used to bleed.
+    {{ disguised_weapon }} along {{ magnum }} and {{ sniper_rifle }} for combat.
+    {{ cel }} provides some maneuverability with {{ pursuit }}.
+</p>
+<p>
+    {{ AUS }} provides intercept and bounces, along the excellent {{ black_sunrise }}
+    for additional unlocks. There is a bit of permanent intercept and
+    {{ smiling_jack_the_anarch }} is supposed to be kept on the table to increase pool damage.
+</p>
+<h2>Tips & Tricks</h2>
+<p>
+    {{ enkil_cog }} is an excellent bleed enhancer, but an {{ archon_investigation }}
+    on the prey side is dangerous if it is used in conjunction with {{ trochomancy }}.
+    Using {{ enkil_cog }} ability to bleed during the prey's turn prevents the use of
+    {{ archon_investigation }} (if the bleed is not bounced): as it is an out-of-turn master,
+    the prey can not play it during her own turn.
+</p>
+<p>
+    {{ the_fourth_cycle }} is included as a solution against problematic Gehenna card
+    but since {{ anthelios_the_red_star }} ban in 2016 it should not be included
+    in the deck anymore. {{ the_unmasking }} or a {{ dragonbound }} are not problematic
+    and {{ veil_of_darkness }} is too rarely played to be considered a threat.
+</p>
+<h2>Variants</h2>
+<p>
+    There is no major variant for this archetype. The crypt can be altered a bit,
+    {{ infernal_pursuit }} added to help with the rotation and {{ target_vitals }}
+    for more damages. Instead or along the {{ trochomancy }}, other permanent
+    bleed enhancers can also be added, like {{ js_simmons_esq }} and {{ tasha_morgan }}.
+</p>
+{% endtrans %}
+{% endblock %}
+
+{% block errata %}
+<div class="insert warn">
+    <h3>Errata</h3>
+    {{ erratum.pentextmsubversion( 'remove' ) }}
+</div>
+{% endblock %}

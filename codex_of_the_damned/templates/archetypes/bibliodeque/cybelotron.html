@@ -1,0 +1,88 @@
+{% extends "archetypes/_layout.html" %}
+{% import "archetypes/_layout-erratum.html" as erratum with context %}
+{% import "archetypes/bibliodeque/cybelotron.json" as deck_json %}
+
+{% block meta %}
+<meta property="decklist" content='{{ deck_json | tojson }}' />
+{% endblock %}
+
+{% block archetype_name %}
+<h1>{{ baali }} Cybelotron</h1>
+{% endblock %}
+
+{% block archetype %}
+{% trans trimmed
+antediluvian_awakening=card("Antediluvian Awakening"),
+archon_investigation=card("Archon Investigation"),
+call_the_great_beast=card("Call the Great Beast"),
+cybele=card("Cybele"),
+dark_influences=card("Dark Influences"),
+dreams_of_the_sphinx=card("Dreams of the Sphinx"),
+golconda_inner_peace=card("Golconda: Inner Peace"),
+magic_of_the_smith=card("Magic of the Smith"),
+majesty=card("Majesty"),
+redeem_the_lost_soul=card("Redeem the Lost Soul"),
+soul_gem_of_etrius=card("Soul Gem of Etrius"),
+spying_mission=card("Spying Mission"),
+the_barrens=card("The Barrens"),
+truth_of_a_thousand_lies=card("Truth of a Thousand Lies"),
+unleash_hells_fury=card("Unleash Hell's Fury")
+%}
+<h2>Highlights</h2>
+<p>
+    This is a <em>special</em> deck using {{ cybele }} and {{ call_the_great_beast }}.
+</p>
+<p>
+    The idea is to put a Master: Discipline on {{ cybele }} to get her to 11 capacity,
+    use {{ magic_of_the_smith }} to fetch a {{ soul_gem_of_etrius }}, unlock with
+    {{ truth_of_a_thousand_lies }}, then play {{ call_the_great_beast }} with
+    {{ OBF }}{{ PRE }}{{ SER }} and burn, triggering the {{ soul_gem_of_etrius }}.
+    A new {{ cybele }} comes back with the {{ soul_gem_of_etrius }} and bleeds
+    alongside the Great Beast.
+</p>
+<p>
+    This is a complicated combination but, if done right,
+    {{ cybele }} and her "resurrection" can both bleed in the same turn for 3 each,
+    plus 3 from the Great Beast. {{ golconda_inner_peace }} is used on the Great Beast
+    and {{ redeem_the_lost_soul }} on the burnt {{ cybele }}, for a massive bloat.
+</p>
+<p>
+    {{ dreams_of_the_sphinx }} and {{ the_barrens }} are used to discard the spurious
+    {{ magic_of_the_smith }} once the combo is up and running.
+</p>
+<p>
+    The combat module is defensive, using only {{ majesty }}.
+</p>
+<h2>Tips & Tricks</h2>
+<p>
+    {{ antediluvian_awakening }} can help burn an exhausted {{ cybele }}
+    to avoid getting stuck in torpor.
+</p>
+<p>
+    Once {{ cybele }} is at 11 capacity with the {{ soul_gem_of_etrius }},
+    {{ truth_of_a_thousand_lies }} can be used to get her bleed up to 5:
+    if the prey plays {{ archon_investigation }}, a new {{ cybele }}
+    just comes into play and bleeds again.
+</p>
+<p>
+    {{ spying_mission }} can be used if a bleed is bounced
+    to avoid dealing damage to an ally.
+</p>
+<p>
+    Sadly, {{ golconda_inner_peace }} can not be used on {{ cybele }}:
+    as it does not burn her, it does not trigger the {{ soul_gem_of_etrius }} effect.
+</p>
+<h2>Variants</h2>
+<p>
+    There are only minor variations to this archetype.
+    {{ dark_influences }} and {{ unleash_hells_fury }} are often included.
+</p>
+{% endtrans %}
+{% endblock %}
+
+{% block errata %}
+<div class="insert warn">
+    <h3>Errata</h3>
+    {{ erratum.antheliostheredstar() }}
+</div>
+{% endblock %}

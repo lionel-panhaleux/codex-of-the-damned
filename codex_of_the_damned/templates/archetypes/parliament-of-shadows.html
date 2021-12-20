@@ -1,0 +1,141 @@
+{% extends "archetypes/_layout.html" %}
+{% import "archetypes/_layout-erratum.html" as erratum with context %}
+{% import "archetypes/parliament-of-shadows.json" as deck_json %}
+
+{% block meta %}
+<meta property="decklist" content='{{ deck_json | tojson }}' />
+{% endblock %}
+
+{% block archetype_name %}
+<h1>{{ lasombra }} Parliament of Shadows</h1>
+{% endblock %}
+
+{% block archetype %}
+{% trans trimmed
+anarchist_uprising=card("Anarchist Uprising"),
+ancient_influence=card("Ancient Influence"),
+banishment=card("Banishment"),
+bewitching_oration=card("Bewitching Oration"),
+deflection=card("Deflection"),
+dia_de_los_muertos=card("Día de los Muertos"),
+disarm=card("Disarm"),
+domain_challenge=card("Domain Challenge"),
+dreams_of_the_sphinx=card("Dreams of the Sphinx"),
+entombment=card("Entombment"),
+fear_of_mekhet=card("Fear of Mekhet"),
+foreshadowing_destruction=card("Foreshadowing Destruction"),
+freak_drive=card("Freak Drive"),
+govern_the_unaligned=card("Govern the Unaligned"),
+information_highway=card("Information Highway"),
+marcus_vitel=card("Marcus Vitel"),
+monastery_of_shadows=card("Monastery of Shadows"),
+moncada=card("Ambrosio Luis Monçada, Plenipotentiary", "Monçada"),
+montano=card("Montano"),
+mylan_horseed=card("Mylan Horseed"),
+nocturn=card("Nocturn"),
+obedience=card("Obedience"),
+on_the_qui_vive=card("On the Qui Vive"),
+parity_shift=card("Parity Shift"),
+political_stranglehold=card("Political Stranglehold"),
+power_structure=card("Power Structure"),
+powerbase_madrid=card("Powerbase: Madrid"),
+reins_of_power=card("Reins of Power"),
+seduction=card("Seduction"),
+shadow_body=card("Shadow Body"),
+slam=card("Slam"),
+villein=card("Villein"),
+voter_captivation=card("Voter Captivation"),
+zillah_s_valley=card("Zillah's Valley"),
+combat_ends=link("/strategy/combat", _("combat ends"), _anchor="defence"),
+sabbat_precon=external("https://www.blackchantry.com/products/legacy/preconstructed-decks/product-parliament-of-shadows/", _("Parliament of Shadows")),
+tuomas_deck=link("/deck-search", _("Tuomas Nyberg's deck"), id="2019ccpdms"),
+petrus_deck=link("/deck-search", _("Petrus Makkonen's deck"), id="2017rfehf"),
+tuomas_deck_2=link("/deck-search", _("Tuomas Nyberg's deck"), id="2019hnvften")
+%}
+<h2>Highlights</h2>
+<p>
+    This is a <em>vote & bleed</em> deck relying on the Lasombra {{ lasombra }} clan
+    and their titled Sabbat vampires. The archetype nowadays takes its name from the
+    {{ sabbat_precon }} distributed by BCP, based on this idea.
+</p>
+<p>
+    As usual with {{ DOM }} decks, the plan is to get the highest capacity vampire out
+    first, so that he can use {{ govern_the_unaligned }} at superior {{ DOM }} to
+    get more vampires out fast and cheap. Relying on big capacity vampires in his crypt,
+    the deck also uses the classic {{ zillah_s_valley }} + {{ villein }} combination
+    to influence faster in the beginning.
+</p>
+<p>
+    Given the number of big capacity vampires, the deck naturally includes all three
+    "big capacity" votes: {{ ancient_influence }}, {{ reins_of_power }} and 
+    {{ political_stranglehold }}. It also tends to include multiple {{ banishment }}
+    and quite a few votes devestating to swarms like {{ anarchist_uprising }} and 
+    {{ domain_challenge }}.
+</p>
+<p>
+    On the bleed side, {{ DOM }} brings its usual package with {{ govern_the_unaligned }}
+    but also {{ foreshadowing_destruction }} and {{ seduction }}. Stealth is provided
+    by {{ OBT }} and its numerous modifiers, but also by {{ montano }}'s ability.
+</p>
+<p>
+    There is a bit of bleed defense with {{ deflection }}, and combat defence is assured
+    by both {{ combat_ends }} with {{ shadow_body }} and the excellent {{ obedience }},
+    a sure way of getting out of trouble, provided it can be played.
+</p>
+<p>
+    Given the crypt here, the deck has unusual access to both {{ for }} and {{ PRE }},
+    which allows for the inclusion of {{ freak_drive }} for multi-action (vote and 
+    bleed in the same turn with a single vampire) and {{ voter_captivation }} to help
+    regenerate blood when a vote goes well.
+</p>
+<h2>Tips & Tricks</h2>
+<p>
+    The deck does not include any wake, so it is important to keep an eye out for
+    threats and keep a vampire unlocked if necessary: {{ obedience }} and
+    {{ deflection }} can only be played by unlocked vampires. In case those reactions
+    are in hand and could come in handy, playing it slow and keep a non-acting vampire
+    for defence is the way to go here. Luckily, between {{ freak_drive }} and
+    {{ moncada }}'s ability, this should not be too much of a burden.
+</p>
+<p>
+    The deck is well equipped for crypt acceleration: between {{ zillah_s_valley }},
+    {{ information_highway }} and {{ dreams_of_the_sphinx }}, it has 9 cards that will
+    gain a turn of influence to get Montano out (or the other oldest vampire) if
+    drawn in first hand, which has a 64% chance of occurence: this is probably the
+    minimal advisable density here so it should be kept in mind when tweaking
+    the deck: if the library cards count get up, a couple of {{ zillah_s_valley }}
+    should be added to keep the proportions. Likewise, if removing one or the other
+    of these three cards, the other two should be augmented accordingly.
+</p>
+<h2>Variants</h2>
+<p>
+    There is a lot of space for tweaks and variations here: the Master module can help
+    getting the vote lock in multiple ways, with {{ power_structure }},
+    {{ powerbase_madrid }} and {{ dia_de_los_muertos }} for example, but also
+    {{ fear_of_mekhet }} against Inner Circle decks if you expect some.
+    {{ monastery_of_shadows }} is a common inclusion, as well as {{ mylan_horseed }}.
+    Include a couple {{ on_the_qui_vive }} or {{ nocturn }} is also usual,
+    and the combat module, given the access to {{ POT }} and the nice tricks {{ OBT }}
+    has to offer can often pack a couple of surprises like {{ entombment }}, {{ slam }}
+    or {{ disarm }} just to get the opponents to hesitate before entering combat.
+</p>
+<p>
+    The <strong>Vitel</strong> variant uses {{ marcus_vitel }} as a star, his Prince
+    title allowing for the inclusion of {{ parity_shift }}, like in {{ tuomas_deck }}
+    from 2019. It also tends to have more stable access to {{ PRE }}, so a 
+    few vote modifiers like {{ bewitching_oration }} are a good inclusion.
+</p>
+<p>
+    The <strong>Beast</strong> variant packs a bit more combat and intercept to
+    transform this deck in a toolbox of sorts. In a light combat environment, he can
+    have devastating effects, and the few {{ POT }} cards that are included serve as
+    a useful deterrent against combat for the titled vampires, who all have access to
+    the discipline. {{ petrus_deck }} from 2017 is a good example.
+</p>
+<p>
+    Finally, the <strong>G5</strong> approach relies on the new vampires published
+    in the {{ sabbat_precon }} to build a diffferent crypt with groups 5 and 6, like
+    in {{ tuomas_deck_2 }} from 2019.
+</p>
+{% endtrans %}
+{% endblock %}

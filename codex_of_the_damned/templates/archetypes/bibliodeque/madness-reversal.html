@@ -1,0 +1,69 @@
+{% extends "archetypes/_layout.html" %}
+{% import "archetypes/_layout-erratum.html" as erratum with context %}
+{% import "archetypes/bibliodeque/madness-reversal.json" as deck_json %}
+
+{% block meta %}
+<meta property="decklist" content='{{ deck_json | tojson }}' />
+{% endblock %}
+
+{% block archetype_name %}
+<h1>{{ malkavian }} Madness Reversal</h1>
+{% endblock %}
+
+{% block archetype %}
+{% trans trimmed
+madness_network=card("Madness Network"),
+reversal_of_fortunes=card("Reversal of Fortunes"),
+brainwash=card("Brainwash"),
+kaymakli_nightmares=card("Kaymakli Nightmares"),
+smiling_jack_the_anarch=card("Smiling Jack, The Anarch"),
+dreams_of_the_sphinx=card("Dreams of the Sphinx"),
+specialization=card("Specialization"),
+heart_of_nizchetus=card("Heart of Nizchetus"),
+victor_pelletier=card("Victor Pelletier"),
+orian_gissler_s_deck=link("/deck-search", _("Orian Gissler's deck"), id="2k9battlefrenzypf")
+%}
+<h2>Highlights</h2>
+<p>
+    This is a <em>special</em> deck using {{ madness_network }}
+    and {{ reversal_of_fortunes }}.
+</p>
+<p>
+    The idea is to get some low capacity Malkavians out fast together with a
+    {{ madness_network }}, then play {{ reversal_of_fortunes }}
+    during the prey's turn to play again, then again on the predator's turn to play again, etc.
+    playing twice as much as the opponents.
+</p>
+<p>
+    The first vampires get a bit locked in the combination, and the rest of the deck focuses on playing a lot
+    of Master cards, {{ brainwash }} and {{ kaymakli_nightmares }} to prevent the opponents
+    of even getting a vampire out.
+</p>
+<p>
+    The deck then kills with simple bleeds and {{ smiling_jack_the_anarch }}.
+</p>
+<h2>Tips & Tricks</h2>
+<p>
+    Rotation is tricky in this deck, and
+    {{ dreams_of_the_sphinx }}, {{ specialization }} and {{ heart_of_nizchetus }}
+    all help in this regard.
+</p>
+<p>
+    Although {{ victor_pelletier }} is not a Malkavian,
+    his ability is priceless in this deck, as {{ reversal_of_fortunes }}
+    needs some votes to get through.
+</p>
+<h2>Variants</h2>
+<p>
+    There are not many variants of this deck.
+    {{ orian_gissler_s_deck }} from 2009 was the original attempt.
+</p>
+{% endtrans %}
+{% endblock %}
+
+{% block errata %}
+<div class="insert warn">
+    <h3>Errata</h3>
+    {{ erratum.pentextmsubversion( 'remove' ) }}
+</div>
+{% endblock %}

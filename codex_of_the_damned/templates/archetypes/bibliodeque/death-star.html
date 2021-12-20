@@ -1,0 +1,87 @@
+{% extends "archetypes/_layout.html" %}
+{% import "archetypes/_layout-erratum.html" as erratum with context %}
+{% import "archetypes/bibliodeque/death-star.json" as deck_json %}
+
+{% block meta %}
+<meta property="decklist" content='{{ deck_json | tojson }}' />
+{% endblock %}
+
+{% block archetype_name %}
+<h1>{{ banu_haqim }} Death Star</h1>
+{% endblock %}
+
+{% block archetype %}
+{% trans trimmed
+alamut=card("Alamut"),
+club_illusion=card("Club Illusion"),
+conductor=card("Conductor"),
+consanguineous_boon=card("Consanguineous Boon"),
+crimeth_inc=card("CrimethInc"),
+exclusion_principle=card("Exclusion Principle"),
+fee_stake=card("Fee Stake: Boston", "Fee Stake"),
+firebrand=card("Firebrand"),
+garibaldi_meucci_museum=card("Garibaldi-Meucci Museum"),
+lily_prelude=card("Lily Prelude"),
+madrigal=card("Madrigal"),
+revolutionary_council=card("Revolutionary Council"),
+the_embrace=card("The Embrace"),
+the_missing_voice=card("The Missing Voice"),
+web_of_knives_recruit=card("Web of Knives Recruit"),
+a_b=link("/strategy/fundamentals", _("A&B"), _anchor="AB"),
+karl_schaefers_deck=link("/deck-search", _("Karl Schaefer's deck"), id="2019won5co")
+%}
+<h2>Highlights</h2>
+<p>
+    This is a <em>breed & boon</em> anarch political deck using {{ alamut }}
+    and {{ fee_stake }} actions to get votes, plus {{ the_embrace }} and
+    {{ web_of_knives_recruit }} for breeding, {{ consanguineous_boon }} and
+    {{ exclusion_principle }} for bloating.
+</p>
+<p>
+    The idea is to use {{ revolutionary_council }} with a lot of anarchs at hand
+    to deliver <strong>more than a dozen pool damage in a single blow</strong>,
+    hence the <em>"Death Star"</em> name.
+</p>
+<p>
+    The deck has a strong stealth module with {{ OBF }}.
+</p>
+<h2>Tips & Tricks</h2>
+<p>
+    During the beginning of the game, the deck should focus on breeding and bloating, surviving its predator.
+</p>
+<p>
+    {{ crimeth_inc }} and {{ firebrand }} are used to improve {{ a_b }}.
+</p>
+<p>
+    {{ alamut }} should be resplenished as much as possible.
+    Vampires with {{ obf }} are supposed to get some bleed through (even for 1 pool)
+    to get tokens on it fast. If drawn, {{ club_illusion }} make these bleed stronger.
+</p>
+<p>
+    In late game, {{ garibaldi_meucci_museum }} helps get some
+    {{ revolutionary_council }} back in hand to finish the table.
+</p>
+<h2>Variants</h2>
+<p>
+    This decklist is quite famous, as Matt Morgan won the North American Championship
+    (NAC) first day with it, only to see Ben Peal win the final on day 2
+    with an almost identical decklist.
+</p>
+<p>
+    {{ karl_schaefers_deck }} from 2019 is a variant using
+    <em>Daughters of Cacophony</em> {{ daughter_of_cacophony }} instead of
+    <em>Assamite</em>. {{ alamut }}, {{ obf }} stealth modifiers and
+    {{ web_of_knives_recruit }} are lost, but the
+    <em>Daughters</em>  {{ daughter_of_cacophony }} have access to {{ pre }} vote modifiers
+    and combat ends, {{ conductor }}, {{ the_missing_voice }}, {{ lily_prelude }} and
+    {{ madrigal }}, making up for it.
+</p>
+{% endtrans %}
+{% endblock %}
+
+{% block errata %}
+<div class="insert warn">
+    <h3>Errata</h3>
+    {{ erratum.pentextmsubversion( 'undecided' ) }}
+</div>
+{% endblock %}

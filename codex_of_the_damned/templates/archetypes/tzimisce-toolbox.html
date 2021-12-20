@@ -7,28 +7,41 @@
 {% endblock %}
 
 {% block archetype_name %}
-<h1><img src="https://static.krcg.org/clan/tzimisce.svg"> Tzimisce Toolbox</h1>
+<h1>{{ tzimisce }} Tzimisce Toolbox</h1>
 {% endblock %}
 
 {% block archetype %}
 {% trans trimmed
-    chiropteran_marauder=card("Chiropteran Marauder"),
-    kine_resources_contested=card("Kine Resources Contested"),
-    changeling=card("Changeling"),
-    mind_of_the_wilds=card("Mind of the Wilds"),
+    abbot=card("Abbot"),
+    anarchist_uprising=card("Anarchist Uprising"),
+    aranthebes_the_immortal=card("Aranthebes, The Immortal"),
     blood_doll=card("Blood Doll"),
-    villein=card("Villein"),
-    under_siege=card("Under Siege"),
-    sascha_vykos_the_angel_of_caine=card("Sascha Vykos, The Angel of Caine"),
-    stravinsky=card("Stravinsky"),
-    meshenka=card("Meshenka"),
     bowl_of_convergence=card("Bowl of Convergence"),
-    revenant=card("Revenant"),
-    mr_winthrop=card("Mr. Winthrop"),
-    pulse_of_the_canaille=card("Pulse of the Canaille"),
-    j_s_simmons_esq=card("J. S. Simmons, Esq."),
-    tasha_morgan=card("Tasha Morgan"),
-    living_manse=card("Living Manse")
+    breath_of_the_dragon=card("Breath of the Dragon"),
+    carlton_van_wyk=card("Carlton Van Wyk"),
+    changeling=card("Changeling"),
+    chiropteran_marauder=card("Chiropteran Marauder"),
+    eyes_of_argus=card("Eyes of Argus"),
+    fiendish_tongue=card("Fiendish Tongue"),
+    house_of_shadows=card("House of Shadows"),
+    krcg_news_radio=card("KRCG News Radio"),
+    lambach=card("Lambach"),
+    library_hunting_ground=card("Library Hunting Ground"),
+    living_manse=card("Living Manse"),
+    meld_with_the_land=card("Meld With the Land"),
+    meshenka=card("Meshenka"),
+    my_enemy_s_enemy=card("My Enemy's Enemy"),
+    plasmic_form=card("Plasmic Form"),
+    reins_of_power=card("Reins of Power"),
+    sascha_vykos=card("Sascha Vykos, The Angel of Caine", "Sascha Vykos"),
+    telepathic_misdirection=card("Telepathic Misdirection"),
+    the_hungry_coyote=card("The Hungry Coyote"),
+    the_uncoiling=card("The Uncoiling"),
+    the_unmasking=card("The Unmasking"),
+    villein=card("Villein"),
+    wall_street_night_financial_newspaper=card("Wall Street Night, Financial Newspaper"),
+    wash=card("Wash"),
+    juans_deck=external("https://www.vekn.net/forum/event-reports-and-twd/79548-twd-sac-2021-south-american-continental-championship", _("Juan Rodriguez' deck"))
 %}
 <h2>Highlights</h2>
 <p>
@@ -36,39 +49,66 @@
     and their {{ VIC }}{{ AUS }}{{ ANI }} disciplines.
 </p>
 <p>
-    The combat module uses {{ chiropteran_marauder }} for aggravated damage,
-    Intercept is high with 27 reactions combining {{ AUS }} and {{ ANI }}.
-    Political actions are used to deliver pool damage with {{ kine_resources_contested }}
-    while {{ changeling }} and {{ mind_of_the_wilds }} are used for stealth.
+    The plan is to get as many Tzimisce out as possible and bleed with {{ VIC }}
+    for stealth. Blocking from time to time, and welcoming a few combats with a
+    vicious {{ VIC }} module.
 </p>
 <p>
-    {{ blood_doll }} and {{ villein }} are used to get some pool back.
+    The deck has a threatening bleed module centered on {{ fiendish_tongue }},
+    an excellent bleed action in Anarch environments. {{ VIC }} brings a bit of
+    stealth with {{ changeling }} and {{ plasmic_form }}
 </p>
 <p>
-    The deck is a bit slow but very difficult to predict for opponents.
+    The combat module is compact but threatening: {{ chiropteran_marauder }} and
+    {{ breath_of_the_dragon }} can be used to inflict aggravated damage at any range.
+</p>
+<p>
+    On the defence side, the decks stacks a lot of {{ AUS }} bounces between
+    {{ telepathic_misdirection }} and {{ my_enemy_s_enemy }}. On top of that, a number
+    of permanent intercept cards help boost the defence, with {{ krcg_news_radio }},
+    {{ wall_street_night_financial_newspaper }}, {{ aranthebes_the_immortal }},
+    {{ bowl_of_convergence }}, {{ carlton_van_wyk }} and {{ abbot }}.
+</p>
+<p>
+    The deck can bloat a bit using simple {{ blood_doll }}. Both {{ the_hungry_coyote }}
+    and {{ library_hunting_ground }} can provide a good influx of blood here.
+</p>
+<p>
+    The {{ AUS }} bounces are enough to defend against bleed decks, but votes deck
+    are a definitive threat for this deck. This explains why the intercept defence
+    does not include {{ eyes_of_argus }} since its intercept bonus cannot be used
+    against political actions. This is also why so many {{delaying_tactics }} are
+    included: the goal is to prevent {{ anarchist_uprising }} or {{ reins_of_power }}
+    to pass here, and keep the momentum up while commiting as few resources as possible
+    for defence.
 </p>
 <h2>Tips & Tricks</h2>
 <p>
-    This version of the deck includes <em>a lot</em> of cards in only 1 copy.
-    This is a bit rare, but it makes the deck even harder to figure out for opponents.
-    One should be careful to keep the opponents guessing as to what the deck can really do.
+    It's important to get a vampire with superior {{ AUS }} out fast, to make the most
+    of the reaction module and its numerous bounces.
 </p>
 <p>
-    {{ under_siege }} is a powerful deterrent against the predator:
-    knowing wakes are available is far more troublesome than suspecting one has it in had.
+    {{ the_uncoiling }} is a silver bullet counter against {{ the_unmasking }},
+    as allies deck with intercept can quickly become a bit of a burden here.
+</p>
+<p>
+    {{ wash }} can be used to counter a {{ villein }} and amount to a bleed for 5,
+    counter a permanent intercept location like {{ krcg_news_radio }}, or a stealth
+    providing location for a predator likely to vote, like {{ house_of_shadows }}.
 </p>
 <h2>Variants</h2>
 <p>
-    There is a lot of room for variations, including in the crypt:
-    {{ sascha_vykos_the_angel_of_caine }}, {{ stravinsky }} or {{ meshenka }}
-    can get a star position with 3 copies.
+    There are a lot of ways to build a toolbox with the Tzimisce {{ tzimisce }} clan.
+    Many of them rely on a star vampire like {{ lambach }}, {{ sascha_vykos }} or
+    {{ meshenka }}.
 </p>
 <p>
-    A bit more permanent intercept is a common inclusion, with
-    {{ bowl_of_convergence }}, {{ revenant }} and {{ mr_winthrop }}.
-    Permanent bleed enhancement is often included too, be it with
-    {{ pulse_of_the_canaille }}, {{ j_s_simmons_esq }} and {{ tasha_morgan }},
-    or {{ living_manse }}.
+    The <strong>Living Manse</strong> version, as seen in {{ juans_deck }} for the
+    2021 SAC, relies on more {{ living_manse }} for a bit of a slower setup but stronger
+    finish. The deck also includes {{ meld_with_the_land }} and is a better fit in
+    a combat oriented environment, with a more fragile defence against vote decks.
+    Both deck list can be used as inspiration, as any variation between those two
+    can be picked or discarded depending on the desired outcome.
 </p>
 {% endtrans %}
 {% endblock %}

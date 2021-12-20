@@ -7,7 +7,7 @@
 {% endblock %}
 
 {% block archetype_name %}
-<h1><img src="https://static.krcg.org/clan/ventrueantitribu.svg"> Anti Ventrue Grinder</h1>
+<h1>{{ ventrue_antitribu }} Anti Ventrue Grinder</h1>
 {% endblock %}
 
 {% block archetype %}
@@ -81,8 +81,8 @@ bob_josephs_deck=link("/deck-search", _("Bob Joseph's deck"), id="2018nacd2co")
     There are many small variations to this archetype:
     <li>
         {{ the_coven }} is a rare inclusion: the deck is supposed
-        to grind the blood out of the table, so giving opponents the opportunity to get some of it back
-        is a bit of a stretch. {{ the_rack }} is more often seen.
+        to grind the blood out of the table, so giving opponents the opportunity to
+        get some back is a bit of a stretch. {{ the_rack }} is more often seen.
     </li>
     <li>
         {{ the_kiss_of_ra }}, {{ misdirection }} and
@@ -124,6 +124,6 @@ bob_josephs_deck=link("/deck-search", _("Bob Joseph's deck"), id="2018nacd2co")
 {% block errata %}
 <div class="insert warn">
     <h3>Errata</h3>
-    {{ erratum.pentextmsubversion( 'remove' ) }}
+    {{ erratum.pentextmsubversion( 'undecided' ) }}
 </div>
 {% endblock %}

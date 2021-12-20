@@ -7,7 +7,7 @@
 {% endblock %}
 
 {% block archetype_name %}
-<h1><img src="https://static.krcg.org/clan/v5/tremere.svg"> Mistress</h1>
+<h1>{{ tremere }} Mistress</h1>
 {% endblock %}
 
 {% block archetype %}
@@ -29,12 +29,11 @@ sha_ennu=card("Sha‑Ennu"),
 unmada=card("Unmada"),
 a_b=link("/strategy/fundamentals", _("A&B"), _anchor="AB"),
 benoît_moyen_s_deck=link("/deck-search", _("Benoît Moyen's deck"), id="2010eternalvigilancelf"),
-nice_combination=link("/deck-search", _("nice combination"), id="2018bgpmb"),
-tzimisce_wall=link("/archetypes/tzimisce-wall")
+nice_combination=link("/deck-search", _("nice combination"), id="2018bgpmb")
 %}
 <h2>Highlights</h2>
 <p>
-    This is a <em>stealth bleed & vote</em> deck starring {{ mistress_fanchon }}.
+    This is a <em>bleed & vote</em> deck starring {{ mistress_fanchon }}.
     Her ability lets her fetch an {{ alastor }} to equip with
     an {{ helicopter }}, paying only 1 pool.
 </p>
@@ -66,12 +65,6 @@ tzimisce_wall=link("/archetypes/tzimisce-wall")
     Danilo Torrisi played a {{ nice_combination }} in 2018:
     The {{ might_of_the_camarilla }} alongside {{ possession }}
     to get more Inner Circle into play fast and cheap.
-</p>
-<p>
-    Although this is a different archetype,
-    {{ mistress_fanchon }} can be used for her {{ AUS }}{{ VIC }} combination, alongside
-    {{ malgorzata }}, {{ sha_ennu }} or {{ unmada }} for a variation
-    of the {{ tzimisce_wall }} archetype.
 </p>
 {% endtrans %}
 {% endblock %}

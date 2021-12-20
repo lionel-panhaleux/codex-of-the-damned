@@ -1,0 +1,113 @@
+{% extends "archetypes/_layout.html" %}
+{% import "archetypes/_layout-erratum.html" as erratum with context %}
+{% import "archetypes/malgorzata.json" as deck_json %}
+
+{% block meta %}
+<meta property="decklist" content='{{ deck_json | tojson }}' />
+{% endblock %}
+
+{% block archetype_name %}
+<h1> {{ tremere_antitribu }} Malgorzata</h1>
+{% endblock %}
+
+{% block archetype %}
+{% trans trimmed
+banishment=card("Banishment"),
+breath_of_the_dragon=card("Breath of the Dragon"),
+changeling=card("Changeling"),
+chiropteran_marauder=card("Chiropteran Marauder"),
+conditioning=card("Conditioning"),
+direct_intervention=card("Direct Intervention"),
+elder_impersonation=card("Elder Impersonation"),
+magic_of_the_smith=card("Magic of the Smith"),
+malgorzata=card("Malgorzata"),
+mark_v=card("Mark V"),
+mirror_walk=card("Mirror Walk"),
+mistress_fanchon=card("Mistress Fanchon"),
+nightmare_curse=card("Nightmare Curse"),
+plasmic_form=card("Plasmic Form"),
+rotschreck=card("Rötschreck"),
+scourge_of_the_enochians=card("Scourge of the Enochians"),
+sha_ennu=card("Sha Ennu"),
+telepathic_misdirection=card("Telepathic Misdirection"),
+the_erciyes_fragments=card("The Erciyes Fragments"),
+heart_of_nizchetus=card("Heart of Nizchetus"),
+unmada=card("Unmada"),
+villein=card("Villein"),
+zillah_s_valley=card("Zillah's Valley"),
+meta=link("/strategy/articles/advanced/the-game-of-the-game", _("meta")),
+bram_van_stappen_s_deck=link("/deck-search", _("Bram van Stappen's deck"), id="2015fncsf"),
+nicolas_deck=link("/deck-search", _("Nicola Lonardi's deck"), id="2017igpbi"),
+tuomas_deck=link("/deck-search", _("Tuomas Nyberg's deck"), id="2015fnchf")
+%}
+<h2>Highlights</h2>
+<p>
+    This is a <em>toolbox</em> deck starring {{ malgorzata }}, using the rare
+    {{ AUD }}{{ VIC }}{{ THA }} disciplines combination and big capacity vampires
+    with great abilities.
+</p>
+<p>
+    {{ malgorzata }}'s unique ability helps influencing a big capacity vampire fast.
+    Then {{ mistress_fanchon }} or {{ sha_ennu }} hit the table - they can bleed
+    hard, but also have the same disciplines as {{ malgorzata }}, so they can do
+    whatever she does. The classical {{ zillah_s_valley }} + {{ villein }} combination
+    is used to speed up this setup even further.
+</p>
+<p>
+    {{ VIC }} makes for a dreadful combat module, with {{ chiropteran_marauder }} and
+    {{ breath_of_the_dragon }} delivering aggravated damage at any range.
+    A couple of {{ rotschreck }} helps cover almost any the combat cases when blocking.
+</p>
+<p>
+    The deck includes a solid defense module based on {{ AUS }}, with
+    {{ telepathic_misdirection }} to bounce and a lot of wakes and intercept for
+    general defense.
+</p>
+<p>
+    Both {{ mistress_fanchon }} and {{ sha_ennu }} have a +2 bleed ability, and the deck
+    provides quite a bit of stealth with {{ changeling }}, {{ mirror_walk }} and
+    {{ plasmic_form }}. A couple of {{ conditioning }} are added for the lunge.
+</p>
+<h2>Tips & Tricks</h2>
+<p>
+    {{ direct_intervention }} is great against block denial cards like
+    {{ elder_impersonation }}. A lot of cards might be worth cancelling, but a
+    properly timed {{ direct_intervention }} can real make or break a game.
+</p>
+<p>
+    {{ magic_of_the_smith }} can be used to fetch any of the included equipment,
+    depending on what is most useful for the current table situation. If nothing
+    specific arises, {{ heart_of_nizchetus }} is a good default.
+</p>
+<h2>Variants</h2>
+<p>
+    The deck leaves a lot of room to variations due to its toolbox nature.
+    One needs to tinker with it and adapt it to the expected {{ meta }} but it is
+    certainly suitable in many situations.
+</p>
+    The <strong>Diablerie</strong> variation includes a far more severe combat module.
+    Seen first in {{ bram_van_stappen_s_deck }} from 2015, it can execute diablerie
+    upon diablerie on the opposing vampires. {{ the_erciyes_fragments }} is a great
+    inclusion here given the good defense and discipline spread,
+    and {{ scourge_of_the_enochians }} a good counter against some swarm decks.
+    Relying on the {{ chiropteran_marauder }} maneuver to include {{ mark_v }} is a
+    great idea. {{ nicolas_deck }} from 2017 is another example of this build.
+</p>
+<p>
+    Actually, {{ malgorzata }}'s ability might be less relevant to the whole strategy
+    than one could think at first sight. The <strong>Sha-Ennu</strong> variant
+    ditches her in favor of {{ unmada }}. This allow for the use of {{ obf }} instead
+    of {{ THA }}, for more stealth, as in {{ tuomas_deck }} from 2015.
+    The inclusion of {{ nightmare_curse }} for {{ sha_ennu }} is a nice
+    trick that could be used in other versions: coupled with {{ banishment }} and
+    the occasional diablerie, this can really shake a table.
+</p>
+{% endtrans %}
+{% endblock %}
+
+{% block errata %}
+<div class="insert warn">
+    <h3>Errata</h3>
+    {{ erratum.pentextmsubversion( 'undecided' ) }}
+</div>
+{% endblock %}

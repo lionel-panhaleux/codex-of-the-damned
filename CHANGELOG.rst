@@ -5,14 +5,14 @@ Changelog
 -----------------
 
 - Upgrade page denomination
-
+- Update archetypes based on 2021 TWDA
+- Add a BCP-print only archetypes section (Neonate archetypes)
 
 1.35 (2021-10-10)
 -----------------
 
 - Fix LackeyCCG VTES plugin URL
 - New official Discord link
-
 
 1.34 (2021-07-27)
 -----------------
