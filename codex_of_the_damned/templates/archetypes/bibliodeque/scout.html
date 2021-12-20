@@ -1,0 +1,82 @@
+{% extends "archetypes/_layout.html" %}
+{% import "archetypes/_layout-erratum.html" as erratum with context %}
+{% import "archetypes/bibliodeque/scout.json" as deck_json %}
+
+{% block meta %}
+<meta property="decklist" content='{{ deck_json | tojson }}' />
+{% endblock %}
+
+{% block archetype_name %}
+<h1>{{ daughter_of_cacophony }} Scout</h1>
+{% endblock %}
+
+{% block archetype %}
+{% trans trimmed
+scout_youngwood=card("Scout Youngwood"),
+shattering_crescendo=card("Shattering Crescendo"),
+lily_prelude=card("Lily Prelude"),
+reckless_agitation=card("Reckless Agitation"),
+villein=card("Villein"),
+zillah_s_valley=card("Zillah's Valley"),
+heart_of_the_city=card("Heart of the City"),
+parity_shift=card("Parity Shift"),
+dmitra_ilyanova=card("Dmitra Ilyanova"),
+legendary_vampire=card("Legendary Vampire"),
+bewitching_oration=card("Bewitching Oration"),
+perfect_paragon=card("Perfect Paragon"),
+arishat=card("Arishat"),
+majesty=card("Majesty"),
+unmada=card("Unmada"),
+benjamin_rose=card("Benjamin Rose"),
+telepathic_misdirection=card("Telepathic Misdirection"),
+djordje_bjelajac_s_deck=link("/deck-search", _("Djordje Bjelajac's deck"), id="2011ecfcq")
+%}
+<h2>Highlights</h2>
+<p>
+    This is a <em>Vote</em> deck using {{ scout_youngwood }}
+    for her {{ MEL }}{{ OBF }}{{ PRE }}{{ for }} disciplines and unique access to
+    {{ shattering_crescendo }}, {{ lily_prelude }} and {{ reckless_agitation }}.
+</p>
+<p>
+    {{ villein }} and {{ zillah_s_valley }} are used to get more vampires
+    out fast and cheap.
+<p>
+    The deck has serious stealth, with most vampires having {{ OBF }}, and plays
+    {{ heart_of_the_city }} to enhance the bleed in the late game.
+</p>
+<p>
+    As all vampires except {{ scout_youngwood }} are <em>Princes</em> and <em>Justicars</em>,
+    {{ parity_shift }} is heavily used both for pool damages and bloat.
+</p>
+<h2>Tips & Tricks</h2>
+<p>
+    {{ dmitra_ilyanova }}'s ability is a great way to get more blood on the table
+    for those {{ villein }} and {{ reckless_agitation }}.
+</p>
+<p>
+    With only 5 votes amoung its two star vampires, the deck can struggle to get the vote lock against
+    other political constructs. Hence the inclusion of {{ legendary_vampire }},
+    {{ bewitching_oration }} and {{ perfect_paragon }} to get critical votes through.
+    If the pool allows it and she is drawn, getting {{ arishat }} out is a good way
+    to handle an Inner Circle, too.
+</p>
+<p>
+    Combat is purely defensive and uses only {{ majesty }}.
+</p>
+<h2>Variants</h2>
+<p>
+    The archetype is seldom played and not many variations exist.
+    Using a different crypt around can allow for different plays, for example
+    using {{ unmada }} and {{ benjamin_rose }} for {{ AUS }} and the excellent
+    {{ telepathic_misdirection }} bounce.
+    {{ djordje_bjelajac_s_deck }} from the 2011 EC FCQ is a good example of that.
+</p>
+{% endtrans %}
+{% endblock %}
+
+{% block errata %}
+<div class="insert warn">
+    <h3>Errata</h3>
+    {{ erratum.parityshift() }}
+</div>
+{% endblock %}

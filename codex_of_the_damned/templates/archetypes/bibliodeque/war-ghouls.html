@@ -1,0 +1,71 @@
+{% extends "archetypes/_layout.html" %}
+{% import "archetypes/_layout-erratum.html" as erratum with context %}
+{% import "archetypes/bibliodeque/war-ghouls.json" as deck_json %}
+
+{% block meta %}
+<meta property="decklist" content='{{ deck_json | tojson }}' />
+{% endblock %}
+
+{% block archetype_name %}
+<h1>{{ tzimisce }} War Ghouls</h1>
+{% endblock %}
+
+{% block archetype %}
+{% trans trimmed
+war_ghoul=card("War Ghoul"),
+jake_washington=card("Jake Washington"),
+fake_out=card("Fake Out"),
+trap=card("Trap"),
+ossian=card("Ossian"),
+dragonbound=card("Dragonbound"),
+maris_streck=card("Maris streck"),
+parity_shift=card("Parity Shift"),
+anathema=card("Anathema"),
+anarch_convert=card("Anarch Convert"),
+piper=card("Piper"),
+emiliano_imeroni_s_deck=link("/deck-search", _("Emiliano Imeroni's deck"), id="2012bnc"),
+antonio_cobo_cuenca_s_deck=link("/deck-search", _("Antonio Cobo Cuenca's deck"), id="2k8parisncq")
+%}
+<h2>Highlights</h2>
+<p>
+    This is a <em>rush</em> deck using multiple {{ war_ghoul }}
+    to rush the opponents vampires.
+</p>
+<p>
+    The idea is to get a {{ war_ghoul }} into play as soon as possible,
+    using a low capacity Tzimisce and {{ jake_washington }}.
+    The {{ war_ghoul }} then proceeds to taking down every vampire on the table,
+    using {{ fake_out }} and {{ trap }} as needed.
+</p>
+<p>
+    Other allies and retainers can be recruited to be sacrificed to more {{ war_ghouls }}.
+    {{ ossian }}, if he is drawn, may even be better than a {{ war_ghoul }}.
+</p>
+<p>
+    The deck uses low capacity vampires with {{ AUS }} to bounce bleeds and intercept.
+    Pool damage is done with {{ dragonbound }} and naked bleed once all the prey's
+    vampires are down.
+</p>
+<h2>Tips & Tricks</h2>
+<p>
+    This a fast and aggressive deck and will likely attract the table attention.
+    It should try to keep control of the whole table if possible.
+</p>
+<p>
+    Letting some vampires live on the predator side can be a good way
+    to bounce their bleed and deliver additional pool damage to the prey.
+</p>
+<h2>Variants</h2>
+<p>
+    The <strong>Maris</strong> variant uses {{ maris_streck }} for
+    {{ parity_shift }} and {{ anathema }}.
+    Check {{ emiliano_imeroni_s_deck }} from the 2012 Belgian NC.
+</p>
+<p>
+    The <strong>Piper</strong> variant is an anarch version using
+    {{ anarch_convert }} and {{ piper }} in order to bring
+    {{ war_ghoul }} into play unopposed, as in
+    {{ antonio_cobo_cuenca_s_deck }} from 2008.
+</p>
+{% endtrans %}
+{% endblock %}

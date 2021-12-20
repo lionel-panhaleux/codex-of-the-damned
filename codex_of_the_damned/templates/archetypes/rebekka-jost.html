@@ -1,0 +1,114 @@
+{% extends "archetypes/_layout.html" %}
+{% import "archetypes/_layout-erratum.html" as erratum with context %}
+{% import "archetypes/rebekka-jost.json" as deck_json %}
+
+{% block meta %}
+<meta property="decklist" content='{{ deck_json | tojson }}' />
+{% endblock %}
+
+{% block archetype_name %}
+<h1>Rebekka / Jost</h1>
+{% endblock %}
+
+{% block archetype %}
+{% trans trimmed
+rebekka_chantry_elder_of_munich=card("Rebekka, Chantry Elder of Munich", "Rebekka"),
+jost_werner=card("Jost Werner"),
+enchant_kindred=card("Enchant Kindred"),
+mind_numb=card("Mind Numb"),
+majesty=card("Majesty"),
+anarch_troublemaker=card("Anarch Troublemaker"),
+pentex_subversion=card("Pentex™ Subversion"),
+aire_of_elation=card("Aire of Elation"),
+entrancement=card("Entrancement"),
+scourge_of_the_enochians=card("Scourge of the Enochians"),
+delaying_tactics=card("Delaying Tactics"),
+eyes_of_argus=card("Eyes of Argus"),
+telepathic_misdirection=card("Telepathic Misdirection"),
+my_enemy_s_enemy=card("My Enemy's Enemy"),
+palla_grande=card("Palla Grande"),
+art_scam=card("Art Scam"),
+the_embrace=card("The Embrace"),
+the_parthenon=card("The Parthenon"),
+ashur_tablets=card("Ashur Tablets"),
+anson=card("Anson"),
+liquidation=card("Liquidation"),
+moises_ferrer_s_deck=link("/deck-search", _("Moisés Ferrer's deck"), id="2018ccpms"),
+martin_weinmayer_s_deck=link("/deck-search", _("Martin Weinmayer's deck"), id="2018nacd1co"),
+miklos=link("/deck-search", "Miklos Szilveszter", id="2019crncjc"),
+tommi=link("/deck-search", "Tommi Hakomaa", id="2019fncef")
+%}
+<h2>Highlights</h2>
+<p>
+    This is a <em>powerbleed</em> deck starring {{ rebekka_chantry_elder_of_munich }}
+    and {{ jost_werner }}. The deck uses the {{ PRE }}{{ AUS }} disciplines
+    and the two star vampires have this nice permanent +1 stealth bonus
+    that helps the deck get his actions through.
+</p>
+<p>
+    {{ enchant_kindred }} is used to help get more vampires out in the game beginning,
+    and bleed afterwards. {{ mind_numb }} can be used against the prey or the predator
+    depending on the context, to slow them down.
+</p>
+<p>
+    The deck uses no stealth apart from what the star vampires already have,
+    but the combination of {{ mind_numb }} and {{ majesty }} makes it hard to block:
+    {{ mind_numb }} can lock any defender and, if blocked, {{ majesty }} ends combat
+    and unlock the acting vampire: the defender is still locked
+    and a new action can be undertaken.
+</p>
+<p>
+    The deck uses {{ anarch_troublemaker }} and {{ pentex_subversion }}
+    to help paralyze the prey a bit more. When bleeds begin to get through,
+    {{ aire_of_elation }} can be used to enhance them.
+</p>
+<p>
+    If a bleed is bounced, it uses no stealth so it can usually be blocked by the new
+    target. This is a feature of the deck to avoid advantaging the prey if they have
+    packed a lot of bounces, so the stealthy stars should stay away from bleeds
+    if the bounce chance is high. The deck himself uses {{ AUS }} for wakes and bounces,
+    so it can add the bleed power of its predator to its own.
+</p>
+<h2>Tips & Tricks</h2>
+<p>
+    {{ entrancement }} can help get rid of cumbersome allies, {{ mind_numb }} is an
+    excellent device to slow down the predator and even make them lose a turn.
+    {{ scourge_of_the_enochians }} is there to deal with breed constructs.
+</p>
+<p>
+    {{ delaying_tactics }} is the only defence available against stealth & vote builds:
+    as {{ eyes_of_argus }} can not be used against undirected political actions,
+    intercept can never go beyond 2.
+</p>
+<p>
+    The deck plays a lot of bounces with {{ telepathic_misdirection }} and
+    {{ my_enemy_s_enemy }}. They can also be used to block key actions from the
+    opponents.
+</p>
+<h2>Variants</h2>
+<p>
+    The <strong>Palla Grande</strong> variant uses a Toreador antitribu crypt,
+    so it can use {{ palla_grande }} to increase the bleed power,
+    like in {{ moises_ferrer_s_deck }} from 2018. {{ art_scam }} and {{ the_embrace }}
+    are used to strengthen both the bloat and the pool damages.
+</p>
+<p>
+    The <strong>Paolini-Detela</strong> variant uses
+    {{ the_parthenon }} and {{ ashur_tablets }} to get a bit of recursion
+    and help adapt the deck content to the table context.
+    {{ martin_weinmayer_s_deck }} from the 2018 NAC Day 1 was an hommage to it.
+</p>
+<p>
+    This version of the decklist has proven very stable: the following year in 2019,
+    it has won both the Czech NC in the hands of {{ miklos }} and the Finnish NC with
+    {{ tommi }}.
+</p>
+{% endtrans %}
+{% endblock %}
+
+{% block errata %}
+<div class="insert warn">
+    <h3>Errata</h3>
+    {{ erratum.pentextmsubversion("keep") }}
+</div>
+{% endblock %}

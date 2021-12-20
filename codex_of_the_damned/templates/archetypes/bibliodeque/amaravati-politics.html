@@ -1,0 +1,101 @@
+{% extends "archetypes/_layout.html" %}
+{% import "archetypes/_layout-erratum.html" as erratum with context %}
+{% import "archetypes/bibliodeque/amaravati-politics.json" as deck_json %}
+
+{% block meta %}
+<meta property="decklist" content='{{ deck_json | tojson }}' />
+{% endblock %}
+
+{% block archetype_name %}
+<h1>{{ banu_haqim }} Amaravati Politics</h1>
+{% endblock %}
+
+{% block archetype %}
+{% trans trimmed
+amaravati=card("Amaravati"),
+the_embrace=card("The Embrace"),
+web_of_knives_recruit=card("Web of Knives Recruit"),
+consanguineous_boon=card("Consanguineous Boon"),
+haqims_law_leadership=card("Haqim's Law: Leadership"),
+reckless_agitation=card("Reckless Agitation"),
+kine_resources_contested=card("Kine Resources Contested"),
+loss=card("Loss"),
+heart_of_nizchetus=card("Heart of Nizchetus"),
+information_highway=card("Information Highway"),
+the_sargon_fragment=card("The Sargon Fragment"),
+yoruba_shrine=card("Yoruba Shrine"),
+direct_intervention=card("Direct Intervention"),
+alamut=card("Alamut"),
+the_uncoiling=card("The Uncoiling"),
+scourge_of_the_enochians=card("Scourge of the Enochians"),
+the_khabar_community=card("The Khabar: Community"),
+perfectionist=card("Perfectionist"),
+the_coven=card("The Coven"),
+deflection=card("Deflection"),
+black_sunrise=card("Black Sunrise"),
+olugbenga=card("Olugbenga"),
+kamau_jafari=card("Kamau Jafari"),
+bamba=card("Bamba"),
+kduvas_mask=card("Kduva's Mask"),
+the_secret_must_be_kept=card("The Secret Must Be Kept"),
+riccardo_fabianis_deck=link("/deck-search", _("Riccardo Fabiani's deck"), id="2011italyqtgenova")
+%}
+<h2>Highlights</h2>
+<p>
+    This is a <em>breed & boon</em> political deck using{{ amaravati }} as a star for his ability,
+    then creating a swarm of Assamite with {{ the_embrace }} and {{ web_of_knives_recruit }},
+    bloating with {{ consanguineous_boon }} and {{ haqims_law_leadership }}.
+</p>
+<p>
+    The deck has a rather slow build-up but a high bloat that makes him sturdy. Furthermore, it delivers
+    consistent pool damage with votes on one hand ({{ reckless_agitation }} and {{ kine_resources_contested }})
+    and bleed actions on the other hand (either naked bleeds or with the {{ loss }} action).
+</p>
+<p>
+    The deck has a strong stealth as {{ OBF }} is one of his core disciplines.
+</p>
+<h2>Tips & Tricks</h2>
+<p>
+    During the first half of the game, the deck should focus on breeding and bloating, surviving its predator.
+    {{ heart_of_nizchetus }} must come in play as early as possible,
+    in order to cycle the aggressive actions for the time being,
+    and {{ information_highway }} can speed up this first phase.
+</p>
+<p>
+    Once a dozen Assamite are out, aggressive votes are used to destroy the prey's pool.
+    {{ the_sargon_fragment }} can be used to fetch {{ reckless_agitation }} or {{ loss }} back
+    from the ash heap.
+</p>
+<p>
+    {{ amaravati }} should be well protected, using {{ yoruba_shrine }} and
+    {{ direct_intervention }} or sacrificing neonates to counter rush actions.
+</p>
+<p>
+    {{ alamut }} should be resplenished as much as possible.
+    Vampires with {{ obf }} are supposed to get some bleed through (even for 1 pool) to get tokens on it fast.
+</p>
+<h2>Variants</h2>
+<p>
+    Regarding the decklist example, some other cards can been included:
+    <li>
+        {{ the_uncoiling }} to defend against {{ scourge_of_the_enochians }}, a common
+        counter against breed decks like this one.
+    </li>
+    <li>
+        {{ the_khabar_community }} to help get the neonates bleed through.
+    </li>
+    <li>
+        {{ perfectionist }} and/or {{ the_coven }} to help get some blood back on {{ amaravati }}.
+    </li>
+    <li>
+        Some {{ deflection }} and {{ black_sunrise }} to bump up the defence a bit.
+    </li>
+</p>
+<p>
+    There is a <strong>Laibon</strong> variant to this deck, using more copies of
+    {{ olugbenga }} and {{ kamau_jafari }}, then replacing {{ the_embrace }} by the cheaper {{ bamba }}.
+    This also allows the use of some good Laibon cards like {{ kduvas_mask }} and {{ the_secret_must_be_kept }}.
+    {{ riccardo_fabianis_deck }} at the 2011 Italian Grand Prix is a good example.
+</p>
+{% endtrans %}
+{% endblock %}

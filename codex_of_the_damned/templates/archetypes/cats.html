@@ -7,7 +7,7 @@
 {% endblock %}
 
 {% block archetype_name %}
-<h1><img src="https://static.krcg.org/clan/ahrimanes.svg">Cats</h1>
+<h1>{{ ahrimanes }} Cats</h1>
 {% endblock %}
 
 {% block archetype %}
@@ -42,12 +42,12 @@ speak_with_spirits=card("Speak with Spirits"),
 swiftness_of_the_stag=card("Swiftness of the Stag"),
 taste_of_vitae=card("Taste of Vitae"),
 terror_frenzy=card("Terror Frenzy"),
-the_siamese=card("The Siamese"),
+the_siamese=card("The Siamese"),
 underbridge_stray=card("Underbridge Stray"),
 vultures_buffet=card("Vulture's Buffet"),
 leeching=link("/strategy/bloat", _("leeching"), _anchor="leeching"),
 yoann_guyaders_deck=link("/deck-search", _("Yoann Guyader's deck"), id="2013fnpf"),
-stephen_sings_deck=link("/deck-search", _("Stephen Sing's deck"), id="2011asiancc")
+miquels_deck=link("/deck-search", _("Miquel Jorge Tortajada's deck"), id="2019aazs")
 %}
 <h2>Highlights</h2>
 <p>
@@ -62,8 +62,8 @@ stephen_sings_deck=link("/deck-search", _("Stephen Sing's deck"), id="2011asianc
     {{ swiftness_of_the_stag }}.
 </p>
 <p>
-    This is a slow play, slowing down the prey and predator and bloating a bit with Master cards,
-    all the while bleeding when possible with {{ deep_song }}
+    This is a slow play, slowing down the prey and predator and bloating a bit with
+    Master cards, all the while bleeding when possible with {{ deep_song }}
     and dealing additional pool damage with {{ fame }} and {{ dragonbound }}.
 </p>
 <h2>Tips & Tricks</h2>
@@ -104,7 +104,7 @@ stephen_sings_deck=link("/deck-search", _("Stephen Sing's deck"), id="2011asianc
 </p>
 <h2>Variants</h2>
 <p>
-    The main variant is a <em>wall</em> construct as given in example.
+    The Muricia variant is a <em>wall</em> construct as given in example.
     Some may include {{ pre }} cards to help on the bleeding side,
     like {{ legal_manipulations }} and {{ aire_of_elation }}.
     {{ underbridge_stray }} is also a common inclusion,
@@ -112,14 +112,14 @@ stephen_sings_deck=link("/deck-search", _("Stephen Sing's deck"), id="2011asianc
     {{ yoann_guyaders_deck }} from the 2013 French NC is a an exemple.
 </p>
 <p>
-    The <strong>Howler</strong> variant is less frequent, it is a group 2 build using
+    The <strong>Howler</strong> variant is a group 2 build using
     {{ howler }} and {{ the_siamese }}.
     Group 2 vampires are a bit more expensive and do miss a bit of superior {{ ANI }},
     so it makes including some {{ animalism }} quite necessary. On the other hand,
     the slightly bigger capacity allows for the use of {{ sense_the_savage_way }} to
     increase intercept capabilities, and {{ PRE }} is more present
     and allows for a more aggressive bleed module.
-    {{ stephen_sings_deck }} from the 2011 Asian Continental Championship
+    {{ miquels_deck }} from 2019
     is an example of this approach.
 </p>
 {% endtrans %}

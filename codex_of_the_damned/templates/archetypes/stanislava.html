@@ -7,7 +7,7 @@
 {% endblock %}
 
 {% block archetype_name %}
-<h1><img src="https://static.krcg.org/clan/gangrel.svg"> Stanislava</h1>
+<h1>{{ gangrel }} Stanislava</h1>
 {% endblock %}
 
 {% block archetype %}
@@ -27,6 +27,7 @@ instantaneous_transformation=card("Instantaneous Transformation"),
 murmur_of_the_false_will=card("Murmur of the False Will"),
 archon_investigation=card("Archon Investigation"),
 papillon=card("Papillon"),
+pentex_subversion=card("Pentex™ Subversion"),
 jake_washington=card("Jake Washington"),
 seal_of_veddartha=card("Seal of Veddartha"),
 guard_dogs=card("Guard Dogs"),
@@ -42,15 +43,15 @@ don_cruez_the_idealist=card("Don Cruez, The Idealist"),
 second_tradition_domain=card("Second Tradition: Domain"),
 fourth_tradition_the_accounting=card("Fourth Tradition: The Accounting"),
 janne_lonnqvist_s_deck=link("/deck-search", _("Janne Lönnqvist's deck"), id="2016rfehf"),
-giulio_de_cicco_s_deck=link("/deck-search", _("Giulio De Cicco's deck"), id="2014gtdtigi")
+giulio_de_cicco_s_deck=link("/deck-search", _("Giulio De Cicco's deck"), id="2014gtdtigi"),
+sebastien=link("/deck-search", _("Sébastien Ragache's deck"), id="2019botgmf")
 %}
 <h2>Highlights</h2>
 <p>
     This is a <em>stealth vote & bleed</em> deck with {{ stanislava }} as a star.
-    She uses {{ govern_the_unaligned }} to help get other
-    vampires out and {{ villein }} is used to get some pool
-    back. The second vampire should be a <em>Prince</em>, preferrably {{ ingrid_rossler }},
-    to be able to play the numerous {{ parity_shift }}.
+    She uses {{ govern_the_unaligned }} to help get other vampires out and {{ villein }}
+    is used to get some pool back. The second vampire should be a <em>Prince</em>,
+    preferrably {{ ingrid_rossler }}, to be able to play some {{ parity_shift }}.
 </p>
 <p>
     As the game progresses, more big capacity titled vampires get out and
@@ -64,9 +65,10 @@ giulio_de_cicco_s_deck=link("/deck-search", _("Giulio De Cicco's deck"), id="201
 <h2>Tips & Tricks</h2>
 <p>
     {{ forced_march }} and {{ instantaneous_transformation }} are
-    extremely versatile as they can be used both for stealth or additional action, allowing a vampire
-    to bleed and call a vote in the same turn.
-    {{ stanislava }} can use both, but some other vampires in the crypt can use one or the other.
+    extremely versatile as they can be used both for stealth or additional action,
+    allowing a vampire to bleed and call a vote in the same turn.
+    {{ stanislava }} can use both, but some other vampires in the crypt can use one or
+    the other.
 </p>
 <p>
     {{ murmur_of_the_false_will }} can be used
@@ -103,11 +105,18 @@ giulio_de_cicco_s_deck=link("/deck-search", _("Giulio De Cicco's deck"), id="201
     {{ janne_lonnqvist_s_deck }} from 2016 is a good example.
 </p>
 <p>
-    The <strong>Old School</strong> variant uses groups 1 and 2 in the crypt instead of the group 2-3 used here.
-    It provides {{ angus_the_unruled }} and {{ don_cruez_the_idealist }},
-    two justicars with a nice sets of disciplines. It allows for more Royalty cards like
-    {{ second_tradition_domain }} and {{ fourth_tradition_the_accounting }}.
-    {{ giulio_de_cicco_s_deck }} from 2014 is a good example.
+    The <strong>Old School</strong> variant uses groups 1 and 2 in the crypt instead of
+    the group 2-3 used here. It provides {{ angus_the_unruled }} and
+    {{ don_cruez_the_idealist }}, two justicars with a nice sets of disciplines.
+    It allows for more Royalty cards like {{ second_tradition_domain }} and
+    {{ fourth_tradition_the_accounting }}. {{ giulio_de_cicco_s_deck }} from 2014
+    is a good example.
+</p>
+<p>
+    Since September 2019, the deck must accomodate the changes in both
+    {{ parity_shift }} and {{ pentex_subversion }}. Although its long lasting position
+    in the top tier list has been more and more debated, it is still a powerful build,
+    as demonstrated by {{ sebastien }} in 2019, a few weeks after the change.
 </p>
 {% endtrans %}
 {% endblock %}

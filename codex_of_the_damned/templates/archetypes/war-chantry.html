@@ -7,7 +7,7 @@
 {% endblock %}
 
 {% block archetype_name %}
-<h1><img src="https://static.krcg.org/clan/v5/tremere.svg"> War Chantry</h1>
+<h1>{{ tremere }} War Chantry</h1>
 {% endblock %}
 
 {% block archetype %}
@@ -42,8 +42,10 @@ second_tradition_domain=card("Second Tradition: Domain"),
 valerius_maior_hell_s_fool_adv=card("Valerius Maior, Hell's Fool (ADV)", "Valerius"),
 carna_the_princess_witch=card("Carna, The Princess Witch", "Carna"),
 unleash_hell_s_fury=card("Unleash Hell's Fury"),
+v5_tremere=external("https://www.blackchantry.com/products/legacy/vampire-the-eternal-struggle-fifth-edition/fifth-edition-tremere/", _("V5 Tremere")),
 ricardo_molina_sobreira_s_deck=link("/deck-search", _("Ricardo Molina Sobreira's deck"), id="2018sacsbp"),
-pau_vilar_s_deck=link("/deck-search", _("Pau Vilar's deck"), id="2018igpbi")
+pau_vilar_s_deck=link("/deck-search", _("Pau Vilar's deck"), id="2018igpbi"),
+jose_luis_deck=link("/deck-search", _("Jose Luis Manuel's deck"), id="2021rtibdvs")
 %}
 <h2>Highlights</h2>
 <p>
@@ -69,9 +71,9 @@ pau_vilar_s_deck=link("/deck-search", _("Pau Vilar's deck"), id="2018igpbi")
 </p>
 <p>
     Using {{ threats }} alongside {{ conditioning }} provides some
-    liberty of action if an opponent plays a {{ direct_intervention }} on the latter:
+    liberty of action if an opponent plays a {{ direct_intervention }}:
     the cancelled modifier cannot be played again on the same action, but another bleed enhancer can.
-    The most direct advantage though is that it is cheaper and keeps a bit more blood on the vampires.
+    The most direct advantage though is that it is cheaper and keeps more blood on the vampires.
 </p>
 <h2>Creator Insights</h2>
 <p>
@@ -102,12 +104,11 @@ pau_vilar_s_deck=link("/deck-search", _("Pau Vilar's deck"), id="2018igpbi")
 </p>
 <h2>Variants</h2>
 <p>
-    They are multiple variants on the combat module. It can use aggravated damages with
-    {{ flames_of_the_netherworld }} and {{ walk_of_flame }}, for example.
-    {{ magic_of_the_smith }} is also played often, in order to fetch a
-    {{ bowl_of_convergence }}, {{ heart_of_nizchetus }}, {{ ivory_bow }} or
-    {{ sniper_rifle }}.
-    Also, {{ ponticulus }} is often included for his excellent defence abilities.
+    The combat module can be adapted to the expected environment: aggravated damage with
+    {{ flames_of_the_netherworld }} or {{ walk_of_flame }} is a commmon variation.
+    {{ magic_of_the_smith }} is often see, to fetch a
+    {{ bowl_of_convergence }}, {{ heart_of_nizchetus }} or {{ ivory_bow }}.
+    Also, {{ ponticulus }} is often included for defence.
 </p>
 <p>
     The <strong>Royalty</strong> variant uses <em>Princes</em> and <em>Justicars</em>,
@@ -121,6 +122,12 @@ pau_vilar_s_deck=link("/deck-search", _("Pau Vilar's deck"), id="2018igpbi")
     give him access to good options like
     {{ flames_of_the_netherworld }} and {{ unleash_hell_s_fury }}.
     {{ pau_vilar_s_deck }} from 2018 is a good example.
+</p>
+<p>
+    The <strong>V5</strong> variant uses new Tremere {{ tremere }} vampires from the
+    {{ v5_tremere }} starter, as in {{ jose_luis_deck }} from 2021. It appears that
+    the disciplines spread in groups 5 and 6 are good enough to replicate
+    the archetype there.
 </p>
 {% endtrans %}
 {% endblock %}

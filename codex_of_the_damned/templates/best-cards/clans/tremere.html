@@ -7,14 +7,13 @@
     {% trans trimmed
     war_chantry=link("/archetypes/war-chantry"),
     mistress=link("/archetypes/mistress"),
-    nephandii=link("/archetypes/nephandii"),
+    nephandii=link("/archetypes/tupdogs-nephandus"),
     goratrix_high_tower=link("/archetypes/goratrix-high-tower"),
-    tupdogs=link("/archetypes/tupdogs"),
     antonio_d_erlette=card("Antonio d'Erlette"),
-    tzimisce_wall=link("/archetypes/tzimisce-wall"),
+    malgorzata_arch=link("/archetypes/malgorzata_arch"),
     nephandus=card("Nephandus"),
     goratrix=card("Goratrix"),
-    tupdog=card("Tupdog"),
+    tupdogs=card("Tupdog", "Tupdogs"),
     lord_tremere=card("Lord Tremere"),
     mistress_fanchon=card("Mistress Fanchon"),
     malgorzata=card("Malgorzata")
@@ -33,25 +32,21 @@
         </li>
         <li>
             The {{ nephandii }}, using {{ antonio_d_erlette }} to put multiple
-            {{ nephandus }} into play.
+            {{ nephandus }} into play and {{ tupdogs }} to dispose
+            of the opponents minions.
         </li>
         <li>
             The {{ goratrix_high_tower }}, a wall using
             {{ goratrix }} and its superior {{ ANI }} as star.
         </li>
         <li>
-            {{ tupdogs }}, a rush archetype which uses Tremere antitribu
-            to get some {{ tupdog }} into play and use them to dispose
-            of the opponents minions.
+            {{ malgorzata_arch }}, a rush archetype which uses Tremere with {{ VIC }}
+            and powerful abilities, like {{ lord_tremere }}, {{ mistress_fanchon }} and
+            {{ malgorzata }}.
         </li>
     </ul>
     </p>
-    <p>
-        Finally, Tremere also appear in the {{ tzimisce_wall }} archetype as
-        {{ lord_tremere }}, {{ mistress_fanchon }} and {{ malgorzata }}
-        all have {{ VIC }} alongside powerful abilities.
-    </p>{% endtrans
-    %}
+    {% endtrans %}
 </div>
 
 {% call layout.card_column("Mirror Walk", decks=156, copies="2-8") %}
@@ -84,7 +79,7 @@ at no cost.
 {% endcall %}
 
 {% call layout.card_column("Nephandus", decks=77, copies="2-12") %}
-{% trans trimmed nephandii=link("/archetypes/nephandii") %}
+{% trans trimmed nephandii=link("/archetypes/bibliodeque/nephandii") %}
 An excellent ally: not so expensive, not unique so many of them can be into play,
 they strike 1R with a press and prevent one damage per strike,
 so this means they do not lose any life against a vampire
@@ -108,7 +103,7 @@ Its cost did not prevent it to be played in many {{ tha }} decks, if only as an 
 {% endcall %}
 
 {% call layout.card_column("Antonio d'Erlette", decks=69, copies="2-5") %}
-{% trans trimmed nephandii=link("/archetypes/nephandii") %}
+{% trans trimmed nephandii=link("/archetypes/bibliodeque/nephandii") %}
 Second pillar of the {{ nephandii }} archetype, his capacity is exceptionnal.
 Being able to put some allies into play without even taking an action that could be
 blocked is a definitive edge.
@@ -145,7 +140,7 @@ makes her a favorite in many decks.
 {% endcall %}
 
 {% call layout.card_column("Tupdog", decks=57, copies="2-16") %}
-{% trans trimmed tupdogs=link("/archetypes/tupdogs") %}
+{% trans trimmed tupdogs=link("/archetypes/tupdogs-nephandus") %}
 An infamous rush device, only available as an offensive tool for Tremere antitribu.
 They gave birth to the {{ tupdogs }} archetype.
 {% endtrans %}

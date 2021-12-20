@@ -1,0 +1,83 @@
+{% extends "archetypes/_layout.html" %}
+{% import "archetypes/_layout-erratum.html" as erratum with context %}
+{% import "archetypes/bibliodeque/weenie-dom.json" as deck_json %}
+
+{% block meta %}
+<meta property="decklist" content='{{ deck_json | tojson }}' />
+{% endblock %}
+
+{% block archetype_name %}
+<h1>Weenie DOM</h1>
+{% endblock %}
+
+{% block archetype %}
+{% trans trimmed
+govern_the_unaligned=card("Govern the Unaligned"),
+conditioning=card("Conditioning"),
+seduction=card("Seduction"),
+command_of_the_beast=card("Command of the Beast"),
+dominate=card("Dominate"),
+the_parthenon=card("The Parthenon"),
+ashur_tablets=card("Ashur Tablets"),
+jake_washington=card("Jake Washington"),
+life_in_the_city=card("Life in the City"),
+giant_s_blood=card("Giant's Blood"),
+absorb_the_mind=card("Absorb the Mind"),
+misdirection=card("Misdirection"),
+pentex_subversion=card("Pentex™ Subversion"),
+agent_of_power=card("Agent of Power"),
+target_vitals=card("Target Vitals"),
+zip_gun=card("Zip Gun"),
+manoel_pinheiro_s_deck=link("/deck-search", _("Manoel Pinheiro's deck"), id="2014saclcqspb"),
+vincent_ripoll_s_deck=link("/deck-search", _("Vincent Ripoll's deck"), id="2k9ecday1")
+%}
+<h2>Highlights</h2>
+<p>
+    This is a <em>weenie bleed</em> deck using the {{ dom }} discipline.
+    The idea is to get as many low capacity vampires out as fast as possible,
+    and bleed the preys one after the other as fast as possible.
+</p>
+<p>
+    {{ govern_the_unaligned }} combined with {{ conditioning }}, {{ seduction }}, and
+    {{ command_of_the_beast }} make for hard to block dreadful bleeds for 7.
+</p>
+<p>
+    As the game progresses, some {{ dom }} bounces can be used to add to the damages
+    if the predator becomes aggressive.
+</p>
+<p>
+    The Master module uses {{ dominate }} to enhance the vampires,
+    but also {{ the_parthenon }} and {{ ashur_tablets }} for a bit of recursion.
+    {{ jake_washington }}, {{ life_in_the_city }} and {{ giant_s_blood }}
+    are used to bring back some blood on the vampires.
+</p>
+<p>
+    The combat modules uses only {{ absorb_the_mind }} for defence.
+    It is a bit weak, but {{ dom }} has nothing better to offer.
+</p>
+<h2>Tips & Tricks</h2>
+<p>
+    Well-timed {{ misdirection }} and
+    {{ pentex_subversion }} can help for the lunge.
+</p>
+<h2>Variants</h2>
+<p>
+    The <strong>Agent of Power</strong> variant cuts the
+    {{ ashur_tablets }} and uses {{ agent_of_power }} to let more vampires
+    use superior {{ DOM }}, like in {{ manoel_pinheiro_s_deck }} from 2014.
+</p>
+<p>
+    The <strong>Aim & Chain</strong> variant uses
+    {{ target_vitals }} and {{ zip_gun }} with a bit of {{ for }} prevention
+    for the combat module, as in {{ vincent_ripoll_s_deck }} from the 2009 EC Day 1.
+</p>
+{% endtrans %}
+{% endblock %}
+
+{% block errata %}
+<div class="insert warn">
+    <h3>Errata</h3>
+    {{ erratum.pentextmsubversion( 'undecided' ) }}
+    {{ erratum.antheliostheredstar() }}
+</div>
+{% endblock %}

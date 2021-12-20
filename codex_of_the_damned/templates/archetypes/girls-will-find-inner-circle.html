@@ -12,22 +12,25 @@
 
 {% block archetype %}
 {% trans trimmed
-cybele=card("Cybele"),
-aksinya_daclau=card("Aksinya Daclau"),
-zillah_s_valley=card("Zillah's Valley"),
-villein=card("Villein"),
-liquidation=card("Liquidation"),
-ashur_tablets=card("Ashur Tablets"),
-guard_dogs=card("Guard Dogs"),
-rat_s_warning=card("Rat's Warning"),
-entrancement=card("Entrancement"),
-majesty=card("Majesty"),
-lost_in_translation=card("Lost in Translation"),
-nana_buruku=card("Nana Buruku"),
-deep_song=card("Deep Song"),
 aid_from_bats=card("Aid From Bats"),
+aksinya_daclau=card("Aksinya Daclau"),
+anson=card("Anson"),
+ashur_tablets=card("Ashur Tablets"),
 carrion_crows=card("Carrion Crows"),
-hugh_angseeing_s_deck=link("/deck-search", _("Hugh Angseeing's deck"), id="2011fcqco")
+cybele=card("Cybele"),
+deep_song=card("Deep Song"),
+deflections=card("Deflection", "Deflections"),
+entrancement=card("Entrancement"),
+guard_dogs=card("Guard Dogs"),
+liquidation=card("Liquidation"),
+lost_in_translation=card("Lost in Translation"),
+majesty=card("Majesty"),
+nana_buruku=card("Nana Buruku"),
+rat_s_warning=card("Rat's Warning"),
+villein=card("Villein"),
+zillah_s_valley=card("Zillah's Valley"),
+hugh_angseeing_s_deck=link("/deck-search", _("Hugh Angseeing's deck"), id="2011fcqco"),
+corey_brindelys_variation=link("/deck-search", _("Corey Brindley's deck"), id="2019nacd2co")
 %}
 <h2>Highlights</h2>
 <p>
@@ -76,10 +79,18 @@ hugh_angseeing_s_deck=link("/deck-search", _("Hugh Angseeing's deck"), id="2011f
     Many small variations exists, depending on the cards used outside the Master module.
 </p>
 <p>
-    A common variation is the <strong>Girls Will Find AIDS</strong>, more combat-focused and using
-    {{ nana_buruku }} and an {{ ANI }} combat module using {{ deep_song }},
-    {{ aid_from_bats }}, and {{ carrion_crows }}.
+    A common variation is the <strong>Girls Will Find AIDS</strong>,
+    more combat-focused and using {{ nana_buruku }} and an {{ ANI }} combat module using
+    {{ deep_song }}, {{ aid_from_bats }}, and {{ carrion_crows }}.
     {{ hugh_angseeing_s_deck }} from the 2011 NAC FCQ is a good example.
+</p>
+<p>
+    {{ corey_brindelys_variation }} won him the 2019 NAC (and a few other tournaments).
+    It is using {{ anson }} instead of {{ cybele }} as a base for multi-master,
+    using the fact that he has {{ dom }} and a title to include a few votes and {{ dom }}
+    cards. The whole crypt is different and the deck ditches {{ aksinya_daclau }} and
+    {{ zillah_s_valley }}, for a slower start but a very strong middle game where
+    suddenly {{ deflections }} are available and a few votes can be included.
 </p>
 {% endtrans %}
 {% endblock %}

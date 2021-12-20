@@ -1,0 +1,73 @@
+{% extends "archetypes/_layout.html" %}
+{% import "archetypes/_layout-erratum.html" as erratum with context %}
+{% import "archetypes/bibliodeque/mind-rape.json" as deck_json %}
+
+{% block meta %}
+<meta property="decklist" content='{{ deck_json | tojson }}' />
+{% endblock %}
+
+{% block archetype_name %}
+<h1>Mind Rape</h1>
+{% endblock %}
+
+{% block archetype %}
+{% trans trimmed
+mind_rape=card("Mind Rape"),
+lucian=card("Lucian"),
+heidelberg_castle_germany=card("Heidelberg Castle, Germany"),
+madness_network=card("Madness Network"),
+second_tradition_domain=card("Second Tradition: Domain"),
+obedience=card("Obedience"),
+mental_maze=card("Mental Maze"),
+scourge_of_the_enochians=card("Scourge of the Enochians"),
+metro_underground=card("Metro Underground"),
+arika=card("Arika"),
+erol_hammer_s_deck=link("/deck-search", _("Erol Hammer's deck"), id="2k9fcqnac")
+%}
+<h2>Highlights</h2>
+<p>
+    This is a <em>special</em> deck using {{ mind_rape }}
+    alongside a big capacity vampire with {{ DOM }}{{ OBF }}, {{ lucian }} here.
+    The idea is to steal the opponents vampires and use
+    {{ heidelberg_castle_germany }} to deprive them
+    of their blood and equipment.
+</p>
+<p>
+    Using Malkavian {{ malkavian }} and {{ madness_network }} brings an
+    edge to this idea, as {{ mind_rape }} can be played on the
+    predator turn for example, to get control of the vampire in the immediately following turn.
+</p>
+<p>
+    The deck uses {{ second_tradition_domain }} for defence, together with
+    {{ obedience }} and {{ mental_maze }} to avoid combat.
+</p>
+<p>
+    Bleed and votes are used to apply pool damage, in combination with a strong stealth module using {{ OBF }}.
+</p>
+<h2>Tips & Tricks</h2>
+<p>
+    {{ scourge_of_the_enochians }} is used as a counter
+    against breed constructs that can be overwhelming for this deck.
+</p>
+<p>
+    {{ metro_underground }} lets a vampire bleed or vote,
+    then unlock at the end of the turn, only to use
+    {{ madness_network }} for another action during another
+    Methusalah's turn.
+</p>
+<h2>Variants</h2>
+<p>
+    There is a Ventrue variant using {{ arika }} as a star.
+    {{ erol_hammer_s_deck }} from 2009 is a good example.
+</p>
+{% endtrans %}
+{% endblock %}
+
+{% block errata %}
+<div class="insert warn">
+    <h3>Errata</h3>
+    {{ erratum.pentextmsubversion( 'remove' ) }}
+    {{ erratum.parityshift() }}
+    {{ erratum.temptationofgreaterpower() }}
+</div>
+{% endblock %}

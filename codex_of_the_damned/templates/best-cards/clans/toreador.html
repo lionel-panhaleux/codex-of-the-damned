@@ -10,12 +10,13 @@
 <div class="insert tip">
     <p>
         {% trans trimmed
-        aaa_archetype=link("/archetypes/aaa"),
-        jost_powerbleed=link("/archetypes/jost-powerbleed"),
-        weenie_aus=link("/archetypes/weenie-aus")
+        anson=card("Anson"),
+        anson_guns=link("/archetypes/anson-guns"),
+        jost_powerbleed=link("/archetypes/rebekka-jost"),
+        weenie_aus=link("/archetypes/runner-ups/weenie-aus")
         %}
         The Toreador and their antitribu are a prominent clan in tournaments.
-        They gave birth to two archetypes: {{ aaa }} using Toreador Camarilla Royalty
+        They gave birth to two archetypes: {{ anson_guns }} using {{ anson }}
         and {{ jost_powerbleed }} using antitribu and their clan cards.
         Moreover, they are used in numbers in the {{ weenie_aus }} archetype.
         {% endtrans %}
@@ -46,10 +47,9 @@ The cheapest {{ AUS }} pool can buy. An easy inclusion in many constructs.
 
 {% call layout.card_column("Anneke", decks=56, copies="1-3") %}
 {% trans trimmed
-aaa_archetype=link("/archetypes/aaa"),
 anson=card("Anson")
 %}
-Second "A" of the {{ aaa_archetype }} after {{ anson }},
+A good partner for {{ anson }},
 her +1 bleed and unique ability to block cross table makes for a nice package
 in any construct with intercept capabilities.
 {% endtrans %}
@@ -83,10 +83,12 @@ he gets included in many decks.
 {% trans trimmed
 aaa_archetype=link("/archetypes/aaa"),
 anson=card("Anson"),
-anneke=card("Anneke")
+anneke=card("Anneke"),
+toreador_grand_ball=card("Toreador Grand Ball")
 %}
-Last "A" of the {{ aaa_archetype }} alongisde {{ anson }} and {{ anneke }},
-her bleed bonus and title are good and her special unlock ability is very strong.
+A good match for {{ anson }} and {{ anneke }},
+her bleed bonus and title are good and her special unlock ability is very strong,
+especially when combined with {{ toreador_grand_ball }}.
 {% endtrans %}
 {% endcall %}
 

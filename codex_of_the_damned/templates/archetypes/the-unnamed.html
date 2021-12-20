@@ -7,40 +7,48 @@
 {% endblock %}
 
 {% block archetype_name %}
-<h1><img src="https://static.krcg.org/clan/baali.svg"> The unnamed</h1>
+<h1>{{ baali }} The unnamed</h1>
 {% endblock %}
 
 {% block archetype %}
 {% trans trimmed
-the_unnamed=card("The unnamed"),
-tend_the_flock=card("Tend the Flock"),
-enkil_cog=card("Enkil Cog"),
-homunculus=card("Homunculus"),
-instantaneous_transformation=card("Instantaneous Transformation"),
-eluding_the_arms_of_morpheus=card("Eluding the Arms of Morpheus"),
-mylan_horseed=card("Mylan Horseed"),
-majesty=card("Majesty"),
-sense_the_sin=card("Sense the Sin"),
-flurry_of_action=card("Flurry of Action"),
-true_love_s_face=card("True Love's Face"),
-the_horde=card("The Horde"),
+anarch_convert=card("Anarch Convert"),
 archon_investigation=card("Archon Investigation"),
-rötschreck=card("Rötschreck"),
-infernal_servitor=card("Infernal Servitor"),
-shadow_of_the_beast=card("Shadow of the Beast"),
-kaymakli_fragment=card("Kaymakli Fragment"),
-mask_of_a_thousand_faces=card("Mask of a Thousand Faces"),
-perfectionist=card("Perfectionist"),
-giant_s_blood=card("Giant's Blood"),
-the_coven=card("The Coven"),
-i_am_legion=card("I am Legion"),
-form_of_mist=card("Form of Mist"),
 d_habi_revenant=card("D'habi Revenant"),
-legal_manipulations=card("Legal Manipulations"),
-maleficia=card("Maleficia"),
-psalm_of_the_damned=card("Psalm of the Damned"),
-greater_curse=card("Greater Curse"),
+eluding_the_arms_of_morpheus=card("Eluding the Arms of Morpheus"),
+enchanting_gaze=card("Enchanting Gaze"),
+enkil_cog=card("Enkil Cog"),
 evil_eye=card("Evil Eye"),
+flurry_of_action=card("Flurry of Action"),
+form_of_mist=card("Form of Mist"),
+giant_s_blood=card("Giant's Blood"),
+greater_curse=card("Greater Curse"),
+homunculus=card("Homunculus"),
+i_am_legion=card("I am Legion"),
+illegalism=card("Illegalism"),
+infernal_servitor=card("Infernal Servitor"),
+instantaneous_transformation=card("Instantaneous Transformation"),
+kaymakli_fragment=card("Kaymakli Fragment"),
+legal_manipulations=card("Legal Manipulations"),
+majesty=card("Majesty"),
+maleficia=card("Maleficia"),
+mask_of_a_thousand_faces=card("Mask of a Thousand Faces"),
+mylan_horseed=card("Mylan Horseed"),
+perfectionist=card("Perfectionist"),
+power_of_one=card("Power of One"),
+psalm_of_the_damned=card("Psalm of the Damned"),
+revelation_of_the_serpent=card("Revelation of the Serpent"),
+rötschreck=card("Rötschreck"),
+sense_the_sin=card("Sense the Sin"),
+shadow_of_the_beast=card("Shadow of the Beast"),
+tend_the_flock=card("Tend the Flock"),
+the_coven=card("The Coven"),
+the_horde=card("The Horde"),
+the_platinum_protocol=card("The Platinum Protocol"),
+the_unnamed=card("The unnamed"),
+true_love_s_face=card("True Love's Face"),
+v5_ministry=external("https://www.blackchantry.com/products/vampire-the-eternal-struggle-fifth-edition/fifth-edition-the-ministry/", _("V5 Ministry")),
+delmars_deck=link("/deck-search", _("Delmar Sittoni's deck"), id="2021bco"),
 fernando_naves_resck_s_deck=link("/deck-search", _("Fernando Naves Resck's deck"), id="2017vplnebspb")
 %}
 <h2>Highlights</h2>
@@ -116,10 +124,16 @@ fernando_naves_resck_s_deck=link("/deck-search", _("Fernando Naves Resck's deck"
     {{ flurry_of_action }} with {{ legal_manipulations }}.
 </p>
 <p>
-    The <strong>Maleficia</strong> variant plays {{ maleficia }}
-    and uses {{ psalm_of_the_damned }}, {{ greater_curse }} and/or
-    {{ evil_eye }} to improve the deck.
+    The <strong>Maleficia</strong> variant plays {{ maleficia }} and uses
+    {{ psalm_of_the_damned }}, {{ greater_curse }} and/or {{ evil_eye }}.
     {{ fernando_naves_resck_s_deck }} from the 2017 Brazilian CCQ is a good example.
+</p>
+<p>
+    The <strong>Anarch</strong> variant uses {{ anarch_convert }} to go anarch, which
+    opens access to {{ illegalism }} and {{ power_of_one }}, as in {{ delmars_deck }}
+    from 2021. Since the publishing of the {{ v5_ministry }} deck,
+    {{ the_platinum_protocol }}, {{ revelation_of_the_serpent }} and {{ enchanting_gaze }}
+    also deserve consideration.
 </p>
 {% endtrans %}
 {% endblock %}

@@ -1,0 +1,72 @@
+{% extends "archetypes/_layout.html" %}
+{% import "archetypes/_layout-erratum.html" as erratum with context %}
+{% import "archetypes/bibliodeque/renegade-assault.json" as deck_json %}
+
+{% block meta %}
+<meta property="decklist" content='{{ deck_json | tojson }}' />
+{% endblock %}
+
+{% block archetype_name %}
+<h1>{{ gangrel }} Renegade Assault</h1>
+{% endblock %}
+
+{% block archetype %}
+{% trans trimmed
+renegade_garou=card("Renegade Garou"),
+tribute_to_the_master=card("Tribute to the Master"),
+target_vitals=card("Target Vitals"),
+weighted_walking_stick=card("Weighted Walking Stick"),
+fame=card("Fame"),
+jacob_fermor=card("Jacob Fermor"),
+the_unmasking=card("The Unmasking"),
+poison_pill=card("Poison Pill"),
+delaying_tactics=card("Delaying Tactics"),
+reins_of_power=card("Reins of Power"),
+direct_intervention=card("Direct Intervention"),
+entrancement=card("Entrancement"),
+earth_meld=card("Earth Meld"),
+dragonbound=card("Dragonbound"),
+camera_phone=card("Camera Phone"),
+antti_tirila_s_deck=link("/deck-search", _("Antti Tirilä's deck"), id="2k9alastorsvilleins")
+%}
+<h2>Highlights</h2>
+<p>
+    This is a <em>rush</em> deck using {{ renegade_garou }}
+    and low capacity {{ pro }} vampires to take down other minions around the table.
+    {{ tribute_to_the_master }} is used to bloat and
+    naked bleed actions are used to deliver pool damage to the prey.
+</p>
+<p>
+    The combat module is strong and heavy, and {{ target_vitals }} and
+    {{ weighted_walking_stick }} can be used indistinctively by vampires or werewolves.
+    {{ fame }} is used for additional pool damage on the prey.
+<p>
+    If {{ jacob_fermor }} gets into play, werewolves
+    see their bleed boosted, which can be nice for the lunge.
+</p>
+<h2>Tips & Tricks</h2>
+<p>
+    {{ the_unmasking }} transform the werewolves into
+    good blockers, which is always nice defensively.
+</p>
+<p>
+    {{ poison_pill }} is an alternative to {{ delaying_tactics }}:
+    it costs less blood and can disable a damage dealing vote like {{ reins_of_power }}.
+</p>
+<p>
+    {{ direct_intervention }} is a very effective counter
+    against anti-ally actions like {{ entrancement }}.
+</p>
+<p>
+    {{ earth_meld }} is an effective combat defence to protect
+    the low capacity vampires.
+</p>
+<h2>Variants</h2>
+<p>
+    The main variant includes more copies of {{ jacob_fermor }} and {{ renegade_garou }}
+    to make the most of the core combination of the deck.
+    {{ antti_tirila_s_deck }} from 2009 is a good example.
+    It also includes {{ dragonbound }} and {{ camera_phone }} to enhance pool damage.
+</p>
+{% endtrans %}
+{% endblock %}

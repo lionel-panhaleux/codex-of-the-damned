@@ -1,0 +1,73 @@
+{% extends "archetypes/_layout.html" %}
+{% import "archetypes/_layout-erratum.html" as erratum with context %}
+{% import "archetypes/bibliodeque/daughters-politics.json" as deck_json %}
+
+{% block meta %}
+<meta property="decklist" content='{{ deck_json | tojson }}' />
+{% endblock %}
+
+{% block archetype_name %}
+<h1>{{ daughters_of_cacophony }} Daughters Politics</h1>
+{% endblock %}
+
+{% block archetype %}
+{% trans trimmed
+archon_investigation=card("Archon Investigation"),
+bastille_opera_house=card("Bastille Opera House"),
+benefit_performance=card("Benefit Performance"),
+conductor=card("Conductor"),
+death_of_the_drum=card("Death of the Drum"),
+dream_world=card("Dream World"),
+enchant_kindred=card("Enchant Kindred"),
+fear_of_mekhet=card("Fear of Mekhet"),
+fee_stake=card("Fee Stake: Boston", "Fee Stake"),
+lily_prelude=card("Lily Prelude"),
+majesty=card("Majesty"),
+member_of_the_entourage=card("Member of the Entourage"),
+the_embrace=card("The Embrace"),
+karl_schaefers_deck=link("/deck-search", _("Karl Schaefer's deck"), id="2019won5co"),
+death_star=link("/archetypes/bibliodeque/death-star")
+%}
+<h2>Highlights</h2>
+<p>
+    This is a <em>breed & boon</em> deck using the Daughters of Cacophony
+    and their unique {{ mel }} discipline.
+    The idea is to bring as many Daughters as possible into play with
+    {{ the_embrace }}, then use {{ bastille_opera_house }}, {{ conductor }}
+    and {{ pre }} modifiers to get enough votes.
+</p>
+<p>
+    {{ benefit_performance }} is used to bloat and
+    {{ lily_prelude }} to deliver pool damage to the prey.
+<p>
+    {{ enchant_kindred }} can be used to speed up the setup in the earyl game
+    and bleed later on, while {{ dream_world }} can provide an unexpected bleed lunge.
+</p>
+<h2>Tips & Tricks</h2>
+<p>
+    {{ death_of_the_drum }} is a nasty surprise in an
+    otherwise innocuous combat module using only {{ majesty }}.
+</p>
+<p>
+    {{ member_of_the_entourage }} are good protectors to avoid, for example,
+    rush actions against a Daughter with {{ conductor }}.
+</p>
+<p>
+    The deck can have a hard time getting the vote lock.
+    {{ fear_of_mekhet }} can be a devastating blow to a Camarilla vote construct
+    if timely played.
+</p>
+<p>
+    As the deck has no defence against bleed (no bounces and no intercept),
+    {{ archon_investigation }} is the only deterrent available against high bleed decks.
+    Aside from that, the high bloat delivered by {{ benefit_performance }} ought to be enough.
+</p>
+<h2>Variants</h2>
+<p>
+    The archetype is seldom played and not many variations exist.
+    {{ karl_schaefers_deck }} from 2019 gives an Anarch example where the Daughters
+    go for {{ fee_stake }} actions. That said, it is more of a crossover between
+    this archetype and the {{ death_star }} archetype.
+</p>
+{% endtrans %}
+{% endblock %}

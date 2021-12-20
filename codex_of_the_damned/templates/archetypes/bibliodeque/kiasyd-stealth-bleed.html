@@ -1,0 +1,107 @@
+{% extends "archetypes/_layout.html" %}
+{% import "archetypes/_layout-erratum.html" as erratum with context %}
+{% import "archetypes/bibliodeque/kiasyd-stealth-bleed.json" as deck_json %}
+
+{% block meta %}
+<meta property="decklist" content='{{ deck_json | tojson }}' />
+{% endblock %}
+
+{% block archetype_name %}
+<h1>{{ kiasyd }} Kiasyd Stealth & Bleed</h1>
+{% endblock %}
+
+{% block archetype %}
+{% trans trimmed
+govern_the_unaligned=card("Govern the Unaligned"),
+nocturn=card("Nocturn"),
+carlton_van_wyk=card("Carlton Van Wyk"),
+shadow_body=card("Shadow Body"),
+pentex_subversion=card("Pentex™ Subversion"),
+anarch_troublemaker=card("Anarch Troublemaker"),
+jake_washington=card("Jake Washington"),
+the_coven=card("The Coven"),
+life_in_the_city=card("Life in the City"),
+command_of_the_beast=card("Command of the Beast"),
+conditioning=card("Conditioning"),
+the_rack=card("The Rack"),
+sudden_reversal=card("Sudden Reversal"),
+villein=card("Villein"),
+vessel=card("Vessel"),
+gremlins=card("Gremlins"),
+bonding=card("Bonding"),
+leeching=link("/strategy/bloat", _("leeching"), _anchor="leeching"),
+ben_peal_s_deck=link("/deck-search", _("Ben Peal's deck"), id="2010slovakecq"),
+lasombra_nocturn=link("/archetypes/runner-ups/lasombra-nocturn")
+%}
+<h2>Highlights</h2>
+<p>
+    This is a <em>stealth & bleed</em> deck using the Kiasyd clan and their unique {{ myt }} discipline.
+    During the beginning, it uses {{ govern_the_unaligned }}
+    to get vampires out faster and cheaper. When enough minions are into play, it switches to delivering
+    strong bleed actions using {{ OBT }} and {{ MYT }} for stealth.
+</p>
+<p>
+    The deck uses {{ nocturn }} and {{ carlton_van_wyk }} to protect its vampires
+    from agression, but has also access to {{ shadow_body }} in case of a combat.
+</p>
+<p>
+    Stealth is high, with 16 stealth modifiers, but still uses
+    {{ pentex_subversion }} and {{ anarch_troublemaker }} on top of it all
+    to prevent interception.
+</p>
+<p>
+    The vampires use their blood quite fast, so no {{ leeching }} takes place and
+    {{ jake_washington }}, {{ the_coven }} and {{ life_in_the_city }} are used
+    to get some blood back on the vampires.
+</p>
+<h2>Tips & Tricks</h2>
+<p>
+    {{ command_of_the_beast }} is used to make it harder for the opponents to figure out
+    exactly how much bleed power the deck can have in hand.
+    As its bonus does not count against the limit, it can be used along a {{ conditioning }}.
+</p>
+<p>
+    {{ nocturn }} can also be used as a bleed enhancer,
+    as it can act the turn it gets into play.
+</p>
+<h2>Creator Insights</h2>
+<p>
+    <em>Tomàs López Jiménez</em> was kind enough to provide the following insights:
+</p>
+<p>
+    Stay calm during the firsts turns ({{ govern_the_unaligned }} at superior {{ DOM }}, bleed for one,
+    <em>etc.</em>). If you're too agressive, your prey will only influence one vampire,
+    and you want the prey to play and do something to the grandprey. It's not a problem if the prey gains 1PV.
+    When you have 3 or more Kiasyds and the prey has less than 15 pool, then it is the moment to bleed.
+</p>
+<p>
+    If you have a lot of stealth in hand and a wall deck on the table,
+    one option is to figure out something to do to the wall player (steal
+    {{ the_rack }}, for exemple).
+</p>
+<p>
+    If you predator has high intercept, do not undertake non-directed actions
+    unless you have a lot of stealth in hand.
+</p>
+<h2>Variants</h2>
+<p>
+    Including more {{ nocturn }} is an option, as is using some {{ sudden_reversal }}
+    to disable the prey's Master bloat ({{ villein }}, {{ vessel }}, <em>etc.</em>).
+</p>
+<p>
+    The <strong>Fastball</strong> variant uses the {{ gremlins }} + {{ bonding }} combination
+    for 3 pool, 2 stealth bleeds. {{ ben_peal_s_deck }} from 2010 is a good example.
+</p>
+<p>
+    In a sense, this archetype is very close to the {{ lasombra_nocturn }} archetype,
+    as they both use {{ DOM }} and {{ OBT }} to the same effect.
+</p>
+{% endtrans %}
+{% endblock %}
+
+{% block errata %}
+<div class="insert warn">
+    <h3>Errata</h3>
+    {{ erratum.pentextmsubversion( 'undecided' ) }}
+</div>
+{% endblock %}

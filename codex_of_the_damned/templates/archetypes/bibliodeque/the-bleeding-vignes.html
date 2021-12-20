@@ -1,0 +1,96 @@
+{% extends "archetypes/_layout.html" %}
+{% import "archetypes/_layout-erratum.html" as erratum with context %}
+{% import "archetypes/bibliodeque/the-bleeding-vignes.json" as deck_json %}
+
+{% block meta %}
+<meta property="decklist" content='{{ deck_json | tojson }}' />
+{% endblock %}
+
+{% block archetype_name %}
+<h1>{{ ventrue }} The Bleeding Vignes</h1>
+{% endblock %}
+
+{% block archetype %}
+{% trans trimmed
+edward_vignes=card("Edward Vignes"),
+bonding=card("Bonding"),
+seduction=card("Seduction"),
+anarch_troublemaker=card("Anarch Troublemaker"),
+misdirection=card("Misdirection"),
+pentex_subversion=card("Pentex™ Subversion"),
+mind_numb=card("Mind Numb"),
+majesty=card("Majesty"),
+deflection=card("Deflection"),
+delaying_tactics=card("Delaying Tactics"),
+the_coven=card("The Coven"),
+giant_s_blood=card("Giant's Blood"),
+jake_washington=card("Jake Washington"),
+blood_doll=card("Blood Doll"),
+life_in_the_city=card("Life in the City"),
+bleeding_the_vine=card("Bleeding the Vine"),
+daring_the_dawn=card("Daring the Dawn"),
+foreshadowing_destruction=card("Foreshadowing Destruction"),
+direct_intervention=card("Direct Intervention"),
+conditioning=card("Conditioning"),
+the_bitter_and_sweet_story=card("The Bitter and Sweet Story"),
+entrancement=card("Entrancement"),
+force_of_personality=card("Force of Personality")
+%}
+<h2>Highlights</h2>
+<p>
+    This is a <em>powerbleed</em> deck using {{ edward_vignes }}
+    and low capacity vampires with the {{ dom }}{{ pre }} disciplines.
+    {{ edward_vignes }} ability to counter rush actions with a discard
+    is an excellent protection against combat-oriented decks.
+</p>
+<p>
+    {{ bonding }} and {{ seduction }} are used to get the bleed through.
+    {{ anarch_troublemaker }}, {{ misdirection }} and {{ pentex_subversion }}
+    are used to lock the prey vampires, together with the {{ PRE }} combination
+    {{ mind_numb }} + {{ majesty }}.
+</p>
+<p>
+    {{ deflection }} and {{ delaying_tactics }} are used for defence.
+</p>
+<p>
+    Getting some blood back on {{ edward_vignes }} is critical,
+    as many cards he uses have a blood cost,
+    so {{ the_coven }}, {{ giant_s_blood }} and {{ jake_washington }} are included.
+    Even {{ blood_doll }} can be used to move blood from the pool.
+    In this example, {{ life_in_the_city }} is added
+    to get even more blood back on the table.
+</p>
+<h2>Tips & Tricks</h2>
+<p>
+    The name of the archetype is a wordplay referring to {{ bleeding_the_vine }}.
+</p>
+<p>
+    {{ daring_the_dawn }} and {{ foreshadowing_destruction }} are used for the lunge.
+    The use of {{ direct_intervention }} on a modifier
+    like {{ conditioning }} prevents it to be played again on the
+    same action (as a modifier can only be played once and, even if countered).
+    Using an alternative bleed enhancer is permitted though
+    (the modifier did not apply, so limited bleed enhancement is still possible).
+    {{ foreshadowing_destruction }} can even save a lunge this way.
+</p>
+<p>
+    The deck is expected to be very aggressive toward its prey
+    and get a quick victory point in the game beginning,
+    so {{ the_bitter_and_sweet_story }} makes sense
+    as it will help keeping some momentum afterwards.
+</p>
+<h2>Variants</h2>
+<p>
+    There are not many variations to this archetype.
+    {{ life_in_the_city }} is an original inclusion,
+    {{ entrancement }} and {{ force_of_personality }} are often included.
+</p>
+{% endtrans %}
+{% endblock %}
+
+{% block errata %}
+<div class="insert warn">
+    <h3>Errata</h3>
+    {{ erratum.pentextmsubversion( 'undecided' ) }}
+</div>
+{% endblock %}
