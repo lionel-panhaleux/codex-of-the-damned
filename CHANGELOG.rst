@@ -1,7 +1,7 @@
 Changelog
 =========
 
-1.37 (unreleased)
+1.37 (2021-12-27)
 -----------------
 
 - Display fixes
