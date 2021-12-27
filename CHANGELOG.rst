@@ -1,7 +1,7 @@
 Changelog
 =========
 
-1.36 (unreleased)
+1.36 (2021-12-27)
 -----------------
 
 - Upgrade page denomination
