@@ -4,8 +4,8 @@ Changelog
 1.38 (unreleased)
 -----------------
 
-- Nothing changed yet.
-
+- Homepage: add link to alternate TTS plugin
+- Online play LackeyCCG: update pluing link on image for install procedure
 
 1.37 (2021-12-27)
 -----------------
