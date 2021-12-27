@@ -2,8 +2,8 @@
 {% import "best-cards/_layout_card_column.html" as layout with context%}
 
 {% block content %}
-<h1> {{ follower_of_set }}
-    {% trans trimmed %}Followers of Set{% endtrans %}
+<h1> {{ ministry }}
+    {% trans trimmed %}Ministry{% endtrans %}
 </h1>
 <div class="insert tip">
     <p>
@@ -11,12 +11,21 @@
         bima_dominate=link("/archetypes/bibliodeque/bima-dominate"),
         bima=card("Bima")
         %}
-        The Followers of Set and their unique {{ ser }} discipline
+        The Ministry (previously named <em>Followers of Set</em>)
         are devious experts of sin and stealth.
         They have given birth to ecclectic decks around politics and mummies
         but their most successful archetype is the {{ bima_dominate }},
         using the {{ bima }} ally with {{ dom }}.
         {% endtrans %}
+    </p>
+    <p>
+    {% trans trimmed
+        v5_ministry=external("https://www.blackchantry.com/products/vampire-the-eternal-struggle-fifth-edition/fifth-edition-the-ministry/", _("V5 Ministry"))
+    %}
+    Note that before the 2021 release of the {{ v5_ministry }} precon, they had {{ ser }} as clan discipline
+    instead of {{ pro }}. The new vampires and cards released in this precon offer a whole new different area for
+    deck building, and it's not yet clear what high level archetypes might emerge of it.
+    {% endtrans %}
     </p>
 </div>
 

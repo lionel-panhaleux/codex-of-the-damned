@@ -6,6 +6,7 @@ Changelog
 
 - Homepage: add link to alternate TTS plugin
 - Online play LackeyCCG: update pluing link on image for install procedure
+- Best cards: Assamite -> Banu Haqim and FoS -> Ministry
 
 1.37 (2021-12-27)
 -----------------

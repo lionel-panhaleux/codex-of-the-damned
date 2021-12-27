@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: codex 0.X\n"
 "Report-Msgid-Bugs-To: lionel.panhaleux+codex@gmail.com\n"
-"POT-Creation-Date: 2021-12-27 11:15+0100\n"
+"POT-Creation-Date: 2021-12-27 13:45+0100\n"
 "PO-Revision-Date: 2020-07-04 08:50+0200\n"
 "Last-Translator: Lionel Panhaleux <lionel.panhaleux+codex@gmail.com>\n"
 "Language: fr\n"
@@ -254,11 +254,11 @@ msgid "Akunanse"
 msgstr ""
 
 #: codex_of_the_damned/navigation.py:319
-msgid "Assamite"
+msgid "Baali"
 msgstr ""
 
 #: codex_of_the_damned/navigation.py:320
-msgid "Baali"
+msgid "Banu Haqim"
 msgstr ""
 
 #: codex_of_the_damned/navigation.py:321
@@ -273,47 +273,47 @@ msgstr ""
 msgid "Daughters of Cacophony"
 msgstr "Filles de la Cacophonie"
 
-#: codex_of_the_damned/navigation.py:324 codex_of_the_damned/templates/best-cards/clans/followers-of-set.html:6
-msgid "Followers of Set"
-msgstr "Disciples de Seth"
-
-#: codex_of_the_damned/navigation.py:325
+#: codex_of_the_damned/navigation.py:324
 msgid "Gangrel"
 msgstr ""
 
-#: codex_of_the_damned/navigation.py:326
+#: codex_of_the_damned/navigation.py:325
 msgid "Giovanni"
 msgstr ""
 
-#: codex_of_the_damned/navigation.py:327
+#: codex_of_the_damned/navigation.py:326
 msgid "Guruhi"
 msgstr ""
 
-#: codex_of_the_damned/navigation.py:328 codex_of_the_damned/templates/best-cards/clans/harbingers-of-skulls.html:6
+#: codex_of_the_damned/navigation.py:327 codex_of_the_damned/templates/best-cards/clans/harbingers-of-skulls.html:6
 msgid "Harbingers of Skulls"
 msgstr "Émissaires des Crânes"
 
-#: codex_of_the_damned/navigation.py:329 codex_of_the_damned/templates/best-cards/clans/imbued.html:6
+#: codex_of_the_damned/navigation.py:328 codex_of_the_damned/templates/best-cards/clans/imbued.html:6
 #: codex_of_the_damned/templates/strategy/bloat.html:152 codex_of_the_damned/templates/strategy/fundamentals.html:287
 msgid "Imbued"
 msgstr "Illuminés"
 
-#: codex_of_the_damned/navigation.py:330
+#: codex_of_the_damned/navigation.py:329
 msgid "Ishtarri"
 msgstr ""
 
-#: codex_of_the_damned/navigation.py:331
+#: codex_of_the_damned/navigation.py:330
 msgid "Kiasyd"
 msgstr ""
 
-#: codex_of_the_damned/navigation.py:332
+#: codex_of_the_damned/navigation.py:331
 msgid "Lasombra"
 msgstr ""
 
-#: codex_of_the_damned/navigation.py:333 codex_of_the_damned/templates/best-cards/clans/malkavian.html:6
+#: codex_of_the_damned/navigation.py:332 codex_of_the_damned/templates/best-cards/clans/malkavian.html:6
 #: codex_of_the_damned/templates/strategy/articles/basic/blood-pool-and-grinding-beads.html:57
 msgid "Malkavian"
 msgstr "Malkavien"
+
+#: codex_of_the_damned/navigation.py:333 codex_of_the_damned/templates/best-cards/clans/ministry.html:6
+msgid "Ministry"
+msgstr "Sacerdoce"
 
 #: codex_of_the_damned/navigation.py:334
 msgid "Nosferatu"
@@ -2005,8 +2005,9 @@ msgstr ""
 
 #: codex_of_the_damned/templates/archetypes/neonate/the-unnamed.html:55
 #: codex_of_the_damned/templates/archetypes/the-unnamed.html:50
+#: codex_of_the_damned/templates/best-cards/clans/ministry.html:23
 msgid "V5 Ministry"
-msgstr "V5 Ministry"
+msgstr "V5 Sacerdoce"
 
 #: codex_of_the_damned/templates/archetypes/the-unnamed.html:51
 msgid "Delmar Sittoni's deck"
@@ -3517,7 +3518,7 @@ msgstr ""
 "%(forgotten_labyrinth)s convient parfaitement. </p> <p> Une variante intéressante, si vous avez accès aux anciennes "
 "cartes, consiste à utiliser %(reckless_agitation)s pour plus de dégâts. %(arishat)s peut le jouer et, comme son "
 "aptitude est déjà excellente, vous voudrez la tripler. À ses côtés, une paire de <em>Barons</em> pour l'aider, comme "
-"%(jacques_rouge)s et soit un autre Nosferatu %(nosferatu)s, soit un Ministry %(ministry)s. Dans cette variante les "
+"%(jacques_rouge)s et soit un autre Nosferatu %(nosferatu)s, soit un Sacerdoce %(ministry)s. Dans cette variante les "
 "vampires auront besoin de leur sang, donc moins de %(villein)s. Plus important encore, la crypte perd %(dom)s donc la"
 " défense de morsure avec %(deflection)s disparaît, et doit être compensée avec plus de %(parity_shift)s. Le deck "
 "%(infernal_princes_of_anarchy)s de Bram Van Stappen, joué par Emiliano Imeroni, a remporté le Tournoi National de "
@@ -4279,6 +4280,7 @@ msgid "Promo Pack 1"
 msgstr "Promo Pack 1"
 
 #: codex_of_the_damned/templates/archetypes/neonate/the-capuchin.html:64
+#: codex_of_the_damned/templates/best-cards/clans/banu-haqim.html:14
 msgid "V5 Banu Haqim"
 msgstr "V5 Banu Haqim"
 
@@ -5425,16 +5427,20 @@ msgstr "deal classique"
 msgid "Christian Chénard's deck"
 msgstr "deck de Christian Chénard"
 
-#: codex_of_the_damned/templates/best-cards/_layout_card_column.html:7
+#: codex_of_the_damned/templates/best-cards/_layout_card_column.html:8
+msgid "New card"
+msgstr "Nouvelle carte"
+
+#: codex_of_the_damned/templates/best-cards/_layout_card_column.html:10
 #, python-format
 msgid "played in %(num)d decks,"
 msgstr "joué dans %(num)d decks,"
 
-#: codex_of_the_damned/templates/best-cards/_layout_card_column.html:9
+#: codex_of_the_damned/templates/best-cards/_layout_card_column.html:12
 msgid "typically 1 copy"
 msgstr "typiquement 1 exemplaire"
 
-#: codex_of_the_damned/templates/best-cards/_layout_card_column.html:11
+#: codex_of_the_damned/templates/best-cards/_layout_card_column.html:14
 #, python-format
 msgid "typically %(range)s copies"
 msgstr "environ %(range)s exemplaires"
@@ -5655,131 +5661,6 @@ msgstr ""
 "avec %(carrion_crows)s. Enfin, elle fonctionne sur une frappe à mains nues, donc %(immortal_grapple)s est inutile "
 "contre elle."
 
-#: codex_of_the_damned/templates/best-cards/clans/assamite.html:7
-#, python-format
-msgid ""
-"<p> Assamite and their unique %(qui)s discipline provide some good clan cards and multiple strategies usually "
-"revolving around %(obf)s for stealth. This clan has four main archetypes: <ul> <li> %(amaravati_politics)s, a "
-"political archetype with %(amaravati)s. </li> <li> The %(death_star)s, an anarch politics archetype. </li> <li> The "
-"%(black_hand)s swarm archetype, from which the Asssamite variation is the most common. </li> <li> "
-"%(dimitri_s_big_band)s, a toolbox archetype using %(dmitri_borodin)s and the %(AUS)s%(CEL)s%(QUI)s disciplines "
-"combination. </li> </ul> </p>"
-msgstr ""
-"<p> Les Assamite et leur discipline %(qui)s exclusive fournissent de bonnes cartes de clan et de multiples stratégies"
-" qui tournent généralement autour d'%(obf)s pour la discrétion. Ce clan a quatre archétypes principaux: <ul> <li> "
-"%(amaravati_politics)s, un archétype politique avec %(amaravati)s. </li> <li> La %(death_star)s, un archétype "
-"politique anarch. </li> <li> L'archétype d'essaim %(black_hand)s, dont la variante Asssamite est la plus courante. "
-"</li> <li> %(dimitri_s_big_band)s, un archétype toolbox qui utilise %(dmitri_borodin)s et la combinaison de "
-"disciplines %(AUS)s%(CEL)s%(QUI)s. </li> </ul> </p>"
-
-#: codex_of_the_damned/templates/best-cards/clans/assamite.html:40
-msgid ""
-"A good action card for bloating. Assamite decks are rare, and most of them built around breeding. This action makes "
-"good use of the many low capacity Assamites one can have in this context. Even just a few copies already make for a "
-"good bloat."
-msgstr ""
-"Une bonne carte d'action pour régénérer. Les decks Assamite sont rares et la plupart sont construits autour de la "
-"prolifération. Cette action fait bon usage des nombreux Assamites de faible capacité que l'on peut avoir dans ce "
-"contexte. Juste quelques exemplaires produisent déjà une bonne régénération."
-
-#: codex_of_the_damned/templates/best-cards/clans/assamite.html:50
-msgid ""
-"A bleed enhancer with a 4 pool bloat bonus if timely played. Most Assamite decks include one or two of these for the "
-"lunge."
-msgstr ""
-"Une amélioration de morsure avec une régénération de 4 si elle est joué en temps voulu. La plupart des decks Assamite"
-" en incluent un ou deux pour le coup de grâce."
-
-#: codex_of_the_damned/templates/best-cards/clans/assamite.html:57
-#, python-format
-msgid ""
-"An excellent defence against rush actions, but also against %(banishment)s, an all-too-common option in big capacity "
-"vote decks. The cost of 1 pool is fairly low."
-msgstr ""
-"Une excellente défense contre les actions de rush, mais aussi contre %(banishment)s, une option trop courante dans "
-"les decks de vote de grande capacité. Le coût d'un point d'influence est plutôt bas."
-
-#: codex_of_the_damned/templates/best-cards/clans/assamite.html:67
-msgid ""
-"An excellent vote enhancer at a fair cost for any archetype. It is played for additional votes in political decks, "
-"but also as a defensive tool against political actions in other decks."
-msgstr ""
-"Un excellent boost de vote à un prix raisonnable pour n'importe quel archétype. Il est joué pour des votes "
-"supplémentaires dans les decks politiques, mais aussi comme un outil défensif contre les actions politiques dans "
-"d'autres decks."
-
-#: codex_of_the_damned/templates/best-cards/clans/assamite.html:75
-msgid "Another cheap vote enhancer, 2 votes for 1 pool is quite worth it. The contract part of the card is seldom used."
-msgstr ""
-"Un autre boost de vote bon marché, 2 votes pour 1 influence vaut la coût. La partie contrat de la carte est rarement "
-"utilisée."
-
-#: codex_of_the_damned/templates/best-cards/clans/assamite.html:82
-#, python-format
-msgid ""
-"An interesting breeding card: it is a bit slow as the new vampire only comes out after 3 turns but, on the other "
-"hand, the neonate has the three clan disciplines %(qui)s%(obf)s%(cel)s at basic level and three blood, all for the "
-"low cost of 1 pool."
-msgstr ""
-"Une carte de prolifération intéressante : elle est un peu lente car le nouveau vampire ne sort qu'après 3 tours mais,"
-" en revanche, le nouveau-né a les trois disciplines de clan %(qui)s%(obf)s%(cel)s au niveau inférieur et trois points"
-" de sang, le tout pour le faible coût d'un point d'influence."
-
-#: codex_of_the_damned/templates/best-cards/clans/assamite.html:91
-#, python-format
-msgid ""
-"The star of the %(amaravati_politics)s archetype, combined with %(web_of_knives_recruit)s, %(alamut)s and "
-"%(the_black_throne)s, he builds up a strong vote lock. Moreover, his superior %(DOM)s gets him bounce reactions like "
-"%(deflection)s."
-msgstr ""
-"La star de l'archétype %(amaravati_politics)s, combiné avec %(web_of_knives_recruit)s, %(alamut)s et "
-"%(the_black_throne)s, il construit un bon verrou de vote. De plus, %(DOM)s en supérieur lui procure des réactions de "
-"rebond comme %(deflection)s."
-
-#: codex_of_the_damned/templates/best-cards/clans/assamite.html:106
-#, python-format
-msgid ""
-"One of the best Seraph of the game, Djuhah also has good company in his clan as 5 Black Hand Assamite are available "
-"in groups 4 and 5. This led to the Assamite variation of the %(black_hand)s swarm archetype."
-msgstr ""
-"L'un des meilleurs Seraph du jeu, Djuhah est de plus bien accompagné dans son clan puisque 5 Assamite Black Hand sont"
-" disponibles dans les groupes 4 et 5. Cela a conduit à la variante Assamite de l'archétype d'essaim %(black_hand)s."
-
-#: codex_of_the_damned/templates/best-cards/clans/assamite.html:116
-msgid ""
-"An excellent permanent intercept at low cost. Used in all Assamite decks when blocking is an option. Swarm builds "
-"have no use for it though."
-msgstr ""
-"Une excellente interception permanente à faible coût. Utilisée dans tous les decks Assamite lorsque bloquer est une "
-"option. Les decks d'essaim n'en ont cependant pas l'usage."
-
-#: codex_of_the_damned/templates/best-cards/clans/assamite.html:124
-#, python-format
-msgid "A strong bleed action, played in most Assamite decks. The inferior %(qui)s option can also come in handy."
-msgstr ""
-"Une action de morsure puissante, jouée dans la plupart des decks Assamite. L'option %(qui)s inférieur peut également "
-"être utile."
-
-#: codex_of_the_damned/templates/best-cards/clans/assamite.html:131
-msgid ""
-"An excellent reaction, which actually unlocks - not just wake - the vampire. This can be better as the vampire stays "
-"unlocked if he fails to block the action, but being forced to block can be tricky if the goal is to bounce a bleed."
-msgstr ""
-"Une excellente réaction, qui redresse - pas seulement réveille - le vampire. Cela peut être mieux car le vampire "
-"reste redressé s'il ne parvient pas à bloquer l'action, mais être forcé de bloquer peut être délicat si l'objectif "
-"est de faire rebondir une morsure."
-
-#: codex_of_the_damned/templates/best-cards/clans/assamite.html:139
-#, python-format
-msgid ""
-"Worth mentioning as it is the most played %(qui)s combat card, it is still hard to include as excellent range "
-"management is necessary to make it work. %(selective_silence)s is a good option, but two cards and two blood is a "
-"high price to pay for it."
-msgstr ""
-"Mérite d'être mentionnée car c'est la carte de combat %(qui)s la plus jouée, elle est difficile à inclure car une "
-"excellente gestion de la portée est nécessaire pour la faire fonctionner. %(selective_silence)s est une bonne option,"
-" mais deux cartes et deux points de sang sont un prix élevé à payer."
-
 #: codex_of_the_damned/templates/best-cards/clans/baali.html:7
 #, python-format
 msgid ""
@@ -5945,6 +5826,159 @@ msgid ""
 msgstr ""
 "Une excellente carte de politique, à la fois défensive et offensive. Même les decks Baali sans objectif politique "
 "peuvent la jouer juste pour gêner un adversaire politique."
+
+#: codex_of_the_damned/templates/best-cards/clans/banu-haqim.html:7
+#, python-format
+msgid ""
+"<p> The Banu Haqim (previously named <em>Assamite</em>) provide some good clan cards and multiple strategies usually "
+"revolving around %(obf)s for stealth. This clan has four main archetypes: <ul> <li> %(amaravati_politics)s, a "
+"political archetype with %(amaravati)s. </li> <li> The %(death_star)s, an anarch politics archetype. </li> <li> The "
+"%(black_hand)s swarm archetype. </li> <li> %(dimitri_s_big_band)s, a toolbox archetype using %(dmitri_borodin)s and "
+"the %(AUS)s%(CEL)s%(QUI)s disciplines combination. </li> </ul> </p> <p> Note that before the 2021 release of the "
+"%(v5_banu_haqim)s precon, they had %(qui)s as clan discipline instead of %(tha)s. The new vampires and cards released"
+" in this precon offer a whole new different area for deck building, and it's not yet clear what high level archetypes"
+" might emerge of it. </p>"
+msgstr ""
+"<p> Les Bau Haqim (auparavant dénommés Assamites) fournissent de bonnes cartes de clan et de multiples stratégies qui"
+" tournent généralement autour d'%(obf)s pour la discrétion. Ce clan a quatre archétypes principaux: <ul> <li> "
+"%(amaravati_politics)s, un archétype politique avec %(amaravati)s. </li> <li> La %(death_star)s, un archétype "
+"politique anarch. </li> <li> L'archétype d'essaim %(black_hand)s, dont la variante Asssamite est la plus courante. "
+"</li> <li> %(dimitri_s_big_band)s, un archétype toolbox qui utilise %(dmitri_borodin)s et la combinaison de "
+"disciplines %(AUS)s%(CEL)s%(QUI)s. </li> </ul> </p> <p> Notez qu'avant 2021 et la publication du préconstruit "
+"%(v5_banu_haqim)s, ils avaient %(qui)s comme discipline de clan à la place de %(tha)s. Les nouveaux vampires et "
+"cartes publiés dans ce préconstruit offre un champ nouveau à la construction de deck, et il n'est pas encore évident "
+"de déterminer quels archétypes de haut niveau pourraient en émerger. </p>"
+
+#: codex_of_the_damned/templates/best-cards/clans/banu-haqim.html:45
+#, python-format
+msgid ""
+"A great master card for combat-oriented Banu Haqim %(banu_haqim)s decks. It enables cycling combat cards for bleed "
+"enhancement, a great way to make sure that the combat cards, even in high number, do not jam the hand. It also "
+"synergizes well with multi-types cards like %(swallowed_by_the_night)s and %(resist_earths_grasp)s."
+msgstr ""
+"Une excellente carte maître pour les decks Banu Haqim %(banu_haqim)s orientés combat. Elle permet d'utiliser des "
+"cartes de combat pour améliorer la morsure, un excellent moyen de s'assurer que les cartes de combat, même en grand "
+"nombre, ne grippent pas la main. Elle est aussi en bonne synergie avec les cartes multi-types comme "
+"%(swallowed_by_the_night)s et %(resist_earths_grasp)s."
+
+#: codex_of_the_damned/templates/best-cards/clans/banu-haqim.html:56
+#, python-format
+msgid ""
+"A great combat cards and a direct upgrade from %(tha)s %(theft_of_vitae)s. It enables to use the strike multiple "
+"times in the same round, allowing Banu Haqim %(banu_haqim)s to use their %(cel)s fully, with additional strikes from "
+"%(pursuit)s, %(blur)s or %(quickness)s for example."
+msgstr ""
+"Une excellente carte de combat et une amélioration directe de %(tha)s %(theft_of_vitae)s. Elle permet d'utiliser la "
+"frappe plusieurs fois dans le même tour, permettant aux Banu Haqim %(banu_haqim)s d'utiliser pleinement leur %(cel)s,"
+" avec des frappes supplémentaires de %(pursuit)s, %(blur)s ou %(quickness)s par exemple."
+
+#: codex_of_the_damned/templates/best-cards/clans/banu-haqim.html:69
+msgid ""
+"A good action card for bloating. This action makes good use of the many low capacity Banu Haqim one can have in swarm"
+" decks. Even just a few copies already make for a good bloat."
+msgstr ""
+"Une bonne carte d'action pour régénérer. Les decks Banu Haqim sont rares et la plupart sont construits autour de la "
+"prolifération. Cette action fait bon usage des nombreux Assamites de faible capacité que l'on peut avoir dans ce "
+"contexte. Juste quelques exemplaires produisent déjà une bonne régénération."
+
+#: codex_of_the_damned/templates/best-cards/clans/banu-haqim.html:78
+msgid ""
+"A bleed enhancer with a 4 pool bloat bonus if timely played. Most Banu Haqim decks include one or two of these for "
+"the lunge."
+msgstr ""
+"Une amélioration de morsure avec une régénération de 4 si elle est joué en temps voulu. La plupart des decks Banu "
+"Haqim en incluent un ou deux pour le coup de grâce."
+
+#: codex_of_the_damned/templates/best-cards/clans/banu-haqim.html:85
+#, python-format
+msgid ""
+"An excellent defence against rush actions, but also against %(banishment)s, an all-too-common option in big capacity "
+"vote decks. The cost of 1 pool is fairly low."
+msgstr ""
+"Une excellente défense contre les actions de rush, mais aussi contre %(banishment)s, une option trop courante dans "
+"les decks de vote de grande capacité. Le coût d'un point d'influence est plutôt bas."
+
+#: codex_of_the_damned/templates/best-cards/clans/banu-haqim.html:95
+msgid ""
+"An excellent vote enhancer at a fair cost for any archetype. It is played for additional votes in political decks, "
+"but also as a defensive tool against political actions in other decks."
+msgstr ""
+"Un excellent boost de vote à un prix raisonnable pour n'importe quel archétype. Il est joué pour des votes "
+"supplémentaires dans les decks politiques, mais aussi comme un outil défensif contre les actions politiques dans "
+"d'autres decks."
+
+#: codex_of_the_damned/templates/best-cards/clans/banu-haqim.html:103
+msgid "Another cheap vote enhancer, 2 votes for 1 pool is quite worth it. The contract part of the card is seldom used."
+msgstr ""
+"Un autre boost de vote bon marché, 2 votes pour 1 influence vaut la coût. La partie contrat de la carte est rarement "
+"utilisée."
+
+#: codex_of_the_damned/templates/best-cards/clans/banu-haqim.html:110
+#, python-format
+msgid ""
+"An interesting breeding card: it is a bit slow as the new vampire only comes out after 3 turns but, on the other "
+"hand, the neonate has the three clan disciplines %(qui)s%(obf)s%(cel)s at basic level and three blood, all for the "
+"low cost of 1 pool."
+msgstr ""
+"Une carte de prolifération intéressante : elle est un peu lente car le nouveau vampire ne sort qu'après 3 tours mais,"
+" en revanche, le nouveau-né a les trois disciplines de clan %(qui)s%(obf)s%(cel)s au niveau inférieur et trois points"
+" de sang, le tout pour le faible coût d'un point d'influence."
+
+#: codex_of_the_damned/templates/best-cards/clans/banu-haqim.html:119
+#, python-format
+msgid ""
+"The star of the %(amaravati_politics)s archetype, combined with %(web_of_knives_recruit)s, %(alamut)s and "
+"%(the_black_throne)s, he builds up a strong vote lock. Moreover, his superior %(DOM)s gets him bounce reactions like "
+"%(deflection)s."
+msgstr ""
+"La star de l'archétype %(amaravati_politics)s, combiné avec %(web_of_knives_recruit)s, %(alamut)s et "
+"%(the_black_throne)s, il construit un bon verrou de vote. De plus, %(DOM)s en supérieur lui procure des réactions de "
+"rebond comme %(deflection)s."
+
+#: codex_of_the_damned/templates/best-cards/clans/banu-haqim.html:134
+#, python-format
+msgid ""
+"One of the best Seraph of the game, Djuhah also has good company in his clan as 5 Black Hand Banu Haqim are available"
+" in groups 4 and 5. This led to the Banu Haqim variation of the %(black_hand)s swarm archetype."
+msgstr ""
+"L'un des meilleurs Seraph du jeu, Djuhah est de plus bien accompagné dans son clan puisque 5 Banu Haqim Black Hand "
+"sont disponibles dans les groupes 4 et 5. Cela a conduit à la variante Assamite de l'archétype d'essaim "
+"%(black_hand)s."
+
+#: codex_of_the_damned/templates/best-cards/clans/banu-haqim.html:144
+msgid ""
+"An excellent permanent intercept at low cost. Used in all Banu Haqim decks when blocking is an option. Swarm builds "
+"have no use for it though."
+msgstr ""
+"Une excellente interception permanente à faible coût. Utilisée dans tous les decks Banu Haqim lorsque bloquer est une"
+" option. Les decks d'essaim n'en ont cependant pas l'usage."
+
+#: codex_of_the_damned/templates/best-cards/clans/banu-haqim.html:152
+#, python-format
+msgid "A strong bleed action, played in most legacy Banu Haqim decks. The inferior %(qui)s option can also come in handy."
+msgstr ""
+"Une action de morsure puissante, jouée dans la plupart des decks Banu Haqim. L'option %(qui)s inférieur peut "
+"également être utile."
+
+#: codex_of_the_damned/templates/best-cards/clans/banu-haqim.html:159
+msgid ""
+"An excellent reaction, which actually unlocks - not just wake - the vampire. This can be better as the vampire stays "
+"unlocked if he fails to block the action, but being forced to block can be tricky if the goal is to bounce a bleed."
+msgstr ""
+"Une excellente réaction, qui redresse - pas seulement réveille - le vampire. Cela peut être mieux car le vampire "
+"reste redressé s'il ne parvient pas à bloquer l'action, mais être forcé de bloquer peut être délicat si l'objectif "
+"est de faire rebondir une morsure."
+
+#: codex_of_the_damned/templates/best-cards/clans/banu-haqim.html:167
+#, python-format
+msgid ""
+"Worth mentioning as it is the most played %(qui)s combat card, it is still hard to include as excellent range "
+"management is necessary to make it work. %(selective_silence)s is a good option, but two cards and two blood is a "
+"high price to pay for it."
+msgstr ""
+"Mérite d'être mentionnée car c'est la carte de combat %(qui)s la plus jouée, elle est difficile à inclure car une "
+"excellente gestion de la portée est nécessaire pour la faire fonctionner. %(selective_silence)s est une bonne option,"
+" mais deux cartes et deux points de sang sont un prix élevé à payer."
 
 #: codex_of_the_damned/templates/best-cards/clans/brujah.html:8
 #, python-format
@@ -6190,74 +6224,6 @@ msgstr ""
 "Un peu cher avec son coût de 2 points d'influence, ce lieu de discrétion permanente vaut tout de même le coût compte "
 "tenu des archétypes joués avec le clan. %(the_labyrinth)s et %(opium_den)s, moins chers, sont comparativement moins "
 "précieux car leur clan a déjà accès à %(obf)s."
-
-#: codex_of_the_damned/templates/best-cards/clans/followers-of-set.html:10
-#, python-format
-msgid ""
-"The Followers of Set and their unique %(ser)s discipline are devious experts of sin and stealth. They have given "
-"birth to ecclectic decks around politics and mummies but their most successful archetype is the %(bima_dominate)s, "
-"using the %(bima)s ally with %(dom)s."
-msgstr ""
-"Les Disciples de Set et leur discipline exclusive %(ser)s sont des experts sournois du péché et de la discrétion. Ils"
-" ont donné naissance à des jeux éclectiques autour de la politique et des momies, mais leur archétype le plus réussi "
-"est le %(bima_dominate)s, qui utilise l'allié %(bima)s avec %(dom)s."
-
-#: codex_of_the_damned/templates/best-cards/clans/followers-of-set.html:24
-msgid "A nice permanent stealth enhancer at a low cost, a must have for the Followers."
-msgstr "Un bon améliorateur de discrétion permanent à faible coût, incontournable pour les Disciples."
-
-#: codex_of_the_damned/templates/best-cards/clans/followers-of-set.html:30
-msgid ""
-"Pool damage without a bleed: this makes it impervious to bounces and other anti-bleed tools. 2 or 3 copies of the "
-"card to avoid a bounce on a lunge is common."
-msgstr ""
-"Des dégâts d'influence sans morsure : elle est immunisée aux rebonds et autres outils anti-morsure. 2 ou 3 "
-"exemplaires pour éviter un rebond sur un coup de grâce est courant."
-
-#: codex_of_the_damned/templates/best-cards/clans/followers-of-set.html:38
-msgid ""
-"A versatile, if tricky, card. It can even be put on one's own vampires to get two actions in a single turn from time "
-"to time. On an opponent's vampire, he will think twice before getting too low on blood."
-msgstr ""
-"Une carte polyvalente, bien que délicate. Elle peut même être appliqué à ses propres vampires pour obtenir deux "
-"actions en un seul tour de temps en temps. Sur le vampire d'un adversaire, il réfléchira à deux fois avant de perdre "
-"trop de sang."
-
-#: codex_of_the_damned/templates/best-cards/clans/followers-of-set.html:46
-msgid ""
-"This can be a serious blow to a prey if it put into play early enough. Only a few cards can change the control of a "
-"vampire permanently."
-msgstr ""
-"Elle peut être un coup dur pour une proie si elle est mise en jeu suffisamment tôt. Seules quelques cartes peuvent "
-"changer le contrôle d'un vampire de façon permanente."
-
-#: codex_of_the_damned/templates/best-cards/clans/followers-of-set.html:53
-#, python-format
-msgid ""
-"Although costly, this is a very versatile tool — enhancing bleed at %(ser)s or getting another action at %(SER)s are "
-"both excellent."
-msgstr ""
-"Bien que coûteux, il s'agit d'un outil très polyvalent – augmenter une morsure avec %(ser)s ou obtenir une autre "
-"action avec %(SER)s sont tous deux excellents."
-
-#: codex_of_the_damned/templates/best-cards/clans/followers-of-set.html:60
-msgid "A star among the Followers, his ability to get two actions in a single turn is a serious asset."
-msgstr "Star parmi les Disciples, son aptitude à réaliser deux actions en un seul tour est un sérieux atout."
-
-#: codex_of_the_damned/templates/best-cards/clans/followers-of-set.html:67
-msgid ""
-"An excellent action against allies and breed constructs, it can get rid of a minion in a single blow, and give a "
-"minion back."
-msgstr ""
-"Excellente action contre les alliés et les decks d'essaim, elle peut se débarrasser d'un serviteur en un seul coup, "
-"et récupérer un serviteur pour la peine."
-
-#: codex_of_the_damned/templates/best-cards/clans/followers-of-set.html:74
-#, python-format
-msgid "A powerful disciplines combination for just 5 pool. She can even find her place in a mono %(pre)s deck."
-msgstr ""
-"Une puissante combinaison de disciplines pour seulement 5 d'influence. Elle peut même trouver sa place dans un deck "
-"mono %(pre)s."
 
 #: codex_of_the_damned/templates/best-cards/clans/gangrel.html:8
 #, python-format
@@ -7428,6 +7394,85 @@ msgstr ""
 #, python-format
 msgid "A really cheap 2 pool for %(dom)s, she gets included in many crypts."
 msgstr "2 d'influence est vraiment bon marché pour %(dom)s, elle est incluse dans de nombreuses cryptes."
+
+#: codex_of_the_damned/templates/best-cards/clans/ministry.html:10
+#, python-format
+msgid ""
+"The Ministry (previously named <em>Followers of Set</em>) are devious experts of sin and stealth. They have given "
+"birth to ecclectic decks around politics and mummies but their most successful archetype is the %(bima_dominate)s, "
+"using the %(bima)s ally with %(dom)s."
+msgstr ""
+"Les membres du Sacerdoce (auparavant dénommés Séthites) sont des experts sournois du péché et de la discrétion. Ils "
+"ont donné naissance à des jeux éclectiques autour de la politique et des momies, mais leur archétype le plus réussi "
+"est le %(bima_dominate)s, qui utilise l'allié %(bima)s avec %(dom)s."
+
+#: codex_of_the_damned/templates/best-cards/clans/ministry.html:22
+#, python-format
+msgid ""
+"Note that before the 2021 release of the %(v5_ministry)s precon, they had %(ser)s as clan discipline instead of "
+"%(pro)s. The new vampires and cards released in this precon offer a whole new different area for deck building, and "
+"it's not yet clear what high level archetypes might emerge of it."
+msgstr ""
+"Notez qu'avant la sortie en 2021 du préconstruit %(v5_ministry)s, ils avaient %(ser)s comme discipline de clan au "
+"lieu de %(pro)s. Les nouveaux vampires et cartes publiés dans ce préconstruit offrent un tout nouveau champ de "
+"construction de deck, et on ne sait pas encore quels archétypes de haut niveau pourraient en émerger."
+
+#: codex_of_the_damned/templates/best-cards/clans/ministry.html:33
+msgid "A nice permanent stealth enhancer at a low cost, a must have for the Followers."
+msgstr "Un bon améliorateur de discrétion permanent à faible coût, incontournable pour les Disciples."
+
+#: codex_of_the_damned/templates/best-cards/clans/ministry.html:39
+msgid ""
+"Pool damage without a bleed: this makes it impervious to bounces and other anti-bleed tools. 2 or 3 copies of the "
+"card to avoid a bounce on a lunge is common."
+msgstr ""
+"Des dégâts d'influence sans morsure : elle est immunisée aux rebonds et autres outils anti-morsure. 2 ou 3 "
+"exemplaires pour éviter un rebond sur un coup de grâce est courant."
+
+#: codex_of_the_damned/templates/best-cards/clans/ministry.html:47
+msgid ""
+"A versatile, if tricky, card. It can even be put on one's own vampires to get two actions in a single turn from time "
+"to time. On an opponent's vampire, he will think twice before getting too low on blood."
+msgstr ""
+"Une carte polyvalente, bien que délicate. Elle peut même être appliqué à ses propres vampires pour obtenir deux "
+"actions en un seul tour de temps en temps. Sur le vampire d'un adversaire, il réfléchira à deux fois avant de perdre "
+"trop de sang."
+
+#: codex_of_the_damned/templates/best-cards/clans/ministry.html:55
+msgid ""
+"This can be a serious blow to a prey if it put into play early enough. Only a few cards can change the control of a "
+"vampire permanently."
+msgstr ""
+"Elle peut être un coup dur pour une proie si elle est mise en jeu suffisamment tôt. Seules quelques cartes peuvent "
+"changer le contrôle d'un vampire de façon permanente."
+
+#: codex_of_the_damned/templates/best-cards/clans/ministry.html:62
+#, python-format
+msgid ""
+"Although costly, this is a very versatile tool — enhancing bleed at %(ser)s or getting another action at %(SER)s are "
+"both excellent."
+msgstr ""
+"Bien que coûteux, il s'agit d'un outil très polyvalent – augmenter une morsure avec %(ser)s ou obtenir une autre "
+"action avec %(SER)s sont tous deux excellents."
+
+#: codex_of_the_damned/templates/best-cards/clans/ministry.html:69
+msgid "A star among the Followers, his ability to get two actions in a single turn is a serious asset."
+msgstr "Star parmi les Disciples, son aptitude à réaliser deux actions en un seul tour est un sérieux atout."
+
+#: codex_of_the_damned/templates/best-cards/clans/ministry.html:76
+msgid ""
+"An excellent action against allies and breed constructs, it can get rid of a minion in a single blow, and give a "
+"minion back."
+msgstr ""
+"Excellente action contre les alliés et les decks d'essaim, elle peut se débarrasser d'un serviteur en un seul coup, "
+"et récupérer un serviteur pour la peine."
+
+#: codex_of_the_damned/templates/best-cards/clans/ministry.html:83
+#, python-format
+msgid "A powerful disciplines combination for just 5 pool. She can even find her place in a mono %(pre)s deck."
+msgstr ""
+"Une puissante combinaison de disciplines pour seulement 5 d'influence. Elle peut même trouver sa place dans un deck "
+"mono %(pre)s."
 
 #: codex_of_the_damned/templates/best-cards/clans/nosferatu.html:8
 #, python-format
@@ -10560,7 +10605,7 @@ msgstr ""
 
 #: codex_of_the_damned/templates/strategy/archetypes.html:62 codex_of_the_damned/templates/strategy/archetypes.html:178
 #: codex_of_the_damned/templates/strategy/archetypes.html:283 codex_of_the_damned/templates/strategy/archetypes.html:376
-#: codex_of_the_damned/templates/strategy/archetypes.html:466 codex_of_the_damned/templates/strategy/archetypes.html:532
+#: codex_of_the_damned/templates/strategy/archetypes.html:465 codex_of_the_damned/templates/strategy/archetypes.html:531
 msgid "Flavours"
 msgstr "Variétés"
 
@@ -10632,8 +10677,8 @@ msgstr ""
 " : %(the_unnamed)s et %(rachel_madness)s sont construits autour de cette idée."
 
 #: codex_of_the_damned/templates/strategy/archetypes.html:142 codex_of_the_damned/templates/strategy/archetypes.html:231
-#: codex_of_the_damned/templates/strategy/archetypes.html:327 codex_of_the_damned/templates/strategy/archetypes.html:418
-#: codex_of_the_damned/templates/strategy/archetypes.html:496 codex_of_the_damned/templates/strategy/archetypes.html:565
+#: codex_of_the_damned/templates/strategy/archetypes.html:327 codex_of_the_damned/templates/strategy/archetypes.html:417
+#: codex_of_the_damned/templates/strategy/archetypes.html:495 codex_of_the_damned/templates/strategy/archetypes.html:564
 msgid "Highlights"
 msgstr "Principe"
 
@@ -10897,14 +10942,10 @@ msgstr ""
 
 #: codex_of_the_damned/templates/strategy/archetypes.html:392
 #, python-format
-msgid ""
-"A lot of archetypes using allies also fall into this category, like %(khazars_diary)s, %(emerald_legion)s and "
-"%(nephandii)s."
-msgstr ""
-"Beaucoup d'archétypes utilisant des alliés tombent dans cette catégorie, comme %(khazars_diary)s, %(emerald_legion)s "
-"et %(nephandii)s."
+msgid "A lot of archetypes using allies also fall into this category, like %(emerald_legion)s and %(nephandii)s."
+msgstr "Beaucoup d'archétypes utilisant des alliés tombent dans cette catégorie, comme %(emerald_legion)s et %(nephandii)s."
 
-#: codex_of_the_damned/templates/strategy/archetypes.html:402
+#: codex_of_the_damned/templates/strategy/archetypes.html:401
 #, python-format
 msgid ""
 "Ventrue Antitribu %(ventrue_antitribu)s provide excellent toolboxes with the %(anti_ventrue_grinder)s archetype and "
@@ -10913,14 +10954,14 @@ msgstr ""
 "Les Ventrue Antitribu %(ventrue_antitribu)s forment des toolbox de premier ordre avec l'archétype "
 "%(anti_ventrue_grinder)s et ses variantes."
 
-#: codex_of_the_damned/templates/strategy/archetypes.html:410
+#: codex_of_the_damned/templates/strategy/archetypes.html:409
 #, python-format
 msgid "Tremere %(tremere)s have a good disciplines combination for a toolbox too, as proves the %(war_chantry)s archetype."
 msgstr ""
 "Les Tremere %(tremere)s ont une bonne combinaison de disciplines pour les toolbox, comme le prouve l'archétype "
 "%(war_chantry)s."
 
-#: codex_of_the_damned/templates/strategy/archetypes.html:420
+#: codex_of_the_damned/templates/strategy/archetypes.html:419
 msgid ""
 "<strong>Versatility</strong> is obviously the best asset of a toolbox deck. It can handle and exploit any table "
 "configuration. To make the most out of toolbox decks, one has to display excellent table awareness and negotiation "
@@ -10936,11 +10977,11 @@ msgstr ""
 "soit. Le deck décide de la stratégie tout autant que le Mathusalem. Le joueur choisit toujours sur qui utiliser ses "
 "cartes, mais il doit trouver un moyen de les jouer pour que son deck excelle."
 
-#: codex_of_the_damned/templates/strategy/archetypes.html:432
+#: codex_of_the_damned/templates/strategy/archetypes.html:431
 msgid "The Heart of Cheating"
 msgstr "The Heart of Cheating"
 
-#: codex_of_the_damned/templates/strategy/archetypes.html:434
+#: codex_of_the_damned/templates/strategy/archetypes.html:433
 #, python-format
 msgid ""
 "The %(heart_of_nizchetus)s is often included in toolbox builds, as it gives more control to the Methusalah over what "
@@ -10949,7 +10990,7 @@ msgstr ""
 "Le %(heart_of_nizchetus)s est souvent inclus dans les decks toolbox, car il donne un meilleur contrôle au Mathusalem "
 "sur ce que peut être son jeu. Son effet entraîne une telle différence qu'il a été surnommé « The Heart of Cheating »."
 
-#: codex_of_the_damned/templates/strategy/archetypes.html:445
+#: codex_of_the_damned/templates/strategy/archetypes.html:444
 msgid ""
 "Finally, toolbox decks have <strong>strong defence</strong>, although not as strong as <em>wall</em> decks. They tend"
 " to have good intercept options and/or rush capabilities to handle their predator. Having much less offensive options"
@@ -10962,11 +11003,11 @@ msgstr ""
 "compter sur la vitesse seule pour faire mieux que leur prédateur : ils doivent entraver ses actions en utilisant des "
 "blocages, des rebonds ou des combats en fonction de la construction."
 
-#: codex_of_the_damned/templates/strategy/archetypes.html:452
+#: codex_of_the_damned/templates/strategy/archetypes.html:451
 msgid "Rush"
 msgstr "Rush"
 
-#: codex_of_the_damned/templates/strategy/archetypes.html:454
+#: codex_of_the_damned/templates/strategy/archetypes.html:453
 #, python-format
 msgid ""
 "Rush decks use combat as their main weapon. Many disciplines have good combat options and they are also good combat "
@@ -10979,19 +11020,19 @@ msgstr ""
 "amusant, mais n'aide pas nécessairement à faire baisser l'influence de la proie. Pour ce faire, une poignée de cartes"
 " peuvent aider, principalement %(fame)s, %(dragonbound)s et %(tension_in_the_ranks)s."
 
-#: codex_of_the_damned/templates/strategy/archetypes.html:469
+#: codex_of_the_damned/templates/strategy/archetypes.html:468
 #, python-format
 msgid "The %(tupdogs)s archetype is a classic, using a dozen %(tupdog)s along a Tremere Antitribu."
 msgstr "L'archétype %(tupdogs)s est un classique, il utilise des dizaines de %(tupdog)s aux côtés d'un Tremere Antitribu."
 
-#: codex_of_the_damned/templates/strategy/archetypes.html:477
+#: codex_of_the_damned/templates/strategy/archetypes.html:476
 #, python-format
 msgid "Allies with a rush ability are also good, like in the %(war_ghouls)s and %(shambling_hordes)s archetypes."
 msgstr ""
 "Les alliés avec une aptitude de rush sont efficaces aussi, comme dans les archétypes %(war_ghouls)s et "
 "%(shambling_hordes)s."
 
-#: codex_of_the_damned/templates/strategy/archetypes.html:486
+#: codex_of_the_damned/templates/strategy/archetypes.html:485
 #, python-format
 msgid ""
 "Guruhi %(guruhi)s provide a strong rush build too with their %(POT)s%(ANI)s disciplines combination, like in the "
@@ -11000,7 +11041,7 @@ msgstr ""
 "Les Guruhi %(guruhi)s fournissent un rush puissant aussi avec leur combinaison de disciplines %(POT)s%(ANI)s, comme "
 "dans les archétypes %(guruhi_rush)s et %(nananimalism)s."
 
-#: codex_of_the_damned/templates/strategy/archetypes.html:498
+#: codex_of_the_damned/templates/strategy/archetypes.html:497
 msgid ""
 "The ability to take down any minion provide these decks with a <strong>strong defence</strong> against their "
 "predator. Depending on the predator archetype, going against its minions first is a common strategy for a rush deck: "
@@ -11014,11 +11055,11 @@ msgstr ""
 " vite. D'un autre côté, ils ont une <strong>faible offensive</strong> et ont des difficultés à trouver un moyen "
 "d'infliger des dégâts d'influence suffisants à leur proie. C'est un problème clé pour ces archétypes."
 
-#: codex_of_the_damned/templates/strategy/archetypes.html:508
+#: codex_of_the_damned/templates/strategy/archetypes.html:507
 msgid "Finnish Politics"
 msgstr "Politique Finlandaise"
 
-#: codex_of_the_damned/templates/strategy/archetypes.html:510
+#: codex_of_the_damned/templates/strategy/archetypes.html:509
 msgid ""
 "If they do not take down their prey very fast, rush decks have a unique control over the table balance as they can "
 "take down the minions of any Methusalah. Proper table control is essential to the succes of such builds, but it also "
@@ -11029,7 +11070,7 @@ msgstr ""
 "la table est essentiel pour ces decks, mais cela ouvre aussi la voie à une stratégie de négociation unique en son "
 "genre : utiliser la menace d'un combat pour extorquer des concessions de ses voisins."
 
-#: codex_of_the_damned/templates/strategy/archetypes.html:518
+#: codex_of_the_damned/templates/strategy/archetypes.html:517
 msgid ""
 "The finnish players have perfect this negociation strategy to such an extent, it is now known as <em>\"Finnish "
 "Politics\"</em> among seasoned players."
@@ -11037,11 +11078,11 @@ msgstr ""
 "Les joueurs et joueuses finlandais ont perfectionné cette stratégie de négociation à un tel niveau qu'elle est "
 "désormais connue comme la <em>\"Politique Finlandaise\"</em> parmis les joueurs expérimentés."
 
-#: codex_of_the_damned/templates/strategy/archetypes.html:524
+#: codex_of_the_damned/templates/strategy/archetypes.html:523
 msgid "Special"
 msgstr "Spécial"
 
-#: codex_of_the_damned/templates/strategy/archetypes.html:526
+#: codex_of_the_damned/templates/strategy/archetypes.html:525
 msgid ""
 "Some decks do not fit into any of the aforementioned categories. These rare constructs are unique combinations of "
 "cards that proved unexpectedly efficient. The following examples are not exhaustive."
@@ -11050,7 +11091,7 @@ msgstr ""
 "combinaisons de cartes exceptionnelles qui ont démontré leur étonnante efficacité. Les exemples qui suivent ne sont "
 "pas exhautifs."
 
-#: codex_of_the_damned/templates/strategy/archetypes.html:535
+#: codex_of_the_damned/templates/strategy/archetypes.html:534
 #, python-format
 msgid ""
 "Some archetypes focus on stealing the vampires of their opponents, like %(mind_rape)s, %(spirit_marionette)s and "
@@ -11059,7 +11100,7 @@ msgstr ""
 "Certains archétypes tentent de voler les vampires de leurs adversaires, comme %(mind_rape)s, %(spirit_marionette)s et"
 " %(baltimore_purge)s."
 
-#: codex_of_the_damned/templates/strategy/archetypes.html:545
+#: codex_of_the_damned/templates/strategy/archetypes.html:544
 #, python-format
 msgid ""
 "The %(cybelotron)s is an archetype created by <em>Erik Torstensson</em> in 2007 and refined by <em>Ben Peal</em>. It "
@@ -11068,7 +11109,7 @@ msgstr ""
 "Le %(cybelotron)s est un archétype créé par <em>Erik Torstensson</em> en 2007 et amélioré par <em>Ben Peal</em>. Il "
 "utilise une combinaison complexe pour jouer %(call_the_great_beast)s efficacement."
 
-#: codex_of_the_damned/templates/strategy/archetypes.html:555
+#: codex_of_the_damned/templates/strategy/archetypes.html:554
 #, python-format
 msgid ""
 "The %(madness_reversal)s is an archetype created by <em>Orian Gissler</em> in 2009 and refined by <em>Danilo "
@@ -11077,7 +11118,7 @@ msgstr ""
 "%(madness_reversal)s est un archétype créé par <em>Orian Gissler</em> en 2009 et amélioré par <em>Danilo Torrisi</em>"
 " en 2017. Il utilise %(reversal_of_fortunes)s pour jouer deux fois plus que ses adversaires."
 
-#: codex_of_the_damned/templates/strategy/archetypes.html:567
+#: codex_of_the_damned/templates/strategy/archetypes.html:566
 msgid ""
 "Special decks tend to use complicated card combinations to a devastative effect. Their strength is in the "
 "<strong>absolute advantage</strong> their combination provides if all goes well. Their weakness is the frailty of "
@@ -11270,7 +11311,7 @@ msgstr "Prince ou Justicar"
 #: codex_of_the_damned/templates/strategy/combat.html:86 codex_of_the_damned/templates/strategy/combat.html:91
 #: codex_of_the_damned/templates/strategy/combat.html:96 codex_of_the_damned/templates/strategy/combat.html:236
 #: codex_of_the_damned/templates/strategy/combat.html:242 codex_of_the_damned/templates/strategy/combat.html:247
-#: codex_of_the_damned/templates/strategy/combat.html:333 codex_of_the_damned/templates/strategy/deck-building.html:200
+#: codex_of_the_damned/templates/strategy/combat.html:335 codex_of_the_damned/templates/strategy/deck-building.html:200
 #: codex_of_the_damned/templates/strategy/fundamentals.html:56 codex_of_the_damned/templates/strategy/fundamentals.html:61
 #: codex_of_the_damned/templates/strategy/fundamentals.html:76 codex_of_the_damned/templates/strategy/fundamentals.html:89
 #: codex_of_the_damned/templates/strategy/fundamentals.html:165
@@ -11350,7 +11391,7 @@ msgstr ""
 msgid "table balance"
 msgstr "équilibre de la table"
 
-#: codex_of_the_damned/templates/strategy/combat.html:21 codex_of_the_damned/templates/strategy/combat.html:288
+#: codex_of_the_damned/templates/strategy/combat.html:21 codex_of_the_damned/templates/strategy/combat.html:289
 msgid "Rush decks"
 msgstr "decks de rush"
 
@@ -11524,19 +11565,20 @@ msgid ""
 "solutions exist to deal with them. </p> <ul> <li> %(nsa_trio)s is available to everyone but is not an option for "
 "%(rush_decks)s, as their combat may not be the result of a block. </li> <li> Some disciplines have a counter that let"
 " them prevent S:CE or continue the combat after a S:CE: %(pot)s with %(immortal_grapple)s, %(CEL)s with %(psyche)s, "
-"%(AUS)s with %(telepathic_tracking)s, %(THN)s with %(relentless_reaper)s and %(CEL)s%(QUI)s with "
-"%(sanguine_entrapment)s. </li> </ul> <p> Other than that, the only option is to get into enough combats to exhaust "
-"the S:CE on the defence side. </p>"
+"%(AUS)s with %(telepathic_tracking)s, %(THN)s with %(relentless_reaper)s, %(CEL)s%(QUI)s with %(sanguine_entrapment)s"
+" and %(CEL)s%(THA)s with %(hunters_mark)s. </li> </ul> <p> Other than that, the only option is to get into enough "
+"combats to exhaust the S:CE on the defence side. </p>"
 msgstr ""
 "<h3>Comment gérer les Frappe : Fin de combat (S:CE)</h3> <p> Les S:CE sont un vrai problème pour les decks centrés "
 "sur le combat. Quelques solutions existent pour les gérer. </p> <ul> <li> %(nsa_trio)s est disponible pour tous mais "
 "n'est pas une option pour les %(rush_decks)s, puisque leurs combats sont rarement le résultat d'un blocage. </li> "
 "<li> Certaines disciplines disposent de contres qui leur permettent d'empêcher un S:CE ou de continuer le combat "
 "après un S:CE : %(pot)s avec %(immortal_grapple)s, %(CEL)s avec %(psyche)s, %(AUS)s avec %(telepathic_tracking)s, "
-"%(THN)s avec %(relentless_reaper)s et %(CEL)s%(QUI)s avec %(sanguine_entrapment)s. </li> </ul> <p> Sans ça, la seule "
-"option est d'entrer suffisamment souvent en combat pour épuiser les S:CE du côté de la défense. </p>"
+"%(THN)s avec %(relentless_reaper)s, %(CEL)s%(QUI)s avec %(sanguine_entrapment)s et %(CEL)s%(THA)s avec "
+"%(hunters_mark)s. </li> </ul> <p> Sans ça, la seule option est d'entrer suffisamment souvent en combat pour épuiser "
+"les S:CE du côté de la défense. </p>"
 
-#: codex_of_the_damned/templates/strategy/combat.html:317
+#: codex_of_the_damned/templates/strategy/combat.html:319
 #, python-format
 msgid ""
 "<strong>Damage prevention</strong> is another important aspect of combat. It is useful in defence, but also on the "
@@ -11547,12 +11589,12 @@ msgstr ""
 "défensivement, mais aussi offensivement : réduire la perte de sang est toujours bon. %(for)s est la principale "
 "discipline pour la prévention de dégâts et seules quelques cartes de prévention n'en font pas partie :"
 
-#: codex_of_the_damned/templates/strategy/combat.html:325
+#: codex_of_the_damned/templates/strategy/combat.html:327
 #, python-format
 msgid "%(glancing_blow)s prevents only one damage, that makes it a viable option only for saving an ally."
 msgstr "%(glancing_blow)s ne prévient qu'un dégât, ce qui ne le rend viable que pour sauver un allié."
 
-#: codex_of_the_damned/templates/strategy/combat.html:346
+#: codex_of_the_damned/templates/strategy/combat.html:348
 #, python-format
 msgid ""
 "<p> <strong>Dodging</strong> is also a good defensive option, and the simple %(dodge)s is available for everyone. It "
@@ -11568,11 +11610,11 @@ msgstr ""
 "ce sont de bonnes options en défense car elles peuvent constituer une bonne dissuasion contre les decks de combat. "
 "</p>"
 
-#: codex_of_the_damned/templates/strategy/combat.html:364
+#: codex_of_the_damned/templates/strategy/combat.html:366
 msgid "Range Management"
 msgstr "Gestion de la portée"
 
-#: codex_of_the_damned/templates/strategy/combat.html:366
+#: codex_of_the_damned/templates/strategy/combat.html:368
 msgid ""
 "Getting the correct range is fundamental for combat. Most combat module specialize in a given range, either "
 "maintaining <strong>long range</strong> to avoid the basic one damage any vampire can do, or using strong "
@@ -14495,3 +14537,24 @@ msgstr ""
 " de dégâts maximum de 12 points d'influence. Jusqu'à ce que vous y arriviez, continuez à faire 3 à 5 dégâts par tour "
 "et à rebondir les morsures de votre prédateur, en broyant lentement l'influence de votre proie et en lui laissant "
 "croire que 12 points est un coussin confortable. </p>"
+
+#~ msgid "Assamite"
+#~ msgstr ""
+
+#~ msgid "Followers of Set"
+#~ msgstr "Disciples de Seth"
+
+#~ msgid ""
+#~ "The Followers of Set and their unique %(ser)s discipline are"
+#~ " devious experts of sin and stealth. They have given "
+#~ "birth to ecclectic decks around politics and mummies but "
+#~ "their most successful archetype is the %(bima_dominate)s, using "
+#~ "the %(bima)s ally with %(dom)s."
+#~ msgstr ""
+#~ "Les Disciples de Set et leur discipline exclusive %(ser)s "
+#~ "sont des experts sournois du péché et de la discrétion. "
+#~ "Ils ont donné naissance à des jeux éclectiques autour de "
+#~ "la politique et des momies, mais leur archétype le plus "
+#~ "réussi est le %(bima_dominate)s, qui utilise l'allié %(bima)s avec"
+#~ " %(dom)s."
+
