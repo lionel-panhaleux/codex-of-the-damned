@@ -1,7 +1,7 @@
 Changelog
 =========
 
-1.38 (unreleased)
+1.38 (2021-12-27)
 -----------------
 
 - Homepage: add link to alternate TTS plugin
