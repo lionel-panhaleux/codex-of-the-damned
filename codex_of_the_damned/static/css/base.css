@@ -196,10 +196,26 @@ h2 > img,
 h3 > img,
 h4 > img,
 h5 > img,
-h6 > img {
+h6 > img
+{
     max-height: 2em;
     max-width: 2em;
     object-fit: contain;
+    vertical-align: middle;
+}
+h1 > span.krcg-clan,
+h2 > span.krcg-clan,
+h3 > span.krcg-clan,
+h4 > span.krcg-clan,
+h5 > span.krcg-clan,
+h6 > span.krcg-clan, 
+h1 > i,
+h2 > i,
+h3 > i,
+h4 > i,
+h5 > i,
+h6 > i  {
+    font-size: 2em;
     vertical-align: middle;
 }
 h1 > a,

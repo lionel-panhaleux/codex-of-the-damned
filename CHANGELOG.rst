@@ -4,7 +4,7 @@ Changelog
 1.37 (unreleased)
 -----------------
 
-- Nothing changed yet.
+- Display fixes
 
 
 1.36 (2021-12-27)
