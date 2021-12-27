@@ -91,12 +91,12 @@ import re
 
 def pre():
     s = "".join(s[1:-1] for s in clipboard.paste().split("\n"))
-    s = re.sub(r"%\(([^\)]*)\)s", r"§K33P\1§", s)
+    s = re.sub(r"%\(([^\)]*)\)s", r"§K3PX\1§", s)
     clipboard.copy(s)
 
 def post():
     s = clipboard.paste()
-    s = pprint.pformat(re.sub(r"§K33P([^§]*)§", r"%(\1)s", s), width=120)
+    s = pprint.pformat(re.sub(r"§K3PX([^§]*)§", r"%(\1)s", s), width=120)
     s = re.sub(
             r"(^')|('$)",
             '"',
