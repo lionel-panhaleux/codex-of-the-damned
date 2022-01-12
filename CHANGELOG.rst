@@ -4,7 +4,7 @@ Changelog
 1.39 (unreleased)
 -----------------
 
-- Nothing changed yet.
+- Card search: make name completion drop-down clickable again
 
 
 1.38 (2021-12-27)
