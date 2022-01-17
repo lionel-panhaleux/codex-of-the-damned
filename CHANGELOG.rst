@@ -4,7 +4,7 @@ Changelog
 1.41 (unreleased)
 -----------------
 
-- Nothing changed yet.
+- Improve card modal link display
 
 
 1.40 (2022-01-17)
