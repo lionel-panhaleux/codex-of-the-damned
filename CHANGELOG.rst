@@ -1,7 +1,7 @@
 Changelog
 =========
 
-1.40 (unreleased)
+1.40 (2022-01-17)
 -----------------
 
 - Add link to card page in card modal display
