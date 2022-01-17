@@ -1,7 +1,7 @@
 Changelog
 =========
 
-1.39 (unreleased)
+1.39 (2022-01-17)
 -----------------
 
 - Card search: make name completion drop-down clickable again
