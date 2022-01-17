@@ -1,7 +1,7 @@
 Changelog
 =========
 
-1.42 (unreleased)
+1.42 (2022-01-17)
 -----------------
 
 - Fix input width on mobile displays
