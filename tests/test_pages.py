@@ -5,9 +5,6 @@ import requests
 from codex_of_the_damned import navigation
 
 VISITED = set()
-WHITELIST = {
-    "https://www.kickstarter.com/projects/vtes/vampire-the-eternal-struggle-unleashed"
-}
 
 
 class PageParser(html.parser.HTMLParser):
@@ -32,8 +29,6 @@ def test(client, page):
     parser = PageParser()
     parser.feed(response.data.decode(response.charset))
     for url in parser.urls:
-        if url in WHITELIST:
-            continue
         try:
             requests.request(
                 "HEAD", url, timeout=10, headers={"User-Agent": "python"}
@@ -44,7 +39,6 @@ def test(client, page):
                 timeout=10,
                 headers={
                     "User-Agent": "Mozilla/5.0 (compatible; python/3.9)",
-                    "Accept": "text/html",
                 },
             ).raise_for_status()
         VISITED.add(url)
