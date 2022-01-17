@@ -37,7 +37,7 @@ def test(client, page):
             requests.get(
                 url,
                 timeout=10,
-                headers={"User-Agent": "Mozilla/5.0 (compatible; python/3.9"},
+                headers={"User-Agent": "Mozilla/5.0 (compatible; python/3.9)"},
             ).raise_for_status()
         VISITED.add(url)
 
