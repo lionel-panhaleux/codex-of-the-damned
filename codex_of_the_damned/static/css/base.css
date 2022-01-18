@@ -169,18 +169,6 @@ img.krcg-modal-image {
 p.krcg-modal-link {
     text-align: center;
 }
-a#krcg-tag-link {
-    text-decoration: none;
-    background-color: var(--color-surface);
-    padding: 0.5em;
-    border-radius: 0.5em;
-}
-a#krcg-tag-link:hover {
-    text-decoration: none;
-    color: var(--color-text);
-    border: 1px solid var(--color-tip-border);
-    box-shadow: 0 2px 2px rgba(35, 73, 0, 0.2);
-}
 article > img {
     max-width: 100%;
 }
@@ -318,7 +306,6 @@ table {
     border: 1px solid;
     border-spacing: 0;
     border-color: var(--color-tip-border);
-    /* border-radius: 1em; */
 }
 thead {
     background-color: var(--color-surface);
@@ -489,15 +476,13 @@ form input.long-input {
 input[type="checkbox"] {
     margin: 1em 1em 1em 0;
 }
-/* form input.long-input {
-    max-width: 100%;
-} */
 button,
 .hyperlink-button,
 form input[type="button"],
 form input[type="submit"] {
     border-radius: 0.3em;
-    border: 1px solid var(--color-grey-border);
+    border: 1px solid;
+    border-color: var(--color-grey-border);
     background-color: var(--color-surface);
     width: fit-content;
     text-decoration: none;
@@ -509,6 +494,8 @@ button:hover,
 input[type="button"]:hover,
 input[type="submit"]:hover {
     box-shadow: 0 2px 2px rgba(35, 73, 0, 0.2);
+    color: inherit;
+    border-color: var(--color-back-selected);
 }
 .vdb-color {
     background-color: var(--brand-vdb);
