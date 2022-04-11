@@ -1,7 +1,7 @@
 Changelog
 =========
 
-1.45 (unreleased)
+1.45 (2022-04-11)
 -----------------
 
 - AC 2022 promo insert
