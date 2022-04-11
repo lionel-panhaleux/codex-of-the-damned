@@ -4,7 +4,8 @@ Changelog
 1.45 (unreleased)
 -----------------
 
-- Nothing changed yet.
+- AC 2022 promo insert
+- Update VDB domain name (now vdb.im)
 
 
 1.44 (2022-01-18)
