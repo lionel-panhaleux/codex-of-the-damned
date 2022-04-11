@@ -32,7 +32,7 @@ function displayDeck(data, deckname = undefined) {
     if (data.id) {
         document.getElementById("deck-link").setAttribute("href", `https://static.krcg.org/data/twd.htm#${data.id}`)
         if (vdb_button) {
-            vdb_button.setAttribute("href", `https://vdb.smeea.casa/decks?id=${data.id}`)
+            vdb_button.setAttribute("href", `https://vdb.im/decks?id=${data.id}`)
             vdb_button.style.display = "block"
         }
     } else if (data.link) {
