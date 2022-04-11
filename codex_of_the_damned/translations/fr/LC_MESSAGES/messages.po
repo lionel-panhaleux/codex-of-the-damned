@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: codex 0.X\n"
 "Report-Msgid-Bugs-To: lionel.panhaleux+codex@gmail.com\n"
-"POT-Creation-Date: 2021-12-27 13:55+0100\n"
+"POT-Creation-Date: 2022-04-11 10:31+0200\n"
 "PO-Revision-Date: 2020-07-04 08:50+0200\n"
 "Last-Translator: Lionel Panhaleux <lionel.panhaleux+codex@gmail.com>\n"
 "Language: fr\n"
@@ -363,6 +363,14 @@ msgstr "La page que vous cherchez n'existe pas."
 #: codex_of_the_damned/templates/404.html:5
 msgid "Home page"
 msgstr "Page d'accueil"
+
+#: codex_of_the_damned/templates/_layout_promo.html:249
+msgid "Free online tournament – "
+msgstr "Tournoi en ligne gratuit — "
+
+#: codex_of_the_damned/templates/_layout_promo.html:250
+msgid "May 21st & 22nd 2022"
+msgstr "21 et 22 Mai 2022"
 
 #: codex_of_the_damned/templates/_layout_sponsor.html:3
 msgid "Sponsor the Codex"
@@ -2014,7 +2022,7 @@ msgid "Delmar Sittoni's deck"
 msgstr "deck de Delmar Sittoni"
 
 #: codex_of_the_damned/templates/archetypes/tupdogs-nephandus.html:14
-#, python-format
+#, fuzzy, python-format
 msgid ""
 "<h2>Highlights</h2> <p> This is an <em>rush</em> deck using %(tupdogs)s to take down opposing vampires and "
 "%(nephandus)s to bleed and defend. %(antonio_d_erlette)s is the star in a sense, since his ability provides sure "
@@ -2041,7 +2049,7 @@ msgid ""
 "%(ashur_tablets)s inclusion and instead use %(failsafe)s for a bit of additional pool, like in %(filipes_deck)s from "
 "2014. In an environment where the %(ashur_tablets)s module is likely to become a competition, this might be a better "
 "bet. That said, Martin's Weinmayer combination here is considered more stable and powerful overall. </p> <p> Although"
-" this is a different archetype, %(nephandus)s can also be used without the %(tupdogs)s, like in %(Lukasz_deck)s from "
+" this is a different archetype, %(nephandus)s can also be used without the %(tupdogs)s, like in %(lukasz_deck)s from "
 "2013. This is more of a toobox but it has fallen a bit out of fashion since the apparition of %(emerald_legionnaire)s"
 " and the invention of the deck listed here. </p>"
 msgstr ""
@@ -2074,7 +2082,7 @@ msgstr ""
 "%(ashur_tablets)s est susceptible de devenir une compétition, cela pourrait être un meilleur pari. Cela dit, la "
 "combinaison de Martin Weinmayer est considérée comme plus stable et plus puissante dans l'ensemble. </p> <p> Bien "
 "qu'il s'agisse d'un archétype différent, %(nephandus)s peut également être utilisé sans les %(tupdogs)s, comme dans "
-"le %(Lukasz_deck)s de 2013. C'est plus une toolbox mais elle est un peu démodée depuis l'apparition de "
+"le %(lukasz_deck)s de 2013. C'est plus une toolbox mais elle est un peu démodée depuis l'apparition de "
 "%(emerald_legionnaire)s et l'invention du deck listé ici. </p>"
 
 #: codex_of_the_damned/templates/archetypes/tupdogs-nephandus.html:40
