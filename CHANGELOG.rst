@@ -4,8 +4,8 @@ Changelog
 1.46 (unreleased)
 -----------------
 
-- Nothing changed yet.
-
+- Update python version for tests (3.9)
+- Remove AC promo insert
 
 1.45 (2022-04-11)
 -----------------
