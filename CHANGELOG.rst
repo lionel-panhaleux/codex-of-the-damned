@@ -6,6 +6,7 @@ Changelog
 
 - Update python version for tests (3.9)
 - Remove AC promo insert
+- Add sitemap.xml for SEO
 
 1.45 (2022-04-11)
 -----------------

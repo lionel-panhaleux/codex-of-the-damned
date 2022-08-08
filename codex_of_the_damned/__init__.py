@@ -190,16 +190,13 @@ def favicon():
 # code used from https://gist.github.com/Julian-Nash/aa3041b47183176ca9ff81c8382b655a
 @app.route("/sitemap.xml")
 def sitemap():
-    from flask import make_response, request, render_template
-    from urllib.parse import urlparse
-
-    host_components = urlparse(request.host_url)
+    host_components = urllib.parse.urlparse(flask.request.host_url)
     host_base = host_components.scheme + "://" + host_components.netloc
 
     urls = [host_base + p["self"].url for p in navigation.HELPER.values()]
 
-    xml_sitemap = render_template("sitemap.xml", urls=urls, host_base=host_base)
-    response = make_response(xml_sitemap)
+    xml_sitemap = flask.render_template("sitemap.xml", urls=urls, host_base=host_base)
+    response = flask.make_response(xml_sitemap)
     response.headers["Content-Type"] = "application/xml"
 
     return response
