@@ -1,7 +1,7 @@
 Changelog
 =========
 
-1.46 (unreleased)
+1.46 (2022-08-08)
 -----------------
 
 - Update python version for tests (3.9)
