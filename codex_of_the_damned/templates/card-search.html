@@ -1,6 +1,5 @@
 {% extends "layout.html" %}
 {% import "_layout_sponsor.html" as sponsor with context %}
-{% import "_layout_promo.html" as promo with context %}
 {% block scripts %}
 <script src="{{ url_for('static', filename='js/url-state.js') }}"></script>
 <script src="{{ url_for('static', filename='js/complete.js') }}"></script>
@@ -8,7 +7,6 @@
 {% endblock %}
 
 {% block content %}
-{{ promo }}
 <h1>{{ _('Card Search') }}</h1>
 {{ sponsor }}
 <p>
