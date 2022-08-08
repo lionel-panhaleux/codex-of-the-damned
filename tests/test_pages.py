@@ -48,3 +48,9 @@ def test(client, page):
 def test_fr(client, page):
     response = client.get("/fr" + page, follow_redirects=True)
     assert response.status_code == 200
+
+
+def test_sitemap(client):
+    response = client.get("/sitemap.xml", follow_redirects=True)
+    assert response.status_code == 200
+    assert response.content_type == "application/xml"
