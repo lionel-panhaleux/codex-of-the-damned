@@ -4,7 +4,7 @@ Changelog
 1.47 (unreleased)
 -----------------
 
-- Nothing changed yet.
+- Remove AC promo insert from deck search and card search
 
 
 1.46 (2022-08-08)
