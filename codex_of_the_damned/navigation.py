@@ -149,7 +149,7 @@ STRUCTURE = Nav(
                     index=False,
                     children=[
                         Nav("Harbinger Legionnaires"),
-                        Nav("Hidden Royalty"),
+                        Nav("Infernal Royalty"),
                         Nav("Lasombra Nocturn"),
                         Nav("Lutz Vote"),
                         Nav("Malkavian Dementation"),
