@@ -4,7 +4,8 @@ Changelog
 1.48 (unreleased)
 -----------------
 
-- Nothing changed yet.
+- Reworked Infernal Royalty archetype
+- Reworked Malkavian V5 archetype
 
 
 1.47 (2022-08-08)
