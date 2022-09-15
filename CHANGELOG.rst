@@ -1,7 +1,7 @@
 Changelog
 =========
 
-1.48 (unreleased)
+1.48 (2022-09-15)
 -----------------
 
 - Reworked Infernal Royalty archetype
