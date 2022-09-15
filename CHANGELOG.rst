@@ -1,7 +1,7 @@
 Changelog
 =========
 
-1.49 (unreleased)
+1.49 (2022-09-15)
 -----------------
 
 - Malkavian Dominate archetype: fix Cedrick Calhoun reference
