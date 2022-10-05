@@ -4,7 +4,8 @@ Changelog
 1.50 (unreleased)
 -----------------
 
-- Nothing changed yet.
+- New neonate archetype: Aching Beauty
+- New neonate archetype: Giovanni Powerbleed
 
 
 1.49 (2022-09-15)
