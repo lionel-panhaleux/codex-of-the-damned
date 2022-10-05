@@ -1,7 +1,7 @@
 Changelog
 =========
 
-1.50 (unreleased)
+1.50 (2022-10-05)
 -----------------
 
 - New neonate archetype: Aching Beauty
