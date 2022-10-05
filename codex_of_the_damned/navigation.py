@@ -148,6 +148,8 @@ STRUCTURE = Nav(
                     lazy_gettext("Neonate"),
                     index=False,
                     children=[
+                        Nav("Aching Beauty"),
+                        Nav("Giovanni Powerbleed"),
                         Nav("Harbinger Legionnaires"),
                         Nav("Infernal Royalty"),
                         Nav("Lasombra Nocturn"),

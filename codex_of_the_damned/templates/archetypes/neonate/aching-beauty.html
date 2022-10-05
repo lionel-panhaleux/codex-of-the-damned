@@ -1,0 +1,131 @@
+{% extends "archetypes/_layout.html" %}
+{% import "archetypes/_layout-erratum.html" as erratum with context %}
+{% import "archetypes/neonate/aching-beauty.json" as deck_json %}
+
+{% block meta %}
+<meta property="decklist" content='{{ deck_json | tojson }}' />
+{% endblock %}
+
+
+{% block archetype_name %}
+<h1>{{ toreador }} Aching Beauty</h1>
+{% endblock %}
+
+
+{% block archetype %}
+{% trans trimmed
+aching_beauty=card("Aching Beauty"),
+aire_of_elation=card("Aire of Elation"),
+alexandra=card("Alexandra"),
+anne_marie=card("Anne-Marie Bourgeois, Inconnu Recruiter", "Anne-Marie Bourgeois"),
+anneke=card("Anneke"),
+anson=card("Anson"),
+archon_investigation=card("Archon Investigation"),
+change_of_target=card("Change of Target"),
+charismatic_aura=card("Charismatic Aura"),
+crocodiles_tongue=card("Crocodiles Tongue"),
+enchant_kindred=card("Enchant Kindred"),
+forced_march=card("Forced March"),
+freak_drive=card("Freak Drive"),
+judgement_camarilla_segregation=card("Judgment: Camarilla Segregation"),
+leumeah=card("Leumeah"),
+majesty=card("Majesty"),
+mind_numb=card("Mind Numb"),
+minion_tap=card("Minion Tap"),
+papillon=card("Papillon"),
+parity_shift=card("Parity Shift"),
+scalpel_tongue=card("Scalpel Tongue"),
+secure_haven=card("Secure Haven"),
+torrent=card("Torrent"),
+villein=card("Villein"),
+voter_captivation=card("Voter Captivation"),
+bloat=link("/strategy/bloat", _("bloat")),
+metagame=link("/strategy/articles/advanced/the-game-of-the-game", _("metagame")),
+fb_toreador=external("https://www.blackchantry.com/products/current-products/first-blood-toreador/", _("First Blood: Toreador")),
+v5_toreador=external("https://www.blackchantry.com/products/legacy/vampire-the-eternal-struggle-fifth-edition/fifth-edition-toreador/", _("V5 Toreador")),
+nb_toreador=external("https://www.blackchantry.com/products/legacy/vampire-the-eternal-struggle-fifth-edition/new-blood-toreador/", _("New Blood: Toreador")),
+v5_ventrue=external("https://www.blackchantry.com/products/legacy/vampire-the-eternal-struggle-fifth-edition/fifth-edition-ventrue/", _("V5 Ventrue")),
+anniversary=external("https://www.blackchantry.com/products/legacy/preconstructed-decks/product-25th-anniversary/", _("25th Anniversary")),
+nb_ventrue=external("https://www.blackchantry.com/products/legacy/vampire-the-eternal-struggle-fifth-edition/new-blood-ventrue/", _("New Blood: Ventrue")),
+anthology=external("https://www.blackchantry.com/products/legacy/bundles/product-anthology-1/", _("Anthology 1")),
+keepers_of_tradition_2=external("https://www.blackchantry.com/product-keepers-of-tradition-reprint-bundle-2/", _("Keepers of Tradition 2")),
+aching_beauty_deck=external("https://vdb.im/decks?id=2k7ecday2", _("Aching Beauty deck")),
+laszlo_walter_s_deck=external("https://vdb.im/decks?id=2012ecsod", _("László Walter's deck"))
+%}
+<h2>Highlights</h2>
+<p>
+    This is a multi-action <em>vote & bleed</em> deck using {{ aching_beauty }}.
+    The idea is to do multiple actions, baiting the opponents to block,
+    only to have them pay pool for {{ aching_beauty }} and avoid combat with
+    {{ change_of_target }} or {{ majesty }}.
+</p>
+<p>
+    The new Toreador {{ toreador }} have an interesting widespread access to
+    Fortitude {{ for }}, and that let them play unlock modifiers like
+    {{ forced_march }} and {{ freak_drive }}. This is interesting in an
+    {{ aching_beauty }} deck, because it makes the opponents conendrum even more tricky:
+    do they block and pay for {{ aching_beauty }}, maybe for nothing if {{ majesty }}
+    is used to unlock, or do they let it through, letting the action having its effect
+    but, even then, there's a chance for unlock because of these modifiers.
+</p>
+<p>
+    The whole point of the deck is to confuse the opponents as much as possible.
+    Because of {{ aching_beauty }} and its support cards {{ majesty }} and
+    {{ change_of_target }}, a blocked action might be as good as a successful
+    action, and sometimes even better. But as the deck also plays a lot of other
+    modifiers, the goal is to make it near impossible for the opponents to discernate
+    what's worth blocking and what's not.
+</p>
+<p>
+    Low bleeds, if unblocked, can be improved with {{ aire_of_elation }}.
+    An innocuous action like a superior {{ enchant_kindred }} might end up being
+    just free blood because of a subsequent {{ forced_march }}.
+    A seemingly non-passing vote can benefit from modifiers to finally get through.
+</p>
+<p>
+    The cost of playing {{ aching_beauty }} needs to be recouped
+    and the deck includes excellent {{ bloat }} devices: the highest capacity vampire
+    should be influenced first, to play superior {{ enchant_kindred }}.
+    Then, after paying for an {{ aching_beauty }} or two, using {{ parity_shift }}
+    on the prey should be possible to get some pool back. {{ villein }} and
+    {{ voter_captivation }} should also be used to generate pool as much as possible,
+    but one needs to be precise with the amounts there to avoid having too much pool
+    to play {{ parity_shift }}. 
+</p>
+<h2>Tweaks and variants</h2>
+<p>
+    This is a tournament winning decklist, where we just substituted one
+    {{ archon_investigation}} for an additional {{ scalpel_tongue }}. Do not hesitate
+    to switch back if you have the card.
+</p>
+<p>
+    Aching Beauty is a long-time standing archetype in the game. Ferenc Vasadi 
+    won the 2007 EC with an {{ aching_beauty_deck }}. More modern versions tend to
+    favor {{ villein }} over {{ minion_tap }} and the typical AAA vampires
+    {{ alexandra }}, {{ anneke }} and {{ anson }} in crypt like in
+    {{ laszlo_walter_s_deck }}.
+</p>
+<p>
+    The V5 Toreador and their access to Fortitude {{ for }} open a new field
+    for this archetype: their ability to multi-act makes {{ aching_beauty }}
+    more of a threat, since not blocking becomes less attractive.
+    As one can see in the variants, proportions can be altered to include
+    more {{ majesty }} and {{ aching_beauty }}. {{ crocodiles_tongue }} is a
+    common inclusion, but debatable because of the lower capacity of the V5 crypt.
+    Finally, multiple cards can be considered, like {{ papillon }},
+    {{ secure_haven }}, {{ charismatic_aura }} or {{ judgement_camarilla_segregation }}.
+    There is room to adapt to the {{ metagame }}.
+</p>
+<h2>What to buy</h2>
+<p>
+    You will need two {{ fb_toreador }} for the {{ aching_beauty }},
+    both {{ v5_toreador }} and {{ nb_toreador }} for most of the cards, alongside a
+    {{ v5_ventrue }}. Then you will have to ask your local prince for {{ leumeah }}
+    as it is a promo card (or wait for the reprint, or replace her with one of the 
+    Toreador princes). {{ anniversary }} and {{ nb_ventrue }} will provide
+    the {{ forced_march }} and {{ mind_numb }}. You will miss a couple of cards you can
+    trade (the additional {{ forced_march }}), replace or get from
+    {{ anthology }} ({{ anne_marie }}) and {{ keepers_of_tradition_2 }} ({{ torrent }}).
+</p>
+{% endtrans %}
+{% endblock %}

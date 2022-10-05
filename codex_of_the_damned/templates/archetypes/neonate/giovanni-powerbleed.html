@@ -1,0 +1,116 @@
+{% extends "archetypes/_layout.html" %}
+{% import "archetypes/_layout-erratum.html" as erratum with context %}
+{% import "archetypes/neonate/giovanni-powerbleed.json" as deck_json %}
+
+{% block meta %}
+<meta property="decklist" content='{{ deck_json | tojson }}' />
+{% endblock %}
+
+
+{% block archetype_name %}
+<h1>{{ giovanni }} Giovanni Powerbleed</h1>
+{% endblock %}
+
+
+{% block archetype %}
+{% trans trimmed
+acquired_ventrue_assets = card("Acquired Ventrue Assets"),
+anarch_troublemaker = card("Anarch Troublemaker"),
+ashur_tablets = card("Ashur Tablets"),
+bonding = card("Bonding"),
+call_of_the_hungry_dead = card("Call of the Hungry Dead"),
+conditioning = card("Conditioning"),
+deflection = card("Deflection"),
+dreams_of_the_sphinx = card("Dreams of the Sphinx"),
+emerald_legionnaire = card("Emerald Legionnaire"),
+foreshadowing_destruction = card("Foreshadowing Destruction"),
+govern_the_unaligned = card("Govern the Unaligned"),
+jake_washington = card("Jake Washington"),
+le_dinh_tho = card("Le Dinh Tho"),
+marciana = card("Marciana Giovanni, Investigator", "Marciana"),
+misdirection = card("Misdirection"),
+pentex_subversion = card("Pentex™ Subversion"),
+seduction = card("Seduction"),
+spectral_divination = card("Spectral Divination"),
+spiritual_intervention = card("Spiritual Intervention"),
+the_coven = card("The Coven"),
+trochomancy = card("Trochomancy"),
+main_archetype =link("/archetypes/runner-ups/giovanni-powerbleed", _("main archetype")),
+metagame=link("/strategy/articles/advanced/the-game-of-the-game", _("metagame")),
+drive_thru_cards=external("https://www.drivethrucards.com", "DriveThruCards"),
+v5_ventrue=external("https://www.blackchantry.com/products/legacy/vampire-the-eternal-struggle-fifth-edition/fifth-edition-ventrue/", _("V5 Ventrue")),
+v5_malkavian=external("https://www.blackchantry.com/products/legacy/vampire-the-eternal-struggle-fifth-edition/fifth-edition-malkavian/", _("V5 Malkavian")),
+anniversary=external("https://www.blackchantry.com/products/legacy/preconstructed-decks/product-25th-anniversary/", _("25th Anniversary")),
+parliament_of_shadows=external("https://www.blackchantry.com/products/legacy/preconstructed-decks/product-parliament-of-shadows/", _("Parliament of Shadows"))
+%}
+<h2>Highlights</h2>
+<p>
+    This is a <em>powerbleed</em> deck using the {{ dom }}{{ nec }} disciplines.
+    The idea is to use {{ govern_the_unaligned }} at superior to bring 4 midcap vampires
+    out quickly and cheaply, then bleed as hard as possible.
+</p>
+<p>
+    Dominate {{ dom }} provides heavy bleed with {{ govern_the_unaligned }},
+    {{ conditioning }} and {{ foreshadowing_destruction }}. The core idea of this deck
+    is to rely on block denial instead of stealth to make sure the huge bleeds get
+    through. {{ seduction }} is complemented by {{ call_of_the_hungry_dead }}
+    to that effect. {{ bonding }} and {{ spectral_divination }} provide a bit of stealth
+    to reduce the number of potential blockers. A couple of Master cards support
+    the plan: {{ pentex_subversion }} of course, but also {{ misdirection }} and
+    {{ anarch_troublemaker }}.
+</p>
+<p>
+    On the defense side, the deck simply uses {{ deflection }} to avoid bleeds and add
+    them to the offensive stack the prey has to burden with. For combat,
+    simple avoidance with {{ spiritual_intervention }}.
+</p>
+<p>
+    The blood cost is pretty heavy in this deck. Half of the Master module is dedicated
+    to blood regeneration with cards like {{ the_coven }},
+    {{ acquired_ventrue_assets }} and {{ jake_washington }}. On top of that, a few
+    hunts might be welcome if this does not give too much of a block opportunity to the
+    predator.
+</p>
+<p>
+    The deck is very heavy on the prey and pretty straightforward to use.
+    Timing is key here: going at a prey too soon will
+    prevent her to spend pool on influence but also to hurt the next prey's pool.
+    The ideal trajectory is to leave a bit of breathing room to the prey, bleeding
+    sparingly and using a couple of {{ govern_the_unaligned }} at superior, so that
+    she can go forward a bit. Once the time is right and pool has been spent for
+    influence, a few bleeds for 3 or 4 to exhaust the bounces and put pressure then,
+    once the stars are aligned, full forward with bleeds for 6.
+</p>
+<p>
+    Given the slim combat module, the deck is fragile against combat decks.
+    The plan is to avoid them, which can be difficult especially if they have rushes.
+    If they are cross table it might be best to go slow to let their neighbour deal
+    with them first. If they are prey, the best course of action might be to try to find
+    some kind of deal to avoid getting hurt.
+
+</p>
+<h2>Tweaks and variants</h2>
+<p>
+    This heavily inspired by many tournament winning decks, check the
+    {{ main_archetype }} page for more information and variants.
+</p>
+<p>
+    A couple of {{ trochomancy }} can help control recursion-based decks like those
+    using {{ ashur_tablets }} or {{ emerald_legionnaire }}. The proportions can be
+    slightly adjusted to your preferences and to match the {{ metagame }} you expect.
+</p>
+<h2>What to buy</h2>
+<p>
+    All of the Giovanni {{ giovanni }} and {{ nec }} cards you need
+    can be found on {{ drive_thru_cards }} as Print-on-Demand. For the rest, you will just
+    need a {{ v5_ventrue }}, a {{ v5_malkavian }}, a {{ anniversary }} and a
+    {{ parliament_of_shadows }}.
+</p>
+<p>
+    If you have access to more cards and legacy cards,
+    switching {{ marciana }} for {{ le_dinh_tho }} is an
+    improvement. Moreover, adding copies of {{ dreams_of_the_sphinx }}, {{ the_coven }}
+    and {{ jake_washington }} can be good.
+</p>
+{% endtrans %}
+{% endblock %}
