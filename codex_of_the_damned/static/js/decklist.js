@@ -25,6 +25,22 @@ function addCard(section, card_info) {
     elem.appendChild(card)
     section.appendChild(elem)
 }
+function VdbDeckInUrl(data) {
+    let res = "https://vdb.im/decks?"
+    if (data.name) {
+        res += `name=${encodeURIComponent((data.name))}`
+    }
+    res += "#"
+    for (card of data.crypt.cards) {
+        res += `${card.id}=${card.count};`
+    }
+    for (const section of data.library.cards) {
+        for (card of section.cards) {
+            res += `${card.id}=${card.count};`
+        }
+    }
+    return res.slice(0, -1)
+}
 function displayDeck(data, deckname = undefined) {
     removeComments()
     document.getElementById("deck-link").textContent = wrapText(deckname || data.name || "(No Name)", 25)
@@ -42,10 +58,11 @@ function displayDeck(data, deckname = undefined) {
             vdb_button.style.display = "none"
         }
     } else {
+        const link = VdbDeckInUrl(data)
         document.getElementById("deck-link").removeAttribute("href")
         if (vdb_button) {
-            vdb_button.removeAttribute("href")
-            vdb_button.style.display = "none"
+            vdb_button.setAttribute("href", link)
+            vdb_button.style.display = "block"
         }
     }
     header_lines = []
