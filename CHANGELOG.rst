@@ -5,7 +5,7 @@ Changelog
 -----------------
 
 - Add VDB link for non-TWDA decks
-
+- Fix Discord bots links on index page
 
 1.50 (2022-10-05)
 -----------------
