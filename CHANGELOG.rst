@@ -4,7 +4,7 @@ Changelog
 1.52 (unreleased)
 -----------------
 
-- Nothing changed yet.
+- Fix VDB link for non-TWDA decks
 
 
 1.51 (2022-11-14)
