@@ -4,7 +4,7 @@ Changelog
 1.53 (unreleased)
 -----------------
 
-- Nothing changed yet.
+- Update LackeyCCG plugin URL
 
 
 1.52 (2022-11-14)
