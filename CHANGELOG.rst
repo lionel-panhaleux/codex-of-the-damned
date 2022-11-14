@@ -1,7 +1,7 @@
 Changelog
 =========
 
-1.54 (unreleased)
+1.54 (2022-11-14)
 -----------------
 
 - Update Lackey plugin download image to use the right URL
