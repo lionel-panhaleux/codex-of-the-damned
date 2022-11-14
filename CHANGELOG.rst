@@ -1,7 +1,7 @@
 Changelog
 =========
 
-1.51 (unreleased)
+1.51 (2022-11-14)
 -----------------
 
 - Add VDB link for non-TWDA decks
