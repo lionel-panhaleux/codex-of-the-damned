@@ -1,7 +1,7 @@
 Changelog
 =========
 
-1.55 (unreleased)
+1.55 (2022-11-22)
 -----------------
 
 - Fix disciplines and icons display
