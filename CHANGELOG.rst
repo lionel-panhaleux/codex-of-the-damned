@@ -1,7 +1,7 @@
 Changelog
 =========
 
-1.56 (unreleased)
+1.56 (2022-12-05)
 -----------------
 
 - Fix discipline icons in card search
