@@ -51,13 +51,13 @@ conditioning=card("Conditioning")
         {{ card("Lost in Translation") }}
         ({{ _('younger vampires or allies') }}),
     </li>
-    <li><i>d</i> {{ _('with') }} {{ card("Deflection") }},</li>
+    <li> {{ dom }} {{ _('with') }} {{ card("Deflection") }},</li>
     <li>
-        <i>D</i> {{ _('with') }} {{ card("Redirection") }} {{ _('and') }}
+        {{ DOM }} {{ _('with') }} {{ card("Redirection") }} {{ _('and') }}
         {{ card("Murmur of the False Will") }},
     </li>
     <li>
-        <i>A</i> {{ _('with') }}
+        {{ AUS }} {{ _('with') }}
         {{ card("Telepathic Misdirection") }} {{ _('and') }}
         {{ card("My Enemy's Enemy") }}
     </li>
@@ -150,7 +150,7 @@ kine_resources_contested=card("Kine Resources Contested")
         like {{ mel }} {{ madrigal }} or
         {{ tem }} {{ hall_of_hades_court }}, as do some clans
         like the Ventrue {{ img_clan_ventrue }} with {{ ventrue_headquarters }}
-        or the Followers of Set {{ img_clan_followers_of_set }} with {{ ferraille }}.
+        or the Ministry {{ img_clan_followers_of_set }} with {{ ferraille }}.
         {% endtrans %}
     </li>
     <li>
@@ -230,7 +230,7 @@ kine_resources_contested=card("Kine Resources Contested")
         </li>
         <li>
             {{ card("Lily Prelude") }}
-            (<i>m</i>)
+            ({{ mel }})
         </li>
         <li>
             {{ card("Revolutionary Council") }}
@@ -322,11 +322,11 @@ freak_drive=card("Freak Drive")
         <li>{{ card("Forced March") }} {{ cel }}{{ for }}</li>
         <li>
             {{ card("Instantaneous Transformation") }}
-            (<i>CJ</i>)
+            ({{ CEL }}{{ PRO }})
         </li>
         <li>
             {{ card("Truth of a Thousand Lies") }}
-            (<i>S</i>)
+            ({{ SER }})
         </li>
         <li>{{ card("Zephyr") }} {{ CEL }}</li>
         <li>{{ card("Domain of Evernight") }} {{ TEM }}</li>
@@ -466,7 +466,7 @@ img_clan_tremere='<img src="https://static.krcg.org/clan/v5/tremere.svg">'|safe
         </li>
         <li>
             {{ card("Corpse Balloon") }}
-            <i>v</i>
+            {{ vic }}
         </li>
         <li>
             {{ card("Revenant") }} <img src="https://static.krcg.org/clan/tzimisce.svg">
