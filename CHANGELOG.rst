@@ -4,7 +4,8 @@ Changelog
 1.57 (unreleased)
 -----------------
 
-- Nothing changed yet.
+- Fix disciplines icons
+- Fix Neonate Stanislava deck list
 
 
 1.56 (2022-12-05)
