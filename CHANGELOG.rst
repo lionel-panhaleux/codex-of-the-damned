@@ -1,7 +1,7 @@
 Changelog
 =========
 
-1.57 (unreleased)
+1.57 (2023-02-04)
 -----------------
 
 - Fix disciplines icons
