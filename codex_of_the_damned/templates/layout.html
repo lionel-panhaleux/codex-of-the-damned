@@ -46,12 +46,36 @@
             <h1>Codex of the Damned</h1>
         </a>
         <nav role="navigation">
+        {% if section == "online-play" %}
+            {{ link('/online-play', _class="active-section") }}
+        {% else %}
             {{ link('/online-play') }}
+        {% endif %}
+        {% if section == "strategy" %}
+            {{ link('/strategy', _class="active-section") }}
+        {% else %}
             {{ link('/strategy') }}
+        {% endif %}
+        {% if section == "archetypes" %}
+            {{ link('/archetypes', _class="active-section") }}
+        {% else %}
             {{ link('/archetypes') }}
+        {% endif %}
+        {% if section == "best-cards" %}
+            {{ link('/best-cards', _class="active-section") }}
+        {% else %}
             {{ link('/best-cards') }}
+        {% endif %}
+        {% if section == "deck-search" %}
+            {{ link('/deck-search', _class="active-section") }}
+        {% else %}
             {{ link('/deck-search') }}
+        {% endif %}
+        {% if section == "card-search" %}
+            {{ link('/card-search', _class="active-section") }}
+        {% else %}
             {{ link('/card-search') }}
+        {% endif %}
         </nav>
         <nav role="translation">
             {{ translation('en', "🇬🇧") }}

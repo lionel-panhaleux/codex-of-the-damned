@@ -74,119 +74,233 @@
     </li>
 </ul>
 <h2>{{ _('Resources') }}</h2>
-<h3>{{ _('Online tools') }}</h3>
-<ul>
-    <li>Deck builder: <a target="_blank" href="https://amaranth.vtes.co.nz">Amaranth</a></li>
-    <li>Deck builder: <a target="_blank" href="https://vdb.im">VDB</a></li>
-    <li>Deck builder: <a target="_blank" href="https://vtesdecks.com">VTES Decks</a></li>
-    <li>{{ _('Tournament organiser') }}: <a target="_blank" href="http://bcncrisis.com">BCN Crisis</a></li>
-    <li>Cards finder: <a target="_blank" href="https://bloodlibrary.info">Blood Library</a></li>
-    <li>
-        <span class="brand-icon" style="color: #2BA9E9;">&#xf2c6</span>
-        Telegram Bot: <a target="_blank" href="https://t.me/vtes_bot">VTES Bot</a>
-    </li>
-    <li>{{ _('Online play') }}: <a target="_blank" href="https://lackeyccg.com">LackeyCCG</a></li>
-    <li>{{ _('Online play') }}: <a target="_blank" href="https://deckserver.net/jol/">JOL</a></li>
-    <li>{{ _('Tabletop Simulator plugin') }}:
-        <a target="_blank" href="https://steamcommunity.com/sharedfiles/filedetails/?id=2186155897">VTES for Indoor
-            Kids</a>
-    </li>
-    <li>{{ _('Alternate Tabletop Simulator plugins') }}:
-        <a target="_blank" href="https://steamcommunity.com/sharedfiles/filedetails/?id=2588644030">VTES Game Table</a>
-        &
-        <a target="_blank" href="https://steamcommunity.com/sharedfiles/filedetails/?id=2588606919">VTES Deck Loader</a>
-    </li>
-</ul>
-<h3>{{ _('Blogs & videos') }}</h3>
-<ul>
-    <li>
-        <span class="brand-icon" style="color: #EB3223;">&#xf167</span>
-        <a target="_blank" href="https://www.youtube.com/channel/UCB-iyfYeg6uaKSk5LRSEuKA">
-            Black Chantry Productions
-        </a>
-    </li>
-    <li>
-        <span class="brand-icon" style="color: #EB3223;">&#xf167</span>
-        <a target="_blank" href="https://www.youtube.com/channel/UC4bPFxZVXcX2MXrQaphqZVA">
-            Codex of the Damned
-        </a>
-    </li>
-    <li>
-        <span class="brand-icon" style="color: #EB3223;">&#xf167</span>
-        <a target="_blank" href="https://youtu.be/ejysifYS1ZE">
-            {{ _("Team Covenant's Tutorial") }}
-        </a>
-    </li>
-    <li>
-        <span class="brand-icon" style="color: #EB3223;">&#xf167</span>
-        <a target="_blank" href="https://youtu.be/rzyr3rSBiQY">
-            {{ _("VTES on LackeyCCG Tutorial") }}
-        </a>
-    </li>
-    {%if lang == "fr"%}
-    <li>
-        <span class="brand-icon" style="color: #EB3223;">&#xf167</span>
-        <a target=" _blank" href="https://www.youtube.com/watch?v=unDeY9CefJ0">
-            Ludochrono: VTES (Tutoriel FR)
-        </a>
-    </li>
-    <li>Blog: <a target="_blank" href="http://diableriste.com/">Carnet d'un diableriste</a></li>
-    {% endif %}
-    <li>Blog: <a target="_blank" href="https://vtesone.wordpress.com">VTESOne</a></li>
-    <li>Blog: <a target="_blank" href="https://vtesinformationhighway.wordpress.com">Information Highway</a></li>
-    <li>Blog: <a target="_blank" href="https://blog.kgs-cards.com">KGS Cards</a></li>
-    <li>Blog: <a target="_blank" href="https://gamingwithbs.wordpress.com">Gaming with Brett S.</a></li>
-    <li>Blog:
-        <a target="_blank" href="https://bindusara.home.blog">
-            Bindusara's Jyhad Diary ({{ _('interviews archive') }})
-        </a>
-    </li>
-</ul>
-<h3>{{ _('Live streams') }}</h3>
-<ul>
-    <li>
-        <span class="brand-icon" style="color: #9147FF;">&#xf1e8</span>
-        <a target="_blank" href="https://www.twitch.tv/codex_of_the_damned">
-            Codex of the Damned
-        </a>
-    </li>
-    <li>
-        <span class="brand-icon" style="color: #9147FF;">&#xf1e8</span>
-        <a target="_blank" href="https://www.twitch.tv/henrikone">
-            HenrikOne 🇧🇷
-        </a>
-    </li>
-    <li>
-        <span class="brand-icon" style="color: #9147FF;">&#xf1e8</span>
-        <a target="_blank" href="https://www.twitch.tv/self_biased">
-            self-biased
-        </a>
-    </li>
-    <li>
-        <span class="brand-icon" style="color: #9147FF;">&#xf1e8</span>
-        <a target="_blank" href="https://www.twitch.tv/heysteev">
-            HeySteev
-        </a>
-    </li>
-    <li>
-        <span class="brand-icon" style="color: #EB3223;">&#xf167</span>
-        <a target=" _blank" href="https://www.youtube.com/c/VTESandotherstruggles">
-            VTES and other struggles
-        </a>
-    </li>
-</ul>
-<h3>{{ _('Developer tools') }}</h3>
-<ul>
-    <li>Web API: <a target="_blank" href="https://api.krcg.org">KRCG API</a></li>
-    <li>{{ _('Static resources') }}: <a target="_blank" href="https://static.krcg.org">KRCG Static</a></li>
-</ul>
-<h3><span class="brand-icon" style="color: #737DF8;">&#xf392</span> {{ _('Discord bots') }}</h3>
-<ul>
-    <li><a target="_blank" href="https://github.com/lionel-panhaleux/timer">Timer</a></li>
-    <li>{{ _('Cards lookup') }}: <a target="_blank" href="https://github.com/lionel-panhaleux/krcg-bot">KRCG</a></li>
-    <li>{{ _('Tournament management') }}: <a target="_blank"
-            href="https://github.com/lionel-panhaleux/archon-bot">Archon</a></li>
-</ul>
+<div class="column-2">
+    <h3>{{ _('Online tools') }}</h3>
+    <ul>
+        <li>Deck builder: <a target="_blank" href="https://amaranth.vtes.co.nz">Amaranth</a></li>
+        <li>Deck builder: <a target="_blank" href="https://vdb.im">VDB</a></li>
+        <li>Deck builder: <a target="_blank" href="https://vtesdecks.com">VTES Decks</a></li>
+        <li>{{ _('Tournament organiser') }}: <a target="_blank" href="http://bcncrisis.com">BCN Crisis</a></li>
+        <li>Cards finder: <a target="_blank" href="https://bloodlibrary.info">Blood Library</a></li>
+        <li>
+            <span class="brand-icon" style="color: #2BA9E9;">&#xf2c6</span>
+            Telegram Bot: <a target="_blank" href="https://t.me/vtes_bot">VTES Bot</a>
+        </li>
+    </ul>
+    <p>
+        {% trans trimmed
+        online_play_section=link("/online-play", _("Online Play section"))
+        %}
+        For <b>online play</b>, check the {{ online_play_section }}.
+        {% endtrans %}
+    </p>
+</div>
+
+<div class="column-2">
+    <h3>{{ _('Tutorials') }}</h3>
+    <ul>
+        <li>
+            <span class="brand-icon" style="color: #EB3223;">&#xf167</span>
+            <a target="_blank" href="https://youtu.be/ejysifYS1ZE">
+                {{ _("Team Covenant's Tutorial") }}
+            </a>
+        </li>
+        <li>
+            <span class="brand-icon" style="color: #EB3223;">&#xf167</span>
+            <a target="_blank" href="https://youtu.be/jCRWBuIUaE8">
+                {{ _("Jender's Gaming Tutorial") }}
+            </a>
+        </li>
+        <li>
+            <span class="brand-icon" style="color: #EB3223;">&#xf167</span>
+            <a target="_blank" href="https://youtu.be/rzyr3rSBiQY">
+                {{ _("VTES on LackeyCCG Tutorial") }}
+            </a>
+        </li>
+        <li>
+            <span class="brand-icon" style="color: #EB3223;">&#xf167</span>
+            🇫🇷
+            <a target=" _blank" href="https://www.youtube.com/watch?v=unDeY9CefJ0">
+                Ludochrono: VTES Tutoriel
+            </a>
+        </li>
+    </ul>
+</div>
+
+<div class="column-2">
+    <h3>{{ _('Video Channels') }}</h3>
+    <ul>
+        <li>
+            <span class="brand-icon" style="color: #EB3223;">&#xf167</span>
+            <a target="_blank" href="https://www.youtube.com/@blackchantryproductions32">
+                Black Chantry Productions
+            </a>
+        </li>
+        <li>
+            <span class="brand-icon" style="color: #EB3223;">&#xf167</span>
+            <a target="_blank" href="https://www.youtube.com/@codexkrcg4867">
+                Codex of the Damned
+            </a>
+        </li>
+        <li>
+            <span class="brand-icon" style="color: #EB3223;">&#xf167</span>
+            <a target="_blank" href="https://www.youtube.com/@readingbetweenthelyons">
+                Reading Between the Lyons
+            </a>
+        </li>
+        <li>
+            <span class="brand-icon" style="color: #EB3223;">&#xf167</span>
+            <a target="_blank" href="https://www.youtube.com/@heysteev">
+                Hey Steev
+            </a>
+        </li>
+        <li>
+            <span class="brand-icon" style="color: #EB3223;">&#xf167</span>
+            <a target="_blank" href="https://www.youtube.com/@SuakuOZ">
+                SuakuOZ
+            </a>
+        </li>
+        <li>
+            <span class="brand-icon" style="color: #EB3223;">&#xf167</span>
+            <a target="_blank" href="https://www.youtube.com/@VTESandotherstruggles">
+                VTES and other struggles
+            </a>
+        </li>
+        <li>
+            <span class="brand-icon" style="color: #EB3223;">&#xf167</span>
+            <a target="_blank" href="https://www.youtube.com/playlist?list=PLB91p0cowEvi2D96Y1a1PtErc_3vYPrYL">
+                The Dracovin Empire
+            </a>
+        </li>
+        <li>
+            <span class="brand-icon" style="color: #EB3223;">&#xf167</span>
+            <a target="_blank" href="https://www.youtube.com/playlist?list=PLgE5ExTeZqPg5recK6BkAdcko-V91LFCG">
+                Midian Gaming
+            </a>
+        </li>
+        <li>
+            <span class="brand-icon" style="color: #EB3223;">&#xf167</span>
+            🇵🇹 🇧🇷
+            <a target=" _blank" href="https://www.youtube.com/@bloodfacavtes227">
+                Blood Faca
+            </a>
+        </li>
+        <li>
+            <span class="brand-icon" style="color: #EB3223;">&#xf167</span>
+            🇪🇸
+            <a target=" _blank" href="https://www.youtube.com/@bleeddetres6644">
+                Bleed de Tres
+            </a>
+        </li>
+        <li>
+            <span class="brand-icon" style="color: #EB3223;">&#xf167</span>
+            🇪🇸 🇲🇽
+            <a target=" _blank" href="https://www.youtube.com/@VtesMexico">
+                VTES Mexico
+            </a>
+        </li>
+        <li>
+            <span class="brand-icon" style="color: #EB3223;">&#xf167</span>
+            🇪🇸
+            <a target=" _blank" href="https://www.youtube.com/@Belial11">
+                Belial Friki
+            </a>
+        </li>
+        <li>
+            <span class="brand-icon" style="color: #EB3223;">&#xf167</span>
+            🇪🇸
+            <a target=" _blank" href="https://www.youtube.com/@channel10-vtes74">
+                Channel 10
+            </a>
+        </li>
+        <li>
+            <span class="brand-icon" style="color: #EB3223;">&#xf167</span>
+            🇪🇸
+            <a target=" _blank" href="https://www.youtube.com/@causaefectovtes3025">
+                Causa & efecto
+            </a>
+        </li>
+        <li>
+            <span class="brand-icon" style="color: #EB3223;">&#xf167</span>
+            🇪🇸
+            <a target=" _blank" href="https://www.youtube.com/@playvtes">
+                Play VTES
+            </a>
+        </li>
+    </ul>
+</div>
+
+<div class="column-2">
+    <h3>{{ _('Blogs') }}</h3>
+    <ul>
+        <li><a target="_blank" href="https://vtesone.wordpress.com">VTESOne</a></li>
+        <li><a target="_blank" href="https://vtesinformationhighway.wordpress.com">Information Highway</a></li>
+        <li><a target="_blank" href="https://blog.kgs-cards.com">KGS Cards</a></li>
+        <li><a target="_blank" href="https://gamingwithbs.wordpress.com">Gaming with Brett S.</a></li>
+        <li><a target="_blank" href="https://thethessalianscrolls.blogspot.com">The Thessalian Scrolls</a></li>
+        <li>
+            <a target="_blank" href="https://bindusara.home.blog">
+                Bindusara's Jyhad Diary ({{ _('interviews archive') }})
+            </a>
+        </li>
+        <li>🇫🇷 🇨🇦 <a target="_blank" href="http://diableriste.com/">Carnet d'un diableriste</a></li>
+    </ul>
+</div>
+
+<div class="column-2">
+    <h3>{{ _('Live streams') }}</h3>
+    <ul>
+        <li>
+            <span class="brand-icon" style="color: #9147FF;">&#xf1e8</span>
+            <a target="_blank" href="https://www.twitch.tv/codex_of_the_damned">
+                Codex of the Damned
+            </a>
+        </li>
+        <li>
+            <span class="brand-icon" style="color: #9147FF;">&#xf1e8</span>
+            🇵🇹 🇧🇷
+            <a target="_blank" href="https://www.twitch.tv/henrikone">
+                HenrikOne
+            </a>
+        </li>
+        <li>
+            <span class="brand-icon" style="color: #9147FF;">&#xf1e8</span>
+            <a target="_blank" href="https://www.twitch.tv/self_biased">
+                self-biased
+            </a>
+        </li>
+        <li>
+            <span class="brand-icon" style="color: #9147FF;">&#xf1e8</span>
+            <a target="_blank" href="https://www.twitch.tv/heysteev">
+                HeySteev
+            </a>
+        </li>
+        <li>
+            <span class="brand-icon" style="color: #9147FF;">&#xf1e8</span>
+            🇪🇸
+            <a target="_blank" href="https://www.twitch.tv/posconymous">
+                Posconymous
+            </a>
+        </li>
+    </ul>
+</div>
+
+<div class="column-2">
+    <h3>{{ _('Developer tools') }}</h3>
+    <ul>
+        <li>Web API: <a target="_blank" href="https://api.krcg.org">KRCG API</a></li>
+        <li>{{ _('Static resources') }}: <a target="_blank" href="https://static.krcg.org">KRCG Static</a></li>
+    </ul>
+</div>
+
+<div class="column-2">
+    <h3><span class="brand-icon" style="color: #737DF8;">&#xf392</span> {{ _('Discord bots') }}</h3>
+    <ul>
+        <li><a target="_blank" href="https://github.com/lionel-panhaleux/timer">Timer</a></li>
+        <li>{{ _('Cards lookup') }}: <a target="_blank" href="https://github.com/lionel-panhaleux/krcg-bot">KRCG</a></li>
+        <li>{{ _('Tournament management') }}: <a target="_blank" href="https://github.com/lionel-panhaleux/archon-bot">Archon</a></li>
+    </ul>
+</div>
 {% endblock %}
 
 {% block footer %}

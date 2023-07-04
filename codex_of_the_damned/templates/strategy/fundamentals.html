@@ -170,16 +170,11 @@ kine_resources_contested=card("Kine Resources Contested")
     </li>
     <li>
         {{ _('Using an effect to give votes to all members of clan, like') }}
-        {{ card("Legacy of Pander") }}
-        <img src="https://static.krcg.org/clan/pander.svg">,
-        {{ card("The Eldest Are Kholo") }}
-        <img src="https://static.krcg.org/clan/ravnos.svg">,
-        {{ card("Foundation Exhibit") }}
-        <img src="https://static.krcg.org/clan/toreadorantitribu.svg">,
-        {{ card("Conductor") }}
-        <img src="https://static.krcg.org/clan/daughtersofcacophony.svg"> {{ _('or') }}
-        {{ card("Amaravati") }}
-        <img src="https://static.krcg.org/clan/assamite.svg">.
+        {{ card("Legacy of Pander") }} {{ pander }},
+        {{ card("The Eldest Are Kholo") }} {{ ravnos }},
+        {{ card("Foundation Exhibit") }} {{ toreador_antitribu }},
+        {{ card("Conductor") }} {{ daughter_of_cacophony }} {{ _('or') }}
+        {{ card("Amaravati") }} {{ assamite_legacy }}.
         {{ _('This needs to be combined with ways to bring many vampires of that clan into play, using actions like') }}
         {{ card("The Embrace") }} {{ _('or Master cards like') }}
         {{ card("Effective Management") }} {{ _('or') }}
@@ -367,8 +362,7 @@ freak_drive=card("Freak Drive")
 wmrh_talk_radio=card("WMRH Talk Radio"),
 carlton_van_wyk=card("Carlton Van Wyk"),
 ponticulus=card("Ponticulus"),
-harzomatuili=card("Harzomatuili"),
-img_clan_tremere='<img src="https://static.krcg.org/clan/v5/tremere.svg">'|safe
+harzomatuili=card("Harzomatuili")
 %}
 <p>
     The key between offence and defence is the management of stealth and intercept.
@@ -380,9 +374,7 @@ img_clan_tremere='<img src="https://static.krcg.org/clan/v5/tremere.svg">'|safe
     {{ wmrh_talk_radio }}.
 </p>
 <p>
-    {{ carlton_van_wyk }},
-    {{ ponticulus }} {{ img_clan_tremere }} and
-    {{ harzomatuili }} (Cardinal or Regent)
+    {{ carlton_van_wyk }}, {{ ponticulus }} {{ tremere }} and {{ harzomatuili }} (Cardinal or Regent)
     deserve a special mention: they include a permanent intercept bonus plus their combat abilities
     is great and allow them to hinder the opponents all by themselves.
 </p>
@@ -400,26 +392,23 @@ img_clan_tremere='<img src="https://static.krcg.org/clan/v5/tremere.svg">'|safe
         <li>{{ card("Channel 10") }}</li>
         <li>{{ card("London Evening Star, Tabloid Newspaper") }}</li>
         <li>{{ card("The Rumor Mill, Tabloid Newspaper") }}</li>
-        <li> {{ card("Club Zombie") }} ({{ _('expensive') }}) </li>
+        <li> {{ card("Club Zombie") }}</li>
         <li>{{ card("Aranthebes, the Immortal") }}</li>
         <li>
             {{ card("The Anarch Free Press") }}
             ({{ _('Anarch') }})
         </li>
         <li>
-            {{ card("Market Square") }}
-            <img src="https://static.krcg.org/clan/assamite.svg">
+            {{ card("Market Square") }} {{ banu_haqim }}
         </li>
         <li>
-            {{ card("Information Network") }}
-            <img src="https://static.krcg.org/clan/nosferatuantitribu.svg">
+            {{ card("Information Network") }} {{ nosferatu_antitribu }}
         </li>
         <li>
-            {{ card("Ponticulus") }} <img src="https://static.krcg.org/clan/v5/tremere.svg">
+            {{ card("Ponticulus") }} {{ tremere }}
         </li>
         <li>
-            {{ card("Saatet-ta") }}
-            <img src="https://static.krcg.org/clan/followersofset.svg">
+            {{ card("Saatet-ta") }} {{ ministry }}
         </li>
         <li>
             {{ card("The Unmasking") }}
@@ -453,10 +442,10 @@ img_clan_tremere='<img src="https://static.krcg.org/clan/v5/tremere.svg">'|safe
             ({{ _('Small capacity vampires') }})
         </li>
         <li>
-            {{ card("Razor Bat") }} <img src="https://static.krcg.org/clan/gargoyles.svg">
+            {{ card("Razor Bat") }} {{ gargoyle }}
         </li>
         <li>
-            {{ card("Defender of the Haven") }} <img src="https://static.krcg.org/clan/gargoyles.svg">
+            {{ card("Defender of the Haven") }} {{ gargoyle }}
         </li>
         <li>
             {{ card("No Secrets From the Magaji") }}
@@ -467,23 +456,23 @@ img_clan_tremere='<img src="https://static.krcg.org/clan/v5/tremere.svg">'|safe
             {{ vic }}
         </li>
         <li>
-            {{ card("Revenant") }} <img src="https://static.krcg.org/clan/tzimisce.svg">
+            {{ card("Revenant") }} {{ tzimisce }}
         </li>
         <li>
-            {{ card("Sight Beyond Sight") }} <img src="https://static.krcg.org/clan/salubri.svg">
+            {{ card("Sight Beyond Sight") }} {{ salubri }}
         </li>
         <li>
             {{ card("Shaman") }}
             ({{ _('Laibon') }})
         </li>
         <li>
-            {{ card("Kumpania") }} <img src="https://static.krcg.org/clan/ravnos.svg">
+            {{ card("Kumpania") }} {{ ravnos }}
         </li>
         <li>
-            {{ card("Ephor") }} <img src="https://static.krcg.org/clan/v5/ventrue.svg">
+            {{ card("Ephor") }} {{ ventrue }}
         </li>
         <li>
-            {{ card("The Ancestor's Talisman") }} <img src="https://static.krcg.org/clan/assamite.svg">
+            {{ card("The Ancestor's Talisman") }} {{ banu_haqim }}
         </li>
     </ul>
 </div>

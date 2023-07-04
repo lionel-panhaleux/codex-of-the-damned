@@ -104,19 +104,23 @@ BASE_CONTEXT = {
     "ahrimane": flask.Markup('<span class="krcg-clan">B</span>'),
     "akunanse": flask.Markup('<span class="krcg-clan">C</span>'),
     "assamite": flask.Markup('<span class="krcg-clan">n</span>'),
+    "assamite_legacy": flask.Markup('<span class="krcg-clan">D</span>'),
     "baali": flask.Markup('<span class="krcg-clan">E</span>'),
     "banu_haqim": flask.Markup('<span class="krcg-clan">n</span>'),
     "blood_brother": flask.Markup('<span class="krcg-clan">F</span>'),
     "brujah": flask.Markup('<span class="krcg-clan">G</span>'),
     "brujah_antitribu": flask.Markup('<span class="krcg-clan">H</span>'),
     "caitiff": flask.Markup('<span class="krcg-clan">I</span>'),
+    "daughter": flask.Markup('<span class="krcg-clan">J</span>'),
     "daughter_of_cacophony": flask.Markup('<span class="krcg-clan">J</span>'),
     "follower_of_set": flask.Markup('<span class="krcg-clan">r</span>'),
+    "follower_of_set_legacy": flask.Markup('<span class="krcg-clan">K</span>'),
     "gangrel": flask.Markup('<span class="krcg-clan">p</span>'),
     "gangrel_antitribu": flask.Markup('<span class="krcg-clan">M</span>'),
     "gargoyle": flask.Markup('<span class="krcg-clan">N</span>'),
     "giovanni": flask.Markup('<span class="krcg-clan">O</span>'),
     "guruhi": flask.Markup('<span class="krcg-clan">P</span>'),
+    "harbinger": flask.Markup('<span class="krcg-clan">Q</span>'),
     "harbinger_of_skulls": flask.Markup('<span class="krcg-clan">Q</span>'),
     "ishtarri": flask.Markup('<span class="krcg-clan">R</span>'),
     "kiasyd": flask.Markup('<span class="krcg-clan">S</span>'),
@@ -218,8 +222,6 @@ def index(lang_code=None, page=None):
         page = "index.html"
         redirect = True
     if not lang_code or lang_code not in app.config["SUPPORTED_LANGUAGES"].keys():
-        if lang_code:
-            page = lang_code + "/" + page
         lang_code = (
             flask.request.accept_languages.best_match(
                 app.config["SUPPORTED_LANGUAGES"].keys()
@@ -234,7 +236,10 @@ def index(lang_code=None, page=None):
     flask.g.lang_code = lang_code
     context = copy.copy(BASE_CONTEXT)
     context["lang"] = lang_code
-
+    section = page.split("/", 1)[0]
+    section = section.split(".", 1)[0]
+    if section != page:
+        context["section"] = section
     # use card image as og_image for card-search
     if "card-search" in page:
         card = flask.request.args.get("card")
@@ -263,7 +268,9 @@ def _i18n_url(page, _anchor=None, locale=None, **params):
     return url
 
 
-def _link(page, name=None, _anchor=None, _class=None, locale=None, **params):
+def _link(
+    page, name=None, _anchor=None, _class=None, _prefix=None, locale=None, **params
+):
     if not page or not page.url:
         return ""
     name = name or page.name
@@ -272,6 +279,8 @@ def _link(page, name=None, _anchor=None, _class=None, locale=None, **params):
         _class = f"class={_class} "
     else:
         _class = ""
+    if _prefix:
+        name = f"{BASE_CONTEXT[_prefix]} &nbsp {name}"
     return flask.Markup(f'<a {_class}href="{url}">{name}</a>')
 
 

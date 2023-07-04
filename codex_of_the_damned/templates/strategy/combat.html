@@ -160,7 +160,7 @@ target_vitals=card("Target Vitals")
             {% trans trimmed
             weighted_walking_stick=card("Weighted Walking Stick")
             %}
-            {{ weighted_walking_stick }}:
+            <b>{{ weighted_walking_stick }}:</b>
             A weapon that can be wielded without losing an action to equip it.
             It provides a total of three additional damages at no cost, an excellent ratio.
             {% endtrans %}
@@ -170,7 +170,7 @@ target_vitals=card("Target Vitals")
             magnum=card(".44 Magnum"),
             concealed_weapon=card("Concealed Weapon")
             %}
-            {{ magnum }}:
+            <b>{{ magnum }}:</b>
             An additional damage each strike, together with a manoeuver
             to keep the range long an avoid damage.
             This is also the best weapon {{ concealed_weapon }}
@@ -182,7 +182,7 @@ target_vitals=card("Target Vitals")
             {% trans trimmed
             ivory_bow=card("Ivory Bow")
             %}
-            {{ ivory_bow }}: Although unique, 1 pool for an aggravated ranged damage
+            <b>{{ ivory_bow }}:</b> Although unique, 1 pool for an aggravated ranged damage
             each strike is a bargain.
             {% endtrans %}
         </li>
@@ -190,7 +190,7 @@ target_vitals=card("Target Vitals")
             {% trans trimmed
             sniper_rifle=card("Sniper Rifle")
             %}
-            {{ sniper_rifle }}:
+            <b>{{ sniper_rifle }}:</b>
             Although only useful when blocking, its ability to set the range
             is an excellent option to avoid damage.
             {% endtrans %}
@@ -201,7 +201,7 @@ target_vitals=card("Target Vitals")
             magnum=card(".44 Magnum"),
             alastor=card("Alastor")
             %}
-            {{ assault_rifle }}:
+            <b>{{ assault_rifle }}:</b>
             A stronger version of the {{ magnum }}.
             The 5 pool cost is prohibitive, but if it can be reduced
             by bringing it in game using {{ alastor }},
@@ -212,7 +212,25 @@ target_vitals=card("Target Vitals")
             {% trans trimmed
             blade_of_bellona=card("Blade of Bellona")
             %}
-            {{ blade_of_bellona }}:
+            <b>{{ blade_of_bellona }}:</b>
+            An additional damage and optional manoeuver at no cost, a bargain for
+            Salubri antitribu {{ salubri_antitribu }}.
+            {% endtrans %}
+        </li>
+        <li>
+            {% trans trimmed
+            ak_47=card("AK 47")
+            %}
+            <b>{{ ak_47 }}:</b>
+            A more brutal version of the {{ assault_rifle }}. The latter is often preferred
+
+            {% endtrans %}
+        </li>
+        <li>
+            {% trans trimmed
+            blade_of_bellona=card("Blade of Bellona")
+            %}
+            <b>{{ blade_of_bellona }}:</b>
             An additional damage and optional manoeuver at no cost, a bargain for
             Salubri antitribu {{ salubri_antitribu }}.
             {% endtrans %}

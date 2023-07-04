@@ -1,0 +1,723 @@
+{% extends "strategy/articles/_layout.html" %}
+
+{% block content %}
+<h1>
+    {{ _('Guide for Magic: The Gathering players') }}<br />
+</h1>
+<p>
+    {% trans trimmed
+    commander_format=external("https://magic.wizards.com/en/formats/commander", _("commander format"))
+    %}
+    Some MTG players, especially those who favor the {{ commander_format }},
+    make the switch to VTES. They broadly consider VTES to be a perfected version of what
+    commander attempts to be: a fun multiplayer experience, laced with a lot of interactions
+    and negociations between them. Considering both games have the same creator
+    (Richard C. Garfield), there are also a lot of similarities: that makes VTES an easy
+    candidate for MTG players. But there are also a number of differences and these end up
+    leading to unexpect misconceptions that are hard to overcome for us MTG players.
+    {% endtrans %}
+</p>
+<img src="{{ url_for('static', filename='img/mtg-vtes.webp') }}" alt="MTG-VTES">
+<h2 id="life-is-mana">{{ _('Life is mana') }}</h2>
+<p>
+    {% trans trimmed
+    beads_economy=link("/strategy/articles/basic/blood-pool-and-grinding-beads", _("beads economy"))
+    %}
+    First thing, in VTES you life (pool) is also what you use to summon (influence)
+    your vampires. So, in a sense everyone plays black. But, more simply put, even if
+    you don't have to bother with lands, you have to have a real strategy about the
+    {{ beads_economy }} here: how much will you invest in vampires and how much to keep for safety?
+    It's obiously always better to invest more (more vampires, more actions, more power)
+    but ideally you want to be just shy of getting ousted by your predator.
+    {% endtrans %}
+</p>
+<p>
+    {% trans trimmed
+    the_lunge=link("/strategy/articles/basic/guide-for-mtg-players", _("the lunge"), _anchor="the-lunge")
+    %}
+    A large part of the game strategy actually revolves around that.
+    If you're able to figure out how much you can be hurt by the rest of the table,
+    you know how much you must keep in defense. And symmetrically, if your predator
+    can somehow mess with your assessment and push you to underestimate them, they will have
+    an easy grab for a Victory Point. This is what VTES players refer to as {{ the_lunge }}.
+    Estimating precisely how much your predator can lunge for
+    (the number of pool damage they can deliver) is key, as is obscuring this information
+    on the predator's end.
+    {% endtrans %}
+</p>
+
+<h2 id="cards-replacement">{{ _('Cards replacement') }}</h2>
+<p>
+    {% trans trimmed %}
+    This is really the main difference: in MTG you get one new card per turn.
+    Card management is a thing: <b>card advantage</b> is a core strategical concept.
+    In VTES, you replace every card you play. There's not card advantage in the sense
+    MTG players know of. So, what does that change?
+    {% endtrans %}
+</p>
+
+<h3 id="play-your-cards">{{ _('Play your cards') }}</h3>
+<p>
+    {% trans trimmed %}
+    Well, the first thing you will have to relearn is to play and discard your cards. As an MTG player, you will have an
+    unreasonable tendency to stick to your cards and not want to play them until the perfect moment. You need to unlearn
+    that. In VTES, <b>playing a card costs nothing</b>. If the effect it has even slightly advantages you, that's a net
+    gain. You need to play all the cards you can all the time. At the end of a game, the more cards you played, the more
+    chances you have to win: more cards played means more effects, which means more advantages, and that should put you in
+    a dominant position.
+    {% endtrans %}
+</p>
+
+<div class="insert tip">
+    <h3 id="discard-every-turn">{{ _('Discard every turn') }}</h3>
+    <p>
+        {% trans trimmed percent="%" %}
+        It's the same thing with dicarding at the end of a turn: not an easy thing at first but in fact, you need to
+        discard often because, again, <b>it costs nothing</b>. If discarding a card has more chances to improve your
+        hand that it has chances making it worse, you should discard. And 80{{ percent }} of the time, given you choose what you
+        discard, the chance for improvement is big enough that you should.
+        {% endtrans %}
+    </p>
+</div>
+
+<h3 id="keep-the-right-cards">{{ _('Keep the right cards') }}</h3>
+<p>
+    {% trans trimmed percent="%" %}
+    The other side of the medal is trickier. Once you've learn to play
+    all the cards all the time and discard at every chance, you will need to relearn
+    when not to do it.
+    It largely depends on the deck and how it's built but some cards are supposed to be used
+    liberally, others are supposed to be kept or discarded depending on the table situation.
+    When not to discard is almost as tricky. You need to know your deck and assess the table
+    well enough to notice when your chances for hand improvement are poor: you have a very
+    decent hand and discarding anything in it might do more harm than good. This happens
+    maybe 20{{ percent }} of the time.
+    {% endtrans %}
+</p>
+<div class="insert game">
+    <h3>{{ _('Example') }}</h3>
+    <p>
+        {% trans trimmed
+        anniversary=external(
+        "https://www.blackchantry.com/products/legacy/preconstructed-decks/product-25th-anniversary/",
+        _("25th Anniversary")
+        ),
+        ingrid=card("Ingrid Rossler", "Ingrid"),
+        stanislava=card("Stanislava"),
+        zillahs_valley=card("Zillah's Valley"),
+        govern_the_unaligned=card("Govern the Unaligned")
+        %}
+        Say you're playing the {{ anniversary }}, you got {{ ingrid }} and {{ stanislava }}
+        in crypt, and after a lucky {{ zillahs_valley }} you play immediately, you draw
+        a {{ govern_the_unaligned }} and get this hand at then end of the turn.
+        {% endtrans %}
+    </p>
+    <div class="game-diagram">
+        <div class="game-diagram-player">
+            <div class="game-card">{{ card_image("Form of Mist") }}</div>
+            <div class="game-card">{{ card_image("Kine Resources Contested") }}</div>
+            <div class="game-card">{{ card_image("Parity Shift") }}</div>
+            <div class="game-card">{{ card_image("Govern the Unaligned") }}</div>
+            <div class="game-card">{{ card_image("On the Qui Vive") }}</div>
+            <div class="game-card">{{ card_image("Forced March") }}</div>
+            <div class="game-card">{{ card_image("Govern the Unaligned") }}</div>
+        </div>
+    </div>
+    <p>
+        {% trans trimmed
+        govern=card("Govern the Unaligned", "Govern"),
+        forced_march=card("Forced March"),
+        stanislava=card("Stanislava"),
+        zillah=card("Zillah's Valley", "Zillah"),
+        information_highway=card("Information Highway"),
+        dreams=card("Dreams of the Sphinx", "Dreams"),
+        villein=card("Villein")
+        %}
+        First, it's a good hand: you got a {{ govern }} and the stealth to make it through, and even a
+        {{ forced_march }} to unlock and follow up with another action. Once {{ stanislava }} gets out, her first turn
+        should go well. Now, what to discard? It is not a perfect hand and, even with the early {{ zillah }}, you got
+        two discards until {{ stanislava }} acts. Not discarding here would be a mistake, because there are many
+        possible improvement: any master would be a card to play next turn, where you still have no vampire. If you get
+        {{ information_highway }}, another {{ zillah }}, or a {{dreams}}, it's a treat. More importantly, you need a
+        {{ villein }} early, and you don't have it yet, so you should cycle.
+        {% endtrans %}
+    </p>
+    <p>
+        {% trans trimmed
+        govern=card("Govern the Unaligned", "Govern"),
+        form_of_mist=card("Form of Mist"),
+        parity_shift=card("Parity Shift"),
+        kine_resources=card("Kine Resources Contested", "Kine Resources"),
+        on_the_qui_vive=card("On the Qui Vive"),
+        stanislava=card("Stanislava"),
+        ingrid=card("Ingrid Rossler", "Ingrid"),
+        villein=card("Villein"),
+        deflection=card("Deflection")
+        %}
+        So, what to discard? The second {{ govern }} is a keeper: being able to play two {{ govern }} at superior in the
+        first two turns is ideal. The stealth should be kept to secure those actions, and {{ form_of_mist }} can also be
+        used to end a dangerous combat if someone rushes you just after you get out.
+        So it has to be {{ parity_shift }}, {{ kine_resources }} or {{ on_the_qui_vive }}. {{ stanislava }} won't be
+        able to play {{ parity_shift }} so you might think that's the one, but that would likely be a mistake: it
+        will not be used immediately, but once {{ ingrid }} gets out, she should go for it immediately to get some pool
+        back, especially if you did not draw a {{ villein }} by then. {{ on_the_qui_vive }} then? It is too precious:
+        the deck does not run a lot of wakes and later on and combined with a {{ deflection }}, it will save you pool
+        and maybe even cost some to your prey.
+        {% endtrans %}
+    </p>
+    <p>
+        {% trans trimmed
+        kine_resources=card("Kine Resources Contested", "Kine Resources"),
+        stanislava=card("Stanislava"),
+        forced_march=card("Forced March")
+        %}
+        The conclusion is inevitable: {{ kine_resources }} has to go. {{ stanislava }} can bleed as a second action, or
+        just play it slow and keep {{ forced_march }} for later, there's no urgency this early in the game to deliver a
+        3 damage vote to your prey.
+        {% endtrans %}
+    </p>
+</div>
+
+
+<h2 id="card-pool-and-cards-limit">{{ _('Card pool and cards limit') }}</h2>
+<p>
+    {% trans trimmed %}
+    VTES is a smaller card pool than MTG. It holds 3900 cards and, sure, MTG standard (∼1500) has less, but it is
+    renewed every year. Modern holds four time this amount (16K), not mentioning the popular Commander format (24K).
+    But there is <b>no expansion block</b> in VTES, and <b>no limit in the number of copies</b> of a card you can put in a deck.
+    This is a dramatic difference. It means some very powerful cards in the game can (and are) simply used in 10 or even
+    20 copies in some decks.
+    {% endtrans %}
+</p>
+<p>
+    {% trans trimmed %}
+    So you don't have a lot of similar cards with very close effects to just combine together for stability and, since
+    there are no block nor cards limit, design teams learned that just editing "very close" cards in the end means that
+    one is better than the other and makes it obsolete. When designing similar effects on cards, they need to figure out
+    just enough of a difference to make both cards relevant in different situations.
+    {% endtrans %}
+</p>
+<div class="illustration">
+    <div class="column-2-always">
+        {{ card_image("Chainsaw", false) }}
+    </div>
+    <div class="column-2-always">
+        {{ card_image("Sawed-Off Shotgun", false) }}
+    </div>
+    <p>
+        {% trans trimmed
+        gas_powered_chainsaw=card("Gas-Powered Chainsaw")
+        %}
+        Chainsaw was never reprinted because Sawed-Off Shotgun is just a straight-off stronger
+        version of it. {{ gas_powered_chainsaw }} was printed instead later on.
+        {% endtrans %}
+    </p>
+</div>
+<p>
+    {% trans trimmed
+    metagame=link("/strategy/articles/advanced/the-game-of-the-game", _("metagame"))
+    %}
+    At first, you'll need to learn about more cards that you would need to discover when drafting or playing Standard.
+    But once you're there, these don't change much expansion after expansion. Any new good card can change
+    the {{ metagame }} and the decks dramatically, since you can include it in any number of copies.
+    That's an interesting journey once you're past the initial discovery phase.
+    {% endtrans %}
+</p>
+<p>
+    {% trans trimmed
+    percent="%",
+    best_cards_section=link("/best-cards", _("Best Cards section"))
+    %}
+    Luckily though, you don't need to get to know all 4000 VTES cards. You can check the {{ best_cards_section }} to
+    learn about the <b>500-600 most played cards</b> in the game. Roughly knowing this third-of-a-block of Standard will
+    cover 80{{ percent }} of the cards you're likely to see on any given table.
+    {% endtrans %}
+</p>
+
+<div class="insert tip">
+    <h3 id="60-or-90-cards-deck">{{ _('60 or 90 cards deck?') }}</h3>
+    <p>
+        {% trans trimmed %}
+        The lack of cards limit also makes thinning out a deck a different question. Because of the limit of 4 cards
+        in MTG, the smaller your deck, the more stable your draw: you should make your deck as small as possible.
+        In VTES, since there is no card limit, you can have the same stability in a 60 or a 90 cards deck.
+        If you play 10 Govern the Unaligned in a 60 cards deck, playing 15 in a 90 cards deck gives you the same draw
+        chance (with a tad more variance, yes, for you statisticians out there, but you get my point).
+        {% endtrans %}
+    </p>
+    <p>
+        {% trans trimmed
+        deck_building_section=link("/strategy/deck-building", _("Deck Building section"))
+        %}
+        So yes, <b>90 cards decks are a thing</b>. As are 60 cards and anything in between.
+        The size of a deck has more to do with the expected card flow intensity than anything else.
+        Check the {{ deck_building_section }} if you want to dive a bit deeper in this topic.
+        {% endtrans %}
+    </p>
+</div>
+
+<h2 id="your-prey-is-on-the-left">{{ _('Your prey is on the left') }}</h2>
+<p>
+    {% trans trimmed %}
+    You will hear this saying a lot in your first few games. And it's not the most natural thing when you come from
+    MTG at first. All players on the table are your opponents and, in the end, only one will win, but <em>your</em> prey
+    is on your left. And sure, it's obvious: 6 pool is always good to take and Victory Points are how you win. So of
+    course ousting your prey is always good. Anything that hurts your prey is a good thing. Remembering it is vital:
+    you're not there to be just or equalize the chances around the table, you're here to oust your prey.
+    {% endtrans %}
+</p>
+<img src="{{ url_for('static', filename='img/prey-left.webp') }}" alt="Prey is on your left">
+<p>
+    {% trans trimmed %}
+    Defending is important too, of course, but because life is mana, the more the game goes, the less pool people have.
+    There is a natural attrition mechanism at play here: minions cost pool, their cards cost blood, combat costs blood,
+    and, ultimately, blood is pool.
+    Surviving is important, but surviving while ousting your preys and getting pool for it is how you win.
+    {% endtrans %}
+</p>
+
+<h2 id="the-lunge">{{ _('The lunge') }}</h2>
+
+<p>
+    {% trans trimmed %}
+    The lunge is the first tactic one needs to learn as an MTG player.
+    Some MTG tactics have to do with tempo, but in a very different way, since it's more
+    about card tempo.
+    {% endtrans %}
+</p>
+<p>
+    {% trans trimmed %}
+    The lunge in VTES is all about "damage tempo". You want to keep your most damaging effects in hand for the
+    exact right moment when they will bring your prey to zero. Consider you're playing a stealth bleed deck
+    (one of the simplest archetype to go with): a beginner MTG player will often just deliver whatever they draw and go
+    forward with it full power, trusting the deck to bring as much damage as fast as possible, while an experienced
+    player will make sure the damage is progressively higher and the finishing move is overwhelming.
+    {% endtrans %}
+</p>
+<div class="insert game">
+    <h3>{{ _('Example') }}</h3>
+    <h4>No lunge: 6-2-4-3-3</h4>
+    <div class="game-diagram">
+        <div class="game-diagram-player">
+            <div class="game-card unlocked stacked">
+                <div class="attached-2">{{ card_image("Conditioning") }}</div>
+                {{ card_image("Govern the Unaligned") }}
+            </div>
+            <div class="game-card">{{ card_image("Bonding") }}</div>
+            <div class="game-card unlocked stacked">
+                <div class="attached-2">{{ card_image("Bonding") }}</div>
+                {{ card_image("Govern the Unaligned") }}
+            </div>
+            <div class="game-card">{{ card_image("Govern the Unaligned") }}</div>
+            <div class="game-card">{{ card_image("Govern the Unaligned") }}</div>
+        </div>
+    </div>
+    <p>
+        {% trans trimmed
+        conditioning=card("Conditioning")
+        %}
+        This first sequence is clumsy. It strikes very hard at first but then struggles to deliver damage later on.
+        Keeping the initial {{ conditioning }} in hand would have been the right move here.
+        If the two last actions are in a second turn, this sequence leaves the opponent at 6 pool after he just took
+        12 pool of damage.
+        {% endtrans %}
+    </p>
+    <h4>Lunge: 3-2-3-4-6</h4>
+    <div class="game-diagram">
+        <div class="game-diagram-player">
+            <div class="game-card">{{ card_image("Govern the Unaligned") }}</div>
+            <div class="game-card">{{ card_image("Bonding") }}</div>
+            <div class="game-card">{{ card_image("Govern the Unaligned") }}</div>
+            <div class="game-card unlocked stacked">
+                <div class="attached-2">{{ card_image("Bonding") }}</div>
+                {{ card_image("Govern the Unaligned") }}
+            </div>
+            <div class="game-card unlocked stacked">
+                <div class="attached-2">{{ card_image("Conditioning") }}</div>
+                {{ card_image("Govern the Unaligned") }}
+            </div>
+        </div>
+    </div>
+    <p>
+        {% trans trimmed %}
+        This is a proper lunge. The last turn delivers superior damage suddenly.
+        Again, if the two last actions are in a second turn, this sequence leaves the opponent at
+        10 after having delivered 8: it is harder to asses how fast the oust can happen.
+        Note players got access to the same cards, they just played them in a different order.
+        {% endtrans %}
+    </p>
+</div>
+<p>
+    {% trans trimmed %}
+    This is an essential tactic in the game: if you deliver too much damage too soon without ousting your prey, you're
+    making the game harder for you: your prey will invest less pool and will take a more defensive stance, but also
+    the rest of the table will mark you as more of a risk and hinder your efforts.
+    {% endtrans %}
+</p>
+
+<p>
+    {% trans trimmed %}
+    More importantly, putting your prey low in pool while failing to oust them is really a
+    <b>signal for your predator</b> than it's time for them to lunge. In a position like that,
+    if they manage to oust you, then you've served them their second victory point on a silver platter.
+    So failing to lunge will not only push your prey to go very defensive, it will also offer such a golden opportunity
+    to your predator that they will have to be as offensive as possible to try to profit from it. It's a dreadful
+    situation to put yourself in.
+    {% endtrans %}
+</p>
+
+<p>
+    {% trans trimmed %}
+    Lunging is difficult. The fact that life is mana makes the whole game that much tenser.
+    You need to learn to pilot your deck so that it not only delivers the damage it needs to deliver but does it,
+    as much as possible, in an overwhelming and categorical fashion. Keeping your prey on low pool without managing
+    to oust them is a losing proposition.
+    {% endtrans %}
+</p>
+
+<h2 id="cards-in-1-copy">{{ _('Cards in 1 copy') }}</h2>
+<p>
+    {% trans trimmed percent="%" %}
+    Another difference is that in MTG you usually get to play 20{{ percent }} to 40{{ percent }} of your deck.
+    The deck size lower limit is far higher than the number of cards you get to play.
+    Not so in VTES: if you do not get ousted early, it's customary to play 60{{ percent }} to 80{{ percent }} of your deck,
+    and deck sizes should be tailored with this objective in mind. If you tend to play a lot of cards,
+    you'll go with an 80 or even a 90 cards deck. If the flow is slower, you should opt for 60 or 70 cards.
+    {% endtrans %}
+</p>
+<p>
+    {% trans trimmed %}
+    You will often see decks fielding <b>cards in a single copy</b>, which for MTG is basically an heresy,
+    since you are more likely to never draw a single-copy card in any given game. In VTES, with a well-built deck,
+    you are likely to draw any single-copy card you put there in 2/3 of your games.
+    So 1 copy is a good number for a silver bullet, although that means you need to keep it if it's relevant and
+    discard it if it's not.
+    {% endtrans %}
+</p>
+
+<div class="insert tip">
+    <h3 id="duplicates-in-disguise">{{ _('Duplicates in disguise') }}</h3>
+    <p>
+        {% trans trimmed
+        bowl_of_convergence=card("Bowl of Convergence"),
+        aranthebes=card("Aranthebes the Immortal", "Aranthebes"),
+        mr_winthrop=card("Mr. Winthrop"),
+        krcg=card("KRCG News Radio", "KRCG")
+        %}
+        Some single-copy inclusions are actually multiple copies in disguise: the different cards all serve the
+        same purpose. A good exemple is permanent intercept devices. You will see decklists with
+        {{ bowl_of_convergence }}, {{ aranthebes }}, {{ mr_winthrop }}, and {{ krcg }}, all in a single copy.
+        If one is better than the others, why not just play 2 or more copies of that one?
+        Well, since you're drawing the majority of your deck in a game, it is better
+        to get different unique cards you can stack than it is to get the best one sooner.
+        All in all, <b>it matters more to be able to stack effects</b> and get a better setup than having an
+        early impact. It is linked to the lunge tactic: the buildup is useful because stacking and damage tempo matter,
+        the card tempo matters less.
+        {% endtrans %}
+    </p>
+</div>
+
+<p>
+    {% trans trimmed
+    percent="%",
+    week_of_nightmares=card("Week of Nightmares"),
+    smiling_jack=card("Smiling Jack, The Anarch", "Smiling Jack"),
+    fame=card("Fame"),
+    heart_of_nizchetus=card("Heart of Nizchetus")
+    %}
+    Not to say that in some cases you shouldn't field multiple copies of a single card. In some instances there is no
+    good alternative or you really want your draw chances in any game to be closer to 90{{ percent }} than to 70{{ percent }}. You will see for
+    example Ravnos {{ ravnos }} decks fielding two {{ week_of_nightmares }}, combat decks with 2 or 3 {{ fame }}, or
+    demanding toolboxes or combo decks with 3 or 4 {{ heart_of_nizchetus }}. It is possible and sometimes relevant, but
+    most of the time spreading multiple different unique cards in a single copy is better.
+    {% endtrans %}
+</p>
+<h2 id="vampires-are-not-creatures">{{ _('Vampires are not creatures') }}</h2>
+<p>
+    {% trans trimmed %}
+    It's tempting to think of vampires as if they were creatures in MTG, but it is misleading.
+    Because life is mana, vampires are more costly than most MTG creatures. They're also more resilient: you
+    can probably send a vampire to torpor with a good combat module, but destroying a vampire takes a
+    lot more dedication. But beyond those obvious differences, the rift between VTES vampires and MTG creatures goes
+    deeper.
+    {% endtrans %}
+</p>
+<h3 id="capacity-is-not-toughness">{{ _("The two strength scores") }}</h3>
+<p>
+    {% trans trimmed %}
+    In MTG, a creature's strength represents the damage it delivers both to the opponent and to other creatures.
+    In VTES, a vampire delivers <b>strength damage</b> to other minions, but <b>bleed damage</b> to the opponents pool.
+    This changes things. The way the game is designed, some vampires can deliver high bleed damage,
+    others are excellent combatants and can deliver high damage to minions. But the two rarely go hand-in-hand.
+    {% endtrans %}
+</p>
+<p>
+    {% trans trimmed %}
+    In VTES, a vampire delivers <b>strength damage</b> to other minions, but <b>bleed damage</b> to the opponents pool.
+    This changes things. The way the game is designed, some vampires can deliver high bleed damage,
+    others are excellent combatants and can deliver high damage to minions. But the two rarely go hand-in-hand.
+    An {{ OBF }}{{ DOM }} vampire is a dangerous bleeder, but weak in combat, and a {{ POT }}{{ ANI }} vampire
+    won't bleed much, but will be a dreadful combatant.
+    {% endtrans %}
+</p>
+<p>
+    {% trans trimmed
+    claws_of_the_dead=card("Claws of the Dead"),
+    disarm=card("Disarm"),
+    roundhouse=card("Roundhouse"),
+    villein=card("Villein")
+    %}
+    And it's not just about strength. A high capacity vampire does not really have "more life", nor is it more robust. 
+    A vampire's capacity does not matter if their opponent use aggravated damage like {{ claws_of_the_dead }}
+    or just a {{ disarm }}. And, even if a high capacity vampire can take a big {{ roundhouse }} more easily, they
+    do not regenerate between turns, so it's just a one-time thing. High capacity vampires bring more disciplines,
+    titles and interesting special abilities. Their capacity is not toughness: ideally their blood should be recouped
+    with a {{ villein }} to go back to the pool before they lose it.
+    {% endtrans %}
+</p>
+<h3 id="vampires-are-lands">{{ _("Vampires are lands") }}</h3>
+<p>
+    {% trans trimmed percent="%" %}
+    We started this article stating that "life is mana", but if you think about it, and even though you pay in pool for
+    your minions and some other cards, 80{{ percent }} of the library cards are actually played by your minions. So in a very
+    practical way, <strong>vampires are lands</strong> more than anything else: without them, most of your cards are
+    dead cards and you stop playing. What you can play depends on their disciplines and the disciplines
+    are the colors of a deck.
+    {% endtrans %}
+</p>
+
+<div class="insert warn">
+    <h3 id="combat-is-control">{{ _('Combat is control') }}</h3>
+    <p>
+        {% trans trimmed %}
+        Because good combat vampires are often poor bleeders, but mostly because vampires are lands,
+        <b>combat decks are not "aggro"</b>: they are control decks.
+        Putting vampires in torpor slows down your opponents, destroying them is more akin to playing a good Armageddon:
+        it can be devastating, but you have to time and aim it well.
+        {% endtrans %}
+    </p>
+    <p>
+        {% trans trimmed %}
+        By destroying the vampires of your opponents, you slow or even shut them down.
+        Inevitably, this will also advantage the remaining players: it's disrupting the table balance.
+        Ultimately, you have to do so in a way that advantages you more than the remaining players so that you end up
+        winning the game.
+        {% endtrans %}
+    </p>
+    <p>
+        {% trans trimmed %}
+        And it's not easy, because with combat-oriented vampires and cards, you will have poor
+        options to take down your prey's pool after you dealt with their vampires. Your vampire-killer star might
+        still bleed for only one or two, and you need to oust before your predator gets you and nets the
+        2 victory points you're serving him on a platter.
+        {% endtrans %}
+    </p>
+    <p>
+        {% trans trimmed %}
+        Delicate planning and foresight are required to win this way. Despite the cards color,
+        decks focused on combat are not aggro Red decks. They're Blue, maybe Dimir. Their game plan is to win the table
+        in the long run by locking everyone out of their game: they do not aim for a quick victory.
+        {% endtrans %}
+    </p>
+</div>
+
+<h2 id="archetypes-parallels">{{ _("Archetypes parallels") }}</h2>
+<p>
+    {% trans trimmed %}
+    It's a bit tricky to make a parallel between MTG deck categories and VTES ones, but let's give it a try so you can
+    get to know the lay of the land here.
+    {% endtrans %}
+</p>
+
+<div class="column-2">
+    <h3 id="aggro-sb">{{ _("Aggro ➔ S&B") }}</h3>
+    <p>
+        {% trans trimmed
+        v5_malkavian=external(
+        "https://www.blackchantry.com/products/legacy/vampire-the-eternal-struggle-fifth-edition/fifth-edition-malkavian/",
+        _("V5 Malkavian")
+        )
+        %}
+        <b>Stealth & Bleed decks</b> (S&B in short) are to VTES what the aggro decks are to MTG.
+        Fast heavy damage to your prey, skewed towards the offensive side to try and secure
+        the victory quickly. The {{ v5_malkavian }} preconstructed deck is an example.
+        {% endtrans %}
+    </p>
+    <p>
+        {% trans trimmed
+        rebekka_jost=link("/archetypes/rebekka-jost", "Rebekka/Jost"),
+        legacy_of_pander=link("/archetypes/bibliodeque/legacy-of-pander", "Legacy of Pander"),
+        weenie_dom=link("/archetypes/bibliodeque/weenie-dom", "Weenie DOM")
+        %}
+        All types of very forward bleed decks can be thought of as aggro, not only the stealth ones.
+        <b>Powerbleed decks</b> like {{ rebekka_jost }} also fit the bill here.
+        Some very <b>aggressive swarm decks</b> like {{ legacy_of_pander }} and {{ weenie_dom }}, also qualify.
+        {% endtrans %}
+    </p>
+</div>
+<div class="column-2">
+    <h3 id="control">{{ _("Control ➔ Rush & Wall") }}</h3>
+    <p>
+        {% trans trimmed
+        tupdogs_nephandus=link("/archetypes/tupdogs-nephandus", "Tupdogs & Nephandus")
+        %}
+        There are two kinds of control deck in VTES.
+        <b>Rush decks</b> are active control decks, where you go rush opponents minions to control
+        the table (im)balance and skew it in a favorable way. {{ tupdogs_nephandus }} is a good example.
+        {% endtrans %}
+    </p>
+    <p>
+        {% trans trimmed
+        v5_gangrel_preconstructed_deck=external("https://www.blackchantry.com/products/vampire-the-eternal-struggle-fifth-edition/fifth-edition-gangrel/",
+        _("V5 Gangrel preconstructed deck"))
+        %}
+        <b>Wall decks</b> are reactive control decks, where you use reactions to stop your opponents
+        actions and hurt their minions, like in the {{ v5_gangrel_preconstructed_deck }}.
+        {% endtrans %}
+    </p>
+    <p>
+        {% trans trimmed %}
+        Whatever the approach and similarily to MTG,
+        actually winning with these decks requires a good grasp of the existing archetypes
+        so you can assess your opponents' strengths and weaknesses.
+        {% endtrans %}
+    </p>
+</div>
+
+<div class="column-2">
+    <h3 id="midrange">{{ _("Midrange ➔ toolboxes, vote & bleed") }}</h3>
+    <p>
+        {% trans trimmed
+        v5_box=external(
+        "https://www.blackchantry.com/products/legacy/vampire-the-eternal-struggle-fifth-edition/",
+        _("V5 Box")
+        )
+        %}
+        <b>Toolboxes</b> evidently match the "midrange" idea: they bleed, they block,
+        they do a bit of combat, sometimes they even vote. There are a <em>lot</em> of differently-themed toolboxes.
+        The decks of the {{ v5_box }}, except the Malkavian {{ malkavian }}, are midrange decks in that sense,
+        although they have different approaches.
+        {% endtrans %}
+    </p>
+    <p>
+        {% trans trimmed
+        anniversary=external(
+        "https://www.blackchantry.com/products/legacy/preconstructed-decks/product-25th-anniversary/",
+        _("25th Anniversary")
+        ),
+        stanislava=card("Stanislava"),
+        girls=link("/archetypes/girls-will-find-inner-circle", "Girls")
+        %}
+        <b>Vote & bleed decks</b>, often relying on Inner Circle vampires, are definitely midrange.
+        The {{ anniversary }} {{ stanislava }} deck is a good example. Some slow bleed deck do not include votes:
+        {{ girls }} is also midrange: good defense, steady aggression.
+        {% endtrans %}
+    </p>
+</div>
+
+<div class="column-2">
+    <h3 id="combo">{{ _("Combo ➔ swarm, combo") }}</h3>
+    <p>
+        {% trans trimmed
+        ravnos_clown_car=link("/archetypes/runner-ups/ravnos-clown-car", "Ravnos Clown Car"),
+        khazar_diary=link("/archetypes/runner-ups/khazars-diary", "Khazar's Diary")
+        %}
+        Many <b>swarm</b> decks actually fit what an MTG player would expect from a "combo" deck.
+        They have a build up phase with low table impact, and an overwhelming endgame that can sweep the whole table.
+        They also rely on a 2 or 3 cards combo and good synergies: the {{ ravnos_clown_car }}, {{ emerald_legion }} or
+        {{ khazar_diary }} are good examples.
+        {% endtrans %}
+    </p>
+    <p>
+        {% trans trimmed
+        baltimore_purge=link("/archetypes/bibliodeque/baltimore-purge", "Baltimore Purge"),
+        cybelotron=link("/archetypes/bibliodeque/cybelotron", "Cybelotron")
+        %}
+        Then, there are the more intricated <b>combos decks</b> that are also qualified as such by VTES players.
+        They are different from MTG combo decks: because there is no cards limit, it is possible to make some very long
+        multi-cards combo work often enough to build decent decks out of them. Check out {{ baltimore_purge }} or
+        {{ cybelotron }}, for example.
+        {% endtrans %}
+    </p>
+</div>
+
+<h2 id="this-is-a-multiplayer-game">{{ _("This is a multiplayer game") }}</h2>
+<p>
+    {% trans trimmed %}
+    Well, we haven't even talked about the biggest difference yet: while MTG is a duel game,
+    VTES is a multiplayer game. It is designed and balanced to be played on a table of 4 or 5 players.
+    This has a few important consequences, which should be familiar to Commander players.
+    {% endtrans %}
+</p>
+<h3 id ="table-assessment">{{ _("Table assessment") }}</h3>
+<p>
+    {% trans trimmed %}
+    To be able to take any strategic decision, you will need to refine your ability to assess a table.
+    Table assessment is the art of figuring out quickly who is playing what kind of deck, grasp the kind of resources
+    they are likely to have, and deduce what their strengths and weaknesses are most likely to be.
+    The opponents will whine and lie and try to manipulate you during the game: it's a big part of the game.
+    {% endtrans %}
+</p>
+<p>
+    {% trans trimmed
+    archetypes=link("/strategy/archetypes", _("archetypes"))
+    %}
+    If you're able to maintain your own perception of what's going on, who's struggling and who's dangerous,
+    you will be able to control the game and have it progress as you intend, rather than be just a tool
+    for another Methuselah to use. You need to know the different {{ archetypes }} and, ideally,
+    play them to get a feel for them. Experience is what will make you able to refine your table perception.
+    {% endtrans %}
+</p>
+<div class="insert tip">
+    <h3 id="table-fold">{{ _('Table fold') }}</h3>
+    <p>
+        {% trans trimmed %}
+        The way a table <strong>folds</strong> is who gets ousted in which order: like an origami,
+        tables get smaller and smaller with each oust.
+        When you get better at table assessment, you'll be able to predict and influence how a table folds.
+        {% endtrans %}
+    </p>
+    <p>
+        {% trans trimmed %}
+        Coming from MTG, a very fast-paced game where tempo is key, it's easy to fall in the trap of trying to go very
+        hard and very fast on the left, on the prey. It can absolutely work, but there's a lot more to VTES than this
+        and, on average, going too hard too fast on your prey is a losing proposition. Against experienced players,
+        you'll leave so much breathing room to your future preys that they're actually more likely to win the game than
+        you are.
+        {% endtrans %}
+    </p>
+    <p>
+        {% trans trimmed %}
+        Getting good at predicting how a table folds is crucial: you want your strategy to take into account the way
+        the game is likely to progress. This perception is key to how the game is played. At high level, the fold
+        is a cornerstone of strategy, so much so that players will purposedly influence the fold itself to push the
+        opponents to change their strategy.
+        {% endtrans %}
+    </p>
+</div>
+<h3 id ="table-talk">{{ _("Table talk") }}</h3>
+<p>
+    {% trans trimmed %}
+    Finally, yes, VTES is a game of negotiation and manipulation. You need to talk, to influence others' perception,
+    to be inventive with the deals you propose to your opponents, all the while maintaining a pleasing and discreet
+    demeanor so as to avoid unecessary aggressions against you and even encourage the odd gift of a slight advantage.
+    {% endtrans %}
+</p>
+<img src="{{ url_for('static', filename='img/taken.webp') }}" alt="Taken Meme">
+<p>
+    {% trans trimmed
+    table_talk_section=link("/strategy/table-talk", _("table talk section"))
+    %}
+    You can win silently but you'll get consistent in your wins only if you learn how to negotiate well.
+    Check the {{ table_talk_section }} for a thorough explanation of the tools at your disposal here.
+    {% endtrans %}
+</p>
+<p>
+    {% trans trimmed percent="%" %}
+    The saying is: victory is 50{{ percent }} the deck and 50{{ percent }} the player. The best players can win tournaments with average decks.
+    Hugh Angseesing, the current CEO of BCP and one of if not the best player in the world,
+    managed to place all V5 preconstructed decks in tournament finals when they got out,
+    just to demonstrate it was doable with no tinkering.
+    {% endtrans %}
+</p>
+{% endblock %}

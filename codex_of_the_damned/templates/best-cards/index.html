@@ -19,27 +19,31 @@
     </p>
     {% endtrans %}
     <h2>{{ _('Generic') }}</h2>
-    <ul>
-        <li>{{ link("/best-cards/generic/master-cards") }}</li>
-        <li>{{ link("/best-cards/generic/political-actions") }}</li>
-        <li>{{ link("/best-cards/generic/no-discipline") }}</li>
-        <li>{{ ani }} {{ link("/best-cards/generic/animalism") }}</li>
-        <li>{{ aus }} {{ link("/best-cards/generic/auspex") }}</li>
-        <li>{{ cel }} {{ link("/best-cards/generic/celerity") }}</li>
-        <li>{{ dom }} {{ link("/best-cards/generic/dominate") }}</li>
-        <li>{{ for }} {{ link("/best-cards/generic/fortitude") }}</li>
-        <li>{{ nec }} {{ link("/best-cards/generic/necromancy") }}</li>
-        <li>{{ obf }} {{ link("/best-cards/generic/obfuscate") }}</li>
-        <li>{{ pot }} {{ link("/best-cards/generic/potence") }}</li>
-        <li>{{ pre }} {{ link("/best-cards/generic/presence") }}</li>
-    </ul>
+    <div class="column-2">
+    {{ link("/best-cards/generic/master-cards", _class="insert") }}
+    {{ link("/best-cards/generic/political-actions", _class="insert") }}
+    {{ link("/best-cards/generic/no-discipline", _class="insert") }}
+    {{ link("/best-cards/generic/animalism", _class="insert", _prefix="ani") }}
+    {{ link("/best-cards/generic/auspex", _class="insert", _prefix="aus") }}
+    {{ link("/best-cards/generic/celerity", _class="insert", _prefix="cel") }}
+    </div>
+    <div class="column-2">
+    {{ link("/best-cards/generic/dominate", _class="insert", _prefix="dom") }}
+    {{ link("/best-cards/generic/fortitude", _class="insert", _prefix="for") }}
+    {{ link("/best-cards/generic/necromancy", _class="insert", _prefix="nec") }}
+    {{ link("/best-cards/generic/obfuscate", _class="insert", _prefix="obf") }}
+    {{ link("/best-cards/generic/potence", _class="insert", _prefix="pot") }}
+    {{ link("/best-cards/generic/presence", _class="insert", _prefix="pre") }}
+    </div>
     <h2>{{ _('Sects') }}</h2>
-    <ul>
-        <li>{{ link("/best-cards/sects/anarch") }}</li>
-        <li>{{ link("/best-cards/sects/camarilla") }}</li>
-        <li>{{ link("/best-cards/sects/laibon") }}</li>
-        <li>{{ link("/best-cards/sects/sabbat") }}</li>
-    </ul>
+    <div class="column-2">
+    {{ link("/best-cards/sects/anarch", _class="insert") }}
+    {{ link("/best-cards/sects/camarilla", _class="insert") }}
+    </div>
+    <div class="column-2">
+    {{ link("/best-cards/sects/laibon", _class="insert") }}
+    {{ link("/best-cards/sects/sabbat", _class="insert") }}
+    </div>
     <h2 id="clans">{{ _('Clans') }}</h2>
     {% trans trimmed %}
     <p>
@@ -55,7 +59,36 @@
         all Imbued are included in the same analysis regardless of their creed.
     </p>
     {% endtrans %}
-    <table class="column-2">
+    <div class="column-2">
+    {{ link("/best-cards/clans/ahrimanes", _class="insert", _prefix="ahrimane") }}
+    {{ link("/best-cards/clans/akunanse", _class="insert", _prefix="akunanse") }}
+    {{ link("/best-cards/clans/baali", _class="insert", _prefix="baali") }}
+    {{ link("/best-cards/clans/banu-haqim", _class="insert", _prefix="banu_haqim") }}
+    {{ link("/best-cards/clans/brujah", _class="insert", _prefix="brujah") }}
+    {{ link("/best-cards/clans/caitiff", _class="insert", _prefix="caitiff") }}
+    {{ link("/best-cards/clans/daughters-of-cacophony", _class="insert", _prefix="daughter_of_cacophony") }}
+    {{ link("/best-cards/clans/gangrel", _class="insert", _prefix="gangrel") }}
+    {{ link("/best-cards/clans/giovanni", _class="insert", _prefix="giovanni") }}
+    {{ link("/best-cards/clans/guruhi", _class="insert", _prefix="guruhi") }}
+    {{ link("/best-cards/clans/harbingers-of-skulls", _class="insert", _prefix="harbinger_of_skulls") }}
+    {{ link("/best-cards/clans/imbued", _class="insert", _prefix="visionary") }}
+    {{ link("/best-cards/clans/ishtarri", _class="insert", _prefix="ishtarri") }}
+    </div>
+    <div class="column-2">
+    {{ link("/best-cards/clans/kiasyd", _class="insert", _prefix="kiasyd") }}
+    {{ link("/best-cards/clans/lasombra", _class="insert", _prefix="lasombra") }}
+    {{ link("/best-cards/clans/malkavian", _class="insert", _prefix="malkavian") }}
+    {{ link("/best-cards/clans/ministry", _class="insert", _prefix="ministry") }}
+    {{ link("/best-cards/clans/nosferatu", _class="insert", _prefix="nosferatu") }}
+    {{ link("/best-cards/clans/ravnos", _class="insert", _prefix="ravnos") }}
+    {{ link("/best-cards/clans/salubri", _class="insert", _prefix="salubri") }}
+    {{ link("/best-cards/clans/toreador", _class="insert", _prefix="toreador") }}
+    {{ link("/best-cards/clans/tremere", _class="insert", _prefix="tremere") }}
+    {{ link("/best-cards/clans/true-brujah", _class="insert", _prefix="true_brujah") }}
+    {{ link("/best-cards/clans/tzimisce", _class="insert", _prefix="tzimisce") }}
+    {{ link("/best-cards/clans/ventrue", _class="insert", _prefix="ventrue") }}
+    </div>
+    {# <table class="column-2">
         <tbody>
             <tr>
                 <td>{{ ahrimane }}
@@ -162,6 +195,6 @@
                 <td>{{ link("/best-cards/clans/ventrue") }}</td>
             </tr>
         </tbody>
-    </table>
+    </table> #}
 </article>
 {% endblock %}
