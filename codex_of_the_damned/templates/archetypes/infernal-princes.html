@@ -1,0 +1,100 @@
+{% extends "archetypes/_layout.html" %}
+{% import "archetypes/_layout-erratum.html" as erratum with context %}
+{% import "archetypes/infernal-princes.json" as deck_json %}
+
+{% block meta %}
+<meta property="decklist" content='{{ deck_json | tojson }}' />
+{% endblock %}
+
+{% block archetype_name %}
+<h1>{{ baali }} Infernal Princes</h1>
+{% endblock %}
+
+{% block archetype %}
+{% trans trimmed
+    arishat=card("Arishat"),
+    ashur_tablets=card("Ashur Tablets"),
+    bait_and_switch=card("Bait and Switch"),
+    deep_ecology=card("Deep Ecology"),
+    dreams_of_the_sphinx=card("Dreams of the Sphinx"),
+    elisha_tucker=card("Elisha Tucker"),
+    eyes_of_argus=card("Eyes of Argus"),
+    forgotten_labyrinth=card("Forgotten Labyrinth"),
+    information_highway=card("Information Highway"),
+    majesty=card("Majesty"),
+    organized_resistance=card("Organized Resistance"),
+    parity_shift=card("Parity Shift"),
+    protected_resources=card("Protected Resources"),
+    protection_racket=card("Protection Racket"),
+    reckless_agitation=card("Reckless Agitation"),
+    rumors_of_gehenna=card("Rumors of Gehenna"),
+    second_tradition_domain=card("Second Tradition: Domain"),
+    the_parthenon=card("The Parthenon"),
+    unleash_hells_fury=card("Unleash Hell's Fury"),
+    voter_captivation=card("Voter Captivation"),
+    warmaksan=card("Warmaksan"),
+    infernal_ministry=link("/archetypes/infernal-ministry"),
+    lunge=link("/strategy/fundamentals", _("lunge"), id="lunge"),
+    leonardo_villelas_deck=link("/deck-search", _("Leonardo Villela's deck"), id="10310"),
+    gangrel_barons=link("/archetypes/gangrel-barons"),
+    v5_anarch_preconstructed_decks=external("https://www.blackchantry.com/products/vampire-the-eternal-struggle-fifth-edition/", _("V5 Anarch preconstructed decks"))
+%}
+<h2>Highlights</h2>
+<p>
+    This is a <em>vote</em> deck using {{ arishat }} as a star, and Princes and Barons with {{ obf }} for stealthy votes.
+</p>
+<p>
+    The game plan is to invest massively in titled vampires, getting them out fast with an early {{ information_highway }}
+    and recouping pool from the opponents with constant {{ parity_shift }} and some {{ voter_captivation }}.
+    The Barons offer massive damage thanks to {{ reckless_agitation }}. {{ obf }} provides stealth and {{ pre }}
+    combat defense and vote push.
+</p>
+<p>
+    The deck is small and dense and includes an {{ ashur_tablets }} for recursion: as the game progresses, it can adapt
+    the proportion of {{ parity_shift }} to the situation and forgo {{ reckless_agitation }} before entering the endgame
+    duel (since {{ reckless_agitation }} requires at least 2 opponents to be played).
+
+</p>
+<h2>Tips & Tricks</h2>
+<p>
+    {{ the_parthenon }} and {{ rumors_of_gehenna }} offer welcome additional master phase actions to get full benefits
+    from {{ ashur_tablets }} and {{ dreams_of_the_sphinx }} for recursion and cycling.
+</p>
+<p>
+    The decks makes heavy use of {{ forgotten_labyrinth }} as the main stealth modifier: it costs blood but it easily
+    gets above a {{ second_tradition_domain }} and votes are undirected so some very widespread intercept reactions
+    like {{ eyes_of_argus }} or {{ deep_ecology }} won't help the opponents. 3 stealth undirected is hard to block.
+    That said, now that {{ protection_racket }} and {{ organized_resistance }} appear more an more (especially now that
+    {{ gangrel_barons }} are a thing), newer variants of the deck tend to include more stealth modifiers on top of it.
+    But it's a delicate balance if one wants to avoid jamming the hand.
+</p>
+<p>
+    {{ arishat }} is a great vampire here but not a necessity. She can bring 3 to 5 votes worth with her ability by
+    disabling an opponent's titled vampire, but she's also the only who can play {{ unleash_hells_fury }}, a great
+    card for defense. 
+</p>
+<p>
+    A couple of {{ second_tradition_domain }} offer tactical intercept that can come in handy to surprisingly block
+    a key action from an opponents, while using {{ majesty }} to avoid combat. It adds a bit of flexibility to an
+    otherwise very forceful forward deck.
+</p>
+<p>
+    Pool management is a bit tricky: the plan is to be consistently lower in pool than the opponents to be
+    able to pump it back up with {{ parity_shift }}, only to invest it again in more titled vampires. This is a risky
+    cycle that requires a keen evaluation of the predator's {{ lunge }} power to actually work.
+</p>
+<h2>Variants</h2>
+<p>
+    The deck presented here is the original list played by Emilio and devised by Bram, it was built before the
+    {{ v5_anarch_preconstructed_decks }} were published, so the crypt can be tinkered with by adding for example
+    {{ elisha_tucker }} or {{ warmaksan }}. Many variants include a few more cards, mostly more {{ obf }} stealth,
+    {{ majesty }} or {{ unleash_hells_fury }} to adapt to different meta.
+    See for example {{ leonardo_villelas_deck }}, winning the 2022 SAC.
+</p>
+<p>
+    In a sense, the {{ infernal_ministry }} archetype can be considered a variation on the theme. The strategy is a bit
+    different since it does not use {{ parity_shift }} of course, but getting access to the Barons {{ bait_and_switch }}
+    makes for a completely different, but also very effective, defense module.
+</p>
+{% endtrans %}
+{% endblock %}

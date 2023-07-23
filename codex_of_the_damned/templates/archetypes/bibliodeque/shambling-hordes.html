@@ -1,0 +1,87 @@
+{% extends "archetypes/_layout.html" %}
+{% import "archetypes/_layout-erratum.html" as erratum with context %}
+{% import "archetypes/bibliodeque/shambling-hordes.json" as deck_json %}
+
+{% block meta %}
+<meta property="decklist" content='{{ deck_json | tojson }}' />
+{% endblock %}
+
+{% block archetype_name %}
+<h1>{{ giovanni }} Shambling Hordes</h1>
+{% endblock %}
+
+{% block archetype %}
+{% trans trimmed
+shambling_hordes=card("Shambling Hordes"),
+liquidation=card("Liquidation"),
+dragonbound=card("Dragonbound"),
+fame=card("Fame"),
+sudario_refraction=card("Sudario Refraction"),
+call_of_the_hungry_dead=card("Call of the Hungry Dead"),
+spectral_divination=card("Spectral Divination"),
+trap=card("Trap"),
+carlton_van_wyk=card("Carlton Van Wyk"),
+the_unmasking=card("The Unmasking"),
+fbi_special_affairs_division=card("FBI Special Affairs Division"),
+the_parthenon=card("The Parthenon"),
+tupdog=card("Tupdog"),
+life_in_the_city=card("Life in the City"),
+trochomancy=card("Trochomancy"),
+ashur_tablets=card("Ashur Tablets"),
+andrzej_jagla_s_deck=link("/deck-search", _("Andrzej Jagla's deck"), id="2013wbdpp"),
+otto_kukkasniemi_s_deck=link("/deck-search", _("Otto Kukkasniemi's deck"), id="2011snc")
+%}
+<h2>Highlights</h2>
+<p>
+    This is an <em>allies rush</em> deck using {{ shambling_hordes }}.
+    The idea is to use {{ liquidation }} to put some {{ shambling_hordes }} in the ash heap,
+    the recruit other ones, paying for it with the discarded ones.
+    They then proceed to taking down opponents vampires while the vampires bleed.
+</p>
+<p>
+    Most Master cards are used to get some blood back on the vampires or cheapen the cost of
+    {{ shambling_hordes }}.
+</p>
+<p>
+    As the deck has a solid rush potential, {{ dragonbound }} and {{ fame }}
+    can help deliver more pool damage.
+</p>
+<p>
+    {{ sudario_refraction }} is used to get the cards discarded by {{ liquidation }}
+    back into hand, providing a nice recursion for this deck.
+</p>
+<h2>Tips & Tricks</h2>
+<p>
+    {{ call_of_the_hungry_dead }} and {{ spectral_divination }} help bring out
+    the {{ shambling_hordes }} without being blocked.
+</p>
+<p>
+    {{ trap }} can be used to take down big capacity vampires or allies
+    with a defending ability like {{ carlton_van_wyk }}.
+</p>
+<p>
+    {{ the_unmasking }} and {{ fbi_special_affairs_division }}
+    improve the allies quite a bit.
+</p>
+<h2>Variants</h2>
+<p>
+    Many variants have a little bit more combat cards and do not bother with
+    {{ the_parthenon }}, like {{ andrzej_jagla_s_deck }} from 2013.
+</p>
+<p>
+    The <strong>Swedish</strong> variant uses
+    {{ tupdog }} for additional minions in the ash heap,
+    {{ life_in_the_city }} to add blood to the vampires, and {{ trochomancy }}
+    to help disrupt the recursion of decks using {{ ashur_tablets }}.
+    {{ otto_kukkasniemi_s_deck }} from the 2011 Swedish NC is a good example.
+</p>
+{% endtrans %}
+{% endblock %}
+
+{% block errata %}
+<div class="insert warn">
+    <h3>Errata</h3>
+    {{ erratum.pentextmsubversion( 'remove' ) }}
+    {{ erratum.antheliostheredstar() }}
+</div>
+{% endblock %}

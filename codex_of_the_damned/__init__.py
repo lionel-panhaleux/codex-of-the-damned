@@ -32,6 +32,7 @@ BASE_CONTEXT = {
     "REFLEX": flask.Markup('<span class="krcg-icon">6</span>'),
     "FLIGHT": flask.Markup('<span class="krcg-icon">^</span>'),
     "MERGED": flask.Markup('<span class="krcg-icon">µ</span>'),
+    "POWER": flask.Markup('<span class="krcg-icon">§</span>'),
     "abo": flask.Markup('<span class="krcg-icon">w</span>'),
     "ABO": flask.Markup('<span class="krcg-icon">W</span>'),
     "ani": flask.Markup('<span class="krcg-icon">i</span>'),

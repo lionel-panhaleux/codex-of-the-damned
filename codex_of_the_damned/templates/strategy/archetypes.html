@@ -59,12 +59,35 @@
     makes stealth and intercept irrelevant.
     {% endtrans %}
 </p>
+<div class="insert tip">
+    <h3>{{ _("Bruise & Bleed") }}</h3>
+    <p>
+        {% trans trimmed
+        euro_brujah=link("/archetypes/bibliodeque/euro-brujah"),
+        haqim_royalty=link("/archetypes/haqim-royalty"),
+        emerald_legion=link("/archetypes/emerald-legion")
+        %}
+        Yet another possibility is to get the bleeds through by the sheer intimidation of a strong combat module.
+        This strategy, called <em>Bruise & Bleed</em>, is never used all by itself. It's either coupled to a compact
+        but efficient blocking module to form a toolbox, like in the {{ euro_brujah }} or {{ haqim_royalty }}
+        decks, or to a swarm strategy like with {{ emerald_legion }} or some instances of {{ haqim_royalty }}.
+        {% endtrans %}
+    </p>
+    <p>
+        {% trans trimmed %}
+        Simply put, trying to <em>Bruise & Bleed</em> is letting your opponents choose whether they block
+        or let the bleed through. For this idea to work against good players and decks, there's a need to either
+        bring some adaptability through blocks, or put out an overwhelming swarm that cannot be out-bloated
+        or simply bounced away.
+        {% endtrans %}
+    </p>
+</div>
 <h3>{{ _("Flavours") }}</h3>
 <ul>
     <li>
         {% trans trimmed
         kiasyd_stealth_bleed=link("/archetypes/bibliodeque/kiasyd-stealth-bleed"),
-        lasombra_nocturn=link("/archetypes/runner-ups/lasombra-nocturn")
+        lasombra_nocturn=link("/archetypes/lasombra-nocturn")
         %}
         Lasombra {{ lasombra }} and Kiasyd {{ kiasyd }}
         have a strong combination with {{ dom }} for bleed and {{ obt }} for stealth.
@@ -73,16 +96,29 @@
     </li>
     <li>
         {% trans trimmed
-        weenie_dem=link("/archetypes/dementation-bleed")
+        weenie_dem=link("/archetypes/dementation-bleed"),
+        malkav_94=link("/archetypes/bibliodeque/malkav-94"),
+        malkav_22=link("/archetypes/malkav-22")
         %}
         The Malkavian {{ malkavian }} can use {{ dem }},
         alone or alongside {{ obf }}, for devastating bleeds,
-        like in the {{ weenie_dem }} archetype.
+        like in the {{ weenie_dem }} archetype. In other groups (1 and 6+), they can also combine the best stealth
+        with {{ obf }} to the strongest bleed with {{ dom }}, as in the {{ malkav_94 }} and {{ malkav_22 }} archetypes.
         {% endtrans %}
     </li>
     <li>
         {% trans trimmed
-        black_hand=link("/archetypes/black-hand")
+        platinum_protocol=card("platinum-protocol"),
+        platinum_protocol_archetype=link("/archetypes/bibliodeque/platinum-protocol")
+        %}
+        The new Ministry {{ ministry }}, with the {{ obf }}{{ pro }}{{ pre }} combination, have excellent stealth
+        combined with a very solid bleed module in {{ pre }}, and have access to the excellent {{ platinum_protocol }},
+        which gives the the eponymous {{ platinum_protocol_archetype }}.
+        {% endtrans %}
+    </li>
+    <li>
+        {% trans trimmed
+        black_hand=link("/archetypes/runner-ups/black-hand")
         %}
         Assamite {{ assamite }} also have a nice combination with {{ qui }} and {{ obf }},
         as in the {{ black_hand }} archetype.
@@ -179,11 +215,21 @@
 <ul>
     <li>
         {% trans trimmed
-        the_dark_side_of_politics=link("/archetypes/runner-ups/the-dark-side-of-politics"),
+        the_dark_side_of_politics=link("/archetypes/bibliodeque/the-dark-side-of-politics"),
         lutz_politics=link("/archetypes/lutz-politics")
         %}
         Inner Circle can be used in strong vote decks, as in
         {{ the_dark_side_of_politics }} and {{ lutz_politics }}.
+        {% endtrans %}
+    </li>
+    <li>
+        {% trans trimmed
+        arishat=card("arishat"),
+        infernal_princes=link("/archetypes/infernal-princes"),
+        infernal_ministry=link("/archetypes/infernal-ministry")
+        %}
+        Baali {{ baali }} {{ arishat }}, thanks to her powerful ability, gave birth to multiple strong
+        political archetypes like {{ infernal_princes }} and {{ infernal_ministry }}.
         {% endtrans %}
     </li>
     <li>
@@ -206,7 +252,7 @@
     </li>
     <li>
         {% trans trimmed
-        the_dark_side_of_politics=link("/archetypes/runner-ups/the-dark-side-of-politics")
+        the_dark_side_of_politics=link("/archetypes/bibliodeque/the-dark-side-of-politics")
         %}
         Baali {{ baali }} offer a nice political angle with {{ the_dark_side_of_politics }}.
         {% endtrans %}
@@ -216,13 +262,13 @@
         amaravati_politics=link("/archetypes/bibliodeque/amaravati-politics"),
         death_star=link("/archetypes/bibliodeque/death-star")
         %}
-        Assamite {{ assamite }} also have good options,
+        Banu Haqim {{ assamite }} also have good options,
         like in the {{ amaravati_politics }} or the {{ death_star }} archetypes.
         {% endtrans %}
     </li>
     <li>
         {% trans trimmed
-        ravnos_clown_car=link("/archetypes/runner-ups/ravnos-clown-car")
+        ravnos_clown_car=link("/archetypes/bibliodeque/ravnos-clown-car")
         %}
         Ravnos {{ ravnos }} have a unique breed archetype: the {{ ravnos_clown_car }}.
         {% endtrans %}
@@ -264,9 +310,10 @@
     {% trans trimmed
     eyes_of_argus=card("Eyes of Argus"),
     eternal_vigilance=card("Eternal Vigilance"),
-    under_siege=card("Under Siege"),
+    no_secrets_from_the_magaji=card("No Secrets From the Magaji"),
+    organized_resistance=card("Organized Resistance"),
     second_tradition_domain=card("Second Tradition: Domain"),
-    no_secrets_from_the_magaji=card("No Secrets From the Magaji")
+    under_siege=card("Under Siege")
     %}
     Wall decks maximise their defence, trying to block their prey and predator actions alike while slowly
     building up bloat and pool damages. The ability to intercept and wake are tantamount in these decks,
@@ -275,8 +322,8 @@
     It is also the only discipline besides {{ dom }} that provides bleed bounce reaction cards.
     {{ ani }} also has good intercept cards though, and better combat options than {{ aus }}:
     it can be used with no additional equipment or discipline.
-    Sabbat, Camarilla and Laibon titled vampires each have access to excellent intercept cards:
-    {{ eternal_vigilance }}, {{ under_siege }}, {{ second_tradition_domain }} and
+    Anarch, Sabbat, Camarilla and Laibon titled vampires each have access to excellent intercept cards:
+    {{ organized_resistance }}, {{ eternal_vigilance }}, {{ under_siege }}, {{ second_tradition_domain }} and
     {{ no_secrets_from_the_magaji }}.
     {% endtrans %}
 </p>
@@ -284,7 +331,7 @@
 <ul>
     <li>
         {% trans trimmed
-        weenie_aus=link("/archetypes/runner-ups/weenie-aus")
+        weenie_aus=link("/archetypes/bibliodeque/weenie-aus")
         %}
         {{ AUS }} is the best intercept discipline, and the {{ weenie_aus }} wall is an obvious idea.
         {% endtrans %}
@@ -300,7 +347,7 @@
     <li>
         {% trans trimmed
         goratrix=card("Goratrix"),
-        goratrix_high_tower=link("/archetypes/goratrix-high-tower")
+        goratrix_high_tower=link("/archetypes/runner-ups/goratrix-high-tower")
         %}
         Tremere {{ tremere }} in general, but {{ goratrix }} in particular
         offer excellent wall capabilities in the {{ goratrix_high_tower }} archetype.
@@ -321,6 +368,20 @@
         %}
         {{ saulot }} has a nice discipline combination with {{AUS}}{{THA}}{{FOR}} and
         +1 bleed. The {{ saulot_wall }} archetype is built around him.
+        {% endtrans %}
+    </li>
+    <li>
+        {% trans trimmed
+        organized_resistance=card("Organized Resistance"),
+        bait_and_switch=card("Bait and Switch"),
+        form_of_the_bat=card("Form of the Bat"),
+        deep_ecology=card("Deep Ecology"),
+        earth_meld=card("Earth Meld"),
+        gangrel_barons=link("/archetypes/gangrel-barons")
+        %}
+        The Anarch Gangrel {{ gangrel }} and their Barons recently gave birth to the {{ gangrel_barons }} wall.
+        The {{ organized_resistance }} and {{ bait_and_switch }} combination looks good on them, especially with
+        {{ form_of_the_bat }}, {{ deep_ecology }} and {{ earth_meld }} add to the mix.
         {% endtrans %}
     </li>
 </ul>
@@ -381,11 +442,12 @@
         parity_shift=card("Parity Shift"),
         anson_guns=link("/archetypes/anson-guns"),
         euro_brujah=link("/archetypes/bibliodeque/euro-brujah"),
-        ventrue_royalty=link("/archetypes/gentlemen-with-sticks")
+        ventrue_royalty=link("/archetypes/gentlemen-with-sticks"),
+        haqim_royalty=link("/archetypes/haqim-royalty")
         %}
         Using Camarilla Princes and Justicars with their access to
         {{ second_tradition_domain }} and {{ parity_shift }} led to good toolboxes like the
-        {{ anson_guns }}, {{ euro_brujah }} and {{ ventrue_royalty }} archetypes.
+        {{ anson_guns }}, {{ euro_brujah }}, {{ ventrue_royalty }} and {{ haqim_royalty }} archetypes.
         {% endtrans %}
     </li>
     <li>

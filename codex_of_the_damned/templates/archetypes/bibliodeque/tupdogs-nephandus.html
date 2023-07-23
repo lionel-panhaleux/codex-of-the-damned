@@ -1,0 +1,121 @@
+{% extends "archetypes/_layout.html" %}
+{% import "archetypes/_layout-erratum.html" as erratum with context %}
+{% import "archetypes/bibliodeque/tupdogs-nephandus.json" as deck_json %}
+
+{% block meta %}
+<meta property="decklist" content='{{ deck_json | tojson }}' />
+{% endblock %}
+
+{% block archetype_name %}
+<h1>{{ tremere_antitribu }} Tupdogs & Nephandus</h1>
+{% endblock %}
+
+{% block archetype %}
+{% trans trimmed
+anarchist_uprising=card("Anarchist Uprising"),
+ancilla_empowerment=card("Ancilla Empowerment"),
+antonio_d_erlette=card("Antonio d'Erlette"),
+ashur_tablets=card("Ashur Tablets"),
+brick_by_brick=card("Brick By Brick"),
+deflection=card("Deflection"),
+delaying_tactics=card("Delaying Tactics"),
+direct_intervention=card("Direct Intervention"),
+dreams_of_the_sphinx=card("Dreams of the Sphinx"),
+emerald_legionnaire=card("Emerald Legionnaire"),
+entrancement=card("Entrancement"),
+failsafe=card("Failsafe"),
+haven_uncovered=card("Haven Uncovered"),
+immortal_grapple=card("Immortal Grapple"),
+information_highway=card("Information Highway"),
+nephandus=card("Nephandus"),
+powerbase_montreal=card("Powerbase: Montreal"),
+raking_talons=card("Raking Talons"),
+reins_of_power=card("Reins of Power"),
+target_vitals=card("Target Vitals"),
+the_parthenon=card("The Parthenon"),
+torn_signpost=card("Torn Signpost"),
+tupdog=card("Tupdog"),
+tupdogs=card("Tupdog", "Tupdogs"),
+yawp_court=card("Yawp Court"),
+tommis_article=link("/strategy/articles/advanced/playing-tupdogs-nephandus", _("Tommi Hakomaa's article")),
+filipes_deck=link("/deck-search", _("Filipe Iório's deck"), id="2014sacspb"),
+lukasz_deck=link("/deck-search", _("Lukasz Modzelewski's deck"), id="2013ccpdms")
+%}
+<h2>Highlights</h2>
+<p>
+    This is an <em>rush</em> deck using {{ tupdogs }} to take down opposing vampires
+    and {{ nephandus }} to bleed and defend. {{ antonio_d_erlette }} is the star
+    in a sense, since his ability provides sure {{ nephandus }}
+    recruitments with no risk of block.
+</p>
+<p>
+    The combat is dominated by the {{ tupdogs }} and their {{ VIC }} and {{ POT }}
+    cards combination, using {{ brick_by_brick }} to set the range if needed,
+    {{ immortal_grapple }} to prevent Dodge and Combat Ends, and {{ raking_talons }}
+    for aggravated damage. {{ torn_signpost }} and {{ target_vitals }} can provide
+    additional damage if needed.
+</p>
+<p>
+    The {{ nephandus }} themselves are not too shabby in combat, especially since 
+    they can use {{ haven_uncovered }} to rush and {{ target_vitals }} to inflict more
+    damage.
+</p>
+<p>
+    The critical part of the deck is to get a Tremere antitribu {{ tremere_antitribu }}
+    out, so that the {{ tupdogs }} can rush, {{ nephandus }} can be recruited and
+    {{ deflection }} played. {{ antonio_d_erlette }} is best,
+    he can even allow two {{ nephandus }} to hit the table in a single turn.
+</p>
+<p>
+    The core issue of the deck is the high pool cost. {{ tupdogs }} only last a single
+    turn and the deck should get one out every turn at least for safety and control.
+    Plus the {{ nephandus }} are 2 pool a piece, and the deck aims to recruit 4 to 6.
+    This makes the {{ ashur_tablets }} and {{ the_parthenon }} combination a perfect fit
+    for the deck: it will bring a bit of pool back and provide a nice recursion to shape
+    the deck and its combat module according to the table.
+</p>
+<h2>Tips & Tricks</h2>
+<p>
+    To make use of {{ antonio_d_erlette }}'s ability and influence a {{ tupdog }} in
+    the same turn, more than 4 transfers are necessary. Master cards provide one more
+    transfer, with {{ dreams_of_the_sphinx }},
+    {{ information_highway }} or {{ powerbase_montreal }}.
+</p>
+<p>
+    Vote decks can be an issue here, as pool is scarce and quite a few minions can be
+    out at the same time: {{ anarchist_uprising }} and {{ ancilla_empowerment }}
+    might oust the deck swiftly. To cover this, the deck uses {{ delaying_tactics }} 
+    and {{ yawp_court }}.
+</p>
+<p>
+    {{ direct_intervention }} should be kept in hand to counter anti-ally actions
+    like {{ entrancement }}, or problematic "one shot" votes like {{ reins_of_power }}.
+</p>
+<p>
+    You might want to read {{ tommis_article }} about this specific archetype, it goes
+    a bit more in details on how to build and play it.
+</p>
+<h2>Variants</h2>
+<p>
+    The <strong>Naked</strong> variant does not rely on the {{ ashur_tablets }}
+    inclusion and instead use {{ failsafe }} for a bit of additional pool, like in
+    {{ filipes_deck }} from 2014.
+    In an environment where the {{ ashur_tablets }} module is likely to become
+    a competition, this might be a better bet. That said, Martin's Weinmayer combination
+    here is considered more stable and powerful overall.
+</p>
+<p>
+    Although this is a different archetype, {{ nephandus }} can also be used without
+    the {{ tupdogs }}, like in {{ lukasz_deck }} from 2013. This is more of a toobox
+    but it has fallen a bit out of fashion since the apparition of
+    {{ emerald_legionnaire }} and the invention of the deck listed here.
+</p>
+{% endtrans %}
+{% endblock %}
+
+{% block errata %}
+<div class="insert warn">
+    <h3>Errata</h3>
+    {{ erratum.pentextmsubversion( 'remove' ) }}
+</div>
+{% endblock %}

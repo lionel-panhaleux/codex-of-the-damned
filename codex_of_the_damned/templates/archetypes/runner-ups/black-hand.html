@@ -1,0 +1,93 @@
+{% extends "archetypes/_layout.html" %}
+{% import "archetypes/_layout-erratum.html" as erratum with context %}
+{% import "archetypes/runner-ups/black-hand.json" as deck_json %}
+
+{% block meta %}
+<meta property="decklist" content='{{ deck_json | tojson }}' />
+{% endblock %}
+
+{% block archetype_name %}
+<h1>Black Hand</h1>
+{% endblock %}
+
+{% block archetype %}
+{% trans trimmed
+camera_phone=card("Camera Phone"),
+telepathic_misdirection=card("Telepathic Misdirection"),
+my_enemy_s_enemy=card("My Enemy's Enemy"),
+elimelech_the_twice_damned=card("Elimelech the Twice Damned"),
+delaying_tactics=card("Delaying Tactics"),
+anarchist_uprising=card("Anarchist Uprising"),
+ministry_card=card("Ministry"),
+abbot=card("Abbot"),
+kindred_spirits=card("Kindred Spirits"),
+no_trace=card("No Trace"),
+recruitment_exercise=card("Recruitment Exercise"),
+reunion_kamut=card("Reunion Kamut"),
+tattoo_signal=card("Tattoo Signal"),
+watchtower_four_ride_forth=card("Watchtower: Four Ride Forth"),
+a_b=link("/strategy/fundamentals", _("A&B"), _anchor="AB"),
+mark_loughmans_deck=link("/deck-search", _("Mark Loughman's deck"), id="2018ot2co"),
+rauls_deck=link("/deck-search", _("Raúl Olvera Abellán's deck"), id="2018igpadhs"),
+fernandos_deck=link("/deck-search", _("Fernando Naves Resck's deck"), id="2018cmspb")
+%}
+<h2>Highlights</h2>
+<p>
+    This is a <em>stealth & bleed</em> deck using {{ reunion_kamut }} and
+    {{ recruitment_exercise }} to get more vampires out fast and cheap.
+    Bleed is enhanced by permanent modifier like {{ camera_phone }}, with {{ obf }}
+    modifiers for stealth.
+</p>
+<p>
+    Black Hand Seraphs have acces to the {{ a_b }} enhancers {{ tattoo_signal }}
+    and {{ watchtower_four_ride_forth }}: this is the key of the deck. Many Black Hand
+    vampires have {{ obf }} to provide enough stealth to get most actions through,
+    bleeds or bloat alike.
+</p>
+<p>
+    A carefully chosen crypt provides a stable enough access to {{ AUS }} to
+    include bleed defence in the form of bounces with {{ telepathic_misdirection }}
+    and {{ my_enemy_s_enemy }}.
+</p>
+<h2>Tips & Tricks</h2>
+<p>
+    The {{ tattoo_signal }} and {{ reunion_kamut }} combination is the core of the deck.
+    Once a Seraph is out, a Black Hand sidekick quickly follows and can continue
+    to use {{ reunion_kamut }} repetitively to get more minions out. Getting the blood
+    back in pool is also an option, providing a solid bloat if needed.
+</p>
+<p>
+    {{ delaying_tactics }} should be kept to counter {{ anarchist_uprising }} or similar
+    votes, as they could end this deck once enough minions are out.
+</p>
+<p>
+    The deck does not have much in terms of combat defence, but low capacity sidekicks
+    can always stay around to block any threatening action against their Seraph.
+</p>
+<h2>Variants</h2>
+<p>
+    This archetype is probably the most variable in the top tier. The bloat mechanic
+    based on {{ tattoo_signal }} and {{ reunion_kamut }} is a constant, as well
+    as the high stealth from {{ obf }}. Depending on the crypt, both {{ dom }} and
+    {{ AUS }} are viable options for bounces, with {{ watchtower_four_ride_forth }}
+    for additional unlock. From the combat module to carefully handpicked additions,
+    the rest varies a lot from one deck to the next.
+</p>
+<p>
+    A full fledged Banu Haqim version is also possible, as in {{ rauls_deck }}.
+    {{ QUI }} provies more tricks and a stronger bleed, but {{ AUS }} has to be dropped
+    and the bleed defence gets that much weaker.
+</p>
+<p>
+    Another variation uses a mid capacity multi-clan crypt with {{ dom }}.
+    It looses the {{ obf }} stealth but can be more toolboxy with more intercept thanks
+    to {{ ministry_card }} and {{ abbot }}, provided the combat module packs a bit more
+    punch. {{ mark_loughmans_deck }} from 2018 is a recent example.
+</p>
+<p>
+    {{ elimelech_the_twice_damned }} can be even more of a star in order to include a
+    few {{ DEM }} cards, especially {{ kindred_spirits }}, as in {{ fernandos_deck }}
+    from 2018.
+</p>
+{% endtrans %}
+{% endblock %}

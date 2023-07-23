@@ -1,0 +1,92 @@
+{% extends "archetypes/_layout.html" %}
+{% import "archetypes/_layout-erratum.html" as erratum with context %}
+{% import "archetypes/haqim-royalty.json" as deck_json %}
+
+{% block meta %}
+<meta property="decklist" content='{{ deck_json | tojson }}' />
+{% endblock %}
+
+{% block archetype_name %}
+<h1>{{ banu_haqim }} Haqim Royalty</h1>
+{% endblock %}
+
+{% block archetype %}
+{% trans trimmed
+    anathema=card("Anathema"),
+    blood_rage=card("Blood Rage"),
+    claws_of_the_dead=card("Claws of the Dead"),
+    consanguineous_boon=card("Consanguineous Boon"),
+    fast_hands=card("Fast Hands"),
+    haqims_law_retribution=card("Haqim's Law: Retribution"),
+    hunger_of_marduk=card("Hunger of Marduk"),
+    hunters_mark=card("Hunter's Mark"),
+    immortal_grapple=card("Immortal Grapple"),
+    kasim_bayar=card("Kasim Bayar"),
+    magic_of_the_smith=card("Magic of the Smith"),
+    parity_shift=card("Parity Shift"),
+    priority_contract=card("Priority Contract"),
+    psyche=card("Psyche"),
+    rego_motum=card("Rego Motum"),
+    resist_earths_grasp=card("Resist Earth's Grasp"),
+    second_tradition_domain=card("Second Tradition: Domain"),
+    soul_burn=card("Soul Burn"),
+    swallowed_by_the_night=card("Swallowed by the Night"),
+    the_embrace=card("The Embrace"),
+    third_tradition_progeny=card("Third Tradition: Progeny"),
+    villein=card("Villein"),
+    web_of_knives_recruit=card("Web of Knives Recruit"),
+    bounce=link("/strategy/fundamentals", _("bounce"), id="bounce"),
+    by_karl_schaefer=link("/deck-search", _("by Karl Schaefer"), id="10109")
+%}
+<h2>Highlights</h2>
+<p>
+    This is a <em>toolbox</em> deck using Banu Haqim {{ banu_haqim }} Princes and Justicar.
+</p>
+<p>
+    The deck revolves around {{ haqims_law_retribution }} to provide strong bleeds from a very heavy combat module.
+    As most royalty builds, defense takes the form of {{ second_tradition_domain }} for blocks and {{ parity_shift }}
+    for a bit of bloat and opportunistic pool damage.
+</p>
+<p>
+    The combat module is dreadful. {{ hunger_of_marduk }} coupled with additional strikes from {{ cel }},
+    can consistently empty the blood from opponents vampires, and the maneuverability should guarantee the range choice
+    most of the time (and avoid {{ immortal_grapple }} or aggravated {{ claws_of_the_dead }}).
+</p>
+<h2>Tips & Tricks</h2>
+<p>
+    The main weakness of the deck is its <strong>light defense</strong>. Intercept does not often go above the 2 from
+    {{ second_tradition_domain }}, and this might not be enough to stop well-stealthed vote or bleed decks.
+    The absence of {{ bounce }} makes bloat necessary: here {{ villein }}, {{ parity_shift }} and the
+    excellent {{ priority_contract }}. Although unique, it will not stay in play for long if the target is chosen well
+    given the heavy combat module, so it's an almost guaranteed 3 pool. It also works if the prey gets ousted
+    (since their vampires leave the game because of the oust), and it's a trifle!
+</p>
+<p>
+    {{ resist_earths_grasp }} and {{ swallowed_by_the_night }} are very versatile in this deck: they can provide
+    stealth and, in case the prey does not even try to block, they can be discarded to {{ haqims_law_retribution }}
+    for additional bleed. Although only a couple of the vampires have the necessary {{ OBF }} to play
+    {{ swallowed_by_the_night }} at superior in combat, most of them can use {{ resist_earths_grasp }} at either level.
+</p>
+<p>
+    A couple of {{ hunters_mark }} provide some rushes that can be used anywhere for table control, but mostly as
+    a countermeasure to slow down a strong predator (since {{ priority_contract }} cannot be used backwards).
+</p>
+<h2>Variants</h2>
+<p>
+    The combat module varies <em>a lot</em> depending on the expected meta. {{ rego_motum }} and {{ psyche }}
+    are common inclusion, as well as anti-weapon cards like {{ blood_rage }}, {{ soul_burn }} or {{ fast_hands }}.
+    The version presented here includes an unusual quantity of equipments coupled with {{ magic_of_the_smith }},
+    other versions use just more combat cards or more {{ hunters_mark }} to be able to control the pedator.
+</p>
+<p>
+    {{ anathema }} has seen some play and, while it looks like a great bloat module for this deck, actually passing
+    the vote and then triggering the effect can be very tricky, whereas {{ parity_shift }} is easier.
+</p>
+<p>
+    The main variant of this deck has been inaugured {{ by_karl_schaefer }} and forgoes {{ kasim_bayar }} to focus on a
+    lower capacity crypt. The idea is to build more of a swarm using {{ the_embrace }} ({{ web_of_knives_recruit }} or
+    {{ third_tradition_progeny }} could also be considered), and rely on a bloat with {{ consanguineous_boon }} instead
+    of trying to bloc with {{ second_tradition_domain }} or rush backwards.
+</p>
+{% endtrans %}
+{% endblock %}

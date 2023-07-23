@@ -1,0 +1,87 @@
+{% extends "archetypes/_layout.html" %}
+{% import "archetypes/_layout-erratum.html" as erratum with context %}
+{% import "archetypes/bibliodeque/ravnos-clown-car.json" as deck_json %}
+
+{% block meta %}
+<meta property="decklist" content='{{ deck_json | tojson }}' />
+{% endblock %}
+
+{% block archetype_name %}
+<h1>{{ ravnos }} Ravnos Clown Car</h1>
+{% endblock %}
+
+{% block archetype %}
+{% trans trimmed
+mozambique_allure=card("Mozambique Allure"),
+the_embrace=card("The Embrace"),
+bamba=card("Bamba"),
+ravnos_carnival=card("Ravnos Carnival"),
+the_eldest_are_kholo=card("The Eldest Are Kholo"),
+consanguineous_boon=card("Consanguineous Boon"),
+week_of_nightmares=card("Week of Nightmares"),
+the_uncoiling=card("The Uncoiling"),
+scourge_of_the_enochians=card("Scourge of the Enochians"),
+gird_minions=card("Gird Minions"),
+life_boon=card("Life Boon"),
+aranthebes_the_immortal=card("Aranthebes, The Immortal"),
+autarkis_persecution=card("Autarkis Persecution"),
+delaying_tactics=card("Delaying Tactics"),
+rom_gypsy=card("Rom Gypsy"),
+city_star_taxi=card("City Star Taxi"),
+miguel_pascual_s_deck=link("/deck-search", _("Miguel Pascual's deck"), id="2k8powerbasecataluna")
+%}
+<h2>Highlights</h2>
+<p>
+    This is a <em>breed & boon</em> deck using the Ravnos clan.
+    Low capacity Ravnos use {{ mozambique_allure }} to become Laibon,
+    then multiply with {{ the_embrace }} and {{ bamba }}, paying them with
+    {{ ravnos_carnival }} and using {{ the_eldest_are_kholo }} with
+    {{ consanguineous_boon }} to bloat.
+</p>
+<p>
+    When enough minions are out, the {{ week_of_nightmares }} gets into play
+    and all these Ravnos bleed their prey to death, one after the other.
+</p>
+<h2>Tips & Tricks</h2>
+<p>
+    {{ the_uncoiling }} is a tactical counter against
+    {{ scourge_of_the_enochians }}, as this event
+    is often included in slow decks as a counter against breed constructs like this one.
+</p>
+<p>
+    {{ gird_minions }} help get the minions back in shape
+    if the bloat works well enough, in order to produce yet another wave of neonates.
+</p>
+<p>
+    {{ life_boon }} is also a way to control the table a bit if
+    the bloat goes well enough. The deck usually does not put that much pressure on its prey until
+    {{ week_of_nightmares }} hits the table, so this can compensate a bit.
+</p>
+<p>
+    The deck does not try to block its predator, counting on its bloat to compensate.
+    {{ aranthebes_the_immortal }} is included
+    only as a counter to contest it if anyone gets to put it into play,
+    as it is too damaging to this deck.
+</p>
+<p>
+    {{ autarkis_persecution }} is included as a hail mary
+    if one gets stuck with low pool and someone uses
+    {{ delaying_tactics }} against {{ consanguineous_boon }}.
+</p>
+<h2>Variants</h2>
+<p>
+    There are not many variants for this archetype.
+    {{ miguel_pascual_s_deck }} in 2008 has experimented with {{ rom_gypsy }}
+    to provide an additional bit of stealth and defence.
+    The card has been banned in 2020, but its replacement {{ city_star_taxi }} can
+    be used instead.
+</p>
+{% endtrans %}
+{% endblock %}
+
+{% block errata %}
+<div class="insert warn">
+    <h3>Errata</h3>
+    {{ erratum.pentextmsubversion( 'remove' ) }}
+</div>
+{% endblock %}

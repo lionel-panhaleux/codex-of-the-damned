@@ -1,0 +1,109 @@
+{% extends "archetypes/_layout.html" %}
+{% import "archetypes/_layout-erratum.html" as erratum with context %}
+{% import "archetypes/bibliodeque/samedi-bleed.json" as deck_json %}
+
+{% block meta %}
+<meta property="decklist" content='{{ deck_json | tojson }}' />
+{% endblock %}
+
+{% block archetype_name %}
+<h1>{{ samedi }} Samedi Bleed</h1>
+{% endblock %}
+
+{% block archetype %}
+{% trans trimmed
+camera_phone=card("Camera Phone"),
+coroners_contact=card("Coroner's Contact"),
+dark_mirror_of_the_mind=card("Dark Mirror of the Mind"),
+freak_drive=card("Freak Drive"),
+information_highway=card("Information Highway"),
+kaymakli_nightmares=card("Kaymakli Nightmares"),
+legendary_vampire=card("Legendary Vampire"),
+little_mountain_cemetery=card("Little Mountain Cemetery"),
+narrow_minds=card("Narrow Minds"),
+powerbase_zurich=card("Powerbase: Zürich"),
+reg_driscoll=card("Reg Driscoll"),
+the_baron=card("The Baron"),
+under_my_skin=card("Under My Skin")
+%}
+<h2>Highlights</h2>
+<p>
+    This is a <em>stealth & bleed</em> deck from the Samedi {{ samedi }} clan.
+    It's worth mentioning since it won two tournaments in 2014, although it was in the
+    hands of the same Methuselah, <em>David Litwin</em>.
+</p>
+<p>
+    The point of the deck is to use {{ THN }} and {{ OBF }} for stealth in order to get
+    bleeds through, then use a lot of {{ freak_drive }} to bloat and get more vampires
+    out. If it stays unchecked, the deck bloats a lot and get enough Samedi {{ samedi }}
+    in play that there aggregated bleed power can oust the whole table.
+</p>
+<p>
+    The deck uses permanent bleed enhancers: a handful of {{ camera_phone }},
+    the base bonus of some of the vampires like {{ the_baron }} and
+    {{ reg_driscoll }} and, interestingly, {{ legendary_vampire }}.
+    Stealth is high, making full use of {{ under_my_skin }} to get a two-in-one kind of
+    deal that can make even high intercept decks think twice before attempting a block.
+</p>
+<p>
+    The specificity of this deck is definitely in the number of {{ freak_drive }}.
+    Associated with the bloat and crypt acceleration actions
+    {{ dark_mirror_of_the_mind }}, {{ little_mountain_cemetery }} and {{ off_kilter }},
+    it quickly becomes a nice blood-generating machine. The whole deck is built around
+    this idea, with {{ coroners_contact }} bringing more vampires in the crypt to
+    benefit from {{ little_mountain_cemetery }}, {{ houngan }} and {{ perfectionist }}
+    bringing a bit more blood on the table, and {{ powerbase_zurich }} for yet
+    another source of blood.
+</p>
+<h2>Tips & Tricks</h2>
+<p>
+    The timing question on the influence phase is important: the plan is
+    to keep vampires uncontrolled as much as possible to benefit more from
+    the numerous {{ little_mountain_cemetery }}. As soon as the vampires get out,
+    they can be rushed and blocked and {{ little_mountain_cemetery }} loses a lot its
+    interest. But while they're still uncontrolled, the deck is pretty low profile
+    and non dangerous: a good thing on a table. Some cards in the deck are included
+    to take advantage of this odd timing question of not wanting to get the vampires
+    out too soon. For example, {{ legendary_vampire }} is very strong: since the deck
+    already plans to keep its vampires uncontrolled for a bit, it can wait to get it
+    in hand before influencing a vampire out. {{ kaymakli_nightmares }} also follows
+    the same logic: here it is not used to slow down the rest of the table in the
+    beginning, it is a bloating tool that allows the deck to take back all of the blood
+    that has been stacked in the uncontrolled region.
+</p>
+<p>
+    Obviously having more transfers is a good thing - enough blood gets stacked in
+    the uncontrolled zone that it should be taken back in pool to resist the predator.
+    {{ information_highway }} is useful in the long run here, to the point that it
+    might still be useful in the middle and end game.
+</p>
+<p>
+    Bleeding with no bounce available for defense, the deck easily benefits from
+    {{ narrow_minds }} and the {{ archon_investigation }} can stop a greedy predator
+    right in his tracks.
+</p>
+<h2>Variants</h2>
+<p>
+    This is an original design - there are no variant for this deck.
+</p>
+{% endtrans %}
+{% endblock %}
+
+{% block errata %}
+<div class="insert warn">
+    {% trans trimmed
+    little_mountain_cemetery=card("Little Mountain Cemetery"),
+    rtr_20180303=external("https://www.vekn.net/history-of-vtes-rules/482-rules-team-rulings-3-march-2018", "[RTR 20180303]")
+    %}
+    <h3>Rule Change</h3>
+    The deck was built and played before the 2018 change in influencing rule
+    {{ rtr_20180303 }}. Nowadays, one can refrain from putting a vampire in play when
+    the blood matches their capacity. This might change quite a few things in this deck,
+    in a good way. It makes it easier to benefit from {{ little_mountain_cemetery }}.
+    {% endtrans %}
+</div>
+<div class="insert warn">
+    <h3>Errata</h3>
+    {{ erratum.pentextmsubversion( 'undecided' ) }}
+</div>
+{% endblock %}

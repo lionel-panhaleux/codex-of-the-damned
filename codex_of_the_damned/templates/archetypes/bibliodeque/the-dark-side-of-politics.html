@@ -1,0 +1,91 @@
+{% extends "archetypes/_layout.html" %}
+{% import "archetypes/_layout-erratum.html" as erratum with context %}
+{% import "archetypes/bibliodeque/the-dark-side-of-politics.json" as deck_json %}
+
+{% block meta %}
+<meta property="decklist" content='{{ deck_json | tojson }}' />
+{% endblock %}
+
+{% block archetype_name %}
+<h1>{{ baali }} The Dark Side of Politics</h1>
+{% endblock %}
+
+{% block archetype %}
+{% trans trimmed
+giotto_verducci=card("Giotto Verducci"),
+kaymakli_fragment=card("Kaymakli Fragment"),
+fragment=card("Kaymakli Fragment", "Fragment"),
+kine_resources_contested=card("Kine Resources Contested"),
+parity_shift=card("Parity Shift"),
+villein=card("Villein"),
+second_tradition_domain=card("Second Tradition: Domain"),
+unleash_hell_s_fury=card("Unleash Hell's Fury"),
+ashur_tablets=card("Ashur Tablets"),
+condemnation_mute=card("Condemnation: Mute"),
+the_textbook_damnation=card("The Textbook Damnation"),
+freak_drive=card("Freak Drive"),
+wider_view=card("Wider View"),
+arika=card("Arika"),
+jaroslav_pascek=card("Jaroslav Pascek"),
+lucinde_alastor=card("Lucinde, Alastor"),
+marcus_vitel=card("Marcus Vitel"),
+queen_anne=card("Queen Anne"),
+vincent_ripoll_s_deck=link("/deck-search", _("Vincent Ripoll's deck"), id="2015encle")
+%}
+<h2>Highlights</h2>
+<p>
+    This is a <em>vote</em> deck using centered around the {{ OBF }}{{ for }} disciplines,
+    with {{ giotto_verducci }} as a star.
+</p>
+<p>
+    The base idea is to get {{ kaymakli_fragment }}
+    fast using {{ giotto_verducci }}'s ability, then
+    use it (the infernal version) to get some titled vampires out fast and cheap.
+</p>
+<p>
+    Using {{ OBF }} for maximum stealth, the deck then proceeds to destroy its prey with
+    {{ kine_resources_contested }} and {{ parity_shift }}.
+</p>
+<p>
+    The deck has no bounce against bleeds, but {{ villein }} and
+    {{ parity_shift }} make for a nice bloat.
+    Furthermore, the few {{ second_tradition_domain }}
+    and {{ unleash_hell_s_fury }} provide a sturdy defence already.
+</p>
+<h2>Tips & Tricks</h2>
+<p>
+    {{ ashur_tablets }} provide a bit of recursion so that
+    cards discarded with {{ giotto_verducci }}'s ability can be fetched back.
+</p>
+<p>
+    {{ condemnation_mute }} is used to get the vote lock
+    faster by silencing opponents titled vampires.
+</p>
+<p>
+    {{ the_textbook_damnation }} is included so that another vampire with {{ for }}
+    can get the {{ kaymakli_fragment }} from {{ giotto_verducci }},
+    use {{ freak_drive }} to unlock then use the {{ fragment }}
+    again in the same turn.
+</p>
+<p>
+    {{ wider_view }} is included to help rotate the crypt
+    and get rid of the spurious {{ giotto_verducci }} copies
+    for more titled vampires.
+</p>
+<h2>Variants</h2>
+<p>
+    Variants exist using different crypts, like <em>Inner Circle</em> vampires
+    with {{ OBF }}{{ DOM }} or centered a bit more around the {{ OBF }}{{ PRE }}
+    disciplines with more Ventrue in the crypt: {{ arika }}, {{ jaroslav_pascek }},
+    {{ lucinde_alastor }}, {{ marcus_vitel }} and {{ queen_anne }}.
+    {{ vincent_ripoll_s_deck }} for the 2015 English NC is a good example.
+</p>
+{% endtrans %}
+{% endblock %}
+
+{% block errata %}
+<div class="insert warn">
+    <h3>Errata</h3>
+    {{ erratum.parityshift() }}
+</div>
+{% endblock %}

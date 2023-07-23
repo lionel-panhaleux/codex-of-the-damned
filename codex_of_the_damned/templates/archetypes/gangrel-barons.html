@@ -1,0 +1,122 @@
+{% extends "archetypes/_layout.html" %}
+{% import "archetypes/_layout-erratum.html" as erratum with context %}
+{% import "archetypes/gangrel-barons.json" as deck_json %}
+
+{% block meta %}
+<meta property="decklist" content='{{ deck_json | tojson }}' />
+{% endblock %}
+
+{% block archetype_name %}
+<h1>{{ gangrel }} Gangrel Barons</h1>
+{% endblock %}
+
+{% block archetype %}
+{% trans trimmed
+    the_anarch_free_press=card("The Anarch Free Press"),
+    anarch_railroad=card("Anarch Railroad"),
+    bait_and_switch=card("Bait and Switch"),
+    claws_of_the_dead=card("Claws of the Dead"),
+    constant_revolution=card("Constant Revolution"),
+    creepshow_casino=card("Creepshow Casino"),
+    deep_ecology=card("Deep Ecology"),
+    domain_challenge=card("Domain Challenge"),
+    donnybrook=card("Donnybrook"),
+    earth_control=card("Earth Control"),
+    earth_meld=card("Earth Meld"),
+    flesh_of_marble=card("Flesh of Marble"),
+    form_of_mist=card("Form of Mist"),
+    form_of_the_bat=card("Form of the Bat"),
+    gangrel_revel=card("Gangrel Revel"),
+    garibaldi_meucci_museum=card("Garibaldi-Meucci Museum"),
+    groundfighting=card("Groundfighting"),
+    heart_of_nizchetus=card("Heart of Nizchetus"),
+    hell_for_leather=card("Hell For Leather"),
+    hunting_grounds=card("Academic Hunting Ground", "hunting grounds"),
+    ivory_bow=card("Ivory Bow"),
+    kine_resources_contested=card("Kine Resources Contested"),
+    monkey_wrench=card("Monkey Wrench"),
+    opium_den=card("Opium Den"),
+    organized_resistance=card("Organized Resistance"),
+    powerbase_los_angeles=card("Powerbase: Los Angeles"),
+    protection_racket=card("Protection Racket"),
+    reckless_agitation=card("Reckless Agitation"),
+    revolutionary_council=card("Revolutionary Council"),
+    rewilding=card("Rewilding"),
+    rotschreck=card("Rötschreck"),
+    shattering=card("Shattering"),
+    smiling_jack=card("Smiling Jack, The Anarch", "Smiling Jack"),
+    sniper_rifle=card("Sniper Rifle"),
+    society_of_leopold=card("Society of Leopold"),
+    stolen_police_cruiser=card("Stolen Police Cruiser"),
+    thing=card("Thing")
+%}
+<h2>Highlights</h2>
+<p>
+    This is a <em>wall</em> deck using Gangrel {{ gangrel }} barons.
+</p>
+<p>
+    The idea is to build a strong defense thanks to the Anarch and Baron cards for unlock and intercept,
+    {{ organized_resistance }} and {{ deep_ecology }}, coupled with {{ bait_and_switch }} for bounces.
+    Using {{ thing }}, the deck can steadily influence more and more vampires, often ending up with 4 to 6 vampires
+    in play. Influencing a Baron quickly is very important, but it can be the second vampire if a low capacity
+    can be put in play first to speed up the Baron with a {{ thing }}, depending on your opening hand.
+</p>
+<p>
+    The number of vampires allows for a decent forward pressure of naked bleed actions, and the Barons open
+    the possibility of voting to speed things up or finish the endgame duel turns with a {{ revolutionary_council }}.
+    This completes more standard wall payload cards {{ smiling_jack }} and {{ constant_revolution }},
+    and offers a welcome adaptability to the deck.
+</p>
+<p>
+    The list presented here makes use of {{ shattering }} as a way to put minions in torpor opportunistically,
+    but that's merely one of the many options that can be used on top of the solid wall foundations this clan offers.
+</p>
+<h2>Tips & Tricks</h2>
+<p>
+    The Anarch specific master cards are especially strong here: {{ garibaldi_meucci_museum }} is incredibly versatile,
+    from ending troublesome combats with aggressive Anarchs to fetching the required unlock or bounce. It can also
+    let you play {{ revolutionary_council }} turn after turn if you need it. {{ powerbase_los_angeles }} acts as 
+    cycling device as well as an additional unlock, since there are so many Anarch cards (note cards requiring Barons
+    implicitly count as cards requiring Anarch). {{ anarch_railroad }} and {{ the_anarch_free_press }} provide permanent
+    stealth and intercept.
+</p>
+<p>
+    {{ society_of_leopold }} is an inclusion specifically linked to the use of {{ shattering }} here, allowing for a
+    potential destruction of a cumbersome vampire anywhere on the table after it's been emptied. {{ rewilding }} can be
+    used to damage the prey's influence if they play locations, but can also be a good way to get rid of other
+    problematic locations, the prime targets being permanent stealth like {{ opium_den }} or {{ creepshow_casino }},
+    and {{ hunting_grounds }} that go against the grinding strategy of the deck.
+</p>
+<p>
+    The combat module here is very focused on using {{ earth_meld }} for additional unlocks, but at some point it
+    also aims at equipping someone with a {{ sniper_rifle }} to begin to grind beads out of all the blocked minions.
+</p>
+<p>
+    The stealth module is particularily interesting, with a lot of versatiliy. Of course {{ earth_meld }} provides
+    steady stealth when needed (to get this {{ revolutionary_council }} or {{ constant_revolution }} through for example),
+    but {{ form_of_mist }} and {{ form_of_the_bat }} can both be used either as stealth complement or as additional
+    combat avoidance or intercept if needed.
+</p>
+<h2>Variants</h2>
+<p>
+    The use of {{ shattering }} is very specific to this version, but it's a great control device.
+    {{ monkey_wrench }} or {{ stolen_police_cruiser }} can be included for a bit more bleed, {{ reckless_agitation }}
+    often finds a spot, and sometimes even more political actions like {{ domain_challenge }} or
+    {{ kine_resources_contested }}. On the equipments side, of course, {{ heart_of_nizchetus }} and {{ ivory_bow }} are
+    often included.
+</p>
+<p>
+    There are wild variations in the combat module. The use of weapons like {{ sniper_rifle }} in here is common,
+    but can also be dismissed in favor of aggravated damage with {{ donnybrook }} or {{ claws_of_the_dead }}.
+    Depending on the combat module, {{ rotschreck }} or {{ gangrel_revel }} can find a spot in the master module.
+    A couple of anarch combat cards can find their place too, like {{ groundfighting }} or {{ hell_for_leather }},
+    and {{ flesh_of_marble }} makes some appearances as a tool against damage-heavy decks.
+</p>
+<p>    
+    Finally, {{ protection_racket }} is often included in the intercept mix: it is very effective against high stealth
+    votes like the ones {{ infernal_princes }} or {{ infernal_ministry }} can display. Some versions don't bother to
+    include {{ earth_control }} or {{ anarch_railroad }} for stealth, relying on {{ form_of_the_bat }} and
+    {{ form_of_mist }}, plus the dissuading effect of the combat module.
+</p>
+{% endtrans %}
+{% endblock %}

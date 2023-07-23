@@ -1,0 +1,120 @@
+{% extends "archetypes/_layout.html" %}
+{% import "archetypes/_layout-erratum.html" as erratum with context %}
+{% import "archetypes/runner-ups/nananimalism.json" as deck_json %}
+
+{% block meta %}
+<meta property="decklist" content='{{ deck_json | tojson }}' />
+{% endblock %}
+
+{% block archetype_name %}
+<h1>{{ guruhi }} Nananimalism</h1>
+{% endblock %}
+
+{% block archetype %}
+{% trans trimmed
+deep_song=card("Deep Song"),
+carrion_crows=card("Carrion Crows"),
+aid_from_bats=card("Aid from Bats"),
+nana_buruku=card("Nana Buruku"),
+ashur_tablets=card("Ashur Tablets"),
+fame=card("Fame"),
+dragonbound=card("Dragonbound"),
+powerbase_luanda=card("Powerbase: Luanda"),
+well_marked=card("Well-Marked"),
+fish=card("Fish"),
+powerbase_montreal=card("Powerbase: Montreal"),
+the_rack=card("The Rack"),
+cats_guidance=card("Cats' Guidance"),
+sense_the_savage_way=card("Sense the Savage Way"),
+wider_view=card("Wider View"),
+anarch_convert=card("Anarch Convert"),
+anarch_revolt=card("Anarch Revolt"),
+aranthebes_the_immortal=card("Aranthebes, The Immortal"),
+raven_spy=card("Raven Spy"),
+orian_gissler_s_deck=link("/deck-search", _("Orian Gissler's deck"), id="2018fnclf"),
+kim_nilsson_s_deck=link("/deck-search", _("Kim Nilsson's deck"), id="2016sncss"),
+adam_horvath_s_deck=link("/deck-search", _("Ádám Horváth's deck"), id="2010hungarianecq"),
+mailton_silva=link("/deck-search", "Mailton Silva", id="2019bncfb")
+%}
+<h2>Highlights</h2>
+<p>
+    This is a <em>toolbox</em> deck using {{ deep_song }} to rush
+    or bleed and a {{ ANI }} block and combat module.
+</p>
+<p>
+    Using {{ nana_buruku }} allows the inclusion of a lot of {{ ashur_tablets }}
+    for a nice recursion. This lets the deck adapt to the table context while bloating.
+    {{ anarch_revolt }} and {{ deep_song }} are used to deal pool damage and, of course,
+    the incidental {{ fame }} can help.
+</p>
+<p>
+    {{ deep_song }}'s versatility is at the core of this deck, as often in {{ ANI }}
+    decks. It can be used to bleed or to rush a cumbersome minion depending on the
+    situation. The deck has decent defense with a bit of intercept, especially once a
+    {{ raven_spy }} or two hit the table. {{ underbridge_stray }} helps with the wakes,
+    making an opponent think twice before acting, but can also provide a welcome press
+    when using {{ carrion_crows }} in a combat.
+</p>
+<p>
+    The combat module relies on the usual {{ aid_from_bats }} + {{ carrion_crows }}
+    long range {{ ANI }} module, with a couple of {{ canine_horde }} against weapons
+    like {{ magnum }}, and the occasional {{ hell_for_leather }} for a dodge when things
+    get too hairy.
+</p>
+<h2>Tips & Tricks</h2>
+<p>
+    {{ powerbase_luanda }} is a nice tool for such a deck with decent combat abilities.
+    Orian comments on the decklist that {{ fish }} should replace {{ effie_lowery }}
+    here just because of this card.
+</p>
+<p>
+    The deck does not have a lot of intercept, but plays
+    {{ powerbase_montreal }} and {{ the_rack }} nonetheless, relying on the threat of
+    a retaliation rush to protect them.
+</p>
+<p>
+    Without {{ bounces }}, the deck defense is pretty low, so it might need to rush
+    back a bit, at least until a {{ raven_spy }} or two are employed.
+    {{ archon_investigation }} is also almost mandatory here, and could be doubled
+    if heavy bleeds are to be expected.
+</p>
+<p>
+    Getting {{ wider_view }} at some point helps getting rid
+    of the spurious {{ nana_buruku }} in crypt.
+    She's also only played in 4 copies to avoid jamming the crypt too much;
+    other minions are needed for the deck to work well.
+</p>
+<h2>Variants</h2>
+<p>
+    As often with toolboxes, a lot of potential tweaks are possible here.
+    {{ the_anarch_free_press }} is a very common inclusion and {{ terror_frenzy }}
+    or {{ target_vitals }} can be considered for the combat module.
+    {{ aranthebes_the_immortal }} for defense or
+    {{ codex_of_the_edenic_groundskeepers }} might also fit here.
+</p>
+<p>
+    The <strong>Weenie ANI</strong> variant plays {{ ani }} without {{ nana_buruku }}
+    nor {{ ashur_tablets }}. It is arguably less versatile, and more of a rush deck
+    than a toolbox deck, but it's still very strong.
+    {{ kim_nilsson_s_deck }} from the 2016 Swedish NC is a good example.
+</p>
+<p>
+    The <strong>Resistência</strong> variant, played by {{ mailton_silva }}, ditches the
+    {{ ashur_tablets }} to focus on a lot more {{ anarch_revolt }}. It is also leaning
+    a bit more on the rush side, with only a few reaction cards to keep the opponents on
+    their toes: the plan is to rush any Anarch vampire the prey could have to make sure
+    the damage from {{ anarch_revolt }} is properly applied.
+</p>
+{% endtrans %}
+{% endblock %}
+
+{% block errata %}
+<div class="insert warn">
+    <h3>Errata</h3>
+    {{ erratum.pentextmsubversion( 'remove' ) }}
+</div>
+<div class="insert warn">
+    <h3>Declining</h3>
+    {{ erratum.declining() }}
+</div>
+{% endblock %}

@@ -1,0 +1,130 @@
+{% extends "archetypes/_layout.html" %}
+{% import "archetypes/_layout-erratum.html" as erratum with context %}
+{% import "archetypes/bibliodeque/giovanni-powerbleed.json" as deck_json %}
+
+{% block meta %}
+<meta property="decklist" content='{{ deck_json | tojson }}' />
+{% endblock %}
+
+{% block archetype_name %}
+<h1>{{ giovanni }} Giovanni Powerbleed</h1>
+{% endblock %}
+
+{% block archetype %}
+{% trans trimmed
+acquired_ventrue_assets=card("Acquired Ventrue Assets"),
+ambrosius=card("Ambrosius, The Ferryman", "Ambrosius"),
+anarch_convert=card("Anarch Convert"),
+anarch_troublemaker=card("Anarch Troublemaker"),
+ashur_tablets=card("Ashur Tablets"),
+bonding=card("Bonding"),
+breath_of_thanatos=card("Breath of Thanatos"),
+call_of_the_hungry_dead=card("Call of the Hungry Dead"),
+command_of_the_beast=card("Command of the Beast"),
+delaying_tactics=card("Delaying Tactics"),
+emerald_legionnaire=card("Emerald Legionnaire"),
+far_mastery=card("Far Mastery"),
+felix=card("Felix Fix Hessian", "Felix"),
+govern_the_unaligned=card("Govern the Unaligned"),
+jake_washington=card("Jake Washington"),
+leonardo=card("Leonardo, Mortician", "Leonardo"),
+misdirection=card("Misdirection"),
+pentex_subversion=card("Pentex™ Subversion"),
+perfectionist=card("Perfectionist"),
+puppeteer=card("Puppeteer"),
+seduction=card("Seduction"),
+spectral_divination=card("Spectral Divination"),
+spiritual_intervention=card("Spiritual Intervention"),
+sudario_refraction=card("Sudario Refraction"),
+the_coven=card("The Coven"),
+the_uncoiling=card("The Uncoiling"),
+the_unmasking=card("The Unmasking"),
+trochomancy=card("Trochomancy"),
+tupdog=card("Tupdog"),
+tye_cooper=card("Tye Cooper")
+%}
+<h2>Highlights</h2>
+<p>
+    This is a <em>powerbleed</em> deck of the Giovanni {{ giovanni }} clan. {{ DOM }}
+    is used for bleeds and bounces, and {{ NEC }} for block denial, a bit of stealth
+    and combat defence.
+</p>
+<p>
+    As usual, the highest capacity vampire should be influenced first, so that
+    {{ govern_the_unaligned }} can be used at superior {{ DOM }} to get more vampires
+    out cheap and fast.
+    Once it got three vampires ready, the deck proceeds with the bleeds, using
+    {{ govern_the_unaligned }} at inferior {{ dom }}, plus modifiers for a bit of
+    stealth, like {{ bonding }} and {{ spectral_divination }}.
+</p>
+<p>
+    The deck has almost no defence against votes but, at the same time, most votes
+    won't have too much of an impact on it. It still has a {{ delaying_tactics }} just
+    in case, and {{ spectral_divination }} can always provide a bit of intercept if
+    needed.
+</p>
+<p>
+    The deck is fast and brutal. It does not have a lot of stealth but the vampires
+    are cheap, so they're out fast and start bleeding early. {{ anarch_troublemaker }}
+    and {{ pentex_subversion }} can help disable potential blockers, and a bit of
+    stealth, plus block denial with {{ seduction }} and {{ call_of_the_hungry_dead }}
+    can overcome most defences.
+</p>
+<h2>Tips & Tricks</h2>
+<p>
+    {{ trochomancy }} is an interesting modifier: not only does it enhance the bleeds,
+    it is also a good counter against {{ ashur_tablets }} and {{ emerald_legionnaire }}.
+</p>
+<p>
+    The cards tend to cost quite a lot of blood to the vampires: hence,
+    {{ the_coven }}, {{ jake_washington }} and {{ perfectionist }} are included to
+    regenerate a bit.
+</p>
+<p>
+    The combat module is a mix of {{ spiritual_intervention }} and
+    {{ breath_of_thanatos }}: the opponents will have to ponder the risk of the latter
+    before coming in for a rush.
+</p>
+<h2>Variants</h2>
+<p>
+    A lot of minute changes can be considered:
+    <li>
+    {{ anarch_convert }} or {{ tupdog }} can help fluidify the crypt — and provide
+    an expandable blocker against rushes.
+    </li>
+    <li>
+    {{ misdirection }} can be added or replace either {{ anarch_troublemaker }}
+    or {{ pentex_subversion }}. {{ the_uncoiling }} should be considered, if only
+    to remove a cumbersome {{ the_unmasking }}.
+    </li>
+    <li>
+    {{ command_of_the_beast }} can be added, just to make it hard for the opponents
+    to get the potential bleed amount right.
+    </li>
+    <li>
+    One or two {{ sudario_refraction }} can help fetch the right cards at the right
+    moment — although it won't help against strong blockers.
+    </li>
+    <li>
+    {{ acquired_ventrue_assets }} can be added as yet another way to regenerate a bit
+    of blood.
+    </li>
+</p>
+<p>
+    The Giovanni {{ giovanni }} have great allies that can come in handy, like
+    {{ tye_cooper }}, {{ ambrosius }}, {{ puppeteer }}, 
+    {{ felix }} and {{ leonardo }}. Including them might render
+    {{ breath_of_thanatos }} more versatile and provide a welcome anti-rush defence,
+    but might also need a bit of protection with a couple of {{ far_mastery }} to get
+    them back if they're stolen: all in all it's good support but can also hurt the card
+    flow.
+</p>
+{% endtrans %}
+{% endblock %}
+
+{% block errata %}
+<div class="insert warn">
+    <h3>Errata</h3>
+    {{ erratum.pentextmsubversion( 'keep' ) }}
+</div>
+{% endblock %}

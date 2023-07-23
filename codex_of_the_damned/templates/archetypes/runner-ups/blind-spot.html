@@ -1,0 +1,102 @@
+{% extends "archetypes/_layout.html" %}
+{% import "archetypes/_layout-erratum.html" as erratum with context %}
+{% import "archetypes/runner-ups/blind-spot.json" as deck_json %}
+
+{% block meta %}
+<meta property="decklist" content='{{ deck_json | tojson }}' />
+{% endblock %}
+
+{% block archetype_name %}
+<h1>Blind Spot</h1>
+{% endblock %}
+
+{% block archetype %}
+{% trans trimmed
+archon_investigation=card("Archon Investigation"),
+blind_spot=card("Blind Spot"),
+deflection=card("Deflection"),
+dreams_of_the_sphinx=card("Dreams of the Sphinx"),
+elder_impersonation=card("Elder Impersonation"),
+eluding_the_arms_of_morpheus=card("Eluding the Arms of Morpheus"),
+enkil_cog=card("Enkil Cog"),
+flurry_of_action=card("Flurry of Action"),
+golconda_inner_peace=card("Golconda: Inner Peace"),
+information_highway=card("Information Highway"),
+lucian_the_perfect=card("Lucian, The Perfect"),
+majesty=card("Majesty"),
+mistress_fanchon=card("Mistress Fanchon"),
+narrow_minds=card("Narrow Minds"),
+obedience=card("Obedience"),
+scourge_of_the_enochians=card("Scourge of the Enochians"),
+seduction=card("Seduction"),
+telepathic_counter=card("Telepathic Counter"),
+villein=card("Villein"),
+zillahs_valley=card("Zillah's Valley"),
+bounces=link("/strategy/fundamentals", _("bounces"), _anchor="bounce"),
+desso_alastors_deck=link("/deck-search", _("Desso Alastor's deck"), id="2021wofo")
+%}
+<h2>Highlights</h2>
+<p>
+    This is a <em>powerbleed</em> deck that relies on big capacity natural bleeders
+    like the Inner Circle and {{ lucian_the_perfect }}, combined with a lot of
+    block denial and, specifically, a good number of {{ blind_spot }}.
+</p>
+<p>
+    The idea is very simple: get two vampires out, then bleed for 6 to 10
+    with each of them, disregarding the possibility of {{ archon_investigation }}.
+    To get the bleed through, there is a bit of stealth but the main strategy
+    is to combine multiple block denials like {{ blind_spot }}, {{ seduction }}
+    and {{ elder_impersonation }} to prevent all the minions of the prey from blocking.
+</p>
+<p>
+    The deck is brutal and can obliterate a table in just 10 turns if it's lucky.
+    {{ blind_spot }} is particularily vicious because it also prevents reactions, hence
+    {{ bounces }}. That makes it harder for the prey to defend against the high bleeds.
+    Of course, for the card to work at all, one needs the highest capacity on the table.
+    Because it relies on block denials, the deck can go through highly defensive
+    toolboxes and walls as if they weren't even there.
+</p>
+<p>
+    The Master module provides crypt acceleration with {{ zillahs_valley }},
+    {{ information_highway }} and {{ dreams_of_the_sphinx }}.
+</p>
+<p>
+    The deck relies on {{ obedience }} and {{ majesty }} to avoid combat and has low
+    defense against bleeds from the predator: only a couple of {{ telepathic_counter }}.
+</p>
+<h2>Tips & Tricks</h2>
+<p>
+    {{ lucian_the_perfect }} is the most desirable vampire here: he bleeds harder, and
+    his ability makes him a decent blocker, especially combined with Majesty.
+    The deck has no intercept, but his ability to block swarms that do not use stealth
+    is actually pretty high between {{ majesty }}, {{ obedience }} and
+    {{ eluding_the_arms_of_morpheus }}.
+</p>
+<p>
+    The deck fields only a few cards for bloat, but they bloat hard: the {{ villein }}
+    will be played for 5, and the one {{ golconda_inner_peace }} can be used to recoup
+    11 pool in a single stroke if needed.
+</p>
+<p>
+    {{ flurry_of_action }} is versatile here: it can be used to unlock, especially
+    if {{ mistress_fanchon }} is out, so she can use her special ability after the bleed,
+    but also just to stay unlocked for defense. Interestingly, it can also be used
+    at inferior {{ cel }} to cycle cards and go fetch the right combination for the next
+    bleed.
+</p>
+<p>
+    {{ enkil_cog }} is, of course, desirable. Especially because one can use it to bleed
+    during the prey's turn, which will completely negate the possibility of an
+    {{ archon_investigation }}: since it's an out-of-turn Master, it cannot be played
+    by the prey during their own turn.
+</p>
+<h2>Variants</h2>
+<p>
+    A few adaptations can be made without messing too much with the proportions here.
+    Most notably, a bit more bleed defense with {{ deflection }} for example.
+    In that case, one might want to cut {{ narrow_minds }}.
+    {{ scourge_of_the_enochians }} might be a valuable inclusion if swarms are expected.
+    See {{ desso_alastors_deck }} for an example.
+</p>
+{% endtrans %}
+{% endblock %}

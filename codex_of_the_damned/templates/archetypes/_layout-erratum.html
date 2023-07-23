@@ -1,3 +1,14 @@
+{% macro declining() -%}
+<p>
+    {% trans trimmed
+        meta=link("/strategy/articles/advanced/the-game-of-the-game", _("meta"))
+    %}
+    This archetype has been historically successful but did not register significant wins since the latest expansions:
+    it might be less relevant today depending on your {{ meta }}.
+    {% endtrans %}
+</p>
+{%- endmacro %}
+
 {% macro pentextmsubversion( solution = "remove" ) -%}
 <p>
     {% trans trimmed

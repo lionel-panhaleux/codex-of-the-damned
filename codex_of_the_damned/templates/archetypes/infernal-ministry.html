@@ -1,0 +1,100 @@
+{% extends "archetypes/_layout.html" %}
+{% import "archetypes/_layout-erratum.html" as erratum with context %}
+{% import "archetypes/infernal-ministry.json" as deck_json %}
+
+{% block meta %}
+<meta property="decklist" content='{{ deck_json | tojson }}' />
+{% endblock %}
+
+{% block archetype_name %}
+<h1>{{ ministry }} Infernal Ministry</h1>
+{% endblock %}
+
+{% block archetype %}
+{% trans trimmed
+    anarchist_uprising=card("Anarchist Uprising"),
+    ancilla_empowerment=card("Ancilla Empowerment"),
+    arishat=card("Arishat"),
+    ashur_tablets=card("Ashur Tablets"),
+    bait_and_switch=card("Bait and Switch"),
+    condemnation_mute=card("Condemnation: Mute"),
+    deep_ecology=card("Deep Ecology"),
+    eat_the_rich=card("Eat the Rich"),
+    entrancement=card("Entrancement"),
+    eyes_of_argus=card("Eyes of Argus"),
+    forgotten_labyrinth=card("Forgotten Labyrinth"),
+    garibaldi_meucci_museum=card("Garibaldi-Meucci Museum"),
+    information_highway=card("Information Highway"),
+    kaymakli_fragment=card("Kaymakli Fragment"),
+    kine_resources_contested=card("Kine Resources Contested"),
+    majesty=card("Majesty"),
+    monkey_wrench=card("Monkey Wrench"),
+    on_the_qui_vive=card("On the Qui Vive"),
+    organized_resistance=card("Organized Resistance"),
+    parity_shift=card("Parity Shift"),
+    reckless_agitation=card("Reckless Agitation"),
+    second_tradition_domain=card("Second Tradition: Domain"),
+    unleash_hells_fury=card("Unleash Hell's Fury"),
+    veneficti=card("Veneficti"),
+    villein=card("Villein"),
+    voter_captivation=card("Voter Captivation"),
+    wider_view=card("Wider View"),
+    xeper=card("Xeper, Sultan of Lepers", "Xeper"),
+    infernal_princes=link("/archetypes/infernal-princes")
+%}
+<h2>Highlights</h2>
+<p>
+    This is a <em>vote</em> deck using {{ arishat }} as a star, and Ministry Barons for support.
+</p>
+<p>
+    The game plan is to land high damage votes like {{ reckless_agitation }}, {{ kine_resources_contested }} and
+    {{ eat_the_rich }} regularly, using {{ obf }} for stealth and {{ pre }} for vote pushing. {{ arishat }} controls
+    the opponents' votes, both with her ability and with {{ condemnation_mute }}, effectively disabling
+    any problematic voters on the table.
+</p>
+<p>
+    The defense module is small but effective, using {{ majesty }} to avoid combat and {{ organized_resistance }} and
+    {{ bait_and_switch }} for bleed defense. {{ villein }} is used to recoup pool from the vampires and, coupled with
+    {{ voter_captivation }} can allow for heavy bloating and more minions rather steadily.
+</p>
+<h2>Tips & Tricks</h2>
+<p>
+    The decks makes heavy use of {{ forgotten_labyrinth }} as the main stealth modifier: it costs blood but it easily
+    gets above a {{ second_tradition_domain }} and votes are undirected so some very widespread intercept reactions
+    like {{ eyes_of_argus }} or {{ deep_ecology }} won't help the opponents. 3 stealth undirected is hard to block.
+</p>
+<p>
+    {{ garibaldi_meucci_museum }} is a key card here, since it can fetch back votes ({{ reckless_agitation }},
+    {{ eat_the_rich }}) or bounces ({{ bait_and_switch }}) depending on the situation. Moreover, it can protect the
+    vampires from some dangerous combats.
+</p>
+<p>
+    The number of {{ information_highway }} is unusally high, because it can help getting more titled vampires out more
+    quickly, and get the {{ villein }} / {{ voter_captivation }} going faster.
+</p>
+<p>
+    The deck does not shy away from bleeding from time to time when there's an opening. {{ monkey_wrench }} can be used
+    to maximise these opportunities, otherwise getting the edge even with just a bleed for one might be all what's
+    needed to pass {{ eat_the_rich }}.
+</p>
+<p>
+    {{ unleash_hells_fury }} is a key defensive device here. It can really slow down big capacity predators.
+    Swarm decks will not be too hindered by it though, but {{ anarchist_uprising }} and {{ ancilla_empowerment }}
+    can take care of those in one swift move.
+</p>
+<h2>Variants</h2>
+<p>
+    The inclusion of {{ xeper }} is very specific to the deck presented here: it's more often absent because of his high
+    cost and replaced by a couple of {{ entrancement }} in library. On the reaction side, {{ on_the_qui_vive }} is
+    often preferred to {{ organized_resistance }} since it does not force a block. Some additional Infernal tools can be
+    included too, like {{ veneficti }} or {{ kaymakli_fragment }}.
+</p>
+<p>
+    The idea is close to the {{ infernal_princes }} archetype. Strong votes under {{ obf }},
+    the heavy use of {{ forgotten_labyrinth }} and a bit of {{ pre }} for vote pushing and {{ voter_captivation }},
+    make them share more than half their cards.
+    But the defense strategies are very different: going {{ condemnation_mute }} and {{ bait_and_switch }} or going
+    {{ parity_shift }} with more minions are different game plans.
+</p>
+{% endtrans %}
+{% endblock %}

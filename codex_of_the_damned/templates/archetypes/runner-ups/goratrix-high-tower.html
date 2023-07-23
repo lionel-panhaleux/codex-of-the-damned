@@ -1,0 +1,129 @@
+{% extends "archetypes/_layout.html" %}
+{% import "archetypes/_layout-erratum.html" as erratum with context %}
+{% import "archetypes/runner-ups/goratrix-high-tower.json" as deck_json %}
+
+{% block meta %}
+<meta property="decklist" content='{{ deck_json | tojson }}' />
+{% endblock %}
+
+{% block archetype_name %}
+<h1>{{ tremere_antitribu }} Goratrix High Tower</h1>
+{% endblock %}
+
+{% block archetype %}
+{% trans trimmed
+goratrix=card("Goratrix"),
+sense_the_savage_way=card("Sense the Savage Way"),
+theft_of_vitae=card("Theft of Vitae"),
+carrion_crows=card("Carrion Crows"),
+canine_horde=card("Canine Horde"),
+magic_of_the_smith=card("Magic of the Smith"),
+heart_of_nizchetus=card("Heart of Nizchetus"),
+bowl_of_convergence=card("Bowl of Convergence"),
+ivory_bow=card("Ivory Bow"),
+kevlar_vest=card("Kevlar Vest"),
+ruins_of_ceoris=card("Ruins of Ceoris"),
+cats_guidance=card("Cats' Guidance"),
+anarch_revolt=card("Anarch Revolt"),
+army_of_rats=card("Army of Rats"),
+smiling_jack_the_anarch=card("Smiling Jack, The Anarch"),
+enkil_cog=card("Enkil Cog"),
+eagle_s_sight=card("Eagle's Sight"),
+pentex_subversion=card("Pentex™ Subversion"),
+rutor_s_hand=card("Rutor's Hand"),
+mylan_horseed=card("Mylan Horseed"),
+villein=card("Villein"),
+vessel=card("Vessel"),
+the_erciyes_fragments=card("The Erciyes Fragments"),
+read_the_winds=card("Read the Winds"),
+breath_of_the_dragon=card("Breath of the Dragon"),
+chiropteran_marauder=card("Chiropteran Marauder"),
+abbot=card("Abbot"),
+powerbase_barranquilla=card("Powerbase: Barranquilla"),
+jakub_baranowski_s_deck=link("/deck-search", _("Jakub Baranowski's deck"), id="2013pncnsp")
+%}
+<h2>Highlights</h2>
+<p>
+    This is a <em>wall</em> deck starring {{ goratrix }}.
+    Its superior {{ ANI }} allows him to use
+    {{ sense_the_savage_way }}, a powerful
+    addition to the {{ AUS }} intercept module.
+</p>
+<p>
+    {{ goratrix }} combat ability is very good: as
+    {{ theft_of_vitae }}, its damage can not be prevented.
+    The use of {{ carrion_crows }} for additional damage and
+    {{ canine_horde }} against weapons makes for a powerful
+    but slim combat module.
+</p>
+<p>
+    {{ magic_of_the_smith }} is used to fetch powerful
+    equipments adapted to the table context.
+    {{ heart_of_nizchetus }} is always good,
+    {{ bowl_of_convergence }} adds additional intercept,
+    {{ ivory_bow }},
+    {{ kevlar_vest }} and
+    {{ ruins_of_ceoris }} are great additions for combat.
+</p>
+<p>
+    The intercept module is very heavy, with 20 wakes not counting the
+    {{ cats_guidance }}, 9 bleed bounces to help deliver
+    pool damage to the prey, and a total of 45 bonus intercept available accross 45 reaction cards.
+</p>
+<p>
+    Pool damage is done using
+    {{ anarch_revolt }},
+    {{ army_of_rats }} and
+    {{ smiling_jack_the_anarch }}, with the addition of
+    {{ enkil_cog }} at some point to have
+    {{ goratrix }} bleed for 3 at the end of its predator's turn
+    if he is still unlocked.
+</p>
+<p>
+    {{ anarch_revolt }} is ineffective if the prey gets
+    <em>Anarch</em> vampires into play, but {{ eagle_s_sight }}
+    can be used to intercept these <em>Anarchs</em> whatever they do and dispose of them quickly.
+</p>
+<h2>Tips & Tricks</h2>
+<p>
+    The sidekicks in the crypt also have the {{ AUS }}{{ ANI }} disciplines combination
+    to help with intercept in case a {{ pentex_subversion }} is played.
+</p>
+<p>
+    {{ rutor_s_hand }} and {{ mylan_horseed }} are used to enable
+    {{ goratrix }} to act and still stay unlocked.
+</p>
+<p>
+    {{ villein }} and {{ vessel }} are used to bloat a bit from
+    {{ goratrix }}, as its combat ability should ensure he never runs out of blood.
+</p>
+<p>
+    Given the disciplines span available to {{ goratrix }},
+    {{ the_erciyes_fragments }} becomes very versatile.
+    It can provide additional wakes and bounces but also bleed enhancers.
+</p>
+<h2>Variants</h2>
+<p>
+    There are not many variants in this archetype.
+    {{ read_the_winds }} is often included in the intercept module,
+    and surprise aggravated damage from {{ vic }} can be added, like
+    {{ breath_of_the_dragon }} or {{ chiropteran_marauder }}.
+</p>
+<p>
+    It is possible to build a non-anarch version of this archetype. It looses the damages from
+    {{ anarch_revolt }}, but gains access to {{ abbot }} and {{ powerbase_barranquilla }},
+    like in {{ jakub_baranowski_s_deck }} from the 2013 Polish NC.
+</p>
+{% endtrans %}
+{% endblock %}
+
+{% block errata %}
+<div class="insert warn">
+    <h3>Errata</h3>
+    {{ erratum.pentextmsubversion( 'remove' ) }}
+</div>
+<div class="insert warn">
+    <h3>Declining</h3>
+    {{ erratum.declining() }}
+</div>
+{% endblock %}

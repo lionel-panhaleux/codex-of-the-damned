@@ -1,0 +1,100 @@
+{% extends "archetypes/_layout.html" %}
+{% import "archetypes/_layout-erratum.html" as erratum with context %}
+{% import "archetypes/lasombra-nocturn.json" as deck_json %}
+
+{% block meta %}
+<meta property="decklist" content='{{ deck_json | tojson }}' />
+{% endblock %}
+
+{% block archetype_name %}
+<h1>{{ lasombra }} Lasombra Nocturn</h1>
+{% endblock %}
+
+{% block archetype %}
+{% trans trimmed
+govern_the_unaligned=card("Govern the Unaligned"),
+nocturn=card("Nocturn"),
+the_unmasking=card("The Unmasking"),
+elysian_fields=card("Elysian Fields"),
+deflection=card("Deflection"),
+delaying_tactics=card("Delaying Tactics"),
+pentex_subversion=card("Pentex™ Subversion"),
+on_the_qui_vive=card("On the Qui Vive"),
+zaire_river_ferry=card("Zaire River Ferry"),
+anarch_convert=card("Anarch Convert"),
+henri_lavenant=card("Henri Lavenant"),
+ermenegildo_the_rake=card("Ermenegildo, The Rake"),
+banjoko=card("Banjoko"),
+tattoo_signal=card("Tattoo Signal"),
+watchtower_four_ride_forth=card("Watchtower: Four Ride Forth"),
+remover=card("Remover"),
+the_admonitions=card("The Admonitions"),
+moises_deck=link("/deck-search", _("Moisés Ferrer's deck"), id="2020smpdms"),
+kiasyd_stealth_bleed=link("/archetypes/bibliodeque/kiasyd-stealth-bleed"),
+johns_deck=link("/deck-search", _("John Eno's deck"), id="2016ftno")
+%}
+<h2>Highlights</h2>
+<p>
+    This is a <em>stealth & bleed</em> deck using the Lasombra clan, with the {{ DOM }}{{ OBT }} disciplines.
+    During the beginning, it uses {{ govern_the_unaligned }}
+    to get vampires out faster and cheaper. When enough minions are into play, it switches to delivering
+    strong bleed actions using {{ OBT }} for stealth.
+</p>
+<p>
+    The deck uses {{ nocturn }} to protect its vampires from agression,
+    but also to deliver more bleed in a single turn. At some point,
+    {{ the_unmasking }} comes into play and makes them even better defenders.
+</p>
+<p>
+    Stealth is high, with 14 stealth modifiers and
+    {{ elysian_fields }} as a permanent enhancer.
+</p>
+<p>
+    {{ deflection }} and {{ delaying_tactics }} defend against bleed and votes,
+    and the deck uses no combat card at all, relying entirely on the
+    {{ nocturn }} and stealth to avoid it.
+</p>
+<h2>Tips & Tricks</h2>
+<p>
+    One or two {{ nocturn }} should be brought into play each turn.
+    Keeping one in hand just to make sure it can be brought into play the next turn makes sense.
+</p>
+<p>
+    {{ pentex_subversion }} can be used for the lunge if the prey has a strong blocker.
+</p>
+<p>
+    {{ on_the_qui_vive }} can also be used by a {{ nocturn }} so it can bleed
+    <em>and</em> block a rush action.
+</p>
+<p>
+    {{ zaire_river_ferry }} is an additional stealth
+    enhancer, plus it prevents rush actions: a nice combination.
+</p>
+<h2>Variants</h2>
+<p>
+    This example decklist uses an unusually high number of {{ nocturn }}.
+    The <strong>Standard</strong> variant uses somewhere between 5 and 12 of them, and more
+    {{ govern_the_unaligned }} and stealth modifiers.
+    {{ moises_deck }} from 2020 is a good example.
+</p>
+<p>
+    In a sense, the {{ kiasyd_stealth_bleed }} archetype can be seen as a variation
+    of this one.
+</p>
+<p>
+    The <strong>Black Hand</strong> variant uses groups 3 and 4 to include
+    {{ henri_lavenant }} alongside {{ ermenegildo_the_rake }} and
+    {{ banjoko }}, so it can use Black Hand cards like {{ tattoo_signal }},
+    {{ watchtower_four_ride_forth }} and {{ remover }}.
+    {{ johns_deck }} from 2016 is a good example.
+</p>
+{% endtrans %}
+{% endblock %}
+
+{% block errata %}
+<div class="insert warn">
+    <h3>Errata</h3>
+    {{ erratum.pentextmsubversion( 'undecided' )}}
+    {{ erratum.antheliostheredstar() }}
+</div>
+{% endblock %}

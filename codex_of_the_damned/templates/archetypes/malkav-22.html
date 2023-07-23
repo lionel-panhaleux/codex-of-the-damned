@@ -1,0 +1,100 @@
+{% extends "archetypes/_layout.html" %}
+{% import "archetypes/_layout-erratum.html" as erratum with context %}
+{% import "archetypes/malkav-22.json" as deck_json %}
+
+{% block meta %}
+<meta property="decklist" content='{{ deck_json | tojson }}' />
+{% endblock %}
+
+{% block archetype_name %}
+<h1>{{ malkavian }} Malkav' 22</h1>
+{% endblock %}
+
+{% block archetype %}
+{% trans trimmed
+anarch_troublemaker=card("Anarch Troublemaker"),
+blood_doll=card("Blood Doll"),
+carlton_van_wyk=card("Carlton Van Wyk"),
+conditioning=card(""),
+deflection=card("Deflection"),
+delaying_tactics=card("Delaying Tactics"),
+dreams_of_the_sphinx=card("Dreams of the Sphinx"),
+elder_library=card("Elder Library"),
+entrancement=card("Entrancement"),
+far_mastery=card("Far Mastery"),
+govern_the_unaligned=card("Govern the Unaligned"),
+haqims_law_retribution=card("Haqim's Law: Retribution"),
+heart_of_nizchetus=card("Heart of Nizchetus"),
+hide_the_mind=card("Hide the Mind"),
+krcg_news_radio=card("KRCG News Radio"),
+liquidation=card("Liquidation"),
+misdirection=card("Misdirection"),
+muddled_vampire_hunter=card("Muddled Vampire Hunter"),
+no_trace=card("No Trace"),
+pentex_subversion=card("Pentex™ Subversion"),
+secure_haven=card("Secure Haven"),
+spying_mission=card("Spying Mission"),
+telepathic_misdirection=card("Telepathic Misdirection"),
+the_barrens=card("The Barrens"),
+vessel=card("Vessel"),
+villein=card("Villein"),
+wash=card("Wash"),
+malkav_94=link("/archetypes/bibliodeque/malkav-94"),
+javier_naranjos_deck=link("/deck-search", _("Javier Naranjo's deck"), id="10271")
+%}
+<h2>Highlights</h2>
+<p>
+    This is a <em>stealth & bleed</em> deck using V5 Malkavians, with the {{ DOM }}{{ OBF }} disciplines.
+    During the beginning, it uses {{ govern_the_unaligned }}
+    to get vampires out faster and cheaper. When enough minions are into play, it switches to delivering
+    strong bleed actions using {{ OBF }} for stealth.
+</p>
+<p>
+    The deck uses {{ deflection }} ot the occasional {{ aus }} bounce to redirect bleeds to its prey and
+    {{ delaying_tactics }} to defend against votes. It has virtually no combat defence,
+    focusing solely on raw and brutal bleed power with an unusually high count of 
+    {{ govern_the_unaligned }} and {{ conditioning }}.
+</p>
+<p>
+    Stealth is exceptionnaly high, with a third of the cards being stealth action modifiers or block denials,
+    and a couple of tactical Master cards on top to limit the number of potential blockers: {{ pentex_subversion }},
+    {{ misdirection }} and {{ anarch_troublemaker }}.
+</p>
+<p>
+    The master module provides multiple cycling tools to enhance the card flow and avoid being jammed by the numerous
+    stealth cards: a good number of {{ dreams_of_the_sphinx }} of course, but also {{ the_barrens }} and
+    {{ elder_library }}
+</p>
+<h2>Tips & Tricks</h2>
+<p>
+    Timing is critical when playing this deck: going forward too hard and too soon against the prey can cripple her
+    too badly and ultimately advantage a cross-table opponent too much and give them the game. The whole idea is to
+    clamly get 4 vampires out with {{ govern_the_unaligned }}, giving time to the opponents to develop and get their
+    game underway, before slamming down the hammer of 4-6 bleeds on the table.
+</p>
+<p>
+    A key difficulty for this deck is to avoid ousting its grand-prey by mistake because of a bounce on a high-stealth
+    strong bleed. Hence the good number of {{ spying_mission }}: it can be used at superior {{ OBF }} to avoid damaging
+    a non-prey opponent. {{ hide_the_mind }} participates to the same logic by providing a tactical counter against
+    {{ AUS }} bounces like {{ telepathic_misdirection }}.
+</p>
+<p>
+    {{ wash }} is a bleed in disguise: its point is to cancel bloat Master cards like {{ villein }}, {{ blood_doll }}
+    or {{ liquidation }}. But it can obviously also be very useful to prevent a permanent intercept location like
+    {{ krcg_news_radio }} or big threats from the opponent like {{ haqims_law_retribution }}.
+</p>
+<h2>Variants</h2>
+<p>
+    This build is a variant of the good old {{ malkav_94 }} archetype, celebrating the return of {{ DOM }} as a clan
+    discipline for Malkavians. The proportion of stealth has to be adapted to the meta, and wether or not to include
+    combat defense like {{ no_trace }} and {{ secure_haven }} really depends on the expected opposition.
+</p>
+<p>
+    A bit more defense can be added to the mix with {{ carlton_van_wyk }} and {{ muddled_vampire_hunter }} if one bets
+    on {{ entrancement }} or {{ far_mastery }} being rare inclusions in the opponents decks. {{ heart_of_nizchetus }} 
+    is definitely an option to help with the card flow and {{ vessel }} can be considered to better manage the
+    blood-pool repartition. All in all the deck can be more compact and stand comfortably in the 72-82 range.
+    See for example {{ javier_naranjos_deck }} for an alternate take on the archetype.
+</p>
+{% endtrans %}
+{% endblock %}

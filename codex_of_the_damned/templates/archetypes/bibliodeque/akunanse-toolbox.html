@@ -1,0 +1,129 @@
+{% extends "archetypes/_layout.html" %}
+{% import "archetypes/_layout-erratum.html" as erratum with context %}
+{% import "archetypes/bibliodeque/akunanse-toolbox.json" as deck_json %}
+
+{% block meta %}
+<meta property="decklist" content='{{ deck_json | tojson }}' />
+{% endblock %}
+
+{% block archetype_name %}
+<h1>{{ akunanse }} Akunanse Toolbox</h1>
+{% endblock %}
+
+{% block archetype %}
+{% trans trimmed
+raven_spy=card("Raven Spy"),
+cats_guidance=card("Cat's Guidance"),
+sense_the_savage_way=card("Sense the Savage Way"),
+predators_communion=card("Predator's Communion"),
+invoking_the_beast=card("Invoking the Beast"),
+carrion_crows=card("Carrion Crows"),
+deep_song=card("Deep Song"),
+predators_mastery=card("Predator's Mastery"),
+powerbase_luanda=card("Powerbase: Luanda"),
+well_marked=card("Well-Marked"),
+shaman=card("Shaman"),
+freak_drive=card("Freak Drive"),
+fakir_al_sidi=card("Fakir al Sidi"),
+matata=card("Matata"),
+devil_channel_back=card("Devil-Channel: Back"),
+devil_channel_hands=card("Devil-Channel: Hands"),
+pack_alpha=card("Pack Alpha"),
+duma_rafiki=card("Duma Rafiki"),
+elephant_guardian=card("Elephant Guardian"),
+abombwe=card("Abombwe"),
+sanjo=card("Sanjo"),
+umdava=card("Umdava"),
+nkule_galadima=card("Nkule Galadima"),
+uchenna=card("Uchenna"),
+no_secrets_from_the_magaji=card("No Secrets From the Magaji"),
+a_b=link("/strategy/fundamentals", _("A&B"), _anchor="AB"),
+michael_bartsch=link("/deck-search", _("Michael Bartsch"), id="2012ghn"),
+noel_gimenez_infantes_deck=link("/deck-search", _("Noel Giménez Infante's deck"), id="2012secqbdvs")
+%}
+<h2>Highlights</h2>
+<p>
+    This is an Akunanse <em>toolbox</em> deck, using {{ ABO }}{{ ANI }}{{ FOR }}.
+    Depending on the build, it can be a pure wall or use <em>Magaji</em> and include some political cards.
+    The idea is to use the classical big capacity {{ ani }} Intercept combination
+    ({{ raven_spy }}, {{ cats_guidance }}, {{ sense_the_savage_way }})
+    combined with the excellent {{ abo }} wake/intercept card: {{ predators_communion }}.
+</p>
+<p>
+    The combat module is short-ranged, using
+    {{ invoking_the_beast }} in combination with {{ carrion_crows }}.
+    {{ for }} provides a welcome damage prevention for more sturdiness.
+</p>
+<p>
+    This is a slow play, slowing down the prey and predator and bloating a bit with Master cards,
+    all the while bleeding when possible with {{ deep_song }} and {{ predators_mastery }}.
+</p>
+<h2>Tips & Tricks</h2>
+<p>
+    As Akunanse are Laibon, they have access to some niche cards:
+    {{ powerbase_luanda }} is invaluable for increasing the rush power,
+    {{ well_marked }} helps with damage mitigation and {{ shaman }}
+    is slightly better than a {{ raven_spy }}.
+</p>
+<p>
+    {{ for }} provides the excellent {{ freak_drive }}, improving {{ a_b }} quite a bit.
+</p>
+<p>
+    Combining the big capacity vampires access to {{ sense_the_savage_way }} with
+    {{ predators_communion }} and {{ cats_guidance }} means every reaction card is a wake
+    of some kind. This makes for a strong wall.
+</p>
+<p>
+    Both {{ fakir_al_sidi }} and {{ matata }} have a +1 strength bonus and a press,
+    a nice combination for the short-ranged combat module.
+</p>
+<h2>Creator Insights</h2>
+<p>
+    <em>Dávid Farkas</em> was kind enough to provide the following insights:
+</p>
+<p>
+    The biggest strenght of the deck are <strong>permanency</strong> and <strong>versatility</strong>.
+</p>
+<p>
+    By <strong>permanency</strong>, I mean that even with 100% hand jam, the deck can function just fine.
+    {{ fakir_al_sidi }} and {{ matata }} can both fight a combat and deal a total of
+    4 damage without a single card. Permanent intercept is also awesome.
+</p>
+<p>
+    As for <strong>versatility</strong>, every single intercept reaction is also a form of wake.
+    The fact that {{ deep_song }} is both a rush and a bleed means
+    that the deck has an usual lunge potential, as he can bleed for 9 with 3 minions.
+</p>
+<h2>Variants</h2>
+<p>
+    Minor variations exist for the combat module, as it can also contain
+    {{ devil_channel_back }} and/or {{ devil_channel_hands }}.
+</p>
+<p>
+    An original module played by {{ michael_bartsch }} in 2015 uses
+    {{ pack_alpha }} alongside {{ duma_rafiki }} and {{ elephant_guardian }}.
+</p>
+<p>
+    Many versions of this deck also include the {{ abombwe }}
+    discipline card: as it's a <em>Trifle</em>, hence a cheap card to improve
+    {{ fakir_al_sidi }} or {{ sanjo }}.
+</p>
+<p>
+    The <strong>Magaji</strong> variant disregards
+    {{ fakir_al_sidi }} and {{ matata }} to use the <em>Magaji</em> {{ umdava }} and
+    {{ nkule_galadima }} instead.
+    Together with {{ uchenna }}, they all can play {{ no_secrets_from_the_magaji }},
+    a powerful addition to the intercept module. Furthermore, this allows the inclusion of some political actions
+    for a bit more versatility. To free some slots up, the bleed power of the deck is toned down.
+    {{ noel_gimenez_infantes_deck }} from the 2012 Spanish ECQ is a good example of this variant.
+</p>
+{% endtrans %}
+{% endblock %}
+
+{% block errata %}
+<div class="insert warn">
+    <h3>Errata</h3>
+    {{ erratum.pentextmsubversion('remove') }}
+    {{ erratum.villein() }}
+</div>
+{% endblock %}
