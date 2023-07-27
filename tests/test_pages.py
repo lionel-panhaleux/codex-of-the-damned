@@ -29,18 +29,26 @@ def test(client, page):
     parser = PageParser()
     parser.feed(response.data.decode(response.charset))
     for url in parser.urls:
+        # pass some urls - too much anti-scrapping stuff there
+        if url.startswith("https://www.ebay.com"):
+            continue
+        if url.startswith("https://www.kickstarter.com"):
+            continue
         try:
-            requests.request(
-                "HEAD", url, timeout=10, headers={"User-Agent": "python"}
-            ).raise_for_status()
-        except requests.exceptions.HTTPError:
-            requests.get(
-                url,
-                timeout=10,
-                headers={
-                    "User-Agent": "Mozilla/5.0 (compatible; python/3.9)",
-                },
-            ).raise_for_status()
+            try:
+                requests.request(
+                    "HEAD", url, timeout=10, headers={"User-Agent": "python"}
+                ).raise_for_status()
+            except requests.exceptions.HTTPError:
+                requests.get(
+                    url,
+                    timeout=10,
+                    headers={
+                        "User-Agent": "Mozilla/5.0 (compatible; python/3.9)",
+                    },
+                ).raise_for_status()
+        except Exception:
+            assert False, url
         VISITED.add(url)
 
 
