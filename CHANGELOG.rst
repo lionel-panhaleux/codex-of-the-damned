@@ -4,7 +4,10 @@ Changelog
 1.58 (unreleased)
 -----------------
 
-- Nothing changed yet.
+- Updated archetypes
+- New article: Guide for MTG players
+- New article: What should I buy ?
+
 
 
 1.57 (2023-02-04)
