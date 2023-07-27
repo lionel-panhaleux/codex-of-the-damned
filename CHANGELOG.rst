@@ -1,7 +1,7 @@
 Changelog
 =========
 
-1.58 (unreleased)
+1.58 (2023-07-27)
 -----------------
 
 - Updated archetypes
