@@ -223,6 +223,10 @@ def index(lang_code=None, page=None):
         page = "index.html"
         redirect = True
     if not lang_code or lang_code not in app.config["SUPPORTED_LANGUAGES"].keys():
+        # if there is no valid lang code, the variable stores the path root
+        # put it back in path
+        if lang_code:
+            page = lang_code + "/" + page
         lang_code = (
             flask.request.accept_languages.best_match(
                 app.config["SUPPORTED_LANGUAGES"].keys()
