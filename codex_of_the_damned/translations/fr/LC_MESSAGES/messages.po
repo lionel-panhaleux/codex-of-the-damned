@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: codex 0.X\n"
 "Report-Msgid-Bugs-To: lionel.panhaleux+codex@gmail.com\n"
-"POT-Creation-Date: 2023-07-27 19:09+0200\n"
+"POT-Creation-Date: 2023-07-28 10:13+0200\n"
 "PO-Revision-Date: 2020-07-04 08:50+0200\n"
 "Last-Translator: Lionel Panhaleux <lionel.panhaleux+codex@gmail.com>\n"
 "Language: fr\n"
@@ -4386,7 +4386,7 @@ msgstr "V5 Ventrue"
 #: codex_of_the_damned/templates/archetypes/neonate/ventrue-grinder.html:39
 #: codex_of_the_damned/templates/archetypes/neonate/ventrue-lawfirm.html:55
 #: codex_of_the_damned/templates/strategy/articles/basic/guide-for-mtg-players.html:103
-#: codex_of_the_damned/templates/strategy/articles/basic/guide-for-mtg-players.html:606
+#: codex_of_the_damned/templates/strategy/articles/basic/guide-for-mtg-players.html:598
 #: codex_of_the_damned/templates/strategy/articles/basic/what-should-i-buy.html:116
 #: codex_of_the_damned/templates/strategy/articles/basic/what-should-i-buy.html:252
 #: codex_of_the_damned/templates/strategy/articles/basic/what-should-i-buy.html:256
@@ -4509,7 +4509,7 @@ msgstr "archétype principal"
 #: codex_of_the_damned/templates/archetypes/neonate/nosferatu-primogens.html:37
 #: codex_of_the_damned/templates/archetypes/neonate/ravnos-clown-car.html:49
 #: codex_of_the_damned/templates/archetypes/neonate/the-unnamed.html:54
-#: codex_of_the_damned/templates/strategy/articles/basic/guide-for-mtg-players.html:538
+#: codex_of_the_damned/templates/strategy/articles/basic/guide-for-mtg-players.html:530
 msgid "V5 Malkavian"
 msgstr "V5 Malkavien"
 
@@ -13626,7 +13626,7 @@ msgstr "V5: Toréador"
 msgid "V5: Tremere"
 msgstr ""
 
-#: codex_of_the_damned/templates/strategy/articles/basic/guide-for-mtg-players.html:698
+#: codex_of_the_damned/templates/strategy/articles/basic/guide-for-mtg-players.html:690
 #: codex_of_the_damned/templates/strategy/table-talk.html:4
 msgid "Table talk"
 msgstr "Discussion"
@@ -13847,7 +13847,7 @@ msgstr ""
 msgid "Table balance"
 msgstr "Équilibre de la Table"
 
-#: codex_of_the_damned/templates/strategy/articles/basic/guide-for-mtg-players.html:663
+#: codex_of_the_damned/templates/strategy/articles/basic/guide-for-mtg-players.html:655
 #: codex_of_the_damned/templates/strategy/table-talk.html:205
 msgid "archetypes"
 msgstr "Archétypes"
@@ -15368,7 +15368,7 @@ msgstr "économie de jetons"
 #: codex_of_the_damned/templates/strategy/articles/basic/guide-for-mtg-players.html:23
 #, python-format
 msgid ""
-"First thing, in VTES you life (pool) is also what you use to summon (influence) your vampires. So, in a sense "
+"First thing, in VTES your life (pool) is also what you use to summon (influence) your vampires. So, in a sense "
 "everyone plays black. But, more simply put, even if you don't have to bother with lands, you have to have a real "
 "strategy about the %(beads_economy)s here: how much will you invest in vampires and how much to keep for safety? It's"
 " obiously always better to invest more (more vampires, more actions, more power) but ideally you want to be just shy "
@@ -15857,19 +15857,6 @@ msgid "The two strength scores"
 msgstr "Les deux scores de force"
 
 #: codex_of_the_damned/templates/strategy/articles/basic/guide-for-mtg-players.html:447
-msgid ""
-"In MTG, a creature's strength represents the damage it delivers both to the opponent and to other creatures. In VTES,"
-" a vampire delivers <b>strength damage</b> to other minions, but <b>bleed damage</b> to the opponents pool. This "
-"changes things. The way the game is designed, some vampires can deliver high bleed damage, others are excellent "
-"combatants and can deliver high damage to minions. But the two rarely go hand-in-hand."
-msgstr ""
-"Dans MTG, la force d'une créature représente les dégâts qu'elle inflige à la fois à l'adversaire et aux autres "
-"créatures. Dans VTES, un vampire inflige des <b>dégâts de force</b> aux autres serviteurs, mais des <b>dégâts de "
-"morsure</b> à l'adversaire. Cela change les choses. Vu comme le jeu est conçu, certains vampires peuvent infliger des"
-" dégâts de morsure élevés, d'autres sont d'excellents combattants et peuvent infliger des dégâts importants aux "
-"serviteurs. Mais les deux vont rarement de pair."
-
-#: codex_of_the_damned/templates/strategy/articles/basic/guide-for-mtg-players.html:455
 #, python-format
 msgid ""
 "In VTES, a vampire delivers <b>strength damage</b> to other minions, but <b>bleed damage</b> to the opponents pool. "
@@ -15884,7 +15871,7 @@ msgstr ""
 "serviteurs. Mais les deux vont rarement de pair. Un vampire %(OBF)s%(DOM)s est dangereux en morsure, mais faible au "
 "combat, et un vampire %(POT)s%(ANI)s ne mordra pas beaucoup, mais sera un combattant redoutable."
 
-#: codex_of_the_damned/templates/strategy/articles/basic/guide-for-mtg-players.html:464
+#: codex_of_the_damned/templates/strategy/articles/basic/guide-for-mtg-players.html:456
 #, python-format
 msgid ""
 "And it's not just about strength. A high capacity vampire does not really have \"more life\", nor is it more robust. "
@@ -15902,11 +15889,11 @@ msgstr ""
 "pas de l'endurance : idéalement, leur sang devrait être récupéré avec un %(villein)s pour retourner à l'influence "
 "avant qu'ils ne le perdent."
 
-#: codex_of_the_damned/templates/strategy/articles/basic/guide-for-mtg-players.html:478
+#: codex_of_the_damned/templates/strategy/articles/basic/guide-for-mtg-players.html:470
 msgid "Vampires are lands"
 msgstr "Les vampires sont des terrains"
 
-#: codex_of_the_damned/templates/strategy/articles/basic/guide-for-mtg-players.html:480
+#: codex_of_the_damned/templates/strategy/articles/basic/guide-for-mtg-players.html:472
 #, python-format
 msgid ""
 "We started this article stating that \"life is mana\", but if you think about it, and even though you pay in pool for"
@@ -15921,11 +15908,11 @@ msgstr ""
 "terrains</strong> plus qu'autre chose: sans eux, la plupart de vos cartes sont des cartes mortes et vous arrêtez de "
 "jouer. Ce que vous pouvez jouer dépend de leurs disciplines et les disciplines sont les couleurs d'un deck."
 
-#: codex_of_the_damned/templates/strategy/articles/basic/guide-for-mtg-players.html:490
+#: codex_of_the_damned/templates/strategy/articles/basic/guide-for-mtg-players.html:482
 msgid "Combat is control"
 msgstr "Le combat c'est le contrôle"
 
-#: codex_of_the_damned/templates/strategy/articles/basic/guide-for-mtg-players.html:492
+#: codex_of_the_damned/templates/strategy/articles/basic/guide-for-mtg-players.html:484
 msgid ""
 "Because good combat vampires are often poor bleeders, but mostly because vampires are lands, <b>combat decks are not "
 "\"aggro\"</b>: they are control decks. Putting vampires in torpor slows down your opponents, destroying them is more "
@@ -15936,7 +15923,7 @@ msgstr ""
 "torpeur ralentit vos adversaires, les détruire s'apparente plus à jouer un bon Armageddon : ça peut être dévastateur,"
 " mais il faut chronométrer et bien viser."
 
-#: codex_of_the_damned/templates/strategy/articles/basic/guide-for-mtg-players.html:500
+#: codex_of_the_damned/templates/strategy/articles/basic/guide-for-mtg-players.html:492
 msgid ""
 "By destroying the vampires of your opponents, you slow or even shut them down. Inevitably, this will also advantage "
 "the remaining players: it's disrupting the table balance. Ultimately, you have to do so in a way that advantages you "
@@ -15947,7 +15934,7 @@ msgstr ""
 "faire d'une manière qui vous avantage davantage que les joueurs restants afin que vous finissiez par gagner la "
 "partie."
 
-#: codex_of_the_damned/templates/strategy/articles/basic/guide-for-mtg-players.html:508
+#: codex_of_the_damned/templates/strategy/articles/basic/guide-for-mtg-players.html:500
 msgid ""
 "And it's not easy, because with combat-oriented vampires and cards, you will have poor options to take down your "
 "prey's pool after you dealt with their vampires. Your vampire-killer star might still bleed for only one or two, and "
@@ -15958,7 +15945,7 @@ msgstr ""
 "mordre que pour un ou deux, et vous devez éliminer votre proie avant que votre prédateur ne vous rattrape et ne "
 "marque les 2 points de victoire que vous lui servez sur un plateau."
 
-#: codex_of_the_damned/templates/strategy/articles/basic/guide-for-mtg-players.html:516
+#: codex_of_the_damned/templates/strategy/articles/basic/guide-for-mtg-players.html:508
 msgid ""
 "Delicate planning and foresight are required to win this way. Despite the cards color, decks focused on combat are "
 "not aggro Red decks. They're Blue, maybe Dimir. Their game plan is to win the table in the long run by locking "
@@ -15969,11 +15956,11 @@ msgstr ""
 "jeu est de gagner la table sur le long terme en verrouillant le jeu de tous les adversaires : ils ne visent pas une "
 "victoire rapide."
 
-#: codex_of_the_damned/templates/strategy/articles/basic/guide-for-mtg-players.html:524
+#: codex_of_the_damned/templates/strategy/articles/basic/guide-for-mtg-players.html:516
 msgid "Archetypes parallels"
 msgstr "Correspondances d'archétypes"
 
-#: codex_of_the_damned/templates/strategy/articles/basic/guide-for-mtg-players.html:526
+#: codex_of_the_damned/templates/strategy/articles/basic/guide-for-mtg-players.html:518
 msgid ""
 "It's a bit tricky to make a parallel between MTG deck categories and VTES ones, but let's give it a try so you can "
 "get to know the lay of the land here."
@@ -15981,11 +15968,11 @@ msgstr ""
 "Il est un peu difficile de faire une correspondance entre les catégories de decks MTG et celles de VTES, mais "
 "essayons pour que vous puissiez vous familiariser avec l'état des lieux."
 
-#: codex_of_the_damned/templates/strategy/articles/basic/guide-for-mtg-players.html:533
+#: codex_of_the_damned/templates/strategy/articles/basic/guide-for-mtg-players.html:525
 msgid "Aggro ➔ S&B"
 msgstr "Aggro ➔ S&B"
 
-#: codex_of_the_damned/templates/strategy/articles/basic/guide-for-mtg-players.html:535
+#: codex_of_the_damned/templates/strategy/articles/basic/guide-for-mtg-players.html:527
 #, python-format
 msgid ""
 "<b>Stealth & Bleed decks</b> (S&B in short) are to VTES what the aggro decks are to MTG. Fast heavy damage to your "
@@ -15996,7 +15983,7 @@ msgstr ""
 "rapides à votre proie, orientés vers le côté offensif pour tenter de remporter rapidement la victoire. Le deck "
 "préconstruit %(v5_malkavian)s en est un exemple."
 
-#: codex_of_the_damned/templates/strategy/articles/basic/guide-for-mtg-players.html:547
+#: codex_of_the_damned/templates/strategy/articles/basic/guide-for-mtg-players.html:539
 #, python-format
 msgid ""
 "All types of very forward bleed decks can be thought of as aggro, not only the stealth ones. <b>Powerbleed decks</b> "
@@ -16007,11 +15994,11 @@ msgstr ""
 "la discrétion. <b>Les decks Powerbleed</b> comme %(rebekka_jost)s sont à classer ici. Certains <b>decks d'essaim "
 "agressifs</b> comme %(legacy_of_pander)s et %(weenie_dom)s, sont également éligibles."
 
-#: codex_of_the_damned/templates/strategy/articles/basic/guide-for-mtg-players.html:559
+#: codex_of_the_damned/templates/strategy/articles/basic/guide-for-mtg-players.html:551
 msgid "Control ➔ Rush & Wall"
 msgstr "Control ➔ Rush & Wall"
 
-#: codex_of_the_damned/templates/strategy/articles/basic/guide-for-mtg-players.html:561
+#: codex_of_the_damned/templates/strategy/articles/basic/guide-for-mtg-players.html:553
 #, python-format
 msgid ""
 "There are two kinds of control deck in VTES. <b>Rush decks</b> are active control decks, where you go rush opponents "
@@ -16021,11 +16008,11 @@ msgstr ""
 " allez attaquer les serviteurs adverses pour contrôler la table et la (dés)équilibrer de manière favorable. "
 "%(tupdogs_nephandus)s est un bon exemple."
 
-#: codex_of_the_damned/templates/strategy/articles/basic/guide-for-mtg-players.html:572
+#: codex_of_the_damned/templates/strategy/articles/basic/guide-for-mtg-players.html:564
 msgid "V5 Gangrel preconstructed deck"
 msgstr "deck préconstruit V5 Gangrel"
 
-#: codex_of_the_damned/templates/strategy/articles/basic/guide-for-mtg-players.html:570
+#: codex_of_the_damned/templates/strategy/articles/basic/guide-for-mtg-players.html:562
 #, python-format
 msgid ""
 "<b>Wall decks</b> are reactive control decks, where you use reactions to stop your opponents actions and hurt their "
@@ -16034,7 +16021,7 @@ msgstr ""
 "Les <b>decks wall</b> sont des decks de contrôle réactifs, où vous utilisez des réactions pour arrêter les actions de"
 " vos adversaires et blesser leurs serviteurs, comme le %(v5_gangrel_preconstructed_deck)s."
 
-#: codex_of_the_damned/templates/strategy/articles/basic/guide-for-mtg-players.html:579
+#: codex_of_the_damned/templates/strategy/articles/basic/guide-for-mtg-players.html:571
 msgid ""
 "Whatever the approach and similarily to MTG, actually winning with these decks requires a good grasp of the existing "
 "archetypes so you can assess your opponents' strengths and weaknesses."
@@ -16042,15 +16029,15 @@ msgstr ""
 "Quelle que soit l'approche et de la même manière qu'à MTG, gagner avec ces decks nécessite une bonne compréhension "
 "des archétypes existants afin que vous puissiez évaluer les forces et les faiblesses de vos adversaires."
 
-#: codex_of_the_damned/templates/strategy/articles/basic/guide-for-mtg-players.html:588
+#: codex_of_the_damned/templates/strategy/articles/basic/guide-for-mtg-players.html:580
 msgid "Midrange ➔ toolboxes, vote & bleed"
 msgstr "Midrange ➔ toolboxes, vote & bleed"
 
-#: codex_of_the_damned/templates/strategy/articles/basic/guide-for-mtg-players.html:593
+#: codex_of_the_damned/templates/strategy/articles/basic/guide-for-mtg-players.html:585
 msgid "V5 Box"
 msgstr "Boîte V5"
 
-#: codex_of_the_damned/templates/strategy/articles/basic/guide-for-mtg-players.html:590
+#: codex_of_the_damned/templates/strategy/articles/basic/guide-for-mtg-players.html:582
 #, python-format
 msgid ""
 "<b>Toolboxes</b> evidently match the \"midrange\" idea: they bleed, they block, they do a bit of combat, sometimes "
@@ -16062,7 +16049,7 @@ msgstr ""
 "%(v5_box)s, à l'exception du Malkavian %(malkavian)s, sont des decks midrange dans ce sens, bien qu'ils aient des "
 "approches différentes."
 
-#: codex_of_the_damned/templates/strategy/articles/basic/guide-for-mtg-players.html:603
+#: codex_of_the_damned/templates/strategy/articles/basic/guide-for-mtg-players.html:595
 #, python-format
 msgid ""
 "<b>Vote & bleed decks</b>, often relying on Inner Circle vampires, are definitely midrange. The %(anniversary)s "
@@ -16073,11 +16060,11 @@ msgstr ""
 "midrange. Le deck %(anniversary)s %(stanislava)s en est un bon exemple. Certains decks de morsure lents n'incluent "
 "pas de votes : %(girls)s est également un midrange : bonne défense, agression constante."
 
-#: codex_of_the_damned/templates/strategy/articles/basic/guide-for-mtg-players.html:619
+#: codex_of_the_damned/templates/strategy/articles/basic/guide-for-mtg-players.html:611
 msgid "Combo ➔ swarm, combo"
 msgstr "Combo ➔ swarm, combo"
 
-#: codex_of_the_damned/templates/strategy/articles/basic/guide-for-mtg-players.html:621
+#: codex_of_the_damned/templates/strategy/articles/basic/guide-for-mtg-players.html:613
 #, python-format
 msgid ""
 "Many <b>swarm</b> decks actually fit what an MTG player would expect from a \"combo\" deck. They have a build up "
@@ -16089,7 +16076,7 @@ msgstr ""
 "peut balayer toute la table. Ils s'appuient également sur une combo de 2 ou 3 cartes et de bonnes synergies : les "
 "%(ravnos_clown_car)s, %(emerald_legion)s ou %(khazar_diary)s en sont de bons exemples."
 
-#: codex_of_the_damned/templates/strategy/articles/basic/guide-for-mtg-players.html:632
+#: codex_of_the_damned/templates/strategy/articles/basic/guide-for-mtg-players.html:624
 #, python-format
 msgid ""
 "Then, there are the more intricated <b>combos decks</b> that are also qualified as such by VTES players. They are "
@@ -16102,11 +16089,11 @@ msgstr ""
 "fonctionner assez souvent de très longues combos multi-cartes pour en faire des decks décents. Voir par exemple "
 "%(baltimore_purge)s ou %(cybelotron)s."
 
-#: codex_of_the_damned/templates/strategy/articles/basic/guide-for-mtg-players.html:644
+#: codex_of_the_damned/templates/strategy/articles/basic/guide-for-mtg-players.html:636
 msgid "This is a multiplayer game"
 msgstr "C'est un jeu multijoueurs"
 
-#: codex_of_the_damned/templates/strategy/articles/basic/guide-for-mtg-players.html:646
+#: codex_of_the_damned/templates/strategy/articles/basic/guide-for-mtg-players.html:638
 msgid ""
 "Well, we haven't even talked about the biggest difference yet: while MTG is a duel game, VTES is a multiplayer game. "
 "It is designed and balanced to be played on a table of 4 or 5 players. This has a few important consequences, which "
@@ -16116,11 +16103,11 @@ msgstr ""
 " un jeu multijoueur. Il est conçu et équilibré pour être joué sur une table de 4 ou 5 joueurs. Cela a quelques "
 "conséquences importantes, qui devraient être familières aux joueurs de Commandeur."
 
-#: codex_of_the_damned/templates/strategy/articles/basic/guide-for-mtg-players.html:652
+#: codex_of_the_damned/templates/strategy/articles/basic/guide-for-mtg-players.html:644
 msgid "Table assessment"
 msgstr "Évaluation de la table"
 
-#: codex_of_the_damned/templates/strategy/articles/basic/guide-for-mtg-players.html:654
+#: codex_of_the_damned/templates/strategy/articles/basic/guide-for-mtg-players.html:646
 msgid ""
 "To be able to take any strategic decision, you will need to refine your ability to assess a table. Table assessment "
 "is the art of figuring out quickly who is playing what kind of deck, grasp the kind of resources they are likely to "
@@ -16132,7 +16119,7 @@ msgstr ""
 "susceptibles d'avoir et d'en déduire quelles sont leurs forces et leurs faiblesses. Les adversaires vont pleurnicher "
 "et mentir et essayer de vous manipuler pendant la partie : c'est une grande partie du jeu."
 
-#: codex_of_the_damned/templates/strategy/articles/basic/guide-for-mtg-players.html:662
+#: codex_of_the_damned/templates/strategy/articles/basic/guide-for-mtg-players.html:654
 #, python-format
 msgid ""
 "If you're able to maintain your own perception of what's going on, who's struggling and who's dangerous, you will be "
@@ -16145,11 +16132,11 @@ msgstr ""
 "un autre Mathusalem. Vous devez connaître les différents %(archetypes)s et, idéalement, les jouer pour vous en faire "
 "une idée. C'est l'expérience qui vous permettra d'affiner votre perception de la table."
 
-#: codex_of_the_damned/templates/strategy/articles/basic/guide-for-mtg-players.html:672
+#: codex_of_the_damned/templates/strategy/articles/basic/guide-for-mtg-players.html:664
 msgid "Table fold"
 msgstr "Le pliage de la table"
 
-#: codex_of_the_damned/templates/strategy/articles/basic/guide-for-mtg-players.html:674
+#: codex_of_the_damned/templates/strategy/articles/basic/guide-for-mtg-players.html:666
 msgid ""
 "The way a table <strong>folds</strong> is who gets ousted in which order: like an origami, tables get smaller and "
 "smaller with each oust. When you get better at table assessment, you'll be able to predict and influence how a table "
@@ -16159,7 +16146,7 @@ msgstr ""
 "les tables deviennent de plus en plus petites à chaque élimination. Lorsque vous vous améliorerez dans l'évaluation "
 "de table, vous serez en mesure de prédire et d'influencer la façon dont une table plie."
 
-#: codex_of_the_damned/templates/strategy/articles/basic/guide-for-mtg-players.html:681
+#: codex_of_the_damned/templates/strategy/articles/basic/guide-for-mtg-players.html:673
 msgid ""
 "Coming from MTG, a very fast-paced game where tempo is key, it's easy to fall in the trap of trying to go very hard "
 "and very fast on the left, on the prey. It can absolutely work, but there's a lot more to VTES than this and, on "
@@ -16172,7 +16159,7 @@ msgstr ""
 "expérimentés, vous laisserez tellement de marge de manœuvre à vos futures proies qu'elles auront en fait plus de "
 "chances de gagner la partie que vous."
 
-#: codex_of_the_damned/templates/strategy/articles/basic/guide-for-mtg-players.html:690
+#: codex_of_the_damned/templates/strategy/articles/basic/guide-for-mtg-players.html:682
 msgid ""
 "Getting good at predicting how a table folds is crucial: you want your strategy to take into account the way the game"
 " is likely to progress. This perception is key to how the game is played. At high level, the fold is a cornerstone of"
@@ -16184,7 +16171,7 @@ msgstr ""
 "pliage est une pierre angulaire de la stratégie, à tel point que les joueurs vont délibérément influencer le pliage "
 "lui-même pour pousser les adversaires à changer de stratégie."
 
-#: codex_of_the_damned/templates/strategy/articles/basic/guide-for-mtg-players.html:700
+#: codex_of_the_damned/templates/strategy/articles/basic/guide-for-mtg-players.html:692
 msgid ""
 "Finally, yes, VTES is a game of negotiation and manipulation. You need to talk, to influence others' perception, to "
 "be inventive with the deals you propose to your opponents, all the while maintaining a pleasing and discreet demeanor"
@@ -16195,11 +16182,11 @@ msgstr ""
 "avenante et discrète afin d'éviter les agressions inutiles contre vous et même d'encourager le cadeau occasionnel "
 "d'un léger avantage."
 
-#: codex_of_the_damned/templates/strategy/articles/basic/guide-for-mtg-players.html:709
+#: codex_of_the_damned/templates/strategy/articles/basic/guide-for-mtg-players.html:701
 msgid "table talk section"
 msgstr "section Discussion"
 
-#: codex_of_the_damned/templates/strategy/articles/basic/guide-for-mtg-players.html:708
+#: codex_of_the_damned/templates/strategy/articles/basic/guide-for-mtg-players.html:700
 #, python-format
 msgid ""
 "You can win silently but you'll get consistent in your wins only if you learn how to negotiate well. Check the "
@@ -16208,7 +16195,7 @@ msgstr ""
 "Vous pouvez gagner en silence, mais vous ne gagnerez en constance que si vous apprenez à bien négocier. Consultez la "
 "section %(table_talk_section)s pour une explication détaillée des outils à votre disposition à cet effet."
 
-#: codex_of_the_damned/templates/strategy/articles/basic/guide-for-mtg-players.html:716
+#: codex_of_the_damned/templates/strategy/articles/basic/guide-for-mtg-players.html:708
 #, python-format
 msgid ""
 "The saying is: victory is 50%(percent)s the deck and 50%(percent)s the player. The best players can win tournaments "
