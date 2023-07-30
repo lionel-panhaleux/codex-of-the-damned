@@ -323,6 +323,16 @@
         like {{ force_of_personality }}, {{ touch_of_clarity }}, {{ scourge_of_the_enochians }} and {{ ponticulus }}.
         {% endtrans %}
     </p>
+    <p>
+    {% trans trimmed
+    first_blood_malkavian=external("https://www.blackchantry.com/products/legacy/first-blood/first-blood-malkavian/", "First Blood: Malkavian")
+    %}
+        <strong>Beware for Malkavians</strong> {{ malkavian }}, the ones in this bundle have Dementation {{ dem }}
+        instead of Dominate {{ dom }} as clan discipline. The legacy {{ dem }} is an interesting,
+        albeit a completely separate branch for Malkavians. If you want to go down this road,
+        you might want to look into {{ first_blood_malkavian }} for additional {{ dem }} cards and vampires.
+    {% endtrans %}
+    </p>
 </div>
 
 <div class="column-2">
@@ -502,25 +512,64 @@
 </div>
 
 <div class="column-2">
+    <h3>{{ _('First Blood') }}</h3>
+    <img src="{{ url_for('static', filename='img/first-blood.webp') }}" alt="First Blood">
+        <p>
+        {% trans trimmed
+        first_blood=external("https://www.blackchantry.com/products/legacy/first-blood", "First Blood"),
+        keepers_of_tradition=external("https://www.blackchantry.com/products/legacy/bundles/product-keepers-of-tradition-reprint-bundle-1/", "Keepers of Tradition"),
+        aching_beauty=card("Aching Beauty"),
+        aid_from_bats=card("Aid from Bats"),
+        charnas_the_imp=card("Charnas the Imp", "Charnas"),
+        confusion=card("Confusion"),
+        j_s_simmons_esq=card("J. S. Simmons, Esq.", "J. S. Simmons"),
+        kindred_spirits=card("Kindred Spirits"),
+        laptop_computer=card("Laptop Computer"),
+        legal_manipulations=card("Legal Manipulations"),
+        petra=card("Petra"),
+        powerbase_montreal=card("Powerbase: Montreal"),
+        thadius_zho=card("Thadius Zho"),
+        weighted_walking_stick=card("Weighted Walking Stick")
+        %}
+        The {{ first_blood }} bundles have very few interesting cards,
+        most of them also got a reprint either in V5 products or in the {{ keepers_of_tradition }} bundles.
+        Still, it might be interesting in some case: it has {{ aching_beauty }} for Toreador {{ toreador }}, 
+        rarely used Tremere {{ tremere }} cards ({{ thadius_zho }} and {{ charnas_the_imp }}), but also
+        {{ weighted_walking_stick }}, {{ legal_manipulations }}, and Dementation {{ dem }} cards like
+        {{ kindred_spirits }} and {{ confusion }} if legacy Malkavians {{ malkavian_legacy }} are your thing.
+        The Nosferatu {{ nosferatu }} bundle has the only reprint (for now) of {{ aid_from_bats }},
+        {{ j_s_simmons_esq }}, {{ petra }} and {{ laptop_computer }}, and also has a {{ powerbase_montreal }},
+        so it might be overall good value depending on your collection.
+        {% endtrans %}
+    </p>
+</div>
+
+<div class="column-2">
     <h3>{{ _('The rest') }}</h3>
     <p>
         {% trans trimmed
         shadow_of_berlin=external("https://www.blackchantry.com/products/vampire-the-eternal-struggle-fifth-edition/shadows-of-berlin/", "Shadow of Berlin"),
         danse_macabre=external("https://blackchantry.shop/products/danse-macabre", "Danse Macabre"),
-        heirs_to_the_blood=external("https://www.blackchantry.com/products/legacy/bundles/product-heirs-to-the-blood-reprint-bundle-1/", "Heirs to the Blood"),
+        amber=card("Amber"),
         aranthebes=card("Aranthebes, The Immortal", "Aranthebes"),
-        shadow_boxing=card("Shadow Boxing"),
         esprit_de_corps=card("Esprit De Corps"),
-        melusine_d_anjou=card("Mélusine d'Anjou"),
         johannes_worringen=card("Johannes Worringen"),
-        amber=card("Amber")
+        melusine_d_anjou=card("Mélusine d'Anjou"),
+        shadow_boxing=card("Shadow Boxing")
         %}
         Now depending on the deck you're running, you might be missing just a couple of cards.
         {{ shadow_of_berlin }} has an {{ aranthebes }}, and getting the whole bundle just for it might
         be the best bargain you'll find. {{ danse_macabre }} has fun cards, but unlikely to fit
         your deck, except if you're interested in experimenting with {{ shadow_boxing }} or {{ esprit_de_corps }}
         or if you have a special interest in some vampire exclusive to the set like {{ melusine_d_anjou }},
-        {{ johannes_worringen }} or {{ amber }}. {{ heirs_to_the_blood }} is mostly irrelevant because the cards are all
+        {{ johannes_worringen }} or {{ amber }}.
+        {% endtrans %}
+    </p>
+    <p>
+        {% trans trimmed
+        heirs_to_the_blood=external("https://www.blackchantry.com/products/legacy/bundles/product-heirs-to-the-blood-reprint-bundle-1/", "Heirs to the Blood")
+        %}
+        {{ heirs_to_the_blood }} is mostly irrelevant because the cards are all
         available as print on demand, but it might be worth it if the delivery fees for your location are steep.
         {% endtrans %}
     </p>
@@ -830,7 +879,7 @@
         seeds_of_corruption=card("Seeds of Corruption")
         %}
         {{ anthelios }}, {{ temptation_of_greater_power }} and {{ seeds_of_corruption }}
-        were banned in 2017, and tap/untap have been replace by lock/unlock because of copyright issues.
+        were banned in 2017, and tap/untap have been replace by lock/unlock because of patent issues.
         {% endtrans %}
         </li>
         <li>
