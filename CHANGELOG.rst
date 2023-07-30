@@ -4,7 +4,8 @@ Changelog
 1.59 (unreleased)
 -----------------
 
-- Nothing changed yet.
+- Minor fixes
+- Added a youtube channel to the index
 
 
 1.58 (2023-07-27)
