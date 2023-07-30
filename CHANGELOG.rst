@@ -1,7 +1,7 @@
 Changelog
 =========
 
-1.59 (unreleased)
+1.59 (2023-07-30)
 -----------------
 
 - Minor fixes
