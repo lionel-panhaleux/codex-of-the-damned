@@ -4,7 +4,7 @@ Changelog
 1.60 (unreleased)
 -----------------
 
-- Nothing changed yet.
+- Added BCP guides for V5 Anarch decks
 
 
 1.59 (2023-07-30)
