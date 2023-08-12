@@ -1,7 +1,7 @@
 Changelog
 =========
 
-1.60 (unreleased)
+1.60 (2023-08-12)
 -----------------
 
 - Added BCP guides for V5 Anarch decks
