@@ -4,7 +4,7 @@ Changelog
 1.61 (unreleased)
 -----------------
 
-- Nothing changed yet.
+- Small fixes to archetypes page
 
 
 1.60 (2023-08-12)
