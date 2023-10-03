@@ -4,7 +4,7 @@ Changelog
 1.62 (unreleased)
 -----------------
 
-- Nothing changed yet.
+- Minor fixes (missing links, image size)
 
 
 1.61 (2023-10-03)
