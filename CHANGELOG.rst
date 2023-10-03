@@ -1,7 +1,7 @@
 Changelog
 =========
 
-1.61 (unreleased)
+1.61 (2023-10-03)
 -----------------
 
 - Small fixes to archetypes page
