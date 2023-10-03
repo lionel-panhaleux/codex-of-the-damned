@@ -1,7 +1,7 @@
 Changelog
 =========
 
-1.62 (unreleased)
+1.62 (2023-10-03)
 -----------------
 
 - Minor fixes (missing links, image size)
