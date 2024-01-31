@@ -182,15 +182,13 @@
     <img src="{{ url_for('static', filename='img/lost-kindred.webp') }}" alt="Lost Kindred">
     <p>
         {% trans trimmed
-        lost_kindred=external("https://www.blackchantry.com/products/legacy/bundles/lost-kindred/", "Lost Kindred"),
-        emerald_legion=link("/archetypes/emerald-legion")
+        emerald_legionnaire=card("Emeral Legionnaire"),
+        lost_kindred=external("https://www.blackchantry.com/products/legacy/bundles/lost-kindred/", "Lost Kindred")
         %}
         {{ lost_kindred }} unlocks a couple of other decks: you can put up together a fun
-        Gargoyles {{ gargoyle }} or Samedi {{ samedi }} deck but, more importantly with 2 or 3 of those bundles,
-        and a couple of cards from previous decks and print on-demand, you can build a great {{ emerald_legion }} deck.
-        It's last on the list mostly because the best builds for those clans will require some cards that have not
-        yet been reprinted. But maybe that's not an issue for you at that point,
-        and you already found your way to some nice resellers on the secondary market.
+        Gargoyles {{ gargoyle }}, Harbinger {{ harbinger_of_skulls }} or Samedi {{ samedi }} deck.
+        Previously in high demand for the powerful {{ emerald_legionnaire }},
+        it is now much less appealing since the 2024 errata of the card.
         {% endtrans %}
     </p>
 </div>
@@ -497,7 +495,7 @@
         saatet_ta=card("Saatet-Ta"),
         funeral_wake=card("Funeral Wake"),
         shambling_hordes=link("/archetypes/runner-ups/shambling-hordes"),
-        emerald_legion=link("/archetypes/emerald-legion")
+        emerald_legion=link("/archetypes/bibliodeque/emerald-legion")
         %}
         The Unaligned kickstarter bundles make the end of the list here. {{ unaligned_1 }} is mostly
         interesting if you're into Banu Haqim {{ banu_haqim }}: it gets you {{ flavia }}, {{ omer }} and {{ al_ashrad }},

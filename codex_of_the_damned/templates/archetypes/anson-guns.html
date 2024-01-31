@@ -99,5 +99,10 @@ jorges_deck=link("/deck-search", _("Jorge Delgado's deck"), id="2018bncbb")
     <h3>Errata</h3>
     {{ erratum.pentextmsubversion( 'remove' ) }}
     {{ erratum.parityshift() }}
+    {{ erratum.ashur( 'undecided' ) }}
+</div>
+<div class="insert warn">
+    <h3>Declining</h3>
+    {{ erratum.declining() }}
 </div>
 {% endblock %}

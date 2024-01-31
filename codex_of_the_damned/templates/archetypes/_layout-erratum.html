@@ -27,6 +27,42 @@
 </p>
 {%- endmacro %}
 
+{% macro ashur( solution = "adjust" ) -%}
+<p>
+    {% trans trimmed
+        ashur_tablets=card('Ashur Tablets')
+    %}
+    {{ ashur_tablets }} has been modified by an <em>errata</em> in February 2024.
+    Only one can be played per turn now,
+    {% endtrans %}
+    {% if solution == 'adjust' %}
+    {{ _('so less copies should be included, and the deck is markedly less powerful.') }}
+    {% elif solution == 'undecided' %}
+    {{ _('but how much impact it does have on that deck is unclear.') }}
+    {% else %}
+    {{ _('but that should not change much in this deck.') }}
+    {% endif %}
+</p>
+{%- endmacro %}
+
+{% macro emerald( solution = "adjust" ) -%}
+<p>
+    {% trans trimmed
+        emerald_legionnaire=card('Emeral Leegionnaire')
+    %}
+    {{ emerald_legionnaire }} has been modified by an <em>errata</em> in February 2024.
+    Their ability can only be triggered with enough Harbingers {{ harbinger_of_skulls }},
+    {% endtrans %}
+    {% if solution == 'adjust' %}
+    {{ _('which makes them, and this deck, markedly less powerful.') }}
+    {% elif solution == 'undecided' %}
+    {{ _('but how much impact it does have in nthis deck is unclear.') }}
+    {% else %}
+    {{ _('but that should not change much in this deck.') }}
+    {% endif %}
+</p>
+{%- endmacro %}
+
 {% macro villein() -%}
 <p>
     {% trans trimmed

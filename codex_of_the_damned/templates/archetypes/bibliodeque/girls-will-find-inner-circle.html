@@ -1,6 +1,6 @@
 {% extends "archetypes/_layout.html" %}
 {% import "archetypes/_layout-erratum.html" as erratum with context %}
-{% import "archetypes/girls-will-find-inner-circle.json" as deck_json %}
+{% import "archetypes/bibliodeque/girls-will-find-inner-circle.json" as deck_json %}
 
 {% block meta %}
 <meta property="decklist" content='{{ deck_json | tojson }}' />
@@ -30,7 +30,7 @@ rat_s_warning=card("Rat's Warning"),
 villein=card("Villein"),
 zillah_s_valley=card("Zillah's Valley"),
 hugh_angseeing_s_deck=link("/deck-search", _("Hugh Angseeing's deck"), id="2011fcqco"),
-mmpa_politics=link("/archetypes/runner-ups/mmpa-politics", "MMPA Politics")
+mmpa_politics=link("/archetypes/bibliodeque/mmpa-politics", "MMPA Politics")
 %}
 <h2>Highlights</h2>
 <p>
@@ -95,5 +95,6 @@ mmpa_politics=link("/archetypes/runner-ups/mmpa-politics", "MMPA Politics")
 <div class="insert warn">
     <h3>Errata</h3>
     {{ erratum.pentextmsubversion( 'undecided' ) }}
+    {{ erratum.ashur() }}
 </div>
 {% endblock %}

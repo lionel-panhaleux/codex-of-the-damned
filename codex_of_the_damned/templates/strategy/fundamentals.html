@@ -266,11 +266,17 @@ wake_with_evenings_freshness=card("Wake with Evening's Freshness")
             {{ card("Second Tradition: Domain") }}
             ({{ _('Prince or Justicar') }})
         </li>
+        <li>
+            {{ card("Organised Resistance") }}
+            ({{ _('Baron') }})
+        </li>
         <li>{{ card("Eternal Vigilance") }} ({{ _('titled Sabbat') }})</li>
         <li>{{ card("Under Siege") }} ({{ _('titled Sabbat') }})</li>
         <li>{{ card("Rat's Warning") }} {{ ani }}</li>
         <li>{{ card("Guard Dogs") }} {{ ani }}</li>
+        <li>{{ card("Black Sunrise") }} {{ QUI }}</li>
         <li>{{ card("Eyes of Argus") }} {{ AUS }}</li>
+        <li>{{ card("Forced Vigilance") }} {{ FOR }}</li>
         <li>{{ card("Predator's Communion") }} {{ ABO }}</li>
         <li>{{ card("Read the Winds") }} {{ AUS }}{{ ANI }}</li>
         <li>{{ card("Speak With Spirits") }} {{ SPI }}</li>
@@ -278,10 +284,20 @@ wake_with_evenings_freshness=card("Wake with Evening's Freshness")
             {{ card("Sense the Savage Way") }}
             ({{ _('Big capacity') }} {{ ANI }})
         </li>
+        <li>{{ card("Eyes of the Wild") }} {{ gangrel }}</li>
+        <li>{{ card("Their Master's Voice") }} ({{ tremere }}/{{tremere_antitribu}} {{ gargoyle }})</li>
+        <li>{{ card("One with the Land") }} ({{ PRO }} {{ tzimisce }})</ li>
+        <li>){{ card("Deep Ecology") }} ({{ pro }} Anarch)</li>
         <li>{{ card("The Mole") }} ({{ ani }} {{ _('Anarch') }})</li>
         <li>{{ card("Netwar") }} ({{ chi }} {{ _('Anarch') }})</li>
         <li>{{ card("Angel of Berlin") }} ({{ _('Imbued') }})</li>
     </ul>
+    <p>
+        {% trans trimmed %}
+        Some cards provide an ability to unlock after a block or not lock at all for it,
+        like {{ atonement }}, {{ cats_guidance }} or {{ guardian_vigil }}.
+        {% endtrans %}
+    </p>
 </div>
 {% trans trimmed
 the_embrace=card("The Embrace"),
@@ -434,6 +450,9 @@ harzomatuili=card("Harzomatuili")
             {{ ani }}
         </li>
         <li>
+            {{ card("Feral Hound") }} {{ ravnos }} {{ ani }}
+        </li>
+        <li>
             {{ card("Abbot") }}
             ({{ _('Sabbat') }})
         </li>
@@ -481,17 +500,22 @@ harzomatuili=card("Harzomatuili")
     elder_impersonation=card("Elder Impersonation"),
     call_of_the_hungry_dead=card("Call of the Hungry Dead"),
     blanket_of_night=card("Blanket of Night"),
-    seduction=card("Seduction")
+    seduction=card("Seduction"),
+    forced_confessional=card("Forced Confessional"),
+    daring_the_dawn=card("Daring the Dawn")
     %}
     On the other hand, whatever level of intercept one manages to achieve, stealth specialised decks
     often include some <strong>block denial</strong> modifiers atop normal stealth.
     {{ OBF }} {{ elder_impersonation }},
-    {{ NEC }} {{ call_of_the_hungry_dead }}
-    and {{ OBT }} {{ blanket_of_night }}
+    {{ NEC }} {{ call_of_the_hungry_dead }},
+    {{ OBT }} {{ blanket_of_night }},
+    and {{ salubri }}{{ DOM }} {{ forced_confessional }}
     are the only full-purpose block denials of the game. However, {{ DOM }} gives access to
     {{ seduction }} which is still a strong denial,
     even if it is less efficient against wakes. Many disciplines give access to lesser block denials
     that only work against allies and younger vampires, but they are less used.
+    {{ for }} deserves a mention too with {{ daring_the_dawn }},
+    although the drawback of going to torpor is something to account for.
     {% endtrans %}
 </p>
 {% endblock %}
