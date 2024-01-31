@@ -1,3 +1,4 @@
+{% import "_layout_promo.html" as promo %}
 <!DOCTYPE html>
 <html lang="{{ lang }}">
 
@@ -83,6 +84,7 @@
         </nav>
     </header>
 
+    {{ promo }}
     {% block article %}
     <article>
         {% block content %}{% endblock %}
