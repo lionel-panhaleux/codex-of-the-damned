@@ -5,7 +5,7 @@
 <p>
     {% trans trimmed %}
     These are guides to help you decide what to buy. Your choices will depend primarily
-    on whether you're a 
+    on whether you're a
     <a href="#neonate-joining-the-night">Neonate joining the night</a>
     or an <a href="#elder-coming-out-of-torpor">Elder coming out of torpor</a>.
     {% endtrans %}
@@ -52,7 +52,7 @@
     {% trans trimmed
     %}
     From there, two possibilities are open to you:
-    <a href="#go-wide">Go wide</a> or <a href="#go-deep">Go deep</a>. 
+    <a href="#go-wide">Go wide</a> or <a href="#go-deep">Go deep</a>.
     {% endtrans %}
 </p>
 
@@ -69,7 +69,7 @@
     {% trans trimmed %}
     It really depends on the kind of players you are: some playgroups prefer to have
     each member focus on their own clan and try to improve their deck game after game,
-    while others prefere to mix and match, switching clan and deck every game.
+    while others prefer to mix and match, switching clan and deck every game.
     {% endtrans %}
 </p>
 
@@ -88,14 +88,27 @@
         brujah_precon=external("https://www.blackchantry.com/products/vampire-the-eternal-struggle-fifth-edition/fifth-edition-brujah/", _("Brujah")),
         gangrel_precon=external("https://www.blackchantry.com/products/vampire-the-eternal-struggle-fifth-edition/fifth-edition-gangrel/", _("Gangrel")),
         ministry_precon=external("https://www.blackchantry.com/products/vampire-the-eternal-struggle-fifth-edition/fifth-edition-the-ministry/", _("Ministry")),
+        ravnos_precon=external("https://www.blackchantry.com/products/vampire-the-eternal-struggle-fifth-edition/fifth-edition-ravnos/", _("Brujah")),
+        salubri_precon=external("https://www.blackchantry.com/products/vampire-the-eternal-struggle-fifth-edition/fifth-edition-salubri/", _("Gangrel")),
+        tzimisce_precon=external("https://www.blackchantry.com/products/vampire-the-eternal-struggle-fifth-edition/fifth-edition-tzimisce/", _("Ministry")),
         new_blood_bundles=external("https://www.blackchantry.com/products/vampire-the-eternal-struggle-fifth-edition/new-blood-introductory-decks-for-vampire-the-eternal-struggle/", _("New Blood bundles"))
         %}
         There are additional V5 precons that are not in the standard box, they should be your first stop:
         {{ banu_haqim_precon }} {{ banu_haqim }}, {{ brujah_precon }} {{ brujah }}, {{ gangrel_precon }} {{ gangrel }}
         and {{ ministry_precon }} {{ ministry }}.
         They're strong decks with good cards and can seamlessly be mixed with the V5 Box decks amd their five clans.
-        If you want top improve a bit on those clans and get some cards to tinker the decks, you can just get a couple
+        If you want to improve a bit on those clans and get some cards to tinker the decks, you can just get a couple
         of the matching {{ new_blood_bundles }} for each of them.
+        {% endtrans %}
+    </p>
+    <p>
+        {% trans trimmed %}
+        There are also the Clans of {{ salubri_precon }} {{ salubri }},
+        {{ tzimisce_precon }} {{ tzimisce }} and {{ ravnos_precon }} {{ ravnos }}.
+        While good decks, these contain a lot of cards with clan requirements,
+        which do not mix as well with the other clans,
+        but are a worthy stop if their themes and playstyles appeal to you.
+        No new Blood has been released for them as of January 2024.
         {% endtrans %}
     </p>
     <p>
@@ -531,7 +544,7 @@
         %}
         The {{ first_blood }} bundles have very few interesting cards,
         most of them also got a reprint either in V5 products or in the {{ keepers_of_tradition }} bundles.
-        Still, it might be interesting in some case: it has {{ aching_beauty }} for Toreador {{ toreador }}, 
+        Still, it might be interesting in some case: it has {{ aching_beauty }} for Toreador {{ toreador }},
         rarely used Tremere {{ tremere }} cards ({{ thadius_zho }} and {{ charnas_the_imp }}), but also
         {{ weighted_walking_stick }}, {{ legal_manipulations }}, and Dementation {{ dem }} cards like
         {{ kindred_spirits }} and {{ confusion }} if legacy Malkavians {{ malkavian_legacy }} are your thing.
@@ -644,7 +657,7 @@
         {%endtrans %}
         </li>
         <li>
-        {% trans trimmed 
+        {% trans trimmed
         haqim_s_law_retribution=card("Haqim's Law: Retribution"),
         hunter_s_mark=card("Hunter's Mark"),
         hunger_of_marduk=card("Hunger of Marduk")
@@ -653,7 +666,7 @@
         {% endtrans %}
         </li>
         <li>
-        {% trans trimmed 
+        {% trans trimmed
         the_platinum_protocol=card("The Platinum Protocol"),
         enchanting_gaze=card("Enchanting Gaze"),
         revelation_of_the_serpent=card("Revelation of the Serpent"),
@@ -691,12 +704,109 @@
     </p>
 </div>
 
+<div class="column-2">
+    <h3>{{ _('V5 Companion') }}</h3>
+    <img src="{{ url_for('static', filename='img/v5c-salubri.webp') }}" alt="V5 Salubri deck">
+    <p>
+        {% trans trimmed
+        ravnos_precon=external("https://www.blackchantry.com/products/vampire-the-eternal-struggle-fifth-edition/fifth-edition-ravnos/", _("Brujah")),
+        salubri_precon=external("https://www.blackchantry.com/products/vampire-the-eternal-struggle-fifth-edition/fifth-edition-salubri/", _("Gangrel")),
+        tzimisce_precon=external("https://www.blackchantry.com/products/vampire-the-eternal-struggle-fifth-edition/fifth-edition-tzimisce/", _("Ministry"))
+        %}
+        Similar to the V5 Anarchs the „Companion“ decks (named after the RPG supplement that introduced them)
+        cover more heavily changed Clans: Salubri, Ravnos and Tzimisce.
+        The Salubri are now one unified independent clan with Auspex, Dominate, Fortitude,
+        with Obeah and Valeren being represented with Combination (Amalgams) of these disciplines and clan requirement.
+        Ravnos joined the Anarch movement and have Animalism, Presence and Obfuscate,
+        with Chimerstry being represented by obf+pre and again a potential clan requirement.
+        Tzimisce also joined the Anarchs, with Animalism, Dominate and Protean.
+        Vicissitude being dom+pro (+ clan, optionally)
+        {% endtrans %}
+    </p>
+    <p>
+        {% trans trimmed %}
+        Again all decks are comprised of all new vampires and new library cards:
+        {% endtrans %}
+    </p>
+    <ul>
+        <li>
+            {% trans trimmed
+            break_the_bonds=card("Break the Bonds"),
+            feral_hound=card("Feral Hound"),
+            night_terrors=card("Night Terrors"),
+            visions_of_gehenna=card("Visions of Gehenna"),
+            visions_of_zapathasura=card("Visions of Zapathasura"),
+            voracious_vermin=card("Voracious Vermin")
+            %}
+            Ravnos {{ ravnos }}: {{ break_the_bonds }}, {{ feral_hound }}, {{ night_terrors }},
+            {{ visions_of_gehenna }}, {{ visions_of_zapathasura }}, {{ voracious_vermin }}
+            {% endtrans %}
+        </li>
+        <li>
+            {% trans trimmed
+            feast_of_the_souls_secrets=card("Feast of the Soul's Secrets"),
+            forced_confessional=card("Forced Confessional"),
+            meditative_grove=card("Meditative Grove"),
+            saulots_avenging_fist=card("Saulot's Avenging Fist"),
+            saulots_guiding_wisdom=card("Saulot's Guiding Wisdom"),
+            saulots_healing_touch=card("Saulot's Healing Touch"),
+            sword_of_the_archangel=card("Sword of the Archangel"),
+            touch_of_valeren=card("Touch of Valeren"),
+            unleashing_the_bestial_soul=card("Unleashing the Bestial Soul")
+            %}
+            Salubri {{ salubri }}: {{ feast_of_the_souls_secrets }}, {{ forced_confessional }}, {{ meditative_grove }},
+            {{ saulots_avenging_fist }}, {{ saulots_guiding_wisdom }}, {{ saulots_healing_touch }},
+            {{ sword_of_the_archangel }}, {{ touch_of_valeren }}, {{ unleashing_the_bestial_soul }}
+            {% endtrans %}
+        </li>
+        <li>
+            {% trans trimmed
+            invigorate=card("Invigorate"),
+            monstrous_form=card("Monstrous Form"),
+            obedient_flesh=card("Obedient Flesh"),
+            one_with_the_land=card("One With the Land"),
+            sculpt_the_flesh=card("Sculpt the Flesh"),
+            vozhd_of_sofia=card("Vozhd of Sofia")
+            %}
+            Tzimisce {{ tzimisce }}: {{ invigorate }}, {{ monstrous_form }}, {{ obedient_flesh }},
+            {{ one_with_the_land }}, {{ sculpt_the_flesh }}, {{ vozhd_of_sofia }}
+            {% endtrans %}
+        </li>
+    </ul>
+    <p>
+        {% trans trimmed
+        archon_investigation=card("Archon Investigation"),
+        clubIllusion=card("Club Illusion"),
+        garibaldi_meucci_museum=card("Garibaldi-Meucci Museum"),
+        powerbase_los_angeles=card("Powerbase: Los Angeles")
+        my_enemys_enemy=card("My Enemy’s Enemy"),
+        piper=card("Piper"),
+        constant_revolution=card("Constant Revolution"),
+        war_ghoul=card("War Ghoul"),
+        city_star_taxi=card("City Star Taxi")
+        %}
+        Additionally, these decks also have again included some formerly relatively rare or sought after cards
+        ({{ archon_investigation }}, {{ club_illusion }}, {{ garibaldi_meucci_museum }}, {{ powerbase_los_angeles }} in Ravnos,
+        {{ my_enemys_enemy }} in Salubri, {{ piper }}, {{ constant_revolution }}, {{ war_ghoul }} in Tzimisce)
+        as well es cards only released as Promos ({{ city_star_taxi }} in Ravnos)
+        and Reprints of new cards from New Blood or the Anarch Precons.
+        {% endtrans %}
+    </p>
+    <p>
+        Notable is that the Salubri only got new cards that require a Salubri,
+        but except for the lack of Dominate on old Salubri, these cards could be combined with old Salubri.
+    </p>
+    <p>
+        As of writing this section, these decks are too new to gauge their impact on the competitive scene,
+        but first reports indicate an especially strong showing for the Salubri precon.
+    </p>
+</div>
 
 <div class="column-2">
     <h3>{{ _('Lost Kindred') }}</h3>
     <img src="{{ url_for('static', filename='img/lost-kindred.webp') }}" alt="Lost Kindred">
     <p>
-        {% trans trimmed 
+        {% trans trimmed
         lost_kindred=external("https://www.blackchantry.com/products/legacy/bundles/lost-kindred/", "Lost Kindred"),
         emerald_legionnaire=card("Emerald Legionnaire")
         %}
@@ -832,8 +942,28 @@
         {% trans trimmed
         new_blood=external("https://www.blackchantry.com/products/vampire-the-eternal-struggle-fifth-edition/new-blood-introductory-decks-for-vampire-the-eternal-struggle/", _("New Blood"))
         %}
-        {{ new_blood }} is all about new vampires, no new card in there. But the vampires are a
-        very nice additon to the ones available in the V5 starters, if you want to get those crypts.
+        {{ new_blood }} s mainly about new vampires, very few new library cards are released here so far,
+        but with more heavily changed clans coming this will probably change.
+        The vampires are a very nice addition to the ones available in the V5 starters, if you want to get those crypts.
+        {% endtrans %}
+    </p>
+    <p>
+        {% trans trimmed %}
+        The New Library cards are:
+        {% endtrans %}
+    </p>
+    <ul>
+        <li>
+            {% trans trimmed
+            childe_of_the_revolution=card("Childe of the Revolution")
+            %}
+            Brujah {{ brujah }}: {{ childe_of_the_revolution }}
+        </li>
+    </ul>
+    <p>
+        {% trans trimmed %}
+        Childe of the Revolution as a Baron equivalent of Third Tradition or Creation rites is going
+        to make a potential big splash on the scene with new concepts for Anarchs being explored.
         {% endtrans %}
     </p>
 </div>
@@ -850,7 +980,7 @@
     </p>
     <ul>
         <li>
-        {% trans trimmed 
+        {% trans trimmed
         psyche=card("Psyche!")
         %}
             Since 2011, {{ psyche }} is played during combat, not in-between combats anymore, and priscii have
