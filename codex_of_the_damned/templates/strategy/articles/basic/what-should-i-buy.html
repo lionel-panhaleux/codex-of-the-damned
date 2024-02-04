@@ -709,18 +709,18 @@
     <img src="{{ url_for('static', filename='img/v5c-salubri.webp') }}" alt="V5 Salubri deck">
     <p>
         {% trans trimmed
-        ravnos_precon=external("https://www.blackchantry.com/products/vampire-the-eternal-struggle-fifth-edition/fifth-edition-ravnos/", _("Brujah")),
-        salubri_precon=external("https://www.blackchantry.com/products/vampire-the-eternal-struggle-fifth-edition/fifth-edition-salubri/", _("Gangrel")),
-        tzimisce_precon=external("https://www.blackchantry.com/products/vampire-the-eternal-struggle-fifth-edition/fifth-edition-tzimisce/", _("Ministry"))
+        ravnos_precon=external("https://www.blackchantry.com/products/vampire-the-eternal-struggle-fifth-edition/fifth-edition-ravnos/", _("Ravnos")),
+        salubri_precon=external("https://www.blackchantry.com/products/vampire-the-eternal-struggle-fifth-edition/fifth-edition-salubri/", _("Salubri")),
+        tzimisce_precon=external("https://www.blackchantry.com/products/vampire-the-eternal-struggle-fifth-edition/fifth-edition-tzimisce/", _("Tzimisce"))
         %}
         Similar to the V5 Anarchs the „Companion“ decks (named after the RPG supplement that introduced them)
-        cover more heavily changed Clans: Salubri, Ravnos and Tzimisce.
-        The Salubri are now one unified independent clan with Auspex, Dominate, Fortitude,
-        with Obeah and Valeren being represented with Combination (Amalgams) of these disciplines and clan requirement.
-        Ravnos joined the Anarch movement and have Animalism, Presence and Obfuscate,
-        with Chimerstry being represented by obf+pre and again a potential clan requirement.
-        Tzimisce also joined the Anarchs, with Animalism, Dominate and Protean.
-        Vicissitude being dom+pro (+ clan, optionally)
+        cover more heavily changed Clans: {{ salubri_precon }} {{ salubri }}, {{ ravnos_precon }} {{ ravnos }} and {{ tzimisce_precon }} {{ tzimisce }}.
+        The Salubri are now one unified independent clan with {{ aus }}{{ dom }}{{ for }},
+        with {{ obe }} and {{ val }} being represented with Combination (Amalgams) of these disciplines and clan requirement.
+        Ravnos joined the Anarch movement and have {{ ani }}{{ pre }}{{ obf }},
+        with {{ chi }} being represented by obf+pre and again a potential clan requirement.
+        Tzimisce also joined the Anarchs, with {{ ani }}{{ dom }}{{ pro }}.
+        {{ vic }} being dom+pro (+ clan, optionally)
         {% endtrans %}
     </p>
     <p>
@@ -732,13 +732,14 @@
         <li>
             {% trans trimmed
             break_the_bonds=card("Break the Bonds"),
+            city_star_taxi=card("City Star Taxi"),
             feral_hound=card("Feral Hound"),
             night_terrors=card("Night Terrors"),
             visions_of_gehenna=card("Visions of Gehenna"),
             visions_of_zapathasura=card("Visions of Zapathasura"),
             voracious_vermin=card("Voracious Vermin")
             %}
-            Ravnos {{ ravnos }}: {{ break_the_bonds }}, {{ feral_hound }}, {{ night_terrors }},
+            Ravnos {{ ravnos }}: {{ break_the_bonds }}, {{ city_star_taxi }}, {{ feral_hound }}, {{ night_terrors }},
             {{ visions_of_gehenna }}, {{ visions_of_zapathasura }}, {{ voracious_vermin }}
             {% endtrans %}
         </li>
