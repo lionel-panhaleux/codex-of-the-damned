@@ -88,9 +88,6 @@
         brujah_precon=external("https://www.blackchantry.com/products/vampire-the-eternal-struggle-fifth-edition/fifth-edition-brujah/", _("Brujah")),
         gangrel_precon=external("https://www.blackchantry.com/products/vampire-the-eternal-struggle-fifth-edition/fifth-edition-gangrel/", _("Gangrel")),
         ministry_precon=external("https://www.blackchantry.com/products/vampire-the-eternal-struggle-fifth-edition/fifth-edition-the-ministry/", _("Ministry")),
-        ravnos_precon=external("https://www.blackchantry.com/products/vampire-the-eternal-struggle-fifth-edition/fifth-edition-ravnos/", _("Brujah")),
-        salubri_precon=external("https://www.blackchantry.com/products/vampire-the-eternal-struggle-fifth-edition/fifth-edition-salubri/", _("Gangrel")),
-        tzimisce_precon=external("https://www.blackchantry.com/products/vampire-the-eternal-struggle-fifth-edition/fifth-edition-tzimisce/", _("Ministry")),
         new_blood_bundles=external("https://www.blackchantry.com/products/vampire-the-eternal-struggle-fifth-edition/new-blood-introductory-decks-for-vampire-the-eternal-struggle/", _("New Blood bundles"))
         %}
         There are additional V5 precons that are not in the standard box, they should be your first stop:
@@ -102,7 +99,11 @@
         {% endtrans %}
     </p>
     <p>
-        {% trans trimmed %}
+        {% trans trimmed
+        ravnos_precon=external("https://www.blackchantry.com/products/vampire-the-eternal-struggle-fifth-edition/fifth-edition-ravnos/", _("Ravnos")),
+        salubri_precon=external("https://www.blackchantry.com/products/vampire-the-eternal-struggle-fifth-edition/fifth-edition-salubri/", _("Salubri")),
+        tzimisce_precon=external("https://www.blackchantry.com/products/vampire-the-eternal-struggle-fifth-edition/fifth-edition-tzimisce/", _("Tzimisce"))
+        %}
         There are also the Clans of {{ salubri_precon }} {{ salubri }},
         {{ tzimisce_precon }} {{ tzimisce }} and {{ ravnos_precon }} {{ ravnos }}.
         While good decks, these contain a lot of cards with clan requirements,
