@@ -964,8 +964,12 @@
         </li>
     </ul>
     <p>
-        {% trans trimmed %}
-        Childe of the Revolution as a Baron equivalent of Third Tradition or Creation rites is going
+        {% trans trimmed
+        childe_of_the_revolution=card("Childe of the Revolution"),
+        third_tradition=card("Third Tradition: Progeny"),
+        creation_rites=card("Creation Rites")
+        %}
+        childe_of_the_revolution as a Baron version of {{ third_tradition }} or {{ creation_rites }} is going
         to make a potential big splash on the scene with new concepts for Anarchs being explored.
         {% endtrans %}
     </p>
