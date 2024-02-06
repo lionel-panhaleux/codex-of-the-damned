@@ -135,14 +135,13 @@
     <img src="{{ url_for('static', filename='img/print-on-demand.webp') }}" alt="Print on demand">
     <p>
         {% trans trimmed
-        drivethru_cards=external("https://www.drivethrucards.com/browse/pub/12056/Black-Chantry-Productions/subcategory/30619_34256/VTES-Legacy-Card-Singles", "DriveThru Cards")
+        drivethru_cards=external("https://www.drivethrucards.com/browse/pub/12056/Black-Chantry-Productions/subcategory/30619_34256/VTES-Legacy-Card-Singles", "DriveThru Cards"),
+        gamepod=external("https://www.gamepod.es", "Gamepod")
         %}
         So, you got 13 decks and you want more? Greedy childe of the darkness, very well.
         Your next inquiry should be the Print-on-Demand cards, then. They are the same quality
-        as the bundles you acquired already, and cost $0.35 a card. Sadly, they can only be
-        bought from {{ drivethru_cards }} in the US so, depending on your location, hefty
-        taxes and delivery fees can apply, which means you should buy there in a few
-        big lots rather than many small amounts if you're not an US resident.
+        as the bundles you acquired already, and cost less than $0.50 a card. They can be
+        bought from {{ drivethru_cards }} in the US and {{ gamepod }} in the EU.
         {% endtrans %}
     </p>
     <p>
@@ -338,7 +337,8 @@
     <img src="{{ url_for('static', filename='img/print-on-demand.webp') }}" alt="Print on demand">
     <p>
         {% trans trimmed
-        print_on_demand=external("https://www.drivethrucards.com/browse/pub/12056/Black-Chantry-Productions/subcategory/30619_34256/VTES-Legacy-Card-Singles", "Print on demand"),
+        drivethru_cards=external("https://www.drivethrucards.com/browse/pub/12056/Black-Chantry-Productions/subcategory/30619_34256/VTES-Legacy-Card-Singles", "Drivethru Cards"),
+        gamepod=external("https://www.gamepod.es", "Gamepod"),
         direct_intervention=card("Direct Intervention"),
         anarch_convert=card("Anarch Convert"),
         mental_maze=card("Mental Maze"),
@@ -348,7 +348,8 @@
         smoke_and_mirrors=card("Smoke and Mirrors"),
         undue_influence=card("Undue Influence")
         %}
-        The other avenue worth exploring to get more cards for your deck is the {{ print_on_demand }} option.
+        The other avenue worth exploring to get more cards for your deck is the print on demand option,
+        with {{ drivethru_cards }} in the US and {{ gamepod }} in the EU.
         Of ourse, if you're playing Lasombra {{ lasombra }} or Tzimisce {{ tzimisce }}, this gives you easy access
         to all the clan cards you could need, plus Obtenebration {{ obt }} and Vicissitude {{ vic }} cards.
         But even for other clans, you can fetch important staples like {{ direct_intervention }}
@@ -877,7 +878,7 @@
         seeds_of_corruption=card("Seeds of Corruption")
         %}
         {{ anthelios }}, {{ temptation_of_greater_power }} and {{ seeds_of_corruption }}
-        were banned in 2017, and tap/untap have been replace by lock/unlock because of patent issues.
+        were banned in 2017, and tap/untap have been replaced by lock/unlock because of patent issues.
         {% endtrans %}
         </li>
         <li>
@@ -906,10 +907,13 @@
         ankara_citadel=card("The Ankara Citadel, Turkey", "The Ankara Citadel"),
         parity_shift=card("Parity Shift"),
         sensory_deprivation=card("Sensory Deprivation"),
-        nightmare_curse=card("Nightmare Curse")
+        nightmare_curse=card("Nightmare Curse"),
+        ashur_tablets=card("Ashur Tablets"),
+        emerald_legionnaire=card("Emerald Legionnaire")
         %}
             {{ villein }}, {{ pentex_subversion }}, {{ una }}, {{ ankara_citadel }}, {{ parity_shift }},
-            {{ sensory_deprivation }} and {{ nightmare_curse }} have been nerfed.
+            {{ sensory_deprivation }}, {{ nightmare_curse }}, {{ ashur_tablets }}, and {{ emerald_legionnaire }}
+            have been nerfed.
         {% endtrans %}
         </li>
         <li>
@@ -951,11 +955,12 @@
     <img src="{{ url_for('static', filename='img/print-on-demand.webp') }}" alt="Print on demand">
     <p>
         {% trans trimmed
-        print_on_demand=external("https://www.drivethrucards.com/browse/pub/12056/Black-Chantry-Productions/subcategory/30619_34256/VTES-Legacy-Card-Singles", _("print on demand"))
+        drivethru_cards=external("https://www.drivethrucards.com/browse/pub/12056/Black-Chantry-Productions/subcategory/30619_34256/VTES-Legacy-Card-Singles", "Drivethru Cards"),
+        gamepod=external("https://www.gamepod.es", "Gamepod")
         %}
         In case you're not aware, you might want to know that a lot of legacy cards are available
-        as {{ print_on_demand }} on Drivethru Cards for $0.35 apiece. You can finally complete your
-        collections for clans:
+        as print-on-demand on {{ drivethru_cards }} and {{ gamepod }} for less then $0.50 apiece.
+        You can finally complete your collections for clans:
         {% endtrans %}
     </p>
     <ul>
@@ -969,6 +974,7 @@
         <li>Giovanni {{ giovanni }}</li>
         <li>Pander {{ pander }}</li>
         <li>Salubri {{ salubri }}</li>
+        <li>Tremere Antitribu {{ tremere_antitribu }}</li>
     </ul>
     <p>
         {% trans trimmed %}and discplines:
@@ -1151,7 +1157,7 @@
         for Archon Investigation and Bum's Rush.
     </li>
     <li>
-        An <strong>Edge card</strong> that has been released as promo and is now also available on Drivethru Cards.
+        An <strong>Edge card</strong> that has been released as promo and is now also available as print-on-demand.
     </li>
     <li>
         The <strong>Anthology set</strong> released and sold in Berlin in 2017 is different from the Anthology 1
@@ -1173,12 +1179,6 @@
         They were exclusive promos for some <strong>World of Darkness product</strong>:
         Bolesław Gutowski (Polish edition of VTM, released), Alicia Cortez (Mind's Eye Theatre, released),
         Gabriel Tremblay (Chapters, released) and Tegyrius (War of Ages, unreleased yet).
-    </li>
-    <li>
-        A modern layout version of Praxis Seizure: Venice has been sold over Drivethru Cards
-        <strong>by mistake</strong> for a few hours, only a few copies have been sold and printed.
-        This won't last though, since the card has been held as a future promo,
-        and will at some point make it back on DriveThru.
     </li>
     <li>
         V5 bundles have been release not only in English, but also in <strong>French</strong>, <strong>Spanish</strong>
@@ -1217,6 +1217,7 @@
     <h3>{{ _('EU') }}</h3>
     <ul>
         <li><a href="https://blackchantry.shop" , target="_blank">BCP Shop</a></li>
+        <li><a href="https://www.gamepod.es" , target="_blank">Gamepod</a></li>
         <li><a href="https://vtes.store/shop/" , target="_blank">VTES Web Store</a></li>
     </ul>
 
