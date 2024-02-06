@@ -9,7 +9,7 @@
     --color-active: #007acc;
     --color-tip-border: #dc8c46;
     --color-tip-back: #fcf4ec;
-    --color-tip-front: #583410;
+    --color-tip-front: #6b3d0f;
     --color-warn-border: #dc6946;
     --color-warn-back: #fceeec;
     --color-warn-front: #582110;
@@ -75,6 +75,7 @@ span.krcg-card {
     font-style: italic;
     text-decoration: none;
     cursor: pointer;
+    color: var(--color-tip-front);
 }
 
 span.krcg-card:hover {
@@ -510,6 +511,14 @@ div.warn h3::before {
     color: var(--color-warn-front);
 }
 
+div.warn .krcg-card {
+    color: var(--color-warn-front);
+}
+
+div.warn .krcg-card:hover {
+    color: var(--color-warn-border);
+}
+
 div.author {
     background: var(--color-author-back);
     border: 1px solid var(--color-author-border);
@@ -584,6 +593,14 @@ div.game h3 {
 div.game h3::before {
     content: "\f1ea";
     color: var(--color-deck-front);
+}
+
+div.game .krcg-card {
+    color: var(--color-deck-front);
+}
+
+div.game .krcg-card:hover {
+    color: var(--color-deck-border);
 }
 
 /* ***************************************************************************** form */
@@ -705,6 +722,8 @@ input[type="submit"]:hover {
 
 .decklist .krcg-card {
     font-style: normal;
+    font-weight: normal;
+    color: var(--color-gray-text);
 }
 
 .decklist .krcg-card:hover,

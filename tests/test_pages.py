@@ -27,7 +27,7 @@ def test(client, page):
     response = client.get(page, follow_redirects=True)
     assert response.status_code == 200
     parser = PageParser()
-    parser.feed(response.data.decode(response.charset))
+    parser.feed(response.text)
     for url in parser.urls:
         # pass some urls - too much anti-scrapping stuff there
         if url.startswith("https://www.ebay.com"):

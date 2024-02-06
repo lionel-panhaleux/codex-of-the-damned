@@ -40,8 +40,8 @@
 </p>
 <p>
     {% trans trimmed
-    tremere=external("https://informationhighway.fr/old-blood-new-blood-tremere-v5", _("Tremere")),
-    malkavian=external("https://informationhighway.fr/old-blood-new-blood-malkavian-v5", _("Malkavian"))
+    tremere=external("https://vtesinformationhighway.wordpress.com/2022/08/08/old-blood-new-blood-tremere-v5/", _("Tremere")),
+    malkavian=external("https://vtesinformationhighway.wordpress.com/2022/09/12/old-blood-new-blood-malkavian-v5/", _("Malkavian"))
     %}
     If you want to go beyond that and achieve the highest power possible for the lowest
     price, it seems like a good rule of thumb is to go <strong>one V5 starter + two New Blood</strong> for
@@ -93,7 +93,7 @@
         There are additional V5 precons that are not in the standard box, they should be your first stop:
         {{ banu_haqim_precon }} {{ banu_haqim }}, {{ brujah_precon }} {{ brujah }}, {{ gangrel_precon }} {{ gangrel }}
         and {{ ministry_precon }} {{ ministry }}.
-        They're strong decks with good cards and can seamlessly be mixed with the V5 Box decks amd their five clans.
+        They're strong decks with good cards and can seamlessly be mixed with the V5 Box decks and their five clans.
         If you want to improve a bit on those clans and get some cards to tinker the decks, you can just get a couple
         of the matching {{ new_blood_bundles }} for each of them.
         {% endtrans %}
@@ -104,12 +104,12 @@
         salubri_precon=external("https://www.blackchantry.com/products/vampire-the-eternal-struggle-fifth-edition/fifth-edition-salubri/", _("Salubri")),
         tzimisce_precon=external("https://www.blackchantry.com/products/vampire-the-eternal-struggle-fifth-edition/fifth-edition-tzimisce/", _("Tzimisce"))
         %}
-        There are also the Clans of {{ salubri_precon }} {{ salubri }},
+        There are also precons for {{ salubri_precon }} {{ salubri }},
         {{ tzimisce_precon }} {{ tzimisce }} and {{ ravnos_precon }} {{ ravnos }}.
-        While good decks, these contain a lot of cards with clan requirements,
-        which do not mix as well with the other clans,
-        but are a worthy stop if their themes and playstyles appeal to you.
-        No new Blood has been released for them as of January 2024.
+        They contain a lot of cards with clan requirements that do not mix
+        as well with the other clans,
+        but are strong decks worth acquiring if their themes and playstyles appeal to you.
+        No new Blood has been released for them yet.
         {% endtrans %}
     </p>
     <p>
@@ -164,7 +164,7 @@
         %}
         What can you find there? Well complete reprints for some legacy clans and disciplines.
         As of today, clans Assamite {{ assamite_legacy }}, Baali {{ baali }},
-        Daughters of Cacophony {{ daughter_of_cacophony }}, Ravnos {{ ravnos }}, Lasombra {{ lasombra }},
+        Daughters of Cacophony {{ daughter_of_cacophony }}, Ravnos {{ ravnos }}, Lasombra {{ lasombra_legacy }},
         Followers of Set {{ follower_of_set_legacy }}, Tzimisce {{ tzimisce }}, Pander {{ pander }}
         and Salubri {{ salubri }} are fully available there, plus
         the Disciplines Quietus {{ qui }}, Daimonon {{ dai }}, Melpominee {{ mel }}, Chimerstry {{ chi }},
@@ -516,7 +516,7 @@
         interesting if you're into Banu Haqim {{ banu_haqim }}: it gets you {{ flavia }}, {{ omer }} and {{ al_ashrad }},
         plus the mildly interesting {{ focus_the_blood }}. The Gangrel {{ gangrel }} cards have mostly been reprinted
         in the preconstructed decks so it's not that appealing.
-        There are only a couple of cards of interest in {{ unaligned_2 }}: {{ saatet_ta }} for Ministry,
+        There are only a couple of cards of interest in {{ unaligned_2 }}: {{ saatet_ta }} for Ministry {{ ministry }},
         {{ funeral_wake }} if you're interested in a {{ shambling_hordes }} or {{ emerald_legion }} deck.
         If you're into Giovanni {{ giovanni }} or legacy Followers of Set {{ follower_of_set_legacy }}
         (those with Serpentis {{ ser }}), the bundle has some very good cards that have only been printed there.
@@ -624,9 +624,9 @@
         {{ gangrel_precon }} {{ gangrel }} and {{ brujah_precon }} {{ brujah }}, introduce big changes.
         First, in terms of the clan. Following the Paradox universe evolution, Gangrel {{ gangrel }} and
         Brujah {{ brujah }} are now both Anarchs, with a good number of Barons.
-        The changes are deeper for the other two: the new Banu Haqim (aka. Assamite) are Camarilla and got
-        {{ obf }}{{ cel }}{{ tha }} as clan disciplines, whereas the Ministry (aka. Followers of Set) are Anarch,
-        with {{ obf }}{{ pro }}{{ pre }} as clan disciplines.
+        The changes are deeper for the other two: the new Banu Haqim {{ banu_haqim }} (aka. Assamite) are Camarilla and
+        got {{ obf }}{{ cel }}{{ tha }} as clan disciplines, whereas the Ministry {{ ministry }} (aka. Followers of Set)
+        are Anarch, with {{ obf }}{{ pro }}{{ pre }} as clan disciplines.
         {% endtrans %}
     </p>
     <p>
@@ -715,14 +715,12 @@
         salubri_precon=external("https://www.blackchantry.com/products/vampire-the-eternal-struggle-fifth-edition/fifth-edition-salubri/", _("Salubri")),
         tzimisce_precon=external("https://www.blackchantry.com/products/vampire-the-eternal-struggle-fifth-edition/fifth-edition-tzimisce/", _("Tzimisce"))
         %}
-        Similar to the V5 Anarchs the „Companion“ decks (named after the RPG supplement that introduced them)
-        cover more heavily changed Clans: {{ salubri_precon }} {{ salubri }}, {{ ravnos_precon }} {{ ravnos }} and {{ tzimisce_precon }} {{ tzimisce }}.
-        The Salubri are now one unified independent clan with {{ aus }}{{ dom }}{{ for }},
-        with {{ obe }} and {{ val }} being represented with Combination (Amalgams) of these disciplines and clan requirement.
-        Ravnos joined the Anarch movement and have {{ ani }}{{ pre }}{{ obf }},
-        with {{ chi }} being represented by {{ obf }}+{{ pre }} and again a potential clan requirement.
-        Tzimisce also joined the Anarchs, with {{ ani }}{{ dom }}{{ pro }}.
-        The former {{ vic }} being now represented by {{ dom }}+{{ pro }} (+ clan, optionally)
+        Similar to the V5 Anarchs the "Companion" decks (named after the RPG supplement that introduced them)
+        cover more heavily changed clans: {{ salubri_precon }} {{ salubri }}, {{ ravnos_precon }} {{ ravnos }} and
+        {{ tzimisce_precon }} {{ tzimisce }}.
+        The Salubri {{ salubri }} are now one unified independent clan with {{ aus }}{{ dom }}{{ for }},
+        Ravnos {{ ravnos }} joined the Anarch movement and have {{ ani }}{{ pre }}{{ obf }},
+        and Tzimisce {{ tzimisce }} also joined the Anarchs, with {{ ani }}{{ dom }}{{ pro }}.
         {% endtrans %}
     </p>
     <p>
@@ -779,7 +777,7 @@
     <p>
         {% trans trimmed
         archon_investigation=card("Archon Investigation"),
-        clubIllusion=card("Club Illusion"),
+        club_illusion=card("Club Illusion"),
         garibaldi_meucci_museum=card("Garibaldi-Meucci Museum"),
         powerbase_los_angeles=card("Powerbase: Los Angeles"),
         my_enemys_enemy=card("My Enemy’s Enemy"),
@@ -792,41 +790,22 @@
         baid_and_switch=card("Bait and Switch")
         %}
         Additionally, these decks also have again included some formerly relatively rare or sought after cards
-        ({{ archon_investigation }}, {{ club_illusion }}, {{ garibaldi_meucci_museum }}, {{ powerbase_los_angeles }} in Ravnos,
-        {{ my_enemys_enemy }} in Salubri, {{ piper }}, {{ constant_revolution }}, {{ war_ghoul }} in Tzimisce)
-        as well es cards only released as Promos ({{ city_star_taxi }} in Ravnos)
-        and Reprints of {{ childe_of_the_revolution }} from New Blood and {{ organized_resistance }} & {{ baid_and_switch }} from the Anarch Precons.
-        {% endtrans %}
-    </p>
-    <p>
-        Notable is that the Salubri only got new cards that require a Salubri {{ salubri }},
-        but except for the lack of Dominate {{ dom }} on old Salubri {{ salubri }}, these cards could be combined with old Salubri {{ salubri }}.
-    </p>
-    <p>
-        As of writing this section, these decks are too new to gauge their impact on the competitive scene,
-        but first reports indicate an especially strong showing for the Salubri {{ salubri }} precon.
-    </p>
-</div>
-
-<div class="column-2">
-    <h3>{{ _('Lost Kindred') }}</h3>
-    <img src="{{ url_for('static', filename='img/lost-kindred.webp') }}" alt="Lost Kindred">
-    <p>
-        {% trans trimmed
-        lost_kindred=external("https://www.blackchantry.com/products/legacy/bundles/lost-kindred/", "Lost Kindred"),
-        emerald_legionnaire=card("Emerald Legionnaire")
-        %}
-        If you've missed it, you'll want to look into the {{ lost_kindred }} bundle and the infamous
-        {{ emerald_legionnaire }}. The card was designed to boost the Harbingers {{ harbinger_of_skulls }} a bit
-        and give them a chance in competitive play, and ended up giving them a couple of top tier
-        tournament decks so strong the meta had to adapt and include more solutions against
-        the typical swarm of allies these decks can field.
+        ({{ archon_investigation }}, {{ club_illusion }}, {{ garibaldi_meucci_museum }}, {{ powerbase_los_angeles }}
+        in Ravnos {{ ravnos }}, {{ my_enemys_enemy }} in Salubri {{ salubri }}, {{ piper }}, {{ constant_revolution }},
+        {{ war_ghoul }} in Tzimisce {{ tzimisce }}) as well as cards only released as Promos ({{ city_star_taxi }} in
+        Ravnos {{ ravnos }}) and Reprints of {{ childe_of_the_revolution }} from New Blood
+        and {{ organized_resistance }} & {{ baid_and_switch }} from the Anarch Precons.
         {% endtrans %}
     </p>
     <p>
         {% trans trimmed %}
-        On top of it, the expansion offers nice new toys for Gargoyles {{ gargoyle }}, Samedi {{ samedi }},
-        Salubri antitribu {{ salubri_antitribu }} and Blood Brothers {{ blood_brother }}.
+        It is notable that the Salubri {{ salubri }} only got new cards that require a Salubri {{ salubri }},
+        but except for the lack of Dominate {{ dom }} on old Salubri {{ salubri }}, these cards could be combined with them.
+        {% endtrans %}
+    </p>
+    <p>
+        {% trans trimmed %}
+        As of writing this section, these decks are too new to gauge their impact on the competitive scene.
         {% endtrans %}
     </p>
 </div>
@@ -944,6 +923,7 @@
 
 <div class="column-2">
     <h3>{{ _('New Blood') }}</h3>
+    <img src="{{ url_for('static', filename='img/new-blood-decks.webp') }}" alt="New Blood">
     <p>
         {% trans trimmed
         new_blood=external("https://www.blackchantry.com/products/vampire-the-eternal-struggle-fifth-edition/new-blood-introductory-decks-for-vampire-the-eternal-struggle/", _("New Blood"))
@@ -973,8 +953,32 @@
         third_tradition=card("Third Tradition: Progeny"),
         creation_rites=card("Creation Rites")
         %}
-        childe_of_the_revolution as a Baron version of {{ third_tradition }} or {{ creation_rites }} is going
+        {{ childe_of_the_revolution }} as a Baron version of {{ third_tradition }} or {{ creation_rites }} is going
         to make a potential big splash on the scene with new concepts for Anarchs being explored.
+        {% endtrans %}
+    </p>
+</div>
+
+<div class="column-2">
+    <h3>{{ _('Lost Kindred') }}</h3>
+    <img src="{{ url_for('static', filename='img/lost-kindred.webp') }}" alt="Lost Kindred">
+    <p>
+        {% trans trimmed
+        lost_kindred=external("https://www.blackchantry.com/products/legacy/bundles/lost-kindred/", "Lost Kindred"),
+        emerald_legionnaire=card("Emerald Legionnaire")
+        %}
+        If you've missed it, you'll want to look into the {{ lost_kindred }} bundle and the infamous
+        {{ emerald_legionnaire }}. The card was designed to boost the Harbingers {{ harbinger_of_skulls }} a bit
+        and give them a chance in competitive play, and ended up giving them a couple of top tier
+        tournament decks so strong the meta had to adapt and include more solutions against
+        the typical swarm of allies these decks can field. So much so that the card was errated in February 2024,
+        making Emerald decks much less of a thing, and acquiring this bundle less appealing.
+        {% endtrans %}
+    </p>
+    <p>
+        {% trans trimmed %}
+        On top of it, the expansion offers nice new toys for Gargoyles {{ gargoyle }}, Samedi {{ samedi }},
+        Salubri antitribu {{ salubri_antitribu }} and Blood Brothers {{ blood_brother }}.
         {% endtrans %}
     </p>
 </div>
@@ -1105,12 +1109,12 @@
         {% endtrans %}
     </p>
     <ul>
-        <li>Assamite {{ assamite }}</li>
+        <li>Assamite {{ assamite_legacy }}</li>
         <li>Baali {{ baali }}</li>
         <li>Daughters of Cacophony {{ daughter_of_cacophony }}</li>
-        <li>Ravnos {{ ravnos }}</li>
-        <li>Lasombra {{ lasombra }}</li>
-        <li>Followers of Set {{ ministry }}</li>
+        <li>Ravnos {{ ravnos_legacy }}</li>
+        <li>Lasombra {{ lasombra_legacy }}</li>
+        <li>Followers of Set {{ follower_of_set_legacy }}</li>
         <li>Tzimisce {{ tzimisce }}</li>
         <li>Giovanni {{ giovanni }}</li>
         <li>Pander {{ pander }}</li>
@@ -1225,9 +1229,9 @@
         To make it worth our while, BCP also seized this occasion to print rather heavily
         sought-after cards, like a bunch of {{ antonio }} and {{ nephandus }} in {{ pact_with_nephandi }},
         so many {{ embraces }} alongside a couple of {{ palla_grande }} and {{ foundation_exhibit }} in {{ libertine_ball }},
-        the whole Lasombra package together with {{ jake_washington }} and {{ monastery_of_shadows }} in {{ parliament_of_shadows }},
-        and the whole {{ aus }} package with {{ the_rack }}, {{ smiling_jack }}, {{ bowl_of_convergence }}
-        and {{ heart_of_nizchetus }} in {{ den_of_fiends }}.
+        the whole Lasombra {{ lasombra }} package together with {{ jake_washington }} and {{ monastery_of_shadows }}
+        in {{ parliament_of_shadows }}, and the whole {{ aus }} package with {{ the_rack }}, {{ smiling_jack }},
+        {{ bowl_of_convergence }} and {{ heart_of_nizchetus }} in {{ den_of_fiends }}.
         {% endtrans %}
     </p>
     <p>

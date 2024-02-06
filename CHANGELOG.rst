@@ -4,8 +4,10 @@ Changelog
 1.63 (unreleased)
 -----------------
 
-- Nothing changed yet.
-
+- Updated "What Should I Buy? with V5 Companion". Thanks Hobbesgoblin!
+- Various minor updates from latest release and errata
+- Improve cards display style (bit of color)
+- Fixed informationhighway links (back to wordpress for them)
 
 1.62 (2023-10-03)
 -----------------
