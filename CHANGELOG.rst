@@ -1,7 +1,7 @@
 Changelog
 =========
 
-1.63 (unreleased)
+1.63 (2024-02-06)
 -----------------
 
 - Updated "What Should I Buy? with V5 Companion". Thanks Hobbesgoblin!
