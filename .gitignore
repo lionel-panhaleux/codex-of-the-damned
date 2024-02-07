@@ -1,14 +1,15 @@
-.vscode/
-*.mo
-*.pot
+# Build & distribution
 *.egg-info/
-.eggs/
 __pycache__/
 build/
-dist/
-sdist/
-wheels/
-.DS_Store
-*/.DS_Store
-.env
+.ruff_cache/
+.pytest_cache/
+
+# Babel i18n
+*.mo
+*.pot
+
+# IDE & OS
+.vscode/
+*.DS_Store
 venv/
