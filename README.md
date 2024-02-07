@@ -49,13 +49,13 @@ Then open the generated catalog file,
 While translating, beware to keep the `HTML` tags like `<p>`, `<em>` as they are,
 and make sure you keep the exact same format parameters in the translated text.
 They include anything dynamic, from disciplines like `%(cel)s` and clans like
-`%(brujah)s`, to cards like `(alastor)s` and external urls like `%(johns_deck)`.
+`%(brujah)s`, to cards like `%(alastor)s` and external urls like `%(johns_deck)`.
 
 
-Once you're done translating, you can generate the translation files with:
+Once you're done translating, generate the translation files with:
 
 ```bash
-make po-compile
+make po
 ```
 
 To make a new language accessible in the website, you simply have to add the matching
