@@ -261,9 +261,9 @@ def index(lang_code=None, page=None):
             )
             image_name, _ = re.subn(r"""\s|,|\.|-|—|'|:|\(|\)|"|!""", "", image_name)
             context["og_image"] = f"http://static.krcg.org/card/{image_name}.jpg"
-            context[
-                "og_image_secure"
-            ] = f"https://static.krcg.org/card/{image_name}.jpg"
+            context["og_image_secure"] = (
+                f"https://static.krcg.org/card/{image_name}.jpg"
+            )
             context["og_description"] = "Official card text and rulings"
             context["og_title"] = card
             context["og_image_dimensions"] = ["358", "500"]
@@ -382,9 +382,11 @@ def display_card():
     def card(name, display_name=None):
         return markupsafe.Markup(
             '<span class="krcg-card"{data_name}>{name}</span>'.format(
-                data_name=f' data-name="{name}"'
-                if display_name or re.search(r" |-", name)
-                else "",
+                data_name=(
+                    f' data-name="{name}"'
+                    if display_name or re.search(r" |-", name)
+                    else ""
+                ),
                 # replace spaces and hyphens with non-breakable versions in card names
                 name=(display_name or name).replace(" ", " ").replace("-", "‑"),
             )

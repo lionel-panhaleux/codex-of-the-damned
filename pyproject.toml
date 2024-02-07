@@ -1,0 +1,51 @@
+[build-system]
+requires = ["setuptools>=68", "setuptools_scm>=8", "babel>=2"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "codex-of-the-damned"
+dynamic = ["version"]
+authors = [
+    { name = "Lionel Panhaleux", email = "lionel.panhaleux+codex@gmail.com" },
+]
+description = "Website on VTES Strategy, cards rulings and TWD search interface"
+keywords = ["vtes", "Vampire: The Eternal Struggle", "CCG", "TWD", "TWDA"]
+readme = "README.md"
+requires-python = ">=3.11"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Development Status :: 5 - Production/Stable",
+    "Natural Language :: English",
+    "Operating System :: OS Independent",
+    "Framework :: Flask",
+    "Topic :: Internet :: WWW/HTTP :: WSGI :: Application",
+]
+dependencies = ["flask>=3", "flask-babel>=4", "unidecode>=1", "Jinja2>=3"]
+
+[project.optional-dependencies]
+dev = [
+    "black>=24",
+    "clipboard>=0",
+    "ipython>=8",
+    "pytest>=8",
+    "requests>=2",
+    "ruff>=0",
+    "zest.releaser[recommended]>=9",
+]
+
+[project.urls]
+Homepage = "https://codex-of-the-damned.org"
+Repository = "https://github.com/lionel-panhaleux/codex-of-the-damned"
+
+[tool.setuptools.packages.find]
+include = ["codex_of_the_damned*"]
+
+# required for dynamic version
+[tool.setuptools_scm]
+
+[tool.zest-releaser]
+create-wheel = true
+
+[tool.pytest]
+junit_duration_report = "call"
