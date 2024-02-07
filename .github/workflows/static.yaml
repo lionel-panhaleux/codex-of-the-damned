@@ -29,4 +29,4 @@ jobs:
           ruff check --output-format github
       - name: Test
         run: |
-          pytest
+          pytest -v
