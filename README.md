@@ -1,7 +1,7 @@
 # Codex of the Damned
 
 [![PyPI version](https://badge.fury.io/py/codex-of-the-damned.svg)](https://badge.fury.io/py/codex-of-the-damned)
-[![Validation](https://github.com/lionel-panhaleux/codex-of-the-damned/workflows/Validation/badge.svg)](https://github.com/lionel-panhaleux/codex-of-the-damned/actions)
+[![Validation](https://github.com/lionel-panhaleux/codex-of-the-damned/actions/workflows/validation.yaml/badge.svg)](https://github.com/lionel-panhaleux/codex-of-the-damned/actions)
 [![Python version](https://img.shields.io/badge/python-3.11-blue)](https://www.python.org/downloads/)
 [![License](https://img.shields.io/badge/License-MIT-blue)](https://opensource.org/licenses/MIT)
 [![Code Style](https://img.shields.io/badge/code%20style-black-black)](https://github.com/psf/black)
