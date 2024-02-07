@@ -32,6 +32,8 @@ def test(client, page):
         # pass some urls - too much anti-scrapping stuff there
         if url.startswith("https://www.ebay.com"):
             continue
+        if url.startswith("https://www.reddit.com"):
+            continue
         if url.startswith("https://www.kickstarter.com"):
             continue
         try:
