@@ -1,8 +1,10 @@
 .PHONY: po-update po-compile po release test update
 
+BABEL_LANG ?= fr
+
 po-update:
 	pybabel extract --charset=utf-8 -c "TRANSLATORS:" -w 120 -k lazy_gettext -F babel.cfg -o messages.pot codex_of_the_damned
-	pybabel update -l fr -w 120 --init-missing -i messages.pot -d codex_of_the_damned/translations
+	pybabel update -l ${BABEL_LANG} -w 120 --init-missing -i messages.pot -d codex_of_the_damned/translations
 
 po-compile:
 	pybabel compile -D messages -d codex_of_the_damned/translations

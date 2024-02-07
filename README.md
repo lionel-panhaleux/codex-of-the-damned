@@ -2,7 +2,7 @@
 
 [![PyPI version](https://badge.fury.io/py/codex-of-the-damned.svg)](https://badge.fury.io/py/codex-of-the-damned)
 [![Validation](https://github.com/lionel-panhaleux/codex-of-the-damned/workflows/Validation/badge.svg)](https://github.com/lionel-panhaleux/codex-of-the-damned/actions)
-[![Python version](https://img.shields.io/badge/python-3.8-blue)](https://www.python.org/downloads/)
+[![Python version](https://img.shields.io/badge/python-3.11-blue)](https://www.python.org/downloads/)
 [![License](https://img.shields.io/badge/License-MIT-blue)](https://opensource.org/licenses/MIT)
 [![Code Style](https://img.shields.io/badge/code%20style-black-black)](https://github.com/psf/black)
 
@@ -23,6 +23,7 @@ Issues will be dealt with as quickly as possible.
 This site uses [Flask](https://flask.palletsprojects.com) and [Babel](http://babel.pocoo.org)
 to generate pages dynamically and handle internationalisation.
 
+
 ## Installation
 
 To install a working developpment version of the site, use `pip`:
@@ -32,11 +33,43 @@ python3 -m venv venv
 pip install -e ".[dev]"
 ```
 
-There is a make command to update translations:
+### Translating
+
+Install a PO editor like [POEdit](https://poedit.net), call the following command
+to generate the messages in the language you're interested in:
 
 ```bash
-make po
+BABEL_LANG=es make po-update
 ```
+
+Then open the generated catalog file,
+`codex_of_the_damned/translations/es/LC_MESSAGES/messages.po`, in your PO editor.
+
+
+While translating, beware to keep the `HTML` tags like `<p>`, `<em>` as they are,
+and make sure you keep the exact same format parameters in the translated text.
+They include anything dynamic, from disciplines like `%(cel)s` and clans like
+`%(brujah)s`, to cards like `(alastor)s` and external urls like `%(johns_deck)`.
+
+
+Once you're done translating, you can generate the translation files with:
+
+```bash
+make po-compile
+```
+
+To make a new language accessible in the website, you simply have to add the matching
+line in the translation `nav` header of the global layout
+`codex_of_the_damned/templates/layout.html`:
+
+```html
+<nav role="translation">
+    {{ translation('en', "🇬🇧") }}
+    {{ translation('fr', "🇫🇷") }}
+</nav>
+```
+
+### Run a dev server
 
 You can run the development version of the site using the `codex` entrypoint:
 
@@ -55,6 +88,8 @@ You can set the `DEBUG` environment variable to activate the debug mode:
 ```bash
 DEBUG=1 codex
 ```
+
+### Production deployment
 
 To run the production server, you'll need a web server like
 [uWSGI](https://uwsgi-docs.readthedocs.io):

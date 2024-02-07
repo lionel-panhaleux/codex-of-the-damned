@@ -4,7 +4,9 @@ Changelog
 1.64 (unreleased)
 -----------------
 
-- Nothing changed yet.
+- Updated setup to new standards
+- Use ruff to lint
+- Clear translation protocol in the README
 
 
 1.63 (2024-02-06)
