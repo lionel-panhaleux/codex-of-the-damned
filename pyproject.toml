@@ -34,6 +34,9 @@ dev = [
     "zest.releaser[recommended]>=9",
 ]
 
+[project.scripts]
+codex = "codex_of_the_damned:main"
+
 [project.urls]
 Homepage = "https://codex-of-the-damned.org"
 Repository = "https://github.com/lionel-panhaleux/codex-of-the-damned"
@@ -46,6 +49,3 @@ include = ["codex_of_the_damned*"]
 
 [tool.zest-releaser]
 create-wheel = true
-
-[tool.pytest]
-junit_duration_report = "call"
