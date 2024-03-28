@@ -1,7 +1,7 @@
 Changelog
 =========
 
-1.64 (unreleased)
+1.64 (2024-03-28)
 -----------------
 
 - Updated setup to new standards
