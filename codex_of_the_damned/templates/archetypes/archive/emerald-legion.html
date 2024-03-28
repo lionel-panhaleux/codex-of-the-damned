@@ -1,0 +1,164 @@
+{% extends "archetypes/_layout.html" %}
+{% import "archetypes/_layout-erratum.html" as erratum with context %}
+{% import "archetypes/archive/emerald-legion.json" as deck_json %}
+
+{% block meta %}
+<meta property="decklist" content='{{ deck_json | tojson }}' />
+{% endblock %}
+
+{% block archetype_name %}
+<h1>{{ harbinger_of_skulls }} Emerald Legion</h1>
+{% endblock %}
+
+{% block archetype %}
+{% trans trimmed
+agent_of_power=card("Agent of Power"),
+anarch_convert=card("Anarch Convert"),
+anarchist_uprising=card("Anarchist Uprising"),
+ancilla_empowerment=card("Ancilla Empowerment"),
+ashur_tablets=card("Ashur Tablets"),
+aura_reading=card("Aura Reading"),
+babalawo_alafin=card("Babalawo Alafin"),
+breath_of_thanatos=card("Breath of Thanatos"),
+call_of_the_hungry_dead=card("Call of the Hungry Dead"),
+delaying_tactics=card("Delaying Tactics"),
+direct_intervention=card("Direct Intervention"),
+dreams_of_the_sphinx=card("Dreams of the Sphinx"),
+emerald_legionnaire=card("Emerald Legionnaire"),
+entrancement=card("Entrancement"),
+erebus_mask=card("Erebus Mask"),
+erlik=card("Erlik"),
+far_majesty=card("Far Majesty"),
+fbi_special_affairs_division=card("FBI Special Affairs Division"),
+forced_march=card("Forced March"),
+gear_up=card("Gear Up"),
+heart_of_nizchetus=card("Heart Of Nizchetus"),
+inevitability_of_the_void=card("Inevitability of the Void"),
+khurshid=card("Khurshid"),
+liquidation=card("Liquidation"),
+piper=card("Piper"),
+rolling_with_the_punches=card("rolling_with_the_punches"),
+shroud_mastery=card("Shroud Mastery"),
+sniper_rifle=card("Sniper Rifle"),
+spectral_divination=card("Spectral Divination"),
+summon_history=card("Summon History"),
+telepathic_misdirection=card("Telepathic Misdirection"),
+the_barrens=card("The Barrens"),
+the_capuchin=card("The Capuchin"),
+the_unmasking=card("The Unmasking"),
+trochomancy=card("Trochomancy"),
+tupdog=card("Tupdog"),
+vengeful_spirit=card("Vengeful Spirit"),
+bounces=link("/strategy/fundamentals", _("Bounces"), _anchor="bounce"),
+meta=link("/strategy/articles/advanced/the-game-of-the-game", _("meta")),
+anttis_kurshidwall=link("/deck-search", _("Antti's Kurshidwall"), id="10234"),
+lukasz_ho_thanh_proved=link("/deck-search", _("Łukasz Ho Thanh proved"), id="9857"),
+richard_stefan_utners_deck=link("/deck-search", _("Richard Stefan Utner's deck"), id="2019gbzzc"),
+world_championships_win=external("https://www.vekn.net/2-uncategorised/491-vampire-elder-kindred-network-newsletter-november-2020",
+_("World championship win")),
+oriols_giotto=link("/deck-search", _("Oriol Pubill's Giotto"), id="2021nsdpvemo"),
+imbued=link("/deck-search", _("Imbued"), id="10044"),
+daughters_of_cacophony=link("/deck-search", _("Daughters of Cacophony"), id="10214"),
+daniels_weenie_obfuscate=link("/deck-search", _("Daniel Gargulák's Weenie Obfuscate"), id="9801")
+%}
+<h2>Highlights</h2>
+<p>
+    This is an <em>allies toolbox</em> deck using {{ emerald_legionnaire }}.
+    This version uses {{ erlik }} as a star: his ability lets the player get
+    another Harbinger {{ harbinger_of_skulls }} out fast and cheap.
+</p>
+<p>
+    The idea is to defend and get an {{ emerald_legionnaire }} out,
+    then bring the others back from the ash heap if they are there.
+    Once {{ the_unmasking }} and {{ fbi_special_affairs_division }} hit the table,
+    they're a solid defence.
+</p>
+<p>
+    {{ liquidation }} is used to bloat and can put some {{ emerald_legionnaire }},
+    but also the cards to power their ability, in the ash heap.
+</p>
+<p>
+    As the game progresses, {{ emerald_legionnaire }} are used to bleed: they bleed only
+    for one each, which negates the defensive power of {{ bounces }}, but they quickly
+    swarm up, especially since they're not that easy to kill and they can be dreadful
+    in combat with {{ target_vitals }}. On top of it,
+    {{ vengeful_spirit }} and {{ trochomancy }} help boost the Harbinger bleeds, too.
+</p>
+<p>
+    The deck uses combat defense for the Harbingers {{ harbinger_of_skulls }},
+    with {{ for }} prevention cards like {{ rolling_with_the_punches }} alongside
+    simple combat ends like {{ spiritual_intervention }}, {{ delaying_tactics }} for
+    vote defense and {{ AUS }} bounces like {{ telepathic_misdirection }} against bleeds.
+</p>
+<h2>Tips & Tricks</h2>
+<p>
+    To be able to use their ability, an {{ emerald_legionnaire }} must be put into play
+    by recruiting it: the ones in the ash heap can not have their effect used —
+    their card text is ignored as long as they are in the ash heap.
+    In order to manage to get at least one into play, the deck packs a bit of
+    stealth with {{ spectral_divination }}, {{ call_of_the_hungry_dead }} and
+    {{ breath_of_thanatos }}.
+</p>
+<p>
+    A key feature of this deck is the versatility of its cards:
+    {{ spectral_divination }} can be used for stealth or intercept,
+    {{ breath_of_thanatos }} for stealth or a deadly strike, and so on.
+</p>
+<p>
+    Many cards in the deck allow for additional discards to feed the
+    {{ emerald_legionnaire }}'s ability. {{ liquidation }}, of course, but also
+    {{ the_barrens }}, {{ dreams_of_the_sphinx }}, {{ aura_reading }} and
+    {{ babalawo_alafin }}.
+</p>
+<p>
+    {{ trochomancy }} is a very {{ meta }} dependant inclusion,
+    as {{ inevitability_of_the_void }} can be a stronger alternative to lunge.
+    But {{ trochomancy }} has the distinct advantage to be a very strong counter against
+    other {{ emerald_legionnaire }} decks as well as recursion heavy builds relying on
+    {{ ashur_tablets }}.
+</p>
+<p>
+    The archetype has been so successful the last few years that a lot of decks now
+    include strong counters against ally swarms, specifically ally-stealing actions
+    like {{ entrancement }} and {{ far_majesty }} as well as anti-swarm votes like
+    {{ anarchist_uprising }} and {{ ancilla_empowerment }}. The hight number of
+    {{ direct_intervention }} and {{ delaying_tactics }} in the deck is designed
+    to counterbalance this trend.
+</p>
+<h2>Variants</h2>
+<p>
+    With {{ erlik }} as a star, {{ forced_march }} is often included.
+    A few equipments like {{ sniper_rifle }}, {{ erebus_mask }} and
+    {{ heart_of_nizchetus }} are also common.
+</p>
+<p>
+    A variant uses {{ the_capuchin }} as star, {{ richard_stefan_utners_deck }}
+    from 2019 is a good example of it.
+</p>
+<p>
+    Another successful variant is {{ anttis_kurshidwall }}, using {{ khurshid }} as a
+    star and introducing a small Anarch module with {{ anarch_convert }}, to allow for
+    the inclusion of {{ piper }} for safe recruitments, and {{ gear_up }} for a welcome
+    bit of recursion that plays very well with {{ liquidation }}.
+    It's also possible to use {{ khurshid }} without going for the Anarch angle, like
+    {{ lukasz_ho_thanh_proved }} through multiple wins.
+</p>
+<p>
+    {{ emerald_legionnaire }}'s ability is so self-sufficient that one does not even
+    need to play a full Harbingers {{ harbinger_of_skulls }} crypt to make them work.
+    Bill Troxel has been industrious in using them in very convoulted builds, like
+    his {{ world_championships_win }} using {{ tupdog }} and {{ agent_of_power }}
+    to play {{ summon_history }} to fetch them, or his {{ daughters_of_cacophony }}
+    and {{ imbued }} variants. Other big names have explored alternatives, most notably
+    {{ oriols_giotto }} and {{ daniels_weenie_obfuscate }}.
+
+</p>
+{% endtrans %}
+{% endblock %}
+
+{% block errata %}
+<div class="insert warn">
+    <h3>Errata</h3>
+    {{ erratum.emerald() }}
+</div>
+{% endblock %}

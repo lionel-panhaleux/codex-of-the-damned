@@ -1,0 +1,117 @@
+{% extends "archetypes/_layout.html" %}
+{% import "archetypes/_layout-erratum.html" as erratum with context %}
+{% import "archetypes/top-tier/brujah-resistance.json" as deck_json %}
+
+{% block meta %}
+<meta property="decklist" content='{{ deck_json | tojson }}' />
+{% endblock %}
+
+{% block archetype_name %}
+<h1>{{ brujah }} Brujah Resistance</h1>
+{% endblock %}
+
+{% block archetype %}
+{% trans trimmed
+magnum=card(".44 Magnum"),
+street_royals=card("47th Street Royals"),
+ashur_tablets=card("Ashur Tablets"),
+bait_and_switch=card("Bait and Switch"),
+carfax_abbey=card("Carfax Abbey"),
+club_illusion=card("Club Illusion"),
+constant_revolution=card("Constant Revolution"),
+diversion=card("Diversion"),
+dreams_of_the_sphinx=card("Dreams of the Sphinx"),
+dust_up=card("Dust Up"),
+elen_kamjian=card("Elen Kamjian"),
+fortschritt_library=card("Fortschritt Library"),
+garibaldi_meucci_museum=card("Garibaldi-Meucci Museum"),
+grey_thorne=card("Grey Thorne"),
+hell_for_leather=card("Hell-For-Leather"),
+line_brawl=card("Line Brawl"),
+make_the_misere=card("Make the Misere"),
+monkey_wrench=card("Monkey Wrench"),
+mr_winthrop=card("Mr. Winthrop"),
+new_carthage=card("New Carthage"),
+open_war=card("Open War"),
+organized_resistance=card("Organized Resistance"),
+papillon=card("Papillon"),
+protection_racket=card("Protection Racket"),
+reckless_agitation=card("Reckless Agitation"),
+the_parthenon=card("The Parthenon"),
+the_slow_withering=card("The Slow Withering"),
+villein=card("Villein"),
+vivienne_geroux=card("Vivienne Géroux"),
+the_anarch_free_press=card("The Anarch Free Press"),
+marcio_pinheiros_deck=link("/deck-search", _("Márcio Pinheiro's deck"), id="10622"),
+pedro_paulos_deck=link("/deck-search", _("Pedro Paulo's deck"), id="10620"),
+erik_albenzes_deck=link("/deck-search", _("Erik Albenze's deck"), id="10736")
+%}
+<h2>Highlights</h2>
+<p>
+    This is a <em>toolbox</em> deck using Brujah {{ brujah }} barons.
+</p>
+<p>
+    It relies on the defensive abilities of Anarch Barons:
+    {{ organized_resistance }} for unlock and {{ bait_and_switch }} for bounces.
+    Using versatile "three-way" combat cards {{ diversion }} and {{ dust_up }},
+    combined with some {{ magnum }}, the deck achieves a solid defense and enough intimidation
+    to get bleeds through.
+</p>
+<p>
+    The deck builds up power while the game progresses: the Barons start to get some {{ magnum }},
+    permanent intercept like {{ mr_winthrop }},
+    better bleed with {{ new_carthage }} and/or {{ club_illusion }}, and blood regeneration
+    with {{ papillon }} and/or {{ carfax_abbey }}.
+</p>
+<p>
+    The list presented here uses a heavy master module supported by {{ the_parthenon }},
+    with {{ ashur_tablets }} and {{ garibaldi_meucci_museum }} recursion.
+    This allows the deck to run a tight 62 cards library and gives it higher chances to
+    get the important unique cards.
+</p>
+<h2>Tips & Tricks</h2>
+<p>
+    Early on, {{ villein }} must be used to recoup as much blood as possible. The deck has decent defense,
+    but is pool hungry. The Barons can hunt to regenerate, until {{ papillon }} and/or {{ carfax_abbey }} land.
+</p>
+<p>
+    {{ garibaldi_meucci_museum }} is incredibly versatile, from fetching the required unlock or bounce,
+    to getting the lone {{ reckless_agitation }} for damage, turn after turn if needed.
+</p>
+<p>
+    This version aims for {{ the_slow_withering }}. The whole deck uses only inferior disciplines,
+    so the card only hurts the opponents. One need to be careful when playing it, though:
+    if it hurts allies more than the prey and predator it can be discarded, and fetched
+    back later with {{ ashur_tablets }}. The other Gehenna cards are mostly here to allow {{ the_slow_withering }}
+    to be played but can be useful in niche cases.
+</p>
+<p>
+    {{ ashur_tablets }} can be used at mid-game to put back in deck combat and reaction cards.
+    Once a first {{ ashur_tablets }} cycle has occured, the deck increases its block and combat consistency.
+</p>
+<h2>Variants</h2>
+<p>
+    Including {{ the_slow_withering }} is really specific to this one instance of the deck,
+    others do not rely on events. A few cards often find their way in: {{ monkey_wrench }} for the lunge and {{
+    protection_racket }}
+    for intercept. Also, allies like {{ grey_thorne }}, {{ vivienne_geroux }}
+    or {{ street_royals }}. Some Anarch tools like {{ open_war }} or {{ constant_revolution }} can also find a slot
+    here.
+    On the crypt side, {{ elen_kamjian }} often finds a spot.
+</p>
+<p>
+    The most common variant includes rush actions to provide more flexibility, like {{ line_brawl }}.
+    The {{ ashur_tablets }} recursion can also be dropped by playing a larger library.
+    See for example {{ marcio_pinheiros_deck }}.
+</p>
+<p>
+    There are a lot of variations in the combat module. If {{ dust_up }} is a constant, {{ diversion }} is sometimes
+    dropped and {{ hell_for_leather }} often included.
+    See for example {{ pedro_paulos_deck }}.
+</p>
+<p>
+    The deck can also be much more rush-oriented, relying on a more brutal combat module and superior
+    {{ CEL }} {{ POT }} disciplines, like in {{ erik_albenzes_deck }}.
+</p>
+{% endtrans %}
+{% endblock %}

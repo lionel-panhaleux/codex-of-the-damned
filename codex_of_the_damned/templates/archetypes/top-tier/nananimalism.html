@@ -1,0 +1,114 @@
+{% extends "archetypes/_layout.html" %}
+{% import "archetypes/_layout-erratum.html" as erratum with context %}
+{% import "archetypes/top-tier/nananimalism.json" as deck_json %}
+
+{% block meta %}
+<meta property="decklist" content='{{ deck_json | tojson }}' />
+{% endblock %}
+
+{% block archetype_name %}
+<h1>{{ guruhi }} Nananimalism</h1>
+{% endblock %}
+
+{% block archetype %}
+{% trans trimmed
+aid_from_bats=card("Aid from Bats"),
+anarch_convert=card("Anarch Convert"),
+anarch_revolt=card("Anarch Revolt"),
+aranthebes_the_immortal=card("Aranthebes, The Immortal"),
+archon_investigation=card("Archon Investigation"),
+army_of_rats=card("Army of Rats"),
+ashur_tablets=card("Ashur Tablets"),
+canine_horde=card("Canine Horde"),
+carrion_crows=card("Carrion Crows"),
+cats_guidance=card("Cats' Guidance"),
+codex_of_the_edenic_groundskeepers=card("Codex of the Edenic Groundskeepers"),
+deep_song=card("Deep Song"),
+dragonbound=card("Dragonbound"),
+fame=card("Fame"),
+fish=card("Fish"),
+hell_for_leather=card("Hell for Leather"),
+libertas=card("Libertas"),
+magnum=card(".44 Magnum"),
+majesty=card("Majesty"),
+nana_buruku=card("Nana Buruku"),
+powerbase_luanda=card("Powerbase: Luanda"),
+powerbase_montreal=card("Powerbase: Montreal"),
+raven_spy=card("Raven Spy"),
+sense_the_savage_way=card("Sense the Savage Way"),
+terror_frenzy=card("Terror Frenzy"),
+the_anarch_free_press=card("The Anarch Free Press"),
+the_rack=card("The Rack"),
+voracious_vermin=card("Voracious Vermin"),
+well_marked=card("Well-Marked"),
+wider_view=card("Wider View"),
+bounces=link("/strategy/fundamentals", _("Bounces"), _anchor="bounce"),
+ed_goncalves_deck=link("/deck-search", _("Ed Gonçalves' deck"), id="9984"),
+kim_nilsson_s_deck=link("/deck-search", _("Kim Nilsson's deck"), id="2016sncss"),
+mailton_silva=link("/deck-search", "Mailton Silva", id="2019bncfb")
+%}
+<h2>Highlights</h2>
+<p>
+    This is a <em>toolbox</em> deck using {{ deep_song }} to rush
+    or bleed and a {{ ANI }} block and combat module.
+</p>
+<p>
+    Using {{ nana_buruku }} allows the inclusion of more master cards, in this case
+    a stupendous number of {{ anarch_revolt }}. Using {{ deep_song }} to rush, the deck
+    can remove any Anarch vampire on the prey's board to let the masters finish them off.
+    The incidental {{ fame }} can help in the same regard.
+</p>
+<p>
+    {{ deep_song }}'s versatility is at the core of this deck, as often in {{ ANI }}
+    decks. It can be used to bleed or to rush a cumbersome minion depending on the
+    situation. The deck has a bit of defense too, focused here on maximising the number
+    of wakes and unlock, relying solely on {{ cats_guidance }} for the occasional intercept.
+    If needed, {{ villein }} and {{ vessel }} can provide a bit of bloat, and a lucky
+    {{ taste_of_vitae }} can be used to resplenish blood on the vampires.
+</p>
+<p>
+    The combat module relies on the usual {{ aid_from_bats }} & {{ carrion_crows }}
+    long range Animalism {{ ANI }} module, with a couple of {{ canine_horde }} against weapons
+    like {{ magnum }}, and the occasional {{ hell_for_leather }} for a dodge when things
+    get too hairy. Finally, {{ terror_frenzy }} is used to be able to keep the range to
+    long in face of opposing maneuvers.
+</p>
+<h2>Tips & Tricks</h2>
+<p>
+    {{ libertas }} is doubled because it counters Presence {{ pre }} combat ends like
+    {{ majesty }}. It can come in handy if you stumble on this widespread defense.
+</p>
+<p>
+    Nowadays, {{ voracious_vermin }} might be prefered over {{ canine_horde }},
+    since it can still be useful even if there's no weapon.
+</p>
+<p>
+    Without {{ bounces }}, the deck defense is pretty low, so it might need to rush
+    back a bit. {{ archon_investigation }} is also almost mandatory here,
+    and could be doubled if heavy bleeds are to be expected.
+</p>
+<p>
+    Getting {{ wider_view }} at some point helps getting rid
+    of the spurious {{ nana_buruku }} in crypt.
+    She's also only played in 3 copies to avoid jamming the crypt too much;
+    other minions are needed for the deck to work well.
+</p>
+<h2>Variants</h2>
+<p>
+    The main variant of this archetype was to include 6 to 9 {{ ashur_tablets }} in the
+    master module to help fix the card flow and get a bit of additional bloat.
+    Check out {{ ed_goncalves_deck }} for an example.
+</p>
+<p>
+    A more toolboxy version is also possible, using more intercept with cards like
+    {{ the_anarch_free_press }} and {{ raven_spy }}, to increase the defense and protect
+    permanents like {{ army_of_rats }} or {{ powerbase_montreal }}.
+    {{ codex_of_the_edenic_groundskeepers }} might also fit here, to help with the oust.
+</p>
+<p>
+    The <strong>Weenie ANI</strong> variant plays Animalism {{ ANI }} without {{ nana_buruku }}.
+    It is arguably less versatile, and more of a rush deck than a toolbox deck, but it's still very strong.
+    {{ kim_nilsson_s_deck }} from the 2016 Swedish NC is a good example.
+</p>
+{% endtrans %}
+{% endblock %}

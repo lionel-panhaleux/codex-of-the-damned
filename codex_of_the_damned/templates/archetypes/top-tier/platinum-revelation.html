@@ -1,0 +1,116 @@
+{% extends "archetypes/_layout.html" %}
+{% import "archetypes/_layout-erratum.html" as erratum with context %}
+{% import "archetypes/top-tier/platinum-revelation.json" as deck_json %}
+
+{% block meta %}
+<meta property="decklist" content='{{ deck_json | tojson }}' />
+{% endblock %}
+
+{% block archetype_name %}
+<h1>{{ ministry }} Platinum Revelation</h1>
+{% endblock %}
+
+{% block archetype %}
+{% trans trimmed
+aire_of_elation=card("Aire of Elation"),
+aluc_romas_de_leon=card("Aluc Romas De Leon"),
+anarch_railroad=card("Anarch Railroad"),
+archon_investigation=card("Archon Investigation"),
+bait_and_switch=card("Bait and Switch"),
+bleeding_the_vine=card("Bleeding the Vine"),
+blood_doll=card("Blood Doll"),
+carfax_abbey=card("Carfax Abbey"),
+cave_of_apples=card("Cave of Apples"),
+crimethinc=card("CrimethInc."),
+dabbler=card("Dabbler"),
+doctor_morocco=card("Doctor Morocco"),
+eat_the_rich=card("Eat The Rich"),
+elisha_tucker=card("Elisha Tucker"),
+enchanting_gaze=card("Enchanting Gaze"),
+entrancement=card("Entrancement"),
+field_training=card("Field Training"),
+form_of_mist=card("Form of Mist"),
+haqims_law_retribution=card("Haqim's Law: Retribution"),
+house_of_sorrow=card("House of Sorrow"),
+mind_numb=card("Mind Numb"),
+narrow_minds=card("Narrow Minds"),
+nonu_dis=card("Nonu Dis"),
+opium_den=card("Opium Den"),
+party_out_of_bounds=card("Party Out Of Bounds"),
+pentex_subversion=card("Pentex™ Subversion"),
+platinum_protocol=card("The Platinum Protocol", "Platinum Protocol"),
+propaganda_of_the_deed=card("Propaganda of the Deed"),
+reckless_agitation=card("Reckless Agitation"),
+revelation_of_the_serpent=card("Revelation of the Serpent"),
+temple_hunting_ground=card("Temple Hunting Ground"),
+villein=card("Villein"),
+vivian_vi=card("Vivian VI"),
+wider_view=card("Wider View"),
+desso_alastor=link("/deck-search", "Desso Alastor", id="10312"),
+haqim_royalty=link("/archetypes/haqim-royalty"),
+lunge=link("/strategy/fundamentals", _("lunge"), id="lunge"),
+leeching=link("/strategy/bloat", _("leeching"), id="leech"),
+karl_schaeffer=link("/deck-search", "Karl Schaefer", id="10111"),
+lukas_simandls_deck=link("/deck-search", _("Lukáš Simandl's deck"), id="10449"),
+kim_nilsson=link("/deck-search", _("Kim Nilsson"), id="10562"),
+the_unnamed=link("/archetypes/the-unnamed")
+%}
+<h2>Highlights</h2>
+<p>
+    This is a <em>Stealth & Bleed</em> deck using the V5 Ministry {{ ministry }} anarchs and their ominous
+    {{ platinum_protocol }} to deliver constant strong stealth bleeds, supported by the combo cards
+    {{ revelation_of_the_serpent }} and {{ enchanting_gaze }}.
+</p>
+<p>
+    The game plan is very straightforward: get vampires out and bleed your preys to death successively.
+    {{ party_out_of_bounds }} and {{ bait_and_switch }} are used for bleed defense, and the versatile {{ form_of_mist }}
+    as both stealth and combat defense. {{ minion_tap }} is used to get some pool back and influence more bleeders
+    throughout the game.
+</p>
+<h2>Tips & Tricks</h2>
+<p>
+    {{ mind_numb }} can be used to slow down the predator or lock a defender on the prey's side.
+    {{ entrancement }}, on the other hand, can be used to take control of any cumbersome ally and,
+    if there are none, simply to bleed.
+</p>
+<p>
+    {{ crimethinc }} is used to unlock so that these "additional actions" can be played on top of the bleeds,
+    so as to not slow down the core strategy of the deck. It can also be used simply to unlock a Baron
+    so they can {{ bait_and_switch }} if you don't have a wake, or appear like they could,
+    even if you don't have the bounce.
+</p>
+<p>
+    {{ dabbler }} is a very typical card in this archetype. Because most vampires will use {{ platinum_protocol }}
+    with the three disciplines, they will always get some blood out of it. They can also unlock with it, if the
+    {{ crimethinc }} is not enough. But mostly it's a solid blood generation device,
+    justifying the inclusion of {{ minion_tap }} over a more classical {{ villein }}.
+</p>
+<p>
+    With the amount of unlock and the good number of combat ends {{ pro }} offers, the deck can also put up a resilient
+    defense in the face of a predator who's not using stealth, if need be.
+</p>
+<h2>Variants</h2>
+<p>
+    The <strong>Apolitical</strong> variant forgoes the Barons altogether to rely solely on {{ party_out_of_bounds }}
+    for defense. It can also work pretty well, especially when backed by a solid master denial module,
+    as demonstrated by {{ kim_nilsson }}.
+</p>
+<p>
+    The master module can vary widely. {{ carfax_abbey }} and {{ temple_hunting_ground }} can improve
+    blood regeneration. Some have experimented with {{ cave_of_apples }} to add a dreadful use to all these
+    juicy corruption counters {{ platinum_protocol }} pops up.
+</p>
+<p>
+    The inclusion of a view political cards like {{ eat_the_rich }} and {{ reckless_agitation }} is also a possibility:
+    it can be backed by {{ propaganda_of_the_deed }} and offer a stronger {{ lunge }} by
+    calling the votes after a successful {{ platinum_protocol }} and an unlock from {{ crimethinc }} and {{ dabbler }}.
+    The downside is, obviously, less stability and a harder hand management. Still it is appealing, as two top players,
+    {{ desso_alastor }} and {{ karl_schaeffer }}, already demonstrated.
+</p>
+<p>
+    Another variation combines this archetype with {{ the_unnamed }}, see for example {{ lukas_simandls_deck }} for the
+    Austrian Open. It is debatable whether or not the combination is in any way stronger than any of the individual
+    decks, but it does not seem to be inferior either.
+</p>
+{% endtrans %}
+{% endblock %}

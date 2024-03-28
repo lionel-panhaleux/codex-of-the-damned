@@ -1,0 +1,68 @@
+{% extends "archetypes/_layout.html" %}
+{% import "archetypes/_layout-erratum.html" as erratum with context %}
+{% import "archetypes/new-kids/animals.json" as deck_json %}
+
+{% block meta %}
+<meta property="decklist" content='{{ deck_json | tojson }}' />
+{% endblock %}
+
+{% block archetype_name %}
+<h1>Animals</h1>
+{% endblock %}
+
+{% block archetype %}
+{% trans trimmed
+aid_from_bats=card("Aid From Bats"),
+anarch_revolt=card("Anarch Revolt"),
+bait_and_switch=card("Bait and Switch"),
+carrion_crows=card("Carrion Crows"),
+club_illusion=card("Club Illusion"),
+deep_song=card("Deep Song"),
+dog_pack=card("Dog Pack"),
+fame=card("Fame"),
+organized_resistance=card("Organized Resistance"),
+powerbase_los_angeles=card("Powerbase: Los Angeles"),
+the_status_perfectus=card("The Status Perfectus"),
+nananimalism=link("/archetypes/nananimalism")
+%}
+<h2>Highlights</h2>
+<p>
+    This is a Multiclan Anarch <em>toolbox</em> deck using Animalism {{ ANI }} coupled with the powerful
+    {{ organized_resistance }} Barons provide.
+</p>
+<p>
+    It is one of the first tournament wins featuring the new V5 Tzimisce, and it was built by no other than
+    Nina Nilsson, 2023 UK Grand Prix Champion.
+</p>
+<p>
+    It does use the classical Animalism {{ ANI }} tools one would expect: {{ deep_song }} to be able to bleed or rush,
+    and the classical {{ aid_from_bats }} & {{ carrion_crows }} module that made {{ nananimalism }} a force to recon.
+</p>
+<p>
+    But here, thanks to the new Tzimisce {{ tzimisce }} Barons and Ravnos {{ ravnos }} sidekicks, it's a full Anarch
+    version right off the bat, and it can use and egregious number of {{ organized_resistance }} and a couple
+    {{ bait_and_switch }} to provide a strong defense on top.
+</p>
+<p>
+    Not relying on {{ anarch_revolt }} for the oust with all the Anarchs lying around nowadays, it just uses
+    {{ fame }} and {{ club_illusion }}. The Master module provides a good bloat, getting the vampires blood back
+    to influence more of them.
+</p>
+<h2>Considerations</h2>
+<p>
+    It's nice to see the V5 Tzimisce {{ tzimisce }} finally scoring a win here, and interesting to see {{ ANI }}
+    making a comeback. Even though {{ PRO }} has been in fashion lately, and Banu Haqim {{ banu_haqim }} combat
+    is very hard to match, {{ ANI }} combat is still a stable and dangerous module.
+</p>
+<p>
+    So, one can wonder: will the Tzimisce {{ tzimisce }} manage to pull off a whole new archetype by themselves,
+    or is this kind of Animalism {{ ANI }} mix what we'll see hitting the top tier in a couple of months?
+    We'll have to wait and see.
+</p>
+<p>
+    There's not much to say about the deck itself. The Master module is packed already, but maybe there is room for
+    a {{ powerbase_los_angeles }} somewhere here. If {{ the_status_perfectus }} is worth including,
+    maybe a {{ dog_pack }} deserves consideration too.
+</p>
+{% endtrans %}
+{% endblock %}

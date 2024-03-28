@@ -1,0 +1,77 @@
+{% extends "archetypes/_layout.html" %}
+{% import "archetypes/_layout-erratum.html" as erratum with context %}
+{% import "archetypes/archive/enkidu-multirush.json" as deck_json %}
+{% import "archetypes/archive/_layout.html" as layout with context %}
+
+{% block meta %}
+<meta property="decklist" content='{{ deck_json | tojson }}' />
+{% endblock %}
+
+{% block archetype_name %}
+<h1>{{ gangrel_antitribu }} Enkidu Multirush</h1>
+{% endblock %}
+
+{% block archetype %}
+{% trans trimmed
+anarch_convert=card("Anarch Convert"),
+andre_le_roux=card("Andre Le Roux"),
+claws_of_the_dead=card("Claws of the Dead"),
+diversion=card("Diversion"),
+earth_meld=card("Earth Meld"),
+enkidu=card("Enkidu, The Noah", "Enkidu"),
+enkidu_the_noah=card("Enkidu, The Noah"),
+forced_march=card("Forced March"),
+freak_drive=card("Freak Drive"),
+immortal_grapple=card("Immortal Grapple"),
+infamous_insurgent=card("Infamous Insurgent"),
+libertas=card("Libertas"),
+make_the_misere=card("Make The Misere"),
+powerbase_los_angeles=card("Powerbase: Los Angeles"),
+psyche=card("Psyche!"),
+raven_spy=card("Raven Spy"),
+sense_the_savage_way=card("Sense The Savage Way"),
+balázs_kalóczkai_s_deck=link("/deck-search", _("Balázs Kalóczkai's deck"), id="10463"),
+john_b_whelan_s_deck=link("/deck-search", _("John B. Whelan's deck"), id="10314")
+%}
+<h2>Highlights</h2>
+<p>
+    This is a dreaded <em>rush</em> deck with {{ enkidu_the_noah }} as the star.
+    He can rush and take down almost anyone, but also get some {{ raven_spy }} and block consistently with
+    {{ sense_the_savage_way }}.
+</p>
+<p>
+    The combat module is dreadful, running so many {{ psyche }} that there's no escaping the beast.
+    The occasional {{ claws_of_the_dead }} can help put some big foe in torpor, or even destroy them.
+    A few dodges and damage prevention help protect from more active combat modules.
+</p>
+<p>
+    The archetype is called "multirush" because it is built to allow {{ enkidu }} to rush more than one vampire per
+    turn.
+    While he usually uses {{ forced_march }} or {{ freak_drive }} to unlock, this version interestingly focuses on
+    {{ earth_meld }} instead. When he rushes, he can {{ earth_meld }} first, then continue the combat with {{ psyche }},
+    so he's unlocked and ready to rush anew if he gets one of the few action cards to do so
+</p>
+<p>
+    But {{ earth_meld }} also provide a fair bit of versatility since it can be used defensively too,
+    avoid combats that are too dangerous, or providing much more unlock for intercepting large swarms.
+</p>
+<h2>Tips & Tricks</h2>
+<p>
+    {{ andre_le_roux }} is a common inclusion in rush combat decks. Once the prey's vampires are removed,
+    it might take a few turns to oust them.
+    So {{ andre_le_roux }} can help, since he can bleed for 2 with his ability.
+</p>
+
+<h2>Variants</h2>
+<p>
+    The most common variant is the Anarch variant, using {{ anarch_convert }} to make {{ enkidu }} Anarch, so he can
+    spam {{ diversion }} and rush with {{ make_the_misere }}, but also benefit from interesting Master cards like
+    {{ libertas }}, {{ powerbase_los_angeles }} and {{ infamous_insurgent }}.
+    See {{ balázs_kalóczkai_s_deck }}.
+</p>
+<p>
+    A Potence {{ POT }} version of the archetype is also possible, using {{ immortal_grapple }} over {{ psyche }},
+    like in {{ john_b_whelan_s_deck }}.
+</p>
+{% endtrans %}
+{% endblock %}

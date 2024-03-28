@@ -1,0 +1,66 @@
+{% extends "archetypes/_layout.html" %}
+{% import "archetypes/_layout-erratum.html" as erratum with context %}
+{% import "archetypes/new-kids/savannah-salt.json" as deck_json %}
+
+{% block meta %}
+<meta property="decklist" content='{{ deck_json | tojson }}' />
+{% endblock %}
+
+{% block archetype_name %}
+<h1>{{ tremere_antitribu }} Savannah Salt</h1>
+{% endblock %}
+
+{% block archetype %}
+{% trans trimmed
+ashur_tablets=card("Ashur Tablets"),
+deflection=card("Deflection"),
+delaying_tactics=card("Delaying Tactics"),
+emerald_legionnaire=card("Emerald Legionnaire"),
+gran_madre_di_dio=card("Gran Madre di Dio, Italy", "Gran Madre di Dio"),
+poison_pill=card("Poison Pill"),
+powerbase_savannah=card("Powerbase: Savannah"),
+salt_of_thoth=card("Salt of Thoth"),
+scourge_of_the_enochians=card("Scourge of the Enochians"),
+the_embrace=card("The Embrace"),
+uncoiling=card("The Uncoiling", "Uncoiling"),
+gangrel_thing=link("/archetypes/gangrel-thing")
+%}
+<h2>Highlights</h2>
+<p>
+    This is a Tremere {{ tremere }} <em>swarm</em> deck using {{ the_embrace }} to get more
+    minions and bleed for one, getting around bounce and reduction defenses.
+    The intersting trick here is it uses {{ powerbase_savannah }} to protect against combat, and {{ salt_of_thoth }}
+    to protect the {{ powerbase_savannah }} itself.
+</p>
+<p>
+    This funny contraption was brought to us by the inimitable <em>Bram Van Stappen</em>, who won a small Finnish
+    tournament with it. Given the highly competitive meta there, and the infamous combat-heavy nature of it,
+    it is an impressive achievement.
+</p>
+<p>
+    The deck contains a lot of Locations to support the {{ powerbase_savannah }}, and a lot of {{ deflection }}
+    to defend against strong bleeders. A bit of vote defense with {{ delaying_tactics }} and {{ poison_pill }},
+    some Bram-typical {{ ashur_tablets }} recursion, a {{ gran_madre_di_dio }} just to contest it if it goes out,
+    and an {{ uncoiling }} to remove the incidental {{ scourge_of_the_enochians }}.
+</p>
+<h2>Considerations</h2>
+<p>
+    Now that swarms have falled a bit out of fashion thanks to {{ gangrel_thing }} and the {{ emerald_legionnaire }}
+    nerf, opponents are lessed prepared to it. And if, normally, a combat-oriented meta could control this easily,
+    {{ powerbase_savannah }} offers a really efficient response, jamming the hand of combat decks
+    while also denying any remove from stealth deck with {{ salt_of_thoth }}.
+</p>
+<p>
+    So, is this thing strong, or it just just a fluke? Hard to tell: Bram is certainly a talented player,
+    and him winning with this deck does not mean the lot us can. Additionally, a first win can often be credited
+    to the opponents underestimating the deck or failing to foresee its mechanics. On the first confrontation,
+    one would for sure underestimate the amount of combat {{ powerbase_savannah }} can end, and how difficult
+    it would be to remove it because of the loads of {{ salt_of_thoth }} here.
+</p>
+<p>
+    So maybe this can only win once as a surprise. But it won a tournament finals, so even knowing the deck,
+    the finalists there couldn't best it. This might be worth trying and investigating and, who knows?
+    Maybe it's the new swarm we're all going to worry about now.
+</p>
+{% endtrans %}
+{% endblock %}

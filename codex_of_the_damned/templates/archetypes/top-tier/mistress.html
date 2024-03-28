@@ -1,0 +1,102 @@
+{% extends "archetypes/_layout.html" %}
+{% import "archetypes/_layout-erratum.html" as erratum with context %}
+{% import "archetypes/top-tier/mistress.json" as deck_json %}
+
+{% block meta %}
+<meta property="decklist" content='{{ deck_json | tojson }}' />
+{% endblock %}
+
+{% block archetype_name %}
+<h1>{{ tremere }} Mistress</h1>
+{% endblock %}
+
+{% block archetype %}
+{% trans trimmed
+alastor=card("Alastor"),
+ashur_tablets=card("Ashur Tablets"),
+flurry_of_action=card("Flurry of Action"),
+helicopter=card("Helicopter"),
+information_highway=card("Information Highway"),
+magic_of_the_smith=card("Magic of the Smith"),
+malgorzata=card("Malgorzata"),
+mental_maze=card("Mental Maze"),
+might_of_the_camarilla=card("Might of the Camarilla"),
+mistress_fanchon=card("Mistress Fanchon"),
+obedience=card("Obedience"),
+possession=card("Possession"),
+scourge_of_the_enochians=card("Scourge of the Enochians"),
+sha_ennu=card("Sha‑Ennu"),
+unmada=card("Unmada"),
+villein=card("Villein"),
+zillah_s_valley=card("Zillah's Valley"),
+malgorzata_archetype=link("/archetypes/malgorzata"),
+meta=link("/strategy/articles/advanced/the-game-of-the-game", _("meta")),
+a_b=link("/strategy/fundamentals", _("A&B"), _anchor="AB"),
+benoît_moyen_s_deck=link("/deck-search", _("Benoît Moyen's deck"), id="2010eternalvigilancelf"),
+nice_combination=link("/deck-search", _("nice combination"), id="2018bgpmb")
+%}
+<h2>Highlights</h2>
+<p>
+    This is a <em>bleed & vote</em> deck starring {{ mistress_fanchon }}.
+    Her ability lets her fetch an {{ alastor }} to equip with
+    an {{ helicopter }}, paying only 1 pool.
+</p>
+<p>
+    {{ villein }}, {{ zillah_s_valley }} and {{ information_highway }} are used to get
+    multiple big capacity vampires into play.
+</p>
+<p>
+    This version uses only the {{ DOM }}{{ OBF }} disciplines, a dreadful combination.
+    {{ obedience }} and {{ mental_maze }} are used for combat defence.
+</p>
+<h2>Tips & Tricks</h2>
+<p>
+    The key idea of this archetype is to abuse {{ mistress_fanchon }}'s ability
+    to fetch the right card at the right time. But she's not absolutely required here:
+    the sidekicks can perform pretty well by themselves, and with {{ ashur_tablets }}
+    in the mix, managing to get the right card at the right time is still very much
+    a possibility.
+</p>
+<p>
+    The deck is slow-paced, an this version includes no {{ a_b }} enhancement.
+    So it's all about keeping a low profile, and timing the lunge well.
+    The deck is surprisingly resilient and, if it manages to avoid the table's attention,
+    it has all the flexibility it needs to fetch a couple of victory points in the end game.
+</p>
+<p>
+    {{ scourge_of_the_enochians }} is included to cripple breed constructs,
+    as they can be overwhelming for this slower deck.
+</p>
+<h2>Variants</h2>
+<p>
+    The use of {{ obedience }} for combat defense is very typical of this archetype, and
+    some builds field twice the amount we see here: that depends a lot on the expected
+    {{ meta }}. {{ a_b }} enhancer are a common inclusion too, like {{ rutors_hand }}
+    and an {{ helicopter }} that can be fetched with {{ alastor }}
+    or {{ magic_of_the_smith }}.
+    The inclusion of {{ ashur_tablets }}, on the other hand, is pretty rare.
+</p>
+<p>
+    The <strong>Malgorzata</strong> variant uses {{ malgorzata }} as a star.
+    It enhances the bloat possibilities of the deck and can open up the possibility of
+    using Vicissitude {{ VIC }} for stealth or combat.
+    Interestingly, it seems there is a spectrum between this archetype
+    and the pure {{ malgorzata_archetype }}, more than a definite difference.
+    We chose to keep the "mistress" archetype to the one with purely defensive combat,
+    where you could expect a real "malgorzata" to use Vicissitude {{ VIC }}
+    for aggravated damage.
+</p>
+<p>
+    Danilo Torrisi played a {{ nice_combination }} in 2018:
+    The {{ might_of_the_camarilla }} alongside {{ possession }}
+    to get more Inner Circle into play fast and cheap.
+</p>
+{% endtrans %}
+{% endblock %}
+
+{% block errata %}
+<div class="insert warn">
+    <h3>Errata</h3>
+    {{ erratum.ashur( 'undecided' ) }}
+</div>
+{% endblock %}

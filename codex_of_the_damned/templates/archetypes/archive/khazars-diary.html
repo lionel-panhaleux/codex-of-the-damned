@@ -1,0 +1,96 @@
+{% extends "archetypes/_layout.html" %}
+{% import "archetypes/_layout-erratum.html" as erratum with context %}
+{% import "archetypes/archive/khazars-diary.json" as deck_json %}
+
+{% block meta %}
+<meta property="decklist" content='{{ deck_json | tojson }}' />
+{% endblock %}
+
+{% block archetype_name %}
+<h1>{{ giovanni }} Khazar's Diary</h1>
+{% endblock %}
+
+{% block archetype %}
+{% trans trimmed
+khazar_s_diary=card("Khazar's Diary (Endless Night)", "Khazar's Diary"),
+the_embrace=card("The Embrace"),
+sudario_refraction=card("Sudario Refraction"),
+deflection=card("Deflection"),
+delaying_tactics=card("Delaying Tactics"),
+carlton_van_wyk=card("Carlton Van Wyk"),
+ossian=card("Ossian"),
+liquidation=card("Liquidation"),
+the_unmasking=card("The Unmasking"),
+fbi_special_affairs_division=card("FBI Special Affairs Division"),
+jake_washington=card("Jake Washington"),
+the_parthenon=card("The Parthenon"),
+vessel=card("Vessel"),
+blood_doll=card("Blood Doll"),
+gregory_winter=card("Gregory Winter"),
+young_bloods=card("Young Bloods"),
+repo_man=card("Repo Man"),
+change_of_target=card("Change of Target"),
+tupdogs=card("Tupdog", "Tupdogs"),
+anarch_convert=card("Anarch Convert"),
+cry_wolf=card("Cry Wolf"),
+draeven_softfoot=card("Draeven Softfoot"),
+inaki_puigdollers_s_deck=link("/deck-search", _("Iñaki Puigdollers's deck"), id="2k9ecminiqsabadell"),
+roberto_venturi_s_deck=link("/deck-search", _("Roberto Venturi's deck"), id="2011itamassa"),
+enrico_de_stefano_s_deck=link("/deck-search", _("Enrico De Stefano's deck"), id="2018eclcqwp")
+%}
+<h2>Highlights</h2>
+<p>
+    This is an <em>swarm</em> deck using multiple unique allies. The idea is to put
+    {{ khazar_s_diary }} into play, breed a bit with {{ the_embrace }},
+    defend by putting some allies into play and wait until {{ khazar_s_diary }} triggers.
+    At this point, the dead allies come back into play as wraith to stealth & bleed the
+    successive preys out of the game.
+</p>
+<p>
+    The high recursion using {{ sudario_refraction }}
+    is a strong point of the deck, allowing it to adapt its defence to the table context.
+    It is very passive in the game beginning and uses
+    {{ deflection }} and {{ delaying_tactics }} to defend a much as possible, while bloating with {{ liquidation }}.
+</p>
+<p>
+    The deck is focused on bringing as many minions into play as possible, and relies a lot on the allies
+    and their capacities. As such, it does have only limited combat, bleed or stealth modules.
+    However, it hopes to quickly bring into play good rush or intercept allies like
+    {{ carlton_van_wyk }}, {{ ossian }} and, specifically, {{ cry_wolf }}.
+</p>
+<p>
+    {{ cry_wolf }} fits this deck extraordinarily well: playing it requires to have some {{ anarch_convert }}
+    to make the Giovanni {{ giovanni }} Anarch, but that is a small price to play, especially since it also gives
+    them access to {{ piper }} to recruit their allies safely. {{ cry_wolf }} being unique and burning automatically,
+    it will add a counter to the {{ khazar_s_diary }} systematically, while still providing a dreadful rush
+    for a bit of table control.
+</p>
+<p>
+    {{ the_unmasking }} and {{ fbi_special_affairs_division }} help
+    making all these allies stronger defenders when they come into play.
+</p>
+<h2>Tips & Tricks</h2>
+<p>
+    {{ jake_washington }} is an excellent device in this deck
+    as burning him in any way will add one counter on {{ khazar_s_diary }} easily.
+</p>
+<h2>Variants</h2>
+<p>
+    Minor variations exist, for example {{ inaki_puigdollers_s_deck }} from 2009 uses
+    {{ change_of_target }} to help protect the minions — even the allies — from unforseen blocks.
+    He also included some {{ tupdogs }} in the crypt:
+    they can not undertake directed actions but they avoid repeating minions in the crypt,
+    they can still block, recruit an ally like the {{ repo_man }},
+    and provide one more minion to bring back as a wraith once {{ khazar_s_diary }} kicks in.
+</p>
+<p>
+    The <strong>Faeries</strong> variant was played in {{ enrico_de_stefano_s_deck }} from 2018.
+    It uses a dozen {{ draeven_softfoot }} and their burn option to quickly bring more allies into the ash heap,
+    making it easier to get {{ shambling_hordes }} into play.
+    It also uses more copies of {{ the_embrace }} and {{ khazar_s_diary }}
+    as the idea is to trigger the Diary sooner, and bring all these
+    {{ draeven_softfoot }} back as wraith with the new born vampires,
+    for a faster, more aggressive version of the archetype.
+</p>
+{% endtrans %}
+{% endblock %}

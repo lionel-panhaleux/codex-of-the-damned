@@ -1,7 +1,7 @@
 {% macro declining() -%}
 <p>
     {% trans trimmed
-        meta=link("/strategy/articles/advanced/the-game-of-the-game", _("meta"))
+    meta=link("/strategy/articles/advanced/the-game-of-the-game", _("meta"))
     %}
     This archetype has been historically successful but did not register significant wins since the latest expansions:
     it might be less relevant today depending on your {{ meta }}.
@@ -12,7 +12,7 @@
 {% macro pentextmsubversion( solution = "remove" ) -%}
 <p>
     {% trans trimmed
-        pentex=card('Pentex™ Subversion')
+    pentex=card('Pentex™ Subversion')
     %}
     {{ pentex }} has been modified by an <em>errata</em> in September 2019.
     It does not prevent a vampire to act anymore, so it is less powerful
@@ -20,7 +20,8 @@
     {% if solution == 'remove' %}
     {{ _('and should probably not be included in the deck anymore.') }}
     {% elif solution == 'undecided' %}
-    {{ _('. Its ability to disable a strong blocker is still an important aspect so it can have its place here.') }}
+    {{ _('but its ability to disable a strong blocker is still an important aspect. It might have its place here.')
+    }}
     {% else %}
     {{ _('but still has its place in the deck, as it was mainly used as a way to disable a blocker anyway.') }}
     {% endif %}
@@ -30,7 +31,7 @@
 {% macro ashur( solution = "adjust" ) -%}
 <p>
     {% trans trimmed
-        ashur_tablets=card('Ashur Tablets')
+    ashur_tablets=card('Ashur Tablets')
     %}
     {{ ashur_tablets }} has been modified by an <em>errata</em> in February 2024.
     Only one can be played per turn now,
@@ -48,7 +49,7 @@
 {% macro emerald( solution = "adjust" ) -%}
 <p>
     {% trans trimmed
-        emerald_legionnaire=card('Emeral Leegionnaire')
+    emerald_legionnaire=card('Emerald Legionnaire')
     %}
     {{ emerald_legionnaire }} has been modified by an <em>errata</em> in February 2024.
     Their ability can only be triggered with enough Harbingers {{ harbinger_of_skulls }},
@@ -66,7 +67,7 @@
 {% macro villein() -%}
 <p>
     {% trans trimmed
-        villein=card('Villein')
+    villein=card('Villein')
     %}
     {{ villein }} has been modified by an errata in June 2018 to limit the blood taken
     to a maximum of 5. It should still be as efficient as ever in this archetype, though.
@@ -77,7 +78,7 @@
 {% macro parityshift() -%}
 <p>
     {% trans trimmed
-        parity_shift=card('Parity Shift')
+    parity_shift=card('Parity Shift')
     %}
     {{ parity_shift }} has been modified in the September 2019 <em>errata</em>.
     The amount of pool is no longer equal to the number of Methusalah, but is stable at 3.
@@ -89,7 +90,7 @@
 {% macro antheliostheredstar() -%}
 <p>
     {% trans trimmed
-        anthelios=card('Anthelios, The Red Star')
+    anthelios=card('Anthelios, The Red Star')
     %}
     {{ anthelios }} has been banned in 2016.
     Its removal may have a bit of impact on the Master module.
@@ -100,7 +101,7 @@
 {% macro lilithsblessing() -%}
 <p>
     {% trans trimmed
-        liliths_blessing=card("Lilith's Blessing")
+    liliths_blessing=card("Lilith's Blessing")
     %}
     {{ liliths_blessing }} has been banned in 2016.
     {% endtrans %}
@@ -110,7 +111,7 @@
 {% macro temptationofgreaterpower() -%}
 <p>
     {% trans trimmed
-        temptation_of_greater_power=card('Temptation of Greater Power')
+    temptation_of_greater_power=card('Temptation of Greater Power')
     %}
     {{ temptation_of_greater_power }} has been banned in 2016.
     {% endtrans %}

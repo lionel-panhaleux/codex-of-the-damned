@@ -1,0 +1,72 @@
+{% extends "archetypes/_layout.html" %}
+{% import "archetypes/_layout-erratum.html" as erratum with context %}
+{% import "archetypes/new-kids/ravnos-break.json" as deck_json %}
+
+{% block meta %}
+<meta property="decklist" content='{{ deck_json | tojson }}' />
+{% endblock %}
+
+{% block archetype_name %}
+<h1>{{ ravnos }} Ravnos Break</h1>
+{% endblock %}
+
+{% block archetype %}
+{% trans trimmed
+bleeding_the_vine=card("Bleeding the Vine"),
+break_the_bonds=card("Break the Bonds"),
+club_illusion=card("Club Illusion"),
+dabbler=card("Dabbler"),
+majesty=card("Majesty"),
+the_platinum_protocol=card("The Platinum Protocol"),
+sudden_reversal=card("Sudden Reversal"),
+villein=card("Villein"),
+visions_of_gehenna=card("Visions of Gehenna"),
+visions_of_zapathasura=card("Visions of Zapathasura"),
+wash=card("Wash"),
+week_of_nightmares=card("Week of Nightmares"),
+wider_view=card("Wider View"),
+platinum_revelation=link("/archetypes/platinum-revelation")
+%}
+<h2>Highlights</h2>
+<p>
+    This is a Ravnos {{ ravnos }} <em>stealth & bleed</em> deck using {{ break_the_bonds }} to bleed fast and hard.
+</p>
+<p>
+    It is a pretty straightforward deck. Influence a Ravnos {{ ravnos }}, bleed with {{ break_the_bonds }},
+    use {{ OBF }} for stealth and bring more Ravnos {{ ravnos }} in play. rince and repeat.
+</p>
+<p>
+    At some point, {{ club_illusion }}, {{ week_of_nightmares }} or both hit the table, and the bleeds become an
+    unstoppable wave that sweeps the table.
+</p>
+<p>
+    In the meantime, simply use {{ visions_of_zapathasura }} to reduce the predator's bleed and {{ majesty }}
+    to avoid combat, if any.
+</p>
+<p>
+    {{ dabbler }} is, as in {{ platinum_revelation }}, a very good archetype to have, because it can let the vampires
+    unlock for defense after a bleed or, maybe more importantly, get some blood back to feed a {{ club_illusion }}
+    while they cannot hunt thanks to {{ week_of_nightmares }}.
+</p>
+<h2>Considerations</h2>
+<p>
+    Wouldn't it be better to use also, or mainly, {{ the_platinum_protocol }}? Maybe have a few {{ ministry }} in there
+    too?
+    Of course, that would lower the use of {{ dabbler }}.
+</p>
+<p>
+    A more compact crypt is also possible, to have more superior Presence {{ PRE }}
+    and allow for more {{ visions_of_gehenna }}, but that calls for a couple of {{ wider_view }} and will be slower,
+    because having "one of each" here is what makes the influence blood from {{ break_the_bonds }} so efficient here.
+</p>
+<p>
+    In such an aggressive forward deck, Master cancellation with {{ wash }}, {{ sudden_reversal }},
+    and {{ bleeding_the_vine}}, just increases the ousting power by denying the possibility of using {{ villein }}
+    or other Master cards to bloat.
+</p>
+<p>
+    With two tournament wins already to their account, it's clear the new V5 Revnos {{ ravnos }} have a bright future
+    before them. Let's this how this archetype evolves, and what variation makes it to the top tier.
+</p>
+{% endtrans %}
+{% endblock %}

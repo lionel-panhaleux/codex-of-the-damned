@@ -1,0 +1,115 @@
+{% extends "archetypes/_layout.html" %}
+{% import "archetypes/_layout-erratum.html" as erratum with context %}
+{% import "archetypes/archive/tzimisce-toolbox.json" as deck_json %}
+
+{% block meta %}
+<meta property="decklist" content='{{ deck_json | tojson }}' />
+{% endblock %}
+
+{% block archetype_name %}
+<h1>{{ tzimisce }} Tzimisce Toolbox</h1>
+{% endblock %}
+
+{% block archetype %}
+{% trans trimmed
+abbot=card("Abbot"),
+anarchist_uprising=card("Anarchist Uprising"),
+aranthebes_the_immortal=card("Aranthebes, The Immortal"),
+blood_doll=card("Blood Doll"),
+bowl_of_convergence=card("Bowl of Convergence"),
+breath_of_the_dragon=card("Breath of the Dragon"),
+carlton_van_wyk=card("Carlton Van Wyk"),
+changeling=card("Changeling"),
+chiropteran_marauder=card("Chiropteran Marauder"),
+eyes_of_argus=card("Eyes of Argus"),
+fiendish_tongue=card("Fiendish Tongue"),
+monastery_of_shadows=card("Monastery of Shadows"),
+krcg_news_radio=card("KRCG News Radio"),
+lambach=card("Lambach"),
+library_hunting_ground=card("Library Hunting Ground"),
+living_manse=card("Living Manse"),
+meld_with_the_land=card("Meld With the Land"),
+meshenka=card("Meshenka"),
+my_enemy_s_enemy=card("My Enemy's Enemy"),
+plasmic_form=card("Plasmic Form"),
+reins_of_power=card("Reins of Power"),
+sascha_vykos=card("Sascha Vykos, The Angel of Caine", "Sascha Vykos"),
+telepathic_misdirection=card("Telepathic Misdirection"),
+the_hungry_coyote=card("The Hungry Coyote"),
+the_uncoiling=card("The Uncoiling"),
+the_unmasking=card("The Unmasking"),
+villein=card("Villein"),
+wall_street_night_financial_newspaper=card("Wall Street Night, Financial Newspaper"),
+wash=card("Wash"),
+juans_deck=external("https://www.vekn.net/forum/event-reports-and-twd/79548-twd-sac-2021-south-american-continental-championship",
+_("Juan Rodriguez' deck"))
+%}
+<h2>Highlights</h2>
+<p>
+    This is a <em>toolbox</em> deck using the Tzimisce
+    and their {{ VIC }}{{ AUS }}{{ ANI }} disciplines.
+</p>
+<p>
+    The plan is to get as many Tzimisce out as possible and bleed with {{ VIC }}
+    for stealth. Blocking from time to time, and welcoming a few combats with a
+    vicious {{ VIC }} module.
+</p>
+<p>
+    The deck has a threatening bleed module centered on {{ fiendish_tongue }},
+    an excellent bleed action in Anarch environments. {{ VIC }} brings a bit of
+    stealth with {{ changeling }} and {{ plasmic_form }}
+</p>
+<p>
+    The combat module is compact but threatening: {{ chiropteran_marauder }} and
+    {{ breath_of_the_dragon }} can be used to inflict aggravated damage at any range.
+</p>
+<p>
+    On the defence side, the decks stacks a lot of {{ AUS }} bounces between
+    {{ telepathic_misdirection }} and {{ my_enemy_s_enemy }}. On top of that, a number
+    of permanent intercept cards help boost the defence, with {{ krcg_news_radio }},
+    {{ wall_street_night_financial_newspaper }}, {{ aranthebes_the_immortal }},
+    {{ bowl_of_convergence }}, {{ carlton_van_wyk }} and {{ abbot }}.
+</p>
+<p>
+    The deck can bloat a bit using simple {{ blood_doll }}. Both {{ the_hungry_coyote }}
+    and {{ library_hunting_ground }} can provide a good influx of blood here.
+</p>
+<p>
+    The {{ AUS }} bounces are enough to defend against bleed decks, but votes deck
+    are a definitive threat for this deck. This explains why the intercept defence
+    does not include {{ eyes_of_argus }} since its intercept bonus cannot be used
+    against political actions. This is also why so many {{delaying_tactics }} are
+    included: the goal is to prevent {{ anarchist_uprising }} or {{ reins_of_power }}
+    to pass here, and keep the momentum up while commiting as few resources as possible
+    for defence.
+</p>
+<h2>Tips & Tricks</h2>
+<p>
+    It's important to get a vampire with superior {{ AUS }} out fast, to make the most
+    of the reaction module and its numerous bounces.
+</p>
+<p>
+    {{ the_uncoiling }} is a silver bullet counter against {{ the_unmasking }},
+    as allies deck with intercept can quickly become a bit of a burden here.
+</p>
+<p>
+    {{ wash }} can be used to counter a {{ villein }} and amount to a bleed for 5,
+    counter a permanent intercept location like {{ krcg_news_radio }}, or a stealth
+    providing location for a predator likely to vote, like {{ monastery_of_shadows }}.
+</p>
+<h2>Variants</h2>
+<p>
+    There are a lot of ways to build a toolbox with the Tzimisce {{ tzimisce }} clan.
+    Many of them rely on a star vampire like {{ lambach }}, {{ sascha_vykos }} or
+    {{ meshenka }}.
+</p>
+<p>
+    The <strong>Living Manse</strong> version, as seen in {{ juans_deck }} for the
+    2021 SAC, relies on more {{ living_manse }} for a bit of a slower setup but stronger
+    finish. The deck also includes {{ meld_with_the_land }} and is a better fit in
+    a combat oriented environment, with a more fragile defence against vote decks.
+    Both deck list can be used as inspiration, as any variation between those two
+    can be picked or discarded depending on the desired outcome.
+</p>
+{% endtrans %}
+{% endblock %}

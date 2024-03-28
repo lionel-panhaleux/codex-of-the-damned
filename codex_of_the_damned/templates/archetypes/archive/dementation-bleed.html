@@ -1,0 +1,105 @@
+{% extends "archetypes/_layout.html" %}
+{% import "archetypes/_layout-erratum.html" as erratum with context %}
+{% import "archetypes/archive/dementation-bleed.json" as deck_json %}
+
+{% block meta %}
+<meta property="decklist" content='{{ deck_json | tojson }}' />
+{% endblock %}
+
+{% block archetype_name %}
+<h1>{{ malkavian }} Dementation Bleed</h1>
+{% endblock %}
+
+{% block archetype %}
+{% trans trimmed
+deflection=card("Deflection"),
+dreams_of_the_sphinx=card("Dreams of the Sphinx"),
+eyes_of_chaos=card("Eyes of Chaos"),
+hide_the_mind=card("Hide the Mind"),
+kindred_spirits=card("Kindred Spirits"),
+krcg_news_radio=card("KRCG News Radio"),
+louhi=card("Louhi"),
+narrow_minds=card("Narrow Minds"),
+no_trace=card("No Trace"),
+restructure=card("Restructure"),
+secret_passage=card("Secret Passage"),
+secure_haven=card("Secure Haven"),
+spying_mission=card("Spying Mission"),
+telepathic_misdirection=card("Telepathic Misdirection"),
+the_call=card("The Call"),
+touch_of_clarity=card("Touch of Clarity"),
+villein=card("Villein"),
+wash=card("Wash"),
+pedros_deck=link("/deck-search", _("Pedro Paulo de Sousa Mendes's deck"), id="2015cmjdfb"),
+bram_van_stappen_s_deck=link("/deck-search", _("Bram van Stappen's deck"), id="2013gncbc")
+%}
+<h2>Highlights</h2>
+<p>
+    This is a <em>stealth & bleed</em> deck using the {{ dem }}{{ obf }} disciplines.
+    The idea is to bring maximum pool damage to the prey as fast as possible.
+</p>
+<p>
+    Stealth is high, with many Obfuscate {{ OBF }} and a few Dementation {{ dem }} modifiers.
+    Many vampires in the crypt have a native +1 bleed ability, and the deck includes
+    a lot of {{ eyes_of_chaos }} to bring each bleed to a potential 4 or 5.
+    It also includes a good number of {{ touch_of_clarity }}, to cancel some
+    {{ deflection }} and making sure the bleeds land on the prey.
+</p>
+<p>
+    Two thirds of the vampires have {{ AUS }}, so {{ telepathic_misdirection }} can be
+    used against bleeds. Nonetheless, the deck still includes {{ narrow_minds }},
+    with the idea that it will hurt the prey much more than it hurts the deck itself.
+</p>
+<p>
+    {{ kindred_spirits }} provides some bloat by itself and, coupled to a few
+    {{ villein }}, should let the deck get three or even four vampires out.
+</p>
+<p>
+    When it comes down to combat, the deck relies on {{ no_trace }} to end them, but
+    also packs a lot of {{ secure_haven }} and {{ secret_passage }} to avoid rushes.
+</p>
+<h2>Tips & Tricks</h2>
+<p>
+    Compared to other {{ dem }} bleed variants, this deck takes its time. It is supposed
+    to set things up, and take the time to protect the main vampire (with the bleed
+    bonus) with a {{ secure_haven }} or {{ secret_passage }}. It includes a few
+    {{ spying_mission }} so it can cancel a huge bleed being bounced:
+    it would otherwise help the prey if carelessly allowed to hit the grandprey.
+</p>
+<p>
+    The couple of {{ wash }} are typical: a counter
+    on a {{ villein }} amounts to a bleed of 5. They can also counter a permanent
+    intercept location like {{ krcg_news_radio }}.
+</p>
+<p>
+    {{ dreams_of_the_sphinx }} helps with cards rotation
+    and avoid jamming the hand with stealth if the prey chooses not to block.
+    {{ touch_of_clarity }} might be pointless if the prey is not using {{ dom }}
+    bounces, but it can also be used defensivly to prevent a {{ dom }} or {{ pre }}
+    bleed action.
+</p>
+<p>
+
+</p>
+<h2>Variants</h2>
+<p>
+    Depending on what's expected, a few other cards could find their place in the deck.
+    {{ the_call }} is a common inclusion, {{ hide_the_mind }} could be considered to
+    counter the widespread {{ AUS }} bounces like {{ telepathic_misdirection }}.
+    Finally, a couple of {{ restructure }} can be added against allies.
+</p>
+<p>
+    {{ louhi }} can give birth to interesting variations thanks to his ability,
+    like in {{ pedros_deck }} from 2015: {{ villein }} are out of question since
+    he'll need his blood for his ability, but {{ the_call }} can be used to compensate.
+    The result is slower, but, again, the availability of both {{ hide_the_mind }}
+    and {{ touch_of_clarity }} provide great lunge opportunities.
+</p>
+<p>
+    The deck can be built with Dementation {{ DEM }} only, and lower capacity vampires,
+    as in {{ bram_van_stappen_s_deck }} from the 2013 German NC. This is faster,
+    but also more fragile as the stealth gets lower and the vampires have no good
+    solution against combat.
+</p>
+{% endtrans %}
+{% endblock %}

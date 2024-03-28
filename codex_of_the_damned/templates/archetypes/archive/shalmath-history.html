@@ -1,0 +1,96 @@
+{% extends "archetypes/_layout.html" %}
+{% import "archetypes/_layout-erratum.html" as erratum with context %}
+{% import "archetypes/archive/shalmath-history.json" as deck_json %}
+{% import "archetypes/archive/_layout.html" as layout with context %}
+
+{% block meta %}
+<meta property="decklist" content='{{ deck_json | tojson }}' />
+{% endblock %}
+
+{% block archetype_name %}
+<h1>{{ true_brujah }} Shalmath History</h1>
+{% endblock %}
+
+{% block archetype %}
+{% trans trimmed
+ankara_citadel=card("The Ankara Citadel, Turkey", "Ankara Citadel"),
+disarm=card("Disarm"),
+domain_of_evernight=card("Domain of Evernight"),
+emerald_legionnaire=card("Emerald Legionnaire"),
+giant_s_blood=card("Giant's Blood"),
+majesty=card("Majesty"),
+muddled_vampire_hunter=card("Muddled Vampire Hunter"),
+outside_the_hourglass=card("Outside the Hourglass"),
+ponticulus=card("Ponticulus"),
+remnant_of_the_endless_storm=card("Remnant of the Endless Storm"),
+rewind_time=card("Rewind Time"),
+shalmath=card("Shalmath"),
+summon_history=card("Summon History"),
+talbot_s_chainsaw=card("Talbot's Chainsaw"),
+the_slow_withering=card("The Slow Withering"),
+tye_cooper=card("Tye Cooper"),
+a_b=link("/strategy/fundamentals", _("A&B"), _anchor="AB")
+%}
+<h2>Highlights</h2>
+<p>
+    This is a True Brujah {{ true_brujah }} toolbox using {{ shalmath }} as a star:
+    he uses {{ summon_history }} to fetch powerful equipments and allies.
+</p>
+<p>
+    It's definitely a control deck, and maybe the "toolbox" label is a bit misleading here, although with {{ shalmath }}
+    stacking a new tool or two every turn in an obnoxious one-man-show, it definitely feels like he has a whole toolbox
+    he can tap in here.
+</p>
+<p>
+    Since it's a one-man-show kind of deck, {{ shalmath }}'s ability to unlock is essential to the deck {{ a_b }}.
+    It's supplemented by the powerful {{ domain_of_evernight }}, that can also be used at inferior {{ tem }}
+    for a dreadful combination with {{ outside_the_hourglass }}, delivering a very punishing 2 aggravated damage
+    that cannot be dodged or avoided with a combat ends.
+</p>
+<p>
+    The typical starting point of the whole thing is for {{ shalmath }} to use {{ summon_history }} to go fetch
+    {{ ankara_citadel }}. This first step greatly reduces the cost of all the other {{ summon_history }}.
+</p>
+<p>
+    The cheap sidekicks in the rest of the crypt are brought in to bleed for one and finish the prey once
+    {{ shalmath }} and his allies have cleaned up the board of any opposition.
+</p>
+<p>
+    As the whole thing is rather blood-intensive, even with {{ ankara_citadel }}, the Master module focuses
+    on blood regeneration for {{ shalmath }}, to the point of even doubling {{ giant_s_blood }}, a rare choice.
+</p>
+<h2>Tips & Tricks</h2>
+<p>
+    One key combination is to fetch a damage-resistant ally like {{ ponticulus }} or {{ tye_cooper }},
+    then equip {{ shalmath }} with a {{ talbot_s_chainsaw }}. This provides him with a useful rush,
+    and the weapon's downside can be nullifed by putting its damage on the ally.
+</p>
+<p>
+    {{ remnant_of_the_endless_storm }} and {{ muddled_vampire_hunter }} are useful additional rusher to improve
+    the overall control and dispatch the weakest minions on the table.
+</p>
+<p>
+    {{ the_slow_withering }} is a smart inclusion, since {{ ankara_citadel }},
+    that {{ shalmath }} will get as his first action, completely nullifies the downside for him,
+    while it stays crippling for the rest of the table.
+</p>
+<p>
+    {{ rewind_time }} is a strong counter, and its cost is eased by {{ ankara_citadel }}.
+</p>
+<h2>Variants</h2>
+<p>
+    Using {{ majesty }} in the combat module is also common, since the {{ outside_the_hourglass }}, {{ majesty }},
+    {{ disarm }} combination is an almost-guaranteed way to send someone in torpor when acting.
+</p>
+<p>
+    Some modern variants have included {{ emerald_legionnaire }} but, since its nerf in 2024, it's not viable anymore.
+</p>
+{% endtrans %}
+{% endblock %}
+
+{% block errata %}
+<div class="insert warn">
+    <h3>Errata</h3>
+    {{ erratum.pentextmsubversion( 'remove' ) }}
+</div>
+{% endblock %}

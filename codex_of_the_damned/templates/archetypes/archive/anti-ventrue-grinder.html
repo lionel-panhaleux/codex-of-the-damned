@@ -1,0 +1,129 @@
+{% extends "archetypes/_layout.html" %}
+{% import "archetypes/_layout-erratum.html" as erratum with context %}
+{% import "archetypes/archive/anti-ventrue-grinder.json" as deck_json %}
+
+{% block meta %}
+<meta property="decklist" content='{{ deck_json | tojson }}' />
+{% endblock %}
+
+{% block archetype_name %}
+<h1>{{ ventrue_antitribu }} Anti Ventrue Grinder</h1>
+{% endblock %}
+
+{% block archetype %}
+{% trans trimmed
+abbot=card("Abbot"),
+anarch_troublemaker=card("Anarch Troublemaker"),
+aura_reading=card("Aura Reading"),
+bonding=card("Bonding"),
+bowl_of_convergence=card("Bowl of Convergence"),
+claws_of_the_dead=card("Claws of the Dead"),
+concealed_weapon=card("Concealed Weapon"),
+conditioning=card("Conditioning"),
+daring_the_dawn=card("Daring the Dawn"),
+deflection=card("Deflection"),
+dylan=card("Dylan"),
+earth_meld=card("Earth Meld"),
+freak_drive=card("Freak Drive"),
+govern_the_unaligned=card("Govern the Unaligned"),
+ivory_bow=card("Ivory Bow"),
+krcg_news_radio=card("KRCG News Radio"),
+lazverinus_thrall_of_lambach=card("Lazverinus, Thrall of Lambach"),
+misdirection=card("Misdirection"),
+pentex_subversion=card("Pentex™ Subversion"),
+seduction=card("Seduction"),
+target_vitals=card("Target Vitals"),
+the_coven=card("The Coven"),
+the_kiss_of_ra=card("The Kiss of Ra"),
+the_rack=card("The Rack"),
+weighted_walking_stick=card("Weighted Walking Stick"),
+a_b=link("/strategy/fundamentals", _("A&B"), _anchor="AB"),
+grinding=link("/strategy/combat", _("grinding"), "posture"),
+ravel_zorzals_deck=link("/deck-search", _("Ravel Zorzal's deck"), id="2016bncsb"),
+jackson_iribarrens_deck=link("/deck-search", _("Jackson Iribarren's deck"), id="2k9sac"),
+bob_josephs_deck=link("/deck-search", _("Bob Joseph's deck"), id="2018nacd2co")
+%}
+<h2>Highlights</h2>
+<p>
+    Often spelled <strong>!Ventrue Grinder</strong>
+    (the "!" prefix has been used to denote the antitribu clans for a while),
+    this is a <em>toolbox</em> deck using the Ventrue antitribu clan and their {{for}}{{aus}}{{dom}}
+    disciplines combination.
+</p>
+<p>
+    The idea is to get the highest capacity vampire out,
+    then use {{ govern_the_unaligned }}
+    at superior {{ DOM }} to get more vampires out fast and cheap,
+    then later to bleed with the help of {{ conditioning }} and {{ bonding }}.
+</p>
+<p>
+    The intercept module uses {{ AUS }} for intercept, wakes and bounces, and {{ dom }} for additional
+    bounces with {{ deflection }}.
+</p>
+<p>
+    The combat module uses {{ for }} for damage prevention and
+    {{ weighted_walking_stick }} to deal more damage.
+</p>
+<p>
+    The deck is on the slow side, {{ grinding }} at the opponents blood and pool
+    during the game until it can finally lunge to oust its prey.
+</p>
+<h2>Tips & Tricks</h2>
+<p>
+    {{ daring_the_dawn }} is kept for the lunge.
+</p>
+<p>
+    The deck has not much stealth, so it uses some <em>powerbleed</em> techniques, like
+    {{ pentex_subversion }} and {{ anarch_troublemaker }}.
+</p>
+<h2>Variants</h2>
+<p>
+    There are many small variations to this archetype:
+    <li>
+        {{ the_coven }} is a rare inclusion: the deck is supposed
+        to grind the blood out of the table, so giving opponents the opportunity to
+        get some back is a bit of a stretch. {{ the_rack }} is more often seen.
+    </li>
+    <li>
+        {{ the_kiss_of_ra }}, {{ misdirection }} and
+        {{ seduction }} can be used to help get the bleed through.
+    </li>
+    <li>
+        {{ abbot }}, {{ bowl_of_convergence }} and permanent intercept
+        locations like {{ krcg_news_radio }}
+        are often included to help with intercept.
+    </li>
+    <li>
+        {{ ivory_bow }} and {{ target_vitals }}
+        are often seen in the combat module.
+    </li>
+    <li>
+        {{ freak_drive }} is sometimes added to increase {{ a_b }}.
+    </li>
+</p>
+<p>
+    The <strong>Guns Grinder</strong> variant uses
+    {{ concealed_weapon }} and guns in the combat module,
+    like in {{ ravel_zorzals_deck }} from the 2016 Brazilian NC.
+</p>
+<p>
+    The <strong>Protean Grinder</strong> variant uses
+    {{ lazverinus_thrall_of_lambach }} and
+    {{ dylan }} in the crypt for {{ pro }}, in order to include
+    {{ claws_of_the_dead }} and {{ earth_meld }}.
+    {{ jackson_iribarrens_deck }} won the 2009 SAC with it.
+</p>
+<p>
+    The <strong>Powerbleed</strong> variant focuses on bleed more,
+    using only {{ aura_reading }} with some {{ for }} prevention for the combat module.
+    {{ bob_josephs_deck }} won the 2018 NAC with it.
+</p>
+{% endtrans %}
+{% endblock %}
+
+{% block errata %}
+<div class="insert warn">
+    <h3>Errata</h3>
+    {{ erratum.pentextmsubversion( 'undecided' ) }}
+</div>
+{% endblock %}

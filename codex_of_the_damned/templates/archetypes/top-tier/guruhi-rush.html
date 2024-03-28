@@ -1,0 +1,104 @@
+{% extends "archetypes/_layout.html" %}
+{% import "archetypes/_layout-erratum.html" as erratum with context %}
+{% import "archetypes/top-tier/guruhi-rush.json" as deck_json %}
+
+{% block meta %}
+<meta property="decklist" content='{{ deck_json | tojson }}' />
+{% endblock %}
+
+{% block archetype_name %}
+<h1>{{ guruhi }} Guruhi Rush</h1>
+{% endblock %}
+
+{% block archetype %}
+{% trans trimmed
+nana_buruku=card("Nana Buruku"),
+ashur_tablets=card("Ashur Tablets"),
+anarch_revolt=card("Anarch Revolt"),
+nangila_were=card("Nangila Were"),
+enkidu_the_noah=card("Enkidu, The Noah"),
+black_annis=card("Black Annis"),
+fame=card("Fame"),
+dragonbound=card("Dragonbound"),
+powerbase_luanda=card("Powerbase: Luanda"),
+well_marked=card("Well-Marked"),
+cats_guidance=card("Cats' Guidance"),
+sense_the_savage_way=card("Sense the Savage Way"),
+wider_view=card("Wider View"),
+andre_le_roux=card("Andre LeRoux"),
+enchant_kindred=card("Enchant Kindred"),
+founders_of_the_ebony_kingdom=card("Founders of the Ebony Kingdom"),
+grooming_the_protégé=card("Grooming the Protégé"),
+typhonic_beast=card("Typhonic Beast"),
+michael_heyder_s_deck=link("/deck-search", _("Michael Heyder's deck"), id="2k9nacday2"),
+alessandro_donatis_deck=link("/deck-search", _("Alessandro Donati's deck"), id="10788")
+%}
+<h2>Highlights</h2>
+<p>
+    This is a <em>rush</em> deck using the {{ ANI }}{{ POT }} disciplines combination.
+    {{ nana_buruku }} is used for additional Master actions,
+    playing {{ ashur_tablets }} for recursion and {{ anarch_revolt }}
+    for additional pool damage.
+</p>
+<p>
+    {{ nangila_were }}, {{ enkidu_the_noah }} and/or {{ black_annis }}
+    are used to rush the opponents minions
+    and take them down with the powerful {{ ANI }}{{ POT }} combat module.
+</p>
+<p>
+    {{ fame }} and {{ dragonbound }} are used to improve pool damage a bit.
+</p>
+<h2>Tips & Tricks</h2>
+<p>
+    {{ powerbase_luanda }} and {{ well_marked }} are nice tools
+    for a <em>rush</em> deck.
+</p>
+<p>
+    Just including a bit of <em>wakes</em> and some intercept enhancers like
+    {{ cats_guidance }} and {{ sense_the_savage_way }}
+    keeps the other players guessing on wether the deck can block or not.
+</p>
+<p>
+    Getting {{ wider_view }} at some point helps rotating the crypt a little bit.
+    {{ andre_le_roux }} is included as a bleed enhancer once all the prey's vampires
+    are down.
+</p>
+<p>
+    The combat module includes a lot of cards in single copy as specific counters.
+    They're not likely to jam the hand and can be brought back by {{ ashur_tablets }}
+    if need be.
+</p>
+<p>
+    As the game moves along, the deck can use {{ ashur_tablets }} to concentrate
+    the content of the deck on more bleed or more combat cards,
+    depending on what's needed.
+</p>
+<h2>Variants</h2>
+<p>
+    This deck became notorious by winning the European Championship
+    <strong>twice in a row</strong> in 2019 and 2022
+    (Covid-19 had got the 20 and 21 editions postponed).
+    It still made the finals in 23. It's undoubtedly the strongest variant,
+    although arguably it only really shines in the hands of a a player of Otso's caliber.
+</p>
+<p>
+    The <strong>Laibon</strong> variant does not go Anarch and can get more toolboxy,
+    using {{ PRE }} for {{ enchant_kindred }} and the excellent
+    {{ founders_of_the_ebony_kingdom }}.
+    {{ grooming_the_protégé }} also helps getting vampires out faster.
+    {{ michael_heyder_s_deck }} from the 2009 NAC is a good example.
+</p>
+<p>
+    The <strong>Snake</strong> variant does not go Anarch either but uses Serpentis {{ ser }}
+    as a support discipline, like {{ alessandro_donatis_deck }} from the 2023 Italian Tour.
+    This allows for the inclusion of damage prevention with the excellent {{ typhonic_beast }}.
+</p>
+{% endtrans %}
+{% endblock %}
+
+{% block errata %}
+<div class="insert warn">
+    <h3>Errata</h3>
+    {{ erratum.ashur( 'keep' ) }}
+</div>
+{% endblock %}

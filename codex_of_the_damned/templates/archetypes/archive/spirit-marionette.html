@@ -1,0 +1,93 @@
+{% extends "archetypes/_layout.html" %}
+{% import "archetypes/_layout-erratum.html" as erratum with context %}
+{% import "archetypes/archive/spirit-marionette.json" as deck_json %}
+
+{% block meta %}
+<meta property="decklist" content='{{ deck_json | tojson }}' />
+{% endblock %}
+
+{% block archetype_name %}
+<h1>{{ salubri }} Spirit Marionette</h1>
+{% endblock %}
+
+{% block archetype %}
+{% trans trimmed
+saulot_the_wanderer=card("Saulot, The Wanderer"),
+spirit_marionette=card("Spirit Marionette"),
+heidelberg_castle_germany=card("Heidelberg Castle, Germany"),
+infernal_pact=card("Infernal Pact"),
+eyes_of_argus=card("Eyes of Argus"),
+telepathic_misdirection=card("Telepathic Misdirection"),
+my_enemy_s_enemy=card("My Enemy's Enemy"),
+anesthetic_touch=card("Anesthetic Touch"),
+theft_of_vitae=card("Theft of Vitae"),
+enkil_cog=card("Enkil Cog"),
+codex_of_the_edenic_groundskeepers=card("Codex of the Edenic Groundskeepers"),
+magic_of_the_smith=card("Magic of the Smith"),
+heart_of_nizchetus=card("Heart of Nizchetus"),
+renewed_vigor=card("Renewed Vigor"),
+rutor_s_hand=card("Rutor's Hand"),
+eurayle_gelasia_mylonas=card("Eurayle Gelasia Mylonas"),
+a_b=link("/strategy/fundamentals", _("A&B"), _anchor="AB"),
+yannick_gibert_s_deck=link("/deck-search", _("Yannick Gibert's deck"), id="2010fncqlyon"),
+older_version_from_tomasz_kowalewski=link("/deck-search", _("older version from Tomasz Kowalewski"),
+id="2k8crusadebreslau")
+%}
+<h2>Highlights</h2>
+<p>
+    This is a <em>toolbox</em> deck starring {{ saulot_the_wanderer }}.
+    He uses {{ spirit_marionette }} to steal opponents vampires
+    and take their blood with {{ heidelberg_castle_germany }}.
+</p>
+<p>
+    The deck disciplines are {{ OBE }}{{ AUS }}{{ THA }}.
+    {{ saulot_the_wanderer }} is accompanied by Tremere antitribu,
+    and they can use {{ infernal_pact }} to be able to play {{ OBE }} too.
+</p>
+<p>
+    {{ AUS }} provides good intercept, wakes and bleed bounces with
+    {{ eyes_of_argus }}, {{ telepathic_misdirection }} and {{ my_enemy_s_enemy }}
+</p>
+<p>
+    {{ THA }} and {{ OBE }} are used for combat, with {{ anesthetic_touch }} and
+    {{ theft_of_vitae }}, making for a nice "flight of fight" module.
+</p>
+<p>
+    The deck can slowly grind the whole table and use {{ enkil_cog }} and
+    {{ codex_of_the_edenic_groundskeepers }} to lunge and destroy its successive preys.
+</p>
+<h2>Tips & Tricks</h2>
+<p>
+    {{ magic_of_the_smith }} is used to fetch great equipments, depending on the table context.
+    {{ heart_of_nizchetus }} is the default choice.
+</p>
+<p>
+    {{ renewed_vigor }} is very strong combined with {{ saulot_the_wanderer }}'s ability,
+    if any Tremere antitribu {{ tremere_antitribu }} can use {{ infernal_pact }} to
+    play it.
+</p>
+<p>
+    {{ rutor_s_hand }} is a good way to improve
+    {{ a_b }}, provided one can pay the blood.
+</p>
+<h2>Variants</h2>
+<p>
+    The <strong>Eurayle</strong> variant uses {{ eurayle_gelasia_mylonas }}
+    as the star Salubri, as in {{ yannick_gibert_s_deck }} from 2010.
+</p>
+<p>
+    An {{ older_version_from_tomasz_kowalewski }},
+    in 2008, do not even use the Tremere antitribu {{ tremere_antitribu }} and their
+    {{ infernal_pact }}, but low capacity {{ AUS }} vampires instead.
+</p>
+{% endtrans %}
+{% endblock %}
+
+{% block errata %}
+<div class="insert warn">
+    <h3>Errata</h3>
+    {{ erratum.pentextmsubversion( 'remove' ) }}
+    {{ erratum.villein() }}
+    {{ erratum.lilithsblessing() }}
+</div>
+{% endblock %}

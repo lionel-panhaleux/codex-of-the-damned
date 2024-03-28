@@ -12,8 +12,12 @@
 
 {% block archetype %}
 {% trans trimmed
+ancestor_spirit=card("Ancestor Spirit"),
+approximation_of_loyalty=card("Approximation of Loyalty"),
 archon_investigation=card("Archon Investigation"),
 blind_spot=card("Blind Spot"),
+charismatic_aura=card("Charismatic Aura"),
+conditioning=card("Conditioning"),
 deflection=card("Deflection"),
 dreams_of_the_sphinx=card("Dreams of the Sphinx"),
 elder_impersonation=card("Elder Impersonation"),
@@ -21,15 +25,22 @@ eluding_the_arms_of_morpheus=card("Eluding the Arms of Morpheus"),
 enkil_cog=card("Enkil Cog"),
 flurry_of_action=card("Flurry of Action"),
 golconda_inner_peace=card("Golconda: Inner Peace"),
+hide_the_mind=card("Hide the Mind"),
 information_highway=card("Information Highway"),
+iron_glare=card("Iron Glare"),
+kduvas_mask=card("Kduva's Mask"),
+legendary_vampire=card("Legendary Vampire"),
+lucian=card("Lucian, The Perfect", "Lucian"),
 lucian_the_perfect=card("Lucian, The Perfect"),
 majesty=card("Majesty"),
 mistress_fanchon=card("Mistress Fanchon"),
 narrow_minds=card("Narrow Minds"),
 obedience=card("Obedience"),
+perfect_paragon=card("Perfect Paragon"),
+revelations=card("Revelations"),
 scourge_of_the_enochians=card("Scourge of the Enochians"),
 seduction=card("Seduction"),
-telepathic_counter=card("Telepathic Counter"),
+telepathic_misdirection=card("Telepathic Misdirection"),
 villein=card("Villein"),
 zillahs_valley=card("Zillah's Valley"),
 bounces=link("/strategy/fundamentals", _("bounces"), _anchor="bounce"),
@@ -37,13 +48,12 @@ desso_alastors_deck=link("/deck-search", _("Desso Alastor's deck"), id="2021wofo
 %}
 <h2>Highlights</h2>
 <p>
-    This is a <em>powerbleed</em> deck that relies on big capacity natural bleeders
-    like the Inner Circle and {{ lucian_the_perfect }}, combined with a lot of
-    block denial and, specifically, a good number of {{ blind_spot }}.
+    This is a <em>powerbleed</em> deck that relies on {{ lucian_the_perfect }} for huge bleeds,
+    combined with a lot of block denial and, specifically, some {{ blind_spot }}.
 </p>
 <p>
-    The idea is very simple: get two vampires out, then bleed for 6 to 10
-    with each of them, disregarding the possibility of {{ archon_investigation }}.
+    The idea is very simple: get {{ lucian }} out, then bleed for 6 to 12,
+    disregarding the possibility of {{ archon_investigation }}.
     To get the bleed through, there is a bit of stealth but the main strategy
     is to combine multiple block denials like {{ blind_spot }}, {{ seduction }}
     and {{ elder_impersonation }} to prevent all the minions of the prey from blocking.
@@ -61,28 +71,15 @@ desso_alastors_deck=link("/deck-search", _("Desso Alastor's deck"), id="2021wofo
     {{ information_highway }} and {{ dreams_of_the_sphinx }}.
 </p>
 <p>
-    The deck relies on {{ obedience }} and {{ majesty }} to avoid combat and has low
-    defense against bleeds from the predator: only a couple of {{ telepathic_counter }}.
+    The deck relies on {{ obedience }}, {{ charismatic_aura }} and {{ majesty }} to avoid combat,
+    and sports some {{ AUS }} sidekicks for support.
+    They can bounce with {{ telepathic_misdirection }}, try to remove defensive tools from the prey's hand using
+    {{ revelations }}, or even call some votes that can be negotiated with the rest of the table.
 </p>
 <h2>Tips & Tricks</h2>
 <p>
-    {{ lucian_the_perfect }} is the most desirable vampire here: he bleeds harder, and
-    his ability makes him a decent blocker, especially combined with Majesty.
-    The deck has no intercept, but his ability to block swarms that do not use stealth
-    is actually pretty high between {{ majesty }}, {{ obedience }} and
-    {{ eluding_the_arms_of_morpheus }}.
-</p>
-<p>
-    The deck fields only a few cards for bloat, but they bloat hard: the {{ villein }}
-    will be played for 5, and the one {{ golconda_inner_peace }} can be used to recoup
-    11 pool in a single stroke if needed.
-</p>
-<p>
-    {{ flurry_of_action }} is versatile here: it can be used to unlock, especially
-    if {{ mistress_fanchon }} is out, so she can use her special ability after the bleed,
-    but also just to stay unlocked for defense. Interestingly, it can also be used
-    at inferior {{ cel }} to cycle cards and go fetch the right combination for the next
-    bleed.
+    {{ lucian }} bleeds hard, and his ability makes him a decent blocker, especially combined with {{ majesty }}.
+    The deck has no intercept, but his ability to block swarms that do not use stealth is actually pretty high.
 </p>
 <p>
     {{ enkil_cog }} is, of course, desirable. Especially because one can use it to bleed
@@ -90,12 +87,23 @@ desso_alastors_deck=link("/deck-search", _("Desso Alastor's deck"), id="2021wofo
     {{ archon_investigation }}: since it's an out-of-turn Master, it cannot be played
     by the prey during their own turn.
 </p>
+<p>
+    The deck fields an awful lot of cards in a single copy that fit specific situations:
+    it is all about crafting the perfect lunge to oust the prey in a single swift move.
+    So, patience is required in building up the perfect table situation {{ lucian }} needs to shine.
+    {{ revelations }} can be used to remove a bounce or a potential {{ archon_investigation }},
+    {{ hide_the_mind }} can counter an Auspex {{ AUS }} bounce and {{ approximation_of_loyalty }}, any bounce,
+    if the reacting vampire is young enough.
+</p>
+<p>
+    This version include a few votes that might be negotiated even on a table with multiple titled vampires.
+    But the deck also include a surprising number of incidental vote increases, between {{ ancestor_spirit }},
+    {{ iron_glare }}, {{ perfect_paragon }} and {{ kduvas_mask }}, not mentioning {{ legendary_vampire }}.
+</p>
 <h2>Variants</h2>
 <p>
-    A few adaptations can be made without messing too much with the proportions here.
-    Most notably, a bit more bleed defense with {{ deflection }} for example.
-    In that case, one might want to cut {{ narrow_minds }}.
-    {{ scourge_of_the_enochians }} might be a valuable inclusion if swarms are expected.
+    The more brutal <strong>Inner Circle</strong> variant is much more forward-focused, using more {{ blind_spot }},
+    {{ seduction }} and {{ conditioning }}, for a more streamlined and direct aggression.
     See {{ desso_alastors_deck }} for an example.
 </p>
 {% endtrans %}

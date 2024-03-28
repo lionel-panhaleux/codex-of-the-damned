@@ -1,0 +1,74 @@
+{% extends "archetypes/_layout.html" %}
+{% import "archetypes/_layout-erratum.html" as erratum with context %}
+{% import "archetypes/new-kids/chameleon.json" as deck_json %}
+
+{% block meta %}
+<meta property="decklist" content='{{ deck_json | tojson }}' />
+{% endblock %}
+
+{% block archetype_name %}
+<h1>{{ ministry }} Chameleon</h1>
+{% endblock %}
+
+{% block archetype %}
+{% trans trimmed
+abombwe=card("Abombwe"),
+anarch=card("Anarch"),
+banishment=card("Banishment"),
+chameleon=card("Chameleon"),
+fear_of_mekhet=card("Fear of Mekhet"),
+garibaldi_meucci_museum=card("Garibaldi-Meucci Museum"),
+heidelberg=card("Heidelberg Castle, Germany", "Heidelberg"),
+heidelberg_castle=card("Heidelberg Castle, Germany", "Heidelberg Castle"),
+revolutionary_council=card("Revolutionary Council"),
+sergio=card("Sergio Bueno", "Sergio"),
+sergio_bueno=card("Sergio Bueno"),
+meta=link("/strategy/articles/advanced/the-game-of-the-game", _("meta")),
+lutz_politics=link("/archetypes/lutz-politics")
+%}
+<h2>Highlights</h2>
+<p>
+    This is a Ministry {{ ministry }} <em>combo</em> deck using {{ sergio_bueno }} as star.
+    The goal is to use {{ chameleon }} to steal other vampires on the table, disabling everyone else by doing so,
+    and finish off the preys with either with {{ revolutionary_council }} or just by bleeding.
+</p>
+<p>
+    It is not easy to pull off {{ chameleon }} consistently multiple times. The card is expensive, of course,
+    but also it can only target younger freshly arrived vampires. So you need a higher capacity vampire,
+    and it needs to be there <em>before</em> your opponents influence theirs. And you have five opponents!
+</p>
+<p>
+    Nonetheless, Teemu Sainomaa won the 2024 Atlantic Cup with this deck, and Otso Saariluoma happend to make the finals
+    of the same tournament <em>with the same deck</em>, so it must at least have fitted the meta very well that day.
+</p>
+<p>
+    Of course, there are a few tricks to it. Running a tight library, a <em>lot</em> of stealth to ensure
+    {{ chameleon }} and the votes can go through, it aims to land a {{ heidelberg_castle }} early.
+    The first few {{ chameleon }} will target any available vampire, with a preference for the prey or predator,
+    a Baron if possible, titled otherwise, just an Anarch if nothing else.
+    The blood goes back to {{ sergio }} through {{ heidelberg }} so he can {{ chameleon }} again the next turn.
+</p>
+<p>
+    During the course of the game, {{ abombwe }} is used to increase {{ sergio }}'s capacity to 10, so that only
+    the biggest vampires can hope to escape him. When running out of freshly influenced vampires, {{ sergio }} can
+    simply use {{ banishment }} to remove the target and, if it's influenced anew, <em>then</em> it can be stolen
+    with {{ chameleon }} immediately.
+</p>
+<h2>Considerations</h2>
+<p>
+    This is a dreadful deck you do not want to bring on a casual table if you want to keep your friends.
+    It is fast and egregious and has very few blind spots. Using {{ chameleon }} to target other titled vampires as a
+    priority, it gets the vote lock easily, even over dedicated Inner Circle builds like {{ lutz_politics }}.
+    Those are probably the biggest threat to the deck though. Maybe it's worth including a {{ fear_of_mekhet }} or two?
+</p>
+<p>
+    {{ garibaldi_meucci_museum }} is so strong here that it's been doubled. It can fetch a needed {{ chameleon }}
+    or {{ revolutionnary_council }}, but also end a dangerous combat if some Anarch tries to take {{ sergio }} down.
+</p>
+<p>
+    All in all it's a very strong, very hard to build, horribly crippling thing we have here.
+    Was this only a lucky fluke because of an ideal {{ meta }} that was running too many mid-caps and not enough
+    big caps? Or can this deck make it to the top tier in the next few months?
+</p>
+{% endtrans %}
+{% endblock %}

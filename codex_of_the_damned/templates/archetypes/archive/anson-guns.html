@@ -1,0 +1,104 @@
+{% extends "archetypes/_layout.html" %}
+{% import "archetypes/_layout-erratum.html" as erratum with context %}
+{% import "archetypes/archive/anson-guns.json" as deck_json %}
+
+{% block meta %}
+<meta property="decklist" content='{{ deck_json | tojson }}' />
+{% endblock %}
+
+{% block archetype_name %}
+<h1>{{ toreador }} Anson Guns</h1>
+{% endblock %}
+
+{% block archetype %}
+{% trans trimmed
+aire_of_elation=card("Aire of Elation"),
+alexandra=card("Alexandra"),
+anneke=card("Anneke"),
+anson=card("Anson"),
+ashur_tablets=card("Ashur Tablets"),
+codex_of_the_edenic_groundskeepers=card("Codex of the Edenic Groundskeepers"),
+concealed_weapon=card("Concealed Weapon"),
+dragonbound=card("Dragonbound"),
+entrancement=card("Entrancement"),
+fame=card("Fame"),
+haven_uncovered=card("Haven Uncovered"),
+heart_of_the_city=card("Heart of the City"),
+infernal_pursuit=card("Infernal Pursuit"),
+kine_resources_contested=card("Kine Resources Contested"),
+magnum=card(".44 Magnum"),
+majesty=card("Majesty"),
+parity_shift=card("Parity Shift"),
+powerbase_montreal=card("Powerbase: Montreal"),
+resist_earths_grasp=card("Resist Earth's Grasp"),
+scourge_of_the_enochians=card("Scourge of the Enochians"),
+second_tradition_domain=card("Second Tradition: Domain"),
+tension_in_the_ranks=card("Tension in the Ranks"),
+the_erciyes_fragments=card("The Erciyes Fragments"),
+enricos_deck=link("/deck-search", _("Enrico De Stefano's deck"), id="2014incbi"),
+jorges_deck=link("/deck-search", _("Jorge Delgado's deck"), id="2018bncbb")
+%}
+<h2>Highlights</h2>
+<p>
+    This is a <em>toolbox</em> deck starring {{ anson }} and using {{ magnum }},
+    hence the name.
+</p>
+<p>
+    {{ anson }} should be influenced first, followed by one or more sidekicks depending
+    on the crypt and the overall table situation.
+</p>
+<p>
+    The deck is uses {{ haven_uncovered }} and {{ bums_rush }} to rush,
+    {{ second_tradition_domain }} for wake and intercept and
+    {{ concealed_weapon }} & {{ magnum }} with {{ CEL }} for combat.
+    {{ parity_shift }} can deliver a bit of pool damage and {{ anson }}'s ability
+    is used to bloat and use recursion with {{ ashur_tablets }}.
+</p>
+<p>
+    This version is definitely leaning on the rush side of the build — the payload is
+    reduced to simple bleeds of 1 and a few pool-damage cards linked to combats like
+    {{ tension_in_the_ranks }}, {{ fame }} and {{ dragonbound }}.
+</p>
+<p>
+    The combat module relies a lot on the synergy between {{ infernal_pursuit }} and
+    {{ ashur_tablets }}: the first lets you scan through your deck quickly to get the
+    hand you need, while the second let you take back the useful cards in the ash heap
+    and shape your deck depending on the table situation.
+</p>
+<h2>Tips & Tricks</h2>
+<p>
+    {{ the_erciyes_fragments }} and {{ powerbase_montreal }} are good tools that can be
+    protected using {{ second_tradition_domain }}. It's useful to get at least a second
+    Prince or Justicar out so enough vampires can play it.
+</p>
+<p>
+    One should not hesitate to enter combat with just an {{ infernal_pursuit }} in hand:
+    given the number of combat cards and their versatility, the deck is design to play
+    a few of them - even to no effect, just to cycle cards and get a hold of the
+    {{ concealed_weapon }} & {{ magnum }} combination fast.
+</p>
+<h2>Variants</h2>
+<p>
+    The <strong>AAA</strong> variant uses more Toreador {{ toreador }} companions for
+    {{ anson }}, especially {{ alexandra }} and {{ anneke }}, hence the name.
+    {{ enricos_deck }} from 2019 is a good example.
+</p>
+<p>
+    The deck offers a lot of tinkering possibilities. While this version is focused on
+    combat, you can definitely give it more of a toolbox feeling by changing a few cards
+    around, like in {{ jorge_delgados_deck }} from 2018. {{ resist_earths_grasp }} is
+    very versatile, providing stealth or mobility, and a pair of
+    {{ kine_resources_contested }} can help with the oust.
+    {{ aire_of_elation }} is another possible inclusion here.
+</p>
+{% endtrans %}
+{% endblock %}
+
+{% block errata %}
+<div class="insert warn">
+    <h3>Errata</h3>
+    {{ erratum.pentextmsubversion( 'remove' ) }}
+    {{ erratum.parityshift() }}
+    {{ erratum.ashur( 'undecided' ) }}
+</div>
+{% endblock %}

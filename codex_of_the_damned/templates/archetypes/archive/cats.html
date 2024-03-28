@@ -1,0 +1,133 @@
+{% extends "archetypes/_layout.html" %}
+{% import "archetypes/_layout-erratum.html" as erratum with context %}
+{% import "archetypes/archive/cats.json" as deck_json %}
+
+{% block meta %}
+<meta property="decklist" content='{{ deck_json | tojson }}' />
+{% endblock %}
+
+{% block archetype_name %}
+<h1>{{ ahrimane }} Cats</h1>
+{% endblock %}
+
+{% block archetype %}
+{% trans trimmed
+magnum=card(".44 Magnum"),
+abbot=card("Abbot"),
+aid_from_bats=card("Aid From Bats"),
+aire_of_elation=card("Aire of Elation"),
+anarch_revolt=card("Anarch Revolt", "Anarch Revolts"),
+animalism=card("Animalism"),
+canine_horde=card("Canine Horde"),
+carrion_crows=card("Carrion Crows"),
+cats_guidance=card("Cat's Guidance"),
+deep_song=card("Deep Song"),
+dragonbound=card("Dragonbound"),
+drawing_out_the_beast=card("Drawing Out the Beast"),
+ears_of_the_hare=card("Ears of the Hare"),
+engling_fury=card("Engling Fury"),
+entrancement=card("Entrancement"),
+falcons_eye=card("Falcon's Eye"),
+fame=card("Fame"),
+field_training=card("Field Training"),
+howler=card("Howler"),
+ivory_bow=card("Ivory Bow"),
+legal_manipulations=card("Legal Manipulations"),
+muricias_call=card("Muricia's Call"),
+raven_spy=card("Raven Spy"),
+sense_the_savage_way=card("Sense the Savage Way"),
+smiling_jack_the_anarch=card("Smiling Jack, The Anarch"),
+sniper_rifle=card("Sniper Rifle"),
+speak_with_spirits=card("Speak with Spirits"),
+swiftness_of_the_stag=card("Swiftness of the Stag"),
+taste_of_vitae=card("Taste of Vitae"),
+terror_frenzy=card("Terror Frenzy"),
+the_siamese=card("The Siamese"),
+underbridge_stray=card("Underbridge Stray"),
+vultures_buffet=card("Vulture's Buffet"),
+leeching=link("/strategy/bloat", _("leeching"), _anchor="leeching"),
+yoann_guyaders_deck=link("/deck-search", _("Yoann Guyader's deck"), id="2013fnpf"),
+miquels_deck=link("/deck-search", _("Miquel Jorge Tortajada's deck"), id="2019aazs")
+%}
+<h2>Highlights</h2>
+<p>
+    This is an Ahrimanes wall deck using group 4 Ahrimanes.
+    Depending on the build, it can be a pure wall or more of a toolbox.
+    The core concept is to use the rather classical {{ ani }} Intercept/Combat combination
+    —
+    {{ raven_spy }}, {{ cats_guidance }}, {{ aid_from_bats }} and {{ carrion_crows }}
+    —
+    combined with {{ spi }} intercept and combat enhancers:
+    {{ falcons_eye }}, {{ speak_with_spirits }}, {{ ears_of_the_hare }} and
+    {{ swiftness_of_the_stag }}.
+</p>
+<p>
+    This is a slow play, slowing down the prey and predator and bloating a bit with
+    Master cards, all the while bleeding when possible with {{ deep_song }}
+    and dealing additional pool damage with {{ fame }} and {{ dragonbound }}.
+</p>
+<h2>Tips & Tricks</h2>
+<p>
+    As Ahrimanes are Sabbat, they have access to {{ abbot }},
+    an excellent intercept enhancer. Having {{ spi }} for intercept
+    allows to drop the classical {{ raven_spy }} completely,
+    although most builds of this archetype still include it, sometimes along
+    {{ muricias_call }} and some other animal retainers.
+</p>
+<p>
+    {{ spi }} also provides {{ engling_fury }}, an excellent
+    blood regeneration tool which, along {{ taste_of_vitae }},
+    helps the Master {{ leeching }} bloat module.
+</p>
+<p>
+    The {{ ani }} combat module always includes some cards against weapon modules
+    to be able to handle some {{ ivory_bow }}, {{ magnum }} or {{ sniper_rifle }}
+    on the opponent side.
+    To this effect and depending on the context, {{ drawing_out_the_beast }},
+    {{ canine_horde }} or {{ terror_frenzy }} can be used.
+</p>
+<p>
+    If allies are expected, {{ vultures_buffet }} can be preferred to {{ engling_fury }}
+    and {{ entrancement }} can be added to the mix.
+</p>
+<h2>Creator Insights</h2>
+<p>
+    <em>Randal Rudstam</em> was kind enough to provide the following insights:
+</p>
+<p>
+    Getting into the three player endgame is more of a priority
+    than getting the first or second oust.
+</p>
+<p>
+    A third way to play them is to go Anarch,
+    remove {{ abbot }} for some {{ anarch_revolt }} and access to {{ field_training }}.
+</p>
+<h2>Variants</h2>
+<p>
+    The Muricia variant is a <em>wall</em> construct as given in example.
+    Some may include {{ pre }} cards to help on the bleeding side,
+    like {{ legal_manipulations }} and {{ aire_of_elation }}.
+    {{ underbridge_stray }} is also a common inclusion,
+    as well as {{ smiling_jack_the_anarch }}.
+    {{ yoann_guyaders_deck }} from the 2013 French NC is a an exemple.
+</p>
+<p>
+    The <strong>Howler</strong> variant is a group 2 build using
+    {{ howler }} and {{ the_siamese }}.
+    Group 2 vampires are a bit more expensive and do miss a bit of superior {{ ANI }},
+    so it makes including some {{ animalism }} quite necessary. On the other hand,
+    the slightly bigger capacity allows for the use of {{ sense_the_savage_way }} to
+    increase intercept capabilities, and {{ PRE }} is more present
+    and allows for a more aggressive bleed module.
+    {{ miquels_deck }} from 2019
+    is an example of this approach.
+</p>
+{% endtrans %}
+{% endblock %}
+
+{% block errata %}
+<div class="insert warn">
+    <h3>Errata</h3>
+    {{ erratum.pentextmsubversion( 'remove' ) }}
+</div>
+{% endblock %}

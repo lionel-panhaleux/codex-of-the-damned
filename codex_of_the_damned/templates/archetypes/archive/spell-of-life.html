@@ -1,0 +1,58 @@
+{% extends "archetypes/_layout.html" %}
+{% import "archetypes/_layout-erratum.html" as erratum with context %}
+{% import "archetypes/archive/spell-of-life.json" as deck_json %}
+{% import "archetypes/archive/_layout.html" as layout with context %}
+
+{% block meta %}
+<meta property="decklist" content='{{ deck_json | tojson }}' />
+{% endblock %}
+
+{% block archetype_name %}
+<h1>{{ ministry }} Spell of Life</h1>
+{% endblock %}
+
+{% block archetype %}
+{% trans trimmed
+enkil_cog=card("Enkil Cog"),
+enticement=card("Enticement"),
+in_memory_of_the_two_lands=card("In Memory of the Two Lands"),
+nakhthorheb=card("Nakhthorheb"),
+spell_of_life=card("Spell Of Life"),
+elzo_benzaquen_s_deck=link("/deck-search", _("Elzo Benzaquen's deck"), id="2017pmspb")
+%}
+<h2>Highlights</h2>
+<p>
+    This an <em>allies swarm</em> deck. It uses {{ spell_of_life }} to put into play an army of big mummies,
+    then proceeds to bleed its successive preys.
+</p>
+<p>
+    Using {{ nakhthorheb }} for the job is a common choice, because he has a great ability.
+    He can also get an {{ enkil_cog }}, multiplying his bleeding power in the late game
+</p>
+<p>
+    The plan is pretty straightforward: put a {{ spell_of_life }} in play every turn until it triggers,
+    while accumulating different big capacity vampires in the crypt in the meantime.
+</p>
+<p>
+    Obfuscate {{ OBF }} is, of course, used for stealth, to make sure those {{ spell_of_life }} can hit the board
+    unhindered.
+</p>
+<h2>Tips & Tricks</h2>
+<p>
+    When {{ spell_of_life }} triggers, the mummies can act immediately, since they have not been recruited.
+    This immediate shift in the deck's power can often be underestimate by the opponents, since the whole deck
+    was pretty low-key in the few turns before that.
+</p>
+<p>
+    A couple of {{ enticement }} can help damage the prey's pool.
+</p>
+<h2>Variants</h2>
+<p>
+    Since 2014, including a couple of {{ in_memory_of_the_two_lands }} is usual.
+</p>
+<p>
+    Using another star, or no star at all, with more mummies allies like or is also possible,
+    like in {{ elzo_benzaquen_s_deck }} from 2017.
+</p>
+{% endtrans %}
+{% endblock %}

@@ -1,0 +1,109 @@
+{% extends "archetypes/_layout.html" %}
+{% import "archetypes/_layout-erratum.html" as erratum with context %}
+{% import "archetypes/archive/weenie-aus.json" as deck_json %}
+
+{% block meta %}
+<meta property="decklist" content='{{ deck_json | tojson }}' />
+{% endblock %}
+
+{% block archetype_name %}
+<h1>Weenie AUS</h1>
+{% endblock %}
+
+{% block archetype %}
+{% trans trimmed
+anarch_convert=card("Anarch Convert"),
+anarch_revolt=card("Anarch Revolt"),
+smiling_jack_the_anarch=card("Smiling Jack, The Anarch"),
+constant_revolution=card("Constant Revolution"),
+monkey_wrench=card("Monkey Wrench"),
+concealed_weapon=card("Concealed Weapon"),
+sniper_rifle=card("Sniper Rifle"),
+forced_awakening=card("Forced Awakening"),
+my_enemy_s_enemy=card("My Enemy's Enemy"),
+tribute_to_the_master=card("Tribute to the Master"),
+powerbase_montreal=card("Powerbase: Montreal"),
+ashur_tablets=card("Ashur Tablets"),
+eagle_s_sight=card("Eagle's Sight"),
+the_parthenon=card("The Parthenon"),
+magnum=card(".44 Magnum"),
+ivory_bow=card("Ivory Bow"),
+aranthebes_the_immortal=card("Aranthebes, the Immortal"),
+mr_winthrop=card("Mr. Winthrop"),
+muddled_vampire_hunter=card("Muddled Vampire Hunter"),
+bowl_of_convergence=card("Bowl of Convergence"),
+madness_network=card("Madness Network"),
+classic_deal=link("/strategy/table-talk", _("classic deal"), _anchor="negociation"),
+christian_chenard_s_deck=link("/deck-search", _("Christian Chénard's deck"), id="2k8naqtroisrivieres"),
+pascal_bertrand_s_deck=link("/deck-search", _("Pascal Bertrand's deck"), id="2k9eclcq")
+%}
+<h2>Highlights</h2>
+<p>
+    This is a <em>wall</em> deck using low capacity vampires with the {{ AUS }}
+    discipline. {{ anarch_convert }} is used to make the vampires <em>Anarch</em>
+    as soon as they come into play.
+</p>
+<p>
+    Pool damage is done by putting {{ anarch_revolt }}, {{ smiling_jack_the_anarch }}
+    and {{ constant_revolution }} into play and defending them,
+    and using {{ monkey_wrench }} for the lunge.
+</p>
+<p>
+    The deck has very high intercept and wake capabilities. It uses the
+    {{ concealed_weapon }} & {{ sniper_rifle }} combination for combat, and
+    {{ forced_awakening }} and {{ my_enemy_s_enemy }} to bounce bleeds and increase
+    pool damage to the prey.
+</p>
+<p>
+    It has low bloat capacities, with only {{ tribute_to_the_master }} and
+    {{ powerbase_montreal }} at hand.
+</p>
+<p>
+    The deck is slow and steady, grinding the opponents until it is in position
+    to oust the whole table one prey after the other.
+</p>
+<h2>Tips & Tricks</h2>
+<p>
+    {{ ashur_tablets }} are used only once for a bloat and
+    a bit of recursion. If another deck on the table uses them though, one can try
+    to negociate to use them alternatively on both side (a {{ classic_deal }}),
+    thus blocking the opponent as long as he respects the deal.
+</p>
+<p>
+    {{ eagle_s_sight }} can be used to intercept any action,
+    including the prey's bleed. It can be used to specifically target any
+    <em>Anarch</em> vampire the prey could have to make sure the {{ anarch_revolt }} are
+    fully operationnal.
+</p>
+<p>
+    {{ the_parthenon }} allows two Master cards per turn,
+    potentially stacking {{ anarch_revolt }} more quickly.
+</p>
+<h2>Variants</h2>
+<p>
+    There are many small variations of this archetype.
+    {{ magnum }} and {{ ivory_bow }} are often used.
+    The given example avoids any action that could be blocked,
+    except for a lunge bleed using {{ monkey_wrench }} and two allies.
+    However, {{ aranthebes_the_immortal }}, {{ mr_winthrop }},
+    {{ muddled_vampire_hunter }} and {{ bowl_of_convergence }} are often used in other
+    decklists following this archetype. {{ blood_turnip }} might deserve consideration.
+</p>
+<p>
+    Non-anarch variants have been played, like {{ christian_chenard_s_deck }} from 2008.
+</p>
+<p>
+    The <strong>Madness</strong> variant focuses on Malkavian {{ malkavian }}
+    in the crypt and uses {{ madness_network }}. {{ pascal_bertrand_s_deck }} from 2009
+    is a good example. This let the vampires equip, recruit and bleed at the end of the
+    predator minion phase.
+</p>
+{% endtrans %}
+{% endblock %}
+
+{% block errata %}
+<div class="insert warn">
+    <h3>Errata</h3>
+    {{ erratum.pentextmsubversion( 'remove' ) }}
+</div>
+{% endblock %}

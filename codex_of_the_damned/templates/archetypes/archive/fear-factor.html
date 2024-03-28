@@ -1,0 +1,96 @@
+{% extends "archetypes/_layout.html" %}
+{% import "archetypes/_layout-erratum.html" as erratum with context %}
+{% import "archetypes/archive/fear-factor.json" as deck_json %}
+
+{% block meta %}
+<meta property="decklist" content='{{ deck_json | tojson }}' />
+{% endblock %}
+
+{% block archetype_name %}
+<h1>{{ tzimisce }} Fear Factor</h1>
+{% endblock %}
+
+{% block archetype %}
+{% trans trimmed
+chiropteran_marauder=card("Chiropteran Marauder"),
+breath_of_the_dragon=card("Breath of the Dragon"),
+horrid_form=card("Horrid Form"),
+carrion_crows=card("Carrion Crows"),
+telepathic_tracking=card("Telepathic Tracking"),
+smiling_jack_the_anarch=card("Smiling Jack, The Anarch"),
+dragonbound=card("Dragonbound"),
+eternal_vigilance=card("Eternal Vigilance"),
+haven_uncovered=card("Haven Uncovered"),
+deep_song=card("Deep Song"),
+eagle_s_sight=card("Eagle's Sight"),
+villein=card("Villein"),
+scourge_of_the_enochians=card("Scourge of the Enochians"),
+fame=card("Fame"),
+army_of_rats=card("Army of Rats"),
+rötschreck=card("Rötschreck"),
+abbot=card("Abbot"),
+revenant=card("Revenant"),
+telepathic_misdirection=card("Telepathic Misdirection"),
+malgorzata=link("/archetypes/malgorzata"),
+goratrix_high_tower=link("/archetypes/goratrix-high-tower")
+%}
+<h2>Highlights</h2>
+<p>
+    This is a <em>wall</em> deck using the Tzimisce
+    and their {{ VIC }}{{ AUS }}{{ ANI }} disciplines.
+</p>
+<p>
+    The combat module uses {{ chiropteran_marauder }} and {{ breath_of_the_dragon }}
+    to deliver aggravated damages, {{ horrid_form }} and {{ carrion_crows }}
+    to improve damages and get a chance to burn some vampires,
+    and {{ telepathic_tracking }} to cancel
+    S:CE ("<strong>S</strong>trike: <strong>C</strong>ombat <strong>E</strong>nds").
+</p>
+<p>
+    Pool damage is done by naked bleeds and
+    {{ smiling_jack_the_anarch }} and {{ dragonbound }} later in the game.
+</p>
+<p>
+    The intercept module is heavy, with only a few bounces.
+    {{ eternal_vigilance }} is used to get as many wakes as needed.
+</p>
+<p>
+    The deck has a bit of rush capabilities with
+    {{ haven_uncovered }} and {{ deep_song }}.
+</p>
+<p>
+    This is a very slow deck, patiently taking down vampires around the table
+    and getting its victory once the rest of the table is crippled enough.
+</p>
+<h2>Tips & Tricks</h2>
+<p>
+    {{ eagle_s_sight }} can be used to block cross table actions
+    or the prey's bleed, a good way to control the table.
+</p>
+<p>
+    The Master module uses {{ villein }} to bloat and has many options
+    to bring back some blood on the vampires so they do not get exhausted during the game.
+</p>
+<p>
+    {{ scourge_of_the_enochians }} is a counter
+    against breed constructs as they can become overwhelming for this deck.
+</p>
+<h2>Variants</h2>
+<p>
+    {{ fame }} and {{ army_of_rats }} are often included to improve pool damage.
+    The combat module can vary quite a bit, using {{ ANI }} more with
+    {{ carrion_crows }} or focusing on aggravated damage and using {{ rötschreck }}.
+    {{ abbot }} and {{ revenant }} can be added to the intercept module,
+    which often contains more {{ telepathic_misdirection }} to bounce bleeds.
+</p>
+<p>
+    In a sense, the {{ malgorzata }} archetype is pretty close to it, dropping {{ ANI }}
+    to use big capacity vampires with very strong abilities.
+</p>
+<p>
+    Although this is a different archetype, {{ goratrix_high_tower }}
+    is a close one, also using the {{ AUS }}{{ ANI }} combination,
+    but with {{ THA }} instead of {{ VIC }}.
+</p>
+{% endtrans %}
+{% endblock %}

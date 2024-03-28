@@ -1,0 +1,92 @@
+{% extends "archetypes/_layout.html" %}
+{% import "archetypes/_layout-erratum.html" as erratum with context %}
+{% import "archetypes/archive/euro-brujah.json" as deck_json %}
+
+{% block meta %}
+<meta property="decklist" content='{{ deck_json | tojson }}' />
+{% endblock %}
+
+{% block archetype_name %}
+<h1>{{ brujah }} Euro Brujah</h1>
+{% endblock %}
+
+{% block archetype %}
+{% trans trimmed
+beast_the_leatherface_of_detroit=card("Beast, The Leatherface of Detroit"),
+blur=card("Blur"),
+bums_rush=card("Bum's Rush"),
+chiropteran_marauder=card("Chiropteran Marauder"),
+conditioning=card("Conditioning"),
+deflection=card("Deflection"),
+disarm=card("Disarm"),
+fame=card("Fame"),
+govern_the_unaligned=card("Govern the Unaligned"),
+immortal_grapple=card("Immortal Grapple"),
+new_carthage=card("New Carthage"),
+parity_shift=card("Parity Shift"),
+pursuit=card("Pursuit"),
+second_tradition_domain=card("Second Tradition: Domain"),
+sideslip=card("Sideslip"),
+theo_bell=card("Theo Bell"),
+thrown_sewer_lid=card("Thrown Sewer Lid"),
+wolf_claws=card("Wolf Claws"),
+michael_heyders_deck=link("/deck-search", _("Michael Heyder's deck"), id="2k8germanchamp")
+%}
+<h2>Highlights</h2>
+<p>
+    This is a Camarilla Royalty <em>Toolbox</em> Brujah deck using the few titled Brujah with {{ dom }}
+    to be able to use {{ govern_the_unaligned }} and some {{ deflection }}.
+    Other than that, the deck uses the rather classical combination of
+    {{ second_tradition_domain }} and {{ parity_shift }} Camarilla
+    <em>Princes</em> and <em>Justicars</em> have access to.
+</p>
+<p>
+    {{ POT }}{{ CEL }} makes for a dreadful combat module, and
+    {{ theo_bell }} and {{ beast_the_leatherface_of_detroit }}
+    have the ability to rush opponents vampires to take them down with it.
+    Furthermore, {{ second_tradition_domain }}
+    is an excellent reaction that often results in a combat too.
+</p>
+<p>
+    {{ govern_the_unaligned }} is used in the game
+    beginning to get vampires out cheaper and faster, but it is an excellent bleed action later on.
+</p>
+<h2>Tips & Tricks</h2>
+<p>
+    The oldest vampire with {{ DOM }} should be put into play first in order to be able to use
+    {{ govern_the_unaligned }} on the younger vampires.
+</p>
+<p>
+    {{ fame }} and {{ new_carthage }} are excellent pool damage enhancers.
+</p>
+<p>
+    The combat module has a lot of tricks to it: {{ immortal_grapple }} prevents
+    <em>Strike: Combat Ends</em> and <em>Dodge</em>,
+    {{ pursuit }} can be enough to get to close range against
+    a single maneuver but, if the opponent insists on getting to long range,
+    {{ thrown_sewer_lid }} can be used to take him down.
+    {{ blur }} and {{ pursuit }} can deliver more damages through more strikes,
+    then {{ disarm }} can put any vampire into torpor.
+    Finally, {{ sideslip }} can help dodge a dreadful strike,
+    get a {{ disarm }} through or prevent aggravated damage from
+    {{ wolf_claws }} or {{ chiropteran_marauder }}.
+</p>
+<h2>Variants</h2>
+<p>
+    There are a few variations around the crypt and the minion cards, especially the combat module.
+    {{ beast_the_leatherface_of_detroit }} is a rare inclusion and this example has a huge focus on combat.
+    Other decks from this archetype can use {{ dom }} bleed enhancers like
+    {{ conditioning }} and some {{ bums_rush }}.
+    {{ michael_heyders_deck }} from the 2008 German NC is another example of the archetype.
+</p>
+{% endtrans %}
+{% endblock %}
+
+{% block errata %}
+<div class="insert warn">
+    <h3>Errata</h3>
+    {{ erratum.pentextmsubversion( 'remove' ) }}
+    {{ erratum.villein() }}
+    {{ erratum.parityshift() }}
+</div>
+{% endblock %}

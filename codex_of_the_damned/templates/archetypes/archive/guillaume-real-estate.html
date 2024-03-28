@@ -1,0 +1,98 @@
+{% extends "archetypes/_layout.html" %}
+{% import "archetypes/_layout-erratum.html" as erratum with context %}
+{% import "archetypes/archive/guillaume-real-estate.json" as deck_json %}
+
+{% block meta %}
+<meta property="decklist" content='{{ deck_json | tojson }}' />
+{% endblock %}
+
+{% block archetype_name %}
+<h1>{{ giovanni }} Guillaume Real Estate</h1>
+{% endblock %}
+
+{% block archetype %}
+{% trans trimmed
+deflection=card("Deflection"),
+govern_the_unaligned=card("Govern the Unaligned"),
+guillaume=card("Guillaume Giovanni", "Guillaume"),
+guillaume_giovanni=card("Guillaume Giovanni"),
+immortal_grapple=card("Immortal Grapple"),
+nocturn=card("Nocturn"),
+puppeteer=card("Puppeteer"),
+roundhouse=card("Roundhouse"),
+shambling_hordes=card("Shambling Hordes"),
+spiritual_intervention=card("Spiritual Intervention"),
+storage_annex=card("Storage Annex"),
+sudario_refraction=card("Sudario Refraction"),
+tye_cooper=card("Tye Cooper"),
+marcins_deck=link("/deck-search", _("Marcin's deck"), id="9867"),
+pedros_deck=link("/deck-search", _("Pedro's deck"), id="2015bncbhb"),
+michals_win=link("/deck-search", _("Michal's win"), id="10188"),
+gilles_article=external("https://vtesinformationhighway.wordpress.com/2021/01/02/how-to-build-around-a-star-vampire/",
+_("Gille's article"))
+%}
+<h2>Highlights</h2>
+<p>
+    This is a <em>powerbleed</em> deck centered around {{ guillaume_giovanni }} as a star,
+    using his ability to get a very large hand and profit from the incredible versatilty it provides.
+</p>
+<p>
+    The base idea is to always have acces to the right wake and bounce in hand, all the while building
+    the axact required hand to get {{ dom }} bleeds through with the help of {{ nec }} modifiers.
+</p>
+<p>
+    Ideally, {{ guillaume }} should be influenced first, then use {{ govern_the_unaligned }} at superior {{ DOM }}
+    to help influence a couple of sidekicks to help. The deck delivers constant pressure on its prey, while providing
+    very few opportunities to its predator: the size of the hand guarantees a fair availability in solutions.
+</p>
+<p>
+    For combat management, the deck uses {{ nocturn }} to block potential rushers and combat ends
+    with {{ spiritual_intervention }} just in case.
+</p>
+<h2>Tips & Tricks</h2>
+<p>
+    {{ deflection }} is the main defense against bleeds, and the hand size helps make sure there's always one or two
+    available, with the matching wake.
+</p>
+<p>
+    Guillaume's second ability, his stealth bonus for recruitments and employments, is not overlooked either:
+    a good number of {{ nocturn }} are used as cannon fodder to defend against rushes or provide a few blocks.
+</p>
+<p>
+    {{ sudario_refraction }}, although only present in limited copies, is a key card of the deck and often allows
+    fetching the exact cards required for a lunge. A classical move is to use the second to fetch back the first one,
+    this way ensuring the constant ability to fetch two cards (plus the other {{ sudario_refraction }}).
+</p>
+<h2>Variants</h2>
+<p>
+    One of the big questions to answer when building this decks is whether or not to {{ storage_annex }}. Some find the
+    card awesome, others are adamantly against it. Both seem to work though, as proven by this version (no annex) and,
+    for example {{ marcins_deck }} in contrast. It's maybe a matter of playstyle and whether or not the additional
+    pliability is worth it for you, at the expense of stacking more other permanent location effects.
+</p>
+<p>
+    Some variants don't use {{ nocturn }} at all, relying instead on good old Giovanni {{ giovanni }} allies like
+    {{ tye_cooper }}, {{ puppeteer }} and even the infamous {{ shambling_hordes }}. Check for example {{ pedros_deck }}
+    from the 2015 Brazilian NC.
+</p>
+<p>
+    A recent variation includes a heavier combat module, using {{ pot }} to devastating effects and providing more of a
+    deterrent than the usually lighter defensive package. {{ immortal_grapple }} and {{ roundhouse }} can certainly
+    make the opponents think twice before they block or act against the deck, and the large hand, again, makes the
+    module
+    that much more effective and available. This makes the deck more of a toolbox than a powerbleed build,
+    but it can also work, as proven by {{ michals_win }} at the Czech NC in 2022.
+</p>
+<p>
+    If the build interest you, you might want to also consult {{ gilles_article }} on Information Highway,
+    which in-depth reflexions about the archetpye from an actual specificalist.
+</p>
+{% endtrans %}
+{% endblock %}
+
+{% block errata %}
+<div class="insert warn">
+    <h3>Errata</h3>
+    {{ erratum.pentextmsubversion( 'keep' ) }}
+</div>
+{% endblock %}

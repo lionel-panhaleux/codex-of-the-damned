@@ -1,0 +1,119 @@
+{% extends "archetypes/_layout.html" %}
+{% import "archetypes/_layout-erratum.html" as erratum with context %}
+{% import "archetypes/archive/legacy-of-pander.json" as deck_json %}
+{% import "archetypes/archive/_layout.html" as layout with context %}
+
+{% block meta %}
+<meta property="decklist" content='{{ deck_json | tojson }}' />
+{% endblock %}
+
+{% block archetype_name %}
+<h1>{{ pander }} Legacy of Pander</h1>
+{% endblock %}
+
+{% block archetype %}
+{% trans trimmed
+change_of_target=card("Change of Target"),
+cloak_the_gathering=card("Cloak the Gathering"),
+consanguineous_boon=card("Consanguineous Boon"),
+crusade=card("Crusade: Toronto", "Crusade"),
+cryptic_rider=card("Cryptic Rider"),
+delaying_tactics=card("Delaying Tactics"),
+dia_de_los_muertos=card("Día de los Muertos"),
+disputed_territory=card("Disputed Territory"),
+dodge=card("Dodge"),
+dreams_of_the_sphinx=card("Dreams of the Sphinx"),
+effective_management=card("Effective Management"),
+embrace=card("The Embrace", "Embrace"),
+emerald_legionnaire=card("Emerald Legionnaire"),
+fear_of_mekhet=card("Fear of Mekhet"),
+fiendish_tongue=card("Fiendish Tongue"),
+information_highway=card("Information Highway"),
+joseph_pander=card("Joseph Pander"),
+kaymakli_nightmares=card("Kaymakli Nightmares"),
+kindred_segregation=card("Kindred Segregation"),
+kine_resources_contested=card("Kine Resources Contested"),
+legacy_of_pander=card("Legacy of Pander"),
+poison_pill=card("Poison Pill"),
+private_audience=card("Private Audience"),
+rumors_of_gehenna=card("Rumors of Gehenna"),
+scourge_of_the_enochians=card("Scourge of the Enochians"),
+the_rising=card("The Rising"),
+the_slow_withering=card("The Slow Withering"),
+the_uncoiling=card("The Uncoiling"),
+veil_of_darkness=card("Veil of Darkness"),
+veil_the_legions=card("Veil the Legions"),
+year_of_fortune=card("Year of Fortune"),
+emerald_legion=link("/archetypes/emerald-legion"),
+stanislava=link("/archetypes/stanislava"),
+lutz_politics=link("/archetypes/lutz-politics"),
+meta=link("/strategy/articles/advanced/the-game-of-the-game", _("meta")),
+dave_riordan_s_deck=link("/deck-search", _("Dave Riordan's deck"), id="9942"),
+tomàs_lópez_jiménez_deck=link("/deck-search", _("Tomàs López Jiménez' deck"), id="2020igbcs")
+%}
+<h2>Highlights</h2>
+<p>
+    This is an infamous <em>swarm vote</em> deck featuring the Panders {{ pander }}.
+    The idea is simple enough: get some cheap panders out on turn one, call some political actions
+    to get them more votes immediately before there are any other titled vampires on the table,
+    like a {{ crusade }} or, of course, {{ legacy_of_pander }}.
+</p>
+<p>
+    Once the vote lock is set, it votes successive preys out of the game with damaging votes like
+    {{ kine_resources_contested }}, while bloating consistently with {{ consanguineous_boon }}.
+</p>
+<p>
+    Combat defense consists of just a few {{ dodge }} because there's no stable discipline the Panders {{ pander }}
+    can rely on. This version also features {{ change_of_target }} to avoid combat in case of block, since it only
+    has the natural +1 stealth provided by political actions.
+</p>
+<p>
+    In case the vote lock gets broken at some point, {{ private_audience }} and {{ dia_de_los_muertos }} can be used
+    to pass the necessary {{ crusade }} or {{ legacy_of_pander }} to regain it.
+</p>
+<p>
+    Finally, the Master module provides a lot of help to influence more Panders {{ pander }} faster, with a lot of
+    {{ information_highway }} and {{ dreams_of_the_sphinx }} on top of {{ effective_management }}, in order to be able
+    to continue to influence one vampire per turn after the 4 initial ones are there.
+</p>
+<h2>Tips & Tricks</h2>
+<p>
+    {{ kindred_segregation }} is probably here for {{ meta }} reasons, as {{ emerald_legionnaire }} had not yet been
+    nerfed and {{ emerald_legion }} was a widespread and dangerous archetype.
+</p>
+<p>
+    {{ the_uncoiling }} is here to counter a possible {{ scourge_of_the_enochians }} that would just destroy the deck.
+</p>
+<p>
+    {{ cryptic_rider }} has multiple angles: it can either be used to land a {{ crusade }} to regain the vote lock after
+    passing a negotiated vote, but more interestingly it can be used for the lunge, to avoid a {{ poison_pill }} or
+    {{ delaying_tactics }} on the last vote required to oust the prey.
+</p>
+<p>
+    The speed and number of actions in a turn is what makes the deck so dreadful and efficient,
+    so the few {{ fiendish_tongue }} are there to provide an additional problematic action for a {{ change_of_target }}:
+    this way the blocked vampire does not just stand there, but adds one more action in the turn, making it harder for
+    the prey to block everything.
+</p>
+<h2>Variants</h2>
+<p>
+    There's a lot of interesting choices for the Master module. {{ fear_of_mekhet }} is a common inclusion against
+    Inner Circle builds like {{ stanislava }} or {{ lutz_politics }}. {{ kaymakli_nightmares }} is also seen, just
+    because its dramatic effect can just win the game outright if it's drawn in the 10 first cards. {{ joseph_pander }}
+    is also a common inclusion against rushes. On the votes side, {{ disputed_territory }} and {{ rumors_of_gehenna }}
+    can find a place, as well as {{ year_of_fortune }}. And infally, a couple of {{ embrace }} often find a slot too.
+</p>
+<p>
+    One of the most egregious variant uses <strong>Gehenna</strong> events on top of it all, to cripple the other
+    decks relying on Disciplines while staying unaffected. It usually goes for {{ the_slow_withering }},
+    {{ veil_of_darkness }} and {{ the_rising }}, like in {{ dave_riordan_s_deck }}
+    from the 2021 Online World Championship
+</p>
+<p>
+    Another way to approach the stealth and vote lock issues is to include some higher capacity titled vampires,
+    like <strong>Inner Circle</strong> with {{ OBF }}, so they can provide additional votes but also stealth,
+    and even share a bit of it with {{ veil_the_legions }} or {{ cloak_the_gathering }}.
+    A good example is {{ tomàs_lópez_jiménez_deck }} from the 2020 Spain Grand Prix
+</p>
+{% endtrans %}
+{% endblock %}

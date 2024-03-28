@@ -1,0 +1,67 @@
+{% extends "archetypes/_layout.html" %}
+{% import "archetypes/_layout-erratum.html" as erratum with context %}
+{% import "archetypes/archive/shadow-court-satyrs.json" as deck_json %}
+{% import "archetypes/archive/_layout.html" as layout with context %}
+
+{% block meta %}
+<meta property="decklist" content='{{ deck_json | tojson }}' />
+{% endblock %}
+
+{% block archetype_name %}
+<h1>{{ gangrel_antitribu }} Shadow Court Satyrs</h1>
+{% endblock %}
+
+{% block archetype %}
+{% trans trimmed
+archon_investigation=card("Archon Investigation"),
+conditioning=card("Conditioning"),
+deflection=card("Deflection"),
+earth_meld=card("Earth Meld"),
+golconda=card("Golconda: Inner Peace", "Golconda"),
+govern_the_unaligned=card("Govern The Unaligned"),
+sebastien_goulet=card("Sébastien Goulet"),
+sebastien_goulet_adv=card("Sébastien Goulet (ADV)"),
+shadow_court_satyr=card("Shadow Court Satyr"),
+spying_mission=card("Spying Mission"),
+desso_alastor_s_deck=link("/deck-search", _("Desso Alastor's deck"), id="2015cspb")
+%}
+<h2>Highlights</h2>
+<p>
+    This is a Gangrel Antitribu {{ gangrel_antitribu }} <em>allies swarm</em> deck starring {{ sebastien_goulet }},
+    who recruits a band of {{ shadow_court_satyr }}.
+</p>
+<p>
+    The core idea is to get {{ shadow_court_satyr }} with {{ earth_meld }}.
+    This keeps them safe from combat: they can bleed every turn and combat ends if blocked.
+    They can also be kept for defense and block quite safely.
+</p>
+<p>
+    Obfuscate {{ OBF }} provides excellent stealth, so the recruitements can be carried on without opposition.
+</p>
+<p>
+    A few {{ govern_the_unaligned }} can be used at superior Dominate {{ DOM }} to brin a sidekick in play for cheap,
+    and {{ deflection }} is used in good numbers for bleed defense. Later, {{ govern_the_unaligned }}
+    can be used to bleed, coupled with {{ conditioning }}, although {{ sebastien_goulet }} shouldn't be risked
+    on too high a bleed in case of an {{ archon_investigation }}.
+</p>
+<h2>Tips & Tricks</h2>
+<p>
+    Both {{ sebastien_goulet }} and {{ sebastien_goulet_adv }} are good stars here, and he even benefits from being
+    merged, as he becomes a counter to other allies swarms, so both are played in even numbers.
+</p>
+<p>
+    {{ spying_mission }} can be used in case of bounce, to avoid bleeding the grand-prey and advantqging the prey.
+</p>
+<p>
+    {{ shadow_court_satyr }} is an expensive ally, so pool management is important: once {{ sebastien_goulet }} is out,
+    the pool should be kepy to pay for the allies, and bringing a sidekick should rely on a {{ govern_the_unaligned }}
+    to avoid spending too much too fast. Later in the game, once {{ sebastien_goulet }} is exhausted, {{ golconda }}
+    can be used to sacrifice him and recoup the pool.
+</p>
+<h2>Variants</h2>
+<p>
+    Even though {{ sebastien_goulet }} is a great star, it is possible to build a {{ shadow_court_satyr }} deck
+    without him, see for example {{ desso_alastor_s_deck }} from 2015.
+</p>
+{% endtrans %}
+{% endblock %}

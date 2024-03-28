@@ -1,0 +1,105 @@
+{% extends "archetypes/_layout.html" %}
+{% import "archetypes/_layout-erratum.html" as erratum with context %}
+{% import "archetypes/archive/hunters.json" as deck_json %}
+
+{% block meta %}
+<meta property="decklist" content='{{ deck_json | tojson }}' />
+{% endblock %}
+
+{% block archetype_name %}
+<h1>Hunters</h1>
+{% endblock %}
+
+{% block archetype %}
+{% trans trimmed
+jennie=card('Jennie Cassie247 Orne', "Jennie"),
+angel_of_berlin=card("Angel of Berlin"),
+nra_pac=card("NRA PAC"),
+vigilance=card("Vigilance"),
+champion=card("Champion"),
+discern=card("Discern"),
+talbot_s_chainsaw=card("Talbot's Chainsaw"),
+rejuvenate=card("Rejuvenate"),
+travis=card('Travis Traveler72 Miller', "Travis"),
+the_church_of_vindicated_faith=card("The Church of Vindicated Faith"),
+inspire=card("Inspire"),
+react_with_conviction=card("React with Conviction"),
+entrancement=card("Entrancement"),
+smiling_jack_the_anarch=card("Smiling Jack, The Anarch"),
+tension_in_the_ranks=card("Tension in the Ranks"),
+dragonbound=card("Dragonbound"),
+strike_with_conviction=card("Strike with Conviction"),
+target_vitals=card("Target Vitals"),
+sniper_rifle=card("Sniper Rifle"),
+concealed_weapon=card("Concealed Weapon"),
+flash_grenade=card("Flash Grenade"),
+specific_rules=external("https://blackchantry.com/Vampire%20The%20Eternal%20Struggle%20Imbued%20rules.pdf",
+_("specific rules")),
+a_b=link("/strategy/fundamentals", _("A&B"), _anchor="AB"),
+cory_busch_kendall_s_deck=link("/deck-search", _("Cory Busch Kendall's deck"), id="2010reunionkamutco"),
+john_newquist_in_a_2008_nac_qualifier=link("/deck-search", _("John Newquist in a 2008 NAC Qualifier"),
+id="2k8originsnaq"),
+sergio_gracia_s_deck=link("/deck-search", _("Sergio Gracia's deck"), id="2010famousims")
+%}
+<h2>Highlights</h2>
+<p>
+    This is a <em>toolbox</em> Imbued deck. They are mortal allies and follow {{ specific_rules }}.
+    They use Conviction {{ CONVICTION }} and Power {{ POWER }} cards.
+</p>
+<p>
+    The idea of the deck is to get some Imbued out, {{ jennie }} first if she's drawn,
+    then equip them with weapons and armors to be able to hunt and take down vampires around the table.
+    {{ angel_of_berlin }} and {{ nra_pac }} are used to help equip them quickly.
+</p>
+<p>
+    As the game progresses, Powers {{ POWER }} make the Imbued more powerful.
+    {{ vigilance }} is the most important, as it enhances {{ a_b }} a lot.
+    {{ champion }} and {{ discern }} help bump up the defence.
+</p>
+<p>
+    {{ talbot_s_chainsaw }} is the key here, as its rush ability combined with its damage is very potent,
+    and its disadvantage can be mitigated by {{ rejuvenate }} and {{ jennie }}'s ability.
+</p>
+<p>
+    Finally, {{ travis }}, {{ the_church_of_vindicated_faith }} and
+    {{ inspire }} are used to bloat and accelerate the crypt.
+</p>
+<h2>Tips & Tricks</h2>
+<p>
+    {{ react_with_conviction }} is always the first Conviction {{ CONVICTION }}
+    an Imbued should fetch when he comes into play, as it protects them against
+    anti-ally actions like {{ entrancement }}.
+</p>
+<p>
+    {{ smiling_jack_the_anarch }}, {{ tension_in_the_ranks }} and {{ dragonbound }}
+    can improve pool damage a bit, but most damage come from bleed using
+    {{ strike_with_conviction }}. If the bleed action of
+    {{ strike_with_conviction }} is blocked, the Conviction {{ CONVICTION }} is not lost,
+    as its burn effect is the <strong>cost</strong> of the action,
+    only payed if it is successul.
+    It can then be used as a strike during the follow-up combat.
+</p>
+<h2>Variants</h2>
+<p>
+    Decks in this archetype use different weapons and combat modules: the use of
+    {{ talbot_s_chainsaw }} is rare. {{ target_vitals }} is a common inclusion,
+    and {{ sniper_rifle }} is a more common weapon, as in {{ cory_busch_kendall_s_deck }} from 2010.
+</p>
+<p>
+    The <strong>Paralyze</strong> variant uses the {{ concealed_weapon }} & {{ flash_grenade }}
+    combination and has been played by {{ john_newquist_in_a_2008_nac_qualifier }}.
+</p>
+<p>
+    The <strong>Apocalypse</strong> variant include more Gehenna events
+    to cripple vampires around the table, as Imbued stay immuned to their effects.
+    {{ sergio_gracia_s_deck }} from 2010 is a good example.
+</p>
+{% endtrans %}
+{% endblock %}
+
+{% block errata %}
+<div class="insert warn">
+    <h3>Errata</h3>
+    {{ erratum.pentextmsubversion( 'remove' ) }}
+</div>
+{% endblock %}

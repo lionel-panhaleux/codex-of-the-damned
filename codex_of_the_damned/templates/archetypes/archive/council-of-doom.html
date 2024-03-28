@@ -1,0 +1,92 @@
+{% extends "archetypes/_layout.html" %}
+{% import "archetypes/_layout-erratum.html" as erratum with context %}
+{% import "archetypes/archive/council-of-doom.json" as deck_json %}
+
+{% block meta %}
+<meta property="decklist" content='{{ deck_json | tojson }}' />
+{% endblock %}
+
+{% block archetype_name %}
+<h1>Council of Doom</h1>
+{% endblock %}
+
+{% block archetype %}
+{% trans trimmed
+anthelios_the_red_star=card("Anthelios, The Red Star"),
+arika=card("Arika"),
+ashur_tablets=card("Ashur Tablets"),
+carlton_van_wyk=card("Carlton Van Wyk"),
+conditioning=card("Conditioning"),
+deflection=card("Deflection"),
+elder_impersonation=card("Elder Impersonation"),
+etrius=card("Etrius"),
+huitzilopochtli=card("Huitzilopochtli"),
+information_highway=card("Information Highway"),
+into_thin_air=card("Into Thin Air"),
+leandro=card("Leandro"),
+liliths_blessing=card("Lilith's Blessing"),
+liquidation=card("Liquidation"),
+majesty=card("Majesty"),
+obedience=card("Obedience"),
+rumors_of_gehenna=card("Rumors of Gehenna"),
+temptation_of_greater_power=card("Temptation of Greater Power"),
+the_parthenon=card("The Parthenon"),
+villein=card("Villein"),
+zillahs_valley=card("Zillah's Valley"),
+girls_will_find_inner_circle=link("/archetypes/girls-will-find-inner-circle"),
+ruben_feldmans_deck=link("/deck-search", _("Ruben Feldman's deck"), id="2k9lvmq")
+%}
+<h2>Highlights</h2>
+<p>
+    This is a <em>stealth vote & bleed</em> deck using
+    <strong>M</strong>ulti <strong>M</strong>aster <strong>P</strong>hase <strong>A</strong>ctions (MMPA).
+    It uses {{ huitzilopochtli }}, {{ the_parthenon }} and {{ rumors_of_gehenna }}
+    to get more Master actions, then {{ villein }} and {{ information_highway }}
+    to get big capacity vampires into play fast and cheap.
+</p>
+<p>
+    {{ ashur_tablets }} and {{ liquidation }} are used to bloat and get some recursion
+    to adapt the deck content to the table context for maximum efficiency.
+</p>
+<p>
+    The deck delivers pool damage from stealthed naked bleeds from the <em>Inner Circle</em>
+    {{ arika }} and {{ leandro }}, and also damage-dealing votes.
+</p>
+<p>
+    {{ majesty }} is used for combat protection, {{ deflection }} to bounce bleeds and
+    {{ OBF }} for high stealth using {{ into_thin_air }} and {{ elder_impersonation }}.
+</p>
+<h2>Tips & Tricks</h2>
+<p>
+    If drawn, getting {{ huitzilopochtli }} into play first for more
+    Master actions is best.
+</p>
+<p>
+    This is an old archetype, and this version uses many cards since banned:
+    {{ anthelios_the_red_star }}, {{ temptation_of_greater_power }} and {{ liliths_blessing }}.
+    No doubt removing them makes the deck less efficient, and modifications would have to be made.
+</p>
+<h2>Variants</h2>
+<p>
+    No variant of this deck exist <em>per se</em>, although one could argue
+    that the {{ girls_will_find_inner_circle }} archetype
+    is a more or less direct heir to this archetype.
+</p>
+<p>
+    Many minor variations on the crypt or minion cards exist.
+    Including {{ etrius }}, {{ obedience }} for combat defence, {{ zillahs_valley }}
+    for crypt acceleration, some {{ dom }} bleed enhancers like {{ conditioning }} or
+    {{ carlton_van_wyk }} for defence, are quite usual.
+    {{ ruben_feldmans_deck }} from 2009 is a good example.
+</p>
+{% endtrans %}
+{% endblock %}
+
+{% block errata %}
+<div class="insert warn">
+    <h3>Errata</h3>
+    {{ erratum.pentextmsubversion( 'remove' ) }}
+    {{ erratum.villein() }}
+    {{ erratum.ashur('undecided') }}
+</div>
+{% endblock %}

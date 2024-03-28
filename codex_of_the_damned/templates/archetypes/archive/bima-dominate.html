@@ -1,0 +1,74 @@
+{% extends "archetypes/_layout.html" %}
+{% import "archetypes/_layout-erratum.html" as erratum with context %}
+{% import "archetypes/archive/bima-dominate.json" as deck_json %}
+
+{% block meta %}
+<meta property="decklist" content='{{ deck_json | tojson }}' />
+{% endblock %}
+
+{% block archetype_name %}
+<h1>{{ ministry }} Bima Dominate</h1>
+{% endblock %}
+
+{% block archetype %}
+{% trans trimmed
+bima=card("Bima"),
+cloak_the_gathering=card("Cloak the Gathering"),
+conditioning=card("Conditioning"),
+deflection=card("Deflection"),
+delaying_tactics=card("Delaying Tactics"),
+dominate=card("Dominate"),
+govern_the_unaligned=card("Govern the Unaligned"),
+halim_bey=card("Halim Bey"),
+perfectionist=card("Perfectionist"),
+veil_the_legions=card("Veil the Legions"),
+waters_of_duat=card("Waters of Duat"),
+ivor_blockleys_deck=link("/deck-search", _("Ivor Blockley's deck"), id="2k8sydneyqual")
+%}
+<h2>Highlights</h2>
+<p>
+    This is an <em>allies bleed</em> deck using {{ bima }} with {{ dominate }}
+    to play a profusion of {{ govern_the_unaligned }} and {{ deflection }}.
+</p>
+<p>
+    {{ bima }} gets no stealth but the sheer number of actions
+    — and the fact that he has a strenght of 2 —
+    makes it quickly difficult for the prey to block everything.
+<p>
+    The deck has serious stealth, with most vampires having {{ obf }}, and even plays
+    {{ cloak_the_gathering }} and {{ veil_the_legions }} that can beneficiate the
+    {{ bima }}.
+</p>
+<p>
+    Most vampires of the crypt also have {{ DOM }} and build a nice chain for
+    {{ govern_the_unaligned }}: {{ halim_bey }} can help get everyone out
+    fast and cheap using the superior version.
+</p>
+<h2>Tips & Tricks</h2>
+<p>
+    {{ waters_of_duat }} make for additional minions with {{ dom }}
+    since the {{ dominate }} card is available in such numbers.
+</p>
+<p>
+    {{ conditioning }} is used for the lunge and can even be used by {{ bima }}
+    if they didn't use {{ govern_the_unaligned }} beforehand.
+<p>
+    The high number of {{ deflection }} and {{ delaying_tactics }} makes for a sturdy defence.
+    Keeping a minion or two unlocked to play is critical.
+</p>
+<h2>Variants</h2>
+<p>
+    The archetype is seldom played and not many variations exist.
+    The number of {{ bima }} in respects to {{ waters_of_duat }} can vary and
+    {{ perfectionist }} can be included to help the Followers of Set get some blood back.
+    {{ ivor_blockleys_deck }} from 2008 is another example.
+</p>
+{% endtrans %}
+{% endblock %}
+
+{% block errata %}
+<div class="insert warn">
+    <h3>Errata</h3>
+    {{ erratum.pentextmsubversion( 'undecided' ) }}
+</div>
+{% endblock %}

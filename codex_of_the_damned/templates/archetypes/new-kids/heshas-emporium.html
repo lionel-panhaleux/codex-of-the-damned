@@ -1,0 +1,107 @@
+{% extends "archetypes/_layout.html" %}
+{% import "archetypes/_layout-erratum.html" as erratum with context %}
+{% import "archetypes/new-kids/heshas-emporium.json" as deck_json %}
+
+{% block meta %}
+<meta property="decklist" content='{{ deck_json | tojson }}' />
+{% endblock %}
+
+{% block archetype_name %}
+<h1>{{ ministry }} Hesha's Emporium</h1>
+{% endblock %}
+
+{% block archetype %}
+{% trans trimmed
+angel_chavarria=card("Angel Chavarria"),
+approximation_of_loyalty=card("Approximation of Loyalty"),
+archon_investigation=card("Archon Investigation"),
+body_bag=card("Body Bag"),
+flaming_candle=card("Flaming Candle"),
+concoction_of_vitality=card("Concoction of Vitality"),
+horrific_countenance=card("Horrific Countenance"),
+force_of_personality=card("Force of Personality"),
+hag_s_wrinkles=card("Hag's Wrinkles"),
+heidelberg=card("Heidelberg Castle, Germany", "Heidelberg"),
+hesha_ruhadze=card("Hesha Ruhadze"),
+hide_the_mind=card("Hide The Mind"),
+i_am_legion=card("I Am Legion"),
+kaymakli_fragment=card("Kaymakli Fragment"),
+learjet=card("Learjet"),
+monocle_of_clarity=card("Monocle of Clarity"),
+nod=card("Nod"),
+perfect_clarity=card("Perfect Clarity"),
+revelations=card("Revelations"),
+ritual_goblet=card("Ritual Goblet"),
+the_red_question=card("The Red Question"),
+the_sargon_fragment=card("The Sargon Fragment"),
+the_textbook_damnation=card("The Textbook Damnation"),
+veneficorum_artum_sanguis=card("Veneficorum Artum Sanguis"),
+vial_of_elder_vitae=card("Vial of Elder Vitae")
+%}
+<h2>Highlights</h2>
+<p>
+    This is a Ministry {{ ministry }} <em>combo powerbleed</em> deck using {{ hesha_ruhadze }} as star.
+    The goal is to influence {{ angel_chavarria }},
+    fetch all the equipments possible using {{ hag_s_wrinkles }} to stealth and unlock,
+    the influence {{ hesha_ruhadze }}, give him the equipments with {{ nod }} or {{ heidelberg }},
+    so he can bleed for something like 20.
+</p>
+<p>
+    This deck is a masterpiece of deckbuilding finesse, and has attracted a lot of attention when Sérgio Louçã Martins
+    played it in the 2024 Atlantic Cup finals. He was first seed there, with a brutal 3GW13 score.
+    Yes, this deck sweeps tables.
+</p>
+<p>
+    At first sight, this thing is a crazy idea. What stops the prey to just bounce this awful bleed and simply win the
+    game thanks to the help of their predator? Well, the deck has a few tricks:
+    First it can check for bounces or an {{ archon_investigation }} with {{ monocle_of_clarity }}.
+    Second, it can use {{ vial_of_elder_vitae }}, {{ the_textbook_damnation }}, {{ veneficorum_artum_sanguis }} and
+    {{ ritual_goblet }} to have access to {{ dai }} and {{ tha }},
+    so he can play {{ perfect_clarity }} and {{ i_am_legion }}. Of course, he can also use {{ hide_the_mind }}.
+    As a last resort, {{ approximation_of_loyalty }} and {{ revelations }},
+    that {{ angel_chavarria }} can play with a {{ vial_of_elder_vitae }}
+</p>
+<p>
+    So, maybe you can just block him, right? But {{ hesha_ruhadze }} has a whole arsenal of block denial: with
+    {{ flaming_candle }}, {{ concoction_of_vitality }} and {{ horrific_countenance }}, that's three bleeds
+    that vampires cannot block, and that's enough to win the game.
+</p>
+<p>
+    One would think you can just rush {{ hesha_ruhadze }} and be done with him then.
+    But it has {{ force_of_personality }} for a combat ends and, more importantly,
+    a {{ body_bag }} to be able to simply fail any rush attempt.
+    And using {{ the_sargon_fragment }}, {{ angel_chavarria }} can fetch that {{ body_bag }} back every turn.
+</p>
+<p>
+    Does it seem unlikely the deck gets all the cards it needs at the right time to be able to land his bleeds?
+    Well, with {{ learjet }} and {{ angel_chavarria }} performing 20 or more actions on turn 2, no it's not.
+    The deck can basically get all the equipments out in a turn or two,
+    and construct the perfect lunge hand while doing it.
+</p>
+<p>
+    Isn't it slow to set up? In fact, no, it's very fast. That deck can sweep tables in 20 minutes.
+    {{ angel_chavarria }} gets a {{ learjet }} early during his {{ hag_s_wrinkles }} chain on turn 2,
+    allowing him to plow through the deck and fetch a {{ kaymakli_fragment }} and {{ the_textbook_damnation }}:
+    that's why they're both doubled in the deck. Once he has those, he can use {{ kaymakli_fragment }} to help bring
+    {{ hesha_ruhadze }} immediately at the end of the turn. And the next turn should start with either a {{ nod }}
+    or {{ heidelberg }} and {{ hesha_ruhadze }} can bleed for 20 or more on turn 3.
+</p>
+<h2>Considerations</h2>
+<p>
+    This is a piece of art but, of course, as well-designed as it is, it's still a pretty fragile combo deck.
+    First, it can simply hit a bounce it cannot cancel on a very unlike top-draw from a Baron.
+    That's what happened during the Atlantic Cup finals.
+</p>
+<p>
+    Second, even if {{ body_bag }} offers a solid protection in the first turns
+    (even {{ angel_chavarria }} can benefit from it on turn two provided he hits {{ the_red_question }}),
+    it only stops one rush: two successive rushes can get rid of him.
+</p>
+<p>
+    So, in the end, this deck may be too focused to enter the first tier, but can it win a tournament?
+    There's no doubt. And make sure to credit Sérgio for this beautiful build once you do.
+    The problem, of course, could be to find enough {{ hag_s_wrinkles }} to build it, given it's a not-yet-reprinted
+    rare, that might prove difficult.
+</p>
+{% endtrans %}
+{% endblock %}

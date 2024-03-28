@@ -1,0 +1,124 @@
+{% extends "archetypes/_layout.html" %}
+{% import "archetypes/_layout-erratum.html" as erratum with context %}
+{% import "archetypes/archive/mmpa-politics.json" as deck_json %}
+
+{% block meta %}
+<meta property="decklist" content='{{ deck_json | tojson }}' />
+{% endblock %}
+
+{% block archetype_name %}
+<h1>{{ toreador }} MMPA Politics</h1>
+{% endblock %}
+
+{% block archetype %}
+{% trans trimmed
+anarchist_uprising=card("Anarchist Uprising"),
+ancilla_empowerment=card("Ancilla Empowerment"),
+anson=card("Anson"),
+archon_investigation=card("Archon Investigation"),
+ashur_tablets=card("Ashur Tablets"),
+banishment=card("Banishment"),
+deflection=card("Deflection"),
+entrancement=card("Entrancement"),
+giants_blood=card("Giant's Blood"),
+information_highway=card("Information Highway"),
+kephamos=card("Kephamos, High Priest of Marrakech", "Kephamos"),
+liquidation=card("Liquidation"),
+majesty=card("Majesty"),
+not_to_be=card("Not To Be"),
+obedience=card("Obedience"),
+parity_shift=card("Parity Shift"),
+parthenon=card("The Parthenon", "Parthenon"),
+perfect_paragon=card("Perfect Paragon"),
+redirection=card("Redirection"),
+reins_of_power=card("Reins Of Power"),
+sarrasine=card("Sarrasine"),
+scourge_of_the_enochians=card("Scourge of the Enochians"),
+spying_mission=card("Spying Mission"),
+staredown=card("Staredown"),
+the_coven=card("The Coven"),
+villein=card("Villein"),
+voter_captivation=card("Voter Captivation"),
+emerald_legion=link("/archetypes/emerald-legion"),
+girls_will_find_inner_circle=link("/archetypes/girls-will-find-inner-circle"),
+council_of_doom=link("/archetypes/council-of-doom"),
+meta=link("/strategy/articles/advanced/the-game-of-the-game", _("meta")),
+sce=link("/strategy/combat", _("S:CE"), _anchor="defence")
+%}
+<h2>Highlights</h2>
+<p>
+    This is a <em>vote & bleed</em> deck relying on
+    <strong>M</strong>ulti <strong>M</strong>aster <strong>P</strong>hase <strong>A</strong>ctions (MMPA)
+    for high bloat and recursion.
+</p>
+<p>
+    The idea is to get Anson out first to allow for more master phase actions, then bring other big capacity vampires
+    (Inner Circle vampires first) to bleed your prey until the oust. The few available votes can help with the oust,
+    especially {{ banishment }} and {{ anarchist_uprising }}.
+</p>
+<p>
+    The master module is, of course, key here. With more than half of the deck being Master cards, getting {{ anson }}
+    and a {{ parthenon }} early is essential. The classic combination of {{ liquidation }} and {{ ashur_tablets }}
+    ensure high recursion and a bit of bloat. If drawn, {{ information_highway }} provides a welcome acceleration
+    for the crypt, but whether it hits the table or not, the high quantity of {{ villein }} is used to get 5 pool back
+    for any vampire that gets influenced.
+</p>
+<p>
+    The vampires votes should provide decent defense against political decks, and the {{ dom }} bounces {{ deflection }}
+    and {{ redirection }} provide solid bleed defense. On the combat side, {{ pre }} is used for the usual {{ sce }}
+    with {{ majesty }} and {{ staredown }}, but {{ obedience }} is also an option.
+</p>
+<h2>Tips & Tricks</h2>
+<p>
+    The deck can struggle against swarms, hence the inclusion of {{ scourge_of_the_enochians }} and
+    {{ anarchist_uprising }}. Moreover, the three copies of {{ entrancement }} that can be called back again and
+    again with {{ ashur_tablets }}, make for a very strong module against allies swarms like {{ emerald_legion }}.
+</p>
+<p>
+    What to bring back with the {{ ashur_tablets }} is the key decision that can make or break a game.
+    High table awareness is required to adapt the deck proportions on stealth, bounces and combat ends to match the
+    table and ensure optimal card flow in the second half of the game.
+</p>
+<p>
+    {{ voter_captivation }} can, in the right context, resplenish one of the vampires after a {{ villein }} and, even,
+    allow for a second one to be played for more bloat. Keeping a {{ perfect_paragon }} in hand to push the vote there
+    can be worth it if its stealth is not needed.
+</p>
+<p>
+    {{ spying_mission }} can be used to avoid damaging the grand-prey by accident if the prey bounces the bleed rather
+    than trying to match the stealth.
+</p>
+<h2>Variants</h2>
+<p>
+    There is no real variant for this deck but, of course, the deck itself is some kind of variant of the
+    {{ girls_will_find_inner_circle }} but is also reminiscent of the old {{ council_of_doom }}.
+</p>
+<p>
+    Surely, some adaptations can be done to adapt to the {{ meta }}. The inclusion of {{ parity_shift }} is
+    questionable,
+    since the deck has so many ways to recoup pool that it is tricky to find the window to play it. One would think
+    {{ reins_of_power }} would be considered here, instead. Other strong Master cards are curiously absent, like
+    {{ the_coven }} and {{ giants_blood }}.
+</p>
+<p>
+    Corey himself let us a useful comment with the decklist:
+</p>
+<p>
+    I made some adjustments for Origins that I probably shouldn't have, namely that I took out {{ archon_investigation
+    }}
+    in favor of a {{ not_to_be }}.
+    I go back and forth on {{ voter_captivation }} at 1-2. {{ parity_shift }} may come out as I discard it most often,
+    in favor of an {{ ancilla_empowerment }}.
+    I'm not sold on {{ sarrasine }}/{{ kephamos }} other than it's nice to have other minions to bring up.
+    Other than that the deck has proven to be pretty tight.
+</p>
+{% endtrans %}
+{% endblock %}
+
+{% block errata %}
+<div class="insert warn">
+    <h3>Errata</h3>
+    {{ erratum.pentextmsubversion( 'keep' ) }}
+    {{ erratum.ashur() }}
+</div>
+{% endblock %}

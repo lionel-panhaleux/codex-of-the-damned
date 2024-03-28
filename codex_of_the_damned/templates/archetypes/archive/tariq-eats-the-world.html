@@ -1,0 +1,77 @@
+{% extends "archetypes/_layout.html" %}
+{% import "archetypes/_layout-erratum.html" as erratum with context %}
+{% import "archetypes/archive/tariq-eats-the-world.json" as deck_json %}
+{% import "archetypes/archive/_layout.html" as layout with context %}
+
+{% block meta %}
+<meta property="decklist" content='{{ deck_json | tojson }}' />
+{% endblock %}
+
+{% block archetype_name %}
+<h1>{{ banu_haqim }} Tariq Eats the World</h1>
+{% endblock %}
+
+{% block archetype %}
+{% trans trimmed
+amaranth=card("Amaranth"),
+celerity=card("Celerity"),
+disguised_weapon=card("Disguised Weapon"),
+diversion=card("Diversion"),
+draught_of_the_soul=card("Draught of the Soul"),
+fatima=card("Fatima al-Faqadi", "Fatima"),
+guardian_vigil=card("Guardian Vigil"),
+ivory_bow=card("Ivory Bow"),
+psyche=card("Psyche!"),
+rowan_ring=card("Rowan Ring"),
+tariq=card("Tariq, The Silent", "Tariq"),
+tariq_the_silent=card("Tariq, The Silent"),
+taste_of_death=card("Taste of Death"),
+tegyrius=card("Tegyrius, Vizier", "Tegyrius"),
+meta=link("/strategy/articles/advanced/the-game-of-the-game", _("meta")),
+łukasz_ho_thanh_s_deck=link("/deck-search", _("Łukasz Ho Thanh's deck"), id="2019gpsp"),
+erik_torstensson_s_deck=link("/deck-search", _("Erik Torstensson's deck"), id="2012moset"),
+marcin_watras_s_deck=link("/deck-search", _("Marcin Watras's deck"), id="2k4ttpoland")
+%}
+<h2>Highlights</h2>
+<p>
+    This is a <em>wall & rush</em> deck starring {{ tariq_the_silent }}.
+    His rush ability coupled with superior Auspex {{ AUS }} makes him a very efficient combat machine.
+    On top of it, his protection against blood hunt let him play {{ amaranth }} without fear,
+    so he can destroy vampires all around the table.
+</p>
+<p>
+    Using {{ disguised_weapon }} to fetch an {{ ivory_bow }} or a {{ rowan_ring }} is usually
+    how {{ tariq }} becomes so dreadful. Then his great didscipline help him fight and block with efficiency.
+</p>
+<p>
+    {{ draught_of_the_soul }} make him even stronger as soon as he manages to dispatch a vampire or two.
+</p>
+<p>
+    His sidekicks here field the same core disciplines he does, {{AUS}}{{cel}}{{obf}},
+    to allow to build a very good wall indeed
+</p>
+<h2>Tips & Tricks</h2>
+<p>
+    Getting a {{ celerity }} on {{ tariq }} makes the combat module shine even more here,
+    allowing for {{ psyche }} to be used to cancel combat ends, but it's not an absolute urgency.
+</p>
+
+<h2>Variants</h2>
+<p>
+    There are great variations in this deck, since the combat module's efficiency greatly depends on the {{ meta }}.
+</p>
+<p>
+    The <strong>Anarch</strong> variant allows him to use both {{ diversion }} and {{ guardian_vigil }},
+    two excellent cards, like in {{ łukasz_ho_thanh_s_deck }}.
+</p>
+<p>
+    Dropping Celerity {{ cel }} altogether to rely instead on a bit of Fortitude {{ FOR }} is also possible,
+    like in {{ erik_torstensson_s_deck }}.
+</p>
+<p>
+    A <strong>Tegyrius</strong> variant is evne more of a wall, using {{ tegyrius }} as a star
+    and {{ fatima }} as another sidekick, with less {{ amaranth }} but more aggravated damage with
+    {{ taste_of_death }}, as in {{ marcin_watras_s_deck }}.
+</p>
+{% endtrans %}
+{% endblock %}

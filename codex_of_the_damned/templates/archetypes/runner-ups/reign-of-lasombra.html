@@ -1,0 +1,96 @@
+{% extends "archetypes/_layout.html" %}
+{% import "archetypes/_layout-erratum.html" as erratum with context %}
+{% import "archetypes/runner-ups/reign-of-lasombra.json" as deck_json %}
+
+{% block meta %}
+<meta property="decklist" content='{{ deck_json | tojson }}' />
+{% endblock %}
+
+{% block archetype_name %}
+<h1>{{ lasombra }} Reign of Lasombra</h1>
+{% endblock %}
+
+{% block archetype %}
+{% trans trimmed
+ambrosio=card("Ambrosio Luis Monçada, Plenipotentiary", "Ambrosio"),
+archon_investigation=card("Archon Investigation"),
+banishment=card("Banishment"),
+bruce_de_guy=card("Bruce De Guy"),
+deflection=card("Deflection"),
+dreams_of_the_sphinx=card("Dreams of the Sphinx"),
+enkil_cog=card("Enkil Cog"),
+eternal_vigilance=card("Eternal Vigilance"),
+freak_drive=card("Freak Drive"),
+govern_the_unaligned=card("Govern the Unaligned"),
+montano=card("Montano"),
+obedience=card("Obedience"),
+under_siege=card("Under Siege"),
+villein=card("Villein"),
+voter_captivation=card("Voter Captivation"),
+brujah_resistance=link("/archetypes/brujah-resistance"),
+platinum_revelation=link("/archetypes/platinum-revelation"),
+haqim_royalty=link("/archetypes/haqim-royalty"),
+malk_22=link("/archetypes/malk-22"),
+stanislava=link("/archetypes/stanislava"),
+anniversary=external(
+"https://www.blackchantry.com/products/legacy/preconstructed-decks/product-25th-anniversary/",
+_("25th Anniversary")
+),
+decklist_from_martin_weinmeyer=link("/deck-search", _("decklist from Martin Weinmeyer"), id="10508"),
+gabriel_carnino_s_deck=link("/deck-search", _("Gabriel Carnino's deck"), id="2021frelea")
+%}
+<h2>Highlights</h2>
+<p>
+    This is a Lasombra {{ lasombra }} <em>bleed & vote</em> deck starring {{ bruce_de_guy }}.
+    The strategy is not so far off from what a {{ stanislava }} deck would be doing, hence the name.
+    <em>Martin Weinmeyer</em> has been leading the competitive ladder multiple years in a row
+    with his <em>Reign of Stanislava</em> deck, which was later printed as the {{ anniversary }} precon.
+    And this archetype was originally his idea.
+</p>
+<p>
+    The plan is to get {{ bruce_de_guy }} out, or the highest capacity vampire from the crypt
+    if he's not there, then use {{ govern_the_unaligned }} at superior Dominate {{ DOM }} to influence a couple
+    of helpers cheap and fast. Then, bleed and vote to oust preys successively, using Obtenebration {{ OBT }}
+    modifiers for stealth, and a few {{ freak_drive }} to get more actions.
+</p>
+<p>
+    On the defense side, a single unlocked high capacity vampire can hold the fort by blocking and spamming
+    {{ obedience }}, while also simply using {{ deflection }} against stealthed bleeds.
+    {{ under_siege }} and {{ eternal_vigilance }} can be used to get the necessary unlocks and intercept.
+</p>
+<p>
+    The Master module provides bloat with {{ villein }} and blood regeneration
+    for the vampires to feed the Dominate {{ DOM }} cost, as well as a bit of stealth. To help with the card flow,
+    and avoid jamming on stealth if the opponents decide not to block, {{ dreams_of_the_sphinx }}.
+</p>
+<h2>Tips & Tricks</h2>
+<p>
+    The deck is tailored to handle both high stealth bleed predators like {{ platinum_revelation }} or {{ malk_22 }},
+    but also bruise & bleed builds like {{ haqim_royalty }} or {{ brujah_resistance }}. It might struggle to get the
+    vote lock against dedicated vote decks, but in this case, it can simply fall back on bleeding.
+</p>
+<p>
+    {{ enkil_cog }} is, of course, desirable. Especially because one can use it to bleed
+    during the prey's turn, which will completely negate the possibility of an
+    {{ archon_investigation }}: since it's an out-of-turn Master, it cannot be played
+    by the prey during their own turn. But it can also be used to bleed at the end of one's predator turn,
+    to get the Edge and benefit from it immediately.
+</p>
+<p>
+    {{ banishment }} is a key lunge device for this deck. It can be used to remove a troublesome blocker or a potential
+    bouncer, as well as a key voter if there's a window for it. Drwan early, it can simply put off the prey or predator
+    tempo, depending on what seems most beneficial.
+</p>
+<h2>Variants</h2>
+<p>
+    This is an iteration over a prior {{ decklist_from_martin_weinmeyer }}, with only a few additions.
+</p>
+<p>
+    There is a <strong>Group 2-3</strong> variant with {{ montano }} and {{ ambrosio }},
+    see {{ gabriel_carnino_s_deck }} for an example.
+    Getting a bit of Presence {{ PRE }} to be able to play {{ voter_captivation }} is very endearing,
+    and {{ montano }}'s ability is very strong.
+    But {{ bruce_de_guy }}'s ability, to get the vote lock, is hard to match.
+</p>
+{% endtrans %}
+{% endblock %}

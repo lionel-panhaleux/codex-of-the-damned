@@ -1,0 +1,79 @@
+{% extends "archetypes/_layout.html" %}
+{% import "archetypes/_layout-erratum.html" as erratum with context %}
+{% import "archetypes/archive/tunnel-runners.json" as deck_json %}
+
+{% block meta %}
+<meta property="decklist" content='{{ deck_json | tojson }}' />
+{% endblock %}
+
+{% block archetype_name %}
+<h1>{{ akunanse }} Team Jacob</h1>
+{% endblock %}
+
+{% block archetype %}
+{% trans trimmed
+tunnel_runner=card("Tunnel Runner"),
+jacob_fermor=card("Jacob Fermor"),
+computer_hacking=card("Computer Hacking"),
+deflection=card("Deflection"),
+wider_view=card("Wider View"),
+anarch_convert=card("Anarch Convert"),
+powerbase_tshwane=card("Powerbase: Tshwane"),
+charisma=card("Charisma"),
+predator_s_transformation=card("Predator's Transformation"),
+aid_from_bats=card("Aid from Bats"),
+the_unmasking=card("The Unmasking"),
+predator_s_communion=card("Predator's Communion")
+%}
+<h2>Highlights</h2>
+<p>
+    This is a stealth & bleed deck using {{ tunnel_runner }}.
+    An Akunanse {{ akunanse }} is required to get the weremoles out, and
+    {{ jacob_fermor }} is expected to come out and boost
+    their bleed power. {{ computer_hacking }} is used to
+    help them bleed harder, too.
+</p>
+<p>
+    The deck relies on additional vampires with {{ dom }} for
+    {{ deflection }} bounces. As the deck does not block so much,
+    this is essential for defence.
+</p>
+<h2>Tips & Tricks</h2>
+<p>
+    As the deck is supposed to get an Akunanse, {{ jacob_fermor }}
+    then a low capacity vampire with {{ dom }}, it has a bit of each in the crypt
+    and plays a bunch of {{ wider_view }} and an
+    {{ anarch_convert }} to rotate through them if necessary.
+</p>
+<p>
+    {{ tunnel_runner }} are expensive allies,
+    getting {{ powerbase_tshwane }} and/or
+    {{ charisma }} out fast is a lot of help.
+
+</p>
+<p>
+    {{ predator_s_transformation }}
+    provides additional stealth to get the allies into play without being blocked.
+</p>
+<p>
+    {{ aid_from_bats }} is used as a defensive combat card.
+    {{ tunnel_runner }} can use it, but most Akunanse also can.
+    The allies have {{ the_unmasking }} and the Akunanse their
+    {{ predator_s_communion }} for some tactical intercept
+    — vampires that do not fight aggressively, as they have very few combat capabilities
+    themselves.
+</p>
+<h2>Variants</h2>
+<p>
+    There is no variant to this deck. The decklist given in example won the 2013 North
+    American Championship (NAC).
+</p>
+{% endtrans %}
+{% endblock %}
+
+{% block errata %}
+<div class="insert warn">
+    <h3>Errata</h3>
+    {{ erratum.pentextmsubversion( 'undecided' ) }}
+</div>
+{% endblock %}

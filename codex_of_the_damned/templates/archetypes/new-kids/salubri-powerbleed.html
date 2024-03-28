@@ -1,0 +1,67 @@
+{% extends "archetypes/_layout.html" %}
+{% import "archetypes/_layout-erratum.html" as erratum with context %}
+{% import "archetypes/new-kids/salubri-powerbleed.json" as deck_json %}
+
+{% block meta %}
+<meta property="decklist" content='{{ deck_json | tojson }}' />
+{% endblock %}
+
+{% block archetype_name %}
+<h1>{{ salubri }} Salubri Powerbleed</h1>
+{% endblock %}
+
+{% block archetype %}
+{% trans trimmed
+anarch_troublemaker=card("Anarch Troublemaker"),
+blind_spot=card("Blind Spot"),
+daring_the_dawn=card("Daring the Dawn"),
+feast_of_the_soul_s_secrets=card("Feast of the Soul's Secrets"),
+forced_confessional=card("Forced Confessional"),
+freak_drive=card("Freak Drive"),
+govern_the_unaligned=card("Govern the Unaligned"),
+kiss_of_ra=card("The Kiss of Ra", "Kiss of Ra"),
+mind_rape=card("Mind Rape"),
+misdirection=card("Misdirection"),
+pentex_subversion=card("Pentex™ Subversion"),
+scouting_mission=card("Scouting Mission"),
+seduction=card("Seduction"),
+unleashing_the_bestial_soul=card("Unleashing the Bestial Soul"),
+meta=link("/strategy/articles/advanced/the-game-of-the-game", _("meta")),
+gangrel_thing=link("/archetypes/gangrel-thing")
+%}
+<h2>Highlights</h2>
+<p>
+    This is a Salubri {{ salubri }} <em>powerbleed</em> deck using {{ feast_of_the_soul_s_secrets }}
+    and {{ govern_the_unaligned }} to bleed, combined with a collection of block denial tools.
+    First and foremost {{ seduction }} and {{ forced_confessional }}, but this is supported by additional Master cards:
+    {{ anarch_troublemaker }}, {{ misdirection }}, and {{ pentex_subversion }}.
+</p>
+<p>
+    Relying on the fact that Salubri {{ salubri }} have Fortitude {{ for }}, the deck uses a few {{ freak_drive }} to
+    allow the vampires to use both {{ govern_the_unaligned }} or {{ scouting_mission }} at superior, then
+    {{ feast_of_the_soul_s_secrets }} or another {{ dom }} bleed action. This helps bring vampires out pretty quickly.
+</p>
+<p>
+    The deck is all about constructing the right lunge, and it's brutal. After a couple of "light" bleeds of 3
+    with {{ feast_of_the_soul_s_secrets }}, and having brought at least 3 vampires out, it will seek to paralyze
+    the prey with {{ anarch_troublemaker }}, {{ misdirection }} or {{ pentex_subversion }}, leaving only one or two
+    potential blockers that can be denied with the modifiers, {{ seduction }} and {{ forced_confessional }}.
+    {{ unleashing_the_bestial_soul }} can even be used to make a wake & bounce strategy fail short of blood.
+</p>
+<p>
+    In the meantime, the deck just adds to the pressure with a lot of {{ dom }} and {{ AUS }} bounces.
+    Against combat, {{ for }} prevention all over helps resist most opponents.
+</p>
+<h2>Considerations</h2>
+<p>
+    The amount of combat defense required will completely depend on the expected {{ meta }}.
+    Other than that, the block denial package is impressive, as it should if it aims to be able to pass
+    a {{ gangrel_thing }}. It could also include {{ blind_spot }} or {{ daring_the_dawn }} maybe even a surprise
+    {{ kiss_of_ra }} or the incidental {{ mind_rape }} to be able to make the most of opportune situations.
+</p>
+<p>
+    It's nice to see the Salubri {{ salubri }} scoring a victory here, and it's an interesting feat
+    in the highly competitive Finnish meta. Let's see if this can be refined to make it to the top tier.
+</p>
+{% endtrans %}
+{% endblock %}

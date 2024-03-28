@@ -1,0 +1,70 @@
+{% extends "archetypes/_layout.html" %}
+{% import "archetypes/_layout-erratum.html" as erratum with context %}
+{% import "archetypes/archive/malk-94.json" as deck_json %}
+{% import "archetypes/archive/_layout.html" as layout with context %}
+
+{% block meta %}
+<meta property="decklist" content='{{ deck_json | tojson }}' />
+{% endblock %}
+
+{% block archetype_name %}
+<h1>{{ malkavian }} Malk' 94</h1>
+{% endblock %}
+
+{% block archetype %}
+{% trans trimmed
+archon_investigation=card("Archon Investigation"),
+deflection=card("Deflection"),
+govern_the_unaligned=card("Govern the Unaligned"),
+lucian=card("Lucian"),
+madness_network=card("Madness Network"),
+obedience=card("Obedience"),
+second_tradition_domain=card("Second Tradition: Domain"),
+spying_mission=card("Spying Mission"),
+sudden_reversal=card("Sudden Reversal"),
+villein=card("Villein"),
+wash=card("Wash"),
+meta=link("/strategy/articles/advanced/the-game-of-the-game", _("meta")),
+josé_luis_manuel_s_deck=link("/deck-search", _("José Luis Manuel's deck"), id="10127")
+%}
+<h2>Highlights</h2>
+<p>
+    This is a classic Malkavian {{ malkavian }} <em>stealth & bleed</em> deck using {{ DOM }}{{ OBF }}
+    to devastating effect.
+</p>
+<p>
+    The base plan is the most straightforward there is: influence the highest capacity vampire first,
+    use {{ govern_the_unaligned }} at superior Dominate {{ DOM }} a couple of times to influence some other vampires
+    fast and cheap, then bleed hard with {{ govern_the_unaligned }} at inferior Dominate {{ dom }}, using {{ OBF }}
+    for stealth, and additional {{ dom }} modifiers for even stronger bleeds.
+</p>
+<p>
+    Dominate {{ dom }} is also useful for defense, since it provides {{ deflection }} to avoid the predator's bleeds
+    and,
+    while adding to the deck's bleed pressure at the same time.
+</p>
+<p>
+    This deck also uses a {{ second_tradition_domain }} & {{ obedience }} defensive package, that is usually associated
+    to the {{ lucian }} version of the deck, but can still definitely work if the {{ meta }} is low cap enough.
+</p>
+<h2>Tips & Tricks</h2>
+<p>
+    {{ spying_mission }} helps negate bleeds that get bounced by the prey, to avoid helping them.
+</p>
+<p>
+    {{ madness_network }} is a nice addition, since it allows to either bleed during the prey's turn to avoid
+    an {{ archon_investigation }} (since it's an out-of-turn Master it cannot be played duing one's own turn),
+    or at the end of the predator's turn to get the edge and benefit from it immediately after.
+</p>
+<p>
+    Master cancellation, with {{ wash }} and {{ sudden_reversal }}, is especially useful to counter Master bloating
+    devices like {{ villein }}, but can also slow down some deck or avoid painful permanent intercept locations.
+</p>
+<h2>Variants</h2>
+<p>
+    Using higher capacity titled vampires, especially including {{ lucian }},
+    can help make {{ obedience }} more relevant,
+    and also allows for the inclusion of a few political actions, like in {{josé_luis_manuel_s_deck}}.
+</p>
+{% endtrans %}
+{% endblock %}

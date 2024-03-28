@@ -1,0 +1,100 @@
+{% extends "archetypes/_layout.html" %}
+{% import "archetypes/_layout-erratum.html" as erratum with context %}
+{% import "archetypes/archive/girls-will-find-inner-circle.json" as deck_json %}
+
+{% block meta %}
+<meta property="decklist" content='{{ deck_json | tojson }}' />
+{% endblock %}
+
+{% block archetype_name %}
+<h1>Girls Will Find Inner Circle</h1>
+{% endblock %}
+
+{% block archetype %}
+{% trans trimmed
+aid_from_bats=card("Aid From Bats"),
+aksinya_daclau=card("Aksinya Daclau"),
+anson=card("Anson"),
+ashur_tablets=card("Ashur Tablets"),
+carrion_crows=card("Carrion Crows"),
+cybele=card("Cybele"),
+deep_song=card("Deep Song"),
+deflections=card("Deflection", "Deflections"),
+entrancement=card("Entrancement"),
+guard_dogs=card("Guard Dogs"),
+liquidation=card("Liquidation"),
+lost_in_translation=card("Lost in Translation"),
+majesty=card("Majesty"),
+nana_buruku=card("Nana Buruku"),
+rat_s_warning=card("Rat's Warning"),
+villein=card("Villein"),
+zillah_s_valley=card("Zillah's Valley"),
+hugh_angseeing_s_deck=link("/deck-search", _("Hugh Angseeing's deck"), id="2011fcqco"),
+mmpa_politics=link("/archetypes/mmpa-politics", "MMPA Politics")
+%}
+<h2>Highlights</h2>
+<p>
+    This is a <em>stealth & bleed</em> deck centered around the use of multiple Master actions
+    and a lot of Master cards. This is commonly reffered to as a <strong>M</strong>ulti
+    <strong>M</strong>aster <strong>P</strong>hase <strong>A</strong>ctions construct.
+</p>
+<p>
+    The base idea is to get {{ cybele }} out, then {{ aksinya_daclau }}, using
+    {{ zillah_s_valley }} and {{ villein }} to get them out faster.
+</p>
+<p>
+    {{ cybele }} ability provides more master phase actions, while
+    {{ aksinya_daclau }}'s ability also uses the Master cards
+    for bleed defence, providing a permanent bounce.
+</p>
+<p>
+    The deck has an exceptional bloat capacity, between {{ villein }},
+    {{ liquidation }} and {{ ashur_tablets }}.
+</p>
+<p>
+    While the game progresses, big capacity vampires with a strong permanent bleed bonus
+    and {{ OBF }} are put into play. They proceed to destroying the prey's pool
+    using {{ OBF }} stealth and their inherent bleed bonus.
+</p>
+<p>
+    The high number of {{ ashur_tablets }} provide an exceptional recursion.
+    The more the game advances, the more the deck concentrates the cards it needs
+    the most, depending on the table context and the opponents decks.
+</p>
+<h2>Tips & Tricks</h2>
+<p>
+    {{ aksinya_daclau }} needs to be unlocked to use her ability.
+    That's why the deck uses {{ guard_dogs }} and
+    {{ rat_s_warning }}.
+</p>
+<p>
+    The crypt uses vampires with {{ OBF }} and {{ PRE }}, so they can use
+    {{ entrancement }} and {{ majesty }}.
+    However, most vampires do not have access to {{ dom }} or {{ AUS }} for additional bounces.
+    As the vampires have a very big capacity though, {{ lost_in_translation }}
+    provide additional bounces in case of a very aggressive predator.
+</p>
+<h2>Variants</h2>
+<p>
+    Many small variations exists, depending on the cards used outside the Master module.
+</p>
+<p>
+    A common variation is the <strong>Girls Will Find AIDS</strong>,
+    more combat-focused and using {{ nana_buruku }} and an {{ ANI }} combat module using
+    {{ deep_song }}, {{ aid_from_bats }}, and {{ carrion_crows }}.
+    {{ hugh_angseeing_s_deck }} from the 2011 NAC FCQ is a good example.
+</p>
+<p>
+    In a sense, the Corey Brindley's {{ mmpa_politics }} can be seen as a variation,
+    but the crypt and library differences are pretty huge so it deserved a separate entry.
+</p>
+{% endtrans %}
+{% endblock %}
+
+{% block errata %}
+<div class="insert warn">
+    <h3>Errata</h3>
+    {{ erratum.pentextmsubversion( 'undecided' ) }}
+    {{ erratum.ashur() }}
+</div>
+{% endblock %}

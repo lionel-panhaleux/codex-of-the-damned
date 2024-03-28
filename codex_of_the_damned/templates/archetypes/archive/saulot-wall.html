@@ -1,0 +1,104 @@
+{% extends "archetypes/_layout.html" %}
+{% import "archetypes/_layout-erratum.html" as erratum with context %}
+{% import "archetypes/archive/saulot-wall.json" as deck_json %}
+
+{% block meta %}
+<meta property="decklist" content='{{ deck_json | tojson }}' />
+{% endblock %}
+
+{% block archetype_name %}
+<h1>{{ salubri }} Saulot Wall</h1>
+{% endblock %}
+
+{% block archetype %}
+{% trans trimmed
+aid_from_bats=card("Aid From Bats"),
+anarch_convert=card("Anarch Convert"),
+anarch_revolt=card("Anarch Revolt"),
+anesthetic_touch=card("Anesthetic Touch"),
+deep_song=card("Deep Song"),
+disarm=card("Disarm"),
+drawing_out_the_beast=card("Drawing Out the Beast"),
+guardian_vigil=card("Guardian Vigil"),
+hidden_strength=card("Hidden Strength"),
+immortal_grapple=card("Immortal Grapple"),
+magnum=card(".44 Magnum"),
+monkey_wrench=card("Monkey Wrench"),
+rötschreck=card("Rötschreck"),
+saulot=card("Saulot, The Wanderer", "Saulot"),
+saulot_the_wanderer=card("Saulot, The Wanderer"),
+sire_s_index_finger=card("Sire's Index Finger"),
+smiling_jack_the_anarch=card("Smiling Jack, The Anarch"),
+taste_of_vitae=card("Taste of Vitae"),
+terror_frenzy=card("Terror Frenzy"),
+the_anarch_free_press=card("The Anarch Free Press"),
+the_capuchin=card("The Capuchin"),
+the_rack=card("The Rack"),
+trap=card("Trap"),
+daniel_abreu_s_deck=link("/deck-search", _("Daniel Abreu's deck"), id="2016tdspb"),
+martins_deck=link("/deck-search", _("Martin Mirza's deck"), id="2020sbyckp")
+%}
+<h2>Highlights</h2>
+<p>
+    This is a <em>wall</em> deck starring {{ saulot_the_wanderer }} and
+    {{ the_capuchin }}, with some sidekicks with the {{ AUS }}{{ FOR }} disciplines.
+</p>
+<p>
+    They all get <em>Anarch</em> using {{ anarch_convert }},
+    and that allows them to use good <em>Anarch</em> cards like {{ anarch_revolt }},
+    {{ the_anarch_free_press }}, {{ monkey_wrench }} and {{ guardian_vigil }}.
+</p>
+<p>
+    The idea is to block problematic actions both from the prey and the predator,
+    using {{ AUS }} for intercept, weapons and {{ FOR }} for combat damage prevention.
+    The deck slowly builds up a strong position and delivers some well-timed bleeds
+    to the prey.
+</p>
+<p>
+    {{ anarch_revolt }} and {{ smiling_jack_the_anarch }} help
+    improve pool damage, and {{ monkey_wrench }} can be used for the lunge.
+</p>
+<h2>Tips & Tricks</h2>
+<p>
+    {{ sire_s_index_finger }} is a good counter against {{ deep_song }} at superior and
+    {{ rötschreck }}, but also against {{ ani }} frenzy cards commonly played
+    against weapons: {{ drawing_out_the_beast }} and {{ terror_frenzy }}.
+</p>
+<p>
+    {{ the_rack }} is very strong in combination with {{ saulot }}'s ability:
+    together, they make for a nice bloat.
+</p>
+<p>
+    {{ hidden_strength }} is a good way to prevent aggravated damage,
+    but also to prevent the use of damage-based cards like
+    {{ taste_of_vitae }} and {{ disarm }}, or a combat from continuing after a
+    {{ trap }} or {{ aid_from_bats }}.
+</p>
+<h2>Variants</h2>
+<p>
+    There are not many variants for this archetype. The <em>Anarch</em> option is rarely
+    used, {{ daniel_abreu_s_deck }} from 2016 is a good example of doing it without the
+    <em>Anarch</em> tech.
+</p>
+<p>
+    The <strong>Anesthesia</strong> variant uses {{ anesthetic_touch }} as the core
+    of the combat module, like in {{ martins_deck }} from 2020. It ditches
+    {{ the_capuchin }}, relying on {{ saulot }} and one or two sidekicks. But
+    {{ anesthetic_touch }} — with enough maneuvers — can handle most combat modules out
+    there, wether they chose to rely on {{ immortal_grapple }}, {{ aid_from_bats }}
+    or {{ magnum }}. The payload is light but, in a combat heavy environment, it can
+    profit from the overall grind pretty much unscathed.
+</p>
+{% endtrans %}
+{% endblock %}
+
+{% block errata %}
+<div class="insert warn">
+    <h3>Errata</h3>
+    {{ erratum.pentextmsubversion( 'remove' ) }}
+</div>
+<div class="insert warn">
+    <h3>Declining</h3>
+    {{ erratum.declining() }}
+</div>
+{% endblock %}

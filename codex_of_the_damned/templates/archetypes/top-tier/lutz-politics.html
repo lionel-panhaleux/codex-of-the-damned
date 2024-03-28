@@ -1,0 +1,101 @@
+{% extends "archetypes/_layout.html" %}
+{% import "archetypes/_layout-erratum.html" as erratum with context %}
+{% import "archetypes/top-tier/lutz-politics.json" as deck_json %}
+
+{% block meta %}
+<meta property="decklist" content='{{ deck_json | tojson }}' />
+{% endblock %}
+
+{% block archetype_name %}
+<h1>{{ malkavian }} Lutz Politics</h1>
+{% endblock %}
+
+{% block archetype %}
+{% trans trimmed
+unmada=card("Unmada"),
+lutz_von_hohenzollern=card("Lutz von Hohenzollern"),
+undele=card("Undele"),
+zillah_s_valley=card("Zillah's Valley"),
+parity_shift=card("Parity Shift"),
+villein=card("Villein"),
+mental_maze=card("Mental Maze"),
+telepathic_misdirection=card("Telepathic Misdirection"),
+voter_captivation=card("Voter Captivation"),
+banishment=card("Banishment"),
+rafael_de_corazon=card("Rafael de Corazon"),
+dmitra_ilyanova=card("Dmitra Ilyanova"),
+forced_march=card("Forced March"),
+maris_streck=card("Maris Streck"),
+madness_network=card("Madness Network"),
+alastor=card("Alastor"),
+helicopter=card("Helicopter"),
+derange=card("Derange"),
+malkavian_dementia=card("Malkavian Dementia"),
+heidelberg_castle_germany=card("Heidelberg Castle, Germany"),
+golconda_inner_peace=card("Golconda: Inner Peace"),
+cybele=card("Cybele"),
+the_parthenon=card("The Parthenon"),
+danilo_torrisi_s_deck=link("/deck-search", _("Danilo Torrisi's deck"), id="2016eclvgi"),
+fabien_garcia_s_deck=link("/deck-search", _("Fabien Garcia's deck"), id="2014ecfcqmg"),
+otso_saariluoma_s_deck=link("/deck-search", _("Otso Saariluoma's deck"), id="2010finnishecq")
+%}
+<h2>Highlights</h2>
+<p>
+    This is a <em>stealth bleed & vote</em> deck starring
+    {{ lutz_von_hohenzollern }} and {{ undele }}.
+    It uses {{ zillah_s_valley }} and {{ information_highway }}
+    to get these big capacity vampires in play quickly, then
+    {{ villein }} to get some pool back.
+</p>
+<p>
+    The sheer number of votes the vampire have makes sure they get the vote lock around the table.
+    Stealth is high, with the versatile {{ perfect_paragon }} providing either stealth or votes,
+    depending on what's needed on the table.
+</p>
+<p>
+    The deck is slow but sturdy and applies constant high pressure to its prey.
+</p>
+<h2>Tips & Tricks</h2>
+<p>
+    {{ voter_captivation }} and {{ dmitra_ilyanova }}'s ability can be used
+    to get pool back on the vampires after {{ villein }}.
+</p>
+<p>
+    {{ banishment }} is used to get rid of cumbersome vampires.
+    It can either weaken the prey, slow down the predator, or even be used cross table to maintain
+    the table balance if necessary. Moreover, it can dramatically increase the power of key
+    votes like {{ ancient_influence }}.
+</p>
+<p>
+    As the game progresses, {{ undele }}'s ability
+    can be used for recursion, getting the cards most adapted to the table context back in hand.
+</p>
+<p>
+    This version uses {{ force_of_personality }} for combat defense, so it can be cycled
+    out of hand easily if it's not needed.
+</p>
+<h2>Variants</h2>
+<p>
+    The <strong>Maris Lutz</strong> variant uses a group 3-4 crypt with
+    {{ maris_streck }}, like {{ danilo_torrisi_s_deck }} from the 2016 EC.
+    Using more Malkavian in the crypt makes
+    {{ madness_network }} a useful inclusion, and having a bit more Justicar and Princes
+    allows for some {{ parity_shift }} to provide more bloat.
+</p>
+<p>
+    The <strong>Helicopter</strong> variant uses the {{ alastor }} +
+    {{ helicopter }} combination to enable
+    {{ lutz_von_hohenzollern }} to vote <em>and</em> bleed in the same turn,
+    like in {{ fabien_garcia_s_deck }} from 2014 EC FCQ.
+</p>
+<p>
+    The <strong>AD&D</strong> variant uses
+    {{ derange }} and {{ malkavian_dementia }},
+    like {{ otso_saariluoma_s_deck }} from 2010.
+    This combination can steal any vampire, robbing them of their blood and equipment using
+    {{ heidelberg_castle_germany }}, or even destroying them for pool with
+    {{ golconda_inner_peace }}, provided one can get a second Master Action with
+    {{ cybele }} or {{ the_parthenon }}.
+</p>
+{% endtrans %}
+{% endblock %}

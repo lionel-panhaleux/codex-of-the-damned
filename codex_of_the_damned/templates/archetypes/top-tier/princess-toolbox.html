@@ -1,0 +1,116 @@
+{% extends "archetypes/_layout.html" %}
+{% import "archetypes/_layout-erratum.html" as erratum with context %}
+{% import "archetypes/top-tier/princess-toolbox.json" as deck_json %}
+
+{% block meta %}
+<meta property="decklist" content='{{ deck_json | tojson }}' />
+{% endblock %}
+
+{% block archetype_name %}
+<h1>{{ tremere }} Princess Toolbox</h1>
+{% endblock %}
+
+{% block archetype %}
+{% trans trimmed
+anarch_troublemaker=card("Anarch Troublemaker"),
+apportation=card("Apportation"),
+blood_fury=card("Blood Fury"),
+bowl_of_convergence=card("Bowl of Convergence"),
+carna_the_princess_witch=card("Carna, The Princess Witch", "Carna"),
+conditioning=card("Conditioning"),
+direct_intervention=card("Direct Intervention"),
+dreams_of_the_sphinx=card("Dreams of the Sphinx"),
+eagles_sight=card("Eagle's Sight"),
+earth_meld=card("Earth Meld"),
+emerald_legionnaire=card("Emerald Legionnaire"),
+far_mastery=card("Far Mastery"),
+flames_of_the_netherworld=card("Flames of the Netherworld"),
+form_of_mist=card("Form of Mist"),
+govern_the_unaligned=card("Govern the Unaligned"),
+heart_of_nizchetus=card("Heart of Nizchetus"),
+immortal_grapple=card("Immortal Grapple"),
+ivory_bow=card("Ivory bow"),
+magic_of_the_smith=card("Magic of the Smith"),
+mirror_walk=card("Mirror Walk"),
+misdirection=card("Misdirection"),
+nephandus=card("Nephandus"),
+oliver_thrace=card("Oliver Thrace"),
+pentex_subversion=card("Pentex™ Subversion"),
+ponticulus=card("Ponticulus"),
+scouting_mission=card("Scouting Mission"),
+second_tradition_domain=card("Second Tradition: Domain"),
+sniper_rifle=card("Sniper Rifle"),
+the_barrens=card("The Barrens"),
+theft_of_vitae=card("Theft of Vitae"),
+threats=card("Threats"),
+unleash_hell_s_fury=card("Unleash Hell's Fury"),
+valerius_maior_hell_s_fool_adv=card("Valerius Maior, Hell's Fool (ADV)", "Valerius"),
+walk_of_flame=card("Walk of Flame"),
+v5_tremere=external("https://www.blackchantry.com/products/legacy/vampire-the-eternal-struggle-fifth-edition/fifth-edition-tremere/",
+_("V5 Tremere")),
+ricardo_molina_sobreira_s_deck=link("/deck-search", _("Ricardo Molina Sobreira's deck"), id="2018sacsbp"),
+pau_vilar_s_deck=link("/deck-search", _("Pau Vilar's deck"), id="2018igpbi"),
+jose_luis_deck=link("/deck-search", _("Jose Luis Manuel's deck"), id="2021rtibdvs")
+%}
+<h2>Highlights</h2>
+<p>
+    This is a <em>toolbox</em> deck built around the Tremere clan
+    and their {{ aus }}{{ dom }}{{ tha }} disciplines.
+    {{ dom }} is used to bleed, bounce bleeds and accelerate the crypt with
+    {{ govern_the_unaligned }}.
+    {{ aus }} is used for wakes, intercept and bounces.
+    {{ tha }} is used for combat and a bit of stealth with {{ mirror_walk }}.
+</p>
+<p>
+    {{ magic_of_the_smith }} is central to this deck: it allows the vampire to fetch
+    the right equipment early in the game. Going for the {{ heart_of_nizchetus }} is the
+    default option, but the {{ bowl_of_convergence }} can be required fast
+    if the predator uses a lot of stealth, and the right weapon can make all the difference,
+    in particular a {{ sniper_rifle }} if some Potence {{ pot }} makes you weary of {{ immortal_grapple }}.
+</p>
+<h2>Tips & Tricks</h2>
+<p>
+    {{ theft_of_vitae }} is an excellent combat card, as it usually produces
+    a 4 blood differential for no cost. {{ movement_of_the_mind }} helps keep things at range,
+    and {{ rego_motum }} helps with damage, especially aggravated damage from {{ pro }} or {{ vic }}.
+    It is a resilient and versatile grinder module: the point is not to disable the blocked vampires,
+    but rather make them lose blood in the effort consistently.
+</p>
+<p>
+    The use of {{ oliver_thrace }} as a sidekick here is a neat trick, very dependant on the meta.
+    His ability completely ruins {{ form_of_mist }} and {{ earth_meld }}, which are common inclusions
+    in both Ministry {{ ministry }} and Gangrel {{ gangrel }} decks.
+</p>
+<p>
+    The deck fields a stupendous amount of bounces for additional security, but they also help put
+    additional pressure on the prey, given the predator bleeds decently. As the game progresses,
+    the deck becomes only more resilient, with permanent intercept and weapons installed.
+    {{ eagles_sight }} can make or break the game by allowing the unexpected block of the right action,
+    using them properly requires skill and a good grasp of the table balance, but can be key to secure game wins.
+</p>
+<h2>Variants</h2>
+<p>
+    The combat module can be adapted to the expected environment: aggravated damage with
+    {{ flames_of_the_netherworld }} or {{ walk_of_flame }} is a commmon variation.
+</p>
+<p>
+    The <strong>Royalty</strong> variant uses <em>Princes</em> and <em>Justicars</em>,
+    adding political actions and {{ second_tradition_domain }} to the mix.
+    {{ ricardo_molina_sobreira_s_deck }} from the 2018 SAC is a good example.
+</p>
+<p>
+    The <strong>Infernal</strong> variant uses
+    {{ valerius_maior_hell_s_fool_adv }} instead of {{ carna_the_princess_witch }}.
+    His ability is fearsome and its <em>Infernal</em> trait and {{ DAI }}
+    give him access to good options like
+    {{ flames_of_the_netherworld }} and {{ unleash_hell_s_fury }}.
+    {{ pau_vilar_s_deck }} from 2018 is a good example.
+</p>
+<p>
+    The <strong>V5</strong> variant uses new Tremere {{ tremere }} vampires from the
+    {{ v5_tremere }} starter, as in {{ jose_luis_deck }} from 2021. It appears that
+    the disciplines spread in groups 5 and 6 are good enough to replicate
+    the archetype there.
+</p>
+{% endtrans %}
+{% endblock %}

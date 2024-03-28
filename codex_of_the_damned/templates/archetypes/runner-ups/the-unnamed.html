@@ -1,0 +1,122 @@
+{% extends "archetypes/_layout.html" %}
+{% import "archetypes/_layout-erratum.html" as erratum with context %}
+{% import "archetypes/runner-ups/the-unnamed.json" as deck_json %}
+
+{% block meta %}
+<meta property="decklist" content='{{ deck_json | tojson }}' />
+{% endblock %}
+
+{% block archetype_name %}
+<h1>{{ baali }} The unnamed</h1>
+{% endblock %}
+
+{% block archetype %}
+{% trans trimmed
+anarch_convert=card("Anarch Convert"),
+archon_investigation=card("Archon Investigation"),
+arishat=card("Arishat"),
+doctor_morocco=card("Doctor Morocco"),
+elisha_tucker=card("Elisha Tucker"),
+eluding_the_arms_of_morpheus=card("Eluding the Arms of Morpheus"),
+enchanting_gaze=card("Enchanting Gaze"),
+enkil_cog=card("Enkil Cog"),
+evil_eye=card("Evil Eye"),
+flurry_of_action=card("Flurry of Action"),
+form_of_mist=card("Form of Mist"),
+giant_s_blood=card("Giant's Blood"),
+greater_curse=card("Greater Curse"),
+homunculus=card("Homunculus"),
+i_am_legion=card("I am Legion"),
+illegalism=card("Illegalism"),
+infernal_servitor=card("Infernal Servitor"),
+instantaneous_transformation=card("Instantaneous Transformation"),
+legal_manipulations=card("Legal Manipulations"),
+maleficia=card("Maleficia"),
+mylan_horseed=card("Mylan Horseed"),
+perfectionist=card("Perfectionist"),
+power_of_one=card("Power of One"),
+psalm_of_the_damned=card("Psalm of the Damned"),
+revelation_of_the_serpent=card("Revelation of the Serpent"),
+rötschreck=card("Rötschreck"),
+sense_the_sin=card("Sense the Sin"),
+tend_the_flock=card("Tend the Flock"),
+the_coven=card("The Coven"),
+the_horde=card("The Horde"),
+the_platinum_protocol=card("The Platinum Protocol"),
+the_unnamed=card("The unnamed"),
+v5_ministry=external("https://www.blackchantry.com/products/vampire-the-eternal-struggle-fifth-edition/fifth-edition-the-ministry/",
+_("V5 Ministry")),
+delmars_deck=link("/deck-search", _("Delmar Sittoni's deck"), id="2021bco"),
+darbys_deck=link("/deck-search", _("Darby Keeney's deck"), id="2016nacd2co"),
+fernando_naves_resck_s_deck=link("/deck-search", _("Fernando Naves Resck's deck"), id="2017vplnebspb"),
+lukas_simandls_deck=link("/deck-search", _("Lukáš Simandl's deck"), id="10449")
+%}
+<h2>Highlights</h2>
+<p>
+    This is a <em>stealth & bleed</em> deck starring {{ the_unnamed }}.
+    The idea is to use his ability to bleed and bloat at the same time.
+    {{ tend_the_flock }} is used to improve the bloat.
+</p>
+<p>
+    At some point in the game, he gets {{ enkil_cog }} and
+    {{ homunculus }}, allowing him to bleed again
+    during another turn, doubling his bleed and bloat power.
+</p>
+<p>
+    The versatile {{ instantaneous_transformation }}
+    is a great asset and other options are included to let him unlock even more:
+    {{ homunculus }} and {{ mylan_horseed }}.
+    The more he unlocks, the less the Methusalah has to pay for the <em>Infernal</em> penalty.
+</p>
+<p>
+    The crypt here focuses on bring some {{ OBF }} sidekicks in play to perform some additional actions.
+    Unnamed decks usually go for other Baali {{ baali }} like {{ the_horde }} or {{ arishat }},
+    or some Ministry {{ ministry }} like {{ doctor_morocco }} or {{ elisha_tucker }},
+    but influencing a second vampire is always a difficult proposition with this deck: even if it bloats,
+    the bloat is its only defense so the pool should not be expended too liberatly.
+</p>
+<h2>Tips & Tricks</h2>
+<p>
+    This variant aims at playing {{ the_rising }} as early as possible in the game.
+    It can severly limit the opponents ability to bloat, whether they were planning to use votes or Master cards like
+    {{ villein }}. On the other hand, {{ the_unnamed }} both makes sur noone starts the turn with the Edge,
+    and provides a way of bloating that includes getting the Edge first as part of its mechanic.
+</p>
+<p>
+    {{ infernal_servitor }} and {{ veneficti }}, alongside the {{ OBF }} sidekicks, provide additional
+    bleeding to increase the pressure throughout the game. They all can also be used as meat shields to protect
+    {{ the_unnamed }} from direct rushes.
+</p>
+<p>
+    The whole deck tends to cost a bit of blood, so
+    {{ perfectionist }}, {{ the_coven }} and {{ giant_s_blood }} are played to help restore
+    {{ the_unnamed }}'s blood.
+</p>
+<p>
+    {{ i_am_legion }} is versatile: it can be used to counter
+    some {{ aus }} intercept or bounces
+    but can also be used just for 1 pool on a successful action:
+    the card text states <em>"and/<strong>or</strong> gain 1 pool"</em>.
+</p>
+<h2>Variants</h2>
+<p>
+    The <strong>Standard</strong> variant does not use the events and relies on
+    {{ tend_the_flock }} for additional block, to be able to influence Baali {{ balli }}
+    sidekicks like {{ the_horde }} or {{ arishat }}.
+    It usually uses {{ flurry_of_action }} for additional unlock and cards cycling,
+    but cna laos simply rely on {{ legal_manipulations }}.
+    See {{ darbys_deck }} from the 2016 NAC for an example.
+</p>
+<p>
+    The <strong>Maleficia</strong> variant plays {{ maleficia }} and uses
+    {{ psalm_of_the_damned }}, {{ greater_curse }} and/or {{ evil_eye }}.
+    {{ fernando_naves_resck_s_deck }} from the 2017 Brazilian CCQ is a good example.
+</p>
+<p>
+    The <strong>Anarch</strong> variant has {{ the_unnamed }} go anarch, which
+    opens access to {{ the_platinum_protocol }}, {{ revelation_of_the_serpent }},
+    and {{ enchanting_gaze }}, as well as solid Ministry {{ ministry }} sidekicks.
+    See {{ lukas_simandls_deck}} from the 2022 Austrian Open for an example.
+</p>
+{% endtrans %}
+{% endblock %}

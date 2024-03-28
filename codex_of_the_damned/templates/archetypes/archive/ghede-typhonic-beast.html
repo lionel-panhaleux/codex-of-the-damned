@@ -1,0 +1,72 @@
+{% extends "archetypes/_layout.html" %}
+{% import "archetypes/_layout-erratum.html" as erratum with context %}
+{% import "archetypes/archive/ghede-typhonic-beast.json" as deck_json %}
+{% import "archetypes/archive/_layout.html" as layout with context %}
+
+{% block meta %}
+<meta property="decklist" content='{{ deck_json | tojson }}' />
+{% endblock %}
+
+{% block archetype_name %}
+<h1>{{ ministry }} Typhoon Ghede</h1>
+{% endblock %}
+
+{% block archetype %}
+{% trans trimmed
+abdelsobek=card("Abdelsobek"),
+dream_world=card("Dream World"),
+enkil_cog=card("Enkil Cog"),
+eternals_of_sirius=card( "The Eternals of Sirius", "Eternals of Sirius"),
+freak_drive=card("Freak Drive"),
+ghede=card("Ghede"),
+golconda=card("Golconda: Inner Peace", "Golconda"),
+immortal_grapple=card("Immortal Grapple"),
+mokole_blood=card("Mokolé Blood"),
+rotschreck=card("Rötschreck"),
+secure_haven=card("Secure Haven"),
+shadow_boxing=card("Shadow Boxing"),
+sires_index_finger=card("Sire's Index Finger"),
+truth_of_a_thousand_lies=card("Truth of a Thousand Lies"),
+typhonic_beast=card("Typhonic Beast"),
+waters_of_duat=card("Waters of Duat"),
+zillahs_valley=card("Zillah's Valley"),
+orian_grisslers_deck=link("/deck-search", _("Orian Grissler's deck"), id="10152")
+%}
+<h2>Highlights</h2>
+<p>
+    It's a <em>rush</em> deck with {{ ghede }} as star. The key is he can play and stack {{ typhonic_beast }}
+    for free, thanks to his ability. Of course Potence {{ POT }} let him {{ immortal_grapple }} to suppress
+    combat defense, and he has an embeeded rush as an ability to start with.
+</p>
+<p>
+    To get the necessary traction to really control the table though, a few additional rush actions, coupled with
+    {{ freak_drive }} and {{ abdelsobek }}, let him rush multiple times a turn.
+</p>
+<p>
+    Once the board is under control, his 1-cap sidekicks can bleed fr one for the ousts.
+</p>
+<h2>Tips & Tricks</h2>
+<p>
+    The deck has a {{ secure_haven }} for a chance to contest one in play if needed, and {{ sires_index_finger }}
+    against {{ rotschreck }}.
+</p>
+<p>
+    In case Ghede finds himself in trouble, it's always possible to hit a lucky {{ golconda }}
+    and sacrifice him to get a new copy in play quickly.
+</p>
+<h2>Variants</h2>
+<p>
+    {{ truth_of_a_thousand_lies }} can be used in place of {{ freak_drive }} for more flexibility, at the cost of blood.
+    {{ shadow_boxing }} is worth considering, and {{ enkil_cog }} and {{ mokole_blood }} often find a spot.
+    Additionally, playing a bunch of {{ eternals_of_sirius }} is tempting to accelerate the deck in the first few turns.
+    The card can still be played once {{ ghede }} is out for a 1-pool gain so it jams less than {{ zillahs_valley }},
+    but it might cripple the card flow a bit.
+</p>
+<p>
+    Getting the oust might prove difficult if the prey decides to just sit on a good deal of pool. One solution here
+    is to use {{ waters_of_duat }} and the many unlocks at {{ ghede }}'s disposal to creat a small army of Followers
+    to bleed. {{ dream_world }} can even be used as a lunge device in that case.
+    See {{ orian_grisslers_deck }} for an example.
+</p>
+{% endtrans %}
+{% endblock %}

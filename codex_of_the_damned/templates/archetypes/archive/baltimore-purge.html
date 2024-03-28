@@ -1,0 +1,93 @@
+{% extends "archetypes/_layout.html" %}
+{% import "archetypes/_layout-erratum.html" as erratum with context %}
+{% import "archetypes/archive/baltimore-purge.json" as deck_json %}
+
+{% block meta %}
+<meta property="decklist" content='{{ deck_json | tojson }}' />
+{% endblock %}
+
+{% block archetype_name %}
+<h1>{{ lasombra }} Baltimore Purge</h1>
+{% endblock %}
+
+{% block archetype %}
+{% trans trimmed
+baltimore_purge=card("Baltimore Purge"),
+dreams_of_the_sphinx=card("Dreams of the Sphinx"),
+eluding_the_arms_of_morpheus=card("Eluding the Arms of Morpheus"),
+enkil_cog=card("Enkil Cog"),
+freak_drive=card("Freak Drive"),
+govern_the_unaligned=card("Govern the Unaligned"),
+graverobbing=card("Graverobbing"),
+heidelberg_castle_germany=card("Heidelberg Castle, Germany"),
+information_highway=card("Information Highway"),
+mind_rape=card("Mind Rape"),
+montano=card("Montano"),
+obedience=card("Obedience"),
+perfectionist=card("Perfectionist"),
+renewed_vigor=card("Renewed Vigor"),
+shadow_body=card("Shadow Body"),
+zillahs_valley=card("Zillah's Valley"),
+rudolfs_scholtz_article=link("/strategy/articles/advanced/playing-montano-baltimore-purge", _("Rudolf Scholtz'
+article"))
+%}
+<h2>Highlights</h2>
+<p>
+    This is a <em>special</em> deck using {{ montano }} to play {{ baltimore_purge }},
+    then {{ freak_drive }} to get out of torpor and play {{ graverobbing }}
+    to permanently steal opponents vampires.
+    {{ mind_rape }} is added to the mix for additional vampire thefts.
+    {{ heidelberg_castle_germany }} is used to take the blood of stolen vampires
+    and give it to {{ montano }}, fueling the costly combination.
+</p>
+<p>
+    It is a dreadful combination and, therefore, quickly attracts the table attention.
+    This archetype is seldom played and has not yet won any major tournament.
+</p>
+<p>
+    The deck packs quite a lot of {{ obt }} stealth considering
+    {{ montano }} already has an included stealth bonus:
+    indeed, getting blocked somewhere suring the combo can be deadly,
+    so the deck has to make sure it does not happen.
+</p>
+<p>
+    The entire combat module is defensive, using
+    {{ shadow_body }} and {{ obedience }}.
+</p>
+<h2>Tips & Tricks</h2>
+<p>
+    {{ zillahs_valley }}, {{ dreams_of_the_sphinx }} and
+    {{ information_highway }} are used to get {{ montano }} out faster.
+</p>
+<p>
+    {{ enkil_cog }} lets {{ montano }} bleed for 3 and act during the other players turns.
+    Playing a {{ baltimore_purge }} during the predator's turn
+    makes the whole combination easier.
+</p>
+<p>
+    {{ renewed_vigor }} is used at inferior {{ for }} to help get {{ montano }}
+    out of torpor when he plays {{ baltimore_purge }}.
+</p>
+<p>
+    {{ eluding_the_arms_of_morpheus }} provides additional unlock:
+    it can be used to unlock during an opponent's turn and,
+    if {{ enkil_cog }} is into play and the block does not happen,
+    a new action can be performed at the end of the opponent's turn.
+</p>
+<p>
+    <b>You want want to know more?</b> Read {{ rudolfs_scholtz_article }} about this deck.
+</p>
+<h2>Variants</h2>
+<p>
+    There are only minor variations to this archetype.
+    {{ govern_the_unaligned }} and {{ perfectionist }} are often included.
+</p>
+{% endtrans %}
+{% endblock %}
+
+{% block errata %}
+<div class="insert warn">
+    <h3>Errata</h3>
+    {{ erratum.pentextmsubversion( 'remove' ) }}
+</div>
+{% endblock %}

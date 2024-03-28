@@ -1,0 +1,66 @@
+{% extends "archetypes/_layout.html" %}
+{% import "archetypes/_layout-erratum.html" as erratum with context %}
+{% import "archetypes/new-kids/banu-politics.json" as deck_json %}
+
+{% block meta %}
+<meta property="decklist" content='{{ deck_json | tojson }}' />
+{% endblock %}
+
+{% block archetype_name %}
+<h1>{{ banu_haqim }} Banu Politics</h1>
+{% endblock %}
+
+{% block archetype %}
+{% trans trimmed
+alamut=card("Alamut"),
+alastor=card("Alastor"),
+anathema=card("Anathema"),
+ashur_tablets=card("Ashur Tablets"),
+assault_rifle=card("Assault Rifle"),
+bowl_of_convergence=card("Bowl of Convergence"),
+fourth_tradition=card("Fourth Tradition: The Accounting", "Fourth Tradition"),
+haqims_law_retribution=card("Haqim's Law: Retribution"),
+helicopter=card("Helicopter"),
+kasim_bayar=card("Kasim Bayar"),
+kine_resources_contested=card("Kine Resources Contested"),
+parity_shift=card("Parity Shift"),
+second_tradition=card("Second Tradition: Domain", "Second Tradition"),
+the_black_throne=card("The Black Throne"),
+haqim_royalty=link("/archetypes/haqim-royalty")
+%}
+<h2>Highlights</h2>
+<p>
+    This is a Banu Haqim {{ banu_haqim }} <em>vote</em> deck using titled vampires,
+    with decent combat abilities to make the {{ second_tradition }} effective.
+    <em>Bram Von Stappen</em> won the 2023 Dutch NC with this, so it must be good,
+    or maybe it's just the player and a good bluff fluke that will be hard to reproduce.
+</p>
+<p>
+    The idea is to influence the highest capacity vampire first, so they can {{ fourth_tradition }} others
+    if they get the chance. {{ kasim_bayar }} is the star here, so he's our first choice if available.
+    His ability can make use of the vote cards in combat, so, for a vote deck, it's surprisingly dangerous in a fight.
+</p>
+<p>
+    {{ alastor }} is used to fetch {{ helicopter }} and {{ assault_rifle }} at a discount,
+    while {{ kine_resources_contested }} and {{ parity_shift }} are used to damage the prey.
+    Getting the vote lock might be tricky here, so other voters should be the first targets to take down in combat.
+</p>
+<h2>Considerations</h2>
+<p>
+    Should the deck not have a {{ bowl_of_convergence }}? Maybe an {{ anathema }} or two?
+    What about {{ alamut }} and {{ the_black_throne }} for additional votes?
+    Maybe a second {{ haqims_law_retribution }}?
+    Are the {{ ashur_tablets }} really worth it or should they be cut in favor of those Master cards?
+</p>
+<p>
+    More importantly, did this work because it was a susprise and opponents mistakenly supposed it was closer to a
+    {{ haqim_royalty }} deck and misplayed against it? Or is it really good in and by itself? Or is it just the player?
+    After all, not all of us can match Bram's talent.
+</p>
+<p>
+    All in all it's a very fun variant, making good use of {{ kasim_bayar }}'s ability. Vote decks that are this
+    capable in combat are a rarity so they can be challenging to handle for the opponents.
+    Maybe it is worth refining and playing more.
+</p>
+{% endtrans %}
+{% endblock %}
