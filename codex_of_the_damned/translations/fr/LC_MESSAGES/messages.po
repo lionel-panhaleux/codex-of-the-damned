@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-03-28 20:08+0100\n"
+"POT-Creation-Date: 2024-03-28 20:16+0100\n"
 "PO-Revision-Date: 2024-02-07 16:17+0100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: fr\n"
@@ -391,11 +391,11 @@ msgstr "La page que vous cherchez n'existe pas."
 msgid "Home page"
 msgstr "Page d'accueil"
 
-#: codex_of_the_damned/templates/_layout_promo.html:3
+#: codex_of_the_damned/templates/_layout_promo.html:5
 msgid "April 20th, 2024 Grand Prix in Paris."
 msgstr "20 Avril 2024 Grand Prix de Paris"
 
-#: codex_of_the_damned/templates/_layout_promo.html:5
+#: codex_of_the_damned/templates/_layout_promo.html:9
 msgid "Register by email to:"
 msgstr "Inscription par e-mail à :"
 
@@ -513,34 +513,42 @@ msgstr ""
 "conçu pour les joueurs connaissant déjà le jeu et ses règles. VTES est un jeu publié par "
 "%(black_chantry_productions)s, sous la license %(world_of_darkness)s."
 
-#: codex_of_the_damned/templates/index.html:20
-msgid "Brett S. guide"
-msgstr "guide de Brett S."
-
 #: codex_of_the_damned/templates/index.html:18
+msgid "If you are a new player, consult"
+msgstr "Si vous êtes un nouveau joueur, consultez"
+
+#: codex_of_the_damned/templates/index.html:22
+msgid "Brett S. guide"
+msgstr "le guide de Brett S."
+
+#: codex_of_the_damned/templates/index.html:20
 #, python-format
 msgid ""
-"If you are a new player, consult %(brett_s_guide)s or one of the video tutorials below to learn the game before "
-"digging deeper. The official rule can be found on the %(bcp_s_website)s. The official %(players_guide)s is available "
-"in PDF format at DriveThruRPG."
+"%(our_video_tutorial)s, %(brett_s_guide)s, or one of the other video tutorials below to learn the game before digging"
+" deeper. The official rule can be found on the %(bcp_s_website)s. The official %(players_guide)s is available in PDF "
+"format at DriveThruRPG."
 msgstr ""
-"Si vous êtes un nouveau joueur, consultez le %(brett_s_guide)s ou l'un des tutoriels vidéo ci-dessous pour apprendre "
-"le jeu avant d'aller plus loin. Les règles officielles sont sur le %(bcp_s_website)s. Le %(players_guide)s officiel "
-"est disponible en PDF sur DriveThruRPG."
+"%(our_video_tutorial)s, %(brett_s_guide)s ou l'un des tutoriels vidéo ci-dessous pour apprendre le jeu avant d'aller "
+"plus loin. Les règles officielles sont sur le %(bcp_s_website)s. Le %(players_guide)s officiel est disponible en PDF "
+"sur DriveThruRPG."
 
-#: codex_of_the_damned/templates/index.html:21
+#: codex_of_the_damned/templates/index.html:23
 msgid "BCP's website"
 msgstr "site web de BCP"
 
-#: codex_of_the_damned/templates/index.html:23
+#: codex_of_the_damned/templates/index.html:24
 msgid "Player's Guide"
 msgstr "Guide du Joueur"
 
-#: codex_of_the_damned/templates/index.html:33
+#: codex_of_the_damned/templates/index.html:25
+msgid "our video tutorial"
+msgstr "notre tutoriel vidéo"
+
+#: codex_of_the_damned/templates/index.html:35
 msgid "Github page"
 msgstr "page Github"
 
-#: codex_of_the_damned/templates/index.html:32
+#: codex_of_the_damned/templates/index.html:34
 #, python-format
 msgid ""
 "If you want to contribute to this guide, point out mistakes or raise an issue, you are welcome to do so on the "
@@ -549,100 +557,100 @@ msgstr ""
 "Si vous désirez contribuer à ce guide, signaler une erreur ou un problème, merci de le faire sur la %(github_page)s "
 "du projet."
 
-#: codex_of_the_damned/templates/index.html:39
+#: codex_of_the_damned/templates/index.html:41
 msgid "Community"
 msgstr "Communauté"
 
-#: codex_of_the_damned/templates/index.html:44
+#: codex_of_the_damned/templates/index.html:46
 msgid "VEKN Forum"
 msgstr "Forum VEKN"
 
-#: codex_of_the_damned/templates/index.html:61
+#: codex_of_the_damned/templates/index.html:63
 msgid "VEKN Facebook goup"
 msgstr "Groupe Facebook VEKN"
 
-#: codex_of_the_damned/templates/index.html:67
+#: codex_of_the_damned/templates/index.html:69
 msgid "VTES World Facebook goup"
 msgstr "Groupe Facebook VTES World"
 
-#: codex_of_the_damned/templates/index.html:71
+#: codex_of_the_damned/templates/index.html:73
 msgid "More links and local communities on"
 msgstr "Plus de liens et communautés locales sur"
 
-#: codex_of_the_damned/templates/index.html:75
+#: codex_of_the_damned/templates/index.html:77
 msgid "Resources"
 msgstr "Ressources"
 
-#: codex_of_the_damned/templates/index.html:77
+#: codex_of_the_damned/templates/index.html:79
 msgid "Online tools"
 msgstr "Outils en ligne"
 
-#: codex_of_the_damned/templates/index.html:82
+#: codex_of_the_damned/templates/index.html:84
 msgid "Tournament organiser"
 msgstr "Gestionnaire de tournois"
 
-#: codex_of_the_damned/templates/index.html:91
+#: codex_of_the_damned/templates/index.html:93
 msgid "Online Play section"
 msgstr "section Jeu en Ligne"
 
-#: codex_of_the_damned/templates/index.html:90
+#: codex_of_the_damned/templates/index.html:92
 #, python-format
 msgid "For <b>online play</b>, check the %(online_play_section)s."
 msgstr "Pour <b>jouer en ligne</b>, consultez la %(online_play_section)s."
 
-#: codex_of_the_damned/templates/index.html:99
+#: codex_of_the_damned/templates/index.html:101
 msgid "Tutorials"
 msgstr "Tutoriels"
 
-#: codex_of_the_damned/templates/index.html:104
+#: codex_of_the_damned/templates/index.html:106
 msgid "Team Covenant's Tutorial"
 msgstr "Tutoriel de la Team Covenant"
 
-#: codex_of_the_damned/templates/index.html:110
+#: codex_of_the_damned/templates/index.html:112
 msgid "Jender's Gaming Tutorial"
 msgstr "Tutoriel de Jender's gaming"
 
-#: codex_of_the_damned/templates/index.html:116
+#: codex_of_the_damned/templates/index.html:118
 msgid "VTES on LackeyCCG Tutorial"
 msgstr "Tutoriel VTES sur LackeyCCG"
 
-#: codex_of_the_damned/templates/index.html:130
+#: codex_of_the_damned/templates/index.html:132
 msgid "Video Channels"
 msgstr "Chaînes vidéo"
 
-#: codex_of_the_damned/templates/index.html:239
+#: codex_of_the_damned/templates/index.html:241
 msgid "Blogs"
 msgstr "Blogs"
 
-#: codex_of_the_damned/templates/index.html:248
+#: codex_of_the_damned/templates/index.html:250
 msgid "interviews archive"
 msgstr "archive d'interviews"
 
-#: codex_of_the_damned/templates/index.html:256
+#: codex_of_the_damned/templates/index.html:258
 msgid "Live streams"
 msgstr "Streams en direct"
 
-#: codex_of_the_damned/templates/index.html:294
+#: codex_of_the_damned/templates/index.html:296
 msgid "Developer tools"
 msgstr "Outils pour développeurs"
 
-#: codex_of_the_damned/templates/index.html:297
+#: codex_of_the_damned/templates/index.html:299
 msgid "Static resources"
 msgstr "Ressources statiques"
 
-#: codex_of_the_damned/templates/index.html:302
+#: codex_of_the_damned/templates/index.html:304
 msgid "Discord bots"
 msgstr "Bots Discord"
 
-#: codex_of_the_damned/templates/index.html:305
+#: codex_of_the_damned/templates/index.html:307
 msgid "Cards lookup"
 msgstr "Recherche de carte"
 
-#: codex_of_the_damned/templates/index.html:306
+#: codex_of_the_damned/templates/index.html:308
 msgid "Tournament management"
 msgstr "Gestion de tournoi"
 
-#: codex_of_the_damned/templates/index.html:314
+#: codex_of_the_damned/templates/index.html:316
 msgid ""
 "Portions of the materials are the copyrights and trademarks of Paradox Interactive AB, and are used with "
 "permission.<br>All rights reserved. For more information please visit"

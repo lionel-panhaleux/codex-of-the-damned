@@ -15,15 +15,17 @@
     {% endtrans %}
 </p>
 <p>
+    {{_("If you are a new player, consult")}}
+    <span class="brand-icon" style="color: #EB3223;">&#xf167</span>
     {% trans trimmed
     brett_s_guide=external("https://gamingwithbs.wordpress.com/new-players-corner/vtes-quick-start-guide",
     _("Brett S. guide")),
     bcp_s_website=external("https://www.blackchantry.com/rulebook/", _("BCP's website")),
-    players_guide=external("https://www.drivethrurpg.com/product/2931/Vampire-The-Eternal-Struggle-Players-Guide",
-    _("Player's Guide"))
+    players_guide=external("https://www.drivethrurpg.com/product/2931/Vampire-The-Eternal-Struggle-Players-Guide", _("Player's Guide")),
+    our_video_tutorial=external("https://youtu.be/J6HyIxIzHcA", _("our video tutorial"))
     %}
-    If you are a new player, consult {{ brett_s_guide }} or one of the video tutorials below to learn the game
-    before digging deeper.
+    {{our_video_tutorial}}, {{ brett_s_guide }}, or one of the other video tutorials below
+    to learn the game before digging deeper.
     The official rule can be found on the {{ bcp_s_website }}.
     The official {{ players_guide }} is available in PDF format at DriveThruRPG.
     {% endtrans %}
