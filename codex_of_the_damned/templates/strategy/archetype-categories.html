@@ -1,7 +1,7 @@
 {% extends "layout.html" %}
 
 {% block content %}
-<h1 id="archetypes">{{ _("Archetypes") }}</h1>
+<h1 id="archetypes">{{ _("Archetype Categories") }}</h1>
 <p>
     {% trans trimmed %}
     V:tES has been played for years, and this has given birth to a number of efficient decks archetypes.
@@ -45,6 +45,7 @@
     elder_impersonation=card("Elder Impersonation"),
     call_of_the_hungry_dead=card("Call of the Hungry Dead"),
     daring_the_dawn=card("Daring the Dawn"),
+    forced_confessional=card("Forced Confessional"),
     mind_numb=card("Mind Numb"),
     pentex_subversion=card("Pentex™ Subversion"),
     misdirection=card("Misdirection"),
@@ -53,7 +54,8 @@
     The other way to get bleeds through is to make sure the prey has no minion available to block the action.
     Along its strong bleed capabilities, {{ dom }} offers the excellent {{ seduction }}.
     {{ OBF }} {{ elder_impersonation }}, {{ NEC }} {{ call_of_the_hungry_dead }},
-    {{ for }} {{ daring_the_dawn }} and {{ pre }} {{ mind_numb }} are also effective tools.
+    {{ for }} {{ daring_the_dawn }}, {{ salubri }} {{ forced_confessional }},
+    and {{ pre }} {{ mind_numb }} are also effective tools.
     Combining these options with the few Master cards that can prevent block or lock minions —
     {{ pentex_subversion }}, {{ misdirection }} and {{ anarch_troublemaker }} —
     makes stealth and intercept irrelevant.
@@ -97,30 +99,41 @@
     <li>
         {% trans trimmed
         weenie_dem=link("/archetypes/dementation-bleed"),
-        malkav_94=link("/archetypes/malkav-94"),
-        malkav_22=link("/archetypes/malkav-22")
+        malkav_94=link("/archetypes/malk-94"),
+        malkav_22=link("/archetypes/malk-22")
         %}
         The Malkavian {{ malkavian }} can use {{ dem }},
         alone or alongside {{ obf }}, for devastating bleeds,
         like in the {{ weenie_dem }} archetype. In other groups (1 and 6+), they can also combine the best stealth
-        with {{ obf }} to the strongest bleed with {{ dom }}, as in the {{ malkav_94 }} and {{ malkav_22 }} archetypes.
+        with {{ obf }} to the strongest bleed with {{ dom }}, as in the {{ malk_94 }} and {{ malk_22 }} archetypes.
         {% endtrans %}
     </li>
     <li>
         {% trans trimmed
         platinum_protocol=card("The Platinum Protocol", "Platinum Protocol"),
-        platinum_protocol_archetype=link("/archetypes/platinum-protocol")
+        platinum_revelation=link("/archetypes/platinum-revelation")
         %}
         The new Ministry {{ ministry }}, with the {{ obf }}{{ pro }}{{ pre }} combination, have excellent stealth
         combined with a very solid bleed module in {{ pre }}, and have access to the excellent {{ platinum_protocol }},
-        which gives the the eponymous {{ platinum_protocol_archetype }}.
+        which gives the the eponymous {{ platinum_revelation }} archetype.
+        {% endtrans %}
+    </li>
+    <li>
+        {% trans trimmed
+        break_the_bonds=card("Break the Bonds"),
+        visions_of_gehenna=card("Visions of Gehenna"),
+        ravnos_break=link("/archetypes/ravnos-break")
+        %}
+        Similarily, V5 Ravnos {{ ravnos }}, with the {{ obf }}{{ pre }} combination, have excellent stealth
+        combined with a very solid bleed module in {{ pre }}, and have access to both {{ break_the_bonds }}
+        and {{ visions_of_gehenna }}, which gives the the eponymous {{ ravnos_break }} archetype.
         {% endtrans %}
     </li>
     <li>
         {% trans trimmed
         black_hand=link("/archetypes/black-hand")
         %}
-        Assamite {{ assamite }} also have a nice combination with {{ qui }} and {{ obf }},
+        Assamite {{ assamite_legacy }} also have a nice combination with {{ qui }} and {{ obf }},
         as in the {{ black_hand }} archetype.
         {% endtrans %}
     </li>
@@ -158,9 +171,7 @@
         council_of_doom=link("/archetypes/council-of-doom")
         %}
         Inner Circles also deliver a very strong bleed as they have a +2 bleed ability.
-        The {{ mistress }} archetype is a good example. They are often combined with
-        <strong>M</strong>ulti <strong>M</strong>aster <strong>P</strong>hase <strong>A</strong>ctions (MMPA),
-        like in the {{ girls_will_find_inner_circle }} or {{ council_of_doom }} archetypes.
+        The {{ mistress }} archetype is a good example.
         {% endtrans %}
     </li>
     <li>
@@ -226,10 +237,10 @@
         {% trans trimmed
         arishat=card("Arishat"),
         infernal_princes=link("/archetypes/infernal-princes"),
-        infernal_ministry=link("/archetypes/infernal-ministry")
+        infernal_barons=link("/archetypes/infernal-barons")
         %}
         Baali {{ baali }} {{ arishat }}, thanks to her powerful ability, gave birth to multiple strong
-        political archetypes like {{ infernal_princes }} and {{ infernal_ministry }}.
+        political archetypes like {{ infernal_princes }} and {{ infernal_barons }}.
         {% endtrans %}
     </li>
     <li>
@@ -260,10 +271,12 @@
     <li>
         {% trans trimmed
         amaravati_politics=link("/archetypes/amaravati-politics"),
-        death_star=link("/archetypes/death-star")
+        death_star=link("/archetypes/death-star"),
+        banu_politics=link("/archetypes/banu-politics")
         %}
-        Banu Haqim {{ assamite }} also have good options,
-        like in the {{ amaravati_politics }} or the {{ death_star }} archetypes.
+        Banu Haqim {{ assamite }} have good options,
+        like in the {{ amaravati_politics }} or the {{ death_star }} archetypes, but also
+        new possibilities with their Camarilla titles, like the {{ banu_politics }} archetype.
         {% endtrans %}
     </li>
     <li>
@@ -452,11 +465,10 @@
     </li>
     <li>
         {% trans trimmed
-        emerald_legion=link("/archetypes/emerald-legion")
+        brujah_resistance=link("/archetypes/brujah_resistance")
         %}
-        Harbinger of Skulls {{ harbinger_of_skull }}, using their {{ AUS }} to block
-        and aided by the best ally in the game, are often built as toolboxes, see
-        {{ emerald_legion }}.
+        Anarch Brujah {{ brujah }}, supported by their Barons, are often built as toolboxes, see
+        {{ brujah_resistance }}.
         {% endtrans %}
     </li>
     <li>
@@ -469,10 +481,10 @@
     </li>
     <li>
         {% trans trimmed
-        war_chantry=link("/archetypes/war-chantry")
+        princess_toolbox=link("/archetypes/princess-toolbox")
         %}
         Tremere {{ tremere }} have a good disciplines combination for a toolbox too,
-        as proves the {{ war_chantry }} archetype.
+        as proves the {{ princess_toolbox }} archetype.
         {% endtrans %}
     </li>
 </ul>
@@ -582,7 +594,7 @@
         {% endtrans %}
     </p>
 </div>
-<h2 id="special">{{ _("Special") }}</h2>
+<h2 id="special">{{ _("Combo") }}</h2>
 <p>
     {% trans trimmed %}
     Some decks do not fit into any of the aforementioned categories.
@@ -596,10 +608,11 @@
         {% trans trimmed
         mind_rape=link("/archetypes/mind-rape"),
         spirit_marionette=link("/archetypes/spirit-marionette"),
+        chameleon=link("/archetypes/chameleon"),
         baltimore_purge=link("/archetypes/baltimore-purge")
         %}
         Some archetypes focus on stealing the vampires of their opponents, like
-        {{ mind_rape }}, {{ spirit_marionette }} and {{ baltimore_purge }}.
+        {{ mind_rape }}, {{ spirit_marionette }}, {{ chameleon }} and {{ baltimore_purge }}.
         {% endtrans %}
     </li>
     <li>
@@ -626,7 +639,7 @@
 <h3>{{ _("Highlights") }}</h3>
 <p>
     {% trans trimmed %}
-    Special decks tend to use complicated card combinations to a devastative effect. Their strength is in
+    Combo decks use complicated card combinations to a devastative effect. Their strength is in
     the <strong>absolute advantage</strong> their combination provides if all goes well. Their weakness
     is the frailty of such a combination. Blocking the right action or countering the right Master can often
     stop them dead in their tracks. Moreover, known combinations tend to attract the attention of all players,

@@ -1,4 +1,3 @@
-
 {% extends "best-cards/_layout.html" %}
 {% import "best-cards/_layout_card_column.html" as layout with context %}
 
@@ -58,7 +57,7 @@ vampire is relevant.
 
 {% call layout.card_column("Direct Intervention", decks=715, copies="1-2") %}
 {% trans trimmed
-wall_decks=link("/strategy/archetypes", _("wall decks"), _anchor="wall"),
+wall_decks=link("/strategy/archetype-categories", _("wall decks"), _anchor="wall"),
 block_denial=link("/strategy/fundamentals", _("block denial"), _anchor="stealth-and-intercept")
 %}
 The ability to cancel any minion card is extremely valuable. It has reliable role in

@@ -202,7 +202,7 @@
 </p>
 <h2 id="table-balance">{{ _('Table balance') }}</h2>
 {% trans trimmed
-archetypes=link("/strategy/archetypes", _("archetypes"))
+archetypes=link("/strategy/archetype-categories", _("archetypes"))
 %}
 <p>
     Not everything around the table is about talking. Having a good sense of the <strong>table balance</strong> is
@@ -263,7 +263,8 @@ archetypes=link("/strategy/archetypes", _("archetypes"))
     {% endtrans %}
 </p>
 <div>
-    <img class="full-width" src="{{ url_for('static', filename='img/pp-continuum.svg') }}" alt="Predator-Prey Continuum">
+    <img class="full-width" src="{{ url_for('static', filename='img/pp-continuum.svg') }}"
+        alt="Predator-Prey Continuum">
 </div>
 {% trans trimmed
 lunge_move=link("/strategy/fundamentals", _("lunge move"), "lunge")

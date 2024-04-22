@@ -76,7 +76,7 @@ STRUCTURE = Nav(
                 Nav(lazy_gettext("Combat")),
                 Nav(lazy_gettext("Bloat")),
                 Nav(lazy_gettext("Deck building")),
-                Nav(lazy_gettext("Archetypes")),
+                Nav(lazy_gettext("Archetype Categories")),
                 Nav(lazy_gettext("Table Talk")),
                 Nav(
                     lazy_gettext("Deck guides"),
