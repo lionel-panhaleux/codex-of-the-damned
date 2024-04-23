@@ -4,7 +4,7 @@ Changelog
 1.68 (unreleased)
 -----------------
 
-- Nothing changed yet.
+- Another try at fixing translations
 
 
 1.67 (2024-04-23)
