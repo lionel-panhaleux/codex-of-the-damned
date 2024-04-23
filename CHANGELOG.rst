@@ -4,7 +4,7 @@ Changelog
 1.66 (unreleased)
 -----------------
 
-- Nothing changed yet.
+- Fix FR translations
 
 
 1.65 (2024-04-23)

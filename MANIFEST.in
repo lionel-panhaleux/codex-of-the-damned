@@ -3,6 +3,7 @@ include LICENSE README.md CHANGELOG.rst
 graft codex_of_the_damned
 prune tests
 
+include codex_of_the_damned/translations/*.mo
 exclude Makefile
 exclude babel.cfg
 exclude .markdownlint.json
