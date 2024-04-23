@@ -47,36 +47,36 @@
             <h1>Codex of the Damned</h1>
         </a>
         <nav role="navigation">
-        {% if section == "online-play" %}
+            {% if section == "online-play" %}
             {{ link('/online-play', _class="active-section") }}
-        {% else %}
+            {% else %}
             {{ link('/online-play') }}
-        {% endif %}
-        {% if section == "strategy" %}
+            {% endif %}
+            {% if section == "strategy" %}
             {{ link('/strategy', _class="active-section") }}
-        {% else %}
+            {% else %}
             {{ link('/strategy') }}
-        {% endif %}
-        {% if section == "archetypes" %}
+            {% endif %}
+            {% if section == "archetypes" %}
             {{ link('/archetypes', _class="active-section") }}
-        {% else %}
+            {% else %}
             {{ link('/archetypes') }}
-        {% endif %}
-        {% if section == "best-cards" %}
+            {% endif %}
+            {% if section == "best-cards" %}
             {{ link('/best-cards', _class="active-section") }}
-        {% else %}
+            {% else %}
             {{ link('/best-cards') }}
-        {% endif %}
-        {% if section == "deck-search" %}
+            {% endif %}
+            {% if section == "deck-search" %}
             {{ link('/deck-search', _class="active-section") }}
-        {% else %}
+            {% else %}
             {{ link('/deck-search') }}
-        {% endif %}
-        {% if section == "card-search" %}
+            {% endif %}
+            {% if section == "card-search" %}
             {{ link('/card-search', _class="active-section") }}
-        {% else %}
+            {% else %}
             {{ link('/card-search') }}
-        {% endif %}
+            {% endif %}
         </nav>
         <nav role="translation">
             {{ translation('en', "🇬🇧") }}
@@ -84,7 +84,6 @@
         </nav>
     </header>
 
-    {{ promo }}
     {% block article %}
     <article>
         {% block content %}{% endblock %}
