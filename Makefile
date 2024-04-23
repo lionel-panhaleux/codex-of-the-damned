@@ -26,7 +26,7 @@ release-local: check-porcelain clean
 
 release: release-local
 	git push origin "${NEXT_VERSION}"
-	twine upload -r testpypi dist/*
+	twine upload -r test-pypi dist/*
 	twine upload dist/*
 
 test:
