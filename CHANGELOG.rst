@@ -1,7 +1,7 @@
 Changelog
 =========
 
-1.65 (unreleased)
+1.65 (2024-04-23)
 -----------------
 
 - Major Archetypes update
