@@ -1,7 +1,7 @@
 .PHONY: po-update po-compile po check-porcelain clean release-local release test update
 
 BABEL_LANG ?= fr
-GIT_STATUS = `git status --porcelain`
+GIT_STATUS = `test -z "$$(git status --porcelain)"`
 NEXT_VERSION = `python -m setuptools_scm --strip-dev`
 
 po-update:
