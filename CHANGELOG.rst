@@ -4,7 +4,7 @@ Changelog
 1.65 (unreleased)
 -----------------
 
-- Nothing changed yet.
+- Major Archetypes update
 
 
 1.64 (2024-03-28)
