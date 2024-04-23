@@ -47,7 +47,7 @@ Repository = "https://github.com/lionel-panhaleux/codex-of-the-damned"
 include = ["codex_of_the_damned*"]
 
 [tool.setuptools.package-data]
-"" = ["*.mo"]
+* = ["*.mo"]
 
 [tool.zest-releaser]
 create-wheel = true
