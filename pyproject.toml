@@ -1,5 +1,5 @@
 [build-system]
-requires = ["setuptools>=68", "babel>=2"]
+requires = ["setuptools>=68", "setuptools-scm", "babel>=2"]
 build-backend = "setuptools.build_meta"
 
 [project]
@@ -45,9 +45,6 @@ Repository = "https://github.com/lionel-panhaleux/codex-of-the-damned"
 
 [tool.setuptools.packages.find]
 include = ["codex_of_the_damned*"]
-
-[tool.setuptools.package-data]
-codex_of_the_damned = ["*.mo"]
 
 [tool.zest-releaser]
 create-wheel = true

@@ -4,7 +4,7 @@ Changelog
 1.70 (unreleased)
 -----------------
 
-- Nothing changed yet.
+- i18n fix: try the "setuptools-scm" trick
 
 
 1.69 (2024-04-23)
