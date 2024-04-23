@@ -1,10 +1,10 @@
 [build-system]
-requires = ["setuptools>=68", "babel>=2"]
+requires = ["setuptools>=68", "babel>=2", "setuptools-scm>=8"]
 build-backend = "setuptools.build_meta"
 
 [project]
 name = "codex-of-the-damned"
-version = "1.70"
+dynamic = ["version"]
 authors = [
     { name = "Lionel Panhaleux", email = "lionel.panhaleux+codex@gmail.com" },
 ]
@@ -28,12 +28,14 @@ dependencies = ["flask>=3", "flask-babel>=4", "unidecode>=1", "Jinja2>=3"]
 [project.optional-dependencies]
 dev = [
     "black>=24",
+    "build",
     "clipboard>=0",
     "ipython>=8",
     "pytest>=8",
     "requests>=2",
     "ruff>=0",
-    "zest.releaser[recommended]>=9",
+    "setuptools_scm",
+    "twine",
 ]
 
 [project.scripts]
@@ -49,5 +51,4 @@ include = ["codex_of_the_damned*"]
 [tool.setuptools.package-data]
 "*" = ["*.mo"]
 
-[tool.zest-releaser]
-create-wheel = true
+[tool.setuptools_scm]

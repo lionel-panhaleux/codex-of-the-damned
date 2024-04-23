@@ -1,4 +1,4 @@
-include LICENSE README.md CHANGELOG.rst
+include LICENSE README.md CHANGELOG.md
 
 graft codex_of_the_damned
 prune tests
@@ -8,7 +8,7 @@ exclude babel.cfg
 exclude .markdownlint.json
 exclude messages.pot
 
-global-include **/*.mo
+global-include *.mo
 global-exclude */__pycache__/*
 global-exclude *.egg-info/*
 global-exclude *.po

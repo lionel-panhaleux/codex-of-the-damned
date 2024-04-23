@@ -1,6 +1,8 @@
-.PHONY: po-update po-compile po release test update
+.PHONY: check-porcelain po-update po-compile po release test update
 
 BABEL_LANG ?= fr
+GIT_TREE_STATE=$(shell (git status --porcelain | grep -q .) && echo dirty || echo clean)
+NEXT_VERSION = `python -m setuptools_scm --strip-dev`
 
 po-update:
 	pybabel extract --charset=utf-8 -c "TRANSLATORS:" -w 120 -k lazy_gettext -F babel.cfg -o messages.pot codex_of_the_damned
@@ -11,9 +13,24 @@ po-compile:
 
 po: po-update po-compile
 
-release:
-	fullrelease
-	pip install -e ".[dev]"
+check-porcelain:
+	ifeq ($(GIT_TREE_STATE),dirty)
+		$(error git state is not clean)
+	endif
+
+clean:
+	rm -rf "codex_of_the_damned.egg-info"
+	rm -rf dist
+
+release-local: clean
+	check-manifest
+	git tag "${NEXT_VERSION}"
+	python -m build
+
+release: release-local
+	git push origin "${NEXT_VERSION}"
+	twine upload -r testpypi dist/*
+	twine upload dist/*
 
 test:
 	black --check codex_of_the_damned tests
