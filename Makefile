@@ -1,4 +1,4 @@
-.PHONY: check-porcelain po-update po-compile po release test update
+.PHONY: po-update po-compile po check-porcelain clean release-local release test update
 
 BABEL_LANG ?= fr
 GIT_TREE_STATE=$(shell (git status --porcelain | grep -q .) && echo dirty || echo clean)
@@ -22,7 +22,7 @@ clean:
 	rm -rf "codex_of_the_damned.egg-info"
 	rm -rf dist
 
-release-local: clean
+release-local: check-porcelain clean
 	check-manifest
 	git tag "${NEXT_VERSION}"
 	python -m build
