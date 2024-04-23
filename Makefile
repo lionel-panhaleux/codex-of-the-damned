@@ -13,7 +13,7 @@ po-compile:
 po: po-update po-compile
 
 check-porcelain:
-	@test -z "$$(git status --porcelain)" && $(error git unclean) || echo git clean
+	@test -z "`git status --porcelain`" && echo "git clean" || $(error git unclean)
 
 clean:
 	rm -rf "codex_of_the_damned.egg-info"
