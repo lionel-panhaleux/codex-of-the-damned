@@ -13,7 +13,7 @@ po-compile:
 po: po-update po-compile
 
 check-porcelain:
-	git diff --exit-code --quiet && echo "git clean" || $(error git unclean)
+	git diff --exit-code --quiet
 
 clean:
 	rm -rf "codex_of_the_damned.egg-info"
