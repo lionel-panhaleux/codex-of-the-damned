@@ -1,7 +1,6 @@
 .PHONY: po-update po-compile po check-porcelain clean release-local release test update
 
 BABEL_LANG ?= fr
-GIT_STATUS = `test -z "$$(git status --porcelain)"`
 NEXT_VERSION = `python -m setuptools_scm --strip-dev`
 
 po-update:
@@ -14,11 +13,7 @@ po-compile:
 po: po-update po-compile
 
 check-porcelain:
-	ifeq ($(GIT_STATUS),)
-		@echo Git repo clean
-	else
-		$(error git state is not clean)
-	endif
+	@test -z "$$(git status --porcelain)" && $(error git unclean) || echo git clean
 
 clean:
 	rm -rf "codex_of_the_damned.egg-info"
