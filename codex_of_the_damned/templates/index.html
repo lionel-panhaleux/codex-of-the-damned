@@ -21,7 +21,8 @@
     brett_s_guide=external("https://gamingwithbs.wordpress.com/new-players-corner/vtes-quick-start-guide",
     _("Brett S. guide")),
     bcp_s_website=external("https://www.blackchantry.com/rulebook/", _("BCP's website")),
-    players_guide=external("https://www.drivethrurpg.com/product/2931/Vampire-The-Eternal-Struggle-Players-Guide", _("Player's Guide")),
+    players_guide=external("https://www.drivethrurpg.com/product/2931/Vampire-The-Eternal-Struggle-Players-Guide",
+    _("Player's Guide")),
     our_video_tutorial=external("https://youtu.be/J6HyIxIzHcA", _("our video tutorial"))
     %}
     {{our_video_tutorial}}, {{ brett_s_guide }}, or one of the other video tutorials below
@@ -100,6 +101,12 @@
 <div class="column-2">
     <h3>{{ _('Tutorials') }}</h3>
     <ul>
+        <li>
+            <span class="brand-icon" style="color: #EB3223;">&#xf167</span>
+            <a target="_blank" href="https://youtu.be/J6HyIxIzHcA">
+                {{ _("The Codex 10min Tutorial") }}
+            </a>
+        </li>
         <li>
             <span class="brand-icon" style="color: #EB3223;">&#xf167</span>
             <a target="_blank" href="https://youtu.be/ejysifYS1ZE">
@@ -304,8 +311,10 @@
     <h3><span class="brand-icon" style="color: #737DF8;">&#xf392</span> {{ _('Discord bots') }}</h3>
     <ul>
         <li><a target="_blank" href="https://github.com/lionel-panhaleux/timer">Timer</a></li>
-        <li>{{ _('Cards lookup') }}: <a target="_blank" href="https://github.com/lionel-panhaleux/krcg-bot">KRCG</a></li>
-        <li>{{ _('Tournament management') }}: <a target="_blank" href="https://github.com/lionel-panhaleux/archon-bot">Archon</a></li>
+        <li>{{ _('Cards lookup') }}: <a target="_blank" href="https://github.com/lionel-panhaleux/krcg-bot">KRCG</a>
+        </li>
+        <li>{{ _('Tournament management') }}: <a target="_blank"
+                href="https://github.com/lionel-panhaleux/archon-bot">Archon</a></li>
     </ul>
 </div>
 {% endblock %}
