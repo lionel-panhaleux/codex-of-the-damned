@@ -117,33 +117,7 @@ convert -morphology Smooth Octagon:2 clan-ahrimanes.gif clan-ahrimanes.svg
 
 ### Google Translate
 
-Use python and Google Translate to help with translation:
+Use [POEdit](https://poedit.net) and [Google Translate](https://translate.google.com) to help with translations.
 
-```python
-import clipboard
-import pprint
-import re
-
-def pre():
-    s = "".join(s[1:-1] for s in clipboard.paste().split("\n"))
-    s = re.sub(r"%\(([^\)]*)\)s", r"§K3PX\1§", s)
-    clipboard.copy(s)
-
-def post():
-    s = clipboard.paste()
-    s = pprint.pformat(re.sub(r"§K3PX([^§]*)§", r"%(\1)s", s), width=120)
-    s = re.sub(
-            r"(^')|('$)",
-            '"',
-            re.sub(r"^\s*", "", s[1:-1], flags=re.MULTILINE),
-            flags=re.MULTILINE
-        ).replace("\\n", "")
-    clipboard.copy(s)
-
-# usage:
-#  > copy paragraph to translate from the PO file
-# pre()
-# > copy translation
-# post()
-# > copy result to the PO file
-```
+Run `make po` to build the translation files under `codex-of-the-damned/translations`,
+edit them with [POEdit](https://poedit.net), then run `make po` when you're done to streamline them.

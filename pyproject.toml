@@ -28,14 +28,14 @@ dependencies = ["flask>=3", "flask-babel>=4", "unidecode>=1", "Jinja2>=3"]
 [project.optional-dependencies]
 dev = [
     "black>=24",
-    "build",
-    "clipboard>=0",
+    "build>=1",
+    "check-manifest>=0"
     "ipython>=8",
     "pytest>=8",
     "requests>=2",
     "ruff>=0",
-    "setuptools_scm",
-    "twine",
+    "setuptools_scm>=8",
+    "twine>=5",
 ]
 
 [project.scripts]
