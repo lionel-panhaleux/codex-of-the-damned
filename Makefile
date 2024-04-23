@@ -1,7 +1,6 @@
 .PHONY: po-update po-compile po check-porcelain clean release-local release test update
 
 BABEL_LANG ?= fr
-GIT_TREE_STATE=`git status --porcelain | grep -q . && echo dirty || echo clean`
 NEXT_VERSION = `python -m setuptools_scm --strip-dev`
 
 po-update:
@@ -14,9 +13,9 @@ po-compile:
 po: po-update po-compile
 
 check-porcelain:
-	ifeq ($(GIT_TREE_STATE),dirty)
+	ifeq (`git status --porcelain`,)
+	else
 		$(error git state is not clean)
-
 	endif
 
 clean:
