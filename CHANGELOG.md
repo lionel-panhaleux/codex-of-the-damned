@@ -5,7 +5,10 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## Unreleased
+## 1.72 (2024-05-02)
+
+- Fix inaccuracies in savannah salt and hesha's imperium archetypes
+- Fix deck building video link (Otso's guide) in strategy
 
 ## 1.71 (2024-04-23)
 
