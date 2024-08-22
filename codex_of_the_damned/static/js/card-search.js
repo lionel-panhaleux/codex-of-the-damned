@@ -479,7 +479,7 @@ function compareSet(a, b) {
     return ret
 }
 function addCardEvents(pelem) {
-    for (elem of pelem.children) {
+    for (let elem of pelem.children) {
         if (elem.classList.contains("krcg-card")) {
             elem.addEventListener("click", clickCard.bind(elem))
             elem.addEventListener("mouseover", overCard.bind(elem))

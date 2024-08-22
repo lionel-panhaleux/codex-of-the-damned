@@ -28,7 +28,8 @@
 <img src="{{ url_for('static', filename='img/new-blood-decks.webp') }}" alt="New Blood decks">
 <p>
     {% trans trimmed
-    new_blood=external("https://www.blackchantry.com/products/vampire-the-eternal-struggle-fifth-edition/new-blood-introductory-decks-for-vampire-the-eternal-struggle/", _("New Blood"))
+    new_blood=external("https://www.blackchantry.com/products/vampire-the-eternal-struggle-fifth-edition/new-blood-introductory-decks-for-vampire-the-eternal-struggle/",
+    _("New Blood"))
     %}
     If you're more interested into demoing the game, you might want to acquire instead the
     five {{ new_blood }} decks matching those clans: they're cheaper and they're perfect to
@@ -40,8 +41,10 @@
 </p>
 <p>
     {% trans trimmed
-    tremere=external("https://vtesinformationhighway.wordpress.com/2022/08/08/old-blood-new-blood-tremere-v5/", _("Tremere")),
-    malkavian=external("https://vtesinformationhighway.wordpress.com/2022/09/12/old-blood-new-blood-malkavian-v5/", _("Malkavian"))
+    tremere=external("https://vtesinformationhighway.wordpress.com/2022/08/08/old-blood-new-blood-tremere-v5/",
+    _("Tremere")),
+    malkavian=external("https://vtesinformationhighway.wordpress.com/2022/09/12/old-blood-new-blood-malkavian-v5/",
+    _("Malkavian"))
     %}
     If you want to go beyond that and achieve the highest power possible for the lowest
     price, it seems like a good rule of thumb is to go <strong>one V5 starter + two New Blood</strong> for
@@ -84,11 +87,16 @@
     <img src="{{ url_for('static', filename='img/v5a-brujah.webp') }}" alt="V5 Brujah deck">
     <p>
         {% trans trimmed
-        banu_haqim_precon=external("https://www.blackchantry.com/vampire-the-eternal-struggle-fifth-edition/fifth-edition-banu-haqim/", _("Banu Haqim")),
-        brujah_precon=external("https://www.blackchantry.com/products/vampire-the-eternal-struggle-fifth-edition/fifth-edition-brujah/", _("Brujah")),
-        gangrel_precon=external("https://www.blackchantry.com/products/vampire-the-eternal-struggle-fifth-edition/fifth-edition-gangrel/", _("Gangrel")),
-        ministry_precon=external("https://www.blackchantry.com/products/vampire-the-eternal-struggle-fifth-edition/fifth-edition-the-ministry/", _("Ministry")),
-        new_blood_bundles=external("https://www.blackchantry.com/products/vampire-the-eternal-struggle-fifth-edition/new-blood-introductory-decks-for-vampire-the-eternal-struggle/", _("New Blood bundles"))
+        banu_haqim_precon=external("https://www.blackchantry.com/vampire-the-eternal-struggle-fifth-edition/fifth-edition-banu-haqim/",
+        _("Banu Haqim")),
+        brujah_precon=external("https://www.blackchantry.com/products/vampire-the-eternal-struggle-fifth-edition/fifth-edition-brujah/",
+        _("Brujah")),
+        gangrel_precon=external("https://www.blackchantry.com/products/vampire-the-eternal-struggle-fifth-edition/fifth-edition-gangrel/",
+        _("Gangrel")),
+        ministry_precon=external("https://www.blackchantry.com/products/vampire-the-eternal-struggle-fifth-edition/fifth-edition-the-ministry/",
+        _("Ministry")),
+        new_blood_bundles=external("https://www.blackchantry.com/products/vampire-the-eternal-struggle-fifth-edition/new-blood-introductory-decks-for-vampire-the-eternal-struggle/",
+        _("New Blood bundles"))
         %}
         There are additional V5 precons that are not in the standard box, they should be your first stop:
         {{ banu_haqim_precon }} {{ banu_haqim }}, {{ brujah_precon }} {{ brujah }}, {{ gangrel_precon }} {{ gangrel }}
@@ -100,9 +108,12 @@
     </p>
     <p>
         {% trans trimmed
-        ravnos_precon=external("https://www.blackchantry.com/products/vampire-the-eternal-struggle-fifth-edition/fifth-edition-ravnos/", _("Ravnos")),
-        salubri_precon=external("https://www.blackchantry.com/products/vampire-the-eternal-struggle-fifth-edition/fifth-edition-salubri/", _("Salubri")),
-        tzimisce_precon=external("https://www.blackchantry.com/products/vampire-the-eternal-struggle-fifth-edition/fifth-edition-tzimisce/", _("Tzimisce"))
+        ravnos_precon=external("https://www.blackchantry.com/products/vampire-the-eternal-struggle-fifth-edition/fifth-edition-ravnos/",
+        _("Ravnos")),
+        salubri_precon=external("https://www.blackchantry.com/products/vampire-the-eternal-struggle-fifth-edition/fifth-edition-salubri/",
+        _("Salubri")),
+        tzimisce_precon=external("https://www.blackchantry.com/products/vampire-the-eternal-struggle-fifth-edition/fifth-edition-tzimisce/",
+        _("Tzimisce"))
         %}
         There are also precons for {{ salubri_precon }} {{ salubri }},
         {{ tzimisce_precon }} {{ tzimisce }} and {{ ravnos_precon }} {{ ravnos }}.
@@ -113,8 +124,18 @@
         {% endtrans %}
     </p>
     <p>
+        {% trans trimmed
+        anniversary=external("https://www.blackchantry.com/products/vampire-the-eternal-struggle-fifth-edition/30th-anniversary/",
+        _("30th Anniversary"))
+        %}
+        Finally, the {{ anniversary }} provides a second deck for the Toreador {{ toreador }}, with a stronger political
+        angle, adding a new high-end opposition on your tables. It also contain a lot of great cards for any
+        Camarilla political deck, if you're interested.
+        {% endtrans %}
+    </p>
+    <p>
         {% trans trimmed %}
-        With this acquisition on top of the base box, you will have twelve strong decks that can be enjoyed together
+        With this acquisition on top of the base box, you will have thirteen strong decks that can be enjoyed together
         in a balanced and fun experience. That's already a high replayability there for any playgroup.
         Going any further means you're not a Neonate anymore, but an experienced Ancillae ready to expand their horizon.
         {% endtrans %}
@@ -126,12 +147,18 @@
     <img src="{{ url_for('static', filename='img/25th-anniversary.webp') }}" alt="25th Anniversary deck">
     <p>
         {% trans trimmed
-        legacy_preconstructed_decks=external("https://www.blackchantry.com/products/legacy/preconstructed-decks/", _("legacy preconstructed decks")),
-        anniversary=external("https://www.blackchantry.com/products/legacy/preconstructed-decks/product-25th-anniversary/", _("25th Anniversary")),
-        den_of_fiends=external("https://www.blackchantry.com/products/legacy/preconstructed-decks/product-den-of-fiends/", "Den of Fiends"),
-        parliament_of_shadows=external("https://www.blackchantry.com/products/legacy/preconstructed-decks/product-parliament-of-shadows/", "Parliament of Shadows"),
-        libertine_ball=external("https://www.blackchantry.com/products/legacy/preconstructed-decks/product-libertine-ball/", "Libertine Ball"),
-        pact_with_nephandi=external("https://www.blackchantry.com/products/legacy/preconstructed-decks/product-pact-with-nephandi/", "Pact with Nephandi")
+        legacy_preconstructed_decks=external("https://www.blackchantry.com/products/legacy/preconstructed-decks/",
+        _("legacy preconstructed decks")),
+        anniversary=external("https://www.blackchantry.com/products/legacy/preconstructed-decks/product-25th-anniversary/",
+        _("25th Anniversary")),
+        den_of_fiends=external("https://www.blackchantry.com/products/legacy/preconstructed-decks/product-den-of-fiends/",
+        "Den of Fiends"),
+        parliament_of_shadows=external("https://www.blackchantry.com/products/legacy/preconstructed-decks/product-parliament-of-shadows/",
+        "Parliament of Shadows"),
+        libertine_ball=external("https://www.blackchantry.com/products/legacy/preconstructed-decks/product-libertine-ball/",
+        "Libertine Ball"),
+        pact_with_nephandi=external("https://www.blackchantry.com/products/legacy/preconstructed-decks/product-pact-with-nephandi/",
+        "Pact with Nephandi")
         %}
         The {{ legacy_preconstructed_decks }} are another series of ready-to-play powerful decks.
         The {{ anniversary }} is a very strong top-tier tournament Gangrel {{ gangrel }} deck,
@@ -149,10 +176,11 @@
     <img src="{{ url_for('static', filename='img/print-on-demand.webp') }}" alt="Print on demand">
     <p>
         {% trans trimmed
-        drivethru_cards=external("https://www.drivethrucards.com/browse/pub/12056/Black-Chantry-Productions/subcategory/30619_34256/VTES-Legacy-Card-Singles", "DriveThru Cards"),
+        drivethru_cards=external("https://www.drivethrucards.com/browse/pub/12056/Black-Chantry-Productions/subcategory/30619_34256/VTES-Legacy-Card-Singles",
+        "DriveThru Cards"),
         gamepod=external("https://www.gamepod.es", "Gamepod")
         %}
-        So, you got 13 decks and you want more? Greedy childe of the darkness, very well.
+        So, you got 14 decks and you want more? Greedy childe of the darkness, very well.
         Your next inquiry should be the Print-on-Demand cards, then. They are the same quality
         as the bundles you acquired already, and cost less than $0.50 a card. They can be
         bought from {{ drivethru_cards }} in the US and {{ gamepod }} in the EU.
@@ -180,7 +208,8 @@
     <img src="{{ url_for('static', filename='img/promo-pack-1.webp') }}" alt="Promo Pack 1">
     <p>
         {% trans trimmed
-        promo_pack_1=external("https://www.blackchantry.com/products/legacy/bundles/product-promo-pack-1/", "Promo Pack 1"),
+        promo_pack_1=external("https://www.blackchantry.com/products/legacy/bundles/product-promo-pack-1/", "Promo Pack
+        1"),
         the_capuchin = link("/archetypes/neonate/the-capuchin"),
         baltimore_purge = link("/archetypes/baltimore-purge")
         %}
@@ -232,7 +261,7 @@
     <p>
         {% trans trimmed %}
         Note that the VEKN Inner Circle did announce that a "V5 format" will probably
-        be defined in 2023. There is no precise list yet of what we can expect as part of it,
+        be defined soon. There is no precise list yet of what we can expect as part of it,
         but most likely all products listed as V5 on the BCP website and online shop will
         probably be part of it, whereas legacy products and print on demand reprints
         will be excluded of it. Promo vampires starting with the promo pack 2 will
@@ -260,11 +289,76 @@
 </div>
 
 <div class="column-2">
+    <h3>{{ _('30th Anniversary') }}</h3>
+    <img src="{{ url_for('static', filename='img/30th-anniversary.webp') }}" alt="30th Anniversary deck">
+    <p>
+        {% trans trimmed
+        anniversary=external("https://www.blackchantry.com/products/vampire-the-eternal-struggle-fifth-edition/30th-anniversary/",
+        _("30th Anniversary")),
+        dreams_of_the_sphinx=card("Dreams of the Sphinx"),
+        giant_s_blood=card("Giant's Blood"),
+        information_highway=card("Information Highway"),
+        zillah_s_valley=card("Zillah's Valley"),
+        villein=card("Villein"),
+        parity_shift=card("Parity Shift"),
+        banishment=card("Banishment"),
+        majesty=card("Majesty"),
+        awe=card("Awe"),
+        charismatic_aura=card("Charismatic Aura"),
+        my_enemys_enemy=card("My Enemy's Enemy"),
+        telepathic_misdirection=card("Telepathic Misdirection")
+        %}
+        Anniversary decks are a great option if you're looking into having more depth for deck-building.
+        Once you've got two copies of your deck and two copies of the New Blood,
+        the {{ anniversary }} or the previous one (next section) will probably be your first pick.
+        It provides a good number of staples you'll want to have, especially on the master module:
+        {{ dreams_of_the_sphinx }}, {{ giant_s_blood }} and {{ information_highway }},
+        a good number of {{ zillah_s_valley }} (which a few good high capacity decks absolutely require),
+        and of {{ villein }}.
+        On top of that, it comes with a good selection of votes like {{ parity_shift }} and {{ banishment }},
+        and useful Presence {{ pre }} and Auspex {{ aus }} cards,
+        like {{ majesty }}, {{ awe }}, {{ charismatic_aura }}, {{ my_enemys_enemy }} and {{ telepathic_misdirection }}.
+        {% endtrans %}
+    </p>
+    <p>
+        {% trans trimmed
+        camarilla_conclave=card("Camarilla Conclave"),
+        camarillas_iron_fist=card("Camarilla's Iron Fist"),
+        confiscation=card("Confiscation"),
+        loup=card("Loup"),
+        dónal_o_connor=card("Dónal O’Connor (G6)"),
+        ian_carfax=card("Ian Carfax"),
+        juliet_parr=card("Juliet Parr"),
+        lucinde_alastor=card("Lucinde, Alastor (G7)"),
+        molly_mac_donald=card("Molly MacDonald"),
+        nikolaus_vermeulen=card("Nikolaus Vermeulen (G6)"),
+        banu_haqim_justicar=card("Banu Haqim Justicar"),
+        lasombra_justicar=card("Lasombra Justicar")
+        %}
+        This bundle also includes great new cards for Camarilla political decks:
+        {{ camarilla_conclave }}, {{ camarillas_iron_fist }} and {{ confiscation }}.
+        On top of that, it is of course an unmissable upgrade for Toreador {{ toreador }} decks
+        with <strong>8 new vampires</strong>, and the new {{ loup }}, already a staple for Toreador {{ toreador }}.
+        The bundle also includes a few new vampires for other Camarilla clans:
+        {{ dónal_o_connor }} {{ brujah }},
+        {{ ian_carfax }} {{ tremere }},
+        {{ juliet_parr }} {{ malkavian }},
+        {{ lucinde_alastor }} {{ ventrue }},
+        {{ molly_mac_donald }} {{ nosferatu }}, and
+        {{ nikolaus_vermeulen }} {{ nosferatu }}.
+        Although the Lasombra {{ lasombra }} and Banu Haqim {{ banu_haqim }} have no new vampire
+        (their Justicar being already in the V5 starter), they get their own Justicar political actions:
+        {{ banu_haqim_justicar }} and {{ lasombra_justicar }}.
+        {% endtrans %}
+    </p>
+</div>
+<div class="column-2">
     <h3>{{ _('25th Anniversary') }}</h3>
     <img src="{{ url_for('static', filename='img/25th-anniversary.webp') }}" alt="25th Anniversary deck">
     <p>
         {% trans trimmed
-        anniversary=external("https://www.blackchantry.com/products/legacy/preconstructed-decks/product-25th-anniversary/", _("25th Anniversary")),
+        anniversary=external("https://www.blackchantry.com/products/legacy/preconstructed-decks/product-25th-anniversary/",
+        _("25th Anniversary")),
         dreams_of_the_sphinx=card("Dreams of the Sphinx"),
         the_coven=card("The Coven"),
         giant_s_blood=card("Giant's Blood"),
@@ -278,34 +372,31 @@
         rapid_change=card("Rapid Change"),
         murmur_of_the_false_will=card("Murmur of the False Will")
         %}
-        You'll notice if you go in the neonate archetypes section that almost all optimised
-        decklists mention using quite a few cards from the {{ anniversary }} deck. So yes,
-        once you've got two copies of your deck and two copies of the New Blood,
-        it's probably your first pick here. It provides you with a good number of staples you'll
-        want to have, especially on the master module: {{ dreams_of_the_sphinx }}, {{ the_coven }},
-        {{ giant_s_blood }} and {{ information_highway }}, a good number of {{ zillah_s_valley }}
-        (which a few good high capacity decks absolutely require), and a number of {{ villein }} and
-        {{ vessel }}. But on top of that, it comes with a good selection of votes, and good numbers
-        of very useful cards in various disciplines, like {{ govern_the_unaligned }}, {{ form_of_mist }}
+        Depending on what clans you're building on, the previous {{ anniversary }} might ba a good complement,
+        or an even better deal than the latest one. It also contains excellent Master cards: {{ dreams_of_the_sphinx }},
+        {{ the_coven }}, {{ giant_s_blood }} and {{ information_highway }}, a good number of {{ zillah_s_valley }},
+        and a number of {{ villein }} and {{ vessel }}.
+        On the disciplines side, it provides great additions for Dominate {{ dom }}, Protean {{ pro }},
+        and Fortitude {{ for }}, with staples like {{ govern_the_unaligned }}, {{ form_of_mist }}
         or {{ freak_drive }}. Some cards are only available in this bundle,
         like {{ rapid_change }} or {{ murmur_of_the_false_will }}.
         {% endtrans %}
     </p>
 </div>
-
 <div class="column-2">
     <h3>{{ _('Parliament of Shadows') }}</h3>
     <img src="{{ url_for('static', filename='img/parliament-of-shadows.webp') }}" alt="Parliament of Shadows">
     <p>
         {% trans trimmed
-        parliament_of_shadows=external("https://www.blackchantry.com/products/legacy/preconstructed-decks/product-parliament-of-shadows/", _("Parliament of Shadows")),
+        parliament_of_shadows=external("https://www.blackchantry.com/products/legacy/preconstructed-decks/product-parliament-of-shadows/",
+        _("Parliament of Shadows")),
         information_highway=card("Information Highway"),
         jake_washington=card("Jake Washington"),
         papillon=card("Papillon"),
         obedience=card("Obedience"),
         mylan_horseed=card("Mylan Horseed")
         %}
-        Depending on what kind of decks you're playing, {{ parliament_of_shadows }} is potentially a good second step.
+        Depending on what kind of decks you're playing, {{ parliament_of_shadows }} is potentially a good next step.
         Again, it has a lot of good master cards: {{ information_highway }}, {{ jake_washington }}, {{ papillon }},
         and the reprints of {{ obedience }} and {{ mylan_horseed }}. Still, depending on what
         kind of deck you're focusing on, this might be useless or costly, so check the cards list.
@@ -318,15 +409,18 @@
     <img src="{{ url_for('static', filename='img/kot.webp') }}" alt="Keepers of Traditions">
     <p>
         {% trans trimmed
-        keepers_of_traditions_1=external("https://www.blackchantry.com/products/legacy/bundles/product-keepers-of-tradition-reprint-bundle-1/", "Keepers of Tradition 1"),
-        keepers_of_traditions_2=external("https://www.blackchantry.com/products/legacy/bundles/product-keepers-of-tradition-reprint-bundle-2/", "Keepers of Tradition 2"),
+        keepers_of_traditions_1=external("https://www.blackchantry.com/products/legacy/bundles/product-keepers-of-tradition-reprint-bundle-1/",
+        "Keepers of Tradition 1"),
+        keepers_of_traditions_2=external("https://www.blackchantry.com/products/legacy/bundles/product-keepers-of-tradition-reprint-bundle-2/",
+        "Keepers of Tradition 2"),
         force_of_personality=card("Force of Personality"),
         touch_of_clarity=card("Touch of Clarity"),
         scourge_of_the_enochians=card("Scourge of the Enochians"),
         ponticulus=card("Ponticulus")
         %}
         If you're focusing on a clan, you'll want to check the matching Keepers of Traditions bundle.
-        {{ keepers_of_traditions_1 }} for Brujah {{ brujah }}, Gangrel {{ gangrel }}, Malkavian {{ malkavian }} and Nosferatu {{ nosferatu }},
+        {{ keepers_of_traditions_1 }} for Brujah {{ brujah }}, Gangrel {{ gangrel }}, Malkavian {{ malkavian }} and
+        Nosferatu {{ nosferatu }},
         {{ keepers_of_traditions_2 }} for Toreador {{ toreador }}, Tremere {{ tremere }} and Ventrue {{ ventrue }}.
         They often offer very good crypt alternatives that will open strong builds for those clans:
         all group 4 Inner Circle members, and group 5 Justicars, as well as very strong vampires in the groups 4 and 5.
@@ -335,14 +429,15 @@
         {% endtrans %}
     </p>
     <p>
-    {% trans trimmed
-    first_blood_malkavian=external("https://www.blackchantry.com/products/legacy/first-blood/first-blood-malkavian/", "First Blood: Malkavian")
-    %}
+        {% trans trimmed
+        first_blood_malkavian=external("https://www.blackchantry.com/products/legacy/first-blood/first-blood-malkavian/",
+        "First Blood: Malkavian")
+        %}
         <strong>Beware for Malkavians</strong> {{ malkavian }}, the ones in this bundle have Dementation {{ dem }}
         instead of Dominate {{ dom }} as clan discipline. The legacy {{ dem }} is an interesting,
         albeit a completely separate branch for Malkavians. If you want to go down this road,
         you might want to look into {{ first_blood_malkavian }} for additional {{ dem }} cards and vampires.
-    {% endtrans %}
+        {% endtrans %}
     </p>
 </div>
 
@@ -351,7 +446,8 @@
     <img src="{{ url_for('static', filename='img/print-on-demand.webp') }}" alt="Print on demand">
     <p>
         {% trans trimmed
-        drivethru_cards=external("https://www.drivethrucards.com/browse/pub/12056/Black-Chantry-Productions/subcategory/30619_34256/VTES-Legacy-Card-Singles", "Drivethru Cards"),
+        drivethru_cards=external("https://www.drivethrucards.com/browse/pub/12056/Black-Chantry-Productions/subcategory/30619_34256/VTES-Legacy-Card-Singles",
+        "Drivethru Cards"),
         gamepod=external("https://www.gamepod.es", "Gamepod"),
         direct_intervention=card("Direct Intervention"),
         anarch_convert=card("Anarch Convert"),
@@ -364,10 +460,11 @@
         %}
         The other avenue worth exploring to get more cards for your deck is the print on demand option,
         with {{ drivethru_cards }} in the US and {{ gamepod }} in the EU.
-        Of ourse, if you're playing Lasombra {{ lasombra }} or Tzimisce {{ tzimisce }}, this gives you easy access
+        Of course, if you're playing Lasombra {{ lasombra }} or Tzimisce {{ tzimisce }}, this gives you easy access
         to all the clan cards you could need, plus Obtenebration {{ obt }} and Vicissitude {{ vic }} cards.
         But even for other clans, you can fetch important staples like {{ direct_intervention }}
-        and {{ anarch_convert }}. Some key cards are also available for Malkavian {{ malkavian }}, Gangrel {{ gangrel }} and Brujah {{ brujah }},
+        and {{ anarch_convert }}. Some key cards are also available for Malkavian {{ malkavian }}, Gangrel {{ gangrel }}
+        and Brujah {{ brujah }},
         like {{ mental_maze }}, {{ hell_for_leather }}, {{ power_of_one }}, {{ shattering }},
         {{ smoke_and_mirrors }} and {{ undue_influence }}.
         {% endtrans %}
@@ -392,7 +489,8 @@
     <img src="{{ url_for('static', filename='img/fall-of-london.webp') }}" alt="Fall of London">
     <p>
         {% trans trimmed
-        fall_of_london=external("https://www.blackchantry.com/products/legacy/vampire-the-eternal-struggle-fifth-edition/fall-of-london/", _("Fall of London")),
+        fall_of_london=external("https://www.blackchantry.com/products/legacy/vampire-the-eternal-struggle-fifth-edition/fall-of-london/",
+        _("Fall of London")),
         abraham_mellon=card("Abraham Mellon"),
         darius_shirazi=card("Darius Shirazi"),
         mithras=card("Mithras (G6)", "Mithras"),
@@ -403,10 +501,11 @@
         adisa=card("Adisa")
         %}
         {{ fall_of_london }} might have a couple of interesting new vampires that can really benefit your deck,
-        and it's a relatively cheap bundle. {{ abraham_mellon }} and {{ darius_shirazi }}  are great additions for
+        and it's a relatively cheap bundle. {{ abraham_mellon }} and {{ darius_shirazi }} are great additions for
         some Malkavian {{ malkavian }} decks, {{ mithras }}, {{ queen_anne }} and {{ valerius }} open up interesting
         high capacity avenues for the Ventrue {{ ventrue }}, {{ daria }} with her superior {{ AUS }} can open new
-        possibilities for Nosferatu {{ nosferatu }}, {{ chun_hei }} might find her place in combat-heavy Brujah {{ brujah }}
+        possibilities for Nosferatu {{ nosferatu }}, {{ chun_hei }} might find her place in combat-heavy Brujah {{
+        brujah }}
         decks, and {{ adisa }} can be a nice addition in some Banu Haqim {{ banu_haqim }} builds.
         {% endtrans %}
     </p>
@@ -417,14 +516,17 @@
     <img src="{{ url_for('static', filename='img/libertine-ball.webp') }}" alt="Libertine Ball">
     <p>
         {% trans trimmed
-        legacy_preconstructed_decks=external("https://www.blackchantry.com/products/legacy/preconstructed-decks/", _("legacy preconstructed decks")),
-        libertine_ball=external("https://www.blackchantry.com/products/legacy/preconstructed-decks/product-libertine-ball/", "Libertine Ball"),
+        legacy_preconstructed_decks=external("https://www.blackchantry.com/products/legacy/preconstructed-decks/",
+        _("legacy preconstructed decks")),
+        libertine_ball=external("https://www.blackchantry.com/products/legacy/preconstructed-decks/product-libertine-ball/",
+        "Libertine Ball"),
         the_embrace=card("The Embrace"),
         consanguineous_boon=card("Consanguineous Boon"),
         haqim_s_law_retribution=card("Haqim's Law: Retribution")
         %}
         Depending on what you're playing, acquiring some other {{ legacy_preconstructed_decks }} might be in order then.
-        Using {{ libertine_ball }}, for example, can let you explore a different avenue for a Banu Haqim {{ banu_haqim }}
+        Using {{ libertine_ball }}, for example, can let you explore a different avenue for a Banu Haqim {{ banu_haqim
+        }}
         deck, combining {{ the_embrace }} and {{ consanguineous_boon }} to build a bigger swarm and get the most out of
         {{ haqim_s_law_retribution}}.
         {% endtrans %}
@@ -458,7 +560,8 @@
     <img src="{{ url_for('static', filename='img/anthology-1.webp') }}" alt="Anthology 1">
     <p>
         {% trans trimmed
-        anthology_1=external("https://www.blackchantry.com/products/legacy/bundles/product-anthology-1/", "Anthology 1"),
+        anthology_1=external("https://www.blackchantry.com/products/legacy/bundles/product-anthology-1/", "Anthology
+        1"),
         ashur_tablets=card("Ashur Tablets"),
         liquidation=card("Liquidation"),
         heart_of_nizchetus=card("Heart of Nizchetus"),
@@ -470,7 +573,8 @@
         There's really only one reason to go for {{ anthology_1 }}, and that's if you're interested
         in a set of {{ ashur_tablets }} and {{ liquidation }}. In that case, you'll want three to five
         of those bundles. Sure, you'll also get copies of other good cards like
-        The {{ heart_of_nizchetus }}, {{ carlton_van_wyk }}, {{ the_unmasking }}, {{ enkil_cog }} and {{ anarch_convert }},
+        The {{ heart_of_nizchetus }}, {{ carlton_van_wyk }}, {{ the_unmasking }}, {{ enkil_cog }} and {{ anarch_convert
+        }},
         but it's still a rather expensive investment for the return you get.
         {% endtrans %}
     </p>
@@ -481,8 +585,10 @@
     <img src="{{ url_for('static', filename='img/echoes-of-gehenna.webp') }}" alt="Echoes of Gehenna">
     <p>
         {% trans trimmed
-        echoes_of_gehenna=external("https://www.blackchantry.com/products/legacy/bundles/echoes-of-gehenna/", "Echoes of Gehenna"),
-        anthology_1=external("https://www.blackchantry.com/products/legacy/bundles/product-anthology-1/", "Anthology 1"),
+        echoes_of_gehenna=external("https://www.blackchantry.com/products/legacy/bundles/echoes-of-gehenna/", "Echoes of
+        Gehenna"),
+        anthology_1=external("https://www.blackchantry.com/products/legacy/bundles/product-anthology-1/", "Anthology
+        1"),
         narrow_minds=card("Narrow Minds"),
         the_uncoiling=card("The Uncoiling"),
         fbi_special_affairs_division=card("FBI: Special Affairs Division"),
@@ -513,7 +619,8 @@
         emerald_legion=link("/archetypes/emerald-legion")
         %}
         The Unaligned kickstarter bundles make the end of the list here. {{ unaligned_1 }} is mostly
-        interesting if you're into Banu Haqim {{ banu_haqim }}: it gets you {{ flavia }}, {{ omer }} and {{ al_ashrad }},
+        interesting if you're into Banu Haqim {{ banu_haqim }}: it gets you {{ flavia }}, {{ omer }} and {{ al_ashrad
+        }},
         plus the mildly interesting {{ focus_the_blood }}. The Gangrel {{ gangrel }} cards have mostly been reprinted
         in the preconstructed decks so it's not that appealing.
         There are only a couple of cards of interest in {{ unaligned_2 }}: {{ saatet_ta }} for Ministry {{ ministry }},
@@ -527,10 +634,11 @@
 <div class="column-2">
     <h3>{{ _('First Blood') }}</h3>
     <img src="{{ url_for('static', filename='img/first-blood.webp') }}" alt="First Blood">
-        <p>
+    <p>
         {% trans trimmed
         first_blood=external("https://www.blackchantry.com/products/legacy/first-blood", "First Blood"),
-        keepers_of_tradition=external("https://www.blackchantry.com/products/legacy/bundles/product-keepers-of-tradition-reprint-bundle-1/", "Keepers of Tradition"),
+        keepers_of_tradition=external("https://www.blackchantry.com/products/legacy/bundles/product-keepers-of-tradition-reprint-bundle-1/",
+        "Keepers of Tradition"),
         aching_beauty=card("Aching Beauty"),
         aid_from_bats=card("Aid from Bats"),
         charnas_the_imp=card("Charnas the Imp", "Charnas"),
@@ -561,7 +669,8 @@
     <h3>{{ _('The rest') }}</h3>
     <p>
         {% trans trimmed
-        shadow_of_berlin=external("https://www.blackchantry.com/products/vampire-the-eternal-struggle-fifth-edition/shadows-of-berlin/", "Shadow of Berlin"),
+        shadow_of_berlin=external("https://www.blackchantry.com/products/vampire-the-eternal-struggle-fifth-edition/shadows-of-berlin/",
+        "Shadow of Berlin"),
         danse_macabre=external("https://blackchantry.shop/products/danse-macabre", "Danse Macabre"),
         amber=card("Amber"),
         aranthebes=card("Aranthebes, The Immortal", "Aranthebes"),
@@ -580,7 +689,8 @@
     </p>
     <p>
         {% trans trimmed
-        heirs_to_the_blood=external("https://www.blackchantry.com/products/legacy/bundles/product-heirs-to-the-blood-reprint-bundle-1/", "Heirs to the Blood")
+        heirs_to_the_blood=external("https://www.blackchantry.com/products/legacy/bundles/product-heirs-to-the-blood-reprint-bundle-1/",
+        "Heirs to the Blood")
         %}
         {{ heirs_to_the_blood }} is mostly irrelevant because the cards are all
         available as print on demand, but it might be worth it if the delivery fees for your location are steep.
@@ -615,10 +725,14 @@
     <img src="{{ url_for('static', filename='img/v5a-brujah.webp') }}" alt="V5 Brujah deck">
     <p>
         {% trans trimmed
-        banu_haqim_precon=external("https://www.blackchantry.com/vampire-the-eternal-struggle-fifth-edition/fifth-edition-banu-haqim/", _("Banu Haqim")),
-        brujah_precon=external("https://www.blackchantry.com/products/vampire-the-eternal-struggle-fifth-edition/fifth-edition-brujah/", _("Brujah")),
-        gangrel_precon=external("https://www.blackchantry.com/products/vampire-the-eternal-struggle-fifth-edition/fifth-edition-gangrel/", _("Gangrel")),
-        ministry_precon=external("https://www.blackchantry.com/products/vampire-the-eternal-struggle-fifth-edition/fifth-edition-the-ministry/", _("Ministry"))
+        banu_haqim_precon=external("https://www.blackchantry.com/vampire-the-eternal-struggle-fifth-edition/fifth-edition-banu-haqim/",
+        _("Banu Haqim")),
+        brujah_precon=external("https://www.blackchantry.com/products/vampire-the-eternal-struggle-fifth-edition/fifth-edition-brujah/",
+        _("Brujah")),
+        gangrel_precon=external("https://www.blackchantry.com/products/vampire-the-eternal-struggle-fifth-edition/fifth-edition-gangrel/",
+        _("Gangrel")),
+        ministry_precon=external("https://www.blackchantry.com/products/vampire-the-eternal-struggle-fifth-edition/fifth-edition-the-ministry/",
+        _("Ministry"))
         %}
         The four supplementary V5 decks, {{ banu_haqim_precon }} {{ banu_haqim }}, {{ ministry_precon }} {{ ministry }},
         {{ gangrel_precon }} {{ gangrel }} and {{ brujah_precon }} {{ brujah }}, introduce big changes.
@@ -636,48 +750,50 @@
     </p>
     <ul>
         <li>
-        {% trans trimmed
-        line_brawl=card("Line Brawl"),
-        street_royals=card("47th Street Royals"),
-        bait_and_switch=card("Bait and Switch"),
-        organized_resistance=card("Organized Resistance")
-        %}
-        Brujah {{ brujah }}: {{ line_brawl }}, {{ street_royals }}, {{ bait_and_switch }},
-        {{ organized_resistance }}
-        {% endtrans %}
+            {% trans trimmed
+            line_brawl=card("Line Brawl"),
+            street_royals=card("47th Street Royals"),
+            bait_and_switch=card("Bait and Switch"),
+            organized_resistance=card("Organized Resistance")
+            %}
+            Brujah {{ brujah }}: {{ line_brawl }}, {{ street_royals }}, {{ bait_and_switch }},
+            {{ organized_resistance }}
+            {% endtrans %}
         </li>
         <li>
-        {% trans trimmed
-        double_deuce=card("Double Deuce"),
-        form_of_the_bat=card("Form of the Bat"),
-        deep_ecology=card("Deep Ecology"),
-        eyes_of_the_wild=card("Eyes of the Wild"),
-        form_of_the_wolf=card("Form of the Wolf")
-        %}
-        Gangrel {{ gangrel }}: {{ double_deuce }}, {{ form_of_the_bat }}, {{ deep_ecology }}, {{ eyes_of_the_wild }},
-        {{ form_of_the_wolf }}
-        {%endtrans %}
+            {% trans trimmed
+            double_deuce=card("Double Deuce"),
+            form_of_the_bat=card("Form of the Bat"),
+            deep_ecology=card("Deep Ecology"),
+            eyes_of_the_wild=card("Eyes of the Wild"),
+            form_of_the_wolf=card("Form of the Wolf")
+            %}
+            Gangrel {{ gangrel }}: {{ double_deuce }}, {{ form_of_the_bat }}, {{ deep_ecology }}, {{ eyes_of_the_wild
+            }},
+            {{ form_of_the_wolf }}
+            {%endtrans %}
         </li>
         <li>
-        {% trans trimmed
-        haqim_s_law_retribution=card("Haqim's Law: Retribution"),
-        hunter_s_mark=card("Hunter's Mark"),
-        hunger_of_marduk=card("Hunger of Marduk")
-        %}
-        Banu Haqim {{ banu_haqim }}: {{ haqim_s_law_retribution }}, {{ hunter_s_mark }}, {{ hunger_of_marduk }}
-        {% endtrans %}
+            {% trans trimmed
+            haqim_s_law_retribution=card("Haqim's Law: Retribution"),
+            hunter_s_mark=card("Hunter's Mark"),
+            hunger_of_marduk=card("Hunger of Marduk")
+            %}
+            Banu Haqim {{ banu_haqim }}: {{ haqim_s_law_retribution }}, {{ hunter_s_mark }}, {{ hunger_of_marduk }}
+            {% endtrans %}
         </li>
         <li>
-        {% trans trimmed
-        the_platinum_protocol=card("The Platinum Protocol"),
-        enchanting_gaze=card("Enchanting Gaze"),
-        revelation_of_the_serpent=card("Revelation of the Serpent"),
-        form_of_the_cobra=card("Form of the Cobra"),
-        party_out_of_bounds=card("Party Out Of Bounds")
-        %}
-        Ministry {{ ministry }}: {{ the_platinum_protocol }}, {{ enchanting_gaze }}, {{ revelation_of_the_serpent }},
-        {{ form_of_the_cobra }}, {{ party_out_of_bounds }}
-        {% endtrans %}
+            {% trans trimmed
+            the_platinum_protocol=card("The Platinum Protocol"),
+            enchanting_gaze=card("Enchanting Gaze"),
+            revelation_of_the_serpent=card("Revelation of the Serpent"),
+            form_of_the_cobra=card("Form of the Cobra"),
+            party_out_of_bounds=card("Party Out Of Bounds")
+            %}
+            Ministry {{ ministry }}: {{ the_platinum_protocol }}, {{ enchanting_gaze }}, {{ revelation_of_the_serpent
+            }},
+            {{ form_of_the_cobra }}, {{ party_out_of_bounds }}
+            {% endtrans %}
         </li>
     </ul>
     <p>
@@ -711,9 +827,12 @@
     <img src="{{ url_for('static', filename='img/v5c-salubri.webp') }}" alt="V5 Salubri deck">
     <p>
         {% trans trimmed
-        ravnos_precon=external("https://www.blackchantry.com/products/vampire-the-eternal-struggle-fifth-edition/fifth-edition-ravnos/", _("Ravnos")),
-        salubri_precon=external("https://www.blackchantry.com/products/vampire-the-eternal-struggle-fifth-edition/fifth-edition-salubri/", _("Salubri")),
-        tzimisce_precon=external("https://www.blackchantry.com/products/vampire-the-eternal-struggle-fifth-edition/fifth-edition-tzimisce/", _("Tzimisce"))
+        ravnos_precon=external("https://www.blackchantry.com/products/vampire-the-eternal-struggle-fifth-edition/fifth-edition-ravnos/",
+        _("Ravnos")),
+        salubri_precon=external("https://www.blackchantry.com/products/vampire-the-eternal-struggle-fifth-edition/fifth-edition-salubri/",
+        _("Salubri")),
+        tzimisce_precon=external("https://www.blackchantry.com/products/vampire-the-eternal-struggle-fifth-edition/fifth-edition-tzimisce/",
+        _("Tzimisce"))
         %}
         Similar to the V5 Anarchs the "Companion" decks (named after the RPG supplement that introduced them)
         cover more heavily changed clans: {{ salubri_precon }} {{ salubri }}, {{ ravnos_precon }} {{ ravnos }} and
@@ -800,7 +919,8 @@
     <p>
         {% trans trimmed %}
         It is notable that the Salubri {{ salubri }} only got new cards that require a Salubri {{ salubri }},
-        but except for the lack of Dominate {{ dom }} on old Salubri {{ salubri }}, these cards could be combined with them.
+        but except for the lack of Dominate {{ dom }} on old Salubri {{ salubri }}, these cards could be combined with
+        them.
         {% endtrans %}
     </p>
     <p>
@@ -811,19 +931,56 @@
 </div>
 
 <div class="column-2">
+    <h3>{{ _('30th Anniversary') }}</h3>
+    <img src="{{ url_for('static', filename='img/30th-anniversary.webp') }}" alt="30th Anniversary deck">
+    <p>
+        {% trans trimmed
+        anniversary_30=external("https://www.blackchantry.com/products/vampire-the-eternal-struggle-fifth-edition/30th-anniversary/",
+        _("30th Anniversary")),
+        dreams_of_the_sphinx=card("Dreams of the Sphinx"),
+        giant_s_blood=card("Giant's Blood"),
+        parity_shift=card("Parity Shift"),
+        banishment=card("Banishment"),
+        camarilla_conclave=card("Camarilla Conclave"),
+        camarillas_iron_fist=card("Camarilla's Iron Fist"),
+        confiscation=card("Confiscation"),
+        loup=card("Loup"),
+        banu_haqim_justicar=card("Banu Haqim Justicar"),
+        lasombra_justicar=card("Lasombra Justicar")
+        %}
+        Anniversary decks are a great source of great cards. The {{ anniversary_30 }} provides great staples like
+        {{ dreams_of_the_sphinx }}, {{ giant_s_blood }}, {{ parity_shift }} and {{ banishment }}.
+        But, more importantly, it contains 14 new vampires (8 Toreador {{ toreador }}) and
+        <strong>new library cards:</strong>
+    <ul>
+        <li>{{ camarilla_conclave }}</li>
+        <li>{{ camarillas_iron_fist }}</li>
+        <li>{{ confiscation }}</li>
+        <li>{{ loup }}</li>
+        <li>{{ banu_haqim_justicar }}</li>
+        <li>{{ lasombra_justicar }}</li>
+    </ul>
+    {% endtrans %}
+    </p>
+</div>
+
+<div class="column-2">
     <h3>{{ _('Kickstarter') }}</h3>
     <img src="{{ url_for('static', filename='img/kickstarter.webp') }}" alt="Kickstarter">
     <p>
         {% trans trimmed
-        kickstarter=external("https://www.kickstarter.com/projects/vtes/vampire-the-eternal-struggle-unleashed", "Kickstarter"),
-        bcp_online_shop=external("https://blackchantry.shop/collections/vampire-the-eternal-struggle-legacy-cards", _("BCP online shop")),
+        kickstarter=external("https://www.kickstarter.com/projects/vtes/vampire-the-eternal-struggle-unleashed",
+        "Kickstarter"),
+        bcp_online_shop=external("https://blackchantry.shop/collections/vampire-the-eternal-struggle-legacy-cards",
+        _("BCP online shop")),
         show_of_force=card("Show of Force"),
         public_vilification=card("Public Vilification"),
         inside_dirt=card("Inside Dirt")
         %}
         If you were wandering around during the blip (the 2010-2017 period with no physical print),
-        you may know of the VEKN "PDF expansion". You might want to know they've been printed through a {{ kickstarter }},
-        and a few copies are still available in online shops around, specifically on the {{ bcp_online_shop }}.
+        you may know of the VEKN "PDF expansion". You might want to know they've been printed through
+        a {{ kickstarter }}, and a few copies are still available in online shops around,
+        specifically on the {{ bcp_online_shop }}.
         You might want to get your claws on those cards to replace your paper prints there.
         Also, {{ show_of_force }}, {{ public_vilification }} and {{ inside_dirt }},
         from Danse Macabre, have been boosted.
@@ -836,7 +993,8 @@
     <img src="{{ url_for('static', filename='img/promo-pack-2.webp') }}" alt="Promo Pack 2">
     <p>
         {% trans trimmed
-        promo_pack_2=external("https://www.blackchantry.com/products/legacy/bundles/product-promo-pack-2/", _("Promo Pack 2"))
+        promo_pack_2=external("https://www.blackchantry.com/products/legacy/bundles/product-promo-pack-2/",
+        _("Promo Pack 2"))
         %}
         {{ promo_pack_2 }} contains Barons for a few clans, quite a few of which are used in very
         competitive builds nowadays (Infernal Princes, Gangrel Barons).
@@ -882,7 +1040,8 @@
     <img src="{{ url_for('static', filename='img/fall-of-london.webp') }}" alt="Fall of London">
     <p>
         {% trans trimmed
-        fall_of_london=external("https://www.blackchantry.com/products/legacy/vampire-the-eternal-struggle-fifth-edition/fall-of-london/", _("Fall of London"))
+        fall_of_london=external("https://www.blackchantry.com/products/legacy/vampire-the-eternal-struggle-fifth-edition/fall-of-london/",
+        _("Fall of London"))
         %}
         {{ fall_of_london }} contains a couple of additional vampires, and a couple of new Library cards:
         {% endtrans %}
@@ -926,9 +1085,10 @@
     <img src="{{ url_for('static', filename='img/new-blood-decks.webp') }}" alt="New Blood">
     <p>
         {% trans trimmed
-        new_blood=external("https://www.blackchantry.com/products/vampire-the-eternal-struggle-fifth-edition/new-blood-introductory-decks-for-vampire-the-eternal-struggle/", _("New Blood"))
+        new_blood=external("https://www.blackchantry.com/products/vampire-the-eternal-struggle-fifth-edition/new-blood-introductory-decks-for-vampire-the-eternal-struggle/",
+        _("New Blood"))
         %}
-        {{ new_blood }} s mainly about new vampires, very few new library cards are released here so far,
+        {{ new_blood }} decks are mainly about new vampires, very few new library cards are released here so far,
         but with more heavily changed clans coming this will probably change in the future.
         The vampires are a very nice addition to the ones available in the V5 starters, if you want to get those crypts.
         {% endtrans %}
@@ -987,7 +1147,8 @@
     <h3 id="what-changed">{{ _('What changed in the last few years?') }}</h3>
     <p>
         {% trans trimmed
-        detailed_list_of_changes=external("https://gist.github.com/lionel-panhaleux/a4a9cad2e492af7c45c50a1cea7e6cf6", _("detailed list of changes"))
+        detailed_list_of_changes=external("https://gist.github.com/lionel-panhaleux/a4a9cad2e492af7c45c50a1cea7e6cf6",
+        _("detailed list of changes"))
         %}
         There have been a number of changes recently. You can browse the {{ detailed_list_of_changes }} but,
         to give you a primer on the most important points:
@@ -995,101 +1156,103 @@
     </p>
     <ul>
         <li>
-        {% trans trimmed
-        psyche=card("Psyche!")
-        %}
+            {% trans trimmed
+            psyche=card("Psyche!")
+            %}
             Since 2011, {{ psyche }} is played during combat, not in-between combats anymore, and priscii have
             "ballots", not "votes".
-        {% endtrans %}
+            {% endtrans %}
         </li>
-        <li>{% trans trimmed %}Caitiff is a full-fledged clan, Anarch is a full-fledged sect, and sect is inherited from the
-            sire when creating a new vampire.{% endtrans %}</li>
-        <li>{% trans trimmed %}Vampires do not automatically get out during influence anymore: you choose whether you turn
-            them up or not.{% endtrans %}</li>
-        <li>{% trans trimmed %}A lot of effects that were mandatory are now optional, and things that were fetched in secret
-            now revealed, for a smoother tournament experience{% endtrans %}</li>
+        <li>{% trans trimmed %}
+            Caitiff is a full-fledged clan, Anarch is a full-fledged sect, and sect is inherited from the
+            sire when creating a new vampire.
+            {% endtrans %}</li>
+        <li>{% trans trimmed %}
+            Vampires do not automatically get out during influence anymore: you choose whether you turn
+            them up or not.
+            {% endtrans %}</li>
+        <li>{% trans trimmed %}
+            A lot of effects that were mandatory are now optional, and things that were fetched in
+            secret now revealed, for a smoother tournament experience
+            {% endtrans %}</li>
         <li>
-        {% trans trimmed
-        lilith_s_blessing=card("Lilith's Blessing")
-        %}
-        {{ lilith_s_blessing }} was banned in 2013
-        {% endtrans %}
-        </li>
+            {% trans trimmed
+            lilith_s_blessing=card("Lilith's Blessing")
+            %}
+            {{ lilith_s_blessing }} was banned in 2013
+            {% endtrans %}</li>
         <li>
-        {% trans trimmed
-        anthelios=card("Anthelios, The Red Star", "Anthelios"),
-        temptation_of_greater_power=card("Temptation of Greater Power"),
-        seeds_of_corruption=card("Seeds of Corruption")
-        %}
-        {{ anthelios }}, {{ temptation_of_greater_power }} and {{ seeds_of_corruption }}
-        were banned in 2017, and tap/untap have been replaced by lock/unlock because of patent issues.
-        {% endtrans %}
-        </li>
+            {% trans trimmed
+            anthelios=card("Anthelios, The Red Star", "Anthelios"),
+            temptation_of_greater_power=card("Temptation of Greater Power"),
+            seeds_of_corruption=card("Seeds of Corruption")
+            %}
+            {{ anthelios }}, {{ temptation_of_greater_power }} and {{ seeds_of_corruption }}
+            were banned in 2017, and tap/untap have been replaced by lock/unlock because of patent issues.
+            {% endtrans %}</li>
         <li>
-        {% trans trimmed
-        gypsies=card("Gypsies"),
-        rom_gypsy=card("Rom Gypsy"),
-        tarbaby_jack=card("Tarbaby Jack"),
-        terrorists=card("Terrorists"),
-        tsigane=card("Tsigane"),
-        double_deuce=card("Double Deuce"),
-        city_star_taxi=card("City Star Taxi"),
-        len_konopka=card("Len Konopka"),
-        dark_web_procurer=card("Dark Web Procurer"),
-        ashlesha=card("Ashlesha")
-        %}
-        {{ gypsies }}, {{ rom_gypsy }}, {{ tarbaby_jack }}, {{ terrorists }} and {{ tsigane }}
-        were banned in 2020 but replaced by
-        {{ double_deuce }}, {{ city_star_taxi }}, {{ len_konopka }}, {{ dark_web_procurer }} and {{ ashlesha }}.
-        {% endtrans %}
-        </li>
+            {% trans trimmed
+            gypsies=card("Gypsies"),
+            rom_gypsy=card("Rom Gypsy"),
+            tarbaby_jack=card("Tarbaby Jack"),
+            terrorists=card("Terrorists"),
+            tsigane=card("Tsigane"),
+            double_deuce=card("Double Deuce"),
+            city_star_taxi=card("City Star Taxi"),
+            len_konopka=card("Len Konopka"),
+            dark_web_procurer=card("Dark Web Procurer"),
+            ashlesha=card("Ashlesha")
+            %}
+            {{ gypsies }}, {{ rom_gypsy }}, {{ tarbaby_jack }}, {{ terrorists }} and {{ tsigane }}
+            were banned in 2020 but replaced by
+            {{ double_deuce }}, {{ city_star_taxi }}, {{ len_konopka }}, {{ dark_web_procurer }} and {{ ashlesha }}.
+            {% endtrans %}</li>
         <li>
-        {% trans trimmed
-        villein=card("Villein"),
-        pentex_subversion=card("Pentex™ Subversion"),
-        una=card("Una"),
-        ankara_citadel=card("The Ankara Citadel, Turkey", "The Ankara Citadel"),
-        parity_shift=card("Parity Shift"),
-        sensory_deprivation=card("Sensory Deprivation"),
-        nightmare_curse=card("Nightmare Curse"),
-        ashur_tablets=card("Ashur Tablets"),
-        emerald_legionnaire=card("Emerald Legionnaire")
-        %}
+            {% trans trimmed
+            villein=card("Villein"),
+            pentex_subversion=card("Pentex™ Subversion"),
+            una=card("Una"),
+            ankara_citadel=card("The Ankara Citadel, Turkey", "The Ankara Citadel"),
+            parity_shift=card("Parity Shift"),
+            sensory_deprivation=card("Sensory Deprivation"),
+            nightmare_curse=card("Nightmare Curse"),
+            ashur_tablets=card("Ashur Tablets"),
+            emerald_legionnaire=card("Emerald Legionnaire")
+            %}
             {{ villein }}, {{ pentex_subversion }}, {{ una }}, {{ ankara_citadel }}, {{ parity_shift }},
             {{ sensory_deprivation }}, {{ nightmare_curse }}, {{ ashur_tablets }}, and {{ emerald_legionnaire }}
             have been nerfed.
-        {% endtrans %}
-        </li>
+            {% endtrans %}</li>
         <li>
-        {% trans trimmed
-        black_metamorphosis=card("Black Metamorphosis"),
-        summon_the_abyss=card("Summon the Abyss"),
-        summon_the_serpent=card("Summon the Serpent"),
-        shadow_parasite=card("Shadow Parasite"),
-        revelation_of_despair=card("Revelation of Despair"),
-        the_realm_of_the_black_sun=card("The Realm of the Black Sun"),
-        principia_discordia=card("Principia Discordia"),
-        masquer=card("Masquer"),
-        kali_s_fang=card("Kali’s Fang"),
-        giuseppe=card("Giuseppe, Gravedigger", "Giuseppe"),
-        edge_vitiation=card("Edge Vitiation"),
-        divine_image=card("Divine Image"),
-        consignment_to_duat=card("Consignment to Duat"),
-        inside_dirt=card("Inside Dirt"),
-        public_vilification=card("Public Vilification"),
-        show_of_force=card("Show of Force"),
-        vivienne_geroux=card("Vivienne Géroux"),
-        quickness=card("Quickness"),
-        herald_of_topheth=card("Herald of Topheth"),
-        oxford_university_england=card("Oxford University, England")
-        %}
+            {% trans trimmed
+            black_metamorphosis=card("Black Metamorphosis"),
+            summon_the_abyss=card("Summon the Abyss"),
+            summon_the_serpent=card("Summon the Serpent"),
+            shadow_parasite=card("Shadow Parasite"),
+            revelation_of_despair=card("Revelation of Despair"),
+            the_realm_of_the_black_sun=card("The Realm of the Black Sun"),
+            principia_discordia=card("Principia Discordia"),
+            masquer=card("Masquer"),
+            kali_s_fang=card("Kali’s Fang"),
+            giuseppe=card("Giuseppe, Gravedigger", "Giuseppe"),
+            edge_vitiation=card("Edge Vitiation"),
+            divine_image=card("Divine Image"),
+            consignment_to_duat=card("Consignment to Duat"),
+            inside_dirt=card("Inside Dirt"),
+            public_vilification=card("Public Vilification"),
+            show_of_force=card("Show of Force"),
+            vivienne_geroux=card("Vivienne Géroux"),
+            quickness=card("Quickness"),
+            herald_of_topheth=card("Herald of Topheth"),
+            oxford_university_england=card("Oxford University, England")
+            %}
             {{ black_metamorphosis }}, {{ summon_the_abyss }}, {{ summon_the_serpent }}, {{ shadow_parasite }},
             {{ revelation_of_despair }}, {{ the_realm_of_the_black_sun }}, {{ principia_discordia }}, {{ masquer }},
             {{ kali_s_fang }}, {{ giuseppe }}, {{ edge_vitiation }}, {{ divine_image }},
             {{ consignment_to_duat }}, {{ inside_dirt }}, {{ public_vilification }}, {{ show_of_force }},
-            {{ vivienne_geroux }}, {{ quickness }}, {{ herald_of_topheth }} and {{ oxford_university_england }} have been boosted.
-        {% endtrans %}
-        </li>
+            {{ vivienne_geroux }}, {{ quickness }}, {{ herald_of_topheth }} and {{ oxford_university_england }} have
+            been boosted.
+            {% endtrans %}</li>
     </ul>
 </div>
 
@@ -1100,7 +1263,8 @@
     <img src="{{ url_for('static', filename='img/print-on-demand.webp') }}" alt="Print on demand">
     <p>
         {% trans trimmed
-        drivethru_cards=external("https://www.drivethrucards.com/browse/pub/12056/Black-Chantry-Productions/subcategory/30619_34256/VTES-Legacy-Card-Singles", "Drivethru Cards"),
+        drivethru_cards=external("https://www.drivethrucards.com/browse/pub/12056/Black-Chantry-Productions/subcategory/30619_34256/VTES-Legacy-Card-Singles",
+        "Drivethru Cards"),
         gamepod=external("https://www.gamepod.es", "Gamepod")
         %}
         In case you're not aware, you might want to know that a lot of legacy cards are available
@@ -1160,7 +1324,8 @@
     <img src="{{ url_for('static', filename='img/anthology-1.webp') }}" alt="Anthology 1">
     <p>
         {% trans trimmed
-        anthology_1=external("https://www.blackchantry.com/products/legacy/bundles/product-anthology-1/", "Anthology 1"),
+        anthology_1=external("https://www.blackchantry.com/products/legacy/bundles/product-anthology-1/", "Anthology
+        1"),
         ashur_tablets=card("Ashur Tablets"),
         liquidation=card("Liquidation"),
         enkil_cog=card("Enkil Cog"),
@@ -1183,7 +1348,8 @@
     <img src="{{ url_for('static', filename='img/25th-anniversary.webp') }}" alt="25th Anniversary deck">
     <p>
         {% trans trimmed
-        anniversary=external("https://www.blackchantry.com/products/legacy/preconstructed-decks/product-25th-anniversary/", _("25th Anniversary")),
+        anniversary=external("https://www.blackchantry.com/products/legacy/preconstructed-decks/product-25th-anniversary/",
+        _("25th Anniversary")),
         enkil_cog=card("Enkil Cog"),
         dreams_of_the_sphinx=card("Dreams of the Sphinx"),
         giant_s_blood=card("Giant's Blood"),
@@ -1207,11 +1373,16 @@
     <img src="{{ url_for('static', filename='img/parliament-of-shadows.webp') }}" alt="Parliament of Shadows">
     <p>
         {% trans trimmed
-        legacy_preconstructed_decks=external("https://www.blackchantry.com/products/legacy/preconstructed-decks/", _("legacy preconstructed decks")),
-        den_of_fiends=external("https://www.blackchantry.com/products/legacy/preconstructed-decks/product-den-of-fiends/", "Den of Fiends"),
-        parliament_of_shadows=external("https://www.blackchantry.com/products/legacy/preconstructed-decks/product-parliament-of-shadows/", "Parliament of Shadows"),
-        libertine_ball=external("https://www.blackchantry.com/products/legacy/preconstructed-decks/product-libertine-ball/", "Libertine Ball"),
-        pact_with_nephandi=external("https://www.blackchantry.com/products/legacy/preconstructed-decks/product-pact-with-nephandi/", "Pact with Nephandi"),
+        legacy_preconstructed_decks=external("https://www.blackchantry.com/products/legacy/preconstructed-decks/",
+        _("legacy preconstructed decks")),
+        den_of_fiends=external("https://www.blackchantry.com/products/legacy/preconstructed-decks/product-den-of-fiends/",
+        "Den of Fiends"),
+        parliament_of_shadows=external("https://www.blackchantry.com/products/legacy/preconstructed-decks/product-parliament-of-shadows/",
+        "Parliament of Shadows"),
+        libertine_ball=external("https://www.blackchantry.com/products/legacy/preconstructed-decks/product-libertine-ball/",
+        "Libertine Ball"),
+        pact_with_nephandi=external("https://www.blackchantry.com/products/legacy/preconstructed-decks/product-pact-with-nephandi/",
+        "Pact with Nephandi"),
         antonio=card("Antonio d'Erlette", "Antonio"),
         nephandus=card("Nephandus"),
         embraces=card("The Embrace", "Embraces"),
@@ -1228,7 +1399,8 @@
         to join existing Elder tables with something decent enough to leave them a chance.
         To make it worth our while, BCP also seized this occasion to print rather heavily
         sought-after cards, like a bunch of {{ antonio }} and {{ nephandus }} in {{ pact_with_nephandi }},
-        so many {{ embraces }} alongside a couple of {{ palla_grande }} and {{ foundation_exhibit }} in {{ libertine_ball }},
+        so many {{ embraces }} alongside a couple of {{ palla_grande }} and {{ foundation_exhibit }} in {{
+        libertine_ball }},
         the whole Lasombra {{ lasombra }} package together with {{ jake_washington }} and {{ monastery_of_shadows }}
         in {{ parliament_of_shadows }}, and the whole {{ aus }} package with {{ the_rack }}, {{ smiling_jack }},
         {{ bowl_of_convergence }} and {{ heart_of_nizchetus }} in {{ den_of_fiends }}.
@@ -1254,7 +1426,8 @@
     <img src="{{ url_for('static', filename='img/promo-pack-1.webp') }}" alt="Promo Pack 1">
     <p>
         {% trans trimmed
-        promo_pack_1=external("https://www.blackchantry.com/products/legacy/bundles/product-promo-pack-1/", "Promo Pack 1"),
+        promo_pack_1=external("https://www.blackchantry.com/products/legacy/bundles/product-promo-pack-1/", "Promo Pack
+        1"),
         capuchin=card("The Capuchin", "Capuchin"),
         montano=card("Montano"),
         lord_tremere=card("Lord Tremere")
@@ -1271,8 +1444,10 @@
     <img src="{{ url_for('static', filename='img/kot.webp') }}" alt="Keepers of Traditions">
     <p>
         {% trans trimmed
-        keepers_of_tradition=external("https://www.blackchantry.com/products/legacy/bundles/product-keepers-of-tradition-reprint-bundle-1/", "Keepers of Tradition"),
-        heirs_to_the_blood=external("https://www.blackchantry.com/products/legacy/bundles/product-heirs-to-the-blood-reprint-bundle-1/", "Heirs to the Blood")
+        keepers_of_tradition=external("https://www.blackchantry.com/products/legacy/bundles/product-keepers-of-tradition-reprint-bundle-1/",
+        "Keepers of Tradition"),
+        heirs_to_the_blood=external("https://www.blackchantry.com/products/legacy/bundles/product-heirs-to-the-blood-reprint-bundle-1/",
+        "Heirs to the Blood")
         %}
         The {{ keepers_of_tradition }} have some nice cards and vampires you might be lacking, it's worth looking into.
         The {{ heirs_to_the_blood }} where a very nice reprint, also with a bunch of hard to find bloodline cards,
@@ -1297,9 +1472,9 @@
 <ul>
     {% trans trimmed %}
     <li>
-        Some promos have been released with alternate are: <strong>Full-bleed</strong> Maila, G6 Theo Bell and
-        Hesha Ruhadze, two <strong>sketch versions</strong> of Direct Intervention, <strong>alternate arts</strong>
-        for Archon Investigation and Bum's Rush.
+        Some promos have been released with alternate are: more and more vampires are getting a
+        <strong>Full-bleed</strong> version, there are two <strong>sketch versions</strong> of Direct Intervention,
+        and <strong>alternate arts</strong> for a few other cards.
     </li>
     <li>
         An <strong>Edge card</strong> that has been released as promo and is now also available as print-on-demand.
@@ -1371,7 +1546,8 @@
     <ul>
         <li><a href="https://www.kgs-cards.com/s/shop" , target="_blank">KGS Cards</a></li>
         <li>
-            <a href="https://www.drivethrucards.com/browse/pub/12056/Black-Chantry-Productions/subcategory/30619_34256/VTES-Legacy-Card-Singles" target="_blank">DriveThru Cards</a>,
+            <a href="https://www.drivethrucards.com/browse/pub/12056/Black-Chantry-Productions/subcategory/30619_34256/VTES-Legacy-Card-Singles"
+                target="_blank">DriveThru Cards</a>,
             note you can use <a href="https://bloodlibrary.info/pod" target="_blank">blood library</a>
             to search for cards there
         </li>
@@ -1406,7 +1582,8 @@
         <li><a href="https://www.ebay.com/usr/xgersix" , target="_blank">xgersix</a></li>
         <li><a href="https://www.ebay.com/usr/iambadgerfun" , target="_blank">iambadgerfun</a></li>
         <li>
-            <a href="https://www.ebay.com/str/retrogradearcade/VTES-Jyhad/_i.html?store_cat=39778115012" target="_blank">Retrograde Arcade</a>
+            <a href="https://www.ebay.com/str/retrogradearcade/VTES-Jyhad/_i.html?store_cat=39778115012"
+                target="_blank">Retrograde Arcade</a>
         </li>
         <li><a href="https://www.ebay.com/str/ccgandboardgamesocial" , target="_blank">CCG and Boardgame Social</a></li>
     </ul>
