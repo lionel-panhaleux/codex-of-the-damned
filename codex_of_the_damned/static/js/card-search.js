@@ -19,11 +19,9 @@ class CardSearch {
         this.card_title = document.getElementById("card-title")
         this.card_text = document.getElementById("card-text")
         this.rulings = document.getElementById("rulings")
-        this.ruling_form = document.getElementById("ruling-form")
         this.completion = new Completion(document.getElementById("card-name"), completeCardName, this.result_message)
         this.state = new UrlState(async (data) => this.displayCard(data))
         this.form.addEventListener("submit", async (ev) => await this.submit(ev))
-        this.ruling_form.addEventListener("submit", async (ev) => await this.submitRuling(ev))
     }
     async submit(ev) {
         ev.preventDefault()
@@ -188,23 +186,33 @@ class CardSearch {
             this.card_sets.appendChild(set_info)
         }
         let rulings_map = {}
-        if (data.rulings && data.rulings.text) {
+        console.log(data)
+        if (data.rulings.length > 0) {
             let rulings_list = document.createElement("ul")
             rulings_list.setAttribute("class", "rulings-list")
             this.rulings.appendChild(rulings_list)
-            for (const ruling of data.rulings.text) {
-                const reference_re = /\[[a-zA-Z0-9]+\s[0-9-]+\]/g
+            for (const ruling of data.rulings) {
                 let ruling_item = document.createElement("li")
-                ruling_item.dataset.markdown = ruling.replace(reference_re, (x) => `${x}(${data.rulings.links[x]})`)
-                ruling_item.innerHTML = formatText(ruling.replace(reference_re, ""))
-                const references = [...ruling.matchAll(reference_re)]
-                for (const reference of references) {
-                    // use non-breaking spaces and hyphens
-                    const non_breaking_ref = reference[0].replace(" ", " ").replace(/([^-]*)-/g, "$1‑")
-                    const link = data.rulings.links[reference[0]]
-                    ruling_item.innerHTML += `<a target="_blank" href="${link}">${non_breaking_ref}</a >`
-                    rulings_map[non_breaking_ref] = link
+                let ruling_markdown = ruling.text
+                for (const reference of ruling.references) {
+                    ruling_markdown = ruling_markdown.replaceAll(
+                        reference.text,
+                        `[[${reference.label}]](${reference.url})`
+                    )
                 }
+                ruling_item.dataset.markdown = ruling_markdown
+                let ruling_text = ruling.text
+                for (const reference of ruling.references) {
+                    // use non-breaking spaces and hyphens
+                    const non_breaking_ref = reference.label.replace(" ", " ").replace(/([^-]*)-/g, "$1‑")
+                    ruling_text = ruling_text.replace(
+                        reference.text,
+                        `<a target="_blank" href="${reference.url}">[${non_breaking_ref}]</a >`
+                    )
+                    rulings_map[`[${non_breaking_ref}]`] = reference.url
+                }
+                console.log(ruling_text)
+                ruling_item.innerHTML = formatText(ruling_text)
                 addCardEvents(ruling_item)
                 let copy_button = document.createElement("span")
                 copy_button.classList.add("icon")
@@ -309,49 +317,8 @@ class CardSearch {
             this.card_text.appendChild(pelem)
         }
     }
-    async submitRuling(ev) {
-        ev.preventDefault()
-        let elements = ev.target.elements
-        if (elements["submit"].disabled) {
-            return
-        }
-        elements["submit"].disabled = true
-        elements["result"].innerHTML = "<p>Please wait...</p>"
-        try {
-            const response = await fetch(
-                encodeURI(`https://api.krcg.org/submit-ruling/${encodeUrlParam(this.state.state.card)}`),
-                {
-                    method: "POST",
-                    body: JSON.stringify({ text: elements["explanation"].value, link: elements["url"].value }),
-                    headers: {
-                        "Content-Type": "application/json",
-                        Accept: "application/json",
-                    },
-                }
-            )
-            if (!response.ok) {
-                if (response.status >= 500 && response.status < 600) {
-                    throw Error("KRCG bootstrapping, please try again in a minute.")
-                } else if (response.status == 400) {
-                    throw Error("You must provide a valid ruling link.")
-                } else {
-                    throw Error(response.statusText)
-                }
-            }
-            let data = await response.json()
-            elements[
-                "result"
-            ].innerHTML = `<p>Ruling submitted: you can consult it <a target="_blank", href="${data["html_url"]}">on GitHub</a>.`
-            elements["explanation"].value = ""
-            elements["url"].value = ""
-        } catch (error) {
-            elements["result"].innerHTML = `<p>${error.message}</p>`
-        }
-        elements["submit"].disabled = false
-    }
 }
 function isInPrint(setInfo) {
-    console.log(setInfo)
     for (detail of setInfo[1]) {
         if ("release_date" in detail && detail.release_date >= "2017-05-01" && !setInfo[0].match(/(P|p)romo/g)) {
             if ("precon" in detail && detail.precon == "EC Berlin Edition") {

@@ -41,75 +41,12 @@
 	</div>
 	<div class="insert tip" id="submit-ruling">
 		<h3> {{ _('Submit a new ruling or a ruling correction') }}</h3>
-		<form id="ruling-form">
-			<p>
-				{% trans trimmed %}
-				Help improve the Codex: provide an explanation and a link to a message
-				from a Rules Director.
-				{% endtrans %}
-			</p>
-			<input type="text" class="long-input" name="explanation" id="ruling-form-explanation"
-				placeholder="Explanation">
-			<input type="text" class="long-input" name="url" id="ruling-form-url"
-				placeholder="http://www.vekn.net/forum/rules-questions/...">
-			<input type="submit" name="submit" value="Submit">
-			<output name="result" for="ruling-form-explanation ruling-form-url"></output>
-		</form>
 		<p>
-			{% trans trimmed %}
-			<strong>Proposed rulings will not be included automatically.</strong>
-			Once submited, your ruling will be reviewed by the Codex and KRCG team,
-			and included in the next release.
+			{% trans trimmed
+			rulings_website=external("https://rulings.krcg.org/index.html", "rulings website")
+			%}
+			Login with your VEKN account on the {{ rulings_website }} and submit a change proposal there.
 			{% endtrans %}
-		</p>
-		<p>
-			{{ _('The Rules Directors have been:') }}
-		<ul>
-			<li>{{ _('From 2016-12-04 onward,') }}
-				<a target="_blank"
-					href="http://www.vekn.net/forum/news-and-announcements/75402-new-inner-circle-vekn-board-of-directors#79470">
-					Vincent Ripoll (ANK)
-				</a>
-			</li>
-			<li>{{ _('From 2011-07-06 onward,') }}
-				<a target="_blank"
-					href="https://groups.google.com/d/msg/rec.games.trading-cards.jyhad/VzRGZO_Iuto/BjJGRVvJ5Z8J">
-					Pascal Bertrand (PIB)
-				</a>
-			</li>
-			<li>{{ _('From 1998-06-22 onward,') }}
-				<a target="_blank"
-					href="https://groups.google.com/d/msg/rec.games.trading-cards.jyhad/RIX1tLgOFjg/xKikfSarfd8J">
-					L. Scott Johnson (LSJ)
-				</a>
-			</li>
-			<li>{{ _('From 1994-12-15 onward,') }}
-				<a target="_blank"
-					href="https://groups.google.com/d/msg/rec.games.trading-cards.jyhad/Dm_gIP3YvUs/qTyKyq2NWv4J">
-					Thomas R Wylie (TOM)
-				</a>
-			</li>
-		</ul>
-		</p>
-		<p>
-			{{ _('The official boards for rulings have been:') }}
-		<ul>
-			<li>{{ _('From 2011-07-06 onward,') }}
-				<a target="_blank" href="http://www.vekn.net/forum/rules-questions">
-					{{ _('The VEKN Forum') }}
-				</a>
-			</li>
-			<li>{{ _('From 2010-12-30 onward,') }}
-				<a target="_blank" href="https://www.boardgamegeek.com/forum/31522/vampire-eternal-struggle/rules">
-					{{ _('The Boardgame Geek Forum') }}
-				</a>
-			</li>
-			<li>{{ _('From 1994-12-15 onward,') }}
-				<a target="_blank" href="https://groups.google.com/forum/#!forum/rec.games.trading-cards.jyhad">
-					{{ _('The rec.games.trading-cards.jyhad Google Group') }}
-				</a>
-			</li>
-		</ul>
 		</p>
 	</div>
 </div>
