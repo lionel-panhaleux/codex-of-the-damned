@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-08-22 13:09+0200\n"
+"POT-Creation-Date: 2024-09-15 18:03+0200\n"
 "PO-Revision-Date: 2024-08-22 13:08+0200\n"
 "Last-Translator: \n"
 "Language: fr\n"
@@ -410,56 +410,13 @@ msgid "Submit a new ruling or a ruling correction"
 msgstr "Soumettre un nouvel arbitrage ou une correction"
 
 #: codex_of_the_damned/templates/card-search.html:46
-msgid "Help improve the Codex: provide an explanation and a link to a message from a Rules Director."
-msgstr "Participez à l'amélioration du Codex : donnez une explication et un lien vers le post d'un Rules Director."
+msgid "rulings website"
+msgstr "site web d'arbitrage"
 
-#: codex_of_the_damned/templates/card-search.html:59
-msgid ""
-"<strong>Proposed rulings will not be included automatically.</strong> Once submited, your ruling will be reviewed by "
-"the Codex and KRCG team, and included in the next release."
-msgstr ""
-"<strong>Les arbitrages proposés ne seront pas inclus automatiquement.</strong> Une fois soumis, votre arbitrage sera "
-"relu par l'équipe du Codex et de KRCG, et inclus dans la prochaine version."
-
-#: codex_of_the_damned/templates/card-search.html:66
-msgid "The Rules Directors have been:"
-msgstr "Les Rules Directors sont:"
-
-#: codex_of_the_damned/templates/card-search.html:68
-msgid "From 2016-12-04 onward,"
-msgstr "À partir de 2016-12-04,"
-
-#: codex_of_the_damned/templates/card-search.html:74 codex_of_the_damned/templates/card-search.html:97
-msgid "From 2011-07-06 onward,"
-msgstr "À partir de 2011-07-06,"
-
-#: codex_of_the_damned/templates/card-search.html:80
-msgid "From 1998-06-22 onward,"
-msgstr "À partir de 1998-06-22,"
-
-#: codex_of_the_damned/templates/card-search.html:86 codex_of_the_damned/templates/card-search.html:107
-msgid "From 1994-12-15 onward,"
-msgstr "À partir de 21994-12-15,"
-
-#: codex_of_the_damned/templates/card-search.html:95
-msgid "The official boards for rulings have been:"
-msgstr "Les forums officiels pour les arbitrages sont:"
-
-#: codex_of_the_damned/templates/card-search.html:99
-msgid "The VEKN Forum"
-msgstr "Le Forum VEKN"
-
-#: codex_of_the_damned/templates/card-search.html:102
-msgid "From 2010-12-30 onward,"
-msgstr "À partir de 2010-12-30,"
-
-#: codex_of_the_damned/templates/card-search.html:104
-msgid "The Boardgame Geek Forum"
-msgstr "Le forum de Boardgame Geek"
-
-#: codex_of_the_damned/templates/card-search.html:109
-msgid "The rec.games.trading-cards.jyhad Google Group"
-msgstr "Le groupe Google rec.games.trading-cards.jyhad"
+#: codex_of_the_damned/templates/card-search.html:45
+#, python-format
+msgid "Login with your VEKN account on the %(rulings_website)s and submit a change proposal there."
+msgstr "Identifiez-vous avec votre compte VEKN sur le %(rulings_website)s pour y soumettre une proposition."
 
 #: codex_of_the_damned/templates/deck-search.html:11
 msgid "Deck Search"
@@ -17062,4 +17019,47 @@ msgstr ""
 " de dégâts maximum de 12 points d'influence. Jusqu'à ce que vous y arriviez, continuez à faire 3 à 5 dégâts par tour "
 "et à rebondir les morsures de votre prédateur, en broyant lentement l'influence de votre proie et en lui laissant "
 "croire que 12 points est un coussin confortable. </p>"
+
+#~ msgid "Help improve the Codex: provide an explanation and a link to a message from a Rules Director."
+#~ msgstr "Participez à l'amélioration du Codex : donnez une explication et un lien vers le post d'un Rules Director."
+
+#~ msgid ""
+#~ "<strong>Proposed rulings will not be included automatically.</strong> "
+#~ "Once submited, your ruling will be reviewed by the Codex "
+#~ "and KRCG team, and included in the next release."
+#~ msgstr ""
+#~ "<strong>Les arbitrages proposés ne seront pas inclus "
+#~ "automatiquement.</strong> Une fois soumis, votre arbitrage sera relu "
+#~ "par l'équipe du Codex et de KRCG, et inclus dans la"
+#~ " prochaine version."
+
+#~ msgid "The Rules Directors have been:"
+#~ msgstr "Les Rules Directors sont:"
+
+#~ msgid "From 2016-12-04 onward,"
+#~ msgstr "À partir de 2016-12-04,"
+
+#~ msgid "From 2011-07-06 onward,"
+#~ msgstr "À partir de 2011-07-06,"
+
+#~ msgid "From 1998-06-22 onward,"
+#~ msgstr "À partir de 1998-06-22,"
+
+#~ msgid "From 1994-12-15 onward,"
+#~ msgstr "À partir de 21994-12-15,"
+
+#~ msgid "The official boards for rulings have been:"
+#~ msgstr "Les forums officiels pour les arbitrages sont:"
+
+#~ msgid "The VEKN Forum"
+#~ msgstr "Le Forum VEKN"
+
+#~ msgid "From 2010-12-30 onward,"
+#~ msgstr "À partir de 2010-12-30,"
+
+#~ msgid "The Boardgame Geek Forum"
+#~ msgstr "Le forum de Boardgame Geek"
+
+#~ msgid "The rec.games.trading-cards.jyhad Google Group"
+#~ msgstr "Le groupe Google rec.games.trading-cards.jyhad"
 
