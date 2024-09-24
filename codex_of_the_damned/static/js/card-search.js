@@ -186,8 +186,7 @@ class CardSearch {
             this.card_sets.appendChild(set_info)
         }
         let rulings_map = {}
-        console.log(data)
-        if (data.rulings.length > 0) {
+        if (data.rulings && data.rulings.length > 0) {
             let rulings_list = document.createElement("ul")
             rulings_list.setAttribute("class", "rulings-list")
             this.rulings.appendChild(rulings_list)
