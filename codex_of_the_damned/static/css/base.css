@@ -395,6 +395,7 @@ article.columns h6 {
 .column-4>img {
     width: 100%;
     display: flex;
+    margin: 0.5em 0em;
 }
 
 .column-2,
@@ -403,7 +404,7 @@ article.columns h6 {
     width: calc(var(--article-width) / 2 - 1.5em - 2px);
     box-sizing: border-box;
     vertical-align: top;
-    margin: 2em 0.5em;
+    margin: 1em 0.5em;
 }
 
 table {

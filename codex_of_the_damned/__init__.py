@@ -397,10 +397,10 @@ def display_card():
     def card_image(name, hover=True):
         img = (
             '<img src="https://static.krcg.org/card/{fname}.jpg"'
-            ' alt="{name}" class="krcg-card" data-name="{name}"'
+            ' alt="{name}" data-name="{name}"'
         )
-        if not hover:
-            img += " data-nohover=true"
+        if hover:
+            img += 'class="krcg-card"'
         img += "/>"
         return markupsafe.Markup(img.format(name=name, fname=file_name(name)))
 

@@ -1,0 +1,309 @@
+{% extends "strategy/articles/_layout.html" %}
+
+{% block content %}
+<h1>
+    {{ _('Combat Primer') }}<br />
+    <span class="subtitle">{{ _('by X') }}</span>
+</h1>
+<div class="insert author">
+    <img src="{{ url_for('static', filename='img/paul_jones.png') }}" alt="Paul Jones">
+    <p>
+        {% trans trimmed %}
+        X has been playing V:tES for 15 years, playing primarily combat decks
+        and exploring all the angles and possibilities they offer.
+        {% endtrans %}
+    </p>
+    <div class="clear"></div>
+</div>
+<p>
+    {% trans trimmed %}
+    As soon as I started writing this article I realized that the topic is so broad and complex
+    that it would take forever to explore all its facets.
+    Thus, in this primer, I will focus on the basics and cover only the most common combat doctrines you can encounter,
+    so no bloodline or niche discipline.
+    {% endtrans %}
+</p>
+<h2>{{ _('Why and how to play combat?') }}</h2>
+<p>
+    {% trans trimmed %}
+    The common misconception about combat among newer players is that combat is a goal in itself,
+    focusing on eliminating minions and little else.
+    This is a wrong approach, even though it can be fun to tear off limbs and see everything burn,
+    at least for the one doing the tearing and burning, it does not bring you any closer to victory in and of itself.
+    {% endtrans %}
+</p>
+<p>
+    {% trans trimmed
+    rush=link("/strategy/combat", _("rush"))
+    %}
+    When thinking about combat in VTES you must first and foremost think of it as a tool of control.
+    No other type of deck can reach all across the table and control the distribution of resources.
+    If someone (primarily your prey and predator) gets too strong at the table you can always visit them
+    and take some of their blood for yourself, or reduce their headcount to slow them down.
+    Most commonly, combat decks will make their predator the target of their first {{ rush }},
+    to reduce pressure on their back and be able to focus all of their attention on their prey.
+    {% endtrans %}
+</p>
+<p>
+    {% trans trimmed %}
+    It is of utmost importance to remember that combat is just a tool to help you win, not a win condition.
+    When building a combat deck, you must think of how your deck will oust the prey first and foremost.
+    Quite often fledgling combat aspirants forget about this
+    and focus all of their efforts on sending vampires to torpor only to discover too late that
+    then they have no way of reducing their pool fast enough: they get left behind in the race for victory points.
+    {% endtrans %}
+</p>
+<div class="column-2">
+    {{ card_image("Fame", false) }}
+    {{ _("Ties in directly into your strategy by allowing you to take pool at the same time as you fight.") }}
+</div>
+<div class="column-2">
+    {{ card_image("Tension in the Ranks", false) }}
+    {{ _("Similar purpose but has the downside of you not being in full control of who will lose pool at all times.") }}
+</div>
+<div class="column-2">
+    {{ card_image("Dragonbound", false) }}
+    {{ _("Capitalizes on minions already being in torpor.") }}
+</div>
+<div class="column-2">
+    {{ card_image("Codex of the Edenic Groundskeepers", false) }}
+    {{ _("Speeds up your bleeding when there are no defenders left.") }}
+</div>
+<p>
+    {% trans trimmed
+    deep_song=card("Deep Song"),
+    line_brawl=card("Line Brawl")
+    %}
+    Any dual-purpose cards that let you take pool or enter combat like {{ deep_song }} or {{ line_brawl }}
+    are also very good additions since you will most likely need all the deck space you can get for efficient combat.
+    Once you have solved the question of ousting power, you will also have to think about the challenges you might face.
+    For combat decks, those typically boil down to:
+    {% endtrans %}
+</p>
+<ul>
+    <li>{% trans trimmed %}
+        <strong>Maneuvers</strong>: if you fight at close range, you must be able to beat at least one maneuver.
+        {% endtrans %}
+    </li>
+    <li>{% trans trimmed %}
+        <strong>Dodge & Combat ends</strong>: nothing is more frustrating than having all your damage whiff so having an
+        answer to that is top priority.
+        {% endtrans %}
+    </li>
+    <li>{% trans trimmed %}
+        <strong>Damage prevention</strong>: unfortunately outside of a few specialist choices there is very little you
+        can do about it. Some presses can help to continue combat.
+        {% endtrans %}
+    </li>
+    <li>{% trans trimmed %}
+        <strong>Enemy combat</strong>: again, little you can do about it, a fight between two combat decks often boils
+        down to a coin toss and there are just too many permutations to be ready for everything.
+        {% endtrans %}
+    </li>
+</ul>
+<div class="insert tip">
+    <h3>{{ _('How to play against combat?') }}</h3>
+    <p>
+        {% trans trimmed %}
+        Being on the receiving end of a combat deck is rarely fun, some even find it the worst experience in VTES that
+        saps their will to play. Do not despair though as all is not lost even if you are being hurt badly, there are
+        ways of dealing with combat that most decks can do. In general, you will want to make yourself an undesirable
+        prey for the combat deck to discourage rushes. Combat decks have limited resources and spending them can be a
+        tough decision. Here are some simple ways to stimmy the predations of a rush-happy deck:
+        {% endtrans %}
+    </p>
+    <h4>{{ _('Delay') }}</h4>
+    <p>
+        {% trans trimmed %}
+        In the beginning, if you know that your prey or predator is a combat deck, you can delay your start a bit to
+        bring out 2 vampires at the same time. There is little direct threat to your pool early on from the combat deck,
+        so delaying your start should not be a problem, whereas having more than one target now means they need to
+        expend more actions to take you offline completely.
+        {% endtrans %}
+    </p>
+    <h4>{{ _('Talk') }}</h4>
+    <p>
+        {% trans trimmed %}
+        Talk to people. This is often the simplest but most forgotten way of dealing with combat. If you are being
+        slaughtered just ask around the table for others to help rescue your vampires from torpor or — in case you are
+        the predator of a combat deck and have been rushed to oblivion — slow down their advances toward you so you can
+        rebuild and pose a threat to combat again. Most people should be happy to do so because this brings you back as
+        the primary target and takes this burden off of them. At some point, a combat deck will run out of resources or
+        decide to focus them elsewhere and let you play your game. Patience is a virtue.
+        {% endtrans %}
+    </p>
+    <h4>{{ _('Rescue') }}</h4>
+    <p>
+        {% trans trimmed %}
+        Rescue, rescue, rescue. Rescue your vampires, rescue other people vampires.
+        It is a war of attrition after all and if you just do nothing you have already lost.
+        {% endtrans %}
+    </p>
+    <h4>{{ _('Remove blood') }}</h4>
+    <p>
+        {% trans trimmed
+        villein=card("Villein")
+        %}
+        Remove blood from your vampires. If you are facing combat and you know you cannot get away then make yourself a
+        less desirable target. {{ Villein }} down your vampires as much as you can, this helps build your pool and also
+        reduces the effectiveness of combat. If you do not have blood they cannot take it from you and they may
+        overspend resources without need.
+        {% endtrans %}
+    </p>
+    <h4>{{ _('Block') }}</h4>
+    <p>
+        {% trans trimmed
+        embrace=card("The Embrace", "Embrace"),
+        jake_washington=card("Jake Washington")
+        %}
+        Have some chump blockers. Small minions are typically undesirable targets for combat decks. Having to waste an
+        action and potentially some combat cards to send an {{ embrace }} with no blood to torpor or fight
+        {{ jake_washington }} is not something a combat deck wants to do. Smaller vampires can protect your more
+        important ones.
+        {% endtrans %}
+    </p>
+</div>
+<h2>{{ _('Common combat modules') }}</h2>
+<h3>{{ _('Allies') }}</h3>
+<div class="column-2">{{ card_image("Nephandus", false) }}</div>
+<div class="column-2">{{ card_image("War Ghoul", false) }}</div>
+<p>
+    {% trans trimmed
+    nephandus=card("Nephandus"),
+    war_ghoul=card("War Ghoul"),
+    trap=card("Trap"),
+    molotov_cocktail=card("Molotov Cocktail"),
+    target_vitals=card("Target Vitals"),
+    pulled_fangs=card("Pulled Fangs"),
+    the_unmasking=card("The Unmasking")
+    %}
+    those decks typically bring allies to fight for them. The most common examples here would be {{ nephandus }},
+    who can both bleed and fight as well as scary {{ war_ghoul }}. Those decks do not pack a very large combat package,
+    but they are extremely efficient with it. {{ nephandus }} playing {{ trap }} does 5 damage while taking none itself
+    (assuming fighting a vampire that does nothing in combat), {{ war_ghoul }} with {{ trap }} can do a whopping
+    16 damage in one combat. They will sometimes also add low quantities of other combat cards that might help them
+    dish out damage a bit faster or provide extra effects.
+    {{ molotov_cocktail }}, {{ target_vitals }}, and {{ pulled_fangs }} are such cards.
+    They will also use {{ the_unmasking }} to help protect their pool.
+    {% endtrans %}
+</p>
+<h3>{{ _('Guns') }}</h3>
+<div class="column-2">{{ card_image(".44 Magnum", false) }}</div>
+<div class="column-2">{{ card_image("Concealed Weapon", false) }}</div>
+<p>
+    {% trans trimmed
+    concealed_weapon=card("Concealed Weapon"),
+    magnum=card(".44 Magnum"),
+    saturday_night_special=card("Saturday Night Special"),
+    dragon_s_breath_rounds=card("Dragon’s Breath Rounds")
+    %}
+    Guns are used quite often because of the high efficiency they provide.
+    Having a built-in maneuver and strike is extremely useful throughout the game.
+    Everyone can use them and with the help of {{ concealed_weapon }}, you can equip them in combat
+    and not risk getting your equip action blocked. The most common gun you will see is the {{ magnum }},
+    but there are a few decks that run the cheaper {{ saturday_night_special }} in combination with
+    {{ dragon_s_breath_rounds }}, sacrificing the long-term efficiency of guns for short-term bursts
+    of aggravated damage at long range.
+    {% endtrans %}
+</p>
+<h3>{{ _('Sticks') }}</h3>
+<div class="column-2">{{ card_image("Weighted Walking Stick", false) }}</div>
+<div class="column-2">{{ card_image("Target Vitals", false) }}</div>
+<p>
+    {% trans trimmed
+    weighted_walking_stick=card("Weighted Walking Stick"),
+    target_vitals=card("Target Vitals"),
+    target_head=card("Target Head")
+    %}
+    Some decks do not use disciplines but like to fight anyway. If they are not using guns,
+    they might be using {{ weighted_walking_stick }} for some extra damage and an assortment of aim cards to boost it.
+    {{ target_vitals }}, {{ target_head }}, etc.
+    {% endtrans %}
+</p>
+
+<h3>{{ani}} {{ _('Animalism') }}</h3>
+<div class="column-2">{{ card_image("Aid From Bats", false) }}</div>
+<div class="column-2">{{ card_image("Carrion Crows", false) }}</div>
+<p>
+    {% trans trimmed
+    aid_from_bats=card("Aid From Bats"),
+    carrion_crows=card("Carrion Crows"),
+    canine_horde=card("Canine Horde"),
+    voracious_vermin=card("Voracious Vermin"),
+    terror_frenzy=card("Terror Frenzy"),
+    drawing_out_the_beast=card("Drawing Out the Beast")
+    %}
+    Animalism {{ ani }} has long been one of the premier combat disciplines due to its efficiency.
+    Deep Song provides both extra bleeding and a rush, {{ aid_from_bats }} provides damage coupled with
+    maneuver <em>and</em> a press while {{ carrion_crows }} provides extra environmental damage.
+    This is a very neat and easy-to-use combat package that also has access to some bonus effects
+    like weapon destruction ({{ canine_horde }}, {{ voracious_vermin }}) or denying your opponent’s presses
+    and maneuvers with {{ terror_frenzy }} or {{ drawing_out_the_beast }}. Its only downside is the lack of an answer to
+    Combat Ends effects, making it unreliable when fighting against decks that have a lot of them.
+    {% endtrans %}
+</p>
+<h3>{{cel}} {{ _('Celerity') }}</h3>
+<div class="column-2">{{ card_image("Pursuit", false) }}</div>
+<div class="column-2">{{ card_image("Psyche!", false) }}</div>
+<p>
+    {% trans trimmed
+    psyche=card("Psyche!"),
+    magnum=card(".44 Magnum")
+    %}
+    Most commonly paired with guns but can also be used as a supplementary discipline for other types of combat.
+    Best known for providing plenty of maneuvers, dodges, and additional strikes,
+    letting you deal a lot of damage in a single round of combat.
+    Also provides one of the best ways of dealing with Combat Ends in the form of {{ psyche }},
+    which is also wonderful with {{ magnum }} as it resets the fight and thus allows you to use the maneuver
+    from the gun again.
+    {% endtrans %}
+</p>
+<h3>{{for}} {{ _('Fortitude') }}</h3>
+<div class="column-2">{{ card_image("Rolling with the Punches", false) }}</div>
+<div class="column-2">{{ card_image("Hidden Strength", false) }}</div>
+<p>
+    {% trans trimmed
+    freak_drive=card("Freak Drive")
+    %}
+    Not much to say here. Having access to damage prevention is always good in combat.
+    Additionally, it provides decks with {{ freak_drive }} for multi-acting so you can either rush multiple times
+    in a single turn or do a combination of rushing and bleeding.
+    {% endtrans %}
+</p>
+<h3>{{pot}} {{ _('Potence') }}</h3>
+<div class="column-2">{{ card_image("Roundhouse", false) }}</div>
+<div class="column-2">{{ card_image("Immortal Grapple", false) }}</div>
+<p>
+    {% trans trimmed
+    torn_signpost=card("Torn Signpost"),
+    roundhouse=card("Roundhouse"),
+    immortal_grapple=card("Immortal Grapple"),
+    disarm=card("Disarm"),
+    decapitate=card("Decapitate")
+    %}
+    This is <em>the</em> combat discipline, seeing how there are very few cards for it outside of combat cards.
+    Being able to do high damage thanks to cards like {{ torn_signpost }} and {{ roundhouse }},
+    dealing with dodges and combat ends thanks to {{ immortal_grapple }} as well as sending people straight to torpor
+    with {{ disarm }} or burning them outright with {{ decapitate }}. It does not come without its downsides though.
+    Most of it only works at close range with very few options for maneuvering,
+    and it also puts your vampire at risk of getting hit back.
+    {% endtrans %}
+</p>
+<h3>{{tha}} {{ _('Blood Sorcery') }}</h3>
+<div class="column-2">{{ card_image("Theft of Vitae", false) }}</div>
+<div class="column-2">{{ card_image("Rego Motum", false) }}</div>
+<p>
+    {% trans trimmed
+    theft_of_vitae=card("Theft of Vitae"),
+    apportation=card("Apportation"),
+    rego_motum=card("Rego Motum"),
+    walk_of_flame=card("Walk of Flame")
+    %}
+    Pretty light combat but worth mentioning. Famously used for life-stealing effects which bypass damage prevention
+    and help you come out on top with resources thanks to cards like {{ theft_of_vitae }},
+    as well as access to maneuvers thanks to {{ apportation }}, limited damage prevention with {{ rego_motum }},
+    and aggravated damage like {{ walk_of_flame }}. Thaumaturgy is not known for being a scary combat,
+    but it definitely can pose trouble for some decks and help ensure you are pulling ahead.
+    {% endtrans %}
+</p>
+{% endblock %}

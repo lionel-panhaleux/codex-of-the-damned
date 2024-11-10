@@ -94,6 +94,7 @@ STRUCTURE = Nav(
                             lazy_gettext("Basic"),
                             children=[
                                 Nav(lazy_gettext("Blood, Pool and Grinding Beads")),
+                                Nav(lazy_gettext("Combat Primer")),
                                 Nav(lazy_gettext("Guide for MTG Players")),
                                 Nav(lazy_gettext("What Should I Buy?")),
                             ],
