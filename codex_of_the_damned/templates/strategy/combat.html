@@ -269,6 +269,7 @@ target_vitals=card("Target Vitals")
         {{ card("Oubliette") }} {{ _('and') }}
         {{ card("Shadow Body") }}.
     </li>
+    <li>{{ obl }} {{ _('with') }} {{ card("Pass Through Shadow") }}.</li>
     <li>{{ ani }}{{ for }} {{ _('with') }} {{ card("Alpha Glint") }}.</li>
     <li>{{ ANI }} {{ _('with') }} {{ card("Flesh Bond") }}.</li>
     <li>{{ OBF }} {{ _('with') }} {{ card("No Trace") }}.</li>
@@ -371,7 +372,8 @@ target_vitals=card("Target Vitals")
 {% trans trimmed
 dodge=card("Dodge"),
 coma=card("Coma"),
-entombment=card("Entombment")
+entombment=card("Entombment"),
+touch_of_oblivion=card("Touch of Oblivion")
 %}
 <p>
     <strong>Dodging</strong> is also a good defensive option, and the simple
@@ -379,8 +381,8 @@ entombment=card("Entombment")
     S:CE, but it is still a viable defensive option when S:CE are not available.
 </p>
 <p>
-    Finally, two combat cards can <strong>send a vampire into torpor directly</strong>:
-    {{ coma }} ({{ dem }}) and {{ entombment }} ({{ OBT }}).
+    Finally, three combat cards can <strong>send a vampire into torpor directly</strong>:
+    {{ coma }} ({{ dem }}), {{ entombment }} ({{ OBT }}), and {{ touch_of_oblivion }} ({{ OBL }}).
     They're too costly to be used effectively as an offensive option,
     but they are good defensive options as they can act
     as a deterrent against combat decks.

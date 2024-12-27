@@ -141,14 +141,16 @@ kine_resources_contested=card("Kine Resources Contested")
         madrigal=card("Madrigal"),
         hall_of_hades_court=card("Hall of Hades' Court"),
         ventrue_headquarters=card("Ventrue Headquarters"),
-        ferraille=card("Ferraille")
+        ferraille=card("Ferraille"),
+        ominous_chorus=card("Ominous Chorus")
         %}
         Using modifiers or master cards to get more votes:
         {{ pre }} has the most options, but other disciplines offer good modifiers,
         like {{ mel }} {{ madrigal }} or
         {{ tem }} {{ hall_of_hades_court }}, as do some clans
-        like the Ventrue {{ ventrue }} with {{ ventrue_headquarters }}
-        or the Ministry {{ ministry }} with {{ ferraille }}.
+        like the Ventrue {{ ventrue }} with {{ ventrue_headquarters }},
+        the Ministry {{ ministry }} with {{ ferraille }},
+        or the Lasombra {{ lasombra }} with {{ ominous_chorus }}.
         {% endtrans %}
     </li>
     <li>
@@ -205,6 +207,10 @@ kine_resources_contested=card("Kine Resources Contested")
         <li>
             {{ card("Parity Shift") }}
             ({{ _('Prince or Justicar, only on a Methusalah with more pool') }})
+        </li>
+        <li>
+            {{ card("Camarilla's Iron Fist") }}
+            ({{ _('Titled Camarilla') }})
         </li>
         <li>{{ card("Neonate Breach") }}</li>
         <li>{{ card("Domain Challenge") }}</li>
@@ -502,13 +508,15 @@ harzomatuili=card("Harzomatuili")
     blanket_of_night=card("Blanket of Night"),
     seduction=card("Seduction"),
     forced_confessional=card("Forced Confessional"),
-    daring_the_dawn=card("Daring the Dawn")
+    daring_the_dawn=card("Daring the Dawn"),
+    stygian_shroud=card("Stygian Shroud")
     %}
     On the other hand, whatever level of intercept one manages to achieve, stealth specialised decks
     often include some <strong>block denial</strong> modifiers atop normal stealth.
     {{ OBF }} {{ elder_impersonation }},
     {{ NEC }} {{ call_of_the_hungry_dead }},
     {{ OBT }} {{ blanket_of_night }},
+    {{ OBL }} {{ stygian_shroud }},
     and {{ salubri }}{{ DOM }} {{ forced_confessional }}
     are the only full-purpose block denials of the game. However, {{ DOM }} gives access to
     {{ seduction }} which is still a strong denial,
