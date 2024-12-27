@@ -105,6 +105,7 @@ STRUCTURE = Nav(
                                 Nav(lazy_gettext("The Game of the Game")),
                                 Nav(lazy_gettext("Playing Montano Baltimore Purge")),
                                 Nav(lazy_gettext("Playing Tupdogs & Nephandus")),
+                                Nav(lazy_gettext("Combat Modules")),
                             ],
                         ),
                     ],
