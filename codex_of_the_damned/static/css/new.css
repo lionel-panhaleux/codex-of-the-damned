@@ -1,0 +1,439 @@
+:root {
+    --color-back: #fffdf5;
+    --color-back-alternate: #eceae2;
+    --color-back-selected: #bdbab0;
+    --color-text: #000;
+    --color-gray-text: #444;
+    --color-surface: #fdd994;
+    --color-grey-border: #d1d1d1;
+    --color-active: #007acc;
+    --color-tip-border: #dc8c46;
+    --color-tip-back: #fff4ec;
+    --color-tip-front: #6b3d0f;
+    --color-warn-border: #dc6946;
+    --color-warn-back: #ffeeec;
+    --color-warn-front: #582110;
+    --color-author-back: #ecf7fc;
+    --color-deck-back: #e7fad7;
+    --color-deck-front: #306d44;
+    --color-deck-border: #76dc46;
+    --color-author-border: #46b9dc;
+    --color-blood: #c02121;
+    --brand-vdb: #d0d0e8;
+    --standard-width: min(50rem, 100vw - 1rem);
+    --expanded-width: min(75rem, 100vw - 1rem);
+}
+
+:root {
+    /* CSS HEX */
+    --dark-purple: #391030ff;
+    --chocolate-cosmos: #53010eff;
+    --magnolia: #ece7ebff;
+    --black: #000001ff;
+    --dark-purple-2: #402c3dff;
+    --pink-lavender: #dca2c7ff;
+}
+
+@font-face {
+    font-family: "FontAwesome";
+    font-weight: 900;
+    src: url("/static/fonts/fa-solid-900.ttf") format("truetype"), url("/static/fonts/fa-solid-900.svg") format("svg"),
+        url("/static/fonts/fa-solid-900.woff") format("woff"), url("/static/fonts/fa-solid-900.woff2") format("woff2"),
+        url("/static/fonts/fa-solid-900.eot") format("embedded-opentype");
+}
+
+@font-face {
+    font-family: "FontAwesome Brand";
+    font-weight: 400;
+    src: url("/static/fonts/fa-brands-400.ttf") format("truetype"), url("/static/fonts/fa-brands-400.svg") format("svg"),
+        url("/static/fonts/fa-brands-400.woff") format("woff"), url("/static/fonts/fa-brands-400.woff2") format("woff2"),
+        url("/static/fonts/fa-brands-400.eot") format("embedded-opentype");
+}
+
+/* ************************************************************************************************ sensible defaults */
+body {
+    font-family: "Arial", Arial, sans-serif;
+    line-height: 1.4rem;
+    color: var(--color-text);
+    background-color: var(--color-back);
+}
+
+a {
+    cursor: pointer;
+}
+
+a:hover,
+a:focus {
+    color: var(--color-active);
+    border-color: var(--color-active);
+}
+
+img {
+    box-sizing: border-box;
+    object-fit: contain;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+h2 {
+    font-size: 1.5em;
+}
+
+h3 {
+    font-size: 1.25em;
+}
+
+h4,
+h5,
+h6 {
+    font-size: 1em;
+}
+
+/* *************************************************************************************************** layout classes */
+.flex {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+
+.inline-flex {
+    display: inline-flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+
+.inline {
+    display: inline;
+}
+
+.w-std {
+    max-width: var(--standard-width);
+}
+
+.w-exp {
+    max-width: var(--expanded-width);
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.clear {
+    clear: both;
+}
+
+.ms-auto {
+    margin-inline-start: auto;
+}
+
+.me-auto {
+    margin-inline-end: auto;
+}
+
+.mt-auto {
+    margin-block-start: auto;
+}
+
+.mb-auto {
+    margin-block-end: auto;
+}
+
+.ms-1 {
+    margin-inline-start: 0.5em;
+}
+
+.me-1 {
+    margin-inline-end: 0.5em;
+}
+
+.mt-1 {
+    margin-block-start: 0.5em;
+}
+
+.mb-1 {
+    margin-block-end: 0.5em;
+}
+
+.mx-1 {
+    margin-inline-start: 0.5em;
+    margin-inline-end: 0.5em;
+}
+
+.my-1 {
+    margin-block-start: 0.5em;
+    margin-block-end: 0.5em;
+}
+
+.ps-1 {
+    padding-inline-start: 0.5em;
+}
+
+.pe-1 {
+    padding-inline-end: 0.5em;
+}
+
+.pt-1 {
+    padding-block-start: 0.5em;
+}
+
+.pb-1 {
+    padding-block-end: 0.5em;
+}
+
+.px-1 {
+    padding-inline-start: 0.5em;
+    padding-inline-end: 0.5em;
+}
+
+.py-1 {
+    padding-block-start: 0.5em;
+    padding-block-end: 0.5em;
+}
+
+.p-1 {
+    padding: 0.5em;
+}
+
+.gap-1 {
+    gap: 0.5em;
+}
+
+.ms-2 {
+    margin-inline-start: 1em;
+}
+
+.me-2 {
+    margin-inline-end: 1em;
+}
+
+.mt-2 {
+    margin-block-start: 1em;
+}
+
+.mb-2 {
+    margin-block-end: 1em;
+}
+
+.mx-2 {
+    margin-inline-start: 1em;
+    margin-inline-end: 1em;
+}
+
+.my-2 {
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+}
+
+.ps-2 {
+    padding-inline-start: 1em;
+}
+
+.pe-2 {
+    padding-inline-end: 1em;
+}
+
+.pt-2 {
+    padding-block-start: 1em;
+}
+
+.pb-2 {
+    padding-block-end: 1em;
+}
+
+.px-2 {
+    padding-inline-start: 1em;
+    padding-inline-end: 1em;
+}
+
+.py-2 {
+    padding-block-start: 1em;
+    padding-block-end: 1em;
+}
+
+.p-2 {
+    padding: 1em;
+}
+
+.gap-2 {
+    gap: 1em;
+}
+
+.ms-4 {
+    margin-inline-start: 2em;
+}
+
+.me-4 {
+    margin-inline-end: 2em;
+}
+
+.mt-4 {
+    margin-block-start: 2em;
+}
+
+.mb-4 {
+    margin-block-end: 2em;
+}
+
+.mx-4 {
+    margin-inline-start: 2em;
+    margin-inline-end: 2em;
+}
+
+.my-4 {
+    margin-block-start: 2em;
+    margin-block-end: 2em;
+}
+
+.gap-4 {
+    gap: 2em;
+}
+
+.std-col-2 {
+    width: round(down, var(--standard-width) / 2, 1px);
+}
+
+.std-col-3 {
+    width: round(down, var(--standard-width) / 3, 1px);
+}
+
+.std-col-4 {
+    width: round(down, var(--standard-width) / 4, 1px);
+}
+
+.std-col-6 {
+    width: round(down, var(--standard-width) / 6, 1px);
+}
+
+.exp-col-2 {
+    width: round(down, var(--expanded-width) / 2, 1px);
+}
+
+.exp-col-3 {
+    width: round(down, var(--expanded-width) / 3, 1px);
+}
+
+.exp-col-4 {
+    width: round(down, var(--expanded-width) / 4, 1px);
+}
+
+/* ***************************************************************************************************** font classes */
+.small {
+    font-size: max(0.75rem, 0.5em);
+    vertical-align: middle;
+}
+
+.big {
+    font-size: min(1.5rem, 2em);
+    vertical-align: middle;
+}
+
+/* ****************************************************************************************** general purpose classes */
+.active-discrete {
+    color: var(--color-gray-text);
+    transition: opacity 0.2s ease-in-out;
+}
+
+.no-decoration {
+    text-decoration: none;
+}
+
+.code {
+    font-family: "Courier New", Courier, monospace;
+    font-size: small;
+}
+
+.krcg-card {
+    font-style: italic;
+    text-decoration: none;
+    cursor: pointer;
+    color: var(--color-tip-front);
+}
+
+.krcg-card:hover {
+    color: var(--color-tip-border);
+}
+
+.border {
+    border: 1px solid;
+}
+
+.border-round-1 {
+    border-radius: 0.5em;
+}
+
+.border-round-2 {
+    border-radius: 1em;
+}
+
+/* ************************************************************************************************************ icons */
+.fa-prev::before {
+    font-family: "FontAwesome";
+    content: "\f053";
+}
+
+.fa-next::before {
+    font-family: "FontAwesome";
+    content: "\f054";
+}
+
+.fa-tip::before {
+    font-family: "FontAwesome";
+    content: "\f0eb";
+}
+
+.fa-warn::before {
+    font-family: "FontAwesome";
+    content: "\f071";
+}
+
+.fa-report::before {
+    font-family: "FontAwesome";
+    content: "\f1ea";
+}
+
+.fb-youtube::before {
+    font-family: "FontAwesome Brand";
+    content: "\f1a1";
+    color: #FD4500;
+}
+
+.fb-facebook::before {
+    font-family: "FontAwesome Brand";
+    content: "\f082";
+    color: #3683E6;
+}
+
+.fb-telegram::before {
+    font-family: "FontAwesome Brand";
+    content: "\f2c6";
+    color: #2BA9E9;
+}
+
+.fb-twitch::before {
+    font-family: "FontAwesome Brand";
+    content: "\f1e8";
+    color: #9147FF;
+}
+
+.fb-discord::before {
+    font-family: "FontAwesome Brand";
+    content: "\f392";
+    color: #5A64EB;
+}
+
+.fb-reddit::before {
+    font-family: "FontAwesome Brand";
+    content: "\f1a1";
+    color: #EB5528;
+}
