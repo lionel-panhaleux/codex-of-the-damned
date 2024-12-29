@@ -103,7 +103,7 @@
     %}
     Animalism {{ ani }} is a prominent combat discipline. It is mainly due to {{ carrion_crows }}.
     It is an additional 2 beads every round, at any range. That can amount to a lot if you manage to get some presses.
-    Being environmental damage, it it undodgeable, and as it is not a strike, high profile prevention cards like
+    Being environmental damage, it is undodgeable, and as it is not a strike, high profile prevention cards like
     {{ rolling_with_the_punches }} and {{ rego_motum }} just won't work against it.
     Add some {{ taste_of_vitae }} to the mix and you can even keep a steady blood reserve floating around.
     All in all, the card gave birth to a dozen different combat modules.
@@ -154,7 +154,7 @@
     raven_spy=card("Raven Spy"),
     nananimalism=link('/archetypes/nananimalism')
     %}
-    By itself, the whole module only works at superior {{ ANI }}, but it is already dreadful, as seen in the
+    By itself, the whole module only works at superior {{ ANI }}, but it is already impressive, as seen in the
     {{ nananimalism }} archetype. At inferior {{ ani }}, it can still be combined to other disciplines,
     for the range-setting utilities {{ drawing_out_the_beast }} or {{ terror_frenzy }}, and some {{ raven_spy }} for
     block support.
@@ -162,7 +162,7 @@
 </p>
 <p>
     {% trans trimmed %}
-    For even more dreadful modules using Animalism {{ ani }}, see <a href="#ani-friends">Animalism & Friends</a>.
+    For combination modules using Animalism {{ ani }}, see <a href="#ani-friends">Animalism & Friends</a>.
     {% endtrans %}
 </p>
 
@@ -189,11 +189,11 @@
     death_seeker=card("Death Seeker"),
     ig=card("Immortal Grapple", "IG")
     %}
-    Potence {{ pot }} is the other main combat discipline. And here, too, it it mostly due to a single card:
+    Potence {{ pot }} is the other main combat discipline. And here, too, it is mostly due to a single card:
     {{ immortal_grapple }}. It is the only card in the game that altogether negates defensive effects like dodge and
     strike: combat ends, but also a lot of nasty surprises like torpor strikes ({{ coma }}, {{ entombment }}) or
     weapons. All the other anti-defensive tools, be it combat continuance like {{ psyche }} or direct cancellation like
-    {{ death_seeker }}, only cancel the defense, so it it a battle of numbers. Not so with {{ ig }} (its nickname): if
+    {{ death_seeker }}, only cancel the defense, so it is a battle of numbers. Not so with {{ ig }} (its nickname): if
     you get it in, you are guaranteed to land your strike. And for rush decks, it matters <strong>a lot</strong>.
     {% endtrans %}
 </p>
@@ -231,7 +231,7 @@
     usually rely on {{ sce }}. The lack of prevention can be issue, so if not coupled with prevention, a {{
     glancing_blow
     }}
-    or two can prove useful. Lastly, Potence {{ POT }} also offers the dreadful {{ decapitate }},
+    or two can prove useful. Lastly, Potence {{ POT }} also offers the terrifying {{ decapitate }},
     which can get rid of minions without having to go through a diablerie, even without aggravated damage.
     {% endtrans %}
 </p>
@@ -242,13 +242,14 @@
     increased_strength=card("Increased Strength"),
     target_vitals=card("Target Vitals"),
     fake_out=card("Fake Out"),
-    backstep=card("Backstep")
+    backstep=card("Backstep"),
+    high_ground=card("High Ground")
     %}
     Contrarily to <a href="#animalism">Animalism</a>, the Potence {{ pot }} base module is still pretty decent
     at inferior, so can more easily be combined with other disciplines. And even if its best effects are at close-range,
     it is also possible to build an efficient long-range module using {{ thrown_gate }} and {{ thrown_sewer_lid }},
     often combined with {{ increased_strength }} and {{ target_vitals }} for additional damage, plus some maneuvers,
-    {{ fake_out }} or {{ backstep }} if another discipline does not provide a better alternative.
+    {{ fake_out }}, {{ high_ground }} or {{ backstep }} if another discipline does not provide a better alternative.
     {% endtrans %}
 </p>
 <p>
@@ -291,7 +292,7 @@
 <p>
     {% trans trimmed %}
     All in all, Protean {{ pro }} offers a sturdy package already all by itself. Played alone,
-    it it usually defensive with a few aggravated surprises.
+    it is usually defensive with a few aggravated surprises.
     But Tzimisce {{ tzimisce }} and Gangrels {{ gangrel }} can pair it with Animalism {{ ANI }}
     in an <a href="#ani-pro">{{ ANI }}{{ PRO }}</a> module, while other combinations like
     <a href="#cel-pro">{{ cel }}{{ pro }}</a> or <a href="#pro-for">{{ pro }}{{ for }}</a>
@@ -355,13 +356,15 @@
     rego_motum=card("Rego Motum"),
     apportation=card("Apportation"),
     walk_of_flame=card("Walk of Flame"),
+    flames_of_the_netherworld=card("Flames of the Netherworld"),
     roundhouse=card("Roundhouse")
     %}
     The ability to steal blood with {{ theft_of_vitae }}, coupled with prevention in {{ rego_motum }} and utility with
     {{ apportation }}, makes Blood Sorcery {{ THA }} by itself a very solid and lightweight module.
     {{ theft }} cannot be prevented and offers a 4 beads differential in a single card,
     which is the highest differential in the game, on par with {{ roundhouse }}.
-    On top of that, the occasional {{ walk_of_flame }} can be included for a bit of aggravated damage.
+    On top of that, the occasional {{ walk_of_flame }} or {{ flames_of_the_netherworld }}
+    can be included for a bit of aggravated damage.
     {% endtrans %}
 </p>
 <p>
@@ -397,7 +400,7 @@
 </div>
 <p>
     {% trans trimmed %}
-    Fortitude {{ for }} provides a wide array of prevention devices, here is quick review:
+    Fortitude {{ for }} by itself provides a wide array of prevention devices, here is quick review:
     {% endtrans %}
 </p>
 <ul>
@@ -461,7 +464,7 @@
         <strong>{{card("Diversion")}}:</strong>
         {% trans trimmed soak=card("Soak")%}
         Requires an Anarch, but this 2 damage prevention is unrestricted, it can prevent aggravated damage and
-        out of strike damage, and stacks, so it it even superior to {{ soak }} in a sense.
+        out of strike damage, and stacks, so it is even superior to {{ soak }} in a sense.
         {% endtrans %}
     </li>
     <li>
@@ -525,16 +528,66 @@
     amaranth=card("Amaranth")
 
     %}
-    Obtenebration offers surprisingly good lightweight combat options,
+    Obtenebration all by itself offers surprisingly good lightweight combat options,
     with {{ arms_of_the_abyss }} and {{ entombment }}.
-    A bit expensive at first glance, but a good base that is alrady a decent dissuasive module by itself.
+    A bit expensive at first glance, but a good base that is alrady a decent dissuasive module.
     It can be supplemented by a few {{ shadow_step }} and/or {{ amaranth }} for higher aggression, or lean on the
-    defensive side, coupled with the excellent <a href="#defensive-obtenebration">defensive {{ obt }} module</a>.
+    defensive side, centered on or combined with the excellent
+    <a href="#defensive-obtenebration">defensive {{ obt }} module</a>.
     {% endtrans %}
 </p>
 <p>
     {% trans trimmed %}
-    The Kiasyd {{ kiasyd }} <a href="#obt-myt">{{ OBT }}{{ MYT }}</a> variant is a bit sturdier.
+    Of course, the discipline shines even brighter when combined: the legacy Lasombra {{ lasombra }} have the
+    <a href="#pot-obt">{{ POT }}{{ OBT }}</a> and even <a href="#pot-obt-ani">{{ POT }}{{ OBT }}{{ ANI }}</a>
+    combinations, and the Kiasyd {{ kiasyd }} the <a href="#obt-myt">{{ OBT }}{{ MYT }}</a> variant.
+    {% endtrans %}
+</p>
+
+<h2 id="additional-tools">
+    {{ _("Additional Tools") }}
+    <a href="#additional-tools" class="icon">&#xf13d</a>
+</h2>
+<div class="cards-band">
+    {{ card_image("Kevlar Vest") }}
+    {{ card_image("Guardian Angel") }}
+    {{ card_image("Depravity") }}
+    {{ card_image("Sire's Index Finger") }}
+    {{ card_image("Light Intensifying Goggles") }}
+    {{ card_image("Ivory Bow") }}
+</div>
+<p>
+    {% trans trimmed
+    kevlar_vest=card("Kevlar Vest"),
+    magnum=card(".44 Magnum"),
+    leather_jacket=card("Leather Jacket"),
+    flak_jacket=card("Flak Jacket"),
+    ivory_bow=card("Ivory Bow"),
+    light_intensifying_goggles=card("Light Intensifying Goggles"),
+    sire_s_index_finger=card("Sire's Index Finger"),
+    rotschreck=card("Rötschreck")
+    %}
+    All modules can include additional generic tools to provide permanent bonus to their fighting vampires.
+    Vests are usual, the {{ kevlar_vest }} first and foremost, for its ability to severly limit the efficiency of the
+    most common weapon, the {{ magnum }}, followed by the {{ leather_jacket }} and the {{ flak_jacket }}.
+    Other equipments can be of interest, like the ubiquitous {{ ivory_bow }},
+    {{ light_intensifying_goggles }} for utility, or {{ sire_s_index_finger }} against {{ rotschreck }}.
+    {% endtrans %}
+</p>
+<p>
+    {% trans trimmed
+    guardian_angel=card("Guardian Angel"),
+    depravity=card("Depravity"),
+    libertas=card("Libertas"),
+    blood_turnip=card("Blood Turnip"),
+    island_of_yiaros=card("Island of Yiaros"),
+    gangrel_revel=card("Gangrel Revel")
+    %}
+    Master cards are another source of bonuses, like {{ guardian_angel }} for prevention and {{ depravity }}
+    for strength. Anarch have access to more options: for example {{ libertas }} against {{ pre }} SCE,
+    or {{ blood_turnip }} for blood. Some clans also have access to exclusive bonuses, like Ventrue {{ ventrue }}
+    with the {{ island_of_yiaros }} or Gangrels {{ gangrel }} with {{ gangrel_revel }}.
+    So, whatever the module, always check what the sect and clan have to offer.
     {% endtrans %}
 </p>
 
@@ -682,7 +735,7 @@
             Obfuscate {{ obf }} defense is a bit shaky, but sometimes that's good enough.
             At superior it got only {{ no_trace }} for {{ sce }}, but high capacity vampires
             can use {{ mental_maze }} as some kind of sub-par {{ obedience }}.
-            You need a successful block for it to work, so it it less effective.
+            You need a successful block for it to work, so it is less effective.
             {% endtrans %}
         </p>
     </div>
@@ -889,7 +942,7 @@
     carrion_crows=card("Carrion Crows")
     %}
     Using {{ apparition }} for prevention and {{ trap }} for presses, {{ carrion_crows }} can now disable any vampire
-    in a single combat. Given the module makes no reservation against combat ends, it it not so widespread.
+    in a single combat. Given the module makes no reservation against combat ends, it is not so widespread.
     It can, however, be a very nasty surprise in a combat-heavy environment due to its high prevention abilities.
     After all, Ravnos {{ ravnos }} also have Fortitude {{ for }} on top of the already great {{ apparition }}.
     {% endtrans %}
@@ -907,7 +960,7 @@
     draba=card("Draba"),
     ignis_fatuus=card("Ignis Fatuus")
     %}
-    There are different options here. Lowering the cost of {{ apparition }} is desireable if it it used a lot,
+    There are different options here. Lowering the cost of {{ apparition }} is desireable if it is used a lot,
     so {{ the_path_of_paradox }} or having {{ gabrin }} as a star works well. {{ trap }} is more often used in
     low numbers and can be replaced by {{ conquer_the_beast }}. A {{ mayaparisatya }} or two can be nasty,
     but the whole module can also lean much more on the Animalism {{ ani }} side, use {{ aid_from_bats }} and
@@ -943,7 +996,7 @@
     lord_tremere=card("Lord Tremere")
     %}
     {{ carrion_crows }} with {{ theft_of_vitae }} makes for a 6 beads differential. Add {{ rego_motum }} for prevention,
-    and this makes for a lightweight and dreadful module. {{ apportation }} can be added for range and
+    and this makes for a lightweight and mighty module. {{ apportation }} can be added for range and
     presses. The combination being used by high capacity Tremere {{ tremere }} like {{ gabrielle_di_righetti }},
     {{ dr_john_dee }} and {{ lord_tremere }} himself, the module also often fields a few {{ telepathic_tracking }}
     against combat ends and sometimes a bit of surprise aggravated damage with {{ walk_of_flame }},
@@ -959,7 +1012,7 @@
     Seeing how Tremere {{ tremere }} also have Auspex {{ aus }}, this efficient module gets used in heavy block decks,
     combining the two best intercept disciplines of the game, Animalism {{ ani }} and Auspex {{ aus }}, to build an
     impassable wall. Of course, the best known combination here is probably the {{ goratrix_high_tower }}
-    archetype, and it it basically the same module, even though {{ goratrix }} being {{ goratrix }} he does not need
+    archetype, and it is basically the same module, even though {{ goratrix }} being {{ goratrix }} he does not need
     to include any {{ theft_of_vitae }}.
     {% endtrans %}
 </p>
@@ -997,7 +1050,7 @@
     no_secrets_from_the_magaji=card("No Secrets From the Magaji"),
     sce=link("/strategy/combat", "SCE", _anchor="defence")
     %}
-    So all in all it it powerful and sturdy, only it has no tool to handle {{ sce }}, other than overwhelming
+    So all in all it is powerful and sturdy, only it has no tool to handle {{ sce }}, other than overwhelming
     by using {{ freak_drive }} for multiple actions. Thanks to Abombwe {{ ABO }} {{ predator_s_communion }}
     and Animalism {{ ANI }} reactions, it can field a very efficient block package too,
     not to forget the exceptional {{ no_secrets_from_the_magaji }}.
@@ -1038,10 +1091,10 @@
             sideslip=card("Sideslip"),
             sce=link("/strategy/combat", "SCE", _anchor="defence")
             %}
-            Use {{ concealed_weapon }} to get a {{ magnum_44 }}. Good by itself, it becomes dreadful
+            Use {{ concealed_weapon }} to get a {{ magnum_44 }}. Good by itself, it becomes redoutable
             when combined with Celerity {{ CEL }}. {{ pursuit }} provides range control or more damage.
             {{ psyche }} is also a must have: since it starts a new combat, the {{ magnum }} maneuver kicks in again.
-            And it it a good counter against {{ sce }}. {{ taste_of_vitae }} is a good addition,
+            And it is a good counter against {{ sce }}. {{ taste_of_vitae }} is a good addition,
             to keep the blood afloat.
             Other typical inclusions are {{ blur }} and {{ quickness }} for more damage, {{ infernal_pursuit }}
             for card flow, often paired with {{ ashur_tablets }}, and {{ sideslip }} for the limited prevention.
@@ -1212,7 +1265,7 @@
             bowl_of_convergence=card("Bowl of Convergence"),
             kevlar_vest=card("Kevlar Vest")
             %}
-            The {{ ivory_bow }} is a cheap and dreadful weapon. It is often included as a single copy in block decks,
+            The {{ ivory_bow }} is a cheap and cunning weapon. It is often included as a single copy in block decks,
             because it is, at the minimum, an efficient deterrent. Blood Sorcery {{ tha }} decks can rely on it a bit
             more extensively since they can use {{ magic_of_the_smith }} in enough copies to ensure it can be fetched
             early game. It's more of a Tremere {{ tremere }} trick, since the Banu Haqim {{ banu_haqim }} have the
@@ -1379,7 +1432,7 @@
     spiritual_guidance=card("Spiritual Guidance")
     %}
     However, it is not a combination a lot of vampires have at superior. And those who have often have even deadlier
-    possibilities open to them. All in all, it it often played either with {{ lazverinus }}, {{ lorrie }},
+    possibilities open to them. All in all, it is often played either with {{ lazverinus }}, {{ lorrie }},
     or Giovanni {{ giovanni }} (particularily {{ ignazio }}).
     In this last case, the module often includes Necromancy {{ nec }} cards like {{ dead_hand }}
     and {{ spiritual_guidance }}.
@@ -1451,7 +1504,7 @@
     rötschreck=card("Rötschreck")
     %}
     Well, if the <a href="#potence">Potence module</a> lacks prevention, using Serpentis {{ SER }} {{ typhonic_beast }},
-    especially with a vampire that plays it for free like {{ ghede }}, makes for a dreadful combination
+    especially with a vampire that plays it for free like {{ ghede }}, makes for a powerful combination
     with just two cards. Rush, play {{ typhonic_beast }} and press until you are at close range, then {{ ig }} and kill.
     {{ the_jones }} is often included too for good measure against torpor strikes like {{ entombment }},
     as well as supplementary prevention against high-damage opponents, like {{ skin_of_steel }},
@@ -1465,7 +1518,7 @@
     mylan_horseed=card("Mylan Horseed"),
     abdelsobek=card("Abdelsobek")
     %}
-    It is dreadful, with very few moving parts. The only downside is that {{ ghede }} is mostly alone here,
+    It is efficient, with very few moving parts. The only downside is that {{ ghede }} is mostly alone here,
     so multi-action is required to get sufficient efficency, with {{ freak_drive }}, {{ mylan_horseed }},
     and {{ abdelsobek }}. It is still altogether fragile, since it relies on a single vampire.
     {% endtrans %}
@@ -1505,14 +1558,15 @@
     {% trans trimmed
     sanguine_instruction=card("Sanguine Instruction"),
     oppugnant_night=card("Oppugnant Night"),
-    coagulated_entity=card("Coagulated Entity")
+    coagulated_entity=card("Coagulated Entity"),
+    achille_s_heel=card("Achille's Heel")
     %}
     The only issue here is the crypt. The Torrance circle has a bit more access to superior discipline but is more
     expensive, whereas the Chicago circle has more superior Sanguinus {{ SAN }} but mostly inferior Potence {{ pot }}
     and Fortitude {{ for }}.
     The good news is the module is still very decent at inferior, and {{ sanguine_instruction }} can be added
     to stabilize the disciplines. Moreover, they have strong rush actions with {{ oppugnant_night }} and
-    {{ coagulated_entity }}.
+    {{ coagulated_entity }}, and {{ achille_s_heel }} to help with the oust.
     {% endtrans %}
 </p>
 
@@ -1549,11 +1603,13 @@
     antón_de_concepción=card("Antón de Concepción", "Antón"),
     carrion_crows=card("Carrion Crows"),
     deep_song=card("Deep Song"),
-    sense_the_savage_way=card("Sense the Savage Way")
+    sense_the_savage_way=card("Sense the Savage Way"),
+    black_metamorphosis=card("Black Metamorphosis")
     %}
     This module relies on a very high capacity crypt with {{ montano }}, {{ nahir }}, {{ servius_marius_pustula }}
     and/or {{ antón_de_concepción }}. Using Animalism {{ ani }} here is not just a matter of having {{ carrion_crows }},
     but more importantly to benefit from the versatile {{ deep_song }} and {{ sense_the_savage_way }}.
+    On the Obtenebration {{ obt }} side, it will also often include {{ black_metamorphosis }}.
     {% endtrans %}
 </p>
 
@@ -1637,7 +1693,7 @@
     and then {{ disarm }} your opponent. And still {{ decapitate }} them if you like.
     The only issue here is that only scarce vampires have Temporis {{ tem }},
     so it is a module often relying on a single star like {{ shalmath }},
-    which makes it slow and inherently fragile, even if still dreadful.
+    which makes it slow and inherently fragile, even if still outstanding.
     {% endtrans %}
 </p>
 
@@ -1799,7 +1855,7 @@
             rotschreck=card("Rötschreck"),
             sce=link("/strategy/combat", "SCE", _anchor="defence")
             %}
-            This one has a dreadful strike. Sure, it burns, but the price is not too high and it does not burn
+            This one has a daunting strike. Sure, it burns, but the price is not too high and it does not burn
             if an {{ sce }} is used. They also do not burn if you use a {{ rotschreck }} after blocking.
             So they're good at exhausting defenses, but can also simply be used as a deterrent for defense.
             {% endtrans %}
@@ -1898,7 +1954,7 @@
     And {{ rego_motum }} and {{ sideslip }} can provide prevention while {{ psyche }} helps counter defenses.
     Sure, they need to do an actual damage to dispose of the opponent, but they have access to Anti-Fortitude {{ for }}
     tech even there with {{ soul_burn }} or {{ blood_rage }}, or they can just hit for one, or use a {{ zip_gun }} or a
-    {{ stick }}, or even a {{ walk_of_flame }} to burn their opponent if it it after a press.
+    {{ stick }}, or even a {{ walk_of_flame }} to burn their opponent if it is after a press.
     {% endtrans %}
 </p>
 <p>
@@ -2142,8 +2198,8 @@
     %}
     Stack an humongous number of {{ horrid_form }}, preferably with vampires that have cost reduction abilities,
     like {{ meshenka }}. Use {{ telepathic_tracking }} to counter defenses.
-    Simple, dreadful, unencombered by {{ ig }}. You can add some {{ trap }} and {{ chiropteran_marauder }} to help,
-    or just some {{ kraken_s_kiss }}, if it it really focused on {{ meshenka }} as a star. And of course, some
+    Simple, grueling, unencombered by {{ ig }}. You can add some {{ trap }} and {{ chiropteran_marauder }} to help,
+    or just some {{ kraken_s_kiss }}, if it is really focused on {{ meshenka }} as a star. And of course, some
     {{ carrion_crows }} can always help with the damage throughput if the crypt is more diverse.
     {% endtrans %}
 </p>
@@ -2173,7 +2229,7 @@
 
     The <a href="#vicissitude">Vicissitude module</a> is decent, but it misses stuff.
     Coupled with Blood Sorcery {{ tha }} prevention in {{ rego_motum }}, and the unpreventable {{ blood_rage }} hand
-    strike that goes so well with {{ chiropteran_marauder }}, it becomes dreadful.
+    strike that goes so well with {{ chiropteran_marauder }}, it becomes formidable.
     It is seen with very high cap stars like {{ malgorzata }}, {{ lord_tremere }} and {{ mistress_fanchon }}.
     {% endtrans %}
 </p>
@@ -2284,7 +2340,7 @@
 </p>
 <p>
     {% trans trimmed %}
-    All in all, it it a sturdy and painful combat module that can be fitted for any prupose.
+    All in all, it is a sturdy and painful combat module that can be fitted for any prupose.
     {% endtrans %}
 </p>
 
@@ -2452,7 +2508,7 @@
             {% trans trimmed
             mistress_fanchon=card("Mistress Fanchon")
             %}
-            The lead singer for the <a href="#vic-tha">{{ VIC }}{{ THA }}</a> module, a dreadful combination.
+            The lead singer for the <a href="#vic-tha">{{ VIC }}{{ THA }}</a> module, an outstanding combination.
             Her ability allows her to go fetch big capacity friends like {{mistress_fanchon}} for cheap.
             {% endtrans %}
         </p>
@@ -2583,7 +2639,7 @@
             claws_of_the_dead=card("Claws of the Dead")
             %}
             Definitely the guy you want when running a pure <a href="#potence">{{ POT }}</a> module,
-            or even a <a href="#pot-cel">{{ POT }}{{ CEL }}</a> one. And dreadfully efficient at that.
+            or even a <a href="#pot-cel">{{ POT }}{{ CEL }}</a> one. And horribly efficient at that.
             {% endtrans %}
         </p>
     </div>
@@ -2629,7 +2685,7 @@
     </li>
     <li>
         {% trans trimmed tariq_the_silent_g2=card("Tariq, The Silent (G2)") %}
-        <strong>{{ tariq_the_silent_g2 }}:</strong> A dreadful <a href="#cel-qui">{{ CEL }}{{ QUI }}</a> master,
+        <strong>{{ tariq_the_silent_g2 }}:</strong> A menacing <a href="#cel-qui">{{ CEL }}{{ QUI }}</a> master,
         he can add a bit of {{ FOR }} prevention to the mix to make it even sturdier.
         {% endtrans %}
     </li>
@@ -2673,7 +2729,7 @@
         vengeful_spirits=card("Vengeful Spirit", "Vengeful Spirits")
         %}
         <strong>{{ khurshid_g6 }}:</strong> Sure, he was more of a thing before the {{ emerald_legionnaire }} nerf,
-        but with just {{ FOR }} prevention he's already a dreadful blocker. And he can get some
+        but with just {{ FOR }} prevention he's already a fearsome blocker. And he can get some
         {{ vengeful_spirits }} to become even more of a menace.
         {% endtrans %}
     </li>
