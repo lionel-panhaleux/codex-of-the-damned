@@ -28,8 +28,9 @@
     We will go through all known combat modules that have proved their efficiency by winning at least some tournaments,
     which will give us a good picture of what works and what does not. No combat module beats everything else.
     Players have tried for 30 years, and the ultimate combination does not exist.
-    But some are definitely stronger than others but more importantly, if you want to get good at combat,
-    you need to know what your module strengths and weaknesses, but also what your opponents modules can or cannot do.
+    Still, some are stronger than others and, if you want to get good at combat,
+    you need to know what your module strengths and weaknesses are,
+    but also what your opponents modules can or cannot do.
     {% endtrans %}
 </p>
 
@@ -76,6 +77,7 @@
         <li><span class="badge-red">RUSH</span> {{ _("Usually a heavy rush module") }}</li>
         <li><span class="badge-yellow">BLOCK</span> {{ _("Usually a lightweight block module") }}</li>
         <li><span class="badge-orange">ANY</span> {{ _("Can fit anywhere on the curve") }}</li>
+        <li><span class="badge-blue">DEFENSIVE</span> {{ _("A light module for defense only") }}</li>
     </ul>
 </div>
 
@@ -505,9 +507,9 @@
 <p>
     {% trans trimmed %}
     Even if it can be played alone, Fortitude is more often seen as a second combat discipline, like
-    <a href="#pot-for">{{ pot }}{{ for }}</a>, <a href="#pro-for">{{ pro }}{{ for }}</a>,
-    <a href="#thn-for">{{ thn }}{{ for }}</a>, <a href="#anarch-cel-for">Anarch {{ cel }}{{ for }}</a>,
-    or <a href="#obe-for">{{ obe }}{{ for }}</a>.
+    <a href="#pot-for">{{ POT }}{{ FOR }}</a>, <a href="#pro-for">{{ PRO }}{{ FOR }}</a>,
+    <a href="#thn-for">{{ THN }}{{ FOR }}</a>, <a href="#anarch-cel-for">Anarch {{ cel }}{{ for }}</a>,
+    or <a href="#obe-for">{{ OBE }}{{ FOR }}</a>.
     {% endtrans %}
 </p>
 
@@ -530,7 +532,7 @@
     %}
     Obtenebration all by itself offers surprisingly good lightweight combat options,
     with {{ arms_of_the_abyss }} and {{ entombment }}.
-    A bit expensive at first glance, but a good base that is alrady a decent dissuasive module.
+    A bit expensive at first glance, but a good base that is already a decent dissuasive module.
     It can be supplemented by a few {{ shadow_step }} and/or {{ amaranth }} for higher aggression, or lean on the
     defensive side, centered on or combined with the excellent
     <a href="#defensive-obtenebration">defensive {{ obt }} module</a>.
@@ -684,10 +686,17 @@
             {% trans trimmed
             stanislava=card("Stanislava"),
             alpha_glint=card("Alpha Glint"),
+            obedience=card("Obedience"),
+            outside_the_hourglass=card("Outside the Hourglass"),
+            domain_of_evernight=card("Domain of Evernight"),
             ig=card("Immortal Grapple", "IG")
             %}
             Although it is limited to the highest capacity vampires like {{ stanislava }},
             {{ alpha_glint }} is a very solid combat ends that, at superior, trumps even an {{ ig }}.
+            Contrarily to {{ obedience }}, it does not require a wake or an unlock and can be used in any situation.
+            <br><br>
+            The only case where {{ obedience }} is superior is against the <a href="#pot-tem">Temporis {{ TEM }}</a>
+            combination, {{ outside_the_hourglass }} & {{ domain_of_evernight }}.
             {% endtrans %}
         </p>
     </div>
@@ -834,10 +843,10 @@
     sculpt_the_flesh=card("Sculpt the Flesh")
     %}
     A prerogative of the Gangrel {{ gangrel }} in the past, now the {{ ANI }}{{ pro }} combination is also open to
-    Tzimisce {{ tzimisce }}. On top of a close-range <a href="#animalism">Animalism module</a> with {{ carrion_crows }}
-    and {{ drawing_out_the_beast }}, {{ flesh_of_marble }} and {{ bear_s_skin }} can be used for prevention,
-    and Protean {{ pro }} provides some aggravated damage like {{ claws_of_the_dead }} or {{ sculpt_the_flesh }}
-    to make the whole thing deadlier.
+    Tzimisce {{ tzimisce }}. On top of a close-range <a href="#animalism">Animalism {{ ANI }}</a> module
+    with {{ carrion_crows }} and {{ drawing_out_the_beast }}, {{ flesh_of_marble }} and {{ bear_s_skin }}
+    can be used for prevention, and Protean {{ pro }} provides some aggravated damage like {{ claws_of_the_dead }}
+    or {{ sculpt_the_flesh }} to make the whole thing deadlier.
     {% endtrans %}
 </p>
 <p>
@@ -873,7 +882,7 @@
     telepathic_tracking=card("Telepathic Tracking"),
     tzimisce_toolbox=link("/archetypes/tzimisce-toolbox")
     %}
-    Adding {{ carrion_crows }} to the <a href="#vicissitude">Vicissitude</a> module is just bonus damage, nice.
+    Adding {{ carrion_crows }} to the <a href="#vicissitude">Vicissitude {{ VIC }}</a> module is bonus damage, nice.
     {{ horrid_form }} is often included for more damage, alongside {{ telepathic_tracking }} against combat ends
     defense.
     All in all, it is an aggressive combat module, and it constitutes the foundation of the
@@ -904,7 +913,7 @@
     %}
     With {{ swiftness_of_the_stag }} being so versatile, the {{ carrion_crows }} & {{ aid_from_bats }} combination
     becomes a deadly machine. {{ leapfrog }} and {{ strength_of_the_bear }} can also be used for additional utility.
-    This solid combat combination, on top of both disciplines providing excellent intercept capabilities,
+    This solid combination, on top of both disciplines providing excellent intercept capabilities,
     is the basis of the {{ cats }} archetype.
     {% endtrans %}
 </p>
@@ -917,8 +926,8 @@
     canine_horde=card("Canine Horde"),
     voracious_vermin=card("Voracious Vermin")
     %}
-    There are multiple options to complement the module, from including some {{ target_vitals }} to increase damage,
-    to adding some range control utilities like {{ terror_frenzy }} or {{ drawing_out_the_beast }}. Most modules
+    There are multiple options to complement the module, from some {{ target_vitals }} to increase damage,
+    to range control utilities like {{ terror_frenzy }} or {{ drawing_out_the_beast }}. Most modules
     will always field at least some {{ taste_of_vitae }} to recoup a bit of blood anti-weapons tech like
     {{ canine_horde }} or {{ voracious_vermin }}.
     {% endtrans %}
@@ -1074,7 +1083,7 @@
     <div class="d-flex">
         <div class="cards-band">
             {{ card_image(".44 Magnum") }}
-            {{ card_image("Pursuit") }}
+            {{ card_image("Psyche!") }}
         </div>
         <p class="ms-2">
             {% trans trimmed
@@ -1092,10 +1101,10 @@
             sce=link("/strategy/combat", "SCE", _anchor="defence")
             %}
             Use {{ concealed_weapon }} to get a {{ magnum_44 }}. Good by itself, it becomes redoutable
-            when combined with Celerity {{ CEL }}. {{ pursuit }} provides range control or more damage.
-            {{ psyche }} is also a must have: since it starts a new combat, the {{ magnum }} maneuver kicks in again.
-            And it is a good counter against {{ sce }}. {{ taste_of_vitae }} is a good addition,
-            to keep the blood afloat.
+            when combined with Celerity {{ CEL }}.
+            {{ psyche }} is a must have: it starts a new combat, so the {{ magnum }} maneuver kicks in again,
+            and it is a nice counter against {{ sce }}. {{ pursuit }} provides range control or more damage,
+            and {{ taste_of_vitae }} is a good addition to keep the blood flowing.
             Other typical inclusions are {{ blur }} and {{ quickness }} for more damage, {{ infernal_pursuit }}
             for card flow, often paired with {{ ashur_tablets }}, and {{ sideslip }} for the limited prevention.
             {% endtrans %}
@@ -1185,8 +1194,8 @@
             anti_ventrue_grinder=link("/archetypes/anti-ventrue-grinder")
             %}
             {{ weighted_walking_stick }} is one of the easiest way to add steady damage to a bare combat module.
-            Often seen alongside Fortitude {{ for }}, It can also be used by <a href="#allies">allies</a>
-            or low capacity vampires with no combat disciplines.
+            Often seen alongside <a href="#fortitude">Fortitude {{ for }}</a>,
+            It can also be used by <a href="#allies">allies</a> or low capacity vampires with no combat disciplines.
             Ventrue {{ ventrue }}, Salubri {{ salubri }}, and both their antitribu are fond of this weapon,
             see {{ gentlemen_with_sticks }} or {{ anti_ventrue_grinder }} for example.
             It hits three times for 2: a neat 3 beads differential at no cost,
@@ -1340,13 +1349,16 @@
 </p>
 <p>
     {% trans trimmed
-    guruhi_rush=link("archetypes/guruhi-rush"),
+    guruhi_rush=link("/archetypes/guruhi-rush"),
+    cock_robin=card("Cock Robin"),
+    nikolaus_vermeulen=card("Nikolaus Vermeulen (G2)", "Nikolaus Vermeulen"),
     enkidu=card("Enkidu, The Noah", "Enkidu"),
     karsh=card("Karsh")
     %}
     The sheer aggressive power of the module is enough to make it top tier even with this weakness.
     {{ guruhi_rush }} won the EC twice, after all, and made the finals thrice.
     Nosferatu {{ nosferatu }} can field a decent crypt with inferior Fortitude {{ for }} for prevention,
+    especially with {{ cock_robin }} and {{ nikolaus_vermeulen }},
     but apart from that it is mostly star vampires that can go beyond, like {{ enkidu }} or {{ karsh }}.
     {% endtrans %}
 </p>
@@ -1546,8 +1558,8 @@
     slake_the_thirst=card("Slake the Thirst"),
     taste_of_vitae=card("Taste of Vitae")
     %}
-    The Blood Brothers Torrence and Chicago circle provide the interesing Sanguinus {{ san }} discipline coupled with
-    a bit of Fortitude {{ for }} to complement the basic <a href="#potence">Potence module</a>.
+    The Blood Brothers Torrence and Chicago circles provide the interesing Sanguinus {{ san }} discipline coupled with
+    a bit of Fortitude {{ for }} to complement the basic <a href="#potence">Potence {{ POT }} module</a>.
     And as if having a bit of Fortitude {{ for }} prevention alongside Potence {{ pot }} was not already cool,
     They have {{ octopod }} for additional strikes, {{ three_s_a_crowd }} for range setting,
     making sure this {{ ig }} will land, {{ coordinate_attacks }} as an alternative to {{ ig }} to counter defenses,
@@ -1721,7 +1733,7 @@
     {{ ig }} inescapable: a straight-up range setting tool with {{ brick_by_brick }},
     and {{ raking_talons }} for aggravated damage. Visceratika {{ vis }} also provides good damage prevention options,
     but it offers one of the best star fighter of the game: {{ tupdog }}.
-    And those are disposable, so they usually do not bother with prevention.
+    And those are disposable, so they need not bother with prevention.
     The {{ tupdogs_nephandus }} archetype uses this module to great effect.
     {% endtrans %}
 </p>
@@ -1899,7 +1911,7 @@
             weighted_walking_stick=card("Weighted Walking Stick"),
             jacob_fermor=card("Jacob Fermor")
             %}
-            Finally the werewolf. Well it is expensive, but it has a maneuver, it regenerates, and the rush has stealth.
+            Finally the werewolf. It is expensive, but it has a maneuver, it regenerates, and the rush has stealth.
             They love using a {{ weighted_walking_stick }} for 4 damage, and {{ jacob_fermor }} can make them bleed,
             and provide the ousting solution.
             {% endtrans %}
@@ -1967,8 +1979,8 @@
     Ultimately, the only weakness is the limited prevention and the difficulty to handle defenses,
     since {{ psyche }} does not combine well with {{ hunger_of_marduk }}.
     That said, {{ hunter_s_mark }} provide a solid alternative against strong defenses, as long as there's enough
-    stealth to land it consistantly. On top of it all, the module can occupy more than the usual density in a deck,
-    thanks to {{ haqim_s_law_retribution }} that allows to transform all those red cards into bleed enhancers.
+    stealth to land it consistantly. Moreover, the module can be denser than usual,
+    thanks to {{ haqim_s_law_retribution }} that transforms those red cards into bleed enhancers.
     {% endtrans %}
 </p>
 
@@ -2039,10 +2051,10 @@
     dust_to_dust=card("Dust to Dust")
     %}
     The Samedi {{ samedi }} offer one of the most dreadful combat module. With {{ relentless_reaper }}
-    being so versatile, it can be spammed in such amounts as to make any kind of defense irrelevant
+    being so versatile, it can be spammed in such amounts as to make any kind of defense irrelevant,
     while also providing decent prevention.
-    Then {{ groaning_corpse }} provide the damage and the usual Fortitude {{ for }} prevention handles the rest.
-    Of course additional surprises can be used like {{ compress }}, {{ trap }}, {{ necrosis }} or {{ dust_to_dust }}.
+    Then {{ groaning_corpse }} provides the damage and the usual Fortitude {{ for }} prevention handles the rest.
+    Moreover, additional surprises can be used like {{ compress }}, {{ trap }}, {{ necrosis }} or {{ dust_to_dust }}.
     {% endtrans %}
 </p>
 <p>
@@ -2090,7 +2102,7 @@
     of power, like a boost in strength or some {{ magnum }} or {{ stick }}, and you can just spam {{ diversion }} for
     additional strikes and prevention. Additionally, {{ groundfighting }} can be used for utility and against {{ ig }}
     if you are not doing hand strike, and {{ hell_for_leather }} or {{ dust_up }} can provide even more options
-    depending on your crypt. If you are running superior Celerity {{ CEL }} of course, you can use {{ psyche }}
+    depending on your crypt. If you are running superior Celerity {{ CEL }}, you can use {{ psyche }}
     to help overrun defenses.
     {% endtrans %}
 </p>
@@ -2136,11 +2148,13 @@
     matasuntha=card("Matasuntha"),
     miller=card("Miller Delmardigan, Teacher of Bahari", "Miller"),
     adana_de_sforza=card("Adana de Sforza"),
+    leathery_hide=card("Leathery Hide"),
     sideslip=card("Sideslip"),
     glancing_blow=card("Glancing Blow")
     %}
     Different crypts can field this module, from the powerful {{ matasuntha }} to the rarer
-    {{ miller }} or {{ adana_de_sforza }}, passing by all Gangrel antitribu {{ gangrel_antitribu }}.
+    {{ miller }} or {{ adana_de_sforza }}, passing by all Gangrel antitribu {{ gangrel_antitribu }}, who can use
+    {{ leathery_hide }} on top.
     A strength bonus is welcome, to make prevention harder and overcome a simple
     {{sideslip}} or {{glancing_blow}}, and cost reduction is also good, since the whole module is expensive.
     {% endtrans %}
@@ -2168,9 +2182,9 @@
     rotschreck=card("Rötschreck")
     %}
     A rare module that almost always relies on the strength bonus of a big star vampire like {{ lazverinus }},
-    {{ hardestadt }} or {{ elimelech }}. It is mostly a pure Fortitude {{ FOR }} approach relying on strength and
-    prevention for a consistent advantage, but with the added deterrence of some aggravated damage,
-    sometimes seconded by {{ amaranth }} or {{ rotschreck }}.
+    {{ hardestadt }} or {{ elimelech }}. It is mostly a pure <a href="#fortitude">Fortitude {{ FOR }}</a> approach
+    relying on strength and prevention for a consistent advantage,
+    but with the added deterrence of some aggravated damage, sometimes seconded by {{ amaranth }} or {{ rotschreck }}.
     {% endtrans %}
 </p>
 
@@ -2199,8 +2213,8 @@
     Stack an humongous number of {{ horrid_form }}, preferably with vampires that have cost reduction abilities,
     like {{ meshenka }}. Use {{ telepathic_tracking }} to counter defenses.
     Simple, grueling, unencombered by {{ ig }}. You can add some {{ trap }} and {{ chiropteran_marauder }} to help,
-    or just some {{ kraken_s_kiss }}, if it is really focused on {{ meshenka }} as a star. And of course, some
-    {{ carrion_crows }} can always help with the damage throughput if the crypt is more diverse.
+    or some {{ kraken_s_kiss }}, if it is really focused on {{ meshenka }} as a star. In all cases, some
+    {{ carrion_crows }} can always help with the damage throughput.
     {% endtrans %}
 </p>
 
@@ -2227,7 +2241,7 @@
     mistress_fanchon=card("Mistress Fanchon")
     %}
 
-    The <a href="#vicissitude">Vicissitude module</a> is decent, but it misses stuff.
+    The <a href="#vicissitude">Vicissitude {{ VIC }}</a> module is decent, but it misses stuff.
     Coupled with Blood Sorcery {{ tha }} prevention in {{ rego_motum }}, and the unpreventable {{ blood_rage }} hand
     strike that goes so well with {{ chiropteran_marauder }}, it becomes formidable.
     It is seen with very high cap stars like {{ malgorzata }}, {{ lord_tremere }} and {{ mistress_fanchon }}.
@@ -2314,7 +2328,7 @@
     righteous_aura=card("Righteous Aura")
     %}
     Salubri Antitribu {{ salubri_antitribu }} have interesting options with Valeren {{ VAL }}.
-    They mainly rely on weapons with {{ sword_of_the_righteous }} being allowing for brutal aggravated strikes,
+    They mainly rely on weapons with {{ sword_of_the_righteous }} allowing for brutal aggravated strikes,
     and {{ death_seeker }} that lets them cancel either defensive cards or {{ ig }}.
     On the weapons side, it is a choice between simple {{ sticks }} or a {{ blade_of_bellona }}
     and {{ concealed_weapon }} combination. For ousting power, they can rely on the excellent {{ righteous_aura }}.
@@ -2332,9 +2346,9 @@
     %}
     On the prevention side, the options are wide. {{ armor_of_caine_s_fury }} is a great prevention card,
     and {{ the_path_of_retribution }} can make it free. Of course on the other hand,
-    Salubri Antitribu {{ salubri_antitribu }} have Fortitude {{ FOR }} and its collection of prevention cards,
-    from {{ rolling_with_the_punches }} and {{ soak }} against high damage,
-    to {{ hidden_strength }} and {{ indomitability }} for more utilities.
+    Salubri Antitribu {{ salubri_antitribu }} have <a href="#fortitude">Fortitude {{ FOR }}</a>
+    and its collection of prevention cards, from {{ rolling_with_the_punches }} and {{ soak }} against high damage,
+    to {{ hidden_strength }} and {{ indomitability }} for utility.
     Finally they can also use some {{ telepathic_tracking}} for additional control over defensive builds.
     {% endtrans %}
 </p>
@@ -2379,10 +2393,10 @@
 </h1>
 <p>
     {% trans trimmed %}
-    So we've gone through the modules, but we haven't talked much about the vampires yet.
-    And oh boy, how they change everything. So here's a list of all the biggest threats in the game.
-    The number of decks count only counts actual combat decks, some of those appear in a lot of other decks
-    that are not necessarily combat-focused.
+    So we have gone through the modules, but we have not talked much about the vampires yet.
+    And oh boy, how they change everything. So here is a list of the biggest threats in the game.
+    The decks count only counts actual combat decks, some of those vampires appear in a lot of other decks
+    that are not combat-focused.
     {% endtrans %}
 </p>
 
@@ -2526,10 +2540,10 @@
             enkidu=card("Enkidu, The Noah", "Enkidu")
             %}
             A good friend of {{ enkidu }}, she can also run her own show relying on a mix of
-            <a href="#pot-ani">{{ POT }}{{ ANI }}</a>, <a href="#pot-ani">{{ ANI }}{{ PRO }}</a>,
+            <a href="#pot-ani">{{ POT }}{{ ANI }}</a>, <a href="#ani-pro">{{ ANI }}{{ PRO }}</a>,
             <a href="#cel-pro">{{ CEL }}{{ PRO }}</a>, <a href="#pro-for">{{ PRO }}{{ FOR }}</a>
-            and/or <a href="#pot-ani">Anarch {{ CEL }}{{ FOR }}</a>. The choice of module mainly depends on the choice
-            of sidekick.
+            and/or <a href="#anarch-cel-for">Anarch {{ CEL }}{{ FOR }}</a>.
+            The choice of module mainly depends on the choice of sidekick.
             {% endtrans %}
         </p>
     </div>
@@ -2673,7 +2687,7 @@
         mark_v=card("Mark V")
         %}
         <strong>{{ cailean_g2 }}:</strong> His unique ability is great in many decks.
-        A great <a href="#pot-ani">{{ POT }}{{ ANI }}</a> practitionner, he can also use {{ disguise }} a {{ mark_v }}
+        Usually a <a href="#pot-ani">{{ POT }}{{ ANI }}</a> user, he can also use {{ disguise }} a {{ mark_v }}
         like noone, or just use a plain old <a href="#potence">{{ POT }}</a> module to maximum effect.
         {% endtrans %}
     </li>
@@ -2692,12 +2706,12 @@
     <li>
         {% trans trimmed lambach_g2=card("Lambach (G2)") %}
         <strong>{{ lambach_g2 }}:</strong> When it comes down to the <a href="#ani-vic">{{ VIC }}{{ ANI }}</a> module,
-        he's your guy
+        he's your guy.
         {% endtrans %}
     </li>
     <li>
         {% trans trimmed masika_g1=card("Masika") %}
-        <strong>{{ masika_g1 }}:</strong> A great <a href="#cel-guns">{{ CEL }} guns</a> practitionner given his
+        <strong>{{ masika_g1 }}:</strong> A great star for a <a href="#cel-guns">{{ CEL }} guns</a> module given his
         ability.
         {% endtrans %}
     </li>
@@ -2707,9 +2721,8 @@
         spiritual_guidance=card("Spiritual Guidance"),
         dead_hand=card("Dead Hand")
         %}
-        <strong>{{ ignazio_giovanni_g3 }}:</strong> He's the <a href="#pot-for">{{ POT }}{{ FOR }}</a> guy. The module
-        totally
-        benefits from {{ NEC }} {{ spiritual_guidance }} and {{ dead_hand }}.
+        <strong>{{ ignazio_giovanni_g3 }}:</strong> He's the <a href="#pot-for">{{ POT }}{{ FOR }}</a> guy.
+        The module totally benefits from {{ NEC }} {{ spiritual_guidance }} and {{ dead_hand }}.
         {% endtrans %}
     </li>
     <li>
@@ -2736,7 +2749,7 @@
     <li>
         {% trans trimmed shalmath_g6=card("Shalmath"), shalmath_history=link("/archetypes/shalmath-history") %}
         <strong>{{ shalmath_g6 }}:</strong> He's the king of the <a href="#pot-tem">{{ POT }}{{ TEM }}</a> module,
-        with his crazy ability. Best know for {{ shalmath_history }}
+        with his crazy ability. Best know for {{ shalmath_history }}.
         {% endtrans %}
     </li>
     <li>
@@ -2748,13 +2761,13 @@
     <li>
         {% trans trimmed meshenka_g2=card("Meshenka") %}
         <strong>{{ meshenka_g2 }}:</strong> A great <a href="#ani-vic">{{ ANI }}{{ VIC }}</a> vampire,
-        she's also the best fit for <a href="#vic-aus">{{ VIC }}{{ AUS }}</a>
+        she's also the star of the <a href="#vic-aus">{{ VIC }}{{ AUS }}</a> module.
         {% endtrans %}
     </li>
     <li>
         {% trans trimmed kuyén_g6=card("Kuyén") %}
         <strong>{{ kuyén_g6 }}:</strong> A newcomer, but he's your guy if you want to go
-        <a href="#protean">{{ PRO }}</a> or <a href="#ani-pro">{{ ANI }}{{ PRO }}</a>
+        <a href="#protean">{{ PRO }}</a> or <a href="#ani-pro">{{ ANI }}{{ PRO }}</a>.
         {% endtrans %}
     </li>
     <li>
@@ -2762,22 +2775,28 @@
         gotsdam_the_tired_warrior_g4=card("Gotsdam, The Tired Warrior"),
         dawn_operation=card("Dawn Operation")
         %}
-        <strong>{{ gotsdam_the_tired_warrior_g4 }}:</strong> A good friend of Ventrue Antitribu {{ ventrue_antiribu }}
-        and definitely a <a href="#sticks">{{ FOR }} Stick</a> practitionner,
-        he can also play {{ dawn_operation }} for the fun.
+        <strong>{{ gotsdam_the_tired_warrior_g4 }}:</strong> A good friend of Ventrue Antitribu {{ ventrue_antitribu }}
+        and often seen with a <a href="#sticks">{{ FOR }} Stick</a>,
+        he can also play {{ dawn_operation }} for fun.
         {% endtrans %}
     </li>
     <li>
-        {% trans trimmed cock_robin_g3=card("Cock Robin") %}
+        {% trans trimmed
+        cock_robin_g3=card("Cock Robin"),
+        raven_spy=card("Raven Spy"),
+        underbridge_stray=card("Underbridge Stray"),
+        deep_song=card("Deep Song")
+        %}
         <strong>{{ cock_robin_g3 }}:</strong> A great Nosferatu {{ nosferatu }} leader,
         good at <a href="#potence">{{ POT }}</a>, <a href="#animalism">{{ ANI }}</a>,
-        and of course <a href="#pot-ani">{{ POT }}{{ ANI }}</a>
+        and of course <a href="#pot-ani">{{ POT }}{{ ANI }}</a>. His ability makes recruiting {{ raven_spy }}
+        and {{ underbridge_stray }} so easy, but {{ deep_song }} is really his go-to activity.
         {% endtrans %}
     </li>
     <li>
         {% trans trimmed aline_gädeke_g6=card("Aline Gädeke") %}
         <strong>{{ aline_gädeke_g6 }}:</strong> A newcomer, but she's a great <a href="#brujah-debate">Brujah Debate</a>
-        leader as well as an excellent <a href="#anarch-pot-cel">Anarch {{ POT }}{{ CEL }}</a> practitionner.
+        leader as well as an excellent match for <a href="#anarch-pot-cel">Anarch {{ POT }}{{ CEL }}</a>.
         {% endtrans %}
     </li>
     <li>
@@ -2789,7 +2808,7 @@
     <li>
         {% trans trimmed theo_bell_g6=card("Theo Bell (G6)") %}
         <strong>{{ theo_bell_g6 }}:</strong> The brand new Theo Bell is, of course, already a top
-        <a href="#anarch-pot-cel">Anarch {{ POT }}{{ CEL }}</a> practitionner
+        <a href="#anarch-pot-cel">Anarch {{ POT }}{{ CEL }}</a> contender.
         {% endtrans %}
     </li>
 </ul>
