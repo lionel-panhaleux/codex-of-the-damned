@@ -73,7 +73,7 @@
         {% endtrans %}
     </p>
     <ul>
-        <li><span class="badge-red">RUSH</span> {{ _("Usually a heavy rush module") }}</li>
+        <li><span class="badge-red">RUSH</span> {{ _("Usually a large combat module") }}</li>
         <li><span class="badge-yellow">BLOCK</span> {{ _("Usually a medium-sized block module") }}</li>
         <li><span class="badge-orange">ANY</span> {{ _("Can fit anywhere on the curve") }}</li>
         <li><span class="badge-blue">DEFENSIVE</span> {{ _("A light module for defense only") }}</li>
@@ -539,7 +539,7 @@
 </p>
 <p>
     {% trans trimmed %}
-    Of course, the discipline shines even brighter when combined: the legacy Lasombra {{ lasombra }} have the
+    Of course, the discipline shines even brighter when combined: the legacy Lasombra {{ lasombra_legacy }} have the
     <a href="#pot-obt">{{ POT }}{{ OBT }}</a> and even <a href="#pot-obt-ani">{{ POT }}{{ OBT }}{{ ANI }}</a>
     combinations, and the Kiasyd {{ kiasyd }} the <a href="#obt-myt">{{ OBT }}{{ MYT }}</a> variant.
     {% endtrans %}
@@ -717,7 +717,7 @@
             nocturn=card("Nocturn"),
             sce=link("/strategy/combat", "SCE", _anchor="defence")
             %}
-            Obtenebration has good {{ sce }} options in {{ shadow_body }} and Oubliette,
+            Obtenebration has good {{ sce }} options in {{ shadow_body }} and {{ oubliette }},
             and also a great dissuasion weapon in {{ entombment }}. On top of that, {{ nocturn }} can be used as
             cannon fodder to block dangerous rushers and protect their vampiric masters.
             {% endtrans %}
@@ -1512,14 +1512,14 @@
     skin_of_steel=card("Skin of Steel"),
     sire_s_index_finger=card("Sire's Index Finger"),
     blade_of_enoch=card("Blade of Enoch"),
-    rötschreck=card("Rötschreck")
+    rotschreck=card("Rötschreck")
     %}
     Well, if the <a href="#potence">Potence module</a> lacks prevention, using Serpentis {{ SER }} {{ typhonic_beast }},
     especially with a vampire that plays it for free like {{ ghede }}, makes for a powerful combination
     with just two cards. Rush, play {{ typhonic_beast }} and press until you are at close range, then {{ ig }} and kill.
     {{ the_jones }} is often included too for good measure against torpor strikes like {{ entombment }},
     as well as supplementary prevention against high-damage opponents, like {{ skin_of_steel }},
-    and {{ sire_s_index_finger }} or {{ blade_of_enoch }} against {{ rötschreck }}.
+    and {{ sire_s_index_finger }} or {{ blade_of_enoch }} against {{ rotschreck }}.
     {% endtrans %}
 </p>
 <p>
@@ -1611,14 +1611,14 @@
     montano=card("Montano"),
     nahir=card("Nahir"),
     servius_marius_pustula=card("Servius Marius Pustula", "Servius"),
-    antón_de_concepción=card("Antón de Concepción", "Antón"),
+    anton_de_concepcion=card("Antón de Concepción", "Antón"),
     carrion_crows=card("Carrion Crows"),
     deep_song=card("Deep Song"),
     sense_the_savage_way=card("Sense the Savage Way"),
     black_metamorphosis=card("Black Metamorphosis")
     %}
     This module relies on a very high capacity crypt with {{ montano }}, {{ nahir }}, {{ servius_marius_pustula }}
-    and/or {{ antón_de_concepción }}. Using Animalism {{ ani }} here is not just a matter of having {{ carrion_crows }},
+    and/or {{ anton_de_concepcion }}. Using Animalism {{ ani }} here is not just a matter of having {{ carrion_crows }},
     but more importantly to benefit from the versatile {{ deep_song }} and {{ sense_the_savage_way }}.
     On the Obtenebration {{ obt }} side, it will also often include {{ black_metamorphosis }}.
     {% endtrans %}
@@ -2011,7 +2011,7 @@
     {{ selective_silence }} to set range, {{ taste_of_death }} for aggravated damage, and {{ sanguine_entrapment }}
     against defenses.
     Celerity {{ CEL }} provides additionals and a few more utilities with the like of {{ pursuit }}, {{ side_strike }},
-    and {{ psyche }}. There is not much prevention to be had, just {{ sideslip }}, so opposing range modules can be
+    and {{ psyche }}. There is not much prevention to be had, just {{ sideslip }}, so opposing ranged modules can be
     hard to handle. Luckily, {{ fast_hands }} can offset most gun-based modules.
     {% endtrans %}
 </p>
@@ -2411,7 +2411,7 @@
         <p>
             {% trans trimmed %}
             A great star, both in <a href="#animalism">Mono {{ ANI }}</a> and <a href="#pot-ani">{{ POT }}{{ ANI }}</a>
-            decks. Here ability is just bonkers.
+            decks. Her ability is just bonkers.
             {% endtrans %}
         </p>
     </div>
