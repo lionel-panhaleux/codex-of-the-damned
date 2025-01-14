@@ -10,6 +10,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Add article: Combat Modules
 - Strategy: add some Oblivion cards (Lasombra precon)
 - Deck building: add a couple of blog links
+- Fix VDB links on TWDA decks
 
 ## 1.79 (2024-11-10)
 
