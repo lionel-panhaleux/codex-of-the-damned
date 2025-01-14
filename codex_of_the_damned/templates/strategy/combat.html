@@ -13,6 +13,15 @@
     It also gave its name to an entire category of decks: the {{ rush_decks }}.
     {% endtrans %}
 </p>
+<p>
+    {% trans trimmed
+    combat_primer=link("/strategy/articles/basic/combat-primer"),
+    combat_modules=link("/strategy/articles/advanced/combat-modules")
+    %}
+    If you want to explore combat deeper, you can consult our strategy articles: 
+    Krzystof Karski's {{ combat_primer }}, and {{ combat_modules }}.
+    {% endtrans %}
+</p>
 <h2 id="posture">{{ _('Posture') }}</h2>
 {% trans trimmed
 a_b=link("/strategy/fundamentals", _("A&B"), 'AB'),

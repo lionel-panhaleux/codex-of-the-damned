@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2025-01-14 16:52+0100\n"
-"PO-Revision-Date: 2025-01-14 16:51+0100\n"
+"POT-Creation-Date: 2025-01-14 17:01+0100\n"
+"PO-Revision-Date: 2025-01-14 17:01+0100\n"
 "Last-Translator: \n"
 "Language: fr\n"
 "Language-Team: fr <LL@li.org>\n"
@@ -105,7 +105,7 @@ msgstr "Basique"
 
 #: codex_of_the_damned/navigation.py:96
 #: codex_of_the_damned/templates/strategy/articles/basic/blood-pool-and-grinding-beads.html:5
-#: codex_of_the_damned/templates/strategy/combat.html:24
+#: codex_of_the_damned/templates/strategy/combat.html:33
 msgid "Blood, Pool and Grinding Beads"
 msgstr "Sang, Influence et Usure de Jetons"
 
@@ -263,7 +263,7 @@ msgstr "Sectes"
 #: codex_of_the_damned/templates/strategy/articles/advanced/combat-modules.html:2079
 #: codex_of_the_damned/templates/strategy/bloat.html:77 codex_of_the_damned/templates/strategy/bloat.html:78
 #: codex_of_the_damned/templates/strategy/bloat.html:99 codex_of_the_damned/templates/strategy/bloat.html:100
-#: codex_of_the_damned/templates/strategy/combat.html:70 codex_of_the_damned/templates/strategy/fundamentals.html:297
+#: codex_of_the_damned/templates/strategy/combat.html:79 codex_of_the_damned/templates/strategy/fundamentals.html:297
 #: codex_of_the_damned/templates/strategy/fundamentals.html:298
 #: codex_of_the_damned/templates/strategy/fundamentals.html:351
 #: codex_of_the_damned/templates/strategy/fundamentals.html:421
@@ -958,7 +958,7 @@ msgstr ""
 #: codex_of_the_damned/templates/best-cards/generic/fortitude.html:16
 #: codex_of_the_damned/templates/best-cards/generic/master-cards.html:38
 #: codex_of_the_damned/templates/best-cards/generic/no-discipline.html:114
-#: codex_of_the_damned/templates/best-cards/generic/presence.html:18 codex_of_the_damned/templates/strategy/combat.html:18
+#: codex_of_the_damned/templates/best-cards/generic/presence.html:18 codex_of_the_damned/templates/strategy/combat.html:27
 #: codex_of_the_damned/templates/strategy/fundamentals.html:240
 msgid "A&B"
 msgstr "A&B"
@@ -11578,12 +11578,12 @@ msgstr ""
 msgid "Prince or Justicar"
 msgstr "Prince ou Justicar"
 
-#: codex_of_the_damned/templates/strategy/bloat.html:256 codex_of_the_damned/templates/strategy/combat.html:72
-#: codex_of_the_damned/templates/strategy/combat.html:77 codex_of_the_damned/templates/strategy/combat.html:84
-#: codex_of_the_damned/templates/strategy/combat.html:89 codex_of_the_damned/templates/strategy/combat.html:94
-#: codex_of_the_damned/templates/strategy/combat.html:99 codex_of_the_damned/templates/strategy/combat.html:258
-#: codex_of_the_damned/templates/strategy/combat.html:264 codex_of_the_damned/templates/strategy/combat.html:269
-#: codex_of_the_damned/templates/strategy/combat.html:359 codex_of_the_damned/templates/strategy/deck-building.html:219
+#: codex_of_the_damned/templates/strategy/bloat.html:256 codex_of_the_damned/templates/strategy/combat.html:81
+#: codex_of_the_damned/templates/strategy/combat.html:86 codex_of_the_damned/templates/strategy/combat.html:93
+#: codex_of_the_damned/templates/strategy/combat.html:98 codex_of_the_damned/templates/strategy/combat.html:103
+#: codex_of_the_damned/templates/strategy/combat.html:108 codex_of_the_damned/templates/strategy/combat.html:267
+#: codex_of_the_damned/templates/strategy/combat.html:273 codex_of_the_damned/templates/strategy/combat.html:278
+#: codex_of_the_damned/templates/strategy/combat.html:368 codex_of_the_damned/templates/strategy/deck-building.html:219
 #: codex_of_the_damned/templates/strategy/fundamentals.html:56 codex_of_the_damned/templates/strategy/fundamentals.html:61
 #: codex_of_the_damned/templates/strategy/fundamentals.html:79 codex_of_the_damned/templates/strategy/fundamentals.html:92
 #: codex_of_the_damned/templates/strategy/fundamentals.html:168
@@ -11631,11 +11631,20 @@ msgstr ""
 msgid "rush decks"
 msgstr "decks de rush"
 
-#: codex_of_the_damned/templates/strategy/combat.html:16
+#: codex_of_the_damned/templates/strategy/combat.html:17
+#, python-format
+msgid ""
+"If you want to explore combat deeper, you can consult our strategy articles: Krzystof Karski's %(combat_primer)s, and"
+" %(combat_modules)s."
+msgstr ""
+"Si vous souhaitez explorer le combat en profondeur, vous pouvez consulter nos articles de stratégie : "
+"%(combat_primer)s de Krzystof Karski, et %(combat_modules)s ."
+
+#: codex_of_the_damned/templates/strategy/combat.html:25
 msgid "Posture"
 msgstr "Posture"
 
-#: codex_of_the_damned/templates/strategy/combat.html:17
+#: codex_of_the_damned/templates/strategy/combat.html:26
 #, python-format
 msgid ""
 "<p> Combat does not help reducing the prey's pool, at least not directly. There are basically three strategic "
@@ -11659,23 +11668,23 @@ msgstr ""
 "simplement de pouvoir résister suffisamment bien aux deux autres postures, soit avec des options de combat "
 "défensives, soit en se basant simplement sur la vitesse ou le nombre de serviteurs. </li> </ul> </p>"
 
-#: codex_of_the_damned/templates/strategy/combat.html:19
+#: codex_of_the_damned/templates/strategy/combat.html:28
 msgid "bloat"
 msgstr "régénération"
 
-#: codex_of_the_damned/templates/strategy/combat.html:20
+#: codex_of_the_damned/templates/strategy/combat.html:29
 msgid "table balance"
 msgstr "équilibre de la table"
 
-#: codex_of_the_damned/templates/strategy/combat.html:21 codex_of_the_damned/templates/strategy/combat.html:313
+#: codex_of_the_damned/templates/strategy/combat.html:30 codex_of_the_damned/templates/strategy/combat.html:322
 msgid "Rush decks"
 msgstr "Decks de rush"
 
-#: codex_of_the_damned/templates/strategy/combat.html:50
+#: codex_of_the_damned/templates/strategy/combat.html:59
 msgid "Dealing damage"
 msgstr "Infliger des dégâts"
 
-#: codex_of_the_damned/templates/strategy/combat.html:52
+#: codex_of_the_damned/templates/strategy/combat.html:61
 #, python-format
 msgid ""
 "On the discipline side, %(pot)s and %(thn)s are great at dealing high damage. %(ani)s has a strong combination with "
@@ -11688,33 +11697,33 @@ msgstr ""
 "%(theft_of_vitae)s, qui fournit gratuitement un différentiel de 4 sang sans possibilité de prévention. De nombreuses "
 "disciplines donnent accès à des dégâts aggravés :"
 
-#: codex_of_the_damned/templates/strategy/combat.html:67 codex_of_the_damned/templates/strategy/combat.html:76
-#: codex_of_the_damned/templates/strategy/combat.html:81 codex_of_the_damned/templates/strategy/combat.html:87
-#: codex_of_the_damned/templates/strategy/combat.html:92 codex_of_the_damned/templates/strategy/combat.html:97
-#: codex_of_the_damned/templates/strategy/combat.html:101 codex_of_the_damned/templates/strategy/combat.html:102
-#: codex_of_the_damned/templates/strategy/combat.html:103 codex_of_the_damned/templates/strategy/combat.html:104
-#: codex_of_the_damned/templates/strategy/combat.html:253 codex_of_the_damned/templates/strategy/combat.html:262
-#: codex_of_the_damned/templates/strategy/combat.html:268 codex_of_the_damned/templates/strategy/combat.html:272
-#: codex_of_the_damned/templates/strategy/combat.html:273 codex_of_the_damned/templates/strategy/combat.html:274
-#: codex_of_the_damned/templates/strategy/combat.html:275 codex_of_the_damned/templates/strategy/combat.html:276
-#: codex_of_the_damned/templates/strategy/combat.html:278 codex_of_the_damned/templates/strategy/combat.html:282
-#: codex_of_the_damned/templates/strategy/combat.html:285 codex_of_the_damned/templates/strategy/combat.html:287
+#: codex_of_the_damned/templates/strategy/combat.html:76 codex_of_the_damned/templates/strategy/combat.html:85
+#: codex_of_the_damned/templates/strategy/combat.html:90 codex_of_the_damned/templates/strategy/combat.html:96
+#: codex_of_the_damned/templates/strategy/combat.html:101 codex_of_the_damned/templates/strategy/combat.html:106
+#: codex_of_the_damned/templates/strategy/combat.html:110 codex_of_the_damned/templates/strategy/combat.html:111
+#: codex_of_the_damned/templates/strategy/combat.html:112 codex_of_the_damned/templates/strategy/combat.html:113
+#: codex_of_the_damned/templates/strategy/combat.html:262 codex_of_the_damned/templates/strategy/combat.html:271
+#: codex_of_the_damned/templates/strategy/combat.html:277 codex_of_the_damned/templates/strategy/combat.html:281
+#: codex_of_the_damned/templates/strategy/combat.html:282 codex_of_the_damned/templates/strategy/combat.html:283
+#: codex_of_the_damned/templates/strategy/combat.html:284 codex_of_the_damned/templates/strategy/combat.html:285
+#: codex_of_the_damned/templates/strategy/combat.html:287 codex_of_the_damned/templates/strategy/combat.html:291
+#: codex_of_the_damned/templates/strategy/combat.html:294 codex_of_the_damned/templates/strategy/combat.html:296
 #: codex_of_the_damned/templates/strategy/deck-building.html:218
 #: codex_of_the_damned/templates/strategy/fundamentals.html:54 codex_of_the_damned/templates/strategy/fundamentals.html:56
 #: codex_of_the_damned/templates/strategy/fundamentals.html:60
 msgid "with"
 msgstr "avec"
 
-#: codex_of_the_damned/templates/strategy/combat.html:106
+#: codex_of_the_damned/templates/strategy/combat.html:115
 #, python-format
 msgid "Gargoyles %(gargoyle)s with %(raking_talons)s."
 msgstr "Les gargouilles %(gargoyle)s avec %(raking_talons)s."
 
-#: codex_of_the_damned/templates/strategy/combat.html:114
+#: codex_of_the_damned/templates/strategy/combat.html:123
 msgid "Using aggravated damage"
 msgstr "Utiliser des dégâts aggravés"
 
-#: codex_of_the_damned/templates/strategy/combat.html:115
+#: codex_of_the_damned/templates/strategy/combat.html:124
 #, python-format
 msgid ""
 "<p> Using aggravated damage while acting is tricky, as the acting minion has to choose <strong>and pay</strong> for "
@@ -11732,7 +11741,7 @@ msgstr ""
 "torpeur quelle que soit sa frappe. Le seul prérequis est que la portée doit être adéquate pour la frappe aggravée. "
 "</p>"
 
-#: codex_of_the_damned/templates/strategy/combat.html:135
+#: codex_of_the_damned/templates/strategy/combat.html:144
 #, python-format
 msgid ""
 "<p> Apart from dealing more damage each strike, <strong>additional strikes</strong> are a good option to deliver more"
@@ -11747,11 +11756,11 @@ msgstr ""
 "gratuitement pour tous les serviteurs. </p>"
 
 #: codex_of_the_damned/templates/strategy/articles/advanced/combat-modules.html:1069
-#: codex_of_the_damned/templates/strategy/combat.html:154
+#: codex_of_the_damned/templates/strategy/combat.html:163
 msgid "Weapons"
 msgstr "Armes"
 
-#: codex_of_the_damned/templates/strategy/combat.html:156
+#: codex_of_the_damned/templates/strategy/combat.html:165
 msgid ""
 "Weapons are also a good way to improve damage. There are a lot of weapons available, here are the most efficient and "
 "most played:"
@@ -11759,7 +11768,7 @@ msgstr ""
 "Les armes sont aussi un bon moyen d'augmenter les dégâts. Il y a beaucoup d'armes disponibles, voici les plus "
 "efficaces et les plus jouées :"
 
-#: codex_of_the_damned/templates/strategy/combat.html:163
+#: codex_of_the_damned/templates/strategy/combat.html:172
 #, python-format
 msgid ""
 "<b>%(weighted_walking_stick)s:</b> A weapon that can be wielded without losing an action to equip it. It provides a "
@@ -11769,7 +11778,7 @@ msgstr ""
 "un total de trois dégâts supplémentaires gratuitement, un très bon ratio."
 
 # python-format
-#: codex_of_the_damned/templates/strategy/combat.html:172
+#: codex_of_the_damned/templates/strategy/combat.html:181
 #, python-format
 msgid ""
 "<b>%(magnum)s:</b> An additional damage each strike, together with a manoeuver to keep the range long an avoid "
@@ -11780,14 +11789,14 @@ msgstr ""
 "dégiåts. C'est aussi la meilleure arme que %(concealed_weapon)s peut sortir, ce qui évite de perdre une action à "
 "l'équiper (et de risquer l'interception)."
 
-#: codex_of_the_damned/templates/strategy/combat.html:185
+#: codex_of_the_damned/templates/strategy/combat.html:194
 #, python-format
 msgid "<b>%(ivory_bow)s:</b> Although unique, 1 pool for an aggravated ranged damage each strike is a bargain."
 msgstr ""
 "<b>%(ivory_bow)s :</b> Bien qu'unique, 1 influence pour un dégât aggravé longue portée à chaque frappe, c'est une "
 "affaire."
 
-#: codex_of_the_damned/templates/strategy/combat.html:193
+#: codex_of_the_damned/templates/strategy/combat.html:202
 #, python-format
 msgid ""
 "<b>%(sniper_rifle)s:</b> Although only useful when blocking, its ability to set the range is an excellent option to "
@@ -11796,7 +11805,7 @@ msgstr ""
 "<b>%(sniper_rifle)s :</b> Surtout utile pour bloquer, sa capacité à fixer la portée est une excellent option pour "
 "éviter les dégâts."
 
-#: codex_of_the_damned/templates/strategy/combat.html:202
+#: codex_of_the_damned/templates/strategy/combat.html:211
 #, python-format
 msgid ""
 "<b>%(assault_rifle)s:</b> A stronger version of the %(magnum)s. The 5 pool cost is prohibitive, but if it can be "
@@ -11806,7 +11815,7 @@ msgstr ""
 "peut être réduit en le mettant en jeu avec %(alastor)s, par exemple. C'est l'une des armes les plus puissantes du "
 "jeu."
 
-#: codex_of_the_damned/templates/strategy/combat.html:215 codex_of_the_damned/templates/strategy/combat.html:233
+#: codex_of_the_damned/templates/strategy/combat.html:224 codex_of_the_damned/templates/strategy/combat.html:242
 #, python-format
 msgid ""
 "<b>%(blade_of_bellona)s:</b> An additional damage and optional manoeuver at no cost, a bargain for Salubri antitribu "
@@ -11815,16 +11824,16 @@ msgstr ""
 "<b>%(blade_of_bellona)s :</b> Un dégât de plus avec une manœuvre en option, le tout gratuit – une affaire pour les "
 "%(salubri_antitribu)s."
 
-#: codex_of_the_damned/templates/strategy/combat.html:224
+#: codex_of_the_damned/templates/strategy/combat.html:233
 #, python-format
 msgid "<b>%(ak_47)s:</b> A more brutal version of the %(assault_rifle)s. The latter is often preferred"
 msgstr "<b>%(ak_47)s:</b> Une version plus brutale de l'%(assault_rifle)s. Ce dernier lui est souvent préféré"
 
-#: codex_of_the_damned/templates/strategy/combat.html:243
+#: codex_of_the_damned/templates/strategy/combat.html:252
 msgid "Defence"
 msgstr "Défense"
 
-#: codex_of_the_damned/templates/strategy/combat.html:245
+#: codex_of_the_damned/templates/strategy/combat.html:254
 msgid ""
 "The easiest defense for combats is to avoid them altogether using a <em>Strike: Combat Ends</em>, "
 "<strong>S:CE</strong> for short. Multiple disciplines give access to this option:"
@@ -11833,7 +11842,7 @@ msgstr ""
 "(<em>Strike: Combat Ends</em> en anglais, <strong>S:CE</strong> pour faire court). Plusieurs disciplines donnent "
 "accès à cette option :"
 
-#: codex_of_the_damned/templates/strategy/combat.html:292
+#: codex_of_the_damned/templates/strategy/combat.html:301
 #, python-format
 msgid ""
 "It is worth noting that %(flash_grenade)s is an option for any minion, and also that big capacity vampires have "
@@ -11844,7 +11853,7 @@ msgstr ""
 "haute capacité ont accès à %(dom)s %(obedience)s et %(OBF)s %(mental_maze)s pour éviter complètement le combat, bien "
 "qu'uniquement en réaction."
 
-#: codex_of_the_damned/templates/strategy/combat.html:305
+#: codex_of_the_damned/templates/strategy/combat.html:314
 #, python-format
 msgid ""
 "<h3>How to deal with Strike: Combat Ends (S:CE)</h3> <p> S:CE are a real issue for combat-focused deck. Some "
@@ -11864,7 +11873,7 @@ msgstr ""
 "%(hunters_mark)s. </li> </ul> <p> Sans ça, la seule option est d'entrer suffisamment souvent en combat pour épuiser "
 "les S:CE du côté de la défense. </p>"
 
-#: codex_of_the_damned/templates/strategy/combat.html:343
+#: codex_of_the_damned/templates/strategy/combat.html:352
 #, python-format
 msgid ""
 "<strong>Damage prevention</strong> is another important aspect of combat. It is useful in defence, but also on the "
@@ -11875,12 +11884,12 @@ msgstr ""
 "défensivement, mais aussi offensivement : réduire la perte de sang est toujours bon. %(for)s est la principale "
 "discipline pour la prévention de dégâts et seules quelques cartes de prévention n'en font pas partie :"
 
-#: codex_of_the_damned/templates/strategy/combat.html:351
+#: codex_of_the_damned/templates/strategy/combat.html:360
 #, python-format
 msgid "%(glancing_blow)s prevents only one damage, that makes it a viable option only for saving an ally."
 msgstr "%(glancing_blow)s ne prévient qu'un dégât, ce qui ne le rend viable que pour sauver un allié."
 
-#: codex_of_the_damned/templates/strategy/combat.html:372
+#: codex_of_the_damned/templates/strategy/combat.html:381
 #, python-format
 msgid ""
 "<p> <strong>Dodging</strong> is also a good defensive option, and the simple %(dodge)s is available for everyone. It "
@@ -11896,11 +11905,11 @@ msgstr ""
 "efficaces en tant qu'outil offensif, mais ce sont de bonnes options en défense car elles peuvent constituer une bonne"
 " dissuasion contre les decks de combat. </p>"
 
-#: codex_of_the_damned/templates/strategy/combat.html:391
+#: codex_of_the_damned/templates/strategy/combat.html:400
 msgid "Range Management"
 msgstr "Gestion de la portée"
 
-#: codex_of_the_damned/templates/strategy/combat.html:393
+#: codex_of_the_damned/templates/strategy/combat.html:402
 msgid ""
 "Getting the correct range is fundamental for combat. Most combat module specialize in a given range, either "
 "maintaining <strong>long range</strong> to avoid the basic one damage any vampire can do, or using strong "
