@@ -577,6 +577,25 @@
 </p>
 <p>
     {% trans trimmed
+    carlton_van_wyk=card("Carlton Van Wyk"),
+    carlton=card("Carlton Van Wyk", "Carlton"),
+    ossian=card("Ossian"),
+    gregory_winter=card("Gregory Winter"),
+    michael_harris=card("Michael Harris, the Incinerator", "Michael Harris"),
+    valerie_diaz=card("Valerie Diaz, Antigen Commander", "Valerie Diaz"),
+    %}
+    Allies are another resource that can be tapped in. {{ carlton_van_wyk }} is probably the most played,
+    as he's great at defense: combat decks have to include a way of dealing with his permanent dodge ability if they 
+    want to avoid losing a rush per turn to his blocks. Moreover, his way of dealing with diablerists makes
+    the act of diablerie more dangerous: you never know if a {{ carlton }} won't show up to burn you next turn.
+    Apart from him, {{ ossian }} is a good rusher who can dispatch the small fry, and {{ gregory_winter }}
+    can help keep the blood low on on your opponents and occasionally do some torpor cleanup.
+    The Antigen newcomers, {{ michael_harris }} and {{ valerie_diaz }}, have not proven their worth yet,
+    although {{ michael_harris }}' ability looks like it could be useful if you've included a weapon or two.
+    {% endtrans %}
+</p>
+<p>
+    {% trans trimmed
     guardian_angel=card("Guardian Angel"),
     depravity=card("Depravity"),
     libertas=card("Libertas"),
@@ -609,6 +628,8 @@
             {% trans trimmed
             majesty=card("Majesty"),
             staredown=card("Staredown"),
+            catatonic_fear=card("Catatonic Fear"),
+            target_vitals=card("Target Vitals"),
             serpent_s_numbing_kiss=card("Serpent's Numbing Kiss"),
             charismatic_aura=card("Charismatic Aura"),
             bollix=card("Bollix"),
@@ -617,9 +638,10 @@
             %}
             Presence {{ pre }} is the crowned discipline for combat ends. {{ majesty }} is at the top of the list,
             providing {{ sce }} at inferior {{ pre }} and a useful unlock at superior {{ PRE }}.
-            {{ staredown }} is a possible alternative, with a combat ends at no cost.
+            {{ staredown }} is a possible cheaper alternative. There's also the nasty combination of
+            {{ catatonic_fear }} with {{ target_vitals }} if you want your SCE to be more punishing.
 
-            On top of that, there are additional options depending on your vampires: {{ serpent_s_numbing_kiss }}
+            The discipline offers even more options depending on your vampires: {{ serpent_s_numbing_kiss }}
             if they have Serpentis {{ ser }} has a very dissuasive effect, and {{ charismatic_aura }}
             if you have Auspex {{ aus }}, or {{ bollix }} if you happen to be Anarch,
             can be use to counter the ominous {{ immortal_grapple }}.
