@@ -95,32 +95,28 @@
         _("Gangrel")),
         ministry_precon=external("https://www.blackchantry.com/products/vampire-the-eternal-struggle-fifth-edition/fifth-edition-the-ministry/",
         _("Ministry")),
-        new_blood_bundles=external("https://www.blackchantry.com/products/vampire-the-eternal-struggle-fifth-edition/new-blood-introductory-decks-for-vampire-the-eternal-struggle/",
-        _("New Blood bundles"))
-        %}
-        There are additional V5 precons that are not in the standard box, they should be your first stop:
-        {{ banu_haqim_precon }} {{ banu_haqim }}, {{ brujah_precon }} {{ brujah }}, {{ gangrel_precon }} {{ gangrel }}
-        and {{ ministry_precon }} {{ ministry }}.
-        They're strong decks with good cards and can seamlessly be mixed with the V5 Box decks and their five clans.
-        If you want to improve a bit on those clans and get some cards to tinker the decks, you can just get a couple
-        of the matching {{ new_blood_bundles }} for each of them.
-        {% endtrans %}
-    </p>
-    <p>
-        {% trans trimmed
         ravnos_precon=external("https://www.blackchantry.com/products/vampire-the-eternal-struggle-fifth-edition/fifth-edition-ravnos/",
         _("Ravnos")),
         salubri_precon=external("https://www.blackchantry.com/products/vampire-the-eternal-struggle-fifth-edition/fifth-edition-salubri/",
         _("Salubri")),
         tzimisce_precon=external("https://www.blackchantry.com/products/vampire-the-eternal-struggle-fifth-edition/fifth-edition-tzimisce/",
-        _("Tzimisce"))
+        _("Tzimisce")),
+        lasombra_precon=external("https://www.blackchantry.com/products/vampire-the-eternal-struggle-fifth-edition/fifth-edition-lasombra/",
+        _("Lasombra")),
+        hecata_precon=external("https://www.blackchantry.com/vampire-the-eternal-struggle-fifth-edition/fifth-edition-hecata/",
+        _("Hecata")),
+        new_blood_bundles=external("https://www.blackchantry.com/products/vampire-the-eternal-struggle-fifth-edition/new-blood-introductory-decks-for-vampire-the-eternal-struggle/",
+        _("New Blood bundles"))
         %}
-        There are also precons for {{ salubri_precon }} {{ salubri }},
-        {{ tzimisce_precon }} {{ tzimisce }} and {{ ravnos_precon }} {{ ravnos }}.
-        They contain a lot of cards with clan requirements that do not mix
-        as well with the other clans,
-        but are strong decks worth acquiring if their themes and playstyles appeal to you.
-        No new Blood has been released for them yet.
+        There are additional V5 precons that are not in the standard box, they should be your first stop:
+        {{ banu_haqim_precon }} {{ banu_haqim }}, {{ brujah_precon }} {{ brujah }}, {{ gangrel_precon }} {{ gangrel }},
+        {{ ministry_precon }} {{ ministry }}, {{ salubri_precon }} {{ salubri }}, {{ tzimisce_precon }} {{ tzimisce }},
+        {{ ravnos_precon }} {{ ravnos }}, {{ lasombra_precon }} {{ lasombra }}, and {{ hecata_precon }} {{ hecata }}.
+        They're strong decks with good cards and can seamlessly be mixed with the V5 Box decks and their five clans.
+        If you want to improve a bit on those clans and get some cards to tinker the decks, you can just get a couple
+        of the matching {{ new_blood_bundles }} for them. Note that the New Blood bundles for
+        Salubri {{ salubri }}, Tzimisce {{ tzimisce }}, Ravnos {{ ravnos }}, Lasombra {{ lasombra }},
+        and Hecata {{ hecata }} are yet to be released, so they'll have less options until then.
         {% endtrans %}
     </p>
     <p>
@@ -135,7 +131,7 @@
     </p>
     <p>
         {% trans trimmed %}
-        With this acquisition on top of the base box, you will have thirteen strong decks that can be enjoyed together
+        With this acquisition on top of the base box, you will have fifteen strong decks that can be enjoyed together
         in a balanced and fun experience. That's already a high replayability there for any playgroup.
         Going any further means you're not a Neonate anymore, but an experienced Ancillae ready to expand their horizon.
         {% endtrans %}
@@ -180,7 +176,7 @@
         "DriveThru Cards"),
         gamepod=external("https://www.gamepod.es", "Gamepod")
         %}
-        So, you got 14 decks and you want more? Greedy childe of the darkness, very well.
+        So, you got 20 decks and you want more? Greedy childe of the darkness, very well.
         Your next inquiry should be the Print-on-Demand cards, then. They are the same quality
         as the bundles you acquired already, and cost less than $0.50 a card. They can be
         bought from {{ drivethru_cards }} in the US and {{ gamepod }} in the EU.
@@ -204,17 +200,22 @@
 </div>
 
 <div class="column-2">
-    <h3>{{ _('Promo Pack 1') }}</h3>
-    <img src="{{ url_for('static', filename='img/promo-pack-1.webp') }}" alt="Promo Pack 1">
+    <h3>{{ _('Promo Packs') }}</h3>
+    <img src="{{ url_for('static', filename='img/promo-pack-1.webp') }}" alt="Promo Packs">
     <p>
         {% trans trimmed
         promo_pack_1=external("https://www.blackchantry.com/products/legacy/bundles/product-promo-pack-1/", "Promo Pack
         1"),
-        the_capuchin = link("/archetypes/neonate/the-capuchin"),
-        baltimore_purge = link("/archetypes/baltimore-purge")
+        promo_pack_2=external("https://www.blackchantry.com/products/legacy/bundles/product-promo-pack-2/", "Promo Pack
+        2"),
+        baltimore_purge = link("/archetypes/baltimore-purge"),
+        benedito_a_lanterna=card("Benedito, a Lanterna"),
+        bituin=card("Bituin"),
+        jacques_rouge=card("Jacques Rouge")
         %}
-        Once you get to this level, a {{ promo_pack_1 }} is a neat acquisition. It can let you build
-        a few fun Star-vampire decks, like {{ the_capuchin }} or {{ baltimore_purge }}.
+        Once you get to this level, promo packs can be nice acquisitions. {{ promo_pack_1 }} can let you build
+        some fun Star-vampire decks, like {{ baltimore_purge }}, and {{ promo_pack_2 }} gives you a few Barons
+        you cannot find elsewhere: {{ benedito_a_lanterna }}, {{ bituin }}, and {{ jacques_rouge }}.
         {% endtrans %}
     </p>
 </div>
@@ -224,7 +225,7 @@
     <img src="{{ url_for('static', filename='img/lost-kindred.webp') }}" alt="Lost Kindred">
     <p>
         {% trans trimmed
-        emerald_legionnaire=card("Emeral Legionnaire"),
+        emerald_legionnaire=card("Emerald Legionnaire"),
         lost_kindred=external("https://www.blackchantry.com/products/legacy/bundles/lost-kindred/", "Lost Kindred")
         %}
         {{ lost_kindred }} unlocks a couple of other decks: you can put up together a fun
@@ -242,7 +243,7 @@
     Your other options is to have fun with a bit more deck building. Rather than
     fooling around with many options and building a collection of ready-to-play decks for
     friends to come play with, maybe you're more into carefully honing and improving your
-    own deck and then meet with your friends and there deck to see who comes out on top.
+    own deck and then meet with your friends and their decks to see who comes out on top.
     Maybe you want to play regularly with Elders who have access to a wider collection,
     or participate in tournaments.
     {% endtrans %}
@@ -372,7 +373,7 @@
         rapid_change=card("Rapid Change"),
         murmur_of_the_false_will=card("Murmur of the False Will")
         %}
-        Depending on what clans you're building on, the previous {{ anniversary }} might ba a good complement,
+        Depending on what clans you're building on, the previous {{ anniversary }} might be a good complement,
         or an even better deal than the latest one. It also contains excellent Master cards: {{ dreams_of_the_sphinx }},
         {{ the_coven }}, {{ giant_s_blood }} and {{ information_highway }}, a good number of {{ zillah_s_valley }},
         and a number of {{ villein }} and {{ vessel }}.
@@ -434,7 +435,7 @@
         "First Blood: Malkavian")
         %}
         <strong>Beware for Malkavians</strong> {{ malkavian }}, the ones in this bundle have Dementation {{ dem }}
-        instead of Dominate {{ dom }} as clan discipline. The legacy {{ dem }} is an interesting,
+        instead of Dominate {{ dom }} as clan discipline. The legacy Dementation {{ dem }} is interesting,
         albeit a completely separate branch for Malkavians. If you want to go down this road,
         you might want to look into {{ first_blood_malkavian }} for additional {{ dem }} cards and vampires.
         {% endtrans %}
@@ -931,6 +932,36 @@
 </div>
 
 <div class="column-2">
+    <h3>{{ _('V5 Oblivion') }}</h3>
+    <img src="{{ url_for('static', filename='img/v5-hecata.webp') }}" alt="V5 Hecata deck">
+    <p>
+        {% trans trimmed
+        lasombra_precon=external("https://www.blackchantry.com/products/vampire-the-eternal-struggle-fifth-edition/fifth-edition-lasombra/",
+        _("Lasombra")),
+        hecata_precon=external("https://www.blackchantry.com/vampire-the-eternal-struggle-fifth-edition/fifth-edition-hecata/",
+        _("Hecata")),
+        expulsion=card("Expulsion"),
+        ominous_chorus=card("Ominous Chorus"),
+        amici_noctis=card("Amici Noctis"),
+        puppet_master=card("Puppet Master")
+        %}
+        The last two V5 clans use the new Oblivion {{ obl }} discipline: the new Lasombra {{ lasombra }} get it in place
+        of Obtenebration {{ obt }}, and then there's a whole new clan, the Hecata {{ hecata }},
+        with {{ aus }}{{ for }}{{ obl }} for clan disciplines. On top of all the obviously new Oblivion {{ obl }} cards
+        and vampires, the {{ lasombra_precon }} {{ lasombra }} contains a few new cards that are a bit more generic:
+        {{ expulsion }}, {{ ominous_chorus }}, and {{ amici_noctis }}, as well as a reprint and rename of the old
+        <em>Mind Rape</em> in {{ puppet_master }}.
+        {% endtrans %}
+    </p>
+    <p>
+        {% trans trimmed %}
+        Of course, both a new clan and a new discipline are the interesting start of a new playground, so it's worth
+        exploring the possibilities here. Surely, they'll only expand once the matching New Blood bundles are released.
+        {% endtrans %}
+    </p>
+</div>
+
+<div class="column-2">
     <h3>{{ _('30th Anniversary') }}</h3>
     <img src="{{ url_for('static', filename='img/30th-anniversary.webp') }}" alt="30th Anniversary deck">
     <p>
@@ -994,10 +1025,13 @@
     <p>
         {% trans trimmed
         promo_pack_2=external("https://www.blackchantry.com/products/legacy/bundles/product-promo-pack-2/",
-        _("Promo Pack 2"))
+        _("Promo Pack 2")),
+        benedito_a_lanterna=card("Benedito, a Lanterna"),
+        bituin=card("Bituin"),
+        jacques_rouge=card("Jacques Rouge")
         %}
-        {{ promo_pack_2 }} contains Barons for a few clans, quite a few of which are used in very
-        competitive builds nowadays (Infernal Princes, Gangrel Barons).
+        {{ promo_pack_2 }} contains a few Barons you will not find elsewhere: {{ benedito_a_lanterna }}, {{ bituin }},
+        and {{ jacques_rouge }}.
         {% endtrans %}
     </p>
 </div>
@@ -1472,7 +1506,7 @@
 <ul>
     {% trans trimmed %}
     <li>
-        Some promos have been released with alternate are: more and more vampires are getting a
+        Some promos have been released with alternate are: more and more cards are getting a
         <strong>Full-bleed</strong> version, there are two <strong>sketch versions</strong> of Direct Intervention,
         and <strong>alternate arts</strong> for a few other cards.
     </li>

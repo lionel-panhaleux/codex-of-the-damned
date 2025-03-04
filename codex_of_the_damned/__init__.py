@@ -148,6 +148,7 @@ BASE_CONTEXT = {
     "guruhi": markupsafe.Markup('<span class="krcg-clan">P</span>'),
     "harbinger": markupsafe.Markup('<span class="krcg-clan">Q</span>'),
     "harbinger_of_skulls": markupsafe.Markup('<span class="krcg-clan">Q</span>'),
+    "hecata": markupsafe.Markup('<span class="krcg-clan">y</span>'),
     "ishtarri": markupsafe.Markup('<span class="krcg-clan">R</span>'),
     "kiasyd": markupsafe.Markup('<span class="krcg-clan">S</span>'),
     "lasombra": markupsafe.Markup('<span class="krcg-clan">w</span>'),
