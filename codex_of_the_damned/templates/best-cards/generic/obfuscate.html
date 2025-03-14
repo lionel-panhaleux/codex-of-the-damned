@@ -11,20 +11,13 @@
     </p>
 </div>
 
-{% call layout.card_column("Lost in Crowds", decks=484, copies="2-6") %}
+{% call layout.card_column("Lost in Crowds", decks=221, copies="2-5") %}
 {% trans trimmed %}
 The best stealth money can buy, played in almost all {{ obf }} constructs.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Elder Impersonation", decks=419, copies="2-4") %}
-{% trans trimmed %}
-This block denial modifier comes in very handy against a single minion. It works against
-all minions and vampires and can bypass even high levels of stacked intercept.
-{% endtrans %}
-{% endcall %}
-
-{% call layout.card_column("Faceless Night", decks=406, copies="2-4") %}
+{% call layout.card_column("Faceless Night", decks=208, copies="2-4") %}
 {% trans trimmed %}
 A single unlocked minion can be hard to get around if multiple actions are in order.
 This is an excellent tool in this case as it locks the defending minion on the first
@@ -32,7 +25,7 @@ block failure.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Swallowed by the Night", decks=382, copies="1-5") %}
+{% call layout.card_column("Swallowed by the Night", decks=204, copies="1-5") %}
 {% trans trimmed %}
 A versatile stealth modifier, the maneuver option comes in handy, either to assist a
 combat module, avoid combat damage, or just avoid jamming the hand with unrequired
@@ -40,7 +33,14 @@ stealth.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Cloak the Gathering", decks=329, copies="1-5") %}
+{% call layout.card_column("Elder Impersonation", decks=192, copies="2-4") %}
+{% trans trimmed %}
+This block denial modifier comes in very handy against a single minion. It works against
+all minions and vampires and can bypass even high levels of stacked intercept.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Cloak the Gathering", decks=136, copies="1-4") %}
 {% trans trimmed %}
 An additional source of stealth that becomes an excellent tool when some minions do not
 have {{ obf }}. It can also be stacked, by the vampire doing the action himself, then by
@@ -48,7 +48,7 @@ another vampire with {{ OBF }}.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Spying Mission", decks=255, copies="1-4") %}
+{% call layout.card_column("Spying Mission", decks=123, copies="1-4") %}
 {% trans trimmed %}
 An additional stealth modifier to stack over the most widespread ones, it is also a
 counter against bounces: it allows one to aoivd dealing pool damage to an ally when a
@@ -56,7 +56,7 @@ bleed is bounced.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Forgotten Labyrinth", decks=238, copies="2-5") %}
+{% call layout.card_column("Forgotten Labyrinth", decks=92, copies="2-5") %}
 {% trans trimmed %}
 Especially useful in decks with a political module, it gives such a very high bonus to
 undirected actions. Its uselessness for directed actions still makes it absent from a
@@ -64,11 +64,48 @@ lot of {{ obf }} modules.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Veil the Legions", decks=200, copies="1-4") %}
+{% call layout.card_column("Veil the Legions", decks=55, copies="1-3") %}
 {% trans trimmed cloak_the_gathering=card("Cloak the Gathering") %}
 Less widely used than {{ cloak_the_gathering }} because it requires a sidekick , its
 efficiency increases in decks with many minions: a vampire with {{ OBF }} can give
 +1 stealth to multiple consecutive actions, a nice setup for a lunge move.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Into Thin Air", decks=46, copies="2-5") %}
+{% trans trimmed lost_in_crowds=card("Lost in Crowds") %}
+Less widely used than {{ lost_in_crowds }} because it requires high capacity and is not
+replaced, its additional stealth is still appealing enough to make it a staple in
+{{ OBF }} Inner Circle decks.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("No Trace", decks=43, copies="2-5") %}
+{% trans trimmed
+majesty=card("Majesty"),
+earth_meld=card("Earth Meld")
+%}
+Not the best strike: combat ends of the game, but for those who do not have {{ pre }} for {{ majesty }}
+nor {{ pro }} for {{ earth_meld }}, it might be the best available combat defense.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Visions of Zapathasura", decks=24, copies="2-7") %}
+{% trans trimmed
+deflection=card("Deflection"),
+narrow_minds=card("Narrow Minds")
+%}
+A relatively new card released in 2024, it quickly became a huge it, providing a solid bleed defense for decks
+that do not have access to bounces like {{ deflection }}. Using it for defense also opens up the possibility to
+play {{ narrow_minds }} to hinder the opponents.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Hide the Mind", decks=20, copies="1-3") %}
+{% trans trimmed telepathic_misdirection=card("Telepathic Misdirection") %}
+A very specific counter, the fact that it can cancel Auspex {{ AUS }} bounces like {{ telepathic_misdirection }}
+is its main appeal. Of course, it can also be used against {{ aus }} intercept reactions if needed.
+The downside is that it james the hand quickly if your opponents do not play {{ aus }}.
 {% endtrans %}
 {% endcall %}
 

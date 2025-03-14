@@ -1,0 +1,134 @@
+{% extends "archetypes/_layout.html" %}
+{% import "archetypes/_layout-erratum.html" as erratum with context %}
+{% import "archetypes/top-tier/illegal-brawl.json" as deck_json %}
+
+{% block meta %}
+<meta property="decklist" content='{{ deck_json | tojson }}' />
+{% endblock %}
+
+{% block archetype_name %}
+<h1>{{ brujah }} Illegal Brawl</h1>
+{% endblock %}
+
+{% block archetype %}
+{% trans trimmed
+an_anarch_manifesto=card("Anarch Manifesto, An", "An Anarch Manifesto"),
+ashur_tablets=card("Ashur Tablets"),
+bait_and_switch=card("Bait and Switch"),
+blood_doll=card("Blood Doll"),
+bollix=card("Bollix"),
+carfax_abbey=card("Carfax Abbey"),
+chimerstry_card=card("Chimerstry"),
+concealed_weapon=card("Concealed Weapon"),
+constant_revolution=card("Constant Revolution"),
+dabbler=card("Dabbler"),
+disarm=card("Disarm"),
+diversion=card("Diversion"),
+dust_up=card("Dust Up"),
+enchant_kindred=card("Enchant Kindred"),
+garibaldi_meucci_museum=card("Garibaldi-Meucci Museum"),
+illegalism=card("Illegalism"),
+immortal_grapple=card("Immortal Grapple"),
+line_brawl=card("Line Brawl"),
+magnum=card(".44 Magnum"),
+mr_winthrop=card("Mr. Winthrop"),
+new_carthage=card("New Carthage"),
+open_war=card("Open War"),
+organized_resistance=card("Organized Resistance"),
+papillon=card("Papillon"),
+power_of_one=card("Power of One"),
+powerbase_los_angeles=card("Powerbase: Los Angeles"),
+preternatural_strength=card("Preternatural Strength"),
+protected_district=card("Protected District"),
+pursuit=card("Pursuit"),
+quickness=card("Quickness"),
+roundhouse=card("Roundhouse"),
+show_of_force=card("Show Of Force"),
+sport_bike=card("Sport Bike"),
+stolen_police_cruiser=card("Stolen Police Cruiser"),
+taste_of_vitae=card("Taste of Vitae"),
+the_anarch_free_press=card("The Anarch Free Press"),
+thrown_gate=card("Thrown Gate"),
+villein=card("Villein"),
+tomáš_marek_s_deck=link("/deck-search", _("Tomáš Marek's deck"), id="11618"),
+héctor_ordóñez_deck=link("/deck-search", _("Héctor Ordóñez' deck"), id="11580"),
+erik_albenze_s_deck=link("/deck-search", _("Erik Albenze's deck"), id="10736"),
+cicero_jannyson=link("/deck-search", _("Cicero Jannyson"), id="11152"),
+kelly_lyons_deck=link("/deck-search", _("Kelly Lyons' deck"), id="11285"),
+norman_brown_s_deck=link("/deck-search", _("Norman Brown's deck"), id="10903")
+%}
+<h2>Highlights</h2>
+<p>
+    This is a <em>toolbox</em> deck using Brujah {{ brujah }} barons.
+</p>
+<p>
+    The deck has a strong combat module relying on the versatile "three-way" combat cards {{ diversion }},
+    {{ dust_up }}, and {{ bollix }}, as well as good old Portence {{ pot }} staples like {{ immortal_grapple }}
+    and {{ disarm }}.
+</p>
+<p>
+    It uses versatile actions in {{ illegalism }} and {{ line_brawl }} to either bleed or rush,
+    with {{ power_of_one }} as a stealth and enahncer modifier when bleeding.
+</p>
+<p>
+    On the defensive side, it relies on the defensive abilities of Anarch Barons: {{ organized_resistance }} for unlock
+    and {{ bait_and_switch }} for bounces.
+</p>
+<p>
+    {{ villein }} and {{ blood_doll }} are used to bloat by leeching some blood of the vampires,
+    while {{ carfax_abbey }}, {{ papillon }} and {{ taste_of_vitae }} are used for blood regeneration.
+</p>
+<h2>Tips & Tricks</h2>
+<p>
+    {{ new_carthage }} is a momentus boost given the crypt, bumping the bleed and vote power of all the Barons.
+    It explains why it is included twice.
+</p>
+<p>
+    {{ garibaldi_meucci_museum }} is incredibly versatile, fetching the required action, modifier or bounce,
+    as well as being able to contest it to avoid its combat ends effect in other decks.
+</p>
+<p>
+    {{ powerbase_los_angeles }} is great here: both the unlock and additional discard are useful,
+    and the deck has no shortage of Anarch cards to discard.
+</p>
+<p>
+    {{ open_war }} can help control the whole table in the mid or late game, providing enough rush capability
+    to take down even the most resilient opponents.
+</p>
+<p>
+    {{ an_anarch_manifesto }} is a nice inclusion. The deck does not seek stealth that much,
+    but it is free and the downside is almost negligible thanks to {{ dust_up }}.
+</p>
+<h2>Variants</h2>
+<p>
+    The <strong>Resistance</strong> variant includes much more {{ organized_resistance }}
+    for more reactions. It is not that much intercept, but it allows for the inclusion
+    of good cards that require a defense, like {{ constant_revolution }} and {{ stolen_police_cruiser }}.
+    See {{ tomáš_marek_s_deck }}. Furthermore, {{ the_anarch_free_press }},
+    {{ mr_winthrop }} can be included for more intercept.
+</p>
+<p>
+    The combat module can vary. From Darby's own admission, {{ thrown_gate }} is not ideal.
+    {{ diversion }} is not always included, though most keep the {{ dust_up }} & {{ bollix }} combo.
+    It can also forgo three-ways and rely on classic {{ POT }}{{ CEL }} cards like {{ pursuit }},
+    {{ preternatural_strength }}, and {{ roundhouse }}.
+    Finally, some focus on {{ concealed_weapon }} and {{ magnum }},
+    like in {{ héctor_ordóñez_deck }}.
+</p>
+<p>
+    Not everyone uses {{ illegalism }}:
+    {{ enchant_kindred }} as in {{ erik_albenze_s_deck }}, or {{ show_of_force }} as
+    {{ cicero_jannyson }}, are alternatives.
+</p>
+<p>
+    The <strong>Chimerstry</strong> {{ chimerstry }} variant includes some {{ chimerstry_card }}
+    to get stealth out of {{ illegalism }}, but also enable {{ dabbler }}.
+    See {{ kelly_lyons_deck }} for example.
+</p>
+<p>
+    The <strong>Primogen</strong> variant
+    uses a lot of {{ protected_district }}, and lower capacity vampires to swarm the prey a bit by focusing
+    on the bleed part of things. See {{ norman_brown_s_deck }}
+</p>
+{% endtrans %}
+{% endblock %}

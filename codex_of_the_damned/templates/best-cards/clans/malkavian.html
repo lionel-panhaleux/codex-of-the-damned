@@ -13,7 +13,9 @@
         lutz_von_hohenzollern=card("Lutz von Hohenzollern"),
         rachel_brandywine=card("Rachel Brandywine"),
         weenie_dem=link("/archetypes/dementation-bleed"),
-        weenie_aus=link("/archetypes/weenie-aus")
+        weenie_aus=link("/archetypes/weenie-aus"),
+        malk_94=link("/archetypes/malk-94"),
+        malk_22=link("/archetypes/malk-22")
         %}
         The Malkavian are a prominent clan. With their unique {{ dem }} discipline
         beside the excellent {{ obf }}{{ aus }} disciplines,
@@ -23,6 +25,8 @@
         and {{ rachel_brandywine }} respectively. On the other hand,
         Malkavian and their antitribu are also used into two strong weenie constructs:
         {{ weenie_dem }} and {{ weenie_aus }}.
+        The "classic" group 1 and new group 6 Malkavians provide solid
+        {{ DOM }}{{ OBF }} bleed decks, {{ malk_94 }} and {{ malk_22 }}.
         {% endtrans%}
     </p>
     <p>
@@ -46,16 +50,7 @@
     </p>
 </div>
 
-{% call layout.card_column("Kindred Spirits", decks=99, copies="7-21") %}
-{% trans trimmed %}
-This bleed action is central to the {{ dem }} discipline.
-It can deliver a bleed of 2 in combination with a 1 pool bloat.
-Moreover, the bleed can be directed to any Methusalah, not only the prey,
-offering additional table control.
-{% endtrans %}
-{% endcall %}
-
-{% call layout.card_column("Lutz von Hohenzollern", decks=94, copies="1-4") %}
+{% call layout.card_column("Lutz von Hohenzollern", decks=36, copies="1-3") %}
 {% trans trimmed voter_captivation=card("Voter Captivation") %}
 Star of the Malkavian clan, he has a really powerful ability,
 4 votes and +2 bleed like many <em>Inner Circle</em>, combined with all clan disciplines
@@ -64,34 +59,167 @@ vote modifiers like {{ voter_captivation }}.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Confusion", decks=87, copies="4-12") %}
+{% call layout.card_column("Andi Liu", decks=26, copies="1-2") %}
+{% trans trimmed voter_captivation=card("Voter Captivation") %}
+A cheap Prince with great disciplines, she's the most played Malkavian {{ malkavian }}
+Prince. Her inferior {{ pre }} gives her a spot in multiclan {{ obf }}{{ pre }} political decks.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Kindred Spirits", decks=25, copies="9-23") %}
+{% trans trimmed %}
+This bleed action is central to the {{ dem }} discipline.
+It can deliver a bleed of 2 in combination with a 1 pool bloat.
+Moreover, the bleed can be directed to any Methusalah, not only the prey,
+offering additional table control.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Confusion", decks=24, copies="4-13") %}
 {% trans trimmed %}
 An excellent bleed modifier at no cost, it provides stealth at superior {{ DEM }}.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Eyes of Chaos", decks=83, copies="4-11") %}
+{% call layout.card_column("Eyes of Chaos", decks=24, copies="4-11") %}
 {% trans trimmed conditioning=card("Conditioning") %}
 A powerful bleed enhancer at no cost, although a bit less efficient than
 {{ conditioning }}.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Zöe", decks=74, copies="1-2") %}
+{% call layout.card_column("Gilbert Duane (G6)", decks=21, copies="1-2") %}
+{% trans trimmed %}
+The "new" (2021) Gilbert quickly made the raking: a decent 7 for all clan disciplines,
+plus a Baron title, he fits in many Malkavian {{ malkavian }} decks.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Abraham Mellon", decks=18, copies="1-4") %}
+{% trans trimmed %}
+A solid 8-cap for the top of the {{ govern }} chain, the hand size bonus is nothing to scoff at.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Zöe", decks=16, copies="1-2") %}
 {% trans trimmed telepathic_misdirection=card("Telepathic Misdirection") %}
 Superior {{ AUS }} at 3 pool is really a bargain. She has access to
 {{ telepathic_misdirection }} for the cheapest price.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Deny", decks=66, copies="1-6") %}
+{% call layout.card_column("Muddled Vampire Hunter", decks=15, copies="1") %}
+{% trans trimmed %}
+An excellent ally with good combat abilities at a reasonable price.
+He can help take down a cumbersome minion or deter an aggressive predator.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Deny", decks=16, copies="2-7") %}
 {% trans trimmed trap=card("Trap") %}
 A good stealth enhancer at superior {{ DEM }}, its inferior ability is seldom used
 but can still come in handy to get out of a {{ trap }}, for example.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Madness Network", decks=47, copies="2-5") %}
+{% call layout.card_column("Stavros", decks=14, copies="1-2") %}
+{% trans trimmed lutz_von_hohenzollern=card("Lutz von Hohenzollern") %}
+Although he does not have superior {{ DEM }}, his superior {{ PRE }} and title
+makes him a natural companion to {{ lutz_von_hohenzollern }}
+in a political deck, or any {{ OBF }}{{ PRE }} political construct, for that matter.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Alexander Silverson", decks=14, copies="1-2") %}
+{% trans trimmed govern=card("Govern the Unaligned", "Govern") %}
+A solid Prince with all clan disciplines at superior, he sit comfortably on top
+of the {{ govern }} chain. His inferior Presence {{ pre }} can be useful in political builds.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Leandro", decks=12, copies="1-3") %}
+{% trans trimmed
+council_of_doom=link("/archetypes/council-of-doom"),
+the_dark_side_of_politics=link("/archetypes/the-dark-side-of-politics")
+%}
+An Inner Circle with {{ OBF }}{{ PRE }} and an obnoxious ability, he is included in many Inner Circle builds,
+like {{ council_of_doom }} or {{ the_dark_side_of_politics }}, but can also run his own show.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column('Jason "Son" Newberry', decks=12, copies="1-2") %}
+{% trans trimmed govern=card("Govern the Unaligned", "Govern") %}
+All clan disciplines at superior, a decent 7 sitting well in the {{ govern }} chain, the bleed bonus is really nice.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column('Evan Klein (G6)', decks=12, copies="1-2") %}
+{% trans trimmed govern=card("Govern the Unaligned", "Govern") %}
+Ideal low end of the {{ govern }} chain, his ability is a nice anti-rush protection.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Mind Tricks", decks=12, copies="1-4") %}
+{% trans trimmed
+deny=card("Deny"),
+confusion=card("Confusion")
+%}
++1 stealth for 1 blood: this is expensive.
+It is included in decks where {{ obf }} is not much available.
+Alongside {{ deny }} and {{ confusion }}, it can make for a very decent
+stealth & bleed module using just the {{ DEM }} discipline.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Touch of Clarity", decks=12, copies="2-5") %}
+{% trans trimmed deflection=card("Deflection") %}
+The only card in the game that can counter {{ dom }} bounces like
+{{ deflection }}: depending on the environment,
+it can be a powerful device in the {{ dem }} arsenal when used sparingly.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Uncle George", decks=11, copies="1") %}
+{% trans trimmed persia=card("Persia, The Beautiful Statue", "Persia") %}
+5 pool is a good price for the {{ DEM }}{{ obf }} combination.
+He is almost always paired with {{ persia }} in stealth & bleed decks.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Morel", decks=11, copies="1-2") %}
+{% trans trimmed %}
+All clan disciplines at superior for just 6 pool, this is a bargain.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Victoria", decks=11, copies="1-3") %}
+{% trans trimmed madness_network=card("Madness Network") %}
+Superior {{ AUS }} for 5 pool gets her included in many crypts,
+often when {{ obf }} or {{ cel }} can be used. Moreover,
+her ability makes for a nice bloat when she's combined with {{ madness_network }}.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Midget", decks=10, copies="1-2") %}
+{% trans trimmed
+kaymakli_fragment=card("Kaymakli Fragment"),
+sibyl_s_tongue=card("Sibyl's Tongue")
+%}
+3 pool is a low price to pay for the {{ DEM }}{{ obf }} combination.
+Its <em>Infernal</em> trait is a bummer, but he is still excellent
+for stealth & bleed decks, where speed matters more than cost. It can also bloat with
+{{ kaymakli_fragment }}, which he can fetch with {{ sibyl_s_tongue }}.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Jackie", decks=10, copies="1-2") %}
+{% trans trimmed %}
+The cheapest {{ DEM }} of the game at only 3 pool,
+she gets included in many {{ dem }} decks.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Madness Network", decks=9, copies="1-4") %}
 {% trans trimmed
 homunculus=card("Homunculus"),
 reversal_of_fortunes=card("Reversal of Fortunes")
@@ -104,182 +232,11 @@ I can become a cornerstone of the deck when combined with other tricks, like
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Uncle George", decks=46, copies="1-2") %}
-{% trans trimmed persia=card("Persia, The Beautiful Statue", "Persia") %}
-5 pool is a good price for the {{ DEM }}{{ obf }} combination.
-He is almost always paired with {{ persia }}
-in stealth & bleed constructs.
-{% endtrans %}
-{% endcall %}
-
-{% call layout.card_column("Muddled Vampire Hunter", decks=45, copies="1") %}
-{% trans trimmed %}
-An excellent ally with good combat abilities at a reasonable price.
-He can help take down a cumbersome minion or deter an aggressive predator.
-{% endtrans %}
-{% endcall %}
-
-{% call layout.card_column("Persia, The Beautiful Statue", decks=44, copies="1") %}
-{% trans trimmed %}
-{{ DEM }}{{ obf }} for 5 pool in the group 3, combined with a nice ability.
-{% endtrans %}
-{% endcall %}
-
-{% call layout.card_column("Apache Jones", decks=41, copies="1-2") %}
-{% trans trimmed
-uncle_george=card("Uncle George"),
-persia=card("Persia, The Beautiful Statue", "Persia")
-%}
-5 pool is a good price for the {{ DEM }}{{ obf }} combination.
-He is almost always paired with {{ uncle_george }} and {{ persia }}
-in stealth & bleed decks.
-{% endtrans %}
-{% endcall %}
-
-{% call layout.card_column("Maris Streck", decks=40, copies="2-4") %}
+{% call layout.card_column("Maris Streck", decks=9, copies="2-3") %}
 {% trans trimmed %}
 A <em>Justicar</em> with a very powerful ability she can use <em>multiple times</em>
 during an action.
 She gets included even in other clans crypts just for her ability and title.
-{% endtrans %}
-{% endcall %}
-
-{% call layout.card_column("Midget", decks=39, copies="1-2") %}
-{% trans trimmed
-kaymakli_fragment=card("Kaymakli Fragment"),
-sibyl_s_tongue=card("Sibyl's Tongue")
-%}
-3 pool is a low price to pay for the {{ DEM }}{{ obf }} combination.
-Its <em>Infernal</em> trait is a bummer, but he is still excellent
-for stealth & bleed decks, where speed matters more than cost. It can also bloat with
-{{ kaymakli_fragment }}, which he can fetch with {{ sibyl_s_tongue }}.
-{% endtrans %}
-{% endcall %}
-
-{% call layout.card_column("Touch of Clarity", decks=39, copies="1-4") %}
-{% trans trimmed deflection=card("Deflection") %}
-The only card in the game that can counter {{ dom }} bounces like
-{{ deflection }}: depending on the environment,
-it can be a powerful device in the {{ dem }} arsenal when used sparingly.
-{% endtrans %}
-{% endcall %}
-
-{% call layout.card_column("Victoria", decks=37, copies="1-2") %}
-{% trans trimmed madness_network=card("Madness Network") %}
-Superior {{ AUS }} for 5 pool gets her included in many crypts,
-often when {{ obf }} or {{ cel }} can be used. Moreover,
-her ability makes for a nice bloat when she's combined with {{ madness_network }}.
-{% endtrans %}
-{% endcall %}
-
-{% call layout.card_column("The Call", decks=37, copies="2-6") %}
-{% trans trimmed %}
-A strong bloat device that can help get vampires out faster,
-especially at superior {{ DEM }}{{ AUS }}.
-{% endtrans %}
-{% endcall %}
-
-{% call layout.card_column("Jackie", decks=37, copies="1-2") %}
-{% trans trimmed %}
-The cheapest {{ DEM }} of the game at only 3 pool,
-she gets included in many {{ dem }} decks.
-{% endtrans %}
-{% endcall %}
-
-{% call layout.card_column("Quentin King III", decks=34, copies="1-2") %}
-{% trans trimmed
-maris_streck=card("Maris Streck"),
-the_call=card("The Call"),
-madman_s_quill=card("Madman's Quill")
-%}
-A <em>Prince</em> for 7 pool with a good disciplines combination.
-He is group 3, the same group as
-{{ maris_streck }} and is often included alongside her.
-The fact that he can use {{ the_call }} and {{ madman_s_quill }} is also a strong point.
-{% endtrans %}
-{% endcall %}
-
-{% call layout.card_column("Morel", decks=34, copies="1-3") %}
-{% trans trimmed %}
-All clan disciplines at superior for just 6 pool, this is a bargain.
-{% endtrans %}
-{% endcall %}
-
-{% call layout.card_column("Stavros", decks=33, copies="1-3") %}
-{% trans trimmed lutz_von_hohenzollern=card("Lutz von Hohenzollern") %}
-Although he does not have superior {{ DEM }}, his superior {{ PRE }} and title
-makes him a natural companion to {{ lutz_von_hohenzollern }}
-in a political deck, or any {{ OBF }}{{ PRE }} political construct, for that matter.
-{% endtrans %}
-{% endcall %}
-
-{% call layout.card_column("Gilbert Duane", decks=32, copies="1-3") %}
-{% trans trimmed %}
-A prince for 7 and a very strong disciplines combination.
-He gets included in many <em>Royalty</em> decks.
-{% endtrans %}
-{% endcall %}
-
-{% call layout.card_column("Mind Tricks", decks=32, copies="2-5") %}
-{% trans trimmed
-deny=card("Deny"),
-confusion=card("Confusion")
-%}
-+1 stealth for 1 blood: this is expensive.
-It is included in decks where {{ obf }} is not much available.
-Alongside {{ deny }} and {{ confusion }}, it can make for a very decent
-stealth & bleed module using just the {{ DEM }} discipline.
-{% endtrans %}
-{% endcall %}
-
-{% call layout.card_column("Leandro", decks=31, copies="1-3") %}
-{% trans trimmed
-council_of_doom=link("/archetypes/council-of-doom")
-%}
-A strong <em>Inner Circle</em> with a good ability and {{ OBF }}{{ dom }},
-a good disciplines combination. He is seen in Malkavian Royalty builds
-but also in group 2 Inner Circle constructs like the {{ council_of_doom }} archetype.
-{% endtrans %}
-{% endcall %}
-
-{% call layout.card_column("Tony", decks=28, copies="1") %}
-{% trans trimmed
-the_call=card("The Call"),
-madman_s_quill=card("Madman's Quill")
-%}
-A good disciplines combination for 6. He can uses bounces,
-{{ the_call }} and {{ madman_s_quill }}, and superior {{ DEM }}
-and inferior {{ obf }} is enough to be of use in a stealth & bleed deck.
-{% endtrans %}
-{% endcall %}
-
-{% call layout.card_column("Restructure", decks=28, copies="1-2") %}
-{% trans trimmed
-carlton_van_wyk=card("Carlton Van Wyk"),
-ossian=card("Ossian")
-%}
-An excellent ally remover at superior {{ DEM }}. It can get rid of the widespread
-{{ carlton_van_wyk }} and {{ ossian }}, who both become quickly problematic.
-{% endtrans %}
-{% endcall %}
-
-{% call layout.card_column("Madman's Quill", decks=25, copies="2-4") %}
-{% trans trimmed %}
-A bit pricey but its base effect can be worth it for a lunge.
-Its superior effect can get really efficient in some decks too.
-{% endtrans %}
-{% endcall %}
-
-{% call layout.card_column("Unmada", decks=25, copies="2-4") %}
-{% trans trimmed lutz_von_hohenzollern=card("Lutz von Hohenzollern") %}
-A strong ability for a <em>Justicar</em>, all for 9 pool.
-He is often seen in company with {{ lutz_von_hohenzollern }}.
-{% endtrans %}
-{% endcall %}
-
-{% call layout.card_column("Ohanna", decks=24, copies="1") %}
-{% trans trimmed %}
-A really cheap 2 pool for {{ dom }}, she gets included in many crypts.
 {% endtrans %}
 {% endcall %}
 

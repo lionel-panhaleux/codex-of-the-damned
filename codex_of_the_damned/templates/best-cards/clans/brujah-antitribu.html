@@ -1,0 +1,95 @@
+{% extends "best-cards/_layout.html" %}
+{% import "best-cards/_layout_card_column.html" as layout with context%}
+
+{% block content %}
+<h1>{{ brujah_antitribu }} Brujah Antitribu</h1>
+<div class="insert warn">
+    This list is compiled from statistics encompassing 30 years,
+    as the clan has not scored enough wins in the last 5 years for relevant statistics otherwise.
+</div>
+<div class="insert tip">
+    <p>
+        {% trans trimmed
+        euro_brujah=link("/archetypes/euro-brujah"),
+        armin_brenner=card("Armin Brenner")
+        %}
+        Brujah Antitribu, with their {{pre}}{{pot}}{{cel}} disciplines, are good fighters, but they also have a knack
+        for politics.
+        {% endtrans %}
+    </p>
+</div>
+
+{% call layout.card_column("Waste Management Operation", decks=43, copies="1-2") %}
+{% trans trimmed %}
+A unique recursion effect, that can be absolutely brutal in the end game when reaching the bottom of the deck.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Sarah Brando", decks=38, copies="1-2") %}
+{% trans trimmed %}
+The cheapest {{ CEL }} pool can buy, with a negligible drawback. She finds a spot in many decks.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Gang Territory", decks=26, copies="1-2") %}
+{% trans trimmed %}
+Nice pool generator when playing the clan all by itself
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Armin Brenner", decks=25, copies="2-4") %}
+{% trans trimmed forced_march=card("Forced March") %}
+Start of political builds, his ability is a nice bloat, and he can {{ forced_march }} as well as use {{ obf }}
+for a bit of stealth.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Hektor", decks=21, copies="1-3") %}
+{% trans trimmed forced_march=card("Forced March") %}
+A nice title, terrifying combat ability, and {{ for }} that lets him {{ forced_march }}.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Richter, The Templar of Du Mont", decks=17, copies="1-2") %}
+{% trans trimmed forced_march=card("Forced March") %}
+A good fighter for a decent cost, with a nice strength bonus. Having {{ for }} alongside {{ POT }}{{ CEL }}
+allows for unlock as well as damage prevention, that allows him to enter quite a few decks.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Henry Taylor", decks=14, copies="1-6") %}
+{% trans trimmed
+forced_march=card("Forced March"),
+waste_management_operation=card("Waste Management Operation")
+%}
+Superior {{ POT }} with an interesting unique ability. Combined with {{ waste_management_operation }},
+he can star a "twister" deck that plays mostly with selected cards from the ash heap after having quickly
+expended the library.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Amelia", decks=11, copies="1-2") %}
+{% trans trimmed %}
+All clan disciplines at superior with a low-key rush ability that can be useful. Solid fighter.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Dark Selina", decks=10, copies="1-3") %}
+{% trans trimmed
+forced_march=card("Forced March"),
+deflection=card("Deflection")
+%}
+A great inclusion in political decks, she can use {{ forced_march }} and even has {{ dom }} for {{ deflection }}.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Dogs of War", decks=8, copies="2-5") %}
+{% trans trimmed
+forced_march=card("Forced March"),
+deflection=card("Deflection")
+%}
+An interesting vote for the clan, often prone to fight hard given their disciplines.
+{% endtrans %}
+{% endcall %}
+
+{% endblock %}

@@ -5,6 +5,10 @@
 <h1>{{ daughter_of_cacophony }}
     {% trans trimmed %}Daughters of Cacophony{% endtrans %}
 </h1>
+<div class="insert warn">
+    This list is compiled from statistics encompassing 30 years,
+    as the clan has not scored enough wins in the last 5 years for relevant statistics otherwise.
+</div>
 <div class="insert tip">
     <p>
         {% trans trimmed
@@ -19,7 +23,51 @@
     </p>
 </div>
 
-{% call layout.card_column("The Missing Voice", decks=14, copies="5-8") %}
+{% call layout.card_column("Angela Preston", decks=26, copies="1-3") %}
+{% trans trimmed %}
+At only 5 pool with superior {{PRE}} and {{MEL}},
+she is even played in mono {{pre}} decks.
+Her ability to unlock another vampire is nice too.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Paris Opera House", decks=25, copies="1-2") %}
+{% trans trimmed
+the_labyrinth=card("The Labyrinth"),
+opium_den=card("Opium Den")
+%}
+A bit pricey with its 2 pool cost, this permanent stealth location is still worth it
+given the archetypes played with the clan. The cheaper
+{{ the_labyrinth }} and {{ opium_den }} are comparatively less valuable
+as their clan already has access to {{obf}}.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Yseult", decks=16, copies="2-3") %}
+{% trans trimmed %}
+A common leader for Daughters crypts, her useful cycling ability combined with all clan disciplines at superior
+is well worth the price.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Scout Youngwood", decks=15, copies="2-4") %}
+{% trans trimmed dmitra_ilyanova=card("Dmitra Ilyanova") %}
+A star of the clan, seen in many political decks, either as a star or as a sidekick.
+{{ dmitra_ilyanova }} is a good mate in all cases.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Command Performance", decks=15, copies="1-2") %}
+{% trans trimmed
+a_b=link("/strategy/fundamentals", _("A&B"), _anchor="AB")
+%}
+A permanent unlock option is very nice, and 2 pool is a bargain for such a bump in
+{{ a_b }}. The burn option even ensures it does not jam one’s hand if the Daughters
+are not at crypt majority.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("The Missing Voice", decks=22, copies="5-9") %}
 {% trans trimmed %}
 A nice stealth modifier, it can be really helpful against multiple unlocked allies.
 Anyway, as no other discipline can really help the Daughters with stealth,
@@ -27,22 +75,7 @@ this is useful.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Shattering Crescendo", decks=12, copies="5-21") %}
-{% trans trimmed %}
-An unusual effect. The ability to bring damage to your opponents vampires
-with no combat is precious. Multiple copies are needed, but it is worth the trouble.
-Some decks even spam this card.
-{% endtrans %}
-{% endcall %}
-
-{% call layout.card_column("Virtuosa", decks=10, copies="2-4") %}
-{% trans trimmed %}
-An excellent bleed enhancer, with a block denial option for critical actions.
-Depending on the deck, it can come in very handy for a lunge.
-{% endtrans %}
-{% endcall %}
-
-{% call layout.card_column("Siren's Lure", decks=8, copies="2-6") %}
+{% call layout.card_column("Siren's Lure", decks=16, copies="2-7") %}
 {% trans trimmed
 virtuosa=card("Virtuosa"),
 the_missing_voice=card("The Missing Voice")
@@ -50,6 +83,28 @@ the_missing_voice=card("The Missing Voice")
 A good way to get critical actions through. Combined with
 {{ virtuosa }} and {{ the_missing_voice }},
 it can build a good stealth - more of a « getting through » - module.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Shattering Crescendo", decks=14, copies="6-22") %}
+{% trans trimmed %}
+An unusual effect. The ability to bring damage to your opponents vampires
+with no combat is precious. Multiple copies are needed, but it is worth the trouble.
+Some decks even spam this card.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Virtuosa", decks=11, copies="2-4") %}
+{% trans trimmed %}
+An excellent bleed enhancer, with a block denial option for critical actions.
+Depending on the deck, it can come in very handy for a lunge.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Madrigal", decks=7, copies="2-7") %}
+{% trans trimmed bewitching_oration=card("bewitching_oration") %}
+An interesting vote enhancer. Less powerful than a {{ bewitching_oration }}, but good
+to stack over it, even at inferior {{ pre }}.
 {% endtrans %}
 {% endcall %}
 
@@ -63,33 +118,4 @@ An improved {{ kine_resources_contested }}:
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Angela Preston", decks=15, copies="1-3") %}
-{% trans trimmed %}
-At only 5 pool with superior {{PRE}} and {{MEL}},
-she is even played in mono {{pre}} decks.
-Her ability to unlock another vampire is nice too.
-{% endtrans %}
-{% endcall %}
-
-{% call layout.card_column("Command Performance", decks=14, copies="1-2") %}
-{% trans trimmed
-a_b=link("/strategy/fundamentals", _("A&B"), _anchor="AB")
-%}
-A permanent unlock option is very nice, and 2 pool is a bargain for such a bump in
-{{ a_b }}. The burn option even ensures it does not jam one’s hand if the Daughters
-are not at crypt majority.
-{% endtrans %}
-{% endcall %}
-
-{% call layout.card_column("Paris Opera House", decks=14, copies="1-3") %}
-{% trans trimmed
-the_labyrinth=card("The Labyrinth"),
-opium_den=card("Opium Den")
-%}
-A bit pricey with its 2 pool cost, this permanent stealth location is still worth it
-given the archetypes played with the clan. The cheaper
-{{ the_labyrinth }} and {{ opium_den }} are comparatively less valuable
-as their clan already has access to {{obf}}.
-{% endtrans %}
-{% endcall %}
 {% endblock %}

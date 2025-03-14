@@ -9,191 +9,101 @@
     %}
     <p>
         This category presents the best cards of the game. The list is based on a statistical analysis of the
-        {{ twda }} provided by VEKN, considering the 2000+ decks from 2008 onward.
+        {{ twda }} provided by VEKN, considering the 900+ decks from 2020 onward.
         The best cards are those that have been included in the most winning decks since then.
     </p>
     <p>
         All clan {{ hunting_grounds }} and, on occasions, some low capacity vampires,
-        have been omitted for convenience.
+        have been omitted to focus on the most relevant.
     </p>
     {% endtrans %}
     <h2>{{ _('Generic') }}</h2>
     <div class="column-2">
-    {{ link("/best-cards/generic/master-cards", _class="insert") }}
-    {{ link("/best-cards/generic/political-actions", _class="insert") }}
-    {{ link("/best-cards/generic/no-discipline", _class="insert") }}
-    {{ link("/best-cards/generic/animalism", _class="insert", _prefix="ani") }}
-    {{ link("/best-cards/generic/auspex", _class="insert", _prefix="aus") }}
-    {{ link("/best-cards/generic/celerity", _class="insert", _prefix="cel") }}
+        {{ link("/best-cards/generic/master-cards", _class="insert") }}
+        {{ link("/best-cards/generic/political-actions", _class="insert") }}
+        {{ link("/best-cards/generic/no-discipline", _class="insert") }}
+        {{ link("/best-cards/generic/animalism", _class="insert", _prefix="ani") }}
+        {{ link("/best-cards/generic/auspex", _class="insert", _prefix="aus") }}
+        {{ link("/best-cards/generic/blood-sorcery", _class="insert", _prefix="tha") }}
+        {{ link("/best-cards/generic/celerity", _class="insert", _prefix="cel") }}
+        {{ link("/best-cards/generic/dominate", _class="insert", _prefix="dom") }}
     </div>
     <div class="column-2">
-    {{ link("/best-cards/generic/dominate", _class="insert", _prefix="dom") }}
-    {{ link("/best-cards/generic/fortitude", _class="insert", _prefix="for") }}
-    {{ link("/best-cards/generic/necromancy", _class="insert", _prefix="nec") }}
-    {{ link("/best-cards/generic/obfuscate", _class="insert", _prefix="obf") }}
-    {{ link("/best-cards/generic/potence", _class="insert", _prefix="pot") }}
-    {{ link("/best-cards/generic/presence", _class="insert", _prefix="pre") }}
+        {{ link("/best-cards/generic/fortitude", _class="insert", _prefix="for") }}
+        {{ link("/best-cards/generic/necromancy", _class="insert", _prefix="nec") }}
+        {{ link("/best-cards/generic/obfuscate", _class="insert", _prefix="obf") }}
+        {{ link("/best-cards/generic/oblivion", _class="insert", _prefix="obl") }}
+        {{ link("/best-cards/generic/potence", _class="insert", _prefix="pot") }}
+        {{ link("/best-cards/generic/presence", _class="insert", _prefix="pre") }}
+        {{ link("/best-cards/generic/protean", _class="insert", _prefix="pro") }}
     </div>
     <h2>{{ _('Sects') }}</h2>
     <div class="column-2">
-    {{ link("/best-cards/sects/anarch", _class="insert") }}
-    {{ link("/best-cards/sects/camarilla", _class="insert") }}
+        {{ link("/best-cards/sects/anarch", _class="insert") }}
+        {{ link("/best-cards/sects/camarilla", _class="insert") }}
     </div>
     <div class="column-2">
-    {{ link("/best-cards/sects/laibon", _class="insert") }}
-    {{ link("/best-cards/sects/sabbat", _class="insert") }}
+        {{ link("/best-cards/sects/laibon", _class="insert") }}
+        {{ link("/best-cards/sects/sabbat", _class="insert") }}
     </div>
     <h2 id="clans">{{ _('Clans') }}</h2>
     {% trans trimmed %}
     <p>
+        Some clan lists use overall statistics spanning 30+ years,
+        because they have not scored enough wins in the last 5 years.
+        When it is the case, they appear in red and it is indicated on the list.
+    </p>
+    <p>
         Abominations {{ abomination }},
-        Blood Brothers {{ blood_brother }}, Panders {{ pander }},
+        Blood Brothers {{ blood_brother }}, Hecata {{ hecata }}, Panders {{ pander }},
         Osebo {{ osebo }}, Nagaraja {{ nagaraja }}
         and Samedi {{ samedi }} are too rarely played to be included in this
         analysis: they lack the numbers for a statistical review to be relevant.
     </p>
     <p>
-        Gargoyles {{ gargoyle }} are included in the
-        Tremere {{ tremere }} clan analysis,
-        all Imbued are included in the same analysis regardless of their creed.
+        All Imbued are included in the same analysis regardless of their creed.
     </p>
     {% endtrans %}
     <div class="column-2">
-    {{ link("/best-cards/clans/ahrimanes", _class="insert", _prefix="ahrimane") }}
-    {{ link("/best-cards/clans/akunanse", _class="insert", _prefix="akunanse") }}
-    {{ link("/best-cards/clans/baali", _class="insert", _prefix="baali") }}
-    {{ link("/best-cards/clans/banu-haqim", _class="insert", _prefix="banu_haqim") }}
-    {{ link("/best-cards/clans/brujah", _class="insert", _prefix="brujah") }}
-    {{ link("/best-cards/clans/caitiff", _class="insert", _prefix="caitiff") }}
-    {{ link("/best-cards/clans/daughters-of-cacophony", _class="insert", _prefix="daughter_of_cacophony") }}
-    {{ link("/best-cards/clans/gangrel", _class="insert", _prefix="gangrel") }}
-    {{ link("/best-cards/clans/giovanni", _class="insert", _prefix="giovanni") }}
-    {{ link("/best-cards/clans/guruhi", _class="insert", _prefix="guruhi") }}
-    {{ link("/best-cards/clans/harbingers-of-skulls", _class="insert", _prefix="harbinger_of_skulls") }}
-    {{ link("/best-cards/clans/imbued", _class="insert", _prefix="visionary") }}
-    {{ link("/best-cards/clans/ishtarri", _class="insert", _prefix="ishtarri") }}
+        {{ link("/best-cards/clans/ahrimanes", _class="insert warn", _prefix="ahrimane") }}
+        {{ link("/best-cards/clans/akunanse", _class="insert warn", _prefix="akunanse") }}
+        {{ link("/best-cards/clans/assamite-legacy", _class="insert warn", _prefix="assamite_legacy") }}
+        {{ link("/best-cards/clans/baali", _class="insert", _prefix="baali") }}
+        {{ link("/best-cards/clans/banu-haqim", _class="insert", _prefix="banu_haqim") }}
+        {{ link("/best-cards/clans/brujah", _class="insert", _prefix="brujah") }}
+        {{ link("/best-cards/clans/brujah-antitribu", _class="insert warn", _prefix="brujah_antitribu") }}
+        {{ link("/best-cards/clans/caitiff", _class="insert warn", _prefix="caitiff") }}
+        {{ link("/best-cards/clans/daughters-of-cacophony warn", _class="insert", _prefix="daughter_of_cacophony") }}
+        {{ link("/best-cards/clans/gangrel", _class="insert", _prefix="gangrel") }}
+        {{ link("/best-cards/clans/gangrel-antitribu", _class="insert", _prefix="gangrel_antitribu") }}
+        {{ link("/best-cards/clans/gargoyles", _class="insert", _prefix="gargoyle") }}
+        {{ link("/best-cards/clans/giovanni", _class="insert", _prefix="giovanni") }}
+        {{ link("/best-cards/clans/guruhi", _class="insert", _prefix="guruhi") }}
+        {{ link("/best-cards/clans/harbingers-of-skulls", _class="insert", _prefix="harbinger_of_skulls") }}
+        {{ link("/best-cards/clans/imbued", _class="insert warn", _prefix="visionary") }}
+        {{ link("/best-cards/clans/ishtarri warn", _class="insert", _prefix="ishtarri") }}
+        {{ link("/best-cards/clans/kiasyd", _class="insert", _prefix="kiasyd") }}
+        {{ link("/best-cards/clans/lasombra", _class="insert", _prefix="lasombra") }}
+        {{ link("/best-cards/clans/malkavian", _class="insert", _prefix="malkavian") }}
     </div>
     <div class="column-2">
-    {{ link("/best-cards/clans/kiasyd", _class="insert", _prefix="kiasyd") }}
-    {{ link("/best-cards/clans/lasombra", _class="insert", _prefix="lasombra") }}
-    {{ link("/best-cards/clans/malkavian", _class="insert", _prefix="malkavian") }}
-    {{ link("/best-cards/clans/ministry", _class="insert", _prefix="ministry") }}
-    {{ link("/best-cards/clans/nosferatu", _class="insert", _prefix="nosferatu") }}
-    {{ link("/best-cards/clans/ravnos", _class="insert", _prefix="ravnos") }}
-    {{ link("/best-cards/clans/salubri", _class="insert", _prefix="salubri") }}
-    {{ link("/best-cards/clans/toreador", _class="insert", _prefix="toreador") }}
-    {{ link("/best-cards/clans/tremere", _class="insert", _prefix="tremere") }}
-    {{ link("/best-cards/clans/true-brujah", _class="insert", _prefix="true_brujah") }}
-    {{ link("/best-cards/clans/tzimisce", _class="insert", _prefix="tzimisce") }}
-    {{ link("/best-cards/clans/ventrue", _class="insert", _prefix="ventrue") }}
+        {{ link("/best-cards/clans/ministry", _class="insert", _prefix="ministry") }}
+        {{ link("/best-cards/clans/nosferatu", _class="insert", _prefix="nosferatu") }}
+        {{ link("/best-cards/clans/nosferatu-antitribu", _class="insert warn", _prefix="nosferatu_antitribu") }}
+        {{ link("/best-cards/clans/ravnos", _class="insert", _prefix="ravnos") }}
+        {{ link("/best-cards/clans/ravnos-legacy", _class="insert warn", _prefix="ravnos_legacy") }}
+        {{ link("/best-cards/clans/salubri", _class="insert", _prefix="salubri") }}
+        {{ link("/best-cards/clans/salubri-legacy", _class="insert warn", _prefix="salubri") }}
+        {{ link("/best-cards/clans/salubri-antitribu", _class="insert warn", _prefix="salubri_antitribu") }}
+        {{ link("/best-cards/clans/toreador", _class="insert", _prefix="toreador") }}
+        {{ link("/best-cards/clans/toreador-antitribu", _class="insert", _prefix="toreador_antitribu") }}
+        {{ link("/best-cards/clans/tremere", _class="insert", _prefix="tremere") }}
+        {{ link("/best-cards/clans/tremere-antitribu", _class="insert", _prefix="tremere_antitribu") }}
+        {{ link("/best-cards/clans/true-brujah", _class="insert warn", _prefix="true_brujah") }}
+        {{ link("/best-cards/clans/tzimisce", _class="insert", _prefix="tzimisce") }}
+        {{ link("/best-cards/clans/tzimisce-legacy", _class="insert", _prefix="tzimisce") }}
+        {{ link("/best-cards/clans/ventrue", _class="insert", _prefix="ventrue") }}
+        {{ link("/best-cards/clans/ventrue-antitribu", _class="insert", _prefix="ventrue_antitribu") }}
     </div>
-    {# <table class="column-2">
-        <tbody>
-            <tr>
-                <td>{{ ahrimane }}
-                <td>{{ link("/best-cards/clans/ahrimanes") }}</td>
-            </tr>
-            <tr>
-                <td>{{ akunanse }}
-                <td>{{ link("/best-cards/clans/akunanse") }}</td>
-            </tr>
-            <tr>
-                <td>{{ baali }}
-                <td>{{ link("/best-cards/clans/baali") }}</td>
-            </tr>
-            <tr>
-                <td>{{ banu_haqim }}
-                <td>{{ link("/best-cards/clans/banu-haqim") }}</td>
-            </tr>
-            <tr>
-                <td>{{ brujah }}
-                <td>{{ link("/best-cards/clans/brujah") }}</td>
-            </tr>
-            <tr>
-                <td>{{ caitiff }}
-                <td>{{ link("/best-cards/clans/caitiff") }}</td>
-            </tr>
-            <tr>
-                <td>{{ daughter_of_cacophony }}
-                <td>{{ link("/best-cards/clans/daughters-of-cacophony") }}</td>
-            </tr>
-            <tr>
-                <td>{{ gangrel }}
-                <td>{{ link("/best-cards/clans/gangrel") }}</td>
-            </tr>
-            <tr>
-                <td>{{ giovanni }}
-                <td>{{ link("/best-cards/clans/giovanni") }}</td>
-            </tr>
-            <tr>
-                <td>{{ guruhi }}
-                <td>{{ link("/best-cards/clans/guruhi") }}</td>
-            </tr>
-            <tr>
-                <td>{{ harbinger_of_skulls }}
-                <td>{{ link("/best-cards/clans/harbingers-of-skulls") }}</td>
-            </tr>
-            <tr>
-                <td>{{ visionary }}
-                <td>{{ link("/best-cards/clans/imbued") }}</td>
-            </tr>
-            <tr>
-                <td>{{ ishtarri }}
-                <td>{{ link("/best-cards/clans/ishtarri") }}</td>
-            </tr>
-        </tbody>
-    </table>
-    <table class="column-2">
-        <tbody>
-            <tr>
-                <td>{{ kiasyd }}
-                <td>{{ link("/best-cards/clans/kiasyd") }}</td>
-            </tr>
-            <tr>
-                <td>{{ lasombra }}
-                <td>{{ link("/best-cards/clans/lasombra") }}</td>
-            </tr>
-            <tr>
-                <td>{{ malkavian}}
-                <td>{{ link("/best-cards/clans/malkavian") }}</td>
-            </tr>
-            <tr>
-                <td>{{ ministry }}
-                <td>{{ link("/best-cards/clans/ministry") }}</td>
-            </tr>
-            <tr>
-                <td>{{ nosferatu }}
-                <td>{{ link("/best-cards/clans/nosferatu") }}</td>
-            </tr>
-            <tr>
-                <td>{{ ravnos }}
-                <td>{{ link("/best-cards/clans/ravnos") }}</td>
-            </tr>
-            <tr>
-                <td>{{ salubri }}
-                <td>{{ link("/best-cards/clans/salubri") }}</td>
-            </tr>
-            <tr>
-                <td>{{ toreador }}
-                <td>{{ link("/best-cards/clans/toreador") }}</td>
-            </tr>
-            <tr>
-                <td>{{ tremere }}
-                <td>{{ link("/best-cards/clans/tremere") }}</td>
-            </tr>
-            <tr>
-                <td>{{ true_brujah }}
-                <td>{{ link("/best-cards/clans/true-brujah") }}</td>
-            </tr>
-            <tr>
-                <td>{{ tzimisce }}
-                <td>{{ link("/best-cards/clans/tzimisce") }}</td>
-            </tr>
-            <tr>
-                <td>{{ ventrue }}
-                <td>{{ link("/best-cards/clans/ventrue") }}</td>
-            </tr>
-        </tbody>
-    </table> #}
 </article>
 {% endblock %}

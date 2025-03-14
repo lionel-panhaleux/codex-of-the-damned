@@ -1,0 +1,87 @@
+{% extends "best-cards/_layout.html" %}
+{% import "best-cards/_layout_card_column.html" as layout with context%}
+
+{% block content %}
+<h1>{{ tha }} Blood Sorcery</h1>
+<div class="insert tip">
+    <p>
+        {% trans trimmed %}
+        {{ tha }} offers a wide range of options. A bit of stealth,
+        solid combat options including blood theft effects, and some unique effects.
+        {% endtrans %}
+    </p>
+</div>
+
+{% call layout.card_column("Magic of the Smith", decks=73, copies="2-4") %}
+{% trans trimmed %}
+A rare effect in the game, the ability to fetch any equipment in the library
+is very strong. The +3 stealth bonus at superior {{ THA }} makes it very hard to block.
+Some decks use {{ THA }} for this card only.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Mirror Walk", decks=69, copies="3-8") %}
+{% trans trimmed %}
+A good stealth enhancer, the only one available in {{ tha }}.
+Its combat avoidance effect at superior {{ THA }} can come in handy,
+and jam the hand of combat-heavy blockers.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Rego Motum", decks=59, copies="2-4") %}
+{% trans trimmed rolling_with_the_punches=card("Rolling With the Punches") %}
+A great prevention card, even if not as powerful as {{ for }}
+{{ rolling_with_the_punches }}.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Theft of Vitae", decks=38, copies="4-8") %}
+{% trans trimmed
+hunger_of_marduk=card("Hunger of Marduk")
+%}
+An excellent combat card: as it <em>steals</em> blood there is no damage to prevent,
+and at the end of the round it is a 4 blood difference between the two vampires,
+at no cost. Of course, Banu Haqim {{ banu_haqim }} will prefer the handier
+{{ hunger_of_marduk }} that lets do the same with {{ cel }} additional strikes.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Rutor's Hand", decks=73, copies="1-3") %}
+{% trans trimmed a_b=link("/strategy/fundamentals", _("A&B"), _anchor="AB") %}
+An expensive but powerful device to augment {{ a_b }}.
+Its cost did not prevent it to be played in many {{ tha }} decks, if only as an option.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Hunter's Mark", decks=26, copies="3-7") %}
+{% trans trimmed
+resist_earth_s_grasp=card("Resist Earth's Grasp")
+%}
+A nice rush action, especially if it does not get blocked or you can support it
+with a bit of stealth like {{ resist_earth_s_grasp }} or simply using {{ obf }} if
+you are Banu Haqim {{ banu_haqim }}.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Apportation", decks=16, copies="3-6") %}
+{% trans trimmed %}
+A very versatile combat device: maneuver or press at no cost is a great tool.
+Not on the same level as {{ flash }} though, so more of a Tremere {{ tremere }} thing.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Blood Rage", decks=15, copies="1-3") %}
+{% trans trimmed %}
+An interesting strike, useful both against Fortitude {{ for }}
+and gun-based combat modules.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Walk of Flame", decks=11, copies="1-2") %}
+{% trans trimmed %}
+A typical Blood Sorcery {{ tha }} strike: even though it usually needs a second round
+to land, ranged aggravated ramage is strong enough to justify its inclusion in some decks.
+{% endtrans %}
+{% endcall %}
+
+{% endblock %}

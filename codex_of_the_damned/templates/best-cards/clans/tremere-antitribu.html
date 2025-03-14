@@ -1,0 +1,82 @@
+{% extends "best-cards/_layout.html" %}
+{% import "best-cards/_layout_card_column.html" as layout with context%}
+
+{% block content %}
+<h1>{{ tremere_antitribu }} Tremere Antitribu</h1>
+<div class="insert tip">
+    {% trans trimmed
+    nephandii=link("/archetypes/tupdogs"),
+    goratrix_high_tower=link("/archetypes/goratrix-high-tower"),
+    nephandus=card("Nephandus"),
+    malgorzata_arch=link("/archetypes/malgorzata")
+    %}
+    <p>
+        The Tremere Antitribu have the same disciplines
+        as their Camarilla counterparts, {{ aus }}{{ dom }}{{ tha }}.
+        Their exceptional ally {{ nephandus }} gave birth to the {{ nephandii }} archetype,
+        but they also run a strong wall in {{ goratrix_high_tower }} and nice high capacity
+        toolboxes like {{ malgorzata_arch }}
+    </p>
+    {% endtrans %}
+</div>
+
+{% call layout.card_column("Keith Moody", decks=28, copies="1-2") %}
+{% trans trimmed %}
+The cheapest {{ DOM }} pool can buy, he is played in many decks.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Antonio d'Erlette", decks=25, copies="3-6") %}
+{% trans trimmed nephandii=link("/archetypes/nephandii") %}
+Second pillar of the {{ nephandii }} archetype, his capacity is exceptionnal.
+Being able to put some allies into play without even taking an action that could be
+blocked is a definitive edge.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Nephandus", decks=23, copies="6-11") %}
+{% trans trimmed nephandii=link("/archetypes/nephandii") %}
+An excellent ally: not so expensive, not unique so many of them can be into play,
+they strike 1R with a press and prevent one damage per strike,
+so this means they do not lose any life against a vampire
+that does not play any combat card.
+They gave birth to the {{ nephandii }} archetype.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Malgorzata", decks=18, copies="3-6") %}
+{% trans trimmed malgorzata_archetype=link("/archetypes/malgorzata") %}
+Her unique ability lets her help influence high capacity sidekicks easily.
+That makes her an excellent star for her own archetype, {{ malgorzata }}.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Selena", decks=16, copies="1") %}
+{% trans trimmed %}
+All clan disciplines at superior, an being Black Hand can come in handy in some cases.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Orlando Oriundus", decks=16, copies="1-3") %}
+{% trans trimmed %}
+His unique ability makes him very desireable in many <em>Inner Circle</em> decks.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Goratrix", decks=8, copies="1-5") %}
+{% trans trimmed
+goratrix_high_tower=link("/archetypes/goratrix-high-tower")
+%}
+His incredible ability made him star of his own archetype, {{ goratrix_high_tower }}.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Ruins of Ceoris", decks=7, copies="1") %}
+{% trans trimmed
+goratrix_high_tower=link("/archetypes/goratrix-high-tower")
+%}
+A neat locquipment for Tremere Antitribu if they are likely to fight. Often see in {{ goratrix_high_tower }}.
+{% endtrans %}
+{% endcall %}
+
+{% endblock %}

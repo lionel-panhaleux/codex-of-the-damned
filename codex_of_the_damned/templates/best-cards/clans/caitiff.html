@@ -3,6 +3,10 @@
 
 {% block content %}
 <h1>{{ caitiff }} Caitiff</h1>
+<div class="insert warn">
+    This list is compiled from statistics encompassing 30 years,
+    as the clan has not scored enough wins in the last 5 years for relevant statistics otherwise.
+</div>
 <div class="insert tip">
     <p>
         {% trans trimmed %}
@@ -14,25 +18,33 @@
     </p>
 </div>
 
-{% call layout.card_column("Anarch Convert", decks=214, copies="2-5") %}
+{% call layout.card_column("Anarch Convert", decks=395, copies="2-5") %}
 {% trans trimmed %}
 The most played Caitiff by far, he is an easy and relatively cheap way
 to make vampires Anarch, and can even be used to smooth crypt rotation a bit.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Franciscus", decks=30, copies="1") %}
+{% call layout.card_column("Antoinette DuChamp", decks=64, copies="1") %}
+{% trans trimmed %}
+Two disciplines for 1 pool is relatively cheap
+moreoever her group makes her an easy inclusion.
+She is most often seen algonside other Caitiff in very fast crypts.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Franciscus", decks=59, copies="1") %}
 {% trans trimmed
 zoe=card("Zöe"),
 isabel_de_leon=card("Isabel de Leon"),
 weenie_aus=link("/archetypes/weenie-aus")
 %}
-Seen in {{aus}} builds, alongside {{ zoe }} and {{ isabel_de_leon }},
+Seen in {{ aus }} builds, alongside {{ zoe }} and {{ isabel_de_leon }},
 he is often included in {{ weenie_aus }} decks.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Lisa Noble", decks=29, copies="1") %}
+{% call layout.card_column("Lisa Noble", decks=45, copies="1") %}
 {% trans trimmed
 zip=card("Zip"),
 stick=card("Stick"),
@@ -43,24 +55,18 @@ her downside is not an issue when coupled with {{ aid_from_bats }}.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Maldavis", decks=26, copies="1") %}
+{% call layout.card_column("Maldavis", decks=45, copies="1") %}
 {% trans trimmed
-neighbor_john=card("Neighbor John")
+neighbor_john=card("Neighbor John"),
+advanced_version=card("Maldavis (ADV)")
 %}
-Often seen in {{AUS}} builds, sometimes alongside {{ neighbor_john }},
-her downside is rarely a problem and 4 pool for superior {{AUS}} is relatively cheap.
+Often seen in {{ AUS }} builds, sometimes alongside {{ neighbor_john }},
+her downside is rarely a problem and 4 pool for superior {{ AUS }} is relatively cheap.
+Still, her more recent (2016) {{ advanced_version }} is even better.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Antoinette DuChamp", decks=23, copies="1") %}
-{% trans trimmed %}
-Two disciplines for 1 pool is relatively cheap
-moreoever her group makes her an easy inclusion.
-She is most often seen algonside other Caitiff in very fast crypts.
-{% endtrans %}
-{% endcall %}
-
-{% call layout.card_column("Igo the Hungry", decks=23, copies="1") %}
+{% call layout.card_column("Igo the Hungry", decks=43, copies="1") %}
 {% trans trimmed
 antoinette_du_champ=card("Antoinette DuChamp")
 %}
@@ -70,22 +76,22 @@ Combined with other Caitiff, he can provide a very fast crypt for swarm builds.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Mukhtar Bey", decks=22, copies="1-2") %}
+{% call layout.card_column("Eddie Gaines", decks=33, copies="1-2") %}
+{% trans trimmed
+dementation_bleed=link("/archetypes/dementation-bleed")
+%}
+Althouth his downside can be a real bummer, his low cost for {{dem}} makes him a possible
+inclusion in very fast versions of the {{ dementation_bleed }} archetype.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Mukhtar Bey", decks=26, copies="1-2") %}
 {% trans trimmed
 victor_pelletier=card("Victor Pelletier")
 %}
 The oldest Caitiff, he is often seen alongside other titled Camarilla vampires.
 His {{PRE}}{{obf}} disciplines combination is a nice fit for political decks
 and his 7 pool cost is relatively low. A frequent companion of {{ victor_pelletier }}.
-{% endtrans %}
-{% endcall %}
-
-{% call layout.card_column("Eddie Gaines", decks=19, copies="1-2") %}
-{% trans trimmed
-dementation_bleed=link("/archetypes/dementation-bleed")
-%}
-Althouth his downside can be a real bummer, his low cost for {{dem}} makes him a possible
-inclusion in very fast versions of the {{ dementation_bleed }} archetype.
 {% endtrans %}
 {% endcall %}
 

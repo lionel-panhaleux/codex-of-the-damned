@@ -1,0 +1,111 @@
+{% extends "archetypes/_layout.html" %}
+{% import "archetypes/_layout-erratum.html" as erratum with context %}
+{% import "archetypes/top-tier/govern-resistance.json" as deck_json %}
+
+{% block meta %}
+<meta property="decklist" content='{{ deck_json | tojson }}' />
+{% endblock %}
+
+{% block archetype_name %}
+<h1>{{ tzimisce }} Govern Resistance</h1>
+{% endblock %}
+
+{% block archetype %}
+{% trans trimmed
+govern_the_unaligned=card("Govern the Unaligned"),
+anarch_troublemaker=card("Anarch Troublemaker"),
+bait_and_switch=card("Bait and Switch"),
+claws_of_the_dead=card("Claws of the Dead"),
+conditioning=card("Conditioning"),
+deep_ecology=card("Deep Ecology"),
+deep_song=card("Deep Song"),
+deflection=card("Deflection"),
+delaying_tactics=card("Delaying Tactics"),
+donnybrook=card("Donnybrook"),
+earth_control=card("Earth Control"),
+earth_meld=card("Earth Meld"),
+eat_the_rich=card("Eat the Rich"),
+form_of_mist=card("Form of Mist"),
+form_of_the_bat=card("Form of the Bat"),
+garibaldi_meucci_museum=card("Garibaldi Meucci Museum"),
+gran_madre_di_dio=card("Gran Madre Di Dio, Italy", "Gran Madre Di Dio"),
+graverobbing=card("Graverobbing"),
+groundfighting=card("Groundfighting"),
+heart_of_nizchetus=card("Heart Of Nizchetus"),
+immortal_grapple=card("Immortal Grapple"),
+invigorate=card("Invigorate"),
+kamile_paukstys=card("Kamile Paukstys"),
+kuyen=card("Kuyen"),
+misdirection=card("Misdirection"),
+organized_resistance=card("Organized Resistance"),
+pentex_tm_subversion=card("Pentex™ Subversion"),
+protection_racket=card("Protection Racket"),
+raven_spy=card("Raven Spy"),
+rotschreck=card("Rötschreck"),
+scourge_of_the_enochians=card("Scourge of the Enochians"),
+sculpt_the_flesh=card("Sculpt the Flesh"),
+seduction=card("Seduction"),
+sniper_rifle=card("Sniper Rifle"),
+the_sleeping_mind=card("The Sleeping Mind"),
+bounces=link("/strategy/fundamentals", _("bounces"), _anchor="bounce"),
+gangrel_thing=link("/archetypes/gangrel-thing"),
+roy_opitz_deck=link("/deck-search", _("Roy Opitz' deck"), id="11560"),
+pablo_carnino_s_deck=link("/deck-search", _("Pablo Carnino's deck"), id="11800")
+%}
+<h2>Highlights</h2>
+<p>
+    This is a <em>toolbox</em> deck using Tzimisce {{ tzimisce }} Barons and their {{ dom }}{{ pro }} disciplines
+    combination.
+</p>
+<p>
+    The oldest vampire should be influenced first, so they can use superior {{ govern_the_unaligned }} to help
+    influence others faster and cheaper.
+</p>
+<p>
+    The deck uses {{ DOM }} to bleed with {{ govern_the_unaligned }} and {{ conditioning }},
+    {{ pro }} for stealth with {{ earth_control }}, {{ form_of_mist }}, and the occasional {{ form_of_the_bat }}.
+</p>
+<p>
+    The defense is solid, with {{ organized_resistance }} and {{ deep_ecology }} for unlock and intercept,
+    plus the occasional {{ form_of_the_bat }} and {{ protection_racket }}. It also includes a good amount of
+    {{ bounces }}, with {{ bait_and_switch }} and {{ deflection }}, and a few {{ delaying_tactics }} against votes.
+</p>
+<p>
+    On the combat side, the deck uses combat ends in both {{ earth_meld }} and {{ form_of_mist }},
+    with the odd {{ donnybrook }} to keep opponents on their toes.
+</p>
+<h2>Tips & Tricks</h2>
+<p>
+    {{ deep_song }} can be used to rush or to lock a defender (then {{ earth_meld }} to unlock and bleed),
+    but can also be used to bleed, especially by the two vampires in crypt who do not have {{ dom }},
+    {{ kuyen }} and {{ kamile_paukstys }}.
+</p>
+<p>
+    {{ garibaldi_meucci_museum }} is doubled because it is extra-efficient here. It can fetch defense cards like
+    {{ bait_and_switch }} or {{ deep_ecology }}, as well as a lunge with {{ eat_the_rich }}, or simply de used
+    to avoid a troublesome combat with another Anarch.
+</p>
+<h2>Variants</h2>
+<p>
+    {{ scourge_of_the_enochians }} is a common inclusion against swarms, {{ gran_madre_di_dio }} can also be included.
+    {{ groundfighting }} is an option against {{ immortal_grapple }}, and {{ heart_of_nizchetus }} fits nicely
+    to help with the cards flow. {{ sniper_rifle }} and {{ raven_spy }} can be considered to enhance the defense.
+</p>
+<p>
+    The <strong>Claws</strong> variant relies on a more aggressive combat module, with more {{ deep_song }}
+    to make rushes a viable strategy axis. Protean {{ pro }} provides great aggravated modifiers like
+    {{ donnybrook }}, {{ claws_of_the_dead }}, and {{ sculpt_the_flesh }}, and some {{ graverobbing }}
+    and {{ rotschreck }} can be included. See {{ roy_opitz_deck }} for an example.
+</p>
+<p>
+    Doubling down on the idea of use {{ deep_song }} to lock minions, the <strong>Tap'n Bleed</strong> variant
+    uses less stealth but instead more {{ deep_song }}, with {{ invigorate }} as a versatile modifier, and the usual
+    {{ anarch_troublemaker }}, {{ pentex_tm_subversion }} and {{ misdirection }} on top of {{ seduction }}
+    and {{ the_sleeping_mind }}. See {{ pablo_carnino_s_deck }} for reference.
+</p>
+<p>
+    Althouhg it is a different archetype because of all the Dominate {{ dom }} cards, the deck shares a lot
+    with the infamous {{ gangrel_thing }}.
+</p>
+{% endtrans %}
+{% endblock %}

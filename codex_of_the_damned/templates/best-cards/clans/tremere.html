@@ -6,118 +6,36 @@
 <div class="insert tip">
     {% trans trimmed
     princess_toolbox=link("/archetypes/princess-toolbox"),
-    mistress=link("/archetypes/mistress"),
-    nephandii=link("/archetypes/tupdogs-nephandus"),
-    goratrix_high_tower=link("/archetypes/goratrix-high-tower"),
-    antonio_d_erlette=card("Antonio d'Erlette"),
-    malgorzata_arch=link("/archetypes/malgorzata_arch"),
-    nephandus=card("Nephandus"),
-    goratrix=card("Goratrix"),
-    tupdogs=card("Tupdog", "Tupdogs"),
-    lord_tremere=card("Lord Tremere"),
-    mistress_fanchon=card("Mistress Fanchon"),
-    malgorzata=card("Malgorzata")
+    mistress=link("/archetypes/mistress")
     %}
     <p>
-        The Tremere and their antitribu have access to the unique and versatile
-        {{ tha }} discipline. Alongside {{ dom }} and {{ aus }}, it makes for a powerful
-        combination, used in many successful archetypes:
-    <ul>
-        <li>
-            The {{ princess_toolbox }}, a toolbox using all
-            three clan disciplines {{ aus }}{{ dom }} {{ tha }}.
-        </li>
-        <li>
-            {{ mistress }}, an <em>Inner Circle</em> build using {{ mistress_fanchon }}.
-        </li>
-        <li>
-            The {{ nephandii }}, using {{ antonio_d_erlette }} to put multiple
-            {{ nephandus }} into play and {{ tupdogs }} to dispose
-            of the opponents minions.
-        </li>
-        <li>
-            The {{ goratrix_high_tower }}, a wall using
-            {{ goratrix }} and its superior {{ ANI }} as star.
-        </li>
-        <li>
-            {{ malgorzata_arch }}, a toolbox archetype which uses Tremere with {{ VIC }}
-            and powerful abilities, like {{ lord_tremere }}, {{ mistress_fanchon }} and
-            {{ malgorzata }}.
-        </li>
-    </ul>
+        The Tremere have great clan disciplines in {{ aud }}{{ dom }}{{ tha }}.
+        They run great toolboxes like {{ princess_toolbox }}, but also good political decks like {{ mistress }}.
     </p>
     {% endtrans %}
 </div>
 
-{% call layout.card_column("Mirror Walk", decks=156, copies="2-8") %}
-{% trans trimmed %}
-A good stealth enhancer, the only one available with the clan disciplines.
-Its combat avoidance effect at superior {{ THA }} can come in handy.
-{% endtrans %}
-{% endcall %}
-
-{% call layout.card_column("Magic of the Smith", decks=141, copies="2-5") %}
-{% trans trimmed %}
-A rare effect in the game, the ability to fetch any equipment in the library
-is very strong. The +3 stealth bonus at superior {{ THA }} makes it very hard to block.
-Some decks use {{ THA }} for this card only.
-{% endtrans %}
-{% endcall %}
-
-{% call layout.card_column("Keith Moody", decks=124, copies="1-2") %}
-{% trans trimmed %}
-The cheapest {{ DOM }} pool can buy, he is played in many decks.
-{% endtrans %}
-{% endcall %}
-
-{% call layout.card_column("Theft of Vitae", decks=86, copies="5-11") %}
-{% trans trimmed %}
-An excellent combat card: as it <em>steals</em> blood there is no damage to prevent,
-and at the end of the round it is a 4 blood difference between the two vampires,
-at no cost.
-{% endtrans %}
-{% endcall %}
-
-{% call layout.card_column("Nephandus", decks=77, copies="2-12") %}
-{% trans trimmed nephandii=link("/archetypes/nephandii") %}
-An excellent ally: not so expensive, not unique so many of them can be into play,
-they strike 1R with a press and prevent one damage per strike,
-so this means they do not lose any life against a vampire
-that does not play any combat card.
-They gave birth to the {{ nephandii }} archetype.
-{% endtrans %}
-{% endcall %}
-
-{% call layout.card_column("Ponticulus", decks=73, copies="1") %}
+{% call layout.card_column("Ponticulus", decks=33, copies="1") %}
 {% trans trimmed %}
 A good ally at a cheap price: he is quite the defender and very resilient
 as aggravated damage is required to kill him.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Rutor's Hand", decks=73, copies="1-3") %}
-{% trans trimmed a_b=link("/strategy/fundamentals", _("A&B"), _anchor="AB") %}
-An expensive but powerful device to augment {{ a_b }}.
-Its cost did not prevent it to be played in many {{ tha }} decks, if only as an option.
-{% endtrans %}
-{% endcall %}
-
-{% call layout.card_column("Antonio d'Erlette", decks=69, copies="2-5") %}
-{% trans trimmed nephandii=link("/archetypes/nephandii") %}
-Second pillar of the {{ nephandii }} archetype, his capacity is exceptionnal.
-Being able to put some allies into play without even taking an action that could be
-blocked is a definitive edge.
-{% endtrans %}
-{% endcall %}
-
-{% call layout.card_column("Arcane Library", decks=63, copies="1-2") %}
+{% call layout.card_column("Arcane Library", decks=29, copies="1") %}
 {% trans trimmed %}
 A good bloat device at a decent price. Few clans have access to this kind of location,
 but it generates a pool per turn so it is quickly profitable.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Mistress Fanchon", decks=63, copies="1-3") %}
+{% call layout.card_column("Chantry", decks=28, copies="1") %}
+{% trans trimmed %}
+A great location with a unique effect, making torpor that much less of a threat.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Mistress Fanchon", decks=27, copies="1-4") %}
 {% trans trimmed %}
 An <em>Inner Circle</em> with the classical 4 votes and +2 bleed bonus,
 she also has a unique ability to fetch the card she wants.
@@ -126,45 +44,62 @@ combination, alongside {{ THA }}{{ VIC }}, is powerful in many decks.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Apportation", decks=61, copies="5-10") %}
+{% call layout.card_column("Gerald Windham", decks=21, copies="1-3") %}
 {% trans trimmed %}
-A very versatile combat device: maneuver or press at no cost is a great tool.
+Between his stealth bonus, {{ FOR }}, and unique votes ability, he finds a spot in many deck.
+He's a {{ freak_drive }} specialist.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Carna, the Princess Witch", decks=60, copies="1-4") %}
+{% call layout.card_column("Lord Tremere", decks=21, copies="1-3") %}
+{% trans trimmed malgorzata=card("Malgorzata") %}
+The bleed and intercept bonus are huge, and his ability makes him a great leader for the clan.
+Moreover, {{ VIC }} makes him an ideal partner for {{ malgorzata }}.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Ayelech", decks=16, copies="1-2") %}
 {% trans trimmed %}
-A star among the Tremere, her +1 intercept an good disciplines for a decent cost
-makes her a favorite in many decks.
+A Prince title with all clan disciplines at superior, always good.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Tupdog", decks=57, copies="2-16") %}
-{% trans trimmed tupdogs=link("/archetypes/tupdogs-nephandus") %}
-An infamous rush device, only available as an offensive tool for Tremere antitribu.
-They gave birth to the {{ tupdogs }} archetype.
-{% endtrans %}
-{% endcall %}
-
-{% call layout.card_column("Saiz", decks=58, copies="1") %}
+{% call layout.card_column("Wasserschloss Anif, Austria", decks=15, copies="1") %}
 {% trans trimmed %}
-A good disciplines combination for only 3 pool, plus he is in the group 3 so
-he can be included in many crypts.
+An excellent location, working like some kind of distributed {{ blood_doll }}.
+It is free so, even if it gets destroyed, it is not a lot to pay to waste an opponent's action.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Ember Wright", decks=52, copies="1") %}
-{% trans trimmed saiz=card("Saiz") %}
-Yet another {{ dom }}{{ aus }} for 3, included in many crypts for the same reason as
-{{ saiz }}: she's cheap and has good disciplines.
+{% call layout.card_column("Carna, The Princess Witch", decks=11, copies="1-3") %}
+{% trans trimmed princess_toolbox=link("/archetypes/princess-toolbox") %}
+With her intercept bonus, she's a natural star and leads the {{ princess_toolbox }} archetype.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Rego Motum", decks=51, copies="1-5") %}
-{% trans trimmed rolling_with_the_punches=card("Rolling With the Punches") %}
-A very decent damage prevention card, even if not as powerful as {{ for }}
-{{ rolling_with_the_punches }}, it is the only damage prevention available
-to the Tremere.
+{% call layout.card_column("Gabrielle di Righetti", decks=11, copies="1-3") %}
+{% trans trimmed
+mistress_fanchon=card("Mistress Fanchon"),
+malgorzata=card("Malgorzata")
+%}
+Her title and ability makes her a great sidekick to {{ mistress_fanchon }} as well as {{ malgorzata }}.
 {% endtrans %}
 {% endcall %}
+
+{% call layout.card_column("The Ankara Citadel, Turkey", decks=9, copies="1") %}
+{% trans trimmed
+summon_history=card("Summon History"),
+shalmath_history=link("/archetypes/shalmath-history")
+%}
+A unique effect, often seen in {{ summon_history }} decks to reduce subsequent uses of the card,
+like in {{ shalmath_history }}.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Inês Tristão", decks=10, copies="1-2") %}
+{% trans trimmed govern=card("Govern the Unaligned", "Govern") %}
+A cheap Prince with superior {{ THA }}, she sits comfortably in the {{ govern }} chain.
+{% endtrans %}
+{% endcall %}
+
 {% endblock %}

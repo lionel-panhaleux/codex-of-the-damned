@@ -1,0 +1,69 @@
+{% extends "best-cards/_layout.html" %}
+{% import "best-cards/_layout_card_column.html" as layout with context%}
+
+{% block content %}
+<h1>{{ toreador_antitribu }}
+    {% trans trimmed %}
+    Toreador Antitribu
+    {% endtrans %}
+</h1>
+<div class="insert tip">
+    <p>
+        {% trans trimmed
+        palla_grande=link("/archetypes/palla-grande")
+        %}
+        The Toreador Antitribu are an aggressive bunch, whether they fight with guns
+        or bleed in numbers like in {{ palla_grande }}.
+        {% endtrans %}
+    </p>
+</div>
+
+{% call layout.card_column("Remilliard, Devout Crusader", decks=9, copies="1") %}
+{% trans trimmed %}
+A cheap {{ AUS }} chump, easy to include.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Sheila Mezarin", decks=8, copies="1-2") %}
+{% trans trimmed %}
+A cheap price for a bleed bonus, with {{ PRE }}{{ AUS }} available, she shines.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Guggenheim", decks=8, copies="1") %}
+{% trans trimmed %}
+All clan disciplines at superior for a neat 6, good.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Palla Grande", decks=7, copies="2-4") %}
+{% trans trimmed palla_grande=link("/archetypes/palla-grande") %}
+A key card for the clan, which gave birth to the {{ palla_grande }} archetype.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Art Scam", decks=7, copies="3-10") %}
+{% trans trimmed %}
+Decent bloat, with enough numbers it can amount to a lot.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Loonar", decks=6, copies="1") %}
+{% trans trimmed %}
+Superior {{ PRE }} at 4 cap, she's an excellent bleeder.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Jost Werner", decks=5, copies="2-3") %}
+{% trans trimmed rebekka_jost=link("/archetypes/rebekka-jost") %}
+A star of the clan thanks to his permanent stealth, he co-stars the {{ rebekka_jost }} archetype.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Dominique Santo Paulo", decks=5, copies="1") %}
+{% trans trimmed magnum=card(".44 Magnum") %}
+With superior {{ AUS }}{{ CEL }} at just 6 pool, he is a good sidekick in {{ magnum }} decks.
+{% endtrans %}
+{% endcall %}
+
+{% endblock %}

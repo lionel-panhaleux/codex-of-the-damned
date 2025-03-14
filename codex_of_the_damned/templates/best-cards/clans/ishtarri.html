@@ -3,6 +3,10 @@
 
 {% block content %}
 <h1>{{ ishtarri }} Ishtarri</h1>
+<div class="insert warn">
+    This list is compiled from statistics encompassing 30 years,
+    as the clan has not scored enough wins in the last 5 years for relevant statistics otherwise.
+</div>
 <div class="insert tip">
     <p>
         {% trans trimmed
@@ -18,7 +22,7 @@
     </p>
 </div>
 
-{% call layout.card_column("Undele", decks=38, copies="1-3") %}
+{% call layout.card_column("Undele", decks=46, copies="2-3") %}
 {% trans trimmed %}
 With its magaji title and unique ability to fetch cards from the ash heap,
 he has been included not only in Ishtarri decks, but also as a secondary vampire
@@ -26,7 +30,7 @@ in {{ pre }}{{ obf }} vote constructs.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Ubende", decks=30, copies="1-3") %}
+{% call layout.card_column("Ubende", decks=38, copies="1-3") %}
 {% trans trimmed
 forced_march=card("Forced March"),
 undele=card("Undele"),
@@ -38,28 +42,36 @@ Alongside {{ undele }} and {{ ayo_igoli }}, she makes for a nice crypt.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Uncontrolled Impulse", decks=21, copies="2-5") %}
+{% call layout.card_column("Uncontrolled Impulse", decks=28, copies="2-6") %}
 {% trans trimmed %}
 An excellent stealth enhancer, although only usable on the first action,
 it is very valuable since the clan as few other stealth alternatives.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Ishtarri Kholo", decks=21, copies="1-2") %}
+{% call layout.card_column("Ishtarri Kholo", decks=27, copies="1-2") %}
 {% trans trimmed ayo_igoli=card("Ayo Igoli") %}
 A good title unlikely to be contested, it is a worthy inclusion in a political deck,
 and an excellent addition for {{ ayo_igoli }}.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Shasa Abu Badr", decks=21, copies="1-2") %}
+{% call layout.card_column("Shasa Abu Badr", decks=26, copies="1-2") %}
 {% trans trimmed %}
 An excellent ability alongside {{ PRE }} for a cheap 5 pool.
 She finds her place even in mono {{ pre }} decks.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Glutton", decks=16, copies="1") %}
+{% call layout.card_column("Ayo Igoli", decks=25, copies="2-4") %}
+{% trans trimmed ishtarri_kholo=card("Ishtarri Kholo") %}
+Yet another Ishtarri with {{ obf }}, she is an excellent complement to a political crypt.
+Her capacity and ability makes her an ideal candidate for the Kholo title using
+{{ ishtarri_kholo }}.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Glutton", decks=20, copies="1-2") %}
 {% trans trimmed %}
 Another source of additional actions for Ishtarri, always welcome.
 It is a little bit fragile so it is more playable
@@ -68,17 +80,9 @@ But even making an opponent waste an action to take it out may be good enough.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Ayo Igoli", decks=16, copies="2-4") %}
-{% trans trimmed ishtarri_kholo=card("Ishtarri Kholo") %}
-Yet another Ishtarri with {{ obf }}, she is an excellent complement to a political crypt.
-Her capacity and ability makes her an ideal candidate for the Kholo title using
-{{ ishtarri_kholo }}.
-{% endtrans %}
-{% endcall %}
-
-{% call layout.card_column("Kenyatta", decks=11, copies="1-2") %}
+{% call layout.card_column("Falhu Shibaba", decks=13, copies="2-3") %}
 {% trans trimmed %}
-All clan disciplines at inferior for 4 pool, a decent side-kick.
+A Magaji with all clan disciplines at superior and a very niche drawback, rarely an issue.
 {% endtrans %}
 {% endcall %}
 

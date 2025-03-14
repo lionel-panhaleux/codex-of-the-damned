@@ -12,32 +12,42 @@
 
 {% block archetype %}
 {% trans trimmed
-unmada=card("Unmada"),
-lutz_von_hohenzollern=card("Lutz von Hohenzollern"),
-undele=card("Undele"),
-zillah_s_valley=card("Zillah's Valley"),
-parity_shift=card("Parity Shift"),
-villein=card("Villein"),
-mental_maze=card("Mental Maze"),
-telepathic_misdirection=card("Telepathic Misdirection"),
-voter_captivation=card("Voter Captivation"),
+alastor=card("Alastor"),
+ashur_tablets=card("Ashur Tablets"),
 banishment=card("Banishment"),
-rafael_de_corazon=card("Rafael de Corazon"),
+camarillas_iron_fist=card("Camarilla's Iron Fist"),
+cybele=card("Cybele"),
+derange=card("Derange"),
 dmitra_ilyanova=card("Dmitra Ilyanova"),
 forced_march=card("Forced March"),
-maris_streck=card("Maris Streck"),
-madness_network=card("Madness Network"),
-alastor=card("Alastor"),
-helicopter=card("Helicopter"),
-derange=card("Derange"),
-malkavian_dementia=card("Malkavian Dementia"),
-heidelberg_castle_germany=card("Heidelberg Castle, Germany"),
 golconda_inner_peace=card("Golconda: Inner Peace"),
-cybele=card("Cybele"),
+heidelberg_castle_germany=card("Heidelberg Castle, Germany"),
+helicopter=card("Helicopter"),
+lutz_von_hohenzollern=card("Lutz von Hohenzollern"),
+madness_network=card("Madness Network"),
+malkavian_dementia=card("Malkavian Dementia"),
+maris_streck=card("Maris Streck"),
+mental_maze=card("Mental Maze"),
+minion_tap=card("Minion Tap"),
+parity_shift=card("Parity Shift"),
+petra_resonance=card("Petra Resonance"),
+protected_resources=card("Protected Resources"),
+rafael_de_corazon=card("Rafael de Corazon"),
+telepathic_misdirection=card("Telepathic Misdirection"),
 the_parthenon=card("The Parthenon"),
+undele=card("Undele"),
+unmada=card("Unmada"),
+villein=card("Villein"),
+voter_captivation=card("Voter Captivation"),
+zillah_s_valley=card("Zillah's Valley"),
 danilo_torrisi_s_deck=link("/deck-search", _("Danilo Torrisi's deck"), id="2016eclvgi"),
 fabien_garcia_s_deck=link("/deck-search", _("Fabien Garcia's deck"), id="2014ecfcqmg"),
-otso_saariluoma_s_deck=link("/deck-search", _("Otso Saariluoma's deck"), id="2010finnishecq")
+jens_johansson_s_deck=link("/deck-search", _("Jens Johansson's deck"), id="11045"),
+johnson_gonçalves_deck=link("/deck-search", _("Johnson Gonçalves' deck"), id="11153"),
+michael_holmstrom_s_deck=link("/deck-search", _("Michael Holmström's deck"), id="11858"),
+
+otso_saariluoma_s_deck=link("/deck-search", _("Otso Saariluoma's deck"), id="2010finnishecq"),
+teemu_sainomaa_s_deck=link("/deck-search", _("Teemu Sainomaa's deck"), id="11480")
 %}
 <h2>Highlights</h2>
 <p>
@@ -45,26 +55,23 @@ otso_saariluoma_s_deck=link("/deck-search", _("Otso Saariluoma's deck"), id="201
     {{ lutz_von_hohenzollern }} and {{ undele }}.
     It uses {{ zillah_s_valley }} and {{ information_highway }}
     to get these big capacity vampires in play quickly, then
-    {{ villein }} to get some pool back.
+    {{ minion_tap }} to get some pool back.
 </p>
 <p>
     The sheer number of votes the vampire have makes sure they get the vote lock around the table.
     Stealth is high, with the versatile {{ perfect_paragon }} providing either stealth or votes,
     depending on what's needed on the table.
 </p>
-<p>
-    The deck is slow but sturdy and applies constant high pressure to its prey.
-</p>
 <h2>Tips & Tricks</h2>
 <p>
     {{ voter_captivation }} and {{ dmitra_ilyanova }}'s ability can be used
-    to get pool back on the vampires after {{ villein }}.
+    to get pool back on the vampires after {{ minion_tap }}.
 </p>
 <p>
     {{ banishment }} is used to get rid of cumbersome vampires.
     It can either weaken the prey, slow down the predator, or even be used cross table to maintain
     the table balance if necessary. Moreover, it can dramatically increase the power of key
-    votes like {{ ancient_influence }}.
+    votes like {{ ancient_influence }}.
 </p>
 <p>
     As the game progresses, {{ undele }}'s ability
@@ -75,6 +82,20 @@ otso_saariluoma_s_deck=link("/deck-search", _("Otso Saariluoma's deck"), id="201
     out of hand easily if it's not needed.
 </p>
 <h2>Variants</h2>
+<p>
+    With a few crypt changes, the deck can easily pack some Auspex {{ AUS }} bounces,
+    like in {{ johnson_gonçalves_deck }}. On the other hand, it can also forgo the bleed altogether
+    and use {{ protected_resources }}, and even add {{ ashur_tablets }} in a heavier master module,
+    like in {{ teemu_sainomaa_s_deck }}. An updated version would include {{ camarillas_iron_fist }},
+    as in {{ michael_holmstrom_s_deck }}.
+</p>
+<p>
+    The <strong>Petra</strong> variant relies more on {{ ubende }} and uses {{ petra_resonance }}
+    for additional pool damage and blood gain. It's an interesting take on the archetype,
+    using {{ petra_resonance }} as a somewhat better {{ parity_shift }}: it works even when high on pool and,
+    since it is not a vote, {{ unmada }} can perform it, unlock with {{ forced_march }}, then call a political action.
+    See {{ jens_johansson_s_deck }} for reference.
+</p>
 <p>
     The <strong>Maris Lutz</strong> variant uses a group 3-4 crypt with
     {{ maris_streck }}, like {{ danilo_torrisi_s_deck }} from the 2016 EC.

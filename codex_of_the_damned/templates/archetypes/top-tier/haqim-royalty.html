@@ -12,41 +12,63 @@
 
 {% block archetype %}
 {% trans trimmed
+alamut=card("Alamut"),
 anathema=card("Anathema"),
-blood_rage=card("Blood Rage"),
+ashur_tablets=card("Ashur Tablets"),
 biothaumaturgic_experiment=card("Biothaumaturgic Experiment"),
+blood_rage=card("Blood Rage"),
+bowl_of_convergence=card("Bowl of Convergence"),
 claws_of_the_dead=card("Claws of the Dead"),
 consanguineous_boon=card("Consanguineous Boon"),
 fast_hands=card("Fast Hands"),
+flash=card("Flash"),
 haqims_law_retribution=card("Haqim's Law: Retribution"),
 hunger_of_marduk=card("Hunger of Marduk"),
 hunters_mark=card("Hunter's Mark"),
 immortal_grapple=card("Immortal Grapple"),
+infernal_pursuit=card("Infernal Pursuit"),
+judgment_camarilla_segregation=card("Judgment: Camarilla Segregation"),
 kasim_bayar=card("Kasim Bayar"),
+khabar_glory=card("Khabar Glory"),
+lightning_reflexes=card("Lightning Reflexes"),
 magic_of_the_smith=card("Magic of the Smith"),
+market_square=card("Market Square"),
+mr_winthrop=card("Mr. Winthrop"),
+narrow_minds=card("Narrow Minds"),
+nsa_trio=card("NSA Trio"),
 parity_shift=card("Parity Shift"),
 priority_contract=card("Priority Contract"),
 psyche=card("Psyche"),
 pursuit=card("Pursuit"),
 rego_motum=card("Rego Motum"),
 resist_earths_grasp=card("Resist Earth's Grasp"),
+scourge_of_the_enochians=card("Scourge of the Enochians"),
 second_tradition_domain=card("Second Tradition: Domain"),
 soul_burn=card("Soul Burn"),
+sport_bike=card("Sport Bike"),
 swallowed_by_the_night=card("Swallowed by the Night"),
+the_black_throne=card("The Black Throne"),
 the_embrace=card("The Embrace"),
+the_khabar_community=card("The Khabar: Community"),
 third_tradition_progeny=card("Third Tradition: Progeny"),
 villein=card("Villein"),
+walk_of_flame=card("Walk of Flame"),
 web_of_knives_recruit=card("Web of Knives Recruit"),
 bounce=link("/strategy/fundamentals", _("bounce"), _anchor="bounce"),
+sce=link("/strategy/combat", _("S:CE"), _anchor="defence"),
 banu_politics=link("/archetypes/banu-politics"),
-by_karl_schaefer=link("/deck-search", _("by Karl Schaefer"), id="10109")
+kalinda=link("/archetypes/kalinda"),
+luis_otavio_franco_martins_deck=link("/deck-search", _("Luís Otávio Franco Martins' deck"), id="11167"),
+darby_keeney_s_deck=link("/deck-search", _("Darby Keeney's deck"), id="11470"),
+pauli_tuomiluoma_s_version=link("/deck-search", _("Pauli Tuomiluoma's version"), id="10919"),
+juan_luis_mejías_luna_s=link("/deck-search", _("Juan Luis Mejías Luna's"), id="10636")
 %}
 <h2>Highlights</h2>
 <p>
     This is a <em>toolbox</em> deck using Banu Haqim {{ banu_haqim }} Princes and Justicar.
 </p>
 <p>
-    The deck revolves around {{ haqims_law_retribution }} to provide strong bleeds from a very heavy combat module.
+    The key card is {{ haqims_law_retribution }}, providing strong bleeds from a very heavy combat module.
     As most royalty builds, defense takes the form of {{ second_tradition_domain }} for blocks.
 </p>
 <p>
@@ -72,25 +94,38 @@ by_karl_schaefer=link("/deck-search", _("by Karl Schaefer"), id="10109")
     {{ hunters_mark }} provide rushes that can be used anywhere for table control, but mostly as
     a countermeasure to slow down a strong predator, since {{ priority_contract }} cannot be used backwards.
 </p>
+<p>
+    The {{ ashur_tablets }} & {{ infernal_pursuit }} combination is not a constant, and {{ haqims_law_retribution }}
+    is often included in higher numbers.
+</p>
 <h2>Variants</h2>
 <p>
     The combat module varies depending on the expected meta.
-    {{ psyche }}, {{ hunger_of_marduk }} and {{ pursuit }} can be run in much more copies.
+    {{ hunger_of_marduk }} can be run in much more copies, {{ flash }}, {{ blood_rage }}, {{ soul_burn }},
+    {{ walk_of_flame }}, {{ lightning_reflexes }} or {{ fast_hands }} can be included.
+    Another interesting option, although a bit expensive, is to use some {{ biothaumaturgic_experiment }},
+    like in {{ luis_otavio_franco_martins_deck }}.
 </p>
 <p>
-    {{ anathema }} is a tricky vote to pass, and it might require sending some voters in torpor first.
-    The deck often includes {{ parity_shift }} as en easier vote to negociate,
-    but given the deck's dreadful reputation it might not be that much easier and the pool gain is far lower.
+    There are a few options to consider: {{ the_khabar_community }} is a common inclusion used to lunge,
+    especially in decks including more {{ swallowed_by_the_night }}. On the defense side, {{ market_square }},
+    {{ mr_winthrop }}, {{ sport_bike }} and even {{ bowl_of_convergence }} can be included.
+    On the actions side, the deck can include some {{ judgment_camarilla_segregation }} or {{ khabar_glory }},
+    and in terms of events, {{ narrow_minds }} and {{ scourge_of_the_enochians }} are also common.
 </p>
 <p>
-    Another variant of this deck has been inaugured {{ by_karl_schaefer }} and focuses on a
-    lower capacity crypt. The idea is to build more of a swarm using {{ the_embrace }} ({{ web_of_knives_recruit }} or
-    {{ third_tradition_progeny }} could also be considered), and rely on a bloat with {{ consanguineous_boon }} instead
-    of trying to block with {{ second_tradition_domain }} or rush backwards.
+    The deck can be a bit more political and include {{ alamut }} or even {{ the_black_throne }} for more votes,
+    see for example {{ darby_keeney_s_deck }}.
+    {{ nsa_trio }} is a nice addition against {{ sce }}.
 </p>
 <p>
-    Finally, it's worth mentioning there's a more political approach to this build, leading to quite a different
-    archetype, {{ banu_politics }}.
+    On the other end, {{ kasim_bayar }} can be excluded for a swarmier using {{ the_embrace }},
+    {{ web_of_knives_recruit }}, or {{ third_tradition_progeny }},
+    like in {{ pauli_tuomiluoma_s_version }} or {{ juan_luis_mejías_luna_s }}.
+</p>
+<p>
+    Finally, it's worth mentioning there are other approaches to the clan, leading to different
+    archetypes, like {{ banu_politics }} or {{ kalinda }}.
 </p>
 {% endtrans %}
 {% endblock %}

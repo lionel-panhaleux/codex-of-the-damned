@@ -11,7 +11,7 @@
     </p>
 </div>
 
-{% call layout.card_column("Freak Drive", decks=401, copies="1-13") %}
+{% call layout.card_column("Freak Drive", decks=148, copies="3-9") %}
 {% trans trimmed
 a_b=link("/strategy/fundamentals", _("A&B"), _anchor="AB"),
 forced_march=card("Forced March")
@@ -22,7 +22,7 @@ the cheaper {{ forced_march }}.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Rolling with the Punches", decks=207, copies="2-5") %}
+{% call layout.card_column("Rolling with the Punches", decks=58, copies="2-6") %}
 {% trans trimmed %}
 The best damage prevention of the game: its inferior version is easy to use and the
 superior version is efficient against high damage, additional strikes and aggravated
@@ -30,14 +30,14 @@ damage all the same.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Daring the Dawn", decks=191, copies="1-4") %}
+{% call layout.card_column("Daring the Dawn", decks=53, copies="1-3") %}
 {% trans trimmed %}
 An efficient block denial. It is a good tool to deliver a finishing blow
 when no good stealth discipline is available, even with such a drawback.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Hidden Strength", decks=145, copies="2-6") %}
+{% call layout.card_column("Hidden Strength", decks=53, copies="3-6") %}
 {% trans trimmed
 taste_of_vitae=card("Taste of Vitae"),
 disarm=card("Disarm")
@@ -48,7 +48,14 @@ a hand, plus it prevents aggravated and defuses {{ taste_of_vitae }} as well as
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Indomitability", decks=109, copies="2-6") %}
+{% call layout.card_column("Unflinching Persistence", decks=26, copies="2-6") %}
+{% trans trimmed %}
+A good damage prevention at no cost, it is mostly included for its optional maneuver,
+a great way to provide some range control without risking jamming the hand too much.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Indomitability", decks=25, copies="2-5") %}
 {% trans trimmed hidden_strength=card("Hidden Strength") %}
 A good damage prevention at no cost, easy to use with a useful optional press.
 Contrary to {{ hidden_strength }}, its press can be used even if the opponent inflicts
@@ -63,18 +70,17 @@ is more common than {{ FOR }}.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Soak", decks=92, copies="1-5") %}
+{% call layout.card_column("Superior Mettle", decks=19, copies="1-4") %}
 {% trans trimmed
-weighted_walking_stick=card("Weighted Walking Stick"),
-carrion_crows=card("Carrion Crows")
+rolling_with_the_punches=card("Rolling with the Punches")
 %}
-High damage prevention at no cost, it is efficient against light combat modules using
-{{ weighted_walking_stick }} or {{ carrion_crows }}. However, it is useless against
-additional strikes and aggravated damage.
+A bit less impactful than {{ rolling_with_the_punches }}, it is appreciated by vampires
+who have only access to inferior Fortitude {{ for }}, or those expecting multi-rounds
+combats.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("The Kiss of Ra", decks=92, copies="1-2") %}
+{% call layout.card_column("The Kiss of Ra", decks=16, copies="1-2") %}
 {% trans trimmed %}
 A costly modifier, but potentially destructive. Often seen in bleed or vote decks with
 low stealth.

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2025-03-04 14:29+0100\n"
+"POT-Creation-Date: 2025-03-07 09:28+0100\n"
 "PO-Revision-Date: 2025-03-04 14:29+0100\n"
 "Last-Translator: \n"
 "Language: fr\n"
@@ -255,7 +255,7 @@ msgstr "Puissance"
 msgid "Presence"
 msgstr "Présence"
 
-#: codex_of_the_damned/navigation.py:250 codex_of_the_damned/templates/best-cards/index.html:37
+#: codex_of_the_damned/navigation.py:250 codex_of_the_damned/templates/best-cards/index.html:39
 msgid "Sects"
 msgstr "Sectes"
 
@@ -285,7 +285,7 @@ msgstr ""
 msgid "Sabbat"
 msgstr ""
 
-#: codex_of_the_damned/navigation.py:259 codex_of_the_damned/templates/best-cards/index.html:46
+#: codex_of_the_damned/navigation.py:259 codex_of_the_damned/templates/best-cards/index.html:48
 msgid "Clans"
 msgstr "Clans"
 
@@ -953,13 +953,15 @@ msgstr ""
 #: codex_of_the_damned/templates/best-cards/clans/daughters-of-cacophony.html:76
 #: codex_of_the_damned/templates/best-cards/clans/imbued.html:105
 #: codex_of_the_damned/templates/best-cards/clans/lasombra.html:78
-#: codex_of_the_damned/templates/best-cards/clans/tremere.html:99
 #: codex_of_the_damned/templates/best-cards/clans/true-brujah.html:82
+#: codex_of_the_damned/templates/best-cards/generic/blood-sorcery.html:51
 #: codex_of_the_damned/templates/best-cards/generic/celerity.html:27
 #: codex_of_the_damned/templates/best-cards/generic/fortitude.html:16
-#: codex_of_the_damned/templates/best-cards/generic/master-cards.html:38
-#: codex_of_the_damned/templates/best-cards/generic/no-discipline.html:114
-#: codex_of_the_damned/templates/best-cards/generic/presence.html:18 codex_of_the_damned/templates/strategy/combat.html:27
+#: codex_of_the_damned/templates/best-cards/generic/master-cards.html:30
+#: codex_of_the_damned/templates/best-cards/generic/master-cards.html:266
+#: codex_of_the_damned/templates/best-cards/generic/no-discipline.html:136
+#: codex_of_the_damned/templates/best-cards/generic/presence.html:26
+#: codex_of_the_damned/templates/best-cards/sects/anarch.html:227 codex_of_the_damned/templates/strategy/combat.html:27
 #: codex_of_the_damned/templates/strategy/fundamentals.html:240
 msgid "A&B"
 msgstr "A&B"
@@ -1136,7 +1138,7 @@ msgstr ""
 "combat. Le %(bob_josephs_deck)s a gagné le NAC 2018 NAC avec. </p>"
 
 #: codex_of_the_damned/templates/archetypes/archive/anti-ventrue-grinder.html:41
-#: codex_of_the_damned/templates/best-cards/generic/no-discipline.html:164
+#: codex_of_the_damned/templates/best-cards/generic/no-discipline.html:102
 #: codex_of_the_damned/templates/strategy/articles/basic/blood-pool-and-grinding-beads.html:95
 msgid "grinding"
 msgstr "usure"
@@ -1364,7 +1366,7 @@ msgstr ""
 #: codex_of_the_damned/templates/archetypes/archive/ishtarri-politics.html:36
 #: codex_of_the_damned/templates/archetypes/archive/kiasyd-stealth-bleed.html:32
 #: codex_of_the_damned/templates/archetypes/top-tier/platinum-revelation.html:52
-#: codex_of_the_damned/templates/best-cards/generic/master-cards.html:36
+#: codex_of_the_damned/templates/best-cards/generic/master-cards.html:28
 #: codex_of_the_damned/templates/strategy/articles/basic/blood-pool-and-grinding-beads.html:117
 #: codex_of_the_damned/templates/strategy/deck-guides/libertine-ball.html:33
 msgid "leeching"
@@ -5625,19 +5627,19 @@ msgid "typically %(range)s copies"
 msgstr "environ %(range)s exemplaires"
 
 #: codex_of_the_damned/templates/best-cards/index.html:6
-#, python-format
+#, fuzzy, python-format
 msgid ""
 "<p> This category presents the best cards of the game. The list is based on a statistical analysis of the %(twda)s "
-"provided by VEKN, considering the 2000+ decks from 2008 onward. The best cards are those that have been included in "
+"provided by VEKN, considering the 2000+ decks from 2020 onward. The best cards are those that have been included in "
 "the most winning decks since then. </p> <p> All clan %(hunting_grounds)s and, on occasions, some low capacity "
-"vampires, have been omitted for convenience. </p>"
+"vampires, have been omitted to focus on the most relevant. </p>"
 msgstr ""
 "<p> Cette catégorie présente les meilleures cartes du jeu. La liste est basée sur une analyse statistique de la "
 "%(twda)s fournie par VEKN, en prenant en compte quelques 2000 decks depuis 2008. Les meilleures cartes sont celles "
 "ayant été inclues dans le plus grand nombre de decks gagnants depuis. </p> <p> Tous les %(hunting_grounds)s et, "
 "parfois, quelques vampires de basse capacité, ont été omis par commodité. </p>"
 
-#: codex_of_the_damned/templates/best-cards/index.html:47
+#: codex_of_the_damned/templates/best-cards/index.html:49
 #, python-format
 msgid ""
 "<p> Abominations %(abomination)s, Blood Brothers %(blood_brother)s, Panders %(pander)s, Osebo %(osebo)s, Nagaraja "
@@ -5736,7 +5738,7 @@ msgstr ""
 
 #: codex_of_the_damned/templates/best-cards/clans/ahrimanes.html:94
 #: codex_of_the_damned/templates/best-cards/generic/auspex.html:55
-#: codex_of_the_damned/templates/best-cards/generic/master-cards.html:60
+#: codex_of_the_damned/templates/best-cards/generic/master-cards.html:58
 msgid "wall decks"
 msgstr "decks mur"
 
@@ -6421,58 +6423,12 @@ msgstr ""
 
 #: codex_of_the_damned/templates/best-cards/clans/gangrel.html:22
 #, python-format
-msgid ""
-"It is considered the best <em>« combat ends »</em> card of the game. It comes at no cost at inferior %(pro)s, plus "
-"gives an unlock option at superior %(PRO)s, still at no cost."
-msgstr ""
-"Elle est considérée comme la meilleure carte de <em>« fin de combat »</em> du jeu. Gratuite en %(pro)s inférieur, "
-"elle offre une option de redressement en %(PRO)s supérieur, toujours sans coût."
-
-#: codex_of_the_damned/templates/best-cards/clans/gangrel.html:30
-#, python-format
-msgid "An excellent combination of <em>« combat ends »</em> and stealth, one of the most versatile tool of %(pro)s."
-msgstr ""
-"Une excellente combinaison de <em>« fin de combat »</em> et de discrétion, l'un des outils les plus polyvalents en "
-"%(pro)s."
-
-#: codex_of_the_damned/templates/best-cards/clans/gangrel.html:37
-#, python-format
-msgid ""
-"2 stealth at superior %(PRO)s is a strong stealth modifier, totally worth 1 blood. Combined with %(form_of_mist)s, "
-"this makes Gangrel and their antitribu almost as stealthy as any vampire with %(obf)s."
-msgstr ""
-"2 discrétion en %(PRO)s supérieure, c'est un modificateur de discrétion puissant, qui vaut bien 1 sang. Combiné avec "
-"%(form_of_mist)s, cela rend les Gangrel et leurs antitribus presque aussi furtifs qu'un vampire avec %(obf)s."
-
-#: codex_of_the_damned/templates/best-cards/clans/gangrel.html:47
-#, python-format
-msgid ""
-"The most dreaded combat card of the %(pro)s discipline, it is used <strong>after</strong> strikes have been chosen by"
-" both vampires and never wasted against a <em>dodge</em> or <em>combat ends</em>. The maneuver at superior %(PRO)s "
-"can come in handy. Finally, it works with a hand strike so %(immortal_grapple)s is useless against it."
-msgstr ""
-"La carte de combat la plus redoutée de la discipline %(pro)s, elle est utilisée <strong> après </strong> le choix des"
-" frappes par les deux vampires et donc jamais perdue contre une <em>esquive</em> ou une <em>fin du combat</em>. La "
-"manœuvre en %(PRO)s supérieure peut être utile. Enfin, il c'est une frappe à mains nues donc %(immortal_grapple)s est"
-" inutile contre elle."
-
-#: codex_of_the_damned/templates/best-cards/clans/gangrel.html:59
-#, python-format
 msgid "An excellent disciplines combination for just 4 pool, he gets even included in mono %(ani)s decks."
 msgstr ""
 "Excellente combinaison de disciplines pour seulement 4 points d'influence, il est même inclus dans les decks mono "
 "%(ani)s."
 
-#: codex_of_the_damned/templates/best-cards/clans/gangrel.html:66
-#, python-format
-msgid ""
-"A powerful tool, especially when combined with the cards that allow to act during other players turn: "
-"%(madness_network)s and %(enkil_cog)s."
-msgstr ""
-"Un outil puissant, surtout lorsqu'il est combiné avec des cartes qui permettent d'agir pendant le tour des autres "
-"joueurs : %(madness_network)s et %(enkil_cog)s."
-
-#: codex_of_the_damned/templates/best-cards/clans/gangrel.html:76
+#: codex_of_the_damned/templates/best-cards/clans/gangrel.html:29
 #, python-format
 msgid ""
 "Star of the Gangrel antitribu, her ability is unique. She gave birth, alongside %(cybele)s, to the "
@@ -6481,29 +6437,20 @@ msgstr ""
 "Star des Gangrel antitribu, sa capacité est unique. Elle a donné naissance, aux côtés de %(cybele)s, à l'archétype "
 "%(girls_will_find_inner_circles)s."
 
-#: codex_of_the_damned/templates/best-cards/clans/gangrel.html:87
-#, python-format
-msgid ""
-"Another stealth and <em>« combat ends »</em> combination. The cost of 1 blood is a bit pricey, but it completes the "
-"stealth arsenal of %(pro)s along %(form_of_mist)s and %(earth_control)s."
-msgstr ""
-"Une autre combinaison de discrétion et de <em>« fin de combat »</em>. Le coût d'un sang est un peu cher, mais il "
-"complète l'arsenal de discrétion de %(pro)s avec %(form_of_mist)s et %(earth_control)s."
-
-#: codex_of_the_damned/templates/best-cards/clans/gangrel.html:98
+#: codex_of_the_damned/templates/best-cards/clans/gangrel.html:40
 msgid "A good bloat device, generating 1 pool per turn, it can also help get vampires into play a bit faster early game."
 msgstr ""
 "Un bon outil pour régénérer, qui donne 1 d'influence par tour, il peut également aider les vampires à soritr un peu "
 "plus rapidement en début de partie."
 
-#: codex_of_the_damned/templates/best-cards/clans/gangrel.html:105
+#: codex_of_the_damned/templates/best-cards/clans/gangrel.html:47
 #, python-format
 msgid "A nice discipline combination for just 5 pool, she gets a place even in mono %(ani)s decks."
 msgstr ""
 "Une belle combinaison de discipline pour seulement 5 d'influence, elle obtient une place même dans les decks mono "
 "%(ani)s."
 
-#: codex_of_the_damned/templates/best-cards/clans/gangrel.html:112
+#: codex_of_the_damned/templates/best-cards/clans/gangrel.html:54
 #, python-format
 msgid ""
 "Even if it is a little bit costly, the permanent stealth effect is a good one, moreover if the deck relies on %(pro)s"
@@ -6512,16 +6459,7 @@ msgstr ""
 "Même s'il est un peu coûteux, l'effet de discrétion permanent est bon, d'autant plus si le deck repose sur %(pro)s "
 "pour la discrétion."
 
-#: codex_of_the_damned/templates/best-cards/clans/gangrel.html:119
-#, python-format
-msgid ""
-"A powerful and versatile stealth / unlock combination, mostly available to Gangrel antitribu, but also to some rare "
-"vampires with access to the %(PRO)s%(CEL)s combination."
-msgstr ""
-"Une combinaison discrétion / redressement polyvalente, principalement disponible pour les Gangrel antitribu, mais "
-"aussi les rares vampires ayant accès à la combinaison %(PRO)s%(CEL)s."
-
-#: codex_of_the_damned/templates/best-cards/clans/gangrel.html:127
+#: codex_of_the_damned/templates/best-cards/clans/gangrel.html:61
 #, python-format
 msgid ""
 "A star among Gangrel, the fact that she has %(dom)s and is a Prince is a nice combination. Moreover, her bonus in "
@@ -6530,7 +6468,7 @@ msgstr ""
 "Une star parmi les Gangrel, le fait qu'elle ait %(dom)s et soit un prince est une belle combinaison. De plus, son "
 "bonus d'influence peut être un bel atout en début de partie."
 
-#: codex_of_the_damned/templates/best-cards/clans/gangrel.html:134
+#: codex_of_the_damned/templates/best-cards/clans/gangrel.html:68
 #, python-format
 msgid ""
 "Star <em>Inner Circle</em> of the Gangrel Clan, Stanislava not only has %(DOM)s but also %(CEL)s, giving her access "
@@ -6542,24 +6480,13 @@ msgstr ""
 " les alliés est également un avantage appréciable car de nombreux decks les utilisent en défense avec "
 "%(the_unmasking)s."
 
-#: codex_of_the_damned/templates/best-cards/clans/gangrel.html:149
+#: codex_of_the_damned/templates/best-cards/clans/gangrel.html:83
 msgid ""
 "The most dreaded Gangrel antitribu, he has such powerful disciplines and abilities for combat he is often used as the"
 " star of a rush deck."
 msgstr ""
 "Gangrel antitribu le plus redouté, il a des disciplines et des aptitudes de combat si puissantes qu'il est souvent "
 "utilisé comme star d'un deck rush."
-
-#: codex_of_the_damned/templates/best-cards/clans/gangrel.html:156
-#, python-format
-msgid ""
-"A good damage prevention card, it can handle heavy damage-dealing modules, even those using additonal strikes, with a"
-" single card. It is often played alongside %(earth_meld)s as a solution against %(pot)s combat modules using "
-"%(immortal_grapple)s."
-msgstr ""
-"Une bonne carte de prévention de dégâts, elle peut gérer des modules infligeant de lourds dégâts à elle seule, même "
-"ceux qui utilisent des frappes supplémentaires. Elle est souvent jouée aux côtés d'%(earth_meld)s comme solution "
-"contre les modules de combat %(pot)s qui utilisent %(immortal_grapple)s."
 
 #: codex_of_the_damned/templates/best-cards/clans/giovanni.html:8
 #, python-format
@@ -8065,37 +7992,10 @@ msgstr ""
 
 #: codex_of_the_damned/templates/best-cards/clans/tremere.html:53
 #, python-format
-msgid ""
-"A good stealth enhancer, the only one available with the clan disciplines. Its combat avoidance effect at superior "
-"%(THA)s can come in handy."
-msgstr ""
-"Un bon améliorateur de discrétion, le seul disponible avec les disciplines du clan. Son effet qui permet d'éviter le "
-"combat en %(THA)s supérieure peut être utile."
-
-#: codex_of_the_damned/templates/best-cards/clans/tremere.html:60
-#, python-format
-msgid ""
-"A rare effect in the game, the ability to fetch any equipment in the library is very strong. The +3 stealth bonus at "
-"superior %(THA)s makes it very hard to block. Some decks use %(THA)s for this card only."
-msgstr ""
-"Un effet rare dans le jeu, la possibilité de récupérer n'importe quel équipement de la bibliothèque est très forte. "
-"Le bonus de discrétion de +3 en %(THA)s supérieure rend le blocage très difficile. Certains decks utilisent %(THA)s "
-"pour cette carte uniquement."
-
-#: codex_of_the_damned/templates/best-cards/clans/tremere.html:68
-#, python-format
 msgid "The cheapest %(DOM)s pool can buy, he is played in many decks."
 msgstr "Le vampire avec %(DOM)s le moins cher du jeu, il est joué dans de nombreux jeux."
 
-#: codex_of_the_damned/templates/best-cards/clans/tremere.html:74
-msgid ""
-"An excellent combat card: as it <em>steals</em> blood there is no damage to prevent, and at the end of the round it "
-"is a 4 blood difference between the two vampires, at no cost."
-msgstr ""
-"Une excellente carte de combat : comme elle <em>vole</em> du sang, il n'y a pas de dégâts à prévenir, et à la fin du "
-"round c'est une différence de 4 sang entre les deux vampires, gratuitement."
-
-#: codex_of_the_damned/templates/best-cards/clans/tremere.html:82
+#: codex_of_the_damned/templates/best-cards/clans/tremere.html:59
 #, python-format
 msgid ""
 "An excellent ally: not so expensive, not unique so many of them can be into play, they strike 1R with a press and "
@@ -8106,7 +8006,7 @@ msgstr ""
 "poursuite et évitent un dégât par coup, donc ils ne perdent aucune vie contre un vampire qui ne joue pas de carte de "
 "combat. Ils ont donné naissance à l'archétype %(nephandii)s."
 
-#: codex_of_the_damned/templates/best-cards/clans/tremere.html:92
+#: codex_of_the_damned/templates/best-cards/clans/tremere.html:69
 msgid ""
 "A good ally at a cheap price: he is quite the defender and very resilient as aggravated damage is required to kill "
 "him."
@@ -8114,16 +8014,7 @@ msgstr ""
 "Un bon allié à petit prix : c'est un bon défenseur, il est très résistant car il faut des dégâts aggravés pour le "
 "tuer."
 
-#: codex_of_the_damned/templates/best-cards/clans/tremere.html:99
-#, python-format
-msgid ""
-"An expensive but powerful device to augment %(a_b)s. Its cost did not prevent it to be played in many %(tha)s decks, "
-"if only as an option."
-msgstr ""
-"Un outil coûteux mais puissant pour augmenter l'%(a_b)s. Son coût ne l'a pas empêché d'être joué dans de nombreux "
-"decks %(tha)s, ne serait-ce qu'en option."
-
-#: codex_of_the_damned/templates/best-cards/clans/tremere.html:106
+#: codex_of_the_damned/templates/best-cards/clans/tremere.html:76
 #, python-format
 msgid ""
 "Second pillar of the %(nephandii)s archetype, his capacity is exceptionnal. Being able to put some allies into play "
@@ -8132,7 +8023,7 @@ msgstr ""
 "Deuxième pilier de l'archétype %(nephandii)s, son aptitude est exceptionnelle. Pouvoir mettre des alliés en jeu sans "
 "même entreprendre une action qui pourrait être bloquée est un avantage incontestable."
 
-#: codex_of_the_damned/templates/best-cards/clans/tremere.html:114
+#: codex_of_the_damned/templates/best-cards/clans/tremere.html:84
 msgid ""
 "A good bloat device at a decent price. Few clans have access to this kind of location, but it generates a pool per "
 "turn so it is quickly profitable."
@@ -8140,7 +8031,7 @@ msgstr ""
 "Un bon outil de régénération à un prix décent. Peu de clans ont accès à ce genre de lieu, il génère un point "
 "d'influence par tour donc c'est rapidement rentable."
 
-#: codex_of_the_damned/templates/best-cards/clans/tremere.html:121
+#: codex_of_the_damned/templates/best-cards/clans/tremere.html:91
 #, python-format
 msgid ""
 "An <em>Inner Circle</em> with the classical 4 votes and +2 bleed bonus, she also has a unique ability to fetch the "
@@ -8151,17 +8042,13 @@ msgstr ""
 "unique pour aller chercher la carte qu'elle veut. De plus, sa combinaison de disciplines %(AUS)s%(DOM)s%(OBF)s, aux "
 "côtés de %(THA)s%(VIC)s, est puissante dans de nombreux decks."
 
-#: codex_of_the_damned/templates/best-cards/clans/tremere.html:130
-msgid "A very versatile combat device: maneuver or press at no cost is a great tool."
-msgstr "Un outil de combat très polyvalent : manœuvrer ou poursuivre gratuitement est un excellent choix."
-
-#: codex_of_the_damned/templates/best-cards/clans/tremere.html:136
+#: codex_of_the_damned/templates/best-cards/clans/tremere.html:100
 msgid "A star among the Tremere, her +1 intercept an good disciplines for a decent cost makes her a favorite in many decks."
 msgstr ""
 "Une star parmi les Tremere, son interception à +1 et de bonnes disciplines pour un coût décent en fait une favorite "
 "dans de nombreux decks."
 
-#: codex_of_the_damned/templates/best-cards/clans/tremere.html:143
+#: codex_of_the_damned/templates/best-cards/clans/tremere.html:107
 #, python-format
 msgid ""
 "An infamous rush device, only available as an offensive tool for Tremere antitribu. They gave birth to the "
@@ -8170,13 +8057,13 @@ msgstr ""
 "Un outil de rush fameux, uniquement disponible comme pour les Tremere antitribu. Ils ont donné naissance à "
 "l'archétype %(tupdogs)s."
 
-#: codex_of_the_damned/templates/best-cards/clans/tremere.html:150
+#: codex_of_the_damned/templates/best-cards/clans/tremere.html:114
 msgid "A good disciplines combination for only 3 pool, plus he is in the group 3 so he can be included in many crypts."
 msgstr ""
 "Une bonne combinaison de disciplines pour seulement 3 d'influence, il appartient de plus au groupe 3 et peut donc "
 "être inclus dans de nombreuses cryptes."
 
-#: codex_of_the_damned/templates/best-cards/clans/tremere.html:157
+#: codex_of_the_damned/templates/best-cards/clans/tremere.html:121
 #, python-format
 msgid ""
 "Yet another %(dom)s%(aus)s for 3, included in many crypts for the same reason as %(saiz)s: she's cheap and has good "
@@ -8184,15 +8071,6 @@ msgid ""
 msgstr ""
 "Encore une autre %(dom)s%(aus)s pour 3, inclus dans de nombreuses cryptes pour la même raison que %(saiz)s : elle est"
 " bon marché et a de bonnes disciplines."
-
-#: codex_of_the_damned/templates/best-cards/clans/tremere.html:164
-#, python-format
-msgid ""
-"A very decent damage prevention card, even if not as powerful as %(for)s %(rolling_with_the_punches)s, it is the only"
-" damage prevention available to the Tremere."
-msgstr ""
-"Une carte de prévention de dégâts très décente, même si elle n'est pas aussi puissante que %(for)s "
-"%(rolling_with_the_punches)s, c'est la seule prévention de dégâts disponible pour les Tremere."
 
 #: codex_of_the_damned/templates/best-cards/clans/true-brujah.html:12
 #, python-format
@@ -8501,34 +8379,13 @@ msgstr ""
 "interception du jeu et donne accès à la carte à combo %(read_winds)s."
 
 #: codex_of_the_damned/templates/best-cards/generic/animalism.html:19
-msgid ""
-"An excellent combat card. It is not a strike so it cannot be dodged, it is harder to prevent and additional damage "
-"are still inflicted by the strike itself. Moreover, it is ranged damage."
-msgstr ""
-"Une excellente carte de combat. Cela n'est pas une frappe et ne peut donc pas être esquivé, c'est compliqué à "
-"prévenir et des dégâts additionnels sont ensuite infligés par la frappe en elle-même. De plus, cela inflige des "
-"dégâts quelle que soit la portée."
-
-#: codex_of_the_damned/templates/best-cards/generic/animalism.html:27
-msgid ""
-"A versatile defence tool providing either intercept or an unlock effect. Not as surprising as a wake, but being "
-"unlocked can be better."
-msgstr ""
-"Une carte de défense polyvalente fournissant soit de l'interception soit un effet de redressement. Pas aussi "
-"surprenant qu'un réveil, mais être redressé peut être mieux selon les situations."
-
-#: codex_of_the_damned/templates/best-cards/generic/animalism.html:34
 #, python-format
-msgid ""
-"An excellent counter against weapons, it is often included in %(ani)s combat modules. Because %(ani)s often uses "
-"%(carrion_crows)s and %(aid_from_bats)s for a ranged combat module, a ranged weapon on the opponent side is "
-"especially cumbersome."
+msgid "A base building block for most %(ani)s based intercept modules. Permanent intercept is well worth the cost."
 msgstr ""
-"Une solution contre les armes souvent utilisée dans les modules de combat basés sur %(ani)s car une arme à distance "
-"chez l'adversaire est particulièrement problématique lorsque le module de combat est basé %(carrion_crows)s et "
-"%(aid_from_bats)s."
+"Un élément fondamental pour la majorité des modules d'interception basés sur %(ani)s. L'interception permanente vaut "
+"vraiment le coup."
 
-#: codex_of_the_damned/templates/best-cards/generic/animalism.html:46
+#: codex_of_the_damned/templates/best-cards/generic/animalism.html:26
 msgid ""
 "The choice between bleed and rush gives it so much versatility, it can be played in most table situations at an "
 "advantage. The fact that the opponent has to choose his strike first is a nice bonus."
@@ -8537,14 +8394,35 @@ msgstr ""
 "la plupart des situations avec un avantage. Le fait que l'adversaire ait à choisir sa frappe en premier est un bonus "
 "intéressant."
 
-#: codex_of_the_damned/templates/best-cards/generic/animalism.html:54
+#: codex_of_the_damned/templates/best-cards/generic/animalism.html:34
 #, python-format
-msgid "A base building block for most %(ani)s based intercept modules. Permanent intercept is well worth the cost."
+msgid ""
+"%(ani)s usually makes for excellent intercept and good combat, but it may lack pool damage to fence off one’s prey, "
+"with %(deep_song)s bringing only a bit of pool damage. This is an excellent option to improve pool damage if the deck"
+" has enough intercept capabilities to protect it."
 msgstr ""
-"Un élément fondamental pour la majorité des modules d'interception basés sur %(ani)s. L'interception permanente vaut "
-"vraiment le coup."
+"%(ani)s permet d'excellentes interceptions et de bons combats mais manque de dégâts dans la réserve d'influence pour "
+"sortir sa proie, %(deep_song)s apportant un peu de dégâts. C'est une excellente option pour améliorer ces dégâts si "
+"le deck a une capacité d'interception suffisante pour la protéger."
 
-#: codex_of_the_damned/templates/best-cards/generic/animalism.html:61
+#: codex_of_the_damned/templates/best-cards/generic/animalism.html:47
+msgid ""
+"An excellent combat card. It is not a strike so it cannot be dodged, it is harder to prevent and additional damage "
+"are still inflicted by the strike itself. Moreover, it is ranged damage."
+msgstr ""
+"Une excellente carte de combat. Cela n'est pas une frappe et ne peut donc pas être esquivé, c'est compliqué à "
+"prévenir et des dégâts additionnels sont ensuite infligés par la frappe en elle-même. De plus, cela inflige des "
+"dégâts quelle que soit la portée."
+
+#: codex_of_the_damned/templates/best-cards/generic/animalism.html:55
+msgid ""
+"A versatile defence tool providing either intercept or an unlock effect. Not as surprising as a wake, but being "
+"unlocked can be better."
+msgstr ""
+"Une carte de défense polyvalente fournissant soit de l'interception soit un effet de redressement. Pas aussi "
+"surprenant qu'un réveil, mais être redressé peut être mieux selon les situations."
+
+#: codex_of_the_damned/templates/best-cards/generic/animalism.html:62
 #, python-format
 msgid ""
 "Even if it is only available to big capacity vampires, this is intercept and wake built in the same card, a no-"
@@ -8555,29 +8433,56 @@ msgstr ""
 "l'interception et un réveil, un ajout obligatoire si le deck a un module d'interception. C'est potentiellement "
 "meilleur que %(aus)s %(eyes_argus)s, vu que l'interception peut être utilisée sur une action non dirigée."
 
-#: codex_of_the_damned/templates/best-cards/generic/animalism.html:73
+#: codex_of_the_damned/templates/best-cards/generic/animalism.html:74
+#, fuzzy, python-format
+msgid ""
+"An excellent counter against weapons, it is often included in %(ani)s combat modules. Because %(ani)s often uses "
+"%(carrion_crows)s and %(aid_from_bats)s for a ranged combat module, a ranged weapon on the opponent side is "
+"especially cumbersome. The recent %(voracious_vermin)s is now a serious alternative as it is more versatile."
+msgstr ""
+"Une solution contre les armes souvent utilisée dans les modules de combat basés sur %(ani)s car une arme à distance "
+"chez l'adversaire est particulièrement problématique lorsque le module de combat est basé %(carrion_crows)s et "
+"%(aid_from_bats)s."
+
+#: codex_of_the_damned/templates/best-cards/generic/animalism.html:89
 #, python-format
 msgid ""
+"A good alternative or addition to the basic %(on_the_qui_vive)s wake, especially for those who don't have the "
+"capacity for %(sense_the_savage_way)s."
+msgstr ""
+
+#: codex_of_the_damned/templates/best-cards/generic/animalism.html:99
+#, fuzzy, python-format
+msgid ""
 "The second pillar of %(ani)s combat modules, it provides a maneuver, one damage, plus a welcome press, either as a "
-"defensive tool to avoid a second round at close range, or as an offensive tool to continue combat. Played multiple "
-"times in a row, it can take an opponent down pretty fast. Coupled with a %(carrion_crows)s, it delivers 6 damage with"
-" only two cards."
+"defensive tool to avoid a second round at close range, or as an offensive tool to continue combat. Coupled with a "
+"%(carrion_crows)s, it delivers 6 damage with only two cards."
 msgstr ""
 "Le second pilier des modules de combat %(ani)s, cela fournit une manœuvre, un dégât et une poursuite, utilisable "
 "comme un outil défensif pour éviter un second round au contact, ou comme un outil offensif permettant de continuer le"
 " combat. Le jouer plusieurs fois de suite aide à abattre un vampire assez rapidement. Utilisé avec %(carrion_crows)s "
 "permet d'infliger 6 dégâts en seulement deux cartes."
 
-#: codex_of_the_damned/templates/best-cards/generic/animalism.html:85
+#: codex_of_the_damned/templates/best-cards/generic/animalism.html:110
 #, python-format
 msgid ""
-"%(ani)s usually makes for excellent intercept and good combat, but it may lack pool damage to fence off one’s prey, "
-"with %(deep_song)s bringing only a bit of pool damage. This is an excellent option to improve pool damage if the deck"
-" has enough intercept capabilities to protect it."
+"A great range management device, ideal when you want to keep the range close. It is most often seen in %(ani)s%(pot)s"
+" modules."
 msgstr ""
-"%(ani)s permet d'excellentes interceptions et de bons combats mais manque de dégâts dans la réserve d'influence pour "
-"sortir sa proie, %(deep_song)s apportant un peu de dégâts. C'est une excellente option pour améliorer ces dégâts si "
-"le deck a une capacité d'interception suffisante pour la protéger."
+
+#: codex_of_the_damned/templates/best-cards/generic/animalism.html:119
+#, python-format
+msgid ""
+"An interesting option to help get more retainers like %(raven_spy)s out faster, but other retainers can be used too, "
+"and the potential strength bonus can be very handy."
+msgstr ""
+
+#: codex_of_the_damned/templates/best-cards/generic/animalism.html:128
+#, python-format
+msgid ""
+"The other range management device, the opposite of %(drawing_out_the_beast)s, this time more often used in pure "
+"%(ANI)s modules relying on %(aid_from_bats)s."
+msgstr ""
 
 #: codex_of_the_damned/templates/best-cards/generic/auspex.html:8
 #, python-format
@@ -8616,8 +8521,10 @@ msgstr ""
 "difficile à négocier, avec de la chance celui-ci peut faire rebondir la morsure sur sa proie."
 
 #: codex_of_the_damned/templates/best-cards/generic/auspex.html:45
-#, python-format
-msgid "Almost systematically played in %(aus)s decks, it is a solid permanent intercept at no cost."
+#, fuzzy, python-format
+msgid ""
+"Very consistently played in %(aus)s decks fielding any decent intercept module, it is a solid permanent intercept at "
+"no cost."
 msgstr "Presque systématiquement jouée dans les decks %(aus)s, c'est une carte solide pour de l'interception sans coût."
 
 #: codex_of_the_damned/templates/best-cards/generic/auspex.html:52
@@ -8634,10 +8541,10 @@ msgstr ""
 "souple contre les actions politique d'un grand-prédateur, et une façon de contrôler l'équilibre de la table et "
 "d'éviter les sorties tôt dans la partie."
 
-#: codex_of_the_damned/templates/best-cards/generic/auspex.html:69
-#, python-format
+#: codex_of_the_damned/templates/best-cards/generic/auspex.html:66
+#, fuzzy, python-format
 msgid ""
-"An efficient intercept enhancer. Other enhancers are welcome as the same reaction card can’t be played twice on a "
+"An efficient intercept enhancer. Other enhancers are welcome as the same reaction card cannot be played twice on a "
 "single action. Note that this makes an enhancer with a twist like %(my_enemy)s a valuable addition, compared to other"
 " enhancers with less useful effects like %(precognition)s or %(spirits_touch)s."
 msgstr ""
@@ -8646,7 +8553,32 @@ msgstr ""
 "%(my_enemy)s un ajout précieux, par rapport à d'autres amplificateurs avec des effets moins utiles comme "
 "%(precognition)s ou %(spirits_touch)s."
 
-#: codex_of_the_damned/templates/best-cards/generic/auspex.html:85
+#: codex_of_the_damned/templates/best-cards/generic/auspex.html:79
+#, python-format
+msgid ""
+"Yet another intercept enhancer, its optional maneuver at superior %(AUS)s can be useful in constructs using long "
+"range combat after the block. Yet not as efficient as other %(aus)s reactions, it is used when additional intercept "
+"is needed."
+msgstr ""
+"Encore un autre amplificateur d'interception, sa manœuvre facultative pour %(AUS)s supérieur peut être utile dans les"
+" constructions utilisant un combat à longue portée après le blocage. Pourtant, pas aussi efficace que les autres "
+"réactions %(aus)s, il est alors utilisé lorsqu'une interception supplémentaire est nécessaire."
+
+#: codex_of_the_damned/templates/best-cards/generic/auspex.html:88
+#, python-format
+msgid ""
+"The inferior is very useful to remove a bounce like %(deflection)s from your prey's hand. The superior can come in "
+"handy if you're in position to defend it."
+msgstr ""
+
+#: codex_of_the_damned/templates/best-cards/generic/auspex.html:97
+#, python-format
+msgid ""
+"An excellent cycling device at superior %(AUS)s: even with a lightweight combat module it can help cycle just enough "
+"cards to bump the efficiency up."
+msgstr ""
+
+#: codex_of_the_damned/templates/best-cards/generic/auspex.html:104
 #, python-format
 msgid ""
 "An additional intercept enhancer, with a decent combat bonus at superior %(AUS)s. As reaching high scores of "
@@ -8657,16 +8589,92 @@ msgstr ""
 "atteindre des scores élevés d'interception nécessite d'empiler différentes réactions, il est utilisé dans les "
 "constructions où plus de diversité est nécessaire pour atteindre le niveau d'interception souhaité."
 
-#: codex_of_the_damned/templates/best-cards/generic/auspex.html:95
+#: codex_of_the_damned/templates/best-cards/generic/auspex.html:114
 #, python-format
 msgid ""
-"Yet another intercept enhancer, its optional maneuver at superior %(AUS)s can be useful in constructs using long "
-"range combat after the block. Yet not as efficient as other %(aus)s reactions, it is used when additional intercept "
-"is needed."
+"A great intercept enhancer, for decks where the crypt has a stable access to superior %(AUS)s%(CEL)s. It's even "
+"better than the pervasive %(enhanced_senses)s."
 msgstr ""
-"Encore un autre amplificateur d'interception, sa manœuvre facultative pour %(AUS)s supérieur peut être utile dans les"
-" constructions utilisant un combat à longue portée après le blocage. Pourtant, pas aussi efficace que les autres "
-"réactions %(aus)s, il est alors utilisé lorsqu'une interception supplémentaire est nécessaire."
+
+#: codex_of_the_damned/templates/best-cards/generic/blood-sorcery.html:8
+#, python-format
+msgid ""
+"%(tha)s offers a wide range of options. A bit of stealth, solid combat options including blood theft effects, and "
+"some unique effects."
+msgstr ""
+
+#: codex_of_the_damned/templates/best-cards/generic/blood-sorcery.html:16
+#, python-format
+msgid ""
+"A rare effect in the game, the ability to fetch any equipment in the library is very strong. The +3 stealth bonus at "
+"superior %(THA)s makes it very hard to block. Some decks use %(THA)s for this card only."
+msgstr ""
+"Un effet rare dans le jeu, la possibilité de récupérer n'importe quel équipement de la bibliothèque est très forte. "
+"Le bonus de discrétion de +3 en %(THA)s supérieure rend le blocage très difficile. Certains decks utilisent %(THA)s "
+"pour cette carte uniquement."
+
+#: codex_of_the_damned/templates/best-cards/generic/blood-sorcery.html:24
+#, fuzzy, python-format
+msgid ""
+"A good stealth enhancer, the only one available with the clan disciplines. Its combat avoidance effect at superior "
+"%(THA)s can come in handy, and jam the hand of combat-heavy blockers."
+msgstr ""
+"Un bon améliorateur de discrétion, le seul disponible avec les disciplines du clan. Son effet qui permet d'éviter le "
+"combat en %(THA)s supérieure peut être utile."
+
+#: codex_of_the_damned/templates/best-cards/generic/blood-sorcery.html:32
+#, python-format
+msgid ""
+"A very decent damage prevention card, even if not as powerful as %(for)s %(rolling_with_the_punches)s, it is the only"
+" damage prevention available to the Tremere."
+msgstr ""
+"Une carte de prévention de dégâts très décente, même si elle n'est pas aussi puissante que %(for)s "
+"%(rolling_with_the_punches)s, c'est la seule prévention de dégâts disponible pour les Tremere."
+
+#: codex_of_the_damned/templates/best-cards/generic/blood-sorcery.html:40
+#, fuzzy, python-format
+msgid ""
+"An excellent combat card: as it <em>steals</em> blood there is no damage to prevent, and at the end of the round it "
+"is a 4 blood difference between the two vampires, at no cost. Of course, Banu Haqim %(banu_haqim)s will prefer the "
+"handier %(hunger_of_marduk)s that lets do the same with %(cel)s additional strikes."
+msgstr ""
+"Une excellente carte de combat : comme elle <em>vole</em> du sang, il n'y a pas de dégâts à prévenir, et à la fin du "
+"round c'est une différence de 4 sang entre les deux vampires, gratuitement."
+
+#: codex_of_the_damned/templates/best-cards/generic/blood-sorcery.html:51
+#, python-format
+msgid ""
+"An expensive but powerful device to augment %(a_b)s. Its cost did not prevent it to be played in many %(tha)s decks, "
+"if only as an option."
+msgstr ""
+"Un outil coûteux mais puissant pour augmenter l'%(a_b)s. Son coût ne l'a pas empêché d'être joué dans de nombreux "
+"decks %(tha)s, ne serait-ce qu'en option."
+
+#: codex_of_the_damned/templates/best-cards/generic/blood-sorcery.html:58
+#, python-format
+msgid ""
+"A nice rush action, especially if it does not get blocked or you can support it with a bit of stealth like "
+"%(resist_earth_s_grasp)s or simply using %(obf)s if you are Banu Haqim %(banu_haqim)s."
+msgstr ""
+
+#: codex_of_the_damned/templates/best-cards/generic/blood-sorcery.html:68
+#, fuzzy, python-format
+msgid ""
+"A very versatile combat device: maneuver or press at no cost is a great tool. Not on the same level as %(flash)s "
+"though, so more of a Tremere %(tremere)s thing."
+msgstr "Un outil de combat très polyvalent : manœuvrer ou poursuivre gratuitement est un excellent choix."
+
+#: codex_of_the_damned/templates/best-cards/generic/blood-sorcery.html:75
+#, python-format
+msgid "An interesting strike, useful both against Fortitude %(for)s and gun-based combat modules."
+msgstr ""
+
+#: codex_of_the_damned/templates/best-cards/generic/blood-sorcery.html:82
+#, python-format
+msgid ""
+"A typical Blood Sorcery %(tha)s strike: even though it usually needs a second round to land, ranged aggravated ramage"
+" is strong enough to justify its inclusion in some decks."
+msgstr ""
 
 #: codex_of_the_damned/templates/best-cards/generic/celerity.html:8
 #, python-format
@@ -8701,20 +8709,20 @@ msgstr ""
 #: codex_of_the_damned/templates/best-cards/generic/celerity.html:37
 #, python-format
 msgid ""
-"A serious enhancement for any combat module, the ability to deliver not one but two additional strikes is unique to "
-"%(cel)s."
-msgstr ""
-"Une amélioration sérieuse pour tout module de combat, la capacité de fournir non pas une mais deux frappes "
-"supplémentaires est unique à %(cel)s."
-
-#: codex_of_the_damned/templates/best-cards/generic/celerity.html:44
-#, python-format
-msgid ""
 "Its 1 blood cost is balanced by the fact that it provides good combat options (maneuver, press) along with a very "
 "rare stealth bonus at superior %(CEL)s."
 msgstr ""
 "Son coût de 1 sang est équilibré par le fait qu'elle offre de bonnes options de combat (manœuvre, poursuite) ainsi "
 "qu'un bonus de discrétion très rare en %(CEL)s supérieur."
+
+#: codex_of_the_damned/templates/best-cards/generic/celerity.html:44
+#, python-format
+msgid ""
+"A serious enhancement for any combat module, the ability to deliver not one but two additional strikes is unique to "
+"%(cel)s."
+msgstr ""
+"Une amélioration sérieuse pour tout module de combat, la capacité de fournir non pas une mais deux frappes "
+"supplémentaires est unique à %(cel)s."
 
 #: codex_of_the_damned/templates/best-cards/generic/celerity.html:52
 msgid "Combat Ends"
@@ -8732,6 +8740,13 @@ msgstr ""
 #: codex_of_the_damned/templates/best-cards/generic/celerity.html:61
 #, python-format
 msgid ""
+"Quickly rose up the ranks after its upgrade errata in 2021, this is a free additional strike at inferior, and a non-"
+"limited one you can stack even on top or %(blur)s at superior."
+msgstr ""
+
+#: codex_of_the_damned/templates/best-cards/generic/celerity.html:71
+#, python-format
+msgid ""
 "A versatile defensive tool, it is unlikely to jam a hand too much, and the dodge or the damage prevention can save a "
 "vampire from a lethal blow. %(pursuit)s and %(sideslip)s provide more options and versatility at no cost than using "
 "%(acrobatics)s, for example."
@@ -8740,18 +8755,11 @@ msgstr ""
 " sauver un vampire d'un coup mortel. %(pursuit)s et %(sideslip)s offrent plus d'options et de polyvalence "
 "gratuitement que l'utilisation d'%(acrobatics)s, par exemple."
 
-#: codex_of_the_damned/templates/best-cards/generic/celerity.html:74
-#, python-format
-msgid ""
-"A good intercept reaction: +2 intercept bonus at superior %(CEL)s%(AUS)s, stackable with other %(aus)s reactions, is "
-"already good enough. The additional maneuver is a nice touch, as %(cel)s%(aus)s constructs often use guns in their "
-"combat module."
+#: codex_of_the_damned/templates/best-cards/generic/celerity.html:84
+msgid "A versatile device for any combat module, providing both maneuver and press as needed."
 msgstr ""
-"Une bonne réaction d'interception : +2 bonus d'interception en %(CEL)s%(AUS)s supérieur, cumulable avec d'autres "
-"réactions %(aus)s, est déjà assez bon. La manœuvre supplémentaire est pratique, car les decks %(cel)s%(aus)s "
-"utilisent souvent des armes à feu dans leur module de combat."
 
-#: codex_of_the_damned/templates/best-cards/generic/celerity.html:83
+#: codex_of_the_damned/templates/best-cards/generic/celerity.html:90
 #, python-format
 msgid ""
 "A versatile combat tool, its effect can be either defensive (dodge) or offensive (additional strike) depending on the"
@@ -8781,6 +8789,14 @@ msgstr ""
 "défense incroyablement efficace contre les decks de morsure les plus sévères."
 
 #: codex_of_the_damned/templates/best-cards/generic/dominate.html:25
+msgid ""
+"An incredibly versatile tool, it helps getting more vampires out for cheap in the beginning of the game, and provides"
+" an excruciating bleed later on."
+msgstr ""
+"Un outil incroyablement polyvalent, il aide à sortir plus de vampires à bas coût en début de partie et fournit une "
+"morsure sévère plus tard."
+
+#: codex_of_the_damned/templates/best-cards/generic/dominate.html:32
 #, python-format
 msgid ""
 "It is the best bleed modifier of the game, and can be associated with %(govern_the_unaligned)s for a 6-pool bleed. "
@@ -8791,34 +8807,7 @@ msgstr ""
 " à 6. La possibilité d'utiliser ce modificateur uniquement après le refus des blocs le rend supérieur aux actions de "
 "morsure. Le coût de 1 sang est une bonne affaire."
 
-#: codex_of_the_damned/templates/best-cards/generic/dominate.html:34
-msgid ""
-"An incredibly versatile tool, it helps getting more vampires out for cheap in the beginning of the game, and provides"
-" an excruciating bleed later on."
-msgstr ""
-"Un outil incroyablement polyvalent, il aide à sortir plus de vampires à bas coût en début de partie et fournit une "
-"morsure sévère plus tard."
-
 #: codex_of_the_damned/templates/best-cards/generic/dominate.html:41
-#, python-format
-msgid ""
-"Clearly it dos not have the same impact as %(conditioning)s in terms of pool damage, but the +1 stealth is invaluable"
-" for decks with no alternative discipline for stealth."
-msgstr ""
-"Clairement pas le même impact qu'un %(conditioning)s en termes de dégâts d'influence, mais le +1 discrétion est "
-"inestimable pour les decks sans discipline alternative pour la discrétion."
-
-#: codex_of_the_damned/templates/best-cards/generic/dominate.html:48
-msgid ""
-"An excellent block denial modifier. Well targeted, it can be enough to get a bleed through unopposed. Combined with "
-"another block denial modifier, it allows for a pure block denial module that can be used to get actions through "
-"without even bothering to use stealth."
-msgstr ""
-"Un excellent modificateur de déni de bloc. Bien ciblé, il peut suffire à passer une morsure sans opposition. Combiné "
-"avec un autre déni de bloc, il permet un module de déni de bloc pur qui peut passer des actions sans même prendre la "
-"peine d'utiliser la discrétion."
-
-#: codex_of_the_damned/templates/best-cards/generic/dominate.html:57
 #, python-format
 msgid ""
 "An excellent lunge device, it has the same pool damage as a %(conditioning)s at no cost, provided the prey is low "
@@ -8830,18 +8819,62 @@ msgstr ""
 "moyen de contourner une %(direct_intervention)s, car le modificateur contré ne peut pas être rejoué pendant la même "
 "action, mais un autre le peut."
 
-#: codex_of_the_damned/templates/best-cards/generic/dominate.html:69
+#: codex_of_the_damned/templates/best-cards/generic/dominate.html:53
+msgid ""
+"An excellent block denial modifier. Well targeted, it can be enough to get a bleed through unopposed. Combined with "
+"another block denial modifier, it allows for a pure block denial module that can be used to get actions through "
+"without even bothering to use stealth."
+msgstr ""
+"Un excellent modificateur de déni de bloc. Bien ciblé, il peut suffire à passer une morsure sans opposition. Combiné "
+"avec un autre déni de bloc, il permet un module de déni de bloc pur qui peut passer des actions sans même prendre la "
+"peine d'utiliser la discrétion."
+
+#: codex_of_the_damned/templates/best-cards/generic/dominate.html:62
 #, python-format
 msgid ""
+"Clearly it dos not have the same impact as %(conditioning)s in terms of pool damage, but the +1 stealth is invaluable"
+" for decks with no alternative discipline for stealth."
+msgstr ""
+"Clairement pas le même impact qu'un %(conditioning)s en termes de dégâts d'influence, mais le +1 discrétion est "
+"inestimable pour les decks sans discipline alternative pour la discrétion."
+
+#: codex_of_the_damned/templates/best-cards/generic/dominate.html:69
+#, python-format
+msgid "A strong defensive tool for high capacity vampires, it can even escape %(immortal_grapple)s combat modules."
+msgstr ""
+
+#: codex_of_the_damned/templates/best-cards/generic/dominate.html:76
+#, python-format
+msgid ""
+"Another high capacity vampire tool, this one is all about adaptability: additional bounces just in case, but not "
+"jamming your hand if your predator is not bleeding. A nice complement to %(deflection)s ."
+msgstr ""
+
+#: codex_of_the_damned/templates/best-cards/generic/dominate.html:84
+#, fuzzy, python-format
+msgid ""
 "An alternative to %(deflection)s at no cost, it is only used when %(DOM)s is vastly prevalent in the crypt. Even "
-"then, %(deflection)s is still often preferred because it can be chained multiple times as the minion does not lock."
+"then, %(deflection)s is still often preferred because the minion does not lock."
 msgstr ""
 "Une alternative gratuite à %(deflection)s, il n'est utilisé que lorsque %(DOM)s est très majoritaire dans la crypte. "
 "Même dans ce cas, %(deflection)s est encore souvent préférée car elle peut être enchaînée plusieurs fois sans que le "
 "serviteur ne s'incline."
 
-#: codex_of_the_damned/templates/best-cards/generic/dominate.html:77
-msgid "An excellent action to get rid of cumbersome retainers and, more importantly, allies. The 1 blood cost is a bargain."
+#: codex_of_the_damned/templates/best-cards/generic/dominate.html:92
+#, python-format
+msgid ""
+"A shrewd card allowing to steal opponents vampires, provided you manage to send them to torpor first. It is common in"
+" %(dom)s capable combat decks, like %(malgorzata)s or %(tupdogs_nephandus)s."
+msgstr ""
+
+#: codex_of_the_damned/templates/best-cards/generic/dominate.html:103
+#, python-format
+msgid "Expensive for a bleed, but stealing a good location, for example a %(hunting_ground)s, can be very neat."
+msgstr ""
+
+#: codex_of_the_damned/templates/best-cards/generic/dominate.html:112
+#, fuzzy
+msgid "An excellent action to get rid of cumbersome allies. The 1 blood cost is a bargain."
 msgstr ""
 "Une excellente action pour se débarrasser des compagnons pénibles et, surtout, des alliés. Le coût de un sang est une"
 " bonne affaire."
@@ -8888,6 +8921,12 @@ msgstr ""
 "en %(for)s supérieure peut également être utile."
 
 #: codex_of_the_damned/templates/best-cards/generic/fortitude.html:52
+msgid ""
+"A good damage prevention at no cost, it is mostly included for its optional maneuver, a great way to provide some "
+"range control without risking jamming the hand too much."
+msgstr ""
+
+#: codex_of_the_damned/templates/best-cards/generic/fortitude.html:59
 #, python-format
 msgid ""
 "A good damage prevention at no cost, easy to use with a useful optional press. Contrary to %(hidden_strength)s, its "
@@ -8897,40 +8936,32 @@ msgstr ""
 "%(hidden_strength)s, sa poursuite peut être utilisée même si l'adversaire n'inflige aucun dommage, par exemple s'il "
 "utilise une manœuvre pour tenter d'éviter les dégâts."
 
-#: codex_of_the_damned/templates/best-cards/generic/fortitude.html:60
+#: codex_of_the_damned/templates/best-cards/generic/fortitude.html:67
 #, python-format
 msgid "Not as proficient as %(rolling_with_the_punches)s, it is used in decks where %(for)s is more common than %(FOR)s."
 msgstr "Pas aussi efficace que %(rolling_with_the_punches)s, utilisé dans les decks où %(for)s est plus courante que %(FOR)s."
 
-#: codex_of_the_damned/templates/best-cards/generic/fortitude.html:67
+#: codex_of_the_damned/templates/best-cards/generic/fortitude.html:74
 #, python-format
 msgid ""
-"High damage prevention at no cost, it is efficient against light combat modules using %(weighted_walking_stick)s or "
-"%(carrion_crows)s. However, it is useless against additional strikes and aggravated damage."
+"A bit less impactful than %(rolling_with_the_punches)s, it is appreciated by vampires who have only access to "
+"inferior Fortitude %(for)s, or those expecting multi-rounds combats."
 msgstr ""
-"Haute prévention des dégâts gratuit, il est efficace contre les modules de combat légers utilisant "
-"%(weighted_walking_stick)s ou %(carrion_crows)s. Cependant, il est inutile contre des frappes supplémentaires ou des "
-"dégâts aggravés."
 
-#: codex_of_the_damned/templates/best-cards/generic/fortitude.html:78
+#: codex_of_the_damned/templates/best-cards/generic/fortitude.html:84
 msgid "A costly modifier, but potentially destructive. Often seen in bleed or vote decks with low stealth."
 msgstr ""
 "Un modificateur coûteux, mais potentiellement destructeur. Souvent vu dans les decks de morsure ou de vote avec une "
 "faible discrétion."
 
 #: codex_of_the_damned/templates/best-cards/generic/master-cards.html:8
+#, python-format
 msgid ""
-"Before its <em>errata</em> in September 2020, <em>Pentex</em> was played in over half of tournament decks and it was "
-"the most played card overall. It used to prevent the target minion from acting too, and that made it the most "
-"versatile card of the game. In the endgame its power is still worthwhile though: disabling a specific minion of the "
-"prey can be key to victory."
+"Its <em>Trifle</em> trait made it one of the best leech option overall, besting %(minion_tap)s and often slower tools"
+" like %(vessel)s or %(blood_doll)s."
 msgstr ""
-"Avant son <em>errata</em> en septembre 2019, <em>Pentex</em> était jouée dans plus de la moitié des decks de tournoi "
-"et c'était la carte la plus jouée dans l'ensemble. Elle empêchait également le serviteur ciblé d'agir, ce qui en "
-"faisait la carte la plus polyvalente du jeu. En fin de partie, son pouvoir vaut toujours le coût : la désactivation "
-"d'un serviteur spécifique de la proie peut être clé pour la victoire."
 
-#: codex_of_the_damned/templates/best-cards/generic/master-cards.html:18
+#: codex_of_the_damned/templates/best-cards/generic/master-cards.html:19
 msgid ""
 "Loved for its ubiquitousness, the <em>Dreams</em> provides either two pool (and can even accelerate the setup if "
 "played early) or help the deck rotation in critical moments by drawing two cards."
@@ -8938,7 +8969,28 @@ msgstr ""
 "Apprécié pour sa polyvalence, <em>Dreams</em> fournit soit deux points d'influence (et peut même accélérer la mise en"
 " place s'ils est joué tôt), soit aide la rotation du deck dans les moments critiques en piochant deux cartes."
 
-#: codex_of_the_damned/templates/best-cards/generic/master-cards.html:26
+#: codex_of_the_damned/templates/best-cards/generic/master-cards.html:27
+#, fuzzy, python-format
+msgid ""
+"The most played %(leeching)s card after the ubiquitous %(villein)s, it enables a 1 point leech per turn and allows to"
+" give some blood back to a vampire, which can avoid hunt actions and keep %(a_b)s high. %(blood_doll)s is cheaper and"
+" faster, but it can be destroyed and it is not a <em>Trifle</em>."
+msgstr ""
+"La carte de %(leeching)s la plus jouée, elle est similaire à %(blood_doll)s. Les deux permettent une transfusion d'un"
+" point par tour et permettent de redonner du sang à un vampire vide, ce qui évite les actions de chasse et maintient "
+"un %(a_b)s élevé. Le coût de <em>Villein</em> est plus élevé : il faut un tour entier avant de pouvoir l'utiliser et "
+"il coûte 1 d'influence, ce qui le rend 2 points moins efficace, mais il ne peut pas être détruit et c'est un "
+"<em>Trifle</em>."
+
+#: codex_of_the_damned/templates/best-cards/generic/master-cards.html:40
+msgid ""
+"A cheap <em>Trifle</em> that provides rotation to the crypt. For a lot of crypts, this is a useful asset in the mid "
+"game to help fetch a third vampire. It is even guaranteed to generate one pool at some point."
+msgstr ""
+"Un <em>Trifle</em> bon marché qui apporte une rotation de crypte. Pour beaucoup de cryptes, c'est un atout utile en "
+"milieu de partie pour aider à récupérer un troisième vampire. Il garantit même un point d'influence à la fin."
+
+#: codex_of_the_damned/templates/best-cards/generic/master-cards.html:48
 #, python-format
 msgid ""
 "Even if it is only once per game, it brings more blood on the table than any other card, with the notable exception "
@@ -8949,34 +9001,7 @@ msgstr ""
 " à l'exception notable de %(golconda_inner_peace)s. Il se joue souvent en un seul exemplaire : avec un peu de chance,"
 " il apporte un avantage définitif, sinon il empêche un adversaire de le jouer lui-même."
 
-#: codex_of_the_damned/templates/best-cards/generic/master-cards.html:35
-#, python-format
-msgid ""
-"The most played %(leeching)s card, it is similar to %(blood_doll)s. Both enable a 1 point leech per turn and allow to"
-" give some blood back to a thirsty vampire, which can avoid hunt actions and keep %(a_b)s high. <em>Vessel</em> cost "
-"is higher: it takes a full turn to kick in and costs 1 pool, making it 2 pool less efficient, but it cannot be "
-"destroyed and it is a <em>Trifle</em>."
-msgstr ""
-"La carte de %(leeching)s la plus jouée, elle est similaire à %(blood_doll)s. Les deux permettent une transfusion d'un"
-" point par tour et permettent de redonner du sang à un vampire vide, ce qui évite les actions de chasse et maintient "
-"un %(a_b)s élevé. Le coût de <em>Villein</em> est plus élevé : il faut un tour entier avant de pouvoir l'utiliser et "
-"il coûte 1 d'influence, ce qui le rend 2 points moins efficace, mais il ne peut pas être détruit et c'est un "
-"<em>Trifle</em>."
-
-#: codex_of_the_damned/templates/best-cards/generic/master-cards.html:49
-#, python-format
-msgid ""
-"Before its <em>errata</em> in 2018, it permitted to take back as much blood as desired from the target vampire with "
-"no upper limit. Its <em>Trifle</em> trait made it one of the best leech option, besting %(minion_tap)s. The "
-"<em>errata</em> made %(minion_tap)s relevant again, although only when getting more than 5 blood from a vampire is "
-"relevant."
-msgstr ""
-"Avant son <em>errata</em> en 2018, il permettait de récupérer autant de sang que souhaité du vampire cible sans "
-"limite supérieure. Son trait <em>Trifle</em> en a fait l'une des meilleures options de transfusion, surpassant "
-"%(minion_tap)s. L '<em>errata</em> a rendu %(minion_tap)s pertinent à nouveau, même si ce n'est que lorsqu'il est "
-"crédible de prendre plus de 5 sang à un vampire."
-
-#: codex_of_the_damned/templates/best-cards/generic/master-cards.html:59
+#: codex_of_the_damned/templates/best-cards/generic/master-cards.html:57
 #, python-format
 msgid ""
 "The ability to cancel any minion card is extremely valuable. It has reliable role in %(wall_decks)s to deal with "
@@ -8986,11 +9011,32 @@ msgstr ""
 " les %(wall_decks)s pour gérer les %(block_denial)s, sinon sa valeur varie en fonction du joueur et de son évaluation"
 " de l'importance des cartes."
 
-#: codex_of_the_damned/templates/best-cards/generic/master-cards.html:61
+#: codex_of_the_damned/templates/best-cards/generic/master-cards.html:59
 msgid "block denial"
 msgstr "déni de bloc"
 
-#: codex_of_the_damned/templates/best-cards/generic/master-cards.html:70
+#: codex_of_the_damned/templates/best-cards/generic/master-cards.html:68
+msgid ""
+"A good bloat device that generates one pool per turn at no cost. It is a no-brainer in decks able to defend it. It "
+"can also be a useful bargaining chip when dealing with other Methusalahs, as it can easily be borrowed as part of a "
+"deal."
+msgstr ""
+"Un bon outil de régénération qui génère un d'influence par tour gratuitement. C'est une évidence dans les decks "
+"capables de le défendre. Il peut également être une monnaie d'échange utile lorsque l'on traite avec d'autres "
+"Methusalahs, car il peut facilement être emprunté dans le cadre d'un accord."
+
+#: codex_of_the_damned/templates/best-cards/generic/master-cards.html:76
+#, fuzzy
+msgid ""
+"Before its <em>errata</em> in September 2020, <em>Pentex</em> was the most played Master card in all decks. It is "
+"still powerful though: disabling a specific minion of the prey can be key to victory in many decks."
+msgstr ""
+"Avant son <em>errata</em> en septembre 2019, <em>Pentex</em> était jouée dans plus de la moitié des decks de tournoi "
+"et c'était la carte la plus jouée dans l'ensemble. Elle empêchait également le serviteur ciblé d'agir, ce qui en "
+"faisait la carte la plus polyvalente du jeu. En fin de partie, son pouvoir vaut toujours le coût : la désactivation "
+"d'un serviteur spécifique de la proie peut être clé pour la victoire."
+
+#: codex_of_the_damned/templates/best-cards/generic/master-cards.html:84
 msgid ""
 "An excellent crypt accelerator at no cost, it is played both with big capacity crypts, but also with weenie crypts at"
 " 1-2 capacity to make it possible to draw and get out a vampire in a single turn. Even if it is <em>Unique</em>, some"
@@ -9001,90 +9047,15 @@ msgstr ""
 " est <em>Unique</em>, certains decks l'incluent en plusieurs exemplaires pour améliorer leurs chances de le piocher "
 "tôt."
 
-#: codex_of_the_damned/templates/best-cards/generic/master-cards.html:79
-#, python-format
+#: codex_of_the_damned/templates/best-cards/generic/master-cards.html:93
 msgid ""
-"Similar to %(vessel)s in its effect, it is not a <em>Trifle</em>, so it does not fit in all decks depending on the "
-"number of Master cards. Even if it can be destroyed by a %(vessel)s, it is immediately usable when played and costs "
-"zero pool."
+"A good way to bring some blood back on the table, is it a useful tool against rush and grinder decks. Even if it does"
+" not come along so often, the fact that it helps the whole table can really slow down these particular archetypes."
 msgstr ""
-"Semblable à %(vessel)s dans son effet, ce n'est pas un <em>Trifle</em>, donc elle ne rentre pas dans tous les decks "
-"en fonction du nombre de cartes Maître. Même si elle peut être détruite par un %(vessel)s, elle est immédiatement "
-"utilisable lorsqu'elle est jouée et ne coûte pas d'influence."
+"Un bon moyen de ramener du sang sur la table, c'est un outil utile contre les decks rush ou grinder. Même si cela "
+"n'arrive pas si souvent, aider toute la table peut vraiment ralentir ces archétypes en particulier."
 
-#: codex_of_the_damned/templates/best-cards/generic/master-cards.html:87
-msgid ""
-"A good bloat device that generates one pool per turn at no cost. It is a no-brainer in decks able to defend it. It "
-"can also be a useful bargaining chip when dealing with other Methusalahs, as it can easily be borrowed as part of a "
-"deal."
-msgstr ""
-"Un bon outil de régénération qui génère un d'influence par tour gratuitement. C'est une évidence dans les decks "
-"capables de le défendre. Il peut également être une monnaie d'échange utile lorsque l'on traite avec d'autres "
-"Methusalahs, car il peut facilement être emprunté dans le cadre d'un accord."
-
-#: codex_of_the_damned/templates/best-cards/generic/master-cards.html:95
-msgid ""
-"A cheap <em>Trifle</em> that provides rotation to the crypt. For a lot of crypts, this is a useful asset in the mid "
-"game to help fetch a third vampire. It is even guaranteed to generate one pool at some point."
-msgstr ""
-"Un <em>Trifle</em> bon marché qui apporte une rotation de crypte. Pour beaucoup de cryptes, c'est un atout utile en "
-"milieu de partie pour aider à récupérer un troisième vampire. Il garantit même un point d'influence à la fin."
-
-#: codex_of_the_damned/templates/best-cards/generic/master-cards.html:103
-msgid ""
-"A key card for combat heavy decks, usually used on the prey's minions, it provides excellent pool damage. The fact "
-"that it is <em>Unique</em> means it can not easily be abused, though."
-msgstr ""
-"Une carte clé pour les decks orientés combat, généralement utilisée sur les serviteurs de la proie, elle fournit "
-"d'excellents dégâts d'influence. Le fait qu'elle soit <em>Unique</em> signifie qu'elle ne peut pas être facilement "
-"surexploitée."
-
-#: codex_of_the_damned/templates/best-cards/generic/master-cards.html:111
-#, python-format
-msgid ""
-"A dreadful deterrent against too powerful bleeders. A must have for decks who do not have access to bounces, it can "
-"be included in virtually any deck just to discourage the 6-7 bleed scores %(dom)s or %(pre)s can achieve."
-msgstr ""
-"Un dissuasif terrible contre les morsures trop puissantes. Un must pour les decks qui n'ont pas accès aux rebonds, il"
-" peut être inclus dans pratiquement n'importe quel deck juste pour décourager les morsures à 6-7 que %(dom)s ou "
-"%(pre)s peuvent produire."
-
-#: codex_of_the_damned/templates/best-cards/generic/master-cards.html:119
-#, python-format
-msgid ""
-"Countering Master cards is often useful: the best move is to counter a bloat card like %(villein)s, which is "
-"equivalent to a serious bleed. Other powerful Master cards can be countered this way too."
-msgstr ""
-"Contrer les cartes Maître est souvent utile : le mieux est de contrer une carte de régénération comme %(villein)s, ce"
-" qui équivaut à une bonne morsure. D'autres cartes Maître puissantes peuvent également être contrées de cette façon."
-
-#: codex_of_the_damned/templates/best-cards/generic/master-cards.html:127
-#, python-format
-msgid ""
-"A good way to bring back some blood on a vampire, it can also provide protection by blocking an action and is a key "
-"combination with %(war_ghoul)s and %(khazar_s_diary)s."
-msgstr ""
-"Un bon moyen de ramener du sang sur un vampire, il peut également fournir une protection en bloquant une action et "
-"est une combinaison clé avec %(war_ghoul)s et %(khazar_s_diary)s."
-
-#: codex_of_the_damned/templates/best-cards/generic/master-cards.html:138
-#, python-format
-msgid ""
-"A useful tool as it enables the play of more Master cards at no cost, it can be combined with vampires providing yet "
-"another Master action: %(anson)s, %(nana_buruku)s, %(cybele)s, %(huitzilopochtli)s or %(isanwayen)s."
-msgstr ""
-"Un outil utile car il permet de jouer plus de cartes Maître, il peut être combiné avec des vampires fournissant "
-"encore une autre action de Maître : %(anson)s, %(nana_buruku)s, %(cybele)s, %(huitzilopochtli)s ou %(isanwayen)s."
-
-#: codex_of_the_damned/templates/best-cards/generic/master-cards.html:152
-msgid ""
-"An easy way to get some pool back on a vampire at no cost. Many actions go through unblocked and unreacted to, so it "
-"tends to bring a pool back on the vampire at least every other turn."
-msgstr ""
-"Un moyen facile de ramener du sang sur un vampire. De nombreuses actions passent sans bloc ni réaction, donc cela a "
-"tendance à ramener un point sur le vampire au moins tous les deux tours."
-
-#: codex_of_the_damned/templates/best-cards/generic/master-cards.html:160
+#: codex_of_the_damned/templates/best-cards/generic/master-cards.html:101
 #, python-format
 msgid ""
 "One of the best tool available to bring some blood back on a vampire, it works beautifully with %(blood_doll)s or "
@@ -9094,7 +9065,35 @@ msgstr ""
 "%(blood_doll)s ou %(vessel)s. Il doit être défendu pour être maintenu en jeu, mais un si bon générateur de sang "
 "gratuit est une bonne affaire."
 
-#: codex_of_the_damned/templates/best-cards/generic/master-cards.html:171
+#: codex_of_the_damned/templates/best-cards/generic/master-cards.html:112
+#, python-format
+msgid ""
+"A useful tool as it enables the play of more Master cards at no cost, it can be combined with vampires providing yet "
+"another Master action: %(anson)s, %(nana_buruku)s, %(cybele)s, %(huitzilopochtli)s or %(isanwayen)s."
+msgstr ""
+"Un outil utile car il permet de jouer plus de cartes Maître, il peut être combiné avec des vampires fournissant "
+"encore une autre action de Maître : %(anson)s, %(nana_buruku)s, %(cybele)s, %(huitzilopochtli)s ou %(isanwayen)s."
+
+#: codex_of_the_damned/templates/best-cards/generic/master-cards.html:126
+#, python-format
+msgid ""
+"A dreadful deterrent against too powerful bleeders. A must have for decks who do not have access to bounces, it can "
+"be included in virtually any deck just to discourage the 6-7 bleed scores %(dom)s or %(pre)s can achieve."
+msgstr ""
+"Un dissuasif terrible contre les morsures trop puissantes. Un must pour les decks qui n'ont pas accès aux rebonds, il"
+" peut être inclus dans pratiquement n'importe quel deck juste pour décourager les morsures à 6-7 que %(dom)s ou "
+"%(pre)s peuvent produire."
+
+#: codex_of_the_damned/templates/best-cards/generic/master-cards.html:134
+msgid ""
+"A key card for combat heavy decks, usually used on the prey's minions, it provides excellent pool damage. The fact "
+"that it is <em>Unique</em> means it can not easily be abused, though."
+msgstr ""
+"Une carte clé pour les decks orientés combat, généralement utilisée sur les serviteurs de la proie, elle fournit "
+"d'excellents dégâts d'influence. Le fait qu'elle soit <em>Unique</em> signifie qu'elle ne peut pas être facilement "
+"surexploitée."
+
+#: codex_of_the_damned/templates/best-cards/generic/master-cards.html:142
 #, python-format
 msgid ""
 "A costly but efficient location. The stealth can make the difference between life or death for the prey, and the "
@@ -9105,7 +9104,111 @@ msgstr ""
 "bonus de taille de main n'est pas rien. Il est encore meilleur dans les decks utilisant %(parity_shift)s car il peut "
 "réduire l'influence juste assez pour pouvoir jouer le vote contre sa proie."
 
-#: codex_of_the_damned/templates/best-cards/generic/master-cards.html:180
+#: codex_of_the_damned/templates/best-cards/generic/master-cards.html:151
+#, fuzzy
+msgid ""
+"It is a decent bloating device but its key ability is to allow some recursion in the deck. Played in conjunction with"
+" some cards adding Master actions, it becomes tremendously efficient. Since its nerf in 2024, it is played in less "
+"copies overall, since you can only play one per turn."
+msgstr ""
+"C'est un appareil de regénération décent, mais sa principale utilité est de permettre une certaine récursivité dans "
+"le deck. Joué en conjonction avec certaines cartes ajoutant des actions Maître, il devient extrêmement efficace. Les "
+"decks qui l'utilisent en incluent généralement une douzaine, voire plus de 20 copies."
+
+#: codex_of_the_damned/templates/best-cards/generic/master-cards.html:160
+msgid ""
+"This is a good damage dealing option for <em>wall</em> decks. As they tend to be low on pool damage, this helps them "
+"ousting the table in timely fashion."
+msgstr ""
+"C'est une bonne option pour infliger des dégâts pour les decks <em>mur</em>. Comme ils ont tendance à peu endommager "
+"l'influence, cela les aide à éliminer la table en temps opportun."
+
+#: codex_of_the_damned/templates/best-cards/generic/master-cards.html:167
+#, fuzzy, python-format
+msgid ""
+"A good way to bring back some blood on a vampire, it can also provide protection by blocking an action and is a key "
+"combination with %(war_ghoul)s."
+msgstr ""
+"Un bon moyen de ramener du sang sur un vampire, il peut également fournir une protection en bloquant une action et "
+"est une combinaison clé avec %(war_ghoul)s et %(khazar_s_diary)s."
+
+#: codex_of_the_damned/templates/best-cards/generic/master-cards.html:176
+msgid ""
+"Although <em>Unique</em>, it is a solid counter against rush decks. Other options are required to really defend "
+"against them as this can only protect one vampire, but this is still a vampire one would not take down easily."
+msgstr ""
+"Bien qu'<em>Unique</em>, c'est un contre sévère contre les decks rush. D'autres options sont nécessaires pour "
+"vraiment se défendre contre eux car il ne protège qu'un seul vampire, mais c'est toujours un vampire que l'on "
+"n'abattra pas facilement."
+
+#: codex_of_the_damned/templates/best-cards/generic/master-cards.html:184
+#, python-format
+msgid ""
+"Countering Master cards is often useful: the best move is to counter a bloat card like %(villein)s, which is "
+"equivalent to a serious bleed. Other powerful Master cards can be countered this way too."
+msgstr ""
+"Contrer les cartes Maître est souvent utile : le mieux est de contrer une carte de régénération comme %(villein)s, ce"
+" qui équivaut à une bonne morsure. D'autres cartes Maître puissantes peuvent également être contrées de cette façon."
+
+#: codex_of_the_damned/templates/best-cards/generic/master-cards.html:192
+msgid ""
+"A powerful tool for <em>powerbleed</em> constructs. Its ability to destroy an equipment can be useful, but it is "
+"mostly included for its ability to lock vampires, and it is a key card for bleed decks without stealth."
+msgstr ""
+"Un outil puissant pour les decks <em>powerbleed</em>. Sa capacité à détruire un équipement peut être utile, mais elle"
+" est principalement incluse pour sa capacité à incliner les vampires, et c'est une carte clé pour mordre dans les "
+"decks sans discrétion."
+
+#: codex_of_the_damned/templates/best-cards/generic/master-cards.html:200
+#, fuzzy, python-format
+msgid ""
+"An excellent crypt accelerator provided one has big capacity vampires and enough pool to use it. It is a very good "
+"combination with %(villein)s, but also helps get some pool out fast to play a %(parity_shift)s on one's prey."
+msgstr ""
+"Un excellent accélérateur de crypte à condition d'avoir des vampires de grande capacité et suffisamment d'influence "
+"pour l'utiliser. C'est une très bonne combinaison avec %(villein)s ou %(minion_tap)s, mais permet également de "
+"dépenser de l'influence rapidement pour jouer un %(parity_shift)s sur sa proie."
+
+#: codex_of_the_damned/templates/best-cards/generic/master-cards.html:212
+msgid ""
+"An easy way to get some pool back on a vampire at no cost. Many actions go through unblocked and unreacted to, so it "
+"tends to bring a pool back on the vampire at least every other turn."
+msgstr ""
+"Un moyen facile de ramener du sang sur un vampire. De nombreuses actions passent sans bloc ni réaction, donc cela a "
+"tendance à ramener un point sur le vampire au moins tous les deux tours."
+
+#: codex_of_the_damned/templates/best-cards/generic/master-cards.html:220
+#, python-format
+msgid "Although not as versatile as %(dreams_of_the_sphinx)s, it is a good additional tool to help card rotation at no cost."
+msgstr ""
+"Bien qu'il ne soit pas aussi polyvalent que %(dreams_of_the_sphinx)s, c'est un outil supplémentaire gratuit pour "
+"aider la rotation des cartes."
+
+#: codex_of_the_damned/templates/best-cards/generic/master-cards.html:227
+#, python-format
+msgid ""
+"Similar to %(vessel)s in its effect, it is not a <em>Trifle</em>, so it does not fit in all decks depending on the "
+"number of Master cards. Even if it can be destroyed by a %(vessel)s, it is immediately usable when played and costs "
+"zero pool."
+msgstr ""
+"Semblable à %(vessel)s dans son effet, ce n'est pas un <em>Trifle</em>, donc elle ne rentre pas dans tous les decks "
+"en fonction du nombre de cartes Maître. Même si elle peut être détruite par un %(vessel)s, elle est immédiatement "
+"utilisable lorsqu'elle est jouée et ne coûte pas d'influence."
+
+#: codex_of_the_damned/templates/best-cards/generic/master-cards.html:235
+#, fuzzy, python-format
+msgid ""
+"An excellent bloat device, its discarding side-effect can be a bummer, as many decks rely on the fact that even just "
+"2 exemplaries of a given card are enough to draw it at some point in the game. However, used in conjunction with "
+"%(ashur_tablets)s or %(sudario_refraction)s, it becomes invaluable. Its use has declined since the "
+"%(emerald_legionnaire)s nerf in 2024."
+msgstr ""
+"Un excellent outil de régénération, son effet secondaire de défausse peut être pénible, car de nombreux decks "
+"reposent sur le fait que juste 2 exemplaires d'une carte donnée suffisent pour la piocher à un moment de la partie. "
+"Cependant, utilisé en conjonction avec %(ashur_tablets)s, %(emerald_legionnaire)s ou %(sudario_refraction)s, il "
+"devient inestimable."
+
+#: codex_of_the_damned/templates/best-cards/generic/master-cards.html:249
 #, python-format
 msgid ""
 "Very similar to %(wash)s, it is not a <em>Trifle</em> but, on the other hand, it does not let the target play another"
@@ -9116,51 +9219,21 @@ msgstr ""
 " autre carte Maître, donc c'est un peu plus efficace pour arrêter une régénération. Donc, s'il y a la place pour une "
 "carte Maître à part entière dans le deck, c'est une option légèrement meilleure."
 
-#: codex_of_the_damned/templates/best-cards/generic/master-cards.html:189
+#: codex_of_the_damned/templates/best-cards/generic/master-cards.html:258
+#, python-format
 msgid ""
-"A good way to bring some blood back on the table, is it a useful tool against rush and grinder decks. Even if it does"
-" not come along so often, the fact that it helps the whole table can really slow down these particular archetypes."
+"Basically a better %(hunting_ground)s for those relying heavily on Princes, Barons or Archbishops. Definitely worth "
+"including when the crypt fits."
 msgstr ""
-"Un bon moyen de ramener du sang sur la table, c'est un outil utile contre les decks rush ou grinder. Même si cela "
-"n'arrive pas si souvent, aider toute la table peut vraiment ralentir ces archétypes en particulier."
 
-#: codex_of_the_damned/templates/best-cards/generic/master-cards.html:197
+#: codex_of_the_damned/templates/best-cards/generic/master-cards.html:265
+#, python-format
 msgid ""
-"It is a decent bloating device but its key ability is to allow some recursion in the deck. Played in conjunction with"
-" some cards adding Master actions, it becomes tremendously efficient. Decks that use it typically include a dozen of "
-"them, but getting over 20 copies is not unheard of."
+"A considerable %(a_b)s enhancer, the 1 pool cost can be worth it, especially if the vampire so unlocked can bounce "
+"some bleeds away with %(deflection)s."
 msgstr ""
-"C'est un appareil de regénération décent, mais sa principale utilité est de permettre une certaine récursivité dans "
-"le deck. Joué en conjonction avec certaines cartes ajoutant des actions Maître, il devient extrêmement efficace. Les "
-"decks qui l'utilisent en incluent généralement une douzaine, voire plus de 20 copies."
 
-#: codex_of_the_damned/templates/best-cards/generic/master-cards.html:206
-msgid ""
-"A powerful tool for <em>powerbleed</em> constructs. Its ability to destroy an equipment can be useful, but it is "
-"mostly included for its ability to lock vampires, and it is a key card for bleed decks without stealth."
-msgstr ""
-"Un outil puissant pour les decks <em>powerbleed</em>. Sa capacité à détruire un équipement peut être utile, mais elle"
-" est principalement incluse pour sa capacité à incliner les vampires, et c'est une carte clé pour mordre dans les "
-"decks sans discrétion."
-
-#: codex_of_the_damned/templates/best-cards/generic/master-cards.html:214
-msgid ""
-"Although <em>Unique</em>, it is a solid counter against rush decks. Other options are required to really defend "
-"against them as this can only protect one vampire, but this is still a vampire one would not take down easily."
-msgstr ""
-"Bien qu'<em>Unique</em>, c'est un contre sévère contre les decks rush. D'autres options sont nécessaires pour "
-"vraiment se défendre contre eux car il ne protège qu'un seul vampire, mais c'est toujours un vampire que l'on "
-"n'abattra pas facilement."
-
-#: codex_of_the_damned/templates/best-cards/generic/master-cards.html:222
-msgid ""
-"This is a good damage dealing option for <em>wall</em> decks. As they tend to be low on pool damage, this helps them "
-"ousting the table in timely fashion."
-msgstr ""
-"C'est une bonne option pour infliger des dégâts pour les decks <em>mur</em>. Comme ils ont tendance à peu endommager "
-"l'influence, cela les aide à éliminer la table en temps opportun."
-
-#: codex_of_the_damned/templates/best-cards/generic/master-cards.html:229
+#: codex_of_the_damned/templates/best-cards/generic/master-cards.html:275
 #, python-format
 msgid ""
 "Although loosing a vampire is a steep price to pay, this is the highest bloat possible. Played on a 10 or 11 capacity"
@@ -9171,25 +9244,19 @@ msgstr ""
 "vampire de capacité 10 ou 11, c'est beaucoup d'influence, encore plus si %(minion_tap)s a été joué sur le vampire le "
 "tour précédent. Il peut aussi souvent être joué pour 2 dégâts d'influence sur la proie."
 
-#: codex_of_the_damned/templates/best-cards/generic/master-cards.html:238
+#: codex_of_the_damned/templates/best-cards/generic/master-cards.html:284
+msgid "A nice stealth enhancer, especially useful for political decks."
+msgstr ""
+
+#: codex_of_the_damned/templates/best-cards/generic/master-cards.html:290
 #, python-format
 msgid ""
-"An excellent crypt accelerator provided one has big capacity vampires and enough pool to use it. It is a very good "
-"combination with %(villein)s or %(minion_tap)s, but also helps get some pool out fast to play a %(parity_shift)s on "
-"one's prey."
+"Previously reserved to very nich builds, it knows a growing success with the arrival of in-clan \"three-ways\" like "
+"%(the_platinum_protocol)s or %(break_the_bounds)s, which makes it much more usable. An the blood or unlock choice is "
+"very adaptable."
 msgstr ""
-"Un excellent accélérateur de crypte à condition d'avoir des vampires de grande capacité et suffisamment d'influence "
-"pour l'utiliser. C'est une très bonne combinaison avec %(villein)s ou %(minion_tap)s, mais permet également de "
-"dépenser de l'influence rapidement pour jouer un %(parity_shift)s sur sa proie."
 
-#: codex_of_the_damned/templates/best-cards/generic/master-cards.html:250
-#, python-format
-msgid "Although not as versatile as %(dreams_of_the_sphinx)s, it is a good additional tool to help card rotation at no cost."
-msgstr ""
-"Bien qu'il ne soit pas aussi polyvalent que %(dreams_of_the_sphinx)s, c'est un outil supplémentaire gratuit pour "
-"aider la rotation des cartes."
-
-#: codex_of_the_damned/templates/best-cards/generic/master-cards.html:257
+#: codex_of_the_damned/templates/best-cards/generic/master-cards.html:301
 #, python-format
 msgid ""
 "A good permanent intercept card at a decent price, it can even be used to help another player. As it is "
@@ -9201,27 +9268,21 @@ msgstr ""
 "l'interception, par ordre de fréquence %(wrmh_talk_radio)s, %(channel_10)s, %(the_rumor_mill)s et "
 "%(wall_street_night)s."
 
-#: codex_of_the_damned/templates/best-cards/generic/master-cards.html:271
-msgid ""
-"A nice tool for <em>powerbleed</em> decks, it helps to get bleeds through when one has no stealth. Although a bit "
-"expensive, it is often a key card for the lunge in such decks."
-msgstr ""
-"Un bel outil pour les decks <em>powerbleed</em>, il aide à faire passer les morsures quand on n'a pas de discrétion. "
-"Bien qu'un peu cher, c'est souvent une carte clé pour le coup de grâce dans de tels decks."
-
-#: codex_of_the_damned/templates/best-cards/generic/master-cards.html:279
+#: codex_of_the_damned/templates/best-cards/generic/master-cards.html:315
 #, python-format
 msgid ""
-"An excellent bloat device, its discarding side-effect can be a bummer, as many decks rely on the fact that even just "
-"2 exemplaries of a given card are enough to draw it at some point in the game. However, used in conjunction with "
-"%(ashur_tablets)s, %(emerald_legionnaire)s or %(sudario_refraction)s, it becomes invaluable."
+"A unique effect, exceptional when stealing opposing vampires with %(puppet_master)s or similar cards, but also worth "
+"it just for using some key equipments or retainers like bleed enhancers multiple times per turn."
 msgstr ""
-"Un excellent outil de régénération, son effet secondaire de défausse peut être pénible, car de nombreux decks "
-"reposent sur le fait que juste 2 exemplaires d'une carte donnée suffisent pour la piocher à un moment de la partie. "
-"Cependant, utilisé en conjonction avec %(ashur_tablets)s, %(emerald_legionnaire)s ou %(sudario_refraction)s, il "
-"devient inestimable."
 
-#: codex_of_the_damned/templates/best-cards/generic/master-cards.html:292
+#: codex_of_the_damned/templates/best-cards/generic/master-cards.html:323
+#, python-format
+msgid ""
+"A must-have in fast-paced builds aiming at influencing more than 4 vampires, often seen alongside "
+"%(information_highway)s."
+msgstr ""
+
+#: codex_of_the_damned/templates/best-cards/generic/master-cards.html:332
 #, python-format
 msgid ""
 "An excellent device for combat-oriented decks. Broader than a rush action like %(bum_s_rush)s, it lets all the "
@@ -9232,20 +9293,9 @@ msgstr ""
 "les serviteurs de rusher la cible. C'est un bon moyen de submerger rapidement un module défensif, en plus il faudra "
 "une action pour le supprimer, ralentissant l'adversaire. Un bon ajout à %(fame)s."
 
-#: codex_of_the_damned/templates/best-cards/generic/master-cards.html:304
-#, python-format
-msgid ""
-"An good bloat device, it helps to get multiple big capacity vampires out at a reasonnable cost. Even better with "
-"crypt accelerators like %(zillah_s_valley)s and %(information_highway)s, it has long been outclassed by %(villein)s, "
-"until the <em>errata</em> of 2018 setting an upper limit of 5 blood."
-msgstr ""
-"Un bon outil de régénération, il aide à sortir plusieurs vampires de grande capacité à un coût raisonnable. Encore "
-"meilleur avec des accélérateurs de crypte comme %(zillah_s_valley)s et %(information_highway)s, il a longtemps été "
-"surclassé par %(villein)s, jusqu'à ce que l '<em>errata</em> de 2018 établisse une limite supérieure de 5 sang."
-
 #: codex_of_the_damned/templates/best-cards/generic/necromancy.html:8
-#, python-format
-msgid "%(nec)s provides a wide range of possibilities, including more than its share of ash heap manipulations."
+#, fuzzy, python-format
+msgid "%(nec)s provides a wide range of possibilities, including unique ash heap manipulation effects."
 msgstr "%(nec)s offre un large éventail de possibilités, y compris plus que sa part de manipulations de tas de cendres."
 
 #: codex_of_the_damned/templates/best-cards/generic/necromancy.html:16
@@ -9264,30 +9314,13 @@ msgstr "Une carte très polyvalente, même si le coût du sang 1 est un peu éle
 #: codex_of_the_damned/templates/best-cards/generic/necromancy.html:29
 #, python-format
 msgid ""
-"An excellent defensive combat card, providing a <em>combat ends</em> effect for no cost at superior %(NEC)s, and "
-"still a useful <em>dodge</em> at inferior %(nec)s."
-msgstr ""
-"Une excellente carte de combat défensif, offrant un effet de <em>fin de combat</em> sans frais à %(NEC)s supérieur, "
-"et toujours une <em>esquive</em> utile à %(nec)s inférieur."
-
-#: codex_of_the_damned/templates/best-cards/generic/necromancy.html:37
-msgid ""
-"An excellent ally with solid combat abilities. A bit tricky to play or include in a deck, as it needs an ally or "
-"vampire in the ash heap already."
-msgstr ""
-"Un excellent allié avec de solides capacités de combat. Un peu difficile à jouer ou à inclure dans un deck, car il a "
-"déjà besoin d'un allié ou d'un vampire dans le tas de cendres."
-
-#: codex_of_the_damned/templates/best-cards/generic/necromancy.html:44
-#, python-format
-msgid ""
 "Generally inferior to the newer %(inevitability_of_the_void)s, it's an excellent bleed enhancer, and its effect can "
 "be a good deterrent against %(ashur_tablets)s."
 msgstr ""
 "Généralement inférieur au nouveau %(inevitability_of_the_void)s, c'est un excellent améliorateur de morsure, et son "
 "effet peut être un bon moyen de dissuasion contre %(ashur_tablets)s."
 
-#: codex_of_the_damned/templates/best-cards/generic/necromancy.html:54
+#: codex_of_the_damned/templates/best-cards/generic/necromancy.html:39
 #, python-format
 msgid ""
 "Although less used than the defensive %(spiritual_intervention)s, the aggravated damage at superior %(NEC)s is "
@@ -9298,16 +9331,22 @@ msgstr ""
 " sont terribles, encore plus lorsqu'ils sont combinés avec %(target_vitals)s. Si le deck utilise des wraiths, la "
 "carte devient très polyvalente."
 
-#: codex_of_the_damned/templates/best-cards/generic/necromancy.html:65
-msgid "An excellent ally remover at no cost, it can even be used against low capacity vampires."
-msgstr "Excellent dissolvant d'allié sans frais, il peut même être utilisé contre les vampires de faible capacité."
-
-#: codex_of_the_damned/templates/best-cards/generic/necromancy.html:71
+#: codex_of_the_damned/templates/best-cards/generic/necromancy.html:50
 #, python-format
-msgid "A decent wake reaction, it becomes very good in allies-oriented decks once %(the_unmasking)s is in play."
+msgid ""
+"An excellent defensive combat card, providing a <em>combat ends</em> effect for no cost at superior %(NEC)s, and "
+"still a useful <em>dodge</em> at inferior %(nec)s."
 msgstr ""
-"Réaction de réveil décente, elle devient très bonne dans les decks orientés alliés une fois que %(the_unmasking)s est"
-" en jeu."
+"Une excellente carte de combat défensif, offrant un effet de <em>fin de combat</em> sans frais à %(NEC)s supérieur, "
+"et toujours une <em>esquive</em> utile à %(nec)s inférieur."
+
+#: codex_of_the_damned/templates/best-cards/generic/necromancy.html:58
+msgid ""
+"An excellent ally with solid combat abilities. A bit tricky to play or include in a deck, as it needs an ally or "
+"vampire in the ash heap already."
+msgstr ""
+"Un excellent allié avec de solides capacités de combat. Un peu difficile à jouer ou à inclure dans un deck, car il a "
+"déjà besoin d'un allié ou d'un vampire dans le tas de cendres."
 
 #: codex_of_the_damned/templates/best-cards/generic/no-discipline.html:8
 msgid ""
@@ -9319,6 +9358,14 @@ msgstr ""
 " complétée par d'autres réveils en raison de sa limite d'une fois par tour."
 
 #: codex_of_the_damned/templates/best-cards/generic/no-discipline.html:17
+msgid ""
+"A cheap way to ensure an optimal card rotation throughout the game. It has no direct effect on the table so it is "
+"often overlooked, even though the fluidity it confers is a sure path to victory."
+msgstr ""
+"Un moyen peu coûteux d'assurer une rotation optimale des cartes tout au long du jeu. Il n'a pas d'effet direct sur la"
+" table donc il est souvent négligé, même si la fluidité qu'il confère est un chemin sûr vers la victoire."
+
+#: codex_of_the_damned/templates/best-cards/generic/no-discipline.html:25
 #, python-format
 msgid ""
 "A very widespread defence against political actions. The action can still be performed again a turn later, but "
@@ -9329,15 +9376,16 @@ msgstr ""
 "briser le coup de grâce d'un prédateur ou empêcher le %(consanguineous_boon)s d'une proie peut conduire à la "
 "victoire. Il est préférable de l'utiliser <em>après</em> le vote."
 
-#: codex_of_the_damned/templates/best-cards/generic/no-discipline.html:26
-msgid ""
-"A cheap way to ensure an optimal card rotation throughout the game. It has no direct effect on the table so it is "
-"often overlooked, even though the fluidity it confers is a sure path to victory."
-msgstr ""
-"Un moyen peu coûteux d'assurer une rotation optimale des cartes tout au long du jeu. Il n'a pas d'effet direct sur la"
-" table donc il est souvent négligé, même si la fluidité qu'il confère est un chemin sûr vers la victoire."
-
 #: codex_of_the_damned/templates/best-cards/generic/no-discipline.html:34
+#, python-format
+msgid ""
+"An excellent tool for bloating, it is often seen in rush decks. Played efficiently, it helps leech with cards like "
+"%(minion_tap)s or %(blood_doll)s."
+msgstr ""
+"Excellent outil pour la régénération, on le voit souvent dans les decks rush. Joué efficacement, il aide la sangsue "
+"avec des cartes comme %(minion_tap)s ou %(blood_doll)s."
+
+#: codex_of_the_damned/templates/best-cards/generic/no-discipline.html:44
 msgid ""
 "By far the most played ally of the game, he is an excellent blocker for a cheap price. An excellent addition in "
 "virtually any deck. Its combat ability makes him quite hard to take down and his existence alone is a deterrent to "
@@ -9347,58 +9395,7 @@ msgstr ""
 "pratiquement n'importe quel deck. Sa capacité de combat le rend assez difficile à vaincre et sa seule existence est "
 "un frein à la diablerie, car il peut être mis en jeu pour détruire le diaboliste au prochain tour."
 
-#: codex_of_the_damned/templates/best-cards/generic/no-discipline.html:43
-#, python-format
-msgid ""
-"An excellent tool for bloating, it is often seen in rush decks. Played efficiently, it helps leech with cards like "
-"%(minion_tap)s or %(blood_doll)s."
-msgstr ""
-"Excellent outil pour la régénération, on le voit souvent dans les decks rush. Joué efficacement, il aide la sangsue "
-"avec des cartes comme %(minion_tap)s ou %(blood_doll)s."
-
 #: codex_of_the_damned/templates/best-cards/generic/no-discipline.html:53
-msgid ""
-"It provides a deadly aggravated strike at any range for just one pool and is therefore the most cost-effective weapon"
-" of the game. Any deck expecting actual combat can play it."
-msgstr ""
-"Il fournit une frappe aggravée mortelle à n'importe quelle distance pour un seul point d'influence et est donc l'arme"
-" la plus rentable du jeu. Tout deck s'attendant à un vrai combat peut le jouer."
-
-#: codex_of_the_damned/templates/best-cards/generic/no-discipline.html:61
-#, python-format
-msgid ""
-"Although only usable by a vampire and not replaced until the next turn, it has the advantage to be playable multiple "
-"times, so it is a good complement to the more common %(on_the_qui_vive)s."
-msgstr ""
-"Bien qu'il ne soit utilisable que par un vampire et ne soit remplacé qu'au tour suivant, il a l'avantage d'être "
-"jouable plusieurs fois, c'est donc un bon complément au %(on_the_qui_vive)s, plus courant."
-
-#: codex_of_the_damned/templates/best-cards/generic/no-discipline.html:69
-#, python-format
-msgid ""
-"Yet another wake, this one is replaced but can cost a bit of blood. It can be a good complement or alternative to "
-"%(on_the_qui_vive)s and %(wake_with_evening_s_freshness)s."
-msgstr ""
-"Encore un autre réveil, celui-ci est remplacé mais peut coûter un peu de sang. Cela peut être un bon complément ou "
-"une alternative à %(on_the_qui_vive)s et %(wake_with_evening_s_freshness)s."
-
-#: codex_of_the_damned/templates/best-cards/generic/no-discipline.html:80
-msgid ""
-"A cheap permanent intercept device, although affecting only the predator. As a bonus, it can have a devastative "
-"effect against weenie constructs."
-msgstr ""
-"Un dispositif d'interception permanent bon marché, bien qu'affectant uniquement le prédateur. En prime, il peut avoir"
-" un effet dévastateur contre les constructions weenie."
-
-#: codex_of_the_damned/templates/best-cards/generic/no-discipline.html:87
-msgid ""
-"A key card to ally-oriented decks, it transforms any ally setup into a very cumbersome wall. An overall intercept "
-"bonus at no cost is already good, plus being an event makes it hard to remove from the table."
-msgstr ""
-"Carte-clé des decks orientés alliés, elle transforme toute configuration alliée en un mur très encombrant. Un bonus "
-"d'interception global gratuit est déjà bon, et le fait d'être un événement le rend difficile à détruire."
-
-#: codex_of_the_damned/templates/best-cards/generic/no-discipline.html:95
 #, python-format
 msgid ""
 "A permanent bleed boost at no cost only available for big capacity vampires, it also allows acting during other "
@@ -9411,27 +9408,31 @@ msgstr ""
 "pendant le tour des proies pour mordre fort alors qu'%(archon_investigation)s ne peut pas être joué (car c'est un "
 "hors-tour). Allié à un moyen de redresser le vampire, il permet de mordre sur plusieurs tours consécutifs."
 
-#: codex_of_the_damned/templates/best-cards/generic/no-discipline.html:105
+#: codex_of_the_damned/templates/best-cards/generic/no-discipline.html:63
 msgid ""
-"An excellent combat option, it usually gets through against deck with no heavy combat module. A single aggravated "
-"damage can even become three and burn a vampire. Because any minion can use it, it is also included in ally oriented "
-"decks."
+"It provides a deadly aggravated strike at any range for just one pool and is therefore the most cost-effective weapon"
+" of the game. Any deck expecting actual combat can play it."
 msgstr ""
-"Une excellente option de combat, il est efficace contre les decks ayant un module de combat léger. Un seul dommage "
-"aggravé peut même en devenir trois et brûler un vampire. Parce que n'importe quel serviteur peut l'utiliser, il est "
-"également inclus dans les decks orientés alliés."
+"Il fournit une frappe aggravée mortelle à n'importe quelle distance pour un seul point d'influence et est donc l'arme"
+" la plus rentable du jeu. Tout deck s'attendant à un vrai combat peut le jouer."
 
-#: codex_of_the_damned/templates/best-cards/generic/no-discipline.html:113
-#, python-format
+#: codex_of_the_damned/templates/best-cards/generic/no-discipline.html:71
 msgid ""
-"Played in decks with non-Camarilla big capacity vampires, it is a straight-up boost in %(a_b)s for just one pool. "
-"Hard to block and hard to destroy in combat, he is safe in many situations."
+"A key card to ally-oriented decks, it transforms any ally setup into a very cumbersome wall. An overall intercept "
+"bonus at no cost is already good, plus being an event makes it hard to remove from the table."
 msgstr ""
-"Joué dans des decks avec des vampires non-Camarilla de haute capacité, c'est une augmentation directe de l'%(a_b)s "
-"pour un seul point d'influence. Difficile à bloquer et à détruire au combat, il est en sécurité dans de nombreuses "
-"situations."
+"Carte-clé des decks orientés alliés, elle transforme toute configuration alliée en un mur très encombrant. Un bonus "
+"d'interception global gratuit est déjà bon, et le fait d'être un événement le rend difficile à détruire."
 
-#: codex_of_the_damned/templates/best-cards/generic/no-discipline.html:123
+#: codex_of_the_damned/templates/best-cards/generic/no-discipline.html:79
+msgid ""
+"A cheap permanent intercept device, although affecting only the predator. As a bonus, it can have a devastative "
+"effect against weenie constructs."
+msgstr ""
+"Un dispositif d'interception permanent bon marché, bien qu'affectant uniquement le prédateur. En prime, il peut avoir"
+" un effet dévastateur contre les constructions weenie."
+
+#: codex_of_the_damned/templates/best-cards/generic/no-discipline.html:86
 msgid ""
 "Permanent intercept bonus at no cost, it is a good addition in any deck packing a defensive module with some "
 "intercept."
@@ -9439,17 +9440,7 @@ msgstr ""
 "Bonus d'interception permanente gratuit, c'est un bon ajout à tout deck contenant un module défensif avec de "
 "l'interception."
 
-#: codex_of_the_damned/templates/best-cards/generic/no-discipline.html:130
-msgid ""
-"A good tool for pool damage for combat-oriented decks. The hand size diminution is acceptable if it means dealing 2 "
-"or 3 damages per turn to the prey. However, it can have detrimental effects on cross-table allies if played "
-"carelessly."
-msgstr ""
-"Un bon outil de dégâts d'influence pour les decks orientés combat. La diminution de la taille de la main est "
-"acceptable si cela signifie infliger 2 ou 3 dégâts par tour à la proie. Cependant, il peut avoir des effets néfastes "
-"sur les alliés en face de table s'il est joué imprudemment."
-
-#: codex_of_the_damned/templates/best-cards/generic/no-discipline.html:138
+#: codex_of_the_damned/templates/best-cards/generic/no-discipline.html:93
 #, python-format
 msgid ""
 "The optional maneuver make it a cost-efficient option when it comes to weapons. It is often combined with %(cel)s for"
@@ -9460,17 +9451,16 @@ msgstr ""
 "efficacité maximale car il n'est pas limité à une seule frappe par round ou combat : des frappes supplémentaires "
 "transforment cette arme en un véritable outil de destruction."
 
-#: codex_of_the_damned/templates/best-cards/generic/no-discipline.html:147
+#: codex_of_the_damned/templates/best-cards/generic/no-discipline.html:102
+#, python-format
 msgid ""
-"He is a good rusher open to all decks. Hard to block, he can pick his targets for maximum effects. Starting with 4 "
-"life, he often goes up to more. His ability lets him dispose of young vampire without good defensive options: a "
-"little pricey to be just a buffer in front of a rush deck, he becomes invaluable against weenie decks."
+"An excellent option for decks with good intercept capabilities, it makes blocks more threatening and keep closed "
+"combat modules at range, excellent for %(grinding)s."
 msgstr ""
-"C'est un bon rusher ouvert à tous les decks. Difficile à bloquer, il peut choisir ses cibles pour un effet maximum. "
-"Partant à 4 points de vie, il va souvent plus loin. Son aptitude lui permet de se débarrasser d'un jeune vampire sans"
-" défense : un peu cher pour n'être qu'un tampon devant un deck rush, il devient inestimable contre les decks weenie."
+"Excellente option pour les decks avec de bonnes capacités d'interception, il rend les blocs plus menaçants et "
+"maintient les modules de combat à distance, ce qui est excellent pour l'%(grinding)s."
 
-#: codex_of_the_damned/templates/best-cards/generic/no-discipline.html:156
+#: codex_of_the_damned/templates/best-cards/generic/no-discipline.html:109
 #, python-format
 msgid ""
 "A death sentence for breed decks at no cost, it is often included in slow decks that have difficulties to cope with "
@@ -9480,16 +9470,87 @@ msgstr ""
 " ont du mal à faire face au nombre écrasant de serviteurs produits par les decks créant des vampires nouveau-nés avec"
 " des cartes comme %(the_embrace)s."
 
+#: codex_of_the_damned/templates/best-cards/generic/no-discipline.html:117
+msgid ""
+"An excellent combat option, it usually gets through against deck with no heavy combat module. A single aggravated "
+"damage can even become three and burn a vampire. Because any minion can use it, it is also included in ally oriented "
+"decks."
+msgstr ""
+"Une excellente option de combat, il est efficace contre les decks ayant un module de combat léger. Un seul dommage "
+"aggravé peut même en devenir trois et brûler un vampire. Parce que n'importe quel serviteur peut l'utiliser, il est "
+"également inclus dans les decks orientés alliés."
+
+#: codex_of_the_damned/templates/best-cards/generic/no-discipline.html:125
+#, python-format
+msgid ""
+"An easy way to hinder bounce defense relying on cards like %(deflection)s or %(telepathic_misdirection)s, especially "
+"for those who do not bounce themselves."
+msgstr ""
+
+#: codex_of_the_damned/templates/best-cards/generic/no-discipline.html:135
+#, python-format
+msgid ""
+"Played in decks with non-Camarilla big capacity vampires, it is a straight-up boost in %(a_b)s for just one pool. "
+"Hard to block and hard to destroy in combat, he is safe in many situations."
+msgstr ""
+"Joué dans des decks avec des vampires non-Camarilla de haute capacité, c'est une augmentation directe de l'%(a_b)s "
+"pour un seul point d'influence. Difficile à bloquer et à détruire au combat, il est en sécurité dans de nombreuses "
+"situations."
+
+#: codex_of_the_damned/templates/best-cards/generic/no-discipline.html:145
+#, python-format
+msgid ""
+"It is a good deterrent and help keep allies alive, but is only worth playing if the allies have a good chance to "
+"block vampires and is therefore always accompanied by %(the_unmasking)s."
+msgstr ""
+"C'est un bon moyen de dissuasion qui aide à garder les alliés en vie, mais qui ne vaut la peine d'être joué que si "
+"les alliés ont de bonnes chances de bloquer les vampires et est donc toujours accompagné de %(the_unmasking)s."
+
+#: codex_of_the_damned/templates/best-cards/generic/no-discipline.html:153
+#, python-format
+msgid ""
+"Yet another wake, this one is replaced but can cost a bit of blood. It can be a good complement or alternative to "
+"%(on_the_qui_vive)s and %(wake_with_evening_s_freshness)s."
+msgstr ""
+"Encore un autre réveil, celui-ci est remplacé mais peut coûter un peu de sang. Cela peut être un bon complément ou "
+"une alternative à %(on_the_qui_vive)s et %(wake_with_evening_s_freshness)s."
+
 #: codex_of_the_damned/templates/best-cards/generic/no-discipline.html:164
 #, python-format
 msgid ""
-"An excellent option for decks with good intercept capabilities, it makes blocks more threatening and keep closed "
-"combat modules at range, excellent for %(grinding)s."
+"An excellent way to get a weapon without risking an action that could be blocked, it is most often associated with "
+"%(magnum)s."
 msgstr ""
-"Excellente option pour les decks avec de bonnes capacités d'interception, il rend les blocs plus menaçants et "
-"maintient les modules de combat à distance, ce qui est excellent pour l'%(grinding)s."
+"Excellent moyen d'obtenir une arme sans risquer une action qui pourrait être bloquée, il est le plus souvent associé "
+"à %(magnum)s."
 
 #: codex_of_the_damned/templates/best-cards/generic/no-discipline.html:171
+#, python-format
+msgid ""
+"A nice defensive equipment, particularly efficient against %(magnum)s and %(sniper_rifle)s, the two most widespread "
+"weapons."
+msgstr ""
+
+#: codex_of_the_damned/templates/best-cards/generic/no-discipline.html:181
+msgid ""
+"A good tool for pool damage for combat-oriented decks. The hand size diminution is acceptable if it means dealing 2 "
+"or 3 damages per turn to the prey. However, it can have detrimental effects on cross-table allies if played "
+"carelessly."
+msgstr ""
+"Un bon outil de dégâts d'influence pour les decks orientés combat. La diminution de la taille de la main est "
+"acceptable si cela signifie infliger 2 ou 3 dégâts par tour à la proie. Cependant, il peut avoir des effets néfastes "
+"sur les alliés en face de table s'il est joué imprudemment."
+
+#: codex_of_the_damned/templates/best-cards/generic/no-discipline.html:189
+#, python-format
+msgid ""
+"Although only usable by a vampire and not replaced until the next turn, it has the advantage to be playable multiple "
+"times, so it is a good complement to the more common %(on_the_qui_vive)s."
+msgstr ""
+"Bien qu'il ne soit utilisable que par un vampire et ne soit remplacé qu'au tour suivant, il a l'avantage d'être "
+"jouable plusieurs fois, c'est donc un bon complément au %(on_the_qui_vive)s, plus courant."
+
+#: codex_of_the_damned/templates/best-cards/generic/no-discipline.html:197
 #, python-format
 msgid ""
 "The eponymous card of <em>rush</em> decks, it allows for direct combat against any minion, with the nice bonus of a "
@@ -9500,7 +9561,24 @@ msgstr ""
 "bonus d'une manœuvre pour contrôler un peu la portée. Certaines disciplines ont de meilleures alternatives, comme "
 "%(ani)s avec %(deep_song)s, mais sinon c'est une carte de choix pour les decks orientés combat."
 
-#: codex_of_the_damned/templates/best-cards/generic/no-discipline.html:180
+#: codex_of_the_damned/templates/best-cards/generic/no-discipline.html:206
+#, python-format
+msgid ""
+"A neat inclusion when the most widespread events %(scourge_of_the_enochians)s or %(the_unmasking)s are very "
+"detrimental to the deck."
+msgstr ""
+
+#: codex_of_the_damned/templates/best-cards/generic/no-discipline.html:216
+msgid ""
+"He is a good rusher open to all decks. Hard to block, he can pick his targets for maximum effects. Starting with 4 "
+"life, he often goes up to more. His ability lets him dispose of young vampire without good defensive options: a "
+"little pricey to be just a buffer in front of a rush deck, he becomes invaluable against weenie decks."
+msgstr ""
+"C'est un bon rusher ouvert à tous les decks. Difficile à bloquer, il peut choisir ses cibles pour un effet maximum. "
+"Partant à 4 points de vie, il va souvent plus loin. Son aptitude lui permet de se débarrasser d'un jeune vampire sans"
+" défense : un peu cher pour n'être qu'un tampon devant un deck rush, il devient inestimable contre les decks weenie."
+
+#: codex_of_the_damned/templates/best-cards/generic/no-discipline.html:225
 #, python-format
 msgid ""
 "An efficient weapon at no cost, requiring no action to equip, it is a good alternative for toolbox decks not much "
@@ -9509,29 +9587,13 @@ msgstr ""
 "Une arme efficace sans frais, ne nécessitant aucune action pour s'équiper, c'est une bonne alternative pour les decks"
 " toolbox peu spécialisés dans le combat. Souvent joué en association avec %(for)s pour la prévention des dégâts."
 
-#: codex_of_the_damned/templates/best-cards/generic/no-discipline.html:188
+#: codex_of_the_damned/templates/best-cards/generic/no-discipline.html:233
 #, python-format
 msgid ""
-"An excellent way to get a weapon without risking an action that could be blocked, it is most often associated with "
-"%(magnum)s."
+"Free permanent intercept for anyone, its 1 pool cost makes it less desireable than %(mr_winthrop)s or "
+"%(bowl_of_convergence)s, but it is not unique and can add yet another source of intercept for those who do not have "
+"%(ani)s for %(raven_spy)s."
 msgstr ""
-"Excellent moyen d'obtenir une arme sans risquer une action qui pourrait être bloquée, il est le plus souvent associé "
-"à %(magnum)s."
-
-#: codex_of_the_damned/templates/best-cards/generic/no-discipline.html:195
-msgid "A good addition to allies and imbued decks, his ability does not require an action and can be used anytime."
-msgstr ""
-"Un bon ajout aux alliés et aux decks Illuminés, son aptitude ne nécessite aucune action et peut être utilisée à tout "
-"moment."
-
-#: codex_of_the_damned/templates/best-cards/generic/no-discipline.html:202
-#, python-format
-msgid ""
-"It is a good deterrent and help keep allies alive, but is only worth playing if the allies have a good chance to "
-"block vampires and is therefore always accompanied by %(the_unmasking)s."
-msgstr ""
-"C'est un bon moyen de dissuasion qui aide à garder les alliés en vie, mais qui ne vaut la peine d'être joué que si "
-"les alliés ont de bonnes chances de bloquer les vampires et est donc toujours accompagné de %(the_unmasking)s."
 
 #: codex_of_the_damned/templates/best-cards/generic/obfuscate.html:8
 #, python-format
@@ -9545,27 +9607,27 @@ msgstr "La meilleure discrétion disponible, jouée dans presque toutes les cons
 
 #: codex_of_the_damned/templates/best-cards/generic/obfuscate.html:21
 msgid ""
-"This block denial modifier comes in very handy against a single minion. It works against all minions and vampires and"
-" can bypass even high levels of stacked intercept."
-msgstr ""
-"Ce modificateur de déni de bloc est très pratique contre un seul serviteur. Il fonctionne contre tous les serviteurs "
-"et vampires et peut neutraliser les plus hauts niveaux d'interception."
-
-#: codex_of_the_damned/templates/best-cards/generic/obfuscate.html:28
-msgid ""
 "A single unlocked minion can be hard to get around if multiple actions are in order. This is an excellent tool in "
 "this case as it locks the defending minion on the first block failure."
 msgstr ""
 "Un seul serviteur déverrouillé peut être difficile à contourner si plusieurs actions sont prévues. C'est un excellent"
 " outil dans ce cas, car il verrouille le serviteur en défense lors du premier échec de bloc."
 
-#: codex_of_the_damned/templates/best-cards/generic/obfuscate.html:36
+#: codex_of_the_damned/templates/best-cards/generic/obfuscate.html:29
 msgid ""
 "A versatile stealth modifier, the maneuver option comes in handy, either to assist a combat module, avoid combat "
 "damage, or just avoid jamming the hand with unrequired stealth."
 msgstr ""
 "Modificateur de discrétion polyvalent, l'option de manœuvre est pratique, soit pour aider un module de combat, soit "
 "pour éviter les dégâts de combat, ou simplement pour éviter de gripper la main avec une discrétion non requise."
+
+#: codex_of_the_damned/templates/best-cards/generic/obfuscate.html:37
+msgid ""
+"This block denial modifier comes in very handy against a single minion. It works against all minions and vampires and"
+" can bypass even high levels of stacked intercept."
+msgstr ""
+"Ce modificateur de déni de bloc est très pratique contre un seul serviteur. Il fonctionne contre tous les serviteurs "
+"et vampires et peut neutraliser les plus hauts niveaux d'interception."
 
 #: codex_of_the_damned/templates/best-cards/generic/obfuscate.html:44
 #, python-format
@@ -9604,6 +9666,36 @@ msgstr ""
 " nombreux serviteurs : un vampire avec %(OBF)s peut donner +1 en discrétion à plusieurs actions consécutives, une "
 "belle configuration pour un coup de grâce."
 
+#: codex_of_the_damned/templates/best-cards/generic/obfuscate.html:76
+#, python-format
+msgid ""
+"Less widely used than %(lost_in_crowds)s because it requires high capacity and is not replaced, its additional "
+"stealth is still appealing enough to make it a staple in %(OBF)s Inner Circle decks."
+msgstr ""
+
+#: codex_of_the_damned/templates/best-cards/generic/obfuscate.html:84
+#, python-format
+msgid ""
+"Not the best strike: combat ends of the game, but for those who do not have %(pre)s for %(majesty)s nor %(pro)s for "
+"%(earth_meld)s, it might be the best available combat defense."
+msgstr ""
+
+#: codex_of_the_damned/templates/best-cards/generic/obfuscate.html:94
+#, python-format
+msgid ""
+"A relatively new card released in 2024, it quickly became a huge it, providing a solid bleed defense for decks that "
+"do not have access to bounces like %(deflection)s. Using it for defense also opens up the possibility to play "
+"%(narrow_minds)s to hinder the opponents."
+msgstr ""
+
+#: codex_of_the_damned/templates/best-cards/generic/obfuscate.html:105
+#, python-format
+msgid ""
+"A very specific counter, the fact that it can cancel Auspex %(AUS)s bounces like %(telepathic_misdirection)s is its "
+"main appeal. Of course, it can also be used against %(aus)s intercept reactions if needed. The downside is that it "
+"james the hand quickly if your opponents do not play %(aus)s."
+msgstr ""
+
 #: codex_of_the_damned/templates/best-cards/generic/political-actions.html:5
 msgid "Politial actions"
 msgstr "Actions politiques"
@@ -9619,50 +9711,6 @@ msgstr ""
 "terminer une table car c'est le moyen le plus sûr d'infliger des dégâts d'influence en duel ou à trois."
 
 #: codex_of_the_damned/templates/best-cards/generic/political-actions.html:17
-msgid ""
-"A very powerful vote when using big capacity vampires. It will cost time and pool to the target, most likely the prey"
-" or predator, but it can target anyone on the table, making it a nice tool for table control and negociations."
-msgstr ""
-"Un vote très puissant lors de l'utilisation de vampires de grande capacité. Cela coûtera du temps et de l'influence à"
-" la cible, probablement la proie ou le prédateur, mais cela peut cibler n'importe qui sur la table, ce qui en fait un"
-" bon outil pour le contrôle de la table et les négociations."
-
-#: codex_of_the_damned/templates/best-cards/generic/political-actions.html:25
-msgid ""
-"A serious damage dealer when playing a 10 or 11 capacity vampire. Only one copy is included but, with the right "
-"crypt, it is one of the strongest damage dealing votes."
-msgstr ""
-"Un sérieux pourvoyeur de dégâts en jouant un vampire de capacité 10 ou 11. Un seul exemplaire est inclus mais, avec "
-"la bonne crypte, c'est l'un des votes les plus forts."
-
-#: codex_of_the_damned/templates/best-cards/generic/political-actions.html:32
-#, python-format
-msgid ""
-"A customary companion to %(reins_of_power)s, it is a good bloat device (for 5 or 6 pool), but may have to be "
-"discarded if the prey has big capacity vampires."
-msgstr ""
-"Un compagnon habituel de %(reins_of_power)s, c'est un bon outil pour régénérer (pour 5 ou 6 points d'influence), mais"
-" il peut être nécessaire de le défausser si la proie a des vampires de grande capacité."
-
-#: codex_of_the_damned/templates/best-cards/generic/political-actions.html:39
-#, python-format
-msgid ""
-"Completing the triptych alongside %(reins_of_power)s and %(ancient_influence)s, it is a good bloat device if one "
-"plans to get two or more big capacity vampires into play."
-msgstr ""
-"Complétant le triptyque aux côtés de %(reins_of_power)s et %(ancient_influence)s, c'est un bon outil pour régénérer "
-"si l'on prévoit de mettre en jeu deux vampires de grande capacité ou plus."
-
-#: codex_of_the_damned/templates/best-cards/generic/political-actions.html:49
-#, python-format
-msgid ""
-"Almost always played alongside %(ancilla_empowerment)s, it is a decisive tool against weenie and breed decks. "
-"Depending on the situation, it can take a whole table down in a single strike."
-msgstr ""
-"Joué presque toujours aux côtés d'%(ancilla_empowerment)s, c'est un outil décisif contre les decks weenie ou "
-"prolifération. Selon la situation, cela peut éliminer toute une table d'un seul coup."
-
-#: codex_of_the_damned/templates/best-cards/generic/political-actions.html:57
 #, python-format
 msgid ""
 "Almost always played along %(anarchist_uprising)s, it has the same effect. Having both can make a "
@@ -9671,16 +9719,51 @@ msgstr ""
 "Presque toujours joué avec %(anarchist_uprising)s, il a le même effet. Avoir les deux peut neutraliser un "
 "%(delaying_tactics)s, alors pourquoi pas."
 
-#: codex_of_the_damned/templates/best-cards/generic/political-actions.html:67
+#: codex_of_the_damned/templates/best-cards/generic/political-actions.html:27
+msgid ""
+"A very powerful vote when using big capacity vampires. It will cost time and pool to the target, most likely the prey"
+" or predator, but it can target anyone on the table, making it a nice tool for table control and negociations."
+msgstr ""
+"Un vote très puissant lors de l'utilisation de vampires de grande capacité. Cela coûtera du temps et de l'influence à"
+" la cible, probablement la proie ou le prédateur, mais cela peut cibler n'importe qui sur la table, ce qui en fait un"
+" bon outil pour le contrôle de la table et les négociations."
+
+#: codex_of_the_damned/templates/best-cards/generic/political-actions.html:35
 #, python-format
 msgid ""
-"Although not as certain as %(kine_resources_contested)s, it will work against most decks and it adds a little bit of "
-"variety to address the %(delaying_tactics)s problem."
+"Almost always played alongside %(ancilla_empowerment)s, it is a decisive tool against weenie and breed decks. "
+"Depending on the situation, it can take a whole table down in a single strike."
 msgstr ""
-"Bien que pas aussi certain que %(kine_resources_contested)s, il fonctionnera avec la plupart des decks et ajoute un "
-"peu de variété pour contourner un %(delaying_tactics)s."
+"Joué presque toujours aux côtés d'%(ancilla_empowerment)s, c'est un outil décisif contre les decks weenie ou "
+"prolifération. Selon la situation, cela peut éliminer toute une table d'un seul coup."
 
-#: codex_of_the_damned/templates/best-cards/generic/political-actions.html:77
+#: codex_of_the_damned/templates/best-cards/generic/political-actions.html:43
+msgid ""
+"A serious damage dealer when playing a 10 or 11 capacity vampire. Only one copy is included but, with the right "
+"crypt, it is one of the strongest damage dealing votes."
+msgstr ""
+"Un sérieux pourvoyeur de dégâts en jouant un vampire de capacité 10 ou 11. Un seul exemplaire est inclus mais, avec "
+"la bonne crypte, c'est l'un des votes les plus forts."
+
+#: codex_of_the_damned/templates/best-cards/generic/political-actions.html:50
+#, python-format
+msgid ""
+"A customary companion to %(reins_of_power)s, it is a good bloat device (for 5 or 6 pool), but may have to be "
+"discarded if the prey has big capacity vampires."
+msgstr ""
+"Un compagnon habituel de %(reins_of_power)s, c'est un bon outil pour régénérer (pour 5 ou 6 points d'influence), mais"
+" il peut être nécessaire de le défausser si la proie a des vampires de grande capacité."
+
+#: codex_of_the_damned/templates/best-cards/generic/political-actions.html:57
+#, python-format
+msgid ""
+"Completing the triptych alongside %(reins_of_power)s and %(ancient_influence)s, it is a good bloat device if one "
+"plans to get two or more big capacity vampires into play."
+msgstr ""
+"Complétant le triptyque aux côtés de %(reins_of_power)s et %(ancient_influence)s, c'est un bon outil pour régénérer "
+"si l'on prévoit de mettre en jeu deux vampires de grande capacité ou plus."
+
+#: codex_of_the_damned/templates/best-cards/generic/political-actions.html:67
 msgid ""
 "Although only worth it in breed decks, its bloat power is tremendous in this case. Political breed decks can usually "
 "get away with not defence at all, relying on this bloat device alone to survive even the most hard pressing "
@@ -9689,6 +9772,15 @@ msgstr ""
 "Bien que cela ne vaille la peine que dans les decks de prolifération, son pouvoir de régénération est énorme dans ce "
 "cas. Les decks de prolifération politiques peuvent généralement s'en tirer sans défense du tout, en s'appuyant "
 "uniquement sur cet outil de régénération pour survivre même aux prédateurs les plus sévères."
+
+#: codex_of_the_damned/templates/best-cards/generic/political-actions.html:75
+#, python-format
+msgid ""
+"Although not as certain as %(kine_resources_contested)s, it will work against most decks and it adds a little bit of "
+"variety to address the %(delaying_tactics)s problem."
+msgstr ""
+"Bien que pas aussi certain que %(kine_resources_contested)s, il fonctionnera avec la plupart des decks et ajoute un "
+"peu de variété pour contourner un %(delaying_tactics)s."
 
 #: codex_of_the_damned/templates/best-cards/generic/political-actions.html:85
 #, python-format
@@ -9703,16 +9795,10 @@ msgstr ""
 
 #: codex_of_the_damned/templates/best-cards/generic/political-actions.html:96
 #, python-format
-msgid ""
-"A strong damage dealing vote against builds with many minions, it does offer a little bit more control than "
-"%(anarchist_uprising)s and %(ancilla_empowerment)s, but will deal less damage. An option often favored by breed "
-"constructs themselves."
+msgid "A cheap way to get more Master phase actions, compared to %(the_parthenon)s. Of course, using both also makes sense."
 msgstr ""
-"Un vote fort infligeant des dégâts contre les decks avec de nombreux serviteurs, il offre un peu plus de contrôle "
-"qu'%(anarchist_uprising)s et %(ancilla_empowerment)s, mais infligera moins de dégâts. Une option souvent favorisée "
-"par les decks de prolifération eux-mêmes."
 
-#: codex_of_the_damned/templates/best-cards/generic/political-actions.html:107
+#: codex_of_the_damned/templates/best-cards/generic/political-actions.html:105
 msgid ""
 "Although less common than pool-related votes, it gets often included as many locations can be worth the action to "
 "steal them. Of course, its efficency depends solely on the environment."
@@ -9757,11 +9843,9 @@ msgstr ""
 #: codex_of_the_damned/templates/best-cards/generic/potence.html:38
 #, python-format
 msgid ""
-"A nice alternative to %(torn_signpost)s when one want to save some card slots in a deck. As it is an action though, "
-"it can always be blocked."
+"Though relatively new, having been released in 2020, it is the base hand strike for Potence %(pot)s. 3 additional "
+"damage points at no cost, this is a no-brainer."
 msgstr ""
-"Une belle alternative à %(torn_signpost)s quand on veut garder de la place dans un deck. Comme il s'agit d'une "
-"action, elle peut toujours être bloquée."
 
 #: codex_of_the_damned/templates/best-cards/generic/potence.html:45
 #, python-format
@@ -9786,11 +9870,11 @@ msgstr ""
 #: codex_of_the_damned/templates/best-cards/generic/potence.html:64
 #, python-format
 msgid ""
-"A good strike by itself, the maneuver is useful for pure %(pot)s modules that do not have better options for "
-"maneuvers."
+"A nice alternative to %(torn_signpost)s when one want to save some card slots in a deck. As it is an action though, "
+"it can always be blocked."
 msgstr ""
-"Une bonne frappe en soi, la manœuvre est utile pour les modules %(pot)s purs qui n'ont pas de meilleures options de "
-"manœuvre."
+"Une belle alternative à %(torn_signpost)s quand on veut garder de la place dans un deck. Comme il s'agit d'une "
+"action, elle peut toujours être bloquée."
 
 #: codex_of_the_damned/templates/best-cards/generic/potence.html:71
 #, python-format
@@ -9802,6 +9886,15 @@ msgstr ""
 "Excellente frappe à longue portée, elle peut également être utilisée comme alternative contre les modules de combat à"
 " disctance. Dans ce cas cependant, seul un nombre limité d'exemplaires peuvent être inclus sous peine de gripper la "
 "main. La poursuite en %(POT)s supérieure est un avantage appréciable, surtout contre un %(sniper_rifle)s."
+
+#: codex_of_the_damned/templates/best-cards/generic/potence.html:80
+#, python-format
+msgid ""
+"A good strike by itself, the maneuver is useful for pure %(pot)s modules that do not have better options for "
+"maneuvers."
+msgstr ""
+"Une bonne frappe en soi, la manœuvre est utile pour les modules %(pot)s purs qui n'ont pas de meilleures options de "
+"manœuvre."
 
 #: codex_of_the_damned/templates/best-cards/generic/presence.html:8
 #, python-format
@@ -9815,21 +9908,21 @@ msgstr ""
 #: codex_of_the_damned/templates/best-cards/generic/presence.html:17
 #, python-format
 msgid ""
-"The most played <em>combat ends</em> of %(pre)s, the unlock effect as superior %(PRE)s is an excellent asset and "
-"augments %(a_b)s, both offensively and defensively."
-msgstr ""
-"La <em>fin de combat</em> la plus jouée de %(pre)s, l'effet de redressement en %(PRE)s supérieure est un excellent "
-"atout et augmente l'%(a_b)s, à la fois offensivement et défensivement."
-
-#: codex_of_the_damned/templates/best-cards/generic/presence.html:27
-#, python-format
-msgid ""
 "A versatile action. Included for its dreadful superior %(PRE)s effect that can steal a powerful ally, its simple "
 "bleed action at inferior %(pre)s makes it far more flexible than %(dom)s %(far_mastery)s."
 msgstr ""
 "Une action polyvalente. Incluse pour son redoutable effet en %(PRE)s supérieure qui permet de voler un allié "
 "puissant, sa simple action de morsure en %(pre)s inférieure la rend beaucoup plus flexible que %(dom)s "
 "%(far_mastery)s."
+
+#: codex_of_the_damned/templates/best-cards/generic/presence.html:25
+#, python-format
+msgid ""
+"The most played <em>combat ends</em> of %(pre)s, the unlock effect as superior %(PRE)s is an excellent asset and "
+"augments %(a_b)s, both offensively and defensively."
+msgstr ""
+"La <em>fin de combat</em> la plus jouée de %(pre)s, l'effet de redressement en %(PRE)s supérieure est un excellent "
+"atout et augmente l'%(a_b)s, à la fois offensivement et défensivement."
 
 #: codex_of_the_damned/templates/best-cards/generic/presence.html:35
 #, python-format
@@ -9841,21 +9934,12 @@ msgstr ""
 "facilement régénérer un vampire et le préparer pour un autre %(minion_tap)s et constitue une défense redoutable."
 
 #: codex_of_the_damned/templates/best-cards/generic/presence.html:43
-#, python-format
-msgid ""
-"The best bleed modifier of %(pre)s, it is inferior to %(dom)s %(conditioning)s, except for Toreador %(toreador)s. "
-"Still, such a strong bleed modifier is worth it for decks with no access to %(dom)s."
-msgstr ""
-"Le meilleur modificateur de morsure de %(pre)s, il est inférieur à %(dom)s %(conditioning)s, sauf pour les Toreador "
-"%(toreador)s. Un modificateur de morsure si puissant reste intéressant pour les decks sans accès à %(dom)s."
-
-#: codex_of_the_damned/templates/best-cards/generic/presence.html:53
 msgid "A versatile tool for big capacity vote decks: more votes or a good modifier to help get an action through."
 msgstr ""
 "Un outil polyvalent pour les decks de vote à hautes capacités : plus de votes ou un bon modificateur pour aider à "
 "faire passer une action."
 
-#: codex_of_the_damned/templates/best-cards/generic/presence.html:60
+#: codex_of_the_damned/templates/best-cards/generic/presence.html:50
 #, python-format
 msgid ""
 "A weaker version of the popular %(dom)s %(govern_the_unaligned)s, it has the same advantages: a good accelerator in "
@@ -9864,12 +9948,16 @@ msgstr ""
 "Une version plus faible du populaire %(dom)s %(govern_the_unaligned)s, il a les mêmes avantages : un bon accélérateur"
 " au début pour sortir plus de vampires à moindre frais, une belle action de morsure plus tard."
 
-#: codex_of_the_damned/templates/best-cards/generic/presence.html:68
+#: codex_of_the_damned/templates/best-cards/generic/presence.html:58
 #, python-format
-msgid "One of the best vote modifier of the game with 4 votes at no cost at superior %(PRE)s."
-msgstr "Un des meilleurs modificateurs de voix du jeu avec 4 votes gratuits en %(PRE)s supérieure."
+msgid ""
+"The best bleed modifier of %(pre)s, it is inferior to %(dom)s %(conditioning)s, except for Toreador %(toreador)s. "
+"Still, such a strong bleed modifier is worth it for decks with no access to %(dom)s."
+msgstr ""
+"Le meilleur modificateur de morsure de %(pre)s, il est inférieur à %(dom)s %(conditioning)s, sauf pour les Toreador "
+"%(toreador)s. Un modificateur de morsure si puissant reste intéressant pour les decks sans accès à %(dom)s."
 
-#: codex_of_the_damned/templates/best-cards/generic/presence.html:74
+#: codex_of_the_damned/templates/best-cards/generic/presence.html:68
 #, python-format
 msgid ""
 "A bit more expensive than %(bewitching_oration)s, it gives a better guarantee to be able to get a vote through and "
@@ -9877,6 +9965,119 @@ msgid ""
 msgstr ""
 "Un peu plus cher que %(bewitching_oration)s, il donne une meilleure garantie de passer un voter et son coût peut être"
 " remboursé s'il est associé à %(voter_captivation)s."
+
+#: codex_of_the_damned/templates/best-cards/generic/presence.html:79
+#, python-format
+msgid "One of the best vote modifier of the game with 4 votes at no cost at superior %(PRE)s."
+msgstr "Un des meilleurs modificateurs de voix du jeu avec 4 votes gratuits en %(PRE)s supérieure."
+
+#: codex_of_the_damned/templates/best-cards/generic/presence.html:85
+msgid ""
+"An interesting strike: combat ends because it can be cycled easily if not needed, and also help some actions to go "
+"through occasionally."
+msgstr ""
+
+#: codex_of_the_damned/templates/best-cards/generic/protean.html:8
+#, python-format
+msgid ""
+"%(pro)s is a versatile discipline. It provides decent stealth, solid combat options including aggravated damage, and "
+"even a bit of intercept."
+msgstr ""
+
+#: codex_of_the_damned/templates/best-cards/generic/protean.html:17
+#, python-format
+msgid ""
+"It is considered the best <em>« combat ends »</em> card of the game. It comes at no cost at inferior %(pro)s, plus "
+"gives an unlock option at superior %(PRO)s, still at no cost."
+msgstr ""
+"Elle est considérée comme la meilleure carte de <em>« fin de combat »</em> du jeu. Gratuite en %(pro)s inférieur, "
+"elle offre une option de redressement en %(PRO)s supérieur, toujours sans coût."
+
+#: codex_of_the_damned/templates/best-cards/generic/protean.html:25
+#, python-format
+msgid "An excellent combination of <em>« combat ends »</em> and stealth, one of the most versatile tool of %(pro)s."
+msgstr ""
+"Une excellente combinaison de <em>« fin de combat »</em> et de discrétion, l'un des outils les plus polyvalents en "
+"%(pro)s."
+
+#: codex_of_the_damned/templates/best-cards/generic/protean.html:32
+#, python-format
+msgid ""
+"Providing either stealth or intercept depending on the need, you do not get much more versatile than this. A must-"
+"have in any %(PRO)s module."
+msgstr ""
+
+#: codex_of_the_damned/templates/best-cards/generic/protean.html:39
+#, fuzzy, python-format
+msgid ""
+"2 stealth at superior %(PRO)s is a strong stealth modifier, totally worth 1 blood. Combined with %(form_of_mist)s and"
+" %(form_of_the_bat)s, this is almost as stealthy as %(obf)s."
+msgstr ""
+"2 discrétion en %(PRO)s supérieure, c'est un modificateur de discrétion puissant, qui vaut bien 1 sang. Combiné avec "
+"%(form_of_mist)s, cela rend les Gangrel et leurs antitribus presque aussi furtifs qu'un vampire avec %(obf)s."
+
+#: codex_of_the_damned/templates/best-cards/generic/protean.html:50
+#, python-format
+msgid ""
+"A powerful and versatile stealth / unlock combination, the superior %(PRO)s%(CEL)s version is of course more "
+"desireable."
+msgstr ""
+
+#: codex_of_the_damned/templates/best-cards/generic/protean.html:57
+#, fuzzy, python-format
+msgid ""
+"The most dreaded combat card of the %(pro)s discipline, it is used <strong>after</strong> strikes have been chosen by"
+" both vampires and never wasted against a <em>dodge</em> or <em>combat ends</em>. The maneuver at superior %(PRO)s "
+"can come in handy. Finally, it works with a hand strike so %(immortal_grapple)s is useless against it. Note that "
+"Anarchs can also use the cheaper %(donnybrook)s, even though that one is a strike."
+msgstr ""
+"La carte de combat la plus redoutée de la discipline %(pro)s, elle est utilisée <strong> après </strong> le choix des"
+" frappes par les deux vampires et donc jamais perdue contre une <em>esquive</em> ou une <em>fin du combat</em>. La "
+"manœuvre en %(PRO)s supérieure peut être utile. Enfin, il c'est une frappe à mains nues donc %(immortal_grapple)s est"
+" inutile contre elle."
+
+#: codex_of_the_damned/templates/best-cards/generic/protean.html:71
+#, python-format
+msgid ""
+"A great stealth tool, especially when combined with %(the_platinum_protocol)s to put som corruption counters down in "
+"the first place. It is, of course, a favorite for Ministry %(ministry)s, but some other stars field it too, like "
+"%(the_unnamed)s, %(viktor_the_night_general)s or %(adana_de_sforza)s."
+msgstr ""
+
+#: codex_of_the_damned/templates/best-cards/generic/protean.html:85
+#, python-format
+msgid ""
+"Often paired with %(enchanting_gaze)s and, of course, %(the_platinum_protocol)s for Anarchs, it's a Ministry "
+"%(ministry)s favorite on par with %(bonding)s. Any %(PRE)s%(PRO)s deck can easily include a few of those."
+msgstr ""
+
+#: codex_of_the_damned/templates/best-cards/generic/protean.html:97
+#, python-format
+msgid ""
+"A powerful tool, especially when combined with the cards that allow to act during other players turn: "
+"%(madness_network)s and %(enkil_cog)s."
+msgstr ""
+"Un outil puissant, surtout lorsqu'il est combiné avec des cartes qui permettent d'agir pendant le tour des autres "
+"joueurs : %(madness_network)s et %(enkil_cog)s."
+
+#: codex_of_the_damned/templates/best-cards/generic/protean.html:107
+#, fuzzy, python-format
+msgid ""
+"Another stealth and <em>« combat ends »</em> combination. The cost of 1 blood is a bit pricey, but it completes the "
+"stealth arsenal of %(pro)s along %(form_of_mist)s, %(earth_control)s, and %(form_of_the_bat)s."
+msgstr ""
+"Une autre combinaison de discrétion et de <em>« fin de combat »</em>. Le coût d'un sang est un peu cher, mais il "
+"complète l'arsenal de discrétion de %(pro)s avec %(form_of_mist)s et %(earth_control)s."
+
+#: codex_of_the_damned/templates/best-cards/generic/protean.html:119
+#, fuzzy
+msgid ""
+"A good damage prevention card, it can handle heavy damage-dealing modules, even those using additonal strikes, with a"
+" single card."
+msgstr ""
+"Une bonne carte de prévention de dégâts, elle peut gérer des modules infligeant de lourds dégâts à elle seule, même "
+"ceux qui utilisent des frappes supplémentaires. Elle est souvent jouée aux côtés d'%(earth_meld)s comme solution "
+"contre les modules de combat %(pot)s qui utilisent %(immortal_grapple)s."
 
 #: codex_of_the_damned/templates/best-cards/sects/anarch.html:8
 #, python-format
@@ -9893,52 +10094,30 @@ msgid "The anarch variation is a possibility for many archetypes, and it gives a
 msgstr "La variante Anarch est possibile pour de nombreux archétypes, et elle donne accès à des cartes exclusives."
 
 #: codex_of_the_damned/templates/best-cards/sects/anarch.html:28
-msgid "A good pool-damage dealer if it can be defended, either with intercept capacities or votes."
-msgstr "Une bonne source de dégâts d'influence si elle peut être défendue avec des capacités d'interception ou des votes."
-
-#: codex_of_the_damned/templates/best-cards/sects/anarch.html:35
 #, python-format
 msgid ""
-"An excellent vote to deliver pool damage, its effect is strong than %(kine_resources_contested)s, for a higher blood "
-"cost. It is a bit tricky to gather enough independant or anarch votes to get it through, but worth the effort."
+"A relatively recent card released in 2021, it immediately topped the ranking of Anarch cards. A free bounce is "
+"something only %(redirection)s and %(my_enemys_enemy)s provided before."
 msgstr ""
-"Un excellent vote pour infliger des dégâts d'influence, son effet est plus fort que %(kine_resources_contested)s, "
-"pour un coût en sang plus élevé. Il est un peu difficile de rassembler suffisamment de votes Indépendants ou Anarch "
-"pour le faire passer, mais cela en vaut la peine."
 
-#: codex_of_the_damned/templates/best-cards/sects/anarch.html:43
+#: codex_of_the_damned/templates/best-cards/sects/anarch.html:39
 msgid ""
-"An excellent Master card, combining permanent intercept and the occasional blood bonus for the low cost of 1 pool. A "
-"no-brainer for most Anarch decks."
+"A great hunting ground, especially with a Baron around. It is basically two hunting grounds for the cost of one in "
+"that case."
 msgstr ""
-"Une excellente carte Maître, combinant interception permanente et bonus de sang occasionnel pour le faible coût d'un "
-"point d'influence. Une inclusion évidente pour la plupart des decks Anarch."
 
-#: codex_of_the_damned/templates/best-cards/sects/anarch.html:50
+#: codex_of_the_damned/templates/best-cards/sects/anarch.html:49
 #, python-format
 msgid ""
-"A versatile tool when playing a non-anarch crypt. It is the cheapest way to make a vampire anarch, although "
-"%(anarch_convert)s and %(the_red_question)s are excellent alternatives, but it can also bring some welcome blood back"
-" on the table on occasions."
+"Probably the best unlock device of the game. It provides less intercept than %(second_tradition)s, but it is free so "
+"can be played in numbers, and even stacked if one has multiple Barons available."
 msgstr ""
-"Un outil polyvalent lorsque l'on joue une crypte non Anarch. C'est le moyen le moins cher de rendre un vampire "
-"anarch, bien qu'%(anarch_convert)s et %(the_red_question)s soient d'excellentes alternatives, mais il peut aussi "
-"occasionallement ramener du sang sur la table."
 
-#: codex_of_the_damned/templates/best-cards/sects/anarch.html:62
-#, python-format
-msgid ""
-"With an effect similar to %(smiling_jack)s, they are most often played together for pool damage in decks that have "
-"enough block potential to defend it."
-msgstr ""
-"Avec un effet similaire à %(smiling_jack)s, ils sont le plus souvent joués ensemble pour infliger des dégâts "
-"d'influence dans les decks qui ont un potentiel de bloc suffisant pour les défendre."
-
-#: codex_of_the_damned/templates/best-cards/sects/anarch.html:69
+#: codex_of_the_damned/templates/best-cards/sects/anarch.html:59
 msgid "A decent source of stealth for a reasonable cost."
 msgstr "Une source de discrétion décente pour un coût raisonnable."
 
-#: codex_of_the_damned/templates/best-cards/sects/anarch.html:75
+#: codex_of_the_damned/templates/best-cards/sects/anarch.html:65
 #, python-format
 msgid ""
 "A very versatile combat utility, it finds it place in many Anarch decks with a combat module. The option to cancel an"
@@ -9947,7 +10126,49 @@ msgstr ""
 "Outil de combat très polyvalent, il trouve sa place dans de nombreux decks Anarch ayant un module de combat. La "
 "possibilité d'annuler un %(immortal_grapple)s peut sauver un serviteur."
 
-#: codex_of_the_damned/templates/best-cards/sects/anarch.html:82
+#: codex_of_the_damned/templates/best-cards/sects/anarch.html:72
+#, python-format
+msgid ""
+"An excellent recursion device, especially when it can be used to fetch a %(bait_and_switch)s or a "
+"%(reckless_agitation)s every turn. The ability to avoid combat with other Anarchs can also come in handy."
+msgstr ""
+
+#: codex_of_the_damned/templates/best-cards/sects/anarch.html:83
+#, fuzzy, python-format
+msgid ""
+"A great bleed enhancer, ideal to help with the lunge, even though the blood cost is steep. Combined with cards that "
+"help bring some blood back on the vampires, like %(the_anarch_free_press)s or %(dabbler)s, it becomes even better."
+msgstr ""
+"Un excellent améliorateur de morsure, même si le coût en sang peut être génant. Combiné avec des cartes qui aident à "
+"ramener un peu de sang sur les vampires, comme %(the_anarch_free_press)s et %(twilight_camp)s, il devient une "
+"excellente source de dégâts d'influence."
+
+#: codex_of_the_damned/templates/best-cards/sects/anarch.html:94
+#, fuzzy
+msgid ""
+"Combining permanent intercept and the occasional blood bonus for the low cost of 1 pool. A no-brainer for most Anarch"
+" decks."
+msgstr ""
+"Une excellente carte Maître, combinant interception permanente et bonus de sang occasionnel pour le faible coût d'un "
+"point d'influence. Une inclusion évidente pour la plupart des decks Anarch."
+
+#: codex_of_the_damned/templates/best-cards/sects/anarch.html:101
+#, python-format
+msgid ""
+"A great defensive reaction for both Gangrel %(gangrel)s and Tzimisce %(tzimisce)s. All three disciplines can be "
+"useful in different situations, making it very versatile."
+msgstr ""
+
+#: codex_of_the_damned/templates/best-cards/sects/anarch.html:108
+#, fuzzy, python-format
+msgid ""
+"With an effect similar to %(smiling_jack)s, they are even played together for pool damage in decks that have enough "
+"block potential to defend it."
+msgstr ""
+"Avec un effet similaire à %(smiling_jack)s, ils sont le plus souvent joués ensemble pour infliger des dégâts "
+"d'influence dans les decks qui ont un potentiel de bloc suffisant pour les défendre."
+
+#: codex_of_the_damned/templates/best-cards/sects/anarch.html:115
 msgid ""
 "Although costly, it is a good bleed enhancer that requires no discipline. Invaluable in decks that have no access to "
 "other bleed enhancers, it can be a decisive tool for a lunge."
@@ -9955,32 +10176,81 @@ msgstr ""
 "Bien que coûteux, c'est un bon améliorateur de morsure qui ne nécessite aucune discipline. Inestimable dans les decks"
 " qui n'ont pas accès à d'autres améliorateurs de morsure, il peut être un outil décisif pour un coup de grâce."
 
-#: codex_of_the_damned/templates/best-cards/sects/anarch.html:90
+#: codex_of_the_damned/templates/best-cards/sects/anarch.html:123
 #, python-format
 msgid ""
-"A unique effect that allows Anarch to recruit allies without the risk of being blocked, it can be used in ally-"
-"oriented archetypes like %(war_ghouls)s, %(khazar_s_diary)s or %(nephandii)s."
+"Cheaper, but more of a gamble than %(claws_of_the_dead)s, since it cannot be played after strikes are chosen. For "
+"Ministry %(ministry)s, %(obf)s can remove an intercept device like %(bowl_of_convergence)s or %(mr_winthrop)s."
 msgstr ""
-"Un effet unique qui permet aux Anarch de recruter des alliés sans risque d'être bloqué, il peut être utilisé dans des"
-" archétypes orientés alliés comme %(war_ghouls)s, %(khazar_s_diary)s ou %(nephandii)s."
 
-#: codex_of_the_damned/templates/best-cards/sects/anarch.html:102
+#: codex_of_the_damned/templates/best-cards/sects/anarch.html:136
+#, python-format
+msgid "A great intercept reaction, useful against Political decks and complementing %(organized_resistance)s beautifully."
+msgstr ""
+
+#: codex_of_the_damned/templates/best-cards/sects/anarch.html:145
+msgid ""
+"A decent rotation enhancer even without anarch cards, it becomes very useful if the unlock effect can be put to good "
+"use."
+msgstr ""
+"Un améliorateur de rotation décent même sans cartes Anarch, il devient très utile si l'effet de redressement peut "
+"être utilisé à bon escient."
+
+#: codex_of_the_damned/templates/best-cards/sects/anarch.html:152
+#, fuzzy, python-format
+msgid ""
+"An excellent vote to deliver pool damage, its effect is stronger than %(kine_resources_contested)s, for a higher "
+"blood cost."
+msgstr ""
+"Un excellent vote pour infliger des dégâts d'influence, son effet est plus fort que %(kine_resources_contested)s, "
+"pour un coût en sang plus élevé. Il est un peu difficile de rassembler suffisamment de votes Indépendants ou Anarch "
+"pour le faire passer, mais cela en vaut la peine."
+
+#: codex_of_the_damned/templates/best-cards/sects/anarch.html:159
 #, python-format
 msgid ""
-"An excellent bleed enhancer, although the blood cost can be a bummer. Combined with cards that help bring some pool "
-"back on the vampires, like %(the_anarch_free_press)s and %(twilight_camp)s, it becomes a frightening pool damage "
-"device."
+"Mostly played for its %(obf)s effect, its %(pro)s intercept can come in handy from time to time. Often seen in Ravnos"
+" %(ravnos)s or Ministry %(ministry)s decks, alongside %(visions_of_zapathasura)s"
 msgstr ""
-"Un excellent améliorateur de morsure, même si le coût en sang peut être génant. Combiné avec des cartes qui aident à "
-"ramener un peu de sang sur les vampires, comme %(the_anarch_free_press)s et %(twilight_camp)s, il devient une "
-"excellente source de dégâts d'influence."
 
-#: codex_of_the_damned/templates/best-cards/sects/anarch.html:114
+#: codex_of_the_damned/templates/best-cards/sects/anarch.html:167
 #, python-format
-msgid "A nice way to make a vampire anarch at no cost, it is often played alongside %(twilight_camp)s"
-msgstr "Utile pour rendre un vampire Anarch gratuitement, il est souvent joué aux côtés de %(twilight_camp)s"
+msgid ""
+"Nicknamed the \"Death Star\" since the first %(death_star)s archetype, it's a potential game winner all by itself. "
+"With enough minions and votes, there is no limit to the damage one can inflict with this single vote."
+msgstr ""
 
-#: codex_of_the_damned/templates/best-cards/sects/anarch.html:121
+#: codex_of_the_damned/templates/best-cards/sects/anarch.html:177
+#, python-format
+msgid ""
+"Mainly used by the Ministry %(ministry)s, but also in some %(the_unnamed)s decks. An excellent bleed action when the "
+"threee disciplines are available. The corruption counter %(pro)s brings can be used by %(enchanting_gaze)s or "
+"%(revelation_of_the_serpent)s."
+msgstr ""
+
+#: codex_of_the_damned/templates/best-cards/sects/anarch.html:190
+#, fuzzy
+msgid ""
+"A good pool-damage dealer if it can be defended, either with intercept capacities or votes. Ideal if one can rush the"
+" prey's Anarch vampires and put them in torpor."
+msgstr "Une bonne source de dégâts d'influence si elle peut être défendue avec des capacités d'interception ou des votes."
+
+#: codex_of_the_damned/templates/best-cards/sects/anarch.html:197
+#, python-format
+msgid ""
+"A versatile strike, especially for Anarch Brujah %(brujah)s. %(pot)s strikes hard, and %(cel)s allows to avoid damage"
+" from the opponent, and one can choose one or the other depending on the situation."
+msgstr ""
+
+#: codex_of_the_damned/templates/best-cards/sects/anarch.html:207
+#, python-format
+msgid ""
+"A great action, mainly for Brujah %(brujah)s, reminiscent of %(deep_song)s. The ability to rush or bleed is very "
+"useful, and the %(cel)s pool steal can be useful to keep a low profile or avoid a bounce on the lunge for the last "
+"pool damage."
+msgstr ""
+
+#: codex_of_the_damned/templates/best-cards/sects/anarch.html:217
 #, python-format
 msgid ""
 "A versatile combat tool for vampires having both %(cel)s and %(for)s, the choice between prevention and additional "
@@ -9991,41 +10261,37 @@ msgstr ""
 "supplémentaire est une combinaison unique : il est peu probable qu'il enraye la main et peut aider offensivement ou "
 "défensivement selon la situation."
 
-#: codex_of_the_damned/templates/best-cards/sects/anarch.html:130
-msgid ""
-"A decent rotation enhancer even without anarch cards, it becomes very useful if the unlock effect can be put to good "
-"use."
+#: codex_of_the_damned/templates/best-cards/sects/anarch.html:226
+#, python-format
+msgid "An excellent %(a_b)s boost in %(pro)s or %(tha)s. There is no shortage of good Anarch actions that allow it."
 msgstr ""
-"Un améliorateur de rotation décent même sans cartes Anarch, il devient très utile si l'effet de redressement peut "
-"être utilisé à bon escient."
 
-#: codex_of_the_damned/templates/best-cards/sects/anarch.html:137
+#: codex_of_the_damned/templates/best-cards/sects/anarch.html:235
 #, python-format
 msgid ""
-"Although it provides no bleed bonus, having a stealthed bleed for %(pre)s is a powerful tool, moreover when combined "
-"with %(power_of_one)s to deliver a 2 stealth 2 pool bleed. The bloat effect is a nice bonus too."
+"A good damaging vote one can use to target a single Methuselah, or wittle down a whole table. It can pass easily when"
+" combined with the Edge and some vote modifier like %(propaganda_of_the_deed)s."
 msgstr ""
-"Bien qu'il n'offre aucun bonus de morsure, avoir une morsure avec discrétion pour %(pre)s est un outil puissant, "
-"d'autant plus s'il est combiné à %(power_of_one)s pour produire une morsure de 2 avec 2 de discrétion. L'effet de "
-"régénération est également un bon bonus."
 
-#: codex_of_the_damned/templates/best-cards/sects/anarch.html:145
+#: codex_of_the_damned/templates/best-cards/sects/anarch.html:245
 #, python-format
 msgid ""
-"Although pricier than %(bonding)s, it provides stealth and bleed power at inferior %(pre)s, which makes it usable by "
-"lower capacity vampires."
+"A nice stealth modifier that does not jam the hand at %(obf)s, it becomes even better with %(pre)s, packing some "
+"combat defense that makes the action that much less appealing to block."
 msgstr ""
-"Bien que plus coûteux que %(bonding)s, il fournit discrétion et bonus de morsure en %(pre)s inférieur, ce qui le rend"
-" utilisable par des vampires de moindre capacité."
 
-#: codex_of_the_damned/templates/best-cards/sects/anarch.html:153
+#: codex_of_the_damned/templates/best-cards/sects/anarch.html:255
+msgid ""
+"A solid rush device when Barons are available. It is pretty hard to burn for the rest of the table, which will rarely"
+" come together to remove it and pay the steep pool cost."
+msgstr ""
+
+#: codex_of_the_damned/templates/best-cards/sects/anarch.html:262
 #, python-format
 msgid ""
-"A decent recursion device, it is often seen in political decks, like %(death_star)s, where it can be used to get back"
-" some critical pool damaging vote in hand."
+"Useful both for the defensive dodge-and-strike at %(ani)s and the unlimited additional at %(cel)s. More rarely used "
+"at %(obt)s, although the effect is interesting too."
 msgstr ""
-"Un outil de récursion décent, il est souvent présent dans les decks politiques, comme %(death_star)s, où il peut être"
-" utilisé pour récupérer un vote critique pour des dégâts d'influence."
 
 #: codex_of_the_damned/templates/best-cards/sects/camarilla.html:8
 msgid ""
@@ -19659,4 +19925,162 @@ msgstr ""
 #~ "%(promo_pack_2)s contient des Barons pour quelques clans, et "
 #~ "plusieurs sont utilisés dans des decks très compétitifs de "
 #~ "nos jours (Infernal Princes, Gangrel Barons)."
+
+#~ msgid ""
+#~ "A powerful and versatile stealth / unlock combination, mostly "
+#~ "available to Gangrel antitribu, but also to some rare "
+#~ "vampires with access to the %(PRO)s%(CEL)s combination."
+#~ msgstr ""
+#~ "Une combinaison discrétion / redressement polyvalente, principalement "
+#~ "disponible pour les Gangrel antitribu, mais aussi les rares "
+#~ "vampires ayant accès à la combinaison %(PRO)s%(CEL)s."
+
+#~ msgid ""
+#~ "A good intercept reaction: +2 intercept bonus at superior "
+#~ "%(CEL)s%(AUS)s, stackable with other %(aus)s reactions, is already "
+#~ "good enough. The additional maneuver is a nice touch, as "
+#~ "%(cel)s%(aus)s constructs often use guns in their combat module."
+#~ msgstr ""
+#~ "Une bonne réaction d'interception : +2 bonus d'interception en "
+#~ "%(CEL)s%(AUS)s supérieur, cumulable avec d'autres réactions %(aus)s, est"
+#~ " déjà assez bon. La manœuvre supplémentaire est pratique, car"
+#~ " les decks %(cel)s%(aus)s utilisent souvent des armes à feu "
+#~ "dans leur module de combat."
+
+#~ msgid ""
+#~ "High damage prevention at no cost, it is efficient against"
+#~ " light combat modules using %(weighted_walking_stick)s or "
+#~ "%(carrion_crows)s. However, it is useless against additional strikes "
+#~ "and aggravated damage."
+#~ msgstr ""
+#~ "Haute prévention des dégâts gratuit, il est efficace contre "
+#~ "les modules de combat légers utilisant %(weighted_walking_stick)s ou "
+#~ "%(carrion_crows)s. Cependant, il est inutile contre des frappes "
+#~ "supplémentaires ou des dégâts aggravés."
+
+#~ msgid ""
+#~ "Before its <em>errata</em> in 2018, it permitted to take "
+#~ "back as much blood as desired from the target vampire "
+#~ "with no upper limit. Its <em>Trifle</em> trait made it one"
+#~ " of the best leech option, besting %(minion_tap)s. The "
+#~ "<em>errata</em> made %(minion_tap)s relevant again, although only when"
+#~ " getting more than 5 blood from a vampire is relevant."
+#~ msgstr ""
+#~ "Avant son <em>errata</em> en 2018, il permettait de récupérer "
+#~ "autant de sang que souhaité du vampire cible sans limite "
+#~ "supérieure. Son trait <em>Trifle</em> en a fait l'une des "
+#~ "meilleures options de transfusion, surpassant %(minion_tap)s. L "
+#~ "'<em>errata</em> a rendu %(minion_tap)s pertinent à nouveau, même "
+#~ "si ce n'est que lorsqu'il est crédible de prendre plus "
+#~ "de 5 sang à un vampire."
+
+#~ msgid ""
+#~ "A nice tool for <em>powerbleed</em> decks, it helps to get"
+#~ " bleeds through when one has no stealth. Although a bit"
+#~ " expensive, it is often a key card for the lunge in"
+#~ " such decks."
+#~ msgstr ""
+#~ "Un bel outil pour les decks <em>powerbleed</em>, il aide à"
+#~ " faire passer les morsures quand on n'a pas de "
+#~ "discrétion. Bien qu'un peu cher, c'est souvent une carte clé"
+#~ " pour le coup de grâce dans de tels decks."
+
+#~ msgid ""
+#~ "An good bloat device, it helps to get multiple big "
+#~ "capacity vampires out at a reasonnable cost. Even better "
+#~ "with crypt accelerators like %(zillah_s_valley)s and %(information_highway)s,"
+#~ " it has long been outclassed by %(villein)s, until the "
+#~ "<em>errata</em> of 2018 setting an upper limit of 5 blood."
+#~ msgstr ""
+#~ "Un bon outil de régénération, il aide à sortir plusieurs "
+#~ "vampires de grande capacité à un coût raisonnable. Encore "
+#~ "meilleur avec des accélérateurs de crypte comme %(zillah_s_valley)s "
+#~ "et %(information_highway)s, il a longtemps été surclassé par "
+#~ "%(villein)s, jusqu'à ce que l '<em>errata</em> de 2018 établisse"
+#~ " une limite supérieure de 5 sang."
+
+#~ msgid "An excellent ally remover at no cost, it can even be used against low capacity vampires."
+#~ msgstr "Excellent dissolvant d'allié sans frais, il peut même être utilisé contre les vampires de faible capacité."
+
+#~ msgid "A decent wake reaction, it becomes very good in allies-oriented decks once %(the_unmasking)s is in play."
+#~ msgstr ""
+#~ "Réaction de réveil décente, elle devient très bonne dans les"
+#~ " decks orientés alliés une fois que %(the_unmasking)s est en"
+#~ " jeu."
+
+#~ msgid "A good addition to allies and imbued decks, his ability does not require an action and can be used anytime."
+#~ msgstr ""
+#~ "Un bon ajout aux alliés et aux decks Illuminés, son "
+#~ "aptitude ne nécessite aucune action et peut être utilisée à"
+#~ " tout moment."
+
+#~ msgid ""
+#~ "A strong damage dealing vote against builds with many "
+#~ "minions, it does offer a little bit more control than "
+#~ "%(anarchist_uprising)s and %(ancilla_empowerment)s, but will deal less "
+#~ "damage. An option often favored by breed constructs themselves."
+#~ msgstr ""
+#~ "Un vote fort infligeant des dégâts contre les decks avec "
+#~ "de nombreux serviteurs, il offre un peu plus de contrôle "
+#~ "qu'%(anarchist_uprising)s et %(ancilla_empowerment)s, mais infligera moins de"
+#~ " dégâts. Une option souvent favorisée par les decks de "
+#~ "prolifération eux-mêmes."
+
+#~ msgid ""
+#~ "A versatile tool when playing a non-anarch crypt. It "
+#~ "is the cheapest way to make a vampire anarch, although "
+#~ "%(anarch_convert)s and %(the_red_question)s are excellent alternatives, but"
+#~ " it can also bring some welcome blood back on the "
+#~ "table on occasions."
+#~ msgstr ""
+#~ "Un outil polyvalent lorsque l'on joue une crypte non Anarch."
+#~ " C'est le moyen le moins cher de rendre un vampire "
+#~ "anarch, bien qu'%(anarch_convert)s et %(the_red_question)s soient "
+#~ "d'excellentes alternatives, mais il peut aussi occasionallement ramener"
+#~ " du sang sur la table."
+
+#~ msgid ""
+#~ "A unique effect that allows Anarch to recruit allies without"
+#~ " the risk of being blocked, it can be used in "
+#~ "ally-oriented archetypes like %(war_ghouls)s, %(khazar_s_diary)s or "
+#~ "%(nephandii)s."
+#~ msgstr ""
+#~ "Un effet unique qui permet aux Anarch de recruter des "
+#~ "alliés sans risque d'être bloqué, il peut être utilisé dans"
+#~ " des archétypes orientés alliés comme %(war_ghouls)s, %(khazar_s_diary)s"
+#~ " ou %(nephandii)s."
+
+#~ msgid "A nice way to make a vampire anarch at no cost, it is often played alongside %(twilight_camp)s"
+#~ msgstr "Utile pour rendre un vampire Anarch gratuitement, il est souvent joué aux côtés de %(twilight_camp)s"
+
+#~ msgid ""
+#~ "Although it provides no bleed bonus, having a stealthed "
+#~ "bleed for %(pre)s is a powerful tool, moreover when combined"
+#~ " with %(power_of_one)s to deliver a 2 stealth 2 pool "
+#~ "bleed. The bloat effect is a nice bonus too."
+#~ msgstr ""
+#~ "Bien qu'il n'offre aucun bonus de morsure, avoir une morsure"
+#~ " avec discrétion pour %(pre)s est un outil puissant, d'autant"
+#~ " plus s'il est combiné à %(power_of_one)s pour produire une "
+#~ "morsure de 2 avec 2 de discrétion. L'effet de régénération"
+#~ " est également un bon bonus."
+
+#~ msgid ""
+#~ "Although pricier than %(bonding)s, it provides stealth and bleed"
+#~ " power at inferior %(pre)s, which makes it usable by "
+#~ "lower capacity vampires."
+#~ msgstr ""
+#~ "Bien que plus coûteux que %(bonding)s, il fournit discrétion "
+#~ "et bonus de morsure en %(pre)s inférieur, ce qui le "
+#~ "rend utilisable par des vampires de moindre capacité."
+
+#~ msgid ""
+#~ "A decent recursion device, it is often seen in political "
+#~ "decks, like %(death_star)s, where it can be used to get "
+#~ "back some critical pool damaging vote in hand."
+#~ msgstr ""
+#~ "Un outil de récursion décent, il est souvent présent dans"
+#~ " les decks politiques, comme %(death_star)s, où il peut être"
+#~ " utilisé pour récupérer un vote critique pour des dégâts "
+#~ "d'influence."
 

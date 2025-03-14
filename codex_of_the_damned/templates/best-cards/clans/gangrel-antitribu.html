@@ -1,0 +1,74 @@
+{% extends "best-cards/_layout.html" %}
+{% import "best-cards/_layout_card_column.html" as layout with context%}
+
+{% block content %}
+<h1>{{ gangrel_antitribu }} Gangrel Antitribu</h1>
+<div class="insert tip">
+    <p>
+        {% trans trimmed
+        enkidu_multirush=link("/archetypes/enkidu-multirush")
+        %}
+        The Gangrel Antiribu, with their {{ pro }}{{ cel }}{{ obf }} disciplines,
+        are versatile and can fight as well as bleed. They are particularily
+        fear for their {{ enkidu_multirush }} archetype.
+        {% endtrans %}
+    </p>
+</div>
+
+{% call layout.card_column("Aksinya Daclau", decks=19, copies="2-4") %}
+{% trans trimmed girls_will_find_inner_circle=link("/archetypes/girls-will-find-inner-circle") %}
+Her unique ability makes for a solid bleed defense worth her cost all by itself. She is a key member
+of the {{ girls_will_find_inner_circle }} crypt.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Hartmut Stover", decks=18, copies="1-3") %}
+{% trans trimmed stanislava=card("Stanislava") %}
+A good voter, often seen alongside {{ stanislava }}.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Joseph Fischer", decks=13, copies="1") %}
+{% trans trimmed %}
+A cheap anarch with suprior {{ PRO }}, that gets him in some Anarch crypt.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Enkidu, The Noah", decks=11, copies="2-5") %}
+{% trans trimmed enkidu_multirush=link("/archetypes/enkidu-multirush") %}
+Star of the clan and brutal fighter, he has his own archetype, {{ enkidu_multirush }}
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Genevieve", decks=10, copies="1") %}
+{% trans trimmed stanislava=card("Stanislava") %}
+A great voter, also a good friend of {{ stanislava }}.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Twisted Forest", decks=5, copies="1") %}
+{% trans trimmed stanislava=card("Stanislave") %}
+A nice stealth location at a normal price.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Sébastien Goulet", decks=4, copies="2-4") %}
+{% trans trimmed
+shadow_court_satyrs=link("/archetypes/shadow-court-satyrs"),
+advanced_version=card("Sébastien Goulet (ADV)", _("advanced version"))
+%}
+Leader of the {{ shadow_court_satyrs }} archetype, he gets even better when merged
+with his {{ advanced_version }}.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Shadow Court Satyr", decks=3, copies="7-10") %}
+{% trans trimmed
+own_archetype=link("/archetypes/shadow-court-satyrs", _("own archetype")),
+sebastien_goulet=card("Sébastien Goulet")
+%}
+A special ally, they have their {{ own_archetype }} and are usually recruited by {{ sebastien_goulet }}
+{% endtrans %}
+{% endcall %}
+
+{% endblock %}

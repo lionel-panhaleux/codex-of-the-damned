@@ -3,6 +3,10 @@
 
 {% block content %}
 <h1>{{ ahrimane }} Ahrimanes</h1>
+<div class="insert warn">
+    This list is compiled from statistics encompassing 30 years,
+    as the clan has not scored enough wins in the last 5 years for relevant statistics otherwise.
+</div>
 <div class="insert tip">
     {% trans trimmed
     howler=card("Howler"),
@@ -29,14 +33,28 @@
     {% endtrans %}
 </div>
 
-{% call layout.card_column('Effie Lowery', decks=36, copies="1-3") %}
+{% call layout.card_column('Howler', decks=43, copies="3-5") %}
+{% trans trimmed %}
+Leader of the group 2 crypt, she has all clan disciplines {{ SPI }}{{ ANI }}{{ PRE }} at superior
+for a cost of 8. The maneuver combined with the +1 strength bonus makes her a good warrior on her
+own.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column('The Siamese', decks=42, copies="2-3") %}
+{% trans trimmed howler=card("Howler") %}
+{{ howler }}'s best sidekick. The bleed bonus is huge.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column('Effie Lowery', decks=41, copies="1-3") %}
 {% trans trimmed %}
 Superior {{ ANI }} and {{ SPI }} at a very decent cost of 5,
 she is even included in pure {{ ANI }} crypts.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column('Muricia', decks=23, copies="2-4") %}
+{% call layout.card_column('Muricia', decks=26, copies="2-4") %}
 {% trans trimmed
 aid_from_bats=card("Aid From Bats"),
 carrion_crows=card("Carrion Crows")
@@ -47,15 +65,7 @@ for a reasonnable cost of 7. The +1 strength bonus is always good to take: she c
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column('Howler', decks=17, copies="4-5") %}
-{% trans trimmed %}
-Leader of the group 2 crypt, she has all clan disciplines {{ SPI }}{{ ANI }}{{ PRE }} at superior
-for a cost of 8. The maneuver combined with the +1 strength bonus makes her a good warrior on her
-own.
-{% endtrans %}
-{% endcall %}
-
-{% call layout.card_column('Nose of the Hound', decks=41, copies="1-4") %}
+{% call layout.card_column('Nose of the Hound', decks=92, copies="1-4") %}
 {% trans trimmed
 bums_rush=card("Bum's Rush"),
 deep_song=card("Deep Song")
@@ -66,28 +76,7 @@ arguably better {{ deep_song }} already.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column('Speak with Spirits', decks=36, copies="6-11") %}
-{% trans trimmed %}
-An excellent unlock and intercept reaction, the core of most Ahrimanes defensive modules.
-An unlock is better than a simple wake, and the card is cheap: it costs blood only if
-both unlock and intercept are needed.
-{% endtrans %}
-{% endcall %}
-
-{% call layout.card_column('Swiftness of the Stag', decks=35, copies="5-9") %}
-{% trans trimmed
-aid_from_bats=card("Aid From Bats"),
-carrion_crows=card("Carrion Crows"),
-resist_earths_grasp=card("Resist Earth's Grasp")
-%}
-A versatile tool: it is decisive in combat and works well with the {{ ani }}
-classic combination of {{ aid_from_bats }} and {{ carrion_crows }}.
-Moreover, the optional +1 stealth is very useful to get critical actions through.
-It is a straight upgrade over the similar {{ resist_earths_grasp }}.
-{% endtrans %}
-{% endcall %}
-
-{% call layout.card_column("Falcon's Eye", decks=34, copies="2-5") %}
+{% call layout.card_column("Falcon's Eye", decks=64, copies="2-5") %}
 {% trans trimmed
 eagles_sight=card("Eagle's Sight"),
 anneke=card("Anneke"),
@@ -99,17 +88,24 @@ The ability to intercept one's prey bleed or a cross-table vote is critical to {
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Ears of the Hare", decks=28, copies="2-4") %}
+{% call layout.card_column('Speak with Spirits', decks=63, copies="6-11") %}
+{% trans trimmed %}
+An excellent unlock and intercept reaction, the core of most Ahrimanes defensive modules.
+An unlock is better than a simple wake, and the card is cheap: it costs blood only if
+both unlock and intercept are needed.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column('Swiftness of the Stag', decks=62, copies="5-9") %}
 {% trans trimmed
-enhanced_senses=card("Enhanced Senses"),
-falcons_eye=card("Falcon's Eye"),
-speak_with_spirits=card("Speak with Spirits"),
-cats_guidance=card("Cat's Guidance")
+aid_from_bats=card("Aid From Bats"),
+carrion_crows=card("Carrion Crows"),
+resist_earths_grasp=card("Resist Earth's Grasp")
 %}
-A strong intercept boost on par with {{ aus }} {{ enhanced_senses }},
-this completes the {{ spi }} toolset for intercept. Combined with
-{{ falcons_eye }} and {{ speak_with_spirits }}, along {{ ani }} {{ cats_guidance }},
-it delivers an intercept module as solid as {{ aus }}.
+A versatile tool: it is decisive in combat and works well with the {{ ani }}
+classic combination of {{ aid_from_bats }} and {{ carrion_crows }}.
+Moreover, the optional +1 stealth is very useful to get critical actions through.
+It is a straight upgrade over the similar {{ resist_earths_grasp }}.
 {% endtrans %}
 {% endcall %}
 

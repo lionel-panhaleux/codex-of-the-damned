@@ -1,0 +1,79 @@
+{% extends "archetypes/_layout.html" %}
+{% import "archetypes/_layout-erratum.html" as erratum with context %}
+{% import "archetypes/new-kids/piper-war-ghoul-24.json" as deck_json %}
+
+{% block meta %}
+<meta property="decklist" content='{{ deck_json | tojson }}' />
+{% endblock %}
+
+{% block archetype_name %}
+<h1>{{ tzimisce }} Piper War Ghoul '24</h1>
+{% endblock %}
+
+{% block archetype %}
+{% trans trimmed
+anarch_convert=card("Anarch Convert"),
+anathema=card("Anathema"),
+asanbonsam_ghoul=card("Asanbonsam Ghoul"),
+carlton_van_wyk=card("Carlton Van Wyk"),
+direct_intervention=card("Direct Intervention"),
+dragonbound=card("Dragonbound"),
+entrancement=card("Entrancement"),
+fake_out=card("Fake Out"),
+jake_washington=card("Jake Washington"),
+maris_streck=card("Maris streck"),
+ossian=card("Ossian"),
+parity_shift=card("Parity Shift"),
+piper=card("Piper"),
+the_unmasking=card("The Unmasking"),
+trap=card("Trap"),
+vozhd_of_sofia=card("Vozhd of Sofia"),
+war_ghoul=card("War Ghoul"),
+war_ghouls=link("/archetypes/war-ghouls")
+%}
+<h2>Highlights</h2>
+<p>
+    This is a <em>rush</em> deck using multiple {{ war_ghoul }}
+    to rush the opponents vampires.
+</p>
+<p>
+    The idea is to get a {{ war_ghoul }} into play as soon as possible,
+    using a low capacity Tzimisce, {{ piper }} to recruit it, and {{ jake_washington }} as a sacrifice.
+    The {{ war_ghoul }} then proceeds to taking down every vampire on the table,
+    using {{ fake_out }} and {{ trap }} as needed.
+</p>
+<p>
+    Other allies and retainers can be recruited to be sacrificed to more {{ war_ghouls }}.
+    {{ ossian }} and {{ vozhd_of_sofia }} if drawn, may even be better than a {{ war_ghoul }}.
+</p>
+<p>
+    The deck uses low capacity vampires with {{ dom }} to bounce bleeds and
+    {{ pro }} for unlock and intercept. {{ deep_ecology }} and {{ one_with_the_land }} allows them to go up to
+    4 intercept against direct actions. Pool damage is done with {{ dragonbound }} and naked bleed once all the prey's
+    vampires are down.
+</p>
+<h2>Tips & Tricks</h2>
+<p>
+    {{ asanbonsam_ghoul }} and {{ carlton_van_wyk }} can help with the defense,
+    they can both get up to 2 intercept with {{ the_unmasking }}.
+    and {{ direct_intervention }} is a ultimate recourse against ally theft cards like {{ entrancement }}
+</p>
+<p>
+    This a fast and aggressive deck and will likely attract the table attention.
+    It should try to keep control of the whole table if possible.
+</p>
+<p>
+    Letting some vampires live on the predator side can be a good way
+    to bounce their bleed and deliver additional pool damage to the prey.
+</p>
+<p>
+    The deck is particularily fragile against political decks, so voter should probably be taken out first.
+</p>
+<h2>Variants</h2>
+<p>
+    It is, of course, close to the original {{ war_ghouls }} archetype,
+    but it is arguable even better at it, since the {{ dom }}{{ pro }} combination is better for defense,
+    and the vampires being Anarch to start with, there is no need to fret
+</p>
+{% endtrans %}
+{% endblock %}

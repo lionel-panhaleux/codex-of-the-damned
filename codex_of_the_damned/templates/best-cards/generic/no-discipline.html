@@ -4,7 +4,7 @@
 {% block content %}
 <h1>{{ _("No discipline") }}</h1>
 
-{% call layout.card_column("On the Qui Vive", decks=1318, copies="2-5") %}
+{% call layout.card_column("On the Qui Vive", decks=510, copies="2-4") %}
 {% trans trimmed %}
 Wake reaction cards are played in most decks.
 This one has no requirement, no cost and is immediately replaced, plus it can be used by
@@ -13,7 +13,15 @@ turn limit.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Delaying Tactics", decks=625, copies="1-3") %}
+{% call layout.card_column("Heart of Nizchetus", decks=299, copies="1-2") %}
+{% trans trimmed %}
+A cheap way to ensure an optimal card rotation throughout the game. It has no direct
+effect on the table so it is often overlooked, even though the fluidity it confers is
+a sure path to victory.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Delaying Tactics", decks=266, copies="1-3") %}
 {% trans trimmed consanguineous_boon=card("Consanguineous Boon") %}
 A very widespread defence against political actions. The action can still be performed
 again a turn later, but breaking a predator's lunge or preventing a prey's
@@ -22,24 +30,7 @@ taken place.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Heart of Nizchetus", decks=538, copies="1-2") %}
-{% trans trimmed %}
-A cheap way to ensure an optimal card rotation throughout the game. It has no direct
-effect on the table so it is often overlooked, even though the fluidity it confers is
-a sure path to victory.
-{% endtrans %}
-{% endcall %}
-
-{% call layout.card_column("Carlton Van Wyk", decks=533, copies="1") %}
-{% trans trimmed %}
-By far the most played ally of the game, he is an excellent blocker for a cheap price.
-An excellent addition in virtually any deck. Its combat ability makes him quite hard to
-take down and his existence alone is a deterrent to diablery, as he can be put into play
-to destroy the diabolist the next turn.
-{% endtrans %}
-{% endcall %}
-
-{% call layout.card_column("Taste of Vitae", decks=466, copies="2-6") %}
+{% call layout.card_column("Taste of Vitae", decks=180, copies="3-6") %}
 {% trans trimmed
 minion_tap=card("Minion Tap"),
 blood_doll=card("Blood Doll")
@@ -49,7 +40,25 @@ helps leech with cards like {{ minion_tap }} or {{ blood_doll }}.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Ivory Bow", decks=421, copies="1") %}
+{% call layout.card_column("Carlton Van Wyk", decks=163, copies="1") %}
+{% trans trimmed %}
+By far the most played ally of the game, he is an excellent blocker for a cheap price.
+An excellent addition in virtually any deck. Its combat ability makes him quite hard to
+take down and his existence alone is a deterrent to diablery, as he can be put into play
+to destroy the diabolist the next turn.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Enkil Cog", decks=158, copies="1-3") %}
+{% trans trimmed archon_investigation=card("Archon Investigation") %}
+A permanent bleed boost at no cost, it allows acting during other players turns:
+at the end of the predator turn to stay unlocked, or during the prey turn to bleed hard
+whithout fear of {{ archon_investigation }}. With a way to unlock the vampire,
+it lets a minion bleed twice in consecutive turns.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Ivory Bow", decks=133, copies="1") %}
 {% trans trimmed %}
 It provides a deadly aggravated strike at any range for just one pool and is therefore
 the most cost-effective weapon of the game. Any deck expecting actual combat can play
@@ -57,15 +66,89 @@ it.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Wake with Evening's Freshness", decks=383, copies="1-5") %}
-{% trans trimmed on_the_qui_vive=card("On the Qui Vive") %}
-Although only usable by a vampire and not replaced until the next turn, it has the
-advantage to be playable multiple times, so it is a good complement to the more common
-{{ on_the_qui_vive }}.
+{% call layout.card_column("The Unmasking", decks=107, copies="1-3") %}
+{% trans trimmed %}
+A key card to ally-oriented decks, it transforms any ally setup into a very cumbersome
+wall. An overall intercept bonus at no cost is already good, plus being an event makes
+it hard to remove from the table.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Forced Awakening", decks=342, copies="1-6") %}
+{% call layout.card_column("Aranthebes, The Immortal", decks=96, copies="1") %}
+{% trans trimmed %}
+A cheap permanent intercept device, although affecting only the predator. As a bonus,
+it can have a devastative effect against weenie constructs.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Mr. Winthrop", decks=95, copies="1") %}
+{% trans trimmed %}
+Permanent intercept bonus at no cost, it is a good addition in any deck packing a
+defensive module with some intercept.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column(".44 Magnum", decks=90, copies="1-6") %}
+{% trans trimmed %}
+The optional maneuver make it a cost-efficient option when it comes to weapons. It is
+often combined with {{ cel }} for maximum efficiency as it is not limited to a
+single strike per round or combat: additional strikes transform this weapon into a real
+tool of destruction.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Sniper Rifle", decks=90, copies="1-3") %}
+{% trans trimmed grinding=link("/strategy/combat", _("grinding"), _anchor="posture") %}
+An excellent option for decks with good intercept capabilities, it makes blocks more
+threatening and keep closed combat modules at range, excellent for {{ grinding }}.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Scourge of the Enochians", decks=88, copies="1") %}
+{% trans trimmed the_embrace=card("The Embrace") %}
+A death sentence for breed decks at no cost, it is often included in slow decks that
+have difficulties to cope with the overwhelming numbers of minions produced by decks
+creating newborn vampires with cards like {{ the_embrace }}.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Target Vitals", decks=85, copies="3-7") %}
+{% trans trimmed %}
+An excellent combat option, it usually gets through against deck with no heavy combat
+module. A single aggravated damage can even become three and burn a vampire. Because any
+minion can use it, it is also included in ally oriented decks.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Narrow Minds", decks=75, copies="1") %}
+{% trans trimmed
+deflection=card("Deflection"),
+telepathic_misdirection=card("Telepathic Misdirection")
+%}
+An easy way to hinder bounce defense relying on cards like {{ deflection }} or
+{{ telepathic_misdirection }}, especially for those who do not bounce themselves.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Mylan Horseed", decks=70, copies="1") %}
+{% trans trimmed
+a_b=link("/strategy/fundamentals", _("A&B"), _anchor="AB")
+%}
+Played in decks with non-Camarilla big capacity vampires, it is a straight-up boost in
+{{ a_b }} for just one pool. Hard to block and hard to destroy in combat, he is safe in
+many situations.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("FBI Special Affairs Division", decks=54, copies="1") %}
+{% trans trimmed the_unmasking=card("The Unmasking") %}
+It is a good deterrent and help keep allies alive, but is only worth playing if the
+allies have a good chance to block vampires and is therefore always accompanied by
+{{ the_unmasking }}.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Forced Awakening", decks=54, copies="1-4") %}
 {% trans trimmed
 on_the_qui_vive=card("On the Qui Vive"),
 wake_with_evening_s_freshness=card("Wake with Evening's Freshness")
@@ -76,57 +159,24 @@ complement or alternative to {{ on_the_qui_vive }} and
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Aranthebes, The Immortal", decks=326, copies="1") %}
-{% trans trimmed %}
-A cheap permanent intercept device, although affecting only the predator. As a bonus,
-it can have a devastative effect against weenie constructs.
+{% call layout.card_column("Concealed Weapon", decks=52, copies="3-8") %}
+{% trans trimmed magnum=card(".44 Magnum") %}
+An excellent way to get a weapon without risking an action that could be blocked, it is
+most often associated with {{ magnum }}.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("The Unmasking", decks=310, copies="1-2") %}
-{% trans trimmed %}
-A key card to ally-oriented decks, it transforms any ally setup into a very cumbersome
-wall. An overall intercept bonus at no cost is already good, plus being an event makes
-it hard to remove from the table.
-{% endtrans %}
-{% endcall %}
-
-{% call layout.card_column("Enkil Cog", decks=294, copies="1-2") %}
-{% trans trimmed archon_investigation=card("Archon Investigation") %}
-A permanent bleed boost at no cost only available for big capacity vampires, it also
-allows acting during other players turns: at the end of the predator turn to stay
-unlocked, or during the prey turn to bleed strong while {{ archon_investigation }} can
-not be played (as it is an out-of-turn). With a way to unlock the vampire, it can let a
-minion bleed in consecutive turns.
-{% endtrans %}
-{% endcall %}
-
-{% call layout.card_column("Target Vitals", decks=280, copies="2-6") %}
-{% trans trimmed %}
-An excellent combat option, it usually gets through against deck with no heavy combat
-module. A single aggravated damage can even become three and burn a vampire. Because any
-minion can use it, it is also included in ally oriented decks.
-{% endtrans %}
-{% endcall %}
-
-{% call layout.card_column("Mylan Horseed", decks=259, copies="1") %}
+{% call layout.card_column("Kevlar Vest", decks=51, copies="1") %}
 {% trans trimmed
-a_b=link("/strategy/fundamentals", _("A&B"), _anchor="AB")
+magnum=card(".44 Magnum"),
+sniper_rifle=card("Sniper Rifle")
 %}
-Played in decks with non-Camarilla big capacity vampires, it is a straight-up boost in
-{{ a_b }} for just one pool. Hard to block and hard to destroy in combat, he is safe in
-many situations.
+A nice defensive equipment, particularly efficient against {{ magnum }} and {{ sniper_rifle }},
+the two most widespread weapons.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Mr. Winthrop", decks=224, copies="1") %}
-{% trans trimmed %}
-Permanent intercept bonus at no cost, it is a good addition in any deck packing a
-defensive module with some intercept.
-{% endtrans %}
-{% endcall %}
-
-{% call layout.card_column("Dragonbound", decks=215, copies="1") %}
+{% call layout.card_column("Dragonbound", decks=51, copies="1") %}
 {% trans trimmed %}
 A good tool for pool damage for combat-oriented decks. The hand size diminution is
 acceptable if it means dealing 2 or 3 damages per turn to the prey. However, it can have
@@ -134,40 +184,15 @@ detrimental effects on cross-table allies if played carelessly.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column(".44 Magnum", decks=213, copies="1-6") %}
-{% trans trimmed %}
-The optional maneuver make it a cost-efficient option when it comes to weapons. It is
-often combined with {{ cel }} for maximum efficiency as it is not limited to a
-single strike per round or combat: additional strikes transform this weapon into a real
-tool of destruction.
+{% call layout.card_column("Wake with Evening's Freshness", decks=46, copies="1-4") %}
+{% trans trimmed on_the_qui_vive=card("On the Qui Vive") %}
+Although only usable by a vampire and not replaced until the next turn, it has the
+advantage to be playable multiple times, so it is a good complement to the more common
+{{ on_the_qui_vive }}.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Ossian", decks=207, copies="1") %}
-{% trans trimmed %}
-He is a good rusher open to all decks. Hard to block, he can pick his targets for
-maximum effects. Starting with 4 life, he often goes up to more. His ability lets him
-dispose of young vampire without good defensive options: a little pricey to be just a
-buffer in front of a rush deck, he becomes invaluable against weenie decks.
-{% endtrans %}
-{% endcall %}
-
-{% call layout.card_column("Scourge of the Enochians", decks=198, copies="1") %}
-{% trans trimmed the_embrace=card("The Embrace") %}
-A death sentence for breed decks at no cost, it is often included in slow decks that
-have difficulties to cope with the overwhelming numbers of minions produced by decks
-creating newborn vampires with cards like {{ the_embrace }}.
-{% endtrans %}
-{% endcall %}
-
-{% call layout.card_column("Sniper Rifle", decks=161, copies="1-3") %}
-{% trans trimmed grinding=link("/strategy/combat", _("grinding"), _anchor="posture") %}
-An excellent option for decks with good intercept capabilities, it makes blocks more
-threatening and keep closed combat modules at range, excellent for {{ grinding }}.
-{% endtrans %}
-{% endcall %}
-
-{% call layout.card_column("Bum's Rush", decks=148, copies="1-7") %}
+{% call layout.card_column("Bum's Rush", decks=44, copies="1-6") %}
 {% trans trimmed deep_song=card("Deep Song") %}
 The eponymous card of <em>rush</em> decks, it allows for direct combat against any
 minion, with the nice bonus of a maneuver to control the range a bit. Some disciplines
@@ -176,7 +201,26 @@ go-to card for combat-oriented decks.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Weighted Walking Stick", decks=145, copies="3-6") %}
+{% call layout.card_column("The Uncoiling", decks=36, copies="1") %}
+{% trans trimmed
+the_unmasking =card("The Unmasking"),
+scourge_of_the_enochians = card("Scourge of the Enochians")
+%}
+A neat inclusion when the most widespread events {{ scourge_of_the_enochians }} or
+{{ the_unmasking }} are very detrimental to the deck.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Ossian", decks=36, copies="1") %}
+{% trans trimmed %}
+He is a good rusher open to all decks. Hard to block, he can pick his targets for
+maximum effects. Starting with 4 life, he often goes up to more. His ability lets him
+dispose of young vampire without good defensive options: a little pricey to be just a
+buffer in front of a rush deck, he becomes invaluable against weenie decks.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Weighted Walking Stick", decks=35, copies="3-6") %}
 {% trans trimmed %}
 An efficient weapon at no cost, requiring no action to equip, it is a good alternative
 for toolbox decks not much specialized in combat. Often played in association with
@@ -184,25 +228,24 @@ for toolbox decks not much specialized in combat. Often played in association wi
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Concealed Weapon", decks=136, copies="3-8") %}
-{% trans trimmed magnum=card(".44 Magnum") %}
-An excellent way to get a weapon without risking an action that could be blocked, it is
-most often associated with {{ magnum }}.
+{% call layout.card_column("Sport Bike", decks=33, copies="1-2") %}
+{% trans trimmed
+mr_winthrop=card("Mr. Winthrop"),
+bowl_of_convergence=card("Bowl of Convergence"),
+raven_spy=card("Raven Spy")
+%}
+Free permanent intercept for anyone, its 1 pool cost makes it less desireable than {{ mr_winthrop }}
+or {{ bowl_of_convergence }}, but it is not unique and can add yet another source of intercept
+for those who do not have {{ ani }} for {{ raven_spy }}.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Vagabond Mystic", decks=135, copies="1-2") %}
-{% trans trimmed %}
-A good addition to allies and imbued decks, his ability does not require an action and
-can be used anytime.
-{% endtrans %}
-{% endcall %}
-
-{% call layout.card_column("FBI Special Affairs Division", decks=132, copies="1") %}
-{% trans trimmed the_unmasking=card("The Unmasking") %}
-It is a good deterrent and help keep allies alive, but is only worth playing if the
-allies have a good chance to block vampires and is therefore always accompanied by
-{{ the_unmasking }}.
+{% call layout.card_column("The Bitter and Sweet Story", decks=31, copies="1") %}
+{% trans trimmed
+bleed=link("/strategy/archetype-categories", _("Bleed"), _anchor="bleed")
+%}
+A good inclusion for fast-paced {{ bleed }} decks, when one can count on being the first Methuselah to benefit from it.
+It can provide just the additional steam one needs to finish a table.
 {% endtrans %}
 {% endcall %}
 

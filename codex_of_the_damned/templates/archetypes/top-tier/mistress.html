@@ -33,7 +33,8 @@ malgorzata_archetype=link("/archetypes/malgorzata"),
 meta=link("/strategy/articles/advanced/the-game-of-the-game", _("meta")),
 a_b=link("/strategy/fundamentals", _("A&B"), _anchor="AB"),
 benoît_moyen_s_deck=link("/deck-search", _("Benoît Moyen's deck"), id="2010eternalvigilancelf"),
-nice_combination=link("/deck-search", _("nice combination"), id="2018bgpmb")
+danilo_torrisi_in_2018=link("/deck-search", _("Danilo Torrisi in 2018"), id="2018bgpmb"),
+matin_weinmayer_s_deck=link("/deck-search", _("Matin Weinmayer's deck"), id="11506")
 %}
 <h2>Highlights</h2>
 <p>
@@ -74,7 +75,11 @@ nice_combination=link("/deck-search", _("nice combination"), id="2018bgpmb")
     {{ meta }}. {{ a_b }} enhancer are a common inclusion too, like {{ rutors_hand }}
     and an {{ helicopter }} that can be fetched with {{ alastor }}
     or {{ magic_of_the_smith }}.
-    The inclusion of {{ ashur_tablets }}, on the other hand, is pretty rare.
+</p>
+<p>
+    The inclusion of {{ ashur_tablets }}, on the other hand, is pretty rare,
+    but if you are wondering if it is still bankable after the 2024 nerf,
+    check out {{ matin_weinmayer_s_deck }}, which includes even more of them.
 </p>
 <p>
     The <strong>Malgorzata</strong> variant uses {{ malgorzata }} as a star.
@@ -87,16 +92,9 @@ nice_combination=link("/deck-search", _("nice combination"), id="2018bgpmb")
     for aggravated damage.
 </p>
 <p>
-    Danilo Torrisi played a {{ nice_combination }} in 2018:
+    The <strong>Possession</strong> variant is a nice combination, played by {{ danilo_torrisi_in_2018 }}:
     The {{ might_of_the_camarilla }} alongside {{ possession }}
     to get more Inner Circle into play fast and cheap.
 </p>
 {% endtrans %}
-{% endblock %}
-
-{% block errata %}
-<div class="insert warn">
-    <h3>Errata</h3>
-    {{ erratum.ashur( 'undecided' ) }}
-</div>
 {% endblock %}

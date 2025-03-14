@@ -12,15 +12,16 @@
 
 {% block archetype %}
 {% trans trimmed
-the_anarch_free_press=card("The Anarch Free Press"),
 anarch_railroad=card("Anarch Railroad"),
+army_of_rats=card("Army of Rats"),
 bait_and_switch=card("Bait and Switch"),
 claws_of_the_dead=card("Claws of the Dead"),
+consanguineous_boon=card("Consanguineous Boon"),
 constant_revolution=card("Constant Revolution"),
 creepshow_casino=card("Creepshow Casino"),
 deep_ecology=card("Deep Ecology"),
-domain_challenge=card("Domain Challenge"),
 donnybrook=card("Donnybrook"),
+double_deuce=card("Double Deuce"),
 earth_control=card("Earth Control"),
 earth_meld=card("Earth Meld"),
 eyes_of_the_wild=card("Eyes of the Wild"),
@@ -30,17 +31,17 @@ form_of_the_bat=card("Form of the Bat"),
 gangrel_revel=card("Gangrel Revel"),
 garibaldi_meucci_museum=card("Garibaldi-Meucci Museum"),
 groundfighting=card("Groundfighting"),
-heart_of_nizchetus=card("Heart of Nizchetus"),
 hell_for_leather=card("Hell For Leather"),
 hunting_grounds=card("Academic Hunting Ground", "hunting grounds"),
-ivory_bow=card("Ivory Bow"),
 kine_resources_contested=card("Kine Resources Contested"),
 monkey_wrench=card("Monkey Wrench"),
 opium_den=card("Opium Den"),
 organized_resistance=card("Organized Resistance"),
 powerbase_los_angeles=card("Powerbase: Los Angeles"),
+propaganda_of_the_deed=card("Propaganda of the Deed"),
 protection_racket=card("Protection Racket"),
 reckless_agitation=card("Reckless Agitation"),
+renegade_garou=card("Renegade Garou"),
 revolutionary_council=card("Revolutionary Council"),
 rewilding=card("Rewilding"),
 rotschreck=card("Rötschreck"),
@@ -49,77 +50,83 @@ smiling_jack=card("Smiling Jack, The Anarch", "Smiling Jack"),
 sniper_rifle=card("Sniper Rifle"),
 society_of_leopold=card("Society of Leopold"),
 stolen_police_cruiser=card("Stolen Police Cruiser"),
+the_anarch_free_press=card("The Anarch Free Press"),
 thing=card("Thing"),
 otso_saariluomas_deck=link("/deck-search", _("Otso Saariluoma's deck"), id="10767"),
-jan_kocis_deck=link("/deck-search", _("Jan Kočí's deck"), id="10513")
+édouard_menneson_s_deck=link("/deck-search", _("Édouard Menneson's deck"), id="11174"),
+jakub_rypar_s_deck=link("/deck-search", _("Jakub Rypar's deck"), id="11740"),
+josé_roberio_barbosa_da_silva_s_deck=link("/deck-search", _("José Roberio Barbosa da Silva's deck"), id="11393")
 %}
 <h2>Highlights</h2>
 <p>
     This is a <em>wall</em> deck using Gangrel {{ gangrel }} barons.
+    It builds a strong defense thanks to the Anarch and Baron cards for unlock and intercept,
+    {{ organized_resistance }} and {{ deep_ecology }}, coupled with {{ bait_and_switch }} for bounces.
 </p>
 <p>
-    The idea is to build a strong defense thanks to the Anarch and Baron cards for unlock and intercept,
-    {{ organized_resistance }} and {{ deep_ecology }}, coupled with {{ bait_and_switch }} for bounces.
     Using {{ thing }}, the deck can steadily influence more and more vampires, often ending up with 4 to 6 vampires
     in play. Influencing a Baron quickly is very important, but it can be the second vampire if a low capacity
     can be put in play first to speed up the Baron with a {{ thing }}, depending on your opening hand.
 </p>
 <p>
-    The number of vampires allows for a decent forward pressure of naked bleed actions.
-    This completes more standard wall payload cards {{ smiling_jack }} and {{ constant_revolution }},
-    and offers a welcome adaptability to the deck.
+    The number of vampires means naked bleeds provide decent forward pressure.
+    This completes the standard wall payload {{ smiling_jack }} and {{ constant_revolution }},
+    and offers some flexibility.
 </p>
 <p>
-    The list presented here uses a few weapons ({{ sniper_rifle }}, {{ ivory_bow }}) alongside a good number of
+    The list presented here uses a couple of {{ sniper_rifle }} alongside a good number of
     {{ earth_meld }} as combat module, but there are a lot of possible variations for the combat part of the deck.
 </p>
 <h2>Tips & Tricks</h2>
 <p>
-    The Anarch specific master cards are especially strong here: {{ garibaldi_meucci_museum }} is incredibly versatile,
-    from ending troublesome combats with aggressive Anarchs to fetching the required unlock or bounce.
+    {{ garibaldi_meucci_museum }} is versatile, allowing to fetch the required unlock or bounce.
     {{ powerbase_los_angeles }} acts as cycling device as well as an additional unlock,
-    since there are so many Anarch cards (note cards requiring Barons implicitly count as cards requiring Anarch).
-    {{ anarch_railroad }} and {{ the_anarch_free_press }} provide permanent stealth and intercept.
+    since there are so many Anarch cards (note Baron cards implicitly count as cards requiring Anarch),
+    and {{ the_anarch_free_press }} provides intercept.
 </p>
 <p>
-    {{ rewilding }} can be used to damage the prey's influence if they play locations,
-    but can also be a good way to get rid of other problematic locations,
+    Interms of ousting power, the deck relies on small bleeds, with {{ club_illusion }} being key to its strategy
+    by doubling the bleed power. {{ reckless_agitation }} and {{ monkey_wrench }} can be used to lunge,
+    letting the deck switch from a slow grind to a decisive kill in an instant.
+</p>
+<p>
+    {{ rewilding }} can damage the prey's pool if they play locations,
+    and can get rid of problematic locations,
     the prime targets being permanent stealth like {{ opium_den }} or {{ creepshow_casino }},
     and {{ hunting_grounds }} that go against the grinding strategy of the deck.
 </p>
 <p>
-    The combat module here is very focused on using {{ earth_meld }} for additional unlocks, but at some point it
-    also aims at equipping someone with a {{ sniper_rifle }} to begin to grind beads out of all the blocked minions.
+    The combat module mostly uses {{ earth_meld }} for more unlocks, but at some point
+    aims at equipping someone with a {{ sniper_rifle }} to grind beads out of blocked minions.
 </p>
 <p>
-    The stealth module is particularily interesting, with a lot of versatiliy. Of course {{ earth_control }} provides
-    steady stealth when needed, but {{ form_of_mist }} and {{ form_of_the_bat }} can both be used
-    either as stealth complement or as additional combat avoidance or intercept if needed.
+    The stealth is low but not inexistant, since {{ form_of_mist }} and {{ form_of_the_bat }} can both be used
+    for stealth if needed.
 </p>
 <h2>Variants</h2>
 <p>
-    {{ monkey_wrench }} or {{ stolen_police_cruiser }} can be included for a bit more bleed, {{ reckless_agitation }}
-    often finds a spot, and sometimes even more political actions like {{ revolutionary_council }} ,
-    {{ domain_challenge }} or {{ kine_resources_contested }}.
+    {{ revolutionary_council }}, {{ anarch_railroad }}, and {{ earth_control }} often find a spot.
+    A bit of aggravated damage with {{ donnybrook }} and {{ claws_of_the_dead }} is also common.
+    The number of {{ thing }} vary a lot too, and can be doubled or even tripled for more minions.
+    Other options include {{ double_deuce }} or {{ army_of_rats }} for a bit more pool damage, or
+    {{ shattering }} for additional control.
 </p>
 <p>
-    There are wild variations in the combat module. The use of weapons like {{ sniper_rifle }} in here is common,
-    but can also be dismissed in favor of aggravated damage with {{ donnybrook }} or {{ claws_of_the_dead }}.
-    Depending on the combat module, {{ rotschreck }} or {{ gangrel_revel }} can find a spot in the master module.
-    A couple of anarch combat cards can find their place too, like {{ groundfighting }} or {{ hell_for_leather }},
-    and {{ flesh_of_marble }} makes some appearances as a tool against damage-heavy decks.
-    Check out {{ otso_saariluomas_deck }} for an example.
+    The <strong>Brutal</strong> variant
+    include more aggravated damage and, with the help of {{ gangrel_revel }} and {{ hell_for_leather }},
+    sometimes even {{ rotschreck }} or {{ flesh_of_marble }}, go for a more punitive combat,
+    like in {{ édouard_menneson_s_deck }} at the 2024 Iberan GP,
+    or {{ otso_saariluomas_deck }} at Ropecon in 2023.
 </p>
 <p>
-    {{ protection_racket }} is often included in the intercept mix: it is very effective against high stealth
-    votes like the ones {{ infernal_barons }} or {{ lutz_politics }} can display. Some versions don't bother to
-    include {{ earth_control }} or {{ anarch_railroad }} for stealth, relying on {{ form_of_the_bat }} and
-    {{ form_of_mist }}, plus the dissuading effect of the combat module.
+    The <strong>Council Propaganda</strong> variant aims at more of a swarm, using {{ revolutionary_council }} for the
+    lunge
+    and {{ consanguineous_boon }} to bloat, while getting some votes from {{ propaganda_of_the_deed }}.
+    See {{ jakub_rypar_s_deck }} from the 2024 Slovak NC for reference.
 </p>
 <p>
-    Finally, Barons don't even need to be included in high numbers. Of course that means no political actions,
-    no {{ organized_resistance }}, and more {{ deep_ecology }} and {{ eyes_of_the_wild }}.
-    But that does not stop the deck from winning, check out {{ jan_kocis_deck }} for example.
+    The <strong>Renegade</strong> variant include some {{ renegade_garou }} for a bit more control with the rushes,
+    while using more {{ villein }} to recoup pool, like in {{ josé_roberio_barbosa_da_silva_s_deck }} at the 2024 SAC.
 </p>
 {% endtrans %}
 {% endblock %}

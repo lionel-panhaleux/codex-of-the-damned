@@ -7,6 +7,10 @@
     True Brujah
     {% endtrans %}
 </h1>
+<div class="insert warn">
+    This list is compiled from statistics encompassing 30 years,
+    as the legacy clan has not scored enough wins in the last 5 years for relevant statistics otherwise.
+</div>
 <div class="insert tip">
     <p>
         {% trans trimmed
@@ -22,7 +26,7 @@
     </p>
 </div>
 
-{% call layout.card_column("Domain of Evernight", decks=58, copies="1-8") %}
+{% call layout.card_column("Domain of Evernight", decks=101, copies="1-7") %}
 {% trans trimmed outside_the_hourglass=card("Outside the Hourglass") %}
 Often played for its additional stealth at inferior {{ obf }} outside of the clan,
 its {{ tem }} and {{ TEM }} effects makes it a useful tool in virtually all
@@ -31,14 +35,33 @@ it forms the most dreadful combat combination of the game.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Tabriz Assembly", decks=21, copies="1") %}
+{% call layout.card_column("Tabriz Assembly", decks=31, copies="1") %}
 {% trans trimmed %}
 A Hunting Ground giving +1 hand size at no cost is awesome,
 the fact that it is removable is not really an issue.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Tangle Atropos' Hand", decks=20, copies="1-5") %}
+{% call layout.card_column("Summon History", decks=27, copies="3-11") %}
+{% trans trimmed
+the_ankara_citadel=card("The Ankara Citadel, Turkey", "The Ankara Citadel")
+%}
+A unique effect both at inferior {{ tem }} and superior {{ TEM }}.
+Combined with {{ the_ankara_citadel }}, it can put allies and vampires into play
+for half the price.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Clotho's Gift", decks=27, copies="1-5") %}
+{% trans trimmed
+a_b=link("/strategy/fundamentals", _("A&B"), _anchor="AB")
+%}
+Also used in {{ obf }} constructs to help get more vampires out of the crypt,
+its superior {{ TEM }} effect is an obvious {{ a_b }} increase at a very cheap cost.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Tangle Atropos' Hand", decks=26, copies="1-5") %}
 {% trans trimmed %}
 An excellent stealth device at superior {{ TEM }}, as it not only adds stealth
 but also tends to consume wakes on the opponents side. The {{ pot }} is useful
@@ -47,7 +70,7 @@ allows it to cancel the action.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Outside the Hourglass", decks=17, copies="6-11") %}
+{% call layout.card_column("Outside the Hourglass", decks=24, copies="5-11") %}
 {% trans trimmed
 domain_of_evernight=card("Domain of Evernight"),
 disarm=card("Disarm")
@@ -59,17 +82,7 @@ it can be combined with {{ disarm }} as it is not environmental.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Summon History", decks=16, copies="3-9") %}
-{% trans trimmed
-the_ankara_citadel=card("The Ankara Citadel, Turkey", "The Ankara Citadel")
-%}
-A unique effect both at inferior {{ tem }} and superior {{ TEM }}.
-Combined with {{ the_ankara_citadel }}, it can put allies and vampires into play
-for half the price.
-{% endtrans %}
-{% endcall %}
-
-{% call layout.card_column("Al-Muntathir, God's Witness", decks=15, copies="3-5") %}
+{% call layout.card_column("Al-Muntathir, God's Witness", decks=16, copies="3-5") %}
 {% trans trimmed freak_drive=card("Freak Drive") %}
 The most played vampire of the clan, its superior {{ FOR }} is often the reason
 of its presence in a crypt. As True Brujah are scarce, the ability to play
@@ -77,16 +90,7 @@ of its presence in a crypt. As True Brujah are scarce, the ability to play
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Clotho's Gift", decks=14, copies="1-5") %}
-{% trans trimmed
-a_b=link("/strategy/fundamentals", _("A&B"), _anchor="AB")
-%}
-Also used in {{ obf }} constructs to help get more vampires out of the crypt,
-its superior {{ TEM }} effect is an obvious {{ a_b }} increase at a very cheap cost.
-{% endtrans %}
-{% endcall %}
-
-{% call layout.card_column("Vaticination", decks=14, copies="2-7") %}
+{% call layout.card_column("Vaticination", decks=16, copies="2-6") %}
 {% trans trimmed %}
 An excellent clan card: the +3 stealth bonus makes it virtually unblockable,
 and its effect is excellent at controlling the table. Both neighbours can quickly loose

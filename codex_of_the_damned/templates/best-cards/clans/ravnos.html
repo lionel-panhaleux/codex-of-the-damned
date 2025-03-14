@@ -5,10 +5,22 @@
 <h1>{{ ravnos }} Ravnos</h1>
 <div class="insert tip">
     <p>
+        {% trans trimmed ravnos_break=link("/archetypes/ravnos-break") %}
+        V5 Ravnos are now Anarch and have {{ pre }}{{ obf }}{{ ani }} as clan disciplines.
+        They have strong stealth & bleed archetypes like {{ ravnos_break }}.
+        {% endtrans %}
+    </p>
+    <p>
+        {% trans trimmed ravnos_legacy_cards=link("/best-cards/clans/ravnos-legacy")%}
+        Legacy Ravnos {{ ravnos_legacy }} are independant and have Chimerstry {{ chi }}
+        as clan discipline: check their best cards out on the {{ ravnos_legacy_cards }} page.
+        {% endtrans %}
+    </p>
+    <p>
         {% trans trimmed
         ravnos_clown_car=link("/archetypes/ravnos-clown-car")
         %}
-        The Ravnos and their unique {{ chi }} discipline are a versatile clan.
+        The new Ravnos and their unique {{ chi }} discipline are a versatile clan.
         They gave birth to a successful political archetype,
         the {{ ravnos_clown_car }}.
         Otherwise, {{ chi }} alone makes for easy stealth bleeds
@@ -17,19 +29,7 @@
     </p>
 </div>
 
-{% call layout.card_column("Zip", decks=42, copies="1") %}
-{% trans trimmed %}
-A cheap minion with {{ ani }}, he often gets included in {{ ani }} constructs.
-{% endtrans %}
-{% endcall %}
-
-{% call layout.card_column("Mirror Image", decks=26, copies="3-7") %}
-{% trans trimmed %}
-A versatile stealth bonus or <em>combat ends</em>, its 1 blood cost is acceptable.
-{% endtrans %}
-{% endcall %}
-
-{% call layout.card_column("Week of Nightmares", decks=25, copies="1-2") %}
+{% call layout.card_column("Week of Nightmares", decks=27, copies="1-2") %}
 {% trans trimmed %}
 The best bonus Ravnos can get, it is played in many Ravnos decks, often as the finishing move.
 As the downside is quite ugly, it is important to make sure the game will end before
@@ -37,44 +37,79 @@ the ten counters are stacked on the card.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Sensory Deprivation", decks=22, copies="1-6") %}
+{% call layout.card_column("Fortune Teller Shop", decks=19, copies="1") %}
+{% trans trimmed opium_den=card("Opium Den") %}
+Permanent stealth is always good. The cost is steeper than Ministry's {{ ministry }} {{ opium_den }},
+but still worth it.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Gathii", decks=19, copies="1-2") %}
+{% trans trimmed visions_of_gehenna=card("Visions of Gehenna") %}
+Cheap {{ PRE }}{{ obf }} is desireable for bleed actions and modifiers like {{ visions_of_gehenna }},
+the potential stealth ability is neat too.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Doc Martina", decks=19, copies="1-2") %}
+{% trans trimmed visions_of_gehenna=card("Visions of Gehenna") %}
+Cheap {{ OBF }}{{ pre }} is slightly less good than the opposite, but more stealth can be handy.
+Her ability is useful, even cross-table, to resist opposing combat decks.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Phaibun", decks=16, copies="1-2") %}
+{% trans trimmed %}
+The best disciplines at superior, and a great defensive ability. What's not to like?
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Zafira", decks=16, copies="1") %}
+{% trans trimmed %}
+A cheap strong bleeder, nicely complementing other Ravnos in the crypt.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Sreelekha", decks=15, copies="1-2") %}
+{% trans trimmed %}
+A strong Ravnos leader. Her cycling ability combined to the bleed bonus largely compensate her cost.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Visions of Gehenna", decks=15, copies="4-9") %}
+{% trans trimmed %}
+This relatively new (2024) bleed enhancer, costless, immediately propulsed V5 Ravnos
+near the top of the stealth & bleed ladder.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Treasured Samadji", decks=13, copies="1") %}
+{% trans trimmed %}
+An excellent equipment, a cheap permanent blede bonus with an included combat defense.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Luciano Carvalho", decks=12, copies="1-2") %}
 {% trans trimmed
-the_path_of_paradox=card("The Path of Paradox"),
-gabrin=card("Gabrin"),
-the_line=card("The Line")
+raven_spy=card("Raven Spy"),
+feral_hound=card("Feral Hound")
 %}
-An infamous effect for this expensive action. The threat of it can be an excellent
-deterrent. With the help of cost reduction cards like {{ the_path_of_paradox }},
-{{ gabrin }} or {{ the_line }}, it can become cheap enough to be a recurring threat,
-too.
+Because he lacks superior {{ PRE }}, he's not always included. But his interesting ability
+is desireable in more toolboxy builds, where passing around {{ raven_spy }} or {{ feral_hound }} can be useful.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Shilmulo Tarot", decks=24, copies="1") %}
-{% trans trimmed
-heart_of_nizchetus=card("Heart of Nizchetus")
-%}
-An equipment that helps with the cards rotation. Not unlike the
-{{ heart_of_nizchetus }}, but this one is for Ravnos only.
+{% call layout.card_column("Shilmulo Tarot", decks=10, copies="1-2") %}
+{% trans trimmed heart_of_nizchetus=card("Heart Of Nizchetus") %}
+A superb cycling device, close to the ubiquitous {{ heart_of_nizchetus }} in effect and power,
+but reserved to the Ravnos clan.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Treasured Samadji", decks=20, copies="1") %}
+{% call layout.card_column("Trung Chau Pham", decks=8, copies="1-2") %}
 {% trans trimmed %}
-An excellent equipment, it is a bleed bonus plus combat defence, all for just 1 pool.
-A bargain.
+Cheap superior Animalism {{ ANI }} is always desireable.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Salbatore Bokkengro", decks=20, copies="1-2") %}
-{% trans trimmed %}
-Superior {{ CHI }} for a decent 4 pool, he gets included in many Ravnos decks.
-{% endtrans %}
-{% endcall %}
-
-{% call layout.card_column("Fata Morgana", decks=17, copies="5-9") %}
-{% trans trimmed %}
-The only bleed enhancer available with {{ chi }}, it is often included in Ravnos decks.
-{% endtrans %}
-{% endcall %}
 {% endblock %}

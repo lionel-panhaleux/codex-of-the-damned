@@ -1,0 +1,107 @@
+{% extends "archetypes/_layout.html" %}
+{% import "archetypes/_layout-erratum.html" as erratum with context %}
+{% import "archetypes/top-tier/tupdogs.json" as deck_json %}
+
+{% block meta %}
+<meta property="decklist" content='{{ deck_json | tojson }}' />
+{% endblock %}
+
+{% block archetype_name %}
+<h1>{{ tremere_antitribu }} Tupdogs & Nephandus</h1>
+{% endblock %}
+
+{% block archetype %}
+{% trans trimmed
+anarchist_uprising=card("Anarchist Uprising"),
+ancilla_empowerment=card("Ancilla Empowerment"),
+antonio_d_erlette=card("Antonio d'Erlette"),
+as_the_crow=card("As the Crow"),
+ashur_tablets=card("Ashur Tablets"),
+autarkis_persecution=card("Autarkis Persecution"),
+brick_by_brick=card("Brick By Brick"),
+deflection=card("Deflection"),
+direct_intervention=card("Direct Intervention"),
+dreams_of_the_sphinx=card("Dreams of the Sphinx"),
+entrancement=card("Entrancement"),
+gran_madre_di_dio=card("Gran Madre di Dio, Italy", "Gran Madre di Dio"),
+graverobbing=card("Graverobbing"),
+haven_uncovered=card("Haven Uncovered"),
+immortal_grapple=card("Immortal Grapple"),
+information_highway=card("Information Highway"),
+nephandus=card("Nephandus"),
+powerbase_montreal=card("Powerbase: Montreal"),
+raking_talons=card("Raking Talons"),
+rock_cat=card("Rock Cat"),
+secure_haven = card("Secure Haven"),
+the_parthenon=card("The Parthenon"),
+torn_signpost=card("Torn Signpost"),
+tupdog=card("Tupdog"),
+tupdogs=card("Tupdog", "Tupdogs"),
+unleash_the_hounds=card("Unleash the Hounds"),
+tommis_article=link("/strategy/articles/advanced/playing-tupdogs-nephandus", _("Tommi Hakomaa's article")),
+jorge_delgado_s_deck=link("/deck-search", _("Jorge Delgado's deck"), id="10687"),
+jukka_pekka_vainiola_s_deck=link("/deck-search", _("Jukka-Pekka Vainiola's deck"), id="11574")
+%}
+<h2>Highlights</h2>
+<p>
+    This is an <em>rush</em> deck using {{ tupdogs }} and {{ rock_cat }} to take down opposing vampires,
+    then {{ graverobbing }} to steal them. It uses simple bleed for one from its own vampires as well
+    as the stolen ones to oust its prey.
+</p>
+<p>
+    The combat is dominated by the {{ tupdogs }} and their {{ VIC }} and {{ POT }}
+    cards combination, using {{ brick_by_brick }} to set the range if needed,
+    {{ immortal_grapple }} to prevent Dodge and Combat Ends, and {{ raking_talons }}
+    for aggravated damage. {{ torn_signpost }} and {{ target_vitals }} can provide
+    additional damage if needed.
+</p>
+<p>
+    The {{ rock_cat }} are also good combat ends and can use {{ pot }} cards too. Contrarily to the {{ tupdog }},
+    they stay in place and can rush every turn, consolidating the deck's control on the table even though
+    opponents also get pool from {{ autarkis_persecution }}. Moreover, they can get recruited by a {{ tupdog }}
+    even with no Tremere Antitribu in play, as early as turn 1.
+</p>
+<p>
+    The critical part of the deck is to get a couple of Tremere antitribu {{ tremere_antitribu }} out fast,
+    so that the {{ tupdogs }} can rush, and {{ deflection }} and {{ graverobbing }} can be played.
+</p>
+<p>
+    {{ as_the_crow }} allows {{ tupdog }} to unlock so they can call {{ autarkis_persecution }}
+    or recruit {{ rock_cat }} on top of a rush. Using {{ tupdog }} to call the vote makes it unappealing for anyone
+    to block.
+</p>
+<p>
+    The core issue of the deck is the high pool cost. {{ tupdogs }} only last a single
+    turn and the deck should get one out every turn at least for safety and control.
+    Plus the {{ rock_cat }} are 4 pool a piece, and the deck aims to recruit at least 4 to 6.
+    {{ autarkis_persecution }} is the main tool to bloat, supported by {{ ashur_tablets }}.
+</p>
+<h2>Tips & Tricks</h2>
+<p>
+    Disabling voters then blockers is a priority, so {{ graverobbing }} and {{ autarkis_persecution }} can be played.
+    {{ graverobbing }} should be used on titled vampires first to help the votes get through later on.
+    Cross-table voters might be pressured to let the vote pass by threatening them with a grave rob if they do not
+    comply, but one must try not to alienate the whole table too fast: the deck is fragile in the beginning.
+</p>
+<p>
+    To support the swarm strategy of the deck, influencing multiple vampires on top of a couple of {{ tupdog }}
+    every turn is key. Master cards provide one more transfer, with {{ dreams_of_the_sphinx }},
+    {{ information_highway }} or {{ powerbase_montreal }}.
+</p>
+<p>
+    {{ secure_haven }} is included to contest if an opponent plays it.
+</p>
+<h2>Variants</h2>
+<p>
+    The <strong>Nephandus</strong> variant uses {{ nephandus }} to bleed and defend.
+    It is a less aggressive, but also requires less bloat and does not rely on {{ autarkis_persecution }}.
+    See {{ jorge_delgado_s_deck }} for an example. You might want to read {{ tommis_article }}
+    about that variant, it goes a bit more in details on how to build and play it.
+</p>
+<p>
+    The <strong>Dominate</strong> variant also forgoes the {{ rock_cat }} and {{ autarkis_persecution }},
+    and instead includes a solid {{ dom }} bleed module to oust faster.
+    This makes {{ unleash_the_hounds }} a neat inclusion, see {{ jukka_pekka_vainiola_s_deck }} for an example.
+</p>
+{% endtrans %}
+{% endblock %}

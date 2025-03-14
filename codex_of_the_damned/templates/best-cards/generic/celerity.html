@@ -14,7 +14,7 @@
     </p>
 </div>
 
-{% call layout.card_column("Pursuit", decks=145, copies="3-8") %}
+{% call layout.card_column("Pursuit", decks=76, copies="3-8") %}
 {% trans trimmed %}
 The core of combat modules using {{ cel }}, it provides range control
 with the option to deliver an additional strike instead.
@@ -22,7 +22,7 @@ The card is highly usable and does not jam the hand the way a simple maneuver wo
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Forced March", decks=130, copies="2-7") %}
+{% call layout.card_column("Forced March", decks=62, copies="2-5") %}
 {% trans trimmed
 ab=link("/strategy/fundamentals", _("A&B"), _anchor="AB")
 %}
@@ -33,21 +33,21 @@ for a combination of disciplines that do not have much of it.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Blur", decks=115, copies="2-5") %}
-{% trans trimmed %}
-A serious enhancement for any combat module,
-the ability to deliver not one but two additional strikes is unique to {{ cel }}.
-{% endtrans %}
-{% endcall %}
-
-{% call layout.card_column("Resist Earth's Grasp", decks=104, copies="2-6") %}
+{% call layout.card_column("Resist Earth's Grasp", decks=60, copies="2-5") %}
 {% trans trimmed %}
 Its 1 blood cost is balanced by the fact that it provides good combat options
 (maneuver, press) along with a very rare stealth bonus at superior {{ CEL }}.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Psyche!", decks=102, copies="2-9") %}
+{% call layout.card_column("Blur", decks=56, copies="2-5") %}
+{% trans trimmed %}
+A serious enhancement for any combat module,
+the ability to deliver not one but two additional strikes is unique to {{ cel }}.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Psyche!", decks=52, copies="2-8") %}
 {% trans trimmed
 sce=link("/strategy/combat", _("Combat Ends"), _anchor="defence")
 %}
@@ -57,7 +57,17 @@ combat modules.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Sideslip", decks=83, copies="2-5") %}
+{% call layout.card_column("Quickness", decks=39, copies="2-5") %}
+{% trans trimmed
+blur=card("Blur")
+%}
+Quickly rose up the ranks after its upgrade errata in 2021, this is a free additional
+strike at inferior, and a non-limited one you can stack even on top or {{ blur }}
+at superior.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Sideslip", decks=35, copies="1-4") %}
 {% trans trimmed
 pursuit=card("Pursuit"),
 sideslip=card("Sideslip"),
@@ -70,25 +80,44 @@ damage prevention can save a vampire from a lethal blow. {{ pursuit }} and
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Quicken Sight", decks=63, copies="2-5") %}
+{% call layout.card_column("Flash", decks=28, copies="2-5") %}
 {% trans trimmed %}
-A good intercept reaction: +2 intercept bonus at superior {{ CEL }}{{ AUS }},
-stackable with other {{ aus }} reactions, is already good enough.
-The additional maneuver is a nice touch, as {{ cel }}{{ aus }} constructs
-often use guns in their combat module.
+A versatile device for any combat module, providing both maneuver and press as needed.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Side Strike", decks=55, copies="1-4") %}
+{% call layout.card_column("Side Strike", decks=26, copies="1-4") %}
 {% trans trimmed
 pursuit=card("Pursuit"),
 blur=card("Blur")
 %}
-A versatile combat tool, its effect can be either defensive (dodge)
-or offensive (additional strike) depending on the situation.
-Although not as powerful as {{ pursuit }} or {{ blur }},
-it is yet another source of additional strikes
-that can let the vampire avoid problematic strikes from the opponent.
+A versatile combat tool, it can be either defensive or offensive depending on the situation.
+Although not as powerful as {{ pursuit }} or {{ blur }}, it is yet another source of additional strikes,
+with a defensive twist.
 {% endtrans %}
 {% endcall %}
+
+{% call layout.card_column("Flurry of Action", decks=23, copies="4-7") %}
+{% trans trimmed
+the_unnamed=link("/archetypes/the-unnamed")
+%}
+A nice bleed action, played when the unlock is useful, typically in {{ the_unnamed }}
+or <em>Inner Circle</em> decks, but the option to cycle a couple of cards can also come in handy.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Scalpel Tongue", decks=22, copies="1-3") %}
+{% trans trimmed bewitching_oration=card("Bewitching Oration") %}
+A great votes enhancer, working both as a modifier or as a reaction.
+As a defense, it can nullify other vote enhancers like {{ bewitching_oration }}.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Infernal Pursuit", decks=20, copies="3-7") %}
+{% trans trimmed ashur_tablets=card("Ashur Tablets") %}
+A superb cards cycling device at superior {{ CEL }}. Often seen alongside {{ ashur_tablets }},
+it requires a heavy combat module to shine.
+{% endtrans %}
+{% endcall %}
+
 {% endblock %}

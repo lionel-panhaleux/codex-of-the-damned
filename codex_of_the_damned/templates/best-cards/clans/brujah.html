@@ -18,10 +18,91 @@
         gave birth to interesting vote constructs, too.
         {% endtrans %}
     </p>
+    <p>
+        {% trans trimmed
+        brujah_resistance=link("/archetypes/illegal-brawl"),
+        bait_and_switch=card("Bait and Switch"),
+        organized_resistance=card("Organized Resistance")
+        %}
+        Nowadays though, most Brujah {{ brujah }} decks are Anarchs builds,
+        {{ brujah_resistance }} being the main archetype. Barons, with their access to the relatively new (2021)
+        {{ bait_and_switch }} and {{ organized_resistance }}, are a force to be reckoned with.
+        {% endtrans %}
+    </p>
 </div>
 
 
-{% call layout.card_column("Dmitra Ilyanova", decks=71, copies="1-4") %}
+{% call layout.card_column("Atiena", decks=50, copies="1-2") %}
+{% trans trimmed
+infernal_barons=link("/archetypes/infernal-barons")
+%}
+The cheapest Brujah Baron with superior {{ CEL }}, her inferior Obfuscate {{ obf }} makes her a good choice
+for some multiclan builds like {{ infernal_barons }}.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Valeriya Zinovieva", decks=48, copies="1-2") %}
+{% trans trimmed
+infernal_barons=link("/archetypes/infernal-barons")
+%}
+A good baron, her strength being a real asset, while inferior {{ pro }} makes her a decent choice for some multiclan
+{{ pro }} Barons crypts.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Leumeah", decks=46, copies="1-3") %}
+{% trans trimmed
+forced_march=card("Forced March")
+%}
+A great Baron for a cheap price, with superior {{ PRE }} for politics and inferior {{ for }} giving her access to
+{{ forced_march }}. She finds a spot in many crypts.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Aline Gädeke", decks=40, copies="1-3") %}
+{% trans trimmed
+a_b=link("/strategy/fundamentals", _("A&B"), _anchor="AB"),
+brujah_debate=card("Brujah Debate")
+%}
+She's on the expensive side, but her ability is an excellent {{ a_b }} enhancer.
+Moreover, it makes her the perfect lead for a {{ brujah_debate }} build.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Elen Kamjian", decks=33, copies="1-2") %}
+{% trans trimmed %}
+She does not look like much, but her ability makes her a brutal bleeder for combat-oriented decks.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Adana de Sforza", decks=30, copies="1-2") %}
+{% trans trimmed
+lutz_politics=link("/archetypes/lutz-politics"),
+girls_will_find_inner_circle=link("/archetypes/girls-will-find-inner-circle")
+%}
+She's rarely a star by herself, but being an Inner Circle with {{ PRE }}{{ OBF }} gets her included in many decks,
+from {{ lutz_politics }} to {{ girls_will_find_inner_circle }}.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("New Carthage", decks=30, copies="1-3") %}
+{% trans trimmed
+%}
+As Brujah have a lot of good titled vampires among their ranks, this location often finds its place amidst them
+as the cornerstone of their offensive strategy. The bonus in both vote and bleed is a definitive edge.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Saku Pihlajamäki", decks=23, copies="1-2") %}
+{% trans trimmed
+forced_march=card("Forced March")
+%}
+Yet another great Brujah Baron, a useful ability and inferior {{ for }} allowing for {{ forced_march }},
+he is worth the price.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Dmitra Ilyanova", decks=20, copies="1-3") %}
 {% trans trimmed
 forced_march=card("Forced March")
 %}
@@ -29,69 +110,35 @@ Her Justicar title combined with {{ PRE }}, {{ obf }} and a good political abili
 makes her an excellent tool in many vote constructs.
 Her access to {{ FOR }} also gives her the ability to play
 {{ forced_march }} for additional actions.
-She is definitely the star of the clan.
+She is a long-time the star of the clan, and can even be paired with group 6 Barons.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Volker, The Puppet Prince", decks=65, copies="1-2") %}
+{% call layout.card_column("Theo Bell (G6)", decks=16, copies="1-3") %}
 {% trans trimmed
-anson_guns=link("/archetypes/anson-guns")
+bait_and_switch=card("Bait and Switch"),
+chun_hei=card("Chun Hei")
 %}
-Volker is one of the cheapest Prince around, and he finds its place in many
-Camarilla Royalty decks.
-Its superior {{CEL}} also makes him a good asset in other {{CEL}} decks —
-he founds an easy place in Toreador {{ toreador }} {{ anson_guns }} archetype for
-example.
+A brutal rusher. Too bad he is not a Baron, but he is a legend. Although he cannot {{ bait_and_switch }},
+he can either be accompanied by Barons, or lean on the pure rush side with {{ chun_hei }}.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Adana de Sforza", decks=54, copies="1-2") %}
-{% trans trimmed %}
-With the {{OBF}}{{PRE}} disciplines, she finds her place in Inner Circle
-decks using these disciplines.
-{% endtrans %}
-{% endcall %}
-
-{% call layout.card_column("New Carthage", decks=34, copies="1-2") %}
-{% trans trimmed %}
-As Brujah have a lot of good titled vampires among their ranks,
-this location often finds its place amidst them as the cornerstone
-of their offensive strategy.
-The bonus in both vote and bleed is a definitive edge.
-{% endtrans %}
-{% endcall %}
-
-{% call layout.card_column("Karen Suadela", decks=31, copies="1-3") %}
+{% call layout.card_column("Brujah Debate", decks=11, copies="5-10") %}
 {% trans trimmed
-dmitra_ilyanova=card("Dmitra Ilyanova"),
-tara=card("Tara")
+aline_gadeke=card("Aline Gädeke"),
+childe_of_the_revolution=card("Childe of the Revolution")
 %}
-A Prince with {{obf}}{{pre}} and bonus stealth on political action,
-she makes a perfect partner for her Justicar {{ dmitra_ilyanova }},
-often alongside {{ tara }}.
+This card is the single-handedly the core of a full-fledge archetype by itself. Combined with
+{{ aline_gadeke }}'s ability and with a bit of breeding like {{ childe_of_the_revolution }},
+it can be devastating.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Sarah Brando", decks=26, copies="1-2") %}
-{% trans trimmed %}
-A cheap vampire with superior {{CEL}}, she gets a spot in many {{CEL}} decks.
-{% endtrans %}
-{% endcall %}
-
-{% call layout.card_column("Waste Management Operation", decks=26, copies="1-2") %}
-{% trans trimmed %}
-A decent recursion helper, although getting the cards on the bottom of the library
-is more useful if you get to shuffle it at some point.
-{% endtrans %}
-{% endcall %}
-
-{% call layout.card_column("Armin Brenner", decks=18, copies="2-4") %}
-{% trans trimmed
-forced_march=card("Forced March")
-%}
-A good voter with an excellent ability, his access to {{obf}} and {{FOR}}
-are very strong points as he gets to play some stealth and {{ forced_march }}
-for additional actions.
+{% call layout.card_column("Karen Suadela", decks=11, copies="1-3") %}
+{% trans trimmed dmitra_ilyanova=card("Dmitra Ilyanova") %}
+With her low cost, stealth ability and the {{ obf }}{{ pre }} disciplines combination,
+she is a great inclusion in many political decks, with or without {{ dmitra_ilyanova }}.
 {% endtrans %}
 {% endcall %}
 

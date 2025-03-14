@@ -6,75 +6,88 @@
 <div class="insert tip">
     <p>
         {% trans trimmed
-        tzimisce_wall=link("/archetypes/fear-factor"),
-        tzimisce_toolbox=link("/archetypes/tzimisce-toolbox"),
-        war_ghouls=link("/archetypes/war-ghouls"),
-        war_ghoul=card("War Ghoul")
+        animals=link("/archetypes/animals"),
+        living_museum=link("/archetypes/living-museum")
         %}
-        The Tzimisce and their unique {{ vic }} discipline also have the quite rare
-        {{ AUS }}{{ ANI }} combination, making them excellent blockers.
-        They have given birth to the {{ tzimisce_wall }} and the
-        {{ tzimisce_toolbox }} archetypes, but also to the {{ war_ghouls }} archetype,
-        using {{ war_ghoul }} to rush opponents vampires.
+        The V5 Tzimisce are now Anarch and have {{ ani }}{{ pro }}{{ dom }} as clan disciplines.
+        They allow for efficient bleed decks, like the {{ living_museum }},
+        and can also work with Gangrels {{ gangrel }} for {{ PRO }}{{ ANI }} Baron builds like in {{ animals }}.
+        {% endtrans %}
+    </p>
+    <p>
+        {% trans trimmed tzimisce_legacy_cards=link("/best-cards/clans/tzimisce-legacy") %}
+        Legacy Tzimisce have their own page, {{ tzimisce_legacy_cards }}.
         {% endtrans %}
     </p>
 </div>
 
-{% call layout.card_column("Chiropteran Marauder", decks=60, copies="3-10") %}
-{% trans trimmed immortal_grapple=card("Immortal Grapple")%}
-An excellent combat card offering both maneuverability and aggravated damage.
-As a bonus, the strike stays a hand strike and can be used even if
-{{ immortal_grapple }} has been played.
-{% endtrans %}
-{% endcall %}
-
-{% call layout.card_column("Breath of the Dragon", decks=53, copies="1-6") %}
-{% trans trimmed chiropteran_marauder=card("Chiropteran Marauder") %}
-The <em>other</em> aggravated strike available through {{ vic }},
-it makes for a dreadful combination with {{ chiropteran_marauder }},
-as no range is safe for the opponent.
-{% endtrans %}
-{% endcall %}
-
-{% call layout.card_column("Caliban", decks=52, copies="1-2") %}
+{% call layout.card_column("Ángel Guerrero", decks=35, copies="1-3") %}
 {% trans trimmed %}
-All clan disciplines {{ AUS }}{{ ANI }}{{ VIC }} at superior for only 6 pool: a bargain.
-He finds his spot in many Tzimisce crypts.
+All clan disciplines and a Baron title, well worth the cost.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Devin Bisley", decks=50, copies="1-2") %}
+{% call layout.card_column("Branimira", decks=31, copies="1-2") %}
 {% trans trimmed %}
-Although she has inferior {{ vic }}, having {{ AUS }}{{ ANI }} for just 5 pool
-makes an excellent blocker out of her.
+Cheapest Baron of the clan, his disciplines are not the best, but his ability is useful.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Changeling", decks=49, copies="3-8") %}
-{% trans trimmed %}
-Choice between stealth and bleed enhancement, a versatile tool for {{ vic }}.
+{% call layout.card_column("Adrino Manauara", decks=31, copies="1-3") %}
+{% trans trimmed carrion_crows=card("Carrion Crows") %}
+He's on the expensive side, but his press works well with {{ carrion_crows }}.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Piotr Andreikov", decks=43, copies="1-2") %}
-{% trans trimmed %}
-A cheap 2 pool for {{ aus }}, he is included in many decks using this discipline.
+{% call layout.card_column("Clara Hjortshøj", decks=24, copies="1") %}
+{% trans trimmed carrion_crows=card("Carrion Crows") %}
+An ideal midcap, with {{ dom }} to bleed and {{ PRO }} for stealth.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Horatio", decks=43, copies="1-2") %}
+{% call layout.card_column("Marialena", decks=23, copies="1-2") %}
+{% trans trimmed form_of_mist=card("Form of Mist") %}
+A troublesome drawback that makes {{ form_of_mist }} a costly option for her.
+But with {{ DOM }}{{ PRO }} for only 5, she is still worth it.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("One With the Land", decks=13, copies="2-6") %}
+{% trans trimmed form_of_mist=card("Form of Mist") %}
+A solid intercept device, the superior {{ PRO }} unlock effect is interesting to stop {{ form_of_mist }}.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Living Manse", decks=9, copies="2-7") %}
+{% trans trimmed the_british_museum=card("The British Museum") %}
+A strong permanent bleed enhancer, especially interesing in conjunction with {{ the_british_museum }}.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Sculpt the Flesh", decks=6, copies="2-4") %}
+{% trans trimmed form_of_mist=card("Form of Mist") %}
+A nice strike for free aggravated damage, the superior {{ PRO }} option
+can be useful against an ally or to slow down an opponent.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Vozhd of Sofia", decks=6, copies="1-2") %}
 {% trans trimmed war_ghoul=card("War Ghoul") %}
-Yet another cheap sidekick, {{ vic }} is less useful than {{ aus }} but, still,
-having cheap Tzimisce to recruit some {{ war_ghoul }} is great.
+A strong ally, one step above the infamous {{ war_ghoul }}, but unique.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("War Ghoul", decks=41, copies="2-8") %}
-{% trans trimmed %}
-One of the most dreadful allies of the game, it is an excellent combatant
-and can grind vampires down all around the table in a few turns.
-The trick is to work around its downside by getting cheap allies and retainers
-to sacrifice to it.
+{% call layout.card_column("Asanbonsam Ghoul", decks=5, copies="1-5") %}
+{% trans trimmed war_ghoul=card("War Ghoul") %}
+A nice intercept ally, often seen alongside {{ war_ghoul }}.
 {% endtrans %}
 {% endcall %}
+
+{% call layout.card_column("War Ghoul", decks=5, copies="2-7") %}
+{% trans trimmed piper=card("Piper") %}
+A brutal ally, that can even be recruited through {{ piper }} to avoid blocks.
+A sacrifice is required, but it is well worth the hassle.
+{% endtrans %}
+{% endcall %}
+
 {% endblock %}

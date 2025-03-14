@@ -1,0 +1,68 @@
+{% extends "archetypes/_layout.html" %}
+{% import "archetypes/_layout-erratum.html" as erratum with context %}
+{% import "archetypes/new-kids/kalinda.json" as deck_json %}
+
+{% block meta %}
+<meta property="decklist" content='{{ deck_json | tojson }}' />
+{% endblock %}
+
+{% block archetype_name %}
+<h1>{{ banu_haqim }} Kalinda</h1>
+{% endblock %}
+
+{% block archetype %}
+{% trans trimmed
+alamut=card("Alamut"),
+ashur_tablets=card("Ashur Tablets"),
+banu_haqim_justicar=card("Banu Haqim Justicar"),
+camarillas_iron_fist=card("Camarilla's Iron Fist"),
+haqim_s_law_retribution=card("Haqim's Law: Retribution"),
+hunger_of_marduk=card("Hunger of Marduk"),
+infernal_pursuit=card("Infernal Pursuit"),
+kalinda=card("Kalinda (G6)"),
+protected_district=card("Protected District"),
+pursuit=card("Pursuit"),
+resist_earths_grasp=card("Resist Earth's Grasp"),
+swallowed_by_the_night=card("Swallowed by the Night"),
+web_of_knives_recruit=card("Web of Knives Recruit"),
+haqim_royalty=link("/archetypes/haqim-royalty")
+%}
+<h2>Highlights</h2>
+<p>
+    This is a <em>stealth & bleed</em> starring {{ kalinda }} and relying on {{ haqim_s_law_retribution }}
+    to increase its bleed, and {{ protected_district }} for defense.
+</p>
+<p>
+    The idea is to influence {{ kalinda }}, as her ability lets her bleed then unlock, to be ready to defend
+    with {{ protected_district }}.
+</p>
+<p>
+    Stealth is pretty high, with Obfuscate {{ OBF }} modifiers doing their usual job.
+    {{ swallowed_by_the_night }} and {{ resist_earths_grasp }} are favored because they can be used for stealth
+    or discarded by {{ haqim_s_law_retribution }} for more bleed power.
+</p>
+<p>
+    The combat module is mostly defensive, with a lot of maneuvers and some combat ends. But it can still
+    surprise an unwary opponent with {{ hunger_of_marduk }} and {{ pursuit }}.
+</p>
+<h2>Tips & Tricks</h2>
+<p>
+    The deck packs a small political module that can help with the lunge, using {{ camarillas_iron_fist }}.
+    It can be negotiated witht he table, or pass thanks to the static votes available or {{ alamut }},
+    if it is available. {{ banu_haqim_justicar }} should be easy to pass and also provide more votes.
+</p>
+<p>
+    The {{ ashur_tablets }} & {{ infernal_pursuit }} combination is an efficient way to fix and improve the cards flow
+    if needed.
+</p>
+<p>
+    The deck is close enough to {{ haqim_royalty }} that it can keep the opponents guessing for a while.
+    It makes them cautious about entering combat with the vampires, seeing how that archetype is so strong in combat.
+    It is a lever one should not hesitate to exploit when playing this deck.
+</p>
+<h2>Variants</h2>
+<p>
+    {{ alamut }} can be doubled, and {{ web_of_knives_recruit }} is a nice fit.
+</p>
+{% endtrans %}
+{% endblock %}

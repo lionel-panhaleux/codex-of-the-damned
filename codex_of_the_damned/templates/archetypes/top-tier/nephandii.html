@@ -1,0 +1,93 @@
+{% extends "archetypes/_layout.html" %}
+{% import "archetypes/_layout-erratum.html" as erratum with context %}
+{% import "archetypes/top-tier/nephandii.json" as deck_json %}
+
+{% block meta %}
+<meta property="decklist" content='{{ deck_json | tojson }}' />
+{% endblock %}
+
+{% block archetype_name %}
+<h1>{{ tremere_antitribu }} Nephandii</h1>
+{% endblock %}
+
+{% block archetype %}
+{% trans trimmed
+antonio_d_erlette=card("Antonio d'Erlette"),
+archon_investigation=card("Archon Investigation"),
+ashur_tablets=card("Ashur Tablets"),
+deflection=card("Deflection"),
+delaying_tactics=card("Delaying Tactics"),
+dreams_of_the_sphinx=card("Dreams Of The Sphinx"),
+fbi_special_affairs_division=card("FBI Special Affairs Division"),
+frontal_assault=card("Frontal Assault"),
+haven_uncovered=card("Haven Uncovered"),
+liquidation=card("Liquidation"),
+mirror_walk=card("Mirror Walk"),
+nephandii=card("Nephandus", "Nephandii"),
+nephandus=card("Nephandus"),
+secure_haven=card("Secure Haven"),
+sniper_rifle=card("Sniper Rifle"),
+target_vitals=card("Target Vitals"),
+the_shard=card("The Shard, London"),
+the_unmasking=card("The Unmasking"),
+tupdog=card("Tupdog"),
+stealth_bleed=link("/strategy/archetype-categories", _("Stealth & Bleed"), _anchor="bleed"),
+meta=link("/strategy/articles/advanced/the-game-of-the-game", _("meta")),
+tupdog_arch=link("/archetypes/tupdogs"),
+darby_keeney_s_list=link("/deck-search", "Darby Keeney's list", id="11472"),
+martin_weinmayer=link("/deck-search", "Martin Weinmayer", id="11478")
+%}
+<h2>Highlights</h2>
+<p>
+    This an <em>Allies swarm</em> deck relying on the excellent {{ nephandus }},
+    coupled with their preferred recruiter, {{ antonio_d_erlette }}.
+</p>
+<p>
+    The deck aims at recruiting at least one {{ nephandus }} a turn, sometimes two by using {{ mirror_walk }}
+    for stealth and protection against blocks, building a swarm of them to bleed their prey.
+    The {{ nephandii }} ability makes them resilient and, with just {{ target_vitals }},
+    they are painful for a low cost.
+</p>
+<p>
+    On the defense side, the deck uses {{ deflection }} against bleeds and {{ delaying_tactics }}
+    against votes. It aims at playing {{ the_unmasking }} as soon as possible, to allow
+    the {{ nephandii }} to provide better protection.
+</p>
+<p>
+    The deck uses the {{ liquidation }} & {{ ashur_tablets }} combination to bloat,
+    and {{ the_shard }} for cost reduction.
+</p>
+<h2>Tips & Tricks</h2>
+<p>
+    The occasional {{ haven_uncovered }} and {{ frontal_assault }} allow for spikes of rushes from the {{ nephandii }},
+    that can swing the whole table balance.
+</p>
+<p>
+    {{ secure_haven }} can protect {{ antonio_d_erlette }} from rushes.
+    Otherwise, a second vampire to provide a bit of resilience in {{ deflection }} works, as any decent
+    {{ stealth_bleed }} deck will be able to pass the {{ nephandii }} if noone is bouncing.
+</p>
+<p>
+    The 3 {{ tupdog }} in crypt are an interesting inclusion. They can serve as meat shields
+    to protect {{ antonio_d_erlette }} in the first turn, but they can also mislead the opponents in mistaking
+    the deck for a {{ tupdog_arch }} deck, an for quite a long time if the player manages to keep the charade going,
+    since using {{ nephandii }} is a strong variant of that archetype.
+</p>
+<p>
+    {{ dreams_of_the_sphinx }} is useful to cycle out the multiple copies of unique cards and keep the cards flowing,
+    and it can occasionally gain a turn when drawn first, with {{ antonio_d_erlette }} being capacity 5.
+</p>
+<h2>Variants</h2>
+<p>
+    Since he built the deck first, {{ darby_keeney_s_list }} and his comments are worth a look.
+    For example, he does not bother with {{ fbi_special_affairs_division }}, {{ secure_haven }},
+    nor {{ archon_investigation }}. That said, these are all worth consideration depending on the {{ meta }}.
+</p>
+<p>
+    The <strong>Bounce</strong> variant, introduced by {{ martin_weinmayer }},
+    uses a different crypt with more superior Auspex {{ AUS }}, aiming for a sidekick who can block with
+    {{ sniper_rifle }}. It fields so many bounces, the deck is virtually impregnable to bleeds.
+    It is a slower but more resilient deck, fit for a bleed-heavy {{ meta }}.
+</p>
+{% endtrans %}
+{% endblock %}

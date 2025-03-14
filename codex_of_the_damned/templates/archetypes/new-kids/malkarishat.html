@@ -1,0 +1,65 @@
+{% extends "archetypes/_layout.html" %}
+{% import "archetypes/_layout-erratum.html" as erratum with context %}
+{% import "archetypes/new-kids/malkarishat.json" as deck_json %}
+
+{% block meta %}
+<meta property="decklist" content='{{ deck_json | tojson }}' />
+{% endblock %}
+
+{% block archetype_name %}
+<h1>{{ malkavian }} Malkarishat</h1>
+{% endblock %}
+
+{% block archetype %}
+{% trans trimmed
+
+%}
+<h2>Highlights</h2>
+<p>
+    This is a <em>vote</em> deck using Malkavian Justicar and Princes, together with the infamour {{ arishat }}.
+</p>
+<p>
+    The idea is to get use {{ govern_the_unaligned }} to influence more vampires fast and cheap as usual,
+    then proceed to oust the prey with votes like {{ parity_shift }} and {{ kine_resources_contested }}.
+</p>
+<p>
+    The stealth is overwhelming, with {{ forgotten_labyrinth }} combined with {{ lost_in_crowds }} letting
+    the vampires achieve 5 stealth on undirected actions without breaking a sweat. And if anyone manages to go
+    that high, there is always {{ elder_impersonation }}.
+</p>
+<p>
+    Votes are secured by the vampires titles combined with {{ arishat }}'s ability and {{ condemnation_mute }}.
+    {{ deflection }} is used for bleed defense, and {{ obedience }} to avoid fights altogether.
+</p>
+<h2>Tips & Tricks</h2>
+<p>
+    The deck packs no wake nor unlock, so one must be cautious in keeping a vampire unlocked when needed,
+    to play {{ deflection }} and {{ obedience }}.
+</p>
+<p>
+    {{ parity_shift }} is key in the deck: it aims to influence more vampires to get its pool under the prey's pool,
+    so {{ parity_shift }} can be used.
+</p>
+<p>
+    {{ unleash_hell_s_fury }} is an excellent defense against rushes, especially high capacity rusher who would
+    not be impaired by {{ obedience }}.
+</p>
+<p>
+    {{ juliet_parr }} is a quasi-star here, her ability helps to cycle unneeded cards easily.
+</p>
+<p>
+    {{ my_kin_against_the_world }} is a nice tool: either unlock vampires for defense,
+    or use after voting to bleed with the remaining {{ govern_the_unaligned }} if the prey's defense is weak enough,
+    for a brutal lunge.
+</p>
+<p>
+    Recursion is strong, alowing to fetch whatever is need, be it a vote, an {{ unleash_hell_s_fury }},
+    more {{ deflection }}, or more {{ stealth }}. {{ ashur_tablets }} and {{ the_sargon_fragment }}
+    allow to fetch back whatever is most impactful for the table.
+</p>
+<h2>Variants</h2>
+<p>
+    There is no variant for this deck.
+</p>
+{% endtrans %}
+{% endblock %}

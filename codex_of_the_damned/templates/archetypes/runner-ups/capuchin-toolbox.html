@@ -1,0 +1,82 @@
+{% extends "archetypes/_layout.html" %}
+{% import "archetypes/_layout-erratum.html" as erratum with context %}
+{% import "archetypes/runner-ups/capuchin-toolbox.json" as deck_json %}
+
+{% block meta %}
+<meta property="decklist" content='{{ deck_json | tojson }}' />
+{% endblock %}
+
+{% block archetype_name %}
+<h1>{{ harbinger_of_skulls }} Capuchin Toolbox</h1>
+{% endblock %}
+
+{% block archetype %}
+{% trans trimmed
+villein=card("Villein"),
+mirror_walk=card("Mirror Walk"),
+deflection=card("Deflection"),
+telepathic_misdirection=card("Telepathic Misdirection"),
+my_enemys_enemy=card("My Enemy's Enemy"),
+murmur_of_the_false_will=card("Murmur of the False Will"),
+govern_the_unaligned=card("Govern the Unaligned"),
+bonding=card("Bonding"),
+archon_investigation=card("Archon Investigation"),
+theft_of_vitae=card("Theft of Vitae"),
+unflinching_persistance=card("Unflinching Persistance"),
+crocodile_s_tongue=card("Crocodile's Tongue"),
+under_my_skin=card("Under My Skin"),
+the_capuchin=card("The Capuchin"),
+guillaume_real_estate=link("/archetypes/guillaume-real-estate"),
+saulot_wall=link("/archetypes/saulot-wall")
+%}
+<h2>Highlights</h2>
+<p>
+    This is a <em>toolbox</em> deck starring {{ the_capuchin }}.
+    The idea is to endure and apply low but constant pressure on the prey,
+    while keeping as large a hand as possible to keep options open all the time.
+</p>
+<p>
+    Ideally, {{ the_capuchin }} is influenced first, the he uses {{ govern_the_unaligned }} to bring out a sidekick.
+    {{ villein }} can be used to recoup blood. {{ thn }} and {{ tha }} are used for a bit of stealth,
+    with the exceptionnal {{ under_my_skin }}, and {{ mirror_walk }}.
+</p>
+<p>
+    Bleed defense is extremely solid, with 10 bounces between {{ deflection }}, {{ telepathic_misdirection }},
+    {{ my_enemys_enemy }} and {{ murmur_of_the_false_will }}. Intercept runs pretty high too,
+    not to mention {{ the_capuchin }}'s permanent bonus to begin with, with a good amount of wakes to support it all.
+</p>
+<p>
+    Bleed is ramping up throughout the game, with the sidekick able to use {{ govern_the_unaligned }}
+    and {{ bonding }} for bleeds from 2 to 5. Beware of a possible {{ archon_investigation }}, though.
+</p>
+<p>
+    When it comes down to combat, the deck relies on the efficient {{ theft_of_vitae }} and the multi-puprose
+    {{ unflinching_persistance }}, which can be used for prevention as well as range management.
+    It is a tight but sturdy module.
+</p>
+<h2>Tips & Tricks</h2>
+<p>
+    {{ crocodile_s_tongue }} is brutal against allies, but also quite synergetic with {{ under_my_skin }}:
+    one might shy away from paying 2 blood if there's a standing {{ under_my_skin }} on {{ the_capuchin }},
+    thus barring any further block attempt from the Methuselah.
+</p>
+<p>
+    The deck's strategy is very contemplative. It should try to avoid getting in combats it is not likely to win,
+    and stay defensive for most of the game, seizing opportunities as they arise. The more the game progresses,
+    the more it stacks important devices and regenerate pool.
+    It's not passive either: between the bounces and the stealth bleed,
+    the pressure will end up overwhelming the prey at some point.
+</p>
+<p>
+    The main feature of the deck is its hand size. It is an under-valued option most of the time,
+    except maybe in the {{ guillaume_real_estate }} archetype, but here the hand can reach well over 10 cards,
+    providing the Methuselah with a constant wide range of options, making it that much sturdier.
+</p>
+<h2>Variants</h2>
+<p>
+    This is a new build from <em>Richard Stefan Utner</em>, so there are no variations as of yet.
+    It is reminiscent of {{ saulot_wall }}, but different enough to be called its own archetype.
+    It scored 3 victories already though, so it ought to be good.
+</p>
+{% endtrans %}
+{% endblock %}

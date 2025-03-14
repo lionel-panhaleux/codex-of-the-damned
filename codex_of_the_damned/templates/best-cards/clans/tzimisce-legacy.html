@@ -1,0 +1,107 @@
+{% extends "best-cards/_layout.html" %}
+{% import "best-cards/_layout_card_column.html" as layout with context%}
+
+{% block content %}
+<h1>{{ tzimisce }} Tzimisce (Legacy)</h1>
+<div class="insert tip">
+    <p>
+        {% trans trimmed
+        tzimisce_wall=link("/archetypes/fear-factor"),
+        tzimisce_toolbox=link("/archetypes/tzimisce-toolbox"),
+        war_ghouls=link("/archetypes/war-ghouls"),
+        war_ghoul=card("War Ghoul")
+        %}
+        The Tzimisce and their unique {{ vic }} discipline also have the quite rare
+        {{ AUS }}{{ ANI }} combination, making them excellent blockers.
+        They have given birth to the {{ tzimisce_wall }} and the
+        {{ tzimisce_toolbox }} archetypes, but also to the {{ war_ghouls }} archetype,
+        using {{ war_ghoul }} to rush opponents vampires.
+        {% endtrans %}
+    </p>
+</div>
+
+{% call layout.card_column("Changeling", decks=29, copies="3-7") %}
+{% trans trimmed %}
+Choice between stealth and bleed enhancement, a versatile tool for {{ vic }}.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Chiropteran Marauder", decks=25, copies="4-9") %}
+{% trans trimmed immortal_grapple=card("Immortal Grapple")%}
+An excellent combat card offering both maneuverability and aggravated damage.
+As a bonus, the strike stays a hand strike and can be used even if
+{{ immortal_grapple }} has been played.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Breath of the Dragon", decks=23, copies="2-5") %}
+{% trans trimmed chiropteran_marauder=card("Chiropteran Marauder") %}
+The <em>other</em> aggravated strike available through {{ vic }},
+it makes for a dreadful combination with {{ chiropteran_marauder }},
+as no range is safe for the opponent.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Plasmic Form", decks=19, copies="2-6") %}
+{% trans trimmed chiropteran_marauder=card("Chiropteran Marauder") %}
+Stealth at inferior {{ vic }} is useful, even with the cost. And the defensive combat option can come in handy.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Caliban", decks=15, copies="1-2") %}
+{% trans trimmed %}
+All clan disciplines {{ AUS }}{{ ANI }}{{ VIC }} at superior for only 6 pool: a bargain.
+He finds his spot in many Tzimisce crypts.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Devin Bisley", decks=12, copies="1") %}
+{% trans trimmed %}
+Although she has inferior {{ vic }}, having {{ AUS }}{{ ANI }} for just 5 pool
+makes an excellent blocker out of her.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Lolita Houston", decks=12, copies="1") %}
+{% trans trimmed %}
+The cheapest superior {{ VIC }}, she gets included in many decks centerd on the discipline.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Horatio", decks=43, copies="1-2") %}
+{% trans trimmed war_ghoul=card("War Ghoul") %}
+The cheapest {{ vic }} pool can buy. Typical low cap used to recruit some {{ war_ghoul }}.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Little Tailor of Prague", decks=8, copies="1") %}
+{% trans trimmed war_ghoul=card("War Ghoul") %}
+All clan disciplines at superior with a bleed bonus, worth the price.
+His ability can even be useful depending on the deck.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Meshenka", decks=7, copies="1-2") %}
+{% trans trimmed war_ghoul=card("War Ghoul") %}
+Often seen in {{ VIC }} toolboxes for her excellent reduction ability.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("The Dracon", decks=7, copies="1-2") %}
+{% trans trimmed
+malgorzata=card("Malgorzata") ,
+saulot_the_wanderer=card("Saulot, The Wanderer")
+%}
+A good partner for {{ malgorzata }} as well as a fit in {{ THA }}{{ AUS }} {{ saulot_the_wanderer }} decks.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("War Ghoul", decks=7, copies="2-8") %}
+{% trans trimmed %}
+One of the most dreadful allies of the game, it is an excellent combatant
+and can grind vampires down all around the table in a few turns.
+The trick is to work around its downside by getting cheap allies and retainers
+to sacrifice to it.
+{% endtrans %}
+{% endcall %}
+{% endblock %}

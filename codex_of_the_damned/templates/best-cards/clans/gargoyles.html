@@ -1,0 +1,92 @@
+{% extends "best-cards/_layout.html" %}
+{% import "best-cards/_layout_card_column.html" as layout with context%}
+
+{% block content %}
+<h1>{{ gargoyle }} Gargoyles</h1>
+<div class="insert tip">
+    {% trans trimmed
+    tupdogs_nephandus=link("/archetypes/tupdogs")
+    %}
+    <p>
+        Gargoyles can be used to build good toolboxes, but their most successful archetype by far is
+        {{ tupdogs_nephandus }}.
+    </p>
+    {% endtrans %}
+</div>
+
+{% call layout.card_column("Tupdog", decks=21, copies="5-29") %}
+{% trans trimmed tupdogs=link("/archetypes/tupdogs") %}
+An infamous rush device, only available as an offensive tool for Tremere antitribu.
+They gave birth to the {{ tupdogs }} archetype.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Brick by Brick", decks=15, copies="6-11") %}
+{% trans trimmed
+tupdog=card("Tupdog"),
+immortal_grapple=card("Immortal Grapple")
+%}
+An excellent tool to set the range at superior {{ VIS }}. {{ tupdog }} plays it for free
+and can easily {{ immortal_grapple }} afterwards.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Raking Talons", decks=17, copies="6-12") %}
+{% trans trimmed %}
+Free aggravated damage, neat.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Rock Cat", decks=6, copies="2-8") %}
+{% trans trimmed
+immortal_grapple=card("Immortal Grapple"),
+disarm=card("Disarm")
+%}
+A nice rusher, they can even use {{ immortal_grapple }} and {{ disarm }}.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Voices of the Castle", decks=6, copies="2-5") %}
+{% trans trimmed %}
+Intercept or bleed reduction, two useful possibilities.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Stonestrength", decks=6, copies="5-8") %}
+{% trans trimmed indomitability=card("Indomitability") %}
+A good prevention card, a step above {{ indomitability }}.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Skin of the Chameleon", decks=6, copies="1-8") %}
+{% trans trimmed %}
+A good stealth modifier, although a bit costly.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Unleash the Hounds", decks=4, copies="1-4") %}
+{% trans trimmed %}
+A nice bleed enhancer.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Alabástrom", decks=4, copies="3-5") %}
+{% trans trimmed %}
+A good leader, with a great unlock ability, and he's no slave.
+Being anarch, he also gets nice combat options.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Razor Bat", decks=4, copies="1-4") %}
+{% trans trimmed %}
+A long time favorite retainer. Expensive, but brutal, especially if they start stacking.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Handsome Dan", decks=3, copies="2-4") %}
+{% trans trimmed alabastrom=card("Alabástrom") %}
+A typical partner for {{ alabastrom }}, with the same disciplines and being Anarch too.
+{% endtrans %}
+{% endcall %}
+
+{% endblock %}

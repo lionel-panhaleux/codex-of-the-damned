@@ -1,0 +1,105 @@
+{% extends "archetypes/_layout.html" %}
+{% import "archetypes/_layout-erratum.html" as erratum with context %}
+{% import "archetypes/runner-ups/protean-barons.json" as deck_json %}
+
+{% block meta %}
+<meta property="decklist" content='{{ deck_json | tojson }}' />
+{% endblock %}
+
+{% block archetype_name %}
+<h1>Protean Barons</h1>
+{% endblock %}
+
+{% block archetype %}
+{% trans trimmed
+anarch_troublemaker=card("Anarch Troublemaker"),
+ashur_tablets=card("Ashur Tablets"),
+bait_and_switch=card("Bait and Switch"),
+bums_rush=card("Bum's Rush"),
+childe_of_the_revolution=card("Childe of the Revolution"),
+club_illusion=card("Club Illusion"),
+constant_revolution=card("Constant Revolution"),
+dark_influences=card("Dark Influences"),
+direct_intervention=card("Direct Intervention"),
+donnybrook=card("Donnybrook"),
+earth_control=card("Earth Control"),
+earth_meld=card("Earth Meld"),
+eat_the_rich=card("Eat The Rich"),
+form_of_mist=card("Form Of Mist"),
+heart_of_nizchetus=card("Heart Of Nizchetus"),
+monkey_wrench=card("Monkey Wrench"),
+open_war=card("Open War"),
+organized_resistance=card("Organized Resistance"),
+powerbase_los_angeles=card("Powerbase: Los Angeles"),
+protean_card=card("Protean"),
+protection_racket=card("Protection Racket"),
+revolutionary_council=card("Revolutionary Council"),
+the_anarch_free_press=card("The Anarch Free Press"),
+the_erciyes_fragments=card("The Erciyes Fragments"),
+the_uncoiling=card("The Uncoiling"),
+villein=card("Villein"),
+gangrel_thing=link("/archetypes/gangrel-thing"),
+simo_tiippana_s_deck=link("/deck-search", _("Simo Tiippana's deck"), id="11456"),
+tommi_hakomaa=link("/deck-search", _("Tommi Hakomaa"), id="11454"),
+diego_rodrigues_deck=link("/deck-search", _("Diego Rodrigues' deck"), id="11169")
+%}
+<h2>Highlights</h2>
+<p>
+    This is a multiclan {{ toolbox }} relying on Anarch Barons and the great Protean {{ pro }} discipline.
+</p>
+<p>
+    Barons allow for great defense with {{ bait_and_switch }} and {{ organized_resistance }},
+    while Protean {{ pro }} is maybe the most versatile discipline in the game, with stealth like {{ earth_control }}
+    and combat both defensive with {{ earth_meld }} and offensive with {{ donnybrook }}.
+</p>
+<p>
+    Putting both together with a few Anarch cards like {{ club_illusion }} and {{ monkey_wrench }} to improve bleed,
+    or {{ the_anarch_free_press }} and {{ protection_racket }} to improve intercept, one gets a versatile toolbox.
+</p>
+<p>
+    Since the deck recoups pool with {{ villein }}, to influence more barons, and creates additional minions with
+    {{ childe_of_the_revolution }}, who also get Protean {{ pro }} thanks to the master discipline {{ protean_card }}.
+    As the game progresses, the swarms only grows, bleeding and defending
+</p>
+<p>
+    The prey can be ousted with pure bleed, but there are also a couple of alternative options just in case,
+    with {{ constant_revolution }}, {{ eat_the_rich }} and {{ revolutionary_council }}.
+</p>
+<h2>Tips & Tricks</h2>
+<p>
+    {{ dark_influences }} is a bit expensive, but can have even more impact than an {{ direct_intervention }}:
+    preventing a certain card for a whole turn can be game changing.
+</p>
+<p>
+    {{ the_erciyes_fragments }} is a very good inclusion here: given the spread of disciplines among the barons,
+    they can play almost any card.
+</p>
+<p>
+    Card flow can be problematic, so {{ heart_of_nizchetus }} and {{ powerbase_los_angeles }} are included
+    to help with that.
+</p>
+<p>
+    Because of the {{ childe_of_the_revolution }} swarm and all the {{ earth_meld }}, the deck can function a bit like
+    a "tap and bleed", aiming at exhausting the prey's wake and unlock defenses.
+    That makes {{ anarch_troublemaker }} a nice inclusion for a lunge.
+</p>
+<h2>Variants</h2>
+<p>
+    This deck is inspired by {{ simo_tiippana_s_deck }} with some adaptations.
+    {{ the_uncoiling }} should probably have stayed in the list, for example.
+</p>
+<p>
+    The <strong>Death Star</strong> variant played by {{ tommi_hakomaa }} uses {{ ashur_tablets }},
+    includes some {{ form_of_mist }} for more stealth, and focuses more on {{ revolutionary_council }} as a
+    lunge device.
+</p>
+<p>
+    The <strong>Rush</strong> variant forgoes the {{ childe_of_the_revolution }} swarm to instead include
+    {{ bums_rush }} and {{ open_war }} as well as a more aggressive combat module, for a very different toolbox,
+    see {{ diego_rodrigues_deck }} for example, an idea credited to <em>Bram van Stappen</em>.
+</p>
+<p>
+    This is somehow close to the {{ gangrel_thing }} archetype, with less intercept capabilities but more votes.
+</p>
+{% endtrans %}
+{% endblock %}

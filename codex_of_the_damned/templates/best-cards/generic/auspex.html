@@ -12,7 +12,7 @@
     </p>
 </div>
 
-{% call layout.card_column("Telepathic Misdirection", decks=649, copies="3-7") %}
+{% call layout.card_column("Telepathic Misdirection", decks=257, copies="3-7") %}
 {% trans trimmed %}
 By far the most played card in {{ aus }}, it is an excellent
 bounce. Its blood cost is fair and its basic effect can
@@ -21,18 +21,16 @@ bounces.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Eyes of Argus", decks=470, copies="2-7") %}
+{% call layout.card_column("Eyes of Argus", decks=242, copies="3-8") %}
 {% trans trimmed %}
-A +2 intercept bonus combined with a wake, basically a dream
-come true for all block-oriented constructs. The intercept
-can only apply to directed actions though, and it needs to
-be completed by classic intercept enhancers for a defence to
-be really effective. Blocking political actions, equip and
-recruit actions are critical to one’s defence.
+A +2 intercept bonus combined with a wake, a dream
+come true for block-oriented decks. The intercept
+only applies to directed actions though, and it cannot be used twice on the same action.
+So it needs to be completed by other wake and intercept reactions.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("My Enemy's Enemy", decks=398, copies="1-3") %}
+{% call layout.card_column("My Enemy's Enemy", decks=163, copies="1-3") %}
 {% trans trimmed %}
 Another intercept source, with the interesting bounce option
 at no cost. Even though a bounce to one’s ally is a hard
@@ -41,47 +39,66 @@ original prey.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Bowl of Convergence", decks=358, copies="1") %}
+{% call layout.card_column("Bowl of Convergence", decks=149, copies="1") %}
 {% trans trimmed %}
-Almost systematically played in {{ aus }} decks, it is a
-solid permanent intercept at no cost.
+Very consistently played in {{ aus }} decks fielding any decent intercept module,
+it is a solid permanent intercept at no cost.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Eagle's Sight", decks=315, copies="2-6") %}
+{% call layout.card_column("Eagle's Sight", decks=103, copies="2-5") %}
 {% trans trimmed
 falcons_eye=card("Falcon's Eye"),
 anneke=card("Anneke"),
 wall=link("/strategy/archetype-categories", _("wall decks"), _anchor="wall")
 %}
-Only three cards in the game allow the interception of cross
-table actions or actions directed to other players, this
-one, {{ falcons_eye }} and {{ anneke }}.
-This precious ability helps {{ wall }}
-hurt their prey more than others, leading to an oust rather
-than king-making. It's also a flexible defense against a
-grand-predator political actions, and a way to control the
-table balance and avoid early ousts.
+Only three cards in the game allow the interception of cross table actions or actions
+directed to other players, this one, {{ falcons_eye }} and {{ anneke }}. This precious
+ability helps {{ wall }} hurt their prey more than others, leading to an oust rather
+than king-making. It's also a flexible defense against a grand-predator political
+actions, and a way to control the table balance and avoid early ousts.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Enhanced Senses", decks=287, copies="2-4") %}
+{% call layout.card_column("Enhanced Senses", decks=87, copies="2-4") %}
 {% trans trimmed
 my_enemy=card("My Enemy's Enemy"),
 precognition=card("Precognition"),
 spirits_touch=card("Spirit's Touch")
 %}
-An efficient intercept enhancer. Other enhancers are welcome
-as the same reaction card can’t be played twice on a single
-action. Note that this makes an enhancer with a twist like
-{{ my_enemy }}
-a valuable addition, compared to other enhancers with less
-useful effects like
-{{ precognition }} or {{ spirits_touch }}.
+An efficient intercept enhancer. Other enhancers are welcome as the same reaction card
+cannot be played twice on a single action. Note that this makes an enhancer with a twist
+like {{ my_enemy }} a valuable addition, compared to other enhancers with less useful
+effects like {{ precognition }} or {{ spirits_touch }}.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Precognition", decks=132, copies="1-3") %}
+{% call layout.card_column("Spirit's Touch", decks=29, copies="1-3") %}
+{% trans trimmed %}
+Yet another intercept enhancer, its optional maneuver at
+superior {{ AUS }} can be useful in constructs using long
+range combat after the block. Yet not as efficient as other
+{{ aus }} reactions, it is used when additional intercept is needed.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Revelations", decks=21, copies="1-3") %}
+{% trans trimmed
+deflection=card("Deflection")
+%}
+The inferior is very useful to remove a bounce like {{ deflection }} from your
+prey's hand. The superior can come in handy if you're in position to defend it.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Aura Reading", decks=21, copies="1-4") %}
+{% trans trimmed %}
+An excellent cycling device at superior {{ AUS }}: even with a lightweight combat module
+it can help cycle just enough cards to bump the efficiency up.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Precognition", decks=21, copies="1-4") %}
 {% trans trimmed %}
 An additional intercept enhancer, with a decent combat bonus
 at superior {{ AUS }}. As reaching high scores of intercept
@@ -91,13 +108,13 @@ desired intercept level.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Spirit's Touch", decks=121, copies="1-4") %}
-{% trans trimmed %}
-Yet another intercept enhancer, its optional maneuver at
-superior {{ AUS }} can be useful in constructs using long
-range combat after the block. Yet not as efficient as other
-{{ aus }} reactions, it is used when additional intercept is
-needed.
+{% call layout.card_column("Quicken Sight", decks=17, copies="2-5") %}
+{% trans trimmed
+enhanced_senses=card("Enhanced Senses")
+%}
+A great intercept enhancer, for decks where the crypt has a stable access to superior
+{{ AUS }}{{ CEL }}. It's even better than the pervasive {{ enhanced_senses }}.
 {% endtrans %}
 {% endcall %}
+
 {% endblock %}

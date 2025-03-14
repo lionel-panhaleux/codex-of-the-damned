@@ -1,0 +1,78 @@
+{% extends "archetypes/_layout.html" %}
+{% import "archetypes/_layout-erratum.html" as erratum with context %}
+{% import "archetypes/new-kids/thucimia.json" as deck_json %}
+
+{% block meta %}
+<meta property="decklist" content='{{ deck_json | tojson }}' />
+{% endblock %}
+
+{% block archetype_name %}
+<h1>{{ banu_haqim }} Thucimia</h1>
+{% endblock %}
+
+{% block archetype %}
+{% trans trimmed
+archon_investigation=card("Archon Investigation"),
+confusion=card("Confusion"),
+dabbler=card("Dabbler"),
+deed_the_heart_s_desire=card("Deed The Heart's Desire"),
+direct_intervention=card("Direct Intervention"),
+dive_into_madness=card("Dive into Madness"),
+enkil_cog=card("Enkil Cog"),
+forced_march=card("Forced March"),
+freak_drive=card("Freak Drive"),
+j_s_simmons=card("J.S. Simmons, Esq."),
+kindred_spirits=card("Kindred Spirits"),
+krcg_news_radio=card("Krcg News Radio"),
+learjet=card("Learjet"),
+loss=card("Loss"),
+tasha_morgan=card("Tasha Morgan"),
+secure_haven=card("Secure Haven"),
+thucimia=card("Thucimia"),
+touch_of_clarity=card("Touch Of Clarity"),
+villein=card("Villein"),
+wash=card("Wash"),
+bounces=link("/strategy/fundamentals", _("bounces"), _anchor="bounce")
+%}
+<h2>Highlights</h2>
+<p>
+    This is a <em>stealth & bleed</em> starring {{ thucimia }}, helped by a couple of lower capacity
+    sidekicks.
+</p>
+<p>
+    The idea is to influence {{ thucimia }}, and bleed while also continuously stacking more permanent bleed
+    enhancers on her thanks to a second action from {{ freak_drive }}, {{ dabbler }} and {{ forced_march }}.
+</p>
+<p>
+    Bleed power is ludicrous. {{ dem }} or {{ qui }} are used for bleeding with {{ kindred_spirits }} and {{ loss }},
+    and stealth is provided mostly by Obfuscate {{ OBF }} modifiers, but also by {{ confusion }}.
+</p>
+<p>
+    Between her ability and {{ learjet }}, {{ thucimia }} allows for efficient cycling, so she can equip with
+    bleed enhancers like {{ dive_into_madness }}, {{ j_s_simmons }}, {{ tasha_morgan }}, and most importantly
+    {{ enkil_cog }}. The {{ enkil_cog }} is key here, as it allos {{ thucimia }} to bleed
+</p>
+<h2>Tips & Tricks</h2>
+<p>
+    The key tactic of the deck is to use {{ enkil_cog }} to bleed during the prey's turn, thus ensuring they cannot
+    use {{ archon_investigation }}. Then boost {{ thucimia }}'s bleed as much as possible, and use
+    {{ deed_the_heart_s_desire }}, {{ direct_intervention }} and {{ touch_of_clarity }} to prevent {{ bounces }}.
+</p>
+<p>
+    {{ secure_haven }} is the only protection {{ thucimia }} can get from rushes, apart from sacrificing
+    another vampire to the block.
+</p>
+<p>
+    Not only can {{ direct_intervention }} be used during an {{ enkil_cog }} bleed in another Methuselah's turn,
+    it is also a safeguard to cancel any potential contesting {{ enkil_cog }} on the table.
+</p>
+<p>
+    {{ wash }} can be used to counter permanent intercept like {{ krcg_news_radio }}, as well as bloat Master cards
+    like {{ villein }} and, maybe more importantly, any tentative to contest {{ secure_haven }}.
+</p>
+<h2>Variants</h2>
+<p>
+    There is no variant to this deck.
+</p>
+{% endtrans %}
+{% endblock %}

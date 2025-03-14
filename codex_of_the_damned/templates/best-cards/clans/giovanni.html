@@ -34,28 +34,49 @@
     </p>
 </div>
 
-{% call layout.card_column("Sudario Refraction", decks=85, copies="2-5") %}
+{% call layout.card_column("Sudario Refraction", decks=15, copies="2-5") %}
 {% trans trimmed %}
 The most played Giovanni card. Its rare recursion ability enables the Giovanni players
 to adapt their hand to the table context, which is a nice advantage.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Lia Milliner", decks=80, copies="1") %}
+{% call layout.card_column("Lia Milliner", decks=12, copies="1") %}
 {% trans trimmed %}
 {{ dom }} and {{ nec }} for only 3 pool: a bargain. She can even find her place
 in mono {{ dom }} decks.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Gloria Giovanni", decks=76, copies="1-2") %}
+{% call layout.card_column("Gloria Giovanni", decks=11, copies="1") %}
 {% trans trimmed %}
 Superior {{ DOM }} and {{ nec }} for only 4 pool: another bargain.
 She finds an easy place in mono {{ dom }} builds.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Isabel Giovanni", decks=69, copies="1-2") %}
+{% call layout.card_column("Tye Cooper", decks=10, copies="1") %}
+{% trans trimmed %}
+Played in many Giovanni decks, even when they are not centred on allies,
+he is very resilient and can be good defence.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Powerbase: Cape Verde", decks=10, copies="1") %}
+{% trans trimmed blood_doll=card("Blood Doll") %}
+A generalized {{ blood_doll }},
+it is an efficient bloat device at no cost. Most Giovanni decks play it.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Gianna di Canneto", decks=10, copies="1") %}
+{% trans trimmed %}
+The additional damage and equipment burning ability is unique and so useful.
+Moreover, she can bleed! A bargain for any combat-capable Giovanni deck.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Isabel Giovanni", decks=9, copies="1-2") %}
 {% trans trimmed %}
 Superior {{ DOM }}{{ NEC }} for only 5 pool,
 it is often the perfect disciplines combination for Giovanni decks,
@@ -63,65 +84,11 @@ so Isabel is often played in multiple copies.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Tye Cooper", decks=69, copies="1") %}
-{% trans trimmed %}
-Played in many Giovanni decks, even when they are not centred on allies,
-he is very resilient and can be good defence.
-{% endtrans %}
-{% endcall %}
-
-{% call layout.card_column("Powerbase: Cape Verde", decks=59, copies="1") %}
-{% trans trimmed blood_doll=card("Blood Doll") %}
-A generalized {{ blood_doll }},
-it is an efficient bloat device at no cost. Most Giovanni decks play it.
-{% endtrans %}
-{% endcall %}
-
-{% call layout.card_column("Rudolfo Giovanni", decks=56, copies="1-2") %}
-{% trans trimmed shambling_hordes=card("Shambling Hordes") %}
-The cheapest {{ NEC }} available, he is often seen alongside allies, especially
-{{ shambling_hordes }}.
-{% endtrans %}
-{% endcall %}
-
-{% call layout.card_column("Francesca Giovanni", decks=44, copies="1") %}
-{% trans trimmed %}
-All clan disciplines for 4 pool, a good sidekick in many Giovanni decks.
-{% endtrans %}
-{% endcall %}
-
-{% call layout.card_column("Leonardo, Mortician", decks=43, copies="1") %}
+{% call layout.card_column("Guillaume Giovanni", decks=8, copies="4-5") %}
 {% trans trimmed
-shambling_hordes=card("Shambling Hordes"),
-khazar_s_diary=card("Khazar's Diary (Endless Night)", "Khazar's Diary")
+own_archetype=link("/archetypes/guillaume-real-estate", _("own archetype"))
 %}
-A cheap ally with a nice ability. Often included to fuel
-{{ shambling_hordes }} or {{ khazar_s_diary }}.
-{% endtrans %}
-{% endcall %}
-
-{% call layout.card_column("Andrea Giovanni", decks=43, copies="1-2") %}
-{% trans trimmed shambling_hordes=card("Shambling Hordes") %}
-An excellent abilities for decks relying a lot on the {{ NEC }} discipline,
-like those using {{ shambling_hordes }}.
-{% endtrans %}
-{% endcall %}
-
-{% call layout.card_column("The Path of Bone", decks=40, copies="1-3") %}
-{% trans trimmed %}
-A good way to reduce blood consumption in {{ nec }} decks.
-As is the case with many <em>Path</em> cards,
-it is quite cheap and not so easy to destroy:
-investing an action and a blood just to have the vampires
-pay a bit more for some cards can be too much.
-{% endtrans %}
-{% endcall %}
-
-{% call layout.card_column("Acquired Ventrue Assets", decks=38, copies="2-4") %}
-{% trans trimmed %}
-A cheap and efficient way to bring back some blood on the vampires.
-Better in low or mid capacity decks with more Giovanni,
-even better if it can be defended a bit.
+Star of his {{ own_archetype }}, Guillaume lets you build the largest hands in the game.
 {% endtrans %}
 {% endcall %}
 

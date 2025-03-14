@@ -115,6 +115,16 @@ a.insert:focus {
     border-color: var(--color-tip-border);
 }
 
+a.warn {
+    background-color: var(--color-warn-back) !important;
+    border-color: var(--color-warn-front) !important;
+}
+
+a.warn:hover,
+a.warn:focus {
+    border-color: var(--color-warn-border) !important;
+}
+
 header,
 footer {
     clear: both;
@@ -516,7 +526,7 @@ div.insert h3::before {
 }
 
 div.tip {
-    background: var(--color-tip-back);
+    background-color: var(--color-tip-back);
     border-color: var(--color-tip-border);
 }
 
@@ -530,7 +540,7 @@ div.tip h3::before {
 }
 
 div.warn {
-    background: var(--color-warn-back);
+    background-color: var(--color-warn-back);
     border-color: var(--color-warn-border);
 }
 

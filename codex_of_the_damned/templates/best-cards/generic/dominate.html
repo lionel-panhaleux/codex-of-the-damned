@@ -13,7 +13,7 @@
     </p>
 </div>
 
-{% call layout.card_column("Deflection", decks=880, copies="3-8") %}
+{% call layout.card_column("Deflection", decks=293, copies="3-7") %}
 {% trans trimmed %}
 It is the best bounce of the game. At superior {{ DOM }}, it can be chained multiple
 times by the same vampire, an incredibly effective defence against even the most severe
@@ -21,7 +21,14 @@ bleed constructs.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Conditioning", decks=649, copies="2-6") %}
+{% call layout.card_column("Govern the Unaligned", decks=209, copies="5-13") %}
+{% trans trimmed %}
+An incredibly versatile tool, it helps getting more vampires out for cheap in the
+beginning of the game, and provides an excruciating bleed later on.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Conditioning", decks=193, copies="2-6") %}
 {% trans trimmed govern_the_unaligned=card("Govern the Unaligned") %}
 It is the best bleed modifier of the game, and can be associated with
 {{ govern_the_unaligned }} for a 6-pool bleed. The ability to use this modifier only
@@ -30,30 +37,7 @@ a bargain.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Govern the Unaligned", decks=641, copies="4-11") %}
-{% trans trimmed %}
-An incredibly versatile tool, it helps getting more vampires out for cheap in the
-beginning of the game, and provides an excruciating bleed later on.
-{% endtrans %}
-{% endcall %}
-
-{% call layout.card_column("Bonding", decks=259, copies="1-5") %}
-{% trans trimmed conditioning=card("Conditioning") %}
-Clearly it dos not have the same impact as {{ conditioning }} in terms of pool damage,
-but the +1 stealth is invaluable for decks with no alternative discipline for stealth.
-{% endtrans %}
-{% endcall %}
-
-{% call layout.card_column("Seduction", decks=258, copies="2-6") %}
-{% trans trimmed %}
-An excellent block denial modifier. Well targeted, it can be enough to get a bleed
-through unopposed. Combined with another block denial modifier, it allows for a pure
-block denial module that can be used to get actions through without even bothering to
-use stealth.
-{% endtrans %}
-{% endcall %}
-
-{% call layout.card_column("Foreshadowing Destruction", decks=229, copies="1-3") %}
+{% call layout.card_column("Foreshadowing Destruction", decks=103, copies="1-3") %}
 {% trans trimmed
 conditioning=card("Conditioning"),
 direct_intervention=card("Direct Intervention")
@@ -65,18 +49,68 @@ way cannot be played again during the same action, but the other can.
 {% endtrans %}
 {% endcall %}
 
+{% call layout.card_column("Seduction", decks=92, copies="2-5") %}
+{% trans trimmed %}
+An excellent block denial modifier. Well targeted, it can be enough to get a bleed
+through unopposed. Combined with another block denial modifier, it allows for a pure
+block denial module that can be used to get actions through without even bothering to
+use stealth.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Bonding", decks=78, copies="2-5") %}
+{% trans trimmed conditioning=card("Conditioning") %}
+Clearly it dos not have the same impact as {{ conditioning }} in terms of pool damage,
+but the +1 stealth is invaluable for decks with no alternative discipline for stealth.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Obedience", decks=55, copies="2-8") %}
+{% trans trimmed immortal_grapple=card("Immortal Grapple") %}
+A strong defensive tool for high capacity vampires, it can even escape
+{{ immortal_grapple }} combat modules.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Murmur of the False Will", decks=49, copies="1-4") %}
+{% trans trimmed deflection=card("Deflection") %}
+Another high capacity vampire tool, this one is all about adaptability:
+additional bounces just in case, but not jamming your hand if your predator
+is not bleeding. A nice complement to {{ deflection }} .
+{% endtrans %}
+{% endcall %}
+
 {% call layout.card_column("Redirection", decks=173, copies="1-4") %}
 {% trans trimmed deflection=card("Deflection") %}
 An alternative to {{ deflection }} at no cost, it is only used when {{ DOM }} is
 vastly prevalent in the crypt. Even then, {{ deflection }} is still often preferred
-because it can be chained multiple times as the minion does not lock.
+because the minion does not lock.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Far Mastery", decks=138, copies="1-2") %}
+{% call layout.card_column("Graverobbing", decks=28, copies="1-6") %}
+{% trans trimmed
+malgorzata=link("/archetypes/malgorzata"),
+tupdogs_nephandus=link("/archetypes/tupdogs")
+%}
+A shrewd card allowing to steal opponents vampires, provided you manage to send them
+to torpor first. It is common in {{ dom }} capable combat decks, like {{ malgorzata }}
+or {{ tupdogs_nephandus }}.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Dominate Kine", decks=27, copies="1-2") %}
+{% trans trimmed
+hunting_ground=card("Academic Hunting Ground", "Hunting Ground")
+%}
+Expensive for a bleed, but stealing a good location, for example a {{ hunting_ground }},
+can be very neat.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Far Mastery", decks=22, copies="1") %}
 {% trans trimmed %}
-An excellent action to get rid of cumbersome retainers and, more importantly, allies.
-The 1 blood cost is a bargain.
+An excellent action to get rid of cumbersome allies. The 1 blood cost is a bargain.
 {% endtrans %}
 {% endcall %}
 

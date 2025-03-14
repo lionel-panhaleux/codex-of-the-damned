@@ -1,0 +1,48 @@
+{% extends "best-cards/_layout.html" %}
+{% import "best-cards/_layout_card_column.html" as layout with context%}
+
+{% block content %}
+<h1>{{ ventrue_antitribu }} Ventrue Antitribu</h1>
+<div class="insert tip">
+    {% trans trimmed
+    anti_ventrue_grinder=link("/archetypes/anti-ventrue-grinder")
+    %}
+    <p>
+        The Ventrue Antitribu with their {{ aus }}{{ dom }}{{ for }} disciplines led to a superb toolbox,
+        the {{ anti_ventrue_grinder }}.
+    </p>
+    {% endtrans %}
+</div>
+
+{% call layout.card_column("Neighbor John", decks=20, copies="1-2") %}
+{% trans trimmed %}
+{{ AUS }} with a permanent intercept bonus for just 5 pool,
+he finds his place in many {{ AUS }} crypts,
+including in non-Ventrue toolbox and wall decks.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Blackhorse Tanner", decks=8, copies="2") %}
+{% trans trimmed owain_evans=card("Owain Evans, The Wanderer", "Owain Evans")%}
+All clan disciplines {{ AUS }}{{ DOM }}{{ FOR }} at superior for a reasonable 7 pool,
+he also has a good ability for card rotation. He often gets included algonside
+{{ owain_evans }}.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Owain Evans, The Wanderer", decks=7, copies="2-3") %}
+{% trans trimmed %}
+All clan disciplines {{ AUS }}{{ DOM }}{{ FOR }} at superior for a decent cost,
+he also has a convenient ability. It is used to get some blood on the owner vampires,
+but can also be a bargaining chip with the other players.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Bruce de Guy", decks=6, copies="2-5") %}
+{% trans trimmed parliament_of_shadows=link("/archetypes/parliament-of-shadows") %}
+Wiht his unique ability alongside the Cardinal title, he makes for an awesome leader for political decks.
+With superior Obtenebration {{ OBT }}, he can be included, or even star, in a {{ parliament_of_shadows }} deck.
+{% endtrans %}
+{% endcall %}
+
+{% endblock %}

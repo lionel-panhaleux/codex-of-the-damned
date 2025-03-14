@@ -5,6 +5,10 @@
 <h1>
     {% trans trimmed %} Imbued {% endtrans%}
 </h1>
+<div class="insert warn">
+    This list is compiled from statistics encompassing 30 years,
+    as the clan has not scored enough wins in the last 5 years for relevant statistics otherwise.
+</div>
 <div class="insert tip">
     <p>
         {% trans trimmed
@@ -24,7 +28,7 @@
     </p>
 </div>
 
-{% call layout.card_column("Second Sight", decks=63, copies="3-8") %}
+{% call layout.card_column("Second Sight", decks=106, copies="3-8") %}
 {% trans trimmed beatrice=card('Béatrice "Oracle171" Tremblay', "Béatrice") %}
 The most played <em>Conviction</em>.
 Usually all three <em>Conviction</em> {{ CONVICTION }} cards are played in imbued decks,
@@ -33,14 +37,7 @@ and all she really needs is this <em>Conviction</em> {{ CONVICTION }} for a bit 
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("React with Conviction", decks=61, copies="3-6") %}
-{% trans trimmed entrancement=card("Entrancement") %}
-This is usually the first <em>Conviction</em> {{ CONVICTION }} any Imbued fetches when he comes into play,
-as it protects them against anti-ally actions like {{ entrancement }}.
-{% endtrans %}
-{% endcall %}
-
-{% call layout.card_column("Strike with Conviction", decks=61, copies="3-8") %}
+{% call layout.card_column("Strike with Conviction", decks=105, copies="3-8") %}
 {% trans trimmed %}
 An excellent <em>Conviction</em> {{ CONVICTION }} that boosts combat or bleed depending on the need.
 As it is a <em>Conviction</em> {{ CONVICTION }}, it can be used every turn and come back into play
@@ -48,15 +45,14 @@ during the unlock phase.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column('Béatrice "Oracle171" Tremblay', decks=14, copies="1-3") %}
-{% trans trimmed second_sight=card("Second Sight") %}
-A good bleeding minion for just 3 pool, she gets included in vampire crypts
-to help with the bleed, as her ability makes her impractical in Imbued crypts.
-Helped by a {{ second_sight }} for stealth, she becomes an interesting minion.
+{% call layout.card_column("React with Conviction", decks=101, copies="3-6") %}
+{% trans trimmed entrancement=card("Entrancement") %}
+This is usually the first <em>Conviction</em> {{ CONVICTION }} any Imbued fetches when he comes into play,
+as it protects them against anti-ally actions like {{ entrancement }}.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column('Jennie "Cassie247" Orne', decks=50, copies="2-3") %}
+{% call layout.card_column('Jennie "Cassie247" Orne', decks=86, copies="2-3") %}
 {% trans trimmed %}
 Her ability is the cornerstone of most Imbued decks.
 Not only can the Imbued come back from Incapacity (their version of torpor) with only
@@ -65,7 +61,14 @@ As Imbued are fragile, this additional protection is welcome.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Angel of Berlin", decks=50, copies="3-6") %}
+{% call layout.card_column("The Church of Vindicated Faith", decks=84, copies="2-4") %}
+{% trans trimmed %}
+A decent bloating device for Imbued decks, it is included in most of them,
+sometimes in multiple copies.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Angel of Berlin", decks=82, copies="2-6") %}
 {% trans trimmed %}
 A versatile out-of-turn Master. It can be used as a wake,
 but also as a way to bring equipment into play
@@ -74,34 +77,13 @@ this is a real asset to gear them up.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("The Church of Vindicated Faith", decks=49, copies="1-2") %}
-{% trans trimmed %}
-A decent bloating device for Imbued decks, it is included in most of them,
-sometimes in multiple copies.
-{% endtrans %}
-{% endcall %}
-
-{% call layout.card_column("The Crusader Sword", decks=45, copies="1") %}
+{% call layout.card_column("The Crusader Sword", decks=79, copies="1") %}
 {% trans trimmed %}
 A powerful weapon only Imbued can wield. It gets included in most Imbued decks.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column('Travis "Traveler72" Miller', decks=44, copies="2-3") %}
-{% trans trimmed %}
-His virtues are useful and his ability is an excellent bloat device,
-so he gets included in many Imbued decks.
-{% endtrans %}
-{% endcall %}
-
-{% call layout.card_column('François "Warden" Loehr', decks=44, copies="1-2") %}
-{% trans trimmed %}
-Good virtues for a decent price, his ability is also quite nice
-as it deters rush actions against him.
-{% endtrans %}
-{% endcall %}
-
-{% call layout.card_column("Vigilance", decks=44, copies="3-5") %}
+{% call layout.card_column("Vigilance", decks=78, copies="3-6") %}
 {% trans trimmed a_b=link("/strategy/fundamentals", _("A&B"), _anchor="AB") %}
 Jewel of the Justice {{ jus }} virtue,
 the combination of <em>drive</em> and <em>wake</em> effects
@@ -109,13 +91,34 @@ makes for a very nice bonus in {{ a_b }}.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column('Jack "Hannibal137" Harmon', decks=43, copies="1-2") %}
+{% call layout.card_column('Jack "Hannibal137" Harmon', decks=74, copies="1-2") %}
 {% trans trimmed %}
 Excellent virtues with a good combat ability, he gets included in most Imbued decks.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Discern", decks=40, copies="2-4") %}
+{% call layout.card_column('Travis "Traveler72" Miller', decks=74, copies="2-4") %}
+{% trans trimmed %}
+His virtues are useful and his ability is an excellent bloat device,
+so he gets included in many Imbued decks.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column('François "Warden" Loehr', decks=70, copies="1-2") %}
+{% trans trimmed %}
+Good virtues for a decent price, his ability is also quite nice
+as it deters rush actions against him.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Rejuvenate", decks=68, copies="2-4") %}
+{% trans trimmed %}
+This regeneration ability makes any Imbued with the Defense {{ def }} virtue quite sturdy.
+As Imbued can not hunt, this is one of the few ways they can get some life back.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Discern", decks=64, copies="2-4") %}
 {% trans trimmed
 vigilance=card("Vigilance"),
 the_unmasking=card("The Unmasking")
@@ -126,14 +129,7 @@ Combined with {{ the_unmasking }}, it transforms the Imbued in excellent blocker
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Rejuvenate", decks=40, copies="2-4") %}
-{% trans trimmed %}
-This regeneration ability makes any Imbued with the Defense {{ def }} virtue quite sturdy.
-As Imbued can not hunt, this is one of the few ways they can get some life back.
-{% endtrans %}
-{% endcall %}
-
-{% call layout.card_column("Determine", decks=34, copies="2-5") %}
+{% call layout.card_column("Determine", decks=62, copies="2-6") %}
 {% trans trimmed jennie=card('Jennie "Cassie247" Orne', "Jennie") %}
 The only bounce Imbued can use against bleeds, it is easy to include as
 {{ jennie }} has the Vision {{ vin }} virtue.
@@ -141,11 +137,19 @@ It can also be used to cancel an action on the prey side, so it is very versatil
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Champion", decks=31, copies="1-2") %}
+{% call layout.card_column("Champion", decks=60, copies="1-3") %}
 {% trans trimmed %}
 Another good Defense {{ def }} power, as it can be used to "block" bleeds
 without even needing intercept. The <em>Conviction</em> {{ CONVICTION }} cost is a bit high,
 but the threat of it alone can slow down an aggressive predator.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column('Béatrice "Oracle171" Tremblay', decks=26, copies="1-3") %}
+{% trans trimmed second_sight=card("Second Sight") %}
+A good bleeding minion for just 3 pool, she gets included in vampire crypts
+to help with the bleed, as her ability makes her impractical in Imbued crypts.
+Helped by a {{ second_sight }} for stealth, she becomes an interesting minion.
 {% endtrans %}
 {% endcall %}
 

@@ -1,0 +1,83 @@
+{% extends "archetypes/_layout.html" %}
+{% import "archetypes/_layout-erratum.html" as erratum with context %}
+{% import "archetypes/new-kids/baron-debate.json" as deck_json %}
+
+{% block meta %}
+<meta property="decklist" content='{{ deck_json | tojson }}' />
+{% endblock %}
+
+{% block archetype_name %}
+<h1>{{ brujah }} Baron Debate</h1>
+{% endblock %}
+
+{% block archetype %}
+{% trans trimmed
+aline_gadeke=card("Aline Gadëke"),
+aranthebes=card("Aranthebes, The Immortal", "Aranthebes"),
+brujah_debate=card("Brujah Debate"),
+childe_of_the_revolution=card("Childe of the Revolution"),
+consanguineous_boon=card("Consanguineous Boon"),
+constant_revolution=card("Constant Revolution"),
+dust_up=card("Dust Up"),
+immortal_grapple=card("Immortal Grapple"),
+life_boon=card("Life Boon"),
+mr_winthrop=card("Mr. Winthrop"),
+open_war=card("Open War"),
+organized_resistance=card("Organized Resistance"),
+rumors_of_gehenna=card("Rumors of Gehenna"),
+smiling_jack_the_anarch=card("Smiling Jack, The Anarch"),
+sport_bike=card("Sport Bike"),
+the_parthenon=card("The Parthenon"),
+villein=card("Villein"),
+jose_felipe_s_deck=link("/deck-search", _("José Felipe's deck"), id="11149")
+%}
+<h2>Highlights</h2>
+<p>
+    This is a <em>wall</em> deck using Brujah {{ brujah }} Barons and {{ brujah_debate }}.
+    It aims to have more minions by influencing them and using {{ childe_of_the_revolution }},
+    and stack and defend the {{ brujah_debate }} with {{ organized_resistance }}
+</p>
+<p>
+    The deck can put some pressure forward with naked bleeds,
+    but the oust is supported by the typical wall devices {{ smiling_jack_the_anarch }} and {{ constant_revolution }}.
+</p>
+<p>
+    Stacking {{ brujah_debate }} is the goal, but should not be started too soon: at least 3 minions should be out,
+    including a second Baron, before immobilizing the highest Baron with the debate.
+    {{ villein }} is used to recoup pool and influence more vampires.
+</p>
+<p>
+    {{ aline_gadeke }}'s ability is particularily useful here and her being the highest capacity of the crypt
+    is important: she is the best {{ brujah_debate }} "victim" when available.
+</p>
+<p>
+    As the game progresses and the {{ brujah_debate }} start to stack, each minion becomes a threat:
+    with huge strength and multiple maneuvers, they can take down anyone.
+    The combat module piles on this already dreadful prospect, with {{ dust_up }} to hit harder and
+    dodge, and {{ immortal_grapple }} against combat ends.
+</p>
+<h2>Tips & Tricks</h2>
+<p>
+    {{ aranthebes }} is included for additional intercept, but also to contest another one on the board if needed.
+</p>
+<p>
+    {{ open_war }} is a strong potential game changer,
+    finding the right opportunity to get it through unblocked is tricky.
+</p>
+<p>
+    {{ life_boon }} is a typical wall technique too: it can be used to save the grand-prey,
+    or any other Methuselah really, to prevent opponents lunges and control the table fold better.
+</p>
+<p>
+    Having multiple Master phase actions is key to pile the {{ brujah_debate }} faster
+    and still be able to play some other Master cards. Hence {{ the_parthenon }} and {{ rumors_of_gehenna }}.
+</p>
+<h2>Variants</h2>
+<p>
+    This is a bit of a new thing, many have tried but few won with the idea, so there are not really variants yet.
+    A bit more permanent intercept to support the {{ organized_resistance }} strategy could make sense,
+    like adding {{ mr_winthrop }} and/or a {{ sport_bike }}. {{ consanguineous_boon }} can be include to
+    be able to bloat a bit, like in {{ jose_felipe_s_deck }}.
+</p>
+{% endtrans %}
+{% endblock %}

@@ -7,130 +7,99 @@
     <p>
         {% trans trimmed
         stanislava=link("/archetypes/stanislava"),
-        renegade_assault=link("/archetypes/renegade-assault"),
-        renegade_garou=card("Renegade Garou")
+        gangrel_thing=link("/archetypes/gangrel-thing")
         %}
-        The Gangrel and their unique {{ pro }} discipline are versatile and provided
+        The Gangrel are versatile and provided
         many different archetypes. Some of the most successful were the {{ stanislava }}
-        archetype and related Camarilla Royalty builds. Another one is
-        {{ renegade_assault }}, using {{ renegade_garou }} as main minion.
+        archetype and other Royalty builds. Nowadays, {{ gangrel_thing }}
+        and all its variation are a huge top-tier ... thing.
         {% endtrans %}
     </p>
 </div>
 
-{% call layout.card_column("Earth Meld", decks=134, copies="3-12") %}
-{% trans trimmed %}
-It is considered the best <em>« combat ends »</em> card of the game.
-It comes at no cost at inferior {{ pro }}, plus gives an unlock option at superior
-{{ PRO }}, still at no cost.
-{% endtrans %}
-{% endcall %}
-
-{% call layout.card_column("Form of Mist", decks=123, copies="3-8") %}
-{% trans trimmed %}
-An excellent combination of <em>« combat ends »</em> and stealth,
-one of the most versatile tool of {{ pro }}.
-{% endtrans %}
-{% endcall %}
-
-{% call layout.card_column("Earth Control", decks=93, copies="3-6") %}
-{% trans trimmed
-form_of_mist=card("Form of Mist")
-%}
-2 stealth at superior {{ PRO }} is a strong stealth modifier, totally worth 1 blood.
-Combined with {{ form_of_mist }}, this makes Gangrel and their antitribu
-almost as stealthy as any vampire with {{ obf }}.
-{% endtrans %}
-{% endcall %}
-
-{% call layout.card_column("Claws of the Dead", decks=70, copies="1-6") %}
-{% trans trimmed
-immortal_grapple=card("Immortal Grapple")
-%}
-The most dreaded combat card of the {{ pro }} discipline, it is used
-<strong>after</strong> strikes have been chosen by both vampires and never wasted
-against a <em>dodge</em> or <em>combat ends</em>. The maneuver at superior {{ PRO }} can
-come in handy. Finally, it works with a hand strike so {{ immortal_grapple }} is useless
-against it.
-{% endtrans %}
-{% endcall %}
-
-{% call layout.card_column("Bobby Lemon", decks=67, copies="1") %}
-{% trans trimmed %}
-An excellent disciplines combination for just 4 pool, he gets even included in mono
-{{ ani }} decks.
-{% endtrans %}
-{% endcall %}
-
-{% call layout.card_column("Homunculus", decks=66, copies="1-3") %}
-{% trans trimmed
-madness_network=card("Madness Network"),
-enkil_cog=card("Enkil Cog")
-%}
-A powerful tool, especially when combined with the cards that allow to act
-during other players turn: {{ madness_network }} and {{ enkil_cog }}.
-{% endtrans %}
-{% endcall %}
-
-{% call layout.card_column("Aksinya Daclau", decks=62, copies="2-4") %}
-{% trans trimmed
-cybele=card("Cybele"),
-girls_will_find_inner_circles=link("/archetypes/girls-will-find-inner-circle")
-%}
-Star of the Gangrel antitribu, her ability is unique.
-She gave birth, alongside {{ cybele }}, to the
-{{ girls_will_find_inner_circles }} archetype.
-{% endtrans %}
-{% endcall %}
-
-{% call layout.card_column("Rapid Change", decks=59, copies="2-4") %}
-{% trans trimmed
-form_of_mist=card("Form of Mist"),
-earth_control=card("Earth Control")
-%}
-Another stealth and <em>« combat ends »</em> combination. The cost of 1 blood is a bit
-pricey, but it completes the stealth arsenal of {{ pro }} along {{ form_of_mist }} and
-{{ earth_control }}.
-{% endtrans %}
-{% endcall %}
-
-{% call layout.card_column("Ecoterrorists", decks=55, copies="1-2") %}
+{% call layout.card_column("Ecoterrorists", decks=112, copies="1") %}
 {% trans trimmed %}
 A good bloat device, generating 1 pool per turn,
 it can also help get vampires into play a bit faster early game.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Céleste Lamontagne", decks=50, copies="1-2") %}
+{% call layout.card_column("Casey Snyder", decks=104, copies="1-2") %}
 {% trans trimmed %}
-A nice discipline combination for just 5 pool, she gets a place even in mono {{ ani }}
-decks.
+A cheap Baron with superior {{ PRO }}, fitting in many a crypt.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Backways", decks=50, copies="1") %}
+{% call layout.card_column("Kuyén", decks=99, copies="1-2") %}
+{% trans trimmed raven_spy=card("Raven Spy") %}
+Another cheap Baron with superior {{ PRO }}, and his ability allows for free {{ raven_spy }}.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Massimiliano", decks=93, copies="1-2") %}
+{% trans trimmed %}
+A more expensive Baron, but his strength bonus is nothing to scoff at.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Kamile Paukstys", decks=92, copies="1") %}
+{% trans trimmed %}
+Superior {{ PRO }} and a bleed bonus lets her fit in many places.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Backways", decks=90, copies="1") %}
 {% trans trimmed %}
 Even if it is a little bit costly, the permanent stealth effect is a good one,
 moreover if the deck relies on {{ pro }} for stealth.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Instantaneous Transformation", decks=49, copies="3-7") %}
-{% trans trimmed %}
-A powerful and versatile stealth / unlock combination, mostly available to Gangrel
-antitribu, but also to some rare vampires with access to the {{ PRO }}{{ CEL }}
-combination.
+{% call layout.card_column("Thing", decks=88, copies="5-17") %}
+{% trans trimmed gangrel_thing=link("/archetypes/gangrel-thing") %}
+The cornerstone of the very successful {{ gangrel_thing }} proposition.
+It is free pool, and in enough numbers, can amount to some serious endgame pressure.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Ingrid Rossler", decks=43, copies="2-3") %}
+{% call layout.card_column("Eyes of the Wild", decks=80, copies="3-7") %}
 {% trans trimmed %}
-A star among Gangrel, the fact that she has {{ dom }} and is a Prince is a nice
-combination. Moreover, her bonus in influence can be a very nice edge in the early game.
+A strong unlock device, even more appreciated in non-Baron or non-Anarch builds.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Stanislava", decks=37, copies="4-5") %}
+{% call layout.card_column("Rewilding", decks=73, copies="1-2") %}
+{% trans trimmed %}
+Although situational, it's a strong two-birds-one-stone deal there.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Ennoia's Theater", decks=62, copies="1") %}
+{% trans trimmed %}
+No cost for a good effect: usually cycling, occasionally speegind up the influence.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("André the Manipulator", decks=44, copies="1-2") %}
+{% trans trimmed %}
+The hand size bonus is huge, and his disciplines fit in a lot of decks.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Gangrel Revel", decks=34, copies="1-2") %}
+{% trans trimmed %}
+A very neat bonus, especially in the more wallish builds.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Dog Pack", decks=21, copies="1-3") %}
+{% trans trimmed form_of_mist=card("Form of Mist") %}
+Preventing combat ends is pretty strong in wall builds. It works wonders
+against {{ form_of_mist }}.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Stanislava", decks=20, copies="3-5") %}
 {% trans trimmed
 instantaneous_transformation=card("Instantaneous Transformation"),
 govern_the_unaligned=card("Govern the Unaligned"),
@@ -140,27 +109,22 @@ the_unmasking=card("The Unmasking")
 Star <em>Inner Circle</em> of the Gangrel Clan, Stanislava not only has {{ DOM }}
 but also {{ CEL }}, giving her access to {{ instantaneous_transformation }}
 alongside {{ govern_the_unaligned }} and {{ deflection }}. Her ability against
-allies also is quite a nice advantage as many decks use them with
-{{ the_unmasking }} for defence.
+allies is also a nice advantage.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Enkidu, The Noah", decks=34, copies="1-5") %}
+{% call layout.card_column("Double Deuce", decks=19, copies="1") %}
 {% trans trimmed %}
-The most dreaded Gangrel antitribu, he has such powerful disciplines and abilities
-for combat he is often used as the star of a rush deck.
+An excellent ally: the stealthed bleed is not often blocked,
+exerting a constant (if low) pressure on the prey.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Flesh of Marble", decks=41, copies="2-7") %}
-{% trans trimmed
-earth_meld=card("Earth Meld"),
-immortal_grapple=card("Immortal Grapple")
-%}
-A good damage prevention card, it can handle heavy damage-dealing modules,
-even those using additonal strikes, with a single card.
-It is often played alongside {{ earth_meld }}
-as a solution against {{ pot }} combat modules using {{ immortal_grapple }}.
+{% call layout.card_column("Matasuntha", decks=18, copies="2-5") %}
+{% trans trimmed diversion=card("Diversion") %}
+Another Gangrel star, this time more on the heavy combat side of things.
+She often goes Anarch to be able to play {{ diversion }},
+and can pair with the group 6 Barons.
 {% endtrans %}
 {% endcall %}
 

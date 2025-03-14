@@ -296,7 +296,7 @@ def _link(
     name = name or page.name
     url = _i18n_url(page, _anchor, locale, **params)
     if _class:
-        _class = f"class={_class} "
+        _class = f'class="{_class}" '
     else:
         _class = ""
     if _prefix:

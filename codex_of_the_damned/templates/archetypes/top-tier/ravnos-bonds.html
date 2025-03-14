@@ -1,0 +1,87 @@
+{% extends "archetypes/_layout.html" %}
+{% import "archetypes/_layout-erratum.html" as erratum with context %}
+{% import "archetypes/top-tier/ravnos-bonds.json" as deck_json %}
+
+{% block meta %}
+<meta property="decklist" content='{{ deck_json | tojson }}' />
+{% endblock %}
+
+{% block archetype_name %}
+<h1>{{ ravnos }} Ravnos Break</h1>
+{% endblock %}
+
+{% block archetype %}
+{% trans trimmed
+break_the_bonds=card("Break the Bonds"),
+club_illusion=card("Club Illusion"),
+dabbler=card("Dabbler"),
+faceless_night=card("Faceless Night"),
+field_training=card("Field Training"),
+guard_dogs=card("Guard Dogs"),
+krcg_news_radio=card("Krcg News Radio"),
+majesty=card("Majesty"),
+memory_rift=card("Memory Rift"),
+narrow_minds=card("Narrow Minds"),
+spying_mission=card("Spying Mission"),
+the_platinum_protocol=card("The Platinum Protocol"),
+villein=card("Villein"),
+visions_of_gehenna=card("Visions of Gehenna"),
+visions_of_zapathasura=card("Visions of Zapathasura"),
+wash=card("Wash"),
+week_of_nightmares=card("Week of Nightmares"),
+wider_view=card("Wider View"),
+bounce=link("/strategy/fundamentals", _("bounce"), _anchor="bounce"),
+platinum_revelation=link("/archetypes/platinum-revelation"),
+darby_keeney_s_deck=link("/deck-search", _("Darby Keeney's deck"), id="11231")
+%}
+<h2>Highlights</h2>
+<p>
+    This is a Ravnos {{ ravnos }} <em>stealth & bleed</em> deck using {{ break_the_bonds }} to bleed fast and hard.
+</p>
+<p>
+    It is a pretty straightforward deck. Influence a Ravnos {{ ravnos }}, bleed with {{ break_the_bonds }},
+    use {{ OBF }} for stealth and bring more Ravnos {{ ravnos }} in play. Rince and repeat.
+</p>
+<p>
+    The deck relies on {{ memory_rift }} as its main stealth device, because it does not jam the hand,
+    but also its combat ends effect can be frustrating to blockers and help jam their hand on combat cards.
+</p>
+<p>
+    At some point, {{ club_illusion }}, {{ week_of_nightmares }} or both hit the table, and the bleeds become an
+    unstoppable wave that sweeps the table.
+</p>
+<p>
+    In the meantime, simply use {{ visions_of_zapathasura }} to reduce the predator's bleed.
+</p>
+<p>
+    {{ dabbler }} is, as in {{ platinum_revelation }}, a very good archetype to have, because it can let the vampires
+    unlock for defense after a bleed or, maybe more importantly, get some blood back to feed a {{ club_illusion }}
+    while they cannot hunt thanks to {{ week_of_nightmares }}.
+</p>
+<h2>Tips & Tricks</h2>
+<p>
+    Since the deck uses no {{ bounce }}, {{ narrow_minds }} is a natural inclusion.
+    {{ spying_mission }} can also be used to avoid damaging an ally when bounced by the prey.
+</p>
+<p>
+    {{ field_training }} is a nice inclusion, allowing to provide superior Obfuscate {{ OBF }} to the few vampires
+    who do not have it in the crypt.
+</p>
+<p>
+    {{ wash }} can be used to counter permanent intercept locations like {{ krcg_news_radio }}, but also bloat cards
+    like {{ villein }}, thus amonting to a bleed in terms of pool loss.
+</p>
+<h2>Variants</h2>
+<p>
+    {{ guard_dogs }} can be used for additional unlocks to enable more {{ visions_of_zapathasura }},
+    and {{ majesty }} can be added for a bit of combat defense.
+    Given {{ break_the_bonds }} effect, {{ faceless_night }} is actually stronger than usual,
+    so more copies can be nice.
+</p>
+<p>
+    {{ visions_of_zapathasura }} can be omitted altogether for a more streamlined version optimizing the bleed.
+    More bleat is required then, like including a lot of {{ villein }} to recoup pool,
+    see {{ darby_keeney_s_deck }} for example.
+</p>
+{% endtrans %}
+{% endblock %}

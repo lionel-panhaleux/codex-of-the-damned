@@ -5,85 +5,101 @@
 <h1>{{ salubri }} Salubri</h1>
 <div class="insert tip">
     <p>
+        {% trans trimmed salubri_powerbleed=link("/archetypes/salubri-powerbleed") %}
+        New V5 Salubri have {{ dom }}{{ for }}{{ aus }} as clan disciplines.
+        They have only a few tournament victories yet, mainly using variants of the
+        {{ salubri_powerbleed }} archetype.
+        {% endtrans %}
+    </p>
+    <p>
         {% trans trimmed
-        lost_kindred_expansion=external(
-        "https://www.blackchantry.com/products/current-products/lost-kindred/",
-        _("Lost Kindred expansion")
-        ),
-        saulot_friends=link("/archetypes/saulot-wall"),
-        spirit_marionette_arch=link("/archetypes/spirit-marionette"),
-        saulot_the_wanderer=card("Saulot, The Wanderer"),
-        spirit_marionette=card("Spirit Marionette")
+        salubri_legacy_cards=link("/best-cards/clans/salubri-legacy"),
+        salubri_antitribu_cards=link("/best-cards/clans/salubri-antitribu")
         %}
-        The Salubri and their antitribu are a rare sight in tournaments.
-        This could change following the {{ lost_kindred_expansion }} release in 2018.
-        They have unique disciplines, respectively {{ obe }} and {{ val }}.
-        For now, they are seen in mainly two archetypes: {{ saulot_friends }},
-        a wall deck featuring {{ saulot_the_wanderer }}, and {{ spirit_marionette_arch }},
-        using {{ obe }} and the eponymous {{ spirit_marionette }}.
+        The legacy Salubri and Salubri Antitribu have differnt disciplines and archetypes,
+        check them out on the {{ salubri_legacy_cards }} and {{ salubri_antitribu_cards }} pages.
         {% endtrans %}
     </p>
 </div>
 
-{% call layout.card_column("Repulsion", decks=33, copies="1-4") %}
+{% call layout.card_column("Saulot, The Wanderer", decks=7, copies="4-5") %}
 {% trans trimmed %}
-A good stealth modifier that can become permanent.
-An excellent way for Salubri to bump up their game as they do not have access
-to many other stealth enhancer given their clan disciplines.
+Given he has all the necessary disciplines, Saulot stays the best star for the clan
+in its V5 iteration. His abilities are all very useful.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Spirit Marionette", decks=29, copies="4-11") %}
+{% call layout.card_column("Abaddon", decks=6, copies="2-3") %}
+{% trans trimmed %}
+His permanent maneuver and press makes him the best leader for the clan in most configurations.
+Even when combat is not the focus, it is useful defensively.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Ilonka", decks=6, copies="1-2") %}
+{% trans trimmed govern=card("Govern the Unaligned", "Govern") %}
+With her 7 capacity, she sits very well in the {{ govern }} chain,
+and she has all clan disciplines at superior.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Malachi", decks=6, copies="1-2") %}
+{% trans trimmed govern=card("Govern the Unaligned", "Govern") %}
+All clan disciplines at superior for 6 capacity, solid value and place in the {{ govern }} chain.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Sight Beyond Sight", decks=6, copies="1") %}
+{% trans trimmed %}
+A great permanent intercept boost at no cost, a no brainer.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Feast of the Soul's Secrets", decks=6, copies="3-9") %}
 {% trans trimmed
-an_archetype_of_its_own=link("/archetypes/spirit-marionette", _("an archetype of its own"))
+govern=card("Govern the Unaligned", "Govern"),
+freak_drive=card("Freak Drive")
 %}
-An iconic card of the {{ obe }} discipline, it has brought up
-{{ an_archetype_of_its_own }}.
-Stealing an opponent minion is always good, the central issue is to abuse,
-cripple or destroy it afterwards.
+A strong bleed card, maybe even better than {{ govern }}. Both can even be played
+alongside, using {{ freak_drive }} for a faster influnce.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Gift of Sleep", decks=25, copies="1-4") %}
+{% call layout.card_column("Forced Confessional", decks=6, copies="3-7") %}
+{% trans trimmed seduction=card("Seduction") %}
+A super block denial device, that can be combined with {{ seduction }}.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Saulot's Avenging Fist", decks=4, copies="1-2") %}
+{% trans trimmed seduction=card("Seduction") %}
+A great archetype, providing both a permanent rush and increased strength.
+Well worth the cost.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Saulot's Guiding Wisdom", decks=4, copies="1-2") %}
 {% trans trimmed %}
-A second stealth enhancer, still at no cost, a good card for {{ OBE }}.
+Multiple interesting possibilities against votes and combats for a cheap 1 pool.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Saulot, The Wanderer", decks=23, copies="3-5") %}
+{% call layout.card_column("Touch of Valeren", decks=4, copies="2-6") %}
+{% trans trimmed rolling_with_the_punches=card("Rolling with the Punches") %}
+A strong prevention, comparable and maybe even better than {{ rolling_with_the_punches }}.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Seraphina", decks=4, copies="1-2") %}
 {% trans trimmed %}
-Star of the Salubri clan, Saulot has both {{ OBE }} and {{ VAL }} at superior,
-along a nice set of disciplines. His abilities are also impressive.
+An interesting potential leader for the clan, although less successful than {{ abaddon }} for now.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Renewed Vigor", decks=22, copies="3-7") %}
-{% trans trimmed giant_s_blood=card("Giant's Blood") %}
-Bringing back any big capacity vampire to full capacity is a good way to bloat, but also
-a useful bargaining chip to barter for big favors or even a game-changer.
-This is the only card of the game allowing this along {{ giant_s_blood }}.
-{% endtrans %}
-{% endcall %}
-
-{% call layout.card_column("Anesthetic Touch", decks=20, copies="3-9") %}
-{% trans trimmed immortal_grapple=card("Immortal Grapple") %}
-An excellent <em>combat ends</em> at superior {{ OBE }},
-it is a bit weak at inferior {{ obe }}. The fact that it's still a hand strike
-makes it a good counter to {{ immortal_grapple }}.
-{% endtrans %}
-{% endcall %}
-
-{% call layout.card_column("Sense Death", decks=18, copies="1-5") %}
-{% trans trimmed deep_song=card("Deep Song") %}
-An excellent rush action, with high maneuverability and a most desirable +1 stealth.
-It is even played in some {{ ani }} decks as a stealthy alternative to {{ deep_song }}.
-{% endtrans %}
-{% endcall %}
-
-{% call layout.card_column("Neutral Guard", decks=13, copies="2-6") %}
-{% trans trimmed saulot_the_wanderer=card("Saulot, The Wanderer") %}
-A good block denial at superior {{ OBE }} for a big capacity vampire like
-{{ saulot_the_wanderer }}.
+{% call layout.card_column("Unleashing the Bestial Soul", decks=4, copies="3-7") %}
+{% trans trimmed deflection=card("Deflection") %}
+An interesting modifier, that makes bouncing bleeds with something like {{ deflection }}
+much more difficult. It makes for a great lunge device.
 {% endtrans %}
 {% endcall %}
 

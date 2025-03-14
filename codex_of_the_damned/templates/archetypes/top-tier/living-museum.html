@@ -1,0 +1,75 @@
+{% extends "archetypes/_layout.html" %}
+{% import "archetypes/_layout-erratum.html" as erratum with context %}
+{% import "archetypes/top-tier/living-museum.json" as deck_json %}
+
+{% block meta %}
+<meta property="decklist" content='{{ deck_json | tojson }}' />
+{% endblock %}
+
+{% block archetype_name %}
+<h1>{{ tzimisce }} Living Museum</h1>
+{% endblock %}
+
+{% block archetype %}
+{% trans trimmed
+bait_and_switch=card("Bait and Switch"),
+cooler=card("Cooler"),
+deflection=card("Deflection"),
+dominate_kine=card("Dominate Kine"),
+eat_the_rich=card("Eat the Rich"),
+garibaldi_meucci_museum=card("Garibaldi-Meucci Museum"),
+govern_the_unaligned=card("Govern the Unaligned"),
+heart_of_nizchetus=card("Heart of Nizchetus"),
+heidelberg_castle_germany=card("Heidelberg Castle, Germany"),
+incriminating_videotape=card("Incriminating Videotape"),
+living_manse=card("Living Manse"),
+nra_pac=card("NRA PAC"),
+palatial_estate=card("Palatial Estate"),
+powerbase_savannah=card("Powerbase: Savannah"),
+the_british_museum=card("The British Museum, London", "The British Museum"),
+the_signet_of_king_saul=card("The Signet of King Saul"),
+latest_variation=link("/deck-search", _("latest variation"), id="11291")
+%}
+<h2>Highlights</h2>
+<p>
+    This is a <em>stealth & bleed</em> deck that uses {{ the_british_museum }} to unlock
+    after fetching {{ living_manse }}, enabling a rapid ramp-up to high pool damage.
+</p>
+<p>
+    As usual, the highest capacity vampire should be influenced first, to use {{ govern_the_unaligned }}
+    for cheaper and faster subsequent influences.
+</p>
+<p>
+    The deck then takes some time to set up, getting all sorts of equipments and retainers while defending against
+    bleeds with {{ bait_and_switch }} and {{ deflection }}.
+</p>
+<p>
+    When ready, it then proceeds to bleed hard and remove its preys one after the other.
+</p>
+<h2>Tips & Tricks</h2>
+<p>
+    {{ garibaldi_meucci_museum }} can be used to bring back {{ bait_and_switch }} or {{ eat_the_rich }},
+    depending on the need, but it can also be used to stop a threatening combat if the opponent is Anarch.
+</p>
+<p>
+    {{ heidelberg_castle_germany }} allows to move bleed, but also displace {{ incriminating_videotape }} or
+    {{ the_signet_of_king_saul }} after a bleed, double-dipping from the equipments.
+</p>
+<p>
+    {{ nra_pac }} is a great adjunction if drawn, allowing for an unlock at the end of turn to be ready for defense,
+    after having used {{ the_british_museum }} to unlock from an equipment action during the turn, then bleed.
+    A nice tactical move known as "the Darby dance"
+</p>
+<p>
+    Given the deck's strategy with its well-defined setup and lunge steps, {{ heart_of_nizchetus }}
+    is a great asset, allowing to filter the right cards for the moment, so it comes in 2 copies.
+</p>
+<h2>Variants</h2>
+<p>
+    This deck was imagined by <em>Darby Keeney</em>, so his {{ latest_variation }} is worth a look:
+    after all, he is the "Darby dance" inventor, so he knows what he is doing here.
+    {{ dominate_kine }} is a nice inclusion, and equipments focus more on blood regeneration with {{ cooler }}
+    and {{ palatial_estate }}. {{ powerbase_savannah }} is another interesting inclusion that can defend against rushes.
+</p>
+{% endtrans %}
+{% endblock %}

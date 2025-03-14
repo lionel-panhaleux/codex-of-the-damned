@@ -1,0 +1,115 @@
+{% extends "best-cards/_layout.html" %}
+{% import "best-cards/_layout_card_column.html" as layout with context%}
+
+{% block content %}
+<h1>{{ ravnos_legacy }} Ravnos (Legacy)</h1>
+<div class="insert warn">
+    This list is compiled from statistics encompassing 30 years,
+    as the legacy clan has not scored enough wins in the last 5 years for relevant statistics otherwise.
+</div>
+<div class="insert tip">
+    <p>
+        {% trans trimmed ravnos_cards=link("/best-cards/clans/ravnos") %}
+        V5 Ravnos are now Anarch and have {{ pre }}{{ obf }}{{ ani }} as clan disciplines.
+        Check their best cards out on the {{ ravnos_cards }} page.
+        {% endtrans %}
+    </p>
+    <p>
+        {% trans trimmed
+        ravnos_clown_car=link("/archetypes/ravnos-clown-car")
+        %}
+        The legacy Ravnos and their unique {{ chi }} discipline are a versatile clan.
+        They gave birth to a successful political archetype,
+        the {{ ravnos_clown_car }}.
+        Otherwise, {{ chi }} alone makes for easy stealth bleeds
+        with extra resilience against bounces and combat.
+        {% endtrans %}
+    </p>
+</div>
+
+{% call layout.card_column("Mirror Image", decks=50, copies="3-7") %}
+{% trans trimmed %}
+A versatile stealth bonus or <em>combat ends</em>, its 1 blood cost is acceptable.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Sensory Deprivation", decks=41, copies="2-6") %}
+{% trans trimmed
+the_path_of_paradox=card("The Path of Paradox"),
+gabrin=card("Gabrin"),
+the_line=card("The Line")
+%}
+An infamous effect for this expensive action. The threat of it can be an excellent
+deterrent. With the help of cost reduction cards like {{ the_path_of_paradox }},
+{{ gabrin }} or {{ the_line }}, it can become cheap enough to be a recurring threat,
+too.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Fata Morgana", decks=39, copies="4-9") %}
+{% trans trimmed %}
+The only bleed enhancer available with {{ chi }}, it is often included in Ravnos decks.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Occlusion", decks=36, copies="3-6") %}
+{% trans trimmed %}
+Stealth at no cost, and occasional combat defense, a strong proposition.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Salbatore Bokkengro", decks=36, copies="1-2") %}
+{% trans trimmed %}
+Superior {{ CHI }} for a decent 4 pool, he gets included in many Ravnos decks.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("The Path of Paradox", decks=29, copies="1-4") %}
+{% trans trimmed %}
+Given the cost of Chimerstry {{ chi }} cards, this reduction is very desireable.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Gabrin", decks=27, copies="2-4") %}
+{% trans trimmed %}
+Star of the clan, his reduction for {{ chi }} card
+is an exceptional asset in many decks.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Draba", decks=25, copies="2-6") %}
+{% trans trimmed %}
+An excellent intercept device, particularily at superior {{ CHI }}.
+With just a bit of intercept, it makes passing a potential blocker twice harder.
+Moreover, it can be used to help an ally anywhere on the table.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Ravnos Carnival", decks=23, copies="3-7") %}
+{% trans trimmed the_embrace=card("The Embrace") %}
+A great card for swarm builds, since it lets vampires use actions like {{ the_embrace }}
+and pay for it with the Carnival.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Tumnimos", decks=17, copies="4-11") %}
+{% trans trimmed the_embrace=card("The Embrace") %}
+A cheap alternative to {{ the_embrace }},
+provided on hass vampires with a high enough capacity.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("The Eldest Are Kholo", decks=16, copies="9-14") %}
+{% trans trimmed ravnos_clown_car=link("/archetypes/ravnos-clown-car") %}
+Cornerstone of the {{ ravnos_clown_car }} archetype, it allows for a strong
+swarm politics build.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Mata Hari", decks=15, copies="2-5") %}
+{% trans trimmed %}
+Her unique ability makes her a star in quite a few original decks.
+{% endtrans %}
+{% endcall %}
+
+{% endblock %}

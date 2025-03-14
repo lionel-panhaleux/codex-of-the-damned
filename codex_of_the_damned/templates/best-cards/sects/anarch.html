@@ -6,66 +6,54 @@
 <div class="insert tip">
     <p>
         {% trans trimmed
-        saulot_friends=link("/archetypes/saulot-wall"),
-        goratrix_high_tower=link("/archetypes/goratrix-high-tower"),
-        nananimalism=link("/archetypes/nananimalism")
+        gangrel_thing=link("/archetypes/gangrel-thing"),
+        platinum_revelation=link("/archetypes/platinum-revelation"),
+        brujah_resistance=link("/archetypes/illegal-brawl")
         %}
-        Anarch have been on the rise the last few years, and they ramped up some
-        classical archetypes to bring them to a new power level,
-        like {{ saulot_friends }}, {{ goratrix_high_tower }} or {{ nananimalism }},
-        for example.
+        Anarch took the front of the scene when the new V5 Anarch cards were released in 2021,
+        giving birth to new top-tier archetypes like {{ gangrel_thing }}, {{ platinum_revelation }}, and
+        {{ brujah_resistance }}.
         {% endtrans %}
     </p>
     <p>
-        {% trans trimmed %}
-        The anarch variation is a possibility for many archetypes,
-        and it gives access to some unique cards.
+        {% trans trimmed anarch_convert=card("Anarch Convert") %}
+        The anarch variation is also a possibility for many archetypes thanks to {{ anarch_convert }}.
         {% endtrans %}
     </p>
 </div>
 
-{% call layout.card_column("Anarch Revolt", decks=96, copies="2-7") %}
-{% trans trimmed %}
-A good pool-damage dealer if it can be defended,
-either with intercept capacities or votes.
-{% endtrans %}
-{% endcall %}
-
-{% call layout.card_column("Reckless Agitation", decks=55, copies="1-5") %}
-{% trans trimmed kine_resources_contested=card("Kine Resources Contested") %}
-An excellent vote to deliver pool damage, its effect is strong than
-{{ kine_resources_contested }}, for a higher blood cost. It is a bit tricky
-to gather enough independant or anarch votes to get it through, but worth the effort.
-{% endtrans %}
-{% endcall %}
-
-{% call layout.card_column("The Anarch Free Press", decks=46, copies="1") %}
-{% trans trimmed %}
-An excellent Master card, combining permanent intercept and the occasional blood bonus
-for the low cost of 1 pool. A no-brainer for most Anarch decks.
-{% endtrans %}
-{% endcall %}
-
-{% call layout.card_column("Twilight Camp", decks=40, copies="1-2") %}
+{% call layout.card_column("Bait and Switch", decks=188, copies="4-7") %}
 {% trans trimmed
-anarch_convert=card("Anarch Convert"),
-the_red_question=card("The Red Question")
+redirection=card("Redirection"),
+my_enemys_enemy=card("My Enemy's Enemy")
 %}
-A versatile tool when playing a non-anarch crypt.
-It is the cheapest way to make a vampire anarch,
-although {{ anarch_convert }} and {{ the_red_question }} are excellent alternatives,
-but it can also bring some welcome blood back on the table on occasions.
+A relatively recent card released in 2021, it immediately topped the ranking of
+Anarch cards. A free bounce is something only {{ redirection }} and
+{{ my_enemys_enemy }} provided before.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Constant Revolution", decks=34, copies="1-2") %}
-{% trans trimmed smiling_jack=card("Smiling Jack, The Anarch", "Smiling Jack") %}
-With an effect similar to {{ smiling_jack }}, they are most often played together
-for pool damage in decks that have enough block potential to defend it.
+{% call layout.card_column("Carfax Abbey", decks=181, copies="1") %}
+{% trans trimmed
+redirection=card("Redirection"),
+my_enemys_enemy=card("My Enemy's Enemy")
+%}
+A great hunting ground, especially with a Baron around.
+It is basically two hunting grounds for the cost of one in that case.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Anarch Railroad", decks=33, copies="1") %}
+{% call layout.card_column("Organized Resistance", decks=157, copies="4-10") %}
+{% trans trimmed
+second_tradition=card("Second Tradition: Domain")
+%}
+Probably the best unlock device of the game. It provides less intercept than
+{{ second_tradition }}, but it is free so can be played in numbers, and even stacked
+if one has multiple Barons.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Anarch Railroad", decks=150, copies="1") %}
 {% trans trimmed %}
 A decent source of stealth for a reasonable cost.
 {% endtrans %}
@@ -78,7 +66,50 @@ module. The option to cancel an {{ immortal_grapple }} can be a life saver.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Monkey Wrench", decks=22, copies="1-3") %}
+{% call layout.card_column("Garibaldi-Meucci Museum", decks=146, copies="1-2") %}
+{% trans trimmed
+bait_and_switch=card("Bait and Switch"),
+reckless_agitation=card("Reckless Agitation")
+%}
+An excellent recursion device, especially when it can be used to fetch a
+{{ bait_and_switch }} or a {{ reckless_agitation }} every turn. The ability to avoid
+combat with other Anarchs can also come in handy.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Club Illusion", decks=124, copies="1-2") %}
+{% trans trimmed
+the_anarch_free_press=card("The Anarch Free Press"),
+dabbler=card("Dabbler")
+%}
+A great bleed enhancer, ideal to help with the lunge, even though the blood cost is steep.
+Combined with cards that help bring some blood back on the vampires,
+like {{ the_anarch_free_press }} or {{ dabbler }}, it becomes even better.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("The Anarch Free Press", decks=110, copies="1") %}
+{% trans trimmed %}
+Combining permanent intercept and the occasional blood bonus
+for the low cost of 1 pool. A no-brainer for most Anarch decks.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Deep Ecology", decks=108, copies="3-8") %}
+{% trans trimmed %}
+A great defensive reaction for both Gangrel {{ gangrel }} and Tzimisce {{ tzimisce }}.
+All three disciplines can be useful in different situations, making it very versatile.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Constant Revolution", decks=86, copies="1-2") %}
+{% trans trimmed smiling_jack=card("Smiling Jack, The Anarch", "Smiling Jack") %}
+With an effect similar to {{ smiling_jack }}, they are even played together
+for pool damage in decks that have enough block potential to defend it.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Monkey Wrench", decks=82, copies="1-3") %}
 {% trans trimmed %}
 Although costly, it is a good bleed enhancer that requires no discipline.
 Invaluable in decks that have no access to other bleed enhancers,
@@ -86,38 +117,100 @@ it can be a decisive tool for a lunge.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Piper", decks=22, copies="3-8") %}
+{% call layout.card_column("Donnybrook", decks=82, copies="1-5") %}
 {% trans trimmed
-war_ghouls=link("/archetypes/war-ghouls"),
-khazar_s_diary=link("/archetypes/khazars-diary"),
-nephandii=link("/archetypes/nephandii")
+claws_of_the_dead=card("Claws of the Dead"),
+bowl_of_convergence=card("Bowl of Convergence"),
+mr_winthrop=card("Mr. Winthrop")
 %}
-A unique effect that allows Anarch to recruit allies without the risk of being blocked,
-it can be used in ally-oriented archetypes like {{ war_ghouls }}, {{ khazar_s_diary }}
-or {{ nephandii }}.
+Cheaper, but more of a gamble than {{ claws_of_the_dead }}, since it cannot be played
+after strikes are chosen. {{ obf }} is useful against permanent intercept like
+{{ bowl_of_convergence }} or {{ mr_winthrop }}.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Club Illusion", decks=21, copies="1-2") %}
+{% call layout.card_column("Protection Racket", decks=81, copies="2-4") %}
 {% trans trimmed
-the_anarch_free_press=card("The Anarch Free Press"),
-twilight_camp=card("Twilight Camp")
+organized_resistance=card("Organized Resistance")
 %}
-An excellent bleed enhancer, although the blood cost can be a bummer.
-Combined with cards that help bring some pool back on the vampires,
-like {{ the_anarch_free_press }} and {{ twilight_camp }},
-it becomes a frightening pool damage device.
+A great intercept reaction, useful against Political decks and complementing
+{{ organized_resistance }} beautifully.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Seattle Committee", decks=21, copies="1-2") %}
-{% trans trimmed twilight_camp=card("Twilight Camp") %}
-A nice way to make a vampire anarch at no cost, it is often played alongside
-{{ twilight_camp }}
+{% call layout.card_column("Powerbase: Los Angeles", decks=66, copies="1") %}
+{% trans trimmed %}
+A decent rotation enhancer even without anarch cards,
+it becomes very useful if the unlock effect can be put to good use.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Diversion", decks=20, copies="6-13") %}
+{% call layout.card_column("Reckless Agitation", decks=61, copies="1-5") %}
+{% trans trimmed kine_resources_contested=card("Kine Resources Contested") %}
+An excellent vote to deliver pool damage, its effect is stronger than
+{{ kine_resources_contested }}, for a higher blood cost.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Party Out Of Bounds", decks=52, copies="2-7") %}
+{% trans trimmed visions_of_zapathasura=card("Visions of Zapathasura") %}
+Mostly played for its {{ obf }} effect, the {{ pro }} intercept can come in handy.
+Often seen in Ravnos {{ ravnos }} or Ministry {{ ministry }} decks,
+with {{ visions_of_zapathasura }}
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Revolutionary Council", decks=48, copies="1-3") %}
+{% trans trimmed
+death_star=link("/archetypes/death-star")
+%}
+Nicknamed the "Death Star" since the first {{ death_star }} archetype,
+it is an unmatched lunge device. With enough minions and votes,
+there is no limit to the damage one can inflict with this single vote.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("The Platinum Protocol", decks=48, copies="8-16") %}
+{% trans trimmed
+the_unnamed=link("/archetypes/the-unnamed"),
+enchanting_gaze=card("Enchanting Gaze"),
+revelation_of_the_serpent=card("Revelation of the Serpent")
+%}
+Mainly used by the Ministry {{ ministry }}, but also in some {{ the_unnamed }} decks.
+An excellent bleed action when the threee disciplines are available.
+The corruption counter {{ pro }} brings can be used by
+{{ enchanting_gaze }} or {{ revelation_of_the_serpent }}.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Anarch Revolt", decks=48, copies="2-7") %}
+{% trans trimmed %}
+A good pool-damage dealer if it can be defended, either with intercept capacities or votes.
+Ideal if one can rush the prey's Anarch vampires and put them in torpor.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Dust Up", decks=40, copies="3-12") %}
+{% trans trimmed
+death_star=link("/archetypes/death-star")
+%}
+A versatile strike, especially for Anarch Brujah {{ brujah }}.
+{{ pot }} strikes hard, and {{ cel }} allows to avoid damage from the opponent,
+and one can choose one or the other depending on the situation.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Line Brawl", decks=36, copies="4-9") %}
+{% trans trimmed
+deep_song=card("Deep Song")
+%}
+A great action, mainly for Brujah {{ brujah }}, reminiscent of {{ deep_song }}.
+The ability to rush or bleed is very useful, and the {{ cel }} pool steal can be
+useful to keep a low profile or avoid a bounce on the lunge for the last pool damage.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Diversion", decks=35, copies="5-11") %}
 {% trans trimmed %}
 A versatile combat tool for vampires having both {{ cel }} and {{ for }},
 the choice between prevention and additional strike is a unique combination:
@@ -126,33 +219,47 @@ depending on the situation.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Powerbase: Los Angeles", decks=20, copies="1") %}
+{% call layout.card_column("CrimethInc.", decks=33, copies="2-7") %}
+{% trans trimmed
+a_b=link("/strategy/fundamentals", _("A&B"), _anchor="AB")
+%}
+An excellent {{ a_b }} boost in {{ pro }} or {{ tha }}. There is no shortage of good
+Anarch actions that allow it.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Eat the Rich", decks=32, copies="1-3") %}
+{% trans trimmed
+propaganda_of_the_deed=card("Propaganda of the Deed")
+%}
+A good damaging vote one can use to target a single Methuselah,
+or wittle down a whole table. It can pass easily when combined with the Edge and
+some vote modifier like {{ propaganda_of_the_deed }}.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Memory Rift", decks=32, copies="2-8") %}
+{% trans trimmed
+propaganda_of_the_deed=card("Propaganda of the Deed")
+%}
+A nice stealth modifier that does not jam the hand at {{ obf }}, it becomes even better
+with {{ pre }}, packing some combat defense that makes the action
+that much less appealing to block.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Open War", decks=31, copies="1-2") %}
 {% trans trimmed %}
-A decent rotation enhancer even without anarch cards,
-it becomes very useful if the unlock effect can be put to good use.
+A solid rush device when Barons are available. It is pretty hard to burn for the rest
+of the table, which will rarely come together to remove it and pay the steep pool cost.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Undue Influence", decks=18, copies="3-18") %}
-{% trans trimmed power_of_one=card("Power of One") %}
-Although it provides no bleed bonus, having a stealthed bleed for {{ pre }}
-is a powerful tool, moreover when combined with {{ power_of_one }} to deliver
-a 2 stealth 2 pool bleed. The bloat effect is a nice bonus too.
+{% call layout.card_column("Hell-for-Leather", decks=31, copies="3-6") %}
+{% trans trimmed %}
+Useful both for the defensive dodge-and-strike at {{ ani }} and the unlimited additional
+at {{ cel }}. More rarely used at {{ obt }}, although the effect is interesting too.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Power of One", decks=17, copies="2-10") %}
-{% trans trimmed bonding=card("Bonding") %}
-Although pricier than {{ bonding }},
-it provides stealth and bleed power at inferior {{ pre }},
-which makes it usable by lower capacity vampires.
-{% endtrans %}
-{% endcall %}
-
-{% call layout.card_column("Garibaldi-Meucci Museum", decks=14, copies="1") %}
-{% trans trimmed death_star=link("/archetypes/death-star") %}
-A decent recursion device, it is often seen in political decks, like {{ death_star }},
-where it can be used to get back some critical pool damaging vote in hand.
-{% endtrans %}
-{% endcall %}
 {% endblock %}

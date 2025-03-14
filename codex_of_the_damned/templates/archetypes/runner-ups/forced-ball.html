@@ -1,0 +1,100 @@
+{% extends "archetypes/_layout.html" %}
+{% import "archetypes/_layout-erratum.html" as erratum with context %}
+{% import "archetypes/runner-ups/forced-ball.json" as deck_json %}
+
+{% block meta %}
+<meta property="decklist" content='{{ deck_json | tojson }}' />
+{% endblock %}
+
+{% block archetype_name %}
+<h1>{{ toreador }} Forced Ball</h1>
+{% endblock %}
+
+{% block archetype %}
+{% trans trimmed
+aire_of_elation=card("Aire of Elation"),
+ashur_tablets=card("Ashur Tablets"),
+awe=card("Awe"),
+bewitching_oration=card("Bewitching Oration"),
+camarilla_conclave=card("Camarilla Conclave"),
+charismatic_aura=card("Charismatic Aura"),
+closed_session=card("Closed Session"),
+creepshow_casino=card("Creepshow Casino"),
+delaying_tactics=card("Delaying Tactics"),
+diana_iadanza=card("Diana Iadanza"),
+forced_march=card("Forced March"),
+grand_ball=card("Toreador Grand Ball", "Grand Ball"),
+grand_balls=card("Toreador Grand Ball", "Grand Balls"),
+immortal_grapple=card("Immortal Grapple"),
+camarilla_segregation=card("Judgment: Camarilla Segregation", "Camarilla Segregation"),
+majesty=card("Majesty"),
+perfect_paragon=card("Perfect Paragon"),
+protected_resources=card("Protected Resources"),
+scalpel_tongue=card("Scalpel Tongue"),
+second_tradition=card("Second Tradition: Domain", "Second Tradition"),
+telepathic_misdirection=card("Telepathic Misdirection"),
+the_parthenon=card("The Parthenon"),
+the_sargon_fragment=card("The Sargon Fragment"),
+toreador_grand_ball=card("Toreador Grand Ball"),
+villein=card("Villein"),
+voter_captivation=card("Voter Captivation"),
+valdemir_santos_deck=link("/deck-search", _("Valdemir Santos' deck"), id="11159")
+%}
+<h2>Highlights</h2>
+<p>
+    This is a <em>political</em> deck using Toreador who have Fortitude {{ for }},
+    to allow for more actions with {{ forced_march }}. It uses the unique {{ toreador_grand_ball }}
+    to avoid blocks on political actions.
+</p>
+<p>
+    Stealth is los, the deck relies on the {{ grand_ball }} to avoid dedicated blockers.
+    That said, {{ creepshow_casino }}, {{ camarilla_conclave }} and {{ perfect_paragon }} can provide just the stealth
+    needed to get an action through.
+    Political actions provide pool damage and a bit of bloat, and Presence modifiers are used
+    to ensure they pass without issue: {{ awe }}, {{ bewitching_oration }},
+    {{ perfect_paragon }} and {{ scalpel_tongue}}.
+</p>
+<p>
+    Using {{ voter_captivation }} and {{ villein }}, the deck ensures a solid bloat. But it also packs some bleed
+    defense with {{ telepathic_misdirection }} and {{ protected_resources }}.
+</p>
+<p>
+    The combat module is strictly defensive, with just {{ majesty }} for combat ends.
+</p>
+<p>
+    The deck does not aim to defend the {{ grand_ball }}. With its solid bloat, it just replaces it when it is lost,
+    and with {{ the_parthenon }} and {{ ashur_tablets }} can even end up playing and replacing two of them.
+    Of course, it is still worth defending with {{ second_tradition }} and {{ majesty }} if it is ont too risky.
+</p>
+<h2>Tips & Tricks</h2>
+<p>
+    Multiple {{ grand_balls }} can be stacked using the same "host", ie. locking only one vampire for all of them.
+</p>
+<p>
+    {{ diana_iadanza }} is a quasi-star in the deck. Her ability lets her avoid {{ delaying_tactics }},
+    and with superior Fortitude {{ for }}, she can use {{ forced_march }} for stealth. So in the mid-game,
+    she might be the one less needing a {{ grand_ball }}, if the neighbours have low enough intercept.
+</p>
+<p>
+    {{ third_tradition_progeny }} allows to create a cheap host for the {{ grand_ball }}, freeing an older vampire.
+</p>
+<p>
+    Recursion is strong in this deck, and {{ the_sargon_fragment }} can allow a {{ grand_ball }} guest to
+    fetch just the right card at the right time. Together with {{ ashur_tablets }}, it opens nice windows
+    of opportunities in the end game.
+</p>
+<p>
+    The surprise {{ aire_of_elation }} can take an opponent by surprise and provide just the damage needed for a lunge,
+    or just be discarded to keep the opponents guessing. It can always be brought back in hand with recursion if needed,
+    particularily in the end game duel.
+</p>
+<h2>Variants</h2>
+<p>
+    {{ closed_session }} is an option to consider, and {{ camarilla_segregation }} is often included.
+    {{ charismatic_aura }} can be added against {{ immortal_grapple }}.
+</p>
+<p>
+    It is also possible to run this without {{ ashur_tablets }}, see {{ valdemir_santos_deck }}.
+</p>
+{% endtrans %}
+{% endblock %}

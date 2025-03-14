@@ -10,28 +10,19 @@
 <div class="insert tip">
     <p>
         {% trans trimmed
-        anson=card("Anson"),
         anson_guns=link("/archetypes/anson-guns"),
-        rebekka_jost=link("/archetypes/rebekka-jost"),
+        aaa=link("/archetypes/aaa"),
         weenie_aus=link("/archetypes/weenie-aus")
         %}
-        The Toreador and their antitribu are a prominent clan in tournaments.
-        They gave birth to two archetypes: {{ anson_guns }} using {{ anson }}
-        and {{ rebekka_jost }} using antitribu and their clan cards.
+        The Toreador have always been a prominent clan in tournaments.
+        {{ anson_guns }} has long been successful, but the newly
+        arrived V5 vampires put together strong political builds.
         Moreover, they are used in numbers in the {{ weenie_aus }} archetype.
         {% endtrans %}
     </p>
 </div>
 
-{% call layout.card_column("Anson", decks=82, copies="2-5") %}
-{% trans trimmed ashur_tablets=card("Ashur Tablets") %}
-The definite star of the clan, his rare ability can completely reshape
-the way Master cards are handled in a deck. Using some {{ ashur_tablets }}
-with him becomes very efficient.
-{% endtrans %}
-{% endcall %}
-
-{% call layout.card_column("Rafael de Corazon", decks=69, copies="1-3") %}
+{% call layout.card_column("Rafael de Corazon", decks=36, copies="1-3") %}
 {% trans trimmed lutz_von_hohenzollern=card("Lutz von Hohenzollern") %}
 With its superior {{ OBF }} and {{ DOM }} over its already powerful clan disciplines,
 he is the most played <em>Inner Circle</em> after {{ lutz_von_hohenzollern }},
@@ -39,13 +30,69 @@ a vampire he often accompanies anyway.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Isabel de Leon", decks=67, copies="1") %}
+{% call layout.card_column("Art Museum", decks=22, copies="1-2") %}
+{% trans trimmed %}
+A nice bloat card providing 1 pool per turn,
+it can help get vampires out faster if it is drawn early on.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Andre LeRoux", decks=19, copies="1-2") %}
+{% trans trimmed %}
+His unique ability makes him a good addition in many combat decks hoping
+to get an open road for bleed actions at some point.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Mkhokheli", decks=18, copies="1-2") %}
+{% trans trimmed forced_march=card("Forced March") %}
+A cheap Prince, with inferior {{ for }} opening the possibility of {{ forced_march }}, good asset.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Isabel de Leon", decks=18, copies="1") %}
 {% trans trimmed %}
 The cheapest {{ AUS }} pool can buy. An easy inclusion in many constructs.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Anneke", decks=56, copies="1-3") %}
+{% call layout.card_column("Flávio Gonçalves", decks=17, copies="1-2") %}
+{% trans trimmed forced_march=card("Forced March") %}
+A Prince, with inferior {{ for }} opening {{ forced_march }}, and a nice defensive ability.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Catalina Vega ", decks=16, copies="1-3") %}
+{% trans trimmed forced_march=card("Forced March") %}
+A Prince, with inferior {{ for }} for {{ forced_march }} and a bleed bonus, she is a treat.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Anson", decks=13, copies="3-5") %}
+{% trans trimmed ashur_tablets=card("Ashur Tablets") %}
+The definite star of the clan, his rare ability can completely reshape
+the way Master cards are handled in a deck. Using some {{ ashur_tablets }}
+with him becomes very efficient.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Toreador Grand Ball", decks=13, copies="2-9") %}
+{% trans trimmed alexandra=card("Alexandra") %}
+An iconic card of the Toreador clan, the cost of having a vampire locked is high,
+unless used in cunjonction with {{ alexandra }}.
+Anyway, even at this cost, making sure actions get through without even using stealth
+is very strong.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Diana Iadanza", decks=8, copies="2-4") %}
+{% trans trimmed %}
+A rather new (2024) Justicar, her unique ability can cancel the notorious {{ delaying_tactics }},
+making her a great lunger as well as one of the best politicians of the game in a single stroke.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Anneke", decks=7, copies="1-2") %}
 {% trans trimmed
 anson=card("Anson")
 %}
@@ -55,97 +102,10 @@ in any construct with intercept capabilities.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Art Museum", decks=51, copies="1-2") %}
+{% call layout.card_column("Loup", decks=8, copies="3-6") %}
 {% trans trimmed %}
-A nice bloat card providing 1 pool per turn,
-it can help get vampires out faster if it is drawn early on.
-{% endtrans %}
-{% endcall %}
-
-{% call layout.card_column("François Villon", decks=47, copies="1-3") %}
-{% trans trimmed
-anson=card("Anson"),
-anneke=card("Anneke")
-%}
-Often found algonside {{ anson }} and {{ anneke }},
-his title combined with his nice ability makes for a good option.
-{% endtrans %}
-{% endcall %}
-
-{% call layout.card_column("Remilliard, Devout Crusader", decks=43, copies="1") %}
-{% trans trimmed %}
-A cheap {{ AUS }} vampire with access to a useful inferior {{ pre }},
-he gets included in many decks.
-{% endtrans %}
-{% endcall %}
-
-{% call layout.card_column("Alexandra", decks=40, copies="2-3") %}
-{% trans trimmed
-aaa_archetype=link("/archetypes/aaa"),
-anson=card("Anson"),
-anneke=card("Anneke"),
-toreador_grand_ball=card("Toreador Grand Ball")
-%}
-A good match for {{ anson }} and {{ anneke }},
-her bleed bonus and title are good and her special unlock ability is very strong,
-especially when combined with {{ toreador_grand_ball }}.
-{% endtrans %}
-{% endcall %}
-
-{% call layout.card_column("Andre LeRoux", decks=39, copies="1-2") %}
-{% trans trimmed %}
-His unique ability makes him a good addition in many construct hoping
-to get an open road for bleed actions at some point.
-{% endtrans %}
-{% endcall %}
-
-{% call layout.card_column("Marcellus", decks=36, copies="1-2") %}
-{% trans trimmed magnum=card(".44 Magnum") %}
-A decent price for a <em>Prince</em> with this {{ AUS }}{{ CEL }} disciplines.
-More often than not, he is seen using range weapons like the {{ magnum }}.
-{% endtrans %}
-{% endcall %}
-
-{% call layout.card_column("Delilah Easton", decks=29, copies="1") %}
-{% trans trimmed %}
-A cheap {{ pre }} vampire who finds her place in many decks.
-{% endtrans %}
-{% endcall %}
-
-{% call layout.card_column("Sheila Mezarin", decks=33, copies="1-2") %}
-{% trans trimmed %}
-Only 6 pool for a +1 bleed with {{ AUS }}{{ PRE }}, this is a bargain.
-{% endtrans %}
-{% endcall %}
-
-{% call layout.card_column("Jost Werner", decks=29, copies="1-3") %}
-{% trans trimmed %}
-The bonus stealth is quite strong combined with {{ PRE }},
-and the pool cost not so high.
-{% endtrans %}
-{% endcall %}
-
-{% call layout.card_column("Palla Grande", decks=29, copies="2-4") %}
-{% trans trimmed %}
-The most played clan card for Toreador antitribu,
-it is an easy way to improve bleed for all vampires.
-The card is generally played in multiple copies in the deck,
-so as to make sure its destruction is not a stopping point for the construct.
-{% endtrans %}
-{% endcall %}
-
-{% call layout.card_column("Toreador Grand Ball", decks=28, copies="3-7") %}
-{% trans trimmed alexandra=card("Alexandra") %}
-An iconic card of the Toreador clan, the cost of having a vampire locked is high,
-unless used in cunjonction with {{ alexandra }}.
-Anyway, even at this cost, making sure actions get through without even using stealth
-is very strong.
-{% endtrans %}
-{% endcall %}
-
-{% call layout.card_column("Mariana Gilbert", decks=27, copies="1") %}
-{% trans trimmed %}
-A cheap price for superior {{ PRE }}, she gets included in many decks.
+This new (2024) modifier grants much needed stealth, but also never jams the hand.
+And it stays on as long as the actions continue to get blocked.
 {% endtrans %}
 {% endcall %}
 

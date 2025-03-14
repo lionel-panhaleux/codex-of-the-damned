@@ -13,7 +13,15 @@
     </p>
 </div>
 
-{% call layout.card_column("Majesty", decks=404, copies="3-8") %}
+{% call layout.card_column("Entrancement", decks=150, copies="1-3") %}
+{% trans trimmed far_mastery=card("Far Mastery") %}
+A versatile action. Included for its dreadful superior {{ PRE }} effect that can steal a
+powerful ally, its simple bleed action at inferior {{ pre }} makes it far more flexible
+than {{ dom }} {{ far_mastery }}.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Majesty", decks=149, copies="3-7") %}
 {% trans trimmed
 a_b=link("/strategy/fundamentals", _("A&B"), _anchor="AB")
 %}
@@ -23,15 +31,7 @@ defensively.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Entrancement", decks=380, copies="1-4") %}
-{% trans trimmed far_mastery=card("Far Mastery") %}
-A versatile action. Included for its dreadful superior {{ PRE }} effect that can steal a
-powerful ally, its simple bleed action at inferior {{ pre }} makes it far more flexible
-than {{ dom }} {{ far_mastery }}.
-{% endtrans %}
-{% endcall %}
-
-{% call layout.card_column("Voter Captivation", decks=288, copies="3-7") %}
+{% call layout.card_column("Voter Captivation", decks=102, copies="3-7") %}
 {% trans trimmed minion_tap=card("Minion Tap") %}
 A powerful bloat for vote oriented decks. With enough votes on the table, it can
 resplenish a vampire easily and make it ready for another {{ minion_tap }} and
@@ -39,7 +39,22 @@ constitues a formidable defense.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Aire of Elation", decks=152, copies="1-5") %}
+{% call layout.card_column("Perfect Paragon", decks=72, copies="1-4") %}
+{% trans trimmed %}
+A versatile tool for big capacity vote decks:
+more votes or a good modifier to help get an action through.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Enchant Kindred", decks=55, copies="2-8") %}
+{% trans trimmed govern_the_unaligned=card("Govern the Unaligned") %}
+A weaker version of the popular {{ dom }} {{ govern_the_unaligned }}, it has the same
+advantages: a good accelerator in the beginning to get more vampires out cheaply, a nice
+bleed action later on.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Aire of Elation", decks=54, copies="2-5") %}
 {% trans trimmed
 conditioning=card("Conditioning")
 %}
@@ -49,28 +64,33 @@ worth it for decks with no access to {{ dom }}.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Perfect Paragon", decks=145, copies="1-4") %}
-{% trans trimmed %}
-A versatile tool for big capacity vote decks:
-more votes or a good modifier to help get an action through.
+{% call layout.card_column("Enchanting Gaze", decks=49, copies="3-6") %}
+{% trans trimmed
+the_platinum_protocol=card("The Platinum Protocol"),
+the_unnamed=card("The unnamed"),
+viktor_the_night_general=card("Viktor, The Night General"),
+adana_de_sforza=card("Adana de Sforza")
+%}
+A great stealth tool, especially when combined with {{ the_platinum_protocol }}
+to put som corruption counters down in the first place. It is, of course, a favorite
+for Ministry {{ ministry }}, but some other stars field it too, like {{ the_unnamed }},
+{{ viktor_the_night_general }} or {{ adana_de_sforza }}.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Enchant Kindred", decks=124, copies="3-8") %}
-{% trans trimmed govern_the_unaligned=card("Govern the Unaligned") %}
-A weaker version of the popular {{ dom }} {{ govern_the_unaligned }}, it has the same
-advantages: a good accelerator in the beginning to get more vampires out cheaply, a nice
-bleed action later on.
+{% call layout.card_column("Revelation of the Serpent", decks=48, copies="4-11") %}
+{% trans trimmed
+the_platinum_protocol=card("The Platinum Protocol"),
+enchanting_gaze=card("Enchanting Gaze"),
+bonding=card("Bonding")
+%}
+Often paired with {{ enchanting_gaze }} and, of course, {{ the_platinum_protocol }}
+for Anarchs, it's a Ministry {{ ministry }} favorite on par with {{ bonding }}.
+Any {{ PRE }}{{ PRO }} deck can easily include a few of those.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Bewitching Oration", decks=121, copies="2-5") %}
-{% trans trimmed %}
-One of the best vote modifier of the game with 4 votes at no cost at superior {{ PRE }}.
-{% endtrans %}
-{% endcall %}
-
-{% call layout.card_column("Awe", decks=106, copies="1-4") %}
+{% call layout.card_column("Awe", decks=42, copies="1-5") %}
 {% trans trimmed
 bewitching_oration=card("Bewitching Oration"),
 voter_captivation=card("Voter Captivation")
@@ -78,6 +98,26 @@ voter_captivation=card("Voter Captivation")
 A bit more expensive than {{ bewitching_oration }}, it gives a better guarantee to be
 able to get a vote through and its cost can be mitigated if paired with
 {{ voter_captivation }}.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Bewitching Oration", decks=41, copies="2-4") %}
+{% trans trimmed %}
+One of the best vote modifier of the game with 4 votes at no cost at superior {{ PRE }}.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Force of Personality", decks=28, copies="1-4") %}
+{% trans trimmed %}
+An interesting strike: combat ends because it can be cycled easily if not needed,
+and also help some actions to go through occasionally.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Heart of the City", decks=24, copies="1-2") %}
+{% trans trimmed pulse_of_the_canaille=card("Pulse of the Canaille") %}
+A solid permanent bleed enhancer. The cost is reasonable, lower than the comparable
+{{ pulse_of_the_canaille }}.
 {% endtrans %}
 {% endcall %}
 

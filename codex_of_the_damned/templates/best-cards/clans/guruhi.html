@@ -9,13 +9,15 @@
         nananimalism=link("/archetypes/nananimalism"),
         nana_buruku=card("Nana Buruku"),
         guruhi_rush=link("/archetypes/guruhi-rush"),
-        nangila_were=card("Nangila Were")
+        nangila_were=card("Nangila Were"),
+        blind_spot=link("/archetypes/blind-spot")
         %}
         The Guruhi and their unique {{ ani }}{{ pre }}{{ pot }} disciplines combination
         have excellent vampires with outstanding abilities.
         This led to the {{ nananimalism }} archetype, a weenie {{ ani }} deck using
         {{ nana_buruku }} as star, and the {{ guruhi_rush }}, using
         {{ nangila_were }} and the {{ ani }}{{ pot }} combination for combat.
+        They can even put together strong bleed decks like {{ blind_spot }}.
         {% endtrans %}
     </p>
     <p>
@@ -29,7 +31,7 @@
     </p>
 </div>
 
-{% call layout.card_column("Nana Buruku", decks=91, copies="2-4") %}
+{% call layout.card_column("Nana Buruku", decks=24, copies="2-4") %}
 {% trans trimmed %}
 The absolute star of the Guruhi clan, she is often played for her rare ability
 to grant more Master actions.
@@ -38,60 +40,25 @@ in non-Guruhi decks.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Fish", decks=39, copies="1-2") %}
+{% call layout.card_column("Lucian, the Perfect", decks=13, copies="1-5") %}
+{% trans trimmed %}
+The only vampire of the game with a bleed power of 4.
+He can be brutal, and is often played in big capacity {{ DOM }}{{ OBF }} decks
+with no Guruhi specifics.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Fish", decks=6, copies="1") %}
 {% trans trimmed %}
 {{ ANI }}{{ POT }} for only 5 pool is a bargain.
 An easy inclusion in any Guruhi or Nosferatu {{ nosferatu }} build.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Nangila Were", decks=24, copies="1-3") %}
+{% call layout.card_column("Nangila Were", decks=5, copies="2-3") %}
 {% trans trimmed nana_buruku=card("Nana Buruku") %}
 All clan disciplines at superior with a rush ability included.
 A must-have in rush decks, often played along {{ nana_buruku }}.
-{% endtrans %}
-{% endcall %}
-
-{% call layout.card_column("Lumumba", decks=16, copies="1") %}
-{% trans trimmed %}
-A cheap price for superior {{ PRE }}, he can even be included in mono {{ pre }} builds.
-{% endtrans %}
-{% endcall %}
-
-{% call layout.card_column("Founders of the Ebony Kingdom", decks=15, copies="2-7") %}
-{% trans trimmed %}
-One of the best bloating device in the game, only available to Guruhi
-and difficult to play in multi-clans decks.
-{% endtrans %}
-{% endcall %}
-
-{% call layout.card_column("Lucian, the Perfect", decks=14, copies="1-4") %}
-{% trans trimmed %}
-The only vampire of the game with a bleed power of 4.
-Worth mentioning, even if he is often played in big capacity {{ DOM }}{{ OBF }} decks
-with no Guruhi specifics.
-{% endtrans %}
-{% endcall %}
-
-{% call layout.card_column("Guruhi Kholo", decks=13, copies="1") %}
-{% trans trimmed
-nana_buruku=card("Nana Buruku"),
-aren=card("Aren, Priest of Eshu", "Aren")
-%}
-An additional title that is unlikely to contest,
-it's a worthy inclusion in a political deck and a useful addition to
-{{ nana_buruku }} or {{ aren }}.
-{% endtrans %}
-{% endcall %}
-
-{% call layout.card_column("Ugadja", decks=11, copies="1-2") %}
-{% trans trimmed
-eze_the_demon_prince=card("Eze, The Demon Prince")
-%}
-A magaji with a useful ability, her cost is a bit steep,
-but she finds her place in a political deck,
-and her {{ ABO }} discipline can get her into Akunanse {{ akunanse }} decks,
-although she is more often associated with {{ eze_the_demon_prince }}.
 {% endtrans %}
 {% endcall %}
 

@@ -1,0 +1,94 @@
+{% extends "best-cards/_layout.html" %}
+{% import "best-cards/_layout_card_column.html" as layout with context %}
+
+{% block content %}
+<h1>{{ obl }} {{ _("Oblivion") }}</h1>
+<div class="insert tip">
+    <p>
+        {% trans trimmed %}
+        {{ obl }} provides good stealth, wraith allies, and tactical combat options.
+        As it is still a new disciplines, there are no statistics for it yet.
+        {% endtrans %}
+    </p>
+</div>
+
+{% call layout.card_column("Arms of Ahriman") %}
+{% trans trimmed %}
+A versatile combat card that can be used for a bit of defense at superior {{ OBL }}.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Consign to Oblivion") %}
+{% trans trimmed
+deflection=card("Deflection") ,
+organized_resistance=card("Organized Resistance")
+%}
+An interesting modifier making bounces like {{ deflection }} more expensive,
+and unlocks like {{ organized_resistance }} an unappealing gamble.
+It is expensive though.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Pass Through Shadow") %}
+{% trans trimmed %}
+A super combat ends that also provides some stealth later at superior {{ OBL }}.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Shroud of Decay") %}
+{% trans trimmed %}
+An interesting pool damage device. At superior {{ OBL }}, it's like a bleed that cannot be bounced.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Shadow Cast") %}
+{% trans trimmed %}
+A base stealth tool for {{ obl }}, it can be played in numbers because the superior effect
+can be used to avoid jamming the hand.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Shadow Cloak") %}
+{% trans trimmed %}
+The other shadow stealth, even easier to cycle, although the remanent effect is a bit weaker.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Shadow Sentinel") %}
+{% trans trimmed %}
+A great wake, that can even be used on allies.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Spectral Servitor") %}
+{% trans trimmed nocturn=card("Nocturn") %}
+A nice low-key servitor, reminiscent of the old {{ nocturn }}, but a step above.
+He can bleed or defend and, if he is useful, he can even be kept.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Stygian Shroud") %}
+{% trans trimmed %}
+A clean block denial, that is always very strong.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Touch of Oblivion") %}
+{% trans trimmed %}
+An expensive but scary strike. Both levels can be interesting depending on the situation.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Truth in Darkness") %}
+{% trans trimmed %}
+A decent intercept card, especially for Lasombra {{ lasombra }} since they do not have access to Auspex {{ aus }}.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Where the Veil Thins") %}
+{% trans trimmed %}
+A nice stealth modifier, especially against allies.
+{% endtrans %}
+{% endcall %}
+
+{% endblock %}

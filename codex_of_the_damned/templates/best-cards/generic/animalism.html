@@ -15,34 +15,14 @@
     </p>
 </div>
 
-{% call layout.card_column('Carrion Crows', decks=252, copies="5-10") %}
+{% call layout.card_column("Raven Spy", decks=107, copies="2-5") %}
 {% trans trimmed %}
-An excellent combat card. It is not a strike so it cannot be dodged,
-it is harder to prevent and additional damage are still inflicted by the strike itself.
-Moreover, it is ranged damage.
+A base building block for most {{ ani }} based intercept modules.
+Permanent intercept is well worth the cost.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Cats' Guidance", decks=222, copies="2-5") %}
-{% trans trimmed %}
-A versatile defence tool providing either intercept or an unlock effect.
-Not as surprising as a wake, but being unlocked can be better.
-{% endtrans %}
-{% endcall %}
-
-{% call layout.card_column("Canine Horde", decks=195, copies="1-3") %}
-{% trans trimmed
-carrion_crows=card("Carrion Crows"),
-aid_from_bats=card("Aid from Bats")
-%}
-An excellent counter against weapons, it is often included in {{ ani }} combat modules.
-Because {{ ani }} often uses {{ carrion_crows }}
-and {{ aid_from_bats }} for a ranged combat module,
-a ranged weapon on the opponent side is especially cumbersome.
-{% endtrans %}
-{% endcall %}
-
-{% call layout.card_column("Deep Song", decks=194, copies="3-10") %}
+{% call layout.card_column("Deep Song", decks=83, copies="2-9") %}
 {% trans trimmed %}
 The choice between bleed and rush gives it so much versatility,
 it can be played in most table situations at an advantage.
@@ -50,14 +30,35 @@ The fact that the opponent has to choose his strike first is a nice bonus.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Raven Spy", decks=182, copies="2-6") %}
-{% trans trimmed %}
-A base building block for most {{ ani }} based intercept modules.
-Permanent intercept is well worth the cost.
+{% call layout.card_column("Army of Rats", decks=78, copies="1-2") %}
+{% trans trimmed
+deep_song=card("Deep Song")
+%}
+{{ ani }} usually makes for excellent intercept and good combat,
+but it may lack pool damage to fence off one’s prey,
+with {{ deep_song }}
+bringing only a bit of pool damage.
+This is an excellent option to improve pool damage
+if the deck has enough intercept capabilities to protect it.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Sense the Savage Way", decks=167, copies="2-6") %}
+{% call layout.card_column('Carrion Crows', decks=71, copies="5-9") %}
+{% trans trimmed %}
+An excellent combat card. It is not a strike so it cannot be dodged,
+it is harder to prevent and additional damage are still inflicted by the strike itself.
+Moreover, it is ranged damage.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Cats' Guidance", decks=62, copies="2-5") %}
+{% trans trimmed %}
+A versatile defence tool providing either intercept or an unlock effect.
+Not as surprising as a wake, but being unlocked can be better.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Sense the Savage Way", decks=51, copies="2-7") %}
 {% trans trimmed
 eyes_argus=card("Eyes of Argus")
 %}
@@ -69,28 +70,67 @@ as the intercept can be used on an undirected action.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Aid from Bats", decks=152, copies="6-14") %}
+{% call layout.card_column("Canine Horde", decks=41, copies="1-2") %}
+{% trans trimmed
+carrion_crows=card("Carrion Crows"),
+aid_from_bats=card("Aid from Bats"),
+voracious_vermin=card("Voracious Vermin")
+%}
+An excellent counter against weapons, it is often included in {{ ani }} combat modules.
+Because {{ ani }} often uses {{ carrion_crows }}
+and {{ aid_from_bats }} for a ranged combat module,
+a ranged weapon on the opponent side is especially cumbersome.
+The recent {{ voracious_vermin }} is now a serious alternative as it is more
+versatile.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Guard Dogs", decks=35, copies="1-3") %}
+{% trans trimmed
+on_the_qui_vive=card("On the Qui Vive"),
+sense_the_savage_way=card("Sense the Savage Way")
+%}
+A good alternative or addition to the basic {{ on_the_qui_vive }} wake, especially for
+those who don't have the capacity for {{ sense_the_savage_way }}.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Aid from Bats", decks=31, copies="6-14") %}
 {% trans trimmed
 carrion_crows=card("Carrion Crows")
 %}
-The second pillar of {{ ani }} combat modules, it provides a maneuver, one damage, plus a welcome press,
-either as a defensive tool to avoid a second round at close range, or as an offensive tool to
-continue combat. Played multiple times in a row, it can take an opponent down
-pretty fast. Coupled with a {{ carrion_crows }},
+The second pillar of {{ ani }} combat modules, it provides a maneuver, one damage,
+plus a welcome press, either as a defensive tool to avoid a second round at close range,
+or as an offensive tool to continue combat. Coupled with a {{ carrion_crows }},
 it delivers 6 damage with only two cards.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Army of Rats", decks=137, copies="1-2") %}
+{% call layout.card_column("Drawing Out the Beast", decks=22, copies="2-6") %}
 {% trans trimmed
-deep_song=card("Deep Song")
+carrion_crows=card("Carrion Crows")
 %}
-{{ ani }} usually makes for excellent intercept and good combat,
-but it may lack pool damage to fence off one’s prey,
-with {{ deep_song }}
-bringing only a bit of pool damage.
-This is an excellent option to improve pool damage
-if the deck has enough intercept capabilities to protect it.
+A great range management device, ideal when you want to keep the range close.
+It is most often seen in {{ ani }}{{ pot }} modules.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Pack Alpha", decks=20, copies="1-5") %}
+{% trans trimmed
+raven_spy=card("Raven Spy")
+%}
+An interesting option to help get more retainers like {{ raven_spy }} out faster,
+but other retainers can be used too, and the potential strength bonus can be very handy.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Terror Frenzy", decks=17, copies="2-4") %}
+{% trans trimmed
+drawing_out_the_beast=card("Drawing Out the Beast"),
+aid_from_bats=card("Aid from Bats")
+%}
+The other range management device, the opposite of {{ drawing_out_the_beast }},
+this time more often used in pure {{ ANI }} modules relying on {{ aid_from_bats }}.
 {% endtrans %}
 {% endcall %}
 

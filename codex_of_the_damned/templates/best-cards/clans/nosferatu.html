@@ -20,109 +20,128 @@
     </p>
 </div>
 
-{% call layout.card_column("Stick", decks=84, copies="1-2") %}
+{% call layout.card_column("Jacques Rouge", decks=19, copies="1-2") %}
 {% trans trimmed %}
-The cheapest {{ ANI }} pool can buy, he gets included in many {{ ani }} decks.
+A cheap Baron, and {{ OBF }}{{ pre }} is a great combination for political decks, even out of the clan.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Beetleman", decks=75, copies="1") %}
+{% call layout.card_column("Creeping Sabotage", decks=18, copies="2-5") %}
+{% trans trimmed %}
+A relatively new (2020) clan card, it has now reached the top of the rankings. Tricky to protect,
+but even just a few accompanied by {{ army_of_rats }} can oust preys one after the other.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Warsaw Station", decks=17, copies="1-3") %}
+{% trans trimmed
+raven_spy=card("Raven Spy"),
+creeping_sabotage=card("Creeping Sabotage")
+%}
+A superb unlock effect, usable after a {{ raven_spy }} recruitement, {{ creeping_sabotage }},
+or even a political action. The out-of-torpor effect can also come in handy, if nothing else to deter diablerie.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("The Labyrinth", decks=15, copies="1") %}
+{% trans trimmed
+opium_den=card("Opium Den")
+%}
+One pool for permanent stealth is really a bargain. Only the Ministry{{ ministry }}
+have a similar tool with {{ opium_den }}.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Benedito, a Lanterna", decks=10, copies="1-2") %}
+{% trans trimmed
+bait_and_switch=card("Bait and Switch"),
+organized_resistance=card("Organized Resistance")
+%}
+Another cheap Baron, his disciplines may not be the best, but providing access to {{ bait_and_switch }} and
+{{ organized_resistance }} make up for it.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Belinde", decks=9, copies="1-2") %}
+{% trans trimmed
+creeping_sabotage=card("Creeping Sabotage"),
+benjamin_rose=card("Benjamin Rose")
+%}
+A cheap Prince with superior Obfuscate {{ OBF }}, pretty neat. Even her inferior {{ aus }} can come in handy
+to defend {{ creeping_sabotage }}. A good partner to {{ benjamin_rose }}.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Benjamin Rose", decks=9, copies="1-2") %}
+{% trans trimmed
+creeping_sabotage=card("Creeping Sabotage"),
+second_tradition=card("Second Tradition: Domain", "Second Tradition"),
+eyes_of_argus=card("Eyes of Argus")
+%}
+A great Prince for {{ creeping_sabotage }} defense. He has access to {{ second_tradition }}
+ as well as {{ eyes_of_argus }}.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Beetleman", decks=9, copies="1") %}
 {% trans trimmed %}
 A cheap {{ ANI }} minion, he also gets included in many {{ ani }} decks.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Petra", decks=41, copies="1") %}
-{% trans trimmed
-the_unnamed=card("The unnamed"),
-cybele=card("Cybele")
-%}
-5 pool is a bit pricey for {{ ANI }} so she is less seen in mono {{ ANI }}
-or multi-clan decks. Her ability can be useful against {{ the_unnamed }}
-or {{ cybele }} though.
-{% endtrans %}
-{% endcall %}
-
-{% call layout.card_column("The Labyrinth", decks=38, copies="1") %}
-{% trans trimmed
-opium_den=card("Opium Den")
-%}
-One pool for permanent stealth is really a bargain: other clans have to pay 2 pool
-for this kind of device. Only the Followers of Set {{ follower_of_set }}
-have a similar tool with {{ opium_den }}.
-{% endtrans %}
-{% endcall %}
-
-{% call layout.card_column("Warsaw Station", decks=31, copies="1-2") %}
-{% trans trimmed
-nosferatu_royalty=link("/archetypes/nosferatu-royalty")
-%}
-A rare effect, quite useful in Nosferatu decks using political actions, like the
-{{ nosferatu_royalty }} archetype.
-{% endtrans %}
-{% endcall %}
-
-{% call layout.card_column("Nikolaus Vermeulen", decks=27, copies="1-2") %}
-{% trans trimmed
-nosferatu_royalty=link("/archetypes/nosferatu-royalty")
-%}
-The iconic vampire for {{ nosferatu_royalty }} decks, he has an excellent ability
-that helps get other <em>Princes</em> out faster and cheaper, or bloat a bit.
-{% endtrans %}
-{% endcall %}
-
-{% call layout.card_column("Gustaphe Brunnelle", decks=25, copies="1-2") %}
-{% trans trimmed guruhi_rush=link("/archetypes/guruhi-rush") %}
-Appreciated for his rush ability, he is often included in combat-oriented
-{{ POT }}{{ ANI }} decks like the {{ guruhi_rush }} archetype.
-{% endtrans %}
-{% endcall %}
-
-{% call layout.card_column("Calebros, The Martyr", decks=25, copies="1-2") %}
+{% call layout.card_column("Nathaniel Bordruff", decks=8, copies="1") %}
 {% trans trimmed %}
-A <em>Prince</em> available for a really cheap price,
-even though his ability can be a problem depending on the context.
+With his rush ability and superior {{ POT }}, he makes for a superb fighter.
+Superior {{ DOM }}{{ OBF }} does not hurt, either, he often pairs with Malkavians {{ malkavian }}
+in pure stealth & bleed decks.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Murat", decks=23, copies="1-2") %}
+{% call layout.card_column("Alonso Petrodon", decks=6, copies="1-4") %}
+{% trans trimmed gustaphe_brunnelle=card("Gustaphe Brunnelle") %}
+A strong leader for Nosferatu political decks. He is often seen alongside {{ mistress_fanchon }},
+but he can also run his own show with {{ gustaphe_brunnelle }} or group 6 Princes for support.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Larissa Moreira", decks=6, copies="1-3") %}
+{% trans trimmed deep_song=card("Deep Song") %}
+A great Primogen, part of the Nosferatu Primogens trifecta. Her ability is great when running
+enough Animalism {{ ani }} and can let her bleed for 3 with {{ deep_song }}.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Lenny Burkhead", decks=6, copies="1-3") %}
 {% trans trimmed
-nosferatu_royalty=link("/archetypes/nosferatu-royalty"),
-nikolaus_vermeulen=card("Nikolaus Vermeulen"),
-calebros_the_martyr=card("Calebros, The Martyr")
+the_warrens=card("The Warrens"),
+protected_district=card("Protected District")
 %}
-A <em>Prince</em> for the very reasonable price of 7 pool, he is often seen in
-{{ nosferatu_royalty }} decks alongside {{ nikolaus_vermeulen }}
-and {{ calebros_the_martyr }}.
+Second piece of the Primogen trifecta: with access to both {{ the_warrens }} and {{ protected_district }},
+together with superior Animalism {{ ani }} and its versatility, they can support a wide variety of builds.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Alonso Petrodon", decks=22, copies="2-4") %}
-{% trans trimmed mistress=link("/archetypes/mistress") %}
-His title and bleed bonus, combined with the rare {{ DOM }}{{ OBF }} discipline
-combination, makes him a good pick in some political decks, like in the
-{{ mistress }} archetype.
-His ability can destroy low capacity Anarch decks single-handedly.
+{% call layout.card_column("The Dowager", decks=6, copies="1-3") %}
+{% trans trimmed %}
+Third member of the Primogen trifecta, her ability is a welcome defensive bonus.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Selma the Repugnant", decks=17, copies="1-3") %}
-{% trans trimmed the_dark_side_of_politics=link("/archetypes/the-dark-side-of-politics") %}
-Yet another <em>Prince</em>, she is a bit expensive and does not even have
-superior {{ ANI }}. Still, she can find her place in <em>Royalty</em> constructs using
-{{ OBF }}, like in {{ the_dark_side_of_politics }} archetype.
+{% call layout.card_column("The Warrens", decks=5, copies="3-5") %}
+{% trans trimmed %}
+A very solid intercept device, the +3 bonus in unequaled, even though it is reserved to directed actions.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Beast, The Leatherface of Detroit", decks=15, copies="1-3") %}
-{% trans trimmed
-euro_brujah=link("/archetypes/euro-brujah"),
-theo_bell=card("Theo Bell")
-%}
-Always included for his ability and strength combined with {{ POT }}{{ cel }},
-he gets included in {{ POT }} decks like for example in the
-{{ euro_brujah }} archetype. He is often seen alongside {{ theo_bell }},
-as they share similar abilities.
+{% call layout.card_column("SchreckNET", decks=4, copies="1") %}
+{% trans trimmed %}
+A unique effect. It costs virtually nothing, not even an action, and can be very useful against the right opponents.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("The Secret Library of Alexandria", decks=3, copies="1") %}
+{% trans trimmed %}
+A seldom used, but highly efficient cycling device.
 {% endtrans %}
 {% endcall %}
 

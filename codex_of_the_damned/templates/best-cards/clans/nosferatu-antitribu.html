@@ -1,0 +1,73 @@
+{% extends "best-cards/_layout.html" %}
+{% import "best-cards/_layout_card_column.html" as layout with context%}
+
+{% block content %}
+<h1>{{ nosferatu_antitribu }} Nosferatu Antitribu</h1>
+<div class="insert warn">
+    This list is compiled from statistics encompassing 30 years,
+    as the legacy clan has not scored enough wins in the last 5 years for relevant statistics otherwise.
+</div>
+<div class="insert tip">
+    <p>
+        {% trans trimmed
+        inside_dirt=card("Inside Dirt")
+        %}
+        Nosferatu Antitribu are good sidekicks, but rarely go solo.
+        The recently (2021) improved {{ inside_dirt }} has not yet earned enough victories to make the list,
+        but is worth mentioning as the main avenue for a mono-clan deck.
+        {% endtrans %}
+    </p>
+</div>
+
+{% call layout.card_column("Stick", decks=100, copies="1-2") %}
+{% trans trimmed nananimalism=link("/archetypes/nananimalism") %}
+A cheap superior {{ ANI }} vampire, he gets included in all sorts of decks like {{ nananimalism }}
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Beast, The Leatherface of Detroit", decks=39, copies="1-3") %}
+{% trans trimmed nananimalism=link("/archetypes/nananimalism") %}
+A strong {{ POT }} fighter with a permanent rush, that gets him in all sorts of combat decks.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Nosferatu Kingdom", decks=26, copies="1-2") %}
+{% trans trimmed %}
+A good pool generation device, always worth including in pure Nosferatu antitribu decks.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Cailean", decks=23, copies="1-4") %}
+{% trans trimmed mark_v=card("Mark V") %}
+Star of the clan, his unique range setting ability makes hiù a great blocker.
+He is particularily apt to wield a {{ mark_v }}.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Information Network", decks=20, copies="1") %}
+{% trans trimmed %}
+A cheap intercept device for decks that have some block abilities/
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Lubomira Hradok", decks=19, copies="1-2") %}
+{% trans trimmed %}
+A cheap superior {{ OBF }} practitioner, and <em>Black Hand</em> to boot,
+her downside is really not that much of an issue.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Teresita, The Godmother", decks=18, copies="1-2") %}
+{% trans trimmed black_hand=link("/archetypes/black-hand") %}
+A relatively cheap <em>Seraph</em> with superior {{ OBF }}, good candidate for a
+{{ black_hand }} deck.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Kendrick", decks=17, copies="1") %}
+{% trans trimmed %}
+Good disciplines and cheap title, that gets him in a few decks.
+{% endtrans %}
+{% endcall %}
+
+{% endblock %}

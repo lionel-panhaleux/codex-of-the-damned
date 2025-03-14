@@ -11,7 +11,7 @@
     </p>
 </div>
 
-{% call layout.card_column("Immortal Grapple", decks=155, copies="5-10") %}
+{% call layout.card_column("Immortal Grapple", decks=76, copies="5-10") %}
 {% trans trimmed %}
 One of the few combat cards that can counter <em>combat ends</em>, it also prevents the
 use of weapons and dodges. At {{ POT }}, it even gives a press, which can be useful
@@ -19,7 +19,7 @@ offensively as well as defensively.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Disarm", decks=102, copies="2-4") %}
+{% call layout.card_column("Disarm", decks=39, copies="1-4") %}
 {% trans trimmed %}
 Given the damage potential of {{ pot }}, it can be used after a round of combat more
 often than not. When combined with {{ cel }} additional strikes or {{ for }} prevention,
@@ -27,21 +27,21 @@ it allows to defeat even the most powerful combattants.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Torn Signpost", decks=99, copies="4-9") %}
+{% call layout.card_column("Torn Signpost", decks=35, copies="4-9") %}
 {% trans trimmed %}
 The bread and butter of a majority of {{ pot }} combat modules, it provides +2 damage
 at no cost and combines well with additional strikes and presses.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Preternatural Strength", decks=64, copies="1-3") %}
-{% trans trimmed torn_signpost=card("Torn Signpost") %}
-A nice alternative to {{ torn_signpost }} when one want to save some card slots in a
-deck. As it is an action though, it can always be blocked.
+{% call layout.card_column("Roundhouse", decks=27, copies="2-7") %}
+{% trans trimmed %}
+Though relatively new, having been released in 2020, it is the base hand strike for Potence {{ pot }}.
+3 additional damage points at no cost, this is a no-brainer.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Heroic Might", decks=51, copies="1-3") %}
+{% call layout.card_column("Heroic Might", decks=19, copies="1-2") %}
 {% trans trimmed preternatural_strength=card("Preternatural Strength") %}
 A stronger but more expensive version of {{ preternatural_strength }}, that can also
 mitigate the issue of ranged combat modules. Depending on the deck, one or the other
@@ -49,7 +49,7 @@ might be better.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Iron Glare", decks=45, copies="2-6") %}
+{% call layout.card_column("Iron Glare", decks=17, copies="1-4") %}
 {% trans trimmed
 aire_of_elation=card("Aire of Elation")
 %}
@@ -60,19 +60,26 @@ has some political actions.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Slam", decks=44, copies="1-5") %}
-{% trans trimmed %}
-A good strike by itself, the maneuver is useful for pure {{ pot }} modules that do not
-have better options for maneuvers.
+{% call layout.card_column("Preternatural Strength", decks=16, copies="1-3") %}
+{% trans trimmed torn_signpost=card("Torn Signpost") %}
+A nice alternative to {{ torn_signpost }} when one want to save some card slots in a
+deck. As it is an action though, it can always be blocked.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Thrown Sewer Lid", decks=36, copies="1-6") %}
+{% call layout.card_column("Thrown Sewer Lid", decks=14, copies="1-3") %}
 {% trans trimmed sniper_rifle=card("Sniper Rifle") %}
 An excellent long range strike, it can also be used as an alternative against long range
 combat modules. In this case however, not too many copies can be included as it can jam
 the hand. The press at superior {{ POT }} is a nice plus, especially against a crippling
 {{ sniper_rifle }}.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Slam", decks=13, copies="1-5") %}
+{% trans trimmed %}
+A good strike by itself, the maneuver is useful for pure {{ pot }} modules that do not
+have better options for maneuvers.
 {% endtrans %}
 {% endcall %}
 
