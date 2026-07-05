@@ -151,7 +151,10 @@ def deck_rows(cluster: dict, cutoff: str) -> str:
             f'<span class="v-label">variant {chr(65 + i)} · '
             f'{len(decks)} decks</span>'
             f'<span class="v-cards">{esc(cards)}</span>'
-            f'<button class="splitout">split into own group</button></li>'
+            f'<button class="splitout" data-as="variant">split: variant'
+            f'</button>'
+            f'<button class="splitout" data-as="group">split: own group'
+            f'</button></li>'
         )
         out.extend(deck_row(deck, cutoff) for deck in decks)
     return "".join(out)
@@ -259,6 +262,8 @@ criteria: <b>{CRITERIA_PLAYERS}+ players since {cutoff}</b>
 <input id="movetarget" list="groups" placeholder="move to group…">
 <button id="doMove">Move</button>
 <button id="newGroup">New group</button>
+<button id="newVariant" title="new group nested as variant of the
+ selection's current cluster">New variant</button>
 <button id="toNoise">To noise</button>
 <button id="clearSel">Clear</button>
 </div>
@@ -878,22 +883,42 @@ function createGroup() {
   state.extraGroups[ref] = { name: "" };
   return makeExtraGroup(ref, "");
 }
+function nestUnder(sec, parentSec) {
+  if (!parentSec || parentSec.dataset.ref === "noise") return;
+  state.variantOf[sec.dataset.ref] = parentSec.dataset.ref;
+  const input = $(".g-variant", sec);
+  if (input) input.value = groupLabel(parentSec);
+}
 $("#newGroup").addEventListener("click", () => {
   const sec = createGroup();
   moveSelection(sec);
-  save(); recount();
+  save(); reorderAll(); recount();
+  sec.scrollIntoView(); $(".g-name", sec).focus();
+});
+$("#newVariant").addEventListener("click", () => {
+  const sel = selection();
+  if (!sel.length) return;
+  const parentSec = sel[0].closest(".cluster[data-ref]");
+  const sec = createGroup();
+  nestUnder(sec, parentSec);
+  moveSelection(sec);
+  save(); reorderAll(); recount();
   sec.scrollIntoView(); $(".g-name", sec).focus();
 });
 document.addEventListener("click", e => {
   if (!e.target.classList.contains("splitout")) return;
-  const ids = JSON.parse(e.target.closest("li").dataset.ids);
+  const divider = e.target.closest("li");
+  const ids = JSON.parse(divider.dataset.ids);
   const sec = createGroup();
+  if (e.target.dataset.as === "variant") {
+    nestUnder(sec, divider.closest(".cluster[data-ref]"));
+  }
   for (const id of ids) {
     state.moves[id] = sec.dataset.ref;
     moveDeck(id, sec);
   }
-  e.target.closest("li").remove();
-  save(); recount();
+  divider.remove();
+  save(); reorderAll(); recount();
   sec.scrollIntoView(); $(".g-name", sec).focus();
 });
 $("#toNoise").addEventListener("click", () => moveSelection($("#noise")));
