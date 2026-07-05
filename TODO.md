@@ -127,6 +127,66 @@ build from `request.host_url` like the sitemap does.*
 
 ## P2 — Content refresh (feeds the planned TWDA-agent work)
 
+### The TWDA-analysis skill (in progress 2026-07-05)
+
+A project skill (`.claude/skills/twda/`) that turns the TWDA into the numbers the
+content items below need. Source: `static.krcg.org/data/twda.json` (rebuilt daily,
+~4,540 decks, 4-digit years back to 1994) + `vtes.json` for card metadata. Scripts are
+self-contained `uv run` scripts (PEP 723 inline deps) — the site itself gains no
+dependency.
+
+- [x] **Best cards** (easy): per-card play counts / deck shares over a date window,
+  by card type — direct refresh input for `best-cards/`. *(Script landed 2026-07-05:
+  `uv run scripts/best_cards.py --since 2020-01-01`. The window is now 1,430 decks —
+  the index's "900+" has drifted. By-clan breakdowns still TODO.)*
+- [ ] **Top archetypes** (hard): cluster TWD decklists to find what the meta actually
+  plays. The journey:
+  1. Vectorize decklists (card-count vectors; crypt weighted — it defines archetypes),
+     IDF-weight to mute staples, reduce dimensions (SVD or similar) so clustering has
+     a chance.
+  2. Auto-clusterization first (HDBSCAN / agglomerative / kNN-graph community
+     detection — compare). Evaluate against a free ground truth: the 90 archetype-page
+     decklist JSONs carry TWDA ids — anchors should land in coherent, distinct
+     clusters that pull in their known kin.
+  3. If auto-clustering doesn't converge, fall back to a human-in-the-middle loop:
+     the model proposes a classification for each new TWD deck (nearest anchors +
+     top characteristic cards), Lionel confirms/corrects. Time-consuming — last resort.
+
+  *First results (2026-07-05) — auto-clustering looks viable.* `scripts/cluster.py`:
+  sublinear TF + IDF, crypt/library blocks L2-normalized then weighted 50/50, SVD-128,
+  HDBSCAN(min_cluster_size=5, min_samples=2) over 1,430 decks (2020+) → **107
+  clusters, 17% noise, 41/44 anchors clustered, zero clusters merging distinct live
+  anchors** (the parameter sweep is in the script's defaults; agglomerative assigns
+  everything but merges close archetypes — dementation-bleed+thucimia,
+  haqim-royalty+kalinda). Even size-5 clusters are coherent named archetypes (Anson
+  Guns, Montano Baltimore, Legacy of Pander…). The 3 noise anchors (malk-94,
+  shadow-court-satyrs, thucimia) are genuinely sparse post-2020 — correct behavior.
+  Notable: several 15+ deck clusters have no site page (Lasombra Progeny ~22 decks
+  2024-12+, Hecata Swarm ~18 decks 2025+, Gangrel Renegade-Garou wall ~18) — New
+  Kids candidates. Next: name clusters (top cards + common deck names), recompute
+  tier criteria from cluster sizes/dates, decide noise handling (nearest-cluster
+  attachment vs leave out).
+- [ ] Once stable, wire the outputs into the refresh items below (tier assignments,
+  "proven twice in 3 years" / ⭐ recomputation, best-cards deck counts).
+
+  *Update 2026-07-05, owner review in progress.* The review/editor page
+  (`scripts/review_page.py`, published as an artifact) is the working tool: vdb
+  links, decklist hover with rare-card/odd-count/missing-staple signals, criteria
+  greying + NC/CC championship flags, group editing (names, moves, splits,
+  variant-of with TOC regrouping), Export. The exported JSON gets committed as
+  `.claude/skills/twda/data/classification.json` — the owner's labels. Next steps:
+  - [ ] `classify.py`: refresh loop without re-clustering — nearest-centroid
+    assignment of new TWD decks to labeled archetypes (threshold → else "novel"
+    pile), HDBSCAN on the novel pile only, delta review page pre-seeded from the
+    stored labels.
+  - [ ] Benchmark mode: score any pipeline change against the curated labels
+    (ARI + per-archetype recall) before adopting it; keep a small changelog of
+    accepted knob changes.
+  - [ ] Per-archetype discriminative cards (supervised scores, e.g. one-vs-rest
+    chi²) — for page prose and assignment explanations, not for training (yet).
+
+### Staleness found in the 2026-07-04 review
+
 - [ ] Archetypes: newest example decklist is 2025-03-10; "New Kids" newest is
   Piper War Ghoul **'24**. Tier assignments need fresh TWDA stats for the 2026 meta.
   Index criteria ("proven twice in the last 3 years", ⭐ = 50%+ more wins) are
@@ -194,8 +254,8 @@ build from `request.host_url` like the sitemap does.*
 2. **Remove deck search**: only `deck-search.html` + `deck-search.js` are exclusive.
    `complete.js` and `decklist.js` are shared with card-search and archetype pages —
    they stay. Also remove the Nav entry, nav header link, and FR translations.
-3. **Agents/skills for slow-moving content**: TWDA-based top-tier + best-cards stats,
-   "What Should I Buy" product list. (See P2 for the current staleness baseline.)
+3. **Agents/skills for slow-moving content**: promoted to P2 — see "The TWDA-analysis
+   skill" above. Remaining discussion: "What Should I Buy" product list automation.
 4. **ES / PT translations**: git tag `i18n-es` (2020) holds a full 9,719-line ES base
    catalog to seed from; `display.js` already has an `es` branch; FR is at 96%
    (86/2149 untranslated, 0 fuzzy). Land the P0 trans-lint test first.
