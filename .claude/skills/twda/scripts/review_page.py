@@ -148,7 +148,7 @@ def deck_rows(cluster: dict, cutoff: str) -> str:
         )
         out.append(
             f'<li class="vdiv" data-ids="{esc(json.dumps(variant["ids"]))}">'
-            f'<span class="v-label">variant {chr(65 + i)} · '
+            f'<span class="v-label">proposed variant {chr(65 + i)} · '
             f'{len(decks)} decks</span>'
             f'<span class="v-cards">{esc(cards)}</span>'
             f'<button class="splitout" data-as="variant">split: variant'
@@ -369,10 +369,22 @@ h1 {
   background: var(--panel); border: 1px solid var(--line); border-radius: 8px;
   padding: 12px 16px 8px; margin-bottom: 16px; scroll-margin-top: 110px;
 }
+/* a variant group renders as a continuation of its parent's card: the
+   stack shares one border box, variants open with a dashed separator —
+   the same visual language as the proposed-variant dividers */
+.cluster.attached-next {
+  margin-bottom: 0; border-bottom: none;
+  border-bottom-left-radius: 0; border-bottom-right-radius: 0;
+}
 .cluster.as-variant {
-  margin-left: 30px; margin-top: -8px;
+  border-top: 1px dashed var(--line); padding-top: 8px;
+  border-top-left-radius: 0; border-top-right-radius: 0;
   border-left: 3px solid var(--accent);
 }
+.as-variant > .c-head .ref { font-size: 13px; }
+.as-variant > .c-head .ref::before { content: "↳ "; color: var(--muted); }
+.as-variant .g-name { font-size: 13px; }
+.as-variant .cards .chip { font-size: 11px; padding: 0 7px; }
 .c-head {
   display: flex; flex-wrap: wrap; align-items: center; gap: 10px;
 }
@@ -538,7 +550,6 @@ details.noise summary {
   nav { display: none; }
   .decks a { grid-template-columns: 6.4em 1fr 2.4em 3em; }
   .d-player { display: none; }
-  .cluster.as-variant { margin-left: 14px; }
 }
 @media (prefers-reduced-motion: no-preference) {
   html { scroll-behavior: smooth; }
@@ -602,10 +613,11 @@ function reorderAll() {
     } else roots.push(sec);
   }
   const order = [];
+  const depths = [];
   const seen = new Set();
   const visit = (sec, depth) => {
     if (seen.has(sec)) return;
-    seen.add(sec); order.push(sec);
+    seen.add(sec); order.push(sec); depths.push(depth);
     sec.classList.toggle("as-variant", depth > 0);
     const toc = $("#toc-" + sec.id);
     if (toc) toc.classList.toggle("t-variant", depth > 0);
@@ -615,11 +627,14 @@ function reorderAll() {
   secs.forEach(sec => visit(sec, 0));  // cycle leftovers become roots
   const nav = $("nav");
   const noiseEl = $("#noise");
-  for (const sec of order) {
+  order.forEach((sec, i) => {
+    // attached to the next section when that one is a variant (same stack)
+    const stackContinues = i + 1 < order.length && depths[i + 1] > 0;
+    sec.classList.toggle("attached-next", stackContinues);
     main.insertBefore(sec, noiseEl);
     const toc = $("#toc-" + sec.id);
     if (toc) nav.appendChild(toc);
-  }
+  });
 }
 
 function makeExtraGroup(ref, name) {
