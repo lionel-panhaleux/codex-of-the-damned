@@ -34,6 +34,8 @@ The whole site hangs off two files:
 
 **Adding a page requires both**: a `Nav` entry in `navigation.py` and a template at the matching path under `templates/`. The template path is the slugified Nav name (unidecode, strip punctuation, lowercase, spaces → hyphens): `Nav("Malk' 22")` under Archetypes/Top Tier → `templates/archetypes/top-tier/malk-22.html`. Tests will fail if either side is missing.
 
+**Linking to archetype pages**: always link the root path — `link("/archetypes/malk-22")`, never the subsection path (`/archetypes/top-tier/malk-22`). Archetypes move between subsections over time (Top Tier ↔ Runner Ups ↔ New Kids ↔ Archive), and `HELPER` registers a subsection-less shortcut for every deep leaf, so root-path links survive those moves. Corollary (deliberate): no two archetypes may share a name, whatever their subsections — `tests/test_navigation.py` enforces this uniqueness.
+
 ### Templates
 
 - All pages extend `templates/layout.html`. Archetype pages extend `templates/archetypes/_layout.html` and import a co-located `.json` decklist file.
@@ -41,4 +43,4 @@ The whole site hangs off two files:
 
 ### i18n
 
-Flask-Babel with URL-prefixed locales (`en`, `fr` — declared in `config.py` `SUPPORTED_LANGUAGES`). All user-facing template text must be wrapped in `{% trans trimmed %}` blocks (or `_()`), with anything dynamic — card names, discipline icons, links — passed as parameters (e.g. `{% trans trimmed govern=card("Govern the Unaligned") %}`). Translators must keep HTML tags and `%(param)s` placeholders intact. Catalogs live in `codex_of_the_damned/translations/<lang>/LC_MESSAGES/`; a new language also needs a `translation()` line in the `nav[role="translation"]` block of `layout.html`.
+Flask-Babel with URL-prefixed locales (`en`, `fr` — declared in `config.py` `SUPPORTED_LANGUAGES`). All user-facing template text must be wrapped in `{% trans trimmed %}` blocks (or `_()`), with anything dynamic — card names, discipline icons, links — passed as parameters (e.g. `{% trans trimmed govern=card("Govern the Unaligned") %}`). Translators must keep HTML tags and `%(param)s` placeholders intact. Catalogs live in `codex_of_the_damned/translations/<lang>/LC_MESSAGES/`; a new language also needs a `translation()` line in the `nav[aria-label="Language"]` block of `layout.html`.

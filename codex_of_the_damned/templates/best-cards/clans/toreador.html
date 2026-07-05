@@ -11,7 +11,6 @@
     <p>
         {% trans trimmed
         anson_guns=link("/archetypes/anson-guns"),
-        aaa=link("/archetypes/aaa"),
         weenie_aus=link("/archetypes/weenie-aus")
         %}
         The Toreador have always been a prominent clan in tournaments.
@@ -86,7 +85,7 @@ is very strong.
 {% endcall %}
 
 {% call layout.card_column("Diana Iadanza", decks=8, copies="2-4") %}
-{% trans trimmed %}
+{% trans trimmed delaying_tactics=card("Delaying Tactics") %}
 A rather new (2024) Justicar, her unique ability can cancel the notorious {{ delaying_tactics }},
 making her a great lunger as well as one of the best politicians of the game in a single stroke.
 {% endtrans %}

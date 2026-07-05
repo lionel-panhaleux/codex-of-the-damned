@@ -1,4 +1,3 @@
-{% import "_layout_promo.html" as promo with context%}
 <!DOCTYPE html>
 <html lang="{{ lang }}">
 
@@ -15,28 +14,26 @@
     <meta property="og:image:width" content="{{ og_image_dimensions[0] }}" />
     <meta property="og:image:height" content="{{ og_image_dimensions[1] }}" />
     {% endif %}
-    {% if og_image_secure %}
-    <meta property="og:image:secure_url" content="{{ og_image_secure }}" />
-    {% endif %}
+    {% block description %}
     <meta name="description" content="Vampire: the Eternal Struggle (VTES) strategy resources">
+    {% endblock %}
     <meta name="keywords" content="Vampire, the Eternal Struggle, VtES, CCG">
     {% block meta %}{% endblock %}
+    {% if canonical_url() %}
+    <link rel="canonical" href="{{ canonical_url() }}">
+    {% for code in config['SUPPORTED_LANGUAGES'] %}
+    <link rel="alternate" hreflang="{{ code }}" href="{{ canonical_url(code) }}">
+    {% endfor %}
+    <link rel="alternate" hreflang="x-default" href="{{ canonical_url('en') }}">
+    {% endif %}
     <link rel="shortcut icon" href="{{ url_for('static', filename='img/favicon.ico') }}">
     <link rel="stylesheet" href="https://static.krcg.org/web/krcg.css">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/base.css', v=version) }}">
     <link rel="icon" href="{{ url_for('static', filename='img/vtes.svg') }}">
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-157267369-1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-        gtag('config', 'UA-157267369-1');
-    </script>
     <script async src="https://static.krcg.org/web/krcg.js"></script>
     <script async src="{{ url_for('static', filename='js/display.js') }}"></script>
     {% block scripts %}{% endblock %}
-    <title>Codex of the Damned</title>
+    <title>{{ title() }}</title>
     {% endblock %}
 </head>
 
@@ -44,7 +41,11 @@
     <header role="banner">
         <a href="{{ i18n_url('') }}" class="site-logo">
             <img src="{{ url_for('static', filename='img/vtes.svg') }}" alt="Codex of the Damned">
+            {% if section == "index" %}
             <h1>Codex of the Damned</h1>
+            {% else %}
+            <span class="site-title">Codex of the Damned</span>
+            {% endif %}
         </a>
         <nav role="navigation">
             {% if section == "online-play" %}
@@ -78,7 +79,7 @@
             {{ link('/card-search') }}
             {% endif %}
         </nav>
-        <nav role="translation">
+        <nav aria-label="Language">
             {{ translation('en', "🇬🇧") }}
             {{ translation('fr', "🇫🇷") }}
         </nav>

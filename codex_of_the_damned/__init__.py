@@ -264,15 +264,8 @@ def index(lang_code=None, page=None):
     if "card-search" in page:
         card = flask.request.args.get("card")
         if card:
-            image_name = unidecode.unidecode(card).lower()
-            image_name = (
-                image_name[4:] + "the" if image_name[:4] == "the " else image_name
-            )
-            image_name, _ = re.subn(r"""\s|,|\.|-|—|'|:|\(|\)|"|!""", "", image_name)
-            context["og_image"] = f"http://static.krcg.org/card/{image_name}.jpg"
-            context["og_image_secure"] = (
-                f"https://static.krcg.org/card/{image_name}.jpg"
-            )
+            image_name = file_name(card)
+            context["og_image"] = f"https://static.krcg.org/card/{image_name}.jpg"
             context["og_description"] = "Official card text and rulings"
             context["og_title"] = card
             context["og_image_dimensions"] = ["358", "500"]
@@ -322,8 +315,13 @@ def linker():
         )
 
     def link(page, name=None, _anchor=None, **params):
+        if page not in navigation.HELPER:
+            # a broken link is a bug: fail loudly in tests, degrade in production
+            if app.config["TESTING"]:
+                raise ValueError(f"link() to unknown page: {page}")
+            return ""
         return _link(
-            navigation.HELPER.get(page, {}).get("self"),
+            navigation.HELPER[page]["self"],
             name=name,
             _anchor=_anchor,
             **params,
@@ -355,7 +353,9 @@ def linker():
             span = f'<span class="brand-icon"{style}>{icon}</span> '
         else:
             span = ""
-        return markupsafe.Markup(f'<a target="_blank" href="{url}">{span}{name}</a>')
+        return markupsafe.Markup(
+            f'<a target="_blank" rel="noopener" href="{url}">{span}{name}</a>'
+        )
 
     def title():
         try:
@@ -366,6 +366,13 @@ def linker():
             pass
         return "Codex of the Damned"
 
+    def canonical_url(locale=None):
+        page = navigation.HELPER.get(path, {}).get("self")
+        if page is None or not page.url:
+            return ""
+        host = flask.request.host_url.rstrip("/")
+        return host + "/" + (locale or get_locale()) + page.url
+
     return dict(
         i18n_url=i18n_url,
         link=link,
@@ -375,6 +382,7 @@ def linker():
         next=next,
         prev=prev,
         external=external,
+        canonical_url=canonical_url,
     )
 
 

@@ -159,7 +159,8 @@ class DeckSearch {
         try {
             displayDeck(await this.fetchDeck(data.id))
         } catch (error) {
-            this.result_message.innerHTML = `<p>${error.message}</p>`
+            // textContent: error.message can contain the raw ?id= URL parameter
+            this.result_message.textContent = error.message
         }
         for (let row of this.results.children) {
             row.classList.remove("selected")

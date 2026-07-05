@@ -11,7 +11,7 @@
 {{ sponsor }}
 <p>
 	{% trans trimmed
-	vekn=external("http://www.vekn.net/card-lists", "VEKN")
+	vekn=external("https://www.vekn.net/card-lists", "VEKN")
 	%}
 	Official cards text provided by {{ vekn }}. All rulings give a link to the actual
 	official ruling made by successive Rules Directors.
@@ -27,7 +27,7 @@
 <div class="results" id="results" style="display: none">
 	<div class="card-info">
 		<div class="column-image">
-			<img class="card-image" id="card-image" />
+			<img class="card-image" id="card-image" alt="" />
 			<div class="image-footer" id="image-footer"></div>
 			<div class="card-sets" id="card-sets" style="display: none"></div>
 		</div>

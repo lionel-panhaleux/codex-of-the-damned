@@ -73,7 +73,8 @@ class CardSearch {
         try {
             data = await this.fetchCard(state.card)
         } catch (error) {
-            this.result_message.innerHTML = `<p>${error.message}</p>`
+            // textContent: error.message can contain the raw ?card= URL parameter
+            this.result_message.textContent = error.message
         }
         if (!data) {
             return

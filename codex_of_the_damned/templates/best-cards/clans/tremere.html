@@ -9,7 +9,7 @@
     mistress=link("/archetypes/mistress")
     %}
     <p>
-        The Tremere have great clan disciplines in {{ aud }}{{ dom }}{{ tha }}.
+        The Tremere have great clan disciplines in {{ aus }}{{ dom }}{{ tha }}.
         They run great toolboxes like {{ princess_toolbox }}, but also good political decks like {{ mistress }}.
     </p>
     {% endtrans %}
@@ -45,7 +45,7 @@ combination, alongside {{ THA }}{{ VIC }}, is powerful in many decks.
 {% endcall %}
 
 {% call layout.card_column("Gerald Windham", decks=21, copies="1-3") %}
-{% trans trimmed %}
+{% trans trimmed freak_drive=card("Freak Drive") %}
 Between his stealth bonus, {{ FOR }}, and unique votes ability, he finds a spot in many deck.
 He's a {{ freak_drive }} specialist.
 {% endtrans %}
@@ -65,7 +65,7 @@ A Prince title with all clan disciplines at superior, always good.
 {% endcall %}
 
 {% call layout.card_column("Wasserschloss Anif, Austria", decks=15, copies="1") %}
-{% trans trimmed %}
+{% trans trimmed blood_doll=card("Blood Doll") %}
 An excellent location, working like some kind of distributed {{ blood_doll }}.
 It is free so, even if it gets destroyed, it is not a lot to pay to waste an opponent's action.
 {% endtrans %}

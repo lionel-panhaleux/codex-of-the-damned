@@ -161,9 +161,12 @@ footer img {
     margin: 0.5em;
 }
 
-header h1 {
+header h1,
+header .site-title {
     display: inline;
     margin: auto 0.5em;
+    font-size: 2em;
+    font-weight: bold;
 }
 
 header>nav,

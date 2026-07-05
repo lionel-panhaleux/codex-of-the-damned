@@ -5,7 +5,19 @@ Every P0 item was verified by actually rendering the pages / reading the code.
 
 ## P0 — Broken for readers right now
 
-- [ ] **Fix ~45 `{% trans %}` blocks referencing undeclared variables** — Jinja renders
+*All P0 items done (2026-07-04). The new lint (`tests/test_templates.py`) found ~100
+undeclared-variable sites across 38 templates — the list below plus extras (khazars-diary,
+dementation-bleed, lasombra-nocturn, tremere.html:50/:69, …). All fixed via trans-header
+declarations so existing FR msgids/translations are preserved; the four in-body typo fixes
+(`revolutionnary_council`, `ventre_antitribu`, `aud`→`aus`, `chimerstry`→`chi`) were
+mirrored into the FR catalog. `link()` now raises under TESTING, which surfaced 8 more
+broken links (ravnos-break→ravnos-bonds, gangrel-barons→gangrel-thing, palla-grande
+missing slash, assamite-legacy.html suffix, the_unnamed underscore, archetypes- typo,
+runner-ups/shambling-hordes, dead aaa declaration) — all fixed. Also fixed in passing:
+`card("rolling_with_the_punches")` rendering its variable name (emerald-legion) and
+`card("Maris streck")` casing (war-ghouls, piper-war-ghoul-24).*
+
+- [x] **Fix ~45 `{% trans %}` blocks referencing undeclared variables** — Jinja renders
   undefined variables as empty strings, so card names silently vanish from the prose
   (e.g. Malkarishat renders *"together with the infamour ."*). Known sites:
   - `archetypes/new-kids/malkarishat.html:14` — trans header declares nothing, all 16
@@ -34,72 +46,82 @@ Every P0 item was verified by actually rendering the pages / reading the code.
   - `strategy/`: archetype-categories.html:101 (malk_22, malk_94 — probably meant
     `link()` calls), combat.html:234 (assault_rifle), fundamentals.html:302
     (atonement, cats_guidance, guardian_vigil)
-- [ ] **Add a lint test that catches the above class of bug forever**: extract
+- [x] **Add a lint test that catches the above class of bug forever**: extract
   `{% trans %}` block bodies, diff the `{{ var }}` names against declared kwargs +
   `BASE_CONTEXT` keys. Pure-offline, fast, belongs in the regular pytest run.
   Consider also making `link()` raise (or warn under TESTING) on unknown paths
   instead of returning `""`.
-- [ ] **Best Cards index: two clan pages unreachable** — `best-cards/index.html:76,84`
+- [x] **Best Cards index: two clan pages unreachable** — `best-cards/index.html:76,84`
   have `" warn"` inside the link *path* instead of `_class`
   (`link("/best-cards/clans/daughters-of-cacophony warn", ...)`), and `link()`
   silently returns `""`. Daughters of Cacophony and Ishtarri are orphaned.
-- [ ] **Reflected XSS in both search pages** — raw `?card=` / `?id=` URL params flow
+- [x] **Reflected XSS in both search pages** — raw `?card=` / `?id=` URL params flow
   into `Error(...)` messages rendered via `innerHTML`:
   `static/js/card-search.js:76` + `:264`, `static/js/deck-search.js:162` + `:203`.
   Fix: use `textContent` for these two message assignments.
-- [ ] **Make `make test` green again**:
-  - [ ] `black` fails on `codex_of_the_damned/navigation.py` — run `black` on it.
-  - [ ] 3 tests fail on DriveThruRPG/DriveThruCards links (their anti-bot layer 403s
+- [x] **Make `make test` green again**:
+  - [x] `black` fails on `codex_of_the_damned/navigation.py` — run `black` on it.
+  - [x] 3 tests fail on DriveThruRPG/DriveThruCards links (their anti-bot layer 403s
     any non-browser client, even with a browser User-Agent). Add both domains to the
     skip-list in `tests/test_pages.py:32-38` next to eBay/Reddit/Kickstarter; verify
-    the links once manually in a real browser.
+    the links once manually in a real browser. *(Both verified live in Chrome 2026-07-04:
+    the Player's Guide product page and the 1060-title Legacy Card Singles category.
+    shop.cardgamegeek.com turned out to be the same anti-bot class — 500 to any
+    non-browser client, loads fine in Chrome — so it is skipped too.)*
 
 ## P1 — Cheap, high-value fixes
 
+*All P1 items done (2026-07-05). Notes: no raw `target="_blank"` anchor sits inside a
+`{% trans %}` body, so the whole sweep was msgid-safe — verified by diffing `pybabel
+extract` before/after (only the 2 msgids of the deleted `_layout_promo.html` dropped).
+ghost.mnsi.net (deck-building.html) serves no HTTPS — left http. The lackeyccg/table-talk
+"missing alt" line refs were stale (alts already present); an exhaustive img sweep found
+the real list instead: Discord widget + dark-pack.png (index), VDB favicons and
+JS-populated card images (`alt=""`, decorative/redundant), 20 pool.svg icons in the
+Montano article (`alt="pool"`). The deck-guides `example.com` placeholder was a hidden
+JS-populated decklist stub — dropped the href to match `archetypes/_layout.html`,
+`decklist.js` sets it. Logo h1 is now a `.site-title` span except on the homepage (which
+has no content h1). canonical/hreflang loop over `config['SUPPORTED_LANGUAGES']` and
+build from `request.host_url` like the sitemap does.*
+
 ### SEO / metadata
-- [ ] `<title>` is hardcoded to "Codex of the Damned" on all pages
+- [x] `<title>` is hardcoded to "Codex of the Damned" on all pages
   (`templates/layout.html:39`) while the per-page `title()` helper already exists and
   feeds `og:title`. Change to `<title>{{ title() }}</title>`. Biggest SEO win available.
-- [ ] Remove (or migrate to GA4) the dead Universal Analytics tag `UA-157267369-1`
+- [x] Remove (or migrate to GA4) the dead Universal Analytics tag `UA-157267369-1`
   (`layout.html:28-35`) — collecting nothing since mid-2023, still loaded on every page.
-  KISS-est option: delete it.
-- [ ] Add `<link rel="alternate" hreflang="en|fr|x-default">` + `rel="canonical"` for
+  KISS-est option: delete it. *(Deleted.)*
+- [x] Add `<link rel="alternate" hreflang="en|fr|x-default">` + `rel="canonical"` for
   the parallel `/en/`–`/fr/` URL scheme. Currently absent site-wide.
-- [ ] Same hardcoded `<meta name="description">` on every page (`layout.html:21`) —
-  allow per-page override (the existing `{% block meta %}` is only used for decklists).
+  *(New `canonical_url()` context processor.)*
+- [x] Same hardcoded `<meta name="description">` on every page (`layout.html:21`) —
+  allow per-page override. *(Wrapped in a `{% block description %}`; no page overrides
+  it yet.)*
 
 ### Markup bugs
-- [ ] 8× `target=" _blank"` (leading space) in `templates/index.html`
-  (lines 131, 223, 230, 237, 244, 251, 258, 265).
-- [ ] 12 anchors with a stray comma between attributes (`<a href="…" , target="_blank">`)
-  in `strategy/articles/basic/what-should-i-buy.html`
-  (lines 1571, 1578-1580, 1586, 1602, 1608-1609, 1614-1617, 1622).
-- [ ] Add `rel="noopener"` centrally: in the `external()` helper
-  (`codex_of_the_damned/__init__.py:358`) + the raw `target="_blank"` anchors in
-  templates. Site-wide there are currently zero occurrences of noopener.
-- [ ] Invalid ARIA role `role="translation"` (`layout.html:81`) — use
-  `<nav aria-label="Language">` or similar.
-- [ ] Double `<h1>` on every page: site logo h1 (`layout.html:47`) + content h1.
-  Demote the logo heading (or make it h1 only on the homepage).
-- [ ] Missing `alt` attributes: `index.html:44` (Discord widget), `index.html:351`
-  (dark-pack.png), `deck-search.html:41` + `archetypes/_layout.html:12` (VDB favicon),
-  `online-play/lackeyccg.html:95`, `strategy/table-talk.html:266`.
-- [ ] `fundamentals.html:295` has invalid `</ li>`.
+- [x] 8× `target=" _blank"` (leading space) in `templates/index.html`.
+- [x] 12 anchors with a stray comma between attributes (`<a href="…" , target="_blank">`)
+  in `strategy/articles/basic/what-should-i-buy.html` *(13 with the multi-line
+  Australia one, plus a stray `</a>` and a doubled `</li>` in the same section)*.
+- [x] Add `rel="noopener"` centrally: in the `external()` helper + the 89 raw
+  `target="_blank"` anchors in templates (the two `rel="external"` VDB buttons became
+  `rel="external noopener"`).
+- [x] Invalid ARIA role `role="translation"` (`layout.html:81`) — now
+  `<nav aria-label="Language">`; CLAUDE.md reference updated.
+- [x] Double `<h1>` on every page: logo heading demoted to `.site-title` span,
+  h1 kept on the homepage only.
+- [x] Missing `alt` attributes (see sweep notes above).
+- [x] `fundamentals.html:295` has invalid `</ li>`.
 
 ### Dead code / stale scaffolding
-- [ ] Delete `templates/_layout_promo.html` + its import (`layout.html:1`) — imported
-  but never rendered, contains a stale "April 20th, 2024 Grand Prix in Paris" ad.
-- [ ] Delete (or write) `strategy/articles/advanced/guide-for-competitive-play.html` —
-  0-byte orphan since 2024-07, not referenced in `navigation.py`.
-- [ ] Deduplicate the card-image slug logic: `__init__.py:267-271` (og_image block)
-  re-implements `file_name()` (`__init__.py:381-386`) with a weaker regex. Use
-  `file_name()` and drop the plain-`http://` og:image at `:272` (keep https only).
-- [ ] Upgrade plain `http://` hrefs where HTTPS exists: vekn.fr/vekn.net links
-  (`deck-search.html:15`, `card-search.html:14`, `archetypes/index.html:13,189`,
-  `best-cards/index.html:7`, `index.html:47,50`, 2 advanced articles), plus
-  `index.html:85,288`, `strategy/deck-building.html:38,48`.
-- [ ] `strategy/deck-guides/_layout.html:21` ships a literal `href="http://example.com"`
-  placeholder — confirm every child guide overrides it.
+- [x] Delete `templates/_layout_promo.html` + its import (`layout.html:1`).
+- [x] Delete `strategy/articles/advanced/guide-for-competitive-play.html` (0-byte orphan).
+- [x] Deduplicate the card-image slug logic: og_image block now uses `file_name()`,
+  https-only (dropped `og_image_secure` from the route and layout).
+- [x] Upgrade plain `http://` hrefs where HTTPS exists — all done except
+  `ghost.mnsi.net` (no HTTPS); every target curl-verified 200 over https first.
+- [x] `strategy/deck-guides/_layout.html:21` `href="http://example.com"` placeholder
+  removed (JS-populated stub, see notes).
 
 ## P2 — Content refresh (feeds the planned TWDA-agent work)
 
@@ -119,11 +141,17 @@ Every P0 item was verified by actually rendering the pages / reading the code.
   `archive/dmitris-big-band.html:61` but 2017 in `what-should-i-buy.html:1222`
   (announced vs effective, probably) — pick one.
 - [ ] Typo sweep: "Methusalah" (16×, correct "Methuselah" only 10×), particularily,
-  loosing, successfuly, independant(ly), recommanded, unneccessary, "infamour",
-  "Maris streck" (piper-war-ghoul-24).
+  loosing, successfuly, independant(ly), recommanded, unneccessary, "infamour"
+  ("Maris streck" fixed with the P0 pass). NB: body-text fixes change msgids — mirror
+  each fix into the FR catalog (msgid + msgstr) to avoid orphaning translations.
 - [ ] Garbled prose: `fundamentals.html:32-33` (mangled sentence about non-limited
   bleed modifiers — the rule itself is stated correctly elsewhere),
   `piper-war-ghoul-24.html:76-77` ends mid-thought ("there is no need to fret").
+- [ ] Copy-pasted captions (spotted during the P0 pass): `best-cards/clans/
+  harbingers-of-skulls.html` "Acheron Vortex" & "Vengeful Spirit" share a caption
+  written for a vampire ("made him the typical Emerald Legion leader"), and
+  `salubri-antitribu.html` "The Path of Retribution" & "Armor of Caine's Fury" share
+  the same caption — one of each pair needs real text.
 - [ ] i18n chrome gaps (content pages are fine): `index.html:82-89` ("Deck builder:",
   "Cards finder:", "Telegram Bot:", "Forum VEKN France" unwrapped),
   `deck-search.html:23,29` + `card-search.html:22` (placeholder/value attributes).

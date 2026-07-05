@@ -3,7 +3,6 @@ import re
 import unidecode
 from flask_babel import lazy_gettext
 
-
 Page = collections.namedtuple("Page", ["name", "path", "url"])
 
 

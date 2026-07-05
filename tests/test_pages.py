@@ -36,6 +36,12 @@ def test(client, page):
             continue
         if url.startswith("https://www.kickstarter.com"):
             continue
+        if url.startswith("https://www.drivethrucards.com"):
+            continue
+        if url.startswith("https://www.drivethrurpg.com"):
+            continue
+        if url.startswith("https://shop.cardgamegeek.com"):
+            continue
         try:
             try:
                 requests.request(

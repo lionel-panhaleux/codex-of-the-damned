@@ -4,7 +4,7 @@
 <article>
     <h1>{{ _('Best Cards') }}</h1>
     {% trans trimmed
-    twda=external("http://www.vekn.fr/decks/twd.htm", "Tournament Winning Deck Archive (TWDA)"),
+    twda=external("https://www.vekn.fr/decks/twd.htm", "Tournament Winning Deck Archive (TWDA)"),
     hunting_grounds=card("Academic Hunting Ground", "Hunting Grounds")
     %}
     <p>
@@ -73,7 +73,7 @@
         {{ link("/best-cards/clans/brujah", _class="insert", _prefix="brujah") }}
         {{ link("/best-cards/clans/brujah-antitribu", _class="insert warn", _prefix="brujah_antitribu") }}
         {{ link("/best-cards/clans/caitiff", _class="insert warn", _prefix="caitiff") }}
-        {{ link("/best-cards/clans/daughters-of-cacophony warn", _class="insert", _prefix="daughter_of_cacophony") }}
+        {{ link("/best-cards/clans/daughters-of-cacophony", _class="insert warn", _prefix="daughter_of_cacophony") }}
         {{ link("/best-cards/clans/gangrel", _class="insert", _prefix="gangrel") }}
         {{ link("/best-cards/clans/gangrel-antitribu", _class="insert", _prefix="gangrel_antitribu") }}
         {{ link("/best-cards/clans/gargoyles", _class="insert", _prefix="gargoyle") }}
@@ -81,7 +81,7 @@
         {{ link("/best-cards/clans/guruhi", _class="insert", _prefix="guruhi") }}
         {{ link("/best-cards/clans/harbingers-of-skulls", _class="insert", _prefix="harbinger_of_skulls") }}
         {{ link("/best-cards/clans/imbued", _class="insert warn", _prefix="visionary") }}
-        {{ link("/best-cards/clans/ishtarri warn", _class="insert", _prefix="ishtarri") }}
+        {{ link("/best-cards/clans/ishtarri", _class="insert warn", _prefix="ishtarri") }}
         {{ link("/best-cards/clans/kiasyd", _class="insert", _prefix="kiasyd") }}
         {{ link("/best-cards/clans/lasombra", _class="insert", _prefix="lasombra") }}
         {{ link("/best-cards/clans/malkavian", _class="insert", _prefix="malkavian") }}
