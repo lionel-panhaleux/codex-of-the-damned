@@ -114,7 +114,9 @@ build from `request.host_url` like the sitemap does.*
 - [x] `fundamentals.html:295` has invalid `</ li>`.
 
 ### Dead code / stale scaffolding
-- [x] Delete `templates/_layout_promo.html` + its import (`layout.html:1`).
+- [x] ~~Delete~~ `templates/_layout_promo.html`: kept on request (used sparingly for
+  event promos) — now a commented `{% include %}` banner slot in `layout.html` instead
+  of the old always-on import; its anchor got the noopener fix too.
 - [x] Delete `strategy/articles/advanced/guide-for-competitive-play.html` (0-byte orphan).
 - [x] Deduplicate the card-image slug logic: og_image block now uses `file_name()`,
   https-only (dropped `og_image_secure` from the route and layout).
