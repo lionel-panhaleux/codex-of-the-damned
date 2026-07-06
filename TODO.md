@@ -175,13 +175,21 @@ dependency.
   greying + NC/CC championship flags, group editing (names, moves, splits,
   variant-of with TOC regrouping), Export. The exported JSON gets committed as
   `.claude/skills/twda/data/classification.json` — the owner's labels. Next steps:
+  *Labels landed 2026-07-05*: the owner completed the full review pass —
+  `data/classification.json` (rebuilt deterministically from the editor state by
+  `scripts/apply_review.py`): 89 archetypes + 30 variants, 1,083 decks classified,
+  242 noise, 51 proven archetypes. Baseline (`scripts/benchmark.py`): raw
+  clustering scores ARI 0.861 vs groups, 0.687 vs variant-merged archetypes
+  (lower by design — HDBSCAN over-segments, the owner merges via variant-of).
+  Tier data is live: `uv run scripts/benchmark.py … --tiers` (Gangrel Renegades
+  44 qualifying — ⭐ by the 50% rule; next Illegal Brawl 18).
   - [ ] `classify.py`: refresh loop without re-clustering — nearest-centroid
     assignment of new TWD decks to labeled archetypes (threshold → else "novel"
     pile), HDBSCAN on the novel pile only, delta review page pre-seeded from the
     stored labels.
-  - [ ] Benchmark mode: score any pipeline change against the curated labels
-    (ARI + per-archetype recall) before adopting it; keep a small changelog of
-    accepted knob changes.
+  - [x] Benchmark mode: `scripts/benchmark.py` scores any clustering run against
+    the curated labels (ARI at both granularities + noise agreement) and prints
+    the archetype tier table. Use before adopting any pipeline change.
   - [ ] Per-archetype discriminative cards (supervised scores, e.g. one-vs-rest
     chi²) — for page prose and assignment explanations, not for training (yet).
 

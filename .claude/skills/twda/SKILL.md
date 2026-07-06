@@ -56,12 +56,16 @@ doubt) keeps them valid.
    all decklists (hover) with live rare-card / odd-count / missing-staple
    signals against the deck's current group.
 3. The owner reviews and refines in the page (names, moves, splits, variants,
-   representatives), then **Export** → save the JSON as
-   `data/classification.json` and commit it. That file is the ground truth:
-   the owner's labels are the most valuable asset this skill produces.
-   Its `editor_state` can be re-imported into a page generated from the SAME
-   clustering run (refs must match); the `groups` list is what downstream
-   consumers read.
+   representatives), then **Export**. Save the export's `editor_state` as
+   `data/review-<date>.editor-state.json` and rebuild the canonical file:
+   `uv run scripts/apply_review.py data/clusters.json <state> --generated
+   <date> -o data/classification.json`. Commit both. classification.json is
+   the ground truth: the owner's labels are the most valuable asset this
+   skill produces (first pass 2026-07-05: 89 archetypes + 30 variants, 1,083
+   decks, 51 proven). The `editor_state` can also be re-imported into a page
+   generated from the SAME clustering run (refs must match).
+   `scripts/benchmark.py` scores any run against the labels (baseline: ARI
+   0.861 groups / 0.687 variant-merged) and prints the tier table (--tiers).
 4. Next refresh (planned `classify.py`): don't re-cluster from scratch —
    nearest-centroid–assign new TWD decks to the labeled archetypes, run
    HDBSCAN only on unassigned decks to propose novel archetypes, and generate
