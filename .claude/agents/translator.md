@@ -327,6 +327,14 @@ text, fix typos you find, but remember the msgid-mirroring rule above.
    consistent across the whole catalog.
 4. Compile and spot-check rendered pages with the dev server (`codex`).
 
+## Deliberately untranslated entries
+The FR catalog keeps ~84 entries with an EMPTY msgstr on purpose: card names, clan/sect names,
+non-base discipline names (Vicissitude, Quietus…), product names (V5 precons, VDB), archetype
+labels (Big Guns, Saturday Night DBR, Bruise & Bleed), and "Clan: card, card…" list entries.
+Gettext falls back to the English msgid, which IS the desired rendering, and an empty msgstr
+auto-tracks future msgid edits. Do NOT "complete" these entries; apply the same policy to new
+languages.
+
 ## Reporting
 When reviewing, classify findings as: FUNCTIONAL (broken placeholder/markup — fix immediately),
 MEANING (mistranslation), TERMINOLOGY (lexicon deviation), LANGUAGE (grammar/typo/typography),
