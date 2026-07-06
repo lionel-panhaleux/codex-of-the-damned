@@ -183,10 +183,12 @@ dependency.
   (lower by design — HDBSCAN over-segments, the owner merges via variant-of).
   Tier data is live: `uv run scripts/benchmark.py … --tiers` (Gangrel Renegades
   44 qualifying — ⭐ by the 50% rule; next Illegal Brawl 18).
-  - [ ] `classify.py`: refresh loop without re-clustering — nearest-centroid
-    assignment of new TWD decks to labeled archetypes (threshold → else "novel"
-    pile), HDBSCAN on the novel pile only, delta review page pre-seeded from the
-    stored labels.
+  - [x] `classify.py`: refresh loop without re-clustering — nearest-centroid
+    assignment of new TWD decks to labeled archetypes (calibrated threshold →
+    else "novel" pile clustered by HDBSCAN). Leave-one-out self-validation:
+    94.3% exact group, 98.6% archetype-level on the 1,082 validatable labeled
+    decks. Still open: pre-seeded delta review page once a refresh actually
+    brings new decks.
   - [x] Benchmark mode: `scripts/benchmark.py` scores any clustering run against
     the curated labels (ARI at both granularities + noise agreement) and prints
     the archetype tier table. Use before adopting any pipeline change.

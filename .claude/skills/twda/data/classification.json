@@ -9825,6 +9825,47 @@
      "representative": false
     }
    ]
+  },
+  {
+   "ref": "G31",
+   "name": "Freakish Rush",
+   "variant_of": null,
+   "anchors": [],
+   "reviewed": true,
+   "decks": [
+    {
+     "id": "13230",
+     "date": "2026-04-26",
+     "name": "Oblivion de la muerte",
+     "players": 14,
+     "qualifying": false,
+     "representative": false
+    },
+    {
+     "id": "12887",
+     "date": "2026-01-25",
+     "name": "Dr. Stein",
+     "players": 18,
+     "qualifying": false,
+     "representative": false
+    },
+    {
+     "id": "12746",
+     "date": "2026-01-24",
+     "name": "Conglomerado Softfoot",
+     "players": 0,
+     "qualifying": false,
+     "representative": false
+    },
+    {
+     "id": "12774",
+     "date": "2025-11-22",
+     "name": "Servitor Swarm",
+     "players": 16,
+     "qualifying": false,
+     "representative": false
+    }
+   ]
   }
  ],
  "noise": [
@@ -9865,14 +9906,6 @@
    "date": "2026-05-09",
    "name": "Nephandus garbage",
    "players": 15,
-   "qualifying": false,
-   "representative": false
-  },
-  {
-   "id": "13230",
-   "date": "2026-04-26",
-   "name": "Oblivion de la muerte",
-   "players": 14,
    "qualifying": false,
    "representative": false
   },
@@ -9941,22 +9974,6 @@
    "representative": false
   },
   {
-   "id": "12887",
-   "date": "2026-01-25",
-   "name": "Dr. Stein",
-   "players": 18,
-   "qualifying": false,
-   "representative": false
-  },
-  {
-   "id": "12746",
-   "date": "2026-01-24",
-   "name": "Conglomerado Softfoot",
-   "players": 0,
-   "qualifying": false,
-   "representative": false
-  },
-  {
    "id": "12933",
    "date": "2026-01-15",
    "name": "Lasombat Fortitunado",
@@ -9993,14 +10010,6 @@
    "date": "2025-11-29",
    "name": "Death by a 1000 cuts II",
    "players": 13,
-   "qualifying": false,
-   "representative": false
-  },
-  {
-   "id": "12774",
-   "date": "2025-11-22",
-   "name": "Servitor Swarm",
-   "players": 16,
    "qualifying": false,
    "representative": false
   },
@@ -11885,7 +11894,8 @@
    "G27": true,
    "G28": true,
    "G29": true,
-   "G30": true
+   "G30": true,
+   "G31": true
   },
   "names": {
    "C1": "Haqim Royalty",
@@ -11999,7 +12009,8 @@
    "C100": "Aus Guns",
    "G24": "Setite Bleed",
    "G29": "Qawiyya Caine",
-   "G30": "Nergal Beast"
+   "G30": "Nergal Beast",
+   "G31": "Freakish Rush"
   },
   "variantOf": {
    "G4": "C2",
@@ -12176,9 +12187,9 @@
    "12696": "G7",
    "12700": "C84",
    "12701": "C22",
-   "12746": "noise",
+   "12746": "G31",
    "12748": "noise",
-   "12774": "noise",
+   "12774": "G31",
    "12788": "G2",
    "12797": "C22",
    "12822": "C11",
@@ -12187,7 +12198,7 @@
    "12862": "C22",
    "12867": "C11",
    "12880": "C11",
-   "12887": "noise",
+   "12887": "G31",
    "12913": "G5",
    "12914": "G16",
    "12922": "G26",
@@ -12206,7 +12217,7 @@
    "13165": "G4",
    "13183": "G4",
    "13221": "noise",
-   "13230": "noise",
+   "13230": "G31",
    "13231": "C11",
    "13237": "G21",
    "13243": "C22",
@@ -12376,6 +12387,9 @@
    },
    "G30": {
     "name": "Nergal Beast"
+   },
+   "G31": {
+    "name": "Freakish Rush"
    }
   },
   "deleted": {

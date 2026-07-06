@@ -66,11 +66,14 @@ doubt) keeps them valid.
    generated from the SAME clustering run (refs must match).
    `scripts/benchmark.py` scores any run against the labels (baseline: ARI
    0.861 groups / 0.687 variant-merged) and prints the tier table (--tiers).
-4. Next refresh (planned `classify.py`): don't re-cluster from scratch —
-   nearest-centroid–assign new TWD decks to the labeled archetypes, run
-   HDBSCAN only on unassigned decks to propose novel archetypes, and generate
-   a review page of deltas (auto-assignments + novelties) pre-seeded with the
-   stored names/variants. Each confirmed export grows the labels.
+4. Next refresh: `uv run scripts/classify.py --refresh [--out new.json]` —
+   don't re-cluster. It embeds labeled + new decks in the same space,
+   assigns each new deck to the nearest group centroid (threshold calibrated
+   from leave-one-out validation: 94.3% exact group / 98.6% archetype
+   accuracy on the 2026-07 labels), and HDBSCANs the leftovers into proposed
+   novel archetypes. The owner confirms the deltas; fold them into the
+   editor state and re-run apply_review.py. Each confirmed pass grows the
+   labels.
 5. Any pipeline tuning must be scored against `data/classification.json`
    (ARI / anchor checks) before being adopted — the labels are the benchmark,
    never a thing to silently overwrite.

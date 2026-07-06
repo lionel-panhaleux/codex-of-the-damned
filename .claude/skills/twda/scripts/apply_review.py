@@ -99,8 +99,12 @@ def main() -> None:
     for deck_id, ref in assign.items():
         members.setdefault(ref, []).append(deck_id)
 
-    # unnamed groups keep their page placeholder: anchor slug or top card
+    # unnamed groups keep their page placeholder: anchor slug or top card;
+    # extra groups may carry their name in extraGroups only
     def default_name(ref: str) -> str:
+        extra = state["extraGroups"].get(ref, {}).get("name")
+        if extra:
+            return extra
         cluster = next((c for c in data["clusters"] if c["ref"] == ref), None)
         if not cluster:
             return ""
