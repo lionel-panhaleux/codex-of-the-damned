@@ -1,0 +1,101 @@
+{% extends "archetypes/_layout.html" %}
+{% import "archetypes/_layout-erratum.html" as erratum with context %}
+{% import "archetypes/new-kids/qawiyya-caine.json" as deck_json %}
+
+{% block meta %}
+<meta property="decklist" content='{{ deck_json | tojson }}' />
+{% endblock %}
+
+{% block archetype_name %}
+<h1>{{ salubri_antitribu }} Qawiyya Caine</h1>
+{% endblock %}
+
+{% block archetype %}
+{% trans trimmed
+abuse_of_power=card("Abuse of Power"),
+andre_leroux=card("Andre LeRoux"),
+ashur_tablets=card("Ashur Tablets"),
+augury_of_doom=card("Augury of Doom"),
+charge_of_the_buffalo=card("Charge of the Buffalo"),
+codex_of_the_edenic_groundskeepers=card("Codex of the Edenic Groundskeepers"),
+death_seeker=card("Death Seeker"),
+freak_drive=card("Freak Drive"),
+giant_s_blood=card("Giant's Blood"),
+harass=card("Harass"),
+heroic_might=card("Heroic Might"),
+immortal_grapple=card("Immortal Grapple"),
+ir_goggles=card("IR Goggles"),
+nose_of_the_hound=card("Nose of the Hound"),
+pulled_fangs=card("Pulled Fangs"),
+qawiyya_el_ghaduba=card("Qawiyya el-Ghaduba"),
+rage_of_apedemak=card("Rage of Apedemak"),
+righteous_aura=card("Righteous Aura"),
+rolling_with_the_punches=card("Rolling with the Punches"),
+sce=link("/strategy/combat", _("S:CE"), _anchor="defence"),
+secure_haven=card("Secure Haven"),
+sense_death=card("Sense Death"),
+soulgrinder=card("Soulgrinder"),
+taste_of_vitae=card("Taste of Vitae"),
+the_book_of_going_forth_by_night=card("The Book of Going Forth by Night"),
+twisted_bloodhound=card("Twisted Bloodhound"),
+unflinching_persistence=card("Unflinching Persistence"),
+bram_van_stappen_s_deck=link("/deck-search", _("Bram Van Stappen's deck"), id="13272")
+%}
+<h2>Highlights</h2>
+<p>
+    This is a <em>rush</em> deck built around {{ qawiyya_el_ghaduba }} as a star.
+    She does all the work: the rest of the crypt is {{ andre_leroux }}
+    and a handful of 1 and 2 capacity utility vampires used for filtering and chores.
+</p>
+<p>
+    The engine is lots of {{ freak_drive }} on top of her built-in unlock:
+    she rushes, unlocks, and rushes again, easily grinding through three or more combats a turn.
+    {{ sense_death }} is the premium rush, granting both a press and a maneuver at superior {{ VAL }},
+    backed by {{ nose_of_the_hound }} and a spread of singleton rush actions.
+    The {{ twisted_bloodhound }} retainers — the eponymous kennel — provide a rush every turn
+    without spending a single card.
+</p>
+<p>
+    The combat package is brutally simple: {{ immortal_grapple }} against {{ sce }} and other defenses,
+    where her strikes start at 3 damage and climb to 5 and beyond with {{ rage_of_apedemak }},
+    {{ soulgrinder }}, or a permanent boost like {{ heroic_might }}. {{ rolling_with_the_punches }} and
+    {{ unflinching_persistence }} prevent on {{ for }}, {{ death_seeker }} cancels the one combat card
+    the opponent was counting on, and {{ taste_of_vitae }} refill her after every beating.
+</p>
+<p>
+    Winning combats is also how the deck ousts: {{ abuse_of_power }} and {{ augury_of_doom }} drain pool,
+    , and {{ righteous_aura }} sticks a +2 bleed on Qawiyya for the finish.
+    With 6 {{ ashur_tablets }} recycling what's needed, the deck can keep up for a long game and only gets better as it
+    goes on.
+</p>
+<h2>Tips & Tricks</h2>
+<p>
+    Blood management is the real skill test: the unlock ability costs 2 blood and prevention is not free,
+    so every combat should end with {{ taste_of_vitae }} when possible. Against empty or low-blood
+    vampires, {{ pulled_fangs }} ensures they never come back: unable to hunt, they go straight
+    back to torpor.
+</p>
+<p>
+    {{ secure_haven }} is only here to contest a cumbersome copy played by an opponent
+</p>
+<p>
+    The deck runs zero reaction cards: defense is preemptive violence, so keep the predator's minions
+    in torpor too, not just the prey's. Maneuvers from {{ ir_goggles }} and superior
+    {{ unflinching_persistence }} help drag gun decks back to close range where {{ immortal_grapple }}
+    applies, and {{ the_book_of_going_forth_by_night }} turns ally-based defenses into recruits.
+</p>
+<p>
+    Do not overlook {{ andre_leroux }}: once the prey loses all their minions, he can shine and bleed foR 3 or 4 every
+    turn.
+</p>
+<h2>Variants</h2>
+<p>
+    This is a brand-new archetype with only two tournament wins, both in 2026, and the lists are
+    nearly identical. The first win was {{ bram_van_stappen_s_deck }},
+    with {{ giant_s_blood }} over {{ secure_haven }}, adds {{ harass }} and {{ charge_of_the_buffalo }}
+    as extra rushes, plus {{ codex_of_the_edenic_groundskeepers }} as an alternative ousting
+    tool, forgoing {{ soulgrinder }}. The list presented here is Nerijus Mikalajunas' light tune of it
+    for the Polish NC. Too early for real branches, but given the inventor, and the results, this is one to watch.
+</p>
+{% endtrans %}
+{% endblock %}

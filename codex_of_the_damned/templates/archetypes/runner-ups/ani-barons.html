@@ -1,0 +1,126 @@
+{% extends "archetypes/_layout.html" %}
+{% import "archetypes/_layout-erratum.html" as erratum with context %}
+{% import "archetypes/runner-ups/ani-barons.json" as deck_json %}
+
+{% block meta %}
+<meta property="decklist" content='{{ deck_json | tojson }}' />
+{% endblock %}
+
+{% block archetype_name %}
+<h1>{{ tzimisce }} Ani Barons</h1>
+{% endblock %}
+
+{% block archetype %}
+{% trans trimmed
+adrino_manauara=card("Adrino Manauara"),
+aid_from_bats=card("Aid from Bats"),
+anarch_convert=card("Anarch Convert"),
+anarch_revolt=card("Anarch Revolt"),
+army_of_rats=card("Army of Rats"),
+bait_and_switch=card("Bait and Switch"),
+bounce=link("/strategy/fundamentals", _("bounce"), _anchor="bounce"),
+branimira=card("Branimira"),
+carfax_abbey=card("Carfax Abbey"),
+carrion_crows=card("Carrion Crows"),
+cats_guidance=card("Cats' Guidance"),
+combat_ends=link("/strategy/combat", _("combat ends"), _anchor="defence"),
+deep_ecology=card("Deep Ecology"),
+deep_song=card("Deep Song"),
+delaying_tactics=card("Delaying Tactics"),
+drawing_out_the_beast=card("Drawing Out the Beast"),
+dreams_of_the_sphinx=card("Dreams of the Sphinx"),
+fame=card("Fame"),
+groundfighting=card("Groundfighting"),
+ivory_bow=card("Ivory Bow"),
+kuyen=card("Kuyén"),
+massimiliano=card("Massimiliano"),
+mr_winthrop=card("Mr. Winthrop"),
+nsa_trio=card("NSA Trio"),
+organized_resistance=card("Organized Resistance"),
+poachers_hunting_ground=card("Poacher's Hunting Ground"),
+powerbase_montreal=card("Powerbase: Montreal"),
+protection_racket=card("Protection Racket"),
+raven_spy=card("Raven Spy"),
+rush=link("/strategy/archetype-categories", _("rush"), _anchor="rush"),
+taste_of_vitae=card("Taste of Vitae"),
+tension_in_the_ranks=card("Tension in the Ranks"),
+terror_frenzy=card("Terror Frenzy"),
+the_rack=card("The Rack"),
+vessel=card("Vessel"),
+villein=card("Villein"),
+wider_view=card("Wider View"),
+jozef_patrnciak_s_deck=link("/deck-search", _("Jozef Patrnciak's deck"), id="12293"),
+giulio_de_cicco_s_deck=link("/deck-search", _("Giulio De Cicco's deck"), id="11622")
+%}
+<h2>Highlights</h2>
+<p>
+    This is a {{ rush }} deck built on the group 6 Anarch Barons with superior Animalism {{ ANI }}.
+    The crypt spans Tzimisce {{ tzimisce }}, Gangrel {{ gangrel }} and Ravnos {{ ravnos }}, but clan is
+    irrelevant: what matters is that everyone is a native Anarch with {{ ANI }}, most of them Barons,
+    with {{ anarch_convert }} to smooth the draw.
+</p>
+<p>
+    {{ deep_song }} is the engine, run in bulk, flexing between a bleed and a rush. Combat is pure
+    ranged attrition on {{ aid_from_bats }} and {{ carrion_crows }}: the crows deal environmental damage
+    every round while the bats add damage and the maneuvers to stay safely at long range.
+    {{ terror_frenzy }} and {{ drawing_out_the_beast }} keep the opponent from closing in or pressing out,
+    and {{ taste_of_vitae }} recoups the blood spent along the way.
+</p>
+<p>
+    The ousting plan is attrition too: {{ anarch_revolt }} drains every Methuselah without
+    a ready Anarch each turn, while {{ fame }} and {{ tension_in_the_ranks }} convert the torpors the combat
+    module produces into direct pool damage. The {{ ivory_bow }} adds aggravated damage at range,
+    so vampires sent to torpor can be burned outright on a follow-up rush.
+</p>
+<p>
+    Defense is the classic Baron suite: {{ bait_and_switch }} to {{ bounce }}, {{ organized_resistance }}
+    and {{ deep_ecology }} for wake and intercept, backed by
+    {{ raven_spy }} and {{ mr_winthrop }} as permanent intercept.
+</p>
+<p>
+    The economy runs on {{ villein }} and a set of one-of locations — {{ carfax_abbey }}, {{ the_rack }},
+    {{ powerbase_montreal }}, {{ poachers_hunting_ground }} — to refill the vampires, with {{ wider_view }}
+    and {{ dreams_of_the_sphinx }} for crypt and hand fluidity.
+</p>
+<h2>Tips & Tricks</h2>
+<p>
+    The standard combat line is {{ carrion_crows }} before range, then {{ aid_from_bats }} maneuvering
+    to long range: most vampires take 2 or 3 ranged damage per round without ever landing a strike.
+    Against dodgy opponents, inferior {{ terror_frenzy }} locks them at range, while the superior instead
+    taxes every combat card they play a blood.
+    {{ massimiliano }}'s +1 strength and {{ adrino_manauara }}'s built-in press make them
+    the preferred rushers when combat is expected to go multiple rounds.
+</p>
+<p>
+    {{ anarch_revolt }} is the clock the whole table plays against: opponents can only remove it with
+    a +1 stealth referendum, and the singleton {{ delaying_tactics }} is best saved to cancel exactly that.
+    Run in numbers, one can usually be kept in play from the early game onward — combined with {{ fame }},
+    it often does more ousting than the bleeds do.
+</p>
+<p>
+    {{ nsa_trio }} never hampers the deck: {{ deep_song }} rushes involve no blocking vampire, and the deck
+    plays no {{ combat_ends }} of its own. But when a wall blocks a {{ deep_song }} bleed, the blocker cannot
+    strike to end combat in the first round, so the bats and crows always connect at least once.
+</p>
+<p>
+    Small crypt synergies matter: {{ kuyen }} pays 1 less for {{ raven_spy }}, and {{ branimira }} has
+    +1 intercept only while one sits at 9 pool or fewer — mind that a big {{ villein }} can switch it off.
+    {{ poachers_hunting_ground }} scales with the hunting grounds other Methuselahs control,
+    so it is well worth playing even late.
+</p>
+<h2>Variants</h2>
+<p>
+    The archetype is remarkably consolidated: this list is {{ jozef_patrnciak_s_deck }}, winner of the Polish
+    Nationals two months earlier, taken over almost card for card (the credit is in the deck name).
+    The only touches are two fewer {{ aid_from_bats }}, one more {{ organized_resistance }} and
+    {{ deep_ecology }} each, {{ dreams_of_the_sphinx }} and {{ poachers_hunting_ground }} over {{ vessel }},
+    and the {{ delaying_tactics }} and {{ nsa_trio }} singletons.
+</p>
+<p>
+    Earlier builds were looser: {{ giulio_de_cicco_s_deck }}, from 2024, runs a thicker reaction wall with
+    {{ cats_guidance }} and {{ protection_racket }}, {{ army_of_rats }} as an extra drain,
+    and {{ groundfighting }} in place of the frenzy package. The core of the archetype — {{ deep_song }},
+    bats and crows, {{ anarch_revolt }} and the Baron reactions — has been stable ever since.
+</p>
+{% endtrans %}
+{% endblock %}

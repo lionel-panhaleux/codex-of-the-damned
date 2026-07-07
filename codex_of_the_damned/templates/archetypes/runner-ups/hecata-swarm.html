@@ -1,0 +1,124 @@
+{% extends "archetypes/_layout.html" %}
+{% import "archetypes/_layout-erratum.html" as erratum with context %}
+{% import "archetypes/runner-ups/hecata-swarm.json" as deck_json %}
+
+{% block meta %}
+<meta property="decklist" content='{{ deck_json | tojson }}' />
+{% endblock %}
+
+{% block archetype_name %}
+<h1>{{ hecata }} Hecata Swarm</h1>
+{% endblock %}
+
+{% block archetype %}
+{% trans trimmed
+aggressive_corpse=card("Aggressive Corpse"),
+anarchist_uprising=card("Anarchist Uprising"),
+bloat=link("/strategy/bloat", _("bloat"), _anchor="bloat"),
+bone_shambler=card("Bone Shambler"),
+bounce=link("/strategy/fundamentals", _("bounce"), _anchor="bounce"),
+cappadocian_crypt=card("Cappadocian Crypt"),
+charisma=card("Charisma"),
+delaying_tactics=card("Delaying Tactics"),
+family_gathering=card("Family Gathering"),
+heart_of_nizchetus=card("Heart of Nizchetus"),
+jake_washington=card("Jake Washington"),
+lenelle=card("Lenelle, Mambo of Birmingham", "Lenelle"),
+mora=card("Mora, the Death Seer", "Mora"),
+parijat=card("Parijat, the Dark Oracle", "Parijat"),
+pass_through_shadow=card("Pass Through Shadow"),
+pentex_subversion=card("Pentex™ Subversion"),
+perfectionist=card("Perfectionist"),
+shadow_cast=card("Shadow Cast"),
+shadow_cloak=card("Shadow Cloak"),
+shadow_sentinel=card("Shadow Sentinel"),
+shroud_of_decay=card("Shroud of Decay"),
+spectral_servitor=card("Spectral Servitor"),
+stealth_and_bleed=link("/strategy/archetype-categories", _("Stealth & Bleed"), _anchor="bleed"),
+stygian_shroud=card("Stygian Shroud"),
+telepathic_misdirection=card("Telepathic Misdirection"),
+the_unmasking=card("The Unmasking"),
+toolbox=link("/strategy/archetype-categories", _("toolbox"), _anchor="toolbox"),
+villein=card("Villein"),
+vote=link("/strategy/archetype-categories", _("vote"), _anchor="vote"),
+where_the_veil_thins=card("Where the Veil Thins"),
+hecata_corpse=link("/archetypes/hecata-corpse"),
+stefano_chiodi_s_deck=link("/deck-search", _("Stefano Chiodi's deck"), id="12407"),
+ke_carlton_s_deck=link("/deck-search", _("Ke Carlton's deck"), id="12263"),
+richard_aumann_s_deck=link("/deck-search", _("Richard Aumann's deck"), id="13027")
+%}
+<h2>Highlights</h2>
+<p>
+    This is a <em>swarm bleed</em> deck built on the Group 6 Hecata {{ hecata }} and their signature wraith,
+    {{ spectral_servitor }}. It floods the table with cheap allies bleeding for 1
+    at stealth: the prey drowns under a stream of small bleeds while {{ shroud_of_decay }} takes care
+    of the rest.
+</p>
+<p>
+    The servitor does everything a swarm wants, and crucially it plays basic {{ obl }} non-action
+    cards as a vampire would — so the stealth modifiers
+    ({{ shadow_cast }}, {{ shadow_cloak }}, {{ stygian_shroud }} and {{ where_the_veil_thins }})
+    serve the wraiths as well as the crypt. {{ charisma }} makes its bearer's recruits free, and a
+    recruiter with superior {{ OBL }} can keep a servitor alive for 1 pool
+    during the unlock phase instead of burning it.
+</p>
+<p>
+    {{ shroud_of_decay }} gives the vampires their own reach: a +1 bleed whose forced discards feed
+    the prey's ash heap, but more importantly superior mode that strips that same ash heap to burn pool — an oust
+    no {{ bounce }} can stop, and serious extra reach once the game drags on.
+</p>
+<p>
+    The all-Hecata {{ hecata }} crypt means {{ family_gathering }} always hits, speeding up the next vampire.
+    Defense is solid for a swarm deck: {{ telepathic_misdirection }} on the superior {{ AUS }}
+    vampires, {{ shadow_sentinel }} to wake a surprise blocker — a wraith too, at superior —
+    {{ the_unmasking }} turning the swarm into actual blockers, and {{ parijat }} taxing blocks
+    against the wraiths.
+</p>
+<h2>Tips & Tricks</h2>
+<p>
+    Sequence the turns around the unlock clause: only the first successful recruit unlocks the
+    vampire, so spread recruits across the crypt instead of chaining them on a single minion, then
+    use the unlocked vampires to bleed with {{ shroud_of_decay }} or to hold
+    {{ telepathic_misdirection }} up.
+</p>
+<p>
+    Do not pay the upkeep by reflex. A servitor is 1 blood for a stealthed bleed of 1: letting it
+    burn is fine business. Keep only the ones needed as blockers under {{ the_unmasking }}, or as
+    repeat bleeders once the prey's defense is down. Burnt copies are not lost either — {{ mora }}
+    and {{ lenelle }} both fish cards back out of the ash heap.
+</p>
+<p>
+    The deck plays no combat card at all — it does not need to win fights, only to avoid them.
+    {{ pentex_subversion }} shuts down the table's dedicated blocker, superior
+    {{ where_the_veil_thins }} taxes non-Oblivion {{ OBL }} blockers a blood and bars allies from
+    blocking outright, and {{ parijat }} discourages the rest. {{ jake_washington }} refuels an
+    emptied recruiter, {{ perfectionist }} recoups blood on unreacted actions, and
+    {{ heart_of_nizchetus }} keeps the cards flowing.
+</p>
+<p>
+    The sore spot is {{ vote }} decks, as {{ delaying_tactics }} is the only political defense, and
+    heavy ally hate votes like {{ anarchist_uprising }}.
+</p>
+<h2>Variants</h2>
+<p>
+    There are no settled variant names yet, but the winning lists spread along a single axis: how
+    much of the deck goes to the swarm versus to {{ shroud_of_decay }}.
+    {{ stefano_chiodi_s_deck }} (25 players, 2025) trims the wraiths down to 6 for 12
+    {{ shroud_of_decay }}, a thicker reaction package, {{ villein }} {{ bloat }} and 8
+    {{ pass_through_shadow }} — closer to a classic {{ stealth_and_bleed }} with the swarm as a
+    side engine. {{ ke_carlton_s_deck }} (22 players, 2025) goes the same route with 14
+    {{ shroud_of_decay }}, 11 {{ family_gathering }} and a suite of Powerbase locations, banking on
+    the superior pool burn to close games.
+</p>
+<p>
+    {{ richard_aumann_s_deck }} (24 players, 2026) keeps the shell but swaps the wraiths for
+    zombies: 15 {{ bone_shambler }}, which lock one another for +1 bleed, with
+    {{ cappadocian_crypt }} covering the blood economy and no {{ shroud_of_decay }} at all.
+</p>
+<p>
+    The neighboring {{ hecata_corpse }} archetype shares the crypt and the shadow stealth module,
+    but builds around {{ aggressive_corpse }} and a {{ toolbox }} of utility allies rather than the pure
+    servitor swarm — different enough to be its own archetype.
+</p>
+{% endtrans %}
+{% endblock %}

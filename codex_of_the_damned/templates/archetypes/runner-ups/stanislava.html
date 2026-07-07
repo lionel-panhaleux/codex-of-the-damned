@@ -1,0 +1,126 @@
+{% extends "archetypes/_layout.html" %}
+{% import "archetypes/_layout-erratum.html" as erratum with context %}
+{% import "archetypes/runner-ups/stanislava.json" as deck_json %}
+
+{% block meta %}
+<meta property="decklist" content='{{ deck_json | tojson }}' />
+{% endblock %}
+
+{% block archetype_name %}
+<h1>{{ gangrel }} Stanislava</h1>
+{% endblock %}
+
+{% block archetype %}
+{% trans trimmed
+alpha_glint=card("Alpha Glint"),
+archon_investigation=card("Archon Investigation"),
+ashur_tablets=card("Ashur Tablets"),
+caitlin=card("Caitlin"),
+claws_of_the_dead=card("Claws of the Dead"),
+deflection=card("Deflection"),
+earth_control=card("Earth Control"),
+ecoterrorists=card("Ecoterrorists"),
+enkil_cog=card("Enkil Cog"),
+forced_march=card("Forced March"),
+form_of_mist=card("Form of Mist"),
+freak_drive=card("Freak Drive"),
+govern_the_unaligned=card("Govern the Unaligned"),
+iliana=card("Iliana"),
+immortal_grapple=card("Immortal Grapple"),
+ingrid_rossler=card("Ingrid Rossler"),
+instantaneous_transformation=card("Instantaneous Transformation"),
+jake_washington=card("Jake Washington"),
+kine_resources_contested=card("Kine Resources Contested"),
+liquidation=card("Liquidation"),
+murmur_of_the_false_will=card("Murmur of the False Will"),
+obedience=card("Obedience"),
+papillon=card("Papillon"),
+parity_shift=card("Parity Shift"),
+the_parthenon=card("The Parthenon"),
+pentex_subversion=card("Pentex™ Subversion"),
+rachel_brandywine=card("Rachel Brandywine"),
+rapid_change=card("Rapid Change"),
+seal_of_veddartha=card("Seal of Veddartha"),
+second_tradition_domain=card("Second Tradition: Domain"),
+sense_the_savage_way=card("Sense the Savage Way"),
+stanislava=card("Stanislava"),
+vele_s_hunt=card("Vele's Hunt"),
+villein=card("Villein"),
+xaviar=card("Xaviar (ADV)", "Xaviar"),
+fourth_tradition_the_accounting=card("Fourth Tradition: The Accounting"),
+meta=link("/strategy/articles/advanced/the-game-of-the-game", _("meta")),
+girls_will_find_inner_circle=link("/archetypes/girls-will-find-inner-circle"),
+janne_lonnqvist_s_deck=link("/deck-search", _("Janne Lönnqvist's deck"), id="2016rfehf"),
+roberto_mautone_junior=link("/deck-search", _("Roberto Mautone Junior"), id="11990"),
+martin_weinmayer_himself=link("/deck-search", _("Martin Weinmayer himself"), id="11920")
+%}
+<h2>Highlights</h2>
+<p>
+    This is a <em>stealth vote & bleed</em> deck with {{ stanislava }} as a star.
+    She uses {{ govern_the_unaligned }} to help get other vampires out and {{ villein }}
+    is used to get some pool back.
+</p>
+<p>
+    As the game progresses, more big capacity titled vampires get out and
+    begin to perform political actions and bleed, using {{ pro }} for stealth with
+    {{ form_of_mist }}, {{ earth_control }}, and {{ rapid_change }}.
+</p>
+<p>
+    The bulk of the vote damage come from {{ kine_resources_contested }},
+    while a few other votes can deliver high damage at the right moment to facilitate
+    the lunge. {{ forced_march }}, {{ instantaneous_transformation }}, and {{ freak_drive }}
+    can be used for additional actions, allowing the vampires to bleed <em>and</em> perform
+    a political action in the same turn.
+</p>
+<p>
+    {{ deflection }} is used for bleed defense, and {{ pro }} provides combat
+    defense with a solid number of combat ends.
+</p>
+<h2>Tips & Tricks</h2>
+<p>
+    {{ forced_march }} and {{ instantaneous_transformation }} are
+    versatile as they can be used both for stealth or additional action.
+    {{ stanislava }} can use both, but other vampires in the crypt can use one or
+    the other, and {{ xaviar }} can already unlock on a vote all by himself.
+</p>
+<p>
+    {{ enkil_cog }} can help deliver more bleeds, but might be better on a sidekick
+    rather than {{ stanislava }} herself, for fear of an {{ archon_investigation }}.
+</p>
+<p>
+    The {{ seal_of_veddartha }} is an excellent
+    equipment with this crypt, as most vampires miss either {{ DOM }} or {{ FOR }}.
+    The +1 bleed bonus is nothing to cast aside either.
+</p>
+<h2>Variants</h2>
+<p>
+    The archetype is very much known for <em>Martin Weinmayer's</em> build
+    as he as been very successful with it and retained the top seat
+    in the international classment in the 2010s.
+    The cards proportions may vary a little bit, some like to play some
+    {{ sense_the_savage_way }}, {{ vele_s_hunt }} and/or
+    {{ claws_of_the_dead }}. {{ ecoterrorists }} is also a common inclusion.
+</p>
+<p>
+    Combat ends are not necessarily the best option, depending on the {{ meta }}.
+    If {{ immortal_grapple }} is a worry, using {{ obedience }} or {{ alpha_glint }} are solid alternatives.
+</p>
+<p>
+    Some alterations have been seen in the crypt too, like including {{ iliana }} or {{ caitlin }},
+    as they have excellent disciplines combination for a low pool,
+    although no title to support the political side of the deck.
+    {{ janne_lonnqvist_s_deck }} from 2016 is a good example.
+</p>
+<p>
+    Older variations of the archetype used to include a good number of {{ parity_shift }},
+    but that was before the 2019 nerf. It is still viable though, as demonstrated by
+    {{ roberto_mautone_junior }}.
+</p>
+<p>
+    The <strong>Ashur</strong> variation, heralded by none other than {{ martin_weinmayer_himself }},
+    uses a huge number of {{ ashur_tablets }} together with {{ the_parthenon }} and {{ liquidation }},
+    reminiscent of the {{ girls_will_find_inner_circle}} archetype of old. An impressive display
+    post the 2024 nerf to {{ ashur_tablets }}.
+</p>
+{% endtrans %}
+{% endblock %}

@@ -1,0 +1,143 @@
+{% extends "archetypes/_layout.html" %}
+{% import "archetypes/_layout-erratum.html" as erratum with context %}
+{% import "archetypes/old-guard/lasombra-pop.json" as deck_json %}
+
+{% block meta %}
+<meta property="decklist" content='{{ deck_json | tojson }}' />
+{% endblock %}
+
+{% block archetype_name %}
+<h1>{{ lasombra }} Lasombra Pop</h1>
+{% endblock %}
+
+{% block archetype %}
+{% trans trimmed
+alvaro=card("Alvaro, The Scion of Angelica", "Alvaro"),
+anarchist_uprising=card("Anarchist Uprising"),
+ancilla_empowerment=card("Ancilla Empowerment"),
+antonio_delgado=card("Antonio Delgado"),
+banishment=card("Banishment"),
+bleed=link("/strategy/archetype-categories", _("bleed"), _anchor="bleed"),
+cold_war=card("Cold War"),
+deflection=card("Deflection"),
+dominant_personality=card("Dominant Personality"),
+elysian_fields=card("Elysian Fields"),
+empires_fall=card("Empires Fall"),
+francisco=card("Francisco Domingo de Polonia", "Francisco"),
+freak_drive=card("Freak Drive"),
+govern_the_unaligned=card("Govern the Unaligned"),
+gratiano=card("Gratiano"),
+information_highway=card("Information Highway"),
+iron_glare=card("Iron Glare"),
+kine_resources_contested=card("Kine Resources Contested"),
+magnetic_authority=card("Magnetic Authority"),
+majesty=card("Majesty"),
+marcus_vitel=card("Marcus Vitel"),
+meta=link("/strategy/articles/advanced/the-game-of-the-game", _("meta")),
+minion_tap=card("Minion Tap"),
+moncada=card("Ambrosio Luis Monçada, Plenipotentiary", "Monçada"),
+negotiation=link("/strategy/table-talk", _("negotiations"), _anchor="negotiation"),
+neonate_breach=card("Neonate Breach"),
+obedience=card("Obedience"),
+oubliette=card("Oubliette"),
+power_structure=card("Power Structure"),
+powerbase_madrid=card("Powerbase: Madrid"),
+regent=card("Regent"),
+sce=link("/strategy/combat", _("combat ends"), _anchor="defence"),
+shadow_body=card("Shadow Body"),
+shadow_play=card("Shadow Play"),
+shroud_of_absence=card("Shroud of Absence"),
+toolbox=link("/strategy/archetype-categories", _("toolbox"), _anchor="toolbox"),
+unholy_sacrament=card("Unholy Sacrament"),
+unthinkable_humiliation=card("Unthinkable Humiliation"),
+villein=card("Villein"),
+vote=link("/strategy/archetype-categories", _("vote"), _anchor="vote"),
+voter_captivation=card("Voter Captivation"),
+war_of_ages=card("War of Ages"),
+parliament_of_shadows=link("/archetypes/parliament-of-shadows"),
+nikica_novakovic_s_deck=link("/deck-search", _("Nikica Novaković's deck"), id="12779"),
+robert_dvoran_s_deck=link("/deck-search", _("Robert Dvoran's deck"), id="11087")
+%}
+<h2>Highlights</h2>
+<p>
+    This is a {{ vote }} & {{ bleed }} deck built on the legacy group 2 titled Lasombra {{ lasombra }},
+    one of the oldest shells in the game and still a quiet, regular winner. The crypt stacks Sabbat
+    titles — {{ moncada }} the cardinal, the archbishops {{ antonio_delgado }}, {{ alvaro }} and
+    {{ francisco }}, plus {{ gratiano }} and his extra ballot — and pops pool off the whole table
+    with a thick pack of political actions. All of them opt for the Path of Power and the Inner Voice the moment
+    they get influenced out.
+</p>
+<p>
+    As usual with {{ DOM }}, the plan is to get {{ moncada }} out first — {{ information_highway }}
+    helps — and let him use {{ govern_the_unaligned }} at superior to build the second vampire.
+    The real engine is blood cycling: {{ villein }} turns a fat Lasombra {{ lasombra }} into pool, and
+    {{ unholy_sacrament }} and {{ magnetic_authority }} feed it back into the uncontrolled crypt, so
+    the second big vampire hits the table in a couple of turns without the pool ever really dropping.
+</p>
+<p>
+    The votes do the ousting. {{ kine_resources_contested }} spreads damage and opens {{ negotiation }},
+    {{ cold_war }} pairs pool damage with location removal, and {{ empires_fall }} punishes
+    big-capacity tables. A {{ toolbox }} of one-ofs — {{ banishment }}, {{ anarchist_uprising }},
+    {{ ancilla_empowerment }}, {{ war_of_ages }} — covers the rest. The native titles often lock
+    the table on their own, with {{ power_structure }} and {{ powerbase_madrid }} on top.
+</p>
+<p>
+    Referendums get through on {{ shadow_play }}, reliable at superior since every crypt member
+    carries superior {{ OBT }}, backed by {{ shroud_of_absence }} and a locked {{ elysian_fields }}.
+    The same stealth serves the bleeds: {{ govern_the_unaligned }} on its inferior is a bleed, and
+    the titled {{ gratiano }}, {{ alvaro }} and {{ francisco }} all bleed at a bonus. Once the game
+    goes heads-up, those bleeds, on top of the votes, are what closes it.
+</p>
+<p>
+    Defense is {{ deflection }}, usually lock-free given all the superior {{ DOM }}, propped up by
+    the crypt's own unlocks: {{ moncada }} frees another ready Lasombra {{ lasombra }} every discard
+    phase and {{ antonio_delgado }} readies himself after a passed vote, so holding {{ deflection }}
+    open and acting the same turn rarely compete. Combat is a token {{ sce }} package of
+    {{ shadow_body }} and {{ oubliette }}.
+</p>
+<h2>Tips & Tricks</h2>
+<p>
+    Everything hinges on opening with {{ moncada }}: he is the vote lock, and his discard phase
+    unlock is what lets the deck act every turn and still hold {{ deflection }} open. Joscha Düll's
+    own post-mortem is that four copies in a 12 card crypt was one too few — play 5 in 13.
+</p>
+<p>
+    {{ regent }} won this deck its final: 4 votes on a second minion, who then gets the double
+    choice on {{ cold_war }}. But the title paints a target — Sabbat vampires can rush the regent
+    as a directed action — so it goes to the ash heap against combat-heavy Sabbat tables.
+</p>
+<p>
+    Pick the votes by the seating. {{ empires_fall }} is brutal into other big-cap decks and
+    nearly blank into weenies — {{ neonate_breach }} is its mirror image — while {{ cold_war }}
+    doubles as location removal in a location-heavy {{ meta }}. {{ alvaro }} banks 2 blood whenever he
+    sits out a referendum, a small but steady income on wide tables.
+</p>
+<p>
+    The stealth package is deliberately lean and works in a tolerant meta; against dedicated
+    blockers, more {{ shadow_play }} is the first tweak. Mind the crypt spread on the Potence
+    {{ POT }} / Presence {{ PRE }} modifiers: {{ gratiano }} can only play {{ dominant_personality }}
+    at inferior.
+</p>
+<h2>Variants</h2>
+<p>
+    The archetype is decades old — it lived a long life as {{ parliament_of_shadows }}, described
+    in the archive — and the 2025 Sabbat V5 set gave it its current shape, with {{ cold_war }},
+    {{ empires_fall }}, {{ magnetic_authority }} and {{ unholy_sacrament }} replacing the older
+    vote and refill packages. Recent winning lists are remarkably close to one another, and the
+    differences sit at the margins.
+</p>
+<p>
+    {{ nikica_novakovic_s_deck }}, winner of a 40-player event in 2026, runs the same five
+    vampires in slightly different ratios but cuts combat cards entirely for five {{ obedience }},
+    goes deeper on {{ cold_war }} and {{ banishment }}, and adds {{ unthinkable_humiliation }} and
+    {{ voter_captivation }} to tax blockers and refill after referendums.
+</p>
+<p>
+    {{ robert_dvoran_s_deck }} from 2024 shows the pre-Sabbat V5 shape, leaning on Presence {{ PRE }}:
+    {{ marcus_vitel }} splits the crypt, {{ minion_tap }} stands in for {{ villein }}, and the
+    ousting adds {{ iron_glare }} bleeds with {{ voter_captivation }} bloat, {{ freak_drive }}
+    double actions and {{ majesty }} to walk out of combat. It is essentially the old
+    <strong>Vitel</strong> build described on the {{ parliament_of_shadows }} page.
+</p>
+{% endtrans %}
+{% endblock %}

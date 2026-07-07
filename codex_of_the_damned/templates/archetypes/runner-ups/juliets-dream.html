@@ -1,0 +1,137 @@
+{% extends "archetypes/_layout.html" %}
+{% import "archetypes/_layout-erratum.html" as erratum with context %}
+{% import "archetypes/runner-ups/juliets-dream.json" as deck_json %}
+
+{% block meta %}
+<meta property="decklist" content='{{ deck_json | tojson }}' />
+{% endblock %}
+
+{% block archetype_name %}
+<h1>{{ malkavian }} Juliet's Dream</h1>
+{% endblock %}
+
+{% block archetype %}
+{% trans trimmed
+alexander_silverson=card("Alexander Silverson"),
+anarchist_uprising=card("Anarchist Uprising"),
+ancilla_empowerment=card("Ancilla Empowerment"),
+archon_investigation=card("Archon Investigation"),
+arishat=card("Arishat"),
+ashur_tablets=card("Ashur Tablets"),
+banishment=card("Banishment"),
+camarilla_conclave=card("Camarilla Conclave"),
+camarilla_s_iron_fist=card("Camarilla's Iron Fist"),
+deflection=card("Deflection"),
+direct_intervention=card("Direct Intervention"),
+dreams_of_the_sphinx=card("Dreams of the Sphinx"),
+eyes_of_argus=card("Eyes of Argus"),
+forgotten_labyrinth=card("Forgotten Labyrinth"),
+giant_s_blood=card("Giant's Blood"),
+govern_the_unaligned=card("Govern the Unaligned"),
+heart_of_nizchetus=card("Heart of Nizchetus"),
+juliet_parr=card("Juliet Parr"),
+kasim_bayar=card("Kasim Bayar"),
+kaymakli_nightmares=card("Kaymakli Nightmares"),
+kine_resources_contested=card("Kine Resources Contested"),
+lost_in_crowds=card("Lost in Crowds"),
+modius=card("Modius"),
+monastery_of_shadows=card("Monastery of Shadows"),
+obedience=card("Obedience"),
+papillon=card("Papillon"),
+parity_shift=card("Parity Shift"),
+political_stranglehold=card("Political Stranglehold"),
+rumors_of_gehenna=card("Rumors of Gehenna"),
+second_tradition_domain=card("Second Tradition: Domain"),
+telepathic_misdirection=card("Telepathic Misdirection"),
+the_parthenon=card("The Parthenon"),
+villein=card("Villein"),
+warmaksan=card("Warmaksan"),
+zillah_s_valley=card("Zillah's Valley"),
+bloat=link("/strategy/bloat", _("bloat"), _anchor="bloat"),
+bounce=link("/strategy/fundamentals", _("bounce"), _anchor="bounce"),
+augusto_s_deck=link("/deck-search", _("Portuguese NC"), id="12879"),
+danilo_s_deck=link("/deck-search", _("Danilo Torrisi's run"), id="11669"),
+tomasz_s_deck=link("/deck-search", _("Polish Grand Prix"), id="12126")
+%}
+<h2>Highlights</h2>
+<p>
+    This is a <em>vote</em> deck on a group 6 and 7 Camarilla crypt where every vampire wears a
+    title — six Princes and two Justicars. It is built around {{ juliet_parr }} {{ malkavian }}
+    as the star, with {{ modius }} {{ toreador }} riding shotgun. The plan is unsubtle: seat two or
+    three titled elders and start calling referendums the table cannot answer.
+</p>
+<p>
+    The two stars share a loop. Every referendum {{ juliet_parr }} {{ malkavian }} passes buys the deck
+    extra hand size until its next unlock, so it keeps drawing toward the next vote or the next answer;
+    {{ modius }} {{ toreador }} then turns the overflow into votes, pitching a spare master during the
+    polling step for an extra vote. A crypt this titled already votes heavily on its own, and
+    {{ alexander_silverson }} {{ malkavian }} makes the opposition burn blood for the privilege of voting
+    against him.
+</p>
+<p>
+    The crypt is expensive — mostly capacity 8 and 9 — so the deck fronts it with {{ zillah_s_valley }},
+    pouring blood onto the uncontrolled elders to bring them out ahead of schedule, then claws that blood
+    back with {{ villein }}. {{ the_parthenon }} and {{ rumors_of_gehenna }} buy extra master actions to lay
+    the rest of the engine down, and {{ papillon }}, {{ dreams_of_the_sphinx }} and a one-shot
+    {{ giant_s_blood }} keep the reserves full — a deep {{ bloat }} engine that both funds the elders and
+    cushions incoming damage.
+</p>
+<p>
+    Ousting is all referendum. {{ parity_shift }} is the workhorse, siphoning the wealthiest Methuselah and
+    dropping that pool wherever it stings most; {{ kine_resources_contested }} and {{ camarilla_s_iron_fist }}
+    add flat pool burn; {{ anarchist_uprising }} and {{ ancilla_empowerment }} tax a wide board.
+    {{ banishment }} clears a problem minion for tempo, and {{ political_stranglehold }} cashes the crypt's own
+    bulk of high-capacity elders into a pool swing.
+</p>
+<p>
+    None of it matters if the calls get blocked, so the deck buries its political actions in Obfuscate
+    {{ OBF }} stealth: {{ forgotten_labyrinth }} and {{ lost_in_crowds }} stack past any lone blocker, with
+    {{ camarilla_conclave }} and {{ monastery_of_shadows }} chipping in more. Its defense runs on Auspex
+    {{ AUS }} — {{ eyes_of_argus }} and {{ second_tradition_domain }} wall up intercept, and
+    {{ telepathic_misdirection }} at superior {{ AUS }} answers a bleed with a {{ bounce }}.
+    {{ archon_investigation }} and {{ direct_intervention }} sit in reserve as out-of-turn insurance — the
+    first for a lethal bleed, the second to cancel a play the deck cannot let resolve.
+</p>
+<h2>Tips &amp; Tricks</h2>
+<p>
+    {{ parity_shift }} only fires against a richer prey, so the deck is happy to run lean — pouring pool into
+    the crypt rather than sitting on it — and lets the engine refill only as far as staying under the prey
+    allows. From there, chained referendums walk the prey down while the flat burn finishes the job.
+</p>
+<p>
+    The oversized master base is not dead weight: it is {{ modius }} {{ toreador }}'s ammunition and
+    diluted through {{ ashur_tablets }}' recursion. Late-game masters that would otherwise clog the hand become votes in
+    his
+    hands, or get filtered to the bottom by {{ heart_of_nizchetus }}, while three {{ ashur_tablets }} cash in
+    for the missing piece.
+</p>
+<p>
+    Because the reactions run on Auspex {{ AUS }}, one unlocked elder can both bounce a bleed and intercept a
+    threat, and {{ eyes_of_argus }} at superior or {{ second_tradition_domain }} wakes a locked one to block
+    anyway — cover the deck lacks while tapped out calling votes. {{ warmaksan }} {{ banu_haqim }} is the lone
+    vampire without Auspex {{ AUS }}, best spent as a vote and a body rather than a blocker, while
+    {{ kasim_bayar }} {{ banu_haqim }} can ditch a spare vote for the muscle to survive a rush.
+</p>
+<h2>Variants</h2>
+<p>
+    What sets this list apart is the pairing with
+    {{ modius }} {{ toreador }} and the pivot away from Dominate {{ DOM }}: no {{ govern_the_unaligned }}, no
+    {{ deflection }}, with {{ zillah_s_valley }} and an Auspex {{ AUS }} defense standing in their place.
+</p>
+<p>
+    The classic branch keeps Dominate {{ DOM }} front and centre — {{ govern_the_unaligned }} to grow the
+    minions and lunge, {{ deflection }} {{ DOM }} to bounce, {{ obedience }} {{ dom }} to shrug off rushes. It
+    took two national-level finals in 2026: a near-pure Govern build at the {{ augusto_s_deck }} and a
+    Cavalier-equipped take at the {{ tomasz_s_deck }}, both leaning on the Dominate {{ DOM }} bounce where this
+    list leans on Auspex {{ AUS }}.
+</p>
+<p>
+    The oldest and most storied version is <strong>Malkarishat</strong>, {{ danilo_s_deck }} out of a
+    75-player field, which splices {{ arishat }} {{ baali }} into the crypt. Where {{ modius }}
+    {{ toreador }} manufactures votes from spare masters, {{ arishat }} {{ baali }} suppresses them — burning
+    blood to force a chosen vampire to abstain and muscling a referendum through against a vote deficit. Her
+    Baali {{ baali }} independence costs the deck a bit, but the abstain lock is a scalpel the all-titled
+    build cannot copy.
+</p>
+{% endtrans %}
+{% endblock %}

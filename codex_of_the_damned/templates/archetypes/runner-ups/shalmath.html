@@ -1,0 +1,141 @@
+{% extends "archetypes/_layout.html" %}
+{% import "archetypes/_layout-erratum.html" as erratum with context %}
+{% import "archetypes/runner-ups/shalmath.json" as deck_json %}
+
+{% block meta %}
+<meta property="decklist" content='{{ deck_json | tojson }}' />
+{% endblock %}
+
+{% block archetype_name %}
+<h1>{{ true_brujah }} Shalmath</h1>
+{% endblock %}
+
+{% block archetype %}
+{% trans trimmed
+andre_leroux=card("Andre LeRoux"),
+ankara_citadel=card("The Ankara Citadel, Turkey", "Ankara Citadel"),
+archon_investigation=card("Archon Investigation"),
+ashur_tablets=card("Ashur Tablets"),
+combat_ends=link("/strategy/combat", _("combat ends"), _anchor="defence"),
+decapitate=card("Decapitate"),
+deflection=card("Deflection"),
+direct_intervention=card("Direct Intervention"),
+disarm=card("Disarm"),
+domain_of_evernight=card("Domain of Evernight"),
+enkil_cog=card("Enkil Cog"),
+eye_of_hazimel=card("Eye of Hazimel"),
+force_of_personality=card("Force of Personality"),
+gregory_winter=card("Gregory Winter"),
+grinding=link("/strategy/combat", _("grinding"), _anchor="posture"),
+heart_of_nizchetus=card("Heart of Nizchetus"),
+hourglass_of_the_mind=card("Hourglass of the Mind"),
+legal_manipulations=card("Legal Manipulations"),
+majesty=card("Majesty"),
+mr_winthrop=card("Mr. Winthrop"),
+nephandus=card("Nephandus"),
+omael_kuman=card("Omael Kuman"),
+outside_the_hourglass=card("Outside the Hourglass"),
+powerbase_montreal=card("Powerbase: Montreal"),
+rewind_time=card("Rewind Time"),
+secure_haven=card("Secure Haven"),
+shalmath=card("Shalmath"),
+summon_history=card("Summon History"),
+tabriz_assembly=card("Tabriz Assembly"),
+talbot_s_chainsaw=card("Talbot's Chainsaw"),
+taste_of_vitae=card("Taste of Vitae"),
+the_book_of_going_forth_by_night=card("The Book of Going Forth by Night"),
+toolbox=link("/strategy/archetype-categories", _("toolbox"), _anchor="toolbox"),
+tye_cooper=card("Tye Cooper"),
+vaticination=card("Vaticination"),
+bram_van_stappen_s_deck=link("/deck-search", _("Bram Van Stappen's deck"), id="11950"),
+sebestyen_balazs_deck=link("/deck-search", _("Sebestyen Balazs' deck"), id="12519"),
+federico_ferrarini_s_deck=link("/deck-search", _("Federico Ferrarini's deck"), id="12316"),
+shalmath_history=link("/archetypes/shalmath-history", _("Shalmath History"))
+%}
+<h2>Highlights</h2>
+<p>
+    This is a one-man {{ toolbox }} built around {{ shalmath }}, a capacity 10 True Brujah {{ true_brujah }}
+    with the ability to unlock once each turn.
+    He fetches whatever tool the situation calls for, {{ grinding }} the whole table down with one of
+    the most punishing combat modules in the game — fresh from a win at the 2025 European Championship.
+</p>
+<p>
+    {{ summon_history }} is the engine: it drops a tool — an ally, retainer or equipment — into play,
+    or summons one of the seven singleton sidekicks straight from the crypt at no influence cost.
+    {{ ashur_tablets }} then recycle the histories and the combat cards over and over,
+    while providing the deck's main pool income.
+</p>
+<p>
+    The combat module is brutal in its simplicity. Superior {{ outside_the_hourglass }}
+    inflicts 2 damage before range is even determined, so {{ shalmath }} almost always ends the round
+    having inflicted more damage, even if he just uses {{ majesty }}. {{ disarm }} sends the opposing vampire to torpor,
+    and superior
+    {{ decapitate }} burns them outright on the way down. {{ taste_of_vitae }} refills him when needed.
+</p>
+<p>
+    Action economy is the other pillar: between his native unlock, superior {{ domain_of_evernight }}
+    and superior {{ majesty }}, {{ shalmath }} chains several actions a turn and still ends it
+    unlocked, able to block with {{ mr_winthrop }}'s intercept. {{ enkil_cog }} — legal on him at
+    capacity 10 — adds +1 bleed and lets him take actions during other Methuselahs' turns.
+</p>
+<p>
+    There is not a single reaction card in the deck. Defense is {{ shalmath }} standing unlocked and
+    fearsome, and {{ archon_investigation }}
+    and {{ direct_intervention }} as emergency exits. Ousting is a patient affair: {{ eye_of_hazimel }}
+    and {{ enkil_cog }} take his bleeds to 3, and the summoned sidekicks add their bleeds of 1
+    once the opposition lies in torpor.
+</p>
+<h2>Tips & Tricks</h2>
+<p>
+    Blocking {{ shalmath }} is a trap. With inferior {{ domain_of_evernight }}, all combat damage on
+    vampires becomes aggravated when the action is blocked, turning superior {{ outside_the_hourglass }}
+    into 2 aggravated damage that neither a dodge nor a {{ combat_ends }} can avoid — with {{ disarm }} and
+    {{ decapitate }} looming behind. Most tables quickly learn to let him act, which is exactly what
+    the deck wants.
+</p>
+<p>
+    Fetch {{ heart_of_nizchetus }} early: with most tools as one-ofs, card filtering decides how fast
+    the deck comes online, and {{ hourglass_of_the_mind }} serves the same purpose.
+    {{ talbot_s_chainsaw }} provides the rush, and its unlock phase damage goes on a summoned
+    {{ tye_cooper }}, who is immune to non-aggravated damage, while {{ omael_kuman }} keeps combats
+    at the close range {{ disarm }} requires. Against ally decks, {{ the_book_of_going_forth_by_night }}
+    steals every ally {{ shalmath }} would otherwise burn. {{ secure_haven }} is only there to contest a copy just in
+    case.
+</p>
+<p>
+    {{ summon_history }} costs X blood, so {{ shalmath }} runs through his blood quickly.
+    {{ tabriz_assembly }} feeds him one blood every unlock phase, {{ taste_of_vitae }} refuels him
+    after each kill, and {{ gregory_winter }} and {{ nephandus }} feed on the torpored victims,
+    denying any rescue in the process. {{ powerbase_montreal }} is there for the opening turns,
+    bringing the capacity 10 star out one turn earlier.
+</p>
+<p>
+    {{ andre_leroux }} is a subtle one: shaving 1 off a successful {{ shalmath }} bleed grants him
+    +2 bleed for the turn, one more point of pressure split across two minions. More generally,
+    this is an attrition deck: rush the dangerous minions first, keep control of the whole table,
+    and keep an eye on the clock — the oust often comes late.
+</p>
+<h2>Variants</h2>
+<p>
+    The archetype descends from the older build depicted in {{ shalmath_history }}, which fetched
+    {{ ankara_citadel }} first to discount everything else and leaned on heavy blood regeneration;
+    modern lists replaced that engine with {{ ashur_tablets }} recursion.
+</p>
+<p>
+    The list above is a light tuning of {{ bram_van_stappen_s_deck }}, which had already won a
+    31-player event a few months prior — the additions are mostly defensive: {{ secure_haven }},
+    {{ direct_intervention }} and {{ archon_investigation }}.
+</p>
+<p>
+    The <strong>Reactive</strong> variant swaps {{ ashur_tablets }} for a full reaction suite — ten
+    {{ deflection }} carried by small {{ dom }} sidekicks, {{ rewind_time }} to cancel key cards, and no
+    less than sixteen {{ outside_the_hourglass }} — as in {{ sebestyen_balazs_deck }}.
+</p>
+<p>
+    The <strong>Presence</strong> {{ PRE }} variant forgoes {{ summon_history }} entirely: it keeps the
+    {{ outside_the_hourglass }} and {{ disarm }} core, but ousts with {{ legal_manipulations }}
+    backed by {{ force_of_personality }}, with {{ vaticination }} for hand disruption,
+    as in {{ federico_ferrarini_s_deck }}.
+</p>
+{% endtrans %}
+{% endblock %}

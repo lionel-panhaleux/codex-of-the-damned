@@ -1,0 +1,122 @@
+{% extends "archetypes/_layout.html" %}
+{% import "archetypes/_layout-erratum.html" as erratum with context %}
+{% import "archetypes/old-guard/palla-grande.json" as deck_json %}
+
+{% block meta %}
+<meta property="decklist" content='{{ deck_json | tojson }}' />
+{% endblock %}
+
+{% block archetype_name %}
+<h1>{{ toreador_antitribu }} Palla Grande</h1>
+{% endblock %}
+
+{% block archetype %}
+{% trans trimmed
+abbot=card("Abbot"),
+anarch_convert=card("Anarch Convert"),
+anarch_troublemaker=card("Anarch Troublemaker"),
+art_scam=card("Art Scam"),
+bloat=link("/strategy/bloat", _("bloat"), _anchor="bloat"),
+bounce=link("/strategy/fundamentals", _("bounce"), _anchor="bounce"),
+bowl_of_convergence=card("Bowl of Convergence"),
+change_of_target=card("Change of Target"),
+concealed_weapon=card("Concealed Weapon"),
+consanguineous_boon=card("Consanguineous Boon"),
+delaying_tactics=card("Delaying Tactics"),
+eagles_sight=card("Eagle's Sight"),
+embraces=card("The Embrace", "Embraces"),
+enchant_kindred=card("Enchant Kindred"),
+eyes_of_argus=card("Eyes of Argus"),
+foundation_exhibit=card("Foundation Exhibit"),
+heart_of_nizchetus=card("Heart of Nizchetus"),
+jost_werner=card("Jost Werner"),
+kine_resources_contested=card("Kine Resources Contested"),
+lunge=link("/strategy/fundamentals", _("lunge"), _anchor="lunge"),
+magnum=card(".44 Magnum"),
+majesty=card("Majesty"),
+my_enemys_enemy=card("My Enemy's Enemy"),
+palla_grande=card("Palla Grande"),
+pentex_subversion=card("Pentex™ Subversion"),
+powerbase_barranquilla=card("Powerbase: Barranquilla"),
+sheila_mezarin=card("Sheila Mezarin"),
+smiling_jack=card("Smiling Jack, The Anarch"),
+sniper_rifle=card("Sniper Rifle"),
+target_vitals=card("Target Vitals"),
+telepathic_misdirection=card("Telepathic Misdirection"),
+the_embrace=card("The Embrace"),
+the_rack=card("The Rack"),
+vessel=card("Vessel"),
+wall=link("/strategy/archetype-categories", _("wall"), _anchor="wall"),
+rebekka_jost=link("/archetypes/rebekka-jost"),
+valdemirs_deck=link("/deck-search", _("Valdemir Santos' deck"), id="11168"),
+remis_deck=link("/deck-search", _("Rémi Cavaillé's deck"), id="12108")
+%}
+<h2>Highlights</h2>
+<p>
+    This old Toreador antitribu {{ toreador_antitribu }} archetype is named after its signature master:
+    {{ palla_grande }} gives every Toreador antitribu {{ toreador_antitribu }} +1 bleed.
+    The deck spends most of the game as a {{ wall }}, blocking and bouncing with {{ AUS }},
+    then flips the switch for a couple of decisive bleed turns.
+</p>
+<p>
+    The crypt is a spread of cheap Sabbat vampires, capacities 2 to 6, almost all with {{ AUS }}.
+    {{ jost_werner }} (+1 stealth) and {{ sheila_mezarin }} (+1 bleed) top the curve,
+    and the {{ anarch_convert }} thin the crypt so the deck can field three or four minions quickly.
+</p>
+<p>
+    Nearly half the library is reactions: {{ eyes_of_argus }} provide wakes and intercept,
+    {{ eagles_sight }} allow blocks anywhere on the table, and {{ telepathic_misdirection }} plus
+    {{ my_enemys_enemy }} {{ bounce }} whatever the predator sends. {{ delaying_tactics }} check votes.
+</p>
+<p>
+    Blocks are punished with guns: {{ concealed_weapon }} flashes a {{ magnum }} or the {{ sniper_rifle }},
+    and {{ target_vitals }} turns a 2-damage shot into 4 — enough to seriously damage or deter most opponents.
+</p>
+<p>
+    {{ art_scam }} and {{ vessel }} keep the pool up while {{ the_rack }} refills the main blocker,
+    and {{ the_embrace }} add extra bodies. Since Embraces made by Toreador antitribu {{ toreador_antitribu }} are
+    Toreador antitribu {{ toreador_antitribu }} themselves, each of them bleeds for 2 during a {{ palla_grande }} turn,
+    with {{ sheila_mezarin }} bleeding for 3 on her own. {{ smiling_jack }} grinds the table in the meantime.
+</p>
+<h2>Tips & Tricks</h2>
+<p>
+    {{ palla_grande }} is a timer, not {{ bloat }}: it is unique and short-lived,
+    so hold it until the {{ lunge }} is ready. Clear the way first — {{ pentex_subversion }} on the prey's best
+    blocker and the {{ anarch_troublemaker }} locks do wonders, since the bleeds themselves have no stealth.
+    {{ heart_of_nizchetus }} helps set up the burst, digging for bleed or reactions as the situation demands.
+</p>
+<p>
+    The {{ anarch_convert }} are there for crypt filtering and a point of pool, but converting strips
+    the Sabbat trait: pick the new Anarch with care, as both {{ abbot }} and {{ powerbase_barranquilla }}
+    require Sabbat vampires.
+</p>
+<p>
+    A blocking {{ sniper_rifle }} bearer can set the first round to long range, where most minions
+    cannot strike back. Keep the {{ bowl_of_convergence }} on the main blocker, and use {{ eagles_sight }}
+    to police the whole table: protecting {{ smiling_jack }} cross-table, or intercepting a key action
+    for an ally, buys the deck the time it needs.
+</p>
+<p>
+    Patience is the name of the game. Minions should not be wasted
+    on speculative bleeds that invite blocks: the deck ousts in bursts, one {{ palla_grande }} at a time.
+</p>
+<h2>Variants</h2>
+<p>
+    The <strong>Exhibit</strong> variant is the classic <em>breed & boon</em> take the archetype
+    is historically famous for. {{ valdemirs_deck }} plays 12 {{ embraces }} and 8 {{ art_scam }},
+    with {{ foundation_exhibit }} granting each non-titled Toreador antitribu {{ toreador_antitribu }} +1 vote to pass
+    {{ consanguineous_boon }} for massive bloat and {{ kine_resources_contested }} for the kill.
+    Defense is {{ majesty }} and {{ change_of_target }} instead of intercept, and 4 {{ palla_grande }}
+    remain the finisher — the swarm of 1-capacity bleeders makes them devastating.
+</p>
+<p>
+    {{ remis_deck }} sits between the two builds: the same {{ eyes_of_argus }} and
+    {{ telepathic_misdirection }} reaction core and concealed {{ magnum }}, but it applies steady
+    pressure all game long with 8 {{ enchant_kindred }} instead of saving everything for the burst.
+</p>
+<p>
+    Finally, the archetype shares blood with {{ rebekka_jost }}: {{ jost_werner }}, {{ sheila_mezarin }}
+    and half the crypt here anchor that archetype too, and intermediate builds have been played over the years.
+</p>
+{% endtrans %}
+{% endblock %}

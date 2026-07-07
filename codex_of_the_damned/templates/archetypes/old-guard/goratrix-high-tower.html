@@ -1,0 +1,131 @@
+{% extends "archetypes/_layout.html" %}
+{% import "archetypes/_layout-erratum.html" as erratum with context %}
+{% import "archetypes/old-guard/goratrix-high-tower.json" as deck_json %}
+
+{% block meta %}
+<meta property="decklist" content='{{ deck_json | tojson }}' />
+{% endblock %}
+
+{% block archetype_name %}
+<h1>{{ tremere_antitribu }} Goratrix High Tower</h1>
+{% endblock %}
+
+{% block archetype %}
+{% trans trimmed
+anarch_convert=card("Anarch Convert"),
+anarch_revolt=card("Anarch Revolt"),
+anastasz_di_zagreb=card("Anastasz di Zagreb"),
+animalism=card("Animalism"),
+army_of_rats=card("Army of Rats"),
+ashur_tablets=card("Ashur Tablets"),
+bounce=link("/strategy/fundamentals", _("bounces"), _anchor="bounce"),
+bowl_of_convergence=card("Bowl of Convergence"),
+canine_horde=card("Canine Horde"),
+carrion_crows=card("Carrion Crows"),
+cats_guidance=card("Cats' Guidance"),
+constant_revolution=card("Constant Revolution"),
+creeping_sabotage=card("Creeping Sabotage"),
+direct_intervention=card("Direct Intervention"),
+eagle_s_sight=card("Eagle's Sight"),
+enkil_cog=card("Enkil Cog"),
+eyes_of_argus=card("Eyes of Argus"),
+goratrix=card("Goratrix"),
+heart_of_nizchetus=card("Heart of Nizchetus"),
+ivory_bow=card("Ivory Bow"),
+kevlar_vest=card("Kevlar Vest"),
+magic_of_the_smith=card("Magic of the Smith"),
+millicent_smith=card("Millicent Smith, Puritan Vampire Hunter", "Millicent Smith"),
+murder_of_crows=card("Murder of Crows"),
+my_enemy_s_enemy=card("My Enemy's Enemy"),
+omaya=card("Omaya"),
+pack_alpha=card("Pack Alpha"),
+pentex_subversion=card("Pentex™ Subversion"),
+read_the_winds=card("Read the Winds"),
+rego_motum=card("Rego Motum"),
+ruins_of_ceoris=card("Ruins of Ceoris"),
+rutor_s_hand=card("Rutor's Hand"),
+sense_the_savage_way=card("Sense the Savage Way"),
+smiling_jack_the_anarch=card("Smiling Jack, The Anarch"),
+sniper_rifle=card("Sniper Rifle"),
+telepathic_misdirection=card("Telepathic Misdirection"),
+the_erciyes_fragments=card("The Erciyes Fragments"),
+the_rack=card("The Rack"),
+vessel=card("Vessel"),
+villein=card("Villein"),
+wall=link("/strategy/archetype-categories", _("wall"), _anchor="wall"),
+wash=card("Wash"),
+wider_view=card("Wider View"),
+mailton_silva_s_deck=link("/deck-search", _("Mailton Silva's deck"), id="11275"),
+mailton_silva_s_earlier_win=link("/deck-search", _("his earlier win"), id="11158")
+%}
+<h2>Highlights</h2>
+<p>
+    This is a {{ wall }} deck starring {{ goratrix }}: a single vampire manning the whole tower.
+    His superior {{ ANI }} and {{ AUS }} fuel the reaction pile, while {{ THA }} provides
+    stealthy utility actions, and his +1 bleed helps deliver the finishing blow.
+</p>
+<p>
+    The reaction module is enormous, including bleed {{ bounce }} with
+    {{ telepathic_misdirection }} and {{ my_enemy_s_enemy }} and a mass of wake and unlock effects,
+    so {{ goratrix }} is never caught locked. {{ read_the_winds }} is the signature card, buying
+    intercept without locking him down; {{ eyes_of_argus }} and {{ cats_guidance }} keep him blocking
+    round after round, and {{ eagle_s_sight }} lets him police the whole table, blocking key actions
+    even when he is not the target.
+</p>
+<p>
+    {{ goratrix }} needs very little help in combat: his ranged blood theft cannot be prevented and refills
+    him every combat. {{ carrion_crows }} and the {{ murder_of_crows }} retainers pile on damage each round
+    on top of it, with {{ pack_alpha }} deploying a crow mid-combat or converting a spent one into permanent
+    strength. {{ rego_motum }} covers prevention and {{ canine_horde }} answers weapons.
+</p>
+<p>
+    Pool damage comes from permanents the tower defends: {{ smiling_jack_the_anarch }}, {{ army_of_rats }},
+    {{ constant_revolution }} and {{ creeping_sabotage }}. Removing them means acting into a mountain of
+    intercept and a combat nobody wants. The {{ anarch_convert }} are there to make {{ goratrix }} an Anarch
+    so he can put {{ constant_revolution }} in play himself.
+</p>
+<p>
+    The economy is solid: {{ villein }}, {{ vessel }} and {{ the_rack }} keep the pool flowing,
+    and {{ ashur_tablets }} recycle the deck's many one-of tech cards. {{ the_erciyes_fragments }}
+    adds a little theft from the prey's ash heap on top.
+</p>
+<h2>Tips & Tricks</h2>
+<p>
+    {{ magic_of_the_smith }} fetches the one-of equipment suited to the table context:
+    {{ heart_of_nizchetus }} is almost always first — its card flow is what keeps such a sprawling
+    wall coherent — then {{ bowl_of_convergence }} for intercept, or {{ ivory_bow }}, {{ kevlar_vest }} and
+    {{ ruins_of_ceoris }} to upgrade combat when the crows are not enough.
+</p>
+<p>
+    {{ millicent_smith }} is a poisoned gift: she defects to the predator during the discard phase,
+    and from then on every action they take is a gamble — if the tower blocks, their acting vampire
+    is burned along with her. Against a wall that blocks everything, few predators keep acting at all.
+    Given the number of {{ eagle_s_sight }}, anyone on the table needs {{ goratrix }} permission to act if she is
+    around.
+</p>
+<p>
+    {{ rutor_s_hand }} lets {{ goratrix }} take an action — typically {{ magic_of_the_smith }} — and still
+    unlock to defend. The deck's own {{ pentex_subversion }} is best saved for constest, or for the one blocker standing
+    between the drain permanents and the prey's pool.
+</p>
+<p>
+    The backup crypt keeps the reactions live if {{ goratrix }} gets neutralized: {{ anastasz_di_zagreb }}
+    and {{ omaya }} both sport {{ AUS }} with {{ ani }}, and the {{ animalism }} master can bump Anastasz to
+    superior. {{ wash }} and {{ direct_intervention }} usually deal with the nastiest surprises first,
+    while {{ anarch_convert }} and {{ wider_view }} dig the crypt for the star.
+</p>
+<h2>Variants</h2>
+<p>
+    The archetype is remarkably stable and has been winning quietly for years, lately mostly in Brazil.
+    {{ mailton_silva_s_deck }} and {{ mailton_silva_s_earlier_win }} run an almost identical 90 cards:
+    more {{ sense_the_savage_way }} and {{ eagle_s_sight }} in place of {{ read_the_winds }}, all-in on
+    {{ carrion_crows }} instead of the {{ murder_of_crows }} and {{ pack_alpha }} package, and a
+    {{ sniper_rifle }} added to the {{ magic_of_the_smith }} targets. The earlier list also packs an
+    {{ enkil_cog }} to have {{ goratrix }} bleed at the end of the predator's turn.
+</p>
+<p>
+    Older builds leaned on {{ anarch_revolt }} as an additional clock — the Anarch theme is a legacy of
+    that era, now trimmed down to powering {{ constant_revolution }}.
+</p>
+{% endtrans %}
+{% endblock %}

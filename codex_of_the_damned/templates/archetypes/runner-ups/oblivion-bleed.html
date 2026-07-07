@@ -1,0 +1,117 @@
+{% extends "archetypes/_layout.html" %}
+{% import "archetypes/_layout-erratum.html" as erratum with context %}
+{% import "archetypes/runner-ups/oblivion-bleed.json" as deck_json %}
+
+{% block meta %}
+<meta property="decklist" content='{{ deck_json | tojson }}' />
+{% endblock %}
+
+{% block archetype_name %}
+<h1>{{ lasombra }} Oblivion Bleed</h1>
+{% endblock %}
+
+{% block archetype %}
+{% trans trimmed
+ashur_tablets=card("Ashur Tablets"),
+bounce=link("/strategy/fundamentals", _("bounce"), _anchor="bounce"),
+conditioning=card("Conditioning"),
+deflection=card("Deflection"),
+fbi_special_affairs_division=card("FBI Special Affairs Division"),
+govern_the_unaligned=card("Govern the Unaligned"),
+jake_washington=card("Jake Washington"),
+parijat_the_dark_oracle=card("Parijat, the Dark Oracle"),
+pass_through_shadow=card("Pass Through Shadow"),
+pentex_subversion=card("Pentex™ Subversion"),
+perfectionist=card("Perfectionist"),
+rush=link("/strategy/archetype-categories", _("rush"), _anchor="rush"),
+shadow_cast=card("Shadow Cast"),
+shadow_cloak=card("Shadow Cloak"),
+shadow_sentinel=card("Shadow Sentinel"),
+shroud_of_decay=card("Shroud of Decay"),
+spectral_servitor=card("Spectral Servitor"),
+stealth_and_bleed=link("/strategy/archetype-categories", _("Stealth & Bleed"), _anchor="bleed"),
+stygian_shroud=card("Stygian Shroud"),
+target_vitals=card("Target Vitals"),
+the_unmasking=card("The Unmasking"),
+toolbox=link("/strategy/archetype-categories", _("toolbox"), _anchor="toolbox"),
+villein=card("Villein"),
+wall=link("/strategy/archetype-categories", _("walls"), _anchor="wall"),
+where_the_veil_thins=card("Where the Veil Thins"),
+alessandro_donati_s_deck=link("/deck-search", _("Alessandro Donati's deck"), id="12500"),
+yuri_furtado_prange_s_deck=link("/deck-search", _("Yuri Furtado Prange's deck"), id="13009"),
+zoltán_panyik_s_deck=link("/deck-search", _("Zoltán Panyik's deck"), id="12051")
+%}
+<h2>Highlights</h2>
+<p>
+    This is a {{ stealth_and_bleed }} deck built on the group 6 Lasombra {{ lasombra }} and their
+    Oblivion {{ obl }} toolkit: a dozen vampires of capacity 3 to 7, all with at least basic {{ dom }}
+    and {{ obl }}, bleeding behind {{ govern_the_unaligned }} and {{ conditioning }} while a stream
+    of {{ spectral_servitor }} wraiths multiplies the pressure.
+</p>
+<p>
+    {{ spectral_servitor }} is the engine. Its first recruit each turn unlocks the recruiting vampire,
+    so every vampire is worth two actions: recruit and unlock, then {{ govern_the_unaligned }},
+    while the wraith chips in a bleed of its own. Better yet, the Servitor plays the deck's basic
+    Oblivion {{ obl }} cards as a vampire, so it bleeds at stealth and escapes combat with {{ pass_through_shadow }}.
+</p>
+<p>
+    A deep bench of Oblivion {{ obl }} modifiers greases the way: {{ shadow_cast }}, {{ shadow_cloak }} and
+    {{ where_the_veil_thins }} for stealth, {{ stygian_shroud }} to deny committed blockers.
+</p>
+<p>
+    Defense rests on {{ deflection }} — every crypt member has {{ dom }} — with {{ shadow_sentinel }}
+    as wakes. At superior, {{ shadow_sentinel }} wakes a locked wraith instead: with {{ the_unmasking }}
+    on the table the Servitors block vampires, and {{ target_vitals }} makes their 1 strength count
+    for 3. {{ fbi_special_affairs_division }} punishes anyone who burns a wraith in combat, so hunting
+    them down is rarely worth it.
+</p>
+<p>
+    The economy is lean but sufficient: {{ govern_the_unaligned }} at superior stocks the next vampire,
+    {{ perfectionist }} refills after unblocked actions — the deck takes plenty — and {{ jake_washington }}
+    rescues an emptied one. A Servitor lapses at the unlock phase unless it was recruited at superior
+    {{ OBL }}, which lets one spend 1 pool to keep it instead.
+</p>
+<h2>Tips & Tricks</h2>
+<p>
+    Do not pay Servitor upkeep by reflex. A recruit that unlocked its vampire and bled for 1 at stealth
+    has already paid for itself, so letting the wraith lapse can be right.
+    Keep one only when {{ the_unmasking }} is out or a blocking screen is wanted, typically when a {{ rush }} deck is
+    around,
+    or when the deck needs next-turn pressure without spending another action on a recruit.
+</p>
+<p>
+    Sequence the modifiers: spend raw stealth first and hold {{ stygian_shroud }} for committed blockers,
+    since it beats intercept stacks that raw stealth cannot. {{ where_the_veil_thins }} at superior
+    taxes each non-Oblivion {{ obl }} block attempt a blood and shuts out ally blockers entirely.
+</p>
+<p>
+    The {{ bounce }} suite lets the deck send almost everything downstream.
+    {{ pentex_subversion }} handles the one blocker stealth cannot reasonably pass.
+</p>
+<p>
+    The deck fights with stealth, not in combat: {{ pass_through_shadow }} and {{ target_vitals }} only
+    cover the Servitors. Auspex {{ aus }} {{ wall }} are the bad matchup — intercept plus bounces can slow the deck to a
+    grind,
+    and {{ rush }} decks can maul a crypt that never strikes back. Keep the wraith screen up, mind the table politics,
+    and grind.
+</p>
+<h2>Variants</h2>
+<p>
+    The archetype crystallized quickly after the group 6 Lasombra {{ lasombra }} release, and its core barely moves
+    from list to list: a dozen {{ spectral_servitor }}, a thick pack of {{ govern_the_unaligned }},
+    the four shadow modifiers and a fistful of {{ deflection }}. The spread is in the trimmings.
+</p>
+<p>
+    Most other lists run a few {{ shroud_of_decay }} beside the Governs, an oust no bounce can stop —
+    as in {{ alessandro_donati_s_deck }}, otherwise very close to this one. Lukáš Simandl's all-Govern
+    action pack is the outlier for leaving them out.
+</p>
+<p>
+    {{ yuri_furtado_prange_s_deck }} bends the economy around 6 {{ ashur_tablets }} and doubles up on
+    {{ parijat_the_dark_oracle }}, who taxes any attempt to block the wraiths.
+    {{ zoltán_panyik_s_deck }}, the archetype's largest win at
+    40 players, goes the other way: 5 {{ villein }}, 19 reactions and only 8 Servitors,
+    for a more defensive, {{ toolbox }}-paced game.
+</p>
+{% endtrans %}
+{% endblock %}

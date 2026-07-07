@@ -40,6 +40,7 @@ The whole site hangs off two files:
 
 - All pages extend `templates/layout.html`. Archetype pages extend `templates/archetypes/_layout.html` and import a co-located `.json` decklist file.
 - Card names are rendered with `card("Card Name")`, which emits a `krcg-card` span; hover previews and card data come from the external KRCG services (static.krcg.org for images/CSS/JS, api.krcg.org for the card/deck search pages, which are pure JS frontends in `static/js/`).
+- **Voice — never address the reader.** Body prose stays generic and impersonal: no "you"/"your". Use "one" ("one can", "one's prey"), the impersonal deck/player ("the deck", "the player"), the passive, or a bare imperative instead. This is a firm, site-wide rule for all user-facing content.
 
 ### i18n
 

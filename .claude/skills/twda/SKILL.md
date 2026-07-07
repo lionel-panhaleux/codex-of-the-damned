@@ -48,6 +48,18 @@ generation. Edits persist in localStorage — regenerating the page with
 identical clustering (same data + params ⇒ identical C-refs; verify when in
 doubt) keeps them valid.
 
+## Writing archetype pages
+
+Once the classification/tiering is settled and the owner has picked
+representatives, the site's archetype pages get written or refreshed. The
+authoritative brief — the template contract AND the prose-style rules the owner
+enforces (no deckbuilding copy counts in the generic description; never explain
+what a card does, since the site hovers the card text and readers know the
+cards; get the *strategy* right, not just the card text) — is
+`references/archetype-page-style.md`. Read it before writing any page, and pass
+it to any subagent you delegate a page to. Decklist JSONs come from
+`scripts/page_json.py <twda_id>`.
+
 ## TWDA refresh workflow (the working tool)
 
 1. `uv run scripts/cluster.py --since <5 years back> --out data/clusters.json`

@@ -18,14 +18,14 @@ twda=external("https://www.vekn.fr/decks/twd.htm", "Tournament Winning Deck Arch
 	Every archetype is presented with {{ twda }} deck list examples, main variations, and a play guide.
 </p>
 <p>
-	Only archetypes having proven themselves against at least 20 players twice in the last 3 years are taken into
-	account, and only if one of these wins is a Continental Championship or if they have at least four wins.
-	Example decklists are the most recent Continental Championship win, National win otherwise, or just the latest win.
-	Decks relying heavily on mechanics that have since been errated are not included.
+	Archetypes are tiered by their number of qualifying wins: victories in tournaments with 20 players
+	or more in the last 3 years. Top tier archetypes score at least half as many qualifying wins as the
+	current leader. Example decklists are recent qualifying wins, Continental or National championships
+	when possible. Decks relying heavily on mechanics that have since been errated are not included.
 </p>
 <p>
-	The starred ⭐️ archetypes have score over 50% more wins than any other: they can be considered
-	as the current "top dogs".
+	The 💀 icon singles out a dominating archetype: more than twice the qualifying wins of any other.
+	It is not just the top of the list, it is the deck to beat.
 </p>
 <p>
 	Please note that this list is built purely on TWDA statistics: more than a third of tournaments wins are achieved
@@ -35,7 +35,11 @@ twda=external("https://www.vekn.fr/decks/twd.htm", "Tournament Winning Deck Arch
 <table class="column-2">
 	<tbody>
 		<tr>
-			<td>⭐️ {{ link('/archetypes/gangrel-thing') }}</td>
+			<td>{{ link('/archetypes/endless-dance') }}</td>
+			<td>(Vote)</td>
+		</tr>
+		<tr>
+			<td>💀 {{ link('/archetypes/gangrel-thing') }}</td>
 			<td>(Wall)</td>
 		</tr>
 		<tr>
@@ -43,43 +47,35 @@ twda=external("https://www.vekn.fr/decks/twd.htm", "Tournament Winning Deck Arch
 			<td>(Toolbox)</td>
 		</tr>
 		<tr>
-			<td>⭐️ {{ link('/archetypes/haqim-royalty') }}</td>
+			<td>{{ link('/archetypes/haqim-royalty') }}</td>
 			<td>(Toolbox)</td>
 		</tr>
 		<tr>
-			<td>⭐️ {{ link("/archetypes/illegal-brawl") }}</td>
+			<td>{{ link("/archetypes/illegal-brawl") }}</td>
 			<td>(Rush / Toolbox)</td>
 		</tr>
 		<tr>
 			<td>{{ link("/archetypes/living-museum") }}</td>
 			<td>(Stealth & Bleed)</td>
 		</tr>
-		<tr>
-			<td>{{ link('/archetypes/lutz-politics') }}</td>
-			<td>(Vote & Bleed)</td>
-		</tr>
-		<tr>
-			<td>{{ link('/archetypes/malk-22') }}</td>
-			<td>(Stealth & Bleed)</td>
-		</tr>
-		<tr>
-			<td>{{ link('/archetypes/mistress') }}</td>
-			<td>(Vote & Bleed)</td>
-		</tr>
 	</tbody>
 </table>
 <table class="column-2">
 	<tbody>
 		<tr>
+			<td>{{ link('/archetypes/lutz-politics') }}</td>
+			<td>(Vote & Bleed)</td>
+		</tr>
+		<tr>
 			<td>{{ link('/archetypes/nephandii') }}</td>
 			<td>(Allies Swarm)</td>
 		</tr>
 		<tr>
-			<td>⭐️ {{ link('/archetypes/platinum-revelation') }}</td>
+			<td>{{ link('/archetypes/platinum-revelation') }}</td>
 			<td>(Stealth & Bleed)</td>
 		</tr>
 		<tr>
-			<td>{{ link('/archetypes/princess-toolbox') }}</td>
+			<td>{{ link('/archetypes/protean-barons') }}</td>
 			<td>(Toolbox)</td>
 		</tr>
 		<tr>
@@ -87,12 +83,82 @@ twda=external("https://www.vekn.fr/decks/twd.htm", "Tournament Winning Deck Arch
 			<td>(Stealth & Bleed)</td>
 		</tr>
 		<tr>
-			<td>{{ link('/archetypes/stanislava') }}</td>
+			<td>{{ link('/archetypes/the-unnamed') }}</td>
+			<td>(Stealth & Bleed)</td>
+		</tr>
+	</tbody>
+</table>
+
+{% trans trimmed %}
+<h2>Runner-ups</h2>
+<p>
+	These archetypes sit just below the top tier, with at least half as many qualifying wins
+	as the last of the top tier archetypes. They have either been successful for a while,
+	or racked up their wins recently. Keep an eye out for them, tinker and experiment
+	to reveal their full potential.
+</p>
+{% endtrans %}
+<table class="column-2">
+	<tbody>
+		<tr>
+			<td>{{ link('/archetypes/ani-barons') }}</td>
+			<td>(Rush)</td>
+		</tr>
+		<tr>
+			<td>{{ link('/archetypes/capuchin-toolbox') }}</td>
+			<td>(Toolbox)</td>
+		</tr>
+		<tr>
+			<td>{{ link('/archetypes/emerald-legion') }}</td>
+			<td>(Toolbox)</td>
+		</tr>
+		<tr>
+			<td>{{ link('/archetypes/hecata-corpse') }}</td>
+			<td>(Toolbox)</td>
+		</tr>
+		<tr>
+			<td>{{ link('/archetypes/hecata-swarm') }}</td>
+			<td>(Swarm Bleed)</td>
+		</tr>
+		<tr>
+			<td>{{ link('/archetypes/helena-guns') }}</td>
+			<td>(Wall)</td>
+		</tr>
+		<tr>
+			<td>{{ link('/archetypes/juliets-dream') }}</td>
+			<td>(Vote)</td>
+		</tr>
+		<tr>
+			<td>{{ link('/archetypes/kalinda') }}</td>
+			<td>(Stealth & Bleed)</td>
+		</tr>
+	</tbody>
+</table>
+<table class="column-2">
+	<tbody>
+		<tr>
+			<td>{{ link('/archetypes/malk-22') }}</td>
+			<td>(Stealth & Bleed)</td>
+		</tr>
+		<tr>
+			<td>{{ link('/archetypes/oblivion-bleed') }}</td>
+			<td>(Stealth & Bleed)</td>
+		</tr>
+		<tr>
+			<td>{{ link('/archetypes/pop-captivation') }}</td>
 			<td>(Vote & Bleed)</td>
 		</tr>
 		<tr>
-			<td>{{ link('/archetypes/the-unnamed') }}</td>
-			<td>(Stealth & Bleed)</td>
+			<td>{{ link('/archetypes/salubri-powerbleed') }}</td>
+			<td>(Powerbleed)</td>
+		</tr>
+		<tr>
+			<td>{{ link('/archetypes/shalmath') }}</td>
+			<td>(Toolbox)</td>
+		</tr>
+		<tr>
+			<td>{{ link('/archetypes/stanislava') }}</td>
+			<td>(Vote & Bleed)</td>
 		</tr>
 		<tr>
 			<td>{{ link('/archetypes/tupdogs') }}</td>
@@ -102,17 +168,49 @@ twda=external("https://www.vekn.fr/decks/twd.htm", "Tournament Winning Deck Arch
 </table>
 
 {% trans trimmed %}
-<h2>Runner-ups</h2>
+<h2>New Kids</h2>
 <p>
-	These archetypes are not currently top tier, but they have potential. They have either
-	been successful in the past, or have recently gotten some victories in tournaments. Keep an eye out
-	for them, tinker and experiment to reveal their full potential.
+	These archetypes are new (or unearthed) decks that have been noticed in tournaments,
+	with a couple of qualifying wins already. If they make this list, it's usually because
+	they performed, surprised, or showed potential.
+</p>
+<p>
+	They might just need your personal touch or a bit of exposure to become the next big hit.
 </p>
 {% endtrans %}
 <table class="column-2">
 	<tbody>
 		<tr>
-			<td>{{ link('/archetypes/capuchin-toolbox') }}</td>
+			<td>{{ link('/archetypes/lasombra-politics') }}</td>
+			<td>(Vote)</td>
+		</tr>
+		<tr>
+			<td>{{ link('/archetypes/piper-war-ghoul-24') }}</td>
+			<td>(Rush)</td>
+		</tr>
+	</tbody>
+</table>
+<table class="column-2">
+	<tbody>
+		<tr>
+			<td>{{ link('/archetypes/qawiyya-caine') }}</td>
+			<td>(Rush)</td>
+		</tr>
+	</tbody>
+</table>
+
+{% trans trimmed %}
+<h2>Old Guard</h2>
+<p>
+	These are long-established archetypes that keep on winning, at a slower pace.
+	They may not top the charts anymore, but they are proven, resilient designs:
+	they remain solid choices in most metas, and dismissing them is always a mistake.
+</p>
+{% endtrans %}
+<table class="column-2">
+	<tbody>
+		<tr>
+			<td>{{ link('/archetypes/anti-ventrue-grinder') }}</td>
 			<td>(Toolbox)</td>
 		</tr>
 		<tr>
@@ -120,68 +218,36 @@ twda=external("https://www.vekn.fr/decks/twd.htm", "Tournament Winning Deck Arch
 			<td>(Stealth & Bleed)</td>
 		</tr>
 		<tr>
-			<td>{{ link('/archetypes/forced-ball') }}</td>
-			<td>(Vote)</td>
-		</tr>
-	</tbody>
-</table>
-<table class="column-2">
-	<tbody>
-		<tr>
-			<td>{{ link('/archetypes/infernal-barons') }}</td>
-			<td>(Vote)</td>
-		</tr>
-		<tr>
-			<td>{{ link('/archetypes/lasombra-nocturn') }}</td>
-			<td>(Stealth & Bleed)</td>
-		</tr>
-		<tr>
-			<td>{{ link('/archetypes/protean-barons') }}</td>
-			<td>(Toolbox)</td>
-		</tr>
-	</tbody>
-</table>
-
-{% trans trimmed %}
-<h2>New Kids</h2>
-<p>
-	These archetypes are new (or unearthed) decks that have been noticed in tournaments.
-	If they make this list, it's usually because they performed, surprised, or showed potential.
-</p>
-<p>
-	They usually have a single victory to their account, but they might just need
-	your personal touch or a bit of exposure to become the next big hit.
-</p>
-{% endtrans %}
-<table class="column-2">
-	<tbody>
-		<tr>
-			<td>{{ link('/archetypes/baron-debate') }}</td>
+			<td>{{ link('/archetypes/goratrix-high-tower') }}</td>
 			<td>(Wall)</td>
 		</tr>
 		<tr>
-			<td>{{ link('/archetypes/kalinda') }}</td>
-			<td>(Stealth & Bleed)</td>
+			<td>{{ link('/archetypes/khazars-diary') }}</td>
+			<td>(Swarm)</td>
 		</tr>
 		<tr>
-			<td>{{ link('/archetypes/malkarishat') }}</td>
-			<td>(Vote)</td>
+			<td>{{ link('/archetypes/lasombra-pop') }}</td>
+			<td>(Vote & Bleed)</td>
 		</tr>
 	</tbody>
 </table>
 <table class="column-2">
 	<tbody>
 		<tr>
-			<td>{{ link('/archetypes/piper-war-ghoul-24') }}</td>
-			<td>(Rush)</td>
-		</tr>
-		<tr>
-			<td>{{ link('/archetypes/salubri-powerbleed') }}</td>
-			<td>(Powerbleed)</td>
-		</tr>
-		<tr>
-			<td>{{ link('/archetypes/thucimia') }}</td>
+			<td>{{ link('/archetypes/nergal-beast') }}</td>
 			<td>(Stealth & Bleed)</td>
+		</tr>
+		<tr>
+			<td>{{ link('/archetypes/palla-grande') }}</td>
+			<td>(Wall)</td>
+		</tr>
+		<tr>
+			<td>{{ link('/archetypes/princess-toolbox') }}</td>
+			<td>(Toolbox)</td>
+		</tr>
+		<tr>
+			<td>{{ link('/archetypes/tzimisce-toolbox') }}</td>
+			<td>(Rush)</td>
 		</tr>
 	</tbody>
 </table>
@@ -202,7 +268,7 @@ vtes_discord=external("https://discord.gg/cafUcrDP8k", _("V:TES Discord"))
 </p>
 <p>
 	You can also consult other archetypes list,
-	like the « Bibliodèque »: a French project with more than a hundred decklists,
+	like the « Bibliodèque »: a French project with more than a hundred decklists,
 	the project history is on the {{ french_vekn_forum }}
 	and the final decklists with proxies on {{ google_drive }}.
 </p>
@@ -227,10 +293,6 @@ vtes_discord=external("https://discord.gg/cafUcrDP8k", _("V:TES Discord"))
 		</tr>
 		<tr>
 			<td>{{ link('/archetypes/anson-guns') }}</td>
-			<td>(Toolbox)</td>
-		</tr>
-		<tr>
-			<td>{{ link('/archetypes/anti-ventrue-grinder') }}</td>
 			<td>(Toolbox)</td>
 		</tr>
 		<tr>
@@ -282,15 +344,7 @@ vtes_discord=external("https://discord.gg/cafUcrDP8k", _("V:TES Discord"))
 			<td>(Vote)</td>
 		</tr>
 		<tr>
-			<td>{{ link('/archetypes/dementation-bleed') }}</td>
-			<td>(Stealth & Bleed)</td>
-		</tr>
-		<tr>
 			<td>{{ link('/archetypes/dmitris-big-band') }}</td>
-			<td>(Toolbox)</td>
-		</tr>
-		<tr>
-			<td>{{ link('/archetypes/emerald-legion') }}</td>
 			<td>(Toolbox)</td>
 		</tr>
 		<tr>
@@ -322,10 +376,6 @@ vtes_discord=external("https://discord.gg/cafUcrDP8k", _("V:TES Discord"))
 			<td>(Stealth & Bleed)</td>
 		</tr>
 		<tr>
-			<td>{{ link('/archetypes/goratrix-high-tower') }}</td>
-			<td>(Wall)</td>
-		</tr>
-		<tr>
 			<td>{{ link('/archetypes/guillaume-real-estate') }}</td>
 			<td>(Stealth & Bleed)</td>
 		</tr>
@@ -342,6 +392,10 @@ vtes_discord=external("https://discord.gg/cafUcrDP8k", _("V:TES Discord"))
 			<td>(Toolbox)</td>
 		</tr>
 		<tr>
+			<td>{{ link('/archetypes/infernal-barons') }}</td>
+			<td>(Vote)</td>
+		</tr>
+		<tr>
 			<td>{{ link('/archetypes/infernal-princes') }}</td>
 			<td>(Vote)</td>
 		</tr>
@@ -349,18 +403,18 @@ vtes_discord=external("https://discord.gg/cafUcrDP8k", _("V:TES Discord"))
 			<td>{{ link('/archetypes/ishtarri-politics') }}</td>
 			<td>(Vote)</td>
 		</tr>
-	</tbody>
-</table>
-<table class="column-2">
-	<tbody>
-		<tr>
-			<td>{{ link('/archetypes/khazars-diary') }}</td>
-			<td>(Swarm)</td>
-		</tr>
 		<tr>
 			<td>{{ link('/archetypes/kiasyd-stealth-bleed') }}</td>
 			<td>(Stealth & Bleed)</td>
 		</tr>
+		<tr>
+			<td>{{ link('/archetypes/lasombra-nocturn') }}</td>
+			<td>(Stealth & Bleed)</td>
+		</tr>
+	</tbody>
+</table>
+<table class="column-2">
+	<tbody>
 		<tr>
 			<td>{{ link('/archetypes/legacy-of-pander') }}</td>
 			<td>(Swarm Vote)</td>
@@ -382,6 +436,10 @@ vtes_discord=external("https://discord.gg/cafUcrDP8k", _("V:TES Discord"))
 			<td>(Wall)</td>
 		</tr>
 		<tr>
+			<td>{{ link('/archetypes/mistress') }}</td>
+			<td>(Vote & Bleed)</td>
+		</tr>
+		<tr>
 			<td>{{ link('/archetypes/mmpa-politics') }}</td>
 			<td>(Vote & Bleed)</td>
 		</tr>
@@ -392,10 +450,6 @@ vtes_discord=external("https://discord.gg/cafUcrDP8k", _("V:TES Discord"))
 		<tr>
 			<td>{{ link('/archetypes/nosferatu-royalty') }}</td>
 			<td>(Toolbox)</td>
-		</tr>
-		<tr>
-			<td>{{ link('/archetypes/palla-grande') }}</td>
-			<td>(Rush)</td>
 		</tr>
 		<tr>
 			<td>{{ link('/archetypes/parliament-of-shadows') }}</td>
@@ -470,12 +524,12 @@ vtes_discord=external("https://discord.gg/cafUcrDP8k", _("V:TES Discord"))
 			<td>(Vote)</td>
 		</tr>
 		<tr>
-			<td>{{ link('/archetypes/tunnel-runners') }}</td>
-			<td>(Allies)</td>
+			<td>{{ link('/archetypes/thucimia') }}</td>
+			<td>(Stealth & Bleed)</td>
 		</tr>
 		<tr>
-			<td>{{ link('/archetypes/tzimisce-toolbox') }}</td>
-			<td>(Rush)</td>
+			<td>{{ link('/archetypes/tunnel-runners') }}</td>
+			<td>(Allies)</td>
 		</tr>
 		<tr>
 			<td>{{ link('/archetypes/war-ghouls') }}</td>

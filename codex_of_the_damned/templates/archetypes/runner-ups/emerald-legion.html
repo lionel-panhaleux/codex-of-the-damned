@@ -1,0 +1,113 @@
+{% extends "archetypes/_layout.html" %}
+{% import "archetypes/_layout-erratum.html" as erratum with context %}
+{% import "archetypes/runner-ups/emerald-legion.json" as deck_json %}
+
+{% block meta %}
+<meta property="decklist" content='{{ deck_json | tojson }}' />
+{% endblock %}
+
+{% block archetype_name %}
+<h1>{{ harbinger_of_skulls }} Emerald Legion</h1>
+{% endblock %}
+
+{% block archetype %}
+{% trans trimmed
+archon_investigation=card("Archon Investigation"),
+babalawo_alafin=card("Babalawo Alafin"),
+bloat=link("/strategy/bloat", _("bloat"), _anchor="bloat"),
+bounce=link("/strategy/fundamentals", _("bounce"), _anchor="bounce"),
+breath_of_thanatos=card("Breath of Thanatos"),
+call_of_the_hungry_dead=card("Call of the Hungry Dead"),
+charisma=card("Charisma"),
+delaying_tactics=card("Delaying Tactics"),
+direct_intervention=card("Direct Intervention"),
+disciple_of_lazarus=card("Disciple of Lazarus"),
+emerald_legionnaire=card("Emerald Legionnaire"),
+erebus=card("Erebus"),
+erlik=card("Erlik"),
+eyes_of_argus=card("Eyes of Argus"),
+fbi_special_affairs_division=card("FBI Special Affairs Division"),
+freak_drive=card("Freak Drive"),
+liquidation=card("Liquidation"),
+meta=link("/strategy/articles/advanced/the-game-of-the-game", _("meta")),
+my_enemy_s_enemy=card("My Enemy's Enemy"),
+on_the_qui_vive=card("On the Qui Vive"),
+soul_feasting=card("Soul Feasting"),
+spiritual_intervention=card("Spiritual Intervention"),
+target_vitals=card("Target Vitals"),
+telepathic_misdirection=card("Telepathic Misdirection"),
+the_unmasking=card("The Unmasking"),
+toolbox=link("/strategy/archetype-categories", _("toolbox"), _anchor="toolbox"),
+villein=card("Villein"),
+wider_view=card("Wider View"),
+ivan_candioli_s_deck=link("/deck-search", _("Ivan Candioli's Zlegion"), id="10854")
+%}
+<h2>Highlights</h2>
+<p>
+    This is an ally {{ toolbox }} built on the Harbingers of Skulls {{ harbinger_of_skulls }}
+    and their Necromancy {{ NEC }}, out to flood the table with {{ emerald_legionnaire }}.
+    {{ erlik }} anchors the crypt as the star: as he lands he can push blood into the Harbingers
+    still waiting in the uncontrolled region, jump-starting the influence race, and the rest of the
+    crypt is smaller Harbingers along the same lines.
+</p>
+<p>
+    Since its February 2024 errata, {{ emerald_legionnaire }} only comes back from the ash heap
+    while there are more ready Harbingers {{ harbinger_of_skulls }} in play than copies already out,
+    so the whole deck is bent on getting Harbingers onto the board. {{ disciple_of_lazarus }} is the
+    accelerator, fetching the next Harbinger from the crypt or blood-loading one already waiting,
+    and {{ freak_drive }} {{ for }} unlocks the acting vampire for more actions.
+    {{ villein }} and {{ liquidation }} {{ bloat }}
+    to keep the pool flowing to influence the crypt out, and every new Harbinger lifts the
+    {{ emerald_legionnaire }} ceiling another notch.
+</p>
+<p>
+    The Legionnaires close the game. Each bleeds for only one, which makes {{ bounce }} a losing
+    trade for the prey — a single redirected point of pool is rarely worth a card — while the
+    board keeps widening around it.
+</p>
+<p>
+    Defence is a toolbox of its own. The Harbingers carry Auspex {{ AUS }},
+    so bleeds are turned aside by {{ telepathic_misdirection }} and {{ my_enemy_s_enemy }}, and
+    {{ eyes_of_argus }} provide wakes. The Legionnaire
+    swarm walls in its own right once {{ the_unmasking }} is down and {{ on_the_qui_vive }} stands a
+    locked wraith back up, while {{ fbi_special_affairs_division }} punishes anyone who rushes an
+    ally to death. In combat the Harbingers lean on {{ spiritual_intervention }} {{ NEC }} to end
+    the fight or slip away untouched.
+</p>
+<h2>Tips & Tricks</h2>
+<p>
+    The early game is an unlock loop: a stealthed {{ disciple_of_lazarus }} or {{ soul_feasting }},
+    then {{ freak_drive }} to unlock, pulling the crypt into play while the vampire
+    stays up to react. {{ soul_feasting }} {{ NEC }} doubles as the feeding that pays for all that
+    influence. {{ breath_of_thanatos }} buys stealth to land a Legionnaire recruit — or, at superior
+    {{ NEC }}, an aggravated strike — and {{ call_of_the_hungry_dead }} shrugs off the one blocker
+    that matters.
+</p>
+<p>
+    Landing the first wraith is cheap: {{ charisma }} and {{ erebus }} both shave the recruit cost.
+    From there the ash heap is a resource — each reanimation strips seven cards out of it, so
+    {{ liquidation }} earns its slot twice over, bloating while it stocks the graveyard the
+    Legionnaires feed on. {{ wider_view }} digs for the missing Harbinger and thins the crypt, and
+    {{ babalawo_alafin }} smooths the hand while quietly shrinking everyone else's.
+</p>
+<p>
+    {{ delaying_tactics }} cancels the anti-swarm referendum
+    outright; {{ direct_intervention }} cancels the
+    master or vote aimed at the board and covers the wraiths against rushes and steals;
+    {{ archon_investigation }} deletes the oversized bleeder before it lands. Rationing these against
+    the table's {{ meta }} is the real skill test.
+</p>
+<h2>Variants</h2>
+<p>
+    The Emerald Legion was a dominant force a few years back, before the errata reined the
+    Legionnaire in. The list here is Lech Ivanov's post-errata rebuild,leaning
+    hard on the {{ disciple_of_lazarus }} influence engine and {{ freak_drive }} to keep the
+    Harbinger count climbing, rather than turning the wraiths into fighters.
+</p>
+<p>
+    {{ ivan_candioli_s_deck }}, a 45-player win from late 2023, is a snapshot of the pre-errata
+    engine at full power — extra allies and unbounded reanimation — and a reminder of why the card
+    was toned down. The shell has gone on winning on both sides of that change.
+</p>
+{% endtrans %}
+{% endblock %}

@@ -1,0 +1,127 @@
+{% extends "archetypes/_layout.html" %}
+{% import "archetypes/_layout-erratum.html" as erratum with context %}
+{% import "archetypes/runner-ups/hecata-corpse.json" as deck_json %}
+
+{% block meta %}
+<meta property="decklist" content='{{ deck_json | tojson }}' />
+{% endblock %}
+
+{% block archetype_name %}
+<h1>{{ hecata }} Hecata Corpse</h1>
+{% endblock %}
+
+{% block archetype %}
+{% trans trimmed
+aggressive_corpse=card("Aggressive Corpse"),
+alek_könig=card("Alek König"),
+ashur_tablets=card("Ashur Tablets"),
+bounce=link("/strategy/fundamentals", _("bounce"), _anchor="bounce"),
+cappadocian_crypt=card("Cappadocian Crypt"),
+dance_of_the_dead=card("Dance of the Dead"),
+dragonbound=card("Dragonbound"),
+eyes_of_argus=card("Eyes of Argus"),
+fame=card("Fame"),
+family_gathering=card("Family Gathering"),
+fbi_special_affairs_division=card("FBI Special Affairs Division"),
+heart_of_nizchetus=card("Heart of Nizchetus"),
+lenelle=card("Lenelle, Mambo of Birmingham", "Lenelle"),
+liquidation=card("Liquidation"),
+mora=card("Mora, the Death Seer", "Mora"),
+perfectionist=card("Perfectionist"),
+powerbase_munich=card("Powerbase: Munich"),
+psychophagia=card("Psychophagia"),
+rotting_behemoth=card("Rotting Behemoth"),
+shadow_cast=card("Shadow Cast"),
+shadow_cloak=card("Shadow Cloak"),
+shadow_sentinel=card("Shadow Sentinel"),
+shroud_of_decay=card("Shroud of Decay"),
+spectral_servitor=card("Spectral Servitor"),
+split_the_veil=card("Split the Veil"),
+stygian_shroud=card("Stygian Shroud"),
+telepathic_misdirection=card("Telepathic Misdirection"),
+the_unmasking=card("The Unmasking"),
+toolbox=link("/strategy/archetype-categories", _("toolbox"), _anchor="toolbox"),
+trap=card("Trap"),
+tye_cooper=card("Tye Cooper"),
+vessel=card("Vessel"),
+wall=link("/strategy/archetype-categories", _("wall"), _anchor="wall"),
+where_the_veil_thins=card("Where the Veil Thins"),
+jorge_ramos_deck=link("/deck-search", _("Jorge Ramos' deck"), id="12598"),
+nicola_lonardi_s_deck=link("/deck-search", _("Nicola Lonardi's deck"), id="12368"),
+ivan_candioli_s_deck=link("/deck-search", _("Ivan Candioli's deck"), id="12307")
+%}
+<h2>Highlights</h2>
+<p>
+    This is a Hecata {{ hecata }} {{ toolbox }} built on Oblivion {{ obl }} and disposable corpse allies.
+    The crypt is all group 6 Hecata {{ hecata }}, with {{ obl }} everywhere and {{ aus }} on most,
+    topped by {{ mora }}, whose bleed and library recursion both earn their keep here.
+</p>
+<p>
+    The prey is ousted with {{ shroud_of_decay }}, an Oblivion {{ obl }} action that fattens the prey's ash heap at
+    inferior and cashes it in for burned pool at superior. A stack of Oblivion {{ obl }} stealth modifiers pushes
+    the actions through: {{ shadow_cast }} and {{ shadow_cloak }} for stealth, {{ where_the_veil_thins }}
+    to tax blockers a blood, and {{ stygian_shroud }} to deny a motivated blocker.
+</p>
+<p>
+    The corpses do the dirty work. {{ aggressive_corpse }} rush problem minions and, since they cannot
+    gain life, are meant to be spent. {{ spectral_servitor }} unlock their recruiter and help bleed;
+    they can play basic {{ obl }} cards like {{ shadow_cast }} or even {{ shadow_sentinel }}.
+</p>
+<p>
+    Bleed defense is classic Auspex {{ aus }}, on {{ telepathic_misdirection }} and {{ eyes_of_argus }}.
+    {{ the_unmasking }} turns every corpse into a blocker, {{ shadow_sentinel }} wakes them to block, and
+    {{ fbi_special_affairs_division }} punishes any acting vampire that burns one in combat — so blocking
+    with a corpse becomes a real deterrent.
+</p>
+<p>
+    Allies are paid in blood, so the masters focus on blood economy. With an all-Hecata {{ hecata }} crypt,
+    {{ family_gathering }} never misses — a free trifle that speeds crypt draw and adds blood.
+    {{ perfectionist }}, {{ vessel }}, {{ powerbase_munich }} and {{ cappadocian_crypt }} keep the
+    vampires and the pool afloat, while dead corpses are fuel: {{ split_the_veil }} raises them back
+    from the ash heap, and {{ psychophagia }} converts a dead ally into blood.
+</p>
+<h2>Tips & Tricks</h2>
+<p>
+    {{ spectral_servitor }} is burned during the unlock phase unless recruited at {{ OBL }},
+    in which case one can burn 1 pool instead. Do the math each turn: a Servitor that bled once has
+    already paid for its single blood, so letting it go and raising it back later with
+    {{ split_the_veil }} is often better than paying. {{ alek_könig }} recruits Servitors at superior
+    {{ OBL }} and costs only 3 to bring out, a fine early drop.
+</p>
+<p>
+    Aim {{ shroud_of_decay }} for the lunge: the superior version is the goal here.
+    A directed action, but not a bleed, so no {{ bounce }} or bleed reduction applies —
+    a clean finisher against a well-defended prey.
+</p>
+<p>
+    {{ aggressive_corpse }} clears blockers ahead of a lunge sequence, and {{ tye_cooper }} can then burn
+    the torpored minion outright, on top of being a great defense and potential bleeder. {{ dance_of_the_dead }}
+    gives the zombies the maneuvers and presses they otherwise lack against mobile opponents.
+</p>
+<p>
+    As in any <em>toolbox</em>, card flow is key: {{ heart_of_nizchetus }} digs into the top of
+    the library, {{ mora }} recurses a card to the bottom of the library each discard phase, and
+    {{ lenelle }} trades a dead card in hand for the answer in the ash heap. Few cards are ever truly
+    lost — prioritize recycling {{ shroud_of_decay }}.
+</p>
+<h2>Variants</h2>
+<p>
+    There are no settled named variants yet, but the winning lists share a stable core — group 6 Hecata {{ hecata }},
+    zombie allies recycled with {{ split_the_veil }}, {{ telepathic_misdirection }}, {{ the_unmasking }}
+    and the Oblivion {{ obl }} stealth modifiers — and diverge on how they oust.
+</p>
+<p>
+    {{ jorge_ramos_deck }} is the closest relative, on the same {{ shroud_of_decay }} plan but with an
+    all-in engine: 12 {{ spectral_servitor }}, 10 {{ rotting_behemoth }} and 8 {{ split_the_veil }},
+    plus {{ trap }} to keep a victim locked in combat with a 3-strength Behemoth.
+    {{ rotting_behemoth }} is the archetype's other zombie of choice — a bigger body bought by removing a
+    dead {{ spectral_servitor }} from the ash heap.
+</p>
+<p>
+    The other branch drops {{ shroud_of_decay }} altogether and grinds the table down with rushes, cashing
+    them in with {{ fame }} and {{ dragonbound }}, as in {{ nicola_lonardi_s_deck }} — which runs 6
+    {{ ashur_tablets }} and 4 {{ liquidation }} for economy — or {{ ivan_candioli_s_deck }}, whose 23
+    reactions make it play like a corpse-powered {{ wall }}.
+</p>
+{% endtrans %}
+{% endblock %}

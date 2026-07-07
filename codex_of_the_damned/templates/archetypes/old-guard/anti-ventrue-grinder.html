@@ -1,0 +1,134 @@
+{% extends "archetypes/_layout.html" %}
+{% import "archetypes/_layout-erratum.html" as erratum with context %}
+{% import "archetypes/old-guard/anti-ventrue-grinder.json" as deck_json %}
+
+{% block meta %}
+<meta property="decklist" content='{{ deck_json | tojson }}' />
+{% endblock %}
+
+{% block archetype_name %}
+<h1>{{ ventrue_antitribu }} Anti Ventrue Grinder</h1>
+{% endblock %}
+
+{% block archetype %}
+{% trans trimmed
+anarch_troublemaker=card("Anarch Troublemaker"),
+blackhorse_tanner=card("Blackhorse Tanner"),
+bonding=card("Bonding"),
+bowl_of_convergence=card("Bowl of Convergence"),
+channel_10=card("Channel 10"),
+conditioning=card("Conditioning"),
+corporate_hunting_ground=card("Corporate Hunting Ground"),
+daring_the_dawn=card("Daring the Dawn"),
+deflection=card("Deflection"),
+delaying_tactics=card("Delaying Tactics"),
+dreams_of_the_sphinx=card("Dreams of the Sphinx"),
+edward_neally=card("Edward Neally"),
+effective_management=card("Effective Management"),
+eyes_of_argus=card("Eyes of Argus"),
+giant_s_blood=card("Giant's Blood"),
+govern_the_unaligned=card("Govern the Unaligned"),
+heart_of_nizchetus=card("Heart of Nizchetus"),
+hidden_strength=card("Hidden Strength"),
+indomitability=card("Indomitability"),
+ivory_bow=card("Ivory Bow"),
+jefferson_foster=card("Jefferson Foster"),
+krcg_news_radio=card("KRCG News Radio"),
+lana_butcher=card("Lana Butcher"),
+my_enemy_s_enemy=card("My Enemy's Enemy"),
+neighbor_john=card("Neighbor John"),
+on_the_qui_vive=card("On the Qui Vive"),
+owain_evans_the_wanderer=card("Owain Evans, The Wanderer", "Owain Evans"),
+pentex_subversion=card("Pentex™ Subversion"),
+powerbase_montreal=card("Powerbase: Montreal"),
+rolling_with_the_punches=card("Rolling with the Punches"),
+skin_of_steel=card("Skin of Steel"),
+soak=card("Soak"),
+superior_mettle=card("Superior Mettle"),
+telepathic_misdirection=card("Telepathic Misdirection"),
+the_coven=card("The Coven"),
+under_siege=card("Under Siege"),
+vessel=card("Vessel"),
+villein=card("Villein"),
+weighted_walking_stick=card("Weighted Walking Stick"),
+wider_view=card("Wider View"),
+bounce=link("/strategy/fundamentals", _("bounce"), _anchor="bounce"),
+grinding=link("/strategy/combat", _("grinding"), _anchor="posture"),
+lunge=link("/strategy/fundamentals", _("lunge"), _anchor="lunge"),
+toolbox=link("/strategy/archetype-categories", _("toolbox"), _anchor="toolbox"),
+eduardo_lemos_s_deck=link("/deck-search", _("Eduardo Lemos' deck"), id="12686"),
+marius_iscru_s_deck=link("/deck-search", _("Marius Iscru's deck"), id="11304")
+%}
+<h2>Highlights</h2>
+<p>
+    Often spelled <strong>!Ventrue Grinder</strong>
+    (the "!" prefix has been used to denote the antitribu clans for a while),
+    this is a {{ toolbox }} deck using the Ventrue antitribu {{ ventrue_antitribu }} clan and their
+    {{ FOR }}{{ AUS }}{{ DOM }} disciplines combination. It is one of the oldest archetypes around and its
+    shape has barely moved
+    in decades: this list took the 2026 Italian NC over 47 players.
+</p>
+<p>
+    The idea is to get a high capacity vampire out, then use {{ govern_the_unaligned }}
+    at superior {{ DOM }} to get more vampires out fast and cheap, before turning the same card into
+    bleeds backed by {{ conditioning }} or {{ bonding }}. {{ effective_management }}, {{ wider_view }}
+    and {{ powerbase_montreal }} keep the crypt flowing towards the key vampires.
+</p>
+<p>
+    {{ owain_evans_the_wanderer }} is the economic heart of the deck: he refuels the coterie for free
+    once a turn, and can slip a blood to another player's vampire to buy goodwill cross-table.
+    {{ the_coven }} and {{ corporate_hunting_ground }} bring in more blood, and {{ vessel }} turns
+    the surplus into pool.
+</p>
+<p>
+    Defense is where the deck shines: a thick stack of {{ bounce }}s between {{ deflection }} and
+    {{ telepathic_misdirection }}, plus {{ my_enemy_s_enemy }} against the predator.
+    {{ on_the_qui_vive }} and superior {{ eyes_of_argus }} provide the wakes, while intercept comes
+    from inferior {{ eyes_of_argus }}, {{ neighbor_john }}, {{ channel_10 }} and {{ krcg_news_radio }}.
+    {{ delaying_tactics }} covers the referendums the {{ aus }} module cannot touch.
+</p>
+<p>
+    The combat module is the grinder: the {{ weighted_walking_stick }} chips away round after round,
+    while {{ for }} prevention makes the exchange one-sided — {{ rolling_with_the_punches }}, backed
+    by {{ hidden_strength }} and {{ soak }}. The deck blocks and whacks, {{ grinding }} at the
+    opponents' blood and pool during the game until it can finally {{ lunge }} to oust its prey.
+</p>
+<h2>Tips & Tricks</h2>
+<p>
+    {{ daring_the_dawn }} is kept for the lunge: {{ govern_the_unaligned }} with superior
+    {{ conditioning }} is a bleed of 6 no vampire can block, and at superior {{ FOR }} the acting
+    vampire takes only 1 aggravated damage. Note that {{ conditioning }} and {{ bonding }} are both
+    limited and do not stack: {{ bonding }} is the smaller, stealthier bleed option.
+</p>
+<p>
+    The deck has next to no stealth, so it borrows a couple of <em>powerbleed</em> tricks:
+    {{ pentex_subversion }} shuts down the key blocker, and {{ anarch_troublemaker }} can lock
+    up to two of the prey's vampires right before the minion phase — at the price of handing
+    them the card afterwards.
+</p>
+<p>
+    {{ under_siege }} needs a titled Sabbat vampire to play, so {{ jefferson_foster }}, the crypt's
+    lone bishop, is the one who lands it — and once it is out, only {{ lana_butcher }}, the lone
+    Camarilla recruit, cannot tap it for a surprise block.
+</p>
+<p>
+    With a large library full of singletons, card flow matters: {{ blackhorse_tanner }} filters
+    one card every turn, {{ heart_of_nizchetus }} digs three cards deeper every unlock phase, and
+    {{ dreams_of_the_sphinx }} and {{ edward_neally }} extend the hand. This is what lets the
+    <em>toolbox</em> find the right answer at the right time.
+</p>
+<h2>Variants</h2>
+<p>
+    Recent winning lists only differ at the margins. {{ eduardo_lemos_s_deck }}, which won a
+    35 players event in 2025, plays a third copy of {{ owain_evans_the_wanderer }} and a thicker
+    prevention package with {{ indomitability }}, {{ skin_of_steel }} and {{ superior_mettle }},
+    plus {{ giant_s_blood }} and a {{ bowl_of_convergence }}.
+</p>
+<p>
+    {{ marius_iscru_s_deck }}, from a 30 players event in 2024, leans <em>powerbleed</em>:
+    it drops the {{ weighted_walking_stick }} entirely for a light, prevention-only combat module,
+    stacks eleven {{ deflection }}, doubles {{ pentex_subversion }} and {{ anarch_troublemaker }},
+    and adds {{ villein }} and an {{ ivory_bow }}.
+</p>
+{% endtrans %}
+{% endblock %}

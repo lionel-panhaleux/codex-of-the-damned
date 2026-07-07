@@ -1,0 +1,113 @@
+{% extends "archetypes/_layout.html" %}
+{% import "archetypes/_layout-erratum.html" as erratum with context %}
+{% import "archetypes/new-kids/lasombra-politics.json" as deck_json %}
+
+{% block meta %}
+<meta property="decklist" content='{{ deck_json | tojson }}' />
+{% endblock %}
+
+{% block archetype_name %}
+<h1>{{ lasombra }} Lasombra Politics</h1>
+{% endblock %}
+
+{% block archetype %}
+{% trans trimmed
+amici_noctis=card("Amici Noctis"),
+bonding=card("Bonding"),
+camarilla_s_iron_fist=card("Camarilla's Iron Fist"),
+conditioning=card("Conditioning"),
+deflection=card("Deflection"),
+foreshadowing_destruction=card("Foreshadowing Destruction"),
+freak_drive=card("Freak Drive"),
+giant_s_blood=card("Giant's Blood"),
+govern_the_unaligned=card("Govern the Unaligned"),
+kine_resources_contested=card("Kine Resources Contested"),
+lasombra_justicar=card("Lasombra Justicar"),
+ominous_chorus=card("Ominous Chorus"),
+parity_shift=card("Parity Shift"),
+pass_through_shadow=card("Pass Through Shadow"),
+power_structure=card("Power Structure"),
+second_tradition_domain=card("Second Tradition: Domain"),
+shadow_cast=card("Shadow Cast"),
+shadow_cloak=card("Shadow Cloak"),
+shadow_sentinel=card("Shadow Sentinel"),
+shroud_of_decay=card("Shroud of Decay"),
+spectral_servitor=card("Spectral Servitor"),
+stygian_shroud=card("Stygian Shroud"),
+villein=card("Villein"),
+where_the_veil_thins=card("Where the Veil Thins"),
+yewon_ong=card("Yewon Ong"),
+ivan_marin_rivas_deck=link("/deck-search", _("Ivan Marin-Rivas' deck"), id="13093"),
+jorge_garcia_s_deck=link("/deck-search", _("Jorge Garcia's deck"), id="12640")
+%}
+<h2>Highlights</h2>
+<p>
+    This is a <em>vote</em> deck built on the group 6 Camarilla Lasombra crypt.
+    Ten of the twelve crypt cards carry a Camarilla title — four different Princes and two Primogens —
+    and every vampire has both Dominate {{ DOM }} and Oblivion {{ OBL }}, superior on all but the smallest.
+    {{ power_structure }} adds +1 vote to each Lasombra on top of that.
+</p>
+<p>
+    The early game is pure setup: {{ govern_the_unaligned }} at superior {{ DOM }}
+    grow the minion base at +1 stealth while {{ villein }} refill the pool.
+    In the author's own words: transfer, govern, {{ villein }}, almost never bleed.
+    Once two or three titled vampires are out, the referendums start.
+</p>
+<p>
+    Pool damage comes from {{ kine_resources_contested }} and {{ camarilla_s_iron_fist }} —
+    the latter spreads 5 points among two or more other Methuselahs and even hands 1 pool
+    to a player of one's choice, which either goes to oneself or serves as deal-making material.
+    {{ parity_shift }}, {{ ominous_chorus }} and the {{ lasombra_justicar }} title round out the political package,
+    and {{ amici_noctis }} converts passed referendum into blood and pool.
+</p>
+<p>
+    Blocking a Lasombra is a miserable proposition: {{ where_the_veil_thins }}, {{ shadow_cast }}
+    and {{ shadow_cloak }} provide plain stealth, and {{ stygian_shroud }} at superior {{ OBL }}
+    deny motivated blockers.
+    The {{ pass_through_shadow }} are combat ends that, at superior, come back
+    as a +1 stealth counter on the vampire.
+</p>
+<p>
+    The deck was built as a meta answer to heavy bleed: it is designed to take pool damage and live.
+    {{ deflection }} on an all-Dominate crypt handle the bleeds it cares to defend,
+    and the {{ villein }}, {{ giant_s_blood }} and {{ amici_noctis }} engine regrows
+    whatever the table manages to burn.
+</p>
+<h2>Tips & Tricks</h2>
+<p>
+    {{ amici_noctis }} rewards winning big: each vote of margin is a blood or a pool.
+    Keep an unlocked titled vampire around, as {{ ominous_chorus }} is both a modifier and a reaction
+    and its +3 votes can swing other players' referendums too.
+    {{ yewon_ong }} turns dead {{ obl }} cards in hand into extra votes during polling —
+    a clean exit for surplus {{ shadow_cast }} late in the game.
+</p>
+<p>
+    Ration the stealth: {{ stygian_shroud }} at superior is the answer to the one real blocker,
+    while superior {{ where_the_veil_thins }} taxes non-Oblivion blockers a blood
+    and shuts out allies entirely. After a successful action, superior {{ shadow_cloak }}
+    can easily be cycled if needed, or used as anti-rush tech.
+</p>
+<p>
+    Superior {{ shroud_of_decay }} is an oust that no bounce can stop, and incidental hate against ash-heap recursion.
+    The two {{ spectral_servitor }} can be canon fodder against rushes, or additional 1-drop bleeds.
+    {{ shadow_sentinel }} at superior {{ OBL }} can even wake the wraith for a surprise block.
+</p>
+<h2>Variants</h2>
+<p>
+    The archetype is young — it took down two 20+ player events within a month in autumn 2025 —
+    but the winning lists already show a real spread.
+</p>
+<p>
+    {{ jorge_garcia_s_deck }} is the control-leaning build: no wraiths and no {{ shroud_of_decay }},
+    but 10 {{ deflection }}, 4 {{ second_tradition_domain }} and 4 {{ freak_drive }},
+    letting the Princes block, vote and act in the same turn, with more {{ amici_noctis }}
+    and {{ pass_through_shadow }} to endure.
+</p>
+<p>
+    {{ ivan_marin_rivas_deck }}, from a smaller event, pulls the other way: 10 {{ spectral_servitor }}
+    and 6 {{ parity_shift }}, backed by a Dominate bleed touch — {{ conditioning }}, {{ bonding }}
+    and {{ foreshadowing_destruction }}.
+    It shows the shell can flex toward bleed, which makes this one to watch.
+</p>
+{% endtrans %}
+{% endblock %}

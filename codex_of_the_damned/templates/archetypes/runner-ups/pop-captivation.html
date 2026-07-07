@@ -1,0 +1,131 @@
+{% extends "archetypes/_layout.html" %}
+{% import "archetypes/_layout-erratum.html" as erratum with context %}
+{% import "archetypes/runner-ups/pop-captivation.json" as deck_json %}
+
+{% block meta %}
+<meta property="decklist" content='{{ deck_json | tojson }}' />
+{% endblock %}
+
+{% block archetype_name %}
+<h1>{{ ventrue }} Pop Captivation</h1>
+{% endblock %}
+
+{% block archetype %}
+{% trans trimmed
+aaradhya=card("Aaradhya, The Callous Tyrant", "Aaradhya"),
+absolute_tyranny=card("Absolute Tyranny"),
+anarchist_uprising=card("Anarchist Uprising"),
+ancient_influence=card("Ancient Influence"),
+banishment=card("Banishment"),
+black_forest_base=card("Black Forest Base"),
+bloat=link("/strategy/bloat", _("bloat"), _anchor="bloat"),
+cold_war=card("Cold War"),
+cryptic_rider=card("Cryptic Rider"),
+dark_influences=card("Dark Influences"),
+deflection=card("Deflection"),
+dia_de_los_muertos=card("Día de los Muertos"),
+direct_intervention=card("Direct Intervention"),
+dominant_personality=card("Dominant Personality"),
+enkil_cog=card("Enkil Cog"),
+eternal_vigilance=card("Eternal Vigilance"),
+fear_of_mekhet=card("Fear of Mekhet"),
+govern_the_unaligned=card("Govern the Unaligned"),
+iron_glare=card("Iron Glare"),
+kine_resources_contested=card("Kine Resources Contested"),
+majesty=card("Majesty"),
+monastery_of_shadows=card("Monastery of Shadows"),
+obedience=card("Obedience"),
+perfect_paragon=card("Perfect Paragon"),
+political_stranglehold=card("Political Stranglehold"),
+private_audience=card("Private Audience"),
+reins_of_power=card("Reins of Power"),
+relentlessness=card("Relentlessness"),
+unholy_sacrament=card("Unholy Sacrament"),
+unthinkable_humiliation=card("Unthinkable Humiliation"),
+üresség=card("Üresség"),
+ventrue_headquarters=card("Ventrue Headquarters"),
+věnceslava=card("Věnceslava, The Implacable", "Věnceslava"),
+villein=card("Villein"),
+vote=link("/strategy/archetype-categories", _("vote"), _anchor="vote"),
+voter_captivation=card("Voter Captivation"),
+war_of_ages=card("War of Ages"),
+andreas_stjernfelt_s_deck=link("/deck-search", _("Andreas Stjernfelt's deck"), id="12926"),
+martins_grand_prix=link("/deck-search", _("Martin Weinmayer's Grand Prix win"), id="12730"),
+eduardo_lemos_s_deck=link("/deck-search", _("Eduardo Lemos' deck"), id="12882")
+%}
+<h2>Highlights</h2>
+<p>
+    This is a Sabbat {{ vote }} deck built around {{ aaradhya }}, a capacity 10 cardinal who
+    unlocks on her own political actions — even failed ones — and bleeds at +1. Every single vampire
+    in the crypt carries a Sabbat title, so referendums often pass on the deck's votes alone; when
+    they do not, {{ perfect_paragon }}, {{ iron_glare }} and {{ ventrue_headquarters }} push them
+    through.
+</p>
+<p>
+    Pool damage comes from {{ kine_resources_contested }} and {{ cold_war }} — in a cardinal's hands
+    the latter burns a Methuselah's pool <em>and</em> a location at once.
+    A series of singleton table votes ({{ anarchist_uprising }}, {{ political_stranglehold }},
+    {{ war_of_ages }}...) rounds out the political package, while {{ govern_the_unaligned }}
+    and Aaradhya's bonus provide the finishing bleeds. {{ banishment }} removes problem vampires:
+    with a capacity 10 star, almost everyone at the table is younger.
+</p>
+<p>
+    The economy gives the archetype its name: with superior {{ PRE }} on the whole crypt,
+    {{ voter_captivation }} turns every passed referendum into blood and pool. {{ villein }} cashes
+    the rest out, {{ unholy_sacrament }} pays for the next Sabbat title, and {{ govern_the_unaligned }}
+    at superior {{ DOM }} influences new vampires out of the uncontrolled region. {{ věnceslava }}
+    adds a pool each turn one of her actions costs the prey.
+</p>
+<p>
+    Defense is simple and heavy: a wall of {{ deflection }} and {{ majesty }}. Instead of stealth,
+    the deck denies blocks — {{ relentlessness }} cancels a block outright, {{ dominant_personality }}
+    locks a chosen vampire out, and {{ unthinkable_humiliation }} taxes every attempt: play it first to
+    force the opponents to weight out their attempts, sometimes they won't invest in intercept even though
+    you couldn't have matched it.
+</p>
+<h2>Tips & Tricks</h2>
+<p>
+    Sequencing matters: take the political action first so {{ aaradhya }} unlocks, then Govern or bleed.
+    {{ black_forest_base }} makes the engine hum: a free referendum that gains pool, unlocks Aaradhya,
+    and triggers another {{ voter_captivation }} on the way.
+</p>
+<p>
+    Save {{ dia_de_los_muertos }} and {{ cryptic_rider }} for the referendum that must pass.
+    {{ cryptic_rider }} requires a successful referendum first, so chain a cheap vote into the lethal
+    {{ kine_resources_contested }}. {{ dark_influences }} covers the other failure mode, cancelling
+    any card to get in play so opponents cannot use a {{ direct_intervention }} to prevent the lunge.
+</p>
+<p>
+    The {{ bloat }} votes reward the crypt's fat capacities: {{ ancient_influence }} and
+    {{ political_stranglehold }} net far more for this deck than for most tables, and {{ reins_of_power }}
+    hits the prey with Aaradhya's full capacity 10. Call them when the table is amenable — everyone
+    likes gaining pool — and keep {{ anarchist_uprising }} to close the game out.
+</p>
+<p>
+    {{ fear_of_mekhet }} is aimed squarely at rival vote decks: Camarilla justicars and Inner Circle
+    members are the vampires with the votes to fight back. {{ monastery_of_shadows }} earns its slot,
+    since nearly the whole crypt clears its capacity-8 threshold, and {{ üresség }} turns into a
+    closer once the prey drops to 10 pool.
+</p>
+<h2>Variants</h2>
+<p>
+    The archetype has stacked up wins across Europe and Brazil since late 2025, and the core barely
+    moves from list to list: four or five {{ aaradhya }}, {{ villein }}, {{ voter_captivation }},
+    {{ perfect_paragon }}, {{ dominant_personality }}, {{ unthinkable_humiliation }}, {{ deflection }}
+    and {{ majesty }} are everywhere. {{ andreas_stjernfelt_s_deck }} is within a handful of cards
+    of the list presented here.
+</p>
+<p>
+    {{ martins_grand_prix }}, a 41-player field, goes full control:
+    8 {{ cold_war }}, 4 {{ banishment }}, no {{ kine_resources_contested }} and no
+    {{ unholy_sacrament }} at all, with {{ eternal_vigilance }} letting the titles unlock and block.
+    It grinds the table down location by location rather than racing for the oust.
+</p>
+<p>
+    {{ eduardo_lemos_s_deck }} leans into off-turn play instead: {{ enkil_cog }} lets Aaradhya act
+    during other Methuselahs' turns, {{ obedience }} handles combat defense, and {{ private_audience }}
+    with {{ absolute_tyranny }} shut non-Sabbat vampires out of referendums entirely. It also goes
+    deeper on {{ unholy_sacrament }}, running eight and only three {{ govern_the_unaligned }}.
+</p>
+{% endtrans %}
+{% endblock %}

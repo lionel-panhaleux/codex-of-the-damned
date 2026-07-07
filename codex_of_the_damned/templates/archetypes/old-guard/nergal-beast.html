@@ -1,0 +1,136 @@
+{% extends "archetypes/_layout.html" %}
+{% import "archetypes/_layout-erratum.html" as erratum with context %}
+{% import "archetypes/old-guard/nergal-beast.json" as deck_json %}
+
+{% block meta %}
+<meta property="decklist" content='{{ deck_json | tojson }}' />
+{% endblock %}
+
+{% block archetype_name %}
+<h1>{{ baali }} Nergal Beast</h1>
+{% endblock %}
+
+{% block archetype %}
+{% trans trimmed
+aire_of_elation=card("Aire of Elation"),
+antediluvian_awakening=card("Antediluvian Awakening"),
+archon_investigation=card("Archon Investigation"),
+bounces=link("/strategy/fundamentals", _("bounces"), _anchor="bounce"),
+call_the_great_beast=card("Call the Great Beast"),
+celerity_card=card("Celerity"),
+daring_the_dawn=card("Daring the Dawn"),
+dementation_card=card("Dementation"),
+dreams_of_the_sphinx=card("Dreams of the Sphinx"),
+elder_impersonation=card("Elder Impersonation"),
+enkil_cog=card("Enkil Cog"),
+freak_drive=card("Freak Drive"),
+golconda_inner_peace=card("Golconda: Inner Peace"),
+heart_of_nizchetus=card("Heart of Nizchetus"),
+hide_the_mind=card("Hide the Mind"),
+i_am_legion=card("I am Legion"),
+infernal_servitor=card("Infernal Servitor"),
+leeching=link("/strategy/bloat", _("leeching"), _anchor="leeching"),
+legal_manipulations=card("Legal Manipulations"),
+lost_in_crowds=card("Lost in Crowds"),
+lunge=link("/strategy/fundamentals", _("lunge"), _anchor="lunge"),
+magic_of_the_smith=card("Magic of the Smith"),
+majesty=card("Majesty"),
+monastery_of_shadows=card("Monastery of Shadows"),
+narrow_minds=card("Narrow Minds"),
+nergal=card("Nergal"),
+nergal_adv=card("Nergal (ADV)"),
+perfect_clarity=card("Perfect Clarity"),
+society_of_leopold=card("Society of Leopold"),
+soul_gem_of_etrius=card("Soul Gem of Etrius"),
+stealth_bleed=link("/strategy/archetype-categories", _("Stealth & Bleed"), _anchor="bleed"),
+the_bitter_and_sweet_story=card("The Bitter and Sweet Story"),
+the_parthenon=card("The Parthenon"),
+touch_of_clarity=card("Touch of Clarity"),
+unleash_hell_s_fury=card("Unleash Hell's Fury"),
+villein=card("Villein"),
+visions_of_zapathasura=card("Visions of Zapathasura"),
+visit_from_the_capuchin=card("Visit from the Capuchin"),
+christian_camara_s_deck=link("/deck-search", _("Christian Camara's deck"), id="12631"),
+jesper_bøje_s_2023_deck=link("/deck-search", _("Jesper Bøje's 2023 deck"), id="10996")
+%}
+<h2>Highlights</h2>
+<p>
+    This is a one-vampire turbo {{ stealth_bleed }} engine starring {{ nergal }},
+    an established classic that has been quietly winning tournaments for years.
+    The crypt is a single vampire in two versions, the base and {{ nergal_adv }},
+    and the whole library exists to make him work overtime: bleed big at stealth,
+    summon the Great Beast, and never spend a turn locked.
+</p>
+<p>
+    {{ call_the_great_beast }} is the signature card: it burns the acting Baali {{ baali }} to drop a fresh
+    9-capacity infernal into play, but only once it carries 11 ritual counters — and it enters
+    with counters equal to the Baali {{ baali }}'s capacity. The {{ dementation_card }} skill card raises
+    {{ nergal }} to capacity 11, so the Beast arrives fully loaded and fires in a single action.
+    Give it {{ FOR }}, {{ PRE }} and {{ OBF }} and it can pilot almost every card in the deck,
+    {{ visions_of_zapathasura }} included.
+</p>
+<p>
+    {{ soul_gem_of_etrius }}, fetched with {{ magic_of_the_smith }}, turns the sacrifice into pure profit:
+    because the burned {{ nergal }} was raised to capacity 11, the base-10 copy the Gem pulls from
+    the crypt counts as younger and comes back at full blood wearing the Gem. Milk him with
+    {{ villein }} beforehand and the {{ leeching }} loop nets pool, blood, and a second heavy hitter.
+</p>
+<p>
+    The bleeds are brutal: the base {{ nergal }} bleeds for 3 unassisted, {{ legal_manipulations }}
+    and {{ aire_of_elation }} push that to 5 or 7 while regaining pool, with {{ lost_in_crowds }},
+    {{ elder_impersonation }} and {{ daring_the_dawn }} to get through. Both {{ nergal }} and the Beast
+    are infernal and do not unlock normally, which is why the deck runs a heavy {{ freak_drive }} engine:
+    it is the unlock phase and the action multiplier rolled into one.
+</p>
+<p>
+    Defense is thin but sharp: {{ unleash_hell_s_fury }} intercepts one direct action,
+    {{ visions_of_zapathasura }} and {{ touch_of_clarity }} blunt the predator's bleeds,
+    {{ archon_investigation }} caps the big ones, and {{ majesty }} ends the odd combat.
+    {{ antediluvian_awakening }} is a classical turbo deck trick:
+    a way to destroy (and refresh) a torpored {{ nergal }} wearing the {{ soul_gem_of_etrius }}.
+</p>
+<h2>Tips & Tricks</h2>
+<p>
+    The deck is built to punch through the classic bleed defenses: {{ perfect_clarity }}
+    makes an action immune to {{ dom }} and {{ pre }} reactions, {{ hide_the_mind }} and
+    {{ i_am_legion }} cancel the {{ aus }} {{ bounces }}, and {{ narrow_minds }} taxes whatever remains.
+    Do not spend these early — hold them for the {{ lunge }} that ousts.
+</p>
+<p>
+    The two versions play differently: the base {{ nergal }} discounts a card each turn, so a
+    {{ freak_drive }} or {{ legal_manipulations }} is regularly free, while {{ nergal_adv }} taxes
+    reactions and buys his own stealth. Keep a pool in reserve to unlock manually on turns when no
+    {{ freak_drive }} shows up. Note that with the {{ dementation_card }} and the Gem in place,
+    even an opposing {{ archon_investigation }} merely recycles {{ nergal }}.
+</p>
+<p>
+    A good third of the library is singletons and pairs, so hand management matters:
+    {{ heart_of_nizchetus }} — the other {{ magic_of_the_smith }} target — filters the draw,
+    backed by {{ visit_from_the_capuchin }}, {{ monastery_of_shadows }}, {{ dreams_of_the_sphinx }}
+    and {{ the_bitter_and_sweet_story }} for hand size.
+</p>
+<p>
+    {{ society_of_leopold }} is a nasty gift for a problem blocker — a standing blood tax the bearer
+    can only shed by passing it on, so expect it to travel. {{ enkil_cog }} gives {{ nergal }} +1 bleed
+    and, more valuably, an action on other Methuselahs' turns — one more bleed every table round.
+</p>
+<h2>Variants</h2>
+<p>
+    There are no strong variants, and the core never moves: an all-{{ nergal }} crypt,
+    {{ call_the_great_beast }}, {{ soul_gem_of_etrius }} with {{ magic_of_the_smith }},
+    a capacity-raising skill card and a thick wad of {{ freak_drive }}.
+    The list is remarkably stable: {{ jesper_bøje_s_2023_deck }} won with virtually the same
+    seventy-eight cards two years earlier — a sixth {{ aire_of_elation }}, a third
+    {{ soul_gem_of_etrius }} and a couple more {{ freak_drive }} being the main differences.
+</p>
+<p>
+    {{ christian_camara_s_deck }} shows the observed spread: {{ celerity_card }} replaces
+    {{ dementation_card }} for the same capacity trick, and the economy gets greedier —
+    {{ golconda_inner_peace }} cashes in a spent capacity-11 {{ nergal }} for 11 pool,
+    with {{ the_parthenon }} providing the extra master phase actions and a 6/6 crypt split
+    leaning on {{ nergal_adv }}'s bought stealth. {{ infernal_servitor }} adds disposable
+    3-bleed actions, and the bleed module trades {{ aire_of_elation }} for a heavier
+    {{ OBF }} stealth package.
+</p>
+{% endtrans %}
+{% endblock %}
