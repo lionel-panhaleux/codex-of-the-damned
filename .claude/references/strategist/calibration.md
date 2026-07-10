@@ -174,7 +174,12 @@ the deck's *only* recruiter, not dead weight — the player's merge plan was rig
 read the structured fields (Grounding), and when a player's plan looks redundant, check their
 premise before overruling it. Merge assembly tools (Legacy / Epiphany): `modules.md`.
 Follow-up catch, same round: **read a trigger's gate literally** — CrimethInc. needs a successful
-*action requiring an Anarch*; an action *modifier* requiring an Anarch never satisfies it, and an
-ally's enters-play effect (Anarch Convert) is not an action. Before counting an unlock/trigger
-engine, enumerate which cards in the deck can actually fire it — here the answer was none, and
-Rutor's Hand (no trigger gate) was the real unlocker.
+*action requiring an Anarch or making this vampire Anarch*; an action *modifier* requiring an
+Anarch never satisfies it, and an ally's enters-play effect (Anarch Convert) is not an action.
+Before counting an unlock/trigger engine, enumerate what can actually fire it.
+Owner's counter-catch, closing the loop: **the enumeration must include the base actions, not
+just the decklist** — Become Anarch (base game action, 2 blood or 1 with a ready Anarch) IS "a
+successful action making this vampire Anarch," and is the one clean first trigger: it revived
+the CrimethInc. engine the previous pass had declared dead. The free verbs (see Base mechanics)
+are always in the pool of enablers; a "no card in the deck fires this" conclusion is incomplete
+until the base actions have been checked too.
