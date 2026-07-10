@@ -183,3 +183,7 @@ successful action making this vampire Anarch," and is the one clean first trigge
 the CrimethInc. engine the previous pass had declared dead. The free verbs (see Base mechanics)
 are always in the pool of enablers; a "no card in the deck fires this" conclusion is incomplete
 until the base actions have been checked too.
+Round closure: final build settled grindy, with Dolie (cap-3 Akunanse from the historical Team
+Jacob crypts) as the second recruiter breaking the Red List single point of failure — the
+resilience answer came from the archetype's own lineage. Advisor mode proved the richest
+calibration source: advice makes mechanics load-bearing, where analysis only grades them.
