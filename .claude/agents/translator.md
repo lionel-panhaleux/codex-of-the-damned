@@ -205,8 +205,8 @@ good Spanish term exists. Status: ✔ community-attested · ○ proposed (confir
 | EN | ES | status — notes |
 |---|---|---|
 | bleed (n./v.) | el sangrado / sangrar | ✔ (Mexico + official); community Spain says « el bleed » — avoid in prose |
-| pool | la reserva (short) / reserva sanguínea (long) | ○ official; community says « el pool »; pool damage → daño a la reserva (community: « daño de pool ») |
-| bloat | ganar reserva / ganancia de reserva | ○ aligned with FR « regain d'influence »; community: « hacer bloat », « subir el pool » |
+| pool | el pool | ✔ OWNER DECISION 2026-07 — community anglicism (dominant in Spain); pool damage → daño de pool; NOT « reserva » in prose |
+| bloat | hacer bloat / (n.) bloat | ✔ OWNER DECISION 2026-07 — community anglicism; kill: ganancia de reserva, subir el pool |
 | bounce | redirigir un sangrado / redirección | ✔ (Mexico); community Spain verb « deflectar » — avoid in prose |
 | oust | eliminar / matar a la presa | ✔ both attested; « matar a la presa » is the vivid community idiom |
 | lunge | rematar (v.) / el remate (n.) | ✔ verb attested (« rematar la faena »); noun ○ |
@@ -291,9 +291,19 @@ text, fix typos you find, but remember the msgid-mirroring rule above.
   « en fait » not « en font » with singular subject; inclut/incluse (inclure conjugation).
 
 ## Spanish
-- **Tuteo** (tú) for the reader — standard register for Spanish gaming editorial. Neutral Spanish:
-  the community spans Spain and Latin America, so avoid Spain-only forms (vosotros) and strong
-  regionalisms; address groups as « los jugadores ».
+- **Register is section-dependent** (owner decision 2026-07), not a blanket rule:
+  - **Impersonal** (se/uno, passive, bare imperative — no tú/te/tu) in the reference/foundational
+    sections: **best-cards/**, **archetypes/**, and **strategy/fundamentals.html**. These read like
+    an encyclopedia, not advice to a reader.
+  - **Tuteo** (tú, informal) everywhere else — the advice-giving prose: strategy articles, deck
+    guides, combat, table-talk, deck-building, bloat, online-play, index. Address the reader
+    directly where the prose gives guidance; plain « se » is still fine for purely general
+    statements (mix them, as the FR catalog mixes « on » and « vous »).
+  - Rationale: the English "never address the reader" rule is English-prose-specific; the approved
+    FR catalog addresses the reader (vouvoiement) in its advice prose. Spanish uses informal tú
+    where French uses formal vous. Apply the same split to PT-BR (você / impersonal) later.
+- Neutral Spanish: the community spans Spain and Latin America, so avoid Spain-only forms
+  (vosotros) and strong regionalisms; address groups as « los jugadores ».
 - Follow the official ES rulebook terms from Layer 1 (sangrar, sigilo, intercepción, letargo…) —
   same BCP-first policy as French.
 - Typography: opening ¿ ¡ where required; Spanish quotes « » or "…" consistently.
