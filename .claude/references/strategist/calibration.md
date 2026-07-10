@@ -228,5 +228,6 @@ produced the right read. The definitive example of "accurate parts, wrong whole"
   it; the corrected mechanism makes Tainted Spring's +1 life *more* load-bearing, not less.
 - **Owner closure — the bleed is a real secondary clock.** The main plan is the rush, but a
   working rush still needs an oust: Dragonbound + Fame + direct bleeds from the vampires are the
-  ousting package once the prey's board is down. A removal plan without its finishing clock is
+  ousting package once the prey's board is down. The deck *accrues* this clock as the swarm
+  strips the board — it does not pivot to it. A removal plan without its finishing clock is
   incomplete — always identify both.
