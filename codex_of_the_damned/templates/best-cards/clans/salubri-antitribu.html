@@ -11,7 +11,7 @@
     <p>
         {% trans trimmed salubri_cards=link("/best-cards/clans/salubri") %}
         New V5 Salubri have {{ dom }}{{ for }}{{ aus }} as clan disciplines.
-        You can check out their best cards on the {{ salubri_cards }} page.
+        Their best cards can be found on the {{ salubri_cards }} page.
         {% endtrans %}
     </p>
     <p>
@@ -24,26 +24,38 @@
     </p>
 </div>
 
-{% call layout.card_column("Sense Death", decks=18, copies="1-5") %}
-{% trans trimmed deep_song=card("Deep Song") %}
-An excellent rush action, with high maneuverability and a most desirable +1 stealth.
-It is even played in some {{ ani }} decks as a stealthy alternative to {{ deep_song }}.
-{% endtrans %}
-{% endcall %}
-
-{% call layout.card_column("Blissful Agony", decks=13, copies="1-6") %}
-{% trans trimmed %}
-A useful combat ends that can also simply be cycled for a bit of damage if needed.
-{% endtrans %}
-{% endcall %}
-
 {% call layout.card_column("Dela Eden", decks=13, copies="1-3") %}
 {% trans trimmed %}
 All clan disciplines at superior with bonus strength, she's a great leader for the clan.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Sword of the Righteous", decks=12, copies="2-6") %}
+{% call layout.card_column("Adonai", decks=10, copies="1-3") %}
+{% trans trimmed %}
+His rush ability makes him a strong proposition as a clan leader in many decks.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Nkechi", decks=8, copies="1-2") %}
+{% trans trimmed %}
+A cheap Valeren {{ val }} body whose combat ability isn't too shabby.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Sense Death", decks=34, copies="1-6") %}
+{% trans trimmed deep_song=card("Deep Song") %}
+An excellent rush action, with high maneuverability and a most desirable +1 stealth.
+It is even played in some {{ ani }} decks as a stealthy alternative to {{ deep_song }}.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Blissful Agony", decks=13, copies="1-8") %}
+{% trans trimmed %}
+A useful combat ends that can also simply be cycled for a bit of damage if needed.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Sword of the Righteous", decks=12, copies="2-7") %}
 {% trans trimmed
 weighted_walking_stick=card("Weighted Walking Stick"),
 blade_of_bellona=card("Blade of Bellona")
@@ -52,47 +64,17 @@ A brutal damage enhancer, used on {{ weighted_walking_stick }} or {{ blade_of_be
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("The Path of Retribution", decks=10, copies="1-3") %}
-{% trans trimmed the_path_of_retribution=card("The Path of Retribution"), trap=card("Trap") %}
-Solid damage prevention, especially coupled with {{ trap }}, and even better
-with cost reduction like {{ the_path_of_retribution }}.
-{% endtrans %}
-{% endcall %}
-
-{% call layout.card_column("Armor of Caine's Fury", decks=9, copies="4-8") %}
-{% trans trimmed the_path_of_retribution=card("The Path of Retribution"), trap=card("Trap") %}
-Solid damage prevention, especially coupled with {{ trap }}, and even better
-with cost reduction like {{ the_path_of_retribution }}.
-{% endtrans %}
-{% endcall %}
-
-{% call layout.card_column("Eye of Unforgiving Heaven", decks=8, copies="1-6") %}
-{% trans trimmed the_path_of_retribution=card("The Path of Retribution") %}
-2R aggravated damage is brutal, and efficient when played at superior {{ AUS }}{{ VAL }},
-as the vampire can prevent the damage with {{ for }} easily if needed.
-{% endtrans %}
-{% endcall %}
-
-{% call layout.card_column("Adonai", decks=7, copies="2-3") %}
-{% trans trimmed %}
-His rush ability makes him a strong proposition as a clan leader in many decks.
-{% endtrans %}
-{% endcall %}
-
-{% call layout.card_column("Death Seeker", decks=7, copies="4-5") %}
+{% call layout.card_column("Death Seeker", decks=9, copies="3-5") %}
 {% trans trimmed immortal_grapple=card("Immortal Grapple") %}
 A unique cancellation effect that can be used against defenses like dodges and
 combat ends, as well as {{ immortal_grapple }}.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Vengeance of Samiel", decks=7, copies="1-7") %}
-{% trans trimmed
-weighted_walking_stick=card("Weighted Walking Stick"),
-blade_of_bellona=card("Blade of Bellona")
-%}
-A strong damage enhancer for weapons, typically {{ weighted_walking_stick }} or {{ blade_of_bellona }}.
+{% call layout.card_column("Righteous Aura", decks=7, copies="1-4") %}
+{% trans trimmed %}
+A payload card that grants a permanent +2 bleed,
+turning the clan's combat edge into lasting offense.
 {% endtrans %}
 {% endcall %}
-
 {% endblock %}

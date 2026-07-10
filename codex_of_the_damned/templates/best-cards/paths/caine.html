@@ -1,0 +1,79 @@
+{% extends "best-cards/_layout.html" %}
+{% import "best-cards/_layout_card_column.html" as layout with context %}
+
+{% block content %}
+<h1>{{ _("Caine") }}</h1>
+<div class="insert warn">
+    {% trans trimmed %}
+    The Path of Caine arrived with the Sabbat set in October 2025, so these
+    figures are drawn from a small, recent sample and will shift as the cards
+    see more play.
+    {% endtrans %}
+</div>
+<div class="insert tip">
+    <p>
+        {% trans trimmed qawiyya_caine=link("/archetypes/qawiyya-caine") %}
+        The Path of Caine is the game's rush path. Rather than bleed, its cards
+        hunt the prey's minions down. Its first competitive home is the {{ qawiyya_caine }}
+        archetype.
+        {% endtrans %}
+    </p>
+</div>
+
+{% call layout.card_column("Algirdas, The Solar Prophet", decks=1, copies="1") %}
+{% trans trimmed %}
+A seven-capacity Banu Haqim {{ banu_haqim }} <em>bishop</em> backing the path's
+combat pumps with superior {{ ANI }}{{ CEL }}{{ THA }}. His strike tax drains a
+blood from younger opponents each time they answer a fight, blunting defenses.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Kalyani, Agent of Doom", decks=1, copies="1") %}
+{% trans trimmed %}
+The same superior {{ ANI }}{{ CEL }}{{ THA }} as her Banu Haqim {{ banu_haqim }}
+clanmate, with {{ obf }} on top and a standing +1 strength that sharpens every hand
+strike. A capable seven-capacity <em>bishop</em>.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Abuse of Power", decks=4, copies="1-3") %}
+{% trans trimmed %}
+The path's signature action and its entire thesis: a stealthy rush that bills
+the opposing Methuselah one pool whenever the fight ends with the opponent down.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Twisted Bloodhound", decks=4, copies="1-3") %}
+{% trans trimmed abuse_of_power=card("Abuse of Power") %}
+A one-pool ghoul that hands its employer a rush on demand, the cheapest way to
+keep the prey's minions in combat turn after turn.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Rage of Apedemak", decks=3, copies="2-7") %}
+{% trans trimmed %}
+The path's main damage pump, open to Animalism {{ ani }} or Potence {{ pot }}
+crypts. The extra hand size cannot be overestimated: it is a huge cycling effect, particularly handy in a combat deck.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Sentry Signal", decks=2, copies="1-2") %}
+{% trans trimmed %}
+Defence for a crypt that could otherwise lack some: both the unlock and bleed reduction effects are interesting.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Soulgrinder", decks=2, copies="2-6") %}
+{% trans trimmed %}
+A heavy strike for Potence {{ pot }} or Blood Sorcery {{ tha }} vampires. The +2
+hand strike is already strong, but ignoring Fortitude {{ for }} prevention can be key depending on the meta.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Wall of Filth", decks=2, copies="2-5") %}
+{% trans trimmed rego_motum=card("Rego Motum") %}
+Great prevention for Protean {{ pro }}, though Blood Sorcery {{ tha }} already has {{ rego_motum }}.
+It also avoids jam easily as long as it is not played in too high numbers.
+{% endtrans %}
+{% endcall %}
+{% endblock %}

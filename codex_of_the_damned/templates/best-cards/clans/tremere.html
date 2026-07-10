@@ -10,32 +10,12 @@
     %}
     <p>
         The Tremere have great clan disciplines in {{ aus }}{{ dom }}{{ tha }}.
-        They run great toolboxes like {{ princess_toolbox }}, but also good political decks like {{ mistress }}.
+        They run great toolboxes like {{ princess_toolbox }}, but also good political decks like {{ mistress }}.
     </p>
     {% endtrans %}
 </div>
 
-{% call layout.card_column("Ponticulus", decks=33, copies="1") %}
-{% trans trimmed %}
-A good ally at a cheap price: he is quite the defender and very resilient
-as aggravated damage is required to kill him.
-{% endtrans %}
-{% endcall %}
-
-{% call layout.card_column("Arcane Library", decks=29, copies="1") %}
-{% trans trimmed %}
-A good bloat device at a decent price. Few clans have access to this kind of location,
-but it generates a pool per turn so it is quickly profitable.
-{% endtrans %}
-{% endcall %}
-
-{% call layout.card_column("Chantry", decks=28, copies="1") %}
-{% trans trimmed %}
-A great location with a unique effect, making torpor that much less of a threat.
-{% endtrans %}
-{% endcall %}
-
-{% call layout.card_column("Mistress Fanchon", decks=27, copies="1-4") %}
+{% call layout.card_column("Mistress Fanchon", decks=26, copies="1-4") %}
 {% trans trimmed %}
 An <em>Inner Circle</em> with the classical 4 votes and +2 bleed bonus,
 she also has a unique ability to fetch the card she wants.
@@ -44,62 +24,49 @@ combination, alongside {{ THA }}{{ VIC }}, is powerful in many decks.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Gerald Windham", decks=21, copies="1-3") %}
+{% call layout.card_column("Gerald Windham", decks=23, copies="1-3") %}
 {% trans trimmed freak_drive=card("Freak Drive") %}
-Between his stealth bonus, {{ FOR }}, and unique votes ability, he finds a spot in many deck.
+Between his stealth bonus, {{ FOR }}, and unique votes ability, he finds a spot in many decks.
 He's a {{ freak_drive }} specialist.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Lord Tremere", decks=21, copies="1-3") %}
-{% trans trimmed malgorzata=card("Malgorzata") %}
-The bleed and intercept bonus are huge, and his ability makes him a great leader for the clan.
-Moreover, {{ VIC }} makes him an ideal partner for {{ malgorzata }}.
-{% endtrans %}
-{% endcall %}
-
-{% call layout.card_column("Ayelech", decks=16, copies="1-2") %}
+{% call layout.card_column("Ayelech", decks=18, copies="1-2") %}
 {% trans trimmed %}
 A Prince title with all clan disciplines at superior, always good.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Wasserschloss Anif, Austria", decks=15, copies="1") %}
-{% trans trimmed blood_doll=card("Blood Doll") %}
-An excellent location, working like some kind of distributed {{ blood_doll }}.
-It is free so, even if it gets destroyed, it is not a lot to pay to waste an opponent's action.
-{% endtrans %}
-{% endcall %}
-
-{% call layout.card_column("Carna, The Princess Witch", decks=11, copies="1-3") %}
+{% call layout.card_column("Carna, The Princess Witch", decks=18, copies="2-4") %}
 {% trans trimmed princess_toolbox=link("/archetypes/princess-toolbox") %}
 With her intercept bonus, she's a natural star and leads the {{ princess_toolbox }} archetype.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Gabrielle di Righetti", decks=11, copies="1-3") %}
-{% trans trimmed
-mistress_fanchon=card("Mistress Fanchon"),
-malgorzata=card("Malgorzata")
-%}
-Her title and ability makes her a great sidekick to {{ mistress_fanchon }} as well as {{ malgorzata }}.
+{% call layout.card_column("Ponticulus", decks=39, copies="1") %}
+{% trans trimmed %}
+A good ally at a cheap price: he is quite the defender and very resilient.
+He can single-handedly stop rush decks that don't have an option for him.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("The Ankara Citadel, Turkey", decks=9, copies="1") %}
-{% trans trimmed
-summon_history=card("Summon History"),
-shalmath_history=link("/archetypes/shalmath-history")
-%}
-A unique effect, often seen in {{ summon_history }} decks to reduce subsequent uses of the card,
-like in {{ shalmath_history }}.
+{% call layout.card_column("Arcane Library", decks=33, copies="1") %}
+{% trans trimmed %}
+A good bloat device at a decent price. Few clans have access to this kind of location,
+but it generates a pool per turn so it is quickly profitable.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Inês Tristão", decks=10, copies="1-2") %}
-{% trans trimmed govern=card("Govern the Unaligned", "Govern") %}
-A cheap Prince with superior {{ THA }}, she sits comfortably in the {{ govern }} chain.
+{% call layout.card_column("Chantry", decks=32, copies="1") %}
+{% trans trimmed %}
+A great location with a unique effect, making torpor that much less of a threat.
 {% endtrans %}
 {% endcall %}
 
+{% call layout.card_column("Wasserschloss Anif, Austria", decks=17, copies="1") %}
+{% trans trimmed blood_doll=card("Blood Doll") %}
+An excellent location, working like some kind of distributed {{ blood_doll }}.
+It is free so, even if it gets destroyed, it is not a lot to pay to waste an opponent's action.
+{% endtrans %}
+{% endcall %}
 {% endblock %}

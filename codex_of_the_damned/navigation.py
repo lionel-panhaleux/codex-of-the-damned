@@ -285,6 +285,15 @@ STRUCTURE = Nav(
                     ],
                 ),
                 Nav(
+                    lazy_gettext("Paths"),
+                    children=[
+                        Nav(lazy_gettext("Caine")),
+                        Nav(lazy_gettext("Cathari")),
+                        Nav(lazy_gettext("Death and the Soul")),
+                        Nav(lazy_gettext("Power and the Inner Voice")),
+                    ],
+                ),
+                Nav(
                     lazy_gettext("Clans"),
                     children=[
                         Nav(lazy_gettext("Ahrimanes")),
@@ -302,6 +311,7 @@ STRUCTURE = Nav(
                         Nav(lazy_gettext("Giovanni")),
                         Nav(lazy_gettext("Guruhi")),
                         Nav(lazy_gettext("Harbingers of Skulls")),
+                        Nav(lazy_gettext("Hecata")),
                         Nav(lazy_gettext("Imbued")),
                         Nav(lazy_gettext("Ishtarri")),
                         Nav(lazy_gettext("Kiasyd")),
@@ -315,6 +325,7 @@ STRUCTURE = Nav(
                         Nav(lazy_gettext("Salubri")),
                         Nav(lazy_gettext("Salubri (Legacy)")),
                         Nav(lazy_gettext("Salubri Antitribu")),
+                        Nav(lazy_gettext("Samedi")),
                         Nav(lazy_gettext("Toreador")),
                         Nav(lazy_gettext("Toreador Antitribu")),
                         Nav(lazy_gettext("Tremere")),

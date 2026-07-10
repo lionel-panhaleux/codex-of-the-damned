@@ -1,0 +1,76 @@
+{% extends "best-cards/_layout.html" %}
+{% import "best-cards/_layout_card_column.html" as layout with context %}
+
+{% block content %}
+<h1>{{ _("Cathari") }}</h1>
+<div class="insert warn">
+    {% trans trimmed %}
+    The Path of Cathari arrived with the Sabbat set in October 2025, so these
+    figures are drawn from a small, recent sample and will shift as the cards see
+    more play.
+    {% endtrans %}
+</div>
+<div class="insert tip">
+    <p>
+        {% trans trimmed %}
+        The Path of Cathari is the Sabbat's stealth-bleed path, pairing
+        Obfuscate {{ obf }} with Presence {{ pre }} — and reaching into
+        Celerity {{ cel }} at the edges. It is the least-played of the four new paths so far,
+        a small and volatile sample.
+        {% endtrans %}
+    </p>
+</div>
+
+{% call layout.card_column("Aelswith, The Irresistible", decks=1, copies="4") %}
+{% trans trimmed %}
+A 9-capacity Malkavian {{ malkavian }} <em>cardinal</em> with great disciplines.
+Blocking her burns a pool whether or not the block resolves, so a wall pays merely
+to slow her.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Fotini Katsikaris", decks=1, copies="2") %}
+{% trans trimmed %}
+Another Malkavian {{ malkavian }}, a cheaper seven-capacity stealth-bleeder on
+superior {{ AUS }}{{ DOM }}{{ OBF }}. Each bleed that connects widens the hand,
+cycling spurious cards.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Kiss of Cathari", decks=4, copies="4-8") %}
+{% trans trimmed %}
+A stealth-bleed crypt rarely wants to fight, and this ends combat on either {{ OBF }} or {{ PRE }}.
+At superior it also stuns the opposing minion at close range, a good deterrent.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Swift Cover", decks=4, copies="2-4") %}
+{% trans trimmed %}
+Two cards in one: stealth is good, but the combat defence option can come in handy.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Seeds of Terror", decks=2, copies="2") %}
+{% trans trimmed %}
+The superior block denial effect can be key for {{ PRE }} vampires.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Enthrall", decks=2, copies="4-8") %}
+{% trans trimmed %}
+The path's core bleed action.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Forward Momentum", decks=2, copies="3") %}
+{% trans trimmed enthrall=card("Enthrall") %}
+A counter engine that rewards a steady bleed rhythm: unlocks are always good.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Subversion", decks=1, copies="9") %}
+{% trans trimmed %}
+The least-adopted of the featured cards, it folds stealth and bleed into a single modifier.
+{% endtrans %}
+{% endcall %}
+{% endblock %}

@@ -16,91 +16,91 @@
         salubri_legacy_cards=link("/best-cards/clans/salubri-legacy"),
         salubri_antitribu_cards=link("/best-cards/clans/salubri-antitribu")
         %}
-        The legacy Salubri and Salubri Antitribu have differnt disciplines and archetypes,
+        The legacy Salubri and Salubri Antitribu have different disciplines and archetypes,
         check them out on the {{ salubri_legacy_cards }} and {{ salubri_antitribu_cards }} pages.
         {% endtrans %}
     </p>
 </div>
 
-{% call layout.card_column("Saulot, The Wanderer", decks=7, copies="4-5") %}
+{% call layout.card_column("Abaddon", decks=15, copies="2-4") %}
 {% trans trimmed %}
-Given he has all the necessary disciplines, Saulot stays the best star for the clan
-in its V5 iteration. His abilities are all very useful.
-{% endtrans %}
-{% endcall %}
-
-{% call layout.card_column("Abaddon", decks=6, copies="2-3") %}
-{% trans trimmed %}
-His permanent maneuver and press makes him the best leader for the clan in most configurations.
+His permanent maneuver and press makes him interesting.
 Even when combat is not the focus, it is useful defensively.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Ilonka", decks=6, copies="1-2") %}
+{% call layout.card_column("Opikun", decks=14, copies="1-2") %}
+{% trans trimmed %}
+Superior Fortitude {{ FOR }} with a super-useful damage prevention ability, an easy inclusion.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Aniel", decks=12, copies="1-2") %}
+{% trans trimmed %}
+A capacity 6 bleeder with superior Dominate {{ DOM }} and Auspex {{ AUS }}, a stable in Salubri {{ salubri }} decks.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Ilonka", decks=12, copies="1-2") %}
 {% trans trimmed govern=card("Govern the Unaligned", "Govern") %}
-With her 7 capacity, she sits very well in the {{ govern }} chain,
+With her 7 capacity, she sits well in the {{ govern }} chain,
 and she has all clan disciplines at superior.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Malachi", decks=6, copies="1-2") %}
-{% trans trimmed govern=card("Govern the Unaligned", "Govern") %}
-All clan disciplines at superior for 6 capacity, solid value and place in the {{ govern }} chain.
+{% call layout.card_column("Dominica", decks=8, copies="1-2") %}
+{% trans trimmed saulot_s_guiding_wisdom=card("Saulot's Guiding Wisdom") %}
+A cheap tutor whose stealth action fetches a master archetype card straight to hand,
+often seen in political decks to go get a {{ saulot_s_guiding_wisdom }}.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Sight Beyond Sight", decks=6, copies="1") %}
+{% call layout.card_column("Barachiel", decks=4, copies="1-4") %}
 {% trans trimmed %}
-A great permanent intercept boost at no cost, a no brainer.
+A capacity 7 combat specialist with all clan disciplines at superior, plus a built-in rush.
+He's rather new, but he made the rankings pretty fast.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Feast of the Soul's Secrets", decks=6, copies="3-9") %}
-{% trans trimmed
-govern=card("Govern the Unaligned", "Govern"),
-freak_drive=card("Freak Drive")
-%}
-A strong bleed card, maybe even better than {{ govern }}. Both can even be played
-alongside, using {{ freak_drive }} for a faster influnce.
+{% call layout.card_column("Meditative Grove", decks=14, copies="1") %}
+{% trans trimmed deep_song=card("Deep Song"), rotschreck=card("Rötschreck") %}
+The clan hunting ground, with a frenzy-cancelling twist that can come in handy against
+{{ deep_song }} or {{ rotschreck }}.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Forced Confessional", decks=6, copies="3-7") %}
+{% call layout.card_column("Forced Confessional", decks=13, copies="3-8") %}
 {% trans trimmed seduction=card("Seduction") %}
 A super block denial device, that can be combined with {{ seduction }}.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Saulot's Avenging Fist", decks=4, copies="1-2") %}
-{% trans trimmed seduction=card("Seduction") %}
-A great archetype, providing both a permanent rush and increased strength.
-Well worth the cost.
+{% call layout.card_column("Feast of the Soul's Secrets", decks=13, copies="4-12") %}
+{% trans trimmed
+govern=card("Govern the Unaligned", "Govern"),
+freak_drive=card("Freak Drive")
+%}
+A strong bleed card, maybe even better than {{ govern }}. Both can even be played
+alongside, using {{ freak_drive }} for a faster influence.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Saulot's Guiding Wisdom", decks=4, copies="1-2") %}
-{% trans trimmed %}
-Multiple interesting possibilities against votes and combats for a cheap 1 pool.
-{% endtrans %}
-{% endcall %}
-
-{% call layout.card_column("Touch of Valeren", decks=4, copies="2-6") %}
+{% call layout.card_column("Touch of Valeren", decks=11, copies="2-6") %}
 {% trans trimmed rolling_with_the_punches=card("Rolling with the Punches") %}
-A strong prevention, comparable and maybe even better than {{ rolling_with_the_punches }}.
+A strong prevention, comparable to and maybe even better than {{ rolling_with_the_punches }}.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Seraphina", decks=4, copies="1-2") %}
-{% trans trimmed abaddon=card("Abaddon") %}
-An interesting potential leader for the clan, although less successful than {{ abaddon }} for now.
+{% call layout.card_column("Sight Beyond Sight", decks=9, copies="1") %}
+{% trans trimmed %}
+A great permanent intercept boost at no cost, a no-brainer.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Unleashing the Bestial Soul", decks=4, copies="3-7") %}
-{% trans trimmed deflection=card("Deflection") %}
-An interesting modifier, that makes bouncing bleeds with something like {{ deflection }}
-much more difficult. It makes for a great lunge device.
+{% call layout.card_column("Saulot's Avenging Fist", decks=9, copies="1-2") %}
+{% trans trimmed sword_of_the_archangel=card("Sword of the Archangel") %}
+A great archetype, providing both a permanent rush and increased strength.
+Often seen alongside {{ sword_of_the_archangel }}.
 {% endtrans %}
 {% endcall %}
-
 {% endblock %}

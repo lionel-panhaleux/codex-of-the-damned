@@ -28,79 +28,58 @@
     {% endtrans %}
 </div>
 
-{% call layout.card_column('Uchenna', decks=39, copies="1-3") %}
-{% trans trimmed
-no_secrets_from_the_magaji=card("No Secrets From the Magaji")
-%}
-A Magaji with superior {{ ABO }}{{ FOR }}{{ ANI }} for just 7 pool: definitely a good deal.
-Her ability may be useful in tense situations, although 1 blood to draw a card is a high price to pay.
-The fact that she is Magaji let her play the excellent {{ no_secrets_from_the_magaji }}.
-{% endtrans %}
-{% endcall %}
-
-{% call layout.card_column('Mapatano Utando', decks=24, copies="1-2") %}
+{% call layout.card_column("Uchenna", decks=39, copies="1-3") %}
 {% trans trimmed %}
-A good master for Akunanse decks: it can speed up the setup in the beginning,
-but also avoid pool loss regularly, at no cost.
-Gaining one or two turns or 3 pools or more is definitely efficient,
-it encourages the inclusion of low capacity vampires to get the edge sooner.
+All three clan disciplines at superior {{ ABO }}{{ ANI }}{{ FOR }} and a Magaji title,
+with a handy ability to burn and redraw dead cards — an excellent all-round pick.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column('Reliquary: Akunanse Remains', decks=15, copies="1") %}
+{% call layout.card_column("Amavi", decks=27, copies="1-2") %}
 {% trans trimmed %}
-A good equipment: a permanent +1 bleed for 1 pool is good,
-plus the discipline boost is excellent for low capacity vampires.
+The clan's heavyweight: superior {{ ABO }}{{ ANI }}{{ FOR }} plus {{ pre }} and {{ pro }}
+and a built-in +1 bleed, doing a bit of everything at 8 capacity.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column('Tunnel Runner', decks=13, copies="3-8") %}
-{% trans trimmed
-jacob_fermor=card("Jacob Fermor"),
-tunnel_runners=link("/archetypes/tunnel-runners")
-%}
-He can be used as the main minion of the deck for good stealthed bleeds,
-his ability can be used more than once in a turn, allowing it to get +2 stealth.
-He is expensive, though — he becomes really efficient partnered with
-{{ jacob_fermor }} in the {{ tunnel_runners }} archetype.
-{% endtrans %}
-{% endcall %}
-
-{% call layout.card_column("Predator's Communion", decks=38, copies="3-6") %}
+{% call layout.card_column("Jubal", decks=24, copies="1-2") %}
 {% trans trimmed %}
-Wake and intercept bundled in a single card: an excellent reaction for any intercept module.
-This card, combined with the combat-efficient {{ for }} discipline of the clan,
-explains the success of wall archetypes in the Akunanse clan.
+A solid mid-capacity option with superior {{ ABO }}{{ ANI }}, backed by the unusual
+{{ pot }} for a bit of combat punch.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Predator's Transformation", decks=28, copies="3-6") %}
+{% call layout.card_column("Nkule Galadima", decks=21, copies="1-3") %}
 {% trans trimmed %}
-An easy to cycle stealth card, and the only one available for Akunanse.
-The superior effect may come in handy against weenie constructs.
+A Magaji built for votes: while ready he turns a burnt Edge into two extra ballots,
+and his superior {{ ABO }}{{ FOR }} keep him defensively sound.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column('Invoking the Beast', decks=27, copies="4-8") %}
-{% trans trimmed
-carrion_crows=card("Carrion Crows")
-%}
-A good combat card at no cost: additional damage,
-plus a handy press that combines very well with {{ carrion_crows }}
+{% call layout.card_column("Mapatano Utando", decks=24, copies="1-2") %}
+{% trans trimmed %}
+A versatile master: it shaves a point off incoming bleeds, and once set up it trades
+the Edge for four transfers to accelerate the crypt.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column('Devil-Channel: Hands', decks=21, copies="3-7") %}
-{% trans trimmed
-invoking_the_beast=card("Invoking the beast"),
-carrion_crows=card("Carrion Crows"),
-immortal_grapple=card("Immortal Grapple")
-%}
-A good combat card, adding aggravated damage to an already efficient combat module.
-The strength bonus of {{ invoking_the_beast }} applies to it and the press
-at superior {{ ABO }} can be deadly when used alongside {{ carrion_crows }}.
-Finally, it works with a hand strike, so {{ immortal_grapple }} is useless against it.
+{% call layout.card_column("Akunanse Kholo", decks=17, copies="1-2") %}
+{% trans trimmed %}
+A floating title worth 2 votes, a no-brainer for thos who go for the political route.
 {% endtrans %}
 {% endcall %}
 
+{% call layout.card_column("Reliquary: Akunanse Remains", decks=16, copies="1") %}
+{% trans trimmed %}
+A unique piece that grants an extra level of {{ abo }}, {{ ani }} or {{ for }} each turn
+along with +1 bleed, letting a single Akunanse punch well above its capacity.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Tunnel Runner", decks=13, copies="1-9") %}
+{% trans trimmed team_jacob=link("/archetypes/tunnel-runners") %}
+A cheap {{ ani }}-playing werewolf that bleeds for 1, peeks at the defender's hand
+and heals itself — swarmed by the handful, it is the engine of the {{ team_jacob }} archetype.
+{% endtrans %}
+{% endcall %}
 {% endblock %}

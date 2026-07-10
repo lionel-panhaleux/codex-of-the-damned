@@ -15,26 +15,71 @@
         {{ AUS }}{{ ANI }} combination, making them excellent blockers.
         They have given birth to the {{ tzimisce_wall }} and the
         {{ tzimisce_toolbox }} archetypes, but also to the {{ war_ghouls }} archetype,
-        using {{ war_ghoul }} to rush opponents vampires.
+        using {{ war_ghoul }} to rush opponents' vampires.
         {% endtrans %}
     </p>
 </div>
 
-{% call layout.card_column("Changeling", decks=29, copies="3-7") %}
+{% call layout.card_column("Corine Marcón", decks=11, copies="1-2") %}
+{% trans trimmed %}
+A cheap capacity 6 with the clan's blocking {{ AUS }}{{ VIC }} and a strength bonus, a reliable wall asset.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Meshenka", decks=8, copies="1-2") %}
+{% trans trimmed war_ghoul=card("War Ghoul") %}
+Often seen in {{ VIC }} toolboxes for her excellent reduction ability.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Sascha Vykos, The Angel of Caine (G2 ADV)", decks=8, copies="2-5") %}
+{% trans trimmed %}
+A capacity 8 titled powerhouse with superior {{ AUS }}{{ THA }}{{ VIC }}; their advanced form
+turns every opponent's master card into a free draw, making them a cycling workhorse.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Kazimir Savostin", decks=7, copies="1") %}
+{% trans trimmed %}
+Superior {{ AUS }}{{ VIC }} makes him a strong blocker, and the optional press when he blocks
+lets him turn defense into offense.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Little Tailor of Prague", decks=5, copies="1-2") %}
+{% trans trimmed war_ghoul=card("War Ghoul") %}
+All clan disciplines at superior with a bleed bonus, worth the price.
+But it's his ability that gets him included, most often for cheap {{ war_ghoul }}.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Xipe Totec", decks=4, copies="1-5") %}
+{% trans trimmed %}
+The {{ ANI }}{{ AUS }} combination makes him a great blocker, and {{ PRO }} opens interesting options
+for pairing him up. His ability single-handedly defeats allies decks.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Piotr Andreikov", decks=4, copies="1") %}
+{% trans trimmed %}
+A 2-cap {{ aus }} weenie, cheap crypt filler with a touch of intercept.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Changeling", decks=30, copies="3-8") %}
 {% trans trimmed %}
 Choice between stealth and bleed enhancement, a versatile tool for {{ vic }}.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Chiropteran Marauder", decks=25, copies="4-9") %}
-{% trans trimmed immortal_grapple=card("Immortal Grapple")%}
+{% call layout.card_column("Chiropteran Marauder", decks=22, copies="3-10") %}
+{% trans trimmed %}
 An excellent combat card offering both maneuverability and aggravated damage.
-As a bonus, the strike stays a hand strike and can be used even if
-{{ immortal_grapple }} has been played.
+Dreadful.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Breath of the Dragon", decks=23, copies="2-5") %}
+{% call layout.card_column("Breath of the Dragon", decks=21, copies="2-5") %}
 {% trans trimmed chiropteran_marauder=card("Chiropteran Marauder") %}
 The <em>other</em> aggravated strike available through {{ vic }},
 it makes for a dreadful combination with {{ chiropteran_marauder }},
@@ -42,66 +87,16 @@ as no range is safe for the opponent.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Plasmic Form", decks=19, copies="2-6") %}
+{% call layout.card_column("Plasmic Form", decks=19, copies="2-5") %}
 {% trans trimmed chiropteran_marauder=card("Chiropteran Marauder") %}
 Stealth at inferior {{ vic }} is useful, even with the cost. And the defensive combat option can come in handy.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Caliban", decks=15, copies="1-2") %}
+{% call layout.card_column("Asanbonsam Ghoul", decks=13, copies="1-4") %}
 {% trans trimmed %}
-All clan disciplines {{ AUS }}{{ ANI }}{{ VIC }} at superior for only 6 pool: a bargain.
-He finds his spot in many Tzimisce crypts.
-{% endtrans %}
-{% endcall %}
-
-{% call layout.card_column("Devin Bisley", decks=12, copies="1") %}
-{% trans trimmed %}
-Although she has inferior {{ vic }}, having {{ AUS }}{{ ANI }} for just 5 pool
-makes an excellent blocker out of her.
-{% endtrans %}
-{% endcall %}
-
-{% call layout.card_column("Lolita Houston", decks=12, copies="1") %}
-{% trans trimmed %}
-The cheapest superior {{ VIC }}, she gets included in many decks centerd on the discipline.
-{% endtrans %}
-{% endcall %}
-
-{% call layout.card_column("Horatio", decks=43, copies="1-2") %}
-{% trans trimmed war_ghoul=card("War Ghoul") %}
-The cheapest {{ vic }} pool can buy. Typical low cap used to recruit some {{ war_ghoul }}.
-{% endtrans %}
-{% endcall %}
-
-{% call layout.card_column("Little Tailor of Prague", decks=8, copies="1") %}
-{% trans trimmed war_ghoul=card("War Ghoul") %}
-All clan disciplines at superior with a bleed bonus, worth the price.
-His ability can even be useful depending on the deck.
-{% endtrans %}
-{% endcall %}
-
-{% call layout.card_column("Meshenka", decks=7, copies="1-2") %}
-{% trans trimmed war_ghoul=card("War Ghoul") %}
-Often seen in {{ VIC }} toolboxes for her excellent reduction ability.
-{% endtrans %}
-{% endcall %}
-
-{% call layout.card_column("The Dracon", decks=7, copies="1-2") %}
-{% trans trimmed
-malgorzata=card("Malgorzata") ,
-saulot_the_wanderer=card("Saulot, The Wanderer")
-%}
-A good partner for {{ malgorzata }} as well as a fit in {{ THA }}{{ AUS }} {{ saulot_the_wanderer }} decks.
-{% endtrans %}
-{% endcall %}
-
-{% call layout.card_column("War Ghoul", decks=7, copies="2-8") %}
-{% trans trimmed %}
-One of the most dreadful allies of the game, it is an excellent combatant
-and can grind vampires down all around the table in a few turns.
-The trick is to work around its downside by getting cheap allies and retainers
-to sacrifice to it.
+A defensive ally that intercepts directed actions and drags the fight to close range,
+right where the clan's combat wants it.
 {% endtrans %}
 {% endcall %}
 {% endblock %}

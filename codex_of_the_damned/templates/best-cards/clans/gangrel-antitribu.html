@@ -8,33 +8,34 @@
         {% trans trimmed
         enkidu_multirush=link("/archetypes/enkidu-multirush")
         %}
-        The Gangrel Antiribu, with their {{ pro }}{{ cel }}{{ obf }} disciplines,
+        The Gangrel Antitribu, with their {{ pro }}{{ cel }}{{ obf }} disciplines,
         are versatile and can fight as well as bleed. They are particularly
         fear for their {{ enkidu_multirush }} archetype.
         {% endtrans %}
     </p>
 </div>
 
-{% call layout.card_column("Aksinya Daclau", decks=19, copies="2-4") %}
+{% call layout.card_column("Hartmut Stover", decks=20, copies="1-2") %}
+{% trans trimmed stanislava=card("Stanislava") %}
+A good voter, often seen alongside {{ stanislava }}.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Aksinya Daclau", decks=17, copies="3-4") %}
 {% trans trimmed girls_will_find_inner_circle=link("/archetypes/girls-will-find-inner-circle") %}
 Her unique ability makes for a solid bleed defense worth her cost all by itself. She is a key member
 of the {{ girls_will_find_inner_circle }} crypt.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Hartmut Stover", decks=18, copies="1-3") %}
-{% trans trimmed stanislava=card("Stanislava") %}
-A good voter, often seen alongside {{ stanislava }}.
-{% endtrans %}
-{% endcall %}
-
-{% call layout.card_column("Joseph Fischer", decks=13, copies="1") %}
+{% call layout.card_column("Omaya", decks=12, copies="1-3") %}
 {% trans trimmed %}
-A cheap anarch with superior {{ PRO }}, that gets him in some Anarch crypt.
+A versatile group 2 body with superior {{ ANI }}{{ AUS }}{{ FOR }} for intercept and combat,
+her free point of damage prevention each combat making her a resilient blocker.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Enkidu, The Noah", decks=11, copies="2-5") %}
+{% call layout.card_column("Enkidu, The Noah", decks=10, copies="1-5") %}
 {% trans trimmed enkidu_multirush=link("/archetypes/enkidu-multirush") %}
 Star of the clan and brutal fighter, he has his own archetype, {{ enkidu_multirush }}
 {% endtrans %}
@@ -46,23 +47,20 @@ A great voter, also a good friend of {{ stanislava }}.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Twisted Forest", decks=5, copies="1") %}
-{% trans trimmed stanislava=card("Stanislave") %}
+{% call layout.card_column("Twisted Forest", decks=4, copies="1") %}
+{% trans trimmed stanislava=card("Stanislava") %}
 A nice stealth location at a normal price.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Sébastien Goulet", decks=4, copies="2-4") %}
-{% trans trimmed
-shadow_court_satyrs=link("/archetypes/shadow-court-satyrs"),
-advanced_version=card("Sébastien Goulet (ADV)", _("advanced version"))
-%}
-Leader of the {{ shadow_court_satyrs }} archetype, he gets even better when merged
-with his {{ advanced_version }}.
+{% call layout.card_column("Marked Territory", decks=2, copies="1") %}
+{% trans trimmed %}
+A +2 stealth action that unlocks its bearer and can later burn for +2 intercept — stealth to
+get through now, defense later, in a single card.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Shadow Court Satyr", decks=3, copies="7-10") %}
+{% call layout.card_column("Shadow Court Satyr", decks=2, copies="9-10") %}
 {% trans trimmed
 own_archetype=link("/archetypes/shadow-court-satyrs", _("own archetype")),
 sebastien_goulet=card("Sébastien Goulet")
@@ -70,5 +68,4 @@ sebastien_goulet=card("Sébastien Goulet")
 A special ally, they have their {{ own_archetype }} and are usually recruited by {{ sebastien_goulet }}
 {% endtrans %}
 {% endcall %}
-
 {% endblock %}

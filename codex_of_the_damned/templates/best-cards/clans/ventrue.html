@@ -11,20 +11,12 @@
     %}
     <p>
         The Ventrue with {{ pre }}{{ dom }}{{ for }} have powerful disciplines and abilities.
-        They allow for interesing toolboxes like {{ ventrue_royalty }} or {{ gentlemen_with_sticks }}.
+        They allow for interesting toolboxes like {{ ventrue_royalty }} or {{ gentlemen_with_sticks }}.
     </p>
     {% endtrans %}
 </div>
 
-{% call layout.card_column("Ventrue Headquarters", decks=20, copies="1") %}
-{% trans trimmed %}
-A powerful edge for Ventrue political decks, it often gets included
-if there is the slightest chance some additional votes can come in handy,
-even defensively.
-{% endtrans %}
-{% endcall %}
-
-{% call layout.card_column("Arika", decks=57, copies="1-5") %}
+{% call layout.card_column("Arika", decks=18, copies="3-4") %}
 {% trans trimmed
 council_of_doom=link("/archetypes/council-of-doom"),
 the_dark_side_of_politics=link("/archetypes/the-dark-side-of-politics")
@@ -35,27 +27,20 @@ gets her included in many <em>Inner Circle</em> constructs, like in the
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Marcus Vitel", decks=14, copies="1-2") %}
-{% trans trimmed arika=card("Arika") %}
-Although he is a bit pricey, his title and access to {{ DOM }}{{ OBF }},
-and in some cases {{ OBT }}, gets him included in many crypts. A good friend of {{ arika }}
+{% call layout.card_column("Alice Chen", decks=16, copies="1-2") %}
+{% trans trimmed infernal_princes=link("/archetypes/infernal-princes") %}
+A <em>Prince</em> with {{ PRE }}{{ obf }}, she gets in many political decks,
+including out of her clans like {{ infernal_princes }}
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Graham Gottesman", decks=14, copies="1-2") %}
+{% call layout.card_column("Graham Gottesman", decks=15, copies="1-2") %}
 {% trans trimmed %}
 A cheap <em>Prince</em> in group 5, he finds his place in many political decks.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Alice Chen", decks=14, copies="1-2") %}
-{% trans trimmed infernal_princes=link("/archetypes/infernal-princes") %}
-A <em>Prince</em> with {{ PRE }}{{ obf }}, she gets in in many political decks,
-including out of her clans like {{ infernal_princes }}
-{% endtrans %}
-{% endcall %}
-
-{% call layout.card_column("Lodin (Olaf Holte)", decks=10, copies="1-3") %}
+{% call layout.card_column("Lodin (Olaf Holte)", decks=13, copies="1-3") %}
 {% trans trimmed
 ventrue_royalty=link("/archetypes/gentlemen-with-sticks")
 %}
@@ -65,15 +50,14 @@ his ability to prevent damage makes him quite sturdy.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Lucinde, Alastor", decks=10, copies="1-2") %}
-{% trans trimmed
-ventrue_royalty=link("/archetypes/gentlemen-with-sticks")
-%}
-Although she's expensive, her title and {{ PRE }}{{ obf }} combination gets her included in many political decks.
+{% call layout.card_column("Marcus Vitel", decks=13, copies="1-3") %}
+{% trans trimmed arika=card("Arika") %}
+Although he is a bit pricey, his title and access to {{ DOM }}{{ OBF }},
+and in some cases {{ OBT }}, gets him included in many crypts. A good friend of {{ arika }}
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Queen Anne", decks=10, copies="1-2") %}
+{% call layout.card_column("Queen Anne (G2)", decks=12, copies="1-2") %}
 {% trans trimmed
 ventrue_royalty=link("/archetypes/gentlemen-with-sticks")
 %}
@@ -81,4 +65,17 @@ Also on the expensive side, also running {{ PRE }}{{ obf }}, her bleed bonus is 
 {% endtrans %}
 {% endcall %}
 
+{% call layout.card_column("Sybren van Oosten", decks=12, copies="1-2") %}
+{% trans trimmed %}
+A group 6 <em>Prince</em> with superior {{ PRE }}{{ FOR }}; his unlock makes him a great asset for political decks.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Ventrue Headquarters", decks=30, copies="1") %}
+{% trans trimmed %}
+A powerful edge for Ventrue political decks, it often gets included
+if there is the slightest chance some additional votes can come in handy,
+even defensively.
+{% endtrans %}
+{% endcall %}
 {% endblock %}

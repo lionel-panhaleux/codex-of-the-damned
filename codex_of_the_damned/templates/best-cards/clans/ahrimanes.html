@@ -26,57 +26,49 @@
     </p>
     <p>
         This clan has only one main archetype: {{ cats }}.
-        Some Ahrimaines are good picks for mono {{ ani }} archetypes
+        Some Ahrimanes are good picks for mono {{ ani }} archetypes
         as they offer {{ ANI }} vampires for good value like
         {{ effie_lowery }} and {{ sahana }}.
     </p>
     {% endtrans %}
 </div>
 
-{% call layout.card_column('Howler', decks=43, copies="3-5") %}
+{% call layout.card_column("Howler", decks=43, copies="3-4") %}
 {% trans trimmed %}
-Leader of the group 2 crypt, she has all clan disciplines {{ SPI }}{{ ANI }}{{ PRE }} at superior
-for a cost of 8. The maneuver combined with the +1 strength bonus makes her a good warrior on her
-own.
+The heaviest group 2 pick, with superior {{ ANI }}{{ PRE }}{{ SPI }} and a free
+maneuver each combat that makes her a sturdy defensive core, though she cannot wield weapons.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column('The Siamese', decks=42, copies="2-3") %}
-{% trans trimmed howler=card("Howler") %}
-{{ howler }}'s best sidekick. The bleed bonus is huge.
-{% endtrans %}
-{% endcall %}
-
-{% call layout.card_column('Effie Lowery', decks=41, copies="1-3") %}
+{% call layout.card_column("The Siamese", decks=42, copies="2-4") %}
 {% trans trimmed %}
-Superior {{ ANI }} and {{ SPI }} at a very decent cost of 5,
-she is even included in pure {{ ANI }} crypts.
+A group 2 offensive workhorse: superior {{ PRE }}{{ SPI }} with {{ pro }} for combat
+and a built-in +1 bleed to help close games.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column('Muricia', decks=26, copies="2-4") %}
-{% trans trimmed
-aid_from_bats=card("Aid From Bats"),
-carrion_crows=card("Carrion Crows")
-%}
-Leader of the group 4 crypt, she has all clan disciplines {{ SPI }}{{ ANI }}{{ PRE }} at superior
-for a reasonnable cost of 7. The +1 strength bonus is always good to take: she can use a little less
-{{ aid_from_bats }} for a little more {{ carrion_crows }}.
+{% call layout.card_column("Effie Lowery", decks=42, copies="1-3") %}
+{% trans trimmed %}
+Cheap and efficient, her superior {{ ANI }}{{ spi }} at only 5 capacity make her
+a great value pick, in Ahrimanes as in mono {{ ani }} builds.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column('Nose of the Hound', decks=92, copies="1-4") %}
-{% trans trimmed
-bums_rush=card("Bum's Rush"),
-deep_song=card("Deep Song")
-%}
-A nice rush action, slightly better than {{ bums_rush }}.
-It is often played in {{ aus }} constructs for its base effect, as {{ ani }} provides the
-arguably better {{ deep_song }} already.
+{% call layout.card_column("Cynthia Ingold", decks=39, copies="1-3") %}
+{% trans trimmed %}
+A mid-capacity group 2 vampire whose only superior discipline is {{ SPI }},
+useful mainly to round out a group 2 crypt.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Falcon's Eye", decks=64, copies="2-5") %}
+{% call layout.card_column("Nose of the Hound", decks=98, copies="1-4") %}
+{% trans trimmed %}
+Stealth rushed aren't that common, this one gained popularity thanks to the inferior {{ aus }}
+that makes it a sensible inclusion in many combat-oriented Auspex {{ AUS }} decks.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Falcon's Eye", decks=64, copies="2-6") %}
 {% trans trimmed
 eagles_sight=card("Eagle's Sight"),
 anneke=card("Anneke"),
@@ -88,25 +80,17 @@ The ability to intercept one's prey bleed or a cross-table vote is critical to {
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column('Speak with Spirits', decks=63, copies="6-11") %}
+{% call layout.card_column("Speak with Spirits", decks=63, copies="6-11") %}
 {% trans trimmed %}
-An excellent unlock and intercept reaction, the core of most Ahrimanes defensive modules.
-An unlock is better than a simple wake, and the card is cheap: it costs blood only if
-both unlock and intercept are needed.
+The backbone intercept of any {{ spi }} wall: it wakes and blocks, and at superior
+{{ SPI }} a locked vampire unlocks to intercept and can even buy extra intercept with blood.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column('Swiftness of the Stag', decks=62, copies="5-9") %}
-{% trans trimmed
-aid_from_bats=card("Aid From Bats"),
-carrion_crows=card("Carrion Crows"),
-resist_earths_grasp=card("Resist Earth's Grasp")
-%}
-A versatile tool: it is decisive in combat and works well with the {{ ani }}
-classic combination of {{ aid_from_bats }} and {{ carrion_crows }}.
-Moreover, the optional +1 stealth is very useful to get critical actions through.
-It is a straight upgrade over the similar {{ resist_earths_grasp }}.
+{% call layout.card_column("Swiftness of the Stag", decks=62, copies="5-10") %}
+{% trans trimmed %}
+A flexible {{ spi }} combat trick — maneuver or press — that doubles as a stealth
+action modifier at superior {{ SPI }}, smoothing both offence and defence.
 {% endtrans %}
 {% endcall %}
-
 {% endblock %}

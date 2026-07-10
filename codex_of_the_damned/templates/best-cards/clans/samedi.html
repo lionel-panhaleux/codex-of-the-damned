@@ -1,0 +1,100 @@
+{% extends "best-cards/_layout.html" %}
+{% import "best-cards/_layout_card_column.html" as layout with context %}
+
+{% block content %}
+<h1>{{ samedi }} Samedi</h1>
+<div class="insert warn">
+    {% trans trimmed %}This list is compiled from statistics encompassing 30 years,
+    as the clan has not scored enough wins in the last 5 years for relevant statistics otherwise.{% endtrans %}
+</div>
+<div class="insert tip">
+    <p>
+        {% trans trimmed %}
+        The Samedi are the walking dead of the Old World, an Independent line of rotting
+        corpses whose unique {{ thn }} discipline lets them fall apart and reassemble,
+        shrug off wounds, and rot their prey from within. Folded into the Hecata {{ hecata }}
+        in V5, they are rarely played today, but their decay tricks and grave-cold resilience
+        still reward a patient wall or a bleed built around their unliving stamina.
+        {% endtrans %}
+    </p>
+</div>
+
+{% call layout.card_column("The Baron", decks=18, copies="1-4") %}
+{% trans trimmed %}
+All clan disciplines at superior plus {{ dom }} and {{ NEC }}, a two-vote title and a bleed bonus:
+a capacity 9 flagship well worth the cost.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Baroque", decks=13, copies="1-3") %}
+{% trans trimmed %}
+A capacity 7 vampire with superior {{ NEC }} and {{ THN }}, able to rush younger vampires
+as a directed action for some welcome aggression.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Jorge De La Muerte, The Agent", decks=13, copies="1-2") %}
+{% trans trimmed %}
+Superior {{ OBF }} and {{ THN }} let him find a slot in many Samedi {{ samedi }} decks.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Reg Driscoll", decks=11, copies="1-3") %}
+{% trans trimmed %}
+Superior {{ OBF }} and {{ THN }} plus a neat bleed bonus, good chap.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Marie-Pierre", decks=10, copies="1-3") %}
+{% trans trimmed %}
+An affordable capacity 4 body with superior {{ THN }}, whose ability to pile into a combat
+another Samedi has just fought makes her a handy backer in combat decks.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Mambo Jeanne", decks=8, copies="2-5") %}
+{% trans trimmed %}
+All clan disciplines at superior plus {{ NEC }}, and a passive that sears close attackers for 2 damage
+each round: a capacity 9 brute that often stars in rush combat decks.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Under My Skin", decks=23, copies="2-10") %}
+{% trans trimmed the_capuchin=card("The Capuchin") %}
+The most-played Thanatosis {{ tha }} card: very efficient stealth with a unique carry-over effect.
+Used by Samedi as well as {{ the_capuchin }}.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Houngan", decks=14, copies="1-2") %}
+{% trans trimmed %}
+Samedi {{ samedi }} do not have a hunting ground, and this is their only blood-generating device.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Reanimated Corpse", decks=10, copies="4-15") %}
+{% trans trimmed %}
+A cheap, disposable ally that can bleed and play
+{{ for }} damage prevention; its pathos counters cap its lifespan, but the price is right.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Relentless Reaper", decks=9, copies="6-15") %}
+{% trans trimmed sce=link("/strategy/combat", _("S:CE"), _anchor="defence") %}
+Damage prevention and an anti-{{ sce }} in one card: cornerstone of the Samedi {{ samedi }} combat module.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Groaning Corpse", decks=9, copies="6-12") %}
+{% trans trimmed relentless_reaper=card("Relentless Reaper") %}
+Stackable close-range damage that pairs so well with {{ relentless_reaper }}.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Hag's Wrinkles", decks=9, copies="3-27") %}
+{% trans trimmed %}
+Stealth plus an untap on an equip action, letting a Samedi gear up unseen and act again: a unique effect
+that can range from handy to pure combo.
+{% endtrans %}
+{% endcall %}
+{% endblock %}

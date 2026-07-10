@@ -12,8 +12,7 @@
     </p>
 </div>
 
-
-{% call layout.card_column("Earth Meld", decks=207, copies="3-10") %}
+{% call layout.card_column("Earth Meld", decks=308, copies="2-11") %}
 {% trans trimmed %}
 It is considered the best <em>« combat ends »</em> card of the game.
 It comes at no cost at inferior {{ pro }}, plus gives an unlock option at superior
@@ -21,21 +20,21 @@ It comes at no cost at inferior {{ pro }}, plus gives an unlock option at superi
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Form of Mist", decks=196, copies="3-6") %}
+{% call layout.card_column("Form of Mist", decks=302, copies="2-6") %}
 {% trans trimmed %}
 An excellent combination of <em>« combat ends »</em> and stealth,
 one of the most versatile tool of {{ pro }}.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Form of the Bat", decks=140, copies="2-4") %}
+{% call layout.card_column("Form of the Bat", decks=240, copies="2-5") %}
 {% trans trimmed %}
-Providing either stealth or intercept depending on the need, you do not get much more
+Providing either stealth or intercept depending on the need, one does not get much more
 versatile than this. A must-have in any {{ PRO }} module.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Earth Control", decks=136, copies="2-5") %}
+{% call layout.card_column("Earth Control", decks=216, copies="2-6") %}
 {% trans trimmed
 form_of_mist=card("Form of Mist"),
 form_of_the_bat=card("Form of the Bat")
@@ -46,14 +45,7 @@ this is almost as stealthy as {{ obf }}.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Instantaneous Transformation", decks=69, copies="3-7") %}
-{% trans trimmed %}
-A powerful and versatile stealth / unlock combination, the superior {{ PRO }}{{ CEL }}
-version is of course more desirable.
-{% endtrans %}
-{% endcall %}
-
-{% call layout.card_column("Claws of the Dead", decks=58, copies="1-4") %}
+{% call layout.card_column("Claws of the Dead", decks=80, copies="1-4") %}
 {% trans trimmed
 immortal_grapple=card("Immortal Grapple"),
 wolf_claws=card("Wolf Claws"),
@@ -67,17 +59,7 @@ as cheaper, weaker to defenses, options.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Homunculus", decks=46, copies="1-3") %}
-{% trans trimmed
-madness_network=card("Madness Network"),
-enkil_cog=card("Enkil Cog")
-%}
-A powerful tool, especially when combined with the cards that allow to act
-during other players turn: {{ madness_network }} and {{ enkil_cog }}.
-{% endtrans %}
-{% endcall %}
-
-{% call layout.card_column("Rapid Change", decks=41, copies="1-3") %}
+{% call layout.card_column("Rapid Change", decks=62, copies="1-4") %}
 {% trans trimmed
 form_of_mist=card("Form of Mist"),
 earth_control=card("Earth Control"),
@@ -89,37 +71,23 @@ pricey, but it completes the stealth arsenal of {{ pro }} along {{ form_of_mist 
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Flesh of Marble", decks=29, copies="2-7") %}
+{% call layout.card_column("Homunculus", decks=50, copies="1-3") %}
+{% trans trimmed
+madness_network=card("Madness Network"),
+enkil_cog=card("Enkil Cog")
+%}
+A powerful tool, especially when combined with the cards that allow to act
+during other players turn: {{ madness_network }} and {{ enkil_cog }}.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Flesh of Marble", decks=33, copies="2-7") %}
 {% trans trimmed
 earth_meld=card("Earth Meld"),
 immortal_grapple=card("Immortal Grapple")
 %}
 A good damage prevention card, it can handle heavy damage-dealing modules,
-even those using additonal strikes, with a single card.
+even those using additional strikes, with a single card.
 {% endtrans %}
 {% endcall %}
-
-{% call layout.card_column("Bear's Skin", decks=14, copies="3-6") %}
-{% trans trimmed
-ivory_bow=card("Ivory Bow"),
-flesh_of_marble=card("Flesh of Marble")
-%}
-A two beads differential at no cost, and it can protect from a single point of aggravated damage,
-like what {{ ivory_bow }} does. A nice complement to {{ flesh_of_marble }} when {{ ani }} is available.
-{% endtrans %}
-{% endcall %}
-
-{% call layout.card_column("Form of the Cobra", decks=13, copies="2-3") %}
-{% trans trimmed %}
-Yet another stealth device at superior {{ PRO }}, with no cost, and guaranteed not to jam.
-Its relatively low success is only due to the even stronger options {{ PRO }} already provides.
-{% endtrans %}
-{% endcall %}
-
-{% call layout.card_column("Body Flare", decks=10, copies="1-3") %}
-{% trans trimmed %}
-A costly but brutal strike. 2 aggravated damage at any range are pratty hard to get around.
-{% endtrans %}
-{% endcall %}
-
 {% endblock %}

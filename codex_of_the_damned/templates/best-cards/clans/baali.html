@@ -47,24 +47,15 @@
     {% endtrans %}
 </div>
 
-{% call layout.card_column("The Unnamed", decks=33, copies="3-8") %}
-{% trans trimmed
-own_archetype=link("/archetypes/the-unnamed", _("own archetype"))
-%}
-Star of his {{ own_archetype }}, his ability makes for a very comfortable bloat.
-His access to such a powerful disciplines combination allows him to use a broad range of cards.
+{% call layout.card_column("The unnamed", decks=40, copies="4-12") %}
+{% trans trimmed the_unnamed_arch=link("/archetypes/the-unnamed") %}
+A 10-capacity powerhouse and the backbone of the {{ the_unnamed_arch }} archetype:
+superior {{ OBF }} for stealthed bleeds that pay 2 pool back, an aggravated strike,
+and {{ CEL }}{{ PRE }}{{ PRO }} to dominate combat.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Veneficti", decks=32, copies="1-2") %}
-{% trans trimmed %}
-The best ally of the clan, Veneficti has a 2 points bleed combined with stealth,
-all for the cheap cost of 1 pool. Hard to resist:
-it is the kind of awesome cards one is paying the <em>Infernal</em> penalty for.
-{% endtrans %}
-{% endcall %}
-
-{% call layout.card_column("Arishat", decks=25, copies="1-4") %}
+{% call layout.card_column("Arishat", decks=26, copies="1-5") %}
 {% trans trimmed infernal_barons=link("/archetypes/infernal-barons") %}
 An excellent ability for politics, defensively or offensively.
 Depending on the opposition, she can offer a swing from 1 to 4 votes reliably.
@@ -72,7 +63,14 @@ Star of the {{ infernal_barons }} archetype.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Cybele", decks=20, copies="3-5") %}
+{% call layout.card_column("The Horde", decks=20, copies="3-5") %}
+{% trans trimmed %}
+An excellent sidekick - its ability can be used to boost older vampires bleed easily,
+even from torpor.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Cybele", decks=17, copies="3-5") %}
 {% trans trimmed
 girls_will_find_inner_circles=link("/archetypes/girls-will-find-inner-circle"),
 ashur_tablets=card("Ashur Tablets")
@@ -83,13 +81,6 @@ since the 2024 nerf to {{ ashur_tablets }}.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("The Horde", decks=17, copies="3-6") %}
-{% trans trimmed %}
-An excellent sidekick - its ability can be used to boost older vampires bleed easily,
-even from torpor.
-{% endtrans %}
-{% endcall %}
-
 {% call layout.card_column("Giotto Verducci", decks=14, copies="4-5") %}
 {% trans trimmed %}
 Another Baali {{ baali }} star, particularly appreciated for his relatively low capacity
@@ -97,26 +88,14 @@ and ability to cycle cards fast. Perfect in combo decks of all sorts.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Tend the Flock", decks=14, copies="3-7") %}
-{% trans trimmed
-cybele=card("Cybele"),
-grooming_the_protege=card("Grooming the Protege")
-%}
-An excellent bloat device. Played in many Baali decks,
-it also plays well with {{ cybele }} ability.
-This card helps to make up for the <em>Infernal</em> penalty and is straightly better than
-{{ grooming_the_protege }}.
+{% call layout.card_column("Nergal", decks=14, copies="1-10") %}
+{% trans trimmed nergal_beast=link("/archetypes/nergal-beast") %}
+Six superior disciplines, a built-in +2 bleed and a once-a-turn cost reduction
+make him a one-man toolbox — the star of the {{ nergal_beast }} archetype.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Xeper, Sultan of Lepers", decks=11, copies="1-3") %}
-{% trans trimmed %}
-An excellent vampire, with a very annoying ability against ally constructs and a decent one
-for vote constructs. His inferior {{ dai }} is almost not an issue.
-{% endtrans %}
-{% endcall %}
-
-{% call layout.card_column("Unleash Hell's Fury", decks=81, copies="2-4") %}
+{% call layout.card_column("Unleash Hell's Fury", decks=91, copies="2-4") %}
 {% trans trimmed %}
 The most played {{ dai }} card. The pool cost is steep, but it is a dreadful defence.
 It can be used to deter bleeds or protect vampires against aggressive actions.
@@ -124,7 +103,7 @@ The threat of torpor without even a combat is hard to get around.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("I am Legion", decks=37, copies="2-4") %}
+{% call layout.card_column("I am Legion", decks=42, copies="2-4") %}
 {% trans trimmed
 telepathic_misdirection=card("Telepathic Misdirection"),
 my_enemy_s_enemy=card("My Enemy's Enemy")
@@ -136,15 +115,15 @@ as it can be used at superior {{ OBF }}{{ DAI }} to just gain a pool for a blood
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Contagion", decks=30, copies="1") %}
+{% call layout.card_column("Veneficti", decks=39, copies="1") %}
 {% trans trimmed %}
-A decent pool damage provider, although often played as a single copy in Baali decks.
-It is a way to bring the pool cost around the table closer to the one one has to pay
-to unlock Infernal vampires, and is more useful in slow-paced decks.
+The best ally of the clan, Veneficti has a 2 points bleed combined with stealth,
+all for the cheap cost of 1 pool. Hard to resist:
+it is the kind of awesome cards one is paying the <em>Infernal</em> penalty for.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Sense the Sin", decks=30, copies="2-5") %}
+{% call layout.card_column("Sense the Sin", decks=36, copies="1-5") %}
 {% trans trimmed %}
 A very versatile card, it can be used for intercept or additional bleed,
 depending on the situation.
@@ -152,38 +131,18 @@ Always useful, at no cost, even with no corruption counter around.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Infernal Servitor", decks=17, copies="1-4") %}
+{% call layout.card_column("Contagion", decks=35, copies="1") %}
+{% trans trimmed %}
+A decent pool damage provider, although often played as a single copy in Baali decks.
+It is a way to bring the pool cost around the table closer to the one one has to pay
+to unlock Infernal vampires, and is more useful in slow-paced decks.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Infernal Servitor", decks=24, copies="1-5") %}
 {% trans trimmed %}
 An excellent ally: although he does not stay in play,
 his bleed power is huge and can make for a very nice lunge.
 {% endtrans %}
 {% endcall %}
-
-{% call layout.card_column("Kaymakli Fragment", decks=15, copies="2-7") %}
-{% trans trimmed giotto_verducci=card("Giotto Verducci")%}
-Mostly used in Infernal decks to bloat or help get vampires out faster and cheaper,
-it is sometimes used by Sabbat vampires for the cycling ability. It is a favorite of
-{{ giotto_verducci }}.
-{% endtrans %}
-{% endcall %}
-
-{% call layout.card_column("Psychomachia", decks=15, copies="1-2") %}
-{% trans trimmed
-cybele=card("Cybele"),
-the_unnamed=card("The unnamed")
-%}
-A decent block denial, although limited to younger vampires and allies,
-it still applies to a lot of minions when
-one plays {{ cybele }} or {{ the_unnamed }}.
-{% endtrans %}
-{% endcall %}
-
-{% call layout.card_column("Condemnation: Mute", decks=11, copies="2-5") %}
-{% trans trimmed %}
-An excellent card for politics, both defensively and offensively.
-Even Baali decks with no take on the politics game can play it
-just to hinder a politic opponent.
-{% endtrans %}
-{% endcall %}
-
 {% endblock %}

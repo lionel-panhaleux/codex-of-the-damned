@@ -4,7 +4,7 @@
 {% block content %}
 <h1>{{ _("Politial actions") }}</h1>
 
-{% call layout.card_column("Kine Resources Contested", decks=149, copies="2-8") %}
+{% call layout.card_column("Kine Resources Contested", decks=194, copies="2-8") %}
 {% trans trimmed %}
 The damage-dealing vote <em>par excellence</em>. It does not depend on the table
 conditions and delivers a steady 3 pool blow to the prey. Often played in multiple
@@ -13,7 +13,7 @@ deal pool damage in a duel or a three-way.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Ancilla Empowerment", decks=118, copies="1") %}
+{% call layout.card_column("Ancilla Empowerment", decks=159, copies="1-2") %}
 {% trans trimmed
 anarchist_uprising=card("Anarchist Uprising"),
 delaying_tactics=card("Delaying Tactics")
@@ -23,7 +23,7 @@ can make a {{ delaying_tactics }} fizzle, so why not.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Banishment", decks=113, copies="1-4") %}
+{% call layout.card_column("Banishment", decks=157, copies="1-4") %}
 {% trans trimmed %}
 A very powerful vote when using big capacity vampires. It will cost time and pool to the
 target, most likely the prey or predator, but it can target anyone on the table, making
@@ -31,7 +31,7 @@ it a nice tool for table control and negotiations.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Anarchist Uprising", decks=107, copies="1-2") %}
+{% call layout.card_column("Anarchist Uprising", decks=144, copies="1-2") %}
 {% trans trimmed ancilla_empowerment=card("Ancilla Empowerment") %}
 Almost always played alongside {{ ancilla_empowerment }}, it is a decisive tool against
 weenie and breed decks. Depending on the situation, it can take a whole table down in a
@@ -39,21 +39,21 @@ single strike.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Reins of Power", decks=92, copies="1") %}
+{% call layout.card_column("Reins of Power", decks=108, copies="1") %}
 {% trans trimmed %}
 A serious damage dealer when playing a 10 or 11 capacity vampire. Only one copy is
 included but, with the right crypt, it is one of the strongest damage dealing votes.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Ancient Influence", decks=85, copies="1") %}
+{% call layout.card_column("Ancient Influence", decks=105, copies="1") %}
 {% trans trimmed reins_of_power=card("Reins of Power") %}
 A customary companion to {{ reins_of_power }}, it is a good bloat device
 (for 5 or 6 pool), but may have to be discarded if the prey has big capacity vampires.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Political Stranglehold", decks=74, copies="1") %}
+{% call layout.card_column("Political Stranglehold", decks=104, copies="1") %}
 {% trans trimmed
 reins_of_power=card("Reins of Power"),
 ancient_influence=card("Ancient Influence")
@@ -63,7 +63,15 @@ is a good bloat device if one plans to get two or more big capacity vampires int
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Consanguineous Boon", decks=57, copies="2-7") %}
+{% call layout.card_column("Reckless Agitation", decks=71, copies="1-4") %}
+{% trans trimmed kine_resources_contested=card("Kine Resources Contested") %}
+A damage-dealing vote for Independent and Anarch crypts, spreading 6 pool across two or more
+Methuselahs. The forced split makes it useless in a duel, but it
+can soften several opponents at once or help finish a crowded table.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Consanguineous Boon", decks=66, copies="2-8") %}
 {% trans trimmed %}
 Although only worth it in breed decks, its bloat power is tremendous in this case.
 Political breed decks can usually get away with not defence at all, relying on this
@@ -71,7 +79,7 @@ bloat device alone to survive even the most hard pressing predators.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Neonate Breach", decks=38, copies="1-2") %}
+{% call layout.card_column("Neonate Breach", decks=41, copies="1-2") %}
 {% trans trimmed
 kine_resources_contested=card("Kine Resources Contested"),
 delaying_tactics=card("Delaying Tactics")
@@ -81,7 +89,16 @@ decks and it adds a little bit of variety to address the {{ delaying_tactics }} 
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Conservative Agitation", decks=31, copies="1-5") %}
+{% call layout.card_column("Rumors of Gehenna", decks=34, copies="1") %}
+{% trans trimmed
+the_parthenon=card("The Parthenon")
+%}
+A cheap way to get more Master phase actions, compared to {{ the_parthenon }}. Of course,
+using both also makes sense.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Conservative Agitation", decks=30, copies="1-4") %}
 {% trans trimmed
 kine_resources_contested=card("Kine Resources Contested"),
 delaying_tactics=card("Delaying Tactics")
@@ -91,22 +108,4 @@ some players have been ousted. Still a solid alternative to add variety over
 {{ kine_resources_contested }} and dilute a potential {{ delaying_tactics }}.
 {% endtrans %}
 {% endcall %}
-
-{% call layout.card_column("Rumors of Gehenna", decks=28, copies="1") %}
-{% trans trimmed
-the_parthenon=card("The Parthenon")
-%}
-A cheap way to get more Master phase actions, compared to {{ the_parthenon }}. Of course,
-using both also makes sense.
-{% endtrans %}
-{% endcall %}
-
-{% call layout.card_column("Disputed Territory", decks=27, copies="1") %}
-{% trans trimmed %}
-Although less common than pool-related votes, it gets often included as many locations
-can be worth the action to steal them. Of course, its efficiency depends solely on the
-environment.
-{% endtrans %}
-{% endcall %}
-
 {% endblock %}

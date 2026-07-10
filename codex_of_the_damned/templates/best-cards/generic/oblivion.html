@@ -12,83 +12,53 @@
     </p>
 </div>
 
-{% call layout.card_column("Arms of Ahriman") %}
+{% call layout.card_column("Where the Veil Thins", decks=42, copies="3-5") %}
 {% trans trimmed %}
-A versatile combat card that can be used for a bit of defense at superior {{ OBL }}.
+A nice stealth modifier, especially against allies.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Consign to Oblivion") %}
-{% trans trimmed
-deflection=card("Deflection") ,
-organized_resistance=card("Organized Resistance")
-%}
-An interesting modifier making bounces like {{ deflection }} more expensive,
-and unlocks like {{ organized_resistance }} an unappealing gamble.
-It is expensive though.
-{% endtrans %}
-{% endcall %}
-
-{% call layout.card_column("Pass Through Shadow") %}
+{% call layout.card_column("Stygian Shroud", decks=41, copies="3-6") %}
 {% trans trimmed %}
-A super combat ends that also provides some stealth later at superior {{ OBL }}.
+A clean block denial, that is always very strong.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Shroud of Decay") %}
-{% trans trimmed %}
-An interesting pool damage device. At superior {{ OBL }}, it's like a bleed that cannot be bounced.
-{% endtrans %}
-{% endcall %}
-
-{% call layout.card_column("Shadow Cast") %}
+{% call layout.card_column("Shadow Cast", decks=39, copies="3-8") %}
 {% trans trimmed %}
 A base stealth tool for {{ obl }}, it can be played in numbers because the superior effect
 can be used to avoid jamming the hand.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Shadow Cloak") %}
+{% call layout.card_column("Shadow Cloak", decks=38, copies="3-6") %}
 {% trans trimmed %}
 The other shadow stealth, even easier to cycle, although the remanent effect is a bit weaker.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Shadow Sentinel") %}
+{% call layout.card_column("Shadow Sentinel", decks=36, copies="2-6") %}
 {% trans trimmed %}
 A great wake, that can even be used on allies.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Spectral Servitor") %}
+{% call layout.card_column("Pass Through Shadow", decks=32, copies="3-8") %}
+{% trans trimmed %}
+An excellent combat ends that also provides some stealth later at superior {{ OBL }}.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Shroud of Decay", decks=30, copies="2-12") %}
+{% trans trimmed %}
+An interesting pool damage device. At superior {{ OBL }}, it's like a bleed that cannot be bounced.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Spectral Servitor", decks=26, copies="2-16") %}
 {% trans trimmed nocturn=card("Nocturn") %}
 A nice low-key servitor, reminiscent of the old {{ nocturn }}, but a step above.
 He can bleed or defend and, if he is useful, he can even be kept.
 {% endtrans %}
 {% endcall %}
-
-{% call layout.card_column("Stygian Shroud") %}
-{% trans trimmed %}
-A clean block denial, that is always very strong.
-{% endtrans %}
-{% endcall %}
-
-{% call layout.card_column("Touch of Oblivion") %}
-{% trans trimmed %}
-An expensive but scary strike. Both levels can be interesting depending on the situation.
-{% endtrans %}
-{% endcall %}
-
-{% call layout.card_column("Truth in Darkness") %}
-{% trans trimmed %}
-A decent intercept card, especially for Lasombra {{ lasombra }} since they do not have access to Auspex {{ aus }}.
-{% endtrans %}
-{% endcall %}
-
-{% call layout.card_column("Where the Veil Thins") %}
-{% trans trimmed %}
-A nice stealth modifier, especially against allies.
-{% endtrans %}
-{% endcall %}
-
 {% endblock %}

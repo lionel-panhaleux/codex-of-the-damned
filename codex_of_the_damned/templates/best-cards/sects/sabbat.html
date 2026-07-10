@@ -13,7 +13,7 @@
     </p>
 </div>
 
-{% call layout.card_column("Under Siege", decks=25, copies="1-3") %}
+{% call layout.card_column("Under Siege", decks=33, copies="1-3") %}
 {% trans trimmed second_tradition_domain=card("Second Tradition: Domain", "Second Tradition") %}
 An excellent defensive tool for titled Sabbat vampires, to be compared with the
 Camarilla's {{ second_tradition_domain }}, it needs to get through to be used and
@@ -21,17 +21,32 @@ provides less intercept, but three unlocks for just one pool is a bargain.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Abbot", decks=22, copies="1-2") %}
+{% call layout.card_column("Abbot", decks=24, copies="1-2") %}
 {% trans trimmed %}
 An excellent intercept enhancer that does not even cost an action, although only against
 directed actions. Virtually every Sabbat wall deck include some of these.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Black Forest Base", decks=12, copies="1") %}
+{% call layout.card_column("Black Forest Base", decks=23, copies="1") %}
 {% trans trimmed %}
 An excellent bloat device for Sabbat decks that have the votes to back it up,
 it can also be used as a bargaining chip with other Methuselahs.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Cold War", decks=17, copies="3-6") %}
+{% trans trimmed kine_resources_contested=card("Kine Resources Contested") %}
+A hard-hitting vote, on par or better than {{ kine_resources_contested }}.
+Not having to allocate a fourth point can be an asset or one less chip to deal.
+Destroying locations is definitely a neat option.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Private Audience", decks=14, copies="2-5") %}
+{% trans trimmed closed_session=card("Closed Session") %}
+The Sabbat mirror of {{ closed_session }}: that can let a
+titled minion push a key referendum past outside opposition.
 {% endtrans %}
 {% endcall %}
 
@@ -43,33 +58,15 @@ Sabbat decks.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Fiendish Tongue", decks=10, copies="3-10") %}
+{% call layout.card_column("Fiendish Tongue", decks=11, copies="3-11") %}
 {% trans trimmed %}
 A decent bleed action, especially if Anarch decks are common enough around the tables.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Legacy of Pander", decks=6, copies="3-7") %}
-{% trans trimmed legacy_of_pander = link("/archetypes/legacy-of-pander") %}
-Cornerstone of the {{ legacy_of_pander }} archetype, it enables this whole swarm archetype.
+{% call layout.card_column("War of Ages", decks=11, copies="1-2") %}
+{% trans trimmed %}
+A vote that settles in for the long game: a steady source of prey pressure, and a bit of bloat.
 {% endtrans %}
 {% endcall %}
-
-{% call layout.card_column("Gurchon Hall", decks=4, copies="1") %}
-{% trans trimmed carfax_abbey = card("Carfax Abbey") %}
-Similar to the Anarch {{ carfax_abbey }}, although more costly and useless with a single vampire.
-Still a good Hunting Ground.
-{% endtrans %}
-{% endcall %}
-
-{% call layout.card_column("Eternal Vigilance", decks=4, copies="1-2") %}
-{% trans trimmed
-abbot=card("Abbot"),
-under_siege=card("Under Siege")
-%}
-Another good defensive device that provides an unlock on every action, it can be
-combined with {{ abbot }} and {{ under_siege }} for an exceptional defensive arsenal.
-{% endtrans %}
-{% endcall %}
-
 {% endblock %}

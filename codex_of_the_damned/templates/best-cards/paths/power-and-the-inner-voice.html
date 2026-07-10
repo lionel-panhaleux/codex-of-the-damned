@@ -1,0 +1,77 @@
+{% extends "best-cards/_layout.html" %}
+{% import "best-cards/_layout_card_column.html" as layout with context %}
+
+{% block content %}
+<h1>{{ _("Power and the Inner Voice") }}</h1>
+<div class="insert warn">
+    {% trans trimmed %}
+    The Path of Power and the Inner Voice arrived with the Sabbat set in October
+    2025, so these figures are drawn from a small, recent sample and will shift as
+    the cards see more play.
+    {% endtrans %}
+</div>
+<div class="insert tip">
+    <p>
+        {% trans trimmed %}
+        The Path of Power and the Inner Voice is the political engine of the Sabbat
+        set, walked chiefly by Lasombra and Ventrue vampires. It works on two fronts
+        that feed each other: a family of block-denial modifiers on Potence {{ pot }}
+        and Presence {{ pre }} that force bleeds and actions past any wall.
+        {% endtrans %}
+    </p>
+</div>
+
+{% call layout.card_column("Aaradhya, The Callous Tyrant", decks=13, copies="1-5") %}
+{% trans trimmed %}
+The path's flagship: a ten-capacity Ventrue {{ ventrue }} <em>cardinal</em> with five
+superior disciplines. She unlocks after any political action — pass or fail.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Khin Aye", decks=13, copies="1-2") %}
+{% trans trimmed %}
+A seven-capacity Ventrue {{ ventrue }} <em>priscus</em> on superior {{ POT }}{{ PRE }},
+the path's two block-denial disciplines, lending a title to the referendum plan.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Üresség", decks=12, copies="1-2") %}
+{% trans trimmed %}
+One of the path's Brujah {{ brujah }} recruits, an eight-capacity <em>archbishop</em>
+whose {{ CEL }}{{ POT }}{{ PRE }} span both the taxing modifiers and the path's
+Celerity tricks.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Věnceslava, The Implacable", decks=12, copies="1-2") %}
+{% trans trimmed %}
+A nine-capacity Brujah {{ brujah }} <em>archbishop</em> with four superior
+disciplines. Thanks to her ability, every bleed and passed vote quietly funds the deck.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Unthinkable Humiliation", decks=16, copies="3-6") %}
+{% trans trimmed %}
+The path's workhorse block-denial and its most-played card.
+The inferior tax deters block attempts, the superior effect help make them fail.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Dominant Personality", decks=15, copies="2-4") %}
+{% trans trimmed unthinkable_humiliation=card("Unthinkable Humiliation") %}
+A harder, surgical block-denial.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Privileged Position", decks=14, copies="1") %}
+{% trans trimmed %}
+A neat damage addition for the Path's plan.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Relentlessness", decks=13, copies="2-4") %}
+{% trans trimmed %}
+Block-denial stealth, always great.
+{% endtrans %}
+{% endcall %}
+{% endblock %}

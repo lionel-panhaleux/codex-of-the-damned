@@ -1,0 +1,98 @@
+{% extends "best-cards/_layout.html" %}
+{% import "best-cards/_layout_card_column.html" as layout with context %}
+
+{% block content %}
+<h1>{{ hecata }} Hecata</h1>
+<div class="insert tip">
+    <p>
+        {% trans trimmed %}
+        The Hecata are V5's Clan of Death, uniting the old necromantic lines under one
+        banner around Oblivion {{ obl }} and their signature corpses. They field cheap,
+        expendable undead allies, recycle them from the ash heap, and grind the prey down
+        with a resilient bleed-and-swarm game.
+        {% endtrans %}
+    </p>
+    <p>
+        {% trans trimmed hecata_swarm=link("/archetypes/hecata-swarm") %}
+        Competitively, they mostly field allies-based constructs, like {{ hecata_swarm }}.
+        {% endtrans %}
+    </p>
+</div>
+
+{% call layout.card_column("Parijat, the Dark Oracle", decks=19, copies="1-2") %}
+{% trans trimmed %}
+All clan disciplines plus superior {{ DOM }}: she find a place in-clan as well as paired with Lasombra {{ lasombra }}.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Lenelle, Mambo of Birmingham", decks=14, copies="1-2") %}
+{% trans trimmed %}
+A mid-range 6-cap, her stealth action is a rare unique recursion ability.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Mora, the Death Seer", decks=13, copies="1-3") %}
+{% trans trimmed %}
+A +1 bleed on a 7-cap frame all clan disciplines at superior, what's not to like?
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Tommaso Sforza", decks=13, copies="1-2") %}
+{% trans trimmed %}
+All clan disciplines at superior, plus his ability is awesome in allies decks: the clan specialty.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Hel-Blá", decks=4, copies="1-3") %}
+{% trans trimmed %}
+The clan's heavyweight at 9 capacity, his unique ability to resurrect allies opens interesting combinations.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Family Gathering", decks=14, copies="4-7") %}
+{% trans trimmed %}
+A trifle that digs the crypt for the next clan vampire, excellent beads economy and good fuel for a swarm.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Cappadocian Crypt", decks=13, copies="1-2") %}
+{% trans trimmed %}
+A free blood every turn, like a second Hunting Ground. Note the blood needs not go on the acting vampire.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Powerbase: Munich", decks=13, copies="1") %}
+{% trans trimmed blood_doll=card("Blood Doll") %}
+Flexible economy that shuttles a blood between pool and an {{ obl }} vampire each turn,
+like a generalized {{ blood_doll }}.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Aggressive Corpse", decks=11, copies="4-10") %}
+{% trans trimmed %}
+The workhorse zombie: just two blood (not pool) for a 3-life body whose strikes cannot be
+dodged, ideal for rushing down blockers and easily recurred from the ash heap.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Split the Veil", decks=11, copies="1-8") %}
+{% trans trimmed %}
+A set-and-forget recursion engine: two turns after it hits the table it revives a fallen
+ally at full life for no further cost, keeping the swarm topped up on the cheap.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Rotting Behemoth", decks=8, copies="2-6") %}
+{% trans trimmed %}
+The heavy beater at three blood: a 6-life, 3-strength zombie that presses the attack at
+superior {{ OBL }}, though it demands an ash-heap sacrifice to stick around.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Psychophagia", decks=6, copies="1-3") %}
+{% trans trimmed %}
+A stealthed hunt that devours any dead ally — one's own spent zombies or a rival's — for
+3 blood, or 2 blood and an unlock, refueling the blood the swarm runs on.
+{% endtrans %}
+{% endcall %}
+{% endblock %}

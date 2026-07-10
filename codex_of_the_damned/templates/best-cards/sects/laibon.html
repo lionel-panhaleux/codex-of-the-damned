@@ -12,43 +12,33 @@
     </p>
 </div>
 
-{% call layout.card_column("Powerbase: Luanda", decks=11, copies="1") %}
+{% call layout.card_column("Powerbase: Luanda", decks=13, copies="1") %}
 {% trans trimmed %}
 An excellent card for combat-able Laibon decks,
 it provides a bit more rush capability at no cost.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Well-Marked", decks=4, copies="1") %}
+{% call layout.card_column("Mozambique Allure", decks=8, copies="10-13") %}
+{% trans trimmed %}
+A cheap +1 stealth action that Laibon vampires turn into a fresh crypt draw,
+accelerating the crypt while slipping past blockers. Non-Laibon minions instead join
+the sect and unlock, and its low cost explains the double-digit counts in dedicated decks.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Well-Marked", decks=4, copies="1-2") %}
 {% trans trimmed %}
 A good prevention effect at a low cost, it is an easy inclusion in combat-oriented decks.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Kduva's Mask", decks=4, copies="1") %}
+{% call layout.card_column("Kduva's Mask", decks=3, copies="1") %}
 {% trans trimmed
 ishtarri_politics=link("/archetypes/ishtarri-politics")
 %}
-A bit pricey for just the bleed bonus, it becomes a worthwile addition in political
+A bit pricey for just the bleed bonus, it becomes a worthwhile addition in political
 decks like {{ ishtarri_politics }}.
 {% endtrans %}
 {% endcall %}
-
-{% call layout.card_column("Strange Day", decks=3, copies="1-5") %}
-{% trans trimmed %}
-A definitive lunge device to get a critical action through,
-its high blood cost prevents to play more than 1 or 2 copies in a deck.
-{% endtrans %}
-{% endcall %}
-
-{% call layout.card_column("No Secrets From the Magaji", decks=3, copies="3-6") %}
-{% trans trimmed second_tradition_domain=card("Second Tradition: Domain") %}
-A powerful interception device for the <em>Magaji</em>, it compares to the Camarilla's
-{{ second_tradition_domain }}.
-Although intercept is lower, the permanent wake effect is exceptionaly strong.
-One must not fail a block to keep it, so a bit of interception enhancement
-is appreciable.
-{% endtrans %}
-{% endcall %}
-
 {% endblock %}

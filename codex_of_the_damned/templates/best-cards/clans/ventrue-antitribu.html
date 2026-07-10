@@ -14,7 +14,7 @@
     {% endtrans %}
 </div>
 
-{% call layout.card_column("Neighbor John", decks=20, copies="1-2") %}
+{% call layout.card_column("Neighbor John", decks=21, copies="1-2") %}
 {% trans trimmed %}
 {{ AUS }} with a permanent intercept bonus for just 5 pool,
 he finds his place in many {{ AUS }} crypts,
@@ -22,15 +22,21 @@ including in non-Ventrue toolbox and wall decks.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Blackhorse Tanner", decks=8, copies="2") %}
+{% call layout.card_column("Jefferson Foster", decks=13, copies="1") %}
+{% trans trimmed %}
+A capacity 6 <em>Bishop</em> with superior {{ AUS }}{{ DOM }}, a solid titled body for the clan's grinder.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Blackhorse Tanner", decks=11, copies="2") %}
 {% trans trimmed owain_evans=card("Owain Evans, The Wanderer", "Owain Evans")%}
 All clan disciplines {{ AUS }}{{ DOM }}{{ FOR }} at superior for a reasonable 7 pool,
-he also has a good ability for card rotation. He often gets included algonside
+he also has a good ability for card rotation. He often gets included alongside
 {{ owain_evans }}.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Owain Evans, The Wanderer", decks=7, copies="2-3") %}
+{% call layout.card_column("Owain Evans, The Wanderer", decks=10, copies="2-3") %}
 {% trans trimmed %}
 All clan disciplines {{ AUS }}{{ DOM }}{{ FOR }} at superior for a decent cost,
 he also has a convenient ability. It is used to get some blood on the owner vampires,
@@ -38,11 +44,23 @@ but can also be a bargaining chip with the other players.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Bruce de Guy", decks=6, copies="2-5") %}
+{% call layout.card_column("Edward Neally", decks=7, copies="1") %}
+{% trans trimmed %}
+Superior {{ DOM }}{{ FOR }} on a capacity 7; his master-phase hand boost is very nice.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Bruce de Guy", decks=7, copies="2-5") %}
 {% trans trimmed parliament_of_shadows=link("/archetypes/parliament-of-shadows") %}
-Wiht his unique ability alongside the Cardinal title, he makes for an awesome leader for political decks.
+With his unique ability alongside the Cardinal title, he makes for an awesome leader for political decks.
 With superior Obtenebration {{ OBT }}, he can be included, or even star, in a {{ parliament_of_shadows }} deck.
 {% endtrans %}
 {% endcall %}
 
+{% call layout.card_column("Demonstration", decks=6, copies="1") %}
+{% trans trimmed bewitching_oration=card("Bewitching Oration") %}
+A unique master that locks to strip a vampire of its votes and ballots,
+a cheap answer to politics that erases vote-enhancing modifiers like {{ bewitching_oration }}.
+{% endtrans %}
+{% endcall %}
 {% endblock %}

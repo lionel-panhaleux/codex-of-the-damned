@@ -34,62 +34,87 @@
     </p>
 </div>
 
-{% call layout.card_column("Sudario Refraction", decks=15, copies="2-5") %}
+{% call layout.card_column("Guillaume Giovanni", decks=10, copies="4-5") %}
+{% trans trimmed
+own_archetype=link("/archetypes/guillaume-real-estate", _("own archetype"))
+%}
+Star of his {{ own_archetype }}, Guillaume lets one build the largest hands in the game.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Marciana Giovanni, Investigator", decks=9, copies="1") %}
+{% trans trimmed %}
+A 2-capacity {{ dom }} body, she can find a spot in many decks.
+Her intercept-lending ability is marginal, but the low cost is the point.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Don Michael Antonio Giovanni", decks=6, copies="1") %}
+{% trans trimmed %}
+Superior {{ DOM }}{{ NEC }}{{ POT }} and two votes for 7, a rare titled Giovanni.
+His combat-ending ability keeps him alive, making him a fine backbone for a bleed or vote build.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Giovanni del Georgio", decks=5, copies="1-3") %}
+{% trans trimmed flesh_of_marble=card("Flesh of Marble") %}
+All clan disciplines at superior, plus a nice superior Protean {{ PRO }}.
+A good choice for {{ POT }} fight backed up by {{ flesh_of_marble }}.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Baldesar Rossellini", decks=4, copies="1-2") %}
+{% trans trimmed guillaume=card("Guillaume Giovanni") %}
+Eight capacity with superior {{ DOM }}{{ POT }}, ideal sidekick for {{ guillaume }}.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Gualtiero Ghiberti", decks=4, copies="1-2") %}
+{% trans trimmed %}
+Superior {{ DOM }}{{ NEC }} for 7, plus a supporting ability that lends stealth or extra punch
+to another Giovanni's {{ nec }} action each turn. A fine team player.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Sudario Refraction", decks=18, copies="2-5") %}
 {% trans trimmed %}
 The most played Giovanni card. Its rare recursion ability enables the Giovanni players
 to adapt their hand to the table context, which is a nice advantage.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Lia Milliner", decks=12, copies="1") %}
-{% trans trimmed %}
-{{ dom }} and {{ nec }} for only 3 pool: a bargain. She can even find her place
-in mono {{ dom }} decks.
-{% endtrans %}
-{% endcall %}
-
-{% call layout.card_column("Gloria Giovanni", decks=11, copies="1") %}
-{% trans trimmed %}
-Superior {{ DOM }} and {{ nec }} for only 4 pool: another bargain.
-She finds an easy place in mono {{ dom }} builds.
-{% endtrans %}
-{% endcall %}
-
-{% call layout.card_column("Tye Cooper", decks=10, copies="1") %}
-{% trans trimmed %}
-Played in many Giovanni decks, even when they are not centred on allies,
-he is very resilient and can be good defence.
-{% endtrans %}
-{% endcall %}
-
-{% call layout.card_column("Powerbase: Cape Verde", decks=10, copies="1") %}
-{% trans trimmed blood_doll=card("Blood Doll") %}
-A generalized {{ blood_doll }},
-it is an efficient bloat device at no cost. Most Giovanni decks play it.
-{% endtrans %}
-{% endcall %}
-
-{% call layout.card_column("Gianna di Canneto", decks=10, copies="1") %}
+{% call layout.card_column("Gianna di Canneto", decks=15, copies="1") %}
 {% trans trimmed %}
 The additional damage and equipment burning ability is unique and so useful.
 Moreover, she can bleed! A bargain for any combat-capable Giovanni deck.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Isabel Giovanni", decks=9, copies="1-2") %}
+{% call layout.card_column("Tye Cooper", decks=14, copies="1-2") %}
 {% trans trimmed %}
-Superior {{ DOM }}{{ NEC }} for only 5 pool,
-it is often the perfect disciplines combination for Giovanni decks,
-so Isabel is often played in multiple copies.
+Played in many Giovanni decks, even when they are not centred on allies,
+he is very resilient and can be good defence, plus he can bleed too.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Guillaume Giovanni", decks=8, copies="4-5") %}
-{% trans trimmed
-own_archetype=link("/archetypes/guillaume-real-estate", _("own archetype"))
-%}
-Star of his {{ own_archetype }}, Guillaume lets you build the largest hands in the game.
+{% call layout.card_column("Powerbase: Cape Verde", decks=13, copies="1") %}
+{% trans trimmed blood_doll=card("Blood Doll") %}
+A generalized {{ blood_doll }},
+it is an efficient bloat device at no cost. Most Giovanni decks play it.
 {% endtrans %}
 {% endcall %}
 
+{% call layout.card_column("Dis Pater", decks=7, copies="1") %}
+{% trans trimmed %}
+A unique Master that turns a stocked ash heap into extra bleed. It fits the {{ nec }} decks
+that fill the ash heap fast, adding a reliable point to each bleed.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Spiritual Guidance", decks=7, copies="1-4") %}
+{% trans trimmed %}
+Combat-card recursion for Giovanni combat decks, replaying a key card straight from the ash heap.
+Great value, and one per combat.
+{% endtrans %}
+{% endcall %}
 {% endblock %}

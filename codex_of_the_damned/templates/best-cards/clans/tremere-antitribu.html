@@ -20,63 +20,60 @@
     {% endtrans %}
 </div>
 
-{% call layout.card_column("Keith Moody", decks=28, copies="1-2") %}
+{% call layout.card_column("Keith Moody", decks=39, copies="1-2") %}
 {% trans trimmed %}
 The cheapest {{ DOM }} pool can buy, he is played in many decks.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Antonio d'Erlette", decks=25, copies="3-6") %}
+{% call layout.card_column("Antonio d'Erlette", decks=36, copies="2-6") %}
 {% trans trimmed nephandii=link("/archetypes/nephandii") %}
-Second pillar of the {{ nephandii }} archetype, his capacity is exceptionnal.
+Second pillar of the {{ nephandii }} archetype, his capacity is exceptional.
 Being able to put some allies into play without even taking an action that could be
 blocked is a definitive edge.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Nephandus", decks=23, copies="6-11") %}
-{% trans trimmed nephandii=link("/archetypes/nephandii") %}
-An excellent ally: not so expensive, not unique so many of them can be into play,
-they strike 1R with a press and prevent one damage per strike,
-so this means they do not lose any life against a vampire
-that does not play any combat card.
-They gave birth to the {{ nephandii }} archetype.
+{% call layout.card_column("Selena", decks=24, copies="1-2") %}
+{% trans trimmed %}
+All clan disciplines at superior, and being Black Hand can come in handy in some cases.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Malgorzata", decks=18, copies="3-6") %}
+{% call layout.card_column("Malgorzata", decks=18, copies="3-5") %}
 {% trans trimmed malgorzata=link("/archetypes/malgorzata") %}
 Her unique ability lets her help influence high capacity sidekicks easily.
 That makes her an excellent star for her own archetype, {{ malgorzata }}.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Selena", decks=16, copies="1") %}
-{% trans trimmed %}
-All clan disciplines at superior, an being Black Hand can come in handy in some cases.
-{% endtrans %}
-{% endcall %}
-
-{% call layout.card_column("Orlando Oriundus", decks=16, copies="1-3") %}
+{% call layout.card_column("Orlando Oriundus", decks=17, copies="1-3") %}
 {% trans trimmed %}
 His unique ability makes him very desirable in many <em>Inner Circle</em> decks.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Goratrix", decks=8, copies="1-5") %}
-{% trans trimmed
-goratrix_high_tower=link("/archetypes/goratrix-high-tower")
-%}
-His incredible ability made him star of his own archetype, {{ goratrix_high_tower }}.
+{% call layout.card_column("Nephandus", decks=36, copies="5-10") %}
+{% trans trimmed nephandii=link("/archetypes/nephandii") %}
+An excellent ally: not so expensive, not unique so they can swarm, and they bleed!
+They strike 1R with a press and solid all-purpose damage prevention,
+which makes them a serious threat in combat.
+They gave birth to the {{ nephandii }} archetype.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Ruins of Ceoris", decks=7, copies="1") %}
+{% call layout.card_column("Ruins of Ceoris", decks=11, copies="1") %}
 {% trans trimmed
 goratrix_high_tower=link("/archetypes/goratrix-high-tower")
 %}
-A neat locquipment for Tremere Antitribu if they are likely to fight. Often see in {{ goratrix_high_tower }}.
+A neat equipment for Tremere Antitribu if they are likely to fight. Often seen in {{ goratrix_high_tower }}.
 {% endtrans %}
 {% endcall %}
 
+{% call layout.card_column("Infernal Pact", decks=7, copies="1") %}
+{% trans trimmed %}
+For 1 pool, it upgrades one chosen Discipline to superior on a clan vampire,
+cheaply opening that Discipline's superior-only cards.
+{% endtrans %}
+{% endcall %}
 {% endblock %}

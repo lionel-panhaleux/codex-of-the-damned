@@ -11,7 +11,7 @@
     <p>
         {% trans trimmed salubri_cards=link("/best-cards/clans/salubri") %}
         New V5 Salubri have {{ dom }}{{ for }}{{ aus }} as clan disciplines.
-        You can check out their best cards on the {{ salubri_cards }} page.
+        Their best cards can be found on the {{ salubri_cards }} page.
         {% endtrans %}
     </p>
     <p>
@@ -34,7 +34,25 @@
     </p>
 </div>
 
-{% call layout.card_column("Repulsion", decks=49, copies="2-4") %}
+{% call layout.card_column("Saulot, The Wanderer", decks=33, copies="3-5") %}
+{% trans trimmed %}
+Star of the Salubri clan, Saulot has an impressive discipline set, alongside a unique pool recouping ability.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Matthias", decks=18, copies="1-4") %}
+{% trans trimmed %}
+A solid blocker with his permanent intercept at a very decent cost.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Eurayle Gelasia Mylonas", decks=13, copies="2-4") %}
+{% trans trimmed a_b=link("/strategy/fundamentals", _("A&B"), _anchor="AB") %}
+Her unlock action improves {{ a_b }} directly and makes her a great sidekick in {{ AUS }} decks.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Repulsion", decks=53, copies="1-4") %}
 {% trans trimmed %}
 A good stealth modifier that can become permanent.
 An excellent way for Salubri to bump up their game as they do not have access
@@ -42,7 +60,7 @@ to many other stealth enhancer given their clan disciplines.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Spirit Marionette", decks=45, copies="4-10") %}
+{% call layout.card_column("Spirit Marionette", decks=47, copies="3-11") %}
 {% trans trimmed
 an_archetype_of_its_own=link("/archetypes/spirit-marionette", _("an archetype of its own"))
 %}
@@ -53,13 +71,7 @@ cripple or destroy it afterwards.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Gift of Sleep", decks=40, copies="1-4") %}
-{% trans trimmed %}
-A second stealth enhancer, still at no cost, a good card for {{ OBE }}.
-{% endtrans %}
-{% endcall %}
-
-{% call layout.card_column("Renewed Vigor", decks=38, copies="3-7") %}
+{% call layout.card_column("Renewed Vigor", decks=40, copies="2-7") %}
 {% trans trimmed giant_s_blood=card("Giant's Blood") %}
 Bringing back any big capacity vampire to full capacity is a good way to bloat, but also
 a useful bargaining chip to barter for big favors or even a game-changer.
@@ -67,7 +79,7 @@ This is the only card of the game allowing this along {{ giant_s_blood }}.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Anesthetic Touch", decks=35, copies="4-9") %}
+{% call layout.card_column("Anesthetic Touch", decks=39, copies="3-10") %}
 {% trans trimmed immortal_grapple=card("Immortal Grapple") %}
 An excellent <em>combat ends</em> at superior {{ OBE }},
 it is a bit weak at inferior {{ obe }}. The fact that it's still a hand strike
@@ -75,24 +87,10 @@ makes it a good counter to {{ immortal_grapple }}.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Saulot, The Wanderer", decks=31, copies="3-5") %}
-{% trans trimmed %}
-Star of the Salubri clan, Saulot has both {{ OBE }} and {{ VAL }} at superior,
-along a nice set of disciplines. His abilities are also impressive.
-{% endtrans %}
-{% endcall %}
-
-{% call layout.card_column("Matthias", decks=18, copies="2-4") %}
-{% trans trimmed %}
-A solid blocker with his permanent intercept at a very decent cost.
-{% endtrans %}
-{% endcall %}
-
-{% call layout.card_column("Neutral Guard", decks=17, copies="2-4") %}
+{% call layout.card_column("Neutral Guard", decks=18, copies="1-6") %}
 {% trans trimmed saulot_the_wanderer=card("Saulot, The Wanderer") %}
 A solid block denial at superior {{ OBE }}, especially for a high capacity vampire
 like {{ saulot_the_wanderer }}.
 {% endtrans %}
 {% endcall %}
-
 {% endblock %}

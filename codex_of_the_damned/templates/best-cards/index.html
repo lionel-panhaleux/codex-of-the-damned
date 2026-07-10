@@ -9,8 +9,8 @@
     %}
     <p>
         This category presents the best cards of the game. The list is based on a statistical analysis of the
-        {{ twda }} provided by VEKN, considering the 900+ decks from 2020 onward.
-        The best cards are those that have been included in the most winning decks since then.
+        {{ twda }} provided by VEKN, considering the 1,300+ decks from the last five years.
+        The best cards are those that have been included in the most winning decks over that span.
     </p>
     <p>
         All clan {{ hunting_grounds }} and, on occasions, some low capacity vampires,
@@ -46,6 +46,21 @@
         {{ link("/best-cards/sects/laibon", _class="insert") }}
         {{ link("/best-cards/sects/sabbat", _class="insert") }}
     </div>
+    <h2>{{ _('Paths') }}</h2>
+    {% trans trimmed %}
+    <p>
+        The four Paths arrived with the Sabbat set in October 2025. Their lists are
+        drawn from a small, recent sample and will move as the cards see more play.
+    </p>
+    {% endtrans %}
+    <div class="column-2">
+        {{ link("/best-cards/paths/caine", _class="insert warn") }}
+        {{ link("/best-cards/paths/cathari", _class="insert warn") }}
+    </div>
+    <div class="column-2">
+        {{ link("/best-cards/paths/death-and-the-soul", _class="insert warn") }}
+        {{ link("/best-cards/paths/power-and-the-inner-voice", _class="insert warn") }}
+    </div>
     <h2 id="clans">{{ _('Clans') }}</h2>
     {% trans trimmed %}
     <p>
@@ -55,9 +70,8 @@
     </p>
     <p>
         Abominations {{ abomination }},
-        Blood Brothers {{ blood_brother }}, Hecata {{ hecata }}, Panders {{ pander }},
-        Osebo {{ osebo }}, Nagaraja {{ nagaraja }}
-        and Samedi {{ samedi }} are too rarely played to be included in this
+        Blood Brothers {{ blood_brother }}, Panders {{ pander }}, Osebo {{ osebo }}
+        and Nagaraja {{ nagaraja }} are too rarely played to be included in this
         analysis: they lack the numbers for a statistical review to be relevant.
     </p>
     <p>
@@ -80,6 +94,7 @@
         {{ link("/best-cards/clans/giovanni", _class="insert", _prefix="giovanni") }}
         {{ link("/best-cards/clans/guruhi", _class="insert", _prefix="guruhi") }}
         {{ link("/best-cards/clans/harbingers-of-skulls", _class="insert", _prefix="harbinger_of_skulls") }}
+        {{ link("/best-cards/clans/hecata", _class="insert", _prefix="hecata") }}
         {{ link("/best-cards/clans/imbued", _class="insert warn", _prefix="visionary") }}
         {{ link("/best-cards/clans/ishtarri", _class="insert warn", _prefix="ishtarri") }}
         {{ link("/best-cards/clans/kiasyd", _class="insert", _prefix="kiasyd") }}
@@ -95,6 +110,7 @@
         {{ link("/best-cards/clans/salubri", _class="insert", _prefix="salubri") }}
         {{ link("/best-cards/clans/salubri-legacy", _class="insert warn", _prefix="salubri") }}
         {{ link("/best-cards/clans/salubri-antitribu", _class="insert warn", _prefix="salubri_antitribu") }}
+        {{ link("/best-cards/clans/samedi", _class="insert warn", _prefix="samedi") }}
         {{ link("/best-cards/clans/toreador", _class="insert", _prefix="toreador") }}
         {{ link("/best-cards/clans/toreador-antitribu", _class="insert", _prefix="toreador_antitribu") }}
         {{ link("/best-cards/clans/tremere", _class="insert", _prefix="tremere") }}

@@ -18,52 +18,53 @@
     </p>
 </div>
 
-{% call layout.card_column("Remilliard, Devout Crusader", decks=9, copies="1") %}
-{% trans trimmed %}
-A cheap {{ AUS }} chump, easy to include.
-{% endtrans %}
-{% endcall %}
-
-{% call layout.card_column("Sheila Mezarin", decks=8, copies="1-2") %}
-{% trans trimmed %}
-A cheap price for a bleed bonus, with {{ PRE }}{{ AUS }} available, she shines.
-{% endtrans %}
-{% endcall %}
-
-{% call layout.card_column("Guggenheim", decks=8, copies="1") %}
-{% trans trimmed %}
-All clan disciplines at superior for a neat 6, good.
-{% endtrans %}
-{% endcall %}
-
-{% call layout.card_column("Palla Grande", decks=7, copies="2-4") %}
-{% trans trimmed palla_grande=link("/archetypes/palla-grande") %}
-A key card for the clan, which gave birth to the {{ palla_grande }} archetype.
-{% endtrans %}
-{% endcall %}
-
-{% call layout.card_column("Art Scam", decks=7, copies="3-10") %}
-{% trans trimmed %}
-Decent bloat, with enough numbers it can amount to a lot.
-{% endtrans %}
-{% endcall %}
-
-{% call layout.card_column("Loonar", decks=6, copies="1") %}
-{% trans trimmed %}
-Superior {{ PRE }} at 4 cap, she's an excellent bleeder.
-{% endtrans %}
-{% endcall %}
-
-{% call layout.card_column("Jost Werner", decks=5, copies="2-3") %}
+{% call layout.card_column("Jost Werner", decks=83, copies="1-3") %}
 {% trans trimmed rebekka_jost=link("/archetypes/rebekka-jost") %}
 A star of the clan thanks to his permanent stealth, he co-stars the {{ rebekka_jost }} archetype.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Dominique Santo Paulo", decks=5, copies="1") %}
-{% trans trimmed magnum=card(".44 Magnum") %}
-With superior {{ AUS }}{{ CEL }} at just 6 pool, he is a good sidekick in {{ magnum }} decks.
+{% call layout.card_column("Sheila Mezarin", decks=79, copies="1-2") %}
+{% trans trimmed %}
+A cheap price for a bleed bonus, with {{ PRE }}{{ AUS }} available, she shines.
 {% endtrans %}
 {% endcall %}
 
+{% call layout.card_column("Greta Kircher", decks=51, copies="1-2") %}
+{% trans trimmed %}
+A well-rounded pick with superior {{ AUS }}{{ CEL }}{{ PRE }},
+her ability can also come in handy.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Ian Wallingford", decks=27, copies="1") %}
+{% trans trimmed %}
+A cheap titled bishop with superior {{ CEL }}{{ PRE }}, good value.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Palla Grande", decks=70, copies="2-4") %}
+{% trans trimmed palla_grande=link("/archetypes/palla-grande") %}
+A key card for the clan, which gave birth to the {{ palla_grande }} archetype.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Art Scam", decks=54, copies="2-10") %}
+{% trans trimmed %}
+Decent bloat, with enough numbers it can amount to a lot.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Foundation Exhibit", decks=18, copies="1-7") %}
+{% trans trimmed consanguineous_boon=card("Consanguineous Boon") %}
+A unique location granting enough voting power for a swarm to take the lock and bloat with {{ consanguineous_boon }}.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("The Art of Pain", decks=16, copies="1-2") %}
+{% trans trimmed %}
+For 2 pool, a permanent +2 strength on a ready clanmate —
+cheap muscle for a combat option.
+{% endtrans %}
+{% endcall %}
 {% endblock %}

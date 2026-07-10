@@ -22,7 +22,7 @@
     </p>
 </div>
 
-{% call layout.card_column("Undele", decks=46, copies="2-3") %}
+{% call layout.card_column("Undele", decks=48, copies="1-3") %}
 {% trans trimmed %}
 With its magaji title and unique ability to fetch cards from the ash heap,
 he has been included not only in Ishtarri decks, but also as a secondary vampire
@@ -42,6 +42,20 @@ Alongside {{ undele }} and {{ ayo_igoli }}, she makes for a nice crypt.
 {% endtrans %}
 {% endcall %}
 
+{% call layout.card_column("Shasa Abu Badr", decks=26, copies="1-2") %}
+{% trans trimmed %}
+An excellent ability alongside {{ PRE }} for a cheap 5 pool.
+She finds her place even in mono {{ pre }} decks.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Ayo Igoli", decks=25, copies="1-5") %}
+{% trans trimmed ishtarri_kholo=card("Ishtarri Kholo") %}
+Yet another Ishtarri with {{ obf }}, she is an excellent complement to a political crypt.
+Her capacity and ability makes her an ideal candidate for {{ ishtarri_kholo }}.
+{% endtrans %}
+{% endcall %}
+
 {% call layout.card_column("Uncontrolled Impulse", decks=28, copies="2-6") %}
 {% trans trimmed %}
 An excellent stealth enhancer, although only usable on the first action,
@@ -56,21 +70,6 @@ and an excellent addition for {{ ayo_igoli }}.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Shasa Abu Badr", decks=26, copies="1-2") %}
-{% trans trimmed %}
-An excellent ability alongside {{ PRE }} for a cheap 5 pool.
-She finds her place even in mono {{ pre }} decks.
-{% endtrans %}
-{% endcall %}
-
-{% call layout.card_column("Ayo Igoli", decks=25, copies="2-4") %}
-{% trans trimmed ishtarri_kholo=card("Ishtarri Kholo") %}
-Yet another Ishtarri with {{ obf }}, she is an excellent complement to a political crypt.
-Her capacity and ability makes her an ideal candidate for the Kholo title using
-{{ ishtarri_kholo }}.
-{% endtrans %}
-{% endcall %}
-
 {% call layout.card_column("Glutton", decks=20, copies="1-2") %}
 {% trans trimmed %}
 Another source of additional actions for Ishtarri, always welcome.
@@ -80,10 +79,10 @@ But even making an opponent waste an action to take it out may be good enough.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Falhu Shibaba", decks=13, copies="2-3") %}
+{% call layout.card_column("Informant", decks=5, copies="1-2") %}
 {% trans trimmed %}
-A Magaji with all clan disciplines at superior and a very niche drawback, rarely an issue.
+A quirky ally that migrates into the predator's control, where one's own ready Ishtarri
+turns it into a peek at the predator's hand each turn. Cheap intelligence.
 {% endtrans %}
 {% endcall %}
-
 {% endblock %}
