@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2026-07-10 12:19+0200\n"
+"POT-Creation-Date: 2026-07-10 13:34+0200\n"
 "PO-Revision-Date: 2026-07-10 12:19+0200\n"
 "Last-Translator: \n"
 "Language: pt\n"
@@ -83,7 +83,8 @@ msgstr "Covil dos Demônios"
 msgid "Libertine Ball"
 msgstr "Baile dos Libertinos"
 
-#: codex_of_the_damned/navigation.py:85
+#: codex_of_the_damned/navigation.py:85 codex_of_the_damned/templates/strategy/deck-guides/pact-with-nephandi.html:6
+#: codex_of_the_damned/templates/strategy/deck-guides/pact-with-nephandi.html:11
 msgid "Pact with Nephandi"
 msgstr "Pacto com os Nephandi"
 
@@ -6538,7 +6539,7 @@ msgstr "o próprio Martin Weinmayer"
 #: codex_of_the_damned/templates/archetypes/runner-ups/tupdogs.html:14
 #, python-format
 msgid ""
-"<h2>Highlights</h2> <p> This is an <em>rush</em> deck using %(tupdogs)s and %(rock_cat)s to take down opposing "
+"<h2>Highlights</h2> <p> This is a <em>rush</em> deck using %(tupdogs)s and %(rock_cat)s to take down opposing "
 "vampires, then %(graverobbing)s to steal them. It uses simple bleed for one from its own vampires as well as the "
 "stolen ones to oust its prey. </p> <p> The combat is dominated by the %(tupdogs)s and their %(VIC)s and %(POT)s cards"
 " combination, using %(brick_by_brick)s to set the range if needed, %(immortal_grapple)s to prevent Dodge and Combat "
@@ -6676,7 +6677,7 @@ msgid ""
 " there are a lot of possible variations for the combat part of the deck. </p> <h2>Tips & Tricks</h2> <p> "
 "%(garibaldi_meucci_museum)s is versatile, allowing to fetch the required unlock or bounce. %(powerbase_los_angeles)s "
 "acts as cycling device as well as an additional unlock, since there are so many Anarch cards (note Baron cards "
-"implicitly count as cards requiring Anarch), and %(the_anarch_free_press)s provides intercept. </p> <p> Interms of "
+"implicitly count as cards requiring Anarch), and %(the_anarch_free_press)s provides intercept. </p> <p> In terms of "
 "ousting power, the deck relies on small bleeds, with %(club_illusion)s being key to its strategy by doubling the "
 "bleed power. %(reckless_agitation)s and %(monkey_wrench)s can be used to lunge, letting the deck switch from a slow "
 "grind to a decisive kill in an instant. </p> <p> %(rewilding)s can damage the prey's pool if they play locations, and"
@@ -6764,7 +6765,7 @@ msgid ""
 "to lock a defender (then %(earth_meld)s to unlock and bleed), but can also be used to bleed, especially by the two "
 "vampires in crypt who do not have %(dom)s, %(kuyen)s and %(kamile_paukstys)s. </p> <p> %(garibaldi_meucci_museum)s is"
 " doubled because it is extra-efficient here. It can fetch defense cards like %(bait_and_switch)s or %(deep_ecology)s,"
-" as well as a lunge with %(eat_the_rich)s, or simply de used to avoid a troublesome combat with another Anarch. </p> "
+" as well as a lunge with %(eat_the_rich)s, or simply be used to avoid a troublesome combat with another Anarch. </p> "
 "<h2>Variants</h2> <p> %(scourge_of_the_enochians)s is a common inclusion against swarms, %(gran_madre_di_dio)s can "
 "also be included. %(groundfighting)s is an option against %(immortal_grapple)s, and %(heart_of_nizchetus)s fits "
 "nicely to help with the cards flow. %(sniper_rifle)s and %(raven_spy)s can be considered to enhance the defense. </p>"
@@ -6774,7 +6775,7 @@ msgid ""
 "%(roy_opitz_deck)s for an example. </p> <p> Doubling down on the idea of use %(deep_song)s to lock minions, the "
 "<strong>Tap'n Bleed</strong> variant uses less stealth but instead more %(deep_song)s, with %(invigorate)s as a "
 "versatile modifier, and the usual %(anarch_troublemaker)s, %(pentex_tm_subversion)s and %(misdirection)s on top of "
-"%(seduction)s and %(the_sleeping_mind)s. See %(pablo_carnino_s_deck)s for reference. </p> <p> Althouhg it is a "
+"%(seduction)s and %(the_sleeping_mind)s. See %(pablo_carnino_s_deck)s for reference. </p> <p> Although it is a "
 "different archetype because of all the Dominate %(dom)s cards, the deck shares a lot with the infamous "
 "%(gangrel_thing)s. </p>"
 msgstr ""
@@ -7642,7 +7643,7 @@ msgstr ""
 "quatro transferências para acelerar a cripta."
 
 #: codex_of_the_damned/templates/best-cards/clans/akunanse.html:67
-msgid "A floating title worth 2 votes, a no-brainer for thos who go for the political route."
+msgid "A floating title worth 2 votes, a no-brainer for those who go for the political route."
 msgstr "Um título flutuante que vale 2 votos, uma escolha óbvia para quem segue o caminho político."
 
 #: codex_of_the_damned/templates/best-cards/clans/akunanse.html:73
@@ -8043,7 +8044,7 @@ msgstr ""
 #: codex_of_the_damned/templates/best-cards/clans/brujah-antitribu.html:29
 #, python-format
 msgid ""
-"Start of political builds, his ability is a nice bloat, and he can %(forced_march)s as well as use %(obf)s for a bit "
+"Star of political builds, his ability is a nice bloat, and he can %(forced_march)s as well as use %(obf)s for a bit "
 "of stealth."
 msgstr ""
 "Estrela das construções políticas, sua aptidão é um bom boiar, e ele pode usar %(forced_march)s, além de %(obf)s para"
@@ -8370,7 +8371,7 @@ msgstr ""
 #, python-format
 msgid ""
 "The Gangrel Antitribu, with their %(pro)s%(cel)s%(obf)s disciplines, are versatile and can fight as well as bleed. "
-"They are particularly fear for their %(enkidu_multirush)s archetype."
+"They are particularly feared for their %(enkidu_multirush)s archetype."
 msgstr ""
 "Os Gangrel Antitribu, com suas disciplinas %(pro)s%(cel)s%(obf)s, são versáteis e sabem tanto lutar quanto sangrar. "
 "São especialmente temidos por seu arquétipo %(enkidu_multirush)s."
@@ -10167,7 +10168,7 @@ msgstr "Fortitude %(FOR)s superior com uma habilidade de prevenção de dano sup
 
 #: codex_of_the_damned/templates/best-cards/clans/salubri.html:39
 #, python-format
-msgid "A capacity 6 bleeder with superior Dominate %(DOM)s and Auspex %(AUS)s, a stable in Salubri %(salubri)s decks."
+msgid "A capacity 6 bleeder with superior Dominate %(DOM)s and Auspex %(AUS)s, a staple in Salubri %(salubri)s decks."
 msgstr ""
 "Um sangrador de capacidade 6 com Dominação %(DOM)s e Auspícios %(AUS)s superiores, um item indispensável nos decks "
 "Salubri %(salubri)s."
@@ -11283,7 +11284,7 @@ msgstr "Um golpe interessante, útil tanto contra Fortitude %(for)s quanto contr
 #: codex_of_the_damned/templates/best-cards/generic/blood-sorcery.html:71
 #, python-format
 msgid ""
-"A typical Blood Sorcery %(tha)s strike: even though it usually needs a second round to land, ranged aggravated ramage"
+"A typical Blood Sorcery %(tha)s strike: even though it usually needs a second round to land, ranged aggravated damage"
 " is strong enough to justify its inclusion in some decks."
 msgstr ""
 "Um golpe típico de Feitiçaria de Sangue %(tha)s: embora normalmente precise de um segundo round para acertar, o dano "
@@ -16913,7 +16914,7 @@ msgstr ""
 #: codex_of_the_damned/templates/strategy/articles/advanced/combat-modules.html:1110
 #, python-format
 msgid ""
-"Use %(concealed_weapon)s to get a %(magnum_44)s. Good by itself, it becomes redoutable when combined with Celerity "
+"Use %(concealed_weapon)s to get a %(magnum_44)s. Good by itself, it becomes redoubtable when combined with Celerity "
 "%(CEL)s. %(psyche)s is a must have: it starts a new combat, so the %(magnum)s maneuver kicks in again, and it is a "
 "nice counter against %(sce)s. %(pursuit)s provides range control or more damage, and %(taste_of_vitae)s is a good "
 "addition to keep the blood flowing. Other typical inclusions are %(blur)s and %(quickness)s for more damage, "
@@ -17063,8 +17064,8 @@ msgstr "Potência & Amigos"
 #: codex_of_the_damned/templates/strategy/articles/advanced/combat-modules.html:1334
 #, python-format
 msgid ""
-"Between %(immortal_grapple)s and the widest range of combat cards a discipline ca offer, Potence %(pot)s is the ideal"
-" base discipline for a multitude of combinations."
+"Between %(immortal_grapple)s and the widest range of combat cards a discipline can offer, Potence %(pot)s is the "
+"ideal base discipline for a multitude of combinations."
 msgstr ""
 "Entre %(immortal_grapple)s e a mais ampla gama de cartas de combate que uma disciplina pode oferecer, Potência "
 "%(pot)s é a disciplina base ideal para uma infinidade de combinações."
@@ -21750,7 +21751,7 @@ msgstr ""
 "%(drivethru_cards)s e %(gamepod)s por menos de US$ 0,50 cada. Você finalmente pode completar suas coleções dos clãs:"
 
 #: codex_of_the_damned/templates/strategy/articles/basic/what-should-i-buy.html:1321
-msgid "and discplines:"
+msgid "and disciplines:"
 msgstr "e das disciplinas:"
 
 #: codex_of_the_damned/templates/strategy/articles/basic/what-should-i-buy.html:1335
@@ -21924,7 +21925,7 @@ msgstr "Venha jogar"
 #: codex_of_the_damned/templates/strategy/articles/basic/what-should-i-buy.html:1546
 msgid ""
 "Now that you're back in the night, maybe you want to get out of your haven and join us in some official events. It "
-"might be the occasion to get your fangs on free juidcy promos."
+"might be the occasion to get your fangs on free juicy promos."
 msgstr ""
 "Agora que você está de volta à noite, talvez queira sair do seu refúgio e se juntar a nós em alguns eventos oficiais."
 " Pode ser a ocasião perfeita para colocar suas presas em cima de promos suculentas de graça."
@@ -22131,11 +22132,6 @@ msgstr ""
 "adversários para que bloqueiem sangrias ou %(kine_resources_contested)s primeiro, e então, quando parecer seguro, "
 "jogue %(the_embrace)s e %(consanguineous_boon)s. </p>"
 
-#: codex_of_the_damned/templates/strategy/deck-guides/pact-with-nephandi.html:6
-#: codex_of_the_damned/templates/strategy/deck-guides/pact-with-nephandi.html:11
-msgid "Pact with Naphandi"
-msgstr "Pacto com os Nephandi"
-
 #: codex_of_the_damned/templates/strategy/deck-guides/pact-with-nephandi.html:16
 #, python-format
 msgid ""
@@ -22278,4 +22274,7 @@ msgstr ""
 "%(govern_the_unaligned)s, um %(conditioning)s e alguma furtividade, para um dano total máximo de 12 recursos. Até "
 "chegar lá, continue causando de 3 a 5 de dano por turno e redirecionando a sangria do seu predador, desgastando "
 "lentamente os recursos da sua presa e deixando que ela acredite que 12 recursos é uma folga confortável. </p>"
+
+#~ msgid "Pact with Naphandi"
+#~ msgstr "Pacto com os Nephandi"
 
