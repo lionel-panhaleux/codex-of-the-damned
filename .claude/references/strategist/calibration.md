@@ -22,9 +22,10 @@ synergy, meta-dating, and copy-count intent.
 - **Name the mechanics before the archetype.** ~40% of TWD decks fit no labeled archetype (they
   land in classification.json's `noise` list), and novel/emerging lists are the common assignment.
   Read bottom-up — engine, modules, copy counts — and let identity fall out of that; a known
-  archetype is one line of orientation, never a label to force. In case D the pull to call an
-  Underbridge Stray ally-swarm a “War Ghoul variant” (shared clan, Fame/Dragonbound, AUS defense)
-  buried that it is a different deck with a different engine.
+  archetype is one line of orientation, never a label to force. Drop the frame the moment the
+  engine diverges: lineage must never become the spine of the analysis. In case D the pull to
+  call an Underbridge Stray ally-swarm a “War Ghoul variant” (shared clan, Fame/Dragonbound, AUS
+  defense) buried that it is a different deck with a different engine.
 - **A successful block always leads to combat** (rules digest: “Block: Successful attempt to
   prevent an action. Leads to combat.”). A 0-strength ally blocking a bleed does not avoid the
   strike — it enters combat and *survives* on its life, which is exactly why body count and
@@ -47,12 +48,13 @@ synergy, meta-dating, and copy-count intent.
 - Copy counts encode the game plan. Info Highway ×5 + Minion Tap ×7 aims at 3-4 big vampires out,
   not 2. Doubling a unique (New Carthage ×2) marks a card the deck *must* land early. A 1× Barrens
   next to Dreams of the Sphinx marks deliberate anti-jam support for a deliberately tight module.
-- **Weight focus by how often you'll draw the card.** A single one-off with no fetch is an
-  *opportunity* (lunge tool, situational answer), not a core component — don't build the plan on
-  it (Frontal Assault ×1 in case D is a single-prey lunge, not the engine). A 1× crypt card is not
-  a designated role without a fetch (open without it ~2/3 of games); only the 3-4× star is. Doubled
-  *permanents* (The Unmasking ×2, Vagabond Mystic ×2) are near-certain to be drawn and mark
-  deliberate structure.
+- **Weight focus by how often you'll draw the card** — copy counts are hard evidence in both
+  directions. A single one-off with no fetch is an *opportunity* (lunge tool, situational
+  answer), not a core component — don't build the plan on it (Frontal Assault ×1 in case D is a
+  single-prey lunge, not the engine). A 1× crypt card is toolbox texture, not a designated role,
+  unless something fetches or cycles toward it (open without it ~2/3 of games); only the 3-4×
+  star is a role. Doubled *permanents* (The Unmasking ×2, Vagabond Mystic ×2) are near-certain
+  to be drawn and mark deliberate load-bearing structure.
 - **Distinguish the engine from its pieces.** Madness Network and Enkil Cog grant out-of-turn
   actions — they are engines. Metro Underground, Mylan Horseed or Homunculus only *unlock*:
   necessary for off-turn play and good A&B support, but a piece, not the engine. Attribute a
