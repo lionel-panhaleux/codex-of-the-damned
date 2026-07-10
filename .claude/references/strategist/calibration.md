@@ -25,6 +25,11 @@ synergy, meta-dating, and copy-count intent.
   archetype is one line of orientation, never a label to force. In case D the pull to call an
   Underbridge Stray ally-swarm a “War Ghoul variant” (shared clan, Fame/Dragonbound, AUS defense)
   buried that it is a different deck with a different engine.
+- **A successful block always leads to combat** (rules digest: “Block: Successful attempt to
+  prevent an action. Leads to combat.”). A 0-strength ally blocking a bleed does not avoid the
+  strike — it enters combat and *survives* on its life, which is exactly why body count and
+  life-boosters (Tainted Spring's +1 life, Vagabond Mystic) carry the wall. Never call a small
+  blocker “damage-free” or a bleed-block “combat-free.”
 
 **Economy and defense**
 
@@ -48,14 +53,6 @@ synergy, meta-dating, and copy-count intent.
   a designated role without a fetch (open without it ~2/3 of games); only the 3-4× star is. Doubled
   *permanents* (The Unmasking ×2, Vagabond Mystic ×2) are near-certain to be drawn and mark
   deliberate structure.
-  Read counts as hard evidence in both directions: a 1× action is an opportunity or a lunge tool,
-  never a core engine; ×2 support permanents (The Unmasking, Vagabond Mystic) signal deliberate
-  load-bearing structure; a 1-copy crypt vampire is toolbox texture, not a "designated role",
-  unless something fetches or cycles toward it.
-- **Don't force a known-archetype label.** A meaningful share of TWD decks (the classification's
-  noise set) fit no known archetype, and novel lists are exactly the interesting ones. Name the
-  mechanics first; use a known archetype as one line of orientation, and drop the frame the
-  moment the engine diverges — don't make lineage the spine of the analysis.
 - **Distinguish the engine from its pieces.** Madness Network and Enkil Cog grant out-of-turn
   actions — they are engines. Metro Underground, Mylan Horseed or Homunculus only *unlock*:
   necessary for off-turn play and good A&B support, but a piece, not the engine. Attribute a
@@ -202,40 +199,6 @@ First blind run of the strategist agent. Owner grade: "very sound", one correcti
   line is real only against decks with neither answer — see the general lesson on evaluating
   combat lines against the defender's standard answers.
 
-## Case study D — “Compromise” (Underbridge Stray ally-swarm, Midwest Mayhem Madison 2025, TWDA 12149)
-
-Owner-chosen hard test: the plan is not obvious from a surface read (crypt names Stick, Laika,
-Beetleman read as Gargoyles/Tupdogs but are Tzimisce/Nosferatu ANI weenies). Unlabeled
-(classification.json `noise`). Archetype: an ally-swarm combat deck — rush + wall, long-game oust.
-
-Analysis that held up:
-
-- Core engine right: Underbridge Stray ×11 recruited with Tainted Spring ×8 (free on Ludmijla's
-  ani −1) into 3-life / 2-strength animals. Tainted Spring appears in *no other deck in the TWDA*
-  — the tell that it is the build-around. Slow, low pool pressure, correctly called.
-
-Owner corrections (the misses):
-
-- **The combat package is disciplineless on purpose so the STRAYS wield it.** This is an ally-swarm
-  combat deck: the pumped Strays equip Weighted Walking Stick and play Target Vitals / Lucky Blow /
-  Glancing Blow / Pulled Fangs and do the killing. The vampires are support — stealth to land
-  recruits, plus Ludmijla's disciplines. Splitting it into “ally wall + vampire weapons” (and
-  asserting the package was vampire-only) missed the entire point.
-- **Haven Uncovered ×4 is the rush engine, and it answers S:CE by attrition.** Mark one target; a
-  full swarm of Strays descends on it in series (each a +1-stealth D action): first eats the S:CE,
-  second the dodge, third lands the weapon strike and takes presses from the first two. The earlier
-  “fails vs S:CE walls” weakness was wrong for this deck. 4× Haven Uncovered outweighs the three
-  scattered single rush actions (Harass/Ambush/Bum's Rush) — weight by copies.
-- **Payload = Fame + Dragonbound (torpor → pool), plus a secondary long-game bleed.** Call those
-  two out. The light Changeling/Rurik bleed is a real but slow secondary oust clock the swarm opens
-  once it has cleared the prey's board — the deck does not pivot to it, it accrues it. Frontal
-  Assault ×1 is a single-prey lunge tool, not a core “payload engine” (do not bundle it with
-  Fame/Dragonbound). Vagabond Mystic ×2 is doubled to heal the swarm; The Unmasking ×2 is doubled
-  for the +1-intercept wall — both are structure, not tech singletons.
-- **Process:** two skews — (1) over-fitting to a known archetype (War Ghoul), and (2)
-  under-weighting copy counts (over-focusing one-offs, assigning roles to 1× vampires). See the new
-  general lessons above.
-
 ## Case study D — "Compromise" (Darby Keeney, Midwest Mayhem Madison 2025, TWDA 12149)
 
 Hard blind test: a noise-classified one-off chosen because the plan is not obvious from a
@@ -263,3 +226,7 @@ produced the right read. The definitive example of "accurate parts, wrong whole"
 - Reviewer catch (FACT): "an ally blocking a bleed → no combat ensues" is false — a successful
   block always leads to combat. The Stray blocker survives the hand strike instead of avoiding
   it; the corrected mechanism makes Tainted Spring's +1 life *more* load-bearing, not less.
+- **Owner closure — the bleed is a real secondary clock.** The main plan is the rush, but a
+  working rush still needs an oust: Dragonbound + Fame + direct bleeds from the vampires are the
+  ousting package once the prey's board is down. A removal plan without its finishing clock is
+  incomplete — always identify both.
