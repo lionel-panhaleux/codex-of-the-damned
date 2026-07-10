@@ -230,8 +230,9 @@ defense and economy come first (except when analyzing an actual combat deck).
 - **Ally-armed combat swarm** — Underbridge Stray (recruited with Tainted Spring → 3 life / 2
   strength) as the *combatants*, wielding a deliberately disciplineless package (Weighted Walking
   Stick, Target Vitals, Glancing Blow, Lucky Blow, Pulled Fangs — allies play any card with no
-  Discipline requirement). Each Stray is triple-duty: bleed-proof blocker (+intercept via The
-  Unmasking), wake battery (burn to unlock a ready minion), and press/combat body. Haven Uncovered
+  Discipline requirement). Each Stray is triple-duty: a blocker that survives the strike its
+  block draws (a successful block leads to combat; +intercept vs stealth via The Unmasking),
+  wake battery (burn to unlock a ready minion), and press/combat body. Haven Uncovered
   ×4 marks one target for the whole swarm to descend on in series, beating S:CE/dodge by
   attrition. Fame + Dragonbound convert torpor to pool; Vagabond Mystic heals the swarm; light
   Changeling bleed is the secondary long-game clock. War-Ghoul-adjacent (Tzimisce, Fame/Dragonbound,
