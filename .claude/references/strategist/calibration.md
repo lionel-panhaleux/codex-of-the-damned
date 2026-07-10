@@ -26,6 +26,28 @@ synergy, meta-dating, and copy-count intent.
   engine diverges: lineage must never become the spine of the analysis. In case D the pull to
   call an Underbridge Stray ally-swarm a “War Ghoul variant” (shared clan, Fame/Dragonbound, AUS
   defense) buried that it is a different deck with a different engine.
+
+**Base mechanics — the free verbs.** The rules give every deck a layer of card-free strategy;
+read decks against it, because good builds lean on it and card slots only make sense relative
+to it.
+
+- **The Edge is an economy.** Its holder may gain 1 pool every unlock phase (a quiet 10-15 pool
+  over a game), it is a vote, and some cards spend it (Inside Dirt). Track who holds it, who can
+  take it (any successful bleed — including a bounced one: the *acting minion's controller*
+  gains it), and whether a deck is built to hold it (re-bleed cadence, Dreams of the Sphinx's
+  Edge mode) or to spend it.
+- **Torpor is a cost, not an endgame.** The base recovery loop — leave torpor (2 blood, +1
+  stealth) or be rescued (2 blood, split freely), then hunt back up (free action, 1 blood) — is
+  a resilience plan in itself. When a deck has no combat defense but a thick blood-regeneration
+  package (hunting grounds, Jake Washington-class allies, The Coven), read the regeneration AS
+  the combat defense: the deck accepts torpor and refuels on base verbs (owner's read, case E).
+- **Every ready minion is a bleed for 1.** The payload floor: width is a clock even with zero
+  cards in hand — five minions is 5 pool a turn into an empty defense, and bouncing a 1-bleed is
+  a losing trade. This is why swarms pressure a table just by existing, and why clearing "weak
+  bodies" is never free for the prey.
+- **Hunting prices blood in actions.** Base rate: one action for 1 blood. Blood spent in combat
+  or on cards is really actions spent later — hunt-rate improvements (Festivo, hunting grounds)
+  and leech loops change that exchange rate, which is their real value.
 - **A successful block always leads to combat** (rules digest: “Block: Successful attempt to
   prevent an action. Leads to combat.”). A 0-strength ally blocking a bleed does not avoid the
   strike — it enters combat and *survives* on its life, which is exactly why body count and
@@ -233,3 +255,23 @@ produced the right read. The definitive example of "accurate parts, wrong whole"
   ousting package once the prey's board is down. The deck *accrues* this clock as the swarm
   strips the board — it does not pivot to it. A removal plan without its finishing clock is
   incomplete — always identify both.
+
+## Case study E — "Esquina da Sujeira" (Joab R. B. da Silva, Fillip CG 2026, TWDA 13252)
+
+Third blind test, first clean pass (owner: "all good", no corrections). Kept as the positive
+example of the expected level, plus the owner's answers to the analysis's open questions.
+
+- What the analysis got right: the Edge → Inside Dirt engine (bounce-proof 3-pool burns
+  interleaved with Computer Hacking re-arms), the clan gate explaining the mixed crypt, OBF spam
+  + block-denial as the delivery, the all-forward chassis read as identity rather than
+  oversight, the 2025→2026 lineage tuning (Dirt trimmed to 8, Hacking added, wakes dropped),
+  and the sleeper economics (Dreams of the Sphinx's Edge mode; a bounced bleed still arms you).
+  Every load-bearing card claim survived adversarial verification.
+- Owner answers: (1) **thin raw pool is exactly why the archetype stays niche** — fast alone
+  doesn't win all tables, and no bounce / no bleed defense is a serious structural drawback
+  against the top-tier S&B decks, which are fast AND defended; (2) **the blood-regeneration
+  package IS the combat defense** — opponents will block, rush and grind the blood, and the
+  deck simply accepts torpor and refuels through the base verbs (see the free-verbs lesson);
+  the owner flagged this question as high-level tactical subtlety worth asking; (3) **the
+  bleed→Dirt loop does fire multiple times per turn in practice — 4-5 minions is the goal**;
+  the clock read was accurate.
