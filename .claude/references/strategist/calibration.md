@@ -12,6 +12,13 @@ synergy, meta-dating, and copy-count intent.
 
 - Never reason from remembered card text. Fetch from the KRCG API (`https://api.krcg.org/card/<id-or-name>`)
   before analyzing. Roughly a third of from-memory card readings were wrong in round 1.
+- **Read the whole card object, not just `card_text`.** For allies and retainers the *recruit
+  requirement* lives in the `clans` / `disciplines` fields, not the ability text (Tunnel Runner →
+  `clans:['Akunanse']`; War Ghoul → `clans:['Tzimisce']`; Raven Spy → `disc:['ani']`). Miss it and
+  the analysis inverts — reading Tunnel Runner as requirement-free made an advanced vampire's
+  "recruit a werewolf ignoring requirements" clause look redundant when it was in fact the deck's
+  *only* legal recruiter (no Akunanse in the crypt). Print and check those fields before judging who
+  can bring an ally into play or who can carry it through Piper (requirements apply as normal).
 - **Date the deck, then read it against its year.** A decklist is a meta answer, not a timeless
   artifact. Check `card-changes-history.md` (errata/nerfs: what did the card do *then*?) and
   `meta-by-year.md` (what were the top threats *then*?). Example: a 2023 list with a tight stealth

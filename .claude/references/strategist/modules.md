@@ -58,6 +58,17 @@ defense and economy come first (except when analyzing an actual combat deck).
   and exposes the deck to Scourge of the Enochians.
 - **Crypt-cycling** — Wider View, Anarch Convert, Effective Management, Coroner's Contact. Dig the
   crypt for the star or feed crypt-dependent engines (Little Mountain Cemetery).
+- **Merge assembly** — the natural merge is slow and draw-dependent: control one version, the other
+  in the uncontrolled region, spend 4 transfers + 1 pool (advanced goes on base; base card text
+  still applies afterward, advanced supplies capacity/disciplines/sect and wins conflicts). Legacy
+  (played by an unmerged *advanced* vampire — +2 stealth action — fetches the *base* from crypt /
+  uncontrolled / ash heap and merges on the spot) and Epiphany (the mirror: an unmerged *base*
+  vampire fetches the *advanced*) turn a single off-copy into a tutor target — so the crypt runs one
+  version as the workhorse and a lone copy of the other purely as the fetch target, no random draw
+  needed. The reason to bother is needing BOTH texts (an advanced ability *and* a base ability that
+  survives the merge), not just the stronger single side; Legacy is the tool when the advanced is the
+  workhorse (fetch the rare base), Epiphany when the base is. Wider View / Effective Management /
+  Anarch Convert's crypt-draw dig toward the off-copy more slowly, without spending an action.
 
 ## Card flow & recursion
 
