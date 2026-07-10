@@ -5,7 +5,7 @@ class BaseConfig(object):
     DEBUG = os.environ.get("DEBUG", False)
     TESTING = DEBUG
     # Translation
-    SUPPORTED_LANGUAGES = {"en": "English", "fr": "Francais"}
+    SUPPORTED_LANGUAGES = {"en": "English", "fr": "Francais", "es": "Espanol"}
     BABEL_DEFAULT_LOCALE = "en"
     BABEL_DEFAULT_TIMEZONE = "UTC"
 
