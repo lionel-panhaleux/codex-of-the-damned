@@ -24,6 +24,7 @@ function link_text() {
     let lang = window.location.pathname.slice(1, 3)
     if (lang == "fr") return "En savoir plus"
     if (lang == "es") return "Más información"
+    if (lang == "pt") return "Saiba mais"
     return "See more about it"
 }
 

@@ -243,8 +243,8 @@ Portuguese term where a good one exists. Status: ✔ attested · ○ proposed (c
 | EN | PT-BR | status — notes |
 |---|---|---|
 | bleed (n./v.) | a sangria / sangrar | ○ official-aligned; community says « o bleed », verb « bleedar » — avoid in prose |
-| pool | os recursos | ○ official; community says « o pool »; pool damage → dano de recursos |
-| bloat | ganho de recursos / ganhar recursos | ○ aligned with FR; community gems: « boiar » (!), « ganhar pool » |
+| pool | os recursos | ✔ OWNER DECISION 2026-07 — official BCP-PT; pool damage → dano aos recursos; NOT « o pool » |
+| bloat | boiar (v.) | ✔ OWNER DECISION 2026-07 — Brazilian community gem ("to float"; você boia); kill: ganho de recursos, ganhar pool |
 | bounce | redirecionar (um sangramento) / redirecionamento | ✔ « redirecionar um bleed » attested |
 | oust | eliminar / matar a presa | ✔ « matar a presa » attested; also « tirar da partida » |
 | lunge | golpe de misericórdia | ○ transpose FR « coup de grâce »; not attested |
