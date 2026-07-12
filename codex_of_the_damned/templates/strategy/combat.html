@@ -18,7 +18,7 @@
     combat_primer=link("/strategy/articles/basic/combat-primer"),
     combat_modules=link("/strategy/articles/advanced/combat-modules")
     %}
-    If you want to explore combat deeper, you can consult our strategy articles: 
+    If you want to explore combat deeper, you can consult our strategy articles:
     Krzystof Karski's {{ combat_primer }}, and {{ combat_modules }}.
     {% endtrans %}
 </p>
@@ -232,7 +232,7 @@ target_vitals=card("Target Vitals")
         </li>
         <li>
             {% trans trimmed
-            ak_47=card("AK 47"),
+            ak_47=card("AK-47"),
             assault_rifle=card("Assault Rifle")
             %}
             <b>{{ ak_47 }}:</b>
@@ -242,11 +242,11 @@ target_vitals=card("Target Vitals")
         </li>
         <li>
             {% trans trimmed
-            blade_of_bellona=card("Blade of Bellona")
+            archangel_sword=card("Sword of the Archangel")
             %}
-            <b>{{ blade_of_bellona }}:</b>
-            An additional damage and optional manoeuver at no cost, a bargain for
-            Salubri antitribu {{ salubri_antitribu }}.
+            <b>{{ archangel_sword }}:</b>
+            Aggravated +1 damage for only 2 pool: although unique, it's a fearsome one, for
+            Salubri {{ salubri }} only.
             {% endtrans %}
         </li>
     </ul>
@@ -285,19 +285,11 @@ target_vitals=card("Target Vitals")
     <li>{{ ANI }} {{ _('with') }} {{ card("Flesh Bond") }}.</li>
     <li>{{ OBF }} {{ _('with') }} {{ card("No Trace") }}.</li>
     <li>{{ VIC }} {{ _('with') }} {{ card("Meld with the Land") }}.</li>
-    <li>
-        {{ CEL }} {{ _('with') }}
-        {{ card("Preternatural Evasion") }}.
-    </li>
-    <li>
-        {{ NEC }} {{ _('with') }}
-        {{ card("Spiritual Intervention") }}.
-    </li>
+    <li>{{ CEL }} {{ _('with') }} {{ card("Preternatural Evasion") }}.</li>
+    <li>{{ NEC }} {{ _('with') }} {{ card("Spiritual Intervention") }}.</li>
     <li>{{ SPI }} {{ _('with') }} {{ card("Leapfrog") }}.</li>
-    <li>
-        {{ pre }}{{ ser }} {{ _('with') }}
-        {{ card("Serpent's Numbing Kiss") }}.
-    </li>
+    <li>{{ pre }}{{ ser }} {{ _('with') }} {{ card("Serpent's Numbing Kiss") }}.</li>
+    <li>{{ _("Cathari") }} {{ cathari }} {{ pre }} or {{ obf }} {{ _('with') }} {{ card("Kiss of Cathari") }}.</li>
 </ul>
 <p>
     {% trans trimmed
@@ -321,6 +313,8 @@ target_vitals=card("Target Vitals")
     relentless_reaper=card("Relentless Reaper"),
     sanguine_entrapment=card("Sanguine Entrapment"),
     hunters_mark=card("Hunter's Mark"),
+    lapse=card("Lapse"),
+    hunting_the_quarry=card("Hunting the Quarry"),
     rush_decks=link("/strategy/archetype-categories", _("Rush decks"), "rush")
     %}
     <h3>How to deal with Strike: Combat Ends (S:CE)</h3>
@@ -340,8 +334,10 @@ target_vitals=card("Target Vitals")
             {{ CEL }} with {{ psyche }},
             {{ AUS }} with {{ telepathic_tracking }},
             {{ THN }} with {{ relentless_reaper }},
-            {{ CEL }}{{ QUI }} with {{ sanguine_entrapment }} and
-            {{ CEL }}{{ THA }} with {{ hunters_mark }}.
+            {{ CEL }}{{ QUI }} with {{ sanguine_entrapment }},
+            {{ CEL }}{{ THA }} with {{ hunters_mark }},
+            {{ TEM }} with {{ lapse }}, and
+            {{ caine }} {{ CEL }} or {{ THA }} with {{ hunting_the_quarry }}.
         </li>
     </ul>
     <p>
@@ -374,10 +370,8 @@ target_vitals=card("Target Vitals")
     <li>{{ card("Apparition") }} ({{ chi }})</li>
     <li>{{ card("Flesh of Marble") }} ({{ pro }})</li>
     <li>{{ card("Horrid Form") }} ({{ VIC }})</li>
-    <li>
-        {{ card("Leathery Hide") }}
-        {{ gangrel_antitribu }}
-    </li>
+    <li>{{ card("Leathery Hide") }} {{ gangrel_antitribu }}</li>
+    <li>{{ card("Wall of Filth") }} ({{ caine }} {{ pro }}/{{ tha }})</li>
 </ul>
 </p>
 {% trans trimmed
@@ -419,21 +413,11 @@ touch_of_oblivion=card("Touch of Oblivion")
     <li>{{ card("Selective Silence") }} ({{ QUI }})</li>
     <li>{{ card("Shadow Step") }} ({{ OBT }})</li>
     <li>{{ card("Cold Aura") }} ({{ nec }})</li>
-    <li>
-        {{ card("Charge of the Buffalo") }} ({{ spi }})
-    </li>
+    <li>{{ card("Charge of the Buffalo") }} ({{ spi }})</li>
     <li>{{ card("Brick by Brick") }} ({{ VIS }})</li>
-    <li>
-        {{ card("Giulia Giovanni Abruzzina") }}
-        {{ giovanni }}
-    </li>
-    <li>
-        {{ card("Omael Kuman") }}
-        {{ assamite }}
-    </li>
-    <li>
-        {{ card("Storm Sewers") }}
-        {{ nosferatu }}
-    </li>
+    <li>{{ card("Internal Recursion") }} ({{ tem }})</li>
+    <li>{{ card("Giulia Giovanni Abruzzina") }} {{ giovanni }}</li>
+    <li>{{ card("Omael Kuman") }} {{ assamite }}</li>
+    <li>{{ card("Storm Sewers") }} {{ nosferatu }}</li>
 </ul>
 {% endblock %}

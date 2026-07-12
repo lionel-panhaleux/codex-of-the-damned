@@ -25,14 +25,8 @@
     <li> {{ card("Vessel") }} </li>
     <li> {{ card("Tribute to the Master") }} </li>
     <li> {{ card("Grooming the Protégé") }} </li>
-    <li>
-        {{ card("Powerbase: Cape Verde") }}
-        {{ giovanni }}
-    </li>
-    <li>
-        {{ card("Wasserschloss Anif, Austria") }}
-        {{ tremere }}
-    </li>
+    <li>{{ card("Powerbase: Cape Verde") }} {{ giovanni }}</li>
+    <li>{{ card("Wasserschloss Anif, Austria") }} {{ tremere }}</li>
 </ul>
 <p>
     {% trans trimmed
@@ -86,6 +80,7 @@
     <li> {{ card("Perfectionist") }} </li>
     <li> {{ card("Life in the City") }} </li>
     <li> {{ card("Procurer") }} ({{ _('costly and fragile') }}) </li>
+    <li> {{ card("Blood of the Sabbat") }} ({{ _('Sabbat') }}) </li>
     <li> {{ card("Threestar Cab Company") }} ({{ _('costly and less efficient') }}) </li>
 </ul>
 <p>
@@ -96,10 +91,12 @@
 </p>
 <ul>
     <li> {{ card("Inbase Discotek, Frankfurt") }}</li>
+    <li> {{ card("Aaron's Feeding Razor") }}</li>
     <li> {{ card("The Anarch Free Press") }} ({{ _('Anarch') }}) </li>
     <li> {{ card("Hospital Food") }} ({{ _('Anarch') }}) </li>
     <li> {{ card("Festivo dello Estinto") }} ({{ _('Sabbat') }}) </li>
     <li> {{ card("The Hungry Coyote") }} ({{ _('Sabbat') }}) </li>
+    <li> {{ card("Harvest Rites") }} ({{ _('Sabbat') }}) </li>
 </ul>
 <h2 id="master-bloating">{{ _('Master bloating') }}</h2>
 <p>
@@ -109,48 +106,17 @@
     {% endtrans %}
 </p>
 <ul>
-    <li>
-        {{ card("Liquidation") }}
-    </li>
-    <li>
-        {{ card("Ashur Tablets") }}
-        {% trans trimmed
-        girls=link("/archetypes/girls-will-find-inner-circle")
-        %}
-        (uses up a lot of Master slots, best in an MMPA archetypes like {{ girls }})
-        {% endtrans %}
-    </li>
-    <li>
-        {{ card("Powerbase: Montreal") }}
-        ({{ _('needs to be defended') }})
-    </li>
-    <li>
-        {{ card("Powerbase: Barranquilla") }}
-        ({{ _('needs to be defended') }})
-    </li>
-    <li>
-        {{ card("Specialization") }}
-    </li>
-    <li>
-        {{ card("Tend the Flock") }} {{ baali }}
-    </li>
-    <li>
-        {{ card("Ventrue Investment") }} {{ ventrue_antitribu }}
-    </li>
-    <li>
-        {{ card("Mbare Market, Harare") }}
-        ({{ _('Laibon') }})
-    </li>
-    <li>
-        {{ card("Tower of London") }} {{ giovanni }}
-    </li>
-    <li>
-        {{ card("Great Symposium") }} {{ kiasyd }}
-    </li>
-    <li>
-        {{ card("The Church of Vindicated Faith") }}
-        ({{ _('Imbued') }})
-    </li>
+    <li>{{ card("Liquidation") }}</li>
+    <li>{{ card("Ashur Tablets") }}</li>
+    <li>{{ card("Powerbase: Montreal") }} ({{ _('needs to be defended') }})</li>
+    <li>{{ card("Powerbase: Barranquilla") }} ({{ _('needs to be defended') }})</li>
+    <li>{{ card("Specialization") }}</li>
+    <li>{{ card("Tend the Flock") }} {{ baali }}</li>
+    <li>{{ card("Ventrue Investment") }} {{ ventrue_antitribu }}</li>
+    <li>{{ card("Mbare Market, Harare") }} ({{ _('Laibon') }})</li>
+    <li>{{ card("Tower of London") }} {{ giovanni }}</li>
+    <li>{{ card("Great Symposium") }} {{ kiasyd }}</li>
+    <li>{{ card("The Church of Vindicated Faith") }} ({{ _('Imbued') }})</li>
     <li>
         {% trans trimmed
         secret_horde=card("Secret Horde"),
@@ -167,26 +133,11 @@
     <h3>{{ _('Clan masters') }}</h3>
     <p>{{ _('5 clans give access to a unique location generating pool:') }}</p>
     <ul>
-        <li>
-            {{ gangrel }}
-            {{ card("Ecoterrorists") }}
-        </li>
-        <li>
-            {{ tremere }}
-            {{ card("Arcane Library") }}
-        </li>
-        <li>
-            {{ toreador }}
-            {{ card("Art Museum") }}
-        </li>
-        <li>
-            {{ brujah_antitribu }}
-            {{ card("Gang Territory") }}
-        </li>
-        <li>
-            {{ nosferatu_antitribu }}
-            {{ card("Nosferatu Kingdom") }}
-        </li>
+        <li>{{ gangrel }} {{ card("Ecoterrorists") }}</li>
+        <li>{{ tremere }} {{ card("Arcane Library") }}</li>
+        <li>{{ toreador }} {{ card("Art Museum") }}</li>
+        <li>{{ brujah_antitribu }} {{ card("Gang Territory") }}</li>
+        <li>{{ nosferatu_antitribu }} {{ card("Nosferatu Kingdom") }}</li>
     </ul>
 </div>
 {% trans trimmed
@@ -204,6 +155,8 @@ social_charm=card("Social Charm"),
 kindred_spirits=card("Kindred Spirits"),
 art_scam=card("Art Scam"),
 reunion_kamut=card("Reunion Kamut"),
+break_the_bonds=card("Break the Bonds"),
+magnetic_authority=card("Magnetic Authority"),
 founders_of_the_ebony_kingdom=card("Founders of the Ebony Kingdom"),
 khabar_glory=card("Khabar: Glory")
 %}
@@ -213,8 +166,7 @@ khabar_glory=card("Khabar: Glory")
 </p>
 <p>
     Finally, those ready to pay the price can even sacrifice some vampires to get
-    some pool back with {{ golconda_inner_peace }},
-    {{ khobar_towers_al_khubar }} {{ follower_of_set }}
+    some pool back with {{ golconda_inner_peace }}, {{ khobar_towers_al_khubar }} {{ follower_of_set }},
     or {{ redeem_the_lost_soul }}.
 </p>
 <h2 id="action-bloating">Action bloating</h2>
@@ -228,11 +180,11 @@ khabar_glory=card("Khabar: Glory")
 <p>
     Actions getting blood on uncontrolled vampires with no alternative are less efficient.
     They can still come in handy when used in swarm constructs to get
-    many vampiers out quickly, as is the case for
-    Toreador antitribu {{ toreador_antitribu }} {{ art_scam }} and Black Hand {{ reunion_kamut }},
-    but otherwise they are only used sparsingly.
+    many vampires out quickly, as is the case for
+    Toreador antitribu {{ toreador_antitribu }} {{ art_scam }}, Black Hand {{ reunion_kamut }},
+    Anarch {{ break_the_bonds }} or Path of Power {{ power }} {{ dom }}/{{ pot }} {{ magnetic_authority }}.
     Guruhi {{ guruhi }} {{ founders_of_the_ebony_kingdom }} and
-    Assamite {{ assamite }} {{ khabar_glory }} deserve a special motion,
+    Assamite {{ assamite }} {{ khabar_glory }} deserve a special mention,
     as they are unusually high on blood gain.
 </p>
 {% endtrans %}

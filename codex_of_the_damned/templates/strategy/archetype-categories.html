@@ -47,6 +47,8 @@
     stygian_shroud=card("Stygian Shroud"),
     daring_the_dawn=card("Daring the Dawn"),
     forced_confessional=card("Forced Confessional"),
+    hedonism=card("Hedonism"),
+    seeds_of_terror=card("Seeds of Terror"),
     mind_numb=card("Mind Numb"),
     pentex_subversion=card("Pentex™ Subversion"),
     misdirection=card("Misdirection"),
@@ -54,9 +56,9 @@
     %}
     The other way to get bleeds through is to make sure the prey has no minion available to block the action.
     Along its strong bleed capabilities, {{ dom }} offers the excellent {{ seduction }}.
-    {{ OBF }} {{ elder_impersonation }}, {{ NEC }} {{ call_of_the_hungry_dead }}, {{ OBL }} {{ stygian_shroud }}
-    {{ for }} {{ daring_the_dawn }}, {{ salubri }} {{ forced_confessional }},
-    and {{ pre }} {{ mind_numb }} are also effective tools.
+    {{ OBF }} {{ elder_impersonation }}, {{ NEC }} {{ call_of_the_hungry_dead }}, {{ OBL }} {{ stygian_shroud }},
+    {{ for }} {{ daring_the_dawn }}, {{ salubri }} {{ forced_confessional }}, {{ cathari }} {{ for }}/{{ pre }} {{ hedonism }}
+    and {{ obf }}/{{ pre }} {{ seeds_of_terror }}, as well as {{ pre }} {{ mind_numb }} are also effective tools.
     Combining these options with the few Master cards that can prevent block or lock minions —
     {{ pentex_subversion }}, {{ misdirection }} and {{ anarch_troublemaker }} —
     makes stealth and intercept irrelevant.
@@ -89,24 +91,13 @@
 <ul>
     <li>
         {% trans trimmed
-        kiasyd_stealth_bleed=link("/archetypes/kiasyd-stealth-bleed"),
-        lasombra_nocturn=link("/archetypes/lasombra-nocturn")
+        break_the_bonds=card("Break the Bonds"),
+        visions_of_gehenna=card("Visions of Gehenna"),
+        ravnos_break=link("/archetypes/ravnos-bonds")
         %}
-        Lasombra {{ lasombra }} and Kiasyd {{ kiasyd }}
-        have a strong combination with {{ dom }} for bleed and {{ obt }} for stealth.
-        Check the {{ kiasyd_stealth_bleed }} and {{ lasombra_nocturn }} archetypes.
-        {% endtrans %}
-    </li>
-    <li>
-        {% trans trimmed
-        weenie_dem=link("/archetypes/dementation-bleed"),
-        malk_94=link("/archetypes/malk-94"),
-        malk_22=link("/archetypes/malk-22")
-        %}
-        The Malkavian {{ malkavian }} can use {{ dem }},
-        alone or alongside {{ obf }}, for devastating bleeds,
-        like in the {{ weenie_dem }} archetype. In other groups (1 and 6+), they can also combine the best stealth
-        with {{ obf }} to the strongest bleed with {{ dom }}, as in the {{ malk_94 }} and {{ malk_22 }} archetypes.
+        V5 Ravnos {{ ravnos }}, with the {{ obf }}{{ pre }} combination, have excellent stealth
+        combined with a very solid bleed module in {{ pre }}, and have access to both {{ break_the_bonds }}
+        and {{ visions_of_gehenna }}, which gives the {{ ravnos_break }} archetype.
         {% endtrans %}
     </li>
     <li>
@@ -114,20 +105,56 @@
         platinum_protocol=card("The Platinum Protocol", "Platinum Protocol"),
         platinum_revelation=link("/archetypes/platinum-revelation")
         %}
-        The new Ministry {{ ministry }}, with the {{ obf }}{{ pro }}{{ pre }} combination, have excellent stealth
+        The Ministry {{ ministry }}, with the {{ obf }}{{ pro }}{{ pre }} combination, have excellent stealth
         combined with a very solid bleed module in {{ pre }}, and have access to the excellent {{ platinum_protocol }},
-        which gives the the eponymous {{ platinum_revelation }} archetype.
+        which gives the eponymous {{ platinum_revelation }} archetype.
         {% endtrans %}
     </li>
     <li>
         {% trans trimmed
-        break_the_bonds=card("Break the Bonds"),
-        visions_of_gehenna=card("Visions of Gehenna"),
-        ravnos_break=link("/archetypes/ravnos-bonds")
+        living_manse=card("Living Manse"),
+        the_british_museum=card("The British Museum"),
+        living_manse_arch=link("/archetypes/living-museum")
         %}
-        Similarily, V5 Ravnos {{ ravnos }}, with the {{ obf }}{{ pre }} combination, have excellent stealth
-        combined with a very solid bleed module in {{ pre }}, and have access to both {{ break_the_bonds }}
-        and {{ visions_of_gehenna }}, which gives the {{ ravnos_break }} archetype.
+        Tzimisce {{ tzimisce }} have an original proposition, with {{ dom }} for bleed and {{ PRO }} for stealth,
+        assisted by the {{ living_manse }} equipment in the {{ living_manse_arch }} archetype.
+        {{ the_british_museum }} is an integral part of this impressive engine.
+        {% endtrans %}
+    </li>
+    <li>
+        {% trans trimmed
+        oblivion_bleed=link("/archetypes/oblivion-bleed")
+        %}
+        Lasombra {{ lasombra }}, with {{ dom }} for bleed and {{ obl }} for stealth,
+        have a good discipline set to bleed, that gave the {{ oblivion_bleed }} archetype.
+        {% endtrans %}
+    </li>
+    <li>
+        {% trans trimmed
+        malk_94=link("/archetypes/malk-94"),
+        malk_22=link("/archetypes/malk-22")
+        %}
+        Malkavian can combine the best stealth with {{ obf }} to the strongest bleed with {{ dom }},
+        as in the {{ malk_94 }} and {{ malk_22 }} archetypes.
+        {% endtrans %}
+    </li>
+    <li>
+        {% trans trimmed
+        kiasyd_stealth_bleed=link("/archetypes/kiasyd-stealth-bleed"),
+        lasombra_nocturn=link("/archetypes/lasombra-nocturn")
+        %}
+        Legacy Lasombra {{ lasombra_legacy }} and Kiasyd {{ kiasyd }}
+        have a strong combination with {{ dom }} for bleed and {{ obt }} for stealth.
+        Check the {{ kiasyd_stealth_bleed }} and {{ lasombra_nocturn }} archetypes.
+        {% endtrans %}
+    </li>
+    <li>
+        {% trans trimmed
+        weenie_dem=link("/archetypes/dementation-bleed")
+        %}
+        The Legacy Malkavian {{ malkavian }} can use {{ dem }},
+        alone or alongside {{ obf }}, for devastating bleeds,
+        like in the {{ weenie_dem }} archetype.
         {% endtrans %}
     </li>
     <li>
@@ -149,30 +176,31 @@
     </li>
     <li>
         {% trans trimmed
-        stanislava=link("/archetypes/stanislava")
+        hecata_swarm=link("/archetypes/hecata-swarm"),
+        palla_grande=link("/archetypes/palla-grande")
         %}
-        Using {{ PRO }} for stealth gave birth to powerful bleed deck,
-        as in the {{ stanislava }} archetype and its variants.
+        When bleed power is lower, numbers can make up for it. Swarm archetypes bleed low but field more minions,
+        like in the {{ hecata_swarm }} or {{ palla_grande }} archetypes.
         {% endtrans %}
     </li>
     <li>
         {% trans trimmed
         the_bleeding_vignes=link("/archetypes/the-bleeding-vignes"),
+        salubri_powerbleed=link("/archetypes/salubri-powerbleed"),
         jost_powerbleed=link("/archetypes/rebekka-jost")
         %}
-        Toreador {{ toreador }} with {{ PRE }} and Ventrue {{ ventrue }}
-        with {{ DOM }}{{ PRE }} can produce strong powerbleed decks like
-        {{ the_bleeding_vignes }} or {{ jost_powerbleed }}.
+        Toreador {{ toreador }} with {{ PRE }}, as well as Salubri {{ salubri }} and Ventrue {{ ventrue }}
+        with {{ DOM }} can produce strong powerbleed decks like {{ the_bleeding_vignes }}, {{ salubri_powerbleed }} or {{ jost_powerbleed }}.
         {% endtrans %}
     </li>
     <li>
         {% trans trimmed
         mistress=link("/archetypes/mistress"),
-        girls_will_find_inner_circle=link("/archetypes/girls-will-find-inner-circle"),
+        stanislava=link("/archetypes/stanislava"),
         council_of_doom=link("/archetypes/council-of-doom")
         %}
         Inner Circles also deliver a very strong bleed as they have a +2 bleed ability.
-        The {{ mistress }} archetype is a good example.
+        The {{ mistress }}, {{ stanislava }} and {{ council_of_doom }} archetypes are good examples.
         {% endtrans %}
     </li>
     <li>
@@ -246,20 +274,26 @@
     </li>
     <li>
         {% trans trimmed
+        endless_dance=link("/archetypes/endless-dance"),
+        juliets_dream=link("/archetypes/juliets-dream"),
+        lasombra_politics=link("/archetypes/lasombra-politics"),
         nosferatu_royalty=link("/archetypes/nosferatu-royalty")
         %}
-        Camarilla Princes also often use votes, like in the {{ nosferatu_royalty }} archetype.
+        Camarilla Princes also often use votes, like in the {{ endless_dance }}, {{ juliets_dream }},
+        {{ lasombra_politics }} or {{ nosferatu_royalty }} archetypes.
         {% endtrans %}
     </li>
     <li>
         {% trans trimmed
+        pop_captivation=link("/archetypes/pop-captivation"),
         ishtarri_politics=link("/archetypes/ishtarri-politics"),
         scout=link("/archetypes/scout"),
         daughters_politics=link("/archetypes/daughters-politics")
         %}
         Non Camarilla vampires can also build good titled crypts,
-        especially Ishtarri {{ ishtarri }} with {{ ishtarri_politics }}
-        and Daughters of Cacophony {{ daughter_of_cacophony }} with {{ scout }} and {{ daughters_politics }}.
+        especially the Path of Power {{ power }} {{ pop_captivation }}, but also Ishtarri {{ ishtarri }} with
+        {{ ishtarri_politics }} and Daughters of Cacophony {{ daughter_of_cacophony }} with {{ scout }} and
+        {{ daughters_politics }}.
         {% endtrans %}
     </li>
     <li>
@@ -293,12 +327,12 @@
     {% trans trimmed
     consanguineous_boon=card("Consanguineous Boon"),
     parity_shift=card("Parity Shift"),
-    ancient_inluence=card("Ancient Influence"),
+    ancient_influence=card("Ancient Influence"),
     political_stranglehold=card("Political Stranglehold")
     %}
     Votes decks deliver <strong>high pool damage</strong> once they get the vote lock.
     They also have a <strong>good bloat</strong>, using
-    {{ consanguineous_boon }}, {{ parity_shift }}, {{ ancient_inluence }} or
+    {{ consanguineous_boon }}, {{ parity_shift }}, {{ ancient_influence }} or
     {{ political_stranglehold }} depending on the build.
     Depending on the exact build, <strong>stealth vary</strong>, but they are not easily blocked.
     Builds that do not have high stealth levels rely on a swarm of minions that make it hard to block them all.
@@ -345,6 +379,20 @@
 <ul>
     <li>
         {% trans trimmed
+        organized_resistance=card("Organized Resistance"),
+        bait_and_switch=card("Bait and Switch"),
+        form_of_the_bat=card("Form of the Bat"),
+        deep_ecology=card("Deep Ecology"),
+        earth_meld=card("Earth Meld"),
+        gangrel_thing=link("/archetypes/gangrel-thing")
+        %}
+        The Anarch Gangrel {{ gangrel }} and their Barons recently gave birth to the {{ gangrel_thing }} wall.
+        The {{ organized_resistance }} and {{ bait_and_switch }} combination looks good on them, especially with
+        {{ form_of_the_bat }}, {{ deep_ecology }} and {{ earth_meld }} added to the mix.
+        {% endtrans %}
+    </li>
+    <li>
+        {% trans trimmed
         weenie_aus=link("/archetypes/weenie-aus")
         %}
         {{ AUS }} is the best intercept discipline, and the {{ weenie_aus }} wall is an obvious idea.
@@ -384,25 +432,11 @@
         +1 bleed. The {{ saulot_wall }} archetype is built around him.
         {% endtrans %}
     </li>
-    <li>
-        {% trans trimmed
-        organized_resistance=card("Organized Resistance"),
-        bait_and_switch=card("Bait and Switch"),
-        form_of_the_bat=card("Form of the Bat"),
-        deep_ecology=card("Deep Ecology"),
-        earth_meld=card("Earth Meld"),
-        gangrel_barons=link("/archetypes/gangrel-thing")
-        %}
-        The Anarch Gangrel {{ gangrel }} and their Barons recently gave birth to the {{ gangrel_barons }} wall.
-        The {{ organized_resistance }} and {{ bait_and_switch }} combination looks good on them, especially with
-        {{ form_of_the_bat }}, {{ deep_ecology }} and {{ earth_meld }} added to the mix.
-        {% endtrans %}
-    </li>
 </ul>
 <h3>{{ _("Highlights") }}</h3>
 <p>
     {% trans trimmed
-    smiling_jack_the_anarch=card("Smiling Jack, the Anarch"),
+    smiling_jack_the_anarch=card("Smiling Jack, The Anarch"),
     the_rack=card("The Rack"),
     powerbase_montreal=card("Powerbase: Montreal"),
     powerbase_barranquilla=card("Powerbase: Barranquilla"),
@@ -448,7 +482,7 @@
     The key to this archetype is to use versatile cards offering multiple play options.
     {% endtrans %}
 </p>
-<h2>{{ _("Flavours") }}</h2>
+<h3>{{ _("Flavours") }}</h3>
 <ul>
     <li>
         {% trans trimmed
@@ -466,10 +500,14 @@
     </li>
     <li>
         {% trans trimmed
-        brujah_resistance=link("/archetypes/illegal-brawl")
+        organized_resistance=card("Organized Resistance"),
+        brujah_resistance=link("/archetypes/illegal-brawl"),
+        govern_resistance=link("/archetypes/govern-resistance"),
+        protean_barons=link("/archetypes/protean-barons")
         %}
         Anarch Brujah {{ brujah }}, supported by their Barons, are often built as toolboxes, see
-        {{ brujah_resistance }}.
+        {{ brujah_resistance }}. Thanks to the excellent {{ organized_resistance }}, other Anarch Barons decks
+        have also given rise to powerful toolboxes like the {{ govern_resistance }} or {{ protean_barons }} archetypes.
         {% endtrans %}
     </li>
     <li>
@@ -486,6 +524,22 @@
         %}
         Tremere {{ tremere }} have a good disciplines combination for a toolbox too,
         as proves the {{ princess_toolbox }} archetype.
+        {% endtrans %}
+    </li>
+    <li>
+        {% trans trimmed
+        tzimisce_toolbox=link("/archetypes/tzimisce-toolbox")
+        %}
+        The legacy Tzimisce {{ tzimisce }} also offer a good combination and great vampires for a toolbox,
+        like in the {{ tzimisce_toolbox }} archetype.
+        {% endtrans %}
+    </li>
+    <li>
+        {% trans trimmed
+        shalmath=link("/archetypes/shalmath"),
+        capuchin_toolbox=link("/archetypes/capuchin-toolbox")
+        %}
+        Some toolboxes revolve around a single star, like {{ shalmath }} or the {{ capuchin_toolbox }}.
         {% endtrans %}
     </li>
 </ul>
@@ -549,11 +603,13 @@
     </li>
     <li>
         {% trans trimmed
+        piper_war_ghoul_24=link("/archetypes/piper-war-ghoul-24"),
         war_ghouls=link("/archetypes/war-ghouls"),
+        hecata_corpse=link("/archetypes/hecata-corpse"),
         shambling_hordes=link("/archetypes/shambling-hordes")
         %}
-        Allies with a rush ability are also good, like in the
-        {{ war_ghouls }} and {{ shambling_hordes }} archetypes.
+        Allies with a rush ability are also good, like in the {{ piper_war_ghoul_24 }},
+        {{ war_ghouls }}, {{ hecata_corpse }} and {{ shambling_hordes }} archetypes.
         {% endtrans %}
     </li>
     <li>
@@ -564,6 +620,28 @@
         Guruhi {{ guruhi }} provide a strong rush build too
         with their {{POT}}{{ANI}} disciplines combination, like in the
         {{ guruhi_rush }} and {{ nananimalism }} archetypes.
+        {% endtrans %}
+    </li>
+    <li>
+        {% trans trimmed
+        deep_song=card("Deep Song"),
+        carrion_crows=card("Carrion Crows"),
+        aid_from_bats=card("Aid from Bats"),
+        ani_barons=link("/archetypes/ani-barons")
+        %}
+        Animalism {{ ANI }} providing a strong rush or bleed option with {{ deep_song }} and an excellent combat
+        discipline all by itself thanks to the {{ carrion_crows }} and {{ aid_from_bats }} combination,
+        allows for strong combat-focused decks like {{ ani_barons }}.
+        {% endtrans %}
+    </li>
+    <li>
+        {% trans trimmed
+        qawwiya_caine=link("/archetypes/qawiyya-caine"),
+        enkidu_multirush=link("/archetypes/enkidu-multirush"),
+        ghede_typhonic_beast=link("/archetypes/ghede-typhonic-beast")
+        %}
+        Quite a few rush decks revolve around a strong star vampire like {{ qawwiya_caine }},
+        {{ enkidu_multirush }}, or {{ ghede_typhonic_beast }}.
         {% endtrans %}
     </li>
 </ul>
@@ -619,11 +697,12 @@
     <li>
         {% trans trimmed
         cybelotron=link("/archetypes/cybelotron"),
+        nergal_beast=link("/archetypes/nergal-beast"),
         call_the_great_beast=card("Call the Great Beast")
         %}
         The {{ cybelotron }} is an archetype created by <em>Erik Torstensson</em> in 2007
         and refined by <em>Ben Peal</em>. It uses a complicated combination to play
-        {{ call_the_great_beast }} efficiently.
+        {{ call_the_great_beast }} efficiently, and a similar combination exists with the {{ nergal_beast }} archetype.
         {% endtrans %}
     </li>
     <li>

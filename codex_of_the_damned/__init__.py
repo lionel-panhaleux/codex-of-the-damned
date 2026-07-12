@@ -186,6 +186,11 @@ BASE_CONTEXT = {
     "martyr": markupsafe.Markup('<span class="krcg-clan">5</span>'),
     "redeemer": markupsafe.Markup('<span class="krcg-clan">6</span>'),
     "visionary": markupsafe.Markup('<span class="krcg-clan">7</span>'),
+    # paths (Sabbat V5 — the Path glyphs live in the "VTES Clans" font, like clan icons)
+    "caine": markupsafe.Markup('<span class="krcg-clan">#</span>'),
+    "cathari": markupsafe.Markup('<span class="krcg-clan">$</span>'),
+    "death": markupsafe.Markup('<span class="krcg-clan">%</span>'),
+    "power": markupsafe.Markup('<span class="krcg-clan">&</span>'),
 }
 
 

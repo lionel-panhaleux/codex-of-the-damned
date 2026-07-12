@@ -25,18 +25,27 @@
     It is the perfect start for a collection or a curious Coterie alike.
     {% endtrans %}
 </p>
+<p>
+    {% trans trimmed %}
+    If you don't have access to the box or it is out of print in your area, don't panic! You can as easily grab five
+    V5 starter bundles of any clan directly — the base five or any other: Brujah {{ brujah }}, Gangrel {{ gangrel }},
+    Banu Haqim {{ banu_haqim }}, Ministry {{ ministry }}, Salubri {{ salubri }}, Lasombra {{ lasombra }},
+    Tzimisce {{ tzimisce }}, Ravnos {{ ravnos }}, or Hecata {{ hecata }} are also available.
+    You just need a few counters on top of the decks to play a game.
+    For a first experience, just maybe stay away from the V5 Sabbat bundles, except of course if you are a Sabbat fan.
+    {% endtrans %}
+</p>
 <img src="{{ url_for('static', filename='img/new-blood-decks.webp') }}" alt="New Blood decks">
 <p>
     {% trans trimmed
     new_blood=external("https://www.blackchantry.com/products/vampire-the-eternal-struggle-fifth-edition/new-blood-introductory-decks-for-vampire-the-eternal-struggle/",
     _("New Blood"))
     %}
-    If you're more interested into demoing the game, you might want to acquire instead the
-    five {{ new_blood }} decks matching those clans: they're cheaper and they're perfect to
-    demonstrate how the game works to a couple of people in half an hour, but they're not
-    full-fledged decks you can run a real game with. However, they are perfect additions
-    to the V5 decks: you can use the New Blood cards to tinker the starter decks and
-    try to modify and improve them a bit.
+    If you're more interested into demoing the game, you might want to acquire instead the five {{ new_blood }} decks
+    matching those clans: they're cheaper and they're perfect to demonstrate how the game works to a couple of people in
+    half an hour, but they're not full-fledged decks you can run a real game with. However, they are perfect additions
+    to the V5 decks: you can use the New Blood cards to tinker the starter decks and try to modify and improve them a
+    bit.
     {% endtrans %}
 </p>
 <p>
@@ -114,9 +123,7 @@
         {{ ravnos_precon }} {{ ravnos }}, {{ lasombra_precon }} {{ lasombra }}, and {{ hecata_precon }} {{ hecata }}.
         They're strong decks with good cards and can seamlessly be mixed with the V5 Box decks and their five clans.
         If you want to improve a bit on those clans and get some cards to tinker the decks, you can just get a couple
-        of the matching {{ new_blood_bundles }} for them. Note that the New Blood bundles for
-        Salubri {{ salubri }}, Tzimisce {{ tzimisce }}, Ravnos {{ ravnos }}, Lasombra {{ lasombra }},
-        and Hecata {{ hecata }} are yet to be released, so they'll have less options until then.
+        of the matching {{ new_blood_bundles }} for them.
         {% endtrans %}
     </p>
     <p>
@@ -129,9 +136,39 @@
         Camarilla political deck, if you're interested.
         {% endtrans %}
     </p>
+</div>
+
+<div class="column-2">
+    <h3>{{ _('V5 Sabbat') }}</h3>
+    <img src="{{ url_for('static', filename='img/sabbat-paths.webp') }}" alt="V5 Sabbat Path decks">
+    <p>
+        {% trans trimmed
+        caine_precon=external("https://www.blackchantry.com/vampire-the-eternal-struggle-fifth-edition/fifth-edition-path-of-caine/",
+        _("Path of Caine")),
+        cathari_precon=external("https://www.blackchantry.com/vampire-the-eternal-struggle-fifth-edition/fifth-edition-path-of-cathari/",
+        _("Path of Cathari")),
+        death_precon=external("https://www.blackchantry.com/vampire-the-eternal-struggle-fifth-edition/fifth-edition-path-of-death-and-the-soul/",
+        _("Path of Death and the Soul")),
+        power_precon=external("https://www.blackchantry.com/vampire-the-eternal-struggle-fifth-edition/fifth-edition-path-of-power-and-the-inner-voice/",
+        _("Path of Power and the Inner Voice"))
+        %}
+        Ready to go a step further? The Sabbat Fifth Edition brings a whole new sect to your tables: four full-power
+        preconstructed decks organized by Path rather than by clan — {{ caine_precon }} {{ caine }},
+        {{ cathari_precon }} {{ cathari }}, {{ death_precon }} {{ death }} and {{ power_precon }} {{ power }}.
+        They mix seamlessly with everything else you own and field a menacing, aggressive opposition.
+        {% endtrans %}
+    </p>
     <p>
         {% trans trimmed %}
-        With this acquisition on top of the base box, you will have fifteen strong decks that can be enjoyed together
+        These decks are balanced compared to the other V5 precons, but they introduce the new Path mechanic and,
+        because of it, can be a bit more difficult to grasp. Vampires in the crypt are from different clans and wield
+        different disciplines, but the path cards often allow for different disciplines to be used to compensate.
+        That said, anyone can get accustomed to it easily enough, so it is not a big barrier.
+        {% endtrans %}
+    </p>
+    <p>
+        {% trans trimmed %}
+        Together with the base box and the other V5 precons, you will have nineteen strong decks that can be enjoyed
         in a balanced and fun experience. That's already a high replayability there for any playgroup.
         Going any further means you're not a Neonate anymore, but an experienced Ancillae ready to expand their horizon.
         {% endtrans %}
@@ -189,10 +226,10 @@
         What can you find there? Well complete reprints for some legacy clans and disciplines.
         As of today, clans Assamite {{ assamite_legacy }}, Baali {{ baali }},
         Daughters of Cacophony {{ daughter_of_cacophony }}, Ravnos {{ ravnos }}, Lasombra {{ lasombra_legacy }},
-        Followers of Set {{ follower_of_set_legacy }}, Tzimisce {{ tzimisce }}, Pander {{ pander }}
-        and Salubri {{ salubri }} are fully available there, plus
-        the Disciplines Quietus {{ qui }}, Daimonon {{ dai }}, Melpominee {{ mel }}, Chimerstry {{ chi }},
-        Vicissitude {{ vic }} and Obeah {{ obe }}.
+        Followers of Set {{ follower_of_set_legacy }}, Tzimisce {{ tzimisce }}, Pander {{ pander }},
+        Salubri {{ salubri }}, True Brujah {{ true_brujah }} and Malkavian Antitribu {{ malkavian_antitribu }}
+        are fully available there, plus the Disciplines Quietus {{ qui }}, Daimonon {{ dai }}, Melpominee {{ mel }},
+        Chimerstry {{ chi }}, Vicissitude {{ vic }}, Obeah {{ obe }}, Temporis {{ tem }} and Dementation {{ dem }}.
         Combined with the cards you already posess, this can let you build a lot of strong
         tournament decks. See our {{ archetypes_section }} for a better idea of what you can build.
         {% endtrans %}
@@ -208,14 +245,24 @@
         1"),
         promo_pack_2=external("https://www.blackchantry.com/products/legacy/bundles/product-promo-pack-2/", "Promo Pack
         2"),
+        promo_pack_3=external("https://www.blackchantry.com/products/legacy/bundles/product-promo-pack-3/", "Promo Pack
+        3"),
         baltimore_purge = link("/archetypes/baltimore-purge"),
         benedito_a_lanterna=card("Benedito, a Lanterna"),
         bituin=card("Bituin"),
-        jacques_rouge=card("Jacques Rouge")
+        jacques_rouge=card("Jacques Rouge"),
+        gilbert_duane=card("Gilbert Duane (G6)", "Gilbert Duane"),
+        victoria_ash=card("Victoria Ash (G7)", "Victoria Ash"),
+        okulos=card("Okulos (G7)", "Okulos"),
+        karl_schrekt=card("Karl Schrekt (G6)", "Karl Schrekt"),
+        fiorenza_savona=card("Fiorenza Savona (G6)", "Fiorenza Savona")
         %}
         Once you get to this level, promo packs can be nice acquisitions. {{ promo_pack_1 }} can let you build
-        some fun Star-vampire decks, like {{ baltimore_purge }}, and {{ promo_pack_2 }} gives you a few Barons
-        you cannot find elsewhere: {{ benedito_a_lanterna }}, {{ bituin }}, and {{ jacques_rouge }}.
+        some fun Star-vampire decks, like {{ baltimore_purge }}, {{ promo_pack_2 }} gives you a few Barons you
+        cannot find elsewhere ({{ benedito_a_lanterna }}, {{ bituin }} and {{ jacques_rouge }}), and
+        {{ promo_pack_3 }} offers fresh versions of five iconic Camarilla vampires, one for each core clan:
+        {{ gilbert_duane }} {{ malkavian }}, {{ victoria_ash }} {{ toreador }}, {{ okulos }}
+        {{ nosferatu }}, {{ karl_schrekt }} {{ tremere }} and {{ fiorenza_savona }} {{ ventrue }}.
         {% endtrans %}
     </p>
 </div>
@@ -231,7 +278,7 @@
         {{ lost_kindred }} unlocks a couple of other decks: you can put up together a fun
         Gargoyles {{ gargoyle }}, Harbinger {{ harbinger_of_skulls }} or Samedi {{ samedi }} deck.
         Previously in high demand for the powerful {{ emerald_legionnaire }},
-        it is now much less appealing since the 2024 errata of the card.
+        it is now less appealing since the 2024 errata of the card.
         {% endtrans %}
     </p>
 </div>
@@ -258,33 +305,76 @@
 </p>
 
 <div class="insert tip">
-    <h3>{{ _('Upcoming V5 format') }}</h3>
+    <h3>{{ _('The V5 format') }}</h3>
     <p>
-        {% trans trimmed %}
-        Note that the VEKN Inner Circle did announce that a "V5 format" will probably
-        be defined soon. There is no precise list yet of what we can expect as part of it,
-        but most likely all products listed as V5 on the BCP website and online shop will
-        probably be part of it, whereas legacy products and print on demand reprints
-        will be excluded of it. Promo vampires starting with the promo pack 2 will
-        likely be part of it, while the few reprints in those promo packs might not.
+        {% trans trimmed
+        v5_format=external("https://www.blackchantry.com/2025/09/16/introducing-the-official-vampire-the-eternal-struggle-v5-format/",
+        _("official V5 format"))
+        %}
+        The {{ v5_format }} is now a real thing. Made official in September 2025, it restricts
+        deckbuilding to the modern V5 products — the Fifth Edition preconstructed decks, the New Blood packs,
+        Fall of London, Shadows of Berlin, the 30th Anniversary set and a specific handful of promo cards — while
+        leaving out the legacy products and the print-on-demand reprints. The linked announcement spells out exactly
+        which products and promos are in, and which are out.
         {% endtrans %}
     </p>
     <p>
         {% trans trimmed %}
-        So, if you're mostly interested in the new format, you might want to stay away
-        from the legacy products. On the other hand, note that it is unlikely that this
-        new format will be come the "new standard" anytime soon: while some events
-        might use it to appeal to more neonates, the biggest (nationals and continentals)
-        and many playgroups will continue using all cards.
+        It is an <strong>alternate</strong> format, not a replacement: it exists to give new playgroups and game
+        shops a self-contained, easy-to-buy cardpool. The Standard Constructed format — the one using every card
+        ever printed — remains the format of the biggest events (nationals, continentals and Grand Prix), and it
+        is still by far the more popular of the two.
         {% endtrans %}
     </p>
     <p>
         {% trans trimmed %}
-        Contrarily to other CCGs, the more times goes by, the more reprints get available
-        for all the old cards with the print on demand system, so new joiners will face
-        less and less difficulties acquiring all the cards they need. The new "V5 format"
-        could become mainstream in a few years, but it might just as well die out early.
-        Right now, with the format not even completely defined, there's no way to know.
+        Contrarily to other CCGs, the more time goes by, the more reprints get available for all the old cards
+        through the print-on-demand system, so new joiners face less and less difficulty acquiring the cards they
+        need for the standard format.
+        {% endtrans %}
+    </p>
+</div>
+
+<div class="column-2">
+    <h3>{{ _('New Blood') }}</h3>
+    <img src="{{ url_for('static', filename='img/new-blood-decks.webp') }}" alt="New Blood decks">
+    <p>
+        {% trans trimmed
+        new_blood=external("https://www.blackchantry.com/products/vampire-the-eternal-struggle-fifth-edition/new-blood-introductory-decks-for-vampire-the-eternal-struggle/",
+        _("New Blood"))
+        %}
+        If you're honing a single clan, your first deck building purchase should be a couple of the matching
+        {{ new_blood }} bundles. They're cheap, and the "one V5 starter + two New Blood" rule of thumb gives you
+        the extra vampires and copies you need to start tuning a real deck. The bundles now cover every clan, all
+        except for the V5 Sabbat paths.
+        {% endtrans %}
+    </p>
+</div>
+
+<div class="column-2">
+    <h3>{{ _('V5 Sabbat') }}</h3>
+    <img src="{{ url_for('static', filename='img/sabbat-paths.webp') }}" alt="V5 Sabbat Path decks">
+    <p>
+        {% trans trimmed
+        caine_precon=external("https://www.blackchantry.com/vampire-the-eternal-struggle-fifth-edition/fifth-edition-path-of-caine/",
+        _("Path of Caine")),
+        cathari_precon=external("https://www.blackchantry.com/vampire-the-eternal-struggle-fifth-edition/fifth-edition-path-of-cathari/",
+        _("Path of Cathari")),
+        death_precon=external("https://www.blackchantry.com/vampire-the-eternal-struggle-fifth-edition/fifth-edition-path-of-death-and-the-soul/",
+        _("Path of Death and the Soul")),
+        power_precon=external("https://www.blackchantry.com/vampire-the-eternal-struggle-fifth-edition/fifth-edition-path-of-power-and-the-inner-voice/",
+        _("Path of Power and the Inner Voice"))
+        %}
+        If the Sabbat is calling, the four Sabbat Fifth Edition Path decks — {{ caine_precon }} {{ caine }},
+        {{ cathari_precon }} {{ cathari }}, {{ death_precon }} {{ death }} and {{ power_precon }} {{ power }} — are
+        both your entry point and your deckbuilding toolbox. Each is a deck built around one of the four new Paths,
+        so a couple of copies of your chosen Path give you the crypt depth and card multiples to start refining.
+        {% endtrans %}
+    </p>
+    <p>
+        {% trans trimmed %}
+        One thing to note: the Paths have no New Blood bundles yet, so you cannot cheaply pad out a Sabbat crypt the way
+        you can for the clans: doubling up means buying whole Path precons.
         {% endtrans %}
     </p>
 </div>
@@ -421,11 +511,10 @@
         %}
         If you're focusing on a clan, you'll want to check the matching Keepers of Traditions bundle.
         {{ keepers_of_traditions_1 }} for Brujah {{ brujah }}, Gangrel {{ gangrel }}, Malkavian {{ malkavian }} and
-        Nosferatu {{ nosferatu }},
-        {{ keepers_of_traditions_2 }} for Toreador {{ toreador }}, Tremere {{ tremere }} and Ventrue {{ ventrue }}.
-        They often offer very good crypt alternatives that will open strong builds for those clans:
-        all group 4 Inner Circle members, and group 5 Justicars, as well as very strong vampires in the groups 4 and 5.
-        But also some useful cards that have not been otherwise reprinted,
+        Nosferatu {{ nosferatu }}, {{ keepers_of_traditions_2 }} for Toreador {{ toreador }}, Tremere {{ tremere }} and
+        Ventrue {{ ventrue }}. They often offer very good crypt alternatives that will open strong builds for those
+        clans: all group 4 Inner Circle members, and group 5 Justicars, as well as very strong vampires in the groups
+        4 and 5. But also some useful cards that have not been otherwise reprinted,
         like {{ force_of_personality }}, {{ touch_of_clarity }}, {{ scourge_of_the_enochians }} and {{ ponticulus }}.
         {% endtrans %}
     </p>
@@ -465,8 +554,7 @@
         to all the clan cards you could need, plus Obtenebration {{ obt }} and Vicissitude {{ vic }} cards.
         But even for other clans, you can fetch important staples like {{ direct_intervention }}
         and {{ anarch_convert }}. Some key cards are also available for Malkavian {{ malkavian }}, Gangrel {{ gangrel }}
-        and Brujah {{ brujah }},
-        like {{ mental_maze }}, {{ hell_for_leather }}, {{ power_of_one }}, {{ shattering }},
+        and Brujah {{ brujah }}, like {{ mental_maze }}, {{ hell_for_leather }}, {{ power_of_one }}, {{ shattering }},
         {{ smoke_and_mirrors }} and {{ undue_influence }}.
         {% endtrans %}
     </p>
@@ -476,11 +564,14 @@
         ravnos_clown_car=link("/archetypes/ravnos-clown-car"),
         giovanni_powerbleed=link("/archetypes/giovanni-powerbleed"),
         shambling_hordes=link("/archetypes/shambling-hordes"),
+        dementation_bleed=link("/archetypes/dementation-bleed"),
+        shalmath=link("/archetypes/shalmath"),
         the_unnamed=link("/archetypes/the-unnamed")
         %}
         Another interesting avenue here is to fetch all the cards you need to build very
         powerful and intricate decks cheaply, like {{ baltimore_purge }}, {{ ravnos_clown_car }},
-        {{ giovanni_powerbleed }}, {{ shambling_hordes }}, or even {{ the_unnamed }}.
+        {{ giovanni_powerbleed }}, {{ shambling_hordes }}, {{ dementation_bleed }}, {{ shalmath }},
+        or even {{ the_unnamed }}.
         {% endtrans %}
     </p>
 </div>
@@ -526,10 +617,9 @@
         haqim_s_law_retribution=card("Haqim's Law: Retribution")
         %}
         Depending on what you're playing, acquiring some other {{ legacy_preconstructed_decks }} might be in order then.
-        Using {{ libertine_ball }}, for example, can let you explore a different avenue for a Banu Haqim {{ banu_haqim
-        }}
-        deck, combining {{ the_embrace }} and {{ consanguineous_boon }} to build a bigger swarm and get the most out of
-        {{ haqim_s_law_retribution}}.
+        Using {{ libertine_ball }}, for example, can let you explore a different avenue for a
+        Banu Haqim {{ banu_haqim }} deck, combining {{ the_embrace }} and {{ consanguineous_boon }} to build a bigger
+        swarm and get the most out of {{ haqim_s_law_retribution}}.
         {% endtrans %}
     </p>
 </div>
@@ -657,7 +747,7 @@
         rarely used Tremere {{ tremere }} cards ({{ thadius_zho }} and {{ charnas_the_imp }}), but also
         {{ weighted_walking_stick }}, {{ legal_manipulations }}, and Dementation {{ dem }} cards like
         {{ kindred_spirits }} and {{ confusion }} if legacy Malkavians {{ malkavian_legacy }} are your thing.
-        The Nosferatu {{ nosferatu }} bundle has the only reprint (for now) of {{ aid_from_bats }},
+        The Nosferatu {{ nosferatu }} bundle has the only reprint (for now) of
         {{ j_s_simmons_esq }}, {{ petra }} and {{ laptop_computer }}, and also has a {{ powerbase_montreal }},
         so it might be overall good value depending on your collection.
         {% endtrans %}
@@ -917,14 +1007,8 @@
     </p>
     <p>
         {% trans trimmed %}
-        It is notable that the Salubri {{ salubri }} only got new cards that require a Salubri {{ salubri }},
-        but except for the lack of Dominate {{ dom }} on old Salubri {{ salubri }}, these cards could be combined with
-        them.
-        {% endtrans %}
-    </p>
-    <p>
-        {% trans trimmed %}
-        As of writing this section, these decks are too new to gauge their impact on the competitive scene.
+        Note that each of these three clans also have their own New Blood precon (see the New Blood section
+        below), which piles on even more new library cards and welcome reprints on top of the Companion decks.
         {% endtrans %}
     </p>
 </div>
@@ -953,8 +1037,202 @@
     </p>
     <p>
         {% trans trimmed %}
+        The new Oblivion {{ obl }} cards these two precons introduce are:
+        {% endtrans %}
+    </p>
+    <ul>
+        <li>
+            {% trans trimmed
+            arms_of_ahriman=card("Arms of Ahriman"),
+            touch_of_oblivion=card("Touch of Oblivion")
+            %}
+            only in the Lasombra {{ lasombra }} deck: {{ arms_of_ahriman }} and {{ touch_of_oblivion }}
+            {% endtrans %}
+        </li>
+        <li>
+            {% trans trimmed
+            pass_through_shadow=card("Pass Through Shadow"),
+            shadow_cast=card("Shadow Cast"),
+            shadow_cloak=card("Shadow Cloak"),
+            stygian_shroud=card("Stygian Shroud"),
+            truth_in_darkness=card("Truth in Darkness"),
+            where_the_veil_thins=card("Where the Veil Thins")
+            %}
+            in both decks: {{ pass_through_shadow }}, {{ shadow_cast }}, {{ shadow_cloak }}, {{ stygian_shroud }},
+            {{ truth_in_darkness }} and {{ where_the_veil_thins }}
+            {% endtrans %}
+        </li>
+        <li>
+            {% trans trimmed
+            consign_to_oblivion=card("Consign to Oblivion"),
+            shadow_sentinel=card("Shadow Sentinel"),
+            shroud_of_decay=card("Shroud of Decay"),
+            spectral_servitor=card("Spectral Servitor")
+            %}
+            only in the Hecata {{ hecata }} deck: {{ consign_to_oblivion }}, {{ shadow_sentinel }},
+            {{ shroud_of_decay }} and {{ spectral_servitor }}
+            {% endtrans %}
+        </li>
+    </ul>
+    <p>
+        {% trans trimmed
+        aggressive_corpse=card("Aggressive Corpse"),
+        biotech=card("Biotech Company Hunting Ground"),
+        family_gathering=card("Family Gathering"),
+        pit_of_contemplation=card("Pit of Contemplation"),
+        screamer=card("Screamer"),
+        the_gate_of_acheron=card("The Gate of Acheron")
+        %}
+        The Hecata {{ hecata }} deck also carries its own clan library cards: {{ aggressive_corpse }},
+        {{ biotech }}, {{ family_gathering }}, {{ pit_of_contemplation }}, {{ screamer }} and
+        {{ the_gate_of_acheron }}.
+        {% endtrans %}
+    </p>
+    <p>
+        {% trans trimmed %}
         Of course, both a new clan and a new discipline are the interesting start of a new playground, so it's worth
-        exploring the possibilities here. Surely, they'll only expand once the matching New Blood bundles are released.
+        exploring the possibilities here. The Oblivion {{ obl }} pool has only kept growing since: the matching New
+        Blood decks for Lasombra {{ lasombra }} and Hecata {{ hecata }} (see the New Blood section below) and the
+        Sabbat's Path of Death and the Soul {{ death }} each pile on more Oblivion cards, reprints and vampires.
+        {% endtrans %}
+    </p>
+</div>
+
+<div class="column-2">
+    <h3>{{ _('V5 Sabbat') }}</h3>
+    <img src="{{ url_for('static', filename='img/sabbat-paths.webp') }}" alt="V5 Sabbat Path decks">
+    <p>
+        {% trans trimmed
+        caine_precon=external("https://www.blackchantry.com/vampire-the-eternal-struggle-fifth-edition/fifth-edition-path-of-caine/",
+        _("Path of Caine")),
+        cathari_precon=external("https://www.blackchantry.com/vampire-the-eternal-struggle-fifth-edition/fifth-edition-path-of-cathari/",
+        _("Path of Cathari")),
+        death_precon=external("https://www.blackchantry.com/vampire-the-eternal-struggle-fifth-edition/fifth-edition-path-of-death-and-the-soul/",
+        _("Path of Death and the Soul")),
+        power_precon=external("https://www.blackchantry.com/vampire-the-eternal-struggle-fifth-edition/fifth-edition-path-of-power-and-the-inner-voice/",
+        _("Path of Power and the Inner Voice"))
+        %}
+        Released in October 2025, the Sabbat Fifth Edition comes as four full-power preconstructed decks,
+        each themed around one of four Paths: {{ caine_precon }} {{ caine }}
+        (combat), {{ cathari_precon }} {{ cathari }} (bleed), {{ death_precon }} {{ death }} (zombies and wraiths)
+        and {{ power_precon }} {{ power }} (politics). Between them they field
+        48 brand-new group 6 vampires spanning eleven clans.
+        {% endtrans %}
+    </p>
+    <p>
+        {% trans trimmed
+        sabbat_rules=external("https://www.blackchantry.com/utilities/new-sabbat-rules-terms-and-errata/",
+        _("new Sabbat rules and errata"))
+        %}
+        The <strong>Path</strong> is a brand-new mechanic. Every Sabbat vampire is printed with one of the four Paths,
+        and the new library cards are gated by Path rather than by discipline or clan. Legacy pathless Sabbat vampires
+        can pay a blood to choose a path at influence. It is all laid out on the {{ sabbat_rules }} page.
+        {% endtrans %}
+    </p>
+    <p>
+        {% trans trimmed %}
+        Each Path deck is stuffed with new path-specific library cards:
+        {% endtrans %}
+    </p>
+    <ul>
+        <li>
+            {% trans trimmed
+            abuse_of_power=card("Abuse of Power"),
+            augury_of_doom=card("Augury of Doom"),
+            pillars_fall=card("Pillars Fall"),
+            dance_with_the_devil=card("Dance with the Devil"),
+            hunting_the_quarry=card("Hunting the Quarry"),
+            rage_of_apedemak=card("Rage of Apedemak"),
+            soulgrinder=card("Soulgrinder"),
+            wall_of_filth=card("Wall of Filth"),
+            ensnare_a_beast=card("Ensnare a Beast"),
+            sentry_signal=card("Sentry Signal"),
+            dread_mastiff=card("Dread Mastiff"),
+            twisted_bloodhound=card("Twisted Bloodhound"),
+            unholy_sacrament=card("Unholy Sacrament")
+            %}
+            Path of Caine {{ caine }}: {{ abuse_of_power }}, {{ augury_of_doom }}, {{ pillars_fall }},
+            {{ dance_with_the_devil }}, {{ hunting_the_quarry }}, {{ rage_of_apedemak }}, {{ soulgrinder }},
+            {{ wall_of_filth }}, {{ ensnare_a_beast }}, {{ sentry_signal }}, {{ dread_mastiff }},
+            {{ twisted_bloodhound }} and {{ unholy_sacrament }} (shared with Path of Power).
+            {% endtrans %}
+        </li>
+        <li>
+            {% trans trimmed
+            enthrall=card("Enthrall"),
+            fever_pitch=card("Fever Pitch"),
+            hedonism=card("Hedonism"),
+            seeds_of_terror=card("Seeds of Terror"),
+            subversion=card("Subversion"),
+            swift_cover=card("Swift Cover"),
+            kiss_of_cathari=card("Kiss of Cathari"),
+            forward_momentum=card("Forward Momentum"),
+            terrifying_visage=card("Terrifying Visage")
+            %}
+            Path of Cathari {{ cathari }}: {{ enthrall }}, {{ fever_pitch }}, {{ hedonism }}, {{ seeds_of_terror }},
+            {{ subversion }}, {{ swift_cover }}, {{ kiss_of_cathari }}, {{ forward_momentum }} and
+            {{ terrifying_visage }}.
+            {% endtrans %}
+        </li>
+        <li>
+            {% trans trimmed
+            fiorella=card("Fiorella, Empty One"),
+            freakish_conglomeration=card("Freakish Conglomeration"),
+            gravebound_drone=card("Gravebound Drone"),
+            heartrender=card("Heartrender"),
+            dance_of_the_dead=card("Dance of the Dead"),
+            putrescent_sustenance=card("Putrescent Sustenance"),
+            gifts_from_hereafter=card("Gifts From Hereafter"),
+            morbidity=card("Morbidity"),
+            burial_site=card("Burial Site Hunting Ground"),
+            cursed_abattoir=card("Cursed Abattoir")
+            %}
+            Path of Death and the Soul {{ death }}: {{ fiorella }}, {{ freakish_conglomeration }},
+            {{ gravebound_drone }}, {{ heartrender }}, {{ dance_of_the_dead }}, {{ putrescent_sustenance }},
+            {{ gifts_from_hereafter }}, {{ morbidity }}, {{ burial_site }} and {{ cursed_abattoir }}.
+            {% endtrans %}
+        </li>
+        <li>
+            {% trans trimmed
+            cold_war=card("Cold War"),
+            empires_fall=card("Empires Fall"),
+            war_of_ages=card("War of Ages"),
+            absolute_tyranny=card("Absolute Tyranny"),
+            dominant_personality=card("Dominant Personality"),
+            magnetic_authority=card("Magnetic Authority"),
+            relentlessness=card("Relentlessness"),
+            unthinkable_humiliation=card("Unthinkable Humiliation"),
+            privileged_position=card("Privileged Position")
+            %}
+            Path of Power and the Inner Voice {{ power }}: {{ cold_war }}, {{ empires_fall }}, {{ war_of_ages }},
+            {{ absolute_tyranny }}, {{ dominant_personality }}, {{ magnetic_authority }}, {{ relentlessness }},
+            {{ unthinkable_humiliation }} and {{ privileged_position }}.
+            {% endtrans %}
+        </li>
+    </ul>
+    <p>
+        {% trans trimmed
+        monster=card("Monster"),
+        yawp_court=card("Yawp Court"),
+        abbot=card("Abbot"),
+        hungry_coyote=card("The Hungry Coyote"),
+        wall_street=card("Wall Street Night, Financial Newspaper"),
+        target_vitals=card("Target Vitals"),
+        cardinal_benediction=card("Cardinal Benediction"),
+        private_audience=card("Private Audience"),
+        regent=card("Regent"),
+        black_forest_base=card("Black Forest Base"),
+        powerbase_madrid=card("Powerbase: Madrid"),
+        dia_de_los_muertos=card("Día de los Muertos"),
+        dreams_of_the_sphinx=card("Dreams of the Sphinx"),
+        pentex=card("Pentex™ Subversion")
+        %}
+        Like every big release, the Sabbat decks are also a reprint bonanza. They bring back cards out of print since
+        2006 like {{ yawp_court }}, {{ abbot }}, {{ regent }} and {{ black_forest_base }}, and a fistful of cards last
+        seen in the limited 2019 Sabbat precon: {{ hungry_coyote }}, {{ target_vitals }}, {{ powerbase_madrid }}
+        and {{ dia_de_los_muertos }}. {{ wall_street }} finally gets a wide print, and {{ cardinal_benediction }} and
+        {{ private_audience }} (now free) got improved card text. They also include a generous staples count,
+        {{ dreams_of_the_sphinx }} and {{ pentex }} among them.
         {% endtrans %}
     </p>
 </div>
@@ -994,6 +1272,118 @@
 </div>
 
 <div class="column-2">
+    <h3>{{ _('New Blood') }}</h3>
+    <img src="{{ url_for('static', filename='img/new-blood-decks.webp') }}" alt="New Blood">
+    <p>
+        {% trans trimmed
+        new_blood=external("https://www.blackchantry.com/products/vampire-the-eternal-struggle-fifth-edition/new-blood-introductory-decks-for-vampire-the-eternal-struggle/",
+        _("New Blood"))
+        %}
+        {{ new_blood }} decks are mostly about new vampires, but the two latest waves — Lasombra {{ lasombra }} and
+        Hecata {{ hecata }} in 2025, then Salubri {{ salubri }}, Tzimisce {{ tzimisce }} and Ravnos {{ ravnos }} in
+        2026 — finally brought a real batch of new library cards, along with a trove of long-out-of-print reprints.
+        The vampires are not listed here but remain a very nice addition to the ones available in the V5 starters.
+        {% endtrans %}
+    </p>
+    <p>
+        {% trans trimmed %}
+        The new library cards are:
+        {% endtrans %}
+    </p>
+    <ul>
+        <li>
+            {% trans trimmed
+            childe_of_the_revolution=card("Childe of the Revolution")
+            %}
+            Brujah {{ brujah }}: {{ childe_of_the_revolution }}
+            {% endtrans %}
+        </li>
+        <li>
+            {% trans trimmed
+            dead_pool=card("Dead Pool"),
+            raising_the_portcullis=card("Raising the Portcullis"),
+            shadow_shift=card("Shadow Shift"),
+            umbrous_clutch=card("Umbrous Clutch")
+            %}
+            Lasombra {{ lasombra }}: {{ dead_pool }}, {{ raising_the_portcullis }}, {{ shadow_shift }},
+            {{ umbrous_clutch }}
+            {% endtrans %}
+        </li>
+        <li>
+            {% trans trimmed
+            cappadocian_crypt=card("Cappadocian Crypt"),
+            powerbase_munich=card("Powerbase: Munich"),
+            split_the_veil=card("Split the Veil"),
+            psychophagia=card("Psychophagia"),
+            paths_in_two_worlds=card("Paths in Two Worlds"),
+            bone_shambler=card("Bone Shambler"),
+            rotting_behemoth=card("Rotting Behemoth")
+            %}
+            Hecata {{ hecata }}: {{ cappadocian_crypt }}, {{ powerbase_munich }}, {{ split_the_veil }},
+            {{ psychophagia }}, {{ paths_in_two_worlds }}, {{ bone_shambler }}, {{ rotting_behemoth }}
+            {% endtrans %}
+        </li>
+        <li>
+            {% trans trimmed
+            angels_gift=card("Angel's Gift"),
+            anticipation=card("Anticipation"),
+            hunting_the_beast=card("Hunting the Beast"),
+            righteous_blade=card("Righteous Blade"),
+            tranquility_shield=card("Tranquility Shield")
+            %}
+            Salubri {{ salubri }}: {{ angels_gift }}, {{ anticipation }}, {{ hunting_the_beast }},
+            {{ righteous_blade }}, {{ tranquility_shield }}
+            {% endtrans %}
+        </li>
+        <li>
+            {% trans trimmed
+            fleshforge_chamber=card("Fleshforge Chamber"),
+            szlachta_assistant=card("Szlachta Assistant"),
+            szlachta_bodyguard=card("Szlachta Bodyguard"),
+            vozhd_gravesend=card("The Vozhd of Gravesend"),
+            vozhd_juiz_de_fora=card("The Vozhd of Juiz de Fora"),
+            vozhd_szczecin=card("The Vozhd of Szczecin")
+            %}
+            Tzimisce {{ tzimisce }}: {{ fleshforge_chamber }}, {{ szlachta_assistant }}, {{ szlachta_bodyguard }},
+            {{ vozhd_gravesend }}, {{ vozhd_juiz_de_fora }}, {{ vozhd_szczecin }}
+            {% endtrans %}
+        </li>
+        <li>
+            {% trans trimmed
+            black_market_cache=card("Black Market Cache"),
+            contraband=card("Contraband"),
+            dogged_pursuit=card("Dogged Pursuit"),
+            go_getter=card("Go-getter"),
+            phantasmagoria=card("Phantasmagoria")
+            %}
+            Ravnos {{ ravnos }}: {{ black_market_cache }}, {{ contraband }}, {{ dogged_pursuit }}, {{ go_getter }},
+            {{ phantasmagoria }}
+            {% endtrans %}
+        </li>
+    </ul>
+    <p>
+        {% trans trimmed
+        martyrs_resilience=card("Martyr's Resilience"),
+        monster=card("Monster"),
+        ravnos_cache=card("Ravnos Cache"),
+        ak_47=card("AK-47"),
+        kumpania=card("Kumpania"),
+        hide_the_mind=card("Hide the Mind"),
+        unlicensed_taxicab=card("Unlicensed Taxicab"),
+        crypts_sons=card("Crypt's Sons"),
+        far_mastery=card("Far Mastery"),
+        sight_beyond_sight=card("Sight Beyond Sight")
+        %}
+        Beyond the brand-new cards, these decks are a reprint goldmine. Hecata {{ hecata }} brings back
+        {{ martyrs_resilience }}, Lasombra {{ lasombra }} reprints {{ monster }},
+        and Ravnos {{ ravnos }} is a trove of old flavor with {{ ravnos_cache }},
+        {{ ak_47 }}, {{ kumpania }} and {{ hide_the_mind }}. Tzimisce {{ tzimisce }} digs up {{ unlicensed_taxicab }},
+        {{ crypts_sons }} and {{ far_mastery }}, while Salubri {{ salubri }} reprints {{ sight_beyond_sight }}.
+        {% endtrans %}
+    </p>
+</div>
+
+<div class="column-2">
     <h3>{{ _('Kickstarter') }}</h3>
     <img src="{{ url_for('static', filename='img/kickstarter.webp') }}" alt="Kickstarter">
     <p>
@@ -1011,14 +1401,14 @@
         a {{ kickstarter }}, and a few copies are still available in online shops around,
         specifically on the {{ bcp_online_shop }}.
         You might want to get your claws on those cards to replace your paper prints there.
-        Also, {{ show_of_force }}, {{ public_vilification }} and {{ inside_dirt }},
+        Also {{ show_of_force }}, {{ public_vilification }} and {{ inside_dirt }},
         from Danse Macabre, have been boosted.
         {% endtrans %}
     </p>
 </div>
 
 <div class="column-2">
-    <h3>{{ _('Promo Pack 2') }}</h3>
+    <h3>{{ _('Promo Packs 2 & 3') }}</h3>
     <img src="{{ url_for('static', filename='img/promo-pack-2.webp') }}" alt="Promo Pack 2">
     <p>
         {% trans trimmed
@@ -1030,6 +1420,23 @@
         %}
         {{ promo_pack_2 }} contains a few Barons you will not find elsewhere: {{ benedito_a_lanterna }}, {{ bituin }},
         and {{ jacques_rouge }}.
+        {% endtrans %}
+    </p>
+    <p>
+        {% trans trimmed
+        promo_pack_3=external("https://www.blackchantry.com/products/legacy/bundles/product-promo-pack-3/",
+        _("Promo Pack 3")),
+        gilbert_duane=card("Gilbert Duane (G6)", "Gilbert Duane"),
+        victoria_ash=card("Victoria Ash (G7)", "Victoria Ash"),
+        okulos=card("Okulos (G7)", "Okulos"),
+        karl_schrekt=card("Karl Schrekt (G6)", "Karl Schrekt"),
+        fiorenza_savona=card("Fiorenza Savona (G6)", "Fiorenza Savona"),
+        judgment=card("Judgment: Camarilla Segregation")
+        %}
+        {{ promo_pack_3 }} is likewise built around exclusive vampires, one per core clan:
+        {{ gilbert_duane }} {{ malkavian }}, {{ victoria_ash }} {{ toreador }},
+        {{ okulos }} {{ nosferatu }}, {{ karl_schrekt }} {{ tremere }} and {{ fiorenza_savona }}
+        {{ ventrue }}. It also bundles handy reprints like {{ judgment }}.
         {% endtrans %}
     </p>
 </div>
@@ -1046,8 +1453,8 @@
         deflection=card("Deflection"),
         delaying_tactics=card("Delaying Tactics")
         %}
-        The V5 expansions have brought new vampires in groups 6 and 7, though they didn't quite
-        disrupt the meta the way they four "V5 Anarchs" decks did. All V5 decks and bundles
+        The five V5 base decks have brought new vampires in groups 6 and 7, though they didn't quite
+        disrupt the meta the way the other V5 expansions did. All V5 base bundles
         contain new vampires so, if you're a completionist, you will want a bit of everything
         there. Moreover, the decks include a good number of staples that might be neat in your
         collection: you never have enough {{ second_tradition }}, {{ parity_shift }}, {{ govern_the_unaligned }},
@@ -1061,7 +1468,7 @@
         the_warrens=card("The Warrens"),
         roundhouse=card("Roundhouse")
         %}
-        In terms of library cards, <strong>V5 Nosferatu</strong> is the only deck introducing new cards:
+        In terms of library cards, <strong>V5 Nosferatu</strong> {{ nosferatu }} is the only deck introducing new cards:
         {{ creeping_sabotage }}, {{ protected_district }}, {{ the_warrens }} and {{ roundhouse }}.
         {% endtrans %}
     </p>
@@ -1113,45 +1520,6 @@
 </div>
 
 <div class="column-2">
-    <h3>{{ _('New Blood') }}</h3>
-    <img src="{{ url_for('static', filename='img/new-blood-decks.webp') }}" alt="New Blood">
-    <p>
-        {% trans trimmed
-        new_blood=external("https://www.blackchantry.com/products/vampire-the-eternal-struggle-fifth-edition/new-blood-introductory-decks-for-vampire-the-eternal-struggle/",
-        _("New Blood"))
-        %}
-        {{ new_blood }} decks are mainly about new vampires, very few new library cards are released here so far,
-        but with more heavily changed clans coming this will probably change in the future.
-        The vampires are a very nice addition to the ones available in the V5 starters, if you want to get those crypts.
-        {% endtrans %}
-    </p>
-    <p>
-        {% trans trimmed %}
-        The New Library cards are:
-        {% endtrans %}
-    </p>
-    <ul>
-        <li>
-            {% trans trimmed
-            childe_of_the_revolution=card("Childe of the Revolution")
-            %}
-            Brujah {{ brujah }}: {{ childe_of_the_revolution }}
-            {% endtrans %}
-        </li>
-    </ul>
-    <p>
-        {% trans trimmed
-        childe_of_the_revolution=card("Childe of the Revolution"),
-        third_tradition=card("Third Tradition: Progeny"),
-        creation_rites=card("Creation Rites")
-        %}
-        {{ childe_of_the_revolution }} as a Baron version of {{ third_tradition }} or {{ creation_rites }} is going
-        to make a potential big splash on the scene with new concepts for Anarchs being explored.
-        {% endtrans %}
-    </p>
-</div>
-
-<div class="column-2">
     <h3>{{ _('Lost Kindred') }}</h3>
     <img src="{{ url_for('static', filename='img/lost-kindred.webp') }}" alt="Lost Kindred">
     <p>
@@ -1164,7 +1532,7 @@
         and give them a chance in competitive play, and ended up giving them a couple of top tier
         tournament decks so strong the meta had to adapt and include more solutions against
         the typical swarm of allies these decks can field. So much so that the card was errated in February 2024,
-        making Emerald decks much less of a thing, and acquiring this bundle less appealing.
+        making Emerald decks less of a thing, and acquiring this bundle less appealing.
         {% endtrans %}
     </p>
     <p>
@@ -1187,6 +1555,17 @@
         {% endtrans %}
     </p>
     <ul>
+        <li>{% trans trimmed %}
+            The Sabbat is back in V5: its vampires now follow one of four Paths (a Path of Enlightenment printed on
+            the crypt card), and two new keywords, Stun and Queue a combat, were introduced along with them.
+            {% endtrans %}</li>
+        <li>
+            {% trans trimmed
+            derange=card("Derange")
+            %}
+            {{ derange }} now explicitly changes the clan and sect of its target.
+            {% endtrans %}
+        </li>
         <li>
             {% trans trimmed
             psyche=card("Psyche!")
@@ -1276,14 +1655,16 @@
             vivienne_geroux=card("Vivienne Géroux"),
             quickness=card("Quickness"),
             herald_of_topheth=card("Herald of Topheth"),
-            oxford_university_england=card("Oxford University, England")
+            oxford_university_england=card("Oxford University, England"),
+            private_audience=card("Private Audience"),
+            cardinal_benediction=card("Cardinal Benediction")
             %}
             {{ black_metamorphosis }}, {{ summon_the_abyss }}, {{ summon_the_serpent }}, {{ shadow_parasite }},
             {{ revelation_of_despair }}, {{ the_realm_of_the_black_sun }}, {{ principia_discordia }}, {{ masquer }},
             {{ kali_s_fang }}, {{ giuseppe }}, {{ edge_vitiation }}, {{ divine_image }},
             {{ consignment_to_duat }}, {{ inside_dirt }}, {{ public_vilification }}, {{ show_of_force }},
-            {{ vivienne_geroux }}, {{ quickness }}, {{ herald_of_topheth }} and {{ oxford_university_england }} have
-            been boosted.
+            {{ vivienne_geroux }}, {{ quickness }}, {{ herald_of_topheth }}, {{ oxford_university_england }},
+            {{ private_audience }} and {{ cardinal_benediction }} have been boosted.
             {% endtrans %}</li>
     </ul>
 </div>
@@ -1316,6 +1697,8 @@
         <li>Pander {{ pander }}</li>
         <li>Salubri {{ salubri }}</li>
         <li>Tremere Antitribu {{ tremere_antitribu }}</li>
+        <li>Malkavian Antitribu {{ malkavian_antitribu }}</li>
+        <li>True Brujah {{ true_brujah }}</li>
     </ul>
     <p>
         {% trans trimmed %}and disciplines:
@@ -1330,6 +1713,8 @@
         <li>Chimerstry {{ chi }}</li>
         <li>Vicissitude {{ vic }}</li>
         <li>Obeah {{ obe }}</li>
+        <li>Temporis {{ tem }}</li>
+        <li>Dementation {{ dem }}</li>
     </ul>
     <p>
         {% trans trimmed
@@ -1568,7 +1953,8 @@
 
     <h3>{{ _('Asia') }}</h3>
     <ul>
-        <li><a href="https://hammerhouse.com.sg/collections/vampire-the-eternal-struggle" target="_blank" rel="noopener">
+        <li><a href="https://hammerhouse.com.sg/collections/vampire-the-eternal-struggle" target="_blank"
+                rel="noopener">
                 HammerHouse
             </a></li>
     </ul>
@@ -1597,26 +1983,31 @@
 
     <h3>{{ _('AU/NZ') }}</h3>
     <ul>
-        <li><a href="https://www.ebay.com/str/australiasonlinevtescardstore/Vampire-The-Eternal-Struggle/_i.html?store_cat=20034354" target="_blank" rel="noopener">Australia's Online VTES Card Store</a></li>
+        <li><a href="https://www.ebay.com/str/australiasonlinevtescardstore/Vampire-The-Eternal-Struggle/_i.html?store_cat=20034354"
+                target="_blank" rel="noopener">Australia's Online VTES Card Store</a></li>
     </ul>
 
     <h3>{{ _('US') }}</h3>
     <ul>
-        <li><a href="https://www.ebay.com/str/ricksjyhadandvtescardshop" target="_blank" rel="noopener">Rick's Stock</a></li>
+        <li><a href="https://www.ebay.com/str/ricksjyhadandvtescardshop" target="_blank" rel="noopener">Rick's Stock</a>
+        </li>
         <li><a href="https://www.ebay.com/usr/jinkies2010" target="_blank" rel="noopener">jinkies2010</a>
         </li>
     </ul>
     <h3>{{ _('EU') }}</h3>
     <ul>
-        <li><a href="https://www.ebay.com/str/midnightsunvtesstore" target="_blank" rel="noopener">Midnight Sun V:TES Store</a></li>
-        <li><a href="https://shop.cardgamegeek.com/shop/product-category/vtes" target="_blank" rel="noopener">Cardgame Geek</a></li>
+        <li><a href="https://www.ebay.com/str/midnightsunvtesstore" target="_blank" rel="noopener">Midnight Sun V:TES
+                Store</a></li>
+        <li><a href="https://shop.cardgamegeek.com/shop/product-category/vtes" target="_blank" rel="noopener">Cardgame
+                Geek</a></li>
         <li><a href="https://www.ebay.com/usr/xgersix" target="_blank" rel="noopener">xgersix</a></li>
         <li><a href="https://www.ebay.com/usr/iambadgerfun" target="_blank" rel="noopener">iambadgerfun</a></li>
         <li>
-            <a href="https://www.ebay.com/str/retrogradearcade/VTES-Jyhad/_i.html?store_cat=39778115012"
-                target="_blank" rel="noopener">Retrograde Arcade</a>
+            <a href="https://www.ebay.com/str/retrogradearcade/VTES-Jyhad/_i.html?store_cat=39778115012" target="_blank"
+                rel="noopener">Retrograde Arcade</a>
         </li>
-        <li><a href="https://www.ebay.com/str/ccgandboardgamesocial" target="_blank" rel="noopener">CCG and Boardgame Social</a></li>
+        <li><a href="https://www.ebay.com/str/ccgandboardgamesocial" target="_blank" rel="noopener">CCG and Boardgame
+                Social</a></li>
     </ul>
 </div>
 {% endblock %}

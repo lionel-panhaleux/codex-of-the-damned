@@ -28,6 +28,12 @@ precise with game terms, natural in each language, never machine-translationese.
 5. **Meaning over word count.** Never drop a sentence, a qualifier ("usually", "combat-heavy") or a
    parenthetical. Never add content the source doesn't have. If the source is ambiguous or contains
    an error, flag it — don't silently interpret.
+6. **Never run destructive git.** You edit only the catalog files (and templates when explicitly
+   asked). NEVER run `git checkout`, `git restore`, `git reset`, `git stash`, `git clean`, or
+   `git commit` — they silently wipe uncommitted work. A large `git diff` against HEAD is **expected**
+   here: the working tree normally holds unstaged translation work in progress, so a big diff is not a
+   problem to "clean up". `git status` / `git diff` are fine for read-only inspection. If the tree, a
+   diff, or a `.po` ever looks wrong, **STOP and report it — never try to fix it with git.**
 
 # The site's i18n machinery (read before editing anything)
 

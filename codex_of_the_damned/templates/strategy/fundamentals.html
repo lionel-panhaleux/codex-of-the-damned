@@ -34,16 +34,23 @@ conditioning=card("Conditioning")
     </p>
     {% endtrans %}
 </div>
-<h3 id="bounce">{{ _('Bounce') }}</h3>
+<h3 id="bounce">{{ _('Reduce & Bounce') }}</h3>
 <p>
-    {% trans trimmed %}
+    {% trans trimmed
+    visions_of_zapathasura=card("Visions of Zapathasura"),
+    sentry_signal=card("Sentry Signal"),
+    protected_district=card("Protected District")
+    %}
     On the defence side, <strong>bounces</strong> (reactions that change the target of a bleed)
-    should be played only <strong>after the bleed amount has been confirmed</strong>
+    and <strong>reductions</strong> should be played only <strong>after the bleed amount has been confirmed</strong>
     by the predator, after block has been declined.
     This way the modifier, if any, is likely to be redirected too.
     This is because once the predator confirms the bleed amount, he actually passes on his opportunity
     to play a modifier and do not get another opportunity if the prey does not play a reaction.
-    Only a few cards allow to <em>bounce</em> bleeds:
+    Quite a few cards can reduce bleeds by 1 or 2, only a couple can reduce more;
+    {{ obf }}{{ pre }} {{ visions_of_zapathasura }}, {{ caine }} {{ sentry_signal }},
+    and Primogens {{ protected_district }}. But of course if possible, it's often better to send the bleed somewhere
+    else, and only 8 cards allow to <em>bounce</em> bleeds:
     {% endtrans %}
 </p>
 <ul>
@@ -133,8 +140,8 @@ kine_resources_contested=card("Kine Resources Contested")
     In order to pass their referendum successfully, Methuselah will try to achieve a <strong>vote lock</strong>,
     meaning they have more votes on the table than the sum of all other players votes.
     Multiple techniques can be used to this effect:
-    </p>
-    {% endtrans %}
+</p>
+{% endtrans %}
 <ul>
     <li>
         {% trans trimmed
@@ -163,9 +170,9 @@ kine_resources_contested=card("Kine Resources Contested")
         {% endtrans %}
     </li>
     <li>
-        {{ _('Getting multiple big capacity vampires with a lot of votes out, like Inner Circles and Justicars. This is
-        usually achieved using') }}
-        {{ card("Zillah's Valley") }} {{ _('and') }}
+        {{ _('Getting multiple big capacity vampires with a lot of votes out, like Inner Circles, Cardinals,
+        and/or Justicars. This is usually achieved using') }}
+        {{ card("Zillah's Valley") }} or {{ card("Unholy Sacrament") }} {{ _('plus') }}
         {{ card("Information Highway") }}, {{ _('together with') }}
         {{ card("Villein") }} {{ _('or') }}
         {{ card("Minion Tap") }}.
@@ -212,7 +219,15 @@ kine_resources_contested=card("Kine Resources Contested")
             {{ card("Camarilla's Iron Fist") }}
             ({{ _('Titled Camarilla') }})
         </li>
+        <li>
+            {{ card("Cold War") }}
+            ({{ _('Titled Sabbat') }})
+        </li>
         <li>{{ card("Neonate Breach") }}</li>
+        <li>
+            {{ card("Empires Fall") }}
+            ({{ _('Sabbat') }})
+        </li>
         <li>{{ card("Domain Challenge") }}</li>
         <li>
             {{ card("Ancilla Empowerment") }} {{ _('and') }}
@@ -234,6 +249,14 @@ kine_resources_contested=card("Kine Resources Contested")
         <li>
             {{ card("Revolutionary Council") }}
             ({{ _('Baron') }})
+        </li>
+        <li>
+            {{ card("Eat the Rich") }}
+            ({{ _('Anarch') }})
+        </li>
+        <li>
+            {{ card("War of Ages") }}
+            ({{ _('Titled Sabbat') }})
         </li>
     </ul>
 </div>
@@ -268,14 +291,8 @@ wake_with_evenings_freshness=card("Wake with Evening's Freshness")
         <li>{{ card("Forced Awakening") }}</li>
         <li>{{ card("Fillip") }}</li>
         <li>{{ card("Eluding the Arms of Morpheus") }}</li>
-        <li>
-            {{ card("Second Tradition: Domain") }}
-            ({{ _('Prince or Justicar') }})
-        </li>
-        <li>
-            {{ card("Organised Resistance") }}
-            ({{ _('Baron') }})
-        </li>
+        <li>{{ card("Second Tradition: Domain") }} ({{ _('Prince or Justicar') }})</li>
+        <li>{{ card("Organized Resistance") }} ({{ _('Baron') }})</li>
         <li>{{ card("Eternal Vigilance") }} ({{ _('titled Sabbat') }})</li>
         <li>{{ card("Under Siege") }} ({{ _('titled Sabbat') }})</li>
         <li>{{ card("Rat's Warning") }} {{ ani }}</li>
@@ -286,14 +303,13 @@ wake_with_evenings_freshness=card("Wake with Evening's Freshness")
         <li>{{ card("Predator's Communion") }} {{ ABO }}</li>
         <li>{{ card("Read the Winds") }} {{ AUS }}{{ ANI }}</li>
         <li>{{ card("Speak With Spirits") }} {{ SPI }}</li>
-        <li>
-            {{ card("Sense the Savage Way") }}
-            ({{ _('Big capacity') }} {{ ANI }})
-        </li>
+        <li>{{ card("Sense the Savage Way") }} ({{ _('Big capacity') }} {{ ANI }})</li>
         <li>{{ card("Eyes of the Wild") }} {{ gangrel }}</li>
         <li>{{ card("Their Master's Voice") }} ({{ tremere }}/{{tremere_antitribu}} {{ gargoyle }})</li>
         <li>{{ card("One with the Land") }} ({{ PRO }} {{ tzimisce }})</li>
         <li>{{ card("Deep Ecology") }} ({{ pro }} Anarch)</li>
+        <li>{{ card("Dogged Pursuit") }} ({{ ani }} {{ ravnos }})</li>
+        <li>{{ card("Sentry Signal") }} ({{ ani }}/{{ tha }} {{ caine }})</li>
         <li>{{ card("The Mole") }} ({{ ani }} {{ _('Anarch') }})</li>
         <li>{{ card("Netwar") }} ({{ chi }} {{ _('Anarch') }})</li>
         <li>{{ card("Angel of Berlin") }} ({{ _('Imbued') }})</li>
@@ -339,23 +355,20 @@ freak_drive=card("Freak Drive")
     <ul>
         <li>{{ card("Freak Drive") }} {{ FOR }}</li>
         <li>{{ card("Forced March") }} {{ cel }}{{ for }}</li>
-        <li>
-            {{ card("Instantaneous Transformation") }}
-            ({{ CEL }}{{ PRO }})
-        </li>
-        <li>
-            {{ card("Truth of a Thousand Lies") }}
-            ({{ SER }})
-        </li>
+        <li>{{ card("Instantaneous Transformation") }} ({{ CEL }}{{ PRO }})</li>
+        <li>{{ card("Truth of a Thousand Lies") }} ({{ SER }})</li>
         <li>{{ card("Zephyr") }} {{ CEL }}</li>
         <li>{{ card("Domain of Evernight") }} {{ TEM }}</li>
         <li>{{ card("As The Crow") }} {{ FLIGHT }}</li>
-        <li>
-            {{ card("CrimethInc.") }}
-            ({{ pro }} or {{ qui }} {{ _('Anarch') }})
-        </li>
+        <li>{{ card("CrimethInc.") }} ({{ pro }} or {{ qui }} {{ _('Anarch') }})</li>
+        <li>{{ card("Shroud Mastery") }} ({{ NEC }})</li>
+        <li>{{ card("Hag's Wrinkles") }} ({{ thn }})</li>
+        <li>{{ card("Paths in Two Worlds") }} ({{ OBL }})</li>
+        <li>{{ card("Gift of Bellona") }} ({{ val }})</li>
+        <li>{{ card("The Guruhi Are the Land") }} ({{ guruhi }})</li>
         <li>{{ card("Seraph's Second") }} (Black Hand)</li>
         <li>{{ card("Tattoo Signal") }} (Seraph)</li>
+        <li>{{ card("Forward Momentum") }} ({{ cathari }})</li>
     </ul>
 </div>
 <h2 id="action-sequence">{{ _('Action sequence') }}</h2>
@@ -420,26 +433,12 @@ harzomatuili=card("Harzomatuili")
         <li>{{ card("The Rumor Mill, Tabloid Newspaper") }}</li>
         <li> {{ card("Club Zombie") }}</li>
         <li>{{ card("Aranthebes, the Immortal") }}</li>
-        <li>
-            {{ card("The Anarch Free Press") }}
-            ({{ _('Anarch') }})
-        </li>
-        <li>
-            {{ card("Market Square") }} {{ banu_haqim }}
-        </li>
-        <li>
-            {{ card("Information Network") }} {{ nosferatu_antitribu }}
-        </li>
-        <li>
-            {{ card("Ponticulus") }} {{ tremere }}
-        </li>
-        <li>
-            {{ card("Saatet-ta") }} {{ ministry }}
-        </li>
-        <li>
-            {{ card("The Unmasking") }}
-            ({{ _('Allies') }})
-        </li>
+        <li>{{ card("The Anarch Free Press") }} ({{ _('Anarch') }})</li>
+        <li>{{ card("Market Square") }} {{ banu_haqim }}</li>
+        <li>{{ card("Information Network") }} {{ nosferatu_antitribu }}</li>
+        <li>{{ card("Ponticulus") }} {{ tremere }}</li>
+        <li>{{ card("Saatet-ta") }} {{ ministry }}</li>
+        <li>{{ card("The Unmasking") }} ({{ _('Allies') }})</li>
     </ul>
     </p>
     <p>
@@ -450,59 +449,21 @@ harzomatuili=card("Harzomatuili")
         <li>{{ card("Sport Bike") }}</li>
         <li>{{ card("Phased Motion Detector") }}</li>
         <li>{{ card("Guardian Angel") }}</li>
-        <li>
-            {{ card("Bowl of Convergence") }}
-            {{ aus }}
-        </li>
-        <li>
-            {{ card("Raven Spy") }} {{ _('and') }}
-            {{ card("Raptor") }}
-            {{ ani }}
-        </li>
-        <li>
-            {{ card("Feral Hound") }} {{ ravnos }} {{ ani }}
-        </li>
-        <li>
-            {{ card("Abbot") }}
-            ({{ _('Sabbat') }})
-        </li>
-        <li>
-            {{ card("Atonement") }}
-            ({{ _('Small capacity vampires') }})
-        </li>
-        <li>
-            {{ card("Razor Bat") }} {{ gargoyle }}
-        </li>
-        <li>
-            {{ card("Defender of the Haven") }} {{ gargoyle }}
-        </li>
-        <li>
-            {{ card("No Secrets From the Magaji") }}
-            (Magaji)
-        </li>
-        <li>
-            {{ card("Corpse Balloon") }}
-            {{ vic }}
-        </li>
-        <li>
-            {{ card("Revenant") }} {{ tzimisce }}
-        </li>
-        <li>
-            {{ card("Sight Beyond Sight") }} {{ salubri }}
-        </li>
-        <li>
-            {{ card("Shaman") }}
-            ({{ _('Laibon') }})
-        </li>
-        <li>
-            {{ card("Kumpania") }} {{ ravnos }}
-        </li>
-        <li>
-            {{ card("Ephor") }} {{ ventrue }}
-        </li>
-        <li>
-            {{ card("The Ancestor's Talisman") }} {{ banu_haqim }}
-        </li>
+        <li>{{ card("Bowl of Convergence") }} {{ aus }}</li>
+        <li>{{ card("Raven Spy") }} {{ _('and') }} {{ card("Raptor") }} {{ ani }}</li>
+        <li>{{ card("Feral Hound") }} {{ ravnos }} {{ ani }}</li>
+        <li>{{ card("Abbot") }} ({{ _('Sabbat') }})</li>
+        <li>{{ card("Atonement") }} ({{ _('Small capacity vampires') }})</li>
+        <li>{{ card("Razor Bat") }} {{ gargoyle }}</li>
+        <li>{{ card("Defender of the Haven") }} {{ gargoyle }}</li>
+        <li>{{ card("No Secrets From the Magaji") }} (Magaji)</li>
+        <li>{{ card("Corpse Balloon") }} {{ vic }}</li>
+        <li>{{ card("Revenant") }} {{ tzimisce }}</li>
+        <li>{{ card("Sight Beyond Sight") }} {{ salubri }}</li>
+        <li>{{ card("Shaman") }} ({{ _('Laibon') }})</li>
+        <li>{{ card("Kumpania") }} {{ ravnos }}</li>
+        <li>{{ card("Ephor") }} {{ ventrue }}</li>
+        <li>{{ card("The Ancestor's Talisman") }} {{ banu_haqim }}</li>
     </ul>
 </div>
 <p>
@@ -513,7 +474,11 @@ harzomatuili=card("Harzomatuili")
     seduction=card("Seduction"),
     forced_confessional=card("Forced Confessional"),
     daring_the_dawn=card("Daring the Dawn"),
-    stygian_shroud=card("Stygian Shroud")
+    stygian_shroud=card("Stygian Shroud"),
+    hedonism=card("Hedonism"),
+    relentlessness=card("Relentlessness"),
+    seeds_of_terror=card("Seeds of Terror"),
+    dominant_personality=card("Dominant Personality")
     %}
     On the other hand, whatever level of intercept one manages to achieve, stealth specialised decks
     often include some <strong>block denial</strong> modifiers atop normal stealth.
@@ -521,9 +486,12 @@ harzomatuili=card("Harzomatuili")
     {{ NEC }} {{ call_of_the_hungry_dead }},
     {{ OBT }} {{ blanket_of_night }},
     {{ OBL }} {{ stygian_shroud }},
+    {{ cathari }} {{ for }}/{{ pre }} {{ hedonism }},
+    {{ power }} {{ CEL }}/{{ FOR }} {{ relentlessness }},
     and {{ salubri }}{{ DOM }} {{ forced_confessional }}
-    are the only full-purpose block denials of the game. However, {{ DOM }} gives access to
-    {{ seduction }} which is still a strong denial,
+    are the main full-purpose block denials of the game. However, there are also some preemptive denials like
+    {{ DOM }} {{ seduction }}, {{ cathari }} {{ obf }}/{{ pre }} {{ seeds_of_terror }},
+    {{ power }} {{ pot }}/{{ pre }} {{ dominant_personality }},
     even if it is less efficient against wakes. Many disciplines give access to lesser block denials
     that only work against allies and younger vampires, but they are less used.
     {{ for }} deserves a mention too with {{ daring_the_dawn }},

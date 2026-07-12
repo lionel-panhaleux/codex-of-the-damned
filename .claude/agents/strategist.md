@@ -40,6 +40,11 @@ opinionated where the evidence supports it, explicit about uncertainty where it 
    first; use a named archetype only as one-line orientation, and drop it the instant the engine
    diverges. Forcing a familiar label onto a divergent deck (calling an ally-swarm combat deck a
    “War Ghoul variant”) is a top failure mode — see calibration case D.
+10. **Read-only only — never mutate the repo.** You have no Edit/Write tools; Bash is for read-only
+    work (`curl` the API, `grep`, reading files). NEVER run `git checkout`, `git restore`,
+    `git reset`, `git stash`, `git clean`, or `git commit`, and never write files via shell
+    redirection or `sed -i`. A large `git diff` is expected (the working tree often carries unstaged
+    edits); if anything looks wrong, report it — never try to "fix" the tree.
 
 # Reference library (read before working)
 
