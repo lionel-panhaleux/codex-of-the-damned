@@ -4,20 +4,22 @@
 <article>
     <h1>{{ _('Online Play') }}</h1>
     {% trans trimmed
-    amaranth=external("https://amaranth.vtes.co.nz", "Amaranth"),
-    vtes_db=external("https://vdb.im/about", "VDB")
+    vtes_db=external("https://vdb.im/about", "VDB"),
+    vtes_decks=external("https://vtesdecks.com", "VTES Decks"),
+    amaranth=external("https://amaranth.vtes.co.nz", "Amaranth")
     %}
     <p>
         This category presents tools for online play. Each section presents a different tool,
         the ways to reach its community and the basic Étiquette when using it.
     </p>
     <p>
-        Regardless of the tool, {{ amaranth }} and {{ vtes_db }}
+        Regardless of the tool, {{ vtes_db }}, {{ vtes_decks }}, and {{ amaranth }}
         can be used for deck building.
     </p>
     {% endtrans %}
     <ul>
         <li>{{ link("/online-play/lackeyccg") }}</li>
+        <li>{{ link("/online-play/succubus-club") }}</li>
         <li>{{ link("/online-play/tabletop-simulator") }}</li>
         <li>{{ link("/online-play/vtes-online") }}</li>
     </ul>

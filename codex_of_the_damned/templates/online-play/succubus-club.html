@@ -1,0 +1,59 @@
+{% extends "layout.html" %}
+
+{% block article %}
+<article>
+    <h1>Succubus Club</h1>
+    <p>
+        {% trans trimmed
+        succubus_club=external("https://succubus-club.net", "Succubus Club")
+        %}
+        {{ succubus_club }} is a new online play platform actively developed by a member of the VTES community.
+        There are no accounts nor tracking. All data stays in the browser's local storage.
+        Multiplayer supports two communication modes:
+        {% endtrans %}
+    </p>
+    <ul>
+        {% trans trimmed %}
+        <li><strong>Direct mode:</strong> Players connect directly to each other, so there is no authoritative server
+            watching over the game. Faster, but cheating is possible, and players are expected to rely on trust and good
+            sportsmanship.</li>
+        <li><strong>Succubus Club Server (SCS):</strong> Slower, but an authoritative server handles the game state and
+            prevents players from taking a look at hidden cards they are not supposed to see.</li>
+        {% endtrans %}
+    </ul>
+    <img src="{{ url_for('static', filename='img/succubus-load-deck.webp') }}" alt="Succubus Club Deck load" />
+    <p>
+        {% trans trimmed %}
+        This web application has been developed as a modern replacement for LackeyCCG. Keyboard shortcuts can be
+        configured in the preferences, and decks can be loaded from any of the large deckbuilding websites.
+        {% endtrans %}
+    </p>
+    <p>
+        {% trans trimmed %}
+        There's a log describing all actions and a card zoom area like in LackeyCCG. The interface uses keyboard
+        shortcuts, left-click default actions and radial menus, as well as right-click context menus, to interact with
+        the cards.
+        {% endtrans %}
+    </p>
+    <p>
+        {% trans trimmed %}
+        Compared to LackeyCCG, some practical new features have been added:
+        {% endtrans %}
+    </p>
+    <ul>
+        {% trans trimmed %}
+        <li>An influence shortcut on uncontrolled cards, to add blood and remove pool in a single move.</li>
+        <li>Guided action resolution with impulse materialization and stealth/intercept counters.</li>
+        <li>The ability to declare targets that show in the log.</li>
+        <li>Automatic card attachment, to stack cards on one another.</li>
+        {% endtrans %}
+    </ul>
+    <img src="{{ url_for('static', filename='img/succubus-board.webp') }}" alt="Succubus Club board" />
+    <p>
+        {% trans trimmed %}
+        Double click on a card to lock or unlock it, click on the decks (library or crypt) to draw, click on the Edge
+        icon to take or release it, and use drag &amp; drop to move cards around.
+        {% endtrans %}
+    </p>
+</article>
+{% endblock %}
