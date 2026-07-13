@@ -211,7 +211,6 @@ class CardSearch {
                     )
                     rulings_map[`[${non_breaking_ref}]`] = reference.url
                 }
-                console.log(ruling_text)
                 ruling_item.innerHTML = formatText(ruling_text)
                 addCardEvents(ruling_item)
                 let copy_button = document.createElement("span")

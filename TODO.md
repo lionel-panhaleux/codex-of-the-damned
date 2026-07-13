@@ -197,64 +197,74 @@ dependency.
 
 ### Staleness found in the 2026-07-04 review
 
-- [ ] Archetypes: newest example decklist is 2025-03-10; "New Kids" newest is
-  Piper War Ghoul **'24**. Tier assignments need fresh TWDA stats for the 2026 meta.
-  Index criteria ("proven twice in the last 3 years", ⭐ = 50%+ more wins) are
-  date-window claims that drift — recompute.
-- [ ] Best Cards: "900+ decks from 2020 onward" (`best-cards/index.html:12`) computed
-  ~2025-03 — same refresh.
-- [ ] What Should I Buy: the "upcoming V5 format" insert
-  (`what-should-i-buy.html:260-289`) says "announced, no precise list yet" — almost
-  certainly superseded; verify on vekn.net and rewrite. Product list stops at
-  30th Anniversary (2024) — check 2025-26 Black Chantry releases.
-- [ ] Online Play: re-verify the two LackeyCCG Discord invites (`discord.gg/fJjac75`,
-  `discord.gg/QJtDzp5`) and the "foremost platform, up-to-date cardwise" claim.
-- [ ] Anthelios ban year stated as 2016 in `archetypes/_layout-erratum.html:95` +
-  `archive/dmitris-big-band.html:61` but 2017 in `what-should-i-buy.html:1222`
-  (announced vs effective, probably) — pick one.
-- [ ] Typo sweep: "Methusalah" (16×, correct "Methuselah" only 10×), particularily,
-  loosing, successfuly, independant(ly), recommanded, unneccessary, "infamour"
-  ("Maris streck" fixed with the P0 pass). NB: body-text fixes change msgids — mirror
-  each fix into the FR catalog (msgid + msgstr) to avoid orphaning translations.
-- [ ] Garbled prose: `fundamentals.html:32-33` (mangled sentence about non-limited
-  bleed modifiers — the rule itself is stated correctly elsewhere),
-  `piper-war-ghoul-24.html:76-77` ends mid-thought ("there is no need to fret").
-- [ ] Copy-pasted captions (spotted during the P0 pass): `best-cards/clans/
-  harbingers-of-skulls.html` "Acheron Vortex" & "Vengeful Spirit" share a caption
-  written for a vampire ("made him the typical Emerald Legion leader"), and
-  `salubri-antitribu.html` "The Path of Retribution" & "Armor of Caine's Fury" share
-  the same caption — one of each pair needs real text.
-- [ ] i18n chrome gaps (content pages are fine): `index.html:82-89` ("Deck builder:",
-  "Cards finder:", "Telegram Bot:", "Forum VEKN France" unwrapped),
-  `deck-search.html:23,29` + `card-search.html:22` (placeholder/value attributes).
+*Content-refresh pass done 2026-07-13. The archetype tier pages, Best Cards deck counts,
+and the What Should I Buy V5 coverage were refreshed in the earlier "Cover the V5
+releases" work; the remaining items below were closed in this pass. The automated tier
+recompute (⭐/"proven twice") still feeds from the TWDA-analysis clustering item above.
+All body-text edits were mirrored into the fr/es/pt catalogs (0 fuzzy after
+reconciliation).*
+
+- [x] Archetypes: tier pages refreshed for the 2026 meta (New Kids etc.). Ongoing
+  ⭐/"proven twice" automation is tracked under the TWDA-analysis item above.
+- [x] Best Cards: `best-cards/index.html:12` now reads "1,300+ decks from the last five
+  years" (was "900+").
+- [x] What Should I Buy: V5 releases covered; the stale "announced, no precise list yet"
+  insert is gone and the product list runs through the 2025-26 releases.
+- [x] Online Play: Discord invites `discord.gg/fJjac75` and `discord.gg/QJtDzp5`
+  re-verified live (2026-07-13, both return valid invites). The "foremost platform"
+  LackeyCCG claim is left as an editorial call for the owner (Succubus Club now exists
+  as a modern alternative).
+- [x] Anthelios ban year standardized to **2016** (KRCG/VEKN B&R list, 2016-02-16):
+  fixed the outlier "2017" in `what-should-i-buy.html`. Also corrected Lilith's Blessing
+  to **2013** in the erratum macro (it wrongly said 2016; the year was already right in
+  what-should-i-buy).
+- [x] Typo sweep: residual EN typos fixed (recommanded, plateform, unneccessary,
+  independantly, 2× loosing, "provided"→"provide"); the Methusalah/particularily/etc.
+  set was already cleared in the "Fix more English source typos" commit. Fixes mirrored
+  into all three catalogs.
+- [x] Garbled prose: `fundamentals.html` non-limited-modifier sentence fixed in the V5
+  pass; `piper-war-ghoul-24.html` mid-thought sentence completed ("…no need to fret over
+  converting them first, so Piper is online from the opening turn") + "arguable"→"arguably".
+- [x] Copy-pasted captions: already resolved in the Best Cards refresh —
+  `harbingers-of-skulls.html` "Acheron Vortex" & "Vengeful Spirit" now have distinct
+  captions, and `salubri-antitribu.html` was reworked (no shared-caption pair remains).
+- [x] i18n chrome gaps: wrapped "Deck builder", "Cards finder", "Telegram Bot"
+  (`index.html`) and the search `Card Name` placeholder + `Clear` button value
+  (`card-search.html`, `deck-search.html`), all translated in fr/es/pt. ("Forum VEKN
+  France" is inside a `{% if lang == "fr" %}` block, so correctly not translated.)
+- [ ] **Untranslated backlog from the V5/Best-Cards content refresh** (found 2026-07-13):
+  the big "Cover the V5 releases" content pass added many strings that ship untranslated
+  (empty `msgstr`, so they fall back to English) — ~76 in fr, ~75 in es, ~110 in pt.
+  Mostly clan names, "V5: …" set names, card names, and new archetype names. Not a
+  regression (tests pass; English fallback renders), but a translation debt to clear.
 
 ## P3 — Performance (KISS-compatible)
 
-- [ ] Font `src` ordering: browsers pick the first supported format, which is
-  `truetype` — the woff2 files are never used (`static/css/base.css:32-34,40-42`).
-  Put `woff2` first (~halves font bytes: fa-solid TTF is 192 KB vs 76 KB woff2);
-  drop the dead `.eot`/`.svg` entries.
-- [ ] Compress the big PNG/JPG screenshots to WebP (rest of the site already is):
-  `lackeyccg-interface.png` 2.0 MB, `tts-rotation.jpg` + `tts-table.jpg` 1.7 MB each,
-  `lackeyccg-deck-browse.png` 1.4 MB, `tommi_hakomaa.png` 1.0 MB, more in `static/img/`.
-- [ ] No `<img>` on the site carries `width`/`height` — add them (at least on the
-  large screenshots) to avoid layout shift.
-- [ ] `base.css:944` `.autocomplete-items { overflow: scroll }` → `auto` (cosmetic).
+*All P3 items done 2026-07-13.*
+
+- [x] Font `src` ordering: `woff2` now first, then `woff`/`truetype`; dropped the dead
+  `.eot`/`.svg` entries (`base.css`).
+- [x] Compress the big PNG/JPG screenshots to WebP: converted 18 images (all LackeyCCG /
+  TTS / JOL screenshots, the 5 player portraits, and `background.jpg`), downscaled to
+  max 1600px wide where larger. **15.9 MB → 2.66 MB (−13.2 MB).** Originals removed.
+- [x] Added `width`/`height` to every converted screenshot/portrait `<img>` to avoid
+  layout shift.
+- [x] `base.css` `.autocomplete-items { overflow: scroll }` → `auto`.
 
 ## P4 — Small JS bugs
 
-- [ ] `static/js/complete.js:22-24` — catch block uses `this.message` but the field is
-  `this.message_output`; autocomplete fetch failures are silently swallowed.
-- [ ] `static/js/statistics.js:20-27` — `howManyNeeded` returns `undefined` when no
-  copy count reaches the target probability; deck-building calculator prints
-  "undefined copies". Return the stack size (or a message) as a floor.
-- [ ] `static/js/card-search.js:213` — leftover `console.log(ruling_text)`.
-- [ ] `static/js/complete.js:77-80` — `Completion.reset()` is dead and would throw
-  (`div.reset()` doesn't exist); delete.
-- [ ] `static/js/complete.js:115` — `encodeUrlParam` only replaces the first `/`
-  (string arg to `replace`); use a global regex.
-- [ ] `display.js:26` has an `es` branch that is unreachable while `config.py:8` only
-  lists en/fr — keep in mind for the ES translation work (don't delete).
+*All P4 items done 2026-07-13.*
+
+- [x] `static/js/complete.js` — catch block now uses `this.message_output` (was
+  `this.message`); autocomplete fetch failures surface again.
+- [x] `static/js/statistics.js` — `howManyNeeded` now returns the stack size as a floor
+  instead of `undefined` when no copy count reaches the target probability.
+- [x] `static/js/card-search.js` — removed leftover `console.log(ruling_text)`.
+- [x] `static/js/complete.js` — deleted the dead `Completion.reset()` (would have thrown).
+- [x] `static/js/complete.js` — `encodeUrlParam` now uses global regexes, replacing all
+  `/` and `\` (was only the first occurrence).
+- [x] `display.js` `es` branch: resolved by the ES/PT landing — `getLangText()` now has
+  `fr`/`es`/`pt` branches and all three are live in `config.py`.
 
 ## Backlog — to discuss before acting
 

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2026-07-13 08:13+0200\n"
+"POT-Creation-Date: 2026-07-13 09:26+0200\n"
 "PO-Revision-Date: 2025-03-18 18:52+0100\n"
 "Last-Translator: \n"
 "Language: fr\n"
@@ -559,6 +559,10 @@ msgstr ""
 "Les textes officiels des cartes sont fournis par %(vekn)s. Tous les arbitrages présentent un lien vers l'arbitrage "
 "officiel correspondant effectué par les Rules Directors successifs."
 
+#: codex_of_the_damned/templates/card-search.html:22 codex_of_the_damned/templates/deck-search.html:23
+msgid "Card Name"
+msgstr "Nom de la carte"
+
 #: codex_of_the_damned/templates/card-search.html:40
 msgid "Rulings"
 msgstr "Arbitrages"
@@ -592,6 +596,10 @@ msgstr ""
 #: codex_of_the_damned/templates/deck-search.html:26
 msgid "At least 25 competitors"
 msgstr "Au moins 25 participants"
+
+#: codex_of_the_damned/templates/deck-search.html:29
+msgid "Clear"
+msgstr "Effacer"
 
 #: codex_of_the_damned/templates/archetypes/_layout.html:13 codex_of_the_damned/templates/deck-search.html:42
 msgid "VDB"
@@ -685,76 +693,89 @@ msgstr "Ressources"
 msgid "Online tools"
 msgstr "Outils en ligne"
 
+#: codex_of_the_damned/templates/index.html:83 codex_of_the_damned/templates/index.html:84
+#: codex_of_the_damned/templates/index.html:85
+msgid "Deck builder"
+msgstr "Constructeur de deck"
+
 #: codex_of_the_damned/templates/index.html:86
 msgid "Tournament organiser"
 msgstr "Gestionnaire de tournois"
 
-#: codex_of_the_damned/templates/index.html:95
+#: codex_of_the_damned/templates/index.html:88
+msgid "Cards finder"
+msgstr "Recherche de cartes"
+
+#: codex_of_the_damned/templates/index.html:91
+msgid "Telegram Bot"
+msgstr "Bot Telegram"
+
+#: codex_of_the_damned/templates/index.html:96
 msgid "Online Play section"
 msgstr "section Jeu en Ligne"
 
-#: codex_of_the_damned/templates/index.html:94
+#: codex_of_the_damned/templates/index.html:95
 #, python-format
 msgid "For <b>online play</b>, check the %(online_play_section)s."
 msgstr "Pour <b>jouer en ligne</b>, consultez la %(online_play_section)s."
 
-#: codex_of_the_damned/templates/index.html:103
+#: codex_of_the_damned/templates/index.html:104
 msgid "Tutorials"
 msgstr "Tutoriels"
 
-#: codex_of_the_damned/templates/index.html:108
+#: codex_of_the_damned/templates/index.html:109
 msgid "The Codex 10min Tutorial"
 msgstr "Le Tutoriel en 10min du Codex"
 
-#: codex_of_the_damned/templates/index.html:114
+#: codex_of_the_damned/templates/index.html:115
 msgid "Team Covenant's Tutorial"
 msgstr "Tutoriel de la Team Covenant"
 
-#: codex_of_the_damned/templates/index.html:120
+#: codex_of_the_damned/templates/index.html:121
 msgid "Jender's Gaming Tutorial"
 msgstr "Tutoriel de Jender's gaming"
 
-#: codex_of_the_damned/templates/index.html:126
+#: codex_of_the_damned/templates/index.html:127
 msgid "VTES on LackeyCCG Tutorial"
 msgstr "Tutoriel VTES sur LackeyCCG"
 
-#: codex_of_the_damned/templates/index.html:140
+#: codex_of_the_damned/templates/index.html:141
 msgid "Video Channels"
 msgstr "Chaînes vidéo"
 
-#: codex_of_the_damned/templates/index.html:274
+#: codex_of_the_damned/templates/index.html:277
 msgid "Blogs"
 msgstr "Blogs"
 
-#: codex_of_the_damned/templates/index.html:286
+#: codex_of_the_damned/templates/index.html:292
 msgid "interviews archive"
 msgstr "archive d'interviews"
 
-#: codex_of_the_damned/templates/index.html:294
+#: codex_of_the_damned/templates/index.html:300
 msgid "Live streams"
 msgstr "Streams en direct"
 
-#: codex_of_the_damned/templates/index.html:332
+#: codex_of_the_damned/templates/index.html:338
 msgid "Developer tools"
 msgstr "Outils pour développeurs"
 
-#: codex_of_the_damned/templates/index.html:335
+#: codex_of_the_damned/templates/index.html:341
 msgid "Static resources"
 msgstr "Ressources statiques"
 
-#: codex_of_the_damned/templates/index.html:340
+#: codex_of_the_damned/templates/index.html:347
 msgid "Discord bots"
 msgstr "Bots Discord"
 
-#: codex_of_the_damned/templates/index.html:343
+#: codex_of_the_damned/templates/index.html:350
 msgid "Cards lookup"
 msgstr "Recherche de carte"
 
-#: codex_of_the_damned/templates/index.html:345
+#: codex_of_the_damned/templates/index.html:353
 msgid "Tournament management"
 msgstr "Gestion de tournoi"
 
-#: codex_of_the_damned/templates/index.html:354
+#: codex_of_the_damned/templates/index.html:362
 msgid ""
 "Portions of the materials are the copyrights and trademarks of Paradox Interactive AB, and are used with "
 "permission.<br />All rights reserved. For more information please visit"
@@ -876,8 +897,8 @@ msgstr "%(anthelios)s a été bannie en 2016. Son retrait peut avoir quelques co
 
 #: codex_of_the_damned/templates/archetypes/_layout-erratum.html:103
 #, python-format
-msgid "%(liliths_blessing)s has been banned in 2016."
-msgstr "%(liliths_blessing)s a été bannie en 2016."
+msgid "%(liliths_blessing)s has been banned in 2013."
+msgstr "%(liliths_blessing)s a été bannie en 2013."
 
 #: codex_of_the_damned/templates/archetypes/_layout-erratum.html:113
 #, python-format
@@ -4614,9 +4635,9 @@ msgid ""
 "to keep control of the whole table if possible. </p> <p> Letting some vampires live on the predator side can be a "
 "good way to bounce their bleed and deliver additional pool damage to the prey. </p> <p> The deck is particularly "
 "fragile against political decks, so voter should probably be taken out first. </p> <h2>Variants</h2> <p> It is, of "
-"course, close to the original %(war_ghouls)s archetype, but it is arguable even better at it, since the "
+"course, close to the original %(war_ghouls)s archetype, but it is arguably even better at it, since the "
 "%(dom)s%(pro)s combination is better for defense, and the vampires being Anarch to start with, there is no need to "
-"fret </p>"
+"fret over converting them first, so %(piper)s is online from the opening turn. </p>"
 msgstr ""
 "<h2>Principe</h2> <p> Il s’agit d’un deck de <em>rush</em> utilisant des %(war_ghoul)s pour attaquer les vampires "
 "adverses. </p> <p> L’idée est de mettre en jeu une %(war_ghoul)s le plus rapidement possible, en utilisant un "
@@ -4637,7 +4658,7 @@ msgstr ""
 " est donc préférable d’éliminer les voteurs en priorité. </p> <h2>Variantes</h2> <p> Il est bien sûr proche de "
 "l’archétype original %(war_ghouls)s, mais il est sans doute encore plus efficace, puisque la combinaison "
 "%(dom)s%(pro)s est meilleure pour la défense. De plus, les vampires étant Anarchs dès le départ, il n’y a pas besoin "
-"de s’en préoccuper. </p>"
+"de se soucier de les convertir au préalable, donc %(piper)s est disponible dès le premier tour. </p>"
 
 #: codex_of_the_damned/templates/archetypes/new-kids/qawiyya-caine.html:14
 #, python-format
@@ -13412,14 +13433,14 @@ msgid ""
 msgstr ""
 "<p> Cette catégorie présente les outils pour jouer en ligne. Chaque section présente une plateforme différente, la "
 "manière d'entrer en contact avec sa communauté et l'étiquette à respecter lors de son utilisation. </p> <p> Quel que "
-"soit l'outil utilisé, %(vtes_db)s, %(vtes_decks)s et %(amaranth)s peuvent être utilisés pour la construction de deck. "
-"</p>"
+"soit l'outil utilisé, %(vtes_db)s, %(vtes_decks)s et %(amaranth)s peuvent être utilisés pour la construction de deck."
+" </p>"
 
 #: codex_of_the_damned/templates/online-play/lackeyccg.html:7
 #, python-format
 msgid ""
-"%(lackey)s is an old software to play Collectible Card Games online. It is still the foremost online plateform when "
-"it comes to play <strong>V:tES</strong> in real time, as it is free and up-to-date cardwise."
+"%(lackey)s is an old software to play Collectible Card Games online. It is still the foremost online platform when it"
+" comes to play <strong>V:tES</strong> in real time, as it is free and up-to-date cardwise."
 msgstr ""
 "%(lackey)s est un vieux logiciel conçu pour jouer aux jeux de cartes à collectionner en ligne. C'est encore "
 "aujourd'hui la plateforme principale quand il s'agit de jouer à <strong>V:tES</strong> en temps réel, étant donné "
@@ -13502,7 +13523,7 @@ msgstr ""
 msgid ""
 "The interface has now adopted <strong>VtES</strong> colors. Go back to the %(plugins)s tab and click the "
 "%(download_images)s button. You can let that run in the background as it takes around 30 minutes, but this will avoid"
-" unneccessary delays when displaying card images during play."
+" unnecessary delays when displaying card images during play."
 msgstr ""
 "L'interface utilise désormais les couleurs de <strong>VtES</strong>. Retournez sur l'onglet %(plugins)s et cliquez "
 "sur le bouton %(download_images)s. Vous pouvez laisser tourner en arrière-plan car cela prend environ 30 minutes, "
@@ -13539,10 +13560,10 @@ msgstr ""
 #, python-format
 msgid ""
 "Alternatively, you can use the %(paste)s button to paste the decklist directly in a new deck. Make sure to paste the "
-"library and crypt parts independantly in this case."
+"library and crypt parts independently in this case."
 msgstr ""
 "Alternativement, vous pouvez utiliser le bouton %(paste)s pour coller votre decklist directement dans un nouveau "
-"deck. Dans ce cas, assurez-vous de bien copier/coller indépendemment la bibliothèque et la crypte."
+"deck. Dans ce cas, assurez-vous de bien copier/coller indépendamment la bibliothèque et la crypte."
 
 #: codex_of_the_damned/templates/online-play/lackeyccg.html:139
 msgid "Finally, make sure you click the green + buttons in the interface to get access to all the menus."
@@ -13737,9 +13758,9 @@ msgid ""
 "targets that show in the log.</li> <li>Automatic card attachment, to stack cards on one another.</li>"
 msgstr ""
 "<li>Un raccourci d'influence sur les cartes non contrôlées, pour ajouter du sang et dépenser de l'influence en un "
-"seul geste.</li> <li>Une résolution d'action guidée avec matérialisation de l'impulsion et compteurs de discrétion/"
-"interception.</li> <li>La possibilité de déclarer des cibles qui apparaissent dans le journal.</li> <li>Attachement "
-"automatique des cartes, pour empiler des cartes les unes sur les autres.</li>"
+"seul geste.</li> <li>Une résolution d'action guidée avec matérialisation de l'impulsion et compteurs de "
+"discrétion/interception.</li> <li>La possibilité de déclarer des cibles qui apparaissent dans le journal.</li> "
+"<li>Attachement automatique des cartes, pour empiler des cartes les unes sur les autres.</li>"
 
 #: codex_of_the_damned/templates/online-play/succubus-club.html:53
 msgid ""
@@ -13836,7 +13857,7 @@ msgstr ""
 #: codex_of_the_damned/templates/online-play/vtes-online.html:17
 #, python-format
 msgid ""
-"No install is required as %(vtes_online)s is played in browser. However, it is strongly recommanded to join the "
+"No install is required as %(vtes_online)s is played in browser. However, it is strongly recommended to join the "
 "%(jol_discord_server)s. You can use the %(decks)s menu to build you decks, or just paste a deck exported from "
 "%(amaranth)s (use the %(export)s button)."
 msgstr ""
@@ -15308,7 +15329,7 @@ msgid ""
 "Games usually last between 10 to 20 turns and decks are tailored with the peak card rotation speed in mind: the "
 "number of cards played on average between one unlock phase and the next, not counting the few first turns of build-"
 "up. The deck size should enable a peak rotation during 12 turns. The efficiency of a deck depends on its capacity to "
-"maintain an optimal rotation speed throughout the game: being stuck with no relevant card to play is a loosing "
+"maintain an optimal rotation speed throughout the game: being stuck with no relevant card to play is a losing "
 "situation."
 msgstr ""
 "Les parties durent en général 10 à 20 tours et les decks sont taillés en gardant en tête la vitesse de rotation de "
@@ -15683,7 +15704,7 @@ msgstr ""
 msgid ""
 "<h3>Limited and unlimited modifiers</h3> <p> Bleed modifiers are always <em>\"limited\"</em> if the card does not "
 "state otherwise, meaning one can play only one modifier increasing the bleed amount during a bleed action. However, a"
-" few cards provided non-limited bleed increase: %(leverage)s, %(command_of_the_beast)s and "
+" few cards provide non-limited bleed increase: %(leverage)s, %(command_of_the_beast)s and "
 "%(quicksilver_contemplation)s are played, more expensive ones are not. </p>"
 msgstr ""
 "<h3>Modificateurs limités et non limités</h3> <p> Les modificateurs de morsure sont toujours <em>\"limités\"</em> "
@@ -15863,7 +15884,7 @@ msgstr "Délai"
 #, python-format
 msgid ""
 "Aggressive vote decks will pass multiple votes in a single turn, but this has led to the use of %(delaying_tactics)s "
-"as a defence. This means diversity in votes is needed to avoid loosing a whole turn of actions just because "
+"as a defence. This means diversity in votes is needed to avoid losing a whole turn of actions just because "
 "%(kine_resources_contested)s has been delayed."
 msgstr ""
 "Les decks de vote agressifs vont passer plusieurs votes dans un seul tour, mais cela a conduit à l'utilisation de "
@@ -22576,10 +22597,10 @@ msgstr "%(lilith_s_blessing)s a été banni en 2013"
 #: codex_of_the_damned/templates/strategy/articles/basic/what-should-i-buy.html:1596
 #, python-format
 msgid ""
-"%(anthelios)s, %(temptation_of_greater_power)s and %(seeds_of_corruption)s were banned in 2017, and tap/untap have "
+"%(anthelios)s, %(temptation_of_greater_power)s and %(seeds_of_corruption)s were banned in 2016, and tap/untap have "
 "been replaced by lock/unlock because of patent issues."
 msgstr ""
-"%(anthelios)s, %(temptation_of_greater_power)s et %(seeds_of_corruption)s ont été bannis en 2017, et tap/untap ont "
+"%(anthelios)s, %(temptation_of_greater_power)s et %(seeds_of_corruption)s ont été bannis en 2016, et tap/untap ont "
 "été remplacés par incliner/redresser en raison de problèmes de brevet."
 
 #: codex_of_the_damned/templates/strategy/articles/basic/what-should-i-buy.html:1605

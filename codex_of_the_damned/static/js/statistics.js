@@ -24,4 +24,6 @@ function howManyNeeded(stack, draws, expectation) {
             return copies + 1
         }
     }
+    // Even the whole stack cannot reach the target probability: return its size as a floor.
+    return stack
 }

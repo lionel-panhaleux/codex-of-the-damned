@@ -20,8 +20,8 @@ class Completion {
         try {
             this.display(await this.complete_function(this.input.value))
         } catch (error) {
-            if (this.message) {
-                this.message.textContent = error.message
+            if (this.message_output) {
+                this.message_output.textContent = error.message
             }
         }
     }
@@ -74,10 +74,6 @@ class Completion {
         this.input.parentNode.removeChild(this.choices)
         this.choices = undefined
     }
-    reset() {
-        this.clear()
-        this.input.parentNode.reset()
-    }
     choose(e) {
         this.clear()
         this.input.value = e.target.textContent
@@ -111,6 +107,6 @@ function encodeUrlParam(param) {
     // / and \ are notoriously hard to pass as parameters in the URL path
     // see https://github.com/pallets/flask/issues/900
     // just replacing them with spaces seems like the cleanest course of action
-    // return encodeURIComponent(param.replace("/", " ").replace("\\", " "))
-    return param.replace("/", " ").replace("\\", " ")
+    // return encodeURIComponent(param.replace(/\//g, " ").replace(/\\/g, " "))
+    return param.replace(/\//g, " ").replace(/\\/g, " ")
 }
