@@ -270,7 +270,7 @@ def index(lang_code=None, page=None):
         card = flask.request.args.get("card")
         if card:
             image_name = file_name(card)
-            context["og_image"] = f"https://static.krcg.org/card/{image_name}.jpg"
+            context["og_image"] = f"https://static.krcg.org/card/{image_name}.webp"
             context["og_description"] = "Official card text and rulings"
             context["og_title"] = card
             context["og_image_dimensions"] = ["358", "500"]
@@ -416,7 +416,7 @@ def display_card():
 
     def card_image(name, hover=True):
         img = (
-            '<img src="https://static.krcg.org/card/{fname}.jpg"'
+            '<img src="https://static.krcg.org/card/{fname}.webp"'
             ' alt="{name}" data-name="{name}"'
         )
         if hover:
