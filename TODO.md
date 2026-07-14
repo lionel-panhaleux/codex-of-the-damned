@@ -139,8 +139,12 @@ dependency.
   by card type — direct refresh input for `best-cards/`. *(Script landed 2026-07-05:
   `uv run scripts/best_cards.py --since 2020-01-01`. The window is now 1,430 decks —
   the index's "900+" has drifted. By-clan breakdowns still TODO.)*
-- [ ] **Top archetypes** (hard): cluster TWD decklists to find what the meta actually
-  plays. The journey:
+- [x] **Top archetypes** (hard): cluster TWD decklists to find what the meta actually
+  plays. *DONE — landed in `.claude/skills/twda/` (SKILL + 13 scripts + curated
+  `data/classification.json`). Regular refresh is `classify.py` (nearest-centroid
+  assignment of new TWD decks; else a "novel" HDBSCAN pile), validated at 94.3% exact
+  group / 98.6% archetype-level leave-one-out. `benchmark.py` scores any pipeline change
+  before adoption. The journey below is kept as the design record.*
   1. Vectorize decklists (card-count vectors; crypt weighted — it defines archetypes),
      IDF-weight to mute staples, reduce dimensions (SVD or similar) so clustering has
      a chance.
@@ -166,8 +170,10 @@ dependency.
   Kids candidates. Next: name clusters (top cards + common deck names), recompute
   tier criteria from cluster sizes/dates, decide noise handling (nearest-cluster
   attachment vs leave out).
-- [ ] Once stable, wire the outputs into the refresh items below (tier assignments,
-  "proven twice in 3 years" / ⭐ recomputation, best-cards deck counts).
+- [x] Once stable, wire the outputs into the refresh items below (tier assignments,
+  "proven twice in 3 years" / ⭐ recomputation, best-cards deck counts). *DONE — the
+  Best Cards and Archetypes pages were regenerated from the labeled clusters
+  (`best_cards_pages.py` / `best_cards_update.py`) in the V5 refresh.*
 
   *Update 2026-07-05, owner review in progress.* The review/editor page
   (`scripts/review_page.py`, published as an artifact) is the working tool: vdb
@@ -268,18 +274,18 @@ reconciliation).*
 
 ## Backlog — to discuss before acting
 
-1. **Framework**: entire backend is ~750 lines of Python; Babel i18n and the
-   `navigation.py` tree are the only real coupling. A pure jinja-to-static build
-   looks very tractable. Decide: Flask stays / FastAPI / static build chain.
+1. **Framework**: ~~Decide: Flask stays / FastAPI / static build chain.~~ **DECIDED
+   (2026-07-14): keep Flask** — KISS, the coupling isn't worth a rewrite.
 2. **Remove deck search**: only `deck-search.html` + `deck-search.js` are exclusive.
    `complete.js` and `decklist.js` are shared with card-search and archetype pages —
    they stay. Also remove the Nav entry, nav header link, and FR translations.
-3. **Agents/skills for slow-moving content**: promoted to P2 — see "The TWDA-analysis
-   skill" above. Remaining discussion: "What Should I Buy" product list automation.
-4. **ES / PT translations**: git tag `i18n-es` (2020) holds a full 9,719-line ES base
-   catalog to seed from; `display.js` already has an `es` branch; FR is at 96%
-   (86/2149 untranslated, 0 fuzzy). Land the P0 trans-lint test first.
-5. **Navigation / page-tree rework** for discoverability.
+   *(To discuss next, with the nav rework.)*
+3. **Agents/skills for slow-moving content**: DONE — see "The TWDA-analysis skill"
+   above (now committed). Remaining: "What Should I Buy" product list automation.
+4. **ES / PT translations**: LANDED (all four languages live). Remaining is the
+   deliberate-non-translation convention for card/discipline/clan/module names — see
+   the "Untranslated backlog" note under P2 staleness.
+5. **Navigation / page-tree rework** for discoverability. *(To discuss next.)*
 
 ## Verified fine — no action
 

@@ -343,13 +343,29 @@ text, fix typos you find, but remember the msgid-mirroring rule above.
    consistent across the whole catalog.
 4. Compile and spot-check rendered pages with the dev server (`codex`).
 
-## Deliberately untranslated entries
-The FR catalog keeps ~84 entries with an EMPTY msgstr on purpose: card names, clan/sect names,
-non-base discipline names (Vicissitude, Quietus…), product names (V5 precons, VDB), archetype
-labels (Big Guns, Saturday Night DBR, Bruise & Bleed), and "Clan: card, card…" list entries.
-Gettext falls back to the English msgid, which IS the desired rendering, and an empty msgstr
-auto-tracks future msgid edits. Do NOT "complete" these entries; apply the same policy to new
-languages.
+## Proper nouns: unwrap, never leave blank (2026-07 policy)
+A term that reads IDENTICALLY in every language is NOT gettext-wrapped — it is plain text in the
+template (and plain `Nav("Tzimisce")` in `navigation.py`), so it never enters the catalog. This
+covers: card names (rendered via `card()` or, in headings, as plain labels); proper-noun clans
+(Tzimisce, Nosferatu, Brujah, Gangrel, Ventrue, Ravnos, Giovanni, Lasombra, Tremere, Hecata,
+Samedi, Kiasyd, Baali, Guruhi, Akunanse, Ishtarri, Caitiff, Banu Haqim, and their Antitribu/Legacy
+forms); player/tournament/product names (VDB, "V5: <clan>" links); and English community jargon
+kept in English everywhere (Big Guns, Saturday Night DBR, CEL Guns, *bruise & bleed*…). When you
+meet a would-be-blank proper noun, UNWRAP it (edit the template / navigation.py) — do not fill
+msgstr = msgid.
+
+A term that HAS a genuine local form in any language stays wrapped and gets EVERY msgstr filled
+(local form where the language uses one, identical source term where it doesn't — never blank).
+This covers: disciplines (Célérité, Animalisme; identical ones like Vicissitude/Serpentis/Auspex
+are still filled, to keep the discipline set uniform); translatable clan names (Ministry→Sacerdoce,
+Imbued→Illuminés, Harbingers of Skulls→Émissaires des Crânes, Malkavian→Malkavien, Toreador→
+Toréador, Daughters of Cacophony→Filles de la Cacophonie, True Brujah→Brujah Véritables); sects;
+and section labels. When unsure whether a term has a local form, keep it wrapped and translate —
+never unwrap something that translates in even one language.
+
+Consequence: a blank msgstr now means GENUINELY untranslated, so the untranslated count is a real
+signal again. Known remaining blanks to clear in a later pass: PT product/expansion names in
+`what-should-i-buy` and the "Clan: card, card…" best-cards list blobs.
 
 ## Reporting
 When reviewing, classify findings as: FUNCTIONAL (broken placeholder/markup — fix immediately),
