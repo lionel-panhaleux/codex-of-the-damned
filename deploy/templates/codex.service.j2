@@ -1,0 +1,30 @@
+[Unit]
+Description=Codex of the Damned ({{ codex_env }}) — Flask / gunicorn
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User={{ codex_user }}
+Group={{ codex_user }}
+# PYTHONOPTIMIZE strips asserts/docstrings (parity with the old uWSGI deploy)
+Environment=PYTHONOPTIMIZE=1
+ExecStart={{ codex_home }}/{{ codex_env }}/venv/bin/gunicorn codex_of_the_damned:app \
+    --preload --bind 127.0.0.1:{{ codex_site.port }} --workers {{ codex_workers }} \
+    --timeout 60 --graceful-timeout 30
+Restart=always
+RestartSec=5
+TimeoutStartSec=30
+TimeoutStopSec=30
+OOMScoreAdjust=-500
+# journald: filter with journalctl -t codex_{{ codex_env }}
+SyslogIdentifier=codex_{{ codex_env }}
+# hardening — the site is stateless, so lock the filesystem down
+NoNewPrivileges=true
+ProtectSystem=strict
+ProtectHome=true
+PrivateTmp=true
+ReadWritePaths={{ codex_home }}
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,121 @@
+---
+# Deploy the Codex (codex-of-the-damned.org).
+#
+# The Codex is a stateless Flask/WSGI site published to PyPI as
+# `codex-of-the-damned`. Both environments run the same package; they differ
+# only by domain and port:
+#
+#   prod — codex-of-the-damned.org (+ www alias), gunicorn on 127.0.0.1:8012
+#   beta — codex-beta.krcg.org,                  gunicorn on 127.0.0.1:8013
+#
+# Each is a systemd service fronted by nginx (server-setup's nginx_site role,
+# reverse proxy + automatic Let's Encrypt). Pick the target with
+# `-e codex_env=beta` (default: prod).
+- name: Deploy the Codex
+  hosts: all
+  become: true
+  vars:
+    codex_env: prod  # override with -e codex_env=beta
+    codex_user: codex
+    codex_home: /opt/codex
+    codex_workers: 2
+    # ports 8001-8005 belong to the legacy myserver deployments,
+    # 8010-8011 to krcg-api — the Codex takes the next free pair
+    codex_environments:
+      prod:
+        domain: codex-of-the-damned.org
+        aliases: [www.codex-of-the-damned.org]
+        port: 8012
+      beta:
+        domain: codex-beta.krcg.org
+        aliases: []
+        port: 8013
+    codex_site: "{{ codex_environments[codex_env] }}"
+
+  tasks:
+    - name: Validate codex_env
+      ansible.builtin.assert:
+        that: codex_env in codex_environments
+        fail_msg: "codex_env must be one of {{ codex_environments.keys() | list }}"
+
+    - name: Create the service user
+      ansible.builtin.user:
+        name: "{{ codex_user }}"
+        system: true
+        shell: /usr/sbin/nologin
+        home: "{{ codex_home }}"
+        create_home: true
+
+    - name: Install uv (provisions Python and the venv)
+      ansible.builtin.shell:
+        cmd: >-
+          curl -LsSf https://astral.sh/uv/install.sh
+          | env UV_INSTALL_DIR=/usr/local/bin INSTALLER_NO_MODIFY_PATH=1 sh
+        creates: /usr/local/bin/uv
+
+    # uv runs as root here and would keep its managed CPython under /root/.local,
+    # where the venv symlinks can't be followed by the service user (and
+    # ProtectHome hides it) — pin it to a shared path.
+    - name: Create the virtualenv on Python 3.13
+      ansible.builtin.command:
+        cmd: >-
+          /usr/local/bin/uv venv --python 3.13
+          {{ codex_home }}/{{ codex_env }}/venv
+        creates: "{{ codex_home }}/{{ codex_env }}/venv/bin/python"
+      environment:
+        UV_PYTHON_INSTALL_DIR: /usr/local/share/uv/python
+
+    - name: Install / upgrade codex-of-the-damned
+      ansible.builtin.command:
+        argv:
+          - /usr/local/bin/uv
+          - pip
+          - install
+          - --upgrade
+          - --python
+          - "{{ codex_home }}/{{ codex_env }}/venv/bin/python"
+          - codex-of-the-damned
+          - gunicorn
+      environment:
+        UV_PYTHON_INSTALL_DIR: /usr/local/share/uv/python
+      register: codex_install
+      changed_when: "'Installed' in (codex_install.stdout + codex_install.stderr)"
+
+    - name: Install the systemd unit
+      ansible.builtin.template:
+        src: codex.service.j2
+        dest: "/etc/systemd/system/codex_{{ codex_env }}.service"
+        mode: "0644"
+      register: codex_unit
+
+    - name: Own the install tree
+      ansible.builtin.file:
+        path: "{{ codex_home }}"
+        owner: "{{ codex_user }}"
+        group: "{{ codex_user }}"
+        recurse: true
+
+    - name: Enable and start the Codex
+      ansible.builtin.systemd:
+        name: "codex_{{ codex_env }}"
+        enabled: true
+        state: started
+        daemon_reload: true
+
+    - name: Restart the Codex on upgrade
+      ansible.builtin.systemd:
+        name: "codex_{{ codex_env }}"
+        state: restarted
+        daemon_reload: true
+      when: codex_install.changed or codex_unit.changed
+
+    - name: Front with nginx (reverse proxy + Let's Encrypt)
+      ansible.builtin.include_role:
+        name: lionel_panhaleux.server_setup.nginx_site
+      vars:
+        nginx_site_name: "codex_{{ codex_env }}"
+        nginx_site_domain: "{{ codex_site.domain }}"
+        nginx_site_type: proxy
+        nginx_site_upstream: "http://127.0.0.1:{{ codex_site.port }}"
+        # www is served as an alias of the apex (same content); the cert covers both
+        nginx_site_aliases: "{{ codex_site.aliases }}"

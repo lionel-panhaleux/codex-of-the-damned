@@ -1,0 +1,69 @@
+---
+# Decommission the old myserver Flask/uWSGI deployment of the Codex
+# (codex-of-the-damned.org and codex-beta.krcg.org).
+#
+# The old nginx vhosts claim the same server_names on :443 as the new
+# nginx_site configs, so nginx refuses to serve the new site until they're
+# gone. Run this ONCE, immediately before the first deploy.yml run, from this
+# deploy/ directory:
+#
+#   ansible-playbook cleanup.yml -i "HOST," --user deploy --private-key ~/.ssh/deploy
+#
+# Let's Encrypt certs under /etc/letsencrypt/live/ are kept — the new
+# nginx_site role reuses (and, for the apex, --expands to add www) them.
+- name: Clean up old Flask deployment of the Codex
+  hosts: all
+  become: true
+  vars:
+    old_server_names:
+      - codex-of-the-damned.org
+      - codex-beta.krcg.org
+  tasks:
+    - name: Stop old systemd services
+      ansible.builtin.systemd:
+        name: "{{ item }}"
+        state: stopped
+        enabled: false
+      loop: "{{ old_server_names }}"
+      failed_when: false
+
+    - name: Remove old systemd unit files
+      ansible.builtin.file:
+        path: "/etc/systemd/system/{{ item }}.service"
+        state: absent
+      loop: "{{ old_server_names }}"
+      notify: Daemon reload
+
+    - name: Remove old nginx site configs
+      ansible.builtin.file:
+        path: "/etc/nginx/sites-enabled/{{ item }}"
+        state: absent
+      loop:
+        - codex-of-the-damned.org.http.conf
+        - codex-of-the-damned.org.https.conf
+        - www.codex-of-the-damned.org.http.conf
+        - codex-beta.krcg.org.http.conf
+        - codex-beta.krcg.org.https.conf
+      notify: Reload nginx
+
+    - name: Remove old project directories
+      ansible.builtin.file:
+        path: "/home/lpanhaleux/projects/{{ item }}"
+        state: absent
+      loop: "{{ old_server_names }}"
+
+    - name: Remove old uWSGI PID files
+      ansible.builtin.file:
+        path: "/tmp/{{ item }}-master.pid"
+        state: absent
+      loop: "{{ old_server_names }}"
+
+  handlers:
+    - name: Daemon reload
+      ansible.builtin.systemd:
+        daemon_reload: true
+
+    - name: Reload nginx
+      ansible.builtin.service:
+        name: nginx
+        state: reloaded
