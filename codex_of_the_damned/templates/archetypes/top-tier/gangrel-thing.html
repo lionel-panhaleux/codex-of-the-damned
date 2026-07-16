@@ -12,123 +12,115 @@
 
 {% block archetype %}
 {% trans trimmed
-anarch_railroad=card("Anarch Railroad"),
-army_of_rats=card("Army of Rats"),
 bait_and_switch=card("Bait and Switch"),
 claws_of_the_dead=card("Claws of the Dead"),
 club_illusion=card("Club Illusion"),
 consanguineous_boon=card("Consanguineous Boon"),
 constant_revolution=card("Constant Revolution"),
-creepshow_casino=card("Creepshow Casino"),
+daring_the_dawn=card("Daring the Dawn"),
 deep_ecology=card("Deep Ecology"),
+direct_intervention=card("Direct Intervention"),
 donnybrook=card("Donnybrook"),
-double_deuce=card("Double Deuce"),
+dreams_of_the_sphinx=card("Dreams of the Sphinx"),
 earth_control=card("Earth Control"),
 earth_meld=card("Earth Meld"),
 eyes_of_the_wild=card("Eyes of the Wild"),
-flesh_of_marble=card("Flesh of Marble"),
+fee_stake_seattle=card("Fee Stake: Seattle"),
 form_of_mist=card("Form of Mist"),
 form_of_the_bat=card("Form of the Bat"),
 gangrel_revel=card("Gangrel Revel"),
 garibaldi_meucci_museum=card("Garibaldi-Meucci Museum"),
-groundfighting=card("Groundfighting"),
-hell_for_leather=card("Hell For Leather"),
-hunting_grounds=card("Academic Hunting Ground", "hunting grounds"),
-kine_resources_contested=card("Kine Resources Contested"),
+heart_of_nizchetus=card("Heart of Nizchetus"),
+life_boon=card("Life Boon"),
 monkey_wrench=card("Monkey Wrench"),
-opium_den=card("Opium Den"),
 organized_resistance=card("Organized Resistance"),
 powerbase_los_angeles=card("Powerbase: Los Angeles"),
 propaganda_of_the_deed=card("Propaganda of the Deed"),
 protection_racket=card("Protection Racket"),
-reckless_agitation=card("Reckless Agitation"),
+raven_spy=card("Raven Spy"),
 renegade_garou=card("Renegade Garou"),
 revolutionary_council=card("Revolutionary Council"),
 rewilding=card("Rewilding"),
-rotschreck=card("Rötschreck"),
-shattering=card("Shattering"),
 smiling_jack=card("Smiling Jack, The Anarch", "Smiling Jack"),
-sniper_rifle=card("Sniper Rifle"),
-society_of_leopold=card("Society of Leopold"),
-stolen_police_cruiser=card("Stolen Police Cruiser"),
-the_anarch_free_press=card("The Anarch Free Press"),
 thing=card("Thing"),
 villein=card("Villein"),
-otso_saariluomas_deck=link("/deck-search", _("Otso Saariluoma's deck"), id="10767"),
+block_denials=link("/strategy/fundamentals", _("block denials"), _anchor="stealth-and-intercept"),
+bounce=link("/strategy/fundamentals", _("bounce"), _anchor="bounce"),
+leech=link("/strategy/bloat", _("leech"), _anchor="leeching"),
+wall=link("/strategy/archetype-categories", _("wall"), _anchor="wall"),
 édouard_menneson_s_deck=link("/deck-search", _("Édouard Menneson's deck"), id="11174"),
-jakub_rypar_s_deck=link("/deck-search", _("Jakub Rypar's deck"), id="11740"),
+otso_saariluomas_deck=link("/deck-search", _("Otso Saariluoma's grinder"), id="10767"),
+jakub_rypar_s_deck=link("/deck-search", _("Jakub Rypar's swarm"), id="11740"),
 josé_roberio_barbosa_da_silva_s_deck=link("/deck-search", _("José Roberio Barbosa da Silva's deck"), id="11393")
 %}
 <h2>Highlights</h2>
 <p>
-    This is a <em>wall</em> deck using Gangrel {{ gangrel }} barons.
-    It builds a strong defense thanks to the Anarch and Baron cards for unlock and intercept,
-    {{ organized_resistance }} and {{ deep_ecology }}, coupled with {{ bait_and_switch }} for bounces.
+    This is a Gangrel {{ gangrel }} Anarch barons {{ wall }} deck, with Protean {{ PRO }} as the main discipline.
+    A baron must land early to really switch the wall on, but {{ thing }} is the engine:
+    it pulls the crypt into play fast and builds a swarm. Depending on the starting hand, the first influence
+    is either a small capacity vampire to play a {{ thing }}, or a baron directly.
+    The plan is to get 5 or more vampires out, using {{ villein }} to {{ leech }} the swarm.
 </p>
 <p>
-    Using {{ thing }}, the deck can steadily influence more and more vampires, often ending up with 4 to 6 vampires
-    in play. Influencing a Baron quickly is very important, but it can be the second vampire if a low capacity
-    can be put in play first to speed up the Baron with a {{ thing }}, depending on your opening hand.
+    Being a wall, the defensive part is deep: {{ organized_resistance }}, {{ deep_ecology }}, and {{ earth_meld }}
+    to unlock, {{ raven_spy }}, {{ deep_ecology }}, and {{ form_of_the_bat }} for intercept, plus {{ bait_and_switch }}
+    to {{ bounce }}.
 </p>
 <p>
-    The number of vampires means naked bleeds provide decent forward pressure.
-    This completes the standard wall payload {{ smiling_jack }} and {{ constant_revolution }},
-    and offers some flexibility.
+    Base pressure is plain bleeds from the swarm: a board of ones is a real clock and makes bounces
+    a miserable option. If {{ club_illusion }} lands, the power doubles.
+    But the deck has another payload: {{ revolutionary_council }} to kill in a single move,
+    which is the reason behind the "Death Star" nickname.
 </p>
 <p>
-    The list presented here uses a couple of {{ sniper_rifle }} alongside a good number of
-    {{ earth_meld }} as combat module, but there are a lot of possible variations for the combat part of the deck.
+    Stealth is tight but effective: {{ form_of_mist }} and {{ earth_control }},
+    plus the versatile {{ form_of_the_bat }}.
+</p>
+<p>
+    Typical of a wall, the deck brings in many permanents that stack up and continuously support
+    all the important axes of the strategy: stealth, intercept, plus blood and pool regeneration.
+    Also, a solid range of cycling options with {{ heart_of_nizchetus }}, {{ dreams_of_the_sphinx }},
+    and {{ powerbase_los_angeles }}.
 </p>
 <h2>Tips & Tricks</h2>
 <p>
-    {{ garibaldi_meucci_museum }} is versatile, allowing to fetch the required unlock or bounce.
-    {{ powerbase_los_angeles }} acts as cycling device as well as an additional unlock,
-    since there are so many Anarch cards (note Baron cards implicitly count as cards requiring Anarch),
-    and {{ the_anarch_free_press }} provides intercept.
+    {{ garibaldi_meucci_museum }} is incredibly strong here: not only can it fetch back {{ bait_and_switch }}
+    continuously when facing a strong bleed deck as predator, it can also retrieve {{ revolutionary_council }}
+    again and again to swipe a whole table. As a bonus, it provides protection against anarch combat decks.
 </p>
 <p>
-    In terms of ousting power, the deck relies on small bleeds, with {{ club_illusion }} being key to its strategy
-    by doubling the bleed power. {{ reckless_agitation }} and {{ monkey_wrench }} can be used to lunge,
-    letting the deck switch from a slow grind to a decisive kill in an instant.
+    Versatility is a strong point: many cards fill multiple purposes,
+    and using the right option depending on the table is key.
+    {{ form_of_mist }} is stealth or defense, {{ form_of_the_bat }} stealth or intercept,
+    {{ organized_resistance }} can be stacked if multiple barons are around, {{ thing }} can be
+    used to bloat in a pinch, and {{ revolutionary_council }} can dispose
+    of a cumbersome location.
 </p>
 <p>
-    {{ rewilding }} can damage the prey's pool if they play locations,
-    and can get rid of problematic locations,
-    the prime targets being permanent stealth like {{ opium_den }} or {{ creepshow_casino }},
-    and {{ hunting_grounds }} that go against the grinding strategy of the deck.
-</p>
-<p>
-    The combat module mostly uses {{ earth_meld }} for more unlocks, but at some point
-    aims at equipping someone with a {{ sniper_rifle }} to grind beads out of blocked minions.
-</p>
-<p>
-    The stealth is low but not inexistant, since {{ form_of_mist }} and {{ form_of_the_bat }} can both be used
-    for stealth if needed.
+    This version packs up a few one-copy surprises: {{ monkey_wrench }}, {{ daring_the_dawn }},
+    and {{ fee_stake_seattle }} for example. Each of them can open a lunge opportunity.
+    {{ life_boon }} is a similar wildcard: well timed, it can swing a loss to a win, especially during finals.
+    {{ direct_intervention }} is aimed at {{ block_denials }}, but can also swing the game
+    when used at the right inflexion point. Those cards' efficiency depends on the player's ability.
 </p>
 <h2>Variants</h2>
 <p>
-    {{ revolutionary_council }}, {{ anarch_railroad }}, and {{ earth_control }} often find a spot.
-    A bit of aggravated damage with {{ donnybrook }} and {{ claws_of_the_dead }} is also common.
-    The number of {{ thing }} vary a lot too, and can be doubled or even tripled for more minions.
-    Other options include {{ double_deuce }} or {{ army_of_rats }} for a bit more pool damage, or
-    {{ shattering }} for additional control.
+    {{ eyes_of_the_wild }}, {{ protection_racket }} and {{ rewilding }} are common inclusions this deck forgoes, as are
+    {{ smiling_jack }} and {{ constant_revolution }}.
 </p>
 <p>
-    The <strong>Brutal</strong> variant
-    include more aggravated damage and, with the help of {{ gangrel_revel }} and {{ hell_for_leather }},
-    sometimes even {{ rotschreck }} or {{ flesh_of_marble }}, go for a more punitive combat,
-    like in {{ édouard_menneson_s_deck }} at the 2024 Iberan GP,
-    or {{ otso_saariluomas_deck }} at Ropecon in 2023.
+    The <strong>Grinder</strong> variant punishes blockers with a more offensive combat —
+    {{ donnybrook }}, {{ claws_of_the_dead }}, a {{ gangrel_revel }} strength boost — as in
+    {{ édouard_menneson_s_deck }} at the 2024 Iberia GP, or {{ otso_saariluomas_deck }} at Ropecon.
 </p>
 <p>
-    The <strong>Council Propaganda</strong> variant aims at more of a swarm, using {{ revolutionary_council }} for the
-    lunge
-    and {{ consanguineous_boon }} to bloat, while getting some votes from {{ propaganda_of_the_deed }}.
-    See {{ jakub_rypar_s_deck }} from the 2024 Slovak NC for reference.
+    The <strong>Council Propaganda</strong> variant pushes the votes:
+    {{ propaganda_of_the_deed }} for extra votes, and {{ consanguineous_boon }} to bloat, as in
+    {{ jakub_rypar_s_deck }} at the 2024 Slovak NC.
 </p>
 <p>
-    The <strong>Renegade</strong> variant include some {{ renegade_garou }} for a bit more control with the rushes,
-    while using more {{ villein }} to recoup pool, like in {{ josé_roberio_barbosa_da_silva_s_deck }} at the 2024 SAC.
+    The <strong>Renegade</strong> variant adds rush with {{ renegade_garou }}, backed by more
+    {{ villein }} and {{ thing }} to pay for it, like {{ josé_roberio_barbosa_da_silva_s_deck }} at SAC 2024.
 </p>
 {% endtrans %}
 {% endblock %}

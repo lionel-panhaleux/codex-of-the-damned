@@ -180,6 +180,21 @@ you were given); link 1-3 other tournament decks via deck-link params. For a
 brand-new archetype with two near-identical lists, say so honestly and keep
 Variants short.
 
+**6. The page is the analysis's *output*, not the analysis.** The deep read —
+synergy, board-math, copy-count intent, vote counts, discipline spread — is how
+you *reach* the conclusions; ship the conclusions, grouped by job, and let a
+competent reader infer the rest. Present a module as a bare list to its job
+("Organized Resistance, Deep Ecology, Earth Meld → unlock"), not a paragraph on
+how the unlocking works; list a card under two jobs to signal versatility instead
+of a sentence about it. Keep salience straight — the payload is a Highlight, the
+loop that sustains it is a Trick (don't lead with the engine of the finish over
+the finish). Vote math, copy-count-as-intent and exhaustive discipline
+enumeration are analysis notes — cut them even when correct. Group the singletons
+as one bucket of skill-dependent lunge/opportunity tools rather than scattering
+them. Frame a tip by matchup, not mechanism. Calibrated against the owner's own
+rewrites, which are almost entirely subtractive: they keep the findings and strip
+the prose to functional statements.
+
 ## Before you hand off
 
 - Page renders: `.venv/bin/python -c "from codex_of_the_damned import app;
