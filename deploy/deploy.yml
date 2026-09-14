@@ -48,9 +48,11 @@
     - name: Install uv (provisions Python and the venv)
       ansible.builtin.shell:
         cmd: >-
+          set -o pipefail &&
           curl -LsSf https://astral.sh/uv/install.sh
           | env UV_INSTALL_DIR=/usr/local/bin INSTALLER_NO_MODIFY_PATH=1 sh
         creates: /usr/local/bin/uv
+        executable: /bin/bash
 
     # uv runs as root here and would keep its managed CPython under /root/.local,
     # where the venv symlinks can't be followed by the service user (and
