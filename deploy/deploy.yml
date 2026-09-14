@@ -19,8 +19,7 @@
     codex_user: codex
     codex_home: /opt/codex
     codex_workers: 2
-    # ports 8001-8005 belong to the legacy myserver deployments,
-    # 8010-8011 to krcg-api — the Codex takes the next free pair
+    # 8010-8011 belong to krcg-api on the same host — the Codex takes the next pair
     codex_environments:
       prod:
         domain: codex-of-the-damned.org

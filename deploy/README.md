@@ -71,19 +71,3 @@ ansible-playbook deploy.yml -i "1.2.3.4," --user deploy --private-key ~/.ssh/dep
 
 (Run from this `deploy/` directory so `ansible.cfg` is picked up. Add
 `--check --diff` for a dry run.)
-
-## First-time cutover from the old myserver deploy
-
-The legacy Flask/uWSGI vhosts claim the same `:443` server names, so nginx
-won't serve the new site until they're removed. Run
-[`cleanup.yml`](cleanup.yml) **once**, immediately before the first
-`deploy.yml`, for each environment:
-
-```bash
-ansible-playbook cleanup.yml -i "1.2.3.4," --user deploy --private-key ~/.ssh/deploy
-ansible-playbook deploy.yml  -i "1.2.3.4," --user deploy --private-key ~/.ssh/deploy                 # prod
-ansible-playbook deploy.yml  -i "1.2.3.4," --user deploy --private-key ~/.ssh/deploy -e codex_env=beta
-```
-
-`cleanup.yml` keeps the existing Let's Encrypt certs — the new deployment
-reuses them (and `--expand`s the apex cert to add the www SAN).

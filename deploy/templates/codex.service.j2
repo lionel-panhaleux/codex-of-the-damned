@@ -7,7 +7,7 @@ Wants=network-online.target
 Type=simple
 User={{ codex_user }}
 Group={{ codex_user }}
-# PYTHONOPTIMIZE strips asserts/docstrings (parity with the old uWSGI deploy)
+# PYTHONOPTIMIZE strips asserts and docstrings
 Environment=PYTHONOPTIMIZE=1
 ExecStart={{ codex_home }}/{{ codex_env }}/venv/bin/gunicorn codex_of_the_damned:app \
     --preload --bind 127.0.0.1:{{ codex_site.port }} --workers {{ codex_workers }} \
