@@ -1973,8 +1973,11 @@
         <li>
             <a href="https://www.drivethrucards.com/browse/pub/12056/Black-Chantry-Productions/subcategory/30619_34256/VTES-Legacy-Card-Singles"
                 target="_blank" rel="noopener">DriveThru Cards</a>,
-            note you can use <a href="https://bloodlibrary.info/pod" target="_blank" rel="noopener">blood library</a>
-            to search for cards there
+            {% trans trimmed
+            vtes_decks=external("https://vtesdecks.com/cards/library?printOnDemand=true", "VTES Decks")
+            %}
+            whose print-on-demand cards can be searched on {{ vtes_decks }}
+            {% endtrans %}
         </li>
     </ul>
 </div>
