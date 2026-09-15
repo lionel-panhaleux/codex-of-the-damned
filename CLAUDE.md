@@ -10,6 +10,7 @@ Flask website compiling Vampire: The Eternal Struggle (VTES) strategy resources,
 
 - **Keep it KISS**: vanilla JS, handcrafted CSS, Jinja-templated HTML. A single framework, and as dead-simple a build as possible. Do not introduce build tooling, JS frameworks, CSS preprocessors, or new dependencies without an explicit request.
 - **This is a static website**: no dynamic features — no comments, no stars/ratings, no online editing, no user accounts. Interactivity is limited to client-side JS consuming the external KRCG API.
+- **Fix every failure, not just yours**: when lint or tests fail, fix them even if the failure predates the current change — proving it isn't yours is not a stopping point. A dead external link gets a working URL (and any stale text around it fixed, catalogs included); a site that blocks bots on every user agent goes in the `tests/test_pages.py` skip list.
 
 ## Commands
 
