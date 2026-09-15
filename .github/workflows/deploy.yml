@@ -3,14 +3,16 @@ name: Deploy
 # The Codex is released manually (`make release`: tag push + PyPI upload, no
 # GitHub Release), so deployment is a manual step: run this workflow from the
 # Actions tab once the new version is on PyPI, picking the target environment.
+# Always deploy beta first, then prod: beta is the default so a quick run can't
+# skip it.
 on:
   workflow_dispatch:
     inputs:
       environment:
-        description: Codex environment to deploy
+        description: Codex environment to deploy (beta first, then prod)
         type: choice
-        options: [prod, beta]
-        default: prod
+        options: [beta, prod]
+        default: beta
 
 concurrency:
   group: deploy-${{ github.event.inputs.environment }}
