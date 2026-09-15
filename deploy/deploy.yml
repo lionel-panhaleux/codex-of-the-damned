@@ -10,12 +10,12 @@
 #
 # Each is a systemd service fronted by nginx (server-setup's nginx_site role,
 # reverse proxy + automatic Let's Encrypt). Pick the target with
-# `-e codex_env=beta` (default: prod).
+# `-e codex_env=prod` (default: beta — always deploy beta first, then prod).
 - name: Deploy the Codex
   hosts: all
   become: true
   vars:
-    codex_env: prod  # override with -e codex_env=beta
+    codex_env: beta  # override with -e codex_env=prod
     codex_user: codex
     codex_home: /opt/codex
     codex_workers: 2

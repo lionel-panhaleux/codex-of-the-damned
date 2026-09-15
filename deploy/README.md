@@ -16,8 +16,8 @@ It deploys **one environment per run**, selected with `-e codex_env=…`:
 
 | env    | domain                                  | gunicorn port | default |
 | ------ | --------------------------------------- | ------------- | ------- |
-| `prod` | codex-of-the-damned.org (+ www alias)   | 8012          | ✓       |
-| `beta` | codex-beta.krcg.org                     | 8013          |         |
+| `beta` | codex-beta.krcg.org                     | 8013          | ✓       |
+| `prod` | codex-of-the-damned.org (+ www alias)   | 8012          |         |
 
 Both environments run the **same** PyPI package and live on the same host
 (`strasbourg` in server-setup's `deploy-targets.yml`); they differ only by
@@ -40,7 +40,7 @@ Override at the play/CLI level as needed:
 
 | variable            | default      | meaning                                   |
 | ------------------- | ------------ | ----------------------------------------- |
-| `codex_env`         | `prod`       | environment to deploy (`prod` \| `beta`)  |
+| `codex_env`         | `beta`       | environment to deploy (`beta` \| `prod`)  |
 | `codex_workers`     | `2`          | gunicorn worker processes                 |
 | `codex_user`        | `codex`      | service user                              |
 | `codex_home`        | `/opt/codex` | install tree (one venv per env inside)    |
@@ -73,8 +73,8 @@ recipes (the Codex maps to the `strasbourg` host in server-setup's
 
 ```bash
 ansible-galaxy collection install -r requirements.yml
-ansible-playbook deploy.yml -i "1.2.3.4," --user deploy --private-key ~/.ssh/deploy            # prod
-ansible-playbook deploy.yml -i "1.2.3.4," --user deploy --private-key ~/.ssh/deploy -e codex_env=beta
+ansible-playbook deploy.yml -i "1.2.3.4," --user deploy --private-key ~/.ssh/deploy            # beta (first)
+ansible-playbook deploy.yml -i "1.2.3.4," --user deploy --private-key ~/.ssh/deploy -e codex_env=prod
 ```
 
 (Run from this `deploy/` directory so `ansible.cfg` is picked up. Add
