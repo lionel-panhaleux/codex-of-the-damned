@@ -51,7 +51,15 @@ Override at the play/CLI level as needed:
 The [deploy workflow](../.github/workflows/deploy.yml) is **manual**
 (`workflow_dispatch`) — the Codex is released by hand (`make release`), so run
 this from the Actions tab once the new version is on PyPI, choosing `prod` or
-`beta`. It targets the `production` GitHub environment and reads, from it:
+`beta`. **Always deploy `beta` first, then `prod`**, for every release, so beta
+stays aligned with prod:
+
+```bash
+gh workflow run deploy.yml -f environment=beta   # wait for success, check codex-beta.krcg.org
+gh workflow run deploy.yml -f environment=prod
+```
+
+It targets the `production` GitHub environment and reads, from it:
 
 - `DEPLOY_HOST` (variable) — the target server IP;
 - `DEPLOY_HOST_KEY` (variable) — the server's SSH host key line;

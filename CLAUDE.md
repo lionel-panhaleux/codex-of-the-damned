@@ -23,6 +23,8 @@ codex                       # run dev server (DEBUG=1 codex for debug mode)
 make po                     # extract + compile translations (BABEL_LANG=es make po-update for a new language)
 ```
 
+**Releasing and deploying**: `make release` (tag + PyPI upload), then run the `Deploy` GitHub workflow (`gh workflow run deploy.yml -f environment=...`) — **always `beta` first, then `prod`**, every time, so beta stays aligned with prod.
+
 Tests require an internet connection and api.krcg.org to be up: they crawl every page in the navigation tree and issue real HTTP requests to validate every external link. Code style is black; versioning is setuptools-scm from git tags (`make release`).
 
 ## Architecture
