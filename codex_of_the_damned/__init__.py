@@ -1,16 +1,15 @@
 import copy
 import importlib.metadata
-import urllib.parse
 import re
-import unidecode
+import urllib.parse
 
 import flask
 import flask_babel
-import markupsafe
 import jinja2.exceptions
+import markupsafe
+import unidecode
 
-from . import config
-from . import navigation
+from . import config, navigation
 
 version = importlib.metadata.version("codex-of-the-damned")
 app = flask.Flask(__name__, template_folder="templates")
@@ -242,7 +241,7 @@ def index(lang_code=None, page=None):
     if not page:
         page = "index.html"
         redirect = True
-    if not lang_code or lang_code not in app.config["SUPPORTED_LANGUAGES"].keys():
+    if not lang_code or lang_code not in app.config["SUPPORTED_LANGUAGES"]:
         # if there is no valid lang code, the variable stores the path root
         # put it back in path
         if lang_code:
@@ -305,7 +304,7 @@ def _link(
 @app.context_processor
 def linker():
     path = flask.request.path
-    if path[1:3] in app.config["SUPPORTED_LANGUAGES"].keys():
+    if path[1:3] in app.config["SUPPORTED_LANGUAGES"]:
         path = path[3:]
     if path[-11:] == "/index.html":
         path = path[:-11]
@@ -378,17 +377,17 @@ def linker():
         host = flask.request.host_url.rstrip("/")
         return host + "/" + (locale or get_locale()) + page.url
 
-    return dict(
-        i18n_url=i18n_url,
-        link=link,
-        translation=translation,
-        title=title,
-        top=top,
-        next=next,
-        prev=prev,
-        external=external,
-        canonical_url=canonical_url,
-    )
+    return {
+        "i18n_url": i18n_url,
+        "link": link,
+        "translation": translation,
+        "title": title,
+        "top": top,
+        "next": next,
+        "prev": prev,
+        "external": external,
+        "canonical_url": canonical_url,
+    }
 
 
 def file_name(name):
@@ -424,4 +423,4 @@ def display_card():
         img += "/>"
         return markupsafe.Markup(img.format(name=name, fname=file_name(name)))
 
-    return dict(card=card, card_image=card_image)
+    return {"card": card, "card_image": card_image}

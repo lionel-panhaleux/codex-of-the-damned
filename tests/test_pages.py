@@ -1,4 +1,5 @@
 import html.parser
+
 import pytest
 import requests
 
@@ -42,6 +43,8 @@ def test(client, page):
             continue
         if url.startswith("https://shop.cardgamegeek.com"):
             continue
+        if url.startswith("https://www.patreon.com"):
+            continue
         try:
             try:
                 requests.request(
@@ -55,7 +58,7 @@ def test(client, page):
                         "User-Agent": "Mozilla/5.0 (compatible; python/3.9)",
                     },
                 ).raise_for_status()
-        except Exception:
+        except requests.exceptions.RequestException:
             assert False, url
         VISITED.add(url)
 

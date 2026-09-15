@@ -36,13 +36,13 @@ CRITERIA_YEARS = 3  # twice in the last 3 years"
 # year so "Charlotte, NC" or "Campina agora tem SAC" don't match
 QUALIFIER = re.compile(
     r"qualif|\bLCQ\b|\bFCQ\b|\bNCQ\b|road to|last chance|first chance"
-    r"|preparation|warm.?up|side event|store championship", re.I)
+    r"|preparation|warm.?up|side event|store championship", re.IGNORECASE)
 CONTINENTAL = re.compile(
     r"\b(?:NAC|SAC|APAC|EC)\s*'?\d{2,4}\b"
-    r"|continental championship|european championship", re.I)
+    r"|continental championship|european championship", re.IGNORECASE)
 NATIONAL = re.compile(
     r"\bNC\s*'?\d{2,4}\b|national championship|nationals\b"
-    r"|nazionale|nacional|\bchampionship\b", re.I)
+    r"|nazionale|nacional|\bchampionship\b", re.IGNORECASE)
 
 
 def esc(text: str) -> str:
@@ -201,7 +201,7 @@ def main() -> None:
 
     data = json.loads(args.input.read_text())
     clusters, noise, params = data["clusters"], data["noise"], data["params"]
-    today = datetime.date.today()
+    today = datetime.datetime.now(tz=datetime.UTC).date()
     cutoff = today.replace(year=today.year - CRITERIA_YEARS).isoformat()
     total = sum(c["size"] for c in clusters) + len(noise)
 

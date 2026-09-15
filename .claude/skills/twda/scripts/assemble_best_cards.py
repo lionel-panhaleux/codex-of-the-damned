@@ -27,18 +27,18 @@ BEST = REPO / "codex_of_the_damned" / "templates" / "best-cards"
 CALL_RE = re.compile(
     r'\{%\s*call\s+layout\.card_column\(\s*"((?:[^"\\]|\\.)*)"[^)]*\)\s*%\}'
     r'(.*?)\{%\s*endcall\s*%\}',
-    re.S,
+    re.DOTALL,
 )
 
 
 def parse_proposal(path: str) -> dict[str, tuple[list[str], bool]]:
     """slug -> (ordered card names, is_all_time)."""
     out: dict[str, tuple[list[str], bool]] = {}
-    for sec in re.split(r"(?=^## )", pathlib.Path(path).read_text(), flags=re.M):
+    for sec in re.split(r"(?=^## )", pathlib.Path(path).read_text(), flags=re.MULTILINE):
         m = re.match(r"## (\S+)\s+\(\d+ cards( · all-time)?\)", sec)
         if not m:
             continue
-        cards = re.findall(r"^- (.+?) — ", sec, flags=re.M)
+        cards = re.findall(r"^- (.+?) — ", sec, flags=re.MULTILINE)
         out[m.group(1)] = (cards, bool(m.group(2)))
     return out
 

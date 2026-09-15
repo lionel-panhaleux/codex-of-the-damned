@@ -179,10 +179,10 @@ def main() -> None:
         return total - bisect.bisect_left(dates, iso)
 
     def card_obj(name: str):
-        base = name[:-6] if name.endswith(" (ADV)") else name
+        base = name.removesuffix(" (ADV)")
         try:
             return cards[base]
-        except Exception:
+        except KeyError:
             return None
 
     def stat(name: str) -> dict | None:

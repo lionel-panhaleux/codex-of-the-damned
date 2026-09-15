@@ -52,3 +52,7 @@ include = ["codex_of_the_damned*"]
 "*" = ["*.mo"]
 
 [tool.setuptools_scm]
+
+[tool.ruff]
+# the TWDA skill scripts import each other (twda, cluster) as local modules
+src = [".", ".claude/skills/twda/scripts"]

@@ -62,7 +62,7 @@ def main() -> None:
         red_flag = "encompassing 30 years" in src or "spanning 30" in src
         stats = alltime_stats if (red_flag and alltime_stats) else window_stats
 
-        def repl(m: re.Match) -> str:
+        def repl(m: re.Match, stats=stats, page=page) -> str:
             raw = m.group(1).replace('\\"', '"')
             # match the report key: trim stray space, drop crypt group suffix
             candidates = [raw, raw.strip(), re.sub(r"\s*\(G\d+\)\s*$", "", raw).strip()]

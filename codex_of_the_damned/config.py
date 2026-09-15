@@ -1,11 +1,12 @@
 import os
+from typing import ClassVar
 
 
-class BaseConfig(object):
-    DEBUG = os.environ.get("DEBUG", False)
+class BaseConfig:
+    DEBUG = os.environ.get("DEBUG")
     TESTING = DEBUG
     # Translation
-    SUPPORTED_LANGUAGES = {
+    SUPPORTED_LANGUAGES: ClassVar[dict[str, str]] = {
         "en": "English",
         "fr": "Francais",
         "es": "Espanol",

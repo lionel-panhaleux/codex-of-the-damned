@@ -21,7 +21,7 @@ import re
 import sys
 
 sys.path.insert(0, str(pathlib.Path(__file__).parent))
-import twda  # noqa: E402
+import twda
 
 REPO = pathlib.Path(__file__).resolve().parents[4]
 BEST = REPO / "codex_of_the_damned" / "templates" / "best-cards"
@@ -71,7 +71,7 @@ def main():
         red = "encompassing 30 years" in src or "spanning 30" in src
         dc, cp = (all_dc, all_cp) if red else (win_dc, win_cp)
 
-        def repl(m):
+        def repl(m, dc=dc, cp=cp, page=page):
             nonlocal changed
             name = m.group(1).replace('\\"', '"')
             base = re.sub(r"\s*\(G\d+\)\s*$", "", name)

@@ -15,8 +15,7 @@ import time
 import urllib.request
 
 import msgspec.json
-from krcg import loader
-from krcg import models
+from krcg import loader, models
 from krcg import twda as krcg_twda
 
 TWDA_URL = "https://static.krcg.org/data/v5/twda.json"

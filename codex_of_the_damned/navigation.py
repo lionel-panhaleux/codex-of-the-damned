@@ -1,5 +1,6 @@
 import collections
 import re
+
 import unidecode
 from flask_babel import lazy_gettext
 

@@ -121,7 +121,7 @@ def ability_text(s: dict) -> str:
     """The vampire's special-ability text, minus the sect/flavour label."""
     return re.sub(
         r"^(anarch|camarilla|sabbat|independent|laibon)[.:]?\s*",
-        "", (s.get("text") or "").strip(), flags=re.I,
+        "", (s.get("text") or "").strip(), flags=re.IGNORECASE,
     ).strip()
 
 
