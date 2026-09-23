@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2026-09-15 09:13+0200\n"
+"POT-Creation-Date: 2026-09-23 17:47+0200\n"
 "PO-Revision-Date: 2025-03-18 18:52+0100\n"
 "Last-Translator: \n"
 "Language: fr\n"
@@ -13385,7 +13385,7 @@ msgid "Now go to the %(preferences)s tab and choose a suitable nickname. You're 
 msgstr "Maintenant retournez sur l'onglet %(preferences)s et choisissez un surnom adapté. Vous êtes prêt."
 
 #: codex_of_the_damned/templates/online-play/lackeyccg.html:105
-#: codex_of_the_damned/templates/online-play/tabletop-simulator.html:42
+#: codex_of_the_damned/templates/online-play/tabletop-simulator.html:41
 #: codex_of_the_damned/templates/online-play/vtes-online.html:31
 msgid "Play"
 msgstr "Jouer"
@@ -13434,7 +13434,7 @@ msgstr ""
 "de configurer votre mapping de clavier comme US au niveau du système."
 
 #: codex_of_the_damned/templates/online-play/lackeyccg.html:154
-#: codex_of_the_damned/templates/online-play/tabletop-simulator.html:61
+#: codex_of_the_damned/templates/online-play/tabletop-simulator.html:60
 msgid "Useful commands"
 msgstr "Commandes utiles"
 
@@ -13448,7 +13448,7 @@ msgid "Lock or Unlock"
 msgstr "Incliner ou Redresser"
 
 #: codex_of_the_damned/templates/online-play/lackeyccg.html:164
-#: codex_of_the_damned/templates/online-play/tabletop-simulator.html:65
+#: codex_of_the_damned/templates/online-play/tabletop-simulator.html:64
 msgid "Flip card"
 msgstr "Retourner une carte"
 
@@ -13648,14 +13648,14 @@ msgstr ""
 
 #: codex_of_the_damned/templates/online-play/tabletop-simulator.html:29
 #, python-format
-msgid "Buy and install the %(tabletop_simulator)s application using <em>Steam</em>. Then install %(this_plugin)s."
-msgstr "Achetez et installez l'application %(tabletop_simulator)s en utilisant <em>Steam</em>. Puis installez %(this_plugin)s."
+msgid ""
+"Buy and install the %(tabletop_simulator)s application using <em>Steam</em>. Then install a V:tES plugin from the "
+"<em>Steam Workshop</em>."
+msgstr ""
+"Achetez et installez l'application %(tabletop_simulator)s en utilisant <em>Steam</em>. Puis installez un plugin V:tES "
+"depuis le <em>Steam Workshop</em>."
 
-#: codex_of_the_damned/templates/online-play/tabletop-simulator.html:34
-msgid "this plugin"
-msgstr "ce plugin"
-
-#: codex_of_the_damned/templates/online-play/tabletop-simulator.html:44
+#: codex_of_the_damned/templates/online-play/tabletop-simulator.html:43
 msgid ""
 "Find a group of friends then create a game and invite them. Draw a colour counter from the colors bag and change your"
 " color accordingly. Click the \"load deck\" button to load your deck."
@@ -13663,7 +13663,7 @@ msgstr ""
 "Trouvez un groupe d'amis puis créez une partie et invitez-les. Piochez un jeton de couleur du sac de couleurs et "
 "changez votre couleur en conséquence. Cliquez sur le bouton \"load deck\" pour charger votre deck."
 
-#: codex_of_the_damned/templates/online-play/tabletop-simulator.html:54
+#: codex_of_the_damned/templates/online-play/tabletop-simulator.html:53
 msgid ""
 "Make sure you set the rotation on 90º (topside button on the right) for easy lock and unlock, and set the gravity to "
 "the maximum value in the Options > Physics menu for faster cards and tokens displacements. Enabling the turns system "
@@ -13673,23 +13673,23 @@ msgstr ""
 "facilement, et de fixer la gravité à sa valeur maximum dans le menu Options > Physics pour des déplacements de cartes"
 " et de jetons plus rapides. Activer le systèmes de tours dans Options > Turns peut aussi être utile."
 
-#: codex_of_the_damned/templates/online-play/tabletop-simulator.html:63
+#: codex_of_the_damned/templates/online-play/tabletop-simulator.html:62
 msgid "Lock"
 msgstr "Incliner"
 
-#: codex_of_the_damned/templates/online-play/tabletop-simulator.html:64
+#: codex_of_the_damned/templates/online-play/tabletop-simulator.html:63
 msgid "Unlock"
 msgstr "Redresser"
 
-#: codex_of_the_damned/templates/online-play/tabletop-simulator.html:66
+#: codex_of_the_damned/templates/online-play/tabletop-simulator.html:65
 msgid "Peek at a card"
 msgstr "Regarder le dessous d'une carte"
 
-#: codex_of_the_damned/templates/online-play/tabletop-simulator.html:67
+#: codex_of_the_damned/templates/online-play/tabletop-simulator.html:66
 msgid "Hover over a deck and type a number N"
 msgstr "Passer sur un deck et tapez un nombre N"
 
-#: codex_of_the_damned/templates/online-play/tabletop-simulator.html:67
+#: codex_of_the_damned/templates/online-play/tabletop-simulator.html:66
 msgid "Draw N cards"
 msgstr "Piocher N cartes"
 
@@ -27249,4 +27249,7 @@ msgstr ""
 
 #~ msgid "Cards finder"
 #~ msgstr "Recherche de cartes"
+
+#~ msgid "this plugin"
+#~ msgstr "ce plugin"
 
