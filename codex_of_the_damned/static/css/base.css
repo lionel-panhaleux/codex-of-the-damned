@@ -496,6 +496,16 @@ table.column-4 {
     border-style: solid;
     padding: 0.5em;
     color: #ec5354;
+    white-space: nowrap;
+}
+
+.sponsor a + a {
+    margin-left: 1em;
+}
+
+.sponsor a img {
+    height: 1.2em;
+    vertical-align: text-bottom;
 }
 
 .sponsor a:hover,
