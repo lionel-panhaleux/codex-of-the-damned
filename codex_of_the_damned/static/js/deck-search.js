@@ -131,7 +131,7 @@ class DeckSearch {
             let date = document.createElement("td")
             let player = document.createElement("td")
             let name = document.createElement("td")
-            date.textContent = deck.date
+            date.textContent = deck.event ? deck.event.date : deck.date
             player.textContent = wrapText(deck.player, 30)
             name.textContent = wrapText(deck.name, 30)
             row.appendChild(date)
@@ -157,7 +157,7 @@ class DeckSearch {
             return
         }
         try {
-            displayDeck(await this.fetchDeck(data.id))
+            displayDeck(toDecklist(await this.fetchDeck(data.id)))
         } catch (error) {
             // textContent: error.message can contain the raw ?id= URL parameter
             this.result_message.textContent = error.message
@@ -208,6 +208,66 @@ class DeckSearch {
             }
         }
         return await response.json()
+    }
+}
+// library sections order, as in the archetypes decklists
+const library_order = [
+    "Master",
+    "Conviction",
+    "Action",
+    "Ally",
+    "Equipment",
+    "Political Action",
+    "Retainer",
+    "Power",
+    "Action Modifier",
+    "Reaction",
+    "Combat",
+    "Event",
+]
+function cardName(card) {
+    return card.suffix ? `${card.printed_name} (${card.suffix})` : card.printed_name
+}
+function sortCards(cards) {
+    return cards.sort((a, b) => b.count - a.count || a.name.localeCompare(b.name))
+}
+function sumCount(cards) {
+    return cards.reduce((total, card) => total + card.count, 0)
+}
+// convert a KRCG v5 deck to the decklist.js format (the one of the archetypes JSON files)
+function toDecklist(deck) {
+    const crypt = []
+    const sections = {}
+    for (const card of deck.cards) {
+        const info = { id: card.id, name: cardName(card), count: card.count }
+        if (card.kind === "Crypt") {
+            crypt.push(info)
+        } else {
+            const type = card.types.join("/")
+            sections[type] = sections[type] || []
+            sections[type].push(info)
+        }
+    }
+    const rank = (type) => {
+        const index = library_order.indexOf(type.split("/")[0])
+        return index < 0 ? library_order.length : index
+    }
+    const library = Object.entries(sections)
+        .sort(([a], [b]) => rank(a) - rank(b) || a.localeCompare(b))
+        .map(([type, cards]) => ({ type: type, count: sumCount(cards), cards: sortCards(cards) }))
+    const event = deck.event || {}
+    return {
+        id: deck.id,
+        name: deck.name,
+        player: deck.player,
+        author: deck.author,
+        event: event.name,
+        place: event.place,
+        date: event.date,
+        players_count: event.players_count,
+        comments: deck.comment,
+        crypt: { count: sumCount(crypt), cards: sortCards(crypt) },
+        library: { count: library.reduce((total, section) => total + section.count, 0), cards: library },
     }
 }
 async function load() {

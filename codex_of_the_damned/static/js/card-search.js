@@ -19,6 +19,7 @@ class CardSearch {
         this.card_title = document.getElementById("card-title")
         this.card_text = document.getElementById("card-text")
         this.rulings = document.getElementById("rulings")
+        this.expansions = fetchExpansions()
         this.completion = new Completion(document.getElementById("card-name"), completeCardName, this.result_message)
         this.state = new UrlState(async (data) => this.displayCard(data))
         this.form.addEventListener("submit", async (ev) => await this.submit(ev))
@@ -79,38 +80,58 @@ class CardSearch {
         if (!data) {
             return
         }
+        const expansions = await this.expansions
         const lang = document.documentElement.lang
         let title = data.printed_name
-        let text = data.card_text
+        let text = data.text
         let translation
         let base_image = data.url
-        if (data._i18n && lang in data._i18n) {
-            if ("name" in data._i18n[lang]) {
-                title = data._i18n[lang].name + `<br><span class="translation">${title}</span>`
+        const i18n = data.i18n && data.i18n[lang]
+        if (i18n) {
+            if (i18n.name) {
+                title = i18n.name + `<br><span class="translation">${title}</span>`
             }
-            translation = text
-            text = data._i18n[lang].card_text
-            if (await urlExists(data._i18n[lang].url)) {
-                base_image = data._i18n[lang].url
+            if (i18n.text) {
+                translation = text
+                text = i18n.text
+            }
+            if (i18n.url && (await urlExists(i18n.url))) {
+                base_image = i18n.url
             }
         }
         this.card_image.src = base_image
         this.card_image.addEventListener("click", (ev) => this.resetSet(base_image))
         if (data.group) {
-            title += group_map[data.group]
+            title += group_map[data.group.replace(/^G/, "").toUpperCase()] ?? ""
         }
-        if (data.adv) {
+        if (data.advanced) {
             title += " <i>|</i>"
         }
-        title = title.replace("(ADV)", "<i>|</i>")
         this.card_title.innerHTML = title
+        // KRCG v5: one print per set, set metadata (name, dates, bundles) comes from expansions.json
+        const sets = data.prints.map((print) => {
+            const expansion = expansions[print.set.code] || { name: print.set.code, release_date: null, bundles: {} }
+            return {
+                code: print.set.code,
+                name: expansion.name,
+                scan: print.url,
+                prints: print.occurrences.map((occurrence) => {
+                    const bundle = expansion.bundles[occurrence.bundle]
+                    return {
+                        ...occurrence,
+                        bundle_name: bundle ? bundle.name : occurrence.bundle,
+                        release_date: occurrence.date || (bundle && bundle.release_date) || expansion.release_date,
+                    }
+                }),
+            }
+        })
         let pelem = document.createElement("p")
         pelem.classList.add("card-id")
         pelem.textContent = `#${data.id}`
         this.image_footer.appendChild(pelem)
         pelem = document.createElement("p")
         pelem.classList.add("card-print")
-        if (Object.entries(data.sets).some(isInPrint)) {
+        if (sets.some(isInPrint)) {
             pelem.textContent = "Currently in print"
         } else {
             pelem.textContent = "Not in print"
@@ -127,59 +148,46 @@ class CardSearch {
             this.card_text.appendChild(document.createElement("hr"))
             this.addCardText(translation, data.types, "translation")
         }
-        let sets = Object.entries(data.sets)
         sets.sort(compareSet)
         this.card_sets.appendChild(document.createElement("hr"))
-        const existing_scans = await Promise.all(Object.values(data.scans).map((x) => urlExists(x)))
-        let index = 0
-        for (let key in data.scans) {
-            if (!existing_scans[index]) {
-                delete data.scans[key]
-            }
-            index += 1
-        }
-        for (let [name, info] of sets) {
+        const existing_scans = await Promise.all(sets.map((set) => set.scan && urlExists(set.scan)))
+        for (const [index, set] of sets.entries()) {
+            const name = set.name
             let set_info = document.createElement("div")
             set_info.classList.add("set-info")
             let set_name = document.createElement("p")
             set_name.classList.add("set-name")
-            if (name in data.scans) {
+            if (existing_scans[index]) {
                 set_name.classList.add("selectable")
-                set_name.addEventListener("click", async (ev) => this.selectSet(set_info, name, data.scans[name]))
-                if (name === state.set) {
-                    await this.selectSet(set_info, name, data.scans[name])
+                set_name.addEventListener("click", async (ev) => this.selectSet(set_info, name, set.scan))
+                if (name === state.set || set.code === state.set) {
+                    await this.selectSet(set_info, name, set.scan)
                 }
                 set_name.innerHTML = '<span class="icon">&#xf03e</span> '
             }
-            let i18n_name = name
-            if (data._i18n && lang in data._i18n) {
-                if (name in data._i18n[lang].sets) {
-                    i18n_name = data._i18n[lang].sets[name]
-                }
-            }
-            if (isInPrint([name, info])) {
-                set_name.innerHTML += `<strong>${i18n_name}</strong>`
+            if (isInPrint(set)) {
+                set_name.innerHTML += `<strong>${name}</strong>`
             } else {
-                set_name.innerHTML += i18n_name
+                set_name.innerHTML += name
             }
             set_info.appendChild(set_name)
             let set_detail = document.createElement("div")
             set_detail.classList.add("set-detail")
             set_info.appendChild(set_detail)
-            for (const card_print of info) {
+            for (const card_print of set.prints) {
                 let set_print = document.createElement("p")
                 set_print.classList.add("set-print")
                 set_print.textContent = ""
-                if ("rarity" in card_print) {
-                    set_print.textContent += card_print.rarity
+                if (card_print.frequency) {
+                    set_print.textContent += card_print.frequency
                 }
-                if ("precon" in card_print) {
-                    set_print.textContent += card_print.precon
+                if (card_print.type === "Precon") {
+                    set_print.textContent += card_print.bundle_name
                 }
-                if ("copies" in card_print) {
+                if (card_print.copies) {
                     set_print.textContent += ` (${card_print.copies})`
                 }
-                if ("release_date" in card_print) {
+                if (card_print.release_date) {
                     set_print.textContent += ` ${card_print.release_date.replace(/([^-]*)-/g, "$1‑")}`
                 }
                 set_detail.appendChild(set_print)
@@ -193,7 +201,8 @@ class CardSearch {
             this.rulings.appendChild(rulings_list)
             for (const ruling of data.rulings) {
                 let ruling_item = document.createElement("li")
-                let ruling_markdown = ruling.text
+                // drop the card ID from {id|Card Name} references
+                let ruling_markdown = ruling.text.replace(/\{\d+\|([^}]*)\}/g, "{$1}")
                 for (const reference of ruling.references) {
                     ruling_markdown = ruling_markdown.replaceAll(
                         reference.text,
@@ -201,7 +210,8 @@ class CardSearch {
                     )
                 }
                 ruling_item.dataset.markdown = ruling_markdown
-                let ruling_text = ruling.text
+                // format first: the reference links below would otherwise be taken for <Card> references
+                let ruling_text = formatText(ruling.text)
                 for (const reference of ruling.references) {
                     // use non-breaking spaces and hyphens
                     const non_breaking_ref = reference.label.replace(" ", " ").replace(/([^-]*)-/g, "$1‑")
@@ -211,7 +221,7 @@ class CardSearch {
                     )
                     rulings_map[`[${non_breaking_ref}]`] = reference.url
                 }
-                ruling_item.innerHTML = formatText(ruling_text)
+                ruling_item.innerHTML = ruling_text
                 addCardEvents(ruling_item)
                 let copy_button = document.createElement("span")
                 copy_button.classList.add("icon")
@@ -287,21 +297,16 @@ class CardSearch {
                 pelem.classList.add(cla)
             }
             if (types.includes("Vampire") || types.includes("Imbued")) {
-                section = formatText(section)
-                section = section.replace(/(?:\.\s\+)([^\.]*)/g, (_, x) => `. <strong>+${x.replace(" ", " ")}</strong>`)
-                section = section.replace(
-                    /(?:\.\s)(Scarce|Black Hand|Red List|Seraph|Infernal|Slave|Sterile)/g,
-                    (_, x) => `. <strong>${x.replace(" ", " ")}</strong>`
-                )
-                if (section.includes(":")) {
-                    const parts = section.split(":")
-                    const sect = parts[0]
-                    const ability = parts.slice(1).join(":")
-                    pelem.innerHTML = `<strong>${formatText(sect)}:</strong> ${formatText(ability)}`
+                // split before formatting: formatText is not idempotent and card names can contain ":"
+                const colon = section.indexOf(":")
+                if (colon >= 0) {
+                    const sect = section.slice(0, colon)
+                    const ability = section.slice(colon + 1)
+                    pelem.innerHTML = `<strong>${formatText(sect)}:</strong> ${formatAbility(ability)}`
                 } else if (types.includes("Vampire") && index === 0) {
                     pelem.innerHTML = `<strong>${formatText(section)}</strong>`
                 } else {
-                    pelem.innerHTML = section
+                    pelem.innerHTML = formatAbility(section)
                 }
             } else if (
                 sections.length > 1 &&
@@ -317,19 +322,24 @@ class CardSearch {
         }
     }
 }
-function isInPrint(setInfo) {
-    for (detail of setInfo[1]) {
-        if ("release_date" in detail && detail.release_date >= "2017-05-01" && !setInfo[0].match(/(P|p)romo/g)) {
-            if ("precon" in detail && detail.precon == "EC Berlin Edition") {
-                return false
-            }
-            return true
-        }
-    }
-    if (setInfo[0] == "Print on Demand") {
+function isInPrint(set) {
+    if (set.code === "POD") {
         return true
     }
-    return false
+    if (set.code === "Promo" || set.name.match(/promo/i)) {
+        return false
+    }
+    return set.prints.some((detail) => detail.release_date && detail.release_date >= "2017-05-01")
+}
+async function fetchExpansions() {
+    try {
+        const response = await fetch("https://static.krcg.org/data/v5/expansions.json")
+        if (response.ok) {
+            return Object.fromEntries((await response.json()).map((expansion) => [expansion.code, expansion]))
+        }
+    } catch { }
+    // degrade gracefully: set codes are displayed instead of names
+    return {}
 }
 async function urlExists(url) {
     try {
@@ -416,15 +426,17 @@ const disc_map = {
     "[VIS]": '<span class="krcg-icon">U</span>',
 }
 function formatText(text) {
-    // replace card names by span with card image popup (first as disciplines map introduce / in the text)
+    // replace card names by span with card image popup (first as disciplines map introduce < in the text)
+    // card references are <Card Name> in card texts and {id|Card Name} in rulings
     // replace disciplines text with icons
     return text
-        .replace(
-            /(?:\s\/|\{)([^\/\}]*)(?:\/\s|\})/g,
-            (_, x) =>
-                ` <span class="krcg-card" data-name="${x.replace("'", "").replace('"', "")}">` +
-                `${x.replace(" ", " ")}</span> `
-        )
+        .replace(/<([^<>]*)>|\{(?:\d+\|)?([^}]*)\}/g, (_, x, y) => {
+            const name = x ?? y
+            return (
+                `<span class="krcg-card" data-name="${name.replace("'", "").replace('"', "")}">` +
+                `${name.replace(" ", " ")}</span>`
+            )
+        })
         .replace(
             RegExp(
                 Object.keys(disc_map)
@@ -435,12 +447,21 @@ function formatText(text) {
             (x) => disc_map[x]
         )
 }
+function formatAbility(text) {
+    // bold the vampire's bonuses (+1 bleed) and traits (Scarce, Black Hand...)
+    return formatText(text)
+        .replace(/(?:\.\s\+)([^\.]*)/g, (_, x) => `. <strong>+${x.replace(" ", " ")}</strong>`)
+        .replace(
+            /(?:\.\s)(Scarce|Black Hand|Red List|Seraph|Infernal|Slave|Sterile)/g,
+            (_, x) => `. <strong>${x.replace(" ", " ")}</strong>`
+        )
+}
 function compareSet(a, b) {
-    a_date = Math.max(...a[1].map((o) => ("release_date" in o ? new Date(o.release_date) : new Date("1990-01-01"))))
-    b_date = Math.max(...b[1].map((o) => ("release_date" in o ? new Date(o.release_date) : new Date("1990-01-01"))))
-    const ret = b_date - a_date
+    const latest = (set) =>
+        Math.max(...set.prints.map((o) => new Date(o.release_date || "1990-01-01")))
+    const ret = latest(b) - latest(a)
     if (ret === 0) {
-        return a[0].localeCompare(b[0])
+        return a.name.localeCompare(b.name)
     }
     return ret
 }
