@@ -5,6 +5,11 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## Unreleased
+
+- Update "What Should I Buy?" article: Secrets of New York and Noites Brasileiras
+- Update "Fundamentals" article with their new cards
+
 ## 1.96 (2026-09-15)
 
 - Update "What Should I Buy?" article: Anarchs Unbound is out of print

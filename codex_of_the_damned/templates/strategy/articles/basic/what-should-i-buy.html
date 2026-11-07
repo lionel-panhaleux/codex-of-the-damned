@@ -313,7 +313,8 @@
         %}
         The {{ v5_format }} is now a real thing. Made official in September 2025, it restricts
         deckbuilding to the modern V5 products — the Fifth Edition preconstructed decks, the New Blood packs,
-        Fall of London, Shadows of Berlin, the 30th Anniversary set and a specific handful of promo cards — while
+        Fall of London, Shadows of Berlin, the 30th Anniversary set, Secrets of New York, Noites Brasileiras and a
+        specific handful of promo cards — while
         leaving out the legacy products and the print-on-demand reprints. The linked announcement spells out exactly
         which products and promos are in, and which are out.
         {% endtrans %}
@@ -572,6 +573,24 @@
         powerful and intricate decks cheaply, like {{ baltimore_purge }}, {{ ravnos_clown_car }},
         {{ giovanni_powerbleed }}, {{ shambling_hordes }}, {{ dementation_bleed }}, {{ shalmath }},
         or even {{ the_unnamed }}.
+        {% endtrans %}
+    </p>
+</div>
+
+<div class="column-2">
+    <h3>{{ _('New York and Brazil') }}</h3>
+    <img src="{{ url_for('static', filename='img/new-york-and-brazil.webp') }}" alt="Secrets of New York and Noites Brasileiras">
+    <p>
+        {% trans trimmed
+        secrets_of_new_york=external("https://www.blackchantry.com/vampire-the-eternal-struggle-fifth-edition/secrets-of-new-york/",
+        "Secrets of New York"),
+        noites_brasileiras=external("https://www.blackchantry.com/vampire-the-eternal-struggle-fifth-edition/noites-brasileiras/",
+        "Noites Brasileiras")
+        %}
+        Like Fall of London, {{ secrets_of_new_york }} and {{ noites_brasileiras }} (October 2026) are card bundles,
+        not playable decks: a couple of new vampires for most clans and a handful of library cards, Camarilla
+        primogens in the first and mostly combat in the second. They come after the chosen clan's precon and New
+        Blood.
         {% endtrans %}
     </p>
 </div>
@@ -1234,6 +1253,73 @@
         and {{ dia_de_los_muertos }}. {{ wall_street }} finally gets a wide print, and {{ cardinal_benediction }} and
         {{ private_audience }} (now free) got improved card text. They also include a generous staples count,
         {{ dreams_of_the_sphinx }} and {{ pentex }} among them.
+        {% endtrans %}
+    </p>
+</div>
+
+<div class="column-2">
+    <h3>{{ _('New York and Brazil') }}</h3>
+    <img src="{{ url_for('static', filename='img/new-york-and-brazil.webp') }}" alt="Secrets of New York and Noites Brasileiras">
+    <p>
+        {% trans trimmed
+        secrets_of_new_york=external("https://www.blackchantry.com/vampire-the-eternal-struggle-fifth-edition/secrets-of-new-york/",
+        "Secrets of New York"),
+        noites_brasileiras=external("https://www.blackchantry.com/vampire-the-eternal-struggle-fifth-edition/noites-brasileiras/",
+        "Noites Brasileiras"),
+        fall_of_london=external("https://www.blackchantry.com/products/legacy/vampire-the-eternal-struggle-fifth-edition/fall-of-london/",
+        _("Fall of London"))
+        %}
+        Released in October 2026, {{ secrets_of_new_york }} and {{ noites_brasileiras }} are two stand-alone
+        54-card bundles in the vein of {{ fall_of_london }}, each with about twenty new vampires and 13 new library
+        cards. They are too recent to have tournament results yet.
+        {% endtrans %}
+    </p>
+    <p>
+        {% trans trimmed
+        respected_representative=card("Respected Representative"),
+        backroom_deal=card("Backroom Deal"),
+        emboldened_councilor=card("Emboldened Councilor"),
+        the_art_hole=card("The Art Hole, New York"),
+        information_exchange=card("Information Exchange"),
+        deadly_secrets=card("Deadly Secrets"),
+        st_patricks=card("St. Patrick's Cathedral, New York"),
+        vial=card("Vial of Zapathasura's Vitae"),
+        aaron_fletcher=card("Aaron Fletcher, Silent Investor"),
+        father_anthony=card("Father Anthony"),
+        ron_zertnert=card("Ron Zertnert, S.A.D. Agent"),
+        circulatory_system_outlet=card("Circulatory System Outlet"),
+        double_spiral=card("Double Spiral Corporation")
+        %}
+        Secrets of New York is about the Camarilla primogen: {{ respected_representative }} grants the title, and
+        {{ backroom_deal }}, {{ emboldened_councilor }} and {{ the_art_hole }} reward it. The Nosferatu {{ nosferatu }}
+        get {{ information_exchange }}, a damaging vote, and {{ deadly_secrets }}; the Lasombra {{ lasombra }} get
+        {{ st_patricks }} and the Ravnos {{ ravnos }} get {{ vial }}. The rest is for every deck: the allies
+        {{ aaron_fletcher }}, {{ father_anthony }} and {{ ron_zertnert }}, and the locations
+        {{ circulatory_system_outlet }} and {{ double_spiral }}.
+        {% endtrans %}
+    </p>
+    <p>
+        {% trans trimmed
+        meia_lua=card("Meia Lua"),
+        chave_de_braco=card("Chave de Braço"),
+        halito_negro=card("Hálito Negro"),
+        bar_ultimo_trago=card("Bar Último Trago, Campina Grande"),
+        lambreta=card("Lambreta"),
+        iara=card("Iara"),
+        academia=card("Academia de Campeões, São Paulo"),
+        caoera=card("Cãoera"),
+        destilaria=card("Destilaria Estrela da Paraíba"),
+        mulher_de_branco=card("Mulher de Branco"),
+        palavra_sagrada=card("Palavra Sagrada, Rio de Janeiro"),
+        convento_da_penha=card("Convento da Penha, Vila Velha"),
+        porto_de_santos=card("Porto de Santos")
+        %}
+        Noites Brasileiras is mostly about combat: {{ meia_lua }} and {{ chave_de_braco }} for Potence {{ pot }},
+        {{ halito_negro }} for the Path of Death and the Soul, and {{ bar_ultimo_trago }}. {{ lambreta }} and, for the
+        Malkavians {{ malkavian }}, {{ iara }} get past blockers. The other clan cards are {{ academia }} for the
+        Brujah {{ brujah }}, {{ caoera }} and {{ destilaria }} for the Nosferatu {{ nosferatu }}, {{ mulher_de_branco }}
+        for the Hecata {{ hecata }} and {{ palavra_sagrada }} for the Caitiff {{ caitiff }}. {{ convento_da_penha }}
+        gives stealth to political actions, and {{ porto_de_santos }} is for every deck.
         {% endtrans %}
     </p>
 </div>
