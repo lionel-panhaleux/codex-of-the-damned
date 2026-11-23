@@ -20,7 +20,7 @@
     </p>
 </div>
 
-{% call layout.card_column("Algirdas, The Solar Prophet", decks=1, copies="1") %}
+{% call layout.card_column("Algirdas, The Solar Prophet", decks=3, copies="1-3") %}
 {% trans trimmed %}
 A seven-capacity Banu Haqim {{ banu_haqim }} <em>bishop</em> backing the path's
 combat pumps with superior {{ ANI }}{{ CEL }}{{ THA }}. His strike tax drains a
@@ -28,7 +28,7 @@ blood from younger opponents each time they answer a fight, blunting defenses.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Kalyani, Agent of Doom", decks=1, copies="1") %}
+{% call layout.card_column("Kalyani, Agent of Doom", decks=3, copies="1-4") %}
 {% trans trimmed %}
 The same superior {{ ANI }}{{ CEL }}{{ THA }} as her Banu Haqim {{ banu_haqim }}
 clanmate, with {{ obf }} on top and a standing +1 strength that sharpens every hand
@@ -36,44 +36,78 @@ strike. A capable seven-capacity <em>bishop</em>.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Abuse of Power", decks=4, copies="1-3") %}
-{% trans trimmed %}
-The path's signature action and its entire thesis: a stealthy rush that bills
-the opposing Methuselah one pool whenever the fight ends with the opponent down.
-{% endtrans %}
-{% endcall %}
-
-{% call layout.card_column("Twisted Bloodhound", decks=4, copies="1-3") %}
-{% trans trimmed abuse_of_power=card("Abuse of Power") %}
-A one-pool ghoul that hands its employer a rush on demand, the cheapest way to
-keep the prey's minions in combat turn after turn.
-{% endtrans %}
-{% endcall %}
-
-{% call layout.card_column("Rage of Apedemak", decks=3, copies="2-7") %}
+{% call layout.card_column("Rage of Apedemak", decks=10, copies="2-8") %}
 {% trans trimmed %}
 The path's main damage pump, open to Animalism {{ ani }} or Potence {{ pot }}
 crypts. The extra hand size cannot be overestimated: it is a huge cycling effect, particularly handy in a combat deck.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Sentry Signal", decks=2, copies="1-2") %}
+{% call layout.card_column("Abuse of Power", decks=9, copies="1-3") %}
 {% trans trimmed %}
-Defence for a crypt that could otherwise lack some: both the unlock and bleed reduction effects are interesting.
+The path's signature action and its entire thesis: a stealthy rush that bills
+the opposing Methuselah one pool whenever the fight ends with the opponent down.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Soulgrinder", decks=2, copies="2-6") %}
+{% call layout.card_column("Twisted Bloodhound", decks=9, copies="1-3") %}
+{% trans trimmed abuse_of_power=card("Abuse of Power") %}
+A one-pool ghoul that hands its employer a rush on demand, the cheapest way to
+keep the prey's minions in combat turn after turn.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Soulgrinder", decks=6, copies="2-6") %}
 {% trans trimmed %}
 A heavy strike for Potence {{ pot }} or Blood Sorcery {{ tha }} vampires. The +2
 hand strike is already strong, but ignoring Fortitude {{ for }} prevention can be key depending on the meta.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Wall of Filth", decks=2, copies="2-5") %}
+{% call layout.card_column("Wall of Filth", decks=6, copies="2-5") %}
 {% trans trimmed rego_motum=card("Rego Motum") %}
 Great prevention for Protean {{ pro }}, though Blood Sorcery {{ tha }} already has {{ rego_motum }}.
 It also avoids jam easily as long as it is not played in too high numbers.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Sentry Signal", decks=5, copies="1-9") %}
+{% trans trimmed %}
+Defence for a crypt that could otherwise lack some: both the unlock and bleed reduction effects are interesting.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Augury of Doom", decks=5, copies="1-2") %}
+{% trans trimmed
+fame=card("Fame"),
+army_of_rats=card("Army of Rats")
+%}
+Turns torporized opponents into steady pool pressure, much like {{ fame }} or
+{{ army_of_rats }}. Since it burns once the prey has no vampire in torpor, it pays
+off most in relentless rush decks that keep the prey's vampires down.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Pillars Fall", decks=4, copies="2-4") %}
+{% trans trimmed %}
+A rush that converts combat wins into a permanent bleed bonus, letting a beatdown
+crypt close out the prey once its blockers are cleared.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Hunting the Quarry", decks=2, copies="3-4") %}
+{% trans trimmed telepathic_tracking=card("Telepathic Tracking") %}
+A versatile closer for Celerity {{ cel }} and Blood Sorcery {{ tha }} fighters:
+at inferior it tags a surviving target for a later stealthed rush, while at superior
+it starts a new round like {{ telepathic_tracking }} to push past combat-ends
+defences.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Dance with the Devil", decks=2, copies="2-4") %}
+{% trans trimmed %}
+A dedicated range-closing maneuver for Obfuscate {{ obf }} and Blood Sorcery {{ tha }}
+bruisers, with an optional second maneuver at superior to beat long-range defences.
 {% endtrans %}
 {% endcall %}
 {% endblock %}

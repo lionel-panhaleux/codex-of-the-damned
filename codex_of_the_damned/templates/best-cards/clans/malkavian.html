@@ -50,14 +50,14 @@
     </p>
 </div>
 
-{% call layout.card_column("Andi Liu", decks=38, copies="1-2") %}
+{% call layout.card_column("Andi Liu", decks=40, copies="1-2") %}
 {% trans trimmed voter_captivation=card("Voter Captivation") %}
 A cheap Prince with great disciplines, she's the most played Malkavian {{ malkavian }}
 Prince. Her inferior {{ pre }} gives her a spot in multiclan {{ obf }}{{ pre }} political decks.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Lutz von Hohenzollern", decks=37, copies="1-4") %}
+{% call layout.card_column("Lutz von Hohenzollern", decks=40, copies="1-4") %}
 {% trans trimmed voter_captivation=card("Voter Captivation") %}
 Star of the Malkavian clan, he has a really powerful ability,
 4 votes and +2 bleed like many <em>Inner Circle</em>, combined with all clan disciplines
@@ -66,23 +66,41 @@ vote modifiers like {{ voter_captivation }}.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Alexander Silverson", decks=27, copies="1-3") %}
+{% call layout.card_column("Alexander Silverson", decks=29, copies="1-3") %}
 {% trans trimmed govern=card("Govern the Unaligned", "Govern") %}
 A solid Prince with all clan disciplines at superior, he sit comfortably on top
 of the {{ govern }} chain. His inferior Presence {{ pre }} can be useful in political builds.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Gilbert Duane (G6)", decks=26, copies="1-2") %}
+{% call layout.card_column("Gilbert Duane (G6)", decks=27, copies="1-2") %}
 {% trans trimmed %}
 The archetypal Malkavian, all three clan disciplines {{ AUS }}{{ DOM }}{{ OBF }}
 at superior plus a Baron title: useful in both political and Anarch decks.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Abraham Mellon", decks=24, copies="1-4") %}
+{% call layout.card_column("Abraham Mellon", decks=26, copies="1-4") %}
 {% trans trimmed govern=card("Govern the Unaligned", "Govern") %}
 A solid 8-cap for the top of the {{ govern }} chain, the hand size bonus is nothing to scoff at.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Jason \"Son\" Newberry", decks=23, copies="1-2") %}
+{% trans trimmed gilbert_duane=card("Gilbert Duane") %}
+All superior {{ AUS }}{{ DOM }}{{ OBF }} with a bleed bonus
+that slots straight into the clan's {{ DOM }}{{ OBF }} bleed plan. A no-brainer.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Donny Kowalczyk", decks=23, copies="1") %}
+{% trans trimmed
+second_tradition=card("Second Tradition: Domain"),
+parity_shift=card("Parity Shift")
+%}
+A cheap six-capacity Prince with superior {{ AUS }} and inferior {{ dom }}{{ obf }},
+adding an affordable title for {{ parity_shift }} and {{ second_tradition }} in
+group 6 Camarilla builds.
 {% endtrans %}
 {% endcall %}
 
@@ -93,21 +111,22 @@ Superior {{ AUS }} at 3 pool is really a bargain. She has access to
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Jason \"Son\" Newberry", decks=20, copies="1-2") %}
-{% trans trimmed gilbert_duane=card("Gilbert Duane") %}
-All superior {{ AUS }}{{ DOM }}{{ OBF }} with a bleed bonus
-that slots straight into the clan's {{ DOM }}{{ OBF }} bleed plan. A no-brainer.
+{% call layout.card_column("Darius Shirazi", decks=18, copies="1-2") %}
+{% trans trimmed malk_22=link("/archetypes/malk-22") %}
+A six-capacity Camarilla staple in {{ malk_22 }} bringing superior {{ AUS }}{{ DOM }}
+with inferior {{ obf }}. His equipment-stealing action is a nice bonus against
+tables packing key relics or utility gear.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Juliet Parr", decks=11, copies="3-5") %}
+{% call layout.card_column("Juliet Parr", decks=15, copies="3-5") %}
 {% trans trimmed %}
 A new Justicar with a hand-size boost on referendums that provides excellent cycling and hand-crafting capabilities.
 The free maneuver each combat is a good defence tool too.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Kindred Spirits", decks=29, copies="7-28") %}
+{% call layout.card_column("Kindred Spirits", decks=27, copies="7-28") %}
 {% trans trimmed %}
 This bleed action is central to the {{ dem }} discipline.
 It can deliver a bleed of 2 in combination with a 1 pool bloat.
@@ -116,46 +135,27 @@ offering additional table control.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Eyes of Chaos", decks=28, copies="3-13") %}
+{% call layout.card_column("Eyes of Chaos", decks=26, copies="3-13") %}
 {% trans trimmed conditioning=card("Conditioning") %}
 A powerful bleed enhancer at no cost, although a bit less efficient than
 {{ conditioning }}.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Confusion", decks=27, copies="5-15") %}
+{% call layout.card_column("Confusion", decks=25, copies="5-16") %}
 {% trans trimmed %}
 An excellent bleed modifier at no cost, it provides stealth at superior {{ DEM }}.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Muddled Vampire Hunter", decks=17, copies="1") %}
+{% call layout.card_column("Muddled Vampire Hunter", decks=16, copies="1-2") %}
 {% trans trimmed %}
 An excellent ally with good combat abilities at a reasonable price.
 He can help take down a cumbersome minion or deter an aggressive predator.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Deny", decks=16, copies="2-8") %}
-{% trans trimmed trap=card("Trap") %}
-A good stealth enhancer at superior {{ DEM }}, its inferior ability is seldom used
-but can still come in handy to get out of a {{ trap }}, for example.
-{% endtrans %}
-{% endcall %}
-
-{% call layout.card_column("Mind Tricks", decks=15, copies="1-4") %}
-{% trans trimmed
-deny=card("Deny"),
-confusion=card("Confusion")
-%}
-+1 stealth for 1 blood: this is expensive.
-It is included in decks where {{ obf }} is not much available.
-Alongside {{ deny }} and {{ confusion }}, it can make for a very decent
-stealth & bleed module using just the {{ DEM }} discipline.
-{% endtrans %}
-{% endcall %}
-
-{% call layout.card_column("Touch of Clarity", decks=15, copies="1-5") %}
+{% call layout.card_column("Touch of Clarity", decks=16, copies="1-5") %}
 {% trans trimmed deflection=card("Deflection") %}
 The only card in the game that can counter {{ dom }} bounces like
 {{ deflection }}: depending on the environment,
@@ -163,10 +163,10 @@ it can be a powerful device in the {{ dem }} arsenal when used sparingly.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Coma", decks=10, copies="1-4") %}
-{% trans trimmed %}
-A {{ dem }} strike that sends the opposing vampire straight to torpor.
-The cost is high, but the deterrence is real.
+{% call layout.card_column("Deny", decks=15, copies="1-8") %}
+{% trans trimmed trap=card("Trap") %}
+A good stealth enhancer at superior {{ DEM }}, its inferior ability is seldom used
+but can still come in handy to get out of a {{ trap }}, for example.
 {% endtrans %}
 {% endcall %}
 {% endblock %}

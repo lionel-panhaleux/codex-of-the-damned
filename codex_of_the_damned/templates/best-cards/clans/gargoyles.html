@@ -14,7 +14,7 @@
     {% endtrans %}
 </div>
 
-{% call layout.card_column("Tupdog", decks=31, copies="1-24") %}
+{% call layout.card_column("Tupdog", decks=33, copies="1-24") %}
 {% trans trimmed tupdogs=link("/archetypes/tupdogs") %}
 An infamous rush device, only available as an offensive tool for Tremere antitribu.
 They gave birth to the {{ tupdogs }} archetype.
@@ -28,7 +28,7 @@ Being anarch, he also gets nice combat options.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Porphyry", decks=3, copies="1-2") %}
+{% call layout.card_column("Porphyry", decks=4, copies="1-2") %}
 {% trans trimmed %}
 A cheap 4-capacity Gargoyle with superior {{ POT }} and flight.
 His extra bleed against location holders is a nice touch,
@@ -36,20 +36,21 @@ but he remains a Tremere slave.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Chalcedony", decks=3, copies="2-5") %}
+{% call layout.card_column("Verbruch", decks=4, copies="2-3") %}
 {% trans trimmed %}
-All four clan disciplines at superior {{ FOR }}{{ POT }}{{ THA }}{{ VIS }} and flight for 7,
-with a discount on Gargoyle-only cards on top. A slave, but a very complete one.
+A five-capacity Gargoyle {{ gargoyle }} with superior {{ POT }}{{ VIS }} and
+Flight {{ FLIGHT }}. Though a Tremere {{ tremere }} slave, fetching a Tremere
+{{ tremere }} straight to the uncontrolled region helps smooth mixed crypts.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Raking Talons", decks=24, copies="4-12") %}
+{% call layout.card_column("Raking Talons", decks=26, copies="3-10") %}
 {% trans trimmed %}
 Free aggravated damage, neat.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Brick by Brick", decks=22, copies="5-12") %}
+{% call layout.card_column("Brick by Brick", decks=23, copies="5-12") %}
 {% trans trimmed
 tupdog=card("Tupdog"),
 immortal_grapple=card("Immortal Grapple")

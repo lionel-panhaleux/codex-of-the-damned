@@ -21,7 +21,7 @@
     </p>
 </div>
 
-{% call layout.card_column("Frau Schädel", decks=4, copies="1-3") %}
+{% call layout.card_column("Frau Schädel", decks=5, copies="1-3") %}
 {% trans trimmed %}
 A seven-capacity Tremere {{ tremere }} sitting squarely on the path's engine with
 superior {{ OBL }}{{ THA }}. Her bonus stealth on recruit and employ actions is just
@@ -29,7 +29,7 @@ what an ally deck wants — the crew comes into play unblocked.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Huldu, The Desecrator", decks=4, copies="1-4") %}
+{% call layout.card_column("Huldu, The Desecrator", decks=5, copies="1-4") %}
 {% trans trimmed %}
 An eight-capacity Hecata {{ hecata }} backer built to keep the crew alive.
 Her standing +1 bleed let her pressure the prey herself.
@@ -43,23 +43,53 @@ For a blood she unlocks after any successful action that calls on the path, grea
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Fiorella, Empty One", decks=8, copies="1") %}
+{% call layout.card_column("Ashur-uballit, Son of the Abyss", decks=3, copies="1-4") %}
+{% trans trimmed %}
+A ten-capacity Hecata {{ hecata }} <em>cardinal</em> with five superior
+disciplines and +1 bleed. His bonus starting life makes every recruited zombie
+far harder to trade off.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Anxo Vilela", decks=2, copies="1-2") %}
+{% trans trimmed %}
+A six-capacity Tremere {{ tremere }} bringing superior {{ AUS }}{{ THA }} alongside
+inferior {{ dom }}{{ obl }}, an affordable mid-cap filler covering bounce and the
+path's core actions.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Eulogio Sánchez de los Reyes", decks=2, copies="1") %}
+{% trans trimmed %}
+An eight-capacity Tremere {{ tremere }} with superior {{ AUS }}{{ DOM }}{{ OBL }}{{ THA }}.
+His deck-stacking action smooths draws while keeping him unlocked to defend the
+table.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Fiorella, Empty One", decks=10, copies="1") %}
 {% trans trimmed %}
 The most-played card of the path and a one-pool bargain. A versatile bonus for allies decks.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Dance of the Dead", decks=6, copies="1-3") %}
+{% call layout.card_column("Cursed Abattoir", decks=7, copies="1") %}
+{% trans trimmed freakish_conglomeration=card("Freakish Conglomeration") %}
+Turns the deck's natural attrition into pressure: every zombie that burns off banks a counter here, and each counter
+later adds a point to a zombie's bleed.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Dance of the Dead", decks=7, copies="2-3") %}
 {% trans trimmed freakish_conglomeration=card("Freakish Conglomeration") %}
 A combat package for the allies themselves. Its four counters each buy a maneuver or
 a press, making zombies even more of a threat.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Cursed Abattoir", decks=5, copies="1") %}
-{% trans trimmed freakish_conglomeration=card("Freakish Conglomeration") %}
-Turns the deck's natural attrition into pressure: every zombie that burns off banks a counter here, and each counter
-later adds a point to a zombie's bleed.
+{% call layout.card_column("Gifts From Hereafter", decks=7, copies="5-9") %}
+{% trans trimmed %}
+The bleed pump that makes an ally swarm hurt.
 {% endtrans %}
 {% endcall %}
 
@@ -70,9 +100,11 @@ The trick is to try and keep them in place: {{ putrescent_sustenance }} can help
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Gifts From Hereafter", decks=4, copies="5-10") %}
-{% trans trimmed %}
-The bleed pump that makes an ally swarm hurt.
+{% call layout.card_column("Putrescent Sustenance", decks=4, copies="2-5") %}
+{% trans trimmed freakish_conglomeration=card("Freakish Conglomeration") %}
+Dual-purpose sustain for Oblivion {{ obl }} and Blood Sorcery {{ tha }} crypts:
+it either refills blood or adds life to key zombies like {{ freakish_conglomeration }}
+by removing spent allies from any ash heap from the game.
 {% endtrans %}
 {% endcall %}
 {% endblock %}

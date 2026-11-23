@@ -4,7 +4,7 @@
 {% block content %}
 <h1>{{ _("Master cards") }}</h1>
 
-{% call layout.card_column("Villein", decks=832, copies="2-6") %}
+{% call layout.card_column("Villein", decks=917, copies="2-6") %}
 {% trans trimmed
 minion_tap=card("Minion Tap"),
 vessel=card("Vessel"),
@@ -15,7 +15,7 @@ besting {{ minion_tap }} and often slower tools like {{ vessel }} or {{ blood_do
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Dreams of the Sphinx", decks=727, copies="1-3") %}
+{% call layout.card_column("Dreams of the Sphinx", decks=784, copies="1-3") %}
 {% trans trimmed %}
 Loved for its ubiquitousness, the <em>Dreams</em> provides either two pool
 (and can even accelerate the setup if played early) or help the deck rotation in
@@ -23,7 +23,7 @@ critical moments by drawing two cards.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Giant's Blood", decks=521, copies="1") %}
+{% call layout.card_column("Giant's Blood", decks=580, copies="1") %}
 {% trans trimmed golconda_inner_peace=card("Golconda: Inner Peace") %}
 Even if it is only once per game, it brings more blood on the table than any other card,
 with the notable exception of {{ golconda_inner_peace }}. It is often played in a single
@@ -32,7 +32,7 @@ opponent to play it himself.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Wider View", decks=512, copies="1-2") %}
+{% call layout.card_column("Wider View", decks=546, copies="1-2") %}
 {% trans trimmed %}
 A cheap <em>Trifle</em> that provides rotation to the crypt. For a lot of crypts, this
 is a useful asset in the mid game to help fetch a third or fourth vampire. It is even guaranteed
@@ -40,7 +40,7 @@ to generate one pool at some point.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Direct Intervention", decks=487, copies="1-2") %}
+{% call layout.card_column("Direct Intervention", decks=542, copies="1-2") %}
 {% trans trimmed
 wall_decks=link("/strategy/archetype-categories", _("wall decks"), _anchor="wall"),
 block_denial=link("/strategy/fundamentals", _("block denial"), _anchor="stealth-and-intercept")
@@ -51,7 +51,7 @@ on how good a player is at assessing the importance of cards.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Vessel", decks=473, copies="1-4") %}
+{% call layout.card_column("Vessel", decks=481, copies="1-4") %}
 {% trans trimmed
 leeching=link("/strategy/bloat", _("leeching"), _anchor="leeching"),
 blood_doll=card("Blood Doll"),
@@ -65,7 +65,7 @@ and faster, but it can be destroyed and it is not a <em>Trifle</em>.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Powerbase: Montreal", decks=387, copies="1") %}
+{% call layout.card_column("Powerbase: Montreal", decks=414, copies="1") %}
 {% trans trimmed %}
 A good bloat device that generates one pool per turn at no cost. It is a no-brainer in
 decks able to defend it. It can also be a useful bargaining chip when dealing with
@@ -73,7 +73,7 @@ other Methuselahs, as it can easily be borrowed as part of a deal.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Information Highway", decks=367, copies="1-3") %}
+{% call layout.card_column("Information Highway", decks=390, copies="1-3") %}
 {% trans trimmed %}
 An excellent crypt accelerator at no cost, it is played both with big capacity crypts,
 but also with weenie crypts at 1-2 capacity to make it possible to draw and get out a
@@ -82,7 +82,7 @@ multiple copies to improve their chances to draw it early on.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Pentex™ Subversion", decks=351, copies="1-2") %}
+{% call layout.card_column("Pentex™ Subversion", decks=360, copies="1") %}
 {% trans trimmed %}
 Before its <em>errata</em> in September 2020, <em>Pentex</em> was the most played Master
 card in all decks. It is still powerful though: disabling a specific minion of the
@@ -90,7 +90,7 @@ prey can be key to victory in many decks.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Fame", decks=240, copies="1-2") %}
+{% call layout.card_column("Fame", decks=251, copies="1-2") %}
 {% trans trimmed %}
 A key card for combat heavy decks, usually used on the prey's minions, it provides
 excellent pool damage. The fact that it is <em>Unique</em> means it can not easily be
@@ -98,7 +98,7 @@ abused, though.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("The Coven", decks=236, copies="1") %}
+{% call layout.card_column("The Coven", decks=259, copies="1") %}
 {% trans trimmed %}
 A good way to bring some blood back on the table, is it a useful tool against rush and
 grinder decks. Even if it does not come along so often, the fact that it helps the whole
@@ -106,7 +106,7 @@ table can really slow down these particular archetypes.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Ashur Tablets", decks=232, copies="6-12") %}
+{% call layout.card_column("Ashur Tablets", decks=249, copies="6-12") %}
 {% trans trimmed %}
 It is a decent bloating device but its key ability is to allow some recursion in the
 deck. Since its nerf in 2024, it is played in less copies overall,
@@ -114,7 +114,7 @@ since only one can be played per turn. It stayed powerful enough to see play reg
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("The Rack", decks=231, copies="1") %}
+{% call layout.card_column("The Rack", decks=246, copies="1") %}
 {% trans trimmed
 blood_doll=card("Blood Doll"),
 vessel=card("Vessel")
@@ -125,14 +125,14 @@ play, but such a good blood generator at no cost is a bargain.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Club Illusion", decks=229, copies="1-2") %}
+{% call layout.card_column("Club Illusion", decks=259, copies="1-2") %}
 {% trans trimmed %}
 A permanent bleed boost for Anarch decks: any Anarch can spend a blood to add one to a bleed.
 Cheap to set up and always relevant when the plan is to bleed the prey down.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Archon Investigation", decks=224, copies="1-2") %}
+{% call layout.card_column("Archon Investigation", decks=229, copies="1-2") %}
 {% trans trimmed %}
 A dreadful deterrent against too powerful bleeders. A must have for decks who do not
 have access to bounces, it can be included in virtually any deck just to discourage the
@@ -140,7 +140,7 @@ have access to bounces, it can be included in virtually any deck just to discour
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Monastery of Shadows", decks=221, copies="1") %}
+{% call layout.card_column("Monastery of Shadows", decks=237, copies="1") %}
 {% trans trimmed parity_shift=card("Parity Shift") %}
 A costly but efficient location. The stealth can make the difference between life or
 death for the prey, and the bonus hand size is nothing to frown upon. It is a little bit
@@ -149,7 +149,7 @@ able to play the vote against one's prey.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("The Parthenon", decks=213, copies="1-5") %}
+{% call layout.card_column("The Parthenon", decks=217, copies="1-5") %}
 {% trans trimmed
 anson=card("Anson"),
 nana_buruku=card("Nana Buruku"),
@@ -163,7 +163,7 @@ with vampires providing yet another Master action: {{ anson }}, {{ nana_buruku }
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Jake Washington", decks=198, copies="1-2") %}
+{% call layout.card_column("Jake Washington", decks=224, copies="1-2") %}
 {% trans trimmed
 war_ghoul=card("War Ghoul")
 %}
@@ -172,7 +172,7 @@ blocking an action and is a key combination with {{ war_ghoul }}.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Smiling Jack, The Anarch", decks=175, copies="1-2") %}
+{% call layout.card_column("Smiling Jack, The Anarch", decks=181, copies="1-2") %}
 {% trans trimmed %}
 A slow-building source of table-wide attrition: each turn one feeds it a counter,
 and every other Methuselah then pays for each counter it holds. It shines in decks
@@ -180,14 +180,14 @@ with enough block potential to protect it while the counters pile up.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Papillon", decks=173, copies="1-2") %}
+{% call layout.card_column("Papillon", decks=198, copies="1-2") %}
 {% trans trimmed hunting_ground=card("Academic Hunting Ground", "Hunting Ground") %}
 Basically a better {{ hunting_ground }} for those relying heavily on Princes, Barons
 or Archbishops. Definitely worth including when the crypt fits.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Secure Haven", decks=164, copies="1-2") %}
+{% call layout.card_column("Secure Haven", decks=176, copies="1-2") %}
 {% trans trimmed %}
 Although <em>Unique</em>, it is a solid counter against rush decks. Other options are
 required to really defend against them as this can only protect one vampire, but
@@ -195,7 +195,7 @@ this is still a vampire one would not take down easily.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Anarch Troublemaker", decks=162, copies="1-2") %}
+{% call layout.card_column("Anarch Troublemaker", decks=176, copies="1-2") %}
 {% trans trimmed %}
 It locks up to two of the prey's vampires each turn, a cheap and repeatable way to
 strip their defense before a bleed or a rush. The downside is that it then passes to
@@ -203,7 +203,7 @@ the prey to use in turn.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Wash", decks=150, copies="1-2") %}
+{% call layout.card_column("Wash", decks=157, copies="1-2") %}
 {% trans trimmed villein=card("Villein") %}
 Countering Master cards is often useful: the best move is to counter a bloat card like
 {{ villein }}, which is equivalent to a serious bleed. Other powerful Master cards can
@@ -211,7 +211,7 @@ be countered this way too.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Perfectionist", decks=142, copies="1-3") %}
+{% call layout.card_column("Perfectionist", decks=151, copies="1-3") %}
 {% trans trimmed %}
 An easy way to get some blood back on a vampire at no cost. Many actions go through
 unblocked and unreacted to, so it tends to bring blood back on the vampire at least

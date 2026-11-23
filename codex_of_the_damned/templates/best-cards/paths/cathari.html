@@ -21,6 +21,30 @@
     </p>
 </div>
 
+{% call layout.card_column("Agnieszka, Tempter of Legions", decks=4, copies="5") %}
+{% trans trimmed agnieszka_wall=link("/archetypes/agnieszka-wall") %}
+A ten-capacity Ministry {{ ministry }} <em>archbishop</em> with four superior
+disciplines, built-in combat ends, and +1 bleed. Her mix of intercept, stealth,
+and deterrence anchors the {{ agnieszka_wall }} archetype.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Verrix, Naughty Boy", decks=4, copies="1-3") %}
+{% trans trimmed agnieszka=card("Agnieszka, Tempter of Legions") %}
+A seven-capacity Ministry {{ ministry }} <em>bishop</em> bringing superior
+{{ AUS }}{{ PRE }} alongside built-in bleed stealth — the natural support partner
+to {{ agnieszka }}.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Fotini Katsikaris", decks=3, copies="1-2") %}
+{% trans trimmed %}
+A seven-capacity Malkavian {{ malkavian }} stealth-bleeder on
+superior {{ AUS }}{{ DOM }}{{ OBF }}. Each bleed that connects widens the hand,
+cycling spurious cards.
+{% endtrans %}
+{% endcall %}
+
 {% call layout.card_column("Aelswith, The Irresistible", decks=1, copies="4") %}
 {% trans trimmed %}
 A 9-capacity Malkavian {{ malkavian }} <em>cardinal</em> with great disciplines.
@@ -29,28 +53,26 @@ to slow her.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Fotini Katsikaris", decks=1, copies="2") %}
-{% trans trimmed %}
-Another Malkavian {{ malkavian }}, a cheaper seven-capacity stealth-bleeder on
-superior {{ AUS }}{{ DOM }}{{ OBF }}. Each bleed that connects widens the hand,
-cycling spurious cards.
-{% endtrans %}
-{% endcall %}
-
-{% call layout.card_column("Kiss of Cathari", decks=4, copies="4-8") %}
+{% call layout.card_column("Kiss of Cathari", decks=5, copies="4-8") %}
 {% trans trimmed %}
 A stealth-bleed crypt rarely wants to fight, and this ends combat on either {{ OBF }} or {{ PRE }}.
 At superior it also stuns the opposing minion at close range, a good deterrent.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Swift Cover", decks=4, copies="2-4") %}
+{% call layout.card_column("Swift Cover", decks=5, copies="2-5") %}
 {% trans trimmed %}
 Two cards in one: stealth is good, but the combat defence option can come in handy.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Seeds of Terror", decks=2, copies="2") %}
+{% call layout.card_column("Forward Momentum", decks=5, copies="1-3") %}
+{% trans trimmed enthrall=card("Enthrall") %}
+A counter engine that rewards a steady bleed rhythm: unlocks are always good.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Seeds of Terror", decks=3, copies="2-3") %}
 {% trans trimmed %}
 The superior block denial effect can be key for {{ PRE }} vampires.
 {% endtrans %}
@@ -62,15 +84,24 @@ The path's core bleed action.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Forward Momentum", decks=2, copies="3") %}
-{% trans trimmed enthrall=card("Enthrall") %}
-A counter engine that rewards a steady bleed rhythm: unlocks are always good.
+{% call layout.card_column("Subversion", decks=2, copies="7-9") %}
+{% trans trimmed %}
+Folds stealth and bleed into a single modifier, streamlining the path's bleed actions.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Subversion", decks=1, copies="9") %}
+{% call layout.card_column("Hedonism", decks=1, copies="2") %}
 {% trans trimmed %}
-The least-adopted of the featured cards, it folds stealth and bleed into a single modifier.
+Block denial played by a second unlocked vampire on Fortitude {{ for }} or
+Presence {{ pre }}: it shuts down a blocker completely, and at superior avoids
+the resulting fight altogether.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Terrifying Visage", decks=1, copies="2") %}
+{% trans trimmed %}
+Punishes blocking with direct pool damage before block resolution, turning every
+contested bleed or action into a lose-lose choice for the prey.
 {% endtrans %}
 {% endcall %}
 {% endblock %}

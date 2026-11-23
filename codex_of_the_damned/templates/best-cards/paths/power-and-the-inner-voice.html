@@ -21,21 +21,21 @@
     </p>
 </div>
 
-{% call layout.card_column("Aaradhya, The Callous Tyrant", decks=13, copies="1-5") %}
+{% call layout.card_column("Aaradhya, The Callous Tyrant", decks=19, copies="1-5") %}
 {% trans trimmed %}
 The path's flagship: a ten-capacity Ventrue {{ ventrue }} <em>cardinal</em> with five
 superior disciplines. She unlocks after any political action — pass or fail.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Khin Aye", decks=13, copies="1-2") %}
+{% call layout.card_column("Khin Aye", decks=18, copies="1-2") %}
 {% trans trimmed %}
 A seven-capacity Ventrue {{ ventrue }} <em>priscus</em> on superior {{ POT }}{{ PRE }},
 the path's two block-denial disciplines, lending a title to the referendum plan.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Üresség", decks=12, copies="1-2") %}
+{% call layout.card_column("Üresség", decks=18, copies="1-2") %}
 {% trans trimmed %}
 One of the path's Brujah {{ brujah }} recruits, an eight-capacity <em>archbishop</em>
 whose {{ CEL }}{{ POT }}{{ PRE }} span both the taxing modifiers and the path's
@@ -43,35 +43,67 @@ Celerity tricks.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Věnceslava, The Implacable", decks=12, copies="1-2") %}
+{% call layout.card_column("Věnceslava, The Implacable", decks=17, copies="1-2") %}
 {% trans trimmed %}
 A nine-capacity Brujah {{ brujah }} <em>archbishop</em> with four superior
 disciplines. Thanks to her ability, every bleed and passed vote quietly funds the deck.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Unthinkable Humiliation", decks=16, copies="3-6") %}
+{% call layout.card_column("Rexton \"Savage\" Abernathy", decks=15, copies="1-2") %}
+{% trans trimmed %}
+An eight-capacity Brujah {{ brujah }} <em>archbishop</em> on superior
+{{ DOM }}{{ POT }}{{ PRE }} who ignores weenie and ally blockers, letting him
+push referendums and bleeds through swarm tables.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Damian", decks=8, copies="1") %}
+{% trans trimmed %}
+An eight-capacity Lasombra {{ lasombra }} <em>archbishop</em> with superior
+{{ DOM }}{{ OBL }}{{ POT }} and inferior {{ for }}{{ pre }}: he brings votes and
+a conditional bleed boost whenever a friendly <em>cardinal</em> is ready.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Concordia", decks=7, copies="1") %}
+{% trans trimmed %}
+A six-capacity Ventrue {{ ventrue }} <em>bishop</em> with superior {{ DOM }}{{ PRE }}
+and inferior {{ for }}{{ pot }}: the cheapest titled entry point into the path's
+political and block-denial core.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Unthinkable Humiliation", decks=23, copies="2-6") %}
 {% trans trimmed %}
 The path's workhorse block-denial and its most-played card.
 The inferior tax deters block attempts, the superior effect help make them fail.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Dominant Personality", decks=15, copies="2-4") %}
+{% call layout.card_column("Dominant Personality", decks=22, copies="3-4") %}
 {% trans trimmed unthinkable_humiliation=card("Unthinkable Humiliation") %}
 A harder, surgical block-denial.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Privileged Position", decks=14, copies="1") %}
+{% call layout.card_column("Relentlessness", decks=19, copies="3-4") %}
+{% trans trimmed %}
+Block-denial stealth, always great.
+{% endtrans %}
+{% endcall %}
+
+{% call layout.card_column("Privileged Position", decks=18, copies="1") %}
 {% trans trimmed %}
 A neat damage addition for the Path's plan.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Relentlessness", decks=13, copies="2-4") %}
+{% call layout.card_column("Magnetic Authority", decks=14, copies="2-5") %}
 {% trans trimmed %}
-Block-denial stealth, always great.
+Crypt acceleration tied directly to passing votes: on Dominate {{ dom }} or
+Potence {{ pot }} it turns every successful referendum into fast Sabbat
+influences, scaling nicely across multiple uncontrolled vampires at superior.
 {% endtrans %}
 {% endcall %}
 {% endblock %}
