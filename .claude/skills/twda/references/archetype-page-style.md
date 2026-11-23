@@ -126,6 +126,13 @@ a card does; it does not tell you *why it is in this deck*. Common traps:
   crypt". A pool-burn/bleed is stopped by a *bounce*, not a "vote block".
 - Don't build a cute multi-card combo the deck isn't actually playing. If a
   card's role is "bleeds for 3–4 once the prey is stripped", say that.
+- **Don't over-read a slot swap's bonus clause as a new game plan.** When a
+  variant swaps one staple for another in the same slot (e.g. `Cold War`
+  replacing `Kine Resources Contested`), verify the whole variant deck with
+  `vtes_deck` first: the primary job (3 pool damage) is unchanged, and the
+  differentiating clause (burning a location with a cardinal) is a side
+  benefit, not a shift away from ousting. Never invent a "grinds instead of
+  racing" narrative from a card diff alone.
 - **Out-of-turn Masters cannot be played on one's own turn.** Direct
   Intervention (and any "only usable out of turn" master) can only be played
   during another Methuselah's turn. So a deck bleeding on its OWN turn cannot
@@ -177,12 +184,20 @@ a page read like the rest of the site:
   text: a player's deck, the event/championship, "the same idea" — not always
   "<Name>'s deck".
 
-**5. Section jobs.** Highlights: what the deck is, how it wins, the engine —
-3-5 short paragraphs. Tips & Tricks: play advice, non-obvious lines, meta calls
-— 2-4 paragraphs. Variants: only real observed variations (from the group data
-you were given); link 1-3 other tournament decks via deck-link params. For a
-brand-new archetype with two near-identical lists, say so honestly and keep
-Variants short.
+**5. Section jobs & length.** Target **~250–350 words** (~38–50 body lines, matching
+the manually curated catalog's median of ~345 words). Shorter comes from
+**pruning**, never from cramming more clauses into denser sentences: drop the
+least interesting, too-niche, or too-obvious comments (generic master staples
+like `Giant's Blood`/`Wider View`, boilerplate reminders like "save DI for
+opponents' turns", or exhaustive card-by-card lists in Variants) and choose
+wordings that are just as clear in fewer words.
+- Highlights: what the deck is, how it wins, the engine — 3–4 short paragraphs.
+- Tips & Tricks: only genuinely non-obvious play lines or matchup calls — 2–3
+  short paragraphs.
+- Variants: only real observed variations (from the group data); link 1–3
+  other tournament decks via deck-link params — 1–2 short paragraphs. For a
+  brand-new archetype with two near-identical lists, say so honestly and keep
+  Variants short.
 
 **6. The page is the analysis's *output*, not the analysis.** The deep read —
 synergy, board-math, copy-count intent, vote counts, discipline spread — is how

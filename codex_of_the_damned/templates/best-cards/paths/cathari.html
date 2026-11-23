@@ -45,14 +45,6 @@ cycling spurious cards.
 {% endtrans %}
 {% endcall %}
 
-{% call layout.card_column("Aelswith, The Irresistible", decks=1, copies="4") %}
-{% trans trimmed %}
-A 9-capacity Malkavian {{ malkavian }} <em>cardinal</em> with great disciplines.
-Blocking her burns a pool whether or not the block resolves, so a wall pays merely
-to slow her.
-{% endtrans %}
-{% endcall %}
-
 {% call layout.card_column("Kiss of Cathari", decks=5, copies="4-8") %}
 {% trans trimmed %}
 A stealth-bleed crypt rarely wants to fight, and this ends combat on either {{ OBF }} or {{ PRE }}.
@@ -81,27 +73,6 @@ The superior block denial effect can be key for {{ PRE }} vampires.
 {% call layout.card_column("Enthrall", decks=2, copies="4-8") %}
 {% trans trimmed %}
 The path's core bleed action.
-{% endtrans %}
-{% endcall %}
-
-{% call layout.card_column("Subversion", decks=2, copies="7-9") %}
-{% trans trimmed %}
-Folds stealth and bleed into a single modifier, streamlining the path's bleed actions.
-{% endtrans %}
-{% endcall %}
-
-{% call layout.card_column("Hedonism", decks=1, copies="2") %}
-{% trans trimmed %}
-Block denial played by a second unlocked vampire on Fortitude {{ for }} or
-Presence {{ pre }}: it shuts down a blocker completely, and at superior avoids
-the resulting fight altogether.
-{% endtrans %}
-{% endcall %}
-
-{% call layout.card_column("Terrifying Visage", decks=1, copies="2") %}
-{% trans trimmed %}
-Punishes blocking with direct pool damage before block resolution, turning every
-contested bleed or action into a lose-lose choice for the prey.
 {% endtrans %}
 {% endcall %}
 {% endblock %}

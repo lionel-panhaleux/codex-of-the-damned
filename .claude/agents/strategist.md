@@ -54,9 +54,11 @@ All VTES facts come from the **Primogen MCP** (`https://mcp.krcg.org/mcp`), neve
 ## Reviewing a site article or archetype page
 
 1. Read the template (and its co-located `.json` decklist if it is an archetype page).
-2. Call `vtes_deck` on the co-located decklist / TWDA id (for archetype pages) and `vtes_cards` on
-   every card the prose makes a claim about. Call `vtes_meta` / `vtes_card_stats` for any
-   quantitative or meta claim, and `vtes_rules_case` for any rules claim.
+2. Call `vtes_deck` on the co-located decklist / TWDA id (for archetype pages) **and on any linked
+   Variant deck whose posture or game plan the prose characterizes** (so slot swaps are not misread
+   by their secondary bonus clauses), plus `vtes_cards` on every card the prose makes a claim about.
+   Call `vtes_meta` / `vtes_card_stats` for any quantitative or meta claim, and `vtes_rules_case`
+   for any rules claim.
 3. Check voice, template contract, and style against `archetype-page-style.md`.
 4. Report typed findings, ranked by severity (do not pad — no finding is a valid result), each
    with `file:line` and source evidence:

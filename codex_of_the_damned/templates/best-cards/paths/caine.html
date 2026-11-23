@@ -76,38 +76,4 @@ It also avoids jam easily as long as it is not played in too high numbers.
 Defence for a crypt that could otherwise lack some: both the unlock and bleed reduction effects are interesting.
 {% endtrans %}
 {% endcall %}
-
-{% call layout.card_column("Augury of Doom", decks=5, copies="1-2") %}
-{% trans trimmed
-fame=card("Fame"),
-army_of_rats=card("Army of Rats")
-%}
-Turns torporized opponents into steady pool pressure, much like {{ fame }} or
-{{ army_of_rats }}. Since it burns once the prey has no vampire in torpor, it pays
-off most in relentless rush decks that keep the prey's vampires down.
-{% endtrans %}
-{% endcall %}
-
-{% call layout.card_column("Pillars Fall", decks=4, copies="2-4") %}
-{% trans trimmed %}
-A rush that converts combat wins into a permanent bleed bonus, letting a beatdown
-crypt close out the prey once its blockers are cleared.
-{% endtrans %}
-{% endcall %}
-
-{% call layout.card_column("Hunting the Quarry", decks=2, copies="3-4") %}
-{% trans trimmed telepathic_tracking=card("Telepathic Tracking") %}
-A versatile closer for Celerity {{ cel }} and Blood Sorcery {{ tha }} fighters:
-at inferior it tags a surviving target for a later stealthed rush, while at superior
-it starts a new round like {{ telepathic_tracking }} to push past combat-ends
-defences.
-{% endtrans %}
-{% endcall %}
-
-{% call layout.card_column("Dance with the Devil", decks=2, copies="2-4") %}
-{% trans trimmed %}
-A dedicated range-closing maneuver for Obfuscate {{ obf }} and Blood Sorcery {{ tha }}
-bruisers, with an optional second maneuver at superior to beat long-range defences.
-{% endtrans %}
-{% endcall %}
 {% endblock %}

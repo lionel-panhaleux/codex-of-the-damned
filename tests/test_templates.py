@@ -5,6 +5,7 @@ Jinja renders undefined variables as empty strings, so a `{{ var }}` used in a
 from ``BASE_CONTEXT``) silently vanishes from the prose. Catch it here instead.
 """
 
+import json
 import pathlib
 import re
 
@@ -15,6 +16,9 @@ from codex_of_the_damned import BASE_CONTEXT
 TEMPLATES = pathlib.Path(__file__).parent.parent / "codex_of_the_damned" / "templates"
 TEMPLATE_FILES = sorted(
     path.relative_to(TEMPLATES).as_posix() for path in TEMPLATES.rglob("*.html")
+)
+DECKLIST_FILES = sorted(
+    path.relative_to(TEMPLATES).as_posix() for path in TEMPLATES.rglob("*.json")
 )
 
 # variables the index() route adds to BASE_CONTEXT on every render
@@ -64,3 +68,23 @@ def test_trans_variables(template):
             line = source.count("\n", 0, block.start("body") + variable.start()) + 1
             errors.append(f"{template}:{line}: undeclared {{{{ {name} }}}}")
     assert not errors, "\n".join(errors)
+
+
+@pytest.mark.parametrize("decklist", DECKLIST_FILES)
+def test_decklist_json(decklist):
+    """Every co-located decklist JSON must match the schema `static/js/decklist.js` expects."""
+    data = json.loads((TEMPLATES / decklist).read_text())
+    assert isinstance(data.get("crypt"), dict), f"{decklist}: missing crypt object"
+    assert isinstance(data["crypt"].get("count"), int)
+    assert isinstance(data["crypt"].get("cards"), list) and data["crypt"]["cards"]
+    for card in data["crypt"]["cards"]:
+        assert {"id", "name", "count"} <= set(card)
+    assert isinstance(data.get("library"), dict), f"{decklist}: missing library object"
+    assert isinstance(data["library"].get("count"), int)
+    assert isinstance(data["library"].get("cards"), list) and data["library"]["cards"]
+    for section in data["library"]["cards"]:
+        assert {"type", "count", "cards"} <= set(section)
+        for card in section["cards"]:
+            assert {"id", "name", "count"} <= set(card)
+    if "event" in data and data["event"] is not None:
+        assert isinstance(data["event"], str), f"{decklist}: event must be a string"
