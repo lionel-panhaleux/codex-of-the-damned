@@ -73,6 +73,8 @@
           - pip
           - install
           - --upgrade
+          - --refresh-package
+          - codex-of-the-damned
           - --python
           - "{{ codex_home }}/{{ codex_env }}/venv/bin/python"
           - codex-of-the-damned
@@ -81,6 +83,19 @@
         UV_PYTHON_INSTALL_DIR: /usr/local/share/uv/python
       register: codex_install
       changed_when: "'Installed' in (codex_install.stdout + codex_install.stderr)"
+
+    - name: Report installed codex-of-the-damned version
+      ansible.builtin.command:
+        argv:
+          - "{{ codex_home }}/{{ codex_env }}/venv/bin/python"
+          - -c
+          - "import importlib.metadata; print(importlib.metadata.version('codex-of-the-damned'))"
+      register: codex_installed_version
+      changed_when: false
+
+    - name: Show installed codex-of-the-damned version
+      ansible.builtin.debug:
+        msg: "codex-of-the-damned {{ codex_installed_version.stdout }} ({{ codex_env }})"
 
     - name: Install the systemd unit
       ansible.builtin.template:
