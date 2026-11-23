@@ -50,7 +50,7 @@ def test(client, page):
                 requests.request(
                     "HEAD", url, timeout=10, headers={"User-Agent": "python"}
                 ).raise_for_status()
-            except requests.exceptions.HTTPError:
+            except requests.exceptions.RequestException:
                 requests.get(
                     url,
                     timeout=10,
