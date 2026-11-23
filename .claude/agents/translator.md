@@ -44,18 +44,19 @@ precise with game terms, natural in each language, never machine-translationese.
   Supported languages: `SUPPORTED_LANGUAGES` in `codex_of_the_damned/config.py`.
 - **The msgid is the trans-block body.** Any edit to a body — even one character — orphans the
   translation in EVERY language. When changing English template text, update the matching msgid
-  AND msgstr in every catalog in the same pass, BEFORE running `make po`; otherwise pybabel
+  AND msgstr in every catalog in the same pass, BEFORE running `mise run po`; otherwise pybabel
   fuzzy-matches the old translations onto wrong strings.
-- Commands: `make po` (extract + update fr + compile), `BABEL_LANG=es make po-update` (create or
-  update another language), `pybabel compile -D messages -d codex_of_the_damned/translations`
-  (compile only — run it after editing a .po: it catches malformed entries and placeholder syntax
-  errors).
+- Commands: `mise run po` (extract + update fr/es/pt + compile), `mise run po-update` (extract +
+  update only), `mise run po-compile` (compile only — run it after editing a `.po`: it catches
+  malformed entries and placeholder syntax errors). For a brand-new language `<lang>`, run
+  `uv run pybabel init -l <lang> -i messages.pot -d codex_of_the_damned/translations` and add it to
+  `mise.toml`'s `po-update` task.
 - Adding a language also requires: an entry in `SUPPORTED_LANGUAGES` (config.py) and a
   `translation()` line in the `nav[aria-label="Language"]` block of `templates/layout.html`.
 - `{# TRANSLATORS: … #}` comments above trans blocks are extracted into the .po — use them to pass
   context to future translators.
-- `make test` needs internet (it crawls pages and validates external links); for translation work,
-  `pybabel compile` plus a targeted `pytest "tests/test_pages.py::test[/strategy/combat.html]"`-style
+- `mise run test` needs internet (it crawls pages and validates external links); for translation
+  work, `mise run po-compile` plus a targeted `uv run --extra dev pytest "tests/test_pages.py::test[/strategy/combat.html]"`-style
   run is usually enough.
 
 # Layer 1 — Official game vocabulary (BCP rulebooks)
@@ -327,21 +328,20 @@ text, fix typos you find, but remember the msgid-mirroring rule above.
 2. Translate meaning-complete: every sentence, qualifier and parenthetical of the source.
 3. Check placeholders: same set of `%(…)s`, exact spelling; same HTML tags, balanced.
 4. Check terminology against the tables; check the language's style guide traps.
-5. After editing a .po: run `pybabel compile -D messages -d codex_of_the_damned/translations`
-   to validate, and report any entry it rejects.
+5. After editing a .po: run `mise run po-compile` to validate, and report any entry it rejects.
 
 ## Changing English source text
 1. Edit the template.
 2. For each language catalog: find the old msgid, update it to the new body text, adjust the msgstr
    accordingly.
-3. Only then `make po`; verify with `git diff` that no unrelated fuzzy-matching occurred.
+3. Only then `mise run po`; verify with `git diff` that no unrelated fuzzy-matching occurred.
 
 ## Creating a new language (es, pt)
 1. Add to `SUPPORTED_LANGUAGES` in `config.py`; add `translation()` line in `layout.html`.
-2. `BABEL_LANG=<lang> make po-update` to generate the catalog skeleton.
+2. Add the language to `mise.toml` (`po-update`) and run `mise run po-update` (or `uv run pybabel init -l <lang> ...`) to generate the catalog skeleton.
 3. Translate in coherent batches (a full page at a time), keeping headings and nav terms
    consistent across the whole catalog.
-4. Compile and spot-check rendered pages with the dev server (`codex`).
+4. Compile and spot-check rendered pages with the dev server (`mise run serve`).
 
 ## Proper nouns: unwrap, never leave blank (2026-07 policy)
 A term that reads IDENTICALLY in every language is NOT gettext-wrapped — it is plain text in the

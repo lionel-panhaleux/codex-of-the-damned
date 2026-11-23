@@ -12,13 +12,24 @@ from __future__ import annotations
 
 import argparse
 import collections
+import datetime
 
 import twda
 
 
+def default_since(years: int = 5) -> str:
+    today = datetime.datetime.now(tz=datetime.UTC).date()
+    try:
+        return today.replace(year=today.year - years).isoformat()
+    except ValueError:
+        return today.replace(year=today.year - years, day=28).isoformat()
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--since", default="2020-01-01", help="ISO date, inclusive")
+    parser.add_argument(
+        "--since", default=default_since(5), help="ISO date, inclusive (default: 5y ago)"
+    )
     parser.add_argument("--until", default="", help="ISO date, exclusive")
     parser.add_argument("--top", type=int, default=20, help="cards per section")
     parser.add_argument("--type", default="", help="only this card type")

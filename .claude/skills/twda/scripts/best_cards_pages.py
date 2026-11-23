@@ -20,6 +20,7 @@ column-4 layout): >= 4 cards, most >= 8, prolific ones 12+. Master is largest.
 from __future__ import annotations
 
 import argparse
+import datetime
 import json
 import pathlib
 import re
@@ -272,7 +273,8 @@ def main() -> None:
 
     win, allt = buckets(window), buckets(alltime) if alltime else {}
 
-    lines = ["# Proposed best-cards page contents — 2026-07\n",
+    stamp = datetime.datetime.now(tz=datetime.UTC).date().strftime("%Y-%m")
+    lines = [f"# Proposed best-cards page contents — {stamp}\n",
              "One card per page (Path > Clan > Sect > Discipline > Generic; themed",
              "cards and clan-signature disciplines fold into their sect/clan). Clan",
              "pages: stars only (cap ≥7 or a real ability), vampires then library,",

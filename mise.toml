@@ -1,0 +1,82 @@
+[tools]
+python = "3.13"
+uv = "0.13"
+
+[tasks.update]
+description = "Install / upgrade dev dependencies"
+run = "uv sync --upgrade --extra dev"
+
+[tasks.lint]
+description = "Check formatting (black) and lint (ruff)"
+run = [
+  "uv run --extra dev black --check codex_of_the_damned tests",
+  "uv run --extra dev ruff check",
+]
+
+[tasks.fmt]
+description = "Format Python code (black + ruff --fix)"
+run = [
+  "uv run --extra dev black codex_of_the_damned tests",
+  "uv run --extra dev ruff check --fix",
+]
+
+[tasks.test]
+description = "Full check: black --check, ruff check, pytest (matches CI)"
+run = [
+  "uv run --extra dev black --check codex_of_the_damned tests",
+  "uv run --extra dev ruff check",
+  "uv run --extra dev pytest",
+]
+
+[tasks.serve]
+description = "Run Flask dev server (pass DEBUG=1 for debug mode)"
+run = "uv run codex"
+
+[tasks.po-update]
+description = "Extract messages.pot and update fr/es/pt gettext catalogs"
+run = [
+  'uv run pybabel extract --charset=utf-8 -c "TRANSLATORS:" -w 120 -k lazy_gettext -F babel.cfg -o messages.pot codex_of_the_damned',
+  "uv run pybabel update -l fr -w 120 --init-missing -i messages.pot -d codex_of_the_damned/translations",
+  "uv run pybabel update -l es -w 120 --init-missing -i messages.pot -d codex_of_the_damned/translations",
+  "uv run pybabel update -l pt -w 120 --init-missing -i messages.pot -d codex_of_the_damned/translations",
+]
+
+[tasks.po-compile]
+description = "Compile all gettext catalogs (.po -> .mo)"
+run = "uv run pybabel compile -D messages -d codex_of_the_damned/translations"
+
+[tasks.po]
+description = "Extract, update, and compile all translations"
+run = [
+  "mise run po-update",
+  "mise run po-compile",
+]
+
+[tasks.clean]
+description = "Remove build artifacts"
+run = "rm -rf codex_of_the_damned.egg-info dist"
+
+[tasks.release-local]
+description = "Tag and build wheel/sdist locally (requires clean working tree)"
+depends = ["clean"]
+run = '''
+#!/usr/bin/env bash
+set -euo pipefail
+git diff --exit-code --quiet
+uv run --extra dev check-manifest
+next_version=$(uv run --extra dev python -m setuptools_scm --strip-dev)
+git tag "$next_version"
+uv run --extra dev python -m build
+'''
+
+[tasks.release]
+description = "Tag, build, push tag, and upload to TestPyPI + PyPI"
+depends = ["release-local"]
+run = '''
+#!/usr/bin/env bash
+set -euo pipefail
+version=$(git describe --tags --abbrev=0)
+git push origin "$version"
+uv run --extra dev twine upload -r test-pypi dist/*
+uv run --extra dev twine upload dist/*
+'''

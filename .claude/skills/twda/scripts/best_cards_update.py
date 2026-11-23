@@ -64,8 +64,14 @@ def main() -> None:
 
         def repl(m: re.Match, stats=stats, page=page) -> str:
             raw = m.group(1).replace('\\"', '"')
-            # match the report key: trim stray space, drop crypt group suffix
-            candidates = [raw, raw.strip(), re.sub(r"\s*\(G\d+\)\s*$", "", raw).strip()]
+            # match the report key: trim stray space, collapse crypt group suffix
+            stripped = raw.strip()
+            candidates = [
+                raw,
+                stripped,
+                re.sub(r"\s*\(G\d+\s+ADV\)\s*$", " (ADV)", stripped),
+                re.sub(r"\s*\(G\d+\)\s*$", "", stripped),
+            ]
             name = next((c for c in candidates if c in stats), raw.strip())
             s = stats.get(name)
             if not s:

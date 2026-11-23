@@ -15,7 +15,9 @@ window (all-time for red-flag pages, else 5 years).
 
 from __future__ import annotations
 
+import argparse
 import collections
+import datetime
 import pathlib
 import re
 import sys
@@ -26,7 +28,14 @@ import twda
 REPO = pathlib.Path(__file__).resolve().parents[4]
 BEST = REPO / "codex_of_the_damned" / "templates" / "best-cards"
 CRYPT = twda.models.Card.Kind.CRYPT
-SINCE = "2021-07-01"
+
+
+def default_since(years: int = 5) -> str:
+    today = datetime.datetime.now(tz=datetime.UTC).date()
+    try:
+        return today.replace(year=today.year - years).isoformat()
+    except ValueError:
+        return today.replace(year=today.year - years, day=28).isoformat()
 
 
 def group_stats(decks):
@@ -52,8 +61,14 @@ def pctile(vals, q):
 
 
 def main():
-    apply = "--apply" in sys.argv
-    window = twda.load_decks(SINCE, "")
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument(
+        "--since", default=default_since(5), help="ISO date, inclusive (default: 5y ago)"
+    )
+    parser.add_argument("--apply", action="store_true")
+    args = parser.parse_args()
+    apply = args.apply
+    window = twda.load_decks(args.since, "")
     alltime = twda.load_decks("", "")
     win_dc, win_cp = group_stats(window)
     all_dc, all_cp = group_stats(alltime)

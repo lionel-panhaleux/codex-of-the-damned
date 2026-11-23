@@ -1,6 +1,6 @@
 # /// script
 # requires-python = ">=3.11"
-# dependencies = ["krcg", "requests"]
+# dependencies = ["krcg"]
 # ///
 """Per-category best-cards report over a TWDA date window, with recency
 correction and curation flags — the input for a best-cards page refresh.
@@ -22,15 +22,11 @@ from __future__ import annotations
 import argparse
 import bisect
 import collections
+import datetime
 import json
 import pathlib
 
-import requests
-
 import twda
-
-VTES_JSON = "https://static.krcg.org/data/vtes.json"
-CACHE = pathlib.Path.home() / ".cache" / "codex-twda" / "vtes.json"
 
 # generic discipline pages: page slug -> discipline code
 DISCIPLINES = {
@@ -111,57 +107,59 @@ def pctile(values: list[int], q: float) -> int:
     return s[idx]
 
 
-# the V5 era: a card reprinted in a set from here on is V5-format legal
-V5_CUTOFF = "2018-01-01"
-# "NEW": a card whose FIRST print is within the last ~2 years (a genuinely
-# recent card, not an old one merely reprinted). Bump when re-running years on.
-RECENT_CUTOFF = "2024-07-01"
+def years_ago(years: int) -> str:
+    today = datetime.datetime.now(tz=datetime.UTC).date()
+    try:
+        return today.replace(year=today.year - years).isoformat()
+    except ValueError:
+        return today.replace(year=today.year - years, day=28).isoformat()
 
 
-def release_data() -> tuple[dict[str, str], set[str]]:
-    """(name -> earliest ISO release date, set of V5-format-legal names).
+def release_data(cards) -> tuple[dict[str, str], set[str]]:
+    """(merge_key -> earliest ISO legal date, set of V5-format-legal merge_keys).
 
-    A card is V5-legal if any of its sets released on/after the V5 cutoff — that
-    is what separates a legacy card from its V5 reprint for the legacy clan pages.
+    Uses krcg's native v5 Card.legal and Card.formats fields directly.
     """
-    if not CACHE.exists():
-        CACHE.write_bytes(requests.get(VTES_JSON, timeout=60).content)
     earliest_of: dict[str, str] = {}
     v5: set[str] = set()
-    for c in json.loads(CACHE.read_bytes()):
-        dates = [
-            p["release_date"]
-            for prints in c.get("sets", {}).values()
-            for p in prints
-            if p.get("release_date")
-        ]
-        if not dates:
-            continue
-        earliest = min(dates)
-        is_v5 = max(dates) >= V5_CUTOFF
-        for key in {c["name"], c.get("printed_name", "")} | set(
-            c.get("name_variants") or []
-        ):
-            if key:
-                earliest_of[key] = min(earliest_of.get(key, "9999"), earliest)
-                if is_v5:
-                    v5.add(key)
+    for c in cards.values():
+        keys = {c.unique_name, c.printed_name}
+        if c.kind == twda.models.Card.Kind.CRYPT:
+            suffix = " (ADV)" if getattr(c, "advanced", False) else ""
+            keys.add(c.printed_name + suffix)
+        legal = c.legal.isoformat() if getattr(c, "legal", None) else ""
+        is_v5 = any(str(f) == "V5" for f in (getattr(c, "formats", None) or []))
+        for key in keys:
+            if not key:
+                continue
+            if legal:
+                earliest_of[key] = min(earliest_of.get(key, "9999"), legal)
+            if is_v5:
+                v5.add(key)
     return earliest_of, v5
 
 
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--since", default="2021-07-01")
+    parser.add_argument(
+        "--since", default=years_ago(5), help="ISO date, inclusive (default: 5y ago)"
+    )
     parser.add_argument("--until", default="")
+    parser.add_argument(
+        "--recent-since",
+        default=years_ago(2),
+        help="ISO date cutoff for NEW tag (default: 2y ago)",
+    )
     parser.add_argument("--top", type=int, default=30)
+    parser.add_argument("--refresh", action="store_true", help="force re-download")
     parser.add_argument("-o", "--output", default="")
     args = parser.parse_args()
 
-    decks = twda.load_decks(args.since, args.until)
+    decks = twda.load_decks(args.since, args.until, args.refresh)
     dates = sorted(twda.deck_date(d) for d in decks)
     total = len(decks)
     cards = twda.load_cards()
-    releases, v5_legal = release_data()
+    releases, v5_legal = release_data(cards)
 
     # window stats per card (merge_key feature name)
     deck_count: collections.Counter[str] = collections.Counter()
@@ -231,7 +229,7 @@ def main() -> None:
             "copies_max": max(copies),
             "copies": f"{lo}" if lo == hi else f"{lo}-{hi}",
             "release": rel,
-            "recent": rel >= RECENT_CUTOFF,
+            "recent": rel >= args.recent_since,
             "recent_denom": denom,
             "types": types,
             "disciplines": disciplines,

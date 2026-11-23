@@ -13,9 +13,11 @@ is the one that gets pages sent back — read it twice.
    (owner-edited — treat these as the gold standard for prose style).
 2. Read the co-located decklist JSON for your page. Your prose describes THIS
    list. Every card you name must be in it (or be a real observed variant).
-3. Ground claims in card text: `curl -s https://api.krcg.org/card/<id-or-name>`.
-   You may fetch other TWDA decks: `curl -s https://api.krcg.org/twda/<id>`.
-   But see the style rules — checking a card's text is for *you* to get the
+3. Ground every claim in the **Primogen MCP**: call `vtes_deck` on the page's
+   TWDA id (and any variant decks you link) for exact card texts, modules,
+   combat posture, and economy; call `vtes_cards` for any additional card you
+   mention; call `vtes_meta(archetype=...)` for variants and recent wins.
+   Remember the style rules — checking card text is for *you* to get the
    strategy right, NOT so you can recite that text on the page.
 
 ## Mechanics — the template contract
@@ -197,11 +199,12 @@ the prose to functional statements.
 
 ## Before you hand off
 
-- Page renders: `.venv/bin/python -c "from codex_of_the_damned import app;
+- Page renders: `uv run python -c "from codex_of_the_damned import app;
   print(app.test_client().get('/en/archetypes/<section>/<slug>.html').status_code)"`
   → 200.
-- Every `card("…")` name resolves: `curl -s -o /dev/null -w '%{http_code}'
-  https://api.krcg.org/card/<url-encoded-name>` → 200.
-- No unused trans params; no invented `{{ globals }}`.
-- Re-read your prose against style rules 1 and 2. Cut every copy count and every
-  card-text recital that slipped through.
+- Every `card("…")` name resolves exactly via `vtes_cards` (or in the page's
+  decklist JSON / `tests/test_templates.py`).
+- No unused trans params; no invented `{{ globals }}` (`uv run --extra dev pytest tests/test_templates.py tests/test_navigation.py`).
+- Re-read your prose against style rules 0, 1, and 2. Cut every reader address,
+  copy count, and card-text recital that slipped through.
+- Have the `strategist` subagent review the page before shipping.

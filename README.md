@@ -26,20 +26,20 @@ to generate pages dynamically and handle internationalisation.
 
 ## Installation
 
-To install a working developpment version of the site, use `pip`:
+To install a working development version of the site, use `mise` (with `uv`):
 
 ```bash
-python3 -m venv venv
-pip install -e ".[dev]"
+mise install
+mise run update
 ```
 
 ### Translating
 
-Install a PO editor like [POEdit](https://poedit.net), call the following command
-to generate the messages in the language you're interested in:
+Install a PO editor like [POEdit](https://poedit.net), and run the following command
+to extract and update the message catalogs (`fr`, `es`, `pt`):
 
 ```bash
-BABEL_LANG=es make po-update
+mise run po-update
 ```
 
 Then open the generated catalog file,
@@ -52,10 +52,10 @@ They include anything dynamic, from disciplines like `%(cel)s` and clans like
 `%(brujah)s`, to cards like `%(alastor)s` and external urls like `%(johns_deck)`.
 
 
-Once you're done translating, generate the translation files with:
+Once you're done translating, compile the translation files with:
 
 ```bash
-make po
+mise run po
 ```
 
 To make a new language accessible in the website, you simply have to add the matching
@@ -71,10 +71,10 @@ line in the translation `nav` header of the global layout
 
 ### Run a dev server
 
-You can run the development version of the site using the `codex` entrypoint:
+You can run the development version of the site using `mise run serve`:
 
 ```bash
-$ codex
+$ mise run serve
  * Serving Flask app "codex_of_the_damned" (lazy loading)
  * Environment: production
    WARNING: This is a development server. Do not use it in a production deployment.
@@ -86,7 +86,7 @@ $ codex
 You can set the `DEBUG` environment variable to activate the debug mode:
 
 ```bash
-DEBUG=1 codex
+DEBUG=1 mise run serve
 ```
 
 ### Production deployment
@@ -119,5 +119,5 @@ convert -morphology Smooth Octagon:2 clan-ahrimanes.gif clan-ahrimanes.svg
 
 Use [POEdit](https://poedit.net) and [Google Translate](https://translate.google.com) to help with translations.
 
-Run `make po` to build the translation files under `codex-of-the-damned/translations`,
-edit them with [POEdit](https://poedit.net), then run `make po` when you're done to streamline them.
+Run `mise run po` to build the translation files under `codex_of_the_damned/translations`,
+edit them with [POEdit](https://poedit.net), then run `mise run po` when you're done to streamline them.

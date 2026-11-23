@@ -1,123 +1,113 @@
 ---
 name: twda
-description: Analyze the TWDA (Tournament Winning Deck Archive) to refresh the site's slow-moving content — best-cards stats and top-archetype identification via deck clustering. Use when recomputing best cards, tier assignments, meta statistics, or classifying TWD decks into archetypes.
+description: >-
+  Refresh the Codex of the Damned's TWDA-backed sections — Archetypes (3-year /
+  20+ player tiering against Primogen's archetype labels) and Best Cards
+  (5-year and all-time play statistics). Use when recomputing archetype tiers,
+  updating best-cards counts/rankings, drafting or reviewing archetype pages,
+  or checking what moved in the tournament meta.
 ---
 
-# TWDA analysis
+# TWDA refresh workflows
 
-Turns the TWDA into the numbers the site's content needs (see TODO.md P2).
+Combines the **Primogen MCP** (`https://mcp.krcg.org/mcp`) for VTES knowledge,
+deck analysis, card stats, and meta reading with lean local bulk-aggregation
+scripts under `scripts/` (PEP 723, `uv run` — no dependency added to the site).
 
-## Data
+## Division of responsibilities
 
-- The TWDA (~4,500 decks since 1994), via the **krcg library** models:
-  `https://static.krcg.org/data/v5/twda.json` decoded into `krcg.models.Deck`
-  (daily-cached in `~/.cache/codex-twda/`, krcg's bundled snapshot as offline
-  fallback). Deck entries (`CardInDeck`) carry kind, types and disambiguated
-  names — `unique_name` keeps group variants distinct, `twda.merge_key()`
-  collapses them (re-grouped star vampires define the same archetype).
-- **Anchors**: `templates/archetypes/*/*.json` each carry the TWDA `id` of the
-  page's example deck — free ground-truth labels (~90, of which ~27 live, i.e.
-  non-archive). `twda.load_anchors()` maps TWDA id → archetype slug + section.
+- **Primogen MCP** owns all VTES facts and archetype labels:
+  - `vtes_meta`: live player-weighted TWDA win share, Archon full-field play
+    share/conversion, rising/falling archetypes, archetype cores, and
+    representative/newest decks.
+  - `vtes_deck`: full deck dossier (crypt, requirements, modules, combat
+    posture, economy, track record, nearest archetypes/decks).
+  - `vtes_cards` & `vtes_card_stats`: exact card text, requirements, rulings,
+    errata history, and single-card play rates/competitors.
+  - `vtes_rules_case` / `vtes_rulings_archive`: rules verification.
+  - Upstream `classification.json` lives in `lionel-panhaleux/primogen`
+    (`knowledge/classification.json`). Codex never forks or edits it locally.
+- **Local `scripts/`** handle only bulk TWDA aggregation that MCP does not
+  return in one shot:
+  - `archetype_tiers.py`: Codex's 3-year / 20+ players halving-ladder tier
+    table, reading Primogen's `classification.json` + live TWDA similarity
+    placement, diffed against `navigation.py`.
+  - `best_cards_report.py`, `best_cards_pages.py`, `best_cards_update.py`,
+    `assemble_best_cards.py`, `disambiguate_crypt.py`: bulk 5-year and
+    all-time rankings across all ~60 Best Cards pages.
+  - `page_json.py <twda_id>`: emit a co-located archetype decklist `.json`.
+  - `twda.py`: shared daily-cached KRCG v5 TWDA loader + site anchor map.
 
-`scripts/twda.py` is the shared data layer. The krcg library (same author as
-this site) is the intended toolkit for TWDA work — prefer extending on top of
-it; `krcg.analyzer` also offers set-overlap primitives (played/affinity/
-build_deck) useful for deck-building suggestions.
+## Workflow 1: Archetypes refresh
 
-## Scripts
+1. **Read the live meta with Primogen MCP**: call `vtes_meta(detail=True)` to
+   see rising/falling archetypes, full-field Archon context, and the share in
+   no archetype.
+2. **Compute the Codex tier table**:
+   ```bash
+   uv run .claude/skills/twda/scripts/archetype_tiers.py --refresh
+   ```
+   This applies Codex's tier rule (rolling 3 years, events with **20+ players**):
+   - **Anomaly (`💀`)**: leader > `2 × L` (where `L` is the runner-up leader).
+   - **Top Tier**: `⌈L/2⌉ .. L` qualifying wins.
+   - **Runner-ups**: next halving (`⌊top_floor/2⌋ .. top_floor - 1`).
+   - **New Kids**: `2–3` qualifying wins AND genuinely new archetype.
+   - **Old Guard**: `3` qualifying wins AND established archetype.
+   - **Out → Archive**: everything else.
+3. **Check unassigned qualifying decks**: if a cluster of unassigned 20+ player
+   winners represents a real emerging archetype, update `classification.json`
+   upstream in `primogen` first (and re-run step 2) rather than inventing
+   local labels here.
+4. **Confirm moves, new pages, and representatives with the owner**: call
+   `vtes_meta(archetype="<name>", detail=True)` to inspect recent qualifying
+   wins (prefer NC/CC wins when available) and confirm tier moves / new pages.
+5. **Write or refresh archetype pages**:
+   - Read [references/archetype-page-style.md](references/archetype-page-style.md)
+     before writing or editing any archetype page.
+   - Generate co-located decklists with
+     `uv run .claude/skills/twda/scripts/page_json.py <twda_id> -o <path>.json`.
+   - Call `vtes_deck` on the example deck and any linked variant decks; call
+     `vtes_cards` on any other card mentioned.
+   - Update `codex_of_the_damned/navigation.py` and
+     `codex_of_the_damned/templates/archetypes/index.html` (remember: always
+     link archetypes via root path `/archetypes/<slug>`).
+6. **Review & translate**:
+   - Have the `strategist` subagent review every new/edited archetype page.
+   - Have the `translator` subagent update `fr`, `es`, `pt` catalogs and run
+     `mise run po`.
+   - Validate with `uv run --extra dev pytest tests/test_navigation.py tests/test_templates.py`
+     and targeted `tests/test_pages.py` (or full `mise run test`).
 
-All in `scripts/`, self-contained (PEP 723, `uv run`) — the site gains no
-dependency.
+## Workflow 2: Best Cards refresh
 
-```bash
-uv run scripts/best_cards.py --since 2020-01-01 --top 20   # play stats by card type
-uv run scripts/cluster.py --since 2021-07-01 --out c.json  # archetype clustering
-uv run scripts/cluster.py --anchors-nn                     # vector-space sanity check
-uv run scripts/review_page.py c.json -o review.html        # owner review/editor page
-```
-
-`review_page.py` renders the owner's review & classification editor (publish as
-an artifact): group naming, bulk deck moves, group create/delete, variant-of
-links (a variant group nests under its main, TOC reordered, qualifying counts
-combined on the main), representative stars, criteria greying (archetypes index
-rule: 20+ players twice in the last 3 years — proven groups show their count in
-the TOC), NC/CC badges on qualifying national/continental championship wins
-(regex on event names; qualifiers/side events excluded), proposed variant
-splits, and an Export button whose JSON is the input for archetype-page
-generation. Edits persist in localStorage — regenerating the page with
-identical clustering (same data + params ⇒ identical C-refs; verify when in
-doubt) keeps them valid.
-
-## Writing archetype pages
-
-Once the classification/tiering is settled and the owner has picked
-representatives, the site's archetype pages get written or refreshed. The
-authoritative brief — the template contract AND the prose-style rules the owner
-enforces (no deckbuilding copy counts in the generic description; never explain
-what a card does, since the site hovers the card text and readers know the
-cards; get the *strategy* right, not just the card text) — is
-`references/archetype-page-style.md`. Read it before writing any page, and pass
-it to any subagent you delegate a page to. Decklist JSONs come from
-`scripts/page_json.py <twda_id>`.
-
-## TWDA refresh workflow (the working tool)
-
-1. `uv run scripts/cluster.py --since <5 years back> --out data/clusters.json`
-2. `uv run scripts/review_page.py data/clusters.json -o review.html`, publish
-   as an artifact (keep the same file path to keep the URL). The page embeds
-   all decklists (hover) with live rare-card / odd-count / missing-staple
-   signals against the deck's current group.
-3. The owner reviews and refines in the page (names, moves, splits, variants,
-   representatives), then **Export**. Save the export's `editor_state` as
-   `data/review-<date>.editor-state.json` and rebuild the canonical file:
-   `uv run scripts/apply_review.py data/clusters.json <state> --generated
-   <date> -o data/classification.json`. Commit both. classification.json is
-   the ground truth: the owner's labels are the most valuable asset this
-   skill produces (first pass 2026-07-05: 89 archetypes + 30 variants, 1,083
-   decks, 51 proven). The `editor_state` can also be re-imported into a page
-   generated from the SAME clustering run (refs must match).
-   `scripts/benchmark.py` scores any run against the labels (baseline: ARI
-   0.861 groups / 0.687 variant-merged) and prints the tier table (--tiers).
-4. Next refresh: `uv run scripts/classify.py --refresh [--out new.json]` —
-   don't re-cluster. It embeds labeled + new decks in the same space,
-   assigns each new deck to the nearest group centroid (threshold calibrated
-   from leave-one-out validation: 94.3% exact group / 98.6% archetype
-   accuracy on the 2026-07 labels), and HDBSCANs the leftovers into proposed
-   novel archetypes. The owner confirms the deltas; fold them into the
-   editor state and re-run apply_review.py. Each confirmed pass grows the
-   labels.
-5. Any pipeline tuning must be scored against `data/classification.json`
-   (ARI / anchor checks) before being adopted — the labels are the benchmark,
-   never a thing to silently overwrite.
-
-## Clustering pipeline (the hard part — still experimental)
-
-Card-count vectors → sublinear TF + IDF (mutes staples like Villein/Deflection) →
-crypt and library blocks L2-normalized separately then weighted (`--crypt-weight`,
-default 0.5 — crypt defines archetypes, don't let the 80-card library drown it) →
-TruncatedSVD (`--components`) → HDBSCAN (default) or agglomerative/cosine
-(`--method agglo --threshold`). Vampire group variants are merged by default
-(`--keep-groups` to disable).
-
-Evaluation, printed by every run: cluster count and noise share, anchors landing
-in noise, and — the key failure signal — clusters merging several *live* anchors
-(distinct archetypes should not share a cluster). `--out file.json` dumps
-assignments for downstream use.
-
-If auto-clustering stalls, fall back to human-in-the-middle: propose nearest
-anchors + characteristic cards per new deck, let the owner confirm (see TODO.md).
-
-**Status 2026-07-05**: the defaults are the winning config of the first sweep —
-HDBSCAN(min_cluster_size=5, min_samples=2) on 2020+ (1,430 decks) gives 107
-clusters, 17% noise, 41/44 anchors clustered, zero live-anchor merges, and
-coherent archetypes down to size-5 clusters. Agglomerative assigns everything
-but merges close archetypes — candidate for attaching noise decks later, not
-the primary method. Owner review of the 5-year run confirmed quality overall.
-
-Within-cluster variants (e.g. an ally-rush module inside the Lasombra Oblivion
-bleed cluster) are NOT separable by global re-weighting — a card-type-totals
-block (`--type-features`) changed nothing at 0.1 and only added noise at 0.15.
-What works is local sub-clustering (`--subcluster`, default 0.8): rebuild the
-matrix over one cluster's decks so the IDF is local, staples flatten, and the
-variant modules emerge — it reproduced the owner's manual split of C5 exactly
-and correctly left cohesive clusters alone. Details and next steps in TODO.md P2.
+1. **Generate 5-year and all-time reports** (rolling 5-year window and 2-year
+   `NEW` cutoff by default; override with `--since` / `--recent-since`):
+   ```bash
+   uv run .claude/skills/twda/scripts/best_cards_report.py --refresh -o /tmp/best-5y.json
+   uv run .claude/skills/twda/scripts/best_cards_report.py --since 1994-01-01 -o /tmp/best-all.json
+   ```
+2. **Inspect proposed page lists and stat diffs**:
+   ```bash
+   uv run .claude/skills/twda/scripts/best_cards_pages.py --report /tmp/best-5y.json --alltime /tmp/best-all.json -o /tmp/best-proposed.md
+   uv run .claude/skills/twda/scripts/best_cards_update.py /tmp/best-5y.json --alltime /tmp/best-all.json
+   ```
+   - For a **numbers-only refresh** (keeping current cards, updating `decks=`
+     and `copies=`): run `best_cards_update.py ... --apply` followed by
+     `uv run .claude/skills/twda/scripts/disambiguate_crypt.py --apply`.
+   - For a **full curation refresh** (adding/dropping/reordering cards): get
+     owner sign-off on `/tmp/best-proposed.md`, run
+     `uv run .claude/skills/twda/scripts/assemble_best_cards.py /tmp/best-proposed.md /tmp/best-5y.json /tmp/best-all.json /tmp/best-todo.json`,
+     then `disambiguate_crypt.py --apply`.
+3. **Write prose for newly added cards**:
+   - For every card in `todo.json`, call `vtes_cards` and `vtes_card_stats` via
+     Primogen MCP so descriptions are grounded in exact card text, current
+     archetypes, and competitors — following Codex voice (impersonal, no
+     "you"/"your", concise strategic role rather than card-text recital,
+     discipline/clan icons on every mention).
+   - Check `codex_of_the_damned/templates/best-cards/index.html` for the deck
+     count mention (e.g. `1,300+ decks from the last five years`) and any clan
+     red-flag (`warn` class) transitions.
+4. **Review, translate, and validate**:
+   - Have `strategist` review new prose, `translator` update `fr`/`es`/`pt`
+     (mirroring any EN edits to existing msgids before `mise run po`), and run
+     `mise run test`.
