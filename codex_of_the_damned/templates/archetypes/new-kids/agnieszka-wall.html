@@ -1,0 +1,128 @@
+{% extends "archetypes/_layout.html" %}
+{% import "archetypes/_layout-erratum.html" as erratum with context %}
+{% import "archetypes/new-kids/agnieszka-wall.json" as deck_json %}
+
+{% block meta %}
+<meta property="decklist" content='{{ deck_json | tojson }}' />
+{% endblock %}
+
+{% block archetype_name %}
+<h1>{{ cathari }} Agnieszka Wall</h1>
+{% endblock %}
+
+{% block archetype %}
+{% trans trimmed
+abbot=card("Abbot"),
+agnieszka=card("Agnieszka, Tempter of Legions", "Agnieszka"),
+andre=card("André the Manipulator"),
+bowl_of_convergence=card("Bowl of Convergence"),
+charismatic_aura=card("Charismatic Aura"),
+delaying_tactics=card("Delaying Tactics"),
+direct_intervention=card("Direct Intervention"),
+eagles_sight=card("Eagle's Sight"),
+earth_meld=card("Earth Meld"),
+elder_library=card("Elder Library"),
+enhanced_senses=card("Enhanced Senses"),
+enkil_cog=card("Enkil Cog"),
+eternal_vigilance=card("Eternal Vigilance"),
+eyes_of_argus=card("Eyes of Argus"),
+form_of_mist=card("Form of Mist"),
+form_of_the_bat=card("Form of the Bat"),
+forward_momentum=card("Forward Momentum"),
+freak_drive=card("Freak Drive"),
+giants_blood=card("Giant's Blood"),
+heart_of_nizchetus=card("Heart of Nizchetus"),
+heart_of_the_city=card("Heart of the City"),
+immortal_grapple=card("Immortal Grapple"),
+kiss_of_cathari=card("Kiss of Cathari"),
+monastery_of_shadows=card("Monastery of Shadows"),
+mr_winthrop=card("Mr. Winthrop"),
+new_blood=card("New Blood"),
+opium_den=card("Opium Den"),
+papillon=card("Papillon"),
+pentex_subversion=card("Pentex™ Subversion"),
+powerbase_montreal=card("Powerbase: Montreal"),
+saatet_ta=card("Saatet-ta"),
+subversion=card("Subversion"),
+swift_cover=card("Swift Cover"),
+telepathic_misdirection=card("Telepathic Misdirection"),
+the_british_museum=card("The British Museum, London"),
+the_erciyes_fragments=card("The Erciyes Fragments"),
+the_rack=card("The Rack"),
+the_sargon_fragment=card("The Sargon Fragment"),
+under_siege=card("Under Siege"),
+verrix=card("Verrix, Naughty Boy", "Verrix"),
+villein=card("Villein"),
+wider_view=card("Wider View"),
+xipe_totec=card("Xipe Totec"),
+bounce=link("/strategy/fundamentals", _("bounce"), _anchor="bounce"),
+lunge=link("/strategy/fundamentals", _("lunge"), _anchor="lunge"),
+sce=link("/strategy/combat", _("S:CE"), _anchor="defence"),
+wall=link("/strategy/archetype-categories", _("wall"), _anchor="wall"),
+gustavo_s_deck=link("/deck-search", _("Gustavo Alfonso González Ortiz's deck"), id="13377"),
+joab_s_deck=link("/deck-search", _("Joab Rogerio Barbosa da Silva's version"), id="13460"),
+martin_s_jol_win=link("/deck-search", _("Martin Weinmayer's Vozhd of JOL win"), id="13163")
+%}
+<h2>Highlights</h2>
+<p>
+    This is a Sabbat {{ wall }} starring {{ agnieszka }}, backed by high-capacity Auspex {{ AUS }} and
+    Protean {{ PRO }} support — chiefly {{ xipe_totec }}, with {{ verrix }} adding Auspex {{ AUS }} and
+    Presence {{ PRE }} — and {{ new_blood }} speeding up the crypt dig alongside {{ wider_view }}.
+</p>
+<p>
+    Defense is built to be virtually impenetrable without ever committing to a fight.
+    {{ eyes_of_argus }}, {{ eagles_sight }}, {{ enhanced_senses }} and {{ form_of_the_bat }} supply the
+    intercept on top of permanents like {{ bowl_of_convergence }}, {{ mr_winthrop }}, {{ abbot }},
+    {{ saatet_ta }}, {{ under_siege }} and {{ eternal_vigilance }}. Every block ends safely through
+    {{ earth_meld }}, {{ form_of_mist }}, {{ charismatic_aura }} or {{ agnieszka }}'s built-in
+    {{ sce }} — with {{ earth_meld }} unlocking her right back for the next block, and basic
+    {{ charismatic_aura }} cancelling grapples that would shut down the {{ sce }} loop or threatening
+    strike cards.
+</p>
+<p>
+    Offense is slow, relentless attrition from {{ enkil_cog }} on {{ agnieszka }}. With her natural
+    bleed bonus, {{ monastery_of_shadows }}, {{ opium_den }} and {{ form_of_mist }} carry bleeds
+    through on both her own turn and opponents' turns, while {{ forward_momentum }} unlocks her to keep
+    pressing or sit back on defense. {{ telepathic_misdirection }} provides the {{ bounce }} when
+    blocking is not worth the effort, and {{ delaying_tactics }} plus {{ direct_intervention }} guard
+    against votes and key minion cards.
+</p>
+<p>
+    Blood and card flow sustain the whole machine: {{ papillon }}, {{ the_rack }} and {{ giants_blood }}
+    refill {{ agnieszka }} for {{ villein }} and {{ bowl_of_convergence }}, {{ heart_of_nizchetus }}
+    filters the hand each turn, and {{ monastery_of_shadows }}, {{ elder_library }},
+    {{ the_british_museum }} and {{ andre }} expand hand size so the wall never runs dry.
+</p>
+<h2>Tips & Tricks</h2>
+<p>
+    Prioritize landing {{ heart_of_nizchetus }} and {{ bowl_of_convergence }} early — {{ the_british_museum }}
+    makes equipping both fast and cheap — and stick {{ enkil_cog }} as soon as a bleed can sneak through.
+    Once the equipment and stealth locations are online, the deck shifts from passive survival to
+    multi-bleeding the prey every table cycle.
+</p>
+<p>
+    Hold {{ charismatic_aura }} against Potence {{ POT }} rush decks to cancel {{ immortal_grapple }}
+    or dangerous strike cards instead of cycling it first; lean on {{ earth_meld }} and {{ agnieszka }}'s
+    built-in {{ sce }} for routine blocks. Use {{ xipe_totec }} to steal opposing allies or retainers
+    rather than trading combat cards with them.
+</p>
+<p>
+    {{ the_sargon_fragment }} and {{ pentex_subversion }} are late-game {{ lunge }} tools: recur the
+    exact reaction, {{ enkil_cog }} or {{ pentex_subversion }} needed to strip a stubborn blocker and
+    close the prey out.
+</p>
+<h2>Variants</h2>
+<p>
+    The archetype broke out in 2026 with four tournament wins, starting with the identical list in
+    {{ martin_s_jol_win }}. {{ joab_s_deck }} keeps the same Protean {{ PRO }} wall core while trading
+    {{ delaying_tactics }} and {{ the_sargon_fragment }} for {{ powerbase_montreal }} (extra crypt
+    ramp) and {{ the_erciyes_fragments }} for additional card advantage.
+</p>
+<p>
+    {{ gustavo_s_deck }} drops the Protean {{ PRO }} combat-and-intercept module to play a deeper Path
+    of Cathari {{ cathari }} package — running 7 {{ subversion }}, 5 {{ swift_cover }}, 4
+    {{ kiss_of_cathari }}, 3 {{ freak_drive }} and 2 {{ heart_of_the_city }} — shifting the deck away
+    from a pure unlock wall toward heavier Presence {{ PRE }} bleed and combat avoidance.
+</p>
+{% endtrans %}
+{% endblock %}

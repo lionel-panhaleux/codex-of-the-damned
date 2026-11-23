@@ -158,13 +158,15 @@ a page read like the rest of the site:
   links). A `link()` to an unknown page raises in tests — only link pages that
   exist in the nav.
 
-- **Use discipline and clan icons systematically** — on EVERY mention of a
-  discipline or clan by name, not just the first. The discipline/clan word is
+- **Use discipline, clan, and Path icons systematically** — on EVERY mention of a
+  discipline, clan, or Sabbat Path by name, not just the first. The word is
   always followed by its icon global: "Dominate {{ DOM }}", "both Auspex
   {{ AUS }} and Celerity {{ CEL }}", "the Ventrue {{ ventrue }} grinder",
-  "Brujah {{ brujah }} barons". This is deliberate repetition: it helps newer
-  players learn to recognise the disciplines and clans. The rule is one-way: a
-  discipline or clan named in text WITHOUT its icon is never acceptable; the icon
+  "Brujah {{ brujah }} barons", "Path of Death and the Soul {{ death }}",
+  "Path of Cathari {{ cathari }}" (Path globals: `caine`, `cathari`, `death`,
+  `power`). This is deliberate repetition: it helps newer
+  players learn to recognise the disciplines, clans, and paths. The rule is one-way: a
+  discipline, clan, or Path named in text WITHOUT its icon is never acceptable; the icon
   standing alone without the word (e.g. a bare `{{ DOM }}` after a card) is fine.
   Match the case to how the deck plays it: superior (uppercase, `{{ DOM }}`) if
   it uses the superior effect, inferior (`{{ dom }}`) otherwise.

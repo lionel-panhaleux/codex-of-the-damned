@@ -159,7 +159,11 @@ STRUCTURE = Nav(
                     lazy_gettext("New Kids"),
                     index=False,
                     children=[
+                        Nav("Agnieszka Wall"),
                         Nav("Lasombra Politics"),
+                        Nav("Black Hand Rush"),
+                        Nav("Freakish Rush"),
+                        Nav("Lasombra Rush"),
                     ],
                 ),
                 Nav(

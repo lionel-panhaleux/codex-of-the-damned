@@ -1,0 +1,123 @@
+{% extends "archetypes/_layout.html" %}
+{% import "archetypes/_layout-erratum.html" as erratum with context %}
+{% import "archetypes/new-kids/freakish-rush.json" as deck_json %}
+
+{% block meta %}
+<meta property="decklist" content='{{ deck_json | tojson }}' />
+{% endblock %}
+
+{% block archetype_name %}
+<h1>{{ death }} Freakish Rush</h1>
+{% endblock %}
+
+{% block archetype %}
+{% trans trimmed
+aggressive_corpse=card("Aggressive Corpse"),
+ashur_uballit=card("Ashur-uballit, Son of the Abyss", "Ashur-uballit"),
+blood_doll=card("Blood Doll"),
+burial_site_hunting_ground=card("Burial Site Hunting Ground"),
+charisma=card("Charisma"),
+cursed_abattoir=card("Cursed Abattoir"),
+dance_of_the_dead=card("Dance of the Dead"),
+deflection=card("Deflection"),
+direct_intervention=card("Direct Intervention"),
+fbi_special_affairs_division=card("FBI Special Affairs Division"),
+fiorella=card("Fiorella, Empty One", "Fiorella"),
+frau_schadel=card("Frau Schädel"),
+freakish_conglomeration=card("Freakish Conglomeration"),
+giants_blood=card("Giant's Blood"),
+gifts_from_hereafter=card("Gifts From Hereafter"),
+gravebound_drone=card("Gravebound Drone"),
+graverobbing=card("Graverobbing"),
+heartrender=card("Heartrender"),
+huldu=card("Huldu, The Desecrator", "Huldu"),
+krcg_news_radio=card("KRCG News Radio"),
+my_enemys_enemy=card("My Enemy's Enemy"),
+parijat=card("Parijat, the Dark Oracle", "Parijat"),
+pass_through_shadow=card("Pass Through Shadow"),
+paths_in_two_worlds=card("Paths in Two Worlds"),
+perfectionist=card("Perfectionist"),
+putrescent_sustenance=card("Putrescent Sustenance"),
+redirection=card("Redirection"),
+rotting_behemoth=card("Rotting Behemoth"),
+sakura=card("Sakura, The Merciless", "Sakura"),
+shadow_cast=card("Shadow Cast"),
+shadow_cloak=card("Shadow Cloak"),
+shadow_sentinel=card("Shadow Sentinel"),
+shroud_of_decay=card("Shroud of Decay"),
+spectral_servitor=card("Spectral Servitor"),
+stygian_shroud=card("Stygian Shroud"),
+target_vitals=card("Target Vitals"),
+telepathic_misdirection=card("Telepathic Misdirection"),
+the_line=card("The Line"),
+the_unmasking=card("The Unmasking"),
+tommaso_sforza=card("Tommaso Sforza"),
+where_the_veil_thins=card("Where the Veil Thins"),
+bounce=link("/strategy/fundamentals", _("bounce"), _anchor="bounce"),
+lunge=link("/strategy/fundamentals", _("lunge"), _anchor="lunge"),
+sce=link("/strategy/combat", _("S:CE"), _anchor="defence"),
+toolbox=link("/strategy/archetype-categories", _("toolbox"), _anchor="toolbox"),
+aitor_s_deck=link("/deck-search", _("Aitor Candelas's list"), id="13230"),
+jennifer_s_deck=link("/deck-search", _("Jennifer Fuss's Servitor Swarm"), id="12774")
+%}
+<h2>Highlights</h2>
+<p>
+    This is a Sabbat Path of Death and the Soul {{ death }} ally {{ toolbox }} built on the group 6
+    Oblivion {{ OBL }} crypt across Hecata {{ hecata }}, Lasombra {{ lasombra }} and Tremere
+    {{ tremere }}. Rather than centering on one star, the crypt spreads across twelve Path vampires
+    whose abilities reinforce ally recruiting, survival, stealth and unlocking.
+</p>
+<p>
+    The engine floods the board with undead allies — {{ gravebound_drone }} as the durable bleed and
+    damage-soaking backbone, backed by {{ freakish_conglomeration }}, {{ aggressive_corpse }} and
+    {{ rotting_behemoth }} for rush pressure, plus {{ fiorella }} and {{ heartrender }} as utility
+    wraiths. {{ paths_in_two_worlds }} recruits them at stealth and unlocks the recruiter, while
+    {{ charisma }}, {{ the_line }}, {{ perfectionist }} and {{ burial_site_hunting_ground }} absorb the
+    heavy blood cost.
+</p>
+<p>
+    Pool damage stacks quickly from multiple angles. {{ gifts_from_hereafter }} adds bleed and unlocks
+    the acting ally for a second action, {{ cursed_abattoir }} converts fallen zombies into extra bleed,
+    and {{ shroud_of_decay }} supplies a bounce-proof {{ lunge }} finish. In combat, {{ dance_of_the_dead }}
+    and {{ target_vitals }} give the rush zombies real teeth, while {{ graverobbing }} capitalizes on
+    any opposing vampire they send to torpor.
+</p>
+<p>
+    Defense combines an ally wall with standard Oblivion {{ OBL }} and Dominate {{ DOM }} / Auspex
+    {{ AUS }} tools: {{ the_unmasking }}, {{ fbi_special_affairs_division }}, {{ krcg_news_radio }} and
+    {{ shadow_sentinel }} turn locked zombies into dangerous interceptors, {{ deflection }},
+    {{ redirection }}, {{ telepathic_misdirection }} and {{ my_enemys_enemy }} handle {{ bounce }}, and
+    {{ pass_through_shadow }} gives the vampires clean {{ sce }} with lingering stealth.
+</p>
+<h2>Tips & Tricks</h2>
+<p>
+    Blood is the deck's tightest resource: recruiting undead burns through vampire blood quickly, so
+    establish {{ perfectionist }}, {{ charisma }} or {{ the_line }} early and use {{ putrescent_sustenance }}
+    to convert spent allies in the ash heap back into vampire blood or fresh zombie life.
+</p>
+<p>
+    Protect the stealth-recruiting window with {{ paths_in_two_worlds }}, {{ where_the_veil_thins }},
+    {{ stygian_shroud }}, {{ shadow_cloak }} and {{ shadow_cast }}. Because {{ gifts_from_hereafter }}
+    requires an unlocked Path vampire, sequence ally actions earlier in the minion phase before locking
+    the last vampire on {{ shroud_of_decay }} or {{ graverobbing }}.
+</p>
+<p>
+    {{ aggressive_corpse }} and {{ rotting_behemoth }} require a Hecata {{ hecata }} recruiter — plan
+    around them only when {{ ashur_uballit }}, {{ huldu }} or another Hecata {{ hecata }} is in play,
+    and save {{ direct_intervention }} for key opposing minion cards on opponents' turns.
+    {{ giants_blood }} and {{ blood_doll }} keep the larger vampires topped up through the mid-game.
+</p>
+<h2>Variants</h2>
+<p>
+    Early builds split cleanly along which undead allies carry the deck. {{ aitor_s_deck }} trims the
+    crypt down to 3 copies each of {{ frau_schadel }} and {{ sakura }} (with {{ parijat }} and
+    {{ tommaso_sforza }} supporting from Hecata {{ hecata }}) and runs 10 {{ freakish_conglomeration }}
+    alongside 8 {{ spectral_servitor }} and 6 {{ shroud_of_decay }} for a faster rush-and-bleed curve.
+</p>
+<p>
+    {{ jennifer_s_deck }} drops the zombies completely for 16 {{ spectral_servitor }}, 9
+    {{ gifts_from_hereafter }} and 8 {{ shroud_of_decay }}, running a lower-capacity crypt around pure
+    wraith swarm bleed.
+</p>
+{% endtrans %}
+{% endblock %}
