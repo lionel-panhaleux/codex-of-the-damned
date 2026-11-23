@@ -48,7 +48,7 @@ Tests require an internet connection and `api.krcg.org` to be up: they crawl eve
 
 - **`strategist`** (`.claude/agents/strategist.md` / `.agents/agents/strategist.md`): read-only VTES strategist and Codex content reviewer, grounded in Primogen MCP and `.claude/skills/twda/references/archetype-page-style.md`.
 - **`translator`** (`.claude/agents/translator.md` / `.agents/agents/translator.md`): EN/FR/ES/PT-BR gettext translation specialist with official BCP vocabulary and settled community jargon tables.
-- **`twda` skill** (`.claude/skills/twda/SKILL.md`, symlinked at `.agents/skills`): bulk TWDA aggregation workflows (Archetype 3-year / 20+ players tiering and Best Cards 5-year / all-time stats) paired with Primogen MCP for prose and review.
+- **`twda` skill** (`.claude/skills/twda/SKILL.md`, symlinked at `.agents/skills`): bulk TWDA aggregation workflows (Archetype 18-month / 20+ players tiering and Best Cards 5-year / all-time stats) paired with Primogen MCP for prose and review.
 
 ## Architecture
 

@@ -8,7 +8,7 @@ Reads Primogen's upstream `knowledge/classification.json` (sibling `../primogen`
 checkout when present, else GitHub raw URL daily-cached), places post-pass TWDA
 decks using Primogen's exact cosine TF-IDF similarity (crypt/library weighted
 0.5 each, vampire groups merged, no SVD, calibrated LOO 5th-percentile threshold),
-and computes Codex's rolling 3-year / 20+ players halving-ladder tier table
+and computes Codex's rolling 18-month / 20+ players halving-ladder tier table
 diffed against `codex_of_the_damned/navigation.py`.
 
     uv run archetype_tiers.py --refresh
@@ -40,17 +40,22 @@ PRIMOGEN_URL = (
 PRIMOGEN_CACHE = twda.CACHE / "primogen-classification.json"
 
 CRITERIA_PLAYERS = 20
-CRITERIA_YEARS = 3
+CRITERIA_MONTHS = 18
 LIVE_SECTIONS = ("top-tier", "runner-ups", "new-kids", "old-guard")
 
 
-def subtract_years(iso_date: str, years: int) -> str:
+def subtract_months(iso_date: str, months: int) -> str:
     d = datetime.date.fromisoformat(iso_date)
-    try:
-        return d.replace(year=d.year - years).isoformat()
-    except ValueError:
-        # Feb 29 -> Feb 28
-        return d.replace(year=d.year - years, day=28).isoformat()
+    total_months = d.year * 12 + (d.month - 1) - months
+    year, month = divmod(total_months, 12)
+    month += 1
+    # Clamp day to end of target month
+    for day in (d.day, 30, 29, 28):
+        try:
+            return datetime.date(year, month, day).isoformat()
+        except ValueError:
+            continue
+    return datetime.date(year, month, 28).isoformat()
 
 
 def load_classification(
@@ -129,7 +134,13 @@ def main() -> None:
     parser.add_argument(
         "--as-of",
         default="",
-        help="Reference ISO date for the 3-year cutoff (default: newest TWDA deck)",
+        help="Reference ISO date for the rolling window cutoff (default: newest TWDA deck)",
+    )
+    parser.add_argument(
+        "--months",
+        type=int,
+        default=CRITERIA_MONTHS,
+        help=f"Rolling window length in months (default: {CRITERIA_MONTHS})",
     )
     parser.add_argument(
         "--threshold",
@@ -166,7 +177,9 @@ def main() -> None:
     archive = twda.load_archive(args.refresh)
     all_dates = [twda.deck_date(d) for d in archive.values() if twda.deck_date(d)]
     as_of = args.as_of or max(all_dates)
-    cutoff = subtract_years(as_of, CRITERIA_YEARS)
+    cutoff = subtract_months(as_of, args.months)
+    # "New" archetype age boundary: first appearance within the window (or 6m prior)
+    new_age_cutoff = subtract_months(as_of, args.months + 6)
 
     window_decks = [
         d for d in archive.values() if since <= twda.deck_date(d) <= as_of
@@ -244,7 +257,7 @@ def main() -> None:
                     }
                 )
 
-    # Also track noise decks that qualified in the 3-year window
+    # Also track noise decks that qualified in the rolling window
     for deck_id in noise_ids:
         deck = archive.get(deck_id)
         if not deck:
@@ -282,7 +295,7 @@ def main() -> None:
                 "variants": [],
                 "q": 0,
                 "q_placed": 0,
-                "total_3y": 0,
+                "total_window": 0,
                 "total_5y": 0,
                 "first_date": "9999-99-99",
                 "newest_date": "",
@@ -310,7 +323,7 @@ def main() -> None:
             if slug in site_pages:
                 entry["pages"].add((slug, site_pages[slug]))
         if cutoff <= date <= as_of:
-            entry["total_3y"] += 1
+            entry["total_window"] += 1
             if players >= CRITERIA_PLAYERS:
                 entry["q"] += 1
                 if placed:
@@ -347,22 +360,25 @@ def main() -> None:
             if slug in site_pages:
                 entry["pages"].add((slug, site_pages[slug]))
 
-    # Halving ladder
+    # Halving ladder (top-tier >= ceil(L/2), runner-ups >= ceil(top_floor/2),
+    # old-guard = 2q established, new-kids = genuinely new with 2+ wins of any size)
     ranked = sorted(
-        (e for e in root_stats.values() if e["q"] >= 2),
-        key=lambda e: (-e["q"], -e["total_3y"], e["name"]),
+        (e for e in root_stats.values() if e["q"] >= 2 or e["total_window"] >= 2),
+        key=lambda e: (-e["q"], -e["total_window"], e["name"]),
     )
+    qualifying_ranked = [e for e in ranked if e["q"] >= 2]
     anomaly = None
-    if len(ranked) >= 2 and ranked[0]["q"] > 2 * ranked[1]["q"]:
-        anomaly = ranked[0]
-        leader_q = ranked[1]["q"]
-    elif ranked:
-        leader_q = ranked[0]["q"]
+    if len(qualifying_ranked) >= 2 and qualifying_ranked[0]["q"] > 2 * qualifying_ranked[1]["q"]:
+        anomaly = qualifying_ranked[0]
+        leader_q = qualifying_ranked[1]["q"]
+    elif qualifying_ranked:
+        leader_q = qualifying_ranked[0]["q"]
     else:
         leader_q = 0
 
     top_floor = math.ceil(leader_q / 2) if leader_q else 0
-    runner_floor = max(4, top_floor // 2) if top_floor else 4
+    runner_floor = math.ceil(top_floor / 2) if top_floor else 3
+    old_guard_floor = max(2, runner_floor - 1)
 
     tiers: dict[str, list[dict]] = {
         "anomaly": [],
@@ -386,23 +402,23 @@ def main() -> None:
             e["anomaly"] = False
             tiers["runner-ups"].append(e)
         else:
-            # 2..3q (or up to runner_floor-1): distinguish new vs established
             sections = {sec for _, sec in e["pages_sorted"]}
             is_old = (
-                e["first_date"] < cutoff
+                e["first_date"] < new_age_cutoff
                 or "old-guard" in sections
                 or "archive" in sections
                 or "top-tier" in sections
                 or "runner-ups" in sections
             )
-            if is_old and e["q"] >= 3:
-                e["computed_tier"] = "old-guard"
-            elif not is_old and e["q"] >= 2:
+            if not is_old and e["total_window"] >= 2:
                 e["computed_tier"] = "new-kids"
+            elif is_old and e["q"] >= old_guard_floor:
+                e["computed_tier"] = "old-guard"
             else:
                 e["computed_tier"] = "out"
             e["anomaly"] = False
-            tiers["new-kids-or-old-guard"].append(e)
+            if e["computed_tier"] != "out" or e["q"] >= 2:
+                tiers["new-kids-or-old-guard"].append(e)
 
     # Report
     revised = truth.get("revised") or truth.get("generated")
@@ -417,13 +433,13 @@ def main() -> None:
     )
     print(
         f"Qualifying criteria: {CRITERIA_PLAYERS}+ players since {cutoff} "
-        f"(rolling {CRITERIA_YEARS} years to {as_of})"
+        f"(rolling {args.months} months to {as_of})"
     )
     print(
         f"Halving ladder: L={leader_q}"
         + (f" (anomaly {anomaly['name']} at {anomaly['q']}q)" if anomaly else "")
         + f" -> top-tier >= {top_floor}q, runner-ups {runner_floor}..{top_floor - 1}q, "
-        f"old-guard 3q (old), new-kids 2..{runner_floor - 1}q (new)\n"
+        f"old-guard {old_guard_floor}q (old), new-kids 2+ wins any size (new)\n"
     )
 
     seen_live_slugs: set[str] = set()
@@ -456,7 +472,7 @@ def main() -> None:
             flag = " [ANOMALY]" if e.get("anomaly") else ""
             action = fmt_site_action(e)
             print(
-                f"  {e['q']:2d}q ({placed_note:>5})  {e['total_3y']:3d}d/3y  "
+                f"  {e['q']:2d}q ({placed_note:>5})  {e['total_window']:3d}d/{args.months}m  "
                 f"first:{e['first_date']}  {e['ref']:<4} {e['name']:<26}  "
                 f"[{e['computed_tier']}]  {action}{flag}"
             )
@@ -468,11 +484,11 @@ def main() -> None:
     print_section("Runner-ups", tiers["runner-ups"])
     new_kids = [e for e in tiers["new-kids-or-old-guard"] if e["computed_tier"] == "new-kids"]
     old_guard = [e for e in tiers["new-kids-or-old-guard"] if e["computed_tier"] == "old-guard"]
-    falling_2q = [e for e in tiers["new-kids-or-old-guard"] if e["computed_tier"] == "out"]
+    falling_out = [e for e in tiers["new-kids-or-old-guard"] if e["computed_tier"] == "out"]
     print_section("New Kids", new_kids)
     print_section("Old Guard", old_guard)
-    if falling_2q:
-        print_section("2q Established (Out)", falling_2q)
+    if falling_out:
+        print_section(f"Below Old Guard ({old_guard_floor}q) — Out", falling_out)
 
     # Check live site pages that dropped below 2q (or have no anchor in any qualifying group)
     dropped_live = []
@@ -480,7 +496,7 @@ def main() -> None:
         if sec in LIVE_SECTIONS and slug not in seen_live_slugs:
             # Find if any root archetype holds this slug
             matched = [
-                (e["ref"], e["name"], e["q"], e["total_3y"])
+                (e["ref"], e["name"], e["q"], e["total_window"])
                 for e in root_stats.values()
                 if any(s == slug for s, _ in e["pages"])
             ]
@@ -489,8 +505,8 @@ def main() -> None:
         print(f"=== Live pages below 2q -> ARCHIVE ({len(dropped_live)}) ===")
         for slug, sec, matched in dropped_live:
             if matched:
-                ref, name, q, t3 = matched[0]
-                print(f"  {slug} ({sec}) -> {q}q, {t3}d/3y ({ref} {name})")
+                ref, name, q, tw = matched[0]
+                print(f"  {slug} ({sec}) -> {q}q, {tw}d/{args.months}m ({ref} {name})")
             else:
                 print(f"  {slug} ({sec}) -> 0q / no anchor in classification")
         print()
@@ -518,10 +534,12 @@ def main() -> None:
             "cutoff": cutoff,
             "threshold": round(threshold, 4),
             "ladder": {
+                "months": args.months,
                 "leader_q": leader_q,
                 "anomaly": anomaly["ref"] if anomaly else None,
                 "top_floor": top_floor,
                 "runner_floor": runner_floor,
+                "old_guard_floor": old_guard_floor,
             },
             "archetypes": [
                 {

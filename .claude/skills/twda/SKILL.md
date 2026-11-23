@@ -1,7 +1,7 @@
 ---
 name: twda
 description: >-
-  Refresh the Codex of the Damned's TWDA-backed sections — Archetypes (3-year /
+  Refresh the Codex of the Damned's TWDA-backed sections — Archetypes (18-month /
   20+ player tiering against Primogen's archetype labels) and Best Cards
   (5-year and all-time play statistics). Use when recomputing archetype tiers,
   updating best-cards counts/rankings, drafting or reviewing archetype pages,
@@ -29,7 +29,7 @@ scripts under `scripts/` (PEP 723, `uv run` — no dependency added to the site)
     (`knowledge/classification.json`). Codex never forks or edits it locally.
 - **Local `scripts/`** handle only bulk TWDA aggregation that MCP does not
   return in one shot:
-  - `archetype_tiers.py`: Codex's 3-year / 20+ players halving-ladder tier
+  - `archetype_tiers.py`: Codex's 18-month / 20+ players halving-ladder tier
     table, reading Primogen's `classification.json` + live TWDA similarity
     placement, diffed against `navigation.py`.
   - `best_cards_report.py`, `best_cards_pages.py`, `best_cards_update.py`,
@@ -47,12 +47,12 @@ scripts under `scripts/` (PEP 723, `uv run` — no dependency added to the site)
    ```bash
    uv run .claude/skills/twda/scripts/archetype_tiers.py --refresh
    ```
-   This applies Codex's tier rule (rolling 3 years, events with **20+ players**):
+   This applies Codex's tier rule (rolling **18 months**, events with **20+ players**):
    - **Anomaly (`💀`)**: leader > `2 × L` (where `L` is the runner-up leader).
    - **Top Tier**: `⌈L/2⌉ .. L` qualifying wins.
-   - **Runner-ups**: next halving (`⌊top_floor/2⌋ .. top_floor - 1`).
-   - **New Kids**: `2–3` qualifying wins AND genuinely new archetype.
-   - **Old Guard**: `3` qualifying wins AND established archetype.
+   - **Runner-ups**: next halving (`⌈top_floor/2⌉ .. top_floor - 1`).
+   - **New Kids**: genuinely new archetype with `2+` tournament wins (any event size) in the window.
+   - **Old Guard**: `2` qualifying wins (or `runner_floor - 1`) AND established archetype.
    - **Out → Archive**: everything else.
 3. **Check unassigned qualifying decks**: if a cluster of unassigned 20+ player
    winners represents a real emerging archetype, update `classification.json`
